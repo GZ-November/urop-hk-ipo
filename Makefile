@@ -2,7 +2,7 @@
 # HK IPO Pipeline Master Makefile
 # ==============================================================================
 
-.PHONY: help env status audit cross_check report export test check
+.PHONY: help env status audit cross_check report export test check lint clean
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -13,28 +13,42 @@ help:
 	@echo "  make report      - Generate macro market and academic research report"
 	@echo "  make export      - Export clean econometric CSV and 120-variable academic Codebook"
 	@echo "  make test        - Run full automated regression and safety test suite (17/17 tests)"
+	@echo "  make lint        - Verify Python syntax and bytecode compilation"
+	@echo "  make clean       - Remove cached bytecode and temporary compilation files"
 	@echo "  make check       - Run complete health inspection (status + audit + cross_check + test)"
 
 env:
 	@./.agents/skills/hk-ipo-pipeline/scripts/check_env.sh
 
 status:
-	@./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh status
+	@python3 run.py status
 
 audit:
-	@./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh audit --target all
+	@python3 run.py audit --target all
 
 cross_check:
-	@./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh cross_check
+	@python3 run.py cross_check
 
 report:
-	@./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh report
+	@python3 run.py report
 
 export:
-	@./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh export
+	@python3 run.py export
 
 test:
-	@cd "Data Collecting Templates/News" && python3 -m unittest discover -s prospectus_pipeline/tests -v
+	@python3 -m unittest discover -s "Data Collecting Templates/News/prospectus_pipeline/tests" -v
+
+lint:
+	@python3 -m py_compile run.py
+	@find "Data Collecting Templates/News/prospectus_pipeline/src" -name "*.py" -exec python3 -m py_compile {} +
+	@find "Data Collecting Templates/News/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
+	@echo "✅ All Python files passed syntax compilation!"
+
+clean:
+	@find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+	@find . -type f -name "*.py[cod]" -delete 2>/dev/null || true
+	@rm -rf .pytest_cache
+	@echo "✅ Cleaned all temporary caches."
 
 check: status audit cross_check test
 	@echo "=================================================================="

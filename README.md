@@ -1,6 +1,7 @@
 # Hong Kong Main Board IPO Pipeline & Econometric Toolkit (UROP HK IPO)
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
+[![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/Tests-17%2F17%20Passed-brightgreen.svg)](./Data%20Collecting%20Templates/News/prospectus_pipeline/tests)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20%2B%20Agentic-orange.svg)](#core-architecture--design-principles)
 [![Zero Token Cost](https://img.shields.io/badge/Derivation%20Cost-0%20LLM%20Tokens-success.svg)](#core-architecture--design-principles)
@@ -8,7 +9,22 @@
 
 An end-to-end automated extraction, deterministic validation, cross-check auditing, and Excel workbook compilation toolkit for Hong Kong Stock Exchange (HKEX) Main Board IPO disclosures.
 
-> **Note on Data Privacy**: This repository contains the **automated engineering pipeline, validation rules, AI agent skills, and test suites**. In accordance with research protocol, proprietary collected datasets (`.xlsx`, `.csv`, extracted JSONs, and raw source filings) are excluded from version control.
+> **Data Privacy Notice**: This repository contains the **automated engineering pipeline, validation rules, AI agent skills, and test suites**. In accordance with research protocol, proprietary collected datasets (`.xlsx`, `.csv`, extracted company JSONs, and raw source filings) are excluded from version control via [`.gitignore`](.gitignore).
+
+---
+
+## Table of Contents
+
+1. [Core Architecture & Design Principles](#core-architecture--design-principles)
+2. [120-Variable Econometric Schema](#120-variable-econometric-schema)
+3. [Quick Start (30 Seconds)](#quick-start-30-seconds)
+4. [Teammate & Collaborator Workflow](#teammate--collaborator-workflow)
+5. [Empirical Econometric Analysis Guide](#empirical-econometric-analysis-guide)
+6. [AI Agent Skill Integration](#ai-agent-skill-integration)
+7. [Repository Layout](#repository-layout)
+8. [Testing & Quality Assurance](#testing--quality-assurance)
+9. [Troubleshooting & FAQ](#troubleshooting--faq)
+10. [Contributing & Research References](#contributing--research-references)
 
 ---
 
@@ -54,73 +70,81 @@ The pipeline extracts and verifies 120 variables structured across three standar
 
 ---
 
-## Quick Start
+## Quick Start (30 Seconds)
 
-### Prerequisites
+### 1. Installation
 
-- macOS / Linux
-- Python 3.9+
-
-Install dependencies:
 ```bash
+# Clone the repository
+git clone https://github.com/GZ-November/urop-hk-ipo.git
+cd urop-hk-ipo
+
+# Bootstrap environment
 make env
 # Or manually:
-pip install openpyxl pyyaml requests pymupdf
+pip install -r requirements.txt
 ```
 
-### Standard Commands
+### 2. Standard Commands
 
-All key operations are accessible via the root `Makefile`:
+All key operations are unified and executable directly from the repository root via `Makefile` or `python run.py`:
 
 ```bash
-# 1. Run complete health check (status, audit, cross_check, and test suite)
+# Health check: status + audit + cross_check + test in a single sweep
 make check
 
-# 2. Run all 17 automated unit and regression tests
+# Run all 17 automated unit and regression tests
 make test
 
-# 3. Perform cell-by-cell read-only audit against target Excel template
+# Perform read-only cell-by-cell audit against target Excel template
 make audit
 
-# 4. Run regulatory cross-checks (Chapter 18C, FINI, Green Shoe, Cornerstone Lockup)
+# Run regulatory cross-checks (Chapter 18C, FINI, Green Shoe, Cornerstone Lockup)
 make cross_check
 
-# 5. Generate macro market overview and research report
+# Generate macro market overview and research report
 make report
 
-# 6. Export clean econometric CSV and variable codebook
+# Export clean econometric CSV and 120-variable academic codebook
 make export
+
+# Verify syntax & bytecode compilation
+make lint
 ```
 
-### Teammate Workflow: Ingesting & Processing a New IPO Company
+---
 
-Teammates working on extracting new IPOs can run the full toolchain end-to-end for any specific company (e.g., `6082.HK`):
+## Teammate & Collaborator Workflow
+
+### Ingesting & Processing a New IPO Company
+
+Teammates processing new IPO filings (e.g. for new quarters or missing issuers) can execute the end-to-end pipeline for any specific stock code (e.g. `6082.HK`):
 
 ```bash
 # 1. Locate and download statutory prospectus & allotment filings from HKEX
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py find --only 6082.HK
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py download --only 6082.HK
+python run.py find --only 6082.HK
+python run.py download --only 6082.HK
 
 # 2. Parse PDF pages, extract structured text, and slice key chapter packets
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py prepare --only 6082.HK
+python run.py prepare --only 6082.HK
 
-# 3. Fast interactive search inside prospectus sections (no need to scroll 1,000 pages manually)
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py search outline 6082.HK
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py search pages 6082.HK 15-25
+# 3. Interactive document search (no need to scroll 1,000 pages manually)
+python run.py search outline 6082.HK
+python run.py search pages 6082.HK 15-25
 
 # 4. Validate extracted JSON against schema and exact text quotation proofs
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py validate --target prospectus --only 6082.HK
+python run.py validate --target prospectus --only 6082.HK
 
 # 5. Safe write-back into target Excel workbook (creates automatic snapshot in backups/)
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py write --target prospectus --only 6082.HK --fill-missing
+python run.py write --target prospectus --only 6082.HK --fill-missing
 
 # 6. Process allotment results and deterministic derivations (pricing date, green shoe, free float)
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py allot --only 6082.HK
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py derive_allot --only 6082.HK
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py write --target allot --only 6082.HK --fill-missing
+python run.py allot --only 6082.HK
+python run.py derive_allot --only 6082.HK
+python run.py write --target allot --only 6082.HK --fill-missing
 
 # 7. Collect external market indicators (OHLC, HIBOR, HKMA liquidity balance, 18C/18A flags)
-python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py external --only 6082.HK
+python run.py external --only 6082.HK
 
 # 8. Run final audit and Listing Rules cross-check
 make audit
@@ -191,7 +215,7 @@ destring ind2, replace
 regress underpricing ln_sub_mult cornerstone_pct hsi_20d hibor_1m tech_18c i.ind2, vce(robust)
 ```
 
-For the complete econometric methodology and model specifications, see the [Empirical Analysis Guide](file:///.agents/skills/hk-ipo-pipeline/references/empirical_analysis_guide.md).
+For the complete econometric methodology and model specifications, see the [Empirical Analysis Guide](.agents/skills/hk-ipo-pipeline/references/empirical_analysis_guide.md).
 
 ---
 
@@ -199,11 +223,11 @@ For the complete econometric methodology and model specifications, see the [Empi
 
 This repository includes a standardized skill package compatible with AI coding agents (Antigravity, Claude Code, Cursor):
 
-- **Skill Location**: [`.agents/skills/hk-ipo-pipeline/`](file:///.agents/skills/hk-ipo-pipeline/)
-- **Specification**: [`SKILL.md`](file:///.agents/skills/hk-ipo-pipeline/SKILL.md)
+- **Skill Location**: [`.agents/skills/hk-ipo-pipeline/`](.agents/skills/hk-ipo-pipeline/)
+- **Specification**: [`SKILL.md`](.agents/skills/hk-ipo-pipeline/SKILL.md)
 - **Features**:
-  - **Self-Healing Environment** ([`check_env.sh`](file:///.agents/skills/hk-ipo-pipeline/scripts/check_env.sh)): Detects Python runtime and auto-installs missing dependencies (`openpyxl`, `pyyaml`, `requests`, `pymupdf`).
-  - **Universal Runner** ([`run_pipeline.sh`](file:///.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh)): Invokes pipeline subcommands safely from any working directory.
+  - **Self-Healing Environment** ([`check_env.sh`](.agents/skills/hk-ipo-pipeline/scripts/check_env.sh)): Detects Python runtime and auto-installs missing dependencies (`openpyxl`, `pyyaml`, `requests`, `pymupdf`).
+  - **Universal Runner** ([`run_pipeline.sh`](.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh)): Invokes pipeline subcommands safely from any working directory.
   - **Troubleshooting SOP**: Automated runbook for `VALIDATION_ERROR` and `HASH_MISMATCH` exceptions.
 
 ---
@@ -213,9 +237,19 @@ This repository includes a standardized skill package compatible with AI coding 
 ```text
 .
 ├── Makefile                                # Unified project automation entry point
-├── README.md                               # Project documentation
+├── run.py                                  # Top-level CLI dispatcher
+├── pyproject.toml                          # Project configuration & package metadata
+├── requirements.txt                        # Core runtime & analysis dependencies
+├── README.md                               # Project documentation & guides
+├── CONTRIBUTING.md                         # Contribution & development standards
+├── SECURITY.md                             # Data privacy policy
 ├── LICENSE                                 # MIT License
-├── .gitignore                              # Data isolation and version control ignore rules
+├── .editorconfig                           # IDE & code formatting consistency
+├── .gitignore                              # Data isolation rules (strictly excludes .xlsx/.csv/out)
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                          # Multi-OS & multi-Python version CI testing
 │
 ├── .agents/skills/hk-ipo-pipeline/         # AI Agent skill package
 │   ├── SKILL.md                            # Agent SOP and workflow guide
@@ -229,9 +263,9 @@ This repository includes a standardized skill package compatible with AI coding 
 │
 └── Data Collecting Templates/News/
     └── prospectus_pipeline/                # Core automated pipeline package
-        ├── run.py                          # Unified CLI entry point
+        ├── run.py                          # Pipeline sub-dispatcher
         ├── config.yaml                     # Pipeline configuration
-        ├── requirements.txt                # Python dependencies
+        ├── requirements.txt                # Package dependencies
         ├── pyproject.toml                  # Package metadata
         ├── README.md                       # Pipeline technical manual
         │
@@ -278,9 +312,11 @@ This repository includes a standardized skill package compatible with AI coding 
 
 ## Testing & Quality Assurance
 
-Run the automated test suite with verbose output:
+Run the automated test suite locally:
 
 ```bash
+make test
+# Or with verbose detail:
 python3 -m unittest discover -s "Data Collecting Templates/News/prospectus_pipeline/tests" -v
 ```
 
@@ -292,7 +328,22 @@ Test coverage includes:
 
 ---
 
-## Research References
+## Troubleshooting & FAQ
 
-- Lowry, M., Michaely, R., & Volkova, E. (2017). *Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*. Foundations and Trends® in Finance, 11(3–4), 154–320.
-- Hong Kong Exchanges and Clearing Limited (HKEX). *Rules Governing the Listing of Securities on The Stock Exchange of Hong Kong Limited* (Main Board Listing Rules, Chapter 18A, 18C, and FINI Framework).
+| Symptom / Question | Root Cause | Recommended Action |
+|---|---|---|
+| `VALIDATION_ERROR: quote not found` | The quotation string in the extracted JSON does not match the PDF verbatim. | Run `python run.py search pages <CODE>.HK <P1>-<P2>` to inspect original text and correct JSON. |
+| `HASH_MISMATCH` | The extracted JSON was modified after the validation step. | Re-run `python run.py validate --target prospectus [--only <CODE>.HK]` to generate a new valid SHA-256 signature. |
+| Missing Python packages | Dependencies not installed in local virtual environment. | Run `make env` to automatically verify and install dependencies. |
+| Accidental Excel write error | Unexpected write to wrong cell or column. | Revert immediately to the timestamped snapshot automatically saved in `backups/excel_snapshots/`. |
+
+---
+
+## Contributing & Research References
+
+- **Contributing**: Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) before submitting pull requests.
+- **Data Privacy**: Refer to [`SECURITY.md`](SECURITY.md).
+- **Literature References**:
+  - Lowry, M., Michaely, R., & Volkova, E. (2017). *Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*. Foundations and Trends® in Finance, 11(3–4), 154–320.
+  - Rock, K. (1986). *Why new issues are underpriced*. Journal of Financial Economics, 15(1–2), 187–212.
+  - Hong Kong Exchanges and Clearing Limited (HKEX). *Rules Governing the Listing of Securities on The Stock Exchange of Hong Kong Limited* (Main Board Listing Rules, Chapter 18A, 18C, and FINI Framework).
