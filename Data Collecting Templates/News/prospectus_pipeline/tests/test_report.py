@@ -1,11 +1,16 @@
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path[:0] = [str(ROOT), str(ROOT / "src")]
+WS = ROOT.parent
+WORKBOOK_PATH = WS / "HKIPO-MB2026Q1.xlsx"
 
 from report import generate_report
 
 
+@unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
 class ReportTests(unittest.TestCase):
     def test_generate_report_metrics(self):
         stats = generate_report()

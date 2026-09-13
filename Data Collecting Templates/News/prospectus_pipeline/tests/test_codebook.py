@@ -1,12 +1,17 @@
+import sys
 import unittest
 from pathlib import Path
 import csv
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path[:0] = [str(ROOT), str(ROOT / "src")]
+WS = ROOT.parent
+WORKBOOK_PATH = WS / "HKIPO-MB2026Q1.xlsx"
 
 from codebook import build_codebook, export_clean_csv, export_all
 
 
+@unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
 class CodebookTests(unittest.TestCase):
     def test_build_codebook_full_coverage(self):
         variables, summary = build_codebook()

@@ -1,11 +1,16 @@
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path[:0] = [str(ROOT), str(ROOT / "src")]
+WS = ROOT.parent
+WORKBOOK_PATH = WS / "HKIPO-MB2026Q1.xlsx"
 
 from cross_check import run_cross_check
 
 
+@unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
 class CrossCheckTests(unittest.TestCase):
     def test_run_cross_check_all_companies(self):
         result = run_cross_check()
