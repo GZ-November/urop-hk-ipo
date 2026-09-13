@@ -92,6 +92,41 @@ make report
 make export
 ```
 
+### Teammate Workflow: Ingesting & Processing a New IPO Company
+
+Teammates working on extracting new IPOs can run the full toolchain end-to-end for any specific company (e.g., `6082.HK`):
+
+```bash
+# 1. Locate and download statutory prospectus & allotment filings from HKEX
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py find --only 6082.HK
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py download --only 6082.HK
+
+# 2. Parse PDF pages, extract structured text, and slice key chapter packets
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py prepare --only 6082.HK
+
+# 3. Fast interactive search inside prospectus sections (no need to scroll 1,000 pages manually)
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py search outline 6082.HK
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py search pages 6082.HK 15-25
+
+# 4. Validate extracted JSON against schema and exact text quotation proofs
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py validate --target prospectus --only 6082.HK
+
+# 5. Safe write-back into target Excel workbook (creates automatic snapshot in backups/)
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py write --target prospectus --only 6082.HK --fill-missing
+
+# 6. Process allotment results and deterministic derivations (pricing date, green shoe, free float)
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py allot --only 6082.HK
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py derive_allot --only 6082.HK
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py write --target allot --only 6082.HK --fill-missing
+
+# 7. Collect external market indicators (OHLC, HIBOR, HKMA liquidity balance, 18C/18A flags)
+python3 Data\ Collecting\ Templates/News/prospectus_pipeline/run.py external --only 6082.HK
+
+# 8. Run final audit and Listing Rules cross-check
+make audit
+make cross_check
+```
+
 ---
 
 ## Empirical Econometric Analysis Guide
