@@ -1,0 +1,238 @@
+{
+  "workbook": "HKIPO-MB2026Q1.xlsx",
+  "sheet": "NLR",
+  "header_row": 1,
+  "field_count": 18,
+  "note": "配发结果公告来源字段（深蓝块 CJ:DP 中的 18 列）。列位置由规范化表头在运行时解析。",
+  "source": {
+    "document": "ANNOUNCEMENT OF (FINAL) OFFER PRICE AND ALLOTMENT RESULTS",
+    "index": "out/allotment_index.json",
+    "publisher": "HKEXnews"
+  },
+  "groups": {
+    "cornerstone_final": {
+      "columns": [
+        "CK"
+      ]
+    },
+    "demand": {
+      "columns": [
+        "CM",
+        "CN",
+        "CO",
+        "CP"
+      ]
+    },
+    "pricing": {
+      "columns": [
+        "CQ",
+        "CR"
+      ]
+    },
+    "final_shares": {
+      "columns": [
+        "CS",
+        "CT",
+        "CU",
+        "CV",
+        "CW"
+      ]
+    },
+    "proceeds": {
+      "columns": [
+        "CX"
+      ]
+    },
+    "shareholding": {
+      "columns": [
+        "CY",
+        "CZ",
+        "DA",
+        "DB",
+        "DC"
+      ]
+    }
+  },
+  "fields": [
+    {
+      "key": "col_CK",
+      "col": "CK",
+      "header": "Final cornerstone allocation (% of base offer)",
+      "group": "cornerstone_final",
+      "kind": "number",
+      "unit": "decimal",
+      "missing": "NaN",
+      "hint": "最终基石股数 ÷ base offer（不含超额配售）。优先用公告基石表的 Total 行；若表内已给『假设超额配售权未行使』的百分比，可直接采用。**若公告与招股书均无基石投资者（无基石表、全文无 Cornerstone Investor），必须填 0 —— 这是「确定的零」，不得留 NaN。**"
+    },
+    {
+      "key": "col_CM",
+      "col": "CM",
+      "header": "Subscription Ratio (times)",
+      "group": "demand",
+      "kind": "number",
+      "unit": "times",
+      "missing": "NaN",
+      "hint": "香港公开发售认购倍数。公告常见表述：over-subscribed by N times / Subscription level N times。填倍数（如 2347.53）。"
+    },
+    {
+      "key": "col_CN",
+      "col": "CN",
+      "header": "Public applicants",
+      "group": "demand",
+      "kind": "integer",
+      "unit": "count",
+      "missing": "NaN",
+      "hint": "有效申请数目（valid applications）。填人的个数，不是股数。"
+    },
+    {
+      "key": "col_CO",
+      "col": "CO",
+      "header": "Public valid applied shares",
+      "group": "demand",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "有效申请所涉及的股数（total number of Offer Shares applied for）。**正文常不直接给总数**：请去 `BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING` 表，把 Pool A 与 Pool B 各档的『NO. OF SHARES APPLIED FOR』逐档加总（表内『NO. OF VALID APPLICATIONS』列是人数，别加错），并可用『初始公开发售股数 × 认购倍数』做交叉验证。"
+    },
+    {
+      "key": "col_CP",
+      "col": "CP",
+      "header": "Public subscription original wording",
+      "group": "demand",
+      "kind": "text",
+      "unit": "text",
+      "missing": "NA",
+      "hint": "认购情况的原文表述，便于核对口径（『认购 N 倍』与『超额认购 N 倍』相差 1 倍）。"
+    },
+    {
+      "key": "col_CQ",
+      "col": "CQ",
+      "header": "Pricing date",
+      "group": "pricing",
+      "kind": "date",
+      "unit": "date",
+      "missing": "NA",
+      "hint": "最终发售价确定日；公告正文通常写明于某日厘定。"
+    },
+    {
+      "key": "col_CR",
+      "col": "CR",
+      "header": "Allotment announcement date",
+      "group": "pricing",
+      "kind": "date",
+      "unit": "date",
+      "missing": "NA",
+      "hint": "本公告的刊发日期，取自港交所文件元数据 DATE_TIME（确定性），不要用正文里的其他日期。quote 请引用包首『刊发时间（港交所元数据）』那一行，不要引正文的签署日期。page 填 1（该信息在包首而非正文某页）。"
+    },
+    {
+      "key": "col_CS",
+      "col": "CS",
+      "header": "Final global offering shares (before over-allotment)",
+      "group": "final_shares",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "最终全球发售股数（行使发售规模调整权后、未计入超额配售的部分）。"
+    },
+    {
+      "key": "col_CT",
+      "col": "CT",
+      "header": "Final public offer shares",
+      "group": "final_shares",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "最终香港公开发售股数（已计入回拨）。"
+    },
+    {
+      "key": "col_CU",
+      "col": "CU",
+      "header": "Final placing shares",
+      "group": "final_shares",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "最终国际配售股数（不含超额配售）。"
+    },
+    {
+      "key": "col_CV",
+      "col": "CV",
+      "header": "Over-allotment shares actually issued",
+      "group": "final_shares",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "【流水线自动回填，不要自己推断】本字段由 greenshoe 阶段依据上市后港交所的《行使超额配售权》公告确定：有行使公告则填其实际配发股数（部分行使也有数字），无行使公告且 30 天窗口已过则填 0。**严禁**从配发结果公告里「假设未行使」的口径反推，那会把实际行使的公司填成 0。此处填 NaN 即可，后续会被确定性回填覆盖。"
+    },
+    {
+      "key": "col_CW",
+      "col": "CW",
+      "header": "Actual clawback / reallocation description",
+      "group": "final_shares",
+      "kind": "text",
+      "unit": "text",
+      "missing": "NA",
+      "hint": "实际回拨/重新分配情况的原文描述（例如由国际配售回拨至公开发售的股数）。"
+    },
+    {
+      "key": "col_CX",
+      "col": "CX",
+      "header": "Net IPO proceeds to issuer (HK$)",
+      "group": "proceeds",
+      "kind": "number",
+      "unit": "HKD",
+      "missing": "NaN",
+      "hint": "发行人的净募资额（扣除承销费等开支），不含售股股东所得。公告若给区间，取对应最终发售价的数值。"
+    },
+    {
+      "key": "col_CY",
+      "col": "CY",
+      "header": "Public shareholding at listing (%)",
+      "group": "shareholding",
+      "kind": "number",
+      "unit": "decimal",
+      "missing": "NaN",
+      "hint": "上市时公众持股比例（小数）。"
+    },
+    {
+      "key": "col_CZ",
+      "col": "CZ",
+      "header": "Share base used for both public shareholding ratios",
+      "group": "shareholding",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "计算公众持股比例所用的分母股数。公告里通常写作 Number of issued Shares upon Listing (before exercise of the Over-allotment Option)；也可能需要从公众持股百分比反算。**不要因为公告用了市值口径就不填**——先找这一行的股数。"
+    },
+    {
+      "key": "col_DA",
+      "col": "DA",
+      "header": "Unrestricted public shareholding at listing (%)",
+      "group": "shareholding",
+      "kind": "number",
+      "unit": "decimal",
+      "missing": "NaN",
+      "hint": "不受禁售限制的公众持股比例（小数）。公告若直接给 free float 百分比就直接用；若只给自由流通股数，则 = 自由流通股数 ÷ col_CZ。**自由流通股数 = 本次全球发售股份(col_CS) − 基石获配股份(= col_CK × col_CS)**。**不要用 col_CY − col_CK**：那会漏掉其他受禁售的上市前股东（如 PRC 法律下 12 个月禁售的内资股）。"
+    },
+    {
+      "key": "col_DB",
+      "col": "DB",
+      "header": "Free float denominator description",
+      "group": "shareholding",
+      "kind": "text",
+      "unit": "text",
+      "missing": "NA",
+      "hint": "自由流通量（FREE FLOAT）分母的口径说明与所涉股份类别/剔除项。"
+    },
+    {
+      "key": "col_DC",
+      "col": "DC",
+      "header": "Free float denominator shares",
+      "group": "shareholding",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "hint": "自由流通比例所用的**分母股数**（通常与 col_CZ 相同，即上市时已发行股份总数）。注意：本字段是**分母**，不是自由流通股数本身。"
+    }
+  ]
+}

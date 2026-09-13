@@ -1,0 +1,161 @@
+#!/usr/bin/env python3
+"""【离线入表】BN / BO：恒生行业分类（HSICS 2026）代码与版本离线映射并安全写入工作簿。
+
+数据源（纯确定性）：
+  1. 港交所行业英文字段：out/hsic.json（由 tools/external/hsic.py 在线抓取）
+  2. 恒生行业分类规范：data/manual/hsics.json（对照 docs/specs/Hang_Seng_Industry_Classification_System_2026.pdf）
+
+做法：港交所给的是英文名称（如 "Semiconductors"），
+本脚本用 HSIC_EN2CODE 把英文名映射到 HSICS 的 6 位码（如 703010）。
+21 个实际出现的子类别均为一一对应，无歧义。
+
+写入字段：
+  - BN = 6 位码（文本，因 052020/053040 等含前导零）；
+  - BO = "HSICS (Hang Seng Industry Classification System) 2026"。
+同时把三层分类（行业/业务类别/业务子类别）写进 out/hsic_codes.json 供 cross_check / report 审计分析。
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import shutil
+import sys
+from pathlib import Path
+
+import openpyxl
+import yaml
+
+ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
+WS = ROOT.parent
+sys.path.insert(0, str(ROOT / "src"))
+from contracts import normalize_code  # noqa: E402
+
+SYSTEM = "HSICS (Hang Seng Industry Classification System) 2026"
+
+# 港交所 HSIC 英文名 → HSICS 6 位码（对照 data/manual/hsics.json）
+HSIC_EN2CODE = {
+    "Semiconductors": "703010",
+    "Semiconductor Equipment & Materials": "703020",
+    "Application Software": "702030",
+    "Internet Services and Infrastructure": "702025",
+    "Digital Solution Services": "702015",
+    "Consumer Telecommunication Equipment & Components": "701010",
+    "Robotic Systems & Solutions": "701030",
+    "Industrial Components & Equipment": "101020",
+    "Electrical & Electronic Components": "101025",
+    "Printing & Packaging": "103020",
+    "Auto Parts": "231020",
+    "Toys & Leisure Products": "232030",
+    "Packaged Foods": "251010",
+    "Non-alcoholic Beverages": "251030",
+    "Poultry & Meat": "252010",
+    "Specialty Chemicals": "053040",
+    "Copper": "052020",
+    "Property Investment": "601030",
+    "Biotechnology": "281020",
+    "Medical Devices & Supplies": "282010",
+    "Medical & Aesthetic Services": "282020",
+}
+
+HEADERS = {"BN": "Industry classification code",
+           "BO": "Industry classification system and version"}
+
+
+def norm(s) -> str:
+    return " ".join(str(s or "").replace("\n", " ").split()).strip().lower()
+
+
+def main() -> int:
+    dry = "--dry-run" in sys.argv
+    cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    book = WS / cfg["workbook"]
+
+    hsic = json.loads((ROOT / "out" / "hsic.json").read_text(encoding="utf-8"))
+    tax = {r["code"]: r for r in json.loads(
+        (ROOT / "data" / "manual" / "hsics.json").read_text(encoding="utf-8"))}
+
+    missing_map = sorted({v["hsic_sub"] for v in hsic.values()
+                          if v.get("hsic_sub") and v["hsic_sub"] not in HSIC_EN2CODE})
+    if missing_map:
+        raise SystemExit(f"有子类别未映射，请补 HSIC_EN2CODE：{missing_map}")
+
+    wb = openpyxl.load_workbook(book)
+    ws = wb[cfg["sheet"]]
+    col_of = {}
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(1, c).value
+        if v in (None, ""):
+            continue
+        for k, h in HEADERS.items():
+            if norm(v) == norm(h):
+                col_of[k] = c
+    if set(col_of) != {"BN", "BO"}:
+        wb.close()
+        raise SystemExit(f"找不到 BN/BO 列：{col_of}")
+
+    ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
+    row_of = {}
+    for r in range(cfg["data_start_row"], ws.max_row + 1):
+        v = ws.cell(r, ci_code).value
+        if v not in (None, ""):
+            row_of[normalize_code(str(v).strip())] = r
+
+    audit, n = {}, 0
+    print(f"{'code':9s} {'HSICS码':9s} {'业务类别':30s} {'子类别':28s} 行业")
+    for code, r in sorted(row_of.items()):
+        rec = hsic.get(code) or {}
+        sub = rec.get("hsic_sub")
+        if not sub:
+            print(f"{code:9s} 缺 HSIC 数据，跳过")
+            continue
+        c6 = HSIC_EN2CODE[sub]
+        t = tax.get(c6, {})
+        ws.cell(r, col_of["BN"]).value = c6          # 文本，保留前导零
+        ws.cell(r, col_of["BO"]).value = SYSTEM
+        audit[code] = {
+            "code": c6,
+            "sub_sector": t.get("name"),
+            "category": t.get("category"),
+            "industry": t.get("industry"),
+            "hkex_hsic_ind": rec.get("hsic_ind"),
+            "hkex_hsic_sub": sub,
+            "system": SYSTEM,
+        }
+        n += 1
+        print(f"{code:9s} {c6:9s} {str(t.get('category'))[:28]:30s} "
+              f"{str(t.get('name'))[:26]:28s} {t.get('industry')}")
+
+    outj = ROOT / "out" / "hsic_codes.json"
+    outj.write_text(json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8")
+    print(f"\n定码 {n} 家 -> {outj}")
+
+    if dry:
+        wb.close()
+        print("--dry-run：未写回")
+        return 0
+
+    wb.close()
+    backup_dir = book.parent / "backups" / "excel_snapshots"
+
+    backup_dir.mkdir(parents=True, exist_ok=True)
+
+    backup = backup_dir / (f"{book.stem}.backup-before-hsic-"
+                            f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
+    shutil.copy2(book, backup)
+    wb = openpyxl.load_workbook(book)
+    ws = wb[cfg["sheet"]]
+    for code, rec in audit.items():
+        r = row_of[code]
+        ws.cell(r, col_of["BN"]).value = rec["code"]
+        ws.cell(r, col_of["BO"]).value = SYSTEM
+    tmp = book.with_suffix(".saving.xlsx")
+    wb.save(tmp)
+    wb.close()
+    tmp.replace(book)
+    print(f"已写回 BN/BO（{len(audit)} 家）\n备份：{backup.name}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

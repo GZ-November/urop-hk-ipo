@@ -1,0 +1,58 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+* 2.*
+* 3.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.dsh/
+
+# ==============================================================================
+# Private Research Data & Collected Datasets (Strictly Excluded)
+# ==============================================================================
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.doc
+*.docx
+*.pdf
+
+# Raw sources, backups, internal docs, archives and literature
+**/sources/
+**/backups/
+**/archive/
+**/docs/
+Survey Paper/
+
+# Pipeline Working Cache, Extracted JSONs, and Generated Artifacts
+**/prospectus_pipeline/data/
+**/prospectus_pipeline/out/
+*.backup-*.json
+*-backup-*.json
+.pipeline_state

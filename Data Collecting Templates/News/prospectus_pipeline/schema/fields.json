@@ -1,0 +1,1089 @@
+{
+  "workbook": "HKIPO-MB2026Q1.xlsx",
+  "sheet": "NLR",
+  "header_row": 1,
+  "field_count": 60,
+  "note": "Prospectus-derived fields. Columns resolved by normalized header at runtime. Layout: green A:K (HKEx) / blue (prospectus) / dark-blue FF00B0F0 (must search elsewhere); Chinese name stays the last column.",
+  "groups": [
+    "business",
+    "chinese_name",
+    "cornerstone",
+    "extra_financial",
+    "financials",
+    "offering",
+    "ownership",
+    "price",
+    "share_structure",
+    "underwriting"
+  ],
+  "fields": [
+    {
+      "key": "col_L",
+      "col": "L",
+      "header": "Total (without option)",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_M",
+      "col": "M",
+      "header": "Global Offering (without option)",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_N",
+      "col": "N",
+      "header": "Number of offer shares under the capitalization Issue",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_O",
+      "col": "O",
+      "header": "Number of offer shares under Capitalization Rest",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_P",
+      "col": "P",
+      "header": "Sale Shares",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_Q",
+      "col": "Q",
+      "header": "New shares ",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_R",
+      "col": "R",
+      "header": "Placing Shares",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_S",
+      "col": "S",
+      "header": "Public Offer shares",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SHARE CAPITAL",
+        "GLOBAL OFFERING STATISTICS",
+        "STATISTICS OF THE GLOBAL OFFERING",
+        "IMPORTANT"
+      ]
+    },
+    {
+      "key": "col_T",
+      "col": "T",
+      "header": "Maximum Offer Price",
+      "group": "price",
+      "kind": "number",
+      "unit": "HKD_per_share",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "__cover__",
+        "IMPORTANT",
+        "OFFER PRICE",
+        "MAXIMUM OFFER PRICE",
+        "MINIMUM OFFER PRICE"
+      ]
+    },
+    {
+      "key": "col_U",
+      "col": "U",
+      "header": "Minimum Offer Price",
+      "group": "price",
+      "kind": "number",
+      "unit": "HKD_per_share",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "__cover__",
+        "IMPORTANT",
+        "OFFER PRICE",
+        "MAXIMUM OFFER PRICE",
+        "MINIMUM OFFER PRICE"
+      ]
+    },
+    {
+      "key": "col_V",
+      "col": "V",
+      "header": "currency in financial information",
+      "group": "financials",
+      "kind": "text",
+      "unit": "currency_code",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ]
+    },
+    {
+      "key": "col_W",
+      "col": "W",
+      "header": "total assets in year-3 (3 years before IPO)",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_X",
+      "col": "X",
+      "header": "total assets in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_Y",
+      "col": "Y",
+      "header": "total assets in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_Z",
+      "col": "Z",
+      "header": "total equity in year-3",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_AA",
+      "col": "AA",
+      "header": "total equity in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_AB",
+      "col": "AB",
+      "header": "total equity in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_AC",
+      "col": "AC",
+      "header": "total liability in year-3",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_AD",
+      "col": "AD",
+      "header": "total liability in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_AE",
+      "col": "AE",
+      "header": "total liability in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_AF",
+      "col": "AF",
+      "header": "Net sales in year-3",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_AG",
+      "col": "AG",
+      "header": "Net sales in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_AH",
+      "col": "AH",
+      "header": "Net sales in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_AI",
+      "col": "AI",
+      "header": "Profit before tax in year-3",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_AJ",
+      "col": "AJ",
+      "header": "Profit before tax in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_AK",
+      "col": "AK",
+      "header": "Profit before tax in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_AL",
+      "col": "AL",
+      "header": "Profit for the year in year-3",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-3",
+      "annualize": false
+    },
+    {
+      "key": "col_AM",
+      "col": "AM",
+      "header": "Profit for the year in year-2",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-2",
+      "annualize": false
+    },
+    {
+      "key": "col_AN",
+      "col": "AN",
+      "header": "Profit for the year in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "SUMMARY OF HISTORICAL FINANCIAL INFORMATION",
+        "DISCUSSION OF SELECTED ITEMS FROM THE CONSOLIDATED BALANCE",
+        "CONSOLIDATED BALANCE SHEETS",
+        "CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS",
+        "HISTORICAL FINANCIAL INFORMATION OF THE GROUP",
+        "INDEBTEDNESS"
+      ],
+      "period": "year-1",
+      "annualize": "sales_profit_only_if_partial"
+    },
+    {
+      "key": "col_AO",
+      "col": "AO",
+      "header": "Underwriting Commission (% of fund raised HK (a)",
+      "group": "underwriting",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "UNDERWRITING ARRANGEMENTS AND EXPENSES",
+        "UNDERWRITING COMMISSION",
+        "UNDERWRITING"
+      ]
+    },
+    {
+      "key": "col_AP",
+      "col": "AP",
+      "header": "Underwriting Commission (% of fund raised Int.(b)",
+      "group": "underwriting",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "UNDERWRITING ARRANGEMENTS AND EXPENSES",
+        "UNDERWRITING COMMISSION",
+        "UNDERWRITING"
+      ]
+    },
+    {
+      "key": "col_AQ",
+      "col": "AQ",
+      "header": "Over-allotment Option (%)",
+      "group": "underwriting",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "UNDERWRITING ARRANGEMENTS AND EXPENSES",
+        "UNDERWRITING COMMISSION",
+        "UNDERWRITING"
+      ]
+    },
+    {
+      "key": "col_AR",
+      "col": "AR",
+      "header": "Principal business / industry",
+      "group": "business",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "BUSINESS",
+        "SUMMARY",
+        "HISTORY AND DEVELOPMENT",
+        "BASIS OF LISTING"
+      ]
+    },
+    {
+      "key": "col_AS",
+      "col": "AS",
+      "header": "Listing route / applicable chapter",
+      "group": "business",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "BUSINESS",
+        "SUMMARY",
+        "HISTORY AND DEVELOPMENT",
+        "BASIS OF LISTING"
+      ]
+    },
+    {
+      "key": "col_AT",
+      "col": "AT",
+      "header": "Year-1 financial period end (dd/mm/yy)",
+      "group": "extra_financial",
+      "kind": "date",
+      "unit": "date",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ],
+      "period": "year-1_original_end",
+      "annualize": false
+    },
+    {
+      "key": "col_AU",
+      "col": "AU",
+      "header": "Operating cash flow in year-1 (before annualization)",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ],
+      "period": "year-1_original",
+      "annualize": false
+    },
+    {
+      "key": "col_AV",
+      "col": "AV",
+      "header": "Cash and cash equivalents at year-1 end",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ]
+    },
+    {
+      "key": "col_AW",
+      "col": "AW",
+      "header": "R&D expensed in year-1 (before annualization)",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ],
+      "period": "year-1_original",
+      "annualize": false
+    },
+    {
+      "key": "col_AX",
+      "col": "AX",
+      "header": "Development costs capitalized in year-1 (additions, before annualization)",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "basic_currency_units",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ],
+      "period": "year-1_original",
+      "annualize": false
+    },
+    {
+      "key": "col_AY",
+      "col": "AY",
+      "header": "Top 5 customers (% of year-1 revenue)",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "section_keywords": [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS",
+        "CASH FLOW ANALYSIS",
+        "R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE",
+        "INTANGIBLE ASSETS",
+        "CAPITALIZED DEVELOPMENT",
+        "CUSTOMERS AND SUPPLIERS",
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ],
+      "period": "year-1_original",
+      "annualize": false
+    },
+    {
+      "key": "col_DP",
+      "col": "DP",
+      "header": "Company Chinese Name",
+      "group": "chinese_name",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "__cover__"
+      ]
+    },
+    {
+      "key": "col_CJ",
+      "col": "CJ",
+      "header": "Cornerstone investor names",
+      "group": "cornerstone",
+      "kind": "text",
+      "unit": "investor_names",
+      "source": "prospectus",
+      "missing": "NA",
+      "section_keywords": [
+        "CORNERSTONE INVESTORS",
+        "THE CORNERSTONE INVESTORS",
+        "CORNERSTONE PLACING"
+      ]
+    },
+    {
+      "key": "col_BA",
+      "col": "BA",
+      "header": "Pre-IPO VC/PE backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "是否引入 Pre-IPO VC/PE 投资者：1=有，0=无。看 HISTORY AND DEVELOPMENT — Pre-IPO Investments 与 SUBSTANTIAL SHAREHOLDERS 名单；只要有专业投资机构（VC/PE/产业基金）在上市前入股即 1。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_BB",
+      "col": "BB",
+      "header": "Ultimate controller type",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "最终控制人类型（如：自然人 / 家族 / 国资委 / 地方政府 / 外资 / 无实际控制人）。取 SUBSTANTIAL SHAREHOLDERS 与 Controlling Shareholders 段的实际控制人身份表述。",
+      "section_keywords": [
+        "Controlling Shareholders",
+        "Substantial Shareholders",
+        "our Controlling Shareholders"
+      ]
+    },
+    {
+      "key": "col_BC",
+      "col": "BC",
+      "header": "Controller economic interest at listing (%)",
+      "group": "ownership",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "控制人上市时**经济权益**（持股比例），填小数。取 CONTROLLING/SUBSTANTIAL SHAREHOLDERS 表的持股百分比。",
+      "section_keywords": [
+        "Controlling Shareholders",
+        "Substantial Shareholders"
+      ]
+    },
+    {
+      "key": "col_BD",
+      "col": "BD",
+      "header": "Controller voting rights at listing (%)",
+      "group": "ownership",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "控制人上市时**投票权**比例，填小数。有 WVR（同股不同权）时与持股不同，取投票权那一列；无 WVR 通常与 BC 相同。",
+      "section_keywords": [
+        "Controlling Shareholders",
+        "Substantial Shareholders"
+      ]
+    },
+    {
+      "key": "col_BE",
+      "col": "BE",
+      "header": "Interest-bearing debt at year-1 end",
+      "group": "financials",
+      "kind": "number",
+      "unit": "HKD",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "year-1 期末**有息负债**（借款、债券、租赁负债等带息项目）。取 INDEBTEDNESS 段或借款附注的期末余额；不含应付账款等无息负债。 期末余额，不年化（手册：仅 year-1 销售/税前利润/净利润年化）",
+      "section_keywords": [
+        "INDEBTEDNESS",
+        "Borrowings",
+        "Interest-bearing"
+      ],
+      "annualize": false
+    },
+    {
+      "key": "col_BF",
+      "col": "BF",
+      "header": "Technology commercialization stage",
+      "group": "business",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "技术商业化阶段（如：研发阶段 / 小批量试产 / 商业化初期 / 规模商业化 / 已量产）。按 BUSINESS 与业务摘要里的产品状态表述填，不要按行业推测。",
+      "section_keywords": [
+        "commerciali",
+        "mass production",
+        "our technology"
+      ]
+    },
+    {
+      "key": "col_BG",
+      "col": "BG",
+      "header": "Debt repayment (% of planned net IPO proceeds)",
+      "group": "business",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。",
+      "section_keywords": [
+        "USE OF PROCEEDS",
+        "FUTURE PLANS AND USE OF PROCEEDS"
+      ]
+    },
+    {
+      "key": "col_BI",
+      "col": "BI",
+      "header": "Share class",
+      "group": "share_structure",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。",
+      "section_keywords": [
+        "Share class",
+        "H Shares",
+        "Class A Ordinary Shares"
+      ]
+    },
+    {
+      "key": "col_BP",
+      "col": "BP",
+      "header": "Incorporation date",
+      "group": "ownership",
+      "kind": "date",
+      "unit": "date",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "公司**注册成立日期**（dd/mm/yy）。取 HISTORY AND DEVELOPMENT 或公司资料段“incorporated/established on <date>”。",
+      "section_keywords": [
+        "HISTORY AND DEVELOPMENT",
+        "incorporated in",
+        "established in"
+      ]
+    },
+    {
+      "key": "col_BR",
+      "col": "BR",
+      "header": "Principal place of business",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。",
+      "section_keywords": [
+        "principal place of business",
+        "registered office",
+        "Head office"
+      ]
+    },
+    {
+      "key": "col_BT",
+      "col": "BT",
+      "header": "Accounting standard",
+      "group": "financials",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。",
+      "section_keywords": [
+        "IFRS Accounting Standards",
+        "Accounting Standards",
+        "accounting policies"
+      ]
+    },
+    {
+      "key": "col_CC",
+      "col": "CC",
+      "header": "Subscription opening date",
+      "group": "offering",
+      "kind": "date",
+      "unit": "date",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "香港公开发售**开始认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。",
+      "section_keywords": [
+        "EXPECTED TIMETABLE",
+        "Expected Timetable",
+        "Hong Kong Public Offering commences"
+      ]
+    },
+    {
+      "key": "col_CD",
+      "col": "CD",
+      "header": "Subscription closing date",
+      "group": "offering",
+      "kind": "date",
+      "unit": "date",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "香港公开发售**截止认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。",
+      "section_keywords": [
+        "EXPECTED TIMETABLE",
+        "Expected Timetable",
+        "applications close"
+      ]
+    },
+    {
+      "key": "col_CE",
+      "col": "CE",
+      "header": "H shares after IPO (base; no options)",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "上市后**在港交所挂牌的股份数**（base，不含超额配售）。统一口径：① 内地 H 股发行人全部转换时 = 总股本；② 部分转换时 = 由未上市股转换的 H 股 + 新发 H 股（剩余未上市股不挂牌，不计入）；③ A+H 发行人 = 仅新发 H 股（A 股在沪深市场挂牌，不计入）；④ 开曼/境外发行人没有 H 股类别，其全部股份均在港交所挂牌，故 = 上市后已发行股份总数。即：本列恒等于「港交所挂牌的股份数」，四类结构可比。",
+      "section_keywords": [
+        "H Shares to be issued pursuant to the Global Offering",
+        "H shares after"
+      ],
+      "annualize": false
+    },
+    {
+      "key": "col_CF",
+      "col": "CF",
+      "header": "Gross profit in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "money",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "year-1 **毛利**（用与 col_V 相同的披露货币基本单位）。取损益表的 Gross profit。 **不年化**——手册明确仅 year-1 销售/税前利润/净利润年化，毛利不在其列；直接填 year-1 期间披露值",
+      "section_keywords": [
+        "Gross profit",
+        "GROSS PROFIT"
+      ],
+      "annualize": false
+    },
+    {
+      "key": "col_CG",
+      "col": "CG",
+      "header": "Capital expenditure in year-1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "money",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "year-1 **资本开支**。取现金流量表“购建物业、厂房及设备”或 CAPITAL EXPENDITURE 段。 **不年化**——属原始期间流量，与 AU/AW/AX 同口径；直接填 year-1 期间披露值",
+      "section_keywords": [
+        "capital expenditure",
+        "Capital expenditure",
+        "purchase of property, plant and equipment"
+      ],
+      "annualize": false
+    },
+    {
+      "key": "col_CH",
+      "col": "CH",
+      "header": "Audit opinion (year-1)",
+      "group": "financials",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "year-1 **审计意见类型**（如 无保留意见 / Unqualified opinion / Qualified opinion）。取会计师报告的审计意见段。",
+      "section_keywords": [
+        "opinion",
+        "In our opinion",
+        "Accountants. Report"
+      ]
+    },
+    {
+      "key": "col_CI",
+      "col": "CI",
+      "header": "Listing expenses (HK$)",
+      "group": "underwriting",
+      "kind": "number",
+      "unit": "HKD",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "**总上市费用**（HK$ 基本单位，含承销佣金与其他开支）。取 UNDERWRITING COMMISSIONS AND LISTING EXPENSES 段的合计。",
+      "section_keywords": [
+        "listing expenses",
+        "Listing Expenses",
+        "UNDERWRITING COMMISSIONS AND LISTING EXPENSES"
+      ]
+    }
+  ]
+}

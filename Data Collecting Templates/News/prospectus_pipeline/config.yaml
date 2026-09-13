@@ -1,0 +1,63 @@
+# 招股书自动采集流水线配置
+workbook: "HKIPO-MB2026Q1.xlsx"      # 目标工作簿（相对本目录上级）
+sheet: "NLR"
+data_start_row: 2
+
+# 从模板哪些列读取公司身份与时间窗
+id_columns:
+  file_no: "A"          # HKEx file# of the year
+  stock_code: "B"       # 4位+.HK
+  name: "C"             # 公司名
+  prospectus_date: "D"  # 招股书日期
+  listing_date: "E"     # 上市日期
+
+hkex:
+  search_url: "https://www1.hkexnews.hk/search/titleSearchServlet.do"
+  base_url: "https://www1.hkexnews.hk"
+  # 招股书所在文档大类；子类含 Offer for Subscription / Offer for Placing / Prospectus
+  listing_doc_prefix: "Listing Documents"
+  include_substrings: ["Offer for Subscription", "Offer for Placing", "Prospectus"]
+  exclude_substrings: ["Authorised Collective Investment Scheme", "Rights Issue", "Open Offer", "Placing of Existing Shares"]
+  day_window: 4          # 在招股书日期前后各搜 N 天
+  row_range: 1000
+  sleep_sec: 0.4
+  timeout_sec: 40
+
+paths:
+  data: "prospectus_pipeline/data"
+  pdf: "prospectus_pipeline/data/pdf"          # 招股书 PDF
+  text: "prospectus_pipeline/data/text"        # 页级文本 jsonl
+  sections: "prospectus_pipeline/data/sections"# 分组切片文本
+  packets: "prospectus_pipeline/data/packets"  # 交给 AI 读取的抽取包
+  out: "prospectus_pipeline/out"               # 结果与日志
+  # ---- 配发结果公告（allot 阶段）----
+  allot_pdf: "prospectus_pipeline/data/allot/pdf"
+  allot_text: "prospectus_pipeline/data/allot/text"
+  allot_packets: "prospectus_pipeline/data/allot/packets"
+  allot_out: "prospectus_pipeline/out/allot"
+
+extract:
+  allot_max_chars: 400000      # 公告全文上限（实测 2.5–10 万字符，一般不会触发）
+  max_chars_per_group: 60000   # 默认每组切片字符上限
+  max_runs_per_anchor: 2       # 每个章节锚点最多取几段连续章节
+  # 关键组单独给预算，防止基石/附加财务被前面的章节截断。
+  group_caps:
+    share_structure: 45000
+    price: 25000
+    financials: 95000
+    underwriting: 45000
+    business: 45000
+    cornerstone: 80000
+    extra_financial: 110000
+    chinese_name: 10000
+    ownership: 50000
+    offering: 20000
+  max_chars_total: 550000      # 覆盖现行 60 字段的全部分组
+  cover_pages: 3               # 封面页数（中文名、价格）
+
+validate:
+  # 股份恒等式应为精确等式，仅容整数舍入；财务用披露单位级别的四舍五入容差。
+  share_rel_tol: 0.000000001
+  share_abs_tol: 1
+  balance_rel_tol: 0.005
+  balance_abs_tol: 2000
