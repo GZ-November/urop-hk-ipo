@@ -85,6 +85,7 @@ Exports clean data and comprehensive data dictionary for econometric research:
   - Clean CSV formatted in UTF-8 with BOM;
   - Comprehensive Markdown Data Codebook with summary statistics;
   - Structured machine-readable Codebook JSON.
+- Econometric modeling and empirical workflows: [empirical_analysis_guide.md](./references/empirical_analysis_guide.md).
 
 ### 6. Automated Regression & Safety Test Suite (`test`)
 ```bash
