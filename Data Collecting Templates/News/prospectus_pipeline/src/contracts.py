@@ -196,6 +196,51 @@ def _has_verbatim_span(quote: str, page_text: str, min_words: int = 6) -> bool:
     return total >= COVERAGE_MIN and longest >= LONGEST_SPAN_MIN
 
 
+COMPANY_LEVEL_TITLE_PATTERN = re.compile(
+    r"(?:STATEMENTS?\s+OF\s+FINANCIAL\s+POSITION\s+(?:OF\s+THE\s+COMPANY|[-–—]\s*THE\s+COMPANY|\(THE\s+COMPANY\))|"
+    r"COMPANY\s+STATEMENTS?\s+OF\s+FINANCIAL\s+POSITION|"
+    r"BALANCE\s+SHEETS?\s+OF\s+THE\s+COMPANY|"
+    r"BALANCE\s+SHEET\s+OF\s+THE\s+COMPANY|"
+    r"COMPANY\s+BALANCE\s+SHEETS?|"
+    r"STATEMENT\s+OF\s+FINANCIAL\s+POSITION\s+OF\s+THE\s+PARENT)",
+    re.IGNORECASE,
+)
+
+CONSOLIDATED_FINANCIAL_FIELDS = {
+    # 3-year Balance sheet (Assets, Equity, Liabilities)
+    "col_W", "col_X", "col_Y",
+    "col_Z", "col_AA", "col_AB",
+    "col_AC", "col_AD", "col_AE",
+    # 3-year Income statement (Sales, PBT, Profit for year)
+    "col_AF", "col_AG", "col_AH",
+    "col_AI", "col_AJ", "col_AK",
+    "col_AL", "col_AM", "col_AN",
+    # Cash flow & Indebtedness
+    "col_AU", "col_AV", "col_AW", "col_AX", "col_BE",
+    # Financial metrics & Meta
+    "col_V", "col_BT", "col_CF", "col_CG", "col_CH",
+}
+
+
+def is_company_level_statement(text: str) -> bool:
+    """Detect whether page text contains a company-level (parent-only) balance sheet.
+
+    In HK IPO prospectuses (Accountants' Report, Appendix I), parent-only balance sheets
+    typically appear immediately after consolidated group balance sheets. They must never
+    be cited for Group financial metrics.
+    """
+    if not text:
+        return False
+    lines = [line.strip() for line in text.splitlines() if line.strip()][:15]
+    header = " ".join(lines).upper()
+    if COMPANY_LEVEL_TITLE_PATTERN.search(header):
+        return True
+    if ("STATEMENT OF FINANCIAL POSITION" in header or "BALANCE SHEET" in header) and "CONSOLIDATED" not in header:
+        if "INVESTMENTS IN SUBSIDIARIES" in text.upper() or "INVESTMENT IN SUBSIDIARIES" in text.upper():
+            return True
+    return False
+
+
 # 证据来自「检索结论」而非文档原文片段的来源：没有可引用的页码，
 # 由 validate.check_allot 拿 greenshoe.json / cornerstone_absence.json 做确定性核对。
 SEARCH_SOURCES = {"greenshoe_lapse", "greenshoe_search", "cornerstone_absence", "da_formula"}
@@ -237,7 +282,8 @@ def evidence_issues(record: dict, packet_path: Path, schema: dict,
             if page not in alt_pages:
                 issues.append(f"{key}: 绿鞋公告第 {page} 页不存在")
                 continue
-            haystack = _page_text(alt, page)
+            pg_text = _page_text(alt, page)
+            haystack = pg_text
             text_for_tokens = haystack
         elif source == "prospectus":
             full = alt_texts.get("prospectus")
@@ -248,12 +294,14 @@ def evidence_issues(record: dict, packet_path: Path, schema: dict,
             if page not in full_pages:
                 issues.append(f"{key}: 招股书第 {page} 页不存在")
                 continue
-            haystack = _page_text(full, page)
+            pg_text = _page_text(full, page)
+            haystack = pg_text
             text_for_tokens = haystack
         else:
             preamble = text.split("<<<PAGE", 1)[0]
             if page in pages:
-                haystack = _page_text(text, page) + "\n" + preamble
+                pg_text = _page_text(text, page)
+                haystack = pg_text + "\n" + preamble
             else:
                 # 招股书 packet 只是种子切片；代理用 tools_search 在全文命中的页
                 # 必须也能过闸门。alt_texts["prospectus"] 是带 <<<PAGE n>>> 的全文。
@@ -265,8 +313,13 @@ def evidence_issues(record: dict, packet_path: Path, schema: dict,
                 if page not in full_pages:
                     issues.append(f"{key}: cited page {page} is not present in prospectus text")
                     continue
-                haystack = _page_text(full, page) + "\n" + preamble
+                pg_text = _page_text(full, page)
+                haystack = pg_text + "\n" + preamble
             text_for_tokens = haystack
+        if key in CONSOLIDATED_FINANCIAL_FIELDS and is_company_level_statement(pg_text):
+            issues.append(f"{key}: cited page {page} is from company-level (parent) statement ('...OF THE COMPANY'); "
+                          "financial metrics must be extracted from CONSOLIDATED/group statements")
+            continue
         tokens = [x.lower() for x in re.findall(r"[A-Za-z0-9]{3,}|[\u4e00-\u9fff]{2,}", quote)]
         if tokens:
             hay_lower = text_for_tokens.lower()

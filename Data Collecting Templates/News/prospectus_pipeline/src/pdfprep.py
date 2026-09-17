@@ -5,6 +5,7 @@ import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from contracts import is_company_level_statement
 from storage import merge_index
 
 import requests
@@ -221,7 +222,8 @@ def locate_sections(cfg: dict, code: str) -> dict[str, list[int]]:
     """按锚点优先级取页：每个锚点取至多 MAX_RUNS_PER_ANCHOR 段连续章节，
     自章节起点向后延伸 span 页。页码保持优先级顺序，便于在字符预算内先保高价值表。"""
     pages = _pages(cfg, code)
-    n_pages = len(pages)
+    n_pages = max((p.get("page", 0) for p in pages), default=len(pages))
+    page_text_by_no = {p["page"]: p["text"] for p in pages}
     cover = int(cfg["extract"]["cover_pages"])
     max_runs = int(cfg["extract"].get("max_runs_per_anchor", 2))
     result: dict[str, list[int]] = {}
@@ -238,12 +240,22 @@ def locate_sections(cfg: dict, code: str) -> dict[str, list[int]]:
                     chosen.sort(key=lambda r: r[0])
                     candidates = []
                     for run in chosen:
-                        candidates.extend(range(run[0], min(run[0] + span, n_pages + 1)))
+                        for pg in range(run[0], min(run[0] + span, n_pages + 1)):
+                            # financials 组延伸遇母公司单体报表时立即截断，防止混入
+                            if group == "financials" and is_company_level_statement(page_text_by_no.get(pg, "")):
+                                break
+                            candidates.append(pg)
                 else:
                     fallback = _first_mention(pages, key)
-                    candidates = (list(range(fallback, min(fallback + span, n_pages + 1)))
-                                  if fallback is not None else [])
+                    candidates = []
+                    if fallback is not None:
+                        for pg in range(fallback, min(fallback + span, n_pages + 1)):
+                            if group == "financials" and is_company_level_statement(page_text_by_no.get(pg, "")):
+                                break
+                            candidates.append(pg)
             for pg in candidates:
+                if group == "financials" and is_company_level_statement(page_text_by_no.get(pg, "")):
+                    continue
                 if pg not in seen:
                     seen.add(pg)
                     ordered.append(pg)
@@ -293,7 +305,7 @@ PACKET_HEADER = """# 招股书抽取任务包：{code} {name}
 
 1. 只依据本包原文，不使用常识、外部网页或估算；不确定就使用字段契约指定的 `NaN`/`NA`。
 2. 金额换算为基本货币单位；百分比填小数；确认零填数字 0。
-3. year-1/2/3 必须对应同一套历史期间；year-1 销售/利润若为非全年，按手册年化。AU/AW/AX 为期间流量，AV/BE 为期末余额；这些扩展字段不年化。
+3. **合并报表（Group/Consolidated）唯一原则**：所有财务数据（资产负债表 V–AE/BE、利润表 AF–AN、现金流 AU/AV、研发 AX 等）**必须且只能**取自**合并财务报表（CONSOLIDATED Financial Statements）**；**绝对严禁**引用母公司单体报表（如 STATEMENT OF FINANCIAL POSITION OF THE COMPANY / COMPANY BALANCE SHEETS）。year-1/2/3 必须对应同一套历史期间；year-1 销售/利润若为非全年，按手册年化。AU/AW/AX 为期间流量，AV/BE 为期末余额；这些扩展字段不年化。
 4. 经营现金流是 net cash from operating activities；现金及等价物不自动包含受限现金。
 5. `AX` 只填资本化开发成本的**当期新增**，不是无形资产期末余额；`AY` 是 year-1 前五大客户收入占比。表格明确为 `–`/nil 时填数字 0。
 6. 承销佣金：按全球发售披露时 AO/AP 同率；只按香港公开发售披露时 AP=0；不能把总上市费用当佣金。绿鞋 AQ 只能按招股书披露，不能默认 15%。
