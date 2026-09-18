@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/Tests-17%2F17%20Passed-brightgreen.svg)](./Data%20Collecting%20Templates/News/prospectus_pipeline/tests)
+[![Tests](https://img.shields.io/badge/Tests-20%2F20%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20%2B%20Agentic-orange.svg)](#core-architecture--design-principles)
 [![Zero Token Cost](https://img.shields.io/badge/Derivation%20Cost-0%20LLM%20Tokens-success.svg)](#core-architecture--design-principles)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
@@ -177,7 +177,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-df = pd.read_csv("Data Collecting Templates/News/prospectus_pipeline/out/HKIPO-MB2026Q1_clean.csv")
+df = pd.read_csv("Data Collecting Pipeline/prospectus_pipeline/out/HKIPO-MB2026Q1_clean.csv")
 
 # Variable transformation
 df["underpricing"] = (df["col_DH"] - df["col_K"]) / df["col_K"]
@@ -261,51 +261,46 @@ This repository includes a standardized skill package compatible with AI coding 
 │       ├── listing_rules_guide.md          # HKEX Main Board Listing Rules thresholds
 │       └── variable_codebook_overview.md   # 120-variable econometric schema
 │
-└── Data Collecting Templates/News/
-    └── prospectus_pipeline/                # Core automated pipeline package
-        ├── run.py                          # Pipeline sub-dispatcher
-        ├── config.yaml                     # Pipeline configuration
-        ├── requirements.txt                # Package dependencies
-        ├── pyproject.toml                  # Package metadata
-        ├── README.md                       # Pipeline technical manual
-        │
-        ├── src/                            # Core business logic
-        │   ├── audit.py                    # Read-only cell-by-cell Excel auditing
-        │   ├── cross_check.py              # HKEX Listing Rules verification engine
-        │   ├── report.py                   # Academic market report generator
-        │   ├── codebook.py                 # Econometric codebook & CSV exporter
-        │   ├── auto_fill.py                # Pipeline scheduler and status monitor
-        │   ├── contracts.py                # Strict schema and quotation contracts
-        │   ├── state.py                    # Four-phase hash-signed state management
-        │   ├── storage.py                  # Atomic JSON storage engine
-        │   ├── validate.py                 # Deterministic structural and identity validator
-        │   ├── write_back.py               # Safe Excel writer with automatic snapshots
-        │   ├── pricing_date.py             # Pricing date deterministic derivation
-        │   ├── pdfprep.py                  # PDF text extraction and section packaging
-        │   ├── allotprep.py                # Allotment results text slicing
-        │   ├── greenshoe.py                # Over-allotment option crawler
-        │   ├── cornerstone.py              # Cornerstone investor audit
-        │   └── hkex.py                     # HKEX News announcement client
-        │
-        ├── tools/                          # Domain utilities
-        │   ├── search.py                   # Document search CLI
-        │   ├── state.py                    # State certification CLI
-        │   └── external/                   # Market, HKMA, and regulatory flag tools
-        │
-        ├── schema/                         # Strict contract definitions
-        │   ├── fields.json                 # 60 prospectus field specifications
-        │   └── allot_fields.json           # 18 allotment field specifications
-        │
-        ├── tests/                          # 17 automated tests
-        │   ├── test_audit_excel.py         # Read-only audit & float tolerance tests
-        │   ├── test_cross_check.py         # Listing Rules & clawback tests
-        │   ├── test_report.py              # Academic report generation tests
-        │   ├── test_codebook.py            # Codebook builder & clean CSV tests
-        │   └── test_pipeline_safety.py     # Hash-gating & security regression tests
-        │
-        └── workflows/                      # Extraction workflow definitions
-            ├── prospectus_extract.js       # Prospectus extraction workflow
-            └── allot_extract.js            # Allotment extraction workflow
+└── Data Collecting Pipeline/               # Unified Data Collection Subsystem
+    ├── README.md                           # Subsystem quick reference & operational guide
+    ├── SYSTEM_MANAGEMENT.md                # Systems Engineering & Governance Manual
+    ├── HKIPO-MB2026Q1.xlsx                 # Canonical target dataset (Single Source of Truth)
+    │
+    ├── templates/                          # Blank collection templates
+    │   ├── HKIPO-GEM-template-students.xlsx
+    │   └── HKIPO-MB-template-students.xlsx
+    │
+    ├── sources/                            # Immutable HKEX regulatory sources
+    │   ├── NLR2025_Eng.xlsx
+    │   └── NLR2026_Eng.xlsx
+    │
+    ├── docs/                               # Engineering specs, manuals & rule tables
+    │   ├── specs/                          # Schemas, construction manuals, rule tables
+    │   ├── guides/                         # Student & field collection guides
+    │   └── reports/                        # Cost & feasibility reports
+    │
+    ├── reports/                            # Academic progress reports & compilers
+    │   ├── build_weekly_report.py          # Progress report generator (.docx)
+    │   └── Weekly_Research_Progress_Report_HKIPO_2026Q1.docx
+    │
+    ├── backups/                            # Automated snapshot archives & recovery
+    │   ├── excel_snapshots/                # Pre-write timestamped snapshots
+    │   └── code_archives/                  # Historical checkpoints
+    │
+    └── prospectus_pipeline/                # Automated Extraction Engine
+        ├── run.py                          # Subsystem CLI Dispatcher
+        ├── config.yaml                     # Engine Configuration
+        ├── pyproject.toml                  # Engine Package Metadata
+        ├── requirements.txt                # Engine Dependencies
+        ├── README.md                       # Engine Technical Manual
+        ├── src/                            # Core extraction, validation & write modules
+        ├── tools/                          # Domain CLI utilities (search, flags, HKMA)
+        ├── schema/                         # Field contracts (fields.json, allot_fields.json)
+        ├── prompts/                        # LLM Extraction schemas & few-shot instructions
+        ├── workflows/                      # Extraction workflows
+        ├── tests/                          # Automated test suite (20/20 Passed)
+        ├── data/                           # PDF store, page text & evidence packets
+        └── out/                            # Verifiable state ledger, clean CSV & Codebook
 ```
 
 ---
@@ -317,7 +312,7 @@ Run the automated test suite locally:
 ```bash
 make test
 # Or with verbose detail:
-python3 -m unittest discover -s "Data Collecting Templates/News/prospectus_pipeline/tests" -v
+python3 -m unittest discover -s "Data Collecting Pipeline/prospectus_pipeline/tests" -v
 ```
 
 Test coverage includes:

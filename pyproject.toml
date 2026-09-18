@@ -29,5 +29,5 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-testpaths = ["Data Collecting Templates/News/prospectus_pipeline/tests"]
+testpaths = ["Data Collecting Pipeline/prospectus_pipeline/tests"]
 python_files = ["test_*.py"]

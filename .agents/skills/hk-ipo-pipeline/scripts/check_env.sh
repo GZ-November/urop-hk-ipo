@@ -6,7 +6,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
-PIPELINE_DIR="${REPO_ROOT}/Data Collecting Templates/News/prospectus_pipeline"
+PIPELINE_DIR="${REPO_ROOT}/Data Collecting Pipeline/prospectus_pipeline"
 REQ_FILE="${PIPELINE_DIR}/requirements.txt"
 
 echo "=== [1/2] 检查 Python 解释器 ==="

@@ -51,7 +51,7 @@ pip install -r requirements.txt
    ```bash
    make test
    # Or directly:
-   python3 -m unittest discover -s "Data Collecting Templates/News/prospectus_pipeline/tests" -v
+   python3 -m unittest discover -s "Data Collecting Pipeline/prospectus_pipeline/tests" -v
    ```
 
 3. **Check Code Quality**:
@@ -72,6 +72,6 @@ pip install -r requirements.txt
 ## 4. Adding New Listing Rules or Fields
 
 - **To add new Listing Rules cross-checks**:
-  Modify [`src/cross_check.py`](file:///Data%20Collecting%20Templates/News/prospectus_pipeline/src/cross_check.py) and add corresponding unit test cases in [`tests/test_cross_check.py`](file:///Data%20Collecting%20Templates/News/prospectus_pipeline/tests/test_cross_check.py).
+  Modify [`src/cross_check.py`](file:///Data%20Collecting%20Pipeline/prospectus_pipeline/src/cross_check.py) and add corresponding unit test cases in [`tests/test_cross_check.py`](file:///Data%20Collecting%20Pipeline/prospectus_pipeline/tests/test_cross_check.py).
 - **To update field schemas**:
-  Update [`schema/fields.json`](file:///Data%20Collecting%20Templates/News/prospectus_pipeline/schema/fields.json) or [`schema/allot_fields.json`](file:///Data%20Collecting%20Templates/News/prospectus_pipeline/schema/allot_fields.json).
+  Update [`schema/fields.json`](file:///Data%20Collecting%20Pipeline/prospectus_pipeline/schema/fields.json) or [`schema/allot_fields.json`](file:///Data%20Collecting%20Pipeline/prospectus_pipeline/schema/allot_fields.json).

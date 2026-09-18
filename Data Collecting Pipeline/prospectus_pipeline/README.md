@@ -78,10 +78,10 @@ prospectus_pipeline/
 
 ## Command Reference (CLI Usage)
 
-Execute commands from `Data Collecting Templates/News`:
+Execute commands from `Data Collecting Pipeline`:
 
 ```bash
-cd "Data Collecting Templates/News"
+cd "Data Collecting Pipeline"
 ```
 
 ### 1. Status, Audit, Cross-Check, and Export

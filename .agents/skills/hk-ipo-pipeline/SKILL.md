@@ -35,7 +35,7 @@ All pipeline operations are unified under `run.py`. Agents can invoke the wrappe
 ./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh <STAGE> [OPTIONS]
 ```
 
-Or from within `Data Collecting Templates/News`:
+Or from within `Data Collecting Pipeline`:
 
 ```bash
 python3 prospectus_pipeline/run.py <STAGE> [OPTIONS]
@@ -89,7 +89,7 @@ Exports clean data and comprehensive data dictionary for econometric research:
 
 ### 6. Automated Regression & Safety Test Suite (`test`)
 ```bash
-cd "Data Collecting Templates/News" && python3 -m unittest discover -s prospectus_pipeline/tests -v
+cd "Data Collecting Pipeline" && python3 -m unittest discover -s prospectus_pipeline/tests -v
 ```
 
 ---

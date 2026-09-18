@@ -6,7 +6,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
-NEWS_DIR="${REPO_ROOT}/Data Collecting Templates/News"
+PIPELINE_DIR="${REPO_ROOT}/Data Collecting Pipeline"
 
-cd "${NEWS_DIR}"
+cd "${PIPELINE_DIR}"
 exec python3 prospectus_pipeline/run.py "$@"

@@ -34,12 +34,13 @@ jobs:
       - name: Verify syntax (py_compile)
         run: |
           python -m py_compile run.py
-          find "Data Collecting Templates/News/prospectus_pipeline/src" -name "*.py" -exec python -m py_compile {} +
-          find "Data Collecting Templates/News/prospectus_pipeline/tools" -name "*.py" -exec python -m py_compile {} +
+          find "Data Collecting Pipeline/prospectus_pipeline/src" -name "*.py" -exec python -m py_compile {} +
+          find "Data Collecting Pipeline/prospectus_pipeline/tools" -name "*.py" -exec python -m py_compile {} +
+          find "Data Collecting Pipeline/reports" -name "*.py" -exec python -m py_compile {} +
 
       - name: Run automated test suite
         run: |
-          python -m unittest discover -s "Data Collecting Templates/News/prospectus_pipeline/tests" -v
+          python -m unittest discover -s "Data Collecting Pipeline/prospectus_pipeline/tests" -v
 
       - name: Verify CLI entry point
         run: |
