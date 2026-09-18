@@ -56,8 +56,12 @@ GROUP_WINDOWS: dict[str, list[tuple[str, int]]] = {
                         ("OUR CUSTOMERS", 6), ("MAJOR CUSTOMERS", 6),
                         ("INFORMATION ABOUT MAJOR CUSTOMERS", 6)],
     "chinese_name": [("__cover__", 3)],
-    "ownership": [("HISTORY AND DEVELOPMENT", 15), ("PRE-IPO INVESTMENTS", 15),
-                  ("SUBSTANTIAL SHAREHOLDERS", 10), ("RELATIONSHIP WITH OUR CONTROLLING", 8)],
+    "ownership": [("HISTORY AND DEVELOPMENT", 15), ("HISTORY DEVELOPMENT", 15),
+                  ("HISTORY REORGANISATION", 15), ("HISTORY REORGANIZATION", 15),
+                  ("HISTORY AND CORPORATE STRUCTURE", 15),
+                  ("PRE-IPO INVESTMENTS", 15),
+                  ("SUBSTANTIAL SHAREHOLDERS", 10), ("RELATIONSHIP WITH OUR CONTROLLING", 8),
+                  ("STATUTORY AND GENERAL INFORMATION", 12)],
     "offering": [("EXPECTED TIMETABLE", 8), ("HOW TO APPLY FOR HONG KONG OFFER SHARES", 5)],
 }
 GROUP_KEYWORDS = {g: [k for k, _ in v] for g, v in GROUP_WINDOWS.items()}
@@ -127,7 +131,7 @@ def _pages(cfg: dict, code: str) -> list[dict]:
 
 def _normalise_heading(text: str) -> str:
     text = text.replace("\u2013", "-").replace("\u2014", "-")
-    text = re.sub(r"[.·•]+", " ", text)
+    text = re.sub(r"[,;:.·•]+", " ", text)
     return " ".join(text.upper().split()).strip(" -:")
 
 

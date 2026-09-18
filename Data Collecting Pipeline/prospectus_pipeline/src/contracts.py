@@ -241,6 +241,27 @@ def is_company_level_statement(text: str) -> bool:
     return False
 
 
+def is_definitions_page(text: str) -> bool:
+    """Detect whether page belongs to the Definitions / Glossary section.
+
+    In HK IPO prospectuses, the Definitions section contains simplified, informal
+    or predecessor terms with draft placeholders that frequently conflict with
+    statutory company documents. col_BP (Incorporation date) must never be cited
+    from Definitions.
+    """
+    if not text:
+        return False
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if not lines:
+        return False
+    edge = lines[:5] + lines[-5:]
+    for ln in edge:
+        cleaned = re.sub(r"[^A-Za-z\u4e00-\u9fff]", "", ln).upper()
+        if cleaned in {"DEFINITIONS", "DEFINITIONSANDGLOSSARY", "GLOSSARY", "释义", "釋義"}:
+            return True
+    return False
+
+
 # 证据来自「检索结论」而非文档原文片段的来源：没有可引用的页码，
 # 由 validate.check_allot 拿 greenshoe.json / cornerstone_absence.json 做确定性核对。
 SEARCH_SOURCES = {"greenshoe_lapse", "greenshoe_search", "cornerstone_absence", "da_formula"}
@@ -319,6 +340,11 @@ def evidence_issues(record: dict, packet_path: Path, schema: dict,
         if key in CONSOLIDATED_FINANCIAL_FIELDS and is_company_level_statement(pg_text):
             issues.append(f"{key}: cited page {page} is from company-level (parent) statement ('...OF THE COMPANY'); "
                           "financial metrics must be extracted from CONSOLIDATED/group statements")
+            continue
+        if key == "col_BP" and is_definitions_page(pg_text):
+            issues.append(f"{key}: cited page {page} is from DEFINITIONS section; "
+                          "incorporation date must be cited from Statutory and General Information (Appendix V), "
+                          "History and Development, or Accountants' Report, NOT Definitions")
             continue
         tokens = [x.lower() for x in re.findall(r"[A-Za-z0-9]{3,}|[\u4e00-\u9fff]{2,}", quote)]
         if tokens:

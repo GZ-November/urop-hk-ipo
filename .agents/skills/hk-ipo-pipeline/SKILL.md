@@ -68,7 +68,7 @@ Validates econometric consistency against official HKEX Listing Rules:
 ```bash
 ./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh cross_check
 ```
-- Reference details: [listing_rules_guide.md](./references/listing_rules_guide.md).
+- Reference details: [listing_rules_guide.md](./references/listing_rules_guide.md) and [statutory_evidentiary_rules.md](./references/statutory_evidentiary_rules.md).
 
 ### 4. Macro Market & Academic Report (`report`)
 Aggregates all 120 variables into macro proceeds, industry breakdown (HSICS 2026), retail subscription multiples, and first-day returns:

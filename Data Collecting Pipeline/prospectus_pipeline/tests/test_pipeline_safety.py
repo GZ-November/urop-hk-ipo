@@ -10,7 +10,9 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from contracts import evidence_issues, is_company_level_statement, validate_record  # noqa: E402
+from contracts import (  # noqa: E402
+    evidence_issues, is_company_level_statement, is_definitions_page, validate_record
+)
 from pdfprep import locate_sections  # noqa: E402
 from state import authorized, save_record  # noqa: E402
 from storage import official_files  # noqa: E402
@@ -155,6 +157,123 @@ class PipelineSafetyTests(unittest.TestCase):
             self.assertEqual(result["verdict"], "absent")
             self.assertTrue(result["evidence_complete"])
 
+    def test_definitions_page_detector(self):
+        definitions_texts = [
+            "“Company”\nOur company...\nDEFINITIONS\n– 17 –",
+            "DEFINITIONS AND GLOSSARY\n“Listing Rules”\nthe Rules Governing...",
+            "释义\n“本公司”\n指红星冷链...",
+        ]
+        for txt in definitions_texts:
+            self.assertTrue(is_definitions_page(txt), f"Expected True for definitions text: {txt!r}")
+
+        normal_texts = [
+            "HISTORY, DEVELOPMENT AND CORPORATE STRUCTURE\nOur history can be traced back to 2006",
+            "STATUTORY AND GENERAL INFORMATION\n1. Incorporation\nThe predecessor of our Company was incorporated...",
+            "ACCOUNTANTS' REPORT\n1. CORPORATE INFORMATION\nHongxing Coldchain was incorporated...",
+        ]
+        for txt in normal_texts:
+            self.assertFalse(is_definitions_page(txt), f"Expected False for normal text: {txt!r}")
+
+    def test_definitions_page_rejected_for_col_BP(self):
+        schema = {"fields": [{"key": "col_BP", "kind": "date", "unit": "date"}]}
+        packet_content = (
+            "# Test Packet\n"
+            "<<<PAGE 26>>>\n"
+            "“Company”\npredecessor was established on August 30, 2006\nDEFINITIONS\n– 17 –\n"
+            "<<<PAGE 346>>>\n"
+            "STATUTORY AND GENERAL INFORMATION\n"
+            "1. Incorporation\n"
+            "predecessor was incorporated under the laws of the PRC on October 16, 2006\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            pkt = Path(tmp) / "test_packet.md"
+            pkt.write_text(packet_content, encoding="utf-8")
+
+            # Citing definitions page 26 must be rejected
+            rec_def = {"code": "0001.HK", "fields": {
+                "col_BP": {"value": "30/08/06", "page": 26, "quote": "predecessor was established on August 30, 2006", "confidence": "medium"}
+            }}
+            issues = evidence_issues(rec_def, pkt, schema)
+            self.assertTrue(any("from DEFINITIONS section" in iss for iss in issues),
+                            f"Expected definitions rejection, got: {issues}")
+
+            # Citing statutory page 346 must pass
+            rec_stat = {"code": "0001.HK", "fields": {
+                "col_BP": {"value": "16/10/06", "page": 346, "quote": "predecessor was incorporated under the laws of the PRC on October 16, 2006", "confidence": "high"}
+            }}
+            issues_stat = evidence_issues(rec_stat, pkt, schema)
+            self.assertEqual(issues_stat, [])
+
+    def test_gross_margin_ceiling_rejects_full_year_gp_in_stub(self):
+        from validate import check_firm
+        schema = {"fields": []}
+        # col_AH annualized = 236,096,000, 6M unannualized = 118,048,000
+        # If col_CF is 123,379,000 (full year), gross margin is 104.5% -> MUST REJECT
+        rec_err = {
+            "code": "1641.HK",
+            "fields": {
+                "col_AT": {"value": "30/06/2025"},
+                "col_AH": {"value": 236096000},
+                "col_CF": {"value": 123379000},
+                "col_V": {"value": "RMB"},
+            }
+        }
+        issues = check_firm(rec_err, schema)
+        self.assertTrue(any("毛利率超限/期间错位" in iss["check"] for iss in issues),
+                        f"Expected gross margin ceiling rejection, got: {issues}")
+
+        # Correct 6M gross profit = 62,861,000 (margin 53.3%) -> MUST PASS
+        rec_ok = {
+            "code": "1641.HK",
+            "fields": {
+                "col_AT": {"value": "30/06/2025"},
+                "col_AH": {"value": 236096000},
+                "col_CF": {"value": 62861000},
+                "col_V": {"value": "RMB"},
+            }
+        }
+        issues_ok = [i for i in check_firm(rec_ok, schema) if "毛利" in i["check"]]
+        self.assertEqual(issues_ok, [])
+
+    def test_monetary_scale_guard_rejects_unscaled_thousands(self):
+        from validate import check_firm
+        schema = {"fields": []}
+        # Issuer with > 50M assets, values entered in thousands without x1000
+        rec_unscaled = {
+            "code": "2726.HK",
+            "fields": {
+                "col_AT": {"value": "30/09/25"},
+                "col_V": {"value": "RMB"},
+                "col_Y": {"value": 4366624000},
+                "col_AH": {"value": 713417333},
+                "col_CF": {"value": 137081},
+                "col_CG": {"value": 69800},
+                "col_BE": {"value": 65025},
+            }
+        }
+        issues = check_firm(rec_unscaled, schema)
+        checks = [i["check"] for i in issues]
+        self.assertTrue(any("金额单位未折算 (毛利)" in c or "毛利数值数量级异常" in c for c in checks))
+        self.assertTrue(any("金额单位未折算 (资本开支)" in c for c in checks))
+        self.assertTrue(any("金额单位未折算 (有息负债)" in c for c in checks))
+
+        # Properly scaled values -> MUST PASS
+        rec_scaled = {
+            "code": "2726.HK",
+            "fields": {
+                "col_AT": {"value": "30/09/25"},
+                "col_V": {"value": "RMB"},
+                "col_Y": {"value": 4366624000},
+                "col_AH": {"value": 713417333},
+                "col_CF": {"value": 137081000},
+                "col_CG": {"value": 69806000},
+                "col_BE": {"value": 769604000},
+            }
+        }
+        scale_issues = [i for i in check_firm(rec_scaled, schema) if "折算" in i["check"] or "毛利" in i["check"]]
+        self.assertEqual(scale_issues, [])
+
 
 if __name__ == "__main__":
     unittest.main()
+

@@ -100,12 +100,14 @@ def build(code: str, name: str, packet_path: Path, out_path: Path) -> dict:
 {chr(10).join(fixed) if fixed else '（无）'}
 
 ## 手册规则
-- 金额换算成**基本货币单位**（披露币种见上面的 col_V）；百分比填**小数**。
-- `col_BE` 只算**有息负债**（借款/债券/租赁负债），不含应付账款。
+- 金额换算成**基本货币单位**（披露币种见上面的 col_V，表格若标 RMB'000 或 US$'000 必须乘以 1,000）；百分比填**小数**。
+- `col_CF`（毛利）与 `col_CG`（资本开支）：**强制与 col_AT 期间强绑定**！当 col_AT 为中期截止日（如 30/06/25 或 30/09/25）时，必须严格取该中期报告期（如 6M 或 9M 对应列）的披露原值，**绝对严禁错采 2024 全年列数值**！二者均不年化。
+- `col_BE` 只算**有息负债**（借款/债券/租赁负债），取 INDEBTEDNESS 表格的 Total 总计（含流动与非流动有息负债），必须折算为基本货币单位，不含应付账款。
 - `col_BG` = 用于偿债的金额 ÷ 计划净募资额；没有该用途填 `0`。
 - `col_BF` 按招股书原文的产品阶段表述，**不要**按行业推测。
 - `col_BA` 只要上市前有专业投资机构（VC/PE/产业基金）入股即 `1`，否则 `0`。
 - `col_CD`/`col_CC` 取 EXPECTED TIMETABLE 的认购起止日。
+- `col_BP`（注册成立日期）：**严禁从 Definitions（释义）章节取值**。必须取自 Statutory and General Information（附录五「1. Incorporation」）、History and Development 或会计师报告附注 1。若释义章节与法定/正文存在冲突，一律以法定/审计数据为准。
 - `col_CI` 是**总上市费用**（含承销佣金与其他开支），用 HK$ 基本单位。
 - 不确定就填 NaN/NA 并在 quote 说明，**不要猜**。
 

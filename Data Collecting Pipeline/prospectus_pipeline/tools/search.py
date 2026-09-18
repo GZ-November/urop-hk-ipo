@@ -91,7 +91,14 @@ FIELD_ANCHORS: dict[str, list[str]] = {
     "col_BG": [r"USE OF PROCEEDS", r"repay(?:ment)? of (?:bank )?borrowings",
                r"FUTURE PLANS AND USE OF PROCEEDS"],
     "col_BI": [r"Share class", r"H Shares", r"Class A Ordinary Shares"],
-    "col_BP": [r"[Ii]ncorporated on", r"[Ee]stablished on", r"[Ii]ncorporated in"],
+    "col_BP": [
+        r"(?:(?:our|the)\s+Company|predecessor\s+of\s+our\s+Company)\s+was\s+(?:incorporated|established)[\s\S]{0,120}on\s+(?:\d{1,2}\s+[A-Za-z]+|[A-Za-z]+\s+\d{1,2},?)\s+(?:19|20)\d\d",
+        r"(?:was )?(?:incorporated|established)\s+(?:under the laws of|in the PRC as|in|as)[\s\S]{0,120}on\s+(?:\d{1,2}\s+[A-Za-z]+|[A-Za-z]+\s+\d{1,2},?)\s+(?:19|20)\d\d",
+        r"1\.\s*\n?\s*Incorporation",
+        r"Early History and Establishment",
+        r"[Ii]ncorporated on\s+(?:\d{1,2}\s+[A-Za-z]+|[A-Za-z]+\s+\d{1,2},?)\s+(?:19|20)\d\d",
+        r"[Ee]stablished on\s+(?:\d{1,2}\s+[A-Za-z]+|[A-Za-z]+\s+\d{1,2},?)\s+(?:19|20)\d\d",
+    ],
     "col_BR": [r"principal place of business", r"registered office", r"[Hh]ead office"],
     "col_BT": [r"IFRS Accounting Standards", r"HKFRS", r"Accounting Standards",
                r"accounting policies"],
@@ -113,6 +120,21 @@ FIELD_ANCHORS: dict[str, list[str]] = {
 _DOT = re.compile(r"\.\s*\.\s*\.")
 
 
+def _is_definitions(text: str) -> bool:
+    """Check if page text is part of DEFINITIONS / GLOSSARY section."""
+    if not text:
+        return False
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if not lines:
+        return False
+    edge = lines[:5] + lines[-5:]
+    for ln in edge:
+        cleaned = re.sub(r"[^A-Za-z\u4e00-\u9fff]", "", ln).upper()
+        if cleaned in {"DEFINITIONS", "DEFINITIONSANDGLOSSARY", "GLOSSARY", "释义", "釋義"}:
+            return True
+    return False
+
+
 def _like_toc(text: str) -> bool:
     """目录页有大量点号引导行；真内容页没有。bundle 要跳过目录页，
     否则 'SUBSTANTIAL SHAREHOLDERS' 这类锚点永远命中目录。"""
@@ -124,7 +146,7 @@ def _like_toc(text: str) -> bool:
 
 
 def _bundle_field(pages: list[dict], patterns: list[str], per_field: int = 3,
-                  ctx: int = 3) -> list[str]:
+                  ctx: int = 3, field_key: str | None = None) -> list[str]:
     blocks: list[str] = []
     for pat in patterns:
         try:
@@ -133,6 +155,8 @@ def _bundle_field(pages: list[dict], patterns: list[str], per_field: int = 3,
             continue
         for p in pages:
             if _like_toc(p["text"]):
+                continue
+            if field_key == "col_BP" and _is_definitions(p["text"]):
                 continue
             lines = p["text"].splitlines()
             hit = next((i for i, ln in enumerate(lines) if rx.search(ln)), None)
@@ -361,7 +385,7 @@ def cmd_bundle(args):
     total = 0
     for key in fields:
         pats = FIELD_ANCHORS.get(key) or [key.replace("col_", "")]
-        blocks = _bundle_field(pages, pats, per_field=args.per_field, ctx=args.context)
+        blocks = _bundle_field(pages, pats, per_field=args.per_field, ctx=args.context, field_key=key)
         if not blocks:
             print(f"\n### {key}\n（锚点无命中，需要自己 search）")
             continue

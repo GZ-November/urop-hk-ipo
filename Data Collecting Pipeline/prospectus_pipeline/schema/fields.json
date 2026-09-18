@@ -866,10 +866,10 @@
       "header": "Interest-bearing debt at year-1 end",
       "group": "financials",
       "kind": "number",
-      "unit": "HKD",
+      "unit": "basic_currency_units",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "year-1 期末**有息负债**（借款、债券、租赁负债等带息项目）。取 INDEBTEDNESS 段或借款附注的期末余额；不含应付账款等无息负债。 期末余额，不年化（手册：仅 year-1 销售/税前利润/净利润年化）",
+      "hint": "year-1 期末**总有息负债**（用与 col_V 相同的披露货币基本单位）。包含短期借款、长期借款、租赁负债及带息应付票据债券等带息债务总额，取 INDEBTEDNESS 表格的 Total 余额；不含应付账款等无息负债。必须换算为货币基本单位（乘表格千元/百万元乘数）。期末余额，不年化。",
       "section_keywords": [
         "INDEBTEDNESS",
         "Borrowings",
@@ -933,9 +933,13 @@
       "unit": "date",
       "source": "prospectus",
       "missing": "NA",
-      "hint": "公司**注册成立日期**（dd/mm/yy）。取 HISTORY AND DEVELOPMENT 或公司资料段“incorporated/established on <date>”。",
+      "hint": "公司**法定注册成立日期**（dd/mm/yy）。必须优先取自 Statutory and General Information (Appendix V '1. Incorporation')、History & Development 或 Accountants' Report (附注 1)。严禁从 Definitions (释义) 章节取值（释义章节常有起草笔误或仅为前期筹备日）。",
       "section_keywords": [
+        "STATUTORY AND GENERAL INFORMATION",
         "HISTORY AND DEVELOPMENT",
+        "HISTORY, DEVELOPMENT",
+        "ACCOUNTANTS' REPORT",
+        "incorporated under the laws",
         "incorporated in",
         "established in"
       ]
@@ -1029,7 +1033,7 @@
       "unit": "money",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "year-1 **毛利**（用与 col_V 相同的披露货币基本单位）。取损益表的 Gross profit。 **不年化**——手册明确仅 year-1 销售/税前利润/净利润年化，毛利不在其列；直接填 year-1 期间披露值",
+      "hint": "year-1 **毛利**（用与 col_V 相同的披露货币基本单位）。取损益表的 Gross profit。强制期间锚定：必须与 col_AT 严格同期间！若 col_AT 为中期报告期（如截至 2025 年 6 月 30 日或 9 月 30 日止期间），必须严格提取该中期报告期对应列的原值，绝对严禁错采前一完整财年（FY2024）的数值。必须换算为货币基本单位（乘表格千元/百万元乘数）。不年化——手册明确仅 year-1 销售/税前利润/净利润年化，毛利不年化。",
       "section_keywords": [
         "Gross profit",
         "GROSS PROFIT"
@@ -1045,7 +1049,7 @@
       "unit": "money",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "year-1 **资本开支**。取现金流量表“购建物业、厂房及设备”或 CAPITAL EXPENDITURE 段。 **不年化**——属原始期间流量，与 AU/AW/AX 同口径；直接填 year-1 期间披露值",
+      "hint": "year-1 **资本开支**（用与 col_V 相同的披露货币基本单位）。取现金流量表“购建物业、厂房及设备”或 CAPITAL EXPENDITURE 段。强制期间锚定：必须与 col_AT 严格同期间！若 col_AT 为中期报告期（如截至 2025 年 6 月 30 日或 9 月 30 日止期间），必须严格提取该中期报告期实际资本开支原值，绝对严禁错采前一完整财年（FY2024）数值。必须换算为货币基本单位（乘表格千元/百万元乘数）。不年化。",
       "section_keywords": [
         "capital expenditure",
         "Capital expenditure",

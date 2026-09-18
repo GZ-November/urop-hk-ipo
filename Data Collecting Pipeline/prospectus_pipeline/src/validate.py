@@ -126,6 +126,61 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
         v = g(key)
         if v is not None and not 0 <= v <= 1:
             add("百分比范围", f"{key}={v} 不在 [0,1]")
+
+    # ---------------------------------------------------------
+    # 毛利率天花板与未年化期间勾稽 (Gross Margin Ceiling Gate)
+    # ---------------------------------------------------------
+    CF = g("col_CF")
+    AH = g("col_AH")
+    AT_val = (f.get("col_AT") or {}).get("value")
+    if CF is not None and AH is not None and AH > 0 and AT_val:
+        at_str = str(AT_val).strip()
+        frac = 1.0
+        if any(x in at_str for x in ("30/06", "06/30", "-06-30")):
+            frac = 0.5
+        elif any(x in at_str for x in ("31/08", "08/31", "-08-31")):
+            frac = 8.0 / 12.0
+        elif any(x in at_str for x in ("30/09", "09/30", "-09-30")):
+            frac = 0.75
+        elif any(x in at_str for x in ("31/10", "10/31", "-10-31")):
+            frac = 10.0 / 12.0
+        unann_sales = AH * frac
+        if CF > unann_sales * 1.01:
+            add("毛利率超限/期间错位",
+                f"year-1 未年化毛利 col_CF={CF:,.0f} 超过未年化销售额 {unann_sales:,.0f} "
+                f"(毛利率达 {CF/unann_sales*100:.1f}%)，疑似错采了全年毛利！")
+        elif unann_sales > 10_000_000 and CF > 0 and (CF / unann_sales) < 0.005:
+            add("毛利数值数量级异常",
+                f"col_CF={CF:,.0f} 相比未年化销售额 {unann_sales:,.0f} 仅占 {CF/unann_sales*100:.2f}%，"
+                "疑似漏乘表格千元/百万元乘数！")
+
+    # ---------------------------------------------------------
+    # 货币基本单位数量级防呆 (Monetary Scale Guard)
+    # ---------------------------------------------------------
+    curr = str((f.get("col_V") or {}).get("value") or "").upper()
+    total_assets = g("col_Y")
+    annual_sales = g("col_AH")
+    is_large_firm = (total_assets is not None and total_assets > 50_000_000) or (annual_sales is not None and annual_sales > 50_000_000)
+    if curr in {"RMB", "HKD"} and is_large_firm:
+        for mkey, mname in [("col_CF", "毛利"), ("col_BE", "有息负债")]:
+            mval = g(mkey)
+            if mval is not None and 0 < mval < 500_000:
+                add(f"金额单位未折算 ({mname})",
+                    f"{mkey}={mval} 处于 (0, 500,000)，明显未按基本货币单位折算（漏乘千元乘数）")
+        cg_val = g("col_CG")
+        if cg_val is not None and 0 < cg_val < 100_000:
+            add("金额单位未折算 (资本开支)",
+                f"col_CG={cg_val} 处于 (0, 100,000)，明显未按基本货币单位折算（漏乘千元乘数）")
+
+    # ---------------------------------------------------------
+    # 资本开支合理性勾稽 (CapEx Bounds)
+    # ---------------------------------------------------------
+    CG = g("col_CG")
+    if CG is not None and CG < 0:
+        add("资本开支为负数", f"col_CG={CG:,.0f} 不能为负数")
+    if CG is not None and total_assets is not None and total_assets > 0 and CG > total_assets * 1.5:
+        add("资本开支超出总资产", f"col_CG={CG:,.0f} 超过总资产 col_Y={total_assets:,.0f} 的 1.5 倍")
+
     return issues
 
 
