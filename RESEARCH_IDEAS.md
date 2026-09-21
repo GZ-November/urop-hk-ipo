@@ -1,9 +1,9 @@
-# 香港主板新股市场全景实证与理论研究课题库 (18 大核心 Research Ideas)
+# 香港主板新股市场全景实证与理论研究课题库 (19 大核心 Research Ideas)
 # The Hong Kong Main Board IPO Panoramic Research Compendium: Theoretical Frameworks, Institutional Realities & Econometric Specifications
 
 > **学术基石**：以 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)** 经典综述单行本《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）为核心理论与实证基准，融贯公司金融学、微观市场结构与合同理论前沿经典文献。  
 > **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，138 维完整跨学科指标，38 家挂牌样本，覆盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分股权、基石投资者配售及二级市场量价，100% 审计级穿透确证）。  
-> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 18 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
+> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 19 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
 > 1. 💡 研究课题与核心科学问题 (Research Title & Core Question)
 > 2. 📚 经典文献基准与美股经验事实 (Literature Baseline & U.S. Stylized Facts - Lowry et al. 2017)
 > 3. 🏛️ 香港主板制度背景与样本微观现实 (HKEX Institutional Realities & 2026 Q1 Distribution)
@@ -14,7 +14,7 @@
 
 ---
 
-## 目录索引 (Directory of 18 Research Ideas)
+## 目录索引 (Directory of 19 Research Ideas)
 
 - [Idea 01: 多元化监管通道选择、信息不对称与上市估值折价 (Chapter 18A / 18C / 19A A+H)](#idea-01-多元化监管通道选择信息不对称与上市估值折价-chapter-18a--18c--19a-ah)
 - [Idea 02: FINI 数字化结算、双轨发售机制（Mechanism A vs. B）与固定价格发行的动态信息提取异化](#idea-02-fini-数字化结算双轨发售机制mechanism-a-vs-b与固定价格发行的动态信息提取异化)
@@ -34,6 +34,7 @@
 - [Idea 16: 同行业科技竞品防御性上市浪潮与估值溢出](#idea-16-同行业科技竞品防御性上市浪潮与估值溢出)
 - [Idea 17: 卖方明星分析师覆盖与抑价“隐性贿赂”假说](#idea-17-卖方明星分析师覆盖与抑价隐性贿赂假说)
 - [Idea 18: 发行费用分拆中的“软美元寻租”：固定承销佣金 vs. 酌情奖励费率博弈](#idea-18-发行费用分拆中的软美元寻租固定承销佣金-vs-酌情奖励费率博弈)
+- [Idea 19: 卖方跨期期望效用最大化与“理性抑价”：发行流产保险、解禁期多阶段套现与激励相容信息租金](#idea-19-卖方跨期期望效用最大化与理性抑价发行流产保险解禁期多阶段套现与激励相容信息租金)
 - [附录：全景课题库统一变量定义与 138 列主表映射全景矩阵](#附录全景课题库统一变量定义与-138-列主表映射全景矩阵)
 
 ---
@@ -859,9 +860,91 @@ $$\ln(\text{MoneyLeft}_i) = \theta_0 + \theta_1 \text{DiscretionaryIncentivePct}
 
 ---
 
+## Idea 19: 卖方跨期期望效用最大化与“理性抑价”：发行流产保险、解禁期多阶段套现与激励相容信息租金
+
+### 19.1 研究课题与核心科学问题
+- **研究课题**：为什么表面上看似导致发行人遭受巨额“财富流失（Money Left on the Table）”的 IPO 首日抑价，在动态博弈与跨期效用最优化框架下，反而是卖方（拟上市公司原股东、管理层与承销商投行）的主动最优策略？
+- **核心问题**：
+  1. 拟上市公司原股东与投行如何权衡“多融 10% 资金”与“交易彻底流产（Broken Deal）的灭顶之灾”？抑价作为一种“发行成功保险费”，其边际对冲价值如何受企业前期沉没成本与破产压力的驱动？
+  2. IPO 通常仅发售总股本的 10%~25%，原股东持有 75%~90% 的绝大多数筹码被锁定至 6 个月甚至数年后。原股东如何通过在 IPO 当天适度让利营造“开门红（IPO Pop）”与口碑，以换取解禁期后巨额存量股份在大宗交易与后续增发（FPO/SEO）中的流动性溢价与高估值变现？
+  3. 投行在面对“单次博弈发行人”与“长线重复博弈买方机构（BlackRock、Fidelity 等）”时，如何利用自主配售权与抑价配额进行隐性利益输送以换取长久交易佣金（Soft Dollars）？
+  4. 簿记建档中，投行为了诱导掌握私有真实估值信息的买方机构如实申报需求，如何依据机制设计（Mechanism Design）的激励相容约束（Incentive Compatibility, IC），必须在最终定价中向机构让渡正的信息租金（Information Rents）？
+
+### 19.2 经典文献基准与美股经验事实
+- **发行流产风险与确定性保险 (Broken Deal Risk & Sunk Costs, Busaba, Benveniste, & Guo 2001; Dunbar 2000)**：
+  - 美股历史上约 20% 的 IPO 申请最终因市场动荡或定价分歧被迫撤回（Withdrawn IPOs）；
+  - 发行失败不仅导致数百万至数千万不可逆沉没中介费（法律、审计、保荐）血本无归，更带来毁灭性的声誉重创、竞品挤压与后续降估值融资（Down-round）；
+  - 发行人宁愿主动折价 10%~15% 锁定超额认购，本质上是支付一笔风险对冲的“确定性保险费”。
+- **多阶段套现与信号假说 (Staged Divestment & Signaling Theory, Allen & Faulhaber 1989; Grinblatt & Hwang 1989; Welch 1989)**：
+  - **发售比例有限**：企业 IPO 通常仅出让 15%~25% 股份，75%~85% 留存原股东手中；
+  - **动态市值管理**：若上市定高价导致破发 20%，市场口碑坍塌，半年禁售期后原股东根本无法减持；而首日开门红树立牛股预期，解禁期减持剩余 80% 筹码的收益远超 IPO 当天让利损失（Jegadeesh, Weinstein, & Welch 1993）。
+- **投行重复博弈与代理冲突 (Repeated Game & Quid Pro Quo, Loughran & Ritter 2002, 2004; Reuter 2006)**：
+  - 发行人是一次性客户，买方大机构是终身佣金客户；
+  - 投行利用自由配售权（Discretionary Allocation）把折价新股分给高频交易 VIP 买方，换取买方长期向投行贡献大额经纪佣金（Soft Dollars）。
+- **机制设计与激励相容约束 (Mechanism Design & Incentive Compatibility, Benveniste & Spindt 1989; Biais et al. 2002)**：
+  - 买方拥有私有需求信号 $\theta_i \in \{\text{Low}, \text{High}\}$；
+  - 若投行在收到 High 信号后把价格完全压榨至保留价格（$P = \text{High}$），买方的占优策略就是撒谎或保持沉默；
+  - 为了满足激励相容约束 $U(\text{High} | \text{High}) \ge U(\text{Low} | \text{High})$，投行必须在定价向上部分修正（Hanley 1993）时，留存正的信息租金返还买方（$\text{IR} > 0$）。
+- **核心理论方程式**：
+  $$\text{IPO 抑价成本} = \text{发行成功保险费} + \text{解禁期多阶段套现宣传费} + \text{诱导买方如实申报的信息租金}$$
+
+### 19.3 香港主板制度背景与样本微观现实
+- **微观现实 1：原股东存量筹码锁定与绝大部分财富留存**：
+  - 港交所《上市规则》第 8.08 条要求公众持股量通常为 25%（大型股豁免至 10%~15%）；
+  - 2026 Q1 数据中，38 家样本上市时公众持股比例（`Public shareholding at listing (%)`，Col 118）均值仅为 **21.5%**，原股东留存了 **78.5%** 的绝对控股筹码，且受到 6 个月（第 10.07 条）严格禁售；
+  - 主表第 16 列显示老股发售（`Sale Shares`）极少，绝大多数为新股发行（`New shares`，Col 17）。
+- **微观现实 2：沉没成本的刚性压迫**：
+  - 38 家样本上市显性现金开支（`Listing expenses`，Col 101）均值高达 **1.06 亿港元**，最高突破 2.5 亿港元；
+  - 对 18A 生物科技与 18C 特专科技等尚未盈利企业而言，若因咬死高定价导致发行流产，沉没成本足以导致企业资金链断裂。
+- **微观现实 3：FINI 阳光化机制下的不可逆流产惩罚**：
+  - 数字化 FINI 联网，国际配售与散户认购完全实时透明，承销商无法通过抽屉协议掩盖发行冷场，一旦定价过高遭遇撤单，流产是公开毁灭性事件。
+
+### 19.4 待检验学术假说体系
+- **$H_{19a}$（原股东存量筹码留存与跨期套现动机假说）**：控股股东及原股东上市后留存的存量股份比例（$100\% - \text{PublicShareholdingPct}$）及控股股东经济利益持股比例（Col 68）越高的企业，其容忍的首日抑价率（Col 128）和留在桌面上的财富（Col 129）显著更高。原股东主动以初始低溢价发售营造开门红，为解禁期后 80% 存量资产的高流动性、高估值套现铺路。
+- **$H_{19b}$（沉没成本、现金流饥渴与发行成功保险费假说）**：显性上市费用占拟募资净额比重（$\text{ListingExpenses} / \text{NetProceeds}$）越高、往绩经营性现金流越紧张（Col 50 为负）的企业，对发行流产风险的厌恶程度越极端，其发售定价越倾向于区间底格（`Pricing position == 'At low'`）或低廉的固定价格发售，反映出通过压低定价支付高额“发行成功保险费”的行为。
+- **$H_{19c}$（激励相容信息租金与部分修正假说）**：在机构认购火爆、定价相对中点显著上修（$\Delta P > 0$）的样本中，首日抑价率显著大于 0 且与价格上修幅度正相关，严格验证了投行在机制设计中为了满足买方真实申报私有信息的激励相容约束而主动让渡的信息租金。
+
+### 19.5 规范计量经济学模型
+#### 模型 19.1：跨期动态套现与原股东存量筹码检验模型 (OLS)
+$$\begin{aligned}
+\text{IR}_i = &\ \alpha_0 + \beta_1 (100\% - \text{PublicShareholdingPct}_i) + \beta_2 \text{ControllerEconomicPct}_i \\
+&+ \beta_3 \Delta P_i + \beta_4 \frac{\text{ListingExpenses}_i}{\text{NetProceeds}_i} + \beta_5 \text{OperatingCashFlowNegativeDummy}_i \\
+&+ \beta_6 \text{TopTierVC}_i + \gamma \mathbf{X}_i + \varepsilon_i
+\end{aligned}$$
+
+#### 模型 19.2：发行保险需求对低位定价落点的选择模型 (Ordered Probit / Logistic)
+$$\begin{aligned}
+\text{Logit}\left(\text{Prob}(\text{PricingPosition}_i = \text{'At low'})\right) = &\ \theta_0 + \theta_1 \frac{\text{ListingExpenses}_i}{\text{NetProceeds}_i} + \theta_2 \text{OperatingCashFlowNegativeDummy}_i \\
+&+ \theta_3 \text{DebtRepaymentPct}_i - \theta_4 \ln(\text{FirmAge}_i + 1) + \mathbf{\Gamma} \mathbf{Z}_i
+\end{aligned}$$
+
+#### 模型 19.3：信息租金结构方程（Benveniste-Spindt 机制设计检验）
+$$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{NetProceeds}_i + \lambda_2 \ln(\text{SubscriptionRatio}_i) + \lambda_3 \text{TopTierSponsor}_i + \mu_i$$
+
+### 19.6 138 列主表变量与字段映射
+| 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
+|---|:---:|---|:---:|:---:|
+| 上市首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 模型 19.1 被解释变量 (Y) |
+| 定价落点分类 | **Col 24** | `Pricing position in filing range` | 文本分类 | 模型 19.2 被解释变量 (Y) |
+| 留在桌面上的财富 | **Col 129**| `Money left on the table (HK$)` | 货币数值 | 模型 19.3 被解释变量 (Y) |
+| 上市时公众持股比例 | **Col 118**| `Public shareholding at listing (%)` | 数值百分比 | 存量留存筹码核心自变量 ($1 - \text{Float}$) |
+| 控股股东上市经济利益比| **Col 68** | `Controller economic interest at listing (%)`| 数值百分比 | 跨期套现动机自变量 |
+| 显性总上市开支 | **Col 101**| `Listing expenses (HK$)` | 货币数值 | 沉没成本保险核心自变量 |
+| 最终发行人净募资额 | **Col 117**| `Net IPO proceeds to issuer (HK$)` | 货币数值 | 保险费相对基准 |
+| 往绩经营性现金流 | **Col 50** | `Operating cash flow in year-1 (before annualization)`| 货币数值 | 流产风险压力自变量 |
+| 价格修正幅度 | **Col 22** | `Filing price revision (%)` | 数值百分比 | 激励相容信息租金核心自变量 |
+| 拟用于偿债募资比 | **Col 72** | `Debt repayment (% of planned net IPO proceeds)`| 数值百分比 | 偿债避险控制变量 |
+| 老股发售转让股数 | **Col 16** | `Sale Shares` | 整数数值 | 首发减持控制变量 |
+| 新股发行股数 | **Col 17** | `New shares ` | 整数数值 | 规模基础变量 |
+
+### 19.7 经济学直觉与学术贡献
+彻底扭转了传统实证研究将首日抑价单纯视为“代理成本”或“承销商剥削发行人”的单维视角，建立了**涵盖“发行流产保险”、“解禁期多阶段套现”、“投行重复博弈”与“信息提取激励相容租金”四位一体的卖方跨期理性博弈模型**。该假说体系为现代企业金融学（Corporate Finance）对 IPO 抑价之谜（Underpricing Puzzle）提供了最具现实说服力的统一解释框架。
+
+---
+
 ## 附录：全景课题库统一变量定义与 138 列主表映射全景矩阵
 
-下表系统汇编了上述 18 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
+下表系统汇编了上述 19 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
 
 | 列号 | 列标 | 规范英文字段名 (Standard Header) | 中文口径释义 | 所属 Idea 索引 | 计量角色 | 格式规范 |
 |:---:|:---:|---|---|:---:|:---:|:---:|
@@ -871,19 +954,20 @@ $$\ln(\text{MoneyLeft}_i) = \theta_0 + \theta_1 \text{DiscretionaryIncentivePct}
 | **Col 4** | `D` | `Date of Prospectus (dd/mm/yy)` | 招股书法定刊发日期 | Idea 16 | 时间基准 | `YYYY-MM-DD` |
 | **Col 6** | `F` | `Sponsor(s)` | 独家/联席保荐人名单 | Idea 05, 10, 17 | 核心解释 | 文本列表 |
 | **Col 11**| `K` | `IPO Subscription Price (HK$)` | 最终发售价 (HK$) | Idea 02, 06, 13 | 核心价格 | `0.00` |
-| **Col 16**| `P` | `Sale Shares` | 老股发售转让股数 | Idea 14 | 解释变量 | `#,##0` |
+| **Col 16**| `P` | `Sale Shares` | 老股发售转让股数 | Idea 14, 19 | 解释变量 | `#,##0` |
+| **Col 17**| `Q` | `New shares ` | 新股发售发行股数 | Idea 19 | 规模基准 | `#,##0` |
 | **Col 20**| `T` | `Maximum Offer Price` | 最高发售价 (HK$) | Idea 01, 02 | 价格区间 | `0.00` |
 | **Col 21**| `U` | `Minimum Offer Price` | 最低发售价 (HK$) | Idea 01, 02 | 价格区间 | `0.00` |
-| **Col 22**| `V` | `Filing price revision (%)` | 偏离区间中点修正幅度 ($\Delta P$) | Idea 02, 06, 08 | 核心自变量 | `0.00%` |
+| **Col 22**| `V` | `Filing price revision (%)` | 偏离区间中点修正幅度 ($\Delta P$) | Idea 02, 06, 08, 19 | 核心自变量 | `0.00%` |
 | **Col 23**| `W` | `Filing range width (%)` | 询价区间相对宽度 (不确定性) | Idea 01, 05, 12, 15, 16 | 核心被解释/自变量 | `0.00%` |
-| **Col 24**| `X` | `Pricing position in filing range` | 定价落点分类 (At high/Fixed等) | Idea 02, 05, 18 | 核心因变量/分组 | `@` |
+| **Col 24**| `X` | `Pricing position in filing range` | 定价落点分类 (At high/Fixed等) | Idea 02, 05, 18, 19 | 核心因变量/分组 | `@` |
 | **Col 28**| `AB`| `total assets in year-1` | 上市前一年总资产 | Idea 01, 10 | 规模控制 | `#,##0` |
 | **Col 37**| `AK`| `Net sales in year-1` | 上市前一年营业收入 | Idea 15 | 经营控制 | `#,##0` |
 | **Col 44**| `AR`| `Underwriting Commission (% of fund raised HK (a)`| 香港公开发售法定承销佣金率 | Idea 05, 18 | 核心自变量 | `0.00%` |
 | **Col 45**| `AS`| `Underwriting Commission (% of fund raised Int.(b)`| 国际配售法定承销佣金率 | Idea 18 | 核心自变量 | `0.00%` |
 | **Col 46**| `AT`| `Over-allotment Option (%)` | 招股书最大超额配售权比例 | Idea 03, 11 | 契约基准 | `0.00%` |
 | **Col 47**| `AU`| `Principal business / industry` | 主营业务与细分行业分类 | Idea 16 | 赛道集群 | 文本 |
-| **Col 50**| `AX`| `Operating cash flow in year-1 (before annualization)`| 上市前一年经营现金流净额 | Idea 07, 15 | 财务控制 | `#,##0` |
+| **Col 50**| `AX`| `Operating cash flow in year-1 (before annualization)`| 上市前一年经营现金流净额 | Idea 07, 15, 19 | 财务控制 | `#,##0` |
 | **Col 52**| `AZ`| `R&D expensed in year-1 (before annualization)`| 上市前一年研发费用开支 | Idea 01, 04, 15, 16 | 科技控制 | `#,##0` |
 | **Col 54**| `BB`| `Top 5 customers (% of year-1 revenue)` | 前五大客户销售额合计占比 | Idea 15 | 核心自变量 | `0.00%` |
 | **Col 56**| `BD`| `Pre-IPO VC/PE backing (1=yes; 0=no)` | 机构投资人综合背书标识 | Idea 04 | 基础自变量 | `0/1` |
@@ -896,17 +980,17 @@ $$\ln(\text{MoneyLeft}_i) = \theta_0 + \theta_1 \text{DiscretionaryIncentivePct}
 | **Col 64**| `BL`| `Pre-IPO investor board seat (1=yes; 0=no)`| 机构投资者派驻董事会席位 | Idea 04 | 治理介入 | `0/1` |
 | **Col 66**| `BN`| `Pre-IPO holding duration (years)` | 机构最早入股至上市持有年限 | Idea 04, 14 | 资本耐心 | `0.00` |
 | **Col 67**| `BO`| `Ultimate controller type` | 最终控制人性质分类 | Idea 07 | 治理控制 | `@` |
-| **Col 68**| `BP`| `Controller economic interest at listing (%)`| 控股股东上市时经济利益持股比 | Idea 06, 07, 09, 15 | 核心自变量 | `0.00%` |
+| **Col 68**| `BP`| `Controller economic interest at listing (%)`| 控股股东上市时经济利益持股比 | Idea 06, 07, 09, 15, 19 | 核心自变量 | `0.00%` |
 | **Col 69**| `BQ`| `Controller voting rights at listing (%)` | 控股股东上市时投票权比例 | Idea 07, 15 | 核心自变量 | `0.00%` |
 | **Col 70**| `BR`| `Interest-bearing debt at year-1 end` | 上市前一年有息债务总额 | Idea 10 | 债务负荷 | `#,##0` |
-| **Col 72**| `BT`| `Debt repayment (% of planned net IPO proceeds)`| 拟用于偿还债务的募资比例 | Idea 10 | 核心自变量 | `0.00%` |
+| **Col 72**| `BT`| `Debt repayment (% of planned net IPO proceeds)`| 拟用于偿还债务的募资比例 | Idea 10, 19 | 核心自变量 | `0.00%` |
 | **Col 75**| `BW`| `A+H issuer flag` | A+H 双重上市发行人标识 | Idea 01, 12 | 核心解释 | `0/1` |
 | **Col 76**| `BX`| `WVR flag` | 同股不同权 (Chapter 8A) 标识 | Idea 06, 07, 15 | 核心解释 | `0/1` |
 | **Col 77**| `BY`| `Chapter 18A flag` | 第 18A 章未盈利生物科技标识 | Idea 01, 12 | 核心解释 | `0/1` |
 | **Col 78**| `BZ`| `Chapter 18C flag` | 第 18C 章特专科技公司标识 | Idea 01, 04, 12, 16 | 核心解释 | `0/1` |
 | **Col 79**| `CA`| `Industry classification code` | 行业分类标准代码 | Idea 16 | 行业固定效应 | 编码 |
 | **Col 82**| `CD`| `Firm age at IPO (years)` | 公司成立至上市年限 (岁) | 全库通用 | 基础控制 | `0.00` |
-| **Col 101**| `CS`| `Listing expenses (HK$)` | 总上市费用 (港元，显性发行成本) | Idea 05, 06, 12, 18 | 核心自变量 | `#,##0` |
+| **Col 101**| `CS`| `Listing expenses (HK$)` | 总上市费用 (港元，显性发行成本) | Idea 05, 06, 12, 18, 19 | 核心自变量 | `#,##0` |
 | **Col 102**| `CT`| `Cornerstone investor names` | 基石投资者法定披露名单 | Idea 14 | 跨界匹配 | 文本列表 |
 | **Col 103**| `CU`| `Final cornerstone allocation (% of base offer)`| 基石投资者最终获配占基础发售比 | Idea 03, 09 | 核心自变量 | `0.00%` |
 | **Col 104**| `CV`| `Earliest cornerstone unlock date (dd/mm/yy)`| 最早基石解禁法定日期 | Idea 09 | 事件日期 | `YYYY-MM-DD` |
@@ -916,15 +1000,16 @@ $$\ln(\text{MoneyLeft}_i) = \theta_0 + \theta_1 \text{DiscretionaryIncentivePct}
 | **Col 111**| `DC`| `Final global offering shares (before over-allotment)`| 全球发售基础总发售股数 | Idea 06 | 规模基准 | `#,##0` |
 | **Col 114**| `DF`| `Over-allotment shares actually issued` | 实际发行的超额配售股份数量 | Idea 03, 11 | 稳价结果 | `#,##0` |
 | **Col 115**| `DG`| `Greenshoe exercise rate (%)` | 绿鞋实际行使比例 (0%~100%) | Idea 03, 11 | 核心因/自变量 | `0.00%` |
-| **Col 117**| `DI`| `Net IPO proceeds to issuer (HK$)` | 发行人实际所得净募资金额 | 全库通用 | 规模控制 | `#,##0` |
+| **Col 117**| `DI`| `Net IPO proceeds to issuer (HK$)` | 发行人实际所得净募资金额 | Idea 19, 全库通用 | 规模控制 | `#,##0` |
+| **Col 118**| `DJ`| `Public shareholding at listing (%)` | 上市时公开发售股份占总股本比 | Idea 19 | 留存筹码核心自变量 | `0.00%` |
 | **Col 120**| `DL`| `Unrestricted public shareholding at listing (%)`| 上市首日不受限自由流通盘比例 | Idea 03, 11, 13 | 核心自变量 | `0.00%` |
 | **Col 123**| `DO`| `HSI return over 20 trading days before prospectus (%)`| 招股日前 20 日恒指大盘累计收益率 | Idea 02, 08 | 宏观公开信息 | `0.00%` |
 | **Col 124**| `DP`| `HK ordinary IPO count in 90 calendar days` | 招股日前 90 日主板新股数量 | Idea 08 | 市场周期 | 整数 |
 | **Col 125**| `DQ`| `1-month HIBOR before prospectus (%)` | 招股前一日 1 个月期 HIBOR 利率 | Idea 08, 13 | 资金成本 | `0.00%` |
 | **Col 126**| `DR`| `Banking system aggregate balance before prospectus`| 招股前一日香港银行体系总结余 | Idea 08 | 宏观流动性 | `#,##0` |
 | **Col 127**| `DS`| `First trading day closing price (HK$)` | 上市首日二级市场收盘价 (HK$) | 全库通用 | 基础价格 | `0.00` |
-| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | 全库核心 | 核心因变量 (Y) | `0.00%` |
-| **Col 129**| `DY`| `Money left on the table (HK$)` | 留在桌面上的财富 / 财富流失金额 | Idea 06, 17, 18 | 核心因变量 (Y) | `#,##0.00` |
+| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | Idea 19, 全库核心 | 核心因变量 (Y) | `0.00%` |
+| **Col 129**| `DY`| `Money left on the table (HK$)` | 留在桌面上的财富 / 财富流失金额 | Idea 06, 17, 18, 19 | 核心因变量 (Y) | `#,##0.00` |
 | **Col 130**| `DZ`| `First trading day opening price (HK$)` | 上市首日二级市场开盘价 (HK$) | 全库通用 | 开盘表现 | `0.00` |
 | **Col 131**| `EA`| `First trading day high (HK$)` | 上市首日二级市场最高价 (HK$) | Idea 13 | 盘中振幅 | `0.00` |
 | **Col 132**| `EB`| `First trading day low (HK$)` | 上市首日二级市场最低价 (HK$) | Idea 13 | 盘中振幅 | `0.00` |
