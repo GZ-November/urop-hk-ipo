@@ -1,197 +1,205 @@
-# 香港主板 IPO 实证金融研究课题库与计量设计指南
-## Empirical IPO Research Ideas, Theoretical Frameworks & Econometric Specifications
+# 香港主板 IPO 全景研究总纲与实证金融综述手册
+# The Hong Kong Main Board IPO Panoramic Review & Empirical Research Compendium
 
-> **学术基石**：以 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)** 经典综述单行本《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）为核心理论纲领。  
-> **数据依托**：香港联交所主板 2026 年第一季度新股全量数据库（`HKIPO-MB2026Q1.xlsx`，138 维完整跨学科指标，38 家发行人，双门禁 100% 确证）。
+> **学术定位**：本总纲旨在构建一部全面对标 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)**《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）的**香港主板新股市场全景文献综述与实证研究指南（A Comprehensive Review of Hong Kong IPOs）**。  
+> **数据基础设施**：依托全量 2026 Q1 香港主板新股数据库（`HKIPO-MB2026Q1.xlsx`，138 维指标全景解析，38 家样本，涵盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分结构、基石投资者配售与二级市场量价，100% 审计级确证）。
 
 ---
 
 ## 目录导览
 
-- [一、 课题一：VC/PE 异质性、董事会派驻与 18C 特专科技 IPO 抑价之谜](#一-课题一vcpe-异质性董事会派驻与-18c-特专科技-ipo-抑价之谜)
-- [二、 课题二：基石投资者筹码锁定、自由流通盘挤压与首日翻转抛售（Flipping）机制](#二-课题二基石投资者筹码锁定自由流通盘挤压与首日翻转抛售flipping机制)
-- [三、 课题三：FINI 制度改革、发售机制（Mechanism A/B）与动态信息提取异化](#三-课题三fini-制度改革发售机制mechanism-ab与动态信息提取异化)
-- [四、 课题四：承销商辛迪加网络膨胀、保荐分肥与询价区间发散度](#四-课题四承销商辛迪加网络膨胀保荐分肥与询价区间发散度)
-- [五、 课题五：生命周期公司治理：创始人超级投票权（WVR）与留在桌面上的财富](#五-课题五生命周期公司治理创始人超级投票权wvr与留在桌面上的财富)
-- [六、 计量模型核心变量与 138 列主表映射字典](#六-计量模型核心变量与-138-列主表映射字典)
-- [七、 论文推进路线图与工作流规范](#七-论文推进路线图与工作流规范)
+- [第一章 综述导引：构建香港 IPO 全景文献体系的学术蓝图](#第一章-综述导引构建香港-ipo-全景文献体系的学术蓝图)
+- [第二章 簿记建档、固定发售与动态信息提取机制 (Bookbuilding, Fixed Price & Partial Adjustment)](#第二章-簿记建档固定发售与动态信息提取机制-bookbuilding-fixed-price--partial-adjustment)
+- [第三章 基石投资者生态体系、筹码锁定与二级市场翻转抛售 (Cornerstone Ecosystem, Float Squeeze & Flipping)](#第三章-基石投资者生态体系筹码锁定与二级市场翻转抛售-cornerstone-ecosystem-float-squeeze--flipping)
+- [第四章 风险投资（VC/PE）异质性、认证效应与特专科技造势 (Venture Capital Heterogeneity & Certification vs. Grandstanding)](#第四章-风险投资vcpe-异质性认证效应与特专科技造势-venture-capital-heterogeneity--certification-vs-grandstanding)
+- [第五章 承销辛迪加网络膨胀、保荐分肥与酌情奖励费率 (Syndicate Hierarchy, Free-Riding & Incentive Fees)](#第五章-承销辛迪加网络膨胀保荐分肥与酌情奖励费率-syndicate-hierarchy-free-riding--incentive-fees)
+- [第六章 首日抑价、留在桌面上的财富与真实发行成本 (Underpricing, Money Left on the Table & True Costs)](#第六章-首日抑价留在桌面上的财富与真实发行成本-underpricing-money-left-on-the-table--true-costs)
+- [第七章 生命周期公司治理：WVR 同股不同权、控制权两权分离与董事顾问价值 (Life-Cycle Governance & Dual-Class)](#第七章-生命周期公司治理wvr-同股不同权控制权两权分离与董事顾问价值-life-cycle-governance--dual-class)
+- [第八章 全景实证计量回归方程库与 138 列主表变量映射字典 (Econometric Library & Variable Mapping)](#第八章-全景实证计量回归方程库与-138-列主表变量映射字典-econometric-library--variable-mapping)
 
 ---
 
-## 一、 课题一：VC/PE 异质性、董事会派驻与 18C 特专科技 IPO 抑价之谜
+## 第一章 综述导引：构建香港 IPO 全景文献体系的学术蓝图
 
-### 1. 论文工作题目 (Working Title)
-> **"Venture Capital Heterogeneity, Board Representation, and the Pricing of Deep-Tech IPOs: Evidence from HKEX Chapter 18C"**  
-> （风险投资异质性、董事会席位与硬科技企业新股定价：来自港交所第 18C 章的实证证据）
+### 1.1 为什么香港市场亟需一部全景综述（The Need for a Hong Kong IPO Review）
+以 Lowry, Michaely, and Volkova (2017) 为代表的国际顶级综述，其经验事实与微观模型主要植根于美国资本市场（SDC Platinum + CRSP 数据体系）。然而，**香港交易所（HKEX）作为全球核心新股集资中心，具备一系列西方成熟市场所不具备的独特制度设计与结构摩擦（Institutional Frictions）**：
+1. **监管通道多元化**：涵盖第 18A 章（未盈利生物科技）、第 18C 章（特专科技公司：商业化及未商业化双轨）、Chapter 19A（内地发行人 H 股及 A+H 两地上市）；
+2. **定价与回拨双轨制（FINI 改革）**：2023 年上线 FINI 数字化结算平台后，认购资金冻结期由 T+5 压缩至 T+2，并确立了 Mechanism A（传统阶梯回拨）与 Mechanism B（灵活回拨）机制；
+3. **独特的基石投资（Cornerstone Investors）生态**：法定 6 个月限售期，平均吸纳 30%~60% 的基础发售规模，形成极端紧俏的自由流通盘结构；
+4. **两极分化的定价形态**：大量公司直接采用固定价格（Fixed Price）发售，而区间询价发售中又存在显著的顶格或底格聚集。
 
-### 2. 理论机制与文献脉络
-- **认证效应假说 (Certification Hypothesis, Megginson & Weiss 1991; Brav & Gompers 1997)**：顶级专业 VC/PE（如红杉、高瓴、启明等）通过严谨的尽职调查和投后赋能，为信息极度模糊的硬科技初创企业提供声誉背书，缓解外部投资者与发行人之间的逆向选择（Rock 1986），从而**降低新股首日抑价率**。
-- **名誉造势假说 (Grandstanding Hypothesis, Gompers 1996)**：年轻、募资周期紧迫的 VC 基金倾向于牺牲发行人定价（接受更高的折价与抑价），强行将尚未达到成熟商业化阶段的被投企业推向公开市场，以此向 LP 证明其项目退出能力并募集后续基金。
-- **治理与顾问价值 (Advising vs. Monitoring, Field, Lowry, & Mkrtchyan 2013)**：Pre-IPO 机构投资者在董事会派驻非执行董事（NED）或观察员席位，主要发挥战略顾问与商业网络连接作用，能够显著降低发行人的事后经营波动与事前不确定性（Beatty & Ritter 1986）。
+因此，构建一部全景 Review，旨在**将国际公司金融四大经典理论（信息不对称、委托代理、生命周期治理、行为金融）与香港特色制度进行深度融合**，为全球学者与监管机构提供系统性实证证据。
 
-### 3. 可检验研究假说 (Testable Hypotheses)
-- **$H_{1a}$（认证假说）**：拥有顶级机构认证（`col_top_tier_vc = 1`）及长期持有年限（`col_holding_duration > 5.0`）的 IPO，其首日抑价率（`col_underpricing`）显著低于普通机构投资或无 VC 支持的企业。
-- **$H_{1b}$（18C 特专科技造势效应）**：对于第 18C 章特专科技公司（`col_chapter_18c = 1`，如芯片算力、大模型），由于研发强度极高且无稳定盈利，VC 持股比例（`col_vc_pe_stake`）与首日抑价率呈显著正相关，呈现典型的造势与热点炒作特征。
-- **$H_{1c}$（董事会治理效应）**：Pre-IPO 投资人派驻董事席位（`col_vc_board_seat = 1`）能显著降低询价区间相对宽度（`col_range_width`），表明专业机构深度参与治理能够缩小市场对硬科技估值的事前分歧。
+---
 
-### 4. 计量实证模型设计
+## 第二章 簿记建档、固定发售与动态信息提取机制 (Bookbuilding, Fixed Price & Partial Adjustment)
+
+### 2.1 国际经典文献基准与经验事实 (Literature Baseline & Stylized Facts)
+- **理论模型**：
+  - **Benveniste & Spindt (1989)**：簿记建档（Bookbuilding）本质是承销商与长期机构投资者之间的重复博弈。机构拥有关于市场真实需求的私有信息。为诱导机构如实透露利好信号，承销商必须在定价时实行“部分修正（Partial Adjustment）”，将发售价仅上调一部分，将部分抑价利润留给机构作为透露真相的报酬。
+  - **Beatty & Ritter (1986)**：初步询价区间的相对宽度（$(P_{\text{high}} - P_{\text{low}})/\bar{P}_{\text{file}}$）直接度量了路演前市场对资产估值的事前不确定性（Ex-Ante Uncertainty）。
+- **美股经典经验事实（Lowry et al. 2017 Table 3.3）**：
+  - **破下限定价 ($P_{\text{offer}} < P_{\text{low}}$)**：平均首日初始收益率仅为 **+3.9%**（$N = 2,149$）；
+  - **区间内定价 ($P_{\text{low}} \le P_{\text{offer}} \le P_{\text{high}}$)**：平均首日初始收益率为 **+12.2%**（$N = 4,205$）；
+  - **突破上限发行 ($P_{\text{offer}} > P_{\text{high}}$)**：平均首日初始收益率高达 **+50.2%**（$N = 1,730$）。
+  - *非对称敏感性结论*：向上修正（$\Delta P^+$）对抑价率的边际推动效应远大于向下修正（$\Delta P^-$）。
+
+### 2.2 香港市场的制度切入点与实证异化之谜 (HKEX Institutional Realities & Empirical Puzzle)
+1. **FINI 结算压缩与机制双轨制 (FINI & Mechanism A/B)**：
+   - 港交所全面启用 FINI 平台，打新资金冻结周期从 T+5 大幅缩短至 T+2，不仅消除了打新周期的 HIBOR 利率异动，更重构了公开发售与国际配售的需求博弈。
+   - 发行人可选用 Mechanism A（根据公开发售超购倍数强制回拨 10%~50%）或 Mechanism B（保荐人自主决定回拨，最低维持公开发售一定底线）。
+2. **2026 Q1 真实数据分布**：
+   - **全量 38 家样本中，多达 22 家实行固定价格（Fixed Price）发售，占比高达 57.9%！**
+   - 在采用发售区间的 16 家发行人中：
+     - **6 家顶格定价（At high）**：平均抑价率超 +55%；
+     - **6 家区间内（Within range / Midpoint）**；
+     - **4 家底格定价（At low）**：平均抑价率仅 +2.1%。
+3. **核心学术问题与假说 (Research Hypotheses)**：
+   - **$H_{2a}$（信息提取丧失假说）**：固定价格发售（Fixed Price）彻底剥夺了投行在路演期间通过价格弹性提取机构私有信息的机制。固定价格发行的 IPO 首日抑价率方差显著高于区间发售样本，呈现更剧烈的高抑价或破发分化。
+   - **$H_{2b}$（机制回拨与需求扭曲）**：采用灵活回拨（Mechanism B）的发行人，由于公开发售份额不被散户狂热刚性稀释，其最终定价修正幅度（$\Delta P$）能更纯粹地反映机构投资者的真实基本面信号。
+
+### 2.3 规范计量回归方程设计 (Econometric Specifications)
+
+#### 模型 1：基准部分修正与发售机制交互方程
 $$\begin{aligned}
-\text{Underpricing}_i = &\ \alpha_0 + \beta_1 \text{TopTierVC}_i + \beta_2 \text{VCHoldingYears}_i + \beta_3 \text{VCBoardSeat}_i \\
-&+ \beta_4 (\text{TopTierVC}_i \times \text{Chapter18C}_i) + \beta_5 \text{StateGovBacked}_i \\
-&+ \gamma \mathbf{X}_i + \text{IndustryFE} + \varepsilon_i
+\text{IR}_i = &\ \alpha_0 + \beta_1 \Delta P_i + \beta_2 \text{RangeWidth}_i + \beta_3 \text{MechanismB}_i + \beta_4 (\Delta P_i \times \text{MechanismB}_i) \\
+&+ \beta_5 \text{FixedPriceDummy}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-- **核心控制变量向量 $\mathbf{X}_i$**：
-  - 成立年限：$\ln(\text{FirmAge}_i + 1)$（取自 `col_firm_age`）
-  - 发行规模：$\ln(\text{Proceeds}_i)$（取自 `col_funds_raised_int`）
-  - 研发强度：$\text{R\&D Expensed} / \text{Net Sales}$
-  - 前五大客户集中度：`Top 5 customers (% of year-1 revenue)`
-  - 市场情绪：`HSI return over 20 trading days before prospectus (%)`
+#### 模型 2：Hanley (1993) 不对称价格修正拓展方程
+$$\text{IR}_i = \alpha_0 + \beta_1 \Delta P_i^+ + \beta_2 \Delta P_i^- + \beta_3 \text{RangeWidth}_i + \beta_4 \text{FixedPriceDummy}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
+
+- **变量定义与主表列位**：
+  - $\text{IR}_i$：首日抑价率（`col_underpricing`，**Col 128**）
+  - $\Delta P_i$：定价偏离区间中点幅度（`col_price_revision`，**Col 22**）
+  - $\Delta P_i^+, \Delta P_i^-$：正向修正与负向修正（$\Delta P^+ = \max(0, \Delta P), \Delta P^- = \min(0, \Delta P)$）
+  - $\text{RangeWidth}_i$：初步询价区间相对宽度（`col_range_width`，**Col 23**）
+  - $\text{MechanismB}_i$：Mechanism B 哑变量（取自 `col_offer_mechanism`，**Col 136**）
+  - $\text{FixedPriceDummy}_i$：固定价格发售哑变量（取自 `col_pricing_position == 'Fixed price'`，**Col 24**）
+  - 控制变量 $\mathbf{X}_i$：企业成立年限（**Col 82**）、净募资规模（**Col 117**）、公开发售超购倍数（**Col 105**）、招股前 20 日恒指收益率（**Col 123**）、18C 科技标识（**Col 78**）。
 
 ---
 
-## 二、 课题二：基石投资者筹码锁定、自由流通盘挤压与首日翻转抛售（Flipping）机制
+## 第三章 基石投资者生态体系、筹码锁定与二级市场翻转抛售 (Cornerstone Ecosystem, Float Squeeze & Flipping)
 
-### 1. 论文工作题目 (Working Title)
-> **"Cornerstone Lock-ins, Float Squeeze, and Short-Term Flipping: How Pre-Allocated Quality Signals Distort Secondary Market Liquidity"**  
-> （基石投资者锁定、流通盘挤压与首日翻转交易：预配售质量信号如何扭曲二级市场流动性）
+### 3.1 理论机制与港股特有制度红利 (Theoretical Framework & HKEX Specifics)
+- **Aggarwal (2003) 机构翻转假说**：美股约 **15%** 的发售股份会在上市首两日内被机构投资者转手抛售（Flipped）。高翻转率通常集中在热门 IPO，机构借首日暴涨获利出局。
+- **Ellis, Michaely, & O'Hara (2000) 绿鞋托单护盘**：美股承销商在冷门 IPO 中完全通过“不执行 15% 绿鞋期权、在二级市场以低于发行价直接买入股票平仓”来维持价格稳定。
+- **香港基石投资者制度（Cornerstone Lockups）的结构冲击**：
+  - 香港 IPO 允许在招股书刊发前与大型主权财富基金、央国企产业资本或知名对冲基金签署具有法律约束力的基石认购协议（法定锁定期 **6 个月**）；
+  - **2026 Q1 数据事实**：38 家公司中 34 家引入基石（覆盖率 **89.5%**），平均基石获配占比达 **34.0%~38.3%**（最高达 69%）；
+  - **自由流通盘挤压（Float Squeeze）**：基石锁定直接导致首日不受限的自由流通盘（`col_unrestricted_public_shareholding`）平均被压缩至仅 **8.0%**（中位数 7.0%）！
+  - **翻转率异化**：2026 Q1 全样本首日翻转率（`col_flipping_ratio`）均值高达 **38.79%**，远超美股的 15%。
 
-### 2. 理论机制与文献脉络
-- **制度背景（港股独有红利）**：美股 IPO 严格禁止基石投资者，承销商依靠 15% 绿鞋超额配售及二级市场折价回购进行价格稳定（Ellis, Michaely, & O'Hara 2000）。港股则设立了法定 6 个月禁售期的“基石投资（Cornerstone Investors）”制度。
-- **双重信号冲突**：
-  - 一方面，基石认购比例高传递了主权基金/知名长线资本背书的高质量信号；
-  - 另一方面，基石投资者吞噬了 30%~60% 的发售股份，导致上市首日实际不受限的自由流通量（`col_unrestricted_public_shareholding`）极度紧俏（平均仅 8%）。
-- **短线翻转抛售假说 (Flipping Hypothesis, Aggarwal 2003)**：在自由流通盘严重紧缩的市场结构下，投机性散户与套利对冲基金的挂单竞争极易引发首日换手狂热。高翻转率（Flipping Velocity）不再反映基本面抛压，而是筹码稀缺性导致的博傻换手。
+### 3.2 核心研究假说
+- **$H_{3a}$（筹码锁定与挤牌效应）**：基石投资者获配比例越高，二级市场可交易筹码越稀缺，首日换手翻转率（`col_flipping_ratio`）与盘中振幅显著放大。
+- **$H_{3b}$（基石对绿鞋的替代效应）**：基石配售比例高、声誉强的 IPO，承销商全额行使绿鞋（`col_greenshoe_rate = 1.0`）的概率反而更低，因为承销商无需通过超额配售机制建立大额做空头寸来护盘。
 
-### 3. 可检验研究假说
-- **$H_{2a}$（流通盘挤压假说）**：基石获配比例（`col_cornerstone_ratio`）越高，首日实际自由流通盘越小，首日交易翻转率（`col_flipping_ratio`）和首日振幅（$(P_{\text{high}} - P_{\text{low}})/P_{\text{offer}}$）显著越高。
-- **$H_{2b}$（绿鞋替代效应）**：基石投资者锁定比例超过 40% 的发行，主承销商全额行使绿鞋（`col_greenshoe_rate = 1.0`）的概率显著降低，绿鞋机制对二级市场托单护盘的依赖度被基石资本的筹码锁定所替代。
+### 3.3 计量回归方程
+$$\text{FlippingRatio}_i = \alpha_0 + \beta_1 \text{CornerstonePct}_i + \beta_2 \text{UnrestrictedFloatPct}_i + \beta_3 \text{SubscriptionRatio}_i + \beta_4 \text{IR}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
 
-### 4. 计量实证模型设计
+$$\text{GreenshoeRate}_i = \theta_0 + \theta_1 \text{CornerstonePct}_i + \theta_2 \text{IR}_i + \theta_3 \text{UnderwriterPrestige}_i + \mathbf{\Gamma} \mathbf{Z}_i + \mu_i$$
+
+---
+
+## 第四章 风险投资（VC/PE）异质性、认证效应与特专科技造势 (Venture Capital Heterogeneity & Certification vs. Grandstanding)
+
+### 4.1 理论模型与文献争鸣
+- **认证假说 (Certification, Megginson & Weiss 1991)**：具有高声誉的 VC 机构能够降低信息不对称，使得企业以更低的抑价发售。
+- **造势假说 (Grandstanding, Gompers 1996)**：年轻 VC 迫于后续基金募集压力，急于将未成熟企业推向上市，导致企业平均年龄更低、首日抑价率更高（美股 VC 抑价 27.4% vs 非 VC 11.9%）。
+- **顾问价值 (Advising, Sørensen 2007; Field et al. 2013)**：VC 对企业价值的提升 2/3 来自投后治理与商业辅导。
+
+### 4.2 细分维度与港股硬科技实证切入
+在当前构建的数据库中，我们已完成 **10 个维度的颗粒化解构**：
+1. `col_vc_backed` (0/1): 早期 VC
+2. `col_pe_backed` (0/1): 中晚期 PE
+3. `col_cvc_backed` (0/1): 产业资本 (如美团/阿里/腾讯/小米)
+4. `col_gov_backed` (0/1): 国资/地方引导基金
+5. `col_top_tier_vc` (0/1): 红杉/高瓴/启明等顶级认证
+6. `col_vc_pe_stake`: 机构上市前合计持股比例 (均值 25.0%)
+7. `col_vc_board_seat`: 董事会派驻席位 (均值 50.0%)
+8. `col_holding_duration`: 投资持有年限 (均值 5.38 年)
+9. `col_earliest_round`: 最早投资轮次
+10. `col_chapter_18c`: 第 18C 章特专科技标识 (6 家)
+
+### 4.3 核心研究假说与计量方程
+- **$H_{4a}$（持有期限与认证深化）**：投资持有年限（`col_holding_duration`）越长、派驻董事席位（`col_vc_board_seat`）的成熟 VC，认证效应主导，首日抑价率显著更低。
+- **$H_{4b}$（18C 特专科技造势）**：在尚未盈利的 18C 硬科技企业中，VC 机构持股比例高与高抑价正相关，体现高不确定性下的投机折价溢价。
+
 $$\begin{aligned}
-\text{FlippingRatio}_i = &\ \alpha_0 + \beta_1 \text{CornerstoneAllocationPct}_i + \beta_2 \text{UnrestrictedFloatPct}_i \\
-&+ \beta_3 \text{SubscriptionRatio}_i + \beta_4 \text{Underpricing}_i + \gamma \mathbf{X}_i + \varepsilon_i
+\text{IR}_i = &\ \alpha + \beta_1 \text{TopTierVC}_i + \beta_2 \text{VCHoldingYears}_i + \beta_3 \text{VCBoardSeat}_i \\
+&+ \beta_4 (\text{TopTierVC}_i \times \text{Chapter18C}_i) + \beta_5 \text{StateGovBacked}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-$$\text{Prob}(\text{FullGreenshoe}_i = 1) = \Phi\left(\theta_0 + \theta_1 \text{CornerstoneAllocationPct}_i + \theta_2 \text{Underpricing}_i + \mathbf{\Gamma} \mathbf{Z}_i\right)$$
+---
+
+## 第五章 承销辛迪加网络膨胀、保荐分肥与酌情奖励费率 (Syndicate Hierarchy, Free-Riding & Incentive Fees)
+
+### 5.1 理论与经验事实
+- **承销辛迪加膨胀（Lowry et al. 2017 Table 3.6）**：美股每单承销商从 1 家膨胀至近 4 家。
+- **香港超级辛迪加现象**：香港大型科技 IPO（如壁仞科技、智谱华章等）通常聘请多达 10~18 家联席账簿管理人（Joint Bookrunners）与全球协调人。
+- **激励费率契约（Incentive Fee）**：港交所招股书披露明确的固定佣金率（如 2.0%）与发行人全权酌情决定的奖励费率（通常 0.5%~1.0%）。
+
+### 5.2 核心研究假说与计量方程
+- **$H_{5a}$（辛迪加信息分散度）**：承销团层级过多产生搭便车与分工混乱，导致初步询价区间相对宽度（`col_range_width`）显著扩大。
+- **$H_{5b}$（奖励费率的激励约束）**：设立较高酌情奖励费率的企业，承销商定价时更倾向于顶格定价（`col_pricing_position == 'At high'`）。
+
+$$\text{RangeWidth}_i = \alpha_0 + \beta_1 \ln(\text{SyndicateSize}_i) + \beta_2 \text{IncentiveFeePct}_i + \beta_3 \text{Proceeds}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
 
 ---
 
-## 三、 课题三：FINI 制度改革、发售机制（Mechanism A/B）与动态信息提取异化
+## 第六章 首日抑价、留在桌面上的财富与真实发行成本 (Underpricing, Money Left on the Table & True Costs)
 
-### 1. 论文工作题目 (Working Title)
-> **"Does Shortened Settlement Erode Bookbuilding Efficiency? Empirical Evidence from the FINI Reform and Offer Mechanisms"**  
-> （结算周期压缩是否损害了簿记建档效率？来自香港 FINI 改革与双轨发售机制的实证证据）
+### 6.1 前景理论与财富流失 (Loughran & Ritter 2002)
+- 发行人在 IPO 中承担两重成本：显性现金上市费用（`col_listing_expenses`）与隐性抑价财富流失（$\text{Money Left} = (P_{\text{close}} - P_{\text{offer}}) \times \text{Shares}$）。
+- **2026 Q1 实证事实**：38 家样本首日累计让渡财富高达 **256.64 亿港元**（单家均值 6.75 亿港元）！
+- **行为金融假说**：当发售价大幅上修时，创始人所持存量股份市值暴增，前景理论的“心理账户（Mental Accounting）”使得创始人对留在桌面上的巨额财富流失产生麻木心理。
 
-### 2. 理论机制与文献脉络
-- **动态信息提取假说 (Benveniste & Spindt 1989; Hanley 1993)**：承销商通过簿记建档收集机构投资者的私有需求信号。机构透露积极估值时，投行仅将发售价上调至区间中点上方一定幅度（留存一部分抑价给机构作为透露真相的报酬）。
-- **制度外生冲击（2023 年 FINI 数字化改革 + 2025 年发售机制双轨制）**：
-  - 资金锁定周期从 T+5 骤降至 T+2，大幅消除了过往由于巨额散户打新资金冻结对银行间拆借利率（HIBOR）造成的冲击；
-  - 允许发行人自主选择传统固定回拨（Mechanism A）或灵活回拨（Mechanism B）。
-- **实证异化之谜**：2026 Q1 数据中，多达 **22 家公司采用固定发售价（Fixed Price）**，放弃了区间询价弹性！这是否意味着在 FINI 快速发售节奏下，投行正在抛弃传统动态信息提取，转向“前置锁定核心锚定订单 + 固定价发售”模式？
-
-### 3. 可检验研究假说
-- **$H_{3a}$（机制选择内生性）**：信息不对称程度较高（18C特专科技、研发强度大、无稳定营收）的企业更倾向于选择灵活发售机制（Mechanism B），以便在机构超购时具有更大的国际配售自由度。
-- **$H_{3b}$（价格修正与抑价敏感度异化）**：在采用价格区间发售的样本中，正向上修（$\Delta P^+$）对抑价率的解释力度在 FINI 实施后显著削弱，反映出国际机构在 T+2 压缩周期内博弈不充分。
-
-### 4. 计量实证模型设计
-$$\begin{aligned}
-\text{Underpricing}_i = &\ \alpha + \beta_1 \Delta P_i^+ + \beta_2 \Delta P_i^- + \beta_3 \text{MechanismB}_i \\
-&+ \beta_4 (\Delta P_i^+ \times \text{MechanismB}_i) + \beta_5 \text{RangeWidth}_i + \gamma \mathbf{X}_i + \varepsilon_i
-\end{aligned}$$
+### 6.2 计量回归方程
+$$\text{MoneyLeft}_i = \alpha_0 + \beta_1 \Delta P_i + \beta_2 \text{FounderRetainedWealthGrowth}_i + \beta_3 \text{PrestigeUnderwriter}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
 
 ---
 
-## 四、 课题四：承销商辛迪加网络膨胀、保荐分肥与询价区间发散度
+## 第七章 生命周期公司治理：WVR 同股不同权、控制权两权分离与董事顾问价值 (Life-Cycle Governance & Dual-Class)
 
-### 1. 论文工作题目 (Working Title)
-> **"Syndicate Bloating and Rent-Seeking in Emerging Equity Markets: Why Do Mega IPOs Hire Dozens of Underwriters?"**  
-> （新兴资本市场中的承销辛迪加膨胀与寻租：为什么大型 IPO 聘请数十家投行？）
+### 7.1 理论框架 (Kim & Michaely 2017; Field, Lowry, & Mkrtchyan 2013)
+- **同股不同权生命周期衰减**：在初创高研发期，WVR 保护创始人战略免受短视干扰；但随着企业成熟，两权分离引发的利益侵占（Tunneling）加剧。
+- **繁忙董事红利**：在 IPO 新企业中，过度任职董事提供关键行业合作与投融资渠道。
 
-### 2. 理论机制与文献脉络
-- **辛迪加信息聚集假说 (Corwin & Schultz 2005)**：多个承销商共同组团能够扩大机构覆盖面，从更多买方基金处收集互补的需求信息，降低定价不确定性。
-- **承销代理冲突与分肥假说 (Khanna, Noe, & Sonti 2008; Lowry et al. 2017 Ch 4)**：
-  - 随着 IPO 市场竞争白热化，发行人通过分派“联席账簿管理人（JBR）”、“联席全球协调人（JGC）”等头衔作为商业利益交换；
-  - 承销团层级过多导致“搭便车（Free-riding）”效应，没有任何一家投行有动力深入开展尽职调查与投资者需求摸底。
-
-### 3. 可检验研究假说
-- **$H_{4a}$（利益分肥假说）**：主承销商与账簿管理人数量（`Joint Bookrunners Count`）越多，询价区间相对宽度（`col_range_width`）不仅没有收窄，反而显著放大（投行估值模型分歧无法统一）。
-- **$H_{4b}$（酌情奖励与抑价惩罚）**：发行人设立的酌情奖励费率（Incentive Fee %）能够作为委托-代理治理工具，激励主承销商收紧区间宽度，降低极端破发概率。
+### 7.2 港股特色与假说
+- **$H_{7a}$（两权分离两重性）**：控制人投票权与经济所有权的分离差距（`col_controller_voting - col_controller_economic`）越大，发售定价折价幅度显著更高。
 
 ---
 
-## 五、 课题五：生命周期公司治理：创始人超级投票权（WVR）与留在桌面上的财富
+## 第八章 全景实证计量回归方程库与 138 列主表变量映射字典
 
-### 1. 论文工作题目 (Working Title)
-> **"Dual-Class Structures, Controller Wedge, and Money Left on the Table: A Life-Cycle Corporate Governance Perspective"**  
-> （双重股权结构、控制权两权分离与留在桌面上的财富：基于生命周期公司治理视角）
+本章汇集全书五大核心实证模型的被解释变量、关键自变量、控制变量与主表 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及清洗文件 `out/HKIPO-MB2026Q1_clean.csv` 的全量映射：
 
-### 2. 理论机制与文献脉络
-- **生命周期治理理论 (Kim & Michaely 2017; Field & Lowry 2017)**：
-  - 创业初期，创始人超级投票权（WVR / Chapter 8A）能够保护企业家长远愿景，免受二级市场短期业绩压力与敌意收购威胁；
-  - 控制人投票权与现金流权的“两权分离度（Wedge）”越大，控制人侵害外部中小股东的隧道挖掘（Tunneling）代理风险越高。
-- **财富流失度量 (Loughran & Ritter 2002)**：留在桌面上的财富（$\text{Money Left on the Table} = (P_{\text{close}} - P_{\text{offer}}) \times \text{Shares}$）度量了发行人在上市首日直接拱手让渡给一级市场认购者的账面财富总额。控制权极度集中的创始人是否更愿意“让利”以换取友好机构持股？
-
-### 3. 可检验研究假说
-- **$H_{5a}$（两权分离与折价发售）**：控制人两权分离度（`col_controller_voting - col_controller_economic`）越大的公司，留在桌面上的财富金额（`col_money_left`）显著更高，反映创始人通过低定价绑定外部机构投资者以稳固控制地位。
-- **$H_{5b}$（高管二合一壕沟效应）**：董事长与 CEO 二合一（CEO Duality）与首日抑价率显著正相关，但在非科技制造企业中会引发长期经营业绩更大幅度的下滑。
-
----
-
-## 六、 计量模型核心变量与 138 列主表映射字典
-
-下表梳理了上述五大课题涉及的所有因变量、自变量与控制变量在主表 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的精确列位：
-
-| 变量角色 | 变量名称 | 代码本表头 (Standardized Header) | 主表列号 | 数据层级与格式 |
-|---|---|---|:---:|:---:|
-| **因变量 1** | 首日抑价率 (Initial Return) | `First-day return / Underpricing (%)` | **Col 128** | 深蓝 / `0.00%` |
-| **因变量 2** | 首日翻转抛售率 (Flipping) | `First-day flipping ratio (%)` | **Col 134** | 深蓝 / `0.00%` |
-| **因变量 3** | 留在桌面上的财富 (Money Left) | `Money left on the table (HK$)` | **Col 129** | 深蓝 / `#,##0.00` |
-| **因变量 4** | 绿鞋实际行使比例 | `Greenshoe exercise rate (%)` | **Col 115** | 深蓝 / `0.00%` |
-| **自变量 1** | 定价偏离区间中点 ($\Delta P$) | `Filing price revision (%)` | **Col 22** | 浅蓝 / `0.00%` |
-| **自变量 2** | 询价区间相对宽度 | `Filing range width (%)` | **Col 23** | 浅蓝 / `0.00%` |
-| **自变量 3** | 定价落点分类体系 | `Pricing position in filing range` | **Col 24** | 浅蓝 / `@` |
-| **自变量 4** | VC 支持标识 | `Pre-IPO VC backing (1=yes; 0=no)` | **Col 54** | 浅蓝 / `0` |
-| **自变量 5** | 顶级投资机构认证 | `Top-tier VC/PE backing (1=yes; 0=no)` | **Col 58** | 浅蓝 / `0` |
-| **自变量 6** | Pre-IPO 机构持股比例 | `Pre-IPO institutional shareholding (%)` | **Col 60** | 浅蓝 / `0.00%` |
-| **自变量 7** | 投资机构派驻董事席位 | `Pre-IPO investor board seat (1=yes; 0=no)` | **Col 61** | 浅蓝 / `0` |
-| **自变量 8** | Pre-IPO 最早投资持有年限 | `Pre-IPO holding duration (years)` | **Col 63** | 浅蓝 / `0.00` |
-| **自变量 9** | 基石投资者获配比例 | `Final cornerstone allocation (% of base offer)` | **Col 103** | 深蓝 / `0.00%` |
-| **自变量 10**| 发售与回拨机制 (A/B) | `Offer mechanism` | **Col 136** | 深蓝 / `@` |
-| **控制变量 1**| 公司成立至上市年限 | `Firm age at IPO (years)` | **Col 82** | 浅蓝 / `0.00` |
-| **控制变量 2**| 第 18C 章特专科技标识 | `Chapter 18C flag` | **Col 78** | 深蓝 / `0` |
-| **控制变量 3**| 第 18A 章生物科技标识 | `Chapter 18A flag` | **Col 77** | 深蓝 / `0` |
-| **控制变量 4**| 控制人经济利益 (持股%) | `Controller economic interest at listing (%)` | **Col 68** | 浅蓝 / `0.00%` |
-| **控制变量 5**| 控制人投票权比例 (%) | `Controller voting rights at listing (%)` | **Col 69** | 浅蓝 / `0.00%` |
-| **控制变量 6**| 公开发售认购超额倍数 | `Subscription Ratio (times)` | **Col 105** | 深蓝 / `#,##0.00` |
-| **控制变量 7**| 招股前20日恒指累计收益 | `HSI return over 20 trading days before prospectus (%)` | **Col 123** | 深蓝 / `0.00%` |
-| **控制变量 8**| 招股日前1个月 HIBOR 利率 | `1-month HIBOR before prospectus (%)` | **Col 125** | 深蓝 / `0.00%` |
-| **标识字段** | 上市时股份代号 | `Stock Code` | **Col 2** | 浅绿 / `@` |
-| **标识字段** | 公司中文名称 (末列) | `Company Chinese Name` | **Col 138** | 浅蓝 / `@` |
+| 模块类别 | 变量英文字段名 (Standard Header) | 主表列位 | 数据类型 | 计量角色 | 对应理论文献与模型 |
+|---|---|:---:|:---:|:---:|---|
+| **定价被解释** | `First-day return / Underpricing (%)` | **Col 128** | `0.00%` | 因变量 (Y) | Rock (1986); Ritter (1984) |
+| **流动性被解释** | `First-day flipping ratio (%)` | **Col 134** | `0.00%` | 因变量 (Y) | Aggarwal (2003) 机构翻转 |
+| **财富流失被解释** | `Money left on the table (HK$)` | **Col 129** | `#,##0.00` | 因变量 (Y) | Loughran & Ritter (2002) |
+| **价格支持被解释** | `Greenshoe exercise rate (%)` | **Col 115** | `0.00%` | 因变量 (Y) | Ellis, Michaely, & O'Hara (2000) |
+| **信息提取核心** | `Filing price revision (%)` | **Col 22** | `0.00%` | 自变量 (X) | Hanley (1993); Benveniste & Spindt (1989) |
+| **事前不确定性** | `Filing range width (%)` | **Col 23** | `0.00%` | 自变量 (X) | Beatty & Ritter (1986) |
+| **定价落点分类** | `Pricing position in filing range` | **Col 24** | `@` | 自变量 (X) | Lowry et al. (2017) Table 3.3 |
+| **VC 认证核心** | `Top-tier VC/PE backing (1=yes; 0=no)` | **Col 58** | `0` | 自变量 (X) | Megginson & Weiss (1991) |
+| **VC 治理核心** | `Pre-IPO investor board seat (1=yes; 0=no)` | **Col 61** | `0` | 自变量 (X) | Field, Lowry, & Mkrtchyan (2013) |
+| **VC 持有期限** | `Pre-IPO holding duration (years)` | **Col 63** | `0.00` | 自变量 (X) | Gompers (1996) 基金造势检验 |
+| **基石配售比例** | `Final cornerstone allocation (% of base offer)` | **Col 103** | `0.00%` | 自变量 (X) | 香港特有制度：流通盘锁定 |
+| **自由流通盘占比** | `Unrestricted public shareholding at listing (%)`| **Col 120** | `0.00%` | 自变量 (X) | 筹码紧俏挤牌度量 |
+| **发售机制分类** | `Offer mechanism` | **Col 136** | `@` | 自变量 (X) | FINI 改革：Mechanism A vs B |
+| **生命周期控制** | `Firm age at IPO (years)` | **Col 82** | `0.00` | 控制变量 | Lowry et al. (2017) Table 3.4 |
+| **特专科技控制** | `Chapter 18C flag` | **Col 78** | `0` | 控制变量 | 港交所第 18C 章硬科技通道 |
+| **生物科技控制** | `Chapter 18A flag` | **Col 77** | `0` | 控制变量 | 港交所第 18A 章未盈利生物科技 |
+| **股权两权分离** | `Controller economic interest at listing (%)` | **Col 68** | `0.00%` | 控制变量 | 现金流权 |
+| **投票权两权分离** | `Controller voting rights at listing (%)` | **Col 69** | `0.00%` | 控制变量 | 控制人投票权 |
+| **散户情绪控制** | `Subscription Ratio (times)` | **Col 105** | `#,##0.00` | 控制变量 | 公开发售散户超购倍数 |
+| **市场情绪基准** | `HSI return over 20 trading days before prospectus (%)` | **Col 123** | `0.00%` | 控制变量 | 招股前公开市场收益率 (Lowry & Schwert 2004) |
+| **流动性宏观控制** | `1-month HIBOR before prospectus (%)` | **Col 125** | `0.00%` | 控制变量 | 香港银行间流动性基准 |
+| **末列强确证** | `Company Chinese Name` | **Col 138** | `@` | 标识字段 | 样本公司中文名称法定末列 |
 
 ---
 
-## 七、 论文推进路线图与工作流规范
-
-```
-[阶段一：选题论证与开题答辩]
-  - 从上述五大课题中选取 1~2 个核心题目（推荐：课题一 "18C 特专科技 VC 异质性" 或 课题二 "基石锁定与翻转机制"）
-  - 输出 3-5 页开题 Proposal，明确文献定位（Lowry et al. 2017 + Aggarwal 2003 / Gompers 1996）
-                            │
-                            ▼
-[阶段二：基准实证回归 (Baseline Regressions)]
-  - 导入 out/HKIPO-MB2026Q1_clean.csv 至 Stata / Python (statsmodels)
-  - 跑 OLS 核心方程，汇报描述性统计表（Table 1）与基准相关系数矩阵（Table 2）
-  - 生成主回归回归表（Table 3: 逐步加入企业基本面、宏观情绪与行业固定效应）
-                            │
-                            ▼
-[阶段三：内生性处理与稳健性检验 (Identification & Robustness)]
-  - 2SLS 工具变量法（解决 VC 投资与企业质量的反向因果，参考 Lowry & Shu 2002）
-  - 倾向得分匹配（PSM：匹配相似规模与行业但无 VC 支持的企业）
-  - 替换被解释变量（例如使用首周/首月超额收益 CAR 替代首日抑价率）
-                            │
-                            ▼
-[阶段四：样本跨期扩充与季度追踪]
-  - 依托 prospectus_pipeline 自动化流水线，顺延跑通 2026 Q2 / Q3 季度新上市公司
-  - 保持 138 维指标口径绝对连续可比，将样本量由 38 家稳步扩充至 100+ 家
-```
+*本全景综述与研究总纲由 HK IPO Prospectus Pipeline 科研引擎持续驱动，作为论文写作、学术汇报与实证回归的唯一标准指南。*
