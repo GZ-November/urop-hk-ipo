@@ -2,7 +2,7 @@
   "workbook": "HKIPO-MB2026Q1.xlsx",
   "sheet": "NLR",
   "header_row": 1,
-  "field_count": 60,
+  "field_count": 70,
   "note": "Prospectus-derived fields. Columns resolved by normalized header at runtime. Layout: green A:K (HKEx) / blue (prospectus) / dark-blue FF00B0F0 (must search elsewhere); Chinese name stays the last column.",
   "groups": [
     "business",
@@ -808,6 +808,158 @@
       "source": "prospectus",
       "missing": "NaN",
       "hint": "是否引入 Pre-IPO VC/PE 投资者：1=有，0=无。看 HISTORY AND DEVELOPMENT — Pre-IPO Investments 与 SUBSTANTIAL SHAREHOLDERS 名单；只要有专业投资机构（VC/PE/产业基金）在上市前入股即 1。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_vc_backed",
+      "header": "Pre-IPO VC backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "早期/成长期风险投资（VC）机构入股标识（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_pe_backed",
+      "header": "Pre-IPO PE backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "中晚期私募股权（PE）或并购基金入股标识（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_cvc_backed",
+      "header": "Pre-IPO CVC backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "产业资本/企业风投（CVC）入股标识（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_gov_backed",
+      "header": "Pre-IPO State/Gov backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "国资/政府产业引导基金入股标识（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_top_tier_vc",
+      "header": "Top-tier VC/PE backing (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "顶级知名投资机构认证标识（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_pre_ipo_investors",
+      "header": "Key Pre-IPO investors",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "上市前主要机构投资者规范化名称名单（分号分隔）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_vc_pe_stake",
+      "header": "Pre-IPO institutional shareholding (%)",
+      "group": "ownership",
+      "kind": "number",
+      "unit": "decimal",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "上市前机构投资者合计持股比例（小数或百分比）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments",
+        "Substantial Shareholders"
+      ]
+    },
+    {
+      "key": "col_vc_board_seat",
+      "header": "Pre-IPO investor board seat (1=yes; 0=no)",
+      "group": "ownership",
+      "kind": "integer",
+      "unit": "flag",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "机构投资者是否在董事会派驻非执行董事或观察员席位（1=是，0=否）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Non-executive Director",
+        "Directors and Senior Management"
+      ]
+    },
+    {
+      "key": "col_earliest_round",
+      "header": "Earliest Pre-IPO investment round",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "text",
+      "source": "prospectus",
+      "missing": "NA",
+      "hint": "最早 Pre-IPO 投资轮次（如 Angel, Series Pre-A, Series A, Series B, Pre-IPO, None）。",
+      "section_keywords": [
+        "Pre-IPO Investment",
+        "Pre-IPO Investors",
+        "Pre-IPO Investments"
+      ]
+    },
+    {
+      "key": "col_holding_duration",
+      "header": "Pre-IPO holding duration (years)",
+      "group": "ownership",
+      "kind": "number",
+      "unit": "years",
+      "source": "prospectus",
+      "missing": "NaN",
+      "hint": "最早 Pre-IPO 协议签订日至招股书日期的持有年限（年）。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",

@@ -86,6 +86,18 @@ EXTERNAL_VARS = {
     "CL": ("Earliest cornerstone unlock date", "基石投资者最早法定解禁日（上市日起满6个月）", "date"),
 }
 
+# 学术文献核心衍生变量 (Lowry, Michaely, and Volkova 2017)
+ACADEMIC_VARS = {
+    "Filing price revision (%)": ("Filing price revision (%)", "发售定价偏离询价区间中点幅度（Hanley 1993 动态信息提取，固定价格发售为 0.00%）", "numeric", "浅蓝 (招股书全量披露)", "pricing_dynamics"),
+    "Filing range width (%)": ("Filing range width (%)", "询价区间相对宽度（Beatty & Ritter 1986 事前估值不确定性，固定价格发售为 0.00%）", "numeric", "浅蓝 (招股书全量披露)", "pricing_dynamics"),
+    "Pricing position in filing range": ("Pricing position in filing range", "定价落点分类体系（Fixed price / Above range / At high / Midpoint / Within range / At low / Below range）", "categorical", "浅蓝 (招股书全量披露)", "pricing_dynamics"),
+    "Firm age at IPO (years)": ("Firm age at IPO (years)", "公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量）", "numeric", "浅蓝 (招股书全量披露)", "firm_profile"),
+    "Greenshoe exercise rate (%)": ("Greenshoe exercise rate (%)", "绿鞋实际行使比例（Ellis et al. 2000 超额配售执行度与价格支持）", "numeric", "深蓝 (配发结果与确定性派生)", "greenshoe"),
+    "First-day return / Underpricing (%)": ("First-day return / Underpricing (%)", "上市首日抑价率 / 初始收益率（Rock 1986 / Ritter 1984 核心被解释变量）", "numeric", "深蓝 (配发及外部数据)", "secondary_market"),
+    "Money left on the table (HK$)": ("Money left on the table (HK$)", "留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标）", "numeric", "深蓝 (配发及外部数据)", "secondary_market"),
+    "First-day flipping ratio (%)": ("First-day flipping ratio (%)", "首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说）", "numeric", "深蓝 (配发及外部数据)", "secondary_market"),
+}
+
 
 def parse_numeric(v: Any) -> float | None:
     if v in (None, "", "NA", "NaN"):
@@ -110,6 +122,10 @@ def clean_header_name(s: str) -> str:
     return " ".join(str(s or "").replace("\n", " ").split()).strip()
 
 
+def norm_header(v: Any) -> str:
+    return " ".join(str(v or "").replace("\n", " ").split()).strip().lower()
+
+
 def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     """完整扫描工作簿生成 120 维变量字典与样本统计量。"""
     if cfg is None:
@@ -119,17 +135,25 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     ws = wb[cfg["sheet"]]
 
     # 加载招股书 schema 与配发 schema
-    p_schema = {}
+    p_schema_by_header = {}
+    p_schema_by_col = {}
     p_schema_path = ROOT / "schema" / "fields.json"
     if p_schema_path.exists():
         p_data = json.loads(p_schema_path.read_text(encoding="utf-8"))
-        p_schema = {f["col"]: f for f in p_data.get("fields", [])}
+        p_schema_by_col = {f.get("col"): f for f in p_data.get("fields", []) if f.get("col")}
+        p_schema_by_header = {norm_header(f["header"]): f for f in p_data.get("fields", [])}
 
-    a_schema = {}
+    a_schema_by_header = {}
+    a_schema_by_col = {}
     a_schema_path = ROOT / "schema" / "allot_fields.json"
     if a_schema_path.exists():
         a_data = json.loads(a_schema_path.read_text(encoding="utf-8"))
-        a_schema = {f["col"]: f for f in a_data.get("fields", [])}
+        a_schema_by_col = {f.get("col"): f for f in a_data.get("fields", []) if f.get("col")}
+        a_schema_by_header = {norm_header(f["header"]): f for f in a_data.get("fields", [])}
+
+    green_by_header = {norm_header(val[0]): val for val in HKEX_GREEN_VARS.values()}
+    ext_by_header = {norm_header(val[0]): val for val in EXTERNAL_VARS.values()}
+    academic_by_header = {norm_header(k): v for k, v in ACADEMIC_VARS.items()}
 
     n_companies = 38
     start_row = cfg["data_start_row"]
@@ -150,6 +174,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         col_letter = get_column_letter(c)
         raw_header = str(ws.cell(1, c).value or "").strip()
         clean_header = clean_header_name(raw_header)
+        norm_h = norm_header(raw_header)
         col_vals = [matrix[r_idx][c - 1] for r_idx in range(n_companies)]
 
         # 确定三色来源与分组
@@ -158,20 +183,47 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         group_name = "external"
         chinese_desc = clean_header
 
-        if col_letter in HKEX_GREEN_VARS:
+        if norm_h in academic_by_header:
+            item = academic_by_header[norm_h]
+            clean_header, chinese_desc, _, tier, group_name = item
+            source_desc = f"实证金融模型衍生指标（Group: {group_name}，Lowry et al. 2017 规范）"
+        elif norm_h in green_by_header:
+            tier = "浅绿 (港交所官方报告)"
+            item = green_by_header[norm_h]
+            clean_header, chinese_desc, _ = item
+            source_desc = "香港交易所 (HKEX) 新上市报告 (New Listing Report) 官方表格"
+            group_name = "hkex_nlr"
+        elif norm_h in p_schema_by_header:
+            tier = "浅蓝 (招股书全量披露)"
+            meta = p_schema_by_header[norm_h]
+            source_desc = f"招股书法定披露章节（Group: {meta.get('group', 'prospectus')}）"
+            group_name = meta.get("group", "prospectus")
+            chinese_desc = meta.get("description", meta.get("hint", clean_header))
+        elif norm_h in a_schema_by_header:
+            tier = "深蓝 (配发结果与确定性派生)"
+            meta = a_schema_by_header[norm_h]
+            source_desc = f"配发结果公告 (Allotment Results) / 确定性派生"
+            group_name = meta.get("group", "allotment")
+            chinese_desc = meta.get("description", clean_header)
+        elif norm_h in ext_by_header:
+            item = ext_by_header[norm_h]
+            clean_header, chinese_desc, _ = item
+            source_desc = "外部市场数据 (Hang Seng / HKMA / 港交所规则)"
+            group_name = "external_tools"
+        elif col_letter in HKEX_GREEN_VARS:
             tier = "浅绿 (港交所官方报告)"
             clean_header, chinese_desc, _ = HKEX_GREEN_VARS[col_letter]
             source_desc = "香港交易所 (HKEX) 新上市报告 (New Listing Report) 官方表格"
             group_name = "hkex_nlr"
-        elif col_letter in p_schema:
+        elif col_letter in p_schema_by_col:
             tier = "浅蓝 (招股书全量披露)"
-            meta = p_schema[col_letter]
+            meta = p_schema_by_col[col_letter]
             source_desc = f"招股书法定披露章节（Group: {meta.get('group', 'prospectus')}）"
             group_name = meta.get("group", "prospectus")
-            chinese_desc = meta.get("description", clean_header)
-        elif col_letter in a_schema:
+            chinese_desc = meta.get("description", meta.get("hint", clean_header))
+        elif col_letter in a_schema_by_col:
             tier = "深蓝 (配发结果与确定性派生)"
-            meta = a_schema[col_letter]
+            meta = a_schema_by_col[col_letter]
             source_desc = f"配发结果公告 (Allotment Results) / 确定性派生"
             group_name = meta.get("group", "allotment")
             chinese_desc = meta.get("description", clean_header)
@@ -335,11 +387,11 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
         "\n## 一、变量层级与来源体系导览",
         "\n| 数据层级 | 覆盖范围 | 列数 | 核心特征与学术用途 |",
         "|---|---|---|---|",
-        "| **浅绿 (HKEX 官方来源)** | 列 A–K | 11 列 | 港交所新上市报告官方确证指标：上市编号、代码、保荐人、会计师、公开发售及国际发售募资额、最终定价。 |",
-        "| **浅蓝 (招股书全量来源)** | 列 L–AY, DP, CJ, BA–CI | 60 列 | 发行人招股书披露：资本结构、发售价区间、募集资金用途拆解、近三年资产负债表与利润表核心财务指标、行业地位。 |",
-        "| **深蓝 (配发及外部数据)** | 列 CK, CM–DC, DD–DO, DF/DG | 49 列 | 发行结果与市场宏观：基石投资者最终获配及禁售期、回拨机制、超购倍数、自由流通量、首日二级市场价格、20日恒指收益率、HIBOR、总结余、监管分类。 |",
+        f"| **浅绿 (HKEX 官方来源)** | 列 A–K | {summary['tiers']['green_hkex']} 列 | 港交所新上市报告官方确证指标：上市编号、代码、保荐人、会计师、公开发售及国际发售募资额、最终定价。 |",
+        f"| **浅蓝 (招股书全量来源)** | 招股书法定披露与Pre-IPO结构 | {summary['tiers']['blue_prospectus']} 列 | 发行人招股书披露：资本结构、发售价区间、Pre-IPO VC/PE 投资背景与治理席位、近三年财务与业务指标。 |",
+        f"| **深蓝 (配发及外部数据)** | 配发公告与外部市场数据 | {summary['tiers']['darkblue_external']} 列 | 发行结果与市场宏观：基石投资者最终获配及禁售期、回拨机制、超购倍数、自由流通量、首日二级市场表现、恒指收益率、HIBOR、总结余、监管分类。 |",
         "\n---",
-        "\n## 二、120 维全量变量字典详细清单 (Codebook)",
+        f"\n## 二、{summary['variable_count']} 维全量变量字典详细清单 (Codebook)",
         "\n| 列 | 变量英文名 (Variable Header) | 中文口径释义 | 数据层级 | 数据类型 | 有效样本 (填报率) | 描述性统计 / 分布特征 |",
         "|---|---|---|---|---|---|---|"
     ]

@@ -42,8 +42,67 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None) -> d
     wb = openpyxl.load_workbook(book_path, data_only=True)
     ws = wb[cfg["sheet"]]
 
-    def cell(r: int, col_str: str) -> Any:
-        return parse_val(ws.cell(r, column_index_from_string(col_str)).value)
+    # Map normalized header names to column index
+    header_to_col: dict[str, int] = {}
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(1, c).value
+        if v:
+            h = " ".join(str(v).replace("\n", " ").split()).strip().lower()
+            header_to_col[h] = c
+
+    def find_col(*patterns: str, fallback_letter: str | None = None) -> int:
+        for p in patterns:
+            p_low = p.strip().lower()
+            for h, c in header_to_col.items():
+                if p_low in h:
+                    return c
+        if fallback_letter:
+            return column_index_from_string(fallback_letter)
+        raise KeyError(f"Header not found: {patterns}")
+
+    col_map = {
+        "B": find_col("stock code", fallback_letter="B"),
+        "C": find_col("company name at time of listing", fallback_letter="C"),
+        "E": find_col("date of listing", fallback_letter="E"),
+        "L": find_col("total (without option)", fallback_letter="L"),
+        "M": find_col("global offering (without option)", fallback_letter="M"),
+        "T": find_col("maximum offer price", fallback_letter="T"),
+        "U": find_col("minimum offer price", fallback_letter="U"),
+        "AO": find_col("underwriting commission (% of fund raised hk (a)", fallback_letter="AO"),
+        "CK": find_col("final cornerstone allocation (% of base offer)", fallback_letter="CK"),
+        "CL": find_col("earliest cornerstone unlock date", fallback_letter="CL"),
+        "CM": find_col("subscription ratio (times)", fallback_letter="CM"),
+        "CS": find_col("final global offering shares (before over-allotment)", fallback_letter="CS"),
+        "CT": find_col("final public offer shares", fallback_letter="CT"),
+        "CU": find_col("final placing shares", fallback_letter="CU"),
+        "CV": find_col("over-allotment shares actually issued", fallback_letter="CV"),
+        "CW": find_col("actual clawback / reallocation description", fallback_letter="CW"),
+        "CX": find_col("net ipo proceeds to issuer (hk$)", fallback_letter="CX"),
+        "CY": find_col("public shareholding at listing (%)", fallback_letter="CY"),
+        "DA": find_col("unrestricted public shareholding at listing (%)", fallback_letter="DA"),
+        "DC": find_col("free float denominator shares", fallback_letter="DC"),
+        "BL": find_col("chapter 18a flag", fallback_letter="BL"),
+        "BM": find_col("chapter 18c flag", fallback_letter="BM"),
+        "DH": find_col("first trading day closing price (hk$)", fallback_letter="DH"),
+        "DI": find_col("first trading day opening price (hk$)", fallback_letter="DI"),
+        "DJ": find_col("first trading day high (hk$)", fallback_letter="DJ"),
+        "DK": find_col("first trading day low (hk$)", fallback_letter="DK"),
+        "DL": find_col("first trading day volume (shares)", fallback_letter="DL"),
+        "DM": find_col("first trading day turnover (hk$)", fallback_letter="DM"),
+        "DN": find_col("offer mechanism", fallback_letter="DN"),
+        "CF": find_col("gross profit in year-1", fallback_letter="CF"),
+        "CG": find_col("capital expenditure in year-1", fallback_letter="CG"),
+        "BE": find_col("interest-bearing debt at year-1 end", fallback_letter="BE"),
+        "AH": find_col("net sales in year-1", fallback_letter="AH"),
+        "AT": find_col("year-1 financial period end", fallback_letter="AT"),
+        "V": find_col("currency in financial information", fallback_letter="V"),
+        "Y": find_col("total assets in year-1", fallback_letter="Y"),
+        "BP": find_col("incorporation date", fallback_letter="BP"),
+    }
+
+    def cell(r: int, col_key: str) -> Any:
+        idx = col_map.get(col_key, column_index_from_string(col_key))
+        return parse_val(ws.cell(r, idx).value)
 
     results = []
     total_anomalies = 0

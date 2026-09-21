@@ -45,8 +45,48 @@ def generate_report(cfg: dict | None = None) -> dict:
     wb = openpyxl.load_workbook(book_path, data_only=True)
     ws = wb[cfg["sheet"]]
 
-    def cell(r: int, col_str: str) -> Any:
-        v = ws.cell(r, column_index_from_string(col_str)).value
+    # Map normalized header names to column index
+    header_to_col: dict[str, int] = {}
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(1, c).value
+        if v:
+            h = " ".join(str(v).replace("\n", " ").split()).strip().lower()
+            header_to_col[h] = c
+
+    def find_col(*patterns: str, fallback_letter: str | None = None) -> int:
+        for p in patterns:
+            p_low = p.strip().lower()
+            for h, c in header_to_col.items():
+                if p_low in h:
+                    return c
+        if fallback_letter:
+            return column_index_from_string(fallback_letter)
+        raise KeyError(f"Header not found: {patterns}")
+
+    col_map = {
+        "B": find_col("stock code", fallback_letter="B"),
+        "C": find_col("company name at time of listing", fallback_letter="C"),
+        "DP": find_col("company chinese name", fallback_letter="DP"),
+        "T": find_col("maximum offer price", fallback_letter="T"),
+        "U": find_col("minimum offer price", fallback_letter="U"),
+        "L": find_col("total (without option)", fallback_letter="L"),
+        "CS": find_col("final global offering shares (before over-allotment)", fallback_letter="CS"),
+        "CX": find_col("net ipo proceeds to issuer (hk$)", fallback_letter="CX"),
+        "CK": find_col("final cornerstone allocation (% of base offer)", fallback_letter="CK"),
+        "CM": find_col("subscription ratio (times)", fallback_letter="CM"),
+        "DH": find_col("first trading day closing price (hk$)", fallback_letter="DH"),
+        "DM": find_col("first trading day turnover (hk$)", fallback_letter="DM"),
+        "DN": find_col("offer mechanism", fallback_letter="DN"),
+        "BN": find_col("industry classification code", fallback_letter="BN"),
+        "BL": find_col("chapter 18a flag", fallback_letter="BL"),
+        "BM": find_col("chapter 18c flag", fallback_letter="BM"),
+        "BK": find_col("wvr flag", fallback_letter="BK"),
+        "BJ": find_col("a+h issuer flag", fallback_letter="BJ"),
+    }
+
+    def cell(r: int, col_key: str) -> Any:
+        idx = col_map.get(col_key, column_index_from_string(col_key))
+        v = ws.cell(r, idx).value
         if v in (None, "", "NA", "NaN"):
             return None
         return v
