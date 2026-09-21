@@ -113,7 +113,8 @@ def cmd_prepare(cfg, args, companies):
         found = [f for f in found if f["code"] in args.only]
     if args.limit:
         found = found[: args.limit]
-    return prepare_all(cfg, found)
+    with_topics = not getattr(args, "no_topics", False)
+    return prepare_all(cfg, found, with_topics=with_topics)
 
 
 def cmd_allot(cfg, args, companies):
@@ -265,15 +266,30 @@ def cmd_external(cfg, args, companies):
             print(f"\n--- 执行外部工具: {name} ---")
             cmd = [sys.executable, str(script)]
             subprocess.run(cmd, cwd=WS, check=False)
-    return 0
+def cmd_merge_topics(cfg, args, companies):
+    """将 4 个主题分片合并为完整招股书抽取 JSON。"""
+    from merge_topics import merge_topics_for_code
+    codes = [c["code"] for c in companies] if companies else (args.only or [])
+    if not codes:
+        print("请指定要合并的公司代码，例如 --only 6082.HK")
+        return 1
+    success = 0
+    for code in codes:
+        dest = merge_topics_for_code(cfg, code)
+        if dest:
+            success += 1
+    print(f"\n主题分片合并完成：{success}/{len(codes)} 家")
+    return 0 if success == len(codes) else 1
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="招股书 / 配发公告自动采集流水线")
     ap.add_argument("stage", choices=["find", "download", "prepare", "allot", "greenshoe", "cornerstone",
                                      "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
-                                     "report", "codebook", "export", "status", "external", "search", "state", "all"])
+                                     "report", "codebook", "export", "status", "external", "search", "state",
+                                     "merge_topics", "all"])
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")
+    ap.add_argument("--no-topics", action="store_true", help="跳过生成 4 个主题分片包")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", nargs="*", default=None, help="只处理这些股票代码，如 6082.HK")
     ap.add_argument("--target", choices=["prospectus", "allot", "all"], default="prospectus",

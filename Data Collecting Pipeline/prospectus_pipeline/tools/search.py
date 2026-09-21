@@ -397,6 +397,48 @@ def cmd_bundle(args):
             break
 
 
+def cmd_table(args):
+    """打印预解析结构化表格 (Markdown 格式)。"""
+    digits = "".join(c for c in str(args.code) if c.isdigit())
+    safe_name = f"HKIPO-MB{int(digits):04d}" if digits else args.code
+    tables_dir = ROOT / "data" / "tables" / safe_name
+
+    alias = {
+        "sharecap": "share_capital",
+        "shares": "share_capital",
+        "cornerstone": "cornerstone",
+        "cj": "cornerstone",
+        "underwriting": "underwriting",
+        "commissions": "underwriting",
+        "financials": "financials",
+        "fin": "financials",
+    }
+
+    if not tables_dir.exists():
+        sys.exit(f"未找到预解析表格目录：{tables_dir}（请先运行 run.py prepare）")
+
+    want = (args.name or "").lower().strip()
+    if want in alias:
+        want = alias[want]
+
+    if not want:
+        md_files = sorted(tables_dir.glob("*.md"))
+        if not md_files:
+            print(f"[{args.code}] 暂无可用的结构化表格")
+            return
+        print(f"# {args.code} 可用的结构化表格：")
+        for f in md_files:
+            print(f"  - {f.stem}")
+        return
+
+    target_file = tables_dir / f"{want}.md"
+    if not target_file.exists():
+        candidates = [f.stem for f in tables_dir.glob("*.md")]
+        sys.exit(f"未找到表格 '{want}'。可用表格: {candidates}")
+
+    print(target_file.read_text(encoding="utf-8"))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="招股书全文检索工具")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -413,6 +455,10 @@ def main() -> int:
     p.set_defaults(fn=cmd_pages)
     p = sub.add_parser("periods"); p.add_argument("code"); p.set_defaults(fn=cmd_periods)
     p = sub.add_parser("sharecap"); p.add_argument("code"); p.set_defaults(fn=cmd_sharecap)
+    p = sub.add_parser("table")
+    p.add_argument("code")
+    p.add_argument("name", nargs="?", default="")
+    p.set_defaults(fn=cmd_table)
     p = sub.add_parser("bundle")
     p.add_argument("code")
     p.add_argument("--fields", default=",".join(FIELD_ANCHORS))

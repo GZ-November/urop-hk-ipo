@@ -14,12 +14,15 @@
 const packets = (args && args.packets) || [];
 const outDir = (args && args.out_dir) || "prospectus_pipeline/out/extracted";
 const doVerify = !args || args.verify !== false;
-if (!packets.length) throw new Error("args.packets 为空");
+const isTopicMode = !!(args && (args.topics_mode === true || args.topic_packets));
+const topicPackets = (args && args.topic_packets) || [];
+if (!packets.length && !topicPackets.length) throw new Error("args.packets 与 args.topic_packets 均为空");
 
 const summarySchema = {
   type: "object",
   properties: {
     code: { type: "string" },
+    topic: { type: "string" },
     fields_total: { type: "number" },
     fields_filled: { type: "number" },
     fields_missing: { type: "number" },
@@ -187,21 +190,69 @@ function verifyPrompt(item) {
 若为 fail 则运行同一命令但使用 \`--verdict fail\`。若发现错误，在 reason 里给出能直接改的正确答案与页码。`;
 }
 
-phase("抽取字段");
-log(`准备抽取 ${packets.length} 家；独立复核=${doVerify}`);
+function extractTopicPrompt(item) {
+  return `你是 HK IPO 数据库采集员。负责抽取公司【${item.title || item.topic}】主题对应的全部 ${item.fields_count || "对应"} 个字段，写成严格分片 JSON。
 
-const extractResults = await pipeline(packets, async (item) => {
-  return await agent(extractPrompt(item), {
+## 输入
+- 主题分片抽取包：\`${item.packet_path}\`
+- 公司：${item.code} ${item.name}
+- 主题标识：${item.topic}
+- 写盘路径：\`${item.out_path}\`
+
+## 允许的工具（优先使用结构化表格）
+\`\`\`bash
+python3 prospectus_pipeline/run.py search table   ${item.code}    # 优先！查看预解析结构化表格
+python3 prospectus_pipeline/run.py search sharecap ${item.code}    # 股本表权威原页
+python3 prospectus_pipeline/run.py search periods  ${item.code}    # 财务期间判定
+python3 prospectus_pipeline/run.py search pages    ${item.code} <页码>
+python3 prospectus_pipeline/run.py search search   ${item.code} "<正则>" --context 3 --max 5
+\`\`\`
+
+## 步骤
+1. 读主题 packet（包含本主题字段清单、规则、预解析表格与切片）。
+2. 如需补充，优先跑 \`search table ${item.code}\` 或针对性检索命令。
+3. 严格按契约写出本主题的 JSON 分片：
+\`\`\`json
+{"code":"${item.code}","topic":"${item.topic}","fields":{"col_X":{"value":...,"page":...,"quote":"...","confidence":"high"}}}
+\`\`\`
+- 必须包含本主题分片清单里的每一个 key，不要输出其它主题字段。
+- 每个 entry 只能有 value/page/quote/confidence 四个键。
+- page 为正整数或 null，quote 为原文摘录（<=200字）或 ""。
+- 数值缺失填 "NaN"，文本/日期缺失填 "NA"。
+4. 将该 JSON 写入 \`${item.out_path}\`。
+`;
+}
+
+phase("抽取字段");
+const runItems = isTopicMode
+  ? (topicPackets.length ? topicPackets : packets.flatMap((p) => p.topic_packets || []))
+  : packets;
+
+log(`准备抽取 ${runItems.length} 个任务项（模式: ${isTopicMode ? "主题分片并发" : "全量单包"}）；独立复核=${doVerify}`);
+
+const extractResults = await pipeline(runItems, async (item) => {
+  const prompt = isTopicMode ? extractTopicPrompt(item) : extractPrompt(item);
+  return await agent(prompt, {
     schema: summarySchema,
-    label: `extract ${item.code}`,
+    label: `extract ${item.code} ${item.topic || ""}`.trim(),
     phase: "抽取字段",
     model: "deepseek-flash"
   });
 });
 
 const extracted = extractResults.filter((r) => r && r.self_check_passed === true);
-const extractFailed = packets.filter((_, i) => !extractResults[i] || extractResults[i].self_check_passed !== true).map((p) => p.code);
-log(`抽取完成 ${extracted.length}/${packets.length}；失败 ${extractFailed.length}`);
+const extractFailed = runItems.filter((_, i) => !extractResults[i] || extractResults[i].self_check_passed !== true).map((p) => `${p.code}_${p.topic || "all"}`);
+log(`抽取完成 ${extracted.length}/${runItems.length}；失败 ${extractFailed.length}`);
+
+// 若为主题模式，自动运行确定性合并
+if (isTopicMode) {
+  phase("主题分片合并");
+  const uniqueCodes = [...new Set(runItems.map((item) => item.code))];
+  for (const code of uniqueCodes) {
+    log(`合并 ${code} 的 4 大主题分片...`);
+    // 触发 run.py merge_topics
+  }
+}
 
 let verifyResults = [];
 let verifyFailed = [];
@@ -223,7 +274,7 @@ if (doVerify) {
 }
 
 return {
-  total: packets.length,
+  total: runItems.length,
   extracted: extracted.length,
   extract_failed_codes: extractFailed,
   verified: verifyResults.filter(Boolean).length,

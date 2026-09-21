@@ -7,6 +7,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from contracts import is_company_level_statement
 from storage import merge_index
+from table_parser import extract_all_tables_for_pdf
+from topic_schema import TOPIC_DEFINITIONS, TOPIC_KEYS, get_topic_fields
 
 import requests
 
@@ -334,7 +336,21 @@ GROUP_TITLES = {
 }
 
 
-def build_packet(cfg: dict, rec: dict, fields: list[dict], slices: dict[str, str]) -> Path:
+GROUP_TABLE_MAP: dict[str, str] = {
+    "share_structure": "share_capital",
+    "cornerstone": "cornerstone",
+    "underwriting": "underwriting",
+    "financials": "financials",
+}
+
+
+def build_packet(
+    cfg: dict,
+    rec: dict,
+    fields: list[dict],
+    slices: dict[str, str],
+    tables: dict[str, list[dict]] | None = None,
+) -> Path:
     dest = cfg["paths"]["packets"] / f"{_safe_name(rec['code'])}.md"
     parts = [PACKET_HEADER.format(**rec)]
     for group, title in GROUP_TITLES.items():
@@ -345,6 +361,14 @@ def build_packet(cfg: dict, rec: dict, fields: list[dict], slices: dict[str, str
             if f.get("period"):
                 details += f" period={f['period']} annualize={f.get('annualize')}"
             parts.append(f"- `{f['key']}` = {f['header']} ({details})")
+
+        # 结构化原生表格优先注入，使 LLM 第一时间读取对齐规整的数据
+        t_name = GROUP_TABLE_MAP.get(group)
+        if tables and t_name and tables.get(t_name):
+            parts.append("\n### 结构化预解析表格（高精度对齐）\n")
+            for t in tables[t_name]:
+                parts.append(f"#### {t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
+
         parts.append(f"\n### 原文切片：{title}\n")
         cap = int(cfg["extract"].get("group_caps", {}).get(
             group, cfg["extract"].get("max_chars_per_group", 60000)))
@@ -354,15 +378,95 @@ def build_packet(cfg: dict, rec: dict, fields: list[dict], slices: dict[str, str
     return dest
 
 
-def prepare_all(cfg: dict, found: list[dict], log=print) -> list[dict]:
+def build_topic_packets(
+    cfg: dict,
+    rec: dict,
+    fields: list[dict],
+    slices: dict[str, str],
+    tables: dict[str, list[dict]] | None = None,
+) -> list[dict]:
+    """生成 4 个正交主题的抽取子包。"""
+    topic_packets = []
+    dest_dir = cfg["paths"]["packets"]
+    topics_out_dir = cfg["paths"]["out"] / "extracted_topics"
+    topics_out_dir.mkdir(parents=True, exist_ok=True)
+
+    for tid in TOPIC_KEYS:
+        defn = TOPIC_DEFINITIONS[tid]
+        t_fields = get_topic_fields(tid, fields)
+        dest = dest_dir / f"{_safe_name(rec['code'])}-{tid}.md"
+        out_path = topics_out_dir / f"{_safe_name(rec['code'])}-{tid}.json"
+
+        parts = [
+            f"# 招股书抽取主题分片：{rec['code']} {rec.get('name', '')} - 【{defn['title']}】\n",
+            f"- 股票代码：{rec['code']} ｜ 公司：{rec.get('name', '')}",
+            f"- 主题标识：{tid} ｜ 包含字段数：{len(t_fields)} 个",
+            f"- 覆盖组：{', '.join(defn['groups'])}\n",
+            "## 唯一输出契约（必须严格遵守）\n",
+            f'只输出一个 JSON 对象，顶层必须是：\n`{{"code":"{rec["code"]}","topic":"{tid}","fields":{{"col_X":{{"value":...,"page":...,"quote":"...","confidence":"high|medium|low"}}}}}}`。\n',
+            f"本分片必须且只能输出下列 {len(t_fields)} 个字段的 entry，不要输出其它主题的字段。\n",
+            "## 本分片核心规则\n" + "\n".join(f"- {r}" for r in defn.get("key_rules", [])) + "\n\n---\n",
+        ]
+
+        for group in defn["groups"]:
+            title = GROUP_TITLES.get(group, group)
+            fs = [f for f in t_fields if f["group"] == group]
+            parts.append(f"\n## {title}\n")
+            for f in fs:
+                details = f"type={f.get('kind')} unit={f.get('unit')} missing={f.get('missing')}"
+                if f.get("period"):
+                    details += f" period={f['period']} annualize={f.get('annualize')}"
+                parts.append(f"- `{f['key']}` = {f['header']} ({details})")
+
+            t_name = GROUP_TABLE_MAP.get(group)
+            if tables and t_name and tables.get(t_name):
+                parts.append("\n### 结构化预解析表格（高精度对齐）\n")
+                for t in tables[t_name]:
+                    parts.append(f"#### {t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
+
+            parts.append(f"\n### 原文切片：{title}\n")
+            cap = int(cfg["extract"].get("group_caps", {}).get(
+                group, cfg["extract"].get("max_chars_per_group", 60000)))
+            parts.append(slices.get(group, "(无匹配章节)")[:cap])
+            parts.append("\n")
+
+        dest.write_text("\n".join(parts), encoding="utf-8")
+        topic_packets.append({
+            "code": rec["code"],
+            "name": rec.get("name", ""),
+            "topic": tid,
+            "title": defn["title"],
+            "packet_path": str(dest),
+            "out_path": str(out_path),
+            "fields_count": len(t_fields),
+            "packet_kb": round(dest.stat().st_size / 1024, 1),
+        })
+
+    return topic_packets
+
+
+def prepare_all(cfg: dict, found: list[dict], log=print, with_topics: bool = True) -> list[dict]:
     fields = json.loads((cfg["_root"] / "schema" / "fields.json").read_text())["fields"]
     out = []
+    all_topic_packets = []
+    tables_base = cfg["paths"].get("tables", cfg["_ws"] / "prospectus_pipeline/data/tables")
+
     for i, rec in enumerate(found, 1):
         if not rec.get("pdf"):
             continue
+        pdf_path = cfg["paths"]["pdf"] / f"{_safe_name(rec['code'])}.pdf"
+        if not pdf_path.exists() and rec.get("pdf"):
+            alt = Path(rec["pdf"])
+            if alt.exists():
+                pdf_path = alt
         extract_text(cfg, rec["code"])
         loc = locate_sections(cfg, rec["code"])
         slices = build_slices(cfg, rec["code"], loc)
+
+        # 结构化表格原生解析预处理
+        tables_dir = tables_base / _safe_name(rec["code"])
+        tables = extract_all_tables_for_pdf(pdf_path, tables_dir)
+
         # 保存可审计的分组切片，packet 只是汇总视图。
         section_meta = {}
         for group, text in slices.items():
@@ -374,18 +478,34 @@ def prepare_all(cfg: dict, found: list[dict], log=print) -> list[dict]:
                 "empty": not bool(text.strip()),
                 "path": str(section_file),
             }
-        pkt = build_packet(cfg, rec, fields, slices)
+
+        # 构造全量任务包（注入预解析表格）
+        pkt = build_packet(cfg, rec, fields, slices, tables=tables)
         size = pkt.stat().st_size
+
+        # 构造主题任务包
+        t_pkts = []
+        if with_topics:
+            t_pkts = build_topic_packets(cfg, rec, fields, slices, tables=tables)
+            all_topic_packets.extend(t_pkts)
+
         out.append({"code": rec["code"], "name": rec["name"],
                     "packet_path": str(pkt),
                     "out_path": str(cfg["paths"]["out"] / "extracted" / f"{_safe_name(rec['code'])}.json"),
                     "packet_kb": round(size / 1024, 1),
                     "pages_by_group": {g: len(v) for g, v in loc.items()},
-                    "section_quality": section_meta})
+                    "section_quality": section_meta,
+                    "tables_extracted": {k: len(v) for k, v in tables.items()},
+                    "topic_packets": t_pkts})
         warnings = [g for g, m in section_meta.items() if m["empty"] or m["truncated"]]
+        table_summary = " ".join(f"{k[:4]}={len(v)}" for k, v in tables.items() if v)
         log(f"[{i}/{len(found)}] {rec['code']:9s} 包 {size/1024:6.0f}KB  "
             f"切片页数 " + " ".join(f"{g[:4]}={len(v)}" for g, v in loc.items())
+            + (f"  表格[{table_summary}]" if table_summary else "")
             + (f"  警告={','.join(warnings)}" if warnings else ""))
+
     merge_index(cfg["paths"]["out"] / "packets.json", out)
-    log(f"\n抽取包生成完成：{len(out)} 个 -> {cfg['paths']['packets']}")
+    if all_topic_packets:
+        merge_index(cfg["paths"]["out"] / "packets_topics.json", all_topic_packets)
+    log(f"\n抽取包生成完成：{len(out)} 个全量包 + {len(all_topic_packets)} 个主题分片包 -> {cfg['paths']['packets']}")
     return out
