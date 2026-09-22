@@ -76,6 +76,91 @@ EXTERNAL_TOOL_MAPPING = {
     "CL": "src/cornerstone.py (Earliest cornerstone unlock date)",
 }
 
+HEADER_TOOL_MAPPING = {
+    # 外部市场行情与首日表现 (tools/external/market.py)
+    norm_header("HSI return over 20 trading days before prospectus (%)"): "tools/external/market.py (HSI 20-day return)",
+    norm_header("First trading day closing price (HK$)"): "tools/external/market.py (First day close)",
+    norm_header("First trading day opening price (HK$)"): "tools/external/market.py (First day open)",
+    norm_header("First trading day high (HK$)"): "tools/external/market.py (First day high)",
+    norm_header("First trading day low (HK$)"): "tools/external/market.py (First day low)",
+    norm_header("First trading day volume (shares)"): "tools/external/market.py (First day volume)",
+    norm_header("First trading day turnover (HK$)"): "tools/external/market.py (First day turnover)",
+
+    # HKMA 货币与流动性数据 (tools/external/hkma_import.py)
+    norm_header("1-month HIBOR before prospectus (%)"): "tools/external/hkma_import.py (1-month HIBOR)",
+    norm_header("Banking system aggregate balance before prospectus (HK$)"): "tools/external/hkma_import.py (Aggregate Balance)",
+
+    # IPO 统计 (tools/external/ipo_count.py)
+    norm_header("HK ordinary IPO count in 90 calendar days before prospectus"): "tools/external/ipo_count.py (90-day HK ordinary IPO count)",
+
+    # 发行机制与监管规则 (tools/external/rules.py)
+    norm_header("Offer mechanism"): "tools/external/rules.py (Offer mechanism)",
+    norm_header("Applicable IPO rules / transition basis"): "tools/external/rules.py (Applicable IPO rules)",
+
+    # 公司属性与章节标签 (tools/external/flags.py)
+    norm_header("Listing board"): "tools/external/flags.py (Listing board)",
+    norm_header("A+H issuer flag"): "tools/external/flags.py (A+H flag)",
+    norm_header("WVR flag"): "tools/external/flags.py (WVR flag)",
+    norm_header("Chapter 18A flag"): "tools/external/flags.py (Chapter 18A flag)",
+    norm_header("Chapter 18C flag"): "tools/external/flags.py (Chapter 18C flag)",
+    norm_header("Place of incorporation"): "tools/external/flags.py (Place of incorporation)",
+
+    # 恒生行业分类 (tools/external/hsic_codes.py)
+    norm_header("Industry classification code"): "tools/external/hsic_codes.py (Industry classification code)",
+    norm_header("Industry classification system and version"): "tools/external/hsic_codes.py (Industry classification system)",
+
+    # 财务报表期间、单位与原始口径 (Manual / Disclosure notes)
+    norm_header("Comments (nearest sales& profit adjustment factor - original data duration in year, eg. 6 month pls input 0.5)"): "Manual / Prospectus disclosure notes (Annualization factor)",
+    norm_header("Financial statement unit multiplier"): "Manual / Disclosure notes (Financial statement unit multiplier)",
+    norm_header("Year-3 financial period start"): "Manual / Disclosure notes (Financial period: Year-3 start)",
+    norm_header("Year-3 financial period end"): "Manual / Disclosure notes (Financial period: Year-3 end)",
+    norm_header("Year-2 financial period start"): "Manual / Disclosure notes (Financial period: Year-2 start)",
+    norm_header("Year-2 financial period end"): "Manual / Disclosure notes (Financial period: Year-2 end)",
+    norm_header("Year-1 financial period start"): "Manual / Disclosure notes (Financial period: Year-1 start)",
+    norm_header("Year-1 net sales (original, pre-annualization)"): "Manual / Disclosure notes (Financial: Year-1 net sales original)",
+    norm_header("Year-1 profit before tax (original)"): "Manual / Disclosure notes (Financial: Year-1 profit before tax original)",
+    norm_header("Year-1 profit for period (original)"): "Manual / Disclosure notes (Financial: Year-1 profit for period original)",
+
+    # 基石解禁日 (tools/external/flags.py / src/cornerstone.py)
+    norm_header("Earliest cornerstone unlock date (dd/mm/yy)"): "tools/external/flags.py / src/cornerstone.py (Earliest cornerstone unlock date)",
+
+    # 核心学术衍生指标 (src/academic_derivations.py / tools/enrich_master_dataset.py)
+    norm_header("Filing price revision (%)"): "src/academic_derivations.py (Pricing revision)",
+    norm_header("Filing range width (%)"): "src/academic_derivations.py (Filing range width)",
+    norm_header("Pricing position in filing range"): "src/academic_derivations.py (Pricing position in range)",
+    norm_header("Firm age at IPO (years)"): "src/academic_derivations.py (Firm age at IPO)",
+    norm_header("Greenshoe exercise rate (%)"): "src/academic_derivations.py (Greenshoe exercise rate)",
+    norm_header("First-day return / Underpricing (%)"): "src/academic_derivations.py (First-day return / Underpricing)",
+    norm_header("Money left on the table (HK$)"): "src/academic_derivations.py (Money left on the table)",
+    norm_header("First-day flipping ratio (%)"): "src/academic_derivations.py (First-day flipping ratio)",
+
+    # 二级市场跨期表现与流动性衰减 (tools/external/aftermarket.py)
+    norm_header("Current listing status"): "tools/external/aftermarket.py (Current listing status)",
+    norm_header("1-month post-IPO close price (HK$)"): "tools/external/aftermarket.py (1-month close price)",
+    norm_header("1-month BHR from Day-1 close (%)"): "tools/external/aftermarket.py (1-month BHR)",
+    norm_header("1-month total return from offer price (%)"): "tools/external/aftermarket.py (1-month total return)",
+    norm_header("1-month HSI return (%)"): "tools/external/aftermarket.py (1-month HSI return)",
+    norm_header("1-month HSTECH return (%)"): "tools/external/aftermarket.py (1-month HSTECH return)",
+    norm_header("1-month wealth relative vs HSI"): "tools/external/aftermarket.py (1-month WR vs HSI)",
+    norm_header("1-month wealth relative vs HSTECH"): "tools/external/aftermarket.py (1-month WR vs HSTECH)",
+    norm_header("1-month average daily turnover (HK$)"): "tools/external/aftermarket.py (1-month average daily turnover)",
+    norm_header("6-month post-IPO close price (HK$)"): "tools/external/aftermarket.py (6-month close price)",
+    norm_header("6-month BHR from Day-1 close (%)"): "tools/external/aftermarket.py (6-month BHR)",
+    norm_header("6-month total return from offer price (%)"): "tools/external/aftermarket.py (6-month total return)",
+    norm_header("6-month HSI return (%)"): "tools/external/aftermarket.py (6-month HSI return)",
+    norm_header("6-month HSTECH return (%)"): "tools/external/aftermarket.py (6-month HSTECH return)",
+    norm_header("6-month wealth relative vs HSI"): "tools/external/aftermarket.py (6-month WR vs HSI)",
+    norm_header("6-month wealth relative vs HSTECH"): "tools/external/aftermarket.py (6-month WR vs HSTECH)",
+    norm_header("6-month average daily turnover (HK$)"): "tools/external/aftermarket.py (6-month average daily turnover)",
+    norm_header("Liquidity decay ratio (6M vs Day-1 turnover)"): "tools/external/aftermarket.py (Liquidity decay ratio)",
+    norm_header("1-year post-IPO return (%) [Reserved]"): "tools/external/aftermarket.py (1-year return [Reserved])",
+    norm_header("1-year wealth relative vs HSI [Reserved]"): "tools/external/aftermarket.py (1-year WR vs HSI [Reserved])",
+    norm_header("3-year post-IPO return (%) [Reserved]"): "tools/external/aftermarket.py (3-year return [Reserved])",
+    norm_header("3-year wealth relative vs HSI [Reserved]"): "tools/external/aftermarket.py (3-year WR vs HSI [Reserved])",
+    norm_header("18A/18C regulatory milestone status"): "tools/external/aftermarket.py (18A/18C regulatory status)",
+}
+
+
 
 def serialize_val(val: Any) -> Any:
     if isinstance(val, (dt.datetime, dt.date)):
@@ -282,7 +367,16 @@ def audit_external_columns(ws, cfg: dict, row_of: dict[str, int]) -> list[dict]:
             continue
 
         header_str = str(h or "").strip().replace("\n", " ")
-        tool_src = EXTERNAL_TOOL_MAPPING.get(col, "Other external / manual")
+        nh = norm_header(header_str)
+        tool_src = HEADER_TOOL_MAPPING.get(nh)
+        if not tool_src:
+            for k, src in HEADER_TOOL_MAPPING.items():
+                if k in nh or nh in k:
+                    tool_src = src
+                    break
+        if not tool_src:
+            tool_src = EXTERNAL_TOOL_MAPPING.get(col, "Other external / manual")
+
 
         non_missing = 0
         sample_val = None

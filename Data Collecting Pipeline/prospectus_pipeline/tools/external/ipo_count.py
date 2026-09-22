@@ -109,19 +109,24 @@ def main() -> int:
     wb_read = openpyxl.load_workbook(book, data_only=True)
     ws_read = wb_read[SHEET]
     col = None
+    col_code = 2
+    col_pd = 4
     for c in range(1, ws_read.max_column + 1):
         v = " ".join(str(ws_read.cell(1, c).value or "").replace("\n", " ").split()).strip().lower()
         if v == HEADER.lower():
             col = c
-            break
+        elif "stock code" in v:
+            col_code = c
+        elif "date of prospectus" in v:
+            col_pd = c
     if col is None:
         wb_read.close()
         raise SystemExit(f"找不到列 {HEADER!r}")
 
     companies = []
     for r in range(2, ws_read.max_row + 1):
-        code = ws_read[f"B{r}"].value
-        pd = to_date(ws_read[f"D{r}"].value)
+        code = ws_read.cell(r, col_code).value
+        pd = to_date(ws_read.cell(r, col_pd).value)
         if code in (None, "") or pd is None:
             continue
         c_str = str(code).strip()
@@ -129,6 +134,7 @@ def main() -> int:
             continue
         companies.append((r, c_str, pd))
     wb_read.close()
+
 
     print(f"\n{'code':9s} {'招股书':12s} {'窗口':26s} {'家数':>4s}")
     values = []

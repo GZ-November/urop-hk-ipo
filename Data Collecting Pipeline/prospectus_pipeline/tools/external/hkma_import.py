@@ -122,15 +122,22 @@ def main() -> None:
             col_of["hibor"] = c
         elif n == norm(BALANCE_HEADER):
             col_of["balance"] = c
-    if set(col_of) != {"hibor", "balance"}:
+        elif "stock code" in n:
+            col_of["code"] = c
+        elif "date of prospectus" in n:
+            col_of["date"] = c
+    if "hibor" not in col_of or "balance" not in col_of:
         wb_read.close()
         raise SystemExit(f"工作簿里找不到这两列，实际得到 {col_of}")
+
+    code_col = col_of.get("code", openpyxl.utils.column_index_from_string(CODE_COL))
+    date_col = col_of.get("date", openpyxl.utils.column_index_from_string(DATE_COL))
 
     # 取公司行
     companies = []
     for r in range(2, ws_read.max_row + 1):
-        code = ws_read[f"{CODE_COL}{r}"].value
-        date = ws_read[f"{DATE_COL}{r}"].value
+        code = ws_read.cell(r, code_col).value
+        date = ws_read.cell(r, date_col).value
         if code in (None, ""):
             continue
         c_str = str(code).strip()
@@ -143,6 +150,7 @@ def main() -> None:
             date = date.date()
         companies.append((r, c_str, date))
     wb_read.close()
+
 
     print(f"工作簿：{len(companies)} 家公司\n")
     print(f"{'code':10s} {'招股书日':12s} {'观察日':12s} {'HIBOR':>9s} {'总结余(HK$)':>16s}")

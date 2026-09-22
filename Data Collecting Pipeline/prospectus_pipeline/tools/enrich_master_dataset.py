@@ -170,13 +170,15 @@ def inject_academic_derivations() -> Path:
     col_day1_vol = hmap_read[norm("First trading day volume (shares)")]
     col_global_shares = hmap_read[norm("Final global offering shares (before over-allotment)")]
     col_greenshoe_opt = hmap_read[norm("Over-allotment Option (%)")]
+    col_code = hmap_read.get(norm("Stock Code"), 2)
     col_greenshoe_issued = hmap_read[norm("Over-allotment shares actually issued")]
 
     derived_data: dict[str, dict[str, Any]] = {}
-    for r in range(2, 40):
-        code = str(ws_read.cell(row=r, column=2).value or "").strip()
+    for r in range(2, ws_read.max_row + 1):
+        code = str(ws_read.cell(row=r, column=col_code).value or "").strip()
         if not code:
             continue
+
 
         p_off = ws_read.cell(row=r, column=col_offer_price).value
         p_max = ws_read.cell(row=r, column=col_max_price).value

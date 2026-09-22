@@ -29,6 +29,9 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "src"))
+from market_fetcher import get_market_fetcher
+
 WS = ROOT.parent
 BOOK = WS / "HKIPO-MB2026Q1.xlsx"
 CACHE = ROOT / "data" / "market" / "aftermarket"
@@ -93,49 +96,29 @@ def to_date(v) -> dt.date | None:
     return None
 
 
+def norm_header(v) -> str:
+    return " ".join(str(v or "").replace("\n", " ").split()).strip().lower()
+
+
+
 def hk_symbol(code: str) -> str:
     d = "".join(ch for ch in str(code) if ch.isdigit())
     return f"hk{int(d):05d}"
 
 
-def fetch_bars(symbol: str, frm: str, to: str, n: int = 350, retries: int = 4) -> list[dict]:
-    url = (f"https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get"
-           f"?param={symbol},day,{frm},{to},{n},qfq")
-    last_err = None
-    for i in range(retries):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=25) as r:
-                payload = json.loads(r.read().decode())
-            if payload.get("code") != 0:
-                raise RuntimeError(f"{symbol} code={payload.get('code')} msg={payload.get('msg')}")
-            data = (payload.get("data") or {}).get(symbol) or {}
-            rows = data.get("qfqday") or data.get("day") or []
-            if not rows:
-                raise RuntimeError(f"{symbol} empty bars returned")
-            
-            bars = []
-            for row in rows:
-                turnover = None
-                if len(row) > 8 and row[8] not in (None, "", "{}", {}):
-                    try:
-                        turnover = float(row[8]) * 10_000
-                    except (TypeError, ValueError):
-                        turnover = None
-                bars.append({
-                    "date": dt.datetime.strptime(str(row[0])[:10], "%Y-%m-%d").date(),
-                    "open": float(row[1]),
-                    "close": float(row[2]),
-                    "high": float(row[3]),
-                    "low": float(row[4]),
-                    "volume": float(row[5]),
-                    "turnover": turnover,
-                })
-            return bars
-        except Exception as exc:  # noqa: BLE001
-            last_err = exc
-            time.sleep(0.5 * (i + 1))
-    raise RuntimeError(f"{symbol} 拉取失败：{last_err}")
+def fetch_bars(
+    symbol: str,
+    frm: str,
+    to: str,
+    n: int = 350,
+    retries: int = 4,
+    provider: str = "auto",
+) -> tuple[list[dict], str, list[str]]:
+    """调用弹性市场数据抓取引擎拉取规范化日 K 线序列。"""
+    fetcher = get_market_fetcher()
+    return fetcher.fetch_bars_resilient(
+        symbol, frm, to, n_bars=n, preferred_provider=provider
+    )
 
 
 def find_bar_on_or_after(bars: list[dict], target_date: dt.date) -> dict | None:
@@ -314,6 +297,12 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="演练模式：仅打印计算结果摘要，不修改 Excel")
     ap.add_argument("--book", default=str(BOOK), help="目标 Excel 工作簿路径")
     ap.add_argument("--only", nargs="*", default=None, help="只处理指定股票代码")
+    ap.add_argument(
+        "--provider",
+        choices=["auto", "tencent", "yahoo"],
+        default="auto",
+        help="市场行情数据提供商偏好 (auto=腾讯优先并自动降级至雅虎财经, tencent, yahoo)",
+    )
     args = ap.parse_args()
 
     book = Path(args.book)
@@ -326,27 +315,53 @@ def main() -> int:
     wb = openpyxl.load_workbook(book, data_only=True)
     ws = wb[SHEET]
 
+    header_to_idx: dict[str, int] = {}
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(1, c).value
+        if v:
+            header_to_idx[norm_header(v)] = c
+
+    def find_col_idx(*patterns: str, default: int | None = None) -> int:
+        for p in patterns:
+            p_low = norm_header(p)
+            for h, c in header_to_idx.items():
+                if p_low in h:
+                    return c
+        if default is not None:
+            return default
+        raise KeyError(f"Required header pattern not found in workbook: {patterns}")
+
+    col_code = find_col_idx("stock code", default=2)
+    col_name = find_col_idx("company name at time of listing", default=3)
+    col_listing_date = find_col_idx("date of listing", default=5)
+    col_offer_price = find_col_idx("ipo subscription price", default=11)
+    col_day1_close = find_col_idx("first trading day closing price", default=127)
+    col_day1_turnover = find_col_idx("first trading day turnover", default=135)
+    col_unlock_date = find_col_idx("earliest cornerstone unlock date", default=104)
+    col_18a = find_col_idx("chapter 18a flag", default=77)
+    col_18c = find_col_idx("chapter 18c flag", default=78)
+
     companies = []
     status_overrides = {}
     if STATUS_OVERRIDES.exists():
         status_overrides = json.loads(STATUS_OVERRIDES.read_text(encoding="utf-8"))
     for r in range(2, ws.max_row + 1):
-        code_val = ws.cell(r, 2).value
+        code_val = ws.cell(r, col_code).value
         if not code_val:
             continue
         code = str(code_val).strip()
-        ld = to_date(ws.cell(r, 5).value)
+        ld = to_date(ws.cell(r, col_listing_date).value)
         if not ld:
             continue
         
         # 读取必要参数
-        offer_price = ws.cell(r, 11).value
-        day1_close = ws.cell(r, 127).value
-        day1_turnover = ws.cell(r, 135).value
-        unlock_date = to_date(ws.cell(r, 104).value)
-        is_18a = ws.cell(r, 77).value == 1
-        is_18c = ws.cell(r, 78).value == 1
-        name = str(ws.cell(r, 3).value or "").strip()
+        offer_price = ws.cell(r, col_offer_price).value
+        day1_close = ws.cell(r, col_day1_close).value
+        day1_turnover = ws.cell(r, col_day1_turnover).value
+        unlock_date = to_date(ws.cell(r, col_unlock_date).value)
+        is_18a = ws.cell(r, col_18a).value == 1
+        is_18c = ws.cell(r, col_18c).value == 1
+        name = str(ws.cell(r, col_name).value or "").strip()
 
         companies.append({
             "row": r,
@@ -363,10 +378,21 @@ def main() -> int:
         })
     wb.close()
 
-    if args.only:
-        companies = [c for c in companies if c["code"] in args.only]
 
-    print(f"📊 准备处理 {len(companies)} 家公司二级市场跨期数据...")
+    if args.only:
+        targets = set()
+        for x in args.only:
+            s = str(x).strip().upper()
+            targets.add(s)
+            targets.add(s.replace(".HK", ""))
+            d = "".join(ch for ch in s if ch.isdigit())
+            if d:
+                targets.add(f"{int(d):04d}.HK")
+                targets.add(f"{int(d):05d}")
+                targets.add(str(int(d)))
+        companies = [c for c in companies if c["code"].upper() in targets or c["code"].upper().replace(".HK", "") in targets]
+
+    print(f"📊 准备处理 {len(companies)} 家公司二级市场跨期数据 (策略: {args.provider})...")
 
     # 1. 抓取指数日 K 线
     min_date = min(c["listing_date"] for c in companies) - dt.timedelta(days=10)
@@ -375,13 +401,17 @@ def main() -> int:
     to_str = max_date.strftime("%Y-%m-%d")
 
     print(f"📈 正在拉取宏观基准指数 ({frm_str} ~ {to_str})...")
-    hsi_bars = fetch_bars("hkHSI", frm_str, to_str, n=350)
+    hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=350, provider=args.provider)
     (CACHE / "hsi_bars.json").write_text(json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8")
-    print(f"   ✓ 恒生指数 (hkHSI): {len(hsi_bars)} 条 K 线")
+    print(f"   ✓ 恒生指数 (hkHSI via {prov_hsi}): {len(hsi_bars)} 条 K 线")
 
-    hstech_bars = fetch_bars("hkHSTECH", frm_str, to_str, n=350)
-    (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
-    print(f"   ✓ 恒生科技指数 (hkHSTECH): {len(hstech_bars)} 条 K 线")
+    try:
+        hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=350, provider=args.provider)
+        (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
+        print(f"   ✓ 恒生科技指数 (hkHSTECH via {prov_hstech}): {len(hstech_bars)} 条 K 线")
+    except Exception as exc:
+        hstech_bars, prov_hstech, errs_hstech = [], "unavailable", [str(exc)]
+        print(f"   ⚠ 恒生科技指数拉取受阻 ({args.provider}): {exc}")
 
     # 2. 逐一拉取个股日 K 线并计算指标
     computed_rows = []
@@ -390,11 +420,25 @@ def main() -> int:
         sym = hk_symbol(c["code"])
         frm_c = c["listing_date"].strftime("%Y-%m-%d")
         try:
-            bars = fetch_bars(sym, frm_c, to_str, n=300)
+            bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=300, provider=args.provider)
             (CACHE / f"{sym}.json").write_text(json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8")
             metrics = calculate_metrics(c, bars, hsi_bars, hstech_bars)
             metrics["row"] = c["row"]
             metrics["code"] = c["code"]
+            
+            # 记录数据来源与降级血统 (Observation Provenance)
+            obs_meta = metrics.get("observation_meta", {})
+            obs_meta["stock_provider"] = prov_stock
+            obs_meta["hsi_provider"] = prov_hsi
+            obs_meta["hstech_provider"] = prov_hstech
+            if errs_stock:
+                obs_meta["stock_fallback_errors"] = errs_stock
+            if errs_hsi:
+                obs_meta["hsi_fallback_errors"] = errs_hsi
+            if errs_hstech:
+                obs_meta["hstech_fallback_errors"] = errs_hstech
+            metrics["observation_meta"] = obs_meta
+
             computed_rows.append(metrics)
             def pct(value):
                 return f"{value * 100:+.2f}%" if value is not None else "未成熟"
@@ -402,7 +446,7 @@ def main() -> int:
             def ratio(value):
                 return f"{value:.3f}" if value is not None else "未成熟"
 
-            print(f"   [{idx:02d}/{len(companies):02d}] {c['code']:7s}: "
+            print(f"   [{idx:02d}/{len(companies):02d}] {c['code']:7s} ({prov_stock}): "
                   f"1M BHR={pct(metrics[141])}, 6M BHR={pct(metrics[149])}, "
                   f"WR_HSI(6M)={ratio(metrics[153])}, 换手衰减={pct(metrics[156])}")
         except Exception as exc:
@@ -418,6 +462,13 @@ def main() -> int:
         json.dumps(observation_manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    if not args.only and len(computed_rows) < len(companies):
+        sys.stderr.write(
+            f"错误: 仅成功计算 {len(computed_rows)} / {len(companies)} 家公司指标，"
+            "存在外部数据拉取失败；为保证数据完整性，终止写回。\n"
+        )
+        return 1
+
     if args.dry_run:
         print("\n[DRY RUN] 演练模式结束，未向工作簿写入数据。")
         return 0
@@ -427,22 +478,37 @@ def main() -> int:
 
     with workbook_transaction(book, operation="aftermarket") as wb:
         ws = wb[SHEET]
+        # 动态定位或创建目标列，防止列位移
+        field_col_map = {}
+        header_positions = {}
+        for c in range(1, ws.max_column + 1):
+            hv = ws.cell(1, c).value
+            if hv:
+                header_positions[norm_header(hv)] = c
+
+        for default_idx, header, num_format, desc in AFTERMARKET_FIELDS:
+            nh = norm_header(header)
+            target_col = header_positions.get(nh, default_idx)
+            field_col_map[default_idx] = target_col
+
         # 设置表头
-        for col_idx, header, num_format, desc in AFTERMARKET_FIELDS:
-            cell = ws.cell(1, col_idx)
+        for default_idx, header, num_format, desc in AFTERMARKET_FIELDS:
+            target_col = field_col_map[default_idx]
+            cell = ws.cell(1, target_col)
             cell.value = header
             cell.fill = HEADER_FILL
             cell.font = HEADER_FONT
             cell.alignment = HEADER_ALIGN
-            col_letter = get_column_letter(col_idx)
+            col_letter = get_column_letter(target_col)
             ws.column_dimensions[col_letter].width = max(18, len(header) // 2 + 4)
 
         # 写入数据
         for row_data in computed_rows:
             r = row_data["row"]
-            for col_idx, header, num_format, desc in AFTERMARKET_FIELDS:
-                cell = ws.cell(r, col_idx)
-                val = row_data.get(col_idx)
+            for default_idx, header, num_format, desc in AFTERMARKET_FIELDS:
+                target_col = field_col_map[default_idx]
+                cell = ws.cell(r, target_col)
+                val = row_data.get(default_idx)
                 cell.value = val
                 cell.font = DATA_FONT
                 cell.border = THIN_BORDER
@@ -453,6 +519,7 @@ def main() -> int:
                     cell.alignment = DATA_ALIGN_RIGHT
                 else:
                     cell.alignment = DATA_ALIGN_CENTER
+
 
     print(f"🎉 成功将 23 个二级市场跨期与流动性指标写入主表 {SHEET} (Col 139–161) -> {book.name}！\n")
     return 0

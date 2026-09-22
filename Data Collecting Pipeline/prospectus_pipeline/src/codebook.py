@@ -431,6 +431,37 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
                 "summary_display": f"共 {len(counts)} 种取值 ({top_str})" if valid_n else "全部缺失"
             })
 
+        h_low = clean_header.lower()
+        if "1-month" in h_low:
+            timing = "Post-IPO T+20 trading days"
+        elif "6-month" in h_low:
+            timing = "Post-IPO 6 calendar months (cornerstone unlock)"
+        elif "1-year" in h_low or "3-year" in h_low or "reserved" in h_low:
+            timing = "Long-run post-IPO (Reserved / Unmatured)"
+        elif "first trading day" in h_low or "first-day" in h_low or "money left" in h_low:
+            timing = "Listing Day 1 secondary market"
+        elif "before prospectus" in h_low:
+            timing = "Ex-ante pre-prospectus window"
+        elif group_name == "allotment" or "final" in h_low or "subscription ratio" in h_low:
+            timing = "Allotment results announcement"
+        elif "financial" in group_name or "year-" in h_low:
+            timing = "Track record period financial disclosure"
+        else:
+            timing = "Ex-ante prospectus disclosure"
+
+        if "[reserved]" in h_low or valid_n == 0:
+            coverage = "Reserved / Unmatured"
+            missing_pol = "Unmatured window (blank in CSV, None in memory)"
+        elif fill_rate == 100.0:
+            coverage = "Complete (100%)"
+            missing_pol = "No missing observations"
+        elif is_numeric:
+            coverage = "Adequate" if fill_rate >= 50.0 else "Sparse"
+            missing_pol = "NaN in Excel, empty in econometric CSV"
+        else:
+            coverage = "Adequate" if fill_rate >= 50.0 else "Sparse"
+            missing_pol = "NA in Excel, empty in econometric CSV"
+
         variables.append({
             "col_idx": c,
             "col_letter": col_letter,
@@ -439,10 +470,14 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             "tier": tier,
             "group": group_name,
             "data_type": dtype,
+            "timing_convention": timing,
+            "missing_policy": missing_pol,
+            "coverage_status": coverage,
             "source": source_desc,
             "stats": stats,
             "values": col_vals,
         })
+
 
     cohort_str = cfg.get("dataset", {}).get("cohort", "2026 Q1") if cfg else "2026 Q1"
     summary = {
@@ -521,8 +556,8 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
         f"| **深蓝 (配发及外部数据)** | 配发公告与外部市场数据 | {summary['tiers']['darkblue_external']} 列 | 发行结果与市场宏观：基石投资者最终获配及禁售期、回拨机制、超购倍数、自由流通量、首日二级市场表现、恒指收益率、HIBOR、总结余、监管分类。 |",
         "\n---",
         f"\n## 二、{summary['variable_count']} 维全量变量字典详细清单 (Codebook)",
-        "\n| 列 | 变量英文名 (Variable Header) | 中文口径释义 | 数据层级 | 数据类型 | 有效样本 (填报率) | 描述性统计 / 分布特征 |",
-        "|---|---|---|---|---|---|---|"
+        "\n| 列 | 变量英文名 (Variable Header) | 中文口径释义 | 数据层级 | 数据类型 | 时点约定 | 样本状态 (填报率) | 描述性统计 / 分布特征 |",
+        "|---|---|---|---|---|---|---|---|"
     ]
 
     for v in variables:
@@ -532,8 +567,12 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
         tier_short = v["tier"].split("(")[0].strip()
         dtype = v["data_type"].split()[0]
         fill = f"{v['stats']['valid_n']}/{summary['sample_size']} ({v['stats']['fill_rate_pct']}%)"
+        cov = v.get("coverage_status", "")
+        cov_disp = f"{cov} ({fill})" if cov != "Complete (100%)" else "100% 完备"
+        timing_disp = v.get("timing_convention", "-")
         summary_disp = v["stats"].get("summary_display", "-").replace("|", "/")
-        lines.append(f"| {col} | {h} | {desc} | {tier_short} | `{dtype}` | {fill} | {summary_disp} |")
+        lines.append(f"| {col} | {h} | {desc} | {tier_short} | `{dtype}` | {timing_disp} | {cov_disp} | {summary_disp} |")
+
 
     lines.extend([
         "\n---",

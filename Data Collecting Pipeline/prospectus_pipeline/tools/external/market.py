@@ -19,6 +19,7 @@ import argparse
 import datetime as dt
 import json
 import shutil
+import sys
 import time
 import urllib.request
 from pathlib import Path
@@ -26,6 +27,9 @@ from pathlib import Path
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "src"))
+from market_fetcher import get_market_fetcher
+
 WS = ROOT.parent
 BOOK = WS / "HKIPO-MB2026Q1.xlsx"
 CACHE = ROOT / "data" / "market"
@@ -61,29 +65,29 @@ def hk_symbol(code: str) -> str:
 
 
 def fetch(symbol: str, frm: str, to: str, n: int = 120, retries: int = 4) -> list[list]:
-    url = ("https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get"
-           f"?param={symbol},day,{frm},{to},{n},qfq")
-    last = None
-    for i in range(retries):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=25) as r:
-                payload = json.loads(r.read().decode())
-            if payload.get("code") != 0:
-                raise RuntimeError(f"{symbol} code={payload.get('code')} msg={payload.get('msg')}")
-            data = (payload.get("data") or {}).get(symbol) or {}
-            rows = data.get("day") or data.get("qfqday") or []
-            if not rows:
-                raise RuntimeError(f"{symbol} empty bars")
-            return rows
-        except Exception as exc:  # noqa: BLE001
-            last = exc
-            time.sleep(0.6 * (i + 1))
-    raise RuntimeError(f"{symbol} 拉取失败：{last}")
+    """兼容旧接口的后备抓取函数。"""
+    fetcher = get_market_fetcher()
+    bars, _, _ = fetcher.fetch_bars_resilient(symbol, frm, to, n_bars=n)
+    return bars
 
 
-def parse_bar(row: list) -> dict:
+def parse_bar(item: Any) -> dict:
+    if isinstance(item, dict):
+        d = item["date"]
+        if isinstance(d, str):
+            d = dt.datetime.strptime(d[:10], "%Y-%m-%d").date()
+        return {
+            "date": d,
+            "open": float(item["open"]),
+            "close": float(item["close"]),
+            "high": float(item["high"]),
+            "low": float(item["low"]),
+            "volume": float(item["volume"]),
+            "turnover": float(item["turnover"]) if item.get("turnover") is not None else None,
+            "turnover_estimated": bool(item.get("turnover_estimated", False)),
+        }
     # date, open, close, high, low, volume, {}, ?, turnover_万元
+    row = item
     turnover = None
     if len(row) > 8 and row[8] not in (None, "", "{}", {}):
         try:
@@ -98,6 +102,7 @@ def parse_bar(row: list) -> dict:
         "low": float(row[4]),
         "volume": float(row[5]),
         "turnover": turnover,
+        "turnover_estimated": False,
     }
 
 
@@ -119,16 +124,26 @@ def first_on_or_after(bars: list[dict], d: dt.date) -> dict | None:
 
 
 def companies(ws) -> list[tuple[int, str, dt.date, dt.date]]:
+    col_code, col_pd, col_ld = 2, 4, 5
+    for c in range(1, ws.max_column + 1):
+        v = norm(ws.cell(1, c).value)
+        if "stock code" in v:
+            col_code = c
+        elif "date of prospectus" in v:
+            col_pd = c
+        elif "date of listing" in v:
+            col_ld = c
     out = []
     for r in range(2, ws.max_row + 1):
-        code = ws[f"B{r}"].value
+        code = ws.cell(r, col_code).value
         if code in (None, ""):
             continue
-        pd, ld = to_date(ws[f"D{r}"].value), to_date(ws[f"E{r}"].value)
+        pd, ld = to_date(ws.cell(r, col_pd).value), to_date(ws.cell(r, col_ld).value)
         if not pd or not ld:
             continue
         out.append((r, str(code).strip(), pd, ld))
     return out
+
 
 
 def resolve_cols(ws) -> dict[str, int]:
@@ -148,33 +163,60 @@ def resolve_cols(ws) -> dict[str, int]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(description="抓取恒指与港股上市首日市场行情数据 (DD, DH-DM)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--book", default=str(BOOK))
     ap.add_argument("--only", nargs="*", default=None, help="只处理指定股票代码")
+    ap.add_argument(
+        "--provider",
+        choices=["auto", "tencent", "yahoo"],
+        default="auto",
+        help="市场数据提供商偏好 (auto=腾讯优先并自动降级至雅虎财经, tencent, yahoo)",
+    )
     args = ap.parse_args()
     book = Path(args.book)
     CACHE.mkdir(parents=True, exist_ok=True)
+    fetcher = get_market_fetcher()
 
     wb = openpyxl.load_workbook(book)
     ws = wb[SHEET]
     col_of = resolve_cols(ws)
     rows = companies(ws)
     if args.only:
-        rows = [r for r in rows if r[1] in args.only]
-    print(f"工作簿 {len(rows)} 家")
+        targets = set()
+        for x in args.only:
+            s = str(x).strip().upper()
+            targets.add(s)
+            targets.add(s.replace(".HK", ""))
+            d = "".join(ch for ch in s if ch.isdigit())
+            if d:
+                targets.add(f"{int(d):04d}.HK")
+                targets.add(f"{int(d):05d}")
+                targets.add(str(int(d)))
+        rows = [r for r in rows if r[1].upper() in targets or r[1].upper().replace(".HK", "") in targets]
+    print(f"工作簿 {len(rows)} 家 (数据源策略: {args.provider})")
 
     # 恒指：覆盖最早招股书日前 40 个交易日
     hsi_from = (min(p for _, _, p, _ in rows) - dt.timedelta(days=80)).isoformat()
     hsi_to = (max(p for _, _, p, _ in rows) + dt.timedelta(days=5)).isoformat()
-    hsi_raw = fetch("hkHSI", hsi_from, hsi_to, n=200)
-    (CACHE / "hsi.json").write_text(json.dumps(hsi_raw, ensure_ascii=False), encoding="utf-8")
+    hsi_raw, hsi_prov, hsi_errs = fetcher.fetch_bars_resilient(
+        "hkHSI", hsi_from, hsi_to, n_bars=200, preferred_provider=args.provider
+    )
+    (CACHE / "hsi.json").write_text(json.dumps(hsi_raw, ensure_ascii=False, default=str), encoding="utf-8")
     hsi = [parse_bar(x) for x in hsi_raw]
-    print(f"HSI {len(hsi)} 条 {hsi[0]['date']} ~ {hsi[-1]['date']}")
+    print(f"HSI ({hsi_prov}) {len(hsi)} 条 {hsi[0]['date']} ~ {hsi[-1]['date']}")
+    if hsi_errs:
+        print(f"   [HSI 降级警报] 经历过以下重试/失败: {hsi_errs}")
 
     results = []
     for r, code, pd, ld in rows:
-        rec = {"code": code, "row": r, "prospectus": str(pd), "listing": str(ld)}
+        rec = {
+            "code": code,
+            "row": r,
+            "prospectus": str(pd),
+            "listing": str(ld),
+            "hsi_provider": hsi_prov,
+        }
         i = last_before(hsi, pd)
         if i is None or i < 20:
             rec["DD"] = None
@@ -187,22 +229,30 @@ def main() -> int:
         frm = (ld - dt.timedelta(days=3)).isoformat()
         to = (ld + dt.timedelta(days=10)).isoformat()
         try:
-            raw = fetch(sym, frm, to, n=20)
-            (CACHE / f"{sym}.json").write_text(json.dumps(raw, ensure_ascii=False), encoding="utf-8")
-            bars = [parse_bar(x) for x in raw]
+            bars, prov_stock, errs_stock = fetcher.fetch_bars_resilient(
+                code, frm, to, n_bars=20, preferred_provider=args.provider
+            )
+            (CACHE / f"{sym}.json").write_text(
+                json.dumps(bars, ensure_ascii=False, default=str), encoding="utf-8"
+            )
+            rec["provider"] = prov_stock
+            if errs_stock:
+                rec["fallback_errors"] = errs_stock
             bar = first_on_or_after(bars, ld)
             if bar is None:
                 rec["first"] = None
                 rec["first_note"] = "无上市日及之后的 K 线"
             else:
                 rec["first"] = bar
+                if bar.get("turnover_estimated"):
+                    rec["turnover_note"] = "Turnover estimated via Yahoo typical price proxy"
                 if bar["date"] != ld:
                     rec["first_note"] = f"上市日 {ld} 无 K 线，改用 {bar['date']}"
         except Exception as exc:  # noqa: BLE001
             rec["first"] = None
             rec["first_note"] = str(exc)
         results.append(rec)
-        time.sleep(0.25)
+        time.sleep(0.15)
 
     (CACHE / "computed.json").write_text(json.dumps(results, ensure_ascii=False, indent=2, default=str) + "\n",
                                          encoding="utf-8")

@@ -131,17 +131,20 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
     }
 
     def cell(r: int, col_key: str) -> Any:
-        idx = col_map.get(col_key, column_index_from_string(col_key))
+        if col_key not in col_map:
+            raise KeyError(f"Column key {col_key!r} not in verified col_map")
+        idx = col_map[col_key]
         return parse_val(ws.cell(r, idx).value)
 
     results = []
     total_anomalies = 0
 
-    # Scan rows 2 to 39 (38 companies)
-    for row in range(cfg["data_start_row"], cfg["data_start_row"] + 38):
+    # Dynamically scan all company rows from data_start_row to ws.max_row
+    for row in range(cfg["data_start_row"], ws.max_row + 1):
         code = str(cell(row, "B") or "").strip()
         if not code or (only and code not in only):
             continue
+
         name = str(cell(row, "C") or "").strip()
         listing_date_raw = cell(row, "E")
         listing_date = listing_date_raw if isinstance(listing_date_raw, dt.date) else None
