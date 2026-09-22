@@ -1,9 +1,9 @@
-# 香港主板新股市场全景实证与理论研究课题库 (19 大核心 Research Ideas)
+# 香港主板新股市场全景实证与理论研究课题库 (20 大核心 Research Ideas)
 # The Hong Kong Main Board IPO Panoramic Research Compendium: Theoretical Frameworks, Institutional Realities & Econometric Specifications
 
 > **学术基石**：以 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)** 经典综述单行本《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）为核心理论与实证基准，融贯公司金融学、微观市场结构与合同理论前沿经典文献。  
 > **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，138 维完整跨学科指标，38 家挂牌样本，覆盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分股权、基石投资者配售及二级市场量价，100% 审计级穿透确证）。  
-> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 19 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
+> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 20 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
 > 1. 💡 研究课题与核心科学问题 (Research Title & Core Question)
 > 2. 📚 经典文献基准与美股经验事实 (Literature Baseline & U.S. Stylized Facts - Lowry et al. 2017)
 > 3. 🏛️ 香港主板制度背景与样本微观现实 (HKEX Institutional Realities & 2026 Q1 Distribution)
@@ -14,7 +14,7 @@
 
 ---
 
-## 目录索引 (Directory of 19 Research Ideas)
+## 目录索引 (Directory of 20 Research Ideas)
 
 - [Idea 01: 多元化监管通道选择、信息不对称与上市估值折价 (Chapter 18A / 18C / 19A A+H)](#idea-01-多元化监管通道选择信息不对称与上市估值折价-chapter-18a--18c--19a-ah)
 - [Idea 02: FINI 数字化结算、双轨发售机制（Mechanism A vs. B）与固定价格发行的动态信息提取异化](#idea-02-fini-数字化结算双轨发售机制mechanism-a-vs-b与固定价格发行的动态信息提取异化)
@@ -35,6 +35,7 @@
 - [Idea 17: 卖方明星分析师覆盖与抑价“隐性贿赂”假说](#idea-17-卖方明星分析师覆盖与抑价隐性贿赂假说)
 - [Idea 18: 发行费用分拆中的“软美元寻租”：固定承销佣金 vs. 酌情奖励费率博弈](#idea-18-发行费用分拆中的软美元寻租固定承销佣金-vs-酌情奖励费率博弈)
 - [Idea 19: 卖方跨期期望效用最大化与“理性抑价”：发行流产保险、解禁期多阶段套现与激励相容信息租金](#idea-19-卖方跨期期望效用最大化与理性抑价发行流产保险解禁期多阶段套现与激励相容信息租金)
+- [Idea 20: 港股 IPO 长期收益之谜：上市后 3 年买入持有回报（BHR）、基准指数加权偏误（EW vs. VW）与同风格匹配检验](#idea-20-港股-ipo-长期收益之谜上市后-3-年买入持有回报bhr基准指数加权偏误ew-vs-vw与同风格匹配检验-long-run-underperformance-wealth-relatives--benchmark-contamination)
 - [附录：全景课题库统一变量定义与 138 列主表映射全景矩阵](#附录全景课题库统一变量定义与-138-列主表映射全景矩阵)
 
 ---
@@ -942,9 +943,103 @@ $$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{Ne
 
 ---
 
+## Idea 20: 港股 IPO 长期收益之谜：上市后 3 年买入持有回报（BHR）、基准指数加权偏误（EW vs. VW）与同风格匹配检验 (Long-Run Underperformance, Wealth Relatives & Benchmark Contamination)
+
+### 20.1 研究课题与核心科学问题
+- **研究课题**：香港主板新股上市后 3 年（36 个月）买入持有回报（Buy-and-Hold Return, BHR）与财富相对比（Wealth Relative, WR）的真实经验分布，以及基准指数构造方式（等权重 EW vs. 市值加权 VW）对“长期跑输之谜”的决定性影响。
+- **核心科学问题**：
+  1. 港股 IPO 是否真如经典行为金融学文献所述，在上市后 3 年遭受系统性的长期异常低迷（Long-Run Underperformance）？
+  2. 这一长期跑输现象究竟是投资者初始非理性亢奋破灭与管理层择机套现（Ritter 1991; Loughran & Ritter 1995），还是由**选错比较基准（Benchmark Contamination）**引发的计量经济学假象（Lowry, Michaely, & Volkova 2017 Ch 3 & Ch 7; Brav & Gompers 1997）？
+  3. 当比较基准从全市场等权重指数（EW Index）切换为带 8% 权重上限的市值加权恒生指数（VW Index with 8% Cap），并进一步切换为**同等规模（Size / Market Cap）与账面市值比（Book-to-Market / PB）特征匹配投资组合（Matched Portfolios）**时，港股 3 年财富相对比（WR）是否会系统性向 1.00（无异常表现）靠拢？
+  4. 港股特有的制度通道（18A 未盈利生物科技、18C 特专科技、A+H 双重上市价格锚）以及基石投资者的 6 个月限售解禁，如何异质性地塑造新股 3 年后横截面累积收益的分化？
+
+### 20.2 经典文献基准与美股经验事实
+- **早期经典：行为过度乐观与择机假说 (Ritter 1991; Loughran & Ritter 1995)**：
+  - 传统观点认为，投资者在发行初期存在认知偏差，对成长前景盲目乐观；管理层择机在估值泡沫顶峰窗口期发行；
+  - 导致在首日收盘后买入并持有 3 年至 5 年的累计回报严重逊于大盘，形成金融学著名的“IPO 长期弱势之谜（Long-Run Underperformance Puzzle）”。
+- **现代实证批判：基准污染与风格聚集效应 (Brav & Gompers 1997; Mitchell & Stafford 2000; Lowry et al. 2017 Ch 3 & Ch 7)**：
+  - **规模与价值/成长聚集**：IPO 企业绝大多数属于小型、高成长、低账面市值比（Low B/M）股票。同期美股市场上所有老牌小型成长股表现同样疲软，并非 IPO 企业特有；
+  - **Lowry et al. (2017) 40 年全美股大样本（Table 3.10）实证结论**：
+    - 样本：1973–2013 年 8,592 家美股 IPO，3 年买入持有平均收益为 **+24.4%**；
+    - 对比等权重基准（EW Index，+86.7%）：财富相对比 $WR = 0.67$（表面上严重跑输 33%）；
+    - 对比市值加权基准（VW Index，+41.6%）：$WR = 0.88$（跑输幅度明显收窄）；
+    - 对比**同规模（Size）与同账面市值比（Book-to-Market）匹配组合**（基准收益 +23.8%）：**$WR = 1.00$（完全打平，跑输现象彻底消失）**！
+  - **日历时间组合四因子回归（CTPR，Table 3.11）**：
+    - 在控制市场（RMRF）、规模（SMB）、估值（HML）与动量（UMD）四个风险因子后，3 年等权组合超额收益 $\alpha = +0.101\%$ ($t = 0.67$)，市值加权组合 $\alpha = -0.002\%$ ($t = -0.01$)，**在统计上精确等于 0**。所谓的“长期异常跑输”纯属选错尺子的幻觉。
+
+### 20.3 香港主板制度背景与样本微观现实
+- **微观现实 1：恒生指数特殊的“8% 权重上限市值加权（VW with 8% Cap）”**：
+  - 美股 S&P 500 为纯自由流通市值加权；而港股为防止腾讯、阿里、美团等少数科技巨头垄断指数，设定了**单只成分股 8% 权重天花板**；
+  - 这种折中设计使得恒指兼具大盘与中盘特征。若直接使用等权重（EW）基准，会因港股大量缺乏流动性的微盘股产生极高的换手磨损与买卖价差弹跳偏差（Bid-Ask Bounce）；
+- **微观现实 2：极端二元分化的市场流动性（Liquidity Polarization）**：
+  - 港股缺乏散户普惠资金垫底，大量中小市值新股上市 1~3 年后沦为日均成交额不足百万港元的“流动性孤岛”；
+  - 若不控制换手率与流动性因子，长周期持有回报的计算极易受到非同步交易（Nontrading Days）的严重扭曲；
+- **微观现实 3：双重限售解禁冲击与基本面实质出清（Lock-up Expiration & Fundamental Shakeout）**：
+  - 基石投资者面临 6 个月法定锁定期（Col 104），控股股东面临 6 个月完全锁定期及后续 6 个月控股权锁定；
+  - 上市后 6 至 12 个月是抛售套现的流动性挤压期，而**第 3 年（36 个月）**则是 18A 生物科技能否商业化摘 B、18C 特专科技能否兑现营收指标、传统制造业业绩是否变脸的“终极基本面检验窗口”。
+
+### 20.4 待检验学术假说体系
+- **$H_{20a}$（基准加权偏误假说，Benchmark Weighting Bias）**：
+  在以首日收盘价（Col 127）为起点的 3 年买入持有回报（BHR）检验中，对比全市场等权重基准（EW Index）时，港股 IPO 样本显示出显著的长期负向异常收益（$WR < 1.00$）；而当基准切换为市值加权指数（VW Index，含 8% 封顶修正）时，财富相对比显著提升，表明等权重基准对微盘股的高权重赋予夸大了新股跑输程度。
+- **$H_{20b}$（同规模同风格匹配吸收假说，Style-Matching Resolution）**：
+  一旦采用同行业、同市值区间（Size）以及同等市净率/账面市值比（PB / Book-to-Market）的非新股港股上市公司作为 1:1 或特征匹配组合基准，港股新股的 3 年财富相对比向 1.00 显著收敛，且在日历时间四因子回归（CTPR）中异常收益 $\alpha$ 统计上不显著异于 0，证实长期表现落后本质上是小型成长股因子的共有风险特征。
+- **$H_{20c}$（监管通道与价格锚异质性假说，Regulatory Channel & Price Anchor）**：
+  采用 A+H 双重上市通道（Col 75）的企业，由于内地 A 股存量二级市场估值锚的持续约束，其 3 年异常买入持有回报方差显著低于纯红筹企业；而 18A（Col 77）和 18C（Col 78）等未商业化科技企业，3 年期收益分布呈现极度右偏（极少数核心管线爆发企业带来数十倍收益，拉高中位数以下的大面积亏损）。
+
+### 20.5 规范计量经济学模型
+
+#### 1. 3 年买入持有回报（BHR）与财富相对比（Wealth Relative）定义
+设股票 $i$ 在上市首日二级市场收盘后（$t = 1$）买入，持有至第 36 个月末（或破产退市日）：
+$$R_{i, 36} = \prod_{t=1}^{36} (1 + R_{it}) - 1$$
+
+同期对应基准资产 $B$（EW 指数、VW 指数或风格匹配组合）的买入持有回报为：
+$$R_{B, 36} = \prod_{t=1}^{36} (1 + R_{Bt}) - 1$$
+
+样本总体 3 年财富相对比（Wealth Relative, $WR$）定义为：
+$$WR_{36} = \frac{1 + \bar{R}_{\text{IPO}, 36}}{1 + \bar{R}_{B, 36}}$$
+* 若 $WR_{36} < 1.00$，表明相对于该基准表现落后；
+* 若 $WR_{36} = 1.00$，表明表现完全平手，不存在异常跑输；
+* 若 $WR_{36} > 1.00$，表明产生正向超额回报。
+
+#### 模型 20.1：个股 3 年异常买入持有回报（BHAR）横截面解释模型 (OLS)
+定义个股 3 年异常回报 $\text{BHAR}_{i, 36} = R_{i, 36} - R_{\text{Match}, 36}$，检验影响长期收益分化的核心发行特征：
+$$\text{BHAR}_{i, 36} = \beta_0 + \beta_1 \text{IR}_i + \beta_2 \text{CornerstoneRatio}_i + \beta_3 \text{Chapter18C}_i + \beta_4 \text{APlusH}_i + \beta_5 \ln(\text{Proceeds}_i) + \beta_6 \text{ControllerEconomicPct}_i + \beta_7 \text{HighTechDummy}_i + \varepsilon_i$$
+
+#### 模型 20.2：月度日历时间四因子组合回归模型 (Calendar-Time Portfolio Regression, CTPR)
+为彻底消除事件研究法中的横截面时间自相关偏差（Cross-sectional Correlation），每月将过去 36 个月内完成 IPO 的所有港股公司构建为一个投资组合（分为等权重 EW 和市值加权 VW 两组），进行 Fama-French 三因子加 Carhart 动量因子的时间序列回归：
+$$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t + \beta_3 \text{HML}_t + \beta_4 \text{UMD}_t + \varepsilon_t$$
+* $R_{pt}$：由过去 36 个月内上市的 IPO 企业构成的月度投资组合收益率；
+* $R_{ft}$：香港外汇基金票据或 1 个月 HIBOR 无风险收益率；
+* $(R_{mt} - R_{ft})$：恒生指数全市场超额收益；
+* $\text{SMB}_t$、$\text{HML}_t$、$\text{UMD}_t$：港股市场的规模因子、估值因子与动量因子；
+* **核心检验目标**：截距项 $\alpha$（Alpha）是否显著异于 0。若 $\alpha$ 在统计上不显著，则直接拒绝“IPO 长期异常跑输”假说。
+
+### 20.6 138 列主表变量与字段映射
+| 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
+|---|:---:|---|:---:|:---:|
+| 发行认购价 | **Col 11** | `IPO Subscription Price (HK$)` | 货币数值 | 收益率基准起点参考 |
+| 首日收盘价 | **Col 127**| `First trading day closing price (HK$)` | 货币数值 | **3 年 BHR 买入持有起始点 ($P_0$)** |
+| 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 模型 20.1 核心自变量 ($\text{IR}_i$) |
+| 基石配售比例 | **Col 103**| `Final cornerstone allocation (% of base offer)`| 数值百分比 | 初始筹码锁定自变量 |
+| 最早基石解禁日 | **Col 104**| `Earliest cornerstone unlock date (dd/mm/yy)`| 日期 | 中期流动性释放节点 |
+| 18C 特专科技标识 | **Col 78** | `Chapter 18C flag` | 0/1 虚拟变量 | 科技通道异质性自变量 |
+| 18A 生物科技标识 | **Col 77** | `Chapter 18A flag` | 0/1 虚拟变量 | 研发管线不确定性自变量 |
+| A+H 双重上市标识 | **Col 75** | `A+H issuer flag` | 0/1 虚拟变量 | 跨境价格锚约束自变量 |
+| 控股股东经济利益比 | **Col 68** | `Controller economic interest at listing (%)`| 数值百分比 | 代理成本与掏空风险控制 |
+| 最终净募资额 | **Col 117**| `Net IPO proceeds to issuer (HK$)` | 货币数值 | 企业资本规模控制变量 |
+| 公司成立年限 | **Col 82** | `Firm age at IPO (years)` | 数值浮点 | 成熟度基础控制变量 |
+| 行业分类代码 | **Col 79** | `Industry classification code` | 编码 | 匹配基准与行业固定效应 |
+
+### 20.7 经济学直觉与学术贡献
+1. **打破“IPO 长期必输”的学术迷信**：将 Lowry et al. (2017) 针对美股的现代计量经济学基准检验首次完整引入港股新股市场，系统揭示了等权重（EW）与市值加权（VW，带 8% 上限）在衡量港股长线收益时的系统性偏差；
+2. **连接一级发行与二级长线资产定价**：建立了一级市场制度特征（基石份额、18A/18C 监管通道、首日抑价让利）对二级市场 3 年期真实累积回报的传导链条；
+3. **为港股投资者与监管政策提供理性证据**：为买方机构评估 IPO 长期配置价值、以及港交所评估特专科技（18C）和未盈利生物科技（18A）长周期资本形成质量提供了扎实的量化分析框架。
+
+---
+
 ## 附录：全景课题库统一变量定义与 138 列主表映射全景矩阵
 
-下表系统汇编了上述 19 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
+下表系统汇编了上述 20 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
 
 | 列号 | 列标 | 规范英文字段名 (Standard Header) | 中文口径释义 | 所属 Idea 索引 | 计量角色 | 格式规范 |
 |:---:|:---:|---|---|:---:|:---:|:---:|
@@ -953,7 +1048,7 @@ $$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{Ne
 | **Col 3** | `C` | `Company Name at time of listing` | 公司上市时法定英文名称 | 全库通用 | 样本标识 | `@` |
 | **Col 4** | `D` | `Date of Prospectus (dd/mm/yy)` | 招股书法定刊发日期 | Idea 16 | 时间基准 | `YYYY-MM-DD` |
 | **Col 6** | `F` | `Sponsor(s)` | 独家/联席保荐人名单 | Idea 05, 10, 17 | 核心解释 | 文本列表 |
-| **Col 11**| `K` | `IPO Subscription Price (HK$)` | 最终发售价 (HK$) | Idea 02, 06, 13 | 核心价格 | `0.00` |
+| **Col 11**| `K` | `IPO Subscription Price (HK$)` | 最终发售价 (HK$) | Idea 02, 06, 13, 20 | 核心价格 | `0.00` |
 | **Col 16**| `P` | `Sale Shares` | 老股发售转让股数 | Idea 14, 19 | 解释变量 | `#,##0` |
 | **Col 17**| `Q` | `New shares ` | 新股发售发行股数 | Idea 19 | 规模基准 | `#,##0` |
 | **Col 20**| `T` | `Maximum Offer Price` | 最高发售价 (HK$) | Idea 01, 02 | 价格区间 | `0.00` |
@@ -980,35 +1075,35 @@ $$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{Ne
 | **Col 64**| `BL`| `Pre-IPO investor board seat (1=yes; 0=no)`| 机构投资者派驻董事会席位 | Idea 04 | 治理介入 | `0/1` |
 | **Col 66**| `BN`| `Pre-IPO holding duration (years)` | 机构最早入股至上市持有年限 | Idea 04, 14 | 资本耐心 | `0.00` |
 | **Col 67**| `BO`| `Ultimate controller type` | 最终控制人性质分类 | Idea 07 | 治理控制 | `@` |
-| **Col 68**| `BP`| `Controller economic interest at listing (%)`| 控股股东上市时经济利益持股比 | Idea 06, 07, 09, 15, 19 | 核心自变量 | `0.00%` |
+| **Col 68**| `BP`| `Controller economic interest at listing (%)`| 控股股东上市时经济利益持股比 | Idea 06, 07, 09, 15, 19, 20 | 核心自变量 | `0.00%` |
 | **Col 69**| `BQ`| `Controller voting rights at listing (%)` | 控股股东上市时投票权比例 | Idea 07, 15 | 核心自变量 | `0.00%` |
 | **Col 70**| `BR`| `Interest-bearing debt at year-1 end` | 上市前一年有息债务总额 | Idea 10 | 债务负荷 | `#,##0` |
 | **Col 72**| `BT`| `Debt repayment (% of planned net IPO proceeds)`| 拟用于偿还债务的募资比例 | Idea 10, 19 | 核心自变量 | `0.00%` |
-| **Col 75**| `BW`| `A+H issuer flag` | A+H 双重上市发行人标识 | Idea 01, 12 | 核心解释 | `0/1` |
+| **Col 75**| `BW`| `A+H issuer flag` | A+H 双重上市发行人标识 | Idea 01, 12, 20 | 核心解释 | `0/1` |
 | **Col 76**| `BX`| `WVR flag` | 同股不同权 (Chapter 8A) 标识 | Idea 06, 07, 15 | 核心解释 | `0/1` |
-| **Col 77**| `BY`| `Chapter 18A flag` | 第 18A 章未盈利生物科技标识 | Idea 01, 12 | 核心解释 | `0/1` |
-| **Col 78**| `BZ`| `Chapter 18C flag` | 第 18C 章特专科技公司标识 | Idea 01, 04, 12, 16 | 核心解释 | `0/1` |
-| **Col 79**| `CA`| `Industry classification code` | 行业分类标准代码 | Idea 16 | 行业固定效应 | 编码 |
+| **Col 77**| `BY`| `Chapter 18A flag` | 第 18A 章未盈利生物科技标识 | Idea 01, 12, 20 | 核心解释 | `0/1` |
+| **Col 78**| `BZ`| `Chapter 18C flag` | 第 18C 章特专科技公司标识 | Idea 01, 04, 12, 16, 20 | 核心解释 | `0/1` |
+| **Col 79**| `CA`| `Industry classification code` | 行业分类标准代码 | Idea 16, 20 | 行业固定效应 | 编码 |
 | **Col 82**| `CD`| `Firm age at IPO (years)` | 公司成立至上市年限 (岁) | 全库通用 | 基础控制 | `0.00` |
 | **Col 101**| `CS`| `Listing expenses (HK$)` | 总上市费用 (港元，显性发行成本) | Idea 05, 06, 12, 18, 19 | 核心自变量 | `#,##0` |
 | **Col 102**| `CT`| `Cornerstone investor names` | 基石投资者法定披露名单 | Idea 14 | 跨界匹配 | 文本列表 |
-| **Col 103**| `CU`| `Final cornerstone allocation (% of base offer)`| 基石投资者最终获配占基础发售比 | Idea 03, 09 | 核心自变量 | `0.00%` |
-| **Col 104**| `CV`| `Earliest cornerstone unlock date (dd/mm/yy)`| 最早基石解禁法定日期 | Idea 09 | 事件日期 | `YYYY-MM-DD` |
+| **Col 103**| `CU`| `Final cornerstone allocation (% of base offer)`| 基石投资者最终获配占基础发售比 | Idea 03, 09, 20 | 核心自变量 | `0.00%` |
+| **Col 104**| `CV`| `Earliest cornerstone unlock date (dd/mm/yy)`| 最早基石解禁法定日期 | Idea 09, 20 | 事件日期 | `YYYY-MM-DD` |
 | **Col 105**| `CW`| `Subscription Ratio (times)` | 公开发售散户认购超购倍数 | Idea 02, 08, 13, 18 | 核心自变量 | `#,##0.00` |
 | **Col 106**| `CX`| `Public applicants` | 公开发售有效申请总人数 | Idea 13 | 散户广度 | 整数 |
 | **Col 107**| `CY`| `Public valid applied shares` | 公开发售有效申请总股数 | Idea 13 | 散户深度 | 整数 |
 | **Col 111**| `DC`| `Final global offering shares (before over-allotment)`| 全球发售基础总发售股数 | Idea 06 | 规模基准 | `#,##0` |
 | **Col 114**| `DF`| `Over-allotment shares actually issued` | 实际发行的超额配售股份数量 | Idea 03, 11 | 稳价结果 | `#,##0` |
 | **Col 115**| `DG`| `Greenshoe exercise rate (%)` | 绿鞋实际行使比例 (0%~100%) | Idea 03, 11 | 核心因/自变量 | `0.00%` |
-| **Col 117**| `DI`| `Net IPO proceeds to issuer (HK$)` | 发行人实际所得净募资金额 | Idea 19, 全库通用 | 规模控制 | `#,##0` |
+| **Col 117**| `DI`| `Net IPO proceeds to issuer (HK$)` | 发行人实际所得净募资金额 | Idea 19, 20, 全库通用 | 规模控制 | `#,##0` |
 | **Col 118**| `DJ`| `Public shareholding at listing (%)` | 上市时公开发售股份占总股本比 | Idea 19 | 留存筹码核心自变量 | `0.00%` |
 | **Col 120**| `DL`| `Unrestricted public shareholding at listing (%)`| 上市首日不受限自由流通盘比例 | Idea 03, 11, 13 | 核心自变量 | `0.00%` |
 | **Col 123**| `DO`| `HSI return over 20 trading days before prospectus (%)`| 招股日前 20 日恒指大盘累计收益率 | Idea 02, 08 | 宏观公开信息 | `0.00%` |
 | **Col 124**| `DP`| `HK ordinary IPO count in 90 calendar days` | 招股日前 90 日主板新股数量 | Idea 08 | 市场周期 | 整数 |
 | **Col 125**| `DQ`| `1-month HIBOR before prospectus (%)` | 招股前一日 1 个月期 HIBOR 利率 | Idea 08, 13 | 资金成本 | `0.00%` |
 | **Col 126**| `DR`| `Banking system aggregate balance before prospectus`| 招股前一日香港银行体系总结余 | Idea 08 | 宏观流动性 | `#,##0` |
-| **Col 127**| `DS`| `First trading day closing price (HK$)` | 上市首日二级市场收盘价 (HK$) | 全库通用 | 基础价格 | `0.00` |
-| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | Idea 19, 全库核心 | 核心因变量 (Y) | `0.00%` |
+| **Col 127**| `DS`| `First trading day closing price (HK$)` | 上市首日二级市场收盘价 (HK$) | Idea 20, 全库通用 | 基础价格 | `0.00` |
+| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | Idea 19, 20, 全库核心 | 核心因变量 (Y) | `0.00%` |
 | **Col 129**| `DY`| `Money left on the table (HK$)` | 留在桌面上的财富 / 财富流失金额 | Idea 06, 17, 18, 19 | 核心因变量 (Y) | `#,##0.00` |
 | **Col 130**| `DZ`| `First trading day opening price (HK$)` | 上市首日二级市场开盘价 (HK$) | 全库通用 | 开盘表现 | `0.00` |
 | **Col 131**| `EA`| `First trading day high (HK$)` | 上市首日二级市场最高价 (HK$) | Idea 13 | 盘中振幅 | `0.00` |
@@ -1019,6 +1114,29 @@ $$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{Ne
 | **Col 136**| `EF`| `Offer mechanism` | 发售机制 (Mechanism A vs. B) | Idea 02 | 核心自变量 | `@` |
 | **Col 137**| `EG`| `Applicable IPO rules / transition basis` | 适用监管规则与过渡期基准 | 全库通用 | 制度背景 | `@` |
 | **Col 138**| `EH`| `Company Chinese Name` | 公司中文法定名称 (末列确证) | 全库通用 | 样本主键 | `@` |
+| **Col 139**| `EI`| `Current listing status` | 当前挂牌存续状态 (Active/Suspended/Delisted)| Idea 20, 全库通用 | 存续状态 | `@` |
+| **Col 140**| `EJ`| `1-month post-IPO close price (HK$)` | 上市满 1 个月(T+20交易日)收盘价 (HK$) | Idea 20 | 跨期价格 | `0.00` |
+| **Col 141**| `EK`| `1-month BHR from Day-1 close (%)` | 1 个月二级买入持有收益率 (%) | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 142**| `EL`| `1-month total return from offer price (%)`| 1 个月一级申购累计回报率 (%) | Idea 20 | 因变量 (Y) | `0.00%` |
+| **Col 143**| `EM`| `1-month HSI return (%)` | 同期恒生指数累计收益率 (%) | Idea 20 | 宏观基准 | `0.00%` |
+| **Col 144**| `EN`| `1-month HSTECH return (%)` | 同期恒生科技指数累计收益率 (%) | Idea 20 | 风格基准 | `0.00%` |
+| **Col 145**| `EO`| `1-month wealth relative vs HSI` | 1 个月对标恒指财富相对比 ($WR_{\text{HSI}}$) | Idea 20 | 相对超额绩效 | `0.000` |
+| **Col 146**| `EP`| `1-month wealth relative vs HSTECH` | 1 个月对标恒科财富相对比 ($WR_{\text{HSTECH}}$)| Idea 20 | 风格相对绩效 | `0.000` |
+| **Col 147**| `EQ`| `1-month average daily turnover (HK$)` | 首月日均成交金额 (港元) | Idea 20 | 流动性指标 | `#,##0` |
+| **Col 148**| `ER`| `6-month post-IPO close price (HK$)` | 上市满 6 个月(基石解禁日)收盘价 (HK$) | Idea 20 | 解禁期价格 | `0.00` |
+| **Col 149**| `ES`| `6-month BHR from Day-1 close (%)` | 6 个月二级买入持有收益率 (%) | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 150**| `ET`| `6-month total return from offer price (%)`| 6 个月一级申购累计回报率 (%) | Idea 20 | 因变量 (Y) | `0.00%` |
+| **Col 151**| `EU`| `6-month HSI return (%)` | 同期恒生指数累计收益率 (%) | Idea 20 | 宏观基准 | `0.00%` |
+| **Col 152**| `EV`| `6-month HSTECH return (%)` | 同期恒生科技指数累计收益率 (%) | Idea 20 | 风格基准 | `0.00%` |
+| **Col 153**| `EW`| `6-month wealth relative vs HSI` | 6 个月对标恒指财富相对比 ($WR_{\text{HSI}}$) | Idea 20 | 相对超额绩效 | `0.000` |
+| **Col 154**| `EX`| `6-month wealth relative vs HSTECH` | 6 个月对标恒科财富相对比 ($WR_{\text{HSTECH}}$)| Idea 20 | 风格相对绩效 | `0.000` |
+| **Col 155**| `EY`| `6-month average daily turnover (HK$)` | 第 6 个月日均成交金额 (港元) | Idea 20 | 流动性指标 | `#,##0` |
+| **Col 156**| `EZ`| `Liquidity decay ratio (6M vs Day-1 turnover)`| 6 个月相对首日流动性衰减比率 (%) | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 157**| `FA`| `1-year post-IPO return (%) [Reserved]` | 1 年期持有收益率 [预留待填充] | Idea 20 | 远期因变量 | `0.00%` |
+| **Col 158**| `FB`| `1-year wealth relative vs HSI [Reserved]` | 1 年期对标恒指财富相对比 [预留] | Idea 20 | 远期绩效 | `0.000` |
+| **Col 159**| `FC`| `3-year post-IPO return (%) [Reserved]` | 3 年期持有收益率 [预留待填充] | Idea 20 | 长期因变量 | `0.00%` |
+| **Col 160**| `FD`| `3-year wealth relative vs HSI [Reserved]` | 3 年期对标恒指财富相对比 [预留] | Idea 20 | 长期绩效 | `0.000` |
+| **Col 161**| `FE`| `18A/18C regulatory milestone status` | 监管资格演变与商业化里程碑状态 | Idea 20, 全库通用 | 治理与监管分类 | `@` |
 
 ---
 
