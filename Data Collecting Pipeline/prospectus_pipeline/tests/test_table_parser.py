@@ -1,4 +1,6 @@
 """原生结构化表格解析引擎单元测试。"""
+from __future__ import annotations
+
 import unittest
 from pathlib import Path
 

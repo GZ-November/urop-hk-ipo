@@ -1,4 +1,6 @@
 """Hash-bound extracted -> validated -> reviewed -> written credentials."""
+from __future__ import annotations
+
 import hashlib
 import json
 import os

@@ -1,4 +1,6 @@
 """Prepare separately identified allotment evidence; never write unreviewed figures."""
+from __future__ import annotations
+
 import hashlib
 import json
 import re
