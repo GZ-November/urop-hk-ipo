@@ -438,8 +438,9 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
     if missing_files:
         errors.extend({"code": c, "detail": "missing extraction JSON"} for c in missing_files)
         log("MISSING FILES: " + ", ".join(missing_files))
-    report = {
+    run_report = {
         "schema_version": 1,
+        "target": target,
         "expected_codes": wanted,
         "records": records,
         "missing_files": missing_files,
@@ -447,6 +448,44 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
         "errors": errors,
         "gate_pass": not errors,
     }
+    # Save immutable run-level report
+    import datetime as dt
+    import uuid
+    runs_dir = (cfg["paths"]["allot_out"] if target == "allot" else cfg["paths"]["out"]) / "validation_runs"
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    ts_str = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ")
+    run_id = uuid.uuid4().hex[:10]
+    run_report["run_id"] = run_id
+    run_report["generated_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+    atomic_json(runs_dir / f"validation_{target}_{ts_str}_{run_id}.json", run_report)
+
+    # Rebuild or update aggregate validation.json
+    if only and out_file.exists():
+        try:
+            agg_report = strict_load_file(out_file)
+            agg_records = {r["code"]: r for r in agg_report.get("records", [])}
+            for r in records:
+                agg_records[r["code"]] = r
+            all_expected = _expected_codes(cfg)
+            all_records = [agg_records[c] for c in all_expected if c in agg_records]
+            all_missing_files = [c for c in all_expected if c not in agg_records]
+            all_errors = [e for r in all_records for e in [{"code": r["code"], "detail": d} for d in r.get("errors", [])]]
+            all_pending = [{"code": r["code"], "fields": r.get("fields_missing", [])} for r in all_records if r.get("fields_missing")]
+            report = {
+                "schema_version": 1,
+                "target": target,
+                "expected_codes": all_expected,
+                "records": all_records,
+                "missing_files": all_missing_files,
+                "pending_missing_fields": all_pending,
+                "errors": all_errors,
+                "gate_pass": not all_errors and not all_missing_files,
+            }
+        except Exception:
+            report = run_report
+    else:
+        report = run_report
+
     out = out_file
     atomic_json(out, report)
     log(f"\n校验完成[{target}]：目标 {len(wanted)} 家，解析 {len(records)} 家，错误 {len(errors)} 项；"

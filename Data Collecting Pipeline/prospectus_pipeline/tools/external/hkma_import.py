@@ -102,18 +102,19 @@ def pick(rows: list[dict], d: dt.date) -> dict | None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="只预览，不写回")
+    ap.add_argument("--book", default=str(BOOK))
     ap.add_argument("--csv", default=str(CSV_PATH))
-    ap.add_argument("--book", default=str(BOOK), help="目标工作簿（默认主工作簿）")
+    ap.add_argument("--only", nargs="*", default=None, help="只处理指定股票代码")
     args = ap.parse_args()
     book = Path(args.book)
 
     rows = load_csv(Path(args.csv))
 
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
+    wb_read = openpyxl.load_workbook(book, data_only=True)
+    ws_read = wb_read[SHEET]
     col_of = {}
-    for c in range(1, ws.max_column + 1):
-        v = ws.cell(1, c).value
+    for c in range(1, ws_read.max_column + 1):
+        v = ws_read.cell(1, c).value
         if v in (None, ""):
             continue
         n = norm(v)
@@ -122,22 +123,26 @@ def main() -> None:
         elif n == norm(BALANCE_HEADER):
             col_of["balance"] = c
     if set(col_of) != {"hibor", "balance"}:
-        wb.close()
+        wb_read.close()
         raise SystemExit(f"工作簿里找不到这两列，实际得到 {col_of}")
 
     # 取公司行
     companies = []
-    for r in range(2, ws.max_row + 1):
-        code = ws[f"{CODE_COL}{r}"].value
-        date = ws[f"{DATE_COL}{r}"].value
+    for r in range(2, ws_read.max_row + 1):
+        code = ws_read[f"{CODE_COL}{r}"].value
+        date = ws_read[f"{DATE_COL}{r}"].value
         if code in (None, ""):
+            continue
+        c_str = str(code).strip()
+        if args.only and c_str not in args.only:
             continue
         if not isinstance(date, (dt.date, dt.datetime)):
             print(f"!! 第 {r} 行 {code} 的招股书日期不是日期型，跳过")
             continue
         if isinstance(date, dt.datetime):
             date = date.date()
-        companies.append((r, str(code).strip(), date))
+        companies.append((r, c_str, date))
+    wb_read.close()
 
     print(f"工作簿：{len(companies)} 家公司\n")
     print(f"{'code':10s} {'招股书日':12s} {'观察日':12s} {'HIBOR':>9s} {'总结余(HK$)':>16s}")
@@ -149,8 +154,6 @@ def main() -> None:
             no_row.append((code, d))
             print(f"{code:10s} {str(d):12s} {'—':12s} {'无可用观察值（日期早于 CSV 起点）':>28s}")
             continue
-        ws.cell(r, col_of["hibor"]).value = round(h["hibor"], 8)
-        ws.cell(r, col_of["balance"]).value = h["balance"]
         filled += 1
         print(f"{code:10s} {str(d):12s} {str(h['date']):12s} "
               f"{h['hibor']*100:8.5f}% {h['balance']:16,.0f}")
@@ -160,30 +163,24 @@ def main() -> None:
         print("  建议把 CSV 起点提前到早于最早招股书日期：", min(d for _, d in no_row))
 
     if args.dry_run:
-        wb.close()
         print("\n--dry-run：未写回。确认无误后去掉 --dry-run 重跑。")
-        return
+        return 0
 
-    wb.close()
-    backup_dir = book.parent / "backups" / "excel_snapshots"
-    backup_dir.mkdir(parents=True, exist_ok=True)
-    backup = backup_dir / (f"{book.stem}.backup-before-market-"
-                           f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
-    shutil.copy2(book, backup)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
-    for r, code, d in companies:
-        h = pick(rows, d)
-        if h is None:
-            continue
-        ws.cell(r, col_of["hibor"]).value = round(h["hibor"], 8)
-        ws.cell(r, col_of["balance"]).value = h["balance"]
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    tmp.replace(book)
-    print(f"\n已写回 DF/DG 两列（{filled} 家）\n备份：{backup.name}")
+    sys.path.insert(0, str(ROOT / "src"))
+    from workbook_transaction import workbook_transaction
+
+    with workbook_transaction(book, operation="market-hkma") as wb:
+        ws = wb[SHEET]
+        for r, code, d in companies:
+            h = pick(rows, d)
+            if h is None:
+                continue
+            ws.cell(r, col_of["hibor"]).value = round(h["hibor"], 8)
+            ws.cell(r, col_of["balance"]).value = h["balance"]
+
+    print(f"\n已写回 DF/DG 两列（{filled} 家） -> {book.name}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

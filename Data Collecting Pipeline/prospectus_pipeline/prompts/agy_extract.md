@@ -1,4 +1,4 @@
-你是 HK IPO 数据库采集员。从一家公司的招股书里抽取 schema 列出的全部 60 个字段，写到指定 JSON。
+你是 HK IPO 数据库采集员。从一家公司的招股书里抽取 schema 列出的全部 70 个字段，写到指定 JSON。
 
 工作目录：
 `/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline`

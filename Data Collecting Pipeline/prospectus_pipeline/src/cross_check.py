@@ -35,10 +35,15 @@ def parse_val(v: Any) -> Any:
     return v
 
 
-def run_cross_check(cfg: dict | None = None, only: list[str] | None = None) -> dict:
+def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_dir: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
-    book_path = WS / cfg["workbook"]
+    if "workbook_path" in cfg:
+        book_path = Path(cfg["workbook_path"])
+    elif Path(cfg["workbook"]).is_absolute():
+        book_path = Path(cfg["workbook"])
+    else:
+        book_path = WS / cfg["workbook"]
     wb = openpyxl.load_workbook(book_path, data_only=True)
     ws = wb[cfg["sheet"]]
 
@@ -391,10 +396,13 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None) -> d
     wb.close()
     
     # Write report files
-    out_dir = ROOT / "out"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    report_json = out_dir / "cross_check_report.json"
-    report_md = out_dir / "cross_check_report.md"
+    if out_dir is not None:
+        od = Path(out_dir)
+    else:
+        od = cfg["paths"]["out"] if (cfg and "paths" in cfg and "out" in cfg["paths"]) else ROOT / "out"
+    od.mkdir(parents=True, exist_ok=True)
+    report_json = od / "cross_check_report.json"
+    report_md = od / "cross_check_report.md"
     
     summary = {
         "generated_at": dt.datetime.now().isoformat(),
@@ -407,7 +415,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None) -> d
     
     md_lines = [
         "# HK IPO 宏观业务逻辑与跨字段一致性审计报告",
-        f"\n**生成时间**：{dt.datetime.now():%Y-%m-%d %H:%M:%S} | **样本数量**：38 家 2026 Q1 主板公司",
+        f"\n**生成时间**：{dt.datetime.now():%Y-%m-%d %H:%M:%S} | **样本数量**：{len(results)} 家主板公司",
         f"\n**审计结论**：100% 完美达标公司 **{summary['clean_companies']} / {summary['total_companies']}**，业务预警项 **{total_anomalies}** 项。\n",
         "| 股票代码 | 公司名称 | 综合状态 | 审计项 | 详情 |",
         "|---|---|---|---|---|"

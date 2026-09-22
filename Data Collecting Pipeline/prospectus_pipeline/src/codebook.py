@@ -127,10 +127,15 @@ def norm_header(v: Any) -> str:
 
 
 def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
-    """完整扫描工作簿生成 120 维变量字典与样本统计量。"""
+    """完整扫描工作簿生成全量变量字典与样本统计量。"""
     if cfg is None:
         cfg = load_cfg()
-    book_path = WS / cfg["workbook"]
+    if "workbook_path" in cfg:
+        book_path = Path(cfg["workbook_path"])
+    elif Path(cfg["workbook"]).is_absolute():
+        book_path = Path(cfg["workbook"])
+    else:
+        book_path = WS / cfg["workbook"]
     wb = openpyxl.load_workbook(book_path, data_only=True)
     ws = wb[cfg["sheet"]]
 
@@ -155,15 +160,25 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     ext_by_header = {norm_header(val[0]): val for val in EXTERNAL_VARS.values()}
     academic_by_header = {norm_header(k): v for k, v in ACADEMIC_VARS.items()}
 
-    n_companies = 38
     start_row = cfg["data_start_row"]
     max_col = ws.max_column
+
+    # 动态确定实际公司样本数量
+    valid_rows = []
+    for r in range(start_row, ws.max_row + 1):
+        c_val = ws.cell(r, 2).value
+        if c_val is not None and str(c_val).strip():
+            valid_rows.append(r)
+    n_companies = len(valid_rows)
+    if n_companies == 0:
+        n_companies = max(1, ws.max_row - start_row + 1)
+        valid_rows = list(range(start_row, start_row + n_companies))
 
     variables = []
     matrix = []
 
     # 提取所有数据行
-    for r in range(start_row, start_row + n_companies):
+    for r in valid_rows:
         row_vals = [ws.cell(r, c).value for c in range(1, max_col + 1)]
         matrix.append(row_vals)
 
@@ -322,8 +337,12 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             "values": col_vals,
         })
 
+    cohort_str = cfg.get("dataset", {}).get("cohort", "2026 Q1") if cfg else "2026 Q1"
     summary = {
-        "dataset_name": "HK IPO Main Board 2026 Q1 Full Dataset",
+        "dataset_name": f"HK IPO Main Board {cohort_str} Full Dataset",
+        "cohort": cohort_str,
+        "workbook_name": book_path.name,
+        "sheet": cfg.get("sheet", "NLR") if cfg else "NLR",
         "sample_size": n_companies,
         "variable_count": len(variables),
         "tiers": {
@@ -343,7 +362,7 @@ def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Pat
         out_path = ROOT / "out" / "HKIPO-MB2026Q1_clean.csv"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    n_rows = variables[0]["stats"]["valid_n"] + variables[0]["stats"]["missing_n"]  # 38
+    n_rows = variables[0]["stats"]["valid_n"] + variables[0]["stats"]["missing_n"]
     headers = [v["header"] for v in variables]
 
     with open(out_path, mode="w", encoding="utf-8-sig", newline="") as f:
@@ -362,7 +381,6 @@ def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Pat
                     if math.isnan(val) or math.isinf(val):
                         row_vals.append("")
                     else:
-                        # 整数值保留整数显示，浮点数正常显示
                         row_vals.append(f"{int(val)}" if val.is_integer() else f"{val:.6g}")
                 else:
                     row_vals.append(str(val).strip())
@@ -373,16 +391,20 @@ def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Pat
 
 def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """生成详尽的学术计量级数据变量代码本（Markdown 格式）。"""
+    cohort = summary.get("cohort", "2026 Q1")
+    wb_name = summary.get("workbook_name", "HKIPO-MB2026Q1.xlsx")
+    sheet_name = summary.get("sheet", "NLR")
     if out_path is None:
-        out_path = ROOT / "out" / "HKIPO_2026Q1_Codebook.md"
+        tag = cohort.replace(" ", "")
+        out_path = ROOT / "out" / f"HKIPO_{tag}_Codebook.md"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     lines = [
-        "# 香港主板 2026 Q1 IPO 学术研究数据变量代码本 (Data Codebook)",
-        f"\n- **样本规模 (N)**：38 家 2026 年第一季度香港联交所主板新上市公司",
+        f"# 香港主板 {cohort} IPO 学术研究数据变量代码本 (Data Codebook)",
+        f"\n- **样本规模 (N)**：{summary['sample_size']} 家香港联交所主板新上市公司",
         f"- **变量总数 (K)**：{summary['variable_count']} 维完整跨学科指标",
         f"- **数据层级划分**：浅绿官方基础 ({summary['tiers']['green_hkex']} 列) + 浅蓝招股书披露 ({summary['tiers']['blue_prospectus']} 列) + 深蓝配发及外部衍生 ({summary['tiers']['darkblue_external']} 列)",
-        f"- **生成时间**：{summary['generated_at']} | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)",
+        f"- **生成时间**：{summary['generated_at']} | **数据基准**：`{wb_name}` (Sheet: {sheet_name})",
         "\n---",
         "\n## 一、变量层级与来源体系导览",
         "\n| 数据层级 | 覆盖范围 | 列数 | 核心特征与学术用途 |",
@@ -402,25 +424,25 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
         desc = v["chinese_desc"].replace("|", "/")
         tier_short = v["tier"].split("(")[0].strip()
         dtype = v["data_type"].split()[0]
-        fill = f"{v['stats']['valid_n']}/38 ({v['stats']['fill_rate_pct']}%)"
+        fill = f"{v['stats']['valid_n']}/{summary['sample_size']} ({v['stats']['fill_rate_pct']}%)"
         summary_disp = v["stats"].get("summary_display", "-").replace("|", "/")
         lines.append(f"| {col} | {h} | {desc} | {tier_short} | `{dtype}` | {fill} | {summary_disp} |")
 
     lines.extend([
         "\n---",
         "\n## 三、计量软件导入指引 (Stata / Python)",
-        "\n配套清洗数据文件：`out/HKIPO-MB2026Q1_clean.csv`（编码：UTF-8 with BOM）。",
+        f"\n配套清洗数据文件：`out/{Path(wb_name).stem}_clean.csv`（编码：UTF-8 with BOM）。",
         "\n### 1. Stata",
         "```stata",
         '* 导入纯净版 CSV 数据',
-        'import delimited "out/HKIPO-MB2026Q1_clean.csv", clear bindquote(strict) varnames(1)',
+        f'import delimited "out/{Path(wb_name).stem}_clean.csv", clear bindquote(strict) varnames(1)',
         'describe',
         'summarize',
         '```',
         "\n### 2. Python (pandas)",
         "```python",
         'import pandas as pd',
-        'df = pd.read_csv("out/HKIPO-MB2026Q1_clean.csv")',
+        f'df = pd.read_csv("out/{Path(wb_name).stem}_clean.csv")',
         'print(df.info())',
         'print(df.describe())',
         '```',
@@ -445,12 +467,31 @@ def generate_codebook_json(variables: list[dict], summary: dict, out_path: Path 
     return out_path
 
 
-def export_all(cfg: dict | None = None) -> dict:
+def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> dict:
     """一键执行代码本构建、CSV 导出与 JSON 生成。"""
+    if cfg is None:
+        cfg = load_cfg()
     variables, summary = build_codebook(cfg)
-    csv_path = export_clean_csv(variables)
-    md_path = generate_codebook_markdown(variables, summary)
-    json_path = generate_codebook_json(variables, summary)
+    cohort = summary.get("cohort", "2026 Q1")
+    tag = cohort.replace(" ", "")
+    dataset_id = cfg.get("dataset", {}).get("id", "HKIPO-MB2026Q1") if cfg else "HKIPO-MB2026Q1"
+
+    csv_name = f"{dataset_id}_clean.csv"
+    md_name = f"HKIPO_{tag}_Codebook.md"
+    json_name = f"HKIPO_{tag}_Codebook.json"
+
+    if out_dir is not None:
+        od = Path(out_dir)
+        od.mkdir(parents=True, exist_ok=True)
+        csv_path = export_clean_csv(variables, out_path=od / csv_name)
+        md_path = generate_codebook_markdown(variables, summary, out_path=od / md_name)
+        json_path = generate_codebook_json(variables, summary, out_path=od / json_name)
+    else:
+        out_root = cfg["paths"]["out"] if (cfg and "paths" in cfg and "out" in cfg["paths"]) else ROOT / "out"
+        out_root.mkdir(parents=True, exist_ok=True)
+        csv_path = export_clean_csv(variables, out_path=out_root / csv_name)
+        md_path = generate_codebook_markdown(variables, summary, out_path=out_root / md_name)
+        json_path = generate_codebook_json(variables, summary, out_path=out_root / json_name)
 
     print("\n" + "=" * 70)
     print("HK IPO 学术代码本与科研 CSV 导出完成")

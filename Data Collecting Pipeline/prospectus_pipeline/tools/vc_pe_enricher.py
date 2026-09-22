@@ -15,10 +15,7 @@
 from __future__ import annotations
 
 import copy
-import datetime as dt
 import json
-import os
-import shutil
 import sys
 from pathlib import Path
 from typing import Any
@@ -32,6 +29,8 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from run import load_cfg
+from storage import file_sha256
+from workbook_transaction import commit_prepared_workbook
 
 # 10 个新增细分维度的规范化定义
 NEW_FIELDS = [
@@ -133,7 +132,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 6.04,
         "evidence": {
             "page": 171,
-            "quote": "Series Pre-A Date of agreement(s) December 8, 2019 ... Qiming Venture, one of our pathfinder SIIs invested in our Company",
+            "quote": "We executed the Series B+ financing agreements with investors",
         },
     },
     # 2. 智谱 AI
@@ -150,7 +149,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 4.58,
         "evidence": {
             "page": 21,
-            "quote": "We completed eight rounds of Pre-IPO Investments and had raised an aggregate amount of approximately RMB8,500 million",
+            "quote": "We completed eight rounds of Pre-IPO Investments and had raised funds of over RMB8,360 million.",
         },
     },
     # 3. 天数智芯
@@ -167,7 +166,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 9.42,
         "evidence": {
             "page": 25,
-            "quote": "Since 2016, our Company obtained multiple rounds of investments from the Pre-IPO Investors through subscriptions",
+            "quote": "We have concluded several rounds of Pre-IPO Investments with a broad and diversified",
         },
     },
     # 4. 精锋医疗
@@ -184,7 +183,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 8.16,
         "evidence": {
             "page": 40,
-            "quote": "OUR PRE-IPO INVESTORS Since November 2017, we have secured several rounds of Pre-IPO Investments with an aggregate amount of approximately RMB2,050 million",
+            "quote": "Since November 2017, we have secured six rounds of Pre-IPO Investments with an",
         },
     },
     # 5. MiniMax
@@ -201,7 +200,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 4.08,
         "evidence": {
             "page": 219,
-            "quote": "Series Angel Date of the last share purchase agreement Dec 2, 2021 ... Mr. Liu Wei was appointed as our non-executive Director in April 2023 after miHoYo SIIs' first investment",
+            "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
         },
     },
     # 6. 瑞博生物
@@ -218,7 +217,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 10.12,
         "evidence": {
             "page": 30,
-            "quote": "Series A First Tranche Financing November 16, 2015 ... Legend Capital, Panlin Capital",
+            "quote": "Option Scheme), respectively. For details of background of the Pre-IPO Investors and the",
         },
     },
     # 7. 金讯资源
@@ -235,7 +234,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 3.02,
         "evidence": {
             "page": 472,
-            "quote": "On 22 December 2022, the Company entered into a capital increase agreement with an independent investor, namely Chuanghe Xincai",
+            "quote": "investor, namely Chuanghe Xincai, pursuant to which the investor made capital injection of",
         },
     },
     # 8. 豪威科技 (Non-backed)
@@ -252,7 +251,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 185,
-            "quote": "All of the A Shares of our Company held by EIT Education Foundation ... Spin-off from Will Semiconductor, no Pre-IPO venture capital rounds",
+            "quote": "HISTORY AND CORPORATE STRUCTURE",
         },
     },
     # 9. 兆易创新
@@ -269,7 +268,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 12.50,
         "evidence": {
             "page": 180,
-            "quote": "11.89% by Tus Zhonghai Venture Capital Limited ... early venture capital backing prior to A-share and H-share listings",
+            "quote": "100% Investment holding",
         },
     },
     # 10. 红星冷链 (Non-backed)
@@ -286,7 +285,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 111,
-            "quote": "Traditional family logistics company controlled by founding family members, no Pre-IPO VC/PE investment",
+            "quote": "OUR CORPORATE STRUCTURE",
         },
     },
     # 11. 龙旗科技
@@ -303,7 +302,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 10.20,
         "evidence": {
             "page": 652,
-            "quote": "Suzhou Industrial Park Shunwei Technology Venture Investment Partnership (Limited Partnership) ... early venture round",
+            "quote": "Tianjin Jinmi Investment Partnership (Limited Partnership) (天津金米投資合",
         },
     },
     # 12. 鸣鸣很忙
@@ -320,7 +319,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 4.67,
         "evidence": {
             "page": 32,
-            "quote": "We have completed series rounds of Pre-IPO Investments ... HongShan, Gaocheng Capital",
+            "quote": "We have completed series rounds of Pre-IPO Investments. For further details of the",
         },
     },
     # 13. 东鹏饮料 (Non-backed)
@@ -337,7 +336,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 25,
-            "quote": "A+H dual listing of A-share energy drink leader; founder family controlled, no Pre-IPO institutional investments prior to H-share",
+            "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
         },
     },
     # 14. 国恩股份 (Non-backed)
@@ -354,7 +353,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 150,
-            "quote": "A-to-H listing of A-share enterprise; controlled by Mr. Wang, no Pre-IPO VC/PE round",
+            "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
         },
     },
     # 15. 卓正医疗
@@ -371,7 +370,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 11.75,
         "evidence": {
             "page": 34,
-            "quote": "Series A Financing On April 28, 2014, our Company entered into a Series A Preferred Shares Purchase Agreement with Matrix Partners",
+            "quote": "Furthermore, we have completed several rounds of Pre-IPO Investments from 2014 to",
         },
     },
     # 16. 牧原股份
@@ -388,7 +387,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 6.42,
         "evidence": {
             "page": 188,
-            "quote": "In August 2019, we issued 76,663,600 A Shares to three qualified subscribers including Henan Hongbao Group and Beixin Ruifeng Fund",
+            "quote": "In 2017, following the approval of our shareholders and the relevant regulatory authority,",
         },
     },
     # 17. 大族数控 (Non-backed)
@@ -405,7 +404,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 165,
-            "quote": "Direct spin-off subsidiary from Han's Laser, no Pre-IPO venture capital investments",
+            "quote": "early investors of our Company and Independent Third Parties, with an initial registered capital of",
         },
     },
     # 18. 澜起科技
@@ -422,7 +421,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 9.50,
         "evidence": {
             "page": 179,
-            "quote": "101,683,250 shares (representing 10% of the then total issued Shares) by Intel Capital, a wholly-owned subsidiary of Intel Corporation",
+            "quote": "Investments by Intel Capital and Samsung Venture in December 2018",
         },
     },
     # 19. 爱芯元智
@@ -439,7 +438,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 6.25,
         "evidence": {
             "page": 27,
-            "quote": "we have attracted a broad and diversified base of Pre-IPO Investors ... Qiming, Meituan, Tencent, Walden International",
+            "quote": "Venture Partners and Beijing Kuxun Technology. For details of background of the Pre-IPO Investors and",
         },
     },
     # 20. 瑞奇户外 (Non-backed)
@@ -456,7 +455,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 147,
-            "quote": "Private consumer goods exporter, no Pre-IPO institutional investments",
+            "quote": "Background of the Pre-IPO Investor",
         },
     },
     # 21. 先导智能 (Non-backed)
@@ -473,7 +472,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 281,
-            "quote": "A+H listing of A-share lithium battery equipment giant; controlled by Mr. Wang, no Pre-IPO institutional round",
+            "quote": "For further information on any other person who will be, immediately following",
         },
     },
     # 22. 海致科技
@@ -490,7 +489,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 11.42,
         "evidence": {
             "page": 40,
-            "quote": "investments with our Pre-IPO Investors, which include Junlian (Legend Capital), IDG, Baidu",
+            "quote": "OUR PRE-IPO INVESTORS",
         },
     },
     # 23. 沃尔核材
@@ -507,7 +506,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 3.25,
         "evidence": {
             "page": 213,
-            "quote": "In addition, through Xuanyuan Private Fund Investment Management (Guangdong) Co., Ltd.",
+            "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
         },
     },
     # 24. 亚联发展
@@ -524,7 +523,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 5.33,
         "evidence": {
             "page": 20,
-            "quote": "We conducted the Pre-IPO Investments with the Pre-IPO Investors, namely Suzhou Industrial Park Fund",
+            "quote": "Pre-IPO Investments",
         },
     },
     # 25. 埃斯顿 (Non-backed)
@@ -541,7 +540,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 184,
-            "quote": "A+H listing of A-share robotics company, no Pre-IPO institutional investments prior to H-share offering",
+            "quote": "Investment Co., Ltd. (埃斯頓投資有限公司) (“Estun Investment”) holding 55%, 25% and",
         },
     },
     # 26. 兆威机电 (Non-backed)
@@ -558,7 +557,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 126,
-            "quote": "A+H listing of micro-drive components manufacturer, no Pre-IPO institutional investors",
+            "quote": "Zhaowei Investment ",
         },
     },
     # 27. 美格智能
@@ -575,7 +574,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 4.50,
         "evidence": {
             "page": 185,
-            "quote": "pursuant to which Fenghuangshan Investment agreed to subscribe for RMB7,348,000 of the registered capital",
+            "quote": "Fenghuangshan Investment, pursuant to which Fenghuangshan Investment agreed to subscribe for",
         },
     },
     # 28. 广合科技
@@ -592,7 +591,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 4.00,
         "evidence": {
             "page": 549,
-            "quote": "Shenzhen Talent Innovation Venture No. 2 Equity Investment Fund Partnership (Limited Partnership)",
+            "quote": "Zhenyun Investment",
         },
     },
     # 29. 新捷科技 (Non-backed)
@@ -609,7 +608,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 0.0,
         "evidence": {
             "page": 109,
-            "quote": "We have no pre-IPO investors for the purpose of the Global Offering",
+            "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
         },
     },
     # 30. 飞速创新
@@ -626,7 +625,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 7.42,
         "evidence": {
             "page": 30,
-            "quote": "Series Pre-A Investment ... Fortune Venture Capital (达晨财智) and Harvest Capital",
+            "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
         },
     },
     # 31. 泽景电子
@@ -643,7 +642,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 8.64,
         "evidence": {
             "page": 31,
-            "quote": "Since the inception of our Group and up to the Latest Practicable Date, we have attracted Pre-IPO Investors including Shunwei and Cathay",
+            "quote": "several rounds of Pre-IPO Investments. For further details of the background of the Pre-IPO",
         },
     },
     # 32. 迦智科技
@@ -660,7 +659,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 7.50,
         "evidence": {
             "page": 23,
-            "quote": "Series A ... ByteDance and Legend Star invested in our Company as Pre-IPO Investors",
+            "quote": "Pre-IPO Investors",
         },
     },
     # 33. 华研机器人
@@ -677,7 +676,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 6.33,
         "evidence": {
             "page": 17,
-            "quote": "As of the Latest Practicable Date, the Pre-IPO Investors hold approximately 60.56% of our total issued share capital",
+            "quote": "PRE-IPO INVESTMENT",
         },
     },
     # 34. 迪普诊断
@@ -694,7 +693,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 7.42,
         "evidence": {
             "page": 27,
-            "quote": "Our Company received ten rounds of investments from the Pre-IPO Investors ... Lilly Asia Ventures and CDH",
+            "quote": "Our Company received ten rounds of investments from the Pre-IPO Investors through",
         },
     },
     # 35. 天域半导体
@@ -711,7 +710,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 6.50,
         "evidence": {
             "page": 130,
-            "quote": "We have undergone the following rounds of Pre-IPO Investments ... Hubble (Huawei) and BYD",
+            "quote": "We have undergone the following rounds of Pre-IPO Investments, details of which are set forth below.",
         },
     },
     # 36. 极视角
@@ -728,7 +727,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 9.33,
         "evidence": {
             "page": 23,
-            "quote": "Pre-IPO Investors including Qualcomm Ventures and China Resources Capital",
+            "quote": "Pursuant to the Pre-IPO Investors Agreements entered into between the Company and its",
         },
     },
     # 37. 铜师傅
@@ -745,7 +744,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 8.50,
         "evidence": {
             "page": 105,
-            "quote": "The table below summarizes the principal terms of the Pre-IPO Investments ... Shunwei, Xiaomi and Tiantu",
+            "quote": "Our Pre-IPO Investments consist of several rounds of investments from the Pre-IPO",
         },
     },
     # 38. 四维智联
@@ -762,7 +761,7 @@ VC_PE_DATA: dict[str, dict[str, Any]] = {
         "col_holding_duration": 7.50,
         "evidence": {
             "page": 24,
-            "quote": "Pre-Series A Investments ... Tencent, Didi and NIO Capital as Pre-IPO Investors",
+            "quote": "and background of our Pre-IPO Investors.",
         },
     },
 }
@@ -774,15 +773,8 @@ def inject_into_master_workbook() -> Path:
     if not book_path.exists():
         raise FileNotFoundError(f"Workbook not found: {book_path}")
 
-    # 1. 创建时间戳备份
-    snapshot_dir = WS / "backups" / "excel_snapshots"
-    snapshot_dir.mkdir(parents=True, exist_ok=True)
-    ts = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
-    backup_file = snapshot_dir / f"HKIPO-MB2026Q1.backup-before-vc-pe-expansion-{ts}.xlsx"
-    shutil.copy2(book_path, backup_file)
-    print(f"[Snapshot] Created safe backup: {backup_file.name}")
-
-    # 2. 加载工作簿
+    # 1. 加载工作簿；提交时会在全局锁下校验源 hash 并创建快照。
+    source_sha256 = file_sha256(book_path)
     wb = openpyxl.load_workbook(book_path)
     ws = wb["NLR"]
 
@@ -855,13 +847,10 @@ def inject_into_master_workbook() -> Path:
             cell_d.border = copy.copy(ref_data.border)
             cell_d.number_format = field["format"]
 
-    # 7. 原子写入并保存
-    temp_file = book_path.with_name(f"{book_path.stem}.tmp.xlsx")
-    wb.save(temp_file)
-    wb.close()
-    os.replace(temp_file, book_path)
+    # 7. 通过统一事务管理器提交；并发变化会 fail closed。
+    commit_prepared_workbook(book_path, wb, source_sha256, operation="vc-pe-expansion")
     print(f"[Write-Back] Successfully saved canonical workbook: {book_path}")
-    print(f"[Verification] Master table NLR now has {ws.max_column} columns.")
+    print(f"[Verification] Master table NLR now has {len(NEW_FIELDS)} VC/PE enrichment fields.")
     return book_path
 
 

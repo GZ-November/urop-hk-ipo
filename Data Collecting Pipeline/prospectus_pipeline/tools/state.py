@@ -12,12 +12,14 @@ from state import save_record, require  # noqa: E402
 from validate import validate_all  # noqa: E402
 
 
-def current(cfg, code, target):
-    report = validate_all(cfg, only=[code], target=target)
-    rec = report["records"][0]
-    if not rec.get("gate_pass", rec.get("status") in {"pass", "warning_missing"}):
-        raise SystemExit(f"{code}: current JSON did not pass deterministic validation")
-    return {**rec, "code": code, "target": target, "gate_pass": True}
+def get_records_by_code(cfg, codes, target):
+    report = validate_all(cfg, only=codes if codes else None, target=target)
+    by_code = {}
+    for r in report.get("records", []):
+        c = r.get("code")
+        if c:
+            by_code[c] = r
+    return by_code
 
 
 def main():
@@ -33,22 +35,32 @@ def main():
     if args.all:
         from run import read_companies
         codes = [c["code"] for c in read_companies(cfg)]
+        target_codes = None
     elif args.code:
         codes = args.code
+        target_codes = codes
     else:
         ap.error("必须指定 --code 或 --all")
 
+    records_map = get_records_by_code(cfg, target_codes, args.target)
+
     for code in codes:
-        rec = current(cfg, code, args.target)
+        rec = records_map.get(code)
+        if not rec:
+            raise SystemExit(f"{code}: record not found in validation output")
+        if not rec.get("gate_pass", rec.get("status") in {"pass", "warning_missing"}):
+            raise SystemExit(f"{code}: current JSON did not pass deterministic validation")
+        payload = {**rec, "code": code, "target": args.target, "gate_pass": True}
+
         if args.stage == "extracted":
-            save_record(cfg, args.target, code, "extracted", rec)
+            save_record(cfg, args.target, code, "extracted", payload)
             print(f"RECORDED extracted {code} {rec['hash']}")
         else:
             require(cfg, args.target, code, rec["hash"], "extracted")
             require(cfg, args.target, code, rec["hash"], "validated")
             passed = args.verdict == "pass"
             save_record(cfg, args.target, code, "reviewed",
-                        {**rec, "verdict": args.verdict, "gate_pass": passed})
+                        {**payload, "verdict": args.verdict, "gate_pass": passed})
             print(f"RECORDED reviewed={args.verdict} {code} {rec['hash']}")
     return 0
 

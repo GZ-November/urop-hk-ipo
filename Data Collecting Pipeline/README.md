@@ -46,7 +46,7 @@ Data Collecting Pipeline/
     ├── schema/                    # Contract schemas (fields.json, allot_fields.json)
     ├── prompts/                   # LLM Extraction schemas & few-shot instructions
     ├── workflows/                 # Headless workflow definitions
-    ├── tests/                     # Automated Test Suite (20/20 Passed)
+    ├── tests/                     # Automated Test Suite (55/55 Passed)
     ├── data/                      # PDF store, page text, and evidence packets (gitignored)
     └── out/                       # Verifiable state ledger, clean CSV, and Codebook
 ```

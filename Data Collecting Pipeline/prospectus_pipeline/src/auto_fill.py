@@ -120,89 +120,145 @@ def inventory() -> list[dict]:
     prospectus_packets = {r["code"]: r for r in load_json(PACKETS, [])}
     allot_packets = {r["code"]: r for r in load_json(ALLOT_PACKETS, [])}
     rows = []
+    sys.path.insert(0, str(PIPE / "src"))
+    from state import CONTRACT_VERSION, cells_digest, file_hash, read_record
+
+    # Open once for written-cell credential checks.  A workbook-wide hash is
+    # provenance only because later stages legitimately update other columns.
+    import openpyxl
+    cfg_book = cfg["_ws"] / cfg["workbook"]
+    # Normal mode is intentional: random cell access on a read-only worksheet
+    # rescans the XML stream for every address and makes status quadratic.
+    digest_wb = openpyxl.load_workbook(cfg_book, read_only=False, data_only=False)
+    digest_ws = digest_wb[cfg["sheet"]]
+
+    def current_record(rec, payload_hash, expected_fields):
+        return bool(
+            rec
+            and rec.get("gate_pass") is True
+            and rec.get("contract_version") == CONTRACT_VERSION
+            and rec.get("fields_total") == expected_fields
+            and payload_hash
+            and rec.get("json_sha256") == payload_hash
+        )
+
+    def written_alignment(rec, payload_hash, expected_fields):
+        if not current_record(rec, payload_hash, expected_fields):
+            return False
+        addresses = rec.get("cell_addresses")
+        expected = rec.get("cell_digest")
+        return bool(addresses and expected and cells_digest(digest_ws, addresses) == expected)
+
     for co in companies:
         code = co["code"]
         s = stem(code)
         xl = written.get(code, {})
+        p_json = EXT / f"{s}.json"
+        a_json = ALLOT_EXT / f"{s}.json"
+        p_hash = file_hash(p_json) if p_json.exists() else None
+        a_hash = file_hash(a_json) if a_json.exists() else None
+
+        # Check validated & reviewed & written states
+        p_val = read_record(cfg, "prospectus", code, "validated")
+        p_rev = read_record(cfg, "prospectus", code, "reviewed")
+        p_wri = read_record(cfg, "prospectus", code, "written")
+
+        a_val = read_record(cfg, "allot", code, "validated")
+        a_rev = read_record(cfg, "allot", code, "reviewed")
+        a_wri = read_record(cfg, "allot", code, "written")
+
+        p_val_ok = current_record(p_val, p_hash, 70)
+        p_rev_ok = current_record(p_rev, p_hash, 70)
+        p_align_ok = written_alignment(p_wri, p_hash, 70)
+
+        a_val_ok = current_record(a_val, a_hash, 18)
+        a_rev_ok = current_record(a_rev, a_hash, 18)
+        a_align_ok = written_alignment(a_wri, a_hash, 18)
+
         rec = {
             "row": co["row"],
             "code": code,
             "name": co.get("name") or "",
             "pdf": (PDF_DIR / f"{s}.pdf").exists(),
             "packet": (PKT_DIR / f"{s}.md").exists(),
-            "extracted": json_ok(EXT / f"{s}.json"),
-            "excel_prospectus": bool(xl.get("prospectus")),
-            "excel_allot": bool(xl.get("allot")),
+            "extracted": json_ok(p_json),
+            "excel_cells_prospectus": bool(xl.get("prospectus")),
+            "excel_cells_allot": bool(xl.get("allot")),
+            "prospectus_validated": p_val_ok,
+            "prospectus_reviewed": p_rev_ok,
+            "prospectus_aligned": p_align_ok,
             "allot_packet": (ALLOT_PKT_DIR / f"{s}.md").exists(),
-            "allot_extracted": json_ok(ALLOT_EXT / f"{s}.json"),
+            "allot_extracted": json_ok(a_json),
+            "allot_validated": a_val_ok,
+            "allot_reviewed": a_rev_ok,
+            "allot_aligned": a_align_ok,
             "prospectus_packet_rec": prospectus_packets.get(code),
             "allot_packet_rec": allot_packets.get(code),
-            "prospectus_write_tracked": False,
-            "allot_write_tracked": False,
+            "excel_prospectus": bool(xl.get("prospectus")) and p_align_ok,
+            "excel_allot": bool(xl.get("allot")) and a_align_ok,
+            "prospectus_write_tracked": p_align_ok,
+            "allot_write_tracked": a_align_ok,
         }
-        # Once the repaired pipeline has written a row, the per-company manifest
-        # becomes authoritative. A changed JSON must be reviewed and written again.
-        sys.path.insert(0, str(PIPE / "src"))
-        from state import file_hash, read_record
-        for target, json_path, excel_key in (
-            ("prospectus", EXT / f"{s}.json", "excel_prospectus"),
-            ("allot", ALLOT_EXT / f"{s}.json", "excel_allot"),
-        ):
-            written_state = read_record(cfg, target, code, "written")
-            if written_state and json_path.exists():
-                rec[excel_key] = written_state.get("json_sha256") == file_hash(json_path)
-                rec[target + "_write_tracked"] = True
         rec["need_prepare"] = not (rec["pdf"] and rec["packet"])
         rec["need_extract"] = rec["packet"] and not rec["extracted"]
-        rec["need_write"] = rec["extracted"] and not rec["excel_prospectus"]
+        rec["need_validate"] = rec["extracted"] and not rec["prospectus_validated"]
+        rec["need_write"] = rec["extracted"] and (not rec["excel_cells_prospectus"] or not rec["prospectus_aligned"])
         rec["need_allot_prepare"] = not rec["allot_packet"]
         rec["need_allot_extract"] = rec["allot_packet"] and not rec["allot_extracted"]
-        rec["need_allot_write"] = rec["allot_extracted"] and not rec["excel_allot"]
-        rec["done"] = rec["excel_prospectus"]  # 招股书进表才算这家完成
+        rec["need_allot_write"] = rec["allot_extracted"] and (not rec["excel_cells_allot"] or not rec["allot_aligned"])
+        rec["done"] = rec["excel_cells_prospectus"] and rec["prospectus_aligned"]
         rows.append(rec)
+    digest_wb.close()
     return rows
 
 
 def print_status(rows: list[dict]) -> None:
     need_prep = [r for r in rows if r["need_prepare"]]
     need_ex = [r for r in rows if r["need_extract"]]
+    need_val = [r for r in rows if r["need_validate"]]
     need_write = [r for r in rows if r["need_write"]]
     need_allot_ex = [r for r in rows if r["need_allot_extract"]]
     need_allot_write = [r for r in rows if r["need_allot_write"]]
-    in_excel = [r for r in rows if r["excel_prospectus"]]
-    have_json = [r for r in rows if r["extracted"]]
-    legacy = [r for r in rows if ((r["excel_prospectus"] and not r["prospectus_write_tracked"])
-                                  or (r["excel_allot"] and not r["allot_write_tracked"]))]
-    print(f"工作簿 {len(rows)} 家 | 北京 {datetime.now(BJ):%Y-%m-%d %H:%M} "
+
+    cells_p = [r for r in rows if r["excel_cells_prospectus"]]
+    cells_a = [r for r in rows if r["excel_cells_allot"]]
+    json_p = [r for r in rows if r["extracted"]]
+    json_a = [r for r in rows if r["allot_extracted"]]
+    val_p = [r for r in rows if r["prospectus_validated"]]
+    rev_p = [r for r in rows if r["prospectus_reviewed"]]
+    align_p = [r for r in rows if r["prospectus_aligned"]]
+    align_a = [r for r in rows if r["allot_aligned"]]
+
+    total = len(rows)
+    print(f"工作簿 {total} 家 | 北京 {datetime.now(BJ):%Y-%m-%d %H:%M} "
           f"| {'高峰（建议等空闲）' if peak_now() else '空闲（可抽）'}")
-    print(f"  招股书进表 {len(in_excel)}/{len(rows)}  JSON {len(have_json)}/{len(rows)}")
-    if legacy:
-        print(f"  注意：{len(legacy)} 家为旧流程写入，暂无哈希绑定的 written 记录；"
-              "不能据此证明当前 JSON 与 Excel 完全一致")
-    print(f"  待准备 {len(need_prep)}  待抽取 {len(need_ex)}  "
-          f"待写回Excel {len(need_write)}  配发待抽 {len(need_allot_ex)}  "
-          f"配发待写回 {len(need_allot_write)}")
+    print("-----------------------------------------------------------------")
+    print(f"  [物理状态]  Excel单元格已填: 招股书 {len(cells_p)}/{total} | 配发 {len(cells_a)}/{total}")
+    print(f"  [抽取材状态] JSON文件已存在: 招股书 {len(json_p)}/{total} | 配发 {len(json_a)}/{total}")
+    print(f"  [授权状态]  契约验证(70f):  招股书 {len(val_p)}/{total}")
+    print(f"  [审查状态]  独立复核(Rev):  招股书 {len(rev_p)}/{total}")
+    print(f"  [哈希对齐]  指纹严格对齐:  招股书 {len(align_p)}/{total} | 配发 {len(align_a)}/{total}")
+    print("-----------------------------------------------------------------")
+
+    unaligned = [r for r in rows if (r["excel_cells_prospectus"] and not r["prospectus_aligned"])]
+    if unaligned:
+        print(f"  提示：{len(unaligned)} 家 Excel 单元格已填充，但未绑定当前 70 字段哈希凭证。")
     if need_prep:
         print("待 prepare:", " ".join(r["code"] for r in need_prep))
     if need_ex:
-        print("待招股书抽取:")
-        for r in need_ex:
-            print(f"  {r['code']:9s}  row {r['row']:<3d}  {r['name'][:60]}")
+        print("待招股书抽取:", " ".join(r["code"] for r in need_ex))
+    if need_val:
+        print(f"待 70 字段契约验证 ({len(need_val)} 家):", " ".join(r["code"] for r in need_val[:10]) + ("..." if len(need_val) > 10 else ""))
     if need_write:
-        print("JSON已齐、尚未写进 Excel:")
-        for r in need_write:
-            print(f"  {r['code']:9s}  row {r['row']:<3d}  → write-ready")
+        print(f"待授权写回 / 哈希对齐 ({len(need_write)} 家):", " ".join(r["code"] for r in need_write[:10]) + ("..." if len(need_write) > 10 else ""))
     if need_allot_ex:
         print("待配发抽取:", " ".join(r["code"] for r in need_allot_ex))
     if need_allot_write:
         print("配发待写回:", " ".join(r["code"] for r in need_allot_write))
-    if (not need_prep and not need_ex and not need_write and not need_allot_ex
-            and not need_allot_write and not legacy):
-        print("全流程完成：抽取 JSON 与 Excel 已对齐。")
-    elif not need_prep and not need_ex and not need_write and not need_allot_ex and not need_allot_write:
-        print("表格均已有值，但旧写入尚无可验证的版本绑定；状态为 legacy-untracked。")
-    elif need_write and not need_ex:
-        print("下一步：python3 prospectus_pipeline/auto_fill.py write-ready")
+
+    if (len(cells_p) == total and len(val_p) == total and len(rev_p) == total and len(align_p) == total
+            and len(cells_a) == total and len(align_a) == total):
+        print("★ 全流程完备：全量 38 家公司 70 字段招股书 + 配发结果均已验证、复核且与 Excel 严格对齐！")
 
 
 def run_py(args: list[str]) -> int:

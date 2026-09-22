@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""HK IPO 2026 Q1 学术与市场全景分析报告生成器。
+"""Config-driven HK IPO academic and market report generator.
 
-汇总 38 家主板 IPO 公司的 120 维数据，提炼：
+汇总配置 cohort 内的主板 IPO 数据，提炼：
   1. 募资规模与市值大盘（总募资、平均/中位数募资额、总市值）；
   2. 行业分布（恒生行业 HSICS 门类与高频子赛道）；
   3. 发行机制与零售情绪（Mechanism A/B 占比、超额认购倍数分布）；
@@ -38,10 +38,15 @@ def parse_float(v: Any) -> float | None:
         return None
 
 
-def generate_report(cfg: dict | None = None) -> dict:
+def generate_report(cfg: dict | None = None, out_path: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
-    book_path = WS / cfg["workbook"]
+    if "workbook_path" in cfg:
+        book_path = Path(cfg["workbook_path"])
+    elif Path(cfg["workbook"]).is_absolute():
+        book_path = Path(cfg["workbook"])
+    else:
+        book_path = WS / cfg["workbook"]
     wb = openpyxl.load_workbook(book_path, data_only=True)
     ws = wb[cfg["sheet"]]
 
@@ -202,6 +207,8 @@ def generate_report(cfg: dict | None = None) -> dict:
     n_mech_b = sum(1 for d in data if d["mechanism"] == "Mechanism B")
 
     stats = {
+        "cohort": cfg.get("dataset", {}).get("cohort", "IPO cohort"),
+        "workbook_name": book_path.name,
         "n_companies": n_companies,
         "total_net_proceeds_hkd": total_net_proceeds,
         "total_gross_proceeds_hkd": total_gross_proceeds,
@@ -233,14 +240,18 @@ def generate_report(cfg: dict | None = None) -> dict:
     }
 
     # Generate Markdown Report
-    out_dir = ROOT / "out"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    report_path = out_dir / "HKIPO_2026Q1_Market_Report.md"
+    if out_path is not None:
+        report_path = Path(out_path)
+    else:
+        out_dir = cfg["paths"]["out"] if (cfg and "paths" in cfg and "out" in cfg["paths"]) else ROOT / "out"
+        dataset_id = cfg.get("dataset", {}).get("id", book_path.stem)
+        report_path = out_dir / f"{dataset_id}_Market_Report.md"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
 
     md = [
-        "# 香港主板 2026 年第一季度 (Q1) IPO 全景学术与市场分析报告",
-        f"\n**数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR) | **统计样本**：38 家主板新上市公司",
-        f"**生成时间**：{dt.datetime.now():%Y-%m-%d %H:%M:%S} | **字段维度**：120 列全量数据",
+        f"# 香港主板 {stats['cohort']} IPO 全景学术与市场分析报告",
+        f"\n**数据基准**：`{book_path.name}` (Sheet: {cfg['sheet']}) | **统计样本**：{n_companies} 家主板新上市公司",
+        f"**生成时间**：{dt.datetime.now():%Y-%m-%d %H:%M:%S} | **字段维度**：{len(col_map)} 列核心数据",
         "\n---",
         "\n## 一、核心大盘宏观指标",
         "\n| 指标维度 | 统计数值 | 商业与学术解读 |",
@@ -249,7 +260,7 @@ def generate_report(cfg: dict | None = None) -> dict:
         f"| **发行人募资总净额** | **HK$ {total_net_proceeds:,.0f}** | 约合 **{total_net_proceeds/1e8:.2f} 亿港元** |",
         f"| **发行人平均募资额** | **HK$ {avg_proceeds:,.0f}** | 单家平均募资约 **{avg_proceeds/1e8:.2f} 亿港元** |",
         f"| **发行人中位数募资额** | **HK$ {median_proceeds:,.0f}** | 中位数约 **{median_proceeds/1e8:.2f} 亿港元** |",
-        f"| **上市总市值总额** | **HK$ {total_market_cap:,.0f}** | 38 家总市值约 **{total_market_cap/1e8:.2f} 亿港元** |",
+        f"| **上市总市值总额** | **HK$ {total_market_cap:,.0f}** | {n_companies} 家总市值约 **{total_market_cap/1e8:.2f} 亿港元** |",
         "\n---",
         "\n## 二、行业分布与产业结构 (HSICS 2026)",
         "\n### 1. 门类行业分布",
@@ -319,9 +330,9 @@ def generate_report(cfg: dict | None = None) -> dict:
 
 def print_summary(stats: dict) -> None:
     print("\n" + "=" * 70)
-    print("香港主板 2026 年第一季度 (Q1) IPO 全景学术与市场分析简报")
+    print(f"香港主板 {stats.get('cohort', 'IPO cohort')} IPO 全景学术与市场分析简报")
     print("=" * 70)
-    print(f"统计样本: 38 家公司 | 唯一正式交付物: HKIPO-MB2026Q1.xlsx")
+    print(f"统计样本: {stats['n_companies']} 家公司 | 数据工作簿: {stats.get('workbook_name', 'N/A')}")
     print("-" * 70)
     print(f"募资总额 (净额):   HK$ {stats['total_net_proceeds_hkd']/1e8:.2f} 亿港元 (单家中位数: {stats['median_net_proceeds_hkd']/1e8:.2f} 亿)")
     print(f"上市总市值:       HK$ {stats['total_market_cap_hkd']/1e8:.2f} 亿港元")

@@ -307,12 +307,19 @@ def audit_external_columns(ws, cfg: dict, row_of: dict[str, int]) -> list[dict]:
 
 
 def generate_markdown_report(report_data: dict, out_path: Path) -> None:
+    stats = report_data["stats"]
+    n_companies = report_data["audited_companies_count"]
+    prospectus_fields = stats.get("prospectus", {}).get("fields_count", 0)
+    allot_fields = stats.get("allot", {}).get("fields_count", 0)
+    audited_cells = sum(item.get("total_cells_audited", 0) for item in stats.values())
     lines = [
         "# HK IPO Excel vs JSON 逐格对账与数据质量审计报告",
         "",
         f"> **生成时间**：{report_data['timestamp']}  ",
         f"> **目标工作簿**：`{report_data['workbook']}` (Sheet: `{report_data['sheet']}`)  ",
-        f"> **审计范围**：38 家公司 × (60 招股书字段 + 18 配发字段 = 78 字段，共 2,964 个单元格) + 31 个外部工具字段  ",
+        f"> **审计范围**：{n_companies} 家公司 × ({prospectus_fields} 招股书字段 + "
+        f"{allot_fields} 配发字段 = {prospectus_fields + allot_fields} 字段，共 "
+        f"{audited_cells:,} 个单元格) + {len(report_data['external_columns'])} 个外部工具字段  ",
         "",
         "## 一、核心审计结论汇总",
         "",
@@ -393,7 +400,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
 
     lines.extend([
         "",
-        "## 四、38 家公司流水线门禁状态 (Pipeline State)",
+        f"## 四、{n_companies} 家公司流水线门禁状态 (Pipeline State)",
         "",
         "| 股票代码 | 招股书 extracted | 招股书 validated | 招股书 reviewed | 配发 extracted | 配发 validated | 配发 reviewed | 当前写入状态 |",
         "|---|:---:|:---:|:---:|:---:|:---:|:---:|---|",

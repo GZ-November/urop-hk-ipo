@@ -229,37 +229,29 @@ def main() -> int:
         return 0
 
     wb.close()
-    backup_dir = book.parent / "backups" / "excel_snapshots"
+    sys.path.insert(0, str(ROOT / "src"))
+    from workbook_transaction import workbook_transaction
 
-    backup_dir.mkdir(parents=True, exist_ok=True)
-
-    backup = backup_dir / (f"{book.stem}.backup-before-tencent-"
-                            f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
-    shutil.copy2(book, backup)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
-    col_of = resolve_cols(ws)
-    for rec in results:
-        r = rec["row"]
-        dd = rec.get("DD")
-        ws.cell(r, col_of["DD"]).value = round(dd, 8) if dd is not None else "NaN"
-        first = rec.get("first")
-        if not first:
-            for k in ("DH", "DI", "DJ", "DK", "DL", "DM"):
-                ws.cell(r, col_of[k]).value = "NaN"
-            continue
-        ws.cell(r, col_of["DH"]).value = first["close"]
-        ws.cell(r, col_of["DI"]).value = first["open"]
-        ws.cell(r, col_of["DJ"]).value = first["high"]
-        ws.cell(r, col_of["DK"]).value = first["low"]
-        ws.cell(r, col_of["DL"]).value = int(round(first["volume"]))
-        ws.cell(r, col_of["DM"]).value = (round(first["turnover"], 2)
-                                          if first.get("turnover") is not None else "NaN")
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    tmp.replace(book)
-    print(f"\n已写回 DD, DH–DM（{n_ok} 家完整）\n备份：{backup.name}")
+    with workbook_transaction(book, operation="market") as wb:
+        ws = wb[SHEET]
+        col_of = resolve_cols(ws)
+        for rec in results:
+            r = rec["row"]
+            dd = rec.get("DD")
+            ws.cell(r, col_of["DD"]).value = round(dd, 8) if dd is not None else "NaN"
+            first = rec.get("first")
+            if not first:
+                for k in ("DH", "DI", "DJ", "DK", "DL", "DM"):
+                    ws.cell(r, col_of[k]).value = "NaN"
+                continue
+            ws.cell(r, col_of["DH"]).value = first["close"]
+            ws.cell(r, col_of["DI"]).value = first["open"]
+            ws.cell(r, col_of["DJ"]).value = first["high"]
+            ws.cell(r, col_of["DK"]).value = first["low"]
+            ws.cell(r, col_of["DL"]).value = int(round(first["volume"]))
+            ws.cell(r, col_of["DM"]).value = (round(first["turnover"], 2)
+                                              if first.get("turnover") is not None else "NaN")
+    print(f"\n已写回 DD, DH–DM（{n_ok} 家完整） -> {book.name}")
     return 0
 
 

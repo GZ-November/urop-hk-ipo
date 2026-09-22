@@ -1,5 +1,5 @@
-"""Atomic JSON storage and strict extraction filename discovery."""
 import fcntl
+import hashlib
 import json
 import os
 import re
@@ -7,6 +7,34 @@ import tempfile
 from pathlib import Path
 
 from contracts import normalize_code
+
+
+def file_sha256(path: Path | str) -> str:
+    """计算文件的 SHA-256 哈希值，用于数字证据链溯源与防篡改。"""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        while chunk := f.read(1 << 16):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def create_http_session(retries: int = 3, backoff_factor: float = 0.5) -> "requests.Session":
+    """创建具备指数退避重试机制与状态码容错的 HTTP 会话。"""
+    import requests
+    from requests.adapters import HTTPAdapter
+    from urllib3.util import Retry
+
+    session = requests.Session()
+    retry_strategy = Retry(
+        total=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["HEAD", "GET", "OPTIONS"],
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("http://", adapter)
+    session.mount("https://", adapter)
+    return session
 
 
 def atomic_json(path, value):

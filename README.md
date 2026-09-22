@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/Tests-20%2F20%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
+[![Tests](https://img.shields.io/badge/Tests-55%2F55%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20%2B%20Agentic-orange.svg)](#core-architecture--design-principles)
 [![Zero Token Cost](https://img.shields.io/badge/Derivation%20Cost-0%20LLM%20Tokens-success.svg)](#core-architecture--design-principles)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
@@ -16,7 +16,7 @@ An end-to-end automated extraction, deterministic validation, cross-check auditi
 ## Table of Contents
 
 1. [Core Architecture & Design Principles](#core-architecture--design-principles)
-2. [120-Variable Econometric Schema](#120-variable-econometric-schema)
+2. [161-Variable Econometric Schema](#161-variable-econometric-schema)
 3. [Quick Start (30 Seconds)](#quick-start-30-seconds)
 4. [Teammate & Collaborator Workflow](#teammate--collaborator-workflow)
 5. [Empirical Econometric Analysis Guide](#empirical-econometric-analysis-guide)
@@ -57,16 +57,15 @@ flowchart TD
 
 ---
 
-## 120-Variable Econometric Schema
+## 161-Variable Econometric Schema
 
-The pipeline extracts and verifies 120 variables structured across three standard research tiers:
+The current research workbook contains 161 variables structured across three standard research tiers:
 
 | Tier | Range | Count | Primary Source | Extraction Mechanism |
 |---|---|---|---|---|
-| **Tier 1 (Green)** | Col A–K | 11 | HKEX New Listing Report | Deterministic table parser (0 Tokens) |
-| **Tier 2 (Light Blue)** | Col L–AY, DP, CJ, BA–CI | 60 | Statutory Prospectus Filings | PDF text slicer + agent extraction + hash-gating |
-| **Tier 3 (Dark Blue)** | Col CK, CM–DC | 18 | Allotment Results Announcements | Allotment parser + deterministic formulas |
-| **Tier 3 (Dark Blue)** | Col DD–DO, DF/DG | 31 | Market Trading & Macro Indicators | Offline feeds, HKMA API, and regulatory rules |
+| **Tier 1 (Green)** | HKEX base fields | 11 | HKEX New Listing Report | Deterministic table parser (0 Tokens) |
+| **Tier 2 (Light Blue)** | Prospectus and academic fields | 77 | Statutory Prospectus Filings | PDF text slicer + agent extraction + hash-gating |
+| **Tier 3 (Dark Blue)** | Allotment, market and macro fields | 73 | Allotment announcements and external sources | Deterministic parsers, APIs, and formulas |
 
 ---
 
@@ -105,7 +104,7 @@ make cross_check
 # Generate macro market overview and research report
 make report
 
-# Export clean econometric CSV and 120-variable academic codebook
+# Export clean econometric CSV and live 161-variable academic codebook
 make export
 
 # Verify syntax & bytecode compilation
@@ -259,7 +258,7 @@ This repository includes a standardized skill package compatible with AI coding 
 │   └── references/                         # Empirical and regulatory reference manuals
 │       ├── empirical_analysis_guide.md     # Econometric models & Python/Stata guides
 │       ├── listing_rules_guide.md          # HKEX Main Board Listing Rules thresholds
-│       └── variable_codebook_overview.md   # 120-variable econometric schema
+│       └── variable_codebook_overview.md   # Econometric schema overview
 │
 └── Data Collecting Pipeline/               # Unified Data Collection Subsystem
     ├── README.md                           # Subsystem quick reference & operational guide
@@ -298,7 +297,7 @@ This repository includes a standardized skill package compatible with AI coding 
         ├── schema/                         # Field contracts (fields.json, allot_fields.json)
         ├── prompts/                        # LLM Extraction schemas & few-shot instructions
         ├── workflows/                      # Extraction workflows
-        ├── tests/                          # Automated test suite (20/20 Passed)
+        ├── tests/                          # Automated test suite (55/55 Passed)
         ├── data/                           # PDF store, page text & evidence packets
         └── out/                            # Verifiable state ledger, clean CSV & Codebook
 ```

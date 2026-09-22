@@ -14,7 +14,7 @@ from contracts import (  # noqa: E402
     evidence_issues, is_company_level_statement, is_definitions_page, validate_record
 )
 from pdfprep import locate_sections  # noqa: E402
-from state import authorized, save_record  # noqa: E402
+from state import CONTRACT_VERSION, authorized, save_record  # noqa: E402
 from storage import official_files  # noqa: E402
 from tools import search as tools_search  # noqa: E402
 from cornerstone import assess  # noqa: E402
@@ -137,6 +137,22 @@ class PipelineSafetyTests(unittest.TestCase):
             for stage in ("extracted", "validated", "reviewed"):
                 save_record(cfg, "prospectus", "0001.HK", stage,
                             {**current, "hash": "old", "gate_pass": True})
+            with self.assertRaises(ValueError):
+                authorized(cfg, "0001.HK", "prospectus", current)
+
+    def test_old_contract_cannot_be_authorized(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = {"_root": Path(tmp)}
+            current = {"code": "0001.HK", "target": "prospectus", "hash": "same",
+                       "status": "pass", "errors": []}
+            for stage in ("extracted", "validated", "reviewed"):
+                save_record(cfg, "prospectus", "0001.HK", stage,
+                            {**current, "gate_pass": True})
+                path = Path(tmp) / ".pipeline_state" / "prospectus" / stage / "0001.HK.json"
+                record = json.loads(path.read_text())
+                record["contract_version"] = "obsolete-contract"
+                path.write_text(json.dumps(record), encoding="utf-8")
+            self.assertNotEqual(CONTRACT_VERSION, "obsolete-contract")
             with self.assertRaises(ValueError):
                 authorized(cfg, "0001.HK", "prospectus", current)
 
@@ -276,4 +292,3 @@ class PipelineSafetyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

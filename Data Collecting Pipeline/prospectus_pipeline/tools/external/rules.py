@@ -103,29 +103,34 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--book", default=str(BOOK))
+    ap.add_argument("--only", nargs="*", default=None, help="只处理指定股票代码")
     args = ap.parse_args()
     book = Path(args.book)
 
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
+    wb_read = openpyxl.load_workbook(book, data_only=True)
+    ws_read = wb_read[SHEET]
     col = {}
-    for c in range(1, ws.max_column + 1):
-        v = " ".join(str(ws.cell(1, c).value or "").replace("\n", " ").split()).strip().lower()
+    for c in range(1, ws_read.max_column + 1):
+        v = " ".join(str(ws_read.cell(1, c).value or "").replace("\n", " ").split()).strip().lower()
         if v == DN_HEADER.lower():
             col["DN"] = c
         elif v == DO_HEADER.lower():
             col["DO"] = c
     if set(col) != {"DN", "DO"}:
-        wb.close()
+        wb_read.close()
         raise SystemExit(f"找不到 DN/DO 列，实得 {col}")
 
     companies = []
-    for r in range(2, ws.max_row + 1):
-        code = ws[f"B{r}"].value
-        pd = to_date(ws[f"D{r}"].value)
+    for r in range(2, ws_read.max_row + 1):
+        code = ws_read[f"B{r}"].value
+        pd = to_date(ws_read[f"D{r}"].value)
         if code in (None, "") or pd is None:
             continue
-        companies.append((r, str(code).strip(), pd))
+        c_str = str(code).strip()
+        if args.only and c_str not in args.only:
+            continue
+        companies.append((r, c_str, pd))
+    wb_read.close()
 
     print(f"{'code':9s} {'招股书':12s} {'来源':12s} {'机制':4s}  规则")
     values = []
@@ -140,28 +145,19 @@ def main() -> int:
         print(f"{code:9s} {str(pd):12s} {src:12s} {dn:12s}  {do}")
 
     if args.dry_run:
-        wb.close()
         print("\n--dry-run：未写回")
         return 0
 
-    wb.close()
-    backup_dir = book.parent / "backups" / "excel_snapshots"
+    sys.path.insert(0, str(ROOT / "src"))
+    from workbook_transaction import workbook_transaction
 
-    backup_dir.mkdir(parents=True, exist_ok=True)
+    with workbook_transaction(book, operation="rules") as wb:
+        ws = wb[SHEET]
+        for r, dn, do in values:
+            ws.cell(r, col["DN"]).value = dn
+            ws.cell(r, col["DO"]).value = do
 
-    backup = backup_dir / (f"{book.stem}.backup-before-rules-"
-                            f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
-    shutil.copy2(book, backup)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
-    for r, dn, do in values:
-        ws.cell(r, col["DN"]).value = dn
-        ws.cell(r, col["DO"]).value = do
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    tmp.replace(book)
-    print(f"\n已写回 DN/DO（{len(values)} 家）\n备份：{backup.name}")
+    print(f"\n已写回 DN/DO（{len(values)} 家） -> {book.name}")
     return 0
 
 

@@ -8,7 +8,7 @@ from pathlib import Path
 from contracts import normalize_code, strict_load_file
 from storage import atomic_json
 
-CONTRACT_VERSION = "2026-09-13-v2"
+CONTRACT_VERSION = "2026-09-22-v3-70fields"
 
 
 def digest(rec, schema, evidence):
@@ -25,6 +25,17 @@ def file_hash(path):
     return value.hexdigest()
 
 
+def cells_digest(ws, addresses):
+    """Return a stable digest of the exact workbook cells represented by a write credential."""
+    payload = []
+    for address in addresses:
+        value = ws[address].value
+        payload.append([address, value])
+    blob = json.dumps(payload, ensure_ascii=False, allow_nan=False, default=str,
+                      separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(blob).hexdigest()
+
+
 def state_dir(cfg):
     return Path(cfg.get("state_dir") or os.environ.get("PIPELINE_STATE_DIR")
                 or cfg["_root"] / ".pipeline_state")
@@ -38,7 +49,15 @@ def record_path(cfg, target, code, stage):
 
 
 def save_record(cfg, target, code, stage, record):
-    atomic_json(record_path(cfg, target, code, stage), {**record, "stage": stage})
+    import datetime as dt
+    now_iso = dt.datetime.now(dt.timezone.utc).isoformat()
+    enriched = {
+        **record,
+        "contract_version": CONTRACT_VERSION,
+        "recorded_at": now_iso,
+        "stage": stage,
+    }
+    atomic_json(record_path(cfg, target, code, stage), enriched)
 
 
 def read_record(cfg, target, code, stage):
@@ -51,7 +70,8 @@ def read_record(cfg, target, code, stage):
 def require(cfg, target, code, version, stage):
     record = read_record(cfg, target, code, stage)
     ok = (record.get("code") == normalize_code(code) and record.get("target") == target
-          and record.get("hash") == version and record.get("gate_pass") is True)
+          and record.get("hash") == version and record.get("gate_pass") is True
+          and record.get("contract_version") == CONTRACT_VERSION)
     if not ok:
         raise ValueError(f"{code}: missing/failed {stage} record or hash mismatch")
     return record

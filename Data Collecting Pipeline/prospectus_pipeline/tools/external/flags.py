@@ -89,10 +89,20 @@ def place_of_incorporation(code: str) -> tuple[str, str]:
     return "NA", "前 6 页未见注册地表述"
 
 
+import argparse
+from workbook_transaction import workbook_transaction
+
+
 def main() -> int:
-    dry = "--dry-run" in sys.argv
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
-    book = WS / cfg["workbook"]
+    ap = argparse.ArgumentParser(description="Derive statutory flags")
+    ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
+    ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
+    ap.add_argument("--only", nargs="*", default=None, help="Filter by stock code(s)")
+    args = ap.parse_args()
+
+    book = Path(args.book)
+    dry = args.dry_run
 
     # 基石「确认无」的公司
     ca_path = ROOT / "out" / "allot" / "cornerstone_absence.json"
@@ -102,11 +112,11 @@ def main() -> int:
             if rec.get("verdict") == "none":
                 no_cornerstone.add(normalize_code(code))
 
-    wb = openpyxl.load_workbook(book)
-    ws = wb[cfg["sheet"]]
+    wb_read = openpyxl.load_workbook(book, data_only=True)
+    ws_read = wb_read[cfg["sheet"]]
     col_of = {}
-    for c in range(1, ws.max_column + 1):
-        v = ws.cell(1, c).value
+    for c in range(1, ws_read.max_column + 1):
+        v = ws_read.cell(1, c).value
         if v in (None, ""):
             continue
         for key, h in HEADERS.items():
@@ -114,23 +124,26 @@ def main() -> int:
                 col_of[key] = c
     missing = [k for k in HEADERS if k not in col_of]
     if missing:
-        wb.close()
+        wb_read.close()
         raise SystemExit(f"工作簿找不到列：{missing}")
 
     # 行号 + 上市日
     row_of, listing = {}, {}
     ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
     ci_list = openpyxl.utils.column_index_from_string(cfg["id_columns"]["listing_date"])
-    for r in range(cfg["data_start_row"], ws.max_row + 1):
-        code = ws.cell(r, ci_code).value
+    for r in range(cfg["data_start_row"], ws_read.max_row + 1):
+        code = ws_read.cell(r, ci_code).value
         if code in (None, ""):
             continue
-        code = str(code).strip()
-        row_of[normalize_code(code)] = r
-        ld = ws.cell(r, ci_list).value
+        norm_c = normalize_code(str(code).strip())
+        if args.only and norm_c not in [normalize_code(x) for x in args.only]:
+            continue
+        row_of[norm_c] = r
+        ld = ws_read.cell(r, ci_list).value
         if isinstance(ld, dt.datetime):
             ld = ld.date()
-        listing[normalize_code(code)] = ld if isinstance(ld, dt.date) else None
+        listing[norm_c] = ld if isinstance(ld, dt.date) else None
+    wb_read.close()
 
     audit, n = {}, 0
     print(f"{'code':9s} {'board':10s} {'A+H':4s} {'WVR':4s} {'18A':4s} {'18C':4s} "
@@ -160,14 +173,6 @@ def main() -> int:
         audit[code] = {"values": {k: str(v) for k, v in vals.items()},
                        "evidence": {"col_AS": asv, "incorporation": inc_ev,
                                     "unlock": unlock_note}}
-        # 日期列写成本日期
-        if unlock != "NA":
-            dtv = unlock
-        else:
-            dtv = "NA"
-        order = ["BH", "BJ", "BK", "BL", "BM", "BQ", "CL"]
-        for k in order:
-            ws.cell(r, col_of[k]).value = vals[k] if k != "CL" else dtv
         n += 1
         print(f"{code:9s} {board:10s} {a_plus_h:4d} {wvr:4d} {c18a:4d} {c18c:4d} "
               f"{inc:14s} {str(unlock)}")
@@ -178,44 +183,24 @@ def main() -> int:
     print(f"\n推导 {n} 家；证据 -> {outj}")
 
     if dry:
-        wb.close()
         print("--dry-run：未写回")
         return 0
 
-    wb.close()
-    backup_dir = book.parent / "backups" / "excel_snapshots"
+    with workbook_transaction(book, operation="flags") as wb:
+        ws = wb[cfg["sheet"]]
+        for code, rec in audit.items():
+            r = row_of[code]
+            for k in ["BH", "BJ", "BK", "BL", "BM", "BQ"]:
+                v = rec["values"][k]
+                ws.cell(r, col_of[k]).value = int(v) if v.lstrip("-").isdigit() else v
+            u = rec["values"]["CL"]
+            if u == "NA":
+                ws.cell(r, col_of["CL"]).value = "NA"
+            else:
+                y, m, d = (int(x) for x in u.split("-"))
+                ws.cell(r, col_of["CL"]).value = dt.date(y, m, d)
 
-    backup_dir.mkdir(parents=True, exist_ok=True)
-
-    backup = backup_dir / (f"{book.stem}.backup-before-flags-"
-                            f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
-    shutil.copy2(book, backup)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[cfg["sheet"]]
-    col_of = {}
-    for c in range(1, ws.max_column + 1):
-        v = ws.cell(1, c).value
-        if v in (None, ""):
-            continue
-        for key, h in HEADERS.items():
-            if norm(v) == norm(h):
-                col_of[key] = c
-    for code, rec in audit.items():
-        r = row_of[code]
-        for k in ["BH", "BJ", "BK", "BL", "BM", "BQ"]:
-            v = rec["values"][k]
-            ws.cell(r, col_of[k]).value = int(v) if v.lstrip("-").isdigit() else v
-        u = rec["values"]["CL"]
-        if u == "NA":
-            ws.cell(r, col_of["CL"]).value = "NA"
-        else:
-            y, m, d = (int(x) for x in u.split("-"))
-            ws.cell(r, col_of["CL"]).value = dt.date(y, m, d)
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    tmp.replace(book)
-    print(f"已写回 7 列（{len(audit)} 家）\n备份：{backup.name}")
+    print(f"已写回 7 列（{len(audit)} 家） -> {book.name}")
     return 0
 
 

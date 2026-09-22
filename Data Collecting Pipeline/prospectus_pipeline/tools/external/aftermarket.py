@@ -366,49 +366,39 @@ def main() -> int:
         print("\n[DRY RUN] 演练模式结束，未向工作簿写入数据。")
         return 0
 
-    # 3. 安全备份工作簿
-    backup_dir = book.parent / "backups" / "excel_snapshots"
-    backup_dir.mkdir(parents=True, exist_ok=True)
-    backup_file = backup_dir / f"{book.stem}.backup-before-aftermarket-{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx"
-    shutil.copy2(book, backup_file)
-    print(f"\n📦 已创建安全快照备份: {backup_file.name}")
+    sys.path.insert(0, str(ROOT / "src"))
+    from workbook_transaction import workbook_transaction
 
-    # 4. 写入工作簿 (包含 Col 139-161 表头、样式与数值)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[SHEET]
-
-    # 设置表头
-    for col_idx, header, num_format, desc in AFTERMARKET_FIELDS:
-        cell = ws.cell(1, col_idx)
-        cell.value = header
-        cell.fill = HEADER_FILL
-        cell.font = HEADER_FONT
-        cell.alignment = HEADER_ALIGN
-        col_letter = get_column_letter(col_idx)
-        ws.column_dimensions[col_letter].width = max(18, len(header) // 2 + 4)
-
-    # 写入数据
-    for row_data in computed_rows:
-        r = row_data["row"]
+    with workbook_transaction(book, operation="aftermarket") as wb:
+        ws = wb[SHEET]
+        # 设置表头
         for col_idx, header, num_format, desc in AFTERMARKET_FIELDS:
-            cell = ws.cell(r, col_idx)
-            val = row_data.get(col_idx)
-            cell.value = val
-            cell.font = DATA_FONT
-            cell.border = THIN_BORDER
-            cell.number_format = num_format
-            if num_format == "@":
-                cell.alignment = DATA_ALIGN_CENTER
-            elif num_format in ("0.00%", "0.00", "0.000", "#,##0"):
-                cell.alignment = DATA_ALIGN_RIGHT
-            else:
-                cell.alignment = DATA_ALIGN_CENTER
+            cell = ws.cell(1, col_idx)
+            cell.value = header
+            cell.fill = HEADER_FILL
+            cell.font = HEADER_FONT
+            cell.alignment = HEADER_ALIGN
+            col_letter = get_column_letter(col_idx)
+            ws.column_dimensions[col_letter].width = max(18, len(header) // 2 + 4)
 
-    tmp_file = book.with_suffix(".saving.xlsx")
-    wb.save(tmp_file)
-    wb.close()
-    tmp_file.replace(book)
-    print(f"🎉 成功将 23 个二级市场跨期与流动性指标写入主表 {SHEET} (Col 139–161)！\n")
+        # 写入数据
+        for row_data in computed_rows:
+            r = row_data["row"]
+            for col_idx, header, num_format, desc in AFTERMARKET_FIELDS:
+                cell = ws.cell(r, col_idx)
+                val = row_data.get(col_idx)
+                cell.value = val
+                cell.font = DATA_FONT
+                cell.border = THIN_BORDER
+                cell.number_format = num_format
+                if num_format == "@":
+                    cell.alignment = DATA_ALIGN_CENTER
+                elif num_format in ("0.00%", "0.00", "0.000", "#,##0"):
+                    cell.alignment = DATA_ALIGN_RIGHT
+                else:
+                    cell.alignment = DATA_ALIGN_CENTER
+
+    print(f"🎉 成功将 23 个二级市场跨期与流动性指标写入主表 {SHEET} (Col 139–161) -> {book.name}！\n")
     return 0
 
 

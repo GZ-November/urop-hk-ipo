@@ -62,7 +62,7 @@ prospectus_pipeline/
 │   ├── fields.json                 # 60 prospectus field specifications
 │   └── allot_fields.json           # 18 allotment field specifications
 │
-├── tests/                          # Automated test suite (17/17 passed)
+├── tests/                          # Portable unit, integration, and production acceptance tests
 │   ├── test_audit_excel.py         # Read-only Excel audit, null-equivalence, and float tolerance
 │   ├── test_cross_check.py         # Cross-field rules, Chapter 18C valuation, and clawbacks
 │   ├── test_report.py              # Report aggregation and markdown generation
@@ -70,7 +70,7 @@ prospectus_pipeline/
 │   └── test_pipeline_safety.py     # Hash-gating, quotation forgery, and range safety tests
 │
 └── workflows/                      # Extraction and review workflow definitions
-    ├── prospectus_extract.js       # Prospectus 60-field extraction workflow
+    ├── prospectus_extract.js       # Prospectus 70-field extraction workflow
     └── allot_extract.js            # Allotment results extraction workflow
 ```
 

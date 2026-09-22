@@ -151,6 +151,7 @@ def cmd_greenshoe(cfg, args, companies):
     index = fetch_index(cfg, found, only=args.only)
     fetch_shares(cfg, index, only=args.only)
     apply_cv(cfg, only=args.only)
+    return 0
 
 
 def cmd_cornerstone(cfg, args, companies):
@@ -158,6 +159,7 @@ def cmd_cornerstone(cfg, args, companies):
     from cornerstone import apply_ck, scan
     scan(cfg, only=args.only)
     apply_ck(cfg, only=args.only)
+    return 0
 
 
 def cmd_validate(cfg, args, companies):
@@ -265,7 +267,7 @@ def cmd_aftermarket(cfg, args, companies):
 
 
 def cmd_external(cfg, args, companies):
-    """Orchestrate external data collection tools."""
+    """Orchestrate external data collection tools with fail-closed execution."""
     import subprocess
     external_scripts = [
         ("market", ROOT / "tools" / "external" / "market.py"),
@@ -276,11 +278,23 @@ def cmd_external(cfg, args, companies):
         ("hsic_codes", ROOT / "tools" / "external" / "hsic_codes.py"),
         ("aftermarket", ROOT / "tools" / "external" / "aftermarket.py"),
     ]
+    book_target = str(WS / args.workbook) if args.workbook else str(WS / cfg["workbook"])
     for name, script in external_scripts:
-        if script.exists():
-            print(f"\n--- 执行外部工具: {name} ---")
-            cmd = [sys.executable, str(script)]
-            subprocess.run(cmd, cwd=WS, check=False)
+        if not script.exists():
+            print(f"错误: 外部脚本不存在: {script}")
+            return 1
+        print(f"\n--- 执行外部工具: {name} ---")
+        cmd = [sys.executable, str(script)]
+        if getattr(args, "dry_run", False):
+            cmd.append("--dry-run")
+        if args.only:
+            cmd.extend(["--only"] + args.only)
+        cmd.extend(["--book", book_target])
+        proc = subprocess.run(cmd, cwd=WS)
+        if proc.returncode != 0:
+            print(f"错误: 外部工具 {name} 执行失败 (退出码 {proc.returncode})，终止后续流程。")
+            return proc.returncode
+    return 0
 
 
 def cmd_merge_topics(cfg, args, companies):
@@ -342,6 +356,8 @@ def main() -> int:
         elif s in {"find", "download", "prepare", "allot"} and isinstance(result, list):
             if not result or any(not (r.get("pdf") or r.get("packet_path") or r.get("status") == "ok") for r in result):
                 rc = 1
+        elif isinstance(result, int):
+            rc = result
         if rc:
             break
     return rc

@@ -36,6 +36,7 @@ htmlcov/
 # Private Research Data & Collected Datasets (Strictly Excluded)
 # ==============================================================================
 *.xlsx
+!Data Collecting Pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
 *.xls
 *.xlsm
 *.csv
@@ -56,3 +57,4 @@ Survey Paper/
 *.backup-*.json
 *-backup-*.json
 .pipeline_state
+**/.*.xlsx.lock

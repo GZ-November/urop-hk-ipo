@@ -7,10 +7,12 @@
 """
 from __future__ import annotations
 
+import datetime as dt
+
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from storage import merge_index
+from storage import create_http_session, file_sha256, merge_index
 
 import requests
 
@@ -23,23 +25,48 @@ def _safe_name(code: str) -> str:
 
 
 # ---------------------------------------------------------------- download
-def download_one(cfg: dict, rec: dict, log=print) -> dict:
+def download_one(cfg: dict, rec: dict, session: requests.Session | None = None, log=print) -> dict:
     dest: Path = cfg["paths"]["allot_pdf"] / f"{_safe_name(rec['code'])}.pdf"
     url = cfg["hkex"]["base_url"] + rec["file"]
     if dest.exists() and dest.stat().st_size > 20_000:
-        return {**rec, "pdf": str(dest), "bytes": dest.stat().st_size, "download": "cached", "pdf_url": url}
+        return {
+            **rec,
+            "pdf": str(dest),
+            "bytes": dest.stat().st_size,
+            "sha256": file_sha256(dest),
+            "download": "cached",
+            "pdf_url": url,
+        }
+    sess = session or create_http_session()
     try:
-        r = requests.get(url, timeout=180, headers={"User-Agent": UA}, stream=True)
+        r = sess.get(url, timeout=180, headers={"User-Agent": UA}, stream=True)
         r.raise_for_status()
         tmp = dest.with_suffix(".part")
         with open(tmp, "wb") as fh:
             for chunk in r.iter_content(1 << 16):
                 fh.write(chunk)
         tmp.rename(dest)
-        return {**rec, "pdf": str(dest), "bytes": dest.stat().st_size, "download": "ok", "pdf_url": url}
+        return {
+            **rec,
+            "pdf": str(dest),
+            "bytes": dest.stat().st_size,
+            "sha256": file_sha256(dest),
+            "download": "ok",
+            "pdf_url": url,
+            "retrieved_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "http_status": r.status_code,
+            "etag": r.headers.get("ETag"),
+            "last_modified": r.headers.get("Last-Modified"),
+        }
     except Exception as exc:  # noqa: BLE001
-        return {**rec, "pdf": None, "bytes": 0,
-                "download": f"error: {type(exc).__name__}: {exc}", "pdf_url": url}
+        return {
+            **rec,
+            "pdf": None,
+            "bytes": 0,
+            "sha256": None,
+            "download": f"error: {type(exc).__name__}: {exc}",
+            "pdf_url": url,
+        }
 
 
 def download_all(cfg: dict, index: list[dict], workers: int = 5, log=print) -> list[dict]:

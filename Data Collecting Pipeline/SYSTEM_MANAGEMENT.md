@@ -59,7 +59,7 @@ flowchart TD
     subgraph Quality_Assurance["Verification & Audit Matrix"]
         Rules_Engine["HKEX Listing Rules Engine\n(cross_check.py)"]
         Cell_Auditor["Cell-by-Cell Read-Only Audit\n(audit.py)"]
-        Test_Suite["Automated Test Suite\n(20/20 unittest)"]
+        Test_Suite["Automated Test Suite\n(55/55 unittest)"]
     end
 
     subgraph Delivery_Layer["Deliverable Compilation & Governance"]
@@ -67,7 +67,7 @@ flowchart TD
         Excel_Writer["Format-Preserving Writer\n(write_back.py)"]
         Workbook["Canonical Workbook (SSOT)\n(HKIPO-MB2026Q1.xlsx)"]
         CSV_Export["Econometric Clean CSV\n(out/*_clean.csv)"]
-        Codebook["120-Variable Codebook\n(out/*_Codebook.md)"]
+        Codebook["161-Variable Codebook\n(out/*_Codebook.md)"]
     end
 
     HKEX_NLR -->|Tier 1 Extraction| Workbook
@@ -139,12 +139,12 @@ Every issuer extraction follows a strictly sequenced four-phase state machine:
 
 The pipeline incorporates three orthogonal defense lines to guarantee zero econometric error:
 
-### Tier 1: Automated Unit & Regression Tests (20/20 Passed)
+### Tier 1: Automated Unit & Regression Tests (55/55 Passed)
 - **Suite**: `prospectus_pipeline/tests/`
 - **Execution**: `make test` or `python3 -m unittest discover -s "Data Collecting Pipeline/prospectus_pipeline/tests" -v`
 - **Coverage**:
   1. `test_audit_excel.py`: Date normalization, numeric tolerances, integer formatting, equivalence of missing data representations (`NA`, `NaN`, `None`, empty string).
-  2. `test_codebook.py`: Completeness of 120-variable schema, summary statistics generation, CSV formatting with UTF-8 BOM.
+  2. `test_codebook.py`: Completeness of the live 161-variable schema, summary statistics generation, CSV formatting with UTF-8 BOM.
   3. `test_cross_check.py`: HKEX Listing Rules consistency across all 38 issuers.
   4. `test_pipeline_safety.py`: Fail-closed security assertions (fake derived sources rejected, stale hashes aborted, company-level vs group-level statements filtered).
   5. `test_report.py`: Aggregation metrics, HSIC classification distribution, financial ratios.

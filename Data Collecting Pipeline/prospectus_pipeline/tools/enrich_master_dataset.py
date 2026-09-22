@@ -20,10 +20,7 @@
 from __future__ import annotations
 
 import copy
-import datetime as dt
 import json
-import os
-import shutil
 import sys
 from pathlib import Path
 from typing import Any
@@ -43,6 +40,8 @@ from academic_derivations import (
     derive_day1_trading,
 )
 from run import load_cfg
+from storage import file_sha256
+from workbook_transaction import commit_prepared_workbook
 
 
 def norm(s: Any) -> str:
@@ -146,24 +145,14 @@ ACADEMIC_FIELDS = [
 ]
 
 
-def create_backup(book_path: Path) -> Path:
-    snapshot_dir = WS / "backups" / "excel_snapshots"
-    snapshot_dir.mkdir(parents=True, exist_ok=True)
-    ts = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
-    backup_file = snapshot_dir / f"HKIPO-MB2026Q1.backup-before-academic-expansion-{ts}.xlsx"
-    shutil.copy2(book_path, backup_file)
-    print(f"[Snapshot] Created safe backup: {backup_file.name}")
-    return backup_file
-
-
 def inject_academic_derivations() -> Path:
     """计算 8 个第一阶段学术衍生字段并安全注入到 HKIPO-MB2026Q1.xlsx 主表中。"""
     book_path = WS / "HKIPO-MB2026Q1.xlsx"
     if not book_path.exists():
         raise FileNotFoundError(f"Workbook not found: {book_path}")
 
-    # 1. 创建备份
-    create_backup(book_path)
+    # 1. 记录源版本；统一事务管理器会在提交锁内创建备份并检查并发变化。
+    source_sha256 = file_sha256(book_path)
 
     # 2. 读取原始数据并进行推导计算
     wb_read = openpyxl.load_workbook(book_path, data_only=True)
@@ -338,8 +327,7 @@ def inject_academic_derivations() -> Path:
     if norm(last_col_header) != norm("Company Chinese Name"):
         raise ValueError(f"Last column must be 'Company Chinese Name', got '{last_col_header}'!")
 
-    wb.save(book_path)
-    wb.close()
+    commit_prepared_workbook(book_path, wb, source_sha256, operation="academic-expansion")
     print(f"[Success] Saved updated workbook: {book_path.name} with 138 columns!")
     return book_path
 

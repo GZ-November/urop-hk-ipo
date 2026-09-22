@@ -16,6 +16,7 @@ from dataclasses import dataclass
 from typing import Iterable
 
 import requests
+from storage import create_http_session
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120 Safari/537.36")
@@ -154,7 +155,7 @@ def find_one(session: requests.Session, cfg: dict, code: str, name: str,
 def find_all(cfg: dict, companies: Iterable[dict], log=print) -> list[Found]:
     """companies: [{code, name, prospectus_date, listing_date}, ...]"""
     companies = list(companies)
-    session = requests.Session()
+    session = create_http_session()
     out: list[Found] = []
     for i, co in enumerate(companies, 1):
         f = find_one(session, cfg, co["code"], co["name"],

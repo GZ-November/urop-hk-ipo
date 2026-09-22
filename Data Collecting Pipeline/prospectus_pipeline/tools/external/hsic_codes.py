@@ -65,10 +65,20 @@ def norm(s) -> str:
     return " ".join(str(s or "").replace("\n", " ").split()).strip().lower()
 
 
+import argparse
+from workbook_transaction import workbook_transaction
+
+
 def main() -> int:
-    dry = "--dry-run" in sys.argv
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
-    book = WS / cfg["workbook"]
+    ap = argparse.ArgumentParser(description="Map and inject HSICS codes")
+    ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
+    ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
+    ap.add_argument("--only", nargs="*", default=None, help="Filter by stock code(s)")
+    args = ap.parse_args()
+
+    book = Path(args.book)
+    dry = args.dry_run
 
     hsic = json.loads((ROOT / "out" / "hsic.json").read_text(encoding="utf-8"))
     tax = {r["code"]: r for r in json.loads(
@@ -79,26 +89,30 @@ def main() -> int:
     if missing_map:
         raise SystemExit(f"有子类别未映射，请补 HSIC_EN2CODE：{missing_map}")
 
-    wb = openpyxl.load_workbook(book)
-    ws = wb[cfg["sheet"]]
+    wb_read = openpyxl.load_workbook(book, data_only=True)
+    ws_read = wb_read[cfg["sheet"]]
     col_of = {}
-    for c in range(1, ws.max_column + 1):
-        v = ws.cell(1, c).value
+    for c in range(1, ws_read.max_column + 1):
+        v = ws_read.cell(1, c).value
         if v in (None, ""):
             continue
         for k, h in HEADERS.items():
             if norm(v) == norm(h):
                 col_of[k] = c
     if set(col_of) != {"BN", "BO"}:
-        wb.close()
+        wb_read.close()
         raise SystemExit(f"找不到 BN/BO 列：{col_of}")
 
     ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
     row_of = {}
-    for r in range(cfg["data_start_row"], ws.max_row + 1):
-        v = ws.cell(r, ci_code).value
+    for r in range(cfg["data_start_row"], ws_read.max_row + 1):
+        v = ws_read.cell(r, ci_code).value
         if v not in (None, ""):
-            row_of[normalize_code(str(v).strip())] = r
+            norm_c = normalize_code(str(v).strip())
+            if args.only and norm_c not in [normalize_code(x) for x in args.only]:
+                continue
+            row_of[norm_c] = r
+    wb_read.close()
 
     audit, n = {}, 0
     print(f"{'code':9s} {'HSICS码':9s} {'业务类别':30s} {'子类别':28s} 行业")
@@ -110,8 +124,6 @@ def main() -> int:
             continue
         c6 = HSIC_EN2CODE[sub]
         t = tax.get(c6, {})
-        ws.cell(r, col_of["BN"]).value = c6          # 文本，保留前导零
-        ws.cell(r, col_of["BO"]).value = SYSTEM
         audit[code] = {
             "code": c6,
             "sub_sector": t.get("name"),
@@ -131,29 +143,17 @@ def main() -> int:
     print(f"\n定码 {n} 家 -> {outj}")
 
     if dry:
-        wb.close()
         print("--dry-run：未写回")
         return 0
 
-    wb.close()
-    backup_dir = book.parent / "backups" / "excel_snapshots"
+    with workbook_transaction(book, operation="hsic") as wb:
+        ws = wb[cfg["sheet"]]
+        for code, rec in audit.items():
+            r = row_of[code]
+            ws.cell(r, col_of["BN"]).value = rec["code"]
+            ws.cell(r, col_of["BO"]).value = SYSTEM
 
-    backup_dir.mkdir(parents=True, exist_ok=True)
-
-    backup = backup_dir / (f"{book.stem}.backup-before-hsic-"
-                            f"{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx")
-    shutil.copy2(book, backup)
-    wb = openpyxl.load_workbook(book)
-    ws = wb[cfg["sheet"]]
-    for code, rec in audit.items():
-        r = row_of[code]
-        ws.cell(r, col_of["BN"]).value = rec["code"]
-        ws.cell(r, col_of["BO"]).value = SYSTEM
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    tmp.replace(book)
-    print(f"已写回 BN/BO（{len(audit)} 家）\n备份：{backup.name}")
+    print(f"已写回 BN/BO（{len(audit)} 家） -> {book.name}")
     return 0
 
 

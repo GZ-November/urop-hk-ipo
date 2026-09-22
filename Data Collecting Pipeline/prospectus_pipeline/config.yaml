@@ -3,6 +3,14 @@ workbook: "HKIPO-MB2026Q1.xlsx"      # 目标工作簿（相对本目录上级�
 sheet: "NLR"
 data_start_row: 2
 
+dataset:
+  id: "HKIPO-MB2026Q1"
+  name: "Hong Kong Main Board IPO Dataset"
+  cohort: "2026 Q1"
+  period_start: "2026-01-01"
+  period_end: "2026-03-31"
+  expected_companies: 38
+
 # 从模板哪些列读取公司身份与时间窗
 id_columns:
   file_no: "A"          # HKEx file# of the year

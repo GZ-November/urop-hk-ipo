@@ -16,6 +16,7 @@ import datetime as dt
 import json
 import os
 import shutil
+import uuid
 from pathlib import Path
 
 import openpyxl
@@ -136,7 +137,9 @@ def write_all(cfg: dict, fill_missing: bool = True, only: list[str] | None = Non
     # per company and hash-bound, so a different or subsequently modified JSON
     # can never inherit an old green report.
     from validate import validate_all
-    from state import authorized, save_record
+    from state import cells_digest, authorized, file_hash, save_record
+    from workbook_transaction import workbook_transaction
+
     fresh = validate_all(cfg, only=targets, target=target, log=lambda *_: None)
     by_code = {r["code"]: r for r in fresh.get("records", [])}
     blocked_targets = []
@@ -148,40 +151,47 @@ def write_all(cfg: dict, fill_missing: bool = True, only: list[str] | None = Non
     if blocked_targets:
         wb.close()
         raise SystemExit("写回授权失败：" + " | ".join(blocked_targets))
-
-    backup_dir = cfg["_ws"] / "backups" / "excel_snapshots"
-    backup_dir.mkdir(parents=True, exist_ok=True)
-    backup = backup_dir / f"{book.stem}.backup-before-extract-{dt.datetime.now():%Y%m%d-%H%M%S}.xlsx"
-    shutil.copy2(book, backup)
-    log(f"备份 -> backups/excel_snapshots/{backup.name}")
+    wb.close()
 
     written = 0
-    for code in targets:
-        rec = strict_load_file(files[code])
-        row = row_of[code]
-        n = 0
-        for field in schema["fields"]:
-            key = field["key"]
-            entry = rec.get("fields", {}).get(key)
-            if not isinstance(entry, dict):
-                continue
-            value = coerce(entry, field)
-            if value is None and not fill_missing:
-                continue
-            cell = ws[f"{mapping[key]}{row}"]
-            cell.value = value          # 只赋值：字体/填充/对齐/数字格式保持老师模板
-            n += 1
-        written += 1
-        cols = sorted(mapping.values(), key=lambda c: ws[f"{c}1"].column)
-        log(f"{code:9s} 行 {row:3d} 写入 {n:2d} 列（{cols[0]}…{cols[-1]}）")
+    transaction_id = uuid.uuid4().hex
+    workbook_sha256_before = file_hash(book)
+    with workbook_transaction(book, operation=f"extract-{target}") as trans_wb:
+        trans_ws = trans_wb[cfg["sheet"]]
+        for code in targets:
+            rec = strict_load_file(files[code])
+            row = row_of[code]
+            n = 0
+            for field in schema["fields"]:
+                key = field["key"]
+                entry = rec.get("fields", {}).get(key)
+                if not isinstance(entry, dict):
+                    continue
+                value = coerce(entry, field)
+                if value is None and not fill_missing:
+                    continue
+                cell = trans_ws[f"{mapping[key]}{row}"]
+                cell.value = value          # 只赋值：字体/填充/对齐/数字格式保持老师模板
+                n += 1
+            written += 1
+            cols = sorted(mapping.values(), key=lambda c: trans_ws[f"{c}1"].column)
+            log(f"{code:9s} 行 {row:3d} 写入 {n:2d} 列（{cols[0]}…{cols[-1]}）")
 
-    tmp = book.with_suffix(".saving.xlsx")
-    wb.save(tmp)
-    wb.close()
-    os.replace(tmp, book)
+    workbook_sha256_after = file_hash(book)
+    proof_wb = openpyxl.load_workbook(book, read_only=True, data_only=False)
+    proof_ws = proof_wb[cfg["sheet"]]
     for code in targets:
+        row = row_of[code]
+        addresses = [f"{mapping[field['key']]}{row}" for field in schema["fields"]]
         save_record(cfg, target, code, "written",
-                    {**by_code[code], "target": target, "gate_pass": True})
+                    {**by_code[code], "target": target, "gate_pass": True,
+                     "transaction_id": transaction_id,
+                     "workbook": book.name,
+                     "workbook_sha256_before": workbook_sha256_before,
+                     "workbook_sha256_after": workbook_sha256_after,
+                     "cell_addresses": addresses,
+                     "cell_digest": cells_digest(proof_ws, addresses)})
+    proof_wb.close()
     log(f"\n写回完成：{written} 家 -> {book.name}")
     return written
 

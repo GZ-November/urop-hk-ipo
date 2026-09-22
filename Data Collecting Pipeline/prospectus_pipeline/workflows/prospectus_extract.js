@@ -100,7 +100,7 @@ python3 prospectus_pipeline/run.py search pages <CODE> 413-415           # 导�
 **不要**只依赖 packet；也**不要**凭空猜测。找不到就按契约填 NaN/NA，并在 quote 里说明已检索过。`;
 
 function extractPrompt(item) {
-  return `你是 HK IPO 数据库采集员。从一家公司招股书抽取 schema 列出的全部 60 个字段，写成严格 JSON。
+  return `你是 HK IPO 数据库采集员。从一家公司招股书抽取 schema 列出的全部 70 个字段，写成严格 JSON。
 
 ## 输入
 - 抽取包：\`${item.packet_path}\`
@@ -146,7 +146,7 @@ ${OUTPUT_CONTRACT}
 
 ## 手册硬规则（必须遵守）
 1. 金额一律换算成**基本货币单位**（HK$125.6 million -> 125600000）；百分比填小数；确认的零填数字 0。
-2. **合并报表唯一原则（严防母公司单体报表混淆）**：所有资产、权益、负债、销售、利润、现金流、有息债务等财务指标（V–AN、AU–AY、BE 等）**必须且只能**取自**合并财务报表（CONSOLIDATED Financial Statements / Group）**；**绝对严禁**采纳母公司单体报表（`STATEMENT OF FINANCIAL POSITION OF THE COMPANY` / `COMPANY BALANCE SHEETS`）。year-1/2/3 必须是**同一套历史期间**；year-1 销售/利润若不是全年（如 9 个月），按手册年化并在 quote 注明原始期间；附加流量 AU/AW/AX 一律**不年化**；AV（年末现金）和 BE（有息负债）是期末余额，AY 是客户集中度比例。
+2. **合并报表唯一原则（严防母公司单体报表混淆）**：所有资产、权益、负债、销售、利润、现金流、有息债务等财务指标（V–AN、AU–AY、BE 等）**必须且只能**取自**合并财务报表（CONSOLIDATED Financial Statements / Group）**；**绝对严禁**采纳母公司单体报表（\`STATEMENT OF FINANCIAL POSITION OF THE COMPANY\` / \`COMPANY BALANCE SHEETS\`）。year-1/2/3 必须是**同一套历史期间**；year-1 销售/利润若不是全年（如 9 个月），按手册年化并在 quote 注明原始期间；附加流量 AU/AW/AX 一律**不年化**；AV（年末现金）和 BE（有息负债）是期末余额，AY 是客户集中度比例。
 3. AU 经营现金流 = net cash from operating activities，**不是**经营利润；AV 现金及等价物**不自动包含**受限现金。
 4. AX 只填**当期新增**的资本化开发成本，不是期末余额；表中明确写 \`–\`/nil 时填数字 0。
 5. AL/AM/AN 是净利润（profit for the year）；AI/AJ/AK 是税前利润。
@@ -245,12 +245,20 @@ const extractFailed = runItems.filter((_, i) => !extractResults[i] || extractRes
 log(`抽取完成 ${extracted.length}/${runItems.length}；失败 ${extractFailed.length}`);
 
 // 若为主题模式，自动运行确定性合并
+const { execFileSync } = require("child_process");
+const mergedSuccessCodes = new Set();
 if (isTopicMode) {
   phase("主题分片合并");
   const uniqueCodes = [...new Set(runItems.map((item) => item.code))];
   for (const code of uniqueCodes) {
     log(`合并 ${code} 的 4 大主题分片...`);
-    // 触发 run.py merge_topics
+    try {
+      if (!/^\d{4}\.HK$/.test(code)) throw new Error(`非法股票代码: ${code}`);
+      execFileSync("python3", ["prospectus_pipeline/run.py", "merge_topics", "--only", code], { stdio: "inherit" });
+      mergedSuccessCodes.add(code);
+    } catch (err) {
+      log(`合并 ${code} 失败: ${err.message}`);
+    }
   }
 }
 
@@ -258,7 +266,9 @@ let verifyResults = [];
 let verifyFailed = [];
 if (doVerify) {
   phase("独立复核");
-  const okItems = packets.filter((_, i) => extractResults[i] && extractResults[i].self_check_passed === true);
+  const okItems = isTopicMode
+    ? packets.filter((p) => mergedSuccessCodes.has(p.code))
+    : packets.filter((_, i) => extractResults[i] && extractResults[i].self_check_passed === true);
   verifyResults = await pipeline(okItems, async (item) => {
     return await agent(verifyPrompt(item), {
       schema: verifySchema,
