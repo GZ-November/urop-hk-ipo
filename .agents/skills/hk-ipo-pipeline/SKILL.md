@@ -4,7 +4,7 @@ description: >-
   Inspect, audit, validate, and execute the Hong Kong Main Board IPO dataset collection pipeline.
   Use when the user asks to check pipeline status, audit Excel cells against verified JSON extractions,
   cross-check HKEX Listing Rules (Chapter 18C, FINI Mechanism A/B clawbacks, green shoe 15%, cornerstone lockup),
-  generate academic and macro Q1 market reports, export clean econometric CSVs or 120-variable codebooks,
+  generate academic and macro Q1 market reports, export clean econometric CSVs or 202-variable codebooks,
   or collect and process new IPO companies.
 ---
 

@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/Tests-55%2F55%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
+[![Tests](https://img.shields.io/badge/Tests-85%2F85%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20%2B%20Agentic-orange.svg)](#core-architecture--design-principles)
 [![Zero Token Cost](https://img.shields.io/badge/Derivation%20Cost-0%20LLM%20Tokens-success.svg)](#core-architecture--design-principles)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
@@ -16,7 +16,7 @@ An end-to-end automated extraction, deterministic validation, cross-check auditi
 ## Table of Contents
 
 1. [Core Architecture & Design Principles](#core-architecture--design-principles)
-2. [161-Variable Econometric Schema](#161-variable-econometric-schema)
+2. [202-Variable Econometric Schema & Master Panel Architecture](#202-variable-econometric-schema--master-panel-architecture)
 3. [Quick Start (30 Seconds)](#quick-start-30-seconds)
 4. [Teammate & Collaborator Workflow](#teammate--collaborator-workflow)
 5. [Empirical Econometric Analysis Guide](#empirical-econometric-analysis-guide)
@@ -57,15 +57,23 @@ flowchart TD
 
 ---
 
-## 161-Variable Econometric Schema
+## 202-Variable Econometric Schema & Master Panel Architecture
 
-The current research workbook contains 161 variables structured across three standard research tiers:
+The canonical research workbook (`HKIPO-MB2026Q1.xlsx`, Sheet: `NLR`) contains **202 variables** structured across three standard research tiers:
 
 | Tier | Range | Count | Primary Source | Extraction Mechanism |
 |---|---|---|---|---|
 | **Tier 1 (Green)** | HKEX base fields | 11 | HKEX New Listing Report | Deterministic table parser (0 Tokens) |
 | **Tier 2 (Light Blue)** | Prospectus and academic fields | 77 | Statutory Prospectus Filings | PDF text slicer + agent extraction + hash-gating |
-| **Tier 3 (Dark Blue)** | Allotment, market and macro fields | 73 | Allotment announcements and external sources | Deterministic parsers, APIs, and formulas |
+| **Tier 3 (Dark Blue)** | Allotment, macro, and academic expansion fields | 114 | Allotment announcements, market feeds, and statutory notices | Deterministic parsers, APIs, and formulas (0 Tokens) |
+
+### Academic Expansion Dimensions (Cols 162–202, FF–GT):
+- **Stabilization & Over-Allotment (Cols 162–172)**: Stabilizing manager, 30-day statutory period, price support purchases, over-allocation volume/ratio, exercise date/percentage, post-stabilization $[-5, +5]$ cliff return, 20-day return, and volume decay ratio.
+- **Microstructure & Horizons (Cols 173–184)**: Day 5, Day 20, 3-month BHR and Wealth Relatives vs. HSI & HSTECH; 3-month daily turnover; 6-month Amihud illiquidity, zero-volume days, daily return volatility, and max drawdown.
+- **Lockup & Unlock Schedules (Cols 185–189)**: Controlling shareholder 6M disposal & 12M control lockup dates; cornerstone unlock CAR $[-5, +5]$ & $[-20, +20]$ vs. HSI; post-unlock volume shock ratio.
+- **Syndicate & Intermediaries (Cols 190–195)**: Lead sponsor name, joint sponsor count, commercial bank affiliate flags, base commission, discretionary incentive fee, and total underwriting fee rates.
+- **Institutional Network (Cols 196–200)**: Cornerstone investor count, state-owned/government fund flags, crossover investor flags, Pre-IPO institutional investor counts, and state-backed flags.
+- **Regulatory Regimes (Cols 201–202)**: FINI digital settlement transition flags (`POST_FINI` vs. `PRE_FINI`) and 2025 Pricing Reform flags (`POST_2025_REFORM`).
 
 ---
 
@@ -92,7 +100,7 @@ All key operations are unified and executable directly from the repository root 
 # Health check: status + audit + cross_check + test in a single sweep
 make check
 
-# Run all 17 automated unit and regression tests
+# Run all 85 automated unit and regression tests
 make test
 
 # Perform read-only cell-by-cell audit against target Excel template
@@ -104,7 +112,7 @@ make cross_check
 # Generate macro market overview and research report
 make report
 
-# Export clean econometric CSV and live 161-variable academic codebook
+# Export clean econometric CSV and live 202-variable academic codebook
 make export
 
 # Verify syntax & bytecode compilation
@@ -294,10 +302,10 @@ This repository includes a standardized skill package compatible with AI coding 
         ├── README.md                       # Engine Technical Manual
         ├── src/                            # Core extraction, validation & write modules
         ├── tools/                          # Domain CLI utilities (search, flags, HKMA)
-        ├── schema/                         # Field contracts (fields.json, allot_fields.json)
+        ├── schema/                         # Field contracts (fields.json, allot_fields.json, relational_schemas.json)
         ├── prompts/                        # LLM Extraction schemas & few-shot instructions
         ├── workflows/                      # Extraction workflows
-        ├── tests/                          # Automated test suite (55/55 Passed)
+        ├── tests/                          # Automated test suite (85/85 Passed)
         ├── data/                           # PDF store, page text & evidence packets
         └── out/                            # Verifiable state ledger, clean CSV & Codebook
 ```

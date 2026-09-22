@@ -1,6 +1,6 @@
 # HK IPO Prospectus & Allotment Pipeline (v2.0)
 
-Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings (60 prospectus fields, 18 allotment fields, and 31 external market/macro fields).
+Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings (60 prospectus fields, 18 allotment fields, and 114 external market/macro/academic expansion fields, totaling 202 variables; plus multi-year master sample panel architecture).
 
 ---
 
@@ -38,6 +38,12 @@ prospectus_pipeline/
 │   ├── storage.py                  # Atomic JSON I/O and prospectus retrieval
 │   ├── validate.py                 # Deterministic structural and identity validation engine
 │   ├── write_back.py               # Safe Excel write-back with automatic snapshots
+│   ├── write_back_expansion.py     # Transactional write-back engine for academic expansion (Cols 162–202)
+│   ├── sample_builder.py           # Multi-year IPO master sample builder & statutory screening (2021–2026)
+│   ├── market_panel.py             # Daily OHLCV microstructure panel & multi-horizon return calculator
+│   ├── stabilization_panel.py      # Price stabilization & green shoe event calculator
+│   ├── lockup_panel.py             # Multi-horizon statutory lockup & unlock event calculator
+│   ├── relational_tables.py        # Relational investor & underwriting syndicate graph tables
 │   ├── pricing_date.py             # Pricing date deterministic derivation
 │   ├── pdfprep.py                  # Prospectus PDF download, text extraction, and section slicing
 │   ├── allotprep.py                # Allotment results download, slicing, and evidence packaging
@@ -60,14 +66,17 @@ prospectus_pipeline/
 │
 ├── schema/                         # Contract schemas
 │   ├── fields.json                 # 60 prospectus field specifications
-│   └── allot_fields.json           # 18 allotment field specifications
+│   ├── allot_fields.json           # 18 allotment field specifications
+│   └── relational_schemas.json     # Strict JSON Schema for 8 master relational & event tables
 │
-├── tests/                          # Portable unit, integration, and production acceptance tests
+├── tests/                          # Portable unit, integration, and production acceptance tests (85/85 Passed)
 │   ├── test_audit_excel.py         # Read-only Excel audit, null-equivalence, and float tolerance
 │   ├── test_cross_check.py         # Cross-field rules, Chapter 18C valuation, and clawbacks
 │   ├── test_report.py              # Report aggregation and markdown generation
 │   ├── test_codebook.py            # Variable dictionary and CSV exporter tests
-│   └── test_pipeline_safety.py     # Hash-gating, quotation forgery, and range safety tests
+│   ├── test_pipeline_safety.py     # Hash-gating, quotation forgery, and range safety tests
+│   ├── test_master_expansion.py    # Master sample screening, microstructure panel & maturity tests
+│   └── test_pipeline_robustness.py # Dynamic column resolution, 100% audit mapping, codebook metadata
 │
 └── workflows/                      # Extraction and review workflow definitions
     ├── prospectus_extract.js       # Prospectus 70-field extraction workflow

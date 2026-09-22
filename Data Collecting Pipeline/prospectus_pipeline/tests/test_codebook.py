@@ -58,7 +58,7 @@ class CodebookTests(unittest.TestCase):
             with open(csv_path, mode="r", encoding="utf-8-sig") as f:
                 reader = list(csv.reader(f))
                 self.assertEqual(len(reader), summary["sample_size"] + 1)
-                self.assertEqual(len(reader[0]), 161)
+                self.assertEqual(len(reader[0]), summary["variable_count"])
                 self.assertEqual(reader[0][1], "Stock Code")
                 stock_codes = [row[1] for row in reader[1:]]
                 self.assertEqual(len(stock_codes), summary["sample_size"])
@@ -70,14 +70,15 @@ class CodebookTests(unittest.TestCase):
             if not WORKBOOK_PATH.exists():
                 cfg["workbook_path"] = FIXTURE_WORKBOOK
             res = export_all(cfg, out_dir=tmp_dir)
-            self.assertEqual(res["variable_count"], 161)
+            expected_vars = 202 if WORKBOOK_PATH.exists() else 161
+            self.assertEqual(res["variable_count"], expected_vars)
             self.assertTrue(Path(res["csv_path"]).exists())
             self.assertTrue(Path(res["md_path"]).exists())
             self.assertTrue(Path(res["json_path"]).exists())
             self.assertTrue(str(res["csv_path"]).startswith(tmp_dir))
 
             md_content = Path(res["md_path"]).read_text(encoding="utf-8")
-            self.assertIn("161 维全量变量字典详细清单", md_content)
+            self.assertIn(f"{expected_vars} 维全量变量字典详细清单", md_content)
             self.assertIn(f"{res['sample_size']} 家", md_content)
             self.assertIn("浅绿", md_content)
 
@@ -85,11 +86,11 @@ class CodebookTests(unittest.TestCase):
     def test_build_codebook_full_production_coverage(self):
         variables, summary = build_codebook()
         self.assertEqual(summary["sample_size"], 38)
-        self.assertEqual(summary["variable_count"], 161)
+        self.assertEqual(summary["variable_count"], 202)
         self.assertEqual(summary["tiers"]["green_hkex"], 11)
         self.assertEqual(summary["tiers"]["blue_prospectus"], 77)
-        self.assertEqual(summary["tiers"]["darkblue_external"], 73)
-        self.assertEqual(len(variables), 161)
+        self.assertEqual(summary["tiers"]["darkblue_external"], 114)
+        self.assertEqual(len(variables), 202)
 
 
 if __name__ == "__main__":

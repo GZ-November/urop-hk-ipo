@@ -158,6 +158,60 @@ HEADER_TOOL_MAPPING = {
     norm_header("3-year post-IPO return (%) [Reserved]"): "tools/external/aftermarket.py (3-year return [Reserved])",
     norm_header("3-year wealth relative vs HSI [Reserved]"): "tools/external/aftermarket.py (3-year WR vs HSI [Reserved])",
     norm_header("18A/18C regulatory milestone status"): "tools/external/aftermarket.py (18A/18C regulatory status)",
+
+    # === 学术与微观结构扩展字段 (Cols 162–202 / src/write_back_expansion.py) ===
+    # 1. 稳价与超额配售 (Col 162-172)
+    norm_header("Stabilizing manager"): "src/write_back_expansion.py (Stabilizing manager)",
+    norm_header("Stabilization period end date"): "src/write_back_expansion.py (Stabilization period end date)",
+    norm_header("Stabilization purchases occurred"): "src/write_back_expansion.py (Stabilization purchases occurred)",
+    norm_header("Over-allocation shares"): "src/write_back_expansion.py (Over-allocation shares)",
+    norm_header("Over-allocation (% of base offer)"): "src/write_back_expansion.py (Over-allocation pct)",
+    norm_header("Over-allotment option exercise date"): "src/write_back_expansion.py (Over-allotment exercise date)",
+    norm_header("Shares issued under over-allotment option"): "src/write_back_expansion.py (Shares issued under option)",
+    norm_header("Over-allotment exercise percentage (%)"): "src/write_back_expansion.py (Over-allotment exercise percentage)",
+    norm_header("Post-stabilization cliff return [-5, +5] (%)"): "src/write_back_expansion.py (Cliff return m5 p5)",
+    norm_header("Post-stabilization 20-day return [0, +20] (%)"): "src/write_back_expansion.py (Post-stabilization return p20)",
+    norm_header("Post-stabilization volume decay ratio (%)"): "src/write_back_expansion.py (Post-stabilization volume decay)",
+
+    # 2. 微观结构与短期/中期跨期表现 (Col 173-184)
+    norm_header("Day-5 BHR from Day-1 close (%)"): "src/write_back_expansion.py (Day-5 BHR)",
+    norm_header("Day-5 wealth relative vs HSI"): "src/write_back_expansion.py (Day-5 WR vs HSI)",
+    norm_header("Day-20 BHR from Day-1 close (%)"): "src/write_back_expansion.py (Day-20 BHR)",
+    norm_header("Day-20 wealth relative vs HSI"): "src/write_back_expansion.py (Day-20 WR vs HSI)",
+    norm_header("3-month BHR from Day-1 close (%)"): "src/write_back_expansion.py (3-month BHR)",
+    norm_header("3-month wealth relative vs HSI"): "src/write_back_expansion.py (3-month WR vs HSI)",
+    norm_header("3-month wealth relative vs HSTECH"): "src/write_back_expansion.py (3-month WR vs HSTECH)",
+    norm_header("3-month average daily turnover (HK$)"): "src/write_back_expansion.py (3-month avg daily turnover)",
+    norm_header("Amihud illiquidity (6M mean)"): "src/write_back_expansion.py (Amihud illiquidity 6M mean)",
+    norm_header("Zero-volume days count (first 6M)"): "src/write_back_expansion.py (Zero-volume days count 6M)",
+    norm_header("Return volatility (first 6M daily std dev, %)"): "src/write_back_expansion.py (Return volatility 6M)",
+    norm_header("Maximum drawdown (first 6M, %)"): "src/write_back_expansion.py (Maximum drawdown 6M)",
+
+    # 3. 多重法定解禁日程与事件窗冲击 (Col 185-189)
+    norm_header("Controlling shareholder 6-month disposal lockup expiry date"): "src/write_back_expansion.py (Controlling shareholder 6M disposal expiry)",
+    norm_header("Controlling shareholder 12-month cessation of control expiry date"): "src/write_back_expansion.py (Controlling shareholder 12M control expiry)",
+    norm_header("Cornerstone unlock CAR [-5, +5] (%)"): "src/write_back_expansion.py (Cornerstone unlock CAR m5 p5)",
+    norm_header("Cornerstone unlock CAR [-20, +20] (%)"): "src/write_back_expansion.py (Cornerstone unlock CAR m20 p20)",
+    norm_header("Cornerstone unlock volume shock ratio"): "src/write_back_expansion.py (Cornerstone unlock volume shock ratio)",
+
+    # 4. 承销辛迪加、费用分拆与银企关联 (Col 190-195)
+    norm_header("Lead sponsor name"): "src/write_back_expansion.py (Lead sponsor name)",
+    norm_header("Joint sponsor count"): "src/write_back_expansion.py (Joint sponsor count)",
+    norm_header("Sponsor commercial bank affiliate flag"): "src/write_back_expansion.py (Sponsor bank affiliate flag)",
+    norm_header("Underwriting base commission rate (%)"): "src/write_back_expansion.py (Underwriting base commission rate)",
+    norm_header("Underwriting discretionary incentive fee rate (%)"): "src/write_back_expansion.py (Underwriting incentive fee rate)",
+    norm_header("Total underwriting fee rate (%)"): "src/write_back_expansion.py (Total underwriting fee rate)",
+
+    # 5. 机构投资者网络与国资背景 (Col 196-200)
+    norm_header("Cornerstone investor count"): "src/write_back_expansion.py (Cornerstone investor count)",
+    norm_header("Cornerstone state-owned presence flag"): "src/write_back_expansion.py (Cornerstone state-owned flag)",
+    norm_header("Crossover fund presence flag"): "src/write_back_expansion.py (Crossover fund flag)",
+    norm_header("Pre-IPO institutional investor count"): "src/write_back_expansion.py (Pre-IPO investor count)",
+    norm_header("Pre-IPO state-owned backing flag"): "src/write_back_expansion.py (Pre-IPO state-owned flag)",
+
+    # 6. 宏观监管制度分期 (Col 201-202)
+    norm_header("FINI digital settlement regime"): "src/write_back_expansion.py (FINI digital settlement regime)",
+    norm_header("2025 pricing reform regime"): "src/write_back_expansion.py (2025 pricing reform regime)",
 }
 
 

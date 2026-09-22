@@ -36,7 +36,8 @@
 - [Idea 18: 发行费用分拆中的“软美元寻租”：固定承销佣金 vs. 酌情奖励费率博弈](#idea-18-发行费用分拆中的软美元寻租固定承销佣金-vs-酌情奖励费率博弈)
 - [Idea 19: 卖方跨期期望效用最大化与“理性抑价”：发行流产保险、解禁期多阶段套现与激励相容信息租金](#idea-19-卖方跨期期望效用最大化与理性抑价发行流产保险解禁期多阶段套现与激励相容信息租金)
 - [Idea 20: 港股 IPO 长期收益之谜：上市后 3 年买入持有回报（BHR）、基准指数加权偏误（EW vs. VW）与同风格匹配检验](#idea-20-港股-ipo-长期收益之谜上市后-3-年买入持有回报bhr基准指数加权偏误ew-vs-vw与同风格匹配检验-long-run-underperformance-wealth-relatives--benchmark-contamination)
-- [附录：全景课题库统一变量定义与 138 列主表映射全景矩阵](#附录全景课题库统一变量定义与-138-列主表映射全景矩阵)
+- [三、建议利用的制度变化 (扩展历史样本后的准实验设计)](#三建议利用的制度变化)
+- [附录：全景课题库统一变量定义与 202 列主表映射全景矩阵](#附录全景课题库统一变量定义与-202-列主表映射全景矩阵)
 
 ---
 
@@ -1119,7 +1120,36 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 
 ---
 
-## 附录：全景课题库统一变量定义与 138 列主表映射全景矩阵
+## 三、建议利用的制度变化
+
+扩展历史样本后，可以围绕三个明确节点做更有说服力的准实验：
+
+- **2023-11-22：FINI 上线**。[HKEX公告](https://www.hkex.com.hk/News/News-Release/2023/230927news?sc_lang=en)
+- **2024-09-01：18C 临时降低市值门槛**
+- **2025-08-04：Mechanism A/B、最低建簿比例及新自由流通规定生效**。[HKEX改革总结](https://www.hkex.com.hk/News/Regulatory-Announcements/2025/2508012news?sc_lang=en)
+
+这比只在 2026 Q1 的 38 家公司之间做横截面回归更有研究价值。
+
+### 3.1 三大核心制度节点与准实验因果识别设计
+
+| 政策生效日期 | 制度改革事件 | 官方公告 / 规则出处 | 核心制度机制 (Mechanism / Institutional Shock) | 准实验因果识别设计 (Quasi-Natural Experiment) | 对应 Research Ideas |
+|:---:|:---|:---|:---|:---|:---:|
+| **2023-11-22** | **FINI 数字化结算平台正式上线** | [HKEX公告 (2023/09/27)](https://www.hkex.com.hk/News/News-Release/2023/230927news?sc_lang=en) | 1. IPO 定价至挂牌结算周期由 $T+5$ 压缩至 $T+2$；<br>2. 彻底终结公开发售超额认购资金与孖展借贷长期冻结成本；<br>3. 引入全市场统一数字防重与新资金核验机制。 | **断点回归 (Sharp RDD) / 双重差分 (DiD)**：<br>检验资金占用周期从 5 天压缩至 2 天对外生资金成本的冲击，分析散户杠杆打新热情、公开发售超额认购倍数弹性、以及一级发行定价动态调整（Fixed Price 普及）的因果效应。 | **Idea 02, Idea 08, Idea 13** |
+| **2024-09-01** | **Chapter 18C 特专科技临时降低市值门槛** | 港交所上市规则临时调整（三年过渡期：2024-09-01 至 2027-08-31） | 1. **已商业化公司**最低预期市值门槛由 **100 亿港元** 下调至 **40 亿港元**；<br>2. **未商业化公司**最低预期市值门槛由 **150 亿港元** 下调至 **80 亿港元**。 | **模糊断点回归 (Fuzzy RDD) / 交错 DiD**：<br>以 40 亿 / 80 亿法定门槛为外生断点，检验制度门槛断崖式下调前后，科技独角兽企业上市窗口期选择、估值折价幅度以及临界市值企业的“市值红线逼空效应”（即为合规达标而被迫顶格定价的动机）。 | **Idea 01, Idea 06, Idea 16** |
+| **2025-08-04** | **Mechanism A/B、最低建簿比例及新自由流通规定生效** | [HKEX改革总结 (2025/08/01)](https://www.hkex.com.hk/News/Regulatory-Announcements/2025/2508012news?sc_lang=en) | 1. 推出双轨发售定价机制：**Mechanism A**（阶梯式强制回拨）与 **Mechanism B**（灵活自主回拨，公开发售最高上限 20%）；<br>2. 确立**最低建簿比例（Minimum Bookbuilding Requirement）**；<br>3. 落实**新自由流通盘规定**并维持 6 个月基石投资者强制禁售期。 | **政策实施双重差分 (DiD) / 机制选择自选择模型 (Heckman / Treatment Effects)**：<br>1. 比较 Mechanism A vs. B 下发行人抑价与财富让渡（MLOT）的差异；<br>2. 检验最低建簿与新自由流通规定对抑制极端“流动性挤压”（Float Squeeze）与首日翻转抛售率（Flipping Ratio）的治理效果。 | **Idea 02, Idea 03, Idea 09, Idea 11** |
+
+### 3.2 历史样本拓展与跨期面板数据构建路径
+
+1. **时间跨度拓展建议**：
+   - 将样本观测窗口由当前的 **2026 Q1（38 家）** 向前延伸至 **2022 年 1 月 1 日至 2025 年 12 月 31 日**（约 280~320 家完整挂牌样本）。
+   - 这样即可完整覆盖 **2023-11-22（FINI 上线前 $T+5$ 阶段与上线后 $T+2$ 阶段）**、**2024-09-01（18C 门槛松绑前的高门槛阶段与过渡期阶段）**、以及 **2025-08-04（新旧发售回拨规则与自由流通盘制度切换）** 的事前（Pre-reform）与事后（Post-reform）双边窗口。
+2. **克服单一季度横截面局限**：
+   - 2026 Q1 的 38 家横截面样本适于探索微观结构与横截面异质性关联（例如 18C vs. A+H、基石持股比例与流动性衰减）；
+   - 跨越上述三个制度节点的面板数据（Panel Data with Time and Industry Fixed Effects）则能有效消除不可观测的时间不变量遗漏变量偏误，为港股新股定价、承销辛迪加行为和市场微观结构研究建立严格的**因果推断（Causal Inference）**证据链。
+
+---
+
+## 附录：全景课题库统一变量定义与 202 列主表映射全景矩阵
 
 下表系统汇编了上述 20 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
 
@@ -1219,6 +1249,47 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 159**| `FC`| `3-year post-IPO return (%) [Reserved]` | 3 年期持有收益率 [预留待填充] | Idea 20 | 长期因变量 | `0.00%` |
 | **Col 160**| `FD`| `3-year wealth relative vs HSI [Reserved]` | 3 年期对标恒指财富相对比 [预留] | Idea 20 | 长期绩效 | `0.000` |
 | **Col 161**| `FE`| `18A/18C regulatory milestone status` | 监管资格演变与商业化里程碑状态 | Idea 20, 全库通用 | 治理与监管分类 | `@` |
+| **Col 162**| `FF`| `Stabilizing manager` | 官方指定价格稳定经理人名称 | Idea 03, 11 | 契约主体 | `@` |
+| **Col 163**| `FG`| `Stabilization period end date` | 法定30天稳价期结束日期 | Idea 03, 11 | 事件时点 | `YYYY-MM-DD` |
+| **Col 164**| `FH`| `Stabilization purchases occurred` | 稳价期内是否发生二级市场托单购买 | Idea 03, 11 | 核心自变量 | `0/1` |
+| **Col 165**| `FI`| `Over-allocation shares` | 国际配售超额配售股份数量 | Idea 03, 11 | 规模控制 | `#,##0` |
+| **Col 166**| `FJ`| `Over-allocation (% of base offer)` | 超额配售股数占基础发售股份比例 | Idea 03, 11 | 核心自变量 | `0.00%` |
+| **Col 167**| `FK`| `Over-allotment option exercise date` | 超额配售权实际行使公告日期 | Idea 03, 11 | 事件时点 | `YYYY-MM-DD` |
+| **Col 168**| `FL`| `Shares issued under over-allotment option` | 超额配售权最终发行股份数量 | Idea 03, 11 | 规模控制 | `#,##0` |
+| **Col 169**| `FM`| `Over-allotment exercise percentage (%)` | 超额配售权行使比例 (绿鞋执行度) | Idea 03, 11 | 核心自变量 | `0.00%` |
+| **Col 170**| `FN`| `Post-stabilization cliff return [-5, +5] (%)`| 稳价期结束日前后[-5, +5]日累计收益率 | Idea 03, 11 | 核心因变量 (Y) | `0.00%` |
+| **Col 171**| `FO`| `Post-stabilization 20-day return [0, +20] (%)`| 稳价期结束后20个交易日累计收益率 | Idea 03, 11 | 核心因变量 (Y) | `0.00%` |
+| **Col 172**| `FP`| `Post-stabilization volume decay ratio (%)` | 稳价结束后20日均成交额相对稳价期比率 | Idea 03, 11 | 核心因变量 (Y) | `0.00%` |
+| **Col 173**| `FQ`| `Day-5 BHR from Day-1 close (%)` | 挂牌首周 (T+5) 二级买入持有收益率 | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 174**| `FR`| `Day-5 wealth relative vs HSI` | 挂牌首周对标恒指财富相对比 ($WR_{\text{HSI}}$) | Idea 20 | 相对超额绩效 | `0.000` |
+| **Col 175**| `FS`| `Day-20 BHR from Day-1 close (%)` | 首月 (T+20) 二级买入持有收益率 | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 176**| `FT`| `Day-20 wealth relative vs HSI` | 首月对标恒指财富相对比 ($WR_{\text{HSI}}$) | Idea 20 | 相对超额绩效 | `0.000` |
+| **Col 177**| `FU`| `3-month BHR from Day-1 close (%)` | 首季 (T+63) 二级买入持有收益率 | Idea 20 | 核心因变量 (Y) | `0.00%` |
+| **Col 178**| `FV`| `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 ($WR_{\text{HSI}}$) | Idea 20 | 相对超额绩效 | `0.000` |
+| **Col 179**| `FW`| `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 ($WR_{\text{HSTECH}}$)| Idea 20 | 风格相对绩效 | `0.000` |
+| **Col 180**| `FX`| `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | Idea 20 | 流动性指标 | `#,##0` |
+| **Col 181**| `FY`| `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | Idea 17, 20 | 核心流动性 (Y/X) | `0.000000` |
+| **Col 182**| `FZ`| `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | Idea 17, 20 | 交易活跃度 | 整数 |
+| **Col 183**| `GA`| `Return volatility (first 6M daily std dev, %)`| 上市前6个月日度收益率标准差 (波动率) | Idea 20 | 风险度量 | `0.00%` |
+| **Col 184**| `GB`| `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 | Idea 20 | 尾部风险 | `0.00%` |
+| **Col 185**| `GC`| `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | Idea 09, 19 | 法定日程 | `YYYY-MM-DD` |
+| **Col 186**| `GD`| `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | Idea 09, 19 | 法定日程 | `YYYY-MM-DD` |
+| **Col 187**| `GE`| `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]日累计超额收益 | Idea 09 | 核心因变量 (Y) | `0.00%` |
+| **Col 188**| `GF`| `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]日累计超额收益 | Idea 09 | 核心因变量 (Y) | `0.00%` |
+| **Col 189**| `GG`| `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前换手额之比 | Idea 09 | 冲击度量 | `0.000` |
+| **Col 190**| `GH`| `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | Idea 05, 10, 17 | 声誉/网络 | `@` |
+| **Col 191**| `GI`| `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | Idea 05, 10 | 承销团规模 | 整数 |
+| **Col 192**| `GJ`| `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 | Idea 10 | 核心自变量 | `0/1` |
+| **Col 193**| `GK`| `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | Idea 18 | 核心自变量 | `0.00%` |
+| **Col 194**| `GL`| `Underwriting discretionary incentive fee rate (%)`| 承销酌情奖励费率估算 (%) | Idea 18 | 核心自变量 | `0.00%` |
+| **Col 195**| `GM`| `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | Idea 18 | 发行成本 | `0.00%` |
+| **Col 196**| `GN`| `Cornerstone investor count` | 基石投资者机构总家数 | Idea 09, 14 | 投资者结构 | 整数 |
+| **Col 197**| `GO`| `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 | Idea 09 | 核心自变量 | `0/1` |
+| **Col 198**| `GP`| `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份跨界基金 | Idea 14 | 核心自变量 | `0/1` |
+| **Col 199**| `GQ`| `Pre-IPO institutional investor count` | 主要 Pre-IPO 投资机构总数 | Idea 04, 14 | 资本结构 | 整数 |
+| **Col 200**| `GR`| `Pre-IPO state-owned backing flag` | Pre-IPO 股东中是否包含国资机构 | Idea 04, 09 | 核心自变量 | `0/1` |
+| **Col 201**| `GS`| `FINI digital settlement regime` | 结算监管体制 (POST_FINI / PRE_FINI) | Idea 02, 08, 13 | 准实验哑变量 | `@` |
+| **Col 202**| `GT`| `2025 pricing reform regime` | 发售与定价机制改革体制 (POST_2025_REFORM) | Idea 02, 03 | 准实验哑变量 | `@` |
 
 ---
 

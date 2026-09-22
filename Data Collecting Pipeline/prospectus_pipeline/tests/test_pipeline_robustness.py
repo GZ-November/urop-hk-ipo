@@ -68,7 +68,8 @@ class PipelineRobustnessTests(unittest.TestCase):
         if not WORKBOOK_PATH.exists():
             cfg["workbook_path"] = FIXTURE_WORKBOOK
         variables, summary = build_codebook(cfg)
-        self.assertEqual(summary["variable_count"], 161)
+        expected_vars = 202 if WORKBOOK_PATH.exists() else 161
+        self.assertEqual(summary["variable_count"], expected_vars)
 
         reserved_headers = {
             "1-year post-IPO return (%) [Reserved]",

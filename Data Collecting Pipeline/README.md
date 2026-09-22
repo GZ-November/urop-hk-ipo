@@ -43,10 +43,10 @@ Data Collecting Pipeline/
     ├── README.md                  # Engine Technical Manual
     ├── src/                       # Extraction, validation, audit & write-back modules
     ├── tools/                     # Utility scripts (search, state, external indicators)
-    ├── schema/                    # Contract schemas (fields.json, allot_fields.json)
+    ├── schema/                    # Contract schemas (fields.json, allot_fields.json, relational_schemas.json)
     ├── prompts/                   # LLM Extraction schemas & few-shot instructions
     ├── workflows/                 # Headless workflow definitions
-    ├── tests/                     # Automated Test Suite (55/55 Passed)
+    ├── tests/                     # Automated Test Suite (85/85 Passed)
     ├── data/                      # PDF store, page text, and evidence packets (gitignored)
     └── out/                       # Verifiable state ledger, clean CSV, and Codebook
 ```
@@ -82,7 +82,7 @@ python3 prospectus_pipeline/run.py export
 # 6. Run external indicator collection (market returns, HIBOR, HKMA liquidity, flags)
 python3 prospectus_pipeline/run.py external
 
-# 7. Run automated test suite (20 tests)
+# 7. Run automated test suite (85 tests)
 python3 -m unittest discover -s prospectus_pipeline/tests -v
 
 # 8. Compile official Faculty Progress Word Report

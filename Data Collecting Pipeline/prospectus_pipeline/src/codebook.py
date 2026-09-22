@@ -220,6 +220,182 @@ EXTRA_HEADER_VARS = {
     "18A/18C regulatory milestone status": (
         "18A/18C regulatory milestone status", "18A/18C 监管路径与商业化里程碑状态", "深蓝 (配发及外部数据)", "regulatory_flags", "上市规则分类与发行人公告",
     ),
+    # === 学术与微观结构扩展字段 (Cols 162–202) ===
+    # 1. 稳价与超额配售 (Col 162-172)
+    "Stabilizing manager": (
+        "Stabilizing manager", "官方指定价格稳定经理人名称", "深蓝 (配发及外部数据)",
+        "stabilization", "香港主板上市规则第 9(2) 条稳价公告",
+    ),
+    "Stabilization period end date": (
+        "Stabilization period end date", "法定30天稳价期结束日期", "深蓝 (配发及外部数据)",
+        "stabilization", "香港主板上市规则第 9(2) 条稳价公告",
+    ),
+    "Stabilization purchases occurred": (
+        "Stabilization purchases occurred", "稳价期内是否发生二级市场托单购买 (1=是, 0=否)", "深蓝 (配发及外部数据)",
+        "stabilization", "香港主板上市规则第 9(2) 条稳价公告",
+    ),
+    "Over-allocation shares": (
+        "Over-allocation shares", "国际配售超额配售股份数量（股）", "深蓝 (配发及外部数据)",
+        "stabilization", "配发结果公告与超额配售公告",
+    ),
+    "Over-allocation (% of base offer)": (
+        "Over-allocation (% of base offer)", "超额配售股数占基础发售股份比例 (%)", "深蓝 (配发及外部数据)",
+        "stabilization", "配发结果公告与超额配售公告",
+    ),
+    "Over-allotment option exercise date": (
+        "Over-allotment option exercise date", "超额配售权实际行使公告日期", "深蓝 (配发及外部数据)",
+        "stabilization", "超额配售权行使公告",
+    ),
+    "Shares issued under over-allotment option": (
+        "Shares issued under over-allotment option", "超额配售权最终发行股份数量（股）", "深蓝 (配发及外部数据)",
+        "stabilization", "超额配售权行使公告",
+    ),
+    "Over-allotment exercise percentage (%)": (
+        "Over-allotment exercise percentage (%)", "超额配售权行使比例 (行使股数/超额配售上限, %)", "深蓝 (配发及外部数据)",
+        "stabilization", "超额配售权行使公告确定性派生",
+    ),
+    "Post-stabilization cliff return [-5, +5] (%)": (
+        "Post-stabilization cliff return [-5, +5] (%)", "稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试）", "深蓝 (配发及外部数据)",
+        "stabilization", "二级市场日行情与稳价截止日确定性派生",
+    ),
+    "Post-stabilization 20-day return [0, +20] (%)": (
+        "Post-stabilization 20-day return [0, +20] (%)", "稳价期结束后20个交易日累计收益率 (%)", "深蓝 (配发及外部数据)",
+        "stabilization", "二级市场日行情与稳价截止日确定性派生",
+    ),
+    "Post-stabilization volume decay ratio (%)": (
+        "Post-stabilization volume decay ratio (%)", "稳价结束后20日均成交额相对稳价期内之比 (%)", "深蓝 (配发及外部数据)",
+        "stabilization", "二级市场日行情与稳价截止日确定性派生",
+    ),
+
+    # 2. 微观结构与短期/中期跨期表现 (Col 173-184)
+    "Day-5 BHR from Day-1 close (%)": (
+        "Day-5 BHR from Day-1 close (%)", "挂牌首周 (T+5交易日) 二级买入持有收益率 (%)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "Day-5 wealth relative vs HSI": (
+        "Day-5 wealth relative vs HSI", "挂牌首周对标恒指财富相对比 (WR_HSI)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情与恒生指数确定性派生",
+    ),
+    "Day-20 BHR from Day-1 close (%)": (
+        "Day-20 BHR from Day-1 close (%)", "首月 (T+20交易日) 二级买入持有收益率 (%)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "Day-20 wealth relative vs HSI": (
+        "Day-20 wealth relative vs HSI", "首月对标恒指财富相对比 (WR_HSI)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情与恒生指数确定性派生",
+    ),
+    "3-month BHR from Day-1 close (%)": (
+        "3-month BHR from Day-1 close (%)", "首季 (T+63交易日) 二级买入持有收益率 (%)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "3-month wealth relative vs HSI": (
+        "3-month wealth relative vs HSI", "首季对标恒指财富相对比 (WR_HSI)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情与恒生指数确定性派生",
+    ),
+    "3-month wealth relative vs HSTECH": (
+        "3-month wealth relative vs HSTECH", "首季对标恒科财富相对比 (WR_HSTECH)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情与恒生科技指数确定性派生",
+    ),
+    "3-month average daily turnover (HK$)": (
+        "3-month average daily turnover (HK$)", "首季度日均成交金额 (港元)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "Amihud illiquidity (6M mean)": (
+        "Amihud illiquidity (6M mean)", "上市前6个月日均 Amihud (2002) 非流动性指标", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情与 Amihud 模型派生",
+    ),
+    "Zero-volume days count (first 6M)": (
+        "Zero-volume days count (first 6M)", "上市前6个月零成交量交易日天数", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情交易量派生",
+    ),
+    "Return volatility (first 6M daily std dev, %)": (
+        "Return volatility (first 6M daily std dev, %)", "上市前6个月日度收益率标准差 (波动率, %)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日度收益率标准差派生",
+    ),
+    "Maximum drawdown (first 6M, %)": (
+        "Maximum drawdown (first 6M, %)", "上市前6个月二级市场最大回撤幅度 (%)", "深蓝 (配发及外部数据)",
+        "aftermarket", "二级市场日行情累计高点回撤派生",
+    ),
+
+    # 3. 多重法定解禁日程与事件窗冲击 (Col 185-189)
+    "Controlling shareholder 6-month disposal lockup expiry date": (
+        "Controlling shareholder 6-month disposal lockup expiry date", "控股股东首阶段6个月绝对禁售期满日", "深蓝 (配发及外部数据)",
+        "lockup", "香港主板上市规则第 10.07(1)(a) 条法定禁售期",
+    ),
+    "Controlling shareholder 12-month cessation of control expiry date": (
+        "Controlling shareholder 12-month cessation of control expiry date", "控股股东次阶段12个月控制权锁定到期日", "深蓝 (配发及外部数据)",
+        "lockup", "香港主板上市规则第 10.07(1)(b) 条法定禁售期",
+    ),
+    "Cornerstone unlock CAR [-5, +5] (%)": (
+        "Cornerstone unlock CAR [-5, +5] (%)", "基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI)", "深蓝 (配发及外部数据)",
+        "lockup", "二级市场日行情与基石解禁日确定性派生",
+    ),
+    "Cornerstone unlock CAR [-20, +20] (%)": (
+        "Cornerstone unlock CAR [-20, +20] (%)", "基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI)", "深蓝 (配发及外部数据)",
+        "lockup", "二级市场日行情与基石解禁日确定性派生",
+    ),
+    "Cornerstone unlock volume shock ratio": (
+        "Cornerstone unlock volume shock ratio", "基石解禁后20日均换手额相对解禁前20日换手额之比", "深蓝 (配发及外部数据)",
+        "lockup", "二级市场日行情与基石解禁日确定性派生",
+    ),
+
+    # 4. 承销辛迪加、费用分拆与银企关联 (Col 190-195)
+    "Lead sponsor name": (
+        "Lead sponsor name", "独家/联席牵头保荐人英文全称", "深蓝 (配发及外部数据)",
+        "syndicate", "招股书与港交所新上市报告",
+    ),
+    "Joint sponsor count": (
+        "Joint sponsor count", "保荐人总家数 (独家=1, 联席=2+)", "深蓝 (配发及外部数据)",
+        "syndicate", "招股书保荐人名单确定性派生",
+    ),
+    "Sponsor commercial bank affiliate flag": (
+        "Sponsor commercial bank affiliate flag", "保荐人是否属于商业银行系金融机构 (1=是, 0=否)", "深蓝 (配发及外部数据)",
+        "syndicate", "保荐人金融牌照与银行系背景分类",
+    ),
+    "Underwriting base commission rate (%)": (
+        "Underwriting base commission rate (%)", "承销基础佣金费率 (%)", "深蓝 (配发及外部数据)",
+        "syndicate", "招股书承销佣金协议披露",
+    ),
+    "Underwriting discretionary incentive fee rate (%)": (
+        "Underwriting discretionary incentive fee rate (%)", "承销酌情奖励费率估算 (%)", "深蓝 (配发及外部数据)",
+        "syndicate", "招股书承销佣金协议披露",
+    ),
+    "Total underwriting fee rate (%)": (
+        "Total underwriting fee rate (%)", "承销总费率估算 (基础+奖励, %)", "深蓝 (配发及外部数据)",
+        "syndicate", "招股书承销佣金协议披露确定性派生",
+    ),
+
+    # 5. 机构投资者网络与国资背景 (Col 196-200)
+    "Cornerstone investor count": (
+        "Cornerstone investor count", "基石投资者机构总家数", "深蓝 (配发及外部数据)",
+        "investor_network", "配发结果公告基石投资者明细汇总",
+    ),
+    "Cornerstone state-owned presence flag": (
+        "Cornerstone state-owned presence flag", "基石投资者中是否包含国资/地方政府基金 (1=是, 0=否)", "深蓝 (配发及外部数据)",
+        "investor_network", "基石投资者工商穿透与国资背景标识",
+    ),
+    "Crossover fund presence flag": (
+        "Crossover fund presence flag", "是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否)", "深蓝 (配发及外部数据)",
+        "investor_network", "Pre-IPO 股东与基石投资者双重身份穿透匹配",
+    ),
+    "Pre-IPO institutional investor count": (
+        "Pre-IPO institutional investor count", "主要 Pre-IPO 投资机构总数", "深蓝 (配发及外部数据)",
+        "investor_network", "招股书历史与资本化结构披露",
+    ),
+    "Pre-IPO state-owned backing flag": (
+        "Pre-IPO state-owned backing flag", "Pre-IPO 股东中是否包含国资机构 (1=是, 0=否)", "深蓝 (配发及外部数据)",
+        "investor_network", "Pre-IPO 投资机构工商背景与国资标识",
+    ),
+
+    # 6. 宏观监管制度分期 (Col 201-202)
+    "FINI digital settlement regime": (
+        "FINI digital settlement regime", "结算监管体制 (POST_FINI / PRE_FINI)", "深蓝 (配发及外部数据)",
+        "regulatory_regime", "香港交易所 FINI 数字化结算过渡分期",
+    ),
+    "2025 pricing reform regime": (
+        "2025 pricing reform regime", "发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM)", "深蓝 (配发及外部数据)",
+        "regulatory_regime", "香港交易所 2025 发售与定价改革过渡分期",
+    ),
 }
 
 
@@ -365,7 +541,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         is_date = any(isinstance(v, (dt.date, dt.datetime)) for v in valid_vals) or "Date" in clean_header
         # 2. 检查是否为布尔 (0/1)
         is_bool = all(v in (0, 1, "0", "1", True, False) for v in valid_vals) and (
-            col_letter in ("BJ", "BK", "BL", "BM", "CR") or "flag" in clean_header.lower() or "0/1" in clean_header
+            col_letter in ("BJ", "BK", "BL", "BM", "CR") or "flag" in clean_header.lower() or "0/1" in clean_header or "occurred" in clean_header.lower()
         )
         # 3. 检查是否为纯数值
         numeric_vals = [parse_numeric(v) for v in col_vals]
@@ -434,8 +610,14 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         h_low = clean_header.lower()
         if "1-month" in h_low:
             timing = "Post-IPO T+20 trading days"
-        elif "6-month" in h_low:
-            timing = "Post-IPO 6 calendar months (cornerstone unlock)"
+        elif "day-5" in h_low or "day-20" in h_low or "3-month" in h_low:
+            timing = "Aftermarket event horizon window"
+        elif "stabilization" in h_low or "over-allocation" in h_low or "over-allotment" in h_low:
+            timing = "Post-IPO 30-day stabilization window"
+        elif "lockup" in h_low or "unlock" in h_low:
+            timing = "Post-IPO lockup expiration events"
+        elif "6-month" in h_low or "(first 6m)" in h_low or "6m mean" in h_low:
+            timing = "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)"
         elif "1-year" in h_low or "3-year" in h_low or "reserved" in h_low:
             timing = "Long-run post-IPO (Reserved / Unmatured)"
         elif "first trading day" in h_low or "first-day" in h_low or "money left" in h_low:
@@ -446,6 +628,12 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             timing = "Allotment results announcement"
         elif "financial" in group_name or "year-" in h_low:
             timing = "Track record period financial disclosure"
+        elif group_name == "syndicate" or "sponsor" in h_low or "underwriting" in h_low:
+            timing = "Prospectus syndicate structure"
+        elif group_name == "investor_network":
+            timing = "Prospectus / allotment institutional network"
+        elif group_name == "regulatory_regime" or "regime" in h_low:
+            timing = "Listing date regulatory regime"
         else:
             timing = "Ex-ante prospectus disclosure"
 

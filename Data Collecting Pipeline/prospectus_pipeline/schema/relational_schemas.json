@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HK IPO Relational and Event-Time Schemas",
+  "version": "1.0.0",
+  "schemas": {
+    "sample_construction": {
+      "description": "Exhaustive candidate screening audit for Hong Kong Main Board new listings",
+      "required": ["stock_code", "company_name", "listing_date", "inclusion_status", "security_type", "listing_route"],
+      "properties": {
+        "stock_code": { "type": "string", "pattern": "^[0-9]{4,5}\\.HK$" },
+        "company_name": { "type": "string" },
+        "prospectus_date": { "type": ["string", "null"], "format": "date" },
+        "listing_date": { "type": "string", "format": "date" },
+        "cohort_year": { "type": "integer" },
+        "security_type": { "type": "string", "enum": ["Ordinary Shares", "H Shares", "WVR Shares", "Secondary Listing", "GEM Transfer", "SPAC", "Trust/Unit", "Other"] },
+        "listing_route": { "type": "string", "enum": ["Main Board Conventional", "Chapter 18A (Biotech)", "Chapter 18C (Specialist Tech)", "Chapter 19A (A+H)", "Chapter 8A (WVR)", "Chapter 19C (Secondary)", "Transfer from GEM", "De-SPAC", "Introduction"] },
+        "inclusion_status": { "type": "string", "enum": ["INCLUDED", "EXCLUDED"] },
+        "exclusion_reason": { "type": ["string", "null"] },
+        "prospectus_source": { "type": "string" },
+        "allotment_source": { "type": "string" },
+        "data_completion_status": { "type": "string", "enum": ["COMPLETE", "PARTIAL", "EXCLUDED_NON_IPO"] }
+      }
+    },
+    "issuer_master": {
+      "description": "Master table for included Hong Kong Main Board IPO issuers",
+      "required": ["stock_code", "company_name", "listing_date", "offer_price", "fini_regime"],
+      "properties": {
+        "stock_code": { "type": "string", "pattern": "^[0-9]{4,5}\\.HK$" },
+        "company_name": { "type": "string" },
+        "company_chinese_name": { "type": ["string", "null"] },
+        "prospectus_date": { "type": ["string", "null"], "format": "date" },
+        "listing_date": { "type": "string", "format": "date" },
+        "cohort_year": { "type": "integer" },
+        "sponsors": { "type": "string" },
+        "lead_sponsor": { "type": "string" },
+        "auditor": { "type": "string" },
+        "valuer": { "type": ["string", "null"] },
+        "offer_price_hkd": { "type": "number", "minimum": 0.01 },
+        "funds_raised_public_hkd": { "type": "number", "minimum": 0 },
+        "funds_raised_int_hkd": { "type": "number", "minimum": 0 },
+        "funds_raised_total_hkd": { "type": "number", "minimum": 0 },
+        "fini_regime": { "type": "string", "enum": ["PRE_FINI", "POST_FINI"] },
+        "pricing_reform_regime": { "type": "string", "enum": ["PRE_2025_REFORM", "POST_2025_REFORM"] },
+        "listing_chapter": { "type": "string" },
+        "is_ah": { "type": "boolean" },
+        "is_wvr": { "type": "boolean" },
+        "is_18a": { "type": "boolean" },
+        "is_18c": { "type": "boolean" },
+        "data_provenance": { "type": "string" }
+      }
+    },
+    "daily_market_panel": {
+      "description": "Daily adjusted trading observations from listing day",
+      "required": ["stock_code", "trade_date", "open", "high", "low", "close", "adj_close", "volume", "turnover"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "trade_date": { "type": "string", "format": "date" },
+        "event_day": { "type": "integer", "description": "Trading days since listing (Day 1 = 1)" },
+        "open": { "type": "number" },
+        "high": { "type": "number" },
+        "low": { "type": "number" },
+        "close": { "type": "number" },
+        "adj_close": { "type": "number" },
+        "volume": { "type": "number" },
+        "turnover": { "type": "number" },
+        "daily_return": { "type": ["number", "null"] },
+        "amihud_illiq": { "type": ["number", "null"], "description": "(|Return| / Turnover) * 1e6" },
+        "zero_volume_flag": { "type": "boolean" },
+        "volatility_20d": { "type": ["number", "null"] },
+        "max_drawdown": { "type": ["number", "null"] },
+        "data_source": { "type": "string" }
+      }
+    },
+    "horizon_summary": {
+      "description": "Standardized multi-horizon academic event outcomes",
+      "required": ["stock_code", "horizon", "matured", "target_date"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "horizon": { "type": "string", "enum": ["Day_1", "Day_5", "Day_20", "Month_1", "Month_3", "Month_6", "Month_12", "Month_24", "Month_36"] },
+        "target_date": { "type": "string", "format": "date" },
+        "actual_date": { "type": ["string", "null"], "format": "date" },
+        "matured": { "type": "boolean" },
+        "close_price": { "type": ["number", "null"] },
+        "bhr_from_day1": { "type": ["number", "null"] },
+        "total_return_from_offer": { "type": ["number", "null"] },
+        "hsi_return": { "type": ["number", "null"] },
+        "hstech_return": { "type": ["number", "null"] },
+        "wr_hsi": { "type": ["number", "null"] },
+        "wr_hstech": { "type": ["number", "null"] },
+        "avg_daily_turnover": { "type": ["number", "null"] },
+        "liquidity_decay_ratio": { "type": ["number", "null"] },
+        "missing_reason": { "type": ["string", "null"], "enum": [null, "IMMATURE_WINDOW", "SUSPENDED", "DELISTED", "NO_TRADING_DATA"] }
+      }
+    },
+    "stabilization_events": {
+      "description": "Price stabilization and over-allotment activity from HKEX Section 9(2) announcements",
+      "required": ["stock_code", "stabilization_period_end", "stabilizing_manager"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "stabilizing_manager": { "type": "string" },
+        "stabilization_period_start": { "type": ["string", "null"], "format": "date" },
+        "stabilization_period_end": { "type": "string", "format": "date" },
+        "stabilization_purchases_occurred": { "type": "boolean" },
+        "purchase_price_low": { "type": ["number", "null"] },
+        "purchase_price_high": { "type": ["number", "null"] },
+        "aggregate_stabilization_shares": { "type": ["number", "null"] },
+        "over_allocation_shares": { "type": ["number", "null"] },
+        "over_allocation_pct": { "type": ["number", "null"] },
+        "stock_borrowing_arrangement": { "type": ["string", "null"] },
+        "option_exercise_date": { "type": ["string", "null"], "format": "date" },
+        "shares_issued_under_option": { "type": "number" },
+        "exercise_pct_of_option": { "type": "number" },
+        "expired_unexercised": { "type": "boolean" },
+        "announcement_date": { "type": "string", "format": "date" },
+        "source_url": { "type": "string" },
+        "evidence_quote": { "type": "string" }
+      }
+    },
+    "lockup_events": {
+      "description": "Multi-category statutory and contractual lockup schedules and event windows",
+      "required": ["stock_code", "lockup_category", "expiry_date"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "lockup_category": { "type": "string", "enum": ["Cornerstone_6M", "Controlling_Shareholder_6M_Disposal", "Controlling_Shareholder_12M_Control", "Chapter_18C_Senior_PreIPO_12M", "Chapter_18C_Key_PreIPO_24M", "PreIPO_Investor_Custom", "WVR_Beneficiary_Lockup"] },
+        "expiry_date": { "type": "string", "format": "date" },
+        "locked_shares": { "type": ["number", "null"] },
+        "locked_pct_outstanding": { "type": ["number", "null"] },
+        "locked_pct_free_float": { "type": ["number", "null"] },
+        "car_m20_p20": { "type": ["number", "null"], "description": "Cumulative Abnormal Return [-20, +20] trading days" },
+        "car_m5_p5": { "type": ["number", "null"], "description": "Cumulative Abnormal Return [-5, +5] trading days" },
+        "volume_shock_ratio": { "type": ["number", "null"], "description": "Turnover [0, +20] / Pre-unlock [-20, -1]" },
+        "statutory_rule_basis": { "type": "string" }
+      }
+    },
+    "investor_relational": {
+      "description": "Entity-level relational table for cornerstone and pre-IPO institutional investors",
+      "required": ["stock_code", "investor_id", "disclosed_name", "investor_category"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "investor_id": { "type": "string" },
+        "standardized_name": { "type": "string" },
+        "disclosed_name": { "type": "string" },
+        "investor_category": { "type": "string", "enum": ["Cornerstone", "Pre-IPO VC", "Pre-IPO PE", "Corporate Venture Capital", "Sovereign / State Capital", "Crossover Fund", "Strategic Corporate", "Connected Party"] },
+        "ultimate_parent": { "type": ["string", "null"] },
+        "state_owned_flag": { "type": "boolean" },
+        "pre_ipo_flag": { "type": "boolean" },
+        "cornerstone_flag": { "type": "boolean" },
+        "crossover_flag": { "type": "boolean" },
+        "shares_allocated": { "type": ["number", "null"] },
+        "allocation_value_hkd": { "type": ["number", "null"] },
+        "pct_of_base_offer": { "type": ["number", "null"] },
+        "pct_of_post_ipo_shares": { "type": ["number", "null"] },
+        "investment_round": { "type": ["string", "null"] },
+        "lockup_expiry_date": { "type": ["string", "null"], "format": "date" },
+        "board_seat_flag": { "type": "boolean" },
+        "source_evidence": { "type": "string" }
+      }
+    },
+    "underwriter_relational": {
+      "description": "Relational intermediary syndicate structure and compensation breakdown",
+      "required": ["stock_code", "intermediary_id", "intermediary_name", "syndicate_role"],
+      "properties": {
+        "stock_code": { "type": "string" },
+        "intermediary_id": { "type": "string" },
+        "intermediary_name": { "type": "string" },
+        "syndicate_role": { "type": "string", "enum": ["Sole Sponsor", "Joint Sponsor", "Overall Coordinator", "Global Coordinator", "Joint Bookrunner", "Joint Lead Manager", "Underwriter", "Stabilizing Manager"] },
+        "role_rank": { "type": "integer", "description": "1=Sponsor, 2=OC/GC, 3=Bookrunner, 4=Lead Manager, 5=Underwriter" },
+        "base_commission_pct": { "type": ["number", "null"] },
+        "discretionary_incentive_fee_pct": { "type": ["number", "null"] },
+        "total_fee_rate_pct": { "type": ["number", "null"] },
+        "commercial_bank_affiliate": { "type": "boolean" },
+        "historical_market_share_rank": { "type": ["integer", "null"] },
+        "source_evidence": { "type": "string" }
+      }
+    }
+  }
+}
