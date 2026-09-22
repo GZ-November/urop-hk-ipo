@@ -293,49 +293,129 @@ $$\text{Logit}\left(\text{Prob}(\text{PricingPosition}_i = \text{'At high'})\rig
 
 ---
 
-## Idea 06: 留在桌面上的财富、前景理论心理账户与双重发行成本膨胀
+## Idea 06: 留在桌面上的财富（Money Left on the Table）：发行人心理账户、反事实惩罚与制度性定价约束
 
 ### 6.1 研究课题与核心科学问题
-- **研究课题**：香港 IPO 发行人在承担显性现金上市费用（律所、审计师、保荐人费用）的同时，通过首日抑价向二级市场让渡了多少隐性财富（留在桌面上的财富，Money Left on the Table）？
-- **核心问题**：为何理性控股股东愿意容忍巨额财富流失？前景理论的“心理账户（Mental Accounting）”假说是否能够解释这一现象？
+- **经典世纪之谜 (The Grand IPO Pricing Puzzle)**：
+  > *"Why firms are willing to leave so much money on the table is one of the biggest puzzles surrounding IPOs."* —— Lowry, Michaely, and Volkova (2017), *Handbook of the Economics of Finance*
+- **核心科学问题**：
+  1. **财富让渡之谜**：在香港 IPO 市场中，发售价（IPO Offer Price）为何系统性低于股票的内在价值（Intrinsic Value）与二级市场真实结清价，从而导致巨额财富留存在桌面上（Money Left on the Table, MLOT）？为何理性的控股股东与管理层愿意容忍本该流入发行人国库的数百亿巨资白白让渡给二级市场流通股东与承销商客户？
+  2. **反事实惩罚（Counterfactual Downside Penalties）**：**“如果发行人拒绝低定价、坚持把价格定在内在价值上限，到底会发生什么？”** ——是承销辛迪加路演簿记流产？还是挂牌首日遭遇散户高杠杆孖展（Margin）穿仓踩踏式闪崩？抑或是透支了企业未来在二级市场增发配股（SEO）的信誉与估值？
+  3. **非遵从者异质性（Non-Compliers Heterogeneity）**：**“现实中有哪些发行人拒绝低定价？他们受制于何种制度枷锁或拥有何种谈判筹码？”** ——国务院国资委（SASAC）的国有资产“防流失”底线、存量老股转让（Secondary Sale Shares）套现的现金流刚性敏感度、以及港交所第 18A/18C 章硬性法定上市市值红线，如何打破了让利均衡？
 
-### 6.2 经典文献基准与美股经验事实
-- **行为金融学前景理论假说 (Loughran & Ritter 2002)**：
-  - 发行人并不厌恶抑价让利，因为当发售价向上修正时（$\Delta P > 0$），原股东持有的巨额存量股份市值暴增，其带来的“收益心理账户”彻底掩盖了新股折价稀释的“损失心理账户”。
-  - **留在桌面上的财富公式**：
-    $$\text{Money Left on the Table}_i = (P_{i, \text{day1\_close}} - P_{i, \text{offer}}) \times \text{Base Global Offering Shares}$$
-- **美股事实**：1980-2016 年美股 IPO 留在桌面上的累计财富超过 660 亿美元，远超现金承销费用总额。
+### 6.2 经典理论基准与微观形成机制
+根据现代 IPO 理论文献（Lowry, Michaely, & Volkova 2017），IPO 留钱在桌面并非单一维度的市场异象，而是信息经济学、代理理论与行为金融学交互作用的综合结果：
+1. **询价信息提取与租金让渡理论 (Benveniste & Spindt 1989; Cornelli & Goldreich 2001)**：
+   - 机构投资者拥有对新股真实需求和内在价值的私有信息（Private Information）。承销商为了诱导机构投资者在簿记建档（Bookbuilding）过程中诚实揭示其真实需求曲线，必须给予其信息租金（Information Rent）。这种租金的形式就是**首日抑价与财富让渡**——只有预期挂牌能赚取溢价，机构才愿意花费尽调成本参与报价与大额锁单。
+2. **前景理论与心理账户假说 (Loughran & Ritter 2002)**：
+   - 行为金融学解释了发行人管理层的“容忍度”：当市场需求旺盛、最终发售价向上修正高于询价中点时（$\Delta P > 0$），原股东持有的存量股份纸面财富（Paper Wealth）发生了爆发式增值。在心理账户（Mental Accounting）框架下，创始人将**“存量市值暴涨带来的巨额意外收益（Gain）”**与**“新股少募集资金的稀释损失（Loss）”**合并评估；前者带来的主观满足感极强，彻底冲淡并掩盖了企业“留在桌面上”的隐性机会成本。
+3. **散户“胜者诅咒”与信息不对称补偿 (Rock 1986)**：
+   - 未知情投资者（散户）在打新分配中面临严重的逆向选择：优质股票被知情机构抢购（极低中签率），劣质股票全部分配给散户。若新股在事前平均不提供足够的折价溢价，散户由于长期遭受“胜者诅咒”（Winner's Curse）将彻底退出申购市场，导致零售发售市场流动性枯竭。
+4. **承销商代理冲突与利益输送（Spinning & Soft Dollars）(Baron 1982; Liu & Ritter 2010)**：
+   - 投资银行与发行人之间存在委托-代理冲突。承销商有意将发售价压低，一方面降低自身包销承销风险（Underwriting Risk），另一方面可将抑价巨大的热票低价配售给其自身的高净值客户、对冲基金或利益关联方（“打新利益回扣 Spinning”），以换取未来巨额的交易佣金与软美元（Soft Dollars）。
+5. **诉讼对冲与监管保护假说 (Tinic 1988; Hughes & Thakor 1992)**：
+   - 故意向下折价为首日提供了价格安全垫（Cushion），大幅降低挂牌首日破发招致投资者集体诉讼、港监会问询以及商誉毁损的合规法律风险。
 
-### 6.3 香港主板制度背景与样本微观现实
-- **2026 Q1 数据惊人事实**：
-  - 38 家样本首日累计让渡财富高达 **256.64 亿港元**，单家平均让渡 **6.75 亿港元**；
-  - 同期 38 家公司支付的显性现金上市费用（`Listing expenses`）总额约为 **40.4 亿港元**；
-  - **隐性财富流失是显性现金费用的 6.35 倍！** 发行成本的主体并非账面费用，而是抑价流失。
+### 6.3 香港主板制度现实与 2026 Q1 数据惊人事实
+- **留在桌面上的财富测算公式**：
+  $$\text{Money Left on the Table}_i = (P_{i, \text{day1\_close}} - P_{i, \text{offer}}) \times \text{Base Global Offering Shares}_i$$
+- **2026 Q1 样本微观现实**：
+  - **隐性财富流失极其惊人**：38 家样本首日留在桌面上的总财富高达 **256.64 亿港元**，单家平均让渡 **6.75 亿港元**；
+  - **显性现金成本 vs 隐性抑价让渡**：同期 38 家公司支付给中介机构（保荐人、承销商、律所、审计师、公关打印）的显性现金上市费用（`Listing expenses`）总额为 **40.40 亿港元**（平均每家 1.06 亿港元）；
+  - **6.35 倍的“双重成本膨胀”**：留在桌面上的隐性财富流失是显性现金费用的 **6.35 倍**！这意味着对于赴港上市的发行人而言，IPO 融资成本的主体根本不是发票上的账面费用，而是首日向二级市场让渡的真金白银。
+  - **首日表现两极分化**：Q1 首日破发率高达 **23.7%**（9 家破发），但其余 29 家股票首日大幅上冲（最高首日涨幅超 100%），印证了留足安全垫与过度挤干定价之间的生死分水岭。
 
-### 6.4 待检验学术假说体系
-- **$H_{6a}$（前景理论心理账户假说）**：发售价偏离初步询价区间中点上修幅度越大（$\Delta P_i > 0$）的发行人，由于原股东财富增值效应更强，对财富流失的痛苦感越低，其留在桌面上的绝对金额（`Money left on the table`）显著更高。
-- **$H_{6b}$（控股股东稀释防御假说）**：上市时控股股东经济利益持股比例（`Controller economic interest`）越高的企业，对自身股权被过度低价稀释越敏感，其留在桌面上的财富显著更小。
+### 6.4 机制深化一：反事实推演——“如果发行人不留钱在桌上，会发生什么？”
+如果发行人自命清高、坚持将发售价定在企业内在估值的绝对上限甚至溢价发行（$P_{\text{offer}} \ge \text{Intrinsic Value}$，试图将留存桌面财富强行归零），现实中将触发五大反事实惩罚链条：
 
-### 6.5 规范计量经济学模型
-#### 模型 6.1：留在桌面上的财富决定方程 (OLS / Tobit)
+1. **簿记动量枯竭与上市夭折（Bookbuilding Freeze & Deal Collapse）**：
+   - 国际配售路演（International Placing）中，专业长线基金（Long-only Funds）与主权财富基金具有严格的入场安全边际考核。如果定价挤干了所有溢价空间，机构投标意愿归零，簿记建档无法达到法定认购倍数。发行人若拒绝降价，在港交所规则下将面临上市撤回（Withdrawal）或无限期延期的灾难性声誉打击。
+2. **孖展穿仓与首日踩踏式抛售（Day-1 Margin Call & Liquidation Cascades）**：
+   - 港股散户公开发售高度依赖券商“孖展（Margin Lending）”杠杆融资（杠杆倍数普遍达 10~20 倍，2026 Q1 样本超额认购最高达 1,438 倍）。孖展客本质是极短期投机借贷资金。若发售价未留安全垫，首日开盘只要稍有微跌破发，券商风控系统将立即发出追加保证金通知（Margin Call）并强制平仓斩仓。数以亿计的筹码将在几分钟内集中涌向卖盘，形成自我实现的“踩踏闪崩（Flash Crash）”，造成严重破发。
+3. **超额配股权（绿鞋）防线瞬间被击穿耗尽（Greenshoe Defense Depletion）**：
+   - 虽然稳定价格经办人拥有 15% 的超额配股权（Green Shoe）用作后市托底机制，但在零抑价、无买盘接盘的狂暴抛压面前，15% 的托底买单资金往往在开盘数十分钟内被全部消耗殆尽。一旦绿鞋买力枯竭，股价将进入自由落体状态。
+4. **二级市场再融资报复性惩罚（Follow-on SEO Discount Punishment）**：
+   - 控股股东禁售期（Lock-up Period）通常为 6 个月。企业在上市 6~12 个月后往往需要进行再融资（增发配股 Placement、供股 Rights Issue）。如果发行人在 IPO 阶段过度贪婪、挤干了一二级市场全部流动性红利，投行银团与二级市场投资者将形成“不可信赖”的长期记忆。在随后的配股再融资中，市场将要求高达 **20%~30% 的深度折价（Deep Discount）**作为风险溢价补偿，发行人终将在后续资本运作中付出数倍代价。
+5. **流动性枯竭与仙股化死循环（Post-IPO Liquidity Freeze & Zombie Stock Risk）**：
+   - 没有赚钱效应的新股在首日热度消退后，缺乏换手率支撑。数据显示，缺乏首日财富效应的股票在上市 1~3 个月内，日均成交额常骤降 80%~95%，陷入无机构覆盖、无散户关注的“流动性黑洞”，导致大股东存量股权在二级市场彻底丧失变现与质押融资能力。
+
+### 6.5 机制深化二：发行人异质性——“现实中有哪些发行人拒绝低定价？”
+并非所有发行人都会乖乖让利。在港股微观生态中，有四类典型主体表现出强烈的“拒绝留钱在桌上（Refusal to Underprice）”特征，甚至主动追求“零留钱”或顶格超额定价：
+
+1. **国有企业与央企（SOEs - SASAC 国资保值增值与防流失红线）**：
+   - **制度约束**：根据国务院国资委《企业国有资产交易监督管理办法》及涉外产权交易准则，国有股权发行定价受到严格监管，**原则上绝对不得低于经备案的“每股净资产（NAV per share）”或资产评估基准值**。
+   - **激励机制**：国企高管与国资代表面临严格的“国有资产流失终身问责追责制”。将国资股权折价低发、把数百亿财富“留在桌面上送给海外投行与对冲基金”属于极其严重的合规政治风险；相反，上市首日是否大涨对其个人薪酬与仕途并无直接激励。因此，国企发行人（`SOE flag == 1`）定价刚性极强，极力推高发售价，其首日抑价率往往贴近于 0，留在桌面上的财富极低。
+2. **存量老股套现占比极高的发行人（High Secondary Sale Shares Ratio）**：
+   - **真金白银 vs 纸面富贵**：在港股发售结构中，发售股份分为发行新股（`New shares` Col 17）与出售存量老股（`Sale shares` Col 16）。新股募集的资金归上市公司所有，折价只是稀释未实现的资本公积；但老股转让是早期财务投资人（VC/PE）或大股东的**直接税后真金白银现金退出（Direct Cash-out）**！
+   - **敏感度跃迁**：老股套现比例（$\text{SecondaryRatio} = \text{Sale Shares} / \text{Global Offering Shares}$）越高，原股东面对的就不再是 Loughran & Ritter 所谓的“前景理论纸面心理账户”，而是每一块钱折价都切肤之痛的“自掏腰包”。此类发行人有极强动机串联早期投资机构，强迫承销团顶格甚至超上限发售（Pricing at Upper Bound），最大化套现金额。
+3. **触碰港交所第 18A / 18C 章“法定最低上市市值门槛”的科技企业**：
+   - **制度红线**：18A 未盈利生物科技上市门槛要求上市时预期市值**不得低于 15 亿港元**；18C 未商业化特专科技要求已商业化公司**不低于 80 亿港元**、未商业化公司**不低于 100 亿港元**。
+   - **被动逼空**：对于资产规模处于临界边缘（Marginal Compliance）的企业，如果发售价按市场公允折扣向下打折，其市值计算公式（$\text{Market Cap} = \text{Offer Price} \times \text{Total Issued Shares}$）将直接跌破港交所上市委员会的合规及格线，导致上市批准失效。为了“保过会、保挂牌”，发行人与中介机构被迫强行在招股书中将发售价定在高位，在合规压力下完全剥夺了向下留出抑价空间的余地。
+4. **超级科技独角兽霸权创始人（Superstar Tech Founders）**：
+   - 具备核心硬科技光环、极高市场美誉度、且拥有中东主权基金或国家级产业基金私下锁定认购的明星公司创始人，在承销商辛迪加面前拥有压倒性议价地位。他们出于自负（Overconfidence）与估值尊严，坚决抗拒投行压价，强制要求按区间上限（Top of Range）定价。
+
+### 6.6 待检验学术假说体系
+- **$H_{6a}$（前景理论与心理账户假说）**：发售价偏离初步询价区间中点的向上修正幅度（$\Delta P_i > 0$，`Filing price revision`）越大，控股股东存量账面财富增值越丰厚，其在心理账户中对抑价稀释的容忍度越高，最终留在桌面上的财富绝对金额（`Money left on the table`）显著更高。
+- **$H_{6b}$（存量老股转让与现金流权敏感性假说）**：发售中包含的老股转让比例（`Sale shares / Global offering shares`）越高，股东对真实真金白银现金损失的敏感度显著超越心理账户效应，其留在桌面上的财富显著更小，定价更显著落在发售区间上限（`Pricing at High`）。
+- **$H_{6c}$（国资防流失刚性底线假说）**：受制于国资委每股净资产与防流失问责硬约束，国有企业（`SOE flag == 1`）的发售定价刚性显著高于非国企，其首日抑价率（Underpricing %）与留在桌面上的财富（MLOT）显著偏低，破发概率相对更高。
+- **$H_{6d}$（制度性市值红线逼空假说）**：按发售价测算之总市值贴近第 18A 章（15 亿）或第 18C 章（80/100 亿）法定准入红线的临界发行人，为保合规上市被迫激进定价，留存桌面财富显著低于市值宽裕的同行。
+- **$H_{6e}$（反事实惩罚：首日破发与再融资报复性折价假说）**：在 IPO 阶段过度挤干抑价、发售价落在区间最高上限且留在桌面上财富极低的企业，在挂牌首日面临更高的破发概率（$P(\text{Break}) \uparrow$）；且在上市满 6 个月后的后续二级市场增发配股（SEO）中，面临显著更高的配售折价惩罚。
+
+### 6.7 规范计量经济学模型设定
+
+#### 模型 6.1：留在桌面上的财富决定方程 (OLS & Tobit 模型)
+由于首日破发的企业实际抑价为负或被截断为 0，我们使用 Tobit 模型（左侧在 0 处截断）结合 OLS 作为基准：
 $$\begin{aligned}
-\ln(\text{MoneyLeft}_i + 1) = &\ \alpha_0 + \beta_1 \Delta P_i + \beta_2 \text{ControllerEconomicPct}_i + \beta_3 \ln(\text{ListingExpenses}_i) \\
-&+ \beta_4 \ln(\text{NetProceeds}_i) + \beta_5 \text{WVRFlag}_i + \gamma \mathbf{X}_i + \varepsilon_i
+\ln(\text{MoneyLeft}_i + 1) = &\ \alpha_0 + \beta_1 \Delta P_i + \beta_2 \text{SecondaryRatio}_i + \beta_3 \text{SOE}_i + \beta_4 \text{CapThresholdProximity}_i \\
+&+ \beta_5 \text{ControllerEconomicPct}_i + \beta_6 \ln(\text{ListingExpenses}_i) + \beta_7 \ln(\text{NetProceeds}_i) \\
+&+ \beta_8 \text{CornerstonePct}_i + \beta_9 \ln(\text{SubscriptionRatio}_i) + \mathbf{\Gamma} \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
+- **核心预期系数**：$\beta_1 > 0$（验证前景理论 $H_{6a}$）；$\beta_2 < 0$（验证老股套现现金敏感性 $H_{6b}$）；$\beta_3 < 0$（验证国企防流失刚性 $H_{6c}$）；$\beta_4 < 0$（验证市值逼空 $H_{6d}$）。
 
-### 6.6 138 列主表变量与字段映射
-| 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
-|---|:---:|---|:---:|:---:|
-| 留在桌面上的财富 | **Col 129**| `Money left on the table (HK$)` | 货币数值 | 被解释变量 (Y) |
-| 发售价格修正幅度 | **Col 22** | `Filing price revision (%)` | 数值百分比 | 核心自变量 ($\Delta P$) |
-| 显性总上市开支 | **Col 101**| `Listing expenses (HK$)` | 货币数值 | 核心自变量 |
-| 控制人上市经济持股比 | **Col 68** | `Controller economic interest at listing (%)` | 数值百分比 | 控股股东治理自变量 |
-| 最终全球发售基础股数 | **Col 111**| `Final global offering shares (before over-allotment)`| 整数数值 | 规模基础变量 |
-| 最终发售价 | **Col 11** | ` IPO Subscription Price (HK$)` | 货币数值 | 价格核算变量 |
-| 首日收盘价 | **Col 127**| `First trading day closing price (HK$)` | 货币数值 | 价格核算变量 |
+#### 模型 6.2：发售价落点选择的多项 Logit / Probit 模型（检验谁拒绝低定价）
+将发售价落点（`Pricing position in filing range`）定义为虚拟变量 $\text{AtHigh}_i = \mathbb{I}(P_{\text{offer}} = P_{\text{max}})$：
+$$\text{Prob}(\text{AtHigh}_i = 1) = \Phi\left(\delta_0 + \delta_1 \text{SecondaryRatio}_i + \delta_2 \text{SOE}_i + \delta_3 \text{CapThresholdProximity}_i + \delta_4 \text{ControllerPower}_i + \mathbf{Z}_i \mathbf{\theta}\right)$$
 
-### 6.7 经济学直觉与学术贡献
-精准测算了香港主板真实且庞大的“隐性发行成本”，实证检验了 Loughran & Ritter (2002) 的行为心理账户理论在远东国际金融中心的适用边界。
+#### 模型 6.3：反事实惩罚检验方程（首日破发与再融资报复性惩罚）
+- **子模型 6.3a：首日破发 Probit 模型**：
+  $$\text{Prob}(\text{Day1Break}_i = 1) = \Phi\left(\lambda_0 + \lambda_1 \text{AtHigh}_i + \lambda_2 \ln(\text{MoneyLeft}_i + 1) + \lambda_3 \ln(\text{SubscriptionRatio}_i) + \lambda_4 \text{MechanismB}_i + \mathbf{W}_i \mathbf{\psi}\right)$$
+- **子模型 6.3b：后续再融资折价惩罚 Heckman 选择模型**：
+  针对在上市 1 年内实施后续配股（Placing）的子样本：
+  $$\text{SEO\_Discount}_{i, t} = \theta_0 + \theta_1 \text{IPO\_Underpricing}_i + \theta_2 \text{Day1Break}_i + \theta_3 \text{AtHigh}_i + \theta_4 \text{InverseMillsRatio}_i + \mathbf{K}_i \mathbf{\phi} + \nu_i$$
+
+### 6.8 161 列主表核心变量与微观字段映射
+| 变量中文名称 | 主表列号 | 表头英文字段名 | 字段存储类型 | 计量经济学角色与经济学含义 |
+|---|:---:|---|:---:|:---|
+| 留在桌面上的财富 | **Col 129** (`col_DY`) | `Money left on the table (HK$)` | 货币数值 (HKD) | **核心被解释变量 (Y)**：首日收盘价与发售价差额乘以基础发售股数 |
+| 首日抑价回报率 | **Col 128** (`col_DX`) | `First-day return / Underpricing (%)` | 数值百分比 | **被解释变量 / 核心惩罚解释变量**：(首日收盘 - 发售价) / 发售价 |
+| 首日收盘价 | **Col 127** (`col_DW`) | `First trading day closing price (HK$)` | 货币数值 (HKD) | 价格核算变量：二级市场供需平衡结清基准价格 |
+| 最终发售价 | **Col 11** (`col_K`) | `IPO Subscription Price (HK$)` | 货币数值 (HKD) | 最终合同发行定价基准 |
+| 最高发售价 | **Col 20** (`col_T`) | `Maximum Offer Price` | 货币数值 (HKD) | 询价区间上限 $P_{\text{max}}$ |
+| 最低发售价 | **Col 21** (`col_U`) | `Minimum Offer Price` | 货币数值 (HKD) | 询价区间下限 $P_{\text{min}}$ |
+| 发售价格修正幅度 | **Col 22** (`col_V`) | `Filing price revision (%)` | 数值百分比 | **核心自变量 ($\Delta P$)**：检验前景理论心理账户的关键代理变量 |
+| 定价落点分类 | **Col 24** (`col_X`) | `Pricing position in filing range` | 文本分类 (At high/Mid/Low) | 模型 6.2 被解释变量：衡量是否顶格榨干定价空间 |
+| 存量老股发售股数 | **Col 16** (`col_P`) | `Sale Shares` | 整数股数 | **核心机制变量**：测算老股套现比率（`Sale Shares / Total Offer`） |
+| 发行新股股数 | **Col 17** (`col_Q`) | `New shares` | 整数股数 | 企业实际资本扩充新股基础 |
+| 基础全球发售总股数 | **Col 13** (`col_M`) | `Global Offering (without option)` | 整数股数 | 基础发售规模底数 |
+| 显性总上市开支 | **Col 101** (`col_CW`)| `Listing expenses (HK$)` | 货币数值 (HKD) | 显性发行成本：对比 6.35 倍隐性财富流失基准 |
+| 最终发行人净募资额 | **Col 117** (`col_DM`)| `Net IPO proceeds to issuer (HK$)` | 货币数值 (HKD) | 发行人最终实际入账真金白银规模 |
+| 国企央企标识 | **Col 70** (`col_BN`) | `State-owned enterprise (SOE) flag` | 0/1 虚拟变量 | **异质性非遵从者变量**：检验 SASAC 国资防流失红线刚性 |
+| A+H 股双重上市标识 | **Col 75** (`col_BS`) | `A+H issuer flag` | 0/1 虚拟变量 | 估值锚定控制变量：A 股交易价格对 H 股发售价形成硬约束 |
+| 18A 未盈利生物科技 | **Col 77** (`col_BU`) | `Chapter 18A flag` | 0/1 虚拟变量 | 制度性法定 15 亿市值准入门槛红线约束 |
+| 18C 特专科技标识 | **Col 78** (`col_BV`) | `Chapter 18C flag` | 0/1 虚拟变量 | 制度性法定 80/100 亿市值准入门槛红线约束 |
+| 控股股东经济持股比 | **Col 68** (`col_BL`) | `Controller economic interest at listing (%)` | 数值百分比 | 控制权治理变量：控股股东股权稀释防御动机 |
+| 基石配售占比 | **Col 103** (`col_CY`)| `Final cornerstone allocation (% of base offer)`| 数值百分比 | 稳定预期代理变量：六个月锁定期的压舱石资本 |
+| 零售超额认购倍数 | **Col 105** (`col_DA`)| `Subscription Ratio (times)` | 浮点数值 (倍数) | 散户狂热度与孖展投机杠杆代理变量 (最高达 1,438x) |
+| FINI 回拨机制分类 | **Col 136** (`col_EF`)| `Offer mechanism` | 分类 (Mechanism A / B) | 制度环境控制：机制 A（固定回拨）vs 机制 B（渐进回拨） |
+| 后续 1M 收益率 | **Col 141** (`col_EK`)| `1-month BHR from Day-1 close (%)` | 数值百分比 | 挂牌后 1 个月买入持有收益率 |
+| 后续 6M 收益率 | **Col 149** (`col_ES`)| `6-month BHR from Day-1 close (%)` | 数值百分比 | 挂牌后 6 个月（禁售解禁点）买入持有收益率 |
+| 6M流动性衰减率 | **Col 156** (`col_EZ`)| `Liquidity decay ratio (6M vs Day-1 turnover)` | 数值比例 | 反事实惩罚验证：首日后二级市场流动性冻结程度 |
+| 18A/18C监管状态 | **Col 161** (`col_FE`)| `18A/18C regulatory milestone status` | 分类文本 | 监管特专赛道身份标识 |
+
+### 6.9 经济学直觉与学术边际贡献
+1. **理论对话与经典谜题突破**：本研究直接正面迎击 Lowry et al. (2017) 提出的“现代金融学最大 IPO 谜题之一”，首次利用香港主板独有的 FINI 数字化结算改革、全权酌情奖金、以及存量老股（Sale shares）混合发售结构，在微观层面上严格隔离了“纸面心理账户”与“真金白银硬成本”。
+2. **反事实分析的理论创新**：超越以往文献“仅观察既定发行抑价”的静态局限，深入剖析了“如果不低定价”所面临的簿记流产、孖展踩踏、绿鞋击穿、再融资被惩罚等系统性反事实负向反馈机制，揭示了“留钱在桌面”本质上是发行人在高杠杆离岸金融市场购买的**流动性安全溢价（Liquidity Insurance Premium）**。
+3. **制度转轨下的非遵从者画像**：刻画了国企（SASAC 防流失问责）、高老股退出（VC 现金兑现）、以及 18A/18C（市值硬指标逼空）三大类拒绝让利的微观发行人群体，为深入理解离岸中概股的混合所有制金融博弈与资本市场规制提供了极具洞见的经验证据。
 
 ---
 
