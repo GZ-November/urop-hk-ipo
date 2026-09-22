@@ -27,14 +27,25 @@ HKEX price discovery and allotment framework under the FINI digital settlement p
 
 ### Mechanism A (Traditional Statutory Clawback Schedule)
 If the issuer adopts standard tiered clawback:
-- Subscription multiple `< 15x`: No clawback triggered (public tranche remains at initial proportion, typically 10%);
-- Subscription multiple `15x ~ 50x`: Public tranche increases to **30%**;
-- Subscription multiple `50x ~ 100x`: Public tranche increases to **40%**;
-- Subscription multiple `>= 100x`: Public tranche increases to **50%**.
+- Subscription multiple `< 15x`: public tranche remains at the initial **5%**;
+- Subscription multiple `>= 15x and < 50x`: public tranche increases to **15%**;
+- Subscription multiple `>= 50x and < 100x`: public tranche increases to **25%**;
+- Subscription multiple `>= 100x`: public tranche increases to **35%**.
+
+### Chapter 18C Modification
+For Specialist Technology Companies, Main Board Rule 18C.09 modifies the
+general Practice Note 18 ladder:
+- Subscription multiple `< 10x`: public tranche remains at **5%**;
+- Subscription multiple `>= 10x and < 50x`: public tranche increases to **10%**;
+- Subscription multiple `>= 50x`: public tranche increases to **20%**.
+
+All ladder percentages use the shares initially offered under the Global
+Offering as the denominator. Shares added through an Offer Size Adjustment
+Option do not change that denominator.
 
 ### Mechanism B (Issuer-Determined Flexible Clawback)
-- Issuers adopting Mechanism B disclose customized clawback schedules and fixed ceilings in the prospectus (e.g., initial 5%–10% expanding to a maximum cap of **20%**, as seen in `2513.HK`, `0100.HK`).
-- Verification rule: The final public allocation proportion must never exceed the maximum ceiling disclosed in the statutory prospectus.
+- Issuers adopting Mechanism B pre-select a public subscription allocation of **10%–60%** with no clawback mechanism.
+- Verification rule: compare the final allocation with the percentage disclosed in the statutory prospectus and flag any case-specific waiver separately.
 
 ---
 

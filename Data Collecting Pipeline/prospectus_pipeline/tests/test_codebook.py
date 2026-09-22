@@ -4,6 +4,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import openpyxl
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 WS = ROOT.parent
@@ -22,6 +24,25 @@ class CodebookTests(unittest.TestCase):
         self.assertEqual(summary["sample_size"], 2)
         self.assertEqual(summary["variable_count"], 161)
         self.assertEqual(len(variables), 161)
+
+        by_col = {item["col_letter"]: item for item in variables}
+        self.assertEqual(by_col["BC"]["header"], "Comments / Annualization factor")
+        self.assertEqual(by_col["CI"]["header"], "Year-3 financial period start")
+        self.assertEqual(by_col["CL"]["header"], "Year-2 financial period end")
+        self.assertEqual(by_col["CZ"]["header"], "Earliest cornerstone unlock date (dd/mm/yy)")
+
+    def test_unknown_header_fails_instead_of_using_column_position(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            broken = Path(tmp_dir) / "unknown_header.xlsx"
+            wb = openpyxl.load_workbook(FIXTURE_WORKBOOK)
+            wb["NLR"].cell(1, 55).value = "Unregistered semantic field"
+            wb.save(broken)
+            wb.close()
+
+            cfg = load_cfg()
+            cfg["workbook_path"] = broken
+            with self.assertRaisesRegex(ValueError, "未登记的工作簿表头"):
+                build_codebook(cfg)
 
     def test_clean_csv_export_isolated(self):
         with tempfile.TemporaryDirectory() as tmp_dir:

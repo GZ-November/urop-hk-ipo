@@ -4,7 +4,7 @@
 涵盖港交所主板上市规则、2024 年 18C 特专科技门槛改革、2025 年定价与配售机制改革（FINI / Mechanism A/B）：
   1. 机制 A / B 回拨阶梯与披露说明（DN, CM, CT/CS, CW）；
   2. 募资毛额 vs 净额 vs 承销费与发行成本合理性（CS, T, CX, AO）；
-  3. 上市预期市值与板块准入门槛（主板 500M、18A 1.5B、18C 2024新规 4.0B）；
+  3. 上市预期市值与板块准入门槛（主板 500M、18A 1.5B、18C 临时门槛 4.0B/8.0B）；
   4. 超额配售权（绿鞋）法定 15% 比例上限（CV, CS）；
   5. 基石投资者获配额与 6 个月禁售期核验（CK, CL, 上市日）；
   6. 公众持股与自由流通量勾稽（DA, DC, L, CK, CS）；
@@ -35,6 +35,28 @@ def parse_val(v: Any) -> Any:
     return v
 
 
+def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False) -> float:
+    """Return the applicable Mechanism A public tranche ratio.
+
+    Chapter 18C.09 modifies Practice Note 18 for specialist technology
+    companies, so their 5%/10%/20% ladder must not be checked against the
+    general post-2025 5%/15%/25%/35% ladder.
+    """
+    if is_18c:
+        if subscription_multiple < 10:
+            return 0.05
+        if subscription_multiple < 50:
+            return 0.10
+        return 0.20
+    if subscription_multiple < 15:
+        return 0.05
+    if subscription_multiple < 50:
+        return 0.15
+    if subscription_multiple < 100:
+        return 0.25
+    return 0.35
+
+
 def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_dir: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
@@ -61,9 +83,11 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
             for h, c in header_to_col.items():
                 if p_low in h:
                     return c
-        if fallback_letter:
-            return column_index_from_string(fallback_letter)
-        raise KeyError(f"Header not found: {patterns}")
+        fallback_note = f" (legacy position was {fallback_letter})" if fallback_letter else ""
+        raise KeyError(
+            f"Header not found: {patterns}{fallback_note}; "
+            "refusing positional fallback because workbook columns may have moved"
+        )
 
     col_map = {
         "B": find_col("stock code", fallback_letter="B"),
@@ -103,6 +127,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
         "V": find_col("currency in financial information", fallback_letter="V"),
         "Y": find_col("total assets in year-1", fallback_letter="Y"),
         "BP": find_col("incorporation date", fallback_letter="BP"),
+        "BS": find_col("technology commercialization stage", fallback_letter="BS"),
     }
 
     def cell(r: int, col_key: str) -> Any:
@@ -155,6 +180,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
         AT = cell(row, "AT")     # Year-1 end date
         V = cell(row, "V")       # Currency code
         Y = cell(row, "Y")       # Total assets in year-1
+        BS = str(cell(row, "BS") or "")  # 18C commercial / pre-commercial stage
 
         company_checks = []
 
@@ -162,29 +188,34 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
         # 1. 机制 A / B 回拨阶梯与披露说明 (Clawback Ladder)
         # -------------------------------------------------------------
         if CS and CT and CM is not None:
-            pub_ratio = float(CT) / float(CS)
+            # Clawback percentages are defined against the shares initially
+            # offered. Offer Size Adjustment shares in final CS do not change
+            # that denominator.
+            allocation_base = float(M) if M else float(CS)
+            pub_ratio = float(CT) / allocation_base
             cm_val = float(CM)
-            # 2025 定价机制改革后，允许发行人预设回拨上限（如 20%）
             if "Mechanism A" in DN:
-                if cm_val >= 15:
-                    if pub_ratio < 0.15:
-                        company_checks.append({
-                            "check": "Clawback Allocation",
-                            "severity": "WARNING",
-                            "detail": f"公开发售超购 {cm_val:.1f} 倍，但最终公开发售比例仅 {pub_ratio*100:.1f}%，低于常规 15% 档位"
-                        })
-                    elif pub_ratio > 0.52:
-                        company_checks.append({
-                            "check": "Clawback Allocation",
-                            "severity": "WARNING",
-                            "detail": f"公开发售比例达 {pub_ratio*100:.1f}%，超过常规最高 50% 阶梯"
-                        })
-                elif cm_val < 15 and pub_ratio > 0.25:
+                expected_ratio = mechanism_a_public_ratio(cm_val, is_18c=(BM == 1))
+                # 容许股份整数舍入；偏差较大通常意味着个案豁免或资料口径错误。
+                if abs(pub_ratio - expected_ratio) > 0.015:
                     company_checks.append({
-                        "check": "Clawback Allocation",
-                        "severity": "INFO",
-                        "detail": f"未触发超购 15 倍回拨，但公开发售比例达 {pub_ratio*100:.1f}%"
+                        "check": "Mechanism A Allocation",
+                        "severity": "WARNING",
+                        "detail": (
+                            f"公开发售超购 {cm_val:.1f} 倍，适用规则档位为 "
+                            f"{expected_ratio*100:.0f}%，实际为 {pub_ratio*100:.1f}%；"
+                            "请核对是否存在港交所个案豁免或口径差异"
+                        )
                     })
+            elif "Mechanism B" in DN and not (0.085 <= pub_ratio <= 0.615):
+                company_checks.append({
+                    "check": "Mechanism B Allocation",
+                    "severity": "WARNING",
+                    "detail": (
+                        f"Mechanism B 公开发售比例为 {pub_ratio*100:.1f}%，"
+                        "超出常规 10%–60% 区间；请核对个案豁免或数据口径"
+                    )
+                })
 
         # -------------------------------------------------------------
         # 2. 募资毛额 vs 净额 vs 承销费 (Proceeds & Fees)
@@ -210,13 +241,20 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
                     "severity": "ERROR",
                     "detail": f"18A 生物科技公司市值低于 15 亿港元法定门槛: {mcap:,.0f} HKD"
                 })
-            elif BM == 1 and mcap < 4.0e9:
-                # 港交所 2024 年 9 月改革，18C 已商业化公司门槛由 60 亿下调至 40 亿港元
-                company_checks.append({
-                    "check": "Chapter 18C Market Cap",
-                    "severity": "ERROR",
-                    "detail": f"18C 特专科技公司市值低于 2024 年新规 40 亿港元门槛: {mcap:,.0f} HKD"
-                })
+            elif BM == 1:
+                stage_norm = BS.lower().replace(" ", "").replace("-", "")
+                is_pre_commercial = "precommercial" in stage_norm or "未商业化" in stage_norm
+                threshold = 8.0e9 if is_pre_commercial else 4.0e9
+                if mcap < threshold:
+                    stage_label = "未商业化" if is_pre_commercial else "已商业化/未明确标为未商业化"
+                    company_checks.append({
+                        "check": "Chapter 18C Market Cap",
+                        "severity": "ERROR",
+                        "detail": (
+                            f"18C {stage_label}公司市值低于临时门槛 "
+                            f"{threshold/1e8:.0f} 亿港元: {mcap:,.0f} HKD"
+                        )
+                    })
             elif mcap < 500e6:
                 company_checks.append({
                     "check": "Main Board Market Cap",

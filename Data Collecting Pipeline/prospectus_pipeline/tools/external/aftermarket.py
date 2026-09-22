@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import argparse
+import calendar
 import datetime as dt
 import json
 import shutil
@@ -31,6 +32,7 @@ ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.na
 WS = ROOT.parent
 BOOK = WS / "HKIPO-MB2026Q1.xlsx"
 CACHE = ROOT / "data" / "market" / "aftermarket"
+STATUS_OVERRIDES = ROOT / "schema" / "listing_status_overrides.json"
 SHEET = "NLR"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
@@ -153,6 +155,15 @@ def find_bar_on_or_before(bars: list[dict], target_date: dt.date) -> dict | None
     return matched
 
 
+def add_calendar_months(value: dt.date, months: int) -> dt.date:
+    """Advance a date by whole calendar months, clipping to month end."""
+    month_index = value.month - 1 + months
+    year = value.year + month_index // 12
+    month = month_index % 12 + 1
+    day = min(value.day, calendar.monthrange(year, month)[1])
+    return dt.date(year, month, day)
+
+
 def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list[dict], hstech_bars: list[dict]) -> dict[str, Any]:
     ld = company_info["listing_date"]
     offer_price = company_info["offer_price"]
@@ -169,6 +180,19 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     p1 = day1_close if (day1_close is not None and day1_close > 0) else after_bars[0]["close"]
     p0 = offer_price if (offer_price is not None and offer_price > 0) else p1
     d0 = after_bars[0]["date"]
+    benchmark_dates = [b["date"] for b in hsi_bars + hstech_bars]
+    market_as_of = max(benchmark_dates) if benchmark_dates else after_bars[-1]["date"]
+    last_stock_date = after_bars[-1]["date"]
+    status_override = company_info.get("status_override") or {}
+    if status_override.get("status"):
+        listing_status = str(status_override["status"])
+        listing_status_source = status_override.get("source_url")
+    elif (market_as_of - last_stock_date).days > 30:
+        listing_status = "No recent trading (verify status)"
+        listing_status_source = None
+    else:
+        listing_status = "Active"
+        listing_status_source = None
     
     # 指数上市首日基准收盘价
     hsi_d0_bar = find_bar_on_or_after(hsi_bars, d0)
@@ -177,44 +201,44 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     hstech_p0 = hstech_d0_bar["close"] if hstech_d0_bar else None
     
     # ==================== 1 个月指标 (T+20 交易日) ====================
-    idx_1m = min(19, len(after_bars) - 1)
-    bar_1m = after_bars[idx_1m]
-    p_1m = bar_1m["close"]
-    d_1m = bar_1m["date"]
-    
-    bhr_1m = (p_1m / p1) - 1.0 if p1 else None
-    total_ret_1m = (p_1m / p0) - 1.0 if p0 else None
-    
+    # 少于 20 个真实交易日时保持缺失，禁止用“当前最新日”冒充 1M。
+    one_month_matured = len(after_bars) >= 20
+    bar_1m = after_bars[19] if one_month_matured else None
+    p_1m = bar_1m["close"] if bar_1m else None
+    d_1m = bar_1m["date"] if bar_1m else None
+
+    bhr_1m = (p_1m / p1) - 1.0 if (p_1m is not None and p1) else None
+    total_ret_1m = (p_1m / p0) - 1.0 if (p_1m is not None and p0) else None
+
     # 同期指数收益
-    hsi_1m_bar = find_bar_on_or_after(hsi_bars, d_1m)
-    hstech_1m_bar = find_bar_on_or_after(hstech_bars, d_1m)
-    
+    hsi_1m_bar = find_bar_on_or_after(hsi_bars, d_1m) if d_1m else None
+    hstech_1m_bar = find_bar_on_or_after(hstech_bars, d_1m) if d_1m else None
+
     hsi_ret_1m = (hsi_1m_bar["close"] / hsi_p0 - 1.0) if (hsi_1m_bar and hsi_p0) else None
     hstech_ret_1m = (hstech_1m_bar["close"] / hstech_p0 - 1.0) if (hstech_1m_bar and hstech_p0) else None
-    
+
     wr_hsi_1m = ((1.0 + bhr_1m) / (1.0 + hsi_ret_1m)) if (bhr_1m is not None and hsi_ret_1m is not None) else None
     wr_hstech_1m = ((1.0 + bhr_1m) / (1.0 + hstech_ret_1m)) if (bhr_1m is not None and hstech_ret_1m is not None) else None
-    
+
     # 首月日均成交额 (前 20 个交易日)
-    turnover_list_1m = [b["turnover"] for b in after_bars[: idx_1m + 1] if b.get("turnover") is not None]
+    turnover_list_1m = [b["turnover"] for b in after_bars[:20] if b.get("turnover") is not None] if one_month_matured else []
     avg_turnover_1m = (sum(turnover_list_1m) / len(turnover_list_1m)) if turnover_list_1m else None
 
     # ==================== 6 个月指标 (基石解禁日或 T+126 交易日) ====================
-    target_6m_date = unlock_date if unlock_date else (ld + dt.timedelta(days=180))
-    # 查找首个在目标解禁日及之后的 bar；若尚未达到目标日，则取当前最新的交易 bar
+    target_6m_date = unlock_date if (unlock_date and unlock_date >= ld) else add_calendar_months(ld, 6)
+    # 只有样本真实覆盖目标日后的首个交易日，6M 窗口才成熟。
     bar_6m = find_bar_on_or_after(after_bars, target_6m_date)
-    if not bar_6m:
-        bar_6m = after_bars[-1]
+    six_month_matured = bar_6m is not None
+
+    idx_6m = after_bars.index(bar_6m) if bar_6m else None
+    p_6m = bar_6m["close"] if bar_6m else None
+    d_6m = bar_6m["date"] if bar_6m else None
+
+    bhr_6m = (p_6m / p1) - 1.0 if (p_6m is not None and p1) else None
+    total_ret_6m = (p_6m / p0) - 1.0 if (p_6m is not None and p0) else None
     
-    idx_6m = after_bars.index(bar_6m)
-    p_6m = bar_6m["close"]
-    d_6m = bar_6m["date"]
-    
-    bhr_6m = (p_6m / p1) - 1.0 if p1 else None
-    total_ret_6m = (p_6m / p0) - 1.0 if p0 else None
-    
-    hsi_6m_bar = find_bar_on_or_after(hsi_bars, d_6m)
-    hstech_6m_bar = find_bar_on_or_after(hstech_bars, d_6m)
+    hsi_6m_bar = find_bar_on_or_after(hsi_bars, d_6m) if d_6m else None
+    hstech_6m_bar = find_bar_on_or_after(hstech_bars, d_6m) if d_6m else None
     
     hsi_ret_6m = (hsi_6m_bar["close"] / hsi_p0 - 1.0) if (hsi_6m_bar and hsi_p0) else None
     hstech_ret_6m = (hstech_6m_bar["close"] / hstech_p0 - 1.0) if (hstech_6m_bar and hstech_p0) else None
@@ -223,8 +247,11 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     wr_hstech_6m = ((1.0 + bhr_6m) / (1.0 + hstech_ret_6m)) if (bhr_6m is not None and hstech_ret_6m is not None) else None
     
     # 第 6 个月（取 6M 节点前 20 个交易日）日均成交额
-    start_idx_m6 = max(0, idx_6m - 19)
-    turnover_list_6m = [b["turnover"] for b in after_bars[start_idx_m6 : idx_6m + 1] if b.get("turnover") is not None]
+    start_idx_m6 = max(0, idx_6m - 19) if idx_6m is not None else None
+    turnover_list_6m = (
+        [b["turnover"] for b in after_bars[start_idx_m6 : idx_6m + 1] if b.get("turnover") is not None]
+        if start_idx_m6 is not None else []
+    )
     avg_turnover_6m = (sum(turnover_list_6m) / len(turnover_list_6m)) if turnover_list_6m else None
     
     # 流动性衰减率 (6M 日均 / 首日成交额)
@@ -244,8 +271,20 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
         milestone = "Standard"
 
     return {
-        139: "Active",
-        140: round(p_1m, 3),
+        "observation_meta": {
+            "data_as_of": market_as_of.isoformat(),
+            "last_stock_trading_date": last_stock_date.isoformat(),
+            "listing_status": listing_status,
+            "listing_status_source": listing_status_source,
+            "one_month_target": "20th trading day",
+            "one_month_actual_date": d_1m.isoformat() if d_1m else None,
+            "one_month_matured": one_month_matured,
+            "six_month_target_date": target_6m_date.isoformat(),
+            "six_month_actual_date": d_6m.isoformat() if d_6m else None,
+            "six_month_matured": six_month_matured,
+        },
+        139: listing_status,
+        140: round(p_1m, 3) if p_1m is not None else None,
         141: round(bhr_1m, 6) if bhr_1m is not None else None,
         142: round(total_ret_1m, 6) if total_ret_1m is not None else None,
         143: round(hsi_ret_1m, 6) if hsi_ret_1m is not None else None,
@@ -253,7 +292,7 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
         145: round(wr_hsi_1m, 4) if wr_hsi_1m is not None else None,
         146: round(wr_hstech_1m, 4) if wr_hstech_1m is not None else None,
         147: round(avg_turnover_1m, 2) if avg_turnover_1m is not None else None,
-        148: round(p_6m, 3),
+        148: round(p_6m, 3) if p_6m is not None else None,
         149: round(bhr_6m, 6) if bhr_6m is not None else None,
         150: round(total_ret_6m, 6) if total_ret_6m is not None else None,
         151: round(hsi_ret_6m, 6) if hsi_ret_6m is not None else None,
@@ -288,6 +327,9 @@ def main() -> int:
     ws = wb[SHEET]
 
     companies = []
+    status_overrides = {}
+    if STATUS_OVERRIDES.exists():
+        status_overrides = json.loads(STATUS_OVERRIDES.read_text(encoding="utf-8"))
     for r in range(2, ws.max_row + 1):
         code_val = ws.cell(r, 2).value
         if not code_val:
@@ -317,6 +359,7 @@ def main() -> int:
             "unlock_date": unlock_date,
             "is_18a": is_18a,
             "is_18c": is_18c,
+            "status_override": status_overrides.get(code, {}),
         })
     wb.close()
 
@@ -353,14 +396,27 @@ def main() -> int:
             metrics["row"] = c["row"]
             metrics["code"] = c["code"]
             computed_rows.append(metrics)
+            def pct(value):
+                return f"{value * 100:+.2f}%" if value is not None else "未成熟"
+
+            def ratio(value):
+                return f"{value:.3f}" if value is not None else "未成熟"
+
             print(f"   [{idx:02d}/{len(companies):02d}] {c['code']:7s}: "
-                  f"1M BHR={metrics[141]*100:+.2f}%, 6M BHR={metrics[149]*100:+.2f}%, "
-                  f"WR_HSI(6M)={metrics[153]:.3f}, 换手衰减={metrics[156]*100:.1f}%")
+                  f"1M BHR={pct(metrics[141])}, 6M BHR={pct(metrics[149])}, "
+                  f"WR_HSI(6M)={ratio(metrics[153])}, 换手衰减={pct(metrics[156])}")
         except Exception as exc:
             print(f"   [{idx:02d}/{len(companies):02d}] {c['code']:7s}: 抓取/计算异常: {exc}")
         time.sleep(0.15)
 
     print(f"\n✅ 成功计算 {len(computed_rows)} / {len(companies)} 家公司指标")
+
+    observation_manifest = {
+        row["code"]: row.get("observation_meta", {}) for row in computed_rows
+    }
+    (CACHE / "observation_manifest.json").write_text(
+        json.dumps(observation_manifest, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     if args.dry_run:
         print("\n[DRY RUN] 演练模式结束，未向工作簿写入数据。")

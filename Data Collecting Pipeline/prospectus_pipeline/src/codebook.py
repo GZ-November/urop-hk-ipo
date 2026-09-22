@@ -2,7 +2,7 @@
 """HK IPO 学术研究级变量字典（Codebook）与纯净 CSV 导出引擎。
 
 功能：
-  1. 完整解析 HKIPO-MB2026Q1.xlsx 交付物（120 列 × 38 家公司）；
+  1. 完整解析 HKIPO-MB2026Q1.xlsx 交付物（161 列 × 38 家公司）；
   2. 自动识别三色数据层级：
      - 浅绿（A–K，11 列）：香港交易所新上市报告官方基础信息；
      - 浅蓝（L–AY, DP, CJ, BA–CI，60 列）：招股书全量披露指标；
@@ -98,6 +98,130 @@ ACADEMIC_VARS = {
     "First-day flipping ratio (%)": ("First-day flipping ratio (%)", "首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说）", "numeric", "深蓝 (配发及外部数据)", "secondary_market"),
 }
 
+# Stable metadata for workbook headers that are intentionally outside the two
+# extraction schemas.  These entries are keyed by semantic header, never by an
+# Excel column letter, so inserting a column cannot silently attach the wrong
+# definition to a variable.
+EXTRA_HEADER_VARS = {
+    "Company Name at time of listing (exclude Chapter 20 cases)": (
+        "Company Name at time of listing", "公司上市时法定英文名称", "浅绿 (港交所官方报告)", "hkex_nlr",
+        "香港交易所 (HKEX) 新上市报告 (New Listing Report) 官方表格",
+    ),
+    "Comments (nearest sales& profit adjustment factor - original data duration in year, eg. 6 month pls input 0.5)": (
+        "Comments / Annualization factor", "最近一期财务数据对应的年化因子与口径说明", "浅蓝 (招股书全量披露)",
+        "financial_period", "招股书财务往绩期间与年化口径",
+    ),
+    "Year-3 financial period start": (
+        "Year-3 financial period start", "往绩记录第三年前期起始日", "浅蓝 (招股书全量披露)",
+        "financial_period", "招股书会计师报告往绩期间",
+    ),
+    "Year-3 financial period end": (
+        "Year-3 financial period end", "往绩记录第三年前期截止日", "浅蓝 (招股书全量披露)",
+        "financial_period", "招股书会计师报告往绩期间",
+    ),
+    "A+H issuer flag": (
+        "A+H issuer flag", "A+H 两地上市发行人标识（1=是，0=否）", "深蓝 (配发及外部数据)",
+        "regulatory_flags", "招股书与交易所证券资料确定性分类",
+    ),
+    "Year-2 financial period start": (
+        "Year-2 financial period start", "往绩记录第二年前期起始日", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书期间字段的确定性标准化",
+    ),
+    "Year-2 financial period end": (
+        "Year-2 financial period end", "往绩记录第二年前期截止日", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书期间字段的确定性标准化",
+    ),
+    "Year-1 financial period start": (
+        "Year-1 financial period start", "往绩记录最近一期起始日", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书期间字段的确定性标准化",
+    ),
+    "Year-1 net sales (original, pre-annualization)": (
+        "Year-1 net sales (original, pre-annualization)", "最近一期营业收入原值（年化前）", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书披露值的确定性标准化",
+    ),
+    "Year-1 profit before tax (original)": (
+        "Year-1 profit before tax (original)", "最近一期税前利润原值（年化前）", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书披露值的确定性标准化",
+    ),
+    "Year-1 profit for period (original)": (
+        "Year-1 profit for period (original)", "最近一期净利润原值（年化前）", "深蓝 (配发及外部数据)",
+        "financial_period", "招股书披露值的确定性标准化",
+    ),
+    "Earliest cornerstone unlock date (dd/mm/yy)": (
+        "Earliest cornerstone unlock date (dd/mm/yy)", "基石投资者最早解禁日期", "深蓝 (配发结果与确定性派生)",
+        "cornerstone", "基石协议、配发结果公告与上市日确定性派生",
+    ),
+    "Current listing status": (
+        "Current listing status", "当前挂牌存续状态", "深蓝 (配发及外部数据)", "aftermarket", "二级市场与发行人公告",
+    ),
+    "1-month post-IPO close price (HK$)": (
+        "1-month post-IPO close price (HK$)", "第20个交易日收盘价（窗口成熟后填报）", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情",
+    ),
+    "1-month BHR from Day-1 close (%)": (
+        "1-month BHR from Day-1 close (%)", "由首日收盘至第20个交易日的买入持有收益率", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "1-month total return from offer price (%)": (
+        "1-month total return from offer price (%)", "由发售价至第20个交易日的累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "1-month HSI return (%)": (
+        "1-month HSI return (%)", "同期恒生指数累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "指数日行情确定性派生",
+    ),
+    "1-month HSTECH return (%)": (
+        "1-month HSTECH return (%)", "同期恒生科技指数累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "指数日行情确定性派生",
+    ),
+    "1-month wealth relative vs HSI": (
+        "1-month wealth relative vs HSI", "一个月相对恒指财富比", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "1-month wealth relative vs HSTECH": (
+        "1-month wealth relative vs HSTECH", "一个月相对恒生科技指数财富比", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "1-month average daily turnover (HK$)": (
+        "1-month average daily turnover (HK$)", "上市后首20个交易日日均成交额", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "6-month post-IPO close price (HK$)": (
+        "6-month post-IPO close price (HK$)", "六个月目标日后首个交易日收盘价（窗口成熟后填报）", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情",
+    ),
+    "6-month BHR from Day-1 close (%)": (
+        "6-month BHR from Day-1 close (%)", "由首日收盘至六个月目标交易日的买入持有收益率", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "6-month total return from offer price (%)": (
+        "6-month total return from offer price (%)", "由发售价至六个月目标交易日的累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "6-month HSI return (%)": (
+        "6-month HSI return (%)", "同期恒生指数累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "指数日行情确定性派生",
+    ),
+    "6-month HSTECH return (%)": (
+        "6-month HSTECH return (%)", "同期恒生科技指数累计收益率", "深蓝 (配发及外部数据)", "aftermarket", "指数日行情确定性派生",
+    ),
+    "6-month wealth relative vs HSI": (
+        "6-month wealth relative vs HSI", "六个月相对恒指财富比", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "6-month wealth relative vs HSTECH": (
+        "6-month wealth relative vs HSTECH", "六个月相对恒生科技指数财富比", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "6-month average daily turnover (HK$)": (
+        "6-month average daily turnover (HK$)", "六个月目标日前20个交易日日均成交额", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "Liquidity decay ratio (6M vs Day-1 turnover)": (
+        "Liquidity decay ratio (6M vs Day-1 turnover)", "六个月窗口日均成交额相对首日成交额比率", "深蓝 (配发及外部数据)", "aftermarket", "二级市场日行情确定性派生",
+    ),
+    "1-year post-IPO return (%) [Reserved]": (
+        "1-year post-IPO return (%) [Reserved]", "一年期收益率预留字段", "深蓝 (配发及外部数据)", "aftermarket", "预留",
+    ),
+    "1-year wealth relative vs HSI [Reserved]": (
+        "1-year wealth relative vs HSI [Reserved]", "一年期相对恒指财富比预留字段", "深蓝 (配发及外部数据)", "aftermarket", "预留",
+    ),
+    "3-year post-IPO return (%) [Reserved]": (
+        "3-year post-IPO return (%) [Reserved]", "三年期收益率预留字段", "深蓝 (配发及外部数据)", "aftermarket", "预留",
+    ),
+    "3-year wealth relative vs HSI [Reserved]": (
+        "3-year wealth relative vs HSI [Reserved]", "三年期相对恒指财富比预留字段", "深蓝 (配发及外部数据)", "aftermarket", "预留",
+    ),
+    "18A/18C regulatory milestone status": (
+        "18A/18C regulatory milestone status", "18A/18C 监管路径与商业化里程碑状态", "深蓝 (配发及外部数据)", "regulatory_flags", "上市规则分类与发行人公告",
+    ),
+}
+
 
 def parse_numeric(v: Any) -> float | None:
     if v in (None, "", "NA", "NaN"):
@@ -141,24 +265,21 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
 
     # 加载招股书 schema 与配发 schema
     p_schema_by_header = {}
-    p_schema_by_col = {}
     p_schema_path = ROOT / "schema" / "fields.json"
     if p_schema_path.exists():
         p_data = json.loads(p_schema_path.read_text(encoding="utf-8"))
-        p_schema_by_col = {f.get("col"): f for f in p_data.get("fields", []) if f.get("col")}
         p_schema_by_header = {norm_header(f["header"]): f for f in p_data.get("fields", [])}
 
     a_schema_by_header = {}
-    a_schema_by_col = {}
     a_schema_path = ROOT / "schema" / "allot_fields.json"
     if a_schema_path.exists():
         a_data = json.loads(a_schema_path.read_text(encoding="utf-8"))
-        a_schema_by_col = {f.get("col"): f for f in a_data.get("fields", []) if f.get("col")}
         a_schema_by_header = {norm_header(f["header"]): f for f in a_data.get("fields", [])}
 
     green_by_header = {norm_header(val[0]): val for val in HKEX_GREEN_VARS.values()}
     ext_by_header = {norm_header(val[0]): val for val in EXTERNAL_VARS.values()}
     academic_by_header = {norm_header(k): v for k, v in ACADEMIC_VARS.items()}
+    extra_by_header = {norm_header(k): v for k, v in EXTRA_HEADER_VARS.items()}
 
     start_row = cfg["data_start_row"]
     max_col = ws.max_column
@@ -225,27 +346,13 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             clean_header, chinese_desc, _ = item
             source_desc = "外部市场数据 (Hang Seng / HKMA / 港交所规则)"
             group_name = "external_tools"
-        elif col_letter in HKEX_GREEN_VARS:
-            tier = "浅绿 (港交所官方报告)"
-            clean_header, chinese_desc, _ = HKEX_GREEN_VARS[col_letter]
-            source_desc = "香港交易所 (HKEX) 新上市报告 (New Listing Report) 官方表格"
-            group_name = "hkex_nlr"
-        elif col_letter in p_schema_by_col:
-            tier = "浅蓝 (招股书全量披露)"
-            meta = p_schema_by_col[col_letter]
-            source_desc = f"招股书法定披露章节（Group: {meta.get('group', 'prospectus')}）"
-            group_name = meta.get("group", "prospectus")
-            chinese_desc = meta.get("description", meta.get("hint", clean_header))
-        elif col_letter in a_schema_by_col:
-            tier = "深蓝 (配发结果与确定性派生)"
-            meta = a_schema_by_col[col_letter]
-            source_desc = f"配发结果公告 (Allotment Results) / 确定性派生"
-            group_name = meta.get("group", "allotment")
-            chinese_desc = meta.get("description", clean_header)
-        elif col_letter in EXTERNAL_VARS:
-            clean_header, chinese_desc, _ = EXTERNAL_VARS[col_letter]
-            source_desc = "外部市场数据 (Hang Seng / HKMA / 港交所规则)"
-            group_name = "external_tools"
+        elif norm_h in extra_by_header:
+            clean_header, chinese_desc, tier, group_name, source_desc = extra_by_header[norm_h]
+        else:
+            raise ValueError(
+                f"未登记的工作簿表头：{col_letter}={raw_header!r}。"
+                "请按稳定表头在 schema 或 EXTRA_HEADER_VARS 中登记；禁止按列字母猜测变量定义。"
+            )
 
         # 分析缺失率
         valid_vals = [v for v in col_vals if v not in (None, "", "NA", "NaN")]

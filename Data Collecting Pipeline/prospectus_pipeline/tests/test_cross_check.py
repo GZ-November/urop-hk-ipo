@@ -3,17 +3,45 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import openpyxl
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 WS = ROOT.parent
 WORKBOOK_PATH = WS / "HKIPO-MB2026Q1.xlsx"
 FIXTURE_WORKBOOK = ROOT / "tests" / "fixtures" / "mock_workbook.xlsx"
 
-from cross_check import run_cross_check
+from cross_check import mechanism_a_public_ratio, run_cross_check
 from run import load_cfg
 
 
 class CrossCheckTests(unittest.TestCase):
+    def test_post_2025_mechanism_a_ladder(self):
+        self.assertEqual(mechanism_a_public_ratio(14.99), 0.05)
+        self.assertEqual(mechanism_a_public_ratio(15), 0.15)
+        self.assertEqual(mechanism_a_public_ratio(50), 0.25)
+        self.assertEqual(mechanism_a_public_ratio(100), 0.35)
+        self.assertEqual(mechanism_a_public_ratio(9.99, is_18c=True), 0.05)
+        self.assertEqual(mechanism_a_public_ratio(10, is_18c=True), 0.10)
+        self.assertEqual(mechanism_a_public_ratio(50, is_18c=True), 0.20)
+
+    def test_missing_semantic_header_does_not_fall_back_to_old_position(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            broken = Path(tmp_dir) / "moved_columns.xlsx"
+            wb = openpyxl.load_workbook(FIXTURE_WORKBOOK)
+            ws = wb["NLR"]
+            for cell in ws[1]:
+                if cell.value == "Offer mechanism":
+                    cell.value = "Unknown allocation field"
+                    break
+            wb.save(broken)
+            wb.close()
+
+            cfg = load_cfg()
+            cfg["workbook_path"] = broken
+            with self.assertRaisesRegex(KeyError, "refusing positional fallback"):
+                run_cross_check(cfg, out_dir=tmp_dir)
+
     def test_run_cross_check_with_mock_fixture(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
             cfg = load_cfg()
