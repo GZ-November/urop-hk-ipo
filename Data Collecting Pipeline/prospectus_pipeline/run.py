@@ -50,7 +50,8 @@ def _to_date(v):
 
 def read_companies(cfg: dict) -> list[dict]:
     import openpyxl
-    wb = openpyxl.load_workbook(WS / cfg["workbook"], read_only=True, data_only=True)
+    book_path = Path(cfg["workbook_path"]) if cfg.get("workbook_path") else (WS / cfg["workbook"])
+    wb = openpyxl.load_workbook(book_path, read_only=True, data_only=True)
     ws = wb[cfg["sheet"]]
     ic = cfg["id_columns"]
     companies = []

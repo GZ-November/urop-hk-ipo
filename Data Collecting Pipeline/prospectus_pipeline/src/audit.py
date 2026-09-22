@@ -524,7 +524,7 @@ def run_audit(
     out_md: Path | None = None,
     log=print,
 ) -> dict:
-    book = cfg["_ws"] / cfg["workbook"]
+    book = Path(cfg["workbook_path"]) if cfg.get("workbook_path") else (cfg["_ws"] / cfg["workbook"])
     wb = openpyxl.load_workbook(book, data_only=True)
     ws = wb[cfg["sheet"]]
 
