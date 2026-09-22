@@ -250,6 +250,20 @@ def cmd_state(cfg, args, companies):
     return subprocess.call(cmd, cwd=WS)
 
 
+def cmd_aftermarket(cfg, args, companies):
+    """采集与计算港股新股二级市场跨期表现与流动性衰减指标 (Col 139-161)。"""
+    import subprocess
+    script = ROOT / "tools" / "external" / "aftermarket.py"
+    cmd = [sys.executable, str(script)]
+    if getattr(args, "dry_run", False):
+        cmd.append("--dry-run")
+    if args.only:
+        cmd.extend(["--only"] + args.only)
+    if args.workbook:
+        cmd.extend(["--book", str(WS / args.workbook)])
+    return subprocess.call(cmd, cwd=WS)
+
+
 def cmd_external(cfg, args, companies):
     """Orchestrate external data collection tools."""
     import subprocess
@@ -260,12 +274,15 @@ def cmd_external(cfg, args, companies):
         ("flags", ROOT / "tools" / "external" / "flags.py"),
         ("rules", ROOT / "tools" / "external" / "rules.py"),
         ("hsic_codes", ROOT / "tools" / "external" / "hsic_codes.py"),
+        ("aftermarket", ROOT / "tools" / "external" / "aftermarket.py"),
     ]
     for name, script in external_scripts:
         if script.exists():
             print(f"\n--- 执行外部工具: {name} ---")
             cmd = [sys.executable, str(script)]
             subprocess.run(cmd, cwd=WS, check=False)
+
+
 def cmd_merge_topics(cfg, args, companies):
     """将 4 个主题分片合并为完整招股书抽取 JSON。"""
     from merge_topics import merge_topics_for_code
@@ -286,9 +303,10 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="招股书 / 配发公告自动采集流水线")
     ap.add_argument("stage", choices=["find", "download", "prepare", "allot", "greenshoe", "cornerstone",
                                      "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
-                                     "report", "codebook", "export", "status", "external", "search", "state",
+                                     "report", "codebook", "export", "status", "external", "aftermarket", "search", "state",
                                      "merge_topics", "all"])
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")
+    ap.add_argument("--dry-run", action="store_true", help="演练模式，不写回工作簿")
     ap.add_argument("--no-topics", action="store_true", help="跳过生成 4 个主题分片包")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", nargs="*", default=None, help="只处理这些股票代码，如 6082.HK")
