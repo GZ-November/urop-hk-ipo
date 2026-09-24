@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
@@ -48,21 +49,22 @@ def load_json(path: Path, default):
 
 
 def load_cfg():
-    sys.path.insert(0, str(PIPE))
-    from run import load_cfg as _load
+    sys.path.insert(0, str(PIPE / "src"))
+    from cohort import load_cfg as _load
     return _load()
 
 
-def workbook_rows() -> list[dict]:
-    from run import read_companies
-    return read_companies(load_cfg())
+def workbook_rows(cfg: dict | None = None) -> list[dict]:
+    sys.path.insert(0, str(PIPE / "src"))
+    from cohort import read_companies
+    return read_companies(cfg or load_cfg())
 
 
-def excel_written_map() -> dict[str, dict]:
+def excel_written_map(cfg: dict | None = None) -> dict[str, dict]:
     """code -> {prospectus: bool, allot: bool} based on live workbook cells."""
     import openpyxl
-    cfg = load_cfg()
-    book = cfg["_ws"] / cfg["workbook"]
+    cfg = cfg or load_cfg()
+    book = cfg.get("workbook_path") or cfg.get("_workbook_path", cfg["_ws"] / cfg["workbook"])
     wb = openpyxl.load_workbook(book, read_only=True, data_only=True)
     ws = wb[cfg["sheet"]]
     headers = {}
@@ -113,12 +115,14 @@ def peak_now(now: datetime | None = None) -> bool:
     return (9 * 60 <= minutes < 12 * 60) or (14 * 60 <= minutes < 18 * 60)
 
 
-def inventory() -> list[dict]:
-    cfg = load_cfg()
-    companies = workbook_rows()
-    written = excel_written_map()
-    prospectus_packets = {r["code"]: r for r in load_json(PACKETS, [])}
-    allot_packets = {r["code"]: r for r in load_json(ALLOT_PACKETS, [])}
+def inventory(cfg: dict | None = None) -> list[dict]:
+    cfg = cfg or load_cfg()
+    companies = workbook_rows(cfg)
+    written = excel_written_map(cfg)
+    ext_dir = cfg["paths"]["out"] / "extracted"
+    allot_ext_dir = cfg["paths"]["allot_out"] / "extracted"
+    prospectus_packets = {r["code"]: r for r in load_json(cfg["paths"]["out"] / "packets.json", [])}
+    allot_packets = {r["code"]: r for r in load_json(cfg["paths"]["allot_out"] / "packets.json", [])}
     rows = []
     sys.path.insert(0, str(PIPE / "src"))
     from state import CONTRACT_VERSION, cells_digest, file_hash, read_record
@@ -126,7 +130,7 @@ def inventory() -> list[dict]:
     # Open once for written-cell credential checks.  A workbook-wide hash is
     # provenance only because later stages legitimately update other columns.
     import openpyxl
-    cfg_book = cfg["_ws"] / cfg["workbook"]
+    cfg_book = cfg.get("workbook_path") or cfg.get("_workbook_path", cfg["_ws"] / cfg["workbook"])
     # Normal mode is intentional: random cell access on a read-only worksheet
     # rescans the XML stream for every address and makes status quadratic.
     digest_wb = openpyxl.load_workbook(cfg_book, read_only=False, data_only=False)
@@ -153,8 +157,8 @@ def inventory() -> list[dict]:
         code = co["code"]
         s = stem(code)
         xl = written.get(code, {})
-        p_json = EXT / f"{s}.json"
-        a_json = ALLOT_EXT / f"{s}.json"
+        p_json = ext_dir / f"{s}.json"
+        a_json = allot_ext_dir / f"{s}.json"
         p_hash = file_hash(p_json) if p_json.exists() else None
         a_hash = file_hash(a_json) if a_json.exists() else None
 
@@ -413,11 +417,30 @@ def main() -> int:
     n.add_argument("--n", type=int, default=2)
     n.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
     n.add_argument("--force", action="store_true", help="高峰也打印批次")
-    n.add_argument("--out", type=Path, default=PIPE / "out" / "next_batch.json")
+    n.add_argument("--out", type=Path, default=None)
+
+    ap.add_argument("--workbook", help="目标工作簿路径")
+    ap.add_argument("--period-start", help="纳入样本起始日期 YYYY-MM-DD")
+    ap.add_argument("--period-end", help="纳入样本截止日期 YYYY-MM-DD")
 
     args = ap.parse_args()
+    if args.workbook:
+        os.environ["HKIPO_WORKBOOK"] = args.workbook
+    if args.period_start:
+        os.environ["HKIPO_PERIOD_START"] = args.period_start
+    if args.period_end:
+        os.environ["HKIPO_PERIOD_END"] = args.period_end
+    cfg = load_cfg()
+    global EXT, ALLOT_EXT, PACKETS, ALLOT_PACKETS, PDF_DIR, PKT_DIR, ALLOT_PKT_DIR
+    EXT = cfg["paths"]["out"] / "extracted"
+    ALLOT_EXT = cfg["paths"]["allot_out"] / "extracted"
+    PACKETS = cfg["paths"]["out"] / "packets.json"
+    ALLOT_PACKETS = cfg["paths"]["allot_out"] / "packets.json"
+    PDF_DIR = cfg["paths"]["pdf"]
+    PKT_DIR = cfg["paths"]["packets"]
+    ALLOT_PKT_DIR = cfg["paths"]["allot_packets"]
     if args.cmd == "status":
-        print_status(inventory())
+        print_status(inventory(cfg))
         return 0
     if args.cmd == "prepare":
         return cmd_prepare(args.only, args.allot)
@@ -426,6 +449,8 @@ def main() -> int:
     if args.cmd == "finish":
         return cmd_finish()
     if args.cmd == "next-batch":
+        if args.out is None:
+            args.out = cfg["paths"]["out"] / "next_batch.json"
         return cmd_next_batch(args.n, args.target, args.force, args.out)
     return 2
 

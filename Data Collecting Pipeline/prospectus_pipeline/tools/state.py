@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent if Path(__file__).resolve().parent.name == "tools" else Path(__file__).resolve().parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from run import load_cfg  # noqa: E402
+from cohort import load_cfg  # noqa: E402
 from state import save_record, require  # noqa: E402
 from validate import validate_all  # noqa: E402
 
@@ -29,11 +29,14 @@ def main():
     ap.add_argument("--code", nargs="*", default=None, help="一个或多个股票代码，如 6082.HK")
     ap.add_argument("--all", action="store_true", default=False, help="处理全部公司")
     ap.add_argument("--verdict", choices=["pass", "fail"])
+    ap.add_argument("--workbook", help="目标工作簿路径")
+    ap.add_argument("--period-start", help="纳入样本起始日期 YYYY-MM-DD")
+    ap.add_argument("--period-end", help="纳入样本截止日期 YYYY-MM-DD")
     args = ap.parse_args()
-    cfg = load_cfg()
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
 
     if args.all:
-        from run import read_companies
+        from cohort import read_companies
         codes = [c["code"] for c in read_companies(cfg)]
         target_codes = None
     elif args.code:

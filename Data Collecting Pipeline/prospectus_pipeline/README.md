@@ -1,6 +1,6 @@
 # HK IPO Prospectus & Allotment Pipeline (v2.0)
 
-Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings (70 prospectus fields, 18 allotment fields, and 114 external market/macro/academic expansion fields, totaling 202 variables; plus multi-year master sample panel architecture).
+Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings. The active workbook schema and dataset determine the current field and sample counts.
 
 ---
 
@@ -32,6 +32,7 @@ prospectus_pipeline/
 │   ├── cross_check.py              # Cross-field business logic and HKEX Listing Rules auditor
 │   ├── report.py                   # Academic market report generator
 │   ├── codebook.py                 # Econometric variable codebook and clean CSV exporter
+│   ├── cohort.py                   # Runtime workbook, period, paths, and issuer cohort resolution
 │   ├── auto_fill.py                # Pipeline scheduler and status monitor
 │   ├── contracts.py                # Strict JSON contract and quote verification
 │   ├── state.py                    # Four-phase hash-signed state management
@@ -39,8 +40,10 @@ prospectus_pipeline/
 │   ├── validate.py                 # Deterministic structural and identity validation engine
 │   ├── write_back.py               # Safe Excel write-back with automatic snapshots
 │   ├── write_back_expansion.py     # Transactional write-back engine for academic expansion (Cols 162–202)
+│   ├── expansion_mapping.py        # Expansion field catalog and research-source value mapping
 │   ├── sample_builder.py           # Multi-year IPO master sample builder & statutory screening (2021–2026)
 │   ├── market_panel.py             # Daily OHLCV microstructure panel & multi-horizon return calculator
+│   ├── market_observations.py      # Shared daily market CSV reader and date-sorted observations
 │   ├── stabilization_panel.py      # Price stabilization & green shoe event calculator
 │   ├── lockup_panel.py             # Multi-horizon statutory lockup & unlock event calculator
 │   ├── relational_tables.py        # Relational investor & underwriting syndicate graph tables
@@ -65,7 +68,7 @@ prospectus_pipeline/
 │       └── hsic_codes.py           # Hang Seng Industry Classification (HSIC) codes
 │
 ├── schema/                         # Contract schemas
-│   ├── fields.json                 # 70 prospectus field specifications
+│   ├── fields.json                 # Prospectus extraction field specifications
 │   ├── allot_fields.json           # 18 allotment field specifications
 │   └── relational_schemas.json     # Strict JSON Schema for 8 master relational & event tables
 │
@@ -76,10 +79,13 @@ prospectus_pipeline/
 │   ├── test_codebook.py            # Variable dictionary and CSV exporter tests
 │   ├── test_pipeline_safety.py     # Hash-gating, quotation forgery, and range safety tests
 │   ├── test_master_expansion.py    # Master sample screening, microstructure panel & maturity tests
+│   ├── test_market_observations.py # Shared event-panel market observation loading
+│   ├── test_expansion_mapping.py   # Expansion field catalog and value mapping
+│   ├── test_expansion_writer.py    # Cohort-scoped workbook expansion write-back
 │   └── test_pipeline_robustness.py # Dynamic column resolution, 100% audit mapping, codebook metadata
 │
 └── workflows/                      # Extraction and review workflow definitions
-    ├── prospectus_extract.js       # Cohort-configured prospectus extraction workflow
+    ├── prospectus_extract.js       # Prospectus 70-field extraction workflow
     └── allot_extract.js            # Allotment results extraction workflow
 ```
 
@@ -93,17 +99,20 @@ Execute commands from `Data Collecting Pipeline`:
 cd "Data Collecting Pipeline"
 ```
 
-### Collecting another quarter
+### Choose the cohort from a prompt
 
-`config.yaml` is the Q1 reference configuration; the extraction code does not encode a quarter. Copy the configuration for each cohort, then set its workbook, cohort metadata, date window, expected sample size, and cohort-specific `paths`/`state_dir`. Keep the workbook headers compatible with the shared schema. Select that config with `--config` or `PIPELINE_CONFIG` for **every** stage so prepare, search, validation, state, write-back, export, and VC/PE reporting use the same cohort.
+The default workbook and period in `config.yaml` remain the defaults. To collect or review a different period, pass the requested dates directly to the CLI; dates are inclusive and selection uses listing date (prospectus date when listing date is blank). A supplied workbook is read as-is, so it must contain the issuer rows for that period.
 
 ```bash
-cp prospectus_pipeline/config.yaml prospectus_pipeline/config-2026Q2.yaml
-# Edit config-2026Q2.yaml with the new workbook, dataset fields, and isolated paths.
-python3 prospectus_pipeline/run.py prepare --config prospectus_pipeline/config-2026Q2.yaml
-python3 prospectus_pipeline/run.py validate --config prospectus_pipeline/config-2026Q2.yaml
-python3 prospectus_pipeline/run.py write --config prospectus_pipeline/config-2026Q2.yaml
+python3 prospectus_pipeline/run.py all \
+  --workbook "HKIPO-MB2026H1.xlsx" \
+  --period-start 2026-01-01 \
+  --period-end 2026-06-30
 ```
+
+You can express the same request in a prompt, for example: “收集 2026-01-01 到 2026-06-30 上市的港股主板 IPO，使用 `HKIPO-MB2026H1.xlsx`。” The caller translates the requested period and workbook into CLI arguments; the pipeline does not parse free-form prompt text. If only one date endpoint is supplied, the missing endpoint is inferred from the earliest or latest issuer membership date in the selected workbook. Omitting both date options uses the configured default period. Each non-default workbook or period gets its own `datasets/<dataset-id>/` data, output, and hash-state directories.
+
+Issuer fields are read through the `id_columns` mapping in `config.yaml`, including the market panel's offer-price field. Workbooks with a different column layout need an explicit mapping for those fields.
 
 ### 1. Status, Audit, Cross-Check, and Export
 ```bash

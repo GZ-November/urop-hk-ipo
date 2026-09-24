@@ -29,7 +29,7 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from contracts import is_missing, normalize_code, strict_load_file  # noqa: E402
-from run import load_cfg, read_companies  # noqa: E402
+from cohort import load_cfg, read_companies  # noqa: E402
 from state import read_record, state_dir  # noqa: E402
 from storage import official_files  # noqa: E402
 from write_back import norm_header, parse_date, resolve_columns  # noqa: E402

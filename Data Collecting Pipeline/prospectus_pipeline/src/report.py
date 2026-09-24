@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from run import load_cfg
+from cohort import load_cfg, read_companies
 
 
 def parse_float(v: Any) -> float | None:
@@ -58,8 +58,10 @@ HSICS_PREFIX_MAP: dict[str, str] = {
 def generate_report(cfg: dict | None = None, out_path: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
-    if "workbook_path" in cfg:
+    if cfg.get("workbook_path"):
         book_path = Path(cfg["workbook_path"])
+    elif cfg.get("_workbook_path"):
+        book_path = Path(cfg["_workbook_path"])
     elif Path(cfg["workbook"]).is_absolute():
         book_path = Path(cfg["workbook"])
     else:
@@ -114,7 +116,8 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         return v
 
     data = []
-    for r in range(cfg["data_start_row"], ws.max_row + 1):
+    for company in read_companies(cfg):
+        r = company["row"]
         code = str(cell(r, "B") or "").strip()
         if not code:
             continue
@@ -166,6 +169,8 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         })
 
     wb.close()
+    if not data:
+        raise ValueError("No issuer rows match the configured workbook and date range")
 
     # Aggregate metrics
     n_companies = len(data)
@@ -287,7 +292,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         f"| **发行人中位数募资额** | **HK$ {median_proceeds:,.0f}** | 中位数约 **{median_proceeds/1e8:.2f} 亿港元** |",
         f"| **上市总市值总额** | **HK$ {total_market_cap:,.0f}** | {n_companies} 家总市值约 **{total_market_cap/1e8:.2f} 亿港元** |",
         "\n---",
-        "\n## 二、行业分布与产业结构 (HSICS 恒生行业分类)",
+        "\n## 二、行业分布与产业结构 (HSICS 2026)",
         "\n### 1. 门类行业分布",
         "\n| 恒生行业门类 | 公司家数 | 占比 | 代表公司 |",
         "|---|---|---|---|"

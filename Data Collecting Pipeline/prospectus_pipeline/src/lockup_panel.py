@@ -18,6 +18,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import logging
@@ -35,9 +36,9 @@ if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
 from market_fetcher import parse_bar_date
-
-OUT_MASTER = ROOT / "out" / "master"
-DAILY_PANEL_CSV = OUT_MASTER / "daily_market_panel.csv"
+sys.path.insert(0, str(ROOT))
+from cohort import load_cfg
+from market_observations import read_daily_market_panel
 
 
 def add_calendar_months(d: dt.date, months: int) -> dt.date:
@@ -55,33 +56,22 @@ def add_calendar_months(d: dt.date, months: int) -> dt.date:
 class LockupPanelEngine:
     """法定与契约解禁事件面板引擎。"""
 
-    def __init__(self) -> None:
-        OUT_MASTER.mkdir(parents=True, exist_ok=True)
+    def __init__(self, cfg: dict | None = None) -> None:
+        self.cfg = cfg or load_cfg()
+        self.out_master = self.cfg["paths"]["out"] / "master"
+        self.daily_panel_csv = self.out_master / "daily_market_panel.csv"
+        self.market_cache = self.cfg["paths"]["data"] / "market" / "daily_bars"
+        self.out_master.mkdir(parents=True, exist_ok=True)
         self.daily_bars: dict[str, list[dict[str, Any]]] = {}
         self.hsi_map: dict[dt.date, float] = {}
         self._load_market_data()
 
     def _load_market_data(self) -> None:
         """加载已生成的个股及恒指日线数据以测算事件窗 CAR。"""
-        if not DAILY_PANEL_CSV.exists():
-            return
-        with DAILY_PANEL_CSV.open("r", encoding="utf-8-sig") as fh:
-            reader = csv.DictReader(fh)
-            for r in reader:
-                code = r["stock_code"]
-                if code not in self.daily_bars:
-                    self.daily_bars[code] = []
-                self.daily_bars[code].append({
-                    "date": parse_bar_date(r["trade_date"]),
-                    "close": float(r["close"]),
-                    "turnover": float(r["turnover"]),
-                    "daily_return": float(r["daily_return"]) if r.get("daily_return") else 0.0
-                })
-        for c in self.daily_bars:
-            self.daily_bars[c].sort(key=lambda x: x["date"])
+        self.daily_bars = read_daily_market_panel(self.daily_panel_csv)
 
         # 尝试加载 HSI 缓存
-        hsi_cache = ROOT / "data" / "market" / "daily_bars" / "HSI_bars.json"
+        hsi_cache = self.market_cache / "HSI_bars.json"
         if hsi_cache.exists():
             import json
             bars = json.loads(hsi_cache.read_text(encoding="utf-8"))
@@ -269,7 +259,7 @@ class LockupPanelEngine:
             events = self.process_issuer_lockups(iss)
             all_events.extend(events)
 
-        out_path = OUT_MASTER / "lockup_events.csv"
+        out_path = self.out_master / "lockup_events.csv"
         if all_events:
             keys = list(all_events[0].keys())
             with out_path.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -283,8 +273,14 @@ class LockupPanelEngine:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
+    parser = argparse.ArgumentParser(description="Build lockup events for a configured IPO cohort")
+    parser.add_argument("--workbook")
+    parser.add_argument("--period-start")
+    parser.add_argument("--period-end")
+    args = parser.parse_args()
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
     from market_panel import load_issuers
-    issuers = load_issuers(use_master_cache=False)
-    engine = LockupPanelEngine()
+    issuers = load_issuers(cfg=cfg)
+    engine = LockupPanelEngine(cfg=cfg)
     out = engine.run(issuers)
     print(f"\nLockup Panel Complete: {out}")
