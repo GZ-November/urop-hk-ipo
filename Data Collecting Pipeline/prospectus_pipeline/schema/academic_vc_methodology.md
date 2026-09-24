@@ -1,6 +1,6 @@
 # 香港 IPO 数据库：学术衍生变量与 Pre-IPO VC/PE 抽取方法论及工程契约规范
 
-本文档为香港主板 IPO 科研级数据库中 **10 个 Pre-IPO VC/PE 细分变量** 与 **8 个第一阶段学术衍生变量** 的法定抽取规范、方法论契约与工程固化标准。
+本文档为香港主板 IPO 科研级数据库中 **10 个 Pre-IPO VC/PE 细分变量** 与 **8 个第一阶段学术衍生变量** 的法定抽取规范、方法论契约与工程固化标准。规则适用于所有 cohort；每个季度的样本、输出路径和状态凭证由所选 `PIPELINE_CONFIG` 决定。
 
 ---
 
@@ -112,4 +112,7 @@
 
 1. **衍生推导纯函数**：位于 `src/academic_derivations.py`，必须无副作用、支持单步单元测试；
 2. **主表同步与注入器**：位于 `tools/enrich_master_dataset.py`，强制执行写前时间戳备份；
-3. **代码本与 CSV 自动联动**：任何列的变动必须同步触发 `src/codebook.py`，更新 `HKIPO-MB2026Q1_clean.csv` 及 `HKIPO_2026Q1_Codebook.md`。
+3. **代码本与 CSV 自动联动**：任何列的变动必须同步触发 `src/codebook.py`；输出文件名应从当前配置的 `dataset.id` 生成，不得固定为某个季度。
+4. **跨季度执行**：10 个字段定义维护在 `schema/fields.json`，抽取由通用 `prepare` 工作流生成的 ownership packet 驱动。为新季度复制配置、指向该 cohort 工作簿，并设置独立的输出/状态目录；随后按 `prepare → 抽取 → validate → write` 执行。写回继续使用规范化表头解析及 hash-bound extracted/validated/reviewed 闸门。
+5. **VC/PE 覆盖审计**：可运行 `python prospectus_pipeline/tools/vc_pe_enricher.py status --config <cohort-config>` 检查当前 cohort 十个字段的覆盖率和引文证据。该审计器不携带发行人答案，也不直接写工作簿；缺失值保持缺失，不自动推断为无 VC/PE。
+6. **历史 Q1 值**：`schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json` 仅用于追溯旧手工数据，不参与任何季度的抽取、验证或写回。

@@ -267,7 +267,7 @@ class StabilizationPanelEngine:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     from market_panel import load_issuers
-    issuers = load_issuers(focus_2026q1_only=True)
+    issuers = load_issuers(use_master_cache=False)
     engine = StabilizationPanelEngine()
     out = engine.run(issuers)
     print(f"\nStabilization Panel Complete: {out}")

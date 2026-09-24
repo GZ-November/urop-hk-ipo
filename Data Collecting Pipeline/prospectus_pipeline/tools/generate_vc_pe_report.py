@@ -1,102 +1,138 @@
 #!/usr/bin/env python3
-"""生成 2026 Q1 Pre-IPO VC/PE 学术研究细分维度全景分析报告。"""
+"""Generate a VC/PE summary for the cohort selected by PIPELINE_CONFIG."""
 from __future__ import annotations
 
+import argparse
+import json
+import os
+import sys
 from pathlib import Path
+
 import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
-out_report = ROOT / "out" / "HKIPO_VC_PE_Research_Report.md"
+sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-wb = openpyxl.load_workbook(WS / "HKIPO-MB2026Q1.xlsx", data_only=True)
-ws = wb["NLR"]
+from run import load_cfg  # noqa: E402
+from write_back import norm_header  # noqa: E402
 
-rows = []
-for r in range(2, 40):
-    code = ws.cell(r, 2).value
-    name = ws.cell(r, 3).value
-    name_cn = ws.cell(r, 130).value
-    ba = ws.cell(r, 53).value
-    vc = ws.cell(r, 54).value
-    pe = ws.cell(r, 55).value
-    cvc = ws.cell(r, 56).value
-    gov = ws.cell(r, 57).value
-    top = ws.cell(r, 58).value
-    investors = ws.cell(r, 59).value
-    stake = ws.cell(r, 60).value
-    board = ws.cell(r, 61).value
-    round_name = ws.cell(r, 62).value
-    duration = ws.cell(r, 63).value
-    rows.append({
-        "code": code,
-        "name": name,
-        "name_cn": name_cn,
-        "ba": ba,
-        "vc": vc,
-        "pe": pe,
-        "cvc": cvc,
-        "gov": gov,
-        "top": top,
-        "investors": investors,
-        "stake": stake,
-        "board": board,
-        "round": round_name,
-        "duration": duration,
-    })
+FIELD_KEYS = {
+    "Pre-IPO VC/PE backing (1=yes; 0=no)": "col_BA",
+    "Pre-IPO VC backing (1=yes; 0=no)": "col_vc_backed",
+    "Pre-IPO PE backing (1=yes; 0=no)": "col_pe_backed",
+    "Pre-IPO CVC backing (1=yes; 0=no)": "col_cvc_backed",
+    "Pre-IPO State/Gov backing (1=yes; 0=no)": "col_gov_backed",
+    "Top-tier VC/PE backing (1=yes; 0=no)": "col_top_tier_vc",
+    "Key Pre-IPO investors": "col_pre_ipo_investors",
+    "Pre-IPO institutional shareholding (%)": "col_vc_pe_stake",
+    "Pre-IPO investor board seat (1=yes; 0=no)": "col_vc_board_seat",
+    "Earliest Pre-IPO investment round": "col_earliest_round",
+    "Pre-IPO holding duration (years)": "col_holding_duration",
+}
 
-total = len(rows)
-vc_cnt = sum(1 for r in rows if r["vc"] == 1)
-pe_cnt = sum(1 for r in rows if r["pe"] == 1)
-cvc_cnt = sum(1 for r in rows if r["cvc"] == 1)
-gov_cnt = sum(1 for r in rows if r["gov"] == 1)
-top_cnt = sum(1 for r in rows if r["top"] == 1)
-board_cnt = sum(1 for r in rows if r["board"] == 1)
-backed_cnt = sum(1 for r in rows if r["ba"] == 1)
 
-backed_stakes = [r["stake"] for r in rows if r["ba"] == 1 and isinstance(r["stake"], (int, float))]
-avg_stake = sum(backed_stakes) / len(backed_stakes) if backed_stakes else 0.0
+def main() -> int:
+    parser = argparse.ArgumentParser(description="为当前配置的 IPO cohort 生成 VC/PE 统计报告")
+    parser.add_argument("--config", help="cohort config；也可设置 PIPELINE_CONFIG")
+    args = parser.parse_args()
+    if args.config:
+        os.environ["PIPELINE_CONFIG"] = str(Path(args.config).expanduser().resolve())
+    cfg = load_cfg()
+    book = Path(cfg.get("workbook_path") or (WS / cfg["workbook"]))
+    if not book.is_file():
+        raise FileNotFoundError(f"Workbook not found: {book}")
+    wb = openpyxl.load_workbook(book, read_only=True, data_only=True)
+    try:
+        ws = wb[cfg["sheet"]]
+        headers: dict[str, list[int]] = {}
+        for column in range(1, ws.max_column + 1):
+            value = ws.cell(1, column).value
+            if value not in (None, ""):
+                headers.setdefault(norm_header(value), []).append(column)
+        cols = {}
+        for header, key in FIELD_KEYS.items():
+            matched = headers.get(norm_header(header), [])
+            if len(matched) != 1:
+                raise ValueError(f"Expected exactly one workbook column for {header!r}; got {matched}")
+            cols[key] = matched[0]
+        id_col = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
+        name_col = openpyxl.utils.column_index_from_string(cfg["id_columns"]["name"])
+        rows = []
+        for row_no in range(cfg["data_start_row"], ws.max_row + 1):
+            code = ws.cell(row_no, id_col).value
+            if code in (None, ""):
+                continue
+            rows.append({"code": str(code).strip(), "name": ws.cell(row_no, name_col).value or "",
+                         **{key: ws.cell(row_no, col).value for key, col in cols.items()}})
+    finally:
+        wb.close()
 
-backed_durations = [r["duration"] for r in rows if r["ba"] == 1 and isinstance(r["duration"], (int, float))]
-avg_duration = sum(backed_durations) / len(backed_durations) if backed_durations else 0.0
+    n = len(rows)
+    cohort = cfg.get("dataset", {}).get("cohort", cfg.get("dataset", {}).get("id", "active cohort"))
+    cohort_id = cfg.get("dataset", {}).get("id", "cohort")
+    out_path = cfg["paths"]["out"] / f"{cohort_id}_VC_PE_Research_Report.md"
 
-md = [
-    "# 香港主板 2026 Q1 IPO Pre-IPO VC/PE 学术研究细分维度全景报告",
-    "",
-    "> **计量数据源**：`HKIPO-MB2026Q1.xlsx` (Sheet: `NLR`, 列 53~63)",
-    f"> **样本范围**：2026 年第一季度香港联交所主板新上市企业全集 (N = {total})",
-    "> **理论支撑**：Lowry, Michaely, & Volkova (2017) Intermediary Governance; Gompers (1996) Grandstanding; Megginson & Weiss (1991) Certification.",
-    "",
-    "---",
-    "",
-    "## 一、核心实证统计量总览 (Executive Summary)",
-    "",
-    "| 维度指标 | 变量字段 | 覆盖家数 | 样本占比 (%) | 经典文献与实证用途 |",
-    "| :--- | :--- | :---: | :---: | :--- |",
-    f"| **Pre-IPO 机构总覆盖** | `col_BA` | {backed_cnt} / {total} | {backed_cnt/total*100:.1f}% | 传统基础哑变量（Base VC/PE Dummy） |",
-    f"| **早期风险投资 (VC)** | `col_vc_backed` | {vc_cnt} / {total} | {vc_cnt/total*100:.1f}% | 检验早期创业孵化与高成长筛选机制 |",
-    f"| **私募股权基金 (PE)** | `col_pe_backed` | {pe_cnt} / {total} | {pe_cnt/total*100:.1f}% | 检验成熟期/并购重组基金的资本赋能与交叉融资 |",
-    f"| **产业资本/企业创投 (CVC)** | `col_cvc_backed` | {cvc_cnt} / {total} | {cvc_cnt/total*100:.1f}% | 检验战略协同、生态绑定与上下游订单支持效应 |",
-    f"| **国资/产业引导基金 (Gov)** | `col_gov_backed` | {gov_cnt} / {total} | {gov_cnt/total*100:.1f}% | 检验地方政府招商、硬科技政策支持与制度背书 |",
-    f"| **顶级机构认证 (Top-tier)** | `col_top_tier_vc` | {top_cnt} / {total} | {top_cnt/total*100:.1f}% | 检验 Megginson & Weiss (1991) 声誉认证假说 |",
-    f"| **董事会席位派驻 (Board Seat)** | `col_vc_board_seat` | {board_cnt} / {total} | {board_cnt/total*100:.1f}% | 检验 Sørensen (2007) 积极监控与公司治理赋能 |",
-    f"| **上市前机构平均持股比例** | `col_vc_pe_stake` | 均值 {avg_stake*100:.1f}% | - | 衡量投资人股权集中度与信息不对称折价 |",
-    f"| **平均持有投资年限 (久期)** | `col_holding_duration` | 均值 {avg_duration:.2f} 年 | - | 检验 Gompers (1996) 基金急迫退出与立名造势假说 |",
-    "",
-    "---",
-    "",
-    "## 二、38 家公司 10 大细分维度完整对账清单",
-    "",
-    "| 股票代码 | 公司名称 (中文) | VC/PE | VC | PE | CVC | 国资 | 顶级 | 董事席位 | 最早轮次 | 持有年限 | 机构持股(%) | 核心机构投资者清单 |",
-    "| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |",
-]
+    def flag_summary(key):
+        values = [row[key] for row in rows]
+        known = [int(value) for value in values if value in (0, 1, "0", "1")]
+        yes = sum(value == 1 for value in known)
+        return yes, len(known), n - len(known)
 
-for r in rows:
-    stk_str = f"{r['stake']*100:.1f}%" if isinstance(r["stake"], (int, float)) and r["stake"] > 0 else "0.0%"
-    dur_str = f"{r['duration']:.2f}" if isinstance(r["duration"], (int, float)) and r["duration"] > 0 else "0.00"
-    md.append(
-        f"| `{r['code']}` | {r['name_cn']} | {r['ba']} | {r['vc']} | {r['pe']} | {r['cvc']} | {r['gov']} | {r['top']} | {r['board']} | {r['round']} | {dur_str} | {stk_str} | {r['investors']} |"
-    )
+    def as_number(value):
+        if value in (None, "", "NA", "NaN", "N/A", "-"):
+            return None
+        try:
+            number = float(value)
+            return number if __import__("math").isfinite(number) else None
+        except (TypeError, ValueError):
+            return None
 
-out_report.write_text("\n".join(md), encoding="utf-8")
-print("Successfully generated research report:", out_report)
+    backed = [row for row in rows if row["col_BA"] in (1, "1")]
+    stakes = [as_number(r["col_vc_pe_stake"]) for r in backed]
+    stakes = [value for value in stakes if value is not None]
+    durations = [as_number(r["col_holding_duration"]) for r in backed]
+    durations = [value for value in durations if value is not None]
+    stats = [
+        ("Pre-IPO 机构总覆盖", "col_BA"),
+        ("早期风险投资 (VC)", "col_vc_backed"),
+        ("私募股权基金 (PE)", "col_pe_backed"),
+        ("产业资本/企业创投 (CVC)", "col_cvc_backed"),
+        ("国资/产业引导基金 (Gov)", "col_gov_backed"),
+        ("顶级机构认证 (Top-tier)", "col_top_tier_vc"),
+        ("董事会席位派驻", "col_vc_board_seat"),
+    ]
+    md = [
+        f"# 香港主板 {cohort} IPO Pre-IPO VC/PE 汇总报告", "",
+        f"> 数据源：`{book.name}`，工作表 `{cfg['sheet']}`；字段按规范化表头定位。",
+        f"> 样本范围：当前配置 cohort（N = {n}）。", "",
+        "## 核心统计", "", "| 指标 | 字段 | Yes / 已知值 | 缺失/无效 | Yes 占已知值 |", "|---|---|---:|---:|---:|",
+    ]
+    for label, key in stats:
+        yes, known, missing = flag_summary(key)
+        share = f"{yes / known * 100:.1f}%" if known else "n/a"
+        md.append(f"| {label} | `{key}` | {yes} / {known} | {missing} | {share} |")
+    md += [
+        f"| 上市前机构平均持股比例（有 VC/PE 样本） | `col_vc_pe_stake` | {sum(stakes)/len(stakes)*100:.1f}% | n={len(stakes)} |" if stakes else "| 上市前机构平均持股比例 | `col_vc_pe_stake` | n/a | n=0 |",
+        f"| 平均持有年限（有 VC/PE 样本） | `col_holding_duration` | {sum(durations)/len(durations):.2f} 年 | n={len(durations)} |" if durations else "| 平均持有年限 | `col_holding_duration` | n/a | n=0 |",
+        "", "## 公司明细", "",
+        "| 股票代码 | 公司 | VC/PE | VC | PE | CVC | 国资 | 顶级 | 董事席位 | 最早轮次 | 持有年限 | 机构持股 | 主要机构投资者 |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---:|---|",
+    ]
+    for row in rows:
+        stake = row["col_vc_pe_stake"]
+        duration = row["col_holding_duration"]
+        stake_s = f"{stake*100:.2f}%" if isinstance(stake, (int, float)) else "NA"
+        duration_s = f"{duration:.2f}" if isinstance(duration, (int, float)) else "NA"
+        md.append("| " + " | ".join(str(v if v is not None else "NA") for v in (
+            row["code"], row["name"], row["col_BA"], row["col_vc_backed"], row["col_pe_backed"],
+            row["col_cvc_backed"], row["col_gov_backed"], row["col_top_tier_vc"],
+            row["col_vc_board_seat"], row["col_earliest_round"], duration_s, stake_s,
+            row["col_pre_ipo_investors"])) + " |")
+    out_path.write_text("\n".join(md) + "\n", encoding="utf-8")
+    print(f"Generated {out_path} ({n} companies, cohort={cohort_id})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

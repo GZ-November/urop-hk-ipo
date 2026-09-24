@@ -17,9 +17,14 @@ from run import load_cfg
 
 
 class CodebookTests(unittest.TestCase):
+    def config_for(self, workbook=FIXTURE_WORKBOOK):
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
+        cfg["workbook_path"] = workbook
+        cfg["dataset"] = {**cfg.get("dataset", {}), "id": "TEST_FIXTURE", "cohort": "TEST FIXTURE"}
+        return cfg
+
     def test_build_codebook_with_mock_fixture(self):
-        cfg = load_cfg()
-        cfg["workbook_path"] = FIXTURE_WORKBOOK
+        cfg = self.config_for()
         variables, summary = build_codebook(cfg)
         self.assertEqual(summary["sample_size"], 2)
         self.assertEqual(summary["variable_count"], 161)
@@ -39,16 +44,13 @@ class CodebookTests(unittest.TestCase):
             wb.save(broken)
             wb.close()
 
-            cfg = load_cfg()
-            cfg["workbook_path"] = broken
+            cfg = self.config_for(broken)
             with self.assertRaisesRegex(ValueError, "未登记的工作簿表头"):
                 build_codebook(cfg)
 
     def test_clean_csv_export_isolated(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            cfg = load_cfg()
-            if not WORKBOOK_PATH.exists():
-                cfg["workbook_path"] = FIXTURE_WORKBOOK
+            cfg = self.config_for(WORKBOOK_PATH if WORKBOOK_PATH.exists() else FIXTURE_WORKBOOK)
             variables, summary = build_codebook(cfg)
             out_csv = Path(tmp_dir) / "test_clean.csv"
             csv_path = export_clean_csv(variables, out_path=out_csv)
@@ -66,9 +68,7 @@ class CodebookTests(unittest.TestCase):
 
     def test_export_all_artifacts_isolated(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            cfg = load_cfg()
-            if not WORKBOOK_PATH.exists():
-                cfg["workbook_path"] = FIXTURE_WORKBOOK
+            cfg = self.config_for(WORKBOOK_PATH if WORKBOOK_PATH.exists() else FIXTURE_WORKBOOK)
             res = export_all(cfg, out_dir=tmp_dir)
             expected_vars = 202 if WORKBOOK_PATH.exists() else 161
             self.assertEqual(res["variable_count"], expected_vars)
@@ -84,7 +84,9 @@ class CodebookTests(unittest.TestCase):
 
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_build_codebook_full_production_coverage(self):
-        variables, summary = build_codebook()
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
+        cfg["workbook_path"] = WORKBOOK_PATH
+        variables, summary = build_codebook(cfg)
         self.assertEqual(summary["sample_size"], 38)
         self.assertEqual(summary["variable_count"], 202)
         self.assertEqual(summary["tiers"]["green_hkex"], 11)

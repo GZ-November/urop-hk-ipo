@@ -14,23 +14,30 @@ from run import load_cfg
 
 
 class ReportTests(unittest.TestCase):
+    def config_for(self, workbook=FIXTURE_WORKBOOK):
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
+        cfg["workbook_path"] = workbook
+        cfg["dataset"] = {**cfg.get("dataset", {}), "id": "TEST_FIXTURE", "cohort": "TEST FIXTURE"}
+        return cfg
+
     def test_generate_report_with_mock_fixture(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            cfg = load_cfg()
-            cfg["workbook_path"] = FIXTURE_WORKBOOK
+            cfg = self.config_for()
             out_md = Path(tmp_dir) / "mock_report.md"
             stats = generate_report(cfg, out_path=out_md)
             self.assertEqual(stats["n_companies"], 2)
             self.assertTrue(out_md.exists())
             content = out_md.read_text(encoding="utf-8")
-            self.assertIn("香港主板 2026 Q1 IPO 全景学术与市场分析报告", content)
+            self.assertIn("香港主板 TEST FIXTURE IPO 全景学术与市场分析报告", content)
             self.assertIn("2 家", content)
 
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_generate_report_metrics_production(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
             out_md = Path(tmp_dir) / "prod_report.md"
-            stats = generate_report(out_path=out_md)
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
+            cfg["workbook_path"] = WORKBOOK_PATH
+            stats = generate_report(cfg, out_path=out_md)
             self.assertEqual(stats["n_companies"], 38)
             self.assertGreater(stats["total_net_proceeds_hkd"], 90e9)  # > 90 billion HKD
             self.assertGreater(stats["total_market_cap_hkd"], 1e12)     # > 1 trillion HKD

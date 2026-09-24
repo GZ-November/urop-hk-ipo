@@ -1,0 +1,614 @@
+{
+  "dataset_id": "HKIPO-MB2026Q1",
+  "status": "legacy_manual_data_not_used_by_pipeline",
+  "records": {
+    "6082.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund",
+      "col_vc_pe_stake": 0.6852,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Pre-A",
+      "col_holding_duration": 6.04,
+      "evidence": {
+        "page": 171,
+        "quote": "We executed the Series B+ financing agreements with investors"
+      }
+    },
+    "2513.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund",
+      "col_vc_pe_stake": 0.6518,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Angel",
+      "col_holding_duration": 4.58,
+      "evidence": {
+        "page": 21,
+        "quote": "We completed eight rounds of Pre-IPO Investments and had raised funds of over RMB8,360 million."
+      }
+    },
+    "9903.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Princeville Global; HongShan; Shanghai Lianhe Investment; Cathay Capital; Greater Bay Area Fund",
+      "col_vc_pe_stake": 0.584,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 9.42,
+      "evidence": {
+        "page": 25,
+        "quote": "We have concluded several rounds of Pre-IPO Investments with a broad and diversified"
+      }
+    },
+    "2675.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "LYFE Capital; Legend Star; Boyu Capital; Sequoia China; OrbiMed; Temasek",
+      "col_vc_pe_stake": 0.5482,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Angel",
+      "col_holding_duration": 8.16,
+      "evidence": {
+        "page": 40,
+        "quote": "Since November 2017, we have secured six rounds of Pre-IPO Investments with an"
+      }
+    },
+    "0100.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Alisoft China (Alibaba); miHoYo; IDG Capital; Tencent; Future Capital",
+      "col_vc_pe_stake": 0.4532,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Angel",
+      "col_holding_duration": 4.08,
+      "evidence": {
+        "page": 219,
+        "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO"
+      }
+    },
+    "6938.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Panlin Capital; Legend Capital; CITIC Securities Investment; CS Capital; Guoshun Fund",
+      "col_vc_pe_stake": 0.482,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 10.12,
+      "evidence": {
+        "page": 30,
+        "quote": "Option Scheme), respectively. For details of background of the Pre-IPO Investors and the"
+      }
+    },
+    "3636.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Chuanghe Xincai (CITIC Goldstone)",
+      "col_vc_pe_stake": 0.082,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Pre-IPO",
+      "col_holding_duration": 3.02,
+      "evidence": {
+        "page": 472,
+        "quote": "investor, namely Chuanghe Xincai, pursuant to which the investor made capital injection of"
+      }
+    },
+    "0501.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 185,
+        "quote": "HISTORY AND CORPORATE STRUCTURE"
+      }
+    },
+    "3986.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Tus Zhonghai Venture Capital; Insight Power; InfoGrid",
+      "col_vc_pe_stake": 0.1189,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 12.5,
+      "evidence": {
+        "page": 180,
+        "quote": "100% Investment holding"
+      }
+    },
+    "1641.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 111,
+        "quote": "OUR CORPORATE STRUCTURE"
+      }
+    },
+    "9611.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Suzhou Industrial Park Shunwei Technology Venture Investment (Shunwei Capital)",
+      "col_vc_pe_stake": 0.091,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 10.2,
+      "evidence": {
+        "page": 652,
+        "quote": "Tianjin Jinmi Investment Partnership (Limited Partnership) (天津金米投資合"
+      }
+    },
+    "1768.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "HongShan; Gaocheng Capital; Black Ant Capital",
+      "col_vc_pe_stake": 0.265,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 4.67,
+      "evidence": {
+        "page": 32,
+        "quote": "We have completed series rounds of Pre-IPO Investments. For further details of the"
+      }
+    },
+    "9980.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 25,
+        "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial"
+      }
+    },
+    "2768.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 150,
+        "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*"
+      }
+    },
+    "2677.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Matrix Partners; Waterwood DHC; Tiantu Capital; Tencent",
+      "col_vc_pe_stake": 0.521,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 11.75,
+      "evidence": {
+        "page": 34,
+        "quote": "Furthermore, we have completed several rounds of Pre-IPO Investments from 2014 to"
+      }
+    },
+    "2714.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Henan Hongbao Group; Beixin Ruifeng Fund",
+      "col_vc_pe_stake": 0.035,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Pre-IPO",
+      "col_holding_duration": 6.42,
+      "evidence": {
+        "page": 188,
+        "quote": "In 2017, following the approval of our shareholders and the relevant regulatory authority,"
+      }
+    },
+    "3200.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 165,
+        "quote": "early investors of our Company and Independent Third Parties, with an initial registered capital of"
+      }
+    },
+    "6809.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Intel Capital",
+      "col_vc_pe_stake": 0.1,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Strategic Round",
+      "col_holding_duration": 9.5,
+      "evidence": {
+        "page": 179,
+        "quote": "Investments by Intel Capital and Samsung Venture in December 2018"
+      }
+    },
+    "0600.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Qiming Venture Partners; Meituan; Tencent; GGV Capital; Walden International; Boyuan Capital",
+      "col_vc_pe_stake": 0.567,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Angel",
+      "col_holding_duration": 6.25,
+      "evidence": {
+        "page": 27,
+        "quote": "Venture Partners and Beijing Kuxun Technology. For details of background of the Pre-IPO Investors and"
+      }
+    },
+    "2720.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 147,
+        "quote": "Background of the Pre-IPO Investor"
+      }
+    },
+    "0470.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 281,
+        "quote": "For further information on any other person who will be, immediately following"
+      }
+    },
+    "2706.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Legend Capital; IDG Capital; Baidu; CICC Alpha",
+      "col_vc_pe_stake": 0.423,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A-1",
+      "col_holding_duration": 11.42,
+      "evidence": {
+        "page": 40,
+        "quote": "OUR PRE-IPO INVESTORS"
+      }
+    },
+    "9981.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Xuanyuan Private Fund",
+      "col_vc_pe_stake": 0.024,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Pre-IPO",
+      "col_holding_duration": 3.25,
+      "evidence": {
+        "page": 213,
+        "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理"
+      }
+    },
+    "2649.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Suzhou Industrial Park Fund; Green Pine Capital; Hengxu Capital",
+      "col_vc_pe_stake": 0.185,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Series Pre-A",
+      "col_holding_duration": 5.33,
+      "evidence": {
+        "page": 20,
+        "quote": "Pre-IPO Investments"
+      }
+    },
+    "2715.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 184,
+        "quote": "Investment Co., Ltd. (埃斯頓投資有限公司) (“Estun Investment”) holding 55%, 25% and"
+      }
+    },
+    "2692.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 126,
+        "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002"
+      }
+    },
+    "3268.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Fenghuangshan Investment",
+      "col_vc_pe_stake": 0.052,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Pre-IPO",
+      "col_holding_duration": 4.5,
+      "evidence": {
+        "page": 185,
+        "quote": "Fenghuangshan Investment, pursuant to which Fenghuangshan Investment agreed to subscribe for"
+      }
+    },
+    "1989.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Shenzhen Talent Innovation Venture Fund No. 2",
+      "col_vc_pe_stake": 0.041,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "Pre-IPO",
+      "col_holding_duration": 4.0,
+      "evidence": {
+        "page": 549,
+        "quote": "Zhenyun Investment"
+      }
+    },
+    "2701.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "NA",
+      "col_vc_pe_stake": 0.0,
+      "col_vc_board_seat": 0,
+      "col_earliest_round": "None",
+      "col_holding_duration": 0.0,
+      "evidence": {
+        "page": 109,
+        "quote": "We have no pre-IPO investors for the purpose of the Global Offering."
+      }
+    },
+    "3355.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Fortune Venture Capital (达晨财智); Harvest Capital; Shenzhen Chiyu",
+      "col_vc_pe_stake": 0.226,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Pre-A",
+      "col_holding_duration": 7.42,
+      "evidence": {
+        "page": 30,
+        "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate"
+      }
+    },
+    "2632.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Shunwei Capital; Cathay Capital; SAIC Capital; Baidu Ventures",
+      "col_vc_pe_stake": 0.384,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 8.64,
+      "evidence": {
+        "page": 31,
+        "quote": "several rounds of Pre-IPO Investments. For further details of the background of the Pre-IPO"
+      }
+    },
+    "2729.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "ByteDance; Legend Star; Infore Capital",
+      "col_vc_pe_stake": 0.321,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 7.5,
+      "evidence": {
+        "page": 23,
+        "quote": "Pre-IPO Investors"
+      }
+    },
+    "1021.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 0,
+      "col_pre_ipo_investors": "Foxconn (Industrial Fulian); Guangdong Semiconductor Fund; Yuecai Venture Capital",
+      "col_vc_pe_stake": 0.6056,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 6.33,
+      "evidence": {
+        "page": 17,
+        "quote": "PRE-IPO INVESTMENT"
+      }
+    },
+    "2526.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 0,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Lilly Asia Ventures; CDH Investments; Hangzhou High-Tech Venture Fund",
+      "col_vc_pe_stake": 0.445,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 7.42,
+      "evidence": {
+        "page": 27,
+        "quote": "Our Company received ten rounds of investments from the Pre-IPO Investors through"
+      }
+    },
+    "2726.HK": {
+      "col_vc_backed": 0,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Huawei Hubble; BYD; SAIC; Guangdong Semiconductor Fund",
+      "col_vc_pe_stake": 0.368,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 6.5,
+      "evidence": {
+        "page": 130,
+        "quote": "We have undergone the following rounds of Pre-IPO Investments, details of which are set forth below."
+      }
+    },
+    "6636.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Qualcomm Ventures; China Resources Capital; Shandong Development Fund",
+      "col_vc_pe_stake": 0.412,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series Angel",
+      "col_holding_duration": 9.33,
+      "evidence": {
+        "page": 23,
+        "quote": "Pursuant to the Pre-IPO Investors Agreements entered into between the Company and its"
+      }
+    },
+    "0664.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 1,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 0,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Shunwei Capital; Xiaomi; Tiantu Capital",
+      "col_vc_pe_stake": 0.294,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Series A",
+      "col_holding_duration": 8.5,
+      "evidence": {
+        "page": 105,
+        "quote": "Our Pre-IPO Investments consist of several rounds of investments from the Pre-IPO"
+      }
+    },
+    "3625.HK": {
+      "col_vc_backed": 1,
+      "col_pe_backed": 0,
+      "col_cvc_backed": 1,
+      "col_gov_backed": 1,
+      "col_top_tier_vc": 1,
+      "col_pre_ipo_investors": "Tencent; Didi; NIO Capital; NavInfo; Hefei High-Tech Fund",
+      "col_vc_pe_stake": 0.513,
+      "col_vc_board_seat": 1,
+      "col_earliest_round": "Pre-Series A",
+      "col_holding_duration": 7.5,
+      "evidence": {
+        "page": 24,
+        "quote": "and background of our Pre-IPO Investors."
+      }
+    }
+  }
+}

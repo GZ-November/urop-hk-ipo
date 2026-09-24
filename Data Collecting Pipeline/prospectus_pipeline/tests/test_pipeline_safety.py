@@ -5,6 +5,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+import yaml
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,13 +15,31 @@ from contracts import (  # noqa: E402
     evidence_issues, is_company_level_statement, is_definitions_page, validate_record
 )
 from pdfprep import locate_sections  # noqa: E402
-from state import CONTRACT_VERSION, authorized, save_record  # noqa: E402
+from state import CONTRACT_VERSION, authorized, save_record, state_dir  # noqa: E402
 from storage import official_files  # noqa: E402
 from tools import search as tools_search  # noqa: E402
 from cornerstone import assess  # noqa: E402
+from run import load_cfg  # noqa: E402
 
 
 class PipelineSafetyTests(unittest.TestCase):
+    def test_pipeline_config_can_be_selected_without_changing_default(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            config_path = Path(tmp) / "q2.yaml"
+            config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+            config["workbook"] = "HKIPO-MB2026Q2.xlsx"
+            config["dataset"]["id"] = "HKIPO-MB2026Q2"
+            config["dataset"]["cohort"] = "2026 Q2"
+            config_path.write_text(yaml.safe_dump(config), encoding="utf-8")
+
+            selected = load_cfg(config_path=config_path)
+            default = load_cfg(config_path=ROOT / "config.yaml")
+
+        self.assertEqual(selected["workbook"], "HKIPO-MB2026Q2.xlsx")
+        self.assertEqual(selected["dataset"]["cohort"], "2026 Q2")
+        self.assertEqual(default["dataset"]["cohort"], "2026 Q1")
+        self.assertEqual(state_dir(selected), state_dir(default) / "HKIPO-MB2026Q2")
+
     def test_company_level_statement_detector(self):
         parent_headers = [
             "STATEMENTS OF FINANCIAL POSITION OF THE COMPANY\nAs at 31 December 2024",
@@ -115,12 +134,46 @@ class PipelineSafetyTests(unittest.TestCase):
 
     def test_periods_keeps_full_date(self):
         page = {"page": 1, "text": ("CONSOLIDATED STATEMENT OF CASH FLOWS\n"
-                                    "nine months ended 30 September 2025")}
+                                    "nine months ended 30 September 2025\n"
+                                    "year ended 31 December 2023\n"
+                                    "year ended 31 December 2024")}
         with patch.object(tools_search, "load", return_value=[page]):
             output = io.StringIO()
             with contextlib.redirect_stdout(output):
                 tools_search.cmd_periods(type("Args", (), {"code": "0001.HK"})())
         self.assertIn("col_AT = 30/09/25", output.getvalue())
+
+    def test_periods_ignores_old_stub_when_newer_full_years_exist(self):
+        page = {"page": 1, "text": (
+            "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION\n"
+            "nine months ended 30 September 2022\n"
+            "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS\n"
+            "years ended 31 December 2023, 2024 and 2025"
+        )}
+        with patch.object(tools_search, "load", return_value=[page]):
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                tools_search.cmd_periods(type("Args", (), {"code": "6656.HK"})())
+        result = output.getvalue()
+        self.assertIn("year-1 = FY2025；year-2 = FY2024；year-3 = FY2023", result)
+        self.assertIn("不年化（均为全年）", result)
+        self.assertNotIn("FY2020", result)
+        self.assertNotIn("FY2021", result)
+        self.assertNotIn("9M2022（", result)
+
+    def test_periods_does_not_invent_missing_annual_periods(self):
+        page = {"page": 1, "text": (
+            "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS\n"
+            "year ended 31 December 2023\n"
+            "year ended 31 December 2025"
+        )}
+        with patch.object(tools_search, "load", return_value=[page]):
+            output = io.StringIO()
+            with contextlib.redirect_stdout(output):
+                tools_search.cmd_periods(type("Args", (), {"code": "0001.HK"})())
+        result = output.getvalue()
+        self.assertIn("未检出连续的三个完整年度", result)
+        self.assertNotIn("year-1 = FY2025", result)
 
     def test_backup_json_is_not_an_official_extraction(self):
         with tempfile.TemporaryDirectory() as tmp:

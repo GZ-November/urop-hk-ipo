@@ -52,7 +52,7 @@ class PipelineRobustnessTests(unittest.TestCase):
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_audit_external_tool_mapping_completeness(self):
         """验证 audit.py 对全量工作簿非 schema 外部列保持 100% 语义工具映射，无任何遗漏。"""
-        cfg = load_cfg()
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
         res = run_audit(cfg)
         self.assertGreaterEqual(len(res["external_columns"]), 31)
         unmapped = [c for c in res["external_columns"] if c["tool_source"] == "Other external / manual"]
@@ -64,7 +64,7 @@ class PipelineRobustnessTests(unittest.TestCase):
 
     def test_codebook_academic_metadata_attributes(self):
         """验证 codebook 导出的每一个变量均完备定义了时点约定、缺失处理政策与覆盖状态。"""
-        cfg = load_cfg()
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
         if not WORKBOOK_PATH.exists():
             cfg["workbook_path"] = FIXTURE_WORKBOOK
         variables, summary = build_codebook(cfg)
@@ -109,7 +109,7 @@ class PipelineRobustnessTests(unittest.TestCase):
             wb.save(wb_path)
             wb.close()
 
-            cfg = load_cfg()
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
             cfg["workbook_path"] = wb_path
             res = run_cross_check(cfg, out_dir=tmp_dir)
             self.assertEqual(res["total_companies"], initial_companies + 1)
@@ -118,7 +118,7 @@ class PipelineRobustnessTests(unittest.TestCase):
 
     def test_cross_check_strict_unmapped_column_guard(self):
         """验证 cross_check.py 的 cell 函数拒绝访问未映射的列键，杜绝位置猜测。"""
-        cfg = load_cfg()
+        cfg = load_cfg(config_path=ROOT / "config.yaml")
         book_path = WORKBOOK_PATH if WORKBOOK_PATH.exists() else FIXTURE_WORKBOOK
         wb = openpyxl.load_workbook(book_path, data_only=True)
         ws = wb[cfg["sheet"]]

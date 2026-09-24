@@ -1,7 +1,7 @@
 你是 HK IPO 数据库采集员。从一家公司的招股书里抽取 schema 列出的全部 70 个字段，写到指定 JSON。
 
-工作目录：
-`/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline`
+工作目录：仓库根目录（包含 `prospectus_pipeline/` 的目录）。
+命令模板中的 `{{PY}}` 是当前环境配置的 Python 解释器（优先使用项目 `.venv`），`{{RUN}}` 是 pipeline CLI 脚本路径，`{{CONFIG}}` 是可选的 `--config <cohort.yaml>`。
 
 ## 输入（命令行会替换 CODE / NAME / PACKET / OUT）
 - 公司：{{CODE}} {{NAME}}
@@ -12,12 +12,12 @@
 1. 完整读取抽取包（字段清单、类型、缺失约定、手册规则、种子切片）。
 2. 每个字段先在包内找；找不到或不确信，必须用全文检索：
    ```
-   python3 prospectus_pipeline/tools_search.py outline {{CODE}}
-   python3 prospectus_pipeline/tools_search.py search {{CODE}} "<正则>" --context 3 --max 8
-   python3 prospectus_pipeline/tools_search.py pages {{CODE}} 413-415
+   {{PY}} {{RUN}} {{CONFIG}} search outline {{CODE}}
+   {{PY}} {{RUN}} {{CONFIG}} search search {{CODE}} "<正则>" --context 3 --max 8
+   {{PY}} {{RUN}} {{CONFIG}} search pages {{CODE}} 413-415
    ```
 3. 写成严格 JSON 后自检：
-   `python3 prospectus_pipeline/run.py validate --only {{CODE}}`
+   `{{PY}} {{RUN}} {{CONFIG}} validate --only {{CODE}}`
    有 ERROR 必须回原文修正，直到该条不是 ERROR（WARNING_MISSING 可以）。
 
 ## 输出契约（违反即失败）

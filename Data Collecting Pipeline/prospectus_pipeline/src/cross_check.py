@@ -35,12 +35,32 @@ def parse_val(v: Any) -> Any:
     return v
 
 
-def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False) -> float:
-    """Return the applicable Mechanism A public tranche ratio.
+def to_date_obj(v: Any) -> dt.date | None:
+    if v is None:
+        return None
+    if isinstance(v, dt.datetime):
+        return v.date()
+    if isinstance(v, dt.date):
+        return v
+    if isinstance(v, str):
+        for fmt in ("%d/%m/%y", "%d/%m/%Y", "%Y-%m-%d", "%Y/%m/%d"):
+            try:
+                return dt.datetime.strptime(v.strip(), fmt).date()
+            except ValueError:
+                pass
+    return None
 
-    Chapter 18C.09 modifies Practice Note 18 for specialist technology
-    companies, so their 5%/10%/20% ladder must not be checked against the
-    general post-2025 5%/15%/25%/35% ladder.
+
+REFORM_2025_DATE = dt.date(2025, 8, 4)
+
+
+def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False, listing_date: dt.date | None = None) -> float:
+    """Return the applicable statutory public tranche ratio (PN18 or post-2025 Mechanism A).
+
+    - Chapter 18C.09 modifies PN18 for specialist technology companies (5%/10%/20%).
+    - For offerings prior to the 2025-08-04 pricing reform, classic Practice Note 18 applies
+      (10% base, 30% for 15x-<50x, 40% for 50x-<100x, 50% for >=100x).
+    - For post-2025 Mechanism A, the standard ladder is 5%/15%/25%/35%.
     """
     if is_18c:
         if subscription_multiple < 10:
@@ -48,6 +68,16 @@ def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False)
         if subscription_multiple < 50:
             return 0.10
         return 0.20
+
+    if listing_date and listing_date < REFORM_2025_DATE:
+        if subscription_multiple < 15:
+            return 0.10
+        if subscription_multiple < 50:
+            return 0.30
+        if subscription_multiple < 100:
+            return 0.40
+        return 0.50
+
     if subscription_multiple < 15:
         return 0.05
     if subscription_multiple < 50:
@@ -146,8 +176,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
             continue
 
         name = str(cell(row, "C") or "").strip()
-        listing_date_raw = cell(row, "E")
-        listing_date = listing_date_raw if isinstance(listing_date_raw, dt.date) else None
+        listing_date = to_date_obj(cell(row, "E"))
 
         L = cell(row, "L")       # Total issued shares
         M = cell(row, "M")       # Base global offer (prospectus)
@@ -197,8 +226,8 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
             allocation_base = float(M) if M else float(CS)
             pub_ratio = float(CT) / allocation_base
             cm_val = float(CM)
-            if "Mechanism A" in DN:
-                expected_ratio = mechanism_a_public_ratio(cm_val, is_18c=(BM == 1))
+            if "Mechanism A" in DN or (listing_date and listing_date < REFORM_2025_DATE and "Mechanism B" not in DN):
+                expected_ratio = mechanism_a_public_ratio(cm_val, is_18c=(BM == 1), listing_date=listing_date)
                 # 容许股份整数舍入；偏差较大通常意味着个案豁免或资料口径错误。
                 if abs(pub_ratio - expected_ratio) > 0.015:
                     company_checks.append({
@@ -288,16 +317,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
                     "detail": f"有基石投资者(获配={float(CK)*100:.1f}%)，但最早解禁日为空"
                 })
             elif listing_date:
-                unlock_date = None
-                if isinstance(CL, dt.date):
-                    unlock_date = CL
-                elif isinstance(CL, str):
-                    for fmt in ("%d/%m/%y", "%d/%m/%Y", "%Y-%m-%d"):
-                        try:
-                            unlock_date = dt.datetime.strptime(CL.strip(), fmt).date()
-                            break
-                        except ValueError:
-                            pass
+                unlock_date = to_date_obj(CL)
                 if unlock_date:
                     days_diff = (unlock_date - listing_date).days
                     if days_diff < 175:
@@ -324,16 +344,7 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
         # -------------------------------------------------------------
         BP = cell(row, "BP")
         if BP and listing_date:
-            bp_date = None
-            if isinstance(BP, dt.date):
-                bp_date = BP
-            elif isinstance(BP, str):
-                for fmt in ("%d/%m/%y", "%d/%m/%Y", "%Y-%m-%d"):
-                    try:
-                        bp_date = dt.datetime.strptime(BP.strip(), fmt).date()
-                        break
-                    except ValueError:
-                        pass
+            bp_date = to_date_obj(BP)
             if bp_date and bp_date >= listing_date:
                 company_checks.append({
                     "check": "Incorporation Date",

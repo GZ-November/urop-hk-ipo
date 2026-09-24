@@ -2,9 +2,9 @@
 """第一阶段核心学术衍生变量与 Pre-IPO VC/PE 主表全量工程化富集器。
 
 功能：
-  1. 完整维护 2026 Q1 全量 38 家港股主板 IPO 发行人的 8 个第一阶段核心学术衍生指标；
+  1. 为当前配置工作簿中的发行人计算 8 个第一阶段核心学术衍生指标；
   2. 验证并协同维护已有的 10 个 Pre-IPO VC/PE 细分维度；
-  3. 安全注入 canonical 工作簿 HKIPO-MB2026Q1.xlsx 主表（NLR 表单）：
+  3. 安全注入当前配置工作簿的主表：
      - 自动创建时间戳备份快照；
      - 依据金融学逻辑精确定位插入位置：
        * 询价动态组 (3列): 紧随 Minimum Offer Price (col_U) 之后；
@@ -14,8 +14,8 @@
      - 表头精准应用法定浅蓝主题填充（Theme 4 Tint 0.8）与深蓝填充（RGB FF00B0F0）；
      - 字体规范统一为 Arial 12pt Bold，自动居中换行与边框；
      - 数据单元格精准匹配 0.00%、0.00、#,##0.00 与 @ 格式；
-     - 严谨保证第 138 列恒为 Company Chinese Name；
-  4. 触发 clean CSV 与最新版 138 维 Data Codebook 导出。
+     - 按字段表头核对新增变量，不假设工作簿固定列数或末列位置；
+  4. 使用当前 cohort 配置生成 clean CSV 与 Data Codebook。
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ from typing import Any
 
 import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
-from openpyxl.utils import get_column_letter
+from openpyxl.utils import column_index_from_string, get_column_letter
 
 ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
@@ -46,6 +46,20 @@ from workbook_transaction import commit_prepared_workbook
 
 def norm(s: Any) -> str:
     return " ".join(str(s or "").replace("\n", " ").split()).strip().lower()
+
+
+def academic_header_issues(headers: list[Any]) -> list[str]:
+    """检查新增学术字段各有且仅有一个表头，不依赖固定列数/位置。"""
+    positions: dict[str, list[int]] = {}
+    for idx, header in enumerate(headers, 1):
+        if header not in (None, ""):
+            positions.setdefault(norm(header), []).append(idx)
+    issues = []
+    for field in ACADEMIC_FIELDS:
+        found = positions.get(norm(field["header"]), [])
+        if len(found) != 1:
+            issues.append(f"{field['key']}: expected one '{field['header']}' header, found {found}")
+    return issues
 
 
 # 8 个新增学术变量的规范化定义
@@ -145,9 +159,11 @@ ACADEMIC_FIELDS = [
 ]
 
 
-def inject_academic_derivations() -> Path:
-    """计算 8 个第一阶段学术衍生字段并安全注入到 HKIPO-MB2026Q1.xlsx 主表中。"""
-    book_path = WS / "HKIPO-MB2026Q1.xlsx"
+def inject_academic_derivations(cfg: dict | None = None) -> Path:
+    """计算 8 个第一阶段学术衍生字段并安全注入到当前配置的主表中。"""
+    cfg = cfg or load_cfg()
+    configured_book = Path(cfg["workbook"])
+    book_path = configured_book if configured_book.is_absolute() else Path(cfg["_ws"]) / configured_book
     if not book_path.exists():
         raise FileNotFoundError(f"Workbook not found: {book_path}")
 
@@ -156,7 +172,7 @@ def inject_academic_derivations() -> Path:
 
     # 2. 读取原始数据并进行推导计算
     wb_read = openpyxl.load_workbook(book_path, data_only=True)
-    ws_read = wb_read["NLR"]
+    ws_read = wb_read[cfg.get("sheet", "NLR")]
 
     headers_orig = [ws_read.cell(row=1, column=c).value for c in range(1, ws_read.max_column + 1)]
     hmap_read = {norm(h): i + 1 for i, h in enumerate(headers_orig) if h}
@@ -170,11 +186,11 @@ def inject_academic_derivations() -> Path:
     col_day1_vol = hmap_read[norm("First trading day volume (shares)")]
     col_global_shares = hmap_read[norm("Final global offering shares (before over-allotment)")]
     col_greenshoe_opt = hmap_read[norm("Over-allotment Option (%)")]
-    col_code = hmap_read.get(norm("Stock Code"), 2)
+    col_code = column_index_from_string(cfg["id_columns"]["stock_code"])
     col_greenshoe_issued = hmap_read[norm("Over-allotment shares actually issued")]
 
     derived_data: dict[str, dict[str, Any]] = {}
-    for r in range(2, ws_read.max_row + 1):
+    for r in range(cfg["data_start_row"], ws_read.max_row + 1):
         code = str(ws_read.cell(row=r, column=col_code).value or "").strip()
         if not code:
             continue
@@ -213,12 +229,19 @@ def inject_academic_derivations() -> Path:
 
     # 3. 写入工作簿 (非只读模式)
     wb = openpyxl.load_workbook(book_path)
-    ws = wb["NLR"]
+    ws = wb[cfg.get("sheet", "NLR")]
 
     # 检查是否已经注入过
-    headers_current = [norm(ws.cell(row=1, column=c).value) for c in range(1, ws.max_column + 1)]
-    if norm(ACADEMIC_FIELDS[0]["header"]) in headers_current:
-        print("[Schema] Academic fields already exist in workbook. Updating values in-place.")
+    headers_current = [ws.cell(row=1, column=c).value for c in range(1, ws.max_column + 1)]
+    present = [any(norm(header) == norm(f["header"]) for header in headers_current)
+               for f in ACADEMIC_FIELDS]
+    if all(present):
+        print("[Schema] All academic fields already exist. Updating values in-place.")
+    elif any(present):
+        present_headers = [f["header"] for f, exists in zip(ACADEMIC_FIELDS, present) if exists]
+        missing_headers = [f["header"] for f, exists in zip(ACADEMIC_FIELDS, present) if not exists]
+        raise RuntimeError("Partial academic expansion detected; refusing ambiguous workbook layout. "
+                           f"Present: {present_headers}; missing: {missing_headers}")
     else:
         # 执行逆向安全插入（由右至左插入，保证左侧锚点索引不受影响）
         # 插入规划：
@@ -300,8 +323,9 @@ def inject_academic_derivations() -> Path:
         bottom=Side(style="thin", color="D9D9D9"),
     )
 
-    for r in range(2, 40):
-        code = str(ws.cell(r, 2).value or "").strip()
+    code_col = column_index_from_string(cfg["id_columns"]["stock_code"])
+    for r in range(cfg["data_start_row"], ws.max_row + 1):
+        code = str(ws.cell(r, code_col).value or "").strip()
         if not code or code not in derived_data:
             continue
         c_res = derived_data[code]
@@ -319,18 +343,17 @@ def inject_academic_derivations() -> Path:
             cell.border = thin_border
 
     # 5. 校验工作簿完整性
-    total_cols = ws.max_column
-    last_col_header = ws.cell(1, total_cols).value
-    print(f"[Verification] Total columns: {total_cols}")
-    print(f"[Verification] Last column (Col {total_cols}): {last_col_header}")
-
-    if total_cols != 138:
-        raise ValueError(f"Expected 138 columns after academic expansion, got {total_cols}!")
-    if norm(last_col_header) != norm("Company Chinese Name"):
-        raise ValueError(f"Last column must be 'Company Chinese Name', got '{last_col_header}'!")
+    headers_final = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+    header_issues = academic_header_issues(headers_final)
+    if header_issues:
+        raise ValueError("Academic field headers failed validation: " + "; ".join(header_issues))
+    print(f"[Verification] Validated {len(ACADEMIC_FIELDS)} academic field headers across "
+          f"{ws.max_column} workbook columns.")
 
     commit_prepared_workbook(book_path, wb, source_sha256, operation="academic-expansion")
-    print(f"[Success] Saved updated workbook: {book_path.name} with 138 columns!")
+    print(f"[Success] Saved updated workbook: {book_path.name}.")
+    from codebook import export_all
+    export_all(cfg)
     return book_path
 
 

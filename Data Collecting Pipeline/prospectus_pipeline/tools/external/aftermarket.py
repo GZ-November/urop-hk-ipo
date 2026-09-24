@@ -30,13 +30,17 @@ from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 from market_fetcher import get_market_fetcher
+from run import load_cfg
 
 WS = ROOT.parent
-BOOK = WS / "HKIPO-MB2026Q1.xlsx"
+_cfg = load_cfg()
+_configured_book = Path(_cfg["workbook"])
+BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
 CACHE = ROOT / "data" / "market" / "aftermarket"
 STATUS_OVERRIDES = ROOT / "schema" / "listing_status_overrides.json"
-SHEET = "NLR"
+SHEET = _cfg.get("sheet", "NLR")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 # 新增 23 个字段的标准定义矩阵 (Col 139 - Col 161)

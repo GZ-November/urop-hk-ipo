@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""将 Phase A 学术扩展高价值字段安全写回至主交付物工作簿 (HKIPO-MB2026Q1.xlsx).
+"""将 Phase A 学术扩展高价值字段安全写回至当前配置的主交付物工作簿.
 
 新增字段范围：Col 162 – Col 202 (共 41 个核心学术与微观结构变量)
 分类涵盖：
@@ -35,13 +35,18 @@ sys_src = ROOT / "src"
 import sys
 if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from workbook_transaction import workbook_transaction
 from market_fetcher import parse_bar_date
+from run import load_cfg
 
 OUT_MASTER = ROOT / "out" / "master"
-BOOK_PATH = ROOT.parent / "HKIPO-MB2026Q1.xlsx"
-SHEET = "NLR"
+_cfg = load_cfg()
+_configured_book = Path(_cfg["workbook"])
+BOOK_PATH = _configured_book if _configured_book.is_absolute() else ROOT.parent / _configured_book
+SHEET = _cfg.get("sheet", "NLR")
 
 HEADER_FILL = PatternFill(start_color="FF00B0F0", end_color="FF00B0F0", fill_type="solid")
 HEADER_FONT = Font(name="Arial", size=11, bold=True, color="000000")
@@ -388,12 +393,14 @@ class WorkbookExpansionWriter:
                 col_letter = get_column_letter(col_idx)
                 ws.column_dimensions[col_letter].width = max(len(header) + 3, 14)
 
-            # 2. 逐行写回数据 (Row 2 - Row 39)
+            # 2. 逐行写回数据 (Row 2 - Row ws.max_row)
             written_cells = 0
-            for r in range(2, 40):
+            n_issuers = 0
+            for r in range(2, ws.max_row + 1):
                 code_val = ws.cell(r, 2).value
                 if not code_val:
                     continue
+                n_issuers += 1
                 code_str = str(code_val).strip()
                 if not code_str.endswith(".HK"):
                     digits = "".join(ch for ch in code_str if ch.isdigit())
@@ -419,18 +426,21 @@ class WorkbookExpansionWriter:
 
                     written_cells += 1
 
-            logger.info(f"Successfully populated {written_cells} cells across columns 162-202 (38 issuers)")
+            logger.info(f"Successfully populated {written_cells} cells across columns 162-202 ({n_issuers} issuers)")
 
         print(f"\n=======================================================")
         print(f"Workbook Academic Expansion Complete (Cols 162 - 202)")
         print(f"=======================================================")
         print(f"Target Workbook : {self.book_path}")
         print(f"New Columns     : 41 academic fields added (Col 162 to Col 202)")
-        print(f"Cells Written   : 38 companies × 41 columns = 1,558 data cells")
+        print(f"Cells Written   : {n_issuers} companies × 41 columns = {written_cells} data cells")
         return 0
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    writer = WorkbookExpansionWriter()
+    parser = argparse.ArgumentParser(description="Academic expansion write-back engine")
+    parser.add_argument("--book", default=str(BOOK_PATH), help="Target Excel workbook")
+    args = parser.parse_args()
+    writer = WorkbookExpansionWriter(book_path=Path(args.book))
     sys.exit(writer.write_expansion())

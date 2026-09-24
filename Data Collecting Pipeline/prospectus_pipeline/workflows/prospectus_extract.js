@@ -3,16 +3,23 @@
 // args = {
 //   packets: [{code, name, packet_path, out_path}],
 //   out_dir: "prospectus_pipeline/out/extracted",
-//   verify: true           // 是否跑第二阶段独立复核
+//   verify: true,          // 是否跑第二阶段独立复核
+//   python_executable: ".venv/bin/python",
+//   run_script: "prospectus_pipeline/run.py",
+//   config_path: "prospectus_pipeline/config-2026Q2.yaml"
 // }
 //
 // 设计要点：
 //  - 招股书披露位置不模板化，因此 packet 只是"规则 + 字段清单 + 种子切片"，
-//    代理必须用 tools_search.py 在页级全文里自行检索补齐。
+//    代理必须用 run.py search 在页级全文里自行检索补齐。
 //  - 输出必须严格符合 contracts.py 定义的 JSON 契约；写盘后自行调用 verify 自检。
 
 const packets = (args && args.packets) || [];
 const outDir = (args && args.out_dir) || "prospectus_pipeline/out/extracted";
+const shellArg = (value) => `'${String(value).replace(/'/g, "'\\''")}'`;
+const PY = shellArg((args && args.python_executable) || "python3");
+const RUN = shellArg((args && args.run_script) || "prospectus_pipeline/run.py");
+const CONFIG = args && args.config_path ? ` --config ${shellArg(args.config_path)}` : "";
 const doVerify = !args || args.verify !== false;
 const isTopicMode = !!(args && (args.topics_mode === true || args.topic_packets));
 const topicPackets = (args && args.topic_packets) || [];
@@ -84,9 +91,9 @@ packet 里的切片只是种子，**很多披露并不模板化**。凡是在 pa
 必须用检索工具在全文里自己找：
 
 \`\`\`bash
-python3 prospectus_pipeline/run.py search outline <CODE>                  # 列出每页页首标题，先看结构
-python3 prospectus_pipeline/run.py search search <CODE> "<正则>" --context 3 --max 8
-python3 prospectus_pipeline/run.py search pages <CODE> 413-415           # 导出指定页原文
+${PY} ${RUN}${CONFIG} search outline <CODE>                  # 列出每页页首标题，先看结构
+${PY} ${RUN}${CONFIG} search search <CODE> "<正则>" --context 3 --max 8
+${PY} ${RUN}${CONFIG} search pages <CODE> 413-415           # 导出指定页原文
 \`\`\`
 
 建议检索方向（按需调整正则）：
@@ -117,11 +124,11 @@ function extractPrompt(item) {
 
 ## 允许的工具（只有这五个）
 \`\`\`bash
-python3 prospectus_pipeline/run.py search sharecap ${item.code}    # 必跑！股本汇总表（L/M/N/O/P/Q/R/S 全靠它）
-python3 prospectus_pipeline/run.py search periods  ${item.code}    # 必跑！财务期间判定（19 个财务字段靠它）
-python3 prospectus_pipeline/run.py search bundle   ${item.code}    # 必跑！一次给全部字段候选
-python3 prospectus_pipeline/run.py search pages    ${item.code} 4,90,172
-python3 prospectus_pipeline/run.py search search   ${item.code} "正则" --context 3 --max 5
+${PY} ${RUN}${CONFIG} search sharecap ${item.code}    # 必跑！股本汇总表（L/M/N/O/P/Q/R/S 全靠它）
+${PY} ${RUN}${CONFIG} search periods  ${item.code}    # 必跑！财务期间判定（19 个财务字段靠它）
+${PY} ${RUN}${CONFIG} search bundle   ${item.code}    # 必跑！一次给全部字段候选
+${PY} ${RUN}${CONFIG} search pages    ${item.code} 4,90,172
+${PY} ${RUN}${CONFIG} search search   ${item.code} "正则" --context 3 --max 5
 \`\`\`
 **预算**：上面三个必跑命令之后，最多再调 **15 次**工具。
 
@@ -133,13 +140,12 @@ python3 prospectus_pipeline/run.py search search   ${item.code} "正则" --conte
      绝不能取「历史沿革」「资本化发行沿革」段落里的数字。
    - \`periods\` 给**财务期间判定**：year-1/2/3 各是哪一期、期末日、年化系数。
      **19 个财务字段一律以它的输出为准，不要自己判断期间。**
-     常见坑：招股书有 2022/2023/2024 + 9M2025 时，year-1 是 **9M2025（要年化）**，
-     不是 FY2024；销售/税前利润/净利润按系数年化，AU/AW/AX 不年化，AV/BE 是期末余额，AY 是比例。
+     期间必须严格跟随 \`periods\` 命令的判定结果；不要用固定年份示例覆盖命令输出。只有命令明确判定为非全年期间时，销售/税前利润/净利润才按输出系数年化；AU/AW/AX 不年化，AV/BE 是期末余额，AY 是比例。
    - \`bundle\` 给全部字段各自的候选页。
 3. 对命中不够确定的字段，用 \`pages\` 看那几页原文核实。
 4. 写 JSON（契约见下）。
-5. 跑一次 \`python3 prospectus_pipeline/run.py validate --only ${item.code}\`，有 ERROR 再修。
-6. 校验通过后运行 \`python3 prospectus_pipeline/run.py state extracted --target prospectus --code ${item.code}\`，记录当前 JSON 的哈希。
+5. 跑一次 \`${PY} ${RUN}${CONFIG} validate --only ${item.code}\`，有 ERROR 再修。
+6. 校验通过后运行 \`${PY} ${RUN}${CONFIG} state extracted --target prospectus --code ${item.code}\`，记录当前 JSON 的哈希。
 
 ${TOOLS_HELP}
 ${OUTPUT_CONTRACT}
@@ -155,7 +161,14 @@ ${OUTPUT_CONTRACT}
 7. col_CJ 基石名单必须来自真正的 Cornerstone Investors / Cornerstone Placing 名单表，
    **不要**用目录、豁免段、风险因素里的普通提及；无基石填 \`"NA"\`；用分号分隔全称。
 8. col_AS 上市途径按招股书披露的 basis of listing / 适用章节填（如 Chapter 18C），**不能**按行业推断；col_DP 中文名填简体。
-9. 不确定就填 NaN/NA 并在 quote 里写明原因，**绝对不要猜**；**不要**为了配平等式修改原文数字。`;
+9. **Pre-IPO VC/PE 十个字段（所有 cohort 均适用）**：先检索 \`HISTORY AND DEVELOPMENT — Pre-IPO Investments\`，再用 \`SUBSTANTIAL SHAREHOLDERS\`、股本表和董事章节核对。名单、轮次、持股比例、协议日期必须按该公司自己的招股书取值；严禁从其他公司 JSON、旧 cohort 数据或投资机构常识补值。
+   - \`col_pre_ipo_investors\` 仅列招股书披露的上市前投资者，分号分隔；同一投资者只记一次。
+   - VC、PE、CVC、国资可同时为 1；按投资者/基金性质分类并在各自 quote 中给出该公司披露依据。普通产业股东不自动算 CVC，国资身份不自动等于 VC/PE。
+   - 只有招股书明确披露上市前投资，或可从上市前股东表确认，才填 1。没有找到证据不等于 0；只有披露明确确认无此类投资时填 0，否则填 NaN/NA。
+   - \`col_vc_pe_stake\` 取上市前所有机构投资者持股合计，统一使用紧邻上市前的股权口径，避免把上市后新股或基石配售重复计入；无明确合计时逐项核对并说明计算，不得猜。
+   - 董事席位只在能把董事/观察员与上市前机构投资者明确关联时填 1；最早轮次与持有年限按最早投资协议日期计算至该公司的招股书日期。缺日期则持有年限填 NaN。
+   - 十个字段分别引用支持本字段的页码和连续原文；不得把一条通用 Pre-IPO 引文复制到所有字段。审慎分类或关键日期不确定时留缺失并说明原因。
+10. 不确定就填 NaN/NA 并在 quote 里写明原因，**绝对不要猜**；**不要**为了配平等式修改原文数字。`;
 }
 
 function verifyPrompt(item) {
@@ -177,16 +190,17 @@ function verifyPrompt(item) {
    - AX 资本化开发成本当期新增（注意区分"当期新增"与"期末余额"，\`–\` 应为 0）
    - AY 前五大客户占比的期间是否与 year-1 一致
    - AO/AP/AQ 佣金的基数口径与绿鞋是否按披露
+   - **VC/PE 十字段**：名单、轮次、机构持股比例、分类 flags、董事席位及持有年限是否各自有字段特定引文支持；没有证据是否被错误地填成 0
    - CJ 基石名单是否为真实协议名单（不是目录/豁免段）
    - AR/AS/DP 是否为招股书披露内容、中文名是否简体
 3. 命令参考：
-   \`python3 prospectus_pipeline/run.py search search ${item.code} "<正则>" --context 3 --max 8\`
-   \`python3 prospectus_pipeline/run.py search pages ${item.code} <页码或范围>\`
+   \`${PY} ${RUN}${CONFIG} search search ${item.code} "<正则>" --context 3 --max 8\`
+   \`${PY} ${RUN}${CONFIG} search pages ${item.code} <页码或范围>\`
 
 ## 输出
 只返回结构化结果：verdict 为 pass/fail；discrepancies 列出每个不一致（field、in_file、should_be、page、reason）。
 **不要**修改 JSON 文件本身。若结论为 pass，在返回报告前运行
-\`python3 prospectus_pipeline/run.py state reviewed --target prospectus --code ${item.code} --verdict pass\`；
+\`${PY} ${RUN}${CONFIG} state reviewed --target prospectus --code ${item.code} --verdict pass\`；
 若为 fail 则运行同一命令但使用 \`--verdict fail\`。若发现错误，在 reason 里给出能直接改的正确答案与页码。`;
 }
 
@@ -201,11 +215,11 @@ function extractTopicPrompt(item) {
 
 ## 允许的工具（优先使用结构化表格）
 \`\`\`bash
-python3 prospectus_pipeline/run.py search table   ${item.code}    # 优先！查看预解析结构化表格
-python3 prospectus_pipeline/run.py search sharecap ${item.code}    # 股本表权威原页
-python3 prospectus_pipeline/run.py search periods  ${item.code}    # 财务期间判定
-python3 prospectus_pipeline/run.py search pages    ${item.code} <页码>
-python3 prospectus_pipeline/run.py search search   ${item.code} "<正则>" --context 3 --max 5
+${PY} ${RUN}${CONFIG} search table   ${item.code}    # 优先！查看预解析结构化表格
+${PY} ${RUN}${CONFIG} search sharecap ${item.code}    # 股本表权威原页
+${PY} ${RUN}${CONFIG} search periods  ${item.code}    # 财务期间判定
+${PY} ${RUN}${CONFIG} search pages    ${item.code} <页码>
+${PY} ${RUN}${CONFIG} search search   ${item.code} "<正则>" --context 3 --max 5
 \`\`\`
 
 ## 步骤

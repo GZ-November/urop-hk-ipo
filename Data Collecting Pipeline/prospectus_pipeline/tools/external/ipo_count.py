@@ -10,15 +10,31 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import shutil
+import sys
 from pathlib import Path
 
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
-BOOK = WS / "HKIPO-MB2026Q1.xlsx"
-NLR_FILES = [WS / "sources" / "NLR2025_Eng.xlsx" if (WS / "sources" / "NLR2025_Eng.xlsx").exists() else WS / "NLR2025_Eng.xlsx", WS / "sources" / "NLR2026_Eng.xlsx" if (WS / "sources" / "NLR2026_Eng.xlsx").exists() else WS / "NLR2026_Eng.xlsx"]
-SHEET = "NLR"
+sys.path.insert(0, str(ROOT))
+from run import load_cfg
+
+_cfg = load_cfg()
+_configured_book = Path(_cfg["workbook"])
+BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
+
+
+def get_nlr_files() -> list[Path]:
+    sources_dir = WS / "sources"
+    files = sorted(sources_dir.glob("NLR*.xlsx")) if sources_dir.exists() else []
+    if not files:
+        files = sorted(WS.glob("NLR*.xlsx"))
+    return files or [WS / "sources" / "NLR2025_Eng.xlsx", WS / "sources" / "NLR2026_Eng.xlsx"]
+
+
+NLR_FILES = get_nlr_files()
+SHEET = _cfg.get("sheet", "NLR")
 HEADER = "HK ordinary IPO count in 90 calendar days before prospectus"
 
 

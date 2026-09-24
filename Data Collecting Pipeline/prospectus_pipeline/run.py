@@ -26,13 +26,24 @@ WS = ROOT.parent                                # 工作簿所在目录
 sys.path.insert(0, str(ROOT / "src"))
 
 
-def load_cfg(workbook_override: str | None = None) -> dict:
-    with open(ROOT / "config.yaml") as f:
+def load_cfg(workbook_override: str | None = None, config_path: str | Path | None = None) -> dict:
+    """Load the selected cohort configuration.
+
+    PIPELINE_CONFIG selects a separate config file for parallel cohorts while
+    preserving config.yaml as the default for existing installations.
+    """
+    selected_config = Path(config_path or os.environ.get("PIPELINE_CONFIG") or ROOT / "config.yaml").expanduser()
+    if not selected_config.is_absolute():
+        selected_config = (Path.cwd() / selected_config).resolve()
+    if not selected_config.is_file():
+        raise FileNotFoundError(f"Pipeline config not found: {selected_config}")
+    with open(selected_config, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     if workbook_override:
         cfg["workbook"] = workbook_override
     cfg["_root"] = ROOT
     cfg["_ws"] = WS
+    cfg["_config_path"] = selected_config
     for k, v in cfg["paths"].items():
         p = WS / v
         p.mkdir(parents=True, exist_ok=True)
@@ -243,13 +254,33 @@ def cmd_status(cfg, args, companies):
 
 def cmd_search(cfg, args, companies):
     import subprocess
-    cmd = [sys.executable, str(ROOT / "tools" / "search.py")] + sys.argv[2:]
+    forwarded = sys.argv[2:]
+    for option in ("--config", "--workbook"):
+        index = 0
+        while index < len(forwarded):
+            if forwarded[index] == option:
+                del forwarded[index:min(index + 2, len(forwarded))]
+            elif forwarded[index].startswith(option + "="):
+                del forwarded[index]
+            else:
+                index += 1
+    cmd = [sys.executable, str(ROOT / "tools" / "search.py")] + forwarded
     return subprocess.call(cmd, cwd=WS)
 
 
 def cmd_state(cfg, args, companies):
     import subprocess
-    cmd = [sys.executable, str(ROOT / "tools" / "state.py")] + sys.argv[2:]
+    forwarded = sys.argv[2:]
+    for option in ("--config", "--workbook"):
+        index = 0
+        while index < len(forwarded):
+            if forwarded[index] == option:
+                del forwarded[index:min(index + 2, len(forwarded))]
+            elif forwarded[index].startswith(option + "="):
+                del forwarded[index]
+            else:
+                index += 1
+    cmd = [sys.executable, str(ROOT / "tools" / "state.py")] + forwarded
     return subprocess.call(cmd, cwd=WS)
 
 
@@ -330,9 +361,14 @@ def main() -> int:
     ap.add_argument("--fill-missing", action="store_true",
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--workbook", default=None,
-                    help="指定/覆盖目标工作簿文件名，例如 HKIPO-MB2026Q1.xlsx")
+                    help="指定/覆盖目标工作簿路径")
+    ap.add_argument("--config", default=None,
+                    help="指定 cohort 配置文件；也可用 PIPELINE_CONFIG 环境变量")
     args, extra = ap.parse_known_args()
     args.extra = (args.extra or []) + extra
+
+    if args.config:
+        os.environ["PIPELINE_CONFIG"] = str(Path(args.config).expanduser().resolve())
 
     if args.stage in ("search", "state"):
         return globals()[f"cmd_{args.stage}"](None, args, None)

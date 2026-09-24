@@ -39,8 +39,17 @@ def cells_digest(ws, addresses):
 
 
 def state_dir(cfg):
-    return Path(cfg.get("state_dir") or os.environ.get("PIPELINE_STATE_DIR")
-                or cfg["_root"] / ".pipeline_state")
+    explicit = cfg.get("state_dir") or os.environ.get("PIPELINE_STATE_DIR")
+    if explicit:
+        explicit_path = Path(explicit)
+        return explicit_path if explicit_path.is_absolute() else Path(cfg["_ws"]) / explicit_path
+    base = Path(cfg["_root"]) / ".pipeline_state"
+    selected_config = Path(cfg.get("_config_path", Path(cfg["_root"]) / "config.yaml")).resolve()
+    default_config = (Path(cfg["_root"]) / "config.yaml").resolve()
+    if selected_config != default_config:
+        dataset_id = cfg.get("dataset", {}).get("id") or selected_config.stem
+        return base / str(dataset_id)
+    return base
 
 
 def record_path(cfg, target, code, stage):

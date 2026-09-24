@@ -37,14 +37,14 @@ class CrossCheckTests(unittest.TestCase):
             wb.save(broken)
             wb.close()
 
-            cfg = load_cfg()
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
             cfg["workbook_path"] = broken
             with self.assertRaisesRegex(KeyError, "refusing positional fallback"):
                 run_cross_check(cfg, out_dir=tmp_dir)
 
     def test_run_cross_check_with_mock_fixture(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            cfg = load_cfg()
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
             cfg["workbook_path"] = FIXTURE_WORKBOOK
             result = run_cross_check(cfg, out_dir=tmp_dir)
             self.assertEqual(result["total_companies"], 2)
@@ -57,7 +57,9 @@ class CrossCheckTests(unittest.TestCase):
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_run_cross_check_all_companies(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            result = run_cross_check(out_dir=tmp_dir)
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
+            cfg["workbook_path"] = WORKBOOK_PATH
+            result = run_cross_check(cfg, out_dir=tmp_dir)
             self.assertEqual(result["total_companies"], 38)
             self.assertEqual(result["clean_companies"], 38)
             self.assertEqual(result["total_anomalies"], 0)
@@ -66,7 +68,9 @@ class CrossCheckTests(unittest.TestCase):
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_run_cross_check_single_company(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            result = run_cross_check(only=["6082.HK"], out_dir=tmp_dir)
+            cfg = load_cfg(config_path=ROOT / "config.yaml")
+            cfg["workbook_path"] = WORKBOOK_PATH
+            result = run_cross_check(cfg, only=["6082.HK"], out_dir=tmp_dir)
             self.assertEqual(result["total_companies"], 1)
             self.assertEqual(result["clean_companies"], 1)
             self.assertEqual(result["results"][0]["code"], "6082.HK")

@@ -23,12 +23,13 @@ import sys
 from pathlib import Path
 
 import openpyxl
-import yaml
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 from contracts import normalize_code  # noqa: E402
+from run import load_cfg  # noqa: E402
 
 SYSTEM = "HSICS (Hang Seng Industry Classification System) 2026"
 
@@ -70,7 +71,7 @@ from workbook_transaction import workbook_transaction
 
 
 def main() -> int:
-    cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    cfg = load_cfg()
     ap = argparse.ArgumentParser(description="Map and inject HSICS codes")
     ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
     ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
@@ -80,9 +81,9 @@ def main() -> int:
     book = Path(args.book)
     dry = args.dry_run
 
-    hsic = json.loads((ROOT / "out" / "hsic.json").read_text(encoding="utf-8"))
+    hsic = json.loads((cfg["paths"]["out"] / "hsic.json").read_text(encoding="utf-8"))
     tax = {r["code"]: r for r in json.loads(
-        (ROOT / "data" / "manual" / "hsics.json").read_text(encoding="utf-8"))}
+        (cfg["paths"]["data"] / "manual" / "hsics.json").read_text(encoding="utf-8"))}
 
     missing_map = sorted({v["hsic_sub"] for v in hsic.values()
                           if v.get("hsic_sub") and v["hsic_sub"] not in HSIC_EN2CODE})
@@ -137,7 +138,7 @@ def main() -> int:
         print(f"{code:9s} {c6:9s} {str(t.get('category'))[:28]:30s} "
               f"{str(t.get('name'))[:26]:28s} {t.get('industry')}")
 
-    outj = ROOT / "out" / "hsic_codes.json"
+    outj = cfg["paths"]["out"] / "hsic_codes.json"
     outj.write_text(json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
                     encoding="utf-8")
     print(f"\n定码 {n} 家 -> {outj}")

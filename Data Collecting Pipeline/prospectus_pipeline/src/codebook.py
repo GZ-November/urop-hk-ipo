@@ -2,7 +2,7 @@
 """HK IPO 学术研究级变量字典（Codebook）与纯净 CSV 导出引擎。
 
 功能：
-  1. 完整解析 HKIPO-MB2026Q1.xlsx 交付物（161 列 × 38 家公司）；
+  1. 完整解析当前配置的工作簿（变量数与样本量按工作簿动态识别）；
   2. 自动识别三色数据层级：
      - 浅绿（A–K，11 列）：香港交易所新上市报告官方基础信息；
      - 浅蓝（L–AY, DP, CJ, BA–CI，60 列）：招股书全量披露指标；
@@ -11,9 +11,9 @@
   3. 变量类型智能推断（Numeric / Date / Boolean / Categorical / Text）；
   4. 计算样本统计量（有效样本量、填报率、均值、中位数、标准差、分位数、极值范围、分类频数）；
   5. 导出：
-     - out/HKIPO-MB2026Q1_clean.csv (UTF-8 with BOM, compatible with Stata, Python pandas, and Excel);
-     - out/HKIPO_2026Q1_Codebook.md (学术数据变量字典，供论文附录与导师汇报)；
-     - out/HKIPO_2026Q1_Codebook.json (结构化机器可读变量元数据)。
+     - cohort-specific clean CSV (UTF-8 with BOM, compatible with Stata, Python pandas, and Excel);
+     - cohort-specific Markdown codebook;
+     - cohort-specific machine-readable JSON codebook.
 """
 from __future__ import annotations
 
@@ -667,7 +667,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         })
 
 
-    cohort_str = cfg.get("dataset", {}).get("cohort", "2026 Q1") if cfg else "2026 Q1"
+    cohort_str = cfg.get("dataset", {}).get("cohort", "IPO cohort") if cfg else "IPO cohort"
     summary = {
         "dataset_name": f"HK IPO Main Board {cohort_str} Full Dataset",
         "cohort": cohort_str,
@@ -689,7 +689,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
 def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Path:
     """导出格式规整、无编码歧义的 UTF-8-BOM CSV 文件。"""
     if out_path is None:
-        out_path = ROOT / "out" / "HKIPO-MB2026Q1_clean.csv"
+        out_path = ROOT / "out" / "HKIPO_clean.csv"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     n_rows = variables[0]["stats"]["valid_n"] + variables[0]["stats"]["missing_n"]
@@ -721,8 +721,8 @@ def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Pat
 
 def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """生成详尽的学术计量级数据变量代码本（Markdown 格式）。"""
-    cohort = summary.get("cohort", "2026 Q1")
-    wb_name = summary.get("workbook_name", "HKIPO-MB2026Q1.xlsx")
+    cohort = summary.get("cohort", "IPO cohort")
+    wb_name = summary.get("workbook_name", "workbook.xlsx")
     sheet_name = summary.get("sheet", "NLR")
     if out_path is None:
         tag = cohort.replace(" ", "")
@@ -790,7 +790,7 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
 def generate_codebook_json(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """导出结构化 JSON 格式代码本供 Agent 或 API 调用。"""
     if out_path is None:
-        out_path = ROOT / "out" / "HKIPO_2026Q1_Codebook.json"
+        out_path = ROOT / "out" / "HKIPO_Codebook.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     payload = {
@@ -806,9 +806,9 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     if cfg is None:
         cfg = load_cfg()
     variables, summary = build_codebook(cfg)
-    cohort = summary.get("cohort", "2026 Q1")
+    cohort = summary.get("cohort", "IPO cohort")
     tag = cohort.replace(" ", "")
-    dataset_id = cfg.get("dataset", {}).get("id", "HKIPO-MB2026Q1") if cfg else "HKIPO-MB2026Q1"
+    dataset_id = cfg.get("dataset", {}).get("id", Path(cfg["workbook"]).stem) if cfg else "HKIPO"
 
     csv_name = f"{dataset_id}_clean.csv"
     md_name = f"HKIPO_{tag}_Codebook.md"

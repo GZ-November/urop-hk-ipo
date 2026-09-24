@@ -1,6 +1,6 @@
 # HK IPO Prospectus & Allotment Pipeline (v2.0)
 
-Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings (60 prospectus fields, 18 allotment fields, and 114 external market/macro/academic expansion fields, totaling 202 variables; plus multi-year master sample panel architecture).
+Automated and semi-automated extraction, deterministic validation, semantic verification, and cryptographic hash-gated write-back toolkit for Hong Kong Main Board IPO filings (70 prospectus fields, 18 allotment fields, and 114 external market/macro/academic expansion fields, totaling 202 variables; plus multi-year master sample panel architecture).
 
 ---
 
@@ -65,11 +65,11 @@ prospectus_pipeline/
 │       └── hsic_codes.py           # Hang Seng Industry Classification (HSIC) codes
 │
 ├── schema/                         # Contract schemas
-│   ├── fields.json                 # 60 prospectus field specifications
+│   ├── fields.json                 # 70 prospectus field specifications
 │   ├── allot_fields.json           # 18 allotment field specifications
 │   └── relational_schemas.json     # Strict JSON Schema for 8 master relational & event tables
 │
-├── tests/                          # Portable unit, integration, and production acceptance tests (85/85 Passed)
+├── tests/                          # Portable unit, integration, and production acceptance tests
 │   ├── test_audit_excel.py         # Read-only Excel audit, null-equivalence, and float tolerance
 │   ├── test_cross_check.py         # Cross-field rules, Chapter 18C valuation, and clawbacks
 │   ├── test_report.py              # Report aggregation and markdown generation
@@ -79,7 +79,7 @@ prospectus_pipeline/
 │   └── test_pipeline_robustness.py # Dynamic column resolution, 100% audit mapping, codebook metadata
 │
 └── workflows/                      # Extraction and review workflow definitions
-    ├── prospectus_extract.js       # Prospectus 70-field extraction workflow
+    ├── prospectus_extract.js       # Cohort-configured prospectus extraction workflow
     └── allot_extract.js            # Allotment results extraction workflow
 ```
 
@@ -91,6 +91,18 @@ Execute commands from `Data Collecting Pipeline`:
 
 ```bash
 cd "Data Collecting Pipeline"
+```
+
+### Collecting another quarter
+
+`config.yaml` is the Q1 reference configuration; the extraction code does not encode a quarter. Copy the configuration for each cohort, then set its workbook, cohort metadata, date window, expected sample size, and cohort-specific `paths`/`state_dir`. Keep the workbook headers compatible with the shared schema. Select that config with `--config` or `PIPELINE_CONFIG` for **every** stage so prepare, search, validation, state, write-back, export, and VC/PE reporting use the same cohort.
+
+```bash
+cp prospectus_pipeline/config.yaml prospectus_pipeline/config-2026Q2.yaml
+# Edit config-2026Q2.yaml with the new workbook, dataset fields, and isolated paths.
+python3 prospectus_pipeline/run.py prepare --config prospectus_pipeline/config-2026Q2.yaml
+python3 prospectus_pipeline/run.py validate --config prospectus_pipeline/config-2026Q2.yaml
+python3 prospectus_pipeline/run.py write --config prospectus_pipeline/config-2026Q2.yaml
 ```
 
 ### 1. Status, Audit, Cross-Check, and Export

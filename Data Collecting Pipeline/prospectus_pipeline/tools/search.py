@@ -16,13 +16,14 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent if Path(__file__).resolve().parent.name == "tools" else Path(__file__).resolve().parent
-TEXT_DIR = ROOT / "data" / "text"
+sys.path.insert(0, str(ROOT))
 
 # 每个字段的定位锚点。bundle 命令一次把全部字段的候选原文吐出来，
 # 目的是把「十几次 search 往返」压成「一次调用」，从而砍掉大量轮数与 token。
@@ -181,9 +182,6 @@ YEAR_A = re.compile(r"year\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.
 YEAR_B = re.compile(r"year\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
 YEAR_C = re.compile(r"years?\s+ended\s+December\s+31,?\s+(20\d\d),\s*(20\d\d)\s+and\s+(20\d\d)", re.I)
 YEAR_D = re.compile(r"years?\s+ended\s+31\s+December\s+(20\d\d),\s*(20\d\d)\s+and\s+(20\d\d)", re.I)
-MAX_YEAR = 2026
-
-
 def detect_periods(pages: list[dict]) -> dict:
     """确定性判定 Track Record Period。
 
@@ -194,6 +192,7 @@ def detect_periods(pages: list[dict]) -> dict:
     stubs: dict[tuple[int, int], str] = {}
     stub_days: dict[tuple[int, int], int] = {}
     years: set[int] = set()
+    max_year = dt.date.today().year
     body = pages[:500] + pages[-500:]
     # 只在真正的报表页里认中期：表头口径才作数，
     # 后续事项/季度比较里的偶然提法不算。
@@ -216,14 +215,14 @@ def detect_periods(pages: list[dict]) -> dict:
         for rx, gi in ((YEAR_A, 3), (YEAR_B, 3)):
             for m in rx.finditer(t):
                 yr = int(m.group(gi))
-                if yr <= MAX_YEAR:
+                if yr <= max_year:
                     years.add(yr)
         for rx in (YEAR_C, YEAR_D):
             for m in rx.finditer(t):
                 for g in m.groups():
-                    if int(g) <= MAX_YEAR:
+                    if int(g) <= max_year:
                         years.add(int(g))
-    stubs = {k: v for k, v in stubs.items() if k[0] <= MAX_YEAR}
+    stubs = {k: v for k, v in stubs.items() if k[0] <= max_year}
     # 统计每个中期的出现次数：Track Record 的中期会在每个表头反复出现，
     # 后续事项/季度比较里的偶然提法只出现一两次。
     freq: dict[tuple[int, int], int] = {}
@@ -237,7 +236,7 @@ def detect_periods(pages: list[dict]) -> dict:
                 else:
                     mon, yr = g[1], int(g[3])
                 key = (yr, MONTHS[mon.lower()])
-                if yr <= MAX_YEAR:
+                if yr <= max_year:
                     freq[key] = freq.get(key, 0) + 1
     return {"stubs": sorted((y, mo, lab) for (y, mo), lab in stubs.items()),
             "years": sorted(years), "freq": freq, "stub_days": stub_days}
@@ -254,7 +253,16 @@ def cmd_periods(args):
     print("# 招股书出现的中期与年度")
     print(f"  中期: {[f'{l}@{m:02d}' for y, m, l in stubs] or '无'}")
     print(f"  年度: {years or '无'}")
-    if stubs:
+    # A complete annual period supersedes a stray interim-period mention from
+    # the same or an earlier year (for example, an incorporation-history note).
+    latest_stub_year = max((y for y, _, _ in stubs), default=None)
+    latest_full_year = max(years, default=None)
+    use_stub = bool(stubs) and not (
+        latest_full_year is not None
+        and latest_stub_year is not None
+        and latest_full_year >= latest_stub_year
+    )
+    if use_stub:
         freq = d.get("freq") or {}
         # Track Record Period 应取报表覆盖的最新中期。频次只用于显示诊断，
         # 不能让重复出现较多的旧比较期覆盖更新期间。
@@ -263,9 +271,14 @@ def cmd_periods(args):
         if freq:
             print("  （各中期出现次数：" +
                   ", ".join(f"{lab}@{mo:02d}x{freq.get((y, mo), 0)}" for y, mo, lab in stubs) + "）")
-        n = int("".join(c for c in label if c.isdigit()))
         months = int(label.split("M")[0])
         factor = 12 / months
+        prior_years = {sy - 1, sy - 2}
+        missing_years = sorted(prior_years - set(years))
+        if missing_years:
+            print(f"\n# 无法判定：{label} 前缺少已检出的完整年度 "
+                  f"{', '.join(f'FY{y}' for y in missing_years)}；请核对报表页")
+            return
         print(f"\n# 判定：year-1 = {label}（期末 {sm:02d}/{sy}）；"
               f"year-2 = FY{sy-1}；year-3 = FY{sy-2}")
         if day is None:
@@ -275,9 +288,18 @@ def cmd_periods(args):
         print(f"  年化：销售/税前/净利 ×{factor:.4g}（{months} 个月 -> 12 个月）；"
               f"AU/AW/AX/AY/AV 一律不年化")
     else:
-        ly = max(y for y in years if y <= MAX_YEAR)
-        print(f"\n# 判定：均为完整年度 -> year-1 = FY{ly}；year-2 = FY{ly-1}；year-3 = FY{ly-2}")
-        print(f"  col_AT = 31/12/{str(ly)[2:]}")
+        # Never manufacture comparison periods by subtracting from the latest
+        # year: all three years must have been found in the prospectus.
+        ordered_years = sorted(years)
+        latest_three = ordered_years[-3:]
+        if len(latest_three) < 3 or any(
+            later - earlier != 1 for earlier, later in zip(latest_three, latest_three[1:])
+        ):
+            print("\n# 无法判定：未检出连续的三个完整年度；请核对报表页")
+            return
+        y3, y2, y1 = latest_three
+        print(f"\n# 判定：均为完整年度 -> year-1 = FY{y1}；year-2 = FY{y2}；year-3 = FY{y3}")
+        print(f"  col_AT = 31/12/{str(y1)[2:]}")
         print("  不年化（均为全年）")
 
 
@@ -474,7 +496,8 @@ def main() -> int:
 
 def text_path(code: str) -> Path:
     digits = "".join(c for c in str(code) if c.isdigit())
-    return TEXT_DIR / f"HKIPO-MB{int(digits):04d}.jsonl"
+    from run import load_cfg
+    return load_cfg()["paths"]["text"] / f"HKIPO-MB{int(digits):04d}.jsonl"
 
 
 def load(code: str) -> list[dict]:

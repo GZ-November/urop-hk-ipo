@@ -258,7 +258,7 @@ def print_status(rows: list[dict]) -> None:
 
     if (len(cells_p) == total and len(val_p) == total and len(rev_p) == total and len(align_p) == total
             and len(cells_a) == total and len(align_a) == total):
-        print("★ 全流程完备：全量 38 家公司 70 字段招股书 + 配发结果均已验证、复核且与 Excel 严格对齐！")
+        print(f"★ 全流程完备：全量 {total} 家公司 70 字段招股书 + 配发结果均已验证、复核且与 Excel 严格对齐！")
 
 
 def run_py(args: list[str]) -> int:

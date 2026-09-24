@@ -8,5 +8,15 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
 PIPELINE_DIR="${REPO_ROOT}/Data Collecting Pipeline"
 
+if [[ -z "${PYTHON_BIN:-}" ]]; then
+  if [[ -x "${REPO_ROOT}/.venv/bin/python" ]]; then
+    PYTHON_BIN="${REPO_ROOT}/.venv/bin/python"
+  elif [[ -x "${PIPELINE_DIR}/.venv/bin/python" ]]; then
+    PYTHON_BIN="${PIPELINE_DIR}/.venv/bin/python"
+  else
+    PYTHON_BIN="python3"
+  fi
+fi
+
 cd "${PIPELINE_DIR}"
-exec python3 prospectus_pipeline/run.py "$@"
+exec "${PYTHON_BIN}" prospectus_pipeline/run.py "$@"

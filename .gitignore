@@ -37,7 +37,7 @@ htmlcov/
 # ==============================================================================
 *.xlsx
 !Data Collecting Pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
-!Data Collecting Pipeline/HKIPO-MB2026Q1.xlsx
+!Data Collecting Pipeline/HKIPO-MB20*.xlsx
 !Data Collecting Pipeline/templates/*.xlsx
 *.xls
 *.xlsm
@@ -50,6 +50,8 @@ htmlcov/
 **/sources/
 **/backups/
 **/archive/
+!Data Collecting Pipeline/prospectus_pipeline/schema/archive/
+!Data Collecting Pipeline/prospectus_pipeline/schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json
 **/docs/
 Survey Paper/
 

@@ -1,9 +1,8 @@
 {
-  "workbook": "HKIPO-MB2026Q1.xlsx",
   "sheet": "NLR",
   "header_row": 1,
   "field_count": 70,
-  "note": "Prospectus-derived fields. Columns resolved by normalized header at runtime. Layout: green A:K (HKEx) / blue (prospectus) / dark-blue FF00B0F0 (must search elsewhere); Chinese name stays the last column.",
+  "note": "Cohort-independent prospectus field definitions. The target workbook is selected by the active pipeline config; fields resolve by normalized header at runtime. The col keys are historical identifiers, not authoritative workbook positions.",
   "groups": [
     "business",
     "chinese_name",
@@ -822,7 +821,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "早期/成长期风险投资（VC）机构入股标识（1=是，0=否）。",
+      "hint": "只根据本公司招股书披露的上市前投资判定。早期/成长期专业风险投资基金为 1；未找到证据不等于 0，无法确认时填 NaN。分类依据须在本字段 quote 中体现。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -837,7 +836,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "中晚期私募股权（PE）或并购基金入股标识（1=是，0=否）。",
+      "hint": "只根据本公司招股书披露的上市前投资判定。中晚期私募股权基金或并购基金为 1；未找到证据不等于 0，无法确认时填 NaN。分类依据须在本字段 quote 中体现。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -852,7 +851,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "产业资本/企业风投（CVC）入股标识（1=是，0=否）。",
+      "hint": "只根据本公司招股书披露的上市前投资判定。发行人产业股东须有战略投资/企业风投关系依据才归 CVC；普通产业股东不能自动算 CVC。无法确认时填 NaN。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -867,7 +866,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "国资/政府产业引导基金入股标识（1=是，0=否）。",
+      "hint": "只根据本公司招股书披露的上市前投资判定。有明确国资、政府或产业引导基金背景的机构为 1；国资身份不自动代表 VC/PE。无法确认时填 NaN。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -882,7 +881,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "顶级知名投资机构认证标识（1=是，0=否）。",
+      "hint": "仅在本公司招股书确认一线知名 VC/PE 机构持有重要股权或领投时填 1；不得仅凭机构知名度推断其参与本公司投资。无法确认时填 NaN。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -897,7 +896,7 @@
       "unit": "text",
       "source": "prospectus",
       "missing": "NA",
-      "hint": "上市前主要机构投资者规范化名称名单（分号分隔）。",
+      "hint": "仅列本公司招股书披露的上市前投资者，采用一致的英文全称/拼音并以分号分隔；同一投资者只记一次，不从其他 cohort 补名单。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -912,7 +911,7 @@
       "unit": "decimal",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "上市前机构投资者合计持股比例（小数或百分比）。",
+      "hint": "上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -928,7 +927,7 @@
       "unit": "flag",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "机构投资者是否在董事会派驻非执行董事或观察员席位（1=是，0=否）。",
+      "hint": "只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -944,7 +943,7 @@
       "unit": "text",
       "source": "prospectus",
       "missing": "NA",
-      "hint": "最早 Pre-IPO 投资轮次（如 Angel, Series Pre-A, Series A, Series B, Pre-IPO, None）。",
+      "hint": "从本公司招股书披露的 Pre-IPO 投资轮次中取最早一轮，保留披露的标准轮次名称；只有明确说明没有外部上市前投资时填 None，否则无法确认时 NA。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",
@@ -959,7 +958,7 @@
       "unit": "years",
       "source": "prospectus",
       "missing": "NaN",
-      "hint": "最早 Pre-IPO 协议签订日至招股书日期的持有年限（年）。",
+      "hint": "从最早 Pre-IPO 投资协议日期至本公司招股书日期计算年数，保留两位小数；起始日期无法确认则 NaN。每家公司必须使用自己的招股书日期，不沿用其他季度日期。",
       "section_keywords": [
         "Pre-IPO Investment",
         "Pre-IPO Investors",

@@ -3,6 +3,8 @@
 // args 二选一：
 //   { codes: ["6082.HK", "0100.HK", ...], verify: true }        ← 推荐，路径自动推导
 //   { packets: [{code, name, packet_path, out_path}], verify }   ← 显式指定
+//   可选 python_executable / run_script / config_path，用于指定环境、入口和 cohort。
+//   使用自定义 paths 时，传入 packet_dir 和 out_dir。
 //
 // 与招股书流程的区别：公告只有 12–50 页，packet 里**已经是全文**，
 // 代理不需要切片检索；重点是「最终值 vs 初始值」的口径与基石/回拨的核对。
@@ -10,19 +12,25 @@
 function buildPackets(a) {
   if (a && Array.isArray(a.packets) && a.packets.length) return a.packets;
   const codes = (a && a.codes) || [];
+  const packetDir = (a && a.packet_dir) || "prospectus_pipeline/data/allot/packets";
+  const outDir = (a && a.out_dir) || "prospectus_pipeline/out/allot/extracted";
   return codes.map((code) => {
     const digits = String(code).replace(/[^0-9]/g, "");
     const safe = "HKIPO-MB" + digits;
     return {
       code,
       name: "",
-      packet_path: `prospectus_pipeline/data/allot/packets/${safe}.md`,
-      out_path: `prospectus_pipeline/out/allot/extracted/${safe}.json`
+      packet_path: `${packetDir}/${safe}.md`,
+      out_path: `${outDir}/${safe}.json`
     };
   });
 }
 
 const packets = buildPackets(args);
+const shellArg = (value) => `'${String(value).replace(/'/g, "'\\''")}'`;
+const PY = shellArg((args && args.python_executable) || "python3");
+const RUN = shellArg((args && args.run_script) || "prospectus_pipeline/run.py");
+const CONFIG = args && args.config_path ? ` --config ${shellArg(args.config_path)}` : "";
 const doVerify = !args || args.verify !== false;
 if (!packets.length) throw new Error("args.codes 或 args.packets 为空");
 
@@ -80,10 +88,10 @@ function extractPrompt(item) {
 1. 完整读取抽取包。**全文就在包里**，不需要去别处检索。
 2. 逐字段确定「值、页码、原文短摘录、置信度」。页码用包内的 \`<<<PAGE n>>>\` 编号。
 3. 写成严格 JSON 后，先运行确定性派生，再运行自检并修到通过：
-   \`python3 prospectus_pipeline/run.py derive_allot --only ${item.code}\`
-   \`python3 prospectus_pipeline/run.py validate --target allot --only ${item.code}\`
+   \`${PY} ${RUN}${CONFIG} derive_allot --only ${item.code}\`
+   \`${PY} ${RUN}${CONFIG} validate --target allot --only ${item.code}\`
    若有 errors，回到原文修正后重跑，直到该条不是 ERROR。
-4. 校验通过后运行 \`python3 prospectus_pipeline/run.py state extracted --target allot --code ${item.code}\`，记录当前 JSON 的哈希。
+4. 校验通过后运行 \`${PY} ${RUN}${CONFIG} state extracted --target allot --code ${item.code}\`，记录当前 JSON 的哈希。
 
 ## 输出契约（机器校验，违反即失败）
 
@@ -139,7 +147,7 @@ function verifyPrompt(item) {
 只返回结构化结果：verdict 为 pass/fail；discrepancies 列出不一致项
 （field、in_file、should_be、page、reason），reason 里给出可直接采用的正确答案与页码。
 **不要**修改 JSON 文件。若结论为 pass，在返回报告前运行
-\`python3 prospectus_pipeline/run.py state reviewed --target allot --code ${item.code} --verdict pass\`；
+\`${PY} ${RUN}${CONFIG} state reviewed --target allot --code ${item.code} --verdict pass\`；
 若为 fail 则运行同一命令但使用 \`--verdict fail\`。`;
 }
 

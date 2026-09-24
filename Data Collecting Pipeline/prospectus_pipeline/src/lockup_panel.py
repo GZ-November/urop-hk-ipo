@@ -284,7 +284,7 @@ class LockupPanelEngine:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     from market_panel import load_issuers
-    issuers = load_issuers(focus_2026q1_only=True)
+    issuers = load_issuers(use_master_cache=False)
     engine = LockupPanelEngine()
     out = engine.run(issuers)
     print(f"\nLockup Panel Complete: {out}")

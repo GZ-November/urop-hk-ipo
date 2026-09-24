@@ -114,7 +114,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         return v
 
     data = []
-    for r in range(cfg["data_start_row"], cfg["data_start_row"] + 38):
+    for r in range(cfg["data_start_row"], ws.max_row + 1):
         code = str(cell(r, "B") or "").strip()
         if not code:
             continue
@@ -287,7 +287,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         f"| **发行人中位数募资额** | **HK$ {median_proceeds:,.0f}** | 中位数约 **{median_proceeds/1e8:.2f} 亿港元** |",
         f"| **上市总市值总额** | **HK$ {total_market_cap:,.0f}** | {n_companies} 家总市值约 **{total_market_cap/1e8:.2f} 亿港元** |",
         "\n---",
-        "\n## 二、行业分布与产业结构 (HSICS 2026)",
+        "\n## 二、行业分布与产业结构 (HSICS 恒生行业分类)",
         "\n### 1. 门类行业分布",
         "\n| 恒生行业门类 | 公司家数 | 占比 | 代表公司 |",
         "|---|---|---|---|"

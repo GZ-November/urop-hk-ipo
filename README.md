@@ -119,6 +119,40 @@ make export
 make lint
 ```
 
+### Use a different IPO cohort
+
+The checked-in `prospectus_pipeline/config.yaml` describes the 2026 Q1 reference dataset. For another quarter, copy it to a cohort-specific config and update `workbook`, `dataset` metadata, date bounds, and any cohort-specific paths. Keep the workbook schema and column headers compatible with the pipeline.
+
+```bash
+cp "Data Collecting Pipeline/prospectus_pipeline/config.yaml" \
+   "Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml"
+# Edit config-2026Q2.yaml: workbook, dataset.id, dataset.cohort,
+# period_start, period_end, expected_companies, and paths.
+# Also set a cohort-specific state_dir, e.g. prospectus_pipeline/.state/2026Q2.
+
+PIPELINE_CONFIG="Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml" \
+  .venv/bin/python "Data Collecting Pipeline/prospectus_pipeline/run.py" status
+
+# Or set --config for one command:
+.venv/bin/python "Data Collecting Pipeline/prospectus_pipeline/run.py" \
+  prepare --config "Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml"
+```
+
+The 10 Pre-IPO VC/PE fields are part of the shared prospectus schema and are collected from each cohort's own prospectus packets. Continue with the normal `validate` and `write` stages using the same cohort config. To review VC/PE extraction coverage and evidence before write-back:
+
+```bash
+.venv/bin/python "Data Collecting Pipeline/prospectus_pipeline/tools/vc_pe_enricher.py" \
+  status --config "Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml"
+.venv/bin/python "Data Collecting Pipeline/prospectus_pipeline/tools/vc_pe_enricher.py" \
+  validate --require-complete --config "Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml"
+.venv/bin/python "Data Collecting Pipeline/prospectus_pipeline/tools/generate_vc_pe_report.py" \
+  --config "Data Collecting Pipeline/prospectus_pipeline/config-2026Q2.yaml"
+```
+
+The VC/PE auditor is cohort-neutral and read-only. The old manually populated Q1 values are retained under `prospectus_pipeline/schema/archive/` for provenance only and are not used to populate any quarter. Workbook writes still go through the regular `run.py validate` and `run.py write` gates.
+
+Each cohort config can point `paths` to its own data, packets, and output directories, plus a top-level `state_dir`, so runs do not overwrite each other's intermediates. The same selection applies to search and state commands. Exported CSV and codebook names follow `dataset.id` and `dataset.cohort`.
+
 ---
 
 ## Teammate & Collaborator Workflow

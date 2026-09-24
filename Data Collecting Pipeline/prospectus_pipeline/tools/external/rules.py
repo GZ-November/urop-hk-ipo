@@ -9,8 +9,8 @@
        明确未回拨且最终公开≈10% → B
     4. 再否则 NA
   DO Applicable IPO rules / transition basis
-    - 全部 Q1 招股书日 ≥ 2025-08-04 → "FINI (from 22/11/2023); 2025-08-04 pricing
-      reform (Mechanism A/B clawback; six-month cornerstone lock-up retained)"
+    - 按每家公司的招股书日期判断 FINI 与 2025-08-04 定价改革的适用性；
+      2025-08-04 pricing reform (Mechanism A/B clawback; six-month cornerstone lock-up retained)
     - 具体机制名附在后面。
 
 港交所 2025-08-04 改革明确：**未采纳**分阶段/3 个月基石解禁，仍为 6 个月。
@@ -22,14 +22,22 @@ import datetime as dt
 import json
 import re
 import shutil
+import sys
 from pathlib import Path
 
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
-BOOK = WS / "HKIPO-MB2026Q1.xlsx"
-SHEET = "NLR"
+sys.path.insert(0, str(ROOT))
+from run import load_cfg
+
+_cfg = load_cfg()
+_configured_book = Path(_cfg["workbook"])
+BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
+SHEET = _cfg.get("sheet", "NLR")
+TEXT_DIR = _cfg["paths"]["text"]
+ALLOT_OUT = _cfg["paths"]["allot_out"]
 DN_HEADER = "Offer mechanism"
 DO_HEADER = "Applicable IPO rules / transition basis"
 FINI = dt.date(2023, 11, 22)
@@ -47,7 +55,7 @@ def to_date(v) -> dt.date | None:
 
 
 def prospectus_mechanism(code: str) -> str | None:
-    f = ROOT / "data" / "text" / f"HKIPO-MB{''.join(ch for ch in code if ch.isdigit())}.jsonl"
+    f = TEXT_DIR / f"HKIPO-MB{''.join(ch for ch in code if ch.isdigit())}.jsonl"
     if not f.exists():
         return None
     text = "\n".join(json.loads(x)["text"] for x in f.open(encoding="utf-8"))
@@ -60,7 +68,7 @@ def prospectus_mechanism(code: str) -> str | None:
 
 def allot_mechanism(code: str) -> str | None:
     """配发公告回拨描述作兜底。实际发生分档回拨 → A；明确未回拨且公开约 10% → B。"""
-    p = ROOT / "out" / "allot" / "extracted" / (
+    p = ALLOT_OUT / "extracted" / (
         f"HKIPO-MB{''.join(ch for ch in code if ch.isdigit())}.json")
     if not p.exists():
         return None
@@ -90,10 +98,13 @@ def allot_mechanism(code: str) -> str | None:
 
 def rules_text(pd: dt.date, mech: str) -> str:
     parts = []
-    if pd >= FINI:
-        parts.append("FINI (from 22/11/2023)")
     if pd >= REFORM:
+        parts.append("FINI (from 22/11/2023)")
         parts.append("2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)")
+    elif pd >= FINI:
+        parts.append("FINI (from 22/11/2023)")
+    else:
+        parts.append("Pre-FINI (PN18 statutory clawback; CCASS T+5; six-month cornerstone lock-up)")
     if mech in ("A", "B"):
         parts.append(f"this IPO: Mechanism {mech}")
     return "; ".join(parts) if parts else "NA"

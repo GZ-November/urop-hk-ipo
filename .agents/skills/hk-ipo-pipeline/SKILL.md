@@ -4,7 +4,7 @@ description: >-
   Inspect, audit, validate, and execute the Hong Kong Main Board IPO dataset collection pipeline.
   Use when the user asks to check pipeline status, audit Excel cells against verified JSON extractions,
   cross-check HKEX Listing Rules (Chapter 18C, FINI Mechanism A/B clawbacks, green shoe 15%, cornerstone lockup),
-  generate academic and macro Q1 market reports, export clean econometric CSVs or 202-variable codebooks,
+  generate cohort-specific academic and macro market reports, export clean econometric CSVs or codebooks,
   or collect and process new IPO companies.
 ---
 
@@ -38,8 +38,10 @@ All pipeline operations are unified under `run.py`. Agents can invoke the wrappe
 Or from within `Data Collecting Pipeline`:
 
 ```bash
-python3 prospectus_pipeline/run.py <STAGE> [OPTIONS]
+"${PYTHON_BIN:-.venv/bin/python}" prospectus_pipeline/run.py <STAGE> [OPTIONS]
 ```
+
+Select another cohort with `PIPELINE_CONFIG=/path/to/cohort.yaml` or `--config /path/to/cohort.yaml`. Keep each cohort's workbook, paths, dataset metadata, and optional `state_dir` together in its config.
 
 ---
 

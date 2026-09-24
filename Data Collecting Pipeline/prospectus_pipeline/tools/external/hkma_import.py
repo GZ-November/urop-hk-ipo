@@ -17,18 +17,24 @@ import argparse
 import csv
 import datetime as dt
 import shutil
+import sys
 from pathlib import Path
 
 import openpyxl
 
 ROOT = Path(__file__).resolve().parents[2]
 WS = ROOT.parent
-BOOK = WS / "HKIPO-MB2026Q1.xlsx"
+sys.path.insert(0, str(ROOT))
+from run import load_cfg
+
+_cfg = load_cfg()
+_configured_book = Path(_cfg["workbook"])
+BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
 CSV_PATH = ROOT / "data" / "manual" / "hibor_balance.csv"
 
 HIBOR_HEADER = "1-month HIBOR before prospectus (%)"
 BALANCE_HEADER = "Banking system aggregate balance before prospectus (HK$)"
-SHEET = "NLR"
+SHEET = _cfg.get("sheet", "NLR")
 CODE_COL = "B"
 DATE_COL = "D"
 

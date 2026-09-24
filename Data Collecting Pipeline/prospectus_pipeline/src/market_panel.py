@@ -38,8 +38,11 @@ sys_src = ROOT / "src"
 import sys
 if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from market_fetcher import get_market_fetcher, parse_bar_date
+from run import load_cfg
 
 logger = logging.getLogger("market_panel")
 OUT_MASTER = ROOT / "out" / "master"
@@ -59,24 +62,44 @@ HORIZONS = [
 ]
 
 
-def load_issuers(focus_2026q1_only: bool = False) -> list[dict[str, Any]]:
-    """读取目标样本。优先读取 2026 Q1 的 38 家公司，亦可消费全量 master 表。"""
-    wb_path = ROOT.parent / "HKIPO-MB2026Q1.xlsx"
+def load_issuers(workbook_path: Path | str | None = None, use_master_cache: bool = True,
+                 cfg: dict | None = None) -> list[dict[str, Any]]:
+    """Read either the configured cohort or the multi-year issuer master.
+
+    ``use_master_cache=False`` always reads the selected cohort workbook. This
+    replaces the old Q1-named switch, which actually meant "bypass master".
+    """
+    cfg = cfg or load_cfg()
+    master_path = OUT_MASTER / "issuer_master.json"
+    if workbook_path is None and use_master_cache and master_path.exists():
+        return json.loads(master_path.read_text(encoding="utf-8"))
+
+    configured_book = Path(workbook_path) if workbook_path is not None else Path(cfg["workbook"])
+    wb_path = configured_book if configured_book.is_absolute() else Path(cfg["_ws"]) / configured_book
+    sheet_name = cfg.get("sheet", "NLR")
+
     if not wb_path.exists():
-        im_json = OUT_MASTER / "issuer_master.json"
-        if im_json.exists():
-            return json.loads(im_json.read_text(encoding="utf-8"))
         return []
 
     wb = openpyxl.load_workbook(wb_path, data_only=True)
-    ws = wb["NLR"]
+    ws = wb[sheet_name]
     issuers = []
-    for r in range(2, ws.max_row + 1):
-        code = ws.cell(r, 2).value
-        name = ws.cell(r, 3).value
-        p_date = ws.cell(r, 4).value
-        l_date = ws.cell(r, 5).value
-        offer_p = ws.cell(r, 11).value  # col K
+    header_cols = {
+        " ".join(str(ws.cell(1, c).value or "").replace("\n", " ").split()).strip().lower(): c
+        for c in range(1, ws.max_column + 1) if ws.cell(1, c).value not in (None, "")
+    }
+    id_cols = cfg["id_columns"]
+    id_positions = {key: openpyxl.utils.column_index_from_string(col)
+                    for key, col in id_cols.items()}
+    offer_col = header_cols.get("ipo subscription price (hk$)")
+    if offer_col is None:
+        raise ValueError("Configured workbook is missing the 'IPO Subscription Price (HK$)' header")
+    for r in range(cfg["data_start_row"], ws.max_row + 1):
+        code = ws.cell(r, id_positions["stock_code"]).value
+        name = ws.cell(r, id_positions["name"]).value
+        p_date = ws.cell(r, id_positions["prospectus_date"]).value
+        l_date = ws.cell(r, id_positions["listing_date"]).value
+        offer_p = ws.cell(r, offer_col).value
         if not code:
             continue
         c_str = str(code).strip()
@@ -366,7 +389,7 @@ class MarketPanelEngine:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     engine = MarketPanelEngine()
-    issuers = load_issuers(focus_2026q1_only=False)
+    issuers = load_issuers(use_master_cache=True)
     d_out, h_out = engine.run(issuers)
     print(f"\n=======================================================")
     print(f"Market & Microstructure Panel Construction Complete")

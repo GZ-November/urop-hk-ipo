@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 import time
 from pathlib import Path
 
@@ -26,6 +27,8 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
+sys.path.insert(0, str(ROOT))
+from run import load_cfg
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120 Safari/537.36")
 PAGE = "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote"
@@ -64,11 +67,12 @@ def fetch_one(sess: requests.Session, code: str, token: str) -> dict:
 
 
 def main() -> int:
+    pipeline_cfg = load_cfg()
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(ROOT / "out" / "hsic.json"))
+    ap.add_argument("--out", default=str(pipeline_cfg["paths"]["out"] / "hsic.json"))
     args = ap.parse_args()
 
-    cfg = json.loads((ROOT / "out" / "packets.json").read_text(encoding="utf-8"))
+    cfg = json.loads((pipeline_cfg["paths"]["out"] / "packets.json").read_text(encoding="utf-8"))
     codes = [x["code"] for x in cfg]
 
     sess = requests.Session()

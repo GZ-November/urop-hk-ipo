@@ -24,13 +24,14 @@ import sys
 from pathlib import Path
 
 import openpyxl
-import yaml
 
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
 from contracts import normalize_code  # noqa: E402
+from run import load_cfg  # noqa: E402
 
 HEADERS = {
     "BH": "Listing board",
@@ -60,9 +61,9 @@ def digits(code: str) -> str:
     return "".join(c for c in str(code) if c.isdigit())
 
 
-def place_of_incorporation(code: str) -> tuple[str, str]:
+def place_of_incorporation(code: str, text_dir: Path | None = None) -> tuple[str, str]:
     """扫前若干页判断注册地；返回 (值, 证据)。"""
-    f = ROOT / "data" / "text" / f"HKIPO-MB{digits(code)}.jsonl"
+    f = (text_dir or ROOT / "data" / "text") / f"HKIPO-MB{digits(code)}.jsonl"
     if not f.exists():
         return "NA", "缺页级文本"
     head = ""
@@ -94,7 +95,7 @@ from workbook_transaction import workbook_transaction
 
 
 def main() -> int:
-    cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    cfg = load_cfg()
     ap = argparse.ArgumentParser(description="Derive statutory flags")
     ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
     ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
@@ -105,7 +106,7 @@ def main() -> int:
     dry = args.dry_run
 
     # 基石「确认无」的公司
-    ca_path = ROOT / "out" / "allot" / "cornerstone_absence.json"
+    ca_path = cfg["paths"]["allot_out"] / "cornerstone_absence.json"
     no_cornerstone = set()
     if ca_path.exists():
         for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
@@ -149,7 +150,7 @@ def main() -> int:
     print(f"{'code':9s} {'board':10s} {'A+H':4s} {'WVR':4s} {'18A':4s} {'18C':4s} "
           f"{'注册地':14s} 基石解禁")
     for code, r in sorted(row_of.items()):
-        jf = ROOT / "out" / "extracted" / f"HKIPO-MB{digits(code)}.json"
+        jf = cfg["paths"]["out"] / "extracted" / f"HKIPO-MB{digits(code)}.json"
         if not jf.exists():
             print(f"{code:9s} 缺抽取 JSON，跳过")
             continue
@@ -159,7 +160,7 @@ def main() -> int:
         wvr = 1 if re.search(r"Chapter\s+8A", asv) else 0
         c18a = 1 if re.search(r"Chapter\s+18A", asv) else 0
         c18c = 1 if re.search(r"Chapter\s+18C", asv) else 0
-        inc, inc_ev = place_of_incorporation(code)
+        inc, inc_ev = place_of_incorporation(code, cfg["paths"]["text"])
         ld = listing.get(code)
         if code in no_cornerstone:
             unlock, unlock_note = "NA", "确认无基石，无解禁日"
@@ -177,7 +178,7 @@ def main() -> int:
         print(f"{code:9s} {board:10s} {a_plus_h:4d} {wvr:4d} {c18a:4d} {c18c:4d} "
               f"{inc:14s} {str(unlock)}")
 
-    outj = ROOT / "out" / "derived_flags.json"
+    outj = cfg["paths"]["out"] / "derived_flags.json"
     outj.write_text(json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
                     encoding="utf-8")
     print(f"\n推导 {n} 家；证据 -> {outj}")
