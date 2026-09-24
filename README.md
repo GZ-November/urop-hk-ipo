@@ -273,9 +273,10 @@ This repository includes a standardized skill package compatible with AI coding 
     ├── SYSTEM_MANAGEMENT.md                # Systems Engineering & Governance Manual
     ├── HKIPO-MB2026Q1.xlsx                 # Canonical target dataset (Single Source of Truth)
     │
-    ├── templates/                          # Blank collection templates
+    ├── templates/                          # Collection templates (Initial & Final Master)
     │   ├── HKIPO-GEM-template-students.xlsx
-    │   └── HKIPO-MB-template-students.xlsx
+    │   ├── HKIPO-MB-template-students.xlsx
+    │   └── HKIPO-MB-template-final.xlsx
     │
     ├── sources/                            # Immutable HKEX regulatory sources
     │   ├── NLR2025_Eng.xlsx

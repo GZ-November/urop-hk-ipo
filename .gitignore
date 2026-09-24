@@ -37,6 +37,8 @@ htmlcov/
 # ==============================================================================
 *.xlsx
 !Data Collecting Pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
+!Data Collecting Pipeline/HKIPO-MB2026Q1.xlsx
+!Data Collecting Pipeline/templates/*.xlsx
 *.xls
 *.xlsm
 *.csv
