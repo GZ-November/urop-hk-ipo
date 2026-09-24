@@ -38,6 +38,23 @@ def parse_float(v: Any) -> float | None:
         return None
 
 
+HSICS_PREFIX_MAP: dict[str, str] = {
+    "00": "能源業",
+    "05": "能源業",
+    "10": "原材料業",
+    "20": "工業",
+    "23": "非必需性消費",
+    "25": "必需性消費",
+    "28": "醫療保健業",
+    "30": "金融業",
+    "35": "地產建築業",
+    "40": "公用事業",
+    "50": "電訊業",
+    "70": "資訊科技業",
+    "80": "綜合企業",
+}
+
+
 def generate_report(cfg: dict | None = None, out_path: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
@@ -177,8 +194,10 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     flat_first = sum(1 for r in valid_returns if abs(r) < 1e-4)
     negative_first = sum(1 for r in valid_returns if r < -1e-4)
 
-    # Industry distribution from hsic_codes.json
+    # Industry distribution from hsic_codes.json (or schema fallback)
     hsic_json_path = ROOT / "out" / "hsic_codes.json"
+    if not hsic_json_path.exists():
+        hsic_json_path = ROOT / "schema" / "hsic_codes.json"
     hsic_map = {}
     if hsic_json_path.exists():
         hsic_raw = json.loads(hsic_json_path.read_text(encoding="utf-8"))
@@ -193,8 +212,14 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     sub_sectors = Counter()
     for d in data:
         meta = hsic_map.get(d["code"], {})
-        ind = meta.get("industry") or "未分类"
-        sub = meta.get("sub_sector") or d["hsic_code"]
+        ind = meta.get("industry")
+        if not ind and d.get("hsic_code"):
+            code_prefix = str(d["hsic_code"]).strip()[:2]
+            ind = HSICS_PREFIX_MAP.get(code_prefix)
+        ind = ind or "未分类"
+        d["industry"] = ind
+        sub = meta.get("sub_sector") or d["hsic_code"] or "-"
+        d["sub_sector"] = sub
         industries[ind] += 1
         sub_sectors[sub] += 1
 
@@ -269,7 +294,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     ]
     for ind, cnt in industries.most_common():
         pct = cnt / n_companies * 100
-        examples = [d["code"] for d in data if hsic_map.get(d["code"], {}).get("industry") == ind][:3]
+        examples = [d["code"] for d in data if d.get("industry") == ind][:3]
         md.append(f"| **{ind}** | {cnt} 家 | {pct:.1f}% | {', '.join(examples)} |")
 
     md.extend([
@@ -279,8 +304,8 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     ])
     for sub, cnt in sub_sectors.most_common(10):
         pct = cnt / n_companies * 100
-        sample_code = next((d["code"] for d in data if hsic_map.get(d["code"], {}).get("sub_sector") == sub), None)
-        ind_name = hsic_map.get(sample_code, {}).get("industry", "-") if sample_code else "-"
+        sample = next((d for d in data if d.get("sub_sector") == sub), None)
+        ind_name = sample.get("industry", "-") if sample else "-"
         md.append(f"| {sub} | {cnt} 家 | {pct:.1f}% | {ind_name} |")
 
     max_sub_item = max(data, key=lambda x: x["subscription_mult"] or 0)
