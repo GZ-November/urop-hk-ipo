@@ -24,21 +24,38 @@ from run import load_cfg  # noqa: E402
 
 class PipelineSafetyTests(unittest.TestCase):
     def test_pipeline_config_can_be_selected_without_changing_default(self):
+        """Selecting an alternate cohort config must not mutate the default one.
+
+        ``config.yaml`` is repointed to whichever cohort is currently being
+        collected, so the default's expected values are read from that file
+        instead of being hardcoded to a specific cohort.
+        """
+        baseline = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+        baseline_id = baseline["dataset"]["id"]
+        alternate_id = f"{baseline_id}-ALT"
+
         with tempfile.TemporaryDirectory() as tmp:
-            config_path = Path(tmp) / "q2.yaml"
+            config_path = Path(tmp) / "alternate.yaml"
             config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
-            config["workbook"] = "HKIPO-MB2026Q2.xlsx"
-            config["dataset"]["id"] = "HKIPO-MB2026Q2"
-            config["dataset"]["cohort"] = "2026 Q2"
+            config["workbook"] = f"ALT-{baseline['workbook']}"
+            config["dataset"]["id"] = alternate_id
+            config["dataset"]["cohort"] = f"{baseline['dataset']['cohort']} ALT"
             config_path.write_text(yaml.safe_dump(config), encoding="utf-8")
 
             selected = load_cfg(config_path=config_path)
             default = load_cfg(config_path=ROOT / "config.yaml")
 
-        self.assertEqual(selected["workbook"], "HKIPO-MB2026Q2.xlsx")
-        self.assertEqual(selected["dataset"]["cohort"], "2026 Q2")
-        self.assertEqual(default["dataset"]["cohort"], "2026 Q1")
-        self.assertEqual(state_dir(selected), state_dir(default) / "HKIPO-MB2026Q2")
+        # The alternate config is honoured, and is genuinely distinct from the default.
+        self.assertEqual(selected["dataset"]["id"], alternate_id)
+        self.assertNotEqual(selected["dataset"]["id"], baseline_id)
+        self.assertEqual(selected["workbook"], f"ALT-{baseline['workbook']}")
+        self.assertNotEqual(selected["workbook"], baseline["workbook"])
+        # Selecting another config leaves the default exactly as declared.
+        self.assertEqual(default["workbook"], baseline["workbook"])
+        self.assertEqual(default["dataset"]["id"], baseline_id)
+        self.assertEqual(default["dataset"]["cohort"], baseline["dataset"]["cohort"])
+        # Each cohort gets its own hash-state directory.
+        self.assertEqual(state_dir(selected), state_dir(default) / alternate_id)
 
     def test_company_level_statement_detector(self):
         parent_headers = [
