@@ -15,6 +15,19 @@ from cross_check import mechanism_a_public_ratio, run_cross_check
 from run import load_cfg
 
 
+def production_cfg() -> dict:
+    """Return a config pinned to the canonical 2026 Q1 production workbook.
+
+    A working checkout's ``config.yaml`` is repointed whenever a new cohort is
+    being collected (for example ``HKIPO-MB2026Q2.xlsx``), so these tests must
+    pin the dataset they assert on rather than inheriting the local checkout's
+    target workbook.
+    """
+    cfg = load_cfg()
+    cfg["workbook_path"] = WORKBOOK_PATH
+    return cfg
+
+
 class CrossCheckTests(unittest.TestCase):
     def test_post_2025_mechanism_a_ladder(self):
         self.assertEqual(mechanism_a_public_ratio(14.99), 0.05)
@@ -57,7 +70,7 @@ class CrossCheckTests(unittest.TestCase):
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_run_cross_check_all_companies(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            result = run_cross_check(out_dir=tmp_dir)
+            result = run_cross_check(production_cfg(), out_dir=tmp_dir)
             self.assertEqual(result["total_companies"], 38)
             self.assertEqual(result["clean_companies"], 38)
             self.assertEqual(result["total_anomalies"], 0)
@@ -66,7 +79,7 @@ class CrossCheckTests(unittest.TestCase):
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_run_cross_check_single_company(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            result = run_cross_check(only=["6082.HK"], out_dir=tmp_dir)
+            result = run_cross_check(production_cfg(), only=["6082.HK"], out_dir=tmp_dir)
             self.assertEqual(result["total_companies"], 1)
             self.assertEqual(result["clean_companies"], 1)
             self.assertEqual(result["results"][0]["code"], "6082.HK")

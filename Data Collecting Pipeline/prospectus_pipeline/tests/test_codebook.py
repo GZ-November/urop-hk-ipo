@@ -16,6 +16,19 @@ from codebook import build_codebook, export_clean_csv, export_all
 from run import load_cfg
 
 
+def production_cfg() -> dict:
+    """Return a config pinned to the canonical 2026 Q1 production workbook.
+
+    A working checkout's ``config.yaml`` is repointed whenever a new cohort is
+    being collected (for example ``HKIPO-MB2026Q2.xlsx``), so this test must pin
+    the dataset it asserts on rather than inheriting the local checkout's target
+    workbook.
+    """
+    cfg = load_cfg()
+    cfg["workbook_path"] = WORKBOOK_PATH
+    return cfg
+
+
 class CodebookTests(unittest.TestCase):
     def test_build_codebook_with_mock_fixture(self):
         cfg = load_cfg()
@@ -84,7 +97,7 @@ class CodebookTests(unittest.TestCase):
 
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_build_codebook_full_production_coverage(self):
-        variables, summary = build_codebook()
+        variables, summary = build_codebook(production_cfg())
         self.assertEqual(summary["sample_size"], 38)
         self.assertEqual(summary["variable_count"], 202)
         self.assertEqual(summary["tiers"]["green_hkex"], 11)

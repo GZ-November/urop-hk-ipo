@@ -12,12 +12,27 @@ FIXTURE_WORKBOOK = ROOT / "tests" / "fixtures" / "mock_workbook.xlsx"
 from report import generate_report
 from run import load_cfg
 
+PRODUCTION_COHORT = "2026 Q1"
+
+
+def pinned_cfg(workbook: Path, cohort: str = PRODUCTION_COHORT) -> dict:
+    """Return a config pinned to an explicit workbook and cohort.
+
+    A working checkout's ``config.yaml`` is repointed whenever a new cohort is
+    being collected (for example ``HKIPO-MB2026Q2.xlsx``). These tests assert on
+    a specific dataset, so they must pin it explicitly rather than inheriting
+    whatever cohort the local checkout happens to target.
+    """
+    cfg = load_cfg()
+    cfg["workbook_path"] = workbook
+    cfg["dataset"] = {**cfg.get("dataset", {}), "cohort": cohort}
+    return cfg
+
 
 class ReportTests(unittest.TestCase):
     def test_generate_report_with_mock_fixture(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
-            cfg = load_cfg()
-            cfg["workbook_path"] = FIXTURE_WORKBOOK
+            cfg = pinned_cfg(FIXTURE_WORKBOOK)
             out_md = Path(tmp_dir) / "mock_report.md"
             stats = generate_report(cfg, out_path=out_md)
             self.assertEqual(stats["n_companies"], 2)
@@ -30,7 +45,7 @@ class ReportTests(unittest.TestCase):
     def test_generate_report_metrics_production(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
             out_md = Path(tmp_dir) / "prod_report.md"
-            stats = generate_report(out_path=out_md)
+            stats = generate_report(pinned_cfg(WORKBOOK_PATH), out_path=out_md)
             self.assertEqual(stats["n_companies"], 38)
             self.assertGreater(stats["total_net_proceeds_hkd"], 90e9)  # > 90 billion HKD
             self.assertGreater(stats["total_market_cap_hkd"], 1e12)     # > 1 trillion HKD
