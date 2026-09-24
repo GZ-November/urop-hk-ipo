@@ -17,12 +17,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent if Path(__file__).resolve().parent.name == "tools" else Path(__file__).resolve().parent
-TEXT_DIR = ROOT / "data" / "text"
+TEXT_DIR = Path(os.environ.get("HKIPO_TEXT_DIR", ROOT / "data" / "text"))
 
 # 每个字段的定位锚点。bundle 命令一次把全部字段的候选原文吐出来，
 # 目的是把「十几次 search 往返」压成「一次调用」，从而砍掉大量轮数与 token。

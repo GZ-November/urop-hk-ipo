@@ -23,6 +23,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import datetime as dt
 import json
 import logging
@@ -30,8 +31,6 @@ import math
 import statistics
 from pathlib import Path
 from typing import Any, Optional
-
-import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
 sys_src = ROOT / "src"
@@ -42,8 +41,8 @@ if str(sys_src) not in sys.path:
 from market_fetcher import get_market_fetcher, parse_bar_date
 
 logger = logging.getLogger("market_panel")
-OUT_MASTER = ROOT / "out" / "master"
-CACHE_DIR = ROOT / "data" / "market" / "daily_bars"
+sys.path.insert(0, str(ROOT))
+from cohort import load_cfg, read_companies
 
 # 标准跨期交易日对应关系（约数与日历月标准）
 HORIZONS = [
@@ -59,57 +58,57 @@ HORIZONS = [
 ]
 
 
-def load_issuers(focus_2026q1_only: bool = False) -> list[dict[str, Any]]:
-    """读取目标样本。优先读取 2026 Q1 的 38 家公司，亦可消费全量 master 表。"""
-    wb_path = ROOT.parent / "HKIPO-MB2026Q1.xlsx"
-    if not wb_path.exists():
-        im_json = OUT_MASTER / "issuer_master.json"
-        if im_json.exists():
-            return json.loads(im_json.read_text(encoding="utf-8"))
-        return []
-
-    wb = openpyxl.load_workbook(wb_path, data_only=True)
-    ws = wb["NLR"]
+def load_issuers(focus_2026q1_only: bool = False, cfg: dict | None = None) -> list[dict[str, Any]]:
+    """Read issuers selected by the shared workbook and period configuration."""
+    cfg = cfg or load_cfg()
+    selected = read_companies(cfg)
     issuers = []
-    for r in range(2, ws.max_row + 1):
-        code = ws.cell(r, 2).value
-        name = ws.cell(r, 3).value
-        p_date = ws.cell(r, 4).value
-        l_date = ws.cell(r, 5).value
-        offer_p = ws.cell(r, 11).value  # col K
+    for company in selected:
+        code = company["code"]
         if not code:
             continue
         c_str = str(code).strip()
         if not c_str.endswith(".HK"):
             digits = "".join(ch for ch in c_str if ch.isdigit())
             c_str = f"{int(digits):04d}.HK"
+        offer_p = company.get("offer_price")
+        try:
+            offer_price = (
+                float(str(offer_p).replace(",", "").strip())
+                if offer_p not in (None, "")
+                else None
+            )
+        except (TypeError, ValueError):
+            offer_price = None
         issuers.append({
             "stock_code": c_str,
-            "company_name": str(name or "").strip(),
-            "prospectus_date": str(p_date)[:10] if p_date else None,
-            "listing_date": str(l_date)[:10] if l_date else None,
-            "offer_price_hkd": float(str(offer_p).replace(",", "").strip()) if offer_p else None,
-            "row_idx": r
+            "company_name": company["name"],
+            "prospectus_date": company["prospectus_date"].isoformat() if company["prospectus_date"] else None,
+            "listing_date": company["listing_date"].isoformat() if company["listing_date"] else None,
+            "offer_price_hkd": offer_price,
+            "row_idx": company["row"]
         })
-    wb.close()
     return issuers
 
 
 class MarketPanelEngine:
     """逐日市场与微观结构面板构建器。"""
 
-    def __init__(self, today: Optional[dt.date] = None) -> None:
+    def __init__(self, today: Optional[dt.date] = None, cfg: dict | None = None) -> None:
+        self.cfg = cfg or load_cfg()
+        self.out_master = self.cfg["paths"]["out"] / "master"
+        self.cache_dir = self.cfg["paths"]["data"] / "market" / "daily_bars"
         self.fetcher = get_market_fetcher()
         self.today = today or dt.date.today()
-        CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        OUT_MASTER.mkdir(parents=True, exist_ok=True)
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self.out_master.mkdir(parents=True, exist_ok=True)
         self.benchmarks: dict[str, list[dict[str, Any]]] = {}
 
     def fetch_benchmark_bars(self, symbol: str, from_date: dt.date) -> list[dict[str, Any]]:
         """拉取并缓存基准指数日度序列。"""
         if symbol in self.benchmarks:
             return self.benchmarks[symbol]
-        cache_file = CACHE_DIR / f"{symbol.replace('^', '')}_bars.json"
+        cache_file = self.cache_dir / f"{symbol.replace('^', '')}_bars.json"
         if cache_file.exists():
             try:
                 bars = json.loads(cache_file.read_text(encoding="utf-8"))
@@ -133,7 +132,7 @@ class MarketPanelEngine:
 
     def fetch_issuer_bars(self, stock_code: str, listing_date: dt.date) -> list[dict[str, Any]]:
         """拉取并缓存个股日度序列。"""
-        cache_file = CACHE_DIR / f"{stock_code}_bars.json"
+        cache_file = self.cache_dir / f"{stock_code}_bars.json"
         if cache_file.exists():
             try:
                 bars = json.loads(cache_file.read_text(encoding="utf-8"))
@@ -337,7 +336,7 @@ class MarketPanelEngine:
             all_horizons.extend(h_recs)
 
         # 导出逐日交易大表 (daily_market_panel.csv)
-        daily_csv = OUT_MASTER / "daily_market_panel.csv"
+        daily_csv = self.out_master / "daily_market_panel.csv"
         if all_daily:
             d_keys = list(all_daily[0].keys())
             with daily_csv.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -346,7 +345,7 @@ class MarketPanelEngine:
                 writer.writerows(all_daily)
 
         # 导出学术跨期表现汇总表 (horizon_summary.csv)
-        horizon_csv = OUT_MASTER / "horizon_summary.csv"
+        horizon_csv = self.out_master / "horizon_summary.csv"
         h_keys = [
             "stock_code", "horizon", "horizon_desc", "target_trading_days", "matured",
             "target_date", "actual_date", "close_price", "bhr_from_day1", "total_return_from_offer",
@@ -365,8 +364,14 @@ class MarketPanelEngine:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    engine = MarketPanelEngine()
-    issuers = load_issuers(focus_2026q1_only=False)
+    parser = argparse.ArgumentParser(description="Build the market panel for a configured IPO cohort")
+    parser.add_argument("--workbook")
+    parser.add_argument("--period-start")
+    parser.add_argument("--period-end")
+    args = parser.parse_args()
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
+    engine = MarketPanelEngine(cfg=cfg)
+    issuers = load_issuers(cfg=cfg)
     d_out, h_out = engine.run(issuers)
     print(f"\n=======================================================")
     print(f"Market & Microstructure Panel Construction Complete")

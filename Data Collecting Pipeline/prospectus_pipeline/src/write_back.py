@@ -199,7 +199,7 @@ def write_all(cfg: dict, fill_missing: bool = True, only: list[str] | None = Non
 if __name__ == "__main__":
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-    from run import load_cfg
+    from cohort import load_cfg
     ap = argparse.ArgumentParser()
     ap.add_argument("--fill-missing", action="store_true", default=True)
     ap.add_argument("--no-fill-missing", dest="fill_missing", action="store_false")

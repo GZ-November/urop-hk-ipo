@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from run import load_cfg
+from cohort import load_cfg
 from storage import file_sha256
 from workbook_transaction import commit_prepared_workbook
 

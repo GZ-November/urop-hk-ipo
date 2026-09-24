@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from run import load_cfg
+from cohort import load_cfg
 
 
 def parse_val(v: Any) -> Any:

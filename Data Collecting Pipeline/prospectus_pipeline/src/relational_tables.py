@@ -14,6 +14,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import json
@@ -32,12 +33,9 @@ import sys
 if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
-OUT_MASTER = ROOT / "out" / "master"
-EXTRACTED_DIR = ROOT / "out" / "extracted"
-ALLOT_EXTRACTED_DIR = ROOT / "out" / "allot" / "extracted"
-STABILIZATION_CSV = OUT_MASTER / "stabilization_events.csv"
-
 from market_fetcher import parse_bar_date
+sys.path.insert(0, str(ROOT))
+from cohort import load_cfg
 
 
 def clean_str(s: Any) -> str:
@@ -53,15 +51,20 @@ def slugify(name: str) -> str:
 class RelationalTableEngine:
     """机构投资者与承销辛迪加关系生成引擎。"""
 
-    def __init__(self) -> None:
-        OUT_MASTER.mkdir(parents=True, exist_ok=True)
+    def __init__(self, cfg: dict | None = None) -> None:
+        self.cfg = cfg or load_cfg()
+        self.out_master = self.cfg["paths"]["out"] / "master"
+        self.extracted_dir = self.cfg["paths"]["out"] / "extracted"
+        self.allot_extracted_dir = self.cfg["paths"]["allot_out"] / "extracted"
+        self.stabilization_csv = self.out_master / "stabilization_events.csv"
+        self.out_master.mkdir(parents=True, exist_ok=True)
         self.stabilizing_managers: dict[str, str] = {}
         self._load_stabilization_data()
 
     def _load_stabilization_data(self) -> None:
-        if not STABILIZATION_CSV.exists():
+        if not self.stabilization_csv.exists():
             return
-        with STABILIZATION_CSV.open("r", encoding="utf-8-sig") as fh:
+        with self.stabilization_csv.open("r", encoding="utf-8-sig") as fh:
             reader = csv.DictReader(fh)
             for r in reader:
                 self.stabilizing_managers[r["stock_code"]] = r.get("stabilizing_manager", "")
@@ -74,7 +77,7 @@ class RelationalTableEngine:
             code = iss["stock_code"]
             digits = "".join(ch for ch in code if ch.isdigit())
             l_date = iss.get("listing_date")
-            p_json_path = EXTRACTED_DIR / f"HKIPO-MB{digits}.json"
+            p_json_path = self.extracted_dir / f"HKIPO-MB{digits}.json"
             
             cs_names_raw = ""
             pre_ipo_raw = ""
@@ -175,7 +178,7 @@ class RelationalTableEngine:
             # 读取招股书佣金费率
             comm_hk = 2.5
             comm_int = 2.5
-            p_json_path = EXTRACTED_DIR / f"HKIPO-MB{digits}.json"
+            p_json_path = self.extracted_dir / f"HKIPO-MB{digits}.json"
             if p_json_path.exists():
                 try:
                     p_data = json.loads(p_json_path.read_text(encoding="utf-8"))
@@ -237,7 +240,7 @@ class RelationalTableEngine:
         """生成并导出两张实体关系表。"""
         # 1. 投资者表
         inv_recs = self.process_investors(issuers)
-        inv_path = OUT_MASTER / "investor_relational.csv"
+        inv_path = self.out_master / "investor_relational.csv"
         if inv_recs:
             keys = list(inv_recs[0].keys())
             with inv_path.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -247,7 +250,7 @@ class RelationalTableEngine:
 
         # 2. 承销辛迪加表
         syn_recs = self.process_syndicate(issuers)
-        syn_path = OUT_MASTER / "underwriter_relational.csv"
+        syn_path = self.out_master / "underwriter_relational.csv"
         if syn_recs:
             keys = list(syn_recs[0].keys())
             with syn_path.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -261,9 +264,15 @@ class RelationalTableEngine:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
+    parser = argparse.ArgumentParser(description="Build relational tables for a configured IPO cohort")
+    parser.add_argument("--workbook")
+    parser.add_argument("--period-start")
+    parser.add_argument("--period-end")
+    args = parser.parse_args()
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
     from market_panel import load_issuers
-    issuers = load_issuers(focus_2026q1_only=True)
-    engine = RelationalTableEngine()
+    issuers = load_issuers(cfg=cfg)
+    engine = RelationalTableEngine(cfg=cfg)
     i_out, s_out = engine.run(issuers)
     print(f"\n=======================================================")
     print(f"Relational Tables Generation Complete")

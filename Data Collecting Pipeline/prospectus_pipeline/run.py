@@ -13,66 +13,15 @@
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
 import os
 import sys
 from pathlib import Path
 
-import yaml
-
 ROOT = Path(__file__).resolve().parent          # prospectus_pipeline/
 WS = ROOT.parent                                # 工作簿所在目录
 sys.path.insert(0, str(ROOT / "src"))
-
-
-def load_cfg(workbook_override: str | None = None) -> dict:
-    with open(ROOT / "config.yaml") as f:
-        cfg = yaml.safe_load(f)
-    if workbook_override:
-        cfg["workbook"] = workbook_override
-    cfg["_root"] = ROOT
-    cfg["_ws"] = WS
-    for k, v in cfg["paths"].items():
-        p = WS / v
-        p.mkdir(parents=True, exist_ok=True)
-        cfg["paths"][k] = p
-    return cfg
-
-
-def _to_date(v):
-    if isinstance(v, dt.datetime):
-        return v.date()
-    if isinstance(v, dt.date):
-        return v
-    return None
-
-
-def read_companies(cfg: dict) -> list[dict]:
-    import openpyxl
-    book_path = Path(cfg["workbook_path"]) if cfg.get("workbook_path") else (WS / cfg["workbook"])
-    wb = openpyxl.load_workbook(book_path, read_only=True, data_only=True)
-    ws = wb[cfg["sheet"]]
-    ic = cfg["id_columns"]
-    companies = []
-    from openpyxl.utils import column_index_from_string
-    positions = {k: column_index_from_string(v) - 1 for k, v in ic.items()}
-    for r, values in enumerate(ws.iter_rows(min_row=cfg["data_start_row"],
-                                           max_col=max(positions.values()) + 1,
-                                           values_only=True), cfg["data_start_row"]):
-        code = values[positions["stock_code"]]
-        if code in (None, ""):
-            continue
-        companies.append({
-            "row": r,
-            "file_no": values[positions["file_no"]],
-            "code": str(code).strip(),
-            "name": str(values[positions["name"]] or "").strip(),
-            "prospectus_date": _to_date(values[positions["prospectus_date"]]),
-            "listing_date": _to_date(values[positions["listing_date"]]),
-        })
-    wb.close()
-    return companies
+from cohort import load_cfg, read_companies
 
 
 def cmd_find(cfg, args, companies):
@@ -149,23 +98,25 @@ def cmd_greenshoe(cfg, args, companies):
     found = json.loads(found_path.read_text())
     wanted = {c["code"] for c in companies}
     found = [r for r in found if r["code"] in wanted]
-    index = fetch_index(cfg, found, only=args.only)
-    fetch_shares(cfg, index, only=args.only)
-    apply_cv(cfg, only=args.only)
+    codes = [c["code"] for c in companies]
+    index = fetch_index(cfg, found, only=codes)
+    fetch_shares(cfg, index, only=codes)
+    apply_cv(cfg, only=codes)
     return 0
 
 
 def cmd_cornerstone(cfg, args, companies):
     """基石核实：确认「无基石投资者」的公司把 col_CK 写成 0。"""
     from cornerstone import apply_ck, scan
-    scan(cfg, only=args.only)
-    apply_ck(cfg, only=args.only)
+    codes = [c["code"] for c in companies]
+    scan(cfg, only=codes)
+    apply_ck(cfg, only=codes)
     return 0
 
 
 def cmd_validate(cfg, args, companies):
     from validate import validate_all
-    return validate_all(cfg, only=args.only, limit=args.limit, target=args.target)
+    return validate_all(cfg, only=[c["code"] for c in companies], limit=0, target=args.target)
 
 
 def cmd_derive_allot(cfg, args, companies):
@@ -174,30 +125,32 @@ def cmd_derive_allot(cfg, args, companies):
     from cornerstone import apply_ck
     from pricing_date import apply_cq
     from validate import apply_da
-    apply_cv(cfg, only=args.only)
-    apply_ck(cfg, only=args.only)
-    apply_cq(cfg, only=args.only)
-    apply_da(cfg, only=args.only)
+    codes = [c["code"] for c in companies]
+    apply_cv(cfg, only=codes)
+    apply_ck(cfg, only=codes)
+    apply_cq(cfg, only=codes)
+    apply_da(cfg, only=codes)
     return 0
 
 
 def cmd_validate_ext(cfg, args, companies):
     import subprocess
     cmd = [sys.executable, str(ROOT / "tools" / "validate_ext.py")]
-    if args.only:
-        cmd.extend(["--only", *args.only])
+    codes = [c["code"] for c in companies]
+    if codes:
+        cmd.extend(["--only", *codes])
     return subprocess.call(cmd, cwd=WS)
 
 
 def cmd_write(cfg, args, companies):
     from write_back import write_all
-    return write_all(cfg, fill_missing=args.fill_missing, only=args.only,
-                     limit=args.limit, target=args.target)
+    return write_all(cfg, fill_missing=args.fill_missing, only=[c["code"] for c in companies],
+                     limit=0, target=args.target)
 
 
 def cmd_audit(cfg, args, companies):
     from audit import run_audit
-    only = [c["code"] for c in companies] if args.only else None
+    only = [c["code"] for c in companies]
     target = args.target if args.target in ("prospectus", "allot") else "all"
     run_audit(cfg, only=only, target=target)
     return 0
@@ -205,7 +158,7 @@ def cmd_audit(cfg, args, companies):
 
 def cmd_cross_check(cfg, args, companies):
     from cross_check import run_cross_check
-    only = [c["code"] for c in companies] if args.only else None
+    only = [c["code"] for c in companies]
     res = run_cross_check(cfg, only=only)
     print("\n" + "=" * 70)
     print(f"HK IPO 宏观业务逻辑与跨字段一致性审计完成 (共 {res['total_companies']} 家公司)")
@@ -237,14 +190,26 @@ def cmd_codebook(cfg, args, companies):
 
 def cmd_status(cfg, args, companies):
     from auto_fill import inventory, print_status
-    print_status(inventory())
+    print_status(inventory(cfg))
     return 0
 
 
 def cmd_search(cfg, args, companies):
     import subprocess
-    cmd = [sys.executable, str(ROOT / "tools" / "search.py")] + sys.argv[2:]
-    return subprocess.call(cmd, cwd=WS)
+    env = os.environ.copy()
+    env["HKIPO_TEXT_DIR"] = str(cfg["paths"]["text"])
+    forwarded = []
+    skip_value = False
+    for token in sys.argv[2:]:
+        if skip_value:
+            skip_value = False
+            continue
+        if token in {"--workbook", "--period-start", "--period-end"}:
+            skip_value = True
+            continue
+        forwarded.append(token)
+    cmd = [sys.executable, str(ROOT / "tools" / "search.py")] + forwarded
+    return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_state(cfg, args, companies):
@@ -260,10 +225,10 @@ def cmd_aftermarket(cfg, args, companies):
     cmd = [sys.executable, str(script)]
     if getattr(args, "dry_run", False):
         cmd.append("--dry-run")
-    if args.only:
-        cmd.extend(["--only"] + args.only)
-    if args.workbook:
-        cmd.extend(["--book", str(WS / args.workbook)])
+    codes = [c["code"] for c in companies]
+    if codes:
+        cmd.extend(["--only"] + codes)
+    cmd.extend(["--book", str(cfg["_workbook_path"])])
     return subprocess.call(cmd, cwd=WS)
 
 
@@ -288,8 +253,9 @@ def cmd_external(cfg, args, companies):
         cmd = [sys.executable, str(script)]
         if getattr(args, "dry_run", False):
             cmd.append("--dry-run")
-        if args.only:
-            cmd.extend(["--only"] + args.only)
+        codes = [c["code"] for c in companies]
+        if codes:
+            cmd.extend(["--only"] + codes)
         cmd.extend(["--book", book_target])
         proc = subprocess.run(cmd, cwd=WS)
         if proc.returncode != 0:
@@ -330,20 +296,29 @@ def main() -> int:
     ap.add_argument("--fill-missing", action="store_true",
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--workbook", default=None,
-                    help="指定/覆盖目标工作簿文件名，例如 HKIPO-MB2026Q1.xlsx")
+                    help="指定目标工作簿路径（可为相对路径或绝对路径）")
+    ap.add_argument("--period-start", default=None, help="纳入样本的起始日期，格式 YYYY-MM-DD")
+    ap.add_argument("--period-end", default=None, help="纳入样本的截止日期，格式 YYYY-MM-DD")
     args, extra = ap.parse_known_args()
     args.extra = (args.extra or []) + extra
 
+    try:
+        cfg = load_cfg(args.workbook, args.period_start, args.period_end)
+    except (ValueError, KeyError) as exc:
+        ap.error(str(exc))
     if args.stage in ("search", "state"):
-        return globals()[f"cmd_{args.stage}"](None, args, None)
-
-    cfg = load_cfg(workbook_override=args.workbook)
+        return globals()[f"cmd_{args.stage}"](cfg, args, None)
     companies = read_companies(cfg)
+    cfg["dataset"]["expected_companies"] = len(companies)
     print(f"工作簿 {cfg['workbook']} 共 {len(companies)} 家公司")
     if args.only:
         companies = [c for c in companies if c["code"] in args.only]
     if args.limit:
         companies = companies[: args.limit]
+    cfg["_selected_codes"] = [c["code"] for c in companies]
+    if not companies:
+        print("错误: 工作簿中没有符合日期范围的发行人记录。请检查日期范围和工作簿内容。", file=sys.stderr)
+        return 1
 
     stages = ["find", "download", "prepare"] if args.stage == "all" else [args.stage]
     rc = 0

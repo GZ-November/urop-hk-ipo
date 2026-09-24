@@ -39,7 +39,7 @@ from academic_derivations import (
     derive_pricing_dynamics,
     derive_day1_trading,
 )
-from run import load_cfg
+from cohort import load_cfg
 from storage import file_sha256
 from workbook_transaction import commit_prepared_workbook
 

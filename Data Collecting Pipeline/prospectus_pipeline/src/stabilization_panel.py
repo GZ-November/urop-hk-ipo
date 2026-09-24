@@ -11,6 +11,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import json
@@ -31,11 +32,9 @@ if str(sys_src) not in sys.path:
 
 from market_fetcher import parse_bar_date
 
-OUT_MASTER = ROOT / "out" / "master"
-GREENSHOE_TEXT_DIR = ROOT / "data" / "allot" / "greenshoe" / "text"
-ALLOT_TEXT_DIR = ROOT / "data" / "allot" / "text"
-GREENSHOE_INDEX = ROOT / "out" / "allot" / "greenshoe.json"
-DAILY_PANEL_CSV = OUT_MASTER / "daily_market_panel.csv"
+sys.path.insert(0, str(ROOT))
+from cohort import load_cfg
+from market_observations import read_daily_market_panel
 
 NUM = r"\d{1,3}(?:,\d{3})+|\d{4,}"
 FLOAT_NUM = r"\d+(?:\.\d+)?"
@@ -66,35 +65,26 @@ def parse_date_str(s: str) -> Optional[dt.date]:
 class StabilizationPanelEngine:
     """稳价事件分析与断崖效应测算器。"""
 
-    def __init__(self) -> None:
-        OUT_MASTER.mkdir(parents=True, exist_ok=True)
+    def __init__(self, cfg: dict | None = None) -> None:
+        self.cfg = cfg or load_cfg()
+        self.out_master = self.cfg["paths"]["out"] / "master"
+        self.greenshoe_text_dir = self.cfg["paths"]["allot_out"] / "greenshoe" / "text"
+        self.allot_text_dir = self.cfg["paths"]["allot_out"] / "text"
+        self.greenshoe_index = self.cfg["paths"]["allot_out"] / "greenshoe.json"
+        self.daily_panel_csv = self.out_master / "daily_market_panel.csv"
+        self.out_master.mkdir(parents=True, exist_ok=True)
         self.daily_bars: dict[str, list[dict[str, Any]]] = {}
         self._load_daily_panel()
 
     def _load_daily_panel(self) -> None:
         """加载已生成的逐日行情大表以计算事件窗回报。"""
-        if not DAILY_PANEL_CSV.exists():
-            return
-        with DAILY_PANEL_CSV.open("r", encoding="utf-8-sig") as fh:
-            reader = csv.DictReader(fh)
-            for r in reader:
-                code = r["stock_code"]
-                if code not in self.daily_bars:
-                    self.daily_bars[code] = []
-                self.daily_bars[code].append({
-                    "date": parse_bar_date(r["trade_date"]),
-                    "close": float(r["close"]),
-                    "turnover": float(r["turnover"]),
-                    "daily_return": float(r["daily_return"]) if r.get("daily_return") else 0.0
-                })
-        for c in self.daily_bars:
-            self.daily_bars[c].sort(key=lambda x: x["date"])
+        self.daily_bars = read_daily_market_panel(self.daily_panel_csv)
 
     def parse_announcement(self, code: str, listing_date_str: str) -> dict[str, Any]:
         """解析公告文本并提取结构化字段。"""
         digits = "".join(ch for ch in code if ch.isdigit())
-        g_file = GREENSHOE_TEXT_DIR / f"HKIPO-MB{digits}.jsonl"
-        a_file = ALLOT_TEXT_DIR / f"HKIPO-MB{digits}.jsonl"
+        g_file = self.greenshoe_text_dir / f"HKIPO-MB{digits}.jsonl"
+        a_file = self.allot_text_dir / f"HKIPO-MB{digits}.jsonl"
 
         text_corpus = ""
         source_url = ""
@@ -252,7 +242,7 @@ class StabilizationPanelEngine:
             rec = self.compute_event_windows(rec)
             out_records.append(rec)
 
-        out_path = OUT_MASTER / "stabilization_events.csv"
+        out_path = self.out_master / "stabilization_events.csv"
         if out_records:
             keys = list(out_records[0].keys())
             with out_path.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -266,8 +256,14 @@ class StabilizationPanelEngine:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
+    parser = argparse.ArgumentParser(description="Build stabilization events for a configured IPO cohort")
+    parser.add_argument("--workbook")
+    parser.add_argument("--period-start")
+    parser.add_argument("--period-end")
+    args = parser.parse_args()
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
     from market_panel import load_issuers
-    issuers = load_issuers(focus_2026q1_only=True)
-    engine = StabilizationPanelEngine()
+    issuers = load_issuers(cfg=cfg)
+    engine = StabilizationPanelEngine(cfg=cfg)
     out = engine.run(issuers)
     print(f"\nStabilization Panel Complete: {out}")

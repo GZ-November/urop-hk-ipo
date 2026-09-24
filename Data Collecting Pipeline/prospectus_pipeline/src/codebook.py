@@ -21,6 +21,7 @@ import csv
 import datetime as dt
 import json
 import math
+import re
 import statistics
 import sys
 from collections import Counter
@@ -34,7 +35,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from run import load_cfg  # noqa: E402
+from cohort import load_cfg, read_companies  # noqa: E402
 
 # 浅绿 A–K 官方定义
 HKEX_GREEN_VARS = {
@@ -430,8 +431,10 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     """完整扫描工作簿生成全量变量字典与样本统计量。"""
     if cfg is None:
         cfg = load_cfg()
-    if "workbook_path" in cfg:
+    if cfg.get("workbook_path"):
         book_path = Path(cfg["workbook_path"])
+    elif cfg.get("_workbook_path"):
+        book_path = Path(cfg["_workbook_path"])
     elif Path(cfg["workbook"]).is_absolute():
         book_path = Path(cfg["workbook"])
     else:
@@ -460,16 +463,12 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     start_row = cfg["data_start_row"]
     max_col = ws.max_column
 
-    # 动态确定实际公司样本数量
-    valid_rows = []
-    for r in range(start_row, ws.max_row + 1):
-        c_val = ws.cell(r, 2).value
-        if c_val is not None and str(c_val).strip():
-            valid_rows.append(r)
+    # 使用统一运行配置选取样本行，确保代码本与其它阶段的日期范围一致。
+    valid_rows = [company["row"] for company in read_companies(cfg)]
     n_companies = len(valid_rows)
     if n_companies == 0:
-        n_companies = max(1, ws.max_row - start_row + 1)
-        valid_rows = list(range(start_row, start_row + n_companies))
+        wb.close()
+        raise ValueError("No issuer rows match the configured workbook and date range")
 
     variables = []
     matrix = []
@@ -667,7 +666,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         })
 
 
-    cohort_str = cfg.get("dataset", {}).get("cohort", "2026 Q1") if cfg else "2026 Q1"
+    cohort_str = cfg.get("dataset", {}).get("cohort", "IPO cohort") if cfg else "IPO cohort"
     summary = {
         "dataset_name": f"HK IPO Main Board {cohort_str} Full Dataset",
         "cohort": cohort_str,
@@ -689,7 +688,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
 def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Path:
     """导出格式规整、无编码歧义的 UTF-8-BOM CSV 文件。"""
     if out_path is None:
-        out_path = ROOT / "out" / "HKIPO-MB2026Q1_clean.csv"
+        out_path = ROOT / "out" / "HKIPO_clean.csv"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     n_rows = variables[0]["stats"]["valid_n"] + variables[0]["stats"]["missing_n"]
@@ -721,8 +720,8 @@ def export_clean_csv(variables: list[dict], out_path: Path | None = None) -> Pat
 
 def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """生成详尽的学术计量级数据变量代码本（Markdown 格式）。"""
-    cohort = summary.get("cohort", "2026 Q1")
-    wb_name = summary.get("workbook_name", "HKIPO-MB2026Q1.xlsx")
+    cohort = summary.get("cohort", "IPO cohort")
+    wb_name = summary.get("workbook_name", "workbook.xlsx")
     sheet_name = summary.get("sheet", "NLR")
     if out_path is None:
         tag = cohort.replace(" ", "")
@@ -790,7 +789,9 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
 def generate_codebook_json(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """导出结构化 JSON 格式代码本供 Agent 或 API 调用。"""
     if out_path is None:
-        out_path = ROOT / "out" / "HKIPO_2026Q1_Codebook.json"
+        cohort = summary.get("cohort", "IPO cohort")
+        tag = re.sub(r"[^A-Za-z0-9_-]+", "", cohort.replace(" ", ""))
+        out_path = ROOT / "out" / f"HKIPO_{tag}_Codebook.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     payload = {
@@ -806,9 +807,9 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     if cfg is None:
         cfg = load_cfg()
     variables, summary = build_codebook(cfg)
-    cohort = summary.get("cohort", "2026 Q1")
+    cohort = summary.get("cohort", "IPO cohort")
     tag = cohort.replace(" ", "")
-    dataset_id = cfg.get("dataset", {}).get("id", "HKIPO-MB2026Q1") if cfg else "HKIPO-MB2026Q1"
+    dataset_id = cfg.get("dataset", {}).get("id", "HKIPO") if cfg else "HKIPO"
 
     csv_name = f"{dataset_id}_clean.csv"
     md_name = f"HKIPO_{tag}_Codebook.md"
