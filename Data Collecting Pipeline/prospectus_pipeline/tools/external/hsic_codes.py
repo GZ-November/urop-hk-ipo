@@ -76,6 +76,9 @@ HSIC_EN2CODE = {
     "Dietary Supplements": "282030",
     "Personal Care": "253020",
     "Supermarkets & Convenience Stores": "253010",
+    # 2026Q3 cohort 补全：码取自 data/manual/hsics.json（HSICS 2026 官方表）
+    "Online Retailers": "237060",
+    "Telecommunication Network Infrastructure": "701015",
 }
 
 HEADERS = {"BN": "Industry classification code",
