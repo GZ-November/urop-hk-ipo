@@ -28,7 +28,8 @@ import requests
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 WS = ROOT.parent
 sys.path.insert(0, str(ROOT))
-from run import load_cfg
+from run import load_cfg, read_companies
+from contracts import normalize_code
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120 Safari/537.36")
 PAGE = "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote"
@@ -67,13 +68,22 @@ def fetch_one(sess: requests.Session, code: str, token: str) -> dict:
 
 
 def main() -> int:
-    pipeline_cfg = load_cfg()
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(pipeline_cfg["paths"]["out"] / "hsic.json"))
+    ap.add_argument("--config", help="Cohort config (otherwise PIPELINE_CONFIG)")
+    ap.add_argument("--only", nargs="*", help="Filter by stock code(s)")
+    ap.add_argument("--out", help="Output JSON path")
     args = ap.parse_args()
+    pipeline_cfg = load_cfg(config_path=args.config)
+    out_path = Path(args.out) if args.out else pipeline_cfg["paths"]["out"] / "hsic.json"
 
-    cfg = json.loads((pipeline_cfg["paths"]["out"] / "packets.json").read_text(encoding="utf-8"))
-    codes = [x["code"] for x in cfg]
+    codes = [x["code"] for x in read_companies(pipeline_cfg)]
+    selected = {normalize_code(x) for x in args.only} if args.only else None
+    if selected is not None:
+        if selected - set(codes):
+            raise SystemExit(f"--only 中有代码未匹配 cohort：{sorted(selected - set(codes))}")
+        codes = [code for code in codes if code in selected]
+    if not codes:
+        raise SystemExit("配置工作簿中没有符合日期范围的公司")
 
     sess = requests.Session()
     token = fresh_token(sess)
@@ -103,10 +113,15 @@ def main() -> int:
               f"| {str(q.get('hsic_sub_sector_classification'))[:26]:28s} | {q.get('incorpin')}")
         time.sleep(0.35)
 
-    Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-                              encoding="utf-8")
     ok = sum(1 for v in out.values() if v["hsic_sub"])
-    print(f"\n成功 {ok}/{len(out)}（token 刷新 {n_tok} 次）-> {args.out}")
+    if ok != len(codes):
+        raise SystemExit(f"HSIC 抓取仅成功 {ok}/{len(codes)}；未覆盖旧文件 {out_path}")
+    if selected is not None and out_path.exists():
+        previous = json.loads(out_path.read_text(encoding="utf-8"))
+        out = {**previous, **out}
+    out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                        encoding="utf-8")
+    print(f"\n成功 {ok}/{len(codes)}（token 刷新 {n_tok} 次）-> {out_path}")
     return 0
 
 

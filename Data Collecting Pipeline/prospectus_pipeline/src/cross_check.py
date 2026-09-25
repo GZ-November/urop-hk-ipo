@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -85,6 +86,20 @@ def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False,
     if subscription_multiple < 100:
         return 0.25
     return 0.35
+
+
+def international_tranche_undersubscribed(cfg: dict, code: str, description: str) -> bool:
+    """Identify the prospectus' separate reallocation case from the allotment announcement."""
+    if re.search(r"international.{0,30}under.?subscribed", description, re.I):
+        return True
+    path = cfg["paths"]["allot_text"] / f"HKIPO-MB{''.join(c for c in code if c.isdigit())}.jsonl"
+    if not path.is_file():
+        return False
+    for line in path.open(encoding="utf-8"):
+        page_text = " ".join(json.loads(line).get("text", "").split())
+        if re.search(r"international (?:offer shares|offering).{0,35}under.?subscribed", page_text, re.I):
+            return True
+    return False
 
 
 def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_dir: Path | str | None = None) -> dict:
@@ -220,16 +235,36 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
         # 1. 机制 A / B 回拨阶梯与披露说明 (Clawback Ladder)
         # -------------------------------------------------------------
         if CS and CT and CM is not None:
-            # Clawback percentages are defined against the shares initially
-            # offered. Offer Size Adjustment shares in final CS do not change
-            # that denominator.
+            # The statutory ladder is a minimum of the initially offered
+            # shares. An offer-size adjustment may increase the final public
+            # tranche above that floor.
             allocation_base = float(M) if M else float(CS)
             pub_ratio = float(CT) / allocation_base
             cm_val = float(CM)
-            if "Mechanism A" in DN or (listing_date and listing_date < REFORM_2025_DATE and "Mechanism B" not in DN):
+            if listing_date and listing_date < REFORM_2025_DATE:
+                if cm_val >= 1 and international_tranche_undersubscribed(cfg, code, CW):
+                    # Under the pre-reform Guide 4.14, undersubscribed
+                    # international offers use discretionary reallocation, capped
+                    # at twice the initial public allocation (normally 20%).
+                    initial_ratio = 0.05 if BM == 1 else 0.10
+                    max_ratio = min(1.0, 2 * initial_ratio)
+                    if pub_ratio > max_ratio + 0.015:
+                        company_checks.append({
+                            "check": "PN18 Discretionary Reallocation",
+                            "severity": "WARNING",
+                            "detail": f"国际配售认购不足，公开发售最终占比 {pub_ratio*100:.1f}% 超过通常上限 {max_ratio*100:.0f}%",
+                        })
+                elif cm_val >= 1:
+                    expected_ratio = mechanism_a_public_ratio(cm_val, is_18c=(BM == 1), listing_date=listing_date)
+                    if pub_ratio + 0.015 < expected_ratio:
+                        company_checks.append({
+                            "check": "PN18 Allocation",
+                            "severity": "WARNING",
+                            "detail": f"公开发售超购 {cm_val:.1f} 倍，最低档位 {expected_ratio*100:.0f}%，实际 {pub_ratio*100:.1f}%；请核对豁免或口径",
+                        })
+            elif "Mechanism A" in DN:
                 expected_ratio = mechanism_a_public_ratio(cm_val, is_18c=(BM == 1), listing_date=listing_date)
-                # 容许股份整数舍入；偏差较大通常意味着个案豁免或资料口径错误。
-                if abs(pub_ratio - expected_ratio) > 0.015:
+                if pub_ratio + 0.015 < expected_ratio:
                     company_checks.append({
                         "check": "Mechanism A Allocation",
                         "severity": "WARNING",

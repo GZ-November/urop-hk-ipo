@@ -68,6 +68,14 @@ HSIC_EN2CODE = {
     "Other Retailers": "237050",
     "Pharma & Biotech Contract Services": "281050",
     "Pharmaceuticals": "281010",
+    # 2025Q1 cohort 补全：码取自 data/manual/hsics.json（HSICS 2026 官方表）
+    "Aluminium": "052030",
+    "Automobiles": "231010",
+    "Banks": "501010",
+    "Commercial Vehicles & Trucks": "101010",
+    "Dietary Supplements": "282030",
+    "Personal Care": "253020",
+    "Supermarkets & Convenience Stores": "253010",
 }
 
 HEADERS = {"BN": "Industry classification code",
@@ -83,14 +91,15 @@ from workbook_transaction import workbook_transaction
 
 
 def main() -> int:
-    cfg = load_cfg()
     ap = argparse.ArgumentParser(description="Map and inject HSICS codes")
+    ap.add_argument("--config", help="Cohort config (otherwise PIPELINE_CONFIG)")
     ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
-    ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
+    ap.add_argument("--book", help="Path to workbook")
     ap.add_argument("--only", nargs="*", default=None, help="Filter by stock code(s)")
     args = ap.parse_args()
+    cfg = load_cfg(config_path=args.config)
 
-    book = Path(args.book)
+    book = Path(args.book) if args.book else cfg["_workbook_path"]
     dry = args.dry_run
 
     hsic = json.loads((cfg["paths"]["out"] / "hsic.json").read_text(encoding="utf-8"))
@@ -120,14 +129,19 @@ def main() -> int:
 
     ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
     row_of = {}
+    selected = {normalize_code(x) for x in args.only} if args.only else None
     for r in range(cfg["data_start_row"], ws_read.max_row + 1):
         v = ws_read.cell(r, ci_code).value
         if v not in (None, ""):
             norm_c = normalize_code(str(v).strip())
-            if args.only and norm_c not in [normalize_code(x) for x in args.only]:
+            if selected is not None and norm_c not in selected:
                 continue
             row_of[norm_c] = r
     wb_read.close()
+    if not row_of:
+        raise SystemExit("没有匹配的公司；检查 --config、--book 和 --only 参数")
+    if selected is not None and selected != set(row_of):
+        raise SystemExit(f"--only 中有代码未匹配工作簿：{sorted(selected - set(row_of))}")
 
     audit, n = {}, 0
     print(f"{'code':9s} {'HSICS码':9s} {'业务类别':30s} {'子类别':28s} 行业")
@@ -135,10 +149,11 @@ def main() -> int:
         rec = hsic.get(code) or {}
         sub = rec.get("hsic_sub")
         if not sub:
-            print(f"{code:9s} 缺 HSIC 数据，跳过")
-            continue
+            raise SystemExit(f"{code}: 缺 HSIC 数据；检查 {cfg['paths']['out'] / 'hsic.json'}")
         c6 = HSIC_EN2CODE[sub]
-        t = tax.get(c6, {})
+        if c6 not in tax:
+            raise SystemExit(f"{code}: {sub} 映射到 {c6}，但分类表中不存在")
+        t = tax[c6]
         audit[code] = {
             "code": c6,
             "sub_sector": t.get("name"),

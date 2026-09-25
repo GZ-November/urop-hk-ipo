@@ -387,10 +387,11 @@ def derived_allowed(record, key, target="prospectus", context=None):
         ca = ctx.get("cornerstone") or {}
         return value == 0 and ca.get("verdict") == "absent" and ca.get("evidence_complete") is True
     gre = ctx.get("greenshoe") or {}
+    if source == "greenshoe_lapse":
+        return (value == 0 and gre.get("status") == "ok" and gre.get("exercised") is False
+                and any(m.get("kind") == "lapse" for m in gre.get("matches", [])))
     return (value == 0 and gre.get("status") == "ok" and gre.get("exercised") is False
-            and gre.get("window_closed") is True
-            and (source != "greenshoe_lapse"
-                 or any(m.get("kind") == "lapse" for m in gre.get("matches", []))))
+            and gre.get("window_closed") is True)
 
 
 def source_issues(record, target="prospectus", context=None):

@@ -226,6 +226,7 @@ def apply_cv(cfg: dict, only=None, log=print) -> int:
             continue
         rec = json.loads(fp.read_text(encoding="utf-8"))
         fields = rec.setdefault("fields", {})
+        lapse = next((m for m in g["matches"] if m["kind"] == "lapse"), None)
         if g["exercised"]:
             s = gs.get(code)
             if not s or s.get("status") != "ok":
@@ -235,23 +236,21 @@ def apply_cv(cfg: dict, only=None, log=print) -> int:
                 "source": "greenshoe", "confidence": "high",
                 "note": f"{s['doc_title']} ({s['datetime']})",
             }
+        elif lapse:
+            fields["col_CV"] = {
+                "value": 0, "page": None,
+                "quote": f"港交所公告：{lapse['title']}（{lapse['datetime']}）",
+                "source": "greenshoe_lapse", "confidence": "high",
+                "note": lapse["title"],
+            }
         elif g.get("window_closed"):
-            lapse = next((m for m in g["matches"] if m["kind"] == "lapse"), None)
-            if lapse:
-                fields["col_CV"] = {
-                    "value": 0, "page": None,
-                    "quote": f"港交所公告：{lapse['title']}（{lapse['datetime']}）",
-                    "source": "greenshoe_lapse", "confidence": "high",
-                    "note": lapse["title"],
-                }
-            else:
-                fields["col_CV"] = {
-                    "value": 0, "page": None,
-                    "quote": (f"港交所公告检索：{g['listing_date']} 起 {WINDOW_DAYS} 天内共 "
-                              f"{g['announcements_scanned']} 条公告，无任何 OVER-ALLOTMENT 行使公告，"
-                              f"绿鞋窗口已于 {g['window'][1]} 期满未行使"),
-                    "source": "greenshoe_search", "confidence": "high",
-                }
+            fields["col_CV"] = {
+                "value": 0, "page": None,
+                "quote": (f"港交所公告检索：{g['listing_date']} 起 {WINDOW_DAYS} 天内共 "
+                          f"{g['announcements_scanned']} 条公告，无任何 OVER-ALLOTMENT 行使公告，"
+                          f"绿鞋窗口已于 {g['window'][1]} 期满未行使"),
+                "source": "greenshoe_search", "confidence": "high",
+            }
         else:
             fields["col_CV"] = {"value": "NaN", "page": None,
                                 "quote": "绿鞋窗口尚未结束，无法确定", "source": "greenshoe",

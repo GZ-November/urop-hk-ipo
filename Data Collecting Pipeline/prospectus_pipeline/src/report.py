@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
+from cohort import cohort_artifact_stem
 from run import load_cfg
 
 
@@ -165,7 +166,10 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
             "first_close": DH,
             "first_turnover": DM,
             "first_return": ret_day1,
-            "mechanism": "Mechanism A" if "Mechanism A" in DN else ("Mechanism B" if "Mechanism B" in DN else "Other"),
+            "mechanism": ("Mechanism A" if "Mechanism A" in DN else
+                          "Mechanism B" if "Mechanism B" in DN else
+                          "PN18 statutory clawback" if "PN18 statutory" in DN else
+                          "Chapter 18C.09 clawback" if "18C.09" in DN else "Other"),
             "hsic_code": BN,
             "is_18a": BL,
             "is_18c": BM,
@@ -203,7 +207,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     negative_first = sum(1 for r in valid_returns if r < -1e-4)
 
     # Industry distribution from hsic_codes.json (or schema fallback)
-    hsic_json_path = ROOT / "out" / "hsic_codes.json"
+    hsic_json_path = cfg["paths"]["out"] / "hsic_codes.json"
     if not hsic_json_path.exists():
         hsic_json_path = ROOT / "schema" / "hsic_codes.json"
     hsic_map = {}
@@ -238,6 +242,8 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     n_ah = sum(1 for d in data if d["is_ah"])
     n_mech_a = sum(1 for d in data if d["mechanism"] == "Mechanism A")
     n_mech_b = sum(1 for d in data if d["mechanism"] == "Mechanism B")
+    n_pn18 = sum(1 for d in data if d["mechanism"] == "PN18 statutory clawback")
+    n_18c_clawback = sum(1 for d in data if d["mechanism"] == "Chapter 18C.09 clawback")
 
     stats = {
         "cohort": cfg.get("dataset", {}).get("cohort", "IPO cohort"),
@@ -277,8 +283,9 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         report_path = Path(out_path)
     else:
         out_dir = cfg["paths"]["out"] if (cfg and "paths" in cfg and "out" in cfg["paths"]) else ROOT / "out"
-        dataset_id = cfg.get("dataset", {}).get("id", book_path.stem)
-        report_path = out_dir / f"{dataset_id}_Market_Report.md"
+        cohort = cfg.get("dataset", {}).get("cohort", "")
+        artifact_stem = cohort_artifact_stem(cohort, cfg.get("dataset", {}).get("id", book_path.stem))
+        report_path = out_dir / f"{artifact_stem}_Market_Report.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
 
     md = [
@@ -330,7 +337,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
     md.extend([
         "\n---",
         "\n## 三、发行机制与投资者认购情绪",
-        f"\n- **发行机制选择**：Mechanism A（传统阶梯回拨）**{n_mech_a} 家 ({n_mech_a/n_companies*100:.1f}%)**，Mechanism B（FINI 灵活机制）**{n_mech_b} 家 ({n_mech_b/n_companies*100:.1f}%)**。",
+        f"\n- **发行机制**：PN18 原有回拨 **{n_pn18} 家**，18C.09 特别回拨 **{n_18c_clawback} 家**，2025 年 8 月后 Mechanism A **{n_mech_a} 家**、Mechanism B **{n_mech_b} 家**。",
         f"- **公开发售认购倍数**：平均认购 **{avg_subs:,.1f} 倍**，中位数 **{median_subs:,.1f} 倍**。",
         f"- **超高热度 IPO（超购 > 1,000 倍）**：共 **{super_hot_count} 家**，最高为 **{top_sub_code} ({top_sub_name})** 达 **{top_sub_mult:,.1f} 倍**。",
         "\n---",

@@ -128,7 +128,7 @@ def fetch_bars(
 def find_bar_on_or_after(bars: list[dict], target_date: dt.date) -> dict | None:
     for b in bars:
         if b["date"] >= target_date:
-            return b
+            return b if (b["date"] - target_date).days <= 10 else None
     return None
 
 
@@ -162,6 +162,8 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     after_bars = [b for b in stock_bars if b["date"] >= ld]
     if not after_bars:
         return {"error": "无上市日及之后的行情数据"}
+    if (after_bars[0]["date"] - ld).days > 10:
+        return {"error": f"首个股价样本 {after_bars[0]['date']} 晚于上市日 {ld}；历史 K 线截断"}
     
     # 若缺失 day1_close，用首个有效 bar 的 close 补齐
     p1 = day1_close if (day1_close is not None and day1_close > 0) else after_bars[0]["close"]
@@ -184,6 +186,8 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     # 指数上市首日基准收盘价
     hsi_d0_bar = find_bar_on_or_after(hsi_bars, d0)
     hstech_d0_bar = find_bar_on_or_after(hstech_bars, d0)
+    if hsi_d0_bar is None or hstech_d0_bar is None:
+        return {"error": f"上市日 {d0} 附近缺少恒指/恒科样本；历史 K 线截断"}
     hsi_p0 = hsi_d0_bar["close"] if hsi_d0_bar else None
     hstech_p0 = hstech_d0_bar["close"] if hstech_d0_bar else None
     
@@ -405,12 +409,13 @@ def main() -> int:
     to_str = max_date.strftime("%Y-%m-%d")
 
     print(f"📈 正在拉取宏观基准指数 ({frm_str} ~ {to_str})...")
-    hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=350, provider=args.provider)
+    index_n = max(350, (max_date - min_date).days + 10)
+    hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=index_n, provider=args.provider)
     (CACHE / "hsi_bars.json").write_text(json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8")
     print(f"   ✓ 恒生指数 (hkHSI via {prov_hsi}): {len(hsi_bars)} 条 K 线")
 
     try:
-        hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=350, provider=args.provider)
+        hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=index_n, provider=args.provider)
         (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
         print(f"   ✓ 恒生科技指数 (hkHSTECH via {prov_hstech}): {len(hstech_bars)} 条 K 线")
     except Exception as exc:
@@ -424,9 +429,12 @@ def main() -> int:
         sym = hk_symbol(c["code"])
         frm_c = c["listing_date"].strftime("%Y-%m-%d")
         try:
-            bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=300, provider=args.provider)
+            stock_n = max(300, (max_date - c["listing_date"]).days + 10)
+            bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=stock_n, provider=args.provider)
             (CACHE / f"{sym}.json").write_text(json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8")
             metrics = calculate_metrics(c, bars, hsi_bars, hstech_bars)
+            if metrics.get("error"):
+                raise ValueError(metrics["error"])
             metrics["row"] = c["row"]
             metrics["code"] = c["code"]
             
@@ -466,7 +474,7 @@ def main() -> int:
         json.dumps(observation_manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    if not args.only and len(computed_rows) < len(companies):
+    if len(computed_rows) < len(companies):
         sys.stderr.write(
             f"错误: 仅成功计算 {len(computed_rows)} / {len(companies)} 家公司指标，"
             "存在外部数据拉取失败；为保证数据完整性，终止写回。\n"

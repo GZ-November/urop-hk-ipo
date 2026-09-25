@@ -102,6 +102,19 @@ class AftermarketMaturityTests(unittest.TestCase):
             "https://www.hkexnews.hk/example.pdf",
         )
 
+    def test_truncated_history_is_rejected_before_returns_are_computed(self):
+        listing_date = dt.date(2025, 1, 8)
+        late_bars = make_bars(dt.date(2025, 7, 1), 220)
+        full_bars = make_bars(listing_date, 400)
+        self.assertIn(
+            "历史 K 线截断",
+            aftermarket.calculate_metrics(self.company(listing_date), late_bars, full_bars, full_bars)["error"],
+        )
+        self.assertIn(
+            "历史 K 线截断",
+            aftermarket.calculate_metrics(self.company(listing_date), full_bars, late_bars, late_bars)["error"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

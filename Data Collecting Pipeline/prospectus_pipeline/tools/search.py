@@ -176,8 +176,8 @@ MONTHS = {"january":1,"february":2,"march":3,"april":4,"may":5,"june":6,"july":7
           "august":8,"september":9,"october":10,"november":11,"december":12}
 MON = "|".join(m.capitalize() for m in MONTHS)
 # 中期：支持 "nine months ended 30 September 2025" 与 "... September 30, 2025"
-STUB_A = re.compile(r"(nine|six|three)\s+months\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.I)
-STUB_B = re.compile(r"(nine|six|three)\s+months\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
+STUB_A = re.compile(r"(nine|six|four|three)\s+months\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.I)
+STUB_B = re.compile(r"(nine|six|four|three)\s+months\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
 YEAR_A = re.compile(r"year\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.I)
 YEAR_B = re.compile(r"year\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
 YEAR_C = re.compile(r"years?\s+ended\s+December\s+31,?\s+(20\d\d),\s*(20\d\d)\s+and\s+(20\d\d)", re.I)
@@ -206,11 +206,11 @@ def detect_periods(pages: list[dict]) -> dict:
         t = p["text"]
         for m in STUB_A.finditer(t):
             w, day, mon, yr = m.group(1).lower(), int(m.group(2)), m.group(3), int(m.group(4))
-            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'three':3}[w] }M{yr}"
+            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'four':4,'three':3}[w] }M{yr}"
             stub_days[(yr, MONTHS[mon.lower()])] = day
         for m in STUB_B.finditer(t):
             w, mon, day, yr = m.group(1).lower(), m.group(2), int(m.group(3)), int(m.group(4))
-            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'three':3}[w] }M{yr}"
+            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'four':4,'three':3}[w] }M{yr}"
             stub_days[(yr, MONTHS[mon.lower()])] = day
         for rx, gi in ((YEAR_A, 3), (YEAR_B, 3)):
             for m in rx.finditer(t):
@@ -223,6 +223,8 @@ def detect_periods(pages: list[dict]) -> dict:
                     if int(g) <= max_year:
                         years.add(int(g))
     stubs = {k: v for k, v in stubs.items() if k[0] <= max_year}
+    stub_years = {y for y, _ in stubs.keys()}
+    years = {y for y in years if y not in stub_years}
     # 统计每个中期的出现次数：Track Record 的中期会在每个表头反复出现，
     # 后续事项/季度比较里的偶然提法只出现一两次。
     freq: dict[tuple[int, int], int] = {}

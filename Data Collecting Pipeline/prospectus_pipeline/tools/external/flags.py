@@ -95,14 +95,15 @@ from workbook_transaction import workbook_transaction
 
 
 def main() -> int:
-    cfg = load_cfg()
     ap = argparse.ArgumentParser(description="Derive statutory flags")
+    ap.add_argument("--config", help="Cohort config (otherwise PIPELINE_CONFIG)")
     ap.add_argument("--dry-run", action="store_true", help="Do not mutate workbook")
-    ap.add_argument("--book", default=str(WS / cfg["workbook"]), help="Path to workbook")
+    ap.add_argument("--book", help="Path to workbook")
     ap.add_argument("--only", nargs="*", default=None, help="Filter by stock code(s)")
     args = ap.parse_args()
+    cfg = load_cfg(config_path=args.config)
 
-    book = Path(args.book)
+    book = Path(args.book) if args.book else cfg["_workbook_path"]
     dry = args.dry_run
 
     # 基石「确认无」的公司
@@ -112,6 +113,13 @@ def main() -> int:
         for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
             if rec.get("verdict") == "none":
                 no_cornerstone.add(normalize_code(code))
+    # The allotment extraction is the authoritative final allocation. Some
+    # cohorts have no separate cornerstone_absence.json at all.
+    for path in (cfg["paths"]["allot_out"] / "extracted").glob("HKIPO-MB*.json"):
+        rec = json.loads(path.read_text(encoding="utf-8"))
+        allocation = (rec.get("fields", {}).get("col_CK") or {}).get("value")
+        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool) and allocation == 0:
+            no_cornerstone.add(normalize_code(rec["code"]))
 
     wb_read = openpyxl.load_workbook(book, data_only=True)
     ws_read = wb_read[cfg["sheet"]]
@@ -132,12 +140,13 @@ def main() -> int:
     row_of, listing = {}, {}
     ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
     ci_list = openpyxl.utils.column_index_from_string(cfg["id_columns"]["listing_date"])
+    selected = {normalize_code(x) for x in args.only} if args.only else None
     for r in range(cfg["data_start_row"], ws_read.max_row + 1):
         code = ws_read.cell(r, ci_code).value
         if code in (None, ""):
             continue
         norm_c = normalize_code(str(code).strip())
-        if args.only and norm_c not in [normalize_code(x) for x in args.only]:
+        if selected is not None and norm_c not in selected:
             continue
         row_of[norm_c] = r
         ld = ws_read.cell(r, ci_list).value
@@ -145,6 +154,10 @@ def main() -> int:
             ld = ld.date()
         listing[norm_c] = ld if isinstance(ld, dt.date) else None
     wb_read.close()
+    if not row_of:
+        raise SystemExit("没有匹配的公司；检查 --config、--book 和 --only 参数")
+    if selected is not None and selected != set(row_of):
+        raise SystemExit(f"--only 中有代码未匹配工作簿：{sorted(selected - set(row_of))}")
 
     audit, n = {}, 0
     print(f"{'code':9s} {'board':10s} {'A+H':4s} {'WVR':4s} {'18A':4s} {'18C':4s} "
@@ -152,8 +165,7 @@ def main() -> int:
     for code, r in sorted(row_of.items()):
         jf = cfg["paths"]["out"] / "extracted" / f"HKIPO-MB{digits(code)}.json"
         if not jf.exists():
-            print(f"{code:9s} 缺抽取 JSON，跳过")
-            continue
+            raise SystemExit(f"{code}: 缺抽取 JSON：{jf}")
         asv = str(json.loads(jf.read_text(encoding="utf-8"))["fields"]["col_AS"]["value"])
         board = "GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board"
         a_plus_h = 1 if "A+H" in asv else 0

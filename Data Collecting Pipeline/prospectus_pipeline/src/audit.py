@@ -436,7 +436,7 @@ def audit_external_columns(ws, cfg: dict, row_of: dict[str, int]) -> list[dict]:
         sample_val = None
         for code, r in row_of.items():
             val = ws[f"{col}{r}"].value
-            if not is_missing(val, "text"):
+            if not is_blank_or_missing(val):
                 non_missing += 1
                 if sample_val is None:
                     sample_val = serialize_val(val)
@@ -493,7 +493,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
         tot_mismatch += st["value_mismatch"]
         tot_fields += st["fields_count"]
         rate = f"{(st['matches'] / st['total_cells_audited']):.2%}" if st["total_cells_audited"] else "0%"
-        name_zh = "招股书抽样 (60 字段)" if tgt == "prospectus" else "配发公告抽样 (18 字段)"
+        name_zh = "招股书字段" if tgt == "prospectus" else "配发公告字段"
         lines.append(
             f"| **{name_zh}** | {st['fields_count']} | {st['total_cells_audited']} | {st['matches']} | "
             f"{st['excel_missing']} | {st['json_missing']} | {st['value_mismatch']} | **{rate}** |"
@@ -501,13 +501,17 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
 
     overall_rate = f"{(tot_matches / tot_cells):.2%}" if tot_cells else "0%"
 
+    external = report_data["external_columns"]
+    full_external = sum(x["filled_count"] == n_companies for x in external)
+    partial_external = sum(0 < x["filled_count"] < n_companies for x in external)
+    empty_external = len(external) - full_external - partial_external
     lines.extend([
         f"| **合计 ({tot_fields} 字段)** | {tot_fields} | {tot_cells} | {tot_matches} | {tot_ex_miss} | {tot_js_miss} | {tot_mismatch} | **{overall_rate}** |",
         "",
         "### 关键发现点：",
         f"1. **总单元格数**：{tot_cells} 个，匹配格数：{tot_matches}（匹配率：{overall_rate}）；",
         f"2. **差异统计**：Excel 缺失 {tot_ex_miss} 项，JSON 缺失 {tot_js_miss} 项，数值不匹配 {tot_mismatch} 项；",
-        "3. **31 个外部工具字段**：行情（7 列）、HKMA（2 列）、IPO 数量（1 列）、发行规则与机制（2 列）、章节与公司属性（6 列）、行业代码（2 列）、期间与单位（10 列）、基石解禁日（1 列）均已完成全量填报，详见下表。",
+        f"3. **外部/工具衍生字段**：共 {len(external)} 列；全量填报 {full_external} 列，部分填报 {partial_external} 列，未填报或仅有缺失占位 {empty_external} 列。此统计与上方 88 字段逐格对账是不同范围。",
         "",
         "## 二、差异明细清单 (Discrepancies)",
         "",
@@ -535,7 +539,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
         lines.append("")
 
     lines.extend([
-        "## 三、31 个外部/工具衍生字段填报审计",
+        f"## 三、{len(external)} 个外部/工具衍生字段填报审计",
         "",
         "| 列 | 字段说明 | 对应生成工具 | 填报数 / 总数 | 填报率 | 抽样值 |",
         "|---|---|---|---:|---:|---|",

@@ -127,7 +127,9 @@ def main() -> int:
             col["DN"] = c
         elif v == DO_HEADER.lower():
             col["DO"] = c
-    if set(col) != {"DN", "DO"}:
+        elif v == "chapter 18c flag":
+            col["18C"] = c
+    if not {"DN", "DO", "18C"}.issubset(col):
         wb_read.close()
         raise SystemExit(f"找不到 DN/DO 列，实得 {col}")
 
@@ -140,17 +142,21 @@ def main() -> int:
         c_str = str(code).strip()
         if args.only and c_str not in args.only:
             continue
-        companies.append((r, c_str, pd))
+        companies.append((r, c_str, pd, ws_read.cell(r, col["18C"]).value))
     wb_read.close()
 
     print(f"{'code':9s} {'招股书':12s} {'来源':12s} {'机制':4s}  规则")
     values = []
-    for r, code, pd in companies:
-        src, mech = "prospectus", prospectus_mechanism(code)
-        if mech is None:
-            mech = allot_mechanism(code)
-            src = "allot-CW" if mech else "unknown"
-        dn = f"Mechanism {mech}" if mech else "NA"
+    for r, code, pd, is_18c in companies:
+        if pd < REFORM:
+            src, mech = "listing date", None
+            dn = "Chapter 18C.09 clawback" if is_18c == 1 else "PN18 statutory clawback"
+        else:
+            src, mech = "prospectus", prospectus_mechanism(code)
+            if mech is None:
+                mech = allot_mechanism(code)
+                src = "allot-CW" if mech else "unknown"
+            dn = f"Mechanism {mech}" if mech else "NA"
         do = rules_text(pd, mech or "")
         values.append((r, dn, do))
         print(f"{code:9s} {str(pd):12s} {src:12s} {dn:12s}  {do}")

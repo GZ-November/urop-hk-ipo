@@ -34,6 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
+from cohort import cohort_artifact_stem  # noqa: E402
 from run import load_cfg  # noqa: E402
 
 # 浅绿 A–K 官方定义
@@ -63,7 +64,7 @@ EXTERNAL_VARS = {
     "DK": ("First trading day low (HK$)", "首日上市二级市场盘中最低价 (HK$)", "numeric"),
     "DL": ("First trading day volume (shares)", "首日上市二级市场全天成交量（股）", "numeric"),
     "DM": ("First trading day turnover (HK$)", "首日上市二级市场全天成交金额 (HK$)", "numeric"),
-    "DN": ("Offer mechanism", "发售与回拨机制（Mechanism A 传统 / Mechanism B 灵活）", "categorical"),
+    "DN": ("Offer mechanism", "适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B）", "categorical"),
     "DO": ("Applicable IPO rules / transition basis", "适用之上市规则过渡基准（FINI 改革规则）", "categorical"),
     "BH": ("Listing board", "上市板块（Main Board 主板）", "categorical"),
     "BJ": ("A+H flag", "A+H 两地同时上市标识（1=是，0=否）", "boolean"),
@@ -723,6 +724,7 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
     """生成详尽的学术计量级数据变量代码本（Markdown 格式）。"""
     cohort = summary.get("cohort", "IPO cohort")
     wb_name = summary.get("workbook_name", "workbook.xlsx")
+    clean_csv_name = f"{cohort_artifact_stem(cohort, Path(wb_name).stem)}_clean.csv"
     sheet_name = summary.get("sheet", "NLR")
     if out_path is None:
         tag = cohort.replace(" ", "")
@@ -765,18 +767,18 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
     lines.extend([
         "\n---",
         "\n## 三、计量软件导入指引 (Stata / Python)",
-        f"\n配套清洗数据文件：`out/{Path(wb_name).stem}_clean.csv`（编码：UTF-8 with BOM）。",
+        f"\n配套清洗数据文件：`out/{clean_csv_name}`（编码：UTF-8 with BOM）。",
         "\n### 1. Stata",
         "```stata",
         '* 导入纯净版 CSV 数据',
-        f'import delimited "out/{Path(wb_name).stem}_clean.csv", clear bindquote(strict) varnames(1)',
+        f'import delimited "out/{clean_csv_name}", clear bindquote(strict) varnames(1)',
         'describe',
         'summarize',
         '```',
         "\n### 2. Python (pandas)",
         "```python",
         'import pandas as pd',
-        f'df = pd.read_csv("out/{Path(wb_name).stem}_clean.csv")',
+        f'df = pd.read_csv("out/{clean_csv_name}")',
         'print(df.info())',
         'print(df.describe())',
         '```',
@@ -810,7 +812,7 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     tag = cohort.replace(" ", "")
     dataset_id = cfg.get("dataset", {}).get("id", Path(cfg["workbook"]).stem) if cfg else "HKIPO"
 
-    csv_name = f"{dataset_id}_clean.csv"
+    csv_name = f"{cohort_artifact_stem(cohort, dataset_id)}_clean.csv"
     md_name = f"HKIPO_{tag}_Codebook.md"
     json_name = f"HKIPO_{tag}_Codebook.json"
 
@@ -830,7 +832,7 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     print("\n" + "=" * 70)
     print("HK IPO 学术代码本与科研 CSV 导出完成")
     print("=" * 70)
-    print(f"样本规模: {summary['sample_size']} 家公司 | 变量总数: {summary['variable_count']} 列 (100% 完整解析)")
+    print(f"样本规模: {summary['sample_size']} 家公司 | 已解析表头: {summary['variable_count']} 列（非空值覆盖请查看 audit）")
     print(f"数据层级: 浅绿 (HKEX) {summary['tiers']['green_hkex']} 列 | 浅蓝 (招股书) {summary['tiers']['blue_prospectus']} 列 | 深蓝 (外部/配发) {summary['tiers']['darkblue_external']} 列")
     print("-" * 70)
     print("产出成果文件:")

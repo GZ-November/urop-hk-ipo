@@ -239,6 +239,13 @@ def cmd_expansion(cfg, args, companies):
     return subprocess.call(cmd, cwd=WS)
 
 
+def cmd_academic(cfg, args, companies):
+    """Populate the eight deterministic academic variables after market enrichment."""
+    import subprocess
+    cmd = [sys.executable, str(ROOT / "tools" / "enrich_master_dataset.py")]
+    return subprocess.call(cmd, cwd=WS)
+
+
 def cmd_disclosure_notes(cfg, args, companies):
     """Derive the 10 disclosure note columns."""
     import subprocess
@@ -286,7 +293,7 @@ def cmd_external(cfg, args, companies):
         ("ipo_count", ROOT / "tools" / "external" / "ipo_count.py", True, True),
         ("flags", ROOT / "tools" / "external" / "flags.py", True, True),
         ("rules", ROOT / "tools" / "external" / "rules.py", True, True),
-        ("hsic", ROOT / "tools" / "external" / "hsic.py", False, False),
+        ("hsic", ROOT / "tools" / "external" / "hsic.py", False, True),
         ("hsic_codes", ROOT / "tools" / "external" / "hsic_codes.py", True, True),
         ("aftermarket", ROOT / "tools" / "external" / "aftermarket.py", True, True),
     ]
@@ -403,6 +410,10 @@ def cmd_collect(cfg, args, companies):
             return 1
     if cmd_external(cfg, args, companies):
         return 1
+    if cmd_academic(cfg, args, companies):
+        return 1
+    if cmd_disclosure_notes(cfg, args, companies):
+        return 1
     cmd_audit(cfg, argparse.Namespace(target="all"), companies)
     return cmd_cross_check(cfg, args, companies)
 
@@ -427,7 +438,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="招股书 / 配发公告自动采集流水线")
     ap.add_argument("stage", choices=["find", "download", "prepare", "allot_index", "allot", "greenshoe", "cornerstone",
                                      "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
-                                     "report", "codebook", "export", "status", "external", "aftermarket", "expansion",
+                                     "report", "codebook", "export", "status", "external", "aftermarket", "academic", "expansion",
                                      "disclosure_notes", "search", "state",
                                      "merge_topics", "all", "collect"])
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")

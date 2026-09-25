@@ -30,6 +30,14 @@ def _cohort_for_period(start: dt.date, end: dt.date) -> str:
     return f"{start.isoformat()} to {end.isoformat()}"
 
 
+def cohort_artifact_stem(cohort: str, fallback: str = "HKIPO") -> str:
+    """Return the public artifact stem used by workbook/CSV/report deliverables."""
+    compact = re.sub(r"\s+", "", str(cohort or ""))
+    if re.fullmatch(r"\d{4}Q[1-4]", compact):
+        return f"HKIPO-MB{compact}"
+    return fallback
+
+
 def _to_date(value: Any) -> dt.date | None:
     if isinstance(value, dt.datetime):
         return value.date()
