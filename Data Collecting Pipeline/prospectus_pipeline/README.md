@@ -114,6 +114,22 @@ You can express the same request in a prompt, for example: “收集 2026-01-01 
 
 Issuer fields are read through the `id_columns` mapping in `config.yaml`, including the market panel's offer-price field. Workbooks with a different column layout need an explicit mapping for those fields.
 
+### Collect an issuer cohort from dates alone
+
+`collect` finds ordinary Main Board IPOs in the inclusive listing-date interval (prospectus date is used only if the listing date is absent). It obtains missing annual HKEX New Listing Reports, checks that every requested year is covered, creates a workbook from `templates/HKIPO-MB-template-final.xlsx`, and prepares prospectus and allotment extraction packets. The workbook, artifacts, hash state, and generated `cohort.yaml` live together under `prospectus_pipeline/datasets/HKIPO_<start>_<end>_HKIPO-MB/`.
+
+```bash
+python3 run.py collect --period-start 2026-04-01 --period-end 2026-06-30
+```
+
+The first invocation exits with code `3` when AI extraction or independent review is pending. Pass the printed `cohort.yaml` as `config_path` to `workflows/prospectus_extract.js` and `workflows/allot_extract.js`. Those workflows create extracted JSON and hash-bound review records. Rerun the **same** `collect` command afterward; it validates, writes the reviewed fields, collects external indicators, and audits the workbook. Existing workbook values are preserved on resume.
+
+If an annual report is unavailable or the current-year report ends before the requested date, `collect` stops and names the missing year. Reports before 2020 use `.xls`; the pipeline requires `xlrd>=2.0.1` for them. Dates after today are rejected. `--source-dir` selects a local annual-report cache if needed.
+
+The 90-day IPO count may require reports from the year before the selected cohort. `collect` checks those reports before writing reviewed fields; the generated config remembers `--source-dir` for later runs. A cohort whose count window reaches a year with no official Main Board report stops with that year in the error message.
+
+This command preserves the existing independent review requirement: it never approves extracted evidence by itself. A missing prospectus or allotment document also stops the run rather than silently producing an incomplete workbook.
+
 ### 1. Status, Audit, Cross-Check, and Export
 ```bash
 # Check pipeline lifecycle and hash alignment status

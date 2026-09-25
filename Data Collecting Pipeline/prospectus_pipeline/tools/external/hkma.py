@@ -27,7 +27,8 @@ from pathlib import Path
 
 import requests
 
-ROOT = Path(__file__).resolve().parent
+# 与 hkma_import.py 保持一致：必须是 prospectus_pipeline/ 而非 tools/external/
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUT = ROOT / "data" / "manual" / "hibor_balance.csv"
 BASE = ("https://api.hkma.gov.hk/public/market-data-and-statistics/"
         "daily-monetary-statistics/daily-figures-interbank-liquidity")
@@ -107,8 +108,11 @@ def normalise(rows: list[dict], frm: str | None = None,
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="从 HKMA API 拉取 HIBOR / 银行体系总结余")
-    ap.add_argument("--from", dest="frm", default="2025-11-01")
-    ap.add_argument("--to", dest="to", default="2026-04-30")
+    # 默认取最近 12 个月，避免写死区间在采集新 cohort 时静默缺数据
+    _today = dt.date.today()
+    ap.add_argument("--from", dest="frm",
+                    default=(_today - dt.timedelta(days=365)).isoformat())
+    ap.add_argument("--to", dest="to", default=_today.isoformat())
     ap.add_argument("--out", default=str(DEFAULT_OUT))
     ap.add_argument("--pagesize", type=int, default=1000,
                     help="每页条数（该 API 忽略 from/to，用大页 + offset 回溯）")
@@ -132,7 +136,7 @@ def main() -> int:
     print(f"\n已写出 {len(data)} 条 -> {out}")
     print(f"  区间 {data[0][0]} ~ {data[-1][0]}")
     print(f"  样例 HIBOR 1M = {data[0][1]}%（{data[0][0]}）  总结余 = {data[0][2]} 百万港元")
-    print("\n下一步：python3 prospectus_pipeline/tools_import_market_csv.py --dry-run")
+    print(f"\n下一步：python3 prospectus_pipeline/tools/external/hkma_import.py --book <workbook>")
     return 0
 
 

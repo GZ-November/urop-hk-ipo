@@ -33,12 +33,13 @@ htmlcov/
 .dsh/
 
 # ==============================================================================
-# Private Research Data & Collected Datasets (Strictly Excluded)
+# Research workbooks and codebooks are versioned; raw source data stays local.
 # ==============================================================================
 *.xlsx
 !Data Collecting Pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
 !Data Collecting Pipeline/HKIPO-MB20*.xlsx
 !Data Collecting Pipeline/templates/*.xlsx
+!**/prospectus_pipeline/datasets/**/HKIPO-MB*.xlsx
 *.xls
 *.xlsm
 *.csv
@@ -55,9 +56,12 @@ htmlcov/
 **/docs/
 Survey Paper/
 
-# Pipeline Working Cache, Extracted JSONs, and Generated Artifacts
+# Pipeline working cache and extracted artifacts
 **/prospectus_pipeline/data/
 **/prospectus_pipeline/out/
+**/prospectus_pipeline/datasets/**/data/
+**/prospectus_pipeline/datasets/**/out/
+**/prospectus_pipeline/datasets/**/cohort.yaml
 *.backup-*.json
 *-backup-*.json
 .pipeline_state

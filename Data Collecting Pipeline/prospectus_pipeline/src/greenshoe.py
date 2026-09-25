@@ -36,12 +36,14 @@ NUM = r"\d{1,3}(?:,\d{3})+|\d{4,}"
 # Coordinators (for themselves and on behalf of the International Underwriters), on
 # Saturday, February 7, 2026, in respect of an aggregate of 4,337,300 H Shares"），
 # 所以按 over-allotment 锚点开窗，而不是按句子匹配。
+# 标的可能是普通股（Shares）或预托证券/存托凭证（HDRs，如 DRS 上市），两者都要认。
+UNIT = r"(?:Shares|HDRs)"
 PATTERNS = [
-    re.compile(rf"in\s+respect\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?Shares", re.I),
-    re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:H\s+)?Shares", re.I),
-    re.compile(rf"allot(?:ted)?\s+and\s+issued\s+(?:by\s+the\s+Company\s+)?(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+)?Shares", re.I),
-    re.compile(rf"subscri\w+\s+for\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?Shares", re.I),
-    re.compile(rf"({NUM})\s*(?:new\s+)?(?:H\s+)?Shares\s+(?:will\s+be|have\s+been|were)\s+(?:allotted|issued)", re.I),
+    re.compile(rf"in\s+respect\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?{UNIT}", re.I),
+    re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:H\s+)?{UNIT}", re.I),
+    re.compile(rf"allot(?:ted)?\s+and\s+issued\s+(?:by\s+the\s+Company\s+)?(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+)?{UNIT}", re.I),
+    re.compile(rf"subscri\w+\s+for\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?{UNIT}", re.I),
+    re.compile(rf"({NUM})\s*(?:new\s+)?(?:H\s+)?{UNIT}\s+(?:will\s+be|have\s+been|were)\s+(?:allotted|issued)", re.I),
 ]
 ANCHOR = re.compile(r"over-?allotment", re.I)
 PCT = re.compile(r"representing\s+(?:approximately\s+)?([\d.]+)\s*%\s+of\s+the\s+"

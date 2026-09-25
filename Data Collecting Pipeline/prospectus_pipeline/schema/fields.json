@@ -57,6 +57,7 @@
       "unit": "shares",
       "source": "prospectus",
       "missing": "NaN",
+      "hint": "全球发售完成前的已发行股份总数。本数据集口径：一律填 L − M（Total 减去全球发售股数），即使招股书未披露「资本化发行」也必须照填，不得留 NaN。用于满足恒等式 L = N + Q。2026Q1 成品工作簿 38 家公司全部取 L − M，Q2 必须同口径。数值只取权威 SHARE CAPITAL 汇总表与封面，禁止取「历史沿革／资本化发行沿革」段落。",
       "section_keywords": [
         "SHARE CAPITAL",
         "GLOBAL OFFERING STATISTICS",
@@ -73,6 +74,7 @@
       "unit": "shares",
       "source": "prospectus",
       "missing": "NaN",
+      "hint": "与 col_N 同口径：一律填 L − M（全球发售完成前的已发行股份总数），即使招股书未披露「资本化转换」也必须照填，不得留 NaN。用于满足恒等式 L = O + M。2026Q1 成品 38 家全部为 L − M。",
       "section_keywords": [
         "SHARE CAPITAL",
         "GLOBAL OFFERING STATISTICS",
@@ -89,6 +91,7 @@
       "unit": "shares",
       "source": "prospectus",
       "missing": "NaN",
+      "hint": "老股出售（Sale Shares）数量。若为全部新股的 Offer for Subscription（无 Selling Shareholder），填数字 0，不得留 NaN，用于满足恒等式 M = Q + P。判据：封面／股本汇总表无 Sale Shares 行，且全文无 Selling Shareholder 披露。2026Q1 成品 38 家全部为 0。若确有老股出售，按招股书披露填写。",
       "section_keywords": [
         "SHARE CAPITAL",
         "GLOBAL OFFERING STATISTICS",

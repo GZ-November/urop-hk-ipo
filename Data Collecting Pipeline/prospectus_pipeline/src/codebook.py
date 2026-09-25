@@ -2,7 +2,7 @@
 """HK IPO 学术研究级变量字典（Codebook）与纯净 CSV 导出引擎。
 
 功能：
-  1. 完整解析 HKIPO-MB2026Q1.xlsx 交付物（161 列 × 38 家公司）；
+  1. 完整解析当前配置的工作簿（变量数与样本量按工作簿动态识别）；
   2. 自动识别三色数据层级：
      - 浅绿（A–K，11 列）：香港交易所新上市报告官方基础信息；
      - 浅蓝（L–AY, DP, CJ, BA–CI，60 列）：招股书全量披露指标；
@@ -11,9 +11,9 @@
   3. 变量类型智能推断（Numeric / Date / Boolean / Categorical / Text）；
   4. 计算样本统计量（有效样本量、填报率、均值、中位数、标准差、分位数、极值范围、分类频数）；
   5. 导出：
-     - out/HKIPO-MB2026Q1_clean.csv (UTF-8 with BOM, compatible with Stata, Python pandas, and Excel);
-     - out/HKIPO_2026Q1_Codebook.md (学术数据变量字典，供论文附录与导师汇报)；
-     - out/HKIPO_2026Q1_Codebook.json (结构化机器可读变量元数据)。
+     - cohort-specific clean CSV (UTF-8 with BOM, compatible with Stata, Python pandas, and Excel);
+     - cohort-specific Markdown codebook;
+     - cohort-specific machine-readable JSON codebook.
 """
 from __future__ import annotations
 
@@ -21,7 +21,6 @@ import csv
 import datetime as dt
 import json
 import math
-import re
 import statistics
 import sys
 from collections import Counter
@@ -35,7 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from cohort import load_cfg, read_companies  # noqa: E402
+from run import load_cfg  # noqa: E402
 
 # 浅绿 A–K 官方定义
 HKEX_GREEN_VARS = {
@@ -431,10 +430,8 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     """完整扫描工作簿生成全量变量字典与样本统计量。"""
     if cfg is None:
         cfg = load_cfg()
-    if cfg.get("workbook_path"):
+    if "workbook_path" in cfg:
         book_path = Path(cfg["workbook_path"])
-    elif cfg.get("_workbook_path"):
-        book_path = Path(cfg["_workbook_path"])
     elif Path(cfg["workbook"]).is_absolute():
         book_path = Path(cfg["workbook"])
     else:
@@ -463,12 +460,16 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     start_row = cfg["data_start_row"]
     max_col = ws.max_column
 
-    # 使用统一运行配置选取样本行，确保代码本与其它阶段的日期范围一致。
-    valid_rows = [company["row"] for company in read_companies(cfg)]
+    # 动态确定实际公司样本数量
+    valid_rows = []
+    for r in range(start_row, ws.max_row + 1):
+        c_val = ws.cell(r, 2).value
+        if c_val is not None and str(c_val).strip():
+            valid_rows.append(r)
     n_companies = len(valid_rows)
     if n_companies == 0:
-        wb.close()
-        raise ValueError("No issuer rows match the configured workbook and date range")
+        n_companies = max(1, ws.max_row - start_row + 1)
+        valid_rows = list(range(start_row, start_row + n_companies))
 
     variables = []
     matrix = []
@@ -757,7 +758,7 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
         cov = v.get("coverage_status", "")
         cov_disp = f"{cov} ({fill})" if cov != "Complete (100%)" else "100% 完备"
         timing_disp = v.get("timing_convention", "-")
-        summary_disp = v["stats"].get("summary_display", "-").replace("|", "/")
+        summary_disp = " ".join(v["stats"].get("summary_display", "-").split()).replace("|", "/")
         lines.append(f"| {col} | {h} | {desc} | {tier_short} | `{dtype}` | {timing_disp} | {cov_disp} | {summary_disp} |")
 
 
@@ -789,9 +790,7 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
 def generate_codebook_json(variables: list[dict], summary: dict, out_path: Path | None = None) -> Path:
     """导出结构化 JSON 格式代码本供 Agent 或 API 调用。"""
     if out_path is None:
-        cohort = summary.get("cohort", "IPO cohort")
-        tag = re.sub(r"[^A-Za-z0-9_-]+", "", cohort.replace(" ", ""))
-        out_path = ROOT / "out" / f"HKIPO_{tag}_Codebook.json"
+        out_path = ROOT / "out" / "HKIPO_Codebook.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     payload = {
@@ -809,7 +808,7 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     variables, summary = build_codebook(cfg)
     cohort = summary.get("cohort", "IPO cohort")
     tag = cohort.replace(" ", "")
-    dataset_id = cfg.get("dataset", {}).get("id", "HKIPO") if cfg else "HKIPO"
+    dataset_id = cfg.get("dataset", {}).get("id", Path(cfg["workbook"]).stem) if cfg else "HKIPO"
 
     csv_name = f"{dataset_id}_clean.csv"
     md_name = f"HKIPO_{tag}_Codebook.md"

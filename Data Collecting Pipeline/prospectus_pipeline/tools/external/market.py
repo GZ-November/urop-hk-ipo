@@ -36,7 +36,7 @@ WS = ROOT.parent
 _cfg = load_cfg()
 _configured_book = Path(_cfg["workbook"])
 BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
-CACHE = ROOT / "data" / "market"
+CACHE = _cfg["paths"]["data"] / "market"
 SHEET = _cfg.get("sheet", "NLR")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 

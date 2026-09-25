@@ -1,20 +1,20 @@
-# 香港主板新股市场全景实证与理论研究课题库 (20 大核心 Research Ideas)
+# 香港主板新股市场全景实证与理论研究课题库 (21 大核心 Research Ideas)
 # The Hong Kong Main Board IPO Panoramic Research Compendium: Theoretical Frameworks, Institutional Realities & Econometric Specifications
 
 > **学术基石**：以 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)** 经典综述单行本《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）为核心理论与实证基准，融贯公司金融学、微观市场结构与合同理论前沿经典文献。  
-> **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，138 维完整跨学科指标，38 家挂牌样本，覆盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分股权、基石投资者配售及二级市场量价，100% 审计级穿透确证）。  
-> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 20 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
+> **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，202 维完整跨学科指标，38 家挂牌样本，覆盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分股权、基石投资者配售及二级市场量价，100% 审计级穿透确证）。
+> **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 21 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
 > 1. 💡 研究课题与核心科学问题 (Research Title & Core Question)
 > 2. 📚 经典文献基准与美股经验事实 (Literature Baseline & U.S. Stylized Facts - Lowry et al. 2017)
 > 3. 🏛️ 香港主板制度背景与样本微观现实 (HKEX Institutional Realities & 2026 Q1 Distribution)
 > 4. 🔬 待检验学术假说体系 (Testable Empirical Hypotheses: $H_a, H_b$)
 > 5. 📐 规范计量经济学回归模型 (Econometric Specifications with LaTeX Equations)
-> 6. 📊 138 列主表变量与字段映射 (Exact Column Mapping to `HKIPO-MB2026Q1.xlsx`)
+> 6. 📊 202 列主表变量与字段映射 (Exact Column Mapping to `HKIPO-MB2026Q1.xlsx`)
 > 7. 🧭 经济学直觉与学术边际贡献 (Economic Intuition & Contribution)
 
 ---
 
-## 目录索引 (Directory of 20 Research Ideas)
+## 目录索引 (Directory of 21 Research Ideas)
 
 - [Idea 01: 多元化监管通道选择、信息不对称与上市估值折价 (Chapter 18A / 18C / 19A A+H)](#idea-01-多元化监管通道选择信息不对称与上市估值折价-chapter-18a--18c--19a-ah)
 - [Idea 02: FINI 数字化结算、双轨发售机制（Mechanism A vs. B）与固定价格发行的动态信息提取异化](#idea-02-fini-数字化结算双轨发售机制mechanism-a-vs-b与固定价格发行的动态信息提取异化)
@@ -36,6 +36,7 @@
 - [Idea 18: 发行费用分拆中的“软美元寻租”：固定承销佣金 vs. 酌情奖励费率博弈](#idea-18-发行费用分拆中的软美元寻租固定承销佣金-vs-酌情奖励费率博弈)
 - [Idea 19: 卖方跨期期望效用最大化与“理性抑价”：发行流产保险、解禁期多阶段套现与激励相容信息租金](#idea-19-卖方跨期期望效用最大化与理性抑价发行流产保险解禁期多阶段套现与激励相容信息租金)
 - [Idea 20: 港股 IPO 长期收益之谜：上市后 3 年买入持有回报（BHR）、基准指数加权偏误（EW vs. VW）与同风格匹配检验](#idea-20-港股-ipo-长期收益之谜上市后-3-年买入持有回报bhr基准指数加权偏误ew-vs-vw与同风格匹配检验-long-run-underperformance-wealth-relatives--benchmark-contamination)
+- [Idea 21: IPO 配售的跨期交换：热股配额、二级市场佣金与冷门项目支持](#idea-21-ipo-allocation-quid-pro-quo)
 - [三、建议利用的制度变化 (扩展历史样本后的准实验设计)](#三建议利用的制度变化)
 - [附录：全景课题库统一变量定义与 202 列主表映射全景矩阵](#附录全景课题库统一变量定义与-202-列主表映射全景矩阵)
 
@@ -78,7 +79,7 @@ $$\begin{aligned}
 &+ \beta_4 \ln(\text{Proceeds}_i) + \beta_5 \text{SubscriptionRatio}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 1.6 138 列主表变量与字段映射
+### 1.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 发售区间相对宽度 | **Col 23** | `Filing range width (%)` | 数值百分比 | 模型 1.1 被解释变量 (Y) |
@@ -132,7 +133,7 @@ $$\begin{aligned}
 $$\text{IR}_i = \alpha_0 + \beta_1 \Delta P_i^+ + \beta_2 \Delta P_i^- + \beta_3 \text{RangeWidth}_i + \beta_4 \text{FixedPriceDummy}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
 - 检验假说：$\beta_1 > \beta_2$ 且 $\beta_1 > 0$（验证正向上修对抑价率的非对称驱动）。
 
-### 2.6 138 列主表变量与字段映射
+### 2.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -183,7 +184,7 @@ $$\begin{aligned}
 #### 模型 3.2：基石投资对绿鞋行使率的替代模型 (Tobit / Probit)
 $$\text{GreenshoeRate}_i = \theta_0 + \theta_1 \text{CornerstoneAllocationPct}_i + \theta_2 \text{IR}_i + \theta_3 \text{UnderwriterPrestige}_i + \mathbf{\Gamma} \mathbf{Z}_i + \mu_i$$
 
-### 3.6 138 列主表变量与字段映射
+### 3.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日翻转抛售率 | **Col 134**| `First-day flipping ratio (%)` | 数值百分比 | 模型 3.1 被解释变量 (Y) |
@@ -234,7 +235,7 @@ $$\begin{aligned}
 - **第二阶段 (Second Stage)**：
   $$\text{IR}_i = \alpha_0 + \alpha_1 \widehat{\text{VCBacked}}_i + \alpha_2 \text{Chapter18C}_i + \mathbf{\Gamma} \mathbf{X}_i + \varepsilon_i$$
 
-### 4.6 138 列主表变量与字段映射
+### 4.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -248,7 +249,7 @@ $$\begin{aligned}
 | 18C 特专科技标识 | **Col 78** | `Chapter 18C flag` | 0/1 虚拟变量 | 交互调节变量 |
 
 ### 4.7 经济学直觉与学术贡献
-将 Gompers (1996) 与 Megginson & Weiss (1991) 的美股经典之争引入港股特专科技改革前沿，通过 138 列数据中的派驻董事、持有年限与顶级机构标签，实现了对 VC“认证 vs 造势”的精准微观解构。
+将 Gompers (1996) 与 Megginson & Weiss (1991) 的美股经典之争引入港股特专科技改革前沿，通过 202 列数据中的派驻董事、持有年限与顶级机构标签，实现了对 VC“认证 vs 造势”的精准微观解构。
 
 ---
 
@@ -279,7 +280,7 @@ $$\text{RangeWidth}_i = \alpha_0 + \beta_1 \ln(\text{SyndicateSize}_i) + \beta_2
 #### 模型 5.2：辛迪加结构对顶格定价落点的 Logistic 模型
 $$\text{Logit}\left(\text{Prob}(\text{PricingPosition}_i = \text{'At high'})\right) = \theta_0 + \theta_1 \ln(\text{SyndicateSize}_i) + \theta_2 \ln(\text{SubscriptionRatio}_i) + \mathbf{\Gamma} \mathbf{Z}_i$$
 
-### 5.6 138 列主表变量与字段映射
+### 5.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 发售区间相对宽度 | **Col 23** | `Filing range width (%)` | 数值百分比 | 模型 5.1 被解释变量 (Y) |
@@ -451,7 +452,7 @@ $$\begin{aligned}
 &+ \beta_3 \text{CEODuality}_i + \beta_4 \ln(\text{FirmAge}_i + 1) + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 7.6 138 列主表变量与字段映射
+### 7.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -493,7 +494,7 @@ $$\begin{aligned}
 &+ \beta_4 \text{HIBOR1m}_i + \beta_5 \ln(\text{BankingAggregateBalance}_i) + \beta_6 \text{IPOCount90d}_i + \varepsilon_i
 \end{aligned}$$
 
-### 8.6 138 列主表变量与字段映射
+### 8.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -537,7 +538,7 @@ $$\begin{aligned}
 &+ \beta_4 \text{IR}_i + \beta_5 \text{ControllerEconomicPct}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 9.6 138 列主表变量与字段映射
+### 9.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 基石配售占基础发售比 | **Col 103**| `Final cornerstone allocation (% of base offer)` | 数值百分比 | 核心解释变量 (X) |
@@ -578,7 +579,7 @@ $$\begin{aligned}
 &+ \beta_4 \ln(\text{InterestBearingDebt}_i + 1) + \beta_5 \text{LeverageRatio}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 10.6 138 列主表变量与字段映射
+### 10.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -622,7 +623,7 @@ $$\begin{aligned}
 &+ \beta_4 \text{UnrestrictedFloatPct}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 11.6 138 列主表变量与字段映射
+### 11.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 绿鞋实际行使比例 | **Col 115**| `Greenshoe exercise rate (%)` | 数值百分比 | 核心自变量 (X) |
@@ -670,7 +671,7 @@ $$\begin{aligned}
 &+ \theta_3 \text{ListingExpenses}_i + \mathbf{\Gamma} \mathbf{X}_i + \mu_i
 \end{aligned}$$
 
-### 12.6 138 列主表变量与字段映射
+### 12.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 发售区间相对宽度 | **Col 23** | `Filing range width (%)` | 数值百分比 | 模型 12.1 被解释变量 (Y) |
@@ -715,7 +716,7 @@ $$\begin{aligned}
 \end{aligned}$$
 其中 $\text{IntradayVolatility}_i = \frac{P_{i, \text{high}} - P_{i, \text{low}}}{P_{i, \text{offer}}}$。
 
-### 13.6 138 列主表变量与字段映射
+### 13.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日最高价 | **Col 131**| `First trading day high (HK$)` | 货币数值 | 盘中振幅核算分子 |
@@ -760,7 +761,7 @@ $$\begin{aligned}
 &+ \beta_4 \text{PreIPOHoldingYears}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 14.6 138 列主表变量与字段映射
+### 14.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 被解释变量 (Y) |
@@ -802,7 +803,7 @@ $$\text{Logit}\left(\text{Prob}(\text{WVRFlag}_i = 1)\right) = \alpha_0 + \beta_
 #### 模型 15.2：大客户集中度对估值区间相对宽度的影响 (OLS)
 $$\text{RangeWidth}_i = \theta_0 + \theta_1 \text{Top5CustomerPct}_i + \theta_2 \text{OperatingCashFlow}_i + \theta_3 \ln(\text{NetSales}_i) + \mathbf{\Gamma} \mathbf{Z}_i + \varepsilon_i$$
 
-### 15.6 138 列主表变量与字段映射
+### 15.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 前五大客户营收占比 | **Col 54** | `Top 5 customers (% of year-1 revenue)` | 数值百分比 | 核心自变量 (X) |
@@ -842,7 +843,7 @@ $$\text{RangeWidth}_i = \theta_0 + \theta_1 \text{Top5CustomerPct}_i + \theta_2 
 #### 模型 16.1：行业上市先后序对发售规模与区间宽度的回归模型 (OLS)
 $$\text{RangeWidth}_i = \alpha_0 + \beta_1 \text{FollowerOrderDummy}_i + \beta_2 \text{DaysSinceLeaderListed}_i + \beta_3 \ln(\text{RDExpensed}_i + 1) + \gamma \mathbf{X}_i + \varepsilon_i$$
 
-### 16.6 138 列主表变量与字段映射
+### 16.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 发售区间相对宽度 | **Col 23** | `Filing range width (%)` | 数值百分比 | 模型 16.1 被解释变量 (Y) |
@@ -884,7 +885,7 @@ $$\begin{aligned}
 &+ \beta_4 \text{InstitutionalShareholdingPct}_i + \gamma \mathbf{X}_i + \varepsilon_i
 \end{aligned}$$
 
-### 17.6 138 列主表变量与字段映射
+### 17.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 留在桌面上的财富 | **Col 129**| `Money left on the table (HK$)` | 货币数值 | 被解释变量 (Y) |
@@ -928,7 +929,7 @@ $$\text{Logit}\left(\text{Prob}(\text{PricingPosition}_i = \text{'At high'})\rig
 #### 模型 18.2：费用分拆结构对留在桌面上的财富的影响 (OLS)
 $$\ln(\text{MoneyLeft}_i) = \theta_0 + \theta_1 \text{DiscretionaryIncentivePct}_i + \theta_2 \text{FixedCommissionPct}_i + \theta_3 \Delta P_i + \mathbf{\Gamma} \mathbf{Z}_i + \varepsilon_i$$
 
-### 18.6 138 列主表变量与字段映射
+### 18.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 定价落点分类 | **Col 24** | `Pricing position in filing range` | 文本分类 | 模型 18.1 被解释变量 (Y) |
@@ -1005,7 +1006,7 @@ $$\begin{aligned}
 #### 模型 19.3：信息租金结构方程（Benveniste-Spindt 机制设计检验）
 $$\text{MoneyLeft}_i = \lambda_0 + \lambda_1 \max(0, \Delta P_i) \times \text{NetProceeds}_i + \lambda_2 \ln(\text{SubscriptionRatio}_i) + \lambda_3 \text{TopTierSponsor}_i + \mu_i$$
 
-### 19.6 138 列主表变量与字段映射
+### 19.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 上市首日抑价率 | **Col 128**| `First-day return / Underpricing (%)` | 数值百分比 | 模型 19.1 被解释变量 (Y) |
@@ -1097,7 +1098,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 * $\text{SMB}_t$、$\text{HML}_t$、$\text{UMD}_t$：港股市场的规模因子、估值因子与动量因子；
 * **核心检验目标**：截距项 $\alpha$（Alpha）是否显著异于 0。若 $\alpha$ 在统计上不显著，则直接拒绝“IPO 长期异常跑输”假说。
 
-### 20.6 138 列主表变量与字段映射
+### 20.6 202 列主表变量与字段映射
 | 变量名称 | 主表列号 | 表头英文字段名 | 字段类型 | 计量经济学角色 |
 |---|:---:|---|:---:|:---:|
 | 发行认购价 | **Col 11** | `IPO Subscription Price (HK$)` | 货币数值 | 收益率基准起点参考 |
@@ -1117,6 +1118,65 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 1. **打破“IPO 长期必输”的学术迷信**：将 Lowry et al. (2017) 针对美股的现代计量经济学基准检验首次完整引入港股新股市场，系统揭示了等权重（EW）与市值加权（VW，带 8% 上限）在衡量港股长线收益时的系统性偏差；
 2. **连接一级发行与二级长线资产定价**：建立了一级市场制度特征（基石份额、18A/18C 监管通道、首日抑价让利）对二级市场 3 年期真实累积回报的传导链条；
 3. **为港股投资者与监管政策提供理性证据**：为买方机构评估 IPO 长期配置价值、以及港交所评估特专科技（18C）和未盈利生物科技（18A）长周期资本形成质量提供了扎实的量化分析框架。
+
+---
+
+<a id="idea-21-ipo-allocation-quid-pro-quo"></a>
+## Idea 21: IPO 配售的跨期交换：热股配额、二级市场佣金与冷门项目支持
+
+### 21.1 研究课题与核心科学问题
+- **研究课题**：在累计投标询价（Bookbuilding）中，承销商的机构配售裁量权是否被用于奖励能够提供有效需求信息的投资者，还是被用于换取其向承销商贡献的二级市场佣金、其他发行认购或交易业务？
+- **核心问题**：热 IPO 的折价配额是否构成一种可观察的关系租金（relationship rent）？投资者是否以异常佣金、围绕 IPO 的低经济价值交易，或对冷门发行的认购支持回报承销商？这些交换与正常客户关系、信息生产奖励及合法的执行服务如何区分？
+- **理论张力**：Benveniste–Spindt 的信息生产模型预言，承销商可以通过价格修正与配售份额奖励如实披露私有需求信息；关系寻租假说则预言，投资者过往带给承销商的佣金或其他业务，会独立于订单信息质量影响其获配热股的机会与份额。两种机制可并存，不能仅凭“机构获配多”推断寻租。
+
+### 21.2 监管史与证据边界
+- **直接个案证据**：SEC 对 Robertson Stephens 的 2003 年执法公告称，1999–2000 年该公司向部分机构账户（包括对冲基金）配售热门 IPO；部分账户随后在二级市场交易中支付异常高的佣金。公告举例称，通常每股约 0.06 美元的佣金在部分交易中升至每股 2.50 美元，且部分账户支付的费率超过通常水平 4,000%。案件以民事和解解决，公司未承认或否认投诉中的指控。该个案为机制提供了直接历史依据，但不能外推为所有投行、对冲基金或 IPO 的常规做法。
+- **学术证据**：Reuter (2006) 发现，基金家族支付给主承销商的经纪佣金与其报告持有该承销商 IPO 的关系为正；其研究使用报告持仓而非完整的原始配售记录，因此仍需考虑短期翻转和分配数据不可观测造成的测量问题。Goldstein, Irvine, and Puckett (2011) 利用机构交易数据，报告了异常佣金与有利 IPO 配售之间的证据。
+- **冷门项目捆绑是可检验渠道，不是已确认的普遍行为**：SEC 在 2004 年 Regulation M **规则提案**中提出 Rule 106，拟明确禁止以热 IPO 配额为条件要求客户购买冷门发行或支付额外报酬；该提案没有作为新增 Rule 106 被最终采纳。SEC 同时指出，这类行为仍可能受当时既有 Regulation M、反欺诈/反操纵法律及 SRO 规则约束。因此，这份提案可说明监管者已识别该机制，不能被当作一个生效的 2004 年监管冲击。研究应使用订单、配售和交易层数据检验该渠道，而不应仅凭 IPO 发行失败或低回报作出判断。
+- **不能把不同监管行动混为一谈**：2003 年“Global Analyst Research Settlement”核心在于研究分析师与投资银行业务之间的利益冲突及相应结构改革；IPO 配售换佣金问题由独立的 IPO 配售执法和规则处理。NASD Rule 2712 后由 FINRA Rule 5131 承接；现行 Rule 5131(a) 针对的是以提供或威胁扣留新股配售为条件，诱使客户支付与服务不相称的过高报酬。它不等于禁止承销商正常提供经纪服务，也不把任何客户关系或合理佣金自动视为违规。
+- **范围限定**：二级市场稳定交易、绿鞋行使与客户佣金换取配售是不同机制；若纳入稳定行为，需要单独定义监管许可范围与可观测指标，不应将其统称为“回扣”。
+
+### 21.3 待检验学术假说体系
+- **$H_{21a}$（佣金—热股配售关系假说）**：在控制投资者提交的需求信息、估值准确度、订单规模、持仓期限、承销商与 IPO 特征后，投资者此前向承销商支付的异常二级市场佣金越高，其在该承销商主承销的正首日收益 IPO 中获得的配售份额越大。若相关性只出现在订单信息含量高、价格发现贡献大的投资者中，结果更符合信息生产奖励，而非单纯佣金交换。
+- **$H_{21b}$（热股与冷门项目捆绑假说）**：在相同投资者—承销商关系中，获得前期热门 IPO 较多配售的机构，随后更可能参与同一承销商主承销的弱需求发行；若要识别“被要求托底”，必须观察配售条件、承诺或通信，单凭投资者最终认购不能证明存在强制交换。
+- **$H_{21c}$（明确配售规则后的关系渠道迁移假说）**：NASD Rule 2712（后续纳入 FINRA Rule 5131，2011-05-27 生效）明确禁止将新股配售作为取得与服务不相称报酬的诱因后，直接的异常佣金—配售关系应减弱；若买方关系仍有价值，关系回报可能转向订单信息质量、正常经纪服务或其他可观察的非价格服务。2004 年 SEC Rule 106 是提案而非最终生效规则，不作为处理时点；也不能仅把 2003 年 Global Analyst Research Settlement 日期当作唯一处理时点。
+
+### 21.4 规范计量经济学设计
+以投资者 $j$—IPO $i$—主承销商 $u$ 为观察单元，首选真实获配股数或获配金额作为结果变量：
+
+#### 模型 21.1：佣金关系与热 IPO 获配份额
+$$\text{AllocationShare}_{iju} = \alpha + \beta_1\text{AbnormalCommission}_{ju,t-1} + \beta_2(\text{AbnormalCommission}_{ju,t-1} \times \text{HotIPO}_{i}) + \gamma\mathbf{X}_{iju} + \mu_j + \lambda_u + \tau_t + \varepsilon_{iju}$$
+
+其中 `AbnormalCommission` 应相对于同类证券、交易规模及执行质量估算的正常佣金，而非总佣金；`HotIPO` 可用发行前需求、发行价相对询价区间、首日回报等分别操作化，并对事后指标只作结果异质性分析，避免把事后信息当作事前配售依据。核心系数是 $\beta_2$，但即使为正也不能单独确立因果关系。
+
+#### 模型 21.2：热股配售与冷门发行参与
+$$\text{ColdDealParticipation}_{j,u,t} = \theta_0 + \theta_1\text{PriorHotAllocations}_{j,u,t-1} + \theta_2\text{InvestorDemandInfo}_{j,u,t} + \mu_j + \lambda_u + \delta_t + \eta_{j,u,t}$$
+
+需要订单提交、最终获配与认购承诺的逐笔数据；冷门发行应以事前订单簿需求或明确的发行风险指标定义，不能仅以事后破发分类。
+
+#### 制度检验：NASD Rule 2712 / FINRA Rule 5131 的事件研究
+若数据覆盖足够长的美国 IPO 历史区间，可围绕该规则在 2011-05-27 生效的时间检验异常佣金与配售关系是否变化。控制同期 IPO 热度、样本构成与其他规则变化，并报告平行趋势、安慰剂时间点及机制异质性。SEC 2004 年 Rule 106 提案未成为最终规则，不能作为已实施改革来构造 DiD。规则生效也不保证外生识别，因此估计值应解释为规则环境变化的关联效应，除非能建立可信的对照组和反事实。
+
+### 21.5 与本项目数据的映射及可行性
+| 变量 / 数据 | 当前项目字段 | 用途与限制 |
+|---|---|---|
+| IPO 发行人、主承销商 / 保荐人 | Stock Code（Col 2）；Sponsor(s)（Col 6）；Lead sponsor name（Col 190） | 构建发行人—承销商维度；需另行区分账簿管理人、销售团成员及实际配售决策方 |
+| 发行热度与初始回报 | Subscription Ratio（Col 105）；Pricing position（Col 24）；First-day return（Col 128） | 描述需求和发行后表现；认购倍数受公开发售规则影响，首日回报是事后结果 |
+| 发行人支付的承销费 | Base / discretionary / total underwriting fee rates（Col 193–195） | 可作发行契约控制变量；**不是**机构投资者向承销商支付的二级市场佣金，不能充当佣金回扣代理变量 |
+| 投资者—IPO 原始订单与获配 | 当前 2026 Q1 公司级主表未记录 | 核心因变量与信息贡献指标；需获取配售簿、订单簿或监管/承销商逐笔记录 |
+| 投资者—承销商二级市场佣金与交易 | 当前主表未记录 | 核心关系变量；需机构级佣金、交易及执行质量数据。13F 等低频持仓只能作为粗糙持有代理，无法还原原始获配、短期翻转或佣金流 |
+
+**可行性判断**：现有 2026 Q1 的 38 家 IPO 公司级工作簿不足以检验 $H_{21a}$ 与 $H_{21b}$，也不足以做规则变化的因果识别。当前字段适合描述 IPO 特征并搭建发行人—承销商主表；要回答“配额换佣金 / 冷门项目托底”，研究应扩展到美国历史投资者级分配与交易数据，或先确认能否取得香港逐笔订单、国际配售对象、最终获配与机构交易佣金。若拿不到这类数据，应将研究定位为制度比较与可检验机制，而不是宣称已证明港股存在相同利益交换。
+
+### 21.6 经济学直觉与学术边际贡献
+该课题将簿记建档的“信息租金”与关系型寻租放入同一重复博弈框架：机构可能因真实价格发现贡献获得配售，也可能以佣金或跨发行支持购买关系租金。研究价值在于分解这两种机制、厘清公开配售裁量权与客户业务之间的边界，并解释规则明确禁止某些交换后，投资者—承销商关系是否转向可证明的研究、订单质量和正常执行服务。
+
+### 21.7 核心资料与文献
+- SEC, [Robertson Stephens IPO allocation and profit-sharing action (2003)](https://www.sec.gov/enforcement-litigation/litigation-releases/lr-17923)；参见[SEC complaint](https://www.sec.gov/litigation/complaints/comp17923.htm)。
+- SEC, [Global Research Analyst Settlement overview](https://www.sec.gov/spotlight/globalsettlement.htm)；SEC, [Amendments to Regulation M (2004)](https://www.sec.gov/rules-regulations/2004/12/amendments-regulation-m-anti-manipulation-rules-concerning-securities-offerings)。
+- FINRA, [Rule 5131: New Issue Allocations and Distributions](https://www.finra.org/rules-guidance/rulebooks/finra-rules/5131)；NASD, [SR-NASD-2003-140 / proposed Rule 2712](https://www.finra.org/rules-guidance/rule-filings/sr-nasd-2003-140)。
+- Reuter, Jonathan (2006), [“Are IPO Allocations for Sale? Evidence from Mutual Funds,” *Journal of Finance*, 61(5), 2289–2324](https://doi.org/10.1111/j.1540-6261.2006.01058.x)。
+- Goldstein, Michael A., Paul Irvine, and Andy Puckett (2011), [“Purchasing IPOs with Commissions,” *Journal of Financial and Quantitative Analysis*, 46(5), 1193–1225](https://doi.org/10.1017/S0022109011000548)。
 
 ---
 
@@ -1151,7 +1211,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 
 ## 附录：全景课题库统一变量定义与 202 列主表映射全景矩阵
 
-下表系统汇编了上述 20 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
+下表系统汇编了上述 21 大独立 Research Ideas 涉及的核心学术与微观制度指标，在主数据库 `HKIPO-MB2026Q1.xlsx`（Sheet: `NLR`）及纯净数据文件 `HKIPO-MB2026Q1_clean.csv` 中的法定列号、英文标准表头、中文含义、所属 Idea 索引及计量经济学角色：
 
 | 列号 | 列标 | 规范英文字段名 (Standard Header) | 中文口径释义 | 所属 Idea 索引 | 计量角色 | 格式规范 |
 |:---:|:---:|---|---|:---:|:---:|:---:|
@@ -1159,7 +1219,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 2** | `B` | `Stock Code` | 股份代号（四位港股代码） | 全库通用 | 唯一主键 | `@` |
 | **Col 3** | `C` | `Company Name at time of listing` | 公司上市时法定英文名称 | 全库通用 | 样本标识 | `@` |
 | **Col 4** | `D` | `Date of Prospectus (dd/mm/yy)` | 招股书法定刊发日期 | Idea 16 | 时间基准 | `YYYY-MM-DD` |
-| **Col 6** | `F` | `Sponsor(s)` | 独家/联席保荐人名单 | Idea 05, 10, 17 | 核心解释 | 文本列表 |
+| **Col 6** | `F` | `Sponsor(s)` | 独家/联席保荐人名单 | Idea 05, 10, 17, 21 | 核心解释 | 文本列表 |
 | **Col 11**| `K` | `IPO Subscription Price (HK$)` | 最终发售价 (HK$) | Idea 02, 06, 13, 20 | 核心价格 | `0.00` |
 | **Col 16**| `P` | `Sale Shares` | 老股发售转让股数 | Idea 14, 19 | 解释变量 | `#,##0` |
 | **Col 17**| `Q` | `New shares ` | 新股发售发行股数 | Idea 19 | 规模基准 | `#,##0` |
@@ -1167,7 +1227,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 21**| `U` | `Minimum Offer Price` | 最低发售价 (HK$) | Idea 01, 02 | 价格区间 | `0.00` |
 | **Col 22**| `V` | `Filing price revision (%)` | 偏离区间中点修正幅度 ($\Delta P$) | Idea 02, 06, 08, 19 | 核心自变量 | `0.00%` |
 | **Col 23**| `W` | `Filing range width (%)` | 询价区间相对宽度 (不确定性) | Idea 01, 05, 12, 15, 16 | 核心被解释/自变量 | `0.00%` |
-| **Col 24**| `X` | `Pricing position in filing range` | 定价落点分类 (At high/Fixed等) | Idea 02, 05, 18, 19 | 核心因变量/分组 | `@` |
+| **Col 24**| `X` | `Pricing position in filing range` | 定价落点分类 (At high/Fixed等) | Idea 02, 05, 18, 19, 21 | 核心因变量/分组 | `@` |
 | **Col 28**| `AB`| `total assets in year-1` | 上市前一年总资产 | Idea 01, 10 | 规模控制 | `#,##0` |
 | **Col 37**| `AK`| `Net sales in year-1` | 上市前一年营业收入 | Idea 15 | 经营控制 | `#,##0` |
 | **Col 44**| `AR`| `Underwriting Commission (% of fund raised HK (a)`| 香港公开发售法定承销佣金率 | Idea 05, 18 | 核心自变量 | `0.00%` |
@@ -1201,7 +1261,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 102**| `CT`| `Cornerstone investor names` | 基石投资者法定披露名单 | Idea 14 | 跨界匹配 | 文本列表 |
 | **Col 103**| `CU`| `Final cornerstone allocation (% of base offer)`| 基石投资者最终获配占基础发售比 | Idea 03, 09, 20 | 核心自变量 | `0.00%` |
 | **Col 104**| `CV`| `Earliest cornerstone unlock date (dd/mm/yy)`| 最早基石解禁法定日期 | Idea 09, 20 | 事件日期 | `YYYY-MM-DD` |
-| **Col 105**| `CW`| `Subscription Ratio (times)` | 公开发售散户认购超购倍数 | Idea 02, 08, 13, 18 | 核心自变量 | `#,##0.00` |
+| **Col 105**| `CW`| `Subscription Ratio (times)` | 公开发售散户认购超购倍数 | Idea 02, 08, 13, 18, 21 | 核心自变量 | `#,##0.00` |
 | **Col 106**| `CX`| `Public applicants` | 公开发售有效申请总人数 | Idea 13 | 散户广度 | 整数 |
 | **Col 107**| `CY`| `Public valid applied shares` | 公开发售有效申请总股数 | Idea 13 | 散户深度 | 整数 |
 | **Col 111**| `DC`| `Final global offering shares (before over-allotment)`| 全球发售基础总发售股数 | Idea 06 | 规模基准 | `#,##0` |
@@ -1215,7 +1275,7 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 125**| `DQ`| `1-month HIBOR before prospectus (%)` | 招股前一日 1 个月期 HIBOR 利率 | Idea 08, 13 | 资金成本 | `0.00%` |
 | **Col 126**| `DR`| `Banking system aggregate balance before prospectus`| 招股前一日香港银行体系总结余 | Idea 08 | 宏观流动性 | `#,##0` |
 | **Col 127**| `DS`| `First trading day closing price (HK$)` | 上市首日二级市场收盘价 (HK$) | Idea 20, 全库通用 | 基础价格 | `0.00` |
-| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | Idea 19, 20, 全库核心 | 核心因变量 (Y) | `0.00%` |
+| **Col 128**| `DX`| `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始回报率 | Idea 19, 20, 21, 全库核心 | 核心因变量 (Y) | `0.00%` |
 | **Col 129**| `DY`| `Money left on the table (HK$)` | 留在桌面上的财富 / 财富流失金额 | Idea 06, 17, 18, 19 | 核心因变量 (Y) | `#,##0.00` |
 | **Col 130**| `DZ`| `First trading day opening price (HK$)` | 上市首日二级市场开盘价 (HK$) | 全库通用 | 开盘表现 | `0.00` |
 | **Col 131**| `EA`| `First trading day high (HK$)` | 上市首日二级市场最高价 (HK$) | Idea 13 | 盘中振幅 | `0.00` |
@@ -1277,12 +1337,12 @@ $$(R_{pt} - R_{ft}) = \alpha + \beta_1 (R_{mt} - R_{ft}) + \beta_2 \text{SMB}_t 
 | **Col 187**| `GE`| `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]日累计超额收益 | Idea 09 | 核心因变量 (Y) | `0.00%` |
 | **Col 188**| `GF`| `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]日累计超额收益 | Idea 09 | 核心因变量 (Y) | `0.00%` |
 | **Col 189**| `GG`| `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前换手额之比 | Idea 09 | 冲击度量 | `0.000` |
-| **Col 190**| `GH`| `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | Idea 05, 10, 17 | 声誉/网络 | `@` |
+| **Col 190**| `GH`| `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | Idea 05, 10, 17, 21 | 声誉/网络 | `@` |
 | **Col 191**| `GI`| `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | Idea 05, 10 | 承销团规模 | 整数 |
 | **Col 192**| `GJ`| `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 | Idea 10 | 核心自变量 | `0/1` |
-| **Col 193**| `GK`| `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | Idea 18 | 核心自变量 | `0.00%` |
-| **Col 194**| `GL`| `Underwriting discretionary incentive fee rate (%)`| 承销酌情奖励费率估算 (%) | Idea 18 | 核心自变量 | `0.00%` |
-| **Col 195**| `GM`| `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | Idea 18 | 发行成本 | `0.00%` |
+| **Col 193**| `GK`| `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | Idea 18, 21 | 发行人费用控制（非投资者交易佣金） | `0.00%` |
+| **Col 194**| `GL`| `Underwriting discretionary incentive fee rate (%)`| 承销酌情奖励费率估算 (%) | Idea 18, 21 | 发行人费用控制（非投资者交易佣金） | `0.00%` |
+| **Col 195**| `GM`| `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | Idea 18, 21 | 发行人费用控制（非投资者交易佣金） | `0.00%` |
 | **Col 196**| `GN`| `Cornerstone investor count` | 基石投资者机构总家数 | Idea 09, 14 | 投资者结构 | 整数 |
 | **Col 197**| `GO`| `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 | Idea 09 | 核心自变量 | `0/1` |
 | **Col 198**| `GP`| `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份跨界基金 | Idea 14 | 核心自变量 | `0/1` |

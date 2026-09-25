@@ -56,6 +56,18 @@ HSIC_EN2CODE = {
     "Biotechnology": "281020",
     "Medical Devices & Supplies": "282010",
     "Medical & Aesthetic Services": "282020",
+    # 2026Q2 补全：HSICS 码取自恒生指数公司公开分类表
+    # （B_HSICSe.pdf 与本仓库 x 交叉验证；未猜测）
+    "Advertising & Marketing": "235010",
+    "Computers & Peripherals": "701020",
+    "Consumer Electronics": "232020",
+    "Energy Storage Units": "101070",
+    "Environmental Engineering": "101030",
+    "Gold & Precious Metals": "051010",
+    "Insurance": "502010",
+    "Other Retailers": "237050",
+    "Pharma & Biotech Contract Services": "281050",
+    "Pharmaceuticals": "281010",
 }
 
 HEADERS = {"BN": "Industry classification code",
@@ -82,8 +94,10 @@ def main() -> int:
     dry = args.dry_run
 
     hsic = json.loads((cfg["paths"]["out"] / "hsic.json").read_text(encoding="utf-8"))
-    tax = {r["code"]: r for r in json.loads(
-        (cfg["paths"]["data"] / "manual" / "hsics.json").read_text(encoding="utf-8"))}
+    taxonomy_path = cfg["paths"]["data"] / "manual" / "hsics.json"
+    if not taxonomy_path.is_file():
+        taxonomy_path = ROOT / "data" / "manual" / "hsics.json"
+    tax = {r["code"]: r for r in json.loads(taxonomy_path.read_text(encoding="utf-8"))}
 
     missing_map = sorted({v["hsic_sub"] for v in hsic.values()
                           if v.get("hsic_sub") and v["hsic_sub"] not in HSIC_EN2CODE})

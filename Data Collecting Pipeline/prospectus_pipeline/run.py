@@ -8,6 +8,8 @@
   python3 prospectus_pipeline/run.py validate      # 校验 AI 抽取结果
   python3 prospectus_pipeline/run.py write         # 写回模板（仅浅蓝列）
   python3 prospectus_pipeline/run.py all           # find + download + prepare
+  python3 prospectus_pipeline/run.py collect --period-start YYYY-MM-DD --period-end YYYY-MM-DD
+                                                 # 按上市日期建立并推进普通主板 IPO cohort
 加 --limit N 只处理前 N 家，--only 6082.HK 只处理指定公司。
 """
 from __future__ import annotations
@@ -21,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent          # prospectus_pipeline/
 WS = ROOT.parent                                # 工作簿所在目录
 sys.path.insert(0, str(ROOT / "src"))
-from cohort import load_cfg, read_companies
+from cohort import build_cohort_workbook, load_cfg, read_companies, write_cohort_config
 
 
 def cmd_find(cfg, args, companies):
@@ -144,8 +146,9 @@ def cmd_validate_ext(cfg, args, companies):
 
 def cmd_write(cfg, args, companies):
     from write_back import write_all
-    return write_all(cfg, fill_missing=args.fill_missing, only=[c["code"] for c in companies],
-                     limit=0, target=args.target)
+    write_all(cfg, fill_missing=args.fill_missing, only=[c["code"] for c in companies],
+              limit=0, target=args.target)
+    return 0
 
 
 def cmd_audit(cfg, args, companies):
@@ -197,24 +200,14 @@ def cmd_status(cfg, args, companies):
 def cmd_search(cfg, args, companies):
     import subprocess
     env = os.environ.copy()
-    env["HKIPO_TEXT_DIR"] = str(cfg["paths"]["text"])
-    forwarded = []
-    skip_value = False
-    for token in sys.argv[2:]:
-        if skip_value:
-            skip_value = False
-            continue
-        if token in {"--workbook", "--period-start", "--period-end"}:
-            skip_value = True
-            continue
-        forwarded.append(token)
-    cmd = [sys.executable, str(ROOT / "tools" / "search.py")] + forwarded
+    cmd = [sys.executable, str(ROOT / "tools" / "search.py"), *args.extra]
     return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_state(cfg, args, companies):
     import subprocess
-    cmd = [sys.executable, str(ROOT / "tools" / "state.py")] + sys.argv[2:]
+    cmd = [sys.executable, str(ROOT / "tools" / "state.py"), *args.extra,
+           "--target", args.target]
     return subprocess.call(cmd, cwd=WS)
 
 
@@ -232,36 +225,186 @@ def cmd_aftermarket(cfg, args, companies):
     return subprocess.call(cmd, cwd=WS)
 
 
+def cmd_allot_index(cfg, args, companies):
+    """Build allotment index for the selected cohort."""
+    import subprocess
+    cmd = [sys.executable, str(ROOT / "tools" / "build_allotment_index.py")]
+    return subprocess.call(cmd, cwd=WS)
+
+
+def cmd_expansion(cfg, args, companies):
+    """Write back academic expansion fields."""
+    import subprocess
+    cmd = [sys.executable, str(ROOT / "src" / "write_back_expansion.py"), "--workbook", str(cfg["_workbook_path"])]
+    return subprocess.call(cmd, cwd=WS)
+
+
+def cmd_disclosure_notes(cfg, args, companies):
+    """Derive the 10 disclosure note columns."""
+    import subprocess
+    cmd = [sys.executable, str(ROOT / "tools" / "derive_disclosure_notes.py"), "--book", str(cfg["_workbook_path"])]
+    if args.only:
+        cmd.extend(["--only", *args.only])
+    return subprocess.call(cmd, cwd=WS)
+
+
+def _ipo_count_reports(cfg, args, companies):
+    """Resolve every official report needed for the prospectus 90-day windows."""
+    from datetime import timedelta
+    from listing_reports import reports_for_interval
+
+    prospectus_dates = [c["prospectus_date"] for c in companies if c.get("prospectus_date")]
+    if len(prospectus_dates) != len(companies):
+        raise ValueError("至少一家发行人缺少招股书日期，无法计算上市前 90 天 IPO 数。")
+    source_dir = Path(
+        getattr(args, "source_dir", None)
+        or cfg["dataset"].get("report_source_dir")
+        or WS / "sources"
+    ).expanduser().resolve()
+    return reports_for_interval(
+        min(prospectus_dates) - timedelta(days=90),
+        max(prospectus_dates) - timedelta(days=1),
+        source_dir,
+    )
+
+
 def cmd_external(cfg, args, companies):
     """Orchestrate external data collection tools with fail-closed execution."""
     import subprocess
+    from datetime import timedelta
+
+    try:
+        nlr_reports = _ipo_count_reports(cfg, args, companies)
+    except (OSError, ValueError) as exc:
+        print(f"错误: 90 天 IPO 统计缺少官方年度报告: {exc}", file=sys.stderr)
+        return 1
+    prospectus_dates = [c["prospectus_date"] for c in companies]
     external_scripts = [
-        ("market", ROOT / "tools" / "external" / "market.py"),
-        ("hkma_import", ROOT / "tools" / "external" / "hkma_import.py"),
-        ("ipo_count", ROOT / "tools" / "external" / "ipo_count.py"),
-        ("flags", ROOT / "tools" / "external" / "flags.py"),
-        ("rules", ROOT / "tools" / "external" / "rules.py"),
-        ("hsic_codes", ROOT / "tools" / "external" / "hsic_codes.py"),
-        ("aftermarket", ROOT / "tools" / "external" / "aftermarket.py"),
+        ("market", ROOT / "tools" / "external" / "market.py", True, True),
+        ("hkma", ROOT / "tools" / "external" / "hkma.py", False, False),
+        ("hkma_import", ROOT / "tools" / "external" / "hkma_import.py", True, True),
+        ("ipo_count", ROOT / "tools" / "external" / "ipo_count.py", True, True),
+        ("flags", ROOT / "tools" / "external" / "flags.py", True, True),
+        ("rules", ROOT / "tools" / "external" / "rules.py", True, True),
+        ("hsic", ROOT / "tools" / "external" / "hsic.py", False, False),
+        ("hsic_codes", ROOT / "tools" / "external" / "hsic_codes.py", True, True),
+        ("aftermarket", ROOT / "tools" / "external" / "aftermarket.py", True, True),
     ]
-    book_target = str(WS / args.workbook) if args.workbook else str(WS / cfg["workbook"])
-    for name, script in external_scripts:
+    book_target = str(cfg["_workbook_path"])
+    for name, script, wants_book, wants_only in external_scripts:
         if not script.exists():
             print(f"错误: 外部脚本不存在: {script}")
             return 1
         print(f"\n--- 执行外部工具: {name} ---")
         cmd = [sys.executable, str(script)]
-        if getattr(args, "dry_run", False):
+        if name == "hkma":
+            start = min(prospectus_dates) - timedelta(days=7)
+            cmd.extend(["--from", start.isoformat(), "--to", cfg["dataset"]["period_end"],
+                        "--out", str(cfg["paths"]["data"] / "manual" / "hibor_balance.csv")])
+        if name == "hkma_import":
+            cmd.extend(["--csv", str(cfg["paths"]["data"] / "manual" / "hibor_balance.csv")])
+        if name == "ipo_count":
+            cmd.extend(["--nlr", *(str(path) for path in nlr_reports)])
+        if getattr(args, "dry_run", False) and wants_book:
             cmd.append("--dry-run")
         codes = [c["code"] for c in companies]
-        if codes:
+        if codes and wants_only:
             cmd.extend(["--only"] + codes)
-        cmd.extend(["--book", book_target])
+        if wants_book:
+            cmd.extend(["--book", book_target])
         proc = subprocess.run(cmd, cwd=WS)
         if proc.returncode != 0:
             print(f"错误: 外部工具 {name} 执行失败 (退出码 {proc.returncode})，终止后续流程。")
             return proc.returncode
     return 0
+
+
+def cmd_collect(cfg, args, companies):
+    """Prepare a date-selected cohort, then resume through the review gates."""
+    from contracts import normalize_code
+    from state import read_record
+
+    wanted = {normalize_code(c["code"]) for c in companies}
+
+    def index_covers(path: Path, packet_dir: Path) -> bool:
+        if not path.is_file():
+            return False
+        try:
+            records = json.loads(path.read_text(encoding="utf-8"))
+            indexed = {normalize_code(item["code"]) for item in records}
+            return wanted <= indexed and all(
+                (packet_dir / f"HKIPO-MB{code.split('.')[0]}.md").is_file()
+                for code in wanted
+            )
+        except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+            return False
+
+    out = cfg["paths"]["out"]
+    allot_out = cfg["paths"]["allot_out"]
+    if not index_covers(out / "packets.json", cfg["paths"]["packets"]):
+        for stage in (cmd_find, cmd_download, cmd_prepare):
+            result = stage(cfg, args, companies)
+            if not result or any(rec.get("status") == "error" for rec in result):
+                return 1
+        if not index_covers(out / "packets.json", cfg["paths"]["packets"]):
+            print("Prospectus preparation did not cover every issuer in the cohort.", file=sys.stderr)
+            return 1
+    if not index_covers(allot_out / "packets.json", cfg["paths"]["allot_packets"]):
+        if cmd_allot_index(cfg, args, companies):
+            return 1
+        result = cmd_allot(cfg, args, companies)
+        if not result:
+            return 1
+        if not index_covers(allot_out / "packets.json", cfg["paths"]["allot_packets"]):
+            print("Allotment preparation did not cover every issuer in the cohort.", file=sys.stderr)
+            return 1
+
+    def missing_extractions(directory: Path) -> list[str]:
+        return [
+            code for code in sorted(wanted)
+            if not (directory / f"HKIPO-MB{code.split('.')[0]}.json").is_file()
+        ]
+
+    missing_prospectus = missing_extractions(out / "extracted")
+    missing_allot = missing_extractions(allot_out / "extracted")
+    if missing_prospectus or missing_allot:
+        print("Cohort workbook and document packets are ready. Extraction is still required.")
+        print("  Cohort config:", cfg["_config_path"])
+        if missing_prospectus:
+            print("  Prospectus:", ", ".join(missing_prospectus))
+            print("  Workflow:", ROOT / "workflows" / "prospectus_extract.js")
+        if missing_allot:
+            print("  Allotment:", ", ".join(missing_allot))
+            print("  Workflow:", ROOT / "workflows" / "allot_extract.js")
+        print("After extraction and independent review, rerun the same collect command.")
+        return 3
+
+    for target in ("prospectus", "allot"):
+        result = cmd_validate(cfg, argparse.Namespace(target=target), companies)
+        if result.get("errors") or result.get("missing_files") or not result.get("gate_pass"):
+            return 1
+    unreviewed = [
+        f"{code} {target}" for code in sorted(wanted) for target in ("prospectus", "allot")
+        if not read_record(cfg, target, code, "reviewed").get("gate_pass")
+    ]
+    if unreviewed:
+        print("Independent review is required before write-back:", ", ".join(unreviewed))
+        print("  Cohort config:", cfg["_config_path"])
+        return 3
+
+    try:
+        _ipo_count_reports(cfg, args, companies)
+    except (OSError, ValueError) as exc:
+        print(f"错误: 90 天 IPO 统计缺少官方年度报告: {exc}", file=sys.stderr)
+        return 1
+
+    for target in ("prospectus", "allot"):
+        if cmd_write(cfg, argparse.Namespace(target=target, fill_missing=True), companies):
+            return 1
+    if cmd_external(cfg, args, companies):
+        return 1
+    cmd_audit(cfg, argparse.Namespace(target="all"), companies)
+    return cmd_cross_check(cfg, args, companies)
 
 
 def cmd_merge_topics(cfg, args, companies):
@@ -282,10 +425,11 @@ def cmd_merge_topics(cfg, args, companies):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="招股书 / 配发公告自动采集流水线")
-    ap.add_argument("stage", choices=["find", "download", "prepare", "allot", "greenshoe", "cornerstone",
+    ap.add_argument("stage", choices=["find", "download", "prepare", "allot_index", "allot", "greenshoe", "cornerstone",
                                      "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
-                                     "report", "codebook", "export", "status", "external", "aftermarket", "search", "state",
-                                     "merge_topics", "all"])
+                                     "report", "codebook", "export", "status", "external", "aftermarket", "expansion",
+                                     "disclosure_notes", "search", "state",
+                                     "merge_topics", "all", "collect"])
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")
     ap.add_argument("--dry-run", action="store_true", help="演练模式，不写回工作簿")
     ap.add_argument("--no-topics", action="store_true", help="跳过生成 4 个主题分片包")
@@ -297,15 +441,59 @@ def main() -> int:
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--workbook", default=None,
                     help="指定目标工作簿路径（可为相对路径或绝对路径）")
+    ap.add_argument("--config", default=None,
+                    help="指定 cohort 配置文件；也可用 PIPELINE_CONFIG 环境变量")
     ap.add_argument("--period-start", default=None, help="纳入样本的起始日期，格式 YYYY-MM-DD")
     ap.add_argument("--period-end", default=None, help="纳入样本的截止日期，格式 YYYY-MM-DD")
+    ap.add_argument("--source-dir", default=None, help="官方年度新上市报告的本地缓存目录（collect）")
     args, extra = ap.parse_known_args()
     args.extra = (args.extra or []) + extra
 
+    if args.stage == "collect" and args.dry_run:
+        ap.error("collect does not support --dry-run; use individual stages to preview writes")
+
+    generated_cohort = args.stage == "collect" and not args.workbook
+    runtime_override = bool(
+        args.workbook or args.period_start or args.period_end
+        or os.environ.get("HKIPO_WORKBOOK")
+        or os.environ.get("HKIPO_PERIOD_START")
+        or os.environ.get("HKIPO_PERIOD_END")
+    )
+    if generated_cohort:
+        if not args.period_start or not args.period_end:
+            ap.error("date-only collect requires --period-start and --period-end")
+        try:
+            from datetime import date
+            start = date.fromisoformat(args.period_start)
+            end = date.fromisoformat(args.period_end)
+            workbook = build_cohort_workbook(
+                start, end,
+                source_dir=Path(args.source_dir) if args.source_dir else None,
+            )
+            args.config = str(write_cohort_config(
+                start, end, workbook,
+                base_config=Path(args.config) if args.config else None,
+                source_dir=Path(args.source_dir) if args.source_dir else None,
+            ))
+            args.period_start = None
+            args.period_end = None
+            for name in ("HKIPO_WORKBOOK", "HKIPO_PERIOD_START", "HKIPO_PERIOD_END"):
+                os.environ.pop(name, None)
+        except (OSError, ValueError) as exc:
+            ap.error(str(exc))
+
     try:
-        cfg = load_cfg(args.workbook, args.period_start, args.period_end)
+        cfg = load_cfg(args.workbook, args.period_start, args.period_end, config_path=args.config)
     except (ValueError, KeyError) as exc:
         ap.error(str(exc))
+    os.environ["PIPELINE_CONFIG"] = str(cfg["_config_path"])
+    if runtime_override and not generated_cohort:
+        os.environ["HKIPO_WORKBOOK"] = str(cfg["_workbook_path"])
+        os.environ["HKIPO_PERIOD_START"] = cfg["dataset"]["period_start"]
+        os.environ["HKIPO_PERIOD_END"] = cfg["dataset"]["period_end"]
+    else:
+        for name in ("HKIPO_WORKBOOK", "HKIPO_PERIOD_START", "HKIPO_PERIOD_END"):
+            os.environ.pop(name, None)
     if args.stage in ("search", "state"):
         return globals()[f"cmd_{args.stage}"](cfg, args, None)
     companies = read_companies(cfg)

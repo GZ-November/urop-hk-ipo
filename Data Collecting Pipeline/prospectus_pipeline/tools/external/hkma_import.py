@@ -30,7 +30,7 @@ from run import load_cfg
 _cfg = load_cfg()
 _configured_book = Path(_cfg["workbook"])
 BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_book
-CSV_PATH = ROOT / "data" / "manual" / "hibor_balance.csv"
+CSV_PATH = _cfg["paths"]["data"] / "manual" / "hibor_balance.csv"
 
 HIBOR_HEADER = "1-month HIBOR before prospectus (%)"
 BALANCE_HEADER = "Banking system aggregate balance before prospectus (HK$)"

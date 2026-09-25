@@ -384,7 +384,8 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
             if target == "allot":
                 from cornerstone import assess
                 context = dict(context)
-                context["cornerstone"] = assess(cfg, code)
+                if "cornerstone" not in context:
+                    context["cornerstone"] = assess(cfg, code)
             structural = validate_record(rec, schema, code, target, context)
             packet = packets_dir / f"HKIPO-MB{code.split('.')[0]}.md"
             alt: dict[str, str] = {}

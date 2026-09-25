@@ -31,13 +31,13 @@ fi
 PY_VER=$("${PYTHON_BIN}" -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
 echo "✓ Python 解释器: ${PYTHON_BIN} (${PY_VER})"
 
-echo "=== [2/2] 检查核心运行依赖 (openpyxl, pyyaml, requests, pymupdf) ==="
-if "${PYTHON_BIN}" -c "import openpyxl, yaml, requests, fitz" &>/dev/null; then
+echo "=== [2/2] 检查核心运行依赖 (openpyxl, pyyaml, requests, pymupdf, xlrd) ==="
+if "${PYTHON_BIN}" -c "import openpyxl, yaml, requests, fitz, xlrd" &>/dev/null; then
   echo "✓ 所有依赖均已安装就绪。"
 else
   echo "⚠️  检测到缺失依赖，正在自动自愈安装: ${REQ_FILE} ..."
   "${PYTHON_BIN}" -m pip install -r "${REQ_FILE}"
-  "${PYTHON_BIN}" -c "import openpyxl, yaml, requests, fitz"
+  "${PYTHON_BIN}" -c "import openpyxl, yaml, requests, fitz, xlrd"
   echo "✓ 依赖自动补全成功！"
 fi
 

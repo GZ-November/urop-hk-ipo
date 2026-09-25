@@ -2,14 +2,14 @@
 
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/Tests-85%2F85%20Passed-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
+[![Tests](https://img.shields.io/badge/Tests-pytest-brightgreen.svg)](./Data%20Collecting%20Pipeline/prospectus_pipeline/tests)
 [![Architecture](https://img.shields.io/badge/Architecture-Deterministic%20%2B%20Agentic-orange.svg)](#core-architecture--design-principles)
 [![Zero Token Cost](https://img.shields.io/badge/Derivation%20Cost-0%20LLM%20Tokens-success.svg)](#core-architecture--design-principles)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 An end-to-end automated extraction, deterministic validation, cross-check auditing, and Excel workbook compilation toolkit for Hong Kong Stock Exchange (HKEX) Main Board IPO disclosures.
 
-> **Data Privacy Notice**: This repository contains the **automated engineering pipeline, validation rules, AI agent skills, and test suites**. In accordance with research protocol, proprietary collected datasets (`.xlsx`, `.csv`, extracted company JSONs, and raw source filings) are excluded from version control via [`.gitignore`](.gitignore).
+> **Data Policy**: Research workbooks and generated codebooks can be versioned. Raw filings, download caches, extracted company JSONs, and CSV exports stay local via [`.gitignore`](.gitignore).
 
 ---
 
@@ -100,7 +100,7 @@ All key operations are unified and executable directly from the repository root 
 # Health check: status + audit + cross_check + test in a single sweep
 make check
 
-# Run all 85 automated unit and regression tests
+# Run the automated unit and regression tests
 make test
 
 # Perform read-only cell-by-cell audit against target Excel template
@@ -121,7 +121,16 @@ make lint
 
 ### Use a different IPO cohort
 
-The checked-in `prospectus_pipeline/config.yaml` describes the 2026 Q1 reference dataset. For another quarter, copy it to a cohort-specific config and update `workbook`, `dataset` metadata, date bounds, and any cohort-specific paths. Keep the workbook schema and column headers compatible with the pipeline.
+The checked-in `prospectus_pipeline/config.yaml` describes the 2026 Q1 reference dataset. For an arbitrary listing-date interval, create and prepare a Main Board ordinary IPO cohort from official annual reports:
+
+```bash
+python3 "Data Collecting Pipeline/prospectus_pipeline/run.py" collect \
+  --period-start 2026-04-01 --period-end 2026-06-30
+```
+
+The command creates an isolated workbook and config under `prospectus_pipeline/datasets/`. It stops for independent extraction review before writing fields; rerun the same command after review. The [pipeline guide](./Data%20Collecting%20Pipeline/prospectus_pipeline/README.md) explains the review workflow and missing-source behavior.
+
+For an existing workbook, copy the reference config to a cohort-specific config and update `workbook`, `dataset` metadata, date bounds, and paths. Keep the workbook schema and column headers compatible with the pipeline.
 
 ```bash
 cp "Data Collecting Pipeline/prospectus_pipeline/config.yaml" \
@@ -340,7 +349,7 @@ This repository includes a standardized skill package compatible with AI coding 
         ├── schema/                         # Field contracts (fields.json, allot_fields.json, relational_schemas.json)
         ├── prompts/                        # LLM Extraction schemas & few-shot instructions
         ├── workflows/                      # Extraction workflows
-        ├── tests/                          # Automated test suite (85/85 Passed)
+        ├── tests/                          # Automated regression and safety tests
         ├── data/                           # PDF store, page text & evidence packets
         └── out/                            # Verifiable state ledger, clean CSV & Codebook
 ```

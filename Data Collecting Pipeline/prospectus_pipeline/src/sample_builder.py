@@ -54,6 +54,8 @@ def parse_date(v: Any) -> Optional[dt.date]:
 
 def clean_code(raw: Any) -> str:
     """标准化 4/5 位港股代码为 0000.HK 格式。"""
+    if isinstance(raw, (int, float)) and float(raw).is_integer():
+        raw = str(int(raw))
     digits = "".join(ch for ch in str(raw or "") if ch.isdigit())
     if not digits:
         return str(raw or "").strip()
@@ -77,10 +79,30 @@ def load_nlr_candidates(filepath: Path, cohort_year: int) -> list[dict[str, Any]
         logger.warning(f"File not found: {filepath}")
         return []
 
-    wb = openpyxl.load_workbook(filepath, data_only=True)
-    ws = wb.active
-    rows = list(ws.iter_rows(values_only=True))
-    wb.close()
+    if filepath.suffix.lower() == ".xls":
+        import xlrd
+
+        wb = xlrd.open_workbook(str(filepath), on_demand=True)
+        try:
+            ws = wb.sheet_by_index(0)
+            rows = []
+            for row_index in range(ws.nrows):
+                values = []
+                for col_index in range(ws.ncols):
+                    cell = ws.cell(row_index, col_index)
+                    value = cell.value
+                    if col_index in (3, 4) and cell.ctype == xlrd.XL_CELL_DATE:
+                        value = xlrd.xldate_as_datetime(value, wb.datemode)
+                    values.append(value)
+                rows.append(tuple(values))
+        finally:
+            wb.release_resources()
+    else:
+        wb = openpyxl.load_workbook(filepath, read_only=True, data_only=True)
+        try:
+            rows = list(wb.active.iter_rows(values_only=True))
+        finally:
+            wb.close()
 
     # 定位包含 "stock code" 的表头行
     hdr_idx = None

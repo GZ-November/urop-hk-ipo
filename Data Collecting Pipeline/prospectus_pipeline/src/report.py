@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from cohort import load_cfg, read_companies
+from run import load_cfg
 
 
 def parse_float(v: Any) -> float | None:
@@ -38,10 +38,17 @@ def parse_float(v: Any) -> float | None:
         return None
 
 
+# HSICS 6 位码前两位 -> 行业门类。
+# 2026Q2 校订：以下取值由各公司 HKEX 返回的 hsic_ind（如 "Materials - ..."）
+# 反推核对，并对照恒生指数公司公开分类表：
+#   05 = Materials（Copper 052020 / Specialty Chemicals 053040 / Gold 051010）
+#   10 = Industrials（Industrial Components 101020 / Environmental Eng. 101030）
+#   50 = Financials（Insurance 502010）
+#   60 = Properties & Construction（Property Investment 601030）
 HSICS_PREFIX_MAP: dict[str, str] = {
     "00": "能源業",
-    "05": "能源業",
-    "10": "原材料業",
+    "05": "原材料業",
+    "10": "工業",
     "20": "工業",
     "23": "非必需性消費",
     "25": "必需性消費",
@@ -49,7 +56,8 @@ HSICS_PREFIX_MAP: dict[str, str] = {
     "30": "金融業",
     "35": "地產建築業",
     "40": "公用事業",
-    "50": "電訊業",
+    "50": "金融業",
+    "60": "地產建築業",
     "70": "資訊科技業",
     "80": "綜合企業",
 }
@@ -58,10 +66,8 @@ HSICS_PREFIX_MAP: dict[str, str] = {
 def generate_report(cfg: dict | None = None, out_path: Path | str | None = None) -> dict:
     if cfg is None:
         cfg = load_cfg()
-    if cfg.get("workbook_path"):
+    if "workbook_path" in cfg:
         book_path = Path(cfg["workbook_path"])
-    elif cfg.get("_workbook_path"):
-        book_path = Path(cfg["_workbook_path"])
     elif Path(cfg["workbook"]).is_absolute():
         book_path = Path(cfg["workbook"])
     else:
@@ -116,8 +122,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         return v
 
     data = []
-    for company in read_companies(cfg):
-        r = company["row"]
+    for r in range(cfg["data_start_row"], ws.max_row + 1):
         code = str(cell(r, "B") or "").strip()
         if not code:
             continue
@@ -169,8 +174,6 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         })
 
     wb.close()
-    if not data:
-        raise ValueError("No issuer rows match the configured workbook and date range")
 
     # Aggregate metrics
     n_companies = len(data)
@@ -292,7 +295,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         f"| **发行人中位数募资额** | **HK$ {median_proceeds:,.0f}** | 中位数约 **{median_proceeds/1e8:.2f} 亿港元** |",
         f"| **上市总市值总额** | **HK$ {total_market_cap:,.0f}** | {n_companies} 家总市值约 **{total_market_cap/1e8:.2f} 亿港元** |",
         "\n---",
-        "\n## 二、行业分布与产业结构 (HSICS 2026)",
+        "\n## 二、行业分布与产业结构 (HSICS 恒生行业分类)",
         "\n### 1. 门类行业分布",
         "\n| 恒生行业门类 | 公司家数 | 占比 | 代表公司 |",
         "|---|---|---|---|"
