@@ -4,9 +4,9 @@
 推导来源：
   BH Listing board            ← col_AS（上市途径）是否含 Main Board / GEM
   BJ A+H issuer flag          ← col_AS 是否含 "A+H"
-  BK WVR flag                 ← col_AS 是否含 "Chapter 8A"
-  BL Chapter 18A flag         ← col_AS 是否含 "Chapter 18A"
-  BM Chapter 18C flag         ← col_AS 是否含 "Chapter 18C"
+  BK WVR flag                 ← col_AS 是否肯定援引 "Chapter 8A"（忽略否定式表述）
+  BL Chapter 18A flag         ← col_AS 是否肯定援引 "Chapter 18A"（忽略否定式表述）
+  BM Chapter 18C flag         ← col_AS 是否肯定援引 "Chapter 18C"（忽略否定式表述）
   BQ Place of incorporation   ← 招股书前几页 "incorporated in ..."
   CL Earliest cornerstone unlock date ← 上市日 + 6 个月（港交所规则；
                                 无基石的 4 家填 NA，依据 cornerstone_absence.json）
@@ -59,6 +59,36 @@ def add_months(d: dt.date, months: int) -> dt.date:
 
 def digits(code: str) -> str:
     return "".join(c for c in str(code) if c.isdigit())
+
+
+NEGATION_BEFORE = re.compile(
+    r"\b(?:not|no|neither|nor|without|except|other\s+than|rather\s+than)\b\s*"
+    r"(?:[^.,;()]{0,40}\s+)?$",
+    re.I,
+)
+NEGATION_AFTER = re.compile(
+    r"^\s*(?:[^.,;()]{0,20}\s+)?(?:does\s+not|do\s+not|is\s+not|are\s+not|not)\b",
+    re.I,
+)
+
+
+def cites_chapter(text: str, label: str) -> bool:
+    """判断上市途径文本是否「肯定地」依据某一章上市。
+
+    招股书抽取文本里大量出现否定式澄清，例如
+      "Main Board standard listing (not Chapter 18C / 18A)"
+      "H share listing; no Chapter 18C basis disclosed"
+    单纯子串匹配会把这类表述误判为肯定，造成 18A/18C 标记假阳性
+    （2025Q2 cohort 的 2605.HK、9678.HK 即因此被误标为 18C）。
+    这里同时检查命中位置前后的否定词，命中否定式则跳过该处提及。
+    """
+    for m in re.finditer(rf"Chapter\s+{label}", text, re.I):
+        before = text[max(0, m.start() - 60): m.start()]
+        after = text[m.end(): m.end() + 40]
+        if NEGATION_BEFORE.search(before) or NEGATION_AFTER.match(after):
+            continue
+        return True
+    return False
 
 
 def place_of_incorporation(code: str, text_dir: Path | None = None) -> tuple[str, str]:
@@ -169,9 +199,9 @@ def main() -> int:
         asv = str(json.loads(jf.read_text(encoding="utf-8"))["fields"]["col_AS"]["value"])
         board = "GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board"
         a_plus_h = 1 if "A+H" in asv else 0
-        wvr = 1 if re.search(r"Chapter\s+8A", asv) else 0
-        c18a = 1 if re.search(r"Chapter\s+18A", asv) else 0
-        c18c = 1 if re.search(r"Chapter\s+18C", asv) else 0
+        wvr = 1 if cites_chapter(asv, "8A") else 0
+        c18a = 1 if cites_chapter(asv, "18A") else 0
+        c18c = 1 if cites_chapter(asv, "18C") else 0
         inc, inc_ev = place_of_incorporation(code, cfg["paths"]["text"])
         ld = listing.get(code)
         if code in no_cornerstone:

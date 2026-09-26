@@ -1,0 +1,71 @@
+# 2025 Q2 香港主板 IPO 流水线配置
+workbook: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/HKIPO-MB.xlsx
+sheet: NLR
+data_start_row: 2
+dataset:
+  id: HKIPO_2025-04-01_2025-06-30_HKIPO-MB
+  name: Hong Kong Main Board IPO Dataset
+  cohort: 2025 Q2
+  period_start: '2025-04-01'
+  period_end: '2025-06-30'
+  expected_companies: 27
+  report_source_dir: /Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/sources
+id_columns:
+  file_no: A
+  stock_code: B
+  name: C
+  prospectus_date: D
+  listing_date: E
+  offer_price: K
+hkex:
+  search_url: https://www1.hkexnews.hk/search/titleSearchServlet.do
+  base_url: https://www1.hkexnews.hk
+  listing_doc_prefix: Listing Documents
+  include_substrings:
+  - Offer for Subscription
+  - Offer for Placing
+  - Prospectus
+  exclude_substrings:
+  - Authorised Collective Investment Scheme
+  - Rights Issue
+  - Open Offer
+  - Placing of Existing Shares
+  day_window: 4
+  row_range: 1000
+  sleep_sec: 0.4
+  timeout_sec: 40
+paths:
+  data: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data
+  pdf: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/pdf
+  text: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/text
+  sections: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/sections
+  packets: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/packets
+  out: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/out
+  allot_pdf: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/pdf
+  allot_text: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/text
+  allot_packets: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/packets
+  allot_out: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/out/allot
+extract:
+  allot_max_chars: 400000
+  max_chars_per_group: 60000
+  max_runs_per_anchor: 2
+  group_caps:
+    share_structure: 45000
+    price: 25000
+    financials: 95000
+    underwriting: 45000
+    business: 45000
+    cornerstone: 80000
+    extra_financial: 110000
+    chinese_name: 10000
+    ownership: 50000
+    offering: 20000
+  max_chars_total: 550000
+  cover_pages: 3
+validate:
+  share_rel_tol: 1.0e-09
+  share_abs_tol: 1
+  balance_rel_tol: 0.005
+  balance_abs_tol: 2000
+filter_period: true
+state_dir: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/.pipeline_state

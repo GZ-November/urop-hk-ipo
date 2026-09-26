@@ -28,6 +28,7 @@ make test
 
 - [流水线使用指南 / Pipeline guide](Data%20Collecting%20Pipeline/prospectus_pipeline/README.md)
 - [2025 Q1 工作簿 / 2025 Q1 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2025Q1.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2025Q1_Codebook.md)
+- [2025 Q2 工作簿 / 2025 Q2 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2025Q2.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2025Q2_Codebook.md) · [市场报告 / Market report](Data%20Collecting%20Pipeline/HKIPO-MB2025Q2_Market_Report.md)
 - [2026 Q1 工作簿 / 2026 Q1 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2026Q1.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2026Q1_Codebook.md)
 - [2026 Q2 工作簿 / 2026 Q2 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2026Q2.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2026Q2_Codebook.md)
 - [2026 Q3 工作簿 / 2026 Q3 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2026Q3.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2026Q3_Codebook.md) · [市场报告 / Market report](Data%20Collecting%20Pipeline/HKIPO-MB2026Q3_Market_Report.md)

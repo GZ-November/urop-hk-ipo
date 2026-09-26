@@ -358,4 +358,10 @@ def inject_academic_derivations(cfg: dict | None = None) -> Path:
 
 
 if __name__ == "__main__":
-    inject_academic_derivations()
+    import argparse
+    parser = argparse.ArgumentParser(description="Academic derivations enrichment")
+    parser.add_argument("--config", default=None, help="Cohort config path")
+    parser.add_argument("--workbook", default=None, help="Workbook override path")
+    args = parser.parse_args()
+    cfg = load_cfg(config_path=args.config, workbook_override=args.workbook)
+    inject_academic_derivations(cfg)

@@ -79,6 +79,24 @@ HSIC_EN2CODE = {
     # 2026Q3 cohort 补全：码取自 data/manual/hsics.json（HSICS 2026 官方表）
     "Online Retailers": "237060",
     "Telecommunication Network Infrastructure": "701015",
+    # 2025Q2 cohort 补全：码取自 data/manual/hsics.json（HSICS 2026 官方表）
+    # 英文子类别名来自 HKEX 行情接口，按下述中文义项一一对应，无歧义：
+    #   101040 重型機械 Heavy Industrial Machinery
+    #   101050 新能源物料 New Energy Materials
+    #   232010 家庭電器 Home Appliances
+    #   234010 公共運輸 Transportation（旅游及消闲设施项下客运服务）
+    #   234060 餐飲 Restaurants
+    #   236020 其他支援服務 Other Support Services
+    #   251050 食品添加劑 Food Additives
+    #   282040 護膚與化妝品 Skincare and Cosmetics
+    "Food Additives": "251050",
+    "Heavy Industrial Machinery": "101040",
+    "Home Appliances": "232010",
+    "New Energy Materials": "101050",
+    "Other Support Services": "236020",
+    "Restaurants": "234060",
+    "Skincare and Cosmetics": "282040",
+    "Transportation": "234010",
 }
 
 HEADERS = {"BN": "Industry classification code",

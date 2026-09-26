@@ -130,9 +130,20 @@ def load_cfg(
         config_path or os.environ.get("PIPELINE_CONFIG") or ROOT / "config.yaml"
     ).expanduser()
     if not selected_config.is_absolute():
-        selected_config = (Path.cwd() / selected_config).resolve()
+        candidate = (Path.cwd() / selected_config).resolve()
+        if not candidate.is_file() and (WS.parent / selected_config).is_file():
+            selected_config = (WS.parent / selected_config).resolve()
+        elif not candidate.is_file() and selected_config.parts and selected_config.parts[0] == "Data Collecting Pipeline":
+            rel_candidate = (Path.cwd() / Path(*selected_config.parts[1:])).resolve()
+            if rel_candidate.is_file():
+                selected_config = rel_candidate
+            else:
+                selected_config = candidate
+        else:
+            selected_config = candidate
     if not selected_config.is_file():
         raise FileNotFoundError(f"Pipeline config not found: {selected_config}")
+    os.environ["PIPELINE_CONFIG"] = str(selected_config.resolve())
     with selected_config.open(encoding="utf-8") as stream:
         cfg = yaml.safe_load(stream)
 

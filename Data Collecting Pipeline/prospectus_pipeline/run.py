@@ -242,8 +242,15 @@ def cmd_expansion(cfg, args, companies):
 def cmd_academic(cfg, args, companies):
     """Populate the eight deterministic academic variables after market enrichment."""
     import subprocess
-    cmd = [sys.executable, str(ROOT / "tools" / "enrich_master_dataset.py")]
-    return subprocess.call(cmd, cwd=WS)
+    cmd = [
+        sys.executable,
+        str(ROOT / "tools" / "enrich_master_dataset.py"),
+        "--config",
+        str(cfg["_config_path"]),
+    ]
+    env = os.environ.copy()
+    env["PIPELINE_CONFIG"] = str(cfg["_config_path"])
+    return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_disclosure_notes(cfg, args, companies):
