@@ -6,14 +6,14 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
-PIPELINE_DIR="${REPO_ROOT}/Data Collecting Pipeline/prospectus_pipeline"
+PIPELINE_DIR="${REPO_ROOT}/pipeline/prospectus_pipeline"
 REQ_FILE="${PIPELINE_DIR}/requirements.txt"
 
 if [[ -z "${PYTHON_BIN:-}" ]]; then
   if [[ -x "${REPO_ROOT}/.venv/bin/python" ]]; then
     PYTHON_BIN="${REPO_ROOT}/.venv/bin/python"
-  elif [[ -x "${REPO_ROOT}/Data Collecting Pipeline/.venv/bin/python" ]]; then
-    PYTHON_BIN="${REPO_ROOT}/Data Collecting Pipeline/.venv/bin/python"
+  elif [[ -x "${REPO_ROOT}/pipeline/.venv/bin/python" ]]; then
+    PYTHON_BIN="${REPO_ROOT}/pipeline/.venv/bin/python"
   elif command -v python3 &>/dev/null; then
     PYTHON_BIN="python3"
   else

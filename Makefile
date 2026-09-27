@@ -65,13 +65,13 @@ aftermarket-refresh:
 		echo "=== aftermarket: $$cfg ==="; python3 run.py aftermarket --config $$cfg || exit 1; done
 
 test:
-	@python3 -m unittest discover -s "Data Collecting Pipeline/prospectus_pipeline/tests" -v
+	@python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
 
 lint:
 	@python3 -m py_compile run.py
-	@find "Data Collecting Pipeline/prospectus_pipeline/src" -name "*.py" -exec python3 -m py_compile {} +
-	@find "Data Collecting Pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
-	@find "Data Collecting Pipeline/reports" -name "*.py" -exec python3 -m py_compile {} +
+	@find "pipeline/prospectus_pipeline/src" -name "*.py" -exec python3 -m py_compile {} +
+	@find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
+	@find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
 	@echo "✅ All Python files passed syntax compilation!"
 
 clean:

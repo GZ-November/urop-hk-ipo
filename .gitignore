@@ -37,9 +37,9 @@ htmlcov/
 # Research workbooks and codebooks are versioned; raw source data stays local.
 # ==============================================================================
 *.xlsx
-!Data Collecting Pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
-!Data Collecting Pipeline/HKIPO-MB20*.xlsx
-!Data Collecting Pipeline/templates/*.xlsx
+!pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
+!pipeline/cohorts/HKIPO-MB20*.xlsx
+!pipeline/templates/*.xlsx
 *.xls
 *.xlsm
 *.csv
@@ -51,8 +51,8 @@ htmlcov/
 **/sources/
 **/backups/
 **/archive/
-!Data Collecting Pipeline/prospectus_pipeline/schema/archive/
-!Data Collecting Pipeline/prospectus_pipeline/schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json
+!pipeline/prospectus_pipeline/schema/archive/
+!pipeline/prospectus_pipeline/schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json
 **/docs/
 Survey Paper/
 

@@ -20,9 +20,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-PIPELINE_DIR = ROOT / "Data Collecting Pipeline"
+PIPELINE_DIR = ROOT / "pipeline"
 PIPELINE_RUN = PIPELINE_DIR / "prospectus_pipeline" / "run.py"
-WEEKLY_REPORT_SCRIPT = PIPELINE_DIR / "reports" / "build_weekly_report.py"
+WEEKLY_REPORT_SCRIPT = PIPELINE_DIR / "prospectus_pipeline" / "tools" / "build_weekly_report.py"
 
 
 def main() -> None:

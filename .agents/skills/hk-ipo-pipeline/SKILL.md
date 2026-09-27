@@ -35,7 +35,7 @@ All pipeline operations are unified under `run.py`. Agents can invoke the wrappe
 ./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh <STAGE> [OPTIONS]
 ```
 
-Or from within `Data Collecting Pipeline`:
+Or from within `pipeline`:
 
 ```bash
 "${PYTHON_BIN:-.venv/bin/python}" prospectus_pipeline/run.py <STAGE> [OPTIONS]
@@ -123,7 +123,7 @@ Load the master panel as a registry-driven pandas DataFrame (identity columns
 `cohort` / `cross_cohort_duplicate` / `stock_code` always kept):
 ```python
 import sys
-sys.path.insert(0, "Data Collecting Pipeline/prospectus_pipeline/src")
+sys.path.insert(0, "pipeline/prospectus_pipeline/src")
 from panel import available_slugs, load_master
 df = load_master(slugs=["ipo_subscription_price_hk", "filing_price_revision_pct"])
 ```
@@ -159,7 +159,7 @@ Both raise `ValueError` for manual reconciliation instead of writing.
 
 ### 6. Automated Regression & Safety Test Suite (`test`)
 ```bash
-cd "Data Collecting Pipeline" && python3 -m unittest discover -s prospectus_pipeline/tests -v
+cd "pipeline" && python3 -m unittest discover -s prospectus_pipeline/tests -v
 ```
 
 ---

@@ -6,7 +6,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
-PIPELINE_DIR="${REPO_ROOT}/Data Collecting Pipeline"
+PIPELINE_DIR="${REPO_ROOT}/pipeline"
 
 if [[ -z "${PYTHON_BIN:-}" ]]; then
   if [[ -x "${REPO_ROOT}/.venv/bin/python" ]]; then
