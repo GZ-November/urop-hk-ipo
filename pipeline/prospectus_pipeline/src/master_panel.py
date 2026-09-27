@@ -558,9 +558,9 @@ def build_master(
     )
 
     # 写 master CSV（cohort 与跨 cohort 重复标记作为前两列）
-    out_dir = Path(out_dir) if out_dir else ws / EXPORTS_SUBDIR
-    out_dir.mkdir(parents=True, exist_ok=True)
-    master_path = out_dir / f"{master_stem}_clean.csv"
+    exports_dir = Path(out_dir) if out_dir else ws / EXPORTS_SUBDIR
+    exports_dir.mkdir(parents=True, exist_ok=True)
+    master_path = exports_dir / f"{master_stem}_clean.csv"
     code_idx = base_headers.index("Stock Code") if "Stock Code" in base_headers else None
     with master_path.open("w", encoding="utf-8-sig", newline="") as fh:
         writer = csv.writer(fh)
