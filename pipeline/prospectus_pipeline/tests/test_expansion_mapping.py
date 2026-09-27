@@ -29,6 +29,11 @@ class ExpansionMappingTests(unittest.TestCase):
                 writer.writeheader()
                 writer.writerow({"stock_code": "1234.HK", "stabilizing_manager": "Example Sponsor", "stabilization_period_end": "2026-02-01"})
 
+            with (out_master / "daily_market_panel.csv").open("w", newline="", encoding="utf-8-sig") as stream:
+                csv.DictWriter(stream, fieldnames=["stock_code", "amihud_illiq", "zero_volume_flag", "daily_return", "max_drawdown"]).writeheader()
+            with (out_master / "lockup_events.csv").open("w", newline="", encoding="utf-8-sig") as stream:
+                csv.DictWriter(stream, fieldnames=["stock_code", "lockup_category"]).writeheader()
+
             mapper = ExpansionValueMapper(out_master)
             mapper.load_sources()
 

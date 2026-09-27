@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import csv
+
+import master_contracts  # noqa: E402
 from pathlib import Path
 from typing import Any
 
@@ -77,65 +79,46 @@ class ExpansionValueMapper:
 
     def load_sources(self) -> None:
         """加载已预先计算好的 master 模块数据源。"""
-        # 1. 稳价事件
-        stab_csv = self.out_master / "stabilization_events.csv"
-        if stab_csv.exists():
-            with stab_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
-                    self.stab_data[r["stock_code"]] = r
+        # 1. 稳价事件（fail-closed：缺文件/缺列在加载时报错，而非静默空格）
+        for r in master_contracts.load_rows(
+                self.out_master / master_contracts.STABILIZATION_EVENTS,
+                master_contracts.STABILIZATION_EVENTS_COLS):
+            self.stab_data[r["stock_code"]] = r
 
         # 2. 跨期收益
-        h_csv = self.out_master / "horizon_summary.csv"
-        if h_csv.exists():
-            with h_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
-                    code = r["stock_code"]
-                    h = r["horizon"]
-                    if code not in self.horizon_data:
-                        self.horizon_data[code] = {}
-                    self.horizon_data[code][h] = r
+        for r in master_contracts.load_rows(
+                self.out_master / master_contracts.HORIZON_SUMMARY,
+                master_contracts.HORIZON_SUMMARY_COLS):
+            self.horizon_data.setdefault(r["stock_code"], {})[r["horizon"]] = r
 
         # 3. 逐日统计量（Amihud 均值、零成交天数、波动率、最大回撤）
-        d_csv = self.out_master / "daily_market_panel.csv"
-        if d_csv.exists():
-            grouped: dict[str, list[dict[str, Any]]] = {}
-            with d_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
-                    code = r["stock_code"]
-                    if code not in grouped:
-                        grouped[code] = []
-                    grouped[code].append(r)
-            for code, bars in grouped.items():
-                w_bars = bars[:126]  # 前6个月
-                illiqs = [float(b["amihud_illiq"]) for b in w_bars if b.get("amihud_illiq")]
-                zeros = sum(1 for b in w_bars if b.get("zero_volume_flag", "").lower() == "true")
-                rets = [float(b["daily_return"]) for b in w_bars if b.get("daily_return")]
-                import statistics
-                vol = statistics.stdev(rets) if len(rets) > 1 else 0.0
-                max_dd = max([float(b.get("max_drawdown") or 0.0) for b in w_bars], default=0.0)
-                self.daily_stats[code] = {
-                    "amihud_mean": sum(illiqs) / len(illiqs) if illiqs else 0.0,
-                    "zero_volume_count": zeros,
-                    "volatility": vol,
-                    "max_drawdown": max_dd
-                }
+        import statistics
+        for code, bars in master_contracts.load_grouped(
+                self.out_master / master_contracts.DAILY_MARKET_PANEL,
+                master_contracts.DAILY_MARKET_PANEL_COLS).items():
+            w_bars = bars[:126]  # 前6个月
+            illiqs = [float(b["amihud_illiq"]) for b in w_bars if b.get("amihud_illiq")]
+            zeros = sum(1 for b in w_bars if b.get("zero_volume_flag", "").lower() == "true")
+            rets = [float(b["daily_return"]) for b in w_bars if b.get("daily_return")]
+            vol = statistics.stdev(rets) if len(rets) > 1 else 0.0
+            max_dd = max([float(b.get("max_drawdown") or 0.0) for b in w_bars], default=0.0)
+            self.daily_stats[code] = {
+                "amihud_mean": sum(illiqs) / len(illiqs) if illiqs else 0.0,
+                "zero_volume_count": zeros,
+                "volatility": vol,
+                "max_drawdown": max_dd
+            }
 
         # 4. 解禁事件
-        lk_csv = self.out_master / "lockup_events.csv"
-        if lk_csv.exists():
-            with lk_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
-                    code = r["stock_code"]
-                    cat = r["lockup_category"]
-                    if code not in self.lockup_data:
-                        self.lockup_data[code] = {}
-                    self.lockup_data[code][cat] = r
+        for r in master_contracts.load_rows(
+                self.out_master / master_contracts.LOCKUP_EVENTS,
+                master_contracts.LOCKUP_EVENTS_COLS):
+            self.lockup_data.setdefault(r["stock_code"], {})[r["lockup_category"]] = r
 
-        # 5. 投资者关系统计
-        inv_csv = self.out_master / "investor_relational.csv"
-        if inv_csv.exists():
-            with inv_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
+        # 5. 投资者关系统计（可选交付物：缺文件跳过，缺契约列报错）
+        for r in master_contracts.load_rows_if_present(
+                self.out_master / master_contracts.INVESTOR_RELATIONAL,
+                master_contracts.INVESTOR_RELATIONAL_COLS):
                     code = r["stock_code"]
                     if code not in self.investor_stats:
                         self.investor_stats[code] = {
@@ -154,11 +137,10 @@ class ExpansionValueMapper:
                         if r.get("state_owned_flag", "").lower() == "true":
                             st["pre_state"] = True
 
-        # 6. 承销辛迪加
-        syn_csv = self.out_master / "underwriter_relational.csv"
-        if syn_csv.exists():
-            with syn_csv.open("r", encoding="utf-8-sig") as fh:
-                for r in csv.DictReader(fh):
+        # 6. 承销辛迪加（可选交付物）
+        for r in master_contracts.load_rows_if_present(
+                self.out_master / master_contracts.UNDERWRITER_RELATIONAL,
+                master_contracts.UNDERWRITER_RELATIONAL_COLS):
                     code = r["stock_code"]
                     if code not in self.syndicate_stats:
                         self.syndicate_stats[code] = {

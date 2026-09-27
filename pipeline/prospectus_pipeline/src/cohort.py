@@ -309,25 +309,8 @@ def write_cohort_config(
 
 def _iter_workbook_codes_and_listing_dates(path: Path) -> list[tuple[str, dt.date | None]]:
     """Read (stock code, listing date) pairs from an NLR cohort workbook."""
-    import openpyxl
-
-    workbook = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    try:
-        rows = workbook["NLR"].iter_rows(min_row=2, min_col=2, max_col=5, values_only=True)
-        pairs: list[tuple[str, dt.date | None]] = []
-        for row in rows:
-            code = row[0]
-            if code in (None, ""):
-                continue
-            listing = row[3]
-            if isinstance(listing, dt.datetime):
-                listing = listing.date()
-            if not isinstance(listing, dt.date):
-                listing = None
-            pairs.append((str(code).strip(), listing))
-        return pairs
-    finally:
-        workbook.close()
+    from workbook_reader import codes_and_listing_dates
+    return codes_and_listing_dates(path)
 
 
 def _sibling_cohort_workbooks(workbook_path: Path) -> list[Path]:

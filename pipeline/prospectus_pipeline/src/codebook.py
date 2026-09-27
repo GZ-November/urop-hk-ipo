@@ -424,8 +424,7 @@ def clean_header_name(s: str) -> str:
     return " ".join(str(s or "").replace("\n", " ").split()).strip()
 
 
-def norm_header(v: Any) -> str:
-    return " ".join(str(v or "").replace("\n", " ").split()).strip().lower()
+from workbook_reader import norm_header  # noqa: E402
 
 
 def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:

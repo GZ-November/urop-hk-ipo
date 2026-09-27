@@ -32,7 +32,8 @@ from contracts import is_missing, normalize_code, strict_load_file  # noqa: E402
 from cohort import load_cfg, read_companies  # noqa: E402
 from state import read_record, state_dir  # noqa: E402
 from storage import official_files  # noqa: E402
-from write_back import norm_header, parse_date, resolve_columns  # noqa: E402
+from workbook_reader import norm_header, resolve_columns  # noqa: E402
+from write_back import parse_date  # noqa: E402
 
 EXTERNAL_TOOL_MAPPING = {
     # 行情与首日表现（tools/external/market.py）

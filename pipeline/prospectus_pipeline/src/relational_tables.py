@@ -35,6 +35,7 @@ if str(sys_src) not in sys.path:
 
 from market_fetcher import parse_bar_date
 sys.path.insert(0, str(ROOT))
+import master_contracts
 from cohort import load_cfg
 
 
@@ -240,7 +241,7 @@ class RelationalTableEngine:
         """生成并导出两张实体关系表。"""
         # 1. 投资者表
         inv_recs = self.process_investors(issuers)
-        inv_path = self.out_master / "investor_relational.csv"
+        inv_path = self.out_master / master_contracts.INVESTOR_RELATIONAL
         if inv_recs:
             keys = list(inv_recs[0].keys())
             with inv_path.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -250,7 +251,7 @@ class RelationalTableEngine:
 
         # 2. 承销辛迪加表
         syn_recs = self.process_syndicate(issuers)
-        syn_path = self.out_master / "underwriter_relational.csv"
+        syn_path = self.out_master / master_contracts.UNDERWRITER_RELATIONAL
         if syn_recs:
             keys = list(syn_recs[0].keys())
             with syn_path.open("w", newline="", encoding="utf-8-sig") as fh:

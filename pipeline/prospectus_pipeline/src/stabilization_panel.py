@@ -33,6 +33,7 @@ if str(sys_src) not in sys.path:
 from market_fetcher import parse_bar_date
 
 sys.path.insert(0, str(ROOT))
+import master_contracts
 from cohort import load_cfg
 from market_observations import read_daily_market_panel
 
@@ -242,7 +243,7 @@ class StabilizationPanelEngine:
             rec = self.compute_event_windows(rec)
             out_records.append(rec)
 
-        out_path = self.out_master / "stabilization_events.csv"
+        out_path = self.out_master / master_contracts.STABILIZATION_EVENTS
         if out_records:
             keys = list(out_records[0].keys())
             with out_path.open("w", newline="", encoding="utf-8-sig") as fh:

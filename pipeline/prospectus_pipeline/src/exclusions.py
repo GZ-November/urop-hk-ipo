@@ -40,15 +40,8 @@ def _official_candidates(cfg: dict, start: dt.date, end: dt.date) -> list[dict[s
 
 
 def _workbook_codes(cfg: dict) -> set[str]:
-    import openpyxl
-
-    workbook_path = Path(cfg["_workbook_path"])
-    workbook = openpyxl.load_workbook(workbook_path, read_only=True, data_only=True)
-    try:
-        rows = workbook[cfg["sheet"]].iter_rows(min_row=2, min_col=2, max_col=2, values_only=True)
-        return {str(row[0]).strip() for row in rows if row[0] not in (None, "")}
-    finally:
-        workbook.close()
+    from workbook_reader import read_codes
+    return set(read_codes(cfg["_workbook_path"], cfg["sheet"]))
 
 
 def build_exclusion_log(

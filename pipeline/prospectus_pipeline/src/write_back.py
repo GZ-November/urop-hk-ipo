@@ -29,31 +29,9 @@ DATE_KINDS = {"date"}
 NUMERIC_KINDS = {"integer", "number"}
 
 
-def norm_header(v) -> str:
-    return " ".join(str(v or "").replace("\n", " ").split()).strip().lower()
+from workbook_reader import norm_header  # noqa: F401  (canonical home; re-exported)
+from workbook_reader import resolve_columns  # noqa: F401  (canonical home; re-exported)
 
-
-def resolve_columns(ws, schema: dict) -> tuple[dict, list[str]]:
-    """把 schema 的 key 通过规范化表头解析成真实列字母；返回 (映射, 问题列表)。"""
-    header_to_cols: dict[str, list[str]] = {}
-    for col in range(1, ws.max_column + 1):
-        val = ws.cell(1, col).value
-        if val in (None, ""):
-            continue
-        if ws.cell(1, col).fill.fill_type != "solid":
-            continue
-        header_to_cols.setdefault(norm_header(val), []).append(
-            openpyxl.utils.get_column_letter(col))
-    mapping, issues = {}, []
-    for field in schema["fields"]:
-        cols = header_to_cols.get(norm_header(field["header"]), [])
-        if len(cols) == 1:
-            mapping[field["key"]] = cols[0]
-        elif not cols:
-            issues.append(f"{field['key']}: header not found: {field['header']!r}")
-        else:
-            issues.append(f"{field['key']}: header ambiguous: {field['header']!r} -> {cols}")
-    return mapping, issues
 
 
 def parse_date(value):

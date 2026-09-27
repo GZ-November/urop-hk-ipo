@@ -42,6 +42,7 @@ from market_fetcher import get_market_fetcher, parse_bar_date
 
 logger = logging.getLogger("market_panel")
 sys.path.insert(0, str(ROOT))
+import master_contracts
 from cohort import load_cfg, read_companies, _read_workbook_issuers
 
 # 标准跨期交易日对应关系（约数与日历月标准）
@@ -368,7 +369,7 @@ class MarketPanelEngine:
             all_horizons.extend(h_recs)
 
         # 导出逐日交易大表 (daily_market_panel.csv)
-        daily_csv = self.out_master / "daily_market_panel.csv"
+        daily_csv = self.out_master / master_contracts.DAILY_MARKET_PANEL
         if all_daily:
             d_keys = list(all_daily[0].keys())
             with daily_csv.open("w", newline="", encoding="utf-8-sig") as fh:
@@ -377,7 +378,7 @@ class MarketPanelEngine:
                 writer.writerows(all_daily)
 
         # 导出学术跨期表现汇总表 (horizon_summary.csv)
-        horizon_csv = self.out_master / "horizon_summary.csv"
+        horizon_csv = self.out_master / master_contracts.HORIZON_SUMMARY
         h_keys = [
             "stock_code", "horizon", "horizon_desc", "target_trading_days", "matured",
             "target_date", "actual_date", "close_price", "bhr_from_day1", "total_return_from_offer",
