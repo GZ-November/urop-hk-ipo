@@ -1,0 +1,70 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                            | Rate / Amount Disclosed |\n| ------------------------------------------- | ----------------------- |\n| (2) Listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 21,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "increase in listing expenses was the primary",
+          "driver."
+        ]
+      ],
+      "markdown": "| Item Description                             | Rate / Amount Disclosed |\n| -------------------------------------------- | ----------------------- |\n| increase in listing expenses was the primary | driver.                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "220,586",
+          "100.0",
+          "299,015",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 220,586 | 100.0  | 299,015 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

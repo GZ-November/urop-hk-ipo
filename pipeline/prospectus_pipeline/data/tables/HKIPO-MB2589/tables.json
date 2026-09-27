@@ -1,0 +1,92 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represent the fees incurred in relation to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                           | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------- | ----------------------- |\n| (2) Listing expenses represent the fees incurred in relation to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 33,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "commission",
+          "s,"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                             | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                      | fees,                   |\n| commission                                                                   | s,                      |\n| The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 414,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "............................................",
+          "6",
+          "2,199,005",
+          "3,348,201"
+        ],
+        [
+          "Gross profit",
+          ".......................................",
+          "586,279",
+          "1,017,351",
+          "1,027,319"
+        ],
+        [
+          "PROFIT FOR THE YEAR",
+          "..................",
+          "149,470",
+          "387,902",
+          "328,931"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3                                       | Year-2  | Year-1    | Col 5     |\n| ------------------- | -------------------------------------------- | ------- | --------- | --------- |\n| Revenue             | ............................................ | 6       | 2,199,005 | 3,348,201 |\n| Gross profit        | .......................................      | 586,279 | 1,017,351 | 1,027,319 |\n| PROFIT FOR THE YEAR | ..................                           | 149,470 | 387,902   | 328,931   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 115,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "1. Mr. Dong 15,382,400 33.14",
+          "15,382,400",
+          "28.05"
+        ],
+        [
+          "2. Tianjin Yunkang 1,900,000 4.09",
+          "1,900,000",
+          "3.47"
+        ],
+        [
+          "3. Tianjin Puhe 1,094,401 2.36",
+          "1,094,401",
+          "1.99"
+        ],
+        [
+          "4. Tianjin Jikang 871,061 1.88",
+          "871,061",
+          "1.59"
+        ],
+        [
+          "Subtotal 19,247,862 41.47",
+          "19,247,862",
+          "35.10"
+        ]
+      ],
+      "markdown": "| Description of Shares             | Number of Shares | Approximate Percentage (%) |\n| --------------------------------- | ---------------- | -------------------------- |\n| 1. Mr. Dong 15,382,400 33.14      | 15,382,400       | 28.05                      |\n| 2. Tianjin Yunkang 1,900,000 4.09 | 1,900,000        | 3.47                       |\n| 3. Tianjin Puhe 1,094,401 2.36    | 1,094,401        | 1.99                       |\n| 4. Tianjin Jikang 871,061 1.88    | 871,061          | 1.59                       |\n| Subtotal 19,247,862 41.47         | 19,247,862       | 35.10                      |",
+      "metadata": {
+        "total_rows": 5
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 18,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represent expenses related to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                              | Rate / Amount Disclosed |\n| ------------------------------------------------------------- | ----------------------- |\n| (2) Listing expenses represent expenses related to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 21,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "underwriting commissions and other estimated expenses in connection with the Global",
+          "Offering."
+        ],
+        [
+          "Listing expenses consist of professional",
+          "fees,"
+        ],
+        [
+          "the Global Offering. We estimate the listing expenses to consist of (i) approximately",
+          "HK$33.3"
+        ]
+      ],
+      "markdown": "| Item Description                                                                      | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------- | ----------------------- |\n| underwriting commissions and other estimated expenses in connection with the Global   | Offering.               |\n| Listing expenses consist of professional                                              | fees,                   |\n| the Global Offering. We estimate the listing expenses to consist of (i) approximately | HK$33.3                 |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "238,542",
+          "327,119",
+          "402,751"
+        ],
+        [
+          "Gross profit",
+          "177,308",
+          "227,595",
+          "298,619"
+        ],
+        [
+          "Profit for the year",
+          "57,112",
+          "95,389",
+          "136,970"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3  | Year-2  | Year-1  |\n| ------------------- | ------- | ------- | ------- |\n| Revenue             | 238,542 | 327,119 | 402,751 |\n| Gross profit        | 177,308 | 227,595 | 298,619 |\n| Profit for the year | 57,112  | 95,389  | 136,970 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 270,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "TOTAL ASSETS",
+          "451,278",
+          "617,334",
+          "764,081"
+        ],
+        [
+          "Total equity",
+          "374,768",
+          "471,240",
+          "609,417"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  |\n| ---------------- | ------- | ------- | ------- |\n| TOTAL ASSETS     | 451,278 | 617,334 | 764,081 |\n| Total equity     | 374,768 | 471,240 | 609,417 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 272,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Profit for the year",
+          "–",
+          "–",
+          "–",
+          "–"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2 | Year-1 | Col 5 |\n| ------------------- | ------ | ------ | ------ | ----- |\n| Profit for the year | –      | –      | –      | –     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

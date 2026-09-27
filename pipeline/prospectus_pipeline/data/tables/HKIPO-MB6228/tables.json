@@ -1,0 +1,98 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 19,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "to be US$14.9 million, including Stock Exchange Listing fees, underwriting commission",
+          "fees,"
+        ],
+        [
+          "Period. We expect to incur listing expenses of approximately",
+          "US$14.9 million"
+        ],
+        [
+          "include the related underwriting commission, sponsor",
+          "fees,"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                      | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------- | ----------------------- |\n| to be US$14.9 million, including Stock Exchange Listing fees, underwriting commission | fees,                   |\n| Period. We expect to incur listing expenses of approximately                          | US$14.9 million         |\n| include the related underwriting commission, sponsor                                  | fees,                   |\n| The listing expenses above are the latest practicable estimate for reference          | only,                   |",
+      "metadata": {
+        "items_count": 4
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 283,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "US$14.9 million, including Stock Exchange Listing fees, underwriting commission",
+          "fees,"
+        ],
+        [
+          "Period. We expect to incur listing expenses of approximately",
+          "US$14.9 million"
+        ],
+        [
+          "include the related underwriting commission, sponsor",
+          "fees,"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ],
+        [
+          "After due and careful consideration, our Directors and Commissioners confirm",
+          "that,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------- | ----------------------- |\n| US$14.9 million, including Stock Exchange Listing fees, underwriting commission | fees,                   |\n| Period. We expect to incur listing expenses of approximately                    | US$14.9 million         |\n| include the related underwriting commission, sponsor                            | fees,                   |\n| The listing expenses above are the latest practicable estimate for reference    | only,                   |\n| After due and careful consideration, our Directors and Commissioners confirm    | that,                   |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 375,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "TOTAL ASSETS",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| TOTAL ASSETS     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "code": "3752.HK",
+  "fields": {
+    "col_L": {
+      "value": 261726190,
+      "page": 224,
+      "quote": "261,726,190 26,172,619",
+      "confidence": "high",
+      "note": "Total shares immediately after Share Subdivision/Global Offering (option not exercised)."
+    },
+    "col_M": {
+      "value": 23031900,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 23,031,900 H Shares (subject to the",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 238694290,
+      "page": 224,
+      "quote": "will be divided into 238,694,290 Shares of par value RMB0.1 each",
+      "confidence": "high",
+      "note": "Rule: col_N = col_L - col_M = 261,726,190 - 23,031,900 = 238,694,290 (capitalization issue)."
+    },
+    "col_O": {
+      "value": 238694290,
+      "page": 224,
+      "quote": "will be divided into 238,694,290 Shares of par value RMB0.1 each",
+      "confidence": "high",
+      "note": "Rule: col_O = col_L - col_M = 238,694,290 (capitalization rest)."
+    },
+    "col_P": {
+      "value": 0,
+      "page": 224,
+      "quote": "Unlisted Shares 11,934,710 1,193,471 H Shares to be converted from Unlisted Shares 226,759,580 22,675,958 H Shares to be issued pursuant to the Global Offering 23,031,900 2,303,190 Total 261,726,190",
+      "confidence": "high",
+      "note": "Share capital table (p.224) lists only Unlisted Shares, H Shares converted from Unlisted Shares, and H Shares issued under the Global Offering — no Sale Shares line and no Selling Shareholder, so col_P = 0 (Offer for Subscription)."
+    },
+    "col_Q": {
+      "value": 23031900,
+      "page": 17,
+      "quote": "23,031,900 H Shares are newly issued in the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 20728700,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 20,728,700 H Shares (subject to reallocation",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2303200,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 2,303,200 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "23,031,900 H Shares (subject to the",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 38.0,
+      "page": 2,
+      "quote": "HK$38.00 per H Share, plus brokerage of 1%",
+      "confidence": "high",
+      "note": "Fixed Offer Price (no range): max = min = HK$38.00."
+    },
+    "col_U": {
+      "value": 38.0,
+      "page": 2,
+      "quote": "HK$38.00 per H Share, plus brokerage of 1%",
+      "confidence": "high",
+      "note": "Fixed Offer Price: min = HK$38.00."
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 308,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 994448000,
+      "page": 15,
+      "quote": "220,797 203,042 297,812 Total current assets 773,651 760,954 955,675",
+      "confidence": "high",
+      "note": "Total assets 2023 = non-current 220,797 + current 773,651 = 994,448 (RMB'000)."
+    },
+    "col_X": {
+      "value": 963996000,
+      "page": 15,
+      "quote": "220,797 203,042 297,812 Total current assets 773,651 760,954 955,675",
+      "confidence": "high",
+      "note": "Total assets 2024 = non-current 203,042 + current 760,954 = 963,996 (RMB'000)."
+    },
+    "col_Y": {
+      "value": 1253487000,
+      "page": 15,
+      "quote": "220,797 203,042 297,812 Total current assets 773,651 760,954 955,675",
+      "confidence": "high",
+      "note": "Total assets 2025 = non-current 297,812 + current 955,675 = 1,253,487 (RMB'000)."
+    },
+    "col_Z": {
+      "value": -751492000,
+      "page": 15,
+      "quote": "(751,492) (923,635) (1,157,890)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -923635000,
+      "page": 15,
+      "quote": "(751,492) (923,635) (1,157,890)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -1157890000,
+      "page": 15,
+      "quote": "(751,492) (923,635) (1,157,890)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1745940000,
+      "page": 15,
+      "quote": "Total current liabilities 249,246 201,390 354,593",
+      "confidence": "high",
+      "note": "Total liabilities = Total current liabilities + Total non-current liabilities: 249,246 + 1,496,694 = 1,745,940 (2023); 201,390 + 1,686,241 = 1,887,631 (2024); 354,593 + 2,056,784 = 2,411,377 (2025). Non-current liabilities line on p.15."
+    },
+    "col_AD": {
+      "value": 1887631000,
+      "page": 15,
+      "quote": "Total current liabilities 249,246 201,390 354,593",
+      "confidence": "high",
+      "note": "Total liabilities (2024) = 201,390 + 1,686,241 = 1,887,631. Non-current liabilities 1,686,241 on p.15."
+    },
+    "col_AE": {
+      "value": 2411377000,
+      "page": 15,
+      "quote": "Total current liabilities 249,246 201,390 354,593",
+      "confidence": "high",
+      "note": "Total liabilities (2025) = 354,593 + 2,056,784 = 2,411,377. Non-current liabilities 2,056,784 on p.15."
+    },
+    "col_AF": {
+      "value": 267025000,
+      "page": 14,
+      "quote": "267,025 100.0 325,257 100.0 521,747",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 325257000,
+      "page": 14,
+      "quote": "267,025 100.0 325,257 100.0 521,747",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 521747000,
+      "page": 14,
+      "quote": "267,025 100.0 325,257 100.0 521,747",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -157464000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -191756000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -179312000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -157464000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -191756000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -179312000,
+      "page": 14,
+      "quote": "(157,464) (59.0) (191,756) (59.0) (179,312)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 2070577000,
+      "page": 259,
+      "quote": "1,494,684 1,689,992 2,070,577 2,132,775",
+      "confidence": "high",
+      "note": "INDEBTEDNESS table Total (incl. lease liabilities, borrowings, redemption liabilities) at 31/12/2025 = 2,070,577 (RMB'000)."
+    },
+    "col_BT": {
+      "value": "HKFRS Accounting Standards",
+      "page": 308,
+      "quote": "conform with HKFRS Accounting Standards issued by HKICPA and were audited by us in accordance with Hong Kong Standards on Auditing issued by the HKICPA",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 114168000,
+      "page": 309,
+      "quote": "30,571 71,192 114,168",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 20076000,
+      "page": 261,
+      "quote": "9,854 24,614 20,076",
+      "confidence": "high",
+      "note": "Capital expenditure table Total for 2025 (right-of-use assets + PP&E + intangible assets)."
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 307,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 282,
+      "quote": "underwriting commission of 2% of the aggregate Offer Price of the Offer Shares",
+      "confidence": "high",
+      "note": "Disclosed fixed underwriting commission 2% (discretionary incentive fee of up to 1.5% excluded, per convention)."
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 282,
+      "quote": "underwriting commission of 2% of the aggregate Offer Price of the Offer Shares",
+      "confidence": "high",
+      "note": "Single global rate disclosed; same 2% applies to the International Offering."
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 289,
+      "quote": "issue up to an aggregate of 3,454,700 additional H Shares, representing not more than 15% of the total number of Offer Shares",
+      "confidence": "high",
+      "note": "Actual Over-allotment Option grant: 3,454,700 additional H Shares = 15% of the Offer Shares initially available (p.289, Underwriting section)."
+    },
+    "col_CI": {
+      "value": 64700000,
+      "page": 282,
+      "quote": "estimated to amount to approximately HK$64.7 million (based on the Offer Price of HK$38.00 per Offer Share and assuming that the Over-allotment Option is not exercised)",
+      "confidence": "high",
+      "note": "Total listing expenses HK$64.7 million."
+    },
+    "col_AR": {
+      "value": "Robotic products (industrial robots, flexible collaborative robots, embodied intelligent robots) and related robotic solutions",
+      "page": 100,
+      "quote": "We primarily manufacture and sell robotic products, and, to a lesser extent, provide related robotic solutions in Chinese Mainland and overseas markets",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board – Rule 8.05(3) market capitalisation/revenue test (H Share issuer under Chapter 19A)",
+      "page": 17,
+      "quote": "satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules with reference to (i) our revenue for the year ended December 31, 2025",
+      "confidence": "high",
+      "note": "PRC H Share issuer; listing sought under the Rule 8.05(3) market capitalisation/revenue test."
+    },
+    "col_BF": {
+      "value": "Commercialized (mass production and sales; revenue-generating)",
+      "page": 100,
+      "quote": "manufacturing and commercialization of our offerings",
+      "confidence": "high",
+      "note": "Products are manufactured and sold at scale; FY2025 revenue RMB521.7 million."
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 264,
+      "quote": "approximately 35.0% of the net proceeds, or HK$283.7 million, will be used for enhancing our R&D capabilities and enriching our offerings in robots and related solutions",
+      "confidence": "high",
+      "note": "Full use-of-proceeds allocation (p.264–269): 35.0% R&D capabilities; 25.0% overseas sales network; 22.0% production efficiency; 8.0% strategic investment; 10.0% working capital and general corporate purposes. Total = 100%; no tranche for debt repayment, so col_BG = 0."
+    },
+    "col_CJ": {
+      "value": "GF Fund; Huatai Capital; Financial Street Capital; Yishao Capital; All View Fund",
+      "page": 271,
+      "quote": "The table below sets forth the details of the Cornerstone Placing: Name of Cornerstone Investor Total investment amount (in millions) Number Of Offer Shares to be subscribed",
+      "confidence": "high",
+      "note": "5 cornerstone investors, aggregate HK$274.9 million / 7,233,100 H Shares (31.40% of Offer Shares)."
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 14,
+      "quote": "as of and for the years ended December 31, 2023, 2024 and 2025",
+      "confidence": "high",
+      "note": "Year-1 = FY2025, full year (no annualization needed)."
+    },
+    "col_AU": {
+      "value": -77520000,
+      "page": 314,
+      "quote": "(95,233) (123,491) (77,520)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 14801000,
+      "page": 16,
+      "quote": "451,410 21,811 Cash and cash equivalent at end of the year 451,410 21,811 14,801",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 65508000,
+      "page": 309,
+      "quote": "(59,370) (54,218) (65,508)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 334,
+      "quote": "INTANGIBLE ASSETS The Group Software As at December 31, 2023 2024 2025 RMB’000 RMB’000 RMB’000 COST At beginning of the year 3,839 4,047 3,426 Additions 208 599 6,227",
+      "confidence": "high",
+      "note": "Intangible assets note has only the “Software” class — no “Development costs” line, so capitalised development costs in year-1 = 0 (p.334, Note 18)."
+    },
+    "col_AY": {
+      "value": 0.215,
+      "page": 13,
+      "quote": "revenue generated from our top five customers for each year during the Track Record Period accounted for 24.4%, 18.0% and 21.5% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "珞石(山东)机器人集团股份有限公司",
+      "page": 1,
+      "quote": "珞石( 山東) 機器人集團股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 100,
+      "quote": "Since our establishment, we have conducted several rounds of pre-IPO investments to fund our strategic growth and broaden our shareholder base.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 108,
+      "quote": "which is a venture capital firm focusing on early-stage investments in technology sectors",
+      "confidence": "high",
+      "note": "XH Fund is managed by Empower Harvest, a venture capital firm."
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 111,
+      "quote": "TR Capital is a leading pan-Asian secondary private equity firm with six offices across the region.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 109,
+      "quote": "Bosch (Shanghai) Venture Capital Co., Ltd. (博世(上海)創業投資有限公司), a subsidiary of Robert Bosch GmbH",
+      "confidence": "high",
+      "note": "Corporate venture capital: a Robert Bosch GmbH subsidiary is the largest LP of Zhongxin Botong."
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 108,
+      "quote": "The largest shareholder of National Manufacturing Transform and Upgrade Fund is the Ministry of Finance of the PRC, holding approximately 15.29%",
+      "confidence": "high",
+      "note": "State-owned investors include National Manufacturing Transform and Upgrade Fund, SCGC, and Shandong (Zoucheng/Jining/Yankuang) SOEs."
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 110,
+      "quote": "wholly owned subsidiary of Shunwei China Internet Opportunity Fund III, L.P. (“SCIOF III”). SCIOF III is controlled by Shunwei Capital Partners IV GP, L.P.",
+      "confidence": "high",
+      "note": "Shunwei Capital (via Golden Growth III) is a top-tier VC; GSR United Capital also present."
+    },
+    "col_pre_ipo_investors": {
+      "value": "Tibet Meiling; Hubei Meihua; Fenglong Xinglian; Qingkong Yinxing; Zhongxin Botong; Jinsha River III; Golden Growth III (Shunwei); XH Fund; Suxiang Fund; SCGC; Beijing Yitang; Yuanyi Yongxuan; Tianjin Qihui; South Hope; Zoucheng New Energy; National Manufacturing Transform and Upgrade Fund; Shandong Zhengfang; TR Victory; Pinghu Jinluo; Zoulu Fund; Huida Luxin; Jiaxing Yuanshi; Tianqi Zefeng; Quanzhou Shanyue; Yankuang Capital; Yixing ESP; Ms. Tian Zheng; Ms. Jiao Shaoling; Mr. Zhang Yong",
+      "page": 103,
+      "quote": "Name of Pre-IPO Investor(s) Date of contract Date of settlement Registered capital of our Company subscribed for/ acquired Consideration(2)",
+      "confidence": "high",
+      "note": "29 Pre-IPO investors (institutions and individuals) disclosed in the Pre-IPO Investments table."
+    },
+    "col_vc_pe_stake": {
+      "value": 0.6406,
+      "page": 117,
+      "quote": "The following table sets forth our shareholding structure as of the Latest Practicable Date and immediately upon the Listing (assuming the Over-allotment Option is not exercised",
+      "confidence": "high",
+      "note": "Aggregate institutional Pre-IPO investor shareholding upon Listing = 64.06% (sum of institutional holders in the Capitalization table: 3.85+0.65+2.64+1.87+8.82+3.36+1.79+0.16+6.34+5.88+5.36+2.65+0.70+3.16+3.00+2.20+1.82+1.10+1.08+0.54+1.69+1.57+1.56+1.14+0.94+0.19)."
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Angel Investment (May 2015, Tibet Meiling)",
+      "page": 103,
+      "quote": "Angel Investment Equity subscription Tibet Meiling May 20, 2015 May 5, 2015",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 11.14,
+      "page": 103,
+      "quote": "Angel Investment Equity subscription Tibet Meiling May 20, 2015 May 5, 2015",
+      "confidence": "high",
+      "note": "Earliest investment contract 20/05/2015 to Listing 09/07/2026 = 11.14 years."
+    },
+    "col_BB": {
+      "value": "Individual (founder Mr. Tuo Hua)",
+      "page": 16,
+      "quote": "Mr. Tuo is our ultimate Controlling Shareholder.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.1227,
+      "page": 117,
+      "quote": "3,212,011 13.46% 32,120,110(1) 12.27%",
+      "confidence": "high",
+      "note": "Mr. Tuo's beneficial economic interest upon Listing = 12.27% of total issued share capital."
+    },
+    "col_BD": {
+      "value": 0.3537,
+      "page": 16,
+      "quote": "Upon the Listing, Mr. Tuo will collectively control 35.37% of the voting power",
+      "confidence": "high",
+      "note": "Voting power controlled by Mr. Tuo upon Listing = 35.37% (incl. employee platforms and voting proxies)."
+    },
+    "col_BP": {
+      "value": "15/12/2014",
+      "page": 101,
+      "quote": "On December 15, 2014, our Company was incorporated as a limited liability company under the laws of the PRC",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 888 Huarun Road, Central Electromechanical Industrial Park, Zhongxindian Town, Zoucheng City, Jining City, Shandong Province, PRC",
+      "page": 72,
+      "quote": "Headquarters and Principal Place of Business in the PRC No. 888 Huarun Road Central Electromechanical Industrial Park Zhongxindian Town, Zoucheng City Jining City Shandong Province PRC",
+      "confidence": "high",
+      "note": "Headquarters and principal place of business in the PRC (registered office is the same address)."
+    },
+    "col_CC": {
+      "value": "30/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, June 30, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/07/2026",
+      "page": 5,
+      "quote": "Application lists close(3). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Monday, July 6, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 249791480,
+      "page": 224,
+      "quote": "H Shares to be converted from Unlisted Shares 226,759,580 22,675,958 H Shares to be issued pursuant to the Global Offering 23,031,900 2,303,190",
+      "confidence": "high",
+      "note": "H Shares after IPO (no option) = converted 226,759,580 + newly issued 23,031,900 = 249,791,480."
+    }
+  }
+}

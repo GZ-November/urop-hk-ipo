@@ -1,0 +1,425 @@
+{
+  "code": "1989.HK",
+  "fields": {
+    "col_L": {
+      "value": 472446482,
+      "page": 244,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n472,446,482\n100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 46000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under\nthe Global Offering\n:\n46,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 426446482,
+      "page": 244,
+      "quote": "A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . .\n426,446,482\n90.26%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 426446482,
+      "page": 244,
+      "quote": "A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . .\n426,446,482\n90.26%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 244,
+      "quote": "H Shares to be issued pursuant to\nthe Global Offering . . . . . . . . . . . . . . . . . . . .\n46,000,000\n9.74%",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 46000000,
+      "page": 244,
+      "quote": "H Shares to be issued pursuant to\nthe Global Offering . . . . . . . . . . . . . . . . . . . .\n46,000,000\n9.74%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 41400000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n41,400,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4600000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n4,600,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 71.88,
+      "page": 2,
+      "quote": "Maximum Offer Price\n:\nHK$71.88 per H Share, plus brokerage of\n1%, SFC transaction levy of 0.0027%,\nStock Exchange trading fee of 0.00565%\nand AFRC transaction levy of 0.00015%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 313,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all\nvalues are rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 3812432000,
+      "page": 20,
+      "quote": "Total assets . . . . . . . . . . . . . .\n3,244,856\n3,812,432\n5,685,756\n6,771,716",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 5685756000,
+      "page": 20,
+      "quote": "Total assets . . . . . . . . . . . . . .\n3,244,856\n3,812,432\n5,685,756\n6,771,716",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 6771716000,
+      "page": 20,
+      "quote": "Total assets . . . . . . . . . . . . . .\n3,244,856\n3,812,432\n5,685,756\n6,771,716",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 1830314000,
+      "page": 20,
+      "quote": "Total equity . . . . . . . . . . . . . .\n1,409,074\n1,830,314\n3,073,846\n3,633,951",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 3073846000,
+      "page": 20,
+      "quote": "Total equity . . . . . . . . . . . . . .\n1,409,074\n1,830,314\n3,073,846\n3,633,951",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 3633951000,
+      "page": 20,
+      "quote": "Total equity . . . . . . . . . . . . . .\n1,409,074\n1,830,314\n3,073,846\n3,633,951",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1982118000,
+      "page": 20,
+      "quote": "Total liabilities . . . . . . . . . . .\n1,835,782\n1,982,118\n2,611,910\n3,137,765",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 2611910000,
+      "page": 20,
+      "quote": "Total liabilities . . . . . . . . . . .\n1,835,782\n1,982,118\n2,611,910\n3,137,765",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 3137765000,
+      "page": 20,
+      "quote": "Total liabilities . . . . . . . . . . .\n1,835,782\n1,982,118\n2,611,910\n3,137,765",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 2678270000,
+      "page": 15,
+      "quote": "REVENUE. . . . . . . . . . . .\n2,412,387\n100.0\n2,678,270\n100.0\n3,734,285\n100.0\n2,680,660\n100.0\n3,835,129\n100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 3734285000,
+      "page": 15,
+      "quote": "REVENUE. . . . . . . . . . . .\n2,412,387\n100.0\n2,678,270\n100.0\n3,734,285\n100.0\n2,680,660\n100.0\n3,835,129\n100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 5113505333.333333,
+      "page": 15,
+      "quote": "REVENUE. . . . . . . . . . . .\n2,412,387\n100.0\n2,678,270\n100.0\n3,734,285\n100.0\n2,680,660\n100.0\n3,835,129\n100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 496883000,
+      "page": 15,
+      "quote": "PROFIT BEFORE TAX . . . . . .\n310,645\n12.9\n496,883\n18.6\n762,481\n20.4\n556,000\n20.7\n823,464\n21.5",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 762481000,
+      "page": 15,
+      "quote": "PROFIT BEFORE TAX . . . . . .\n310,645\n12.9\n496,883\n18.6\n762,481\n20.4\n556,000\n20.7\n823,464\n21.5",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 1097952000.0,
+      "page": 15,
+      "quote": "PROFIT BEFORE TAX . . . . . .\n310,645\n12.9\n496,883\n18.6\n762,481\n20.4\n556,000\n20.7\n823,464\n21.5",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 414686000,
+      "page": 15,
+      "quote": "PROFIT FOR THE YEAR/PERIOD .\n279,651\n11.6\n414,686\n15.5\n676,100\n18.1\n492,495\n18.4\n723,819\n18.9",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 676100000,
+      "page": 15,
+      "quote": "PROFIT FOR THE YEAR/PERIOD .\n279,651\n11.6\n414,686\n15.5\n676,100\n18.1\n492,495\n18.4\n723,819\n18.9",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 965092000.0,
+      "page": 15,
+      "quote": "PROFIT FOR THE YEAR/PERIOD .\n279,651\n11.6\n414,686\n15.5\n676,100\n18.1\n492,495\n18.4\n723,819\n18.9",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 283,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting\ncommission of 2.0% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 283,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting\ncommission of 2.0% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 260,
+      "quote": "Since there is no\nover-allotment option in the International Offering, there will be no delayed delivery or\ndeferred settlement of Offer Shares to be subscribed by the Cornerstone Investors.",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Development, manufacture and sales of customized printed circuit boards (PCBs) for high performance servers and other computing applications",
+      "page": 10,
+      "quote": "We primarily develop, manufacture and sell customized printed circuit boards (“PCBs”)\nfor high performance servers and other computing applications.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board; Chapter 19A PRC issuer with other listed shares (A+H)",
+      "page": 126,
+      "quote": "Rule 8.08(1) (as amended and replaced by Rule 19A.13A) of the Listing Rules provides\nthat, where a new applicant is a PRC issuer with other listed shares at the time of listing",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/25",
+      "page": 15,
+      "quote": "Nine months ended September 30,\n2022\n2023\n2024\n2024\n2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 759552000,
+      "page": 21,
+      "quote": "Net cash flows generated from\noperating activities . . . . . . . . . . .\n430,866\n527,513\n796,285\n619,722\n759,552",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 702425000,
+      "page": 21,
+      "quote": "Cash and cash equivalents at the\nend of the year/period. . . . . . . . . .\n200,047\n349,203\n635,071\n792,120\n702,425",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 193920000,
+      "page": 15,
+      "quote": "Research and development costs. . .\n(115,095)\n(4.8)\n(120,589)\n(4.5)\n(179,197)\n(4.8)\n(130,512)\n(4.9)\n(193,920)\n(5.1)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 329,
+      "quote": "All research costs are charged to profit or loss as incurred.\nExpenditure incurred on projects to develop new products is capitalized and deferred only",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.593,
+      "page": 43,
+      "quote": "our revenue\ngenerated from our five largest customers represented 63.6%, 65.6%, 61.4% and 59.3% of our\ntotal revenue during the same years, respectively.",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "广州广合科技股份有限公司",
+      "page": 1,
+      "quote": "廣州廣合科技股份有限公司\n(A joint stock company incorporated in the People’s Republic of China with limited liability)",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "CPE; Yuanfeng Asset Management and GTINV (in connection with the Yuanfeng OTC Swaps); Shanghai Greenwoods and CITIC Securities International Capital Management Limited (in connection with CITICS Back-to-back TRS and CITICS Client TRS); HK Greenwoods; UBS AM Singapore; Value Partners; Eastspring; GBAHIL; MY Asian; Barings; Dajia Life; ICBC Wealth",
+      "page": 261,
+      "quote": "THE CORNERSTONE INVESTORS\nThe table below sets forth details of the Cornerstone Placing:\nCornerstone Investor",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 549,
+      "quote": "Shenzhen Talent Innovation Venture No. 2 Equity Investment Fund Partnership (Limited Partnership) (深圳市人才創新創業二號股權投資基金合夥企業（有限合夥）)",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 233,
+      "quote": "Zhenyun Investment, which was owned as to 99.90% by Mr. Xiao (the spouse of Ms. Liu) and 0.10% by Ms. Liu (the spouse of Mr. Xiao)",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4843,
+      "page": 233,
+      "quote": "Mr. Xiao and Ms. Liu, through Zhenyun Investment, Guangsheng Investment and Guangcai Investment, will collectively control approximately 48.43% of the total issued capital of our Company.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.4843,
+      "page": 246,
+      "quote": "Interest in controlled corporation 228,808,321 A Shares 53.65% 53.65% 53.65% 48.43%",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 571914000,
+      "page": 227,
+      "quote": "Total . . . . . . . . . . . . . . 338,126 393,500 415,352 571,914 707,589",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "已量产",
+      "page": 148,
+      "quote": "We have realized the mass production of high speed and high performance PCB products, including but not limited to",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 23,
+      "quote": "and (v) approximately 10.0% of the net proceeds, or HK$317.5 million (equivalent to approximately RMB280.5 million), is expected to be used for working capital and general corporate uses.",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 244,
+      "quote": "Upon the completion of the Global Offering, our Shares will consist of A Shares and H Shares.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "17/06/02",
+      "page": 500,
+      "quote": "Our Company was established as a limited liability company under the laws of the PRC on June 17, 2002, and was converted into a joint stock limited company",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Guangzhou, PRC",
+      "page": 87,
+      "quote": "Headquarters and Principal Place of Business in the PRC No.22 Baoying South Road Bonded Zone, Guangzhou PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 324,
+      "quote": "prepared in accordance with IFRS Accounting Standards, which comprise all standards and interpretations approved by the International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "12/03/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, March 12, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "17/03/26",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Tuesday, March 17, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 46000000,
+      "page": 25,
+      "quote": "and that 46,000,000 H Shares are expected to be in issue immediately after completion of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1336538000,
+      "page": 314,
+      "quote": "Gross profit . . . . . . . . . . . . . . . 628,668 891,842 1,246,460 892,677 1,336,538",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 716933000,
+      "page": 228,
+      "quote": "Purchases of items of property, plant and equipment . . . . . . . . . . . . . . . . . 445,330 398,026 814,824 541,451 716,933",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "无保留意见（Unqualified opinion）",
+      "page": 311,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 131100000,
+      "page": 284,
+      "quote": "printing and other expenses payable by our Company in relation to the Global Offering are estimated to be approximately HK$131.1 million (based on the maximum Offer Price of HK$71.88)",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Shenzhen Talent Innovation Venture Fund No. 2",
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.041,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Pre-IPO",
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 4.0,
+      "page": 549,
+      "quote": "Zhenyun Investment",
+      "confidence": "high"
+    }
+  }
+}

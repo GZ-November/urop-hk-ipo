@@ -1,0 +1,119 @@
+{
+  "code": "1377.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4145,
+      "page": 7,
+      "quote": "Total 5,236,500 41.45% 1.23%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 354.64,
+      "page": 4,
+      "quote": "Subscription level 354.64 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 118991,
+      "page": 4,
+      "quote": "No. of valid applications 118,991",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 403190216,
+      "page": 4,
+      "quote": "Subscription level 354.64 times Claw-back triggered N/A No. of Offer Shares excluding Overseas Employee Reserved Shares initially available under the Hong Kong Public Offering 1,136,900",
+      "confidence": "high",
+      "note": "Total valid applied shares = 1,136,900 initial offer * 354.64 times = 403,190,216."
+    },
+    "col_CP": {
+      "value": "Subscription level 354.64 times",
+      "page": 4,
+      "quote": "Subscription level 354.64 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "07/07/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Joint Sponsor-Overall Coordinators (for themselves and on behalf of the Overall ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "08/07/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**08/07/2026 22:52**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 12632000,
+      "page": 3,
+      "quote": "Number of Offer Shares 12,632,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1263200,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public OfferingNote 1 1,263,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 11368800,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International OfferingNote 2 11,368,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-07-09 起 45 天内共 24 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-08-23 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered N/A; 66,000 under-subscribed Overseas Employee Reserved Shares reallocated to HK Public Offering",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares excluding Overseas Employee Reserved Shares initially available under the Hong Kong Public Offering 1,136,900 Final no. of Offer Shares 1,202,900",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4664800000,
+      "page": 3,
+      "quote": "Net proceeds HK$4,664.8 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0298,
+      "page": 34,
+      "quote": "total market value of the H Shares expected to be held by the public is expected to be approximately HK$4,800.16 million, calculated based on the final Offer Price of HK$380.00",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 424044934,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 424,044,934",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0174,
+      "page": null,
+      "quote": "公式：(col_CS 12,632,000 − col_CK 0.4145×col_CS) ÷ col_CZ 424,044,934 = 0.0174；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 12,632,000 − col_CK 0.4145×col_CS) ÷ col_CZ 424,044,934 = 0.0174；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 424044934,
+      "page": 3,
+      "quote": "公式：(col_CS 12,632,000 − col_CK 0.4145×col_CS) ÷ col_CZ 424,044,934 = 0.0174；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "code": "3268.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3947,
+      "page": 7,
+      "quote": "Subtotal 15,887,400 39.47% 5.26%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 174.12,
+      "page": 5,
+      "quote": "Subscription level 174.12 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 57965,
+      "page": 5,
+      "quote": "No. of valid applications 57,965",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 609436500,
+      "page": 14,
+      "quote": "NO. OF OFFER SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR 100 23,828",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 174.12 times",
+      "page": 5,
+      "quote": "No. of successful applications 15,506 Subscription level 174.12 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "06/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and us o",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "09/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**09/03/2026 22:31**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 40250000,
+      "page": 3,
+      "quote": "Number of Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option) 40,250,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3500000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 3,500,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 36750000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (taking into account the full exercise of the Offer Size Adjustment Option) 36,750,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-03-10 起 45 天内共 46 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-04-24 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A（无回拨，国际配售未向公开发售重新分配股份）",
+      "page": 5,
+      "quote": "Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1090800000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$1,161.6 million Less: Estimated listing expenses payable based on Final Offer Price HK$70.8 million Net proceeds HK$1,090.8 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1333,
+      "page": 24,
+      "quote": "the total number of the H Shares expected to be held by the public represents approximately 13.33% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 302006700,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 302,006,700",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0807,
+      "page": 24,
+      "quote": "Each of the Cornerstone Investors has agreed to a lock-up period of six months following the Listing Date.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float shares = Offer Shares under the Global Offering after full exercise of the Offer Size Adjustment Option but before the Over-allotment Option (col_CS = 40,250,000) less H Shares allocated to Cornerstone Investors (15,887,400, subject to a six-month lock-up); denominator = total issued share capital of the Company upon Listing (302,006,700 Shares).",
+      "page": 24,
+      "quote": "As such, H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 302006700,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 302,006,700",
+      "confidence": "medium"
+    }
+  }
+}

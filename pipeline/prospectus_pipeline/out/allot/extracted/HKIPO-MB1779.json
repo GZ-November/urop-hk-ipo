@@ -1,0 +1,119 @@
+{
+  "code": "1779.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4996,
+      "page": 5,
+      "quote": "Total 7,090,400 49.96% 9.56%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 4762.58,
+      "page": 4,
+      "quote": "Subscription level 4,762.58 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 266377,
+      "page": 4,
+      "quote": "No. of valid applications 266,377",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6759772650,
+      "page": 17,
+      "quote": "valid applications made by the public will be conditionally allocated on the basis set out below: Pool A Number of H Shares applied for Number of valid applications",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 4,762.58 times",
+      "page": 4,
+      "quote": "Subscription level 4,762.58 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$96.06; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "04/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：04/06/2026 22:24",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 14193150,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 14,193,150 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1419350,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,419,350 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 12773800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 12,773,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 2128950,
+      "page": 1,
+      "quote": "been fully exercised by the Sole Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Tuesday, June 30, 2026, in respect of an aggregate of 2,128,950 H Shares, ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (30/06/2026 22:27)"
+    },
+    "col_CW": {
+      "value": "Reallocation N/A; no Offer Shares reallocated from the International Offering (0); final Hong Kong Public Offering remains 1,419,350 H Shares (10.00% of the Global Offering)",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1254900000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,254.9 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4542,
+      "page": 26,
+      "quote": "an aggregate of 33,698,881 H Shares, representing approximately 45.42% of the total issued share capital of the Company will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 74193150,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 74,193,150 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0957,
+      "page": null,
+      "quote": "公式：(col_CS 14,193,150 − col_CK 0.4996×col_CS) ÷ col_CZ 74,193,150 = 0.0957；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 14,193,150 − col_CK 0.4996×col_CS) ÷ col_CZ 74,193,150 = 0.0957；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 74193150,
+      "page": 3,
+      "quote": "公式：(col_CS 14,193,150 − col_CK 0.4996×col_CS) ÷ col_CZ 74,193,150 = 0.0957；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

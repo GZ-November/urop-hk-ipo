@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "target": "prospectus",
+  "expected_codes": [
+    "2649.HK"
+  ],
+  "records": [
+    {
+      "code": "2649.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/out/extracted/HKIPO-MB2649.json",
+      "hash": "4fd0ca6d9b72372578902cb8d37f01622bbf1635a7edf123bee94aa67122f8ae",
+      "json_sha256": "100f70c70d50b4955208103d79088a8e972fa3788c14e87fbdd905f9fbc5f6b9",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_CJ"
+      ],
+      "errors": []
+    }
+  ],
+  "missing_files": [],
+  "pending_missing_fields": [
+    {
+      "code": "2649.HK",
+      "fields": [
+        "col_CJ"
+      ]
+    }
+  ],
+  "errors": [],
+  "gate_pass": true
+}

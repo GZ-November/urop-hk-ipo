@@ -1,0 +1,118 @@
+{
+  "code": "9903.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4302,
+      "page": 4,
+      "quote": "Total 10,940,300 43.02% 4.46% 4.30%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 414.24,
+      "page": 2,
+      "quote": "Subscription level 414.24 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 180802,
+      "page": 2,
+      "quote": "Number of valid applications 180,802",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1053503300,
+      "page": 20,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 100 102,763",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 414.24 times",
+      "page": 2,
+      "quote": "Subscription level 414.24 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$144.60; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "07/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：07/01/2026 21:58",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 25431800,
+      "page": 1,
+      "quote": "Number of Offer Shares 25,431,800 Final Number of Offer Shares in Hong Kong Public Offering 2,543,200 Final Number of Offer Shares in International Offering 22,888,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2543200,
+      "page": 2,
+      "quote": "Final number of Offer Shares under the Hong Kong Public Offering 2,543,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 22888600,
+      "page": 3,
+      "quote": "Final number of Offer Shares under the International Offering 22,888,600",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-01-08 起 45 天内共 5 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-22 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; Number of Offer Shares reallocated from International Offering to Hong Kong Public Offering: 0",
+      "page": 2,
+      "quote": "Claw-back triggered N/A Number of Offer Shares reallocated from International Offering to Hong Kong Public Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 3509300000,
+      "page": 1,
+      "quote": "Gross proceeds (Note) HK$3,677.4 million Less: Estimated listing expenses payable based on Offer Price HK$168.2 million Net proceeds HK$3,509.3 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4187,
+      "page": 28,
+      "quote": "the total number of the H Shares held by the public represents approximately 41.87% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 254317736,
+      "page": 1,
+      "quote": "Number of issued shares upon Listing 254,317,736",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.057,
+      "page": null,
+      "quote": "公式：(col_CS 25,431,800 − col_CK 0.4302×col_CS) ÷ col_CZ 254,317,736 = 0.0570；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 25,431,800 − col_CK 0.4302×col_CS) ÷ col_CZ 254,317,736 = 0.0570；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 254317736,
+      "page": 1,
+      "quote": "公式：(col_CS 25,431,800 − col_CK 0.4302×col_CS) ÷ col_CZ 254,317,736 = 0.0570；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 312,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "500,000,000 Shares of US$0.0001 each",
+          "50,000",
+          "–"
+        ],
+        [
+          "100,000,000 Shares of US$0.0001 each",
+          "10,000",
+          "–"
+        ],
+        [
+          "2,000,000,000 Shares of US$0.0001 each",
+          "200,000",
+          "–"
+        ],
+        [
+          "620,000,000 Shares of US$0.0001 each",
+          "62,000",
+          "–"
+        ],
+        [
+          "240,000,000 Shares of US$0.0001 each",
+          "24,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                  | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------- | ---------------- | -------------------------- |\n| 500,000,000 Shares of US$0.0001 each   | 50,000           | –                          |\n| 100,000,000 Shares of US$0.0001 each   | 10,000           | –                          |\n| 2,000,000,000 Shares of US$0.0001 each | 200,000          | –                          |\n| 620,000,000 Shares of US$0.0001 each   | 62,000           | –                          |\n| 240,000,000 Shares of US$0.0001 each   | 24,000           | –                          |",
+      "metadata": {
+        "total_rows": 5
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(1) Listing expenses relate to this Global Offering of the",
+          "Company."
+        ]
+      ],
+      "markdown": "| Item Description                                           | Rate / Amount Disclosed |\n| ---------------------------------------------------------- | ----------------------- |\n| (1) Listing expenses relate to this Global Offering of the | Company.                |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 36,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses primarily include professional",
+          "fees,"
+        ],
+        [
+          "approximately HK$292.6 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                        | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------- | ----------------------- |\n| Listing expenses primarily include professional                         | fees,                   |\n| approximately HK$292.6 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 430,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "4",
+          "299,672",
+          "498,780",
+          "720,303"
+        ],
+        [
+          "Gross profit",
+          "50,104",
+          "82,244",
+          "181,051",
+          "71,381"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------ | ------- | ------- | ------- |\n| Revenue          | 4      | 299,672 | 498,780 | 720,303 |\n| Gross profit     | 50,104 | 82,244  | 181,051 | 71,381  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

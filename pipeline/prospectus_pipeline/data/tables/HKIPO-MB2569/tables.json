@@ -1,0 +1,150 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 277,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "100,000,000 Shares in issue at the date of this prospectus",
+          "10,000",
+          "10.00"
+        ],
+        [
+          "650,000,000 Shares to be issued under the Capitalisation",
+          "65,000",
+          "65.00"
+        ],
+        [
+          "250,000,000 Shares to be issued pursuant to the Global",
+          "25,000",
+          "25.00"
+        ],
+        [
+          "1,000,000,000 Shares in total",
+          "100,000",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                                      | Number of Shares | Approximate Percentage (%) |\n| ---------------------------------------------------------- | ---------------- | -------------------------- |\n| 100,000,000 Shares in issue at the date of this prospectus | 10,000           | 10.00                      |\n| 650,000,000 Shares to be issued under the Capitalisation   | 65,000           | 65.00                      |\n| 250,000,000 Shares to be issued pursuant to the Global     | 25,000           | 25.00                      |\n| 1,000,000,000 Shares in total                              | 100,000          | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 278,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "100,000,000 Shares in issue at the date of this prospectus",
+          "10,000",
+          "9.64"
+        ],
+        [
+          "650,000,000 Shares to be issued under the Capitalisation",
+          "65,000",
+          "62.65"
+        ],
+        [
+          "250,000,000 Shares to be issued pursuant to the Global",
+          "25,000",
+          "24.10"
+        ],
+        [
+          "1,037,500,000 Shares in total",
+          "103,750",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                                      | Number of Shares | Approximate Percentage (%) |\n| ---------------------------------------------------------- | ---------------- | -------------------------- |\n| 100,000,000 Shares in issue at the date of this prospectus | 10,000           | 9.64                       |\n| 650,000,000 Shares to be issued under the Capitalisation   | 65,000           | 62.65                      |\n| 250,000,000 Shares to be issued pursuant to the Global     | 25,000           | 24.10                      |\n| 1,037,500,000 Shares in total                              | 103,750          | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by our Company are estimated to be approximately",
+          "HK$41.5"
+        ]
+      ],
+      "markdown": "| Item Description                                                              | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by our Company are estimated to be approximately | HK$41.5                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 33,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "commissions) of approximately",
+          "HK$8.3 million"
+        ]
+      ],
+      "markdown": "| Item Description              | Rate / Amount Disclosed |\n| ----------------------------- | ----------------------- |\n| commissions) of approximately | HK$8.3 million          |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "263,226",
+          "408,066",
+          "654,560",
+          "492,804"
+        ],
+        [
+          "Gross profit",
+          "56,734",
+          "111,226",
+          "197,267",
+          "142,942"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 263,226 | 408,066 | 654,560 | 492,804 |\n| Gross profit     | 56,734  | 111,226 | 197,267 | 142,942 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

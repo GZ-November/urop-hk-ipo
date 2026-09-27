@@ -1,0 +1,446 @@
+{
+ "code": "6132.HK",
+ "fields": {
+  "col_L": {
+   "value": 73599605,
+   "page": 267,
+   "quote": "H Shares converted from Unlisted Shares 81.52% 13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 13600000,
+   "page": 267,
+   "quote": "13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 59999605,
+   "page": 267,
+   "quote": "13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high",
+   "note": "口径 L − M = 73,599,605 − 13,600,000 = 59,999,605（全球发售完成前已发行股份总数）"
+  },
+  "col_O": {
+   "value": 59999605,
+   "page": 267,
+   "quote": "13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high",
+   "note": "口径 L − M = 73,599,605 − 13,600,000 = 59,999,605"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 267,
+   "quote": "H Shares converted from Unlisted Shares 81.52% 13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high",
+   "note": "股本表仅含「旧股转为 H 股」与「全球发售新发 H 股」两行，无 Sale Shares；全部为新股发售，故 P=0"
+  },
+  "col_Q": {
+   "value": 13600000,
+   "page": 267,
+   "quote": "13,600,000 H Shares to be issued under the Global Offering",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 12240000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 12,240,000 H Shares (subject to reallocation and the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1360000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,360,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 267,
+   "quote": "Upon the completion of the Global Offering and conversion of Unlisted Shares into H Shares, our Shares will consist of H Shares only",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 73599605,
+   "page": 267,
+   "quote": "13,600,000 H Shares to be issued under the Global Offering 18.48% 73,599,605 Total 100.00%",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 81.8,
+   "page": 2,
+   "quote": "Offer Price : HK$81.80 per Offer Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 81.8,
+   "page": 2,
+   "quote": "Offer Price : HK$81.80 per Offer Share",
+   "confidence": "medium"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 329,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_Z": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_AC": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_AF": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_AI": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_AL": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024 与 2025 两个年度，无对应 year-3 数据"
+  },
+  "col_CF": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high",
+   "note": "招股书 Track Record Period 仅含 2024、2025 两个年度，无 year-3；且损益表无 Gross profit 行"
+  },
+  "col_X": {
+   "value": 430173000,
+   "page": 26,
+   "quote": "Total non-current assets 29,714 29,067 59,894 Total current assets 400,459 403,542 354,467",
+   "confidence": "high",
+   "note": "2024 总资产 = 非流动 29,714 + 流动 400,459 = 430,173 千元"
+  },
+  "col_Y": {
+   "value": 432609000,
+   "page": 26,
+   "quote": "Total non-current assets 29,714 29,067 59,894 Total current assets 400,459 403,542 354,467",
+   "confidence": "high",
+   "note": "2025 总资产 = 非流动 29,067 + 流动 403,542 = 432,609 千元"
+  },
+  "col_AA": {
+   "value": 376235000,
+   "page": 26,
+   "quote": "Total equity 376,235 336,200 307,298",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 336200000,
+   "page": 26,
+   "quote": "Total equity 376,235 336,200 307,298",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 53938000,
+   "page": 26,
+   "quote": "Total current liabilities 53,938 96,047 105,651",
+   "confidence": "high",
+   "note": "2024 总负债 = 流动 53,938 + 非流动 0 = 53,938 千元"
+  },
+  "col_AE": {
+   "value": 96409000,
+   "page": 331,
+   "quote": "53,938 96,047 Net current assets 346,521 307,495 Total assets less current liabilities 376,235 336,562 Non-current liability Lease liabilities 24 – 362",
+   "confidence": "high",
+   "note": "2025 总负债 = 流动 96,047 + 非流动租赁负债 362 = 96,409 千元"
+  },
+  "col_AG": {
+   "value": 1800000,
+   "page": 330,
+   "quote": "Revenue 6 1,800 12,982",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 12982000,
+   "page": 330,
+   "quote": "Revenue 6 1,800 12,982",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -202317000,
+   "page": 330,
+   "quote": "Loss before tax 11 (202,317) (135,080)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -135080000,
+   "page": 330,
+   "quote": "Loss before tax 11 (202,317) (135,080)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -202317000,
+   "page": 330,
+   "quote": "Loss and total comprehensive expense for the year (202,317) (135,084)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -135084000,
+   "page": 330,
+   "quote": "Loss and total comprehensive expense for the year (202,317) (135,084)",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 12646000,
+   "page": 287,
+   "quote": "Lease liabilities 2,281 2,276 714 Borrowings – 10,008 20,015 Non-current Lease Liabilities – 362 1,412 Total 2,281 12,646 22,141",
+   "confidence": "high",
+   "note": "2025 年末 INDEBTEDNESS Total（含租赁负债与借款）= 12,646 千元"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 270,
+   "quote": "Our historical financial information has been prepared based on the accounting policies which conform with IFRS Accounting Standards.",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 1500000,
+   "page": 287,
+   "quote": "Our capital expenditures amounted to RMB1.6 million and RMB1.5 million in 2024 and 2025, respectively, primarily representing expenditures associated with the purchase of property, plant and equipment",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 328,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position as at December 31, 2024 and 2025",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.035,
+   "page": 302,
+   "quote": "Our Company will pay an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.035,
+   "page": 302,
+   "quote": "Our Company will pay an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "medium",
+   "note": "全球发售统一费率 3.5%，香港公开发售与配售同率"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 301,
+   "quote": "to require us to allot and issue up to an aggregate of 2,040,000 additional H Shares, representing 15.0% of the number of Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 93700000,
+   "page": 28,
+   "quote": "Listing expenses to be borne by us are estimated to be approximately HK$93.7 million",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Biopharmaceutical — discovery and development of small-molecule innovative drugs",
+   "page": 335,
+   "quote": "The principal activities of the Group are mainly research and development of new small molecule drugs.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18A of the Listing Rules (Main Board)",
+   "page": 10,
+   "quote": "we are a biotechnology company seeking to list on the Main Board of the Stock Exchange under Chapter 18A of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Clinical-stage (no products approved for commercial sale)",
+   "page": 270,
+   "quote": "We currently have no products approved for commercial sales and was loss-making during the Track Record Period.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 291,
+   "quote": "We intend to use such net proceeds from the Global Offering for the purposes and in the amounts set forth below:",
+   "confidence": "high",
+   "note": "USE OF PROCEEDS 四项用途：(i) 80.6% 管线临床研发、(ii) 9.4% 研发平台、(iii) 5.0% 商业化团队、(iv) 5.0% 一般营运资金；无任何偿还债务用途，故填 0"
+  },
+  "col_CJ": {
+   "value": "Foresight Global Superior Choice SPC—Global Superior Choice Fund 1 SP; Foresight Global Superior Choice SPC—Vision Fund 1 SP; Foresight Global Superior Choice SPC—Horizon Fund 1 SP; Foresight Global Superior Choice SPC—Horizon Next Fund SP; Foresight International Series–Foresight China Equity Fund; Key Broad Future Limited; LBC HK Opportunity Fund Limited; Sage Partners Master Fund; Panjing Harbourview Investment Fund; Taikang Life Insurance Co., Ltd.",
+   "page": 261,
+   "quote": "namely (i) Foresight Global Superior Choice SPC—Global Superior Choice Fund 1 SP (“GSC Fund 1”), Foresight Global Superior Choice SPC—Vision Fund 1 SP",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 330,
+   "quote": "Year ended December 31, NOTES 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -89434000,
+   "page": 334,
+   "quote": "NET CASH USED IN OPERATING ACTIVITIES (78,042) (89,434)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 3720000,
+   "page": 331,
+   "quote": "Cash and cash equivalents 22 53,810 3,720",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 110178000,
+   "page": 330,
+   "quote": "Research and development expenses (74,973) (110,178)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 347,
+   "quote": "All of the Group’s and the Company’s database use right was acquired from third parties and the amortization of these intangible assets will begin when it is available for use.",
+   "confidence": "medium",
+   "note": "无形资产附注仅列示 Database use right（第三方购入），无 Development costs 行，故资本化开发成本新增=0"
+  },
+  "col_AY": {
+   "value": 1.0,
+   "page": 235,
+   "quote": "During the Track Record Period, all of our revenue was derived from our out-license and collaboration agreements with Junshi Biosciences and/or Junze Chuangyao.",
+   "confidence": "high",
+   "note": "收入全部来自 Junshi Biosciences 及/或 Junze Chuangyao 两名客户，故前五大客户占比=100%"
+  },
+  "col_DP": {
+   "value": "华健未来（成都）科技股份有限公司",
+   "page": 1,
+   "quote": "華健未來（成都）科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 148,
+   "quote": "Our Company has completed several rounds of Pre-IPO Investments, details of which are set out below:",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 153,
+   "quote": "Ruiji Phase III and Ruiji Phase X are both venture capital funds",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 152,
+   "quote": "Suzhou Fanmao is principally engaged in growth-stage private equity investment",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 154,
+   "quote": "The general partner of Wuxi Runyuan is Junshi Venture Capital (Hainan) Co., Ltd. (君實創業投資(海南)有限公司), which is a wholly-owned subsidiary of Junshi Biosciences.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 151,
+   "quote": "which is ultimately controlled by the State-owned Assets Supervision and Administration Commission of the State Council",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 152,
+   "quote": "Junlian Capital was established in April 2001 and is a leading professional investment institution in China specializing in early-stage venture capital",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "SDIC Shanghai; Junlian Xinkang; Suzhou Fanmao; Huaige Ruixin; Huaige Health; Ruiji Phase III; Junshi Biosciences; Peikun Jingrong; Peikun Songfu; STAT Fund; Xiamen Jianfa; Shengyu Heike; Jiangjin Fund; Chengyu Tuanjiehu Fund; Wuxi Runyuan; Huike Fund; Ruiji Phase X; Huace Xinming; Baohe Linghang; Chengdu Chunlei; Ms. Zhang Naiye",
+   "page": 159,
+   "quote": "Such 13 other Shareholders include Ruiji Phase III, STAT Fund, Xiamen Jianfa, Ms. Zhang Naiye, Huike Fund, Ruiji Phase X, Suzhou Fanmao, Chengdu Chunlei, Wuxi Runyuan",
+   "confidence": "medium",
+   "note": "Pre-IPO 投资者共 21 家：Series A/B/B+/B++/C1/C2 各轮及股权转让受让方（Shengyu Heike 已于 2025 年 6 月转让退出）"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.3466,
+   "page": 158,
+   "quote": "the 25,506,162 H Shares to be converted from Unlisted Shares held by our other existing Shareholders, representing 34.66%",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 247,
+   "quote": "Ms. Geng Xueli (耿學莉), aged 44, has been appointed to our Board by SDIC Shanghai, one of our Pre-IPO investors.",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series A Financing",
+   "page": 148,
+   "quote": "Series A Financing Subscription of registered share capital December 21, 2017 December 26, 2017 SDIC Shanghai",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 8.47,
+   "page": 148,
+   "quote": "Series A Financing Subscription of registered share capital December 21, 2017 December 26, 2017",
+   "confidence": "medium",
+   "note": "最早一轮协议日 2017-12-21 至招股书日 2026-06-12 = 8.47 年"
+  },
+  "col_BB": {
+   "value": "Individual (natural person)",
+   "page": 335,
+   "quote": "The Company’s controlling shareholder and ultimate controlling party is Dr. Ji Jianxin (姬建新), who is also the chief executive of the Company.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.4687,
+   "page": 158,
+   "quote": "the 34,493,443 H Shares to be converted from Unlisted Shares held by Dr. Ji, Chengdu Wenshao and Suzhou Jishitang, representing 46.87% of our total issued Shares upon the Listing",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.4687,
+   "page": 158,
+   "quote": "the 34,493,443 H Shares to be converted from Unlisted Shares held by Dr. Ji, Chengdu Wenshao and Suzhou Jishitang, representing 46.87% of our total issued Shares upon the Listing",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "20/02/2017",
+   "page": 335,
+   "quote": "The Company was incorporated in the People’s Republic of China (the “PRC”) on February 20, 2017 as a limited liability company.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "No. 501, 5/F, Unit 1, Building 4, No. 18 North Section of Bayi Road, Yongning Town, Wenjiang District, Chengdu, PRC",
+   "page": 89,
+   "quote": "Headquarters and registered office in the PRC No. 501, 5/F, Unit 1, Building 4, No. 18 North Section of Bayi Road Yongning Town Wenjiang District Chengdu",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "12/06/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Friday, June 12, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "17/06/2026",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Wednesday, June 17, 2026",
+   "confidence": "high"
+  }
+ }
+}

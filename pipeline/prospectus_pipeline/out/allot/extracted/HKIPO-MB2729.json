@@ -1,0 +1,117 @@
+{
+  "code": "2729.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 466 页 0 处「基石投资者」、配发公告 13 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2153.26,
+      "page": 3,
+      "quote": "Subscription level \n2153.26 \ntimes",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 107253,
+      "page": 3,
+      "quote": "No. of valid applications \n107,253",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 7923551200,
+      "page": 9,
+      "quote": "a total of 107,253 valid applications made by the public will be conditionally allocated on the basis set out below: NO. OF H SHARES APPLIED FOR NO. OF VALID APPLICATIONS",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2153.26 times",
+      "page": 3,
+      "quote": "Subscription level \n2153.26 \ntimes",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "20/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Sponsor-Overall Coordinators (for themselves and on behalf of the Underwriters) and u",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "23/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**23/03/2026 20:38**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 36798000,
+      "page": 1,
+      "quote": "Number of Offer Shares \n36,798,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3679800,
+      "page": 3,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering  \n3,679,800",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 33118200,
+      "page": 3,
+      "quote": "Final no. of Offer Shares under the International Offering  \n33,118,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD,\nNO STABILIZATION ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION（20/04/2026 12:00）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD,\nNO STABILIZATION ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Reallocation: N/A (no clawback); final number of Offer Shares under the Hong Kong Public Offering remains 3,679,800, being 10% of the Global Offering.",
+      "page": 3,
+      "quote": "Reallocation \nN/A \nNo. of Offer Shares initially available under the Hong Kong Public \nOffering \n3,679,800 \nFinal no. of Offer Shares under the Hong Kong Public Offering  \n3,679,800",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 555700000,
+      "page": 2,
+      "quote": "Gross proceeds (Note) \nHK$613.0 million \nLess: Estimated listing expenses \npayable based on Final Offer Price \nHK$(57.3) million \nNet Proceeds \nHK$555.7 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5985,
+      "page": 13,
+      "quote": "Immediately after the completion of the Global Offering, 256,092,089 H Shares, representing approximately 59.85% of the total issued Shares upon Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 427883729,
+      "page": 1,
+      "quote": "Number of issued Shares upon Listing \n427,883,729",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.086,
+      "page": 1,
+      "quote": "36,798,000 \nNumber of Offer Shares in Hong Kong \nPublic Offering \n3,679,800 \nNumber of Offer Shares in International \nOffering \n33,118,200 \nNumber of issued Shares upon Listing \n427,883,729",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares upon Listing (427,883,729 Shares, same as col_CZ), excluding Shares issuable under the Pre-IPO Share Option Scheme; free float shares = Global Offering Shares 36,798,000 minus cornerstone allocation 0.",
+      "page": 13,
+      "quote": "59.85% of the total issued Shares upon Listing (without taking into account any Shares to be issued under the Pre-IPO Share Option Scheme), will be counted towards the public float",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 427883729,
+      "page": 1,
+      "quote": "Number of issued Shares upon Listing \n427,883,729",
+      "confidence": "high"
+    }
+  }
+}

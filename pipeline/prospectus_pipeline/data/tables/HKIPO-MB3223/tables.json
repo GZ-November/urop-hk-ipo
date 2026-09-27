@@ -1,0 +1,174 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 263,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Emerald Prime",
+          "60.00",
+          "4,578,600",
+          "14.63%"
+        ],
+        [
+          "GF Fund",
+          "30.00",
+          "2,289,300",
+          "7.32%"
+        ],
+        [
+          "Management",
+          "9.65",
+          "736,300",
+          "2.35%"
+        ],
+        [
+          "TRS)",
+          "10.00",
+          "763,100",
+          "2.44%"
+        ],
+        [
+          "Huaqin Singapore",
+          "15.00",
+          "1,144,600",
+          "3.66%"
+        ],
+        [
+          "ICBC Wealth",
+          "15.00",
+          "1,144,600",
+          "3.66%"
+        ],
+        [
+          "Arrow Target",
+          "13.00",
+          "992,000",
+          "3.17%"
+        ],
+        [
+          "China Universal (HK)",
+          "12.00",
+          "915,700",
+          "2.93%"
+        ],
+        [
+          "CloudAlpha Capital",
+          "12.00",
+          "915,700",
+          "2.93%"
+        ],
+        [
+          "LPF",
+          "10.00",
+          "763,100",
+          "2.44%"
+        ],
+        [
+          "Total",
+          "191.65",
+          "14,624,500",
+          "46.74%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Emerald Prime        | 60.00                 | 4,578,600              | 14.63%                        |\n| GF Fund              | 30.00                 | 2,289,300              | 7.32%                         |\n| Management           | 9.65                  | 736,300                | 2.35%                         |\n| TRS)                 | 10.00                 | 763,100                | 2.44%                         |\n| Huaqin Singapore     | 15.00                 | 1,144,600              | 3.66%                         |\n| ICBC Wealth          | 15.00                 | 1,144,600              | 3.66%                         |\n| Arrow Target         | 13.00                 | 992,000                | 3.17%                         |\n| China Universal (HK) | 12.00                 | 915,700                | 2.93%                         |\n| CloudAlpha Capital   | 12.00                 | 915,700                | 2.93%                         |\n| LPF                  | 10.00                 | 763,100                | 2.44%                         |\n| Total                | 191.65                | 14,624,500             | 46.74%                        |",
+      "metadata": {
+        "investor_count": 10
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "underwriting commission",
+          "s,"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                             | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                      | fees,                   |\n| underwriting commission                                                      | s,                      |\n| The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 325,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "6",
+          "4,530,926",
+          "4,212,626",
+          "4,741,008"
+        ],
+        [
+          "Gross profit",
+          "1,608,032",
+          "1,473,125",
+          "1,554,566",
+          "371,066"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    | Col 5     |\n| ---------------- | --------- | --------- | --------- | --------- |\n| Revenue          | 6         | 4,530,926 | 4,212,626 | 4,741,008 |\n| Gross profit     | 1,608,032 | 1,473,125 | 1,554,566 | 371,066   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 327,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "11,829,523",
+          "12,082,913",
+          "12,488,916",
+          "12,756,403"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5      |\n| ---------------- | ---------- | ---------- | ---------- | ---------- |\n| Total equity     | 11,829,523 | 12,082,913 | 12,488,916 | 12,756,403 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

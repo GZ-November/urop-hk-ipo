@@ -1,0 +1,426 @@
+{
+  "code": "2768.HK",
+  "fields": {
+    "col_L": {
+      "value": 301250000,
+      "page": 273,
+      "quote": "Total \n301,250,000\n100%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 30000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under\nthe Global Offering\n:\n30,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 271250000,
+      "page": 273,
+      "quote": "A Shares in issue(1) \n271,250,000\n90.04%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 271250000,
+      "page": 273,
+      "quote": "A Shares in issue(1) \n271,250,000\n90.04%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 273,
+      "quote": "H Shares to be issued pursuant to the Global\nOffering \n30,000,000\n9.96%(2)",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 30000000,
+      "page": 273,
+      "quote": "H Shares to be issued pursuant to the Global\nOffering \n30,000,000\n9.96%(2)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 27000000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n27,000,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 3000000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n3,000,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 42.0,
+      "page": 2,
+      "quote": "Maximum Offer Price\n:\nHK$42.00 per H Share plus brokerage of\n1%, SFC transaction levy of 0.0027%,",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 34.0,
+      "page": 2,
+      "quote": "The Offer Price will be no more than HK$42.00 per Offer Share and is\ncurrently expected to be no less than HK$34.00 per Offer Share unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 16,
+      "quote": "FY2022\nFY2023\nFY2024\n10MFY2024 10MFY2025\nRMB’000",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 15053205000,
+      "page": 20,
+      "quote": "Total current assets \n8,435,950\n10,298,550\n11,013,604\n11,780,595\n11,780,883\nNON-CURRENT\nASSETS\nTotal non-current\nassets \n4,324,902\n4,754,655\n7,337,844\n7,656,269",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 18351448000,
+      "page": 20,
+      "quote": "Total current assets \n8,435,950\n10,298,550\n11,013,604\n11,780,595\n11,780,883\nNON-CURRENT\nASSETS\nTotal non-current\nassets \n4,324,902\n4,754,655\n7,337,844\n7,656,269",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 19436864000,
+      "page": 20,
+      "quote": "Total current assets \n8,435,950\n10,298,550\n11,013,604\n11,780,595\n11,780,883\nNON-CURRENT\nASSETS\nTotal non-current\nassets \n4,324,902\n4,754,655\n7,337,844\n7,656,269",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 6379967000,
+      "page": 405,
+      "quote": "Total equity \n5,900,850\n6,379,967\n7,032,329\n7,588,642",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 7032329000,
+      "page": 405,
+      "quote": "Total equity \n5,900,850\n6,379,967\n7,032,329\n7,588,642",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 7588642000,
+      "page": 405,
+      "quote": "Total equity \n5,900,850\n6,379,967\n7,032,329\n7,588,642",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 8673238000,
+      "page": 404,
+      "quote": "Total current liabilities \n5,261,495\n6,690,244\n7,455,575\n8,135,719",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 11319119000,
+      "page": 404,
+      "quote": "Total current liabilities \n5,261,495\n6,690,244\n7,455,575\n8,135,719",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 11848222000,
+      "page": 404,
+      "quote": "Total current liabilities \n5,261,495\n6,690,244\n7,455,575\n8,135,719",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 17438779000,
+      "page": 403,
+      "quote": "Revenue \n6\n13,406,440\n17,438,779\n19,187,511\n15,863,106\n17,443,865",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 19187511000,
+      "page": 403,
+      "quote": "Revenue \n6\n13,406,440\n17,438,779\n19,187,511\n15,863,106\n17,443,865",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 20932638000,
+      "page": 403,
+      "quote": "Revenue \n6\n13,406,440\n17,438,779\n19,187,511\n15,863,106\n17,443,865",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 577933000,
+      "page": 403,
+      "quote": "Profit before tax \n11\n785,218\n577,933\n797,075\n609,286\n819,885",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 797075000,
+      "page": 403,
+      "quote": "Profit before tax \n11\n785,218\n577,933\n797,075\n609,286\n819,885",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 983862000,
+      "page": 403,
+      "quote": "Profit before tax \n11\n785,218\n577,933\n797,075\n609,286\n819,885",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 539610000,
+      "page": 403,
+      "quote": "Profit for the year/period \n724,360\n539,610\n720,586\n544,104\n720,983",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 720586000,
+      "page": 403,
+      "quote": "Profit for the year/period \n724,360\n539,610\n720,586\n544,104\n720,983",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 865179600,
+      "page": 403,
+      "quote": "Profit for the year/period \n724,360\n539,610\n720,586\n544,104\n720,983",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.035,
+      "page": 366,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 3.5% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.035,
+      "page": 366,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 3.5% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 2,
+      "quote": "GLOBAL OFFERING\nNumber of Offer Shares under\nthe Global Offering\n:\n30,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Supplier of new chemical materials and upstream and downstream products derived from gelatin and collagen",
+      "page": 12,
+      "quote": "We are a PRC-based supplier of new chemical materials and upstream and downstream products derived from gelatin and collagen. Serving the chemical industry and the health and wellness industry",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board; Chapter 19A PRC issuer with other listed shares (A+H)",
+      "page": 159,
+      "quote": "Rule 19A.13C of the Listing Rules provides that, where a new applicant is a PRC issuer\nwith other listed shares at the time of listing, this will normally mean that the portion of H\nshares for which",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/10/25",
+      "page": 403,
+      "quote": "Ten months ended\n31 October",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 618394000,
+      "page": 412,
+      "quote": "NET CASH FROM OPERATING\nACTIVITIES \n290,016\n485,591\n507,393\n459,585\n618,394",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 2160454000,
+      "page": 413,
+      "quote": "CASH AND CASH EQUIVALENTS\nAT THE END OF THE\nYEAR/PERIOD \n1,298,034\n1,744,791\n2,014,764\n2,050,756\n2,160,454",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 548933000,
+      "page": 403,
+      "quote": "Research and development\nexpenses \n(386,387)\n(566,257)\n(591,284)\n(446,219)\n(548,933)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 427,
+      "quote": "Expenditure on research activities is recognised as an expense in the period in which it is incurred.",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.244,
+      "page": 15,
+      "quote": "The aggregate revenue from our top five customers for\nFY2022, FY2023, FY2024 and 10MFY2025 accounted for 40.9%, 25.7%, 23.3% and 24.4%,\nrespectively, of our total revenue during the same year/period.",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "青岛国恩科技股份有限公司",
+      "page": 2,
+      "quote": "青島國恩科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Nice First; SLD International; Cheng A International; Shenwan Hongyuan Securities; First Seafront Fund Series SPC; New Harvest; Luminous Horizon; Fullgoal HK",
+      "page": 268,
+      "quote": "The table below sets out details of the Cornerstone Placing:\nBased on a final Offer Price of HK$34.00",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 150,
+      "quote": "which was owned as to approximately 70%, 10%, 5% by Mr. Wang, Xinghao Investment and Ms. Xu, respectively. The remaining 15% was held by four other Independent Third Parties.",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "自然人（Mr. Wang Aiguo 王愛國 与 Ms. Xu Bo 徐波，夫妻）",
+      "page": 38,
+      "quote": "\"Ms. Xu\" Ms. Xu Bo (徐波), the spouse of Mr. Wang and one of our Controlling Shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.5079,
+      "page": 25,
+      "quote": "hold in aggregate approximately 50.79% of the total issued share capital of our Company (including the treasury shares).",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.5079,
+      "page": 61,
+      "quote": "respectively held by Ms. Xu (Mr. Wang’s wife) and Xinghao Investment, controlled 56.41% of the voting rights as of the Latest Practicable Date",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 6709152000,
+      "page": 337,
+      "quote": "Total 3,159,464 4,069,120 6,231,133 6,709,152 6,832,366",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "已商业化（商业化阶段）",
+      "page": 172,
+      "quote": "Our high-value-added product, plasma substitute gelatin, has been included in the national Guide for Excellent and Innovative Consumer Goods (《升級和創新消費品指南》) and has been commercialized.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 27,
+      "quote": "approximately 5.0% of the net proceeds, or approximately HK$53.0 million (or RMB47.6 million), is expected to be used for working capital and general corporate purposes.",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 30,000,000 H Shares Number of Hong Kong Offer Shares : 3,000,000 H Shares (subject to reallocation)",
+      "confidence": "high",
+      "note": "本次上市交易类别为 H 股（A 股同时存续但不属本次发行）；原值「H Shares (A Shares also in issue)」"
+    },
+    "col_BP": {
+      "value": "22/12/00",
+      "page": 149,
+      "quote": "Year Event 2000 Our Company was established on 22 December 2000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Qingdao City, Shandong Province, PRC",
+      "page": 90,
+      "quote": "Principal place of business in the PRC No. 2 Road, Qingda Industrial Park Jihongtan Street Chengyang District Qingdao City Shandong Province PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 277,
+      "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "27/01/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, 27 January 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "30/01/26",
+      "page": 5,
+      "quote": "Application lists close (Note 3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Friday, 30 January 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 30000000,
+      "page": 163,
+      "quote": "The total number of H Shares to be issued shall be 30,000,000 Shares, representing 10.17% of our total issued Shares immediately following the Global Offering (excluding treasury shares).",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1811021000,
+      "page": 16,
+      "quote": "Cost of sales (11,826,476) (15,838,017) (17,595,339) (14,580,724) (15,632,844) Gross Profit 1,579,964 1,600,762 1,592,172 1,282,382 1,811,021",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 608496000,
+      "page": 341,
+      "quote": "Acquisition of subsidiaries – – 358,383 – Total 798,637 717,201 705,455 608,496",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见 (Unqualified opinion)",
+      "page": 400,
+      "quote": "In our opinion the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the Company’s and the Group’s financial position",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 82300000,
+      "page": 29,
+      "quote": "we expect to incur approximately HKD82.3 million of listing expenses",
+      "confidence": "medium"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "None",
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 0.0,
+      "page": 150,
+      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
+      "confidence": "high"
+    }
+  }
+}

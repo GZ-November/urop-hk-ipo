@@ -1,0 +1,116 @@
+{
+  "code": "3661.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4989,
+      "page": 7,
+      "quote": "Total 26,941,300 49.89% 3.99%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 251.73,
+      "page": 4,
+      "quote": "Subscription level 251.73 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 153878,
+      "page": 4,
+      "quote": "No. of valid applications 153,878",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1359388100,
+      "page": 18,
+      "quote": "Total 146,575 Total number of Pool A successful applicants: 27,001",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 251.73 times",
+      "page": 4,
+      "quote": "Subscription level 251.73 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：25/06/2026 22:21",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 54001200,
+      "page": 3,
+      "quote": "Number of Offer Shares 54,001,200",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5400200,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 5,400,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 48601000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 48,601,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 8100100,
+      "page": 1,
+      "quote": "ctus has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Thursday, July 23, 2026 in respect of an aggregate of 8,100,100 H Shares, ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION\nPERIOD (23/07/2026 19:31)"
+    },
+    "col_CW": {
+      "value": "No clawback / reallocation: Claw-back triggered N/A; the final number of Offer Shares under the Hong Kong Public Offering (5,400,200) equals the number initially available and represents 10% of the Global Offering.",
+      "page": 4,
+      "quote": "Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4499900000,
+      "page": 3,
+      "quote": "Net proceeds HK$4,499.9 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.08,
+      "page": 28,
+      "quote": "representing approximately 8% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 675015824,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 675,015,824",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0401,
+      "page": null,
+      "quote": "公式：(col_CS 54,001,200 − col_CK 0.4989×col_CS) ÷ col_CZ 675,015,824 = 0.0401；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares upon Listing (before exercise of the Over-allotment Option) = 675,015,824; H Shares held by the Cornerstone Investors upon Listing (six-month lock-up) are excluded from free float, so numerator = Offer Shares − cornerstone allocation.",
+      "page": 28,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 675015824,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 675,015,824",
+      "confidence": "high"
+    }
+  }
+}

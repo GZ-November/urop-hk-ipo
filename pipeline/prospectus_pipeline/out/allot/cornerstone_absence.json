@@ -1,0 +1,728 @@
+{
+  "0100.HK": {
+    "announcement_hits": 19,
+    "announcement_pages": 50,
+    "announcement_sections": 3,
+    "prospectus_hits": 77,
+    "prospectus_pages": 716,
+    "sample_pages": [
+      10,
+      134,
+      135,
+      240,
+      380,
+      388,
+      389,
+      390
+    ],
+    "verdict": "present"
+  },
+  "0470.HK": {
+    "announcement_hits": 30,
+    "announcement_pages": 30,
+    "announcement_sections": 3,
+    "prospectus_hits": 70,
+    "prospectus_pages": 597,
+    "sample_pages": [
+      10,
+      105,
+      106,
+      351,
+      352,
+      353,
+      354,
+      355
+    ],
+    "verdict": "present"
+  },
+  "0501.HK": {
+    "announcement_hits": 38,
+    "announcement_pages": 29,
+    "announcement_sections": 9,
+    "prospectus_hits": 68,
+    "prospectus_pages": 635,
+    "sample_pages": [
+      8,
+      88,
+      93,
+      107,
+      108,
+      109,
+      290,
+      291
+    ],
+    "verdict": "present"
+  },
+  "0600.HK": {
+    "announcement_hits": 37,
+    "announcement_pages": 31,
+    "announcement_sections": 2,
+    "prospectus_hits": 73,
+    "prospectus_pages": 533,
+    "sample_pages": [
+      9,
+      79,
+      80,
+      81,
+      82,
+      165,
+      329,
+      330
+    ],
+    "verdict": "present"
+  },
+  "0664.HK": {
+    "announcement_hits": 6,
+    "announcement_pages": 20,
+    "announcement_sections": 2,
+    "prospectus_hits": 53,
+    "prospectus_pages": 441,
+    "sample_pages": [
+      9,
+      203,
+      204,
+      205,
+      206,
+      255
+    ],
+    "verdict": "present"
+  },
+  "1021.HK": {
+    "announcement_hits": 20,
+    "announcement_pages": 30,
+    "announcement_sections": 3,
+    "prospectus_hits": 73,
+    "prospectus_pages": 493,
+    "sample_pages": [
+      9,
+      74,
+      75,
+      234,
+      235,
+      236,
+      237,
+      238
+    ],
+    "verdict": "present"
+  },
+  "1641.HK": {
+    "announcement_hits": 6,
+    "announcement_pages": 17,
+    "announcement_sections": 2,
+    "prospectus_hits": 11,
+    "prospectus_pages": 357,
+    "sample_pages": [
+      9,
+      109,
+      162,
+      163,
+      164,
+      229
+    ],
+    "verdict": "present"
+  },
+  "1768.HK": {
+    "announcement_hits": 29,
+    "announcement_pages": 36,
+    "announcement_sections": 2,
+    "prospectus_hits": 63,
+    "prospectus_pages": 601,
+    "sample_pages": [
+      10,
+      165,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337
+    ],
+    "verdict": "present"
+  },
+  "1989.HK": {
+    "announcement_hits": 44,
+    "announcement_pages": 36,
+    "announcement_sections": 3,
+    "prospectus_hits": 88,
+    "prospectus_pages": 554,
+    "sample_pages": [
+      9,
+      72,
+      73,
+      74,
+      76,
+      126,
+      258,
+      259
+    ],
+    "verdict": "present"
+  },
+  "2513.HK": {
+    "announcement_hits": 18,
+    "announcement_pages": 33,
+    "announcement_sections": 3,
+    "prospectus_hits": 69,
+    "prospectus_pages": 504,
+    "sample_pages": [
+      9,
+      77,
+      78,
+      79,
+      80,
+      151,
+      300,
+      301
+    ],
+    "verdict": "present"
+  },
+  "2526.HK": {
+    "announcement_hits": 1,
+    "announcement_pages": 23,
+    "announcement_sections": 0,
+    "prospectus_hits": 0,
+    "prospectus_pages": 434,
+    "sample_pages": [
+      19
+    ],
+    "verdict": "none"
+  },
+  "2632.HK": {
+    "announcement_hits": 7,
+    "announcement_pages": 15,
+    "announcement_sections": 2,
+    "prospectus_hits": 58,
+    "prospectus_pages": 647,
+    "sample_pages": [
+      10,
+      116,
+      117,
+      205,
+      365,
+      366,
+      367,
+      368
+    ],
+    "verdict": "present"
+  },
+  "2649.HK": {
+    "announcement_hits": 0,
+    "announcement_pages": 17,
+    "announcement_sections": 0,
+    "prospectus_hits": 0,
+    "prospectus_pages": 605,
+    "sample_pages": [],
+    "verdict": "none"
+  },
+  "2675.HK": {
+    "announcement_hits": 23,
+    "announcement_pages": 28,
+    "announcement_sections": 3,
+    "prospectus_hits": 79,
+    "prospectus_pages": 707,
+    "sample_pages": [
+      9,
+      149,
+      150,
+      151,
+      152,
+      153,
+      298,
+      499
+    ],
+    "verdict": "present"
+  },
+  "2677.HK": {
+    "announcement_hits": 8,
+    "announcement_pages": 18,
+    "announcement_sections": 2,
+    "prospectus_hits": 56,
+    "prospectus_pages": 676,
+    "sample_pages": [
+      9,
+      227,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437
+    ],
+    "verdict": "present"
+  },
+  "2692.HK": {
+    "announcement_hits": 35,
+    "announcement_pages": 23,
+    "announcement_sections": 19,
+    "prospectus_hits": 56,
+    "prospectus_pages": 463,
+    "sample_pages": [
+      9,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281
+    ],
+    "verdict": "present"
+  },
+  "2701.HK": {
+    "announcement_hits": 24,
+    "announcement_pages": 27,
+    "announcement_sections": 4,
+    "prospectus_hits": 58,
+    "prospectus_pages": 460,
+    "sample_pages": [
+      9,
+      73,
+      74,
+      109,
+      270,
+      271,
+      272,
+      273
+    ],
+    "verdict": "present"
+  },
+  "2706.HK": {
+    "announcement_hits": 14,
+    "announcement_pages": 25,
+    "announcement_sections": 2,
+    "prospectus_hits": 69,
+    "prospectus_pages": 646,
+    "sample_pages": [
+      10,
+      109,
+      110,
+      218,
+      417,
+      418,
+      419,
+      420
+    ],
+    "verdict": "present"
+  },
+  "2714.HK": {
+    "announcement_hits": 41,
+    "announcement_pages": 33,
+    "announcement_sections": 12,
+    "prospectus_hits": 69,
+    "prospectus_pages": 793,
+    "sample_pages": [
+      10,
+      96,
+      97,
+      192,
+      337,
+      338,
+      339,
+      340
+    ],
+    "verdict": "present"
+  },
+  "2715.HK": {
+    "announcement_hits": 27,
+    "announcement_pages": 22,
+    "announcement_sections": 7,
+    "prospectus_hits": 63,
+    "prospectus_pages": 637,
+    "sample_pages": [
+      10,
+      101,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396
+    ],
+    "verdict": "present"
+  },
+  "2720.HK": {
+    "announcement_hits": 5,
+    "announcement_pages": 12,
+    "announcement_sections": 2,
+    "prospectus_hits": 55,
+    "prospectus_pages": 516,
+    "sample_pages": [
+      9,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      342
+    ],
+    "verdict": "present"
+  },
+  "2726.HK": {
+    "announcement_hits": 8,
+    "announcement_pages": 14,
+    "announcement_sections": 2,
+    "prospectus_hits": 51,
+    "prospectus_pages": 445,
+    "sample_pages": [
+      10,
+      86,
+      87,
+      88,
+      89,
+      139,
+      216,
+      217
+    ],
+    "verdict": "present"
+  },
+  "2729.HK": {
+    "announcement_hits": 0,
+    "announcement_pages": 13,
+    "announcement_sections": 0,
+    "prospectus_hits": 0,
+    "prospectus_pages": 466,
+    "sample_pages": [],
+    "verdict": "none"
+  },
+  "2768.HK": {
+    "announcement_hits": 30,
+    "announcement_pages": 22,
+    "announcement_sections": 8,
+    "prospectus_hits": 62,
+    "prospectus_pages": 606,
+    "sample_pages": [
+      10,
+      74,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270
+    ],
+    "verdict": "present"
+  },
+  "3200.HK": {
+    "announcement_hits": 39,
+    "announcement_pages": 28,
+    "announcement_sections": 12,
+    "prospectus_hits": 73,
+    "prospectus_pages": 754,
+    "sample_pages": [
+      9,
+      99,
+      105,
+      106,
+      316,
+      317,
+      318,
+      319
+    ],
+    "verdict": "present"
+  },
+  "3268.HK": {
+    "announcement_hits": 26,
+    "announcement_pages": 25,
+    "announcement_sections": 2,
+    "prospectus_hits": 69,
+    "prospectus_pages": 695,
+    "sample_pages": [
+      10,
+      111,
+      112,
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "verdict": "present"
+  },
+  "3355.HK": {
+    "announcement_hits": 29,
+    "announcement_pages": 23,
+    "announcement_sections": 3,
+    "prospectus_hits": 81,
+    "prospectus_pages": 537,
+    "sample_pages": [
+      10,
+      86,
+      87,
+      88,
+      319,
+      320,
+      321,
+      322
+    ],
+    "verdict": "present"
+  },
+  "3625.HK": {
+    "announcement_hits": 0,
+    "announcement_pages": 19,
+    "announcement_sections": 0,
+    "prospectus_hits": 0,
+    "prospectus_pages": 436,
+    "sample_pages": [],
+    "verdict": "none"
+  },
+  "3636.HK": {
+    "announcement_hits": 17,
+    "announcement_pages": 22,
+    "announcement_sections": 2,
+    "prospectus_hits": 49,
+    "prospectus_pages": 576,
+    "sample_pages": [
+      10,
+      89,
+      90,
+      170,
+      362,
+      363,
+      364,
+      365
+    ],
+    "verdict": "present"
+  },
+  "3986.HK": {
+    "announcement_hits": 41,
+    "announcement_pages": 31,
+    "announcement_sections": 16,
+    "prospectus_hits": 102,
+    "prospectus_pages": 603,
+    "sample_pages": [
+      10,
+      95,
+      100,
+      101,
+      324,
+      325,
+      326,
+      327
+    ],
+    "verdict": "present"
+  },
+  "6082.HK": {
+    "announcement_hits": 24,
+    "announcement_pages": 47,
+    "announcement_sections": 10,
+    "prospectus_hits": 112,
+    "prospectus_pages": 663,
+    "sample_pages": [
+      10,
+      108,
+      109,
+      110,
+      111,
+      203,
+      339,
+      340
+    ],
+    "verdict": "present"
+  },
+  "6636.HK": {
+    "announcement_hits": 7,
+    "announcement_pages": 18,
+    "announcement_sections": 2,
+    "prospectus_hits": 67,
+    "prospectus_pages": 474,
+    "sample_pages": [
+      9,
+      62,
+      63,
+      117,
+      214,
+      215,
+      216,
+      217
+    ],
+    "verdict": "present"
+  },
+  "6809.HK": {
+    "announcement_hits": 32,
+    "announcement_pages": 38,
+    "announcement_sections": 11,
+    "prospectus_hits": 87,
+    "prospectus_pages": 529,
+    "sample_pages": [
+      10,
+      96,
+      117,
+      118,
+      119,
+      259,
+      260,
+      261
+    ],
+    "verdict": "present"
+  },
+  "6938.HK": {
+    "announcement_hits": 13,
+    "announcement_pages": 30,
+    "announcement_sections": 2,
+    "prospectus_hits": 67,
+    "prospectus_pages": 732,
+    "sample_pages": [
+      9,
+      37,
+      130,
+      131,
+      263,
+      264,
+      476,
+      477
+    ],
+    "verdict": "present"
+  },
+  "9611.HK": {
+    "announcement_hits": 22,
+    "announcement_pages": 28,
+    "announcement_sections": 2,
+    "prospectus_hits": 63,
+    "prospectus_pages": 657,
+    "sample_pages": [
+      9,
+      103,
+      105,
+      106,
+      187,
+      382,
+      383,
+      384
+    ],
+    "verdict": "present"
+  },
+  "9903.HK": {
+    "announcement_hits": 37,
+    "announcement_pages": 29,
+    "announcement_sections": 3,
+    "prospectus_hits": 65,
+    "prospectus_pages": 606,
+    "sample_pages": [
+      9,
+      30,
+      83,
+      85,
+      350,
+      351,
+      352,
+      353
+    ],
+    "verdict": "present"
+  },
+  "9980.HK": {
+    "announcement_hits": 52,
+    "announcement_pages": 33,
+    "announcement_sections": 2,
+    "prospectus_hits": 66,
+    "prospectus_pages": 615,
+    "sample_pages": [
+      85,
+      86,
+      88,
+      89,
+      325,
+      326,
+      327,
+      328
+    ],
+    "verdict": "present"
+  },
+  "9981.HK": {
+    "announcement_hits": 42,
+    "announcement_pages": 21,
+    "announcement_sections": 4,
+    "prospectus_hits": 66,
+    "prospectus_pages": 456,
+    "sample_pages": [
+      8,
+      77,
+      78,
+      217,
+      218,
+      219,
+      220,
+      221
+    ],
+    "verdict": "present"
+  },
+  "0901.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 447,
+    "announcement_hits": 0,
+    "announcement_pages": 24,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "6871.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 437,
+    "announcement_hits": 0,
+    "announcement_pages": 22,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "2553.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 433,
+    "announcement_hits": 0,
+    "announcement_pages": 14,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "2723.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 431,
+    "announcement_hits": 0,
+    "announcement_pages": 13,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "1770.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 427,
+    "announcement_hits": 0,
+    "announcement_pages": 15,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "2797.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 446,
+    "announcement_hits": 0,
+    "announcement_pages": 12,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "7656.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 431,
+    "announcement_hits": 0,
+    "announcement_pages": 19,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "9971.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 407,
+    "announcement_hits": 0,
+    "announcement_pages": 24,
+    "announcement_sections": 0,
+    "sample_pages": []
+  }
+}

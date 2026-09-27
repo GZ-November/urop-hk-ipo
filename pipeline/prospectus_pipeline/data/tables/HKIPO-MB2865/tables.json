@@ -1,0 +1,119 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 375,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares",
+          "229,151,752",
+          "78.32"
+        ],
+        [
+          "Global Offering",
+          "63,432,300",
+          "21.68"
+        ],
+        [
+          "Total",
+          "292,584,052",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares              | 229,151,752      | 78.32                      |\n| Global Offering       | 63,432,300       | 21.68                      |\n| Total                 | 292,584,052      | 100.00                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 43,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "RMB36.5 million (HK$39.7 million) in listing expenses, in which amount of",
+          "RMB5.2 million"
+        ],
+        [
+          "We estimate that additional listing expenses of approximately",
+          "RMB74.6 million"
+        ],
+        [
+          "and underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                          | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                   | fees,                   |\n| RMB36.5 million (HK$39.7 million) in listing expenses, in which amount of | RMB5.2 million          |\n| We estimate that additional listing expenses of approximately             | RMB74.6 million         |\n| and underwriting commission                                               | s,                      |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 35,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "11,085,713",
+          "100.0",
+          "18,610,794",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 11,085,713 | 100.0  | 18,610,794 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 389,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "11,085,713",
+          "100.0",
+          "18,610,794",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 11,085,713 | 100.0  | 18,610,794 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

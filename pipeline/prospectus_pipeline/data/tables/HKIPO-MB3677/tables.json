@@ -1,0 +1,26 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 41,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing Expenses",
+          "HK$8.27"
+        ]
+      ],
+      "markdown": "| Item Description | Rate / Amount Disclosed |\n| ---------------- | ----------------------- |\n| Listing Expenses | HK$8.27                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

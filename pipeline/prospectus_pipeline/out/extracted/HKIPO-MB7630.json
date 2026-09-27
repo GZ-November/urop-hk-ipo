@@ -1,0 +1,443 @@
+{
+  "code": "7630.HK",
+  "fields": {
+    "col_L": {
+      "value": 276165130,
+      "page": 268,
+      "quote": "H Shares converted from Unlisted Shares 234,188,130 84.80 H Shares to be issued pursuant to the Global Offering 41,977,000 15.20 Total 276,165,130 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 41977000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 41,977,000 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 234188130,
+      "page": 268,
+      "quote": "H Shares converted from Unlisted Shares 234,188,130 84.80 H Shares to be issued pursuant to the Global Offering 41,977,000 15.20 Total 276,165,130 100.00",
+      "confidence": "high",
+      "note": "口径：col_N = col_L - col_M = 276,165,130 - 41,977,000 = 234,188,130。"
+    },
+    "col_O": {
+      "value": 234188130,
+      "page": 268,
+      "quote": "H Shares converted from Unlisted Shares 234,188,130 84.80 H Shares to be issued pursuant to the Global Offering 41,977,000 15.20 Total 276,165,130 100.00",
+      "confidence": "high",
+      "note": "口径：col_O = col_L - col_M = 276,165,130 - 41,977,000 = 234,188,130。"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 268,
+      "quote": "Unlisted Shares in issue – – H Shares converted from Unlisted Shares 234,188,130 84.80 H Shares to be issued pursuant to the Global Offering 41,977,000 15.20",
+      "confidence": "high",
+      "note": "全部为新股发售（Offer for Subscription）：股本表只有「H Shares to be issued pursuant to the Global Offering」，无 Sale Shares 行；全文亦无 Selling Shareholder 披露，故 col_P=0。"
+    },
+    "col_Q": {
+      "value": 41977000,
+      "page": 268,
+      "quote": "H Shares to be issued pursuant to the Global Offering 41,977,000 15.20",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 37779200,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 37,779,200 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4197800,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 4,197,800 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 21.75,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$21.75 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 19.75,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$21.75 per Offer Share and is currently expected to be not less than HK$19.75 per Offer Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 338,
+      "quote": "The Historical Financial Information are presented in RMB, which is the Company’s functional currency",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 388894000,
+      "page": 324,
+      "quote": "Total assets  388,894 334,522",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 334522000,
+      "page": 324,
+      "quote": "Total assets 388,894 334,522",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -744290000,
+      "page": 324,
+      "quote": "Total deficits (744,290) (957,891)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -957891000,
+      "page": 324,
+      "quote": "Total deficits (744,290) (957,891)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1133184000,
+      "page": 19,
+      "quote": "Total current liabilities 89,529 104,790 Net current assets 284,857 218,188 Total assets less current liabilities 299,365 229,732 Total non-current liabilities 1,043,655 1,187,623",
+      "confidence": "high",
+      "note": "year-2 (2024)：Total current liabilities 89,529 + Total non-current liabilities 1,043,655 = 1,133,184 千元 = 1,133,184,000。"
+    },
+    "col_AE": {
+      "value": 1292413000,
+      "page": 19,
+      "quote": "Total current liabilities 89,529 104,790 Net current assets 284,857 218,188 Total assets less current liabilities 299,365 229,732 Total non-current liabilities 1,043,655 1,187,623",
+      "confidence": "high",
+      "note": "year-1 (2025)：Total current liabilities 104,790 + Total non-current liabilities 1,187,623 = 1,292,413 千元 = 1,292,413,000。"
+    },
+    "col_AF": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 33547000,
+      "page": 323,
+      "quote": "Revenue 5 33,547 38,251",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 38251000,
+      "page": 323,
+      "quote": "Revenue 5 33,547 38,251",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -254752000,
+      "page": 323,
+      "quote": "LOSS BEFORE TAX 6 (254,752) (295,923)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -295923000,
+      "page": 323,
+      "quote": "LOSS BEFORE TAX 6 (254,752) (295,923)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -254755000,
+      "page": 323,
+      "quote": "LOSS FOR THE YEAR (254,755) (295,924)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -295924000,
+      "page": 323,
+      "quote": "LOSS FOR THE YEAR (254,755) (295,924)",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.04,
+      "page": 300,
+      "quote": "All Capital Market Intermediaries participating in the Global Offering will receive an underwriting commission of 4.00% of the aggregate Offer Price payable for all of the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.04,
+      "page": 300,
+      "quote": "All Capital Market Intermediaries participating in the Global Offering will receive an underwriting commission of 4.00% of the aggregate Offer Price payable for all of the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 305,
+      "quote": "to require us to allot and issue up to 6,296,400 additional Offer Shares representing not more than 15% of the total number of Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Biotechnology - discovery, development and commercialisation of synthetic lethality (SL)-based precision anti-cancer therapies",
+      "page": 150,
+      "quote": "We are a commercial-stage, innovation-driven biotechnology company focused on advancing synthetic lethality (SL)-based precision anti-cancer therapies globally",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18A of the Listing Rules (Main Board biotech listing)",
+      "page": 78,
+      "quote": "falls within the scope of biotech company as defined under Chapter 18A of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 30,
+      "quote": "the period comprising the two years ended December 31, 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -95880000,
+      "page": 327,
+      "quote": "Net cash flows used in operating activities  (81,311) (95,880)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 258534000,
+      "page": 327,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR  21 230,122 258,534",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 183674000,
+      "page": 323,
+      "quote": "Research and development expenses (194,807) (183,674)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 347,
+      "quote": "OTHER INTANGIBLE ASSETS The Group Patents Software Others Total",
+      "confidence": "medium",
+      "note": "无形资产附注只有 Patents / Software / Others 三行，全文无「Development costs」资本化行，故资本化开发成本当期新增 = 0。"
+    },
+    "col_AY": {
+      "value": 0.949,
+      "page": 17,
+      "quote": "revenue generated from our five largest customers for each year amounted to RMB33.5 million and RMB36.3 million, representing approximately 100.0% and 94.9% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "南京英派药业股份有限公司",
+      "page": 1,
+      "quote": "南京英派藥業股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "BPV and HTCI; Tencent Holdings; Huang River; Prosper High; LAV Entities; LAV Star; LAV Star Opportunities; Foresight; GSC Fund 1; Vision Fund 1; Horizon Fund 1; Horizon Next Fund; First Quarter Moon OFC - Phecda Fund; WWHCP",
+      "page": 287,
+      "quote": "Cornerstone Investor Subscription amount(1) Number of Offer Shares(2) Approximate % of the Offer Shares",
+      "confidence": "high",
+      "note": "基石投资者名单表（按 HK$19.75 下限价）共 14 行：BPV and HTCI、Tencent Holdings、Huang River、Prosper High、LAV Entities、LAV Star、LAV Star Opportunities、Foresight、GSC Fund 1、Vision Fund 1、Horizon Fund 1、Horizon Next Fund、First Quarter Moon OFC – Phecda Fund、WWHCP；Total 35.74 14,176,600 33.77%。"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 21,
+      "quote": "Our Pre-IPO Investors include investors focusing on investment in biotech and healthcare industry, including among others, LAV USD, Shanghai Liyi, Decheng IMPACT Limited",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 21,
+      "quote": "Our Pre-IPO Investors include investors focusing on investment in biotech and healthcare industry, including among others, LAV USD, Shanghai Liyi, Decheng IMPACT Limited",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 142,
+      "quote": "Shanghai Kangjun is a limited partnership established under the laws of the PRC. It is managed by its general partner, CPIC Capital Company Limited",
+      "confidence": "medium",
+      "note": "CPIC Capital 管理太保大健康產業私募投資基金（保險系 PE 基金），故認 PE backing。"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 142,
+      "quote": "Tencent Ruitou is ultimately controlled by Tencent Holdings Limited",
+      "confidence": "high",
+      "note": "Tencent（廣西騰訊創業投資）為產業公司騰訊控股旗下創投平台；WuXi AppTec Fund 亦為 WuXi AppTec 的 corporate investment management subsidiary（p.141）。"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 144,
+      "quote": "Yangzhou Gaofa Investment is ultimately controlled by the Yangzhou Municipal People’s Government",
+      "confidence": "high",
+      "note": "另有北京熙诚资本最终由北京市西城区人民政府国有资产监督管理委员会控制（北京新动力 LP，p.141）；厦门建发最终由厦门市人民政府国有资产监督管理委员会控制（p.142）。故 col_gov_backed=1。"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 158,
+      "quote": "We are backed by a strong syndicate of industry-leading investors, including LAV, Decheng, China Summit, and Tencent, who bring deep domain expertise and long-term support for our growth strategy",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "LAV Innovation; LAV Enterprise; LAV Integra; LAV Impetus; Shanghai Li'an; Cenova Capital; WuXi AppTec Fund; Biolake China Summit; Guangzhou Yuexiu; Sungent; Haibang; Decheng; Suzhou Lirui; Suzhou Likang; Shanghai Lihao; Suzhou Lirun; LAV V; AlphaTech; West Fountain; Pegasos; Junshi; Ruiji Fund III; China Summit Zhixin; Ausun; LAV Fund VI; LAV Opportunities; China Summit Capital; Homeric Summit; Dingxin Capital; EMH; WWHCP; Everspring; Bestride; Orchids; Shanghai Yunan; C&D No. 7 Holdings; Yangzhou Guojin; Gaotejia; Beijing New Power; Hainan Yuema Zhengchun; Xiamen Jianfa; Tencent; Shanghai Kangjun",
+      "page": 134,
+      "quote": "PRE-IPO INVESTMENTS Our Pre-IPO Investors invested in us through capital injection and equity transfers at the level of the Company and Impact Cayman",
+      "confidence": "medium",
+      "note": "完整名单取自 Pre-IPO Investments 轮次表（Series A 至 Series D++，p.134-136）及「Information about the existing Pre-IPO Investors」（p.139-144），同一投资者只记一次。"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.8386,
+      "page": 146,
+      "quote": "Name of Shareholder Number of Unlisted Shares Ownership Percentage",
+      "confidence": "medium",
+      "note": "按 Latest Practicable Date 股本表复算：机构合计 = 100% − 个人(Dr. Cai 3.5964% + Dr. Tian 3.5964% + BAO Jun 1.1817% + Yu Qingzhen 0.0170%) − 员工激励平台(7.7448%) = 83.8637% ≈ 0.8386。"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 273,
+      "quote": "Dr. Cong XU (徐聰) 40 Non-executive Director and Chairman of the Board July 2020",
+      "confidence": "high",
+      "note": "Dr. Cong XU 自 2018 年 1 月起任 Lilly Asia Ventures（禮來亞洲基金）managing director（p.275）；Dr. Qiang XU 为 Decheng Capital 合伙人（p.275）。Pre-IPO 投资机构（LAV、Decheng）均派有非执行董事，故填 1。"
+    },
+    "col_earliest_round": {
+      "value": "Series A Financing",
+      "page": 134,
+      "quote": "Series A Financing Shanghai Li’an Acquisition of registered capital from Nanjing Dingye and Mr. Chen Mailin",
+      "confidence": "high",
+      "note": "最早一轮为 2014 年 Series A Financing（协议日期 June 10, 2014）。"
+    },
+    "col_holding_duration": {
+      "value": 11.9,
+      "page": 134,
+      "quote": "RMB16,000,000 June 10, 2014",
+      "confidence": "medium",
+      "note": "最早 Pre-IPO 投资协议日期 10/06/2014 至招股书日期 05/05/2026 = 4,347 天 = 11.90 年。"
+    },
+    "col_BB": {
+      "value": "None (no controlling shareholder); Single Largest Group of Shareholders is Dr. Yi Shi and LAV USD",
+      "page": 145,
+      "quote": "our Single Largest Group of Shareholders, namely LAV Enterprise, LAV Innovation, LAV Integra, LAV Impetus (collectively, “LAV USD”) and Dr. Yi Shi",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.1393,
+      "page": 271,
+      "quote": "Dr. Yi SHI(3) Interest in controlled corporations 36,583,060 Unlisted Shares 15.62 38,470,660 H Shares 13.93 13.93",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.1393,
+      "page": 271,
+      "quote": "Dr. Yi SHI(3) Interest in controlled corporations 36,583,060 Unlisted Shares 15.62 38,470,660 H Shares 13.93 13.93",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 1024789000,
+      "page": 263,
+      "quote": "Redemption liabilities on ordinary shares 911,708 980,224 997,119 Total 954,605 1,024,789 1,041,276",
+      "confidence": "high",
+      "note": "INDEBTEDNESS 表 Total（含租赁负债、金融负债及赎回负债）year-1 (2025) 期末 = 1,024,789 千元 = 1,024,789,000。"
+    },
+    "col_BF": {
+      "value": "Commercial-stage (senaparib approved by the NMPA and launched in China in 2025)",
+      "page": 150,
+      "quote": "We have commercialized our self-developed Core Product, senaparib, in China as a 1L maintenance therapy for ovarian cancer (OC)",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 22,
+      "quote": "We currently intend to apply the net proceeds from the Global Offering as follows: (a) Approximately 51%, or HK$398.37 million, will be used to fund the ongoing and planned clinical development",
+      "confidence": "high",
+      "note": "USE OF PROCEEDS 全部用途：(a) 51%/HK$398.37m 核心产品 senaparib 临床、注册及商业化；(b) 31%/HK$242.15m 关键产品 IMP1734 与 IMP9064 临床开发；(c) 8%/HK$62.49m 其他管线 IMP1707、IMP7068、IMP22、IMP25、IMP08、IMP13、IMP10 研发；(d) 8%/HK$62.49m 研发平台与管线拓展；(e) 2%/HK$15.62m 营运资金及一般公司用途。清单中无任何偿还借款/债务用途，故 col_BG=0。"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 268,
+      "quote": "H Shares converted from Unlisted Shares 234,188,130 84.80 H Shares to be issued pursuant to the Global Offering 41,977,000 15.20",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "10/06/2009",
+      "page": 126,
+      "quote": "Our Company was established on June 10, 2009 with a registered capital of RMB20 million",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "27th Floor, New Bund Times Square, 399 West Haiyang Road, Pudong New District, Shanghai, PRC",
+      "page": 88,
+      "quote": "Head Office and Principal Place of Business in the PRC 27th Floor, New Bund Times Square, 399 West Haiyang Road, Pudong New District, Shanghai, PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS Accounting Standards",
+      "page": 18,
+      "quote": "Our consolidated financial information was prepared in accordance with the HKFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "05/05/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, May 5, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "08/05/26",
+      "page": 5,
+      "quote": "Application lists close(3) . . . 12:00 noon on Friday, May 8, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 276165130,
+      "page": 271,
+      "quote": "the total number of 276,165,130 H Shares in issue immediately following the completion of the Global Offering since all the 234,188,130 Unlisted Shares will be converted into H Shares",
+      "confidence": "high",
+      "note": "全部未上市股转换为 H 股，故上市后港交所挂牌股数 = 总股本 276,165,130。"
+    },
+    "col_CF": {
+      "value": 36680000,
+      "page": 323,
+      "quote": "Gross profit 31,992 36,680",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 1500000,
+      "page": 264,
+      "quote": "In 2024 and 2025, we incurred capital expenditures of RMB1.7 million and RMB1.5 million, respectively, in connection with the purchase of property, plant and equipment",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 321,
+      "quote": "a true and fair view of the financial position of the Group and the Company as at 31 December 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 89900000,
+      "page": 22,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately HK$89.9 million (including underwriting commission",
+      "confidence": "high"
+    }
+  }
+}

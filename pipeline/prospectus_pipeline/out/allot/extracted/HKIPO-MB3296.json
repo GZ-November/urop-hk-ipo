@@ -1,0 +1,119 @@
+{
+  "code": "3296.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4996,
+      "page": 7,
+      "quote": "Total 29,250,100 49.96% 2.72%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 531.33,
+      "page": 5,
+      "quote": "Subscription level 531.33 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 140150,
+      "page": 5,
+      "quote": "No. of valid applications 140,150",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3110912600,
+      "page": 17,
+      "quote": "100 45,182 5,422 out of 45,182 applicants to receive 100 H Shares 12.00% 200 11,686 1,693 out of 11,686 applicants to receive 100 H Shares 7.24%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 531.33 times",
+      "page": 5,
+      "quote": "Subscription level 531.33 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "21/04/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Sponsor-Overall Coordinators (for themselves and on behalf of the Underwriters) ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "22/04/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：22/04/2026 22:21",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 58548200,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 58,548,200",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5854900,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 5,854,900",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 52693300,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (before exercise of the Over-allotment Option) 52,693,300",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 8782200,
+      "page": 1,
+      "quote": "e Sponsor-overall Coordinators (for themselves and on behalf of the International Underwriters) and Overall Coordinators, on Wednesday, May 20, 2026, in respect of an aggregate of 8,782,200 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD (20/05/2026 20:42)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; No. of Offer Shares initially available under the Hong Kong Public Offering 5,854,900; No. of Offer Shares reallocated from the International Offering (reallocation) 0; final Hong Kong Public Offering shares 5,854,900 (10% of the Global Offering before exercise of the Over-allotment Option); no clawback was triggered (Mechanism B, no reallocation).",
+      "page": 5,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 5,854,900 No. of Offer Shares reallocated from the International Offering (reallocation) 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4463100000,
+      "page": 4,
+      "quote": "Net proceeds HK$4,463.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0545,
+      "page": 27,
+      "quote": "the market value of the H Shares that are held by the public is approximately HK$4,549.2 million",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 1074280544,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 1,074,280,544",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0273,
+      "page": null,
+      "quote": "公式：(col_CS 58,548,200 − col_CK 0.4996×col_CS) ÷ col_CZ 1,074,280,544 = 0.0273；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 58,548,200 − col_CK 0.4996×col_CS) ÷ col_CZ 1,074,280,544 = 0.0273；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1074280544,
+      "page": 3,
+      "quote": "公式：(col_CS 58,548,200 − col_CK 0.4996×col_CS) ÷ col_CZ 1,074,280,544 = 0.0273；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "2649.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 605 页 0 处「基石投资者」、配发公告 17 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5297.23,
+      "page": 4,
+      "quote": "Subscription level\n5,297.23 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 162571,
+      "page": 4,
+      "quote": "No. of valid applications\n162,571",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 10774571500,
+      "page": 12,
+      "quote": "NO. OF\nH SHARES\nAPPLIED FOR\nNO. OF VALID\nAPPLICATIONS\nBASIS OF ALLOTMENT/BALLOT\nAPPROXIMATE\nPERCENTAGE\nALLOTTED OF\nTHE TOTAL NO.\nOF H SHARES\nAPPLIED FOR\nPOOL A\n500\n91,248",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 5,297.23 times",
+      "page": 4,
+      "quote": "Subscription level\n5,297.23 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "05/03/26",
+      "page": 5,
+      "quote": "Expected Price Determination Date(9) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .by 12:00 noon on Thursday, March 5, 2026 Where applicabl",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "06/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**06/03/2026 21:28**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 20336000,
+      "page": 3,
+      "quote": "Offer Shares and Share Capital\nNumber of Offer Shares\n20,336,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2034000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering\n2,034,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 18302000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering\n18,302,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-03-09 起 45 天内共 15 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-04-23 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No",
+      "page": 4,
+      "quote": "Claw-back triggered\nNo",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 175520000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$175.52 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3045,
+      "page": 17,
+      "quote": "27,506,138 H Shares, representing approximately 30.45% of the total number of issued Shares will be counted towards the public after Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 90336000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n90,336,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.2251,
+      "page": 7,
+      "quote": "Under the applicable PRC laws, all existing Shareholders are subject to a lock-up period of twelve months following the Listing Date.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total number of issued Shares upon Listing (90,336,000 Shares); all existing Shareholders (70,000,000 Shares) are subject to a 12-month lock-up under applicable PRC laws and there are no cornerstone investors, so the free float consists of the 20,336,000 H Shares under the Global Offering.",
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n90,336,000",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 90336000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n90,336,000",
+      "confidence": "medium"
+    }
+  }
+}

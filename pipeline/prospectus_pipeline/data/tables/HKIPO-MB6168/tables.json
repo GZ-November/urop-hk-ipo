@@ -1,0 +1,133 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 353,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Unlisted Shares in issue",
+          "166,927,145",
+          "39.23"
+        ],
+        [
+          "H Shares to be converted from Unlisted Shares",
+          "211,785,383",
+          "49.77"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "46,808,000",
+          "11.00"
+        ],
+        [
+          "Total",
+          "425,520,528",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| Unlisted Shares in issue                        | 166,927,145      | 39.23                      |\n| H Shares to be converted from Unlisted Shares   | 211,785,383      | 49.77                      |\n| H Shares to be issued under the Global Offering | 46,808,000       | 11.00                      |\n| Total                                           | 425,520,528      | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 354,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Unlisted Shares in issue",
+          "166,927,145",
+          "38.59"
+        ],
+        [
+          "H Shares to be converted from Unlisted Shares",
+          "211,785,383",
+          "48.96"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "53,829,200",
+          "12.45"
+        ],
+        [
+          "Total",
+          "432,541,728",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| Unlisted Shares in issue                        | 166,927,145      | 38.59                      |\n| H Shares to be converted from Unlisted Shares   | 211,785,383      | 48.96                      |\n| H Shares to be issued under the Global Offering | 53,829,200       | 12.45                      |\n| Total                                           | 432,541,728      | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses consist of professional",
+          "fees,"
+        ],
+        [
+          "connection with the Global Offering. We expect to incur listing expenses of approximately",
+          "HK$99.2"
+        ]
+      ],
+      "markdown": "| Item Description                                                                          | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses consist of professional                                                  | fees,                   |\n| connection with the Global Offering. We expect to incur listing expenses of approximately | HK$99.2                 |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "2,584,835",
+          "3,075,203",
+          "3,957,571"
+        ],
+        [
+          "Total liabilities",
+          "679,796",
+          "811,579",
+          "1,379,965"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 2,584,835 | 3,075,203 | 3,957,571 |\n| Total liabilities | 679,796   | 811,579   | 1,379,965 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

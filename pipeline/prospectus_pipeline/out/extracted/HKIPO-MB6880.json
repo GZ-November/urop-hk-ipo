@@ -1,0 +1,472 @@
+{
+  "code": "6880.HK",
+  "fields": {
+    "col_L": {
+      "value": 235538011,
+      "page": 254,
+      "quote": "235,538,011 Total US$58,884.50275",
+      "confidence": "high",
+      "note": "Total issued Shares immediately following completion of the Global Offering (Over-allotment Option not exercised)."
+    },
+    "col_M": {
+      "value": 19938300,
+      "page": 254,
+      "quote": "19,938,300 Class A Ordinary Shares to be issued under the Global Offering with a par value of US$0.00025 each",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 215599711,
+      "page": 254,
+      "quote": "215,599,711 Total US$53,899.92775",
+      "confidence": "high",
+      "note": "Per dataset convention col_N = col_L - col_M = 235,538,011 - 19,938,300."
+    },
+    "col_O": {
+      "value": 215599711,
+      "page": 254,
+      "quote": "215,599,711 Total US$53,899.92775",
+      "confidence": "high",
+      "note": "Per dataset convention col_O = col_L - col_M = 235,538,011 - 19,938,300."
+    },
+    "col_P": {
+      "value": 0,
+      "page": 16,
+      "quote": "19,938,300 Class A Ordinary Shares are issued pursuant to the Global Offering",
+      "confidence": "high",
+      "note": "All Offer Shares are newly issued Class A Ordinary Shares; no Sale Shares (existing-share offer) disclosed."
+    },
+    "col_Q": {
+      "value": 19938300,
+      "page": 16,
+      "quote": "19,938,300 Class A Ordinary Shares are issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 17944460,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 17,944,460 Offer Shares (subject to reallocation and the",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1993840,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 1,993,840 Offer Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Class A Ordinary Shares",
+      "page": 16,
+      "quote": "19,938,300 Class A Ordinary Shares are issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 235538011,
+      "page": 254,
+      "quote": "235,538,011 Total US$58,884.50275",
+      "confidence": "high",
+      "note": "Total issued Shares after IPO (base, no options) = Class A 186,265,301 + Class B 29,334,410 = 235,538,011."
+    },
+    "col_T": {
+      "value": 295.6,
+      "page": 2,
+      "quote": "HK$295.60 per Offer Share plus brokerage of 1%, SFC",
+      "confidence": "high",
+      "note": "Fixed Offer Price; no price range disclosed."
+    },
+    "col_U": {
+      "value": 295.6,
+      "page": 2,
+      "quote": "HK$295.60 per Offer Share plus brokerage of 1%, SFC",
+      "confidence": "high",
+      "note": "Fixed Offer Price; no price range disclosed."
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 332,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 4744508000,
+      "page": 19,
+      "quote": "Total Assets 4,744,508 4,543,101 12,901,113",
+      "confidence": "high",
+      "note": "Consolidated total assets as of December 31, 2023."
+    },
+    "col_X": {
+      "value": 4543101000,
+      "page": 19,
+      "quote": "Total Assets 4,744,508 4,543,101 12,901,113",
+      "confidence": "high",
+      "note": "Consolidated total assets as of December 31, 2024."
+    },
+    "col_Y": {
+      "value": 12901113000,
+      "page": 19,
+      "quote": "Total Assets 4,744,508 4,543,101 12,901,113",
+      "confidence": "high",
+      "note": "Consolidated total assets as of December 31, 2025."
+    },
+    "col_Z": {
+      "value": -11977557000,
+      "page": 334,
+      "quote": "Total Deficits (11,977,557) (15,149,172) (17,891,206)",
+      "confidence": "high",
+      "note": "Consolidated total equity (total deficits) as of December 31, 2023."
+    },
+    "col_AA": {
+      "value": -15149172000,
+      "page": 334,
+      "quote": "Total Deficits (11,977,557) (15,149,172) (17,891,206)",
+      "confidence": "high",
+      "note": "Consolidated total equity (total deficits) as of December 31, 2024."
+    },
+    "col_AB": {
+      "value": -17891206000,
+      "page": 334,
+      "quote": "Total Deficits (11,977,557) (15,149,172) (17,891,206)",
+      "confidence": "high",
+      "note": "Consolidated total equity (total deficits) as of December 31, 2025."
+    },
+    "col_AC": {
+      "value": 16722065000,
+      "page": 19,
+      "quote": "Total Liabilities 16,722,065 19,692,273 30,792,319",
+      "confidence": "high",
+      "note": "Total current 16,701,510 + non-current 20,555 = 16,722,065 (2023)."
+    },
+    "col_AD": {
+      "value": 19692273000,
+      "page": 19,
+      "quote": "Total Liabilities 16,722,065 19,692,273 30,792,319",
+      "confidence": "high",
+      "note": "Total current 19,659,693 + non-current 32,580 = 19,692,273 (2024)."
+    },
+    "col_AE": {
+      "value": 30792319000,
+      "page": 19,
+      "quote": "Total Liabilities 16,722,065 19,692,273 30,792,319",
+      "confidence": "high",
+      "note": "Total current 30,746,227 + non-current 46,092 = 30,792,319 (2025)."
+    },
+    "col_AF": {
+      "value": 742745000,
+      "page": 17,
+      "quote": "Revenues 742,745 1,324,688 2,412,523",
+      "confidence": "high",
+      "note": "FY2023 consolidated revenue."
+    },
+    "col_AG": {
+      "value": 1324688000,
+      "page": 17,
+      "quote": "Revenues 742,745 1,324,688 2,412,523",
+      "confidence": "high",
+      "note": "FY2024 consolidated revenue."
+    },
+    "col_AH": {
+      "value": 2412523000,
+      "page": 17,
+      "quote": "Revenues 742,745 1,324,688 2,412,523",
+      "confidence": "high",
+      "note": "FY2025 consolidated revenue."
+    },
+    "col_AI": {
+      "value": -2558870000,
+      "page": 333,
+      "quote": "Loss before tax (2,558,870) (3,199,143) (3,429,308)",
+      "confidence": "high",
+      "note": "FY2023 loss before tax."
+    },
+    "col_AJ": {
+      "value": -3199143000,
+      "page": 333,
+      "quote": "Loss before tax (2,558,870) (3,199,143) (3,429,308)",
+      "confidence": "high",
+      "note": "FY2024 loss before tax."
+    },
+    "col_AK": {
+      "value": -3429308000,
+      "page": 333,
+      "quote": "Loss before tax (2,558,870) (3,199,143) (3,429,308)",
+      "confidence": "high",
+      "note": "FY2025 loss before tax."
+    },
+    "col_AL": {
+      "value": -2570342000,
+      "page": 333,
+      "quote": "Loss for the year attributable to owners of the Company 11 (2,570,342) (3,205,730) (3,457,912)",
+      "confidence": "high",
+      "note": "FY2023 loss for the year (consolidated)."
+    },
+    "col_AM": {
+      "value": -3205730000,
+      "page": 333,
+      "quote": "Loss for the year attributable to owners of the Company 11 (2,570,342) (3,205,730) (3,457,912)",
+      "confidence": "high",
+      "note": "FY2024 loss for the year (consolidated)."
+    },
+    "col_AN": {
+      "value": -3457912000,
+      "page": 333,
+      "quote": "Loss for the year attributable to owners of the Company 11 (2,570,342) (3,205,730) (3,457,912)",
+      "confidence": "high",
+      "note": "FY2025 loss for the year (consolidated)."
+    },
+    "col_BE": {
+      "value": 29862900000,
+      "page": 287,
+      "quote": "Total 16,357,324 19,217,527 29,862,900 30,774,933",
+      "confidence": "high",
+      "note": "INDEBTEDNESS Total (including lease liabilities) as of December 31, 2025 (year-1 end)."
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 332,
+      "quote": "prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1726767000,
+      "page": 333,
+      "quote": "Gross profit 130,071 649,424 1,726,767",
+      "confidence": "high",
+      "note": "FY2025 (year-1) consolidated gross profit."
+    },
+    "col_CG": {
+      "value": 91000000,
+      "page": 286,
+      "quote": "Our capital expenditures were RMB64.0 million, RMB130.0 million, and RMB91.0 million in 2023, 2024 and 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified — true and fair view",
+      "page": 331,
+      "quote": "true and fair view of the Group’s financial position as at December 31, 2023, 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 305,
+      "quote": "will receive an aggregate underwriting commission (the “Fixed Fees”) equal to 2.00% of the aggregate Offer Price payable in respect of all of the Offer Shares",
+      "confidence": "high",
+      "note": "Fixed Fees 2.00% apply to all Offer Shares (HK Public Offering and International Offering at the same rate)."
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 305,
+      "quote": "will receive an aggregate underwriting commission (the “Fixed Fees”) equal to 2.00% of the aggregate Offer Price payable in respect of all of the Offer Shares",
+      "confidence": "high",
+      "note": "Fixed Fees 2.00% apply to all Offer Shares (HK Public Offering and International Offering at the same rate)."
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 305,
+      "quote": "the Company may be required to issue up to an aggregate of 2,990,740 Class A Ordinary Shares, representing not more than 15% of the number of Offer Shares initially available",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 279200000,
+      "page": 305,
+      "quote": "are estimated to be approximately HK$279.2 million (based on the Offer Price of HK$295.60, and assuming the full payment of the Discretionary Fees",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Autonomous driving (driving automation) solutions — software solutions for mass-produced vehicles and scalable robotaxi services",
+      "page": 159,
+      "quote": "We are a leading autonomous driving company in terms of both technological advancement and commercial success.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange — Rule 8.05(3) market capitalisation/revenue test, with WVR under Chapter 8A (Rule 8A.06(2))",
+      "page": 92,
+      "quote": "We satisfy the market capitalization/revenue test under Rules 8.05(3) and 8A.06(2) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialized mass-production of L2/L3 Urban NOA solutions for OEMs; early stage of L3/L4 deployment (Robotaxi commercial operations in limited PRC cities)",
+      "page": 159,
+      "quote": "We are currently at an early stage of deploying L3/L4 autonomous driving solutions and are continuing to advance toward higher levels of autonomy.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 23,
+      "quote": "Approximately 20% or HK$1,122.9 million will be dedicated to accelerating the commercialization and scaled development of our Solutions for Robotaxi Services",
+      "confidence": "high",
+      "note": "Full USE OF PROCEEDS list: R&D investments 60%, Robotaxi Services commercialization 20%, Solutions for Mass-produced Vehicles 10%, working capital and general corporate purposes 10% (pages 290-294). No debt repayment purpose disclosed, hence 0."
+    },
+    "col_CJ": {
+      "value": "GIC; Fidelity International; BlackRock; Mercedes-Benz AG; Oaktree; Golden Link; Franklin Templeton; Boyu; Gaoyi Entities; CPIC; GF Fund; ChinaAMC (HK); Suzhou Mosu; GigaDevice",
+      "page": 245,
+      "quote": "We have entered into cornerstone investment agreements (each a “Cornerstone Investment Agreement”, and together the “Cornerstone Investment Agreements”) with the cornerstone investors set",
+      "confidence": "high",
+      "note": "14 Cornerstone Investors in total; total subscription US$375.75 million / 9,960,080 Offer Shares (table on page 252)."
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 333,
+      "quote": "For the year ended December 31, Notes 2023 2024 2025",
+      "confidence": "high",
+      "note": "Year-1 = FY2025; all three track-record periods are full financial years, no annualisation needed."
+    },
+    "col_AU": {
+      "value": -281382000,
+      "page": 338,
+      "quote": "NET CASH USED IN OPERATING ACTIVITIES (1,068,557) (835,881) (281,382)",
+      "confidence": "high",
+      "note": "FY2025 net cash used in operating activities."
+    },
+    "col_AV": {
+      "value": 1306776000,
+      "page": 340,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF THE YEAR 960,845 2,997,992 1,306,776",
+      "confidence": "high",
+      "note": "Cash and cash equivalents at December 31, 2025; excludes restricted bank deposits."
+    },
+    "col_AW": {
+      "value": 1868906000,
+      "page": 333,
+      "quote": "Research and development expenses (1,281,138) (1,508,270) (1,868,906)",
+      "confidence": "high",
+      "note": "FY2025 R&D expenses charged to profit or loss."
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 280,
+      "quote": "Our intangible assets consist of purchased software. Net carrying amount of intangible assets was nil, and RMB4.6 million as of December 31, 2023 and 2024.",
+      "confidence": "high",
+      "note": "No 'Development costs' line in the intangible assets note; all intangible assets are purchased software, so capitalised development costs = 0."
+    },
+    "col_AY": {
+      "value": 0.626,
+      "page": 14,
+      "quote": "our five largest customers accounted for 86.7%, 78.3% and 62.6% of our total revenues, respectively",
+      "confidence": "high",
+      "note": "FY2025 (year-1) top five customers = 62.6% of total revenue."
+    },
+    "col_DP": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "medium",
+      "note": "The prospectus does not disclose a Chinese name for MOMENTA GLOBAL LIMITED; only subsidiaries carry Chinese names (e.g. 魔門塔(蘇州)科技有限公司)."
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 16,
+      "quote": "We conducted multiple rounds of the Pre-IPO Investments from the Pre-IPO Investors, which are primarily venture capital funds, institutional investors and industry players",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 16,
+      "quote": "We conducted multiple rounds of the Pre-IPO Investments from the Pre-IPO Investors, which are primarily venture capital funds, institutional investors and industry players",
+      "confidence": "high",
+      "note": "Pre-IPO investors include Shunwei Capital, Granite Asia (GGV Capital), Sinovation Fund III, Blue Lake Capital, Zhen Partners Fund IV."
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 148,
+      "quote": "CDH Investments is one of the first China focused alternative asset managers",
+      "confidence": "high",
+      "note": "CDH Investments, Boyu Capital and other private-equity managers are Pre-IPO Investors."
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 138,
+      "quote": "We commenced strategic collaboration with Mercedes-Benz, a global top-tier OEM, which has also made equity investments in our Company.",
+      "confidence": "high",
+      "note": "Corporate/industrial investors include Mercedes-Benz AG, General Motors Holdings LLC, Toyota Motor Corporation, Robert Bosch GmbH, NIO Capital, Ant Group, Tencent (Image Frame), BYD-affiliated Golden Link and Chery."
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 147,
+      "quote": "E-Town Capital is a state-owned investment and operation corporation for promoting industrial development and scientific and technological innovation in Beijing",
+      "confidence": "high",
+      "note": "State/sovereign backing also via Temasek (Anderson Investments Pte. Ltd.)."
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 144,
+      "quote": "Below sets out information of our major Pre-IPO Investors, which include our sophisticated investors, namely, Granite Asia and CDH Investments.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "SAIC (ZJSmart Holdings Limited); General Motors Holdings LLC; Mercedes-Benz AG; Temasek (Anderson Investments Pte. Ltd.); Shunwei Capital (Talented Ventures Limited, Astrend Opportunity III Alpha Limited); EV Ventures L.L.C-FZ; NIO Capital (Nio Momentum LLC, Nio Momentum II LLC, Andante Symphony Limited); YF Momenta Limited (Yunfeng); Blue Lake Capital; Ant Group (Accelerator XVI Ltd., ANTFIN Singapore Holding Pte. Ltd.); Tencent (Image Frame Investment (HK) Limited); E-Town Capital; Toyota Motor Corporation; Granite Asia (GGV Capital VI L.P., GGV Capital VI Entrepreneurs Fund L.P., GGV Capital VI Plus L.P., Granite Asia IX VCC); Aldrich Bay Limited; Sinovation Fund III, L.P.; CT Prime MMT Limited; Grower International Limited; GCBM Holdings Limited; CDH Investments (Cognitive Dynamics Limited, OG Blaze Dynamics Limited); Zhen Partners Fund IV, L.P.",
+      "page": 144,
+      "quote": "Below sets out information of our major Pre-IPO Investors, which include our sophisticated investors, namely, Granite Asia and CDH Investments.",
+      "confidence": "high",
+      "note": "Major Pre-IPO Investors listed in the prospectus (page 144-149), 21 groups in total; all Preferred Shares convert 1:1 into Class A Ordinary Shares upon Listing."
+    },
+    "col_vc_pe_stake": {
+      "value": 0.8374,
+      "page": 254,
+      "quote": "35,050,839 Ordinary shares with a par value of US$0.00025 each US$8,762.70975 180,548,872 Preferred Shares with a par value of US$0.00025 each",
+      "confidence": "medium",
+      "note": "Pre-IPO institutional stake = 180,548,872 Preferred Shares / 215,599,711 pre-listing issued shares (35,050,839 Ordinary + 180,548,872 Preferred) = 0.8374. Denominator excludes the 19,938,300 new shares issued in the Global Offering."
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 144,
+      "quote": "including but not limited to the redemption right, information right, right of first refusal, drag-along right and/or director appointment right",
+      "confidence": "high",
+      "note": "Pre-IPO Investors were granted a director appointment right, evidencing pre-IPO investor board representation."
+    },
+    "col_earliest_round": {
+      "value": "Series A financing (agreement dated January 16, 2017)",
+      "page": 142,
+      "quote": "Series A financing January 16, 2017 11,111,156 Series A Preferred Shares 5,000,000 January 19, 2017",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 9.45,
+      "page": 142,
+      "quote": "Series A financing January 16, 2017 11,111,156 Series A Preferred Shares 5,000,000 January 19, 2017",
+      "confidence": "medium",
+      "note": "From the earliest Pre-IPO investment (January 16, 2017) to the prospectus date (June 29, 2026) = approximately 9.45 years."
+    },
+    "col_BB": {
+      "value": "Natural persons acting in concert (Mr. Cao and the concert party group of Controlling Shareholders)",
+      "page": 15,
+      "quote": "Mr. Cao, Dr. Xia, Dr. Sun, Ms. Sun, JIA Sibo, LI Jun, ZHU Wangjiang and WANG Jinwei, through their respective wholly-owned entities, will be collectively interested in approximately 14.85%",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.1485,
+      "page": 15,
+      "quote": "will be collectively interested in approximately 14.85% of the total issued share capital of our Company, and will be collectively entitled to exercise voting rights of (i) approximately 59.85%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.5985,
+      "page": 15,
+      "quote": "will be collectively interested in approximately 14.85% of the total issued share capital of our Company, and will be collectively entitled to exercise voting rights of (i) approximately 59.85%",
+      "confidence": "high",
+      "note": "Controlling Shareholders' voting power at Listing on all resolutions other than Reserved Matters (Class B = 10 votes each)."
+    },
+    "col_BP": {
+      "value": "19/09/2016",
+      "page": 341,
+      "quote": "The Company was incorporated as an exempted company with limited liability in the Cayman Islands on September 19, 2016",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "23/F, Tiancheng Times Business Square, No. 58 Qinglonggang Road, Xiangcheng District, Suzhou, Jiangsu, PRC",
+      "page": 99,
+      "quote": "Headquarters and Principal Place of Business in the PRC 23/F, Tiancheng Times Business Square No. 58 Qinglonggang Road Xiangcheng District Suzhou, Jiangsu PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "29/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . 9:00 a.m. on Monday, June 29, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "03/07/2026",
+      "page": 5,
+      "quote": "Application lists close . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Friday, July 3, 2026",
+      "confidence": "high"
+    }
+  }
+}

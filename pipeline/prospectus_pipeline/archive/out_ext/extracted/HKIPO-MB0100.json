@@ -1,0 +1,114 @@
+{
+  "code": "0100.HK",
+  "fields": {
+    "col_BA": {
+      "value": 1,
+      "page": 28,
+      "quote": "We have undertaken several rounds of Pre-IPO Investments. For details of the background of our key Pre-IPO Investors and the principal terms of the Pre-IPO Investments",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 28,
+      "quote": "Dr. Yan, Local Linearity Inc., MiniMax Awakening, MiniMax Limited, Alpha EXP, Scaling EXP Limited, and MiniMax Matrix together will constitute as a group of Controlling Shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.259,
+      "page": 28,
+      "quote": "and (ii) 25.90% of the voting rights in our issued share capital in general meetings for resolutions with respect to the Reserved Matters",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.7205,
+      "page": 28,
+      "quote": "(i) 72.05% of the voting rights in our issued share capital in general meetings (except for resolutions with respect to the Reserved Matters)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 21733000,
+      "page": 467,
+      "quote": "Current Interest-bearing bank borrowings – – 19,455 19,102 14,130 Lease liabilities 349 1,248 1,964 1,694 1,688",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "商业化初期（nascent stage of monetization and commercialization）",
+      "page": 36,
+      "quote": "We are still at a nascent stage in terms of monetization and commercialization as historically we have been largely focused on developing our foundation AI models.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 40,
+      "quote": "Approximately 90%, or HK$3,436.4 million of the net proceeds will be used for our research and development over the next five years",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Class A Ordinary Shares",
+      "page": 45,
+      "quote": "Class A ordinary shares in the share capital of the Company with a par value of US$0.0001 each, conferring a holder of a Class A ordinary share one vote per share",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "30/06/21",
+      "page": 214,
+      "quote": "Our Company was incorporated on June 30, 2021 in the Cayman Islands as an exempted company with limited liability with an authorized share capital of US$50,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shanghai, PRC",
+      "page": 151,
+      "quote": "Head Office and Principal Place of Business in the PRC 11th Floor, Building B Xinyan Mansion No. 65 Guiqing Road Xuhui District, Shanghai PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 555,
+      "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards, which comprise all standards and interpretations",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/12/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Wednesday, December 31, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/01/26",
+      "page": 5,
+      "quote": "Application lists close . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Tuesday, January 6, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 305447288,
+      "page": 39,
+      "quote": "The calculation of the market capitalization of our Shares is based on the assumption that 305,447,288 Shares will be in issue and outstanding immediately following the completion of the Global Offeri",
+      "confidence": "high",
+      "note": "开曼注册（Class A/B Ordinary Shares），无 H 股类别；其全部股份均在港交所挂牌，故 CE = 上市后已发行股份总数 305,447,288（口径见 fields.json col_CE hint ④）"
+    },
+    "col_CF": {
+      "value": 12476000,
+      "page": 29,
+      "quote": "Gross (loss)/profit – – (854) (24.7) 3,738 12.2 510 2.6 12,476 23.3",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 479000,
+      "page": 470,
+      "quote": "Property, Plant and Equipment 256 697 759 496 479",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见 (Unqualified opinion)",
+      "page": 539,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 193200000,
+      "page": 39,
+      "quote": "Over-allotment Option are not exercised) for the Global Offering are approximately HK$193.2 million, accounting for approximately 4.8% of our gross proceeds",
+      "confidence": "medium"
+    }
+  }
+}

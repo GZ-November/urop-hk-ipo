@@ -1,0 +1,18 @@
+{
+  "packets": [
+    {
+      "code": "6809.HK",
+      "name": "Montage Technology Co., Ltd. - H shares",
+      "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/packets/HKIPO-MB6809.md",
+      "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/extracted/HKIPO-MB6809.json"
+    },
+    {
+      "code": "0600.HK",
+      "name": "Axera Semiconductor Co., Ltd. - H shares",
+      "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/packets/HKIPO-MB0600.md",
+      "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/extracted/HKIPO-MB0600.json"
+    }
+  ],
+  "verify": true,
+  "out_dir": "prospectus_pipeline/out/extracted"
+}

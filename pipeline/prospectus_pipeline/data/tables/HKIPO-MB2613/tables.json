@@ -1,0 +1,251 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 310,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "30,000,000 Non-H Shares in issue as of the date",
+          "30,000,000",
+          "75%"
+        ],
+        [
+          "10,000,000 H Shares to be issued under the",
+          "10,000,000",
+          "25%"
+        ],
+        [
+          "Total",
+          "40,000,000",
+          "100%"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| 30,000,000 Non-H Shares in issue as of the date | 30,000,000       | 75%                        |\n| 10,000,000 H Shares to be issued under the      | 10,000,000       | 25%                        |\n| Total                                           | 40,000,000       | 100%                       |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 315,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Harvest",
+          "10",
+          "2,443,000",
+          "24.43"
+        ],
+        [
+          "Harvest",
+          "10",
+          "2,170,000",
+          "21.70"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Harvest              | 10                    | 2,443,000              | 24.43                         |\n| Harvest              | 10                    | 2,170,000              | 21.70                         |",
+      "metadata": {
+        "investor_count": 2
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 316,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Harvest",
+          "10",
+          "1,951,900",
+          "19.52"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Harvest              | 10                    | 1,951,900              | 19.52                         |",
+      "metadata": {
+        "investor_count": 1
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 30,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$312.0 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                          | Rate / Amount Disclosed |\n| --------------------------------------------------------- | ----------------------- |\n| HK$312.0 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 31,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "months ended June 30, 2024, the listing expenses incurred amounted to",
+          "nil,"
+        ],
+        [
+          "million, respectively. We expect to incur total listing expenses of approximately",
+          "RMB42.6 million"
+        ],
+        [
+          "Among the total listing expenses, approximately",
+          "RMB0.4 million"
+        ],
+        [
+          "Offering. Our total listing expenses are estimated to account",
+          "for 8.9"
+        ],
+        [
+          "Global Offering. The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                              | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                                       | fees,                   |\n| months ended June 30, 2024, the listing expenses incurred amounted to                         | nil,                    |\n| million, respectively. We expect to incur total listing expenses of approximately             | RMB42.6 million         |\n| Among the total listing expenses, approximately                                               | RMB0.4 million          |\n| Offering. Our total listing expenses are estimated to account                                 | for 8.9                 |\n| Global Offering. The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 25,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "140,521",
+          "267,233",
+          "510,255",
+          "219,556"
+        ],
+        [
+          "Gross profit",
+          "47,509",
+          "100,082",
+          "241,737",
+          "101,178"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 140,521 | 267,233 | 510,255 | 219,556 |\n| Gross profit     | 47,509  | 100,082 | 241,737 | 101,178 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 26,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "358,405",
+          "376,716",
+          "522,500",
+          "410,723"
+        ],
+        [
+          "Total liabilities",
+          "244,805",
+          "240,813",
+          "267,709",
+          "171,314"
+        ],
+        [
+          "TOTAL EQUITY",
+          "113,600",
+          "135,903",
+          "254,791",
+          "239,409"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2  | Year-1  | Col 5   |\n| ----------------- | ------- | ------- | ------- | ------- |\n| Total assets      | 358,405 | 376,716 | 522,500 | 410,723 |\n| Total liabilities | 244,805 | 240,813 | 267,709 | 171,314 |\n| TOTAL EQUITY      | 113,600 | 135,903 | 254,791 | 239,409 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 328,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "140,521",
+          "267,233",
+          "510,255",
+          "219,556"
+        ],
+        [
+          "Gross profit",
+          "47,509",
+          "100,082",
+          "241,737",
+          "101,178"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 140,521 | 267,233 | 510,255 | 219,556 |\n| Gross profit     | 47,509  | 100,082 | 241,737 | 101,178 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

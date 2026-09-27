@@ -1,0 +1,175 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 288,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Oaktree",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "CP Black Dragon",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "CTFE",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "Athos Capital",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "TAL Funds",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "Burkehill",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "General Atlantic",
+          "50",
+          "388,000",
+          "0.71%"
+        ],
+        [
+          "Technology",
+          "50",
+          "388,000",
+          "0.71%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Oaktree              | 50                    | 388,000                | 0.71%                         |\n| CP Black Dragon      | 50                    | 388,000                | 0.71%                         |\n| CTFE                 | 50                    | 388,000                | 0.71%                         |\n| Athos Capital        | 50                    | 388,000                | 0.71%                         |\n| TAL Funds            | 50                    | 388,000                | 0.71%                         |\n| Burkehill            | 50                    | 388,000                | 0.71%                         |\n| General Atlantic     | 50                    | 388,000                | 0.71%                         |\n| Technology           | 50                    | 388,000                | 0.71%                         |",
+      "metadata": {
+        "investor_count": 8
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$54,512.9 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                             | Rate / Amount Disclosed |\n| ------------------------------------------------------------ | ----------------------- |\n| HK$54,512.9 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "commissions payable to the",
+          "Underwriters,"
+        ],
+        [
+          "We recorded listing expenses of",
+          "RMB4.8 million"
+        ],
+        [
+          "commissions of",
+          "RMB399.7 million"
+        ]
+      ],
+      "markdown": "| Item Description                | Rate / Amount Disclosed |\n| ------------------------------- | ----------------------- |\n| commissions payable to the      | Underwriters,           |\n| We recorded listing expenses of | RMB4.8 million          |\n| commissions of                  | RMB399.7 million        |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "10,717,984",
+          "23,862,160",
+          "38,239,936",
+          "6,674,176"
+        ],
+        [
+          "Gross profit",
+          "3,384,457",
+          "7,941,106",
+          "15,875,882",
+          "2,412,153"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5     |\n| ---------------- | ---------- | ---------- | ---------- | --------- |\n| Revenue          | 10,717,984 | 23,862,160 | 38,239,936 | 6,674,176 |\n| Gross profit     | 3,384,457  | 7,941,106  | 15,875,882 | 2,412,153 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 341,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "20,006,749",
+          "28,866,275",
+          "45,288,971",
+          "56,648,234"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5      |\n| ---------------- | ---------- | ---------- | ---------- | ---------- |\n| Total assets     | 20,006,749 | 28,866,275 | 45,288,971 | 56,648,234 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "target": "prospectus",
+  "expected_codes": [
+    "1021.HK"
+  ],
+  "records": [
+    {
+      "code": "1021.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/out/extracted/HKIPO-MB1021.json",
+      "hash": "f006596eaa3435c5646419cc7a48c9fe4259cf346fc7787b2d8065370d4f8ae3",
+      "json_sha256": "19fdfe8fb6659e0c24755493a002f8610411825d70b0c36968a227065ab1ccce",
+      "status": "pass",
+      "fields_total": 70,
+      "fields_missing": [],
+      "errors": []
+    }
+  ],
+  "missing_files": [],
+  "pending_missing_fields": [],
+  "errors": [],
+  "gate_pass": true
+}

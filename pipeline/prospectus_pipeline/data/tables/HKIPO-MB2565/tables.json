@@ -1,0 +1,72 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 35,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "expenses, including underwriting commission and other",
+          "expenses,"
+        ]
+      ],
+      "markdown": "| Item Description                                      | Rate / Amount Disclosed |\n| ----------------------------------------------------- | ----------------------- |\n| Our listing expenses represent professional           | fees,                   |\n| expenses, including underwriting commission and other | expenses,               |",
+      "metadata": {
+        "items_count": 2
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 455,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "prepayments for listing expenses in connection with the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                               | Rate / Amount Disclosed |\n| -------------------------------------------------------------- | ----------------------- |\n| prepayments for listing expenses in connection with the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 30,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "TOTAL EQUITY",
+          "195,353",
+          "57,470"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1 |\n| ---------------- | ------- | ------ | ------ |\n| TOTAL EQUITY     | 195,353 | 57,470 |        |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

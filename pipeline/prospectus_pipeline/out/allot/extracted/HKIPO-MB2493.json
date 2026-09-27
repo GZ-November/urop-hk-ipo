@@ -1,0 +1,115 @@
+{
+  "code": "2493.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3187,
+      "page": 3,
+      "quote": "Total 15,020,600 31.87% 3.36%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 481.71,
+      "page": 1,
+      "quote": "Subscription level 481.71 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 126378,
+      "page": 1,
+      "quote": "No. of valid applications 126,378",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2270397600,
+      "page": 10,
+      "quote": "100,000 2,094 200 H Shares plus 671 out of 2,094 applicants to receive an additional 200 H Shares",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 481.71 times",
+      "page": 1,
+      "quote": "Subscription level 481.71 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/04/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and the ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "27/04/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：27/04/2026 22:08",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 47130200,
+      "page": 1,
+      "quote": "Number of Offer Shares 47,130,200 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4713200,
+      "page": 1,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 4,713,200 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 42417000,
+      "page": 1,
+      "quote": "Final Number of Offer Shares in International Offering 42,417,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-04-28 起 45 天内共 48 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-06-12 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Reallocation: No; no Offer Shares reallocated from the International Offering (0 shares); final Hong Kong Public Offering remains 4,713,200 H Shares.",
+      "page": 1,
+      "quote": "Reallocation No No. of Offer Shares initially available under the Hong Kong Public Offering 4,713,200 No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1189000000,
+      "page": 1,
+      "quote": "Net proceeds HK$ 1,189.0 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1011,
+      "page": 23,
+      "quote": "represents approximately 10.11% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 446730200,
+      "page": 1,
+      "quote": "Number of issued shares upon Listing 446,730,200 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0719,
+      "page": 23,
+      "quote": "the market capitalization of the H Shares listed on the Stock Exchange that are held by the public and are not subject to any disposal restrictions",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital of the Company upon Listing (446,730,200 Shares, excluding treasury shares); numerator = Global Offering Offer Shares (47,130,200) minus cornerstone allocation (15,020,600) = 32,109,600 H Shares; H Shares held by Cornerstone Investors (including CHIL) are excluded from free float.",
+      "page": 23,
+      "quote": "H Shares held by the Cornerstone Investors (including CHIL) upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 446730200,
+      "page": 23,
+      "quote": "of the total issued share capital of our Company (being the total number of issued shares in the class to which H Shares belong, excluding treasury shares)",
+      "confidence": "high"
+    }
+  }
+}

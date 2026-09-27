@@ -1,0 +1,506 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 227,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Chipone . . . . . . . . . . . .",
+          ".",
+          "12,460,800",
+          "5.76%"
+        ],
+        [
+          "Puxin Technology. . . . . . .",
+          ".",
+          "12,213,000",
+          "5.65%"
+        ],
+        [
+          "Goertek (HongKong) . . . . .",
+          "27.86",
+          "7,278,900",
+          "3.37%"
+        ],
+        [
+          "Taikang Life . . . . . . . . . . .",
+          "33.44",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "GF Fund . . . . . . . . . . . . .",
+          "33.44",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "OTC Swaps). . . . . . . . . .",
+          "10.22",
+          "2,668,900",
+          "1.23%"
+        ],
+        [
+          "Management . . . . . . . . .",
+          "6.50",
+          "1,698,400",
+          "0.79%"
+        ],
+        [
+          "China Universal (HK) . . . . .",
+          "16.72",
+          "4,367,300",
+          "2.02%"
+        ],
+        [
+          "NGS Super. . . . . . . . . . . .",
+          "13.93",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "HHLRA . . . . . . . . . . . . .",
+          "13.93",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "WT Asset Management . . . .",
+          "13.93",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "IvyRock . . . . . . . . . . . . .",
+          "13.93",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "Verition. . . . . . . . . . . . . .",
+          "13.00",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Pinpoint . . . . . . . . . . . . .",
+          "13.00",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Da Cheng International . . . .",
+          "7.43",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "ICBC Wealth . . . . . . . . . .",
+          "7.43",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "PSBC Wealth . . . . . . . . . .",
+          "3.72",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "HGI . . . . . . . . . . . . . . . .",
+          "3.72",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          "414.42",
+          "107,910,400",
+          "49.92%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Chipone . . . . . . . . . . . .     | .                     | 12,460,800             | 5.76%                         |\n| Puxin Technology. . . . . . .       | .                     | 12,213,000             | 5.65%                         |\n| Goertek (HongKong) . . . . .        | 27.86                 | 7,278,900              | 3.37%                         |\n| Taikang Life . . . . . . . . . . .  | 33.44                 | 8,734,700              | 4.04%                         |\n| GF Fund . . . . . . . . . . . . .   | 33.44                 | 8,734,700              | 4.04%                         |\n| OTC Swaps). . . . . . . . . .       | 10.22                 | 2,668,900              | 1.23%                         |\n| Management . . . . . . . . .        | 6.50                  | 1,698,400              | 0.79%                         |\n| China Universal (HK) . . . . .      | 16.72                 | 4,367,300              | 2.02%                         |\n| NGS Super. . . . . . . . . . . .    | 13.93                 | 3,639,400              | 1.68%                         |\n| HHLRA . . . . . . . . . . . . .     | 13.93                 | 3,639,400              | 1.68%                         |\n| WT Asset Management . . . .         | 13.93                 | 3,639,400              | 1.68%                         |\n| IvyRock . . . . . . . . . . . . .   | 13.93                 | 3,639,400              | 1.68%                         |\n| Verition. . . . . . . . . . . . . . | 13.00                 | 3,396,800              | 1.57%                         |\n| Pinpoint . . . . . . . . . . . . .  | 13.00                 | 3,396,800              | 1.57%                         |\n| Da Cheng International . . . .      | 7.43                  | 1,941,000              | 0.90%                         |\n| ICBC Wealth . . . . . . . . . .     | 7.43                  | 1,941,000              | 0.90%                         |\n| PSBC Wealth . . . . . . . . . .     | 3.72                  | 970,500                | 0.45%                         |\n| HGI . . . . . . . . . . . . . . . . | 3.72                  | 970,500                | 0.45%                         |\n| Total . . . . . . . . . . . . . . . | 414.42                | 107,910,400            | 49.92%                        |",
+      "metadata": {
+        "investor_count": 19
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 228,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Chipone . . . . . . . . . . . .",
+          ".",
+          "12,460,800",
+          "5.76%"
+        ],
+        [
+          "Puxin Technology. . . . . . .",
+          ".",
+          "12,213,000",
+          "5.65%"
+        ],
+        [
+          "Smartsens (HK). . . . . . . .",
+          ".",
+          "12,010,400",
+          "5.56%"
+        ],
+        [
+          "Goertek (HongKong) . . . . .",
+          "28.93",
+          "7,278,900",
+          "3.37%"
+        ],
+        [
+          "Taikang Life . . . . . . . . . . .",
+          "34.72",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "GF Fund . . . . . . . . . . . . .",
+          "34.72",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "OTC Swaps). . . . . . . . . .",
+          "10.61",
+          "2,668,900",
+          "1.23%"
+        ],
+        [
+          "Management . . . . . . . . .",
+          "6.75",
+          "1,698,400",
+          "0.79%"
+        ],
+        [
+          "China Universal (HK) . . . . .",
+          "17.36",
+          "4,367,300",
+          "2.02%"
+        ],
+        [
+          "NGS Super. . . . . . . . . . . .",
+          "14.47",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "HHLRA . . . . . . . . . . . . .",
+          "14.47",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "WT Asset Management . . . .",
+          "14.47",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "IvyRock . . . . . . . . . . . . .",
+          "14.47",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "Verition. . . . . . . . . . . . . .",
+          "13.50",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Pinpoint . . . . . . . . . . . . .",
+          "13.50",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Da Cheng International . . . .",
+          "7.71",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "ICBC Wealth . . . . . . . . . .",
+          "7.71",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "PSBC Wealth . . . . . . . . . .",
+          "3.86",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "HGI . . . . . . . . . . . . . . . .",
+          "3.86",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          "430.31",
+          "107,910,400",
+          "49.92%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Chipone . . . . . . . . . . . .     | .                     | 12,460,800             | 5.76%                         |\n| Puxin Technology. . . . . . .       | .                     | 12,213,000             | 5.65%                         |\n| Smartsens (HK). . . . . . . .       | .                     | 12,010,400             | 5.56%                         |\n| Goertek (HongKong) . . . . .        | 28.93                 | 7,278,900              | 3.37%                         |\n| Taikang Life . . . . . . . . . . .  | 34.72                 | 8,734,700              | 4.04%                         |\n| GF Fund . . . . . . . . . . . . .   | 34.72                 | 8,734,700              | 4.04%                         |\n| OTC Swaps). . . . . . . . . .       | 10.61                 | 2,668,900              | 1.23%                         |\n| Management . . . . . . . . .        | 6.75                  | 1,698,400              | 0.79%                         |\n| China Universal (HK) . . . . .      | 17.36                 | 4,367,300              | 2.02%                         |\n| NGS Super. . . . . . . . . . . .    | 14.47                 | 3,639,400              | 1.68%                         |\n| HHLRA . . . . . . . . . . . . .     | 14.47                 | 3,639,400              | 1.68%                         |\n| WT Asset Management . . . .         | 14.47                 | 3,639,400              | 1.68%                         |\n| IvyRock . . . . . . . . . . . . .   | 14.47                 | 3,639,400              | 1.68%                         |\n| Verition. . . . . . . . . . . . . . | 13.50                 | 3,396,800              | 1.57%                         |\n| Pinpoint . . . . . . . . . . . . .  | 13.50                 | 3,396,800              | 1.57%                         |\n| Da Cheng International . . . .      | 7.71                  | 1,941,000              | 0.90%                         |\n| ICBC Wealth . . . . . . . . . .     | 7.71                  | 1,941,000              | 0.90%                         |\n| PSBC Wealth . . . . . . . . . .     | 3.86                  | 970,500                | 0.45%                         |\n| HGI . . . . . . . . . . . . . . . . | 3.86                  | 970,500                | 0.45%                         |\n| Total . . . . . . . . . . . . . . . | 430.31                | 107,910,400            | 49.92%                        |",
+      "metadata": {
+        "investor_count": 20
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 229,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Chipone . . . . . . . . . . . .",
+          ".",
+          "12,460,800",
+          "5.76%"
+        ],
+        [
+          "Puxin Technology. . . . . . .",
+          ".",
+          "12,213,000",
+          "5.65%"
+        ],
+        [
+          "Smartsens (HK). . . . . . . .",
+          ".",
+          "12,010,400",
+          "5.56%"
+        ],
+        [
+          "Goertek (HongKong) . . . . .",
+          "30.00",
+          "7,278,900",
+          "3.37%"
+        ],
+        [
+          "Taikang Life . . . . . . . . . . .",
+          "36.00",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "GF Fund . . . . . . . . . . . . .",
+          "36.00",
+          "8,734,700",
+          "4.04%"
+        ],
+        [
+          "OTC Swaps). . . . . . . . . .",
+          "11.00",
+          "2,668,900",
+          "1.23%"
+        ],
+        [
+          "Management . . . . . . . . .",
+          "7.00",
+          "1,698,400",
+          "0.79%"
+        ],
+        [
+          "China Universal (HK) . . . . .",
+          "18.00",
+          "4,367,300",
+          "2.02%"
+        ],
+        [
+          "NGS Super. . . . . . . . . . . .",
+          "15.00",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "HHLRA . . . . . . . . . . . . .",
+          "15.00",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "WT Asset Management . . . .",
+          "15.00",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "IvyRock . . . . . . . . . . . . .",
+          "15.00",
+          "3,639,400",
+          "1.68%"
+        ],
+        [
+          "Verition. . . . . . . . . . . . . .",
+          "14.00",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Pinpoint . . . . . . . . . . . . .",
+          "14.00",
+          "3,396,800",
+          "1.57%"
+        ],
+        [
+          "Da Cheng International . . . .",
+          "8.00",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "ICBC Wealth . . . . . . . . . .",
+          "8.00",
+          "1,941,000",
+          "0.90%"
+        ],
+        [
+          "PSBC Wealth . . . . . . . . . .",
+          "4.00",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "HGI . . . . . . . . . . . . . . . .",
+          "4.00",
+          "970,500",
+          "0.45%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          "446.20",
+          "107,910,400",
+          "49.92%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Chipone . . . . . . . . . . . .     | .                     | 12,460,800             | 5.76%                         |\n| Puxin Technology. . . . . . .       | .                     | 12,213,000             | 5.65%                         |\n| Smartsens (HK). . . . . . . .       | .                     | 12,010,400             | 5.56%                         |\n| Goertek (HongKong) . . . . .        | 30.00                 | 7,278,900              | 3.37%                         |\n| Taikang Life . . . . . . . . . . .  | 36.00                 | 8,734,700              | 4.04%                         |\n| GF Fund . . . . . . . . . . . . .   | 36.00                 | 8,734,700              | 4.04%                         |\n| OTC Swaps). . . . . . . . . .       | 11.00                 | 2,668,900              | 1.23%                         |\n| Management . . . . . . . . .        | 7.00                  | 1,698,400              | 0.79%                         |\n| China Universal (HK) . . . . .      | 18.00                 | 4,367,300              | 2.02%                         |\n| NGS Super. . . . . . . . . . . .    | 15.00                 | 3,639,400              | 1.68%                         |\n| HHLRA . . . . . . . . . . . . .     | 15.00                 | 3,639,400              | 1.68%                         |\n| WT Asset Management . . . .         | 15.00                 | 3,639,400              | 1.68%                         |\n| IvyRock . . . . . . . . . . . . .   | 15.00                 | 3,639,400              | 1.68%                         |\n| Verition. . . . . . . . . . . . . . | 14.00                 | 3,396,800              | 1.57%                         |\n| Pinpoint . . . . . . . . . . . . .  | 14.00                 | 3,396,800              | 1.57%                         |\n| Da Cheng International . . . .      | 8.00                  | 1,941,000              | 0.90%                         |\n| ICBC Wealth . . . . . . . . . .     | 8.00                  | 1,941,000              | 0.90%                         |\n| PSBC Wealth . . . . . . . . . .     | 4.00                  | 970,500                | 0.45%                         |\n| HGI . . . . . . . . . . . . . . . . | 4.00                  | 970,500                | 0.45%                         |\n| Total . . . . . . . . . . . . . . . | 446.20                | 107,910,400            | 49.92%                        |",
+      "metadata": {
+        "investor_count": 20
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 27,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "indicative offer price range stated in this prospectus), the aggregate commissions and",
+          "fees,"
+        ],
+        [
+          "During the Track Record Period, the listing expenses charged to profit or loss were",
+          "RMB1.1"
+        ]
+      ],
+      "markdown": "| Item Description                                                                       | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------------- | ----------------------- |\n| indicative offer price range stated in this prospectus), the aggregate commissions and | fees,                   |\n| During the Track Record Period, the listing expenses charged to profit or loss were    | RMB1.1                  |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 18,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | .      | .      | .      | .     |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |\n| Total equity      | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

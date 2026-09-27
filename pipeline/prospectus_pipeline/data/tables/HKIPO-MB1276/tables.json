@@ -1,0 +1,338 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 436,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue*",
+          "6,379,002,274",
+          "96.6%"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "224,519,800",
+          "3.4%"
+        ],
+        [
+          "Total",
+          "6,603,522,074",
+          "100%"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue*                              | 6,379,002,274    | 96.6%                      |\n| H Shares to be issued under the Global Offering | 224,519,800      | 3.4%                       |\n| Total                                           | 6,603,522,074    | 100%                       |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 429,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Total",
+          "533.00",
+          "93,773,400",
+          "41.77%"
+        ],
+        [
+          "GIC",
+          "268.00",
+          "48,584,600",
+          "21.64%"
+        ],
+        [
+          "Invesco Advisers",
+          "75.00",
+          "13,596,400",
+          "6.06%"
+        ],
+        [
+          "UBS AM Singapore",
+          "60.00",
+          "10,877,000",
+          "4.84%"
+        ],
+        [
+          "Cordial Solar",
+          "40.00",
+          "7,251,400",
+          "3.23%"
+        ],
+        [
+          "Hillhouse",
+          "40.00",
+          "7,251,400",
+          "3.23%"
+        ],
+        [
+          "Millennium ICSA",
+          "30.00",
+          "5,438,400",
+          "2.42%"
+        ],
+        [
+          "Oaktree",
+          "20.00",
+          "3,625,600",
+          "1.61%"
+        ],
+        [
+          "Total",
+          "533.00",
+          "96,624,800",
+          "43.04%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Total                | 533.00                | 93,773,400             | 41.77%                        |\n| GIC                  | 268.00                | 48,584,600             | 21.64%                        |\n| Invesco Advisers     | 75.00                 | 13,596,400             | 6.06%                         |\n| UBS AM Singapore     | 60.00                 | 10,877,000             | 4.84%                         |\n| Cordial Solar        | 40.00                 | 7,251,400              | 3.23%                         |\n| Hillhouse            | 40.00                 | 7,251,400              | 3.23%                         |\n| Millennium ICSA      | 30.00                 | 5,438,400              | 2.42%                         |\n| Oaktree              | 20.00                 | 3,625,600              | 1.61%                         |\n| Total                | 533.00                | 96,624,800             | 43.04%                        |",
+      "metadata": {
+        "investor_count": 7
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 430,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "GIC",
+          "268.00",
+          "50,108,400",
+          "22.32%"
+        ],
+        [
+          "Invesco Advisers",
+          "75.00",
+          "14,022,800",
+          "6.25%"
+        ],
+        [
+          "UBS AM Singapore",
+          "60.00",
+          "11,218,200",
+          "5.00%"
+        ],
+        [
+          "Cordial Solar",
+          "40.00",
+          "7,478,800",
+          "3.33%"
+        ],
+        [
+          "Hillhouse",
+          "40.00",
+          "7,478,800",
+          "3.33%"
+        ],
+        [
+          "Millennium ICSA",
+          "30.00",
+          "5,609,000",
+          "2.50%"
+        ],
+        [
+          "Oaktree",
+          "20.00",
+          "3,739,400",
+          "1.67%"
+        ],
+        [
+          "Total",
+          "533.00",
+          "99,655,400",
+          "44.39%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| GIC                  | 268.00                | 50,108,400             | 22.32%                        |\n| Invesco Advisers     | 75.00                 | 14,022,800             | 6.25%                         |\n| UBS AM Singapore     | 60.00                 | 11,218,200             | 5.00%                         |\n| Cordial Solar        | 40.00                 | 7,478,800              | 3.33%                         |\n| Hillhouse            | 40.00                 | 7,478,800              | 3.33%                         |\n| Millennium ICSA      | 30.00                 | 5,609,000              | 2.50%                         |\n| Oaktree              | 20.00                 | 3,739,400              | 1.67%                         |\n| Total                | 533.00                | 99,655,400             | 44.39%                        |",
+      "metadata": {
+        "investor_count": 7
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 35,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include underwriting commission",
+          "s,"
+        ],
+        [
+          "estimated total listing expenses consist of: (i) underwriting-related expenses of",
+          "HK$76.8"
+        ],
+        [
+          "Period, we incurred listing expenses of",
+          "HK$28.9 million"
+        ],
+        [
+          "We expect to incur additional listing expenses of approximately",
+          "HK$111.5 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                  | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------- | ----------------------- |\n| Our listing expenses mainly include underwriting commission                       | s,                      |\n| estimated total listing expenses consist of: (i) underwriting-related expenses of | HK$76.8                 |\n| Period, we incurred listing expenses of                                           | HK$28.9 million         |\n| We expect to incur additional listing expenses of approximately                   | HK$111.5 million        |",
+      "metadata": {
+        "items_count": 4
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 403,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| Our listing expenses mainly include underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "21,275,271",
+          "100.0",
+          "22,819,785",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "17,788,632",
+          "83.6",
+          "19,294,537",
+          "84.6"
+        ],
+        [
+          "Profit for the year",
+          "3,815,141",
+          "17.9",
+          "4,277,821",
+          "18.7"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 21,275,271 | 100.0  | 22,819,785 | 100.0 |\n| Gross profit        | 17,788,632 | 83.6   | 19,294,537 | 84.6  |\n| Profit for the year | 3,815,141  | 17.9   | 4,277,821  | 18.7  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 26,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "42,370,875",
+          "43,784,507",
+          "50,135,644"
+        ],
+        [
+          "Total liabilities",
+          "3,957,967",
+          "2,751,421",
+          "4,045,393"
+        ],
+        [
+          "Total equity",
+          "38,412,908",
+          "41,033,086",
+          "46,090,251"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 42,370,875 | 43,784,507 | 50,135,644 |\n| Total liabilities | 3,957,967  | 2,751,421  | 4,045,393  |\n| Total equity      | 38,412,908 | 41,033,086 | 46,090,251 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 369,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "21,275,271",
+          "100.0",
+          "22,819,785",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "17,788,632",
+          "83.6",
+          "19,294,537",
+          "84.6"
+        ],
+        [
+          "Profit for the year",
+          "3,815,141",
+          "17.9",
+          "4,277,821",
+          "18.7"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 21,275,271 | 100.0  | 22,819,785 | 100.0 |\n| Gross profit        | 17,788,632 | 83.6   | 19,294,537 | 84.6  |\n| Profit for the year | 3,815,141  | 17.9   | 4,277,821  | 18.7  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

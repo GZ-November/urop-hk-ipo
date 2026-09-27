@@ -1,0 +1,115 @@
+{
+  "code": "1641.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.0766,
+      "page": 6,
+      "quote": "FUHUIDA (HK) LIMITED (“FUHUIDA HK”) 1,781,000 7.66% 7.25% 1.81% No Total 1,781,000 7.66% 7.25% 1.81%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2309.25,
+      "page": 5,
+      "quote": "Subscription level 2,309.25 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 103102,
+      "page": 5,
+      "quote": "No. of valid applications 103,102",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 5372469000,
+      "page": 12,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT POOL A APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR 500 65,757",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,309.25 times",
+      "page": 5,
+      "quote": "Subscription level 2,309.25 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$12.26; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**12/01/2026 21:30**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 23263000,
+      "page": 3,
+      "quote": "Number of Offer Shares 23,263,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2326500,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 2,326,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 20936500,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 20,936,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-01-13 起 45 天内共 3 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-27 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No. No. of Offer Shares reallocated from the International Offering (claw-back): N/A",
+      "page": 5,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 252330000,
+      "page": 4,
+      "quote": "Net proceeds HK$252.33 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 16,
+      "quote": "24,566,464 H Shares, equivalent to 25.00% of the total number of issued Shares of the Company, will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 98263000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 98,263,000 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.2186,
+      "page": 16,
+      "quote": "the Company’s H Shares to be counted towards the free float upon Listing will be 21,482,000 Shares",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Excluding the Offer Shares to be allocated to the cornerstone investor that are subject to a lock-up period of six months following the Listing Date and the H Shares to be converted from Unlisted Shares that are subjected to a lockup period of 12 months following the Listing Date",
+      "page": 16,
+      "quote": "Excluding the Offer Shares to be allocated to the cornerstone investor that are subject to a lock-up period of six months following the Listing Date",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 21482000,
+      "page": 16,
+      "quote": "the Company’s H Shares to be counted towards the free float upon Listing will be 21,482,000 Shares",
+      "confidence": "high"
+    }
+  }
+}

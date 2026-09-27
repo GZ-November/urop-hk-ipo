@@ -1,0 +1,118 @@
+{
+  "code": "3310.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3537,
+      "page": 5,
+      "quote": "Total 18,692,800 35.37% 4.37%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3559.68,
+      "page": 4,
+      "quote": "Subscription level 3,559.68 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 242444,
+      "page": 4,
+      "quote": "No. of valid applications 242,444",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 18816492800,
+      "page": 15,
+      "quote": "NO. OF H SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT / BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF H SHARES APPLIED FOR POOL A",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 3,559.68 times",
+      "page": 4,
+      "quote": "Subscription level 3,559.68 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$20.81; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "26/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：26/05/2026 22:05",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 52859200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 52,859,200 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5286000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 5,286,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 47573200,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering 47,573,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 7928800,
+      "page": 1,
+      "quote": "een fully exercised by the Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, June 18, 2026, in respect of an aggregate of 7,928,800 H Shares, ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (18/06/2026 19:13)"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (Claw-back triggered: N/A); the final number of Offer Shares under the Hong Kong Public Offering (5,286,000) equals the initial number, remaining at 10% of the Global Offering, with no reallocation from the International Offering.",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 5,286,000 Final no. of Offer Shares under the Hong Kong Public Offering 5,286,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1019070000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,019.07 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.8301,
+      "page": 22,
+      "quote": "representing approximately 83.01% of the enlarged share capital of the Company (assuming that the Over-allotment Option is not exercised) after the Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 427778950,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 427,778,950",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0799,
+      "page": null,
+      "quote": "公式：(col_CS 52,859,200 − col_CK 0.3537×col_CS) ÷ col_CZ 427,778,950 = 0.0799；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float excludes H Shares held by the Cornerstone Investors upon Listing (six-month lock-up); denominator = total issued shares upon Listing (before exercise of the Over-allotment Option) = 427,778,950.",
+      "page": 22,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 427778950,
+      "page": 3,
+      "quote": "公式：(col_CS 52,859,200 − col_CK 0.3537×col_CS) ÷ col_CZ 427,778,950 = 0.0799；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

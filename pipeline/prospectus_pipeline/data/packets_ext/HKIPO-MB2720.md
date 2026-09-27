@@ -1,0 +1,148 @@
+# 2720.HK 扩展 18 列抽取包
+
+公司：2720.HK Ridge Outdoor International Limited
+
+## 任务
+从招股书抽取下面 **18 个字段**，写成严格 JSON 到 `/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out_ext/extracted/HKIPO-MB2720.json`。
+主包（42 列）已完成并已入表，这里只补扩展列。
+
+## 字段清单
+| key | 列 | 表头 | 类型 | 缺失 | 提示 |
+|---|---|---|---|---|---|
+| col_BA | BA | Pre-IPO VC/PE backing (1=yes; 0=no) | integer | NaN | 是否引入 Pre-IPO VC/PE 投资者：1=有，0=无。看 HISTORY AND DEVELOPMENT — Pre-IPO Investments 与 SUBSTANTIAL SHAREHOLDERS 名单；只要有专业投资机构（VC/PE/产业基金）在上市前入股即 1。 |
+| col_BB | BB | Ultimate controller type | text | NA | 最终控制人类型（如：自然人 / 家族 / 国资委 / 地方政府 / 外资 / 无实际控制人）。取 SUBSTANTIAL SHAREHOLDERS 与 Controlling Shareholders 段的实际控制人身份表述。 |
+| col_BC | BC | Controller economic interest at listing (%) | number | NaN | 控制人上市时**经济权益**（持股比例），填小数。取 CONTROLLING/SUBSTANTIAL SHAREHOLDERS 表的持股百分比。 |
+| col_BD | BD | Controller voting rights at listing (%) | number | NaN | 控制人上市时**投票权**比例，填小数。有 WVR（同股不同权）时与持股不同，取投票权那一列；无 WVR 通常与 BC 相同。 |
+| col_BE | BE | Interest-bearing debt at year-1 end | number | NaN | year-1 期末**有息负债**（借款、债券、租赁负债等带息项目）。取 INDEBTEDNESS 段或借款附注的期末余额；不含应付账款等无息负债。 期末余额，不年化（手册：仅 year-1 销售/税前利润/净利润年化） |
+| col_BF | BF | Technology commercialization stage | text | NA | 技术商业化阶段（如：研发阶段 / 小批量试产 / 商业化初期 / 规模商业化 / 已量产）。按 BUSINESS 与业务摘要里的产品状态表述填，不要按行业推测。 |
+| col_BG | BG | Debt repayment (% of planned net IPO proceeds) | number | NaN | 计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。 |
+| col_BI | BI | Share class | text | NA | 股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。 |
+| col_BP | BP | Incorporation date | date | NA | 公司**注册成立日期**（dd/mm/yy）。取 HISTORY AND DEVELOPMENT 或公司资料段“incorporated/established on <date>”。 |
+| col_BR | BR | Principal place of business | text | NA | 主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。 |
+| col_BT | BT | Accounting standard | text | NA | 财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。 |
+| col_CC | CC | Subscription opening date | date | NA | 香港公开发售**开始认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。 |
+| col_CD | CD | Subscription closing date | date | NA | 香港公开发售**截止认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。 |
+| col_CE | CE | H shares after IPO (base; no options) | integer | NaN | 上市后 H 股股数（base，不含超额配售）。取股本表里 H 股合计或“H Shares to be issued pursuant to the Global Offering”。 股本余额，不年化 |
+| col_CF | CF | Gross profit in year-1 | number | NaN | year-1 **毛利**（用与 col_V 相同的披露货币基本单位）。取损益表的 Gross profit。 **不年化**——手册明确仅 year-1 销售/税前利润/净利润年化，毛利不在其列；直接填 year-1 期间披露值 |
+| col_CG | CG | Capital expenditure in year-1 | number | NaN | year-1 **资本开支**。取现金流量表“购建物业、厂房及设备”或 CAPITAL EXPENDITURE 段。 **不年化**——属原始期间流量，与 AU/AW/AX 同口径；直接填 year-1 期间披露值 |
+| col_CH | CH | Audit opinion (year-1) | text | NA | year-1 **审计意见类型**（如 无保留意见 / Unqualified opinion / Qualified opinion）。取会计师报告的审计意见段。 |
+| col_CI | CI | Listing expenses (HK$) | number | NaN | **总上市费用**（HK$ 基本单位，含承销佣金与其他开支）。取 UNDERWRITING COMMISSIONS AND LISTING EXPENSES 段的合计。 |
+
+## 已确认的结论（直接用，不要推翻）
+- 股本结构（**已确认，不要改**）：L=128205000 M=28205000 N=100000000 O=100000000 P=0 Q=28205000 R=25384500 S=2820500
+- 财务期间（**已确认**）：year-1 期末 = 31/08/25；币种 = RMB；year-1 净利 = 84361500
+- 行业分类（港交所官方）：232030 玩具及消閒用品
+- 基石投资者：有
+
+## 手册规则
+- 金额换算成**基本货币单位**（披露币种见上面的 col_V）；百分比填**小数**。
+- `col_BE` 只算**有息负债**（借款/债券/租赁负债），不含应付账款。
+- `col_BG` = 用于偿债的金额 ÷ 计划净募资额；没有该用途填 `0`。
+- `col_BF` 按招股书原文的产品阶段表述，**不要**按行业推测。
+- `col_BA` 只要上市前有专业投资机构（VC/PE/产业基金）入股即 `1`，否则 `0`。
+- `col_CD`/`col_CC` 取 EXPECTED TIMETABLE 的认购起止日。
+- `col_CI` 是**总上市费用**（含承销佣金与其他开支），用 HK$ 基本单位。
+- 不确定就填 NaN/NA 并在 quote 说明，**不要猜**。
+
+## 输出契约（机器校验，违反即失败）
+顶层**只能**有 `code` 和 `fields`：
+```json
+{"code":"2720.HK","fields":{"col_BA":{"value":1,"page":33,"quote":"<=200字符连续原文","confidence":"high"}}}
+```
+- `fields` 必须**恰好**包含下面 18 个 key，不多不少。
+- 每个 entry 只能有 value / page / quote / confidence。
+- `page` 整数；缺失写 null。`quote` ≤200 字符且必须是该页**连续**原文。
+- 数值缺失写字符串 `"NaN"`；文本/日期缺失写字符串 `"NA"`。
+- 日期一律 `dd/mm/yy`（如 `22/12/25`）。
+- **不要**动其它 42 列——它们已完成。
+
+## 允许的工具（只有这两个，禁止 ls/find/读源码/读别家 JSON/调 skill）
+```bash
+python3 prospectus_pipeline/tools_search.py pages  2720.HK 33,314,416
+python3 prospectus_pipeline/tools_search.py search 2720.HK "正则" --context 3 --max 5
+```
+
+
+## 预计算候选原文（bundle 输出，¥0；可直接引用其中的页码）
+
+### col_BA
+  - p44: “PRC Legal Advisor” / Grandall Law Firm (Hangzhou), the PRC legal advisor to / our Company / “Pre-IPO Investment” / the Pre-IPO investment in our Company undertaken by / the Pre-IPO Investor prior to the Listing, details of which / are set out in the section headed “History, Reorganization
+  - p44: are set out in the section headed “History, Reorganization / and Corporate Structure” in this prospectus / “Pre-IPO Investor” / the investor who participated in our Pre-IPO Investments, / details of which are set out in the section headed / “History, Reorganization and Corporate Structure” in this / prospectus
+
+### col_BB
+  - p31: RELATIONSHIP WITH OUR CONTROLLING SHAREHOLDERS / Our Controlling Shareholders / As of the Latest Practicable Date, Mr. Yang was (i) indirectly interested in approximately / 88.06% of the total issued share capital of the Company through GreatCast, a company wholly
+  - p266: disclosed to us pursuant to the provisions of Divisions 2 and 3 of Part XV of the SFO, or, who / will be, directly or indirectly, interested in 10% or more of the issued Shares carrying rights / to vote at general meetings of any other member of our Group. / SUBSTANTIAL SHAREHOLDERS / – 257 –
+  - p199: Supplier D was established in 2001. The company specializes in the processing of aluminum alloy profiles. / 6. / Supplier E was established in 2022. The company is primarily engaged in the manufacturing of bags and fabric. / All transactions with Supplier E are conducted on an arm’s length basis. The ultimate beneficial owner of / Supplier E is our former employee who worked with us for many years
+
+### col_BC
+  - p31: RELATIONSHIP WITH OUR CONTROLLING SHAREHOLDERS / Our Controlling Shareholders / As of the Latest Practicable Date, Mr. Yang was (i) indirectly interested in approximately / 88.06% of the total issued share capital of the Company through GreatCast, a company wholly
+  - p266: disclosed to us pursuant to the provisions of Divisions 2 and 3 of Part XV of the SFO, or, who / will be, directly or indirectly, interested in 10% or more of the issued Shares carrying rights / to vote at general meetings of any other member of our Group. / SUBSTANTIAL SHAREHOLDERS / – 257 –
+
+### col_BD
+  - p31: RELATIONSHIP WITH OUR CONTROLLING SHAREHOLDERS / Our Controlling Shareholders / As of the Latest Practicable Date, Mr. Yang was (i) indirectly interested in approximately / 88.06% of the total issued share capital of the Company through GreatCast, a company wholly
+  - p465: 2.7 / Voting rights / Subject to any special rights, privileges or restrictions as to voting for the time being / attached to any class or classes of shares, at any general meeting on a poll every member / (except the holder of treasury share(s) (as defined under the Companies Act, the “Treasury
+  - p266: disclosed to us pursuant to the provisions of Divisions 2 and 3 of Part XV of the SFO, or, who / will be, directly or indirectly, interested in 10% or more of the issued Shares carrying rights / to vote at general meetings of any other member of our Group. / SUBSTANTIAL SHAREHOLDERS / – 257 –
+
+### col_BE
+  - p24: other payables, see “Financial Information — Discussion of Selected Items from the / Consolidated Statements of Financial Position — Trade and other Payables;” and (ii) the / increase in cash and cash equivalents, partially offset by the increase in bank loans, see / “Financial Information — Indebtedness — Bank Loans.” / We had net current liabilities of RMB95.2 million as of December 31, 2024 com
+  - p336: expected, we will adjust our allocation of the net proceeds for the above purposes on a pro rata / basis. / To the extent that the net proceeds from the Global Offering are not immediately used for / the above purposes, we will only deposit such net proceeds into short-term interest-bearing / accounts at licensed commercial banks and/or other authorized financial institutions (as / defined under t
+  - p314: assets of RMB3.2 million. / Cash Flows used in Financing Activities / In the eight months ended August 31, 2025, our net cash flows used in financing activities / was RMB27.3 million, which was primarily attributable to (i) repayment of borrowings from / related parties of RMB150.0 million; and (ii) repayment of bank loans of RMB50.0 million, / partially offset by proceeds from bank loans of RMB18
+
+### col_BF
+  - p55: to / subcontractors. Any disruption to our supply chain could impair our ability to manufacture / products as scheduled. Moreover, we expect our demand for raw materials and services to / increase as we expand our business scale and commercialize our product candidates, and we / cannot guarantee that current suppliers will have the capacity to meet our standards and / demand in the future. / Durin
+  - p177: practicality and implementability. We then produce initial prototypes, which / undergo rigorous inspection by our quality control department. Typically, these / prototypes go through two to three iterations of inspection and refinement to / optimize the design for mass production. Throughout this phase, we adhere to strict / quality control guidelines to ensure all prototypes meet our internal sta
+  - p77: of other companies with business operations located mainly in Chinese Mainland that have / listed their securities in Hong Kong may affect the volatility in the price of and trading volumes / for our Shares. A number of Chinese Mainland-based companies have listed their securities, / and some are in the process of preparing for listing their securities, in Hong Kong. The share / price of some of t
+
+### col_BG
+  - p34: USE OF PROCEEDS / After deducting the underwriting fees and commissions and other estimated offering / expenses payable by us in connection with the Global Offering, and assuming an Offer Price / of HK$11.75 per Share (being the mid-point of the indicative Offer Price range of HK$11.25
+  - p314: assets of RMB3.2 million. / Cash Flows used in Financing Activities / In the eight months ended August 31, 2025, our net cash flows used in financing activities / was RMB27.3 million, which was primarily attributable to (i) repayment of borrowings from / related parties of RMB150.0 million; and (ii) repayment of bank loans of RMB50.0 million, / partially offset by proceeds from bank loans of RMB18
+  - p34: • / approximately 10.0% of the net proceeds, or HK$27.2 million, is expected to be / used for working capital and general corporate uses. / See “Future Plans and Use of Proceeds.” / LISTING EXPENSES / Listing expenses consist of professional fees, underwriting commissions and other fees / incurred in connection with the Global Offering. We expect to incur total listing expenses of
+
+### col_BI
+  - p345: (a), (b) and (c) above, / in each case, whether any of the foregoing transactions is to be settled by delivery of Shares / or other securities of the Company as applicable, or, in cash or otherwise (whether or not the / issue of such Shares or other shares or securities will be completed within the First Six-Month / Period). The Company further agrees that, in the event the Company enters into any
+
+### col_BP
+  - p1: Joint Bookrunners and Joint Lead Managers / 樂欣戶外國際有限公司 / Stock Code : 2720 / (Incorporated in the Cayman Islands with limited liability) / GLOBAL OFFERING / Ridge Outdoor International Limited / (in alphabetical order)
+
+### col_BR
+  - p16: moderated with the rise of alternative entertainment options, while consumer interest in our / products remained strong, compared to the level before the public health incidents. / During the Track Record Period, we primarily sold our products to customers with their / principal place of business in Europe, Chinese Mainland and North America. The following / table sets forth our revenue breakdown 
+  - p98: Registered Office / Floor 4, Willow House / Cricket Square / Grand Cayman KY1-9010
+  - p98: Cricket Square / Grand Cayman KY1-9010 / Cayman Islands / Head Office and Principal Place of / Business in the PRC / 8th Floor, Building 1 / Lok Fu Creative Center
+
+### col_BT
+  - p270: You should read the following discussion and analysis with our audited consolidated / financial information, including the notes thereto, included in Appendix I to this / Prospectus. Our consolidated financial information has been prepared in accordance / with IFRS Accounting Standards. / The following discussion and analysis contain forward-looking statements that / reflect our current views with
+  - p73: As our Company is a holding company, we rely on dividends from our subsidiaries for / cash requirements, including servicing any debts our Group may incur. Under the current PRC / law, dividends may be paid only out of our PRC subsidiaries’ accumulated after-tax profits, if / any, determined in accordance with PRC accounting standards and regulations. Moreover, each / of our PRC subsidiaries is re
+  - p274: the eight months ended August 31, 2024 and 2025, respectively. See Note 26(d) of Appendix / I to this Prospectus. We have continually monitored and managed our financial risks related to / the fluctuation in foreign exchange rates. / MATERIAL ACCOUNTING POLICIES AND ESTIMATES / We have identified certain accounting policies that are significant to the preparation of / our consolidated financial st
+
+### col_CC
+  - p5: If there is any change in the following expected timetable of the Hong Kong Public / Offering, we will issue an announcement in Hong Kong to be published on the websites of / the Stock Exchange at www.hkexnews.hk and our Company at www.ridgeoutdoor.com. / If there is any change in the following expected timetable of the Hong Kong Public
+  - p5: Offering, the Company will issue an announcement in Hong Kong to be published on the / Company’s website at www.ridgeoutdoor.com and the website of the Stock Exchange at / www.hkexnews.hk. / Hong Kong Public Offering commences / . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Saturday, / January 31, 2026 / Latest time to complete electronic applications under
+
+### col_CD
+  - p5: If there is any change in the following expected timetable of the Hong Kong Public / Offering, we will issue an announcement in Hong Kong to be published on the websites of / the Stock Exchange at www.hkexnews.hk and our Company at www.ridgeoutdoor.com. / If there is any change in the following expected timetable of the Hong Kong Public
+
+### col_CE
+（锚点无命中，需要自己 search）
+
+### col_CF
+  - p11: strengthening our market position. In the fishing-related equipment manufacturing industry in / China, our market share has steadily increased from 23.4% in 2022 to 28.4% in 2024, / solidifying our position as a market leader with continued growth potential. During the Track / Record Period, our gross profit margin increased from 23.2% in 2022 to 26.6% in 2024, and / further increased to 27.7% in 
+  - p11: strengthening our market position. In the fishing-related equipment manufacturing industry in / China, our market share has steadily increased from 23.4% in 2022 to 28.4% in 2024, / solidifying our position as a market leader with continued growth potential. During the Track / Record Period, our gross profit margin increased from 23.2% in 2022 to 26.6% in 2024, and / further increased to 27.7% in 
+
+### col_CG
+  - p52: • / our business operations and prospects; / • / our capital expenditure plans; / • / the actions and developments of our competitors; / •
+  - p52: • / our business operations and prospects; / • / our capital expenditure plans; / • / the actions and developments of our competitors; / •
+  - p314: In 2024, our net cash flows used in investing activities was RMB8.5 million, which was / primarily attributable to the payment for the settlement of derivative financial instruments of / RMB5.4 million, payment for the purchase of property, plant and equipment and intangible / assets of RMB2.3 million and advance payments to related parties of RMB1.1 million. / In 2023, our net cash flows used in 
+
+### col_CH
+  - p382: We believe that the evidence we have obtained is sufficient and appropriate to provide a / basis for our opinion. / Opinion / In our opinion, the Historical Financial Information gives, for the purpose of the / accountants’ report, a true and fair view of the Company’s financial position as at 31 December / 2024 and 31 August 2025 and the Group’s financial position as at 31 December 2022, 2023 and
+  - p29: Save as disclosed above there had been no material adverse change in our financial or / trading position or prospects since August 31, 2025, being the end date of the periods reported / in Appendix I to this Prospectus, and there had been no event since August 31, 2025 that would / materially affect the information as set out in the Accountants’ Report in Appendix I to this / Prospectus. / As advi
+
+### col_CI
+  - p34: approximately 10.0% of the net proceeds, or HK$27.2 million, is expected to be / used for working capital and general corporate uses. / See “Future Plans and Use of Proceeds.” / LISTING EXPENSES / Listing expenses consist of professional fees, underwriting commissions and other fees / incurred in connection with the Global Offering. We expect to incur total listing expenses of / approximately RMB5
+  - p34: approximately 10.0% of the net proceeds, or HK$27.2 million, is expected to be / used for working capital and general corporate uses. / See “Future Plans and Use of Proceeds.” / LISTING EXPENSES / Listing expenses consist of professional fees, underwriting commissions and other fees / incurred in connection with the Global Offering. We expect to incur total listing expenses of / approximately RMB5
+
+
+## 自检
+写完后运行：
+`python3 prospectus_pipeline/run.py validate_ext --only 2720.HK`
+有 ERROR 必须回原文修正。

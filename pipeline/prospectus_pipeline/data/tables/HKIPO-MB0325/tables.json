@@ -1,0 +1,122 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 264,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "500,000,000 Total",
+          "50,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| 500,000,000 Total     | 50,000           | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 265,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "500,000,000 Ordinary Shares of nominal or par value of",
+          "50,000",
+          "–"
+        ],
+        [
+          "500,000,000 Total",
+          "50,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                  | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------------------------ | ---------------- | -------------------------- |\n| 500,000,000 Ordinary Shares of nominal or par value of | 50,000           | –                          |\n| 500,000,000 Total                                      | 50,000           | –                          |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 34,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "be approximately HK$105.2 million (including underwriting commission) accounting",
+          "for 7.5"
+        ],
+        [
+          "commissions and fees), approximately",
+          "HK$33.4 million"
+        ],
+        [
+          "Record Period, we incurred RMB23.7 million of listing expenses, among",
+          "which,"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                 | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                          | fees,                   |\n| be approximately HK$105.2 million (including underwriting commission) accounting | for 7.5                 |\n| commissions and fees), approximately                                             | HK$33.4 million         |\n| Record Period, we incurred RMB23.7 million of listing expenses, among            | which,                  |\n| The listing expenses above are the latest practicable estimate for reference     | only,                   |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 391,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "5",
+          "329,772",
+          "325,574",
+          "876,686"
+        ],
+        [
+          "Gross profit",
+          "123,401",
+          "123,419",
+          "414,922",
+          "136,208"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 5       | 329,772 | 325,574 | 876,686 |\n| Gross profit     | 123,401 | 123,419 | 414,922 | 136,208 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "code": "1392.HK",
+  "fields": {
+    "col_L": {
+      "value": 774208420,
+      "page": 204,
+      "quote": "H Shares to be issued under the Global Offering . . . 85,162,500 11.00% Total . . . 774,208,420 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 85162500,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 85,162,500 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 689045920,
+      "page": 111,
+      "quote": "which is RMB8,613,074, was divided into 689,045,920 Shares with par value of RMB0.0125 per Share, which was subscribed by all our then Shareholders",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 689045920,
+      "page": 111,
+      "quote": "and the number of our issued Shares will be 689,045,920, without taking into consideration the new Shares to be issued for the Global Offering",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 121,
+      "quote": "85,162,500 H Shares, which are to be newly issued under the Global Offering (representing 11.00% of our total issued Shares immediately upon Listing)",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 85162500,
+      "page": 121,
+      "quote": "85,162,500 H Shares, which are to be newly issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 76646000,
+      "page": 2,
+      "quote": "Number of International Placing Shares : 76,646,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 8516500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 8,516,500 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 85,162,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 756143940,
+      "page": 123,
+      "quote": "Total . . . 8,613,074 100.00% 756,143,940 100.00% 18,064,480 100.00% 774,208,420 100.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 7.2,
+      "page": 2,
+      "quote": "Offer Price : HK$7.20 per H Share plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 7.2,
+      "page": 2,
+      "quote": "Offer Price : HK$7.20 per H Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 14,
+      "quote": "FY2023 FY2024 FY2025 RMB'000 RMB'000 RMB'000",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 260961000,
+      "page": 17,
+      "quote": "Total non-current assets . . . 87,053 103,017 153,166 Total current assets . . . 173,908 302,225 570,726",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 405242000,
+      "page": 17,
+      "quote": "Total non-current assets . . . 87,053 103,017 153,166 Total current assets . . . 173,908 302,225 570,726",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 723892000,
+      "page": 17,
+      "quote": "Total non-current assets . . . 87,053 103,017 153,166 Total current assets . . . 173,908 302,225 570,726",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 161433000,
+      "page": 17,
+      "quote": "Net assets . . . 161,433 234,377 362,196",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 234377000,
+      "page": 17,
+      "quote": "Net assets . . . 161,433 234,377 362,196",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 362196000,
+      "page": 17,
+      "quote": "Net assets . . . 161,433 234,377 362,196",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 99528000,
+      "page": 17,
+      "quote": "Total non-current liabilities . . . 14,512 7,907 55,738 Total current liabilities . . . 85,016 162,958 305,958",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 170865000,
+      "page": 17,
+      "quote": "Total non-current liabilities . . . 14,512 7,907 55,738 Total current liabilities . . . 85,016 162,958 305,958",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 361696000,
+      "page": 17,
+      "quote": "Total non-current liabilities . . . 14,512 7,907 55,738 Total current liabilities . . . 85,016 162,958 305,958",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 117063000,
+      "page": 14,
+      "quote": "Revenue . . . 117,063 522,568 668,519",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 522568000,
+      "page": 14,
+      "quote": "Revenue . . . 117,063 522,568 668,519",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 668519000,
+      "page": 14,
+      "quote": "Revenue . . . 117,063 522,568 668,519",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -22854000,
+      "page": 14,
+      "quote": "(Loss)/Profit before income tax . . . (22,854) 42,459 27,491",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 42459000,
+      "page": 14,
+      "quote": "(Loss)/Profit before income tax . . . (22,854) 42,459 27,491",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 27491000,
+      "page": 14,
+      "quote": "(Loss)/Profit before income tax . . . (22,854) 42,459 27,491",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -18413000,
+      "page": 14,
+      "quote": "(Loss)/Profit and total comprehensive (loss)/income for the year . . . (18,413) 40,412 29,354",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 40412000,
+      "page": 14,
+      "quote": "(Loss)/Profit and total comprehensive (loss)/income for the year . . . (18,413) 40,412 29,354",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 29354000,
+      "page": 14,
+      "quote": "(Loss)/Profit and total comprehensive (loss)/income for the year . . . (18,413) 40,412 29,354",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 213682000,
+      "page": 243,
+      "quote": "23,125 46,650 213,682 324,056",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 207,
+      "quote": "Our historical financial information has been prepared in accordance with all applicable IFRS issued by the International Accounting Standards Board.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 149392000,
+      "page": 14,
+      "quote": "Gross profit . . . 14,307 98,169 149,392",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 81476000,
+      "page": 244,
+      "quote": "29,519 36,493 81,476",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 285,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position as at 31 December",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.04,
+      "page": 260,
+      "quote": "an underwriting commission of 4% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.04,
+      "page": 260,
+      "quote": "an underwriting commission of 4% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "Full-text search finds no Over-allotment Option disclosure for this offering (only unrelated PBOC/SAFE wording on pp.94/359), i.e. a confirmed absence. Recorded as missing because validate requires a page/quote for any non-missing value, and no disclosable sentence exists."
+    },
+    "col_CI": {
+      "value": 76300000,
+      "page": 261,
+      "quote": "professional fees and printing and all other expenses relating to the Global Offering are estimated to be approximately HK$76.3 million",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Multispectral AI technology enterprise (multispectral AI modules, perception terminals and large model services)",
+      "page": 125,
+      "quote": "We are a multispectral AI technology enterprise in China, specialising in the acquisition, processing, and analysis of optical information captured from multiple specific spectrum bands",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange - market capitalisation/revenue test under Rule 8.05(3)",
+      "page": 19,
+      "quote": "We applied on the basis that, among other things, we satisfy the market capitalisation/revenue test under Rule 8.05(3) of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialisation / revenue-generating stage",
+      "page": 207,
+      "quote": "the launch of the fire prediction multispectral AI products, and commercialisation of our Multispectral AI Large Model Services in 2024",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 20,
+      "quote": "approximately 50.0% of the net proceeds (approximately HK$268.4 million) is expected to be used to enhance our R&D capabilities and increase investment in product development",
+      "confidence": "high",
+      "note": "USE OF PROCEEDS (p.20): approximately 50.0% of net proceeds (HK$268.4m) for R&D and other purposes; full list on p.20/257-260 contains no debt-repayment tranche."
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 121,
+      "quote": "On the basis that there are no cornerstone investors, 85,162,500 H Shares, which are to be newly issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 17,
+      "quote": "As at 31 December 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -129915000,
+      "page": 241,
+      "quote": "Net cash generated from/(used in) operating activities . . . 69,571 (6,491) (129,915)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 65556000,
+      "page": 241,
+      "quote": "Cash and cash equivalents at the end of the year . . . 37,115 56,705 65,556",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 50793000,
+      "page": 14,
+      "quote": "Research and development expenses . . . (11,084) (25,151) (50,793)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 54477000,
+      "page": 314,
+      "quote": "3,995 54,477 58,472",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.468,
+      "page": 12,
+      "quote": "our revenue from the five largest customers in each year accounted for 38.3%, 59.0% and 46.8% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "深圳海清智元科技股份有限公司",
+      "page": 1,
+      "quote": "Shenzhen HQVT Technology Co., Ltd. 深圳海清智元科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 112,
+      "quote": "The following table summarises the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors:",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 116,
+      "quote": "Kaiying No. 8 is registered venture capital fund established as a limited partnership in the PRC on 15 February 2015.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 116,
+      "quote": "Zheshang Capital, is an Independent Third Party and a private equity and venture capital fund manager established in the PRC.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 116,
+      "quote": "Kaiying No. 8 is registered venture capital fund established as a limited partnership in the PRC on 15 February 2015.",
+      "confidence": "low"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 117,
+      "quote": "which in turn is controlled by Shenzhen Investment Holdings Co., Ltd.* (深圳市投資控股有限公司), a municipal state-owned assets",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Kaiying No. 8; Kaiying No. 9; Kaiying No. 10; Taolue New Energy; Taolue Xinwang; Jinlan Sunshine; Gaoxintou; Chengdu Zhongxiaodan; Rencai No. 2; Shenrong Ruihe; Xiaohe Investment LP; Fuquan No. 1; Panhui Investment; Kezhihua; Zhide No. 9; Mr. Zhu Zhenkui",
+      "page": 112,
+      "quote": "The following table summarises the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors:",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.3174,
+      "page": 116,
+      "quote": "As at the date of this prospectus, Langke Investment, together with Kaiying No. 8, Kaiying No. 9 and Kaiying No. 10 (collectively, “Langke Group”), collectively held approximately 6.59%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A (30 November 2020)",
+      "page": 112,
+      "quote": "30 November 2020",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 5.53,
+      "page": 112,
+      "quote": "30 November 2020",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 30/11/2020 to prospectus date 11/06/2026 = 2,019 days / 365.25 = 5.53 years."
+    },
+    "col_BB": {
+      "value": "Founder / natural person (Mr. Zhou Bo)",
+      "page": 105,
+      "quote": "Our Company was established as a limited liability company under the laws of the PRC on 3 April 2013, with Mr. Zhou as our founder and ultimate beneficial owner.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.435,
+      "page": 21,
+      "quote": "the group of our Controlling Shareholders will be, in aggregate, entitled to control the exercise of approximately 43.50% of the voting rights",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.435,
+      "page": 21,
+      "quote": "the group of our Controlling Shareholders will be, in aggregate, entitled to control the exercise of approximately 43.50% of the voting rights",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "03/04/2013",
+      "page": 105,
+      "quote": "Our Company was established as a limited liability company under the laws of the PRC on 3 April 2013",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "3/F, Building 8, Taihua Wutong Industrial Park, Gushu Development Zone, Xixiang Street, Bao'an District, Shenzhen, PRC",
+      "page": 71,
+      "quote": "Registered office, headquarters and principal place of business in the PRC 3/F, Building 8 Taihua Wutong Industrial Park Gushu Development Zone Xixiang Street, Bao'an District Shenzhen PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "11/06/26",
+      "page": 4,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Thursday, 11 June",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "16/06/26",
+      "page": 4,
+      "quote": "Application lists close . . . 12:00 noon on Tuesday, 16 June",
+      "confidence": "high"
+    }
+  }
+}

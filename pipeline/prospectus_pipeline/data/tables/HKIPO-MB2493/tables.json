@@ -1,0 +1,315 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 268,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue",
+          "399,600,000",
+          "89.45%"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "47,130,200",
+          "10.55%"
+        ],
+        [
+          "Total",
+          "446,730,200",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue                               | 399,600,000      | 89.45%                     |\n| H Shares to be issued under the Global Offering | 47,130,200       | 10.55%                     |\n| Total                                           | 446,730,200      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 265,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Junshi Hong Kong",
+          "20.0",
+          "5,668,200",
+          "12.03%"
+        ],
+        [
+          "Sanjin International",
+          "15.0",
+          "4,251,200",
+          "9.02%"
+        ],
+        [
+          "Guohui HK",
+          "7.0",
+          "1,983,800",
+          "4.21%"
+        ],
+        [
+          "CHIL",
+          "7.0",
+          "1,983,800",
+          "4.21%"
+        ],
+        [
+          "WuXi Biologics Venture",
+          "3.0",
+          "850,200",
+          "1.80%"
+        ],
+        [
+          "Zhonghe Capital",
+          "1.0",
+          "283,400",
+          "0.60%"
+        ],
+        [
+          "Total",
+          "53.0",
+          "15,020,600",
+          "31.87%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor   | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ---------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Junshi Hong Kong       | 20.0                  | 5,668,200              | 12.03%                        |\n| Sanjin International   | 15.0                  | 4,251,200              | 9.02%                         |\n| Guohui HK              | 7.0                   | 1,983,800              | 4.21%                         |\n| CHIL                   | 7.0                   | 1,983,800              | 4.21%                         |\n| WuXi Biologics Venture | 3.0                   | 850,200                | 1.80%                         |\n| Zhonghe Capital        | 1.0                   | 283,400                | 0.60%                         |\n| Total                  | 53.0                  | 15,020,600             | 31.87%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 266,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Junshi Hong Kong",
+          "20.0",
+          "5,369,000",
+          "11.39%"
+        ],
+        [
+          "Sanjin International",
+          "15.0",
+          "4,026,800",
+          "8.54%"
+        ],
+        [
+          "Guohui HK",
+          "7.0",
+          "1,879,000",
+          "3.99%"
+        ],
+        [
+          "CHIL",
+          "7.0",
+          "1,879,000",
+          "3.99%"
+        ],
+        [
+          "WuXi Biologics Venture",
+          "3.0",
+          "805,200",
+          "1.71%"
+        ],
+        [
+          "Zhonghe Capital",
+          "1.0",
+          "268,400",
+          "0.57%"
+        ],
+        [
+          "Total",
+          "53.0",
+          "14,227,400",
+          "30.19%"
+        ],
+        [
+          "Junshi Hong Kong",
+          "20.0",
+          "5,101,600",
+          "10.82%"
+        ],
+        [
+          "Sanjin International",
+          "15.0",
+          "3,826,200",
+          "8.12%"
+        ],
+        [
+          "Guohui HK",
+          "7.0",
+          "1,785,400",
+          "3.79%"
+        ],
+        [
+          "CHIL",
+          "7.0",
+          "1,785,400",
+          "3.79%"
+        ],
+        [
+          "WuXi Biologics Venture",
+          "3.0",
+          "765,200",
+          "1.62%"
+        ],
+        [
+          "Zhonghe Capital",
+          "1.0",
+          "255,000",
+          "0.54%"
+        ],
+        [
+          "Total",
+          "53.0",
+          "13,518,800",
+          "28.68%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor   | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ---------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Junshi Hong Kong       | 20.0                  | 5,369,000              | 11.39%                        |\n| Sanjin International   | 15.0                  | 4,026,800              | 8.54%                         |\n| Guohui HK              | 7.0                   | 1,879,000              | 3.99%                         |\n| CHIL                   | 7.0                   | 1,879,000              | 3.99%                         |\n| WuXi Biologics Venture | 3.0                   | 805,200                | 1.71%                         |\n| Zhonghe Capital        | 1.0                   | 268,400                | 0.57%                         |\n| Total                  | 53.0                  | 14,227,400             | 30.19%                        |\n| Junshi Hong Kong       | 20.0                  | 5,101,600              | 10.82%                        |\n| Sanjin International   | 15.0                  | 3,826,200              | 8.12%                         |\n| Guohui HK              | 7.0                   | 1,785,400              | 3.79%                         |\n| CHIL                   | 7.0                   | 1,785,400              | 3.79%                         |\n| WuXi Biologics Venture | 3.0                   | 765,200                | 1.62%                         |\n| Zhonghe Capital        | 1.0                   | 255,000                | 0.54%                         |\n| Total                  | 53.0                  | 13,518,800             | 28.68%                        |",
+      "metadata": {
+        "investor_count": 12
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                            | Rate / Amount Disclosed |\n| ------------------------------------------- | ----------------------- |\n| Our listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 276,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "share-based payments, (vi) listing expenses and (vii)",
+          "others."
+        ]
+      ],
+      "markdown": "| Item Description                                      | Rate / Amount Disclosed |\n| ----------------------------------------------------- | ----------------------- |\n| share-based payments, (vi) listing expenses and (vii) | others.                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "199,622",
+          "658,694"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1 |\n| ---------------- | ------- | ------- | ------ |\n| Revenue          | 199,622 | 658,694 |        |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 272,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "199,622",
+          "658,694"
+        ],
+        [
+          "Gross profit",
+          "169,234",
+          "596,371"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1 |\n| ---------------- | ------- | ------- | ------ |\n| Revenue          | 199,622 | 658,694 |        |\n| Gross profit     | 169,234 | 596,371 |        |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 326,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "199,622",
+          "658,694"
+        ],
+        [
+          "Gross profit",
+          "169,234",
+          "596,371"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1 |\n| ---------------- | ------- | ------- | ------ |\n| Revenue          | 199,622 | 658,694 |        |\n| Gross profit     | 169,234 | 596,371 |        |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

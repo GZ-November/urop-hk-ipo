@@ -1,0 +1,62 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 396,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Unlisted Shares in issue",
+          "100,000,000",
+          "75.0%"
+        ],
+        [
+          "the Global Offering",
+          "33,333,400",
+          "25.0%"
+        ],
+        [
+          "Total",
+          "133,333,400",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares    | Number of Shares | Approximate Percentage (%) |\n| ------------------------ | ---------------- | -------------------------- |\n| Unlisted Shares in issue | 100,000,000      | 75.0%                      |\n| the Global Offering      | 33,333,400       | 25.0%                      |\n| Total                    | 133,333,400      | 100.0%                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "– Listing expenses(",
+          "Note 2"
+        ],
+        [
+          "(2) Listing expenses are adjusted for as they were incurred for the purpose of the",
+          "Listing."
+        ]
+      ],
+      "markdown": "| Item Description                                                                   | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------------- | ----------------------- |\n| – Listing expenses(                                                                | Note 2                  |\n| (2) Listing expenses are adjusted for as they were incurred for the purpose of the | Listing.                |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": []
+}

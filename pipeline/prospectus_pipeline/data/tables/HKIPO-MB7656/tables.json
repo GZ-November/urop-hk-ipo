@@ -1,0 +1,145 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 228,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Shares",
+          "31,565,289",
+          "10.34"
+        ],
+        [
+          "H Shares converted from Domestic Shares",
+          "245,640,616",
+          "80.46"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "28,087,000",
+          "9.20"
+        ],
+        [
+          "Total",
+          "305,292,905",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| Domestic Shares                                 | 31,565,289       | 10.34                      |\n| H Shares converted from Domestic Shares         | 245,640,616      | 80.46                      |\n| H Shares to be issued under the Global Offering | 28,087,000       | 9.20                       |\n| Total                                           | 305,292,905      | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 15,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "one-off listing expenses related to our Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                               | Rate / Amount Disclosed |\n| ---------------------------------------------- | ----------------------- |\n| one-off listing expenses related to our Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 16,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "increased listing expenses of",
+          "RMB14.1 million"
+        ]
+      ],
+      "markdown": "| Item Description              | Rate / Amount Disclosed |\n| ----------------------------- | ----------------------- |\n| increased listing expenses of | RMB14.1 million         |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "242,375",
+          "100.0",
+          "395,182",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "98,824",
+          "40.8",
+          "157,233",
+          "39.8"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 242,375 | 100.0  | 395,182 | 100.0 |\n| Gross profit     | 98,824  | 40.8   | 157,233 | 39.8  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 236,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "REVENUE",
+          "242,375",
+          "100.0",
+          "395,182",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "98,824",
+          "40.8",
+          "157,233",
+          "39.8"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| REVENUE          | 242,375 | 100.0  | 395,182 | 100.0 |\n| Gross profit     | 98,824  | 40.8   | 157,233 | 39.8  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "code": "2632.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1533,
+      "page": 5,
+      "quote": "Total 2,487,500 15.33% 2.02%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 68.89,
+      "page": 4,
+      "quote": "Subscription level 68.89 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 31183,
+      "page": 4,
+      "quote": "No. of valid applications 31,183",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 111790150,
+      "page": 10,
+      "quote": "Pool A Number of H Shares applied for Number. of valid applications Basis of allocation/ballot",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 68.89 times",
+      "page": 4,
+      "quote": "Subscription level 68.89 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "20/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (on behalf of the Underwriters) and our Company on the Pric",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "23/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**23/03/2026 22:27**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 16226500,
+      "page": 3,
+      "quote": "Number of Offer Shares 16,226,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1622650,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 1,622,650",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 14603850,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 14,603,850",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-03-24 起 45 天内共 8 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-05-08 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Reallocation: No; No. of Offer Shares reallocated from the International Offering (reallocation): 0",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (reallocation) 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 649670000,
+      "page": 3,
+      "quote": "Gross proceeds (Note) HK$717.21 million Less: Estimated listing expenses payable based on Offer Price HK$67.54 million Net proceeds HK$649.67 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.6121,
+      "page": 15,
+      "quote": "the public float of our Company will be approximately 61.21% upon the Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 123395266,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 123,395,266",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1113,
+      "page": 15,
+      "quote": "the H Shares held by the Cornerstone Investors and existing Shareholders of the Company upon the Listing shall not be counted towards the free float",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing (123,395,266 Shares); excluded from free float: H Shares held by the Cornerstone Investors (six-month lock-up) and by existing Shareholders (12-month lock-up under applicable PRC laws).",
+      "page": 15,
+      "quote": "The Cornerstone Investors have agreed to a lock-up period of six months following the Listing Date",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 123395266,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 123,395,266",
+      "confidence": "medium"
+    }
+  }
+}

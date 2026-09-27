@@ -1,0 +1,426 @@
+{
+  "code": "2720.HK",
+  "fields": {
+    "col_L": {
+      "value": 128205000,
+      "page": 267,
+      "quote": "Shares to be issued under the Global Offering 28,205,000 14,102.5 22.00% Total 128,205,000",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 28205000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 28,205,000 Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 100000000,
+      "page": 267,
+      "quote": "Shares in issue immediately before the Global Offering 100,000,000 50,000 78.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 100000000,
+      "page": 267,
+      "quote": "Shares in issue immediately before the Global Offering 100,000,000 50,000 78.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 267,
+      "quote": "Shares to be issued under the Global Offering 28,205,000 14,102.5 22.00% Total 128,205,000",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 28205000,
+      "page": 267,
+      "quote": "Shares to be issued under the Global Offering 28,205,000 14,102.5 22.00%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 25384500,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 25,384,500 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2820500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 2,820,500 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 12.25,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$12.25 per Offer Share plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 11.25,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$12.25 and is currently expected to be not less than HK$11.25 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 21,
+      "quote": "Year ended December 31, Eight months ended August 31, 2022 2023 2024 2024 2025 (RMB in thousands)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 241657000,
+      "page": 24,
+      "quote": "Total assets 333,581 241,657 340,334 378,887",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 340334000,
+      "page": 24,
+      "quote": "Total assets 333,581 241,657 340,334 378,887",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 378887000,
+      "page": 24,
+      "quote": "Total assets 333,581 241,657 340,334 378,887",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 136986000,
+      "page": 24,
+      "quote": "Net assets/(liabilities) 154,543 136,986 (45,305) 10,650",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -45305000,
+      "page": 24,
+      "quote": "Net assets/(liabilities) 154,543 136,986 (45,305) 10,650",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 10650000,
+      "page": 24,
+      "quote": "Net assets/(liabilities) 154,543 136,986 (45,305) 10,650",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 104671000,
+      "page": 24,
+      "quote": "Total liabilities 179,038 104,671 385,639 368,237",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 385639000,
+      "page": 24,
+      "quote": "Total liabilities 179,038 104,671 385,639 368,237",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 368237000,
+      "page": 24,
+      "quote": "Total liabilities 179,038 104,671 385,639 368,237",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 463251000,
+      "page": 21,
+      "quote": "Revenue 818,412 463,251 573,463 391,042 460,269",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 573463000,
+      "page": 21,
+      "quote": "Revenue 818,412 463,251 573,463 391,042 460,269",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 690403500,
+      "page": 21,
+      "quote": "Revenue 818,412 463,251 573,463 391,042 460,269",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 64678000,
+      "page": 21,
+      "quote": "Profit before taxation 152,408 64,678 79,005 61,213 74,619",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 79005000,
+      "page": 21,
+      "quote": "Profit before taxation 152,408 64,678 79,005 61,213 74,619",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 111928500,
+      "page": 21,
+      "quote": "Profit before taxation 152,408 64,678 79,005 61,213 74,619",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 49001000,
+      "page": 21,
+      "quote": "Profit for the year/period 113,851 49,001 59,405 46,709 56,241",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 59405000,
+      "page": 21,
+      "quote": "Profit for the year/period 113,851 49,001 59,405 46,709 56,241",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 84361500,
+      "page": 21,
+      "quote": "Profit for the year/period 113,851 49,001 59,405 46,709 56,241",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.04,
+      "page": 347,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 4% of the aggregate Offer Price of the Offer Shares offered under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.04,
+      "page": 347,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 4% of the aggregate Offer Price of the Offer Shares offered under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 43,
+      "quote": "Offer Shares the Hong Kong Offer Shares and the International Offer Shares, being the Shares of the Company",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Fishing-related equipment OEM/ODM manufacturing",
+      "page": 152,
+      "quote": "We ranked first in the global fishing-related equipment industry in 2024, with a market share of 23.1% in terms of revenue in 2024, according to Frost & Sullivan.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 42,
+      "quote": "the listing of the Shares on the Main Board",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/08/25",
+      "page": 24,
+      "quote": "As of December 31, As of August 31, 2022 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 68939000,
+      "page": 26,
+      "quote": "Net cash generated from operating activities 254,320 90,017 47,625 29,776 68,939",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 106353000,
+      "page": 26,
+      "quote": "Cash and cash equivalents at end of the period 14,135 26,644 65,673 28,031 106,353",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 3821000,
+      "page": 21,
+      "quote": "Research and development costs (523) (3,906) (3,538) (1,984) (3,821)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 420,
+      "quote": "INTANGIBLE ASSETS Patents Software Total RMB’000 RMB’000 RMB’000",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.549,
+      "page": 20,
+      "quote": "Revenue from our five largest customers in each year or period during the Track Record Period represented 57.5%, 57.2%, 57.7% and 54.9% of our total revenue in the same respective periods.",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "乐欣户外国际有限公司",
+      "page": 1,
+      "quote": "樂欣戶外國際有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Orbit Venture Capital Management Co., Limited; Huangshan Dejun Enterprise Management Co., Ltd.",
+      "page": 329,
+      "quote": "Orbit Venture Capital Management Co., Limited (“Orbit VC”) 80 6,530,500 23.15% 5.09% Huangshan Dejun Enterprise Management Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 147,
+      "quote": "Future Trade Network is a company incorporated under the laws of Hong Kong with limited liability and wholly owned by Mr. Drees Uwe, an Independent Third Party.",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 31,
+      "quote": "As of the Latest Practicable Date, Mr. Yang was (i) indirectly interested in approximately 88.06% of the total issued share capital of the Company through GreatCast, a company wholly owned by him",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.7392,
+      "page": 31,
+      "quote": "Controlling Shareholders will in aggregate hold approximately 73.92% of the total issued share capital of the Company.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.7392,
+      "page": 266,
+      "quote": "Interest in controlled corporation 94,770,000 94.77% 94,770,000 73.92%",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 231662000,
+      "page": 317,
+      "quote": "Lease liabilities 8,298 4,052 2,506 465 460 Bank loans 25 27 100,092 230,186 230,169",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "规模商业化（已量产）",
+      "page": 56,
+      "quote": "we operated production facilities in Deqing, Zhejiang, China with a combined designed production capacity of 6.2 million units",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 34,
+      "quote": "we estimate that we will receive net proceeds of approximately HK$271.8 million from the Global Offering",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 457,
+      "quote": "The share capital of the Company consists of ordinary shares.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "17/07/24",
+      "page": 141,
+      "quote": "Our Company was incorporated in the Cayman Islands as an exempted company with limited liability on July 17, 2024 as the holding company of our Group.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Hangzhou, Zhejiang Province, PRC",
+      "page": 98,
+      "quote": "Head Office and Principal Place of Business in the PRC 8th Floor, Building 1 Lok Fu Creative Center No. 818, Pingshui East Street Hangzhou, Zhejiang Province PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 270,
+      "quote": "Our consolidated financial information has been prepared in accordance with IFRS Accounting Standards.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/01/26",
+      "page": 5,
+      "quote": "9:00 a.m. on Saturday, January 31, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "05/02/26",
+      "page": 5,
+      "quote": "12:00 noon on Thursday, February 5, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 128205000,
+      "page": 267,
+      "quote": "Shares to be issued under the Global Offering 28,205,000 14,102.5 22.00% Total 128,205,000 64,102.5 100.00%",
+      "confidence": "high",
+      "note": "开曼注册（单一类别 Ordinary Shares），无 H 股类别；全部股份均在港交所挂牌，故 CE = 上市后已发行股份总数 128,205,000"
+    },
+    "col_CF": {
+      "value": 127515000,
+      "page": 21,
+      "quote": "Gross profit 190,133 123,224 152,680 102,542 127,515",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 2900000,
+      "page": 320,
+      "quote": "We had capital expenditures of RMB3.2 million, RMB1.2 million, RMB2.3 million and RMB2.9 million in 2022, 2023, 2024 and the eight months ended August 31, 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见（Unqualified opinion）",
+      "page": 382,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 59600000,
+      "page": 34,
+      "quote": "We expect to incur total listing expenses of approximately RMB53.5 million (HK$59.6 million), comprising: (i) underwriting fees of RMB14.9 million (HK$16.6 million)",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "None",
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 0.0,
+      "page": 147,
+      "quote": "Background of the Pre-IPO Investor",
+      "confidence": "high"
+    }
+  }
+}

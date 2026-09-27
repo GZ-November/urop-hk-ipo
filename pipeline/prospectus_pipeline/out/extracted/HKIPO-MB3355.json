@@ -1,0 +1,425 @@
+{
+  "code": "3355.HK",
+  "fields": {
+    "col_L": {
+      "value": 400000000,
+      "page": 314,
+      "quote": "Total \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n400,000,000\n100%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 40000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the\nGlobal Offering\n:\n40,000,000 H Shares (subject to the\nOver-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 360000000,
+      "page": 314,
+      "quote": "H Shares to be converted from Unlisted Shares\u0002 \u0002 \u0002\n360,000,000\n90.00%",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 360000000,
+      "page": 314,
+      "quote": "H Shares to be converted from Unlisted Shares\u0002 \u0002 \u0002\n360,000,000\n90.00%",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 314,
+      "quote": "H Shares to be issued pursuant to the\nGlobal Offering \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n40,000,000\n10.00%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 40000000,
+      "page": 314,
+      "quote": "H Shares to be issued pursuant to the\nGlobal Offering \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n40,000,000\n10.00%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 36000000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n36,000,000 H Shares (subject to\nreallocation and the Over-allotment\nOption)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4000000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n4,000,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 41.6,
+      "page": 2,
+      "quote": "Maximum Offer Price\n:\nHK$41.60 per H Share, plus brokerage",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 35.2,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$41.60 per Offer Share and is currently expected to be not less than HK$35.20 per Offer Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 386,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values\nare rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 2719416000,
+      "page": 19,
+      "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n2,153,815\n2,719,416\n3,550,399\n3,721,620",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 3550399000,
+      "page": 19,
+      "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n2,153,815\n2,719,416\n3,550,399\n3,721,620",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 3721620000,
+      "page": 19,
+      "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n2,153,815\n2,719,416\n3,550,399\n3,721,620",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 1997982000,
+      "page": 19,
+      "quote": "Total equity \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n1,532,416\n1,997,982\n2,400,737\n1,984,512",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 2400737000,
+      "page": 19,
+      "quote": "Total equity \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n1,532,416\n1,997,982\n2,400,737\n1,984,512",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 1984512000,
+      "page": 19,
+      "quote": "Total equity \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n1,532,416\n1,997,982\n2,400,737\n1,984,512",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 721434000,
+      "page": 19,
+      "quote": "Total liabilities \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n621,399\n721,434\n1,149,662\n1,737,108",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1149662000,
+      "page": 19,
+      "quote": "Total liabilities \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n621,399\n721,434\n1,149,662\n1,737,108",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 1737108000,
+      "page": 19,
+      "quote": "Total liabilities \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n621,399\n721,434\n1,149,662\n1,737,108",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 2212851000,
+      "page": 387,
+      "quote": "Revenue \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n5\n1,988,244\n2,212,851\n2,611,793\n1,953,701\n2,174,718",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 2611793000,
+      "page": 387,
+      "quote": "Revenue \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n5\n1,988,244\n2,212,851\n2,611,793\n1,953,701\n2,174,718",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 2899624000,
+      "page": 387,
+      "quote": "Revenue \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n5\n1,988,244\n2,212,851\n2,611,793\n1,953,701\n2,174,718",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 513250000,
+      "page": 387,
+      "quote": "Profit before tax \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n418,877\n513,250\n456,575\n407,774\n482,948",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 456575000,
+      "page": 387,
+      "quote": "Profit before tax \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n418,877\n513,250\n456,575\n407,774\n482,948",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 643930666.6666666,
+      "page": 387,
+      "quote": "Profit before tax \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n418,877\n513,250\n456,575\n407,774\n482,948",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 456747000,
+      "page": 387,
+      "quote": "Profit for the year/period \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n11\n364,507\n456,747\n397,257\n350,807\n423,174",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 397257000,
+      "page": 387,
+      "quote": "Profit for the year/period \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n11\n364,507\n456,747\n397,257\n350,807\n423,174",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 564232000,
+      "page": 387,
+      "quote": "Profit for the year/period \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n11\n364,507\n456,747\n397,257\n350,807\n423,174",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.023,
+      "page": 351,
+      "quote": "Our Company will pay an underwriting commission of 2.3% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.023,
+      "page": 351,
+      "quote": "Our Company will pay an underwriting commission of 2.3% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 351,
+      "quote": "we may be required to allot and issue up to an aggregate of 6,000,000 additional H Shares representing no more than 15% of the initial number of the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Online DTC networking solution provider",
+      "page": 180,
+      "quote": "We were the world’s second largest online DTC networking solution provider in terms of\nrevenue in 2024 with a 6.9% market share, according to Frost & Sullivan. Our networking",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board (Chapter 19A PRC issuer)",
+      "page": 172,
+      "quote": "Rule 19A.13C of the Listing Rules provides that, where a new applicant is a PRC issuer with no other listed shares at the time of Listing",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/25",
+      "page": 387,
+      "quote": "Year ended December 31,\nNine months ended\nSeptember 30,\nNOTES\n2022\n2023\n2024\n2024\n2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 542647000,
+      "page": 393,
+      "quote": "NET CASH FROM OPERATING ACTIVITIES \u0002 \u0002\n170,832\n586,010\n408,841\n249,491\n542,647",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 613353000,
+      "page": 394,
+      "quote": "TOTAL CASH AND CASH EQUIVALENTS AT\nTHE END OF YEAR/PERIOD\n\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n367,576\n829,082\n533,026\n542,444\n613,353",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 124273000,
+      "page": 387,
+      "quote": "Research and development expenses \u0002 \u0002\n(99,824)\n(110,482)\n(143,710)\n(99,824)\n(124,273)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 401,
+      "quote": "Where no internally generated intangible asset can be recognized, development expenditure is recognized in profit or loss in the period in which it is incurred.",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.069,
+      "page": 208,
+      "quote": "our revenue from the five largest customers in each year or period was RMB95.2 million, RMB82.5 million, RMB164.5 million and RMB149.8 million, respectively, accounting for 4.8%, 3.8%, 6.3% and 6.9%",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "深圳市飞速创新技术股份有限公司",
+      "page": 2,
+      "quote": "深圳市飛速創新技術股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Hao Fund; Great Holding; WT Asset Management; Caitong SEIII; Intewise Ultimate Clients and CICC FT (in connection with the Intewise OTC Swaps); Foresight; SCGC Capital; Aether; GF Fund HK; Kaifeng Ultimate Clients and CICC FT (in connection with the Kaifeng OTC Swaps); Wider Huge",
+      "page": 322,
+      "quote": "Hao Fund \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n20.00\n4,434,100\n11.09%\n1.11%\n9.64%\n1.09%\nGreat Holding \u0002 \u0002 \u0002 \u0002\n14.47\n3,207,300\n8.02%\n0.80%\n6.97%\n0.79%\nWT Asset\nManagement\u0002 \u0002 \u0002 \u0002\n10.00\n2,217,000\n5.54%\n0.55%\n4.82%\n0.55%",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 30,
+      "quote": "As of the Latest Practicable Date, the Pre-IPO Investors hold approximately 38.84% of our total issued share capital.",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 395,
+      "quote": "Mr. Xiang Wei (“Mr. Xiang”) is the founder and ultimate controlling shareholder of the Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.5504,
+      "page": 312,
+      "quote": "H Shares Beneficial owner – – 203,928,528 50.98% 50.98% Interest in controlled corporation – – 16,231,373 4.06% 4.06%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.5504,
+      "page": 30,
+      "quote": "Mr. Xiang will, directly and indirectly through Yuxuan Prudence, Yuxuan Progress and Yuxuan Growth, continue to control 55.04% voting rights of our Company.",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 649587000,
+      "page": 285,
+      "quote": "Borrowings 79,015 96,779 573,360 521,793 509,763 Lease liabilities 28,994 86,183 125,151 127,794 119,904",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "规模商业化",
+      "page": 12,
+      "quote": "We were the world’s second largest online DTC networking solution provider in terms of revenue in 2024 with a 6.9% market share, according to Frost & Sullivan.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 22,
+      "quote": "Approximately 10.0% of the net proceeds, or approximately HK$143.4 million, will be used for working capital and general corporate purposes.",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 36,
+      "quote": "ordinary shares in the share capital of our Company with nominal value of RMB1.00 each, which are to be subscribed for and traded in HK dollars and are to be listed on the Hong Kong Stock Exchange",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "09/04/09",
+      "page": 395,
+      "quote": "The Company was incorporated in the PRC on April 9, 2009 as a limited liability company under the Company Law of the PRC.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shenzhen, PRC",
+      "page": 102,
+      "quote": "Head Office and Principal Place of Business in the PRC 1903-1904, Block C China Resources Land Building Da Chong Community, Yuehai Street Nanshan District Shenzhen Guangdong Province PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 395,
+      "quote": "The Historical Financial Information has been prepared based on the accounting policies which conform with IFRS Accounting Standards issued by the IASB.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "13/03/26",
+      "page": 6,
+      "quote": "9:00 a.m. on Friday, March 13, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "18/03/26",
+      "page": 6,
+      "quote": "12:00 noon on Wednesday, March 18, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 400000000,
+      "page": 314,
+      "quote": "H Shares to be converted from Unlisted Shares 360,000,000 90.00% H Shares to be issued pursuant to the Global Offering 40,000,000 10.00% Total 400,000,000 100%",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1142819000,
+      "page": 17,
+      "quote": "Gross profit 902,858 1,092,472 1,306,309 995,659 1,142,819",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 59893000,
+      "page": 394,
+      "quote": "Purchase and deposits paid for property, plant and equipment (208,813) (339,481) (725,337) (655,385) (59,893)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见",
+      "page": 384,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s and the Company’s financial position",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 102400000,
+      "page": 32,
+      "quote": "We estimate that our listing expenses will be approximately RMB90.7 million",
+      "confidence": "medium"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Fortune Venture Capital (达晨财智); Harvest Capital; Shenzhen Chiyu",
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.226,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series Pre-A",
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 7.42,
+      "page": 30,
+      "quote": "regarding the background of the Pre-IPO Investors, see “History, Development and Corporate",
+      "confidence": "high"
+    }
+  }
+}

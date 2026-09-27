@@ -1,0 +1,65 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 18,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,214,193",
+          "1,225,721",
+          "1,104,017"
+        ],
+        [
+          "Total liabilities",
+          "131,297",
+          "236,925",
+          "286,526"
+        ],
+        [
+          "Total equity",
+          "1,082,896",
+          "988,796",
+          "817,491"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 1,214,193 | 1,225,721 | 1,104,017 |\n| Total liabilities | 131,297   | 236,925   | 286,526   |\n| Total equity      | 1,082,896 | 988,796   | 817,491   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 295,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "1,082,896",
+          "988,796",
+          "817,491"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2  | Year-1  |\n| ---------------- | --------- | ------- | ------- |\n| Total equity     | 1,082,896 | 988,796 | 817,491 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

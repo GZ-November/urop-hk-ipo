@@ -1,4 +1,11 @@
-# macOS
+# ==============================================================================
+# 上传口径（2026-09-27）：以"其他人能跑通这套 pipeline"为准——
+# 代码、工作簿、配置、schema、prompts、codebook/registry/报告、队友文档、
+# NLR 官方报表、配售文本入库；
+# 招股书 PDF、全文文本、切片/抽取包、datasets 时代缓存、工作簿备份不上传。
+# ==============================================================================
+
+# macOS / 编辑器
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -7,16 +14,23 @@
 .Trashes
 * 2.*
 * 3.*
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+.dsh/
+.workbuddy/
 
-# Python
+# Python 环境与构建产物
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-venv/
 .venv/
+venv/
+env/
 build/
 dist/
 *.egg-info/
@@ -24,46 +38,29 @@ dist/
 .coverage
 htmlcov/
 
-# Editor & IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.dsh/
-.workbuddy/
-
-# ==============================================================================
-# Research workbooks and codebooks are versioned; raw source data stays local.
-# ==============================================================================
-*.xlsx
-!pipeline/prospectus_pipeline/tests/fixtures/*.xlsx
-!pipeline/cohorts/HKIPO-MB20*.xlsx
-!pipeline/templates/*.xlsx
-*.xls
-*.xlsm
-*.csv
-*.doc
-*.docx
-*.pdf
-
-# Raw sources, backups, internal docs, archives and literature
-**/sources/
-**/backups/
-**/archive/
-!pipeline/prospectus_pipeline/schema/archive/
-!pipeline/prospectus_pipeline/schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json
-**/docs/
-!docs/
-!docs/adr/
-!docs/adr/**
-Survey Paper/
-
-# Pipeline working cache and extracted artifacts
-**/prospectus_pipeline/data/
-**/prospectus_pipeline/out/
-**/prospectus_pipeline/datasets/
+# 流水线易失状态（临时凭证/备份，随命令再生）
+.pipeline_state
 *.backup-*.json
 *-backup-*.json
-.pipeline_state
+pipeline/prospectus_pipeline/datasets/tmp*/
 **/.*.xlsx.lock
+
+# 招股书 / 配发公告 PDF（体积原因，不上传）：data/ 与 out/ 下一切 pdf 目录
+pipeline/prospectus_pipeline/data/**/pdf/
+pipeline/prospectus_pipeline/out/**/pdf/
+pipeline/prospectus_pipeline/data/allotment/
+
+# PDF 派生的全文文本与切片/抽取包（可由 PDF 重新生成，不上传）
+pipeline/prospectus_pipeline/data/text/
+pipeline/prospectus_pipeline/data/sections/
+pipeline/prospectus_pipeline/data/packets/
+
+# datasets/ 是 collect 时代的隔离工作区（内含大体积 PDF 与重复状态）
+# 规范工作簿在 pipeline/cohorts/，现行抽取状态在 prospectus_pipeline/out/
+pipeline/prospectus_pipeline/datasets/
+
+# 工作簿时间戳备份（superseded 快照）
+pipeline/backups/
+
+# 文献 PDF
+Survey Paper/

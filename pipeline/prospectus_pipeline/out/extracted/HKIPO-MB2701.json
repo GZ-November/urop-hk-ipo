@@ -1,0 +1,425 @@
+{
+  "code": "2701.HK",
+  "fields": {
+    "col_L": {
+      "value": 678126700,
+      "page": 234,
+      "quote": "678,126,700\nTotal\n100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 95000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under\nthe Global Offering\n:\n95,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 583126700,
+      "page": 234,
+      "quote": "583,126,700\nA Shares in issue\n85.99%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 583126700,
+      "page": 234,
+      "quote": "583,126,700\nA Shares in issue\n85.99%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 234,
+      "quote": "95,000,000\nH Shares to be issued under the Global\nOffering\n14.01%",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 95000000,
+      "page": 234,
+      "quote": "95,000,000\nH Shares to be issued under the Global\nOffering\n14.01%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 85500000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n85,500,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 9500000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n9,500,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 10.8,
+      "page": 2,
+      "quote": "Maximum Offer Price\n:\nHK$10.80 per H Share, plus brokerage of\n1.0%, SFC transaction levy of 0.0027%,\nStock Exchange trading fee of 0.00565%\nand AFRC transaction levy of 0.00015%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 20,
+      "quote": "Summary of Statements of Financial Position\nAs of December 31,\nAs of\nSeptember 30,\n2022\n2023\n2024\n2025\nRMB’000",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 3802580000,
+      "page": 20,
+      "quote": "Total non-current assets \n1,520,898\n1,828,301\n1,985,255\n1,981,867\nTotal current assets \n2,192,836\n1,974,279\n1,727,682\n1,583,981",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 3712937000,
+      "page": 20,
+      "quote": "Total non-current assets \n1,520,898\n1,828,301\n1,985,255\n1,981,867\nTotal current assets \n2,192,836\n1,974,279\n1,727,682\n1,583,981",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 3565848000,
+      "page": 20,
+      "quote": "Total non-current assets \n1,520,898\n1,828,301\n1,985,255\n1,981,867\nTotal current assets \n2,192,836\n1,974,279\n1,727,682\n1,583,981",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 1245502000,
+      "page": 20,
+      "quote": "Net assets \n1,743,811\n1,245,502\n1,052,762\n976,503",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 1052762000,
+      "page": 20,
+      "quote": "Net assets \n1,743,811\n1,245,502\n1,052,762\n976,503",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 976503000,
+      "page": 20,
+      "quote": "Net assets \n1,743,811\n1,245,502\n1,052,762\n976,503",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 2557078000,
+      "page": 20,
+      "quote": "Total non-current liabilities \n691,683\n1,300,300\n1,093,298\n973,927\nTotal current liabilities \n1,278,240\n1,256,778\n1,566,877\n1,615,418",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 2660175000,
+      "page": 20,
+      "quote": "Total non-current liabilities \n691,683\n1,300,300\n1,093,298\n973,927\nTotal current liabilities \n1,278,240\n1,256,778\n1,566,877\n1,615,418",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 2589345000,
+      "page": 20,
+      "quote": "Total non-current liabilities \n691,683\n1,300,300\n1,093,298\n973,927\nTotal current liabilities \n1,278,240\n1,256,778\n1,566,877\n1,615,418",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 1036753000,
+      "page": 16,
+      "quote": "Revenue \n1,195,411\n100.0\n1,036,753\n100.0\n1,167,550\n100.0\n820,994\n100.0\n958,315\n100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 1167550000,
+      "page": 16,
+      "quote": "Revenue \n1,195,411\n100.0\n1,036,753\n100.0\n1,167,550\n100.0\n820,994\n100.0\n958,315\n100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 1277753333.3333333,
+      "page": 16,
+      "quote": "Revenue \n1,195,411\n100.0\n1,036,753\n100.0\n1,167,550\n100.0\n820,994\n100.0\n958,315\n100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -603920000,
+      "page": 17,
+      "quote": "Loss before taxation \n(7,809)\n(0.7)\n(603,920)\n(58.3)\n(269,084)\n(23.0)\n(174,181)\n(21.2)\n(86,139)\n(9.0)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -269084000,
+      "page": 17,
+      "quote": "Loss before taxation \n(7,809)\n(0.7)\n(603,920)\n(58.3)\n(269,084)\n(23.0)\n(174,181)\n(21.2)\n(86,139)\n(9.0)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -114852000.0,
+      "page": 17,
+      "quote": "Loss before taxation \n(7,809)\n(0.7)\n(603,920)\n(58.3)\n(269,084)\n(23.0)\n(174,181)\n(21.2)\n(86,139)\n(9.0)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -593990000,
+      "page": 17,
+      "quote": "Loss for the\nyear/period \n(18,930)\n(1.6)\n(593,990)\n(57.3)\n(255,724)\n(21.9)\n(166,024)\n(20.2)\n(75,746)\n(7.9)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -255724000,
+      "page": 17,
+      "quote": "Loss for the\nyear/period \n(18,930)\n(1.6)\n(593,990)\n(57.3)\n(255,724)\n(21.9)\n(166,024)\n(20.2)\n(75,746)\n(7.9)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -100994666.66666667,
+      "page": 17,
+      "quote": "Loss for the\nyear/period \n(18,930)\n(1.6)\n(593,990)\n(57.3)\n(255,724)\n(21.9)\n(166,024)\n(20.2)\n(75,746)\n(7.9)",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.025,
+      "page": 280,
+      "quote": "The Underwriters will receive an underwriting commission of 2.5% of the aggregate Offer\nPrice of all the Offer Shares.",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.025,
+      "page": 280,
+      "quote": "The Underwriters will receive an underwriting commission of 2.5% of the aggregate Offer\nPrice of all the Offer Shares.",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 2,
+      "quote": "GLOBAL OFFERING\nNumber of Offer Shares under\nthe Global Offering\n:\n95,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Platform-based integrated circuit (IC) design company focusing on delivering control chips and system solutions, and lithium-ion battery anode material business",
+      "page": 10,
+      "quote": "We are a platform-based integrated circuit (“IC”) design company, and focus on delivering\ncontrol chips and system solutions for a broad range of intelligent terminals.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board under Rule 8.05(3) of the Listing Rules (market capitalization/revenue test)",
+      "page": 79,
+      "quote": "satisfy the market\ncapitalization/revenue test under Rule 8.05(3) of the Listing Rules with reference to (i) our revenue\nfor the year ended December 31, 2024, being RMB1,167.6 million",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/25",
+      "page": 20,
+      "quote": "Summary of Statements of Financial Position\nAs of December 31,\nAs of\nSeptember 30,\n2022\n2023\n2024\n2025\nRMB’000",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -49673000,
+      "page": 21,
+      "quote": "Net cash used in operating\nactivities \n(640,657)\n(122,357)\n(121,333)\n(182,260)\n(49,673)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 187870000,
+      "page": 21,
+      "quote": "Cash and cash\nequivalents at end of\nthe year/period \n559,605\n764,524\n361,665\n344,957\n187,870",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 120082000,
+      "page": 201,
+      "quote": "Total \n295,316\n100.0\n284,737\n100.0\n186,831\n100.0\n137,329\n100.0\n120,082\n100.0",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 43899000,
+      "page": 342,
+      "quote": "At 31 December 2024 \n140,956\n24,567\n416,985\n150,823\n733,331\nAdditions \n–\n–\n10,042\n43,899\n53,941",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.478,
+      "page": 14,
+      "quote": "five largest customers accounted for 41.4%, 43.4%, 46.4% and 47.8% of our total revenue in each of 2022, 2023, 2024 and in the nine months ended September 30, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "国民技术股份有限公司",
+      "page": 1,
+      "quote": "國民技術股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Guohua Life Insurance; Harvest Oriental II; Ms. Tai; Mr. An; Sunwoda Treasury",
+      "page": 272,
+      "quote": "The table below sets forth details of the Cornerstone Placing based on the Offer Price of\nHK$10.80 per H Share:\nCornerstone Investor",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "无实际控制人",
+      "page": 233,
+      "quote": "Our Company does not have any substantial shareholders (as defined in the Listing Rules). Further, our Company does not have any controlling shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.0228,
+      "page": 16,
+      "quote": "Immediately following the completion of the Global Offering, Mr. Sun will be interested in approximately 2.28% of the total issued share capital of the Company.",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.0228,
+      "page": 16,
+      "quote": "Immediately following the completion of the Global Offering, Mr. Sun will be interested in approximately 2.28% of the total issued share capital of the Company.",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 1682708000,
+      "page": 225,
+      "quote": "Borrowings 1,138,280 1,638,719 1,592,300 1,647,589 1,714,397 Lease liabilities 56,130 46,136 39,060 35,119 31,159",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "规模商业化（已量产）",
+      "page": 118,
+      "quote": "With a full-category product matrix and stable mass production and delivery capabilities, we are rapidly expanding our customer base across various industries",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0.15,
+      "page": 26,
+      "quote": "approximately 15.0% of the net proceeds, or HK$141.6 million, will be used to repay part of our outstanding bank loans.",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 95,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "20/03/00",
+      "page": 106,
+      "quote": "Our Company was established on March 20, 2000, with an initial registered capital of RMB30 million and was owned as to 60% by ZTE Corporation",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shenzhen, PRC",
+      "page": 86,
+      "quote": "Headquarters 1/F, Nsing Tower No. 109 Baoshen Road Songpingshan Community Xili Street Nanshan District, Shenzhen Guangdong Province PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 384,
+      "quote": "The consolidated financial statements has been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by the International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "13/03/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Friday, March 13, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "18/03/26",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Wednesday, March 18, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 95000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 95,000,000 H Shares Number of Hong Kong Offer Shares : 9,500,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 182686000,
+      "page": 16,
+      "quote": "Gross profit 426,020 35.6 18,011 1.7 182,392 15.6 155,535 18.9 182,686 19.1",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 112000000,
+      "page": 228,
+      "quote": "Our capital expenditures amounted to RMB294.8 million, RMB497.0 million, RMB366.9 million, RMB112.0 million in 2022, 2023 and 2024 and for the nine months ended September 30, 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见 (Unqualified opinion)",
+      "page": 304,
+      "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the Group's financial position",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 82000000,
+      "page": 26,
+      "quote": "The total estimated listing expenses in relation to the Global Offering are RMB72.4 million (HK$82.0 million), which constitute approximately 8.0% of the gross proceeds.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "None",
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 0.0,
+      "page": 109,
+      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
+      "confidence": "high"
+    }
+  }
+}

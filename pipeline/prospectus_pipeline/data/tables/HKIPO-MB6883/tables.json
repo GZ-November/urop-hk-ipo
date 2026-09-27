@@ -1,0 +1,158 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 330,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "333,400,000 Shares to be issued under the Global",
+          "333,400",
+          "25.00"
+        ],
+        [
+          "1,333,400,000 Shares in total",
+          "1,333,400",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                            | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------------------ | ---------------- | -------------------------- |\n| 333,400,000 Shares to be issued under the Global | 333,400          | 25.00                      |\n| 1,333,400,000 Shares in total                    | 1,333,400        | 100.00                     |",
+      "metadata": {
+        "total_rows": 2
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 331,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "348,750,000 Shares to be issued under the Global",
+          "348,750",
+          "25.86"
+        ],
+        [
+          "1,348,750,000 Shares in total",
+          "1,348,750",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                            | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------------------ | ---------------- | -------------------------- |\n| 348,750,000 Shares to be issued under the Global | 348,750          | 25.86                      |\n| 1,348,750,000 Shares in total                    | 1,348,750        | 100.00                     |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 35,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "(including underwriting commission) will be approximately",
+          "RMB73.1 million"
+        ],
+        [
+          "Track Record Period, listing expenses of approximately",
+          "RMB5.6 million"
+        ],
+        [
+          "listing expenses as of",
+          "March 31,"
+        ],
+        [
+          "remaining listing expenses of approximately",
+          "RMB15.5 million"
+        ],
+        [
+          "listing expenses consisted of",
+          "RMB20.3 million"
+        ]
+      ],
+      "markdown": "| Item Description                                          | Rate / Amount Disclosed |\n| --------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                   | fees,                   |\n| (including underwriting commission) will be approximately | RMB73.1 million         |\n| Track Record Period, listing expenses of approximately    | RMB5.6 million          |\n| listing expenses as of                                    | March 31,               |\n| remaining listing expenses of approximately               | RMB15.5 million         |\n| listing expenses consisted of                             | RMB20.3 million         |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 29,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,094,599",
+          "1,033,396",
+          "1,211,111"
+        ],
+        [
+          "Total liabilities",
+          "559,201",
+          "574,851",
+          "520,121"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 1,094,599 | 1,033,396 | 1,211,111 |\n| Total liabilities | 559,201   | 574,851   | 520,121   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 467,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,094,599",
+          "1,033,396",
+          "1,211,111"
+        ],
+        [
+          "Total equity",
+          "535,398",
+          "458,545",
+          "690,990"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    |\n| ---------------- | --------- | --------- | --------- |\n| Total assets     | 1,094,599 | 1,033,396 | 1,211,111 |\n| Total equity     | 535,398   | 458,545   | 690,990   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

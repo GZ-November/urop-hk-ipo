@@ -1,0 +1,116 @@
+{
+  "code": "1768.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4141,
+      "page": 6,
+      "quote": "Subtotal 6,423,600 41.41%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1899.49,
+      "page": 5,
+      "quote": "Subscription level 1,899.49 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 229245,
+      "page": 5,
+      "quote": "No. of valid applications 229,245",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2678666900,
+      "page": 19,
+      "quote": "POOL A NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,899.49 times",
+      "page": 5,
+      "quote": "Subscription level 1,899.49 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "26/01/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (on behalf of the Underwriters) and our Company on the Pric",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "27/01/2026",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**27/01/2026 22:20**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 15511200,
+      "page": 3,
+      "quote": "Number of Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option) 15,511,200",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1410200,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,410,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 14101000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (taking into account the full exercise of the Offer Size Adjustment Option) 14,101,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 2326600,
+      "page": 1,
+      "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Tuesday, February 10, 2026 in respect of an aggregate of 2,326,600 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (10/02/2026 19:41)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No; No. of Offer Shares reallocated from the International Offering: N/A",
+      "page": 5,
+      "quote": "Claw-back triggered No No. of Offer Shares initially available under the Hong Kong Public Offering 1,410,200 No. of Offer Shares reallocated from the International Offering N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 3528000000,
+      "page": 4,
+      "quote": "Net proceeds HK$3,528 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3395,
+      "page": 36,
+      "quote": "the total number of H Shares held by the public represents approximately 33.95% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 215511200,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 215,511,200",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0422,
+      "page": 36,
+      "quote": "Based on the final Offer Price of HK$236.60 per Offer Share, the Company satisfies the free float requirement under Rule 8.08A of the Listing Rules.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Total issued share capital of the Company upon Listing (215,511,200 Shares; taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option); H Shares; the Offer Shares allocated to Cornerstone Investors are subject to a six-month lock-up and do not count towards free float.",
+      "page": 36,
+      "quote": "the total number of H Shares held by the public represents approximately 33.95% of the total issued share capital of the Company, which is higher than the minimum prescribed percentage",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 215511200,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 215,511,200",
+      "confidence": "medium"
+    }
+  }
+}

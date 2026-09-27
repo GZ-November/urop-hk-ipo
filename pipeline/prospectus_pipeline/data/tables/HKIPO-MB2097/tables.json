@@ -1,0 +1,193 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 306,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "M&G Investments",
+          "60",
+          "2,307,800",
+          "13.53%"
+        ],
+        [
+          "HongShan Growth",
+          "60",
+          "2,307,800",
+          "13.53%"
+        ],
+        [
+          "Limited",
+          "40",
+          "1,538,500",
+          "9.02%"
+        ],
+        [
+          "HHLR Fund, L.P.",
+          "30",
+          "1,153,900",
+          "6.76%"
+        ],
+        [
+          "Long-Z Fund I, LP",
+          "10",
+          "384,600",
+          "2.25%"
+        ],
+        [
+          "Total",
+          "200",
+          "7,692,600",
+          "45.09%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| M&G Investments      | 60                    | 2,307,800              | 13.53%                        |\n| HongShan Growth      | 60                    | 2,307,800              | 13.53%                        |\n| Limited              | 40                    | 1,538,500              | 9.02%                         |\n| HHLR Fund, L.P.      | 30                    | 1,153,900              | 6.76%                         |\n| Long-Z Fund I, LP    | 10                    | 384,600                | 2.25%                         |\n| Total                | 200                   | 7,692,600              | 45.09%                        |",
+      "metadata": {
+        "investor_count": 5
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 34,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "underwriting fees and commission",
+          "s,"
+        ],
+        [
+          "deduction from equity upon the Listing. We did not recognize any listing expenses",
+          "in 2021"
+        ],
+        [
+          "2022. We recognized listing expenses of",
+          "RMB10.9 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                  | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------- | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related                      | expenses,               |\n| underwriting fees and commission                                                  | s,                      |\n| deduction from equity upon the Listing. We did not recognize any listing expenses | in 2021                 |\n| 2022. We recognized listing expenses of                                           | RMB10.9 million         |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 27,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "10,350,986",
+          "100.0",
+          "13,575,577",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "3,243,862",
+          "31.3",
+          "3,846,837",
+          "28.3"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 10,350,986 | 100.0  | 13,575,577 | 100.0 |\n| Gross profit     | 3,243,862  | 31.3   | 3,846,837  | 28.3  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 28,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "7,316,383",
+          "9,945,356",
+          "14,593,566",
+          "18,620,333"
+        ],
+        [
+          "Total liabilities",
+          "1,773,673",
+          "2,466,089",
+          "3,998,101",
+          "4,524,127"
+        ],
+        [
+          "Total equity",
+          "5,542,710",
+          "7,479,267",
+          "10,595,465",
+          "14,096,206"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1     | Col 5      |\n| ----------------- | --------- | --------- | ---------- | ---------- |\n| Total assets      | 7,316,383 | 9,945,356 | 14,593,566 | 18,620,333 |\n| Total liabilities | 1,773,673 | 2,466,089 | 3,998,101  | 4,524,127  |\n| Total equity      | 5,542,710 | 7,479,267 | 10,595,465 | 14,096,206 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 327,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "10,350,986",
+          "100.0",
+          "13,575,577",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "3,243,862",
+          "31.3",
+          "3,846,837",
+          "28.3"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 10,350,986 | 100.0  | 13,575,577 | 100.0 |\n| Gross profit     | 3,243,862  | 31.3   | 3,846,837  | 28.3  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "code": "0901.HK",
+  "fields": {
+    "col_L": {
+      "value": 209540070,
+      "page": 235,
+      "quote": "H Shares to be issued under the Global Offering 19,207,300 9.17% Total 209,540,070 100%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 19207300,
+      "page": 235,
+      "quote": "H Shares to be issued under the Global Offering 19,207,300 9.17%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 190332770,
+      "page": 235,
+      "quote": "Unlisted Shares 146,508 0.07% H Shares to be converted from Unlisted Shares 190,186,262 90.76% H Shares to be issued under the Global Offering 19,207,300 9.17% Total 209,540,070 100%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 190332770,
+      "page": 235,
+      "quote": "Unlisted Shares 146,508 0.07% H Shares to be converted from Unlisted Shares 190,186,262 90.76% H Shares to be issued under the Global Offering 19,207,300 9.17% Total 209,540,070 100%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 235,
+      "quote": "Unlisted Shares 146,508 0.07% H Shares to be converted from Unlisted Shares 190,186,262 90.76% H Shares to be issued under the Global Offering 19,207,300 9.17% Total 209,540,070 100%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 19207300,
+      "page": 2,
+      "quote": "Number of Offer Shares : 19,207,300 H Shares (subject to the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 17286500,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 17,286,500 H Shares (subject to reallocation and the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1920800,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 1,920,800 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares : 19,207,300 H Shares (subject to the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 209393562,
+      "page": 239,
+      "quote": "the total number of 209,540,070 Shares (comprising 209,393,562 H Shares and 146,508 Unlisted Shares) in issue immediately following the completion of the Global Offering",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 32.8,
+      "page": 2,
+      "quote": "Offer Price : HK$32.80 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 32.8,
+      "page": 2,
+      "quote": "Offer Price : HK$32.80 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 19,
+      "quote": "Year ended December 31, 2023 2024 2025 RMB'000 RMB'000 RMB'000 Revenue 2,366,870 2,540,936 3,367,659",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1824763000,
+      "page": 384,
+      "quote": "Total assets 1,824,763 2,224,758 2,573,426",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 2224758000,
+      "page": 384,
+      "quote": "Total assets 1,824,763 2,224,758 2,573,426",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 2573426000,
+      "page": 384,
+      "quote": "Total assets 1,824,763 2,224,758 2,573,426",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 900402000,
+      "page": 22,
+      "quote": "Total equity 900,402 1,037,053 1,267,240",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 1037053000,
+      "page": 22,
+      "quote": "Total equity 900,402 1,037,053 1,267,240",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 1267240000,
+      "page": 22,
+      "quote": "Total equity 900,402 1,037,053 1,267,240",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 924361000,
+      "page": 384,
+      "quote": "Total liabilities 924,361 1,187,705 1,306,186",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1187705000,
+      "page": 384,
+      "quote": "Total liabilities 924,361 1,187,705 1,306,186",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 1306186000,
+      "page": 384,
+      "quote": "Total liabilities 924,361 1,187,705 1,306,186",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 2366870000,
+      "page": 19,
+      "quote": "Revenue 2,366,870 2,540,936 3,367,659",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 2540936000,
+      "page": 19,
+      "quote": "Revenue 2,366,870 2,540,936 3,367,659",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 3367659000,
+      "page": 19,
+      "quote": "Revenue 2,366,870 2,540,936 3,367,659",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 200241000,
+      "page": 19,
+      "quote": "Profit before tax 200,241 141,090 251,185",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 141090000,
+      "page": 19,
+      "quote": "Profit before tax 200,241 141,090 251,185",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 251185000,
+      "page": 19,
+      "quote": "Profit before tax 200,241 141,090 251,185",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 191209000,
+      "page": 19,
+      "quote": "Profit for the year 191,209 137,226 239,153",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 137226000,
+      "page": 19,
+      "quote": "Profit for the year 191,209 137,226 239,153",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 239153000,
+      "page": 19,
+      "quote": "Profit for the year 191,209 137,226 239,153",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 231637000,
+      "page": 274,
+      "quote": "Sub-total 989 4,737 8,303 6,686 Total 122,849 227,445 231,637 362,397",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS Accounting Standards",
+      "page": 18,
+      "quote": "Our consolidated financial information was prepared in accordance with HKFRS Accounting Standards.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 656094000,
+      "page": 19,
+      "quote": "Gross profit 500,468 482,946 656,094",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 21300000,
+      "page": 276,
+      "quote": "In 2023 and 2024 and 2025, we recorded capital expenditures of RMB44.5 million, RMB15.7 million, and RMB21.3 million, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "True and fair view (unqualified opinion)",
+      "page": 321,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group and the Company as at 31 December",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.0135,
+      "page": 295,
+      "quote": "Our Company will pay an underwriting commission of 1.35% of the aggregate Offer Price of all the Offer Shares (including H Shares to be issued if the Offer Size Adjustment Option is exercised)",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.0135,
+      "page": 295,
+      "quote": "Our Company will pay an underwriting commission of 1.35% of the aggregate Offer Price of all the Offer Shares (including H Shares to be issued if the Offer Size Adjustment Option is exercised)",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 425,
+      "quote": "granting the Underwriters the over-allotment option of no more than 15% of the above number of H Shares to be issued",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 60000000,
+      "page": 24,
+      "quote": "the total estimated listing expenses in relation to the Global Offering are RMB52.4 million (HK$60.0 million), assuming the Offer Size Adjustment Option is not exercised",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Smart home products for enterprise customers",
+      "page": 149,
+      "quote": "We are a provider of smart home products for enterprise customers, focused on enhancing home applications through intelligent technologies.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19A of the Listing Rules (H Share issuer)",
+      "page": 74,
+      "quote": "Pursuant to Rule 19A.15 of the Listing Rules, the requirement in Rule 8.12 may be waived by having regard to, among other considerations, the applicant's arrangements",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Customer testing and commercialization stage",
+      "page": 11,
+      "quote": "Cedar is in the customer testing and commercialization stage, where we provide samples or solution prototypes to potential customers for functional testing and scenario adaptation",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 25,
+      "quote": "Approximately 25% of the net proceeds, or HK$142.5 million, will be used to enhance our market position and develop new products",
+      "confidence": "medium",
+      "note": "USE OF PROCEEDS (p.25): 25% market position and new products; 35% AI Home related technologies; 20% global expansion; 10% upstream/downstream investment; 10% working capital. Total 100%; no debt-repayment tranche."
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 19,
+      "quote": "Year ended December 31, 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -134043000,
+      "page": 329,
+      "quote": "Net cash flows from operating activities 28,670 125,854 (134,043)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 273353000,
+      "page": 330,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR 280,956 455,770 273,353",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 163900000,
+      "page": 19,
+      "quote": "Research and development costs (149,229) (160,706) (163,900)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 357,
+      "quote": "INTANGIBLE ASSETS The Group Software Patent Total RMB'000",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.477,
+      "page": 16,
+      "quote": "Revenue generated from our five largest customers in each year during the Track Record Period accounted for 60.7%, 50.6% and 47.7% of our total revenue in 2023, 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "深圳市华曦达科技股份有限公司",
+      "page": 1,
+      "quote": "深圳市華曦達科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 130,
+      "quote": "The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 131,
+      "quote": "Panorama Capital Green Technology is a limited partnership established in the PRC on July 30, 2021.",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 131,
+      "quote": "The general partner of which is Panorama Capital Investment Management Co., Ltd., which is a company established in the PRC.",
+      "confidence": "low"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 131,
+      "quote": "ultimately controlled by State Owned Assets Supervision and Administration Commission of Shanghai Municipal People's Government",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Panorama Capital Green Technology; Qihang No. 1; Qihang No. 2; Liu Minhua; Li Jingcheng; Wu Jun",
+      "page": 130,
+      "quote": "Name of Transferee Panorama Capital Green Technology Qihang No. 1 Qihang No. 2 Liu Minhua Li Jingcheng Wu Jun",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.023,
+      "page": 130,
+      "quote": "Shareholding held by the Pre-IPO Investor upon Listing(3) 1.03% 0.72% 0.55%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_earliest_round": {
+      "value": "Pre-IPO Investments (earliest April 1, 2025)",
+      "page": 130,
+      "quote": "Date of Investment April 2, 2025 and April 3, 2025 April 1, 2025 April 21, 2025 April 3, 2025 and April 8, 2025 April 2, 2025 April 1, 2025",
+      "confidence": "medium"
+    },
+    "col_holding_duration": {
+      "value": 1.13,
+      "page": 130,
+      "quote": "Date of Investment April 2, 2025 and April 3, 2025 April 1, 2025 April 21, 2025 April 3, 2025 and April 8, 2025 April 2, 2025 April 1, 2025",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO investment date 01/04/2025 to prospectus date 18/05/2026 = 412 days / 365.25 = 1.13 years."
+    },
+    "col_BB": {
+      "value": "Individual (Mr. Li Bo)",
+      "page": 18,
+      "quote": "Accordingly, Mr. Li, Zhixin Weilai, Kaida Yunzhi, Huazhi Changlian, Qihang No.1 and Qihang No.2 will remain as our Controlling Shareholders upon Listing.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3326,
+      "page": 18,
+      "quote": "will in aggregate hold and be entitled to exercise in general meetings voting rights attached to Shares representing approximately 33.26% of the total issued share capital of our Company.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3326,
+      "page": 18,
+      "quote": "will in aggregate hold and be entitled to exercise in general meetings voting rights attached to Shares representing approximately 33.26% of the total issued share capital of our Company.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "22/10/2003",
+      "page": 333,
+      "quote": "incorporated in Shenzhen, the People’s Republic of China (the “PRC”) on 22 October 2003.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Room 1920, 19/F, Lee Garden One, 33 Hysan Avenue, Causeway Bay, Hong Kong",
+      "page": 425,
+      "quote": "Our Company has established a principal place of business in Hong Kong at Room 1920, 19/F, Lee Garden One, 33 Hysan Avenue, Causeway Bay, Hong Kong",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "18/05/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, May 18, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "21/05/2026",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close . . . 12:00 noon on Thursday, May 21, 2026",
+      "confidence": "high"
+    }
+  }
+}

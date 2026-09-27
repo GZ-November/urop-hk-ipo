@@ -1,0 +1,58 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 491,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "5,000,000,000 Shares of par value of US$0.00001 each as of the",
+          "50,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                          | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------------------------------- | ---------------- | -------------------------- |\n| 5,000,000,000 Shares of par value of US$0.00001 each as of the | 50,000           | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 27,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "802,652",
+          "1,072,173",
+          "1,188,846"
+        ],
+        [
+          "Gross profit",
+          "79,557",
+          "178,164",
+          "208,197"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2    | Year-1    |\n| ---------------- | ------- | --------- | --------- |\n| Revenue          | 802,652 | 1,072,173 | 1,188,846 |\n| Gross profit     | 79,557  | 178,164   | 208,197   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

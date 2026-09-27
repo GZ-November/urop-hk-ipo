@@ -1,0 +1,429 @@
+{
+ "code": "7666.HK",
+ "fields": {
+  "col_L": {
+   "value": 1152513850,
+   "page": 251,
+   "quote": "Total 1,152,513,850 100.00 1,182,697,850 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 201229000,
+   "page": 251,
+   "quote": "H Shares to be issued under the Global Offering 201,229,000 17.46 231,413,000 19.57",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 951284850,
+   "page": 129,
+   "quote": "the number of our issued Shares will be 951,284,850, without taking into consideration the new Shares to be issued for the Global Offering",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 951284850,
+   "page": 129,
+   "quote": "the registered capital of our Company, which was RMB95,128,485 as of the date of this Prospectus, will be divided into 951,284,850 Shares with par value of RMB0.10 per Share",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 285,
+   "quote": "our Company is offering the Hong Kong Offer Shares for subscription by the public in Hong Kong on the terms and conditions set out in this Prospectus",
+   "confidence": "high",
+   "note": "Cover/share-capital table lists only newly issued Offer Shares; no Sale Shares / Selling Shareholder line item."
+  },
+  "col_Q": {
+   "value": 201229000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering 201,229,000 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 191167500,
+   "page": 2,
+   "quote": "Number of International Offer Shares 191,167,500 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 10061500,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares 10,061,500 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering 201,229,000 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 1052926111,
+   "page": 239,
+   "quote": "The calculation is based on the total number of 99,587,739 Unlisted Shares in issue and 1,052,926,111 H Shares in issue immediately after completion of the Global Offering and the Share Subdivision",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 10.5,
+   "page": 2,
+   "quote": "Offer Price HK$10.50 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 10.5,
+   "page": 2,
+   "quote": "The Offer Price will be HK$10.50 per Offer Share, unless otherwise announced.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 316,
+   "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 1313394000,
+   "page": 22,
+   "quote": "Total assets 1,313,394 1,048,535 1,290,268",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1048535000,
+   "page": 22,
+   "quote": "Total assets 1,313,394 1,048,535 1,290,268",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1290268000,
+   "page": 22,
+   "quote": "Total current assets 1,026,387 819,457 1,148,944 Total assets 1,313,394 1,048,535 1,290,268",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": -977563000,
+   "page": 22,
+   "quote": "Total (deficit)/equity (977,563) (1,382,389) 1,040,858",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": -1382389000,
+   "page": 22,
+   "quote": "Total (deficit)/equity (977,563) (1,382,389) 1,040,858",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 1040858000,
+   "page": 22,
+   "quote": "Total (deficit)/equity (977,563) (1,382,389) 1,040,858",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 2290957000,
+   "page": 22,
+   "quote": "Total liabilities 2,290,957 2,430,924 249,410",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 2430924000,
+   "page": 22,
+   "quote": "Total current liabilities 98,214 109,426 172,208 Total liabilities 2,290,957 2,430,924 249,410",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 249410000,
+   "page": 22,
+   "quote": "Total liabilities 2,290,957 2,430,924 249,410",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 9338000,
+   "page": 20,
+   "quote": "Revenue 9,338 1,482 105,000",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 1482000,
+   "page": 20,
+   "quote": "Revenue 9,338 1,482 105,000",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 105000000,
+   "page": 20,
+   "quote": "Revenue 9,338 1,482 105,000",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -581926000,
+   "page": 20,
+   "quote": "Loss before income tax (581,926) (499,190) (391,713)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -499190000,
+   "page": 20,
+   "quote": "Loss before income tax (581,926) (499,190) (391,713)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -391713000,
+   "page": 20,
+   "quote": "Loss before income tax (581,926) (499,190) (391,713)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -581928000,
+   "page": 20,
+   "quote": "Loss for the year (581,928) (499,198) (391,836)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -499198000,
+   "page": 20,
+   "quote": "Loss for the year (581,928) (499,198) (391,836)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -391836000,
+   "page": 20,
+   "quote": "Loss for the year (581,928) (499,198) (391,836)",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 131130000,
+   "page": 274,
+   "quote": "Lease liabilities 81,811 66,595 72,151 64,759 Total 2,202,333 2,343,262 131,130 123,890",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 324,
+   "quote": "The Historical Financial Information of the Group has been prepared in accordance with all applicable IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 103087000,
+   "page": 20,
+   "quote": "Gross profit 5,585 823 103,087",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 19033000,
+   "page": 277,
+   "quote": "Purchase of other intangible assets (6,968) (294) (380) Subtotal (56,462) (3,635) (19,033)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 315,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountant's report, a true and fair view of the financial position of the Company",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.03,
+   "page": 293,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission (the \"Fixed Fee\") of 3.0% of the aggregate Offer Price in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.03,
+   "page": 293,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission (the \"Fixed Fee\") of 3.0% of the aggregate Offer Price in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 293,
+   "quote": "our Company may be required to issue up to an aggregate of 30,184,000 additional H Shares, representing not more than 15% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 136000000,
+   "page": 26,
+   "quote": "the estimated total listing expenses (based on an Offer Price of HK$10.50 per Share) for the Global Offering are approximately HK$136.0 million",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "AI-empowered nanomaterial innovation",
+   "page": 9,
+   "quote": "We are a pioneer in AI-empowered nanomaterial innovation, dedicated to the delivery and application of functional payloads across life forms",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18C of the Listing Rules (Specialist Technology Company; Pre-Commercial Company)",
+   "page": 9,
+   "quote": "we are a Pre-Commercial Company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Pre-Commercial Company",
+   "page": 2,
+   "quote": "the Company is a Pre-Commercial Company (as defined in Chapter 18C of the Listing Rules)",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 284,
+   "quote": "Approximately HK$197.7 million (or approximately 10.0% of the net proceeds) will be used for working capital and other general corporate purposes.",
+   "confidence": "high",
+   "note": "Complete USE OF PROCEEDS purposes: AI infrastructure & nanomaterial platforms R&D 50.0%; AI-empowered solutions R&D 15.0%; clinical trials 20.0%; animal health & longevity 10.0%; global AI ecosystem 10.0%; global BD/marketing 4.0%; working capital & general corporate 10.0%. No debt/borrowing repayment purpose."
+  },
+  "col_CJ": {
+   "value": "China Venture Capital Innovation Investment Fund Co., Ltd.; Mirae; HHLRA; Deerfield; RTW Funds; Arc Avenue; Huadeng Technology; Isometry Global; GF Fund; ICBCUBS Entities; China AMC (HK); Fullgoal Fund; Lake Bleu; Sage Partners; ICBC Wealth Management; ORIX Asia AM",
+   "page": 249,
+   "quote": "China Venture Capital Innovation Investment Fund Co., Ltd. 10.0 7,460,500 3.71% 3.22% 0.71% 0.69% 0.65% 0.63% Mirae 8.0 5,968,500 2.97% 2.58% 0.57% 0.55% 0.52% 0.50% HHLRA; 16 cornerstone investors",
+   "confidence": "medium",
+   "note": "Cornerstone Placing: 16 cornerstone investors in total, US$148 million aggregate (table header: Cornerstone Investor / Investment Amount / Number of Offer Shares / Approximate %)."
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 253,
+   "quote": "references to the years of 2023, 2024 and 2025 refer to our fiscal years ended December 31 of such years, respectively.",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -121593000,
+   "page": 323,
+   "quote": "Net cash outflow from operating activities (192,428) (239,210) (121,593)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 828263000,
+   "page": 323,
+   "quote": "Cash and cash equivalents at the end of the year 561,470 557,641 828,263",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 269809000,
+   "page": 20,
+   "quote": "Research and development expenses (290,463) (274,001) (269,809)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 342,
+   "quote": "INTANGIBLE ASSETS Computer software License Total",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.989,
+   "page": 18,
+   "quote": "revenue generated from our five largest customers was RMB9.1 million, RMB1.2 million and RMB103.8 million, respectively, accounting for 98.0%, 83.7% and 98.9% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "剂泰科技(北京)股份有限公司",
+   "page": 2,
+   "quote": "Metis TechBio Co., Ltd. 劑泰科技(北京) 股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 19,
+   "quote": "We have undertaken several rounds of Pre-IPO Investments. For details of the background of our Pre-IPO Investors and the principal terms of the Pre-IPO Investments",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 138,
+   "quote": "5Y Capital is a global venture capital firm which specializes in fostering the growth of outstanding companies in the technology, life sciences, and consumer innovation sectors.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 137,
+   "quote": "HSG is a leading venture capital and private equity firm investing in the technology, healthcare and consumer sectors.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 144,
+   "quote": "XtalPi Investment Limited is a limited liability company incorporated in Hong Kong. It is a subsidiary owned as to 87.69% by XtalPi Holdings Limited",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 138,
+   "quote": "a Jiangsu Provincial Government fund, holds 30.00% partnership interests in Jiequan Chengda",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 137,
+   "quote": "HSG is a leading venture capital and private equity firm investing in the technology, healthcare and consumer sectors.",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "FreeS International Holdings (Hong Kong) Limited; Quadrant Ventures Limited; Chengdu Fengrui Tiantou Venture Capital Center (Limited Partnership); Kunshan Fengrui Equity Investment Center (Limited Partnership); HSG Seed I Holdco T, Ltd.; Mr. Wang Cong; Lightspeed China Partners IV, L.P.; Evolution Fund I, L.P.; Evolution Fund I Co-investment, L.P.; IMO Global Growth Fund SPC; XtalPi Investment Limited; YUAN BEN CHEN XING ONE-PERSON LIMITED COMPANY; Jiangsu Jiequan Chengda Equity Investment Centre (Limited Partnership); Shanghai Yuji Technology Partnership (Limited Partnership); Nanjing China Merchants Bank Win Equity Investment Partnership (Limited Partnership); PICC Beijing Health Care Fund, L.P.; HSG Venture VIII Holdco AC, Ltd.; Shanghai Ziyuan Investment Center (Limited Partnership); Duckling Fund, L.P.; Martis Fund, L.P.; 5Y Capital Evolution Fund II, L.P.; 5Y Capital Evolution Fund II Co-Investment, L.P.; Monolith Mini Fund L.P.; Taixi (Tianjin) Enterprise Management Partnership (Limited Partnership); CICC Healthcare Investment Opportunities VI Limited; CICC Kangrui; Taiping GBA Inno-Tech Limited Partnership Fund; Beijing Medical and Health Industry Investment Fund (Limited Partnership); Beijing Daxing District Industrial Development Fund Partnership (Limited Partnership)",
+   "page": 131,
+   "quote": "PRE-IPO INVESTMENTS 1. Overview We underwent rounds of Pre-IPO Investments, the details of which are set forth below: Round Pre-IPO Investor(s)(1)",
+   "confidence": "high",
+   "note": "共 29 名 Pre-IPO 投资者（Series Angel / Angel+ / Pre-A / Pre-A+ / A / B / C / D，按实体去重）; PICC Health & Pension Fund = PICC Beijing Health Care Fund, L.P.; HSG Venture VIII = HSG Venture VIII Holdco AC, Ltd."
+  },
+  "col_vc_pe_stake": {
+   "value": 0.3208,
+   "page": 139,
+   "quote": "our Sophisticated Independent Investors, all of whom being Pathfinder SIIs, held, in aggregate, approximately 32.08% in the total issued share capital of our Company.",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 135,
+   "quote": "rights of directors nomination, appointment, designation and replacement",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Series Angel Financing",
+   "page": 131,
+   "quote": "Series Angel Financing FreeS International Holdings (Hong Kong) Limited (\"FreeS\") February 21, 2020",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 6.2,
+   "page": 131,
+   "quote": "Series Angel Financing FreeS International Holdings (Hong Kong) Limited (\"FreeS\") February 21, 2020",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Individual (Dr. Lai, acting in concert as leader of the Single Largest Group of Shareholders)",
+   "page": 142,
+   "quote": "Dr. Lai/Scientia HK 12,133,426 12.75% 36,400,278 Unlisted Shares 3.16%",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.2532,
+   "page": 235,
+   "quote": "as our Single Largest Group of Shareholders, will directly or indirectly hold in aggregate approximately 25.32% of the total share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.2532,
+   "page": 80,
+   "quote": "our Single Largest Group of Shareholders will be entitled to exercise voting rights of 25.32% of the total issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "10/01/2020",
+   "page": 380,
+   "quote": "Our Company was established as a limited liability company in the PRC on January 10, 2020 and was converted into a joint stock company on June 30, 2025 under the laws of the PRC.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Room 201, 2/F, Building 13, No. 21 Tianhe West Road, Daxing Biomedical Industry Base, Zhongguancun Science Park, Daxing District, Beijing, PRC",
+   "page": 94,
+   "quote": "Room 201, 2/F, Building 13 No. 21 Tianhe West Road Daxing Biomedical Industry Base Zhongguancun Science Park Daxing District, Beijing, PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "05/05/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, May 5, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "08/05/2026",
+   "page": 5,
+   "quote": "Application lists close . . . 12:00 noon on Friday, May 8, 2026",
+   "confidence": "high"
+  }
+ }
+}

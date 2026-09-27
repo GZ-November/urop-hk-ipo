@@ -1,0 +1,428 @@
+{
+  "code": "1236.HK",
+  "fields": {
+    "col_L": {
+      "value": 333333400,
+      "page": 212,
+      "quote": "H Shares converted from Unlisted Shares 300,000,000 90.00 H Shares to be issued under the Global Offering 33,333,400 10.00 Total 333,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 33333400,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering 33,333,400 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 300000000,
+      "page": 212,
+      "quote": "H Shares converted from Unlisted Shares 300,000,000 90.00 H Shares to be issued under the Global Offering 33,333,400 10.00 Total 333,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 300000000,
+      "page": 212,
+      "quote": "H Shares converted from Unlisted Shares 300,000,000 90.00 H Shares to be issued under the Global Offering 33,333,400 10.00 Total 333,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 212,
+      "quote": "H Shares converted from Unlisted Shares 300,000,000 90.00 H Shares to be issued under the Global Offering 33,333,400 10.00 Total 333,333,400 100.00",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 33333400,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering 33,333,400 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 30000000,
+      "page": 2,
+      "quote": "Number of International Offer Shares 30,000,000 H Shares (subject to adjustment and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 3333400,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares 3,333,400 H Shares (subject to adjustment)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 212,
+      "quote": "we would only have one class of Shares, H Shares as ordinary Shares in the share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 333333400,
+      "page": 212,
+      "quote": "H Shares converted from Unlisted Shares 300,000,000 90.00 H Shares to be issued under the Global Offering 33,333,400 10.00 Total 333,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 30.0,
+      "page": 2,
+      "quote": "Maximum Offer Price HK$30.00 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 24.0,
+      "page": 2,
+      "quote": "is currently expected to be not less than HK$24.00 per Offer Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 314,
+      "quote": "The Historical Financial Information is presented in RMB, which is the Company’s functional currency.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 600144000,
+      "page": 352,
+      "quote": "Total assets 600,144 652,644 674,998",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 652644000,
+      "page": 352,
+      "quote": "Total assets 600,144 652,644 674,998",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 674998000,
+      "page": 352,
+      "quote": "Total assets 600,144 652,644 674,998",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 452270000,
+      "page": 19,
+      "quote": "Net assets 452,270 407,550 368,042",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 407550000,
+      "page": 19,
+      "quote": "Net assets 452,270 407,550 368,042",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 368042000,
+      "page": 19,
+      "quote": "Net assets 452,270 407,550 368,042",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 147874000,
+      "page": 352,
+      "quote": "Total liabilities 147,874 245,094 306,956",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 245094000,
+      "page": 352,
+      "quote": "Total liabilities 147,874 245,094 306,956",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 306956000,
+      "page": 352,
+      "quote": "Total liabilities 147,874 245,094 306,956",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 276562000,
+      "page": 16,
+      "quote": "Revenue 276,562 100.0 467,345 100.0 747,773 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 467345000,
+      "page": 16,
+      "quote": "Revenue 276,562 100.0 467,345 100.0 747,773 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 747773000,
+      "page": 16,
+      "quote": "Revenue 276,562 100.0 467,345 100.0 747,773 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -68491000,
+      "page": 17,
+      "quote": "Loss before tax (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -56483000,
+      "page": 17,
+      "quote": "Loss before tax (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -62501000,
+      "page": 17,
+      "quote": "Loss before tax (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -68491000,
+      "page": 17,
+      "quote": "Loss for the year (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -56483000,
+      "page": 17,
+      "quote": "Loss for the year (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -62501000,
+      "page": 17,
+      "quote": "Loss for the year (68,491) (24.8) (56,483) (12.1) (62,501) (8.4)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 12660000,
+      "page": 247,
+      "quote": "Total indebtedness 13,372 8,616 12,660 24,726",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 302,
+      "quote": "The Historical Financial Information has been prepared in accordance with HKFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 191945000,
+      "page": 16,
+      "quote": "Gross profit 71,109 25.7 91,317 19.5 191,945 25.7",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 10404000,
+      "page": 247,
+      "quote": "Total 6,010 11,154 10,404",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 292,
+      "quote": "a true and fair view of the financial position of the Group and the Company as at 31 December 2023, 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.025,
+      "page": 265,
+      "quote": "The Underwriters will receive an underwriting commission of 2.5% of the aggregate offer price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.025,
+      "page": 265,
+      "quote": "The Underwriters will receive an underwriting commission of 2.5% of the aggregate offer price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 271,
+      "quote": "to require us to issue up to an aggregate of 5,000,000 H Shares, representing not more than 15% of the total number of Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 72900000,
+      "page": 23,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately RMB63.9 million (HK$72.9 million)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Design, development and manufacture of intelligent robots; visual perception products and robot lawn mowers",
+      "page": 302,
+      "quote": "the Company and its subsidiaries (collectively, the Group) were mainly engaged in the design, development and manufacture of intelligent robots",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange (Rule 8.05(3) market capitalisation/revenue test); PRC issuer H Shares",
+      "page": 24,
+      "quote": "on the basis that we satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Mass production and commercialization",
+      "page": 12,
+      "quote": "we achieved mass production of our second-generation intelligent robot lawn mowers in 2025, integrating our AI-powered scenario recognition and boundary detection algorithms",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 252,
+      "quote": "Approximately 45.0% of the net proceeds, or HK$372.2 million will be used to enhance R&D of intelligent robotic vision perception technology to achieve algorithm architecture upgrades",
+      "confidence": "medium",
+      "note": "USE OF PROCEEDS (pp.22-23/252-255): 45.0% R&D + 10.0% brand & overseas + 30.0% capacity expansion + 5.0% investment/acquisition + 10.0% working capital = 100%; no debt repayment."
+    },
+    "col_CJ": {
+      "value": "KCH Vision Investment Limited",
+      "page": 216,
+      "quote": "KCH Vision Investment Limited 277,000,000 11,541,600 34.62 3.46 30.11 3.41 Total 277,000,000 11,541,600",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 295,
+      "quote": "As at 31 December 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -136473000,
+      "page": 299,
+      "quote": "Net cash flows used in operating activities (49,148) (29,104) (136,473)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 119382000,
+      "page": 300,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR 27,585 46,950 119,382",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 121121000,
+      "page": 17,
+      "quote": "Research and development expenses (95,940) (34.7) (94,857) (20.3) (121,121) (16.2)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 328,
+      "quote": "15. OTHER INTANGIBLE ASSETS The Group Software Patent Total RMB’000",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.498,
+      "page": 15,
+      "quote": "Our revenue generated from our five largest customers in 2023, 2024 and 2025 accounted for 65.1%, 54.3% and 49.8%, respectively, of our revenue during the same year",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "深圳乐动机器人股份有限公司",
+      "page": 1,
+      "quote": "深圳樂動機器人股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 15,
+      "quote": "Since our establishment, we have attracted certain Pre-IPO Investors and completed several rounds of financing to raise funds for the development of our business.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 114,
+      "quote": "Lianjin Innovation Industry Private Equity Investment Fund (Shenzhen) Partnership Enterprise (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 113,
+      "quote": "Hangzhou Yuanjing SME Development Equity Investment Fund Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 123,
+      "quote": "Houpu Digital is wholly owned by New Hope Investment Development (Guangdong) Co., Ltd. (新希望投資發展(廣東)有限公司), which in turn is wholly owned by Nanfang Hope Industrial Co., Ltd.",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 123,
+      "quote": "Shenzhen Investment Holding Co., Ltd. is held by the State-owned Assets Supervision and Administration Commission of the Shenzhen Municipal People’s Government (深圳市人民政府國有資產監督管理委員會) as to 100.00%",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 12,
+      "quote": "Experienced management team with strong support from our top tier investors",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Tibet Wanqing; Hunan Huaye; Zhuhai Huaye; Wuhan Yuanxia; Qicheng Investment; Mingshi Changfeng; Pengyuansheng; Yuanjing SME; Yuanjing Dingheng; Lianjin Innovation; Jiuyu Galaxy; Gongchuang Zhuoxin",
+      "page": 119,
+      "quote": "Huaye Tiancheng, Tibet Wanqing, Qicheng Investment, Mr. Wang Bing, Jiuyu Galaxy, Pengyuansheng, High Tech Investment Fuhai, Mingshi Changfeng, Maker Town, Yuanjing SME, Yuanjing Dingheng",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.5122,
+      "page": 126,
+      "quote": "Tibet Wanqing 4,471,470 44,714,700 N/A 14.90% 13.41% No Hunan Huaye and Zhuhai Huaye 4,058,370 40,583,700 N/A 13.53% 12.18% No Wuhan Yuanxia 985,710 9,857,100 N/A 3.29% 2.96% Yes",
+      "confidence": "low",
+      "note": "Pre-IPO institutional stake = 153,673,200 / 300,000,000 = 0.5122 (18 institutional Pre-IPO holders totalling 154,930,500 shares less Mr. Wang Bing 1,257,300). Component rows on pp.126-127."
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 119,
+      "quote": "liquidation preferences, most favorable treatment, information right and director and supervisor appointment right",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 117,
+      "quote": "Series A Investors Subscription June 22, 2021 30,000,000 1.96 87,460 June 22, 2021 92.10%",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 4.85,
+      "page": 117,
+      "quote": "Series A Investors Subscription June 22, 2021 30,000,000 1.96 87,460 June 22, 2021",
+      "confidence": "low",
+      "note": "Earliest Pre-IPO agreement 22/06/2021 to prospectus date 30/04/2026 = 1,773 days / 365.25 = 4.85 years."
+    },
+    "col_BB": {
+      "value": "Natural persons acting in concert (founders)",
+      "page": 116,
+      "quote": "As of the Latest Practicable Date, Mr. Zhou, Mr. Guo (by virtue of the Acting in Concert Agreement among Mr. Zhou and Mr. Guo), Ms. Wang (being Mr. Zhou’s spouse) and Photon Space",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3565,
+      "page": 15,
+      "quote": "Immediately following the completion the Global Offering, the group of Controlling Shareholders will in aggregate hold approximately 35.65% of the Shares",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3565,
+      "page": 15,
+      "quote": "Immediately following the completion the Global Offering, the group of Controlling Shareholders will in aggregate hold approximately 35.65% of the Shares",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "17/11/2017",
+      "page": 302,
+      "quote": "SHENZHEN LDROBOT CO., LTD was incorporated in Chinese Mainland on 17 November 2017 as a limited liability company under the PRC laws",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "7/F and 16/F, Tower A, Building 6, International Innovation Valley, Xili Subdistrict, Nanshan District, Shenzhen, Guangdong Province, PRC",
+      "page": 79,
+      "quote": "Headquarters and Principal Place of Business in the PRC: 7/F and 16/F, Tower A, Building 6, International Innovation Valley, Xili Subdistrict, Nanshan District, Shenzhen",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "30/04/2026",
+      "page": 5,
+      "quote": "9:00 a.m. on Thursday, April 30, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/05/2026",
+      "page": 5,
+      "quote": "12:00 noon on Wednesday, May 6, 2026",
+      "confidence": "high"
+    }
+  }
+}

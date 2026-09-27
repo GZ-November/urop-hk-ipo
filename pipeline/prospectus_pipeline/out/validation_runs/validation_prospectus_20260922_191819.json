@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "target": "prospectus",
+  "expected_codes": [
+    "6636.HK"
+  ],
+  "records": [
+    {
+      "code": "6636.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/out/extracted/HKIPO-MB6636.json",
+      "hash": "eb1ae813e2353a4929e955fb64ea29b2e5589f5818becbfdbb5423d1de3f12db",
+      "json_sha256": "9cea4fca6d80e186645895021fc969dcac441c88c10104d5289a7dfa50d7c95f",
+      "status": "pass",
+      "fields_total": 70,
+      "fields_missing": [],
+      "errors": []
+    }
+  ],
+  "missing_files": [],
+  "pending_missing_fields": [],
+  "errors": [],
+  "gate_pass": true
+}

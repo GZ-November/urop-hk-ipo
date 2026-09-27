@@ -1,0 +1,428 @@
+{
+  "code": "0537.HK",
+  "fields": {
+    "col_L": {
+      "value": 218676617,
+      "page": 229,
+      "quote": "A Shares in issue 193,874,417 88.7% / H Shares to be issued pursuant to the Global Offering 24,802,200 11.3% / Total: 218,676,617",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 24802200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 24,802,200 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 193874417,
+      "page": 229,
+      "quote": "A Shares in issue 193,874,417 88.7%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 193874417,
+      "page": 229,
+      "quote": "A Shares in issue 193,874,417 88.7%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 229,
+      "quote": "H Shares to be issued pursuant to the Global Offering 24,802,200 11.3% Total: 218,676,617",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 24802200,
+      "page": 229,
+      "quote": "H Shares to be issued pursuant to the Global Offering 24,802,200 11.3%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 22321900,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 22,321,900 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2480300,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 2,480,300 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 24,802,200 H Shares ... Number of Hong Kong Offer Shares : 2,480,300 H Shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 24802200,
+      "page": 229,
+      "quote": "H Shares to be issued pursuant to the Global Offering 24,802,200 11.3%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 45.98,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$45.98 per H Share plus brokerage of 1%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 304,
+      "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 3852922000,
+      "page": 18,
+      "quote": "Total assets . . . 3,265,683 3,852,922 3,584,586",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 3584586000,
+      "page": 18,
+      "quote": "Total assets . . . 3,265,683 3,852,922 3,584,586",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 3550966000,
+      "page": 23,
+      "quote": "total assets remained relatively stable at RMB3,584.6 million as of December 31, 2025 and RMB3,551.0 million as of March 31, 2026",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 3167740000,
+      "page": 19,
+      "quote": "Total equity . . . 2,889,230 3,167,740 3,160,818",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 3160818000,
+      "page": 19,
+      "quote": "Total equity . . . 2,889,230 3,167,740 3,160,818",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 3179584000,
+      "page": 405,
+      "quote": "Total equity . . . 3,179,584 3,160,818",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 685182000,
+      "page": 18,
+      "quote": "Total liabilities . . . 376,453 685,182 423,768",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 423768000,
+      "page": 18,
+      "quote": "Total liabilities . . . 376,453 685,182 423,768",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 371382000,
+      "page": 23,
+      "quote": "Our total liabilities decreased by 12.4% from RMB423.8 million as of December 31, 2025 to RMB371.4 million as of March 31, 2026",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 775826000,
+      "page": 305,
+      "quote": "Revenue 6 670,538 775,826 900,234",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 900234000,
+      "page": 305,
+      "quote": "Revenue 6 670,538 775,826 900,234",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 926256000,
+      "page": 403,
+      "quote": "Revenue 4 231,564 167,803",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": 76818000,
+      "page": 305,
+      "quote": "Profit before tax 11 113,838 76,818 91,053",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 91053000,
+      "page": 305,
+      "quote": "Profit before tax 11 113,838 76,818 91,053",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 108724000,
+      "page": 403,
+      "quote": "Profit before tax 8 27,181 1,096",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": 92303000,
+      "page": 305,
+      "quote": "Profit for the year 107,953 92,303 86,083",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 86083000,
+      "page": 305,
+      "quote": "Profit for the year 107,953 92,303 86,083",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 92600000,
+      "page": 403,
+      "quote": "Profit for the period 23,150 3,783",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 58378000,
+      "page": 210,
+      "quote": "99,981 392,641 89,872 58,378",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 304,
+      "quote": "prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by the International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 128551000,
+      "page": 403,
+      "quote": "Gross profit 128,551 88,451",
+      "confidence": "medium",
+      "note": "Gross profit is NOT annualised; year-1 is 3M2026, so the interim original value 128,551 thousand is used."
+    },
+    "col_CG": {
+      "value": 1318000,
+      "page": 408,
+      "quote": "Purchases of property, plant and equipment (1,318) (18,501)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unmodified opinion (true and fair view)",
+      "page": 303,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.04,
+      "page": 278,
+      "quote": "The Underwriters will receive an underwriting commission of 4% of the aggregate Offer Price of all the Offer Shares for both the Hong Kong Public Offering and the International Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.04,
+      "page": 278,
+      "quote": "The Underwriters will receive an underwriting commission of 4% of the aggregate Offer Price of all the Offer Shares for both the Hong Kong Public Offering and the International Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 220,
+      "quote": "Since there is no over-allotment option in the International Offering",
+      "confidence": "high",
+      "note": "No Over-allotment Option exists — confirmed zero."
+    },
+    "col_CI": {
+      "value": 99585000,
+      "page": 22,
+      "quote": "We estimate that our listing expenses will be approximately RMB86.6 million (based on the maximum Offer Price), representing 8.7% of the gross proceeds",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Electronic test and measurement instruments (design, development, manufacturing and sales)",
+      "page": 108,
+      "quote": "We are an electronic test and measurement instrument company in the PRC with advanced technology capabilities and extensive global footprint.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board - Rule 8.05(3) (market capitalisation/revenue test)",
+      "page": 21,
+      "quote": "We are applying for the Listing under Rule 8.05(3) of the Listing Rules and satisfy the market capitalization/revenue test under Rule 8.05(3)",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialized (mass production and sales; revenue-generating)",
+      "page": 108,
+      "quote": "We are the first and only PRC company to have successfully commercialized digital oscilloscopes with self-developed ASICs.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 21,
+      "quote": "the net proceeds for the following purposes, subject to changes in light of our evolving business needs and changing market conditions: (a) approximately 30%, or approximately HK$312.1 million",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "HHLR Advisors, Ltd.; CPE Hemlock; Suzhou High-tech Zone; Hua Yuan; Sungrow Power HK; CITIC Prudential Fund; Panglin Group",
+      "page": 221,
+      "quote": "THE CORNERSTONE INVESTORS The table below sets forth details of the Cornerstone Placing:",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 403,
+      "quote": "Three months ended March 31, 2026",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -5271000,
+      "page": 408,
+      "quote": "NET CASH USED IN OPERATING ACTIVITIES (5,271) (4,702)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 300303000,
+      "page": 408,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF PERIOD 300,303 316,038",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 56119000,
+      "page": 403,
+      "quote": "Research and development expenses (56,119) (52,928)",
+      "confidence": "medium"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 354,
+      "quote": "INTANGIBLE ASSETS The Group Patent Intellectual property Software Total",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "普源精电科技股份有限公司",
+      "page": 1,
+      "quote": "普源精電科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 100,
+      "quote": "Huiqi Venture, Tanying Investment, Qiangang Investment, Yuanhe Chongyuan No. 2, Jiangsu Zhaoyin and Nanjing Zhaoyin agreed to subscribe for the increased registered capital of our Company",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 100,
+      "quote": "Suzhou Huiqi Venture Capital Partnership (Limited Partnership)",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 101,
+      "quote": "Zhuhai Hillhouse Yaoheng Equity Investment Partnership (Limited Partnership)",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 100,
+      "quote": "Huiqi Venture, Tanying Investment, Qiangang Investment, Yuanhe Chongyuan No. 2, Jiangsu Zhaoyin and Nanjing Zhaoyin agreed to subscribe for the increased registered capital of our Company",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 100,
+      "quote": "Suzhou Industrial Zone Yuanhe Chongyuan No. 2 Equity Investment Fund Partnership (Limited Partnership)",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 101,
+      "quote": "Zhuhai Hillhouse Yaoheng Equity Investment Partnership (Limited Partnership)",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Hillhouse Yaoheng; Yuanhe Chongyuan No.2; Tanying Investment; Jiangsu Zhaoyin; Huiqi Venture; Nanjing Zhaoyin; Qiangang Investment",
+      "page": 100,
+      "quote": "Huiqi Venture, Tanying Investment, Qiangang Investment, Yuanhe Chongyuan No. 2, Jiangsu Zhaoyin and Nanjing Zhaoyin agreed to subscribe for the increased registered capital of our Company",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 258,
+      "quote": "Upon Listing, our Board will consist of seven Directors, including four executive Directors and three independent non-executive Directors.",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "June 2020 Capital Increase (RMB40.25 per share)",
+      "page": 100,
+      "quote": "On June 23, 2020, our Company, Mr. Li Weisen, Mr. Wang Tiejun, Dr. Wang Yue, RIGOL Investment, Ruige Hezhong, Ruijin Hezhong entered into a capital increase agreement",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 6.02,
+      "page": 100,
+      "quote": "On June 23, 2020, our Company, Mr. Li Weisen, Mr. Wang Tiejun, Dr. Wang Yue, RIGOL Investment, Ruige Hezhong, Ruijin Hezhong entered into a capital increase agreement",
+      "confidence": "low",
+      "note": "Earliest Pre-IPO agreement 23/06/2020 to prospectus date 30/06/2026 = 2,198 days / 365.25 = 6.02 years."
+    },
+    "col_BB": {
+      "value": "Natural person (individual)",
+      "page": 315,
+      "quote": "Dr. Wang Yue, with an aggregate of approximately 61.07% voting rights at the general meetings of the Company, is the controlling shareholder of the Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.5414,
+      "page": 20,
+      "quote": "Upon the completion of the Global Offering ... Dr. Wang Yue will be directly and indirectly entitled to exercise an aggregate 54.14% of the voting rights at the general meetings of our Company.",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.5414,
+      "page": 20,
+      "quote": "Upon the completion of the Global Offering ... Dr. Wang Yue will be directly and indirectly entitled to exercise an aggregate 54.14% of the voting rights at the general meetings of our Company.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "27/04/2009",
+      "page": 315,
+      "quote": "was incorporated as a limited liability company on April 27, 2009 by RIGOL Beijing Technologies Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 8 Keling Road, Suzhou High-Tech Zone, Suzhou, Jiangsu Province, PRC",
+      "page": 82,
+      "quote": "Registered Office and Headquarters in Chinese Mainland: No. 8 Keling Road, Suzhou High-Tech Zone, Suzhou, Jiangsu Province, PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "30/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences ... 9: 00 a.m. on Tuesday, June 30, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/07/2026",
+      "page": 5,
+      "quote": "Application lists close ... 12: 00 noon on Monday, July 6, 2026",
+      "confidence": "high"
+    }
+  }
+}

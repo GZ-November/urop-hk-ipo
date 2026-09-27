@@ -1,0 +1,119 @@
+{
+  "code": "7666.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.5487,
+      "page": 7,
+      "quote": "Total 110,415,000 54.87% 10.49% 9.58 %",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 6910.96,
+      "page": 5,
+      "quote": "Subscription level 6910.96 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 383309,
+      "page": 5,
+      "quote": "No. of valid applications 383,309",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 69534656500,
+      "page": 19,
+      "quote": "500 93,334 132 out of 93,334 to receive 500 Shares 0.14% 1,000 18,254 52 out of 18,254 to receive 500 Shares 0.14%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 6910.96 times",
+      "page": 5,
+      "quote": "Subscription level 6910.96 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$10.50; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：12/05/2026 22:43",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 201229000,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 201,229,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 40246000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering (after reallocation) 40,246,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 160983000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (after reallocation and before exercise of the Over-allotment Option) 160,983,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 30184000,
+      "page": 1,
+      "quote": "ectus has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, June 5, 2026, in respect of an aggregate of 30,184,000 H Shares ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF\nSTABILIZATION PERIOD (05/06/2026 18:49)"
+    },
+    "col_CW": {
+      "value": "香港公开发售超额认购50倍或以上触发回拨：由国际配售回拨 30,184,500 股至香港公开发售，最终香港公开发售股数为 40,246,000 股（约占全球发售 20.00%，假设超额配售权未行使），最终国际配售股数为 160,983,000 股（约占 80.00%）。",
+      "page": 5,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) 30,184,500",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1992700000,
+      "page": 4,
+      "quote": "Net proceeds HK$1,992.7 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.7185,
+      "page": 30,
+      "quote": "828,100,230 H Shares, representing approximately 71.85% of the issued share capital of our Company, will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 1152513850,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 1,152,513,850",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0788,
+      "page": null,
+      "quote": "公式：(col_CS 201,229,000 − col_CK 0.5487×col_CS) ÷ col_CZ 1,152,513,850 = 0.0788；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 201,229,000 − col_CK 0.5487×col_CS) ÷ col_CZ 1,152,513,850 = 0.0788；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1152513850,
+      "page": 3,
+      "quote": "公式：(col_CS 201,229,000 − col_CK 0.5487×col_CS) ÷ col_CZ 1,152,513,850 = 0.0788；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

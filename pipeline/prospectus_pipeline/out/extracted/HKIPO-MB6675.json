@@ -1,0 +1,463 @@
+{
+  "code": "6675.HK",
+  "fields": {
+    "col_L": {
+      "value": 379041820,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,041,820 100.00% See “—Con",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 53407000,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,041,820 100.00% See “—Con",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 325634820,
+      "page": 223,
+      "quote": "H Shares converted from Unlisted Shares 325,634,820 85.91% H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,0",
+      "confidence": "high",
+      "note": "口径固定为 col_L − col_M = 379,041,820 − 53,407,000 = 325,634,820（资本化发行前已发行股份总数）"
+    },
+    "col_O": {
+      "value": 325634820,
+      "page": 223,
+      "quote": "H Shares converted from Unlisted Shares 325,634,820 85.91% H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,0",
+      "confidence": "high",
+      "note": "口径固定为 col_L − col_M = 379,041,820 − 53,407,000 = 325,634,820"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 223,
+      "quote": "H Shares converted from Unlisted Shares 325,634,820 85.91% H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,0",
+      "confidence": "medium",
+      "note": "股本表只有「H Shares converted from Unlisted Shares」与「H Shares to be issued under the Global Offering」两类，无 Sale Shares 行；全部为新股发售（Offer for Subscription），故 col_P=0"
+    },
+    "col_Q": {
+      "value": 53407000,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,041,820 100.00% See “—Con",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 48066200,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 48,066,200 H Shares (subject to reallocation and the Over-allotment Option) Offer",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 5340800,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 5,340,800 H Shares (subject to reallocation) Number of International Offer Shares : 4",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 18.36,
+      "page": 2,
+      "quote": "HK$18.36 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, AFRC transaction levy of 0.00015% and Hon",
+      "confidence": "high",
+      "note": "固定发售价 HK$18.36，最高=最低"
+    },
+    "col_U": {
+      "value": 18.36,
+      "page": 2,
+      "quote": "HK$18.36 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, AFRC transaction levy of 0.00015% and Hon",
+      "confidence": "high",
+      "note": "固定发售价 HK$18.36，最高=最低"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 296,
+      "quote": "RMB’000 RMB’000 RMB’000 Revenue 4 223,483 347,540 477,861 Cost of sales",
+      "confidence": "high",
+      "note": "合并财务报表以人民币千元列示"
+    },
+    "col_W": {
+      "value": 634097000,
+      "page": 242,
+      "quote": "Total non-current assets 40,862 26,774 32,633 Total current assets 593,235 665,962 707,840 Total current liabilities",
+      "confidence": "high",
+      "note": "Total assets 2023 = non-current 40,862 + current 593,235 = 634,097 (RMB'000)"
+    },
+    "col_X": {
+      "value": 692736000,
+      "page": 242,
+      "quote": "Total non-current assets 40,862 26,774 32,633 Total current assets 593,235 665,962 707,840 Total current liabilities",
+      "confidence": "high",
+      "note": "Total assets 2024 = 26,774 + 665,962 = 692,736 (RMB'000)"
+    },
+    "col_Y": {
+      "value": 740473000,
+      "page": 242,
+      "quote": "Total non-current assets 40,862 26,774 32,633 Total current assets 593,235 665,962 707,840 Total current liabilities",
+      "confidence": "high",
+      "note": "Total assets 2025 = 32,633 + 707,840 = 740,473 (RMB'000)"
+    },
+    "col_Z": {
+      "value": -840273000,
+      "page": 242,
+      "quote": "Total deficit (840,273) (1,159,619) (1,479,012) FINANCIAL INFORMATION – 233 –",
+      "confidence": "high",
+      "note": "2023 total deficit (incl. NCI) = (840,273) (RMB'000)"
+    },
+    "col_AA": {
+      "value": -1159619000,
+      "page": 242,
+      "quote": "Total deficit (840,273) (1,159,619) (1,479,012) FINANCIAL INFORMATION – 233 –",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -1479012000,
+      "page": 242,
+      "quote": "Total deficit (840,273) (1,159,619) (1,479,012) FINANCIAL INFORMATION – 233 –",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1474370000,
+      "page": 17,
+      "confidence": "high",
+      "quote": "Total current liabilities 91,114 111,824 163,729",
+      "note": "Total liabilities = Total current liabilities + Total non-current liabilities: 91,114 + 1,383,256 = 1,474,370 (2023); 111,824 + 1,740,531 = 1,852,355 (2024); 163,729 + 2,055,756 = 2,219,485 (2025). Non-current liabilities line on p.17."
+    },
+    "col_AD": {
+      "value": 1852355000,
+      "page": 17,
+      "confidence": "high",
+      "quote": "Total current liabilities 91,114 111,824 163,729",
+      "note": "Total liabilities (2024) = 111,824 + 1,740,531 = 1,852,355. Non-current liabilities 1,740,531 on p.17."
+    },
+    "col_AE": {
+      "value": 2219485000,
+      "page": 17,
+      "confidence": "high",
+      "quote": "Total current liabilities 91,114 111,824 163,729",
+      "note": "Total liabilities (2025) = 163,729 + 2,055,756 = 2,219,485. Non-current liabilities 2,055,756 on p.17."
+    },
+    "col_AF": {
+      "value": 223483000,
+      "page": 296,
+      "quote": "223,483 347,540 477,861 Cost of sales (186,337) (276,9",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 347540000,
+      "page": 296,
+      "quote": "223,483 347,540 477,861 Cost of sales (186,337) (276,9",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 477861000,
+      "page": 296,
+      "quote": "223,483 347,540 477,861 Cost of sales (186,337) (276,9",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -355400000,
+      "page": 296,
+      "quote": "(355,400) (351,339) (330,564) Income tax",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -351339000,
+      "page": 296,
+      "quote": "(355,400) (351,339) (330,564) Income tax",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -330564000,
+      "page": 296,
+      "quote": "(355,400) (351,339) (330,564) Income tax",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -355801000,
+      "page": 296,
+      "quote": "(355,801) (351,339) (330,564) Attributable to: Equity shareh",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -351339000,
+      "page": 296,
+      "quote": "(355,801) (351,339) (330,564) Attributable to: Equity shareh",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -330564000,
+      "page": 296,
+      "quote": "(355,801) (351,339) (330,564) Attributable to: Equity shareh",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 269,
+      "quote": "equal to 3.0% of the aggregate Offer Price payable for the Offer Shares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment Option), out of which they will pay any",
+      "confidence": "high",
+      "note": "披露费率：全部发售股份承销佣金 3.0%（港、国际同率）"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 269,
+      "quote": "equal to 3.0% of the aggregate Offer Price payable for the Offer Shares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment Option), out of which they will pay any",
+      "confidence": "high",
+      "note": "披露费率：与国际发售同率 3.0%"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 269,
+      "quote": "not more than 15% of the number of Offer Shares initially available under the Global Offering, at the Offer Price, to cover over-allocations in the International Offering, if any. See “Structure of t",
+      "confidence": "high",
+      "note": "招股书披露：超额配售权不超过首次发售股份数目的 15%"
+    },
+    "col_AR": {
+      "value": "Fabless design, research and development and sales of automotive-grade wireless sensor SoCs (intelligent tire sensing SoCs, BMS SoCs, USI SoCs)",
+      "page": 226,
+      "quote": "wireless sensor SoCs globally, dedicated to providing innovative sensor chips. We are the third largest automotive wireless sensor SoC company globally and the largest automotive wireless sensor SoC",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19A of the Main Board Listing Rules (PRC H Share issuer, Main Board of the Stock Exchange)",
+      "page": 138,
+      "quote": "Rule 19A.13A(1) of the Listing Rules upon the Listing as such H Shares are held by Dr. Li, Mr. Li, Shanghai Chuangyingrui, Shanghai Ruixinchuang, Gongqingcheng SENASIC and Gongqingcheng Yingruichuang",
+      "confidence": "medium"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 297,
+      "quote": "At 31 December Note 2023 2024 2025 RMB’000 RMB’000 RMB’000 N",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -173637000,
+      "page": 300,
+      "quote": "Net cash used in operating activities (61,170) (137,122) (173,637)",
+      "confidence": "high",
+      "note": "2025 年经营活动所用现金净额 (173,637) 千元"
+    },
+    "col_AV": {
+      "value": 201347000,
+      "page": 300,
+      "quote": "Cash and cash equivalents at the end of the year 21(a) 98,805 89,088 201,347 APPENDIX I AC",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 101531000,
+      "page": 296,
+      "quote": "(95,891) (107,901) (101,531) Impairment losses on goodwill",
+      "confidence": "high",
+      "note": "2025 年研发成本（费用化）101,531 千元"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 320,
+      "quote": "INTANGIBLE ASSETS Trademark Software Total RMB’000 RMB’000 R",
+      "confidence": "medium",
+      "note": "无形资产附注仅列 Trademark 与 Software 两行，无 Development costs 行，故当期资本化开发成本为 0"
+    },
+    "col_AY": {
+      "value": 0.523,
+      "page": 178,
+      "quote": "35.6%, 52.1% and 52.3% of our total revenue of such period, respectively, and revenue generated from our largest customer for each period during the Track Record Period accounted for 9.2%, 25.2% and",
+      "confidence": "high",
+      "note": "year-1=FY2025，前五大客户收入占比 52.3%（也见 p180 Total 249,832 52.3%）"
+    },
+    "col_DP": {
+      "value": "琻捷电子科技(江苏)股份有限公司",
+      "page": 1,
+      "quote": "琻捷電子科技( 江蘇) 股份有限公司 SENASIC Electronics T",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Sunwoda HK; Longwei HK; Oakwise; Tembusu; Andrew Y Yan; RIME; Thalassa Capital; Chample; Libra Fixed Income One SP",
+      "page": 206,
+      "quote": "Sunwoda HK 40,000,000.00(2) 2,156,800 4.04% 0.57% 3.51% 0.56% Longwei HK 23,509,645.23(1) 1,280,400 2.40% 0.34% 2.08% 0.33% Oakwise",
+      "confidence": "high",
+      "note": "共 9 名基石投资者，合计 15,413,600 股 / HK$283,408,935.69（表中 Total 行）"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 18,
+      "quote": "PRE-IPO INVESTMENTS Since our establishment, we have attracted many reputable sophisticated investors to invest in our Company such as Mixed Reform Fund, Jingwei, CVC and certain industrial investors",
+      "confidence": "high",
+      "note": "上市前引入 Mixed Reform Fund、Jingwei、CVC、Chendao、Huaxin Chuangyuan、Shangqi Capital、Geely 等专业/产业投资者"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 130,
+      "quote": "Jingwei is an equity investment fund in the form of limited partnership and established under the laws of the PRC. The general partner of Jingwei is Hangzhou Maiqisi Investment Partnership (Limited P",
+      "confidence": "medium",
+      "note": "Jingwei 为私募股权/创业投资基金，其基金管理人 Shanghai Jingzhuo 专注科技领域投资"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 131,
+      "quote": "is a private equity fund manager focusing on automotive supply chain investments such as smart driving, advanced manufacturing, new energy and materials. Shangqi Capital is owned as to 40% of limited",
+      "confidence": "high",
+      "note": "Shangqi Capital 为专注汽车供应链投资的私募股权基金管理人"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 18,
+      "quote": "industrial investors including Chendao, Huaxin Chuangyuan, Shangqi Capital and Geely. See “History, Development and Corporate Structure—Pre-",
+      "confidence": "high",
+      "note": "招股书明确 Chendao、Huaxin Chuangyuan、Shangqi Capital、Geely 为产业投资者（Shangqi=上汽、Geely=吉利控股）"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 130,
+      "quote": "State-owned Assets Supervision and Administration Commission of the State Council (國務院國有資產監督管理委員會). The remaining 18 shareholders of Mixed Reform Fund are Independent Third Parties, none of which ind",
+      "confidence": "high",
+      "note": "Mixed Reform Fund 由国资委下属中国诚通控股控制；Shangqi Capital 由上海国资委最终控制"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low",
+      "note": "招股书未明确认定任何一线知名 VC/PE 机构，故按契约填 NaN"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Jiakaisheng; Huaxin Chuangyuan; SANY Gongying; Nanshan Hongtai; Shenzhen Huiyue; Shenzhen Tianhui; Qufu Tianbo; Jingwei; Hai Feng Investment; Changjiang Chendao; Nanjing Jinti; Thriving Capital; Ningbo Cenyou; Baolong Automotive; Guoce Investment; Jiaxing Xingxin; Ningbo Jiechuang; Shangqi Huizhu; Shangqi Delian; Shuangyi Hengrun; Wuxi Hancheng; Yibin Chendao; Guangqi Yuexiu; Yibin Lvneng; Changshun Zhiying; Geely; Mixed Reform Fund; Jiyuan Haoyue; Jiyuan Haoyuan; CICVC; Guangqi Zhiyuan; SANY; Changshun Jianye; Haiwang Fund; Junwang Chuangxin; Zhuhai Xinde; Dongguan Xinde; Huajin Lingyi; Huajin Shangying; Huachun Baoxin; Jianfa Emerging Industry; Jianfa Changrong; CVC; Jianfa Investment",
+      "page": 125,
+      "quote": "Name of Pre-IPO Investor(s) Date of agreement Date of settlement Registered capital of our Company subscribed for/acquired Consideration Cost per Share paid(2)(3) Discount to the Offer Price(4) (RMB)",
+      "confidence": "medium",
+      "note": "Pre-IPO investors total 44; the list includes Jianfa Investment, Jianfa Emerging Industry and Jianfa Changrong (p.128, Principal Terms of the Pre-IPO Investments)."
+    },
+    "col_vc_pe_stake": {
+      "value": 0.6579,
+      "page": 138,
+      "quote": "111,406,640 H Shares representing approximately 29.39% of our total issued Shares upon the Listing (without taking into account any Shares that may be issued upon exercise of the Over-allotment Optio",
+      "confidence": "medium",
+      "note": "上市前机构/其他股东合计 = (325,634,820 − 111,406,640 单一最大股东集团) ÷ 325,634,820 = 214,228,180/325,634,820 = 0.6579"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 213,
+      "quote": "a director in Hai Feng Investment Holding Limited (海風投資有限公司), one of our Shareholders, since January 2019, and he has served as a managing director in SL Capital (無錫君海聯芯投資管理有限公司) since April 2019, wh",
+      "confidence": "high",
+      "note": "非执行董事 Mr. Sha Chongjiu 自 2019 年 1 月起任 Pre-IPO 投资者 Hai Feng Investment Holding Limited 的董事"
+    },
+    "col_earliest_round": {
+      "value": "Angel Investments",
+      "page": 125,
+      "quote": "Angel Investments (Pre-money valuation: RMB19 million; Post-money valuation: RMB27 million(1)) Ningbo Jiakaisheng Invest",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 10.77,
+      "page": 125,
+      "quote": "August 31, 2015 November 25, 2016 8,000,000 8,000,000 0.02 99.87 May 18, 2017 December 26, 2017 240,000 7,800,000 0.54 9",
+      "confidence": "high",
+      "note": "最早 Pre-IPO 投资协议日 2015-08-31 至招股书日 2026-06-09，共 3,935 天 ≈ 10.77 年"
+    },
+    "col_BB": {
+      "value": "Natural persons acting in concert (Dr. Li and Mr. Li, Single Largest Group of Shareholders)",
+      "page": 115,
+      "quote": "jointly controlled our Company. As of the Latest Practicable Date, Dr. Li and Mr. Li have jointly controlled approximately 32.25% of our total issued share capital comprising the following: (i) appro",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.2771,
+      "page": 124,
+      "quote": "27.71% of our enlarged total issued share capital immediately following the completion of the Global Offering (without taking into account any Shares that may b",
+      "confidence": "high",
+      "note": "上市时 Dr. Li 与 Mr. Li 一致行动集团持有占扩大后总股本约 27.71% 的经济权益"
+    },
+    "col_BD": {
+      "value": 0.2771,
+      "page": 18,
+      "quote": "27.71% voting rights in our Company. Therefore, Dr. Li, Mr. Li, Shanghai Chuangyingrui, Shanghai Ruixinchuang, Shanghai Yaojun and Gongqingcheng SENASIC will be",
+      "confidence": "high",
+      "note": "上市时可行使 27.71% 投票权；无 WVR，与持股相同"
+    },
+    "col_BE": {
+      "value": 87898000,
+      "page": 251,
+      "quote": "Total indebtedness 7,729 15,705 87,898 242,808 Loans and Borrowings We had loans and borrowings of nil, RM",
+      "confidence": "high",
+      "note": "INDEBTEDNESS 表 Total（含租赁负债）：2025 年 87,898 千元"
+    },
+    "col_BF": {
+      "value": "Commercialized / mass production (TPMS SoCs in mass production since 2018; cumulative automotive sensor SoC shipments 241.9 million units as of December 31, 2025)",
+      "page": 226,
+      "quote": "cumulative shipment volume of our automotive sensor SoCs reached 241.9 million units. Our revenue was RMB223.5 million, RMB347.5 million and RMB477.9 million in",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 20,
+      "quote": "40.0% of the net proceeds, or HK$362.7 million, will be used for expanding our business scale and accelerating the commercialization of our new products; SUMMARY – 11 –",
+      "confidence": "medium",
+      "note": "USE OF PROCEEDS 全部用途：40.0% 扩大业务规模及加速新品商业化、30.0% 提升研发能力、10.0% 拓展销售网络、10.0% 战略投资或收购、10.0% 营运资金及其他一般公司用途；合计 100%，无偿还债务用途"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 53,407,000 H Shares (subject to the Over-allotment Option) Number of Hong Kong Offer Shares : 5,340,800 H Shares (subject to reallocation) Number of",
+      "confidence": "high",
+      "note": "上市后股份类别为 H Shares（未上市股份全部转换为 H 股）"
+    },
+    "col_BP": {
+      "value": "19/03/15",
+      "page": 116,
+      "quote": "March 19, 2015, our Company was established as a limited liability company under the laws of the PRC by Dr. Li and Mr. Li with a registered",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Room 601, No. 10, Lane 198, Zhangheng Road, Pudong New Area, Shanghai, PRC",
+      "page": 369,
+      "quote": "headquarter and principal place of business is at Room 601, No. 10, Lane 198, Zhangheng Road, Pudong New Area, Shanghai, PRC. We have established a place of business in Hong Kong at 19/F, Room 1912,",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS Accounting Standards",
+      "page": 302,
+      "quote": "HKFRS Accounting Standards, which collective term includes all applicable individual Hong Kong Financial Reporting Standards (“HKFRSs”), Hong Kong Accounting St",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "09/06/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, June 9, 2",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "12/06/26",
+      "page": 5,
+      "quote": "Application lists close(3) 12:00 noon on Friday, June 12, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 379041820,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering 53,407,000 14.09% Total 379,041,820 100.00% See “—Con",
+      "confidence": "high",
+      "note": "全流通：325,634,820 未上市股份全部转换为 H 股 + 新股 53,407,000 = 379,041,820，全部于港交所挂牌"
+    },
+    "col_CF": {
+      "value": 133588000,
+      "page": 296,
+      "quote": "37,146 70,604 133,588 Other net (losses)/income 5 (1,376) (1,80",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 10545000,
+      "page": 252,
+      "quote": "Payments for the purchase of property, plant and equipment and intangible assets 6,254 8,541 10,545 We expect to incur additiona",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 294,
+      "quote": "true and fair view of the Company’s and the Group’s financial position as at 31 December 2023, 2024 and 2025, and of the Group’s financial performance and cash",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 73900000,
+      "page": 20,
+      "quote": "of approximately RMB64.3 million (HK$73.9 million) of listing expenses in connection with the Global Offering, representing approximately 7.5% of the gross proceeds from the Global Offering (at the O",
+      "confidence": "high",
+      "note": "预计上市费用总额约 RMB64.3 million（HK$73.9 million），含承销佣金及其他开支"
+    }
+  }
+}

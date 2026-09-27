@@ -1,0 +1,115 @@
+{
+  "code": "1187.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3576,
+      "page": 6,
+      "quote": "Total 9,654,300 35.76% 4.09%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 399.08,
+      "page": 4,
+      "quote": "Subscription level 399.08 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 105939,
+      "page": 4,
+      "quote": "No. of valid applications 105,939",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1077506800,
+      "page": 12,
+      "quote": "100,000 1,364 1,160 out of 1,364 applicants to receive 100 H Shares 0.09% Total 104,431 Total number of Pool A successful applicants: 13,500",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 399.08 times",
+      "page": 4,
+      "quote": "Subscription level 399.08 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "04/05/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Company and the Sponsor-Overall Coordinators (for themselves and on behalf of the Und",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "05/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：05/05/2026 22:12",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 27000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 27,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2700000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 2,700,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 24300000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 24,300,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-05-06 起 45 天内共 11 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-06-20 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (Claw-back triggered: N/A); 0 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering; final HK Public Offering 2,700,000 = 10.00% of the Global Offering.",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 2,700,000 Number of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1007100000,
+      "page": 4,
+      "quote": "Net proceeds HK$1,007.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1167,
+      "page": 27,
+      "quote": "the total number of the 27,000,000 H Shares expected to be held by the public represents approximately 11.67% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 231400869,
+      "page": 27,
+      "quote": "represents approximately 11.67% of the total issued share capital of our Company (excluding 4,496,131 A Shares repurchased by our Company as treasury shares as of the date of this announcement)",
+      "confidence": "medium"
+    },
+    "col_DA": {
+      "value": 0.075,
+      "page": 27,
+      "quote": "the remaining 17,345,700 H Shares, representing approximately 7.50% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital upon Listing excluding 4,496,131 A Shares repurchased as treasury shares = 235,897,000 - 4,496,131 = 231,400,869 Shares; numerator = Global Offering Offer Shares (27,000,000) minus cornerstone allocation subject to six-month lock-up (9,654,300) = 17,345,700 H Shares.",
+      "page": 27,
+      "quote": "excluding 4,496,131 A Shares repurchased by our Company as treasury shares as of the date of this announcement",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 231400869,
+      "page": 27,
+      "quote": "excluding 4,496,131 A Shares repurchased by our Company as treasury shares as of the date of this announcement",
+      "confidence": "medium"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 107,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Mr. LU Ying . . . . . 13,525,400 3.64% — — 13,525,400 10.08%",
+          "13,525,400",
+          "3.25%"
+        ],
+        [
+          "Chengdu Excelland(1) . 53,188,450 14.32% — — 53,188,450 39.65%",
+          "53,188,450",
+          "12.77%"
+        ],
+        [
+          "Eagle Field 22,595,650 6.08% — — 22,595,650 16.85%",
+          "22,595,650",
+          "5.43%"
+        ],
+        [
+          "Mr. GU Zhenjiang . . 16,035,600 4.32% — — 16,035,600 11.96%",
+          "16,035,600",
+          "3.85%"
+        ],
+        [
+          "Mr. LIU Dazhi . . . . 10,790,150 2.91% — — 10,790,150 8.05%",
+          "10,790,150",
+          "2.59%"
+        ],
+        [
+          "Mr. LUO Pei . . . . . 4,508,350 1.22% — — 4,508,350 3.36%",
+          "4,508,350",
+          "1.08%"
+        ],
+        [
+          "Mr. XIA Ge . . . . . . 3,389,400 0.91% — — 3,389,400 2.53%",
+          "3,389,400",
+          "0.82%"
+        ],
+        [
+          "Sub-total . . . . . . . 124,033,000 33.40% — — 124,033,000 92.47%",
+          "124,033,000",
+          "29.79%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                             | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------------------- | ---------------- | -------------------------- |\n| Mr. LU Ying . . . . . 13,525,400 3.64% — — 13,525,400 10.08%      | 13,525,400       | 3.25%                      |\n| Chengdu Excelland(1) . 53,188,450 14.32% — — 53,188,450 39.65%    | 53,188,450       | 12.77%                     |\n| Eagle Field 22,595,650 6.08% — — 22,595,650 16.85%                | 22,595,650       | 5.43%                      |\n| Mr. GU Zhenjiang . . 16,035,600 4.32% — — 16,035,600 11.96%       | 16,035,600       | 3.85%                      |\n| Mr. LIU Dazhi . . . . 10,790,150 2.91% — — 10,790,150 8.05%       | 10,790,150       | 2.59%                      |\n| Mr. LUO Pei . . . . . 4,508,350 1.22% — — 4,508,350 3.36%         | 4,508,350        | 1.08%                      |\n| Mr. XIA Ge . . . . . . 3,389,400 0.91% — — 3,389,400 2.53%        | 3,389,400        | 0.82%                      |\n| Sub-total . . . . . . . 124,033,000 33.40% — — 124,033,000 92.47% | 124,033,000      | 29.79%                     |",
+      "metadata": {
+        "total_rows": 8
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 232,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Total . . . . . . . . . . . . . . .",
+          ".",
+          "1,634,400",
+          "3.63"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          ".",
+          "1,389,200",
+          "3.09"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          ".",
+          "1,208,000",
+          "2.68"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Total . . . . . . . . . . . . . . . | .                     | 1,634,400              | 3.63                          |\n| Total . . . . . . . . . . . . . . . | .                     | 1,389,200              | 3.09                          |\n| Total . . . . . . . . . . . . . . . | .                     | 1,208,000              | 2.68                          |",
+      "metadata": {
+        "investor_count": 3
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 17,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "back listing expenses and share-based payment",
+          "expenses."
+        ]
+      ],
+      "markdown": "| Item Description                              | Rate / Amount Disclosed |\n| --------------------------------------------- | ----------------------- |\n| back listing expenses and share-based payment | expenses.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

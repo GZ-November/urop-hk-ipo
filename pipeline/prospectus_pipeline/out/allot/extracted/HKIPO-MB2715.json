@@ -1,0 +1,116 @@
+{
+  "code": "2715.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3518,
+      "page": 6,
+      "quote": "Total 34,048,600 35.18%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 19.67,
+      "page": 4,
+      "quote": "Subscription level 19.67 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 27190,
+      "page": 4,
+      "quote": "No. of valid applications 27,190",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 190369800,
+      "page": 13,
+      "quote": "POOL A 200 12,869 642 out of 12,869 to receive 200 Shares 4.99%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 19.67 times",
+      "page": 4,
+      "quote": "Subscription level 19.67 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "05/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between us and the Sponsor-Overall Coordinator (for itself and on behalf of the Underwriters",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "06/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**06/03/2026 21:18**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 96780000,
+      "page": 3,
+      "quote": "Number of Offer Shares 96,780,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 9678000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 9,678,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 87102000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 87,102,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD\nAND LAPSE OF THE OVER-ALLOTMENT OPTION（07/04/2026 18:11）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD\nAND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; final number of Offer Shares under the Hong Kong Public Offering = initial 9,678,000 (no shares reallocated from the International Offering)",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 9,678,000 Final no. of Offer Shares under the Hong Kong Public Offering 9,678,000 % of Offer Shares",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1411530000,
+      "page": 4,
+      "quote": "Net proceeds HK$1,411.53 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1,
+      "page": 22,
+      "quote": "Immediately after the completion of the Global Offering, the number of the H Shares to be held by the public represents approximately 10.00% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 967798453,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 967,798,453",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0648,
+      "page": 22,
+      "quote": "As such, H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Total issued Shares upon Listing (before exercise of the Over-allotment Option) = 967,798,453; H Shares held by Cornerstone Investors upon Listing are excluded from free float (six-month lock-up)",
+      "page": 22,
+      "quote": "As such, H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 967798453,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 967,798,453",
+      "confidence": "medium"
+    }
+  }
+}

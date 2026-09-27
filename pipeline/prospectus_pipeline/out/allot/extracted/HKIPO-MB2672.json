@@ -1,0 +1,118 @@
+{
+  "code": "2672.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.0384,
+      "page": 5,
+      "quote": "GLY New Mobility 641,000 0.42% 0.20% No Mr. Ke 641,000 0.42% 0.20% No Total 1,282,000",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 242.05,
+      "page": 4,
+      "quote": "Subscription level 242.05 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 44599,
+      "page": 4,
+      "quote": "No. of valid applications 44,599",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 807145000,
+      "page": 10,
+      "quote": "200,000 303 400 Shares 0.20% 43,443 Total number of Pool A successful applicants: 7,780 POOL B 300,000 532 800 Shares plus 382 out of 532 to receive additional 200 Shares 0.31%",
+      "confidence": "high",
+      "note": "BASIS OF ALLOCATION 表跨第 9–10 页（Pool A 在 p.9，Pool B 在 p.10）；全表合计 = Pool A 170,773,800 + Pool B 636,371,200 = 807,145,000，与 3,334,600 × 242.05 交叉核对一致。引文含 Pool A 末档及汇总行、Pool B 边界及首档，体现两池逐档加总。"
+    },
+    "col_CP": {
+      "value": "Subscription level 242.05 times",
+      "page": 4,
+      "quote": "Subscription level 242.05 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "26/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**26/06/2026 21:13**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 33344400,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 33,344,400 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3334600,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 3,334,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 30009800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 30,009,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-06-29 起 45 天内共 2 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-08-13 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered N/A",
+      "page": 4,
+      "quote": "Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 465790457,
+      "page": 4,
+      "quote": "Net Proceeds HK$465,790,457",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2569,
+      "page": 12,
+      "quote": "the total number of H Shares held in public hands represents approximately 25.69% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 320620632,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 320,620,632",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1,
+      "page": null,
+      "quote": "公式：(col_CS 33,344,400 − col_CK 0.0384×col_CS) ÷ col_CZ 320,620,632 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 33,344,400 − col_CK 0.0384×col_CS) ÷ col_CZ 320,620,632 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 320620632,
+      "page": 3,
+      "quote": "公式：(col_CS 33,344,400 − col_CK 0.0384×col_CS) ÷ col_CZ 320,620,632 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

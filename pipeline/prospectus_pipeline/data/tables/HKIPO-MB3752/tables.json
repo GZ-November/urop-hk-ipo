@@ -1,0 +1,196 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 271,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "GF Fund USD",
+          "5.0",
+          "1,031,000",
+          "4.48%"
+        ],
+        [
+          "Huatai Capital USD",
+          "6.0",
+          "1,237,200",
+          "5.37%"
+        ],
+        [
+          "Capital RMB",
+          "100.0",
+          "3,026,600",
+          "13.14%"
+        ],
+        [
+          "Yishao Capital USD",
+          "1.5",
+          "309,300",
+          "1.34%"
+        ],
+        [
+          "All View Fund USD",
+          "7.9",
+          "1,629,000",
+          "7.07%"
+        ],
+        [
+          "Total USD",
+          "35.08",
+          "7,233,100",
+          "31.40%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| GF Fund USD          | 5.0                   | 1,031,000              | 4.48%                         |\n| Huatai Capital USD   | 6.0                   | 1,237,200              | 5.37%                         |\n| Capital RMB          | 100.0                 | 3,026,600              | 13.14%                        |\n| Yishao Capital USD   | 1.5                   | 309,300                | 1.34%                         |\n| All View Fund USD    | 7.9                   | 1,629,000              | 7.07%                         |\n| Total USD            | 35.08                 | 7,233,100              | 31.40%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 14,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "of the redemption right. Listing expenses are incurred with the Global Offering and",
+          "Listing."
+        ]
+      ],
+      "markdown": "| Item Description                                                                    | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------- | ----------------------- |\n| of the redemption right. Listing expenses are incurred with the Global Offering and | Listing.                |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 17,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "is not exercised, including (1) underwriting commission",
+          "s,"
+        ],
+        [
+          "commissions and other fees and expenses payable by us in connection with the Global",
+          "Offering,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                    | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------- | ----------------------- |\n| is not exercised, including (1) underwriting commission                             | s,                      |\n| commissions and other fees and expenses payable by us in connection with the Global | Offering,               |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 14,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "267,025",
+          "100.0",
+          "325,257",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "30,571",
+          "11.4",
+          "71,192",
+          "21.9"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 267,025 | 100.0  | 325,257 | 100.0 |\n| Gross profit     | 30,571  | 11.4   | 71,192  | 21.9  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 234,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "267,025",
+          "100.0",
+          "325,257",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "30,571",
+          "11.4",
+          "71,192",
+          "21.9"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 267,025 | 100.0  | 325,257 | 100.0 |\n| Gross profit     | 30,571  | 11.4   | 71,192  | 21.9  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 309,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "5",
+          "267,025",
+          "325,257",
+          "521,747"
+        ],
+        [
+          "Gross profit",
+          "30,571",
+          "71,192",
+          "114,168"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------ | ------- | ------- | ------- |\n| Revenue          | 5      | 267,025 | 325,257 | 521,747 |\n| Gross profit     | 30,571 | 71,192  | 114,168 |         |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

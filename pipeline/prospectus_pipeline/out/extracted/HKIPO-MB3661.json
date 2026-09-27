@@ -1,0 +1,426 @@
+{
+  "code": "3661.HK",
+  "fields": {
+    "col_L": {
+      "value": 675015824,
+      "page": 225,
+      "quote": "A Shares in issue . . . 621,014,624 92.00% H Shares to be issued under the Global Offering . . . 54,001,200 8.00% Total . . . 675,015,824 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 54001200,
+      "page": 225,
+      "quote": "H Shares to be issued under the Global Offering . . . 54,001,200 8.00%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 621014624,
+      "page": 225,
+      "quote": "H Shares to be issued under the Global Offering . . . 54,001,200 8.00% Total . . . 675,015,824 100.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 621014624,
+      "page": 225,
+      "quote": "H Shares to be issued under the Global Offering . . . 54,001,200 8.00% Total . . . 675,015,824 100.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 225,
+      "quote": "A Shares in issue . . . 621,014,624 92.00% H Shares to be issued under the Global Offering . . . 54,001,200 8.00% Total . . . 675,015,824 100.00%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 54001200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 54,001,200 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 48601000,
+      "page": 269,
+      "quote": "the International Offering of initially 48,601,000 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 5400200,
+      "page": 269,
+      "quote": "the Hong Kong Public Offering of initially 5,400,200 H Shares (subject to reallocation) in Hong Kong",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 54,001,200 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 54001200,
+      "page": 225,
+      "quote": "H Shares to be issued under the Global Offering . . . 54,001,200 8.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 85.2,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$85.20 per H Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 15,
+      "quote": "(RMB in thousands)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 5771119000,
+      "page": 19,
+      "quote": "Total current assets . . . 3,248,464 3,690,614 4,598,489",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 6954150000,
+      "page": 400,
+      "quote": "Total non-current assets . . . 2,409,546 2,355,661",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 7187023000,
+      "page": 400,
+      "quote": "Total current assets . . . 4,777,477 4,598,489",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 4599260000,
+      "page": 19,
+      "quote": "Total equity . . . 3,843,824 4,599,260 5,327,106",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 5327106000,
+      "page": 19,
+      "quote": "Total equity . . . 3,843,824 4,599,260 5,327,106",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 5501334000,
+      "page": 401,
+      "quote": "Total equity . . . 5,501,334 5,327,106",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1171859000,
+      "page": 19,
+      "quote": "Total current liabilities . . . 618,699 868,870 1,232,409",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 1627044000,
+      "page": 400,
+      "quote": "Total current liabilities . . . 1,318,980 1,232,409",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 1685689000,
+      "page": 400,
+      "quote": "Total non-current liabilities . . . 366,709 394,635",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 3346983000,
+      "page": 15,
+      "quote": "Revenue . . . 2,615,716 3,346,983 3,898,055",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 3898055000,
+      "page": 15,
+      "quote": "Revenue . . . 2,615,716 3,346,983 3,898,055",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 4392524000,
+      "page": 398,
+      "quote": "Revenue . . . 3 1,098,131 789,561",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": 484783000,
+      "page": 16,
+      "quote": "Profit before tax . . . 254,139 484,783 549,890",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 549890000,
+      "page": 16,
+      "quote": "Profit before tax . . . 254,139 484,783 549,890",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 497784000,
+      "page": 398,
+      "quote": "PROFIT BEFORE TAX . . . 5 124,446 68,487",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": 491162000,
+      "page": 16,
+      "quote": "Profit for the year . . . 269,937 491,162 534,375",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 534375000,
+      "page": 16,
+      "quote": "Profit for the year . . . 269,937 491,162 534,375",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 491072000,
+      "page": 398,
+      "quote": "PROFIT FOR THE PERIOD . . . 122,768 58,658",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 565123000,
+      "page": 216,
+      "quote": "Total . . . 44,876 104,635 417,420 565,123",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 15,
+      "quote": "Our financial information was prepared in accordance with IFRS",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 497802000,
+      "page": 398,
+      "quote": "Gross profit . . . 497,802 349,795",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 96542000,
+      "page": 405,
+      "quote": "Purchases of items of property, plant and equipment . . . (96,542) (68,448)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 293,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.007,
+      "page": 266,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 0.7% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.007,
+      "page": 266,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 0.7% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 266,
+      "quote": "the Company may be required to issue up to an aggregate of 8,100,100 H Shares, representing not more than 15% of the number of Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 101000000,
+      "page": 22,
+      "quote": "for the Global Offering are approximately RMB87.9 million (equivalent to approximately HK$101.0 million)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Analog integrated circuit (IC) design, development and sales",
+      "page": 137,
+      "quote": "We are a leading analog IC company in China. We design, develop and sell high-performance analog ICs and sensors that sense, amplify, convert and power",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19A (PRC issuer with other listed shares), Main Board",
+      "page": 134,
+      "quote": "Where a new applicant is a PRC issuer with other listed shares at the time of listing, this will normally mean that the portion of H shares for which listing is sought that are held by the public",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized (products in mass production and revenue-generating)",
+      "page": 14,
+      "quote": "Our know-how and processes also support a smooth transition from prototyping to high-volume production, stabilizing our supply chain and ensuring high-quality output.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 24,
+      "quote": "Approximately 60.0% of the net proceeds, or HK$2,699.9 million, are expected to be used to enhance our R&D capabilities and expand our product portfolio over the next five years.",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "GIC Private Limited; JPMAMAPL; CPE Ginkgo; Da Cheng International; Dajia Life; DAMSIMF; First Sentier Investors; GF Fund Management; GF Fund HK; Golden Continent; HGI; HHLRA; HHLRA (as the investment manager of an SMA managed for CPP Investments); Huadeng Technology; Huaqin Singapore; Sungrow Power; ICBC Wealth; iSoftStone HK; LMR Master Fund; Millennium Capital; Ninety One Asia; Ocean Fine Industrial; PSBC Wealth; Taikang Life; Value Partners Hong Kong Limited; Value Partners Limited",
+      "page": 249,
+      "quote": "GIC Private Limited . . . 50.0 4,597,700 8.51% 0.68% 7.40% 0.67%",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 25,
+      "quote": "Unaudited Financial Information for the Three Months Ended March 31, 2026",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 45441000,
+      "page": 404,
+      "quote": "Net cash flows from operating activities . . . 45,441 91,207",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 1183697000,
+      "page": 400,
+      "quote": "Cash and cash equivalents . . . 21 1,183,697 1,181,028",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 293594000,
+      "page": 398,
+      "quote": "Research and development expenses . . . (293,594) (245,723)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 414,
+      "quote": "12. OTHER INTANGIBLE ASSETS Software copyright Certificate of layout rights for integrated circuits Patented technology Non-patented technology Software",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "quote": "",
+      "confidence": "medium",
+      "note": "Top-five customer concentration is disclosed only for FY2023/2024/2025 (37.3%/35.6%/33.1%, p.14 and p.165); year-1 is 3M2026, for which no figure is disclosed.",
+      "page": null
+    },
+    "col_DP": {
+      "value": "圣邦微电子（北京）股份有限公司",
+      "page": 2,
+      "quote": "SG Micro Corp 聖邦微電子（北京）股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Natural person",
+      "page": 229,
+      "quote": "As of the Latest Practicable Date, Hongshun Xiangtai was wholly owned by Dr. Zhang.",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.3282,
+      "page": 21,
+      "quote": "will in aggregate be entitled to exercise approximately 32.82% of the voting rights in the Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3282,
+      "page": 21,
+      "quote": "will in aggregate be entitled to exercise approximately 32.82% of the voting rights in the Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "26/01/2007",
+      "page": 406,
+      "quote": "is a limited company registered in Beijing, Chinese Mainland on 26 January 2007",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "4-1106, 11/F, No. 87 West Third Ring Road North, Haidian District, Beijing, PRC",
+      "page": 92,
+      "quote": "Registered Office, Headquarters and Principal Place of Business in the PRC : 4-1106, 11/F No. 87 West Third Ring Road North Haidian District Beijing PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "17/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . Wednesday, June 17, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "23/06/2026",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Tuesday, June 23, 2026",
+      "confidence": "high"
+    }
+  }
+}

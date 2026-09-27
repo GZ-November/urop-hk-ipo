@@ -1,0 +1,115 @@
+{
+  "code": "1609.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3471,
+      "page": 5,
+      "quote": "1,968,550 23.37% 3.59% No OAP IV (HK) Limited (奧博亞洲四期(香港)有限公司) (“OAP IV”) (Note 1) 397,650 4.72%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 7823.13,
+      "page": 4,
+      "quote": "Subscription level 7,823.13 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 300735,
+      "page": 4,
+      "quote": "No. of valid applications 300,735 No. of successful applications 16,844",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6588640500,
+      "page": 13,
+      "quote": "Approximate percentage allotted of the total number of H Shares applied for 50 69,002 1,034 out of 69,002 to receive 50 Shares 1.50%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 7,823.13 times",
+      "page": 4,
+      "quote": "Subscription level 7,823.13 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$98.50; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "04/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：04/05/2026 22:50",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 8421850,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 8,421,850 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 842200,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 842,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 7579650,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 7,579,650",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-05-05 起 45 天内共 9 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-06-19 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No clawback/reallocation: Claw-back triggered N/A; no Offer Shares reallocated from the International Offering; final Hong Kong Public Offering size 842,200 (10.00% of the Global Offering); International Offering retained 7,579,650 (90.00%).",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 842,200 No. of Offer Shares reallocated from the International Offering N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 758400000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$829.6 million Less: Estimated listing expenses payable based on Offer Price HK$71.2 million Net proceeds HK$758.4 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5212,
+      "page": 21,
+      "quote": "approximately 52.12% of the total number of issued Shares will be regarded as public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 54831344,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 54,831,344",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1003,
+      "page": 21,
+      "quote": "the total number of H Shares in issue upon Listing that are held by the public and not subject to any disposal restrictions is expected to be at least 10%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float numerator = Global Offering Shares (col_CS) less cornerstone allocation (col_CK x col_CS) = 8,421,850 - 2,922,900 = 5,498,950 H Shares not subject to disposal restrictions; denominator = total issued Shares upon Listing (54,831,344). Excludes Controlling Shareholders and Pre-IPO Investors (12-month PRC lock-up) and Cornerstone Investors (6-month lock-up).",
+      "page": 21,
+      "quote": "In consideration that the total number of H Shares in issue upon Listing that are held by the public and not subject to any disposal restrictions is expected to be at least 10%",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 54831344,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 54,831,344",
+      "confidence": "high"
+    }
+  }
+}

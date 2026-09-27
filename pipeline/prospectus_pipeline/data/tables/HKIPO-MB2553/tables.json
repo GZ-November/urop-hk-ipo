@@ -1,0 +1,229 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 107,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "and Shanghai 71,650,662 19.90% 35,650,662",
+          "36,000,000",
+          "17.91%"
+        ],
+        [
+          "NZ Tang Ming 34,137,886 9.48% –",
+          "34,137,886",
+          "8.53%"
+        ],
+        [
+          "LanzaTech Hong Kong 33,520,231 9.31% –",
+          "33,520,231",
+          "8.38%"
+        ],
+        [
+          "Ruihong Investment 26,162,800 7.27% –",
+          "26,162,800",
+          "6.54%"
+        ],
+        [
+          "Mitsui & Co., Ltd. 16,590,175 4.61% –",
+          "16,590,175",
+          "4.15%"
+        ],
+        [
+          "Caofeidian Fund 12,748,081 3.54% –",
+          "12,748,081",
+          "3.19%"
+        ],
+        [
+          "Guofu Yonglang 12,029,865 3.34% –",
+          "12,029,865",
+          "3.01%"
+        ],
+        [
+          "Pingyang Puyi 10,526,132 2.92% –",
+          "10,526,132",
+          "2.63%"
+        ],
+        [
+          "Guangzhou Fanmei 7,848,801 2.18% –",
+          "7,848,801",
+          "1.96%"
+        ],
+        [
+          "Tang Ming Hong Kong 4,535,755 1.26% –",
+          "4,535,755",
+          "1.13%"
+        ],
+        [
+          "Zhuhai Jinsheng 4,535,755 1.26% 2,267,877",
+          "2,267,878",
+          "1.13%"
+        ],
+        [
+          "Beijing Jiayeyuan 3,553,015 0.99% –",
+          "3,553,015",
+          "0.89%"
+        ],
+        [
+          "Qingdao Baiwei Zhihe 1,511,918 0.42% –",
+          "1,511,918",
+          "0.38%"
+        ],
+        [
+          "Shanghai Guoping 7,451,235 2.07% –",
+          "7,451,235",
+          "1.86%"
+        ],
+        [
+          "Jiaxing Guoxing 5,107,028 1.42% –",
+          "5,107,028",
+          "1.28%"
+        ],
+        [
+          "Binhe SIC 4,186,001 1.16% –",
+          "4,186,001",
+          "1.05%"
+        ],
+        [
+          "Jiaxing Tianchen 4,186,001 1.16% –",
+          "4,186,001",
+          "1.05%"
+        ],
+        [
+          "Jinxin Kaiying 4,186,001 1.16% –",
+          "4,186,001",
+          "1.05%"
+        ],
+        [
+          "Global Offering – – –",
+          "40,000,000",
+          "10.00%"
+        ],
+        [
+          "Total 360,000,000 100.00% 133,451,197",
+          "266,548,803",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                     | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------- | ---------------- | -------------------------- |\n| and Shanghai 71,650,662 19.90% 35,650,662 | 36,000,000       | 17.91%                     |\n| NZ Tang Ming 34,137,886 9.48% –           | 34,137,886       | 8.53%                      |\n| LanzaTech Hong Kong 33,520,231 9.31% –    | 33,520,231       | 8.38%                      |\n| Ruihong Investment 26,162,800 7.27% –     | 26,162,800       | 6.54%                      |\n| Mitsui & Co., Ltd. 16,590,175 4.61% –     | 16,590,175       | 4.15%                      |\n| Caofeidian Fund 12,748,081 3.54% –        | 12,748,081       | 3.19%                      |\n| Guofu Yonglang 12,029,865 3.34% –         | 12,029,865       | 3.01%                      |\n| Pingyang Puyi 10,526,132 2.92% –          | 10,526,132       | 2.63%                      |\n| Guangzhou Fanmei 7,848,801 2.18% –        | 7,848,801        | 1.96%                      |\n| Tang Ming Hong Kong 4,535,755 1.26% –     | 4,535,755        | 1.13%                      |\n| Zhuhai Jinsheng 4,535,755 1.26% 2,267,877 | 2,267,878        | 1.13%                      |\n| Beijing Jiayeyuan 3,553,015 0.99% –       | 3,553,015        | 0.89%                      |\n| Qingdao Baiwei Zhihe 1,511,918 0.42% –    | 1,511,918        | 0.38%                      |\n| Shanghai Guoping 7,451,235 2.07% –        | 7,451,235        | 1.86%                      |\n| Jiaxing Guoxing 5,107,028 1.42% –         | 5,107,028        | 1.28%                      |\n| Binhe SIC 4,186,001 1.16% –               | 4,186,001        | 1.05%                      |\n| Jiaxing Tianchen 4,186,001 1.16% –        | 4,186,001        | 1.05%                      |\n| Jinxin Kaiying 4,186,001 1.16% –          | 4,186,001        | 1.05%                      |\n| Global Offering – – –                     | 40,000,000       | 10.00%                     |\n| Total 360,000,000 100.00% 133,451,197     | 266,548,803      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 20
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 19,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "The estimated total listing expenses, which are non-recurring in",
+          "nature,"
+        ],
+        [
+          "underwriting-related expenses, including underwriting commissions and",
+          "fees,"
+        ],
+        [
+          "amount of our listing expenses, (i)",
+          "RMB13.5 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                      | Rate / Amount Disclosed |\n| --------------------------------------------------------------------- | ----------------------- |\n| The estimated total listing expenses, which are non-recurring in      | nature,                 |\n| underwriting-related expenses, including underwriting commissions and | fees,                   |\n| amount of our listing expenses, (i)                                   | RMB13.5 million         |",
+      "metadata": {
+        "items_count": 3
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 255,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "expenses and option costs, (ii) listing expenses associated with the Global",
+          "Offering,"
+        ]
+      ],
+      "markdown": "| Item Description                                                            | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------- | ----------------------- |\n| expenses and option costs, (ii) listing expenses associated with the Global | Offering,               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "592,551",
+          "563,611",
+          "521,698"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  |\n| ---------------- | ------- | ------- | ------- |\n| Revenue          | 592,551 | 563,611 | 521,698 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "2,680,513",
+          "2,560,572",
+          "2,504,777"
+        ],
+        [
+          "Total liabilities",
+          "1,501,413",
+          "1,627,040",
+          "1,896,159"
+        ],
+        [
+          "Total equity",
+          "1,179,100",
+          "933,532",
+          "608,618"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 2,680,513 | 2,560,572 | 2,504,777 |\n| Total liabilities | 1,501,413 | 1,627,040 | 1,896,159 |\n| Total equity      | 1,179,100 | 933,532   | 608,618   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

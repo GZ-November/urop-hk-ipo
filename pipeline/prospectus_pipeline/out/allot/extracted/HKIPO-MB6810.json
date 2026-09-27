@@ -1,0 +1,115 @@
+{
+  "code": "6810.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2703,
+      "page": 6,
+      "quote": "China Orient Enhanced Income Fund 1,575,100 3.70% 0.52% 0.39% No XINWUTANG CO., LIMITED (1) 9,945,700 23.33%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2003.16,
+      "page": 4,
+      "quote": "Subscription level 2,003.16 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 204939,
+      "page": 4,
+      "quote": "No. of valid applications 204,939 No. of successful applications 32,542",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 8538879300,
+      "page": 14,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,003.16 times",
+      "page": 4,
+      "quote": "Subscription level 2,003.16 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$24.86; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "28/04/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**28/04/2026 22:30**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 42626800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 42,626,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4262700,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 4,262,700",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 38364100,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 38,364,100",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-04-29 起 45 天内共 9 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-06-13 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (Claw-back triggered: N/A); no Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (N/A); final Hong Kong Public Offering remains 4,262,700 H Shares, being 10.00% of the Global Offering",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 4,262,700",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 922000000,
+      "page": 3,
+      "quote": "Net proceeds HK$922.0 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5414,
+      "page": 25,
+      "quote": "164,608,815 H Shares, representing approximately 54.14% of the total number of H Shares of our Company, will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 304042524,
+      "page": 25,
+      "quote": "164,608,815 H Shares, representing approximately 54.14% of the total number of H Shares of our Company",
+      "confidence": "medium"
+    },
+    "col_DA": {
+      "value": 0.1023,
+      "page": 25,
+      "quote": "representing 10.23% of our total number of H Shares, which will be counted as the free float",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total number of H Shares of the Company upon Listing (304,042,524); numerator = Global Offering Offer Shares (42,626,800) minus Cornerstone Investor allocation (11,520,800) = 31,106,000 H Shares. H Shares held by Cornerstone Investors (6-month lock-up) and all Shares subject to the PRC Company Law one-year transfer restriction are excluded from the free float.",
+      "page": 25,
+      "quote": "H Shares held by the cornerstone investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 304042524,
+      "page": 25,
+      "quote": "164,608,815 H Shares, representing approximately 54.14% of the total number of H Shares of our Company, will be counted towards the public float",
+      "confidence": "medium"
+    }
+  }
+}

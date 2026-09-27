@@ -1,0 +1,119 @@
+{
+  "code": "1081.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4221,
+      "page": 7,
+      "quote": "Total\n42,217,400\n42.21%\n5.72%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 134.39,
+      "page": 5,
+      "quote": "Subscription level\n134.39 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 122627,
+      "page": 5,
+      "quote": "No. of valid applications\n122,627",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1168777400,
+      "page": 15,
+      "quote": "POOL A\n100\n56,672\n1,701 out of 56,672 applicants to receive 100 H Shares\n3.00%\n200\n8,402",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 134.39 times",
+      "page": 5,
+      "quote": "Subscription level\n134.39 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "03/06/26",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or about Wednesday, June 3, 2026 and, in any event, not later than 12:00 noon on",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "04/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**04/06/2026 22:22**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 100010600,
+      "page": 3,
+      "quote": "Number of Offer Shares (taking into \naccount the full exercise of the Offer Size \nAdjustment Option and before exercise of \nthe Over-allotment Option)\n100,010,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 8696600,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong \nKong Public Offering\n8,696,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 91314000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the \nInternational Offering (after taking into \naccount the full exercise of the Offer Size \nAdjustment Option)\n91,314,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 2325900,
+      "page": 1,
+      "quote": "tially exercised by the Joint Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters) on Thursday, July 2, 2026 in respect of an aggregate of 2,325,900 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (02/07/2026 22:40)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; No. of Offer Shares reallocated from the International Offering: 0; Final no. of Offer Shares under the Hong Kong Public Offering: 8,696,600",
+      "page": 5,
+      "quote": "No. of Offer Shares reallocated from the \nInternational Offering\n0\nFinal no. of Offer Shares under the Hong \nKong Public Offering\n8,696,600",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 6465480000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$6,465.48 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1356,
+      "page": 22,
+      "quote": "representing approximately \n13.56% of the total issued share capital immediately upon Listing (excluding the treasury shares), \nare expected to be held by the public",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 737759949,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n(before exercise of the Over-allotment \nOption)\n737,759,949",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0783,
+      "page": null,
+      "quote": "公式：(col_CS 100,010,600 − col_CK 0.4221×col_CS) ÷ col_CZ 737,759,949 = 0.0783；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 100,010,600 − col_CK 0.4221×col_CS) ÷ col_CZ 737,759,949 = 0.0783；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 737759949,
+      "page": 3,
+      "quote": "公式：(col_CS 100,010,600 − col_CK 0.4221×col_CS) ÷ col_CZ 737,759,949 = 0.0783；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

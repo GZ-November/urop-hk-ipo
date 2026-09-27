@@ -1,0 +1,428 @@
+{
+  "code": "2475.HK",
+  "fields": {
+    "col_L": {
+      "value": 7701730624,
+      "page": 217,
+      "quote": "383,472,800 4.98% Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7,701,730,624 100.00%",
+      "confidence": "high",
+      "note": "Total (without option) = total issued shares immediately after completion of the Global Offering, assuming the Over-allotment Option is not exercised."
+    },
+    "col_M": {
+      "value": 383472800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 383,472,800 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 7318257824,
+      "page": 217,
+      "quote": "BEFORE THE GLOBAL OFFERING As of the Latest Practicable Date, the total issued share capital of our Company was 7,318,257,824 A Shares with a nominal value of RMB1.0",
+      "confidence": "high",
+      "note": "Capitalisation shares before the Global Offering = L − M = 7,701,730,624 − 383,472,800 = 7,318,257,824."
+    },
+    "col_O": {
+      "value": 7318257824,
+      "page": 217,
+      "quote": "BEFORE THE GLOBAL OFFERING As of the Latest Practicable Date, the total issued share capital of our Company was 7,318,257,824 A Shares with a nominal value of RMB1.0",
+      "confidence": "high",
+      "note": "Same basis as col_N: shares in issue before completion of the Global Offering = L − M = 7,318,257,824."
+    },
+    "col_P": {
+      "value": 0,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 383,472,800 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 383472800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 383,472,800 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 345125500,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 345,125,500 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 38347300,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 38,347,300 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 63.28,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$63.28 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 305,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME Year ended 31 December Notes 2023 2024 2025 RMB’000",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 223827586000,
+      "page": 307,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . 161,992,100 223,827,586 306,537,675",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 306537675000,
+      "page": 307,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . 161,992,100 223,827,586 306,537,675",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 325616587000,
+      "page": 440,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 325,616,587 306,537,675",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 84687125000,
+      "page": 308,
+      "quote": "Capital and reserves\nShare capital . . . . . . . . . . . . . . . . . . . . . . .\n42\n7,148,168\n7,236,462\n7,284,443",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 104020233000,
+      "page": 308,
+      "quote": "Total equity. . . . . . . . . . . . . . . . . . . . . . . . 70,284,865 84,687,125 104,020,233",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 108978157000,
+      "page": 442,
+      "quote": "As at 31 March 2026 . . . 7,285,985 (499,994) 527,162 13,302,036 (2,039,728) 11,893 70,280,283 88,867,637 20,110,520 108,978,157",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 139140461000,
+      "page": 308,
+      "quote": "Total current liabilities . . . . . . . . . . . . . . . . 74,835,111 113,874,524 176,488,134 Net current assets . . . . . . . . . . . . . . . . . . . 19,393,017 24,670,722 19,528,841 Total assets less",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 202517442000,
+      "page": 308,
+      "quote": "Total non-current liabilities . . . . . . . . . . . . . 16,872,124 25,265,937 26,029,308 Total liabilities . . . . . . . . . . . . . . . . . . . . . . 91,707,235 139,140,461 202,517,442",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 216638430000,
+      "page": 441,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216,638,430",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 268794738000,
+      "page": 305,
+      "quote": "Revenue. . . . . . . . . . . . . . . . . . . . . . . . . . 231,905,460 268,794,738 332,344,443",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 332344443000,
+      "page": 305,
+      "quote": "Revenue. . . . . . . . . . . . . . . . . . . . . . . . . . 231,905,460 268,794,738 332,344,443",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 335553968000,
+      "page": 438,
+      "quote": "Revenue. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83,888,492 61,787,690",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 16108739000,
+      "page": 305,
+      "quote": "Profit before income tax . . . . . . . . . . . . . . . 12,885,042 16,108,739 19,549,858",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 19549858000,
+      "page": 305,
+      "quote": "Profit before income tax . . . . . . . . . . . . . . . 12,885,042 16,108,739 19,549,858",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 17163816000,
+      "page": 438,
+      "quote": "Profit before income tax . . . . . . . . . . . . . . . . . 4,290,954 3,821,586",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 14579044000,
+      "page": 305,
+      "quote": "Profit for the year . . . . . . . . . . . . . . . . . . 12,243,213 14,579,044 18,170,237",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 18170237000,
+      "page": 305,
+      "quote": "Profit for the year . . . . . . . . . . . . . . . . . . 12,243,213 14,579,044 18,170,237",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 15870540000,
+      "page": 438,
+      "quote": "Profit for the period . . . . . . . . . . . . . . . . . 3,967,635 3,377,043",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.003,
+      "page": 282,
+      "quote": "Our Company will pay an underwriting commission of 0.3% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option (the “Fixed",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.003,
+      "page": 282,
+      "quote": "Our Company will pay an underwriting commission of 0.3% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option (the “Fixed",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 286,
+      "quote": "57,520,900 H Shares representing in aggregate approximately 15% of the number of the Offer Shares initiall",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Precision intelligent manufacturing solutions (PIMS)",
+      "page": 219,
+      "quote": "We are the largest provider of precision intelligent manufacturing solutions (PIMS) in the Chinese Mainland, and the fifth largest globally, in terms of revenue in 2025",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange — H Shares of a PRC issuer (Chapter 19A)",
+      "page": 284,
+      "quote": "Our Company is initially offering 38,347,300 H Shares at the Offer Price under the Hong Kong",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 438,
+      "quote": "INTERIM CONDENSED CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME Three months ended 31 March 2026 (Unaudited)",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -7068301000,
+      "page": 444,
+      "quote": "Net cash used in operating activities . . . . . . . . . . (7,068,301) (6,691,657)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 67320137000,
+      "page": 445,
+      "quote": "CASH AND CASH EQUIVALENTS AT THE END OF THE PERIOD . . . 67,320,137 50,244,408",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 3021085000,
+      "page": 438,
+      "quote": "Research and development expenses . . . . . . . . . . . . (3,021,085) (2,144,284)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 380,
+      "quote": "22 INTANGIBLE ASSETS The Group Patent Rights Non-patented Technology Software Customer Relationships (Note (a)) Internally Generated Technology (Note (b)) Others Total",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "立讯精密工业股份有限公司",
+      "page": 1,
+      "quote": "立訊精密工業股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Temasek; Taibai; True Light; HHLRA; HHLRA (SMA managed for CPP Investments); GIC; CPE Neem; HK Greenwoods; Foresight Funds; ADIA; UBS AM Singapore; Oaktree; Eastspring; Eastspring SG; Eastspring HK; First Sentier Investors; First Sentier Investors HK; First Sentier Investors SG; GF Fund; GF Fund Management; GF Fund HK; China Universal (HK); Bosera International; Fidelity International; Value Partners; VPHKL; VPL; Taikang Life",
+      "page": 274,
+      "quote": "Temasek . . . . . . . . . . . . . . . . . . . . 200 24,765,100 6.46% 0.32% 5.62% 0.32% Taibai. . . . . . . . . . . . . . . . 160 19,812,100 5.17% 0.26% 4.49% 0.26% True Light . . . . . . . . . . . . .",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Natural person (co-founders under joint control)",
+      "page": 12,
+      "quote": "our Company was held as to (i) approximately 37.32% by Luxshare Limited, a company owned as to 50% by Ms. Wang and 50% by Mr. Wang; and (ii) approximately 0.27% by Mr. Wang",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3573,
+      "page": 209,
+      "quote": "Ms. Wang, Mr. Wang and Luxshare Limited will control in aggregate approximately 35.73% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3573,
+      "page": 209,
+      "quote": "Ms. Wang, Mr. Wang and Luxshare Limited will control in aggregate approximately 35.73% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 102113321000,
+      "page": 253,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . 39,574,961 66,262,575 102,113,321",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Mass production and commercialization",
+      "page": 219,
+      "quote": "we provide cross-sector, vertically integrated development and intelligent manufacturing solutions—from components and modules to systems—for global clients",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0.1,
+      "page": 19,
+      "quote": "(iv) approximately 10%, or HK$2,403.9 million, to repay certain existing interest-bearing bank borrowings; and (v) approximately 10%, or HK$2,403.9 million, for working capital and ot",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 383,472,800 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "24/05/04",
+      "page": 481,
+      "quote": "Our Company was established in the PRC as a limited liability company on May 24, 2004",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 313 North Ring Road, Qingxi Town, Dongguan City, Guangdong Province, PRC",
+      "page": 315,
+      "quote": "the principal place of business activities is at No. 313 North Ring Road, Qingxi Town, Dongguan City, Guangdong Province, the People's Republic of China",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 315,
+      "quote": "The Historical Financial Information has been prepared based on the accounting policies set out in Note 2.2 which conform with all applicable IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "30/06/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, June 30, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/07/26",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Monday, July 6, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 383472800,
+      "page": 217,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . 383,472,800 4.98% Total . . . 7,701,730,624 100.00%",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 9558528000,
+      "page": 438,
+      "quote": "Gross profit. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9,558,528 6,459,942",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 5538975000,
+      "page": 445,
+      "quote": "Purchase of PPE, intangible assets and other non-current assets . . . (5,538,975) (5,114,664)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 303,
+      "quote": "In our opinion the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 227100000,
+      "page": 19,
+      "quote": "the total estimated listing expenses in relation to the Global Offering are RMB197.4 million (HK$227.1 million), assuming the Over-allotment Option is not exercised",
+      "confidence": "high"
+    }
+  }
+}

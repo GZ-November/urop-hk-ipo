@@ -1,0 +1,116 @@
+{
+  "code": "6809.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4982,
+      "page": 7,
+      "quote": "Total 32,828,000 49.82% 2.71%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 707.3,
+      "page": 5,
+      "quote": "Subscription level 707.3 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 260646,
+      "page": 5,
+      "quote": "No. of valid applications 260,646",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4660409500,
+      "page": 17,
+      "quote": "BASIS OF ALLOTMENT / BALLOT SHARES APPLIED FOR POOL A 100 93,889 4,694 out of 93,889 to receive 100 Shares 5.00%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 707.3 times",
+      "page": 5,
+      "quote": "Subscription level 707.3 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "05/02/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for itself and on behalf of the Underwriters) and us on th",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "06/02/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**06/02/2026 22:30**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 65890000,
+      "page": 4,
+      "quote": "Number of Offer Shares 65,890,000 Number of Offer Shares in Hong Kong Public Offering 6,589,000 Number of Offer Shares in International Offering 59,301,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 6589000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 6,589,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 59301000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (before the exercise of the Over-allotment Option) 59,301,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 9883500,
+      "page": 1,
+      "quote": "described in the Prospectus has been fully exercised by the Overall Coordinators, on behalf of the International Underwriters, on February 10, 2026, in respect of an aggregate of 9,883,500 H Shares, r",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (10/02/2026 22:51)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A (no reallocation). No. of Offer Shares reallocated from the International Offering: none; final number of Offer Shares under the Hong Kong Public Offering 6,589,000, unchanged from the 6,589,000 initially available.",
+      "page": 5,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 6,589,000 Final no. of Offer Shares under the Hong Kong Public Offering 6,589,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 6904600000,
+      "page": 5,
+      "quote": "Less: Estimated listing expenses payable based on Final Offer Price HK$138.4 million Net proceeds HK$6,904.6 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0544,
+      "page": 37,
+      "quote": "based on the Offer Price of HK$106.89 per H Share, the market value of the H Shares that are held by the public is approximately HK$7,042.98 million",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 1212316521,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 1,212,316,521",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0273,
+      "page": 37,
+      "quote": "the portion of H shares for which listing is sought that are held by the public and not subject to any disposal restrictions",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares upon Listing before exercise of the Over-allotment Option (1,212,316,521 Shares). Free float = the 65,890,000 H Shares under the Global Offering less the 32,828,000 H Shares allocated to the Cornerstone Investors, which are subject to a six-month lock-up ending August 8, 2026 and are therefore excluded.",
+      "page": 13,
+      "quote": "In accordance with the relevant cornerstone investment agreements, the required lock-up ends on August 8, 2026.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 1212316521,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 1,212,316,521",
+      "confidence": "medium"
+    }
+  }
+}

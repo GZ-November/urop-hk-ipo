@@ -1,0 +1,116 @@
+{
+  "code": "3355.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4231,
+      "page": 6,
+      "quote": "Total \n16,922,900 \n4.23% \n4.23%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1579.71,
+      "page": 4,
+      "quote": "Subscription level \n1,579.71 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 196756,
+      "page": 3,
+      "quote": "No. of valid applications \n196,756",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6318827400,
+      "page": 15,
+      "quote": "Pool A \n100 \n64,962 \n650 out of 64,962 to receive 100 Shares \n1.00% \n200 \n25,942 \n400 out of 25,942 to receive 100 Shares \n0.77%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,579.71 times",
+      "page": 4,
+      "quote": "Subscription level \n1,579.71 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "19/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (on behalf of the Underwriters) and our Company on the Pric",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "20/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**20/03/2026 22:07**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 40000000,
+      "page": 3,
+      "quote": "Number of Offer Shares \n40,000,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4000000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after \nreallocation) \n4,000,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 36000000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering \n36,000,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 5675700,
+      "page": 1,
+      "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 17, 2026, in respect of an aggregate of 5,675,700 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (17/04/2026 20:53)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A. Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) was 4,000,000, same as the number initially available; no Offer Shares were reallocated from the International Offering.",
+      "page": 4,
+      "quote": "Claw-back triggered \nN/A \nNo. of Offer Shares initially available under the Public Offer \n4,000,000 \nFinal no. of Offer Shares under the Hong Kong Public Offering (after \nreallocation) \n4,000,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1559030000,
+      "page": 3,
+      "quote": "Net proceeds \nHK$ 1,559.03 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2837,
+      "page": 22,
+      "quote": "113,280,930 Shares, representing approximately 28.37% of the issued share capital of the Company \nwill be held in the public hands",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 400000000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing \n400,000,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0577,
+      "page": 10,
+      "quote": "Total \n16,922,900 \n4.23% \n4.23% \nNote: \n1. \nIn accordance with the respective Cornerstone Investment Agreement, the required lock-up ends on 22 September \n2026.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float = H Shares under the Global Offering excluding the Over-allotment Option (40,000,000), less the H Shares allocated to the Cornerstone Investors and subject to their six-month lock-up ending 22 September 2026 (16,922,900); denominator = total number of issued Shares upon Listing (400,000,000), before exercise of the Over-allotment Option.",
+      "page": 10,
+      "quote": "Total \n16,922,900 \n4.23% \n4.23% \nNote: \n1. \nIn accordance with the respective Cornerstone Investment Agreement, the required lock-up ends on 22 September \n2026.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 400000000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing \n400,000,000",
+      "confidence": "high"
+    }
+  }
+}

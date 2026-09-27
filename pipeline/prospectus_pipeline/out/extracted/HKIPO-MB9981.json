@@ -1,0 +1,425 @@
+{
+  "code": "9981.HK",
+  "fields": {
+    "col_L": {
+      "value": 1399887362,
+      "page": 215,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,399,887,362",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 139988800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering :\n139,988,800 H Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1259898562,
+      "page": 215,
+      "quote": "A Shares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,259,898,562",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1259898562,
+      "page": 215,
+      "quote": "A Shares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,259,898,562",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 215,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . . . . . . . . . . .\n139,988,800",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 139988800,
+      "page": 215,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . . . . . . . . . . .\n139,988,800",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 125989800,
+      "page": 2,
+      "quote": "Number of International Offer Shares :\n125,989,800 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 13999000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares :\n13,999,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 20.09,
+      "page": 2,
+      "quote": "Maximum Offer Price :\nHK$20.09 per H Share, plus brokerage of 1.0%, SFC",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 13,
+      "quote": "(in RMB in thousands, except for percentages)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 8980436000,
+      "page": 15,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8,318,736\n8,980,436\n10,230,326\n11,636,384",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 10230326000,
+      "page": 15,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8,318,736\n8,980,436\n10,230,326\n11,636,384",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 11636384000,
+      "page": 15,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8,318,736\n8,980,436\n10,230,326\n11,636,384",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 5462504000,
+      "page": 15,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4,799,394\n5,462,504\n6,128,329\n6,465,696",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 6128329000,
+      "page": 15,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4,799,394\n5,462,504\n6,128,329\n6,465,696",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 6465696000,
+      "page": 15,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4,799,394\n5,462,504\n6,128,329\n6,465,696",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 3517932000,
+      "page": 15,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n3,519,342\n3,517,932\n4,101,997\n5,170,688",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 4101997000,
+      "page": 15,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n3,519,342\n3,517,932\n4,101,997\n5,170,688",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 5170688000,
+      "page": 15,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n3,519,342\n3,517,932\n4,101,997\n5,170,688",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 5718841000,
+      "page": 13,
+      "quote": "Revenue . . . . . . . . . . . .\n5,336,649 100.0\n5,718,841 100.0\n6,920,102 100.0\n4,815,515 100.0\n6,076,678 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 6920102000,
+      "page": 13,
+      "quote": "Revenue . . . . . . . . . . . .\n5,336,649 100.0\n5,718,841 100.0\n6,920,102 100.0\n4,815,515 100.0\n6,076,678 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 8102237333.333333,
+      "page": 13,
+      "quote": "Revenue . . . . . . . . . . . .\n5,336,649 100.0\n5,718,841 100.0\n6,920,102 100.0\n4,815,515 100.0\n6,076,678 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 872877000,
+      "page": 13,
+      "quote": "Profit before\ntaxation . . . . . . . . . .\n727,356\n13.6\n872,877\n15.2\n1,073,863\n15.5\n812,345\n16.8\n1,036,086\n17.0",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 1073863000,
+      "page": 13,
+      "quote": "Profit before\ntaxation . . . . . . . . . .\n727,356\n13.6\n872,877\n15.2\n1,073,863\n15.5\n812,345\n16.8\n1,036,086\n17.0",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 1381448000.0,
+      "page": 13,
+      "quote": "Profit before\ntaxation . . . . . . . . . .\n727,356\n13.6\n872,877\n15.2\n1,073,863\n15.5\n812,345\n16.8\n1,036,086\n17.0",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 757727000,
+      "page": 13,
+      "quote": "Profit for the year/\nperiod . . . . . . . . . . . .\n660,247\n12.3\n757,727\n13.2\n920,503\n13.3\n709,243\n14.7\n883,303\n14.5",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 920503000,
+      "page": 13,
+      "quote": "Profit for the year/\nperiod . . . . . . . . . . . .\n660,247\n12.3\n757,727\n13.2\n920,503\n13.3\n709,243\n14.7\n883,303\n14.5",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 1177737333.3333333,
+      "page": 13,
+      "quote": "Profit for the year/\nperiod . . . . . . . . . . . .\n660,247\n12.3\n757,727\n13.2\n920,503\n13.3\n709,243\n14.7\n883,303\n14.5",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.012,
+      "page": 284,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 1.2% of the aggregate Offer\nPrice of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.012,
+      "page": 284,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 1.2% of the aggregate Offer\nPrice of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 217,
+      "quote": "Since there is no over-allotment option in the International\nOffering, there will be no delayed delivery or deferred settlement of Offer Shares to be subscribed by the\nCornerstone Investors.",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Electronic communications business, electrical power transmission business, and wind power operations",
+      "page": 9,
+      "quote": "Our principal business consists of : (i) electronic communications business, which involves the\ndevelopment, manufacture, and sale of (a) telecoms cable products, including high-speed copper cables,",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board; Chapter 19A PRC issuer with other listed shares (A+H)",
+      "page": 124,
+      "quote": "where a new applicant is a PRC issuer with other listed shares at the time of listing, this will normally\nmean that the portion of H shares for which listing is sought that are held by the public",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/25",
+      "page": 15,
+      "quote": "As of September 30,\n2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 886257000,
+      "page": 15,
+      "quote": "Net cash flows from operating activities . . . . . . . . . . . .\n1,035,843\n860,089\n942,949\n652,542\n886,257",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 931647000,
+      "page": 15,
+      "quote": "Cash and cash equivalents at end of the year . . . . . . . .\n799,820\n879,070\n877,485\n705,649\n931,647",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 325688000,
+      "page": 13,
+      "quote": "Research and\ndevelopment\nexpenses . . . . . . . . . .\n(305,808)\n(5.7)\n(309,962)\n(5.4)\n(348,694)\n(5.0)\n(243,104)\n(5.0)\n(325,688)\n(5.4)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 334,
+      "quote": "Where no internally-generated intangible asset can be recognized,\ndevelopment expenditure is recognized in profit or loss in the period in which it is incurred.",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.193,
+      "page": 12,
+      "quote": "nine months ended\nSeptember 30, 2025, (i) our five largest customers in each year/period during the Track Record Period\ncontributed 12.6%, 11.5%, 12.7% and 19.3% to our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "深圳市沃尔核材股份有限公司",
+      "page": 2,
+      "quote": "深圳市沃爾核材股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "HHLR Advisors, Ltd.; Shanghai Greenwoods and Huatai Capital Investment Limited (in connection with Greenwoods OTC Swaps); Jump Trading Pacific Pte. Ltd.; Huizhou Huilian Investment Partnership (Limited Partnership); JCC and Guotai Junan Investments (Hong Kong) Limited (in connection with JCC OTC Swaps); Shen Zhen New World Investment (H.K) Limited; BEST CHEER DEVELOPMENT LIMITED; RIME Capital Limited; SCV Alpha LP; Yield Royal Investment Holding (Singapore) PTE. LTD.; Guohui (HK) Holdings Co., Limited; Pu Xin Guotai Junan Investments (Hong Kong) Limited (in connection with Pu Xin OTC Swaps); CAPCHEM (HONGKONG) CO., LIMITED; Enhanced Investment Products Limited; Factorial Master Fund; Qianhai Starlight Capital SPC",
+      "page": 218,
+      "quote": "The table below sets forth the details of the Cornerstone Placing, assuming an Offer Price of HK$20.09,\nbeing the maximum Offer Price",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 213,
+      "quote": "In addition, through Xuanyuan Private Fund Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "自然人（周和平先生与易华蓉女士为单一最大股东，无控股股东）",
+      "page": 122,
+      "quote": "and Mr. Zhou, Ms. Yi and the Tongyi Funds constitute a group of single largest shareholder of the Company",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.1354,
+      "page": 213,
+      "quote": "A Shares 189,563,801 15.05% 15.17% 189,563,801 13.54% 15.17% 13.64%",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.1364,
+      "page": 213,
+      "quote": "A Shares 189,563,801 15.05% 15.17% 189,563,801 13.54% 15.17% 13.64%",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 2530497000,
+      "page": 268,
+      "quote": "Our indebtedness mainly included bank and other borrowings and lease liabilities during the Track Record Period.",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "规模商业化（已量产）",
+      "page": 131,
+      "quote": "we completed the development and commenced mass production of 100G multi-channel high-speed copper cables in 2017 and have continuously improved data transmission rates since then",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 17,
+      "quote": "10%, or approximately HK$273.4 million will be used for the working capital and general corporate purposes.",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 215,
+      "quote": "Upon the completion of the Global Offering, the Shares will consist of A Shares and H Shares.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "19/06/98",
+      "page": 120,
+      "quote": "was established in the PRC on June 19, 1998 as a limited liability company with an initial registered capital of RMB1,000,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shenzhen, PRC",
+      "page": 86,
+      "quote": "Registered Office, Headquarters and Principal Place of Business in the PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 309,
+      "quote": "have been prepared in accordance with IFRS Accounting Standards issued by International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "05/02/26",
+      "page": 4,
+      "quote": "9:00 a.m. on Thursday, February 5, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "10/02/26",
+      "page": 4,
+      "quote": "12:00 noon on Tuesday, February 10, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 139988800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 139,988,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1877737000,
+      "page": 13,
+      "quote": "Gross profit . . . . . . . . . 1,611,962 30.2 1,788,641 31.3 2,110,363 30.5 1,494,715 31.0 1,877,737 30.9",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 776065000,
+      "page": 319,
+      "quote": "Purchase of property, plant and equipment . . . . (376,277) (302,716) (516,571) (371,813) (776,065)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见（Unqualified opinion）",
+      "page": 307,
+      "quote": "a true and fair view of the consolidated financial position of the Group as at December 31, 2022, 2023 and 2024 and September 30, 2025",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 78800000,
+      "page": 17,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately RMB70.6 million (HK$78.8 million) (including underwriting commission)",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Xuanyuan Private Fund",
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.024,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Pre-IPO",
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 3.25,
+      "page": 213,
+      "quote": "Investment Management (Guangdong) Co., Ltd. - Xuanyuan Kexin No. 109 Private Securities Investment Fund (玄元私募基金投資管理",
+      "confidence": "high"
+    }
+  }
+}

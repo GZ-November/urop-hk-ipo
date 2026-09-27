@@ -1,0 +1,175 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 150,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "1. WeBus Ltd. Ordinary Shares",
+          "28,602,714",
+          "26.18"
+        ],
+        [
+          "2. HongHe Venture Fund I, Ordinary Shares",
+          "3,571,346",
+          "3.27"
+        ],
+        [
+          "3. Cheering Venture Global Ordinary Shares",
+          "1,913,250",
+          "1.75"
+        ],
+        [
+          "4. JH Honghe Investment Ordinary Shares",
+          "624,986",
+          "0.57"
+        ],
+        [
+          "5. Yirong Capital (Hong Ordinary Shares",
+          "267,851",
+          "0.25"
+        ],
+        [
+          "6. YANG Zhenyu Series Seed A Preferred",
+          "265,644",
+          "0.24"
+        ],
+        [
+          "7. Power Sailor Series Seed B Preferred",
+          "2,152,352",
+          "1.97"
+        ],
+        [
+          "8. Alibaba Investment Series A Preferred Shares",
+          "12,007,572",
+          "10.99"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| 1. WeBus Ltd. Ordinary Shares                   | 28,602,714       | 26.18                      |\n| 2. HongHe Venture Fund I, Ordinary Shares       | 3,571,346        | 3.27                       |\n| 3. Cheering Venture Global Ordinary Shares      | 1,913,250        | 1.75                       |\n| 4. JH Honghe Investment Ordinary Shares         | 624,986          | 0.57                       |\n| 5. Yirong Capital (Hong Ordinary Shares         | 267,851          | 0.25                       |\n| 6. YANG Zhenyu Series Seed A Preferred          | 265,644          | 0.24                       |\n| 7. Power Sailor Series Seed B Preferred         | 2,152,352        | 1.97                       |\n| 8. Alibaba Investment Series A Preferred Shares | 12,007,572       | 10.99                      |",
+      "metadata": {
+        "total_rows": 8
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "RMB33.7 million in 2023, mainly due to the listing expenses of",
+          "RMB10.8 million"
+        ]
+      ],
+      "markdown": "| Item Description                                               | Rate / Amount Disclosed |\n| -------------------------------------------------------------- | ----------------------- |\n| RMB33.7 million in 2023, mainly due to the listing expenses of | RMB10.8 million         |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "135,379",
+          "100.0",
+          "174,536",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "98,802",
+          "73.0",
+          "133,244",
+          "76.3"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 135,379 | 100.0  | 174,536 | 100.0 |\n| Gross profit     | 98,802  | 73.0   | 133,244 | 76.3  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "185,183",
+          "223,690",
+          "224,166"
+        ],
+        [
+          "Total liabilities",
+          "446,857",
+          "489,872",
+          "536,258"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2  | Year-1  |\n| ----------------- | ------- | ------- | ------- |\n| Total assets      | 185,183 | 223,690 | 224,166 |\n| Total liabilities | 446,857 | 489,872 | 536,258 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 327,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "135,379",
+          "100.0",
+          "174,536",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "98,802",
+          "73.0",
+          "133,244",
+          "76.3"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 135,379 | 100.0  | 174,536 | 100.0 |\n| Gross profit     | 98,802  | 73.0   | 133,244 | 76.3  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

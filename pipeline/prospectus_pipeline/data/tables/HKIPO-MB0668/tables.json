@@ -1,0 +1,265 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 215,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Schroders",
+          "70.00",
+          "5,522,200",
+          "11.84%"
+        ],
+        [
+          "Aspex",
+          "50.00",
+          "3,944,400",
+          "8.46%"
+        ],
+        [
+          "PAMAL",
+          "40.00",
+          "3,155,500",
+          "6.77%"
+        ],
+        [
+          "Greenwoods",
+          "25.00",
+          "1,972,200",
+          "4.23%"
+        ],
+        [
+          "HK Greenwoods",
+          "15.04",
+          "1,186,800",
+          "2.54%"
+        ],
+        [
+          "GTHT",
+          "9.96",
+          "785,400",
+          "1.68%"
+        ],
+        [
+          "HACF, L.P.",
+          "20.00",
+          "1,577,700",
+          "3.38%"
+        ],
+        [
+          "UBS AM Singapore",
+          "20.00",
+          "1,577,700",
+          "3.38%"
+        ],
+        [
+          "FT Sealand",
+          "15.00",
+          "1,183,300",
+          "2.54%"
+        ],
+        [
+          "Jane Street",
+          "15.00",
+          "1,183,300",
+          "2.54%"
+        ],
+        [
+          "Taikang Life",
+          "15.00",
+          "1,183,300",
+          "2.54%"
+        ],
+        [
+          "Management",
+          "15.00",
+          "1,183,300",
+          "2.54%"
+        ],
+        [
+          "Value Partners",
+          "10.00",
+          "788,800",
+          "1.69%"
+        ],
+        [
+          "Total",
+          "295.00",
+          "23,271,700",
+          "49.90%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Schroders            | 70.00                 | 5,522,200              | 11.84%                        |\n| Aspex                | 50.00                 | 3,944,400              | 8.46%                         |\n| PAMAL                | 40.00                 | 3,155,500              | 6.77%                         |\n| Greenwoods           | 25.00                 | 1,972,200              | 4.23%                         |\n| HK Greenwoods        | 15.04                 | 1,186,800              | 2.54%                         |\n| GTHT                 | 9.96                  | 785,400                | 1.68%                         |\n| HACF, L.P.           | 20.00                 | 1,577,700              | 3.38%                         |\n| UBS AM Singapore     | 20.00                 | 1,577,700              | 3.38%                         |\n| FT Sealand           | 15.00                 | 1,183,300              | 2.54%                         |\n| Jane Street          | 15.00                 | 1,183,300              | 2.54%                         |\n| Taikang Life         | 15.00                 | 1,183,300              | 2.54%                         |\n| Management           | 15.00                 | 1,183,300              | 2.54%                         |\n| Value Partners       | 10.00                 | 788,800                | 1.69%                         |\n| Total                | 295.00                | 23,271,700             | 49.90%                        |",
+      "metadata": {
+        "investor_count": 13
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 18,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$4,522.7 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$4,522.7 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 19,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "fees and commission",
+          "s,"
+        ],
+        [
+          "equity upon the Listing. We did not recognize any listing expenses",
+          "in 2023"
+        ],
+        [
+          "listing expenses of",
+          "RMB0.6 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                   | Rate / Amount Disclosed |\n| ------------------------------------------------------------------ | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related       | expenses,               |\n| fees and commission                                                | s,                      |\n| equity upon the Listing. We did not recognize any listing expenses | in 2023                 |\n| listing expenses of                                                | RMB0.6 million          |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 13,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "17,507,203",
+          "100.0",
+          "24,710,080",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "7,480,375",
+          "42.7",
+          "10,644,787",
+          "43.1"
+        ],
+        [
+          "Profit for the year",
+          "1,693,939",
+          "9.7",
+          "2,211,124",
+          "8.9"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 17,507,203 | 100.0  | 24,710,080 | 100.0 |\n| Gross profit        | 7,480,375  | 42.7   | 10,644,787 | 43.1  |\n| Profit for the year | 1,693,939  | 9.7    | 2,211,124  | 8.9   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "12,776,703",
+          "16,603,708",
+          "20,066,893"
+        ],
+        [
+          "Total liabilities",
+          "4,615,404",
+          "7,459,188",
+          "9,355,223"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 12,776,703 | 16,603,708 | 20,066,893 |\n| Total liabilities | 4,615,404  | 7,459,188  | 9,355,223  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 222,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "17,507,203",
+          "100.0",
+          "24,710,080",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "7,480,375",
+          "42.7",
+          "10,644,787",
+          "43.1"
+        ],
+        [
+          "Profit for the year",
+          "1,693,939",
+          "9.7",
+          "2,211,124",
+          "8.9"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 17,507,203 | 100.0  | 24,710,080 | 100.0 |\n| Gross profit        | 7,480,375  | 42.7   | 10,644,787 | 43.1  |\n| Profit for the year | 1,693,939  | 9.7    | 2,211,124  | 8.9   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

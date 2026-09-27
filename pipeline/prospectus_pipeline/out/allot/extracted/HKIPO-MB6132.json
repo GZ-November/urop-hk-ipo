@@ -1,0 +1,116 @@
+{
+  "code": "6132.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4579,
+      "page": 5,
+      "quote": "Total 6,227,800 45.79% 8.46%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2007.6,
+      "page": 4,
+      "quote": "Subscription level 2,007.60 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 173284,
+      "page": 4,
+      "quote": "No. of valid applications 173,284",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2730338000,
+      "page": 14,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT / BALLOT POOL A",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,007.60 times",
+      "page": 4,
+      "quote": "Subscription level 2,007.60 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "allotment",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "22/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**22/06/2026 21:30**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 13600000,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of Over-allotment Option) 13,600,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1360000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 1,360,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 12240000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (before exercise of Over-allotment Option) 12,240,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（17/07/2026 17:57）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Reallocation: N/A (no Offer Shares reallocated from the International Offering)",
+      "page": 4,
+      "quote": "Reallocation N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1018700000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,018.7 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5313,
+      "page": 21,
+      "quote": "an aggregate of 39,106,162 H Shares, representing 53.13% of the total issued Shares upon the Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 73599605,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of Over-allotment Option) 73,599,605 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1002,
+      "page": 21,
+      "quote": "Pursuant to the applicable PRC law, within the 12 months following the Listing Date, all existing Shareholders (including the Pre-IPO Investors) cannot dispose of any of the Shares held by them.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares upon Listing (before exercise of the Over-allotment Option); excludes H Shares held by existing Shareholders and Cornerstone Investors subject to lock-up. Numerator = Offer Shares minus cornerstone allocation.",
+      "page": 21,
+      "quote": "As such, the H Shares held by the existing Shareholders and the Cornerstone Investors upon the Listing shall not be counted towards the free float",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 73599605,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of Over-allotment Option) 73,599,605 Shares",
+      "confidence": "high"
+    }
+  }
+}

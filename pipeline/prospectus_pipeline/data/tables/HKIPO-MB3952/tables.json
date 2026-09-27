@@ -1,0 +1,250 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 211,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Limited",
+          "10",
+          "1,017,500",
+          "7.57%"
+        ],
+        [
+          "LIMITED",
+          "8",
+          "814,000",
+          "6.06%"
+        ],
+        [
+          "Eurus Holdings SPC",
+          "3",
+          "305,200",
+          "2.27%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Limited              | 10                    | 1,017,500              | 7.57%                         |\n| LIMITED              | 8                     | 814,000                | 6.06%                         |\n| Eurus Holdings SPC   | 3                     | 305,200                | 2.27%                         |",
+      "metadata": {
+        "investor_count": 3
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 212,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Oaktree",
+          "10",
+          "964,300",
+          "7.17%"
+        ],
+        [
+          "Limited",
+          "10",
+          "964,300",
+          "7.17%"
+        ],
+        [
+          "LIMITED",
+          "8",
+          "771,400",
+          "5.74%"
+        ],
+        [
+          "CDH Global",
+          "7",
+          "675,000",
+          "5.02%"
+        ],
+        [
+          "E Fund",
+          "5",
+          "482,100",
+          "3.59%"
+        ],
+        [
+          "Eurus Holdings SPC",
+          "3",
+          "289,300",
+          "2.15%"
+        ],
+        [
+          "Lake Bleu",
+          "3",
+          "289,300",
+          "2.15%"
+        ],
+        [
+          "FMF",
+          "3",
+          "289,300",
+          "2.15%"
+        ],
+        [
+          "Oasis Fund",
+          "3",
+          "289,300",
+          "2.15%"
+        ],
+        [
+          "Oaktree",
+          "10",
+          "916,400",
+          "6.82%"
+        ],
+        [
+          "Limited",
+          "10",
+          "916,400",
+          "6.82%"
+        ],
+        [
+          "LIMITED",
+          "8",
+          "733,100",
+          "5.45%"
+        ],
+        [
+          "CDH Global",
+          "7",
+          "641,400",
+          "4.77%"
+        ],
+        [
+          "E Fund",
+          "5",
+          "458,200",
+          "3.41%"
+        ],
+        [
+          "Eurus Holdings SPC",
+          "3",
+          "274,900",
+          "2.05%"
+        ],
+        [
+          "Lake Bleu",
+          "3",
+          "274,900",
+          "2.05%"
+        ],
+        [
+          "FMF",
+          "3",
+          "274,900",
+          "2.05%"
+        ],
+        [
+          "Oasis Fund",
+          "3",
+          "274,900",
+          "2.05%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Oaktree              | 10                    | 964,300                | 7.17%                         |\n| Limited              | 10                    | 964,300                | 7.17%                         |\n| LIMITED              | 8                     | 771,400                | 5.74%                         |\n| CDH Global           | 7                     | 675,000                | 5.02%                         |\n| E Fund               | 5                     | 482,100                | 3.59%                         |\n| Eurus Holdings SPC   | 3                     | 289,300                | 2.15%                         |\n| Lake Bleu            | 3                     | 289,300                | 2.15%                         |\n| FMF                  | 3                     | 289,300                | 2.15%                         |\n| Oasis Fund           | 3                     | 289,300                | 2.15%                         |\n| Oaktree              | 10                    | 916,400                | 6.82%                         |\n| Limited              | 10                    | 916,400                | 6.82%                         |\n| LIMITED              | 8                     | 733,100                | 5.45%                         |\n| CDH Global           | 7                     | 641,400                | 4.77%                         |\n| E Fund               | 5                     | 458,200                | 3.41%                         |\n| Eurus Holdings SPC   | 3                     | 274,900                | 2.05%                         |\n| Lake Bleu            | 3                     | 274,900                | 2.05%                         |\n| FMF                  | 3                     | 274,900                | 2.05%                         |\n| Oasis Fund           | 3                     | 274,900                | 2.05%                         |",
+      "metadata": {
+        "investor_count": 18
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 14,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "deposits. We add back (1) listing expenses, (2) change in the carrying amount of redemption",
+          "liabilities,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                            | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------------- | ----------------------- |\n| deposits. We add back (1) listing expenses, (2) change in the carrying amount of redemption | liabilities,            |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 13,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "94,545",
+          "100.0",
+          "107,714",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "27,857",
+          "29.5",
+          "25,927",
+          "24.1"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------ | ------ | ------- | ----- |\n| Revenue          | 94,545 | 100.0  | 107,714 | 100.0 |\n| Gross profit     | 27,857 | 29.5   | 25,927  | 24.1  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 228,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "94,545",
+          "100.0",
+          "107,714",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "27,857",
+          "29.5",
+          "25,927",
+          "24.1"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------ | ------ | ------- | ----- |\n| Revenue          | 94,545 | 100.0  | 107,714 | 100.0 |\n| Gross profit     | 27,857 | 29.5   | 25,927  | 24.1  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

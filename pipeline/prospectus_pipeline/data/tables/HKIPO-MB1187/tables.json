@@ -1,0 +1,108 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 190,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Capital OTC Swaps)",
+          "6.51",
+          "1,296,000",
+          "4.80%"
+        ],
+        [
+          "Total",
+          "48.49",
+          "9,654,300",
+          "35.76%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Capital OTC Swaps)   | 6.51                  | 1,296,000              | 4.80%                         |\n| Total                | 48.49                 | 9,654,300              | 35.76%                        |",
+      "metadata": {
+        "investor_count": 1
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "RMB48.1 million"
+        ],
+        [
+          "(HK$54.8 million) (including underwriting commission), at the Offer Price of",
+          "HK$39.33"
+        ],
+        [
+          "underwriting commission and other expenses are approximately",
+          "RMB15.3 million"
+        ],
+        [
+          "We estimate that listing expenses of approximately",
+          "RMB48.1 million"
+        ],
+        [
+          "(including underwriting commissions of approximately",
+          "RMB15.3 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                             | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately         | RMB48.1 million         |\n| (HK$54.8 million) (including underwriting commission), at the Offer Price of | HK$39.33                |\n| underwriting commission and other expenses are approximately                 | RMB15.3 million         |\n| We estimate that listing expenses of approximately                           | RMB48.1 million         |\n| (including underwriting commissions of approximately                         | RMB15.3 million         |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "2,853,695",
+          "2,982,931",
+          "3,387,499"
+        ],
+        [
+          "Gross Profit",
+          "1,172,551",
+          "1,508,704",
+          "1,751,605"
+        ],
+        [
+          "Profit for the Year",
+          "252,871",
+          "312,344",
+          "370,316"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3    | Year-2    | Year-1    |\n| ------------------- | --------- | --------- | --------- |\n| Revenue             | 2,853,695 | 2,982,931 | 3,387,499 |\n| Gross Profit        | 1,172,551 | 1,508,704 | 1,751,605 |\n| Profit for the Year | 252,871   | 312,344   | 370,316   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

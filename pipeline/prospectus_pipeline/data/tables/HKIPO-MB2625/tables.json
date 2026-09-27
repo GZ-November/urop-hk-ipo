@@ -1,0 +1,70 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 393,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "H Shares converted from Domestic Unlisted Shares",
+          "160,684,910",
+          "75.00%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering",
+          "53,562,000",
+          "25.00%"
+        ],
+        [
+          "Total",
+          "214,246,910",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| H Shares converted from Domestic Unlisted Shares      | 160,684,910      | 75.00%                     |\n| H Shares to be issued pursuant to the Global Offering | 53,562,000       | 25.00%                     |\n| Total                                                 | 214,246,910      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 26,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "1,432,193",
+          "1,328,685",
+          "1,401,972",
+          "987,833"
+        ],
+        [
+          "Gross profit",
+          "282,685",
+          "302,138",
+          "301,376",
+          "209,881"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    | Col 5   |\n| ---------------- | --------- | --------- | --------- | ------- |\n| Revenue          | 1,432,193 | 1,328,685 | 1,401,972 | 987,833 |\n| Gross profit     | 282,685   | 302,138   | 301,376   | 209,881 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 243,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue* . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "1,916,497,371",
+          "96.41%"
+        ],
+        [
+          "the Global Offering . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "71,364,300",
+          "3.59%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "1,987,861,671",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                               | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue* . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        | 1,916,497,371    | 96.41%                     |\n| the Global Offering . . . . . . . . . . . . . . . . . . . . . . . . . . .           | 71,364,300       | 3.59%                      |\n| Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 1,987,861,671    | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 266,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Temasek",
+          "50",
+          "3,906,700",
+          "5.47%"
+        ],
+        [
+          "JPMAMAPL . . . . . . . . . . . .",
+          "50",
+          "3,906,700",
+          "5.47%"
+        ],
+        [
+          "CPE River . . . . . . . . . . . . .",
+          "50",
+          "3,906,700",
+          "5.47%"
+        ],
+        [
+          "Ninety One Asia",
+          "30",
+          "2,344,000",
+          "3.28%"
+        ],
+        [
+          "Alibaba Investment",
+          "30",
+          "2,344,000",
+          "3.28%"
+        ],
+        [
+          "Huang River . . . . . . . . . . . .",
+          "25",
+          "1,953,300",
+          "2.74%"
+        ],
+        [
+          "GSAM . . . . . . . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Manulife.",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Taikang Life . . . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "China Universal Investors . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Bosera International . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "ICBC Wealth",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "IvyRock . . . . . . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "GBAHIL . . . . . . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Metazone",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Verition Fund. . . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "GMF and IRMF . . . . . . . . . .",
+          "20",
+          "1,562,600",
+          "2.19%"
+        ],
+        [
+          "Total. . . . . . . . . . . . . . . . .",
+          "455",
+          "35,550,000",
+          "49.81%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                   | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Temasek                                | 50                    | 3,906,700              | 5.47%                         |\n| JPMAMAPL . . . . . . . . . . . .       | 50                    | 3,906,700              | 5.47%                         |\n| CPE River . . . . . . . . . . . . .    | 50                    | 3,906,700              | 5.47%                         |\n| Ninety One Asia                        | 30                    | 2,344,000              | 3.28%                         |\n| Alibaba Investment                     | 30                    | 2,344,000              | 3.28%                         |\n| Huang River . . . . . . . . . . . .    | 25                    | 1,953,300              | 2.74%                         |\n| GSAM . . . . . . . . . . . . . . . .   | 20                    | 1,562,600              | 2.19%                         |\n| Manulife.                              | 20                    | 1,562,600              | 2.19%                         |\n| Taikang Life . . . . . . . . . . . .   | 20                    | 1,562,600              | 2.19%                         |\n| China Universal Investors . . . .      | 20                    | 1,562,600              | 2.19%                         |\n| Bosera International . . . . . . .     | 20                    | 1,562,600              | 2.19%                         |\n| ICBC Wealth                            | 20                    | 1,562,600              | 2.19%                         |\n| IvyRock . . . . . . . . . . . . . . .  | 20                    | 1,562,600              | 2.19%                         |\n| GBAHIL . . . . . . . . . . . . . . .   | 20                    | 1,562,600              | 2.19%                         |\n| Metazone                               | 20                    | 1,562,600              | 2.19%                         |\n| Verition Fund. . . . . . . . . . . .   | 20                    | 1,562,600              | 2.19%                         |\n| GMF and IRMF . . . . . . . . . .       | 20                    | 1,562,600              | 2.19%                         |\n| Total. . . . . . . . . . . . . . . . . | 455                   | 35,550,000             | 49.81%                        |",
+      "metadata": {
+        "investor_count": 18
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 25,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "approximately HK$111.9 million (including underwriting commission) accounting",
+          "for 1.6"
+        ],
+        [
+          "Share. Among our listing expenses, approximately",
+          "HK$103.3 million"
+        ],
+        [
+          "(including underwriting commission",
+          "s,"
+        ],
+        [
+          "Track Record Period, we incurred RMB11.6 million in listing expenses, among which",
+          "RMB1.4"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                  | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                           | fees,                   |\n| approximately HK$111.9 million (including underwriting commission) accounting     | for 1.6                 |\n| Share. Among our listing expenses, approximately                                  | HK$103.3 million        |\n| (including underwriting commission                                                | s,                      |\n| Track Record Period, we incurred RMB11.6 million in listing expenses, among which | RMB1.4                  |\n| The listing expenses above are the latest practicable estimate for reference      | only,                   |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 310,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          "11",
+          "1,583,151",
+          "2,190,233",
+          "2,616,980"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2    | Year-1    | Col 5     |\n| ------------------- | ------ | --------- | --------- | --------- |\n| Revenue             | .      | .         | .         | .         |\n| Profit for the year | 11     | 1,583,151 | 2,190,233 | 2,616,980 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

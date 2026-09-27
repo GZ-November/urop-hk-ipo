@@ -1,0 +1,437 @@
+{
+  "code": "6915.HK",
+  "fields": {
+    "col_L": {
+      "value": 308377319,
+      "page": 233,
+      "quote": "H Shares to be issued pursuant to the Global Offering 36,234,500 11.75 Total 308,377,319 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 36234500,
+      "page": 233,
+      "quote": "H Shares to be issued pursuant to the Global Offering 36,234,500 11.75",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 272142819,
+      "page": 233,
+      "quote": "the registered share capital of our Company was RMB272,142,819 comprising 272,142,819 Domestic Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 272142819,
+      "page": 233,
+      "quote": "the registered share capital of our Company was RMB272,142,819 comprising 272,142,819 Domestic Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 233,
+      "quote": "H Shares to be issued pursuant to the Global Offering 36,234,500 11.75 Total 308,377,319 100.00",
+      "confidence": "medium",
+      "note": "全球发售全部为新发行 H 股：36,234,500 股新股，无 Sale Shares（老股出售）"
+    },
+    "col_Q": {
+      "value": 36234500,
+      "page": 233,
+      "quote": "H Shares to be issued pursuant to the Global Offering 36,234,500 11.75",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 32611000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 32,611,000 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 3623500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 3,623,500 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 36,234,500 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 307090319,
+      "page": 227,
+      "quote": "the total number of 1,287,000 Domestic Shares and 307,090,319 H Shares in issue (assuming the Over-allotment Option is not exercised) upon Listing",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 13.06,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$13.06 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 9.33,
+      "page": 2,
+      "quote": "is currently expected to be not less than HK$9.33 per Offer Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 235,
+      "quote": "These financial statements are presented in Renminbi (RMB) and all values are rounded to the nearest thousand",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 502270000,
+      "page": 21,
+      "quote": "Non-current assets 308,091 295,441 302,992 Current assets 194,179 192,081 257,288",
+      "confidence": "high",
+      "note": "308,091 + 194,179 = 502,270 (RMB'000)"
+    },
+    "col_X": {
+      "value": 487522000,
+      "page": 21,
+      "quote": "Non-current assets 308,091 295,441 302,992 Current assets 194,179 192,081 257,288",
+      "confidence": "high",
+      "note": "295,441 + 192,081 = 487,522 (RMB'000)"
+    },
+    "col_Y": {
+      "value": 560280000,
+      "page": 21,
+      "quote": "Non-current assets 308,091 295,441 302,992 Current assets 194,179 192,081 257,288",
+      "confidence": "high",
+      "note": "302,992 + 257,288 = 560,280 (RMB'000)"
+    },
+    "col_Z": {
+      "value": 361924000,
+      "page": 21,
+      "quote": "Total equity 361,924 403,223 498,017",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 403223000,
+      "page": 21,
+      "quote": "Total equity 361,924 403,223 498,017",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 498017000,
+      "page": 21,
+      "quote": "Total equity 361,924 403,223 498,017",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 140346000,
+      "page": 21,
+      "quote": "Current liabilities 139,271 83,364 61,242",
+      "confidence": "high",
+      "note": "Total liabilities = Total current liabilities + Total non-current liabilities: 139,271 + 1,075 = 140,346 (2023); 83,364 + 935 = 84,299 (2024); 61,242 + 1,021 = 62,263 (2025). Non-current liabilities line: \"Non-current liabilities 1,075 935 1,021\" (p.21)."
+    },
+    "col_AD": {
+      "value": 84299000,
+      "page": 21,
+      "quote": "Current liabilities 139,271 83,364 61,242",
+      "confidence": "high",
+      "note": "Total liabilities = 83,364 + 935 = 84,299 (2024). Non-current liabilities 935 on p.21."
+    },
+    "col_AE": {
+      "value": 62263000,
+      "page": 21,
+      "quote": "Current liabilities 139,271 83,364 61,242",
+      "confidence": "high",
+      "note": "Total liabilities = 61,242 + 1,021 = 62,263 (2025). Non-current liabilities 1,021 on p.21."
+    },
+    "col_AF": {
+      "value": 198021000,
+      "page": 315,
+      "quote": "Revenue 6 198,021 — 198,021 220,755 — 220,755 235,408 — 235,408",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 220755000,
+      "page": 315,
+      "quote": "Revenue 6 198,021 — 198,021 220,755 — 220,755 235,408 — 235,408",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 235408000,
+      "page": 315,
+      "quote": "Revenue 6 198,021 — 198,021 220,755 — 220,755 235,408 — 235,408",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 63594000,
+      "page": 315,
+      "quote": "Profit before tax 64,780 (1,186) 63,594 93,118 (1,353) 91,765 104,277 4,985 109,262",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 91765000,
+      "page": 315,
+      "quote": "Profit before tax 64,780 (1,186) 63,594 93,118 (1,353) 91,765 104,277 4,985 109,262",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 109262000,
+      "page": 315,
+      "quote": "Profit before tax 64,780 (1,186) 63,594 93,118 (1,353) 91,765 104,277 4,985 109,262",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 55481000,
+      "page": 315,
+      "quote": "Profit for the year 12 56,667 (1,186) 55,481 76,493 (1,353) 75,140 89,809 4,985 94,794",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 75140000,
+      "page": 315,
+      "quote": "Profit for the year 12 56,667 (1,186) 55,481 76,493 (1,353) 75,140 89,809 4,985 94,794",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 94794000,
+      "page": 315,
+      "quote": "Profit for the year 12 56,667 (1,186) 55,481 76,493 (1,353) 75,140 89,809 4,985 94,794",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 894000,
+      "page": 268,
+      "quote": "Lease liabilities* 342 — 819 831 Non-current Lease liabilities* 860 720 72 — Total 62,713 10,723 894 834",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 325,
+      "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards issued by the IASB.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 180686000,
+      "page": 315,
+      "quote": "Gross profit 148,994 (14,689) 134,305 168,121 (12,981) 155,140 194,085 (13,399) 180,686",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 29100000,
+      "page": 268,
+      "quote": "We incurred capital expenditures of RMB34.3 million, RMB14.1 million and RMB29.1 million in 2023, 2024 and 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "True and fair view (unqualified opinion)",
+      "page": 313,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants' report, a true and fair view",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 286,
+      "quote": "All of the Capital Market Intermediaries in the Global Offering will receive an underwriting commission (the Fixed Fees) at the rate of 3.0% of the aggregate gross proceeds",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 286,
+      "quote": "All of the Capital Market Intermediaries in the Global Offering will receive an underwriting commission (the Fixed Fees) at the rate of 3.0% of the aggregate gross proceeds",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 286,
+      "quote": "up to an aggregate of 5,435,000 H Shares, representing no more than 15.0% of the initial Offer Shares, at the Offer Price under the International Offering",
+      "confidence": "medium"
+    },
+    "col_CI": {
+      "value": 67000000,
+      "page": 23,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately RMB58.3 million (HK$67.0 million) (including underwriting commission)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Research, development, manufacturing and sale of human tetanus antitoxin (Human TAT) and antiserum products",
+      "page": 325,
+      "quote": "The Group is principally engaged in the businesses of research and development, and production and sale of human tetanus antitoxin.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board profit test under Rule 8.05(1) of the Listing Rules; H Share issuer under Chapter 19A",
+      "page": 22,
+      "quote": "we satisfy the profit test under Rule 8.05(1) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialized (Human TAT); pipeline product candidates at clinical, preclinical and process research stages",
+      "page": 11,
+      "quote": "Marketing approval obtained and commercialized NVDA filed Marketing approval obtained in September 2025",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 23,
+      "quote": "Approximately 33.7% (or HK$114.0 million) will be used for the research and development of our product candidates.",
+      "confidence": "medium",
+      "note": "USE OF PROCEEDS 全部用途：33.7% 产品候选研发；31.4% 新设施及生产线建设与扩张；15.7% 技术与工艺升级优化；10.3% 销售及营销能力强化；8.8% 一般营运资金及一般企业用途。无债务偿还用途，故为 0"
+    },
+    "col_CJ": {
+      "value": "WSH (Wealth Strategy Holding Limited, 富策控股有限公司)",
+      "page": 230,
+      "quote": "Wealth Strategy Holding Limited (富策控股有限公司) (WSH) is a company incorporated in Hong Kong and is wholly-owned by Wealth Strategy Group Limited",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 315,
+      "quote": "Year ended 31 December 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 56826000,
+      "page": 323,
+      "quote": "NET CASH FROM OPERATING ACTIVITIES 68,606 104,055 56,826",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 73828000,
+      "page": 324,
+      "quote": "CASH AND CASH EQUIVALENTS AT 31 DECEMBER 58,199 54,673 73,828",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 23700000,
+      "page": 344,
+      "quote": "Research and development costs recognised in profit or loss 24,231 13,681 23,700",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 256,
+      "quote": "Our intangible assets primarily consisted of patent right and software.",
+      "confidence": "medium",
+      "note": "无形资产仅含专利权与软件，无 Development costs 行，故资本化开发成本新增为 0"
+    },
+    "col_AY": {
+      "value": 0.331,
+      "page": 15,
+      "quote": "RMB58.0 million, RMB64.4 million and RMB77.8 million of revenue in 2023, 2024 and 2025, respectively, accounting for 29.3%, 29.2% and 33.1% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "江西生物制品研究所股份有限公司",
+      "page": 1,
+      "quote": "Jiangxi Institute of Biological Products Inc. 江西生物製品研究所股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 138,
+      "quote": "Information about Our Institutional Pre-IPO Investors Below sets out information of our institutional Pre-IPO Investors",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 139,
+      "quote": "Jiaxing Jiaci is a limited partnership established under the laws of the PRC and is principally engaged in equity investments.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 140,
+      "quote": "Heli No. 7 is a limited partnership established under the laws of the PRC and is an private equity fund managed by its general partner, Shenzhen Heli Investment Fund Management Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Hanyi Cultural Exchange; Xiangyi Investment; Chifeng Bo-en Jingtian; Ruiqingxiang Investment; Jiaxing Jiaci; Hanxin Pharmaceutical; Hailei Pharmaceutical; Heli No. 7; Lingyao Investment",
+      "page": 138,
+      "quote": "Information about Our Institutional Pre-IPO Investors Below sets out information of our institutional Pre-IPO Investors",
+      "confidence": "medium",
+      "note": "第 1–10 项共 10 名 Pre-IPO 投资者（含个人 YANG Kun）；上列为 9 家机构，家数见 p138–140 清单"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.0944,
+      "page": 143,
+      "quote": "Hanyi Cultural Exchange* 12,675,000 4.66% 12,675,000 4.13% 12,675,000 4.11% Xiangyi Investment* 6,337,500 2.33% 6,337,500 2.06% 6,337,500 2.06%",
+      "confidence": "medium",
+      "note": "上市时机构 Pre-IPO 投资者合计持股 = 4.11+2.06+1.64+0.69+0.42+0.16+0.16+0.16+0.04 = 9.44%"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A Financing",
+      "page": 136,
+      "quote": "Date(s) of agreement(s) May 6, 2020 December 8, 2020; December 11, 2020 April 20, 2022",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 6.13,
+      "page": 136,
+      "quote": "Date(s) of agreement(s) May 6, 2020 December 8, 2020; December 11, 2020 April 20, 2022",
+      "confidence": "medium",
+      "note": "最早一轮 Series A 协议日 2020-05-06 至招股书日 2026-06-22 = 2,238 天 / 365.25 = 6.13 年"
+    },
+    "col_BB": {
+      "value": "Individual (Ms. Jing Yue)",
+      "page": 325,
+      "quote": "Ms. Jing Yue is the chairman and executive director of the Company and the ultimate controlling shareholder of the Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.6763,
+      "page": 227,
+      "quote": "Ms. Jing(2) Interest in controlled corporations 208,562,250 H Shares 67.92 67.63",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.6763,
+      "page": 22,
+      "quote": "Immediately upon completion of the Global Offering (assuming the Over-allotment Option is not exercised), Ms. Jing will be entitled to exercise approximately 67.63% voting rights in our Company.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "05/07/2002",
+      "page": 126,
+      "quote": "On July 5, 2002, Jiangxi Institute of Biological Products was converted into a limited liability company",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 198 Huoju Avenue, Jinggangshan Economic and Technological Development Zone, Ji'an, Jiangxi, PRC",
+      "page": 79,
+      "quote": "Registered Office, Headquarters and Principal Place of Business in the PRC No. 198 Huoju Avenue Jinggangshan Economic and Technological Development Zone Ji'an, Jiangxi PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "22/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9: 00 a.m. on Monday, June 22, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "25/06/2026",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . 12: 00 noon on Thursday, June 25, 2026",
+      "confidence": "high"
+    }
+  }
+}

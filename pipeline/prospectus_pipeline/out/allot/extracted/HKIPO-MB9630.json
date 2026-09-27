@@ -1,0 +1,119 @@
+{
+  "code": "9630.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4998,
+      "page": 6,
+      "quote": "Total 6,416,350 49.98%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1007.22,
+      "page": 3,
+      "quote": "Subscription level 1,007.22 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 207986,
+      "page": 3,
+      "quote": "No. of valid applications 207,986",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1293166900,
+      "page": 19,
+      "quote": "10,000 11,267 2,402 out of 11,267 applicants to receive 50 H Shares 0.11% Total 187,127",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,007.22 times",
+      "page": 3,
+      "quote": "Subscription level 1,007.22 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/06/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinator (on behalf of the Underwriters) and our Company on the Price",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**25/06/2026 22:42**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 12838650,
+      "page": 1,
+      "quote": "Number of Offer Shares (Before exercise of the Over- allotment Option) 12,838,650",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1283900,
+      "page": 1,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 1,283,900",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 11554750,
+      "page": 30,
+      "quote": "Of the 11,554,750 Offer Shares initially being offered under the International Offering",
+      "confidence": "medium"
+    },
+    "col_CV": {
+      "value": 1925750,
+      "page": 1,
+      "quote": "he Prospectus has been fully exercised by the Overall Coordinators, for themselves and on behalf of the International Underwriters, on July 10, 2026, in respect of an aggregate of 1,925,750 H Shares, ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (13/07/2026 18:41)"
+    },
+    "col_CW": {
+      "value": "Reallocation N/A; 0 Offer Shares reallocated from the International Offering (no clawback)",
+      "page": 3,
+      "quote": "No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 3153100000,
+      "page": 2,
+      "quote": "Net proceeds HK$3,153.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0888,
+      "page": 33,
+      "quote": "the total market value of the H Shares to be held by the public is expected to be approximately HK$3,244.7 million, calculated based on the final Offer Price of HK$252.73 per H Share",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 144579366,
+      "page": 1,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 144,579,366",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0444,
+      "page": null,
+      "quote": "公式：(col_CS 12,838,650 − col_CK 0.4998×col_CS) ÷ col_CZ 144,579,366 = 0.0444；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 12,838,650 − col_CK 0.4998×col_CS) ÷ col_CZ 144,579,366 = 0.0444；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 144579366,
+      "page": 1,
+      "quote": "公式：(col_CS 12,838,650 − col_CK 0.4998×col_CS) ÷ col_CZ 144,579,366 = 0.0444；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

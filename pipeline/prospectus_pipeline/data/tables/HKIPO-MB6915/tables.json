@@ -1,0 +1,156 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 233,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Shares",
+          "1,287,000",
+          "0.42"
+        ],
+        [
+          "H Shares to be converted from Domestic",
+          "270,855,819",
+          "87.83"
+        ],
+        [
+          "the Global Offering",
+          "36,234,500",
+          "11.75"
+        ],
+        [
+          "Domestic Shares",
+          "1,287,000",
+          "0.41"
+        ],
+        [
+          "H Shares to be converted from Domestic",
+          "270,855,819",
+          "86.31"
+        ],
+        [
+          "the Global Offering",
+          "41,669,500",
+          "13.28"
+        ],
+        [
+          "Total",
+          "313,812,319",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                  | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------- | ---------------- | -------------------------- |\n| Domestic Shares                        | 1,287,000        | 0.42                       |\n| H Shares to be converted from Domestic | 270,855,819      | 87.83                      |\n| the Global Offering                    | 36,234,500       | 11.75                      |\n| Domestic Shares                        | 1,287,000        | 0.41                       |\n| H Shares to be converted from Domestic | 270,855,819      | 86.31                      |\n| the Global Offering                    | 41,669,500       | 13.28                      |\n| Total                                  | 313,812,319      | 100.00                     |",
+      "metadata": {
+        "total_rows": 7
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 17,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "expenses. The listing expenses were incurred related to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                   | Rate / Amount Disclosed |\n| ------------------------------------------------------------------ | ----------------------- |\n| expenses. The listing expenses were incurred related to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "RMB58.3 million"
+        ],
+        [
+          "(HK$67.0 million) (including underwriting commission), at the Offer Price of",
+          "HK$11.2"
+        ],
+        [
+          "underwriting commission and other expenses are approximately",
+          "RMB15.9 million"
+        ],
+        [
+          "million) in listing expenses, among which",
+          "RMB22.0 million"
+        ],
+        [
+          "We estimate that additional listing expenses of approximately",
+          "RMB32.9 million"
+        ],
+        [
+          "million) (including underwriting commissions of approximately",
+          "RMB15.9 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                             | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately         | RMB58.3 million         |\n| (HK$67.0 million) (including underwriting commission), at the Offer Price of | HK$11.2                 |\n| underwriting commission and other expenses are approximately                 | RMB15.9 million         |\n| million) in listing expenses, among which                                    | RMB22.0 million         |\n| We estimate that additional listing expenses of approximately                | RMB32.9 million         |\n| million) (including underwriting commissions of approximately                | RMB15.9 million         |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "198,021",
+          "—",
+          "198,021",
+          "220,755"
+        ],
+        [
+          "Gross profit",
+          "148,994",
+          "(14,689)",
+          "134,305",
+          "168,121"
+        ],
+        [
+          "Profit for the year",
+          "56,667",
+          "(1,186)",
+          "55,481",
+          "76,493"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3  | Year-2   | Year-1  | Col 5   |\n| ------------------- | ------- | -------- | ------- | ------- |\n| Revenue             | 198,021 | —        | 198,021 | 220,755 |\n| Gross profit        | 148,994 | (14,689) | 134,305 | 168,121 |\n| Profit for the year | 56,667  | (1,186)  | 55,481  | 76,493  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

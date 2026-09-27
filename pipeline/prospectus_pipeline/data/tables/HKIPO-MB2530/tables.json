@@ -1,0 +1,93 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 317,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "250,000,000 Shares to be issued pursuant to the Global Offering",
+          "250,000",
+          "–"
+        ],
+        [
+          "1,000,000,000 Total",
+          "1,000,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                           | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------- | ---------------- | -------------------------- |\n| 250,000,000 Shares to be issued pursuant to the Global Offering | 250,000          | –                          |\n| 1,000,000,000 Total                                             | 1,000,000        | –                          |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 30,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "The total amount of Listing expenses in connection with the Global",
+          "Offering,"
+        ],
+        [
+          "underwriting commission",
+          "s,"
+        ],
+        [
+          "Over-allotment Option is not exercised). The Listing expenses of: (i) approximately",
+          "RMB18.0"
+        ]
+      ],
+      "markdown": "| Item Description                                                                    | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------- | ----------------------- |\n| The total amount of Listing expenses in connection with the Global                  | Offering,               |\n| underwriting commission                                                             | s,                      |\n| Over-allotment Option is not exercised). The Listing expenses of: (i) approximately | RMB18.0                 |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 22,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "337,608",
+          "367,297",
+          "426,545",
+          "192,076"
+        ],
+        [
+          "Gross profit",
+          "246,598",
+          "273,190",
+          "320,867",
+          "145,554"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 337,608 | 367,297 | 426,545 | 192,076 |\n| Gross profit     | 246,598 | 273,190 | 320,867 | 145,554 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 224,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue*",
+          "2,056,836,276",
+          "100.00%"
+        ],
+        [
+          "A Shares in issue*",
+          "2,056,836,276",
+          "85.38%"
+        ],
+        [
+          "Offering",
+          "352,126,000",
+          "14.62%"
+        ],
+        [
+          "Total",
+          "2,408,962,276",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares in issue*    | 2,056,836,276    | 100.00%                    |\n| A Shares in issue*    | 2,056,836,276    | 85.38%                     |\n| Offering              | 352,126,000      | 14.62%                     |\n| Total                 | 2,408,962,276    | 100.00%                    |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 216,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "the Beijing Yian OTC Swaps)",
+          "15.0",
+          "32,739,000",
+          "9.30%"
+        ],
+        [
+          "with the Luhua Daosheng OTC Swaps)",
+          "6.0",
+          "13,095,000",
+          "3.72%"
+        ],
+        [
+          "Arrangement)",
+          "5.9",
+          "12,814,000",
+          "3.64%"
+        ],
+        [
+          "China Hongqiao",
+          "7.5",
+          "16,369,000",
+          "4.65%"
+        ],
+        [
+          "Hyperion Venture",
+          "2.9",
+          "6,407,000",
+          "1.82%"
+        ],
+        [
+          "Tianto",
+          "10.0",
+          "21,826,000",
+          "6.20%"
+        ],
+        [
+          "Safewell",
+          "2.5",
+          "5,571,000",
+          "1.58%"
+        ],
+        [
+          "Total",
+          "49.8",
+          "108,821,000",
+          "30.91%"
+        ],
+        [
+          "the Beijing Yian OTC Swaps)",
+          "15.0",
+          "35,402,000",
+          "10.05%"
+        ],
+        [
+          "with the Luhua Daosheng OTC Swaps)",
+          "6.0",
+          "14,160,000",
+          "4.02%"
+        ],
+        [
+          "Arrangement)",
+          "5.9",
+          "13,856,000",
+          "3.93%"
+        ],
+        [
+          "China Hongqiao",
+          "7.5",
+          "17,701,000",
+          "5.03%"
+        ],
+        [
+          "Hyperion Venture",
+          "2.9",
+          "6,928,000",
+          "1.97%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor               | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ---------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| the Beijing Yian OTC Swaps)        | 15.0                  | 32,739,000             | 9.30%                         |\n| with the Luhua Daosheng OTC Swaps) | 6.0                   | 13,095,000             | 3.72%                         |\n| Arrangement)                       | 5.9                   | 12,814,000             | 3.64%                         |\n| China Hongqiao                     | 7.5                   | 16,369,000             | 4.65%                         |\n| Hyperion Venture                   | 2.9                   | 6,407,000              | 1.82%                         |\n| Tianto                             | 10.0                  | 21,826,000             | 6.20%                         |\n| Safewell                           | 2.5                   | 5,571,000              | 1.58%                         |\n| Total                              | 49.8                  | 108,821,000            | 30.91%                        |\n| the Beijing Yian OTC Swaps)        | 15.0                  | 35,402,000             | 10.05%                        |\n| with the Luhua Daosheng OTC Swaps) | 6.0                   | 14,160,000             | 4.02%                         |\n| Arrangement)                       | 5.9                   | 13,856,000             | 3.93%                         |\n| China Hongqiao                     | 7.5                   | 17,701,000             | 5.03%                         |\n| Hyperion Venture                   | 2.9                   | 6,928,000              | 1.97%                         |",
+      "metadata": {
+        "investor_count": 12
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 217,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Tianto",
+          "10.0",
+          "23,601,000",
+          "6.70%"
+        ],
+        [
+          "Safewell",
+          "2.5",
+          "6,024,000",
+          "1.71%"
+        ],
+        [
+          "Total",
+          "49.8",
+          "117,672,000",
+          "33.41%"
+        ],
+        [
+          "the Beijing Yian OTC Swaps)",
+          "15.0",
+          "38,536,000",
+          "10.94%"
+        ],
+        [
+          "with the Luhua Daosheng OTC Swaps)",
+          "6.0",
+          "15,414,000",
+          "4.38%"
+        ],
+        [
+          "Arrangement)",
+          "5.9",
+          "15,083,000",
+          "4.28%"
+        ],
+        [
+          "China Hongqiao",
+          "7.5",
+          "19,268,000",
+          "5.47%"
+        ],
+        [
+          "Hyperion Venture",
+          "2.9",
+          "7,541,000",
+          "2.14%"
+        ],
+        [
+          "Tianto",
+          "10.0",
+          "25,690,000",
+          "7.30%"
+        ],
+        [
+          "Safewell",
+          "2.5",
+          "6,557,000",
+          "1.86%"
+        ],
+        [
+          "Total",
+          "49.8",
+          "128,089,000",
+          "36.37%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor               | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ---------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Tianto                             | 10.0                  | 23,601,000             | 6.70%                         |\n| Safewell                           | 2.5                   | 6,024,000              | 1.71%                         |\n| Total                              | 49.8                  | 117,672,000            | 33.41%                        |\n| the Beijing Yian OTC Swaps)        | 15.0                  | 38,536,000             | 10.94%                        |\n| with the Luhua Daosheng OTC Swaps) | 6.0                   | 15,414,000             | 4.38%                         |\n| Arrangement)                       | 5.9                   | 15,083,000             | 4.28%                         |\n| China Hongqiao                     | 7.5                   | 19,268,000             | 5.47%                         |\n| Hyperion Venture                   | 2.9                   | 7,541,000              | 2.14%                         |\n| Tianto                             | 10.0                  | 25,690,000             | 7.30%                         |\n| Safewell                           | 2.5                   | 6,557,000              | 1.86%                         |\n| Total                              | 49.8                  | 128,089,000            | 36.37%                        |",
+      "metadata": {
+        "investor_count": 9
+      }
+    }
+  ],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "7,305,904",
+          "100.0",
+          "10,228,062",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "1,216,545",
+          "16.7",
+          "653,952",
+          "6.4"
+        ],
+        [
+          "Profit for the year",
+          "398,904",
+          "5.5",
+          "217,255",
+          "2.1"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3    | Year-2 | Year-1     | Col 5 |\n| ------------------- | --------- | ------ | ---------- | ----- |\n| Revenue             | 7,305,904 | 100.0  | 10,228,062 | 100.0 |\n| Gross profit        | 1,216,545 | 16.7   | 653,952    | 6.4   |\n| Profit for the year | 398,904   | 5.5    | 217,255    | 2.1   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "21,134,389",
+          "22,956,459",
+          "24,259,291"
+        ],
+        [
+          "Total liabilities",
+          "9,610,369",
+          "11,573,745",
+          "12,106,522"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 21,134,389 | 22,956,459 | 24,259,291 |\n| Total liabilities | 9,610,369  | 11,573,745 | 12,106,522 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 231,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "7,305,904",
+          "100.0",
+          "10,228,062",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "1,216,545",
+          "16.7",
+          "653,952",
+          "6.4"
+        ],
+        [
+          "Profit for the year",
+          "398,904",
+          "5.5",
+          "217,255",
+          "2.1"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3    | Year-2 | Year-1     | Col 5 |\n| ------------------- | --------- | ------ | ---------- | ----- |\n| Revenue             | 7,305,904 | 100.0  | 10,228,062 | 100.0 |\n| Gross profit        | 1,216,545 | 16.7   | 653,952    | 6.4   |\n| Profit for the year | 398,904   | 5.5    | 217,255    | 2.1   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

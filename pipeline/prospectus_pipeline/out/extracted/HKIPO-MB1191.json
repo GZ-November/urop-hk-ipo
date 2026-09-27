@@ -1,0 +1,426 @@
+{
+  "code": "1191.HK",
+  "fields": {
+    "col_L": {
+      "value": 89542045,
+      "page": 208,
+      "quote": "H Shares to be issued under the Global Offering . . . 13,431,500 15.00 Total . . . . . . . . . . . . . . . . . . . . . . 89,542,045 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 13431500,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 13,431,500 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 76110545,
+      "page": 208,
+      "quote": "H Shares to be converted from Unlisted Shares(1) 76,110,545 85.00 H Shares to be issued under the Global Offering 13,431,500 15.00",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 76110545,
+      "page": 208,
+      "quote": "H Shares to be converted from Unlisted Shares(1) 76,110,545 85.00 H Shares to be issued under the Global Offering 13,431,500 15.00",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 208,
+      "quote": "H Shares to be issued under the Global Offering 13,431,500 15.00 Total 89,542,045 100.00",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 13431500,
+      "page": 208,
+      "quote": "H Shares to be issued under the Global Offering . . . . . . . . . . . . . . . . . . . . 13,431,500 15.00",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 12088350,
+      "page": 71,
+      "quote": "the International Offering of initially 12,088,350 Offer Shares",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1343150,
+      "page": 71,
+      "quote": "the Hong Kong Public Offering of initially 1,343,150 Offer Shares",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 13,431,500 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 89542045,
+      "page": 208,
+      "quote": "H Shares to be converted from Unlisted Shares(1) 76,110,545 85.00 H Shares to be issued under the Global Offering 13,431,500 15.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 114.0,
+      "page": 2,
+      "quote": "Offer Price : HK$114.00 per H Share, plus brokerage of 1.0%, AFRC transaction levy of 0.00015%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 114.0,
+      "page": 2,
+      "quote": "Offer Price : HK$114.00 per H Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 289,
+      "quote": "presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 437124000,
+      "page": 19,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . 437,124 1,011,864 1,830,013",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1011864000,
+      "page": 19,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . 437,124 1,011,864 1,830,013",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1830013000,
+      "page": 19,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . 437,124 1,011,864 1,830,013",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 160724000,
+      "page": 19,
+      "quote": "Total equity. . . . . . . . . . . . . . . . . . . . . . . . . 160,724 211,663 585,747",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 211663000,
+      "page": 19,
+      "quote": "Total equity. . . . . . . . . . . . . . . . . . . . . . . . . 160,724 211,663 585,747",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 585747000,
+      "page": 19,
+      "quote": "Total equity. . . . . . . . . . . . . . . . . . . . . . . . . 160,724 211,663 585,747",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 276400000,
+      "page": 19,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . 276,400 800,201 1,244,266",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 800201000,
+      "page": 19,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . 276,400 800,201 1,244,266",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 1244266000,
+      "page": 19,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . 276,400 800,201 1,244,266",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 175338000,
+      "page": 16,
+      "quote": "Revenue . . . . . . . . . . . . . . . . 175,338 100.0 861,832 100.0 1,221,063 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 861832000,
+      "page": 16,
+      "quote": "Revenue . . . . . . . . . . . . . . . . 175,338 100.0 861,832 100.0 1,221,063 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 1221063000,
+      "page": 16,
+      "quote": "Revenue . . . . . . . . . . . . . . . . 175,338 100.0 861,832 100.0 1,221,063 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -108564000,
+      "page": 16,
+      "quote": "Loss before tax . . . . . . . . . . . (108,564) (61.9) (17,738) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -17738000,
+      "page": 16,
+      "quote": "Loss before tax . . . . . . . . . . . (108,564) (61.9) (17,738) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -100138000,
+      "page": 16,
+      "quote": "Loss before tax . . . . . . . . . . . (108,564) (61.9) (17,738) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -108564000,
+      "page": 16,
+      "quote": "Loss for the year . . . . . . . . . (108,564) (61.9) (17,895) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -17895000,
+      "page": 16,
+      "quote": "Loss for the year . . . . . . . . . (108,564) (61.9) (17,895) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -100138000,
+      "page": 16,
+      "quote": "Loss for the year . . . . . . . . . (108,564) (61.9) (17,895) (2.1) (100,138) (8.2)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 852130000,
+      "page": 248,
+      "quote": "Lease liabilities — 6,195 17,001 23,403 Total 163,340 533,136 852,130 923,020",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 221,
+      "quote": "The preparation of the historical financial information in conformity with IFRS Accounting Standards requires the use of certain critical accounting estimates.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 109756000,
+      "page": 16,
+      "quote": "Gross (loss)/profit . . . . . . . . . (31,304) (17.9) 101,813 11.8 109,756 9.0",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 124152000,
+      "page": 249,
+      "quote": "Purchases of items of property, plant and equipment 91,291 98,953 124,109 Purchases of items of intangible assets — 96 43 Total 91,291 99,049 124,152",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 288,
+      "quote": "a true and fair view of the financial position of the Group and the Company as at 31 December 2023, 2024 and 2025",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 262,
+      "quote": "Our Company will pay an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 262,
+      "quote": "Our Company will pay an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 268,
+      "quote": "to require our Company to issue and allot up to an aggregate of 2,014,700 additional Offer Shares representing approximately 15% of the number of initial Offer Shares",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 116000000,
+      "page": 25,
+      "quote": "for the Global Offering are approximately HK$116 million, accounting for approximately of 9% of our gross proceeds",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Optoelectronic interconnection products (optical transceivers, AOC and others) for AI data centers",
+      "page": 135,
+      "quote": "We are a provider of optoelectronic interconnection products, offering optical transceivers, AOCs",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board — Rule 8.05(3) market capitalisation/revenue test",
+      "page": 24,
+      "quote": "We are applying for the Listing under Rule 8.05(3) of the Listing Rules and satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Mass production and commercialization stage (400G and 800G SiPh optical transceivers in mass production and delivery)",
+      "page": 135,
+      "quote": "we are one of the first companies in China to realize mass production and delivery of 400G and 800G AI optical transceivers, which are deployed in AI data centers",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 25,
+      "quote": "approximately 10.0% of the net proceeds, or HK$141.5 million, is expected to be used for working capital and for general corporate purposes",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "JSC International Investment Fund SPC (acting for and on behalf of Jingxin SP); Winwin Technology Investment Co., Limited; Kingsoft Cloud Network Corporation Limited; UBS Asset Management (Singapore) Ltd.; Perseverance Asset Management International (Singapore) Pte. Ltd.; E Fund Management Co., Ltd. and E Fund Management (Hong Kong) Co., Ltd.",
+      "page": 212,
+      "quote": "JSC International Investment Fund SPC (acting for and on behalf of Jingxin SP) 250,000,000 2,192,950 16.33% 2.45% 14.20% 2.40% Winwin Technology 200,000,000 1,754,350 13.06% 1.96%",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 16,
+      "quote": "Year Ended December 31, 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -359097000,
+      "page": 20,
+      "quote": "Net cash flows used in operating activities. . . (91,042) (254,808) (359,097)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 334040000,
+      "page": 20,
+      "quote": "Cash and cash equivalents at the end of the year . . . 32,967 74,963 334,040",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 104267000,
+      "page": 16,
+      "quote": "Research and development expenses. . . . . . . . . . . . . . . . (42,266) (24.1) (63,797) (7.4) (104,267) (8.5)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 247,
+      "quote": "Intangible Assets Our intangible assets consist of (i) software, and (ii) patents and license",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.787,
+      "page": 14,
+      "quote": "revenue generated from our five largest customers amounted to RMB168.0 million, RMB605.9 million, and RMB961.0 million, respectively, accounting for 95.8%, 70.3%, and 78.7% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "北京海光芯正科技股份有限公司",
+      "page": 1,
+      "quote": "北京海光芯正科技股份有限公司 CREALIGHTS TECHNOLOGY CO., LTD. Stock Code : 1191",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 23,
+      "quote": "We have engaged in the Pre-IPO Investments with our Pre-IPO Investors.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 83,
+      "quote": "Suzhou Ronglian Venture Capital Partnership (L.P.)",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 101,
+      "quote": "Xiaomi Zhizao is a limited partnership established in the PRC and mainly engaged in equity investment and venture capital.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 91,
+      "quote": "Alibaba Subscription . . . . . . . . 1,200,000 RMB40,000,000 RMB2,040,000,000 December 27, 2022 December 29, 2022 RMB33.33 66.41% Xiaomi and Yuanhe Subscriptions",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 101,
+      "quote": "Beijing Municipal Government Investment Guidance Fund (Limited Partnership) (北京市政府投資引導基金(有限合夥)), the limited partner of Beijing InfoDev Fund",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 101,
+      "quote": "Alibaba China is indirectly wholly owned by Alibaba Group Holding Limited (阿里巴巴集團控股有限公司), a company listed on the Stock Exchange (stock code: 9988)",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Suzhou Ronglian VC; Suzhou Huiqi; Jusheng VC; Jingu Yuanxin; Suzhou Xieli VC; Suzhou Junshixieli; Junding Xieli; Jiangsu Gaotou Bondshine; Suzhou Bangsheng Yingxin; Bangsheng Juyuan; Wuxi Yuli; Suzhou Wide Band-Aid; Yuanhe; Suzhou Qina; Tianjin TEDA; Jiangsu Bohua; Beijing InfoDev Fund; Beijing ETDA Upgrade Fund II; Alibaba China; Xiaomi Zhizao; Beijing Haiju; Shanghai Handuo; Yiwu Huaxinyuanjing; Jiaxing Gaohe; Suzhou Yinji; Zhongtian Technology; Jinyuan Huifu; Juyuan Casting; Jiang Wenhao; Zhong Junqi",
+      "page": 102,
+      "quote": "Suzhou Ronglian VC 5,294,880 6.96% — — 5,294,880 5.91% 5,294,880 5.91% Suzhou Huiqi 1,920,900 2.52% — — 1,920,900 2.15% 1,920,900 2.15%",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.6705,
+      "page": 104,
+      "quote": "9.44% 5.30% 67.05% 15.00% Pre-IPO Investors(2)",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 23,
+      "quote": "the only special rights exercised by certain Shareholders were the rights to nominate directors and board observers and the right to information",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "Series Angel Financing",
+      "page": 91,
+      "quote": "Series Angel Financing . . . . . . . RMB869,565 RMB10,000,000 RMB27,000,000 May 15, 2012 July 31, 2012 RMB2.79(3) 97.19% Series A Financing",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 14.09,
+      "page": 91,
+      "quote": "Series Angel Financing RMB869,565 RMB10,000,000 RMB27,000,000 May 15, 2012 July 31, 2012",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 15/05/2012 to prospectus date 18/06/2026 = 5,147 days / 365.25 = 14.09 years."
+    },
+    "col_BB": {
+      "value": "Natural person (founder); no single controlling shareholder — single largest group of Shareholders",
+      "page": 23,
+      "quote": "Dr. Hu, Suzhou Haiyi and Suzhou Haixu were collectively interested in 21.11% of the total issued Shares of our Company",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.1795,
+      "page": 23,
+      "quote": "they will be collectively interested in 17.95% of the total issued Shares of our Company and will remain the single largest group of Shareholders",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.1795,
+      "page": 23,
+      "quote": "they will be collectively interested in 17.95% of the total issued Shares of our Company and will remain the single largest group of Shareholders",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "01/11/2011",
+      "page": 82,
+      "quote": "On November 1, 2011, the predecessor of our Company, Crealights Ltd. was established under the PRC Company Law with a registered capital of RMB2,000,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Room 101, 1/F, Building 3, Compound No. 10, Liangshuihe 1st Street, Beijing Economic-Technological Development Area, Beijing, PRC",
+      "page": 79,
+      "quote": "Headquarters and Principal Place of Business in the PRC Room 101, 1/F, Building 3, Compound No. 10 Liangshuihe 1st Street Beijing Economic-Technological Development Area Beijing, PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "18/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Thursday, June 18, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "24/06/2026",
+      "page": 5,
+      "quote": "Application lists close(3) . . . 12:00 noon on Wednesday, June 24, 2026",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "9611.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2718,
+      "page": 14,
+      "quote": "Endless Growth\n1,256,600\n2.40%\n0.24%\nJuly 21, 2026\nTotal\n14,200,900\n27.18%\n2.71%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1149.76,
+      "page": 4,
+      "quote": "Number of valid applications\n145,096\nNumber of successful applications\n29,665\nSubscription level\n1,149.76 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 145096,
+      "page": 4,
+      "quote": "Number of valid applications\n145,096",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6008667200,
+      "page": 17,
+      "quote": "POOL A\n100\n28,372\n58 out of 28,372 to receive 100 Shares\n0.20%\n200\n8,452\n34 out of 8,452 to receive 100 Shares\n0.20%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,149.76 times",
+      "page": 4,
+      "quote": "Number of successful applications\n29,665\nSubscription level\n1,149.76 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "20/01/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and us on the",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "21/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**21/01/2026 22:27**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 52259100,
+      "page": 3,
+      "quote": "Number of Offer Shares\n52,259,100\nNumber of Offer Shares in Hong Kong Public Offering\n5,226,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5226000,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the Hong Kong Public Offering\n5,226,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 47033100,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n47,033,100 H Shares (including 3,339,500 ",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE\nOF THE OVER-ALLOTMENT OPTION（23/02/2026 16:50）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE\nOF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Reallocation: No; number of Offer Shares reallocated from the International Offering: 0; final number of Offer Shares under the Hong Kong Public Offering: 5,226,000.",
+      "page": 4,
+      "quote": "Reallocation\nNo\nNumber of Offer Shares initially available under the \nHong Kong Public Offering\n5,226,000\nNumber of Offer Shares reallocated from the International Offering\n0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1519900000,
+      "page": 4,
+      "quote": "Gross proceeds (Note)\nHK$1,620.0 million\n Less: Estimated listing expenses payable based on \n Final Offer Price\nHK$100.1 million\nNet proceeds\nHK$1,519.9 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1002,
+      "page": 27,
+      "quote": "the number of H Shares held in public hands represents approximately 10.02% of the \ntotal issued share capital of the Company (excluding treasury Shares)",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 522590644,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n522,590,644",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0728,
+      "page": 27,
+      "quote": "the free \nfloat of our Company is 7.28% and with a market value at the time of Listing of approximately \nHK$1,179.8 million",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital of the Company upon Listing (522,590,644 Shares, before any exercise of the Over-allotment Option); H Shares held by the Cornerstone Investors (14,200,900 Shares, subject to a six-month lock-up) are excluded from the free float; free float 7.28% at the final Offer Price of HK$31.00.",
+      "page": 27,
+      "quote": "Based on the final Offer Price of HK$31.00 per Offer Share and the total number of Offer Shares \nas subscribed by the Cornerstone Investors of 14,200,900 H Shares",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 522590644,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n522,590,644",
+      "confidence": "high"
+    }
+  }
+}

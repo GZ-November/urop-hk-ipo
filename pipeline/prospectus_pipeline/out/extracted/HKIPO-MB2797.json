@@ -1,0 +1,425 @@
+{
+ "code": "2797.HK",
+ "fields": {
+  "col_L": {
+   "value": 100000000,
+   "page": 210,
+   "quote": "Total. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100,000,000 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 25000000,
+   "page": 210,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . 25,000,000 25.00%",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 75000000,
+   "page": 210,
+   "quote": "Unlisted Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . 75,000,000 75.00%",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 75000000,
+   "page": 210,
+   "quote": "Unlisted Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . 75,000,000 75.00%",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 210,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . 25,000,000 25.00%",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 25000000,
+   "page": 210,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . 25,000,000 25.00%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 22500000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 2,500,000 H Shares (subject to reallocation) Number of International Offer Shares : 22,500,000 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 2500000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 2,500,000 H Shares (subject to reallocation) Number of International Offer Shares : 22,500,000 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 8.0,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$8.00 per Offer Share and is currently expected to be not less than HK$5.00 per Offer Share, unless otherwise announced",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 5.0,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$8.00 per Offer Share and is currently expected to be not less than HK$5.00 per Offer Share, unless otherwise announced",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 295,
+   "quote": "STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME 2023 2024 2025 Notes RMB’000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 245934000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 310209000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 301373000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 178243000,
+   "page": 296,
+   "quote": "Total equity. . . . . . . . . . . . . . . . 178,243 220,084 249,667",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 220084000,
+   "page": 296,
+   "quote": "Total equity. . . . . . . . . . . . . . . . 178,243 220,084 249,667",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 249667000,
+   "page": 296,
+   "quote": "Total equity. . . . . . . . . . . . . . . . 178,243 220,084 249,667",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 67691000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 90125000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 51706000,
+   "page": 352,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . 67,691 90,125 51,706 Total assets . . . . . . . . . . . . . . . . . . . . . . . . . 245,934 310,209 301,373",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 246718000,
+   "page": 295,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . 5 246,718 339,132 313,696",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 339132000,
+   "page": 295,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . 5 246,718 339,132 313,696",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 313696000,
+   "page": 295,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . 5 246,718 339,132 313,696",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 27173000,
+   "page": 295,
+   "quote": "PROFIT BEFORE TAX . . . . . . . 8 27,173 61,446 56,439",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 61446000,
+   "page": 295,
+   "quote": "PROFIT BEFORE TAX . . . . . . . 8 27,173 61,446 56,439",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 56439000,
+   "page": 295,
+   "quote": "PROFIT BEFORE TAX . . . . . . . 8 27,173 61,446 56,439",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 23705000,
+   "page": 295,
+   "quote": "PROFIT FOR THE YEAR AND TOTAL COMPREHENSIVE INCOME FOR THE YEAR. . . 23,705 53,199 48,925",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 53199000,
+   "page": 295,
+   "quote": "PROFIT FOR THE YEAR AND TOTAL COMPREHENSIVE INCOME FOR THE YEAR. . . 23,705 53,199 48,925",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 48925000,
+   "page": 295,
+   "quote": "PROFIT FOR THE YEAR AND TOTAL COMPREHENSIVE INCOME FOR THE YEAR. . . 23,705 53,199 48,925",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.03,
+   "page": 263,
+   "quote": "The Underwriters will receive an underwriting commission of 3.00% of the aggregate Offer Price of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.03,
+   "page": 263,
+   "quote": "The Underwriters will receive an underwriting commission of 3.00% of the aggregate Offer Price of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 263,
+   "quote": "to require our Company to allot and issue up to an aggregate of 3,750,000 Offer Shares, representing 15% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Fruit snacks (hog plum food products)",
+   "page": 107,
+   "quote": "We are a fruit snacks company in the PRC that primarily sells hog plum（南酸棗）food products",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange",
+   "page": 254,
+   "quote": "Subject to (a) the Listing Committee granting listing of, and permission to deal in, the H Shares to be offered pursuant to the Global Offering",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 245,
+   "quote": "For the year ended 31 December/ as at 31 December 2023 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 1841000,
+   "page": 298,
+   "quote": "Net cash flows from operating activities . . . . . . . . . . . . . . . . . 9,114 105,780 1,841",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 115009000,
+   "page": 296,
+   "quote": "Cash and cash equivalents . . . . . . 22 70,438 131,378 115,009",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 11433000,
+   "page": 295,
+   "quote": "Research and development expenses . . . . . . . . . . . . . . . . . (11,061) (11,948) (11,433)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 336,
+   "quote": "Trademarks and patents Software Total RMB’000",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.337,
+   "page": 146,
+   "quote": "Sales to our five largest customers in each of FY2023, FY2024 and FY2025 accounted for approximately 26.5%, 38.8% and 33.7% of our total sales respectively",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "江西齐云山食品股份有限公司",
+   "page": 1,
+   "quote": "Jiangxi Qiyunshan Food Co., Ltd. 江西齊雲山食品股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Yunzhishang LP",
+   "page": 100,
+   "quote": "Yunzhishang LP (Note 1) . . . . 22 April 2022",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0,
+   "page": 101,
+   "quote": "The partnership interests in Yunzhishang LP were contributed by our employees who were also shareholders of Chongyi Food Factory",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Pre-IPO Investment (22 April 2022)",
+   "page": 100,
+   "quote": "Yunzhishang LP (Note 1) . . . . 22 April 2022",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 4.19,
+   "page": 100,
+   "quote": "Yunzhishang LP (Note 1) . . . . 22 April 2022",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural person (Core Management Shareholders acting in concert)",
+   "page": 188,
+   "quote": "the Core Management Shareholders, through Chongyi Food Factory and Yunzhishang LP, are able to exercise effective control over 100% of the voting rights in general meetings of our Company",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.75,
+   "page": 189,
+   "quote": "Chongyi Food Factory and Yunzhishang LP will be interested in approximately 56.25% and 18.75% of our enlarged issued share capital, respectively",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.75,
+   "page": 189,
+   "quote": "Chongyi Food Factory and Yunzhishang LP will be interested in approximately 56.25% and 18.75% of our enlarged issued share capital, respectively",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 0,
+   "page": 243,
+   "quote": "we did not have any mortgages, charges, debentures, lease liabilities, loan capital, unutilised banking facilities, debt securities, loans, bank overdrafts or other similar indebtedness",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 17,
+   "quote": "Approximately 36.3%, HK$47.0 million . Expansion of our production and storage capabilities Approximately 18.3%, HK$23.7 million . Enhancement of our R&D capabilities",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares (H Shares and Unlisted Shares)",
+   "page": 210,
+   "quote": "Upon completion of the Global Offering, our Shares will consist of Unlisted Shares and H Shares. Unlisted Shares and H Shares are all ordinary Shares in the share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "28/09/95",
+   "page": 301,
+   "quote": "Jiangxi Qiyunshan Food Co., Ltd. (the ‘‘Company’’) was registered as a limited liability company on 28 September 1995",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Suite 2703, 27/F, Shui On Centre, 6-8 Harbour Road, Wanchai, Hong Kong",
+   "page": 68,
+   "quote": "Principal Place of Business in Hong Kong Suite 2703, 27/F, Shui On Centre 6-8 Harbour Road Wanchai",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 14,
+   "quote": "Our historical financial information was prepared in accordance with IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "30/06/26",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Tuesday, 30 June 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "06/07/26",
+   "page": 5,
+   "quote": "Application lists for the Hong Kong Public Offering close(3) . . . . . . . . . . . . . . 12:00 noon on Monday, 6 July 2026",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 25000000,
+   "page": 210,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . 25,000,000 25.00%",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 160992000,
+   "page": 295,
+   "quote": "Gross profit. . . . . . . . . . . . . . . . 120,448 164,867 160,992",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 8335000,
+   "page": 244,
+   "quote": "Payments for purchase of items of property, plant and equipment . . . . . . . . . . . . . . . . . . . . . . 8,953 20,759 8,168 Payments for purchase of intangible assets . . . . . . . . – 180 167",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified — true and fair view",
+   "page": 293,
+   "quote": "the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Company as at 31 December 2023, 2024 and 2025",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 33000000,
+   "page": 18,
+   "quote": "total estimated listing expenses (including underwriting commission) in connection with the Global Offering are expected to be HK$33.0 million or 20.3% of the gross proceeds",
+   "confidence": "high"
+  }
+ }
+}

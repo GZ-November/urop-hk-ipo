@@ -1,0 +1,433 @@
+{
+  "code": "1511.HK",
+  "fields": {
+    "col_L": {
+      "value": 162485020,
+      "page": 246,
+      "quote": "14,461,200 H Shares to be issued under the Global Offering 8.90% 162,485,020 Total 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 14461200,
+      "page": 246,
+      "quote": "14,461,200 H Shares to be issued under the Global Offering 8.90%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 148023820,
+      "page": 246,
+      "quote": "14,461,200 H Shares to be issued under the Global Offering 8.90% 162,485,020 Total 100.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 148023820,
+      "page": 246,
+      "quote": "14,461,200 H Shares to be issued under the Global Offering 8.90% 162,485,020 Total 100.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 246,
+      "quote": "35,759,570 Unlisted Shares 22.01% 112,264,250 H Shares converted from Unlisted Shares1 69.09% 14,461,200 H Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 14461200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 14,461,200 H Shares (subject to the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 13738100,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 13,738,100 H Shares (subject to reallocation and the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 723100,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 723,100 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "14,461,200 H Shares (subject to the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 126725450,
+      "page": 135,
+      "quote": "Total 148,023,820 100% 35,759,570 126,725,450 162,485,020 100%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 60.3,
+      "page": 2,
+      "quote": "Offer Price : HK$60.30 per H Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 60.3,
+      "page": 2,
+      "quote": "Offer Price : HK$60.30 per H Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 20,
+      "quote": "Description of Selected Items from Consolidated Statements of Profit or Loss Year ended December 31, 2023 2024 2025 RMB'000",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 846494000,
+      "page": 330,
+      "quote": "Total non-current assets 127,812 107,312 105,662",
+      "confidence": "high",
+      "note": "Total assets = Total non-current assets + Total current assets: 127,812 + 718,682 = 846,494 (2023). Total current assets line on p.330."
+    },
+    "col_X": {
+      "value": 667782000,
+      "page": 330,
+      "quote": "Total non-current assets 127,812 107,312 105,662",
+      "confidence": "high",
+      "note": "Total assets = 107,312 + 560,470 = 667,782 (2024)."
+    },
+    "col_Y": {
+      "value": 629789000,
+      "page": 330,
+      "quote": "Total non-current assets 127,812 107,312 105,662",
+      "confidence": "high",
+      "note": "Total assets = 105,662 + 524,127 = 629,789 (2025)."
+    },
+    "col_Z": {
+      "value": 631661000,
+      "page": 330,
+      "quote": "Total equity 631,661 450,289 267,603",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 450289000,
+      "page": 330,
+      "quote": "Total equity 631,661 450,289 267,603",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 267603000,
+      "page": 330,
+      "quote": "Total equity 631,661 450,289 267,603",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 214833000,
+      "page": 330,
+      "quote": "Total current liabilities 188,935 190,085 350,811",
+      "confidence": "high",
+      "note": "Total liabilities = Total current liabilities + Total non-current liabilities: 188,935 + 25,898 = 214,833 (2023)."
+    },
+    "col_AD": {
+      "value": 217493000,
+      "page": 330,
+      "quote": "Total current liabilities 188,935 190,085 350,811",
+      "confidence": "high",
+      "note": "Total liabilities = 190,085 + 27,408 = 217,493 (2024)."
+    },
+    "col_AE": {
+      "value": 362186000,
+      "page": 330,
+      "quote": "Total current liabilities 188,935 190,085 350,811",
+      "confidence": "high",
+      "note": "Total liabilities = 350,811 + 11,375 = 362,186 (2025)."
+    },
+    "col_AF": {
+      "value": 161363000,
+      "page": 20,
+      "quote": "REVENUE 161,363 100.0 265,496 100.0 328,257 100",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 265496000,
+      "page": 20,
+      "quote": "REVENUE 161,363 100.0 265,496 100.0 328,257 100",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 328257000,
+      "page": 20,
+      "quote": "REVENUE 161,363 100.0 265,496 100.0 328,257 100",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -213126000,
+      "page": 20,
+      "quote": "Loss before tax (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -211579000,
+      "page": 20,
+      "quote": "Loss before tax (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -230170000,
+      "page": 20,
+      "quote": "Loss before tax (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -213126000,
+      "page": 20,
+      "quote": "LOSS FOR THE YEAR (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -211579000,
+      "page": 20,
+      "quote": "LOSS FOR THE YEAR (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -230170000,
+      "page": 20,
+      "quote": "LOSS FOR THE YEAR (213,126) (132.1) (211,579) (79.7) (230,170) (70.1)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 141066000,
+      "page": 283,
+      "quote": "Total 93,607 90,615 141,066 165,867",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 252,
+      "quote": "Our historical financial information has been prepared in accordance with IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 167877000,
+      "page": 20,
+      "quote": "Gross profit 78,817 48.8 116,007 43.7 167,877 51.1",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 8237000,
+      "page": 335,
+      "quote": "Purchases of property, plant and equipment, intangible assets and other long-term assets (29,762) (37,734) (8,237)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "Accountants' Report (p.326) gives an unqualified opinion on the consolidated historical financial information of the Group ('...true and fair view of the financial position of the Group and the Company...'). The page cannot be cited because validate.is_company_level_statement() flags it due to the parent-only statement title appearing in the page's first 15 lines."
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 304,
+      "quote": "Our Company will pay an underwriting commission of 3% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 304,
+      "quote": "Our Company will pay an underwriting commission of 3% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Offer Size Adjustment Option",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 36,
+      "quote": "allot and issue up to an aggregate of 2,169,150 additional H Shares (representing in aggregate approximately 15% of the Offer Shares initially being offered under the Global Offering)",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 76700000,
+      "page": 304,
+      "quote": "are estimated to amount to approximately RMB67.2 million (approximately HK$76.7 million) in total",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Autonomous driving solutions",
+      "page": 140,
+      "quote": "We are a provider of autonomous driving solutions specializing in driverless L4 technology in Greater China.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18C of the Listing Rules",
+      "page": 10,
+      "quote": "we are a Commercial Company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Successfully commercialized",
+      "page": 175,
+      "quote": "We are a Commercial Company with our Specialist Technology Products successfully commercialized in the Track Record Period.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 292,
+      "quote": "approximately 46.7% of the net proceeds, or HK$371.5 million, will be used to continuously enhance our R&D capabilities and solutions provision",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "Xiongan Autonomous Driving Limited; CYGG Holding Limited; Starwin International A LPF",
+      "page": 241,
+      "quote": "namely (i) Xiongan Autonomous Driving Limited (雄安自動駕駛有限公司) (Xiongan Auto Driving), (ii) CYGG Holding Limited (CYGG) and (iii) Starwin International A LPF",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 330,
+      "quote": "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION As at 31 December Notes 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -173867000,
+      "page": 334,
+      "quote": "Net cash flows used in operating activities (119,948) (208,503) (173,867)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 113349000,
+      "page": 335,
+      "quote": "Cash and cash equivalents at end of year 24 412,968 221,733 113,349",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 233690000,
+      "page": 20,
+      "quote": "Research and development expenses (184,396) (114.3) (196,447) (74.0) (233,690) (71.2)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 287,
+      "quote": "Add: Internal development costs capitalized as intangible asset – – –",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.378,
+      "page": 17,
+      "quote": "accounted for 66.0%, 46.2% and 37.8% of our total revenue in the same years",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "驭势科技（北京）股份有限公司",
+      "page": 1,
+      "quote": "馭勢科技（北京）股份有限公司 UISEE TECHNOLOGIES (BEIJING) CO., LTD.",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 19,
+      "quote": "We have received substantial investments and support from renowned private equity and strategic investors, and have raised funds of over RMB1,735 million.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 119,
+      "quote": "Investors under the Angel Financing include Sinovation Fund III, L.P., Shaanxi Xike Angel Phase III Commercial Consultancy Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 120,
+      "quote": "Investors under the Series C Financing include Chongqing Science City Investment Holding Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 119,
+      "quote": "to CICC Qihong and Bosch (Shanghai) Venture Capital Investment Co., Ltd.",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 120,
+      "quote": "Investors under the Series B-2 Financing include Shanghai State-owned Enterprise Reform and Development Equity Investment Fund Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 119,
+      "quote": "Investors under the Angel Financing include Sinovation Fund III, L.P., Shaanxi Xike Angel Phase III Commercial Consultancy Partnership (Limited Partnership)",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Angel: Sinovation Fund III, L.P.; Shaanxi Xike Angel Phase III Commercial Consultancy Partnership (LP); Zhen Partners IV (HK) Limited; Wuhu Keqi Automobile Technology Co., Ltd.; Beijing Qingshan Enterprise Angel Investment Partnership (LP). Series A: Ningbo Lanting Shiling Investment Partnership (LP); Lhasa Zhixing Innovative Technology Co., Ltd.; Century Gateway Investment Limited; Zhuhai GF Yunyi Smart Car Industry Fund (LP); Shaanxi Big Data Industry Investment Fund Partnership (LP); Beijing Yintai Jiahe Venture Capital Investment Co., Ltd.; Zhuhai GF Xinde Environment Protection Industry Investment Fund Partnership (LP); Zhen Partners IV (HK) Limited; Zhuhai Kangyuan Investment Enterprise (LP); CAS-Tech Fund I L.P.; Bosch (Shanghai) Venture Capital Investment Co., Ltd. Series B-1: Xinding Huaqi; CDBC Manufacturing Fund; Z-Park Longmen; Beijing Hard Tech II Fund; Tengyun Yuansheng; CICC Qihong; Shenzhen Capital Group (SCGC); Tianjin Hongtu; SCGC Hongrui; Shanghai Hongtu; Liyang Hongtu; Changzhou Hongtu; Jiangsu Zhongde; Jiaxing Jiayao; Xiamen Oak Forest; Liangjiang Innovative Fund; Keyuan Shenneng; Hengtong Datai; Xiamen Datai. Series B-2: Shanghai SOE Reform Fund; Beijing Smart Cloud City Investment Fund Center (LP); Xiangjiang Industrial Investment Co., Ltd.; Jiaxing Jiayao. Series B-3: Hubei High Quality Development Industry Investment Fund Partnership (LP); Taizhou Shengsheng Equity Investment Partnership (LP); CITIC Securities Investment Co., Ltd.; Yusheng Future (Zhuhai) Equity Investment Partnership (LP). Series C: Chongqing Science City Investment Holding Co., Ltd. (Chongke Investment); Xinzhifeng (Wuhan) Equity Investment Fund Partnership (LP).",
+      "page": 119,
+      "quote": "Investors under the Angel Financing include Sinovation Fund III, L.P., Shaanxi Xike Angel Phase III Commercial Consultancy Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.4767,
+      "page": 118,
+      "quote": "Shareholding in our Company immediately upon completion of the Global Offering 7.66% 12.53% 14.79% 4.40% 4.55% 3.74%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 121,
+      "quote": "Information rights and director nomination rights had been exercised by the Pre-IPO Investors prior to the execution of the Termination Agreement",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Angel Financing",
+      "page": 118,
+      "quote": "We completed six rounds of Pre-IPO Investments, details of which are set out below: Angel Financing1 Series A Financing2",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 10.03,
+      "page": 118,
+      "quote": "Date of agreement7 April 29, 2016 November 8, 2017 December 28, 2020 March 29, 2021 August 23, 2021 March 13, 2023",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 29/04/2016 (Angel Financing) to prospectus date 12/05/2026 = 3,665 days / 365.25 = 10.03 years."
+    },
+    "col_BB": {
+      "value": "Individual (natural person)",
+      "page": 19,
+      "quote": "Mr. Wu, Mr. Jiang, Mr. Zhou, Mr. Peng and Beijing Simaju will be a group of Controlling Shareholders under the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3235,
+      "page": 19,
+      "quote": "Mr. Wu, Mr. Jiang, Mr. Zhou, Mr. Peng and Beijing Simaju will be directly interested in an aggregate of 32.35% of the total share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3235,
+      "page": 19,
+      "quote": "Mr. Wu, Mr. Jiang, Mr. Zhou, Mr. Peng and Beijing Simaju will be directly interested in an aggregate of 32.35% of the total share capital of our Company",
+      "confidence": "medium"
+    },
+    "col_BP": {
+      "value": "03/02/2016",
+      "page": 114,
+      "quote": "Our Company was established in the PRC as a limited liability company on February 3, 2016",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Room 101, 1/F, Yuan Building 1, No. 85 Hongan Road, Fangshan District, Beijing, PRC",
+      "page": 86,
+      "quote": "Headquarters and registered office in the PRC Room 101, 1/F, Yuan Building 1 No. 85 Hongan Road Fangshan District",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "12/05/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences 9:00 a.m. on Tuesday, May 12, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "15/05/2026",
+      "page": 5,
+      "quote": "Application lists close 12:00 noon on Friday, May 15, 2026",
+      "confidence": "high"
+    }
+  }
+}

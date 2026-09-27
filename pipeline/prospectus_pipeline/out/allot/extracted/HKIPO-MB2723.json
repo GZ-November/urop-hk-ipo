@@ -1,0 +1,119 @@
+{
+  "code": "2723.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 431 页 0 处「基石投资者」、配发公告 13 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5480.23,
+      "page": 4,
+      "quote": "Subscription level\n5,480.23 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 232456,
+      "page": 4,
+      "quote": "No. of valid applications\n232,456",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4969471300,
+      "page": 9,
+      "quote": "NO. OF H \nSHARES \nAPPLIED FOR\nNO. OF VALID \nAPPLICATIONS\nBASIS OF ALLOTMENT/BALLOT\nAPPROXIMATE \nPERCENTAGE \nALLOTTED OF \nTHE TOTAL NO. OF \nH SHARES \nAPPLIED FOR\nPOOL A\n100\n98,305",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 5,480.23 times",
+      "page": 4,
+      "quote": "Subscription level\n5,480.23 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "22/05/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between us and the Sponsor-Overall Coordinator (for itself and on behalf of the Underwriters",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "26/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**26/05/2026 22:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 9068000,
+      "page": 3,
+      "quote": "Number of Offer Shares\n9,068,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 906800,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the Hong Kong Public Offering\n906,800",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 8161200,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering\n8,161,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-05-27 起 45 天内共 2 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-07-11 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Reallocation: No. The final number of Offer Shares under the Hong Kong Public Offering is 906,800, representing 10.00% of the Global Offering; no Offer Shares were reallocated from the International Offering to the Hong Kong Public Offering.",
+      "page": 4,
+      "quote": "Reallocation\nNo",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 465100000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$465.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3052,
+      "page": 12,
+      "quote": "an aggregate of 27,674,740 H Shares, representing approximately 30.52% of the total issued share capital of the Company would be counted towards the public float upon Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 90679175,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n90,679,175",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1,
+      "page": null,
+      "quote": "公式：(col_CS 9,068,000 − col_CK 0.0000×col_CS) ÷ col_CZ 90,679,175 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 9,068,000 − col_CK 0.0000×col_CS) ÷ col_CZ 90,679,175 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 90679175,
+      "page": 3,
+      "quote": "公式：(col_CS 9,068,000 − col_CK 0.0000×col_CS) ÷ col_CZ 90,679,175 = 0.1000；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

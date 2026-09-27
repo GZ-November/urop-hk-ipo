@@ -1,0 +1,197 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 389,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Shares in issue",
+          "348,626,221",
+          "95.08"
+        ],
+        [
+          "Unlisted Foreign Shares in issue",
+          "18,025,541",
+          "4.92"
+        ],
+        [
+          "Total",
+          "366,651,762",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares            | Number of Shares | Approximate Percentage (%) |\n| -------------------------------- | ---------------- | -------------------------- |\n| Domestic Shares in issue         | 348,626,221      | 95.08                      |\n| Unlisted Foreign Shares in issue | 18,025,541       | 4.92                       |\n| Total                            | 366,651,762      | 100.00                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 390,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Shares in issue",
+          "138,410,231",
+          "36.27"
+        ],
+        [
+          "H Shares to be converted from Domestic Shares",
+          "210,215,990",
+          "55.09"
+        ],
+        [
+          "H Shares to be converted from Unlisted Foreign Shares",
+          "18,025,541",
+          "4.72"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "14,950,000",
+          "3.92"
+        ],
+        [
+          "Total",
+          "381,601,762",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| Domestic Shares in issue                              | 138,410,231      | 36.27                      |\n| H Shares to be converted from Domestic Shares         | 210,215,990      | 55.09                      |\n| H Shares to be converted from Unlisted Foreign Shares | 18,025,541       | 4.72                       |\n| H Shares to be issued under the Global Offering       | 14,950,000       | 3.92                       |\n| Total                                                 | 381,601,762      | 100.00                     |",
+      "metadata": {
+        "total_rows": 5
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 37,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional fees, underwriting commission",
+          "s,"
+        ],
+        [
+          "not limited to commissions and fees) of approximately",
+          "RMB33.9 million"
+        ],
+        [
+          "expect to incur additional listing expenses of approximately",
+          "RMB10.8 million"
+        ],
+        [
+          "HK$147.8 million, after deducting estimated underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                      | Rate / Amount Disclosed |\n| --------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional fees, underwriting commission | s,                      |\n| not limited to commissions and fees) of approximately                 | RMB33.9 million         |\n| expect to incur additional listing expenses of approximately          | RMB10.8 million         |\n| HK$147.8 million, after deducting estimated underwriting commission   | s,                      |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "360,106",
+          "100.0",
+          "463,738",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "8,172",
+          "2.3",
+          "9,279",
+          "2.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 360,106 | 100.0  | 463,738 | 100.0 |\n| Gross profit     | 8,172   | 2.3    | 9,279   | 2.0   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 26,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "927,817",
+          "1,421,814",
+          "1,438,340"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2    | Year-1    |\n| ---------------- | ------- | --------- | --------- |\n| Total assets     | 927,817 | 1,421,814 | 1,438,340 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 301,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "360,106",
+          "100.0",
+          "463,738",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "8,172",
+          "2.3",
+          "9,279",
+          "2.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 360,106 | 100.0  | 463,738 | 100.0 |\n| Gross profit     | 8,172   | 2.3    | 9,279   | 2.0   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

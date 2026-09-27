@@ -1,0 +1,116 @@
+{
+  "code": "6938.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.425,
+      "page": 6,
+      "quote": "Total 13,420,400 42.5% 8.1% 8.1%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 101.06,
+      "page": 4,
+      "quote": "Subscription level 101.06 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 42771,
+      "page": 4,
+      "quote": "No. of valid applications 42,771",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 277804200,
+      "page": 18,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 200 26,796",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 101.06 times",
+      "page": 4,
+      "quote": "Subscription level 101.06 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$57.97; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "08/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**08/01/2026 22:43**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 31610400,
+      "page": 21,
+      "quote": "that would be allotted and issued by the Company is 31,610,400 Offer Shares and the total issued share capital of the Company upon Listing",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2748800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 2,748,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 28861600,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (taking into account the full exercise of the Offer Size Adjustment Option) 28,861,600 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 4741400,
+      "page": 1,
+      "quote": "has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, February 5, 2026, in respect of an aggregate of 4,741,400 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (05/02/2026 22:34)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A. No. of Offer Shares reallocated from the International Offering (claw-back): 0.",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1701800000,
+      "page": 4,
+      "quote": "Less: Estimated listing expenses payable based on the Offer Price HK$130.65 million Net proceeds HK$1,701.80 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.6688,
+      "page": 29,
+      "quote": "110,900,415 H Shares, representing approximately 66.88% of the issued share capital of our Company (before any exercise of the Over-allotment Option) will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 165813510,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before any exercise of the Over-allotment Option) 165,813,510 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1097,
+      "page": 30,
+      "quote": "the Company’s H Shares to be counted towards the free float upon Listing will be 18,190,000 Shares",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float upon Listing = the Company's H Shares not subject to disposal restrictions = 18,190,000 Shares, being the Offer Shares other than those allocated to Cornerstone Investors (six-month lock-up); all existing Shareholders (including Pre-IPO Investors) are subject to a 12-month lock-up under applicable PRC laws and are excluded. Denominator basis = total issued share capital upon Listing (165,813,510 Shares, before any exercise of the Over-allotment Option).",
+      "page": 30,
+      "quote": "All the existing shareholders of the Company are subject to a lock-up period of 12 months following the Listing Date pursuant to the applicable PRC laws",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 18190000,
+      "page": 30,
+      "quote": "the Company’s H Shares to be counted towards the free float upon Listing will be 18,190,000 Shares",
+      "confidence": "medium"
+    }
+  }
+}

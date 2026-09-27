@@ -1,0 +1,42 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "we estimated that the total listing expenses for the Global Offering are approximately",
+          "HK$101.9"
+        ],
+        [
+          "underwriting commission and other",
+          "expenses,"
+        ],
+        [
+          "listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ],
+        [
+          "as listing expenses for the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                                       | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------------- | ----------------------- |\n| Our listing expenses represent professional                                            | fees,                   |\n| we estimated that the total listing expenses for the Global Offering are approximately | HK$101.9                |\n| underwriting commission and other                                                      | expenses,               |\n| listing expenses above are the latest practicable estimate for reference               | only,                   |\n| as listing expenses for the Global                                                     | Offering.               |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": []
+}

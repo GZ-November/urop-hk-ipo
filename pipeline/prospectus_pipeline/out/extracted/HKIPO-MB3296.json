@@ -1,0 +1,428 @@
+{
+  "code": "3296.HK",
+  "fields": {
+    "col_L": {
+      "value": 1074280544,
+      "page": 228,
+      "quote": "A Shares in issue * 1,015,732,344 94.55 H Shares to be issued under the Global Offering 58,548,200 5.45 Total 1,074,280,544 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 58548200,
+      "page": 228,
+      "quote": "H Shares to be issued under the Global Offering 58,548,200 5.45 Total 1,074,280,544 100.00",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1015732344,
+      "page": 228,
+      "quote": "A Shares in issue * 1,015,732,344 94.55 H Shares to be issued under the Global Offering 58,548,200 5.45 Total 1,074,280,544 100.00",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 1015732344,
+      "page": 228,
+      "quote": "A Shares in issue * 1,015,732,344 94.55 H Shares to be issued under the Global Offering 58,548,200 5.45 Total 1,074,280,544 100.00",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 31,
+      "quote": "the 5,854,900 H Shares being initially offered by our Company for subscription in the Hong Kong Public Offering",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 58548200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 58,548,200 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 52693300,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 52,693,300 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 5854900,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 5,854,900 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 58,548,200 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 58548200,
+      "page": 228,
+      "quote": "H Shares to be issued under the Global Offering 58,548,200 5.45 Total 1,074,280,544 100.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 77.7,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$77.70 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 319,
+      "quote": "The Historical Financial Information is presented in Renminbi",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 51509636000,
+      "page": 321,
+      "quote": "Total assets 51,509,636 76,296,823 96,205,628",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 76296823000,
+      "page": 321,
+      "quote": "Total assets 51,509,636 76,296,823 96,205,628",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 96205628000,
+      "page": 321,
+      "quote": "Total assets 51,509,636 76,296,823 96,205,628",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 20843047000,
+      "page": 322,
+      "quote": "NET ASSETS 20,843,047 22,924,060 26,345,328",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 22924060000,
+      "page": 322,
+      "quote": "NET ASSETS 20,843,047 22,924,060 26,345,328",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 26345328000,
+      "page": 322,
+      "quote": "NET ASSETS 20,843,047 22,924,060 26,345,328",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 30666589000,
+      "page": 321,
+      "quote": "Total current liabilities 28,425,753 49,668,933 63,700,621 Net current assets 7,708,059 6,552,623 7,046,371 Total assets less current liabilities 23,083,883 26,627,890 32,505,007",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 53372763000,
+      "page": 321,
+      "quote": "Total current liabilities 28,425,753 49,668,933 63,700,621 Net current assets 7,708,059 6,552,623 7,046,371 Total assets less current liabilities 23,083,883 26,627,890 32,505,007",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 69860300000,
+      "page": 321,
+      "quote": "Total current liabilities 28,425,753 49,668,933 63,700,621 Net current assets 7,708,059 6,552,623 7,046,371 Total assets less current liabilities 23,083,883 26,627,890 32,505,007",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 85338484000,
+      "page": 15,
+      "quote": "Revenue 85,338,484 109,877,987 171,436,927",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 109877987000,
+      "page": 15,
+      "quote": "Revenue 85,338,484 109,877,987 171,436,927",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 171436927000,
+      "page": 15,
+      "quote": "Revenue 85,338,484 109,877,987 171,436,927",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 2835217000,
+      "page": 16,
+      "quote": "Profit before tax 2,835,217 3,037,064 4,475,933",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 3037064000,
+      "page": 16,
+      "quote": "Profit before tax 2,835,217 3,037,064 4,475,933",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 4475933000,
+      "page": 16,
+      "quote": "Profit before tax 2,835,217 3,037,064 4,475,933",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 2657010000,
+      "page": 16,
+      "quote": "Profit for the year 2,657,010 2,916,351 4,131,575",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 2916351000,
+      "page": 16,
+      "quote": "Profit for the year 2,657,010 2,916,351 4,131,575",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 4131575000,
+      "page": 16,
+      "quote": "Profit for the year 2,657,010 2,916,351 4,131,575",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 20018095000,
+      "page": 263,
+      "quote": "Total indebtedness 6,542,462 12,243,608 20,018,095",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 329,
+      "quote": "The Historical Financial Information has been prepared in accordance with all applicable IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 13230496000,
+      "page": 15,
+      "quote": "Gross profit 9,336,916 9,883,522 13,230,496",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 2932100000,
+      "page": 264,
+      "quote": "Our capital expenditures were RMB1,402.1 million, RMB2,014.1 million and RMB2,932.1 million in 2023, 2024 and 2025, respectively",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 318,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.003,
+      "page": 290,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 0.3% of the aggregate gross proceeds from the Global Offering",
+      "confidence": "medium"
+    },
+    "col_AP": {
+      "value": 0.003,
+      "page": 290,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 0.3% of the aggregate gross proceeds from the Global Offering",
+      "confidence": "medium"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 299,
+      "quote": "up to an aggregate of 8,782,200 H Shares (representing approximately 15.0% of the initial Offer Shares assuming the Offer Size Adjustment Option is not exercised)",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 86100000,
+      "page": 27,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately RMB75.7 million (HK$86.1 million), comprising: (i) underwriting fees of RMB28.0 million (HK$31.9 million)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Smart product ODM platform (design, development, manufacture and sale of smart products)",
+      "page": 138,
+      "quote": "We are a smart product platform with over 20 years of expertise in smart products",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Hong Kong Stock Exchange as a PRC issuer (Chapter 19A of the Listing Rules)",
+      "page": 134,
+      "quote": "Rule 19A.13A(2) of the Hong Kong Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of listing",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Mass production and commercialization",
+      "page": 143,
+      "quote": "from product definition and development to mass production",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 281,
+      "quote": "R&D investment 714.1 1,071.1 1,785.2 Manufacturing network expansion and optimization 781.0 781.0 1,562.1 Strategic investment and vertical integration 200.8 468.6 669.5",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "JPMAMAPL; UBS AM Singapore; Shanghai Gaoyi and CICC FT (in connection with Gaoyi OTC Swaps); Perseverance Asset Management; Cloud Map; Taikang Life; 3W Fund; New China Asset Management; Everbright Wealth; IvyRock; Aurora SF (in connection with the Arrangement); KIL; OmniVision HK; Green Better; Hongxing International; Ingenic Semiconductor HK; Awinic Technology Limited; JinYi Capital (acting for and on behalf of Structured Credit SP Fund)",
+      "page": 268,
+      "quote": "We have entered into cornerstone investment agreements (the \"Cornerstone Investment Agreements\") with the cornerstone investors set forth below (the \"Cornerstone Investors\")",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 231,
+      "quote": "references to 2023, 2024 and 2025 refer to our financial years ended December 31 of such years",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -223312000,
+      "page": 326,
+      "quote": "Net cash generated from/(used in) operating activities 3,849,780 1,375,754 (223,312)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 10270248000,
+      "page": 327,
+      "quote": "Cash and cash equivalents at the end of the year, represented by bank balance and cash 10,230,638 11,425,180 10,270,248",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 6363453000,
+      "page": 16,
+      "quote": "Research and development expenses (4,547,527) (5,155,807) (6,363,453)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 13492000,
+      "page": 356,
+      "quote": "Addition 1,206 77,325 - - 13,492 92,023",
+      "confidence": "medium",
+      "note": "Year-1 (FY2025) capitalised development costs addition = 13,492 thousand (p.356, Note 21)."
+    },
+    "col_AY": {
+      "value": 0.541,
+      "page": 15,
+      "quote": "our five largest customers for the same periods accounted for 64.6%, 56.7% and 54.1% of our revenue, respectively",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "华勤技术股份有限公司",
+      "page": 1,
+      "quote": "華勤技術股份有限公司 Huaqin Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Natural person (Mr. Qiu Wensheng, founder and controlling shareholder)",
+      "page": 24,
+      "quote": "OUR CONTROLLING SHAREHOLDER GROUP As of the Latest Practicable Date, Mr. Qiu Wensheng is a direct beneficial owner of 48,746,040 Shares of our Company",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4101,
+      "page": 206,
+      "quote": "will be entitled to exercise in aggregate the voting rights attached to approximately 41.01% of our Shares in issue",
+      "confidence": "medium",
+      "note": "Controlling Shareholders Group interest at listing (post-Global Offering): approximately 41.01% of Shares in issue (p.206). The Latest Practicable Date figure was 43.37%."
+    },
+    "col_BD": {
+      "value": 0.4101,
+      "page": 206,
+      "quote": "will be entitled to exercise in aggregate the voting rights attached to approximately 41.01% of our Shares in issue",
+      "confidence": "medium",
+      "note": "Controlling Shareholders Group interest at listing (post-Global Offering): approximately 41.01% of Shares in issue (p.206). The Latest Practicable Date figure was 43.37%."
+    },
+    "col_BP": {
+      "value": "29/08/2005",
+      "page": 132,
+      "quote": "On August 29, 2005, our Company was established in Shanghai, PRC as a limited liability company with an initial registered capital of RMB9 million",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 699, Lvke Road, Pudong New District, Shanghai, PRC",
+      "page": 94,
+      "quote": "Headquarters and principal place of business in China No. 699, Lvke Road Pudong New District Shanghai PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "15/04/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Wednesday, April 15, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "20/04/2026",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Monday, April 20, 2026",
+      "confidence": "high"
+    }
+  }
+}

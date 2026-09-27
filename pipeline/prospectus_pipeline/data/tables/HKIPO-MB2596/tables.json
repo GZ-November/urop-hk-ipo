@@ -1,0 +1,103 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 389,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Unlisted Shares",
+          "3,900,000,000",
+          "85.0%"
+        ],
+        [
+          "Offering",
+          "688,400,000",
+          "15.0%"
+        ],
+        [
+          "Total",
+          "4,588,400,000",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares    | Number of Shares | Approximate Percentage (%) |\n| ------------------------ | ---------------- | -------------------------- |\n| Domestic Unlisted Shares | 3,900,000,000    | 85.0%                      |\n| Offering                 | 688,400,000      | 15.0%                      |\n| Total                    | 4,588,400,000    | 100.0%                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 37,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "estimated listing expenses include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "commission and fees of approximately",
+          "RMB25.4 million"
+        ],
+        [
+          "total listing expenses of",
+          "RMB66.6 million"
+        ],
+        [
+          "listing expenses of approximately",
+          "RMB24.7 million"
+        ],
+        [
+          "listing expenses of approximately",
+          "RMB41.9 million"
+        ],
+        [
+          "from equity. The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                          | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------------- | ----------------------- |\n| estimated listing expenses include (i) underwriting-related                               | expenses,               |\n| commission and fees of approximately                                                      | RMB25.4 million         |\n| total listing expenses of                                                                 | RMB66.6 million         |\n| listing expenses of approximately                                                         | RMB24.7 million         |\n| listing expenses of approximately                                                         | RMB41.9 million         |\n| from equity. The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "68,490.4",
+          "100.0",
+          "80,413.3",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3   | Year-2 | Year-1   | Col 5 |\n| ---------------- | -------- | ------ | -------- | ----- |\n| Total assets     | 68,490.4 | 100.0  | 80,413.3 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "code": "0501.HK",
+  "fields": {
+    "col_L": {
+      "value": 1255474412,
+      "page": 285,
+      "quote": "45,800,000\n3.65%\nTotal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,255,474,412\n100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 45800000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering\n:\n45,800,000 H Shares (subject to the Over-allotment\nOption)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1209674412,
+      "page": 285,
+      "quote": "As of the Latest Practicable Date, the total issued share capital of our Company was\nRMB1,209,674,412, comprising 1,209,674,412 A Shares",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1209674412,
+      "page": 285,
+      "quote": "A Shares* . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,209,674,412\n96.35%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 285,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . . . . . . . . . . . . . . . .\n45,800,000\n3.65%",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 45800000,
+      "page": 285,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . . . . . . . . . . . . . . . .\n45,800,000\n3.65%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 41220000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n41,220,000 H Shares (subject to reallocation and the\nOver-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4580000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n4,580,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 104.8,
+      "page": 2,
+      "quote": "Maximum Offer Price\n:\nHK$104.80 per H Share, plus brokerage of 1%, SFC",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": 109,
+      "quote": "our Company will only disclose the maximum\nOffer Price in the prospectus on the below basis:",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 406,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are\nrounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 37743164000,
+      "page": 408,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n35,191,024\n37,743,164\n38,964,574\n42,484,301",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 38964574000,
+      "page": 408,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n35,191,024\n37,743,164\n38,964,574\n42,484,301",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 42484301000,
+      "page": 408,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n35,191,024\n37,743,164\n38,964,574\n42,484,301",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 21494687000,
+      "page": 409,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n18,101,093\n21,494,687\n24,202,390\n26,187,007",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 24202390000,
+      "page": 409,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n18,101,093\n21,494,687\n24,202,390\n26,187,007",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 26187007000,
+      "page": 409,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n18,101,093\n21,494,687\n24,202,390\n26,187,007",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 16248477000,
+      "page": 409,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n17,089,931\n16,248,477\n14,762,184\n16,297,294",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 14762184000,
+      "page": 409,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n17,089,931\n16,248,477\n14,762,184\n16,297,294",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 16297294000,
+      "page": 409,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n17,089,931\n16,248,477\n14,762,184\n16,297,294",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 20984259000,
+      "page": 407,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . .\n6\n20,040,249\n20,984,259\n25,706,819\n12,093,643\n13,944,143",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 25706819000,
+      "page": 407,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . .\n6\n20,040,249\n20,984,259\n25,706,819\n12,093,643\n13,944,143",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 27888286000,
+      "page": 407,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . .\n6\n20,040,249\n20,984,259\n25,706,819\n12,093,643\n13,944,143",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 691573000,
+      "page": 407,
+      "quote": "Profit before income tax\n1,293,744\n691,573\n3,272,807\n1,502,595\n2,192,050",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 3272807000,
+      "page": 407,
+      "quote": "Profit before income tax\n1,293,744\n691,573\n3,272,807\n1,502,595\n2,192,050",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 4384100000,
+      "page": 407,
+      "quote": "Profit before income tax\n1,293,744\n691,573\n3,272,807\n1,502,595\n2,192,050",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 543950000,
+      "page": 407,
+      "quote": "Profit for the year/period . . . . . . .\n950,996\n543,950\n3,278,641\n1,360,914\n2,020,393",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 3278641000,
+      "page": 407,
+      "quote": "Profit for the year/period . . . . . . .\n950,996\n543,950\n3,278,641\n1,360,914\n2,020,393",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 4040786000,
+      "page": 407,
+      "quote": "Profit for the year/period . . . . . . .\n950,996\n543,950\n3,278,641\n1,360,914\n2,020,393",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.006,
+      "page": 375,
+      "quote": "commission equal to 0.6% of the aggregate Offer Price payable for the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.006,
+      "page": 375,
+      "quote": "commission equal to 0.6% of the aggregate Offer Price payable for the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 375,
+      "quote": "representing not more than 15% of the number of Offer Shares initially available under the\nGlobal Offering",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Fabless semiconductor design: design, development and sale of integrated circuits (CIS)",
+      "page": 416,
+      "quote": "are principally engaged in\ndesign, development and sale of integrated circuits (“ICs”).",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board; Chapter 19A PRC issuer with other listed shares (A+H)",
+      "page": 86,
+      "quote": "As we are listed on the Shanghai Stock Exchange and SIX Swiss Exchange and will be listed\non the Main Board of the Stock Exchange",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/06/25",
+      "page": 407,
+      "quote": "Year ended December 31,\nSix months ended June 30,\n2022\n2023\n2024\n2024\n2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 1790999000,
+      "page": 415,
+      "quote": "Net cash (outflow)/inflow from operating\nactivities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n(2,359,301) 7,067,507\n4,522,564 1,714,536\n1,790,999",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 11183571000,
+      "page": 415,
+      "quote": "Cash and cash equivalents at end of the year/\nperiod . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\n3,995,146 9,055,098 10,152,782 7,748,213 11,183,571",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 1367726000,
+      "page": 407,
+      "quote": "Research and development\nexpenses . . . . . . . . . . . . . . . . . . . .\n8\n(2,518,569) (2,239,446) (2,685,766)\n(1,265,796)\n(1,367,726)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 359743000,
+      "page": 479,
+      "quote": "Additions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 349,748\n9,995\n—\n359,743",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.503,
+      "page": 14,
+      "quote": "our top five customers in each of such years/period\ncontributed to 55.2%, 55.9%, 51.0% and 50.3% of our total revenue, respectively.",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "豪威集成电路（集团）股份有限公司",
+      "page": 2,
+      "quote": "豪威集成電路（集團）股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Wildlife Willow Limited; UBS AM Singapore; FOL; Huaqin Telecom Hong Kong Limited; SKY ROYAL TRADING LIMITED; Pudong Science and Technology (Cayman) Co., Ltd.; JSC International Investment Fund SPC; Ghisallo Fund Master Ltd; Dajia Life; PSBC Wealth Management Co., Ltd.",
+      "page": 292,
+      "quote": "Wildlife Willow Limited . . . . . .\n70.00\n5,196,600\n11.35%\n0.41%\n9.87%\n0.41%\nUBS AM Singapore . . . . . . . . . .\n40.00\n2,969,500",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 185,
+      "quote": "All of the A Shares of our Company held by EIT Education Foundation come from direct or indirect donation by Mr. YU Renrong.",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 180,
+      "quote": "Since our establishment, Mr. YU Renrong, our executive Director and Chairman of the Board, has been the controller of our Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3015,
+      "page": 27,
+      "quote": "our Controlling Shareholders will hold approximately 30.15% of the issued share capital of our Company.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3015,
+      "page": 27,
+      "quote": "our Controlling Shareholders will hold approximately 30.15% of the issued share capital of our Company.",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 10144100000,
+      "page": 351,
+      "quote": "Total\n12,775.7\n10,981.1\n9,728.1\n10,144.1\n10,398.6",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "已量产（mass production）",
+      "page": 193,
+      "quote": "With continued advancements in LCOS technology, our LCOS products have already achieved mass production and are being delivered for use in automotive AR-HUD systems.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 364,
+      "quote": "Approximately 70% of the net proceeds, or HK$3,285.2 million, will be used over the next five to ten years to invest in the research and development of key technologies",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "45,800,000 H Shares (subject to the Over-allotment",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "15/05/07",
+      "page": 416,
+      "quote": "was incorporated in Shanghai, People’s Republic of China (the “PRC”) on May 15, 2007 as a joint stock company under the laws of the PRC with limited liability.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shanghai, PRC",
+      "page": 122,
+      "quote": "Headquarters and Principal Place\nof Business in the PRC\nOmniVision Technology Park\n88 Shangke Road\nPilot Free Trade Zone\nShanghai\nPRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 297,
+      "quote": "The principal accounting policies applied in the preparation of our historical financial information are in accordance with all applicable IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/12/25",
+      "page": 5,
+      "quote": "9:00 a.m. on Wednesday, December 31, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "07/01/26",
+      "page": 5,
+      "quote": "12:00 noon on Wednesday, January 7, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 45800000,
+      "page": 27,
+      "quote": "the Global Offering has been completed and 45,800,000 H Shares are newly issued in the Global Offering",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 4126000000,
+      "page": 18,
+      "quote": "4,741.2 23.7 4,183.5 19.9 7,239.2 28.2 3,407.8 28.2 4,126.0 29.6",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 699600000,
+      "page": 349,
+      "quote": "cash payments for property, plant and equipment of RMB699.6 million",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion（无保留意见）",
+      "page": 404,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 106660000,
+      "page": 376,
+      "quote": "are estimated to be approximately HK$106.66 million",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "None",
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 0.0,
+      "page": 185,
+      "quote": "HISTORY AND CORPORATE STRUCTURE",
+      "confidence": "high"
+    }
+  }
+}

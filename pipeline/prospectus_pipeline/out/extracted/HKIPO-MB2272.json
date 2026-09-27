@@ -1,0 +1,426 @@
+{
+  "code": "2272.HK",
+  "fields": {
+    "col_L": {
+      "value": 101122609,
+      "page": 402,
+      "quote": "our registered share capital will be increased to RMB101,122,609, divided into 2,857,040 Domestic Shares and 98,265,569 H Shares",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 10112280,
+      "page": 2,
+      "quote": "Total number of Offer Shares under the Global Offering : 10,112,280 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 91010329,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering . . . . 10,112,280 10.00% Total . . . . 101,122,609 100.0%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 91010329,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering . . . . 10,112,280 10.00% Total . . . . 101,122,609 100.0%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering . . . . 10,112,280 10.00% Total . . . . 101,122,609 100.0%",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 10112280,
+      "page": 2,
+      "quote": "Total number of Offer Shares under the Global Offering : 10,112,280 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 9101040,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 9,101,040 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1011240,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 1,011,240 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering . . . . 10,112,280 10.00%",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 98265569,
+      "page": 402,
+      "quote": "our registered share capital will be increased to RMB101,122,609, divided into 2,857,040 Domestic Shares and 98,265,569 H Shares",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 39.55,
+      "page": 2,
+      "quote": "Offer Price : HK$39.55 per H Share, plus brokerage of 1%, SFC",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 39.55,
+      "page": 2,
+      "quote": "Offer Price : HK$39.55 per H Share, plus brokerage of 1%, SFC",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 312,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (Expressed in Renminbi)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1188690000,
+      "page": 19,
+      "quote": "Total non-current assets . . . 360,633 419,505 544,845 Total current assets . . . 828,057 919,244 881,149",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1338749000,
+      "page": 19,
+      "quote": "Total non-current assets . . . 360,633 419,505 544,845 Total current assets . . . 828,057 919,244 881,149",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1425994000,
+      "page": 19,
+      "quote": "Total non-current assets . . . 360,633 419,505 544,845 Total current assets . . . 828,057 919,244 881,149",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 844443000,
+      "page": 19,
+      "quote": "Total equity . . . 844,443 916,709 1,007,586",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 916709000,
+      "page": 19,
+      "quote": "Total equity . . . 844,443 916,709 1,007,586",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 1007586000,
+      "page": 19,
+      "quote": "Total equity . . . 844,443 916,709 1,007,586",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 344247000,
+      "page": 19,
+      "quote": "Total current liabilities . . . 323,247 382,404 310,407 Net current assets . . . 504,810 536,840 570,742 Total non-current liabilities . . . 21,000 39,636 108,001",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 422040000,
+      "page": 19,
+      "quote": "Total current liabilities . . . 323,247 382,404 310,407 Net current assets . . . 504,810 536,840 570,742 Total non-current liabilities . . . 21,000 39,636 108,001",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 418408000,
+      "page": 19,
+      "quote": "Total current liabilities . . . 323,247 382,404 310,407 Net current assets . . . 504,810 536,840 570,742 Total non-current liabilities . . . 21,000 39,636 108,001",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 738015000,
+      "page": 16,
+      "quote": "Revenue . . . 738,015 100.0 799,511 100.0 830,615",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 799511000,
+      "page": 16,
+      "quote": "Revenue . . . 738,015 100.0 799,511 100.0 830,615",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 830615000,
+      "page": 16,
+      "quote": "Revenue . . . 738,015 100.0 799,511 100.0 830,615",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 102229000,
+      "page": 16,
+      "quote": "Profit before taxation . . . 102,229 13.9 98,900 12.4 107,974",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 98900000,
+      "page": 16,
+      "quote": "Profit before taxation . . . 102,229 13.9 98,900 12.4 107,974",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 107974000,
+      "page": 16,
+      "quote": "Profit before taxation . . . 102,229 13.9 98,900 12.4 107,974",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 87030000,
+      "page": 16,
+      "quote": "Profit and total comprehensive income for the year . . . 87,030 11.8 86,709 10.8 93,678",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 86709000,
+      "page": 16,
+      "quote": "Profit and total comprehensive income for the year . . . 87,030 11.8 86,709 10.8 93,678",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 93678000,
+      "page": 16,
+      "quote": "Profit and total comprehensive income for the year . . . 87,030 11.8 86,709 10.8 93,678",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 122869000,
+      "page": 266,
+      "quote": "Total . . . 40,885 94,192 122,869 158,613",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRSs",
+      "page": 229,
+      "quote": "The Accountants’ Report has been prepared in accordance with the IFRSs, which may differ in material aspects from generally accepted accounting principles in other jurisdictions.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 385209000,
+      "page": 16,
+      "quote": "Gross profit . . . 342,720 46.4 366,935 45.9 385,209",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 120400000,
+      "page": 268,
+      "quote": "Our capital expenditures were RMB67.8 million, RMB61.5 million and RMB120.4 million in 2023, 2024 and 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 310,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position as at 31 December",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 284,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 3% of the aggregate gross proceeds from the Global Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 284,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 3% of the aggregate gross proceeds from the Global Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 284,
+      "quote": "to require our Company to issue and allot, up to an aggregate of 1,516,800 H Shares, representing approximately 15% of the initial Offer Shares",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 60000000,
+      "page": 285,
+      "quote": "are estimated to amount to approximately HK$60.0 million in total (based on the Offer Price of HK$39.55 per Offer Share",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Smart parking space operation (smart parking systems, smart parking management services, and parking facility and platform operations)",
+      "page": 10,
+      "quote": "We are a smart parking space operator facilitating the transformation of urban parking.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange (H Shares of a PRC issuer, Chapter 19A)",
+      "page": 29,
+      "quote": "\"Listing\" listing of the H Shares on the Main Board of the Stock Exchange",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized (mass commercialization)",
+      "page": 11,
+      "quote": "robust commercialization capabilities underpinned by diversified business portfolio and highly flexible and scalable business model",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 23,
+      "quote": "approximately 35.0% of the net proceeds, or HK$119.0 million, to advance our R&D efforts and enhance our technological capabilities;",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 312,
+      "quote": "Year ended 31 December Note 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 144037000,
+      "page": 20,
+      "quote": "Net cash generated from operating activities . 182,025 66,421 144,037",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 190675000,
+      "page": 20,
+      "quote": "Cash and cash equivalents at the end of the year . . . 190,384 164,339 190,675",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 44346000,
+      "page": 16,
+      "quote": "Research and development expenses . . . (42,613) (5.8) (45,029) (5.6) (44,346)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 323,
+      "quote": "Intangible assets (other than goodwill) Research and development costs comprise all costs that are directly attributable to research and",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.105,
+      "page": 14,
+      "quote": "In 2023, 2024 and 2025, revenue generated from our top five customers in each year during the Track Record Period accounted for 12.2%, 16.9% and 10.5% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "厦门科拓通讯技术股份有限公司",
+      "page": 2,
+      "quote": "KEYTOP PARKING INC. 廈門科拓通訊技術股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 20,
+      "quote": "To fund our rapid business expansion and diversify our shareholder base, we have conducted several rounds of pre-IPO investments.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 118,
+      "quote": "Zhengzhi Investment was an affiliate of Falcon Capital, a reputed venture capital with a focus on the emerging technology industry in China.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 120,
+      "quote": "a private equity fund with a focus on cultural tourism and urban renewal.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 118,
+      "quote": "Both general partners of Linzhi Lixin and Suzhou Paiyi are the subsidiaries of Tencent Holdings Limited (“Tencent”). Tencent is an Independent Third Party.",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 118,
+      "quote": "Both general partners of Linzhi Lixin and Suzhou Paiyi are the subsidiaries of Tencent Holdings Limited (“Tencent”). Tencent is an Independent Third Party.",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Jiatuo Tiancheng Group (Mr. Peng Jianhu); Tencent Investors (Linzhi Lixin, Suzhou Paiyi); Zhengzhi Investment; Hongtai Zhiying; Yu Sheng; Xiamen Suming; Fulv Century; Yu Yunhui",
+      "page": 117,
+      "quote": "our principal pre-IPO investors, being the investors which have made meaningful investments in our Company (each holding 1.00% or above of the registered capital",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 117,
+      "quote": "anti-dilution right, pre-emption right, right of first refusal, tag-along right, repurchase right, preference in liquidation and information right and the right to nominate director candidates.",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "Equity Subscriptions in 2011",
+      "page": 113,
+      "quote": "Equity Subscriptions in 2011 Shanghai Dehui(3) . . . April 15, 2011 April 28, 2011 432,099 3.0 RMB0.49 45.0",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 15.17,
+      "page": 113,
+      "quote": "Equity Subscriptions in 2011 Shanghai Dehui April 15, 2011 April 28, 2011",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 15/04/2011 to prospectus date 17/06/2026 = 5,542 days / 365.25 = 15.17 years."
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual (co-founders under joint control arrangements)",
+      "page": 20,
+      "quote": "Mr. Sun and Mr. Huang, who have entered into the joint control arrangements, were entitled to collectively control 53.65% of the voting power",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4828,
+      "page": 108,
+      "quote": "Upon the Listing, Mr. Sun and Mr. Huang will collectively control 48.28% of the voting power at the general meetings of our Company, assuming the Over-allotment Option is not exercised.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.4828,
+      "page": 108,
+      "quote": "Upon the Listing, Mr. Sun and Mr. Huang will collectively control 48.28% of the voting power at the general meetings of our Company, assuming the Over-allotment Option is not exercised.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "27/06/06",
+      "page": 110,
+      "quote": "Our Company was incorporated as a limited liability company in the PRC on June 27, 2006",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Xiamen, Fujian, PRC",
+      "page": 79,
+      "quote": "Registered Office in the PRC Unit 301, No. 58 Guanri Road Xiamen Software Park Xiamen, Fujian",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "17/06/26",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Wednesday, June 17, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "23/06/26",
+      "page": 5,
+      "quote": "Application lists close(3) . . . 12:00 noon on Tuesday, June 23, 2026",
+      "confidence": "high"
+    }
+  }
+}

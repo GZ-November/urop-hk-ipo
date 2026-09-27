@@ -1,0 +1,135 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 169,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "H Shares to be converted from Domestic Unlisted Shares",
+          "67,347,108",
+          "85.45"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "11,464,100",
+          "14.55"
+        ],
+        [
+          "Total",
+          "78,811,208",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                                  | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------------------------ | ---------------- | -------------------------- |\n| H Shares to be converted from Domestic Unlisted Shares | 67,347,108       | 85.45                      |\n| H Shares to be issued under the Global Offering        | 11,464,100       | 14.55                      |\n| Total                                                  | 78,811,208       | 100.00                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses consist of professional",
+          "fees,"
+        ],
+        [
+          "total listing expenses, approximately",
+          "HK$26.3 million"
+        ],
+        [
+          "results of operations in 2025. We did not recognize any listing expenses",
+          "in 2023."
+        ],
+        [
+          "listing expenses of",
+          "RMB5.8 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                         | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------ | ----------------------- |\n| Listing expenses consist of professional                                 | fees,                   |\n| total listing expenses, approximately                                    | HK$26.3 million         |\n| results of operations in 2025. We did not recognize any listing expenses | in 2023.                |\n| listing expenses of                                                      | RMB5.8 million          |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "1,322,042",
+          "1,616,018",
+          "1,710,731"
+        ],
+        [
+          "Gross profit",
+          "529,711",
+          "582,465",
+          "608,700"
+        ],
+        [
+          "Profit for the year",
+          "99,231",
+          "147,719",
+          "182,088"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3    | Year-2    | Year-1    |\n| ------------------- | --------- | --------- | --------- |\n| Revenue             | 1,322,042 | 1,616,018 | 1,710,731 |\n| Gross profit        | 529,711   | 582,465   | 608,700   |\n| Profit for the year | 99,231    | 147,719   | 182,088   |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,394,662",
+          "1,670,967",
+          "1,990,073"
+        ],
+        [
+          "Total liabilities",
+          "1,129,197",
+          "1,053,019",
+          "1,108,446"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 1,394,662 | 1,670,967 | 1,990,073 |\n| Total liabilities | 1,129,197 | 1,053,019 | 1,108,446 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

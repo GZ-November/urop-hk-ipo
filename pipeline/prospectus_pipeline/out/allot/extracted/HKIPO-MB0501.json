@@ -1,0 +1,116 @@
+{
+  "code": "0501.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4528,
+      "page": 6,
+      "quote": "Total\n20,740,200\n45.28%\n1.65%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 9.28,
+      "page": 4,
+      "quote": "Subscription level\n9.28 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 14551,
+      "page": 4,
+      "quote": "Number of valid applications\n14,551",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 42511100,
+      "page": 17,
+      "quote": "NO. OF \nH SHARES \nAPPLIED FOR\nNO. OF \nVALID \nAPPLICATIONS\nBASIS OF ALLOTMENT/BALLOT\nAPPROXIMATE\nPERCENTAGE\nALLOTTED OF\nTHE TOTAL NO.\nOF H SHARES\nAPPLIED FOR\nPOOL A\n100\n7,028",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 9.28 times",
+      "page": 4,
+      "quote": "Subscription level\n9.28 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "08/01/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and us o",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "09/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**09/01/2026 22:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 45800000,
+      "page": 3,
+      "quote": "Number of Offer Shares\n45,800,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4580000,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the Hong Kong Public \nOffering\n4,580,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 41220000,
+      "page": 5,
+      "quote": "Final number of Offer Shares under the International Offering\n41,220,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 4941100,
+      "page": 1,
+      "quote": "s been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, February 6, 2026, in respect of an aggregate of 4,941,100 H Shares (",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD (06/02/2026 20:53)"
+    },
+    "col_CW": {
+      "value": "Claw-back not triggered (Claw-back triggered: N/A); the final number of Offer Shares under the Hong Kong Public Offering was 4,580,000, the same as the number initially available (10% of the Global Offering).",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A\nNumber of Offer Shares initially available under the Hong Kong \nPublic Offering\n4,580,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4693200000,
+      "page": 4,
+      "quote": "Less: Estimated listing expenses payable based on Final\nOffer Price\nHK$106.7 million\nNet proceeds\nHK$4,693.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.03648,
+      "page": 28,
+      "quote": "the total market value of the H Shares to be held by the public is expected to be \napproximately HK$4,799.8 million, calculated based on the final Offer Price of HK$104.8",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 1255474412,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n(1)\n1,255,474,412",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.01996,
+      "page": 28,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be \ncounted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float / public shareholding denominator = number of issued Shares upon Listing (before exercise of the Over-allotment Option), 1,255,474,412 Shares including 3,921,163 treasury A Shares; H Shares held by the Cornerstone Investors (six-month lock-up) are excluded from the free float.",
+      "page": 3,
+      "quote": "The number of issued Shares upon Listing includes 3,921,163 repurchased A Shares which \nare held by the Company as treasury Shares",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1255474412,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n(1)\n1,255,474,412",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "code": "2768.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2956,
+      "page": 10,
+      "quote": "Fullgoal Asset Management (HK) Limited 277,600 0.93% 0.09% 3 August 2026 Subtotal 8,869,200 29.56%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2251.85,
+      "page": 4,
+      "quote": "Subscription level 2,251.85 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 171047,
+      "page": 4,
+      "quote": "No. of valid applications 171,047",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6755553800,
+      "page": 12,
+      "quote": "H Shares Number of valid H Shares applied for applications Basis of allocation/ballot applied for Pool A 200 60,113 1,202 out of 60,113 to receive 200 Shares 2.00%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,251.85 times",
+      "page": 4,
+      "quote": "Subscription level 2,251.85 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "02/02/26",
+      "page": 5,
+      "quote": "Expected Price Determination Date (Note 5) . . . . . . . . . . . . . . . by 12:00 noon on Monday, 2 February 2026 Announcement of:",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "03/02/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**03/02/2026 22:56**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 30000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 30,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3000000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 3,000,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 27000000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 27,000,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-02-04 起 45 天内共 6 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-03-21 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Reallocation: No. No. of Offer Shares reallocated from the International Offering: 0",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1000400000,
+      "page": 3,
+      "quote": "Gross proceeds (Note) HK$1,080.0 million Less: Estimated listing expenses payable based on final Offer Price HK$(79.6) million Net proceeds HK$1,000.4 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1017,
+      "page": 22,
+      "quote": "Immediately upon the completion of the Global Offering, the number of H Shares held in public hands represent 10.17% of the total issued share capital of the Company (excluding treasury Shares)",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 301250000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 301,250,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0701,
+      "page": 22,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing (301,250,000 Shares); H Shares held by the Cornerstone Investors upon Listing (six-month lock-up) are excluded from the free float.",
+      "page": 22,
+      "quote": "Each of the Cornerstone Investors has agreed to a lock-up period of six months following the Listing Date.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 301250000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 301,250,000",
+      "confidence": "medium"
+    }
+  }
+}

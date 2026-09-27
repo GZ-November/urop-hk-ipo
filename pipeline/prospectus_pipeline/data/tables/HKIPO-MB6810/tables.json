@@ -1,0 +1,189 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 202,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "China Orient Enhanced Income Fund . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "5.00",
+          "1,575,100",
+          "3.70%"
+        ],
+        [
+          "XINWUTANG CO., LIMITED . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "31.57",
+          "9,945,700",
+          "23.33%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "36.57",
+          "11,520,800",
+          "27.03%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                                                                                                                                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| China Orient Enhanced Income Fund . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                       | 5.00                  | 1,575,100              | 3.70%                         |\n| XINWUTANG CO., LIMITED . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                          | 31.57                 | 9,945,700              | 23.33%                        |\n| Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 36.57                 | 11,520,800             | 27.03%                        |",
+      "metadata": {
+        "investor_count": 3
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 13,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "based payments, which are non-cash in nature, and (ii) listing expenses, which relate to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                                                    | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------------------------- | ----------------------- |\n| based payments, which are non-cash in nature, and (ii) listing expenses, which relate to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 16,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "taking into account any additional discretionary incentive fee and an Offer Price of",
+          "HK$24.86"
+        ]
+      ],
+      "markdown": "| Item Description                                                                     | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------ | ----------------------- |\n| taking into account any additional discretionary incentive fee and an Offer Price of | HK$24.86                |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 13,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2 | Year-1 | Col 5 |\n| ------------------- | ------ | ------ | ------ | ----- |\n| Revenue             | .      | .      | .      | .     |\n| Gross profit        | .      | .      | .      | .     |\n| Profit for the year | .      | .      | .      | .     |\n| Profit for the year | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 4
+      }
+    },
+    {
+      "name": "financials",
+      "page": 14,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 205,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | .      | .      | .      | .     |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

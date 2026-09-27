@@ -1,0 +1,425 @@
+{
+  "code": "0668.HK",
+  "fields": {
+    "col_L": {
+      "value": 582909162,
+      "page": 217,
+      "quote": "A Shares in issue 536,276,362 92.00% H Shares to be issued under the Global Offering 46,632,800 8.00% Total 582,909,162 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 46632800,
+      "page": 217,
+      "quote": "H Shares to be issued under the Global Offering 46,632,800 8.00%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 536276362,
+      "page": 217,
+      "quote": "A Shares in issue 536,276,362 92.00% H Shares to be issued under the Global Offering 46,632,800 8.00% Total 582,909,162 100.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 536276362,
+      "page": 217,
+      "quote": "A Shares in issue 536,276,362 92.00% H Shares to be issued under the Global Offering 46,632,800 8.00% Total 582,909,162 100.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 18,
+      "quote": "the Global Offering has been completed and 46,632,800 H Shares are newly issued in the Global Offering",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 46632800,
+      "page": 18,
+      "quote": "the Global Offering has been completed and 46,632,800 H Shares are newly issued in the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 41969500,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 41,969,500 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4663300,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 4,663,300 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 46,632,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 46632800,
+      "page": 217,
+      "quote": "H Shares to be issued under the Global Offering 46,632,800 8.00% Total 582,909,162 100.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 99.32,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$99.32 per H Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 288,
+      "quote": "(Expressed in RMB)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 16603708000,
+      "page": 15,
+      "quote": "Total assets 12,776,703 16,603,708 20,066,893",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 20066893000,
+      "page": 15,
+      "quote": "Total assets 12,776,703 16,603,708 20,066,893",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 20228400000,
+      "page": 248,
+      "quote": "Our total assets increased from RMB20,066.9 million as of December 31, 2025 to RMB20,228.4 million as of March 31, 2026",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 9144520000,
+      "page": 15,
+      "quote": "Net assets 8,161,299 9,144,520 10,711,670",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 10711670000,
+      "page": 15,
+      "quote": "Net assets 8,161,299 9,144,520 10,711,670",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 11344197000,
+      "page": 353,
+      "quote": "TOTAL EQUITY 11,344,197 10,711,670",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 7459188000,
+      "page": 15,
+      "quote": "Total liabilities 4,615,404 7,459,188 9,355,223",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 9355223000,
+      "page": 15,
+      "quote": "Total liabilities 4,615,404 7,459,188 9,355,223",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 8884200000,
+      "page": 248,
+      "quote": "Our total liabilities decreased from RMB9,355.2 million as of December 31, 2025 to RMB8,884.2 million as of March 31, 2026",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 24710080000,
+      "page": 287,
+      "quote": "Revenue 17,507,203 24,710,080 30,514,403",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 30514403000,
+      "page": 287,
+      "quote": "Revenue 17,507,203 24,710,080 30,514,403",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 30430584000,
+      "page": 351,
+      "quote": "Revenue 7,607,646 5,993,381",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 2348349000,
+      "page": 287,
+      "quote": "Profit before taxation 1,812,512 2,348,349 2,922,474",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 2922474000,
+      "page": 287,
+      "quote": "Profit before taxation 1,812,512 2,348,349 2,922,474",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 2234896000,
+      "page": 351,
+      "quote": "Profit before taxation 558,724 580,739",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 2211124000,
+      "page": 287,
+      "quote": "Profit for the year 1,693,939 2,211,124 2,617,194",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 2617194000,
+      "page": 287,
+      "quote": "Profit for the year 1,693,939 2,211,124 2,617,194",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 1883688000,
+      "page": 351,
+      "quote": "Profit for the period 470,922 524,316",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 3108231000,
+      "page": 243,
+      "quote": "Total 1,016,868 1,637,795 2,918,825 3,108,231",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 219,
+      "quote": "Our consolidated financial statements have been prepared in accordance with IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 3253208000,
+      "page": 351,
+      "quote": "Gross profit 3,253,208 2,551,595",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 25360000,
+      "page": 356,
+      "quote": "Payments for purchase of property, plant and equipment, intangible assets and other non-current assets (25,360) (63,919)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 285,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position as at December 31,",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.007,
+      "page": 260,
+      "quote": "The Underwriters will receive an underwriting commission (the “Fixed Fee”) of 0.7% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.007,
+      "page": 260,
+      "quote": "The Underwriters will receive an underwriting commission (the “Fixed Fee”) of 0.7% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 260,
+      "quote": "pursuant to which we may be required to allot and issue up to an aggregate of 6,994,900 additional H Shares at the Offer Price, representing approximately 15.0%",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Independent research and development, design and sales of consumer electronic products under own brands (smart charging and power storage, smart audio and video, smart home)",
+      "page": 295,
+      "quote": "The Group are principally engaged in independent research and development, design and sales of consumer electronic products such as peripheral products for mobile devices",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19A of the Main Board Listing Rules (PRC issuer with other listed shares)",
+      "page": 125,
+      "quote": "Rule 8.08(1) (as amended and replaced by Rule 19A.13A) of the Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of listing",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized (mass production and sales; revenue-generating)",
+      "page": 154,
+      "quote": "Following pilot production validation and small-scale production, the project advances to the mass production phase through our manufacturing partnerships.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 18,
+      "quote": "approximately 15.0% or HK$678.4 million will be allocated to enhance our brand’s appeal and deepen consumer loyalty; and approximately 5.0% or HK$226.1 million will be allocated for working capital",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Schroder Investment Management (Singapore) Ltd; Schroder Investment Management (Hong Kong) Limited; Aspex Master Fund; Principal Asset Management Company (Asia) Limited; Greenwoods Asset Management Hong Kong Limited; Shanghai Greenwoods Asset Management Co., Ltd.; Guotai Haitong Securities Co., Ltd.; HACF, L.P.; UBS Asset Management (Singapore) Ltd.; Franklin Templeton Sealand Fund Management Co., Ltd.; Jane Street Asia Trading Limited; Taikang Life Insurance Co., Ltd.; WT Asset Management Limited; Value Partners Hong Kong Limited; Value Partners Limited",
+      "page": 215,
+      "quote": "Schroders 70.00 5,522,200 11.84% 0.95% 10.30% 0.94% 10.30% 0.94% 8.95% 0.92% Aspex 50.00 3,944,400",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 352,
+      "quote": "CONSOLIDATED STATEMENT OF FINANCIAL POSITION AT MARCH 31, 2026 — UNAUDITED",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -450632000,
+      "page": 356,
+      "quote": "Net cash used in operating activities (450,632) (287,657)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 2670127000,
+      "page": 352,
+      "quote": "Cash and cash equivalents 2,670,127 3,067,742",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 805291000,
+      "page": 351,
+      "quote": "Research and development expenses (805,291) (554,128)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 320,
+      "quote": "INTANGIBLE ASSETS Patent right Software Total",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "安克创新科技股份有限公司",
+      "page": 1,
+      "quote": "安克創新科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Individual natural person(s) acting in concert (Mr. Yang and Ms. He)",
+      "page": 196,
+      "quote": "Immediately prior to the Global Offering, our Company was held as to 43.39% by Mr. Yang and 3.64% by Ms. He. Mr. Yang and Ms. He are parties acting in concert.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4327,
+      "page": 196,
+      "quote": "Mr. Yang and Ms. He will be entitled to control an aggregate of approximately 43.27% of the voting rights in our Company",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.4327,
+      "page": 196,
+      "quote": "Mr. Yang and Ms. He will be entitled to control an aggregate of approximately 43.27% of the voting rights in our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "06/12/2011",
+      "page": 295,
+      "quote": "The Company was formerly established as a limited liability company in Changsha, Hunan, the People’s Republic of China (the “PRC”) on December 6, 2011",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Room 701, 7th Floor, Building 7, Phase I, Changsha Zhongdian Software Park Co., Ltd., Changsha, Hunan, PRC",
+      "page": 80,
+      "quote": "Registered Office, Headquarters and Principal Place of Business in the PRC Room 701, 7th Floor Building 7, Phase I Changsha Zhongdian Software Park Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "23/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Tuesday, June 23, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "26/06/2026",
+      "page": 5,
+      "quote": "Application lists close . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Friday, June 26, 2026",
+      "confidence": "high"
+    }
+  }
+}

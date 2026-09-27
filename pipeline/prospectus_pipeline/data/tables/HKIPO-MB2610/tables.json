@@ -1,0 +1,133 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 33,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "estimated total listing expenses, (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "commission, are expected to be approximately",
+          "US$9.6 million"
+        ],
+        [
+          "Among the total listing expenses payable of approximately",
+          "US$17.1 million"
+        ],
+        [
+          "we had incurred listing expenses of",
+          "US$4.4 million"
+        ],
+        [
+          "loss and other comprehensive income and prepaid listing expenses of",
+          "US$0.5 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                    | Rate / Amount Disclosed |\n| ------------------------------------------------------------------- | ----------------------- |\n| estimated total listing expenses, (i) underwriting-related          | expenses,               |\n| commission, are expected to be approximately                        | US$9.6 million          |\n| Among the total listing expenses payable of approximately           | US$17.1 million         |\n| we had incurred listing expenses of                                 | US$4.4 million          |\n| loss and other comprehensive income and prepaid listing expenses of | US$0.5 million          |",
+      "metadata": {
+        "items_count": 5
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 375,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "estimated total listing expenses, (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "commission, are expected to be approximately",
+          "US$9.6 million"
+        ],
+        [
+          "Among the total listing expenses payable of approximately",
+          "US$17.1 million"
+        ],
+        [
+          "we had incurred listing expenses of",
+          "US$4.4 million"
+        ],
+        [
+          "loss and other comprehensive income and prepaid listing expenses of",
+          "US$0.5 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                    | Rate / Amount Disclosed |\n| ------------------------------------------------------------------- | ----------------------- |\n| estimated total listing expenses, (i) underwriting-related          | expenses,               |\n| commission, are expected to be approximately                        | US$9.6 million          |\n| Among the total listing expenses payable of approximately           | US$17.1 million         |\n| we had incurred listing expenses of                                 | US$4.4 million          |\n| loss and other comprehensive income and prepaid listing expenses of | US$0.5 million          |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 336,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "172,842",
+          "466,777",
+          "677,785",
+          "482,730"
+        ],
+        [
+          "Gross profit",
+          "44,802",
+          "112,069",
+          "197,668",
+          "131,132"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 172,842 | 466,777 | 677,785 | 482,730 |\n| Gross profit     | 44,802  | 112,069 | 197,668 | 131,132 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

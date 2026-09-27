@@ -1,0 +1,14 @@
+## 合并财务报表核心指标表 (Consolidated Financial Summary Table) (Page 19)
+
+| Financial Metric    | Year-3    | Year-2    | Year-1    |
+| ------------------- | --------- | --------- | --------- |
+| Revenue             | 2,366,870 | 2,540,936 | 3,367,659 |
+| Gross profit        | 500,468   | 482,946   | 656,094   |
+| Profit for the year | 191,209   | 137,226   | 239,153   |
+| Profit for the year | 191,209   | 137,226   | 239,153   |
+
+## 合并财务报表核心指标表 (Consolidated Financial Summary Table) (Page 22)
+
+| Financial Metric | Year-3  | Year-2    | Year-1    |
+| ---------------- | ------- | --------- | --------- |
+| Total equity     | 900,402 | 1,037,053 | 1,267,240 |

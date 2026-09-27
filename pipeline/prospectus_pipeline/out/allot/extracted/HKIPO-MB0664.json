@@ -1,0 +1,116 @@
+{
+  "code": "0664.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.0675,
+      "page": 5,
+      "quote": "Jiantou International (Hong Kong) Co., Limited (“Jiantou International” or the “Cornerstone Investor”) 500,000 6.75%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 59.55,
+      "page": 4,
+      "quote": "Subscription level 59.55 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 26280,
+      "page": 4,
+      "quote": "No. of valid applications 26,280",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 44111400,
+      "page": 14,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT / BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 100 19,181",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 59.55 times",
+      "page": 4,
+      "quote": "Subscription level 59.55 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "27/03/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Overall Coordinators (on behalf of the Underwriters) and us on the Price Determinatio",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "30/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**30/03/2026 22:11**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 7406800,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 7,406,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1111000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering (after reallocation) 1,111,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 6295800,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (after reallocation) 6,295,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD, NO STABILIZATION ACTIONS AND LAPSE OF OVER-ALLOTMENT OPTION（30/04/2026 22:50）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD, NO STABILIZATION ACTIONS AND LAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "370,300 H Shares reallocated from the International Offering to the Hong Kong Public Offering",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 370,300",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 390160000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$444.41 million Less: Estimated listing expenses payable based on Offer Price HK$54.25 million Net proceeds HK$390.16 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.583,
+      "page": 19,
+      "quote": "37,546,402 H Shares, representing approximately 58.30% of the issued share capital of our Company will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 64406800,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 64,406,800",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1072,
+      "page": 19,
+      "quote": "H Shares held by the Cornerstone Investor upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing (before exercise of the Over-allotment Option) = 64,406,800 Shares; 500,000 H Shares held by the Cornerstone Investor upon Listing (six-month lock-up) are excluded from the free float",
+      "page": 19,
+      "quote": "The Cornerstone Investor has agreed to a lock-up period of six months following the Listing Date. As such, H Shares held by the Cornerstone Investor upon the Listing shall not be counted",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 64406800,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 64,406,800",
+      "confidence": "high"
+    }
+  }
+}

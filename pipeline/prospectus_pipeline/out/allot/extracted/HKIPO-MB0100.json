@@ -1,0 +1,118 @@
+{
+  "code": "0100.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.5653,
+      "page": 7,
+      "quote": "Total 16,504,040 56.53%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1837.17,
+      "page": 4,
+      "quote": "Subscription level 1,837.17 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 417646,
+      "page": 4,
+      "quote": "No. of valid applications 417,646",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2332255220,
+      "page": 30,
+      "quote": "NO. OF OFFER SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT / BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF OFFER SHARES APPLIED FOR POOL A 20 139,314",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,837.17 times",
+      "page": 4,
+      "quote": "Subscription level 1,837.17 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "07/01/26",
+      "page": 2,
+      "quote": "The final Offer Price is expected to be fixed by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and the",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "08/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：08/01/2026 22:40",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 29197600,
+      "page": 32,
+      "quote": "and before any exercise of the Over-allotment Option) that would be allotted and issued by the Company is 29,197,600 Offer Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5077860,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Public Offer (after reallocation) 5,077,860",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 24119740,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offer (after reallocation and the full exercise of the Offer Size Adjustment Option) 24,119,740",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 4379640,
+      "page": 1,
+      "quote": "us has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, January 9, 2026, in respect of an aggregate of 4,379,640 Offer Shar",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (11/01/2026 19:13)"
+    },
+    "col_CW": {
+      "value": "No. of Offer Shares reallocated from the International Offer (claw-back) 3,808,380 Final no. of Offer Shares under the Public Offer (after reallocation) 5,077,860",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offer (claw-back) 3,808,380 Final no. of Offer Shares under the Public Offer (after reallocation) 5,077,860",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4596100000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$4,817.6 million Less: Estimated listing expenses payable based on final Offer Price HK$(221.5) million Net proceeds HK$4,596.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.804,
+      "page": 49,
+      "quote": "the total number of the Class A Ordinary Shares held by the public represents approximately 80.4% of the total number of issued Class A Ordinary Shares of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 228153134,
+      "page": 49,
+      "quote": "approximately 80.4% of the total number of issued Class A Ordinary Shares of the Company",
+      "confidence": "medium"
+    },
+    "col_DA": {
+      "value": 0.0556,
+      "page": null,
+      "quote": "公式：(col_CS 29,197,600 − col_CK 0.5653×col_CS) ÷ col_CZ 228,153,134 = 0.0556；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Class A Ordinary Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the Class A Ordinary Shares of the Company at the time of Listing",
+      "page": 49,
+      "quote": "Class A Ordinary Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the Class A Ordinary Shares of the Company at the time of Listing",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 228153134,
+      "page": 49,
+      "quote": "公式：(col_CS 29,197,600 − col_CK 0.5653×col_CS) ÷ col_CZ 228,153,134 = 0.0556；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

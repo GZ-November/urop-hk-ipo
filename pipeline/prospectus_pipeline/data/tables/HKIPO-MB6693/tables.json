@@ -1,0 +1,178 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 258,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Option and the Over-allotment Option are not exercised, our Company will have",
+          "1,869,563,378",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                         | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| Option and the Over-allotment Option are not exercised, our Company will have | 1,869,563,378    | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 598,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Company Limited RMB400.00",
+          "433.79",
+          "27,403,000",
+          "13.32%"
+        ],
+        [
+          "Total",
+          "744.87",
+          "47,054,200",
+          "22.88%"
+        ],
+        [
+          "Company Limited RMB400.00",
+          "433.79",
+          "29,359,800",
+          "14.28%"
+        ],
+        [
+          "Total",
+          "744.87",
+          "50,397,000",
+          "24.51%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor      | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Company Limited RMB400.00 | 433.79                | 27,403,000             | 13.32%                        |\n| Total                     | 744.87                | 47,054,200             | 22.88%                        |\n| Company Limited RMB400.00 | 433.79                | 29,359,800             | 14.28%                        |\n| Total                     | 744.87                | 50,397,000             | 24.51%                        |",
+      "metadata": {
+        "investor_count": 2
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 599,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Company Limited RMB400.00",
+          "433.79",
+          "31,617,400",
+          "15.37%"
+        ],
+        [
+          "Total",
+          "744.87",
+          "54,290,800",
+          "26.40%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor      | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Company Limited RMB400.00 | 433.79                | 31,617,400             | 15.37%                        |\n| Total                     | 744.87                | 54,290,800             | 26.40%                        |",
+      "metadata": {
+        "investor_count": 1
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 52,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "HK$32.2 million). Among the total listing expenses which we expect to",
+          "incur,"
+        ]
+      ],
+      "markdown": "| Item Description                                                      | Rate / Amount Disclosed |\n| --------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                               | fees,                   |\n| HK$32.2 million). Among the total listing expenses which we expect to | incur,                  |",
+      "metadata": {
+        "items_count": 2
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 579,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "total listing expenses which we expect to",
+          "incur,"
+        ]
+      ],
+      "markdown": "| Item Description                          | Rate / Amount Disclosed |\n| ----------------------------------------- | ----------------------- |\n| Listing expenses represent professional   | fees,                   |\n| total listing expenses which we expect to | incur,                  |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 497,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "3,782,624",
+          "6,266,787",
+          "7,220,952",
+          "5,062,293"
+        ],
+        [
+          "Gross profit",
+          "1,257,503",
+          "1,794,919",
+          "2,352,874",
+          "1,540,430"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    | Col 5     |\n| ---------------- | --------- | --------- | --------- | --------- |\n| Revenue          | 3,782,624 | 6,266,787 | 7,220,952 | 5,062,293 |\n| Gross profit     | 1,257,503 | 1,794,919 | 2,352,874 | 1,540,430 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

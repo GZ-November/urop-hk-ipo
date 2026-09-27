@@ -1,0 +1,425 @@
+{
+ "code": "2723.HK",
+ "fields": {
+  "col_L": {
+   "value": 90679175,
+   "page": 234,
+   "quote": "H Shares to be converted from Unlisted Shares 81,611,175 90.00% H Shares to be issued pursuant to the Global Offering 9,068,000 10.00% Total 90,679,175 100%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 9068000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 9,068,000 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 81611175,
+   "page": 234,
+   "quote": "H Shares to be converted from Unlisted Shares 81,611,175 90.00% H Shares to be issued pursuant to the Global Offering 9,068,000 10.00% Total 90,679,175 100%",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 81611175,
+   "page": 234,
+   "quote": "H Shares to be converted from Unlisted Shares 81,611,175 90.00% H Shares to be issued pursuant to the Global Offering 9,068,000 10.00% Total 90,679,175 100%",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 85,
+   "quote": "The Global Offering comprises the Hong Kong Public Offering of initially 906,800 H Shares and the International Offering of initially 8,161,200 H Shares",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 9068000,
+   "page": 234,
+   "quote": "H Shares to be issued pursuant to the Global Offering 9,068,000 10.00%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 8161200,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 8,161,200 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 906800,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 906,800 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 234,
+   "quote": "Upon completion of the Global Offering and the Conversion of Unlisted Shares into H Shares, all our Shares will be H Shares.",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 90679175,
+   "page": 349,
+   "quote": "90,679,175 Shares (being the outstanding 81,611,175 ordinary shares as at December 31, 2025 and 9,068,000 H Shares to be issued pursuant to the Global Offering)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 55.5,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$55.50 per H Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 43.5,
+   "page": 2,
+   "quote": "is currently expected to be not less than HK$43.50 per Offer Share",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 311,
+   "quote": "(Expressed in Renminbi (\"RMB\"))",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 615421000,
+   "page": 25,
+   "quote": "Total assets 615,421 540,178 564,254",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 540178000,
+   "page": 25,
+   "quote": "Total assets 615,421 540,178 564,254",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 564254000,
+   "page": 25,
+   "quote": "Total assets 615,421 540,178 564,254",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 470546000,
+   "page": 312,
+   "quote": "TOTAL EQUITY 470,546 404,679 412,290",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 404679000,
+   "page": 312,
+   "quote": "TOTAL EQUITY 470,546 404,679 412,290",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 412290000,
+   "page": 312,
+   "quote": "TOTAL EQUITY 470,546 404,679 412,290",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 144875000,
+   "page": 25,
+   "quote": "Total liabilities 144,875 135,499 151,964",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 135499000,
+   "page": 25,
+   "quote": "Total liabilities 144,875 135,499 151,964",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 151964000,
+   "page": 25,
+   "quote": "Total liabilities 144,875 135,499 151,964",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 611190000,
+   "page": 241,
+   "quote": "Revenue 611,190 537,870 576,563",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 537870000,
+   "page": 241,
+   "quote": "Revenue 611,190 537,870 576,563",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 576563000,
+   "page": 241,
+   "quote": "Revenue 611,190 537,870 576,563",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 64215000,
+   "page": 241,
+   "quote": "Profit before taxation 64,215 20,465 7,217",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 20465000,
+   "page": 241,
+   "quote": "Profit before taxation 64,215 20,465 7,217",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 7217000,
+   "page": 241,
+   "quote": "Profit before taxation 64,215 20,465 7,217",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 60658000,
+   "page": 241,
+   "quote": "Profit for the year 60,658 21,520 9,177",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 21520000,
+   "page": 241,
+   "quote": "Profit for the year 60,658 21,520 9,177",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 9177000,
+   "page": 241,
+   "quote": "Profit for the year 60,658 21,520 9,177",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 5046000,
+   "page": 268,
+   "quote": "Current 1,861 6,251 4,522 3,940 Non-current - 5,106 524 39 Total 1,861 11,357 5,046 3,979",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 237,
+   "quote": "Our consolidated financial statements have been prepared in accordance with IFRS Accounting Standards.",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 147201000,
+   "page": 241,
+   "quote": "Gross profit 190,459 146,582 147,201",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 368000,
+   "page": 269,
+   "quote": "Property and equipment 33 951 346 Intangible assets - - 22 Total 33 951 368",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 309,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants' report, a true and fair view of the Company's and the Group's financial position",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 284,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 284,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 45800000,
+   "page": 29,
+   "quote": "the estimated total listing expenses for the Global Offering are approximately RMB40.1 million (equivalent to HK$45.8 million)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "AI application products for marketing and sales - intelligent advertising services and intelligent data management",
+   "page": 237,
+   "quote": "We provide intelligent marketing services to enterprises by leveraging AI technologies through our proprietary AI application products.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board - Rule 8.05(2) market capitalisation/revenue/cash flow test",
+   "page": 28,
+   "quote": "We satisfy the market capitalization/revenue/cash flow test under Rule 8.05(2) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialized (revenue-generating AI application products)",
+   "page": 237,
+   "quote": "Our revenue amounted to RMB611.2 million, RMB537.9 million and RMB576.6 million in 2023, 2024 and 2025, respectively.",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 30,
+   "quote": "50.0% 201.6 For continuous R&D on our AI application products for marketing and sales 20.0% 80.6 For expanding our sales network to further broaden customer base",
+   "confidence": "medium"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 311,
+   "quote": "Year ended December 31, Note 2023 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 31864000,
+   "page": 316,
+   "quote": "Net cash generated from operating activities 52,060 42,052 31,864",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 154885000,
+   "page": 316,
+   "quote": "Cash and cash equivalents at the end of the year 85,105 72,070 154,885",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 45755000,
+   "page": 248,
+   "quote": "Total 54,063 100.0 56,344 100.0 45,755 100.0",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 319,
+   "quote": "Hence both research costs and development costs are generally recognized as expenses in the period in which they are incurred.",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.596,
+   "page": 18,
+   "quote": "our five largest customers in each year during the Track Record Period of RMB307.1 million, RMB293.8 million and RMB343.5 million, respectively, accounting for 50.2%, 54.6% and 59.6%",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "北京深演智能科技股份有限公司",
+   "page": 1,
+   "quote": "北京深演智能科技股份有限公司 Beijing DeepZero Technology Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 20,
+   "quote": "To support the development and operation of our business and general working capital of our Group, we have received multiple rounds of Pre-IPO Investments since our establishment.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 138,
+   "quote": "Round Series A-2 Investment Series B Investment Series C Investment Series C-1 Investment Series D Investment Series E Investment Name of the Pre-IPO Investors",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 141,
+   "quote": "Chord Capital currently oversees multiple RMB-denominated equity investment funds covering strategically emerging sectors including culture and media, cutting-edge technology, internet and healthcare.",
+   "confidence": "medium"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 141,
+   "quote": "Each of China Mobile Communication Co., Ltd. (CMC) and National Development holds more than one-third of the partnership interest in China Mobile Fund, being 55.43% and 36.95%, respectively",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 141,
+   "quote": "Beijing Broadcasting Group is wholly owned by Beijing Radio & Television Station (北京廣播電視臺), a public institution directly subordinated to Beijing Municipal Government",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Beijing Heyin; China Mobile Fund; Beijing BGWG; Forward Maoshang; Shanghai Maoyao; Shanghai Zhencheng; Qidian Yihao; Shenzhen Capital; Hongtu Chengzhang; Mr. Zhang Wei; Ms. Liu Chunru; Mr. Huang Jicheng; Mr. Qu Zhe",
+   "page": 141,
+   "quote": "Beijing Heyin is a limited partnership established in the PRC on September 29, 2014, the general partner of which is Beijing Chord Capital Management Co., Ltd.",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.5599,
+   "page": 135,
+   "quote": "Beijing Heyin 11,455,282 14.04% China Mobile Fund 8,911,265 10.92% Forward Maoshang 8,372,938 10.26%",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 141,
+   "quote": "Chord Capital is controlled by Mr. Huang Hao (黃昊), our non-executive Director, as to 85%. Among the three limited partners of Beijing Heyin",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series A-2 Investment",
+   "page": 138,
+   "quote": "Round(1) Series A-2 Investment Series B Investment Series C Investment Series C-1 Investment(9) Series D Investment Series E Investment",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": 15.0,
+   "page": 138,
+   "quote": "Date of the relevant agreements May 12, 2011",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural persons - co-founders acting in concert",
+   "page": 20,
+   "quote": "held as to approximately 20.96% and 14.77% by Ms. Huang and Mr. Xie, respectively. Pursuant to an acting-in-concert agreement entered into between Ms. Huang and Mr. Xie on July 13, 2016",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.3215,
+   "page": 20,
+   "quote": "Ms. Huang and Mr. Xie will together be entitled to exercise the voting rights attaching to approximately 32.15% of the enlarged total issued share capital",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.3215,
+   "page": 20,
+   "quote": "Ms. Huang and Mr. Xie will together be entitled to exercise the voting rights attaching to approximately 32.15% of the enlarged total issued share capital",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "30/04/09",
+   "page": 317,
+   "quote": "the Company was incorporated in the People's Republic of China (the PRC) on April 30, 2009 as a limited liability company under the Company Law of the PRC",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "31/F, Tower Two, Times Square, 1 Matheson Street, Hong Kong",
+   "page": 94,
+   "quote": "Principal Place of Business in Hong Kong 31/F, Tower Two Times Square 1 Matheson Street",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "18/05/26",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, May 18, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "21/05/26",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close . . . 12:00 noon on Thursday, May 21, 2026",
+   "confidence": "high"
+  }
+ }
+}

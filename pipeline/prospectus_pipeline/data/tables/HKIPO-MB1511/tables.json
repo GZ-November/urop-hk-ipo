@@ -1,0 +1,69 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "is a non-cash item. Listing expenses are expenses related to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                        | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------- | ----------------------- |\n| is a non-cash item. Listing expenses are expenses related to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "after deducting the listing expenses payable by us in the Global",
+          "Offering,"
+        ]
+      ],
+      "markdown": "| Item Description                                                 | Rate / Amount Disclosed |\n| ---------------------------------------------------------------- | ----------------------- |\n| after deducting the listing expenses payable by us in the Global | Offering,               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 330,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "631,661",
+          "450,289",
+          "267,603"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  |\n| ---------------- | ------- | ------- | ------- |\n| Total equity     | 631,661 | 450,289 | 267,603 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

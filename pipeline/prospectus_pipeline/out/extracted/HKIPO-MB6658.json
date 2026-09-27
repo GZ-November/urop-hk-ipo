@@ -1,0 +1,431 @@
+{
+ "code": "6658.HK",
+ "fields": {
+  "col_L": {
+   "value": 78811208,
+   "page": 169,
+   "quote": "H Shares to be converted from Domestic Unlisted Shares 67,347,108 85.45 H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 11464100,
+   "page": 169,
+   "quote": "H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 67347108,
+   "page": 169,
+   "quote": "H Shares to be converted from Domestic Unlisted Shares 67,347,108 85.45 H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 67347108,
+   "page": 169,
+   "quote": "H Shares to be converted from Domestic Unlisted Shares 67,347,108 85.45 H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 169,
+   "quote": "H Shares to be converted from Domestic Unlisted Shares 67,347,108 85.45 H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "medium",
+   "note": "No Sale Shares: the share capital table lists only conversion of Domestic Unlisted Shares and new H Shares issued under the Global Offering; the term \"Sale Shares\" does not appear in the prospectus. Per rule col_N/col_O = L-M = 67,347,108."
+  },
+  "col_Q": {
+   "value": 11464100,
+   "page": 169,
+   "quote": "H Shares to be issued under the Global Offering 11,464,100 14.55 Total 78,811,208 100.00",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 10317600,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 10,317,600 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1146500,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,146,500 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 11,464,100 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 78811208,
+   "page": 19,
+   "quote": "78,811,208 H Shares will be in issue immediately following the completion of the Global Offering (assuming the Over-allotment Option is not exercised",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 43.58,
+   "page": 2,
+   "quote": "The Offer Price per Offer Share will be HK$43.58 per Offer Share, unless otherwise announced.",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 43.58,
+   "page": 2,
+   "quote": "The Offer Price per Offer Share will be HK$43.58 per Offer Share, unless otherwise announced.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 245,
+   "quote": "The Historical Financial Information is presented in Renminbi",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 1394662000,
+   "page": 17,
+   "quote": "Total assets 1,394,662 1,670,967 1,990,073",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1670967000,
+   "page": 17,
+   "quote": "Total assets 1,394,662 1,670,967 1,990,073",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1990073000,
+   "page": 17,
+   "quote": "Total assets 1,394,662 1,670,967 1,990,073",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 265465000,
+   "page": 248,
+   "quote": "Total equity 265,465 617,948 881,627",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 617948000,
+   "page": 248,
+   "quote": "Total equity 265,465 617,948 881,627",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 881627000,
+   "page": 248,
+   "quote": "Total equity 265,465 617,948 881,627",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 1129197000,
+   "page": 17,
+   "quote": "Total liabilities 1,129,197 1,053,019 1,108,446",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 1053019000,
+   "page": 17,
+   "quote": "Total liabilities 1,129,197 1,053,019 1,108,446",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 1108446000,
+   "page": 17,
+   "quote": "Total liabilities 1,129,197 1,053,019 1,108,446",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 1322042000,
+   "page": 15,
+   "quote": "Revenue 1,322,042 1,616,018 1,710,731",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 1616018000,
+   "page": 15,
+   "quote": "Revenue 1,322,042 1,616,018 1,710,731",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 1710731000,
+   "page": 15,
+   "quote": "Revenue 1,322,042 1,616,018 1,710,731",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 110603000,
+   "page": 15,
+   "quote": "Profit before tax 110,603 180,407 219,175",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 180407000,
+   "page": 15,
+   "quote": "Profit before tax 110,603 180,407 219,175",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 219175000,
+   "page": 15,
+   "quote": "Profit before tax 110,603 180,407 219,175",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 99231000,
+   "page": 15,
+   "quote": "Profit for the year 99,231 147,719 182,088",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 147719000,
+   "page": 15,
+   "quote": "Profit for the year 99,231 147,719 182,088",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 182088000,
+   "page": 15,
+   "quote": "Profit for the year 99,231 147,719 182,088",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 478359000,
+   "page": 204,
+   "quote": "Interest-bearing bank borrowings 180,197 321,333 475,393 516,066 Lease liabilities 1,965 784 2,360 1,776 Non-Current Lease liabilities 1,930 1,146 606 452 Total 184,092 323,263 478,359 518,294",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 258,
+   "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 608700000,
+   "page": 15,
+   "quote": "Gross profit 529,711 582,465 608,700",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 168633000,
+   "page": 205,
+   "quote": "Purchase of items of property, plant and equipment 80,232 110,259 125,301 Purchase of other intangible assets 270 32 132 Prepayment of leasehold land 43,200 Total 80,502 110,291 168,633",
+   "confidence": "medium"
+  },
+  "col_CH": {
+   "value": "Unqualified (true and fair view)",
+   "page": 244,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group and the Company",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 219,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 219,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 219,
+   "quote": "up to an aggregate of 1,719,600 additional H Shares, representing approximately 15.0% of the number of Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 59500000,
+   "page": 20,
+   "quote": "We expect to incur listing expenses of approximately HK$59.5 million (based on the Offer Price of HK$43.58 per Offer Share",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Fruit snack company focusing on plum-based products",
+   "page": 85,
+   "quote": "We are a fruit snack company focusing on the plum-based products.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange — Chapter 19A of the Listing Rules (PRC issuer with H Shares)",
+   "page": 98,
+   "quote": "the Company will be able to meet the public float requirement under Rule 19A.13A of the Listing Rules",
+   "confidence": "medium"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 19,
+   "quote": "(i) approximately 61.0% of the net proceeds, or approximately HK$268.5 million, will be used to expand our production capacity over the next three years; (ii) approximately 21.0%",
+   "confidence": "high",
+   "note": "Full use of proceeds: (i) 61.0% expand production capacity; (ii) 21.0% brand recognition, sales network and international markets; (iii) 8.0% recruit R&D personnel and advance R&D initiatives; (iv) 10.0% working capital and general corporate purposes. No debt repayment tranche, hence 0."
+  },
+  "col_CJ": {
+   "value": "Fanchang Revitalization; Top New",
+   "page": 176,
+   "quote": "Fanchang Revitalization HK$70,164(2) 1,610,000 14.04% 2.04% 12.21% 2.00% Top New US$10,000(3) 1,777,100(4) 15.50% 2.26% 13.50% 2.21%",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/2025",
+   "page": 251,
+   "quote": "Year ended 31 December 2023 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 74474000,
+   "page": 18,
+   "quote": "Net cash flows from operating activities 126,903 84,374 74,474",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 33904000,
+   "page": 18,
+   "quote": "Cash and cash equivalents at end of the year 67,392 78,047 33,904",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 27885000,
+   "page": 15,
+   "quote": "Research and development expenses (33,612) (18,948) (27,885)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 263,
+   "quote": "Research and development costs All research costs are charged to profit or loss as incurred.",
+   "confidence": "medium",
+   "note": "No Development costs line exists in the other intangible assets note (only Software and Licences); per rule filled 0."
+  },
+  "col_AY": {
+   "value": 0.458,
+   "page": 13,
+   "quote": "revenue from our five largest customers in each year accounted for 14.2%, 33.1% and 45.8% of our total revenue for the respective year",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "溜溜梅股份有限公司",
+   "page": 2,
+   "quote": "Liuliumei Co., Ltd. 溜溜梅股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 19,
+   "quote": "Our Company engaged in four rounds of Pre-IPO Investments from 2015 to 2025.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 96,
+   "quote": "38.26% by Nanjing Hongzhuo Venture Capital Partnership (Limited Partnership)",
+   "confidence": "medium"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 93,
+   "quote": "Beijing Sequoia is a private equity fund established in June 2012 and invested in our Company in June 2015.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 0,
+   "page": 19,
+   "quote": "Our Company engaged in four rounds of Pre-IPO Investments from 2015 to 2025.",
+   "confidence": "low",
+   "note": "Pre-IPO investors are PE/VC funds, an individual and state-owned funds; no industrial company or corporate venture arm led any Pre-IPO round."
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 174,
+   "quote": "Huaan Fund is owned as to 25% by Fanchang Chungu (as defined below) as a limited partner, and Fanchang Chungu is ultimately wholly owned by the Fanchang District Finance Bureau",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 93,
+   "quote": "Beijing Sequoia is a private equity fund established in June 2012 and invested in our Company in June 2015.",
+   "confidence": "medium"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Beijing Sequoia; Mr. Li Qing; Shenzhen Junrong; Nuoxiang Jinhong; Nuoxiang Dongchen; Huaan Fund; Xingnong Fund",
+   "page": 93,
+   "quote": "Our Company engaged in four rounds of Pre-IPO Investments from 2015 to 2025, details of which are set out below: Round of Pre-IPO Investment Name of Pre-IPO Investors",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.1045,
+   "page": 93,
+   "quote": "Series D1 Huaan Fund December 8, 2024 December 26, 2024 1,210,646 40,000,000 33.04 13.01% 1.54% Series D2 Xingnong Fund December 8, 2024 January 3, 2025 1,059,315 35,000,000 33.04 13.01% 1.34%",
+   "confidence": "medium",
+   "note": "Sum of pre-IPO investors' shareholding upon Listing: Shenzhen Junrong 4.71% + Nuoxiang Jinhong 1.13% + Nuoxiang Dongchen 1.73% + Huaan Fund 1.54% + Xingnong Fund 1.34% = 10.45%."
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 94,
+   "quote": "as well as information rights, the right to appoint Directors or Supervisors, rights of first refusal",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Series A (Beijing Sequoia, June 2015)",
+   "page": 93,
+   "quote": "Series A Beijing Sequoia(1), (2) June 25, 2015 June 30, 2015 10,588,235 135,000,000 12.75 66.43% N/A",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 10.96,
+   "page": 93,
+   "quote": "Series A Beijing Sequoia(1), (2) June 25, 2015 June 30, 2015 10,588,235 135,000,000 12.75 66.43% N/A",
+   "confidence": "medium",
+   "note": "Series A consideration settled 30 June 2015 to Listing date 15 June 2026 ~ 10.96 years."
+  },
+  "col_BB": {
+   "value": "Individual natural person(s) acting in concert (Mr. Yang and Ms. Li) and their shareholding platforms",
+   "page": 20,
+   "quote": "Mr. Yang, Ms. Li, Jurun Investment, Kaixuan Star, Kailai Star and Liuliu Star are a group of Controlling Shareholders upon the Listing.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.75,
+   "page": 172,
+   "quote": "H Shares 59,108,359 75.00%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.75,
+   "page": 172,
+   "quote": "H Shares 59,108,359 75.00%",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "04/09/2009",
+   "page": 389,
+   "quote": "Our Company was established under the laws of the PRC as a limited liability company on September 4, 2009 with an initial registered capital of RMB10,000,000.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "3 Zhongjiang Road, Economic Development Zone, Fanchang District, Wuhu City, Anhui Province, PRC",
+   "page": 67,
+   "quote": "Headquarters and Principal Place of Business in the PRC 3 Zhongjiang Road Economic Development Zone Fanchang District, Wuhu City Anhui Province, PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "05/06/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences 9: 00 a.m. on Friday, June 5, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "10/06/2026",
+   "page": 5,
+   "quote": "Application lists close 12: 00 noon on Wednesday, June 10, 2026",
+   "confidence": "high"
+  }
+ }
+}

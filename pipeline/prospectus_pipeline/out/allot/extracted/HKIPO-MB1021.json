@@ -1,0 +1,116 @@
+{
+  "code": "1021.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4872,
+      "page": 7,
+      "quote": "Subtotal 45,265,600 8.61% 8.33%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5059.38,
+      "page": 5,
+      "quote": "Subscription level (before taking into account the Offer Size Adjustment Option) 5,059.38 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 227070,
+      "page": 5,
+      "quote": "No. of valid applications 227,070",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 20436879200,
+      "page": 20,
+      "quote": "NO. OF H SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOCATION/BALLOT APPROXIMATE PERCENTAGE ALLOTED OF THE TOTAL NO. OF H SHARES APPLIED FOR POOL A 200 46,102",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level (before taking into account the Offer Size Adjustment Option) 5,059.38 times",
+      "page": 5,
+      "quote": "Subscription level (before taking into account the Offer Size Adjustment Option) 5,059.38 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$17.00; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "27/03/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**27/03/2026 22:27**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 92902600,
+      "page": 3,
+      "quote": "Number of Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option and before exercise of the Over-allotment Option) 92,902,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 16157000,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering (after reallocation) 16,157,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 76745600,
+      "page": 6,
+      "quote": "Final no. of Offer Shares under the International Offering (after reallocation and taking into account the full exercise of the Offer Size Adjustment Option) 76,745,600",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 13469000,
+      "page": 1,
+      "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 24, 2026, in respect of an aggregate of 13,469,000 H Shares ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END\nOF STABILIZATION PERIOD (26/04/2026 18:04)"
+    },
+    "col_CW": {
+      "value": "12,117,600 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (claw-back), giving a final Hong Kong Public Offering of 16,157,000 Offer Shares",
+      "page": 22,
+      "quote": "Shares were reallocated to the Hong Kong Public Offering from the International Offering, so that the total number of Offer Shares available under the Hong Kong Public Offering is 16,157,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1478180000,
+      "page": 4,
+      "quote": "Net proceeds HK$1,478.18 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5339,
+      "page": 30,
+      "quote": "an aggregate of 290,240,245 H Shares, representing approximately 53.39% of the issued share capital of our Company will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 543597580,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 543,597,580",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0876,
+      "page": 30,
+      "quote": "Based on the final Offer Price of HK$17.00 per H Share, the Company satisfies the free float requirement under Rule 19A.13C of the Listing Rules.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing (543,597,580 Shares, after full exercise of the Offer Size Adjustment Option and before exercise of the Over-allotment Option); the Company confirms it satisfies the Rule 19A.13C free float requirement at the final Offer Price of HK$17.00 per H Share.",
+      "page": 30,
+      "quote": "Based on the final Offer Price of HK$17.00 per H Share, the Company satisfies the free float requirement under Rule 19A.13C of the Listing Rules.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 543597580,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 543,597,580",
+      "confidence": "medium"
+    }
+  }
+}

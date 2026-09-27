@@ -1,0 +1,134 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 18,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "underwriting fees and commission",
+          "s,"
+        ],
+        [
+          "a deduction from equity upon the Listing. We did not recognize any listing expenses",
+          "in 2023."
+        ],
+        [
+          "We recognized listing expenses of",
+          "RMB210 thousand"
+        ]
+      ],
+      "markdown": "| Item Description                                                                    | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------- | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related                        | expenses,               |\n| underwriting fees and commission                                                    | s,                      |\n| a deduction from equity upon the Listing. We did not recognize any listing expenses | in 2023.                |\n| We recognized listing expenses of                                                   | RMB210 thousand         |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 13,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "1,882,862",
+          "100.0",
+          "2,288,328",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "599,529",
+          "31.8",
+          "707,801",
+          "30.9"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1    | Col 5 |\n| ---------------- | --------- | ------ | --------- | ----- |\n| Revenue          | 1,882,862 | 100.0  | 2,288,328 | 100.0 |\n| Gross profit     | 599,529   | 31.8   | 707,801   | 30.9  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,945,124",
+          "2,254,649",
+          "2,602,424"
+        ],
+        [
+          "Total liabilities",
+          "957,501",
+          "1,170,125",
+          "1,525,829"
+        ],
+        [
+          "Total equity",
+          "987,623",
+          "1,084,524",
+          "1,076,595"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 1,945,124 | 2,254,649 | 2,602,424 |\n| Total liabilities | 957,501   | 1,170,125 | 1,525,829 |\n| Total equity      | 987,623   | 1,084,524 | 1,076,595 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 343,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,945,124",
+          "2,254,649",
+          "2,602,424"
+        ],
+        [
+          "Total equity",
+          "987,623",
+          "1,084,524",
+          "1,076,595"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    |\n| ---------------- | --------- | --------- | --------- |\n| Total assets     | 1,945,124 | 2,254,649 | 2,602,424 |\n| Total equity     | 987,623   | 1,084,524 | 1,076,595 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

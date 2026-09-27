@@ -1,0 +1,333 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 131,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Total 23,322,303 100.00% 107,064,589",
+          "246,796,930",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------ | ---------------- | -------------------------- |\n| Total 23,322,303 100.00% 107,064,589 | 246,796,930      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 223,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Aranda Investments Pte. Ltd.",
+          "33",
+          "797,200",
+          "5.87%"
+        ],
+        [
+          "Swap)",
+          "28.89",
+          "697,900",
+          "5.14%"
+        ],
+        [
+          "(Hong Kong) Limited",
+          "21",
+          "507,300",
+          "3.74%"
+        ],
+        [
+          "HHLR Advisors, Ltd.",
+          "14",
+          "338,200",
+          "2.49%"
+        ],
+        [
+          "Ltd.",
+          "7",
+          "169,100",
+          "1.25%"
+        ],
+        [
+          "Ltd.",
+          "21",
+          "507,300",
+          "3.74%"
+        ],
+        [
+          "AXA Investment Managers UK Limited",
+          "15",
+          "362,300",
+          "2.67%"
+        ],
+        [
+          "CPE Energy Investment Limited",
+          "15",
+          "362,300",
+          "2.67%"
+        ],
+        [
+          "Lazurite Hime L.P.",
+          "15",
+          "362,300",
+          "2.67%"
+        ],
+        [
+          "Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Charoen Pokphand Robot Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Company Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Limited",
+          "3",
+          "72,500",
+          "0.53%"
+        ],
+        [
+          "Fullgoal Fund Management Co., Ltd.",
+          "7",
+          "169,000",
+          "1.25%"
+        ],
+        [
+          "Kong Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Ltd",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "ICBC Wealth Management Co., Ltd.",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "International (Singapore) Pte. Ltd.",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Scene Cloud Global Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Tropical Terrain Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "3W Fund Management Limited",
+          "10",
+          "241,500",
+          "1.78%"
+        ],
+        [
+          "Total",
+          "279.89",
+          "6,760,400",
+          "49.80%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Aranda Investments Pte. Ltd.        | 33                    | 797,200                | 5.87%                         |\n| Swap)                               | 28.89                 | 697,900                | 5.14%                         |\n| (Hong Kong) Limited                 | 21                    | 507,300                | 3.74%                         |\n| HHLR Advisors, Ltd.                 | 14                    | 338,200                | 2.49%                         |\n| Ltd.                                | 7                     | 169,100                | 1.25%                         |\n| Ltd.                                | 21                    | 507,300                | 3.74%                         |\n| AXA Investment Managers UK Limited  | 15                    | 362,300                | 2.67%                         |\n| CPE Energy Investment Limited       | 15                    | 362,300                | 2.67%                         |\n| Lazurite Hime L.P.                  | 15                    | 362,300                | 2.67%                         |\n| Limited                             | 10                    | 241,500                | 1.78%                         |\n| Charoen Pokphand Robot Limited      | 10                    | 241,500                | 1.78%                         |\n| Company Limited                     | 10                    | 241,500                | 1.78%                         |\n| Limited                             | 3                     | 72,500                 | 0.53%                         |\n| Fullgoal Fund Management Co., Ltd.  | 7                     | 169,000                | 1.25%                         |\n| Kong Limited                        | 10                    | 241,500                | 1.78%                         |\n| Ltd                                 | 10                    | 241,500                | 1.78%                         |\n| ICBC Wealth Management Co., Ltd.    | 10                    | 241,500                | 1.78%                         |\n| International (Singapore) Pte. Ltd. | 10                    | 241,500                | 1.78%                         |\n| Scene Cloud Global Limited          | 10                    | 241,500                | 1.78%                         |\n| Tropical Terrain Limited            | 10                    | 241,500                | 1.78%                         |\n| 3W Fund Management Limited          | 10                    | 241,500                | 1.78%                         |\n| Total                               | 279.89                | 6,760,400              | 49.80%                        |",
+      "metadata": {
+        "investor_count": 21
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 21,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "fees and commission",
+          "s,"
+        ],
+        [
+          "for our listing expenses, accounting for",
+          "approximately 1.1"
+        ],
+        [
+          "we incurred RMB38.0 million of listing expenses, among",
+          "which,"
+        ]
+      ],
+      "markdown": "| Item Description                                             | Rate / Amount Disclosed |\n| ------------------------------------------------------------ | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related | expenses,               |\n| fees and commission                                          | s,                      |\n| for our listing expenses, accounting for                     | approximately 1.1       |\n| we incurred RMB38.0 million of listing expenses, among       | which,                  |",
+      "metadata": {
+        "items_count": 4
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 259,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "fees and commission",
+          "s,"
+        ],
+        [
+          "for our listing expenses, accounting for",
+          "approximately 1.1"
+        ],
+        [
+          "we incurred RMB38.0 million of listing expenses, among",
+          "which,"
+        ]
+      ],
+      "markdown": "| Item Description                                             | Rate / Amount Disclosed |\n| ------------------------------------------------------------ | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related | expenses,               |\n| fees and commission                                          | s,                      |\n| for our listing expenses, accounting for                     | approximately 1.1       |\n| we incurred RMB38.0 million of listing expenses, among       | which,                  |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "58,302",
+          "100.0",
+          "1,329,838",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "18,249",
+          "31.3",
+          "623,630",
+          "46.9"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1    | Col 5 |\n| ---------------- | ------ | ------ | --------- | ----- |\n| Revenue          | 58,302 | 100.0  | 1,329,838 | 100.0 |\n| Gross profit     | 18,249 | 31.3   | 623,630   | 46.9  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 17,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "655,979",
+          "1,626,010",
+          "8,447,914"
+        ],
+        [
+          "Total liabilities",
+          "392,174",
+          "1,043,978",
+          "4,659,928"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2    | Year-1    |\n| ----------------- | ------- | --------- | --------- |\n| Total assets      | 655,979 | 1,626,010 | 8,447,914 |\n| Total liabilities | 392,174 | 1,043,978 | 4,659,928 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 228,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "58,302",
+          "100.0",
+          "1,329,838",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "18,249",
+          "31.3",
+          "623,630",
+          "46.9"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1    | Col 5 |\n| ---------------- | ------ | ------ | --------- | ----- |\n| Revenue          | 58,302 | 100.0  | 1,329,838 | 100.0 |\n| Gross profit     | 18,249 | 31.3   | 623,630   | 46.9  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

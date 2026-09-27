@@ -1,0 +1,427 @@
+{
+  "code": "3952.HK",
+  "fields": {
+    "col_L": {
+      "value": 103398787,
+      "page": 206,
+      "quote": "H Shares to be converted from Unlisted Shares 89,956,887 87.00% / H Shares to be issued pursuant to the Global Offering 13,441,900 13.00% / Total 103,398,787 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 13441900,
+      "page": 206,
+      "quote": "H Shares to be issued pursuant to the Global Offering 13,441,900 13.00% / Total 103,398,787 100.00%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 89956887,
+      "page": 117,
+      "quote": "the Company will have 103,398,787 H Shares comprising (i) 89,956,887 H Shares to be converted from Unlisted Shares and (ii) 13,441,900 H Shares to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 89956887,
+      "page": 117,
+      "quote": "the Company will have 103,398,787 H Shares comprising (i) 89,956,887 H Shares to be converted from Unlisted Shares and (ii) 13,441,900 H Shares to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 262,
+      "quote": "The Global Offering comprises the Hong Kong Public Offering of initially 672,100 Hong Kong Offer Shares and the International Offering of initially 12,769,800 International Offer Shares",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 13441900,
+      "page": 2,
+      "quote": "Total number of Offer Shares under the Global Offering : 13,441,900 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 12769800,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 12,769,800 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 672100,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 672,100 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Total number of Offer Shares under the Global Offering : 13,441,900 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 103398787,
+      "page": 206,
+      "quote": "Total 103,398,787 100.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 85.5,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$85.50 per H Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 77.0,
+      "page": 2,
+      "quote": "reduce the indicative Offer Price range below that stated in this prospectus (being HK$77.00 per H Share to HK$85.50 per H Share)",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 307,
+      "quote": "The Historical Financial Information are presented in RMB and all values are rounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 478012000,
+      "page": 15,
+      "quote": "Total non-current assets 161,190 235,987 296,810 / Total current assets 316,822 261,029 425,234",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 497016000,
+      "page": 15,
+      "quote": "Total non-current assets 161,190 235,987 296,810 / Total current assets 316,822 261,029 425,234",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 722044000,
+      "page": 15,
+      "quote": "Total non-current assets 161,190 235,987 296,810 / Total current assets 316,822 261,029 425,234",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -501942000,
+      "page": 15,
+      "quote": "Net liabilities (501,942) (670,718) (820,631)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -670718000,
+      "page": 15,
+      "quote": "Net liabilities (501,942) (670,718) (820,631)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -820631000,
+      "page": 15,
+      "quote": "Net liabilities (501,942) (670,718) (820,631)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 979954000,
+      "page": 15,
+      "quote": "Total current liabilities 959,577 1,147,753 1,427,027",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1167734000,
+      "page": 15,
+      "quote": "Total current liabilities 959,577 1,147,753 1,427,027",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 1542675000,
+      "page": 15,
+      "quote": "Total current liabilities 959,577 1,147,753 1,427,027",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 94545000,
+      "page": 301,
+      "quote": "94,545 107,714 260,867",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 107714000,
+      "page": 301,
+      "quote": "94,545 107,714 260,867",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 260867000,
+      "page": 301,
+      "quote": "94,545 107,714 260,867",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -168785000,
+      "page": 301,
+      "quote": "Loss before taxation (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -168776000,
+      "page": 301,
+      "quote": "Loss before taxation (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -170609000,
+      "page": 301,
+      "quote": "Loss before taxation (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -168785000,
+      "page": 301,
+      "quote": "Loss for the year (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -168776000,
+      "page": 301,
+      "quote": "Loss for the year (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -170609000,
+      "page": 301,
+      "quote": "Loss for the year (168,785) (168,776) (170,609)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 1404927000,
+      "page": 250,
+      "quote": "Total indebtedness 944,082 1,107,745 1,404,927",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 13,
+      "quote": "Our consolidated financial information was prepared in accordance with the IFRS Accounting Standards.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 66863000,
+      "page": 301,
+      "quote": "Gross profit 27,857 25,927 66,863",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 117700000,
+      "page": 253,
+      "quote": "Our capital expenditures were RMB62.1 million, RMB48.2 million and RMB117.7 million in 2023, 2024 and 2025, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 299,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 271,
+      "quote": "The Underwriters and the Capital Market Intermediary will receive an underwriting commission equal to 3.0% of the aggregate Offer Price payable for the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 271,
+      "quote": "The Underwriters and the Capital Market Intermediary will receive an underwriting commission equal to 3.0% of the aggregate Offer Price payable for the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 271,
+      "quote": "representing not more than 15% of the number of Offer Shares initially available under the Global Offering, at the Offer Price, to cover over-allocations in the International Offering, if any",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 88800000,
+      "page": 18,
+      "quote": "We expect to incur a total of approximately RMB77.2 million (HK$88.8 million) of listing expenses in connection with the Global Offering",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Robotic precision transmission core components (harmonic reducers, joint modules, robotic arms, automated workstations)",
+      "page": 122,
+      "quote": "We are a provider of core components for robotic precision transmission in China.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "page": 10,
+      "quote": "we are a specialist technology company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercial Company",
+      "page": 18,
+      "quote": "we satisfy the requirement under Rule 18C.03 of the Listing Rules as a Commercial Company (as defined in the Listing Rules) with reference to our expected market capitalization at the time of Listing",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 19,
+      "quote": "We currently intend to use the net proceeds from the Global Offering for the purposes and in the amounts as the following: (1) approximately 55.0% of the net proceeds",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "OAKTREE CAPITAL MANAGEMENT, L.P.; Alphahill Capital Limited; HARVEST GLOBAL INVESTMENTS LIMITED; CDH Global Frontier Ventures Limited; E Fund Management Co., Ltd/E FUND MANAGEMENT (HONG KONG) CO., LIMITED; Eurus Holdings SPC; LBC HK Opportunity Fund Limited; Dream'ee (Hong Kong) Open-ended Fund Company; Factorial Master Fund; Oasis Investments II Master Fund Ltd.",
+      "page": 211,
+      "quote": "Based on the Offer Price of HK$77.00 (the low-end of the indicative Offer Price range) OAKTREE CAPITAL MANAGEMENT, L.P. (“Oaktree”)",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 15,
+      "quote": "As of December 31, 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -63411000,
+      "page": 16,
+      "quote": "Net cash used in operating activities (35,229) (33,693) (63,411)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 33753000,
+      "page": 302,
+      "quote": "Cash and cash equivalents 18 147,413 70,761 33,753",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 49231000,
+      "page": 301,
+      "quote": "Research and development expenses (31,694) (33,267) (49,231)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 253,
+      "quote": "We did not capitalize any research and development expenses incurred during the Track Record Period",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.423,
+      "page": 12,
+      "quote": "In 2023, 2024 and 2025, revenue generated from our top five customers for each year during the Track Record Period accounted for 29.3%, 37.7% and 42.3% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "浙江来福谐波传动股份有限公司",
+      "page": 1,
+      "quote": "浙江來福諧波傳動股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 106,
+      "quote": "PRE-IPO INVESTMENTS Principal Terms of the Pre-IPO Investments The table below summarizes the principal terms of the pre-IPO investments",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 111,
+      "quote": "dedicated investment vehicle for Northern Light Venture Capital, a venture capital firm committed to investing in early-stage, technology-driven innovative companies",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 113,
+      "quote": "Redview is an exempted company incorporated in the Cayman Islands with limited liability on November 8, 2021, ultimately controlled by Redview Capital II L.P., which is a private fund",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 110,
+      "quote": "Both of Zhiji Xingyuan and Lenovo Zhiyuan are controlled by Lenovo Group Limited (聯想集團有限公司) (stock code: 0992.HK) (“Lenovo Group”) through contractual arrangements.",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 110,
+      "quote": "a company wholly owned by China Development Bank Capital Co., Ltd (國開金融有限責任公司) (“CDB Capital”) which is ultimately controlled by Ministry of Finance",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 110,
+      "quote": "Lenovo Group is a key participant in the technology and information services industry, committed to supporting digital transformation for enterprises.",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Zhuji Rushan Huian Venture Capital Partnership (L.P.); Beta Achieve; Suzhou Sushang Joint Venture Capital Partnership (L.P.); Guozhong SME Fund; Haian Huijun Jincai Phase I Industrial Investment Partnership Enterprise (L.P.); China Electronics CICC (Xiamen) Intelligent Industry Equity Investment Fund Partnership (L.P.); Lenovo Fund; Redview Capital Investment XIV Limited; CDBC Fund; Shanghai Hongyu Aviation Industry Equity Investment Partnership (L.P.); Tianjin Haihe Furui Equity Investment Fund Partnership (L.P.); Hangzhou Runxin Dianjing Equity Investment Partnership (L.P.)",
+      "page": 106,
+      "quote": "Series A Investment (Pre-money valuation: RMB90.0 million; Post-money valuation: RMB100.0 million) Equity subscription Zhuji Rushan Huian Venture Capital Partnership (L.P.).",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium",
+      "note": "The disclosed shareholding table (pp.106/117/119) does not yield a verifiable pre-IPO institutional aggregate; recorded as missing rather than using an unsupported figure."
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 198,
+      "quote": "Mr. Li has been serving as the executive general manager at Shenzhen Guozhong Venture Capital Management Co., Ltd. (深圳國中創業投資管理有限公司) since June 2016, focusing on venture capital investments.",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 106,
+      "quote": "Series A Investment (Pre-money valuation: RMB90.0 million; Post-money valuation: RMB100.0 million)",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 8.91,
+      "page": 106,
+      "quote": "(諸暨如山匯安創業投 資合夥企業(有限合夥)) (“Rushan Huian”) July 25, 2017",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 25/07/2017 (Series A, p.106) to prospectus date 22/06/2026 = 3,255 days / 365.25 = 8.91 years."
+    },
+    "col_BB": {
+      "value": "Individual",
+      "page": 102,
+      "quote": "As of the Latest Practicable Date, Mr. Zhang collectively controlled 32.67% of the voting power at the general meetings of our Company",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.2842,
+      "page": 17,
+      "quote": "Upon the Listing, Mr. Zhang will collectively control 28.42% of the voting power at the general meetings of our Company through the aforementioned interests and voting arrangements.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.2842,
+      "page": 17,
+      "quote": "Upon the Listing, Mr. Zhang will collectively control 28.42% of the voting power at the general meetings of our Company through the aforementioned interests and voting arrangements.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "26/11/2013",
+      "page": 103,
+      "quote": "On November 26, 2013, our Company was established as a joint stock company under the laws of the PRC by Shengzhou Xinhua Bearing Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Industrial Park, Ganlin Town, Shengzhou City, Zhejiang, PRC",
+      "page": 73,
+      "quote": "Headquarters and Principal Place of Business in the PRC Industrial Park, Ganlin Town Shengzhou City Zhejiang PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "22/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, June 22, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "25/06/2026",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Thursday, June 25, 2026",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "6082.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.5193,
+      "page": 7,
+      "quote": "Tessy Holding Limited 1,985,600 0.70% 0.08% No New Opportunities SPC 1,985,600 0.70% 0.08% Yes Total 147,926,400 51.93% 6.17%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2347.53,
+      "page": 4,
+      "quote": "Subscription level 2,347.53 times Claw-back triggered Yes",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 471116,
+      "page": 4,
+      "quote": "No. of valid applications 471,116",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 29073659800,
+      "page": 29,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT / BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 200 174,816",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,347.53 times",
+      "page": 4,
+      "quote": "No. of successful applications 135,569 Subscription level 2,347.53 times Claw-back triggered Yes",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "30/12/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Sponsor-OCs (for themselves and on behalf of the Underwriters) and the Company o",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "31/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**31/12/2025 22:50**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 284846600,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 284,846,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 49538600,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Public Offer (after reallocation) 49,538,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 235308000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offer (after reallocation and the full exercise of the Offer Size Adjustment Option) * 235,308,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 42726800,
+      "page": 1,
+      "quote": "spectus has been fully exercised by the Sponsor-OCs (for themselves and on behalf of the International Underwriters), on Wednesday, January 28, 2026, in respect of an aggregate of 42,726,800 H Shares ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD (28/01/2026 18:52)"
+    },
+    "col_CW": {
+      "value": "No. of Offer Shares reallocated from the International Offer (claw-back) 37,153,800; final no. of Offer Shares under the Public Offer (after reallocation) 49,538,600.",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offer (claw-back) 37,153,800",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 5374500000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$5,583.0 million Less: Estimated listing expenses payable based on Final Offer Price HK$(208.5) million Net proceeds HK$5,374.5 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4833,
+      "page": 47,
+      "quote": "the total number of the H Shares held by the public represents approximately 48.33% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 2396131700,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 2,396,131,700",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0571,
+      "page": 47,
+      "quote": "Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital of the Company upon Listing (2,396,131,700 Shares, taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option); H Shares held by the Cornerstone Investors (six-month lock-up) are excluded from free float.",
+      "page": 47,
+      "quote": "Each of the Cornerstone Investors has agreed to a lock-up period of six months following the Listing Date.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 2396131700,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 2,396,131,700",
+      "confidence": "medium"
+    }
+  }
+}

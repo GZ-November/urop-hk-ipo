@@ -1,0 +1,75 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 299,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Total . . . . . . . . . . . . . . . .",
+          ".",
+          "575,060",
+          "36.84"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . .",
+          ".",
+          "462,860",
+          "29.65"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                  | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Total . . . . . . . . . . . . . . . . | .                     | 575,060                | 36.84                         |\n| Total . . . . . . . . . . . . . . . . | .                     | 462,860                | 29.65                         |",
+      "metadata": {
+        "investor_count": 2
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 18,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(3) Listing expenses relate to our Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                          | Rate / Amount Disclosed |\n| ----------------------------------------- | ----------------------- |\n| (3) Listing expenses relate to our Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                        | Rate / Amount Disclosed |\n| --------------------------------------- | ----------------------- |\n| Listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

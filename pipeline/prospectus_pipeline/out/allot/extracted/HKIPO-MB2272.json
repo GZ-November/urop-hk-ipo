@@ -1,0 +1,115 @@
+{
+  "code": "2272.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 1,
+      "quote": "若公告与招股书均无基石投资者（无基石表、全文无 Cornerstone Investor），必须填 0 —— 这是「确定的零」，不得留 NaN。",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2115.21,
+      "page": 4,
+      "quote": "Subscription level 2,115.21 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 165737,
+      "page": 4,
+      "quote": "No. of valid applications 165,737",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2138980680,
+      "page": 10,
+      "quote": "a total of 165,737 valid applications made by the public will be conditionally allocated on the basis set out below: Pool A Number of H Shares applied for Number of valid applications",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,115.21 times",
+      "page": 4,
+      "quote": "Subscription level 2,115.21 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$39.55; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**25/06/2026 21:12**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 10112280,
+      "page": 2,
+      "quote": "Total number of Offer Shares under the Global Offering : 10,112,280 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1011240,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,011,240",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 9101040,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 9,101,040",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-06-26 起 45 天内共 4 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-08-10 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (Claw-back triggered: N/A); no Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (0); final Hong Kong Public Offering remains 1,011,240 H Shares, being 10% of the Global Offering",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 1,011,240 No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 339900000,
+      "page": 3,
+      "quote": "Net proceeds HK$339.9 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4133,
+      "page": 13,
+      "quote": "an aggregate of 41,791,152 H Shares will count towards the public float of the Company, representing 41.33% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 101122609,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 101,122,609",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1,
+      "page": 13,
+      "quote": "10,112,280 H Shares representing 10.00% of the total number of issued Shares with an expected value of approximately HK$399.9 million, will count towards the free float of the Company",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total number of issued Shares upon Listing (101,122,609); numerator = Global Offering H Shares (10,112,280) minus cornerstone allocation (none). H Shares held by all existing Shareholders converted from Domestic Shares are subject to a 12-month PRC lock-up and are excluded from the free float.",
+      "page": 13,
+      "quote": "The H Shares held by all existing Shareholders to be converted from Domestic Shares are subject to a lock-up period of 12 months following the Listing Date under the applicable PRC laws",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 101122609,
+      "page": 13,
+      "quote": "10,112,280 H Shares representing 10.00% of the total number of issued Shares with an expected value of approximately HK$399.9 million, will count towards the free float of the Company",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "code": "6715.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4988,
+      "page": 5,
+      "quote": "Subtotal 8,146,100 49.88% 7.48% 7.48%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2134.81,
+      "page": 4,
+      "quote": "Subscription level 2,134.81 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 179723,
+      "page": 4,
+      "quote": "Number of valid applications 179,723",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3486789300,
+      "page": 4,
+      "quote": "Subscription level 2,134.81 times Claw-back triggered No No. of Offer Shares initially available under the Hong Kong Public Offering 1,633,300",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,134.81 times",
+      "page": 4,
+      "quote": "Subscription level 2,134.81 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$75.50; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "29/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/06/2026 22:58**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 16332900,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of Over-allotment Option) 16,332,900",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1633300,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the Hong Kong Public Offering 1,633,300",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 14699600,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the International Offer (before exercise of the Over-allotment Option) 14,699,600",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE OF THE OVER-ALLOTMENT OPTION（26/07/2026 18:15）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered; final number of Offer Shares under the Hong Kong Public Offering remained 1,633,300, equal to the number initially available",
+      "page": 4,
+      "quote": "Claw-back triggered No No. of Offer Shares initially available under the Hong Kong Public Offering 1,633,300 Final number of Offer Shares under the Hong Kong Public Offering 1,633,300",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1146300000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,146.3 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5874,
+      "page": 25,
+      "quote": "58.74% of the issued share capital of the Company will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 108885600,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of Over-allotment Option) 108,885,600",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0752,
+      "page": null,
+      "quote": "公式：(col_CS 16,332,900 − col_CK 0.4988×col_CS) ÷ col_CZ 108,885,600 = 0.0752；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 16,332,900 − col_CK 0.4988×col_CS) ÷ col_CZ 108,885,600 = 0.0752；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 108885600,
+      "page": 3,
+      "quote": "公式：(col_CS 16,332,900 − col_CK 0.4988×col_CS) ÷ col_CZ 108,885,600 = 0.0752；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

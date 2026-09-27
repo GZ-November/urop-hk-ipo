@@ -1,0 +1,86 @@
+remaining 22
+LAUNCH 2677.HK
+DONE 2677.HK rc=0 json=True validate_ok=True quota=True
+TOKEN/QUOTA hit on 2677.HK; sleep 18000s (5h)
+remaining 21
+LAUNCH 9980.HK
+DONE 9980.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 3986.HK
+DONE 3986.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 9611.HK
+DONE 9611.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2768.HK
+DONE 2768.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2714.HK
+DONE 2714.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 6809.HK
+DONE 6809.HK rc=1 json=False validate_ok=False quota=False
+RETRY later 6809.HK: no json
+LAUNCH 0600.HK
+remaining 16
+LAUNCH 6809.HK
+remaining 16
+LAUNCH 9981.HK
+DONE 9981.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2706.HK
+DONE 2706.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2715.HK
+DONE 2715.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 0470.HK
+DONE 0470.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 1989.HK
+DONE 1989.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 3268.HK
+remaining 11
+LAUNCH 2701.HK
+remaining 11
+LAUNCH 3355.HK
+remaining 11
+LAUNCH 2632.HK
+STALL 2632.HK: 日志 247s 无活动，判卡死，杀掉
+DONE 2632.HK rc=-9 json=False validate_ok=False quota=False
+RETRY later 2632.HK: no json
+LAUNCH 2692.HK
+DONE 2692.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 1021.HK
+DONE 1021.HK rc=0 json=False validate_ok=False quota=False
+RETRY later 1021.HK: no json
+LAUNCH 2726.HK
+DONE 2726.HK rc=0 json=False validate_ok=False quota=False
+RETRY later 2726.HK: no json
+LAUNCH 0664.HK
+DONE 0664.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 6636.HK
+DONE 6636.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 6809.HK
+DONE 6809.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 0600.HK
+DONE 0600.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 3268.HK
+STALL 3268.HK: 日志 242s 无活动，判卡死，杀掉
+DONE 3268.HK rc=-9 json=False validate_ok=False quota=False
+RETRY later 3268.HK: no json
+LAUNCH 2701.HK
+STALL 2701.HK: 日志 817s 无活动，判卡死，杀掉
+DONE 2701.HK rc=-9 json=False validate_ok=False quota=False
+RETRY later 2701.HK: no json
+LAUNCH 3355.HK
+STALL 3355.HK: 日志 247s 无活动，判卡死，杀掉
+DONE 3355.HK rc=-9 json=False validate_ok=False quota=False
+RETRY later 3355.HK: no json
+LAUNCH 2632.HK
+DONE 2632.HK rc=0 json=False validate_ok=False quota=False
+RETRY later 2632.HK: no json
+LAUNCH 1021.HK
+DONE 1021.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2726.HK
+DONE 2726.HK rc=0 json=True validate_ok=True quota=True
+LAUNCH 3268.HK
+DONE 3268.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 2701.HK
+DONE 2701.HK rc=0 json=True validate_ok=True quota=False
+LAUNCH 3355.HK
+DONE 3355.HK rc=1 json=False validate_ok=False quota=True
+TOKEN/QUOTA hit on 3355.HK; sleep 18000s (5h)
+remaining 2
+LAUNCH 3355.HK

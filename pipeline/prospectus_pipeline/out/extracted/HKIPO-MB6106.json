@@ -1,0 +1,450 @@
+{
+  "code": "6106.HK",
+  "fields": {
+    "col_L": {
+      "value": 110497300,
+      "page": 216,
+      "quote": "H Shares to be issued under the Global Offering 10,497,300 9.50 Total 110,497,300 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 10497300,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 10,497,300 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 100000000,
+      "page": 216,
+      "quote": "As of the Latest Practicable Date, the issued share capital of the Company was RMB100,000,000 comprising 100,000,000 Shares",
+      "confidence": "high",
+      "note": "= col_L 110,497,300 − col_M 10,497,300"
+    },
+    "col_O": {
+      "value": 100000000,
+      "page": 216,
+      "quote": "As of the Latest Practicable Date, the issued share capital of the Company was RMB100,000,000 comprising 100,000,000 Shares",
+      "confidence": "high",
+      "note": "= col_L 110,497,300 − col_M 10,497,300"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 216,
+      "quote": "Domestic Shares in issue . . . — — H Shares to be converted from Domestic Shares 100,000,000 90.50 H Shares to be issued under the Global Offering 10,497,300 9.50 Total 110,497,300",
+      "confidence": "medium",
+      "note": "全部为新股发售，股本表无 Sale Shares 行，全文无 Selling Shareholder 披露"
+    },
+    "col_Q": {
+      "value": 10497300,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 10,497,300 H Shares",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 9972400,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 9,972,400 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 524900,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 524,900 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 217,
+      "quote": "The H Shares, to be issued following the completion of the Global Offering and converted from the Domestic Shares, and the Domestic Shares are ordinary Shares in the share capital of the Company.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 110497300,
+      "page": 216,
+      "quote": "H Shares to be issued under the Global Offering 10,497,300 9.50 Total 110,497,300 100.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 101.6,
+      "page": 2,
+      "quote": "Offer Price : HK$101.60 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 101.6,
+      "page": 2,
+      "quote": "Offer Price : HK$101.60 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 17,
+      "quote": "(RMB in thousands)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 282084000,
+      "page": 17,
+      "quote": "Total assets . . . 282,084 343,059 509,501",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 343059000,
+      "page": 17,
+      "quote": "Total assets . . . 282,084 343,059 509,501",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 509501000,
+      "page": 17,
+      "quote": "Total assets . . . 282,084 343,059 509,501",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 108146000,
+      "page": 17,
+      "quote": "Net assets . . . 108,146 97,756 148,988",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 97756000,
+      "page": 17,
+      "quote": "Net assets . . . 108,146 97,756 148,988",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 148988000,
+      "page": 17,
+      "quote": "Net assets . . . 108,146 97,756 148,988",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 173938000,
+      "page": 238,
+      "quote": "Total liabilities . . . 173,938 245,303 360,513",
+      "confidence": "high",
+      "note": "Total current liabilities 161,385 + Total non-current liabilities 12,553 = 173,938 (FY2023)"
+    },
+    "col_AD": {
+      "value": 245303000,
+      "page": 238,
+      "quote": "Total liabilities . . . 173,938 245,303 360,513",
+      "confidence": "high",
+      "note": "220,866 + 24,437 = 245,303 (FY2024)"
+    },
+    "col_AE": {
+      "value": 360513000,
+      "page": 238,
+      "quote": "Total liabilities . . . 173,938 245,303 360,513",
+      "confidence": "high",
+      "note": "329,042 + 31,471 = 360,513 (FY2025)"
+    },
+    "col_AF": {
+      "value": 249023000,
+      "page": 15,
+      "quote": "Revenue . . . 249,023 100.0 339,323 100.0 441,877 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 339323000,
+      "page": 15,
+      "quote": "Revenue . . . 249,023 100.0 339,323 100.0 441,877 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 441877000,
+      "page": 15,
+      "quote": "Revenue . . . 249,023 100.0 339,323 100.0 441,877 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -46984000,
+      "page": 15,
+      "quote": "Loss before tax . . . (46,984) (18.9) (41,157) (12.1) (46,797) (10.6)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -41157000,
+      "page": 15,
+      "quote": "Loss before tax . . . (46,984) (18.9) (41,157) (12.1) (46,797) (10.6)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -46797000,
+      "page": 15,
+      "quote": "Loss before tax . . . (46,984) (18.9) (41,157) (12.1) (46,797) (10.6)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -47704000,
+      "page": 15,
+      "quote": "Loss for the year . . . (47,704) (19.2) (42,308) (12.5) (47,066) (10.7)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -42308000,
+      "page": 15,
+      "quote": "Loss for the year . . . (47,704) (19.2) (42,308) (12.5) (47,066) (10.7)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -47066000,
+      "page": 15,
+      "quote": "Loss for the year . . . (47,704) (19.2) (42,308) (12.5) (47,066) (10.7)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 141318000,
+      "page": 251,
+      "quote": "Total . . . 49,175 81,807 141,318 156,954",
+      "confidence": "high",
+      "note": "INDEBTEDNESS Total（含租赁负债）2025-12-31 = 109,847 + 31,471 = 141,318 千元"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 311,
+      "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 209295000,
+      "page": 15,
+      "quote": "Gross profit . . . 122,426 49.2 155,685 45.9 209,295 47.4",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 4800000,
+      "page": 252,
+      "quote": "Our capital expenditures were RMB4.2 million, RMB2.5 million and RMB4.8 million, respectively, in 2023, 2024 and 2025.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified — true and fair view",
+      "page": 304,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.025,
+      "page": 278,
+      "quote": "The Capital Market Intermediaries and the Underwriters will receive an underwriting commission (the “Fixed Fees”) equals to 2.5% of the aggregate sale proceeds from the Global Offering",
+      "confidence": "high",
+      "note": "全球发售统一费率 2.5%，HK 与 International 同率"
+    },
+    "col_AP": {
+      "value": 0.025,
+      "page": 278,
+      "quote": "The Capital Market Intermediaries and the Underwriters will receive an underwriting commission (the “Fixed Fees”) equals to 2.5% of the aggregate sale proceeds from the Global Offering",
+      "confidence": "high",
+      "note": "全球发售统一费率 2.5%，HK 与 International 同率"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 28,
+      "quote": "may be required to allot and issue up to an aggregate of 1,574,550 additional H Shares, representing not more than 15.00% of the Offer Shares initially available",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 71200000,
+      "page": 21,
+      "quote": "The estimated total listing expenses for the Global Offering are approximately RMB61.9 million (equivalent to approximately HK$71.2 million)",
+      "confidence": "medium",
+      "note": "HK$71.2 million"
+    },
+    "col_AR": {
+      "value": "Intelligent robotics — robotic controllers, robots, software and accessories",
+      "page": 123,
+      "quote": "We are an intelligent robotics company defined by our robotic control systems",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board of the Stock Exchange under Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "page": 9,
+      "quote": "we are a specialist technology company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercial Company (Chapter 18C): products commercialized and revenue-generating",
+      "page": 19,
+      "quote": "as a Commercial Company (as defined in the Listing Rules) with reference to our expected market capitalization at the time of Listing",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 258,
+      "quote": "We currently intend to apply the net proceeds from the Global Offering for the following purposes:",
+      "confidence": "medium",
+      "note": "用途：(i) 50.0% 技术及基础设施研发；(ii) 20.0% 多功能中心；(iii) 15.0% 产业链收购与投资；(iv) 9.7% 全球销售体系；(v) 5.3% 营运资金及一般公司用途。无偿还债务用途，故填 0。"
+    },
+    "col_CJ": {
+      "value": "HHLRA (HHLR Advisors, Ltd.); Yuanbao Family Office; 3W Fund; GF Fund (GF Fund Management Co., Ltd. and GF International Investment Management Limited); Ruihua Investment; Zhonghe Capital (Splendid Zhonghe Investment); Yishao Capital; Nova Kerry Inc.",
+      "page": 265,
+      "quote": "Total . . . US$59.00 million (or approximately HK$462.24 million) 4,549,400 43.34%",
+      "confidence": "high",
+      "note": "共 8 家基石投资者；合计认购 4,549,400 股 / US$59.00 million"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 306,
+      "quote": "Consolidated Statements of Financial Position Notes 31 December 2023 31 December 2024 31 December 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -27798000,
+      "page": 18,
+      "quote": "Net cash from/(used in) operating activities . . . 10,316 (24,962) (27,798)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 153940000,
+      "page": 18,
+      "quote": "Cash and cash equivalents at the end of the year. . . 99,681 92,859 153,940",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 79168000,
+      "page": 15,
+      "quote": "Research and development expenses . . . (63,749) (25.6) (71,311) (21.0) (79,168) (17.9)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 340,
+      "quote": "Cost at 1 January 2025, net of accumulated amortisation 845 Additions 1,012",
+      "confidence": "medium",
+      "note": "无形资产附注仅列 Software 一行（加计 1,012 千元软件支出），无 Development costs 行，按手册填 0"
+    },
+    "col_AY": {
+      "value": 0.154,
+      "page": 166,
+      "quote": "accounting for 20.8%, 18.6% and 15.4% of our total revenue, respectively",
+      "confidence": "high",
+      "note": "2025 年前五大客户合计收入占比 15.4%"
+    },
+    "col_DP": {
+      "value": "上海仙工智能科技股份有限公司",
+      "page": 1,
+      "quote": "Shanghai Seer Intelligent Technology Co., Ltd. 上海仙工智能科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 19,
+      "quote": "We have completed four rounds of financings as of the Latest Practicable Date since our establishment and raised a total of approximately RMB282.7 million from our Pre-IPO Investments",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 87,
+      "quote": "SAIF SIIs  are limited partnerships established in the PRC, primarily engaged in equity investment and venture capital",
+      "confidence": "high",
+      "note": "Zhuhai Yinshan (GLP) 及 SAIF SIIs 均为创投/股权投资基金"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 87,
+      "quote": "which is mainly engaged in private equity investment management",
+      "confidence": "high",
+      "note": "Tianjin SAIF 主要从事私募股权投资管理，管理 Nanjing SAIF / SAIF Yi’an / SAIF Yulin / Jiaxing Tengyuan"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 86,
+      "quote": "Ecovacs Investment Hainan is a limited liability company established in the PRC, primarily engaged in investments, and is wholly owned by Ecovacs Robotics Co., Ltd.",
+      "confidence": "high",
+      "note": "Ecovacs（603486.SH）为产业公司（服务机器人龙头），属企业创投"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 87,
+      "quote": "Nanjing Qilin Entrepreneurship is ultimately controlled by Nanjing Municipal People’s Government State-owned Assets Supervision and Administration Commission",
+      "confidence": "high",
+      "note": "SAIF Yulin 的 LP 南京麒麟创投由南京市国资委最终控制"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 86,
+      "quote": "The assets under management (“AUM”) of GLP was over US$89 billion and US$120 billion as of June 30, 2020 and December 31, 2024, respectively.",
+      "confidence": "medium",
+      "note": "GLP 为全球领先主题投资者，AUM 超 US$120 billion"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Zhuhai Yinshan Modern Logistics Industry Equity Investment Fund (Limited Partnership); Ningbo Meishan Bonded Port Area Huilidaoqin Investment Management Center (Limited Partnership); Ecovacs (Hainan) Investment Co., Ltd.; Tianjin Dehui Investment Management Partnership (Limited Partnership); Hangzhou Yuanqiao Zhixing Venture Capital Partnership Enterprise (Limited Partnership); Nanjing SAIF Equity Investment Fund (L.P.); Hangzhou Fuyang SAIF Yi’an Equity Investment Partnership (Limited Partnership); Hangzhou Xiaoshan Haolan Equity Investment Fund Partnership Enterprise (Limited Partnership); Nanjing SAIF Yulin Equity Investment Partnership Enterprise (Limited Partnership); Jiaxing Tengyuan Investment Partnership (Limited Partnership); Wuxi Liangxi Science and Technology City Hongtai Xinzhi Investment Partnership Enterprise (Limited Partnership)",
+      "page": 94,
+      "quote": "The following table is a summary of the capitalization of the Company: Shareholder As at the Latest Practicable Date",
+      "confidence": "medium",
+      "note": "共 11 家 Pre-IPO 机构投资者（已退出的 Huiyin Investment、Suzhou Hanhai 未计入）"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.4264,
+      "page": 94,
+      "quote": "Total 100,000,000 100% — — 110,497,300 100% 110,497,300 100%",
+      "confidence": "medium",
+      "note": "Pre-IPO 机构投资者合计 47,114,302 股 ÷ 上市时总股本 110,497,300 股 = 42.63%"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 85,
+      "quote": "The Pre-IPO Investors were granted certain special rights, including but not limited to redemption rights, pre-emptive rights, director nomination rights",
+      "confidence": "medium",
+      "note": "Pre-IPO 投资者获授董事提名权"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 79,
+      "quote": "Pursuant to the capital contribution agreement (“Series A Financing Agreement”) dated September 16, 2020",
+      "confidence": "high",
+      "note": "最早一轮为 Series A Financing（2020年9月16日协议）"
+    },
+    "col_holding_duration": {
+      "value": 5.74,
+      "page": 79,
+      "quote": "Pursuant to the capital contribution agreement (\"Series A Financing Agreement\") dated September 16, 2020",
+      "confidence": "medium",
+      "note": "Earliest Pre-IPO agreement 16/09/2020 to prospectus date 15/06/2026 = 2,098 days / 365.25 = 5.74 years."
+    },
+    "col_BB": {
+      "value": "Individual (Mr. Zhao)",
+      "page": 20,
+      "quote": "Mr. Zhao, chairman of the Board, executive Director, and chief executive officer of the Company, was entitled to exercise approximately 52.89% of the voting rights",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4786,
+      "page": 94,
+      "quote": "Sub-total 52,885,698 52.89% — — 52,885,698 47.86% 52,885,698 47.86%",
+      "confidence": "medium",
+      "note": "控股股东集团 52,885,698 股 = 上市时总股本 110,497,300 股的 47.86%"
+    },
+    "col_BD": {
+      "value": 0.4786,
+      "page": 20,
+      "quote": "the Controlling Shareholders Group will continue to control approximately 47.86% of the voting rights in the Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2020-04-22",
+      "page": 79,
+      "quote": "On April 22, 2020, the predecessor of the Company, Shanghai Seer Ltd. was established under the laws of the PRC with a registered capital of RMB1,000,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "40/F, Dah Sing Financial Centre, 248 Queen’s Road East, Wanchai, Hong Kong",
+      "page": 76,
+      "quote": "Principal Place of Business in Hong Kong 40/F, Dah Sing Financial Centre, 248 Queen’s Road East, Wanchai, Hong Kong",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2026-06-15",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, June 15, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2026-06-18",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close. . . . 12:00 noon on Thursday, June 18, 2026",
+      "confidence": "high"
+    }
+  }
+}

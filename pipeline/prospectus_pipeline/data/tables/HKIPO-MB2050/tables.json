@@ -1,0 +1,210 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 303,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue*",
+          "3,732,389,535",
+          "100.0%"
+        ],
+        [
+          "A Shares in issue*",
+          "3,732,389,535",
+          "91.2%"
+        ],
+        [
+          "Offering",
+          "360,330,000",
+          "8.8%"
+        ],
+        [
+          "Total",
+          "4,092,719,535",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares in issue*    | 3,732,389,535    | 100.0%                     |\n| A Shares in issue*    | 3,732,389,535    | 91.2%                      |\n| Offering              | 360,330,000      | 8.8%                       |\n| Total                 | 4,092,719,535    | 100.0%                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 304,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue*",
+          "3,732,389,535",
+          "90.0%"
+        ],
+        [
+          "Offering",
+          "414,379,500",
+          "10.0%"
+        ],
+        [
+          "Total",
+          "4,146,769,035",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares in issue*    | 3,732,389,535    | 90.0%                      |\n| Offering              | 414,379,500      | 10.0%                      |\n| Total                 | 4,146,769,035    | 100.0%                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 30,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "underwriting commission of approximately",
+          "HK$104.1 million"
+        ]
+      ],
+      "markdown": "| Item Description                         | Rate / Amount Disclosed |\n| ---------------------------------------- | ----------------------- |\n| Listing expenses represent professional  | fees,                   |\n| underwriting commission of approximately | HK$104.1 million        |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "21,347,550",
+          "100.0",
+          "24,557,802",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "5,461,612",
+          "25.6",
+          "6,735,488",
+          "27.4"
+        ],
+        [
+          "Profit for the year",
+          "2,608,052",
+          "12.2",
+          "2,933,715",
+          "11.9"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 21,347,550 | 100.0  | 24,557,802 | 100.0 |\n| Gross profit        | 5,461,612  | 25.6   | 6,735,488  | 27.4  |\n| Profit for the year | 2,608,052  | 12.2   | 2,933,715  | 11.9  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "27,961,214",
+          "31,890,585",
+          "36,354,749"
+        ],
+        [
+          "Total liabilities",
+          "14,841,914",
+          "13,826,877",
+          "16,835,105"
+        ],
+        [
+          "Total equity",
+          "13,119,300",
+          "18,063,708",
+          "19,519,644"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 27,961,214 | 31,890,585 | 36,354,749 |\n| Total liabilities | 14,841,914 | 13,826,877 | 16,835,105 |\n| Total equity      | 13,119,300 | 18,063,708 | 19,519,644 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 319,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "21,347,550",
+          "100.0",
+          "24,557,802",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "5,461,612",
+          "25.6",
+          "6,735,488",
+          "27.4"
+        ],
+        [
+          "Profit for the year",
+          "2,608,052",
+          "12.2",
+          "2,933,715",
+          "11.9"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 21,347,550 | 100.0  | 24,557,802 | 100.0 |\n| Gross profit        | 5,461,612  | 25.6   | 6,735,488  | 27.4  |\n| Profit for the year | 2,608,052  | 12.2   | 2,933,715  | 11.9  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

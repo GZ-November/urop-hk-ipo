@@ -1,0 +1,427 @@
+{
+  "code": "6067.HK",
+  "fields": {
+    "col_L": {
+      "value": 1495234139,
+      "page": 220,
+      "quote": "A Shares in issue 1,345,710,639 90.00 H Shares to be issued under the Global Offering 149,523,500 10.00 Total 1,495,234,139 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 149523500,
+      "page": 220,
+      "quote": "H Shares to be issued under the Global Offering 149,523,500 10.00",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1345710639,
+      "page": 220,
+      "quote": "our share capital was RMB1,345,710,639, comprising 1,345,710,639 A Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1345710639,
+      "page": 220,
+      "quote": "our share capital was RMB1,345,710,639, comprising 1,345,710,639 A Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 220,
+      "quote": "H Shares to be issued under the Global Offering 149,523,500 10.00",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 149523500,
+      "page": 220,
+      "quote": "H Shares to be issued under the Global Offering 149,523,500",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 134571000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 134,571,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 14952500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 14,952,500 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 149,523,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 149523500,
+      "page": 220,
+      "quote": "H Shares to be issued under the Global Offering 149,523,500 10.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 8.98,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$8.98 per H Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 300,
+      "quote": "The Historical Financial Information is presented in Renminbi (RMB) and all values are rounded to the nearest thousand",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 23145535000,
+      "page": 21,
+      "quote": "Total assets 17,945,462 23,145,535 24,793,110",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 24793110000,
+      "page": 21,
+      "quote": "Total assets 17,945,462 23,145,535 24,793,110",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 25938288000,
+      "page": 26,
+      "quote": "Our total assets increased from RMB24,793.1 million as at 31 December 2025 to RMB25,938.3 million as at 31 March 2026",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 9971122000,
+      "page": 303,
+      "quote": "Net assets 9,958,777 9,971,122 10,140,752",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 10140752000,
+      "page": 303,
+      "quote": "Net assets 9,958,777 9,971,122 10,140,752",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 10025981000,
+      "page": 405,
+      "quote": "Total equity 10,025,981 10,140,752",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 13174413000,
+      "page": 21,
+      "quote": "Total liabilities 7,986,685 13,174,413 14,652,358",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 14652358000,
+      "page": 21,
+      "quote": "Total liabilities 7,986,685 13,174,413 14,652,358",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 15912307000,
+      "page": 26,
+      "quote": "Our total liabilities increased from RMB14,652.4 million as at 31 December 2025 to RMB15,912.3 million as at 31 March 2026",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 3506153000,
+      "page": 301,
+      "quote": "Revenue 5 2,981,863 3,506,153 4,076,845",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 4076845000,
+      "page": 301,
+      "quote": "Revenue 5 2,981,863 3,506,153 4,076,845",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 4285348000,
+      "page": 403,
+      "quote": "Revenue 5 1,071,337 881,358",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 407019000,
+      "page": 301,
+      "quote": "Profit before income tax 717,048 407,019 120,463",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 120463000,
+      "page": 301,
+      "quote": "Profit before income tax 717,048 407,019 120,463",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 71404000,
+      "page": 403,
+      "quote": "Profit before income tax 17,851 53,062",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 370708000,
+      "page": 301,
+      "quote": "Profit for the year 593,695 370,708 143,110",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 143110000,
+      "page": 301,
+      "quote": "Profit for the year 593,695 370,708 143,110",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 82568000,
+      "page": 403,
+      "quote": "Profit for the period 20,642 50,511",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 13810684000,
+      "page": 404,
+      "quote": "Borrowings 22 5,863,056 5,748,288 Lease liabilities 27,250 24,102",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 300,
+      "quote": "prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 269554000,
+      "page": 403,
+      "quote": "Gross profit 269,554 207,771",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 348200000,
+      "page": 408,
+      "quote": "Payment and prepayment for purchase of property, plant and equipment (345,718) (1,416,394) Proceeds from disposal of property, plant and equipment — net 161 — Purchase of intangible assets (2,482)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unqualified - true and fair view",
+      "page": 298,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Group’s consolidated financial position as at 31 December 2023",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.01,
+      "page": 275,
+      "quote": "Our Company will pay an underwriting commission of 1.0% of the aggregate Offer Price of all the Offer Shares (the Fixed Fees)",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.01,
+      "page": 275,
+      "quote": "Our Company will pay an underwriting commission of 1.0% of the aggregate Offer Price of all the Offer Shares (the Fixed Fees)",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 223,
+      "quote": "Since there is no over-allotment option in the International Offering",
+      "confidence": "low",
+      "note": "The prospectus states there is no Over-allotment Option — a confirmed zero rather than missing."
+    },
+    "col_CI": {
+      "value": 79900000,
+      "page": 265,
+      "quote": "Our listing expenses are estimated to be approximately HK$79.9 million (including underwriting commission)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Lithium-ion battery separator manufacturer (research, development, production and sales)",
+      "page": 123,
+      "quote": "We are a competitive lithium-ion battery separator manufacturer. We were founded in 2003 and accumulated more than 20 years of industry experience",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "page": 120,
+      "quote": "Rule 19A.13A(2) of the Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of listing",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized - mass production",
+      "page": 129,
+      "quote": "we are the first domestic enterprise to master the dry process uniaxial stretching technology and to achieve mass production of dry lithium-ion battery separators",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0.15,
+      "page": 23,
+      "quote": "approximately 15.0%, or HK$189.4 million, will be used to repay the fixed asset loan for our Sweden manufacturing base",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Fullgoal; GF Fund; Taikang Life; Harvest Synergy SP; Springs Capital (Hong Kong); Gaoteng Enterprise Management and CICC Financial Trading Limited (in connection with OTC Swaps); Sunwoda Treasury; JINKOSOLAR INVESTMENT; Mondeomax; Bona Star; SINSANWA; SHEEN NATION; Chen Feng",
+      "page": 224,
+      "quote": "The table below sets forth details of the Cornerstone Placing. Based on the Offer Price of HK$8.98 per Offer Share (being the maximum Offer Price) Cornerstone Investors",
+      "confidence": "medium"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 403,
+      "quote": "Three months ended 31 March 2026",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 68026000,
+      "page": 407,
+      "quote": "Net cash flows generated from operating activities 68,026 199,803",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 2259139000,
+      "page": 408,
+      "quote": "Cash and cash equivalents at end of period 2,259,139 2,245,103",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 69261000,
+      "page": 403,
+      "quote": "Research and development expenses 8 (69,261) (56,098)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 346,
+      "quote": "INTANGIBLE ASSETS The Group Software and other intangible assets RMB'000",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.5001,
+      "page": 412,
+      "quote": "Customer A 199,378 105,645 Customer B 226,287 105,130 Customer C N/A* 156,877 Customer D 110,152 N/A* Customer E N/A* 93,124 535,817",
+      "confidence": "medium"
+    },
+    "col_DP": {
+      "value": "深圳市星源材质科技股份有限公司",
+      "page": 1,
+      "quote": "深圳市星源材質科技股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 118,
+      "quote": "Shenzhen Oriental Fortune Venture Capital (Limited Partnership) (深圳市東方富海創業投資企業（有限合夥）) 6,249,975 8.33%",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 118,
+      "quote": "Shenzhen Oriental Fortune Venture Capital (Limited Partnership) (深圳市東方富海創業投資企業（有限合夥）) 6,249,975 8.33%",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 118,
+      "quote": "Shenzhen Oriental Fortune Venture Capital (Limited Partnership) (深圳市東方富海創業投資企業（有限合夥）) 6,249,975 8.33%",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 118,
+      "quote": "Shenzhen Xinyu Industrial Co., Ltd. (深圳市信宇實業有限公司) 1,821,450 2.43%",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Shenzhen Oriental Fortune Venture Capital (Limited Partnership); Shenzhen Chuangdongfang Growth Investment Enterprise (Limited Partnership); Shenzhen Xiaoyang Science & Technology Investment Co., Ltd.; Sichuan Zhongcheng Management Consulting Co., Ltd.; Shenzhen Xinyu Industrial Co., Ltd.",
+      "page": 118,
+      "quote": "Shenzhen Xiaoyang Science & Technology Co., Ltd. (深圳市曉揚科技投資有限公司) 4,464,300 5.95% Sichuan Zhongcheng Management Consulting Co., Ltd. (四川中誠管理諮詢有限公司) 3,857,175 5.14%",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.2661,
+      "page": 118,
+      "quote": "6,249,975 8.33% Chen Liang (陳良) 5,361,675 7.15% Shenzhen Xiaoyang Science & Technology Investment Co., Ltd. (深圳市曉揚科技投資有限公司) 4,464,300 5.95%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_earliest_round": {
+      "value": "2008 conversion into joint stock company",
+      "page": 118,
+      "quote": "was converted into a joint stock company and changed its name to Shenzhen Senior Technology Material Co., Ltd. (深圳市星源材質科技股份有限公司) in September 2008",
+      "confidence": "low"
+    },
+    "col_holding_duration": {
+      "value": 17.77,
+      "page": 311,
+      "quote": "The Company was a limited liability company incorporated in the PRC on 17 September 2003 and changed to a joint stock limited company on 3 September 2008",
+      "confidence": "low",
+      "note": "Earliest Pre-IPO round is the 2008 conversion to a joint stock company (p.118); conversion completed 03/09/2008 to prospectus date 12/06/2026 = 6,492 days / 365.25 = 17.77 years."
+    },
+    "col_BB": {
+      "value": "Natural persons - no controlling shareholder; Prof. Chen and Ms. Chen are the Single Largest Shareholders",
+      "page": 121,
+      "quote": "Prof. Chen and Ms. Chen form the Single Largest Shareholders of our Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.11425,
+      "page": 24,
+      "quote": "Prof. Chen and Ms. Chen will be entitled to exercise in aggregate the voting rights attached to approximately 11.425% of our Shares in issue",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.11425,
+      "page": 24,
+      "quote": "Prof. Chen and Ms. Chen will be entitled to exercise in aggregate the voting rights attached to approximately 11.425% of our Shares in issue",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2003-09-17",
+      "page": 311,
+      "quote": "The Company was a limited liability company incorporated in the PRC on 17 September 2003",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Gongming office, Guangming District, Shenzhen City, Guangdong Province, Tianyuan Road North, the PRC",
+      "page": 311,
+      "quote": "The address of the Company registered office and its principal place of business is Gongming office, Guangming District, Shenzhen City, Guangdong Province, Tianyuan Road North, the PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2026-06-12",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9: 00 a.m. on Friday, 12 June 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2026-06-17",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . 12: 00 noon on Wednesday, 17 June 2026",
+      "confidence": "high"
+    }
+  }
+}

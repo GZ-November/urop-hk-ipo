@@ -1,0 +1,426 @@
+{
+  "code": "0100.HK",
+  "fields": {
+    "col_L": {
+      "value": 305447288,
+      "page": 402,
+      "quote": "Issued and to be issued, fully paid or credited to be fully paid (assuming the Offer Size Adjustment Option and the Over-allotment Option are not exercised)",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 25389220,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 25,389,220 Offer Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 280058068,
+      "page": 401,
+      "quote": "280,058,068 Total US$28,005.8068",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 280058068,
+      "page": 401,
+      "quote": "280,058,068 Total US$28,005.8068",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 457,
+      "quote": "assuming 25,389,220 new shares to be issued at the offer price of HK$151.0 per share, being the low-end of the Offer Price range",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 25389220,
+      "page": 402,
+      "quote": "25,389,220 Class A Ordinary Shares with a nominal value of US$0.0001 to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 24119740,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 24,119,740 Offer Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1269480,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 1,269,480 Offer Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 165.0,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$165.00 per Offer Share and is currently expected to be not less than HK$151.00 per Offer Share unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 151.0,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$165.00 per Offer Share and is currently expected to be not less than HK$151.00 per Offer Share unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "USD",
+      "page": 542,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS Year ended 31 December Nine months ended 30 September",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 324007000,
+      "page": 544,
+      "quote": "Total non-current assets 689 4,496 104,936 81,320",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 910584000,
+      "page": 544,
+      "quote": "Total current assets 73,272 319,511 805,648 1,051,772",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1133092000,
+      "page": 544,
+      "quote": "Total current assets 73,272 319,511 805,648 1,051,772",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -341914000,
+      "page": 545,
+      "quote": "Net liabilities (76,374) (341,914) (799,320) (1,303,499)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -799320000,
+      "page": 545,
+      "quote": "Net liabilities (76,374) (341,914) (799,320) (1,303,499)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -1303499000,
+      "page": 545,
+      "quote": "Net liabilities (76,374) (341,914) (799,320) (1,303,499)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 665921000,
+      "page": 544,
+      "quote": "Total current liabilities 150,244 662,791 1,707,645 2,434,187",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1709904000,
+      "page": 545,
+      "quote": "Total non-current liabilities 91 3,130 2,259 2,404",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 2436591000,
+      "page": 545,
+      "quote": "Total non-current liabilities 91 3,130 2,259 2,404",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 3460000,
+      "page": 542,
+      "quote": "REVENUE 5 – 3,460 30,523 19,454 53,437",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 30523000,
+      "page": 542,
+      "quote": "REVENUE 5 – 3,460 30,523 19,454 53,437",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 71249333.33333333,
+      "page": 542,
+      "quote": "REVENUE 5 – 3,460 30,523 19,454 53,437",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -269246000,
+      "page": 542,
+      "quote": "LOSS BEFORE TAX 7 (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -465238000,
+      "page": 542,
+      "quote": "LOSS BEFORE TAX 7 (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -682684000.0,
+      "page": 542,
+      "quote": "LOSS BEFORE TAX 7 (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -269246000,
+      "page": 542,
+      "quote": "LOSS FOR THE YEAR/PERIOD (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -465238000,
+      "page": 542,
+      "quote": "LOSS FOR THE YEAR/PERIOD (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -682684000.0,
+      "page": 542,
+      "quote": "LOSS FOR THE YEAR/PERIOD (73,728) (269,246) (465,238) (304,342) (512,013)",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 498,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 2% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 498,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 2% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 507,
+      "quote": "representing not more than 15% of the total number of Offer Shares initially available under the Global Offering assuming the Offer Size Adjustment Option is not exercised at all",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Global AI foundation model company",
+      "page": 246,
+      "quote": "MiniMax is a global AI foundation model company.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18C Specialist Technology Company (Pre-Commercial Company); WVR (Chapter 8A)",
+      "page": 11,
+      "quote": "we are a specialist technology company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/25",
+      "page": 544,
+      "quote": "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION As at 31 December As at 30 September",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -209396000,
+      "page": 550,
+      "quote": "Net cash flows used in operating activities (11,019) (64,455) (258,483) (195,596) (209,396)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 362647000,
+      "page": 544,
+      "quote": "Cash and cash equivalents 18 4,691 206,295 288,912 362,647",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 180312000,
+      "page": 542,
+      "quote": "Research and development expenses (10,560) (70,002) (188,979) (138,684) (180,312)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 468,
+      "quote": "During the Track Record Period, we did not capitalize internal development costs as intangible assets.",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.217,
+      "page": 303,
+      "quote": "representing 60.5%, 44.1% and 21.7% of our total revenue for the respective periods.",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "ADIA; Alisoft China; Aspex Master Fund; Boyu; China Universal (HK); Eastspring; E Fund Management; IDG Breyer Fund; Janchor Funds; Martis Fund, L.P.; Mirae Asset Securities; MPC VII; Perseverance Asset Management; Taikang Life",
+      "page": 392,
+      "quote": "OUR CORNERSTONE INVESTORS Set out below in the aggregate number of Offer Shares, and the corresponding percentages to the Offer Shares",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 28,
+      "quote": "We have undertaken several rounds of Pre-IPO Investments. For details of the background of our key Pre-IPO Investors and the principal terms of the Pre-IPO Investments",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 28,
+      "quote": "Dr. Yan, Local Linearity Inc., MiniMax Awakening, MiniMax Limited, Alpha EXP, Scaling EXP Limited, and MiniMax Matrix together will constitute as a group of Controlling Shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.259,
+      "page": 28,
+      "quote": "and (ii) 25.90% of the voting rights in our issued share capital in general meetings for resolutions with respect to the Reserved Matters",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.7205,
+      "page": 28,
+      "quote": "(i) 72.05% of the voting rights in our issued share capital in general meetings (except for resolutions with respect to the Reserved Matters)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 21733000,
+      "page": 467,
+      "quote": "Current Interest-bearing bank borrowings – – 19,455 19,102 14,130 Lease liabilities 349 1,248 1,964 1,694 1,688",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "商业化初期（nascent stage of monetization and commercialization）",
+      "page": 36,
+      "quote": "We are still at a nascent stage in terms of monetization and commercialization as historically we have been largely focused on developing our foundation AI models.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 40,
+      "quote": "Approximately 90%, or HK$3,436.4 million of the net proceeds will be used for our research and development over the next five years",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Class A Ordinary Shares",
+      "page": 45,
+      "quote": "Class A ordinary shares in the share capital of the Company with a par value of US$0.0001 each, conferring a holder of a Class A ordinary share one vote per share",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "30/06/21",
+      "page": 214,
+      "quote": "Our Company was incorporated on June 30, 2021 in the Cayman Islands as an exempted company with limited liability with an authorized share capital of US$50,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shanghai, PRC",
+      "page": 151,
+      "quote": "Head Office and Principal Place of Business in the PRC 11th Floor, Building B Xinyan Mansion No. 65 Guiqing Road Xuhui District, Shanghai PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 555,
+      "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards, which comprise all standards and interpretations",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/12/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Wednesday, December 31, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/01/26",
+      "page": 5,
+      "quote": "Application lists close . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Tuesday, January 6, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 305447288,
+      "page": 39,
+      "quote": "The calculation of the market capitalization of our Shares is based on the assumption that 305,447,288 Shares will be in issue and outstanding immediately following the completion of the Global Offeri",
+      "confidence": "high",
+      "note": "开曼注册（Class A/B Ordinary Shares），无 H 股类别；其全部股份均在港交所挂牌，故 CE = 上市后已发行股份总数 305,447,288（口径见 fields.json col_CE hint ④）"
+    },
+    "col_CF": {
+      "value": 12476000,
+      "page": 29,
+      "quote": "Gross (loss)/profit – – (854) (24.7) 3,738 12.2 510 2.6 12,476 23.3",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 479000,
+      "page": 470,
+      "quote": "Property, Plant and Equipment 256 697 759 496 479",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "无保留意见 (Unqualified opinion)",
+      "page": 539,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 193200000,
+      "page": 39,
+      "quote": "Over-allotment Option are not exercised) for the Global Offering are approximately HK$193.2 million, accounting for approximately 4.8% of our gross proceeds",
+      "confidence": "medium"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Alisoft China (Alibaba); miHoYo; IDG Capital; Tencent; Future Capital",
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.4532,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series Angel",
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 4.08,
+      "page": 219,
+      "quote": "We have received several rounds of Pre-IPO Investments since our inception. The following table summarizes the key terms of the Pre-IPO",
+      "confidence": "high"
+    }
+  }
+}

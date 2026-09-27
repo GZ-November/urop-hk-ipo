@@ -1,0 +1,116 @@
+{
+  "code": "6915.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1232,
+      "page": 7,
+      "quote": "Total\n4,464,000\n12.32%\n1.45%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 476.56,
+      "page": 5,
+      "quote": "Subscription level\n476.56 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 78433,
+      "page": 5,
+      "quote": "No. of valid applications\n78,433",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1726805000,
+      "page": 14,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, a total of 78,433\nvalid applications made by the public will be conditionally allocated on the basis set out",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 476.56 times",
+      "page": 5,
+      "quote": "Subscription level\n476.56 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "26/06/26",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or around Friday, June 26, 2026 (Hong Kong time) and, in any event, not later th",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "29/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/06/2026 21:13**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 36234500,
+      "page": 4,
+      "quote": "Number of Offer Shares (before exercise of the\nOver-allotment Option)\n36,234,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3623500,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in Hong Kong Public\nOffering\n3,623,500 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 32611000,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in International\nOffering (before exercise of the Over-allotment\nOption)\n32,611,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF OVER-ALLOTMENT OPTION（26/07/2026 18:21）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (N/A); no Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (0 H Shares).",
+      "page": 5,
+      "quote": "Claw-back triggered\nN/A\nNo. of Offer Shares initially available under the Hong Kong Public Offering\n3,623,500 H Shares\nNo. of Offer Shares reallocated from the International Offering\n0 H Shares",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 338800000,
+      "page": 5,
+      "quote": "Net proceeds\nHK$338.80 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2867,
+      "page": 18,
+      "quote": "an aggregate of 88,425,840 H Shares, representing\napproximately 28.67% of the total issued share capital of the Company will be\ncounted towards the public float.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 308377319,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise\nof the Over-allotment Option)\n308,377,319",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.103,
+      "page": 18,
+      "quote": "all remaining 31,770,500 Shares, representing approximately\n10.30% of the total Shares, will be counted toward the free float.",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (308,377,319); numerator excludes Shares subject to lock-up: 272,142,819 Shares held by all existing Shareholders under the PRC 12-month lock-up and 4,464,000 Shares held by the Cornerstone Investor under the 6-month lock-up.",
+      "page": 18,
+      "quote": "except for (i) 272,142,819\nShares held by all existing Shareholders that are subject to a lock-up period of twelve\nmonths following the Listing Date under applicable PRC law",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 308377319,
+      "page": 4,
+      "quote": "Number of issued shares upon Listing (before exercise\nof the Over-allotment Option)\n308,377,319",
+      "confidence": "high"
+    }
+  }
+}

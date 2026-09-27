@@ -1,0 +1,116 @@
+{
+  "code": "7630.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3319,
+      "page": 6,
+      "quote": "Total 13,930,000 33.19% 5.03%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 2282.4,
+      "page": 4,
+      "quote": "Subscription level 2,282.4 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 221788,
+      "page": 4,
+      "quote": "No. of valid applications 221,788",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 9581069400,
+      "page": 14,
+      "quote": "POOL A 200 67,375 1,010 out of 67,375 to receive 200 Shares 1.50% 400 31,423 487 out of 31,423 to receive 200 Shares 0.77%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 2,282.4 times",
+      "page": 4,
+      "quote": "Subscription level 2,282.4 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "11/05/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and our ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/05/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：12/05/2026 21:52",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 41977000,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 41,977,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4197800,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 4,197,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 37779200,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (before exercise of the Over-allotment Option) 37,779,200 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 6296400,
+      "page": 1,
+      "quote": "ectus has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, June 5, 2026, in respect of an aggregate of 6,296,400 H Shares, ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (05/06/2026 20:52)"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (\"Claw-back triggered: N/A\"); no Offer Shares reallocated from the International Offering; final HK Public Offering shares 4,197,800 H Shares equal the initial 4,197,800 H Shares (10.00% of the Global Offering).",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 759500000,
+      "page": 4,
+      "quote": "Net proceeds HK$759.5 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.5706,
+      "page": 23,
+      "quote": "represents approximately 57.06% of the total issued Shares of the Company upon Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 276165130,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 276,165,130 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1016,
+      "page": 23,
+      "quote": "representing approximately 10.16% of the total issued Shares of the Company upon Listing",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float = H Shares held by the public and not subject to disposal restrictions; denominator = total issued Shares of the Company upon Listing before exercise of the Over-allotment Option (276,165,130 Shares), i.e. same base as the public float ratio.",
+      "page": 23,
+      "quote": "the expected market value of the H Shares held by the public and not subject to disposal restrictions will be approximately HK$563.7 million",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 276165130,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 276,165,130 Shares",
+      "confidence": "high"
+    }
+  }
+}

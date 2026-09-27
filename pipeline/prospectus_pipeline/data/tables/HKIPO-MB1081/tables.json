@@ -1,0 +1,228 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 198,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares",
+          "637,749,349",
+          "100%"
+        ],
+        [
+          "Total",
+          "637,749,349",
+          "100%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares              | 637,749,349      | 100%                       |\n| Total                 | 637,749,349      | 100%                       |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 204,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "GIC",
+          "80.00",
+          "9,434,400",
+          "10.85%"
+        ],
+        [
+          "HHLRA",
+          "25.00",
+          "2,948,200",
+          "3.39%"
+        ],
+        [
+          "HIM",
+          "25.00",
+          "2,948,200",
+          "3.39%"
+        ],
+        [
+          "CPE",
+          "39.99",
+          "4,716,000",
+          "5.42%"
+        ],
+        [
+          "Singapore",
+          "30.00",
+          "3,537,900",
+          "4.07%"
+        ],
+        [
+          "Taikang Life",
+          "30.00",
+          "3,537,900",
+          "4.07%"
+        ],
+        [
+          "Singapore",
+          "10.00",
+          "1,179,300",
+          "1.36%"
+        ],
+        [
+          "Eastpring HK",
+          "6.00",
+          "707,500",
+          "0.81%"
+        ],
+        [
+          "Pinpoint",
+          "30.00",
+          "3,537,900",
+          "4.07%"
+        ],
+        [
+          "ICBC Wealth",
+          "20.00",
+          "2,358,600",
+          "2.71%"
+        ],
+        [
+          "MWAL",
+          "20.00",
+          "2,358,600",
+          "2.71%"
+        ],
+        [
+          "Millennium",
+          "20.00",
+          "2,358,600",
+          "2.71%"
+        ],
+        [
+          "PSBC Wealth",
+          "12.00",
+          "1,415,100",
+          "1.63%"
+        ],
+        [
+          "Fullgoal HK",
+          "3.80",
+          "448,100",
+          "0.52%"
+        ],
+        [
+          "Fullgoal Fund",
+          "6.20",
+          "731,100",
+          "0.84%"
+        ],
+        [
+          "Total",
+          "357.99",
+          "42,217,400",
+          "48.54%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| GIC                  | 80.00                 | 9,434,400              | 10.85%                        |\n| HHLRA                | 25.00                 | 2,948,200              | 3.39%                         |\n| HIM                  | 25.00                 | 2,948,200              | 3.39%                         |\n| CPE                  | 39.99                 | 4,716,000              | 5.42%                         |\n| Singapore            | 30.00                 | 3,537,900              | 4.07%                         |\n| Taikang Life         | 30.00                 | 3,537,900              | 4.07%                         |\n| Singapore            | 10.00                 | 1,179,300              | 1.36%                         |\n| Eastpring HK         | 6.00                  | 707,500                | 0.81%                         |\n| Pinpoint             | 30.00                 | 3,537,900              | 4.07%                         |\n| ICBC Wealth          | 20.00                 | 2,358,600              | 2.71%                         |\n| MWAL                 | 20.00                 | 2,358,600              | 2.71%                         |\n| Millennium           | 20.00                 | 2,358,600              | 2.71%                         |\n| PSBC Wealth          | 12.00                 | 1,415,100              | 1.63%                         |\n| Fullgoal HK          | 3.80                  | 448,100                | 0.52%                         |\n| Fullgoal Fund        | 6.20                  | 731,100                | 0.84%                         |\n| Total                | 357.99                | 42,217,400             | 48.54%                        |",
+      "metadata": {
+        "investor_count": 15
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 19,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$5,616.7 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$5,616.7 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "HK$157.8 million"
+        ],
+        [
+          "Over-allotment Option. The listing expenses consist of (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "including underwriting commission, of approximately",
+          "HK$115.5 million"
+        ],
+        [
+          "Period, we incurred listing expenses of",
+          "HK$1.2 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately            | HK$157.8 million        |\n| Over-allotment Option. The listing expenses consist of (i) underwriting-related | expenses,               |\n| including underwriting commission, of approximately                             | HK$115.5 million        |\n| Period, we incurred listing expenses of                                         | HK$1.2 million          |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "10,224,814",
+          "11,561,950",
+          "14,490,551"
+        ],
+        [
+          "Total liabilities",
+          "3,310,648",
+          "4,289,941",
+          "6,210,261"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 10,224,814 | 11,561,950 | 14,490,551 |\n| Total liabilities | 3,310,648  | 4,289,941  | 6,210,261  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

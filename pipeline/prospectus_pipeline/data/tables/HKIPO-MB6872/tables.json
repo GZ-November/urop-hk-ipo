@@ -1,0 +1,134 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 175,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "47. Mr. Steven Lanier McKnight 77,313 –",
+          "77,313",
+          "–"
+        ],
+        [
+          "48. Mr. Wang Xiaodong 77,313 –",
+          "77,313",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                   | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------- | ---------------- | -------------------------- |\n| 47. Mr. Steven Lanier McKnight 77,313 – | 77,313           | –                          |\n| 48. Mr. Wang Xiaodong 77,313 –          | 77,313           | –                          |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 288,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "AMR Action 14.7",
+          "115.2",
+          "1,521,600",
+          "18.4"
+        ],
+        [
+          "AMR Action 5.1",
+          "40.0",
+          "527,950",
+          "6.4"
+        ],
+        [
+          "Hua Yuan 6.0",
+          "47.0",
+          "620,850",
+          "7.5"
+        ],
+        [
+          "Orient Asset 3.0",
+          "23.5",
+          "310,500",
+          "3.7"
+        ],
+        [
+          "June Star 1.0",
+          "7.8",
+          "103,500",
+          "1.2"
+        ],
+        [
+          "Total 29.8",
+          "233.5",
+          "3,084,400",
+          "37.2"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| AMR Action 14.7      | 115.2                 | 1,521,600              | 18.4                          |\n| AMR Action 5.1       | 40.0                  | 527,950                | 6.4                           |\n| Hua Yuan 6.0         | 47.0                  | 620,850                | 7.5                           |\n| Orient Asset 3.0     | 23.5                  | 310,500                | 3.7                           |\n| June Star 1.0        | 7.8                   | 103,500                | 1.2                           |\n| Total 29.8           | 233.5                 | 3,084,400              | 37.2                          |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                 | Rate / Amount Disclosed |\n| ------------------------------------------------ | ----------------------- |\n| million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 27,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "expenses, including underwriting commission",
+          "s,"
+        ],
+        [
+          "We had incurred listing expenses of",
+          "RMB21.4 million"
+        ]
+      ],
+      "markdown": "| Item Description                            | Rate / Amount Disclosed |\n| ------------------------------------------- | ----------------------- |\n| Our listing expenses represent professional | fees,                   |\n| expenses, including underwriting commission | s,                      |\n| We had incurred listing expenses of         | RMB21.4 million         |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": []
+}

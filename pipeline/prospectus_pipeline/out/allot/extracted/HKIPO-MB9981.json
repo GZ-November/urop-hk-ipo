@@ -1,0 +1,115 @@
+{
+  "code": "9981.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3445,
+      "page": 6,
+      "quote": "Qianhai Starlight Capital SPC (“Qianhai Starlight”) 2,328,600 1.66% 0.17% No Total 48,231,800 34.45% 3.45%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 569.58,
+      "page": 4,
+      "quote": "No. of successful applications 31,654 Subscription level 569.58 times Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 141463,
+      "page": 4,
+      "quote": "No. of valid applications 141,463 No. of successful applications 31,654",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 7973503000,
+      "page": 12,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 200 38,921",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 569.58 times",
+      "page": 4,
+      "quote": "No. of successful applications 31,654 Subscription level 569.58 times Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "11/02/26",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or before Wednesday, February 11, 2026 (Hong Kong time) and, in any event, not l",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/02/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**12/02/2026 22:56**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 139988800,
+      "page": 3,
+      "quote": "Number of Offer Shares 139,988,800 Final Number of Offer Shares in Hong Kong Public Offering 13,999,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 13999000,
+      "page": 4,
+      "quote": "No. of Offer Shares initially available under the Hong Kong Public Offering 13,999,000 Final no. of Offer Shares under the Hong Kong Public Offering 13,999,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 125989800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 125,989,800 % of Offer Shares under the International Offering to the Global Offering 90.00%",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-02-13 起 45 天内共 20 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-03-30 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A — no reallocation from the International Offering; the final number of Hong Kong Offer Shares (13,999,000) equals the initial number and represents 10.00% of the Global Offering.",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 13,999,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2733600000,
+      "page": 3,
+      "quote": "Gross proceeds (Note) HK$2,812.4 million Less: Estimated listing expenses payable based on Final Offer Price HK$(78.8) million Net proceeds HK$2,733.6 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1007,
+      "page": 20,
+      "quote": "the number of the H Shares to be held by the public represents approximately 10.07% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 1399887362,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 1,399,887,362",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0655,
+      "page": 21,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital upon Listing (1,399,887,362 Shares); H Shares held by the Cornerstone Investors (six-month lock-up until August 12, 2026) are excluded from the free float.",
+      "page": 21,
+      "quote": "Each of the Cornerstone Investors has agreed to a lock-up period of six months following the Listing Date.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1399887362,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 1,399,887,362",
+      "confidence": "high"
+    }
+  }
+}

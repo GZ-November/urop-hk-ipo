@@ -1,0 +1,119 @@
+{
+  "code": "1956.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2697,
+      "page": 5,
+      "quote": "Total\n4,000,600\n26.97%\n2.31%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5966.78,
+      "page": 4,
+      "quote": "Subscription level\n5,966.78 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 195072,
+      "page": 4,
+      "quote": "No. of valid applications\n195,072",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4426156200,
+      "page": 17,
+      "quote": "Number\nof H Shares\napplied for\nNumber\nof valid\napplications\nBasis of allocation/ballot\nApproximate\npercentage\nallotted of the\ntotal number\nof H Shares\napplied\nfor\n200\n83,904",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 5,966.78 times",
+      "page": 4,
+      "quote": "Subscription level\n5,966.78 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$60.70; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2026",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**25/06/2026 21:27**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 14834600,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option)\n14,834,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2967000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering\n2,967,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 11867600,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering (assuming \nthe Over-allotment Option is not exercised)\n11,867,600",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 1335000,
+      "page": 2,
+      "quote": "2026 (after trading hours), the Overall Coordinators, on behalf of the International Underwriters, have partially exercised the Over-allotment Option in respect of an aggregate of 1,335,000 Shares, re",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (24/07/2026 22:21)"
+    },
+    "col_CW": {
+      "value": "Reallocation (claw-back) of 2,225,200 Offer Shares from the International Offering to the Hong Kong Public Offering; final number of Offer Shares under the Hong Kong Public Offering adjusted to 2,967,000, representing approximately 20% of the Global Offering",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering \n (claw-back)\n2,225,200",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 826900000,
+      "page": 3,
+      "quote": "Less: Estimated listing expenses payable based on Offer Price\nHK$73.6 million\nNet proceeds\nHK$826.9 million Note 2",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.7197,
+      "page": 24,
+      "quote": "the total number of the H Shares \nheld by the public represents approximately 71.97% of the total issued share capital of the \nCompany",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 173101207,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-\n allotment Option)\n173,101,207",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0626,
+      "page": null,
+      "quote": "公式：(col_CS 14,834,600 − col_CK 0.2697×col_CS) ÷ col_CZ 173,101,207 = 0.0626；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 14,834,600 − col_CK 0.2697×col_CS) ÷ col_CZ 173,101,207 = 0.0626；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 173101207,
+      "page": 3,
+      "quote": "公式：(col_CS 14,834,600 − col_CK 0.2697×col_CS) ÷ col_CZ 173,101,207 = 0.0626；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

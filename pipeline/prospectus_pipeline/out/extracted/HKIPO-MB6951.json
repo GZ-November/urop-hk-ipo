@@ -1,0 +1,427 @@
+{
+  "code": "6951.HK",
+  "fields": {
+    "col_L": {
+      "value": 1987861671,
+      "page": 243,
+      "quote": "A Shares in issue 1,916,497,371 96.41% H Shares to be issued pursuant to the Global Offering 71,364,300 3.59% Total 1,987,861,671 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 71364300,
+      "page": 243,
+      "quote": "H Shares to be issued pursuant to the Global Offering 71,364,300 3.59%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1916497371,
+      "page": 243,
+      "quote": "A Shares in issue 1,916,497,371 96.41% H Shares to be issued pursuant to the Global Offering 71,364,300 3.59% Total 1,987,861,671 100.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1916497371,
+      "page": 243,
+      "quote": "A Shares in issue 1,916,497,371 96.41% H Shares to be issued pursuant to the Global Offering 71,364,300 3.59% Total 1,987,861,671 100.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 27,
+      "quote": "the Global Offering has been completed and 71,364,300 H Shares are newly issued in the Global Offering",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 71364300,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 71,364,300 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 64227800,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 64,227,800 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 7136500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 7,136,500 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 100.3,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$100.30 per H Share plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 309,
+      "quote": "The Historical Financial Information is presented in Renminbi (RMB) and all values are rounded to the nearest thousand (RMB'000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 23915804000,
+      "page": 23,
+      "quote": "Non-current assets 10,547,584 10,313,768 13,424,566 Current assets 11,279,380 13,602,036 13,081,523",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 26506089000,
+      "page": 23,
+      "quote": "Non-current assets 10,547,584 10,313,768 13,424,566 Current assets 11,279,380 13,602,036 13,081,523",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 27033473000,
+      "page": 30,
+      "quote": "Non-current assets 13,424,566 13,622,780 Current assets 13,081,523 13,410,693",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 19871768000,
+      "page": 23,
+      "quote": "Net assets 18,239,100 19,871,768 21,663,042",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 21663042000,
+      "page": 23,
+      "quote": "Net assets 18,239,100 19,871,768 21,663,042",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 22400977000,
+      "page": 30,
+      "quote": "Net assets 21,663,042 22,400,977 Total equity 21,663,042 22,400,977",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 4044036000,
+      "page": 311,
+      "quote": "2,527,745 2,744,802 3,629,891 Net current assets",
+      "confidence": "high",
+      "note": "col_AC (year-3, 2024) total liabilities = current liabilities 2,744,802 + non-current liabilities 1,299,234 = 4,044,036 thousand (p.311/312)."
+    },
+    "col_AD": {
+      "value": 4843047000,
+      "page": 30,
+      "quote": "Current liabilities 3,629,891 3,411,935 Net current assets 9,451,632 9,998,758 Total assets less current liabilities 22,876,198 23,621,538 Non-current liabilities 1,213,156 1,220,561",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 4632496000,
+      "page": 30,
+      "quote": "3,629,891 3,411,935 Net current assets",
+      "confidence": "high",
+      "note": "col_AE (year-1, 3M2026) total liabilities = current liabilities 3,411,935 + non-current liabilities 1,220,561 = 4,632,496 thousand (p.30)."
+    },
+    "col_AF": {
+      "value": 7266133000,
+      "page": 310,
+      "quote": "Revenue 6 5,681,529 7,266,133 8,868,527",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 8868527000,
+      "page": 310,
+      "quote": "Revenue 6 5,681,529 7,266,133 8,868,527",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 10605356000,
+      "page": 400,
+      "quote": "Revenue 3 2,651,339 1,817,602",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 2518943000,
+      "page": 310,
+      "quote": "Profit before tax 1,782,848 2,518,943 3,008,176",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 3008176000,
+      "page": 310,
+      "quote": "Profit before tax 1,782,848 2,518,943 3,008,176",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 3630968000,
+      "page": 400,
+      "quote": "Profit before tax 907,742 618,439",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 2190233000,
+      "page": 310,
+      "quote": "Profit for the year 11 1,583,151 2,190,233 2,616,980",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 2616980000,
+      "page": 310,
+      "quote": "Profit for the year 11 1,583,151 2,190,233 2,616,980",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 3163220000,
+      "page": 400,
+      "quote": "Profit for the period 790,805 532,895",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 812367000,
+      "page": 234,
+      "quote": "740,533 474,796 539,468 762,791 Lease liabilities 4,744 4,552 3,245 4,314 Non-current Borrowings 24,925 24,925 Lease liabilities 26,574 22,246 18,800 20,337 Total 771,851 501,594 586,438 812,367",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 205,
+      "quote": "Our consolidated financial statements have been prepared in accordance with IFRS Accounting Standards.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1095552000,
+      "page": 400,
+      "quote": "Gross profit 1,095,552 709,914",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 187760000,
+      "page": 404,
+      "quote": "Purchases of property, plant and equipment. . . . (187,760) (98,199)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion",
+      "page": 308,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the Group's and the Company's financial position",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.008,
+      "page": 281,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 0.8% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.008,
+      "page": 281,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 0.8% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 281,
+      "quote": "issue up to an aggregate of 10,704,600 additional H Shares, representing not more than 15.0% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 111900000,
+      "page": 281,
+      "quote": "estimated to be approximately HK$111.9 million based on the maximum Offer Price of HK$100.30 per H Share",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Electronic ceramic materials and components",
+      "page": 138,
+      "quote": "We focus on electronic ceramic materials and components, with over fifty-five years of operating history.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 307,
+      "quote": "in connection with the initial listing of H shares of the Company on the Main Board of The Stock Exchange of Hong Kong Limited",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialized (large-scale mass production)",
+      "page": 14,
+      "quote": "We have expanded our production capacity as our orders increase and have achieved large-scale mass production.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 258,
+      "quote": "We intend to use our proceeds for the purposes and in the amounts set forth below. Approximately 41.2% or HK$2,900.1 million will be invested in new constructions and expansions overseas",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "Temasek; JPMAMAPL; CPE River; Ninety One Asia; Alibaba Investment; Huang River; GSAM; Manulife; Taikang Life; China Universal Investors; Bosera International; ICBC Wealth; IvyRock; GBAHIL; Metazone; Verition Fund; GMF and IRMF",
+      "page": 266,
+      "quote": "Temasek 50 3,906,700 5.47% 0.20% 4.76% 0.20% JPMAMAPL 50 3,906,700 5.47% 0.20% 4.76% 0.20% CPE River 50 3,906,700 5.47% 0.20% 4.76% 0.20% Ninety One Asia 30 2,344,000 3.28% 0.12% 2.86% 0.12%",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 400,
+      "quote": "CONDENSED CONSOLIDATED STATEMENT OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME Three months ended March 31, 2026 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 156685000,
+      "page": 404,
+      "quote": "NET CASH FROM OPERATING ACTIVITIES . . . . . . . . . . . . . . . . 156,685 242,589",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 3564395000,
+      "page": 405,
+      "quote": "CASH AND CASH EQUIVALENTS AT THE END OF THE PERIOD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3,564,395 3,043,110",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 155810000,
+      "page": 400,
+      "quote": "Research and development expenses . . . . . . . . . (155,810) (145,692)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 362,
+      "quote": "INTANGIBLE ASSETS The Group Software Patent rights Total",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "潮州三环（集团）股份有限公司",
+      "page": 1,
+      "quote": "潮州三環（集團）股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual (natural person)",
+      "page": 318,
+      "quote": "the Company is ultimately controlled by Mr. Zhang Wanzhen (the Controlling Shareholders)",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.3516,
+      "page": 26,
+      "quote": "Mr. Zhang will, through Tririver Investment, control an aggregate of approximately 35.16% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3516,
+      "page": 61,
+      "quote": "Immediately following the completion of the Global Offering, our Controlling Shareholders will be entitled to exercise approximately 35.16% of the voting rights of the Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "10/12/1992",
+      "page": 132,
+      "quote": "On December 10, 1992, the Company was established under the laws of the PRC as a joint stock company",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Sanhuan Industrial District, Fengtang, Chaozhou, Guangdong Province, PRC",
+      "page": 87,
+      "quote": "Headquarters and Principal Place of Business in the PRC Sanhuan Industrial District Fengtang Chaozhou Guangdong Province PRC",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "30/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Tuesday, June 30, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "06/07/2026",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Monday, July 6, 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 71364300,
+      "page": 243,
+      "quote": "H Shares to be issued pursuant to the Global Offering 71,364,300 3.59%",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 243,
+      "quote": "H Shares to be issued pursuant to the Global Offering 71,364,300 3.59%",
+      "confidence": "high"
+    }
+  }
+}

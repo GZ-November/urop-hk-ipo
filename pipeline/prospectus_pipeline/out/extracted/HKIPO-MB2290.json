@@ -1,0 +1,426 @@
+{
+  "code": "2290.HK",
+  "fields": {
+    "col_L": {
+      "value": 500000000,
+      "page": 228,
+      "quote": "374,000,000 Shares to be issued under the Capitalization Issue 37,400 125,000,000 Shares to be issued under the Global Offering 12,500 500,000,000 Shares in total 50,000",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 125000000,
+      "page": 228,
+      "quote": "125,000,000 Shares to be issued under the Global Offering 12,500",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 375000000,
+      "page": 228,
+      "quote": "374,000,000 Shares to be issued under the Capitalization Issue 37,400 125,000,000 Shares to be issued under the Global Offering 12,500 500,000,000 Shares in total",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 375000000,
+      "page": 228,
+      "quote": "374,000,000 Shares to be issued under the Capitalization Issue 37,400 125,000,000 Shares to be issued under the Global Offering 12,500 500,000,000 Shares in total",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 228,
+      "quote": "374,000,000 Shares to be issued under the Capitalization Issue 37,400 125,000,000 Shares to be issued under the Global Offering 12,500 500,000,000 Shares in total",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 125000000,
+      "page": 228,
+      "quote": "125,000,000 Shares to be issued under the Global Offering 12,500",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 112500000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 112,500,000 Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 12500000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 12,500,000 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary shares",
+      "page": 230,
+      "quote": "Our Company currently only has one class of shares in issue, namely ordinary shares, each of which ranks pari passu with the other shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 500000000,
+      "page": 109,
+      "quote": "500,000,000 Shares in issue immediately upon completion of the Global Offering (assuming the Over-allotment Option is not exercised)",
+      "confidence": "medium",
+      "note": "Cayman-incorporated issuer with no H-share class: all post-listing issued shares are listed on the Stock Exchange."
+    },
+    "col_T": {
+      "value": 6.38,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$6.38 per Offer Share plus brokerage of 1.0%, SFC transaction levy of 0.0027%, Stock Exchange trading fee of 0.00565%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 5.18,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$6.38 per Share and is currently expected to be not less than HK$5.18 per Share.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "HKD",
+      "page": 321,
+      "quote": "The Historical Financial Information is presented in HK dollars (''HK$'') and all values are rounded to the nearest thousand (''HK$'000'') except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1334961000,
+      "page": 18,
+      "quote": "393,025 436,597 664,409 Current liabilities 1,082,054 1,066,621 1,080,259 1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 1288971000,
+      "page": 18,
+      "quote": "436,597 664,409 Current liabilities 1,082,054 1,066,621 1,080,259 1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936 852,374",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 1336986000,
+      "page": 18,
+      "quote": "664,409 Current liabilities 1,082,054 1,066,621 1,080,259 1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936 852,374 672,577",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 129520000,
+      "page": 18,
+      "quote": "Total (deficit)/equity (15,052) 129,520 44,382 55,431",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 44382000,
+      "page": 18,
+      "quote": "Total (deficit)/equity (15,052) 129,520 44,382 55,431",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 55431000,
+      "page": 18,
+      "quote": "Total (deficit)/equity (15,052) 129,520 44,382 55,431",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1205441000,
+      "page": 18,
+      "quote": "1,066,621 1,080,259 1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936 852,374 672,577 Non-current liabilities 112,672 138,820",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 1244589000,
+      "page": 18,
+      "quote": "1,080,259 1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936 852,374 672,577 Non-current liabilities 112,672 138,820 164,330",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 1281555000,
+      "page": 18,
+      "quote": "1,061,520 Net current liabilities (793,851) (673,596) (643,662) (397,111) Non-current assets 891,471 941,936 852,374 672,577 Non-current liabilities 112,672 138,820 164,330 220,035",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 2020731000,
+      "page": 322,
+      "quote": "Revenue 1,094,011 2,020,731 2,460,478 1,510,369 2,035,135",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 2460478000,
+      "page": 322,
+      "quote": "Revenue 1,094,011 2,020,731 2,460,478 1,510,369 2,035,135",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 3052702500,
+      "page": 322,
+      "quote": "Revenue 1,094,011 2,020,731 2,460,478 1,510,369 2,035,135",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": 180857000,
+      "page": 322,
+      "quote": "(Loss) profit before tax (25,207) 180,857 218,021 107,151 178,764",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 218021000,
+      "page": 322,
+      "quote": "(Loss) profit before tax (25,207) 180,857 218,021 107,151 178,764",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 268146000,
+      "page": 322,
+      "quote": "(Loss) profit before tax (25,207) 180,857 218,021 107,151 178,764",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": 144536000,
+      "page": 322,
+      "quote": "(27,140) 144,536 170,432 79,874 148,383",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 170432000,
+      "page": 322,
+      "quote": "(27,140) 144,536 170,432 79,874 148,383",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 222574500,
+      "page": 322,
+      "quote": "(27,140) 144,536 170,432 79,874 148,383",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 1005859000,
+      "page": 265,
+      "quote": "Total 1,068,635 1,062,378 1,034,675 1,005,859 944,773",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 321,
+      "quote": "have been prepared in accordance with the accounting policies which conform with HKFRS Accounting Standards issued by the HKICPA",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 628730000,
+      "page": 322,
+      "quote": "Gross profit 272,209 592,816 777,617 478,967 628,730",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 28716000,
+      "page": 329,
+      "quote": "Purchase of property, plant and equipment (10,760) (25,999) (54,870) (30,139) (28,716)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 319,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the Group's financial position",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.0238,
+      "page": 290,
+      "quote": "The Underwriters will receive an underwriting commission of 2.38% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.0238,
+      "page": 290,
+      "quote": "The Underwriters will receive an underwriting commission of 2.38% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 290,
+      "quote": "to require our Company to issue and allot up to an aggregate of 18,750,000 additional Offer Shares, representing 15% of the initial Offer Shares",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 50400000,
+      "page": 22,
+      "quote": "We estimate that our listing expenses will be approximately HK$50.4 million",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Retail of beauty, health and pharmaceutical products",
+      "page": 110,
+      "quote": "We are a leading Hong Kong-based chain retail store of beauty, health and pharmaceutical products under our ''Lung Fung'' (龍豐) brand.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 29,
+      "quote": "''Listing'' the listing of the Shares on the Main Board of the Stock Exchange",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0.2,
+      "page": 22,
+      "quote": "(v) Approximately HK$134.4 million, representing 20.0% of the net proceeds, is expected to be used to repay our outstanding loans",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/11/25",
+      "page": 322,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME FOR EACH OF THE THREE YEARS ENDED 31 MARCH 2025 AND THE EIGHT MONTHS ENDED 30 NOVEMBER 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 1081612000,
+      "page": 329,
+      "quote": "NET CASH FROM OPERATING ACTIVITIES 716,180 1,233,920 1,462,415 896,345 1,081,612",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 49896000,
+      "page": 323,
+      "quote": "Cash and cash equivalents 21 43,137 61,408 61,182 49,896",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 323,
+      "quote": "Non-current assets Property, plant and equipment",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_DP": {
+      "value": "龙丰集团控股有限公司",
+      "page": 2,
+      "quote": "Lung Fung Group Holdings Limited 龍豐集團控股有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 109,
+      "quote": "There was no pre-IPO investor to our Group before and after our Reorganization within the meaning of the Listing Rules.",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual (natural persons acting in concert)",
+      "page": 331,
+      "quote": "Mr. Tse, Mrs. Tse and Ms. Tse have been acting in concert historically and throughout the Track Record Period and collectively exercised their control over the entities now comprising the Group",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.75,
+      "page": 109,
+      "quote": "representing in aggregate 75% of our total issued Shares immediately upon the completion of the Share Split and the Global Offering",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.75,
+      "page": 98,
+      "quote": "Mr. Tse, Mrs. Tse and Ms. Tse, through TTK Holding, will together control approximately 75% of the voting rights in our Company and hence are our Controlling Shareholders.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2025-10-03",
+      "page": 331,
+      "quote": "Lung Fung Group Holdings Limited (the ''Company'') was incorporated on 3 October 2025 as an exempted company with limited liability under the laws of the Cayman Islands.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "5/F, Lung Fung Group Centre, 23 Yip Cheong Street, Fanling, Hong Kong",
+      "page": 436,
+      "quote": "our principal place of business in Hong Kong is at 5/F, Lung Fung Group Centre, 23 Yip Cheong Street, Fanling",
+      "confidence": "medium"
+    },
+    "col_CC": {
+      "value": "2026-05-28",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Thursday, 28 May 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2026-06-02",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Tuesday, 2 June 2026",
+      "confidence": "high"
+    }
+  }
+}

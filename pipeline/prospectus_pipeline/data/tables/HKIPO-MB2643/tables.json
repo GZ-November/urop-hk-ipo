@@ -1,0 +1,121 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 434,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Gotion HK(2)",
+          "163.82",
+          "3,905,900",
+          "8.8%"
+        ],
+        [
+          "EVE Asia",
+          "100.00",
+          "2,384,300",
+          "5.4%"
+        ],
+        [
+          "RoboSense HK(2)",
+          "39.24",
+          "935,500",
+          "2.1%"
+        ],
+        [
+          "Total",
+          "951.61",
+          "22,642,400",
+          "51.3%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Gotion HK(2)         | 163.82                | 3,905,900              | 8.8%                          |\n| EVE Asia             | 100.00                | 2,384,300              | 5.4%                          |\n| RoboSense HK(2)      | 39.24                 | 935,500                | 2.1%                          |\n| Total                | 951.61                | 22,642,400             | 51.3%                         |",
+      "metadata": {
+        "investor_count": 3
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 37,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Up to December 31, 2024, we incurred listing expenses of",
+          "RMB68.4 million"
+        ],
+        [
+          "We expect to incur additional listing expenses of approximately",
+          "RMB54.7 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                | Rate / Amount Disclosed |\n| --------------------------------------------------------------- | ----------------------- |\n| Up to December 31, 2024, we incurred listing expenses of        | RMB68.4 million         |\n| We expect to incur additional listing expenses of approximately | RMB54.7 million         |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 28,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "7,630,961",
+          "100.0",
+          "10,667,894",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1     | Col 5 |\n| ---------------- | --------- | ------ | ---------- | ----- |\n| Revenue          | 7,630,961 | 100.0  | 10,667,894 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 382,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "7,630,961",
+          "100.0",
+          "10,667,894",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1     | Col 5 |\n| ---------------- | --------- | ------ | ---------- | ----- |\n| Revenue          | 7,630,961 | 100.0  | 10,667,894 | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

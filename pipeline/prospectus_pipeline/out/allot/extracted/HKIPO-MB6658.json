@@ -1,0 +1,115 @@
+{
+  "code": "6658.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2955,
+      "page": 5,
+      "quote": "Fanchang RevitalizationNote 1\n1,610,000\n14.04%\n2.04%\nYesNote 2\nTop New\n1,777,100\n15.50%\n2.26%\nNo\nTotal\n3,387,100\n29.55%\n4.30%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 6586.73,
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING\nNo. of valid applications\n180,507\nNo. of successful applications\n11,465\nSubscription level\n6,586.73 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 180507,
+      "page": 4,
+      "quote": "No. of valid applications\n180,507\nNo. of successful applications\n11,465",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 7551685900,
+      "page": 10,
+      "quote": "NO. OF H\nSHARES\nAPPLIED FOR\nNO. OF VALID\nAPPLICATIONS\nBASIS OF ALLOTMENT/BALLOT",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 6,586.73 times",
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING\nNo. of valid applications\n180,507\nNo. of successful applications\n11,465\nSubscription level\n6,586.73 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$43.58; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/06/2026",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**12/06/2026 22:38**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 11464100,
+      "page": 3,
+      "quote": "Number of Offer Shares\n11,464,100\nFinal Number of Offer Shares in Hong Kong Public Offering",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1146500,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public\nOffering\n1,146,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 10317600,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International\nOffering\n10,317,600",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-06-15 起 45 天内共 1 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-07-30 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A；无回拨/重新分配，最终香港公开发售股数 1,146,500 股与初始相同，占全球发售 10%。",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A\nNo. of Offer Shares initially available under the Hong Kong Public\nOffering\n1,146,500",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 440100000,
+      "page": 3,
+      "quote": "Proceeds\nGross proceedsNote\nHK$499.6 million\nLess: Estimated listing expenses payable based on the Offer Price\nHK$59.5 million\nNet proceeds\nHK$440.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.250001,
+      "page": 15,
+      "quote": "19,702,849 H Shares held or controlled by our Shareholders who are not our core\nconnected persons, representing 25.0001% of the total issued H Shares, will be counted\ntowards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 78811208,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n78,811,208",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1025,
+      "page": 15,
+      "quote": "it is expected that 8,077,000 H\nShares will not be subject to any disposal restrictions (whether under contract, the\nListing Rules, applicable laws or otherwise), representing approximately 10.25%",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital upon Listing (78,811,208 Shares; numerator = Offer Shares not subject to disposal restrictions = 8,077,000 = col_CS 11,464,100 − 基石 3,387,100).",
+      "page": 15,
+      "quote": "it is expected that 8,077,000 H\nShares will not be subject to any disposal restrictions (whether under contract, the\nListing Rules, applicable laws or otherwise), representing approximately 10.25%",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 78811208,
+      "page": 15,
+      "quote": "representing approximately 10.25% of our\ntotal issued share capital upon Listing",
+      "confidence": "high"
+    }
+  }
+}

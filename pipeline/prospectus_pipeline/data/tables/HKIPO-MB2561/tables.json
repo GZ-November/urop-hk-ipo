@@ -1,0 +1,26 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 41,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "the professional parties, commissions payable to the",
+          "Underwriters,"
+        ]
+      ],
+      "markdown": "| Item Description                                     | Rate / Amount Disclosed |\n| ---------------------------------------------------- | ----------------------- |\n| the professional parties, commissions payable to the | Underwriters,           |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

@@ -1,0 +1,287 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 120,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "DONG Zhendong 280,175 0.30",
+          "280,175",
+          "0.26"
+        ],
+        [
+          "QIAN Huilong 280,175 0.30",
+          "280,175",
+          "0.26"
+        ],
+        [
+          "CHEN Chunmei 280,175 0.30",
+          "280,175",
+          "0.26"
+        ],
+        [
+          "WU Nanping 280,175 0.30",
+          "280,175",
+          "0.26"
+        ],
+        [
+          "FU Haiying 17,300 0.02",
+          "17,300",
+          "0.02"
+        ],
+        [
+          "Sub-total 42,583,910 46.01",
+          "42,583,910",
+          "39.13"
+        ]
+      ],
+      "markdown": "| Description of Shares      | Number of Shares | Approximate Percentage (%) |\n| -------------------------- | ---------------- | -------------------------- |\n| DONG Zhendong 280,175 0.30 | 280,175          | 0.26                       |\n| QIAN Huilong 280,175 0.30  | 280,175          | 0.26                       |\n| CHEN Chunmei 280,175 0.30  | 280,175          | 0.26                       |\n| WU Nanping 280,175 0.30    | 280,175          | 0.26                       |\n| FU Haiying 17,300 0.02     | 17,300           | 0.02                       |\n| Sub-total 42,583,910 46.01 | 42,583,910       | 39.13                      |",
+      "metadata": {
+        "total_rows": 6
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 257,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "below) . . . . . . . . . . . . . . 30.00",
+          "235.06",
+          "3,113,300",
+          "19.06"
+        ],
+        [
+          "Barings (as defined below) . . 10.00",
+          "78.35",
+          "1,037,700",
+          "6.35"
+        ],
+        [
+          "below). . . . . . . . . . . . . . 10.00",
+          "78.35",
+          "1,037,700",
+          "6.35"
+        ],
+        [
+          "(as defined below) . . . . . . 7.50",
+          "58.76",
+          "778,300",
+          "4.77"
+        ],
+        [
+          "below) . . . . . . . . . . . . . . 7.00",
+          "54.85",
+          "726,400",
+          "4.45"
+        ],
+        [
+          "below). . . . . . . . . . . . . . 5.00",
+          "39.18",
+          "518,800",
+          "3.18"
+        ],
+        [
+          "Nova Kerry Inc. . . . . . . . . . 5.00",
+          "39.18",
+          "518,800",
+          "3.18"
+        ],
+        [
+          "(as defined below) . . . . . . 4.00",
+          "31.34",
+          "415,100",
+          "2.54"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . 78.50",
+          "615.07",
+          "8,146,100",
+          "49.88"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                          | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| --------------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| below) . . . . . . . . . . . . . . 30.00      | 235.06                | 3,113,300              | 19.06                         |\n| Barings (as defined below) . . 10.00          | 78.35                 | 1,037,700              | 6.35                          |\n| below). . . . . . . . . . . . . . 10.00       | 78.35                 | 1,037,700              | 6.35                          |\n| (as defined below) . . . . . . 7.50           | 58.76                 | 778,300                | 4.77                          |\n| below) . . . . . . . . . . . . . . 7.00       | 54.85                 | 726,400                | 4.45                          |\n| below). . . . . . . . . . . . . . 5.00        | 39.18                 | 518,800                | 3.18                          |\n| Nova Kerry Inc. . . . . . . . . . 5.00        | 39.18                 | 518,800                | 3.18                          |\n| (as defined below) . . . . . . 4.00           | 31.34                 | 415,100                | 2.54                          |\n| Total . . . . . . . . . . . . . . . . . 78.50 | 615.07                | 8,146,100              | 49.88                         |",
+      "metadata": {
+        "investor_count": 9
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 18,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses related to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                           | Rate / Amount Disclosed |\n| ------------------------------------------ | ----------------------- |\n| (2) Listing expenses related to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 21,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "and commission",
+          "s,"
+        ],
+        [
+          "the estimated total listing expenses (based on the Offer Price of",
+          "HK$75.50"
+        ]
+      ],
+      "markdown": "| Item Description                                                  | Rate / Amount Disclosed |\n| ----------------------------------------------------------------- | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related      | expenses,               |\n| and commission                                                    | s,                      |\n| the estimated total listing expenses (based on the Offer Price of | HK$75.50                |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2 | Year-1 | Col 5 |\n| ------------------- | ------ | ------ | ------ | ----- |\n| Revenue             | .      | .      | .      | .     |\n| Gross profit        | .      | .      | .      | .     |\n| Profit for the year | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |\n| Total equity      | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 201,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2 | Year-1 | Col 5 |\n| ------------------- | ------ | ------ | ------ | ----- |\n| Revenue             | .      | .      | .      | .     |\n| Gross profit        | .      | .      | .      | .     |\n| Profit for the year | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}
