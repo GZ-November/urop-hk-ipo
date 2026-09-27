@@ -26,7 +26,8 @@ import openpyxl
 logger = logging.getLogger("sample_builder")
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCES_DIR = ROOT.parent / "sources"
+from paths import sources_dir
+SOURCES_DIR = sources_dir()
 OUT_MASTER = ROOT / "out" / "master"
 
 # FINI 官方上线实施日：2023 年 11 月 22 日

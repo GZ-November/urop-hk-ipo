@@ -464,7 +464,8 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     declared_by_header: dict[str, str] = {}
     try:
         from master_panel import REGISTRY_NAME, load_registry
-        registry_path = WS / "registry" / REGISTRY_NAME
+        from paths import registry_path as layout_registry_path
+        registry_path = layout_registry_path(WS)
         if registry_path.is_file():
             declared_by_header = {
                 v["header"]: (v.get("declared_dtype") or v.get("dtype") or "")
@@ -856,8 +857,9 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
 
     # 发布到规范工件目录（仅默认流水线运行；测试的 out_dir 隔离不受影响）
     if out_dir is None:
-        codebooks_dir = WS / "codebooks"
-        exports_dir = WS / "exports"
+        from paths import codebooks_dir as layout_codebooks_dir, exports_dir as layout_exports_dir
+        codebooks_dir = layout_codebooks_dir(WS)
+        exports_dir = layout_exports_dir(WS)
         codebooks_dir.mkdir(parents=True, exist_ok=True)
         exports_dir.mkdir(parents=True, exist_ok=True)
         (codebooks_dir / md_name).write_text(md_path.read_text(encoding="utf-8"), encoding="utf-8")

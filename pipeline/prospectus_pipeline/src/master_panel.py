@@ -29,15 +29,12 @@ from typing import Any
 
 import yaml
 
-MASTER_STEM = "HKIPO-MB-MASTER"
-REGISTRY_NAME = "HKIPO_Variable_Registry.yaml"
-
-# 工件目录（相对工作簿根目录 WS）：工作簿 / 导出 / 注册表 / 报告分置
-COHORTS_SUBDIR = "cohorts"
-EXPORTS_SUBDIR = "exports"
-CODEBOOKS_SUBDIR = "codebooks"
-REGISTRY_SUBDIR = "registry"
-REPORTS_SUBDIR = "reports"
+from paths import (  # noqa: E402
+    CODEBOOKS as CODEBOOKS_SUBDIR, EXPORTS as EXPORTS_SUBDIR, MASTER_STEM,
+    REGISTRY_NAME, REPORTS as REPORTS_SUBDIR,
+    codebook_md_path, drift_report_path, exports_dir, exclusions_path, master_csv_path,
+    registry_path as layout_registry_path,
+)
 
 COHORT_CSV_RE = re.compile(r"^HKIPO-MB(\d{4}Q[1-4])_clean\.csv$")
 
@@ -128,7 +125,7 @@ def quarter_bounds(tag: str) -> tuple[dt.date, dt.date]:
 def discover_cohort_csvs(ws: Path) -> list[tuple[str, Path]]:
     """exports/ 目录下的 cohort clean CSV，按 cohort 标签升序。"""
     found = []
-    for path in (ws / EXPORTS_SUBDIR).glob("HKIPO-MB*_clean.csv"):
+    for path in exports_dir(ws).glob("HKIPO-MB*_clean.csv"):
         m = COHORT_CSV_RE.match(path.name)
         if m:
             found.append((m.group(1), path))
@@ -296,7 +293,7 @@ def build_registry(
     冲突处理：同列名/类型/层级在 cohort 间不一致时，以文件名排序最新的
     Codebook 为准，并把冲突逐条写入 meta.conflicts。
     """
-    names = codebook_names or sorted((ws / CODEBOOKS_SUBDIR).glob("HKIPO_*_Codebook.md"))
+    names = codebook_names or sorted((Path(ws) / CODEBOOKS_SUBDIR).glob("HKIPO_*_Codebook.md"))
     if not names:
         raise FileNotFoundError(f"{ws} 下未找到任何 HKIPO_*_Codebook.md")
     paths = [Path(n) if isinstance(n, str) else n for n in names]
@@ -558,9 +555,8 @@ def build_master(
     )
 
     # 写 master CSV（cohort 与跨 cohort 重复标记作为前两列）
-    exports_dir = Path(out_dir) if out_dir else ws / EXPORTS_SUBDIR
-    exports_dir.mkdir(parents=True, exist_ok=True)
-    master_path = exports_dir / f"{master_stem}_clean.csv"
+    master_path = Path(out_dir) / f"{master_stem}_clean.csv" if out_dir else master_csv_path(ws, master_stem)
+    master_path.parent.mkdir(parents=True, exist_ok=True)
     code_idx = base_headers.index("Stock Code") if "Stock Code" in base_headers else None
     with master_path.open("w", encoding="utf-8-sig", newline="") as fh:
         writer = csv.writer(fh)
@@ -600,9 +596,8 @@ def build_master(
         "master_csv": str(master_path),
     }
 
-    report_dir = Path(out_dir) if out_dir else ws / REPORTS_SUBDIR
-    report_dir.mkdir(parents=True, exist_ok=True)
-    report_path = report_dir / f"{master_stem}_Drift_Report.md"
+    report_path = Path(out_dir) / f"{master_stem}_Drift_Report.md" if out_dir else drift_report_path(ws, master_stem)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     _write_report(report_path, summary, registry is not None)
     summary["drift_report"] = str(report_path)
     return summary

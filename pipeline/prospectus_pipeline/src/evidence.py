@@ -20,7 +20,7 @@ sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from storage import file_sha256  # noqa: E402
 
-EVIDENCE_NAME = "HKIPO-Evidence_SHA256.txt"
+from paths import EVIDENCE_NAME, REPORTS  # noqa: E402
 
 # 覆盖顺序：工作簿 -> 导出物 -> 注册表 -> master 面板与报告（按工件目录分组）
 PATTERNS = [
@@ -29,8 +29,8 @@ PATTERNS = [
     ("exports", "HKIPO-MB-MASTER_clean.csv"),
     ("codebooks", "HKIPO_*_Codebook.md"),
     ("registry", "HKIPO_Variable_Registry.yaml"),
-    ("reports", "HKIPO-MB-MASTER_Drift_Report.md"),
-    ("reports", "HKIPO_*_Exclusions.md"),
+    (REPORTS, "HKIPO-MB-MASTER_Drift_Report.md"),
+    (REPORTS, "HKIPO_*_Exclusions.md"),
 ]
 
 
@@ -48,7 +48,7 @@ def build_evidence_manifest(ws: Path | None = None) -> tuple[Path, list[tuple[st
             entries.append((rel, file_sha256(path)))
     entries.sort(key=lambda e: e[0])
 
-    out_path = ws / "reports" / EVIDENCE_NAME
+    out_path = ws / REPORTS / EVIDENCE_NAME
     out_path.parent.mkdir(parents=True, exist_ok=True)
     lines = [
         "# HK IPO 研究数据 SHA-256 证据清单",

@@ -32,9 +32,12 @@ sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from master_panel import (  # noqa: E402
     DERIVED_SPECS,
-    MASTER_STEM,
-    REGISTRY_NAME,
     load_registry,
+)
+from paths import (  # noqa: E402
+    MASTER_STEM,
+    master_csv_path as layout_master_csv,
+    registry_path as layout_registry_path,
 )
 
 IDENTITY_COLUMNS = ["cohort", "cross_cohort_duplicate", "stock_code"]
@@ -49,7 +52,7 @@ def available_slugs(
 ) -> list[dict[str, Any]]:
     """列出注册表全部变量的 slug 元数据，供分析前选列。"""
     ws = Path(ws) if ws else WS
-    registry_path = Path(registry_path) if registry_path else ws / "registry" / REGISTRY_NAME
+    registry_path = Path(registry_path) if registry_path else layout_registry_path(ws)
     if not registry_path.is_file():
         raise FileNotFoundError(f"变量注册表不存在（{registry_path}）；先运行 `python3 run.py registry`")
     registry = load_registry(registry_path)
@@ -71,10 +74,10 @@ def load_master(
     import pandas as pd
 
     ws = Path(ws) if ws else WS
-    master_path = Path(master_path) if master_path else ws / "exports" / f"{MASTER_STEM}_clean.csv"
+    master_path = Path(master_path) if master_path else layout_master_csv(ws)
     if not master_path.is_file():
         raise FileNotFoundError(f"master 面板不存在（{master_path}）；先运行 `python3 run.py master`")
-    registry_path = Path(registry_path) if registry_path else ws / "registry" / REGISTRY_NAME
+    registry_path = Path(registry_path) if registry_path else layout_registry_path(ws)
     if not registry_path.is_file():
         raise FileNotFoundError(f"变量注册表不存在（{registry_path}）；先运行 `python3 run.py registry`")
 

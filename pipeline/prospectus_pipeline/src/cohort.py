@@ -11,6 +11,7 @@ from typing import Any
 
 import yaml
 
+from paths import sources_dir
 from listing_reports import reports_for_interval
 from sample_builder import audit_candidate, load_nlr_candidates
 
@@ -283,7 +284,7 @@ def write_cohort_config(
         "cohort": _cohort_for_period(start, end),
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
-        "report_source_dir": str(Path(source_dir or WS / "sources").expanduser().resolve()),
+        "report_source_dir": str(Path(source_dir or sources_dir(WS)).expanduser().resolve()),
     })
     workbook = openpyxl.load_workbook(workbook_path, read_only=True, data_only=True)
     try:
@@ -400,7 +401,7 @@ def build_cohort_workbook(
 
     if start > end:
         raise ValueError("period start must be on or before period end")
-    source_dir = Path(source_dir or WS / "sources")
+    source_dir = Path(source_dir or sources_dir(WS))
     template_path = Path(template_path or WS / "templates" / "HKIPO-MB-template-final.xlsx")
     workbook_path = Path(workbook_path or cohort_workbook_path(start, end))
     reports = reports_for_interval(start, end, source_dir, today=today)

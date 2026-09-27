@@ -27,7 +27,8 @@ from sample_builder import audit_candidate, load_nlr_candidates  # noqa: E402
 
 def _official_candidates(cfg: dict, start: dt.date, end: dt.date) -> list[dict[str, Any]]:
     """从本地缓存的官方 NLR 报告加载区间内的候选发行人并做法定审计。"""
-    source_dir = Path(cfg["dataset"].get("report_source_dir") or WS / "sources")
+    from paths import sources_dir as layout_sources_dir
+    source_dir = Path(cfg["dataset"].get("report_source_dir") or layout_sources_dir(WS))
     candidates: list[dict[str, Any]] = []
     for report in reports_for_interval(start, end, source_dir):
         match = re.search(r"(?:NLR)?(19\d{2}|20\d{2})", report.stem, re.I)
@@ -140,7 +141,7 @@ def build_exclusion_log(
         "unexpected_in_workbook": unexpected_in_workbook,
     }
     if out_path is None:
-        out_path = WS / "reports" / f"HKIPO_{tag}_Exclusions.md"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+        from paths import exclusions_path as layout_exclusions_path
+        out_path = layout_exclusions_path(WS, tag)
     out_path.write_text("\n".join(lines), encoding="utf-8")
     return out_path, summary

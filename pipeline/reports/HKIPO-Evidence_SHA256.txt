@@ -1,5 +1,5 @@
 # HK IPO 研究数据 SHA-256 证据清单
-# 生成时间: 2026-09-27T14:36:38
+# 生成时间: 2026-09-27T15:35:46
 # 文件数: 23
 # 复现命令: python3 run.py evidence
 #
@@ -21,8 +21,8 @@ c80502497e24205434f3503fc344ca22fc7a66209235325590739005beecb6a7  exports/HKIPO-
 f55ff3f4e04531815c01ca3f6ae388048bd1e6d19bb0f2f4008e7d18817afbf2  exports/HKIPO-MB2026Q1_clean.csv
 2e3eeb4f593f3ebd26c873aab535f57bb5a7b32d61cda2be4ba9e643d8e1ecc0  exports/HKIPO-MB2026Q2_clean.csv
 478bea9f91679ae41c3644c4f6d3dcf67de66bf699abb20841d812c843b8f3ec  exports/HKIPO-MB2026Q3_clean.csv
-07ea97aba07259eff3f083f79689238af46c1492a3905868cc75bb55f755f23e  registry/HKIPO_Variable_Registry.yaml
-f8e43a0a09639d7934a36cc6c24d747c7153eeb93d10c83d1ceab91a5edf60f5  reports/HKIPO-MB-MASTER_Drift_Report.md
+6db895ff3c5af8c5d51e47f58ee6f3cac8bfc09e23c05a8621e9c2e3e24789cc  registry/HKIPO_Variable_Registry.yaml
+5ea8919a6ddcdc375ade8e4b8a426fa67c8cca7378d83c748cb7132edd4ec63a  reports/HKIPO-MB-MASTER_Drift_Report.md
 6ffa3af01a9448cba8a6cb65499546e37178206cc08e7d293e5c3193432b70cc  reports/HKIPO_2025Q1_Exclusions.md
 e89e12fbc6b2b8750a1acc5f9231a85b73857ad1fea740e2bab379fb1a68ffc2  reports/HKIPO_2025Q2_Exclusions.md
 74dd5b5c8379bcaca12be706412f32db5cf9804650611a77598e516ac125e4ec  reports/HKIPO_2026Q1_Exclusions.md

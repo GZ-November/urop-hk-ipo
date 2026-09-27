@@ -25,6 +25,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent          # prospectus_pipeline/
 WS = ROOT.parent                                # 工作簿所在目录
 sys.path.insert(0, str(ROOT / "src"))
+from paths import sources_dir
 from cohort import build_cohort_workbook, load_cfg, read_companies, write_cohort_config
 
 
@@ -216,7 +217,8 @@ def cmd_state(cfg, args, companies):
 def cmd_registry(cfg, args, companies):
     """合并各季度 Codebook，生成机器可读变量注册表（单一事实来源）。"""
     from master_panel import REGISTRY_NAME, build_registry
-    out_path = WS / "registry" / REGISTRY_NAME
+    from paths import registry_path as layout_registry_path
+    out_path = layout_registry_path(WS)
     registry = build_registry(WS, out_path)
     meta = registry["meta"]
     print(f"\n变量注册表已生成：{out_path}")
@@ -237,7 +239,8 @@ def cmd_registry(cfg, args, companies):
 def cmd_master(cfg, args, companies):
     """合并全部 cohort clean CSV 为 master 面板 + 漂移报告。"""
     from master_panel import MASTER_STEM, REGISTRY_NAME, build_master
-    summary = build_master(WS, WS / "registry" / REGISTRY_NAME, derive=bool(getattr(args, "derive", False)))
+    from paths import registry_path as layout_registry_path
+    summary = build_master(WS, layout_registry_path(WS), derive=bool(getattr(args, "derive", False)))
     print(f"\nMaster 面板：{summary['master_csv']}")
     print(f"  - cohort：{'、'.join(summary['cohort_order'])}")
     print(f"  - 样本合计：{summary['total_rows']} 家 × {summary['variable_count']} 列"
@@ -358,7 +361,7 @@ def _ipo_count_reports(cfg, args, companies):
     source_dir = Path(
         getattr(args, "source_dir", None)
         or cfg["dataset"].get("report_source_dir")
-        or WS / "sources"
+        or sources_dir(WS)
     ).expanduser().resolve()
     return reports_for_interval(
         min(prospectus_dates) - timedelta(days=90),

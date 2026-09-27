@@ -19,6 +19,8 @@ ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.na
 WS = ROOT.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT / "src"))
+from paths import sources_dir
 from run import load_cfg
 from listing_reports import reports_for_interval
 from sample_builder import audit_candidate, load_nlr_candidates
@@ -98,7 +100,7 @@ def main() -> int:
     if not companies:
         raise SystemExit("No issuers with prospectus dates to calculate")
     if args.nlr is None:
-        source_dir = Path(_cfg["dataset"].get("report_source_dir") or WS / "sources")
+        source_dir = Path(_cfg["dataset"].get("report_source_dir") or sources_dir(WS))
         paths = reports_for_interval(
             min(item[2] for item in companies) - dt.timedelta(days=90),
             max(item[2] for item in companies) - dt.timedelta(days=1),
@@ -147,3 +149,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
