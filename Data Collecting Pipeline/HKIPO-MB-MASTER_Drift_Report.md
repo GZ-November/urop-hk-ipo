@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-27 14:00:32 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-27 14:17:42 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 
@@ -113,47 +113,18 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `1-year wealth relative vs HSI [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | `3-year post-IPO return (%) [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | `3-year wealth relative vs HSI [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
-| `Stabilizing manager` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Stabilization period end date` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Stabilization purchases occurred` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Over-allocation shares` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Over-allocation (% of base offer)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Over-allotment option exercise date` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Shares issued under over-allotment option` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Over-allotment exercise percentage (%)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Post-stabilization cliff return [-5, +5] (%)` | 0.0% | 100.0% | 97.4% | 100.0% | 0.0% |
-| `Post-stabilization 20-day return [0, +20] (%)` | 0.0% | 100.0% | 97.4% | 100.0% | 0.0% |
-| `Post-stabilization volume decay ratio (%)` | 0.0% | 100.0% | 97.4% | 100.0% | 0.0% |
-| `Day-5 BHR from Day-1 close (%)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Day-5 wealth relative vs HSI` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Day-20 BHR from Day-1 close (%)` | 0.0% | 100.0% | 97.4% | 100.0% | 0.0% |
-| `Day-20 wealth relative vs HSI` | 0.0% | 100.0% | 97.4% | 100.0% | 0.0% |
-| `3-month BHR from Day-1 close (%)` | 0.0% | 100.0% | 97.4% | 91.1% | 0.0% |
-| `3-month wealth relative vs HSI` | 0.0% | 100.0% | 97.4% | 91.1% | 0.0% |
-| `3-month wealth relative vs HSTECH` | 0.0% | 100.0% | 97.4% | 91.1% | 0.0% |
-| `3-month average daily turnover (HK$)` | 0.0% | 100.0% | 97.4% | 91.1% | 0.0% |
-| `Amihud illiquidity (6M mean)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Zero-volume days count (first 6M)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Return volatility (first 6M daily std dev, %)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Maximum drawdown (first 6M, %)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Controlling shareholder 6-month disposal lockup expiry date` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Controlling shareholder 12-month cessation of control expiry date` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Cornerstone unlock CAR [-5, +5] (%)` | 0.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Cornerstone unlock CAR [-20, +20] (%)` | 0.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Cornerstone unlock volume shock ratio` | 0.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Lead sponsor name` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Joint sponsor count` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Sponsor commercial bank affiliate flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Underwriting base commission rate (%)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Underwriting discretionary incentive fee rate (%)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Total underwriting fee rate (%)` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Cornerstone investor count` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Cornerstone state-owned presence flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Crossover fund presence flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Pre-IPO institutional investor count` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Pre-IPO state-owned backing flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `FINI digital settlement regime` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `2025 pricing reform regime` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
+| `Post-stabilization cliff return [-5, +5] (%)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
+| `Post-stabilization 20-day return [0, +20] (%)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
+| `Post-stabilization volume decay ratio (%)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
+| `Day-20 BHR from Day-1 close (%)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
+| `Day-20 wealth relative vs HSI` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
+| `3-month BHR from Day-1 close (%)` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
+| `3-month wealth relative vs HSI` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
+| `3-month wealth relative vs HSTECH` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
+| `3-month average daily turnover (HK$)` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
+| `Cornerstone unlock CAR [-5, +5] (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
+| `Cornerstone unlock CAR [-20, +20] (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
+| `Cornerstone unlock volume shock ratio` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
 
 ### 5.1 填报率环比（最近两个 cohort，|Δ| ≥ 10pp）
 
@@ -190,55 +161,21 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `1-month wealth relative vs HSI` | 100.0% | 78.3% | -21.7pp |
 | `1-month wealth relative vs HSTECH` | 100.0% | 78.3% | -21.7pp |
 | `1-month average daily turnover (HK$)` | 100.0% | 78.3% | -21.7pp |
-| `Stabilizing manager` | 100.0% | 0.0% | -100.0pp |
-| `Stabilization period end date` | 100.0% | 0.0% | -100.0pp |
-| `Stabilization purchases occurred` | 100.0% | 0.0% | -100.0pp |
-| `Over-allocation shares` | 100.0% | 0.0% | -100.0pp |
-| `Over-allocation (% of base offer)` | 100.0% | 0.0% | -100.0pp |
-| `Over-allotment option exercise date` | 100.0% | 0.0% | -100.0pp |
-| `Shares issued under over-allotment option` | 100.0% | 0.0% | -100.0pp |
-| `Over-allotment exercise percentage (%)` | 100.0% | 0.0% | -100.0pp |
-| `Post-stabilization cliff return [-5, +5] (%)` | 100.0% | 0.0% | -100.0pp |
-| `Post-stabilization 20-day return [0, +20] (%)` | 100.0% | 0.0% | -100.0pp |
-| `Post-stabilization volume decay ratio (%)` | 100.0% | 0.0% | -100.0pp |
-| `Day-5 BHR from Day-1 close (%)` | 100.0% | 0.0% | -100.0pp |
-| `Day-5 wealth relative vs HSI` | 100.0% | 0.0% | -100.0pp |
-| `Day-20 BHR from Day-1 close (%)` | 100.0% | 0.0% | -100.0pp |
-| `Day-20 wealth relative vs HSI` | 100.0% | 0.0% | -100.0pp |
+| `Post-stabilization cliff return [-5, +5] (%)` | 100.0% | 78.3% | -21.7pp |
+| `Post-stabilization 20-day return [0, +20] (%)` | 100.0% | 78.3% | -21.7pp |
+| `Post-stabilization volume decay ratio (%)` | 100.0% | 78.3% | -21.7pp |
+| `Day-20 BHR from Day-1 close (%)` | 100.0% | 78.3% | -21.7pp |
+| `Day-20 wealth relative vs HSI` | 100.0% | 78.3% | -21.7pp |
 | `3-month BHR from Day-1 close (%)` | 91.1% | 0.0% | -91.1pp |
 | `3-month wealth relative vs HSI` | 91.1% | 0.0% | -91.1pp |
 | `3-month wealth relative vs HSTECH` | 91.1% | 0.0% | -91.1pp |
 | `3-month average daily turnover (HK$)` | 91.1% | 0.0% | -91.1pp |
-| `Amihud illiquidity (6M mean)` | 100.0% | 0.0% | -100.0pp |
-| `Zero-volume days count (first 6M)` | 100.0% | 0.0% | -100.0pp |
-| `Return volatility (first 6M daily std dev, %)` | 100.0% | 0.0% | -100.0pp |
-| `Maximum drawdown (first 6M, %)` | 100.0% | 0.0% | -100.0pp |
-| `Controlling shareholder 6-month disposal lockup expiry date` | 100.0% | 0.0% | -100.0pp |
-| `Controlling shareholder 12-month cessation of control expiry date` | 100.0% | 0.0% | -100.0pp |
-| `Lead sponsor name` | 100.0% | 0.0% | -100.0pp |
-| `Joint sponsor count` | 100.0% | 0.0% | -100.0pp |
-| `Sponsor commercial bank affiliate flag` | 100.0% | 0.0% | -100.0pp |
-| `Underwriting base commission rate (%)` | 100.0% | 0.0% | -100.0pp |
-| `Underwriting discretionary incentive fee rate (%)` | 100.0% | 0.0% | -100.0pp |
-| `Total underwriting fee rate (%)` | 100.0% | 0.0% | -100.0pp |
-| `Cornerstone investor count` | 100.0% | 0.0% | -100.0pp |
-| `Cornerstone state-owned presence flag` | 100.0% | 0.0% | -100.0pp |
-| `Crossover fund presence flag` | 100.0% | 0.0% | -100.0pp |
-| `Pre-IPO institutional investor count` | 100.0% | 0.0% | -100.0pp |
-| `Pre-IPO state-owned backing flag` | 100.0% | 0.0% | -100.0pp |
-| `FINI digital settlement regime` | 100.0% | 0.0% | -100.0pp |
-| `2025 pricing reform regime` | 100.0% | 0.0% | -100.0pp |
 
 ### 5.2 布尔列空值警告（约定：0/1 不得留空）
 
 | 布尔列 | 2025Q1 | 2025Q2 | 2026Q1 | 2026Q2 | 2026Q3 |
 |---|---|---|---|---|---|
 | `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 53.3% | 100.0% |
-| `Stabilization purchases occurred` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Sponsor commercial bank affiliate flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Cornerstone state-owned presence flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Crossover fund presence flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
-| `Pre-IPO state-owned backing flag` | 0.0% | 100.0% | 100.0% | 100.0% | 0.0% |
 
 处置：确认「确无」后补 0（或按手册填 NA），重跑 export 与 master。
 
