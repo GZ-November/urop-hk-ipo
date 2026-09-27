@@ -89,6 +89,74 @@ Exports clean data and comprehensive data dictionary for econometric research:
   - Structured machine-readable Codebook JSON.
 - Econometric modeling and empirical workflows: [empirical_analysis_guide.md](./references/empirical_analysis_guide.md).
 
+### 5b. Variable Registry Builder (`registry`)
+Merges all quarterly Markdown Codebooks into one machine-readable variable registry
+(`HKIPO_Variable_Registry.yaml`, versioned) — the single source of truth for column
+name / type / layer / unit. Cross-cohort definition conflicts are recorded under
+`meta.conflicts` and resolved to the newest Codebook:
+```bash
+./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh registry
+```
+
+### 5c. Master Panel & Drift Report (`master`)
+Merges every cohort `_clean.csv` into one analysis-ready master panel
+(`HKIPO-MB-MASTER_clean.csv`, local-only) prefixed with `cohort` and
+`cross_cohort_duplicate` columns, and writes `HKIPO-MB-MASTER_Drift_Report.md`:
+```bash
+./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh master
+```
+- Checks: header alignment across cohorts (order-sensitive), headers vs registry,
+  duplicate stock codes within/across cohorts, listing date vs cohort quarter,
+  per-variable fill rates per cohort, and share-count identities
+  (`L = N + Q`, `L = O + M`, `M = Q + P`, tolerance ±1 share).
+- Exits non-zero on hard errors (header drift, registry mismatch, duplicate codes);
+  listing-date, identity and fill-rate findings are reported as warnings.
+- Add `--derive` to append currency-free derived ratio columns to the master panel
+  (`leverage_y1`, `roa_y1`, `sales_growth_y1`, `log_proceeds_hkd`,
+  `public_offer_fraction`; sources missing -> column skipped, invalid -> NaN).
+- Section 5.1 reports fill-rate changes vs the previous cohort (>=10pp) so
+  extraction-quality regressions surface immediately.
+- Regenerate after each cohort closes so an analysis-ready master always exists.
+
+### 5d. Analysis Entry Point (`panel.py`)
+Load the master panel as a registry-driven pandas DataFrame (identity columns
+`cohort` / `cross_cohort_duplicate` / `stock_code` always kept):
+```python
+import sys
+sys.path.insert(0, "Data Collecting Pipeline/prospectus_pipeline/src")
+from panel import available_slugs, load_master
+df = load_master(slugs=["ipo_subscription_price_hk", "filing_price_revision_pct"])
+```
+Column names become registry slugs; `date` -> datetime64, `numeric`/`boolean` ->
+numeric. FX conversion and unit normalization are intentionally out of scope.
+
+### 5e. Collection-Time Membership Guards (`collect`)
+`build_cohort_workbook` now enforces the listing-date cohort rule on every run:
+- refuses issuers whose stock code already exists in a sibling cohort workbook
+  (cross-cohort duplicates);
+- refuses an existing cohort workbook containing known listing dates outside the
+  cohort period (issuers collected before their listing date was known must be
+  reassigned once the date lands in a later quarter).
+Both raise `ValueError` for manual reconciliation instead of writing.
+
+### 5f. Evidence Manifest & Sample Selection Logs
+- `evidence` (`make evidence`): freezes a SHA-256 manifest (`HKIPO-Evidence_SHA256.txt`,
+  versioned) of every research artifact — cohort workbooks, clean CSVs, codebooks,
+  registry, master panel, drift report, selection logs. Run when a cohort closes and
+  commit the snapshot; any later modification shows up as a hash mismatch, keeping
+  every cell traceable to the prospectus it was extracted from.
+- `exclusions` (`make exclusions`): per-cohort sample selection log
+  (`HKIPO_{tag}_Exclusions.md`, versioned) listing included issuers, excluded ones
+  with statutory reasons (GEM transfer / SPAC / listing by introduction), and
+  workbook-consistency warnings (included-but-missing issuers).
+- `make aftermarket-refresh`: refreshes aftermarket columns (1M/6M BHR, liquidity
+  decay) for every cohort config pointing at canonical workbooks. Rerun monthly as
+  listing-age windows mature (6M data needs 6 calendar months after listing).
+- Codebook dtype for Reserved/Unmatured (empty) columns comes from the registry's
+  `declared_dtype` (the cohort where the column held data), not from inference —
+  this keeps codebooks conflict-free across quarters. The drift report's section
+  5.2 flags boolean columns left empty (convention: 0/1, never blank).
+
 ### 6. Automated Regression & Safety Test Suite (`test`)
 ```bash
 cd "Data Collecting Pipeline" && python3 -m unittest discover -s prospectus_pipeline/tests -v

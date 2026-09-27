@@ -3,7 +3,7 @@
 - **样本规模 (N)**：15 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-25 21:46:59 | **数据基准**：`HKIPO-MB.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-27 12:15:39 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -177,52 +177,52 @@
 | **EX** | `6-month wealth relative vs HSTECH` | 六个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 1.28 / 中位数 1.00 / 区间 [0.57, 2.64] |
 | **EY** | `6-month average daily turnover (HK$)` | 六个月目标日前20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 72,000,129.40 / 中位数 1,409,940.00 / 区间 [49,525.50, 369,387,891.00] |
 | **EZ** | `Liquidity decay ratio (6M vs Day-1 turnover)` | 六个月窗口日均成交额相对首日成交额比率 | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.08 / 中位数 0.02 / 区间 [0.00, 0.53] |
-| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
+| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FE** | `18A/18C regulatory milestone status` | 18A/18C 监管路径与商业化里程碑状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Standard': 13, '18A (Biotech / B-tag)': 2) |
-| **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FH** | `Stabilization purchases occurred` | 稳价期内是否发生二级市场托单购买 (1=是, 0=否) | 深蓝 | `boolean` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FI** | `Over-allocation shares` | 国际配售超额配售股份数量（股） | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FJ** | `Over-allocation (% of base offer)` | 超额配售股数占基础发售股份比例 (%) | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FK** | `Over-allotment option exercise date` | 超额配售权实际行使公告日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FL** | `Shares issued under over-allotment option` | 超额配售权最终发行股份数量（股） | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FM** | `Over-allotment exercise percentage (%)` | 超额配售权行使比例 (行使股数/超额配售上限, %) | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FN** | `Post-stabilization cliff return [-5, +5] (%)` | 稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试） | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FO** | `Post-stabilization 20-day return [0, +20] (%)` | 稳价期结束后20个交易日累计收益率 (%) | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FP** | `Post-stabilization volume decay ratio (%)` | 稳价结束后20日均成交额相对稳价期内之比 (%) | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FQ** | `Day-5 BHR from Day-1 close (%)` | 挂牌首周 (T+5交易日) 二级买入持有收益率 (%) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FR** | `Day-5 wealth relative vs HSI` | 挂牌首周对标恒指财富相对比 (WR_HSI) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FS** | `Day-20 BHR from Day-1 close (%)` | 首月 (T+20交易日) 二级买入持有收益率 (%) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FT** | `Day-20 wealth relative vs HSI` | 首月对标恒指财富相对比 (WR_HSI) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FU** | `3-month BHR from Day-1 close (%)` | 首季 (T+63交易日) 二级买入持有收益率 (%) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FV** | `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 (WR_HSI) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FW** | `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 (WR_HSTECH) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FX** | `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | 深蓝 | `string` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FY** | `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | 深蓝 | `string` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `string` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `string` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `string` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `string` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GH** | `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GI** | `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GJ** | `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GK** | `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GL** | `Underwriting discretionary incentive fee rate (%)` | 承销酌情奖励费率估算 (%) | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GM** | `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GN** | `Cornerstone investor count` | 基石投资者机构总家数 | 深蓝 | `string` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GO** | `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GP** | `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GQ** | `Pre-IPO institutional investor count` | 主要 Pre-IPO 投资机构总数 | 深蓝 | `string` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GR** | `Pre-IPO state-owned backing flag` | Pre-IPO 股东中是否包含国资机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GS** | `FINI digital settlement regime` | 结算监管体制 (POST_FINI / PRE_FINI) | 深蓝 | `string` | Listing date regulatory regime | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
-| **GT** | `2025 pricing reform regime` | 发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM) | 深蓝 | `string` | Listing date regulatory regime | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失 |
+| **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FH** | `Stabilization purchases occurred` | 稳价期内是否发生二级市场托单购买 (1=是, 0=否) | 深蓝 | `boolean` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FI** | `Over-allocation shares` | 国际配售超额配售股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FJ** | `Over-allocation (% of base offer)` | 超额配售股数占基础发售股份比例 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FK** | `Over-allotment option exercise date` | 超额配售权实际行使公告日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FL** | `Shares issued under over-allotment option` | 超额配售权最终发行股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FM** | `Over-allotment exercise percentage (%)` | 超额配售权行使比例 (行使股数/超额配售上限, %) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FN** | `Post-stabilization cliff return [-5, +5] (%)` | 稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FO** | `Post-stabilization 20-day return [0, +20] (%)` | 稳价期结束后20个交易日累计收益率 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FP** | `Post-stabilization volume decay ratio (%)` | 稳价结束后20日均成交额相对稳价期内之比 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FQ** | `Day-5 BHR from Day-1 close (%)` | 挂牌首周 (T+5交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FR** | `Day-5 wealth relative vs HSI` | 挂牌首周对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FS** | `Day-20 BHR from Day-1 close (%)` | 首月 (T+20交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FT** | `Day-20 wealth relative vs HSI` | 首月对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FU** | `3-month BHR from Day-1 close (%)` | 首季 (T+63交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FV** | `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FW** | `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 (WR_HSTECH) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FX** | `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FY** | `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GH** | `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | 深蓝 | `string` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GI** | `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GJ** | `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GK** | `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GL** | `Underwriting discretionary incentive fee rate (%)` | 承销酌情奖励费率估算 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GM** | `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GN** | `Cornerstone investor count` | 基石投资者机构总家数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GO** | `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GP** | `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GQ** | `Pre-IPO institutional investor count` | 主要 Pre-IPO 投资机构总数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GR** | `Pre-IPO state-owned backing flag` | Pre-IPO 股东中是否包含国资机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GS** | `FINI digital settlement regime` | 结算监管体制 (POST_FINI / PRE_FINI) | 深蓝 | `string` | Listing date regulatory regime | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GT** | `2025 pricing reform regime` | 发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM) | 深蓝 | `string` | Listing date regulatory regime | Reserved / Unmatured (0/15 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 
 ---
 

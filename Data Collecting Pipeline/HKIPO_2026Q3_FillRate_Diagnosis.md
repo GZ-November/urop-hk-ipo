@@ -1,0 +1,76 @@
+# 2026Q3 填报率下滑诊断报告
+
+- **生成时间**：2026-09-27 | **触发**：漂移报告 5.1 节（2026Q3 vs 2026Q2 填报率环比 -10pp 以上）
+- **结论**：不是抽取提示词整体失效，而是 **7 家公司的 VC/PE 投资者字段组整组留空**（违反 codebook「0/1 不得留 NaN」约定），其中 **2 家有明确漏抽证据**，另发现 **抽取包目录分裂** 的系统性问题。
+
+## 1. 受影响公司清单与证据判定
+
+| 股票代码 | 现状 | 抽取包正文证据 | 判定 |
+|---|---|---|---|
+| 2249.HK | VC/PE=1、投资者名单已填；VC backing、机构持股占比留空 | ✅ 「Hanhe…is a private equity fund managed by…」「安徽國元種子二期創業投資基金」等明确私募持股 | **漏抽（部分字段）**：重抽 ownership 主题并补写 |
+| 6745.HK | VC 组全空 | ✅ 「Hyperion Venture Capital Partners Limited…limited liability」持股表述 | **疑似漏抽**：人工确认 Hyperion 是 Pre-IPO 股东还是发行人自身投资业务后重抽 |
+| 0668.HK | VC 组全空 | ❌ 包内无 Pre-IPO 投资者内容 | 人工确认后按约定补 0 或 NA |
+| 2475.HK | VC 组全空 | ❌ 仅有资产类别套话 | 同上 |
+| 6951.HK | VC 组全空 | ❌ 无证据 | 同上 |
+| 3308.HK | VC 组全空（Top 5 customers 有值） | ❌ 无证据 | 同上 |
+| 3223.HK | VC 组全空（Top 5 customers 有值） | ❌ 无证据 | 同上 |
+| 9976.HK | VC 组全空（Top 5 customers 有值） | ⚠️ 仅 SPC 投资者结构表述，语义模糊 | 人工判断 |
+
+注：3308/3223/9976 的 Top 5 customers 有值，说明财务主题抽取正常、缺口只在 ownership/投资者主题——处理时只需重跑对应 topic 分片，不必整家重抽。
+
+## 2. 系统性问题：抽取包目录分裂
+
+2026Q3 的抽取包分布在**两个目录**：
+
+- `prospectus_pipeline/data/packets/`（共享目录，config_2026q3.yaml 当前指向）
+- `prospectus_pipeline/datasets/HKIPO_2026-07-01_2026-09-09_HKIPO-MB/data/packets/`（collect 时代的 dataset 目录，3308/3223/9976 等 115 个文件在此）
+
+原因：Q3 采集早期可能以 dataset 目录运行过 prepare，后来 config 切到共享路径。**重抽前必须先统一**（把 dataset 目录的包合并回 `data/packets/`，或确认以哪套为准），否则按代码清单批量重抽会漏掉一半公司。
+
+## 3. 处置顺序建议
+
+1. 合并两处 packets 目录（以 `prospectus_pipeline/data/packets/` 为准）；
+2. 对 2249、6745 重跑 ownership 主题的 prepare → 抽取 → validate → write；
+3. 对 0668、2475、6951、3308、3223、9976 人工打开招股书 History/Shareholders 章节确认「确无 Pre-IPO 投资者」后，按 codebook 约定补 0（含全部衍生 flag 列），再走 write；
+4. 重跑 `make export`（2026Q3）→ `make master` → 确认 5.1 节环比恢复正常；
+5. `make evidence` 重新冻结凭证。
+
+## 4. 预防
+
+master 漂移报告已新增 **5.2 节「布尔列空值警告」**：注册表中 dtype=boolean 的列（10 列 flag）按约定必须填 0/1，任何 cohort 出现空值即列出——本次问题在未来的季度会被当场发现，而不是等环比才暴露。
+
+## 5. 处置记录（2026-09-27 执行）
+
+**第一步（已完成）**：合并抽取包目录——`datasets/HKIPO_2026-07-01_2026-09-09_HKIPO-MB/data/` 下 175 个独有文件归位至 `prospectus_pipeline/data/`，354 个同名文件经 SHA-256 比对内容一致，0 冲突。
+
+**第二步（已完成）**：逐家查阅招股书全文（`data/text/HKIPO-MB*.jsonl`）History/股本变动章节与董事章节，按 `schema/academic_vc_methodology.md` 分类契约判定并写入 65 个单元格（写入前已备份至 `backups/`）：
+
+| 公司 | 招股书证据（页码） | 判定与写入 |
+|---|---|---|
+| 9976.HK | p158 2018 年增资（元禾璞华认购）；p159 2019 年 11 月增资（大基金、苏州上凯创投、深圳力合创投认购）；p160 上市前持股表（大基金 6.93% + 元禾璞华 4.62% + 聚源聚芯 2.31% + 上凯 2.31%）；p312 元禾璞华合伙人任董事 | **确属漏抽**。VC/PE=1、VC=1、Gov=1（大基金/聚源聚芯）、Top-tier=1（元禾璞华）、stake=16.17%、席位=1、最早轮次=2018-06-12 增资、持有 8.22 年 |
+| 3223.HK | p139 2009-12-24 股改时盈富泰克创投持股 17.99% 且为发起人（p446）；主要股东章节已无盈富泰克 | **确属漏抽（历史投资者）**。VC/PE=1、VC=1、stake=0（上市前已退出）、最早轮次=2005-2009 股转/增资、持有 16.62 年（以股改日为下限，入股日未披露） |
+| 2249.HK | p22/p108 控股股东体系（合肥建投→芯屏）；PIHC 8.07%、华勤 6.00%、勤合 5.00%；p172 PIHC 高管任董事 | **部分漏抽**。补 VC=1（按 CVC=1 行 VC 全为 1 的库内约定）、Top-tier=0、stake=35.44%；PE/CVC/Gov/席位已有值保留；duration 留白（入股日未披露，待复核） |
+| 0668.HK / 2475.HK / 6951.HK / 3308.HK | History 章节仅见子公司层面基金、董监高履历或 A 股定增（上市后），无 LISTCO 层面 Pre-IPO 机构入股 | **确认无**，按约定补 0（flags + stake + 席位），文本列留空（同 2026Q2 2290.HK 先例） |
+| 6745.HK | p216 Hyperion 出现在基石投资者名单（非 History 章节） | **确认无**：基石身份按方法论不构成 BA，补 0（修正原报告"疑似漏抽"的初步判断） |
+
+**第三步（待办，第二批次）**：布尔列校验与逐列清点新发现的零星缺口——
+1377.HK（8 项：CVC/Gov/Top-tier/stake/席位/轮次/duration）、7687.HK（stake/席位）、2667.HK（Top-tier/席位）、0537.HK（stake）、9971.HK 与 1770.HK（Top-tier 判定）、2797.HK 与 3752.HK（席位）；另有 Top 5 customers 列 7 家缺漏（0537/2249/0625/0668/2475/6951/6745，属 financials 主题，另行补抽）。深蓝 flag 列（Stabilization/Sponsor affiliate/Cornerstone 国资/Crossover/国资 backing）在 2025Q1 与 2026Q3 整列为空，需对这两个 cohort 重跑 flags 阶段。
+
+**效果**：重导出后 2026Q3 的 VC/PE、VC、PE 三列填报率 100%，CVC 95.7%、Gov 95.7%、机构持股 87.0%、席位 78.3%；5.1 节相关环比由 -17~-21pp 转为 +13~+31pp。**所有新写入值建议走一次独立复核**（证据页码已列于上表）。
+
+### 第二批次处置记录（2026-09-27 执行，写入 15 格，均按招股书证据 + academic_vc_methodology 分类契约）
+
+| 公司 | 证据 | 写入 |
+|---|---|---|
+| 1377.HK | 两只合伙制基金各持 0.87%（p125 上市前表）；董事章节无投资者关联董事；无国资/产业/顶级表述 | CVC=0、Gov=0、Top-tier=0、stake=1.74%、席位=0；轮次/年限无披露日期，按手册保持 NA/NaN |
+| 7687.HK | p124 上市前持股表具名机构组合计（兴航系 12.22 + 上海辰韬系 4.09 + 紫金系 3.87 + 辰韬兴杭 1.55 + NIO Magic Academy 3.22 + 天津斯道 1.54 + 郑州高新 0.40 + 无锡星启 0.53 + 熙和 0.57 + 同力 0.53）；p193 賴盛民为 Minxi 系非执行董事 | stake=28.52%、席位=1 |
+| 2667.HK | p206 TRT 投资部总监任非执行董事；TRT 系产业基金非顶级名单 | Top-tier=0、席位=1 |
+| 0537.HK | p43 五大客户占 year-1 收入 30.6% | Top 5 customers=0.306；stake 持股表未定位到，保持 NaN 待复核 |
+| 9971.HK / 1770.HK | 投资者均不在方法论顶级名单（红杉/高瓴/启明/经纬/IDG/淡马锡/君联等） | Top-tier=0 |
+| 2797.HK | p188 云之上为核心管理层合伙 | 席位=0 |
+| 3752.HK | 董事章节无投资者关联董事 | 席位=0 |
+| 6745.HK | p16 五大客户占 year-1 收入 21.3% | Top 5 customers=0.213 |
+
+**Q3 之后状态**：VC 全家族 11 列中 9 列 100%（席位 100%、CVC/Gov 95.7%）；唯一仍空的是 2249/0537 的个别 NaN（入股日未披露 / 持股表未定位，按手册保留 NaN 待复核）。
+
+**仍待办**：Top 5 customers 另有 5 家未见集中度表述（2249/0625/0668/2475/6951——Customer A-E 表存在但文本层错位，不宜盲算合计，走 financials 主题抽取包补抽）；2249 的 duration（PIHC 入股日无披露）与 0537 的 stake（上市前持股表未定位到）按手册保留 NaN；深蓝 5 个 flag 列（Stabilization/Sponsor affiliate/Cornerstone 国资/Crossover/国资 backing）在 2025Q1 与 2026Q3 整列为空——由 `expansion` 阶段从稳价/市场面板的预计算数据（stabilization_events.csv 等）推导，补跑顺序：先对该两 cohort 跑 `python3 run.py aftermarket --config …` 与面板阶段生成 `out_master/*.csv`，再 `python3 run.py expansion --config …`（写回受哈希授权门控，需按流程复核）。

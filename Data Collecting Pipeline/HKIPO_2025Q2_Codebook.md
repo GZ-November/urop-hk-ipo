@@ -3,7 +3,7 @@
 - **样本规模 (N)**：27 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-26 11:56:19 | **数据基准**：`HKIPO-MB.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-27 12:15:40 | **数据基准**：`HKIPO-MB.xlsx` (Sheet: NLR)
 
 ---
 
@@ -177,10 +177,10 @@
 | **EX** | `6-month wealth relative vs HSTECH` | 六个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 1.26 / 中位数 0.88 / 区间 [0.36, 5.61] |
 | **EY** | `6-month average daily turnover (HK$)` | 六个月目标日前20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 130,154,338.57 / 中位数 27,920,060.00 / 区间 [146,460.00, 1,269,077,714.50] |
 | **EZ** | `Liquidity decay ratio (6M vs Day-1 turnover)` | 六个月窗口日均成交额相对首日成交额比率 | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.26 / 中位数 0.07 / 区间 [0.00, 3.99] |
-| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失 |
-| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失 |
-| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失 |
-| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失 |
+| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/27 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FE** | `18A/18C regulatory milestone status` | 18A/18C 监管路径与商业化里程碑状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Standard': 23, '18A (Biotech / B-tag)': 4) |
 | **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('China International Capital Corporation / Sponsor-OC': 27) |
 | **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | 100% 完备 | 共 15 种取值 ('2025-07-10': 3, '2025-07-23': 3, '2025-07-26': 3) |

@@ -3,7 +3,7 @@
 - **样本规模 (N)**：38 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-25 16:57:48 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-27 12:15:41 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -156,7 +156,7 @@
 | **EC** | `First trading day volume (shares)` | 首日上市二级市场全天成交量（股） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 19,368,847.08 / 中位数 12,966,926.50 / 区间 [2,240,320.00, 150,709,945.00] |
 | **ED** | `First-day flipping ratio (%)` | 首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.39 / 中位数 0.35 / 区间 [0.12, 0.92] |
 | **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,166,665,934.21 / 中位数 728,528,050.00 / 区间 [111,474,300.00, 5,521,275,600.00] |
-| **EF** | `Offer mechanism` | 发售与回拨机制（Mechanism A 传统 / Mechanism B 灵活） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Mechanism B': 32, 'Mechanism A': 6) |
+| **EF** | `Offer mechanism` | 适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Mechanism B': 32, 'Mechanism A': 6) |
 | **EG** | `Applicable IPO rules / transition basis` | 适用之上市规则过渡基准（FINI 改革规则） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 32, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 6) |
 | **EH** | `Company Chinese Name` | Company Chinese Name | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (37/38 (97.37%)) | 共 37 种取值 ('上海壁仞科技股份有限公司': 1, '北京智谱华章科技股份有限公司': 1, '上海天数智芯半导体股份有限公司': 1) |
 | **EI** | `Current listing status` | 当前挂牌存续状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Active': 37, 'Suspended': 1) |
@@ -177,10 +177,10 @@
 | **EX** | `6-month wealth relative vs HSTECH` | 六个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 1.60 / 中位数 0.85 / 区间 [0.35, 16.66] |
 | **EY** | `6-month average daily turnover (HK$)` | 六个月目标日前20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 579,847,504.09 / 中位数 72,406,991.00 / 区间 [108,175.00, 5,832,790,800.00] |
 | **EZ** | `Liquidity decay ratio (6M vs Day-1 turnover)` | 六个月窗口日均成交额相对首日成交额比率 | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (27/38 (71.05%)) | 均值 0.27 / 中位数 0.06 / 区间 [0.00, 2.62] |
-| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失 |
-| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失 |
-| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失 |
-| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失 |
+| **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FE** | `18A/18C regulatory milestone status` | 18A/18C 监管路径与商业化里程碑状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 3 种取值 ('Standard': 29, '18C (Specialist Tech)': 6, '18A (Biotech / B-tag)': 3) |
 | **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 7 种取值 ('China International Capital Corporation / Sponsor-OC': 24, 'China International Capital Corporation Hong Kong Securities Limited': 4, 'Morgan Stanley Asia Limited': 3) |
 | **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | 100% 完备 | 共 26 种取值 ('2026-03-05': 3, '2026-04-08': 3, '2026-04-29': 3) |

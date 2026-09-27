@@ -16,6 +16,10 @@ python3 -m pip install -r requirements.txt
 # 按上市日期建立样本 / Create a cohort by listing date
 python3 run.py collect --period-start 2026-04-01 --period-end 2026-06-30
 
+# 变量注册表 + master 分析面板与漂移报告 / Variable registry + master panel with drift report
+python3 run.py registry
+python3 run.py master --derive   # --derive 附带免汇率派生比率列 / appends currency-free ratio columns
+
 # 检查流水线 / Run tests
 make test
 ```
@@ -33,6 +37,7 @@ make test
 - [2026 Q2 工作簿 / 2026 Q2 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2026Q2.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2026Q2_Codebook.md)
 - [2026 Q3 工作簿 / 2026 Q3 workbook](Data%20Collecting%20Pipeline/HKIPO-MB2026Q3.xlsx) · [代码本 / Codebook](Data%20Collecting%20Pipeline/HKIPO_2026Q3_Codebook.md) · [市场报告 / Market report](Data%20Collecting%20Pipeline/HKIPO-MB2026Q3_Market_Report.md)
 - [领域术语 / Domain terms](CONTEXT.md)
+- [变量注册表 / Variable registry](Data%20Collecting%20Pipeline/HKIPO_Variable_Registry.yaml)
 
 研究工作簿和代码本可以纳入版本控制；原始 PDF、下载缓存、逐公司抽取 JSON 和 CSV 导出保留在本地。Research workbooks and codebooks may be versioned; raw PDFs, download caches, per-company extraction JSON, and CSV exports stay local.
 

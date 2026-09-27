@@ -306,6 +306,81 @@ def write_cohort_config(
     return config_path
 
 
+def _iter_workbook_codes_and_listing_dates(path: Path) -> list[tuple[str, dt.date | None]]:
+    """Read (stock code, listing date) pairs from an NLR cohort workbook."""
+    import openpyxl
+
+    workbook = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    try:
+        rows = workbook["NLR"].iter_rows(min_row=2, min_col=2, max_col=5, values_only=True)
+        pairs: list[tuple[str, dt.date | None]] = []
+        for row in rows:
+            code = row[0]
+            if code in (None, ""):
+                continue
+            listing = row[3]
+            if isinstance(listing, dt.datetime):
+                listing = listing.date()
+            if not isinstance(listing, dt.date):
+                listing = None
+            pairs.append((str(code).strip(), listing))
+        return pairs
+    finally:
+        workbook.close()
+
+
+def _sibling_cohort_workbooks(workbook_path: Path) -> list[Path]:
+    """Other cohort workbooks living next to the target (canonical cohorts share WS root).
+
+    Only date-tagged cohort workbooks (HKIPO-MB2026Q2.xlsx style) are scanned;
+    templates and non-cohort files are ignored.
+    """
+    siblings = []
+    for path in sorted(workbook_path.parent.glob("HKIPO-MB[0-9]*.xlsx")):
+        if path.resolve() != workbook_path.resolve():
+            siblings.append(path)
+    return siblings
+
+
+def check_cross_cohort_conflicts(workbook_path: Path, codes: list[str]) -> None:
+    """Refuse an issuer that already belongs to another cohort workbook.
+
+    Cohort membership follows the listing date; the same issuer must never be
+    collected into two cohorts (2026Q2 once held issuers that listed in July).
+    """
+    wanted = set(codes)
+    conflicts: dict[str, list[str]] = {}
+    for sibling in _sibling_cohort_workbooks(workbook_path):
+        sibling_codes = {code for code, _ in _iter_workbook_codes_and_listing_dates(sibling)}
+        overlap = sorted(wanted & sibling_codes)
+        if overlap:
+            conflicts[sibling.name] = overlap
+    if conflicts:
+        detail = "; ".join(f"{name}: {', '.join(hits)}" for name, hits in conflicts.items())
+        raise ValueError(
+            "Cross-cohort duplicates: these stock codes already exist in another cohort "
+            f"workbook; assign each issuer to the cohort of its listing date first. {detail}"
+        )
+
+
+def check_listing_dates_within_period(workbook_path: Path, start: dt.date, end: dt.date) -> None:
+    """Flag known listing dates outside the cohort period for manual reconciliation.
+
+    Issuers collected while their listing date was still unknown (prospectus-date
+    fallback) must be moved out once the listing date lands in a later quarter.
+    """
+    offenders = []
+    for code, listing in _iter_workbook_codes_and_listing_dates(workbook_path):
+        if listing is not None and not (start <= listing <= end):
+            offenders.append(f"{code} ({listing.isoformat()})")
+    if offenders:
+        raise ValueError(
+            f"Existing cohort workbook has listing dates outside {start.isoformat()}.."
+            f"{end.isoformat()}: {', '.join(offenders)}. Reconcile manually: membership "
+            "follows the listing date, so move these issuers to the matching cohort."
+        )
+
+
 def build_cohort_workbook(
     start: dt.date,
     end: dt.date,
@@ -350,6 +425,7 @@ def build_cohort_workbook(
     duplicates = sorted(code for code, count in Counter(codes).items() if count > 1)
     if duplicates:
         raise ValueError("Reused stock codes in requested interval require separate cohorts: " + ", ".join(duplicates))
+    check_cross_cohort_conflicts(workbook_path, codes)
 
     if workbook_path.exists():
         current = openpyxl.load_workbook(workbook_path, read_only=True, data_only=True)
@@ -363,6 +439,7 @@ def build_cohort_workbook(
                 f"Existing cohort workbook differs from current official issuer list: {workbook_path}. "
                 "Reconcile it manually; collected cells were not overwritten."
             )
+        check_listing_dates_within_period(workbook_path, start, end)
         return workbook_path
 
     if not template_path.is_file():

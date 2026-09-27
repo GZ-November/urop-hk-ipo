@@ -458,6 +458,26 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     academic_by_header = {norm_header(k): v for k, v in ACADEMIC_VARS.items()}
     extra_by_header = {norm_header(k): v for k, v in EXTRA_HEADER_VARS.items()}
 
+    # 变量注册表声明的类型（declarations from HKIPO_Variable_Registry.yaml）：
+    # 全空列（Reserved / Unmatured）不再靠推断，避免跨季度 numeric/string 翻转
+    declared_by_header: dict[str, str] = {}
+    try:
+        from master_panel import REGISTRY_NAME, load_registry
+        registry_path = WS / REGISTRY_NAME
+        if registry_path.is_file():
+            declared_by_header = {
+                v["header"]: (v.get("declared_dtype") or v.get("dtype") or "")
+                for v in load_registry(registry_path)["variables"]
+            }
+    except Exception:
+        declared_by_header = {}
+    declared_dtype_full = {
+        "numeric": "numeric",
+        "boolean": "boolean (0/1)",
+        "date": "date (YYYY-MM-DD)",
+        "string": "string / categorical",
+    }
+
     start_row = cfg["data_start_row"]
     max_col = ws.max_column
 
@@ -556,7 +576,11 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             "fill_rate_pct": round(fill_rate, 2),
         }
 
-        if is_bool:
+        declared = declared_dtype_full.get(declared_by_header.get(raw_header, ""))
+        if valid_n == 0 and declared:
+            dtype = declared
+            stats["summary_display"] = "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
+        elif is_bool:
             dtype = "boolean (0/1)"
             bool_ints = [int(v) for v in valid_vals]
             ones = sum(1 for v in bool_ints if v == 1)

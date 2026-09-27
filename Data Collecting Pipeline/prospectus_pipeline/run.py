@@ -10,6 +10,8 @@
   python3 prospectus_pipeline/run.py all           # find + download + prepare
   python3 prospectus_pipeline/run.py collect --period-start YYYY-MM-DD --period-end YYYY-MM-DD
                                                  # 按上市日期建立并推进普通主板 IPO cohort
+  python3 prospectus_pipeline/run.py registry    # 合并各季度 Codebook -> 变量注册表 YAML
+  python3 prospectus_pipeline/run.py master      # 合并全部 cohort CSV -> master 面板 + 漂移报告
 加 --limit N 只处理前 N 家，--only 6082.HK 只处理指定公司。
 """
 from __future__ import annotations
@@ -209,6 +211,89 @@ def cmd_state(cfg, args, companies):
     cmd = [sys.executable, str(ROOT / "tools" / "state.py"), *args.extra,
            "--target", args.target]
     return subprocess.call(cmd, cwd=WS)
+
+
+def cmd_registry(cfg, args, companies):
+    """合并各季度 Codebook，生成机器可读变量注册表（单一事实来源）。"""
+    from master_panel import REGISTRY_NAME, build_registry
+    out_path = WS / REGISTRY_NAME
+    registry = build_registry(WS, out_path)
+    meta = registry["meta"]
+    print(f"\n变量注册表已生成：{out_path}")
+    print(f"  - 变量数：{meta['variable_count']}（权威 Codebook：{meta['authoritative_codebook']}）")
+    for book, count in meta["variables_per_codebook"].items():
+        print(f"  - {book}: {count} 个变量定义")
+    if meta["conflicts"]:
+        print(f"  ⚠️ 跨 cohort 定义冲突 {meta['conflict_count']} 处（已按最新口径合并，详见注册表 meta.conflicts）：")
+        for c in meta["conflicts"][:20]:
+            print(f"    - 列 {c['letter']} 字段 {c['field']}: {c['cohort_book']} 为 `{c['value']}`，最新为 `{c['latest']}`")
+        if len(meta["conflicts"]) > 20:
+            print(f"    ... 其余 {len(meta['conflicts']) - 20} 处见注册表文件")
+    else:
+        print("  - 各季度 Codebook 变量定义完全一致，无冲突")
+    return 0
+
+
+def cmd_master(cfg, args, companies):
+    """合并全部 cohort clean CSV 为 master 面板 + 漂移报告。"""
+    from master_panel import MASTER_STEM, REGISTRY_NAME, build_master
+    summary = build_master(WS, WS / REGISTRY_NAME, derive=bool(getattr(args, "derive", False)))
+    print(f"\nMaster 面板：{summary['master_csv']}")
+    print(f"  - cohort：{'、'.join(summary['cohort_order'])}")
+    print(f"  - 样本合计：{summary['total_rows']} 家 × {summary['variable_count']} 列"
+          + (f" + {len(summary['derived_columns'])} 派生列" if summary["derived_columns"] else ""))
+    if summary["derived_skipped"]:
+        print(f"  - 派生列缺源跳过：{', '.join(summary['derived_skipped'])}")
+    align = "✅ 完全一致" if summary["headers_aligned"] else "❌ 存在漂移"
+    print(f"  - 表头跨 cohort 对齐：{align}")
+    if summary["registry_ok"] is False:
+        print("  - 注册表校验：❌ 不一致（详见漂移报告）")
+        for note in summary["registry_notes"][:10]:
+            print(f"      {note}")
+    elif summary["registry_ok"]:
+        print("  - 注册表校验：✅ 逐列一致")
+    if summary["duplicate_codes"] or summary["cross_cohort_duplicate_codes"]:
+        print("  - 重复股票代码：❌")
+        for code, cohort_tags in summary["cross_cohort_duplicate_details"].items():
+            print(f"      跨 cohort：{code} 出现于 {'、'.join(cohort_tags)}")
+        for tag, dups in summary["duplicate_codes"].items():
+            print(f"      cohort {tag} 内部：{', '.join(dups)}")
+    else:
+        print("  - 重复股票代码：无")
+    n_warn = sum(len(v) for v in summary["date_violations"].values())
+    print(f"  - 上市日期季度一致性警告：{n_warn} 条")
+    n_ident = len(summary["identity_violations"])
+    print(f"  - 股数恒等式违规：{n_ident} 行"
+          + (f"（缺列跳过：{', '.join(summary['identities_skipped'])}）" if summary["identities_skipped"] else ""))
+    print(f"  - 填报率 <100% 的列：{len(summary['low_fill_columns'])} 个（明细见漂移报告）")
+    if summary["boolean_fill_gaps"]:
+        print(f"  - ⚠️ 布尔列空值（违反 0/1 约定）：{len(summary['boolean_fill_gaps'])} 列 "
+              f"{'、'.join(summary['boolean_fill_gaps'])}")
+    print(f"  漂移报告：{summary['drift_report']}")
+    return 1 if summary["hard_errors"] else 0
+
+
+def cmd_evidence(cfg, args, companies):
+    """生成研究数据工件的 SHA-256 证据清单（cohort 关闭后运行并入库）。"""
+    from evidence import build_evidence_manifest
+    out_path, entries = build_evidence_manifest()
+    print(f"\n证据清单已生成：{out_path}（{len(entries)} 个工件）")
+    for name, digest in entries:
+        print(f"  {digest[:12]}…  {name}")
+    return 0
+
+
+def cmd_exclusions(cfg, args, companies):
+    """生成单 cohort 样本筛选日志（纳入/剔除原因 + 工作簿一致性核对）。"""
+    from exclusions import build_exclusion_log
+    out_path, summary = build_exclusion_log(cfg)
+    print(f"\n样本筛选日志已生成：{out_path}")
+    print(f"  - 纳入 {summary['included']} 家 | 剔除 {summary['excluded']} 家 | 工作簿 {summary['workbook']} 家")
+    if summary["missing_from_workbook"]:
+        print(f"  - ❌ 判定纳入但工作簿缺失：{', '.join(summary['missing_from_workbook'])}")
+    if summary["unexpected_in_workbook"]:
+        print(f"  - ⚠️ 工作簿多出（官方名单未判定纳入）：{', '.join(summary['unexpected_in_workbook'])}")
+    return 1 if summary["missing_from_workbook"] else 0
 
 
 def cmd_aftermarket(cfg, args, companies):
@@ -447,6 +532,7 @@ def main() -> int:
                                      "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
                                      "report", "codebook", "export", "status", "external", "aftermarket", "academic", "expansion",
                                      "disclosure_notes", "search", "state",
+                                     "registry", "master", "evidence", "exclusions",
                                      "merge_topics", "all", "collect"])
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")
     ap.add_argument("--dry-run", action="store_true", help="演练模式，不写回工作簿")
@@ -457,6 +543,8 @@ def main() -> int:
                     help="validate/write/audit 作用于哪套字段（默认 prospectus，audit 支持 all）")
     ap.add_argument("--fill-missing", action="store_true",
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
+    ap.add_argument("--derive", action="store_true",
+                    help="master 阶段：附加免汇率派生比率列（leverage/ROA/成长性等）")
     ap.add_argument("--workbook", default=None,
                     help="指定目标工作簿路径（可为相对路径或绝对路径）")
     ap.add_argument("--config", default=None,
@@ -512,7 +600,7 @@ def main() -> int:
     else:
         for name in ("HKIPO_WORKBOOK", "HKIPO_PERIOD_START", "HKIPO_PERIOD_END"):
             os.environ.pop(name, None)
-    if args.stage in ("search", "state"):
+    if args.stage in ("search", "state", "registry", "master", "evidence", "exclusions"):
         return globals()[f"cmd_{args.stage}"](cfg, args, None)
     companies = read_companies(cfg)
     cfg["dataset"]["expected_companies"] = len(companies)
