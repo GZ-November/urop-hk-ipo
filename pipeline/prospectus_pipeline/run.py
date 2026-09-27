@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """招股书自动采集流水线 CLI。
 
-用法：
-  python3 prospectus_pipeline/run.py find          # 定位招股书 PDF 链接
-  python3 prospectus_pipeline/run.py download      # 下载 PDF
-  python3 prospectus_pipeline/run.py prepare       # 抽文本 + 分组切片 + 生成 AI 抽取包
-  python3 prospectus_pipeline/run.py validate      # 校验 AI 抽取结果
-  python3 prospectus_pipeline/run.py write         # 写回模板（仅浅蓝列）
-  python3 prospectus_pipeline/run.py all           # find + download + prepare
-  python3 prospectus_pipeline/run.py collect --period-start YYYY-MM-DD --period-end YYYY-MM-DD
-                                                 # 按上市日期建立并推进普通主板 IPO cohort
-  python3 prospectus_pipeline/run.py registry    # 合并各季度 Codebook -> 变量注册表 YAML
-  python3 prospectus_pipeline/run.py master      # 合并全部 cohort CSV -> master 面板 + 漂移报告
+31 个 stage 登记于本文件的 STAGES 表（含每个 stage 的说明与返回值协议）；
+运行 `python3 prospectus_pipeline/run.py --help` 查看全部 stage。
+
+常用：
+  python3 run.py collect --period-start YYYY-MM-DD --period-end YYYY-MM-DD
+                                                 # 按上市日期建立并推进 cohort
+  python3 run.py export                          # clean CSV + Codebook
+  python3 run.py master [--derive]               # master 面板 + 漂移报告
+  python3 run.py registry / evidence / exclusions
 加 --limit N 只处理前 N 家，--only 6082.HK 只处理指定公司。
 """
 from __future__ import annotations
@@ -20,6 +18,7 @@ import argparse
 import json
 import os
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent          # prospectus_pipeline/
@@ -529,14 +528,70 @@ def cmd_merge_topics(cfg, args, companies):
     return 0 if success == len(codes) else 1
 
 
+
+# --------------------------------------------------------------------------- #
+# Stage 注册表：新增 stage 只需 (a) 写 cmd_ 函数 (b) 在此登记一行
+# --------------------------------------------------------------------------- #
+
+@dataclass(frozen=True)
+class Stage:
+    """一个 CLI stage 的登记项。result_check 约定返回值如何映射退出码：
+    int = int 结果即退出码；validate_dict = dict.errors 非空则失败；
+    tool_results = 列表结果逐项检查 pdf/packet/status；none = 忽略结果。"""
+    help: str
+    wants_companies: bool = True
+    result_check: str = "int"
+    fn: str = ""          # 默认 cmd_<stage>
+
+
+STAGES: dict[str, Stage] = {
+    "find":             Stage("定位招股书 PDF 链接", result_check="tool_results"),
+    "download":         Stage("下载招股书 PDF", result_check="tool_results"),
+    "prepare":          Stage("抽文本 + 切片 + 生成 AI 抽取包", result_check="tool_results"),
+    "allot_index":      Stage("索引配发结果公告", result_check="tool_results"),
+    "allot":            Stage("下载并抽取配发公告", result_check="tool_results"),
+    "greenshoe":        Stage("绿鞋超额配售信息抽取"),
+    "cornerstone":      Stage("基石投资者信息抽取"),
+    "derive_allot":     Stage("配发结果确定性派生"),
+    "validate":         Stage("校验 AI 抽取结果（70 字段契约）", result_check="validate_dict"),
+    "validate_ext":     Stage("校验扩展抽取"),
+    "write":            Stage("写回工作簿（仅浅蓝列）"),
+    "audit":            Stage("逐格审计 vs 已验证抽取"),
+    "cross_check":      Stage("上市规则与跨字段计量一致性审计"),
+    "report":           Stage("宏观市场与学术研究报告"),
+    "export":           Stage("导出 clean CSV + Codebook（发布至 exports/ 与 codebooks/）"),
+    "codebook":         Stage("export 的别名", fn="cmd_export"),
+    "status":           Stage("查看流水线状态与哈希对齐"),
+    "external":         Stage("外部数据采集编排（行情/HIBOR/HSIC/flags/rules）", result_check="tool_results"),
+    "aftermarket":      Stage("二级市场跨期表现与流动性 (Col 139-161)"),
+    "academic":         Stage("8 个第一阶段学术衍生变量"),
+    "expansion":        Stage("写回 Col 162-202 学术扩展列"),
+    "disclosure_notes": Stage("披露附注推导"),
+    "search":           Stage("搜索工作簿内容", wants_companies=False),
+    "state":            Stage("查看逐公司抽取状态", wants_companies=False),
+    "registry":         Stage("合并季度 Codebook → 变量注册表 YAML", wants_companies=False),
+    "master":           Stage("合并 cohort CSV → master 面板 + 漂移报告", wants_companies=False),
+    "evidence":         Stage("SHA-256 证据清单", wants_companies=False),
+    "exclusions":       Stage("单 cohort 样本筛选日志", wants_companies=False),
+    "merge_topics":     Stage("合并主题分片包"),
+    "collect":          Stage("按上市日期建立并推进 cohort"),
+    "all":              Stage("find + download + prepare 三连"),
+}
+
+
+def stage_fn(stage: str):
+    """解析 stage 的实现函数：表内显式 fn 优先，否则 cmd_<stage>。"""
+    fn = STAGES[stage].fn or f"cmd_{stage}"
+    return globals()[fn]
+
+
 def main() -> int:
-    ap = argparse.ArgumentParser(description="招股书 / 配发公告自动采集流水线")
-    ap.add_argument("stage", choices=["find", "download", "prepare", "allot_index", "allot", "greenshoe", "cornerstone",
-                                     "derive_allot", "validate", "validate_ext", "write", "audit", "cross_check",
-                                     "report", "codebook", "export", "status", "external", "aftermarket", "academic", "expansion",
-                                     "disclosure_notes", "search", "state",
-                                     "registry", "master", "evidence", "exclusions",
-                                     "merge_topics", "all", "collect"])
+    ap = argparse.ArgumentParser(
+        description="招股书 / 配发公告自动采集流水线",
+        epilog="stage 一览：\n" + "\n".join(
+            f"  {name:<18} {s.help}" + ("" if s.wants_companies else "  (无需发行人列表)")
+            for name, s in STAGES.items()))
+    ap.add_argument("stage", choices=list(STAGES), help="要执行的 stage（详见 epilog 一览）")
     ap.add_argument("extra", nargs="*", default=[], help="传递给 search/state 的额外参数")
     ap.add_argument("--dry-run", action="store_true", help="演练模式，不写回工作簿")
     ap.add_argument("--no-topics", action="store_true", help="跳过生成 4 个主题分片包")
@@ -603,8 +658,8 @@ def main() -> int:
     else:
         for name in ("HKIPO_WORKBOOK", "HKIPO_PERIOD_START", "HKIPO_PERIOD_END"):
             os.environ.pop(name, None)
-    if args.stage in ("search", "state", "registry", "master", "evidence", "exclusions"):
-        return globals()[f"cmd_{args.stage}"](cfg, args, None)
+    if not STAGES[args.stage].wants_companies:
+        return stage_fn(args.stage)(cfg, args, None)
     companies = read_companies(cfg)
     cfg["dataset"]["expected_companies"] = len(companies)
     print(f"工作簿 {cfg['workbook']} 共 {len(companies)} 家公司")
@@ -621,16 +676,19 @@ def main() -> int:
     rc = 0
     for s in stages:
         print(f"\n=== {s} ===")
-        result = globals()[f"cmd_{s}"](cfg, args, companies)
-        if s == "validate" and isinstance(result, dict) and result.get("errors"):
-            rc = 1
-        elif s == "validate_ext" and isinstance(result, int):
-            rc = result
-        elif s in {"find", "download", "prepare", "allot"} and isinstance(result, list):
-            if not result or any(not (r.get("pdf") or r.get("packet_path") or r.get("status") == "ok") for r in result):
+        result = stage_fn(s)(cfg, args, companies)
+        check = STAGES[s].result_check
+        if check == "validate_dict":
+            if isinstance(result, dict) and result.get("errors"):
                 rc = 1
-        elif isinstance(result, int):
-            rc = result
+        elif check == "tool_results":
+            if isinstance(result, list) and (
+                not result or any(not (r.get("pdf") or r.get("packet_path") or r.get("status") == "ok") for r in result)
+            ):
+                rc = 1
+        elif check == "int":
+            if isinstance(result, int):
+                rc = result
         if rc:
             break
     return rc

@@ -302,6 +302,14 @@ def build_registry(
     latest_book = max(per_book)  # 文件名含 cohort 标签，字典序即时间序
     latest = per_book[latest_book]
 
+    try:
+        from variable_catalog import lookup_tables
+        green_t, ext_t, acad_t, extra_t = lookup_tables()
+        catalog_by_header = {**green_t, **ext_t, **acad_t, **extra_t}
+    except Exception:
+        catalog_by_header = {}
+    from workbook_reader import norm_header
+
     conflicts: list[dict[str]] = []
     variables: list[dict[str, Any]] = []
     used_slugs: set[str] = set()
@@ -333,6 +341,16 @@ def build_registry(
                         "cohort_book": book,
                         "value": table[letter][field],
                     })
+        # 目录核对：Codebook 定义 vs variable_catalog（authored 来源）——出现漂移即记录
+        catalog_entry = catalog_by_header.get(norm_header(definition["header"]))
+        if catalog_entry and catalog_entry[1] != definition["description_zh"]:
+            conflicts.append({
+                "letter": letter,
+                "field": "catalog_desc",
+                "latest": definition["description_zh"],
+                "cohort_book": "variable_catalog",
+                "value": catalog_entry[1],
+            })
         slug = slugify(definition["header"])
         while slug in used_slugs:
             slug += "_x"
