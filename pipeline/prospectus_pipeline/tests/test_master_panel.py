@@ -8,8 +8,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 WS = ROOT.parent
 
+from paths import REGISTRY_NAME  # noqa: E402
 from master_panel import (
     DERIVED_SPECS,
+    check_registry_consistency,
     MASTER_STEM,
     build_master,
     build_registry,
@@ -212,6 +214,28 @@ class IdentityAndDerivedTests(unittest.TestCase):
             with Path(summary["master_csv"]).open(encoding="utf-8-sig", newline="") as fh:
                 rows = list(csv.reader(fh))
             self.assertEqual(len(rows[0]), 2 + len(SYNTH_HEADERS))
+
+
+class RegistryCheckTests(unittest.TestCase):
+    """run.py registry --check 的三方一致性校验（CI 安全：输入均为版本控制文件）。"""
+
+    def test_check_passes_on_real_artifacts(self):
+        issues = check_registry_consistency(WS)
+        self.assertEqual(issues, [])
+
+    def test_check_detects_tampered_registry_description(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            shutil.copytree(WS / "registry", tmp / "registry")
+            shutil.copytree(WS / "codebooks", tmp / "codebooks")
+            reg_path = tmp / "registry" / REGISTRY_NAME
+            reg = load_registry(reg_path)
+            reg["variables"][0]["description_zh"] = "被篡改的描述"
+            import yaml as _yaml
+            reg_path.write_text(_yaml.safe_dump(reg, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            issues = check_registry_consistency(tmp)
+            self.assertTrue(any("中文释义" in i for i in issues))
 
 
 class RealArtifactTests(unittest.TestCase):

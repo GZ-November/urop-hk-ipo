@@ -214,7 +214,21 @@ def cmd_state(cfg, args, companies):
 
 
 def cmd_registry(cfg, args, companies):
-    """合并各季度 Codebook，生成机器可读变量注册表（单一事实来源）。"""
+    """合并各季度 Codebook，生成机器可读变量注册表。
+
+    --check：只读三方一致性校验（variable_catalog ↔ 最新 Codebook ↔ registry），
+    不一致返回退出码 1，用于阻塞 make check / CI。
+    """
+    if getattr(args, "check", False):
+        from master_panel import check_registry_consistency
+        issues = check_registry_consistency(WS)
+        if issues:
+            print("❌ registry 一致性校验失败：")
+            for issue in issues:
+                print(f"  - {issue}")
+            return 1
+        print("✅ registry 一致性校验通过：variable_catalog ↔ 最新 Codebook ↔ registry")
+        return 0
     from master_panel import REGISTRY_NAME, build_registry
     from paths import registry_path as layout_registry_path
     out_path = layout_registry_path(WS)
@@ -603,6 +617,8 @@ def main() -> int:
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--derive", action="store_true",
                     help="master 阶段：附加免汇率派生比率列（leverage/ROA/成长性等）")
+    ap.add_argument("--check", action="store_true",
+                    help="registry 阶段：只读三方一致性校验（失败退出码 1）")
     ap.add_argument("--workbook", default=None,
                     help="指定目标工作簿路径（可为相对路径或绝对路径）")
     ap.add_argument("--config", default=None,

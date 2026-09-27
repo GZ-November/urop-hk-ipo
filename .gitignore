@@ -54,6 +54,8 @@ htmlcov/
 !pipeline/prospectus_pipeline/schema/archive/
 !pipeline/prospectus_pipeline/schema/archive/HKIPO-MB2026Q1_vc_pe_legacy.json
 **/docs/
+!docs/
+!docs/**
 Survey Paper/
 
 # Pipeline working cache and extracted artifacts

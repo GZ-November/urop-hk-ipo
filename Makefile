@@ -21,7 +21,7 @@ help:
 	@echo "  make test          - Run full automated regression and safety test suite"
 	@echo "  make lint          - Verify Python syntax and bytecode compilation"
 	@echo "  make clean         - Remove cached bytecode and temporary compilation files"
-	@echo "  make check         - Run complete health inspection (status + audit + cross_check + test)"
+	@echo "  make check         - Run complete health inspection (status + audit + cross_check + test + registry-check)"
 
 env:
 	@./.agents/skills/hk-ipo-pipeline/scripts/check_env.sh
@@ -80,7 +80,10 @@ clean:
 	@rm -rf .pytest_cache
 	@echo "✅ Cleaned all temporary caches."
 
-check: status audit cross_check test
+registry-check:
+	@python3 run.py registry --check
+
+check: status audit cross_check test registry-check
 	@echo "=================================================================="
 	@echo "✅ ALL PIPELINE CHECKS PASSED: Pipeline & Toolkit 100% Verified!"
 	@echo "=================================================================="

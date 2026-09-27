@@ -283,6 +283,63 @@ def _unit_for(header: str, dtype: str) -> str | None:
     return None
 
 
+def check_registry_consistency(ws: Path) -> list[str]:
+    """只读三方一致性校验：variable_catalog（正典）↔ 最新 Codebook ↔ registry 快照。
+
+    返回问题列表（空 = 一致）。供 `run.py registry --check` 使用，
+    失败即阻塞 make check / CI。
+    """
+    from workbook_reader import norm_header as _norm_header
+
+    issues: list[str] = []
+    reg_path = layout_registry_path(ws)
+    if not reg_path.is_file():
+        return [f"registry 不存在：{reg_path}；先运行 `run.py registry`"]
+    registry = load_registry(reg_path)
+    reg_by_header = {v["header"]: v for v in registry["variables"]}
+
+    books = sorted((Path(ws) / CODEBOOKS_SUBDIR).glob("HKIPO_*_Codebook.md"))
+    if not books:
+        return ["codebooks/ 下没有任何 Codebook"]
+    latest = parse_codebook_variables(books[-1])
+
+    if len(registry["variables"]) != len(latest):
+        issues.append(
+            f"变量数不一致：registry {len(registry['variables'])} vs 最新 Codebook {len(latest)}"
+            "——是否 export 后忘记重跑 registry？")
+
+    try:
+        from variable_catalog import lookup_tables
+        green_t, ext_t, acad_t, extra_t = lookup_tables()
+        catalog_by_header = {**green_t, **ext_t, **acad_t, **extra_t}
+    except Exception:
+        catalog_by_header = {}
+
+    latest_headers: set[str] = set()
+    for letter, definition in latest.items():
+        header = definition["header"]
+        latest_headers.add(header)
+        reg = reg_by_header.get(header)
+        if reg is None:
+            issues.append(f"列 {letter} `{header}` 不在 registry 中")
+            continue
+        if reg.get("dtype") != definition["dtype"]:
+            issues.append(
+                f"列 {letter} `{header}` dtype 漂移：registry={reg.get('dtype')!r} vs Codebook={definition['dtype']!r}")
+        if reg.get("description_zh") != definition["description_zh"]:
+            issues.append(f"列 {letter} `{header}` 中文释义：registry 与 Codebook 不一致")
+        catalog_entry = catalog_by_header.get(_norm_header(header))
+        if catalog_entry and catalog_entry[1] != definition["description_zh"]:
+            issues.append(
+                f"列 {letter} `{header}` 中文释义与 variable_catalog 漂移："
+                f"catalog={catalog_entry[1]!r} vs Codebook={definition['description_zh']!r}")
+
+    for v in registry["variables"]:
+        if v["header"] not in latest_headers:
+            issues.append(f"registry 多出列 `{v['header']}`（Codebook 中已不存在）")
+    return issues
+
+
 def build_registry(
     ws: Path,
     out_path: Path | None = None,
