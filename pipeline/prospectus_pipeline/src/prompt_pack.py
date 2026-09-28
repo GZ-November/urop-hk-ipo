@@ -136,11 +136,8 @@ def build_prompt(
     return f"{prefix}{header}{task}\n"
 
 
-def shared_prefix_len(extract_prompt: str, review_prompt: str) -> int:
-    """诊断用：两阶段 prompt 的共享前缀字节数。"""
+def shared_prefix(extract_prompt: str, review_prompt: str) -> str:
+    """诊断用：两阶段 prompt 的共享前缀字符串（缓存命中区）。"""
     import os
 
-    a, b = extract_prompt.encode("utf-8"), review_prompt.encode("utf-8")
-    n = min(len(a), len(b))
-    # os.path.commonprefix 按字节工作于 bytes
-    return len(os.path.commonprefix([a, b]))
+    return os.path.commonprefix([extract_prompt, review_prompt])

@@ -483,9 +483,9 @@ def cmd_prompt(phase: str, codes: list[str] | None, only_fields_file: Path | Non
         ex = made[0].with_name(made[0].name.replace(".review.", ".extract."))
         rv = made[0].with_name(made[0].name.replace(".extract.", ".review."))
         if ex.is_file() and rv.is_file():
-            from prompt_pack import shared_prefix_len
-            shared = shared_prefix_len(ex.read_text(encoding="utf-8"), rv.read_text(encoding="utf-8"))
-            print(f"共享前缀：{shared / 1e3:.0f}K 字符（缓存命中区）")
+            from prompt_pack import shared_prefix
+            shared = shared_prefix(ex.read_text(encoding="utf-8"), rv.read_text(encoding="utf-8"))
+            print(f"共享前缀：{len(shared) / 1e3:.0f}K 字符（缓存命中区）")
     return 0
 
 

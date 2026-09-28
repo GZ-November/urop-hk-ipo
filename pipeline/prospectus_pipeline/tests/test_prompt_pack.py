@@ -9,7 +9,7 @@ sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 from prompt_pack import (  # noqa: E402
     MANUAL_RULES,
     build_prompt,
-    shared_prefix_len,
+    shared_prefix,
 )
 
 PACKET = "## 唯一输出契约\n...（模拟的抽取包内容）...\n"
@@ -19,10 +19,11 @@ class PromptPackTests(unittest.TestCase):
     def test_extract_and_review_share_byte_identical_prefix(self):
         ex = build_prompt("extract", "0001.HK", "Test Co", PACKET, out_path="out/x.json")
         rv = build_prompt("review", "0001.HK", "Test Co", PACKET, out_path="out/x.json")
-        shared = shared_prefix_len(ex, rv)
+        shared = shared_prefix(ex, rv)
         # 共享前缀必须覆盖整个包内联段 + 手册规则（到阶段任务才分叉）
-        self.assertGreater(shared, len(PACKET.encode("utf-8")))
-        self.assertEqual(ex[:shared], rv[:shared])
+        self.assertGreater(len(shared), len(PACKET))
+        self.assertTrue(ex.startswith(shared))
+        self.assertTrue(rv.startswith(shared))
         self.assertIn("任务：抽取", ex[shared:])
         self.assertIn("任务：独立复核", rv[shared:])
 
