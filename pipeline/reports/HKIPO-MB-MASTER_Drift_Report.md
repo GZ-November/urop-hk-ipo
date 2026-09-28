@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-28 15:50:14 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-28 15:52:24 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 
@@ -55,15 +55,15 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `R&D expensed in year-1 (before annualization)` | 73.3% | 81.5% | 92.1% | 93.3% | 95.7% |
 | `Development costs capitalized in year-1 (additions, before annualization)` | 80.0% | 85.2% | 100.0% | 93.3% | 100.0% |
 | `Top 5 customers (% of year-1 revenue)` | 80.0% | 85.2% | 100.0% | 84.4% | 95.7% |
-| `Pre-IPO VC/PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 86.7% | 100.0% |
-| `Pre-IPO VC backing (1=yes; 0=no)` | 100.0% | 70.4% | 100.0% | 86.7% | 100.0% |
-| `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 86.7% | 100.0% |
-| `Pre-IPO CVC backing (1=yes; 0=no)` | 93.3% | 59.3% | 100.0% | 64.4% | 100.0% |
-| `Pre-IPO State/Gov backing (1=yes; 0=no)` | 100.0% | 63.0% | 100.0% | 73.3% | 100.0% |
-| `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 100.0% | 57.8% | 100.0% |
+| `Pre-IPO VC/PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 100.0% | 100.0% |
+| `Pre-IPO VC backing (1=yes; 0=no)` | 100.0% | 70.4% | 100.0% | 100.0% | 100.0% |
+| `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 100.0% | 100.0% |
+| `Pre-IPO CVC backing (1=yes; 0=no)` | 93.3% | 59.3% | 100.0% | 77.8% | 100.0% |
+| `Pre-IPO State/Gov backing (1=yes; 0=no)` | 100.0% | 63.0% | 100.0% | 86.7% | 100.0% |
+| `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 100.0% | 71.1% | 100.0% |
 | `Key Pre-IPO investors` | 66.7% | 74.1% | 73.7% | 84.4% | 78.3% |
-| `Pre-IPO institutional shareholding (%)` | 66.7% | 55.6% | 100.0% | 68.9% | 100.0% |
-| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 53.3% | 100.0% |
+| `Pre-IPO institutional shareholding (%)` | 66.7% | 55.6% | 100.0% | 82.2% | 100.0% |
+| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 100.0% | 100.0% |
 | `Earliest Pre-IPO investment round` | 53.3% | 74.1% | 73.7% | 84.4% | 73.9% |
 | `Pre-IPO holding duration (years)` | 53.3% | 55.6% | 100.0% | 80.0% | 69.6% |
 | `Controller economic interest at listing (%)` | 93.3% | 100.0% | 100.0% | 97.8% | 100.0% |
@@ -139,14 +139,10 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Profit for the year in year-3` | 84.4% | 100.0% | +15.6pp |
 | `Over-allotment Option (%)` | 88.9% | 100.0% | +11.1pp |
 | `Top 5 customers (% of year-1 revenue)` | 84.4% | 95.7% | +11.3pp |
-| `Pre-IPO VC/PE backing (1=yes; 0=no)` | 86.7% | 100.0% | +13.3pp |
-| `Pre-IPO VC backing (1=yes; 0=no)` | 86.7% | 100.0% | +13.3pp |
-| `Pre-IPO PE backing (1=yes; 0=no)` | 86.7% | 100.0% | +13.3pp |
-| `Pre-IPO CVC backing (1=yes; 0=no)` | 64.4% | 100.0% | +35.6pp |
-| `Pre-IPO State/Gov backing (1=yes; 0=no)` | 73.3% | 100.0% | +26.7pp |
-| `Top-tier VC/PE backing (1=yes; 0=no)` | 57.8% | 100.0% | +42.2pp |
-| `Pre-IPO institutional shareholding (%)` | 68.9% | 100.0% | +31.1pp |
-| `Pre-IPO investor board seat (1=yes; 0=no)` | 53.3% | 100.0% | +46.7pp |
+| `Pre-IPO CVC backing (1=yes; 0=no)` | 77.8% | 100.0% | +22.2pp |
+| `Pre-IPO State/Gov backing (1=yes; 0=no)` | 86.7% | 100.0% | +13.3pp |
+| `Top-tier VC/PE backing (1=yes; 0=no)` | 71.1% | 100.0% | +28.9pp |
+| `Pre-IPO institutional shareholding (%)` | 82.2% | 100.0% | +17.8pp |
 | `Earliest Pre-IPO investment round` | 84.4% | 73.9% | -10.5pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 69.6% | -10.4pp |
 | `Financial statement unit multiplier` | 91.1% | 39.1% | -52.0pp |
@@ -175,7 +171,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 
 | 布尔列 | 2025Q1 | 2025Q2 | 2026Q1 | 2026Q2 | 2026Q3 |
 |---|---|---|---|---|---|
-| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 53.3% | 100.0% |
+| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 100.0% | 100.0% |
 
 处置：确认「确无」后补 0（或按手册填 NA），重跑 export 与 master。
 

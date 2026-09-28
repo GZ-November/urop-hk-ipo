@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-28 15:29:28"
+    "generated_at": "2026-09-28 15:52:24"
   },
   "variables": [
     {
@@ -1443,21 +1443,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 39,
-        "missing_n": 6,
-        "fill_rate_pct": 86.67,
-        "mean": 0.9743589743589743,
-        "std": 0.16012815380508713,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 0.8444444444444444,
+        "std": 0.3665288997383894,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.97 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.84 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1469,21 +1469,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 39,
-        "missing_n": 6,
-        "fill_rate_pct": 86.67,
-        "mean": 0.9743589743589743,
-        "std": 0.16012815380508713,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 0.8444444444444444,
+        "std": 0.3665288997383894,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.97 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.84 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1495,21 +1495,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 39,
-        "missing_n": 6,
-        "fill_rate_pct": 86.67,
-        "mean": 0.9743589743589743,
-        "std": 0.16012815380508713,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 0.8444444444444444,
+        "std": 0.3665288997383894,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.97 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.84 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1525,17 +1525,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 29,
-        "missing_n": 16,
-        "fill_rate_pct": 64.44,
-        "mean": 0.896551724137931,
-        "std": 0.3099340466946034,
+        "valid_n": 35,
+        "missing_n": 10,
+        "fill_rate_pct": 77.78,
+        "mean": 0.7428571428571429,
+        "std": 0.4434395736311599,
         "median": 1.0,
         "min": 0.0,
-        "q25": 1.0,
+        "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.90 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.74 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1551,17 +1551,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 33,
-        "missing_n": 12,
-        "fill_rate_pct": 73.33,
-        "mean": 0.9696969696969697,
-        "std": 0.17407765595569785,
+        "valid_n": 39,
+        "missing_n": 6,
+        "fill_rate_pct": 86.67,
+        "mean": 0.8205128205128205,
+        "std": 0.38877641198447155,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.97 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.82 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1577,17 +1577,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 26,
-        "missing_n": 19,
-        "fill_rate_pct": 57.78,
-        "mean": 0.9615384615384616,
-        "std": 0.19611613513818404,
+        "valid_n": 32,
+        "missing_n": 13,
+        "fill_rate_pct": 71.11,
+        "mean": 0.78125,
+        "std": 0.4200134406451544,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.96 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.78 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1630,17 +1630,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 31,
-        "missing_n": 14,
-        "fill_rate_pct": 68.89,
-        "mean": 0.3954510322580645,
-        "std": 0.2438812808171883,
-        "median": 0.4264,
+        "valid_n": 37,
+        "missing_n": 8,
+        "fill_rate_pct": 82.22,
+        "mean": 0.33132383783783786,
+        "std": 0.2672117603917156,
+        "median": 0.3208,
         "min": 0.0,
-        "q25": 0.148,
-        "q75": 0.5713,
+        "q25": 0.0501,
+        "q75": 0.5584,
         "max": 0.8386,
-        "summary_display": "均值 0.40 | 中位数 0.43 | 区间 [0.00, 0.84]"
+        "summary_display": "均值 0.33 | 中位数 0.32 | 区间 [0.00, 0.84]"
       }
     },
     {
@@ -1652,17 +1652,17 @@
       "group": "ownership",
       "data_type": "boolean (0/1)",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NA in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 24,
-        "missing_n": 21,
-        "fill_rate_pct": 53.33,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
         "true_count": 24,
-        "false_count": 0,
-        "true_pct": 100.0,
-        "summary_display": "1 (是): 24 家 (100.0%), 0 (否): 0 家"
+        "false_count": 21,
+        "true_pct": 53.3,
+        "summary_display": "1 (是): 24 家 (53.3%), 0 (否): 21 家"
       }
     },
     {
