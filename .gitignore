@@ -39,6 +39,8 @@ dist/
 htmlcov/
 
 # 流水线易失状态（临时凭证/备份，随命令再生）
+pipeline/prospectus_pipeline/out/audit_report.json
+pipeline/prospectus_pipeline/out/audit_report.md
 .pipeline_state
 *.backup-*.json
 *-backup-*.json
