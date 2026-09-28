@@ -59,8 +59,9 @@ pipeline/prospectus_pipeline/data/packets/
 # 规范工作簿在 pipeline/cohorts/，现行抽取状态在 prospectus_pipeline/out/
 pipeline/prospectus_pipeline/datasets/
 
-# 工作簿时间戳备份（superseded 快照）
+# 工作簿时间戳备份（superseded 快照；git 历史本身即备份）
 pipeline/backups/
+pipeline/cohorts/backups/
 
 # 文献 PDF
 Survey Paper/
