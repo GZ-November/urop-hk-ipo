@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-27 15:51:48"
+    "generated_at": "2026-09-28 15:50:13"
   },
   "variables": [
     {
@@ -1392,17 +1392,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: extra_financial）",
       "stats": {
-        "valid_n": 17,
-        "missing_n": 6,
-        "fill_rate_pct": 73.91,
-        "mean": 0.48405882352941176,
-        "std": 0.28302285035581387,
-        "median": 0.404,
-        "min": 0.043,
-        "q25": 0.283,
-        "q75": 0.663,
+        "valid_n": 22,
+        "missing_n": 1,
+        "fill_rate_pct": 95.65,
+        "mean": 0.4411818181818182,
+        "std": 0.290416882029894,
+        "median": 0.377,
+        "min": 0.01,
+        "q25": 0.213,
+        "q75": 0.65,
         "max": 0.969,
-        "summary_display": "均值 0.48 | 中位数 0.40 | 区间 [0.04, 0.97]"
+        "summary_display": "均值 0.44 | 中位数 0.38 | 区间 [0.01, 0.97]"
       }
     },
     {
@@ -1623,21 +1623,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 22,
-        "missing_n": 1,
-        "fill_rate_pct": 95.65,
-        "mean": 3.996390909090909,
-        "std": 9.770936118232484,
-        "median": 0.42100000000000004,
+        "valid_n": 23,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 4.215678260869565,
+        "std": 9.604040433207668,
+        "median": 0.438,
         "min": 0.0,
         "q25": 0.0,
-        "q75": 0.7654,
+        "q75": 0.8374,
         "max": 35.44,
-        "summary_display": "均值 4.00 | 中位数 0.42 | 区间 [0.00, 35.44]"
+        "summary_display": "均值 4.22 | 中位数 0.44 | 区间 [0.00, 35.44]"
       }
     },
     {

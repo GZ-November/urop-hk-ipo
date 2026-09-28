@@ -73,6 +73,9 @@ master 漂移报告已新增 **5.2 节「布尔列空值警告」**：注册表�
 
 **Q3 之后状态**：VC 全家族 11 列中 9 列 100%（席位 100%、CVC/Gov 95.7%）；唯一仍空的是 2249/0537 的个别 NaN（入股日未披露 / 持股表未定位，按手册保留 NaN 待复核）。
 
-**仍待办**：Top 5 customers 另有 5 家未见集中度表述（2249/0625/0668/2475/6951——Customer A-E 表存在但文本层错位，不宜盲算合计，走 financials 主题抽取包补抽）；2249 的 duration（PIHC 入股日无披露）与 0537 的 stake（上市前持股表未定位到）按手册保留 NaN；2026Q2 的 board seat 列（53.3%）可按 2026Q3 同样流程补齐。
+**第三批处置记录（2026-09-28，写入 6 格，证据页码齐）**：
+Top 5 customers 5 家全部提取——2249 p134（2025 表合计 57.9%）、0668 p160（8.6%）、2475 p35（65.0%）、6951 p176（15.2%）、0625 p190（披露"less than 1%"，按上限 0.01 填写，复核时注意这是上界）；0537 机构持股 9.04%（p102 A股上市后持股表，7 家机构合计：元禾重元 2.05+同镱 1.95+江苏兆尹 1.92+高瓴耀恒 1.88+汇琪 1.02+南京兆尹 0.12+乾钤 0.10——2022-04 结构，若 A 股上市后有稀释变动需复核）。2249 持有年限确认为无披露（PIHC 首次认购日期在文本层不存在），按手册保持 NaN。至此第二、三批全部收口，仅余 2249 duration 一个 NaN。
+
+**仍待办（历史记录）**：Top 5 customers 另有 5 家未见集中度表述（2249/0625/0668/2475/6951——Customer A-E 表存在但文本层错位，不宜盲算合计，走 financials 主题抽取包补抽）；2249 的 duration（PIHC 入股日无披露）与 0537 的 stake（上市前持股表未定位到）按手册保留 NaN；2026Q2 的 board seat 列（53.3%）可按 2026Q3 同样流程补齐。
 
 **已补齐（2026-09-27 第二次执行）**：深蓝 5 个 flag 列（Stabilization/Sponsor affiliate/Cornerstone 国资/Crossover/国资 backing）在 2025Q1 与 2026Q3 已通过面板链条补齐——配售文本实际存放于 `data/allot/`（107+61 个文件）而面板读取 `out/allot/`，复制对齐后依次运行 market_panel（Q1 5988 条日线、Q3 23 家）、stabilization_panel、lockup_panel、`write_back_expansion.py --workbook`（Q1 写入 615 格、Q3 写入 943 格，Col 162-202 全部扩展列）。现两 cohort 的 5 列均 100%。**注意**：面板产物在各 cohort 隔离目录 `datasets/<cohort>/out/master/`（`--workbook` 覆盖模式），共享 `prospectus_pipeline/out/master/` 仍是 2026Q1 的数据。80 格回填的独立复核见 `HKIPO_2026Q3_Backfill_Review.md`（78 通过、2 修正：9976 stake 16.17→16.75 补计力合 0.58%、Top-tier 1→0 按招股书证据保守修正）。

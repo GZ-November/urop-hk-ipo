@@ -3,7 +3,7 @@
 - **样本规模 (N)**：23 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-27 15:51:48 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-28 15:50:13 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -74,7 +74,7 @@
 | **AY** | `Cash and cash equivalents at year-1 end` | Cash and cash equivalents at year-1 end | 浅蓝 | `numeric` | Track record period financial disclosure | 100% 完备 | 均值 4,581,393,347.83 / 中位数 345,911,000.00 / 区间 [14,801,000.00, 67,320,137,000.00] |
 | **AZ** | `R&D expensed in year-1 (before annualization)` | R&D expensed in year-1 (before annualization) | 浅蓝 | `numeric` | Track record period financial disclosure | Adequate (22/23 (95.65%)) | 均值 382,345,090.91 / 中位数 90,816,000.00 / 区间 [11,433,000.00, 3,021,085,000.00] |
 | **BA** | `Development costs capitalized in year-1 (additions, before annualization)` | Development costs capitalized in year-1 (additions, before annualization) | 浅蓝 | `numeric` | Track record period financial disclosure | 100% 完备 | 均值 2,803,782.61 / 中位数 0.00 / 区间 [0.00, 57,252,000.00] |
-| **BB** | `Top 5 customers (% of year-1 revenue)` | Top 5 customers (% of year-1 revenue) | 浅蓝 | `numeric` | Track record period financial disclosure | Adequate (17/23 (73.91%)) | 均值 0.48 / 中位数 0.40 / 区间 [0.04, 0.97] |
+| **BB** | `Top 5 customers (% of year-1 revenue)` | Top 5 customers (% of year-1 revenue) | 浅蓝 | `numeric` | Track record period financial disclosure | Adequate (22/23 (95.65%)) | 均值 0.44 / 中位数 0.38 / 区间 [0.01, 0.97] |
 | **BC** | `Comments / Annualization factor` | 最近一期财务数据对应的年化因子与口径说明 | 浅蓝 | `numeric` | Track record period financial disclosure | 100% 完备 | 均值 1.00 / 中位数 1.00 / 区间 [1.00, 1.00] |
 | **BD** | `Pre-IPO VC/PE backing (1=yes; 0=no)` | 是否引入 Pre-IPO VC/PE 投资者：1=有，0=无。看 HISTORY AND DEVELOPMENT — Pre-IPO Investments 与 SUBSTANTIAL SHAREHOLDERS 名单；只要有专业投资机构（VC/PE/产业基金）在上市前入股即 1。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.74 / 中位数 1.00 / 区间 [0.00, 1.00] |
 | **BE** | `Pre-IPO VC backing (1=yes; 0=no)` | 只根据本公司招股书披露的上市前投资判定。早期/成长期专业风险投资基金为 1；未找到证据不等于 0，无法确认时填 NaN。分类依据须在本字段 quote 中体现。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.74 / 中位数 1.00 / 区间 [0.00, 1.00] |
@@ -83,7 +83,7 @@
 | **BH** | `Pre-IPO State/Gov backing (1=yes; 0=no)` | 只根据本公司招股书披露的上市前投资判定。有明确国资、政府或产业引导基金背景的机构为 1；国资身份不自动代表 VC/PE。无法确认时填 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.61 / 中位数 1.00 / 区间 [0.00, 1.00] |
 | **BI** | `Top-tier VC/PE backing (1=yes; 0=no)` | 仅在本公司招股书确认一线知名 VC/PE 机构持有重要股权或领投时填 1；不得仅凭机构知名度推断其参与本公司投资。无法确认时填 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.43 / 中位数 0.00 / 区间 [0.00, 1.00] |
 | **BJ** | `Key Pre-IPO investors` | 仅列本公司招股书披露的上市前投资者，采用一致的英文全称/拼音并以分号分隔；同一投资者只记一次，不从其他 cohort 补名单。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (18/23 (78.26%)) | 共 18 种取值 ('TRT Senior Care Fund; TRT Medical Fund; Tongqing Fund; Tongkang Fund; Mr. Zhu; Ms. Pan': 1, 'SAIC (ZJSmart Holdings Limited); General Motors Holdings LLC; Mercedes-Benz AG; Temasek (Anderson Investments Pte. Ltd.); Shunwei Capital (Talented Ventures Limited, Astrend Opportunity III Alpha Limited); EV Ventures L.L.C-FZ; NIO Capital (Nio Momentum LLC, Nio Momentum II LLC, Andante Symphony Limited); YF Momenta Limited (Yunfeng); Blue Lake Capital; Ant Group (Accelerator XVI Ltd., ANTFIN Singapore Holding Pte. Ltd.); Tencent (Image Frame Investment (HK) Limited); E-Town Capital; Toyota Motor Corporation; Granite Asia (GGV Capital VI L.P., GGV Capital VI Entrepreneurs Fund L.P., GGV Capital VI Plus L.P., Granite Asia IX VCC); Aldrich Bay Limited; Sinovation Fund III, L.P.; CT Prime MMT Limited; Grower International Limited; GCBM Holdings Limited; CDH Investments (Cognitive Dynamics Limited, OG Blaze Dynamics Limited); Zhen Partners Fund IV, L.P.': 1, 'Greenland Financial Holdings Group; SWLVC; TSREIC (L.P.); Intel; Hon Universe Aviation Industry Fund; Nantong Jianghai Fund': 1) |
-| **BK** | `Pre-IPO institutional shareholding (%)` | 上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (22/23 (95.65%)) | 均值 4.00 / 中位数 0.42 / 区间 [0.00, 35.44] |
+| **BK** | `Pre-IPO institutional shareholding (%)` | 上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 4.22 / 中位数 0.44 / 区间 [0.00, 35.44] |
 | **BL** | `Pre-IPO investor board seat (1=yes; 0=no)` | 只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。 | 浅蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 12 家 (52.2%), 0 (否): 11 家 |
 | **BM** | `Earliest Pre-IPO investment round` | 从本公司招股书披露的 Pre-IPO 投资轮次中取最早一轮，保留披露的标准轮次名称；只有明确说明没有外部上市前投资时填 None，否则无法确认时 NA。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (17/23 (73.91%)) | 共 15 种取值 ('Series A': 3, 'Pre-IPO Investment (March 2024)': 1, 'Series A financing (agreement dated January 16, 2017)': 1) |
 | **BN** | `Pre-IPO holding duration (years)` | 从最早 Pre-IPO 投资协议日期至本公司招股书日期计算年数，保留两位小数；起始日期无法确认则 NaN。每家公司必须使用自己的招股书日期，不沿用其他季度日期。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (16/23 (69.57%)) | 均值 9.67 / 中位数 9.83 / 区间 [2.29, 18.20] |
