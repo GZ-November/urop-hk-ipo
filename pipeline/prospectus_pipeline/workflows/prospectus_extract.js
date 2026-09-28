@@ -180,6 +180,10 @@ function verifyPrompt(item) {
 - 公司：${item.code} ${item.name}
 
 ## 任务
+0. **先跑一次** \`${PY} ${RUN}${CONFIG} validate --only ${item.code}\`：验证器已确定性判定的
+   恒等式（M=R+S、M=Q+P、L=N+Q、L=O+M、三年资产=权益+负债、U<=T）**通过项不必再检索复核**，
+   只需抽查其中 1 项确认命令输出可信；把检索预算集中在命令覆盖不到的语义项
+   （合并报表来源、名单真实性、VC/PE 十字段引文、分类判断、期间口径）和验证器报出的失败项上。
 1. 读取待复核 JSON 与抽取包。
 2. 用检索工具在全文里**独立**核对下面的高风险字段（至少这些，可再抽查其他）：
    - **合并报表唯一性**：确认财务字段（W–AN、AU–AY、BE 等）引用的页码是否来自合并报表（CONSOLIDATED Statements），严禁采纳母公司单体报表（... OF THE COMPANY）

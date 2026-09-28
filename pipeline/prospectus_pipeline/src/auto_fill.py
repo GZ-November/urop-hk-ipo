@@ -370,6 +370,88 @@ def next_batch(n: int, target: str) -> list[dict]:
     return out
 
 
+def build_escalation_plan(
+    validation: dict,
+    schema_fields: list[dict],
+    packet_dir: Path,
+    code_names: dict[str, str] | None = None,
+) -> dict:
+    """验证驱动的定向重抽计划（纯函数）。
+
+    读 validation.json 的 fields_missing / pending_missing_fields，把缺失字段
+    映射到所属主题，只重抽相关主题分片（而非整包），并附 only_fields 提示。
+    """
+    from topic_schema import get_field_to_topic_map
+
+    field_topic = get_field_to_topic_map(schema_fields)
+    gaps: dict[str, set[str]] = {}
+    for item in validation.get("pending_missing_fields") or []:
+        gaps.setdefault(item["code"], set()).update(item.get("fields") or [])
+    for rec in validation.get("records") or []:
+        missing = rec.get("fields_missing")
+        if rec.get("status") != "pass" and missing:
+            gaps.setdefault(rec["code"], set()).update(missing)
+        elif missing:
+            gaps.setdefault(rec["code"], set()).update(missing)
+
+    topic_packets = []
+    only_fields: dict[str, list[str]] = {}
+    for code, fields in sorted(gaps.items()):
+        if not fields:
+            continue
+        topics = sorted({field_topic.get(f) for f in fields if field_topic.get(f)})
+        if not topics:
+            topics = ["topic_offering", "topic_financials", "topic_ownership", "topic_underwriting"]
+        digits = "".join(ch for ch in code if ch.isdigit())
+        shards = []
+        for topic in topics:
+            shard = packet_dir / f"HKIPO-MB{digits}-{topic}.md"
+            if shard.is_file():
+                shards.append(shard.as_posix())
+        name = (code_names or {}).get(code, "")
+        full_packet = packet_dir / f"HKIPO-MB{digits}.md"
+        if not shards:
+            # 旧时代包没有主题分片：回退用完整包
+            if not full_packet.is_file():
+                continue
+            topic_packets.append({
+                "code": code, "name": name, "packet_path": full_packet.as_posix(),
+                "out_path": (packet_dir.parent / "extracted" / f"HKIPO-MB{digits}.json").as_posix(),
+            })
+        else:
+            topic_packets.append({
+                "code": code, "name": name, "topic_packets": shards,
+                "out_path": (packet_dir.parent / "extracted" / f"HKIPO-MB{digits}.json").as_posix(),
+            })
+        only_fields[code] = sorted(fields)
+    return {"escalation": True, "topic_packets": topic_packets, "only_fields": only_fields, "verify": True}
+
+
+def cmd_next_escalation(target: str, out: Path | None) -> int:
+    """验证驱动的升级批次：只重抽失败/缺失字段所在的主题分片。"""
+    from topic_schema import get_field_to_topic_map
+    from contracts import strict_load_file
+
+    cfg = load_cfg()
+    gate = (ALLOT_EXT.parent if target == "allot" else EXT.parent) / "validation.json"
+    if not gate.is_file():
+        print(f"没有 validation.json（{gate}）；先跑 validate。", file=sys.stderr)
+        return 1
+    validation = json.loads(gate.read_text(encoding="utf-8"))
+    schema_path = cfg["_root"] / "schema" / ("allot_fields.json" if target == "allot" else "fields.json")
+    schema_fields = strict_load_file(schema_path)["fields"]
+    names = {r["code"]: r.get("name") or "" for r in workbook_rows()}
+    payload = build_escalation_plan(validation, schema_fields, PKT_DIR, names)
+    n = len(payload["topic_packets"])
+    text = json.dumps(payload, ensure_ascii=False, indent=2)
+    print(text)
+    if out:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(text + "\n", encoding="utf-8")
+    print(f"# {n} 家待定向重抽（只涉及缺失字段所在主题分片）", file=sys.stderr)
+    return 0
+
+
 def cmd_next_batch(n: int, target: str, force: bool, out: Path | None) -> int:
     if peak_now() and not force:
         print("现在是高峰时段（北京时间工作日 9:00–12:00、14:00–18:00）。"
@@ -413,6 +495,9 @@ def main() -> int:
     w.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
     w.add_argument("--rewrite", action="store_true", help="覆盖 Excel 里已有值")
     sub.add_parser("finish", help="把所有「JSON 齐但表空」的公司写进 Excel")
+    e = sub.add_parser("next-escalation", help="验证驱动的定向重抽批次（只含失败字段的主题分片）")
+    e.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
+    e.add_argument("--out", type=Path, default=None)
     n = sub.add_parser("next-batch", help="打印下一批 workflow args")
     n.add_argument("--n", type=int, default=2)
     n.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
@@ -441,6 +526,8 @@ def main() -> int:
     ALLOT_PKT_DIR = cfg["paths"]["allot_packets"]
     if args.cmd == "status":
         print_status(inventory(cfg))
+    elif args.cmd == "next-escalation":
+        return cmd_next_escalation(args.target, args.out)
         return 0
     if args.cmd == "prepare":
         return cmd_prepare(args.only, args.allot)
