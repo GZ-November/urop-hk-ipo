@@ -427,6 +427,68 @@ def build_escalation_plan(
     return {"escalation": True, "topic_packets": topic_packets, "only_fields": only_fields, "verify": True}
 
 
+def cmd_prompt(phase: str, codes: list[str] | None, only_fields_file: Path | None) -> int:
+    """生成 harness 无关的抽取/复核/升级 prompt（共享前缀，缓存友好）。"""
+    from prompt_pack import build_prompt
+
+    cfg = load_cfg()
+    rows = {r["code"]: r for r in workbook_rows(cfg)}
+    targets = codes or sorted(rows)
+    only_map: dict[str, list[str]] = {}
+    if only_fields_file and Path(only_fields_file).is_file():
+        data = json.loads(Path(only_fields_file).read_text(encoding="utf-8"))
+        only_map = data.get("only_fields", {})
+    out_dir = cfg["paths"]["out"] / "prompts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    made = []
+    for code in targets:
+        digits = "".join(ch for ch in code if ch.isdigit())
+        rec = rows.get(code)
+        if not rec:
+            print(f"{code}: 不在工作簿，跳过", file=sys.stderr)
+            continue
+        name = rec.get("name") or ""
+        packet_dir = Path(cfg["paths"]["packets"])
+        if phase == "escalate":
+            shard_paths = sorted(packet_dir.glob(f"HKIPO-MB{digits}-topic_*.md"))
+            wanted_topics = set()
+            if only_map.get(code):
+                from topic_schema import get_field_to_topic_map
+                from contracts import strict_load_file
+                schema_fields = strict_load_file(cfg["_root"] / "schema" / "fields.json")["fields"]
+                f_map = get_field_to_topic_map(schema_fields)
+                wanted_topics = {f_map[f] for f in only_map[code] if f in f_map}
+            if wanted_topics:
+                shard_paths = [s for s in shard_paths
+                               if any(f"-{tp}." in s.name for tp in wanted_topics)]
+            shards = [s_.as_posix() for s_ in shard_paths]
+            packet_text = "\n\n".join(
+                f"--- 分片：{Path(s_).name} ---\n" + Path(s_).read_text(encoding="utf-8")
+                for s_ in shards) if shards else (
+                Path(packet_dir / f"HKIPO-MB{digits}.md").read_text(encoding="utf-8")
+                if (packet_dir / f"HKIPO-MB{digits}.md").is_file() else "")
+            prompt = build_prompt("escalate", code, name, packet_text,
+                                  out_path=f"{cfg['paths']['out'] / 'extracted' / f'HKIPO-MB{digits}.json'}",
+                                  only_fields=only_map.get(code))
+        else:
+            packet_path = packet_dir / f"HKIPO-MB{digits}.md"
+            packet_text = packet_path.read_text(encoding="utf-8") if packet_path.is_file() else ""
+            out_path = f"{cfg['paths']['out'] / 'extracted' / f'HKIPO-MB{digits}.json'}"
+            prompt = build_prompt(phase, code, name, packet_text, out_path=out_path)
+        dest = out_dir / f"HKIPO-MB{digits}.{phase}.prompt.md"
+        dest.write_text(prompt, encoding="utf-8")
+        made.append(dest)
+        print(f"{code}: {dest}（{len(prompt) / 1e3:.0f}K 字符）")
+    if len(made) >= 2 and phase in ("extract", "review"):
+        ex = made[0].with_name(made[0].name.replace(".review.", ".extract."))
+        rv = made[0].with_name(made[0].name.replace(".extract.", ".review."))
+        if ex.is_file() and rv.is_file():
+            from prompt_pack import shared_prefix_len
+            shared = shared_prefix_len(ex.read_text(encoding="utf-8"), rv.read_text(encoding="utf-8"))
+            print(f"共享前缀：{shared / 1e3:.0f}K 字符（缓存命中区）")
+    return 0
+
+
 def cmd_next_escalation(target: str, out: Path | None) -> int:
     """验证驱动的升级批次：只重抽失败/缺失字段所在的主题分片。"""
     from topic_schema import get_field_to_topic_map
@@ -498,6 +560,11 @@ def main() -> int:
     e = sub.add_parser("next-escalation", help="验证驱动的定向重抽批次（只含失败字段的主题分片）")
     e.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
     e.add_argument("--out", type=Path, default=None)
+    pr = sub.add_parser("prompt", help="生成 harness 无关的抽取/复核/升级 prompt（共享前缀）")
+    pr.add_argument("--phase", choices=["extract", "review", "escalate"], required=True)
+    pr.add_argument("--only", nargs="*")
+    pr.add_argument("--only-fields-file", type=Path, default=None,
+                    help="next-escalation --out 的产物，escalate 阶段用")
     n = sub.add_parser("next-batch", help="打印下一批 workflow args")
     n.add_argument("--n", type=int, default=2)
     n.add_argument("--target", choices=["prospectus", "allot"], default="prospectus")
@@ -528,6 +595,8 @@ def main() -> int:
         print_status(inventory(cfg))
     elif args.cmd == "next-escalation":
         return cmd_next_escalation(args.target, args.out)
+    elif args.cmd == "prompt":
+        return cmd_prompt(args.phase, args.only, args.only_fields_file)
         return 0
     if args.cmd == "prepare":
         return cmd_prepare(args.only, args.allot)
