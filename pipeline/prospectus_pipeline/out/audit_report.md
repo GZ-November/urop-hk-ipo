@@ -1,6 +1,6 @@
 # HK IPO Excel vs JSON 逐格对账与数据质量审计报告
 
-> **生成时间**：2026-09-27 16:24:36  
+> **生成时间**：2026-09-28 15:39:27  
 > **目标工作簿**：`cohorts/HKIPO-MB2026Q1.xlsx` (Sheet: `NLR`)  
 > **审计范围**：38 家公司 × (70 招股书字段 + 18 配发字段 = 88 字段，共 3,344 个单元格) + 103 个外部工具字段  
 
@@ -73,15 +73,15 @@
 | `EO` | 1-month wealth relative vs HSI | `tools/external/aftermarket.py (1-month WR vs HSI)` | 37/38 | 97.4% | `0.962` |
 | `EP` | 1-month wealth relative vs HST | `tools/external/aftermarket.py (1-month WR vs HSTECH)` | 37/38 | 97.4% | `1.0032` |
 | `EQ` | 1-month average daily turnover | `tools/external/aftermarket.py (1-month average daily turnover)` | 37/38 | 97.4% | `683071810` |
-| `ER` | 6-month post-IPO close price ( | `tools/external/aftermarket.py (6-month close price)` | 27/38 | 71.1% | `48.32` |
-| `ES` | 6-month BHR from Day-1 close ( | `tools/external/aftermarket.py (6-month BHR)` | 27/38 | 71.1% | `0.402205` |
-| `ET` | 6-month total return from offe | `tools/external/aftermarket.py (6-month total return)` | 27/38 | 71.1% | `1.465306` |
-| `EU` | 6-month HSI return (%) | `tools/external/aftermarket.py (6-month HSI return)` | 27/38 | 71.1% | `-0.124663` |
-| `EV` | 6-month HSTECH return (%) | `tools/external/aftermarket.py (6-month HSTECH return)` | 27/38 | 71.1% | `-0.223511` |
-| `EW` | 6-month wealth relative vs HSI | `tools/external/aftermarket.py (6-month WR vs HSI)` | 27/38 | 71.1% | `1.6019` |
-| `EX` | 6-month wealth relative vs HST | `tools/external/aftermarket.py (6-month WR vs HSTECH)` | 27/38 | 71.1% | `1.8058` |
-| `EY` | 6-month average daily turnover | `tools/external/aftermarket.py (6-month average daily turnover)` | 27/38 | 71.1% | `871107890` |
-| `EZ` | Liquidity decay ratio (6M vs D | `tools/external/aftermarket.py (Liquidity decay ratio)` | 27/38 | 71.1% | `0.157773` |
+| `ER` | 6-month post-IPO close price ( | `tools/external/aftermarket.py (6-month close price)` | 31/38 | 81.6% | `48.32` |
+| `ES` | 6-month BHR from Day-1 close ( | `tools/external/aftermarket.py (6-month BHR)` | 31/38 | 81.6% | `0.402205` |
+| `ET` | 6-month total return from offe | `tools/external/aftermarket.py (6-month total return)` | 31/38 | 81.6% | `1.465306` |
+| `EU` | 6-month HSI return (%) | `tools/external/aftermarket.py (6-month HSI return)` | 31/38 | 81.6% | `-0.124663` |
+| `EV` | 6-month HSTECH return (%) | `tools/external/aftermarket.py (6-month HSTECH return)` | 31/38 | 81.6% | `-0.223511` |
+| `EW` | 6-month wealth relative vs HSI | `tools/external/aftermarket.py (6-month WR vs HSI)` | 31/38 | 81.6% | `1.6019` |
+| `EX` | 6-month wealth relative vs HST | `tools/external/aftermarket.py (6-month WR vs HSTECH)` | 31/38 | 81.6% | `1.8058` |
+| `EY` | 6-month average daily turnover | `tools/external/aftermarket.py (6-month average daily turnover)` | 31/38 | 81.6% | `871107890` |
+| `EZ` | Liquidity decay ratio (6M vs D | `tools/external/aftermarket.py (Liquidity decay ratio)` | 31/38 | 81.6% | `0.157773` |
 | `FA` | 1-year post-IPO return (%) [Re | `tools/external/aftermarket.py (1-year return [Reserved])` | 0/38 | 0.0% | `—` |
 | `FB` | 1-year wealth relative vs HSI  | `tools/external/aftermarket.py (1-year WR vs HSI [Reserved])` | 0/38 | 0.0% | `—` |
 | `FC` | 3-year post-IPO return (%) [Re | `tools/external/aftermarket.py (3-year return [Reserved])` | 0/38 | 0.0% | `—` |

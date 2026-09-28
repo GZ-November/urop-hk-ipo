@@ -1,0 +1,59 @@
+# 承销商声誉排名（Carter-Manaster 式在香港市场的适配版）
+#
+# 依据：2025 年香港 IPO 保荐人承销榜单（Wind 数据，经 Sina/Eastmoney/Finet 等
+# 财经媒体汇总；CICC 约 35 单/18.4% 居首、中信国际约 24 单/12.6% 次之、
+# 华泰国际 13-14 单第三；外资行以大型项目为主——Goldman/UBS/J.P. Morgan/
+# Morgan Stanley）。
+#
+# 分层规则：
+#   tier 1 = 头部（榜单前列 + 大型项目常客）
+#   tier 2 = 主要中资/外资投行
+#   tier 3 = 兜底：出现在 sponsor 名单但不在上表的机构（默认 3）
+#   null   = 该发行人 sponsor 字段缺失
+# 数值越小声誉越高。issuer 取值 = min(名单内各保荐人的 tier)。
+#
+# 维护：新保荐人按当年榜单补入 tiers；匹配用规范化（小写、去标点）后的
+# 子串匹配；来源与日期必须随更新注明。
+meta:
+  source: "Wind 数据经 Sina/Eastmoney/Finet 汇总（2025 全年香港 IPO 保荐人榜单）"
+  as_of: "2026-09-28"
+  method: "2025 年承销宗数 + 大型项目参与度分层"
+tiers:
+  1:
+    - "China International Capital Corporation"   # CICC 中金
+    - "CITIC Securities"                          # 中信证券国际
+    - "Goldman Sachs"
+    - "Morgan Stanley"
+    - "UBS"
+    - "J.P. Morgan"
+    - "JPMorgan"
+    - "Bank of America"
+    - "BofA Securities"
+  2:
+    - "Huatai International"                      # 华泰国际
+    - "Huatai Financial"
+    - "Guotai Junan International"                # 国泰君安国际
+    - "CMB International"                         # 招银国际
+    - "CMBI"
+    - "BOC International"                         # 中银国际
+    - "BOCOM International"                       # 交银国际
+    - "Haitong International"                     # 海通国际
+    - "CGS International"                         # 中国银河国际
+    - "China Galaxy International"                # 银河国际
+    - "CCB International"                         # 建银国际
+    - "ICBC International"                        # 工银国际
+    - "China Merchants Securities"                # 招商证券国际
+    - "CITIC CLSA"                                # 中信里昂
+    - "CLSA"
+    - "Zhongtai International"                    # 中泰国际
+    - "GF Securities"                             # 广发融资(香港)
+    - "Guosen Securities"                         # 国信证券(香港)
+    - "Industrial and Commercial International"
+    - "Deutsche Bank"
+    - "Nomura"
+    - "Daiwa Capital Markets"
+    - "Ping An of China Capital"                  # 平安证券(香港)
+    - "Cinda International"                       # 信达国际
+    - "Straits International"
+    - "Sino-Rich"
+    - "Tiger Bank"

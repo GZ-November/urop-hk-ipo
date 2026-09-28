@@ -186,6 +186,50 @@ def check_identities(
     return violations, skipped
 
 
+def sponsor_reputation_tiers(
+    headers: list[str], rows: list[list[str]]
+) -> tuple[list[str], list[str]] | tuple[None, None]:
+    """Sponsor(s) 名单 -> 最优保荐人声誉 tier（1/2/3）。
+
+    排名表：schema/underwriter_rankings.yaml（2025 年香港承销榜单分层）。
+    规范化（小写去标点）后子串匹配；名单内全部未命中按兜底 tier 3 计；
+    sponsor 列缺失或名单为空返回 None（该列跳过）。
+    """
+    import yaml
+
+    from paths import ROOT as PIPELINE_ROOT
+    rankings_path = PIPELINE_ROOT / "schema" / "underwriter_rankings.yaml"
+    if "Sponsor(s)" not in headers or not rankings_path.is_file():
+        return None, None
+    data = yaml.safe_load(rankings_path.read_text(encoding="utf-8"))
+    norm = lambda s: re.sub(r"[^a-z0-9]+", "", str(s).lower())
+    tiers = {
+        norm(alias): int(tier)
+        for tier, names in (data.get("tiers") or {}).items()
+        for alias in names
+    }
+    idx = headers.index("Sponsor(s)")
+    values = []
+    for row in rows:
+        raw = row[idx] if idx < len(row) else ""
+        if _cell_missing(raw):
+            values.append("NaN")
+            continue
+        best = None
+        for sponsor in re.split(r"[;/\n]", str(raw)):
+            n = norm(sponsor)
+            if not n:
+                continue
+            t = 3  # 兜底：名单内但未列名的机构
+            for alias_n, tier in tiers.items():
+                if alias_n in n:
+                    t = min(t, tier)
+                    break
+            best = t if best is None else min(best, t)
+        values.append(str(best) if best is not None else "NaN")
+    return ["sponsor_reputation_tier"], values
+
+
 def compute_derived_columns(
     headers: list[str], rows: list[list[str]]
 ) -> tuple[list[str], list[list[str]], list[str]]:
@@ -217,6 +261,12 @@ def compute_derived_columns(
                 else:
                     values.append(f"{nums[0] / nums[1]:.6f}")
         columns.append(values)
+
+    # 附加：保荐人声誉 tier（非算术派生，单独处理）
+    tier_names, tier_values = sponsor_reputation_tiers(headers, rows)
+    if tier_names:
+        added.append(tier_names[0])
+        columns.append(tier_values)
     return added, columns, skipped
 
 

@@ -44,7 +44,7 @@ IDENTITY_COLUMNS = ["cohort", "cross_cohort_duplicate", "stock_code"]
 
 _NUMERIC_DTYPES = {"numeric", "boolean"}
 
-_DERIVED_NAMES = {name for name, _ in DERIVED_SPECS}
+_DERIVED_NAMES = {name for name, _ in DERIVED_SPECS} | {"sponsor_reputation_tier"}
 
 
 def available_slugs(

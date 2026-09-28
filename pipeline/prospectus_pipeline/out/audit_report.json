@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-27 16:24:36",
+  "timestamp": "2026-09-28 15:39:27",
   "workbook": "cohorts/HKIPO-MB2026Q1.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 38,
@@ -465,81 +465,81 @@
       "col": "ER",
       "header": "6-month post-IPO close price (HK$)",
       "tool_source": "tools/external/aftermarket.py (6-month close price)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 48.32
     },
     {
       "col": "ES",
       "header": "6-month BHR from Day-1 close (%)",
       "tool_source": "tools/external/aftermarket.py (6-month BHR)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 0.402205
     },
     {
       "col": "ET",
       "header": "6-month total return from offer price (%)",
       "tool_source": "tools/external/aftermarket.py (6-month total return)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 1.465306
     },
     {
       "col": "EU",
       "header": "6-month HSI return (%)",
       "tool_source": "tools/external/aftermarket.py (6-month HSI return)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": -0.124663
     },
     {
       "col": "EV",
       "header": "6-month HSTECH return (%)",
       "tool_source": "tools/external/aftermarket.py (6-month HSTECH return)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": -0.223511
     },
     {
       "col": "EW",
       "header": "6-month wealth relative vs HSI",
       "tool_source": "tools/external/aftermarket.py (6-month WR vs HSI)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 1.6019
     },
     {
       "col": "EX",
       "header": "6-month wealth relative vs HSTECH",
       "tool_source": "tools/external/aftermarket.py (6-month WR vs HSTECH)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 1.8058
     },
     {
       "col": "EY",
       "header": "6-month average daily turnover (HK$)",
       "tool_source": "tools/external/aftermarket.py (6-month average daily turnover)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 871107890
     },
     {
       "col": "EZ",
       "header": "Liquidity decay ratio (6M vs Day-1 turnover)",
       "tool_source": "tools/external/aftermarket.py (Liquidity decay ratio)",
-      "filled_count": 27,
+      "filled_count": 31,
       "total_count": 38,
-      "fill_rate": "71.1%",
+      "fill_rate": "81.6%",
       "sample_value": 0.157773
     },
     {

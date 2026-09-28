@@ -294,10 +294,10 @@ class RealArtifactTests(unittest.TestCase):
             # --derive：免汇率派生列应全部可算并追加到 master
             summary_d = build_master(WS, registry_path=registry_path, out_dir=Path(tmp),
                                      derive=True)
-            self.assertEqual(len(summary_d["derived_columns"]), len(DERIVED_SPECS))
+            self.assertEqual(len(summary_d["derived_columns"]), len(DERIVED_SPECS) + 1)  # + sponsor_reputation_tier
             with Path(summary_d["master_csv"]).open(encoding="utf-8-sig", newline="") as fh:
                 rows_d = list(csv.reader(fh))
-            self.assertEqual(len(rows_d[0]), 2 + 202 + len(DERIVED_SPECS))
+            self.assertEqual(len(rows_d[0]), 2 + 202 + len(DERIVED_SPECS) + 1)
 
 
 if __name__ == "__main__":
