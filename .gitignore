@@ -46,6 +46,7 @@ pipeline/prospectus_pipeline/datasets/tmp*/
 **/.*.xlsx.lock
 
 # 招股书 / 配发公告 PDF（体积原因，不上传）：data/ 与 out/ 下一切 pdf 目录
+pipeline/prospectus_pipeline/out/prompts/
 pipeline/prospectus_pipeline/data/**/pdf/
 pipeline/prospectus_pipeline/out/**/pdf/
 pipeline/prospectus_pipeline/data/allotment/

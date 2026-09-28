@@ -24,8 +24,8 @@ class PromptPackTests(unittest.TestCase):
         self.assertGreater(len(shared), len(PACKET))
         self.assertTrue(ex.startswith(shared))
         self.assertTrue(rv.startswith(shared))
-        self.assertIn("任务：抽取", ex[len(shared):])
-        self.assertIn("任务：独立复核", rv[len(shared):])
+        self.assertTrue(ex[len(shared):].startswith("抽取"))
+        self.assertTrue(rv[len(shared):].startswith("独立复核"))
 
     def test_manual_rules_present(self):
         prompt = build_prompt("extract", "0001.HK", "Test Co", PACKET)
