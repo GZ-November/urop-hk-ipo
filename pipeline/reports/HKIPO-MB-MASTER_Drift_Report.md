@@ -1,9 +1,8 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-28 15:21:47 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-28 15:29:28 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
-- **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction（免汇率，`--derive` 生成）
 
 ## 1. 表头跨 cohort 对齐：✅ 通过
 
@@ -101,15 +100,15 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `1-month wealth relative vs HSI` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
 | `1-month wealth relative vs HSTECH` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
 | `1-month average daily turnover (HK$)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
-| `6-month post-IPO close price (HK$)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month BHR from Day-1 close (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month total return from offer price (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month HSI return (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month HSTECH return (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month wealth relative vs HSI` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month wealth relative vs HSTECH` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `6-month average daily turnover (HK$)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Liquidity decay ratio (6M vs Day-1 turnover)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
+| `6-month post-IPO close price (HK$)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month BHR from Day-1 close (%)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month total return from offer price (%)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month HSI return (%)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month HSTECH return (%)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month wealth relative vs HSI` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month wealth relative vs HSTECH` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `6-month average daily turnover (HK$)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
+| `Liquidity decay ratio (6M vs Day-1 turnover)` | 100.0% | 100.0% | 81.6% | 0.0% | 0.0% |
 | `1-year post-IPO return (%) [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | `1-year wealth relative vs HSI [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |
 | `3-year post-IPO return (%) [Reserved]` | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% |

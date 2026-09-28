@@ -3,7 +3,7 @@
 - **样本规模 (N)**：38 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-27 12:15:41 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-28 15:29:27 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -160,7 +160,7 @@
 | **EG** | `Applicable IPO rules / transition basis` | 适用之上市规则过渡基准（FINI 改革规则） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 32, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 6) |
 | **EH** | `Company Chinese Name` | Company Chinese Name | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (37/38 (97.37%)) | 共 37 种取值 ('上海壁仞科技股份有限公司': 1, '北京智谱华章科技股份有限公司': 1, '上海天数智芯半导体股份有限公司': 1) |
 | **EI** | `Current listing status` | 当前挂牌存续状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Active': 37, 'Suspended': 1) |
-| **EJ** | `1-month post-IPO close price (HK$)` | 第20个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 101.17 / 中位数 59.55 / 区间 [8.05, 486.00] |
+| **EJ** | `1-month post-IPO close price (HK$)` | 第20个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 101.16 / 中位数 59.55 / 区间 [8.05, 486.00] |
 | **EK** | `1-month BHR from Day-1 close (%)` | 由首日收盘至第20个交易日的买入持有收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 0.11 / 中位数 0.02 / 区间 [-0.63, 2.11] |
 | **EL** | `1-month total return from offer price (%)` | 由发售价至第20个交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 0.48 / 中位数 0.22 / 区间 [-0.63, 2.15] |
 | **EM** | `1-month HSI return (%)` | 同期恒生指数累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 0.01 / 中位数 0.02 / 区间 [-0.07, 0.07] |
@@ -168,15 +168,15 @@
 | **EO** | `1-month wealth relative vs HSI` | 一个月相对恒指财富比 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 1.10 / 中位数 1.02 / 区间 [0.36, 3.01] |
 | **EP** | `1-month wealth relative vs HSTECH` | 一个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 1.14 / 中位数 1.05 / 区间 [0.39, 3.09] |
 | **EQ** | `1-month average daily turnover (HK$)` | 上市后首20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (37/38 (97.37%)) | 均值 217,400,066.86 / 中位数 114,006,531.00 / 区间 [13,271,480.00, 1,047,544,366.00] |
-| **ER** | `6-month post-IPO close price (HK$)` | 六个月目标日后首个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 164.99 / 中位数 39.98 / 区间 [4.30, 1,825.00] |
-| **ES** | `6-month BHR from Day-1 close (%)` | 由首日收盘至六个月目标交易日的买入持有收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 0.36 / 中位数 -0.29 / 区间 [-0.68, 12.88] |
-| **ET** | `6-month total return from offer price (%)` | 由发售价至六个月目标交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 0.70 / 中位数 -0.14 / 区间 [-0.65, 14.71] |
-| **EU** | `6-month HSI return (%)` | 同期恒生指数累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 -0.06 / 中位数 -0.05 / 区间 [-0.12, -0.01] |
-| **EV** | `6-month HSTECH return (%)` | 同期恒生科技指数累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 -0.14 / 中位数 -0.12 / 区间 [-0.22, -0.09] |
-| **EW** | `6-month wealth relative vs HSI` | 六个月相对恒指财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 1.45 / 中位数 0.76 / 区间 [0.33, 15.00] |
-| **EX** | `6-month wealth relative vs HSTECH` | 六个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 1.60 / 中位数 0.85 / 区间 [0.35, 16.66] |
-| **EY** | `6-month average daily turnover (HK$)` | 六个月目标日前20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 579,847,504.09 / 中位数 72,406,991.00 / 区间 [108,175.00, 5,832,790,800.00] |
-| **EZ** | `Liquidity decay ratio (6M vs Day-1 turnover)` | 六个月窗口日均成交额相对首日成交额比率 | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (27/38 (71.05%)) | 均值 0.27 / 中位数 0.06 / 区间 [0.00, 2.62] |
+| **ER** | `6-month post-IPO close price (HK$)` | 六个月目标日后首个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 148.15 / 中位数 39.24 / 区间 [4.30, 1,825.00] |
+| **ES** | `6-month BHR from Day-1 close (%)` | 由首日收盘至六个月目标交易日的买入持有收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 0.33 / 中位数 -0.21 / 区间 [-0.68, 12.88] |
+| **ET** | `6-month total return from offer price (%)` | 由发售价至六个月目标交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 0.64 / 中位数 -0.08 / 区间 [-0.65, 14.71] |
+| **EU** | `6-month HSI return (%)` | 同期恒生指数累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 -0.05 / 中位数 -0.04 / 区间 [-0.12, 0.02] |
+| **EV** | `6-month HSTECH return (%)` | 同期恒生科技指数累计收益率 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 -0.13 / 中位数 -0.11 / 区间 [-0.22, -0.07] |
+| **EW** | `6-month wealth relative vs HSI` | 六个月相对恒指财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 1.42 / 中位数 0.82 / 区间 [0.33, 15.00] |
+| **EX** | `6-month wealth relative vs HSTECH` | 六个月相对恒生科技指数财富比 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 1.56 / 中位数 0.87 / 区间 [0.35, 16.66] |
+| **EY** | `6-month average daily turnover (HK$)` | 六个月目标日前20个交易日日均成交额 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (31/38 (81.58%)) | 均值 508,108,664.32 / 中位数 38,865,295.00 / 区间 [108,175.00, 5,832,790,800.00] |
+| **EZ** | `Liquidity decay ratio (6M vs Day-1 turnover)` | 六个月窗口日均成交额相对首日成交额比率 | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (31/38 (81.58%)) | 均值 0.24 / 中位数 0.05 / 区间 [0.00, 2.62] |
 | **FA** | `1-year post-IPO return (%) [Reserved]` | 一年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FB** | `1-year wealth relative vs HSI [Reserved]` | 一年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
