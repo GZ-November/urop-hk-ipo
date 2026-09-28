@@ -52,6 +52,15 @@ pip install -r requirements.txt
    make test
    # Or directly:
    python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
+
+
+## Pre-push 钩子（推荐）
+
+推送前自动跑测试套件，挡住带失败测试的提交：
+
+```bash
+git config core.hooksPath .githooks
+```
    ```
 
 3. **Check Code Quality**:
