@@ -59,7 +59,7 @@ class ExpansionWriterTests(unittest.TestCase):
                 },
                 "dataset": {"period_start": "2026-01-01", "period_end": "2026-01-31"},
                 "filter_period": True,
-                "paths": {"out": root / "out"},
+                "paths": {"out": root / "out", "allot_out": root / "allot_out"},
             }
             result = WorkbookExpansionWriter(cfg=cfg).write_expansion()
 
@@ -106,7 +106,7 @@ class ExpansionWriterTests(unittest.TestCase):
                 "id_columns": {"file_no": "A", "stock_code": "B", "name": "C", "prospectus_date": "D", "listing_date": "E"},
                 "dataset": {"period_start": "2025-01-01", "period_end": "2025-03-31"},
                 "filter_period": True,
-                "paths": {"out": root / "out"},
+                "paths": {"out": root / "out", "allot_out": root / "allot_out"},
             }
             writer = WorkbookExpansionWriter(cfg=cfg)
             with self.assertRaises(ValueError):

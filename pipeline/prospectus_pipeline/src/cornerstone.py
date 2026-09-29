@@ -64,6 +64,31 @@ def assess(cfg: dict, code: str) -> dict:
             "announcement_sections": asec, "sample_pages": (pw or aw)}
 
 
+def confirmed_absent(cfg: dict) -> set[str]:
+    """Normalized codes of issuers confirmed to have no cornerstone investors.
+
+    Either cornerstone_absence.json says absent (``none`` is the legacy label)
+    or the allotment extraction's final cornerstone allocation (col_CK) is a
+    definite 0. The extraction is authoritative and some cohorts have no
+    cornerstone_absence.json at all.
+    """
+    from contracts import normalize_code
+
+    allot_out = cfg["paths"]["allot_out"]
+    codes: set[str] = set()
+    ca_path = allot_out / "cornerstone_absence.json"
+    if ca_path.exists():
+        for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
+            if rec.get("verdict") in ("absent", "none"):
+                codes.add(normalize_code(code))
+    for path in (allot_out / "extracted").glob("HKIPO-MB*.json"):
+        rec = json.loads(path.read_text(encoding="utf-8"))
+        allocation = (rec.get("fields", {}).get("col_CK") or {}).get("value")
+        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool) and allocation == 0:
+            codes.add(normalize_code(rec["code"]))
+    return codes
+
+
 def scan(cfg: dict, only=None, log=print) -> dict:
     out_path = cfg["paths"]["allot_out"] / "cornerstone_absence.json"
     result = json.loads(out_path.read_text(encoding="utf-8")) if out_path.exists() else {}
