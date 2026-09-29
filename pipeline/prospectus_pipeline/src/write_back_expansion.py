@@ -24,6 +24,7 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 
+import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
