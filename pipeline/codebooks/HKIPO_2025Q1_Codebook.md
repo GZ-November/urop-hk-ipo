@@ -3,7 +3,11 @@
 - **样本规模 (N)**：15 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
+<<<<<<< HEAD
 - **生成时间**：2026-09-29 23:53:45 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
+=======
+- **生成时间**：2026-09-30 00:08:33 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
+>>>>>>> origin/main
 
 ---
 
@@ -207,9 +211,9 @@
 | **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.34 / 中位数 0.36 / 区间 [0.04, 0.60] |
 | **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | 100% 完备 | 共 12 种取值 ('2025-07-09': 2, '2025-07-10': 2, '2025-07-13': 2) |
 | **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 12 种取值 ('2026-01-09': 2, '2026-01-10': 2, '2026-01-13': 2) |
-| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | 100% 完备 | 均值 0.01 / 中位数 -0.05 / 区间 [-0.16, 0.66] |
-| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | 100% 完备 | 均值 -0.05 / 中位数 -0.03 / 区间 [-0.40, 0.31] |
-| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | 100% 完备 | 均值 2.08 / 中位数 1.10 / 区间 [0.25, 11.17] |
+| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (11/15 (73.33%)) | 均值 0.02 / 中位数 -0.04 / 区间 [-0.16, 0.66] |
+| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (11/15 (73.33%)) | 均值 -0.05 / 中位数 -0.08 / 区间 [-0.40, 0.31] |
+| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (11/15 (73.33%)) | 均值 1.56 / 中位数 1.10 / 区间 [0.25, 5.09] |
 | **GH** | `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | 深蓝 | `string` | Prospectus syndicate structure | 100% 完备 | 共 1 种取值 ('CICC': 15) |
 | **GI** | `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 2.00 / 中位数 2.00 / 区间 [2.00, 2.00] |
 | **GJ** | `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus syndicate structure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 15 家 |
