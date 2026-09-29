@@ -3,7 +3,7 @@
 - **样本规模 (N)**：45 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-28 15:52:24 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-29 21:36:24 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
 
 ---
 
@@ -124,7 +124,7 @@
 | **CW** | `Listing expenses (HK$)` | **总上市费用**（HK$ 基本单位，含承销佣金与其他开支）。取 UNDERWRITING COMMISSIONS AND LISTING EXPENSES 段的合计。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 94,820,000.00 / 中位数 86,900,000.00 / 区间 [14,900,000.00, 264,000,000.00] |
 | **CX** | `Cornerstone investor names` | Cornerstone investor names | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (37/45 (82.22%)) | 共 37 种取值 ('Aranda Investments Pte. Ltd.; Shanghai Lujiazui (Group) Co., Ltd. (GUOTAI JUNAN INVESTMENTS (HONG KONG) LIMITED OTC Swap); Goldman Sachs Asset Management (Hong Kong) Limited; HHLR Advisors, Ltd.; Hillhouse Investment Management, Ltd.; UBS Asset Management (Singapore) Ltd.; AXA Investment Managers UK Limited; CPE Energy Investment Limited; Lazurite Hime L.P.; Baring Asset Management (Asia) Limited; Charoen Pokphand Robot Limited; CPIC Investment Management (H.K.) Company Limited; Fullgoal Asset Management (HK) Limited; Fullgoal Fund Management Co., Ltd.; Greenwoods Asset Management Hong Kong Limited; Huadeng Technology Space Ventures Ltd; ICBC Wealth Management Co., Ltd.; Perseverance Asset Management International (Singapore) Pte. Ltd.; Scene Cloud Global Limited; Tropical Terrain Limited; 3W Fund Management Limited': 1, 'Taikang Life Insurance Co., Ltd; Sunshine Life Insurance Corporation Limited; GF Fund Management Co., Ltd.; GF International Investment Management Limited; REDWOOD ELITE LIMITED; Mirae Asset Securities Co., Ltd.; RIME Capital Limited; Hesai Hong Kong Limited; Guohui (HK) Holdings Co., Limited; CR Construction Group Holdings Limited': 1, 'CPE Peepal; HHLRA; UBS AM Singapore; Arc Avenue; Boyu; Fullgoal; GF Fund; Greenwoods; Mirae HK; Perseverance Asset Management; Yield Royal Investment; 3W Fund; Eastern Bell Capital VIII; ICBC Wealth; Protium Capital Limited; Source Code Capital; WT Asset Management; E Fund; China AMC; Cithara Fund; Panjing Fund; Value Partners; China Orient Multi-Strategy Master Fund; CMSIM': 1) |
 | **CY** | `Final cornerstone allocation (% of base offer)` | Final cornerstone allocation (% of base offer) | 深蓝 | `numeric` | Allotment results announcement | 100% 完备 | 均值 0.33 / 中位数 0.37 / 区间 [0.00, 0.65] |
-| **CZ** | `Earliest cornerstone unlock date (dd/mm/yy)` | 基石投资者最早解禁日期 | 深蓝 | `date` | Post-IPO lockup expiration events | 100% 完备 | 区间: 2026-10-16 ~ 2026-12-30 |
+| **CZ** | `Earliest cornerstone unlock date (dd/mm/yy)` | 基石投资者最早解禁日期 | 深蓝 | `date` | Post-IPO lockup expiration events | Adequate (37/45 (82.22%)) | 区间: 2026-10-16 ~ 2026-12-30 |
 | **DA** | `Subscription Ratio (times)` | Subscription Ratio (times) | 深蓝 | `numeric` | Allotment results announcement | 100% 完备 | 均值 3,198.68 / 中位数 2,003.16 / 区间 [4.42, 14,855.40] |
 | **DB** | `Public applicants` | Public applicants | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 203,846.38 / 中位数 202,730.00 / 区间 [22,329.00, 383,309.00] |
 | **DC** | `Public valid applied shares` | Public valid applied shares | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 10,785,534,139.42 / 中位数 4,969,471,300.00 / 区间 [39,645,800.00, 84,572,151,000.00] |

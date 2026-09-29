@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-28 15:52:24"
+    "generated_at": "2026-09-29 21:36:24"
   },
   "variables": [
     {
@@ -2632,13 +2632,13 @@
       "group": "cornerstone",
       "data_type": "date (YYYY-MM-DD)",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "基石协议、配发结果公告与上市日确定性派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
+        "valid_n": 37,
+        "missing_n": 8,
+        "fill_rate_pct": 82.22,
         "min_date": "2026-10-16",
         "max_date": "2026-12-30",
         "summary_display": "区间: 2026-10-16 ~ 2026-12-30"

@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-28 21:54:09 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-29 21:36:34 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -83,7 +83,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Audit opinion (year-1)` | 93.3% | 100.0% | 100.0% | 95.6% | 100.0% |
 | `Listing expenses (HK$)` | 100.0% | 100.0% | 100.0% | 100.0% | 95.7% |
 | `Cornerstone investor names` | 73.3% | 92.6% | 89.5% | 82.2% | 73.9% |
-| `Earliest cornerstone unlock date (dd/mm/yy)` | 73.3% | 92.6% | 89.5% | 100.0% | 73.9% |
+| `Earliest cornerstone unlock date (dd/mm/yy)` | 73.3% | 92.6% | 89.5% | 82.2% | 73.9% |
 | `Pricing date` | 93.3% | 59.3% | 73.7% | 42.2% | 52.2% |
 | `Over-allotment shares actually issued` | 100.0% | 100.0% | 100.0% | 100.0% | 78.3% |
 | `Actual clawback / reallocation description` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
@@ -147,7 +147,6 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Earliest Pre-IPO investment round` | 84.4% | 73.9% | -10.5pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 69.6% | -10.4pp |
 | `Financial statement unit multiplier` | 91.1% | 39.1% | -52.0pp |
-| `Earliest cornerstone unlock date (dd/mm/yy)` | 100.0% | 73.9% | -26.1pp |
 | `Pricing date` | 42.2% | 52.2% | +10.0pp |
 | `Over-allotment shares actually issued` | 100.0% | 78.3% | -21.7pp |
 | `1-month post-IPO close price (HK$)` | 100.0% | 78.3% | -21.7pp |

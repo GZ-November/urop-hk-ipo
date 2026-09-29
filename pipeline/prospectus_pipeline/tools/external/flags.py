@@ -9,7 +9,8 @@
   BM Chapter 18C flag         ← col_AS 是否肯定援引 "Chapter 18C"（忽略否定式表述）
   BQ Place of incorporation   ← 招股书前几页 "incorporated in ..."
   CL Earliest cornerstone unlock date ← 上市日 + 6 个月（港交所规则；
-                                无基石的 4 家填 NA，依据 cornerstone_absence.json）
+                                无基石者填 NA，依据配发抽取 col_CK == 0
+                                或 cornerstone_absence.json verdict absent/none）
 
 只赋值，不改 font/fill/number_format。写前备份。
 证据落到 out/derived_flags.json 供审计。
@@ -141,7 +142,8 @@ def main() -> int:
     no_cornerstone = set()
     if ca_path.exists():
         for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
-            if rec.get("verdict") == "none":
+            # cornerstone.py 现写 "absent"；"none" 是旧版记录的同义标签
+            if rec.get("verdict") in ("absent", "none"):
                 no_cornerstone.add(normalize_code(code))
     # The allotment extraction is the authoritative final allocation. Some
     # cohorts have no separate cornerstone_absence.json at all.
