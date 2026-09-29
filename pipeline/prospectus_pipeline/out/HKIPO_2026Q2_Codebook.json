@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 21:48:31"
+    "generated_at": "2026-09-29 21:53:57"
   },
   "variables": [
     {
@@ -1942,10 +1942,10 @@
         "valid_n": 45,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "true_count": 0,
-        "false_count": 45,
-        "true_pct": 0.0,
-        "summary_display": "1 (是): 0 家 (0.0%), 0 (否): 45 家"
+        "true_count": 7,
+        "false_count": 38,
+        "true_pct": 15.6,
+        "summary_display": "1 (是): 7 家 (15.6%), 0 (否): 38 家"
       }
     },
     {
@@ -2119,19 +2119,14 @@
       "group": "external_tools",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NA in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "unique_count": 2,
-        "top_categories": {
-          "PRC": 42,
-          "Cayman Islands": 2
-        },
-        "summary_display": "共 2 种取值 ('PRC': 42, 'Cayman Islands': 2)"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -3456,15 +3451,15 @@
       "coverage_status": "Adequate",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
+        "valid_n": 42,
+        "missing_n": 3,
+        "fill_rate_pct": 93.33,
         "unique_count": 2,
         "top_categories": {
-          "Mechanism B": 37,
-          "Mechanism A": 7
+          "Mechanism B": 29,
+          "Mechanism A": 13
         },
-        "summary_display": "共 2 种取值 ('Mechanism B': 37, 'Mechanism A': 7)"
+        "summary_display": "共 2 种取值 ('Mechanism B': 29, 'Mechanism A': 13)"
       }
     },
     {
@@ -3485,11 +3480,11 @@
         "fill_rate_pct": 100.0,
         "unique_count": 3,
         "top_categories": {
-          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B": 37,
-          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A": 7,
-          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)": 1
+          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B": 29,
+          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A": 13,
+          "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)": 3
         },
-        "summary_display": "共 3 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 37, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 7, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)': 1)"
+        "summary_display": "共 3 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 29, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 13, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)': 3)"
       }
     },
     {
