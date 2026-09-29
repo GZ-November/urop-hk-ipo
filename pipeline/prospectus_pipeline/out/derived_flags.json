@@ -15,6 +15,28 @@
       "CL": "2026-10-17"
     }
   },
+  "0537.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 6,
+        "page": 20,
+        "quote": "THE STOCK EXCHANGE Since April 8, 2022, our A Shares have been listed on the Shanghai Stock Exchange’s STAR Market with the stock code of 688337. During the Tra",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board - Rule 8.05(3) (market capitalisation/revenue test)",
+      "incorporation": "int Lead Managers Stock code : 00537 (A joint stock company incorporated in the People’s Republic of China with limited liability) If you are in any doubt about any o",
+      "unlock": "上市日 2026-07-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-09"
+    }
+  },
   "0901.HK": {
     "evidence": {
       "col_AS": "Chapter 19A of the Listing Rules (H Share issuer)",
@@ -93,6 +115,28 @@
       "BM": "0",
       "BQ": "NA",
       "CL": "2026-11-11"
+    }
+  },
+  "1276.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 4,
+        "page": 118,
+        "quote": "atory regimes in the two jurisdictions. Our A Shares are listed on the Shanghai Stock Exchange. The characteristics of the A Share and H Share markets may",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board",
+      "incorporation": "Stock Code:1276 (A joint stock company incorporated in the People’s Republic of China with limited liability) Joint Sponsors, Overall Coordinator",
+      "unlock": "上市日 2025-05-23 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2025-11-23"
     }
   },
   "1392.HK": {
@@ -207,6 +251,50 @@
       "CL": "2026-12-26"
     }
   },
+  "2050.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 3,
+        "page": 80,
+        "quote": "A share and H share markets may differ. Our A Shares are listed and traded on the Shenzhen Stock Exchange. Following the Global Offering, our A Shares will continue ",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board",
+      "incorporation": "GLOBAL OFFERING GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock code : 2050 Joint Sponsors, O",
+      "unlock": "上市日 2025-06-23 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2025-12-23"
+    }
+  },
+  "2249.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 5,
+        "page": 58,
+        "quote": "A Share and H Share markets may differ. Our A Shares are listed on the STAR Market of the Shanghai Stock Exchange. Following the Global Offering, our A Shares will continue ",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board of the Stock Exchange",
+      "incorporation": "GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability and registered with the Registrar of",
+      "unlock": "上市日 2026-07-10 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-10"
+    }
+  },
   "2272.HK": {
     "evidence": {
       "col_AS": "Main Board of the Stock Exchange (H Shares of a PRC issuer, Chapter 19A)",
@@ -255,6 +343,28 @@
       "CL": "2026-12-24"
     }
   },
+  "2475.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 5,
+        "page": 53,
+        "quote": ". RISKS RELATING TO THE GLOBAL OFFERING Our A Shares are listed on the Shenzhen Stock Exchange, and the characteristics of the A Share and H Share markets",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board of the Stock Exchange — H Shares of a PRC issuer (Chapter 19A)",
+      "incorporation": "uxshare Precision Industry Co., Ltd. (a joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code : 2475 GLOBAL OFFERING J",
+      "unlock": "上市日 2026-07-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-09"
+    }
+  },
   "2476.HK": {
     "evidence": {
       "col_AS": "Main Board - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
@@ -273,17 +383,23 @@
   },
   "2493.HK": {
     "evidence": {
+      "a_plus_h": {
+        "hits": 8,
+        "page": 10,
+        "quote": "rom drug discovery to commercial sales. The A Shares of our Company have been listed on the Shanghai Stock Exchange STAR Market (stock code: 688062) since January 2022. We hav",
+        "source": "prospectus"
+      },
       "col_AS": "Chapter 18A of the Listing Rules (Main Board)",
-      "incorporation": "缺页级文本",
+      "incorporation": "Stock Code : 2493 (A joint stock company incorporated in the People’s Republic of China with limited liability) 邁威（上海）生物科技股份有限公司 Mabwell (Shanghai)",
       "unlock": "上市日 2026-04-28 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "0",
+      "BJ": "1",
       "BK": "0",
       "BL": "1",
       "BM": "0",
-      "BQ": "NA",
+      "BQ": "PRC",
       "CL": "2026-10-28"
     }
   },
@@ -335,6 +451,28 @@
       "CL": "NA"
     }
   },
+  "2701.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 9,
+        "page": 24,
+        "quote": "LISTING ON THE HONG KONG STOCK EXCHANGE Our A Shares are currently listed on the ChiNext Market of the Shenzhen Stock Exchange. We are seeking a listing of our H Shares on the Hong Kong ",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board under Rule 8.05(3) of the Listing Rules (market capitalization/revenue test)",
+      "incorporation": "Stock Code : 2701 (A joint stock company incorporated in the People’s Republic of China with limited liability) GLOBAL OFFERING 國民技術股份有限公司 NSING TE",
+      "unlock": "上市日 2026-03-23 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2026-09-23"
+    }
+  },
   "2723.HK": {
     "evidence": {
       "col_AS": "Main Board - Rule 8.05(2) market capitalisation/revenue/cash flow test",
@@ -349,6 +487,28 @@
       "BM": "0",
       "BQ": "NA",
       "CL": "NA"
+    }
+  },
+  "2865.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 5,
+        "page": 44,
+        "quote": "ic offering of 30,000,000 A Shares, and our A Shares became listed on the Shenzhen Stock Exchange (stock code: 002865.SZ) on April 25, 2017. RECENT DEVELOPME",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board listing under Rule 8.05(3) market capitalization/revenue test",
+      "incorporation": "Stock Code : 02865 (A joint stock company incorporated in the People’s Republic of China with limited liability) 海南鈞達新能源科技股份有限公司 Hainan Drinda New E",
+      "unlock": "上市日 2025-05-08 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2025-11-08"
     }
   },
   "3277.HK": {
@@ -367,19 +527,47 @@
       "CL": "2026-10-17"
     }
   },
+  "3288.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 6,
+        "page": 66,
+        "quote": "A share and H share markets may differ. Our A Shares are listed and traded on the Shanghai Stock Exchange. Following the Global Offering, our A Shares will continue ",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board of the Stock Exchange",
+      "incorporation": "IAN FLAVOURING AND FOOD COMPANY LTD. (A joint stock company incorporated in the People’s Republic of China with limited liability) GLOBAL OFFERING Stock Code : 3288 I",
+      "unlock": "上市日 2025-06-19 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2025-12-19"
+    }
+  },
   "3296.HK": {
     "evidence": {
+      "a_plus_h": {
+        "hits": 9,
+        "page": 24,
+        "quote": "NGHAI STOCK EXCHANGE Since August 2023, our Company’s A Shares have been listed on the main board of Shanghai Stock Exchange. Our Directors confirmed that, since its listing on the Sha",
+        "source": "prospectus"
+      },
       "col_AS": "Main Board of the Hong Kong Stock Exchange as a PRC issuer (Chapter 19A of the Listing Rules)",
-      "incorporation": "缺页级文本",
+      "incorporation": "Joint Lead Managers Stock Code: 3296 (A joint stock company incorporated in the People's Republic of China with limited liability) IMPORTANT: If you are in any doubt ",
       "unlock": "上市日 2026-04-23 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "0",
+      "BJ": "1",
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "NA",
+      "BQ": "PRC",
       "CL": "2026-10-23"
     }
   },
@@ -559,6 +747,28 @@
       "CL": "2026-12-17"
     }
   },
+  "6693.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 4,
+        "page": 44,
+        "quote": "headquarters in Beijing; (iii) as our Group’s A shares are listed on the SSE, (a) our principal books and records are located and mainta",
+        "source": "prospectus"
+      },
+      "col_AS": "Chapter 18 of the Listing Rules (mineral company)",
+      "incorporation": " Bookrunners and Joint Lead Managers (A joint stock company incorporated in the People’s Republic of China with limited liability) 赤峰吉隆黃金礦業股份有限公司 Chifeng Jilong Gold ",
+      "unlock": "上市日 2025-03-10 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2025-09-10"
+    }
+  },
   "6715.HK": {
     "evidence": {
       "col_AS": "Main Board",
@@ -639,6 +849,28 @@
       "CL": "2026-12-30"
     }
   },
+  "6951.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 10,
+        "page": 26,
+        "quote": "ENZHEN STOCK EXCHANGE In December 2014, the A Shares of the Company were listed on the ChiNext of the Shenzhen Stock Exchange (stock code: 300408.SZ) (the “A-Share Listing”). The Compan",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board",
+      "incorporation": "nt Bookrunner and Joint Lead Manager (A joint stock company incorporated in the People's Republic of China with limited liability) IMPORTANT: If you are in any doubt ",
+      "unlock": "上市日 2026-07-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-09"
+    }
+  },
   "7630.HK": {
     "evidence": {
       "col_AS": "Chapter 18A of the Listing Rules (Main Board biotech listing)",
@@ -687,6 +919,28 @@
       "CL": "2026-11-20"
     }
   },
+  "9611.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 4,
+        "page": 88,
+        "quote": "listing rules in the two jurisdictions. Our A Shares are listed on the Shanghai Stock Exchange, and the characteristics of the A share and H share markets",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board (Chapter 19A PRC issuer)",
+      "incorporation": "Stock Code : 9611 GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability) 上海龍旗科技股份有限公司 Shanghai Longcheer Tec",
+      "unlock": "上市日 2026-01-22 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2026-07-22"
+    }
+  },
   "9630.HK": {
     "evidence": {
       "col_AS": "Main Board of the Stock Exchange - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
@@ -717,6 +971,28 @@
       "BM": "0",
       "BQ": "NA",
       "CL": "2026-12-29"
+    }
+  },
+  "9980.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 4,
+        "page": 74,
+        "quote": ". RISKS RELATING TO THE GLOBAL OFFERING Our A Shares are listed on the Shanghai Stock Exchange, and the characteristics of the A Share and H Share markets",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board (Chapter 19A PRC issuer)",
+      "incorporation": "age (Group) Co., Ltd. 東鵬飲料（集團）股份有限公司 (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code : 09980 Joint Sponsors, ",
+      "unlock": "上市日 2026-02-03 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2026-08-03"
     }
   }
 }
