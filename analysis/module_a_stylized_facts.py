@@ -116,6 +116,11 @@ def split_samples(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     return df[df["cohort"].str.startswith("2026")], df[df["cohort"].str.startswith("2025")]
 
 
+def select_2026(df: pd.DataFrame) -> pd.DataFrame:
+    """Return the 2026 IPO sample only (same selection as split_samples)."""
+    return split_samples(df)[0]
+
+
 # ---------------------------------------------------------------- stats
 
 def summarize(g: pd.DataFrame) -> dict[str, float]:
