@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 21:53:57"
+    "generated_at": "2026-09-29 23:55:03"
   },
   "variables": [
     {
@@ -2119,14 +2119,19 @@
       "group": "external_tools",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
-      "coverage_status": "Reserved / Unmatured",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 0,
-        "missing_n": 45,
-        "fill_rate_pct": 0.0,
-        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
+        "valid_n": 8,
+        "missing_n": 37,
+        "fill_rate_pct": 17.78,
+        "unique_count": 2,
+        "top_categories": {
+          "PRC": 7,
+          "Cayman Islands": 1
+        },
+        "summary_display": "共 2 种取值 ('PRC': 7, 'Cayman Islands': 1)"
       }
     },
     {
@@ -4883,21 +4888,21 @@
       "group": "investor_network",
       "data_type": "numeric",
       "timing_convention": "Prospectus / allotment institutional network",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "配发结果公告基石投资者明细汇总",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 4.0,
+        "valid_n": 8,
+        "missing_n": 37,
+        "fill_rate_pct": 17.78,
+        "mean": 0.0,
         "std": 0.0,
-        "median": 4.0,
-        "min": 4.0,
-        "q25": 4.0,
-        "q75": 4.0,
-        "max": 4.0,
-        "summary_display": "均值 4.00 | 中位数 4.00 | 区间 [4.00, 4.00]"
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "max": 0.0,
+        "summary_display": "均值 0.00 | 中位数 0.00 | 区间 [0.00, 0.00]"
       }
     },
     {

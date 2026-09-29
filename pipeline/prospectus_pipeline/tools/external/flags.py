@@ -32,6 +32,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
 
 from contracts import normalize_code  # noqa: E402
+from cornerstone import confirmed_absent  # noqa: E402
 from run import load_cfg  # noqa: E402
 
 HEADERS = {
@@ -171,21 +172,8 @@ def main() -> int:
     book = Path(args.book) if args.book else cfg["_workbook_path"]
     dry = args.dry_run
 
-    # 基石「确认无」的公司
-    ca_path = cfg["paths"]["allot_out"] / "cornerstone_absence.json"
-    no_cornerstone = set()
-    if ca_path.exists():
-        for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
-            # cornerstone.py 现写 "absent"；"none" 是旧版记录的同义标签
-            if rec.get("verdict") in ("absent", "none"):
-                no_cornerstone.add(normalize_code(code))
-    # The allotment extraction is the authoritative final allocation. Some
-    # cohorts have no separate cornerstone_absence.json at all.
-    for path in (cfg["paths"]["allot_out"] / "extracted").glob("HKIPO-MB*.json"):
-        rec = json.loads(path.read_text(encoding="utf-8"))
-        allocation = (rec.get("fields", {}).get("col_CK") or {}).get("value")
-        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool) and allocation == 0:
-            no_cornerstone.add(normalize_code(rec["code"]))
+    # 基石「确认无」的公司（配发抽取 col_CK == 0 是权威依据，见 cornerstone.confirmed_absent）
+    no_cornerstone = confirmed_absent(cfg)
 
     wb_read = openpyxl.load_workbook(book, data_only=True)
     ws_read = wb_read[cfg["sheet"]]
