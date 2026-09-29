@@ -65,6 +65,33 @@ EXPANSION_COLUMNS = [
 ]
 
 
+# 缺来源一律返回 None：不得以行业惯例值、默认券商名或其他列代填。
+def _present(val: Any) -> bool:
+    return val is not None and str(val).strip() != ""
+
+
+def _text(val: Any) -> str | None:
+    return str(val).strip() if _present(val) else None
+
+
+def _num(val: Any, divisor: float = 1.0) -> float | None:
+    return float(val) / divisor if _present(val) else None
+
+
+def _pct(val: float | None) -> float | None:
+    return None if val is None else val / 100.0
+
+
+def _flag(val: Any) -> int | None:
+    """"true"/"false"（不区分大小写）→ 1/0；空值或无法识别 → None。"""
+    text = str(val).strip().lower() if _present(val) else ""
+    return {"true": 1, "false": 0}.get(text)
+
+
+def _bool01(val: bool | None) -> int | None:
+    return None if val is None else int(bool(val))
+
+
 class ExpansionValueMapper:
     """Load research sources and resolve a field value for one issuer."""
 
@@ -95,21 +122,22 @@ class ExpansionValueMapper:
             self.horizon_data.setdefault(r["stock_code"], {})[r["horizon"]] = r
 
         # 3. 逐日统计量（Amihud 均值、零成交天数、波动率、最大回撤）
+        #    无可用观测时记 None，不以 0 充数。
         import statistics
         for code, bars in master_contracts.load_grouped(
                 self.out_master / master_contracts.DAILY_MARKET_PANEL,
                 master_contracts.DAILY_MARKET_PANEL_COLS).items():
             w_bars = bars[:126]  # 前6个月
-            illiqs = [float(b["amihud_illiq"]) for b in w_bars if b.get("amihud_illiq")]
-            zeros = sum(1 for b in w_bars if b.get("zero_volume_flag", "").lower() == "true")
-            rets = [float(b["daily_return"]) for b in w_bars if b.get("daily_return")]
-            vol = statistics.stdev(rets) if len(rets) > 1 else 0.0
-            max_dd = max([float(b.get("max_drawdown") or 0.0) for b in w_bars], default=0.0)
+            illiqs = [float(b["amihud_illiq"]) for b in w_bars if _present(b.get("amihud_illiq"))]
+            zero_flags = [_flag(b.get("zero_volume_flag")) for b in w_bars]
+            zero_flags = [f for f in zero_flags if f is not None]
+            rets = [float(b["daily_return"]) for b in w_bars if _present(b.get("daily_return"))]
+            drawdowns = [float(b["max_drawdown"]) for b in w_bars if _present(b.get("max_drawdown"))]
             self.daily_stats[code] = {
-                "amihud_mean": sum(illiqs) / len(illiqs) if illiqs else 0.0,
-                "zero_volume_count": zeros,
-                "volatility": vol,
-                "max_drawdown": max_dd
+                "amihud_mean": sum(illiqs) / len(illiqs) if illiqs else None,
+                "zero_volume_count": sum(zero_flags) if zero_flags else None,
+                "volatility": statistics.stdev(rets) if len(rets) > 1 else None,
+                "max_drawdown": max(drawdowns) if drawdowns else None,
             }
 
         # 4. 解禁事件
@@ -141,21 +169,29 @@ class ExpansionValueMapper:
                             st["pre_state"] = True
 
         # 6. 承销辛迪加（可选交付物）
+        #    保荐人字段只取 syndicate_role 含 "sponsor" 的行（稳价经理人不是保荐人）；
+        #    费率取该发行人首个非空值；均无来源时保持 None。
         for r in master_contracts.load_rows_if_present(
                 self.out_master / master_contracts.UNDERWRITER_RELATIONAL,
                 master_contracts.UNDERWRITER_RELATIONAL_COLS):
                     code = r["stock_code"]
-                    if code not in self.syndicate_stats:
-                        self.syndicate_stats[code] = {
-                            "lead_sponsor": r.get("intermediary_name", ""),
-                            "sponsor_count": 0,
-                            "bank_affiliate": (r.get("commercial_bank_affiliate", "").lower() == "true"),
-                            "base_fee": float(r.get("base_commission_pct") or 2.5),
-                            "incentive_fee": float(r.get("discretionary_incentive_fee_pct") or 1.0),
-                            "total_fee": float(r.get("total_fee_rate_pct") or 3.5),
-                        }
-                    if "sponsor" in r.get("syndicate_role", "").lower():
-                        self.syndicate_stats[code]["sponsor_count"] += 1
+                    st = self.syndicate_stats.setdefault(code, {
+                        "lead_sponsor": None, "sponsor_count": 0, "bank_affiliate": None,
+                        "base_fee": None, "incentive_fee": None, "total_fee": None,
+                    })
+                    for key, field in (("base_fee", "base_commission_pct"),
+                                       ("incentive_fee", "discretionary_incentive_fee_pct"),
+                                       ("total_fee", "total_fee_rate_pct")):
+                        if st[key] is None:
+                            st[key] = _num(r.get(field))
+                    if "sponsor" not in (r.get("syndicate_role") or "").lower():
+                        continue
+                    st["sponsor_count"] += 1
+                    if st["lead_sponsor"] is None:
+                        st["lead_sponsor"] = _text(r.get("intermediary_name"))
+                    bank = _flag(r.get("commercial_bank_affiliate"))
+                    if bank is not None:
+                        st["bank_affiliate"] = max(st["bank_affiliate"] or 0, bank)
 
         # 7. Master 表
         im_csv = self.out_master / "issuer_master.csv"
@@ -180,111 +216,88 @@ class ExpansionValueMapper:
 
         # 1. 稳价与超额配售 (Col 162-172)
         if col_idx == 162:
-            return stab.get("stabilizing_manager", "CICC / Sponsor-OC"), "@"
+            return _text(stab.get("stabilizing_manager")), "@"
         if col_idx == 163:
-            return stab.get("stabilization_period_end"), "yyyy-mm-dd"
+            return _text(stab.get("stabilization_period_end")), "yyyy-mm-dd"
         if col_idx == 164:
-            v = stab.get("stabilization_purchases_occurred")
-            return (1 if str(v).lower() == "true" else 0), "0"
+            return _flag(stab.get("stabilization_purchases_occurred")), "0"
         if col_idx == 165:
-            val = stab.get("over_allocation_shares")
-            return float(val) if val else 0.0, "#,##0"
+            return _num(stab.get("over_allocation_shares")), "#,##0"
         if col_idx == 166:
-            val = stab.get("over_allocation_pct")
-            return (float(val) / 100.0) if val else 0.15, "0.00%"
+            return _num(stab.get("over_allocation_pct"), 100.0), "0.00%"
         if col_idx == 167:
-            return stab.get("option_exercise_date") or stab.get("stabilization_period_end"), "yyyy-mm-dd"
+            # 不以稳价期结束日代填：行使日缺失即为缺失。
+            return _text(stab.get("option_exercise_date")), "yyyy-mm-dd"
         if col_idx == 168:
-            val = stab.get("shares_issued_under_option")
-            return float(val) if val else 0.0, "#,##0"
+            return _num(stab.get("shares_issued_under_option")), "#,##0"
         if col_idx == 169:
-            val = stab.get("exercise_pct_of_option")
-            return (float(val) / 100.0) if val else (1.0 if not stab.get("expired_unexercised") else 0.0), "0.00%"
+            pct = _num(stab.get("exercise_pct_of_option"), 100.0)
+            if pct is None and _flag(stab.get("expired_unexercised")) == 1:
+                pct = 0.0
+            return pct, "0.00%"
         if col_idx == 170:
-            val = stab.get("cliff_return_m5_p5")
-            return float(val) if val else None, "0.00%"
+            return _num(stab.get("cliff_return_m5_p5")), "0.00%"
         if col_idx == 171:
-            val = stab.get("post_stab_return_p20")
-            return float(val) if val else None, "0.00%"
+            return _num(stab.get("post_stab_return_p20")), "0.00%"
         if col_idx == 172:
-            val = stab.get("volume_decay_post_stab")
-            return float(val) if val else None, "0.00%"
+            return _num(stab.get("volume_decay_post_stab")), "0.00%"
 
         # 2. 微观结构与短期/中期跨期表现 (Col 173-184)
         if col_idx == 173:
-            val = h_map.get("Day_5", {}).get("bhr_from_day1")
-            return float(val) if val else None, "0.00%"
+            return _num(h_map.get("Day_5", {}).get("bhr_from_day1")), "0.00%"
         if col_idx == 174:
-            val = h_map.get("Day_5", {}).get("wr_hsi")
-            return float(val) if val else None, "0.000"
+            return _num(h_map.get("Day_5", {}).get("wr_hsi")), "0.000"
         if col_idx == 175:
-            val = h_map.get("Day_20", {}).get("bhr_from_day1")
-            return float(val) if val else None, "0.00%"
+            return _num(h_map.get("Day_20", {}).get("bhr_from_day1")), "0.00%"
         if col_idx == 176:
-            val = h_map.get("Day_20", {}).get("wr_hsi")
-            return float(val) if val else None, "0.000"
+            return _num(h_map.get("Day_20", {}).get("wr_hsi")), "0.000"
         if col_idx == 177:
-            val = h_map.get("Month_3", {}).get("bhr_from_day1")
-            return float(val) if val else None, "0.00%"
+            return _num(h_map.get("Month_3", {}).get("bhr_from_day1")), "0.00%"
         if col_idx == 178:
-            val = h_map.get("Month_3", {}).get("wr_hsi")
-            return float(val) if val else None, "0.000"
+            return _num(h_map.get("Month_3", {}).get("wr_hsi")), "0.000"
         if col_idx == 179:
-            val = h_map.get("Month_3", {}).get("wr_hstech")
-            return float(val) if val else None, "0.000"
+            return _num(h_map.get("Month_3", {}).get("wr_hstech")), "0.000"
         if col_idx == 180:
-            val = h_map.get("Month_3", {}).get("avg_daily_turnover")
-            return float(val) if val else None, "#,##0"
+            return _num(h_map.get("Month_3", {}).get("avg_daily_turnover")), "#,##0"
         if col_idx == 181:
-            val = d_stat.get("amihud_mean")
-            return float(val) if val else None, "0.000000"
+            return d_stat.get("amihud_mean"), "0.000000"
         if col_idx == 182:
-            return d_stat.get("zero_volume_count", 0), "0"
+            return d_stat.get("zero_volume_count"), "0"
         if col_idx == 183:
-            val = d_stat.get("volatility")
-            return float(val) if val else None, "0.00%"
+            return d_stat.get("volatility"), "0.00%"
         if col_idx == 184:
-            val = d_stat.get("max_drawdown")
-            return float(val) if val else None, "0.00%"
+            return d_stat.get("max_drawdown"), "0.00%"
 
         # 3. 多重法定解禁日程与事件窗冲击 (Col 185-189)
         if col_idx == 185:
             rec = lks.get("Controlling_Shareholder_6M_Disposal", {})
-            return rec.get("expiry_date"), "yyyy-mm-dd"
+            return _text(rec.get("expiry_date")), "yyyy-mm-dd"
         if col_idx == 186:
             rec = lks.get("Controlling_Shareholder_12M_Control", {})
-            return rec.get("expiry_date"), "yyyy-mm-dd"
+            return _text(rec.get("expiry_date")), "yyyy-mm-dd"
         if col_idx == 187:
-            rec = lks.get("Cornerstone_6M", {})
-            val = rec.get("car_m5_p5")
-            return float(val) if val else None, "0.00%"
+            return _num(lks.get("Cornerstone_6M", {}).get("car_m5_p5")), "0.00%"
         if col_idx == 188:
-            rec = lks.get("Cornerstone_6M", {})
-            val = rec.get("car_m20_p20")
-            return float(val) if val else None, "0.00%"
+            return _num(lks.get("Cornerstone_6M", {}).get("car_m20_p20")), "0.00%"
         if col_idx == 189:
-            rec = lks.get("Cornerstone_6M", {})
-            val = rec.get("volume_shock_ratio")
-            return float(val) if val else None, "0.000"
+            return _num(lks.get("Cornerstone_6M", {}).get("volume_shock_ratio")), "0.000"
 
         # 4. 承销辛迪加、费用分拆与银企关联 (Col 190-195)
         if col_idx == 190:
-            return syn_stat.get("lead_sponsor", m_row.get("lead_sponsor", "CICC")), "@"
+            return syn_stat.get("lead_sponsor") or _text(m_row.get("lead_sponsor")), "@"
         if col_idx == 191:
-            return syn_stat.get("sponsor_count", 2), "0"
+            return syn_stat.get("sponsor_count") or None, "0"
         if col_idx == 192:
-            return (1 if syn_stat.get("bank_affiliate") else 0), "0"
+            return syn_stat.get("bank_affiliate"), "0"
         if col_idx == 193:
-            val = syn_stat.get("base_fee", 2.5)
-            return (val / 100.0), "0.00%"
+            return _pct(syn_stat.get("base_fee")), "0.00%"
         if col_idx == 194:
-            val = syn_stat.get("incentive_fee", 1.0)
-            return (val / 100.0), "0.00%"
+            return _pct(syn_stat.get("incentive_fee")), "0.00%"
         if col_idx == 195:
-            val = syn_stat.get("total_fee", 3.5)
-            return (val / 100.0), "0.00%"
+            return _pct(syn_stat.get("total_fee")), "0.00%"
 
         # 5. 机构投资者网络与国资背景 (Col 196-200)
+        #    该发行人无投资者关系行时全部为 None；有行时计数/旗标基于真实行。
         if col_idx == 196:
             # Never invent a count: investor_relational.csv is the only source of
             # names, so an issuer missing from it is 0 only when confirmed to have
@@ -293,13 +306,13 @@ class ExpansionValueMapper:
                 return inv_stat["cs_count"], "0"
             return (0 if code in self.no_cornerstone else None), "0"
         if col_idx == 197:
-            return (1 if inv_stat.get("cs_state") else 0), "0"
+            return _bool01(inv_stat.get("cs_state")), "0"
         if col_idx == 198:
-            return (1 if inv_stat.get("crossover") else 0), "0"
+            return _bool01(inv_stat.get("crossover")), "0"
         if col_idx == 199:
-            return inv_stat.get("pre_count", 6), "0"
+            return inv_stat.get("pre_count"), "0"
         if col_idx == 200:
-            return (1 if inv_stat.get("pre_state") else 0), "0"
+            return _bool01(inv_stat.get("pre_state")), "0"
 
         # 6. 宏观监管制度分期 (Col 201-202)：按上市日期推导，缺日期 fail-closed
         if col_idx in (201, 202):
