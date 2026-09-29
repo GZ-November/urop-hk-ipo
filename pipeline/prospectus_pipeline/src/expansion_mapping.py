@@ -63,6 +63,23 @@ EXPANSION_COLUMNS = [
     (202, "2025 pricing reform regime", "@", "发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM)"),
 ]
 
+# 基石解禁事件窗字段 (Col 187-189)：无基石发行人不存在该事件，必须留空。
+CORNERSTONE_EVENT_COLS = frozenset({187, 188, 189})
+CORNERSTONE_UNLOCK_HEADER = "Earliest cornerstone unlock date (dd/mm/yy)"
+CORNERSTONE_ALLOCATION_HEADER = "Final cornerstone allocation (% of base offer)"
+
+
+def is_no_cornerstone(unlock_date: Any, allocation: Any) -> bool:
+    """与 tools/external/flags.py 一致：解禁日为 NA 或最终基石配售为 0 即确认无基石。"""
+    if isinstance(unlock_date, str) and unlock_date.strip().upper() == "NA":
+        return True
+    if allocation is None or isinstance(allocation, bool):
+        return False
+    try:
+        return float(str(allocation).strip().rstrip("%")) == 0
+    except ValueError:
+        return False
+
 
 class ExpansionValueMapper:
     """Load research sources and resolve a field value for one issuer."""
@@ -76,6 +93,8 @@ class ExpansionValueMapper:
         self.investor_stats: dict[str, dict[str, Any]] = {}
         self.syndicate_stats: dict[str, dict[str, Any]] = {}
         self.master_data: dict[str, dict[str, Any]] = {}
+        # 确认无基石的发行人代码（由调用方依工作簿填充），Col 187-189 对其留空
+        self.no_cornerstone: set[str] = set()
 
     def load_sources(self) -> None:
         """加载已预先计算好的 master 模块数据源。"""
@@ -241,6 +260,8 @@ class ExpansionValueMapper:
             return float(val) if val else None, "0.00%"
 
         # 3. 多重法定解禁日程与事件窗冲击 (Col 185-189)
+        if col_idx in CORNERSTONE_EVENT_COLS and code in self.no_cornerstone:
+            return None, "0.000" if col_idx == 189 else "0.00%"
         if col_idx == 185:
             rec = lks.get("Controlling_Shareholder_6M_Disposal", {})
             return rec.get("expiry_date"), "yyyy-mm-dd"

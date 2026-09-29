@@ -34,7 +34,13 @@ if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
 from workbook_transaction import workbook_transaction
-from expansion_mapping import EXPANSION_COLUMNS, ExpansionValueMapper
+from expansion_mapping import (
+    CORNERSTONE_ALLOCATION_HEADER,
+    CORNERSTONE_UNLOCK_HEADER,
+    EXPANSION_COLUMNS,
+    ExpansionValueMapper,
+    is_no_cornerstone,
+)
 
 HEADER_FILL = PatternFill(start_color="FF00B0F0", end_color="FF00B0F0", fill_type="solid")
 HEADER_FONT = Font(name="Arial", size=11, bold=True, color="000000")
@@ -84,7 +90,19 @@ class WorkbookExpansionWriter:
                 col_letter = get_column_letter(col_idx)
                 ws.column_dimensions[col_letter].width = max(len(header) + 3, 14)
 
-            # 2. 只写入当前配置日期范围内的发行人行。
+            # 2. 基石存在性（fail-closed：缺列即报错，避免无基石发行人被写入解禁 CAR）
+            header_col = {
+                " ".join(str(ws.cell(1, c).value or "").split()).lower(): c
+                for c in range(1, max_col + 1)
+            }
+            cs_cols = {}
+            for header in (CORNERSTONE_UNLOCK_HEADER, CORNERSTONE_ALLOCATION_HEADER):
+                c = header_col.get(" ".join(header.split()).lower())
+                if c is None:
+                    raise ValueError(f"Workbook missing cornerstone column: {header!r}")
+                cs_cols[header] = c
+
+            # 3. 只写入当前配置日期范围内的发行人行。
             written_cells = 0
             for company in company_rows:
                 r = company["row"]
@@ -92,6 +110,9 @@ class WorkbookExpansionWriter:
                 if not code_str.endswith(".HK"):
                     digits = "".join(ch for ch in code_str if ch.isdigit())
                     code_str = f"{int(digits):04d}.HK"
+                if is_no_cornerstone(ws.cell(r, cs_cols[CORNERSTONE_UNLOCK_HEADER]).value,
+                                     ws.cell(r, cs_cols[CORNERSTONE_ALLOCATION_HEADER]).value):
+                    self.mapper.no_cornerstone.add(code_str)
 
                 for col_idx, header, field_format, desc in EXPANSION_COLUMNS:
                     val, cell_format = self.mapper.value_for(code_str, col_idx)

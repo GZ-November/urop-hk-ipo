@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-28 21:54:09 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-29 23:51:04 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -123,9 +123,9 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `3-month wealth relative vs HSI` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
 | `3-month wealth relative vs HSTECH` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
 | `3-month average daily turnover (HK$)` | 100.0% | 100.0% | 97.4% | 91.1% | 0.0% |
-| `Cornerstone unlock CAR [-5, +5] (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Cornerstone unlock CAR [-20, +20] (%)` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
-| `Cornerstone unlock volume shock ratio` | 100.0% | 100.0% | 71.1% | 0.0% | 0.0% |
+| `Cornerstone unlock CAR [-5, +5] (%)` | 73.3% | 92.6% | 71.1% | 0.0% | 0.0% |
+| `Cornerstone unlock CAR [-20, +20] (%)` | 73.3% | 92.6% | 71.1% | 0.0% | 0.0% |
+| `Cornerstone unlock volume shock ratio` | 73.3% | 92.6% | 71.1% | 0.0% | 0.0% |
 
 ### 5.1 填报率环比（最近两个 cohort，|Δ| ≥ 10pp）
 
