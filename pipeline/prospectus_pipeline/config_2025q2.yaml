@@ -1,50 +1,48 @@
 # 2025 Q2 香港主板 IPO 流水线配置
-workbook: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/HKIPO-MB.xlsx
-sheet: NLR
+workbook: "cohorts/HKIPO-MB2025Q2.xlsx"      # 目标工作簿（相对本目录上级）
+sheet: "NLR"
 data_start_row: 2
+
 dataset:
-  id: HKIPO_2025-04-01_2025-06-30_HKIPO-MB
-  name: Hong Kong Main Board IPO Dataset
-  cohort: 2025 Q2
-  period_start: '2025-04-01'
-  period_end: '2025-06-30'
+  id: "HKIPO-MB2025Q2"
+  name: "Hong Kong Main Board IPO Dataset"
+  cohort: "2025 Q2"
+  period_start: "2025-04-01"
+  period_end: "2025-06-30"
   expected_companies: 27
-  report_source_dir: /Users/georgezhu/Desktop/UROP HK IPO/pipeline/sources
+
+# 从模板哪些列读取公司身份与时间窗
 id_columns:
-  file_no: A
-  stock_code: B
-  name: C
-  prospectus_date: D
-  listing_date: E
-  offer_price: K
+  file_no: "A"          # HKEx file# of the year
+  stock_code: "B"       # 4位+.HK
+  name: "C"             # 公司名
+  prospectus_date: "D"  # 招股书日期
+  listing_date: "E"     # 上市日期
+  offer_price: "K"      # 发售价（市场面板）
+
 hkex:
-  search_url: https://www1.hkexnews.hk/search/titleSearchServlet.do
-  base_url: https://www1.hkexnews.hk
-  listing_doc_prefix: Listing Documents
-  include_substrings:
-  - Offer for Subscription
-  - Offer for Placing
-  - Prospectus
-  exclude_substrings:
-  - Authorised Collective Investment Scheme
-  - Rights Issue
-  - Open Offer
-  - Placing of Existing Shares
+  search_url: "https://www1.hkexnews.hk/search/titleSearchServlet.do"
+  base_url: "https://www1.hkexnews.hk"
+  listing_doc_prefix: "Listing Documents"
+  include_substrings: ["Offer for Subscription", "Offer for Placing", "Prospectus"]
+  exclude_substrings: ["Authorised Collective Investment Scheme", "Rights Issue", "Open Offer", "Placing of Existing Shares"]
   day_window: 4
   row_range: 1000
   sleep_sec: 0.4
   timeout_sec: 40
+
 paths:
-  data: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data
-  pdf: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/pdf
-  text: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/text
-  sections: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/sections
-  packets: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/packets
-  out: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/out
-  allot_pdf: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/pdf
-  allot_text: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/text
-  allot_packets: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/data/allot/packets
-  allot_out: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/out/allot
+  data: "prospectus_pipeline/data"
+  pdf: "prospectus_pipeline/data/pdf"
+  text: "prospectus_pipeline/data/text"
+  sections: "prospectus_pipeline/data/sections"
+  packets: "prospectus_pipeline/data/packets"
+  out: "prospectus_pipeline/out"
+  allot_pdf: "prospectus_pipeline/data/allot/pdf"
+  allot_text: "prospectus_pipeline/data/allot/text"
+  allot_packets: "prospectus_pipeline/data/allot/packets"
+  allot_out: "prospectus_pipeline/out/allot"
+
 extract:
   allot_max_chars: 400000
   max_chars_per_group: 60000
@@ -62,10 +60,9 @@ extract:
     offering: 20000
   max_chars_total: 550000
   cover_pages: 3
+
 validate:
-  share_rel_tol: 1.0e-09
-  share_abs_tol: 1
+  share_rel_tol: 1.0e-9
+  share_abs_tol: 1.0
   balance_rel_tol: 0.005
-  balance_abs_tol: 2000
-filter_period: true
-state_dir: prospectus_pipeline/datasets/HKIPO_2025-04-01_2025-06-30_HKIPO-MB/.pipeline_state
+  balance_abs_tol: 2000.0
