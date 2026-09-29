@@ -1,4 +1,13 @@
 {
+  "0068.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Software & Services",
+    "hsic_sub": "Application Software",
+    "incorp": "Cayman Islands",
+    "listing_category": "Primary Listing",
+    "listing_date": "17 Apr 2026",
+    "name": "Manycore Tech Inc."
+  },
   "0100.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - Software & Services",
@@ -44,6 +53,15 @@
     "listing_date": "31 Mar 2026",
     "name": "Hangzhou Tongshifu Cultural & Creative (Group) Co Ltd - H sh"
   },
+  "0901.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Consumer Telecommunication Equipment & Components",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "27 May 2026",
+    "name": "Shenzhen SDMC Technology Co., Ltd. - H Shares"
+  },
   "1021.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - IT Hardware",
@@ -52,6 +70,69 @@
     "listing_category": "Primary Listing",
     "listing_date": "30 Mar 2026",
     "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares"
+  },
+  "1081.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Environmental Engineering",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "5 Jun 2026",
+    "name": "Dajin Heavy Industry Co., Ltd. - H Shares"
+  },
+  "1187.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Other Healthcare",
+    "hsic_sub": "Medical Devices & Supplies",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "6 May 2026",
+    "name": "Cofoe Medical Technology Co., Ltd. - H Shares"
+  },
+  "1191.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Electrical & Electronic Components",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "29 Jun 2026",
+    "name": "Crealights Technology Co., Ltd. - H Shares"
+  },
+  "1236.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Robotic Systems & Solutions",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "11 May 2026",
+    "name": "SHENZHEN LDROBOT CO., LTD - H Shares"
+  },
+  "1392.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Software & Services",
+    "hsic_sub": "Application Software",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "22 Jun 2026",
+    "name": "Shenzhen HQVT Technology Co., Ltd. - H Shares"
+  },
+  "1511.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Software & Services",
+    "hsic_sub": "Digital Solution Services",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "20 May 2026",
+    "name": "UISEE Technologies (Beijing) Co., Ltd. - H Shares"
+  },
+  "1609.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Other Healthcare",
+    "hsic_sub": "Medical Devices & Supplies",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "5 May 2026",
+    "name": "Star Sports Medicine Co., Ltd. - H Shares"
   },
   "1641.HK": {
     "board": "HKEX",
@@ -62,6 +143,15 @@
     "listing_date": "13 Jan 2026",
     "name": "Hongxing Coldchain (Hunan) Co., Ltd. - H Shares"
   },
+  "1688.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Electrical & Electronic Components",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "26 Jun 2026",
+    "name": "LINGYI iTECH (GUANGDONG) COMPANY - H Shares"
+  },
   "1768.HK": {
     "board": "HKEX",
     "hsic_ind": "Consumer Staples - Food & Beverages",
@@ -71,6 +161,33 @@
     "listing_date": "28 Jan 2026",
     "name": "Busy Ming Group Co., Ltd. - H Shares"
   },
+  "1779.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Biotechnology",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "5 Jun 2026",
+    "name": "LongBio Pharma (Suzhou) Co., Ltd. - B - H Shares"
+  },
+  "1879.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Semiconductors",
+    "hsic_sub": "Semiconductor Equipment & Materials",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "28 Apr 2026",
+    "name": "Shanghai Xizhi Technology Co., Ltd. - P - H Shares"
+  },
+  "1956.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Software & Services",
+    "hsic_sub": "Digital Solution Services",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "26 Jun 2026",
+    "name": "Beijing Zhongke WengeAI Science and Technology Co Ltd -H shs"
+  },
   "1989.HK": {
     "board": "HKEX",
     "hsic_ind": "Industrials - Industrial Engineering",
@@ -79,6 +196,51 @@
     "listing_category": "Primary Listing",
     "listing_date": "20 Mar 2026",
     "name": "Delton Technology (Guangzhou) Inc. - H Shares"
+  },
+  "2272.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Software & Services",
+    "hsic_sub": "Digital Solution Services",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "26 Jun 2026",
+    "name": "KEYTOP PARKING INC. - H Shares"
+  },
+  "2290.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Consumer Discretionary - Specialty Retail",
+    "hsic_sub": "Other Retailers",
+    "incorp": "Cayman Islands",
+    "listing_category": "Primary Listing",
+    "listing_date": "5 Jun 2026",
+    "name": "Lung Fung Group Holdings Ltd."
+  },
+  "2335.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Biotechnology",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "24 Jun 2026",
+    "name": "Shaanxi Micot Pharmaceutical Technology Co., Ltd. - B - H Sh"
+  },
+  "2476.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Electrical & Electronic Components",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "21 Apr 2026",
+    "name": "Victory Giant Technology (HuiZhou) Co., Ltd. - H Shares"
+  },
+  "2493.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Biotechnology",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "28 Apr 2026",
+    "name": "Mabwell (Shanghai) Bioscience Co., Ltd. - B - H Shares"
   },
   "2513.HK": {
     "board": "HKEX",
@@ -98,6 +260,15 @@
     "listing_date": "30 Mar 2026",
     "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares"
   },
+  "2553.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Materials - Basic Materials",
+    "hsic_sub": "Specialty Chemicals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "3 Jun 2026",
+    "name": "Beijing Shougang LanzaTech Technology Co., Ltd. - H Shares"
+  },
   "2632.HK": {
     "board": "HKEX",
     "hsic_ind": "Consumer Discretionary - Automobiles",
@@ -115,6 +286,15 @@
     "listing_category": "Primary Listing",
     "listing_date": "9 Mar 2026",
     "name": "ALSCO Pooling Service Co., Ltd. - H Shares"
+  },
+  "2672.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Financials - Insurance",
+    "hsic_sub": "Insurance",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "29 Jun 2026",
+    "name": "Baige Online Digital Technology Co., Ltd. - H Shares"
   },
   "2675.HK": {
     "board": "HKEX",
@@ -142,6 +322,15 @@
     "listing_category": "Primary Listing",
     "listing_date": "9 Mar 2026",
     "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. -H Shares"
+  },
+  "2697.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Other Healthcare",
+    "hsic_sub": "Medical Devices & Supplies",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "30 Jun 2026",
+    "name": "Guangdong True Health Medical Tech Dev Co., Ltd. - B - H shs"
   },
   "2701.HK": {
     "board": "HKEX",
@@ -188,6 +377,15 @@
     "listing_date": "10 Feb 2026",
     "name": "Ridge Outdoor International Ltd."
   },
+  "2723.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Consumer Discretionary - Media & Entertainment",
+    "hsic_sub": "Advertising & Marketing",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "27 May 2026",
+    "name": "Beijing DeepZero Technology Co., Ltd. - H Shares"
+  },
   "2726.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - Semiconductors",
@@ -233,6 +431,33 @@
     "listing_date": "10 Mar 2026",
     "name": "MeiG Smart Technology Co., Ltd. - H Shares"
   },
+  "3277.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Semiconductors",
+    "hsic_sub": "Semiconductors",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "17 Apr 2026",
+    "name": "Gpixel Changchun Microelectronics Inc. - H Shares"
+  },
+  "3296.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Consumer Telecommunication Equipment & Components",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "23 Apr 2026",
+    "name": "Huaqin Co., Ltd. - H Shares"
+  },
+  "3310.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Semiconductors",
+    "hsic_sub": "Semiconductors",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "27 May 2026",
+    "name": "Viewtrix Technology Co., Ltd - H Shares"
+  },
   "3355.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - Software & Services",
@@ -241,6 +466,15 @@
     "listing_category": "Primary Listing",
     "listing_date": "23 Mar 2026",
     "name": "FS.COM Ltd. - H Shares"
+  },
+  "3388.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Computers & Peripherals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "29 May 2026",
+    "name": "Shenzhen Creality 3D Technology Co., Ltd. - H Shares"
   },
   "3625.HK": {
     "board": "HKEX",
@@ -260,6 +494,24 @@
     "listing_date": "9 Jan 2026",
     "name": "Yunnan Jinxun Resources Co., Ltd. - H Shares"
   },
+  "3661.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Semiconductors",
+    "hsic_sub": "Semiconductors",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "26 Jun 2026",
+    "name": "SG Micro Corp - H Shares"
+  },
+  "3952.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Industrial Components & Equipment",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "30 Jun 2026",
+    "name": "Zhejiang Laifual Drive Co., Ltd. - H Shares"
+  },
   "3986.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - Semiconductors",
@@ -268,6 +520,15 @@
     "listing_category": "Primary Listing",
     "listing_date": "13 Jan 2026",
     "name": "GigaDevice Semiconductor Inc. - H Shares"
+  },
+  "6067.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Energy Storage Units",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "23 Jun 2026",
+    "name": "Shenzhen Senior Technology Material Co., Ltd. - H Shares"
   },
   "6082.HK": {
     "board": "HKEX",
@@ -278,6 +539,33 @@
     "listing_date": "2 Jan 2026",
     "name": "Shanghai Biren Technology Co., Ltd. - H Shares"
   },
+  "6106.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Robotic Systems & Solutions",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "24 Jun 2026",
+    "name": "Shanghai Seer Intelligent Technology Co., Ltd. - H Shares"
+  },
+  "6132.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Pharma & Biotech Contract Services",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "23 Jun 2026",
+    "name": "HJ Science Co., Ltd. - B - H Shares"
+  },
+  "6228.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Materials - Gold & Precious Metals",
+    "hsic_sub": "Gold & Precious Metals",
+    "incorp": "Indonesia",
+    "listing_category": "Secondary Listing - Depositary Receipts",
+    "listing_date": "26 Jun 2026",
+    "name": "PT Merdeka Gold Resources Tbk - DRS"
+  },
   "6636.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - Software & Services",
@@ -286,6 +574,42 @@
     "listing_category": "Primary Listing",
     "listing_date": "30 Mar 2026",
     "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares"
+  },
+  "6656.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Energy Storage Units",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "16 Apr 2026",
+    "name": "Sigenergy Technology Co., Ltd. - H Shares"
+  },
+  "6658.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Consumer Staples - Food & Beverages",
+    "hsic_sub": "Packaged Foods",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "15 Jun 2026",
+    "name": "Liuliumei Co., Ltd. - H Shares"
+  },
+  "6675.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - Semiconductors",
+    "hsic_sub": "Semiconductors",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "17 Jun 2026",
+    "name": "SENASIC Electronics Technology Co., Ltd. - H Shares"
+  },
+  "6715.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Consumer Staples - Food & Beverages",
+    "hsic_sub": "Packaged Foods",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "30 Jun 2026",
+    "name": "Hangzhou Qiandaohu Xunlong Sci-tech Co., Ltd. - H Shares"
   },
   "6809.HK": {
     "board": "HKEX",
@@ -296,6 +620,42 @@
     "listing_date": "9 Feb 2026",
     "name": "Montage Technology Co., Ltd. - H Shares"
   },
+  "6810.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Information Technology - IT Hardware",
+    "hsic_sub": "Computers & Peripherals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "29 Apr 2026",
+    "name": "Shanghai Sunmi Technology Co., Ltd. - W - H Shares"
+  },
+  "6871.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Industrial Components & Equipment",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "18 May 2026",
+    "name": "Robotphoenix Intelligent Technology Co., Ltd. - H Shares"
+  },
+  "6872.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Pharmaceuticals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "22 May 2026",
+    "name": "TenNor Therapeutics (Suzhou) Ltd. - B - H Shares"
+  },
+  "6915.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Pharmaceuticals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "30 Jun 2026",
+    "name": "Jiangxi Institute of Biological Products Inc. - H Shares"
+  },
   "6938.HK": {
     "board": "HKEX",
     "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
@@ -305,6 +665,33 @@
     "listing_date": "9 Jan 2026",
     "name": "Suzhou Ribo Life Science Co., Ltd. - B - H Shares"
   },
+  "7630.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Biotechnology",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "13 May 2026",
+    "name": "IMPACT Therapeutics, Inc - B - H Shares"
+  },
+  "7666.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Biotechnology",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "13 May 2026",
+    "name": "Metis TechBio Co., Ltd. - P - H Shares"
+  },
+  "7688.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Industrial Components & Equipment",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "20 May 2026",
+    "name": "Shanghai Top Numerical Control Technology Co., Ltd. - H Shs"
+  },
   "9611.HK": {
     "board": "HKEX",
     "hsic_ind": "Information Technology - IT Hardware",
@@ -313,6 +700,24 @@
     "listing_category": "Primary Listing",
     "listing_date": "22 Jan 2026",
     "name": "Shanghai Longcheer Technology Co., Ltd. - H Shares"
+  },
+  "9630.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Industrials - Industrial Engineering",
+    "hsic_sub": "Industrial Components & Equipment",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "26 Jun 2026",
+    "name": "Circuit Fabology Microelectronics Equipment Co., Ltd. -H Shs"
+  },
+  "9637.HK": {
+    "board": "HKEX",
+    "hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hsic_sub": "Pharmaceuticals",
+    "incorp": "PRC",
+    "listing_category": "Primary Listing",
+    "listing_date": "29 Jun 2026",
+    "name": "Alebund Pharmaceuticals (Jiangsu) Ltd. - B - H Shares"
   },
   "9903.HK": {
     "board": "HKEX",
