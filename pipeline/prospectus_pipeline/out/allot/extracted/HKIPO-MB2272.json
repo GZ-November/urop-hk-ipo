@@ -3,8 +3,9 @@
   "fields": {
     "col_CK": {
       "value": 0,
-      "page": 1,
-      "quote": "若公告与招股书均无基石投资者（无基石表、全文无 Cornerstone Investor），必须填 0 —— 这是「确定的零」，不得留 NaN。",
+      "page": null,
+      "quote": "招股书全文 418 页 0 处「基石投资者」、配发公告 14 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
       "confidence": "high"
     },
     "col_CM": {

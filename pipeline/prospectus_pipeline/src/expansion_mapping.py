@@ -68,8 +68,10 @@ EXPANSION_COLUMNS = [
 class ExpansionValueMapper:
     """Load research sources and resolve a field value for one issuer."""
 
-    def __init__(self, out_master: Path) -> None:
+    def __init__(self, out_master: Path, no_cornerstone: set[str] | None = None) -> None:
         self.out_master = Path(out_master)
+        # Issuers confirmed to have no cornerstone investors (see cornerstone.confirmed_absent).
+        self.no_cornerstone = set(no_cornerstone or ())
         self.stab_data: dict[str, dict[str, Any]] = {}
         self.horizon_data: dict[str, dict[str, dict[str, Any]]] = {}
         self.daily_stats: dict[str, dict[str, Any]] = {}
@@ -284,7 +286,12 @@ class ExpansionValueMapper:
 
         # 5. 机构投资者网络与国资背景 (Col 196-200)
         if col_idx == 196:
-            return inv_stat.get("cs_count", 4), "0"
+            # Never invent a count: investor_relational.csv is the only source of
+            # names, so an issuer missing from it is 0 only when confirmed to have
+            # no cornerstones, otherwise unknown (blank).
+            if "cs_count" in inv_stat:
+                return inv_stat["cs_count"], "0"
+            return (0 if code in self.no_cornerstone else None), "0"
         if col_idx == 197:
             return (1 if inv_stat.get("cs_state") else 0), "0"
         if col_idx == 198:

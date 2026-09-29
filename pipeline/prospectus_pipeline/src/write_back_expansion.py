@@ -60,7 +60,8 @@ class WorkbookExpansionWriter:
         configured_book = self.cfg.get("workbook_path") or self.cfg.get("_workbook_path")
         self.book_path = Path(book_path or configured_book or (ROOT.parent / self.cfg["workbook"]))
         self.out_master = self.cfg["paths"]["out"] / "master"
-        self.mapper = ExpansionValueMapper(self.out_master)
+        from cornerstone import confirmed_absent
+        self.mapper = ExpansionValueMapper(self.out_master, confirmed_absent(self.cfg))
 
     def write_expansion(self, columns: set[int] | None = None) -> int:
         """执行事务级写回；columns 非空时只写这些列（其余扩展列保持原值）。"""

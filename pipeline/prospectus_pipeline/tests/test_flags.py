@@ -160,5 +160,28 @@ class CellStrTests(unittest.TestCase):
         self.assertEqual(flags.cell_str(None), "")
 
 
+class ConfirmedAbsentCornerstoneTests(unittest.TestCase):
+    def test_absence_comes_from_verdict_or_zero_allocation(self):
+        import json
+        import tempfile
+        from cornerstone import confirmed_absent
+
+        with tempfile.TemporaryDirectory() as tmp:
+            allot_out = Path(tmp)
+            (allot_out / "extracted").mkdir()
+            (allot_out / "cornerstone_absence.json").write_text(json.dumps({
+                "0901.HK": {"verdict": "absent"},
+                "0100.HK": {"verdict": "present"},
+                "0200.HK": {"verdict": "none"},  # legacy label
+            }), encoding="utf-8")
+            for code, value in {"1392": 0, "2272": 0.0, "3333": 0.31, "4444": None}.items():
+                (allot_out / "extracted" / f"HKIPO-MB{code}.json").write_text(
+                    json.dumps({"code": f"{code}.HK", "fields": {"col_CK": {"value": value}}}),
+                    encoding="utf-8")
+            absent = confirmed_absent({"paths": {"allot_out": allot_out}})
+
+        self.assertEqual(absent, {"0901.HK", "0200.HK", "1392.HK", "2272.HK"})
+
+
 if __name__ == "__main__":
     unittest.main()
