@@ -4,11 +4,9 @@ import unittest
 from pathlib import Path
 
 from topic_schema import (
-    TOPIC_DEFINITIONS,
     TOPIC_KEYS,
     get_field_to_topic_map,
     get_topic_definition,
-    get_topic_fields,
     validate_topic_completeness,
 )
 

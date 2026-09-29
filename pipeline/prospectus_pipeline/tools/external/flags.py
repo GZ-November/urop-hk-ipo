@@ -3,7 +3,9 @@
 
 推导来源：
   BH Listing board            ← col_AS（上市途径）是否含 Main Board / GEM
-  BJ A+H issuer flag          ← col_AS 是否肯定表明已有 A 股上市（A+H / other listed shares / A Shares …，见 is_a_plus_h）
+  BJ A+H issuer flag          ← col_AS 是否肯定表明已有 A 股上市（A+H / other listed shares / A Shares …，见 is_a_plus_h）；
+                                col_AS 未提及时回退扫招股书全文中发行人自述
+                                "Our A Shares are listed on the Shanghai Stock Exchange"（见 a_share_listing_statement）
   BK WVR flag                 ← col_AS 是否肯定援引 "Chapter 8A"（忽略否定式表述）
   BL Chapter 18A flag         ← col_AS 是否肯定援引 "Chapter 18A"（忽略否定式表述）
   BM Chapter 18C flag         ← col_AS 是否肯定援引 "Chapter 18C"（忽略否定式表述）
@@ -13,14 +15,14 @@
                                 或 cornerstone_absence.json verdict absent/none）
 
 只赋值，不改 font/fill/number_format。写前备份。
-证据落到 out/derived_flags.json 供审计。
+证据落到 out/derived_flags.json 供审计（按代码合并，--only 不会抹掉其他公司的记录）。
+--dry-run 只打印推导值与工作簿现值的差异，不写工作簿也不写证据。
 """
 from __future__ import annotations
 
 import datetime as dt
 import json
 import re
-import shutil
 import sys
 from pathlib import Path
 
@@ -32,6 +34,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
 
 from contracts import normalize_code  # noqa: E402
+from cornerstone import confirmed_absent  # noqa: E402
 from run import load_cfg  # noqa: E402
 
 HEADERS = {
@@ -56,6 +59,19 @@ def add_months(d: dt.date, months: int) -> dt.date:
     y, m = d.year + y, m + 1
     import calendar
     return dt.date(y, m, min(d.day, calendar.monthrange(y, m)[1]))
+
+
+def cell_str(v) -> str:
+    """工作簿单元格值 → 与推导值同口径的字符串（日期取 ISO，整数去 .0）。"""
+    if v is None:
+        return ""
+    if isinstance(v, dt.datetime):
+        v = v.date()
+    if isinstance(v, dt.date):
+        return v.isoformat()
+    if isinstance(v, float) and v.is_integer():
+        return str(int(v))
+    return str(v)
 
 
 def digits(code: str) -> str:
@@ -126,9 +142,72 @@ def is_a_plus_h(text: str) -> bool:
     return any(_affirmed(text, p) for p in A_PLUS_H_PATTERNS)
 
 
+# 招股书全文里发行人自述 A 股已上市的肯定句（2025–2026 cohort 实测）：
+#   "Our A Shares are listed and traded on the Shanghai Stock Exchange"（1276、3288 …）
+#   "our A Shares became listed on the Shenzhen Stock Exchange"（2865）
+#   "our Company's A Shares have been listed on the main board of Shanghai Stock Exchange"（3296）
+#   "The A Shares of our Company have been listed on the Shanghai Stock Exchange STAR Market"（2493）
+# 主语限定为 our / our Company's / our Group's / the Company's / the A Shares of our Company：
+# H 股发行人提到控股股东、可比公司的 A 股时主语是别的公司，不会命中；
+# "Class A Shares"（同股不同权）、"Series A Shares"（融资轮次）因 A 前不是 our 也不会命中。
+_A_SHARE_EXCHANGE = (
+    r"(?:(?:main\s+board|STAR\s+Market|ChiNext(?:\s+Market)?)\s+of\s+(?:the\s+)?)?"
+    r"(?:(?:Shanghai|Shenzhen|Beijing)\s+Stock\s+Exchange|SSE|SZSE|BSE)\b"
+)
+A_SHARE_LISTING_STATEMENT = re.compile(
+    r"(?:\b(?:[Oo]ur|[Tt]he\s+Company['’]s|[Oo]ur\s+(?:Company|Group)['’]s)\s+A[\s-][Ss]hares?"
+    r"|\b[Tt]he\s+A[\s-][Ss]hares\s+of\s+(?:our|the)\s+Company)"
+    r"\s+(?:are|were|is|was|have\s+been|has\s+been|had\s+been|became)"
+    r"\s+(?:currently\s+|already\s+|also\s+)?(?:listed|traded)(?:\s+and\s+(?:listed|traded))?"
+    r"\s+on\s+(?:the\s+)?" + _A_SHARE_EXCHANGE
+)
+# 条件/假设语境（"if our A Shares are listed on …"、"after our A Shares are listed …"）
+# 出现在拟 A 股上市的 H 股发行人里，不是已上市的陈述。
+HYPOTHETICAL_BEFORE = re.compile(
+    r"\b(?:if|once|after|upon|until|unless|before|whether|should|assuming|provided\s+that|in\s+the\s+event)\b"
+    r"\s*(?:[^.,;()]{0,40}\s+)?$",
+    re.I,
+)
+
+
+def _page_text_path(code: str, text_dir: Path | None) -> Path:
+    return (text_dir or ROOT / "data" / "text") / f"HKIPO-MB{digits(code)}.jsonl"
+
+
+def a_share_listing_statement(code: str, text_dir: Path | None = None) -> dict | None:
+    """在招股书全文里找发行人自述「A 股已在上交所/深交所/北交所上市」的肯定句。
+
+    上市途径抽取（col_AS）对不少 A+H 发行人只写 "Main Board" 或
+    "Main Board (Chapter 19A PRC issuer)"，is_a_plus_h 无从判断；这里作确定性兜底。
+    命中返回 {"page", "quote", "hits"}（首个命中所在页、上下文引文、命中总数），
+    否则返回 None；缺页级文本时返回 {"missing_text": True}。
+    否定（"… are not listed"）因动词后直接接 listed/traded 本就不会命中；
+    否定词与条件语境（NEGATION_BEFORE / HYPOTHETICAL_BEFORE）前置时跳过该处。
+    """
+    f = _page_text_path(code, text_dir)
+    if not f.exists():
+        return {"missing_text": True}
+    first, hits = None, 0
+    with f.open(encoding="utf-8") as stream:
+        for line in stream:
+            page = json.loads(line)
+            flat = " ".join(str(page.get("text") or "").split())
+            for m in A_SHARE_LISTING_STATEMENT.finditer(flat):
+                before = flat[max(0, m.start() - 60): m.start()]
+                if NEGATION_BEFORE.search(before) or HYPOTHETICAL_BEFORE.search(before):
+                    continue
+                hits += 1
+                if first is None:
+                    first = {"page": page.get("page"),
+                             "quote": flat[max(0, m.start() - 40): m.end() + 60]}
+    if first is None:
+        return None
+    return {**first, "hits": hits}
+
+
 def place_of_incorporation(code: str, text_dir: Path | None = None) -> tuple[str, str]:
     """扫前若干页判断注册地；返回 (值, 证据)。"""
-    f = (text_dir or ROOT / "data" / "text") / f"HKIPO-MB{digits(code)}.jsonl"
+    f = _page_text_path(code, text_dir)
     if not f.exists():
         return "NA", "缺页级文本"
     head = ""
@@ -171,21 +250,8 @@ def main() -> int:
     book = Path(args.book) if args.book else cfg["_workbook_path"]
     dry = args.dry_run
 
-    # 基石「确认无」的公司
-    ca_path = cfg["paths"]["allot_out"] / "cornerstone_absence.json"
-    no_cornerstone = set()
-    if ca_path.exists():
-        for code, rec in json.loads(ca_path.read_text(encoding="utf-8")).items():
-            # cornerstone.py 现写 "absent"；"none" 是旧版记录的同义标签
-            if rec.get("verdict") in ("absent", "none"):
-                no_cornerstone.add(normalize_code(code))
-    # The allotment extraction is the authoritative final allocation. Some
-    # cohorts have no separate cornerstone_absence.json at all.
-    for path in (cfg["paths"]["allot_out"] / "extracted").glob("HKIPO-MB*.json"):
-        rec = json.loads(path.read_text(encoding="utf-8"))
-        allocation = (rec.get("fields", {}).get("col_CK") or {}).get("value")
-        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool) and allocation == 0:
-            no_cornerstone.add(normalize_code(rec["code"]))
+    # 基石「确认无」的公司（配发抽取 col_CK == 0 是权威依据，见 cornerstone.confirmed_absent）
+    no_cornerstone = confirmed_absent(cfg)
 
     wb_read = openpyxl.load_workbook(book, data_only=True)
     ws_read = wb_read[cfg["sheet"]]
@@ -203,7 +269,7 @@ def main() -> int:
         raise SystemExit(f"工作簿找不到列：{missing}")
 
     # 行号 + 上市日
-    row_of, listing = {}, {}
+    row_of, listing, current = {}, {}, {}
     ci_code = openpyxl.utils.column_index_from_string(cfg["id_columns"]["stock_code"])
     ci_list = openpyxl.utils.column_index_from_string(cfg["id_columns"]["listing_date"])
     selected = {normalize_code(x) for x in args.only} if args.only else None
@@ -219,13 +285,14 @@ def main() -> int:
         if isinstance(ld, dt.datetime):
             ld = ld.date()
         listing[norm_c] = ld if isinstance(ld, dt.date) else None
+        current[norm_c] = {k: cell_str(ws_read.cell(r, c).value) for k, c in col_of.items()}
     wb_read.close()
     if not row_of:
         raise SystemExit("没有匹配的公司；检查 --config、--book 和 --only 参数")
     if selected is not None and selected != set(row_of):
         raise SystemExit(f"--only 中有代码未匹配工作簿：{sorted(selected - set(row_of))}")
 
-    audit, n = {}, 0
+    audit, n, no_text = {}, 0, []
     print(f"{'code':9s} {'board':10s} {'A+H':4s} {'WVR':4s} {'18A':4s} {'18C':4s} "
           f"{'注册地':14s} 基石解禁")
     for code, r in sorted(row_of.items()):
@@ -234,7 +301,17 @@ def main() -> int:
             raise SystemExit(f"{code}: 缺抽取 JSON：{jf}")
         asv = str(json.loads(jf.read_text(encoding="utf-8"))["fields"]["col_AS"]["value"])
         board = "GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board"
-        a_plus_h = 1 if is_a_plus_h(asv) else 0
+        if is_a_plus_h(asv):
+            a_plus_h, ah_ev = 1, {"source": "col_AS"}
+        else:
+            stmt = a_share_listing_statement(code, cfg["paths"]["text"])
+            if stmt is None:
+                a_plus_h, ah_ev = 0, {"source": "none", "note": "col_AS 与招股书全文均未见 A 股已上市表述"}
+            elif stmt.get("missing_text"):
+                a_plus_h, ah_ev = 0, {"source": "none", "note": "缺页级文本，未能扫描招股书"}
+                no_text.append(code)
+            else:
+                a_plus_h, ah_ev = 1, {"source": "prospectus", **stmt}
         wvr = 1 if cites_chapter(asv, "8A") else 0
         c18a = 1 if cites_chapter(asv, "18A") else 0
         c18c = 1 if cites_chapter(asv, "18C") else 0
@@ -250,20 +327,34 @@ def main() -> int:
         vals = {"BH": board, "BJ": a_plus_h, "BK": wvr, "BL": c18a, "BM": c18c,
                 "BQ": inc, "CL": unlock}
         audit[code] = {"values": {k: str(v) for k, v in vals.items()},
-                       "evidence": {"col_AS": asv, "incorporation": inc_ev,
-                                    "unlock": unlock_note}}
+                       "evidence": {"col_AS": asv, "a_plus_h": ah_ev,
+                                    "incorporation": inc_ev, "unlock": unlock_note}}
         n += 1
-        print(f"{code:9s} {board:10s} {a_plus_h:4d} {wvr:4d} {c18a:4d} {c18c:4d} "
+        ah_mark = "*" if ah_ev["source"] == "prospectus" else " "
+        print(f"{code:9s} {board:10s} {a_plus_h:<3d}{ah_mark} {wvr:4d} {c18a:4d} {c18c:4d} "
               f"{inc:14s} {str(unlock)}")
+    print(f"\n推导 {n} 家（A+H 列 * = 由招股书全文兜底判定）")
+    if no_text:
+        print(f"⚠️ 缺页级文本（BJ 兜底与 BQ 无从判断）：{', '.join(no_text)}")
 
-    outj = cfg["paths"]["out"] / "derived_flags.json"
-    outj.write_text(json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-                    encoding="utf-8")
-    print(f"\n推导 {n} 家；证据 -> {outj}")
+    changes = [(code, k, current[code][k], rec["values"][k])
+               for code, rec in sorted(audit.items()) for k in HEADERS
+               if current[code][k] != rec["values"][k]]
+    print(f"与工作簿现值不同 {len(changes)} 处" + ("：" if changes else ""))
+    for code, k, old, new in changes:
+        print(f"  {code:9s} {k} {HEADERS[k]}: {old!r} -> {new!r}")
 
     if dry:
-        print("--dry-run：未写回")
+        print("--dry-run：未写回工作簿，未写证据")
         return 0
+
+    # 按代码合并：--only 只覆盖选中公司的证据，保留其他公司（及共用 out/ 的其他 cohort）的记录
+    outj = cfg["paths"]["out"] / "derived_flags.json"
+    merged = json.loads(outj.read_text(encoding="utf-8")) if outj.exists() else {}
+    merged.update(audit)
+    outj.write_text(json.dumps(merged, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8")
+    print(f"证据 -> {outj}")
 
     with workbook_transaction(book, operation="flags") as wb:
         ws = wb[cfg["sheet"]]

@@ -20,7 +20,6 @@ from copy import copy
 from pathlib import Path
 
 import openpyxl
-from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.views import Pane, Selection
 
 ROOT = Path(__file__).resolve().parent

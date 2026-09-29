@@ -25,14 +25,13 @@ import datetime as dt
 import math
 import re
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 import yaml
 
-from paths import (  # noqa: E402
-    CODEBOOKS as CODEBOOKS_SUBDIR, EXPORTS as EXPORTS_SUBDIR, MASTER_STEM,
-    REGISTRY_NAME, REPORTS as REPORTS_SUBDIR,
-    codebook_md_path, drift_report_path, exports_dir, exclusions_path, master_csv_path,
+from paths import (  # noqa: E402,F401  (MASTER_STEM / REGISTRY_NAME re-exported for tests)
+    CODEBOOKS as CODEBOOKS_SUBDIR, MASTER_STEM, REGISTRY_NAME,
+    drift_report_path, exports_dir, master_csv_path,
     registry_path as layout_registry_path,
 )
 
@@ -60,14 +59,56 @@ IDENTITY_CHECKS = [
 ]
 IDENTITY_TOLERANCE = 1.0  # 股数为整数口径，允许 ±1 舍入
 
-# 免汇率派生变量（分母子同币种，比率单位无关；财务列为原币种 × 单位乘数）
+# 派生变量（--derive）：每项 = (列名, 运算, 源表头, 说明)。
+# 运算见 DERIVED_OPS；源列缺表头 -> 整列跳过，任一输入缺失或运算无定义 -> NaN。
+# 比率类分母子同币种，单位无关（财务列为原币种 × 单位乘数）；
+# log_proceeds_hkd 的两个源列本身就是 HK$（报价 × 股数），不涉及汇率。
+class DerivedSpec(NamedTuple):
+    name: str
+    op: str
+    sources: list[str]
+    description_zh: str
+
+
 DERIVED_SPECS = [
-    ("leverage_y1", ["total liability in year-1", "total assets in year-1"]),
-    ("roa_y1", ["Profit for the year in year-1", "total assets in year-1"]),
-    ("sales_growth_y1", ["Net sales in year-1", "Net sales in year-2"]),
-    ("log_proceeds_hkd", ["Total (without option)"]),
-    ("public_offer_fraction", ["Public Offer shares", "New shares"]),
+    DerivedSpec("leverage_y1", "ratio",
+                ["total liability in year-1", "total assets in year-1"],
+                "资产负债率 = 总负债 / 总资产（year-1）"),
+    DerivedSpec("roa_y1", "ratio",
+                ["Profit for the year in year-1", "total assets in year-1"],
+                "总资产收益率 = 年度利润 / 总资产（year-1）"),
+    DerivedSpec("sales_growth_y1", "growth",
+                ["Net sales in year-1", "Net sales in year-2"],
+                "营收增长率 = year-1 净销售额 / year-2 净销售额 - 1"),
+    DerivedSpec("log_proceeds_hkd", "log_product",
+                ["IPO Subscription Price (HK$)", "Final global offering shares (before over-allotment)"],
+                "发行规模（基础发售募资额，HK$）取自然对数 = ln(最终发售价 × 最终全球发售股数（超额配售前））。"
+                "不含超额配售；不用 Funds Raised HK(a)+Int.(b)，因其在部分行含超额配售/上调发售规模"
+                "（约 1.15×），跨行口径不一"),
+    DerivedSpec("public_offer_fraction", "ratio",
+                ["Public Offer shares", "New shares"],
+                "公开发售占比 = 公开发售股数 / 新股数"),
 ]
+
+
+def _op_ratio(a: float, b: float) -> float | None:
+    return None if b == 0 else a / b
+
+
+def _op_growth(a: float, b: float) -> float | None:
+    return None if b == 0 else a / b - 1
+
+
+def _op_log_product(a: float, b: float) -> float | None:
+    product = a * b
+    return None if product <= 0 else math.log(product)
+
+
+DERIVED_OPS = {
+    "ratio": _op_ratio,
+    "growth": _op_growth,
+    "log_product": _op_log_product,
+}
 
 VAR_ROW_RE = re.compile(r"^\|\s*\*\*([A-Z]{1,3})\*\*\s*\|")
 
@@ -233,33 +274,25 @@ def sponsor_reputation_tiers(
 def compute_derived_columns(
     headers: list[str], rows: list[list[str]]
 ) -> tuple[list[str], list[list[str]], list[str]]:
-    """计算免汇率派生比率列；返回 (新列名, 新列值矩阵, 缺源跳过的列名)。
+    """按 DERIVED_SPECS 计算派生列；返回 (新列名, 新列值矩阵, 缺源跳过的列名)。
 
-    只保留源表头齐全的派生列；比率分母为 0 或任一输入缺失时填 NaN。
+    只保留源表头齐全的派生列；任一输入缺失或运算无定义（分母为 0、log 真数 <= 0）时填 NaN。
     """
     idx = {h: i for i, h in enumerate(headers)}
     added: list[str] = []
     skipped: list[str] = []
     columns: list[list[str]] = []
-    for name, sources in DERIVED_SPECS:
-        if any(h not in idx for h in sources):
-            skipped.append(name)
+    for spec in DERIVED_SPECS:
+        if any(h not in idx for h in spec.sources):
+            skipped.append(spec.name)
             continue
-        added.append(name)
+        added.append(spec.name)
+        op = DERIVED_OPS[spec.op]
         values: list[str] = []
-        if len(sources) == 1:
-            for row in rows:
-                v = _num(row[idx[sources[0]]]) if idx[sources[0]] < len(row) else None
-                values.append("NaN" if v is None or v <= 0 else f"{math.log(v):.6f}")
-        else:
-            for row in rows:
-                nums = [_num(row[idx[h]]) if idx[h] < len(row) else None for h in sources]
-                if any(v is None for v in nums) or nums[1] == 0:
-                    values.append("NaN")
-                elif name == "sales_growth_y1":
-                    values.append(f"{nums[0] / nums[1] - 1:.6f}")
-                else:
-                    values.append(f"{nums[0] / nums[1]:.6f}")
+        for row in rows:
+            nums = [_num(row[idx[h]]) if idx[h] < len(row) else None for h in spec.sources]
+            result = None if any(v is None for v in nums) else op(*nums)
+            values.append("NaN" if result is None else f"{result:.6f}")
         columns.append(values)
 
     # 附加：保荐人声誉 tier（非算术派生，单独处理）
@@ -387,7 +420,19 @@ def check_registry_consistency(ws: Path) -> list[str]:
     for v in registry["variables"]:
         if v["header"] not in latest_headers:
             issues.append(f"registry 多出列 `{v['header']}`（Codebook 中已不存在）")
+
+    if registry.get("derived_variables") != derived_variable_entries():
+        issues.append("registry 的 derived_variables 与 master_panel.DERIVED_SPECS 不一致——是否改口径后忘记重跑 registry？")
     return issues
+
+
+def derived_variable_entries() -> list[dict[str, Any]]:
+    """DERIVED_SPECS -> 注册表 derived_variables 段（master --derive 追加的列，不在 Codebook 中）。"""
+    return [
+        {"name": spec.name, "op": spec.op, "sources": list(spec.sources),
+         "description_zh": spec.description_zh}
+        for spec in DERIVED_SPECS
+    ]
 
 
 def build_registry(
@@ -495,6 +540,7 @@ def build_registry(
             "note": "变量定义单一事实来源；季度 Codebook 由工作簿导出，口径以本注册表对齐。",
         },
         "variables": variables,
+        "derived_variables": derived_variable_entries(),
     }
     if out_path is not None:
         out_path.write_text(
@@ -735,7 +781,7 @@ def _write_report(path: Path, s: dict[str, Any], has_registry: bool) -> None:
     lines.append("")
     lines.append(f"- **生成时间**：{now} | **cohort 数**：{len(s['cohort_order'])} | "
                  f"**样本合计**：{s['total_rows']} 家 | **变量数**：{s['variable_count']}")
-    lines.append(f"- **复现命令**：`python3 run.py master`")
+    lines.append("- **复现命令**：`python3 run.py master`")
     lines.append(f"- **Master 数据**：`{Path(s['master_csv']).name}`（cohort 列已前置，本地产物不入库）")
     if s.get("derived_columns"):
         lines.append(f"- **派生比率列**：{', '.join(s['derived_columns'])}（免汇率，`--derive` 生成）")

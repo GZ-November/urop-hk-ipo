@@ -35,7 +35,6 @@ from master_panel import (  # noqa: E402
     load_registry,
 )
 from paths import (  # noqa: E402
-    MASTER_STEM,
     master_csv_path as layout_master_csv,
     registry_path as layout_registry_path,
 )
@@ -44,7 +43,7 @@ IDENTITY_COLUMNS = ["cohort", "cross_cohort_duplicate", "stock_code"]
 
 _NUMERIC_DTYPES = {"numeric", "boolean"}
 
-_DERIVED_NAMES = {name for name, _ in DERIVED_SPECS} | {"sponsor_reputation_tier"}
+_DERIVED_NAMES = {spec.name for spec in DERIVED_SPECS} | {"sponsor_reputation_tier"}
 
 
 def available_slugs(

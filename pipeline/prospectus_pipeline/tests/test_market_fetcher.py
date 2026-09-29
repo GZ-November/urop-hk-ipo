@@ -26,7 +26,6 @@ from market_fetcher import (
     ResilientMarketFetcher,
     TencentProvider,
     YahooFinanceProvider,
-    get_market_fetcher,
     parse_bar_date,
 )
 

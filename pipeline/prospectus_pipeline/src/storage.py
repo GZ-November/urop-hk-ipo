@@ -7,8 +7,12 @@ import os
 import re
 import tempfile
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from contracts import normalize_code
+
+if TYPE_CHECKING:
+    import requests
 
 
 def file_sha256(path: Path | str) -> str:

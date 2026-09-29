@@ -2,7 +2,7 @@
 # HK IPO Pipeline Master Makefile
 # ==============================================================================
 
-.PHONY: help env status audit cross_check report export registry master evidence exclusions aftermarket-refresh test check lint clean weekly-report
+.PHONY: help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test check lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -71,7 +71,9 @@ lint:
 	@python3 -m py_compile run.py
 	@find "pipeline/prospectus_pipeline/src" -name "*.py" -exec python3 -m py_compile {} +
 	@find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
-	@find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
+	@if python3 -m flake8 --version >/dev/null 2>&1; then \
+		python3 -m flake8 --select=F401,F811,F821,F541 --exclude=archive run.py analysis pipeline || exit 1; \
+	else echo "(flake8 not installed - skipped static checks; pip install flake8)"; fi
 	@echo "✅ All Python files passed syntax compilation!"
 
 clean:

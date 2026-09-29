@@ -1,13 +1,8 @@
 import datetime as dt
-import hashlib
-import json
-import math
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 
-import openpyxl
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
@@ -15,7 +10,6 @@ sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 from audit import (
     EXTERNAL_TOOL_MAPPING,
     compare_value,
-    serialize_val,
 )
 
 

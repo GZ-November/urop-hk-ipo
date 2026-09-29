@@ -1,4 +1,5 @@
 import csv
+import math
 import sys
 import tempfile
 import unittest
@@ -10,9 +11,9 @@ WS = ROOT.parent
 
 from paths import REGISTRY_NAME  # noqa: E402
 from master_panel import (
+    DERIVED_OPS,
     DERIVED_SPECS,
     check_registry_consistency,
-    MASTER_STEM,
     build_master,
     build_registry,
     column_letter,
@@ -183,15 +184,19 @@ class IdentityAndDerivedTests(unittest.TestCase):
             self.assertEqual(summary["identity_violations"], [])
             self.assertEqual(len(summary["identities_skipped"]), 3)
 
+    DERIVED_HEADERS = ["Stock Code", "total liability in year-1", "total assets in year-1",
+                       "Profit for the year in year-1", "Net sales in year-1",
+                       "Net sales in year-2", "Total (without option)",
+                       "Public Offer shares", "New shares",
+                       "IPO Subscription Price (HK$)",
+                       "Final global offering shares (before over-allotment)"]
+
     def test_derived_columns_math_and_missing_handling(self):
-        headers = ["Stock Code", "total liability in year-1", "total assets in year-1",
-                   "Profit for the year in year-1", "Net sales in year-1",
-                   "Net sales in year-2", "Total (without option)",
-                   "Public Offer shares", "New shares"]
+        headers = self.DERIVED_HEADERS
         rows = [
-            ["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100"],
-            ["0002.HK", "50", "0", "10", "110", "0", "-5", "10", "100"],
-            ["0003.HK", "NaN", "200", "10", "110", "100", "1000", "10", "100"],
+            ["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100"],
+            ["0002.HK", "50", "0", "10", "110", "0", "-5", "10", "100", "0", "100"],
+            ["0003.HK", "NaN", "200", "10", "110", "100", "1000", "10", "100", "2.5", "NaN"],
         ]
         added, columns, skipped = compute_derived_columns(headers, rows)
         self.assertEqual(skipped, [])  # 所有源列齐全（DERIVED_SPECS 全部可算）
@@ -201,8 +206,34 @@ class IdentityAndDerivedTests(unittest.TestCase):
         self.assertEqual(by_col["roa_y1"], ["0.050000", "NaN", "0.050000"])
         self.assertEqual(by_col["sales_growth_y1"], ["0.100000", "NaN", "0.100000"])
         self.assertEqual(by_col["public_offer_fraction"], ["0.100000", "0.100000", "0.100000"])
-        # log_proceeds: Total<=0 或缺失 -> NaN
-        self.assertEqual(by_col["log_proceeds_hkd"][1], "NaN")
+        # log_proceeds: 价格 × 股数 <= 0 或任一缺失 -> NaN
+        self.assertEqual(by_col["log_proceeds_hkd"][1:], ["NaN", "NaN"])
+
+    def test_log_proceeds_is_log_of_price_times_final_shares_not_share_count(self):
+        """log_proceeds_hkd 必须是募资额（HK$）的对数，不是股数 L 的对数。
+
+        旧定义 ln("Total (without option)") 是股数（资本化发行 + 全球发售），
+        与募资额无关；本用例中两者相差 ln(1000/250)，旧定义会失败。
+        """
+        headers = self.DERIVED_HEADERS
+        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100"]]
+        added, columns, _ = compute_derived_columns(headers, rows)
+        value = float(dict(zip(added, columns))["log_proceeds_hkd"][0])
+        self.assertAlmostEqual(value, math.log(2.5 * 100), places=6)
+        self.assertNotAlmostEqual(value, math.log(1000), places=3)
+
+    def test_log_proceeds_skipped_when_price_or_shares_column_missing(self):
+        headers = [h for h in self.DERIVED_HEADERS if h != "IPO Subscription Price (HK$)"]
+        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "100"]]
+        added, _, skipped = compute_derived_columns(headers, rows)
+        self.assertIn("log_proceeds_hkd", skipped)
+        self.assertNotIn("log_proceeds_hkd", added)
+
+    def test_every_derived_spec_uses_a_known_op_with_matching_arity(self):
+        for spec in DERIVED_SPECS:
+            self.assertIn(spec.op, DERIVED_OPS, spec.name)
+            self.assertEqual(len(spec.sources), 2, spec.name)
+            self.assertTrue(spec.description_zh, spec.name)
 
     def test_derive_flag_appends_columns_only_when_sources_present(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -236,6 +267,23 @@ class RegistryCheckTests(unittest.TestCase):
             reg_path.write_text(_yaml.safe_dump(reg, allow_unicode=True, sort_keys=False), encoding="utf-8")
             issues = check_registry_consistency(tmp)
             self.assertTrue(any("中文释义" in i for i in issues))
+
+
+class DerivedRegistryTests(unittest.TestCase):
+    def test_check_detects_derived_definition_drift(self):
+        import shutil
+        import yaml as _yaml
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            shutil.copytree(WS / "registry", tmp / "registry")
+            shutil.copytree(WS / "codebooks", tmp / "codebooks")
+            reg_path = tmp / "registry" / REGISTRY_NAME
+            reg = load_registry(reg_path)
+            by_name = {d["name"]: d for d in reg["derived_variables"]}
+            by_name["log_proceeds_hkd"]["sources"] = ["Total (without option)"]
+            reg_path.write_text(_yaml.safe_dump(reg, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            issues = check_registry_consistency(tmp)
+            self.assertTrue(any("derived_variables" in i for i in issues))
 
 
 class RealArtifactTests(unittest.TestCase):
@@ -298,6 +346,16 @@ class RealArtifactTests(unittest.TestCase):
             with Path(summary_d["master_csv"]).open(encoding="utf-8-sig", newline="") as fh:
                 rows_d = list(csv.reader(fh))
             self.assertEqual(len(rows_d[0]), 2 + 202 + len(DERIVED_SPECS) + 1)
+
+            # log_proceeds_hkd 是 ln(发售价 × 最终全球发售股数)，与股数 L 的对数不同
+            header = rows_d[0]
+            col = {h: i for i, h in enumerate(header)}
+            price_h = "IPO Subscription Price (HK$)"
+            shares_h = "Final global offering shares (before over-allotment)"
+            for row in rows_d[1:]:
+                expected = math.log(float(row[col[price_h]]) * float(row[col[shares_h]]))
+                self.assertAlmostEqual(float(row[col["log_proceeds_hkd"]]), expected, places=5,
+                                       msg=row[col["Stock Code"]])
 
 
 if __name__ == "__main__":

@@ -492,7 +492,6 @@ def cmd_prompt(phase: str, codes: list[str] | None, only_fields_file: Path | Non
 
 def cmd_next_escalation(target: str, out: Path | None) -> int:
     """验证驱动的升级批次：只重抽失败/缺失字段所在的主题分片。"""
-    from topic_schema import get_field_to_topic_map
     from contracts import strict_load_file
 
     cfg = load_cfg()

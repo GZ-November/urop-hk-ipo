@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 22:44:08"
+    "generated_at": "2026-09-30 00:14:24"
   },
   "variables": [
     {
@@ -1939,10 +1939,10 @@
         "valid_n": 15,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "true_count": 0,
-        "false_count": 15,
-        "true_pct": 0.0,
-        "summary_display": "1 (是): 0 家 (0.0%), 0 (否): 15 家"
+        "true_count": 1,
+        "false_count": 14,
+        "true_pct": 6.7,
+        "summary_display": "1 (是): 1 家 (6.7%), 0 (否): 14 家"
       }
     },
     {
@@ -4734,21 +4734,21 @@
       "group": "lockup",
       "data_type": "numeric",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 15,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.010379866666666668,
-        "std": 0.19614696992410952,
-        "median": -0.047262,
+        "valid_n": 11,
+        "missing_n": 4,
+        "fill_rate_pct": 73.33,
+        "mean": 0.021530636363636366,
+        "std": 0.22872783242066222,
+        "median": -0.039446,
         "min": -0.162206,
-        "q25": -0.062882,
+        "q25": -0.078263,
         "q75": -0.001799,
         "max": 0.660145,
-        "summary_display": "均值 0.01 | 中位数 -0.05 | 区间 [-0.16, 0.66]"
+        "summary_display": "均值 0.02 | 中位数 -0.04 | 区间 [-0.16, 0.66]"
       }
     },
     {
@@ -4760,21 +4760,21 @@
       "group": "lockup",
       "data_type": "numeric",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 15,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": -0.0452252,
-        "std": 0.22315791102625065,
-        "median": -0.033425,
+        "valid_n": 11,
+        "missing_n": 4,
+        "fill_rate_pct": 73.33,
+        "mean": -0.05126218181818182,
+        "std": 0.259321594274298,
+        "median": -0.077409,
         "min": -0.399731,
-        "q25": -0.28016,
-        "q75": 0.068641,
+        "q25": -0.290976,
+        "q75": 0.251313,
         "max": 0.313771,
-        "summary_display": "均值 -0.05 | 中位数 -0.03 | 区间 [-0.40, 0.31]"
+        "summary_display": "均值 -0.05 | 中位数 -0.08 | 区间 [-0.40, 0.31]"
       }
     },
     {
@@ -4786,21 +4786,21 @@
       "group": "lockup",
       "data_type": "numeric",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 15,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 2.0828466666666667,
-        "std": 2.795962673689809,
+        "valid_n": 11,
+        "missing_n": 4,
+        "fill_rate_pct": 73.33,
+        "mean": 1.5601727272727273,
+        "std": 1.3934450323503322,
         "median": 1.1032,
         "min": 0.2516,
         "q25": 0.6264,
         "q75": 1.9885,
-        "max": 11.1691,
-        "summary_display": "均值 2.08 | 中位数 1.10 | 区间 [0.25, 11.17]"
+        "max": 5.0944,
+        "summary_display": "均值 1.56 | 中位数 1.10 | 区间 [0.25, 5.09]"
       }
     },
     {

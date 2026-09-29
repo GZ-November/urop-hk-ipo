@@ -19,11 +19,11 @@ import csv
 import datetime as dt
 import json
 import logging
+import math
 import re
 from pathlib import Path
 from typing import Any, Optional
 
-import openpyxl
 
 logger = logging.getLogger("relational_tables")
 
@@ -43,6 +43,36 @@ def clean_str(s: Any) -> str:
     return str(s or "").strip()
 
 
+def normalize_ws(s: str) -> str:
+    """折叠 PDF 抽取带来的换行与多余空白。"""
+    return " ".join(str(s or "").split())
+
+
+# 上游曾写入的占位符（非真实机构名），读入时视为缺失
+PLACEHOLDER_MARKERS = ("sponsor-oc",)
+
+
+def commission_pct(raw: Any) -> Optional[float]:
+    """招股书佣金率 (schema unit=decimal，如 0.015) → 百分点 (1.5)。
+
+    输出列名为 *_pct，下游 expansion_mapping 再 /100 写成 Excel 百分比；
+    缺失、非数值或不在 [0, 1] 的值返回 None（不猜测单位，也不以行业惯例代填）。
+    """
+    try:
+        v = float(raw)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(v) or not 0.0 <= v <= 1.0:
+        return None
+    return round(v * 100.0, 6)
+
+
+def split_sponsors(raw: Any) -> list[str]:
+    """按 / 或 ; 拆分保荐人名单；换行只是 PDF 折行，不是分隔符。"""
+    names = (normalize_ws(s) for s in re.split(r"[/;]+", str(raw or "")))
+    return [n for n in names if len(n) > 3]
+
+
 def slugify(name: str) -> str:
     """生成紧凑的实体标识符。"""
     clean = re.sub(r"[^A-Za-z0-9]+", "_", name.strip().upper()).strip("_")
@@ -58,9 +88,12 @@ class RelationalTableEngine:
         self.extracted_dir = self.cfg["paths"]["out"] / "extracted"
         self.allot_extracted_dir = self.cfg["paths"]["allot_out"] / "extracted"
         self.stabilization_csv = self.out_master / "stabilization_events.csv"
+        self.issuer_master_csv = self.out_master / "issuer_master.csv"
         self.out_master.mkdir(parents=True, exist_ok=True)
         self.stabilizing_managers: dict[str, str] = {}
+        self.issuer_sponsors: dict[str, str] = {}
         self._load_stabilization_data()
+        self._load_issuer_sponsors()
 
     def _load_stabilization_data(self) -> None:
         if not self.stabilization_csv.exists():
@@ -68,7 +101,23 @@ class RelationalTableEngine:
         with self.stabilization_csv.open("r", encoding="utf-8-sig") as fh:
             reader = csv.DictReader(fh)
             for r in reader:
-                self.stabilizing_managers[r["stock_code"]] = r.get("stabilizing_manager", "")
+                mgr = normalize_ws(r.get("stabilizing_manager"))
+                if any(m in mgr.lower() for m in PLACEHOLDER_MARKERS):
+                    logger.warning(f"{r['stock_code']}: ignoring placeholder stabilizing manager {mgr!r}")
+                    mgr = ""
+                self.stabilizing_managers[r["stock_code"]] = mgr
+
+    def _load_issuer_sponsors(self) -> None:
+        """保荐人名单取自 issuer_master.csv（HKEX New Listing Report 的 Sponsor 栏）。
+
+        load_issuers() 不带 sponsors 键；缺此来源时该发行人不产生保荐人行。
+        """
+        if not self.issuer_master_csv.exists():
+            return
+        with self.issuer_master_csv.open("r", encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                if r.get("sponsors"):
+                    self.issuer_sponsors[r["stock_code"]] = r["sponsors"]
 
     def process_investors(self, issuers: list[dict[str, Any]]) -> list[dict[str, Any]]:
         """构建标准化机构投资者关系表。"""
@@ -173,12 +222,12 @@ class RelationalTableEngine:
         for iss in issuers:
             code = iss["stock_code"]
             digits = "".join(ch for ch in code if ch.isdigit())
-            sponsors_raw = iss.get("sponsors", "")
+            sponsors_raw = iss.get("sponsors") or self.issuer_sponsors.get(code, "")
             stab_mgr = self.stabilizing_managers.get(code, "")
 
-            # 读取招股书佣金费率
-            comm_hk = 2.5
-            comm_int = 2.5
+            # 读取招股书佣金费率（百分点）；无抽取值则为 None
+            comm_hk = None
+            comm_int = None
             p_json_path = self.extracted_dir / f"HKIPO-MB{digits}.json"
             if p_json_path.exists():
                 try:
@@ -186,15 +235,24 @@ class RelationalTableEngine:
                     fields = p_data.get("fields", {})
                     c_hk_val = fields.get("col_AO", {}).get("value")
                     c_int_val = fields.get("col_AP", {}).get("value")
-                    if c_hk_val:
-                        comm_hk = float(c_hk_val)
-                    if c_int_val:
-                        comm_int = float(c_int_val)
+                    comm_hk = commission_pct(c_hk_val)
+                    comm_int = commission_pct(c_int_val)
+                    for key, raw, val in (("col_AO", c_hk_val, comm_hk), ("col_AP", c_int_val, comm_int)):
+                        if raw not in (None, "") and val is None:
+                            logger.warning(f"{code}: {key}={raw!r} is not a decimal rate in [0, 1]; left blank")
                 except Exception:
                     pass
 
+            # 酌情奖励费：招股书尚无对应抽取字段，不得以行业惯例 (0.5%-1.5%) 代填
+            incentive = None
+
+            def total_fee(base: Optional[float]) -> Optional[float]:
+                if base is None or incentive is None:
+                    return None
+                return round(base + incentive, 6)
+
             # 拆分联席保荐人名单
-            sponsors = [s.strip() for s in re.split(r"[/;\n]+", sponsors_raw) if len(s.strip()) > 3]
+            sponsors = split_sponsors(sponsors_raw)
             for idx, sp in enumerate(sponsors):
                 is_sole = (len(sponsors) == 1)
                 role = "Sole Sponsor" if is_sole else "Joint Sponsor"
@@ -209,8 +267,8 @@ class RelationalTableEngine:
                     "syndicate_role": role,
                     "role_rank": 1,
                     "base_commission_pct": comm_hk,
-                    "discretionary_incentive_fee_pct": 1.0,  # 行业标准酌情奖励费通常为 0.5% - 1.5%
-                    "total_fee_rate_pct": comm_hk + 1.0,
+                    "discretionary_incentive_fee_pct": incentive,
+                    "total_fee_rate_pct": total_fee(comm_hk),
                     "commercial_bank_affiliate": is_bank,
                     "is_stabilizing_manager": (sp.lower() in stab_mgr.lower() if stab_mgr else False),
                     "source_evidence": "HKEX New Listing Report Sponsor Field / Prospectus Underwriting"
@@ -228,8 +286,8 @@ class RelationalTableEngine:
                     "syndicate_role": "Stabilizing Manager",
                     "role_rank": 2,
                     "base_commission_pct": comm_int,
-                    "discretionary_incentive_fee_pct": 1.0,
-                    "total_fee_rate_pct": comm_int + 1.0,
+                    "discretionary_incentive_fee_pct": incentive,
+                    "total_fee_rate_pct": total_fee(comm_int),
                     "commercial_bank_affiliate": is_bank,
                     "is_stabilizing_manager": True,
                     "source_evidence": "HKEX Section 9(2) Price Stabilizing Announcement"
@@ -275,8 +333,8 @@ if __name__ == "__main__":
     issuers = load_issuers(cfg=cfg)
     engine = RelationalTableEngine(cfg=cfg)
     i_out, s_out = engine.run(issuers)
-    print(f"\n=======================================================")
-    print(f"Relational Tables Generation Complete")
-    print(f"=======================================================")
+    print("\n=======================================================")
+    print("Relational Tables Generation Complete")
+    print("=======================================================")
     print(f"Investor Relational Table    : {i_out}")
     print(f"Underwriter Relational Table : {s_out}")

@@ -21,10 +21,8 @@ import csv
 import datetime as dt
 import json
 import math
-import statistics
 import shutil
 import sys
-from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -35,9 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from variable_catalog import (  # noqa: E402
-    ACADEMIC_VARS, EXTERNAL_VARS, EXTRA_HEADER_VARS, HKEX_GREEN_VARS, lookup_tables,
-)
+from variable_catalog import lookup_tables  # noqa: E402
 from cohort import cohort_artifact_stem  # noqa: E402
 from run import load_cfg  # noqa: E402
 
@@ -202,7 +198,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
     # 全空列（Reserved / Unmatured）不再靠推断，避免跨季度 numeric/string 翻转
     declared_by_header: dict[str, str] = {}
     try:
-        from master_panel import REGISTRY_NAME, load_registry
+        from master_panel import load_registry
         from paths import registry_path as layout_registry_path
         registry_path = layout_registry_path(WS)
         if registry_path.is_file():
@@ -276,7 +272,7 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         elif norm_h in a_schema_by_header:
             tier = "深蓝 (配发结果与确定性派生)"
             meta = a_schema_by_header[norm_h]
-            source_desc = f"配发结果公告 (Allotment Results) / 确定性派生"
+            source_desc = "配发结果公告 (Allotment Results) / 确定性派生"
             group_name = meta.get("group", "allotment")
             chinese_desc = meta.get("description", clean_header)
         elif norm_h in ext_by_header:

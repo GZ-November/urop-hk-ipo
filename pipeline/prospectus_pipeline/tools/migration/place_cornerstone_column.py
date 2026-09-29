@@ -22,7 +22,6 @@ from copy import copy
 from pathlib import Path
 
 import openpyxl
-from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parent
 WS = ROOT.parent

@@ -229,7 +229,7 @@ def cmd_registry(cfg, args, companies):
             return 1
         print("✅ registry 一致性校验通过：variable_catalog ↔ 最新 Codebook ↔ registry")
         return 0
-    from master_panel import REGISTRY_NAME, build_registry
+    from master_panel import build_registry
     from paths import registry_path as layout_registry_path
     out_path = layout_registry_path(WS)
     registry = build_registry(WS, out_path)
@@ -251,7 +251,7 @@ def cmd_registry(cfg, args, companies):
 
 def cmd_master(cfg, args, companies):
     """合并全部 cohort clean CSV 为 master 面板 + 漂移报告。"""
-    from master_panel import MASTER_STEM, REGISTRY_NAME, build_master
+    from master_panel import build_master
     from paths import registry_path as layout_registry_path
     summary = build_master(WS, layout_registry_path(WS), derive=bool(getattr(args, "derive", False)))
     print(f"\nMaster 面板：{summary['master_csv']}")
@@ -337,6 +337,10 @@ def cmd_expansion(cfg, args, companies):
     """Write back academic expansion fields."""
     import subprocess
     cmd = [sys.executable, str(ROOT / "src" / "write_back_expansion.py"), "--workbook", str(cfg["_workbook_path"])]
+    if getattr(args, "dry_run", False):
+        cmd.append("--dry-run")
+    if getattr(args, "force_overwrite", False):
+        cmd.append("--force-overwrite")
     return subprocess.call(cmd, cwd=WS)
 
 
@@ -617,6 +621,8 @@ def main() -> int:
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--derive", action="store_true",
                     help="master 阶段：附加免汇率派生比率列（leverage/ROA/成长性等）")
+    ap.add_argument("--force-overwrite", action="store_true",
+                    help="expansion 阶段：允许以空值/占位值覆盖已有人工整理单元格（默认拒绝）")
     ap.add_argument("--check", action="store_true",
                     help="registry 阶段：只读三方一致性校验（失败退出码 1）")
     ap.add_argument("--workbook", default=None,

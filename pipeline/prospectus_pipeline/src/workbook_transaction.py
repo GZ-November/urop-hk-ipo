@@ -14,7 +14,6 @@ import datetime as dt
 import fcntl
 import os
 import shutil
-import tempfile
 import time
 import uuid
 import zipfile
