@@ -15,7 +15,7 @@ class ExpansionMappingTests(unittest.TestCase):
         self.assertEqual([column[0] for column in EXPANSION_COLUMNS], list(range(162, 203)))
         mapper = ExpansionValueMapper(Path("unused"))
         for column, _, expected_format, _ in EXPANSION_COLUMNS:
-            self.assertEqual(mapper.value_for("missing.HK", column)[1], expected_format)
+            self.assertEqual(mapper.value_for("missing.HK", column, "2026-01-10")[1], expected_format)
 
     def test_mapper_resolves_values_from_master_sources(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -41,6 +41,33 @@ class ExpansionMappingTests(unittest.TestCase):
         self.assertEqual(mapper.value_for("1234.HK", 173), (0.125, "0.00%"))
         self.assertEqual(mapper.value_for("1234.HK", 174), (1.2, "0.000"))
         self.assertEqual(mapper.value_for("missing.HK", 173), (None, "0.00%"))
+
+    def test_cornerstone_count_is_never_invented(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out_master = Path(tmp)
+            for name, fields in {
+                "horizon_summary.csv": ["stock_code", "horizon"],
+                "stabilization_events.csv": ["stock_code"],
+                "daily_market_panel.csv": ["stock_code", "amihud_illiq", "zero_volume_flag", "daily_return", "max_drawdown"],
+                "lockup_events.csv": ["stock_code", "lockup_category"],
+                "investor_relational.csv": ["stock_code", "cornerstone_flag", "state_owned_flag"],
+            }.items():
+                with (out_master / name).open("w", newline="", encoding="utf-8-sig") as stream:
+                    writer = csv.DictWriter(stream, fieldnames=fields)
+                    writer.writeheader()
+                    if name == "investor_relational.csv":
+                        for _ in range(3):
+                            writer.writerow({"stock_code": "1111.HK", "cornerstone_flag": "True",
+                                             "state_owned_flag": "False"})
+            mapper = ExpansionValueMapper(out_master, no_cornerstone={"2222.HK"})
+            mapper.load_sources()
+
+        # counted from investor rows
+        self.assertEqual(mapper.value_for("1111.HK", 196), (3, "0"))
+        # confirmed no cornerstones -> definite 0
+        self.assertEqual(mapper.value_for("2222.HK", 196), (0, "0"))
+        # no investor rows and not confirmed absent -> unknown, not a made-up number
+        self.assertEqual(mapper.value_for("3333.HK", 196), (None, "0"))
 
 
 CURATED_COLUMNS = range(162, 201)  # 201-202 由 regime 逻辑负责，不在此测试范围

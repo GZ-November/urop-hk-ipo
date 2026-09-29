@@ -120,9 +120,20 @@ class WorkbookExpansionWriter:
         configured_book = self.cfg.get("workbook_path") or self.cfg.get("_workbook_path")
         self.book_path = Path(book_path or configured_book or (ROOT.parent / self.cfg["workbook"]))
         self.out_master = self.cfg["paths"]["out"] / "master"
-        self.mapper = ExpansionValueMapper(self.out_master)
+        from cornerstone import confirmed_absent
+        self.mapper = ExpansionValueMapper(self.out_master, confirmed_absent(self.cfg))
 
-    def _plan(self, company_rows: list[dict]) -> list[tuple[int, str, int, object, str]]:
+    @staticmethod
+    def _select(columns: set[int] | None) -> list:
+        """解析要写的扩展列集合；未知列号直接报错。"""
+        selected = [c for c in EXPANSION_COLUMNS if columns is None or c[0] in columns]
+        if columns is not None and len(selected) != len(columns):
+            unknown = sorted(columns - {c[0] for c in EXPANSION_COLUMNS})
+            raise ValueError(f"Unknown expansion columns: {unknown}")
+        return selected
+
+    def _plan(self, company_rows: list[dict],
+              selected: list) -> list[tuple[int, str, int, object, str]]:
         """解析全部待写单元格 (row, code, col, value, format)，不触碰工作簿。"""
         planned = []
         for company in company_rows:
@@ -132,8 +143,8 @@ class WorkbookExpansionWriter:
                 digits = "".join(ch for ch in code_str if ch.isdigit())
                 code_str = f"{int(digits):04d}.HK"
 
-            for col_idx, header, field_format, desc in EXPANSION_COLUMNS:
-                val, cell_format = self.mapper.value_for(code_str, col_idx)
+            for col_idx, header, field_format, desc in selected:
+                val, cell_format = self.mapper.value_for(code_str, col_idx, company.get("listing_date"))
                 if cell_format != field_format:
                     raise ValueError(
                         f"Expansion field {col_idx} format mismatch: "
@@ -142,18 +153,20 @@ class WorkbookExpansionWriter:
                 planned.append((r, code_str, col_idx, val, cell_format))
         return planned
 
-    def write_expansion(self, force_overwrite: bool = False, dry_run: bool = False) -> int:
-        """执行事务级写回。
+    def write_expansion(self, columns: set[int] | None = None, force_overwrite: bool = False,
+                        dry_run: bool = False) -> int:
+        """执行事务级写回；columns 非空时只写这些列（其余扩展列保持原值）。
 
         默认 fail closed：若会以 None/占位值覆盖非空人工整理单元格，或写入占位值，
         则在任何修改前抛出 ExpansionOverwriteError，工作簿保持不变。
         force_overwrite=True 时仅记录警告并照常写入。
         """
+        selected = self._select(columns)
         self.mapper.load_sources()
         logger.info(f"Opening transaction on {self.book_path}...")
         from cohort import read_companies
         company_rows = read_companies(self.cfg)
-        planned = self._plan(company_rows)
+        planned = self._plan(company_rows, selected)
 
         with workbook_transaction(self.book_path, operation="academic_expansion", dry_run=dry_run) as wb:
             ws = wb[self.cfg["sheet"]]
@@ -172,7 +185,7 @@ class WorkbookExpansionWriter:
                 return 0
 
             # 1. 写入表头 (Row 1)
-            for col_idx, header, num_format, desc in EXPANSION_COLUMNS:
+            for col_idx, header, num_format, desc in selected:
                 cell = ws.cell(row=1, column=col_idx, value=header)
                 cell.fill = HEADER_FILL
                 cell.font = HEADER_FONT
@@ -202,14 +215,15 @@ class WorkbookExpansionWriter:
 
                 written_cells += 1
 
-            logger.info(f"Successfully populated {written_cells} cells across columns 162-202 ({len(company_rows)} issuers)")
+            col_span = f"{selected[0][0]}-{selected[-1][0]}" if selected else "none"
+            logger.info(f"Successfully populated {written_cells} cells across columns {col_span} ({len(company_rows)} issuers)")
 
         print(f"\n=======================================================")
-        print(f"Workbook Academic Expansion Complete (Cols 162 - 202)")
+        print(f"Workbook Academic Expansion Complete (Cols {col_span})")
         print(f"=======================================================")
         print(f"Target Workbook : {self.book_path}")
-        print(f"New Columns     : 41 academic fields added (Col 162 to Col 202)")
-        print(f"Cells Written   : {len(company_rows)} companies × 41 columns = {written_cells:,} data cells")
+        print(f"Columns Written : {', '.join(str(c[0]) for c in selected)}")
+        print(f"Cells Written   : {len(company_rows)} companies × {len(selected)} columns = {written_cells:,} data cells")
         return 0
 
 
@@ -224,10 +238,14 @@ if __name__ == "__main__":
                         help="只解析并检查覆盖冲突，不保存工作簿")
     parser.add_argument("--force-overwrite", action="store_true",
                         help="允许以 None/占位值覆盖非空人工整理单元格（默认拒绝）")
+    parser.add_argument("--columns", nargs="+", type=int,
+                        help="只写回这些扩展列（如 201 202），其余扩展列保持不变")
     args = parser.parse_args()
     writer = WorkbookExpansionWriter(cfg=load_cfg(args.workbook, args.period_start, args.period_end))
     try:
-        sys.exit(writer.write_expansion(force_overwrite=args.force_overwrite, dry_run=args.dry_run))
+        sys.exit(writer.write_expansion(columns=set(args.columns) if args.columns else None,
+                                        force_overwrite=args.force_overwrite,
+                                        dry_run=args.dry_run))
     except ExpansionOverwriteError as exc:
         print(f"错误: {exc}", file=sys.stderr)
         sys.exit(2)

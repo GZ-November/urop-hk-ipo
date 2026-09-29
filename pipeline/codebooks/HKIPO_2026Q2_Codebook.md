@@ -3,7 +3,7 @@
 - **样本规模 (N)**：45 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-28 15:52:24 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-29 23:55:03 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
 
 ---
 
@@ -95,7 +95,7 @@
 | **BT** | `Debt repayment (% of planned net IPO proceeds)` | 计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (43/45 (95.56%)) | 均值 0.01 / 中位数 0.00 / 区间 [0.00, 0.20] |
 | **BU** | `Listing board` | 上市板块（Main Board 主板） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Main Board': 45) |
 | **BV** | `Share class` | 股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 5 种取值 ('H Shares': 39, 'Ordinary Shares': 2, 'Ordinary shares': 2) |
-| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 45 家 |
+| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 7 家 (15.6%), 0 (否): 38 家 |
 | **BX** | `WVR flag` | 不同投票权/同股不同权架构标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 1 家 (2.2%), 0 (否): 44 家 |
 | **BY** | `Chapter 18A flag` | 第 18A 章未盈利生物科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 8 家 (17.8%), 0 (否): 37 家 |
 | **BZ** | `Chapter 18C flag` | 第 18C 章特专科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 7 家 (15.6%), 0 (否): 38 家 |
@@ -103,7 +103,7 @@
 | **CB** | `Industry classification system and version` | 行业分类系统与版本号 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('HSICS (Hang Seng Industry Classification System) 2026': 45) |
 | **CC** | `Incorporation date` | 公司**法定注册成立日期**（dd/mm/yy）。必须优先取自 Statutory and General Information (Appendix V '1. Incorporation')、History & Development 或 Accountants' Report (附注 1)。严禁从 Definitions (释义) 章节取值（释义章节常有起草笔误或仅为前期筹备日）。 | 浅蓝 | `date` | Ex-ante prospectus disclosure | 100% 完备 | 区间: 2002-07-05 ~ 2025-10-03 |
 | **CD** | `Firm age at IPO (years)` | 公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量） | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 13.53 / 中位数 13.22 / 区间 [0.67, 23.99] |
-| **CE** | `Place of incorporation` | 公司注册成立法域（如 Cayman Islands, PRC 等） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (44/45 (97.78%)) | 共 2 种取值 ('PRC': 42, 'Cayman Islands': 2) |
+| **CE** | `Place of incorporation` | 公司注册成立法域（如 Cayman Islands, PRC 等） | 深蓝 | `string` | Ex-ante prospectus disclosure | Sparse (8/45 (17.78%)) | 共 2 种取值 ('PRC': 7, 'Cayman Islands': 1) |
 | **CF** | `Principal place of business` | 主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 42 种取值 ('Shanghai, PRC': 3, 'Room 1920, 19/F, Lee Garden One, 33 Hysan Avenue, Causeway Bay, Hong Kong': 2, 'Building 12-2, 678 Yunqiao Road, Pilot Free Trade Zone, Shanghai, PRC': 1) |
 | **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (41/45 (91.11%)) | 均值 25,365.85 / 中位数 1,000.00 / 区间 [1,000.00, 1,000,000.00] |
 | **CH** | `Accounting standard` | 财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。 | 浅蓝 | `string` | Track record period financial disclosure | 100% 完备 | 共 7 种取值 ('IFRS Accounting Standards': 22, 'IFRS': 11, 'HKFRS': 4) |
@@ -124,7 +124,7 @@
 | **CW** | `Listing expenses (HK$)` | **总上市费用**（HK$ 基本单位，含承销佣金与其他开支）。取 UNDERWRITING COMMISSIONS AND LISTING EXPENSES 段的合计。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 94,820,000.00 / 中位数 86,900,000.00 / 区间 [14,900,000.00, 264,000,000.00] |
 | **CX** | `Cornerstone investor names` | Cornerstone investor names | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (37/45 (82.22%)) | 共 37 种取值 ('Aranda Investments Pte. Ltd.; Shanghai Lujiazui (Group) Co., Ltd. (GUOTAI JUNAN INVESTMENTS (HONG KONG) LIMITED OTC Swap); Goldman Sachs Asset Management (Hong Kong) Limited; HHLR Advisors, Ltd.; Hillhouse Investment Management, Ltd.; UBS Asset Management (Singapore) Ltd.; AXA Investment Managers UK Limited; CPE Energy Investment Limited; Lazurite Hime L.P.; Baring Asset Management (Asia) Limited; Charoen Pokphand Robot Limited; CPIC Investment Management (H.K.) Company Limited; Fullgoal Asset Management (HK) Limited; Fullgoal Fund Management Co., Ltd.; Greenwoods Asset Management Hong Kong Limited; Huadeng Technology Space Ventures Ltd; ICBC Wealth Management Co., Ltd.; Perseverance Asset Management International (Singapore) Pte. Ltd.; Scene Cloud Global Limited; Tropical Terrain Limited; 3W Fund Management Limited': 1, 'Taikang Life Insurance Co., Ltd; Sunshine Life Insurance Corporation Limited; GF Fund Management Co., Ltd.; GF International Investment Management Limited; REDWOOD ELITE LIMITED; Mirae Asset Securities Co., Ltd.; RIME Capital Limited; Hesai Hong Kong Limited; Guohui (HK) Holdings Co., Limited; CR Construction Group Holdings Limited': 1, 'CPE Peepal; HHLRA; UBS AM Singapore; Arc Avenue; Boyu; Fullgoal; GF Fund; Greenwoods; Mirae HK; Perseverance Asset Management; Yield Royal Investment; 3W Fund; Eastern Bell Capital VIII; ICBC Wealth; Protium Capital Limited; Source Code Capital; WT Asset Management; E Fund; China AMC; Cithara Fund; Panjing Fund; Value Partners; China Orient Multi-Strategy Master Fund; CMSIM': 1) |
 | **CY** | `Final cornerstone allocation (% of base offer)` | Final cornerstone allocation (% of base offer) | 深蓝 | `numeric` | Allotment results announcement | 100% 完备 | 均值 0.33 / 中位数 0.37 / 区间 [0.00, 0.65] |
-| **CZ** | `Earliest cornerstone unlock date (dd/mm/yy)` | 基石投资者最早解禁日期 | 深蓝 | `date` | Post-IPO lockup expiration events | 100% 完备 | 区间: 2026-10-16 ~ 2026-12-30 |
+| **CZ** | `Earliest cornerstone unlock date (dd/mm/yy)` | 基石投资者最早解禁日期 | 深蓝 | `date` | Post-IPO lockup expiration events | Adequate (37/45 (82.22%)) | 区间: 2026-10-16 ~ 2026-12-30 |
 | **DA** | `Subscription Ratio (times)` | Subscription Ratio (times) | 深蓝 | `numeric` | Allotment results announcement | 100% 完备 | 均值 3,198.68 / 中位数 2,003.16 / 区间 [4.42, 14,855.40] |
 | **DB** | `Public applicants` | Public applicants | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 203,846.38 / 中位数 202,730.00 / 区间 [22,329.00, 383,309.00] |
 | **DC** | `Public valid applied shares` | Public valid applied shares | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 10,785,534,139.42 / 中位数 4,969,471,300.00 / 区间 [39,645,800.00, 84,572,151,000.00] |
@@ -156,8 +156,8 @@
 | **EC** | `First trading day volume (shares)` | 首日上市二级市场全天成交量（股） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 24,957,480.87 / 中位数 12,671,555.00 / 区间 [911,040.00, 192,052,421.00] |
 | **ED** | `First-day flipping ratio (%)` | 首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.42 / 中位数 0.38 / 区间 [0.03, 0.93] |
 | **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,375,207,839.56 / 中位数 694,075,300.00 / 区间 [230,830,000.00, 10,784,221,200.00] |
-| **EF** | `Offer mechanism` | 适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (44/45 (97.78%)) | 共 2 种取值 ('Mechanism B': 37, 'Mechanism A': 7) |
-| **EG** | `Applicable IPO rules / transition basis` | 适用之上市规则过渡基准（FINI 改革规则） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 3 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 37, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 7, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)': 1) |
+| **EF** | `Offer mechanism` | 适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (42/45 (93.33%)) | 共 2 种取值 ('Mechanism B': 29, 'Mechanism A': 13) |
+| **EG** | `Applicable IPO rules / transition basis` | 适用之上市规则过渡基准（FINI 改革规则） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 3 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 29, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 13, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)': 3) |
 | **EH** | `Company Chinese Name` | Company Chinese Name | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (44/45 (97.78%)) | 共 44 种取值 ('思格新能源（上海）股份有限公司': 1, '群核科技': 1, '长春长光辰芯微电子股份有限公司': 1) |
 | **EI** | `Current listing status` | 当前挂牌存续状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Active': 45) |
 | **EJ** | `1-month post-IPO close price (HK$)` | 第20个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 113.53 / 中位数 59.00 / 区间 [3.60, 682.50] |
@@ -216,7 +216,7 @@
 | **GK** | `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 0.03 / 中位数 0.03 / 区间 [0.03, 0.03] |
 | **GL** | `Underwriting discretionary incentive fee rate (%)` | 承销酌情奖励费率估算 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 0.01 / 中位数 0.01 / 区间 [0.01, 0.01] |
 | **GM** | `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 0.04 / 中位数 0.04 / 区间 [0.04, 0.04] |
-| **GN** | `Cornerstone investor count` | 基石投资者机构总家数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | 100% 完备 | 均值 4.00 / 中位数 4.00 / 区间 [4.00, 4.00] |
+| **GN** | `Cornerstone investor count` | 基石投资者机构总家数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | Sparse (8/45 (17.78%)) | 均值 0.00 / 中位数 0.00 / 区间 [0.00, 0.00] |
 | **GO** | `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 45 家 |
 | **GP** | `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 45 家 |
 | **GQ** | `Pre-IPO institutional investor count` | 主要 Pre-IPO 投资机构总数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | 100% 完备 | 均值 6.00 / 中位数 6.00 / 区间 [6.00, 6.00] |
