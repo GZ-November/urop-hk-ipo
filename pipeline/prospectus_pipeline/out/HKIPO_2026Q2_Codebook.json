@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 23:55:03"
+    "generated_at": "2026-09-30 00:02:18"
   },
   "variables": [
     {
@@ -1942,10 +1942,10 @@
         "valid_n": 45,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "true_count": 7,
-        "false_count": 38,
-        "true_pct": 15.6,
-        "summary_display": "1 (是): 7 家 (15.6%), 0 (否): 38 家"
+        "true_count": 9,
+        "false_count": 36,
+        "true_pct": 20.0,
+        "summary_display": "1 (是): 9 家 (20.0%), 0 (否): 36 家"
       }
     },
     {
@@ -2123,15 +2123,15 @@
       "coverage_status": "Sparse",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 8,
-        "missing_n": 37,
-        "fill_rate_pct": 17.78,
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
         "unique_count": 2,
         "top_categories": {
-          "PRC": 7,
+          "PRC": 9,
           "Cayman Islands": 1
         },
-        "summary_display": "共 2 种取值 ('PRC': 7, 'Cayman Islands': 1)"
+        "summary_display": "共 2 种取值 ('PRC': 9, 'Cayman Islands': 1)"
       }
     },
     {
