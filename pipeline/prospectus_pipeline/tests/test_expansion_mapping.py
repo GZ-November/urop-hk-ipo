@@ -15,7 +15,7 @@ class ExpansionMappingTests(unittest.TestCase):
         self.assertEqual([column[0] for column in EXPANSION_COLUMNS], list(range(162, 203)))
         mapper = ExpansionValueMapper(Path("unused"))
         for column, _, expected_format, _ in EXPANSION_COLUMNS:
-            self.assertEqual(mapper.value_for("missing.HK", column)[1], expected_format)
+            self.assertEqual(mapper.value_for("missing.HK", column, "2026-01-10")[1], expected_format)
 
     def test_mapper_resolves_values_from_master_sources(self):
         with tempfile.TemporaryDirectory() as tmp:
