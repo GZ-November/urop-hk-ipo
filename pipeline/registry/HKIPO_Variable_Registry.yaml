@@ -1,5 +1,5 @@
 meta:
-  generated_at: '2026-09-27T16:22:25'
+  generated_at: '2026-09-30T00:00:57'
   generated_from:
   - HKIPO_2025Q1_Codebook.md
   - HKIPO_2025Q2_Codebook.md
@@ -656,7 +656,7 @@ variables:
   slug: pre_ipo_institutional_shareholding_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q3_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: percent
@@ -1082,7 +1082,7 @@ variables:
   slug: earliest_cornerstone_unlock_date
   dtype: date
   declared_dtype: date
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO lockup expiration events
   unit: date
@@ -2067,3 +2067,35 @@ variables:
   timing: Listing date regulatory regime
   unit: null
   description_zh: 发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM)
+derived_variables:
+- name: leverage_y1
+  op: ratio
+  sources:
+  - total liability in year-1
+  - total assets in year-1
+  description_zh: 资产负债率 = 总负债 / 总资产（year-1）
+- name: roa_y1
+  op: ratio
+  sources:
+  - Profit for the year in year-1
+  - total assets in year-1
+  description_zh: 总资产收益率 = 年度利润 / 总资产（year-1）
+- name: sales_growth_y1
+  op: growth
+  sources:
+  - Net sales in year-1
+  - Net sales in year-2
+  description_zh: 营收增长率 = year-1 净销售额 / year-2 净销售额 - 1
+- name: log_proceeds_hkd
+  op: log_product
+  sources:
+  - IPO Subscription Price (HK$)
+  - Final global offering shares (before over-allotment)
+  description_zh: 发行规模（基础发售募资额，HK$）取自然对数 = ln(最终发售价 × 最终全球发售股数（超额配售前））。不含超额配售；不用 Funds
+    Raised HK(a)+Int.(b)，因其在部分行含超额配售/上调发售规模（约 1.15×），跨行口径不一
+- name: public_offer_fraction
+  op: ratio
+  sources:
+  - Public Offer shares
+  - New shares
+  description_zh: 公开发售占比 = 公开发售股数 / 新股数
