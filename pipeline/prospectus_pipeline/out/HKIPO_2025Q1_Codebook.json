@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 21:44:14"
+    "generated_at": "2026-09-29 23:53:58"
   },
   "variables": [
     {
@@ -1649,17 +1649,17 @@
       "group": "ownership",
       "data_type": "boolean (0/1)",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NA in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 14,
-        "missing_n": 1,
-        "fill_rate_pct": 93.33,
+        "valid_n": 15,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
         "true_count": 5,
-        "false_count": 9,
-        "true_pct": 35.7,
-        "summary_display": "1 (是): 5 家 (35.7%), 0 (否): 9 家"
+        "false_count": 10,
+        "true_pct": 33.3,
+        "summary_display": "1 (是): 5 家 (33.3%), 0 (否): 10 家"
       }
     },
     {
@@ -5111,9 +5111,9 @@
         "fill_rate_pct": 100.0,
         "unique_count": 1,
         "top_categories": {
-          "POST_2025_REFORM": 15
+          "PRE_2025_REFORM": 15
         },
-        "summary_display": "共 1 种取值 ('POST_2025_REFORM': 15)"
+        "summary_display": "共 1 种取值 ('PRE_2025_REFORM': 15)"
       }
     }
   ]

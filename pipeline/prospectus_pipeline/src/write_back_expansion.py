@@ -39,6 +39,7 @@ from expansion_mapping import (
     CORNERSTONE_UNLOCK_HEADER,
     EXPANSION_COLUMNS,
     ExpansionValueMapper,
+    CORNERSTONE_EVENT_COLS,
     is_no_cornerstone,
 )
 
@@ -68,8 +69,12 @@ class WorkbookExpansionWriter:
         self.out_master = self.cfg["paths"]["out"] / "master"
         self.mapper = ExpansionValueMapper(self.out_master)
 
-    def write_expansion(self) -> int:
-        """执行事务级写回。"""
+    def write_expansion(self, columns: set[int] | None = None) -> int:
+        """执行事务级写回；columns 非空时只写这些列（其余扩展列保持原值）。"""
+        selected = [c for c in EXPANSION_COLUMNS if columns is None or c[0] in columns]
+        if columns is not None and len(selected) != len(columns):
+            unknown = sorted(columns - {c[0] for c in EXPANSION_COLUMNS})
+            raise ValueError(f"Unknown expansion columns: {unknown}")
         self.mapper.load_sources()
         logger.info(f"Opening transaction on {self.book_path}...")
         from cohort import read_companies
@@ -81,7 +86,7 @@ class WorkbookExpansionWriter:
             logger.info(f"Existing workbook: max_row={ws.max_row}, max_column={max_col}")
 
             # 1. 写入表头 (Row 1)
-            for col_idx, header, num_format, desc in EXPANSION_COLUMNS:
+            for col_idx, header, num_format, desc in selected:
                 cell = ws.cell(row=1, column=col_idx, value=header)
                 cell.fill = HEADER_FILL
                 cell.font = HEADER_FONT
@@ -90,13 +95,15 @@ class WorkbookExpansionWriter:
                 col_letter = get_column_letter(col_idx)
                 ws.column_dimensions[col_letter].width = max(len(header) + 3, 14)
 
-            # 2. 基石存在性（fail-closed：缺列即报错，避免无基石发行人被写入解禁 CAR）
+            # 2. 基石存在性（fail-closed：缺列即报错，避免无基石发行人被写入解禁 CAR）；
+            #    仅当本次写回包含 Col 187-189 时才需要
+            gate_cornerstone = any(c[0] in CORNERSTONE_EVENT_COLS for c in selected)
             header_col = {
                 " ".join(str(ws.cell(1, c).value or "").split()).lower(): c
                 for c in range(1, max_col + 1)
             }
             cs_cols = {}
-            for header in (CORNERSTONE_UNLOCK_HEADER, CORNERSTONE_ALLOCATION_HEADER):
+            for header in ((CORNERSTONE_UNLOCK_HEADER, CORNERSTONE_ALLOCATION_HEADER) if gate_cornerstone else ()):
                 c = header_col.get(" ".join(header.split()).lower())
                 if c is None:
                     raise ValueError(f"Workbook missing cornerstone column: {header!r}")
@@ -110,12 +117,13 @@ class WorkbookExpansionWriter:
                 if not code_str.endswith(".HK"):
                     digits = "".join(ch for ch in code_str if ch.isdigit())
                     code_str = f"{int(digits):04d}.HK"
-                if is_no_cornerstone(ws.cell(r, cs_cols[CORNERSTONE_UNLOCK_HEADER]).value,
-                                     ws.cell(r, cs_cols[CORNERSTONE_ALLOCATION_HEADER]).value):
+                if gate_cornerstone and is_no_cornerstone(
+                        ws.cell(r, cs_cols[CORNERSTONE_UNLOCK_HEADER]).value,
+                        ws.cell(r, cs_cols[CORNERSTONE_ALLOCATION_HEADER]).value):
                     self.mapper.no_cornerstone.add(code_str)
 
-                for col_idx, header, field_format, desc in EXPANSION_COLUMNS:
-                    val, cell_format = self.mapper.value_for(code_str, col_idx)
+                for col_idx, header, field_format, desc in selected:
+                    val, cell_format = self.mapper.value_for(code_str, col_idx, company.get("listing_date"))
                     if cell_format != field_format:
                         raise ValueError(
                             f"Expansion field {col_idx} format mismatch: "
@@ -139,14 +147,15 @@ class WorkbookExpansionWriter:
 
                     written_cells += 1
 
-            logger.info(f"Successfully populated {written_cells} cells across columns 162-202 ({len(company_rows)} issuers)")
+            col_span = f"{selected[0][0]}-{selected[-1][0]}" if selected else "none"
+            logger.info(f"Successfully populated {written_cells} cells across columns {col_span} ({len(company_rows)} issuers)")
 
         print(f"\n=======================================================")
-        print(f"Workbook Academic Expansion Complete (Cols 162 - 202)")
+        print(f"Workbook Academic Expansion Complete (Cols {col_span})")
         print(f"=======================================================")
         print(f"Target Workbook : {self.book_path}")
-        print(f"New Columns     : 41 academic fields added (Col 162 to Col 202)")
-        print(f"Cells Written   : {len(company_rows)} companies × 41 columns = {written_cells:,} data cells")
+        print(f"Columns Written : {', '.join(str(c[0]) for c in selected)}")
+        print(f"Cells Written   : {len(company_rows)} companies × {len(selected)} columns = {written_cells:,} data cells")
         return 0
 
 
@@ -157,6 +166,8 @@ if __name__ == "__main__":
     parser.add_argument("--workbook")
     parser.add_argument("--period-start")
     parser.add_argument("--period-end")
+    parser.add_argument("--columns", nargs="+", type=int,
+                        help="只写回这些扩展列（如 201 202），其余扩展列保持不变")
     args = parser.parse_args()
     writer = WorkbookExpansionWriter(cfg=load_cfg(args.workbook, args.period_start, args.period_end))
-    sys.exit(writer.write_expansion())
+    sys.exit(writer.write_expansion(set(args.columns) if args.columns else None))

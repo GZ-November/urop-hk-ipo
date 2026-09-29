@@ -5,6 +5,7 @@ import csv
 
 import master_contracts  # noqa: E402
 from pathlib import Path
+from regimes import fini_regime, pricing_reform_regime
 from typing import Any
 
 # 41 个新增学术字段定义清单 (Col 162 - Col 202)
@@ -180,8 +181,12 @@ class ExpansionValueMapper:
                 for r in csv.DictReader(fh):
                     self.master_data[r["stock_code"]] = r
 
-    def value_for(self, code: str, col_idx: int) -> tuple[Any, str]:
-        """按列索引计算单元格写入值及格式。"""
+    def value_for(self, code: str, col_idx: int, listing_date: Any = None) -> tuple[Any, str]:
+        """按列索引计算单元格写入值及格式。
+
+        listing_date 为工作簿「Date of Listing」列的值；缺失时回退到 issuer_master
+        的 listing_date。制度分期列 (201-202) 只由上市日期推导，两者皆缺则报错。
+        """
         stab = self.stab_data.get(code, {})
         h_map = self.horizon_data.get(code, {})
         d_stat = self.daily_stats.get(code, {})
@@ -310,10 +315,11 @@ class ExpansionValueMapper:
         if col_idx == 200:
             return (1 if inv_stat.get("pre_state") else 0), "0"
 
-        # 6. 宏观监管制度分期 (Col 201-202)
-        if col_idx == 201:
-            return m_row.get("fini_regime", "POST_FINI"), "@"
-        if col_idx == 202:
-            return m_row.get("pricing_reform_regime", "POST_2025_REFORM"), "@"
+        # 6. 宏观监管制度分期 (Col 201-202)：按上市日期推导，缺日期 fail-closed
+        if col_idx in (201, 202):
+            l_date = listing_date or m_row.get("listing_date")
+            if col_idx == 201:
+                return fini_regime(l_date, code), "@"
+            return pricing_reform_regime(l_date, code), "@"
 
         return None, "@"

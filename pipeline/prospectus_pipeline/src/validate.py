@@ -289,7 +289,7 @@ def check_allot(rec: dict, ctx: dict) -> list[dict]:
         ca = ctx.get("cornerstone")
         if not ca:
             add("基石未核实", "缺 cornerstone_absence.json：须先跑 cornerstone 阶段")
-        elif ca.get("verdict") == "none":
+        elif ca.get("verdict") in ("absent", "none"):
             add("基石获配缺失",
                 f"招股书 {ca['prospectus_pages']} 页 0 处「基石投资者」-> 确认无基石，须填 0")
         else:

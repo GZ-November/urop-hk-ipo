@@ -27,13 +27,9 @@ logger = logging.getLogger("sample_builder")
 
 ROOT = Path(__file__).resolve().parent.parent
 from paths import sources_dir
+from regimes import fini_regime, pricing_reform_regime
 SOURCES_DIR = sources_dir()
 OUT_MASTER = ROOT / "out" / "master"
-
-# FINI 官方上线实施日：2023 年 11 月 22 日
-FINI_CUTOFF_DATE = dt.date(2023, 11, 22)
-# 2025 年定价与发售机制改革分界点
-REFORM_2025_DATE = dt.date(2025, 1, 1)
 
 
 def parse_date(v: Any) -> Optional[dt.date]:
@@ -256,14 +252,9 @@ def audit_candidate(cand: dict[str, Any]) -> dict[str, Any]:
         route = "Main Board Conventional"
     cand["listing_route"] = route
 
-    # 制度分期
-    l_date = cand["listing_date"]
-    if l_date:
-        cand["fini_regime"] = "POST_FINI" if l_date >= FINI_CUTOFF_DATE else "PRE_FINI"
-        cand["pricing_reform_regime"] = "POST_2025_REFORM" if l_date >= REFORM_2025_DATE else "PRE_2025_REFORM"
-    else:
-        cand["fini_regime"] = "POST_FINI"
-        cand["pricing_reform_regime"] = "POST_2025_REFORM"
+    # 制度分期（缺上市日期时 fail-closed 报错，不默认 POST）
+    cand["fini_regime"] = fini_regime(cand["listing_date"], code)
+    cand["pricing_reform_regime"] = pricing_reform_regime(cand["listing_date"], code)
 
     cand["prospectus_source"] = "HKEXnews (Official Prospectus)"
     cand["allotment_source"] = "HKEXnews (Allotment Results Announcement)"
