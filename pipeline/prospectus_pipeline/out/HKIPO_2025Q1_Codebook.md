@@ -3,7 +3,7 @@
 - **样本规模 (N)**：15 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-29 21:40:34 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-29 22:44:08 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -84,7 +84,7 @@
 | **BI** | `Top-tier VC/PE backing (1=yes; 0=no)` | 仅在本公司招股书确认一线知名 VC/PE 机构持有重要股权或领投时填 1；不得仅凭机构知名度推断其参与本公司投资。无法确认时填 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (13/15 (86.67%)) | 均值 0.31 / 中位数 0.00 / 区间 [0.00, 1.00] |
 | **BJ** | `Key Pre-IPO investors` | 仅列本公司招股书披露的上市前投资者，采用一致的英文全称/拼音并以分号分隔；同一投资者只记一次，不从其他 cohort 补名单。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (10/15 (66.67%)) | 共 10 种取值 ('Northern Light Venture Capital funds (NLSF/NLVF/NLPF via IMMENSE VANTAGE), Zhongwei Growth, Shanghai Pegasus, Tianjin Kangsheng, Tianjin Tianjian, Tianjin Chengye, Anji Shundian, Hainan Synthesis, CICC Healthcare Fund, Mr. Tan': 1, 'CCB Financial Asset Investment; Anhui Huiyuan LP; Wuhu Longmen LP; Wuhu Industrial Fund (Kegai Ceyuan LP and Anhui Zhongan LP exited in 2023)': 1, 'Legend Capital (via Idea Great and LC Fund), Yunfeng Capital (Yunfeng Blocks/Tuoyuan), Gaorong (Gaorong BLK Holding), Gaintex, BlueCo (Mr. Charlie Cao), JYCP/JYMB Holding, SinoMedia (Asia Pacific), NAW, Way Elegance, Mr. Qi Daqing': 1) |
 | **BK** | `Pre-IPO institutional shareholding (%)` | 上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (10/15 (66.67%)) | 均值 0.13 / 中位数 0.09 / 区间 [0.00, 0.51] |
-| **BL** | `Pre-IPO investor board seat (1=yes; 0=no)` | 只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。 | 浅蓝 | `boolean` | Ex-ante prospectus disclosure | Adequate (14/15 (93.33%)) | 1 (是): 5 家 (35.7%), 0 (否): 9 家 |
+| **BL** | `Pre-IPO investor board seat (1=yes; 0=no)` | 只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。 | 浅蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 5 家 (33.3%), 0 (否): 10 家 |
 | **BM** | `Earliest Pre-IPO investment round` | 从本公司招股书披露的 Pre-IPO 投资轮次中取最早一轮，保留披露的标准轮次名称；只有明确说明没有外部上市前投资时填 None，否则无法确认时 NA。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (9/15 (60.0%)) | 共 9 种取值 ('Series Angel': 1, 'Pre-IPO Investment (January 2023)': 1, 'Series Angel Investment (2018)': 1) |
 | **BN** | `Pre-IPO holding duration (years)` | 从最早 Pre-IPO 投资协议日期至本公司招股书日期计算年数，保留两位小数；起始日期无法确认则 NaN。每家公司必须使用自己的招股书日期，不沿用其他季度日期。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (8/15 (53.33%)) | 均值 5.60 / 中位数 5.35 / 区间 [1.98, 9.80] |
 | **BO** | `Ultimate controller type` | 最终控制人类型（如：自然人 / 家族 / 国资委 / 地方政府 / 外资 / 无实际控制人）。取 SUBSTANTIAL SHAREHOLDERS 与 Controlling Shareholders 段的实际控制人身份表述。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 13 种取值 ('individual': 2, '自然人': 2, 'Individuals (Mr. Tan Zheng and Dr. Wang Xiaoyi)': 1) |
@@ -95,7 +95,7 @@
 | **BT** | `Debt repayment (% of planned net IPO proceeds)` | 计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.01 / 中位数 0.00 / 区间 [0.00, 0.15] |
 | **BU** | `Listing board` | 上市板块（Main Board 主板） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Main Board': 15) |
 | **BV** | `Share class` | 股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 8 种取值 ('Ordinary Shares': 4, 'H Shares': 3, 'H shares': 3) |
-| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 1 家 (6.7%), 0 (否): 14 家 |
+| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 15 家 |
 | **BX** | `WVR flag` | 不同投票权/同股不同权架构标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 15 家 |
 | **BY** | `Chapter 18A flag` | 第 18A 章未盈利生物科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 2 家 (13.3%), 0 (否): 13 家 |
 | **BZ** | `Chapter 18C flag` | 第 18C 章特专科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 15 家 |
@@ -222,7 +222,7 @@
 | **GQ** | `Pre-IPO institutional investor count` | 主要 Pre-IPO 投资机构总数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | 100% 完备 | 均值 6.00 / 中位数 6.00 / 区间 [6.00, 6.00] |
 | **GR** | `Pre-IPO state-owned backing flag` | Pre-IPO 股东中是否包含国资机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 15 家 |
 | **GS** | `FINI digital settlement regime` | 结算监管体制 (POST_FINI / PRE_FINI) | 深蓝 | `string` | Listing date regulatory regime | 100% 完备 | 共 1 种取值 ('POST_FINI': 15) |
-| **GT** | `2025 pricing reform regime` | 发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM) | 深蓝 | `string` | Listing date regulatory regime | 100% 完备 | 共 1 种取值 ('POST_2025_REFORM': 15) |
+| **GT** | `2025 pricing reform regime` | 发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM) | 深蓝 | `string` | Listing date regulatory regime | 100% 完备 | 共 1 种取值 ('PRE_2025_REFORM': 15) |
 
 ---
 

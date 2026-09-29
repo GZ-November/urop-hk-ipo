@@ -1,37 +1,41 @@
 {
-  "0537.HK": {
+  "0068.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 6,
-        "page": 20,
-        "quote": "THE STOCK EXCHANGE Since April 8, 2022, our A Shares have been listed on the Shanghai Stock Exchange’s STAR Market with the stock code of 688337. During the Tra",
-        "source": "prospectus"
-      },
-      "col_AS": "Main Board - Rule 8.05(3) (market capitalisation/revenue test)",
-      "incorporation": "int Lead Managers Stock code : 00537 (A joint stock company incorporated in the People’s Republic of China with limited liability) If you are in any doubt about any o",
-      "unlock": "上市日 2026-07-09 + 6 个月"
-    },
-    "values": {
-      "BH": "Main Board",
-      "BJ": "1",
-      "BK": "0",
-      "BL": "0",
-      "BM": "0",
-      "BQ": "PRC",
-      "CL": "2027-01-09"
-    }
-  },
-  "2249.HK": {
-    "evidence": {
-      "a_plus_h": {
-        "hits": 5,
-        "page": 58,
-        "quote": "A Share and H Share markets may differ. Our A Shares are listed on the STAR Market of the Shanghai Stock Exchange. Following the Global Offering, our A Shares will continue ",
-        "source": "prospectus"
-      },
       "col_AS": "Main Board of the Stock Exchange",
-      "incorporation": "GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability and registered with the Registrar of",
-      "unlock": "上市日 2026-07-10 + 6 个月"
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-17 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-10-17"
+    }
+  },
+  "0901.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19A of the Listing Rules (H Share issuer)",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "1081.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19A of the Main Board Listing Rules (PRC issuer with A Shares listed on the Shenzhen Stock Exchange)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-05 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
@@ -39,21 +43,15 @@
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2027-01-10"
+      "BQ": "NA",
+      "CL": "2026-12-05"
     }
   },
-  "2475.HK": {
+  "1187.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 5,
-        "page": 53,
-        "quote": ". RISKS RELATING TO THE GLOBAL OFFERING Our A Shares are listed on the Shenzhen Stock Exchange, and the characteristics of the A Share and H Share markets",
-        "source": "prospectus"
-      },
-      "col_AS": "Main Board of the Stock Exchange — H Shares of a PRC issuer (Chapter 19A)",
-      "incorporation": "uxshare Precision Industry Co., Ltd. (a joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code : 2475 GLOBAL OFFERING J",
-      "unlock": "上市日 2026-07-09 + 6 个月"
+      "col_AS": "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-06 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
@@ -61,43 +59,207 @@
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2027-01-09"
+      "BQ": "NA",
+      "CL": "2026-11-06"
     }
   },
-  "2493.HK": {
+  "1191.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 8,
-        "page": 10,
-        "quote": "rom drug discovery to commercial sales. The A Shares of our Company have been listed on the Shanghai Stock Exchange STAR Market (stock code: 688062) since January 2022. We hav",
-        "source": "prospectus"
-      },
+      "col_AS": "Main Board — Rule 8.05(3) market capitalisation/revenue test",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-29"
+    }
+  },
+  "1236.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange (Rule 8.05(3) market capitalisation/revenue test); PRC issuer H Shares",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-11 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-11"
+    }
+  },
+  "1392.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange - market capitalisation/revenue test under Rule 8.05(3)",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "1511.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18C of the Listing Rules",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-20 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "2026-11-20"
+    }
+  },
+  "1609.HK": {
+    "evidence": {
+      "col_AS": "Main Board",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-05 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-05"
+    }
+  },
+  "1688.HK": {
+    "evidence": {
+      "col_AS": "Main Board - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-26 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-26"
+    }
+  },
+  "1779.HK": {
+    "evidence": {
       "col_AS": "Chapter 18A of the Listing Rules (Main Board)",
-      "incorporation": "Stock Code : 2493 (A joint stock company incorporated in the People’s Republic of China with limited liability) 邁威（上海）生物科技股份有限公司 Mabwell (Shanghai)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-05 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-05"
+    }
+  },
+  "1879.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company - Pre-Commercial Company)",
+      "incorporation": "缺页级文本",
       "unlock": "上市日 2026-04-28 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "1",
+      "BJ": "0",
       "BK": "0",
-      "BL": "1",
-      "BM": "0",
-      "BQ": "PRC",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
       "CL": "2026-10-28"
     }
   },
-  "2701.HK": {
+  "1956.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 9,
-        "page": 24,
-        "quote": "LISTING ON THE HONG KONG STOCK EXCHANGE Our A Shares are currently listed on the ChiNext Market of the Shenzhen Stock Exchange. We are seeking a listing of our H Shares on the Hong Kong ",
-        "source": "prospectus"
-      },
-      "col_AS": "Main Board under Rule 8.05(3) of the Listing Rules (market capitalization/revenue test)",
-      "incorporation": "Stock Code : 2701 (A joint stock company incorporated in the People’s Republic of China with limited liability) GLOBAL OFFERING 國民技術股份有限公司 NSING TE",
-      "unlock": "上市日 2026-03-23 + 6 个月"
+      "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-26 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "2026-12-26"
+    }
+  },
+  "2272.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange (H Shares of a PRC issuer, Chapter 19A)",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "2290.HK": {
+    "evidence": {
+      "col_AS": "Main Board",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "2335.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-24 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-24"
+    }
+  },
+  "2476.HK": {
+    "evidence": {
+      "col_AS": "Main Board - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-21 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
@@ -105,43 +267,159 @@
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2026-09-23"
+      "BQ": "NA",
+      "CL": "2026-10-21"
+    }
+  },
+  "2493.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules (Main Board)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-28 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-10-28"
+    }
+  },
+  "2553.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange — market capitalisation/revenue test under Rule 8.05(3) of the Listing Rules (Chapter 8)",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "2672.HK": {
+    "evidence": {
+      "col_AS": "Main Board — Rule 8.05(3) market capitalisation/revenue test (Chapter 8)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-29"
+    }
+  },
+  "2697.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules (biotechnology company)",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "2723.HK": {
+    "evidence": {
+      "col_AS": "Main Board - Rule 8.05(2) market capitalisation/revenue/cash flow test",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "3277.HK": {
+    "evidence": {
+      "col_AS": "Main Board",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-17 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-10-17"
     }
   },
   "3296.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 9,
-        "page": 24,
-        "quote": "NGHAI STOCK EXCHANGE Since August 2023, our Company’s A Shares have been listed on the main board of Shanghai Stock Exchange. Our Directors confirmed that, since its listing on the Sha",
-        "source": "prospectus"
-      },
       "col_AS": "Main Board of the Hong Kong Stock Exchange as a PRC issuer (Chapter 19A of the Listing Rules)",
-      "incorporation": "Joint Lead Managers Stock Code: 3296 (A joint stock company incorporated in the People's Republic of China with limited liability) IMPORTANT: If you are in any doubt ",
+      "incorporation": "缺页级文本",
       "unlock": "上市日 2026-04-23 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "1",
+      "BJ": "0",
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
+      "BQ": "NA",
       "CL": "2026-10-23"
     }
   },
-  "6693.HK": {
+  "3310.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 4,
-        "page": 44,
-        "quote": "headquarters in Beijing; (iii) as our Group’s A shares are listed on the SSE, (a) our principal books and records are located and mainta",
-        "source": "prospectus"
-      },
-      "col_AS": "Chapter 18 of the Listing Rules (mineral company)",
-      "incorporation": " Bookrunners and Joint Lead Managers (A joint stock company incorporated in the People’s Republic of China with limited liability) 赤峰吉隆黃金礦業股份有限公司 Chifeng Jilong Gold ",
-      "unlock": "上市日 2025-03-10 + 6 个月"
+      "col_AS": "Main Board - Rule 8.05(3) market capitalization/revenue test",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-27 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-27"
+    }
+  },
+  "3388.HK": {
+    "evidence": {
+      "col_AS": "Main Board - Rule 8.05(3) market capitalisation/revenue test",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-29"
+    }
+  },
+  "3661.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19A (PRC issuer with other listed shares), Main Board",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-26 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
@@ -149,65 +427,271 @@
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2025-09-10"
+      "BQ": "NA",
+      "CL": "2026-12-26"
     }
   },
-  "6951.HK": {
+  "3952.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 10,
-        "page": 26,
-        "quote": "ENZHEN STOCK EXCHANGE In December 2014, the A Shares of the Company were listed on the ChiNext of the Shenzhen Stock Exchange (stock code: 300408.SZ) (the “A-Share Listing”). The Compan",
-        "source": "prospectus"
-      },
+      "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-30 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "2026-12-30"
+    }
+  },
+  "6067.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-23 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-23"
+    }
+  },
+  "6106.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange under Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-24 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "2026-12-24"
+    }
+  },
+  "6132.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules (Main Board)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-23 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-23"
+    }
+  },
+  "6228.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19C secondary listing; also Chapters 18 and 19B",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-26 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-26"
+    }
+  },
+  "6656.HK": {
+    "evidence": {
+      "col_AS": "Main Board - Rule 8.05(3) market capitalisation/revenue test",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-16 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-10-16"
+    }
+  },
+  "6658.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange — Chapter 19A of the Listing Rules (PRC issuer with H Shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-15 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-15"
+    }
+  },
+  "6675.HK": {
+    "evidence": {
+      "col_AS": "Chapter 19A of the Main Board Listing Rules (PRC H Share issuer, Main Board of the Stock Exchange)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-17 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-17"
+    }
+  },
+  "6715.HK": {
+    "evidence": {
       "col_AS": "Main Board",
-      "incorporation": "nt Bookrunner and Joint Lead Manager (A joint stock company incorporated in the People's Republic of China with limited liability) IMPORTANT: If you are in any doubt ",
-      "unlock": "上市日 2026-07-09 + 6 个月"
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-30 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "1",
+      "BJ": "0",
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2027-01-09"
+      "BQ": "NA",
+      "CL": "2026-12-30"
     }
   },
-  "9611.HK": {
+  "6810.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 4,
-        "page": 88,
-        "quote": "listing rules in the two jurisdictions. Our A Shares are listed on the Shanghai Stock Exchange, and the characteristics of the A share and H share markets",
-        "source": "prospectus"
-      },
-      "col_AS": "Main Board (Chapter 19A PRC issuer)",
-      "incorporation": "Stock Code : 9611 GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability) 上海龍旗科技股份有限公司 Shanghai Longcheer Tec",
-      "unlock": "上市日 2026-01-22 + 6 个月"
+      "col_AS": "Main Board — PRC issuer (Chapter 19A) with WVR structure (Chapter 8A); eligibility under Rule 8.05/8A.06",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-04-29 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
-      "BJ": "1",
-      "BK": "0",
+      "BJ": "0",
+      "BK": "1",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2026-07-22"
+      "BQ": "NA",
+      "CL": "2026-10-29"
     }
   },
-  "9980.HK": {
+  "6871.HK": {
     "evidence": {
-      "a_plus_h": {
-        "hits": 4,
-        "page": 74,
-        "quote": ". RISKS RELATING TO THE GLOBAL OFFERING Our A Shares are listed on the Shanghai Stock Exchange, and the characteristics of the A Share and H Share markets",
-        "source": "prospectus"
-      },
-      "col_AS": "Main Board (Chapter 19A PRC issuer)",
-      "incorporation": "age (Group) Co., Ltd. 東鵬飲料（集團）股份有限公司 (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code : 09980 Joint Sponsors, ",
-      "unlock": "上市日 2026-02-03 + 6 个月"
+      "col_AS": "Chapter 18C",
+      "incorporation": "缺页级文本",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "NA"
+    }
+  },
+  "6872.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-22 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-22"
+    }
+  },
+  "6915.HK": {
+    "evidence": {
+      "col_AS": "Main Board profit test under Rule 8.05(1) of the Listing Rules; H Share issuer under Chapter 19A",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-30 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-30"
+    }
+  },
+  "7630.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules (Main Board biotech listing)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-13 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-13"
+    }
+  },
+  "7666.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company; Pre-Commercial Company)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-13 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "NA",
+      "CL": "2026-11-13"
+    }
+  },
+  "7688.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange, Rule 8.05(3) market capitalisation/revenue test",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-05-20 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-11-20"
+    }
+  },
+  "9630.HK": {
+    "evidence": {
+      "col_AS": "Main Board of the Stock Exchange - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-26 + 6 个月"
     },
     "values": {
       "BH": "Main Board",
@@ -215,8 +699,24 @@
       "BK": "0",
       "BL": "0",
       "BM": "0",
-      "BQ": "PRC",
-      "CL": "2026-08-03"
+      "BQ": "NA",
+      "CL": "2026-12-26"
+    }
+  },
+  "9637.HK": {
+    "evidence": {
+      "col_AS": "Chapter 18A of the Listing Rules (biotech company)",
+      "incorporation": "缺页级文本",
+      "unlock": "上市日 2026-06-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "1",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2026-12-29"
     }
   }
 }

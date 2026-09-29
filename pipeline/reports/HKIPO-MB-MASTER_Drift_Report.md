@@ -1,9 +1,8 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-29 21:40:50 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-29 22:44:10 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
-- **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
 
 ## 1. 表头跨 cohort 对齐：✅ 通过
 
@@ -64,7 +63,6 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 100.0% | 71.1% | 100.0% |
 | `Key Pre-IPO investors` | 66.7% | 74.1% | 73.7% | 84.4% | 78.3% |
 | `Pre-IPO institutional shareholding (%)` | 66.7% | 55.6% | 100.0% | 82.2% | 100.0% |
-| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 100.0% | 100.0% |
 | `Earliest Pre-IPO investment round` | 53.3% | 74.1% | 73.7% | 84.4% | 73.9% |
 | `Pre-IPO holding duration (years)` | 53.3% | 55.6% | 100.0% | 80.0% | 69.6% |
 | `Controller economic interest at listing (%)` | 93.3% | 100.0% | 100.0% | 97.8% | 100.0% |
@@ -72,7 +70,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Interest-bearing debt at year-1 end` | 86.7% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Technology commercialization stage` | 53.3% | 51.9% | 100.0% | 84.4% | 91.3% |
 | `Debt repayment (% of planned net IPO proceeds)` | 100.0% | 92.6% | 100.0% | 95.6% | 100.0% |
-| `Place of incorporation` | 100.0% | 88.9% | 100.0% | 97.8% | 100.0% |
+| `Place of incorporation` | 100.0% | 88.9% | 100.0% | 0.0% | 100.0% |
 | `Financial statement unit multiplier` | 53.3% | 92.6% | 100.0% | 91.1% | 39.1% |
 | `Year-1 net sales (original, pre-annualization)` | 86.7% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `Year-1 profit before tax (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
@@ -83,7 +81,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Audit opinion (year-1)` | 93.3% | 100.0% | 100.0% | 95.6% | 100.0% |
 | `Listing expenses (HK$)` | 100.0% | 100.0% | 100.0% | 100.0% | 95.7% |
 | `Cornerstone investor names` | 73.3% | 92.6% | 89.5% | 82.2% | 73.9% |
-| `Earliest cornerstone unlock date (dd/mm/yy)` | 73.3% | 92.6% | 89.5% | 100.0% | 73.9% |
+| `Earliest cornerstone unlock date (dd/mm/yy)` | 73.3% | 92.6% | 89.5% | 82.2% | 73.9% |
 | `Pricing date` | 93.3% | 59.3% | 73.7% | 42.2% | 52.2% |
 | `Over-allotment shares actually issued` | 100.0% | 100.0% | 100.0% | 100.0% | 78.3% |
 | `Actual clawback / reallocation description` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
@@ -91,7 +89,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Unrestricted public shareholding at listing (%)` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Free float denominator description` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Free float denominator shares` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
-| `Offer mechanism` | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
+| `Offer mechanism` | 100.0% | 100.0% | 100.0% | 93.3% | 100.0% |
 | `Company Chinese Name` | 100.0% | 88.9% | 97.4% | 97.8% | 95.7% |
 | `1-month post-IPO close price (HK$)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
 | `1-month BHR from Day-1 close (%)` | 100.0% | 100.0% | 97.4% | 100.0% | 78.3% |
@@ -146,8 +144,8 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Pre-IPO institutional shareholding (%)` | 82.2% | 100.0% | +17.8pp |
 | `Earliest Pre-IPO investment round` | 84.4% | 73.9% | -10.5pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 69.6% | -10.4pp |
+| `Place of incorporation` | 0.0% | 100.0% | +100.0pp |
 | `Financial statement unit multiplier` | 91.1% | 39.1% | -52.0pp |
-| `Earliest cornerstone unlock date (dd/mm/yy)` | 100.0% | 73.9% | -26.1pp |
 | `Pricing date` | 42.2% | 52.2% | +10.0pp |
 | `Over-allotment shares actually issued` | 100.0% | 78.3% | -21.7pp |
 | `1-month post-IPO close price (HK$)` | 100.0% | 78.3% | -21.7pp |
@@ -170,11 +168,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 
 ### 5.2 布尔列空值警告（约定：0/1 不得留空）
 
-| 布尔列 | 2025Q1 | 2025Q2 | 2026Q1 | 2026Q2 | 2026Q3 |
-|---|---|---|---|---|---|
-| `Pre-IPO investor board seat (1=yes; 0=no)` | 93.3% | 37.0% | 100.0% | 100.0% | 100.0% |
-
-处置：确认「确无」后补 0（或按手册填 NA），重跑 export 与 master。
+全部布尔列在所有 cohort 均为 0/1 填报，无空值。
 
 ## 6. 股数恒等式校验（警告级，容差 ±1 股）
 
