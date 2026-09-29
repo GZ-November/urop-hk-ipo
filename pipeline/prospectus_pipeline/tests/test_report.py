@@ -43,7 +43,7 @@ class ReportTests(unittest.TestCase):
             self.assertGreater(stats["cornerstone_coverage_pct"], 0.8)  # > 80% coverage
             self.assertEqual(stats["pathways"]["ch18c_specialist_tech"], 6)
             self.assertEqual(stats["pathways"]["ch18a_biotech"], 3)
-            self.assertEqual(stats["pathways"]["ah_dual_listing"], 12)
+            self.assertEqual(stats["pathways"]["ah_dual_listing"], 15)  # 含招股书兜底的 2701、9611、9980
 
             # Verify markdown report exists and has substantial content
             self.assertTrue(out_md.exists())

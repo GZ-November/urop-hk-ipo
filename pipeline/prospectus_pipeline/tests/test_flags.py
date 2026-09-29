@@ -1,6 +1,8 @@
 """tools/external/flags.py 的上市途径文本 → 法定标记推导。"""
 import importlib.util
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -66,6 +68,96 @@ class APlusHFlagTests(unittest.TestCase):
     def test_cites_chapter_still_ignores_negation(self):
         self.assertFalse(flags.cites_chapter("Main Board standard listing (not Chapter 18C / 18A)", "18C"))
         self.assertTrue(flags.cites_chapter("Chapter 18C of the Listing Rules", "18C"))
+
+
+class AShareListingStatementTests(unittest.TestCase):
+    """招股书全文兜底：col_AS 未提及 A 股时，扫发行人自述的 A 股上市句。"""
+
+    def scan(self, *pages):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "HKIPO-MB1234.jsonl"
+            path.write_text(
+                "".join(json.dumps({"page": i, "text": t}) + "\n" for i, t in enumerate(pages, 1)),
+                encoding="utf-8",
+            )
+            return flags.a_share_listing_statement("1234.HK", Path(tmp))
+
+    def test_issuer_statements_seen_in_prospectuses(self):
+        # 2025–2026 cohort 招股书原句（1276、2865、2701、3296、2493、0537、6951、2249、6693）
+        for text in [
+            "RISK FACTORS Our A Shares are listed on the Shanghai Stock Exchange, and the characteristics may differ",
+            "Our A Shares are listed and traded on the Shanghai Stock Exchange",
+            "we completed our initial public offering of 30,000,000 A Shares, and our A Shares became "
+            "listed on the Shenzhen Stock Exchange (stock code: 002865)",
+            "Our A Shares are currently listed on the ChiNext Market of the Shenzhen Stock Exchange",
+            "Since August 2023, our Company’s A Shares have been listed on the main board of Shanghai Stock Exchange",
+            "The A Shares of our Company have been listed on the Shanghai Stock Exchange STAR Market (stock code: 688062)",
+            "Since April 8, 2022, our A Shares have been listed on the Shanghai Stock Exchange’s STAR Market",
+            "In December 2014, the A Shares of the Company were listed on the ChiNext of the Shenzhen Stock Exchange",
+            "Our A Shares are listed on the STAR Market of the Shanghai Stock Exchange",
+            "Our A Shares were listed and traded on the Shanghai Stock Exchange in 2004",
+            "as our Group’s A shares are listed on the SSE, our principal books are kept in the PRC",
+        ]:
+            with self.subTest(text=text):
+                hit = self.scan("cover page", text)
+                self.assertIsNotNone(hit)
+                self.assertEqual(hit["page"], 2)
+                self.assertEqual(hit["hits"], 1)
+                self.assertIn("A", hit["quote"])
+
+    def test_statements_about_other_companies_or_share_classes_are_ignored(self):
+        for text in [
+            # 控股股东 / 可比公司 / 定义条目里别家公司的 A 股
+            "Our Controlling Shareholder’s A Shares are listed on the Shanghai Stock Exchange",
+            "XYZ Group, a company the A Shares of which are listed on the Shenzhen Stock Exchange",
+            "Comparable companies whose A Shares are listed on the Shanghai Stock Exchange include ABC",
+            "the A Shares of our parent company are listed on the Shanghai Stock Exchange",
+            # 同股不同权 / 融资轮次（6810、0625、6658）
+            "each Class A Share shall entitle the holder to exercise ten votes",
+            "our Class A Shares are listed on no exchange; the Class B Shares will be listed on the Stock Exchange",
+            "Beijing Sequoia subscribed for Series A Shares at a consideration of RMB135,000,000",
+            # A 股在香港以外、非 A 股交易所
+            "Our H Shares are listed on the Stock Exchange",
+        ]:
+            with self.subTest(text=text):
+                self.assertIsNone(self.scan(text))
+
+    def test_negated_and_hypothetical_statements_are_ignored(self):
+        for text in [
+            "Our A Shares are not listed on any stock exchange",
+            "our A Shares have not been listed on the Shanghai Stock Exchange",
+            "There is no assurance that our A Shares are listed on the STAR Market of the Shanghai Stock Exchange",
+            "If our A Shares are listed on the Shanghai Stock Exchange, we will be subject to dual regulation",
+            "after our A Shares are listed on the STAR Market of the Shanghai Stock Exchange, prices may diverge",
+            "Our A Shares will be listed on the Shenzhen Stock Exchange upon approval",
+            "we propose that our A Shares be listed on the Beijing Stock Exchange",
+        ]:
+            with self.subTest(text=text):
+                self.assertIsNone(self.scan(text))
+
+    def test_first_affirmative_page_is_recorded_and_all_hits_counted(self):
+        hit = self.scan(
+            "If our A Shares are listed on the Shanghai Stock Exchange, ...",
+            "nothing here",
+            "Our A Shares are listed on the Shanghai Stock Exchange",
+            "Our A Shares are listed and traded on the Shanghai Stock Exchange",
+        )
+        self.assertEqual(hit["page"], 3)
+        self.assertEqual(hit["hits"], 2)
+
+    def test_missing_text_is_reported(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertEqual(flags.a_share_listing_statement("1234.HK", Path(tmp)), {"missing_text": True})
+
+
+class CellStrTests(unittest.TestCase):
+    def test_workbook_values_normalise_to_derived_strings(self):
+        import datetime as dt
+        self.assertEqual(flags.cell_str(1), "1")
+        self.assertEqual(flags.cell_str(0.0), "0")
+        self.assertEqual(flags.cell_str(dt.datetime(2026, 3, 1)), "2026-03-01")
+        self.assertEqual(flags.cell_str("NA"), "NA")
+        self.assertEqual(flags.cell_str(None), "")
 
 
 if __name__ == "__main__":
