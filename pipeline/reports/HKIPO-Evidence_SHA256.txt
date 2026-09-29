@@ -1,12 +1,12 @@
 # HK IPO 研究数据 SHA-256 证据清单
-# 生成时间: 2026-09-29T23:59:38
+# 生成时间: 2026-09-30T00:08:34
 # 文件数: 25
 # 复现命令: python3 run.py evidence
 #
 # 用途: cohort 关闭后冻结凭证快照并纳入版本控制；
 #       之后工件一旦被改动，哈希即失配，用于保证数据可追溯到采集时点。
-4920f2c026e6b2939afb6202f2a756958ff1d7101514d19be4e7c23d7c99de96  codebooks/HKIPO_2025Q1_Codebook.md
-51d5c84753a66dfde2eb95fb0b04f0603782ae68745c405734ae317f68a4c680  codebooks/HKIPO_2025Q2_Codebook.md
+d6a25496e1d816681b7d6ab0c328cd202509ce0d831db380e5d3a5b20fa88ac2  codebooks/HKIPO_2025Q1_Codebook.md
+712e2e72fa3ba73dd48746e3d4b318b38e671bc3dd89761382352f20a6af7fbc  codebooks/HKIPO_2025Q2_Codebook.md
 bd847d358fbea29b19089791f128e1b8a1fa5f18452890e146b47b27d4d20f86  codebooks/HKIPO_2026Q1_Codebook.md
 af490ede943799d41e7d4865c7c6100308e4bd0011393e6f2a0f16d8cb54763e  codebooks/HKIPO_2026Q2_Codebook.md
 a2cb94b0849081903b48db1162f1c0788e1b470d6749b626ebbcbf73d7474a8d  codebooks/HKIPO_2026Q3_Codebook.md
@@ -24,7 +24,7 @@ ec17f5add5927d35eb4c97be91338117474d913c7df3c0008c686f9aedb1bc82  exports/HKIPO-
 3c2dbdbbedf8d99e982036578103505a3bbab5a41f82c04329c44e5922b52303  exports/HKIPO-MB2026Q2_clean.csv
 f04aabbd70af037267fb7a3ebe8e32be093de2c289a98c5d9a4100548202d7f4  exports/HKIPO-MB2026Q3_clean.csv
 09583cb5b566ccbc9b5982b7274774121be8c0daeb96bb64c25dfeb75595b789  registry/HKIPO_Variable_Registry.yaml
-ddf01a3d91a148ea802702e344faa26866877ef5b93d45b386447b0520a896da  reports/HKIPO-MB-MASTER_Drift_Report.md
+2c89636d25e05b6498e83548ee87b77d590802e4cc15e3f1c37eeb157c532236  reports/HKIPO-MB-MASTER_Drift_Report.md
 6ffa3af01a9448cba8a6cb65499546e37178206cc08e7d293e5c3193432b70cc  reports/HKIPO_2025Q1_Exclusions.md
 e89e12fbc6b2b8750a1acc5f9231a85b73857ad1fea740e2bab379fb1a68ffc2  reports/HKIPO_2025Q2_Exclusions.md
 74dd5b5c8379bcaca12be706412f32db5cf9804650611a77598e516ac125e4ec  reports/HKIPO_2026Q1_Exclusions.md
