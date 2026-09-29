@@ -52,20 +52,19 @@ pip install -r requirements.txt
    make test
    # Or directly:
    python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
+   ```
 
-
-## Pre-push 钩子（推荐）
-
-推送前自动跑测试套件，挡住带失败测试的提交：
-
-```bash
-git config core.hooksPath .githooks
-```
+   Optional pre-push hook (blocks a push when the suite fails; `--no-verify` skips it):
+   ```bash
+   git config core.hooksPath .githooks
    ```
 
 3. **Check Code Quality**:
    - Format according to `.editorconfig` (4-space indent, UTF-8, LF).
    - Ensure all public functions and CLI subcommands have informative docstrings and type hints.
+   - Run `make lint` (needs `pip install flake8`): it compiles every module and rejects unused imports,
+     undefined names, redefinitions and placeholder-less f-strings — the same check CI runs.
+     If an import is a deliberate re-export, mark it `# noqa: F401`.
 
 4. **Verify Pipeline State**:
    ```bash
@@ -74,13 +73,13 @@ git config core.hooksPath .githooks
 
 5. **Submit a Pull Request**:
    - Open a PR against `main`.
-   - Ensure CI tests pass across all Python versions.
+   - Ensure CI passes (lint, tests, registry check).
 
 ---
 
 ## 4. Adding New Listing Rules or Fields
 
 - **To add new Listing Rules cross-checks**:
-  Modify [`src/cross_check.py`](file:///pipeline/prospectus_pipeline/src/cross_check.py) and add corresponding unit test cases in [`tests/test_cross_check.py`](file:///pipeline/prospectus_pipeline/tests/test_cross_check.py).
+  Modify [`src/cross_check.py`](pipeline/prospectus_pipeline/src/cross_check.py) and add corresponding unit test cases in [`tests/test_cross_check.py`](pipeline/prospectus_pipeline/tests/test_cross_check.py).
 - **To update field schemas**:
-  Update [`schema/fields.json`](file:///pipeline/prospectus_pipeline/schema/fields.json) or [`schema/allot_fields.json`](file:///pipeline/prospectus_pipeline/schema/allot_fields.json).
+  Update [`schema/fields.json`](pipeline/prospectus_pipeline/schema/fields.json) or [`schema/allot_fields.json`](pipeline/prospectus_pipeline/schema/allot_fields.json).

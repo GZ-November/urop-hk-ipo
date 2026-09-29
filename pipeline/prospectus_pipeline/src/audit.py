@@ -16,8 +16,6 @@ import argparse
 import datetime as dt
 import json
 import math
-import os
-import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -28,9 +26,9 @@ ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
-from contracts import is_missing, normalize_code, strict_load_file  # noqa: E402
+from contracts import normalize_code, strict_load_file  # noqa: E402
 from cohort import load_cfg, read_companies  # noqa: E402
-from state import read_record, state_dir  # noqa: E402
+from state import read_record  # noqa: E402
 from storage import official_files  # noqa: E402
 from workbook_reader import norm_header, resolve_columns  # noqa: E402
 from write_back import parse_date  # noqa: E402

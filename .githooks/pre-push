@@ -1,9 +1,14 @@
 #!/bin/bash
 # pre-push: 阻止带着失败测试的提交被推送（--no-verify 可跳过）
 echo "pre-push: 运行测试套件（约 20s）..."
-if ! python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" 2>&1 | tail -3; then
+log=$(mktemp)
+trap 'rm -f "$log"' EXIT
+# 直接判断 unittest 自身的退出码；经管道会变成 tail 的退出码，从而永远放行
+if ! python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" >"$log" 2>&1; then
+    tail -20 "$log"
     echo ""
     echo "❌ 测试未全过，推送已阻止。确要推送请用: git push --no-verify"
     exit 1
 fi
+tail -3 "$log"
 echo "✅ 测试全过，允许推送"

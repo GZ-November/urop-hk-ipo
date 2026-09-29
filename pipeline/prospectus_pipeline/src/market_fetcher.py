@@ -16,14 +16,12 @@ from __future__ import annotations
 import datetime as dt
 import json
 import logging
-import math
 import time
 import urllib.parse
 import urllib.request
 import urllib.error
 from abc import ABC, abstractmethod
-from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 logger = logging.getLogger("market_fetcher")
 
@@ -53,7 +51,6 @@ class MarketDataProvider(ABC):
     @abstractmethod
     def normalize_symbol(self, code_or_symbol: str) -> str:
         """规范化标的代码。"""
-        pass
 
     @abstractmethod
     def fetch_bars(
@@ -76,7 +73,6 @@ class MarketDataProvider(ABC):
           - turnover: Optional[float] (港元，若无则为 None)
           - turnover_estimated: bool
         """
-        pass
 
 
 class TencentProvider(MarketDataProvider):

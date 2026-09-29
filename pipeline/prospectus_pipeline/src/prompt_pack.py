@@ -19,7 +19,6 @@
 """
 from __future__ import annotations
 
-from pathlib import Path
 
 # ---------------------------------------------------------------------------- #
 # 手册硬规则（与 workflows/prospectus_extract.js 的口径保持一致；改动需同步）

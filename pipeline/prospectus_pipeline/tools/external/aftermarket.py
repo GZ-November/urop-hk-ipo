@@ -17,10 +17,8 @@ import argparse
 import calendar
 import datetime as dt
 import json
-import shutil
 import sys
 import time
-import urllib.request
 from pathlib import Path
 from typing import Any
 

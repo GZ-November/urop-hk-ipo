@@ -20,7 +20,6 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
-import json
 import sys
 import time
 from pathlib import Path
@@ -136,7 +135,7 @@ def main() -> int:
     print(f"\n已写出 {len(data)} 条 -> {out}")
     print(f"  区间 {data[0][0]} ~ {data[-1][0]}")
     print(f"  样例 HIBOR 1M = {data[0][1]}%（{data[0][0]}）  总结余 = {data[0][2]} 百万港元")
-    print(f"\n下一步：python3 prospectus_pipeline/tools/external/hkma_import.py --book <workbook>")
+    print("\n下一步：python3 prospectus_pipeline/tools/external/hkma_import.py --book <workbook>")
     return 0
 
 

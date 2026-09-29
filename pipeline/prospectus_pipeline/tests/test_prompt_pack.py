@@ -7,7 +7,6 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from prompt_pack import (  # noqa: E402
-    MANUAL_RULES,
     build_prompt,
     shared_prefix,
 )

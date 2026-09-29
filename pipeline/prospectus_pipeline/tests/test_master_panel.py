@@ -14,7 +14,6 @@ from master_panel import (
     DERIVED_OPS,
     DERIVED_SPECS,
     check_registry_consistency,
-    MASTER_STEM,
     build_master,
     build_registry,
     column_letter,

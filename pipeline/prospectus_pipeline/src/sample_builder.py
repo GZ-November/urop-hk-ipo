@@ -334,9 +334,9 @@ def build_master_sample(start_year: int = 2021, end_year: int = 2026) -> tuple[l
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     all_cands, inc_sample = build_master_sample(2021, 2026)
-    print(f"\n=======================================================")
-    print(f"HK IPO Master Sample Construction Complete (2021-2026)")
-    print(f"=======================================================")
+    print("\n=======================================================")
+    print("HK IPO Master Sample Construction Complete (2021-2026)")
+    print("=======================================================")
     print(f"Total Candidate Filings Screened : {len(all_cands)}")
     print(f"Included Ordinary IPO Issuers    : {len(inc_sample)}")
     print(f"Excluded Filings (GEM/SPAC/Intro): {len(all_cands) - len(inc_sample)}")

@@ -35,7 +35,6 @@ from master_panel import (  # noqa: E402
     load_registry,
 )
 from paths import (  # noqa: E402
-    MASTER_STEM,
     master_csv_path as layout_master_csv,
     registry_path as layout_registry_path,
 )

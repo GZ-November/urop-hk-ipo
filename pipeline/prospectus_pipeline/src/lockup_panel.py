@@ -25,7 +25,6 @@ import logging
 from pathlib import Path
 from typing import Any, Optional
 
-import openpyxl
 
 logger = logging.getLogger("lockup_panel")
 

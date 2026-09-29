@@ -21,7 +21,6 @@ from pathlib import Path
 from typing import Any
 
 import openpyxl
-from openpyxl.utils import column_index_from_string
 
 ROOT = Path(__file__).resolve().parent.parent
 WS = ROOT.parent
@@ -528,9 +527,9 @@ def main():
     print("=" * 70)
     print(f"100% 完美达标公司: {report['clean_companies']} / {report['total_companies']}")
     print(f"异常或业务预警项: {report['total_anomalies']} 项")
-    print(f"报告已输出至:")
-    print(f"  - out/cross_check_report.json")
-    print(f"  - out/cross_check_report.md\n")
+    print("报告已输出至:")
+    print("  - out/cross_check_report.json")
+    print("  - out/cross_check_report.md\n")
 
     error_count = 0
     warn_count = 0

@@ -5,7 +5,6 @@ import unittest
 from pathlib import Path
 
 from table_parser import (
-    extract_all_tables_for_pdf,
     extract_cornerstone_table,
     extract_share_capital_table,
     format_markdown_table,

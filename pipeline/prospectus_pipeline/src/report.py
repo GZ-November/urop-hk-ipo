@@ -11,7 +11,6 @@
 """
 from __future__ import annotations
 
-import argparse
 import datetime as dt
 import json
 import sys
@@ -344,7 +343,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         "\n## 四、基石投资与资本绑定",
         f"\n- **基石投资者覆盖率**：**{len(with_cornerstone)} / {n_companies} 家 ({len(with_cornerstone)/n_companies*100:.1f}%)** 的 IPO 引入了基石投资者；",
         f"- **基石平均获配比例**：基石获配股份平均占基础发售总规模的 **{avg_cornerstone_stake*100:.2f}%**；",
-        f"- **禁售期合规**：所有引入基石投资者的公司，最早解禁期均严格满足 **6 个月**法定禁售要求（与 2025 年 8 月港交所定价改革一致）。",
+        "- **禁售期合规**：所有引入基石投资者的公司，最早解禁期均严格满足 **6 个月**法定禁售要求（与 2025 年 8 月港交所定价改革一致）。",
         "\n---",
         "\n## 五、二级市场首日行情表现",
         f"\n- **首日平均涨跌幅**：**{avg_first_return*100:+.2f}%**；",
@@ -381,7 +380,7 @@ def print_summary(stats: dict) -> None:
     print(f"首日行情平均回报: {stats['avg_first_day_return']*100:+.2f}% (上涨: {stats['first_day_winners']} 家, 破发率: {stats['break_rate']*100:.1f}%)")
     print(f"特色上市通道:     18C 特专科技 {stats['pathways']['ch18c_specialist_tech']} 家 | 18A 生物科技 {stats['pathways']['ch18a_biotech']} 家 | A+H {stats['pathways']['ah_dual_listing']} 家")
     print("-" * 70)
-    print(f"完整 Markdown 汇报材料已生成至:")
+    print("完整 Markdown 汇报材料已生成至:")
     print(f"  {stats['report_md_path']}")
     print("=" * 70 + "\n")
 

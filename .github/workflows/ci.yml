@@ -31,7 +31,11 @@ jobs:
           python -m py_compile run.py
           find "pipeline/prospectus_pipeline/src" -name "*.py" -exec python -m py_compile {} +
           find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python -m py_compile {} +
-          find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python -m py_compile {} +
+
+      - name: Lint (unused imports, undefined names, redefinitions)
+        run: |
+          pip install flake8
+          python -m flake8 --select=F401,F811,F821,F541 --exclude=archive run.py analysis pipeline
 
       - name: Run automated test suite
         run: |
