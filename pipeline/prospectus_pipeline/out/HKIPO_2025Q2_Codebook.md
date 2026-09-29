@@ -3,7 +3,7 @@
 - **样本规模 (N)**：27 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-30 00:08:34 | **数据基准**：`HKIPO-MB2025Q2.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-30 00:14:26 | **数据基准**：`HKIPO-MB2025Q2.xlsx` (Sheet: NLR)
 
 ---
 
@@ -95,7 +95,7 @@
 | **BT** | `Debt repayment (% of planned net IPO proceeds)` | 计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (25/27 (92.59%)) | 均值 0.01 / 中位数 0.00 / 区间 [0.00, 0.20] |
 | **BU** | `Listing board` | 上市板块（Main Board 主板） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Main Board': 27) |
 | **BV** | `Share class` | 股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 14 种取值 ('H Shares': 7, 'Ordinary Shares': 5, 'Ordinary shares': 4) |
-| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 2 家 (7.4%), 0 (否): 25 家 |
+| **BW** | `A+H issuer flag` | A+H 两地上市发行人标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 6 家 (22.2%), 0 (否): 21 家 |
 | **BX** | `WVR flag` | 不同投票权/同股不同权架构标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 27 家 |
 | **BY** | `Chapter 18A flag` | 第 18A 章未盈利生物科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 4 家 (14.8%), 0 (否): 23 家 |
 | **BZ** | `Chapter 18C flag` | 第 18C 章特专科技公司标识（1=是，0=否） | 深蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 0 家 (0.0%), 0 (否): 27 家 |

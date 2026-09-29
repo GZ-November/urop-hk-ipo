@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-30 00:08:33"
+    "generated_at": "2026-09-30 00:14:24"
   },
   "variables": [
     {
@@ -1939,10 +1939,10 @@
         "valid_n": 15,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "true_count": 0,
-        "false_count": 15,
-        "true_pct": 0.0,
-        "summary_display": "1 (是): 0 家 (0.0%), 0 (否): 15 家"
+        "true_count": 1,
+        "false_count": 14,
+        "true_pct": 6.7,
+        "summary_display": "1 (是): 1 家 (6.7%), 0 (否): 14 家"
       }
     },
     {
