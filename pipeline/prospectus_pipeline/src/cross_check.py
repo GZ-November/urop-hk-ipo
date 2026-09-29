@@ -28,6 +28,7 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from cohort import load_cfg
+from regimes import REFORM_2025_DATE
 
 
 def parse_val(v: Any) -> Any:
@@ -50,9 +51,6 @@ def to_date_obj(v: Any) -> dt.date | None:
             except ValueError:
                 pass
     return None
-
-
-REFORM_2025_DATE = dt.date(2025, 8, 4)
 
 
 def mechanism_a_public_ratio(subscription_multiple: float, is_18c: bool = False, listing_date: dt.date | None = None) -> float:

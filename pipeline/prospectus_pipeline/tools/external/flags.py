@@ -3,7 +3,7 @@
 
 推导来源：
   BH Listing board            ← col_AS（上市途径）是否含 Main Board / GEM
-  BJ A+H issuer flag          ← col_AS 是否含 "A+H"
+  BJ A+H issuer flag          ← col_AS 是否肯定表明已有 A 股上市（A+H / other listed shares / A Shares …，见 is_a_plus_h）
   BK WVR flag                 ← col_AS 是否肯定援引 "Chapter 8A"（忽略否定式表述）
   BL Chapter 18A flag         ← col_AS 是否肯定援引 "Chapter 18A"（忽略否定式表述）
   BM Chapter 18C flag         ← col_AS 是否肯定援引 "Chapter 18C"（忽略否定式表述）
@@ -83,13 +83,47 @@ def cites_chapter(text: str, label: str) -> bool:
     （2025Q2 cohort 的 2605.HK、9678.HK 即因此被误标为 18C）。
     这里同时检查命中位置前后的否定词，命中否定式则跳过该处提及。
     """
-    for m in re.finditer(rf"Chapter\s+{label}", text, re.I):
+    return _affirmed(text, re.compile(rf"Chapter\s+{label}", re.I))
+
+
+def _affirmed(text: str, pattern: re.Pattern) -> bool:
+    """pattern 在 text 中至少有一处命中不处于否定语境（前后 NEGATION_* 均不触发）。"""
+    for m in pattern.finditer(text):
         before = text[max(0, m.start() - 60): m.start()]
         after = text[m.end(): m.end() + 40]
         if NEGATION_BEFORE.search(before) or NEGATION_AFTER.match(after):
             continue
+        if re.search(r"[非无未不]\s*$", before):
+            continue
         return True
     return False
+
+
+# 上市途径文本里 A+H 发行人的几种写法（2025–2026 cohort 实测）：
+#   "A+H dual listing ..." / "Chapter 19A PRC issuer (A+H)"
+#   "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)"
+#   "PRC issuer with A Shares listed on the Shenzhen Stock Exchange"
+#   "PRC joint stock company already listed on the SZSE main board"
+# 仅写 "Chapter 19A PRC issuer" / "H Share issuer" 的不算——19A 同样适用于
+# 只发 H 股、无 A 股的中国发行人。
+A_PLUS_H_PATTERNS = [
+    re.compile(r"\bA\s*\+\s*H\b"),
+    re.compile(r"\bother\s+listed\s+shares\b", re.I),
+    re.compile(r"(?<![\w.])A[-\s]?[Ss]hares?\b"),       # "A Shares"/"A-share"；大写 A 避开冠词 "a share"
+    re.compile(r"A\s*股"),
+    re.compile(r"\blisted\s+on\s+(?:the\s+)?(?:ChiNext|STAR\s+Market|SSE|SZSE|BSE|"
+               r"(?:Shanghai|Shenzhen|Beijing)\s+Stock\s+Exchange)\b", re.I),
+]
+
+
+def is_a_plus_h(text: str) -> bool:
+    """上市途径文本是否肯定地表明发行人已有 A 股上市（A+H）。
+
+    旧规则只认字面量 "A+H"，漏掉了 2026Q2/Q3 抽取统一写成的
+    "PRC issuer with other listed shares"（2476.HK、3308.HK 等 12 家）
+    以及 "with A Shares listed on the Shenzhen Stock Exchange"（1081.HK）。
+    """
+    return any(_affirmed(text, p) for p in A_PLUS_H_PATTERNS)
 
 
 def place_of_incorporation(code: str, text_dir: Path | None = None) -> tuple[str, str]:
@@ -200,7 +234,7 @@ def main() -> int:
             raise SystemExit(f"{code}: 缺抽取 JSON：{jf}")
         asv = str(json.loads(jf.read_text(encoding="utf-8"))["fields"]["col_AS"]["value"])
         board = "GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board"
-        a_plus_h = 1 if "A+H" in asv else 0
+        a_plus_h = 1 if is_a_plus_h(asv) else 0
         wvr = 1 if cites_chapter(asv, "8A") else 0
         c18a = 1 if cites_chapter(asv, "18A") else 0
         c18c = 1 if cites_chapter(asv, "18C") else 0
