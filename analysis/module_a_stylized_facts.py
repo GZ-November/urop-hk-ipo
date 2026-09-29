@@ -1,10 +1,11 @@
 """Module A — stylized facts for 2026 HK Main Board ordinary IPOs.
 
-Follows the descriptive layer of Lowry, Michaely & Volkova (2017), Ch. 3:
-distribution of initial returns, money left on the table, cuts by listing
-route and pricing position, a US benchmark comparison, and short-horizon
-aftermarket returns. 2025H1 (2025Q1-Q2) is shown alongside as the pre-reform
-comparison group.
+Descriptive layer: distribution of initial returns, money left on the table,
+cuts by listing quarter, route, pricing position and VC/PE backing, and
+short-horizon aftermarket returns. The tables stand on the 2026 sample alone;
+no external benchmark is used. Only 2026 listings (2026Q1-Q3) are used; every 2026 IPO
+falls under FINI and the 2025-08 pricing reform, so there is no in-sample
+pre-reform comparison group.
 
 Outputs (analysis/out/module_a/):
     table1_stylized_facts.md / .tex   Panels A-D
@@ -32,20 +33,6 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "pipeline" / "exports" / "HKIPO-MB-MASTER_clean.csv"
 OUT = ROOT / "analysis" / "out" / "module_a"
-
-# Lowry, Michaely & Volkova (2017), Tables 3.1, 3.3, 3.4 (US, 1973-2016).
-US_BENCH = {
-    "mean_ir": 0.173,
-    "ir_below_range": 0.039,
-    "ir_within_range": 0.122,
-    "ir_above_range": 0.502,
-    "vc_share": 0.352,
-    "ir_vc": 0.274,
-    "ir_nonvc": 0.119,
-    "age": 17.1,
-    "age_vc": 8.8,
-    "age_nonvc": 21.6,
-}
 
 # Chart palette: dataviz reference instance (light mode).
 INK, INK2, MUTED = "#0b0b0b", "#52514e", "#898781"
@@ -111,9 +98,9 @@ def load_panel(path: Path = MASTER) -> pd.DataFrame:
     return df
 
 
-def split_samples(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Return (2026 IPOs, 2025H1 comparison IPOs)."""
-    return df[df["cohort"].str.startswith("2026")], df[df["cohort"].str.startswith("2025")]
+def select_2026(df: pd.DataFrame) -> pd.DataFrame:
+    """Keep the 2026 cohorts (2026Q1-Q3)."""
+    return df[df["cohort"].str.startswith("2026")]
 
 
 # ---------------------------------------------------------------- stats
@@ -163,10 +150,9 @@ def fmt(row: str, v: float) -> str:
     return f"{v:,.1f}"
 
 
-def panel_a(y26: pd.DataFrame, y25: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+def panel_a(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
     cols = {q: summarize(g) for q, g in y26.groupby("cohort")}
     cols["2026 all"] = summarize(y26)
-    cols["2025H1 (comparison)"] = summarize(y25)
     tab = pd.DataFrame(cols)
     tab = tab.apply(lambda s: [fmt(r, v) for r, v in s.items()])
 
@@ -180,8 +166,6 @@ def panel_a(y26: pd.DataFrame, y25: pd.DataFrame) -> tuple[pd.DataFrame, list[st
         f"(p = {stats.kruskal(*quarters).pvalue:.3g}).",
         f"2026Q2 vs 2026Q3: Mann-Whitney p = {stats.mannwhitneyu(q2, q3).pvalue:.3g}; "
         f"Welch t p = {stats.ttest_ind(q2, q3, equal_var=False).pvalue:.3g}.",
-        f"2026 vs 2025H1: Mann-Whitney p = {stats.mannwhitneyu(ir, y25['ir'].dropna()).pvalue:.3g}; "
-        f"Welch t p = {stats.ttest_ind(ir, y25['ir'].dropna(), equal_var=False).pvalue:.3g}.",
     ]
     return tab, notes
 
@@ -211,18 +195,12 @@ def panel_b(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
         f"(p = {stats.kruskal(*groups).pvalue:.3g}).",
         "Routes are mutually exclusive in the order 18A > 18C > A+H > Conventional; WVR overlaps.",
         f"A+H is flag OR route text 'PRC issuer with other listed shares': {n_fixed} issuers "
-        "have the text but a 0 flag in the panel (pending fix).",
+        "have the text but a 0 flag in the panel.",
     ]
     return pd.DataFrame(rows).T, notes
 
 
 def panel_c(y26: pd.DataFrame) -> pd.DataFrame:
-    us = {
-        "At low": US_BENCH["ir_below_range"],
-        "Within range": US_BENCH["ir_within_range"],
-        "At high": US_BENCH["ir_above_range"],
-        "Fixed price": np.nan,
-    }
     rows = {}
     for p in PRICING_ORDER:
         g = y26[y26[C["pricing"]] == p]
@@ -231,28 +209,21 @@ def panel_c(y26: pd.DataFrame) -> pd.DataFrame:
             "Share of sample": f"{100 * len(g) / len(y26):.0f}%",
             "Mean IR": f"{100 * g['ir'].mean():.1f}%",
             "Median IR": f"{100 * g['ir'].median():.1f}%",
-            "US mean IR (LMV Table 3.3)": "—" if pd.isna(us[p]) else f"{100 * us[p]:.1f}%",
         }
     return pd.DataFrame(rows).T
 
 
-def panel_d(y26: pd.DataFrame) -> pd.DataFrame:
-    vc, nonvc = y26[y26[C["vc"]] == 1], y26[y26[C["vc"]] == 0]
-    b = US_BENCH
-    rows = [
-        ("Mean initial return", y26["ir"].mean(), b["mean_ir"], True),
-        ("Share VC/PE-backed", y26[C["vc"]].mean(), b["vc_share"], True),
-        ("Mean IR, VC/PE-backed", vc["ir"].mean(), b["ir_vc"], True),
-        ("Mean IR, not VC/PE-backed", nonvc["ir"].mean(), b["ir_nonvc"], True),
-        ("Mean firm age (years)", y26[C["age"]].mean(), b["age"], False),
-        ("Mean age, VC/PE-backed", vc[C["age"]].mean(), b["age_vc"], False),
-        ("Mean age, not VC/PE-backed", nonvc[C["age"]].mean(), b["age_nonvc"], False),
+def panel_d(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+    groups = {"VC/PE-backed": y26[y26[C["vc"]] == 1], "Not VC/PE-backed": y26[y26[C["vc"]] == 0]}
+    rows = {name: {k: v for k, v in route_stats(g).items() if k != "VC/PE-backed"} for name, g in groups.items()}
+    a, b = (g["ir"].dropna() for g in groups.values())
+    notes = [
+        f"IR, VC/PE-backed vs not: Mann-Whitney p = {stats.mannwhitneyu(a, b).pvalue:.3g}; "
+        f"Welch t p = {stats.ttest_ind(a, b, equal_var=False).pvalue:.3g}.",
+        "Backing counts any pre-IPO VC or PE investor. All 18A and 18C issuers are backed, so this split "
+        "overlaps with Panel B.",
     ]
-    f = lambda v, pct: f"{100 * v:.1f}%" if pct else f"{v:.1f}"
-    return pd.DataFrame(
-        {"HK 2026": [f(hk, p) for _, hk, _, p in rows], "US 1973-2016": [f(us, p) for _, _, us, p in rows]},
-        index=[r[0] for r in rows],
-    )
+    return pd.DataFrame(rows).T, notes
 
 
 def table2(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
@@ -270,13 +241,14 @@ def table2(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
             "Wilcoxon p (median = 0)": f"{stats.wilcoxon(bhr).pvalue:.3f}",
             "Median WR vs HSI": f"{g[wr_col].median():.3f}",
             "WR < 1": f"{100 * (g[wr_col] < 1).mean():.0f}%",
-            "Aggregate WR vs HSI (LMV)": "—" if pd.isna(agg_wr) else f"{agg_wr:.3f}",
+            "Aggregate WR vs HSI": "—" if pd.isna(agg_wr) else f"{agg_wr:.3f}",
         }
     notes = [
         "BHR is measured from the day-1 close, so it excludes the initial return.",
-        "Aggregate WR = (1 + mean IPO BHR) / (1 + mean HSI return) as in Lowry et al. (2017) Ch. 7; "
+        "Aggregate WR = (1 + mean IPO BHR) / (1 + mean HSI return) (ratio of mean IPO BHR to mean HSI return over the same horizon); "
         "shown only where the HSI horizon return is in the panel.",
-        "Horizons are unbalanced: 6-month returns cover 2026Q1 only. Event-time Wilcoxon p-values ignore "
+        "Horizons are unbalanced: longer horizons only cover issuers listed long enough ago (see N by quarter). "
+        "Event-time Wilcoxon p-values ignore "
         "calendar clustering (Mitchell & Stafford 2000) — treat them as descriptive.",
     ]
     return pd.DataFrame(rows).T, notes
@@ -308,16 +280,17 @@ def to_latex(df: pd.DataFrame, caption: str) -> str:
     return "\n".join(lines)
 
 
-def write_tables(y26: pd.DataFrame, y25: pd.DataFrame) -> None:
-    a, a_notes = panel_a(y26, y25)
+def write_tables(y26: pd.DataFrame) -> None:
+    a, a_notes = panel_a(y26)
     b, b_notes = panel_b(y26)
-    c, d = panel_c(y26), panel_d(y26)
+    c = panel_c(y26)
+    d, d_notes = panel_d(y26)
     t2, t2_notes = table2(y26)
 
     sample = (
         f"Sample: {len(y26)} HK Main Board ordinary IPOs listed "
-        f"{y26.listing_date.min():%d %b %Y} – {y26.listing_date.max():%d %b %Y}; "
-        f"comparison group 2025H1 (n = {len(y25)}). IR = day-1 close / offer price − 1."
+        f"{y26.listing_date.min():%d %b %Y} – {y26.listing_date.max():%d %b %Y}. "
+        "IR = day-1 close / offer price − 1."
     )
     bullet = lambda ns: "\n".join(f"- {n}" for n in ns)
     md1 = "\n\n".join([
@@ -326,9 +299,8 @@ def write_tables(y26: pd.DataFrame, y25: pd.DataFrame) -> None:
         "## Panel A. By listing quarter", to_markdown(a), bullet(a_notes),
         "## Panel B. By listing route (2026)", to_markdown(b, "Route"), bullet(b_notes),
         "## Panel C. By pricing position in the filing range (2026)", to_markdown(c, "Pricing"),
-        "- HK offers cannot price above the top of the range, so \"At high\" is compared with the US \"above range\" bucket.",
-        "## Panel D. HK 2026 vs US benchmark (Lowry, Michaely & Volkova 2017, Tables 3.1 and 3.4)", to_markdown(d),
-        "- HK backing counts any pre-IPO VC or PE investor; the US figure is VC only (SDC flag), so the HK share is an upper bound for a like-for-like comparison.",
+        "- Fixed-price offers have no filing range, so they are shown as their own group.",
+        "## Panel D. By pre-IPO VC/PE backing (2026)", to_markdown(d, "Backing"), bullet(d_notes),
     ]) + "\n"
     md2 = "\n\n".join([
         "# Table 2 — Short-horizon aftermarket returns, 2026 IPOs",
@@ -341,7 +313,7 @@ def write_tables(y26: pd.DataFrame, y25: pd.DataFrame) -> None:
         to_latex(a, "Table 1A. Stylized facts by listing quarter"),
         to_latex(b, "Table 1B. Initial returns by listing route, 2026"),
         to_latex(c, "Table 1C. Initial returns by pricing position, 2026"),
-        to_latex(d, "Table 1D. HK 2026 vs US 1973-2016"),
+        to_latex(d, "Table 1D. Initial returns by VC/PE backing, 2026"),
     ])
     (OUT / "table1_stylized_facts.tex").write_text(tex1 + "\n", encoding="utf-8")
     (OUT / "table2_aftermarket.tex").write_text(to_latex(t2, "Table 2. Short-horizon aftermarket returns, 2026") + "\n", encoding="utf-8")
@@ -419,7 +391,6 @@ def fig2_distribution(y26: pd.DataFrame) -> None:
     marks = [
         (ir.median(), f"Median {100 * ir.median():.0f}%", INK, "left", 0.95),
         (ir.mean(), f"Mean {100 * ir.mean():.0f}%", INK, "right", 0.95),
-        (US_BENCH["mean_ir"], "US mean 17%\n(1973–2016)", MUTED, "right", 0.62),
     ]
     for v, lab, col, side, h in marks:
         ax.axvline(v, color=col, lw=1.2, ls="--" if col == MUTED else "-")
@@ -462,12 +433,12 @@ def fig3_routes(y26: pd.DataFrame) -> None:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    y26, y25 = split_samples(load_panel())
-    write_tables(y26, y25)
+    y26 = select_2026(load_panel())
+    write_tables(y26)
     fig1_monthly(y26)
     fig2_distribution(y26)
     fig3_routes(y26)
-    print(f"Module A written to {OUT.relative_to(ROOT)}/ ({len(y26)} IPOs in 2026, {len(y25)} in 2025H1)")
+    print(f"Module A written to {OUT.relative_to(ROOT)}/ ({len(y26)} IPOs in 2026)")
 
 
 if __name__ == "__main__":
