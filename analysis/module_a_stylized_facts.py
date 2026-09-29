@@ -210,8 +210,8 @@ def panel_b(y26: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
         f"IR equal across routes: Kruskal-Wallis H = {stats.kruskal(*groups).statistic:.2f} "
         f"(p = {stats.kruskal(*groups).pvalue:.3g}).",
         "Routes are mutually exclusive in the order 18A > 18C > A+H > Conventional; WVR overlaps.",
-        f"A+H is flag OR route text 'PRC issuer with other listed shares': {n_fixed} issuers "
-        "have the text but a 0 flag in the panel (pending fix).",
+        "A+H is the panel flag OR route text 'PRC issuer with other listed shares'; "
+        f"{n_fixed} issuers are caught by the text check alone (0 = panel flag is complete).",
     ]
     return pd.DataFrame(rows).T, notes
 
