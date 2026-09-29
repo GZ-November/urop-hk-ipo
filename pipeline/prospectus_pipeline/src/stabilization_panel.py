@@ -40,7 +40,19 @@ from market_observations import read_daily_market_panel
 NUM = r"\d{1,3}(?:,\d{3})+|\d{4,}"
 FLOAT_NUM = r"\d+(?:\.\d+)?"
 
-RE_MANAGER = re.compile(r"undertaken\s+by\s+([^,]+?),\s*(?:the\s+)?Stabilizing\s+Manager", re.I)
+# 稳价经理人：公告常见两种句式；均不命中时留空（不得以保荐人或默认券商代填）
+RE_MANAGER = re.compile(r"(?:undertaken|borrowed)\s+by\s+([^,]+?),\s*(?:the\s+)?Stabili[sz](?:ing|ation)\s+Manager", re.I)
+RE_MANAGER_AS = re.compile(
+    r"In\s+connection\s+with\s+the\s+Global\s+Offering,\s+([^.;]{3,150}?)"
+    r"(?:\s*\(or\s+(?:its|any)[^)]*\))?,?\s+as\s+(?:the\s+)?stabili[sz](?:ing|ation)\s+manager\b", re.I)
+RE_NO_MANAGER = re.compile(r"No\s+stabili[sz](?:ing|ation)\s+manager\s+(?:will\s+be|has\s+been|was)\s+appointed", re.I)
+# 从公告文本解析的字段；未命中者列入输出行的 missing_fields，便于审计
+PARSED_FIELDS = (
+    "stabilizing_manager", "stabilization_period_end", "stabilization_purchases_occurred",
+    "over_allocation_shares", "over_allocation_pct", "stock_borrowing_arrangement",
+    "option_exercise_date", "shares_issued_under_option", "exercise_pct_of_option",
+    "expired_unexercised",
+)
 RE_NO_PURCHASE = re.compile(r"no\s+(?:purchase|sale)\s+(?:or\s+sale\s+)?of\s+any\s+(?:H\s+|Offer\s+)?Shares\s+on\s+the\s+market\s+for\s+the\s+purpose\s+of\s+price\s+stabilization", re.I)
 RE_PURCHASE_RANGE = re.compile(rf"price\s+range\s+of\s+HK\$\s*({FLOAT_NUM})\s+to\s+HK\$\s*({FLOAT_NUM})", re.I)
 RE_OVER_ALLOC = re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:H\s+|Offer\s+)?Shares", re.I)
@@ -60,6 +72,20 @@ def parse_date_str(s: str) -> Optional[dt.date]:
             return dt.datetime.strptime(s_clean, fmt).date()
         except ValueError:
             pass
+    return None
+
+
+def normalize_ws(s: str) -> str:
+    """折叠 PDF 抽取带来的换行与多余空白。"""
+    return " ".join(s.split())
+
+
+def extract_manager(text: str) -> Optional[str]:
+    """从公告文本抽取稳价经理人名称；未披露或未命中返回 None。"""
+    for pattern in (RE_MANAGER, RE_MANAGER_AS):
+        m = pattern.search(text)
+        if m:
+            return normalize_ws(m.group(1))
     return None
 
 
@@ -88,32 +114,46 @@ class StabilizationPanelEngine:
         a_file = self.allot_text_dir / f"HKIPO-MB{digits}.jsonl"
 
         text_corpus = ""
-        source_url = ""
+        source_label = None
         if g_file.exists():
+            source_label = "HKEXnews Section 9(2) Announcement (Ch 571W)"
             with g_file.open("r", encoding="utf-8") as fh:
                 for line in fh:
                     p = json.loads(line)
                     text_corpus += " " + p.get("text", "")
         elif a_file.exists():
+            source_label = "HKEXnews Allotment Results Announcement"
             with a_file.open("r", encoding="utf-8") as fh:
                 for line in fh:
                     p = json.loads(line)
                     text_corpus += " " + p.get("text", "")
+        has_text = bool(text_corpus.strip())
+        lower = text_corpus.lower()
 
+        # 以下各字段缺来源一律为 None：不以保荐人、法定期限推算或行业惯例值代填。
         # 稳价经理人
-        m_match = RE_MANAGER.search(text_corpus)
-        manager = m_match.group(1).strip() if m_match else "China International Capital Corporation / Sponsor-OC"
+        manager = extract_manager(text_corpus)
+        if manager:
+            manager_status = "PARSED"
+        elif not has_text:
+            manager_status = "NO_SOURCE_TEXT"
+        elif RE_NO_MANAGER.search(text_corpus):
+            manager_status = "NOT_APPOINTED"
+        else:
+            manager_status = "NOT_FOUND"
+        if manager_status in ("NO_SOURCE_TEXT", "NOT_FOUND"):
+            logger.warning(f"{code}: stabilizing manager not parsed ({manager_status}); left blank")
 
-        # 稳价结束日
+        # 稳价结束日（只取公告明文；不按上市日 +30 天推算）
         end_match = RE_END_STAB.search(text_corpus)
         stab_end_date = parse_date_str(end_match.group(1)) if end_match else None
-        if not stab_end_date and listing_date_str:
-            l_d = parse_bar_date(listing_date_str)
-            stab_end_date = l_d + dt.timedelta(days=30)
 
-        # 是否有场内托单购买
+        # 是否有场内托单购买（公告未涉及时为未知，而非 False）
         no_purchase = bool(RE_NO_PURCHASE.search(text_corpus))
-        purchases_occurred = not no_purchase if ("no purchase" in text_corpus.lower() or "stabilizing actions" in text_corpus.lower()) else False
+        if "no purchase" in lower or "stabilizing actions" in lower:
+            purchases_occurred = not no_purchase
+        else:
+            purchases_occurred = None
 
         # 购买价格区间
         p_low, p_high = None, None
@@ -127,45 +167,46 @@ class StabilizationPanelEngine:
         alloc_shares = float(alloc_match.group(1).replace(",", "")) if alloc_match else None
 
         pct_match = RE_OVER_PCT.search(text_corpus)
-        alloc_pct = float(pct_match.group(1)) if pct_match else (15.0 if alloc_shares else None)
+        alloc_pct = float(pct_match.group(1)) if pct_match else None
 
         # 借股或延期交付安排
         borrow_match = RE_BORROW.search(text_corpus)
-        borrow_str = "Delayed delivery arrangement / Stock borrowing" if borrow_match else "Standard Delayed Delivery"
+        borrow_str = "Delayed delivery arrangement / Stock borrowing" if borrow_match else None
 
         # 绿鞋行使情况
         ex_match = RE_EXERCISE_SHARES.search(text_corpus)
+        ex_match_shares = float(ex_match.group(1).replace(",", "")) if ex_match else None
         ex_date_match = RE_EXERCISE_DATE.search(text_corpus)
-        ex_date = parse_date_str(ex_date_match.group(1)) if ex_date_match else stab_end_date
+        ex_date = parse_date_str(ex_date_match.group(1)) if ex_date_match else None
 
-        if "full exercise" in text_corpus.lower():
-            ex_shares = alloc_shares or (ex_match and float(ex_match.group(1).replace(",", ""))) or 0.0
+        if "full exercise" in lower or "fully exercised" in lower:
+            ex_shares = alloc_shares or ex_match_shares
             ex_pct = 100.0
             expired = False
-        elif "partial exercise" in text_corpus.lower():
-            ex_shares = float(ex_match.group(1).replace(",", "")) if ex_match else (alloc_shares * 0.5 if alloc_shares else 0.0)
-            ex_pct = round((ex_shares / alloc_shares * 100.0), 2) if (alloc_shares and alloc_shares > 0) else 50.0
+        elif "partial exercise" in lower or "partially exercised" in lower:
+            ex_shares = ex_match_shares
+            ex_pct = round((ex_shares / alloc_shares * 100.0), 2) if (ex_shares is not None and alloc_shares) else None
             expired = False
-        elif "lapse" in text_corpus.lower() or "not be exercised" in text_corpus.lower() or "not exercised" in text_corpus.lower():
+        elif "lapse" in lower or "not be exercised" in lower or "not exercised" in lower:
             ex_shares = 0.0
             ex_pct = 0.0
             expired = True
         else:
-            # 默认已全额行使或到期
-            ex_shares = alloc_shares or 0.0
-            ex_pct = 100.0 if alloc_shares else 0.0
-            expired = (ex_shares == 0.0)
+            # 公告未披露行使结果：未知
+            ex_shares = None
+            ex_pct = None
+            expired = None
 
         # 截取证据引用
         quote_snip = ""
         if end_match:
             start_i = max(0, end_match.start() - 50)
             quote_snip = text_corpus[start_i:start_i + 250].replace("\n", " ").strip()
-        elif "stabilization" in text_corpus.lower():
-            idx = text_corpus.lower().find("stabilization")
+        elif "stabilization" in lower:
+            idx = lower.find("stabilization")
             quote_snip = text_corpus[idx:idx + 250].replace("\n", " ").strip()
 
-        return {
+        rec = {
             "stock_code": code,
             "stabilizing_manager": manager,
             "stabilization_period_start": listing_date_str,
@@ -173,7 +214,7 @@ class StabilizationPanelEngine:
             "stabilization_purchases_occurred": purchases_occurred,
             "purchase_price_low": p_low,
             "purchase_price_high": p_high,
-            "aggregate_stabilization_shares": alloc_shares if purchases_occurred else 0.0,
+            "aggregate_stabilization_shares": 0.0 if purchases_occurred is False else None,
             "over_allocation_shares": alloc_shares,
             "over_allocation_pct": alloc_pct,
             "stock_borrowing_arrangement": borrow_str,
@@ -182,9 +223,12 @@ class StabilizationPanelEngine:
             "exercise_pct_of_option": ex_pct,
             "expired_unexercised": expired,
             "announcement_date": str(stab_end_date) if stab_end_date else None,
-            "source_url": "HKEXnews Section 9(2) Announcement (Ch 571W)",
-            "evidence_quote": quote_snip[:200]
+            "source_url": source_label,
+            "evidence_quote": quote_snip[:200],
+            "stabilizing_manager_status": manager_status,
         }
+        rec["missing_fields"] = ";".join(k for k in PARSED_FIELDS if rec[k] is None)
+        return rec
 
     def compute_event_windows(self, rec: dict[str, Any]) -> dict[str, Any]:
         """测算稳价期结束断崖效应（Cliff Effect）。"""

@@ -147,9 +147,15 @@ class MasterExpansionTestSuite(unittest.TestCase):
         self.assertEqual(len(stabs), 38, "稳价事件表应包含全部 38 家公司")
 
         for s in stabs:
-            self.assertGreater(len(s["stabilizing_manager"].strip()), 2, f"{s['stock_code']} 缺失稳价经理人")
-            self.assertIsNotNone(s["stabilization_period_end"], f"{s['stock_code']} 缺失稳价结束日期")
-            self.assertIn(s["expired_unexercised"].lower(), ("true", "false"))
+            # 稳价经理人只取公告原文；未解析时留空并标明原因，绝不以占位符代填
+            self.assertNotIn("sponsor-oc", s["stabilizing_manager"].lower(), f"{s['stock_code']} 稳价经理人为占位符")
+            if s["stabilizing_manager_status"] == "PARSED":
+                self.assertGreater(len(s["stabilizing_manager"].strip()), 2, f"{s['stock_code']} 缺失稳价经理人")
+            else:
+                self.assertIn(s["stabilizing_manager_status"], ("NOT_APPOINTED", "NOT_FOUND", "NO_SOURCE_TEXT"))
+                self.assertEqual(s["stabilizing_manager"], "", f"{s['stock_code']} 未解析的稳价经理人必须留空")
+                self.assertIn("stabilizing_manager", s["missing_fields"].split(";"))
+            self.assertIn(s["expired_unexercised"].lower(), ("true", "false", ""))
 
             # 断崖效应收益率格式
             if s.get("cliff_return_m5_p5") and s["cliff_return_m5_p5"] != "":

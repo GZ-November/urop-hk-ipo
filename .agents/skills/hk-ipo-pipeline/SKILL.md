@@ -114,6 +114,11 @@ Merges every cohort `_clean.csv` into one analysis-ready master panel
 - Add `--derive` to append currency-free derived ratio columns to the master panel
   (`leverage_y1`, `roa_y1`, `sales_growth_y1`, `log_proceeds_hkd`,
   `public_offer_fraction`; sources missing -> column skipped, invalid -> NaN).
+  `log_proceeds_hkd` = ln(`IPO Subscription Price (HK$)` x `Final global offering
+  shares (before over-allotment)`), i.e. log base-deal proceeds in HK$ (excludes the
+  over-allotment option). It is not a share-count log. Derived-column definitions
+  live in `DERIVED_SPECS` (`master_panel.py`) and are mirrored in the registry's
+  `derived_variables` section (`run.py registry --check` fails on drift).
 - Section 5.1 reports fill-rate changes vs the previous cohort (>=10pp) so
   extraction-quality regressions surface immediately.
 - Regenerate after each cohort closes so an analysis-ready master always exists.
