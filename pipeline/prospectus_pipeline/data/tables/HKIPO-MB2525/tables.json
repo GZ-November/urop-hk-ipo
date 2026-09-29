@@ -1,0 +1,145 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 455,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "HHLRA",
+          "50.0",
+          "1,709,400",
+          "10.06%"
+        ],
+        [
+          "Taikang Life",
+          "28.0",
+          "957,260",
+          "5.63%"
+        ],
+        [
+          "Management",
+          "30.0",
+          "1,025,640",
+          "6.03%"
+        ],
+        [
+          "Grab Inc.",
+          "10.0",
+          "341,880",
+          "2.01%"
+        ],
+        [
+          "Group",
+          "20.0",
+          "683,760",
+          "4.02%"
+        ],
+        [
+          "Fund",
+          "10.0",
+          "341,880",
+          "2.01%"
+        ],
+        [
+          "Total",
+          "148.0",
+          "5,059,820",
+          "29.76%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| HHLRA                | 50.0                  | 1,709,400              | 10.06%                        |\n| Taikang Life         | 28.0                  | 957,260                | 5.63%                         |\n| Management           | 30.0                  | 1,025,640              | 6.03%                         |\n| Grab Inc.            | 10.0                  | 341,880                | 2.01%                         |\n| Group                | 20.0                  | 683,760                | 4.02%                         |\n| Fund                 | 10.0                  | 341,880                | 2.01%                         |\n| Total                | 148.0                 | 5,059,820              | 29.76%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 456,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "HHLRA",
+          "50.0",
+          "1,709,400",
+          "8.74%"
+        ],
+        [
+          "Taikang Life",
+          "28.0",
+          "957,260",
+          "4.90%"
+        ],
+        [
+          "Management",
+          "30.0",
+          "1,025,640",
+          "5.25%"
+        ],
+        [
+          "Grab Inc.",
+          "10.0",
+          "341,880",
+          "1.75%"
+        ],
+        [
+          "Hongda Group",
+          "20.0",
+          "683,760",
+          "3.50%"
+        ],
+        [
+          "Fund",
+          "10.0",
+          "341,880",
+          "1.75%"
+        ],
+        [
+          "Total",
+          "148.0",
+          "5,059,820",
+          "25.88%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| HHLRA                | 50.0                  | 1,709,400              | 8.74%                         |\n| Taikang Life         | 28.0                  | 957,260                | 4.90%                         |\n| Management           | 30.0                  | 1,025,640              | 5.25%                         |\n| Grab Inc.            | 10.0                  | 341,880                | 1.75%                         |\n| Hongda Group         | 20.0                  | 683,760                | 3.50%                         |\n| Fund                 | 10.0                  | 341,880                | 1.75%                         |\n| Total                | 148.0                 | 5,059,820              | 25.88%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 39,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "any listing expenses during the Track Record",
+          "Period."
+        ]
+      ],
+      "markdown": "| Item Description                             | Rate / Amount Disclosed |\n| -------------------------------------------- | ----------------------- |\n| any listing expenses during the Track Record | Period.                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

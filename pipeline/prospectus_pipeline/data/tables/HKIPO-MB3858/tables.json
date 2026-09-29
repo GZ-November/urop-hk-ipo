@@ -1,0 +1,68 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 401,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Shares in issue as of the date of this prospectus",
+          "11,765",
+          "–"
+        ],
+        [
+          "before the Global Offering",
+          "329,420,000",
+          "–"
+        ],
+        [
+          "Over-allotment Option is not exercised)",
+          "109,808,800",
+          "–"
+        ],
+        [
+          "Shares to be issued on exercise of the Over-allotment Option in full",
+          "16,471,200",
+          "–"
+        ],
+        [
+          "Over-allotment Option is exercised in full)",
+          "455,700,000",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------------------------------------- | ---------------- | -------------------------- |\n| Shares in issue as of the date of this prospectus                    | 11,765           | –                          |\n| before the Global Offering                                           | 329,420,000      | –                          |\n| Over-allotment Option is not exercised)                              | 109,808,800      | –                          |\n| Shares to be issued on exercise of the Over-allotment Option in full | 16,471,200       | –                          |\n| Over-allotment Option is exercised in full)                          | 455,700,000      | –                          |",
+      "metadata": {
+        "total_rows": 5
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 43,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "expenses include underwriting commissions (based on the Offer Price of",
+          "HK$10.92"
+        ]
+      ],
+      "markdown": "| Item Description                                                       | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------- | ----------------------- |\n| expenses include underwriting commissions (based on the Offer Price of | HK$10.92                |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": []
+}

@@ -1,0 +1,30 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 41,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "underwriting fees and commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                             | Rate / Amount Disclosed |\n| ------------------------------------------------------------ | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related | expenses,               |\n| underwriting fees and commission                             | s,                      |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": []
+}

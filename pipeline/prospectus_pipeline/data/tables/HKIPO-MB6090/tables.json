@@ -1,0 +1,58 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "measure) adjusted by listing expenses and equity-settled share-based",
+          "payments."
+        ]
+      ],
+      "markdown": "| Item Description                                                     | Rate / Amount Disclosed |\n| -------------------------------------------------------------------- | ----------------------- |\n| measure) adjusted by listing expenses and equity-settled share-based | payments.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 30,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "507,202",
+          "100.0",
+          "852,103",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "241,781",
+          "47.7",
+          "427,339",
+          "50.2"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 507,202 | 100.0  | 852,103 | 100.0 |\n| Gross profit     | 241,781 | 47.7   | 427,339 | 50.2  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

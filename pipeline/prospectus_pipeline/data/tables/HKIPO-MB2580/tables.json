@@ -1,0 +1,96 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 30,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$3,287.4 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$3,287.4 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "19,527,585",
+          "100.0",
+          "24,831,833",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "4,149,896",
+          "21.3",
+          "5,422,179",
+          "21.8"
+        ],
+        [
+          "Profit for the year",
+          "1,441,738",
+          "7.4",
+          "2,486,794",
+          "10.0"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2 | Year-1     | Col 5 |\n| ------------------- | ---------- | ------ | ---------- | ----- |\n| Revenue             | 19,527,585 | 100.0  | 24,831,833 | 100.0 |\n| Gross profit        | 4,149,896  | 21.3   | 5,422,179  | 21.8  |\n| Profit for the year | 1,441,738  | 7.4    | 2,486,794  | 10.0  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 320,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "19,527,585",
+          "100.0",
+          "24,831,833",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "4,149,896",
+          "21.3",
+          "5,422,179",
+          "21.8"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 19,527,585 | 100.0  | 24,831,833 | 100.0 |\n| Gross profit     | 4,149,896  | 21.3   | 5,422,179  | 21.8  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

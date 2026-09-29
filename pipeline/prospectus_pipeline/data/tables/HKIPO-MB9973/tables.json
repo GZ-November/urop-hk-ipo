@@ -1,0 +1,101 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 712,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Total",
+          "998,255,807",
+          "17.31%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| Total                 | 998,255,807      | 17.31%                     |",
+      "metadata": {
+        "total_rows": 1
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 23,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Revenue 92,618 163,205 269,897 54,910",
+          "68,223",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                 | Number of Shares | Approximate Percentage (%) |\n| ------------------------------------- | ---------------- | -------------------------- |\n| Revenue 92,618 163,205 269,897 54,910 | 68,223           | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                        | Rate / Amount Disclosed |\n| --------------------------------------- | ----------------------- |\n| Listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 23,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "92,618",
+          "163,205",
+          "269,897",
+          "54,910"
+        ],
+        [
+          "Gross profit",
+          "12,805",
+          "26,090",
+          "36,308",
+          "8,163"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1  | Col 5  |\n| ---------------- | ------ | ------- | ------- | ------ |\n| Revenue          | 92,618 | 163,205 | 269,897 | 54,910 |\n| Gross profit     | 12,805 | 26,090  | 36,308  | 8,163  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 346,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Domestic Shares in issue",
+          "78,993,402",
+          "52.67"
+        ],
+        [
+          "Domestic",
+          "60,560,947",
+          "40.38"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "10,436,900",
+          "6.96"
+        ],
+        [
+          "Total",
+          "149,991,249",
+          "100.00"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| Domestic Shares in issue                        | 78,993,402       | 52.67                      |\n| Domestic                                        | 60,560,947       | 40.38                      |\n| H Shares to be issued under the Global Offering | 10,436,900       | 6.96                       |\n| Total                                           | 149,991,249      | 100.00                     |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 22,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "1,217,757",
+          "100.0",
+          "1,495,817",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "171,122",
+          "14.1",
+          "231,088",
+          "15.4"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1    | Col 5 |\n| ---------------- | --------- | ------ | --------- | ----- |\n| Revenue          | 1,217,757 | 100.0  | 1,495,817 | 100.0 |\n| Gross profit     | 171,122   | 14.1   | 231,088   | 15.4  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 25,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "2,286,901",
+          "2,580,751",
+          "4,307,750",
+          "4,127,785"
+        ],
+        [
+          "Total liabilities",
+          "1,469,639",
+          "1,981,847",
+          "2,761,694",
+          "2,755,859"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    | Col 5     |\n| ----------------- | --------- | --------- | --------- | --------- |\n| Total assets      | 2,286,901 | 2,580,751 | 4,307,750 | 4,127,785 |\n| Total liabilities | 1,469,639 | 1,981,847 | 2,761,694 | 2,755,859 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 497,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "817,262",
+          "598,904",
+          "1,546,056",
+          "1,371,926"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1    | Col 5     |\n| ---------------- | ------- | ------- | --------- | --------- |\n| Total equity     | 817,262 | 598,904 | 1,546,056 | 1,371,926 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

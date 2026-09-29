@@ -1,0 +1,137 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 28,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses are estimated to be approximately",
+          "HK$73.3 million"
+        ],
+        [
+          "underwriting commission), accounting",
+          "for 1.6"
+        ],
+        [
+          "Adjustment Option). Among our listing expenses, approximately",
+          "HK$69.7 million"
+        ]
+      ],
+      "markdown": "| Item Description                                              | Rate / Amount Disclosed |\n| ------------------------------------------------------------- | ----------------------- |\n| Our listing expenses are estimated to be approximately        | HK$73.3 million         |\n| underwriting commission), accounting                          | for 1.6                 |\n| Adjustment Option). Among our listing expenses, approximately | HK$69.7 million         |",
+      "metadata": {
+        "items_count": 3
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 273,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "approximately HK$73.3 million (including underwriting commission), accounting",
+          "for 1.6"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                              | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                       | fees,                   |\n| approximately HK$73.3 million (including underwriting commission), accounting | for 1.6                 |\n| The listing expenses above are the latest practicable estimate for reference  | only,                   |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 23,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "78,345,772",
+          "77,469,741",
+          "81,016,047"
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     | Col 5 |\n| ----------------- | ---------- | ---------- | ---------- | ----- |\n| Total assets      | 78,345,772 | 77,469,741 | 81,016,047 |       |\n| Total liabilities | .          | .          | .          | .     |\n| Total equity      | .          | .          | .          | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 375,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Profit for the year",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3 | Year-2 | Year-1 | Col 5 |\n| ------------------- | ------ | ------ | ------ | ----- |\n| Revenue             | .      | .      | .      | .     |\n| Gross profit        | .      | .      | .      | .     |\n| Profit for the year | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

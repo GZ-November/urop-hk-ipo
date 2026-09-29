@@ -1,0 +1,124 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "HK$49.8 million"
+        ],
+        [
+          "commission of approximately",
+          "HK$19.6 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                     | Rate / Amount Disclosed |\n| -------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately | HK$49.8 million         |\n| commission of approximately                                          | HK$19.6 million         |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "254,188",
+          "300,156",
+          "450,720",
+          "125,753"
+        ],
+        [
+          "Gross profit",
+          "77,932",
+          "101,494",
+          "148,748",
+          "41,092"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 254,188 | 300,156 | 450,720 | 125,753 |\n| Gross profit     | 77,932  | 101,494 | 148,748 | 41,092  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "185,749",
+          "192,835",
+          "301,465",
+          "352,490"
+        ],
+        [
+          "Total liabilities",
+          "130,944",
+          "103,180",
+          "175,711",
+          "222,921"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2  | Year-1  | Col 5   |\n| ----------------- | ------- | ------- | ------- | ------- |\n| Total assets      | 185,749 | 192,835 | 301,465 | 352,490 |\n| Total liabilities | 130,944 | 103,180 | 175,711 | 222,921 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 353,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "6",
+          "254,188",
+          "300,156",
+          "450,720"
+        ],
+        [
+          "Gross profit",
+          "77,932",
+          "101,494",
+          "148,748",
+          "41,092"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------ | ------- | ------- | ------- |\n| Revenue          | 6      | 254,188 | 300,156 | 450,720 |\n| Gross profit     | 77,932 | 101,494 | 148,748 | 41,092  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 352,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Swaps)",
+          "20",
+          "2,378,600",
+          "5.95%"
+        ],
+        [
+          "HK Greenwoods",
+          "20",
+          "2,378,600",
+          "5.95%"
+        ],
+        [
+          "Hosen Capital",
+          "20",
+          "2,378,600",
+          "5.95%"
+        ],
+        [
+          "QRT",
+          "10",
+          "1,189,300",
+          "2.97%"
+        ],
+        [
+          "FCP Domains",
+          "10",
+          "1,189,300",
+          "2.97%"
+        ],
+        [
+          "NonaVerse",
+          "10",
+          "1,189,300",
+          "2.97%"
+        ],
+        [
+          "Total",
+          "90",
+          "10,703,700",
+          "26.76%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Swaps)               | 20                    | 2,378,600              | 5.95%                         |\n| HK Greenwoods        | 20                    | 2,378,600              | 5.95%                         |\n| Hosen Capital        | 20                    | 2,378,600              | 5.95%                         |\n| QRT                  | 10                    | 1,189,300              | 2.97%                         |\n| FCP Domains          | 10                    | 1,189,300              | 2.97%                         |\n| NonaVerse            | 10                    | 1,189,300              | 2.97%                         |\n| Total                | 90                    | 10,703,700             | 26.76%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 25,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represented expenses incurred in connection with the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                                 | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------- | ----------------------- |\n| (2) Listing expenses represented expenses incurred in connection with the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "12,105,618",
+          "13,964,878",
+          "15,029,588"
+        ],
+        [
+          "Gross profit",
+          "2,560,528",
+          "3,157,157",
+          "3,408,282"
+        ],
+        [
+          "Profit for the year",
+          "1,117,504",
+          "1,501,160",
+          "1,513,618"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2     | Year-1     |\n| ------------------- | ---------- | ---------- | ---------- |\n| Revenue             | 12,105,618 | 13,964,878 | 15,029,588 |\n| Gross profit        | 2,560,528  | 3,157,157  | 3,408,282  |\n| Profit for the year | 1,117,504  | 1,501,160  | 1,513,618  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 26,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "16,142,715",
+          "17,300,428",
+          "17,375,100"
+        ],
+        [
+          "Total liabilities",
+          "4,243,706",
+          "4,399,845",
+          "4,104,767"
+        ],
+        [
+          "Total equity",
+          "11,899,009",
+          "12,900,583",
+          "13,270,333"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     |\n| ----------------- | ---------- | ---------- | ---------- |\n| Total assets      | 16,142,715 | 17,300,428 | 17,375,100 |\n| Total liabilities | 4,243,706  | 4,399,845  | 4,104,767  |\n| Total equity      | 11,899,009 | 12,900,583 | 13,270,333 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 296,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "12,105,618",
+          "13,964,878",
+          "15,029,588"
+        ],
+        [
+          "Gross profit",
+          "2,560,528",
+          "3,157,157",
+          "3,408,282"
+        ],
+        [
+          "Profit for the year",
+          "1,117,504",
+          "1,501,160",
+          "1,513,618"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2     | Year-1     |\n| ------------------- | ---------- | ---------- | ---------- |\n| Revenue             | 12,105,618 | 13,964,878 | 15,029,588 |\n| Gross profit        | 2,560,528  | 3,157,157  | 3,408,282  |\n| Profit for the year | 1,117,504  | 1,501,160  | 1,513,618  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}

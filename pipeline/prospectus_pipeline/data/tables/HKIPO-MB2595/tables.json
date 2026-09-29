@@ -1,0 +1,52 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 302,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Group of Shareholders), are our core connected persons and a total of",
+          "67,560,720",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                 | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------------- | ---------------- | -------------------------- |\n| Group of Shareholders), are our core connected persons and a total of | 67,560,720       | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 39,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "respectively. The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                           | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------------ | ----------------------- |\n| Our listing expenses represent professional                                                | fees,                   |\n| respectively. The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": []
+}

@@ -1,0 +1,99 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 487,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "(1) The 2,594,663,913 Shares to be issued pursuant to Phase 3 of the Reorganisation (which will be",
+          "864,887,971",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                              | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| (1) The 2,594,663,913 Shares to be issued pursuant to Phase 3 of the Reorganisation (which will be | 864,887,971      | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 28,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "Option, we estimate that we have or will incur listing expenses of approximately",
+          "US$66.4"
+        ],
+        [
+          "(i) underwriting-related expenses (including underwriting fees and commissions) of",
+          "US$17.8"
+        ]
+      ],
+      "markdown": "| Item Description                                                                   | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                            | fees,                   |\n| Option, we estimate that we have or will incur listing expenses of approximately   | US$66.4                 |\n| (i) underwriting-related expenses (including underwriting fees and commissions) of | US$17.8                 |",
+      "metadata": {
+        "items_count": 3
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 29,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "expenses in connection with the Global Offering (including listing expenses of",
+          "US$29.3"
+        ]
+      ],
+      "markdown": "| Item Description                                                               | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------ | ----------------------- |\n| expenses in connection with the Global Offering (including listing expenses of | US$29.3                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 424,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "50,590",
+          "52,674",
+          "53,712"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 |\n| ---------------- | ------ | ------ | ------ |\n| Total assets     | 50,590 | 52,674 | 53,712 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

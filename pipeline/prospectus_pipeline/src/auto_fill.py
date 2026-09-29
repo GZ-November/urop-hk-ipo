@@ -433,7 +433,8 @@ def cmd_prompt(phase: str, codes: list[str] | None, only_fields_file: Path | Non
 
     cfg = load_cfg()
     rows = {r["code"]: r for r in workbook_rows(cfg)}
-    targets = codes or sorted(rows)
+    from contracts import normalize_code
+    targets = [normalize_code(c) for c in codes] if codes else sorted(rows)
     only_map: dict[str, list[str]] = {}
     if only_fields_file and Path(only_fields_file).is_file():
         data = json.loads(Path(only_fields_file).read_text(encoding="utf-8"))

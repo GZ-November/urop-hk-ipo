@@ -1,0 +1,7 @@
+--- validate 2631.HK 10:30:32 ---
+工作簿 prospectus_pipeline/datasets/HKIPO_2025-07-01_2025-09-30_HKIPO-MB/HKIPO-MB.xlsx 共 24 家公司
+
+=== validate ===
+MISSING FILES: 2631.HK
+
+校验完成[prospectus]：目标 1 家，解析 0 家，错误 1 项；写回闸门=BLOCK -> /Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-07-01_2025-09-30_HKIPO-MB/out/validation.json

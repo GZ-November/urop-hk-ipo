@@ -1,0 +1,114 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 503,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Unlisted Shares in issue",
+          "45,613,109",
+          "24.2%"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "32,054,400",
+          "17.0%"
+        ],
+        [
+          "H Shares converted from Unlisted Shares",
+          "110,886,891",
+          "58.8%"
+        ],
+        [
+          "Total",
+          "188,554,400",
+          "100%"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| Unlisted Shares in issue                        | 45,613,109       | 24.2%                      |\n| H Shares to be issued under the Global Offering | 32,054,400       | 17.0%                      |\n| H Shares converted from Unlisted Shares         | 110,886,891      | 58.8%                      |\n| Total                                           | 188,554,400      | 100%                       |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 31,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "professional service fees associated with listing expenses and other consulting service",
+          "fees."
+        ]
+      ],
+      "markdown": "| Item Description                                                                        | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------------- | ----------------------- |\n| professional service fees associated with listing expenses and other consulting service | fees.                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "listing expenses",
+          "incurred."
+        ]
+      ],
+      "markdown": "| Item Description | Rate / Amount Disclosed |\n| ---------------- | ----------------------- |\n| listing expenses | incurred.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 29,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "8,865",
+          "–",
+          "–",
+          "–"
+        ],
+        [
+          "Gross profit",
+          "5,680",
+          "–",
+          "–",
+          "–"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | 8,865  | –      | –      | –     |\n| Gross profit     | 5,680  | –      | –      | –     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

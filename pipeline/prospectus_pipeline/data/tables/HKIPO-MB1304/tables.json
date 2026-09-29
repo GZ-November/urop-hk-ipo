@@ -1,0 +1,211 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 257,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "H Shares to be issued pursuant to the Global Offering",
+          "16,299,500",
+          "15.00%"
+        ],
+        [
+          "Total",
+          "108,662,880",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| H Shares to be issued pursuant to the Global Offering | 16,299,500       | 15.00%                     |\n| Total                                                 | 108,662,880      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 2
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 258,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "H Shares to be issued pursuant to the Global Offering",
+          "18,744,400",
+          "16.87%"
+        ],
+        [
+          "Total",
+          "111,107,780",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| H Shares to be issued pursuant to the Global Offering | 18,744,400       | 16.87%                     |\n| Total                                                 | 111,107,780      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 269,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Taikang Life",
+          "25.00",
+          "1,628,600",
+          "9.99%"
+        ],
+        [
+          "Pinpoint",
+          "15.00",
+          "977,100",
+          "5.99%"
+        ],
+        [
+          "3W Fund",
+          "10.00",
+          "651,400",
+          "4.00%"
+        ],
+        [
+          "Wind Sabre",
+          "10.00",
+          "651,400",
+          "4.00%"
+        ],
+        [
+          "ChinaAMC (HK)",
+          "10.00",
+          "651,400",
+          "4.00%"
+        ],
+        [
+          "Mega Prime",
+          "10.00",
+          "651,400",
+          "4.00%"
+        ],
+        [
+          "Singapore",
+          "8.00",
+          "521,100",
+          "3.20%"
+        ],
+        [
+          "Fourier Capital",
+          "8.00",
+          "521,100",
+          "3.20%"
+        ],
+        [
+          "Torus",
+          "8.00",
+          "521,100",
+          "3.20%"
+        ],
+        [
+          "Intac",
+          "8.00",
+          "521,100",
+          "3.20%"
+        ],
+        [
+          "Total",
+          "112.00",
+          "7,295,700",
+          "44.76%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Taikang Life         | 25.00                 | 1,628,600              | 9.99%                         |\n| Pinpoint             | 15.00                 | 977,100                | 5.99%                         |\n| 3W Fund              | 10.00                 | 651,400                | 4.00%                         |\n| Wind Sabre           | 10.00                 | 651,400                | 4.00%                         |\n| ChinaAMC (HK)        | 10.00                 | 651,400                | 4.00%                         |\n| Mega Prime           | 10.00                 | 651,400                | 4.00%                         |\n| Singapore            | 8.00                  | 521,100                | 3.20%                         |\n| Fourier Capital      | 8.00                  | 521,100                | 3.20%                         |\n| Torus                | 8.00                  | 521,100                | 3.20%                         |\n| Intac                | 8.00                  | 521,100                | 3.20%                         |\n| Total                | 112.00                | 7,295,700              | 44.76%                        |",
+      "metadata": {
+        "investor_count": 10
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "the discretionary incentive fee) incurred in connection with the Global",
+          "Offering."
+        ],
+        [
+          "Listing expenses will be approximately",
+          "RMB107.6 million"
+        ],
+        [
+          "During the Track Record Period, we incurred listing expenses of",
+          "RMB11.6 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                        | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                 | fees,                   |\n| the discretionary incentive fee) incurred in connection with the Global | Offering.               |\n| Listing expenses will be approximately                                  | RMB107.6 million        |\n| During the Track Record Period, we incurred listing expenses of         | RMB11.6 million         |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "2,372,931",
+          "2,493,688",
+          "2,649,251"
+        ],
+        [
+          "Total liabilities",
+          "117,872",
+          "102,570",
+          "96,316"
+        ],
+        [
+          "Total equity",
+          "2,255,059",
+          "2,391,118",
+          "2,552,935"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 2,372,931 | 2,493,688 | 2,649,251 |\n| Total liabilities | 117,872   | 102,570   | 96,316    |\n| Total equity      | 2,255,059 | 2,391,118 | 2,552,935 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    }
+  ]
+}
