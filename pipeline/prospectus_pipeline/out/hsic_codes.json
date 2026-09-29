@@ -1,1 +1,407 @@
-{}
+{
+  "0068.HK": {
+    "category": "軟件服務",
+    "code": "702030",
+    "hkex_hsic_ind": "Information Technology - Software & Services",
+    "hkex_hsic_sub": "Application Software",
+    "industry": "資訊科技業",
+    "sub_sector": "應用軟件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "0901.HK": {
+    "category": "資訊科技器材",
+    "code": "701010",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Consumer Telecommunication Equipment & Components",
+    "industry": "資訊科技業",
+    "sub_sector": "消費性電訊設備及零件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1081.HK": {
+    "category": "工業工程",
+    "code": "101030",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Environmental Engineering",
+    "industry": "工業",
+    "sub_sector": "環保工程",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1187.HK": {
+    "category": "其他醫療保健",
+    "code": "282010",
+    "hkex_hsic_ind": "Healthcare - Other Healthcare",
+    "hkex_hsic_sub": "Medical Devices & Supplies",
+    "industry": "醫療保健業",
+    "sub_sector": "醫療設備及用品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1191.HK": {
+    "category": "工業工程",
+    "code": "101025",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Electrical & Electronic Components",
+    "industry": "工業",
+    "sub_sector": "電氣及電子零件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1236.HK": {
+    "category": "資訊科技器材",
+    "code": "701030",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Robotic Systems & Solutions",
+    "industry": "資訊科技業",
+    "sub_sector": "機器人系統及解決方案",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1392.HK": {
+    "category": "軟件服務",
+    "code": "702030",
+    "hkex_hsic_ind": "Information Technology - Software & Services",
+    "hkex_hsic_sub": "Application Software",
+    "industry": "資訊科技業",
+    "sub_sector": "應用軟件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1511.HK": {
+    "category": "軟件服務",
+    "code": "702015",
+    "hkex_hsic_ind": "Information Technology - Software & Services",
+    "hkex_hsic_sub": "Digital Solution Services",
+    "industry": "資訊科技業",
+    "sub_sector": "數碼解決方案服務",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1609.HK": {
+    "category": "其他醫療保健",
+    "code": "282010",
+    "hkex_hsic_ind": "Healthcare - Other Healthcare",
+    "hkex_hsic_sub": "Medical Devices & Supplies",
+    "industry": "醫療保健業",
+    "sub_sector": "醫療設備及用品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1688.HK": {
+    "category": "工業工程",
+    "code": "101025",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Electrical & Electronic Components",
+    "industry": "工業",
+    "sub_sector": "電氣及電子零件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1779.HK": {
+    "category": "藥品及生物科技",
+    "code": "281020",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Biotechnology",
+    "industry": "醫療保健業",
+    "sub_sector": "生物技術",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1879.HK": {
+    "category": "半導體",
+    "code": "703020",
+    "hkex_hsic_ind": "Information Technology - Semiconductors",
+    "hkex_hsic_sub": "Semiconductor Equipment & Materials",
+    "industry": "資訊科技業",
+    "sub_sector": "半導體設備與材料",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "1956.HK": {
+    "category": "軟件服務",
+    "code": "702015",
+    "hkex_hsic_ind": "Information Technology - Software & Services",
+    "hkex_hsic_sub": "Digital Solution Services",
+    "industry": "資訊科技業",
+    "sub_sector": "數碼解決方案服務",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2272.HK": {
+    "category": "軟件服務",
+    "code": "702015",
+    "hkex_hsic_ind": "Information Technology - Software & Services",
+    "hkex_hsic_sub": "Digital Solution Services",
+    "industry": "資訊科技業",
+    "sub_sector": "數碼解決方案服務",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2290.HK": {
+    "category": "專業零售",
+    "code": "237050",
+    "hkex_hsic_ind": "Consumer Discretionary - Specialty Retail",
+    "hkex_hsic_sub": "Other Retailers",
+    "industry": "非必需性消費",
+    "sub_sector": "其他零售商",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2335.HK": {
+    "category": "藥品及生物科技",
+    "code": "281020",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Biotechnology",
+    "industry": "醫療保健業",
+    "sub_sector": "生物技術",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2476.HK": {
+    "category": "工業工程",
+    "code": "101025",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Electrical & Electronic Components",
+    "industry": "工業",
+    "sub_sector": "電氣及電子零件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2493.HK": {
+    "category": "藥品及生物科技",
+    "code": "281020",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Biotechnology",
+    "industry": "醫療保健業",
+    "sub_sector": "生物技術",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2553.HK": {
+    "category": "原材料",
+    "code": "053040",
+    "hkex_hsic_ind": "Materials - Basic Materials",
+    "hkex_hsic_sub": "Specialty Chemicals",
+    "industry": "原材料業",
+    "sub_sector": "特殊化工用品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2672.HK": {
+    "category": "保險",
+    "code": "502010",
+    "hkex_hsic_ind": "Financials - Insurance",
+    "hkex_hsic_sub": "Insurance",
+    "industry": "金融業",
+    "sub_sector": "保險",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2697.HK": {
+    "category": "其他醫療保健",
+    "code": "282010",
+    "hkex_hsic_ind": "Healthcare - Other Healthcare",
+    "hkex_hsic_sub": "Medical Devices & Supplies",
+    "industry": "醫療保健業",
+    "sub_sector": "醫療設備及用品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "2723.HK": {
+    "category": "媒體及娛樂",
+    "code": "235010",
+    "hkex_hsic_ind": "Consumer Discretionary - Media & Entertainment",
+    "hkex_hsic_sub": "Advertising & Marketing",
+    "industry": "非必需性消費",
+    "sub_sector": "廣告及宣傳",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3277.HK": {
+    "category": "半導體",
+    "code": "703010",
+    "hkex_hsic_ind": "Information Technology - Semiconductors",
+    "hkex_hsic_sub": "Semiconductors",
+    "industry": "資訊科技業",
+    "sub_sector": "半導體",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3296.HK": {
+    "category": "資訊科技器材",
+    "code": "701010",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Consumer Telecommunication Equipment & Components",
+    "industry": "資訊科技業",
+    "sub_sector": "消費性電訊設備及零件",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3310.HK": {
+    "category": "半導體",
+    "code": "703010",
+    "hkex_hsic_ind": "Information Technology - Semiconductors",
+    "hkex_hsic_sub": "Semiconductors",
+    "industry": "資訊科技業",
+    "sub_sector": "半導體",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3388.HK": {
+    "category": "資訊科技器材",
+    "code": "701020",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Computers & Peripherals",
+    "industry": "資訊科技業",
+    "sub_sector": "電腦及週邊器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3661.HK": {
+    "category": "半導體",
+    "code": "703010",
+    "hkex_hsic_ind": "Information Technology - Semiconductors",
+    "hkex_hsic_sub": "Semiconductors",
+    "industry": "資訊科技業",
+    "sub_sector": "半導體",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "3952.HK": {
+    "category": "工業工程",
+    "code": "101020",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Industrial Components & Equipment",
+    "industry": "工業",
+    "sub_sector": "工業零件及器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6067.HK": {
+    "category": "工業工程",
+    "code": "101070",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Energy Storage Units",
+    "industry": "工業",
+    "sub_sector": "能源儲存裝置",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6106.HK": {
+    "category": "資訊科技器材",
+    "code": "701030",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Robotic Systems & Solutions",
+    "industry": "資訊科技業",
+    "sub_sector": "機器人系統及解決方案",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6132.HK": {
+    "category": "藥品及生物科技",
+    "code": "281050",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Pharma & Biotech Contract Services",
+    "industry": "醫療保健業",
+    "sub_sector": "醫藥及生物科技合約服務",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6228.HK": {
+    "category": "黃金及貴金屬",
+    "code": "051010",
+    "hkex_hsic_ind": "Materials - Gold & Precious Metals",
+    "hkex_hsic_sub": "Gold & Precious Metals",
+    "industry": "原材料業",
+    "sub_sector": "黃金及貴金屬",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6656.HK": {
+    "category": "工業工程",
+    "code": "101070",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Energy Storage Units",
+    "industry": "工業",
+    "sub_sector": "能源儲存裝置",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6658.HK": {
+    "category": "食物飲品",
+    "code": "251010",
+    "hkex_hsic_ind": "Consumer Staples - Food & Beverages",
+    "hkex_hsic_sub": "Packaged Foods",
+    "industry": "必需性消費",
+    "sub_sector": "包裝食品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6675.HK": {
+    "category": "半導體",
+    "code": "703010",
+    "hkex_hsic_ind": "Information Technology - Semiconductors",
+    "hkex_hsic_sub": "Semiconductors",
+    "industry": "資訊科技業",
+    "sub_sector": "半導體",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6715.HK": {
+    "category": "食物飲品",
+    "code": "251010",
+    "hkex_hsic_ind": "Consumer Staples - Food & Beverages",
+    "hkex_hsic_sub": "Packaged Foods",
+    "industry": "必需性消費",
+    "sub_sector": "包裝食品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6810.HK": {
+    "category": "資訊科技器材",
+    "code": "701020",
+    "hkex_hsic_ind": "Information Technology - IT Hardware",
+    "hkex_hsic_sub": "Computers & Peripherals",
+    "industry": "資訊科技業",
+    "sub_sector": "電腦及週邊器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6871.HK": {
+    "category": "工業工程",
+    "code": "101020",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Industrial Components & Equipment",
+    "industry": "工業",
+    "sub_sector": "工業零件及器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6872.HK": {
+    "category": "藥品及生物科技",
+    "code": "281010",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Pharmaceuticals",
+    "industry": "醫療保健業",
+    "sub_sector": "藥品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "6915.HK": {
+    "category": "藥品及生物科技",
+    "code": "281010",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Pharmaceuticals",
+    "industry": "醫療保健業",
+    "sub_sector": "藥品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "7630.HK": {
+    "category": "藥品及生物科技",
+    "code": "281020",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Biotechnology",
+    "industry": "醫療保健業",
+    "sub_sector": "生物技術",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "7666.HK": {
+    "category": "藥品及生物科技",
+    "code": "281020",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Biotechnology",
+    "industry": "醫療保健業",
+    "sub_sector": "生物技術",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "7688.HK": {
+    "category": "工業工程",
+    "code": "101020",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Industrial Components & Equipment",
+    "industry": "工業",
+    "sub_sector": "工業零件及器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "9630.HK": {
+    "category": "工業工程",
+    "code": "101020",
+    "hkex_hsic_ind": "Industrials - Industrial Engineering",
+    "hkex_hsic_sub": "Industrial Components & Equipment",
+    "industry": "工業",
+    "sub_sector": "工業零件及器材",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  },
+  "9637.HK": {
+    "category": "藥品及生物科技",
+    "code": "281010",
+    "hkex_hsic_ind": "Healthcare - Pharmaceuticals & Biotechnology",
+    "hkex_hsic_sub": "Pharmaceuticals",
+    "industry": "醫療保健業",
+    "sub_sector": "藥品",
+    "system": "HSICS (Hang Seng Industry Classification System) 2026"
+  }
+}
