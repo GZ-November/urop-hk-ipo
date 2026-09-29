@@ -37,7 +37,14 @@ if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
 from workbook_transaction import workbook_transaction
-from expansion_mapping import EXPANSION_COLUMNS, ExpansionValueMapper
+from expansion_mapping import (
+    CORNERSTONE_ALLOCATION_HEADER,
+    CORNERSTONE_EVENT_COLS,
+    CORNERSTONE_UNLOCK_HEADER,
+    EXPANSION_COLUMNS,
+    ExpansionValueMapper,
+    is_no_cornerstone,
+)
 
 HEADER_FILL = PatternFill(start_color="FF00B0F0", end_color="FF00B0F0", fill_type="solid")
 HEADER_FONT = Font(name="Arial", size=11, bold=True, color="000000")
@@ -132,6 +139,44 @@ class WorkbookExpansionWriter:
             raise ValueError(f"Unknown expansion columns: {unknown}")
         return selected
 
+    def _workbook_no_cornerstone(self, company_rows: list[dict], selected: list) -> set[str]:
+        """从工作簿的基石解禁日/最终配售列识别无基石发行人（仅当写回含 Col 187-189 时）。
+
+        fail closed：缺列即报错，避免无基石发行人被写入解禁 CAR / 成交量冲击。
+        """
+        if not any(c[0] in CORNERSTONE_EVENT_COLS for c in selected):
+            return set()
+        wb = openpyxl.load_workbook(self.book_path, read_only=True, data_only=True)
+        try:
+            ws = wb[self.cfg["sheet"]]
+            header_col = {
+                " ".join(str(v or "").split()).lower(): i
+                for i, v in enumerate(next(ws.iter_rows(min_row=1, max_row=1, values_only=True)), start=1)
+            }
+            cols = {}
+            for header in (CORNERSTONE_UNLOCK_HEADER, CORNERSTONE_ALLOCATION_HEADER):
+                c = header_col.get(" ".join(header.split()).lower())
+                if c is None:
+                    raise ValueError(f"Workbook missing cornerstone column: {header!r}")
+                cols[header] = c
+            absent = set()
+            for company in company_rows:
+                r = company["row"]
+                if is_no_cornerstone(ws.cell(r, cols[CORNERSTONE_UNLOCK_HEADER]).value,
+                                     ws.cell(r, cols[CORNERSTONE_ALLOCATION_HEADER]).value):
+                    absent.add(self._norm_code(company["code"]))
+            return absent
+        finally:
+            wb.close()
+
+    @staticmethod
+    def _norm_code(code) -> str:
+        code_str = str(code).strip()
+        if not code_str.endswith(".HK"):
+            digits = "".join(ch for ch in code_str if ch.isdigit())
+            code_str = f"{int(digits):04d}.HK"
+        return code_str
+
     def _plan(self, company_rows: list[dict],
               selected: list) -> list[tuple[int, str, int, object, str]]:
         """解析全部待写单元格 (row, code, col, value, format)，不触碰工作簿。"""
@@ -166,6 +211,7 @@ class WorkbookExpansionWriter:
         logger.info(f"Opening transaction on {self.book_path}...")
         from cohort import read_companies
         company_rows = read_companies(self.cfg)
+        self.mapper.no_cornerstone |= self._workbook_no_cornerstone(company_rows, selected)
         planned = self._plan(company_rows, selected)
 
         with workbook_transaction(self.book_path, operation="academic_expansion", dry_run=dry_run) as wb:

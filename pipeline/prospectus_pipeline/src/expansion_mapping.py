@@ -64,6 +64,23 @@ EXPANSION_COLUMNS = [
     (202, "2025 pricing reform regime", "@", "发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM)"),
 ]
 
+# 基石解禁事件窗字段 (Col 187-189)：无基石发行人不存在该事件，必须留空。
+CORNERSTONE_EVENT_COLS = frozenset({187, 188, 189})
+CORNERSTONE_UNLOCK_HEADER = "Earliest cornerstone unlock date (dd/mm/yy)"
+CORNERSTONE_ALLOCATION_HEADER = "Final cornerstone allocation (% of base offer)"
+
+
+def is_no_cornerstone(unlock_date: Any, allocation: Any) -> bool:
+    """与 tools/external/flags.py 一致：解禁日为 NA 或最终基石配售为 0 即确认无基石。"""
+    if isinstance(unlock_date, str) and unlock_date.strip().upper() == "NA":
+        return True
+    if allocation is None or isinstance(allocation, bool):
+        return False
+    try:
+        return float(str(allocation).strip().rstrip("%")) == 0
+    except ValueError:
+        return False
+
 
 # 缺来源一律返回 None：不得以行业惯例值、默认券商名或其他列代填。
 def _present(val: Any) -> bool:
@@ -97,7 +114,8 @@ class ExpansionValueMapper:
 
     def __init__(self, out_master: Path, no_cornerstone: set[str] | None = None) -> None:
         self.out_master = Path(out_master)
-        # Issuers confirmed to have no cornerstone investors (see cornerstone.confirmed_absent).
+        # Issuers confirmed to have no cornerstone investors (see cornerstone.confirmed_absent);
+        # the writer also adds workbook-derived ones. Cols 187-189 are blank for them.
         self.no_cornerstone = set(no_cornerstone or ())
         self.stab_data: dict[str, dict[str, Any]] = {}
         self.horizon_data: dict[str, dict[str, dict[str, Any]]] = {}
@@ -269,6 +287,8 @@ class ExpansionValueMapper:
             return d_stat.get("max_drawdown"), "0.00%"
 
         # 3. 多重法定解禁日程与事件窗冲击 (Col 185-189)
+        if col_idx in CORNERSTONE_EVENT_COLS and code in self.no_cornerstone:
+            return None, "0.000" if col_idx == 189 else "0.00%"
         if col_idx == 185:
             rec = lks.get("Controlling_Shareholder_6M_Disposal", {})
             return _text(rec.get("expiry_date")), "yyyy-mm-dd"
