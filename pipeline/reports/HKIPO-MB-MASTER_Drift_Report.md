@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-09-29 23:55:03 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
+- **生成时间**：2026-09-30 00:02:18 | **cohort 数**：5 | **样本合计**：148 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -71,7 +71,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Interest-bearing debt at year-1 end` | 86.7% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Technology commercialization stage` | 53.3% | 51.9% | 100.0% | 84.4% | 91.3% |
 | `Debt repayment (% of planned net IPO proceeds)` | 100.0% | 92.6% | 100.0% | 95.6% | 100.0% |
-| `Place of incorporation` | 100.0% | 88.9% | 100.0% | 17.8% | 100.0% |
+| `Place of incorporation` | 100.0% | 88.9% | 100.0% | 22.2% | 100.0% |
 | `Financial statement unit multiplier` | 53.3% | 92.6% | 100.0% | 91.1% | 39.1% |
 | `Year-1 net sales (original, pre-annualization)` | 86.7% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `Year-1 profit before tax (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
@@ -146,7 +146,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Pre-IPO institutional shareholding (%)` | 82.2% | 100.0% | +17.8pp |
 | `Earliest Pre-IPO investment round` | 84.4% | 73.9% | -10.5pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 69.6% | -10.4pp |
-| `Place of incorporation` | 17.8% | 100.0% | +82.2pp |
+| `Place of incorporation` | 22.2% | 100.0% | +77.8pp |
 | `Financial statement unit multiplier` | 91.1% | 39.1% | -52.0pp |
 | `Pricing date` | 42.2% | 52.2% | +10.0pp |
 | `Over-allotment shares actually issued` | 100.0% | 78.3% | -21.7pp |
