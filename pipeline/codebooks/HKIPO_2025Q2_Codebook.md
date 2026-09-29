@@ -3,7 +3,7 @@
 - **样本规模 (N)**：27 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-29 21:56:53 | **数据基准**：`HKIPO-MB2025Q2.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-29 22:44:10 | **数据基准**：`HKIPO-MB2025Q2.xlsx` (Sheet: NLR)
 
 ---
 
@@ -84,7 +84,7 @@
 | **BI** | `Top-tier VC/PE backing (1=yes; 0=no)` | 仅在本公司招股书确认一线知名 VC/PE 机构持有重要股权或领投时填 1；不得仅凭机构知名度推断其参与本公司投资。无法确认时填 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Sparse (11/27 (40.74%)) | 均值 0.73 / 中位数 1.00 / 区间 [0.00, 1.00] |
 | **BJ** | `Key Pre-IPO investors` | 仅列本公司招股书披露的上市前投资者，采用一致的英文全称/拼音并以分号分隔；同一投资者只记一次，不从其他 cohort 补名单。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (20/27 (74.07%)) | 共 20 种取值 ('Oceanpine Capital; Nanjing Jiangning; CICC SAIC Investment; Southeast Xinneng; Chuanghe Xincai; C&D Investment; Juxin Xihai; Lianhe Jiaying; Jiaxing Chenyue; Xiamen ITG Group; Nanjing Heyi; Anhui Haichuang': 1, 'LAV USD; King Star Med; Shanghai Yingjia; Orchids; Golden Sword; China Singapore Suzhou Industrial Park Ventures (CSVC)': 1, 'Zhongding No.5; Xiangtan Caixin; Changjiang Automobile Valley; Huzhou Qingyun; Jinhua Boleidun; Kesheng Center; Shandong Kinetic Energy; Rockets Capital L.P.; Broad-Ocean Motor': 1) |
 | **BK** | `Pre-IPO institutional shareholding (%)` | 上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (15/27 (55.56%)) | 均值 0.26 / 中位数 0.21 / 区间 [0.00, 0.69] |
-| **BL** | `Pre-IPO investor board seat (1=yes; 0=no)` | 只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。 | 浅蓝 | `boolean` | Ex-ante prospectus disclosure | Sparse (10/27 (37.04%)) | 1 (是): 3 家 (30.0%), 0 (否): 7 家 |
+| **BL** | `Pre-IPO investor board seat (1=yes; 0=no)` | 只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。 | 浅蓝 | `boolean` | Ex-ante prospectus disclosure | 100% 完备 | 1 (是): 11 家 (40.7%), 0 (否): 16 家 |
 | **BM** | `Earliest Pre-IPO investment round` | 从本公司招股书披露的 Pre-IPO 投资轮次中取最早一轮，保留披露的标准轮次名称；只有明确说明没有外部上市前投资时填 None，否则无法确认时 NA。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (20/27 (74.07%)) | 共 17 种取值 ('Series A': 4, 'Series Seed Financing (April 24, 2020)': 1, 'Series A financing (October 2018)': 1) |
 | **BN** | `Pre-IPO holding duration (years)` | 从最早 Pre-IPO 投资协议日期至本公司招股书日期计算年数，保留两位小数；起始日期无法确认则 NaN。每家公司必须使用自己的招股书日期，不沿用其他季度日期。 | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (15/27 (55.56%)) | 均值 7.40 / 中位数 7.37 / 区间 [2.20, 17.20] |
 | **BO** | `Ultimate controller type` | 最终控制人类型（如：自然人 / 家族 / 国资委 / 地方政府 / 外资 / 无实际控制人）。取 SUBSTANTIAL SHAREHOLDERS 与 Controlling Shareholders 段的实际控制人身份表述。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 24 种取值 ('Individual': 4, 'Individual (Ms. Cao and Dr. Chen, acting in concert)': 1, '无单一控股股东；创始人朱忠远博士与单一最大股东 LAV USD': 1) |
