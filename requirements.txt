@@ -8,4 +8,5 @@ xlrd>=2.0.1
 # Optional Econometric & Testing Suite
 pandas>=2.0.0
 statsmodels>=0.14.0
+matplotlib>=3.8
 pytest>=7.0.0
