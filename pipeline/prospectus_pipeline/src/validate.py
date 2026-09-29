@@ -3,9 +3,7 @@ from __future__ import annotations
 
 import json
 import math
-import re
 from pathlib import Path
-from typing import Any
 
 from contracts import (
     MISSING_NUMERIC,

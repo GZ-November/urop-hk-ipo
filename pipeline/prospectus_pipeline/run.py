@@ -229,7 +229,7 @@ def cmd_registry(cfg, args, companies):
             return 1
         print("✅ registry 一致性校验通过：variable_catalog ↔ 最新 Codebook ↔ registry")
         return 0
-    from master_panel import REGISTRY_NAME, build_registry
+    from master_panel import build_registry
     from paths import registry_path as layout_registry_path
     out_path = layout_registry_path(WS)
     registry = build_registry(WS, out_path)
@@ -251,7 +251,7 @@ def cmd_registry(cfg, args, companies):
 
 def cmd_master(cfg, args, companies):
     """合并全部 cohort clean CSV 为 master 面板 + 漂移报告。"""
-    from master_panel import MASTER_STEM, REGISTRY_NAME, build_master
+    from master_panel import build_master
     from paths import registry_path as layout_registry_path
     summary = build_master(WS, layout_registry_path(WS), derive=bool(getattr(args, "derive", False)))
     print(f"\nMaster 面板：{summary['master_csv']}")

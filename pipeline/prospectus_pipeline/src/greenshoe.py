@@ -20,7 +20,6 @@ import datetime as dt
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 
 import requests
 from storage import atomic_json, official_files

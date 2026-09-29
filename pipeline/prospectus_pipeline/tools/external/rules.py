@@ -21,7 +21,6 @@ import argparse
 import datetime as dt
 import json
 import re
-import shutil
 import sys
 from pathlib import Path
 

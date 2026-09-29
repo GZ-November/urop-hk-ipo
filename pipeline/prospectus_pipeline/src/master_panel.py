@@ -29,10 +29,9 @@ from typing import Any, NamedTuple
 
 import yaml
 
-from paths import (  # noqa: E402
-    CODEBOOKS as CODEBOOKS_SUBDIR, EXPORTS as EXPORTS_SUBDIR, MASTER_STEM,
-    REGISTRY_NAME, REPORTS as REPORTS_SUBDIR,
-    codebook_md_path, drift_report_path, exports_dir, exclusions_path, master_csv_path,
+from paths import (  # noqa: E402,F401  (MASTER_STEM / REGISTRY_NAME re-exported for tests)
+    CODEBOOKS as CODEBOOKS_SUBDIR, MASTER_STEM, REGISTRY_NAME,
+    drift_report_path, exports_dir, master_csv_path,
     registry_path as layout_registry_path,
 )
 
@@ -782,7 +781,7 @@ def _write_report(path: Path, s: dict[str, Any], has_registry: bool) -> None:
     lines.append("")
     lines.append(f"- **生成时间**：{now} | **cohort 数**：{len(s['cohort_order'])} | "
                  f"**样本合计**：{s['total_rows']} 家 | **变量数**：{s['variable_count']}")
-    lines.append(f"- **复现命令**：`python3 run.py master`")
+    lines.append("- **复现命令**：`python3 run.py master`")
     lines.append(f"- **Master 数据**：`{Path(s['master_csv']).name}`（cohort 列已前置，本地产物不入库）")
     if s.get("derived_columns"):
         lines.append(f"- **派生比率列**：{', '.join(s['derived_columns'])}（免汇率，`--derive` 生成）")

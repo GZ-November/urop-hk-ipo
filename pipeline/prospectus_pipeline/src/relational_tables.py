@@ -24,7 +24,6 @@ import re
 from pathlib import Path
 from typing import Any, Optional
 
-import openpyxl
 
 logger = logging.getLogger("relational_tables")
 
@@ -334,8 +333,8 @@ if __name__ == "__main__":
     issuers = load_issuers(cfg=cfg)
     engine = RelationalTableEngine(cfg=cfg)
     i_out, s_out = engine.run(issuers)
-    print(f"\n=======================================================")
-    print(f"Relational Tables Generation Complete")
-    print(f"=======================================================")
+    print("\n=======================================================")
+    print("Relational Tables Generation Complete")
+    print("=======================================================")
     print(f"Investor Relational Table    : {i_out}")
     print(f"Underwriter Relational Table : {s_out}")

@@ -24,7 +24,6 @@ import logging
 from dataclasses import dataclass
 from pathlib import Path
 
-import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
@@ -218,9 +217,9 @@ class WorkbookExpansionWriter:
             col_span = f"{selected[0][0]}-{selected[-1][0]}" if selected else "none"
             logger.info(f"Successfully populated {written_cells} cells across columns {col_span} ({len(company_rows)} issuers)")
 
-        print(f"\n=======================================================")
+        print("\n=======================================================")
         print(f"Workbook Academic Expansion Complete (Cols {col_span})")
-        print(f"=======================================================")
+        print("=======================================================")
         print(f"Target Workbook : {self.book_path}")
         print(f"Columns Written : {', '.join(str(c[0]) for c in selected)}")
         print(f"Cells Written   : {len(company_rows)} companies × {len(selected)} columns = {written_cells:,} data cells")

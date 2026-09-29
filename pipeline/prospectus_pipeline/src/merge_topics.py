@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 from typing import Any
 
@@ -25,11 +24,8 @@ from contracts import (
 )
 from storage import atomic_json
 from topic_schema import (
-    TOPIC_DEFINITIONS,
     TOPIC_KEYS,
     get_field_to_topic_map,
-    get_topic_fields,
-    validate_topic_completeness,
 )
 
 

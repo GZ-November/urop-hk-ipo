@@ -27,7 +27,6 @@ import argparse
 import datetime as dt
 import json
 import logging
-import math
 import statistics
 from pathlib import Path
 from typing import Any, Optional
@@ -406,8 +405,8 @@ if __name__ == "__main__":
     engine = MarketPanelEngine(cfg=cfg)
     issuers = load_issuers(cfg=cfg)
     d_out, h_out = engine.run(issuers)
-    print(f"\n=======================================================")
-    print(f"Market & Microstructure Panel Construction Complete")
-    print(f"=======================================================")
+    print("\n=======================================================")
+    print("Market & Microstructure Panel Construction Complete")
+    print("=======================================================")
     print(f"Daily Market Panel : {d_out}")
     print(f"Horizon Summary    : {h_out}")
