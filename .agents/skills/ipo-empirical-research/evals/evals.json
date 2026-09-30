@@ -1,0 +1,43 @@
+{
+  "skill_name": "ipo-empirical-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请帮我设计一个研究基石投资者参与对港股 IPO 首日抑价率影响的实证模型，样本是 2026 年主板上市的约 90 家公司，给出 Python 代码和 LaTeX 三线表。",
+      "expected_output": "Mechanism with competing channels; log IR LHS; cornerstone share defined with denominator; pre-pricing controls separated from post-pricing oversubscription; coarse FE for N~90; HC3 plus month-clustered SEs with wild bootstrap given few clusters; endogeneity design; pyfixest code with one estimation sample; booktabs table with placeholders only.",
+      "files": [],
+      "assertions": [
+        "Treats final retail oversubscription as post-pricing / endogenous rather than a clean determinant",
+        "Uses a NaN-safe winsorization (not scipy.stats.mstats.winsorize on data with NaN)",
+        "Reports wild cluster bootstrap or HC3 because clusters are few",
+        "Does not present invented coefficients as results",
+        "Mentions the Aug-2025 HKEX reform or Mechanism A/B as a regime consideration"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have monthly returns for 400 HK IPOs listed 2015-2022 and the HSCI total return index. Compute 36-month BHARs and tell me whether IPOs underperform. Some firms were delisted or suspended for months.",
+      "expected_output": "BHAR from after first-day close; delisting filled with benchmark; suspension treatment; skewness-adjusted and bootstrapped t; median and % positive; wealth relative; calendar-time portfolio alpha EW and VW; caveat that HSCI is market-adjusted not matched-firm.",
+      "files": [],
+      "assertions": [
+        "Starts aftermarket compounding after the first-day close",
+        "Uses skewness-adjusted t and/or bootstrapped test",
+        "Adds calendar-time portfolio regression",
+        "Explains delisting and suspension handling",
+        "Discusses benchmark choice bias (new listing / rebalancing / skewness)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can I use a regression discontinuity at the 15x/50x/100x clawback thresholds to study how retail allocation affects first-day returns in Hong Kong IPOs?",
+      "expected_output": "Correct thresholds pre and post Aug 2025 (PN18 30/40/50 vs Mechanism A 15/25/35, Mechanism B no clawback); running variable is oversubscription measured on the initial allocation; manipulation/sorting concern and density test; oversubscription is itself realized with first-day demand so RD compares IPOs with similar demand; waivers; small N near cutoffs.",
+      "files": [],
+      "assertions": [
+        "States the correct pre-reform and post-reform clawback percentages",
+        "Raises the density/manipulation test",
+        "Notes that Mechanism B and 18C issuers have no clawback thresholds",
+        "Warns about limited observations near thresholds"
+      ]
+    }
+  ]
+}
