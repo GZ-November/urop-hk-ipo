@@ -33,6 +33,6 @@ HC3 and listing-month CR1 inference are shown together. The restricted wild clus
 
 Unknown classification flags remain missing; invalid log inputs are excluded. Module A reports availability per input and matches MLOT/proceeds and IPO/benchmark observations for weighted statistics. Missing counts cannot by themselves distinguish uncollected from unmatured data; inspect the source cohort and horizon records.
 
-[Extended analysis and data review](../docs/EXTENDED_ANALYSIS_2026.md) · [Academic extensions](../docs/ACADEMIC_EXTENSIONS_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Research plan](../docs/RESEARCH_PLAN_2026.md) · [Review and fixes](../docs/CODE_REVIEW_2026-09-30.md)
+[Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Current source review](../docs/AGY_INTEGRATION_2026-09-30.md) · [Historical write-ups](../docs/archive/README.md)
 
 A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/AGY_INTEGRATION_2026-09-30.md).
