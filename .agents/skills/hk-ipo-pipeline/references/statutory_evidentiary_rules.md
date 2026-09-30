@@ -1,9 +1,9 @@
 # HK IPO Statutory Evidentiary Rules & Chapter Authority Hierarchy
 # 招股书法定效力与审计权威层级手册 (Legal Evidentiary Standard)
 
-本项目采集的所有数据用于金融计量经济学实证研究，**必须具备严格的法律约束力（Legal Enforceability）与审计凭据（Auditor Certification）**。
+本项目的取值政策要求保留原始披露、页码、引文、单位及期间依据。字段来源章节的选择是研究取值与复核政策；它不代表每个字段均经会计师审计，也不构成法律效力或数据正确性的保证。
 
-在香港证券与资本市场法（《公司（清盘及杂项条文）条例》、《证券及期货条例》、香港交易所《主板上市规则》）监管体系下，招股书（Prospectus）各章节具有截然不同的法律效力与责任层级。流水线必须严格固定在具有**最高法定效力、法定披露义务与申报会计师审计认证**的正式章节中获取数据，杜绝非正式或辅助章节（如 Definitions、Summary）的起草笔误与口径偏离。
+优先使用对应字段的详细披露章节和经审计的集团综合财务报表，核对摘要与正文的口径冲突。以下章节优先级属于项目取值政策；实际章节编号因发行人而异。`col_*` 是历史 schema 标识，应通过当前表头映射读取，不能当作现工作簿的物理列地址。
 
 ---
 
@@ -99,7 +99,7 @@
 
 ## 3. 流水线自动化硬防线实现 (Pipeline Enforcement)
 
-流水线在代码层级建立以下五重不可绕过的物理闸门：
+下面描述取值与校验流程，不能推断所有政策均有代码硬门禁。`contracts.py` 的 Definitions 页面拒绝目前针对 `col_BP`，母公司单体报表拒绝针对其综合财务字段集合。页码/引文存在、数量级合理或跨列恒等式通过，仍不能替代字段语义的独立复核；以当前代码及测试确定具体执行范围。
 
 1. **切片层 (`pdfprep.py`)**：
    - 强制将附录五《法定及一般资料》（`STATUTORY AND GENERAL INFORMATION`）、附录一《会计师报告》（`ACCOUNTANTS' REPORT`）、《股本》（`SHARE CAPITAL`）作为固定最高权重窗口切入抽取包；
@@ -114,7 +114,7 @@
    - 明文规定：`col_CF` 与 `col_CG` 必须严格与 `col_AT` 期间强绑定，严禁错采 2024 全年列；金额必须乘以单位乘数换算为基本货币单位。
 
 4. **审计与合约核验层 (`contracts.py` & `validate.py`)**：
-   - `is_definitions_page(pg_text)` 硬门禁：任何法定字段若引用页码落在 Definitions 章节，校验阶段直接判定为 `ERROR` 阻断写回；
+   - `is_definitions_page(pg_text)` 硬门禁：`col_BP` 若引用页码落在 Definitions 章节，校验阶段判定为 `ERROR`；其他字段的来源政策仍需逐项复核；
    - `is_company_level_statement(pg_text)` 硬门禁：严禁集团财务指标引用母公司单体资产负债表；
    - **毛利率天花板硬门禁（Gross Margin Ceiling Gate）**：
      $$col\_CF \le col\_AH \times \frac{\text{stub\_months}}{12} \times 1.01$$
@@ -124,7 +124,7 @@
 
 5. **宏观与微观跨列全量勾稽层 (`cross_check.py`)**：
    - 成立日期 `col_BP` 必须早于上市日期 `col_E`；
-   - 全量 38 家公司毛利率与期间对齐勾稽（Check 8）；
+   - 当前所选 cohort 的毛利率与期间对齐勾稽（Check 8）；
    - 全量货币单位基准数量级一致性校验（Check 9）；
    - 资本开支边界与合理性校验（Check 10）。
 

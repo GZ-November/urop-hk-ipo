@@ -1,123 +1,87 @@
-# Empirical Econometric Analysis Guide (HKEX IPOs)
+# Empirical analysis of HK IPO data
 
-This reference manual outlines econometric methodologies, empirical model specifications, and computational workflows for analyzing the Hong Kong Main Board IPO dataset constructed by this pipeline.
+## Choose the study sample explicitly
 
----
+This skill supports any requested year, cohort or multi-year interval. Collection
+and the master storage layer remain broader than an individual study. Select by
+observed listing dates, check cohort/date agreement and issuer uniqueness, and
+report requested versus actual coverage and exclusions. Official report coverage
+and extraction evidence must also be checked; a populated workbook does not
+establish either. Do not import a previous study's date filter as a global rule.
 
-## 1. Primary Empirical Research Dimensions
+Read the root `analysis/README.md` and the applicable research plan before using
+existing scripts. The current Module A/B and breakdown scripts implement a
+2026-only study with `select_2026`; `make analysis` runs those scripts. For an
+all-years or other-period analysis, implement and validate the requested selector
+and applicable specifications instead of presenting those outputs as all-data
+results. Changing the skill's scope does not itself change an existing study.
 
-### Dimension A: First-Day Underpricing & Information Asymmetry
-- **Theoretical Grounding**: Winner's curse model (Rock, 1986), signalling theory (Allen & Faulhaber, 1989), and information asymmetry (Beatty & Ritter, 1986).
-- **Core Dependent Variable**:
-  $$\text{Underpricing}_i = \frac{P_{i,\text{close}} - P_{i,\text{offer}}}{P_{i,\text{offer}}} = \frac{\text{col\_DH} - \text{col\_K}}{\text{col\_K}}$$
-- **Key Determinants**:
-  - **Retail Investor Sentiment**: Log-transformed public subscription multiple: $\ln(1 + \text{col\_CM})$.
-  - **Price Discovery within Offer Range**:
-    $$\text{Price Position}_i = \frac{\text{col\_K} - \text{col\_S}}{\text{col\_T} - \text{col\_S}}$$
-  - **Market Momentum**: 20-day Hang Seng Index return prior to prospectus date (`col_DD`).
-  - **Macroeconomic Liquidity**: 1-month HIBOR on T-1 (`col_DF`) and HKMA Aggregate Balance (`col_DG`).
-  - **Issue Characteristics**: Base offering size (`col_CS`), gross proceeds (`col_CV`), and underwriter syndicate structure.
+## Inputs and variable construction
 
-### Dimension B: Cornerstone Investor Certification & Liquidity Effects
-- **Theoretical Grounding**: Certification hypothesis vs. liquidity overhang hypothesis.
-- **Key Variables**:
-  - **Cornerstone Allocation Ratio**: Percentage of base offer shares allocated to cornerstone investors (`col_CK`).
-  - **Lockup Duration**: Difference between earliest lockup expiry and listing date (`col_CL` - `col_E`).
-  - **Public Free Float**: Immediate market free float percentage (`col_DA`).
-- **Empirical Question**: Does high cornerstone participation alleviate retail uncertainty, or does restricted public float exacerbate secondary market volatility?
+Use the master clean export (`pipeline/exports/HKIPO-MB-MASTER_clean.csv`) and
+registry types. Resolve semantic headers/slugs; legacy `col_*` keys are extraction
+identifiers and cannot be used as assumed physical columns or CSV names.
 
-### Dimension C: Regulatory Regimes & Offering Mechanisms
-- **Chapter 18C (Specialist Tech)**: Indicator `col_BM` (1 for Chapter 18C issuers, 0 otherwise).
-- **Chapter 18A (Biotech)**: Indicator `col_BL` (1 for Chapter 18A issuers, 0 otherwise).
-- **Dual Listing & WVR**: Dual A+H (`col_BJ`) and Weighted Voting Rights (`col_BK`).
-- **FINI Allotment Framework**: Mechanism A (statutory clawback schedule) vs Mechanism B (issuer-determined flexible clawback) (`col_DN`).
+- Initial return: day-one close / final offer price minus one.
+- Base proceeds: final offer price times final global-offering shares before
+  over-allotment. Distinguish gross base proceeds from issuer net proceeds.
+- Aftermarket BHR from day-one close excludes the initial return. Keep it distinct
+  from total return from offer price and CAR versus a benchmark.
+- Preserve missing/unknown classifications. No blanket `fillna(0)` for backing,
+  sponsor tier, listing route or A+H flags. An exclusive route group and an
+  independent A+H flag can overlap differently; report their definitions.
+- Confirm percentage units from the registry and producer before dividing by 100;
+  do not infer scale from the label alone.
+- Positive log inputs and finite values are required. `ln(subscription multiple)`
+  and `ln(1 + subscription multiple)` are different specifications; use the study's
+  definition. Fixed-price offers have no observed within-range price position;
+  do not substitute 0.5 for every missing price position.
+- Keep original financial-period values distinct from annualized values and
+  stocks distinct from flows. Do not mix unconverted currencies in regressors.
 
----
+Missing counts need source interpretation: unavailable disclosure, absent
+extraction, unknown classification, immature horizon and missing market/benchmark
+observations are different causes. Consult `data_quality_and_events.md` before
+using regenerated or previously written event fields.
 
-## 2. Baseline Econometric Specifications
+## Descriptive statistics and estimation
 
-### Model 1: Cross-Sectional OLS with Robust Standard Errors
+Report availability and denominators for each input. Weighted returns use matched
+money-left-on-table and positive base proceeds; aggregate wealth relatives use
+matched stock/benchmark observations. Do not count missing flags as negative
+classifications. Unequal horizon maturity changes the sample behind each table.
 
-$$\text{Underpricing}_i = \beta_0 + \beta_1 \ln(\text{SubMultiple}_i) + \beta_2 \text{CornerstonePct}_i + \beta_3 \text{PricePosition}_i + \beta_4 \text{HSI20D}_i + \beta_5 \text{HIBOR}_i + \gamma \mathbf{X}_i + \delta_{\text{industry}} + \varepsilon_i$$
+Use a consistent finite complete-case sample for nested model comparisons, or
+explicitly report why samples differ. Log sample-selection reasons (which can
+overlap), unique exclusions and final N. Require residual degrees of freedom,
+full-rank design matrices and at least two clusters for clustered covariance.
+Reject and count singular pairs-bootstrap draws. State cluster definitions,
+small-cluster limitations, and any resampling method's supported bounds.
 
-Where:
-- $\mathbf{X}_i$ is a vector of firm-level controls (firm age, total assets, net margin, leverage).
-- $\delta_{\text{industry}}$ represents Hang Seng Industry Classification (HSIC) 2-digit or 6-digit fixed effects (`col_BN`).
-- Standard errors are clustered at the industry level or estimated using Huber-White heteroskedasticity-robust standard errors (HC1/HC3).
+Use the chosen research plan rather than a generic regression template. Avoid
+adding every available regressor or fixed effect to a small sample. Describe
+retail demand, cornerstone allocation and data-informed timing controls as
+potentially endogenous; passing diagnostics does not establish causality.
 
----
+## Current repository study (conditional reference)
 
-## 3. Implementation Code: Python (pandas + statsmodels)
+For requests about the current 2026 study, authoritative specifications are in
+`docs/RESEARCH_PLAN_2026.md`, `analysis/README.md` and
+`analysis/module_b_underpricing_regression.py`:
 
-```python
-import numpy as np
-import pandas as pd
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
+- Module A describes quarters, routes, pricing, VC/PE backing and aftermarket
+  performance within 2026; it reports input availability and matched denominators.
+- Module B uses log(1 + initial return) and one common finite sample for M1–M4,
+  including the demand variable and listing month. Each main model includes the
+  April–June 2026 control. M3/M4 have nine/ten explanatory variables.
+- 18A/18C are descriptive groups; the state-owned cornerstone study is separate.
+- Robustness includes raw returns, 1/99 winsorization, drop-top-three, median
+  regression, quarter effects and pairs bootstrap. Quarter effects replace both
+  market variables and the hot-window control.
+- Inference reports HC3, listing-month CR1 and restricted wild cluster bootstrap;
+  exact Rademacher enumeration supports at most 16 clusters in this implementation.
 
-# 1. Load clean econometric CSV exported by the pipeline
-df = pd.read_csv("out/HKIPO-MB2026Q1_clean.csv")
-
-# 2. Variable Construction
-df["underpricing"] = (df["col_DH"] - df["col_K"]) / df["col_K"]
-df["ln_sub_mult"] = np.log1p(df["col_CM"])
-df["cornerstone_ratio"] = df["col_CK"] / 100.0
-df["offer_range_span"] = df["col_T"] - df["col_S"]
-df["price_pos"] = np.where(
-    df["offer_range_span"] > 0,
-    (df["col_K"] - df["col_S"]) / df["offer_range_span"],
-    0.5
-)
-df["hsi_momentum"] = df["col_DD"]
-df["hibor_1m"] = df["col_DF"]
-df["is_18c"] = df["col_BM"].fillna(0).astype(int)
-df["is_18a"] = df["col_BL"].fillna(0).astype(int)
-df["industry"] = df["col_BN"].astype(str).str[:2]  # HSICS top-level sector
-
-# 3. Model Estimation: OLS with HC3 Robust Standard Errors
-formula = (
-    "underpricing ~ ln_sub_mult + cornerstone_ratio + price_pos + "
-    "hsi_momentum + hibor_1m + is_18c + is_18a + C(industry)"
-)
-model = smf.ols(formula, data=df).fit(cov_type="HC3")
-
-print(model.summary())
-```
-
----
-
-## 4. Implementation Code: Stata (`.do` script)
-
-```stata
-* ==============================================================================
-* HK IPO Econometric Analysis Script (Stata 16+)
-* ==============================================================================
-
-clear all
-set more off
-
-* 1. Import clean CSV generated by pipeline
-import delimited "out/HKIPO-MB2026Q1_clean.csv", clear bindquote(strict) varnames(1)
-
-* 2. Construct variables
-gen underpricing = (col_dh - col_k) / col_k
-gen ln_sub_mult = ln(1 + col_cm)
-gen cornerstone_pct = col_ck
-gen price_position = (col_k - col_s) / (col_t - col_s) if (col_t > col_s)
-replace price_position = 0.5 if missing(price_position)
-gen hsi_20d = col_dd
-gen hibor_1m = col_df
-gen tech_18c = (col_bm == 1)
-gen biotech_18a = (col_bl == 1)
-gen ind2 = substr(string(col_bn, "%06.0f"), 1, 2)
-destring ind2, replace
-
-* 3. Summary statistics
-summarize underpricing ln_sub_mult cornerstone_pct price_position hsi_20d hibor_1m
-
-* 4. Baseline OLS regression with robust standard errors
-regress underpricing ln_sub_mult cornerstone_pct price_position hsi_20d hibor_1m i.ind2, vce(robust)
-
-* 5. Outsheet results
-outreg2 using "out/regression_table.doc", replace ctitle("Model 1: Underpricing")
-```
+These are study-specific choices, not universal requirements for other years or
+research questions. Re-export updated cohort workbooks, rebuild the master, then
+run the appropriate analysis. Record whether outputs were only rerun or whether
+their input evidence and derived values were also reconciled.
