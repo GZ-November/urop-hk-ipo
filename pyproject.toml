@@ -21,6 +21,8 @@ dependencies = [
 [project.optional-dependencies]
 analysis = [
     "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
     "statsmodels>=0.14.0",
     "matplotlib>=3.8",
 ]
@@ -31,5 +33,11 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-testpaths = ["pipeline/prospectus_pipeline/tests"]
+testpaths = ["pipeline/prospectus_pipeline/tests", "analysis/tests"]
 python_files = ["test_*.py"]
+
+# This is a source-checkout CLI; installing the project installs its dependency
+# profiles. Runtime datasets and local scratch directories are never packages.
+[tool.setuptools]
+packages = []
+py-modules = []

@@ -26,24 +26,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Verify syntax (py_compile)
-        run: |
-          python -m py_compile run.py
-          find "pipeline/prospectus_pipeline/src" -name "*.py" -exec python -m py_compile {} +
-          find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python -m py_compile {} +
-
-      - name: Lint (unused imports, undefined names, redefinitions)
+      - name: Install development checks
         run: |
           pip install flake8
-          python -m flake8 --select=F401,F811,F821,F541 --exclude=archive run.py analysis pipeline
 
-      - name: Run automated test suite
-        run: |
-          python -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
-
-      - name: Verify registry consistency (catalog <-> codebook <-> registry)
-        run: |
-          python run.py registry --check
+      - name: Lint, pipeline and analysis tests, registry consistency
+        run: make check-code PYTHON=python
 
       - name: Verify CLI entry point
         run: |

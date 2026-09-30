@@ -39,18 +39,7 @@ sys.path.insert(0, str(ROOT))
 import master_contracts
 from cohort import load_cfg
 from market_observations import read_daily_market_panel
-
-
-def add_calendar_months(d: dt.date, months: int) -> dt.date:
-    """增加自然月，处理月份天数截断。"""
-    month = d.month - 1 + months
-    year = d.year + month // 12
-    month = month % 12 + 1
-    # 获取目标月的最后一天
-    import calendar
-    max_day = calendar.monthrange(year, month)[1]
-    day = min(d.day, max_day)
-    return dt.date(year, month, day)
+from date_windows import add_calendar_months  # noqa: F401 (compatibility re-export)
 
 
 class LockupPanelEngine:
@@ -102,54 +91,47 @@ class LockupPanelEngine:
         if u_idx is None:
             return None, None, None, None, "POST_UNLOCK_TRADING_MISSING"
 
-        # 1. 计算 [-20, +20] 窗口累计超额收益 CAR (vs. HSI)
-        i_m20 = max(0, u_idx - 20)
-        i_p20 = min(len(bars) - 1, u_idx + 20)
-        car_20 = 0.0
-        for i in range(i_m20 + 1, i_p20 + 1):
-            r_stock = bars[i]["daily_return"]
-            d_curr = bars[i]["date"]
-            d_prev = bars[i - 1]["date"]
-            p_hsi_curr = self.hsi_map.get(d_curr)
-            p_hsi_prev = self.hsi_map.get(d_prev)
-            r_bench = ((p_hsi_curr / p_hsi_prev) - 1.0) if (p_hsi_curr and p_hsi_prev) else 0.0
-            car_20 += (r_stock - r_bench)
+        import math
+        reasons: set[str] = set()
 
-        # 2. 计算 [-5, +5] 窗口 CAR
-        i_m5 = max(0, u_idx - 5)
-        i_p5 = min(len(bars) - 1, u_idx + 5)
-        car_5 = 0.0
-        for i in range(i_m5 + 1, i_p5 + 1):
-            r_stock = bars[i]["daily_return"]
-            d_curr = bars[i]["date"]
-            d_prev = bars[i - 1]["date"]
-            p_hsi_curr = self.hsi_map.get(d_curr)
-            p_hsi_prev = self.hsi_map.get(d_prev)
-            r_bench = ((p_hsi_curr / p_hsi_prev) - 1.0) if (p_hsi_curr and p_hsi_prev) else 0.0
-            car_5 += (r_stock - r_bench)
+        def car(start: int, end: int) -> Optional[float]:
+            # CAR [a,b] 包含 a 与 b 两日收益，a 日基准收益需 a-1 的收盘价。
+            if start < 1 or end >= len(bars):
+                reasons.add("INCOMPLETE_WINDOW")
+                return None
+            total = 0.0
+            for i in range(start, end + 1):
+                r_stock = bars[i].get("daily_return")
+                if r_stock is None or not math.isfinite(r_stock):
+                    reasons.add("MISSING_RETURN_DATA")
+                    return None
+                curr = self.hsi_map.get(bars[i]["date"])
+                prev = self.hsi_map.get(bars[i - 1]["date"])
+                if (curr is None or prev is None or not math.isfinite(curr)
+                        or not math.isfinite(prev) or curr <= 0 or prev <= 0):
+                    reasons.add("MISSING_BENCHMARK_DATA")
+                    return None
+                total += r_stock - (curr / prev - 1.0)
+            return round(total, 6)
 
-        # 3. 计算 [0, +60] 窗口 CAR（若成熟）
-        car_60 = None
-        if len(bars) >= u_idx + 60:
-            car_60 = 0.0
-            for i in range(u_idx + 1, u_idx + 61):
-                r_stock = bars[i]["daily_return"]
-                d_curr = bars[i]["date"]
-                d_prev = bars[i - 1]["date"]
-                p_hsi_curr = self.hsi_map.get(d_curr)
-                p_hsi_prev = self.hsi_map.get(d_prev)
-                r_bench = ((p_hsi_curr / p_hsi_prev) - 1.0) if (p_hsi_curr and p_hsi_prev) else 0.0
-                car_60 += (r_stock - r_bench)
-            car_60 = round(car_60, 6)
+        car_20 = car(u_idx - 20, u_idx + 20)
+        car_5 = car(u_idx - 5, u_idx + 5)
+        car_60 = car(u_idx, u_idx + 60)
 
-        # 4. 计算换手率异动比 (Volume Shock Ratio: Post-unlock [0, +20] Turnover / Pre-unlock [-20, -1] Turnover)
-        pre_to = [b["turnover"] for b in bars[i_m20:u_idx] if b["turnover"] > 0]
-        post_to = [b["turnover"] for b in bars[u_idx:i_p20 + 1] if b["turnover"] > 0]
-        avg_pre = sum(pre_to) / len(pre_to) if pre_to else 0.0
-        avg_post = sum(post_to) / len(post_to) if post_to else 0.0
-        vol_shock = round(avg_post / avg_pre, 4) if avg_pre > 0 else None
-
-        return round(car_20, 6), round(car_5, 6), car_60, vol_shock, "MATURED"
+        # 完整 [-20,-1] 与 [0,+20] 窗口；真实零成交额保留在均值分母中。
+        vol_shock = None
+        if u_idx >= 20 and u_idx + 20 < len(bars):
+            pre_to = [b["turnover"] for b in bars[u_idx - 20:u_idx]]
+            post_to = [b["turnover"] for b in bars[u_idx:u_idx + 21]]
+            if all(t is not None and math.isfinite(t) and t >= 0 for t in pre_to + post_to):
+                avg_pre = sum(pre_to) / len(pre_to)
+                avg_post = sum(post_to) / len(post_to)
+                vol_shock = round(avg_post / avg_pre, 4) if avg_pre > 0 else None
+        if vol_shock is None:
+            reasons.add("INCOMPLETE_WINDOW")
+        status = next((reason for reason in ("MISSING_BENCHMARK_DATA", "MISSING_RETURN_DATA", "INCOMPLETE_WINDOW")
+                       if reason in reasons), "MATURED")
+        return car_20, car_5, car_60, vol_shock, status
 
     def process_issuer_lockups(self, issuer: dict[str, Any]) -> list[dict[str, Any]]:
         """为单家发行人系统构建多重法定限售事件。"""
@@ -172,7 +154,7 @@ class LockupPanelEngine:
             "lockup_target_entity": "All Cornerstone Investors",
             "expiry_date": str(cs_date),
             "statutory_rule_basis": "HKEX Listing Practice / Rule 8.08 (Statutory 6-Month Undertaking)",
-            "locked_pct_approx": 40.0,  # 均值占基础发售约 35-50%
+            "locked_pct_approx": None,  # 未披露实际限售比例，不以惯例代填
             "car_m20_p20": car20,
             "car_m5_p5": car5,
             "car_0_p60": car60,
@@ -189,7 +171,7 @@ class LockupPanelEngine:
             "lockup_target_entity": "Controlling Shareholder(s)",
             "expiry_date": str(ctrl_1_date),
             "statutory_rule_basis": "Listing Rule 10.07(1)(a) (Cannot dispose of any shares in first 6 months)",
-            "locked_pct_approx": 50.0,
+            "locked_pct_approx": None,  # 未披露实际限售比例，不以惯例代填
             "car_m20_p20": car20,
             "car_m5_p5": car5,
             "car_0_p60": car60,
@@ -207,7 +189,7 @@ class LockupPanelEngine:
             "lockup_target_entity": "Controlling Shareholder(s)",
             "expiry_date": str(ctrl_2_date),
             "statutory_rule_basis": "Listing Rule 10.07(1)(b) (Cannot cease to be a controlling shareholder in second 6 months)",
-            "locked_pct_approx": 50.0,
+            "locked_pct_approx": None,  # 未披露实际限售比例，不以惯例代填
             "car_m20_p20": car20_12,
             "car_m5_p5": car5_12,
             "car_0_p60": car60_12,
@@ -225,7 +207,7 @@ class LockupPanelEngine:
                 "lockup_target_entity": "Senior Pre-IPO Investors (Key/Pathfinder)",
                 "expiry_date": str(senior_date),
                 "statutory_rule_basis": "Chapter 18C Guidance on Specialist Technology (12-Month Pathfinder Lockup)",
-                "locked_pct_approx": 15.0,
+                "locked_pct_approx": None,  # 未披露实际限售比例，不以惯例代填
                 "car_m20_p20": car20_12,
                 "car_m5_p5": car5_12,
                 "car_0_p60": car60_12,
@@ -242,7 +224,7 @@ class LockupPanelEngine:
                 "lockup_target_entity": "Chapter 18C Controlling Shareholder(s)",
                 "expiry_date": str(ctrl_24_date),
                 "statutory_rule_basis": "Chapter 18C Enhanced Lockup (24-Month Controlling Shareholder Lockup)",
-                "locked_pct_approx": 50.0,
+                "locked_pct_approx": None,  # 未披露实际限售比例，不以惯例代填
                 "car_m20_p20": car20_24,
                 "car_m5_p5": car5_24,
                 "car_0_p60": car60_24,

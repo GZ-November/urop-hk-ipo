@@ -5,7 +5,7 @@
   1. 结构化抽取稳价期起止日、稳价经理人、场内托单购买（价格区间、股数、金额）；
   2. 结构化抽取超额配售权（绿鞋）行使日期、行使股数、行使比例或失效未经行使事实；
   3. 构建托单支撑与稳价到期事件窗：
-     - 稳价结束日前后 [-5, +5] 交易日累计超额收益与回撤（测试“托单断崖效应”）；
+     - 稳价结束日前后 [-5, +5] 交易日价格收益（未扣除基准）；
      - 稳价结束日至后 20 个交易日 [0, +20] 流动性衰减与跌幅；
   4. 输出 master 交付物：out/master/stabilization_events.csv。
 """
@@ -53,6 +53,10 @@ PARSED_FIELDS = (
     "expired_unexercised",
 )
 RE_NO_PURCHASE = re.compile(r"no\s+(?:purchase|sale)\s+(?:or\s+sale\s+)?of\s+any\s+(?:H\s+|Offer\s+)?Shares\s+on\s+the\s+market\s+for\s+the\s+purpose\s+of\s+price\s+stabilization", re.I)
+RE_PURCHASE = re.compile(
+    r"(?:(?:purchases?\s+of|purchased)\s+(?:an\s+aggregate\s+of\s+)?[\d,]+\s+(?:H\s+|Offer\s+)?Shares\b"
+    r"|(?:H\s+|Offer\s+)?Shares\s+(?:were|have\s+been)\s+purchased\b)"
+    r".{0,200}?\b(?:market|stabili[sz]ation|stabili[sz]ing\s+actions)\b", re.I | re.S)
 RE_PURCHASE_RANGE = re.compile(rf"price\s+range\s+of\s+HK\$\s*({FLOAT_NUM})\s+to\s+HK\$\s*({FLOAT_NUM})", re.I)
 RE_OVER_ALLOC = re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:H\s+|Offer\s+)?Shares", re.I)
 RE_OVER_PCT = re.compile(r"representing\s+(?:approximately\s+)?([\d.]+)\s*%\s+of\s+the\s+(?:total\s+number\s+of\s+)?(?:Offer\s+|H\s+)?Shares", re.I)
@@ -149,8 +153,10 @@ class StabilizationPanelEngine:
 
         # 是否有场内托单购买（公告未涉及时为未知，而非 False）
         no_purchase = bool(RE_NO_PURCHASE.search(text_corpus))
-        if "no purchase" in lower or "stabilizing actions" in lower:
-            purchases_occurred = not no_purchase
+        if no_purchase:
+            purchases_occurred = False
+        elif RE_PURCHASE.search(text_corpus):
+            purchases_occurred = True
         else:
             purchases_occurred = None
 
@@ -221,7 +227,7 @@ class StabilizationPanelEngine:
             "shares_issued_under_option": ex_shares,
             "exercise_pct_of_option": ex_pct,
             "expired_unexercised": expired,
-            "announcement_date": str(stab_end_date) if stab_end_date else None,
+            "announcement_date": None,  # 结束日并非公告日；未解析独立发布日期时留空
             "source_url": source_label,
             "evidence_quote": quote_snip[:200],
             "stabilizing_manager_status": manager_status,
@@ -255,21 +261,25 @@ class StabilizationPanelEngine:
             return rec
 
         # [-5, +5] 窗口收益率
-        idx_m5 = max(0, end_idx - 5)
-        idx_p5 = min(len(bars) - 1, end_idx + 5)
-        p_m5 = bars[idx_m5]["close"]
-        p_p5 = bars[idx_p5]["close"]
-        rec["cliff_return_m5_p5"] = round((p_p5 / p_m5) - 1.0, 6) if p_m5 > 0 else None
+        rec["cliff_return_m5_p5"] = None
+        if end_idx >= 5 and end_idx + 5 < len(bars):
+            p_m5 = bars[end_idx - 5]["close"]
+            p_p5 = bars[end_idx + 5]["close"]
+            rec["cliff_return_m5_p5"] = round((p_p5 / p_m5) - 1.0, 6) if p_m5 > 0 else None
 
         # [0, +20] 稳价后 20 日表现
-        idx_p20 = min(len(bars) - 1, end_idx + 20)
+        rec["post_stab_return_p20"] = None
+        rec["volume_decay_post_stab"] = None
+        idx_p20 = end_idx + 20
+        if idx_p20 >= len(bars):
+            return rec
         p_0 = bars[end_idx]["close"]
         p_p20 = bars[idx_p20]["close"]
         rec["post_stab_return_p20"] = round((p_p20 / p_0) - 1.0, 6) if p_0 > 0 else None
 
         # 稳价期内日均成交额 vs 稳价后 20 日日均成交额
-        pre_turnovers = [b["turnover"] for b in bars[:end_idx + 1] if b["turnover"] > 0]
-        post_turnovers = [b["turnover"] for b in bars[end_idx + 1:idx_p20 + 1] if b["turnover"] > 0]
+        pre_turnovers = [b["turnover"] for b in bars[:end_idx + 1] if b["turnover"] >= 0]
+        post_turnovers = [b["turnover"] for b in bars[end_idx + 1:idx_p20 + 1] if b["turnover"] >= 0]
         avg_pre = sum(pre_turnovers) / len(pre_turnovers) if pre_turnovers else 0.0
         avg_post = sum(post_turnovers) / len(post_turnovers) if post_turnovers else 0.0
         rec["volume_decay_post_stab"] = round(avg_post / avg_pre, 6) if avg_pre > 0 else None

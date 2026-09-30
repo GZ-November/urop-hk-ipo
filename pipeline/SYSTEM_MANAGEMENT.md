@@ -11,7 +11,7 @@
 
 This document establishes the official systems engineering architecture, data governance protocols, cryptographic verification mechanisms, and standard operating procedures for the Hong Kong Main Board IPO dataset automation pipeline.
 
-The pipeline automates the ingestion, parsing, extraction, deterministic validation, cross-check auditing, and Excel compilation for HKEX Main Board disclosures across 120 econometric variables.
+The pipeline automates the ingestion, parsing, extraction, deterministic validation, cross-check auditing, and Excel compilation for HKEX Main Board disclosures across 202 research variables. Statistical and econometric analysis is restricted to issuers listed in 2026, including Module A.
 
 ### Core Architectural Axioms
 1. **Deterministic-First (0 LLM Token Baseline)**:
@@ -59,15 +59,15 @@ flowchart TD
     subgraph Quality_Assurance["Verification & Audit Matrix"]
         Rules_Engine["HKEX Listing Rules Engine\n(cross_check.py)"]
         Cell_Auditor["Cell-by-Cell Read-Only Audit\n(audit.py)"]
-        Test_Suite["Automated Test Suite\n(55/55 unittest)"]
+        Test_Suite["Pipeline and Analysis Tests\n(make check-code)"]
     end
 
     subgraph Delivery_Layer["Deliverable Compilation & Governance"]
         Snapshot_Mgr["Atomic Pre-Write Snapshot\n(backups/excel_snapshots/)"]
         Excel_Writer["Format-Preserving Writer\n(write_back.py)"]
-        Workbook["Canonical Workbook (SSOT)\n(HKIPO-MB2026Q1.xlsx)"]
-        CSV_Export["Econometric Clean CSV\n(out/*_clean.csv)"]
-        Codebook["161-Variable Codebook\n(out/*_Codebook.md)"]
+        Workbook["Canonical Cohort Workbook\n(cohorts/HKIPO-MB{cohort}.xlsx)"]
+        CSV_Export["Econometric Clean CSV\n(exports/*_clean.csv)"]
+        Codebook["202-Variable Codebook\n(codebooks/*_Codebook.md)"]
     end
 
     HKEX_NLR -->|Tier 1 Extraction| Workbook
@@ -100,9 +100,9 @@ The repository maintains strict boundary separation across six distinct director
 | Tier | Directory | Mutability | Description & Retention Policy |
 |---|---|---|---|
 | **Tier 0: Templates** | `templates/` | Read-Only | Master research templates (`HKIPO-MB-template-students.xlsx`, `HKIPO-GEM-template-students.xlsx`). Never modified in production. |
-| **Tier 1: Raw Sources** | `sources/` | Read-Only | Official, unedited HKEX New Listing Reports (`NLR2025_Eng.xlsx`, `NLR2026_Eng.xlsx`). Excluded from Git. |
-| **Tier 2: Working Cache** | `prospectus_pipeline/data/` | Transient / Rebuildable | Downloaded statutory PDFs, page text JSONL caches, and chapter evidence packets. Excluded from Git. |
-| **Tier 3: Verified Store** | `prospectus_pipeline/out/` | Hash-Signed | Authoritative extracted JSONs, cryptographic state hashes, clean CSVs, and academic codebooks. |
+| **Tier 1: Raw Sources** | `sources/` | Read-Only | Official, unedited HKEX New Listing Reports (`NLR2025_Eng.xlsx`, `NLR2026_Eng.xlsx`). Versioned public regulatory sources. |
+| **Tier 2: Working Cache** | `prospectus_pipeline/data/` | Transient / Rebuildable | Raw PDF, full-text and packet caches remain local; selected public market observations may be versioned. |
+| **Tier 3: Verified Store** | `prospectus_pipeline/out/` | Hash-Signed | Reviewed extracted JSONs and state metadata; canonical CSVs and codebooks are published to exports/ and codebooks/. Run logs are local-only. |
 | **Tier 4: Canonical Dataset** | `./` (`HKIPO-MB2026Q1.xlsx`) | Governed Read/Write | The single authoritative research database. Updated solely via `write_back.py` under automated snapshot control. |
 | **Tier 5: Disaster Recovery** | `backups/` | Append-Only | Timestamped full workbooks created before write operations, plus code milestones. |
 
@@ -119,8 +119,8 @@ Every issuer extraction follows a strictly sequenced four-phase state machine:
 1. **State 1: Extracted (`extracted`)**:
    - The extraction output (whether agentic or deterministic) is stored at `prospectus_pipeline/out/extracted/{CODE}.json`.
    - Every single field requires:
-     * `val`: Parsed typed value (float, int, string, date).
-     * `source`: Verifiable verbatim quotation from the prospectus.
+     * `value`: Parsed typed value (float, int, string, date).
+     * `quote`: Verifiable verbatim quotation from the prospectus.
      * `page`: Page index where the quotation resides.
 2. **State 2: Validated (`validated`)**:
    - `validate.py` executes fail-closed checks:
@@ -129,7 +129,7 @@ Every issuer extraction follows a strictly sequenced four-phase state machine:
      * Quotation verification: Confirms quotation characters exist within the raw text cache.
    - Upon success, the SHA-256 hash of the JSON payload is recorded in `.pipeline_state/{CODE}.json`.
 3. **State 3: Reviewed (`reviewed`)**:
-   - Senior audit or automated cross-check flags mark the company as verified for production ingestion.
+   - An independent review records authorization for the validated payload; deterministic cross-checks alone do not replace semantic review.
 4. **State 4: Written (`written`)**:
    - `write_back.py` reads the signed hash. If the on-disk JSON has been altered without re-validation, the write-back is **aborted instantly**.
 
@@ -137,14 +137,14 @@ Every issuer extraction follows a strictly sequenced four-phase state machine:
 
 ## 5. Quality Assurance & Triple-Tier Verification Matrix
 
-The pipeline incorporates three orthogonal defense lines to guarantee zero econometric error:
+The pipeline incorporates three orthogonal defense lines to detect structural, provenance and economic inconsistencies:
 
-### Tier 1: Automated Unit & Regression Tests (55/55 Passed)
+### Tier 1: Automated Pipeline & Analysis Regression Tests
 - **Suite**: `prospectus_pipeline/tests/`
 - **Execution**: `make test` or `python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v`
 - **Coverage**:
   1. `test_audit_excel.py`: Date normalization, numeric tolerances, integer formatting, equivalence of missing data representations (`NA`, `NaN`, `None`, empty string).
-  2. `test_codebook.py`: Completeness of the live 161-variable schema, summary statistics generation, CSV formatting with UTF-8 BOM.
+  2. `test_codebook.py`: Completeness of the live 202-variable schema, summary statistics generation, CSV formatting with UTF-8 BOM.
   3. `test_cross_check.py`: HKEX Listing Rules consistency across all 38 issuers.
   4. `test_pipeline_safety.py`: Fail-closed security assertions (fake derived sources rejected, stale hashes aborted, company-level vs group-level statements filtered).
   5. `test_report.py`: Aggregation metrics, HSIC classification distribution, financial ratios.
@@ -161,9 +161,8 @@ The pipeline incorporates three orthogonal defense lines to guarantee zero econo
 ### Tier 3: Cell-by-Cell Read-Only Audit (`audit.py`)
 - **Execution**: `python3 run.py audit --target all`
 - **Methodology**: Opens the canonical workbook in read-only mode and performs an exhaustive cell-by-cell comparison against the authorized JSON extraction ledger:
-  - Total prospectus cells checked: **2,280** (38 issuers × 60 variables).
-  - Total allotment cells checked: **684** (38 issuers × 18 variables).
-  - Current status: **0 Excel missing, 0 JSON missing, 0 numeric differences** (100% matched).
+  - Counts and mismatches are computed for the selected cohort and live field mappings.
+  - Consult the generated audit report for the current run; historical totals are not acceptance guarantees.
 
 ---
 
@@ -183,7 +182,7 @@ Data corruption prevention is hardcoded into the pipeline execution lifecycle:
    ls -lt "pipeline/backups/excel_snapshots/"
    
    # 2. Restore to canonical dataset
-   cp "pipeline/backups/excel_snapshots/<SNAPSHOT_NAME>.xlsx" "pipeline/HKIPO-MB2026Q1.xlsx"
+   cp "pipeline/backups/excel_snapshots/<SNAPSHOT_NAME>.xlsx" "pipeline/cohorts/HKIPO-MB2026Q1.xlsx"
    
    # 3. Verify integrity
    python3 run.py audit --target all
@@ -204,7 +203,7 @@ This executes:
 1. `status`: Verifies extraction and write-back alignment.
 2. `audit`: Confirms cell-level parity between Excel and JSON.
 3. `cross_check`: Confirms zero regulatory or econometric violations.
-4. `test`: Runs all 20 automated tests.
+4. `test`: Runs pipeline and analysis tests; `check-code` also runs lint and registry consistency.
 
 ### Adding New Issuers (Ingestion Workflow)
 When new IPOs are listed:
@@ -243,3 +242,7 @@ python3 run.py report
 # Compile Official Faculty Progress Report (.docx)
 python3 run.py report-weekly
 ```
+
+## 8. Event-window contracts (2026-09-30)
+
+Named event windows require their complete endpoints; short histories are not clamped into nominal full-window results. Month horizons use calendar-month endpoints and the first observed trading date at or after that date; daily bars beyond the configured as-of date are excluded. Lockup CARs require observed finite HSI and stock returns in each independent window. Missing returns and undisclosed locked percentages remain missing; real zero turnover stays in average denominators. Regenerate and re-audit event deliverables before using corrected calculations in workbook expansion.

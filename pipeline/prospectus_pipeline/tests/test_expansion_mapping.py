@@ -1,4 +1,5 @@
 import csv
+import datetime as dt
 import sys
 import tempfile
 import unittest
@@ -85,9 +86,10 @@ def _load(out_master, stab=(), horizon=(), daily=(), lockup=(), investor=None, u
                ["stock_code", "stabilizing_manager", "stabilization_period_end",
                 "stabilization_purchases_occurred", "over_allocation_pct", "option_exercise_date",
                 "exercise_pct_of_option", "expired_unexercised"], stab)
-    _write_csv(out_master / "horizon_summary.csv", ["stock_code", "horizon", "bhr_from_day1", "wr_hsi"], horizon)
+    _write_csv(out_master / "horizon_summary.csv",
+               ["stock_code", "horizon", "bhr_from_day1", "wr_hsi", "matured", "missing_reason", "actual_date"], horizon)
     _write_csv(out_master / "daily_market_panel.csv",
-               ["stock_code", "amihud_illiq", "zero_volume_flag", "daily_return", "max_drawdown"], daily)
+               ["stock_code", "trade_date", "amihud_illiq", "zero_volume_flag", "daily_return", "max_drawdown"], daily)
     _write_csv(out_master / "lockup_events.csv", ["stock_code", "lockup_category", "expiry_date"], lockup)
     if investor is not None:
         _write_csv(out_master / "investor_relational.csv",
@@ -173,15 +175,72 @@ class MissingSourceTests(unittest.TestCase):
 
     def test_daily_stats_without_observations_are_none_but_real_zero_survives(self):
         with tempfile.TemporaryDirectory() as tmp:
-            mapper = _load(Path(tmp), daily=[
-                {"stock_code": "1234.HK", "amihud_illiq": "", "zero_volume_flag": "", "daily_return": "", "max_drawdown": ""},
-                {"stock_code": "5678.HK", "amihud_illiq": "0.0", "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0"},
-                {"stock_code": "5678.HK", "amihud_illiq": "0.0", "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0"},
+            mapper = _load(Path(tmp), horizon=[
+                {"stock_code": code, "horizon": "Month_6", "matured": "True", "missing_reason": "",
+                 "actual_date": "2026-07-01"} for code in ("1234.HK", "5678.HK")
+            ], daily=[
+                {"stock_code": "1234.HK", "trade_date": "2026-01-01", "amihud_illiq": "", "zero_volume_flag": "", "daily_return": "", "max_drawdown": ""},
+                {"stock_code": "5678.HK", "trade_date": "2026-01-01", "amihud_illiq": "0.0", "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0"},
+                {"stock_code": "5678.HK", "trade_date": "2026-01-02", "amihud_illiq": "0.0", "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0"},
             ])
         for column in (181, 182, 183, 184):
             with self.subTest(column=column):
                 self.assertIsNone(mapper.value_for("1234.HK", column)[0])
                 self.assertEqual(mapper.value_for("5678.HK", column)[0], 0)
+
+    def test_six_month_stats_require_matured_horizon_without_missing_reason(self):
+        for horizon in ([],
+                        [{"horizon": "Month_6", "matured": "False", "actual_date": "2026-07-01"}],
+                        [{"horizon": "Month_6", "matured": "True", "missing_reason": "benchmark unavailable",
+                          "actual_date": "2026-07-01"}]):
+            with self.subTest(horizon=horizon), tempfile.TemporaryDirectory() as tmp:
+                mapper = _load(Path(tmp), horizon=[{"stock_code": "1234.HK", **row} for row in horizon], daily=[
+                    {"stock_code": "1234.HK", "trade_date": "2026-01-01", "amihud_illiq": "1",
+                     "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0.2"},
+                ])
+                for column in (181, 182, 183, 184):
+                    self.assertIsNone(mapper.value_for("1234.HK", column)[0], column)
+
+    def test_six_month_calendar_window_uses_all_observed_days_through_actual_date(self):
+        first, cutoff = dt.date(2026, 1, 1), dt.date(2026, 6, 30)
+        dates = [first + dt.timedelta(days=i) for i in range((cutoff - first).days + 1)
+                 if (first + dt.timedelta(days=i)).weekday() < 5]
+        self.assertGreater(len(dates), 126)
+        daily = [{"stock_code": "1234.HK", "trade_date": date.isoformat(), "amihud_illiq": str(i + 1),
+                  "zero_volume_flag": "True", "daily_return": "0.01", "max_drawdown": "0.2"}
+                 for i, date in enumerate(dates)]
+        daily.append({"stock_code": "1234.HK", "trade_date": "2026-07-01", "amihud_illiq": "100000",
+                      "zero_volume_flag": "True", "daily_return": "3", "max_drawdown": "0.9"})
+        with tempfile.TemporaryDirectory() as tmp:
+            mapper = _load(Path(tmp), horizon=[{
+                "stock_code": "1234.HK", "horizon": "Month_6", "matured": "True",
+                "missing_reason": "", "actual_date": cutoff.isoformat(),
+            }], daily=list(reversed(daily)))
+        self.assertAlmostEqual(mapper.value_for("1234.HK", 181)[0], (len(dates) + 1) / 2)
+        self.assertEqual(mapper.value_for("1234.HK", 182)[0], len(dates))
+        self.assertEqual(mapper.value_for("1234.HK", 183)[0], 0)
+        self.assertEqual(mapper.value_for("1234.HK", 184)[0], 0.2)
+
+    def test_missing_window_dates_leave_six_month_stats_blank(self):
+        for actual_date, trade_date in (("", "2026-01-01"), ("2026-07-01", "")):
+            with self.subTest(actual_date=actual_date, trade_date=trade_date), tempfile.TemporaryDirectory() as tmp:
+                mapper = _load(Path(tmp), horizon=[{
+                    "stock_code": "1234.HK", "horizon": "Month_6", "matured": "True",
+                    "missing_reason": "", "actual_date": actual_date,
+                }], daily=[{"stock_code": "1234.HK", "trade_date": trade_date, "amihud_illiq": "1",
+                           "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0.2"}])
+                for column in (181, 182, 183, 184):
+                    self.assertIsNone(mapper.value_for("1234.HK", column)[0], column)
+
+    def test_malformed_window_dates_fail_closed(self):
+        for actual_date, trade_date in (("bad-date", "2026-01-01"), ("2026-07-01", "bad-date")):
+            with self.subTest(actual_date=actual_date, trade_date=trade_date), tempfile.TemporaryDirectory() as tmp:
+                with self.assertRaises(ValueError):
+                    _load(Path(tmp), horizon=[{
+                        "stock_code": "1234.HK", "horizon": "Month_6", "matured": "True",
+                        "missing_reason": "", "actual_date": actual_date,
+                    }], daily=[{"stock_code": "1234.HK", "trade_date": trade_date, "amihud_illiq": "1",
+                               "zero_volume_flag": "False", "daily_return": "0.01", "max_drawdown": "0.2"}])
 
     def test_investor_rows_give_real_counts_including_zero(self):
         with tempfile.TemporaryDirectory() as tmp:

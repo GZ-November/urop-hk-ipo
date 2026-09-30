@@ -38,6 +38,7 @@ if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
 from market_fetcher import get_market_fetcher, parse_bar_date
+from date_windows import add_calendar_months
 
 logger = logging.getLogger("market_panel")
 sys.path.insert(0, str(ROOT))
@@ -205,7 +206,7 @@ class MarketPanelEngine:
         # 确保按日期升序排列
         bars = sorted(bars, key=lambda x: x["date"])
         # 仅保留 listing_date 当日及以后的 bars
-        bars = [b for b in bars if b["date"] >= l_date]
+        bars = [b for b in bars if l_date <= b["date"] <= self.today]
         if not bars:
             return [], []
 
@@ -268,14 +269,20 @@ class MarketPanelEngine:
 
         for h_name, req_days, desc in HORIZONS:
             # 判断是否成熟
-            matured = len(bars) >= req_days
+            if h_name.startswith("Month_"):
+                target_date = add_calendar_months(l_date, int(h_name.split("_")[1]))
+                target_idx = next((i for i, bar in enumerate(bars) if bar["date"] >= target_date), None)
+            else:
+                target_idx = req_days - 1 if len(bars) >= req_days else None
+                target_date = bars[target_idx]["date"] if target_idx is not None else None
+            matured = target_idx is not None
             rec: dict[str, Any] = {
                 "stock_code": code,
                 "horizon": h_name,
                 "horizon_desc": desc,
                 "target_trading_days": req_days,
                 "matured": matured,
-                "target_date": str(l_date + dt.timedelta(days=int(req_days * 1.5))),  # 日历估算
+                "target_date": str(target_date) if target_date else None,
             }
 
             if not matured:
@@ -294,7 +301,7 @@ class MarketPanelEngine:
                 horizon_records.append(rec)
                 continue
 
-            target_bar = bars[req_days - 1]
+            target_bar = bars[target_idx]
             rec["actual_date"] = str(target_bar["date"])
             p_end = target_bar["close"]
             rec["close_price"] = round(p_end, 4)
@@ -328,7 +335,7 @@ class MarketPanelEngine:
                 rec["wr_hstech"] = None
 
             # 区间均成交额与 Amihud
-            window_bars = bars[:req_days]
+            window_bars = bars[:target_idx + 1]
             to_vals = [b.get("turnover") or 0.0 for b in window_bars]
             avg_to = sum(to_vals) / len(to_vals) if to_vals else 0.0
             rec["avg_daily_turnover"] = round(avg_to, 2)

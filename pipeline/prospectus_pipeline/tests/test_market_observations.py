@@ -11,7 +11,7 @@ from market_observations import read_daily_market_panel
 
 
 class MarketObservationTests(unittest.TestCase):
-    def test_groups_and_sorts_daily_bars_and_normalizes_empty_returns(self):
+    def test_groups_and_sorts_daily_bars_and_preserves_missing_returns(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "daily_market_panel.csv"
             with path.open("w", newline="", encoding="utf-8-sig") as stream:
@@ -30,7 +30,7 @@ class MarketObservationTests(unittest.TestCase):
 
         self.assertEqual(list(daily), ["1234.HK", "5678.HK"])
         self.assertEqual([bar["date"] for bar in daily["1234.HK"]], [date(2026, 1, 2), date(2026, 1, 5)])
-        self.assertEqual(daily["1234.HK"][0]["daily_return"], 0.0)
+        self.assertIsNone(daily["1234.HK"][0]["daily_return"])
         self.assertEqual(daily["5678.HK"][0]["close"], 20.0)
 
     def test_missing_panel_returns_empty_mapping(self):

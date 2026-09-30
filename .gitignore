@@ -37,6 +37,18 @@ dist/
 .pytest_cache/
 .coverage
 htmlcov/
+.ruff_cache/
+
+# Local extraction runs and one-issuer debugging utilities; preserve on disk.
+pipeline/prospectus_pipeline/out/agy_logs/
+pipeline/scratch/
+pipeline/build_candidate*.py
+pipeline/fix_candidate*.py
+pipeline/fix_quotes*.py
+pipeline/candidate_*.json
+pipeline/output_*.json
+pipeline/compact_*.json
+pipeline/test_validate*.py
 
 # 流水线易失状态（临时凭证/备份，随命令再生）
 pipeline/prospectus_pipeline/out/audit_report.json

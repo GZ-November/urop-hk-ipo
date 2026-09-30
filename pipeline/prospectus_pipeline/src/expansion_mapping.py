@@ -145,7 +145,16 @@ class ExpansionValueMapper:
         for code, bars in master_contracts.load_grouped(
                 self.out_master / master_contracts.DAILY_MARKET_PANEL,
                 master_contracts.DAILY_MARKET_PANEL_COLS).items():
-            w_bars = bars[:126]  # 前6个月
+            # 以成熟的 6 日历月窗口为准，不把短样本或 126 日近似冒充 6M。
+            horizon = self.horizon_data.get(code, {}).get("Month_6", {})
+            actual_date = horizon.get("actual_date")
+            if (_flag(horizon.get("matured")) != 1 or _present(horizon.get("missing_reason"))
+                    or not actual_date or any(not b.get("trade_date") for b in bars)):
+                continue
+            from market_fetcher import parse_bar_date
+            end_date = parse_bar_date(actual_date)
+            w_bars = sorted((b for b in bars if parse_bar_date(b["trade_date"]) <= end_date),
+                            key=lambda b: parse_bar_date(b["trade_date"]))
             illiqs = [float(b["amihud_illiq"]) for b in w_bars if _present(b.get("amihud_illiq"))]
             zero_flags = [_flag(b.get("zero_volume_flag")) for b in w_bars]
             zero_flags = [f for f in zero_flags if f is not None]

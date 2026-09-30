@@ -20,3 +20,8 @@ dependencies = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
+
+# Run run.py from the checkout; this metadata only installs dependencies.
+[tool.setuptools]
+packages = []
+py-modules = []
