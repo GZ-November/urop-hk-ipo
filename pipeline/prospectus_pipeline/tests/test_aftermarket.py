@@ -116,5 +116,24 @@ class AftermarketMaturityTests(unittest.TestCase):
         )
 
 
+    def test_split_adjusted_bars_do_not_create_a_false_crash(self):
+        listing_date = dt.date(2026, 1, 8)
+        raw_day1 = 150.0
+        bars = make_bars(listing_date, 30, base=raw_day1 / 3)  # 3-for-1 subdivision adjusts every bar
+        company = self.company(listing_date) | {"offer_price": 144.0, "day1_close": raw_day1}
+        result = aftermarket.calculate_metrics(company, bars, bars, bars)
+        self.assertAlmostEqual(result["observation_meta"]["price_basis_scale"], 1 / 3, places=4)
+        self.assertAlmostEqual(result[141], bars[19]["close"] / bars[0]["close"] - 1, places=5)
+        self.assertGreater(result[141], -0.05)
+        # total return from the offer price is on the same basis: 1M close / (offer x scale)
+        self.assertAlmostEqual(result[142], bars[19]["close"] / (144.0 / 3) - 1, places=4)
+
+    def test_small_dividend_adjustment_is_left_alone(self):
+        listing_date = dt.date(2026, 1, 8)
+        bars = make_bars(listing_date, 30, base=9.99)
+        result = aftermarket.calculate_metrics(self.company(listing_date), bars, bars, bars)
+        self.assertEqual(result["observation_meta"]["price_basis_scale"], 1.0)
+
+
 if __name__ == "__main__":
     unittest.main()
