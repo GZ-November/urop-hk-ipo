@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-29 23:54:06"
+    "generated_at": "2026-09-30 18:39:22"
   },
   "variables": [
     {
@@ -3580,14 +3580,14 @@
         "valid_n": 37,
         "missing_n": 1,
         "fill_rate_pct": 97.37,
-        "mean": 0.10972454054054054,
-        "std": 0.424577123824897,
-        "median": 0.021474,
-        "min": -0.63095,
-        "q25": -0.078014,
+        "mean": 0.12967297297297298,
+        "std": 0.4057315253148377,
+        "median": 0.05212,
+        "min": -0.326387,
+        "q25": -0.048844,
         "q75": 0.11241,
         "max": 2.113343,
-        "summary_display": "均值 0.11 | 中位数 0.02 | 区间 [-0.63, 2.11]"
+        "summary_display": "均值 0.13 | 中位数 0.05 | 区间 [-0.33, 2.11]"
       }
     },
     {
@@ -3606,14 +3606,14 @@
         "valid_n": 37,
         "missing_n": 1,
         "fill_rate_pct": 97.37,
-        "mean": 0.4797962972972973,
-        "std": 0.741578196504285,
+        "mean": 0.5014278108108108,
+        "std": 0.7205877892277649,
         "median": 0.223046,
         "min": -0.625333,
-        "q25": -0.032613,
+        "q25": -0.00893,
         "q75": 0.95525,
         "max": 2.1475,
-        "summary_display": "均值 0.48 | 中位数 0.22 | 区间 [-0.63, 2.15]"
+        "summary_display": "均值 0.50 | 中位数 0.22 | 区间 [-0.63, 2.15]"
       }
     },
     {
@@ -3684,14 +3684,14 @@
         "valid_n": 37,
         "missing_n": 1,
         "fill_rate_pct": 97.37,
-        "mean": 1.0973783783783784,
-        "std": 0.4058626650147225,
-        "median": 1.0248,
-        "min": 0.3595,
-        "q25": 0.9375,
+        "mean": 1.116808108108108,
+        "std": 0.3862932732885573,
+        "median": 1.0251,
+        "min": 0.6692,
+        "q25": 0.9526,
         "q75": 1.1475,
         "max": 3.011,
-        "summary_display": "均值 1.10 | 中位数 1.02 | 区间 [0.36, 3.01]"
+        "summary_display": "均值 1.12 | 中位数 1.03 | 区间 [0.67, 3.01]"
       }
     },
     {
@@ -3710,14 +3710,14 @@
         "valid_n": 37,
         "missing_n": 1,
         "fill_rate_pct": 97.37,
-        "mean": 1.1422918918918918,
-        "std": 0.4185506795136299,
-        "median": 1.0454,
-        "min": 0.3905,
-        "q25": 0.9663,
+        "mean": 1.1634,
+        "std": 0.3988115957302256,
+        "median": 1.054,
+        "min": 0.7035,
+        "q25": 0.9996,
         "q75": 1.2179,
         "max": 3.0912,
-        "summary_display": "均值 1.14 | 中位数 1.05 | 区间 [0.39, 3.09]"
+        "summary_display": "均值 1.16 | 中位数 1.05 | 区间 [0.70, 3.09]"
       }
     },
     {
@@ -3788,14 +3788,14 @@
         "valid_n": 31,
         "missing_n": 7,
         "fill_rate_pct": 81.58,
-        "mean": 0.3336635161290323,
-        "std": 2.3881015836769572,
+        "mean": 0.41046783870967746,
+        "std": 2.421397842713104,
         "median": -0.21263,
         "min": -0.681885,
         "q25": -0.40877,
         "q75": 0.181395,
         "max": 12.878327,
-        "summary_display": "均值 0.33 | 中位数 -0.21 | 区间 [-0.68, 12.88]"
+        "summary_display": "均值 0.41 | 中位数 -0.21 | 区间 [-0.68, 12.88]"
       }
     },
     {
@@ -3814,14 +3814,14 @@
         "valid_n": 31,
         "missing_n": 7,
         "fill_rate_pct": 81.58,
-        "mean": 0.6387206451612903,
-        "std": 2.7216383666090853,
+        "mean": 0.722005,
+        "std": 2.7499957091495006,
         "median": -0.075393,
         "min": -0.649266,
         "q25": -0.315662,
-        "q75": 0.685474,
+        "q75": 0.711185,
         "max": 14.70568,
-        "summary_display": "均值 0.64 | 中位数 -0.08 | 区间 [-0.65, 14.71]"
+        "summary_display": "均值 0.72 | 中位数 -0.08 | 区间 [-0.65, 14.71]"
       }
     },
     {
@@ -3892,14 +3892,14 @@
         "valid_n": 31,
         "missing_n": 7,
         "fill_rate_pct": 81.58,
-        "mean": 1.4180322580645162,
-        "std": 2.5846368610679913,
+        "mean": 1.5010258064516129,
+        "std": 2.621315688729325,
         "median": 0.8191,
         "min": 0.3309,
         "q25": 0.6356,
         "q75": 1.209,
         "max": 14.9966,
-        "summary_display": "均值 1.42 | 中位数 0.82 | 区间 [0.33, 15.00]"
+        "summary_display": "均值 1.50 | 中位数 0.82 | 区间 [0.33, 15.00]"
       }
     },
     {
@@ -3918,14 +3918,14 @@
         "valid_n": 31,
         "missing_n": 7,
         "fill_rate_pct": 81.58,
-        "mean": 1.564132258064516,
-        "std": 2.8741337225196624,
+        "mean": 1.6563129032258064,
+        "std": 2.9151839427089254,
         "median": 0.8732,
         "min": 0.3528,
         "q25": 0.6908,
         "q75": 1.3206,
         "max": 16.6573,
-        "summary_display": "均值 1.56 | 中位数 0.87 | 区间 [0.35, 16.66]"
+        "summary_display": "均值 1.66 | 中位数 0.87 | 区间 [0.35, 16.66]"
       }
     },
     {
@@ -4583,21 +4583,21 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情与 Amihud 模型派生",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.025307445561991236,
-        "std": 0.08632511571194011,
-        "median": 0.001162641666666667,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.02049980946114332,
+        "std": 0.08100076973822616,
+        "median": 0.0008647539682539682,
         "min": 5.588095238095238e-05,
-        "q25": 0.0003356984126984127,
-        "q75": 0.003204084033613446,
+        "q25": 0.0002268571428571428,
+        "q75": 0.002548904761904762,
         "max": 0.4430466746031746,
-        "summary_display": "均值 0.03 | 中位数 0.00 | 区间 [0.00, 0.44]"
+        "summary_display": "均值 0.02 | 中位数 0.00 | 区间 [0.00, 0.44]"
       }
     },
     {
@@ -4609,15 +4609,15 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情交易量派生",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.02631578947368421,
-        "std": 0.16222142113076254,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.03225806451612903,
+        "std": 0.1796053020267749,
         "median": 0.0,
         "min": 0.0,
         "q25": 0.0,
@@ -4635,21 +4635,21 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日度收益率标准差派生",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.0782995374824729,
-        "std": 0.04191819203094863,
-        "median": 0.06306670314386527,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.07390180507259027,
+        "std": 0.04219792260669127,
+        "median": 0.06165457633864375,
         "min": 0.02814092131984513,
-        "q25": 0.04941026501476909,
-        "q75": 0.1049226266068962,
+        "q25": 0.04468863725907167,
+        "q75": 0.09103865243409492,
         "max": 0.2452489841955169,
-        "summary_display": "均值 0.08 | 中位数 0.06 | 区间 [0.03, 0.25]"
+        "summary_display": "均值 0.07 | 中位数 0.06 | 区间 [0.03, 0.25]"
       }
     },
     {
@@ -4661,21 +4661,21 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "二级市场日行情累计高点回撤派生",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.5648481315789474,
-        "std": 0.12828249891783305,
-        "median": 0.539856,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.5661953870967742,
+        "std": 0.1341751376854588,
+        "median": 0.541432,
         "min": 0.36424,
-        "q25": 0.471959,
+        "q25": 0.459154,
         "q75": 0.618909,
         "max": 0.867327,
-        "summary_display": "均值 0.56 | 中位数 0.54 | 区间 [0.36, 0.87]"
+        "summary_display": "均值 0.57 | 中位数 0.54 | 区间 [0.36, 0.87]"
       }
     },
     {
