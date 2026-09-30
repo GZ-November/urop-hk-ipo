@@ -171,10 +171,10 @@ Expected gain per HK$10,000 = allocation ratio (final public shares / valid appl
 # ------------------------------------------------------------------ 2. fees
 
 def fee_section(d: pd.DataFrame, family: list) -> str:
-    z = d.dropna(subset=["fee_rate_hk"]).copy()
+    xs = ["lproc", "hot", "ah", "vc", "tier1", "corner", "fixed"]
+    z = d.dropna(subset=["fee_rate_hk"] + xs).copy()
     counts = z["fee_rate_hk"].round(4).value_counts().head(8)
     top_share = counts.iloc[0] / len(z)
-    xs = ["lproc", "hot", "ah", "vc", "tier1", "corner", "fixed"]
     labels = {"lproc": "ln offer size", "hot": "April-June window", "ah": "A+H issuer", "vc": "VC/PE-backed", "tier1": "Top-tier sponsor",
               "corner": "Cornerstone allocation", "fixed": "Fixed-price offer"}
     rows = []

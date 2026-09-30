@@ -1,0 +1,118 @@
+{
+  "code": "0625.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.221,
+      "page": 6,
+      "quote": "Total\n61,890,000\n22.1%\n2.2%\n1.5%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5.63,
+      "page": 4,
+      "quote": "Subscription level\n5.63 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 35751,
+      "page": 4,
+      "quote": "No. of valid applications\n35,751",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 157684200,
+      "page": 22,
+      "quote": "13,999,600\n1\n2,410,700 Shares\n17.22%\n210\nTotal number of Pool B successful applicants: 210",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 5.63 times",
+      "page": 4,
+      "quote": "Subscription level\n5.63 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "31/08/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**31/08/2026 21:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 279992500,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of \nthe Over-allotment Option)\n279,992,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 27999300,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong \nPublic Offering\n27,999,300",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 251993200,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in \nInternational Offering (before exercise of \nthe Over-allotment Option)\n251,993,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A (no reallocation from the International Offering to the Hong Kong Public Offering)",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 13214100000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$13,214.1 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.6062,
+      "page": 31,
+      "quote": "the total number of the Class B Shares held by the public represents approximately 60.62% of the total number of issued Class B Shares of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 4246202609,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n(before exercise of the Over-allotment \nOption)\n4,246,202,609",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0514,
+      "page": null,
+      "quote": "公式：(col_CS 279,992,500 − col_CK 0.2210×col_CS) ÷ col_CZ 4,246,202,609 = 0.0514；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 279,992,500 − col_CK 0.2210×col_CS) ÷ col_CZ 4,246,202,609 = 0.0514；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 4246202609,
+      "page": 3,
+      "quote": "公式：(col_CS 279,992,500 − col_CK 0.2210×col_CS) ÷ col_CZ 4,246,202,609 = 0.0514；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

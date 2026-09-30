@@ -1,5 +1,7 @@
 # Academic extensions on the 2026 sample · 2026-09-30
 
+> Numerical results below predate the September 30 raw first-day price correction and are retained as a historical write-up. Use regenerated `analysis/out/academic/` tables and [the integration review](AGY_INTEGRATION_2026-09-30.md) for current estimates.
+
 Script: `analysis/academic_extensions_2026.py` (about 20 seconds); outputs in `analysis/out/academic/`. Sample: 106 Main Board ordinary IPOs listed 2026-01-02 to 2026-09-09. Exploratory throughout.
 It complements `EXTENDED_ANALYSIS_2026.md` (regime, mechanism, tails, aftermarket) with five designs from the IPO literature.
 

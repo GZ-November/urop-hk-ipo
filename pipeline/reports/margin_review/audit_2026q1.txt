@@ -1,0 +1,14 @@
+工作簿 cohorts/HKIPO-MB2026Q1.xlsx 共 38 家公司
+
+=== audit ===
+
+=================================================================
+HK IPO 对账审计完成 | 公司: 38 家 | 模式: all
+=================================================================
+[PROSPECTUS] 总格: 2660 | 匹配: 2660 | Excel缺失:  0 | JSON缺失:  0 | 数值差异:  0
+[ALLOT     ] 总格:  684 | 匹配:  684 | Excel缺失:  0 | JSON缺失:  0 | 数值差异:  0
+
+报告输出:
+  - JSON: /Users/georgezhu/.codex/worktrees/1633/UROP HK IPO/pipeline/prospectus_pipeline/out/audit_report.json
+  - Markdown: /Users/georgezhu/.codex/worktrees/1633/UROP HK IPO/pipeline/prospectus_pipeline/out/audit_report.md
+=================================================================

@@ -16,6 +16,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import logging
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -60,6 +61,7 @@ class MarketDataProvider(ABC):
         to_date: dt.date | str,
         n_bars: int = 350,
         timeout: int = 25,
+        adjusted: bool = True,
     ) -> list[dict[str, Any]]:
         """拉取指定标的之规范化日 K 线序列。
 
@@ -94,6 +96,25 @@ class TencentProvider(MarketDataProvider):
             return f"hk{int(digits):05d}"
         return code_or_symbol
 
+    def fetch_raw_bars(self, symbol, from_date, to_date, n_bars, timeout):
+        """Tencent's static HK yearly files contain as-traded OHLC and share volume."""
+        start, end = parse_bar_date(from_date), parse_bar_date(to_date)
+        bars = []
+        for year in range(start.year, end.year + 1):
+            url = f"https://data.gtimg.cn/flashdata/hk/daily/{year % 100:02d}/{symbol}.js"
+            req = urllib.request.Request(url, headers={"User-Agent": self.user_agent})
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                text = response.read().decode("utf-8")
+            for match in re.finditer(r"(\d{6})\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)", text):
+                day = dt.datetime.strptime(match[1], "%y%m%d").date()
+                if start <= day <= end:
+                    bars.append({"date": day, "open": float(match[2]), "close": float(match[3]),
+                                 "high": float(match[4]), "low": float(match[5]), "volume": float(match[6]),
+                                 "turnover": None, "turnover_estimated": False, "price_basis": "raw_as_traded", "source_url": url})
+        if not bars:
+            raise RuntimeError(f"Tencent returned no raw bars for {symbol}")
+        return sorted(bars, key=lambda b: b["date"])[-n_bars:]
+
     def fetch_bars(
         self,
         symbol_or_code: str,
@@ -101,13 +122,17 @@ class TencentProvider(MarketDataProvider):
         to_date: dt.date | str,
         n_bars: int = 350,
         timeout: int = 25,
+        adjusted: bool = True,
     ) -> list[dict[str, Any]]:
         sym = self.normalize_symbol(symbol_or_code)
+        if not adjusted:
+            return self.fetch_raw_bars(sym, from_date, to_date, n_bars, timeout)
         frm_str = str(from_date)[:10]
         to_str = str(to_date)[:10]
         url = (
-            "https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get"
-            f"?param={sym},day,{frm_str},{to_str},{n_bars},qfq"
+            ("https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get" if adjusted else
+             "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get")
+            + f"?param={sym},day,{frm_str},{to_str},{n_bars},{'qfq' if adjusted else ''}"
         )
         req = urllib.request.Request(
             url,
@@ -125,7 +150,7 @@ class TencentProvider(MarketDataProvider):
             )
 
         data = (payload.get("data") or {}).get(sym) or {}
-        rows = data.get("qfqday") or data.get("day") or []
+        rows = (data.get("qfqday") or data.get("day") or []) if adjusted else (data.get("day") or [])
         if not rows:
             raise RuntimeError(
                 f"Tencent returned empty bars for {sym} ({frm_str} ~ {to_str})"
@@ -183,7 +208,10 @@ class YahooFinanceProvider(MarketDataProvider):
         to_date: dt.date | str,
         n_bars: int = 350,
         timeout: int = 25,
+        adjusted: bool = True,
     ) -> list[dict[str, Any]]:
+        if not adjusted:
+            raise ValueError("Yahoo chart OHLC may be split-adjusted; as-traded prices require a raw provider")
         sym = self.normalize_symbol(symbol_or_code)
         d_from = parse_bar_date(from_date)
         d_to = parse_bar_date(to_date)
@@ -303,6 +331,7 @@ class ResilientMarketFetcher:
         to_date: dt.date | str,
         n_bars: int = 350,
         preferred_provider: str | None = None,
+        adjusted: bool = True,
     ) -> tuple[list[dict[str, Any]], str, list[str]]:
         """按优先级尝试各数据源，实现自动故障转移。
 
@@ -318,7 +347,7 @@ class ResilientMarketFetcher:
             for attempt in range(1, self.retries_per_provider + 1):
                 try:
                     bars = provider.fetch_bars(
-                        symbol_or_code, from_date, to_date, n_bars=n_bars
+                        symbol_or_code, from_date, to_date, n_bars=n_bars, **({"adjusted": False} if not adjusted else {})
                     )
                     if bars:
                         if errors:

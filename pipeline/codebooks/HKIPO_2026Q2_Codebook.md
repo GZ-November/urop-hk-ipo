@@ -3,7 +3,7 @@
 - **样本规模 (N)**：45 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-30 18:39:23 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-30 21:45:44 | **数据基准**：`HKIPO-MB2026Q2.xlsx` (Sheet: NLR)
 
 ---
 
@@ -147,12 +147,12 @@
 | **DT** | `HK ordinary IPO count in 90 calendar days before prospectus` | 招股日前 90 个自然日香港普通主板 IPO 上市数量 | 深蓝 | `numeric` | Ex-ante pre-prospectus window | 100% 完备 | 均值 33.73 / 中位数 35.00 / 区间 [28.00, 38.00] |
 | **DU** | `1-month HIBOR before prospectus (%)` | 招股日前一交易日香港银行同业拆借 1 个月 HIBOR 利率 (%) | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.03 / 中位数 0.03 / 区间 [0.02, 0.03] |
 | **DV** | `Banking system aggregate balance before prospectus (HK$)` | 招股日前一交易日香港银行体系总结余 (HK$) | 深蓝 | `numeric` | Ex-ante pre-prospectus window | 100% 完备 | 均值 53,944,755,555.56 / 中位数 53,886,000,000.00 / 区间 [53,828,000,000.00, 54,867,000,000.00] |
-| **DW** | `First trading day closing price (HK$)` | 首日上市二级市场收盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 124.25 / 中位数 61.20 / 区间 [2.81, 886.00] |
-| **DX** | `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始收益率（Rock 1986 / Ritter 1984 核心被解释变量） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.92 / 中位数 0.80 / 区间 [-0.57, 3.84] |
-| **DY** | `Money left on the table (HK$)` | 留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,270,703,547.71 / 中位数 913,419,520.00 / 区间 [-1,560,233,640.00, 10,075,752,000.00] |
-| **DZ** | `First trading day opening price (HK$)` | 首日上市二级市场开盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 118.88 / 中位数 61.55 / 区间 [4.32, 880.00] |
-| **EA** | `First trading day high (HK$)` | 首日上市二级市场盘中最高价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 138.05 / 中位数 66.35 / 区间 [4.60, 996.00] |
-| **EB** | `First trading day low (HK$)` | 首日上市二级市场盘中最低价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 107.82 / 中位数 57.30 / 区间 [2.80, 807.00] |
+| **DW** | `First trading day closing price (HK$)` | 首日上市二级市场收盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 124.91 / 中位数 61.20 / 区间 [2.81, 886.00] |
+| **DX** | `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始收益率（Rock 1986 / Ritter 1984 核心被解释变量） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.93 / 中位数 0.80 / 区间 [-0.57, 3.84] |
+| **DY** | `Money left on the table (HK$)` | 留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,306,981,608.80 / 中位数 913,419,520.00 / 区间 [-1,560,233,640.00, 10,075,752,000.00] |
+| **DZ** | `First trading day opening price (HK$)` | 首日上市二级市场开盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 119.54 / 中位数 65.80 / 区间 [4.32, 880.00] |
+| **EA** | `First trading day high (HK$)` | 首日上市二级市场盘中最高价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 138.74 / 中位数 71.05 / 区间 [4.60, 996.00] |
+| **EB** | `First trading day low (HK$)` | 首日上市二级市场盘中最低价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 108.47 / 中位数 57.30 / 区间 [2.80, 807.00] |
 | **EC** | `First trading day volume (shares)` | 首日上市二级市场全天成交量（股） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 24,957,480.87 / 中位数 12,671,555.00 / 区间 [911,040.00, 192,052,421.00] |
 | **ED** | `First-day flipping ratio (%)` | 首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.42 / 中位数 0.38 / 区间 [0.03, 0.93] |
 | **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,375,207,839.56 / 中位数 694,075,300.00 / 区间 [230,830,000.00, 10,784,221,200.00] |
@@ -162,7 +162,7 @@
 | **EI** | `Current listing status` | 当前挂牌存续状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Active': 45) |
 | **EJ** | `1-month post-IPO close price (HK$)` | 第20个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 113.53 / 中位数 59.00 / 区间 [3.60, 682.50] |
 | **EK** | `1-month BHR from Day-1 close (%)` | 由首日收盘至第20个交易日的买入持有收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 -0.05 / 中位数 -0.15 / 区间 [-0.51, 1.09] |
-| **EL** | `1-month total return from offer price (%)` | 由发售价至第20个交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.79 / 中位数 0.37 / 区间 [-0.45, 5.16] |
+| **EL** | `1-month total return from offer price (%)` | 由发售价至第20个交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.80 / 中位数 0.37 / 区间 [-0.45, 5.16] |
 | **EM** | `1-month HSI return (%)` | 同期恒生指数累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.01 / 中位数 -0.01 / 区间 [-0.10, 0.11] |
 | **EN** | `1-month HSTECH return (%)` | 同期恒生科技指数累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.00 / 中位数 0.02 / 区间 [-0.13, 0.09] |
 | **EO** | `1-month wealth relative vs HSI` | 一个月相对恒指财富比 | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.95 / 中位数 0.86 / 区间 [0.45, 2.32] |
@@ -182,25 +182,25 @@
 | **FC** | `3-year post-IPO return (%) [Reserved]` | 三年期收益率预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/45 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FD** | `3-year wealth relative vs HSI [Reserved]` | 三年期相对恒指财富比预留字段 | 深蓝 | `string` | Long-run post-IPO (Reserved / Unmatured) | Reserved / Unmatured (0/45 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FE** | `18A/18C regulatory milestone status` | 18A/18C 监管路径与商业化里程碑状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 3 种取值 ('Standard': 30, '18A (Biotech / B-tag)': 8, '18C (Specialist Tech)': 7) |
-| **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 8 种取值 ('China International Capital Corporation / Sponsor-OC': 33, 'CLSA Limited': 3, 'China International Capital Corporation Hong Kong Securities Limited': 3) |
-| **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | 100% 完备 | 共 27 种取值 ('2026-07-23': 5, '2026-06-26': 3, '2026-07-24': 3) |
-| **FH** | `Stabilization purchases occurred` | 稳价期内是否发生二级市场托单购买 (1=是, 0=否) | 深蓝 | `boolean` | Post-IPO 30-day stabilization window | 100% 完备 | 1 (是): 3 家 (6.7%), 0 (否): 42 家 |
-| **FI** | `Over-allocation shares` | 国际配售超额配售股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 2,214,170.00 / 中位数 0.00 / 区间 [0.00, 30,184,000.00] |
-| **FJ** | `Over-allocation (% of base offer)` | 超额配售股数占基础发售股份比例 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 0.16 / 中位数 0.15 / 区间 [0.05, 0.54] |
-| **FK** | `Over-allotment option exercise date` | 超额配售权实际行使公告日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | 100% 完备 | 共 34 种取值 ('2026-07-23': 4, '2026-06-30': 3, '2026-05-20': 2) |
-| **FL** | `Shares issued under over-allotment option` | 超额配售权最终发行股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 3,755,240.67 / 中位数 0.00 / 区间 [0.00, 30,184,000.00] |
-| **FM** | `Over-allotment exercise percentage (%)` | 超额配售权行使比例 (行使股数/超额配售上限, %) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 0.45 / 中位数 0.00 / 区间 [0.00, 1.00] |
-| **FN** | `Post-stabilization cliff return [-5, +5] (%)` | 稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 -0.05 / 中位数 -0.04 / 区间 [-0.42, 0.63] |
-| **FO** | `Post-stabilization 20-day return [0, +20] (%)` | 稳价期结束后20个交易日累计收益率 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 -0.02 / 中位数 -0.05 / 区间 [-0.53, 0.86] |
-| **FP** | `Post-stabilization volume decay ratio (%)` | 稳价结束后20日均成交额相对稳价期内之比 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | 100% 完备 | 均值 0.32 / 中位数 0.25 / 区间 [0.05, 1.00] |
+| **FF** | `Stabilizing manager` | 官方指定价格稳定经理人名称 | 深蓝 | `string` | Ex-ante prospectus disclosure | Sparse (22/45 (48.89%)) | 共 10 种取值 ('China International Capital Corporation Hong Kong Securities Limited': 8, 'CLSA Limited': 6, 'Haitong International Securities Company Limited': 1) |
+| **FG** | `Stabilization period end date` | 法定30天稳价期结束日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Sparse (10/45 (22.22%)) | 共 8 种取值 ('2026-07-23': 3, '2026-05-13': 1, '2026-05-20': 1) |
+| **FH** | `Stabilization purchases occurred` | 稳价期内是否发生二级市场托单购买 (1=是, 0=否) | 深蓝 | `boolean` | Post-IPO 30-day stabilization window | Sparse (10/45 (22.22%)) | 1 (是): 1 家 (10.0%), 0 (否): 9 家 |
+| **FI** | `Over-allocation shares` | 国际配售超额配售股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Sparse (11/45 (24.44%)) | 均值 9,057,968.18 / 中位数 8,513,300.00 / 区间 [1,335,000.00, 30,184,000.00] |
+| **FJ** | `Over-allocation (% of base offer)` | 超额配售股数占基础发售股份比例 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Sparse (9/45 (20.0%)) | 均值 0.19 / 中位数 0.15 / 区间 [0.05, 0.54] |
+| **FK** | `Over-allotment option exercise date` | 超额配售权实际行使公告日期 | 深蓝 | `string` | Post-IPO 30-day stabilization window | Adequate (38/45 (84.44%)) | 共 28 种取值 ('2026-06-30': 3, '2026-07-23': 3, '2026-05-20': 2) |
+| **FL** | `Shares issued under over-allotment option` | 超额配售权最终发行股份数量（股） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Adequate (31/45 (68.89%)) | 均值 5,451,155.81 / 中位数 2,036,000.00 / 区间 [0.00, 30,184,000.00] |
+| **FM** | `Over-allotment exercise percentage (%)` | 超额配售权行使比例 (行使股数/超额配售上限, %) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Adequate (32/45 (71.11%)) | 均值 0.64 / 中位数 1.00 / 区间 [0.00, 1.00] |
+| **FN** | `Post-stabilization cliff return [-5, +5] (%)` | 稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试） | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Sparse (10/45 (22.22%)) | 均值 -0.12 / 中位数 -0.06 / 区间 [-0.36, 0.11] |
+| **FO** | `Post-stabilization 20-day return [0, +20] (%)` | 稳价期结束后20个交易日累计收益率 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Sparse (10/45 (22.22%)) | 均值 0.01 / 中位数 0.00 / 区间 [-0.44, 0.45] |
+| **FP** | `Post-stabilization volume decay ratio (%)` | 稳价结束后20日均成交额相对稳价期内之比 (%) | 深蓝 | `numeric` | Post-IPO 30-day stabilization window | Sparse (10/45 (22.22%)) | 均值 0.33 / 中位数 0.26 / 区间 [0.11, 0.79] |
 | **FQ** | `Day-5 BHR from Day-1 close (%)` | 挂牌首周 (T+5交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 -0.01 / 中位数 -0.04 / 区间 [-0.50, 0.75] |
 | **FR** | `Day-5 wealth relative vs HSI` | 挂牌首周对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 0.99 / 中位数 0.96 / 区间 [0.49, 1.71] |
 | **FS** | `Day-20 BHR from Day-1 close (%)` | 首月 (T+20交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 -0.05 / 中位数 -0.15 / 区间 [-0.51, 1.09] |
 | **FT** | `Day-20 wealth relative vs HSI` | 首月对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 0.95 / 中位数 0.86 / 区间 [0.45, 2.32] |
-| **FU** | `3-month BHR from Day-1 close (%)` | 首季 (T+63交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (41/45 (91.11%)) | 均值 -0.15 / 中位数 -0.29 / 区间 [-0.72, 2.13] |
-| **FV** | `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (41/45 (91.11%)) | 均值 0.84 / 中位数 0.69 / 区间 [0.28, 3.11] |
-| **FW** | `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 (WR_HSTECH) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (41/45 (91.11%)) | 均值 0.89 / 中位数 0.74 / 区间 [0.28, 3.35] |
-| **FX** | `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (41/45 (91.11%)) | 均值 126,289,573.63 / 中位数 42,460,906.35 / 区间 [13,388,746.03, 1,851,768,717.46] |
+| **FU** | `3-month BHR from Day-1 close (%)` | 首季 (T+63交易日) 二级买入持有收益率 (%) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 -0.17 / 中位数 -0.30 / 区间 [-0.71, 2.46] |
+| **FV** | `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (28/45 (62.22%)) | 均值 0.89 / 中位数 0.77 / 区间 [0.30, 3.43] |
+| **FW** | `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 (WR_HSTECH) | 深蓝 | `numeric` | Aftermarket event horizon window | Adequate (28/45 (62.22%)) | 均值 0.94 / 中位数 0.77 / 区间 [0.31, 3.67] |
+| **FX** | `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | 深蓝 | `numeric` | Aftermarket event horizon window | 100% 完备 | 均值 118,300,670.87 / 中位数 37,480,786.36 / 区间 [15,389,478.79, 1,861,466,041.94] |
 | **FY** | `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/45 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/45 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/45 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |

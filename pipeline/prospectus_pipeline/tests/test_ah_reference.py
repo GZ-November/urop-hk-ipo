@@ -1,6 +1,8 @@
 import datetime as dt
 import importlib.util
 import unittest
+import tempfile
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -55,6 +57,31 @@ class AnchorTests(unittest.TestCase):
         self.assertIsNone(ah.anchor(self.bars, self.fx, dt.date(2026, 1, 1)))      # nothing yet
         self.assertIsNone(ah.anchor(self.bars, self.fx, None))
         self.assertIsNone(ah.anchor(self.bars, [], dt.date(2026, 1, 7)))           # no exchange rate
+
+
+class CacheCoverageTests(unittest.TestCase):
+    def test_expanding_scope_extends_cache_and_preserves_existing_observations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "prices.json"
+            path.write_text(json.dumps([{"date": "2026-01-01", "close": 10}]))
+            calls = []
+            def fetch(start, end):
+                calls.append((start, end))
+                return [{"date": "2025-01-01", "close": 8}]
+            out = ah.cached_bars(path, fetch, dt.date(2025, 1, 1), dt.date(2026, 1, 1))
+            self.assertEqual(len(calls), 1)
+            self.assertEqual([b["close"] for b in out], [8, 10])
+            self.assertEqual(len(ah.cached_bars(path, fetch, dt.date(2026, 1, 1), dt.date(2026, 1, 1))), 2)
+            self.assertEqual(len(calls), 1)
+
+    def test_failed_refresh_preserves_valid_cache(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "prices.json"
+            original = '[{"date": "2026-01-01", "close": 10}]'
+            path.write_text(original)
+            with self.assertRaises(ValueError):
+                ah.cached_bars(path, lambda a, b: [], dt.date(2026, 1, 1), dt.date(2026, 1, 2), True)
+            self.assertEqual(path.read_text(), original)
 
 
 if __name__ == "__main__":

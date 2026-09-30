@@ -28,6 +28,7 @@ import codecs
 import csv
 import datetime as dt
 import json
+import math
 import re
 import sys
 import time
@@ -115,6 +116,11 @@ def find_a_symbol(h_code: str, lookup=smartbox) -> dict:
 
 def fetch_a_bars(symbol: str, start: dt.date, end: dt.date) -> list[dict]:
     """Raw (unadjusted) daily bars from Tencent."""
+    if symbol.startswith("hk"):
+        sys.path.insert(0, str(ROOT / "src"))
+        from market_fetcher import TencentProvider
+        bars = TencentProvider().fetch_bars(symbol, start, end, n_bars=640, adjusted=False)
+        return [{**b, "date": b["date"].isoformat()} for b in bars]
     url = f"https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param={symbol},day,{start},{end},640,"
     payload = json.loads(http_get(url))
     rows = ((payload.get("data") or {}).get(symbol) or {}).get("day") or []
@@ -157,7 +163,7 @@ def anchor(bars: list[dict], fx: list[dict], day: dt.date | None, strictly_befor
     rate = last_on_or_before(fx, dt.date.fromisoformat(a["date"]))
     if rate is None:
         return None
-    return {"a_date": a["date"], "a_close_cny": a["close"], "cnyhkd": rate["close"], "a_close_hkd": a["close"] * rate["close"]}
+    return {"a_date": a["date"], "a_close_cny": a["close"], "fx_date": rate["date"], "cnyhkd": rate["close"], "a_close_hkd": a["close"] * rate["close"]}
 
 
 # ---------------------------------------------------------------- main
@@ -170,13 +176,13 @@ def to_date(value) -> dt.date | None:
         return None
 
 
-def read_a_plus_h() -> list[dict]:
+def read_a_plus_h(year: int | None = 2026, as_of: dt.date | None = None) -> list[dict]:
     with MASTER.open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
     out = []
     for r in rows:
         ld = to_date(r.get("Date of Listing (dd/mm/yy)"))
-        if not ld or ld.year != 2026 or str(r.get("A+H issuer flag")) not in {"1", "1.0"}:
+        if not ld or (as_of is not None and ld > as_of) or (year is not None and ld.year != year) or str(r.get("A+H issuer flag")) not in {"1", "1.0"}:
             continue
         out.append({"code": r["Stock Code"], "name_cn": r.get("Company Chinese Name", ""), "listing": ld,
                     "sub_close": to_date(r.get("Subscription closing date")), "pricing": to_date(r.get("Pricing date")),
@@ -184,60 +190,82 @@ def read_a_plus_h() -> list[dict]:
     return out
 
 
+def cached_bars(path: Path, fetch, start: dt.date, end: dt.date, refresh: bool = False) -> list[dict]:
+    """Extend caches when scope grows; never replace a longer history with a shorter one."""
+    old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    fetch_start = min(start, dt.date.fromisoformat(old[0]["date"])) if old else start
+    fetch_end = max(end, dt.date.fromisoformat(old[-1]["date"])) if old else end
+    if refresh or not old or to_date(old[0]["date"]) > start + dt.timedelta(days=7) or to_date(old[-1]["date"]) < end - dt.timedelta(days=7):
+        new = fetch(fetch_start, fetch_end)
+        if not new or any(not math.isfinite(float(b["close"])) or float(b["close"]) <= 0 for b in new):
+            raise ValueError(f"Empty or invalid price response: {path.name}")
+        merged = {b["date"]: b for b in old}
+        merged.update({b["date"]: b for b in new})
+        old = [merged[k] for k in sorted(merged)]
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = path.with_suffix(".tmp")
+        temporary.write_text(json.dumps(old, indent=1), encoding="utf-8")
+        temporary.replace(path)
+    return [b for b in old if b["date"] <= end.isoformat()]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--refresh", action="store_true", help="ignore cached A-share bars and FX")
+    parser.add_argument("--all", action="store_true", help="collect for all A+H issuers across cohorts (not just 2026)")
+    parser.add_argument("--as-of", type=dt.date.fromisoformat, default=dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).date(), help="observation cutoff (YYYY-MM-DD; Hong Kong date by default)")
     args = parser.parse_args()
-    issuers = read_a_plus_h()
+    issuers = read_a_plus_h(year=None if args.all else 2026, as_of=args.as_of)
+    if not issuers:
+        parser.error("No A+H issuers in the selected sample")
     (CACHE / "a_bars").mkdir(parents=True, exist_ok=True)
-    start = min(i["sub_close"] for i in issuers) - dt.timedelta(days=45)
-    end = dt.date.today()
-    fx_path = CACHE / "fx_cnyhkd.json"
-    if args.refresh or not fx_path.exists():
-        fx_path.write_text(json.dumps(fetch_fx(start, end), indent=1), encoding="utf-8")
-    fx = json.loads(fx_path.read_text(encoding="utf-8"))
-    csi_path = CACHE / "csi300.json"  # A-share market benchmark for the A-share reaction study
-    if args.refresh or not csi_path.exists():
-        csi_path.write_text(json.dumps(fetch_a_bars("sh000300", start, end), indent=1), encoding="utf-8")
+    start = min(i["sub_close"] or i["listing"] for i in issuers) - dt.timedelta(days=180)
+    end = args.as_of
+    fx = cached_bars(CACHE / "fx_cnyhkd.json", fetch_fx, start, end, args.refresh)
+    cached_bars(CACHE / "csi300.json", lambda a, b: fetch_a_bars("sh000300", a, b), start, end, args.refresh)
 
     map_rows, out_rows = [], []
     for i in issuers:
         found = find_a_symbol(i["code"])
         map_rows.append({"h_code": i["code"], "a_symbol": found["symbol"], "short_name": found["name"], "status": found["status"], "company_cn": i["name_cn"]})
         row = {"h_code": i["code"], "a_symbol": found["symbol"], "status": found["status"], "listing_date": i["listing"], "subscription_close": i["sub_close"],
-               "pricing_date": i["pricing"] or "", "offer_hkd": i["offer"], "h_day1_close_hkd": i["close1"]}
+               "pricing_date": i["pricing"] or "", "as_of": end, "offer_hkd": i["offer"],
+               "master_h_day1_close_hkd": i["close1"], "h_day1_close_hkd": "", "h_price_basis": "raw_as_traded"}
         if found["symbol"]:
             path = CACHE / "a_bars" / f"{found['symbol']}.json"
-            if args.refresh or not path.exists():
-                path.write_text(json.dumps(fetch_a_bars(found["symbol"], start, end), indent=1), encoding="utf-8")
-                time.sleep(0.3)
-            bars = json.loads(path.read_text(encoding="utf-8"))
+            bars = cached_bars(path, lambda a, b: fetch_a_bars(found["symbol"], a, b), start, end, args.refresh)
+            h_symbol = "hk" + i["code"].split(".")[0].zfill(5)
+            h_bars = cached_bars(CACHE / "h_bars" / f"{h_symbol}.json", lambda a, b: fetch_a_bars(h_symbol, a, b), i["listing"], end, args.refresh)
+            h_listing = next((b for b in h_bars if b["date"] == i["listing"].isoformat()), None)
+            if h_listing:
+                row["h_day1_close_hkd"] = h_listing["close"]
             for label, day, strict in (("close", i["sub_close"], False), ("pricing", i["pricing"], True)):
                 a = anchor(bars, fx, day, strictly_before=strict)
                 if a:
-                    row.update({f"a_date_{label}": a["a_date"], f"a_close_cny_{label}": a["a_close_cny"], f"cnyhkd_{label}": round(a["cnyhkd"], 5),
+                    row.update({f"a_date_{label}": a["a_date"], f"fx_date_{label}": a["fx_date"], f"a_close_cny_{label}": a["a_close_cny"], f"cnyhkd_{label}": round(a["cnyhkd"], 5),
                                 f"a_close_hkd_{label}": round(a["a_close_hkd"], 4), f"offer_vs_a_{label}": round(i["offer"] / a["a_close_hkd"] - 1, 6)})
             offer_vs = row.get("offer_vs_a_close")
             row["plausible"] = "" if offer_vs is None else int(-0.6 < offer_vs < 0.6)
             listing_bar = last_on_or_before(bars, i["listing"])
             if listing_bar and listing_bar["date"] == i["listing"].isoformat():
                 rate = last_on_or_before(fx, i["listing"])
-                if rate:
+                if rate and h_listing:
                     row["a_close_hkd_listing"] = round(listing_bar["close"] * rate["close"], 4)
-                    row["h_day1_close_vs_a"] = round(i["close1"] / (listing_bar["close"] * rate["close"]) - 1, 6)
+                    row["h_day1_close_vs_a"] = round(h_listing["close"] / (listing_bar["close"] * rate["close"]) - 1, 6)
         out_rows.append(row)
 
-    with (CACHE / "a_share_map.csv").open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(map_rows[0]))
+    with (CACHE / ("a_share_map_all.csv" if args.all else "a_share_map.csv")).open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(map_rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(map_rows)
     fields = list(dict.fromkeys(k for r in out_rows for k in r))
-    with OUTPUT.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+    out_target = (REPO / "pipeline" / "exports" / "HKIPO-MASTER-AH-reference.csv") if args.all else OUTPUT
+    with out_target.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(out_rows)
     matched = sum(1 for r in out_rows if r.get("offer_vs_a_close") is not None)
-    print(f"{len(issuers)} A+H issuers: {sum(1 for r in map_rows if r['a_symbol'])} A-share symbols found, {matched} with an offer-vs-A anchor -> {OUTPUT.relative_to(REPO)}")
+    print(f"{len(issuers)} A+H issuers: {sum(1 for r in map_rows if r['a_symbol'])} A-share symbols found, {matched} with an offer-vs-A anchor -> {out_target.relative_to(REPO)}")
     return 0
 
 

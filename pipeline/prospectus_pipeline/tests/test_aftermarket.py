@@ -128,11 +128,12 @@ class AftermarketMaturityTests(unittest.TestCase):
         # total return from the offer price is on the same basis: 1M close / (offer x scale)
         self.assertAlmostEqual(result[142], bars[19]["close"] / (144.0 / 3) - 1, places=4)
 
-    def test_small_dividend_adjustment_is_left_alone(self):
+    def test_small_dividend_adjustment_uses_same_basis_for_returns(self):
         listing_date = dt.date(2026, 1, 8)
         bars = make_bars(listing_date, 30, base=9.99)
         result = aftermarket.calculate_metrics(self.company(listing_date), bars, bars, bars)
-        self.assertEqual(result["observation_meta"]["price_basis_scale"], 1.0)
+        self.assertAlmostEqual(result["observation_meta"]["price_basis_scale"], 0.999)
+        self.assertAlmostEqual(result[141], bars[19]["close"] / bars[0]["close"] - 1, places=5)
 
 
 if __name__ == "__main__":

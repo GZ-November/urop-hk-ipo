@@ -1,75 +1,425 @@
 {
   "code": "1688.HK",
   "fields": {
-    "col_L": {"value": 8120010560, "page": 223, "quote": "A Shares in issue 7,308,198,680* 90% H Shares to be issued under the Global Offering 811,811,880 10% Total 8,120,010,560 100%", "confidence": "high"},
-    "col_M": {"value": 811811880, "page": 223, "quote": "H Shares to be issued under the Global Offering 811,811,880", "confidence": "high"},
-    "col_N": {"value": 7308198680, "page": 223, "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB7,308,198,680 comprising 7,308,198,680* A Shares with a nominal value of RMB1.00 each", "confidence": "high"},
-    "col_O": {"value": 7308198680, "page": 223, "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB7,308,198,680 comprising 7,308,198,680* A Shares with a nominal value of RMB1.00 each", "confidence": "high"},
-    "col_P": {"value": 0, "page": 223, "quote": "A Shares in issue 7,308,198,680* 90% H Shares to be issued under the Global Offering 811,811,880 10% Total 8,120,010,560 100%", "confidence": "medium"},
-    "col_Q": {"value": 811811880, "page": 2, "quote": "Number of Offer Shares under the Global Offering : 811,811,880 H Shares", "confidence": "high"},
-    "col_R": {"value": 730630560, "page": 2, "quote": "Number of International Offer Shares : 730,630,560 H Shares (subject to reallocation)", "confidence": "high"},
-    "col_S": {"value": 81181320, "page": 2, "quote": "Number of Hong Kong Offer Shares : 81,181,320 H Shares (subject to reallocation)", "confidence": "high"},
-    "col_BI": {"value": "H Shares", "page": 2, "quote": "Number of Offer Shares under the Global Offering : 811,811,880 H Shares", "confidence": "high"},
-    "col_CE": {"value": 811811880, "page": 135, "quote": "The total number of the H Shares to be issued pursuant to the Global Offering represents 10% of the total issued share capital of our Company", "confidence": "high"},
-    "col_T": {"value": 10.18, "page": 2, "quote": "Maximum Offer Price : HK$10.18 per H Share", "confidence": "high"},
-    "col_U": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_V": {"value": "RMB", "page": 17, "quote": "(RMB in thousands, except for percentages)", "confidence": "high"},
-    "col_W": {"value": 45193486000, "page": 20, "quote": "Total assets 37,367,171 45,193,486 57,900,450", "confidence": "high"},
-    "col_X": {"value": 57900450000, "page": 20, "quote": "Total assets 37,367,171 45,193,486 57,900,450", "confidence": "high"},
-    "col_Y": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_Z": {"value": 19848981000, "page": 20, "quote": "Net assets 18,280,693 19,848,981 24,357,948", "confidence": "high"},
-    "col_AA": {"value": 24357948000, "page": 20, "quote": "Net assets 18,280,693 19,848,981 24,357,948", "confidence": "high"},
-    "col_AB": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AC": {"value": 25344505000, "page": 20, "quote": "Total liabilities 19,086,478 25,344,505 33,542,502", "confidence": "high"},
-    "col_AD": {"value": 33542502000, "page": 20, "quote": "Total liabilities 19,086,478 25,344,505 33,542,502", "confidence": "high"},
-    "col_AE": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AF": {"value": 44259533000, "page": 313, "quote": "Revenue 34,154,017 44,259,533 51,428,944", "confidence": "high"},
-    "col_AG": {"value": 51428944000, "page": 313, "quote": "Revenue 34,154,017 44,259,533 51,428,944", "confidence": "high"},
-    "col_AH": {"value": 50571864000, "page": 411, "quote": "Revenue 3 12,642,966 11,494,278", "confidence": "medium"},
-    "col_AI": {"value": 2196375000, "page": 313, "quote": "Profit before taxation 2,488,042 2,196,375 2,733,377", "confidence": "high"},
-    "col_AJ": {"value": 2733377000, "page": 313, "quote": "Profit before taxation 2,488,042 2,196,375 2,733,377", "confidence": "high"},
-    "col_AK": {"value": 1720436000, "page": 411, "quote": "Profit before taxation 430,109 666,841", "confidence": "medium"},
-    "col_AL": {"value": 1760733000, "page": 313, "quote": "Profit for the year 2,013,899 1,760,733 2,326,825", "confidence": "high"},
-    "col_AM": {"value": 2326825000, "page": 313, "quote": "Profit for the year 2,013,899 1,760,733 2,326,825", "confidence": "high"},
-    "col_AN": {"value": 1603224000, "page": 411, "quote": "Profit for the period 400,806 567,938", "confidence": "medium"},
-    "col_BE": {"value": 14844113000, "page": 270, "quote": "Total 8,133,740 11,895,342 14,844,113 15,904,578", "confidence": "medium"},
-    "col_BT": {"value": "IFRS Accounting Standards", "page": 312, "quote": "have been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board", "confidence": "high"},
-    "col_CF": {"value": 1852431000, "page": 411, "quote": "Gross profit 1,852,431 1,477,827", "confidence": "high"},
-    "col_CG": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_CH": {"value": "Unqualified", "page": 311, "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants' report, a true and fair view of the Group's consolidated financial position", "confidence": "medium"},
-    "col_AO": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AP": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AQ": {"value": 0.15, "page": 224, "quote": "The number of H Shares to be issued pursuant to the full exercise of the Over-allotment Option shall not exceed 15% of the total number of H Shares to be offered initially", "confidence": "high"},
-    "col_CI": {"value": 112600000, "page": 23, "quote": "for the Global Offering are approximately RMB97.9 million (equivalent to approximately HK$112.6 million)", "confidence": "high"},
-    "col_AR": {"value": "High-precision intelligent manufacturing platform for electronic devices", "page": 139, "quote": "We are a leading high-precision intelligent manufacturing platform for electronic devices, delivering one-stop production services and solutions to customers worldwide.", "confidence": "high"},
-    "col_AS": {"value": "Main Board - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)", "page": 135, "quote": "Rule 8.08(1) (as amended and replaced by Rule 19A.13A) of the Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of listing", "confidence": "medium"},
-    "col_BF": {"value": "Commercialized - mass production", "page": 10, "quote": "we operate a manufacturing network built for high-volume, high-standard and high-complexity production", "confidence": "low"},
-    "col_BG": {"value": 0, "page": 24, "quote": "Approximately 37.6% of the net proceeds, or HK$3,065.0 million, is expected to be used to further enhance our production capacity through equipment investment", "confidence": "high"},
-    "col_CJ": {"value": "GF Fund; Kaide Global Investment; Qube; Ti-Capital Funds; Value Partners; Hongxing International; MSIP; HK Greenwoods; 3W Fund; Deliante; Sunny Optical Capital; Honor; Jain Global; Seven Grand; Taikang Life; Da Cheng International; Everbright Wealth Management; GRANITE ASIA; Verition", "page": 233, "quote": "GRANITE ASIA US$10 million 7,698,240 0.95% 0.09% Verition US$10 million 7,698,240 0.95% 0.09% Total US$406.9 million 313,241,280 38.59% 3.86%", "confidence": "high"},
-    "col_AT": {"value": "31/03/26", "page": 411, "quote": "Condensed consolidated statements of profit or loss for the three months ended March 31, 2026", "confidence": "high"},
-    "col_AU": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AV": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_AW": {"value": 688637000, "page": 411, "quote": "Research and development expenses 6(c) (688,637) (517,425)", "confidence": "high"},
-    "col_AX": {"value": 0, "page": 358, "quote": "INTANGIBLE ASSETS The Group Patent Software Customer relationship Core technology Others Total", "confidence": "medium"},
-    "col_AY": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_DP": {"value": "广东领益智造股份有限公司", "page": 1, "quote": "廣東領益智造股份有限公司", "confidence": "high"},
-    "col_BA": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_vc_backed": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_pe_backed": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_cvc_backed": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_gov_backed": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_top_tier_vc": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_pre_ipo_investors": {"value": "NA", "page": null, "quote": "", "confidence": "low"},
-    "col_vc_pe_stake": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_vc_board_seat": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_earliest_round": {"value": "NA", "page": null, "quote": "", "confidence": "low"},
-    "col_holding_duration": {"value": "NaN", "page": null, "quote": "", "confidence": "low"},
-    "col_BB": {"value": "Individual (natural person) - Ms. Zeng Fangqin", "page": 17, "quote": "our Company was directly owned as to approximately 1.49% by Ms. Zeng Fangqin (曾芳勤) (Ms. Zeng), and approximately 56.64% by Lingsheng Investment.", "confidence": "high"},
-    "col_BC": {"value": 0.5232, "page": 17, "quote": "Ms. Zeng and Lingsheng Investment will be collectively interested in and control an aggregate of approximately 52.32% of the total issued share capital of our Company", "confidence": "high"},
-    "col_BD": {"value": 0.5232, "page": 17, "quote": "Ms. Zeng and Lingsheng Investment will be collectively interested in and control an aggregate of approximately 52.32% of the total issued share capital of our Company", "confidence": "high"},
-    "col_BP": {"value": "04/09/2008", "page": 130, "quote": "Jiangmen Powder Co converted into JPMF Guangdong Co., Ltd. on September 4, 2008", "confidence": "low"},
-    "col_BR": {"value": "No. 8 Longwan Road, Pengjiang District, Jiangmen City, Guangdong Province, PRC", "page": 323, "quote": "address of the Company's registered office and its principal place of business is No. 8 Longwan Road, Jiangmen City,", "confidence": "medium"},
-    "col_CC": {"value": "17/06/2026", "page": 5, "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Wednesday, June 17, 2026", "confidence": "high"},
-    "col_CD": {"value": "23/06/2026", "page": 5, "quote": "Application lists close . . . 12:00 noon on Tuesday, June 23, 2026", "confidence": "high"}
+    "col_L": {
+      "value": 8120010560,
+      "page": 223,
+      "quote": "A Shares in issue 7,308,198,680* 90% H Shares to be issued under the Global Offering 811,811,880 10% Total 8,120,010,560 100%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 811811880,
+      "page": 223,
+      "quote": "H Shares to be issued under the Global Offering 811,811,880",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 7308198680,
+      "page": 223,
+      "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB7,308,198,680 comprising 7,308,198,680* A Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 7308198680,
+      "page": 223,
+      "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB7,308,198,680 comprising 7,308,198,680* A Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 223,
+      "quote": "A Shares in issue 7,308,198,680* 90% H Shares to be issued under the Global Offering 811,811,880 10% Total 8,120,010,560 100%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 811811880,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 811,811,880 H Shares",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 730630560,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 730,630,560 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 81181320,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 81,181,320 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 811,811,880 H Shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 811811880,
+      "page": 135,
+      "quote": "The total number of the H Shares to be issued pursuant to the Global Offering represents 10% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 10.18,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$10.18 per H Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 17,
+      "quote": "(RMB in thousands, except for percentages)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 45193486000,
+      "page": 20,
+      "quote": "Total assets 37,367,171 45,193,486 57,900,450",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 57900450000,
+      "page": 20,
+      "quote": "Total assets 37,367,171 45,193,486 57,900,450",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_Z": {
+      "value": 19848981000,
+      "page": 20,
+      "quote": "Net assets 18,280,693 19,848,981 24,357,948",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 24357948000,
+      "page": 20,
+      "quote": "Net assets 18,280,693 19,848,981 24,357,948",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AC": {
+      "value": 25344505000,
+      "page": 20,
+      "quote": "Total liabilities 19,086,478 25,344,505 33,542,502",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 33542502000,
+      "page": 20,
+      "quote": "Total liabilities 19,086,478 25,344,505 33,542,502",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AF": {
+      "value": 44259533000,
+      "page": 313,
+      "quote": "Revenue 34,154,017 44,259,533 51,428,944",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 51428944000,
+      "page": 313,
+      "quote": "Revenue 34,154,017 44,259,533 51,428,944",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 50571864000,
+      "page": 411,
+      "quote": "Revenue 3 12,642,966 11,494,278",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": 2196375000,
+      "page": 313,
+      "quote": "Profit before taxation 2,488,042 2,196,375 2,733,377",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 2733377000,
+      "page": 313,
+      "quote": "Profit before taxation 2,488,042 2,196,375 2,733,377",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 1720436000,
+      "page": 411,
+      "quote": "Profit before taxation 430,109 666,841",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": 1760733000,
+      "page": 313,
+      "quote": "Profit for the year 2,013,899 1,760,733 2,326,825",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 2326825000,
+      "page": 313,
+      "quote": "Profit for the year 2,013,899 1,760,733 2,326,825",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 1603224000,
+      "page": 411,
+      "quote": "Profit for the period 400,806 567,938",
+      "confidence": "medium"
+    },
+    "col_BE": {
+      "value": 14844113000,
+      "page": 270,
+      "quote": "Total 8,133,740 11,895,342 14,844,113 15,904,578",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 312,
+      "quote": "have been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1852431000,
+      "page": 411,
+      "quote": "Gross profit 1,852,431 1,477,827",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 311,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants' report, a true and fair view of the Group's consolidated financial position",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AP": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 224,
+      "quote": "The number of H Shares to be issued pursuant to the full exercise of the Over-allotment Option shall not exceed 15% of the total number of H Shares to be offered initially",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 112600000,
+      "page": 23,
+      "quote": "for the Global Offering are approximately RMB97.9 million (equivalent to approximately HK$112.6 million)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "High-precision intelligent manufacturing platform for electronic devices",
+      "page": 139,
+      "quote": "We are a leading high-precision intelligent manufacturing platform for electronic devices, delivering one-stop production services and solutions to customers worldwide.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board - Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "page": 135,
+      "quote": "Rule 8.08(1) (as amended and replaced by Rule 19A.13A) of the Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of listing",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized - mass production",
+      "page": 10,
+      "quote": "we operate a manufacturing network built for high-volume, high-standard and high-complexity production",
+      "confidence": "low"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 24,
+      "quote": "Approximately 37.6% of the net proceeds, or HK$3,065.0 million, is expected to be used to further enhance our production capacity through equipment investment",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "GF Fund; Kaide Global Investment; Qube; Ti-Capital Funds; Value Partners; Hongxing International; MSIP; HK Greenwoods; 3W Fund; Deliante; Sunny Optical Capital; Honor; Jain Global; Seven Grand; Taikang Life; Da Cheng International; Everbright Wealth Management; GRANITE ASIA; Verition",
+      "page": 233,
+      "quote": "GRANITE ASIA US$10 million 7,698,240 0.95% 0.09% Verition US$10 million 7,698,240 0.95% 0.09% Total US$406.9 million 313,241,280 38.59% 3.86%",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 411,
+      "quote": "Condensed consolidated statements of profit or loss for the three months ended March 31, 2026",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AW": {
+      "value": 688637000,
+      "page": 411,
+      "quote": "Research and development expenses 6(c) (688,637) (517,425)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 358,
+      "quote": "INTANGIBLE ASSETS The Group Patent Software Customer relationship Core technology Others Total",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_DP": {
+      "value": "广东领益智造股份有限公司",
+      "page": 1,
+      "quote": "廣東領益智造股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 16,
+      "quote": "Our A Shares have been listed on the Shenzhen Stock Exchange since February 2018.",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Individual (natural person) - Ms. Zeng Fangqin",
+      "page": 17,
+      "quote": "our Company was directly owned as to approximately 1.49% by Ms. Zeng Fangqin (曾芳勤) (Ms. Zeng), and approximately 56.64% by Lingsheng Investment.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.5232,
+      "page": 17,
+      "quote": "Ms. Zeng and Lingsheng Investment will be collectively interested in and control an aggregate of approximately 52.32% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.5232,
+      "page": 17,
+      "quote": "Ms. Zeng and Lingsheng Investment will be collectively interested in and control an aggregate of approximately 52.32% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "04/09/2008",
+      "page": 130,
+      "quote": "Jiangmen Powder Co converted into JPMF Guangdong Co., Ltd. on September 4, 2008",
+      "confidence": "low"
+    },
+    "col_BR": {
+      "value": "No. 8 Longwan Road, Pengjiang District, Jiangmen City, Guangdong Province, PRC",
+      "page": 323,
+      "quote": "address of the Company's registered office and its principal place of business is No. 8 Longwan Road, Jiangmen City,",
+      "confidence": "medium"
+    },
+    "col_CC": {
+      "value": "17/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Wednesday, June 17, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "23/06/2026",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Tuesday, June 23, 2026",
+      "confidence": "high"
+    }
   }
 }

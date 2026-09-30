@@ -1623,5 +1623,122 @@
       "2026-08-22"
     ],
     "window_closed": true
+  },
+  "0625.HK": {
+    "announcements_scanned": 3,
+    "exercised": false,
+    "listing_date": "2026-09-01",
+    "matches": [],
+    "status": "ok",
+    "window": [
+      "2026-09-01",
+      "2026-10-16"
+    ],
+    "window_closed": false
+  },
+  "2041.HK": {
+    "announcements_scanned": 3,
+    "exercised": false,
+    "listing_date": "2026-09-07",
+    "matches": [],
+    "status": "ok",
+    "window": [
+      "2026-09-07",
+      "2026-10-22"
+    ],
+    "window_closed": false
+  },
+  "2261.HK": {
+    "announcements_scanned": 6,
+    "exercised": false,
+    "listing_date": "2026-08-07",
+    "matches": [
+      {
+        "datetime": "03/09/2026 17:20",
+        "file": "/listedco/listconews/sehk/2026/0903/2026090301412.pdf",
+        "kind": "lapse",
+        "title": "END OF STABILIZATION PERIOD, NO STABILIZING ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION"
+      }
+    ],
+    "status": "ok",
+    "window": [
+      "2026-08-07",
+      "2026-09-21"
+    ],
+    "window_closed": true
+  },
+  "3223.HK": {
+    "announcements_scanned": 18,
+    "exercised": false,
+    "listing_date": "2026-08-25",
+    "matches": [
+      {
+        "datetime": "20/09/2026 18:04",
+        "file": "/listedco/listconews/sehk/2026/0920/2026092000001.pdf",
+        "kind": "lapse",
+        "title": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+      }
+    ],
+    "status": "ok",
+    "window": [
+      "2026-08-25",
+      "2026-10-09"
+    ],
+    "window_closed": false
+  },
+  "3231.HK": {
+    "announcements_scanned": 1,
+    "exercised": false,
+    "listing_date": "2026-09-09",
+    "matches": [],
+    "status": "ok",
+    "window": [
+      "2026-09-09",
+      "2026-10-24"
+    ],
+    "window_closed": false
+  },
+  "3308.HK": {
+    "announcements_scanned": 29,
+    "exercised": true,
+    "listing_date": "2026-07-30",
+    "matches": [
+      {
+        "datetime": "27/08/2026 06:06",
+        "file": "/listedco/listconews/sehk/2026/0827/2026082700007.pdf",
+        "kind": "exercise",
+        "title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD"
+      }
+    ],
+    "status": "ok",
+    "window": [
+      "2026-07-30",
+      "2026-09-13"
+    ],
+    "window_closed": true
+  },
+  "9615.HK": {
+    "announcements_scanned": 2,
+    "exercised": false,
+    "listing_date": "2026-09-01",
+    "matches": [],
+    "status": "ok",
+    "window": [
+      "2026-09-01",
+      "2026-10-16"
+    ],
+    "window_closed": false
+  },
+  "9976.HK": {
+    "announcements_scanned": 24,
+    "exercised": false,
+    "listing_date": "2026-09-08",
+    "matches": [],
+    "status": "ok",
+    "window": [
+      "2026-09-08",
+      "2026-10-23"
+    ],
+    "window_closed": false
   }
 }

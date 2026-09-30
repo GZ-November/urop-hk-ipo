@@ -4,12 +4,12 @@
 
 | Month | N | Mean IR | Median IR | IR < 0 | IR > 100% | Fixed price | Median public subscription (x) | HSI 20d before prospectus | IPOs in prior 90 days |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 12 | 35% | 28% | 8% | 8% | 67% | 1,121 | 0.6% | 46 |
-| 2026-02 | 11 | 35% | 3% | 27% | 18% | 64% | 570 | 5.7% | 47 |
-| 2026-03 | 15 | 26% | 8% | 27% | 13% | 47% | 1,073 | -3.8% | 43 |
-| 2026-04 | 8 | 122% | 89% | 12% | 50% | 62% | 1,120 | 0.5% | 32 |
+| 2026-01 | 12 | 36% | 28% | 0% | 8% | 67% | 1,121 | 0.6% | 46 |
+| 2026-02 | 11 | 41% | 12% | 0% | 18% | 64% | 570 | 5.7% | 47 |
+| 2026-03 | 15 | 27% | 8% | 27% | 13% | 47% | 1,073 | -3.8% | 43 |
+| 2026-04 | 8 | 126% | 89% | 0% | 50% | 62% | 1,120 | 0.5% | 32 |
 | 2026-05 | 13 | 98% | 92% | 15% | 46% | 77% | 5,480 | 2.1% | 30 |
-| 2026-06 | 24 | 79% | 46% | 29% | 38% | 67% | 1,492 | -5.3% | 36 |
+| 2026-06 | 24 | 79% | 46% | 25% | 38% | 67% | 1,492 | -5.3% | 36 |
 | 2026-07 | 16 | 7% | 0% | 44% | 6% | 56% | 336 | -7.8% | 41 |
 | 2026-08 | 2 | 32% | 32% | 0% | 0% | 50% | 1,720 | 7.5% | 50 |
 | 2026-09 | 5 | 22% | -1% | 80% | 20% | 40% | 140 | 1.0% | 43 |
@@ -27,22 +27,22 @@
 
 | Model | Parameters | R-squared | Adj. R-squared | AIC |
 |---|---|---|---|---|
-| Quarter dummies | 3 | 0.155 | 0.138 | 139.1 |
-| Quarter dummies + route + sector | 15 | 0.333 | 0.230 | 138.1 |
-| Hot window (Apr-Jun) dummy | 2 | 0.142 | 0.134 | 138.6 |
-| Hot window (Apr-Jun) dummy + route + sector | 14 | 0.328 | 0.234 | 136.7 |
-| Month dummies | 9 | 0.184 | 0.117 | 147.4 |
-| Month dummies + route + sector | 21 | 0.369 | 0.220 | 144.1 |
+| Quarter dummies | 3 | 0.160 | 0.144 | 134.6 |
+| Quarter dummies + route + sector | 15 | 0.328 | 0.224 | 135.1 |
+| Hot window (Apr-Jun) dummy | 2 | 0.143 | 0.135 | 134.7 |
+| Hot window (Apr-Jun) dummy + route + sector | 14 | 0.321 | 0.225 | 134.1 |
+| Month dummies | 9 | 0.196 | 0.130 | 142.0 |
+| Month dummies + route + sector | 21 | 0.377 | 0.230 | 139.0 |
 
-- Hot-window coefficient (with route + sector): 0.38; s.e. 0.08 clustered by month, 0.12 heteroskedasticity-robust (HC3).
+- Hot-window coefficient (with route + sector): 0.39; s.e. 0.09 clustered by month, 0.11 heteroskedasticity-robust (HC3).
 
 ## 4. Tests
 
-- Restricting month dummies to the hot-window dummy: F = 0.78, p = 0.606.
-- Restricting month dummies to the quarter dummies: F = 0.82, p = 0.559.
-- IR equal across Apr, May, Jun: Kruskal-Wallis p = 0.443.
-- IR equal across Jan, Feb, Mar: Kruskal-Wallis p = 0.452.
-- Mar vs Apr: Mann-Whitney p = 0.101; Jun vs Jul: Mann-Whitney p = 0.024.
-- Hot window vs rest: mean IR 92% (n = 45) vs 24% (n = 61); Mann-Whitney p = 0.00038.
+- Restricting month dummies to the hot-window dummy: F = 1.09, p = 0.378.
+- Restricting month dummies to the quarter dummies: F = 1.12, p = 0.360.
+- IR equal across Apr, May, Jun: Kruskal-Wallis p = 0.366.
+- IR equal across Jan, Feb, Mar: Kruskal-Wallis p = 0.468.
+- Mar vs Apr: Mann-Whitney p = 0.047; Jun vs Jul: Mann-Whitney p = 0.023.
+- Hot window vs rest: mean IR 93% (n = 45) vs 26% (n = 61); Mann-Whitney p = 0.00026.
 
 - Months with 2 or 5 deals (Aug, Sep) are too thin to read individually.

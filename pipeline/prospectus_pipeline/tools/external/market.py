@@ -2,7 +2,7 @@
 """腾讯港股日线 → DD（恒指 20 日回报）+ DH–DM（上市首日 OHLC/量/额）。
 
 接口：https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get
-  param=hk06082,day,<from>,<to>,<n>,qfq
+  param=hk06082,day,<from>,<to>,<n>,  (raw first-day OHLC)
   恒指代码 hkHSI。
 
 K 线字段顺序（实测）：date, open, close, high, low, volume, {}, ?, turnover_万元, ...
@@ -219,6 +219,7 @@ def main() -> int:
             "prospectus": str(pd),
             "listing": str(ld),
             "hsi_provider": hsi_prov,
+            "first_day_price_basis": "raw_as_traded",
         }
         i = last_before(hsi, pd)
         if i is None or i < 20:
@@ -229,11 +230,11 @@ def main() -> int:
             rec["DD_t"] = str(hsi[i]["date"])
             rec["DD_t20"] = str(hsi[i - 20]["date"])
         sym = hk_symbol(code)
-        frm = (ld - dt.timedelta(days=3)).isoformat()
+        frm = ld.isoformat()
         to = (ld + dt.timedelta(days=10)).isoformat()
         try:
             bars, prov_stock, errs_stock = fetcher.fetch_bars_resilient(
-                code, frm, to, n_bars=20, preferred_provider=args.provider
+                code, frm, to, n_bars=640, preferred_provider=args.provider, adjusted=False
             )
             (CACHE / f"{sym}.json").write_text(
                 json.dumps(bars, ensure_ascii=False, default=str), encoding="utf-8"
@@ -276,6 +277,11 @@ def main() -> int:
             n_ok += 1
     print(f"\n完整 {n_ok}/{len(results)}")
 
+    if any(not rec.get("first") for rec in results):
+        wb.close()
+        print("Incomplete raw first-day data; workbook preserved")
+        return 2
+
     if args.dry_run:
         wb.close()
         print("--dry-run：未写回")
@@ -302,8 +308,9 @@ def main() -> int:
             ws.cell(r, col_of["DJ"]).value = first["high"]
             ws.cell(r, col_of["DK"]).value = first["low"]
             ws.cell(r, col_of["DL"]).value = int(round(first["volume"]))
-            ws.cell(r, col_of["DM"]).value = (round(first["turnover"], 2)
-                                              if first.get("turnover") is not None else "NaN")
+            if first.get("turnover") is not None:
+                ws.cell(r, col_of["DM"]).value = round(first["turnover"], 2)
+            # Static raw OHLC has no turnover: preserve the independently collected amount.
     print(f"\n已写回 DD, DH–DM（{n_ok} 家完整） -> {book.name}")
     return 0
 

@@ -1,0 +1,119 @@
+{
+  "code": "3223.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4805,
+      "page": 6,
+      "quote": "Total\n15,034,000\n48.05%\n2.92%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 927.37,
+      "page": 4,
+      "quote": "Subscription level\n927.37 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 141851,
+      "page": 4,
+      "quote": "No. of valid applications\n141,851",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 2901565000,
+      "page": 14,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING\nSubject to the satisfaction of the conditions set out in the Prospectus, valid applications made by \nthe public will be conditionally allocated",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 927.37 times",
+      "page": 4,
+      "quote": "Subscription level\n927.37 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "24/08/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**24/08/2026 22:29**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 31287300,
+      "page": 3,
+      "quote": "Number of Offer Shares (subject to the Over-allotment Option)\n31,287,300",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3128800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering\n3,128,800",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 28158500,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering\n28,158,500",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（20/09/2026 18:04）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 3054600000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$3,054.6 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0608,
+      "page": 25,
+      "quote": "calculated based on the final Offer Price of \nHK$100.00 per H Share, which is higher than the prescribed market value of the H Shares required \nto be held by the public of HK$3 billion",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 514951667,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before any exercise of \nthe Over-allotment Option)\n514,951,667",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0316,
+      "page": null,
+      "quote": "公式：(col_CS 31,287,300 − col_CK 0.4805×col_CS) ÷ col_CZ 514,951,667 = 0.0316；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 31,287,300 − col_CK 0.4805×col_CS) ÷ col_CZ 514,951,667 = 0.0316；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 514951667,
+      "page": 3,
+      "quote": "公式：(col_CS 31,287,300 − col_CK 0.4805×col_CS) ÷ col_CZ 514,951,667 = 0.0316；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

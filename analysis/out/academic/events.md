@@ -8,58 +8,53 @@ Turnover rows compare mean turnover on days [0,+5] to days [-25,-6] (log ratio; 
 
 ## 1. Six-month lockup expiry (cornerstone unlock date, else controlling-shareholder date)
 
-Only issuers listed early enough to have reached the expiry with a full window are included (31 at most, all listed January-March; 88 issuers share the same
+Only issuers listed early enough to have reached the expiry with a full window are included (37 at most, all listed January-March; 88 issuers share the same
 cornerstone and controlling-shareholder date, so they are one event, not two).
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 31 | -2.5% | -2.9% | -1.37 | 0.076 | 0.215 | 61% |
-| [0,+5] | 26 | -2.6% | -0.3% | -1.06 | 0.764 | 0.295 | 54% |
-| [-5,+5] | 26 | -5.9% | -5.1% | -1.55 | 0.123 | 0.147 | 69% |
-| [-5,-1] | 31 | -3.9% | -2.9% | -1.65 | 0.090 | 0.116 | 65% |
-| Turnover [0,+5] vs [-25,-6], median log ratio | 26 | 0.20 | 0.14 | 1.27 | 0.227 | 0.004 | 38% |
+| [-1,+1] | 31 | -2.5% | -2.9% | -1.37 | 0.076 | 0.206 | 61% |
+| [0,+5] | 29 | -2.5% | -0.4% | -1.14 | 0.624 | 0.276 | 55% |
+| [-5,+5] | 29 | -5.6% | -4.9% | -1.62 | 0.092 | 0.100 | 69% |
+| [-5,-1] | 37 | -4.9% | -5.1% | -2.24 | 0.027 | 0.039 | 68% |
+| Turnover [0,+5] vs [-25,-6], median log ratio | 29 | 0.18 | 0.12 | 1.19 | 0.275 | 0.004 | 41% |
 
 Robustness, HSTECH-adjusted:
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 31 | -2.6% | -2.3% | -1.45 | 0.120 | 0.117 | 61% |
-| [0,+5] | 26 | -1.7% | 0.4% | -0.73 | 0.861 | 0.322 | 50% |
-| [-5,+5] | 26 | -5.4% | -4.3% | -1.45 | 0.150 | 0.088 | 73% |
-| [-5,-1] | 31 | -4.4% | -3.3% | -1.90 | 0.069 | 0.032 | 61% |
-| Turnover [0,+5] vs [-25,-6], median log ratio | 26 | 0.20 | 0.14 | 1.27 | 0.227 | 0.004 | 38% |
+| [-1,+1] | 31 | -2.6% | -2.3% | -1.45 | 0.120 | 0.109 | 61% |
+| [0,+5] | 29 | -1.5% | -0.0% | -0.70 | 0.882 | 0.295 | 52% |
+| [-5,+5] | 29 | -5.1% | -3.3% | -1.51 | 0.121 | 0.045 | 72% |
+| [-5,-1] | 37 | -5.0% | -3.5% | -2.34 | 0.026 | 0.011 | 62% |
+| Turnover [0,+5] vs [-25,-6], median log ratio | 29 | 0.18 | 0.12 | 1.19 | 0.275 | 0.004 | 41% |
 
 ## 2. End of the stabilization period
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 100 | 0.4% | -0.9% | 0.46 | 0.888 | 0.359 | 55% |
-| [0,+5] | 99 | 1.3% | -0.0% | 0.77 | 0.772 | 0.186 | 51% |
-| [-5,+5] | 99 | 4.1% | 2.9% | 1.87 | 0.059 | 0.004 | 43% |
-| [-5,-1] | 100 | 2.8% | 0.4% | 1.67 | 0.217 | 0.029 | 48% |
+| [-1,+1] | 31 | -0.7% | -1.5% | -0.54 | 0.468 | 0.844 | 58% |
+| [0,+5] | 31 | -1.2% | -2.5% | -0.44 | 0.468 | 0.936 | 55% |
+| [-5,+5] | 31 | -2.2% | -0.7% | -0.64 | 0.706 | 0.524 | 52% |
+| [-5,-1] | 31 | -1.0% | -0.6% | -0.44 | 0.581 | 0.528 | 58% |
 
 Split by whether stabilizing purchases occurred (their number is small):
 
 Purchases occurred:
 
-| Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
-|---|---|---|---|---|---|---|---|
-| [-1,+1] | 13 | -2.7% | -3.5% | -1.51 | 0.127 | 0.177 | 77% |
-| [0,+5] | 13 | -3.2% | -4.7% | -0.70 | 0.497 | 0.595 | 62% |
-| [-5,+5] | 13 | 0.6% | 1.0% | 0.11 | 0.893 | 0.866 | 46% |
-| [-5,-1] | 13 | 3.7% | 0.8% | 1.43 | 0.305 | 0.166 | 31% |
+Too few issuers with a full window.
 
 No purchases:
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 87 | 0.9% | -0.3% | 0.88 | 0.501 | 0.190 | 52% |
-| [0,+5] | 86 | 1.9% | 0.2% | 1.09 | 0.551 | 0.103 | 49% |
-| [-5,+5] | 86 | 4.6% | 3.1% | 1.92 | 0.045 | 0.005 | 43% |
-| [-5,-1] | 87 | 2.7% | -0.0% | 1.41 | 0.337 | 0.037 | 51% |
+| [-1,+1] | 14 | -0.4% | -1.3% | -0.19 | 0.808 | 0.994 | 57% |
+| [0,+5] | 14 | -0.7% | -4.0% | -0.16 | 0.426 | 0.855 | 57% |
+| [-5,+5] | 14 | -6.3% | -4.4% | -1.12 | 0.358 | 0.302 | 64% |
+| [-5,-1] | 14 | -5.7% | -6.4% | -1.50 | 0.068 | 0.126 | 86% |
 
 - A negative pre-window on the lockup event ([-5,-1]) is the usual anticipation of selling pressure; the sign and size of [-5,+5] against the placebo distribution
-  is the test. With about 31 events from one listing quarter the power is limited.
+  is the test. With about 37 events from one listing quarter the power is limited.
 - The placebo statistics are centred below zero: returns drift down and turnover decays as a new listing ages, so an ordinary window in the same weeks would
   show a negative average. That is why the placebo p can be much smaller than the plain t-test or Wilcoxon p (for example the stabilization-end [-5,+5] window has
   t about 1.9 but placebo p about 0.004): the window is unusual relative to the issuer's own neighbouring days, though a plain test against zero is only marginal.

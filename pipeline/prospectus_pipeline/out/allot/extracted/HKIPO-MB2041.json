@@ -1,0 +1,119 @@
+{
+  "code": "2041.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 474 页 0 处「基石投资者」、配发公告 15 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 436.37,
+      "page": 4,
+      "quote": "Subscription level\n436.37 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 57305,
+      "page": 4,
+      "quote": "No. of valid applications\n57,305",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1697974600,
+      "page": 12,
+      "quote": "1,945,500\n152\n3,100 H Shares plus 70 out of 152 applicants to receive an \nadditional 100 H Shares\n0.16%\nTotal\n1,340\nTotal number of Pool B successful applicants: 1,340",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 436.37 times",
+      "page": 4,
+      "quote": "Subscription level\n436.37 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "04/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**04/09/2026 18:47**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 38910600,
+      "page": 3,
+      "quote": "Number of Offer Shares\n38,910,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3891100,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering\n3,891,100",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 35019500,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering\n35,019,500",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 496200000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$496.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4263,
+      "page": 15,
+      "quote": "a total of 229,621,874 H Shares, representing approximately 42.63% of the total number of issued Shares will be regarded as public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 538626686,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n538,626,686",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0722,
+      "page": null,
+      "quote": "公式：(col_CS 38,910,600 − col_CK 0.0000×col_CS) ÷ col_CZ 538,626,686 = 0.0722；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 38,910,600 − col_CK 0.0000×col_CS) ÷ col_CZ 538,626,686 = 0.0722；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 538626686,
+      "page": 3,
+      "quote": "公式：(col_CS 38,910,600 − col_CK 0.0000×col_CS) ÷ col_CZ 538,626,686 = 0.0722；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

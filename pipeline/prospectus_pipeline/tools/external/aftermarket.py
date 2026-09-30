@@ -70,7 +70,7 @@ AFTERMARKET_FIELDS = [
 ]
 
 # 首个 bar 收盘价与首日收盘价相差超过该比例，视为价格口径不同（公司行为复权），而非小额股息复权。
-PRICE_BASIS_TOLERANCE = 0.01
+PRICE_BASIS_TOLERANCE = 1e-9
 
 HEADER_FILL = PatternFill(start_color="FF00B0F0", end_color="FF00B0F0", fill_type="solid")
 HEADER_FONT = Font(name="Arial", size=11, bold=True, color="000000")
@@ -173,7 +173,7 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     # 所有 BHR / 一级申购回报都必须分子分母同口径，否则出现如 3:1 拆股后 -63% 的假收益。
     first_bar_close = after_bars[0]["close"]
     basis_scale = 1.0
-    if p1 and first_bar_close and abs(first_bar_close / p1 - 1.0) > PRICE_BASIS_TOLERANCE:
+    if after_bars[0]["date"] == ld and p1 and first_bar_close and abs(first_bar_close / p1 - 1.0) > PRICE_BASIS_TOLERANCE:
         basis_scale = first_bar_close / p1
     p1 = p1 * basis_scale
     p0 = p0 * basis_scale

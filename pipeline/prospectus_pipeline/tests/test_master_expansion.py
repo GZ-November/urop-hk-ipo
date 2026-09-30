@@ -174,7 +174,7 @@ class MasterExpansionTestSuite(unittest.TestCase):
         self.assertIn("Controlling_Shareholder_12M_Control", categories)
 
         for lk in lockups:
-            self.assertIn(lk["window_status"], ("MATURED", "IMMATURE_WINDOW", "NO_TRADING_DATA", "POST_UNLOCK_TRADING_MISSING"))
+            self.assertIn(lk["window_status"], ("MATURED", "IMMATURE_WINDOW", "INCOMPLETE_WINDOW", "NO_TRADING_DATA", "POST_UNLOCK_TRADING_MISSING"))
             if lk["window_status"] == "MATURED":
                 self.assertIsNotNone(lk["car_m5_p5"])
                 self.assertNotEqual(lk["car_m5_p5"], "")

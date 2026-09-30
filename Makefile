@@ -7,7 +7,7 @@ COHORT_CONFIGS := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_
 CONFIGS_2026 := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_2026q*.yaml)))
 PYTHON_SOURCES := run.py analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
 
-.PHONY: refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
+.PHONY: margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -81,12 +81,17 @@ test-analysis:
 # the refreshed daily bars directly, so Q2 lockup events enter the event studies without the expansion writer.
 refresh-2026:
 	@for cfg in $(CONFIGS_2026); do \
+		PIPELINE_CONFIG="$(CURDIR)/pipeline/$$cfg" "$(PYTHON)" pipeline/prospectus_pipeline/tools/external/market.py || exit 1; \
+		"$(PYTHON)" run.py academic --config $$cfg || exit 1; \
 		"$(PYTHON)" run.py aftermarket --config $$cfg || exit 1; \
 		"$(PYTHON)" pipeline/prospectus_pipeline/tools/blank_immature_window_stats.py --config $$cfg || exit 1; \
 		"$(PYTHON)" run.py export --config $$cfg || exit 1; done
-	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/ah_reference.py --refresh
 	@"$(PYTHON)" run.py master --derive
+	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/ah_reference.py --refresh
 	@$(MAKE) analysis
+
+margin-reference:
+	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/margin_reference.py
 
 analysis:
 	@for script in module_a_stylized_facts module_b_underpricing_regression ir_decomposition_2026 q2_breakdown_2026 monthly_breakdown_2026 testability_screen_2026 extended_analysis_2026 aftermarket_event_time_2026 academic_extensions_2026 ah_anchor_2026 margin_financing_2026; do \
