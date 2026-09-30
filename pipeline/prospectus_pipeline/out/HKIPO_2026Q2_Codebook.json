@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-30 00:02:18"
+    "generated_at": "2026-09-30 18:03:37"
   },
   "variables": [
     {
@@ -4031,22 +4031,22 @@
       "group": "stabilization",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "香港主板上市规则第 9(2) 条稳价公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 8,
+        "valid_n": 22,
+        "missing_n": 23,
+        "fill_rate_pct": 48.89,
+        "unique_count": 10,
         "top_categories": {
-          "China International Capital Corporation / Sponsor-OC": 33,
-          "CLSA Limited": 3,
-          "China International Capital Corporation Hong Kong Securities \nLimited": 3,
-          "China International Capital Corporation Hong Kong \nSecurities Limited": 2,
-          "Guotai Junan Securities (Hong Kong) \nLimited": 1
+          "China International Capital Corporation Hong Kong Securities Limited": 8,
+          "CLSA Limited": 6,
+          "Haitong International Securities Company Limited": 1,
+          "Guotai Junan Securities (Hong Kong) Limited": 1,
+          "Yue Xiu Securities Company Limited": 1
         },
-        "summary_display": "共 8 种取值 ('China International Capital Corporation / Sponsor-OC': 33, 'CLSA Limited': 3, 'China International Capital Corporation Hong Kong Securities \nLimited': 3)"
+        "summary_display": "共 10 种取值 ('China International Capital Corporation Hong Kong Securities Limited': 8, 'CLSA Limited': 6, 'Haitong International Securities Company Limited': 1)"
       }
     },
     {
@@ -4058,22 +4058,22 @@
       "group": "stabilization",
       "data_type": "string / categorical",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "香港主板上市规则第 9(2) 条稳价公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 27,
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
+        "unique_count": 8,
         "top_categories": {
-          "2026-07-23": 5,
-          "2026-06-26": 3,
-          "2026-07-24": 3,
-          "2026-07-26": 3,
-          "2026-07-30": 3
+          "2026-07-23": 3,
+          "2026-05-13": 1,
+          "2026-05-20": 1,
+          "2026-06-25": 1,
+          "2026-07-02": 1
         },
-        "summary_display": "共 27 种取值 ('2026-07-23': 5, '2026-06-26': 3, '2026-07-24': 3)"
+        "summary_display": "共 8 种取值 ('2026-07-23': 3, '2026-05-13': 1, '2026-05-20': 1)"
       }
     },
     {
@@ -4085,17 +4085,17 @@
       "group": "stabilization",
       "data_type": "boolean (0/1)",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "香港主板上市规则第 9(2) 条稳价公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "true_count": 3,
-        "false_count": 42,
-        "true_pct": 6.7,
-        "summary_display": "1 (是): 3 家 (6.7%), 0 (否): 42 家"
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
+        "true_count": 1,
+        "false_count": 9,
+        "true_pct": 10.0,
+        "summary_display": "1 (是): 1 家 (10.0%), 0 (否): 9 家"
       }
     },
     {
@@ -4107,21 +4107,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "配发结果公告与超额配售公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 2214170.0,
-        "std": 5572266.495009826,
-        "median": 0.0,
-        "min": 0.0,
-        "q25": 0.0,
-        "q75": 0.0,
+        "valid_n": 11,
+        "missing_n": 34,
+        "fill_rate_pct": 24.44,
+        "mean": 9057968.181818182,
+        "std": 8272283.864274506,
+        "median": 8513300.0,
+        "min": 1335000.0,
+        "q25": 2036000.0,
+        "q75": 11014050.0,
         "max": 30184000.0,
-        "summary_display": "均值 2,214,170.00 | 中位数 0.00 | 区间 [0.00, 30,184,000.00]"
+        "summary_display": "均值 9,057,968.18 | 中位数 8,513,300.00 | 区间 [1,335,000.00, 30,184,000.00]"
       }
     },
     {
@@ -4133,21 +4133,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "配发结果公告与超额配售公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.1581422222222222,
-        "std": 0.07262657129856716,
+        "valid_n": 9,
+        "missing_n": 36,
+        "fill_rate_pct": 20.0,
+        "mean": 0.1907111111111111,
+        "std": 0.16588775907556022,
         "median": 0.15,
         "min": 0.05,
-        "q25": 0.15,
-        "q75": 0.15,
+        "q25": 0.0695,
+        "q75": 0.2,
         "max": 0.5414,
-        "summary_display": "均值 0.16 | 中位数 0.15 | 区间 [0.05, 0.54]"
+        "summary_display": "均值 0.19 | 中位数 0.15 | 区间 [0.05, 0.54]"
       }
     },
     {
@@ -4159,22 +4159,22 @@
       "group": "stabilization",
       "data_type": "string / categorical",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "超额配售权行使公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 34,
+        "valid_n": 38,
+        "missing_n": 7,
+        "fill_rate_pct": 84.44,
+        "unique_count": 28,
         "top_categories": {
-          "2026-07-23": 4,
           "2026-06-30": 3,
+          "2026-07-23": 3,
           "2026-05-20": 2,
           "2026-06-05": 2,
           "2026-05-27": 2
         },
-        "summary_display": "共 34 种取值 ('2026-07-23': 4, '2026-06-30': 3, '2026-05-20': 2)"
+        "summary_display": "共 28 种取值 ('2026-06-30': 3, '2026-07-23': 3, '2026-05-20': 2)"
       }
     },
     {
@@ -4186,21 +4186,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "超额配售权行使公告",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 3755240.6666666665,
-        "std": 6658716.23755367,
-        "median": 0.0,
+        "valid_n": 31,
+        "missing_n": 14,
+        "fill_rate_pct": 68.89,
+        "mean": 5451155.806451613,
+        "std": 7448284.942440004,
+        "median": 2036000.0,
         "min": 0.0,
         "q25": 0.0,
-        "q75": 6296400.0,
+        "q75": 8782200.0,
         "max": 30184000.0,
-        "summary_display": "均值 3,755,240.67 | 中位数 0.00 | 区间 [0.00, 30,184,000.00]"
+        "summary_display": "均值 5,451,155.81 | 中位数 2,036,000.00 | 区间 [0.00, 30,184,000.00]"
       }
     },
     {
@@ -4212,21 +4212,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "超额配售权行使公告确定性派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.45256,
-        "std": 0.48656719913361124,
-        "median": 0.0,
+        "valid_n": 32,
+        "missing_n": 13,
+        "fill_rate_pct": 71.11,
+        "mean": 0.6364125,
+        "std": 0.4810171747654701,
+        "median": 1.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.45 | 中位数 0.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.64 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -4238,21 +4238,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "二级市场日行情与稳价截止日确定性派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": -0.04577482222222222,
-        "std": 0.194464804987162,
-        "median": -0.040881,
-        "min": -0.42,
-        "q25": -0.15253,
-        "q75": 0.006483,
-        "max": 0.633484,
-        "summary_display": "均值 -0.05 | 中位数 -0.04 | 区间 [-0.42, 0.63]"
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
+        "mean": -0.11626900000000001,
+        "std": 0.14587740517297393,
+        "median": -0.0551175,
+        "min": -0.36398,
+        "q25": -0.227723,
+        "q75": -0.025751,
+        "max": 0.108871,
+        "summary_display": "均值 -0.12 | 中位数 -0.06 | 区间 [-0.36, 0.11]"
       }
     },
     {
@@ -4264,21 +4264,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "二级市场日行情与稳价截止日确定性派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": -0.021867911111111107,
-        "std": 0.300372667894463,
-        "median": -0.054481,
-        "min": -0.527747,
-        "q25": -0.198635,
-        "q75": 0.133452,
-        "max": 0.86459,
-        "summary_display": "均值 -0.02 | 中位数 -0.05 | 区间 [-0.53, 0.86]"
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
+        "mean": 0.008767500000000004,
+        "std": 0.30826562482676095,
+        "median": 0.002291999999999999,
+        "min": -0.44259,
+        "q25": -0.26565,
+        "q75": 0.241176,
+        "max": 0.446139,
+        "summary_display": "均值 0.01 | 中位数 0.00 | 区间 [-0.44, 0.45]"
       }
     },
     {
@@ -4290,21 +4290,21 @@
       "group": "stabilization",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 30-day stabilization window",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Sparse",
       "source": "二级市场日行情与稳价截止日确定性派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.32314493333333333,
-        "std": 0.22563368335034878,
-        "median": 0.249998,
-        "min": 0.046239,
-        "q25": 0.146343,
-        "q75": 0.438559,
-        "max": 0.997668,
-        "summary_display": "均值 0.32 | 中位数 0.25 | 区间 [0.05, 1.00]"
+        "valid_n": 10,
+        "missing_n": 35,
+        "fill_rate_pct": 22.22,
+        "mean": 0.3304624,
+        "std": 0.22169876958572013,
+        "median": 0.26061249999999997,
+        "min": 0.105418,
+        "q25": 0.143642,
+        "q75": 0.488008,
+        "max": 0.792596,
+        "summary_display": "均值 0.33 | 中位数 0.26 | 区间 [0.11, 0.79]"
       }
     },
     {
@@ -4420,21 +4420,21 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Aftermarket event horizon window",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "二级市场日行情确定性派生",
       "stats": {
-        "valid_n": 41,
-        "missing_n": 4,
-        "fill_rate_pct": 91.11,
-        "mean": -0.14780526829268292,
-        "std": 0.4750106794506848,
-        "median": -0.286364,
-        "min": -0.717833,
-        "q25": -0.391328,
-        "q75": 0.019394,
-        "max": 2.128079,
-        "summary_display": "均值 -0.15 | 中位数 -0.29 | 区间 [-0.72, 2.13]"
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": -0.16802184444444446,
+        "std": 0.5002883162676823,
+        "median": -0.296742,
+        "min": -0.710702,
+        "q25": -0.42807,
+        "q75": 0.04,
+        "max": 2.458128,
+        "summary_display": "均值 -0.17 | 中位数 -0.30 | 区间 [-0.71, 2.46]"
       }
     },
     {
@@ -4450,17 +4450,17 @@
       "coverage_status": "Adequate",
       "source": "二级市场日行情与恒生指数确定性派生",
       "stats": {
-        "valid_n": 41,
-        "missing_n": 4,
-        "fill_rate_pct": 91.11,
-        "mean": 0.835890243902439,
-        "std": 0.4697423069113948,
-        "median": 0.6858,
-        "min": 0.2808,
-        "q25": 0.5712,
-        "q75": 1.0006,
-        "max": 3.1057,
-        "summary_display": "均值 0.84 | 中位数 0.69 | 区间 [0.28, 3.11]"
+        "valid_n": 28,
+        "missing_n": 17,
+        "fill_rate_pct": 62.22,
+        "mean": 0.8927178571428571,
+        "std": 0.5919692303399833,
+        "median": 0.76725,
+        "min": 0.3006,
+        "q25": 0.5787,
+        "q75": 1.1267,
+        "max": 3.426,
+        "summary_display": "均值 0.89 | 中位数 0.77 | 区间 [0.30, 3.43]"
       }
     },
     {
@@ -4476,17 +4476,17 @@
       "coverage_status": "Adequate",
       "source": "二级市场日行情与恒生科技指数确定性派生",
       "stats": {
-        "valid_n": 41,
-        "missing_n": 4,
-        "fill_rate_pct": 91.11,
-        "mean": 0.886290243902439,
-        "std": 0.5121309367753906,
-        "median": 0.7388,
-        "min": 0.28,
-        "q25": 0.607,
-        "q75": 1.0738,
-        "max": 3.3456,
-        "summary_display": "均值 0.89 | 中位数 0.74 | 区间 [0.28, 3.35]"
+        "valid_n": 28,
+        "missing_n": 17,
+        "fill_rate_pct": 62.22,
+        "mean": 0.9416785714285715,
+        "std": 0.6439795277152854,
+        "median": 0.7685,
+        "min": 0.3068,
+        "q25": 0.5891,
+        "q75": 1.1639,
+        "max": 3.6731,
+        "summary_display": "均值 0.94 | 中位数 0.77 | 区间 [0.31, 3.67]"
       }
     },
     {
@@ -4498,21 +4498,21 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Aftermarket event horizon window",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "二级市场日行情确定性派生",
       "stats": {
-        "valid_n": 41,
-        "missing_n": 4,
-        "fill_rate_pct": 91.11,
-        "mean": 126289573.63195121,
-        "std": 290941526.7431747,
-        "median": 42460906.35,
-        "min": 13388746.03,
-        "q25": 27448819.05,
-        "q75": 92465522.22,
-        "max": 1851768717.46,
-        "summary_display": "均值 126,289,573.63 | 中位数 42,460,906.35 | 区间 [13,388,746.03, 1,851,768,717.46]"
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 118300670.87444444,
+        "std": 280192977.85710675,
+        "median": 37480786.36,
+        "min": 15389478.79,
+        "q25": 27078337.5,
+        "q75": 91141495.31,
+        "max": 1861466041.94,
+        "summary_display": "均值 118,300,670.87 | 中位数 37,480,786.36 | 区间 [15,389,478.79, 1,861,466,041.94]"
       }
     },
     {
@@ -4524,21 +4524,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情与 Amihud 模型派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.0026530895608535567,
-        "std": 0.0018575881921631086,
-        "median": 0.002318444444444445,
-        "min": 3.789908256880734e-05,
-        "q25": 0.001037485436893204,
-        "q75": 0.003796484375,
-        "max": 0.008248552238805969,
-        "summary_display": "均值 0.00 | 中位数 0.00 | 区间 [0.00, 0.01]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4550,21 +4543,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情交易量派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.0,
-        "std": 0.0,
-        "median": 0.0,
-        "min": 0.0,
-        "q25": 0.0,
-        "q75": 0.0,
-        "max": 0.0,
-        "summary_display": "均值 0.00 | 中位数 0.00 | 区间 [0.00, 0.00]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4576,21 +4562,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日度收益率标准差派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.14056189164542351,
-        "std": 0.09752956932918455,
-        "median": 0.1131092042339505,
-        "min": 0.03159668080146645,
-        "q25": 0.0773195692050503,
-        "q75": 0.1564713895415112,
-        "max": 0.4706506556693458,
-        "summary_display": "均值 0.14 | 中位数 0.11 | 区间 [0.03, 0.47]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4602,21 +4581,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情累计高点回撤派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.5591607333333334,
-        "std": 0.13026394132410898,
-        "median": 0.564215,
-        "min": 0.215969,
-        "q25": 0.488978,
-        "q75": 0.645684,
-        "max": 0.847423,
-        "summary_display": "均值 0.56 | 中位数 0.56 | 区间 [0.22, 0.85]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {

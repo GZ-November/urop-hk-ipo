@@ -734,5 +734,139 @@
     "announcement_pages": 14,
     "announcement_sections": 0,
     "sample_pages": []
+  },
+  "9615.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 63,
+    "prospectus_pages": 425,
+    "announcement_hits": 5,
+    "announcement_pages": 25,
+    "announcement_sections": 2,
+    "sample_pages": [
+      8,
+      130,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251
+    ]
+  },
+  "3231.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 61,
+    "prospectus_pages": 478,
+    "announcement_hits": 13,
+    "announcement_pages": 23,
+    "announcement_sections": 4,
+    "sample_pages": [
+      9,
+      56,
+      184,
+      229,
+      230,
+      231,
+      232,
+      233
+    ]
+  },
+  "0625.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 79,
+    "prospectus_pages": 481,
+    "announcement_hits": 30,
+    "announcement_pages": 32,
+    "announcement_sections": 4,
+    "sample_pages": [
+      9,
+      116,
+      117,
+      118,
+      119,
+      120,
+      170,
+      173
+    ]
+  },
+  "2261.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 468,
+    "announcement_hits": 0,
+    "announcement_pages": 19,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "2041.HK": {
+    "verdict": "absent",
+    "evidence_complete": true,
+    "prospectus_hits": 0,
+    "prospectus_pages": 474,
+    "announcement_hits": 0,
+    "announcement_pages": 15,
+    "announcement_sections": 0,
+    "sample_pages": []
+  },
+  "9976.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 78,
+    "prospectus_pages": 584,
+    "announcement_hits": 37,
+    "announcement_pages": 32,
+    "announcement_sections": 15,
+    "sample_pages": [
+      9,
+      100,
+      101,
+      102,
+      170,
+      299,
+      300,
+      301
+    ]
+  },
+  "3223.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 72,
+    "prospectus_pages": 450,
+    "announcement_hits": 39,
+    "announcement_pages": 26,
+    "announcement_sections": 4,
+    "sample_pages": [
+      9,
+      83,
+      86,
+      87,
+      88,
+      89,
+      261,
+      262
+    ]
+  },
+  "3308.HK": {
+    "verdict": "present",
+    "evidence_complete": true,
+    "prospectus_hits": 80,
+    "prospectus_pages": 476,
+    "announcement_hits": 50,
+    "announcement_pages": 34,
+    "announcement_sections": 2,
+    "sample_pages": [
+      9,
+      93,
+      94,
+      285,
+      286,
+      287,
+      288,
+      289
+    ]
   }
 }

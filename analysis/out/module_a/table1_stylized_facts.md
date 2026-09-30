@@ -18,7 +18,7 @@ Sample: 106 HK Main Board ordinary IPOs listed 02 Jan 2026 – 09 Sep 2026; All 
 | Money left on table, total (HK$bn) | 25.7 | 57.2 | 0.2 | 83.0 |
 | Public subscription ratio, median (x) | 1,072.0 | 2,003.2 | 344.3 | 1,120.1 |
 | Share fixed-price offers | 57.9% | 68.9% | 52.2% | 61.3% |
-| Share VC/PE-backed | 73.7% | 84.4% | 73.9% | 78.3% |
+| Share VC/PE-backed | 73.7% | 84.4% | 89.5% | 81.4% |
 | Share loss-making (year-1) | 39.5% | 52.3% | 43.5% | 45.7% |
 | Firm age, median (years) | 15.5 | 13.2 | 14.3 | 13.6 |
 | Share Chapter 18A | 7.9% | 17.8% | 0.0% | 10.4% |
@@ -37,7 +37,7 @@ Sample: 106 HK Main Board ordinary IPOs listed 02 Jan 2026 – 09 Sep 2026; All 
 |---|---|---|---|---|---|---|---|---|---|
 | 18A biotech | 11 | 79.6% | 102.7% | 9% | 62.2% | 1,112 | 9.3 | 100% | 100% |
 | 18C specialist tech | 17 | 74.5% | 75.8% | 24% | 83.2% | 1,067 | 9.9 | 100% | 100% |
-| A+H (19A) | 33 | 7.9% | 1.1% | 42% | 8.6% | 4,974 | 21.7 | 3% | 45% |
+| A+H (19A) | 33 | 7.9% | 1.1% | 42% | 8.6% | 4,974 | 21.7 | 3% | 52% |
 | Conventional | 45 | 71.6% | 44.7% | 22% | 33.3% | 830 | 12.4 | 43% | 89% |
 | Memo: WVR (any route) | 4 | 87.5% | 54.5% | 25% | 30.7% | 5,717 | 11.1 | 75% | 100% |
 
@@ -58,14 +58,14 @@ Sample: 106 HK Main Board ordinary IPOs listed 02 Jan 2026 – 09 Sep 2026; All 
 
 |  | 2026 all | 2026 VC/PE-backed | 2026 non-VC/PE |
 |---|---|---|---|
-| N | 106 | 83 | 23 |
-| Mean IR | 53.1% | 64.1% | 13.1% |
+| N | 106 | 83 | 19 |
+| Mean IR | 53.1% | 64.1% | 15.9% |
 | Median IR | 15.7% | 37.0% | -0.7% |
-| IR < 0 | 27% | 19% | 57% |
-| VW IR | 23.1% | 44.3% | 0.4% |
-| Median proceeds (HK$m) | 1,323 | 1,212 | 4,949 |
-| Median age (yrs) | 13.6 | 12.5 | 22.1 |
-| Loss-making | 46% | 56% | 9% |
-| VC/PE-backed | 78% | 100% | 0% |
+| IR < 0 | 27% | 19% | 58% |
+| VW IR | 23.1% | 44.3% | 0.3% |
+| Median proceeds (HK$m) | 1,323 | 1,212 | 3,731 |
+| Median age (yrs) | 13.6 | 12.5 | 21.1 |
+| Loss-making | 46% | 56% | 11% |
+| VC/PE-backed | 81% | 100% | 0% |
 
 - Backing counts any pre-IPO VC or PE investor. Missing backing flags are excluded from the two backing groups.

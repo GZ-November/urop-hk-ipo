@@ -58,6 +58,11 @@ pipeline/prospectus_pipeline/out/audit_report.md
 *-backup-*.json
 pipeline/prospectus_pipeline/datasets/tmp*/
 **/.*.xlsx.lock
+*.lock
+.zcode/
+**/validation_runs/
+pipeline/prospectus_pipeline/out/extracted_topics/
+pipeline/prospectus_pipeline/data/market/daily_bars/
 
 # 招股书 / 配发公告 PDF（体积原因，不上传）：data/ 与 out/ 下一切 pdf 目录
 pipeline/prospectus_pipeline/out/prompts/

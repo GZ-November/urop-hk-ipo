@@ -343,7 +343,7 @@
       "page": 1,
       "pct": 7.38
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB0668.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB0668.pdf",
     "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Sunday, July 26, 2026, in respect of an aggregate of 3,443,300 H Shares, r",
     "shares": 3443300,
     "status": "ok"
@@ -444,7 +444,7 @@
       "page": 2,
       "pct": 5.04
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2249.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2249.pdf",
     "quote": "s been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, August 6, 2026, in respect of an aggregate of 10,886,900 H Shares,",
     "shares": 10886900,
     "status": "ok"
@@ -462,7 +462,7 @@
       "page": 2,
       "pct": 3.27
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2475.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2475.pdf",
     "quote": "been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Wednesday, August 5, 2026, in respect of an aggregate of 12,541,900 H Shares (",
     "shares": 12541900,
     "status": "ok"
@@ -581,7 +581,7 @@
       "page": 2,
       "pct": 15.0
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3752.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3752.pdf",
     "quote": "us has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Wednesday, August 5, 2026 in respect of an aggregate of 3,454,700 H Shares, ",
     "shares": 3454700,
     "status": "ok"
@@ -666,7 +666,7 @@
       "page": 1,
       "pct": 12.41
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6951.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6951.pdf",
     "quote": "spectus has been partially exercised by the Sole Overall Coordinator (for itself and on behalf of the International Underwriters), on August 5, 2026, in respect of an aggregate of 8,856,900 H Shares (",
     "shares": 8856900,
     "status": "ok"
@@ -718,7 +718,7 @@
       "page": 1,
       "pct": 10.6
     },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB7687.pdf",
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB7687.pdf",
     "quote": "been partially exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Sunday, August 2, 2026, in respect of an aggregate of 2,771,050 H Shares (t",
     "shares": 2771050,
     "status": "ok"
@@ -769,6 +769,23 @@
     "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB9637.pdf",
     "quote": "tus has been fully exercised by the Joint Representatives (for themselves and on behalf of the International Underwriters), on Friday, July 24, 2026, in respect of an aggregate of 8,513,300 H Shares (",
     "shares": 8513300,
+    "status": "ok"
+  },
+  "3308.HK": {
+    "datetime": "27/08/2026 06:06",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0827/2026082700007.pdf",
+    "hits": {
+      "8175000": 12
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3308.pdf",
+    "quote": "ibed in the Prospectus has been fully exercised by the Sponsor-Overall Coordinators (on behalf of the International Underwriters) on August 26, 2026, in respect of an aggregate of 8,175,000 H Shares, ",
+    "shares": 8175000,
     "status": "ok"
   }
 }

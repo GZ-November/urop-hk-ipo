@@ -1,0 +1,425 @@
+{
+  "code": "3231.HK",
+  "fields": {
+    "col_L": {
+      "value": 416368421,
+      "page": 234,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n416,368,421\n100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 45000000,
+      "page": 234,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . .\n45,000,000\n10.81",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 371368421,
+      "page": 234,
+      "quote": "Unlisted Shares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n134,135,796\n32.22\nH Shares to be converted from Unlisted Shares . . . . . . . . . .\n237,232,625\n56.98",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 371368421,
+      "page": 234,
+      "quote": "Unlisted Shares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n134,135,796\n32.22\nH Shares to be converted from Unlisted Shares . . . . . . . . . .\n237,232,625\n56.98",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 234,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . .\n45,000,000\n10.81",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 45000000,
+      "page": 234,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . .\n45,000,000\n10.81",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 42750000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n42,750,000 H Shares (subject to\nreallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2250000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n2,250,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 19.55,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$19.55 per Offer Share and is currently expected to be not less than HK$14.45 per Offer Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 14.45,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$19.55 per Offer Share and is currently expected to be not less than HK$14.45 per Offer Share",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 309,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are\nrounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 400022000,
+      "page": 311,
+      "quote": "Total non-current assets . . . . . . . . . . . . . . .\n55,438\n80,675\n109,408\n103,754",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 371851000,
+      "page": 311,
+      "quote": "Total non-current assets . . . . . . . . . . . . . . .\n55,438\n80,675\n109,408\n103,754",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 422894000,
+      "page": 311,
+      "quote": "Total non-current assets . . . . . . . . . . . . . . .\n55,438\n80,675\n109,408\n103,754",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 149221000,
+      "page": 17,
+      "quote": "Net assets\n. . . . . . . . . . . . . . . . . . . . . . . . .\n147,563\n149,221\n121,625\n90,502",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 121625000,
+      "page": 17,
+      "quote": "Net assets\n. . . . . . . . . . . . . . . . . . . . . . . . .\n147,563\n149,221\n121,625\n90,502",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 90502000,
+      "page": 17,
+      "quote": "Net assets\n. . . . . . . . . . . . . . . . . . . . . . . . .\n147,563\n149,221\n121,625\n90,502",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 250801000,
+      "page": 311,
+      "quote": "Total current liabilities . . . . . . . . . . . . . .\n137,114\n235,489\n239,176\n319,809",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 250226000,
+      "page": 311,
+      "quote": "Total current liabilities . . . . . . . . . . . . . .\n137,114\n235,489\n239,176\n319,809",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 332392000,
+      "page": 311,
+      "quote": "Total current liabilities . . . . . . . . . . . . . .\n137,114\n235,489\n239,176\n319,809",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 267107000,
+      "page": 310,
+      "quote": "REVENUE . . . . . . . . . . . . . . . . . . . .\n5\n243,803\n267,107\n317,707\n72,370\n76,513",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 317707000,
+      "page": 310,
+      "quote": "REVENUE . . . . . . . . . . . . . . . . . . . .\n5\n243,803\n267,107\n317,707\n72,370\n76,513",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 306052000,
+      "page": 310,
+      "quote": "REVENUE . . . . . . . . . . . . . . . . . . . .\n5\n243,803\n267,107\n317,707\n72,370\n76,513",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -151444000,
+      "page": 310,
+      "quote": "LOSS BEFORE TAX . . . . . . . . . . . .\n6\n(251,236) (151,444) (110,859)\n(26,004)\n(31,233)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -110859000,
+      "page": 310,
+      "quote": "LOSS BEFORE TAX . . . . . . . . . . . .\n6\n(251,236) (151,444) (110,859)\n(26,004)\n(31,233)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -124932000,
+      "page": 310,
+      "quote": "LOSS BEFORE TAX . . . . . . . . . . . .\n6\n(251,236) (151,444) (110,859)\n(26,004)\n(31,233)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -151444000,
+      "page": 310,
+      "quote": "LOSS FOR THE YEAR/PERIOD . .\n(251,236) (151,444) (110,786)\n(26,004)\n(31,216)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -110786000,
+      "page": 310,
+      "quote": "LOSS FOR THE YEAR/PERIOD . .\n(251,236) (151,444) (110,786)\n(26,004)\n(31,216)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -124864000,
+      "page": 310,
+      "quote": "LOSS FOR THE YEAR/PERIOD . .\n(251,236) (151,444) (110,786)\n(26,004)\n(31,216)",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.035,
+      "page": 289,
+      "quote": "syndicate members (i) will receive an\nunderwriting commission which is equal to 3.5% of the aggregate gross proceeds to be raised from\nthe Global Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.035,
+      "page": 289,
+      "quote": "syndicate members (i) will receive an\nunderwriting commission which is equal to 3.5% of the aggregate gross proceeds to be raised from\nthe Global Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 2,
+      "quote": "Number of Offer Shares under the\nGlobal Offering\n:\n45,000,000 H Shares\nNumber of Hong Kong Offer Shares\n:\n2,250,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Commercial service robotic products and AI vision model solutions",
+      "page": 10,
+      "quote": "We are a technology-driven company that commercialises our technologies across two principal\nsectors under Chapter 18C of the Listing Rules: (i) the Robotics and Automation sector",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18C of the Listing Rules (Specialist Technology Company - Commercial Company)",
+      "page": 2,
+      "quote": "Our Company is a Specialist Technology Company (as defined in Chapter 18C of the Listing Rules).",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/26",
+      "page": 310,
+      "quote": "Three months ended\n31 March\nNotes\n2023\n2024\n2025\n2025\n2026\nRMB’000",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -25481000,
+      "page": 316,
+      "quote": "Net cash flows used in operating\nactivities . . . . . . . . . . . . . . . .\n(196,527) (137,814)\n(98,837)\n(21,635)\n(25,481)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 64402000,
+      "page": 317,
+      "quote": "CASH AND CASH EQUIVALENTS\nAT END OF YEAR/PERIOD . . . . .\n87,129\n89,211\n21,764\n36,465\n64,402",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 20912000,
+      "page": 277,
+      "quote": "Annual research and development\nexpenses . . . . . . . . . . . . . . . . . .\n159,553\n70,057\n73,212\n20,912",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 276,
+      "quote": "During the Track Record Period, we did not capitalise internal development costs as intangible\nassets.",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.832,
+      "page": 13,
+      "quote": "amounted to RMB174.0 million, RMB193.0 million, RMB242.6\nmillion and RMB63.7 million, respectively, representing approximately 71.3%, 72.2%, 76.4% and\n83.2% of our total revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "優地機器人（無錫）股份有限公司",
+      "page": 2,
+      "quote": "Excelland Robotics (Wuxi) Co. Ltd.\n優地機器人（無錫）股份有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "SensePower Management Limited; CYGG Holding Limited",
+      "page": 231,
+      "quote": "SensePower Management Limited\nSensePower Management Limited (“SensePower”) is a company incorporated in the BVI",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 98,
+      "quote": "Legend Chengye is interested in approximately 8.02% of the total number of Shares as of the\ndate of this prospectus.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 98,
+      "quote": "The fund manager of Legend Chengye is Legend Capital Management.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 98,
+      "quote": "The general partner of Legend Chengye is Beijing Legend Tongdao Private Equity Fund\nManagement\nPartnership",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 98,
+      "quote": "Both Taobao China and Zhejiang Tmall are ultimately controlled by Alibaba",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 108,
+      "quote": "Guiyang\nInnovationCity . . .\n7,656,250\n2.06%\n7,656,250\n2.71%",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 98,
+      "quote": "The fund manager of Legend Chengye is Legend Capital Management.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Legend Chengye; Rajax; Hainan Yunfeng; Jiujiang Youdi; Xunfei Yunchuang; BTG Hotels Group; Huazhu Investment; New Hengji Investment; Zhongbang Hongxiang; Wuxi Shangwei",
+      "page": 115,
+      "quote": "reputable strategic investors such as Legend Chengye, Hainan Yunfeng, Rajax,\nXunfei Yunchuang, BTG Hotels Group, Huazhu Group, and SYS Group.",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.6516,
+      "page": 108,
+      "quote": "Sub-total . . . . . . .\n247,335,421\n66.60%",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 97,
+      "quote": "the nomination of Mr. ZHANG Yufu as Director by Legend Chengye",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 93,
+      "quote": "1 . . .\nSeries A\n2 September 2016\n19 September 2016\nNew Hengji Investment\n1,333,333\n20,000,000",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 9.99,
+      "page": 93,
+      "quote": "1 . . .\nSeries A\n2 September 2016\n19 September 2016\nNew Hengji Investment",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Individual (Mr. LU Ying and Single Largest Group of Shareholders)",
+      "page": 107,
+      "quote": "Mr. LU Ying, Chengdu Excelland,\nEagle Field Platform, Mr. GU Zhenjiang, Mr. LIU Dazhi, Mr. LUO Pei and Mr. XIA Ge, being our\nSingle Largest Group of Shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.2979,
+      "page": 107,
+      "quote": "Single Largest Group of Shareholders, will in aggregate hold approximately 29.79% of our Shares\nupon Listing",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.2979,
+      "page": 107,
+      "quote": "Single Largest Group of Shareholders, will in aggregate hold approximately 29.79% of our Shares\nupon Listing",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 211710000,
+      "page": 271,
+      "quote": "Total interest-bearing bank and\nother borrowings . . . . . . . . . .\n54,531\n76,658\n115,231\n193,613",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercial Company (Chapter 18C Commercial Company - commercialised stage)",
+      "page": 2,
+      "quote": "In addition, our Company is a Commercial Company (as defined in Chapter 18C of the Listing Rules).",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0.045,
+      "page": 22,
+      "quote": "\n4.5%, or HK$30.9 million for partial repayment of bank loans",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the\nGlobal Offering\n:\n45,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "13/03/2013",
+      "page": 88,
+      "quote": "one of our Co-founders, through its controlled\nentity, UTStarcom China (currently known as Youdi Ruifeng), as a limited liability company in the\nPRC on 13 March 2013",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shenzhen, Guangdong Province, PRC",
+      "page": 64,
+      "quote": "Headquarters and Principal Place of\nBusiness in the PRC\n5D, Building 1, Tingwei Industrial Park\nNo. 67 Liufang Road\nXingdong Community, Xinan Street\nBaoan District\nShenzhen\nGuangdong Province\nPRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 309,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are\nrounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/08/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on\nMonday, 31 August 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "04/09/2026",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on\nFriday, 4 September 2026",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 282232625,
+      "page": 234,
+      "quote": "H Shares to be converted from Unlisted Shares . . . . . . . . . .\n237,232,625\n56.98\nH Shares to be issued pursuant to the Global Offering . . . .\n45,000,000\n10.81",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 8597000,
+      "page": 310,
+      "quote": "Gross profit . . . . . . . . . . . . . . . . . . . .\n16,910\n38,206\n44,272\n8,755\n8,597",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 3000000,
+      "page": 277,
+      "quote": "Our total\ncapital expenditures in FY2023, FY2024, FY2025 and 3M2026 amounted to RMB11.1 million,\nRMB17.3 million, RMB28.6 million and RMB3.0 million, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified / True and fair view",
+      "page": 308,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’\nreport, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 79300000,
+      "page": 289,
+      "quote": "be approximately HK$79.3 million in aggregate (based on an Offer Price of HK$17.00 per H Share,\nbeing the mid-point of the Offer Price range stated in this prospectus)",
+      "confidence": "high"
+    }
+  }
+}

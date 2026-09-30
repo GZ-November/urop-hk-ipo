@@ -1,0 +1,115 @@
+{
+  "code": "9615.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.6202,
+      "page": 6,
+      "quote": "Total\n14,351,310\n62.02%\n12.69%\n11.48%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3835.36,
+      "page": 5,
+      "quote": "Subscription level\n3,835.36 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 252461,
+      "page": 5,
+      "quote": "No. of valid applications\n252,461",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4437660000,
+      "page": 17,
+      "quote": "Total\n227,840 Total number of Pool A successful \napplicants: 64,462",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 3,835.36 times",
+      "page": 5,
+      "quote": "Subscription level\n3,835.36 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "31/08/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**31/08/2026 21:54**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 23140590,
+      "page": 3,
+      "quote": "Number of Offer Shares (before exercise of the Over-\nallotment Option)\n23,140,590",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4628130,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public \nOffering (after reallocation)\n4,628,130",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 18512460,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International \nOffering (after reallocation and before exercise of \nthe Over-allotment Option)\n18,512,460",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: Yes; 3,471,090 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering; Final no. under HK Public Offering is 4,628,130 (20.00% of Global Offering)",
+      "page": 5,
+      "quote": "Claw-back triggered\nYes",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2200200000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$2,200.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.6978,
+      "page": 25,
+      "quote": "87,231,810 H Shares, representing approximately 69.78% of \nthe issued share capital of our Company, will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 125011050,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before \nexercise of the Over-allotment Option)\n125,011,050",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0703,
+      "page": 25,
+      "quote": "the Company satisfies the free float \nrequirement under Rule 19A.13C of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": 25,
+      "quote": "the Company satisfies the free float \nrequirement under Rule 19A.13C of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 125011050,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before \nexercise of the Over-allotment Option)\n125,011,050",
+      "confidence": "high"
+    }
+  }
+}

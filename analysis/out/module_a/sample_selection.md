@@ -13,7 +13,7 @@ N = 106. Statistics use available observations per variable; missing route flags
 | Money left on the table (HK$) | 106 | 0 |
 | Subscription Ratio (times) | 106 | 0 |
 | Pricing position in filing range | 106 | 0 |
-| Pre-IPO VC/PE backing (1=yes; 0=no) | 106 | 0 |
+| Pre-IPO VC/PE backing (1=yes; 0=no) | 102 | 4 |
 | Firm age at IPO (years) | 106 | 0 |
 | Profit for the year in year-1 | 105 | 1 |
 | Chapter 18A flag | 106 | 0 |
@@ -26,13 +26,13 @@ N = 106. Statistics use available observations per variable; missing route flags
 | ah_true | 106 | 0 |
 | Day-5 BHR from Day-1 close (%) | 106 | 0 |
 | Day-5 wealth relative vs HSI | 106 | 0 |
-| Day-20 BHR from Day-1 close (%) | 100 | 6 |
+| Day-20 BHR from Day-1 close (%) | 102 | 4 |
 | Day-20 wealth relative vs HSI | 100 | 6 |
-| 1-month BHR from Day-1 close (%) | 100 | 6 |
-| 1-month wealth relative vs HSI | 100 | 6 |
-| 1-month HSI return (%) | 100 | 6 |
-| 3-month BHR from Day-1 close (%) | 78 | 28 |
-| 3-month wealth relative vs HSI | 78 | 28 |
+| 1-month BHR from Day-1 close (%) | 102 | 4 |
+| 1-month wealth relative vs HSI | 102 | 4 |
+| 1-month HSI return (%) | 102 | 4 |
+| 3-month BHR from Day-1 close (%) | 82 | 24 |
+| 3-month wealth relative vs HSI | 65 | 41 |
 | 6-month BHR from Day-1 close (%) | 31 | 75 |
 | 6-month wealth relative vs HSI | 31 | 75 |
 | 6-month HSI return (%) | 31 | 75 |
