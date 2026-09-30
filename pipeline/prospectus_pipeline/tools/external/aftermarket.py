@@ -69,6 +69,9 @@ AFTERMARKET_FIELDS = [
     (161, "18A/18C regulatory milestone status", "@", "监管资格演变与商业化里程碑状态"),
 ]
 
+# 首个 bar 收盘价与首日收盘价相差超过该比例，视为价格口径不同（公司行为复权），而非小额股息复权。
+PRICE_BASIS_TOLERANCE = 0.01
+
 HEADER_FILL = PatternFill(start_color="FF00B0F0", end_color="FF00B0F0", fill_type="solid")
 HEADER_FONT = Font(name="Arial", size=11, bold=True, color="000000")
 HEADER_ALIGN = Alignment(horizontal="center", vertical="center", wrap_text=True)
@@ -166,6 +169,14 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     # 若缺失 day1_close，用首个有效 bar 的 close 补齐
     p1 = day1_close if (day1_close is not None and day1_close > 0) else after_bars[0]["close"]
     p0 = offer_price if (offer_price is not None and offer_price > 0) else p1
+    # 行情为前复权序列：上市后发生拆股/送股时，首个 bar 的收盘价与工作簿的（未复权）首日收盘价不在同一价格口径。
+    # 所有 BHR / 一级申购回报都必须分子分母同口径，否则出现如 3:1 拆股后 -63% 的假收益。
+    first_bar_close = after_bars[0]["close"]
+    basis_scale = 1.0
+    if p1 and first_bar_close and abs(first_bar_close / p1 - 1.0) > PRICE_BASIS_TOLERANCE:
+        basis_scale = first_bar_close / p1
+    p1 = p1 * basis_scale
+    p0 = p0 * basis_scale
     d0 = after_bars[0]["date"]
     benchmark_dates = [b["date"] for b in hsi_bars + hstech_bars]
     market_as_of = max(benchmark_dates) if benchmark_dates else after_bars[-1]["date"]
@@ -265,6 +276,7 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
             "last_stock_trading_date": last_stock_date.isoformat(),
             "listing_status": listing_status,
             "listing_status_source": listing_status_source,
+            "price_basis_scale": round(basis_scale, 6),
             "one_month_target": "20th trading day",
             "one_month_actual_date": d_1m.isoformat() if d_1m else None,
             "one_month_matured": one_month_matured,

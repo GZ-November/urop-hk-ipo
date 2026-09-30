@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-30 00:02:18"
+    "generated_at": "2026-09-30 18:39:23"
   },
   "variables": [
     {
@@ -4524,21 +4524,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情与 Amihud 模型派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.0026530895608535567,
-        "std": 0.0018575881921631086,
-        "median": 0.002318444444444445,
-        "min": 3.789908256880734e-05,
-        "q25": 0.001037485436893204,
-        "q75": 0.003796484375,
-        "max": 0.008248552238805969,
-        "summary_display": "均值 0.00 | 中位数 0.00 | 区间 [0.00, 0.01]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4550,21 +4543,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情交易量派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.0,
-        "std": 0.0,
-        "median": 0.0,
-        "min": 0.0,
-        "q25": 0.0,
-        "q75": 0.0,
-        "max": 0.0,
-        "summary_display": "均值 0.00 | 中位数 0.00 | 区间 [0.00, 0.00]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4576,21 +4562,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日度收益率标准差派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.14056189164542351,
-        "std": 0.09752956932918455,
-        "median": 0.1131092042339505,
-        "min": 0.03159668080146645,
-        "q25": 0.0773195692050503,
-        "q75": 0.1564713895415112,
-        "max": 0.4706506556693458,
-        "summary_display": "均值 0.14 | 中位数 0.11 | 区间 [0.03, 0.47]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -4602,21 +4581,14 @@
       "group": "aftermarket",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "二级市场日行情累计高点回撤派生",
       "stats": {
-        "valid_n": 45,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.5591607333333334,
-        "std": 0.13026394132410898,
-        "median": 0.564215,
-        "min": 0.215969,
-        "q25": 0.488978,
-        "q75": 0.645684,
-        "max": 0.847423,
-        "summary_display": "均值 0.56 | 中位数 0.56 | 区间 [0.22, 0.85]"
+        "valid_n": 0,
+        "missing_n": 45,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {

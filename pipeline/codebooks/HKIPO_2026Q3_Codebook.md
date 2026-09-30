@@ -3,7 +3,7 @@
 - **样本规模 (N)**：23 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-29 23:53:50 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-30 18:39:24 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -201,10 +201,10 @@
 | **FV** | `3-month wealth relative vs HSI` | 首季对标恒指财富相对比 (WR_HSI) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FW** | `3-month wealth relative vs HSTECH` | 首季对标恒科财富相对比 (WR_HSTECH) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **FX** | `3-month average daily turnover (HK$)` | 首季度日均成交金额 (港元) | 深蓝 | `numeric` | Aftermarket event horizon window | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
-| **FY** | `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 0.01 / 中位数 0.00 / 区间 [0.00, 0.05] |
-| **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | 100% 完备 | 均值 0.00 / 中位数 0.00 / 区间 [0.00, 0.00] |
-| **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.09 / 中位数 0.06 / 区间 [0.03, 0.43] |
-| **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 0.34 / 中位数 0.30 / 区间 [0.09, 0.56] |
+| **FY** | `Amihud illiquidity (6M mean)` | 上市前6个月日均 Amihud (2002) 非流动性指标 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | 100% 完备 | 共 12 种取值 ('2027-01-09': 7, '2027-01-08': 4, '2027-01-10': 2) |
 | **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 12 种取值 ('2027-07-09': 7, '2027-07-08': 4, '2027-07-10': 2) |
 | **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
