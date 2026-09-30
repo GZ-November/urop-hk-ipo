@@ -6,6 +6,11 @@
 
 An evidence-linked research pipeline for ordinary Hong Kong Main Board IPOs: document collection, deterministic validation, reviewed Excel delivery, and statistical and econometric analysis restricted to 2026 listings.
 
+## 继续研究
+
+从 [研究入口](docs/RESEARCH_START.md) 开始：包含新 skill 用法、当前数据路径、复现命令和待办。
+[文档索引](docs/README.md) 区分当前计划、来源复核、生成结果与历史写稿；[仓库组织指南](docs/REPOSITORY_GUIDE.md) 说明新文件归属和多 checkout 使用。
+
 ## 项目能做什么
 
 - **建立发行人 cohort**：按上市日期从港交所官方报表筛选；剔除 GEM 转板、SPAC/de-SPAC 与介绍上市。

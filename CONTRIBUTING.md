@@ -32,6 +32,8 @@ All current regressions and descriptive statistics, including Module A, use **20
 
 Follow [the 2026 research plan](docs/RESEARCH_PLAN_2026.md). Report N and missing inputs, keep the nested regression sample constant, include the April-June control, and distinguish exploratory associations from causal claims. Unmatured event windows must remain missing. Regenerate outputs with `make analysis` after changing analysis behavior.
 
+See [the research start guide](docs/RESEARCH_START.md) for the input/output map and [repository organization](docs/REPOSITORY_GUIDE.md) for artifact placement and multiple-checkout conventions. Archive superseded numerical write-ups with a status notice and retain links from their old entry points.
+
 ## Data distribution
 
 This repository versions research artifacts built from public disclosures, including canonical workbooks, clean CSVs, extraction JSON, codebooks, registry snapshots, official listing reports and research outputs. This is consistent with `.gitignore`; there is no blanket ban on spreadsheets or JSON.
