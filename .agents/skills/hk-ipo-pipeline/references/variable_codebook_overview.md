@@ -1,54 +1,51 @@
-# 120-Variable Econometric Schema & Architecture Overview
+# Variable definitions and provenance
 
----
+The current canonical workbook contains 202 variables. Counts and physical column
+positions can change; resolve live schemas/headers rather than relying on an old
+120-variable layout. The registry and cohort codebooks are generated snapshots,
+not substitutes for original evidence.
 
-## 1. Three-Tier Data Hierarchy & Data Provenance
+## Authoritative definitions
 
-In accordance with academic research standards and HKEX disclosure practices, the 120 variables are organized into three primary operational tiers:
+Paths below are relative to the repository root:
 
-| Tier Identifier | Column Range | Field Count | Primary Provenance | Extraction Mechanism |
-|---|---|---|---|---|
-| **Tier 1 (Green)** | Col A–K | 11 | HKEX Official New Listing Reports | Deterministic table parser (0 Tokens) |
-| **Tier 2 (Light Blue)** | Col L–AY, DP, CJ, BA–CI | 60 | Statutory Prospectus Disclosures | Slicing + agent model + SHA-256 hash-gating |
-| **Tier 3 (Dark Blue)** | Col CK, CM–DC | 18 | Allotment Results Announcements | Allotment slicing + deterministic derivations |
-| **Tier 3 (Dark Blue)** | Col DD–DO, DF/DG | 31 | Market Trading & Macro Data | Offline feeds, HKMA API, and rules engine |
+| Resource | Role |
+|---|---|
+| `pipeline/prospectus_pipeline/schema/fields.json` | Prospectus extraction fields (currently 70) and source requirements |
+| `pipeline/prospectus_pipeline/schema/allot_fields.json` | Allotment extraction fields (currently 18) |
+| `pipeline/prospectus_pipeline/src/variable_catalog.py` | Authored semantic definitions, layers, units and groups |
+| `pipeline/prospectus_pipeline/src/workbook_reader.py` | Header normalization and schema-to-workbook resolution |
+| `pipeline/prospectus_pipeline/src/expansion_mapping.py` | Academic/event expansion mapping (currently fields 162–202) |
+| `pipeline/registry/HKIPO_Variable_Registry.yaml` | Cross-cohort registry snapshot and derived definitions |
+| `pipeline/prospectus_pipeline/src/panel.py` | Registry-driven pandas loading with stable slugs |
 
----
+Schema keys such as `col_CK` retain historical identifiers; they are not proof of
+the current Excel column letter. Clean CSVs use semantic headers. Inserting a
+column must not attach a variable's meaning to its old position.
 
-## 2. Key Empirical Variables & Cross-References
+## Source layers
 
-### Offering Size & Valuation
-- `col_T`: Maximum Offer Price
-- `col_K`: Final IPO Subscription / Offer Price
-- `col_L`: Total Shares in Issue (excluding option)
-- `col_M`: Global Offering Shares (excluding option)
-- `col_CS`: Base Offer Shares
-- `col_CX`: Net Proceeds Received by Issuer
+- Official HKEX new-listing reports establish issuer identity, offering metadata
+  and membership candidates. Reconcile listing dates and exclusions for each
+  requested interval; do not treat configured expected counts as coverage proof.
+- Prospectuses provide share structure, price range, financials, underwriting,
+  investor background and corporate disclosures. Preserve page/quote evidence,
+  original units and period definitions; normalize deterministically.
+- Allotment results establish final subscriptions, allocations, share counts and
+  proceeds. Distinguish final allocation from prospectus plans.
+- External data supply OHLC/turnover, index returns, HIBOR, aggregate balance,
+  industry classifications and market-status observations; retain provider/date
+  provenance and distinguish missing observations from true zeros.
+- Derived fields combine sources: first-day return, money left on the table,
+  pricing revision, age, aftermarket horizons, liquidity, stabilization and lockup
+  windows. Trace each through its producer and inputs, including maturity.
 
-### Cornerstone Demand & Market Sentiment
-- `col_CK`: Cornerstone Allocation as % of Base Offer Shares
-- `col_CL`: Earliest Cornerstone Lockup Expiry Date
-- `col_CM`: Public Tranche Subscription Multiple
-- `col_CP`: Final Public Tranche Allocated Shares (post-clawback)
-- `col_CQ`: Final Price Determination Date
-- `col_DA`: Free Float Percentage (%)
+Unknown flags remain missing unless the source establishes yes/no. A+H flags and
+exclusive listing-route categories have different definitions. For cornerstone
+absence, positive final allocation takes precedence over a stale absence verdict;
+zero final allocation confirms absence. Known absence means no cornerstone event,
+so cornerstone unlock CAR/volume fields should remain missing.
 
-### Secondary Market Performance (Underpricing)
-- `col_DI`: First-Day Opening Price
-- `col_DH`: First-Day Closing Price
-- `col_DM`: First-Day Turnover
-- First-Day Return (Underpricing): `(col_DH - col_K) / col_K`
-
-### Macroeconomic & Market Conditions
-- `col_DD`: Hang Seng Index 20-Day Return Pre-IPO (%)
-- `col_DE`: Number of Ordinary Main Board IPOs in Preceding 90 Days
-- `col_DF`: 1-Month HIBOR on T-1 Trading Day (%)
-- `col_DG`: Aggregate Balance of the HK Banking System on T-1 (HK$)
-
-### Regulatory Classification & Special Regimes
-- `col_BL`: Chapter 18A Biotech Indicator (1/0)
-- `col_BM`: Chapter 18C Specialist Technology Indicator (1/0)
-- `col_BK`: Weighted Voting Rights (WVR) Flag (1/0)
-- `col_BJ`: Dual A+H Listing Flag (1/0)
-- `col_DN`: FINI Clawback Mechanism (`Mechanism A` / `Mechanism B`)
-- `col_BN`: Hang Seng Industry Classification System (HSICS 2026) 6-digit code
+Run `registry --check` for definition drift, and inspect `master` warnings for
+cohort fill rates, identities and membership. A full fill rate is not evidence
+completeness; audit formal extractions and their authorization separately.
