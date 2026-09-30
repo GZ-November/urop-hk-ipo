@@ -70,6 +70,17 @@ class MarketFetcherTests(unittest.TestCase):
         self.tp = TencentProvider()
         self.yp = YahooFinanceProvider()
 
+    def test_raw_first_day_request_never_uses_adjusted_payload(self):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = b'daily_data_26="260204 40 40.16 42 39 100"'
+        with patch("urllib.request.urlopen", return_value=response) as opened:
+            bars = self.tp.fetch_bars("2768.HK", "2026-02-04", "2026-02-05", adjusted=False)
+        self.assertEqual(bars[0]["close"], 40.16)
+        self.assertEqual(bars[0]["price_basis"], "raw_as_traded")
+        self.assertIn("/hk/daily/26/hk02768.js", opened.call_args.args[0].full_url)
+        with self.assertRaisesRegex(ValueError, "split-adjusted"):
+            self.yp.fetch_bars("2768.HK", "2026-02-04", "2026-02-05", adjusted=False)
+
     def test_tencent_symbol_normalization(self) -> None:
         self.assertEqual(self.tp.normalize_symbol("HSI"), "hkHSI")
         self.assertEqual(self.tp.normalize_symbol("^HSI"), "hkHSI")

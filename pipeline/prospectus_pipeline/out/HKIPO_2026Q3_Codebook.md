@@ -3,7 +3,7 @@
 - **样本规模 (N)**：23 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-30 18:03:38 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-09-30 21:45:53 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -147,12 +147,12 @@
 | **DT** | `HK ordinary IPO count in 90 calendar days before prospectus` | 招股日前 90 个自然日香港普通主板 IPO 上市数量 | 深蓝 | `numeric` | Ex-ante pre-prospectus window | 100% 完备 | 均值 42.26 / 中位数 41.00 / 区间 [34.00, 56.00] |
 | **DU** | `1-month HIBOR before prospectus (%)` | 招股日前一交易日香港银行同业拆借 1 个月 HIBOR 利率 (%) | 深蓝 | `numeric` | Post-IPO T+20 trading days | 100% 完备 | 均值 0.03 / 中位数 0.03 / 区间 [0.03, 0.03] |
 | **DV** | `Banking system aggregate balance before prospectus (HK$)` | 招股日前一交易日香港银行体系总结余 (HK$) | 深蓝 | `numeric` | Ex-ante pre-prospectus window | 100% 完备 | 均值 54,016,956,521.74 / 中位数 53,981,000,000.00 / 区间 [53,885,000,000.00, 54,202,000,000.00] |
-| **DW** | `First trading day closing price (HK$)` | 首日上市二级市场收盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 122.39 / 中位数 48.50 / 区间 [2.83, 958.61] |
+| **DW** | `First trading day closing price (HK$)` | 首日上市二级市场收盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 122.54 / 中位数 48.50 / 区间 [2.83, 960.00] |
 | **DX** | `First-day return / Underpricing (%)` | 上市首日抑价率 / 初始收益率（Rock 1986 / Ritter 1984 核心被解释变量） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.12 / 中位数 0.00 / 区间 [-0.43, 1.62] |
-| **DY** | `Money left on the table (HK$)` | 留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 6,743,589.95 / 中位数 0.00 / 区间 [-1,165,646,000.00, 1,000,350,000.00] |
-| **DZ** | `First trading day opening price (HK$)` | 首日上市二级市场开盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 120.20 / 中位数 48.56 / 区间 [2.74, 969.61] |
-| **EA** | `First trading day high (HK$)` | 首日上市二级市场盘中最高价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 126.92 / 中位数 48.56 / 区间 [3.15, 971.61] |
-| **EB** | `First trading day low (HK$)` | 首日上市二级市场盘中最低价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 113.31 / 中位数 43.72 / 区间 [2.64, 878.61] |
+| **DY** | `Money left on the table (HK$)` | 留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 14,664,932.35 / 中位数 0.00 / 区间 [-1,090,000,000.00, 1,000,350,000.00] |
+| **DZ** | `First trading day opening price (HK$)` | 首日上市二级市场开盘价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 120.35 / 中位数 48.56 / 区间 [2.74, 971.00] |
+| **EA** | `First trading day high (HK$)` | 首日上市二级市场盘中最高价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 127.08 / 中位数 48.56 / 区间 [3.15, 973.00] |
+| **EB** | `First trading day low (HK$)` | 首日上市二级市场盘中最低价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 113.46 / 中位数 43.72 / 区间 [2.64, 880.00] |
 | **EC** | `First trading day volume (shares)` | 首日上市二级市场全天成交量（股） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 19,726,296.65 / 中位数 10,108,780.00 / 区间 [914,450.00, 72,959,000.00] |
 | **ED** | `First-day flipping ratio (%)` | 首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.26 / 中位数 0.24 / 区间 [0.16, 0.43] |
 | **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 1,351,711,789.13 / 中位数 574,537,600.00 / 区间 [76,553,800.00, 11,486,621,440.00] |
@@ -162,7 +162,7 @@
 | **EI** | `Current listing status` | 当前挂牌存续状态 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 1 种取值 ('Active': 23) |
 | **EJ** | `1-month post-IPO close price (HK$)` | 第20个交易日收盘价（窗口成熟后填报） | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 130.51 / 中位数 69.22 / 区间 [3.00, 1,013.61] |
 | **EK** | `1-month BHR from Day-1 close (%)` | 由首日收盘至第20个交易日的买入持有收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 0.16 / 中位数 -0.02 / 区间 [-0.27, 2.29] |
-| **EL** | `1-month total return from offer price (%)` | 由发售价至第20个交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 0.44 / 中位数 0.01 / 区间 [-0.45, 7.64] |
+| **EL** | `1-month total return from offer price (%)` | 由发售价至第20个交易日的累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 0.44 / 中位数 0.02 / 区间 [-0.45, 7.64] |
 | **EM** | `1-month HSI return (%)` | 同期恒生指数累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 0.05 / 中位数 0.07 / 区间 [-0.03, 0.12] |
 | **EN** | `1-month HSTECH return (%)` | 同期恒生科技指数累计收益率 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 0.02 / 中位数 0.03 / 区间 [-0.08, 0.09] |
 | **EO** | `1-month wealth relative vs HSI` | 一个月相对恒指财富比 | 深蓝 | `numeric` | Post-IPO T+20 trading days | Adequate (20/23 (86.96%)) | 均值 1.10 / 中位数 0.92 / 区间 [0.75, 3.05] |

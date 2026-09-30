@@ -9,26 +9,26 @@ The day-1 gap uses the A-share close on the H listing day, so it also reflects A
 
 | Sample | N | Offer vs A (mean) | Offer vs A (median) | Day-1 close vs A (mean) | Mean IR | Median IR |
 |---|---|---|---|---|---|---|
-| All A+H | 34 | -38.2% | -39.2% | -32.8% | 7.7% | 0.9% |
-| April-June | 9 | -41.3% | -39.7% | -30.1% | 21.8% | 0.6% |
-| Other months | 25 | -37.1% | -38.7% | -33.8% | 2.6% | 1.1% |
+| All A+H | 34 | -38.2% | -39.2% | -30.7% | 10.9% | 2.7% |
+| April-June | 9 | -41.3% | -39.7% | -27.5% | 25.7% | 13.3% |
+| Other months | 25 | -37.1% | -38.7% | -31.8% | 5.6% | 2.4% |
 
 - Offer vs A is negative for 34 of 34 issuers: H shares are priced below the A-share close on average, and the discount is
-  smaller at the day-1 close (paired t p = 0.029), i.e. part of the offer discount closes on the first day.
+  smaller at the day-1 close (paired t p = 0.001). This comparison also includes A-share and FX moves between anchor dates.
 - April-June listings vs others: difference in the offer discount = -4.2 pp (HC3 p = 0.387).
 
 ## 2. Does the offer discount go with the first-day return?
 
-Rank correlation of offer premium with IR: rho = -0.33 (p = 0.059). Outcome log(1 + IR):
+Rank correlation of offer premium with IR: rho = -0.30 (p = 0.084). Outcome log(1 + IR):
 
 | Specification | Coefficient per +10 pp of offer premium (HC3 s.e.) | HC3 p | Wild cluster p | N |
 |---|---|---|---|---|
-| Offer discount only | -0.059* (0.030) | 0.053 | 0.199 | 34 |
-| + April-June window | -0.051* (0.028) | 0.068 | 0.211 | 34 |
-| + window + ln size | -0.105*** (0.040) | 0.009 | 0.012 | 34 |
-| + window, drop implausible anchors | -0.055 (0.034) | 0.104 | 0.246 | 33 |
+| Offer discount only | -0.048* (0.026) | 0.069 | 0.254 | 34 |
+| + April-June window | -0.039 (0.024) | 0.103 | 0.242 | 34 |
+| + window + ln size | -0.084** (0.038) | 0.026 | 0.016 | 34 |
+| + window, drop implausible anchors | -0.043 (0.029) | 0.137 | 0.262 | 33 |
 
-- A negative coefficient means a deeper discount (a more negative offer premium) goes with a higher first-day return: the H share catches up toward the A share.
+- A negative coefficient means a deeper discount goes with a higher first-day return; this association alone does not identify convergence.
 - N = 34 and 9 listing months; treat as directional.
 
 ## 3. What explains the size of the discount
@@ -48,10 +48,15 @@ from the day-0 close minus the A-share's return (in HKD) over the same dates: an
 
 | Trading days after listing | N | Mean gap, day 0 | Mean gap, day k | Mean change | t p | Wilcoxon p | H minus own A return, mean | H minus own A return, median |
 |---|---|---|---|---|---|---|---|---|
-| 5 | 32 | -33.7% | -33.1% | 0.6 pp | 0.650 | 0.692 | 1.5% | 0.5% |
-| 20 | 33 | -32.5% | -30.5% | 2.0 pp | 0.205 | 0.257 | 3.1% | 2.2% |
-| 40 | 32 | -32.4% | -28.6% | 3.7 pp | 0.117 | 0.239 | 5.5% | 2.2% |
-| 60 | 25 | -31.7% | -30.0% | 1.6 pp | 0.711 | 0.220 | 4.2% | -10.3% |
+| 5 | 32 | -31.4% | -30.7% | 0.7 pp | 0.597 | 0.678 | 1.5% | 0.5% |
+| 20 | 33 | -30.3% | -28.8% | 1.4 pp | 0.362 | 0.469 | 1.9% | 1.9% |
+| 40 | 32 | -30.1% | -26.7% | 3.3 pp | 0.155 | 0.295 | 4.5% | 2.2% |
+| 60 | 25 | -28.7% | -28.7% | 0.0 pp | 0.996 | 0.075 | 1.8% | -10.4% |
+
+`horizon_coverage.csv` records matched issuers at every reported horizon. `balanced_path_60.csv` and the figure hold the cohort fixed to issuers
+with valid day-0 and day-60 pairs. On cross-market holidays the daily count can still fall; prices are not carried forward.
+The daily premium panel uses raw H and A prices from Tencent. Adjusted H caches cannot be divided by raw A prices after a share split.
+Nonsignificant gap changes are inconclusive, rather than evidence that convergence is absent.
 
 ## 5. The A-share reaction to the H-share issue (A-share return minus CSI 300)
 
@@ -63,10 +68,10 @@ Around the subscription closing date:
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 34 | -1.4% | 0.5% | -1.49 | 0.343 | 0.062 | 47% |
+| [-1,+1] | 34 | -1.4% | 0.5% | -1.49 | 0.343 | 0.057 | 47% |
 | [0,+5] | 34 | -3.8% | -4.1% | -2.29 | 0.046 | 0.004 | 68% |
 | [-5,+5] | 34 | -3.2% | -2.6% | -1.38 | 0.105 | 0.041 | 68% |
-| [-5,-1] | 34 | 0.5% | 0.1% | 0.45 | 0.919 | 0.800 | 50% |
+| [-5,-1] | 34 | 0.5% | 0.1% | 0.45 | 0.919 | 0.799 | 50% |
 
 Around the H listing day:
 
@@ -75,21 +80,44 @@ Around the H listing day:
 | [-1,+1] | 34 | -2.7% | -2.8% | -2.56 | 0.021 | 0.005 | 68% |
 | [0,+5] | 34 | -4.0% | -3.3% | -2.98 | 0.005 | 0.000 | 68% |
 | [-5,+5] | 34 | -6.0% | -5.2% | -2.67 | 0.009 | 0.000 | 65% |
-| [-5,-1] | 34 | -2.0% | -0.8% | -1.25 | 0.352 | 0.088 | 56% |
+| [-5,-1] | 34 | -2.0% | -0.8% | -1.25 | 0.352 | 0.085 | 56% |
+
+Sensitivity to pre-event alpha/beta: OLS on A trading bars [-120,-21], minimum 60 matched returns. Parameters are estimated separately
+for subscription-close and listing events and held fixed in the event/placebo windows. This does not provide sector matching or causal identification.
+
+Around subscription close (market model):
+
+| Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
+|---|---|---|---|---|---|---|---|
+| [-1,+1] | 34 | -1.7% | 0.1% | -1.73 | 0.309 | 0.145 | 50% |
+| [0,+5] | 34 | -4.9% | -4.5% | -2.84 | 0.017 | 0.009 | 62% |
+| [-5,+5] | 34 | -5.9% | -3.9% | -2.49 | 0.031 | 0.031 | 65% |
+| [-5,-1] | 34 | -1.0% | -1.3% | -0.88 | 0.427 | 0.655 | 53% |
+
+Around H listing (market model):
+
+| Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
+|---|---|---|---|---|---|---|---|
+| [-1,+1] | 34 | -3.6% | -3.2% | -3.22 | 0.004 | 0.004 | 68% |
+| [0,+5] | 34 | -4.9% | -4.2% | -3.56 | 0.001 | 0.001 | 79% |
+| [-5,+5] | 34 | -7.6% | -5.0% | -3.12 | 0.001 | 0.004 | 76% |
+| [-5,-1] | 34 | -2.8% | -0.9% | -1.81 | 0.209 | 0.150 | 56% |
 
 ## 6. Multiplicity
 
 | Rank | Section | Test | p | q (BH) |
 |---|---|---|---|---|
 | 1 | Discount | A-share momentum -> offer discount (HC3) | 0.0000 | 0.0000 |
-| 2 | A-share reaction | A-share CAR [-1,+1] around H listing day (placebo) | 0.0050 | 0.0225 |
-| 3 | Discount | Day-1 close discount is smaller than offer discount (paired t) | 0.0287 | 0.0861 |
-| 4 | Discount | Offer discount vs IR, Spearman | 0.0587 | 0.1019 |
-| 5 | A-share reaction | A-share CAR [-1,+1] around subscription close (placebo) | 0.0616 | 0.1019 |
-| 6 | Discount | Offer discount -> log(1 + IR), window-adjusted (HC3) | 0.0679 | 0.1019 |
-| 7 | Convergence | H/A gap changes from day 0 to day 60 (Wilcoxon) | 0.2200 | 0.2828 |
-| 8 | Convergence | H/A gap changes from day 0 to day 20 (Wilcoxon) | 0.2565 | 0.2886 |
-| 9 | Discount | Offer discount differs between April-June and other listings (HC3) | 0.3874 | 0.3874 |
+| 2 | Discount | Day-1 close discount is smaller than offer discount (paired t) | 0.0009 | 0.0052 |
+| 3 | A-share reaction | Market-model CAR [-1,+1] around H listing day (placebo) | 0.0040 | 0.0143 |
+| 4 | A-share reaction | A-share CAR [-1,+1] around H listing day (placebo) | 0.0052 | 0.0143 |
+| 5 | A-share reaction | A-share CAR [-1,+1] around subscription close (placebo) | 0.0570 | 0.1254 |
+| 6 | Convergence | H/A gap changes from day 0 to day 60 (Wilcoxon) | 0.0755 | 0.1319 |
+| 7 | Discount | Offer discount vs IR, Spearman | 0.0839 | 0.1319 |
+| 8 | Discount | Offer discount -> log(1 + IR), window-adjusted (HC3) | 0.1029 | 0.1415 |
+| 9 | A-share reaction | Market-model CAR [-1,+1] around subscription close (placebo) | 0.1448 | 0.1769 |
+| 10 | Discount | Offer discount differs between April-June and other listings (HC3) | 0.3874 | 0.4262 |
+| 11 | Convergence | H/A gap changes from day 0 to day 20 (Wilcoxon) | 0.4688 | 0.4688 |
 
 Limits: 34 issuers; the offer anchor uses the closing-date A-share price (pricing dates are missing for several issuers; the pre-pricing anchor is in the CSV where available);
 CNY/HKD is a daily close rather than the rate at the pricing time; raw A-share prices are not adjusted for dividends inside the window.

@@ -33,8 +33,8 @@ N = 106. Statistics use available observations per variable; missing route flags
 | 1-month HSI return (%) | 102 | 4 |
 | 3-month BHR from Day-1 close (%) | 82 | 24 |
 | 3-month wealth relative vs HSI | 65 | 41 |
-| 6-month BHR from Day-1 close (%) | 31 | 75 |
-| 6-month wealth relative vs HSI | 31 | 75 |
-| 6-month HSI return (%) | 31 | 75 |
+| 6-month BHR from Day-1 close (%) | 37 | 69 |
+| 6-month wealth relative vs HSI | 37 | 69 |
+| 6-month HSI return (%) | 37 | 69 |
 
 Value-weighted returns match MLOT to positive base proceeds. Aftermarket windows remain missing until observed; see Table 2 for horizon-specific N. Missing counts do not distinguish uncollected from unmatured source data.

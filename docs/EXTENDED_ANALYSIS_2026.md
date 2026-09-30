@@ -1,5 +1,7 @@
 # Extended 2026 analysis, data fixes and hold-out plan · 2026-09-30
 
+> Numerical results below predate the September 30 raw first-day price correction and are retained as a historical write-up. Use regenerated `analysis/out/extended/` tables and [the integration review](AGY_INTEGRATION_2026-09-30.md) for current estimates.
+
 Sample: 106 Main Board ordinary IPOs listed 2026-01-02 to 2026-09-09. Everything below is exploratory.
 Scripts: `analysis/extended_analysis_2026.py` (outputs in `analysis/out/extended/`) and `analysis/aftermarket_event_time_2026.py` (`analysis/out/event_time/`).
 

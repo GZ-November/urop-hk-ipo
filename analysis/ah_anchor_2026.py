@@ -30,7 +30,6 @@ import pandas as pd
 from scipy import stats
 
 import academic_extensions_2026 as ac
-import aftermarket_event_time_2026 as et
 import extended_analysis_2026 as ext
 from module_a_stylized_facts import AXIS, BLUE, INK, INK2, MUTED, ORANGE, ROOT, load_panel, new_fig, pct_axis, select_2026, style_axes, to_markdown
 
@@ -52,11 +51,13 @@ def build_frame(y26: pd.DataFrame) -> pd.DataFrame:
     d = ac.build_frame(y26)
     ref = pd.read_csv(REFERENCE)
     ref = ref.rename(columns={"h_code": "code"})
-    out = d.merge(ref[["code", "a_symbol", "offer_vs_a_close", "offer_vs_a_pricing", "h_day1_close_vs_a", "a_date_close", "plausible"]], on="code", how="inner")
+    out = d[d["ah"] == 1].merge(ref[["code", "a_symbol", "offer_vs_a_close", "offer_vs_a_pricing", "h_day1_close_vs_a", "a_date_close", "plausible"]], on="code", how="left", validate="one_to_one")
     out["disc"] = out["offer_vs_a_close"]
     out["disc10"] = out["disc"] * 10          # per 10 percentage points of offer premium (+) or discount (-)
     out["a_mom20"] = np.nan
     for i, row in out.iterrows():
+        if pd.isna(row["a_symbol"]) or pd.isna(row["a_date_close"]):
+            continue
         bars = load_series(CACHE / "a_bars" / f"{row['a_symbol']}.json")
         end = pd.Timestamp(row["a_date_close"])
         window = bars[bars.index <= end].iloc[-21:]
@@ -69,16 +70,26 @@ def premium_panel(d: pd.DataFrame, fx: pd.Series) -> pd.DataFrame:
     """Daily H-share price relative to the converted A-share price, event day 0 = H listing day."""
     rows = []
     for _, r in d.iterrows():
-        h = et.load_bars(et.BARS / f"hk{r['code'].split('.')[0].zfill(5)}.json")
+        if pd.isna(r["a_symbol"]):
+            continue
+        h = load_series(CACHE / "h_bars" / f"hk{r['code'].split('.')[0].zfill(5)}.json")
+        h = h[h.index >= pd.Timestamp(r["ld"])]
         a = load_series(CACHE / "a_bars" / f"{r['a_symbol']}.json")
         frame = pd.DataFrame({"h": h}).join(a.rename("a"), how="inner")   # dates on which both markets traded
-        frame["fx"] = fx.reindex(frame.index, method="ffill")
+        frame["fx"] = fx.reindex(frame.index, method="ffill", tolerance=pd.Timedelta(days=7))
         frame["a_hkd"] = frame["a"] * frame["fx"]
         frame["gap"] = frame["h"] / frame["a_hkd"] - 1
         frame["event_day"] = [int((h.index <= t).sum()) - 1 for t in frame.index]   # position on the H-share calendar
         frame["code"], frame["hot"], frame["month"] = r["code"], r["hot"], str(pd.Timestamp(r["ld"]).to_period("M"))
         rows.append(frame.reset_index(names="date"))
-    return pd.concat(rows, ignore_index=True)
+    return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame(columns=["code", "event_day", "gap"])
+
+
+def balanced_path(panel: pd.DataFrame, horizon: int = 60) -> pd.DataFrame:
+    """Hold issuer composition fixed across a path; do not fill cross-market holidays."""
+    valid = panel.dropna(subset=["gap"])
+    codes = set(valid.loc[valid["event_day"] == 0, "code"]) & set(valid.loc[valid["event_day"] == horizon, "code"])
+    return valid[valid["code"].isin(codes) & valid["event_day"].between(0, horizon)].groupby("event_day")["gap"].agg(["mean", "median", "count"])
 
 
 def gap_change(panel: pd.DataFrame, k: int) -> pd.DataFrame:
@@ -96,16 +107,44 @@ def gap_change(panel: pd.DataFrame, k: int) -> pd.DataFrame:
 
 # ------------------------------------------------------------------ A-share reaction
 
-def a_share_frames(d: pd.DataFrame) -> dict[str, pd.DataFrame]:
+def market_residuals(frame: pd.DataFrame, event) -> tuple[pd.Series, dict]:
+    """Estimate alpha/beta on A trading bars [-120,-21], with at least 60 matched returns."""
+    position = frame.index.searchsorted(pd.Timestamp(event))
+    training = frame.iloc[max(0, position - 120):max(0, position - 20)].dropna(subset=["r", "market"])
+    meta = {"n_estimation": len(training), "alpha": np.nan, "beta": np.nan}
+    if len(training) < 60:
+        return pd.Series(np.nan, index=frame.index), meta
+    x = np.column_stack([np.ones(len(training)), training["market"]])
+    if np.linalg.matrix_rank(x) < 2:
+        return pd.Series(np.nan, index=frame.index), meta
+    alpha, beta = np.linalg.lstsq(x, training["r"], rcond=None)[0]
+    meta.update(alpha=alpha, beta=beta)
+    return frame["r"] - alpha - beta * frame["market"], meta
+
+
+def a_share_frames(d: pd.DataFrame, events: pd.Series | None = None) -> dict[str, pd.DataFrame]:
     """Per-issuer frames whose `ex_hsi` column is the A-share return minus the CSI 300 return (name reused by the event study)."""
     csi = load_series(CACHE / "csi300.json")
     frames = {}
+    estimates = []
     for _, r in d.iterrows():
+        if pd.isna(r["a_symbol"]):
+            continue
         a = load_series(CACHE / "a_bars" / f"{r['a_symbol']}.json")
-        frame = pd.DataFrame({"r": a.pct_change(), "turnover": np.nan})
-        frame["ex_hsi"] = frame["r"] - csi.reindex(a.index).pct_change()
+        frame = pd.DataFrame({"r": a.pct_change(fill_method=None), "turnover": np.nan})
+        frame["market"] = csi.reindex(a.index).pct_change(fill_method=None)
+        frame["ex_hsi"] = frame["r"] - frame["market"]
+        if events is not None:
+            event = events.get(r["code"])
+            if pd.isna(event):
+                continue
+            frame["ex_hsi"], meta = market_residuals(frame, event)
+            estimates.append({"code": r["code"], "event": event, **meta})
         frame["ex_hstech"] = frame["ex_hsi"]
         frames[r["code"]] = frame
+    if events is not None:
+        name = events.name or "event"
+        pd.DataFrame(estimates).to_csv(OUT / f"market_model_{name}_estimates.csv", index=False)
     return frames
 
 
@@ -124,7 +163,7 @@ def main() -> None:
         rows.append([name, str(len(part)), f"{100 * part['disc'].mean():.1f}%", f"{100 * part['disc'].median():.1f}%",
                      f"{100 * part['h_day1_close_vs_a'].mean():.1f}%", f"{100 * part['ir'].mean():.1f}%", f"{100 * part['ir'].median():.1f}%"])
     disc = pd.DataFrame(rows, columns=["Sample", "N", "Offer vs A (mean)", "Offer vs A (median)", "Day-1 close vs A (mean)", "Mean IR", "Median IR"])
-    t_close = stats.ttest_rel(d["h_day1_close_vs_a"], d["disc"])
+    t_close = stats.ttest_rel(d["h_day1_close_vs_a"], d["disc"], nan_policy="omit")
     hot_diff = ext.ols_focus(d.assign(y=d["disc"]), "y", ["hot"], "hot")
     family.append(("Discount", "Offer discount differs between April-June and other listings (HC3)", hot_diff["p"]))
     family.append(("Discount", "Day-1 close discount is smaller than offer discount (paired t)", float(t_close.pvalue)))
@@ -155,6 +194,9 @@ def main() -> None:
 
     # 4. convergence
     panel = premium_panel(d, fx)
+    panel.to_csv(OUT / "premium_panel.csv", index=False)
+    balanced_path(panel).to_csv(OUT / "balanced_path_60.csv")
+    pd.DataFrame([{ "horizon": k, "matched_issuers": len(gap_change(panel, k)), "sample_issuers": len(d)} for k in (0, *HORIZONS)]).to_csv(OUT / "horizon_coverage.csv", index=False)
     conv_rows = []
     for k in HORIZONS:
         z = gap_change(panel, k)
@@ -174,8 +216,18 @@ def main() -> None:
     events = d.set_index("code")
     sub_close = pd.Series(pd.to_datetime(y26.set_index("Stock Code")["Subscription closing date"]).reindex(events.index))
     listing = events["ld"]
+    listing.name = "listing"
+    sub_close.name = "subscription_close"
     react_close = ac.study_event(frames, sub_close)
     react_list = ac.study_event(frames, listing)
+    beta_close = ac.study_event(a_share_frames(d, sub_close), sub_close)
+    beta_list = ac.study_event(a_share_frames(d, listing), listing)
+    beta_close = beta_close[~beta_close["Window"].str.startswith("Turnover")]
+    beta_list = beta_list[~beta_list["Window"].str.startswith("Turnover")]
+    for label, tab in (("subscription close", beta_close), ("H listing day", beta_list)):
+        row = tab[tab["Window"] == "[-1,+1]"]
+        if len(row):
+            family.append(("A-share reaction", f"Market-model CAR [-1,+1] around {label} (placebo)", float(row["Placebo p"].iloc[0])))
     for label, tab in (("subscription close", react_close), ("H listing day", react_list)):
         row = tab[tab["Window"] == "[-1,+1]"]
         if len(row):
@@ -196,7 +248,7 @@ The day-1 gap uses the A-share close on the H listing day, so it also reflects A
 {to_markdown(disc.set_index('Sample'), 'Sample')}
 
 - Offer vs A is negative for {int((d['disc'] < 0).sum())} of {len(d)} issuers: H shares are priced below the A-share close on average, and the discount is
-  {'smaller' if abs(d['h_day1_close_vs_a'].mean()) < abs(d['disc'].mean()) else 'not smaller'} at the day-1 close (paired t p = {t_close.pvalue:.3f}), i.e. part of the offer discount closes on the first day.
+  {'smaller' if abs(d['h_day1_close_vs_a'].mean()) < abs(d['disc'].mean()) else 'not smaller'} at the day-1 close (paired t p = {t_close.pvalue:.3f}). This comparison also includes A-share and FX moves between anchor dates.
 - April-June listings vs others: difference in the offer discount = {100 * hot_diff['b']:.1f} pp (HC3 p = {hot_diff['p']:.3f}).
 
 ## 2. Does the offer discount go with the first-day return?
@@ -205,8 +257,8 @@ Rank correlation of offer premium with IR: rho = {rho.statistic:.2f} (p = {rho.p
 
 {to_markdown(reg.set_index('Specification'), 'Specification')}
 
-- A negative coefficient means a deeper discount (a more negative offer premium) goes with a higher first-day return: the H share catches up toward the A share.
-- N = {len(d)} and 9 listing months; treat as directional.
+- A negative coefficient means a deeper discount goes with a higher first-day return; this association alone does not identify convergence.
+- N = {len(d)} and {d['month'].nunique()} listing months; treat as directional.
 
 ## 3. What explains the size of the discount
 
@@ -221,6 +273,11 @@ from the day-0 close minus the A-share's return (in HKD) over the same dates: an
 
 {to_markdown(conv.set_index('Trading days after listing'), 'Trading days after listing')}
 
+`horizon_coverage.csv` records matched issuers at every reported horizon. `balanced_path_60.csv` and the figure hold the cohort fixed to issuers
+with valid day-0 and day-60 pairs. On cross-market holidays the daily count can still fall; prices are not carried forward.
+The daily premium panel uses raw H and A prices from Tencent. Adjusted H caches cannot be divided by raw A prices after a share split.
+Nonsignificant gap changes are inconclusive, rather than evidence that convergence is absent.
+
 ## 5. The A-share reaction to the H-share issue (A-share return minus CSI 300)
 
 Same placebo calibration as the lockup study (placebo days within {ac.PLACEBO_NEAR} bars of the event, cross-sectional t against the placebo t-distribution).
@@ -234,6 +291,17 @@ Around the subscription closing date:
 Around the H listing day:
 
 {to_markdown(ac.format_events(react_list), 'Window') if len(react_list) else 'Too few events.'}
+
+Sensitivity to pre-event alpha/beta: OLS on A trading bars [-120,-21], minimum 60 matched returns. Parameters are estimated separately
+for subscription-close and listing events and held fixed in the event/placebo windows. This does not provide sector matching or causal identification.
+
+Around subscription close (market model):
+
+{to_markdown(ac.format_events(beta_close), 'Window') if len(beta_close) else 'Too few events.'}
+
+Around H listing (market model):
+
+{to_markdown(ac.format_events(beta_list), 'Window') if len(beta_list) else 'Too few events.'}
 
 ## 6. Multiplicity
 
@@ -261,14 +329,13 @@ def fig_anchor(d: pd.DataFrame, panel: pd.DataFrame) -> None:
     left.set_ylabel("H first-day return", fontsize=8, color=INK2)
     pct_axis(left)
     pct_axis(left, "x")
-    path = panel[panel["event_day"].between(0, 60)].groupby("event_day")["gap"].agg(["mean", "median", "count"])
-    path = path[path["count"] >= 15]
+    path = balanced_path(panel)
     right.plot(path.index, path["mean"], color=BLUE, lw=2)
     right.plot(path.index, path["median"], color=BLUE, lw=1.5, ls="--")
     right.axhline(0, color=AXIS, lw=1)
     right.set_xlabel("Trading days after H listing (both markets open)", fontsize=8, color=INK2)
     right.set_ylabel("H price vs A price", fontsize=8, color=INK2)
-    right.text(0.02, 0.93, "solid = mean, dashed = median", transform=right.transAxes, fontsize=8, color=MUTED)
+    right.text(0.02, 0.93, "fixed day-0/day-60 cohort; mean / median", transform=right.transAxes, fontsize=8, color=MUTED)
     pct_axis(right)
     fig.suptitle("A+H issuers: discount to the A share at the offer, and its path after listing", x=0.01, ha="left", fontsize=10, color=INK, fontweight="bold")
     fig.tight_layout()

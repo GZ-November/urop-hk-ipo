@@ -19,18 +19,18 @@ Research plan line A proposes A vs B as a main hypothesis. The cross-tab shows w
 
 ## Raw contrast
 
-Mean IR 69.5% (A, n = 23) vs 46.9% (B, n = 80); median
-44.7% vs 13.7%. Welch p = 0.281, Mann-Whitney p = 0.157,
-permutation p stratified by the Apr-Jun window = 0.340.
+Mean IR 69.5% (A, n = 23) vs 48.4% (B, n = 80); median
+44.7% vs 14.1%. Welch p = 0.311, Mann-Whitney p = 0.230,
+permutation p stratified by the Apr-Jun window = 0.369.
 
 ## Adjusted contrast, outcome log(1 + IR)
 
 | Specification | Mechanism A coefficient (HC3 s.e.) | HC3 p | Wild cluster p | N | Min. detectable effect (log pts, 80% power) |
 |---|---|---|---|---|---|
-| Mechanism A only | 0.172 (0.109) | 0.114 | 0.277 | 103 | 0.30 |
-| + Apr-Jun dummy | 0.097 (0.116) | 0.405 | 0.555 | 103 | 0.33 |
-| + route (18A, 18C; A+H in controls) | -0.153 (0.176) | 0.386 | 0.684 | 103 | 0.49 |
-| + route + size + fixed price | -0.159 (0.174) | 0.361 | 0.641 | 103 | 0.49 |
+| Mechanism A only | 0.156 (0.108) | 0.148 | 0.312 | 103 | 0.30 |
+| + Apr-Jun dummy | 0.082 (0.115) | 0.477 | 0.598 | 103 | 0.32 |
+| + route (18A, 18C; A+H in controls) | -0.162 (0.176) | 0.358 | 0.668 | 103 | 0.49 |
+| + route + size + fixed price | -0.168 (0.173) | 0.330 | 0.629 | 103 | 0.48 |
 
 - Once route is held fixed the Mechanism A coefficient is identified from 6 non-18C issuers only, so its standard
   error is large. The sample cannot separate a mechanism effect from an 18C effect at any economically plausible size.
