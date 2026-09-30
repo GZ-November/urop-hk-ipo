@@ -8,7 +8,7 @@
     },
     {
       "path": "pipeline/exports/HKIPO-2026-margin-daily.csv",
-      "sha256": "7a6f5a8d7fa8b231ab7ce996b1bffc2dce11af14bf394d0c636bf51cdaf91ad7"
+      "sha256": "3b3831b3faaa9b4a1f34329725b075a7ceaad52147797ada1721d185695ec857"
     },
     {
       "path": "pipeline/exports/HKIPO-MASTER-AH-reference.csv",
@@ -16,7 +16,7 @@
     },
     {
       "path": "pipeline/prospectus_pipeline/data/margin/reported_snapshots.json",
-      "sha256": "e33a6bed156fa93bb16b2a7cb330e46abbe1ab936734d7462ad44409757d4abf"
+      "sha256": "f7a1e9084866b19088727bb257361fbed3eb19737900462d92783ef0eb241466"
     },
     {
       "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh600276.json",
@@ -354,6 +354,5 @@
       "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09981.json",
       "sha256": "b6ffd0be1731350c54fecccd458cd7b96d4dc06d6230557851260d96633c58b7"
     }
-  ],
-  "revision": "research readiness, sourced-margin expansion, 2026-09-30"
+  ]
 }

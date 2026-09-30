@@ -15,7 +15,7 @@
 | 首日抑价、机制与需求 | [Module A](../analysis/out/module_a/)、[Module B](../analysis/out/module_b/)、[机制探索](../analysis/out/extended/mechanism.md) | 固定主要因变量和假说；检查机制与上市路径的重叠、自选择及共同样本 |
 | 基石、自由流通与供给事件 | [财富分配](../analysis/out/academic/money_left.md)、[事件研究](../analysis/out/academic/events.md) | 逐项复核口径；解禁需完整窗口，随日期成熟补齐 |
 | A+H 价格锚 | 34 家已采集；[设计说明](AH_ANCHOR_2026.md)、[结果](../analysis/out/ah_anchor/ah_anchor.md) | 固定事件日期与汇率时点，报告 horizon 匹配样本、平衡样本和市场模型敏感性 |
-| 孖展及零售需求 | 23 家 / 69 条来源快照，9 家有截止日快照；[结果与覆盖](../analysis/out/margin/margin.md) | 补充有日期、链接、调查范围的来源；稀疏快照不能识别加速、个体杠杆或羊群因果效应 |
+| 孖展及零售需求 | 25 家 / 93 条来源快照，15 家有截止日快照；[结果与覆盖](../analysis/out/margin/margin.md) | 补充有日期、链接、调查范围的来源；稀疏快照不能识别加速、个体杠杆或羊群因果效应 |
 | Pre-IPO、承销费与保荐人 | [附加分析](../analysis/out/academic/)、[收益分解](../analysis/out/ir_decomposition/) | 检查缺失、组别大小及实际披露口径，保留探索性定位 |
 
 完整理论题库保留在 [RESEARCH_IDEAS.md](RESEARCH_IDEAS.md)，用于提出问题；执行范围以本计划与现行数据合同为准。新 skill 的通用设计建议须结合实际覆盖和变异判断。
@@ -31,9 +31,11 @@
 
 ## 待办顺序
 
-1. 依据 [集成复核](AGY_INTEGRATION_2026-09-30.md) 整理原始披露核验：Q2 仍有 14 个 BL 字段缺少 JSON 证据，现有审计只代表存储对账。
+1. 依据 [集成复核](AGY_INTEGRATION_2026-09-30.md) 整理原始披露核验：Q2 的14个董事席位未经支持零值由 Zcode 继续修复；本分支不改写 Q2 数据，对账不能证明这些字段已核实。
 2. 为选定主线写下假说、主要因变量、事件日期、样本排除和推断方法，再运行新研究。
 3. 补孖展来源和缺失披露字段；检查保荐人、费用及翻转代理的已知口径问题，参照 [历史问题记录](archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md)。
 4. 2026 年 10 月中旬起按发行人日期检查 Q2 解禁事件；完整窗口成熟后执行 `make refresh-2026`。实际进入样本以观测覆盖为准。
+
+本轮更细的探索性设计与16个候选问题见 [RESEARCH_DESIGN_2026.md](RESEARCH_DESIGN_2026.md)。
 
 命令、输入输出和 skill 使用见 [研究入口](RESEARCH_START.md)；当前估计以 `analysis/out/` 为准。

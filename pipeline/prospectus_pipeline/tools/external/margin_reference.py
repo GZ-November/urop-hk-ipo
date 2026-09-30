@@ -38,6 +38,7 @@ def export() -> None:
                          "margin_multiple": total / base, "initial_public_value_hkd": base,
                          "source": source["url"], "source_group": source["survey"],
                          "source_type": source["source_type"], "published_date": source["published_date"],
+                         "published_at_hkt": source.get("published_at_hkt", ""),
                          "retrieved_on": ledger["retrieved_on"]})
     frame = pd.DataFrame(rows).sort_values(["stock_code", "date"])
     frame.to_csv(REPO / "pipeline/exports/HKIPO-2026-margin-daily.csv", index=False)

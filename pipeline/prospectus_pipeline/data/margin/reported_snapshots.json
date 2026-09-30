@@ -3,6 +3,21 @@
   "method": "Manually transcribed source-reported amounts; no interpolated observations. News surveys are secondary evidence, not audited market-wide loan totals.",
   "sources": [
     {
+      "date": "2026-01-29",
+      "published_date": "2026-01-29",
+      "url": "https://www.guandian.cn/article/20260129/540627.html",
+      "publisher": "Guandian",
+      "survey": "guandian_unspecified",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "2768.HK",
+          "amount_100m_hkd": 1107.6
+        }
+      ]
+    },
+    {
       "date": "2026-04-17",
       "published_date": "2026-04-17",
       "url": "https://hk.investing.com/news/stock-market-news/article-1412788",
@@ -85,6 +100,101 @@
           "amount_100m_hkd": 192.52
         }
       ]
+    },
+    {
+      "date": "2026-04-23",
+      "published_date": "2026-04-23",
+      "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-04-23/doc-inhvntfe3797453.shtml",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "6810.HK",
+          "amount_100m_hkd": 901.99
+        },
+        {
+          "stock_code": "1879.HK",
+          "amount_100m_hkd": 5880.2
+        },
+        {
+          "stock_code": "2493.HK",
+          "amount_100m_hkd": 432.5
+        }
+      ],
+      "published_at_hkt": "2026-04-23T18:35:00+08:00"
+    },
+    {
+      "date": "2026-04-24",
+      "published_date": "2026-04-24",
+      "url": "https://www.hstong.com/news/detail/26042423004863454",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "1609.HK",
+          "amount_100m_hkd": 26.68
+        },
+        {
+          "stock_code": "6810.HK",
+          "amount_100m_hkd": 1277.44
+        }
+      ],
+      "published_at_hkt": "2026-04-24T19:43:00+08:00"
+    },
+    {
+      "date": "2026-06-05",
+      "published_date": "2026-06-05",
+      "url": "https://hk.investing.com/news/stock-market-news/article-1496642",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "6658.HK",
+          "amount_100m_hkd": 61.2
+        }
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "published_date": "2026-06-08",
+      "url": "https://hk.investing.com/news/stock-market-news/article-1498761",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "6658.HK",
+          "amount_100m_hkd": 228.17
+        }
+      ],
+      "published_at_hkt": "2026-06-08T18:32:00+08:00"
+    },
+    {
+      "date": "2026-06-10",
+      "published_date": "2026-06-10",
+      "url": "https://www.sohu.com/a/1034856191_323087",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "6658.HK",
+          "amount_100m_hkd": 2154.07
+        },
+        {
+          "stock_code": "6675.HK",
+          "amount_100m_hkd": 212.1
+        }
+      ],
+      "published_at_hkt": "2026-06-10T19:47:00+08:00"
     },
     {
       "date": "2026-06-29",
@@ -276,6 +386,78 @@
       ]
     },
     {
+      "date": "2026-07-02",
+      "published_date": "2026-07-02",
+      "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-07-02/doc-inifmmmw4129446.shtml",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "1770.HK",
+          "amount_100m_hkd": 65.71
+        },
+        {
+          "stock_code": "6880.HK",
+          "amount_100m_hkd": 591.54
+        },
+        {
+          "stock_code": "7656.HK",
+          "amount_100m_hkd": 226.32
+        },
+        {
+          "stock_code": "7687.HK",
+          "amount_100m_hkd": 96.29
+        },
+        {
+          "stock_code": "8090.HK",
+          "amount_100m_hkd": 53.51
+        },
+        {
+          "stock_code": "9971.HK",
+          "amount_100m_hkd": 666.61
+        },
+        {
+          "stock_code": "0537.HK",
+          "amount_100m_hkd": 17.61
+        },
+        {
+          "stock_code": "1377.HK",
+          "amount_100m_hkd": 101.83
+        },
+        {
+          "stock_code": "2475.HK",
+          "amount_100m_hkd": 32.39
+        },
+        {
+          "stock_code": "2797.HK",
+          "amount_100m_hkd": 3.4953
+        },
+        {
+          "stock_code": "3752.HK",
+          "amount_100m_hkd": 10.97
+        },
+        {
+          "stock_code": "6951.HK",
+          "amount_100m_hkd": 165.88
+        },
+        {
+          "stock_code": "2249.HK",
+          "amount_100m_hkd": 13.5
+        },
+        {
+          "stock_code": "6745.HK",
+          "amount_100m_hkd": 4.0118
+        },
+        {
+          "stock_code": "2523.HK",
+          "amount_100m_hkd": 1.3139
+        }
+      ],
+      "published_at_hkt": "2026-07-02T19:20:00+08:00"
+    },
+    {
       "date": "2026-07-03",
       "published_date": "2026-07-03",
       "url": "https://hk.investing.com/news/stock-market-news/article-1538060",
@@ -319,78 +501,6 @@
         {
           "stock_code": "2523.HK",
           "amount_100m_hkd": 1.8262
-        }
-      ]
-    },
-    {
-      "date": "2026-09-01",
-      "published_date": "2026-09-01",
-      "url": "https://hk.investing.com/news/stock-market-news/article-1637419",
-      "publisher": "Zhitong Finance (syndicated)",
-      "survey": "zhitong_futu_phillip_others",
-      "source_type": "media_broker_survey",
-      "unit": "HKD 100 million",
-      "observations": [
-        {
-          "stock_code": "2041.HK",
-          "amount_100m_hkd": 114.39
-        },
-        {
-          "stock_code": "9976.HK",
-          "amount_100m_hkd": 75.92
-        },
-        {
-          "stock_code": "3231.HK",
-          "amount_100m_hkd": 9.86
-        }
-      ]
-    },
-    {
-      "date": "2026-09-02",
-      "published_date": "2026-09-02",
-      "url": "https://hk.investing.com/news/stock-market-news/article-1639395",
-      "publisher": "Zhitong Finance (syndicated)",
-      "survey": "zhitong_futu_phillip_others",
-      "source_type": "media_broker_survey",
-      "unit": "HKD 100 million",
-      "observations": [
-        {
-          "stock_code": "9976.HK",
-          "amount_100m_hkd": 131.09
-        },
-        {
-          "stock_code": "3231.HK",
-          "amount_100m_hkd": 17.76
-        }
-      ]
-    },
-    {
-      "date": "2026-06-05",
-      "published_date": "2026-06-05",
-      "url": "https://hk.investing.com/news/stock-market-news/article-1496642",
-      "publisher": "Zhitong Finance (syndicated)",
-      "survey": "zhitong_futu_phillip_others",
-      "source_type": "media_broker_survey",
-      "unit": "HKD 100 million",
-      "observations": [
-        {
-          "stock_code": "6658.HK",
-          "amount_100m_hkd": 61.2
-        }
-      ]
-    },
-    {
-      "date": "2026-01-29",
-      "published_date": "2026-01-29",
-      "url": "https://www.guandian.cn/article/20260129/540627.html",
-      "publisher": "Guandian",
-      "survey": "guandian_unspecified",
-      "source_type": "media_broker_survey",
-      "unit": "HKD 100 million",
-      "observations": [
-        {
-          "stock_code": "2768.HK",
-          "amount_100m_hkd": 1107.6
         }
       ]
     },
@@ -455,6 +565,84 @@
           "amount_100m_hkd": 152.82
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "published_date": "2026-09-01",
+      "url": "https://hk.investing.com/news/stock-market-news/article-1637419",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "2041.HK",
+          "amount_100m_hkd": 114.39
+        },
+        {
+          "stock_code": "9976.HK",
+          "amount_100m_hkd": 75.92
+        },
+        {
+          "stock_code": "3231.HK",
+          "amount_100m_hkd": 9.86
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "published_date": "2026-09-02",
+      "url": "https://hk.investing.com/news/stock-market-news/article-1639395",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "9976.HK",
+          "amount_100m_hkd": 131.09
+        },
+        {
+          "stock_code": "3231.HK",
+          "amount_100m_hkd": 17.76
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "published_date": "2026-09-03",
+      "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-09-03/doc-iniqpzps1076051.shtml",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_futu_phillip_others",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "9976.HK",
+          "amount_100m_hkd": 170.47
+        },
+        {
+          "stock_code": "3231.HK",
+          "amount_100m_hkd": 28.85
+        }
+      ],
+      "published_at_hkt": "2026-09-03T18:37:00+08:00"
+    },
+    {
+      "date": "2026-09-04",
+      "published_date": "2026-09-04",
+      "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-09-04/doc-iniqryes4051526.shtml",
+      "publisher": "Zhitong Finance (syndicated)",
+      "survey": "zhitong_market_data_unspecified",
+      "source_type": "media_broker_survey",
+      "unit": "HKD 100 million",
+      "observations": [
+        {
+          "stock_code": "3231.HK",
+          "amount_100m_hkd": 42.14
+        }
+      ],
+      "published_at_hkt": "2026-09-04T14:20:00+08:00"
     }
   ]
 }

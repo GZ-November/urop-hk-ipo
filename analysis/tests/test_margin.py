@@ -67,6 +67,14 @@ class ValidationTests(unittest.TestCase):
         out = mf.safe_focus(frame, "y", ["x", "hot"], "x")
         self.assertEqual(out["n"], 9)
         self.assertTrue(pd.isna(out["p"]))
+    def test_empty_sample_returns_diagnostic_instead_of_rank_error(self):
+        frame = pd.DataFrame(columns=["y", "month", "x"])
+        out = mf.safe_focus(frame, "y", ["x"], "x")
+        self.assertEqual(out["n"], 0)
+        self.assertEqual(out["rank"], 0)
+        self.assertEqual(out["status"], "insufficient_sample_or_rank")
+        self.assertTrue(pd.isna(out["p"]))
+
 
 
 if __name__ == "__main__":

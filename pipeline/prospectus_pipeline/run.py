@@ -283,7 +283,7 @@ def cmd_master(cfg, args, companies):
           + (f"（缺列跳过：{', '.join(summary['identities_skipped'])}）" if summary["identities_skipped"] else ""))
     print(f"  - 填报率 <100% 的列：{len(summary['low_fill_columns'])} 个（明细见漂移报告）")
     if summary["boolean_fill_gaps"]:
-        print(f"  - ⚠️ 布尔列空值（违反 0/1 约定）：{len(summary['boolean_fill_gaps'])} 列 "
+        print(f"  - ⚠️ 布尔列覆盖缺口（未知保留缺失）：{len(summary['boolean_fill_gaps'])} 列 "
               f"{'、'.join(summary['boolean_fill_gaps'])}")
     print(f"  漂移报告：{summary['drift_report']}")
     return 1 if summary["hard_errors"] else 0

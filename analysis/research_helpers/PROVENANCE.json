@@ -1,0 +1,10 @@
+{
+  "source": "ipo-empirical-research installed revision 2026-09-30",
+  "copied_on": "2026-09-30",
+  "sha256": {
+    "ipo_metrics.py": "403648c502c5bd1314f831d4f85442e736bb57023e91119121d37eca7ceccb49",
+    "regtable.py": "7c751af3484766fe3d65d45cfe1d561969fe2b65b9fbec9000e07483eed4e82a"
+  },
+  "validation": "installed skill core selftest and 22 edge tests passed; optional linearmodels/pyfixest skipped",
+  "skill_sha256": "02acaff90a4020d391ba1de27172e55983b975651d4d1c43818a672a75bbb46b"
+}

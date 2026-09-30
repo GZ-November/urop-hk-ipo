@@ -90,12 +90,15 @@ def cascade_summary(pi: pd.DataFrame) -> pd.DataFrame:
 def safe_focus(d, y, xs, focus):
     z = d[[y, "month", *xs]].replace([np.inf, -np.inf], np.nan).dropna()
     x = np.column_stack([np.ones(len(z)), z[xs].to_numpy(float)])
+    diagnostic = {"g": z["month"].nunique(), "rank": np.linalg.matrix_rank(x) if len(z) else 0,
+                  "k": x.shape[1], "max_leverage": np.nan, "status": "insufficient_sample_or_rank"}
     if len(z) <= len(xs) + 2 or np.linalg.matrix_rank(x) < x.shape[1]:
-        return {"n": len(z), **{k: np.nan for k in ("b", "se", "p", "p_wild", "r2")}}
+        return {"n": len(z), **diagnostic, **{k: np.nan for k in ("b", "se", "p", "p_wild", "r2")}}
     leverage = np.einsum("ij,ji->i", x, np.linalg.pinv(x))
+    diagnostic.update(max_leverage=float(leverage.max()), status="unit_leverage")
     if (leverage >= 1 - 1e-9).any():
-        return {"n": len(z), **{k: np.nan for k in ("b", "se", "p", "p_wild", "r2")}}
-    return ext.ols_focus(z, y, xs, focus)
+        return {"n": len(z), **diagnostic, **{k: np.nan for k in ("b", "se", "p", "p_wild", "r2")}}
+    return {**ext.ols_focus(z, y, xs, focus), **diagnostic, "status": "estimated"}
 
 
 def prepare_full_sample(y26: pd.DataFrame) -> pd.DataFrame:
@@ -185,14 +188,15 @@ def main() -> None:
         d_merged["lfinal"] = np.log(d_merged["final_multiple"].where(d_merged["final_multiple"] > 0))
         rho = stats.spearmanr(d_merged["lfinal"], d_merged["ir"], nan_policy="omit")
 
-        # Table 1: Broker Margin OLS
+        common = d_merged.replace([np.inf, -np.inf], np.nan).dropna(subset=["y", "lfinal", "hot", "lproc", "month"])
+        # Table 1: Broker Margin OLS on one common finite sample
         rows_margin = []
         for label, xs in [
             ("ln latest observed margin multiple", ["lfinal"]),
             ("+ April-June window", ["lfinal", "hot"]),
             ("+ window + ln size", ["lfinal", "hot", "lproc"]),
         ]:
-            r = safe_focus(d_merged, "y", xs, "lfinal")
+            r = safe_focus(common, "y", xs, "lfinal")
             family.append(("Observed margin", label, r["p"]))
             rows_margin.append([
                 label,
@@ -203,13 +207,16 @@ def main() -> None:
             ])
         tab_margin = pd.DataFrame(rows_margin, columns=["Specification", "Coefficient (HC3 s.e.)", "HC3 p", "Wild cluster p", "N"])
 
-        close_sample = d_merged[d_merged["on_close"]]
+        close_sample = common[common["on_close"]]
         close_fit = safe_focus(close_sample, "y", ["lfinal", "hot", "lproc"], "lfinal")
         family.append(("Observed margin", "Closing-day snapshots, window + size", close_fit["p"]))
         close_result = (f"coefficient = {close_fit['b']:.3f}, HC3 p = {close_fit['p']:.3f}" if np.isfinite(close_fit["p"])
                         else "HC3 model not estimable (insufficient sample, rank or unit-leverage constraint)")
         report_parts.append(f"Closing-day snapshot sensitivity: N = {close_fit['n']}, {close_result}. "
-                            "A closing-day snapshot may still precede the broker cutoff. Non-closing observations are censored and differ in time to deadline.\n")
+                            f"G = {close_fit['g']}; maximum leverage = {close_fit['max_leverage']:.3f}; status = {close_fit['status']}. "
+                            "HC3 estimability does not ensure reliable inference with few/unbalanced listing-month clusters. "
+                            "A closing-day snapshot is not necessarily available before the subscription/pricing decision. "
+                            "Non-closing observations are censored and differ in time to deadline.\n")
         # Table 2: Information Cascade Dynamics (Day 1 vs Final)
         cascades = cascade_summary(pi)
         mean_ratio = cascades["cascade_ratio"].mean()

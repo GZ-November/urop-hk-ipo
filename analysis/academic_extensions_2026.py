@@ -211,22 +211,26 @@ The most common single rate covers {100 * top_share:.0f}% of deals; unlike the U
 
 # ------------------------------------------------------------------ 3. events
 
-def load_event_frame(y26: pd.DataFrame) -> tuple[dict[str, pd.DataFrame], dict[str, pd.Series]]:
+def load_event_frame(y26: pd.DataFrame, as_of: str | None = None) -> tuple[dict[str, pd.DataFrame], dict[str, pd.Series]]:
     """Per-issuer frames of excess returns (vs HSI and HSTECH) and turnover from the cached bars."""
+    cutoff = (pd.Timestamp(as_of) if as_of else pd.Timestamp.now(tz="Asia/Hong_Kong").tz_localize(None)).normalize()
     hsi, hstech = et.load_bars(et.BARS / "hsi_bars.json"), et.load_bars(et.BARS / "hstech_bars.json")
+    hsi, hstech = hsi.loc[:cutoff], hstech.loc[:cutoff]
     frames = {}
     for _, row in y26.iterrows():
         path = et.BARS / f"hk{row['Stock Code'].split('.')[0].zfill(5)}.json"
         if not path.exists():
             continue
-        bars = json.loads(path.read_text(encoding="utf-8"))
+        bars = [b for b in json.loads(path.read_text(encoding="utf-8")) if pd.Timestamp(b["date"]) <= cutoff]
+        if not bars:
+            continue
         close = pd.Series({pd.Timestamp(b["date"]): float(b["close"]) for b in bars}).sort_index()
         turnover = pd.Series({pd.Timestamp(b["date"]): b.get("turnover") for b in bars}, dtype=float).sort_index()
         if close.index[0] != row["listing_date"]:
             continue
-        frame = pd.DataFrame({"r": close.pct_change(), "turnover": turnover})
+        frame = pd.DataFrame({"r": close.pct_change(fill_method=None), "turnover": turnover})
         for name, bench in (("hsi", hsi), ("hstech", hstech)):
-            frame[f"ex_{name}"] = frame["r"] - bench.reindex(close.index).pct_change()
+            frame[f"ex_{name}"] = frame["r"] - bench.reindex(close.index).pct_change(fill_method=None)
         frames[row["Stock Code"]] = frame
     return frames, {}
 
