@@ -13,6 +13,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from module_a_stylized_facts import load_panel, select_2026
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "pipeline" / "exports" / "HKIPO-MB-MASTER_clean.csv"
@@ -67,8 +68,7 @@ def screen(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    df = pd.read_csv(MASTER, encoding="utf-8-sig")
-    df = df[df["cohort"].str.startswith("2026")]
+    df = select_2026(load_panel(MASTER))
     print(f"2026 sample: N = {len(df)}  ({df['cohort'].value_counts().sort_index().to_dict()})\n")
     print(screen(df).to_string(index=False))
 

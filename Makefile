@@ -2,7 +2,11 @@
 # HK IPO Pipeline Master Makefile
 # ==============================================================================
 
-.PHONY: help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test check lint clean weekly-report
+PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
+COHORT_CONFIGS := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_*.yaml)))
+PYTHON_SOURCES := run.py analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
+
+.PHONY: help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -19,7 +23,9 @@ help:
 	@echo "  make exclusions    - Generate per-cohort sample selection logs (inclusion/exclusion reasons)"
 	@echo "  make aftermarket-refresh - Refresh aftermarket columns for every cohort config"
 	@echo "  make test          - Run full automated regression and safety test suite"
-	@echo "  make lint          - Verify Python syntax and bytecode compilation"
+	@echo "  make lint          - Compile maintained Python sources and run required static checks"
+	@echo "  make analysis      - Regenerate statistics and regressions for 2026 listings only"
+	@echo "  make check-code    - Run lint, portable/acceptance tests and registry consistency"
 	@echo "  make clean         - Remove cached bytecode and temporary compilation files"
 	@echo "  make check         - Run complete health inspection (status + audit + cross_check + test + registry-check)"
 
@@ -27,53 +33,55 @@ env:
 	@./.agents/skills/hk-ipo-pipeline/scripts/check_env.sh
 
 status:
-	@python3 run.py status
+	@"$(PYTHON)" run.py status
 
 audit:
-	@python3 run.py audit --target all
+	@"$(PYTHON)" run.py audit --target all
 
 cross_check:
-	@python3 run.py cross_check
+	@"$(PYTHON)" run.py cross_check
 
 report:
-	@python3 run.py report
+	@"$(PYTHON)" run.py report
 
 weekly-report:
-	@python3 run.py report-weekly
+	@"$(PYTHON)" run.py report-weekly
 
 export:
-	@python3 run.py export
+	@"$(PYTHON)" run.py export
 
 registry:
-	@python3 run.py registry
+	@"$(PYTHON)" run.py registry
 
 master:
-	@python3 run.py master
+	@"$(PYTHON)" run.py master
 
 evidence:
-	@python3 run.py evidence
+	@"$(PYTHON)" run.py evidence
 
 exclusions:
-	@for cfg in prospectus_pipeline/config_2025q1.yaml prospectus_pipeline/config_2025q2.yaml \
-	            prospectus_pipeline/config_2026q1.yaml prospectus_pipeline/config_2026q2.yaml \
-	            prospectus_pipeline/config_2026q3.yaml; do \
-		echo "=== exclusions: $$cfg ==="; python3 run.py exclusions --config $$cfg || exit 1; done
+	@for cfg in $(COHORT_CONFIGS); do \
+		"$(PYTHON)" run.py exclusions --config $$cfg || exit 1; done
 
 aftermarket-refresh:
-	@for cfg in prospectus_pipeline/config_2025q1.yaml prospectus_pipeline/config_2026q1.yaml \
-	            prospectus_pipeline/config_2026q2.yaml prospectus_pipeline/config_2026q3.yaml; do \
-		echo "=== aftermarket: $$cfg ==="; python3 run.py aftermarket --config $$cfg || exit 1; done
+	@for cfg in $(COHORT_CONFIGS); do \
+		"$(PYTHON)" run.py aftermarket --config $$cfg || exit 1; done
 
-test:
-	@python3 -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
+test: test-pipeline test-analysis
+
+test-pipeline:
+	@"$(PYTHON)" -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
+
+test-analysis:
+	@"$(PYTHON)" -m unittest discover -s "analysis/tests" -v
+
+analysis:
+	@for script in module_a_stylized_facts module_b_underpricing_regression ir_decomposition_2026 q2_breakdown_2026 monthly_breakdown_2026 testability_screen_2026; do \
+		"$(PYTHON)" analysis/$$script.py || exit 1; done
 
 lint:
-	@python3 -m py_compile run.py
-	@find "pipeline/prospectus_pipeline/src" -name "*.py" -exec python3 -m py_compile {} +
-	@find "pipeline/prospectus_pipeline/tools" -name "*.py" -exec python3 -m py_compile {} +
-	@if python3 -m flake8 --version >/dev/null 2>&1; then \
-		python3 -m flake8 --select=F401,F811,F821,F541 --exclude=archive run.py analysis pipeline || exit 1; \
-	else echo "(flake8 not installed - skipped static checks; pip install flake8)"; fi
+	@"$(PYTHON)" -m compileall -q $(PYTHON_SOURCES)
+	@"$(PYTHON)" -m flake8 --select=F401,F811,F821,F541 $(PYTHON_SOURCES)
 	@echo "✅ All Python files passed syntax compilation!"
 
 clean:
@@ -83,9 +91,11 @@ clean:
 	@echo "✅ Cleaned all temporary caches."
 
 registry-check:
-	@python3 run.py registry --check
+	@"$(PYTHON)" run.py registry --check
 
-check: status audit cross_check test registry-check
+check-code: lint test registry-check
+
+check: status audit cross_check check-code
 	@echo "=================================================================="
-	@echo "✅ ALL PIPELINE CHECKS PASSED: Pipeline & Toolkit 100% Verified!"
+	@echo "✅ Configured pipeline and code checks passed; inspect audit coverage separately."
 	@echo "=================================================================="

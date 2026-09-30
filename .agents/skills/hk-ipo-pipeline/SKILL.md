@@ -12,7 +12,9 @@ description: >-
 
 Standard operating runbook and execution guide for the Hong Kong Main Board IPO automated data collection, deterministic validation, dual-gate auditing, and econometric delivery pipeline.
 
-Core Architecture: **Deterministic First (0 LLM Token overhead) + Cryptographic Hash-Gates (Hallucination-proof) + Exact Excel Formatting Preservation**.
+Current research scope: all statistical and econometric analysis, including Module A, uses observed 2026 listing dates only. Collection remains cohort-general. See `analysis/README.md` and `docs/RESEARCH_PLAN_2026.md`.
+
+Core Architecture: **Deterministic First (0 LLM Token overhead) + SHA-256 Payload Version Gates (independent semantic review required) + Exact Excel Formatting Preservation**.
 
 ---
 
@@ -73,7 +75,7 @@ Validates econometric consistency against official HKEX Listing Rules:
 - Reference details: [listing_rules_guide.md](./references/listing_rules_guide.md) and [statutory_evidentiary_rules.md](./references/statutory_evidentiary_rules.md).
 
 ### 4. Macro Market & Academic Report (`report`)
-Aggregates all 120 variables into macro proceeds, industry breakdown (HSICS 2026), retail subscription multiples, and first-day returns:
+Aggregates all 202 variables into macro proceeds, industry breakdown (HSICS 2026), retail subscription multiples, and first-day returns:
 ```bash
 ./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh report
 ```
@@ -91,7 +93,7 @@ Exports clean data and comprehensive data dictionary for econometric research:
 
 ### 5b. Variable Registry Builder (`registry`)
 Merges all quarterly Markdown Codebooks into one machine-readable variable registry
-(`HKIPO_Variable_Registry.yaml`, versioned) — the single source of truth for column
+(`HKIPO_Variable_Registry.yaml`, versioned) — a derived snapshot of variable_catalog.py for column
 name / type / layer / unit. Cross-cohort definition conflicts are recorded under
 `meta.conflicts` and resolved to the newest Codebook:
 ```bash
@@ -100,7 +102,7 @@ name / type / layer / unit. Cross-cohort definition conflicts are recorded under
 
 ### 5c. Master Panel & Drift Report (`master`)
 Merges every cohort `_clean.csv` into one analysis-ready master panel
-(`HKIPO-MB-MASTER_clean.csv`, local-only) prefixed with `cohort` and
+(`HKIPO-MB-MASTER_clean.csv`, versioned research artifact) prefixed with `cohort` and
 `cross_cohort_duplicate` columns, and writes `HKIPO-MB-MASTER_Drift_Report.md`:
 ```bash
 ./.agents/skills/hk-ipo-pipeline/scripts/run_pipeline.sh master

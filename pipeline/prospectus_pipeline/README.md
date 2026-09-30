@@ -57,7 +57,7 @@ prospectus_pipeline/
 ├── tools/                          # Domain utilities and scripts
 │   ├── search.py                   # Interactive document search (outline/pages/periods/bundle)
 │   ├── state.py                    # Hash state authentication CLI
-│   ├── validate_ext.py             # External field validation utility
+│   ├── migration/validate_ext.py   # Historical external-field validation utility
 │   └── external/                   # External market and macroeconomic collectors
 │       ├── market.py               # First-day trading performance and 20-day HSI returns
 │       ├── hkma_import.py          # Fast HIBOR and aggregate balance collector
@@ -200,3 +200,7 @@ python3 prospectus_pipeline/run.py external [--only <CODE>.HK]
 ```bash
 python3 -m unittest discover -s prospectus_pipeline/tests -v
 ```
+
+## Current research scope and developer checks
+
+The collection CLI remains cohort-general. All current regressions and descriptive statistics, including Module A, select actual 2026 listing dates only; see [analysis guide](../../analysis/README.md). Canonical exports, codebooks, registry and reports live in `pipeline/exports/`, `pipeline/codebooks/`, `pipeline/registry/` and `pipeline/reports/`; runtime `out/` contains extraction and event-table intermediates. Run `make check-code` from the repository root for the same lint, pipeline/analysis tests and registry checks as CI. Raw document caches and model run logs remain local.

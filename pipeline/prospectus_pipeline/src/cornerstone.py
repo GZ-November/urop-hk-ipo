@@ -69,7 +69,8 @@ def confirmed_absent(cfg: dict) -> set[str]:
 
     Either cornerstone_absence.json says absent (``none`` is the legacy label)
     or the allotment extraction's final cornerstone allocation (col_CK) is a
-    definite 0. The extraction is authoritative and some cohorts have no
+    definite 0. A positive allocation overrides a stale absence verdict.
+    The extraction is authoritative and some cohorts have no
     cornerstone_absence.json at all.
     """
     from contracts import normalize_code
@@ -84,8 +85,12 @@ def confirmed_absent(cfg: dict) -> set[str]:
     for path in (allot_out / "extracted").glob("HKIPO-MB*.json"):
         rec = json.loads(path.read_text(encoding="utf-8"))
         allocation = (rec.get("fields", {}).get("col_CK") or {}).get("value")
-        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool) and allocation == 0:
-            codes.add(normalize_code(rec["code"]))
+        if isinstance(allocation, (int, float)) and not isinstance(allocation, bool):
+            code = normalize_code(rec["code"])
+            if allocation == 0:
+                codes.add(code)
+            elif allocation > 0:
+                codes.discard(code)
     return codes
 
 

@@ -161,6 +161,25 @@ class CellStrTests(unittest.TestCase):
 
 
 class ConfirmedAbsentCornerstoneTests(unittest.TestCase):
+    def test_final_positive_allocation_overrides_stale_absence_verdict(self):
+        from cornerstone import confirmed_absent
+
+        with tempfile.TemporaryDirectory() as tmp:
+            allot_out = Path(tmp)
+            (allot_out / "extracted").mkdir()
+            (allot_out / "cornerstone_absence.json").write_text(json.dumps({
+                "1234.HK": {"verdict": "absent"},
+                "5678.HK": {"verdict": "none"},
+                "9012.HK": {"verdict": "present"},
+            }), encoding="utf-8")
+            for code, value in {"1234": 0.25, "5678": 0.0, "9012": 0}.items():
+                (allot_out / "extracted" / f"HKIPO-MB{code}.json").write_text(
+                    json.dumps({"code": f"{code}.HK", "fields": {"col_CK": {"value": value}}}),
+                    encoding="utf-8")
+            absent = confirmed_absent({"paths": {"allot_out": allot_out}})
+
+        self.assertEqual(absent, {"5678.HK", "9012.HK"})
+
     def test_absence_comes_from_verdict_or_zero_allocation(self):
         import json
         import tempfile

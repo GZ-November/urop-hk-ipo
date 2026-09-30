@@ -7,6 +7,7 @@ stabilization_panel 曾在稳价经理人正则未命中时写入
 这些值经 expansion_mapping 流入工作簿 162-200 列。
 """
 import csv
+import datetime as dt
 import json
 import sys
 import tempfile
@@ -111,6 +112,17 @@ class StabilizationPanelNoFabricationTests(unittest.TestCase):
         self.assertEqual(row["stabilizing_manager_status"], "NOT_FOUND")
         self.assertTrue(any(CODE in line and "NOT_FOUND" in line for line in logs.output))
         self.assertEqual(row["stabilization_period_end"], "2026-08-07")
+        self.assertEqual(row["announcement_date"], "")
+
+    def test_borrowing_stabilizing_actions_do_not_imply_market_purchases(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            write_text(Path(tmp), "The stabilizing actions undertaken by Example Securities Limited, the "
+                                  "Stabilizing Manager, consisted of borrowing 1,500,000 Offer Shares "
+                                  "under the Stock Borrowing Agreement.")
+            row = run_stabilization(Path(tmp))
+
+        self.assertEqual(row["stabilization_purchases_occurred"], "")
+        self.assertEqual(row["aggregate_stabilization_shares"], "")
 
     def test_no_manager_appointed_is_flagged_not_filled(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -161,6 +173,40 @@ class StabilizationPanelNoFabricationTests(unittest.TestCase):
 
         self.assertEqual(row["shares_issued_under_option"], "")
         self.assertEqual(row["exercise_pct_of_option"], "")
+
+
+class StabilizationEventCoverageTests(unittest.TestCase):
+    """A named event window needs its full observed endpoints and zero-volume days."""
+
+    def compute(self, count: int, end_index: int, zero_first_turnover: bool = False) -> dict:
+        engine = object.__new__(StabilizationPanelEngine)
+        first = dt.date(2026, 1, 1)
+        bars = [{"date": first + dt.timedelta(days=i), "close": 100 + i,
+                 "turnover": (100 if i <= end_index else 50)} for i in range(count)]
+        if zero_first_turnover:
+            bars[0]["turnover"] = 0
+        engine.daily_bars = {CODE: bars}
+        return engine.compute_event_windows({
+            "stock_code": CODE,
+            "stabilization_period_end": (first + dt.timedelta(days=end_index)).isoformat(),
+        })
+
+    def test_cliff_window_requires_both_endpoints(self):
+        for count, end_index in ((30, 4), (10, 5)):
+            with self.subTest(count=count, end_index=end_index):
+                self.assertIsNone(self.compute(count, end_index)["cliff_return_m5_p5"])
+
+    def test_post20_and_volume_decay_wait_for_twenty_post_event_bars(self):
+        row = self.compute(25, 5)
+        self.assertAlmostEqual(row["cliff_return_m5_p5"], 110 / 100 - 1)
+        self.assertIsNone(row["post_stab_return_p20"])
+        self.assertIsNone(row["volume_decay_post_stab"])
+
+    def test_complete_windows_include_actual_zero_turnover_in_average(self):
+        row = self.compute(26, 5, zero_first_turnover=True)
+        self.assertAlmostEqual(row["cliff_return_m5_p5"], 0.1)
+        self.assertAlmostEqual(row["post_stab_return_p20"], 125 / 105 - 1, places=6)
+        self.assertAlmostEqual(row["volume_decay_post_stab"], 0.6)
 
 
 class RelationalTablesNoFabricationTests(unittest.TestCase):

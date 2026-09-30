@@ -13,8 +13,7 @@ def read_daily_market_panel(path: Path) -> dict[str, list[dict[str, Any]]]:
 
     A missing file produces an empty mapping. Rows are grouped by stock code,
     trade dates are normalized with the market fetcher's date parser, and an
-    empty daily return is treated as zero to match the panel consumers' prior
-    behavior.
+    empty daily return remains missing; an absent return is not a measured zero.
     """
     if not path.exists():
         return {}
@@ -27,7 +26,7 @@ def read_daily_market_panel(path: Path) -> dict[str, list[dict[str, Any]]]:
                 "date": parse_bar_date(row["trade_date"]),
                 "close": float(row["close"]),
                 "turnover": float(row["turnover"]),
-                "daily_return": float(row["daily_return"]) if row.get("daily_return") else 0.0,
+                "daily_return": float(row["daily_return"]) if row.get("daily_return") else None,
             })
 
     for bars in daily_bars.values():
