@@ -51,9 +51,9 @@ Power warning: Q4 will contain far fewer than 106 IPOs, so H1-H3 can only fail t
 | Fix data items 1-2, re-export | Done (above). |
 | Event-time aftermarket study from daily bars | Done (`analysis/out/event_time/`). |
 | Hold-out claims | Written above; awaiting Q4 listings. |
-| A-share pre-pricing close for the 34 A+H issuers | **Needs external data.** Not collected here: the closes are not in the repository and guessing them would fabricate data. Suggest a one-day manual collection from the exchange for the day before each pricing date. |
-| Daily margin-financing (孖展) data for the hot window | **Needs external data.** Not in the repository; decide whether the cost is worth it before starting. |
-| 6-month windows and cornerstone unlocks for Q2 listings | **Time-gated.** The first Q2 6-month windows mature from mid-October 2026; rerun `run.py aftermarket` and the expansion writer then. |
+| A-share pre-pricing close for the 34 A+H issuers | **Done** (`docs/AH_ANCHOR_2026.md`): collected programmatically for all 34, no estimates. |
+| Daily margin-financing (孖展) data for the hot window | **Not collectable**: no public machine-readable history was found. Ingestion path and validator added (`analysis/margin_financing_2026.py`); needs a data file. |
+| 6-month windows and cornerstone unlocks for Q2 listings | **Time-gated** until mid-October 2026; `make refresh-2026` reruns everything, and the lockup event study picks Q2 issuers up from the cached bars. |
 | Retire Mechanism A vs B as a stand-alone line | Recommended (section 2). |
 
 Limits: 9 listing months (few clusters), the sample ends 2026-09-09, endogenous retail and cornerstone choices, and a hot window that remains data-informed.

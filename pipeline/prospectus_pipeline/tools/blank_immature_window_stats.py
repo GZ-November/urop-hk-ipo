@@ -7,8 +7,8 @@ bars, so they cannot be read as 6-month statistics. The expansion writer cannot 
 regenerates from the Q1-only event tables and refuses to clear curated cells. This tool clears
 only these four columns, and only where the issuer's own 6-month BHR cell is empty.
 
-Usage (from pipeline/):
-    python3 prospectus_pipeline/tools/blank_immature_window_stats.py --config prospectus_pipeline/config_2026q2.yaml [--dry-run]
+Usage (from the repository root; the config path may be relative to pipeline/):
+    python3 pipeline/prospectus_pipeline/tools/blank_immature_window_stats.py --config prospectus_pipeline/config_2026q2.yaml [--dry-run]
 """
 from __future__ import annotations
 
@@ -56,7 +56,10 @@ def main() -> int:
     parser.add_argument("--config", required=True)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    cfg = load_cfg(None, None, None, config_path=args.config)
+    config = Path(args.config)
+    if not config.is_absolute() and not config.exists():
+        config = ROOT.parent / config  # cohort configs are written relative to pipeline/
+    cfg = load_cfg(None, None, None, config_path=str(config))
     with workbook_transaction(cfg["_workbook_path"], operation="blank_immature_window_stats", dry_run=args.dry_run) as wb:
         ws = wb[cfg["sheet"]]
         cells = immature_cells(ws)
