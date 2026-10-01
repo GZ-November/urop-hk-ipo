@@ -1,0 +1,19 @@
+{
+  "code": "1688.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p234. Wording 'six months after the Listing Date' is duration wording -> frees ON the anniversary: 2026-06-26 + 6m = 2026-12-26 first free, last restricted 2026-12-25. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p284. 'ending on the date which is six months from the Listing Date' - explicit inclusive end -> first free 2026-12-27, last restricted 2026-12-26. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p284. Second six-month period from expiry of the First -> ends 12 months from Listing Date 2027-06-26 (inclusive) -> first free 2027-06-27. Matches candidate. Note 3 pledge undertaking on p284-285 is not a longer disposal restriction.",
+    "corrections": {}
+  }
+}

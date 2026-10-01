@@ -1,0 +1,19 @@
+{
+  "code": "2493.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: quote found verbatim (whitespace-normalized) on the cited page in the 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' section. Clause reads 'six months from (and inclusive of) the Listing Date', so the restriction includes the Listing Date and frees up ON the six-month anniversary. Date arithmetic re-checked in python: first_free_day = anniversary, last_restricted_day = anniversary - 1. Holder names cross-checked against the cornerstone table pages; all present. No longer (9/12/18/24/36-month) cornerstone variant found. Lock-up clause verbatim on p267; sampled holder names (Junshi Hong Kong, Sanjin International, Guohui HK, CHIL, WuXi Biologics Venture, Zhonghe Capital) all found on cornerstone pages 261-267.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: Rule 10.07(1)(a)-style clause located on the cited page, quote verbatim. Period 'commencing on the date by reference to which disclosure of shareholding is made in this prospectus and ending on the date which is six months from the Listing Date' - explicit inclusive endpoint ON the six-month anniversary, so last_restricted_day = anniversary and first_free_day = anniversary + 1. Date arithmetic re-checked in python. Clause verbatim on p300.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: second-period clause located on the cited page, quote verbatim. Six months commencing on the date on which the first period expires (the six-month anniversary of the Listing Date) runs to the day before the 12-month anniversary, so first_free_day = 12-month anniversary. Second period is conditional on ceasing to be a Controlling Shareholder; recorded as the standard conditional 12m controller restriction. Date arithmetic re-checked in python. Clause verbatim on p300; no 18C/18A references.",
+    "corrections": {}
+  }
+}

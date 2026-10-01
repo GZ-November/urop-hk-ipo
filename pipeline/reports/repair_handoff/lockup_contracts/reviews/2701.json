@@ -1,0 +1,19 @@
+{
+  "code": "2701.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.273: 'during the period commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date (the “Lock-up Period”)'. Explicitly inclusive of both endpoints -> last_restricted_day = 6-month anniversary itself = 2026-09-23 (listing 2026-03-23), first_free_day=2026-09-24. Correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. No Rule 10.07 reference in the 460-page text (0 hits for '10.07'). Page 233 ('SUBSTANTIAL SHAREHOLDERS'): 'our Company does not have any substantial shareholders ... Further, our Company does not have any controlling shareholders'. The only lock-ups are the Company's Rule 10.08 undertaking and its Hong Kong Underwriting Agreement undertaking (pp.279-280); no shareholder disposal undertaking exists.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. Same evidence as 6m: no controlling shareholders (p.233), no Rule 10.07, no second-period or 12-month disposal undertaking by any shareholder; the only 12-month shareholder restriction is the PRC-law prohibition on pre-IPO Shareholders (checked, not a control undertaking).",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "code": "0537.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p224 (section starts p219). Wording 'six months from (and inclusive of) the Listing Date' is duration wording with inclusive start -> frees ON the six-month anniversary: 2026-07-09 + 6m = 2027-01-09 first free, last restricted 2027-01-08. Matches candidate. Holders (HHLR Advisors, CPE Hemlock, Suzhou High-tech Zone, Hua Yuan, Sungrow Power HK, CITIC Prudential Fund, Panglin Group) confirmed in table on p221-222.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p276. Verbatim: 'in the period commencing on the date by reference to which disclosure of his or its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date' - 'ending on' is an explicit inclusive end -> first free day is anniversary+1: 2027-01-10, last restricted 2027-01-09. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p276. Second Six-Month Period commences on expiry of the First (which ends 2027-01-09 inclusive) and runs six months, ending 12 months from the Listing Date = 2027-07-09 (inclusive end) -> first free 2027-07-10. Matches candidate. Typo 'the a Controlling Shareholder' confirmed verbatim in source. Note 3 to Rule 10.07(2) pledge undertaking (p277) is not a longer disposal restriction.",
+    "corrections": {}
+  }
+}

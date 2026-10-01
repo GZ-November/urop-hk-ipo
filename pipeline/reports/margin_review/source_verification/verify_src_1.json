@@ -1,0 +1,35 @@
+{
+ "index": 1,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1412788",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1412788",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 4月17日",
+ "published_at_hkt": "2026-04-17T18:34+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong (hk.investing.com); page shows published 下午06:34, updated 下午06:45",
+ "survey_scope_wording": "富途證券、輝立證券等券商 (article: 截至4月17日，富途證券、輝立證券等券商為華勤技術借出...)",
+ "measurement_time_wording": "截至4月17日",
+ "rows_on_page": [
+  {
+   "stock": "03296",
+   "name": "華勤技術",
+   "amount_verbatim": "294.17億港元",
+   "multiple_verbatim": "超購逾64.66倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "3296.HK",
+   "ledger_amount_100m_hkd": 294.17,
+   "result": "match",
+   "detail": "page: 294.17億港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "3296.HK",
+   "subscription_close": "2026-04-20",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Brief one-stock article; complete. Page prints time with no timezone; +08:00 (HKT) assumed. Published 18:34, updated 18:45 (ledger has no published_at_hkt). All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-04-17/2026-04-17 consistent with page date."
+}

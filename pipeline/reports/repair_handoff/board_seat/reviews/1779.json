@@ -1,0 +1,55 @@
+{
+ "code": "1779.HK",
+ "reviewer": "independent reviewer subagent R1",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_candidate",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 220,
+   "printed_page": "209",
+   "quote": "Mr. Lin first joined Shenzhen Oriental Fortune Capital Investment Management Co., Ltd.",
+   "interpretation": "Non-executive Director Lin Jian (appointed 20 Oct 2022) is currently an investment director of Oriental Fortune Capital."
+  },
+  {
+   "pdf_page": 220,
+   "printed_page": "209",
+   "quote": "in 2015 and currently assumes the position of investment director.",
+   "interpretation": "Current (not past) role at the investor's parent at listing."
+  },
+  {
+   "pdf_page": 142,
+   "printed_page": "131",
+   "quote": "Each of OFC VC Investment and OFC Wuhu is a direct or indirect wholly owned subsidiary of Shenzhen Oriental Fortune Capital Investment Management Co., Ltd.",
+   "interpretation": "OFC Bohui Fund and OFC Jiaozi Fund (Pre-IPO Investors) are managed by these subsidiaries, so Lin Jian is an officer of the investor's manager group."
+  },
+  {
+   "pdf_page": 221,
+   "printed_page": "210",
+   "quote": "Ms. Gu has been the chief accountant of Shanghai Tongrui Investment Management Co., Ltd. (上海通銳投資管理有限公司) since January 2022.",
+   "interpretation": "Non-executive Director Gu Qin works for Shanghai Tongrui, whose Chinese name matches the executive partner/fund manager of Huzhou Youxing, Suzhou Lianrui, Huzhou Youcheng and Suzhou Youxin (Pre-IPO Investors)."
+  },
+  {
+   "pdf_page": 141,
+   "printed_page": "130",
+   "quote": "the executive partner and fund manager of which is Shanghai Tongrui.",
+   "interpretation": "Shanghai Tongrui is the executive partner/fund manager of four Pre-IPO Investor partnerships."
+  },
+  {
+   "pdf_page": 221,
+   "printed_page": "210",
+   "quote": "Dr. Xue has been the deputy director of Shanghai Hehong Jinghui Equity Investment Management Co., Ltd. (上海合弘景暉股權投資管理有限公司) since May 2024.",
+   "interpretation": "Non-executive Director Xue Di (appointed 19 May 2025, Series C date) is deputy director of the executive partner of Series C investor Qingdao Hongyi."
+  },
+  {
+   "pdf_page": 214,
+   "printed_page": "203",
+   "quote": "Our Board consists of 11 Directors, comprising three executive Directors, four non-executive Directors and four independent non-executive Directors.",
+   "interpretation": "Four non-executive seats at listing, three with explicit employment links to identified Pre-IPO Investor managers."
+  }
+ ],
+ "findings": "Independently read pre-IPO section (pp132-145) and all 11 directors' bios (pp214-222). Three NEDs are explicitly linked by employment to identified pre-IPO investors' managers: Lin Jian (Oriental Fortune Capital, parent of OFC Wuhu/OFC VC Investment which manage OFC Bohui Fund and OFC Jiaozi Fund), Gu Qin (Shanghai Tongrui, same Chinese name 上海通銳投資管理有限公司 at pdf p237 and p221, executive partner/manager of Huzhou Youxing, Suzhou Lianrui, Huzhou Youcheng, Suzhou Youxin), Xue Di (Shanghai Hehong Jinghui, executive partner of Qingdao Hongyi, Series C investor; same Chinese name on p143 and p221). A fourth NED Chen Kan is a partner at Qiming Venture Partners (QM282 group, Series B2/C investor) - a brand-level link only, not relied on. Candidate quotes verified verbatim, correct printed-page mapping; candidate interpretation follows the standard. Rights (p141) include veto over board matters but no explicit director-appointment right; the approval rests on seated officers of investors' managers, not on a right.",
+ "residual_uncertainty": "Nomination is not stated verbatim; the link is by employment of the NED with the investor or its GP/manager. Gu Qin's employer Shanghai Tongrui is also a substantial shareholder/connected person, so her seat may partly reflect that, but Shanghai Tongrui is itself the manager of Pre-IPO Investors, so the value is unaffected. Chen Kan's link (Qiming Venture Partners) not needed for the conclusion."
+}

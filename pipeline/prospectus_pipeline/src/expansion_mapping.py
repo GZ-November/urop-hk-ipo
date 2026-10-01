@@ -305,11 +305,11 @@ class ExpansionValueMapper:
             rec = lks.get("Controlling_Shareholder_12M_Control", {})
             return _text(rec.get("expiry_date")), "yyyy-mm-dd"
         if col_idx == 187:
-            return _num(lks.get("Cornerstone_6M", {}).get("car_m5_p5")), "0.00%"
+            return _num(lks.get("Cornerstone_Lockup", {}).get("car_m5_p5")), "0.00%"
         if col_idx == 188:
-            return _num(lks.get("Cornerstone_6M", {}).get("car_m20_p20")), "0.00%"
+            return _num(lks.get("Cornerstone_Lockup", {}).get("car_m20_p20")), "0.00%"
         if col_idx == 189:
-            return _num(lks.get("Cornerstone_6M", {}).get("volume_shock_ratio")), "0.000"
+            return _num(lks.get("Cornerstone_Lockup", {}).get("volume_shock_ratio")), "0.000"
 
         # 4. 承销辛迪加、费用分拆与银企关联 (Col 190-195)
         if col_idx == 190:

@@ -1,0 +1,35 @@
+{
+  "code": "6082.HK",
+  "listing_date": "2026-01-02",
+  "cornerstone": {
+    "exists": true,
+    "holders": "All cornerstone investors (3W Fund, Qiming Venture Partners (QM120/QM125), AMF (Aspex Master Fund), WT Asset Management, Hao Great China Focus Fund, Ping An Life Insurance, Huadeng Technology, Lion Global, CICC FT (Greenwoods OTC Swaps), MY Asian, Eastspring, UBS AM Singapore, Taikang Life, Aspirational China Growth, Charoen Pokphand, Digital China, GTJA HK (Zhonghe OTC Swaps), China Southern, Fullgoal Fund/Fullgoal HK, Yeebo, EIP, Tessy Holding Limited, New Opportunities SPC)",
+    "quote_page": 359,
+    "full_quote": "Each Cornerstone Investor has agreed that without the prior written consent of our Company, the Joint Sponsors and the Sponsor-OCs, it will not, whether directly or indirectly, at any time during the period of six months after the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to their respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-01-02",
+    "basis": "six months after the Listing Date; restricted period inclusive of Listing Date; computed as six calendar months from Listing Date",
+    "computed_first_free_day": "2026-07-02",
+    "computed_last_restricted_day": "2026-07-01",
+    "notes": "Wording is 'six months after the Listing Date' (not 'from (and inclusive of)'), and disposals require the prior written consent of the Company, the Joint Sponsors and the Sponsor-OCs."
+  },
+  "controller_6m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No separate six-month controlling shareholder undertaking disclosed. The issuer is a Chapter 18C listing; the controlling shareholder (Mr. Zhang, founder/CEO) is subject instead to a single 12-month no-disposal undertaking under Rule 18C.14 — see controller_12m. The 6-month window applies only to the Pathfinder SIIs (p437; also 'History — Lock-up' table p202)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 437,
+    "full_quote": "Pursuant to Rule 18C.14 of the Listing Rules, each of Mr. Zhang and Shanghai Biliren, as his close associate, and the Pathfinder SIIs (including QM120, Country Garden Venture Capital, Sky9 Capital, Zhuhai Gree and Shenzhen Songhe), and their respective close associates, as identified under the section headed “History, Development and Corporate Structure – Lock-up and Free Float Requirement under the Listing Rules”, has undertaken to the Stock Exchange and to us that, except pursuant to the Global Offering (including the Offer Size Adjustment Option and the Over-allotment Option), it will not, unless otherwise permitted under Rule 18C.15 of the Listing Rules: at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this Prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which it is shown by this Prospectus to be the beneficial owner",
+    "reference_date": "2026-01-02",
+    "basis": "Rule 18C.14 undertaking: period commencing on the prospectus disclosure date and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date; computed as 12 calendar months from Listing Date",
+    "computed_first_free_day": "2027-01-02",
+    "computed_last_restricted_day": "2027-01-01",
+    "notes": "Holders: Mr. Zhang (controlling shareholder), Shanghai Biliren (his close associate/employee incentive platform) and the Pathfinder SIIs (QM120, Country Garden Venture Capital, Sky9 Capital, Zhuhai Gree, Shenzhen Songhe)."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "code": "0668.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Confirmed. Listing Date 2026-07-02 per timetable (p6/p73: '9:00 a.m. on Thursday, July 2, 2026'). Quote verbatim on p216. 'period of six months after the Listing Date' = duration wording -> frees ON 2027-01-02, last restricted 2027-01-01. Uniform term for all CS investors; no longer CS term found.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p257. Rule 10.07(1)(a): 'period commencing on the date by reference to which disclosure of the shareholder's holding of Shares is made in this prospectus and ending on the date which is six months from the Listing Date' - inclusive end -> first free = anniversary+1 = 2027-01-03, last restricted 2027-01-02. Arithmetic verified in python.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p258. Rule 10.07(1)(b) as Second Six-month Period: 'six months from the expiry of the First Six-month Period', conditional on ceasing to be controlling shareholder; runs to 12 months from Listing Date, inclusive end -> first free 2027-07-03, last restricted 2027-07-02. Verified in python.",
+    "corrections": {}
+  }
+}

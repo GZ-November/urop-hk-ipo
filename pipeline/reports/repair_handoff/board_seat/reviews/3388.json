@@ -1,0 +1,43 @@
+{
+ "code": "3388.HK",
+ "reviewer": "independent reviewer subagent R2",
+ "read_independently_before_candidate": true,
+ "own_classification": "unresolved",
+ "candidate_classification": "unresolved",
+ "verdict": "approve_with_changes",
+ "approved_value": null,
+ "approved_evidence": [
+  {
+   "pdf_page": 125,
+   "printed_page": "116",
+   "quote": "redemption preference rights, pre-emptive rights, anti-dilution rights, rights of first refusal and co-sale, liquidation rights, Director appointment rights and information rights.",
+   "interpretation": "Pre-IPO Investors held a generic Director appointment right; no seated director is identified as its exercise."
+  },
+  {
+   "pdf_page": 125,
+   "printed_page": "116",
+   "quote": "All other special rights will terminate upon the completion of the Listing and no special rights granted to the Pre-IPO Investors will survive after the Listing.",
+   "interpretation": "Rights end at Listing; not affirmative evidence that no seat exists."
+  },
+  {
+   "pdf_page": 284,
+   "printed_page": "275",
+   "quote": "Mr. HUANG Hongman (黃宏滿), aged 52, has been our Director since June 26, 2023 and was redesignated as non-executive Director on July 28, 2025.",
+   "interpretation": "Sole non-executive Director at listing; bio names no investor nominator."
+  },
+  {
+   "pdf_page": 284,
+   "printed_page": "275",
+   "quote": "Since November 2015, he held several positions at Shenzhen Qianhai Zhongzhao Fund Management Co., Ltd",
+   "interpretation": "Fund-management background; the prospectus does not state any link between this firm and Qianhai Ark/Qianhai FOF or any Pre-IPO Investor."
+  },
+  {
+   "pdf_page": 369,
+   "printed_page": "",
+   "quote": "The emoluments of Mr. Huang Hongman in relation to his services rendered for the Group were borne by a series A investor",
+   "interpretation": "Indicates Huang's director pay is borne by an UNNAMED Series A investor (pre-IPO investor) - suggestive of a representative seat but institution not identified and nomination not stated."
+  }
+ ],
+ "findings": "Read Pre-IPO section (p121-128), special rights (p125) and all director bios (p280-286) before opening the candidate. Board at listing = 9 (5 exec founders/employees, 1 NED Huang Hongman, 3 INEDs with no investor link). Single Series A round (June 2021); Director appointment rights are generic and terminate at Listing; no observer right. Candidate's quotes all verified verbatim on the cited pdf pages with correct printed pages. Disagreement/addition: the candidate missed the Accountants' Report note (pdf p369, printed 'n/a' in INDEX) that Huang Hongman's emoluments for services to the Group were 'borne by a series A investor'. This is the strongest hint that Huang is an investor-side director, but the note does not name which of the eight Series A investors, and does not say he was nominated by/represents it; his bio names Qianhai Zhongzhao, which the prospectus never links to Qianhai Ark (differently named entities). Under the strict standard (identified institution; no inference beyond text) this is not 1; and there is no affirmative statement of no pre-IPO seat (a generic appointment right existed), so not 0. Value stays unknown.",
+ "residual_uncertainty": "Real possibility the true value is 1 (Huang's pay borne by a Series A investor, joined June 2023 while Series A shareholders' agreements gave Director appointment rights), but the investor is not identified in the prospectus. Recommend leaving NaN unless an external source (not permitted here) identifies the nominating investor."
+}

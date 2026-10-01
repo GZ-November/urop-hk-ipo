@@ -1,0 +1,23 @@
+{
+  "code": "6871.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. The string 'cornerstone' (any case) has zero matches across all 437 pages. Lock-ups are: PRC-law 12-month prohibition on all pre-IPO shareholders (p123), Rule 18C.14 Key Persons/Pathfinder SII undertakings, and the Rule 10.08 company undertaking. No cornerstone investors exist.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C issuer with no Controlling Shareholders; there are no Rule 10.07 references in the entire text (literal search returns zero; the loose matches on pp302/326/336/338 are numeric strings like '10,075', not the rule). The Rule 18C.14 undertaking (p273) covers Key Persons/close associates (12 months) and Pathfinder SIIs (6 months) and is recorded in controller_12m; the six-month leg applies only to Pathfinder SIIs (Broadband Chengbai, Qingkong Yinxing, p124), who are independent investors, not controlling shareholders. No missed element.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p273 under 'Undertakings by Key Persons and Pathfinder SIIs' (Rule 18C.14) - the only difference from the page text is an em-dash vs hyphen in 'Corporate Structure - Lock-up Periods'. Key Persons per the p123-124 table: Dr. Zhang and close associates Shaoxing Ziqiu/Yuzhang/Zhiqiu LPs, locked 'Commencing on the date of this prospectus and ending on expiry of 12 months from the Listing Date'; Pathfinder SIIs six months. CONVENTION CORRECTION: the quoted undertaking ends 'ON the date which is 12 months ... from the Listing Date', so the restriction runs to and including the 12-month anniversary 2027-05-18 and the first free day is 2027-05-19 (the p123 table's 'ending on expiry of 12 months' phrasing is consistent with the anniversary being the last restricted day under the quoted clause's ends-ON convention).",
+    "corrections": {
+      "first_free_day": "2027-05-19",
+      "last_restricted_day": "2027-05-18",
+      "basis": "Rule 18C.14: Key Persons and their close associates may not dispose of H Shares in the period ending ON the date which is 12 months from the Listing Date (2027-05-18, inclusive); Pathfinder SIIs free six months earlier (last restricted day 2026-11-18); first free day for Key Persons 2027-05-19"
+    }
+  }
+}

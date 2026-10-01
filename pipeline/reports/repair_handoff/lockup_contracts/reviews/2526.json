@@ -1,0 +1,19 @@
+{
+  "code": "2526.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: single 'cornerstone' occurrence (p100), figurative; no Cornerstone Placing/Investment Agreement anywhere.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p284. Explicit endpoint 'ending on the date which is six months from the Listing Date' ends ON 2026-09-30 inclusive -> first free 2026-10-01. Listing Date p33: 'on or about Monday, March 30, 2026'. Matches.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p284. Clause (b) duration wording ('six months from the expiry of the First Six-Month Period') frees ON the 12-month anniversary 2027-03-30; last restricted 2027-03-29. Note 3 pledge-notification undertaking to 'the date which is 12 [months] from the Listing Date' verified on same page. No 24/36-month controller undertakings (the p357 48-month restricted shares are pre-IPO equity award vesting, not an IPO lock-up).",
+    "corrections": {}
+  }
+}

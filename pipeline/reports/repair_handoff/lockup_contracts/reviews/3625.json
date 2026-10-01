@@ -1,0 +1,19 @@
+{
+  "code": "3625.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified absent. Candidate exists=false is correct. The only 'cornerstone' occurrence in all 436 pages is the metaphor 'the cornerstone of our sustainable growth' (p144); there is no Cornerstone Placing section.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified absent as a separate slot. Candidate exists=false is correct. There is no standalone Rule 10.07(1)(a) six-month clause: the Controlling Shareholders gave a single combined Rule 10.07 / 18C.13 undertaking running 12 months (recorded in controller_12m), which subsumes the first six months. The only 6-month lock-up is for Pathfinder SIIs (p130: 'Commencing on the date of this prospectus and ending on expiry of six months from the Listing Date' for Moqin Intelligent/Fortune Chuanghong), who are not controlling shareholders. Key persons also locked up 12 months (p129).",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Quote verbatim on p282. Combined Rules 10.07 and 18C.13 undertaking: 'in the period commencing on the date by reference to which disclosure of its/his shareholdings ... is made in this prospectus and ending on the date which is 12 months from the Listing Date'. Inclusive endpoint ON 2027-03-31, so first_free_day 2027-04-01, last_restricted_day 2027-03-31. Correct.",
+    "corrections": {}
+  }
+}

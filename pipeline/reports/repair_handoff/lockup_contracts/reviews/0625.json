@@ -1,0 +1,31 @@
+{
+  "code": "0625.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p264 (section 'RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS'). Holders verified against pp116-120 and 259 (Boyu/Exclusive Depot, Tiger Global Internet Fund IIIA, General Atlantic Singapore EDL, Tencent Huang River, Greenwoods, Taikang Life, UBS AM Singapore). CONVENTION CORRECTION: the clause explicitly marks an inclusive ENDPOINT - 'ending on (and inclusive of) the date falling six (6) months starting from and inclusive of the Listing Date'. The named end date 'the date falling six (6) months' is the six-month anniversary (2027-03-01), and it is stated to be included, so the anniversary is a restricted day and the first free day is 2027-03-02. Candidate recorded the anniversary itself as first_free_day. Same drafter usage on p303 ('ending on (including) the date which is 24 months from the Listing Date') confirms 'the date which/falling N months' = the anniversary.",
+    "corrections": {
+      "first_free_day": "2027-03-02",
+      "last_restricted_day": "2027-03-01",
+      "basis": "six (6) months counted from and inclusive of the Listing Date with an explicit inclusive endpoint: restricted period runs from (and including) the Listing Date (2026-09-01) through (and including) the date falling six (6) months, i.e. the six-month anniversary 2027-03-01; first free day 2027-03-02"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p300 under '(B) Undertakings by the Controlling Shareholders' (Rule 10.07(1); page 301 continues the sentence). CONVENTION CORRECTION: the clause 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the six-month anniversary, which is therefore the last restricted day; first free day is the day after (2027-03-02), not the anniversary itself.",
+    "corrections": {
+      "first_free_day": "2027-03-02",
+      "last_restricted_day": "2027-03-01",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period commencing on the prospectus disclosure reference date and ending ON the date which is six months from the Listing Date (2027-03-01, inclusive); first free day 2027-03-02"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p301 (Second Six-Month Period leg of Rule 10.07(1)). DATE CORRECTION: the Second Six-Month Period commences at expiry of the First Six-Month Period (which ends ON 2027-03-01) and runs six months to the 12-month anniversary 2027-09-01 (inclusive); first free day is 2027-09-02, not the anniversary. ADDITIONAL ELEMENT FOUND (not a change to this slot's dates): p303 discloses that Apex Sight Holdings Limited - itself one of the Controlling Shareholders (with Mr. Yangtian Xu, XYT Holdings and Top Plus Ventures, p35) - together with Upright Victory, Trendy Group, Floral Field and Color Park has given an additional Lock-up Undertaking over pre-IPO Shares 'commencing the Listing Date and ending on (including) the date which is 24 months from the Listing Date' (i.e. through 2028-09-01 inclusive); Pre-IPO Investors gave the same for six months. The candidate did not record this 24-month lock-up.",
+    "corrections": {
+      "first_free_day": "2027-09-02",
+      "last_restricted_day": "2027-09-01",
+      "basis": "Rule 10.07(1)(b): no disposal in the Second Six-Month Period (six months commencing from expiry of the First Six-Month Period on 2027-03-01), running to and including the 12-month anniversary 2027-09-01, to the extent it would cause cessation of Controlling Shareholder status; first free day 2027-09-02"
+    }
+  }
+}

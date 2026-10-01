@@ -1,0 +1,27 @@
+{
+  "code": "3752.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p274; holders verified in the cornerstone section pp271-272 (GF Fund, Huatai Capital, Financial Street Capital, etc.). Same '(both days inclusive)' six-month formulation as 1236/3296: no explicit end date is named, the boundary days of the six-month period are included, so the first free day is the anniversary 2027-01-09 with 2027-01-08 the last restricted day. Candidate's convention and dates are correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p279 under '(B) Undertakings by the Controlling Shareholders' (Rule 10.07(1)). CONVENTION CORRECTION: 'ending on the expiration date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2027-01-09, which is therefore the last restricted day; first free day is 2027-01-10.",
+    "corrections": {
+      "first_free_day": "2027-01-10",
+      "last_restricted_day": "2027-01-09",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the expiration date which is six months from the Listing Date (2027-01-09, inclusive); first free day 2027-01-10"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p279 (Second Six-Month Period, together with the First Six-Month Period the 'First Twelve-Month Period'). DATE CORRECTION: the Second Six-Month Period commences at expiry of the First (ends ON 2027-01-09) and runs to and including the 12-month anniversary 2027-07-09; first free day is 2027-07-10. The 'First Twelve-Month Period' naming confirms the 12-month total. P3752's p316 'twelve months' hit is a working-capital statement, not a lock-up.",
+    "corrections": {
+      "first_free_day": "2027-07-10",
+      "last_restricted_day": "2027-07-09",
+      "basis": "Rule 10.07(1)(b): no disposal in the Second Six-Month Period (with the First, the 'First Twelve-Month Period'), running to and including the 12-month anniversary 2027-07-09, to the extent it would cause cessation of Controlling Shareholder status; first free day 2027-07-10"
+    }
+  }
+}

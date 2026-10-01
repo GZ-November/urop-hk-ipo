@@ -77,7 +77,39 @@ def per_issuer(margin: pd.DataFrame) -> pd.DataFrame:
                         "first_total_b": g["margin_total_hkd"].first() / 1e9, "final_total_b": g["margin_total_hkd"].last() / 1e9,
                         "on_close": g["on_close"].last()})
     out["comparable_scope"] = g["source_group"].nunique().eq(1) if "source_group" in margin else False
+    if "available_before_deadline" in margin:
+        # Snapshots demonstrably public before the subscription deadline (earlier calendar day, or a known earlier time).
+        public = margin[margin["available_before_deadline"].astype(str).str.startswith("yes")]
+        pg = public.sort_values(["stock_code", "date"]).groupby("stock_code")
+        out["pre_deadline_n"] = pg.size().reindex(out.index).fillna(0).astype(int)
+        out["pre_deadline_last_multiple"] = pg["margin_multiple"].last().reindex(out.index)
+        out["pre_deadline_last_date"] = pg["date"].last().reindex(out.index)
+        out["unknown_timing_n"] = (margin["available_before_deadline"].astype(str).str.startswith("unknown")
+                                   .groupby(margin["stock_code"]).sum().reindex(out.index).fillna(0).astype(int))
     return out
+
+
+def coverage_selection(d_full: pd.DataFrame, per_issuer_table: pd.DataFrame, margin: pd.DataFrame) -> dict:
+    """Who has a margin source: issuers with and without sources, by month, and timing of what is observable.
+
+    Coverage comes from which listings the media surveys happened to report, so it is a selected sample.
+    Differences are descriptive; they do not identify a selection model."""
+    cov = d_full[["code", "month", "y", "lsub", "lproc", "hot"]].copy()
+    cov["has_margin"] = cov["code"].isin(per_issuer_table.index)
+    by_month = cov.groupby("month").agg(issuers=("code", "size"), with_margin=("has_margin", "sum")).reset_index()
+    by_month["share_with_margin"] = by_month["with_margin"] / by_month["issuers"]
+    rows = []
+    for col, label in (("y", "log(1+IR)"), ("lsub", "ln official public subscription ratio"), ("lproc", "ln proceeds (HK$)")):
+        a, b = cov.loc[cov.has_margin, col].dropna(), cov.loc[~cov.has_margin, col].dropna()
+        p = stats.mannwhitneyu(a, b, alternative="two-sided").pvalue if len(a) > 1 and len(b) > 1 else np.nan
+        rows.append({"variable": label, "n_with_margin": len(a), "mean_with_margin": a.mean(),
+                     "n_without_margin": len(b), "mean_without_margin": b.mean(), "mann_whitney_p": p})
+    comparison = pd.DataFrame(rows)
+    timing = margin["available_before_deadline"].value_counts().rename_axis("availability").reset_index(name="observations") \
+        if "available_before_deadline" in margin else pd.DataFrame()
+    days = margin.assign(days=margin["days_to_deadline"] if "days_to_deadline" in margin else np.nan) \
+        .groupby("days").size().rename("observations").reset_index() if "days_to_deadline" in margin else pd.DataFrame()
+    return {"by_month": by_month, "comparison": comparison, "timing": timing, "days_to_deadline": days, "cov": cov}
 
 
 def cascade_summary(pi: pd.DataFrame) -> pd.DataFrame:
@@ -207,6 +239,27 @@ def main() -> None:
             ])
         tab_margin = pd.DataFrame(rows_margin, columns=["Specification", "Coefficient (HC3 s.e.)", "HC3 p", "Wild cluster p", "N"])
 
+        # Same specifications using only the latest snapshot demonstrably public before the subscription deadline.
+        rows_pre = []
+        if "pre_deadline_last_multiple" in d_merged:
+            d_merged["lpre"] = np.log(d_merged["pre_deadline_last_multiple"].where(d_merged["pre_deadline_last_multiple"] > 0))
+            common_pre = d_merged.replace([np.inf, -np.inf], np.nan).dropna(subset=["y", "lpre", "hot", "lproc", "month"])
+            for label, xs in [("ln latest pre-deadline snapshot", ["lpre"]), ("+ April-June window", ["lpre", "hot"]),
+                              ("+ window + ln size", ["lpre", "hot", "lproc"])]:
+                r = safe_focus(common_pre, "y", xs, "lpre")
+                family.append(("Pre-deadline snapshot", label, r["p"]))
+                rows_pre.append([label, "—" if not np.isfinite(r["b"]) else f"{r['b']:.3f} ({r['se']:.3f})", f"{r['p']:.3f}",
+                                 "—" if np.isnan(r["p_wild"]) else f"{r['p_wild']:.3f}", str(r["n"]), str(r["g"]),
+                                 "—" if np.isnan(r["max_leverage"]) else f"{r['max_leverage']:.3f}", r["status"]])
+        tab_pre = pd.DataFrame(rows_pre, columns=["Specification", "Coefficient (HC3 s.e.)", "HC3 p", "Wild cluster p", "N", "G", "Max leverage", "Status"])
+        cov_g = int(d_merged.loc[d_merged["pre_deadline_last_multiple"].notna(), "month"].nunique()) if "pre_deadline_last_multiple" in d_merged else 0
+        sel = coverage_selection(d_full, pi, margin_frame)
+        sel["by_month"].to_csv(OUT / "coverage_by_month.csv", index=False)
+        sel["comparison"].to_csv(OUT / "coverage_selection.csv", index=False)
+        if len(sel["timing"]):
+            sel["timing"].to_csv(OUT / "timing_availability.csv", index=False)
+        if len(sel["days_to_deadline"]):
+            sel["days_to_deadline"].to_csv(OUT / "days_to_deadline.csv", index=False)
         close_sample = common[common["on_close"]]
         close_fit = safe_focus(close_sample, "y", ["lfinal", "hot", "lproc"], "lfinal")
         family.append(("Observed margin", "Closing-day snapshots, window + size", close_fit["p"]))
@@ -217,6 +270,26 @@ def main() -> None:
                             "HC3 estimability does not ensure reliable inference with few/unbalanced listing-month clusters. "
                             "A closing-day snapshot is not necessarily available before the subscription/pricing decision. "
                             "Non-closing observations are censored and differ in time to deadline.\n")
+        report_parts.append(f"""## Coverage and information timing
+
+Only {len(pi)} of {len(d_full)} issuers have any source-reported margin snapshot; coverage depends on which listings media surveys happened to report, so conclusions apply to covered issuers and may not generalise to the rest. Differences between covered and uncovered issuers (descriptive, Mann-Whitney, not a selection model):
+
+{to_markdown(sel['comparison'].assign(**{c: sel['comparison'][c].map('{:.3f}'.format) for c in ['mean_with_margin', 'mean_without_margin', 'mann_whitney_p']}).set_index('variable'), 'variable')}
+
+Issuers with a source by listing month:
+
+{to_markdown(sel['by_month'].assign(share_with_margin=sel['by_month']['share_with_margin'].map('{:.2f}'.format)).set_index('month'), 'month')}
+
+Publication timing of the {len(margin_frame)} observations (articles are posted after the market closes; a closing-day article was published after the 12:00 subscription deadline):
+
+{to_markdown(sel['timing'].set_index('availability'), 'availability') if len(sel['timing']) else 'Timing columns not present.'}
+
+### Latest snapshot demonstrably public before the subscription deadline
+
+{to_markdown(tab_pre.set_index('Specification'), 'Specification') if len(tab_pre) else 'No pre-deadline snapshot specification could be formed.'}
+
+These are the same exploratory associations on a smaller, selected sample with {cov_g} listing months; estimable HC3 does not make the inference reliable and the wild bootstrap cannot create independent months.
+""")
         # Table 2: Information Cascade Dynamics (Day 1 vs Final)
         cascades = cascade_summary(pi)
         mean_ratio = cascades["cascade_ratio"].mean()

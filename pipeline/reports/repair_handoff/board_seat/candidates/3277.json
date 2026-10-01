@@ -1,0 +1,71 @@
+{
+ "code": "3277.HK",
+ "pdf_sha256": "e1d4e3e028321dab8fd4539dc259ca993dae71b73c30b31f4fe4601c58491f38",
+ "classification": "unresolved",
+ "candidate_value": null,
+ "pre_ipo_investors": [
+  "22 Pre-IPO Investors via 10 June 2022 equity transfers (RMB1,084m for 10.84%; e.g. Zhuhai Qixin, Gaoling Yurun, Xianjin Zhizao, Guoce Xiangchi, Xiamen Yuanfeng, Huashun Guangzhou, Shenzhen Jiusi, Zhongke Chuangxing, Thriving Capital ...)",
+  "Founding/substantial shareholders UP OPTOTECH (25.56%, described as 'only an investor') and Luster (10.22%) - not among the defined 22 Pre-IPO Investors"
+ ],
+ "board_roster_reviewed": "Nine directors: Wang Xinyang (Chairman/CEO, ED), Zhang Yanxia (ED, spouse), Wu Qinyun (ED/CFO) - management; Yang Yi (NED since Sept 2012) - co-founder and director/vice GM of Luster, a 10.22% founding shareholder; Chu Hairong (NED, June 2025) - director of UP OPTOTECH, 25.56% substantial shareholder; Xiong Jingying (NED, June 2025) - assistant to GM of UP OPTOTECH; Wang Xinlu, Xie Ning, Gao Teng (INEDs) - academic/industry, no link. None of the three NEDs is linked to any of the 22 defined Pre-IPO Investors.",
+ "rights_and_timing": "Special rights of the 22 Pre-IPO Investors (information, repurchase, liquidation preference, MFN) were granted by the Selling Shareholders; no board seat, nomination or observer right is listed. All terminated June 2023 (information rights of four investors restored Jan 2025, terminate again on Listing). Three NED seats are held by representatives of UP OPTOTECH and Luster, which are founding shareholders/'investors' since 2012 but are not defined as Pre-IPO Investors and no nomination right is disclosed.",
+ "evidence": [
+  {
+   "pdf_page": 205,
+   "printed_page": "196",
+   "quote": "Upon Listing, our Board will consist of nine Directors, comprising three executive Directors, three non-executive Directors and three independent non-executive Directors.",
+   "supports": "Board composition.",
+   "interpretation": "Three NED seats to be tested against pre-IPO investors."
+  },
+  {
+   "pdf_page": 208,
+   "printed_page": "199",
+   "quote": "She is the co-founder of Luster, a company listed on the Shanghai Stock Exchange (stock code: 688400) and has been serving as its director and vice general manager since its establishment in August 2002.",
+   "supports": "Yang Yi (NED) is director/VGM and co-founder of Luster.",
+   "interpretation": "Linked to Luster, an original 2012 shareholder (10.22%), not a defined Pre-IPO Investor."
+  },
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "Since November 2024, he has served as a director of UP OPTOTECH, our substantial shareholder and a company listed on the Shenzhen Stock Exchange (stock code: 002338).",
+   "supports": "Chu Hairong (NED) is a director of UP OPTOTECH.",
+   "interpretation": "Linked to UP OPTOTECH, founding substantial shareholder, not a defined Pre-IPO Investor."
+  },
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "She currently serves as an assistant to the general manager of UP OPTOTECH, our substantial shareholder and a company listed on the Shenzhen Stock Exchange (stock code: 002338) since October 2024.",
+   "supports": "Xiong Jingying (NED) works at UP OPTOTECH.",
+   "interpretation": "Same as above."
+  },
+  {
+   "pdf_page": 109,
+   "printed_page": "100",
+   "quote": "UP OPTOTECH, being only an investor without any intention to obtain controlling interests over or be involved in the daily business operations of the Company, subscribed for RMB10 million in cash",
+   "supports": "UP OPTOTECH described as 'only an investor' at 2012 establishment.",
+   "interpretation": "Ambiguity: founding investor may or may not count as a pre-IPO investor institution; not in the 22 defined Pre-IPO Investors."
+  },
+  {
+   "pdf_page": 116,
+   "printed_page": "107",
+   "quote": "On June 10, 2022, through equity transfer agreements entered into by and among between certain existing Shareholders (“Selling Shareholders”) and 22 Pre-IPO Investors",
+   "supports": "Defines the 22 Pre-IPO Investors (June 2022).",
+   "interpretation": "None of the 22 is linked to a director in the text."
+  },
+  {
+   "pdf_page": 117,
+   "printed_page": "108",
+   "quote": "All special rights of the Pre-IPO Investors (including the repurchase rights) were terminated in June 2023",
+   "supports": "Special rights terminated; no board/observer right listed.",
+   "interpretation": "No nomination/observer right disclosed for the 22; absence is not proof of 0."
+  },
+  {
+   "pdf_page": 211,
+   "printed_page": "202",
+   "quote": "(ii) had no other relationship with any Directors, senior management or substantial shareholders of our Company as of the Latest Practicable Date;",
+   "supports": "Directors' relationship confirmation.",
+   "interpretation": "Not sufficient to show no investor nomination."
+  }
+ ],
+ "unresolved_reason": "Board reviewed in full. The three NEDs are representatives of UP OPTOTECH (25.56%) and Luster (10.22%), the 2012 founding shareholders, which the prospectus never classifies as Pre-IPO Investors (defined as 22 investors from June 2022) and for which no appointment/nomination right is disclosed; it is a judgement call whether founding institutional shareholders count as 'pre-IPO investor institutions'. None of the 22 defined Pre-IPO Investors is linked to a director, but the prospectus has no explicit statement that they lack board/observer rights (only lists their special rights as information, repurchase, liquidation preference, MFN), so supports_0 is not established and supports_1 rests on classifying UP OPTOTECH/Luster as pre-IPO investors."
+}

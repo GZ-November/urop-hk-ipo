@@ -1,0 +1,292 @@
+{
+ "index": 11,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1532406",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1532406",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 6月30日",
+ "published_at_hkt": "2026-06-30T20:06+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong; page shows published 20:06 (下午08:06), updated 20:45 (下午08:45)",
+ "survey_scope_wording": "截至6月30日，富途證券、輝立證券等券商爲同仁堂醫養借出42.05億港元... (verbatim first clause from page)",
+ "measurement_time_wording": "截至6月30日",
+ "rows_on_page": [
+  {
+   "stock": "02667",
+   "name": "同仁堂醫養",
+   "amount_verbatim": "42.05億港元",
+   "multiple_verbatim": "超購逾61.61倍"
+  },
+  {
+   "stock": "01770",
+   "name": "東方科脈",
+   "amount_verbatim": "16.6億港元",
+   "multiple_verbatim": "超購逾31.06倍"
+  },
+  {
+   "stock": "06880",
+   "name": "MOMENTA-W",
+   "amount_verbatim": "142.44億港元",
+   "multiple_verbatim": "超購逾23.16倍"
+  },
+  {
+   "stock": "07656",
+   "name": "瑞爲技術",
+   "amount_verbatim": "49.28億港元",
+   "multiple_verbatim": "超購逾160.98倍"
+  },
+  {
+   "stock": "07687",
+   "name": "易控智駕",
+   "amount_verbatim": "39.62億港元",
+   "multiple_verbatim": "超購逾16.24倍"
+  },
+  {
+   "stock": "08090",
+   "name": "寶蓋新材",
+   "amount_verbatim": "7.0287億港元",
+   "multiple_verbatim": "超購逾56.07倍"
+  },
+  {
+   "stock": "09971",
+   "name": "基本半導體",
+   "amount_verbatim": "232.33億港元",
+   "multiple_verbatim": "超購逾535.55倍"
+  },
+  {
+   "stock": "00537",
+   "name": "普源精電",
+   "amount_verbatim": "3.7661億港元",
+   "multiple_verbatim": "超購逾2.3倍"
+  },
+  {
+   "stock": "01377",
+   "name": "鼎泰高科",
+   "amount_verbatim": "21.68億港元",
+   "multiple_verbatim": "超購逾3.51倍"
+  },
+  {
+   "stock": "02475",
+   "name": "立訊精密",
+   "amount_verbatim": "16.95億港元",
+   "multiple_verbatim": "超購未足額"
+  },
+  {
+   "stock": "02797",
+   "name": "齊雲山食品",
+   "amount_verbatim": "0.7億港元",
+   "multiple_verbatim": "超購逾2.5倍"
+  },
+  {
+   "stock": "03752",
+   "name": "珞石機器人",
+   "amount_verbatim": "2.9444億港元",
+   "multiple_verbatim": "超購逾2.36倍"
+  },
+  {
+   "stock": "06951",
+   "name": "三環集團",
+   "amount_verbatim": "25.27億港元",
+   "multiple_verbatim": "超購逾2.52倍"
+  },
+  {
+   "stock": "02249",
+   "name": "晶合集成",
+   "amount_verbatim": "8.1895億港元",
+   "multiple_verbatim": "超購逾0.17倍"
+  },
+  {
+   "stock": "06745",
+   "name": "濱化股份",
+   "amount_verbatim": "2.3385億港元",
+   "multiple_verbatim": "超購逾0.84倍"
+  },
+  {
+   "stock": "02523",
+   "name": "永康控股",
+   "amount_verbatim": "0.5458億港元",
+   "multiple_verbatim": "超購逾2.94倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2667.HK",
+   "ledger_amount_100m_hkd": 42.05,
+   "result": "match",
+   "detail": "page: 42.05億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "1770.HK",
+   "ledger_amount_100m_hkd": 16.6,
+   "result": "match",
+   "detail": "page: 16.6億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6880.HK",
+   "ledger_amount_100m_hkd": 142.44,
+   "result": "match",
+   "detail": "page: 142.44億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "7656.HK",
+   "ledger_amount_100m_hkd": 49.28,
+   "result": "match",
+   "detail": "page: 49.28億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "7687.HK",
+   "ledger_amount_100m_hkd": 39.62,
+   "result": "match",
+   "detail": "page: 39.62億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "8090.HK",
+   "ledger_amount_100m_hkd": 7.0287,
+   "result": "match",
+   "detail": "page: 7.0287億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "9971.HK",
+   "ledger_amount_100m_hkd": 232.33,
+   "result": "match",
+   "detail": "page: 232.33億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "0537.HK",
+   "ledger_amount_100m_hkd": 3.7661,
+   "result": "match",
+   "detail": "page: 3.7661億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "1377.HK",
+   "ledger_amount_100m_hkd": 21.68,
+   "result": "match",
+   "detail": "page: 21.68億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2475.HK",
+   "ledger_amount_100m_hkd": 16.95,
+   "result": "match",
+   "detail": "page: 16.95億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2797.HK",
+   "ledger_amount_100m_hkd": 0.7,
+   "result": "match",
+   "detail": "page: 0.7億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "3752.HK",
+   "ledger_amount_100m_hkd": 2.9444,
+   "result": "match",
+   "detail": "page: 2.9444億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6951.HK",
+   "ledger_amount_100m_hkd": 25.27,
+   "result": "match",
+   "detail": "page: 25.27億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2249.HK",
+   "ledger_amount_100m_hkd": 8.1895,
+   "result": "match",
+   "detail": "page: 8.1895億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6745.HK",
+   "ledger_amount_100m_hkd": 2.3385,
+   "result": "match",
+   "detail": "page: 2.3385億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2523.HK",
+   "ledger_amount_100m_hkd": 0.5458,
+   "result": "match",
+   "detail": "page: 0.5458億港元 (unit 億, no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2667.HK",
+   "subscription_close": "2026-07-02",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "1770.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6880.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "7656.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "7687.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "8090.HK",
+   "subscription_close": "not in issuer_timeline.csv",
+   "article_date_is_close_day": null
+  },
+  {
+   "stock_code": "9971.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "0537.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "1377.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2475.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2797.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "3752.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6951.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2249.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6745.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2523.HK",
+   "subscription_close": "not in issuer_timeline.csv",
+   "article_date_is_close_day": null
+  }
+ ],
+ "ledger_published_at_hkt": null,
+ "ledger_published_at_check": "ledger_has_none",
+ "notes": "Page times printed without timezone; +08:00 assumed. Ledger has no published_at_hkt. 02523 (永康控股) is on the page and in the ledger. All 16 page rows are in ledger. Unit 億港元 on every row (WebFetch table rendering). Margin financing (孖展) by brokers, not official result."
+}

@@ -1,0 +1,23 @@
+{
+  "code": "2715.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p398, including the affiliate extension ('will cause its affiliates not to'). 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-03-09 + 6m = 2026-09-09 first free; last restricted 2026-09-08.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p413. Explicit end date in the clause: '(a) in the period commencing on the date of the prospectus and ending on the date which is six months from the Listing Date (the \"First Six-month Period\")'. The period ends ON 2026-09-09 (last restricted day); first free day is 2026-09-10. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2026-09-10",
+      "last_restricted_day": "2026-09-09",
+      "basis": "Rule 10.07(1): period ends ON the date which is six months from the Listing Date (2026-09-09); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p413. '(b) in the period of six months commencing on the date on which the period referred to in paragraph (a) above expires' states no explicit end date, so the default convention applies: first free on the 12-month anniversary 2027-03-09, last restricted 2027-03-08. Date arithmetic checked with python.",
+    "corrections": {}
+  }
+}

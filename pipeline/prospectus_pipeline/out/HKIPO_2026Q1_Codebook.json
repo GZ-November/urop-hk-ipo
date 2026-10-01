@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-30 21:45:29"
+    "generated_at": "2026-10-01 13:34:33"
   },
   "variables": [
     {
@@ -4687,22 +4687,22 @@
       "group": "lockup",
       "data_type": "string / categorical",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "香港主板上市规则第 10.07(1)(a) 条法定禁售期",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 20,
+        "valid_n": 27,
+        "missing_n": 11,
+        "fill_rate_pct": 71.05,
+        "unique_count": 19,
         "top_categories": {
-          "2026-09-30": 6,
-          "2026-07-08": 3,
-          "2026-07-09": 3,
-          "2026-08-06": 3,
-          "2026-09-09": 3
+          "2026-08-07": 3,
+          "2026-09-10": 3,
+          "2026-07-10": 2,
+          "2026-08-11": 2,
+          "2026-09-25": 2
         },
-        "summary_display": "共 20 种取值 ('2026-09-30': 6, '2026-07-08': 3, '2026-07-09': 3)"
+        "summary_display": "共 19 种取值 ('2026-08-07': 3, '2026-09-10': 3, '2026-07-10': 2)"
       }
     },
     {
@@ -4714,22 +4714,22 @@
       "group": "lockup",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "香港主板上市规则第 10.07(1)(b) 条法定禁售期",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 21,
+        "valid_n": 28,
+        "missing_n": 10,
+        "fill_rate_pct": 73.68,
+        "unique_count": 24,
         "top_categories": {
-          "2027-03-30": 4,
-          "2027-01-08": 3,
-          "2027-01-09": 3,
-          "2027-02-06": 3,
-          "2027-03-09": 3
+          "2027-01-10": 2,
+          "2027-02-06": 2,
+          "2027-03-09": 2,
+          "2027-03-31": 2,
+          "2027-01-03": 1
         },
-        "summary_display": "共 21 种取值 ('2027-03-30': 4, '2027-01-08': 3, '2027-01-09': 3)"
+        "summary_display": "共 24 种取值 ('2027-01-10': 2, '2027-02-06': 2, '2027-03-09': 2)"
       }
     },
     {
@@ -4745,17 +4745,17 @@
       "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 26,
-        "missing_n": 12,
-        "fill_rate_pct": 68.42,
-        "mean": -0.05914065384615384,
-        "std": 0.1947706448625033,
-        "median": -0.050792500000000004,
+        "valid_n": 25,
+        "missing_n": 13,
+        "fill_rate_pct": 65.79,
+        "mean": -0.07257856,
+        "std": 0.20798875015031462,
+        "median": -0.052449,
         "min": -0.53268,
-        "q25": -0.139585,
+        "q25": -0.170866,
         "q75": 0.08648,
         "max": 0.35202,
-        "summary_display": "均值 -0.06 | 中位数 -0.05 | 区间 [-0.53, 0.35]"
+        "summary_display": "均值 -0.07 | 中位数 -0.05 | 区间 [-0.53, 0.35]"
       }
     },
     {
@@ -4771,17 +4771,17 @@
       "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 15,
-        "fill_rate_pct": 60.53,
-        "mean": -0.03947965217391305,
-        "std": 0.25386708007781783,
-        "median": -0.088614,
+        "valid_n": 22,
+        "missing_n": 16,
+        "fill_rate_pct": 57.89,
+        "mean": -0.05307718181818182,
+        "std": 0.2508350984128316,
+        "median": -0.09240899999999999,
         "min": -0.6729,
         "q25": -0.204566,
-        "q75": 0.18255,
+        "q75": 0.15117,
         "max": 0.476928,
-        "summary_display": "均值 -0.04 | 中位数 -0.09 | 区间 [-0.67, 0.48]"
+        "summary_display": "均值 -0.05 | 中位数 -0.09 | 区间 [-0.67, 0.48]"
       }
     },
     {
@@ -4797,17 +4797,17 @@
       "coverage_status": "Adequate",
       "source": "二级市场日行情与基石解禁日确定性派生",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 15,
-        "fill_rate_pct": 60.53,
-        "mean": 1.2538260869565216,
-        "std": 0.5846034446275148,
-        "median": 1.1393,
+        "valid_n": 22,
+        "missing_n": 16,
+        "fill_rate_pct": 57.89,
+        "mean": 1.25095,
+        "std": 0.5811328614172904,
+        "median": 1.1501000000000001,
         "min": 0.3844,
         "q25": 0.9803,
         "q75": 1.4033,
         "max": 3.1625,
-        "summary_display": "均值 1.25 | 中位数 1.14 | 区间 [0.38, 3.16]"
+        "summary_display": "均值 1.25 | 中位数 1.15 | 区间 [0.38, 3.16]"
       }
     },
     {

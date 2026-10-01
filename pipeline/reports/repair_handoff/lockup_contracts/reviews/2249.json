@@ -1,0 +1,19 @@
+{
+  "code": "2249.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p238. 'six months from (and inclusive of) the Listing Date' -> frees ON the anniversary: 2026-07-10 + 6m = 2027-01-10 first free, last restricted 2027-01-09. Matches candidate. Holder names confirmed in cornerstone table.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p249. 'ending on the date which is six months from the Listing Date' - explicit inclusive end -> first free 2027-01-11, last restricted 2027-01-10. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p249. Second six-month period from expiry of the First -> ends 12 months from Listing Date 2027-07-10 (inclusive) -> first free 2027-07-11. Matches candidate. Separately noted (out of slot scope): Huaqin Technology's A Shares are locked to 2028-08-26 and Hefei Qinhe's for 36 months from 2026-05-19 (p108) - these holders are not Controlling Shareholders (controlling shareholder is Hefei Construction Investment, 39.71%).",
+    "corrections": {}
+  }
+}

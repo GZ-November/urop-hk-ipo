@@ -1,0 +1,36 @@
+{
+  "code": "2729.HK",
+  "listing_date": "2026-03-24",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Searched case-insensitive 'cornerstone' across all 466 pages of HKIPO-MB2729.jsonl: all hits are figurative uses ('cornerstone of intralogistics automation', p12/p131/p144/p147) or the pre-IPO investor names 'Anhui Cornerstone' / 'Linghui Cornerstone' (the 'Cornerstone Funds', pp110, 115, 124), which are pre-IPO investors, not offering cornerstone investors. No cornerstone placing or cornerstone lock-up section exists."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 285,
+    "full_quote": "each member of the Pre-Listing Concert Parties has undertaken to the Stock Exchange, the Joint Sponsors and to our Company that, save as disclosed in this Prospectus and except pursuant to the Global Offering and the Over-allotment Option, he or she or it will not, and shall procure that none of his or her or its close associates will, without the prior written consent of the Stock Exchange or unless otherwise permitted under the Listing Rules, in the period commencing on the date by reference to which disclosure of his or her or its holding of H Shares is made in this Prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any H Shares in respect of which he or she or it is shown in the Prospectus to be the beneficial owner.",
+    "basis": "Rule 10.07(1): no disposal in the First Six-month Period ending on the date which is six months from the Listing Date",
+    "notes": "Undertaking given by the Pre-Listing Concert Parties (voting power ~40.30% pre-Listing) rather than named 'Controlling Shareholders': the issuer has no single controlling shareholder; the Single Largest Group of Shareholders controls ~27.26% post-Listing (p286). Undertaking given 'In accordance with Rule 10.07(1) of the Listing Rules and Paragraph 7 of Chapter 4.13 of the Guide for New Listing Applicants'.",
+    "reference_date": "2026-03-24",
+    "computed_first_free_day": "2026-09-24",
+    "computed_last_restricted_day": "2026-09-23"
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "The 12-month (second six-month period) control undertaking does not exist and its non-application is explicit on page 286: 'Accordingly, pursuant to Paragraph 7 of Chapter 4.13 of the Guide for New Listing Applicants, each member of the Pre-Listing Concert Parties is subject to the lock-up requirements pursuant to Rule 10.07 of the Listing Rules for the First Six-month Period, but not the period of six months commencing on the date on which the First Six-month Period expires.' Searched pages 285-286 (Rule 10.07 section) and '12 months from' hits across the document; no 12-month disposal/control undertaking by any shareholder group."
+  }
+}

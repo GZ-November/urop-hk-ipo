@@ -1,0 +1,64 @@
+{
+ "code": "1956.HK",
+ "pdf_sha256": "bcce7c197035ba29aecfc1234240816f5cc33b63b1b231d78c68b6222cf9cb66",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Shenzhen Capital Group Co., Ltd. (SCGC) and Hongtu Tech (SCGC Investors, ~4.53% at LPD) - Series C, July 2020 (SCGC subscribed 2,033,862 shares for RMB40.0m)",
+  "Other Pre-IPO Investors across Series A (May 2018) to Series E+ (Sept 2022): Zhongke Chuangxing-I, Ruide Huihuang, Lanhai Fangzhou, Hengbang Zhiyuan No.5, Fuzhou Youbang, CDBC MTU Fund (5.79%), China Internet Investment, Infotech, Shenbao Yiben, CMB Yongxiang/Tongming, Guoke Dacheng/Xinxing, CCTV Integrated Media, ZGC Science City, etc. (about 20 principal Pre-IPO Investors described)"
+ ],
+ "board_roster_reviewed": "At listing nine directors: Wang Lei (Chairman, ED), Luo Yin (ED/CEO), Qu Baoyu (ED), Cao Jia (ED/CTO), Zhang Xina (ED) - all management/founders, no investor link disclosed; Zhou Jun (NED, appointed Sept 2020, re-designated NED June 2025) - executive general manager of Shenzhen Capital Group Co., Ltd. (SCGC), a Series C Pre-IPO Investor -> LINKED; Xu Huansheng, Gu Fenling, Jiang Xianling (INEDs, appointed Feb 2023) - academic/corporate backgrounds, no investor link.",
+ "rights_and_timing": "Seat: Zhou Jun (NED) is an SCGC senior executive and was appointed director in September 2020, i.e. two months after SCGC's Series C investment (July 30, 2020); he sits on the Board at listing. The prospectus does not use the word 'nominated' for him, so the link is via employment/representative status of an identified pre-IPO investor (SCGC). Observer right: Pre-IPO Investors had a right to appoint a board observer (exercised before termination) and an information right; no holder of an observer seat is named. All special rights terminated on the day before the first filing (June 2025) and, if reinstated, cease again on Listing; the non-executive director seat itself is a seat (not a right) and continues after listing.",
+ "evidence": [
+  {
+   "pdf_page": 210,
+   "printed_page": "201",
+   "quote": "Upon Listing, the Board will consist of nine Directors, comprising five executive Director, one non-executive Director and three independent non-executive Directors.",
+   "supports": "Board composition at listing: one NED (Zhou Jun).",
+   "interpretation": "Identifies the only non-executive (non-independent) seat."
+  },
+  {
+   "pdf_page": 212,
+   "printed_page": "203",
+   "quote": "Since 2007, he has held various positions at Shenzhen Capital Group Co., Ltd., including investment manager, deputy general manager of the North China headquarters, and currently serves as the executive general manager. He was appointed as our Director in September 2020 and was re-designated as non-executive Director in June 2025.",
+   "supports": "Zhou Jun (NED) is executive general manager of Shenzhen Capital Group Co., Ltd.; appointed director Sept 2020.",
+   "interpretation": "Director explicitly a senior executive of SCGC, which is an identified Pre-IPO Investor -> board seat linked to pre-IPO investor."
+  },
+  {
+   "pdf_page": 107,
+   "printed_page": "98",
+   "quote": "On July 30, 2020, our Company and its then Shareholders entered into an investment agreement with Shenzhen Capital Group Co., Ltd.",
+   "supports": "SCGC invested in the Series C Financing (July 2020).",
+   "interpretation": "Establishes SCGC as a pre-IPO investor whose investment preceded Zhou Jun's Sept 2020 appointment."
+  },
+  {
+   "pdf_page": 108,
+   "printed_page": "99",
+   "quote": "(a) SCGC subscribed for 2,033,862 newly issued Shares for a consideration of RMB40.0 million",
+   "supports": "SCGC subscription amount in Series C.",
+   "interpretation": "Confirms SCGC is an actual pre-IPO investor."
+  },
+  {
+   "pdf_page": 120,
+   "printed_page": "111",
+   "quote": "As of the Latest Practicable Date, the SCGC Investors held approximately 4.53% of our total issued Shares.",
+   "supports": "SCGC and Hongtu Tech still hold ~4.53% at LPD.",
+   "interpretation": "SCGC remains a shareholder/pre-IPO investor at prospectus date."
+  },
+  {
+   "pdf_page": 129,
+   "printed_page": "120",
+   "quote": "Save for those special rights granted by the Company for the investors to supervise/monitor the operation of the Company (i.e. information right, the right to appoint a board observer), none of the other special rights",
+   "supports": "Pre-IPO Investors held a right to appoint a board observer, exercised before termination.",
+   "interpretation": "Observer right existed pre-filing; no named observer at listing; right terminates."
+  },
+  {
+   "pdf_page": 130,
+   "printed_page": "121",
+   "quote": "all other special rights granted to the Pre-IPO Investors have been suspended upon the First Filing and shall cease to be effective and be discontinued upon Listing",
+   "supports": "Special rights (incl. observer/information) cease upon Listing.",
+   "interpretation": "Timing: rights end at listing; the Zhou Jun director seat is independent of these rights."
+  }
+ ],
+ "unresolved_reason": ""
+}

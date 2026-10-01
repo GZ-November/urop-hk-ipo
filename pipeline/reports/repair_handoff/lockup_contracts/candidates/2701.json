@@ -1,0 +1,35 @@
+{
+  "code": "2701.HK",
+  "listing_date": "2026-03-23",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Guohua Life Insurance Co., Ltd.; Ms. Christine Tai (戴婉琴); Mr. An Jiangbo (安江波); Sunwoda Treasury (Hong Kong) Limited",
+    "quote_page": 273,
+    "full_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of each of the Company, the Overall Coordinators and the Sole Sponsor, it will not, whether directly or indirectly, at any time during the period commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date (the “Lock-up Period”), directly or indirectly (i) dispose of, in any way, any of the Offer Shares it has subscribed for or any interest in any company or entity holding any of such Offer Shares pursuant to the relevant Cornerstone Investment Agreements; (ii) allow itself to undergo a change of control (as defined in the Takeovers Code) at the level of its ultimate beneficial owner; (iii) enter into any transactions directly or indirectly with the same economic effect as any aforesaid transaction, or (iv) agree or contract to, or publicly announce any intention to, enter into any such transaction described in (i), (ii) or (iii) above, or save for certain circumstances.",
+    "reference_date": "2026-03-23",
+    "basis": "period commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date — explicitly inclusive of both endpoints, so the last restricted day is the six-month anniversary itself and the first free day is the day after",
+    "computed_first_free_day": "2026-09-24",
+    "computed_last_restricted_day": "2026-09-23",
+    "notes": "Lock-up also prohibits a change of control of the cornerstone investor at ultimate-beneficial-owner level. H-share listing by an A+H dual-listed issuer (A Shares on ChiNext since April 30, 2010)."
+  },
+  "controller_6m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07 or shareholder-side disposal undertaking anywhere in the prospectus. Searched '10.07', 'Controlling Shareholder', 'Single Largest Shareholder' + 'undertak', 'not dispose', 'lock' across all 460 pages. 2701 is an A+H dual-listed issuer (A Shares on ChiNext, code 300077); the Undertakings section (pp. 279-280) contains only the Company's Rule 10.08 undertaking and Company-only undertakings under the Hong Kong Underwriting Agreement. Mr. Sun is the Single Largest Shareholder with only 2.65% (p. 104) and gives no undertaking."
+  },
+  "controller_12m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Same search as controller_6m: no 12-month control-maintenance undertaking and no shareholder-side undertakings of any kind exist in the prospectus."
+  }
+}

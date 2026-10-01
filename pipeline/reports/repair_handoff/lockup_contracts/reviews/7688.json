@@ -1,0 +1,19 @@
+{
+  "code": "7688.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Confirmed. Listing Date 2026-05-20 (p6/p73: '9:00 a.m. on Wednesday, 20 May 2026'). Quote verbatim on p231. 'six months from and including the Listing Date' -> frees ON the six-month anniversary 2026-11-20, last restricted 2026-11-19.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p294. Rule 10.07(1)(a): 'in the period commencing on the date by reference to which disclosure of its/his shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date (the \"First Six-Month Period\")' - inclusive end -> first free 2026-11-21, last restricted 2026-11-20. Pledge carve-out for authorised institutions (Note 2 to Rule 10.07(2)) confirmed in the quote; pp.295-296 contain only pledge-notification and underwriting-agreement items.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p294. Rule 10.07(1)(b): 'in the period of six months commencing on the date on which the First Six-month Period expires ... would cease to be a controlling shareholder' - runs to 12 months from Listing Date -> first free 2027-05-21, last restricted 2027-05-20. Verified in python.",
+    "corrections": {}
+  }
+}

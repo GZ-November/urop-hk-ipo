@@ -1,0 +1,19 @@
+{
+  "code": "2723.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed: case-insensitive search for 'cornerstone' across all pages yields only one, unrelated hit ('cornerstone of our product strategy', p156). No cornerstone placing/investors in this offering.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p281. 'ending on the date which is six months from the Listing Date' - explicit inclusive end: 2026-05-27 + 6m = 2026-11-27 last restricted, first free 2026-11-28. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p281. Second six-month period from expiry of the First -> ends 12 months from Listing Date 2027-05-27 (inclusive) -> first free 2027-05-28. Matches candidate. PRC Company Law 12-month restriction on pre-Global Offering shares (p235) is a statutory restriction, not a 10.07(1)(b) undertaking.",
+    "corrections": {}
+  }
+}

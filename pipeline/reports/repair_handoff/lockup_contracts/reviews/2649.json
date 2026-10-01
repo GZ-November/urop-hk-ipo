@@ -1,0 +1,19 @@
+{
+  "code": "2649.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: case-insensitive 'cornerstone' search across all 605 pages returns zero hits. Listing Date 2026-03-09 confirmed on p6 ('9:00 a.m. on Monday, March 9, 2026').",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p395. Rule 10.07(1) + Chapter 3.13 of the Guide (applicant's cited chapter): 'in the period commencing from the date by reference to which disclosure of its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date' - inclusive end -> first free 2026-09-10, last restricted 2026-09-09. Quote indeed breaks mid-sentence at the page break and continues on p396 ('enter into any agreement to dispose of...') as the candidate notes.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p396 (verbatim typo 'in the period of six months period commencing' confirmed in the text cache). Rule 10.07(1)(b): second six-month period commencing on expiry of paragraph (i), conditional on ceasing to be a/the Controlling Shareholder(s) -> runs to 12 months from Listing Date; first free 2027-03-10, last restricted 2027-03-09. p399 contains only the Note 2 pledge-notification undertaking (12 months, notification duty only).",
+    "corrections": {}
+  }
+}

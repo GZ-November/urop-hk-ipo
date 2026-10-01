@@ -1,0 +1,23 @@
+{
+  "code": "2672.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p329. DEVIATION confirmed verbatim: cornerstone lock-up is 'the period of 12 months following the Listing Date' and requires prior written consent of the Company, the Joint Sponsors and the Overall Coordinators. No explicit end date, so default convention: first free ON the 12-month anniversary 2027-06-29; last restricted 2027-06-28. Correctly flagged as 12 months, not the standard six.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p346. Explicit end date in the clause: 'in the period commencing on the date by reference to which disclosure of the Shareholder's holding of H Shares is made in this prospectus and ending on the date which is six months from the Listing Date (the \"First Six-month Period\")'. The period ends ON 2026-12-29 (last restricted day); first free day is 2026-12-30. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2026-12-30",
+      "last_restricted_day": "2026-12-29",
+      "basis": "Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-12-29); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p346. '(ii) in the period of six months from the expiry of the First Six-month Period (the \"Second Six-month Period\")' states no explicit end date, so the default convention applies: first free on the 12-month anniversary 2027-06-29, last restricted 2027-06-28. Note 3 to Rule 10.07(2) pledge undertaking (12 months, p346) also exists but is not a disposal restriction. Date arithmetic checked with python.",
+    "corrections": {}
+  }
+}

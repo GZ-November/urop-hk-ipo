@@ -1,0 +1,37 @@
+{
+  "code": "2706.HK",
+  "listing_date": "2026-02-13",
+  "cornerstone": {
+    "exists": true,
+    "holders": "JSC International Investment Fund SPC (acting for and on behalf of Etown SP), JINGSHENG HENGXING, Infini, Mega Prime",
+    "quote_page": 425,
+    "full_quote": "RESTRICTIONS ON THE CORNERSTONE INVESTORS Each of Infini and Mega Prime has agreed that without the prior written consent of our Company, the Joint Sponsors and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of 6 months following the Listing Date, dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investor, including the lock-up period restriction. JINGSHENG HENGXING has agreed that without the prior written consent of our Company, the Joint Sponsors and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of 9 months following the Listing Date",
+    "reference_date": "2026-02-13",
+    "basis": "Mixed cornerstone terms: Infini and Mega Prime - 6 months following the Listing Date (duration wording, frees up on the six-month anniversary, 2026-08-13); JINGSHENG HENGXING - 9 months following the Listing Date (frees up on 2026-11-13). computed_* fields use the 6-month term.",
+    "computed_first_free_day": "2026-08-13",
+    "computed_last_restricted_day": "2026-08-12",
+    "notes": "JINGSHENG HENGXING has a longer 9-month lock-up; its computed_first_free_day would be 2026-11-13 (last restricted day 2026-11-12)."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "Mr. Yang (Mr. Yang Zaifei), executive Director, chief executive officer and member of the Single Largest Shareholders Group",
+    "quote_page": 441,
+    "full_quote": "(B) Undertakings by Mr. Yang Mr. Yang has undertaken to each of the Company, the Joint Sponsors, the Overall Coordinators, the Joint Global Coordinators, the Joint Bookrunners, the Joint Lead Managers, the Hong Kong Underwriters and the Capital Market Intermediaries that he will not, without the prior written consent of the Joint Sponsors and the Overall Coordinators (for themselves and on behalf of the Hong Kong Underwriters) and unless in compliance with the requirements of the Listing Rules: (a) during the First Six-Month Period, (i) sell, offer to sell, contract or agree to sell, mortgage, charge, pledge, hypothecate, lend, grant or sell any option, warrant, contract or right to purchase, grant or purchase any option, warrant, contract or right to sell, or otherwise transfer or dispose of or create an encumbrance over, or agree to transfer or dispose of or create an encumbrance over, either directly or indirectly, conditionally or unconditionally, any Shares or other securities of the Company or any interest therein (including any securities convertible into or exchangeable or exercisable for or that represent the right to receive, or any warrants or other rights to purchase, any Shares or other securities of the Company) beneficially owned by it/him/her as of the Listing Date (the “Locked-up Securities”)",
+    "reference_date": "2026-02-13",
+    "basis": "NOT a Rule 10.07 Stock Exchange undertaking: this is the undertaking by Mr. Yang under the Hong Kong Underwriting Agreement. The First Six-Month Period (defined on p439) runs from the date of the Hong Kong Underwriting Agreement and ends on, and includes, the date that is six months after the Listing Date; inclusive end, so first free day is the day after the six-month anniversary",
+    "computed_first_free_day": "2026-08-14",
+    "computed_last_restricted_day": "2026-08-13",
+    "notes": "No Rule 10.07 undertaking exists anywhere in this prospectus (zero hits for '10.07'). The only member of the Single Largest Shareholders Group with a six-month disposal undertaking under the underwriting agreement is Mr. Yang; the Second Six-Month Period clause for Mr. Yang is only an orderly-market obligation, not a disposal ban."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "All holders of Shares issued prior to the Listing (including the Single Largest Shareholders Group: Mr. Ren, Mr. Yang, Haikuo Fenxiang, Haikuo Chengzhang)",
+    "quote_page": 353,
+    "full_quote": "RESTRICTION OF SHARE TRANSFER Pursuant to the PRC Company Law, our Shares issued prior to the Listing shall not be transferred within 12 months from the Listing Date.",
+    "reference_date": "2026-02-13",
+    "basis": "PRC Company Law statutory restriction (not a Rule 10.07(1)(b) control undertaking): Shares issued prior to the Listing shall not be transferred within 12 months from the Listing Date; duration wording frees up on the 12-month anniversary",
+    "computed_first_free_day": "2027-02-13",
+    "computed_last_restricted_day": "2027-02-12",
+    "notes": "No Rule 10.07(1)(b) control-maintenance undertaking exists. p199 adds: 'All existing Shareholders (including the Pre-IPO Investors) shall not dispose any of the Shares held by them within the 12 months following the Listing Date as required under the applicable PRC laws.'"
+  }
+}

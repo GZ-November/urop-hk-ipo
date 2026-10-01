@@ -1,0 +1,71 @@
+{
+ "index": 16,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1541804",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1541804",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 7月7日",
+ "published_at_hkt": "2026-07-07T19:57+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong; page shows 2026年07月07日 下午07:57, updated 下午08:15",
+ "survey_scope_wording": "截至7月7日，富途證券、輝立證券等券商爲晶合集成借出1645.34億港元，超購逾234.65倍；爲濱化股份借出152.82億港元，超購逾119.90倍；爲永康控股借出439.92億港元，超購逾3179.94倍。",
+ "measurement_time_wording": "截至7月7日",
+ "rows_on_page": [
+  {
+   "stock": "02249",
+   "name": "晶合集成",
+   "amount_verbatim": "1645.34億港元",
+   "multiple_verbatim": "超購逾234.65倍"
+  },
+  {
+   "stock": "06745",
+   "name": "濱化股份",
+   "amount_verbatim": "152.82億港元",
+   "multiple_verbatim": "超購逾119.90倍"
+  },
+  {
+   "stock": "02523",
+   "name": "永康控股",
+   "amount_verbatim": "439.92億港元",
+   "multiple_verbatim": "超購逾3179.94倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2249.HK",
+   "ledger_amount_100m_hkd": 1645.34,
+   "result": "match",
+   "detail": "page: 1645.34億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6745.HK",
+   "ledger_amount_100m_hkd": 152.82,
+   "result": "match",
+   "detail": "page: 152.82億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2523.HK",
+   "ledger_amount_100m_hkd": null,
+   "result": "page_row_missing_from_ledger",
+   "detail": "page: 439.92億港元, 超購逾3179.94倍"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2249.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "6745.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "2523.HK",
+   "subscription_close": "not in issuer_timeline.csv",
+   "article_date_is_close_day": null
+  }
+ ],
+ "ledger_published_at_hkt": null,
+ "ledger_published_at_check": "ledger_has_none",
+ "notes": "Verbatim sentence obtained on re-fetch (first fetch mis-rendered units as billion; verbatim shows 億港元). LEDGER OMISSION: 02523 永康控股 (439.92億港元, 超購逾3179.94倍) is on the page but absent from ledger obs. 02523 is not in issuer_timeline.csv (no close date)."
+}

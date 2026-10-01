@@ -1,0 +1,23 @@
+{
+  "code": "2729.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. All 'cornerstone' hits are figurative ('cornerstone of intralogistics automation', pp12/131/144/147) or the pre-IPO investor names 'Anhui Cornerstone'/'Linghui Cornerstone' (the 'Cornerstone Funds', pp110/115/124), which are NOT offering cornerstone investors. No cornerstone section or cornerstone lock-up exists.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p285 under 'Undertakings by the Pre-Listing Concert Parties' (Rule 10.07(1) + Paragraph 7 of Chapter 4.13 of the Guide). The issuer has no Controlling Shareholder (Single Largest Group ~27.26% post-listing, p286); the Pre-Listing Concert Parties are the correct Rule 10.07 analog and the candidate's choice is sound. CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-month Period ON the anniversary 2026-09-24, which is therefore the last restricted day; first free day is 2026-09-25.",
+    "corrections": {
+      "first_free_day": "2026-09-25",
+      "last_restricted_day": "2026-09-24",
+      "basis": "Rule 10.07(1)/Guide Ch 4.13 para 7: no disposal by Pre-Listing Concert Parties in the First Six-month Period ending ON the date which is six months from the Listing Date (2026-09-24, inclusive); first free day 2026-09-25"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED and explicit in the document: p286 states the Pre-Listing Concert Parties 'is subject to the lock-up requirements pursuant to Rule 10.07 of the Listing Rules for the First Six-month Period, but not the period of six months commencing on the date on which the First Six-month Period expires.' The p287 'Second Six-Month Period' hit belongs to the Company's own underwriting-agreement undertaking, not a controller 12-month restriction. No missed element.",
+    "corrections": {}
+  }
+}

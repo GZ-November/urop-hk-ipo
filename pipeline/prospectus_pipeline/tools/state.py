@@ -22,6 +22,26 @@ def get_records_by_code(cfg, codes, target):
     return by_code
 
 
+def record_review(cfg, target, code, rec, verdict, reviewer, note="", evidence_ref=""):
+    """Write a hash-bound review record that names the reviewer and what was reviewed.
+
+    A pass requires a named reviewer; the record keeps the reviewed payload hash so a later
+    change to the extraction (a new hash) invalidates it. This function does not judge the
+    semantics: the reviewer must have read the original disclosure independently of whoever
+    produced the extraction.
+    """
+    reviewer = (reviewer or "").strip()
+    if verdict == "pass" and not reviewer:
+        raise ValueError(f"{code}: a passing review must name the reviewer (--reviewer)")
+    require(cfg, target, code, rec["hash"], "extracted")
+    require(cfg, target, code, rec["hash"], "validated")
+    payload = {**rec, "code": code, "target": target}
+    save_record(cfg, target, code, "reviewed",
+                {**payload, "verdict": verdict, "gate_pass": verdict == "pass",
+                 "reviewer": reviewer, "review_note": note, "review_evidence_ref": evidence_ref,
+                 "reviewed_payload_hash": rec["hash"]})
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("stage", choices=["extracted", "reviewed"])
@@ -29,6 +49,9 @@ def main():
     ap.add_argument("--code", nargs="*", default=None, help="一个或多个股票代码，如 6082.HK")
     ap.add_argument("--all", action="store_true", default=False, help="处理全部公司")
     ap.add_argument("--verdict", choices=["pass", "fail"])
+    ap.add_argument("--reviewer", help="reviewed 阶段必填：实际独立复核人/角色（不得是生成该提取的过程）")
+    ap.add_argument("--review-note", default="", help="复核结论摘要")
+    ap.add_argument("--evidence-ref", default="", help="复核记录位置，如 evidence_review.csv 行或文件")
     ap.add_argument("--workbook", help="目标工作簿路径")
     ap.add_argument("--period-start", help="纳入样本起始日期 YYYY-MM-DD")
     ap.add_argument("--period-end", help="纳入样本截止日期 YYYY-MM-DD")
@@ -59,12 +82,11 @@ def main():
             save_record(cfg, args.target, code, "extracted", payload)
             print(f"RECORDED extracted {code} {rec['hash']}")
         else:
-            require(cfg, args.target, code, rec["hash"], "extracted")
-            require(cfg, args.target, code, rec["hash"], "validated")
-            passed = args.verdict == "pass"
-            save_record(cfg, args.target, code, "reviewed",
-                        {**payload, "verdict": args.verdict, "gate_pass": passed})
-            print(f"RECORDED reviewed={args.verdict} {code} {rec['hash']}")
+            if not args.verdict:
+                ap.error("reviewed 阶段必须指定 --verdict")
+            record_review(cfg, args.target, code, rec, args.verdict, args.reviewer,
+                          args.review_note, args.evidence_ref)
+            print(f"RECORDED reviewed={args.verdict} {code} {rec['hash']} by {args.reviewer or '-'}")
     return 0
 
 

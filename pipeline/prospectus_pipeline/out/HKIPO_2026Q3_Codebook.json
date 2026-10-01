@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-09-30 21:45:53"
+    "generated_at": "2026-10-01 13:34:35"
   },
   "variables": [
     {
@@ -4565,22 +4565,22 @@
       "group": "lockup",
       "data_type": "string / categorical",
       "timing_convention": "Post-IPO lockup expiration events",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "香港主板上市规则第 10.07(1)(a) 条法定禁售期",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 12,
+        "valid_n": 17,
+        "missing_n": 6,
+        "fill_rate_pct": 73.91,
+        "unique_count": 10,
         "top_categories": {
-          "2027-01-09": 7,
-          "2027-01-08": 4,
-          "2027-01-10": 2,
-          "2027-03-01": 2,
-          "2027-01-02": 1
+          "2027-01-10": 7,
+          "2027-01-09": 2,
+          "2027-01-03": 1,
+          "2027-01-08": 1,
+          "2027-01-11": 1
         },
-        "summary_display": "共 12 种取值 ('2027-01-09': 7, '2027-01-08': 4, '2027-01-10': 2)"
+        "summary_display": "共 10 种取值 ('2027-01-10': 7, '2027-01-09': 2, '2027-01-03': 1)"
       }
     },
     {
@@ -4592,22 +4592,22 @@
       "group": "lockup",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "香港主板上市规则第 10.07(1)(b) 条法定禁售期",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 12,
+        "valid_n": 19,
+        "missing_n": 4,
+        "fill_rate_pct": 82.61,
+        "unique_count": 9,
         "top_categories": {
-          "2027-07-09": 7,
-          "2027-07-08": 4,
-          "2027-07-10": 2,
-          "2027-09-01": 2,
-          "2027-07-02": 1
+          "2027-07-09": 6,
+          "2027-07-10": 5,
+          "2027-09-02": 2,
+          "2027-07-03": 1,
+          "2027-07-07": 1
         },
-        "summary_display": "共 12 种取值 ('2027-07-09': 7, '2027-07-08': 4, '2027-07-10': 2)"
+        "summary_display": "共 9 种取值 ('2027-07-09': 6, '2027-07-10': 5, '2027-09-02': 2)"
       }
     },
     {

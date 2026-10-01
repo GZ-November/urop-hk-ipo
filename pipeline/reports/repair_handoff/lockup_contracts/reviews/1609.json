@@ -1,0 +1,23 @@
+{
+  "code": "1609.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p230 ('RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS'; wording 'six months from and inclusive of the Listing Date' without parentheses, as the candidate notes). Frees up ON the anniversary: 2026-05-05 + 6m = 2026-11-05 first free; last restricted 2026-11-04. No other/longer cornerstone regime found.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p239. The clause states an explicit end date: 'in the period commencing on the date by reference to which disclosure of his or its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date'. The period ends ON 2026-11-05, so 2026-11-05 is the last restricted day and the first free day is 2026-11-06. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2026-11-06",
+      "last_restricted_day": "2026-11-05",
+      "basis": "Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-11-05); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p239. '(b) in the period of six months commencing on the date on which the period referred to in the above paragraph (a) expires' states no explicit end date, so the default convention applies: first free on the 12-month anniversary 2027-05-05, last restricted 2027-05-04. Pledge proviso on p240 as noted. Date arithmetic checked with python.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "code": "3388.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p279. 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-05-29 + 6m = 2026-11-29 first free; last restricted 2026-11-28.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p302. Explicit end date in the clause: '(a) at any time in the period commencing on the date by reference to which disclosure of their shareholdings in our Company is made in this Prospectus and ending on the date which is six months from the Listing Date'. The period ends ON 2026-11-29 (last restricted day); first free day is 2026-11-30. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2026-11-30",
+      "last_restricted_day": "2026-11-29",
+      "basis": "Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-11-29); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p302. '(b) at any time in the period of six months commencing from the date on which the period referred to in the above paragraph (a) expires' states no explicit end date, so the default convention applies: first free on the 12-month anniversary 2027-05-29, last restricted 2027-05-28. Pledge proviso as noted. Date arithmetic checked with python.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "code": "6067.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p229 ('period of six months following the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-12-23, last_restricted_day 2026-12-22 as recorded. All 13 named holders located in the cornerstone section (pp.220-229).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. '10.07' returns zero hits across all 494 pages; the only undertakings in the Underwriting section are the Company's Rule 10.08 undertaking and the Company's Hong Kong Underwriting Agreement undertakings (p274). 'Controlling Shareholder' occurrences are unrelated (Overseas Listing Regulations text p114, historical disclosure delay p211, GF Securities p225, CICC FT ultimate-client note p227). Prof. Chen / Ms. Chen are styled Single Largest Shareholders (p196) with no disposal or control lock-up undertaking.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: no 12-month controller control/disposal undertaking anywhere in the 494-page text; remaining lock-up hits are cornerstone (p226, p229) and A-share share-incentive-plan restrictions (pp.375-377, 423-425, 475-478).",
+    "corrections": {}
+  }
+}

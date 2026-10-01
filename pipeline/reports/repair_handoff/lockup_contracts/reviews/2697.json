@@ -1,0 +1,27 @@
+{
+  "code": "2697.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. No offering-cornerstone section, cornerstone investor or cornerstone lock-up anywhere in the 445 pages (H-share Full Circulation issuer).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p279 under '(B) Undertakings by our Controlling Shareholders' (Rule 10.07). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2026-12-30, which is therefore the last restricted day; first free day is 2026-12-31.",
+    "corrections": {
+      "first_free_day": "2026-12-31",
+      "last_restricted_day": "2026-12-30",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-30, inclusive); first free day 2026-12-31"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p279 (Second Six-Month Period leg). DATE CORRECTION: the second period runs to and including the 12-month anniversary 2027-06-30; first free day is 2027-07-01. The p280 '12 months from the Listing Date' hit is only the Note 3 pledge-notice undertaking, consistent with a 12-month overall restriction.",
+    "corrections": {
+      "first_free_day": "2027-07-01",
+      "last_restricted_day": "2027-06-30",
+      "basis": "Rule 10.07(1)(b): no disposal in the six months commencing from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-06-30, to the extent it would cause cessation of controlling shareholder status; first free day 2027-07-01"
+    }
+  }
+}

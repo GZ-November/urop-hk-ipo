@@ -1,0 +1,37 @@
+{
+ "index": 20,
+ "ledger_url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-09-04/doc-iniqryes4051526.shtml",
+ "url_used": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-09-04/doc-iniqryes4051526.shtml",
+ "fetched_ok": true,
+ "title": "新股消息 | 优地机器人(03231)招股结束 孖展认购额超42亿港元 超购94.79倍",
+ "published_at_hkt": "2026-09-04T14:20+08:00",
+ "publisher_chain": "智通财经网 (page links https://www.zhitongcaijing.com/content/detail/1491979.html), shown on Sina Finance; page time 2026年09月04日 14:20",
+ "survey_scope_wording": "No broker list: \"市场数据显示，集团共获得42.14亿港元孖展认购，以公开集资额0.4399亿港元计，超额认购94.79倍。\" (survey unspecified; not the 富途/辉立 sentence)",
+ "measurement_time_wording": "截至目前，招股已结束 (verbatim: 优地机器人(03231)于2026年8月31日至9月4日招股，截至目前，招股已结束)",
+ "rows_on_page": [
+  {
+   "stock": "03231",
+   "name": "優地機器人",
+   "amount_verbatim": "42.14亿港元",
+   "multiple_verbatim": "超额认购94.79倍 (headline: 超购94.79倍)"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "3231.HK",
+   "ledger_amount_100m_hkd": 42.14,
+   "result": "match",
+   "detail": "page: 42.14亿港元 (unit 亿, no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "3231.HK",
+   "subscription_close": "2026-09-04",
+   "article_date_is_close_day": true
+  }
+ ],
+ "ledger_published_at_hkt": "2026-09-04T14:20:00+08:00",
+ "ledger_published_at_check": "match",
+ "notes": "This is a 新股消息 news item, not the 新股孖展统计 roundup. Unit 亿港元; denominator 公开集资额0.4399亿港元. Ledger survey tag zhitong_market_data_unspecified and published_at_hkt 2026-09-04T14:20:00+08:00 match. Article is dated on the close day (09-04) but written 14:20, after the subscription ended; the figure is therefore final-period 孖展 (page says 招股已结束)."
+}

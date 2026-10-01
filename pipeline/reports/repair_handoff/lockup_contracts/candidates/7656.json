@@ -1,0 +1,37 @@
+{
+  "code": "7656.HK",
+  "listing_date": "2026-07-08",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No cornerstone investors: the word 'cornerstone' does not appear anywhere in this prospectus (searched 'cornerstone', 'Cornerstone Placing', 'Cornerstone Investment Agreement'). Chapter 18C specialist technology company."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No separate six-month disposal undertaking: replaced by a SINGLE combined undertaking under Rules 10.07 and 18C.13 covering 12 months from the Listing Date, recorded in the controller_12m slot (PDF p.292). Chapter 18C issuer."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 292,
+    "full_quote": "Pursuant to Rules 10.07 and 18C.13 of the Listing Rules, each of our Controlling Shareholders has irrevocably and unconditionally undertaken to us and to the Stock Exchange that except pursuant to the Global Offering, it/he/she shall not and shall procure that the relevant registered Shareholder(s) controlled by it/him/her shall not, in the period commencing on the date by reference to which disclosure of its/his/her shareholdings in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong) for a bona fide commercial loan) in respect of, any of our securities that it/he/she is shown to beneficially own in this prospectus.",
+    "reference_date": "2026-07-08",
+    "basis": "Combined Rule 10.07 / Rule 18C.13 undertaking: single 12-month no-disposal period ending on (and including) the date 12 months from the Listing Date, so free day is the day after 2027-07-08; replaces both the 6-month disposal and 12-month control slots",
+    "computed_first_free_day": "2027-07-09",
+    "computed_last_restricted_day": "2027-07-08",
+    "notes": "Chapter 18C issuer. Additional undertakings on the same and next page: Key Persons (Rule 18C.14(1): Mr. Zhan, Mr. Han Songguang, Mr. Su Xiaosheng, Ruiyuan Technology Partnership, Shenzhen Ruiyuan Technology Partnership, Ruiyitong Technology Partnership) and Pathfinder SIIs (Rule 18C.14(2)) have 12-month undertakings ending on the date 12 months from the Listing Date."
+  }
+}

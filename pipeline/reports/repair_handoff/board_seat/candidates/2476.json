@@ -1,0 +1,56 @@
+{
+ "code": "2476.HK",
+ "pdf_sha256": "2c9522e686cd17ae92eec2eed5d1c2f31267b5a3c49e3883971a7875ee659f49",
+ "classification": "supports_0",
+ "candidate_value": 0,
+ "pre_ipo_investors": [
+  "none disclosed for the H-share offering: issuer is already A-share listed (ChiNext, June 2015); 2011 introduction of institutional investors (Oriental Fortune, Guoke Ruihua, Huizhou Kaichuang, Jiaxing Shidai, Ningbo Fenghai) pre-dated the A-share IPO and is not presented as a Pre-IPO investment; later A-share private placements to independent third parties"
+ ],
+ "board_roster_reviewed": "Nine directors: Chen Tao (Chairman, ED, controlling shareholder), Zhao Qixiang (ED/president), Chen Yong (ED, brother of Chen Tao), Wang Haiyan (ED/employee rep), Liu Chunlan (NED, spouse of Chen Tao and member of Largest Group of Shareholders), Xie Lanjun (INED, lawyer), Xie Lingmin (INED, academic), Zhang Jihai (INED, academic), Wong Ting Chung (INED, textile/business leader). Full biographies read (pp.174-177 PDF); none links to an institutional/pre-IPO investor.",
+ "rights_and_timing": "No pre-IPO investment section exists. Waiver text states none of the Existing Minority Shareholders (A-share holders <5%) has the right to appoint any Directors or other special rights; only holders above 5% are the controlling Chen Tao group. No observer right or nomination right disclosed. Caveat: this is an A+H issuer and the prospectus never literally states 'no Pre-IPO investors'; the 0 rests on the waiver statement plus the substantial-shareholder table plus the director biographies.",
+ "evidence": [
+  {
+   "pdf_page": 173,
+   "printed_page": "163",
+   "quote": "Our Board comprises nine Directors, including four executive Directors, one non-executive Director and four independent non-executive Directors.",
+   "supports": "Board composition.",
+   "interpretation": "Full roster identified; only NED is the controlling-family member Liu Chunlan."
+  },
+  {
+   "pdf_page": 175,
+   "printed_page": "165",
+   "quote": "Ms. Liu joined our Group in January 2003. Ms. Liu is primarily responsible for providing recommendations on the strategic development of our Group. Ms. Liu served as the general manager of Hongda Investment and Shenghua Xinye since September 2011 and June 2012, respectively.",
+   "supports": "NED Liu Chunlan is a controlling-group member, not an outside investor rep.",
+   "interpretation": "NED seat is linked to the controlling shareholder, not to a pre-IPO investor."
+  },
+  {
+   "pdf_page": 62,
+   "printed_page": "52",
+   "quote": "(iii) none of the Existing Minority Shareholders has the right to appoint any Directors and/or any other special rights;",
+   "supports": "Waiver condition: existing minority shareholders have no director-appointment right or special rights.",
+   "interpretation": "Affirmative statement that non-controlling pre-existing shareholders hold no appointment rights."
+  },
+  {
+   "pdf_page": 183,
+   "printed_page": "173",
+   "quote": "Interest in controlled corporation(1) 266,269,191 A Shares (L) 30.52% 30.52% 27.86%",
+   "supports": "Only controlling group appears as substantial shareholder.",
+   "interpretation": "No outside investor holds 5%+ that could carry a board seat."
+  },
+  {
+   "pdf_page": 177,
+   "printed_page": "167",
+   "quote": "(2) had no other relationship with any Directors, senior management or substantial Shareholders of our Company as at the Latest Practicable Date;",
+   "supports": "Directors confirm no other relationships.",
+   "interpretation": "No hidden investor linkage for directors."
+  },
+  {
+   "pdf_page": 123,
+   "printed_page": "113",
+   "quote": "We introduced several institutional investors to optimize our equity structure.",
+   "supports": "Institutional investors were introduced in 2011, before A-share IPO in 2015.",
+   "interpretation": "Historical pre-A-share investors; no board/observer rights disclosed and none appear on the Board."
+  }
+ ],
+ "unresolved_reason": ""
+}

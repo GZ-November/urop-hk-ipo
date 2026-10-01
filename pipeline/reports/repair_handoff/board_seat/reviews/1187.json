@@ -1,0 +1,31 @@
+{
+ "code": "1187.HK",
+ "reviewer": "independent reviewer subagent R1",
+ "read_independently_before_candidate": true,
+ "own_classification": "unresolved",
+ "candidate_classification": "unresolved",
+ "verdict": "approve_candidate",
+ "approved_value": null,
+ "approved_evidence": [
+  {
+   "pdf_page": 166,
+   "printed_page": "157",
+   "quote": "Our Board currently consists of seven Directors, comprising four executive Directors and three independent non-executive Directors",
+   "interpretation": "Roster shows no non-executive/observer seat and no biography links any director to an investor institution, but this alone is absence of disclosure."
+  },
+  {
+   "pdf_page": 104,
+   "printed_page": "95",
+   "quote": "Since 2021, our A Shares have been listed and traded on the ChiNext Market of the Shenzhen Stock Exchange",
+   "interpretation": "A+H issuer: no H-share 'Pre-IPO Investments' section exists, so there is no pre-IPO investor disclosure to link to or to exclude."
+  },
+  {
+   "pdf_page": 105,
+   "printed_page": "96",
+   "quote": "Between the 2009 and 2019, the Company underwent rounds of capital increases and transfers.",
+   "interpretation": "Earlier VC/PE rounds exist (holders listed at Dec 2019 conversion) but no rights/board terms are disclosed; no affirmative statement that no investor holds a seat."
+  }
+ ],
+ "findings": "Independently read History, Directors chapters and grepped whole text for Pre-IPO, nominate/appoint, observer, special rights. No Pre-IPO section; seven directors (4 exec, 3 INED) with no investor link. Only affirmative statement found is the waiver condition (pdf p068, printed 59) that Permitted Existing Shareholders (minority holders eligible for H-share placing) have no power to appoint Directors or other special rights - limited to that subset and framed as a waiver condition, so not a general statement that no pre-IPO investor holds/nominates a seat. No explicit statement that no pre-IPO investments exist. Candidate quotes verified verbatim, page mapping correct. Agree candidate: absence of evidence is not 0.",
+ "residual_uncertainty": "Leaning 0 in substance (no linked director, A+H issuer with no H-share pre-IPO round) but the schema requires explicit affirmative evidence; a reviewer could accept 0 on the basis of the p068 waiver condition plus roster, but that is a stretch."
+}

@@ -1,0 +1,19 @@
+{
+  "code": "9637.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p254. 'six months from (and inclusive of) the Listing Date' -> frees ON the anniversary: 2026-06-29 + 6m = 2026-12-29 first free, last restricted 2026-12-28. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p285 ('Undertakings by our Single Largest Shareholders Group'). The First Six Month Period is defined verbatim on p284 as 'at any time after the date of the Hong Kong Underwriting Agreement up to and including the date falling six months after the Listing Date' - 'up to and including' is an inclusive end: 2026-06-29 + 6m = 2026-12-29 last restricted, first free 2026-12-30. Matches candidate. Correctly treated as a substitute for the Rule 10.07(1)(a) slot since the company has no Controlling Shareholders.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed: the SLSG undertaking's paragraph (b) (p285) is only an orderly-market covenant 'until the expiry of the Second Six Month Period' ('he/she/it will take all reasonable steps to ensure that such a disposal will not create a disorderly or false market'), not a disposal or control-maintenance restriction. No controlling shareholders exist and no 12-month disposal undertaking was found. PRC Company Law 12-month statutory lock-up (p141) correctly excluded as not a 10.07(1)(b) undertaking.",
+    "corrections": {}
+  }
+}

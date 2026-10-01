@@ -1,0 +1,19 @@
+{
+  "code": "6745.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Clause verbatim on p223 - 'six months from and including the Listing Date', frees up ON 2027-01-10, last restricted 2027-01-09. Holder names (Beijing Yian, Huatai Capital Investment Limited, Luhua Daosheng, Aurora SF, China Hongqiao, Hyperion Venture, Tianto, Safewell) all found on cornerstone pages 212-224.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified absent. Candidate exists=false is correct. The issuer has no controlling shareholder - verbatim (p126): 'Our Company had no controlling shareholder (within the meaning of the Listing Rules)'. No Rule 10.07 undertaking exists anywhere in the 503-page text cache (zero occurrences of '10.07'; the Single Largest Shareholder Group, Binzhou Heyi/Binzhou Heyuan at ~11.26%, gave no lock-up undertaking).",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified absent. Candidate exists=false is correct for the same reason as controller_6m: no controlling shareholder (p126 verbatim quote above) and no Rule 10.07-style, 18C or 18A undertaking anywhere in the document. No element missed.",
+    "corrections": {}
+  }
+}

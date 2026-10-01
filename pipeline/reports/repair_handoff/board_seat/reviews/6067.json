@@ -1,0 +1,37 @@
+{
+ "code": "6067.HK",
+ "reviewer": "independent reviewer subagent R2",
+ "read_independently_before_candidate": true,
+ "own_classification": "unresolved",
+ "candidate_classification": "unresolved",
+ "verdict": "approve_candidate",
+ "approved_value": null,
+ "approved_evidence": [
+  {
+   "pdf_page": 119,
+   "printed_page": "110",
+   "quote": "In December 2016, our Company was listed on ChiNext of the Shenzhen Stock Exchange under the stock code 300568.",
+   "interpretation": "Issuer is an existing A-share (and SIX) listed company; no Pre-IPO investment section or Pre-IPO Investors are disclosed, but there is also no explicit statement that none exist."
+  },
+  {
+   "pdf_page": 79,
+   "printed_page": "70",
+   "quote": "none of the Permitted Existing Shareholders has the power to appoint any Directors nor have any other special rights in our Company;",
+   "interpretation": "Waiver condition limited to existing minority shareholders holding <5%; not an affirmative statement covering all investors, so does not establish 0."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Mr. Zhu has been serving as a Director since November 2021. Prior to joining our Group, he taught at Huazhong University of Science and Technology",
+   "interpretation": "Sole non-executive Director; bio shows academic/securities/think-tank career and no investor link or nomination."
+  },
+  {
+   "pdf_page": 206,
+   "printed_page": "197",
+   "quote": "Our Board consist of the following Directors.",
+   "interpretation": "Roster: 3 executive, 1 non-executive (Zhu Bide), 4 independent non-executive (Lin Zhiwei resigns at Listing)."
+  }
+ ],
+ "findings": "Read Directors chapter (p206-209), History (p116-122), Relationship with Single Largest Shareholders, waivers (p79) and Substantial Shareholders before opening the candidate. No 'Pre-IPO' term appears in the prospectus (grep 0 hits); the company has been listed on ChiNext since 2016 and SIX since 2023, with 2019/2022 placements and a 2023 GDR offering. No director or observer is described as nominated by or affiliated with any investor; Gotion/Hefei Guoxuan is a customer and 27.69% minority holder of subsidiary Hefei Senior (Company appoints 3 of 5 subsidiary directors) but no Gotion person sits on the Company board. Candidate quotes verified verbatim on cited pdf pages with correct printed pages (p206 = 197, p207 = 198, p79 = 70, p119 = 110). Agree with candidate that a 0 would require an explicit statement of no pre-IPO investments/rights; the waiver condition covers only <5% Permitted Existing Shareholders and does not amount to that, so value remains unknown even though 0 is likely substantively.",
+ "residual_uncertainty": "Substantively likely 0 (already-listed issuer, no pre-IPO rounds, no investor-linked director), but the schema requires affirmative evidence; none explicit."
+}

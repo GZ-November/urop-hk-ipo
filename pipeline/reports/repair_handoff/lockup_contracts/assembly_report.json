@@ -1,0 +1,2011 @@
+{
+ "problems": [
+  "0100.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2028-01-10",
+  "0100.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2028-01-09",
+  "0100.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Chapter 18C Pre-Commercial Company: single 24-month disposal undertaking under Rules 10.07 and 18C.13 replaces the standard six-month 10.07(1)(a) undertaking. Commences on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ends 'on the date which is 24 months from the Listing Date' (inclusive end ON the anniversary), so first free day = anniversary + 1 = 2028-01-10.",
+  "0100.HK Controlling_Shareholder_6M_Disposal: first_free_day 2028-01-10 != 2026-07-09 (calendar 6m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "0470.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-08-12",
+  "0470.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-08-11",
+  "0470.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): period commences on the prospectus disclosure date and ends ON the date which is six months from the Listing Date (2026-08-11); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "0470.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-12 != 2026-08-11 (calendar 6m from 2026-02-11); keeping the candidate (explicit-date basis)",
+  "0501.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-13 != 2026-07-12 (calendar 6m from 2026-01-12); keeping the candidate (explicit-date basis)",
+  "0537.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "0537.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-10 != 2027-07-09 (calendar 12m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "0600.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-11 != 2026-08-10 (calendar 6m from 2026-02-10); keeping the candidate (explicit-date basis)",
+  "0625.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2027-03-02",
+  "0625.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2027-03-01",
+  "0625.HK Cornerstone_Lockup: reviewer correction applied: basis=six (6) months counted from and inclusive of the Listing Date with an explicit inclusive endpoint: restricted period runs from (and including) the Listing Date (2026-09-01) through (and including) the date falling six (6) months, i.e. the six-month anniversary 2027-03-01; first free day 2027-03-02",
+  "0625.HK Cornerstone_Lockup: first_free_day 2027-03-02 != 2027-03-01 (calendar 6m from 2026-09-01); keeping the candidate (explicit-date basis)",
+  "0625.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-03-02",
+  "0625.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-03-01",
+  "0625.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period commencing on the prospectus disclosure reference date and ending ON the date which is six months from the Listing Date (2027-03-01, inclusive); first free day 2027-03-02",
+  "0625.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-03-02 != 2027-03-01 (calendar 6m from 2026-09-01); keeping the candidate (explicit-date basis)",
+  "0625.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-09-02",
+  "0625.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-09-01",
+  "0625.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the Second Six-Month Period (six months commencing from expiry of the First Six-Month Period on 2027-03-01), running to and including the 12-month anniversary 2027-09-01, to the extent it would cause cessation of Controlling Shareholder status; first free day 2027-09-02",
+  "0625.HK Controlling_Shareholder_12M_Control: first_free_day 2027-09-02 != 2027-09-01 (calendar 12m from 2026-09-01); keeping the candidate (explicit-date basis)",
+  "0664.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-01 != 2026-09-30 (calendar 6m from 2026-03-31); keeping the candidate (explicit-date basis)",
+  "0668.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-03 != 2027-01-02 (calendar 6m from 2026-07-02); keeping the candidate (explicit-date basis)",
+  "0668.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-03 != 2027-07-02 (calendar 12m from 2026-07-02); keeping the candidate (explicit-date basis)",
+  "0901.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-11-28",
+  "0901.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-11-27",
+  "0901.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "0901.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-28 != 2026-11-27 (calendar 6m from 2026-05-27); keeping the candidate (explicit-date basis)",
+  "1021.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-03-31",
+  "1021.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-03-30",
+  "1021.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rules 18C.13/18C.14: period ends ON the date which is 12 months from the Listing Date (2027-03-30); explicit end date (also 'ending on, and including, the date that is 12 months after the Listing Date' in the p299 underwriting-agreement undertaking) makes 2027-03-30 the last restricted day, so first_free_day = anniversary + 1",
+  "1021.HK Controlling_Shareholder_12M_Control: first_free_day 2027-03-31 != 2027-03-30 (calendar 12m from 2026-03-30); keeping the candidate (explicit-date basis)",
+  "1081.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-06 != 2026-12-05 (calendar 6m from 2026-06-05); keeping the candidate (explicit-date basis)",
+  "1187.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-07 != 2026-11-06 (calendar 6m from 2026-05-06); keeping the candidate (explicit-date basis)",
+  "1187.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-07 != 2027-05-06 (calendar 12m from 2026-05-06); keeping the candidate (explicit-date basis)",
+  "1236.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-11-12",
+  "1236.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-11-11",
+  "1236.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-11-11, inclusive); first free day 2026-11-12",
+  "1236.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-12 != 2026-11-11 (calendar 6m from 2026-05-11); keeping the candidate (explicit-date basis)",
+  "1236.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-05-12",
+  "1236.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-05-11",
+  "1236.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-05-11, to the extent it would cause cessation of controlling shareholder status; first free day 2027-05-12",
+  "1236.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-12 != 2027-05-11 (calendar 12m from 2026-05-11); keeping the candidate (explicit-date basis)",
+  "1377.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "1377.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): disposal in the further 6 months after the period in (a) expires is prohibited if it would cause loss of controlling-shareholder status; (a) ends on (inclusive of) the 6-month anniversary 2027-01-09, so the further 6 months end on the 12-month anniversary 2027-07-09 (inclusive) -> first_free_day 2027-07-10. The additional undertaking on p.272 cited by the prospectus as 'Note (2) to Rule 10.07(2)' (ending on the date which is 12 months from the Listing Date) is a pledge/charge notification undertaking corroborating the 12-month horizon.",
+  "1377.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-10 != 2027-07-09 (calendar 12m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "1392.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-23 != 2026-12-22 (calendar 6m from 2026-06-22); keeping the candidate (explicit-date basis)",
+  "1392.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-23 != 2027-06-22 (calendar 12m from 2026-06-22); keeping the candidate (explicit-date basis)",
+  "1511.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2026-11-21",
+  "1511.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2026-11-20",
+  "1511.HK Cornerstone_Lockup: first_free_day 2026-11-21 != 2026-11-20 (calendar 6m from 2026-05-20); keeping the candidate (explicit-date basis)",
+  "1511.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-05-21",
+  "1511.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-05-20",
+  "1511.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Chapter 18C: single 12-month disposal undertaking under Rules 10.07(1)(a), 18C.13 and 18C.14 commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending 'on the date which is 12 months from the Listing Date' (inclusive end ON the anniversary); first free day = anniversary + 1 = 2027-05-21.",
+  "1511.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-05-21 != 2026-11-20 (calendar 6m from 2026-05-20); keeping the candidate (explicit-date basis)",
+  "1609.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-11-06",
+  "1609.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-11-05",
+  "1609.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-11-05); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "1609.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-06 != 2026-11-05 (calendar 6m from 2026-05-05); keeping the candidate (explicit-date basis)",
+  "1641.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-14 != 2026-07-13 (calendar 6m from 2026-01-13); keeping the candidate (explicit-date basis)",
+  "1688.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-27 != 2026-12-26 (calendar 6m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "1688.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-27 != 2027-06-26 (calendar 12m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "1768.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-29 != 2026-07-28 (calendar 6m from 2026-01-28); keeping the candidate (explicit-date basis)",
+  "1770.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-01-10",
+  "1770.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-01-09",
+  "1770.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the period ending ON the date which is six months from the Listing Date (2027-01-09, inclusive); first free day 2027-01-10",
+  "1770.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "1770.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-07-10",
+  "1770.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-07-09",
+  "1770.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the further six months commencing at expiry of the first period, running to and including the 12-month anniversary 2027-07-09, to the extent it would cause cessation of controlling shareholder status; first free day 2027-07-10",
+  "1770.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-10 != 2027-07-09 (calendar 12m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "1779.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-06 != 2026-12-05 (calendar 6m from 2026-06-05); keeping the candidate (explicit-date basis)",
+  "1779.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-06 != 2027-06-05 (calendar 12m from 2026-06-05); keeping the candidate (explicit-date basis)",
+  "1879.HK Controlling_Shareholder_6M_Disposal: first_free_day 2028-04-29 != 2026-10-28 (calendar 6m from 2026-04-28); keeping the candidate (explicit-date basis)",
+  "1956.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-06-27",
+  "1956.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-06-26",
+  "1956.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Chapter 18C: no Rule 10.07 controlling shareholder undertaking; the controller-equivalent lock-up is the key persons' undertaking under Rules 18C.13/18C.14 commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending 'on the date which is 12 months from the Listing Date' (inclusive end ON the anniversary); first free day = anniversary + 1 = 2027-06-27.",
+  "1956.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-27 != 2027-06-26 (calendar 12m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "1989.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-09-21",
+  "1989.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-09-20",
+  "1989.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): period ends ON the date which is 6 months from the Listing Date (2026-09-20); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "1989.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-21 != 2026-09-20 (calendar 6m from 2026-03-20); keeping the candidate (explicit-date basis)",
+  "2041.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-03-08 != 2027-03-07 (calendar 6m from 2026-09-07); keeping the candidate (explicit-date basis)",
+  "2249.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-11 != 2027-01-10 (calendar 6m from 2026-07-10); keeping the candidate (explicit-date basis)",
+  "2249.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-11 != 2027-07-10 (calendar 12m from 2026-07-10); keeping the candidate (explicit-date basis)",
+  "2261.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-02-08 != 2027-02-07 (calendar 6m from 2026-08-07); keeping the candidate (explicit-date basis)",
+  "2272.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-27",
+  "2272.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-26",
+  "2272.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-26, inclusive); first free day 2026-12-27",
+  "2272.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-27 != 2026-12-26 (calendar 6m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "2272.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-06-27",
+  "2272.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-06-26",
+  "2272.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the Second Six-Month Period, running to and including the 12-month anniversary 2027-06-26, to the extent it would cause cessation of controlling shareholder status; first free day 2027-06-27",
+  "2272.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-27 != 2027-06-26 (calendar 12m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "2290.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-06 != 2026-12-05 (calendar 6m from 2026-06-05); keeping the candidate (explicit-date basis)",
+  "2290.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-06 != 2027-06-05 (calendar 12m from 2026-06-05); keeping the candidate (explicit-date basis)",
+  "2335.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-25 != 2026-12-24 (calendar 6m from 2026-06-24); keeping the candidate (explicit-date basis)",
+  "2335.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-25 != 2027-06-24 (calendar 12m from 2026-06-24); keeping the candidate (explicit-date basis)",
+  "2475.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2027-01-10",
+  "2475.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2027-01-09",
+  "2475.HK Cornerstone_Lockup: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "2475.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-01-10",
+  "2475.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-01-09",
+  "2475.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the date of the prospectus (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "2475.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "2476.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-10-22",
+  "2476.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-10-21",
+  "2476.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1) undertaking by each member of the Largest Group of Shareholders: period ends ON the date which is six months from the Listing Date (2026-10-21); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "2476.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-22 != 2026-10-21 (calendar 6m from 2026-04-21); keeping the candidate (explicit-date basis)",
+  "2493.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-29 != 2026-10-28 (calendar 6m from 2026-04-28); keeping the candidate (explicit-date basis)",
+  "2513.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2026-07-09",
+  "2513.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2026-07-08",
+  "2513.HK Cornerstone_Lockup: reviewer correction applied: basis=restricted period runs from the Listing Date (2026-01-08) to the date falling six months after the Listing Date (2026-07-08), both days expressly inclusive ('six months following the Listing Date (both days inclusive)'); first free day is the day after the inclusive end",
+  "2513.HK Cornerstone_Lockup: first_free_day 2026-07-09 != 2026-07-08 (calendar 6m from 2026-01-08); keeping the candidate (explicit-date basis)",
+  "2513.HK Controlling_Shareholder_12M_Control: first_free_day 2027-01-09 != 2027-01-08 (calendar 12m from 2026-01-08); keeping the candidate (explicit-date basis)",
+  "2526.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-01 != 2026-09-30 (calendar 6m from 2026-03-30); keeping the candidate (explicit-date basis)",
+  "2553.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-04",
+  "2553.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-03",
+  "2553.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-03, inclusive); first free day 2026-12-04",
+  "2553.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-04 != 2026-12-03 (calendar 6m from 2026-06-03); keeping the candidate (explicit-date basis)",
+  "2553.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-06-04",
+  "2553.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-06-03",
+  "2553.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-06-03, to the extent it would cause cessation of controlling shareholder status; first free day 2027-06-04",
+  "2553.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-04 != 2027-06-03 (calendar 12m from 2026-06-03); keeping the candidate (explicit-date basis)",
+  "2632.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-25 != 2026-09-24 (calendar 6m from 2026-03-24); keeping the candidate (explicit-date basis)",
+  "2632.HK Controlling_Shareholder_12M_Control: first_free_day 2027-03-25 != 2027-03-24 (calendar 12m from 2026-03-24); keeping the candidate (explicit-date basis)",
+  "2649.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-10 != 2026-09-09 (calendar 6m from 2026-03-09); keeping the candidate (explicit-date basis)",
+  "2649.HK Controlling_Shareholder_12M_Control: first_free_day 2027-03-10 != 2027-03-09 (calendar 12m from 2026-03-09); keeping the candidate (explicit-date basis)",
+  "2667.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2027-02-08",
+  "2667.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2027-02-07",
+  "2667.HK Cornerstone_Lockup: reviewer correction applied: holders=Airport Technology Capital; Aurora SF (for ultimate client Haikou Lanxin Zhitong Investment Center (Limited Partnership)); CICC Financial Trading Limited (CICCFT, in connection with OTC Swaps, ultimate client Meihao Planck No. 1 Private Securities Investment Fund)",
+  "2667.HK Cornerstone_Lockup: first_free_day 2027-02-08 != 2027-01-07 (calendar 6m from 2026-07-07); keeping the candidate (explicit-date basis)",
+  "2667.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-01-08",
+  "2667.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-01-07",
+  "2667.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the expiration date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "2667.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-08 != 2027-01-07 (calendar 6m from 2026-07-07); keeping the candidate (explicit-date basis)",
+  "2672.HK Cornerstone_Lockup: first_free_day 2027-06-29 != 2026-12-29 (calendar 6m from 2026-06-29); keeping the candidate (explicit-date basis)",
+  "2672.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-30",
+  "2672.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-29",
+  "2672.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-12-29); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "2672.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-30 != 2026-12-29 (calendar 6m from 2026-06-29); keeping the candidate (explicit-date basis)",
+  "2675.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-09 != 2026-07-08 (calendar 6m from 2026-01-08); keeping the candidate (explicit-date basis)",
+  "2677.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-07 != 2026-08-06 (calendar 6m from 2026-02-06); keeping the candidate (explicit-date basis)",
+  "2677.HK Controlling_Shareholder_12M_Control: reviewer correction applied: holders=Controlling Shareholders (Mr. Wang, Cheuk Sing Ho, the Concert Parties, Distinct Partners I Limited) under Rule 10.07; in addition Cheuk Sing Ho voluntarily locked up 11,283,000 Shares for 30 months from the Listing Date (to 2028-08-06)",
+  "2677.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=control-preserving no-disposal undertaking covering the second six months, ending 12 months from the Listing Date (inclusive end); second period commences on expiry of the first six-month period (H-share combined Rule 10.07(1) rendering). ADDITIONAL longer lock-up found: Cheuk Sing Ho (a Controlling Shareholder) locked 11,283,000 Shares for 30 months commencing from the Listing Date (p477), freeing on 2028-08-06",
+  "2677.HK Controlling_Shareholder_12M_Control: first_free_day 2027-02-07 != 2027-02-06 (calendar 12m from 2026-02-06); keeping the candidate (explicit-date basis)",
+  "2692.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-10 != 2026-09-09 (calendar 6m from 2026-03-09); keeping the candidate (explicit-date basis)",
+  "2697.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-31",
+  "2697.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-30",
+  "2697.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-30, inclusive); first free day 2026-12-31",
+  "2697.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-31 != 2026-12-30 (calendar 6m from 2026-06-30); keeping the candidate (explicit-date basis)",
+  "2697.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-07-01",
+  "2697.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-06-30",
+  "2697.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the six months commencing from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-06-30, to the extent it would cause cessation of controlling shareholder status; first free day 2027-07-01",
+  "2697.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-01 != 2027-06-30 (calendar 12m from 2026-06-30); keeping the candidate (explicit-date basis)",
+  "2701.HK Cornerstone_Lockup: first_free_day 2026-09-24 != 2026-09-23 (calendar 6m from 2026-03-23); keeping the candidate (explicit-date basis)",
+  "2706.HK Cornerstone_Lockup: reviewer correction applied: basis=Mixed cornerstone terms (all duration wording, free up ON the anniversary of the Listing Date 2026-02-13): Infini and Mega Prime 6 months -> first free 2026-08-13 (last restricted 2026-08-12); JINGSHENG HENGXING 9 months -> first free 2026-11-13 (last restricted 2026-11-12); JSC International Investment Fund SPC (Etown SP) 11 months -> first free 2027-01-13 (last restricted 2027-01-12). computed_* fields retain the earliest (6-month) term.",
+  "2706.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-14 != 2026-08-13 (calendar 6m from 2026-02-13); keeping the candidate (explicit-date basis)",
+  "2714.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-08-07",
+  "2714.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-08-06",
+  "2714.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "2714.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-07 != 2026-08-06 (calendar 6m from 2026-02-06); keeping the candidate (explicit-date basis)",
+  "2715.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-09-10",
+  "2715.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-09-09",
+  "2715.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1): period ends ON the date which is six months from the Listing Date (2026-09-09); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "2715.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-10 != 2026-09-09 (calendar 6m from 2026-03-09); keeping the candidate (explicit-date basis)",
+  "2720.HK Cornerstone_Lockup: first_free_day 2027-02-10 != 2026-08-10 (calendar 6m from 2026-02-10); keeping the candidate (explicit-date basis)",
+  "2720.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-11 != 2026-08-10 (calendar 6m from 2026-02-10); keeping the candidate (explicit-date basis)",
+  "2723.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-28 != 2026-11-27 (calendar 6m from 2026-05-27); keeping the candidate (explicit-date basis)",
+  "2723.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-28 != 2027-05-27 (calendar 12m from 2026-05-27); keeping the candidate (explicit-date basis)",
+  "2726.HK Cornerstone_Lockup: first_free_day 2027-09-30 != 2026-09-30 (calendar 6m from 2026-03-30); keeping the candidate (explicit-date basis)",
+  "2729.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-09-25",
+  "2729.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-09-24",
+  "2729.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)/Guide Ch 4.13 para 7: no disposal by Pre-Listing Concert Parties in the First Six-month Period ending ON the date which is six months from the Listing Date (2026-09-24, inclusive); first free day 2026-09-25",
+  "2729.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-25 != 2026-09-24 (calendar 6m from 2026-03-24); keeping the candidate (explicit-date basis)",
+  "2768.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-05 != 2026-08-04 (calendar 6m from 2026-02-04); keeping the candidate (explicit-date basis)",
+  "2768.HK Controlling_Shareholder_12M_Control: first_free_day 2027-02-05 != 2027-02-04 (calendar 12m from 2026-02-04); keeping the candidate (explicit-date basis)",
+  "2797.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "2797.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-10 != 2027-07-09 (calendar 12m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "3200.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-08-07",
+  "3200.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-08-06",
+  "3200.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking by the Controlling Shareholders Group commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "3200.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-07 != 2026-08-06 (calendar 6m from 2026-02-06); keeping the candidate (explicit-date basis)",
+  "3231.HK Cornerstone_Lockup: first_free_day 2027-06-09 != 2027-03-09 (calendar 6m from 2026-09-09); keeping the candidate (explicit-date basis)",
+  "3231.HK Controlling_Shareholder_12M_Control: first_free_day 2027-09-10 != 2027-09-09 (calendar 12m from 2026-09-09); keeping the candidate (explicit-date basis)",
+  "3268.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-11 != 2026-09-10 (calendar 6m from 2026-03-10); keeping the candidate (explicit-date basis)",
+  "3268.HK Controlling_Shareholder_12M_Control: first_free_day 2027-03-11 != 2027-03-10 (calendar 12m from 2026-03-10); keeping the candidate (explicit-date basis)",
+  "3277.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-18 != 2026-10-17 (calendar 6m from 2026-04-17); keeping the candidate (explicit-date basis)",
+  "3296.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-10-24",
+  "3296.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-10-23",
+  "3296.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal by members of the Controlling Shareholders Group in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-10-23, inclusive); first free day 2026-10-24",
+  "3296.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-24 != 2026-10-23 (calendar 6m from 2026-04-23); keeping the candidate (explicit-date basis)",
+  "3296.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-04-24",
+  "3296.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-04-23",
+  "3296.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-04-23, to the extent it would cause cessation of membership of the Controlling Shareholders Group; first free day 2027-04-24",
+  "3296.HK Controlling_Shareholder_12M_Control: first_free_day 2027-04-24 != 2027-04-23 (calendar 12m from 2026-04-23); keeping the candidate (explicit-date basis)",
+  "3308.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-31 != 2027-01-30 (calendar 6m from 2026-07-30); keeping the candidate (explicit-date basis)",
+  "3310.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-28 != 2026-11-27 (calendar 6m from 2026-05-27); keeping the candidate (explicit-date basis)",
+  "3355.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-09-24",
+  "3355.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-09-23",
+  "3355.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "3355.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-09-24 != 2026-09-23 (calendar 6m from 2026-03-23); keeping the candidate (explicit-date basis)",
+  "3388.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-11-30",
+  "3388.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-11-29",
+  "3388.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): period ends ON the date which is six months from the Listing Date (2026-11-29); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "3388.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-30 != 2026-11-29 (calendar 6m from 2026-05-29); keeping the candidate (explicit-date basis)",
+  "3625.HK Controlling_Shareholder_12M_Control: first_free_day 2027-04-01 != 2027-03-31 (calendar 12m from 2026-03-31); keeping the candidate (explicit-date basis)",
+  "3636.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2026-07-10",
+  "3636.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2026-07-09",
+  "3636.HK Cornerstone_Lockup: reviewer correction applied: basis=restricted period commencing on (and inclusive of) the Listing Date (2026-01-09) and ending on (and inclusive of) the date falling six months after the Listing Date (2026-07-09); both endpoints expressly inclusive, so first free day is the day after the inclusive end",
+  "3636.HK Cornerstone_Lockup: first_free_day 2026-07-10 != 2026-07-09 (calendar 6m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "3636.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-10 != 2026-07-09 (calendar 6m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "3636.HK Controlling_Shareholder_12M_Control: first_free_day 2027-01-10 != 2027-01-09 (calendar 12m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "3661.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-27 != 2026-12-26 (calendar 6m from 2026-06-26); keeping the candidate (explicit-date basis)",
+  "3752.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2027-01-10",
+  "3752.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2027-01-09",
+  "3752.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the expiration date which is six months from the Listing Date (2027-01-09, inclusive); first free day 2027-01-10",
+  "3752.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "3752.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-07-10",
+  "3752.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-07-09",
+  "3752.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07(1)(b): no disposal in the Second Six-Month Period (with the First, the 'First Twelve-Month Period'), running to and including the 12-month anniversary 2027-07-09, to the extent it would cause cessation of Controlling Shareholder status; first free day 2027-07-10",
+  "3752.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-10 != 2027-07-09 (calendar 12m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "3952.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-01 != 2027-06-30 (calendar 12m from 2026-06-30); keeping the candidate (explicit-date basis)",
+  "6082.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-01-03",
+  "6082.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-01-02",
+  "6082.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 18C.14: period ends ON the date which is 12 months from the Listing Date (2027-01-02); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "6082.HK Controlling_Shareholder_12M_Control: first_free_day 2027-01-03 != 2027-01-02 (calendar 12m from 2026-01-02); keeping the candidate (explicit-date basis)",
+  "6106.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-25 != 2027-06-24 (calendar 12m from 2026-06-24); keeping the candidate (explicit-date basis)",
+  "6132.HK Cornerstone_Lockup: reviewer correction applied: first_free_day=2026-12-24",
+  "6132.HK Cornerstone_Lockup: reviewer correction applied: last_restricted_day=2026-12-23",
+  "6132.HK Cornerstone_Lockup: reviewer correction applied: basis=restricted period commencing on (and inclusive of) the Listing Date (2026-06-23) and ending on (and inclusive of) the date falling six (6) months after the Listing Date (2026-12-23); both endpoints expressly inclusive, so first free day is the day after the inclusive end",
+  "6132.HK Cornerstone_Lockup: first_free_day 2026-12-24 != 2026-12-23 (calendar 6m from 2026-06-23); keeping the candidate (explicit-date basis)",
+  "6132.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-24 != 2026-12-23 (calendar 6m from 2026-06-23); keeping the candidate (explicit-date basis)",
+  "6132.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-24 != 2027-06-23 (calendar 12m from 2026-06-23); keeping the candidate (explicit-date basis)",
+  "6636.HK Cornerstone_Lockup: first_free_day 2027-01-01 != 2026-09-30 (calendar 6m from 2026-03-30); keeping the candidate (explicit-date basis)",
+  "6636.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-03-31",
+  "6636.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-03-30",
+  "6636.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 18C.14(1): Key Persons (and registered holders) may not dispose of H Shares in the period ending ON the date which is 12 months from the Listing Date (2027-03-30, inclusive); first free day 2027-03-31",
+  "6636.HK Controlling_Shareholder_12M_Control: first_free_day 2027-03-31 != 2027-03-30 (calendar 12m from 2026-03-30); keeping the candidate (explicit-date basis)",
+  "6656.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-17 != 2026-10-16 (calendar 6m from 2026-04-16); keeping the candidate (explicit-date basis)",
+  "6656.HK Controlling_Shareholder_12M_Control: first_free_day 2027-04-17 != 2027-04-16 (calendar 12m from 2026-04-16); keeping the candidate (explicit-date basis)",
+  "6658.HK Cornerstone_Lockup: first_free_day 2027-03-15 != 2026-12-15 (calendar 6m from 2026-06-15); keeping the candidate (explicit-date basis)",
+  "6658.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-16 != 2026-12-15 (calendar 6m from 2026-06-15); keeping the candidate (explicit-date basis)",
+  "6658.HK Controlling_Shareholder_12M_Control: first_free_day 2027-06-16 != 2027-06-15 (calendar 12m from 2026-06-15); keeping the candidate (explicit-date basis)",
+  "6675.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-18",
+  "6675.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-17",
+  "6675.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a)-equivalent voluntary disposal undertaking by the Single Largest Group of Shareholders (Rule 19A A+H issuer; no Controlling Shareholder), commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "6675.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-18 != 2026-12-17 (calendar 6m from 2026-06-17); keeping the candidate (explicit-date basis)",
+  "6810.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-10-30 != 2026-10-29 (calendar 6m from 2026-04-29); keeping the candidate (explicit-date basis)",
+  "6871.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-05-19",
+  "6871.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-05-18",
+  "6871.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 18C.14: Key Persons and their close associates may not dispose of H Shares in the period ending ON the date which is 12 months from the Listing Date (2027-05-18, inclusive); Pathfinder SIIs free six months earlier (last restricted day 2026-11-18); first free day for Key Persons 2027-05-19",
+  "6871.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-19 != 2027-05-18 (calendar 12m from 2026-05-18); keeping the candidate (explicit-date basis)",
+  "6872.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-23 != 2027-05-22 (calendar 12m from 2026-05-22); keeping the candidate (explicit-date basis)",
+  "6880.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-09 != 2027-01-08 (calendar 6m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "6880.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-09 != 2027-07-08 (calendar 12m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "6915.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-12-31",
+  "6915.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-12-30",
+  "6915.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "6915.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-31 != 2026-12-30 (calendar 6m from 2026-06-30); keeping the candidate (explicit-date basis)",
+  "6938.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-10 != 2026-07-09 (calendar 6m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "6938.HK Controlling_Shareholder_12M_Control: first_free_day 2027-01-10 != 2027-01-09 (calendar 12m from 2026-01-09); keeping the candidate (explicit-date basis)",
+  "6951.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-10 != 2027-01-09 (calendar 6m from 2026-07-09); keeping the candidate (explicit-date basis)",
+  "7656.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-09 != 2027-07-08 (calendar 12m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "7666.HK Controlling_Shareholder_12M_Control: first_free_day 2028-05-14 != 2027-05-13 (calendar 12m from 2026-05-13); keeping the candidate (explicit-date basis)",
+  "7687.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-01-09 != 2027-01-08 (calendar 6m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "7687.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-09 != 2027-07-08 (calendar 12m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "7688.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-11-21 != 2026-11-20 (calendar 6m from 2026-05-20); keeping the candidate (explicit-date basis)",
+  "7688.HK Controlling_Shareholder_12M_Control: first_free_day 2027-05-21 != 2027-05-20 (calendar 12m from 2026-05-20); keeping the candidate (explicit-date basis)",
+  "9611.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: first_free_day=2026-07-23",
+  "9611.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: last_restricted_day=2026-07-22",
+  "9611.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1.",
+  "9611.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-07-23 != 2026-07-22 (calendar 6m from 2026-01-22); keeping the candidate (explicit-date basis)",
+  "9615.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-09-02",
+  "9615.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-09-01",
+  "9615.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 18C.14(1) undertaking to the Stock Exchange: period ends ON the date which is 12 months from the Listing Date (2027-09-01); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+  "9615.HK Controlling_Shareholder_12M_Control: first_free_day 2027-09-02 != 2027-09-01 (calendar 12m from 2026-09-01); keeping the candidate (explicit-date basis)",
+  "9637.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-12-30 != 2026-12-29 (calendar 6m from 2026-06-29); keeping the candidate (explicit-date basis)",
+  "9971.HK Controlling_Shareholder_12M_Control: reviewer correction applied: first_free_day=2027-07-09",
+  "9971.HK Controlling_Shareholder_12M_Control: reviewer correction applied: last_restricted_day=2027-07-08",
+  "9971.HK Controlling_Shareholder_12M_Control: reviewer correction applied: basis=Rule 10.07 + Rule 18C.13 combined undertaking: no disposal of Relevant Securities by the Controlling Shareholders in the single Twelve-Month Period ending ON the date which is twelve months from the Listing Date (2027-07-08, inclusive); first free day 2027-07-09",
+  "9971.HK Controlling_Shareholder_12M_Control: first_free_day 2027-07-09 != 2027-07-08 (calendar 12m from 2026-07-08); keeping the candidate (explicit-date basis)",
+  "9976.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-03-09 != 2027-03-08 (calendar 6m from 2026-09-08); keeping the candidate (explicit-date basis)",
+  "9976.HK Controlling_Shareholder_12M_Control: first_free_day 2027-09-09 != 2027-09-08 (calendar 12m from 2026-09-08); keeping the candidate (explicit-date basis)",
+  "9980.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-04 != 2026-08-03 (calendar 6m from 2026-02-03); keeping the candidate (explicit-date basis)",
+  "9980.HK Controlling_Shareholder_12M_Control: first_free_day 2027-02-04 != 2027-02-03 (calendar 12m from 2026-02-03); keeping the candidate (explicit-date basis)"
+ ],
+ "written_issuers": 106,
+ "report": [
+  {
+   "code": "0068.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0100.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "0100.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2028-01-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "0470.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-11",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-11"
+  },
+  {
+   "code": "0470.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-12",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-11"
+  },
+  {
+   "code": "0470.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-11",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-02-11"
+  },
+  {
+   "code": "0501.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-12",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-12"
+  },
+  {
+   "code": "0501.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-13",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-12"
+  },
+  {
+   "code": "0501.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-12",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-01-12"
+  },
+  {
+   "code": "0537.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0537.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0537.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0600.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-10"
+  },
+  {
+   "code": "0600.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-11",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-10"
+  },
+  {
+   "code": "0625.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-03-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0625.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-03-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0625.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-09-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0664.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "0664.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-01",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "0668.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0668.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-03",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0668.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-03",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0901.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "0901.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1021.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "1021.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-31",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-30"
+  },
+  {
+   "code": "1081.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-05",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1081.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1081.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-05",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1187.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1187.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-07",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1187.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-07",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1191.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1236.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-11",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1236.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-12",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1236.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-12",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1377.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1377.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1377.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1392.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1392.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1511.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-21",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1511.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-05-21",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1609.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-05",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1609.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1609.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-05",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1641.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-13"
+  },
+  {
+   "code": "1641.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-14",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-13"
+  },
+  {
+   "code": "1641.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-01-13"
+  },
+  {
+   "code": "1688.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1688.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1688.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1768.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-28"
+  },
+  {
+   "code": "1768.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-29",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-28"
+  },
+  {
+   "code": "1768.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-01-28"
+  },
+  {
+   "code": "1770.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1770.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1779.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-05",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1779.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1779.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1879.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1879.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2028-04-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1956.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1956.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "1989.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-20",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-20"
+  },
+  {
+   "code": "1989.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-21",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-20"
+  },
+  {
+   "code": "1989.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-20",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-03-20"
+  },
+  {
+   "code": "2041.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-03-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2041.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-09-07",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2249.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2249.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-11",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2249.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-11",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2261.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-02-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2272.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2272.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2290.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2290.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2335.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2335.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-25",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2335.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-25",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2475.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2475.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2475.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2476.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-21",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2476.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-22",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2493.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2493.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2493.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2513.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-09",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-08"
+  },
+  {
+   "code": "2513.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-01-08"
+  },
+  {
+   "code": "2526.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-01",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "2526.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-03-30"
+  },
+  {
+   "code": "2553.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-04",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2553.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-04",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2632.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-24"
+  },
+  {
+   "code": "2632.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-25",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-24"
+  },
+  {
+   "code": "2632.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-25",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-24"
+  },
+  {
+   "code": "2649.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-09"
+  },
+  {
+   "code": "2649.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-09"
+  },
+  {
+   "code": "2667.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-02-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2667.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2667.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-07",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2672.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-06-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2672.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2672.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2675.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-08"
+  },
+  {
+   "code": "2675.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-09",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-08"
+  },
+  {
+   "code": "2675.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-01-08"
+  },
+  {
+   "code": "2677.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "2677.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-07",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "2677.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-07",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-02-06"
+  },
+  {
+   "code": "2692.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-09"
+  },
+  {
+   "code": "2692.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-09"
+  },
+  {
+   "code": "2692.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-03-09"
+  },
+  {
+   "code": "2697.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-31",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2697.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-01",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2701.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-24",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-23"
+  },
+  {
+   "code": "2706.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-13"
+  },
+  {
+   "code": "2706.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-14",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-13"
+  },
+  {
+   "code": "2706.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-02-13"
+  },
+  {
+   "code": "2714.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "2714.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-07",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "2714.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-02-06"
+  },
+  {
+   "code": "2715.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-09"
+  },
+  {
+   "code": "2715.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-09"
+  },
+  {
+   "code": "2715.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-03-09"
+  },
+  {
+   "code": "2720.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-02-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-10"
+  },
+  {
+   "code": "2720.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-11",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-10"
+  },
+  {
+   "code": "2720.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-02-10"
+  },
+  {
+   "code": "2723.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2723.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2726.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-09-30",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "2729.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-25",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-24"
+  },
+  {
+   "code": "2768.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-04",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-04"
+  },
+  {
+   "code": "2768.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-05",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-04"
+  },
+  {
+   "code": "2768.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-05",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-02-04"
+  },
+  {
+   "code": "2797.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "2797.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3200.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "3200.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-07",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-06"
+  },
+  {
+   "code": "3200.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-06",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-02-06"
+  },
+  {
+   "code": "3223.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-02-25",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3231.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-06-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3231.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-09-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3268.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-10"
+  },
+  {
+   "code": "3268.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-11",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-10"
+  },
+  {
+   "code": "3268.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-11",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-10"
+  },
+  {
+   "code": "3277.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3277.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-18",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3277.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3296.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3296.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3296.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3308.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3308.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-31",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3310.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3310.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-28",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3310.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3355.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-09-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-09-23"
+  },
+  {
+   "code": "3355.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-09-24",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-23"
+  },
+  {
+   "code": "3355.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-03-23"
+  },
+  {
+   "code": "3388.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3388.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3388.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3625.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-01",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-31"
+  },
+  {
+   "code": "3636.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "3636.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "3636.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-01-09"
+  },
+  {
+   "code": "3661.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3661.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-27",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3661.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3752.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3752.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3752.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3952.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3952.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-01",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "3986.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-13"
+  },
+  {
+   "code": "6067.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6082.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-02"
+  },
+  {
+   "code": "6082.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-03",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-01-02"
+  },
+  {
+   "code": "6106.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6106.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-25",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6132.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6132.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6132.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-24",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6228.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6636.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-01",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-09-30"
+  },
+  {
+   "code": "6636.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-03-31",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-03-30"
+  },
+  {
+   "code": "6656.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-16",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6656.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6656.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6658.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-03-15",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6658.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-16",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6658.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-16",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6675.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6675.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-18",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6675.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-17",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6715.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6745.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6809.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-09"
+  },
+  {
+   "code": "6810.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-10-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6810.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-10-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6810.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-04-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6871.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-19",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6872.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-22",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6872.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-23",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6880.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6880.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6880.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6915.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6915.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-31",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6915.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-06-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6938.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "6938.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-09"
+  },
+  {
+   "code": "6938.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-01-09"
+  },
+  {
+   "code": "6951.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6951.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-10",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "6951.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7630.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7656.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7666.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7666.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2028-05-14",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7687.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-01-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7687.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-01-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7687.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7688.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-11-20",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7688.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-11-21",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "7688.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-05-21",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9611.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-22",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-22"
+  },
+  {
+   "code": "9611.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-07-23",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-07-22"
+  },
+  {
+   "code": "9611.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-01-22",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2027-01-22"
+  },
+  {
+   "code": "9615.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-03-01",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9615.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-09-02",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9630.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-26",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9637.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-12-29",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9637.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-12-30",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9903.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-07-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-07-08"
+  },
+  {
+   "code": "9971.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-07-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9976.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2027-03-08",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9976.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2027-03-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9976.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-09-09",
+   "differs_from_old_default": 0,
+   "old_default_expiry": ""
+  },
+  {
+   "code": "9980.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-03",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-03"
+  },
+  {
+   "code": "9980.HK",
+   "category": "Controlling_Shareholder_6M_Disposal",
+   "first_free_day": "2026-08-04",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2026-08-03"
+  },
+  {
+   "code": "9980.HK",
+   "category": "Controlling_Shareholder_12M_Control",
+   "first_free_day": "2027-02-04",
+   "differs_from_old_default": 1,
+   "old_default_expiry": "2027-02-03"
+  },
+  {
+   "code": "9981.HK",
+   "category": "Cornerstone_Lockup",
+   "first_free_day": "2026-08-13",
+   "differs_from_old_default": 0,
+   "old_default_expiry": "2026-08-13"
+  }
+ ]
+}

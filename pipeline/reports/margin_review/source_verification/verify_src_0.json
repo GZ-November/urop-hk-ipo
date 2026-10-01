@@ -1,0 +1,35 @@
+{
+ "index": 0,
+ "ledger_url": "https://www.guandian.cn/article/20260129/540627.html",
+ "url_used": "https://www.guandian.cn/article/20260129/540627.html",
+ "fetched_ok": true,
+ "title": "国恩科技港交所招股已获878倍超额认购",
+ "published_at_hkt": "2026-01-29T22:11+08:00",
+ "publisher_chain": "观点网 (Guandian.cn) own article ('观点网讯'); NOT a Zhitong syndication; no Zhitong attribution on page",
+ "survey_scope_wording": "not stated (no broker list; body says '截至当日累计录得孖展额1107.6亿港元'); ledger survey tag 'guandian_unspecified' is consistent",
+ "measurement_time_wording": "截至当日 (article dated 1月29日; '1月29日...正在港交所招股，截至当日累计录得孖展额1107.6亿港元，较公开发售部分集资额1.26亿港元超购878倍')",
+ "rows_on_page": [
+  {
+   "stock": "2768",
+   "name": "国恩科技",
+   "amount_verbatim": "孖展额1107.6亿港元",
+   "multiple_verbatim": "超购878倍 (relative to public-offer tranche of 1.26亿港元, per page)"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2768.HK",
+   "ledger_amount_100m_hkd": 1107.6,
+   "result": "match",
+   "detail": "page: 孖展额1107.6亿港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2768.HK",
+   "subscription_close": "2026-01-30",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Single-stock media report, not a multi-stock survey. Multiple 878x is computed by the publisher vs the public offer portion (HK$126m), not vs total deal. Article dated 2026-01-29; 2768 subscription closes 2026-01-30 per timeline, so amount is a day-before-close snapshot. Ledger date/published_date 2026-01-29 match; no published_at_hkt in ledger (page shows 22:11). Body text says 'H股上市后市值将达178.4亿至180.8亿港元' (a duplicate sentence appears in the fetch). All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-01-29/2026-01-29 consistent with page date."
+}

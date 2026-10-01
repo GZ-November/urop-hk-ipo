@@ -1,0 +1,36 @@
+{
+  "code": "9971.HK",
+  "listing_date": "2026-07-08",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Searched case-insensitive 'cornerstone' across all 407 pages of HKIPO-MB9971.jsonl: only 4 pages hit and none discloses a cornerstone section or lock-up - p35/p101/p315 are the entity name 'Shenzhen Investment Holdings Cornerstone ...' (a related-party fund), p84/p147/p240 are figurative uses, and p275 is an underwriting termination condition referencing 'Cornerstone Investment Agreements'. Although cornerstone investment agreements evidently existed, the prospectus text contains no cornerstone investor list, lock-up terms or 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' section; also checked pp46, 135-136, 237, 276, 400-401 (all lock-up hits: share plans, PRC law, 10.07/18C.13)."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C issuer. The Controlling Shareholders gave a SINGLE combined undertaking under Rule 10.07 AND Rule 18C.13 covering the entire Twelve-Month Period (page 276) instead of the 6m/12m split; it is recorded in controller_12m and no separate six-month undertaking exists. Rule 18C.14 Key Persons/Pathfinder SIIs undertaking (12/6 months) also on page 276."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 276,
+    "full_quote": "By virtue of Rule 10.07 and Rule 18C.13 of the Listing Rules, each of our Controlling Shareholders has undertaken to the Stock Exchange and to our Company that, except pursuant to the Global Offering and the Over-allotment Option, he/she it will not and will procure that the relevant registered holder(s) will not, without the prior written consent of the Stock Exchange or unless otherwise in compliance with the requirements of the Listing Rules in the period commencing on the date by reference to which disclosure of his/her/its shareholding in our Company is made in this prospectus and ending on the date which is twelve months from the Listing Date (the “Twelve-Month Period”), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which he/she/it is shown by this prospectus to be the beneficial owner (the “Relevant Securities”).",
+    "basis": "DEVIATION: single combined Twelve-Month Period undertaking under Rule 10.07 and Rule 18C.13 replaces the 6m/12m split - no disposal of Relevant Securities for twelve months from the Listing Date (absolute, not only to the extent of ceasing control)",
+    "notes": "Combined undertaking placed in the 12m slot; the 6m slot is exists=false. Wording uses 'twelve months' spelled out.",
+    "reference_date": "2026-07-08",
+    "computed_first_free_day": "2027-07-08",
+    "computed_last_restricted_day": "2027-07-07"
+  }
+}

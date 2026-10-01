@@ -1,0 +1,69 @@
+{
+ "index": 4,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1419616",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1419616",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 4月22日",
+ "published_at_hkt": "2026-04-22T18:58+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong (hk.investing.com); published 下午06:58, updated 下午07:15",
+ "survey_scope_wording": "富途證券、輝立證券等券商",
+ "measurement_time_wording": "截至4月22日",
+ "rows_on_page": [
+  {
+   "stock": "06810",
+   "name": "商米科技",
+   "amount_verbatim": "303.35億港元",
+   "multiple_verbatim": "超購逾286.25倍"
+  },
+  {
+   "stock": "01879",
+   "name": "曦智科技",
+   "amount_verbatim": "3635.05億港元",
+   "multiple_verbatim": "超購逾2876.58倍"
+  },
+  {
+   "stock": "02493",
+   "name": "邁威生物",
+   "amount_verbatim": "192.52億港元",
+   "multiple_verbatim": "超購逾133倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "6810.HK",
+   "ledger_amount_100m_hkd": 303.35,
+   "result": "match",
+   "detail": "page: 303.35億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "1879.HK",
+   "ledger_amount_100m_hkd": 3635.05,
+   "result": "match",
+   "detail": "page: 3635.05億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "2493.HK",
+   "ledger_amount_100m_hkd": 192.52,
+   "result": "match",
+   "detail": "page: 192.52億港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "6810.HK",
+   "subscription_close": "2026-04-24",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "1879.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2493.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Verbatim sentence re-fetched: '截至4月22日，富途證券、輝立證券等券商爲商米科技借出303.35億港元，超購逾286.25倍；爲曦智科技借出3635.05億港元，超購逾2876.58倍；爲邁威生物借出192.52億港元，超購逾133倍。' (first-pass summary wrongly rendered 'billion'; the unit is 億 = 100 million HKD.) Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-04-22/2026-04-22 consistent with page date."
+}

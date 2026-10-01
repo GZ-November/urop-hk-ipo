@@ -1,0 +1,78 @@
+{
+ "code": "6871.HK",
+ "pdf_sha256": "1cb41eb46227b641fa628e596822d4c5c5513699a6915dd85bb5d223748c212f",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Jasic Robotics (Angel, Apr 2014)",
+  "Shanghai Dongshu, Ivy Innovation, Xingzhi Wenhua (Pre-A, 2015)",
+  "Shanghai FreeS, Qidi Star, Chuzhe Zhixin, Runzhe Investment, Profit Glory (A1-A3, 2016-17)",
+  "ChinaEquity Chenxin, Lantu Tianxing, Shenzhen Yiyi, Shanghai Qingwang (Keke GP) (Series B, Nov 2017-Jan 2018)",
+  "Broadband Chengbai (China Broadband Capital), Quanzhou Shenglian (B+, Jun 2019; Series D Dec 2021)",
+  "Feitu Xinyuan, Qingkong Yinxing, Ferry Growth, Jiaxing Runze (Series C, Oct-Dec 2020)",
+  "Ivory One, Smart Beauty, Qingkong Yinxing, Broadband Chengbai (Series D, Dec 2021-Jan 2022)",
+  "Yuhuan Investment / Yuhuan Guotou (Series E, Mar-May 2025)",
+  "Fengchi Dianche, Jianhu Yuehu, Guoke Infore, Wanxiang Holding, Caoejiang Construction (Series Pre-IPO, May 2025)"
+ ],
+ "board_roster_reviewed": "Board at listing (11): executive Dr. Zhang Sai (chair), Zhang Zichao, Sun Tongliang, Dou Zhiyuan - no investor link; non-executive Wang Maike (ex-chair of Yuhuan Lupu Economic Development Co., director since May 2025; no explicit link to Yuhuan Investment/Guotou stated - not counted), Lee Shen Kai (partner of Feitu Venture, GP of Feitu Xinyuan; earlier partner at Shanghai Keke PE Fund Mgmt, whose group is GP of pre-IPO investor Shanghai Qingwang) - LINKED, Song Pengfei (VP of China Broadband Capital, ultimate manager of Broadband Chengbai) - LINKED; independent NEDs Xiong Minghua (chair of Seven Seas Management VC firm, not an identified investor), Zhou Shuang, Zhao Fengmei, Wu Qingyao - no link found. Former directors (resigned before listing) not counted.",
+ "rights_and_timing": "Special rights of Pre-IPO investors (including undefined 'corporate governance rights', which investors did exercise) lapse on the Listing Date; no explicit statement of a director appointment/nomination or observer right, and no 'nominated by' wording for Lee or Song. So this is a seated-seat determination based on employee/partner/representative-of-investor-GP/manager biography links, not a documented nomination right. Seats are held at listing (Lee since Jul 2015, Song since Jan 2023). Caveat: links require cross-reading biography with investor profile (name match Feitu Venture; China Broadband Capital).",
+ "evidence": [
+  {
+   "pdf_page": 204,
+   "printed_page": "195",
+   "quote": "Upon the Listing, the Board will consist of eleven Directors, including four executive Directors, three non-executive Directors and four independent non-executive Directors.",
+   "supports": "Board at listing: 11 directors incl. 3 non-executive (Wang Maike, Lee Shen Kai, Song Pengfei).",
+   "interpretation": "Defines the seated board at listing that was tested for investor links."
+  },
+  {
+   "pdf_page": 206,
+   "printed_page": "197",
+   "quote": "Mr. Lee Shen Kai (李笙凱), aged 45, has served as a Director since July 2015, and was redesignated as a non-executive Director in June 2025.",
+   "supports": "Lee Shen Kai is a non-executive Director at listing (director since July 2015).",
+   "interpretation": "Candidate investor-linked NED."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Since July 2020, he has been serving as a partner at Feitu Venture Investment (Beijing) Co., Ltd. (飛圖創業投資(北京)有限公司), a company primarily engaged in venture capital investment",
+   "supports": "Lee is a partner at Feitu Venture Investment (Beijing) Co., Ltd.",
+   "interpretation": "Ties Lee to Feitu Venture."
+  },
+  {
+   "pdf_page": 120,
+   "printed_page": "111",
+   "quote": "The general partner of Feitu Xinyuan is Feitu Venture Investment (Beijing) Co., Ltd. (飛圖創業投資(北京)有限公司) (“Feitu Venture”).",
+   "supports": "Feitu Venture is the GP of Feitu Xinyuan, an identified Pre-IPO investor (equity transfer Oct/Nov 2020).",
+   "interpretation": "Lee (partner of the GP/manager) is explicitly linkable to an identified pre-IPO investor via its GP."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Since October 2016, Mr. Song has served as a vice president of China Broadband Capital, primarily responsible for investment management.",
+   "supports": "Song Pengfei (NED since Jan 2023) is a vice president of China Broadband Capital.",
+   "interpretation": "Candidate investor-linked NED."
+  },
+  {
+   "pdf_page": 115,
+   "printed_page": "106",
+   "quote": "Since its establishment, the investment decision of Broadband Tianjin has been ultimately managed and controlled by China Broadband Capital, which is widely recognized as one of the most",
+   "supports": "Broadband Chengbai (Series B+ 2019 / Series D 2021 Pre-IPO investor; GP Broadband Tianjin) is ultimately managed and controlled by China Broadband Capital.",
+   "interpretation": "Song is an officer of the ultimate manager of an identified Pre-IPO investor."
+  },
+  {
+   "pdf_page": 114,
+   "printed_page": "105",
+   "quote": "information rights, corporate governance rights, performance bet arrangements and equal treatment rights shall automatically lapse and become unenforceable on the Listing Date.",
+   "supports": "Pre-IPO investors' special rights (incl. unspecified corporate governance rights) lapse on the Listing Date.",
+   "interpretation": "No explicit board appointment/observer right is described; rights that exist pre-listing terminate at listing."
+  },
+  {
+   "pdf_page": 114,
+   "printed_page": "105",
+   "quote": "Except for information rights and special corporate governance rights, no Pre-IPO Investor has exercised our Company’s redemption rights during the Track Record Period.",
+   "supports": "Pre-IPO investors exercised information rights and special corporate governance rights before termination.",
+   "interpretation": "Governance rights existed but content not specified as director nomination."
+  }
+ ],
+ "unresolved_reason": ""
+}

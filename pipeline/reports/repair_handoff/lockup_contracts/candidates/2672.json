@@ -1,0 +1,35 @@
+{
+  "code": "2672.HK",
+  "listing_date": "2026-06-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "All cornerstone investors (GLY New Mobility 2. LP, Mr. Ke Jiaqi)",
+    "quote_page": 329,
+    "full_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of our Company, the Joint Sponsors and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of 12 months following the Listing Date, dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investor, including the lock-up period restriction.",
+    "reference_date": "2026-06-29",
+    "basis": "12 months following the Listing Date; restricted period inclusive of Listing Date; computed as 12 calendar months from Listing Date (document states 12 months, not the standard six)",
+    "computed_first_free_day": "2027-06-29",
+    "computed_last_restricted_day": "2027-06-28",
+    "notes": "DEVIATION: cornerstone lock-up here is 12 months ('the period of 12 months following the Listing Date') and requires prior written consent of the Company, the Joint Sponsors and the Overall Coordinators for any disposal. Do not treat as the standard six-month cornerstone lock-up."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 346,
+    "full_quote": "(i) in the period commencing on the date by reference to which disclosure of the Shareholder’s holding of H Shares is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), directly or indirectly dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of our H Shares (or our other securities) in respect of which the Shareholder is shown in this prospectus to be the beneficial owner",
+    "reference_date": "2026-06-29",
+    "basis": "Rule 10.07: period commencing on the prospectus disclosure date and ending on the date which is six months from the Listing Date (the 'First Six-month Period'); computed as six calendar months from Listing Date",
+    "computed_first_free_day": "2026-12-29",
+    "computed_last_restricted_day": "2026-12-28",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 346,
+    "full_quote": "(ii) in the period of six months from the expiry of the First Six-month Period (the “Second Six-month Period”), directly or indirectly, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the H Shares or securities referred to in (i) above if, immediately following the disposal or upon the exercise or enforcement of the options, rights, interests or encumbrances, the Shareholder would cease to be our controlling shareholders",
+    "reference_date": "2026-06-29",
+    "basis": "Rule 10.07(1)(b): Second Six-month Period = six months from expiry of the First Six-month Period, i.e. ends 12 months from Listing Date; disposal restricted if the shareholder would cease to be controlling shareholders",
+    "computed_first_free_day": "2027-06-29",
+    "computed_last_restricted_day": "2027-06-28",
+    "notes": ""
+  }
+}

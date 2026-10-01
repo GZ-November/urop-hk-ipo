@@ -1,0 +1,19 @@
+{
+  "code": "9903.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p361. 'Six months from the Listing Date' (no 'and inclusive of') is still duration wording -> free ON 2026-07-08 (python-verified), last restricted 2026-07-07. Listing Date definition verified in definitions section. Holders described pp352-357 as noted.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed by full read of p368-369: only the Company's Rule 10.08 undertaking, the Company's underwriting covenants, and 'Shanghai Shuqi has also undertaken ... that it shall procure our Company to comply with the undertakings set out above' - procurement covenant only. Zero '10.07' hits; 'controlling shareholder' mentions are generic PRC-regulatory text, not issuer control undertakings.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: no 12-month control-maintenance undertaking anywhere; only the PRC Company Law 12-month lock-up on Pre-IPO Investors (p161) and non-lock-up 36-month mentions (warranty/license terms, Securities Law voting rules on p216/p224/p562). Matches.",
+    "corrections": {}
+  }
+}

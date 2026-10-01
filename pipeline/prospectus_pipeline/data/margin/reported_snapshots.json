@@ -15,7 +15,17 @@
           "stock_code": "2768.HK",
           "amount_100m_hkd": 1107.6
         }
-      ]
+      ],
+      "published_at_hkt": "2026-01-29T22:11+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "not stated (no broker list; body says '截至当日累计录得孖展额1107.6亿港元'); ledger survey tag 'guandian_unspecified' is consistent",
+      "measurement_wording": "截至当日 (article dated 1月29日; '1月29日...正在港交所招股，截至当日累计录得孖展额1107.6亿港元，较公开发售部分集资额1.26亿港元超购878倍')",
+      "scope_class": "unspecified",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_0.json"
+      }
     },
     {
       "date": "2026-04-17",
@@ -30,7 +40,17 @@
           "stock_code": "3296.HK",
           "amount_100m_hkd": 294.17
         }
-      ]
+      ],
+      "published_at_hkt": "2026-04-17T18:34+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商 (article: 截至4月17日，富途證券、輝立證券等券商為華勤技術借出...)",
+      "measurement_wording": "截至4月17日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_1.json"
+      }
     },
     {
       "date": "2026-04-20",
@@ -53,7 +73,17 @@
           "stock_code": "2493.HK",
           "amount_100m_hkd": 26.23
         }
-      ]
+      ],
+      "published_at_hkt": "2026-04-20T18:54+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商",
+      "measurement_wording": "截至4月20日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_2.json"
+      }
     },
     {
       "date": "2026-04-21",
@@ -76,7 +106,17 @@
           "stock_code": "2493.HK",
           "amount_100m_hkd": 57.6
         }
-      ]
+      ],
+      "published_at_hkt": "2026-04-21T18:09+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商",
+      "measurement_wording": "截至4月21日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_3.json"
+      }
     },
     {
       "date": "2026-04-22",
@@ -99,7 +139,17 @@
           "stock_code": "2493.HK",
           "amount_100m_hkd": 192.52
         }
-      ]
+      ],
+      "published_at_hkt": "2026-04-22T18:58+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商",
+      "measurement_wording": "截至4月22日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_4.json"
+      }
     },
     {
       "date": "2026-04-23",
@@ -123,7 +173,16 @@
           "amount_100m_hkd": 432.5
         }
       ],
-      "published_at_hkt": "2026-04-23T18:35:00+08:00"
+      "published_at_hkt": "2026-04-23T18:35+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途证券、辉立证券等券商 (wording as fetched; fetch summary noted the coverage statement is given as an example list)",
+      "measurement_wording": "截至4月23日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_5.json"
+      }
     },
     {
       "date": "2026-04-24",
@@ -143,7 +202,16 @@
           "amount_100m_hkd": 1277.44
         }
       ],
-      "published_at_hkt": "2026-04-24T19:43:00+08:00"
+      "published_at_hkt": "2026-04-24T19:43+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途证券、辉立证券等券商",
+      "measurement_wording": "截至4月24日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_6.json"
+      }
     },
     {
       "date": "2026-06-05",
@@ -158,7 +226,17 @@
           "stock_code": "6658.HK",
           "amount_100m_hkd": 61.2
         }
-      ]
+      ],
+      "published_at_hkt": "2026-06-05T18:38+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商 ('截至6月5日，富途證券、輝立證券等券商爲溜溜梅借出61.2億港元，超購逾121.48倍。')",
+      "measurement_wording": "截至6月5日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_7.json"
+      }
     },
     {
       "date": "2026-06-08",
@@ -174,7 +252,16 @@
           "amount_100m_hkd": 228.17
         }
       ],
-      "published_at_hkt": "2026-06-08T18:32:00+08:00"
+      "published_at_hkt": "2026-06-08T18:32+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商 ('富途證券、輝立證券等券商爲溜溜梅借出')",
+      "measurement_wording": "截至6月8日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_8.json"
+      }
     },
     {
       "date": "2026-06-10",
@@ -194,7 +281,16 @@
           "amount_100m_hkd": 212.1
         }
       ],
-      "published_at_hkt": "2026-06-10T19:47:00+08:00"
+      "published_at_hkt": "2026-06-10T19:47+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途证券、辉立证券等券商",
+      "measurement_wording": "截至6月10日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_9.json"
+      }
     },
     {
       "date": "2026-06-29",
@@ -233,7 +329,17 @@
           "stock_code": "9971.HK",
           "amount_100m_hkd": 64.55
         }
-      ]
+      ],
+      "published_at_hkt": "2026-06-29T20:32+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "富途證券、輝立證券等券商 (verbatim: '截至6月29日，富途證券、輝立證券等券商爲同仁堂醫養借出28.07億港元...')",
+      "measurement_wording": "截至6月29日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_10.json"
+      }
     },
     {
       "date": "2026-06-30",
@@ -308,7 +414,17 @@
           "stock_code": "2523.HK",
           "amount_100m_hkd": 0.5458
         }
-      ]
+      ],
+      "published_at_hkt": "2026-06-30T20:06+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至6月30日，富途證券、輝立證券等券商爲同仁堂醫養借出42.05億港元... (verbatim first clause from page)",
+      "measurement_wording": "截至6月30日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_11.json"
+      }
     },
     {
       "date": "2026-07-01",
@@ -383,7 +499,17 @@
           "stock_code": "2523.HK",
           "amount_100m_hkd": 0.5883
         }
-      ]
+      ],
+      "published_at_hkt": "2026-07-01T20:10+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至7月1日，富途證券、輝立證券等券商",
+      "measurement_wording": "截至7月1日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_12.json"
+      }
     },
     {
       "date": "2026-07-02",
@@ -455,7 +581,16 @@
           "amount_100m_hkd": 1.3139
         }
       ],
-      "published_at_hkt": "2026-07-02T19:20:00+08:00"
+      "published_at_hkt": "2026-07-02T19:20+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至7月2日，富途证券、辉立证券等券商为东方科脉借出65.71亿港元... (simplified characters as printed)",
+      "measurement_wording": "截至7月2日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_13.json"
+      }
     },
     {
       "date": "2026-07-03",
@@ -502,7 +637,17 @@
           "stock_code": "2523.HK",
           "amount_100m_hkd": 1.8262
         }
-      ]
+      ],
+      "published_at_hkt": "2026-07-03T19:37+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至7月3日，富途證券、輝立證券等券商爲普源精電借出32億港元，超購逾27.06倍；爲鼎泰高科借出244.84億港元，超購逾50倍... (verbatim, re-fetched)",
+      "measurement_wording": "截至7月3日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_14.json"
+      }
     },
     {
       "date": "2026-07-06",
@@ -544,8 +689,22 @@
         {
           "stock_code": "6951.HK",
           "amount_100m_hkd": 1404.16
+        },
+        {
+          "stock_code": "2523.HK",
+          "amount_100m_hkd": 14.8
         }
-      ]
+      ],
+      "published_at_hkt": "2026-07-06T19:04+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至7月6日，富途證券、輝立證券等券商爲晶合集成借出313.90億港元，超購逾43.96倍；... (verbatim)",
+      "measurement_wording": "截至7月6日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_15.json"
+      }
     },
     {
       "date": "2026-07-07",
@@ -563,8 +722,22 @@
         {
           "stock_code": "6745.HK",
           "amount_100m_hkd": 152.82
+        },
+        {
+          "stock_code": "2523.HK",
+          "amount_100m_hkd": 439.92
         }
-      ]
+      ],
+      "published_at_hkt": "2026-07-07T19:57+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至7月7日，富途證券、輝立證券等券商爲晶合集成借出1645.34億港元，超購逾234.65倍；爲濱化股份借出152.82億港元，超購逾119.90倍；爲永康控股借出439.92億港元，超購逾3179.94倍。",
+      "measurement_wording": "截至7月7日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_16.json"
+      }
     },
     {
       "date": "2026-09-01",
@@ -587,7 +760,17 @@
           "stock_code": "3231.HK",
           "amount_100m_hkd": 9.86
         }
-      ]
+      ],
+      "published_at_hkt": "2026-09-01T19:09+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至9月1日，富途證券、輝立證券等券商爲麥科田借出114.39億港元，超購逾189.65倍；爲江波龍借出75.92億港元，超購逾11.10倍；爲優地機器人借出9.86億港元，超購逾21.42倍。",
+      "measurement_wording": "截至9月1日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_17.json"
+      }
     },
     {
       "date": "2026-09-02",
@@ -606,7 +789,17 @@
           "stock_code": "3231.HK",
           "amount_100m_hkd": 17.76
         }
-      ]
+      ],
+      "published_at_hkt": "2026-09-02T19:04+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至9月2日，富途證券、輝立證券等券商爲江波龍借出131.09億港元，超購逾20.89倍；爲優地機器人借出17.76億港元，超購逾40.38倍。",
+      "measurement_wording": "截至9月2日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_18.json"
+      }
     },
     {
       "date": "2026-09-03",
@@ -626,7 +819,16 @@
           "amount_100m_hkd": 28.85
         }
       ],
-      "published_at_hkt": "2026-09-03T18:37:00+08:00"
+      "published_at_hkt": "2026-09-03T18:37+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "截至9月3日，富途证券、辉立证券等券商为为江波龙借出170.47亿港元，超购逾26.17倍；为优地机器人借出28.85亿港元，超购逾64.59倍。 (note the doubled 为为 typo is in the page)",
+      "measurement_wording": "截至9月3日",
+      "scope_class": "futu_phillip_and_unnamed_other_brokers",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_19.json"
+      }
     },
     {
       "date": "2026-09-04",
@@ -642,7 +844,23 @@
           "amount_100m_hkd": 42.14
         }
       ],
-      "published_at_hkt": "2026-09-04T14:20:00+08:00"
+      "published_at_hkt": "2026-09-04T14:20+08:00",
+      "published_time_basis": "time printed on the page with no timezone label; Hong Kong time assumed; page-displayed 'updated' times are not used",
+      "survey_scope_wording": "No broker list: \"市场数据显示，集团共获得42.14亿港元孖展认购，以公开集资额0.4399亿港元计，超额认购94.79倍。\" (survey unspecified; not the 富途/辉立 sentence)",
+      "measurement_wording": "截至目前，招股已结束 (verbatim: 优地机器人(03231)于2026年8月31日至9月4日招股，截至目前，招股已结束)",
+      "scope_class": "unspecified",
+      "verification": {
+        "page_reopened": true,
+        "ledger_amounts_match_page": true,
+        "record": "pipeline/reports/margin_review/source_verification/verify_src_20.json"
+      }
+    }
+  ],
+  "conflicts_unresolved": [
+    {
+      "stock_code": "7656.HK",
+      "description": "Reports for 7656.HK on 2026-07-02/03 describe different series and scopes and are not combined. The 2026-07-02 Zhitong survey (226.32亿港元 as of 7月2日, Futu/Phillip and other brokers) is the ledger observation. A Ta Kung Pao print report of 2026-07-04 gives 771.7亿元 for the subscription close on 7月3日 under 'broker data' with no named scope; the Zhitong 7月3日 roundup does not list 7656; an Infocast headline/snippet gives 221億元 as of 7月2日 (page not fetchable). No value is selected or interpolated.",
+      "record": "pipeline/reports/margin_review/source_verification/conflict_7656.json"
     }
   ]
 }

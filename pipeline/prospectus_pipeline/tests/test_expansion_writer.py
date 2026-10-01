@@ -160,7 +160,7 @@ class ExpansionWriterTests(unittest.TestCase):
             workbook.close()
 
             lockups = [
-                {"stock_code": code, "lockup_category": "Cornerstone_6M",
+                {"stock_code": code, "lockup_category": "Cornerstone_Lockup",
                  "car_m5_p5": "-0.05", "car_m20_p20": "0.12", "volume_shock_ratio": "1.7"}
                 for code in ("1111.HK", "2222.HK", "3333.HK")
             ]

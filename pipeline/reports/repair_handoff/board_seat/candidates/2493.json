@@ -1,0 +1,70 @@
+{
+ "code": "2493.HK",
+ "pdf_sha256": "8bb77d19955aa7fdbbdda9d19756bd2264b7700d92e19e0b8db01c410f08e6ee",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Suzhou Yongyu Equity Investment Partnership (fund manager: Hainan Shiyu Private Equity Management Co., Ltd.) - 17,327,000 shares (5.78% before A-share IPO, 4.34% after) in the 2019-March 2020 pre-IPO financing; other pre-IPO investors include Shenzhen Fuhai Stock Toubang No.7, Haitong Innovation Capital, Xiamen Hengyao, Shanghai Xuchao, Anhui Hezhuang, Ganzhou Development No.1, Wuhu Xinde No.1, Zhuhai Huajin Fengying No.2, Shenzhen Zhongkai Fusheng, etc. (one round, RMB1,973.742m, Dec 2019 / March 2020)"
+ ],
+ "board_roster_reviewed": "Ten directors at listing: Tang Chunshan (ED, founder/controller), Liu Datao (Chairman, ED, GM), Wu Hai (ED), Hu Huiguo (ED), Gui Xun (ED, employee rep) - management, no investor link; Wu Yufeng (NED, appointed Dec 2024) - managing partner of Hainan Shiyu Private Equity Management Co., Ltd., which is the fund manager of pre-IPO investor Suzhou Yongyu -> LINKED; Qin Zhengyu, Xu Qing, Zhao Qian, Wang Fang (INEDs) - accountant/physician/academic/IT, no investor link. Former NED Guo Yongqi (June 2020 - Dec 2024, resigned) and former director Xie Ning are not on the board at listing; no investor link stated for them.",
+ "rights_and_timing": "Seat: Wu Yufeng (NED) sits on the board at listing and is managing partner of Shiyu, the fund manager of pre-IPO investor Suzhou Yongyu (pre-IPO round Dec 2019/Mar 2020, later 4.34% post A-share IPO). The prospectus does not say he was 'nominated by' Yongyu, and does not disclose whether Yongyu still holds shares at the Latest Practicable Date (Yongyu is absent from the LPD-period disclosures), so the link is via a partner of the investor's manager. No special-rights/nomination/observer right section for pre-IPO investors was found; waiver text states existing minority (permitted) shareholders have no power to appoint directors or other special rights. Confidence moderate: the link rests on the fund-manager relationship, not an explicit nomination statement.",
+ "evidence": [
+  {
+   "pdf_page": 240,
+   "printed_page": "231",
+   "quote": "Our Board of Directors comprises ten Directors, including five executive Directors, one non-executive Director and four independent non-executive Directors.",
+   "supports": "Board composition at listing; one NED.",
+   "interpretation": "Identifies the non-executive seat (Wu Yufeng)."
+  },
+  {
+   "pdf_page": 244,
+   "printed_page": "235",
+   "quote": "Mr. Wu was appointed as a non-executive Director in December 2024.",
+   "supports": "Wu Yufeng NED appointment date.",
+   "interpretation": "Seat in place at listing."
+  },
+  {
+   "pdf_page": 244,
+   "printed_page": "235",
+   "quote": "Mr. Wu has served as the managing partner of Hainan Shiyu Private Equity Management Co., Ltd.",
+   "supports": "Wu is managing partner of Hainan Shiyu.",
+   "interpretation": "Connects director to Shiyu (fund manager)."
+  },
+  {
+   "pdf_page": 135,
+   "printed_page": "126",
+   "quote": "Suzhou Yongyu is a limited partnership focusing on equity investment in pharmaceutical and healthcare industry and established in the PRC, which is managed by Hainan Shiyu Private Equity Management Co., Ltd.",
+   "supports": "Shiyu is the fund manager of Suzhou Yongyu, a shareholder.",
+   "interpretation": "Links Wu Yufeng's employer to an identified shareholder/pre-IPO investor."
+  },
+  {
+   "pdf_page": 134,
+   "printed_page": "125",
+   "quote": "In March 2020, the registered capital of our Company increased from RMB236.35 million to RMB299.70 million, and the additional registered capital was subscribed and fully paid up by 14 entities at an aggregate consideration of RMB1,279.67 million with cash.",
+   "supports": "Pre-IPO capital injection by financial entities, Dec 2019/March 2020.",
+   "interpretation": "Ownership table on this page lists Suzhou Yongyu (17,327,000 shares, 5.78%) among the post-round shareholders."
+  },
+  {
+   "pdf_page": 131,
+   "printed_page": "122",
+   "quote": "We completed pre-IPO financing in the aggregate amount of RMB1,973.742 million in March 2020",
+   "supports": "Prospectus labels the Dec 2019-Mar 2020 round pre-IPO financing.",
+   "interpretation": "Confirms the round in which financial investors incl. Yongyu invested is the pre-IPO round."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "Suzhou Yongyu Equity Investment Partnership (Limited Partnership) (蘇州永玉股權投資合夥企業(有限合夥))",
+   "supports": "Suzhou Yongyu row in the post-A-share-IPO shareholding table (17,327,000 shares, 4.34%).",
+   "interpretation": "Shows Yongyu remained a shareholder after the pre-IPO round; LPD status not separately disclosed."
+  },
+  {
+   "pdf_page": 83,
+   "printed_page": "74",
+   "quote": "none of the Permitted Existing Shareholders has the power to appoint any Directors nor have any other special rights in our Company",
+   "supports": "Waiver representation about minority shareholders.",
+   "interpretation": "No contractual appointment rights; link therefore rests on Wu Yufeng's employment link, not a right."
+  }
+ ],
+ "unresolved_reason": ""
+}

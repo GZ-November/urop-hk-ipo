@@ -1,0 +1,21 @@
+{
+  "code": "2706.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p425 but the candidate MISSED a term: the p425 restrictions section gives three different terms. Infini and Mega Prime: 'at any time during the period of 6 months following the Listing Date'; JINGSHENG HENGXING: 'at any time during the period of 9 months following the Listing Date'; and JSC International Investment Fund SPC (acting for and on behalf of Etown SP): 'has agreed that without the prior written consent of our Company, the Joint Sponsors and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of 11 months following the Listing Date, dispose of, in any way, any of the Offer Shares it has purchased'. The candidate's quote truncated before the JSC sentence and its notes flag only the 9-month term. All are duration wordings -> free up ON the anniversary: 6mo = 2026-08-13 (Infini, Mega Prime), 9mo = 2026-11-13 (JINGSHENG HENGXING), 11mo = 2027-01-13 (JSC/Etown SP). Keeping the candidate's earliest-free convention, first_free_day 2026-08-13 stands; only the basis needed correcting (python-verified all three anniversaries).",
+    "corrections": {
+      "basis": "Mixed cornerstone terms (all duration wording, free up ON the anniversary of the Listing Date 2026-02-13): Infini and Mega Prime 6 months -> first free 2026-08-13 (last restricted 2026-08-12); JINGSHENG HENGXING 9 months -> first free 2026-11-13 (last restricted 2026-11-12); JSC International Investment Fund SPC (Etown SP) 11 months -> first free 2027-01-13 (last restricted 2027-01-12). computed_* fields retain the earliest (6-month) term."
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p441. Independently confirmed there is NO Rule 10.07 undertaking anywhere (zero '10.07' hits in 646 pages). The First Six-Month Period is defined on p439 in the Hong Kong Underwriting Agreement section: 'during the period commencing on the date of the Hong Kong Underwriting Agreement and ending on, and including, the date that is six months after the Listing Date (the \"First Six-Month Period\")' - inclusive end -> first free 2026-08-14, last restricted 2026-08-13. Mr. Yang is the SLSG member covered; his Second Six-Month Period clause (p441) is only an orderly-market obligation, verified. Underwriting-undertakings headers scan (pp.438-447) shows only (A) Company and (B) Mr. Yang.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p353: 'Pursuant to the PRC Company Law, our Shares issued prior to the Listing shall not be transferred within 12 months from the Listing Date.' Duration wording -> frees ON the 12-month anniversary 2027-02-13, last restricted 2027-02-12 (python-verified). This correctly covers the SLSG's pre-Listing shares in the absence of any Rule 10.07(1)(b) clause; p199 corroborates ('All existing Shareholders (including the Pre-IPO Investors) shall not dispose any of the Shares held by them within the 12 months following the Listing Date as required under the applicable PRC laws'). Basis transparently labels it a PRC statutory restriction, not a 10.07(1)(b) undertaking.",
+    "corrections": {}
+  }
+}

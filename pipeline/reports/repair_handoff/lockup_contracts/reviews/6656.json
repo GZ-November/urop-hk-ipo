@@ -1,0 +1,19 @@
+{
+  "code": "6656.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.224: 'period of six months after the Listing Date (the “Lock-up Period”)'. Duration wording ('after', no 'inclusive of') frees up ON the anniversary: listing 2026-04-16 -> first_free_day=2026-10-16, last_restricted_day=2026-10-15. Correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.271: Rule 10.07 undertaking, paragraph (i) 'ending on the date which is six months from the Listing Date (the “First Six-month Period”)'. Inclusive explicit end -> last_restricted_day=2026-10-16, first_free_day=2026-10-17. Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.271: paragraph (ii) 'in the period of six months from the expiry of the First Six-month Period (the “Second Six-month Period”)', conditional on ceasing to be controlling shareholder, plus the Note 3 to Rule 10.07(2) undertaking on the same page running 'ending on the date which is 12 months from the Listing Date'. Restricted horizon = 12-month anniversary 2027-04-16 inclusive -> first_free_day=2027-04-17, last_restricted_day=2027-04-16. Correct.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,137 @@
+{
+ "index": 10,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1530243",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1530243",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 6月29日",
+ "published_at_hkt": "2026-06-29T20:32+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong (hk.investing.com); published 下午08:32, updated 下午09:15",
+ "survey_scope_wording": "富途證券、輝立證券等券商 (verbatim: '截至6月29日，富途證券、輝立證券等券商爲同仁堂醫養借出28.07億港元...')",
+ "measurement_time_wording": "截至6月29日",
+ "rows_on_page": [
+  {
+   "stock": "02667",
+   "name": "同仁堂醫養",
+   "amount_verbatim": "28.07億港元",
+   "multiple_verbatim": "超購逾40.79倍"
+  },
+  {
+   "stock": "01770",
+   "name": "東方科脈",
+   "amount_verbatim": "6.2485億港元",
+   "multiple_verbatim": "超購逾11.07倍"
+  },
+  {
+   "stock": "06880",
+   "name": "MOMENTA-W",
+   "amount_verbatim": "62.84億港元",
+   "multiple_verbatim": "超購逾9.66倍"
+  },
+  {
+   "stock": "07656",
+   "name": "瑞爲技術",
+   "amount_verbatim": "13.22億港元",
+   "multiple_verbatim": "超購逾42.45倍"
+  },
+  {
+   "stock": "07687",
+   "name": "易控智駕",
+   "amount_verbatim": "12.1億港元",
+   "multiple_verbatim": "超購逾4.26倍"
+  },
+  {
+   "stock": "08090",
+   "name": "寶蓋新材",
+   "amount_verbatim": "2.0368億港元",
+   "multiple_verbatim": "超購逾15.54倍"
+  },
+  {
+   "stock": "09971",
+   "name": "基本半導體",
+   "amount_verbatim": "64.55億港元",
+   "multiple_verbatim": "超購逾148.07倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2667.HK",
+   "ledger_amount_100m_hkd": 28.07,
+   "result": "match",
+   "detail": "page: 28.07億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "1770.HK",
+   "ledger_amount_100m_hkd": 6.2485,
+   "result": "match",
+   "detail": "page: 6.2485億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "6880.HK",
+   "ledger_amount_100m_hkd": 62.84,
+   "result": "match",
+   "detail": "page: 62.84億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "7656.HK",
+   "ledger_amount_100m_hkd": 13.22,
+   "result": "match",
+   "detail": "page: 13.22億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "7687.HK",
+   "ledger_amount_100m_hkd": 12.1,
+   "result": "match",
+   "detail": "page: 12.1億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "8090.HK",
+   "ledger_amount_100m_hkd": 2.0368,
+   "result": "match",
+   "detail": "page: 2.0368億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "9971.HK",
+   "ledger_amount_100m_hkd": 64.55,
+   "result": "match",
+   "detail": "page: 64.55億港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2667.HK",
+   "subscription_close": "2026-07-02",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "1770.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6880.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "7656.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "7687.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "8090.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "9971.HK",
+   "subscription_close": "2026-07-03",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Verbatim sentence re-fetched and matches all seven rows. 8090.HK is not in issuer_timeline.csv (no close date available). Ledger has no published_at_hkt (page 20:32, updated 21:15). Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-06-29/2026-06-29 consistent with page date."
+}

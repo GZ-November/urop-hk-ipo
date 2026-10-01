@@ -1,0 +1,19 @@
+{
+  "code": "3223.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p269. 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-08-25 + 6m = 2027-02-25 first free; last restricted 2027-02-24.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Independent sweep: zero Rule 10.07 references; no controlling-shareholder undertaking anywhere. p280 states Mr. Li Jie 'is not a controlling shareholder of the Company'; the company is held by a dispersed single largest group (Dr. Liu Qiang, Mr. Li Jie, Sihai Junxin, Qingdao Junpin, Lhasa Junpin) with no shareholder-group undertakings given to the Stock Exchange (only 'Undertakings by the Company' appear in the underwriting section, p291, including the Company's own First Six-Month Period). Absence of both controller slots is correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. No Rule 10.07(1)(b) / second-period controlling-shareholder undertaking exists (issuer has no controlling shareholder - see controller_6m). The only 12-month-type clauses are the Company's underwriting/free-float undertakings. Absence is correct.",
+    "corrections": {}
+  }
+}

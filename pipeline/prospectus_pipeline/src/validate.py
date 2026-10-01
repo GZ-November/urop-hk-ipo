@@ -14,6 +14,8 @@ from contracts import (
     strict_load_file,
     validate_record,
 )
+from offer_units import (QUANTITY_FIELDS_ALLOT, QUANTITY_FIELDS_PROSPECTUS, quantity_conflicts,
+                         units_per_offer_unit)
 from storage import atomic_json, official_files
 
 MISSING = {"", None, "nan", "na", "n/a", "none", "-"}
@@ -48,8 +50,10 @@ def apply_da(cfg: dict, only=None, log=print) -> int:
             continue
         da_missing = as_num("col_DA") is None or (f.get("col_DA") or {}).get("source") == "da_formula"
         dc_missing = as_num("col_DC") is None or (f.get("col_DC") or {}).get("source") == "da_formula"
-        expected = cs * (1 - ck) / cz
-        quote = (f"公式：(col_CS {cs:,.0f} − col_CK {ck:.4f}×col_CS) ÷ col_CZ {cz:,.0f}"
+        unit = units_per_offer_unit(normalize_code(rec.get("code", "")))
+        expected = cs * unit * (1 - ck) / cz
+        scale = f"×{unit:g} 股/单位 " if unit != 1 else ""
+        quote = (f"公式：({scale}col_CS {cs:,.0f} − col_CK {ck:.4f}×col_CS) ÷ col_CZ {cz:,.0f}"
                  f" = {expected:.4f}；DC = CZ")
         if da_missing:
             f["col_DA"] = {"value": round(expected, 4), "page": None, "quote": quote,
@@ -102,14 +106,18 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
     M, R, S = g("col_M"), g("col_R"), g("col_S")
     Q, P, L, N, O = g("col_Q"), g("col_P"), g("col_L"), g("col_N"), g("col_O")
     T, U = g("col_T"), g("col_U")
+    unit = units_per_offer_unit(normalize_code(code)) if code != "?" else 1
+    for detail in quantity_conflicts(f, QUANTITY_FIELDS_PROSPECTUS):
+        add("发售数量与引文单位冲突", detail)
     if M is not None and R is not None and S is not None and not close(M, R + S, share_rel_tol, share_abs_tol):
         add("全球发售=配售+公开发售", f"M={M:,.0f} vs R+S={R+S:,.0f}")
     if M is not None and Q is not None and P is not None and not close(M, Q + P, share_rel_tol, share_abs_tol):
         add("全球发售=新股+老股", f"M={M:,.0f} vs Q+P={Q+P:,.0f}")
-    if L is not None and N is not None and Q is not None and not close(L, N + Q, share_rel_tol, share_abs_tol):
-        add("总股本=资本化发行旧股+新股", f"L={L:,.0f} vs N+Q={N+Q:,.0f}")
-    if L is not None and O is not None and M is not None and not close(L, O + M, share_rel_tol, share_abs_tol):
-        add("总股本=资本化后旧股+全球发售", f"L={L:,.0f} vs O+M={O+M:,.0f}")
+    # L/N/O 为标的股份口径；M/Q/P/R/S 为报价单位（股或存托凭证）口径，跨口径比较需换算
+    if L is not None and N is not None and Q is not None and not close(L, N + Q * unit, share_rel_tol, share_abs_tol):
+        add("总股本=资本化发行旧股+新股", f"L={L:,.0f} vs N+Q×{unit:g}={N+Q*unit:,.0f}")
+    if L is not None and O is not None and M is not None and not close(L, O + M * unit, share_rel_tol, share_abs_tol):
+        add("总股本=资本化后旧股+全球发售", f"L={L:,.0f} vs O+M×{unit:g}={O+M*unit:,.0f}")
 
     for yr, (a, e, li) in {"year-1": ("col_Y", "col_AB", "col_AE"),
                            "year-2": ("col_X", "col_AA", "col_AD"),
@@ -218,6 +226,9 @@ def check_allot(rec: dict, ctx: dict) -> list[dict]:
     CS, CT, CU = g("col_CS"), g("col_CT"), g("col_CU")
     CV, CK, CM = g("col_CV"), g("col_CK"), g("col_CM")
     CY, DA, CN, CO, CX = g("col_CY"), g("col_DA"), g("col_CN"), g("col_CO"), g("col_CX")
+    unit = units_per_offer_unit(normalize_code(code)) if code != "?" else 1
+    for detail in quantity_conflicts(f, QUANTITY_FIELDS_ALLOT):
+        add("配发数量与引文单位冲突", detail)
 
     if CS is not None and CT is not None and CU is not None and not close(CT + CU, CS, 1e-9, 1.0):
         add("最终公开+配售=最终全球发售", f"CT+CU={CT+CU:,.0f} vs CS={CS:,.0f}")
@@ -254,10 +265,10 @@ def check_allot(rec: dict, ctx: dict) -> list[dict]:
         # 自由流通百分比 ≈ (发售股份 − 基石股份) ÷ 上市时已发行股份
         denom = CZ if CZ else None
         if denom:
-            expected = CS * (1 - CK) / denom
+            expected = CS * unit * (1 - CK) / denom
             if abs(DA - expected) > 0.20 * max(expected, 1e-9):
                 add("自由流通比例口径可疑",
-                    f"DA={DA:.4f} 与 (CS×(1−CK))/CZ={expected:.4f} 相差过大；"
+                    f"DA={DA:.4f} 与 (CS×{unit:g}×(1−CK))/CZ={expected:.4f} 相差过大；"
                     f"注意不要用 CY−CK 的算法（会漏掉其他禁售股东）")
 
     # --- 超额配售（绿鞋）：只认上市后港交所的行使/失效公告，不接受从配发公告反推 ---

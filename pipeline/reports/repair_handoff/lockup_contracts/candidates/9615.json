@@ -1,0 +1,35 @@
+{
+  "code": "9615.HK",
+  "listing_date": "2026-09-01",
+  "cornerstone": {
+    "exists": true,
+    "holders": "All cornerstone investors (Baillie Gifford, Taikang Life, Invus, Jane Street, Ghisallo, Ruihua, NGS Super Fund, E Fund, Golden Link)",
+    "quote_page": 253,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries, entities under the same management or control (as the case maybe) who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-09-01",
+    "basis": "six months from (and inclusive of) the Listing Date; restricted period inclusive of Listing Date",
+    "computed_first_free_day": "2027-03-01",
+    "computed_last_restricted_day": "2027-02-28",
+    "notes": "Section 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' in the Underwriting/Cornerstone Investors chapter."
+  },
+  "controller_6m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No six-month controlling shareholder undertaking disclosed. The issuer is a Chapter 18C listing with no controlling shareholder; the Rule 18C.14(1) undertaking covers the Key Persons (Mr. Shao, Mech-Mind Management, Mr. Fu, Dr. Ding) for 12 months — see controller_12m. The 6-month window applies only to the Pathfinder SIIs under Rule 18C.14(2) (p299). Searched '10.07' (zero hits), 'six months from the Listing Date' (only the Company's Rule 10.08 undertaking, p298, and the Pathfinder SII undertaking, p299), 'not dispose', 'Controlling Shareholder' (only third-party/PRC-law contexts)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 298,
+    "full_quote": "Pursuant to Rule 18C.14(1) of the Listing Rules, each of the key persons and their close associates (the “Key Persons”), comprising Mr. Shao, Mech-Mind Management, Mr. Fu and Dr. Ding, has irrevocably and unconditionally undertaken to us and to the Stock Exchange that except pursuant to the Global Offering, or the Over-allotment Option, it/he/she shall not and shall procure that its/his/her respective close associates and the relevant registered Shareholder(s) controlled by it/him/her shall not, in the period commencing on the date by reference to which disclosure of its/his/her shareholdings (or its/his/her respective close associate’s shareholdings, if applicable) in our Company is made in this Prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as (i) pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong) for a bona fide commercial loan, or (ii) disposing any interest in such securities of our Company in the circumstances provided under Rule 18C.15 of the Listing Rules) in respect of, any of our securities that it/he/she (or its/his/her respective close associate, if applicable) is shown to beneficially own in this Prospectus",
+    "reference_date": "2026-09-01",
+    "basis": "Rule 18C.14(1) undertaking to the Stock Exchange: period commencing on the prospectus disclosure date and ending on the date which is 12 months from the Listing Date; computed as 12 calendar months from Listing Date",
+    "computed_first_free_day": "2027-09-01",
+    "computed_last_restricted_day": "2027-08-31",
+    "notes": "Holders are the Key Persons: Mr. Shao, Mech-Mind Management, Mr. Fu and Dr. Ding. Additionally, the Single Largest Group of Shareholders undertook under the Hong Kong Underwriting Agreement (p301) not to dispose during the '12-Month Period' of 12 months from and including the Listing Date."
+  }
+}

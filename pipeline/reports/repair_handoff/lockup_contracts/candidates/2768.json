@@ -1,0 +1,35 @@
+{
+  "code": "2768.HK",
+  "listing_date": "2026-02-04",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Nice First; SLD International; Cheng A International; Shenwan Hongyuan Securities; First Seafront Fund Series SPC; New Harvest; Luminous Horizon; Fullgoal HK",
+    "quote_page": 272,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months following the Listing Date (the “Lock-up Period”), dispose of any of the Offer Shares it has purchased pursuant to the relevant Cornerstone Investment Agreement, save for in certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-02-04",
+    "basis": "six months following the Listing Date; no 'inclusive of' language, so the standard six-month lock-up measured from the Listing Date: the restricted period ends the day before the six-month calendar anniversary",
+    "computed_first_free_day": "2026-08-04",
+    "computed_last_restricted_day": "2026-08-03",
+    "notes": "Wording is 'six months following the Listing Date' rather than 'from (and inclusive of) the Listing Date'."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 361,
+    "full_quote": "Pursuant to Rule 10.07(1) of the Listing Rules, each of our Controlling Shareholders has undertaken to the Stock Exchange that, except pursuant to the Global Offering, he/she/it shall not and shall procure that the relevant registered holder(s) of the Shares will not: (a) in the period commencing on the date by reference to which disclosure of his/her/its shareholding in our Company is made in this prospectus and ending on the expiration date of the First Six-month Period, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of those Shares or securities of our Company in respect of which he/she/it is shown by this prospectus to be the beneficial owner; and",
+    "reference_date": "2026-02-04",
+    "basis": "Rule 10.07(1)(a); restricted period ends on the expiration date of the First Six-month Period, which the Rule 10.08 undertaking on the same page defines as six months from the Listing Date (i.e., 2026-08-04); a period 'ending on' that date includes it, so the last restricted day is 2026-08-04 and the first free day is 2026-08-05",
+    "computed_first_free_day": "2026-08-05",
+    "computed_last_restricted_day": "2026-08-04",
+    "notes": "'First Six-month Period' is defined in the Company's Rule 10.08 undertaking on p. 361 ('within six months from the Listing Date (the “First Six-month Period”)')."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 361,
+    "full_quote": "(b) in the period of six months commencing on the date on which the First Six-month Period expires (the “Second Six-month Period”), dispose of, or enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares or securities referred to in paragraph (a) above if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, he/she/it would cease to be our controlling shareholder (as defined in the Listing Rules).",
+    "reference_date": "2026-02-04",
+    "basis": "Rule 10.07(1)(b): second six-month period conditional on loss of controlling-shareholder status; together with the Note (2)/Note (3) undertaking quoted on p. 362 ('ending on the date which is 12 months from the Listing Date') the restricted horizon is anchored on the 12-month anniversary (inclusive end)",
+    "computed_first_free_day": "2027-02-05",
+    "computed_last_restricted_day": "2027-02-04",
+    "notes": "Note undertaking on p. 362 runs 'within the period commencing on the date by reference to which disclosure of his/its shareholding in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date'; the Second Six-month Period under paragraph (b) commences on the expiry of the First Six-month Period."
+  }
+}

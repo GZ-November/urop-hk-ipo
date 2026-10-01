@@ -1,0 +1,35 @@
+{
+  "_readme": "Underlying shares represented by one quoted offer unit. Absent codes have ratio 1 (shares). A ratio needs cited evidence from the original disclosure. Offer quantities (offer size, public/placing split, applications, greenshoe, first-day volume) stay in the quoted unit so that price x quantity = proceeds; only comparisons with share capital multiply by this ratio.",
+  "6228.HK": {
+    "issuer": "PT Merdeka Gold Resources Tbk",
+    "offer_unit": "HDR (Hong Kong depositary receipt)",
+    "underlying_shares_per_offer_unit": 10,
+    "price_quoted_per": "HDR (HK$26.60)",
+    "board_lot_offer_units": 100,
+    "evidence": [
+      {
+        "document": "Prospectus dated 2026-06-17",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0617/2026061700075.pdf",
+        "pdf_sha256": "c85369ce3353522182c950ff19efd16fde7e32f04a85e90c706586b4a0e47bfe",
+        "pdf_page": 24,
+        "printed_page": "15",
+        "quote": "(3) Each Sale HDRs represent 10 Shares."
+      },
+      {
+        "document": "Prospectus dated 2026-06-17",
+        "pdf_sha256": "c85369ce3353522182c950ff19efd16fde7e32f04a85e90c706586b4a0e47bfe",
+        "pdf_page": 23,
+        "printed_page": "14",
+        "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders (representing 896,686,000 underlying Shares)"
+      },
+      {
+        "document": "Announcement of final offer price and allotment results dated 2026-06-25",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0625/2026062502338.pdf",
+        "pdf_sha256": "cdee62f914de9fa2dda5462d56623e893bdfaf5952281e96bf4d7dab65aaae71",
+        "pdf_page": 5,
+        "quote": "Ping An of China Asset Management (Hong Kong) Company Limited / (中國平安人壽保險股份有限公司) (“Ping An AM”) 8,838,200 9.86% 9.86% 0.60%"
+      }
+    ],
+    "consistency_checks": "8,838,200 HDRs x 10 / 14,731,366,060 issued shares = 0.5999% (announced 0.60%); Offer HDRs 89,668,600 x HK$26.60 = HK$2,385,184,760 (announced gross HK$2,385.18 million); valid HDRs applied 39,645,800 / 8,966,900 Hong Kong Offer HDRs = 4.4213 (announced 4.42 times)."
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "code": "6915.HK",
+ "reviewer": "independent reviewer subagent R3",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_with_changes",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "Since April 2018, he has been the chairperson of the board of Shenzhen Heli Investment Fund Management Co.,",
+   "interpretation": "Non-executive Director Mr. Xiao Changqing (Director since June 2021, NED at listing) is chairperson of Shenzhen Heli Investment Fund Management Co., Ltd. (深圳市合利私募股權基金管理有限公司)."
+  },
+  {
+   "pdf_page": 140,
+   "printed_page": "131",
+   "quote": "Heli No. 7 is a limited partnership established under the laws of the PRC and is an private equity fund managed by its general partner, Shenzhen Heli Investment Fund Management Co., Ltd.",
+   "interpretation": "Heli No. 7 is listed among the institutional Pre-IPO Investors; its GP bears the same full name (Chinese name identical) as the firm Xiao chairs."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "Below sets out information of our institutional Pre-IPO Investors.",
+   "interpretation": "Heli No. 7 is item 9 in this list of institutional Pre-IPO Investors."
+  }
+ ],
+ "findings": "Read PDF independently first and reached the same result. Candidate's 7 quotes all verified verbatim on the cited pages with correct printed-page mapping. Changes: (a) the candidate's pdf p210 quote is a mid-sentence fragment duplicating p209 and is replaced by the p209 quote; (b) candidate's other evidence (Yu Ailian, Jiaxing Jiaci rights) is negative context, not needed for the record. Link: Xiao is an officer (board chairperson) of the GP/manager of an identified Pre-IPO investor, which meets the reviewing standard; the name match is complete (full English and Chinese registered name identical on pdf p209 and p140), not merely a similar brand. Agree Yu Ailian (LP in employee platform only) and INEDs are not linked. No investor nomination/board/observer right is disclosed for any Pre-IPO investor (only info/MFN/divestment rights, terminated before listing application, pdf p138).",
+ "residual_uncertainty": "Weakest of the three: prospectus does not say Heli nominated Xiao; he joined the board (June 2021) before Heli No. 7 acquired ~0.19% by equity transfer from Qianhai Tianzheng (April 2022); the prospectus calls Heli No. 7 an Independent Third Party without mentioning Xiao's role; Heli No. 7 is not among the Series A/B/B+ subscribers. Value 1 rests solely on the officer-of-GP link and would be unresolved under a stricter nomination-required reading."
+}

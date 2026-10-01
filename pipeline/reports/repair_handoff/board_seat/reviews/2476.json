@@ -1,0 +1,31 @@
+{
+ "code": "2476.HK",
+ "reviewer": "independent reviewer subagent R5",
+ "read_independently_before_candidate": true,
+ "own_classification": "unresolved",
+ "candidate_classification": "supports_0",
+ "verdict": "reject_candidate",
+ "approved_value": null,
+ "approved_evidence": [
+  {
+   "pdf_page": 62,
+   "printed_page": "52",
+   "quote": "none of the Existing Minority Shareholders has the right to appoint any Directors and/or any other special rights;",
+   "interpretation": "Only affirmative-sounding text on shareholder appointment rights; it is a waiver condition applying to H-share placees among <5% A-share holders, not a statement that no pre-IPO investors exist or hold seats."
+  },
+  {
+   "pdf_page": 173,
+   "printed_page": "163",
+   "quote": "Mr. Chen Tao is her spouse and Mr. Chen Yong is her brother-in-law.",
+   "interpretation": "The only NED, Liu Chunlan, is the chairman's spouse (controlling family), not an investor representative; roster shows no investor-linked director."
+  },
+  {
+   "pdf_page": 123,
+   "printed_page": "113",
+   "quote": "We introduced several institutional investors to optimize our equity structure.",
+   "interpretation": "Early institutional (pre-A-share-IPO) investors existed (2011); the prospectus never states whether any holds or held board/observer rights."
+  }
+ ],
+ "findings": "Read independently first. No 'Pre-IPO Investors' section for this A+H issuer (no occurrence of 'pre-IPO' in the text). Roster (pdf p173-176): no director is linked to any investor, so nothing supports 1. Candidate's supports_0 rests on (a) waiver condition (iii) (pdf p62), which is a stipulated condition of a waiver for a subset of <5% A-share holders, not a prospectus statement that no pre-IPO investor holds/nominates a seat and not among the confirmations the Company gives; (b) a substantial-shareholder table snippet; (c) generic directors' 'no other relationship' confirmation. None is an explicit statement of no such rights/seat or of no pre-IPO investments. Under the schema (absence of evidence is not 0) this is unresolved. All candidate quotes were verified verbatim and page/printed mapping is correct; the issue is interpretation only. If the project treats an A+H issuer with no disclosed pre-IPO investment programme and a clean roster as 0, that is a policy choice, not established by the text.",
+ "residual_uncertainty": "Historic institutional investors (Oriental Fortune, Guoke Ruihua etc., 2011-2012, pdf p124) and 2017/2021/2025 A-share placement subscribers (pdf p126) have no disclosed board/observer rights and no seat on the current board, but no explicit negative statement exists. Would flip to supports_0 only if the project accepts waiver condition (iii) plus a clean roster as affirmative evidence."
+}

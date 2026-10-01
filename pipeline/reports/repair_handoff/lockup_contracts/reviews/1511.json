@@ -1,0 +1,26 @@
+{
+  "code": "1511.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p245. DATE CORRECTION: the clause runs 'commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six months after the Listing Date' - an explicit inclusive endpoint, so it frees up the day AFTER the anniversary: first_free_day = 2026-11-21, last_restricted_day = 2026-11-20. Candidate's 2026-11-20/2026-11-19 stopped one day early. Holders verified: Xiongan Autonomous Driving, CYGG Holding, Starwin International A LPF (p241).",
+    "corrections": {
+      "first_free_day": "2026-11-21",
+      "last_restricted_day": "2026-11-20"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p300: 18C deviation (single 12-month disposal undertaking citing Rules 10.07(1)(a), 18C.13 and 18C.14, replacing the standard six-month limb) is correctly captured. DATE CORRECTION: the clause ends 'on the date which is 12 months from the Listing Date' - explicit inclusive end ON the anniversary (2027-05-20), so first free = 2027-05-21. Candidate's 2027-05-20 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2027-05-21",
+      "last_restricted_day": "2027-05-20",
+      "basis": "Chapter 18C: single 12-month disposal undertaking under Rules 10.07(1)(a), 18C.13 and 18C.14 commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending 'on the date which is 12 months from the Listing Date' (inclusive end ON the anniversary); first free day = anniversary + 1 = 2027-05-21."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. No Rule 10.07(1)(b) control-maintenance limb for controllers: 'cease to be a Controlling Shareholder' 0 hits; the only 'Second Six-Month Period' (p303) belongs to the Company's Rule 10.08 undertaking, and the Key Persons'/Pathfinder SII undertakings (p301) are single-period 12-month/6-month restrictions under Rule 18C.14. The 12-month window is covered by the undertaking quoted under controller_6m.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "code": "6872.HK",
+  "listing_date": "2026-05-22",
+  "cornerstone": {
+    "exists": true,
+    "holders": "AMR Action Fund, L.P.; AMR Action Fund, SCSp; Hua Yuan International Limited; Orient Asset Management (Hong Kong) Limited; June Star Global Limited",
+    "quote_page": 291,
+    "full_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of each of our Company, the Overall Coordinators and the Joint Sponsors, it will not, whether directly or indirectly, at any time during the period of six months from and including the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investors, including the Lock-up Period restriction.",
+    "reference_date": "2026-05-22",
+    "basis": "six months from and including the Listing Date; restricted period inclusive of the Listing Date, ending the day before the six-month calendar anniversary",
+    "computed_first_free_day": "2026-11-22",
+    "computed_last_restricted_day": "2026-11-21",
+    "notes": ""
+  },
+  "controller_6m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07 undertaking — the term '10.07' does not appear anywhere in the prospectus (searched '10.07', 'Controlling Shareholder', 'undertak', 'not dispose'). Dr. Ma (chairman and CEO) instead gave a single combined 12-month disposal undertaking under the Hong Kong Underwriting Agreement covering both the First Six-Month Period and the Second Six-Month Period (p. 326), which is recorded in controller_12m."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 326,
+    "full_quote": "Dr. Ma has undertaken to each of the Company, the Joint Sponsors, the Overall Coordinators, the Joint Global Coordinators, the Joint Bookrunners, the Joint Lead Managers, the Hong Kong Underwriters and the Capital Market Intermediaries that he will not, and will procure that none of his affiliates will, at any time during the First-Six Month Period and the Second-Six Month Period, without the prior written consent of the Joint Sponsors and the Overall Coordinators (for themselves and on behalf of the Hong Kong Underwriters): (i) offer, accept subscription for, pledge, charge, allot, issue, sell, lend, mortgage, assign, contract to allot, issue or sell, sell any option or contract to purchase, purchase any option or contract to sell, grant or agree to grant any option, right or warrant to purchase or subscribe for, lend or otherwise transfer or dispose of, either directly or indirectly, conditionally or unconditionally, or repurchase any of his share capital or other securities of the Company or any interest therein (including but not limited to any securities convertible into or exercisable or exchangeable for or that represent the right to receive any such share capital or securities or any interest therein); or",
+    "reference_date": "2026-05-22",
+    "basis": "single combined 12-month no-disposal undertaking by Dr. Ma under the Hong Kong Underwriting Agreement, replacing the 6m/12m split; the First Six-Month Period runs to, and including, the date that is six months after the Listing Date (p. 325) and the Second Six-Month Period runs for a further six months, so the restriction ends on 2027-05-22 (inclusive end)",
+    "computed_first_free_day": "2027-05-23",
+    "computed_last_restricted_day": "2027-05-22",
+    "notes": "First Six-Month Period defined on p. 325 as 'ending on, and including, the date that is six months after the Listing Date'; Second Six Month Period defined as 'six months commencing on the date on which the First Six Month Period expires' (p. 325). No Rule 10.07 undertaking to the Stock Exchange exists (no '10.07' anywhere)."
+  }
+}

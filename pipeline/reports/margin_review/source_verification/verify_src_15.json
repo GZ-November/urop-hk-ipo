@@ -1,0 +1,173 @@
+{
+ "index": 15,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1539561",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1539561",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 7月6日",
+ "published_at_hkt": "2026-07-06T19:04+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong; page shows published 19:04, updated 19:15",
+ "survey_scope_wording": "截至7月6日，富途證券、輝立證券等券商爲晶合集成借出313.90億港元，超購逾43.96倍；... (verbatim)",
+ "measurement_time_wording": "截至7月6日",
+ "rows_on_page": [
+  {
+   "stock": "02249",
+   "name": "晶合集成",
+   "amount_verbatim": "313.90億港元",
+   "multiple_verbatim": "超購逾43.96倍"
+  },
+  {
+   "stock": "06745",
+   "name": "濱化股份",
+   "amount_verbatim": "35.04億港元",
+   "multiple_verbatim": "超購逾26.72倍"
+  },
+  {
+   "stock": "02523",
+   "name": "永康控股",
+   "amount_verbatim": "14.80億港元",
+   "multiple_verbatim": "超購逾105.98倍"
+  },
+  {
+   "stock": "02475",
+   "name": "立訊精密",
+   "amount_verbatim": "59.47億港元",
+   "multiple_verbatim": "超購逾1.45倍"
+  },
+  {
+   "stock": "03752",
+   "name": "珞石機器人",
+   "amount_verbatim": "86.14億港元",
+   "multiple_verbatim": "超購逾97.43倍"
+  },
+  {
+   "stock": "02797",
+   "name": "齊雲山食品",
+   "amount_verbatim": "158.05億港元",
+   "multiple_verbatim": "超購逾789.27倍"
+  },
+  {
+   "stock": "00537",
+   "name": "普源精電",
+   "amount_verbatim": "107.22億港元",
+   "multiple_verbatim": "超購逾93.02倍"
+  },
+  {
+   "stock": "01377",
+   "name": "鼎泰高科",
+   "amount_verbatim": "905.31億港元",
+   "multiple_verbatim": "超購逾187.60倍"
+  },
+  {
+   "stock": "06951",
+   "name": "三環集團",
+   "amount_verbatim": "1404.16億港元",
+   "multiple_verbatim": "超購逾195.17倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2249.HK",
+   "ledger_amount_100m_hkd": 313.9,
+   "result": "match",
+   "detail": "page: 313.90億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6745.HK",
+   "ledger_amount_100m_hkd": 35.04,
+   "result": "match",
+   "detail": "page: 35.04億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2475.HK",
+   "ledger_amount_100m_hkd": 59.47,
+   "result": "match",
+   "detail": "page: 59.47億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "3752.HK",
+   "ledger_amount_100m_hkd": 86.14,
+   "result": "match",
+   "detail": "page: 86.14億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2797.HK",
+   "ledger_amount_100m_hkd": 158.05,
+   "result": "match",
+   "detail": "page: 158.05億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "0537.HK",
+   "ledger_amount_100m_hkd": 107.22,
+   "result": "match",
+   "detail": "page: 107.22億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "1377.HK",
+   "ledger_amount_100m_hkd": 905.31,
+   "result": "match",
+   "detail": "page: 905.31億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "6951.HK",
+   "ledger_amount_100m_hkd": 1404.16,
+   "result": "match",
+   "detail": "page: 1404.16億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "2523.HK",
+   "ledger_amount_100m_hkd": null,
+   "result": "page_row_missing_from_ledger",
+   "detail": "page: 14.80億港元, 超購逾105.98倍"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2249.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6745.HK",
+   "subscription_close": "2026-07-07",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2523.HK",
+   "subscription_close": "not in issuer_timeline.csv",
+   "article_date_is_close_day": null
+  },
+  {
+   "stock_code": "2475.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "3752.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "2797.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "0537.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "1377.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "6951.HK",
+   "subscription_close": "2026-07-06",
+   "article_date_is_close_day": true
+  }
+ ],
+ "ledger_published_at_hkt": null,
+ "ledger_published_at_check": "ledger_has_none",
+ "notes": "Intro verbatim: 晶合集成(02249)、濱化股份(06745)、永康控股(02523)正在招股中，立訊精密(02475)、珞石機器人(03752)、齊雲山食品(02797)、普源精電(00537)、鼎泰高科(01377)、三環集團(06951)招股結束。 LEDGER OMISSION: 02523 永康控股 (14.80億港元, 超購逾105.98倍) is on the page but absent from ledger obs for this source. (An early WebFetch summary rendered it as HK$148 million; verbatim re-fetch shows 14.80億港元, consistent with the 1.3139億 -> 1.8262億 -> 14.80億 -> 439.92億 trajectory.) Closing-day set: 02475/03752/02797/00537/01377/06951 close 2026-07-06 so these rows are measured on the close day; 02249/06745 close 2026-07-07."
+}

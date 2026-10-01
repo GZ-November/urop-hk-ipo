@@ -1,0 +1,19 @@
+{
+  "code": "3268.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p389. 'six months from (and inclusive of) the Listing Date' -> frees ON the anniversary: 2026-03-10 + 6m = 2026-09-10 first free, last restricted 2026-09-09. Matches candidate. Holders confirmed (Baoyue Lake, Meiko, Harvest, Jinyi, China Winning).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p404. 'ending on the date which is six months from the Listing Date' - explicit inclusive end -> first free 2026-09-11, last restricted 2026-09-10. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p404. Second Six-month Period from expiry of the First -> ends 12 months from Listing Date 2027-03-10 (inclusive) -> first free 2027-03-11. Matches candidate. Restricted-share scheme unlocking tranches (p686) are employee incentive shares, out of scope.",
+    "corrections": {}
+  }
+}

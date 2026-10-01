@@ -380,7 +380,9 @@ def derived_allowed(record, key, target="prospectus", context=None):
         if not all(finite_number(v) for v in values) or values[2] <= 0:
             return False
         cs, ck, cz = values
-        expected = {"col_DA": round(cs * (1 - ck) / cz, 4),
+        from offer_units import units_per_offer_unit
+        unit = units_per_offer_unit(normalize_code(record.get("code")))
+        expected = {"col_DA": round(cs * unit * (1 - ck) / cz, 4),
                     "col_DC": int(round(cz)), "col_DB": DA_DESCRIPTION}[key]
         return value == expected
     if source == "cornerstone_absence":

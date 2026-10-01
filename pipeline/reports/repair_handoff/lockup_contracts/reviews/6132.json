@@ -1,0 +1,23 @@
+{
+  "code": "6132.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p266. Decisive wording: 'during the period commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date (the “Lock-up Period”)'. Explicit inclusive END: last restricted day = 2026-06-23 + 6m = 2026-12-23, first free day = 2026-12-24. The candidate's notes even state 'restricted period inclusive of both the Listing Date and the date falling six months after' but computed the anniversary-exclusive dates (2026-12-23/2026-12-22) - corrected per convention.",
+    "corrections": {
+      "first_free_day": "2026-12-24",
+      "last_restricted_day": "2026-12-23",
+      "basis": "restricted period commencing on (and inclusive of) the Listing Date (2026-06-23) and ending on (and inclusive of) the date falling six (6) months after the Listing Date (2026-12-23); both endpoints expressly inclusive, so first free day is the day after the inclusive end"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p298. 'ending on the date which is six months from the Listing Date' - explicit inclusive end: 2026-06-23 + 6m = 2026-12-23 last restricted, first free 2026-12-24. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p298; the clause breaks mid-sentence and the continuation on p299 is confirmed verbatim: 'Relevant Shares to such extent that, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, he/it would then cease to be the Controlling Shareholders of the Company for the purpose of the Listing Rules.' Second six-month period from expiry of the First -> ends 12 months from Listing Date 2027-06-23 (inclusive) -> first free 2027-06-24. Matches candidate. PRC Company Law 12-month lock-up on all current shares (p150) is statutory, out of slot scope.",
+    "corrections": {}
+  }
+}

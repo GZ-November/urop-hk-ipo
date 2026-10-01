@@ -1,0 +1,23 @@
+{
+  "code": "1021.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p242. 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-03-30 + 6m = 2026-09-30 first free; last restricted 2026-09-29. Verified independently that no longer cornerstone lock-up exists in this prospectus.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C listing: independent sweep found no Rule 10.07 reference and no six-month controlling-shareholder disposal undertaking. The only 6-month window applies to Pathfinder SIIs under Rules 18C.13/18C.14 (p297). The other six-month clauses are the Company's Rule 10.08 undertaking and the Company's Hong Kong Underwriting Agreement undertaking (p297-298), not controlling-shareholder restrictions. Absence is correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p297. The 18C.13/18C.14 undertaking states an explicit end date: 'at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this Prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date'. The period ends ON 2027-03-30, so that date is the last restricted day and the first free day is 2027-03-31. Corroborated by the Hong Kong Underwriting Agreement undertaking (p299): 'at any time during the period commencing on the date of the Hong Kong Underwriting Agreement and ending on, and including, the date that is 12 months after the Listing Date (\"12-Month Period\")' - an explicitly inclusive end on the same date. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2027-03-31",
+      "last_restricted_day": "2027-03-30",
+      "basis": "Rules 18C.13/18C.14: period ends ON the date which is 12 months from the Listing Date (2027-03-30); explicit end date (also 'ending on, and including, the date that is 12 months after the Listing Date' in the p299 underwriting-agreement undertaking) makes 2027-03-30 the last restricted day, so first_free_day = anniversary + 1"
+    }
+  }
+}

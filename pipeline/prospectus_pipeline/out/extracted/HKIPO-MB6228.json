@@ -8,10 +8,11 @@
       "confidence": "high"
     },
     "col_M": {
-      "value": 896686000,
+      "value": 89668600,
       "page": 23,
       "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders (representing 896,686,000 underlying Shares) pursuant to the Global Offering, assuming the Over-allotment Option is not exercised",
-      "confidence": "high"
+      "confidence": "high",
+      "note": "Offer HDRs (base, before over-allotment). Quoted offer unit is the HDR (1 HDR = 10 underlying Shares, prospectus PDF p.24 / printed p.15). = 896,686,000 underlying Shares."
     },
     "col_N": {
       "value": 14731366060,
@@ -25,14 +26,14 @@
       "page": 23,
       "quote": "the market capitalization of the remaining shares of the Company listed on the IDX (i.e. 13,834,680,060 Shares) multiplied by the closing price of the Shares on the IDX",
       "confidence": "high",
-      "note": "Offer for Sale: O = L - M = 14,731,366,060 - 896,686,000 = 13,834,680,060."
+      "note": "Shares (underlying) after capitalisation: O = L - 10 x M (M is in HDRs; 10 underlying Shares per HDR)."
     },
     "col_P": {
-      "value": 896686000,
+      "value": 89668600,
       "page": 23,
       "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders",
       "confidence": "low",
-      "note": "This is an Offer for Sale: all 896,686,000 underlying Shares are Sale Shares offered by the Selling Shareholders."
+      "note": "Offer for Sale: all offer HDRs are Sale HDRs. Quoted offer unit is the HDR (1 HDR = 10 underlying Shares, prospectus PDF p.24 / printed p.15)."
     },
     "col_Q": {
       "value": 0,
@@ -42,16 +43,18 @@
       "note": "No new shares are issued in the Global Offering, so col_Q = 0."
     },
     "col_R": {
-      "value": 807017000,
+      "value": 80701700,
       "page": 2,
       "quote": "Number of International Offer HDRs : 80,701,700 Sale HDRs (subject to reallocation and the Over-allotment Option)",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "International Offer HDRs before reallocation. Quoted offer unit is the HDR (1 HDR = 10 underlying Shares, prospectus PDF p.24 / printed p.15)."
     },
     "col_S": {
-      "value": 89669000,
+      "value": 8966900,
       "page": 2,
       "quote": "Number of Hong Kong Offer HDRs : 8,966,900 Sale HDRs (subject to reallocation)",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "Hong Kong Offer HDRs before reallocation. Quoted offer unit is the HDR (1 HDR = 10 underlying Shares, prospectus PDF p.24 / printed p.15)."
     },
     "col_BI": {
       "value": "Ordinary shares",
@@ -60,10 +63,11 @@
       "confidence": "high"
     },
     "col_CE": {
-      "value": 896686000,
+      "value": 89668600,
       "page": 23,
       "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders (representing 896,686,000 underlying Shares) pursuant to the Global Offering",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "HDRs listed at listing (89,668,600 issued HDRs upon Listing per allotment announcement). Quoted offer unit is the HDR (1 HDR = 10 underlying Shares, prospectus PDF p.24 / printed p.15)."
     },
     "col_T": {
       "value": 26.6,

@@ -1,0 +1,23 @@
+{
+  "code": "6675.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p209 ('period of six months starting from and including the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-12-17, last_restricted_day 2026-12-16 as recorded. All 9 named holders located in the cornerstone section (pp.203-210). Quote truncation at limb (c) noted by candidate is accurate (limb (d) continues on the page).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p266 (voluntary undertaking by the Single Largest Group of Shareholders - A+H issuer with no Controlling Shareholder, deviation correctly recorded). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2026-12-17), so first free = 2026-12-18. Candidate's 2026-12-17 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2026-12-18",
+      "last_restricted_day": "2026-12-17",
+      "basis": "Rule 10.07(1)(a)-equivalent voluntary disposal undertaking by the Single Largest Group of Shareholders (Rule 19A A+H issuer; no Controlling Shareholder), commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p268 (limb (b) of the Single Largest Group undertaking, 'during the Second Six-Month Period', control-maintenance condition; First/Second Six-Month Period definitions on pp.266-267, with the Second Six-Month Period running six months from the expiry of the First). Duration wording frees up ON the 12-month anniversary: first_free_day 2027-06-17, last_restricted_day 2027-06-16 as recorded.",
+    "corrections": {}
+  }
+}

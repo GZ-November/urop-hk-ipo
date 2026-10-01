@@ -1,0 +1,35 @@
+{
+  "code": "6938.HK",
+  "listing_date": "2026-01-09",
+  "cornerstone": {
+    "exists": true,
+    "holders": "All cornerstone investors (Arc Avenue, Bright Stone, China AMC, Da Cheng International and Dacheng Fund, Erik Selin Fastigheter AB, Himension Fund, IvyRock, Mingxin Growth Ventures, Springs Capital (Hong Kong), Taikang Life, Tenbagger Nengxin, Tenbagger Ziran and Huatai Capital Investment Limited)",
+    "quote_page": 487,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-01-09",
+    "basis": "six months from (and inclusive of) the Listing Date; restricted period inclusive of Listing Date",
+    "computed_first_free_day": "2026-07-09",
+    "computed_last_restricted_day": "2026-07-08",
+    "notes": "Section 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' in the Underwriting/Cornerstone Investors chapter."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 499,
+    "full_quote": "(a) will not, at any time during the First Six-Month Period: (i) sell, offer to sell, contract or agree to sell, create any short position (as defined in section 308 of the SFO), assign, mortgage, charge, pledge, hypothecate, hedge, lend, grant or sell any option, warrant, contract or right to subscribe for or purchase, grant or purchase any option, warrant, contract or right to sell, or otherwise transfer or dispose of or create an encumbrance over, or offer, contract or agree to transfer or dispose of or create an encumbrance over, in each case either directly or indirectly, conditionally or unconditionally, any legal or beneficial interest in any Shares or other securities of our Company or any interest in any of the foregoing (including, without limitation, any securities convertible into or exchangeable or exercisable for or that represent the right to receive, or any warrants or other rights to subscribe for or purchase, any Shares or other securities of our Company or any interest in any of the foregoing), or deposit any Shares or other securities of our Company with a depositary in connection with the issue of depositary receipts;",
+    "reference_date": "2026-01-09",
+    "basis": "Undertakings by the Single Largest Group of Shareholders: no disposal during the First Six-Month Period. Per the related Company undertaking (p497) that period runs 'up to and including the date falling six months after the Listing Date', so the last restricted day is the six-month anniversary and the first free day is the following day",
+    "computed_first_free_day": "2026-07-10",
+    "computed_last_restricted_day": "2026-07-09",
+    "notes": "Undertaking given under the Hong Kong Underwriting Agreement to the Company/Joint Sponsors/underwriters (given to the Stock Exchange under Rule 10.07 is not disclosed; no Rule 10.07 reference exists). The Company has no controlling shareholder; holders are the 'Single Largest Group of Shareholders' (Dr. LIANG, Dr. ZHANG, Kunshan Ruikong, Kunshan Ruiman, Ms. MO Hua, Prof. XI Zhen, Prof. ZHANG Lihe, Kunshan Ruiji and Kunshan Ruixing); 'Warranting Shareholder' is Dr. LIANG."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 500,
+    "full_quote": "(b) will not, during the Second Six-Month Period, enter into any of the transactions specified in paragraph (a)(i), (ii) or (iii) above or offer to or agree to or announce or publicly disclose any intention to effect any such transaction if, immediately following such transaction or upon the exercise or enforcement of any such option, right, interest or encumbrance, he/it, directly or indirectly, would cease to be the “Single Largest Group of Shareholders” of our Company",
+    "reference_date": "2026-01-09",
+    "basis": "Second Six-Month Period (months 7-12 from Listing Date): transactions restricted if the shareholder would cease to be the Single Largest Group of Shareholders; period ends 12 months after the Listing Date (inclusive per the p497 style definition), so the first free day is the day after the 12-month anniversary",
+    "computed_first_free_day": "2027-01-10",
+    "computed_last_restricted_day": "2027-01-09",
+    "notes": "Second Six-Month Period condition enforced via clause (c): must inform and take steps to avoid a disorderly market if a transaction occurs before expiry."
+  }
+}

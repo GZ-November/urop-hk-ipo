@@ -1,0 +1,23 @@
+{
+  "code": "0470.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p359 ('RESTRICTIONS ON THE CORNERSTONE INVESTORS'). Clause: 'six months from (and inclusive of) the Listing Date' - inclusive start, no explicit end date, so the restriction runs six full months and frees up ON the six-month anniversary. 2026-02-11 + 6m = 2026-08-11 first free day; last restricted 2026-08-10. Holders spot-checked (Oaktree, Pinpoint, Millennium, Rome Garden on p354). No longer/other cornerstone regime found.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p371. The clause states an explicit end date: 'in the period commencing on the date by reference to which disclosure of the shareholder's holding of Shares is made in this prospectus and ending on the date which is six months from the Listing Date (the \"First Six-month Period\")'. 'Ending on the date which is six months from the Listing Date' ends the period ON the anniversary (2026-08-11), so the anniversary is the last restricted day and the first free day is the following day. Candidate recorded the anniversary itself as first_free_day - corrected. Note: a parallel undertaking under the Hong Kong Underwriting Agreement (p373(B)) uses the same First/Second Six-month Period structure, and Note 3 to Rule 10.07(2) (p371) imposes a separate 12-month pledge-notification undertaking (not a disposal restriction).",
+    "corrections": {
+      "first_free_day": "2026-08-12",
+      "last_restricted_day": "2026-08-11",
+      "basis": "Rule 10.07(1)(a): period commences on the prospectus disclosure date and ends ON the date which is six months from the Listing Date (2026-08-11); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p371. 'in the period of six months from the expiry of the First Six-month Period (the \"Second Six-month Period\")' states no explicit end date, so the default convention applies: first_free_day = 12-month anniversary of the Listing Date = 2027-02-11, last restricted 2027-02-10. Date arithmetic checked with python. Restriction conditional on the shareholder ceasing to be controlling shareholder - as recorded.",
+    "corrections": {}
+  }
+}

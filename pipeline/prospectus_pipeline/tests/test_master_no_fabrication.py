@@ -236,6 +236,27 @@ class RelationalTablesNoFabricationTests(unittest.TestCase):
         # 产出须通过 fail-closed 加载器
         return master_contracts.load_rows(syn_path, master_contracts.UNDERWRITER_RELATIONAL_COLS)
 
+    def investor_rows(self, fields: dict) -> list[dict]:
+        self.write_extracted(fields)
+        engine = RelationalTableEngine(cfg=make_cfg(self.tmp))
+        issuer = {"stock_code": CODE, "company_name": "Test Co", "listing_date": "2026-01-02"}
+        return engine.process_investors([issuer])
+
+    def test_unknown_investor_flags_stay_unknown_not_zero(self):
+        rows = self.investor_rows({"col_pre_ipo_investors": "Alpha Capital Fund; Beta Ventures Fund",
+                                   "col_vc_backed": "NaN", "col_pe_backed": 1, "col_gov_backed": "NaN",
+                                   "col_vc_board_seat": "NaN"})
+        self.assertEqual(len(rows), 2)
+        for row in rows:
+            self.assertIsNone(row["board_seat_flag"])
+            self.assertIsNone(row["lockup_expiry_date"])  # no generic listing+183 days fabrication
+            self.assertEqual(row["investor_category"], "Pre-IPO PE")  # PE flag survives sibling NaN flags
+
+    def test_explicit_board_seat_zero_and_one_are_kept(self):
+        for value, expected in ((1, True), (0, False), ("1", True)):
+            rows = self.investor_rows({"col_pre_ipo_investors": "Alpha Capital Fund", "col_vc_board_seat": value})
+            self.assertIs(rows[0]["board_seat_flag"], expected)
+
     def test_commission_pct_converts_decimal_to_percent_points(self):
         self.assertEqual(commission_pct(0.015), 1.5)
         self.assertEqual(commission_pct("0.03"), 3.0)

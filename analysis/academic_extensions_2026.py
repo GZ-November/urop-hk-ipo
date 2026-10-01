@@ -92,9 +92,14 @@ def money_left_split(d: pd.DataFrame) -> dict:
 
 
 def retail_profile(d: pd.DataFrame) -> pd.DataFrame:
-    """Per-deal retail outcomes: allocation ratio (capped at 1), expected gain per HK$10,000 applied, gain per applicant."""
+    """Per-deal retail outcomes: allocation ratio, expected gain per HK$10,000 applied, gain per applicant.
+
+    An allocation ratio outside (0, 1] is a unit/definition anomaly, not a measurement to clamp:
+    it is quarantined (missing) and flagged in `alloc_quarantined` for review."""
     z = d.copy()
-    z["alloc"] = (z["retail_shares"] / z["applied"]).clip(upper=1.0)
+    raw = z["retail_shares"] / z["applied"]
+    z["alloc_quarantined"] = raw.notna() & ~((raw > 0) & (raw <= 1))
+    z["alloc"] = raw.where(~z["alloc_quarantined"])
     z["gain_10k"] = z["alloc"] * z["ir"] * 10_000
     z["gain_applicant"] = z["retail_shares"] * (z["close1"] - z["offer"]) / z["applicants"]
     return z
@@ -117,7 +122,7 @@ def money_left_section(d: pd.DataFrame, family: list) -> str:
         for name, s in splits.items()})
     rp = retail_profile(d)
     prof = rp.groupby("hot").agg(N=("ir", "size"), alloc_med=("alloc", "median"), gain_med=("gain_10k", "median"), gain_mean=("gain_10k", "mean"),
-                                 neg=("gain_10k", lambda s: (s < 0).mean()), app_mean=("gain_applicant", "mean"), app_med=("gain_applicant", "median"))
+                                 neg=("gain_10k", lambda s: (s.dropna() < 0).mean()), app_mean=("gain_applicant", "mean"), app_med=("gain_applicant", "median"))
     prof.index = ["Other listings", "April-June listings"]
     prof_tab = pd.DataFrame({
         "N": prof["N"].astype(int),

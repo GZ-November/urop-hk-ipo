@@ -3,7 +3,7 @@
 - **样本规模 (N)**：38 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-30 21:45:29 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-10-01 13:34:33 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -205,11 +205,11 @@
 | **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Adequate (27/38 (71.05%)) | 均值 0.00 / 中位数 0.00 / 区间 [0.00, 0.00] |
 | **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (27/38 (71.05%)) | 均值 0.07 / 中位数 0.06 / 区间 [0.03, 0.25] |
 | **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (27/38 (71.05%)) | 均值 0.56 / 中位数 0.54 / 区间 [0.34, 0.87] |
-| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | 100% 完备 | 共 20 种取值 ('2026-09-30': 6, '2026-07-08': 3, '2026-07-09': 3) |
-| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 21 种取值 ('2027-03-30': 4, '2027-01-08': 3, '2027-01-09': 3) |
-| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (26/38 (68.42%)) | 均值 -0.06 / 中位数 -0.05 / 区间 [-0.53, 0.35] |
-| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (23/38 (60.53%)) | 均值 -0.04 / 中位数 -0.09 / 区间 [-0.67, 0.48] |
-| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (23/38 (60.53%)) | 均值 1.25 / 中位数 1.14 / 区间 [0.38, 3.16] |
+| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | Adequate (27/38 (71.05%)) | 共 19 种取值 ('2026-08-07': 3, '2026-09-10': 3, '2026-07-10': 2) |
+| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (28/38 (73.68%)) | 共 24 种取值 ('2027-01-10': 2, '2027-02-06': 2, '2027-03-09': 2) |
+| **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (25/38 (65.79%)) | 均值 -0.07 / 中位数 -0.05 / 区间 [-0.53, 0.35] |
+| **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (22/38 (57.89%)) | 均值 -0.05 / 中位数 -0.09 / 区间 [-0.67, 0.48] |
+| **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | Adequate (22/38 (57.89%)) | 均值 1.25 / 中位数 1.15 / 区间 [0.38, 3.16] |
 | **GH** | `Lead sponsor name` | 独家/联席牵头保荐人英文全称 | 深蓝 | `string` | Prospectus syndicate structure | 100% 完备 | 共 15 种取值 ('China International Capital Corporation Hong Kong Securities Limited': 12, 'Huatai Financial Holdings (Hong Kong) Limited': 5, 'CITIC Securities (Hong Kong) Limited': 4) |
 | **GI** | `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 1.89 / 中位数 2.00 / 区间 [1.00, 4.00] |
 | **GJ** | `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus syndicate structure | 100% 完备 | 1 (是): 10 家 (26.3%), 0 (否): 28 家 |

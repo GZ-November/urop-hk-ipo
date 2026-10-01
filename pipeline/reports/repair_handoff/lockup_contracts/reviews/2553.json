@@ -1,0 +1,27 @@
+{
+  "code": "2553.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. The only 'cornerstone' hit is the figurative phrase 'a key cornerstone for industrialization and modernization' (p90, Industry Overview). No cornerstone investors or cornerstone lock-up section exist.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p288 under 'Undertakings by the Controlling Shareholders' (Rule 10.07). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2026-12-03, which is therefore the last restricted day; first free day is 2026-12-04.",
+    "corrections": {
+      "first_free_day": "2026-12-04",
+      "last_restricted_day": "2026-12-03",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-03, inclusive); first free day 2026-12-04"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p288 (six months from expiry of the First Six-Month Period). DATE CORRECTION: the second period runs to and including the 12-month anniversary 2027-06-03; first free day is 2027-06-04. No longer lock-ups found (p321 'twelve months' hit is a going-concern statement).",
+    "corrections": {
+      "first_free_day": "2027-06-04",
+      "last_restricted_day": "2027-06-03",
+      "basis": "Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-06-03, to the extent it would cause cessation of controlling shareholder status; first free day 2027-06-04"
+    }
+  }
+}

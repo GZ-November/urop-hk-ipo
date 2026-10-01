@@ -1,0 +1,19 @@
+{
+  "code": "1191.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on cited page p216. Duration wording 'six months from (and inclusive of) the Listing Date' -> free ON 2026-12-29 (python-verified anniversary), last restricted 2026-12-28. Listing Date p31: 'on or about Monday, June 29, 2026'.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed by full read of the undertakings section (p261-262): only the Company's Rule 10.08 undertaking, the Company's Hong Kong Underwriting Agreement covenants, and 'The single largest shareholder undertakes ... to procure our Company and each other member of our Group to comply with the undertakings stated above' - a procurement covenant, not a disposal lock-up. No Rule 10.07 undertaking anywhere (zero '10.07' hits).",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. No 12-month control-maintenance undertaking anywhere; the only 12-month restriction is the PRC-law one-year lock-up on existing Shareholders and share-option vesting terms. Second Six-Month Period paragraph is a Company disorderly-market covenant only.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,56 @@
+{
+ "code": "3388.HK",
+ "pdf_sha256": "e9c03a103d92851176522aea43b2b5effbd2a249152577639b9ce42cb718d417",
+ "classification": "unresolved",
+ "candidate_value": null,
+ "pre_ipo_investors": [
+  "Series A (agreement 24 Jun 2021, RMB508.5m, settled 19 Jul 2021): Qianhai Equity, Zhongyuan Qianhai, Smart IT Ark (Qianhai FOF, managed by Qianhai Ark), SCGC and Nanshan Hongtu (SCGC Capital), Tencent VC, Pingshan Kaisheng, Renzhe Buyou, Guoxin South No. 4"
+ ],
+ "board_roster_reviewed": "Board at listing = 9: Chen Chun, Ao Danjun, Liu Huilin, Tang Jingke, Fang Zongdi (all executive, founders/employees; not investor-linked); Huang Hongman (non-executive, director since 26 Jun 2023, bio: bank/securities career and since Nov 2015 general manager/executive director at Shenzhen Qianhai Zhongzhao Fund Management Co., Ltd -- no stated link to any listed Pre-IPO Investor; Qianhai Zhongzhao is not named among the Pre-IPO Investors or Qianhai Ark); Gao Li, Wang Yating, Liang Huaquan (INEDs; bios show no investor link). No director or observer is described as nominated by or representing a Pre-IPO Investor.",
+ "rights_and_timing": "Pre-IPO Investors were granted 'Director appointment rights' (nomination/appointment RIGHT) under the 24 Jun 2021 and 29 Dec 2023 shareholders' agreements; all such special rights terminate upon completion of the Listing and none survive. The prospectus does not identify which investor (if any) exercised the right or which director occupies such a seat. No observer right mentioned.",
+ "evidence": [
+  {
+   "pdf_page": 125,
+   "printed_page": "116",
+   "quote": "redemption preference rights, pre-emptive rights, anti-dilution rights, rights of first refusal and co-sale, liquidation rights, Director appointment rights and information rights.",
+   "supports": "Pre-IPO Investors had Director appointment rights.",
+   "interpretation": "Right exists; seat holder not identified."
+  },
+  {
+   "pdf_page": 125,
+   "printed_page": "116",
+   "quote": "All other special rights will terminate upon the completion of the Listing and no special rights granted to the Pre-IPO Investors will survive after the Listing.",
+   "supports": "Rights terminate at listing.",
+   "interpretation": "Timing note."
+  },
+  {
+   "pdf_page": 280,
+   "printed_page": "271",
+   "quote": "Upon the Listing, our Board will comprise nine Directors, including five executive Directors, one non-executive Director, and three independent non-executive Directors",
+   "supports": "Board composition at listing.",
+   "interpretation": "Only one non-executive Director (Huang Hongman) could be an investor seat, but no link is stated."
+  },
+  {
+   "pdf_page": 284,
+   "printed_page": "275",
+   "quote": "Mr. HUANG Hongman (黃宏滿), aged 52, has been our Director since June 26, 2023 and was redesignated as non-executive Director on July 28, 2025.",
+   "supports": "Huang is the sole non-executive Director.",
+   "interpretation": "No nominator disclosed."
+  },
+  {
+   "pdf_page": 284,
+   "printed_page": "275",
+   "quote": "Since November 2015, he held several positions at Shenzhen Qianhai Zhongzhao Fund Management Co., Ltd",
+   "supports": "Huang's fund-management background.",
+   "interpretation": "Entity not identified as a Pre-IPO Investor or affiliate of Qianhai Ark; inference not supportable from text."
+  },
+  {
+   "pdf_page": 124,
+   "printed_page": "115",
+   "quote": "We received one round of Pre-IPO Investment from the Pre-IPO Investors through subscriptions for increased share capital of our Company since our establishment.",
+   "supports": "Single Series A round.",
+   "interpretation": "Investor set identified for cross-check against board roster."
+  }
+ ],
+ "unresolved_reason": "Prospectus confirms Director appointment rights for Pre-IPO Investors (terminating at Listing) but does not state who nominated any sitting Director; the only non-executive Director (Huang Hongman, joined Jun 2023 after the Jun 2021 Series A) has no stated link to a named Pre-IPO Investor. Searched Pre-IPO section, special rights, all director bios, substantial shareholder/capitalization tables for 'nominated by'/'appointed by'/'representative of'; nothing. Not 1 (no explicit link) and not 0 (appointment right exists, seat provenance unknown)."
+}

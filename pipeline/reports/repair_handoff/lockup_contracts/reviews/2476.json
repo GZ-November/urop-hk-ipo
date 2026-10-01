@@ -1,0 +1,23 @@
+{
+  "code": "2476.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p198. Wording 'six months from and including the Listing Date' as noted - frees up ON the anniversary: 2026-04-21 + 6m = 2026-10-21 first free; last restricted 2026-10-20. Holder list spot-checked (e.g. Ye Guofu on p195). No longer/other cornerstone regime found.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p242 ('(B) Undertakings by the Largest Group of Shareholders', Rule 10.07(1)). The clause states an explicit end date: 'in the period commencing on the date by reference to which disclosure of his shareholding in the Company is made in this prospectus and ending on the date which is six months from the Listing Date'. The period ends ON 2026-10-21 (last restricted day); first free day is 2026-10-22. Candidate recorded the anniversary as first_free_day - corrected.",
+    "corrections": {
+      "first_free_day": "2026-10-22",
+      "last_restricted_day": "2026-10-21",
+      "basis": "Rule 10.07(1) undertaking by each member of the Largest Group of Shareholders: period ends ON the date which is six months from the Listing Date (2026-10-21); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Independent sweep of 2476 found only the six-month Rule 10.07(1) undertaking (p242) plus the Note (2)/(3) pledge undertakings for the Largest Group of Shareholders. The only 'Second Six Month Period' clause (p244) sits inside 'Undertakings pursuant to the Hong Kong Underwriting Agreement - Undertakings by the Company' (beginning p243) and is the Company's disorderly-market undertaking, not a shareholder disposal restriction. No 12-month controlling-shareholder undertaking exists; absence is correct.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "code": "6636.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p217 ('RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS'); holders Zhengjin (Hong Kong) International and GKI verified. DEVIATION CORRECTLY CAPTURED: the lock-up is a fixed calendar period 'from the Listing Date to December 31, 2026 (both days inclusive)' - an explicit end date, so the last restricted day is 2026-12-31 and the first free day is 2027-01-01. Candidate's dates are correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C issuer with no Controlling Shareholders (Single Largest Group: Mr. Chan, Ms. Luo and Hengqin Jili). There are zero Rule 10.07 mentions in the entire text (verified with a literal search). The only six-month disposal restriction is the Rule 18C.14(2) Pathfinder SII undertaking (p278) - Pathfinder SIIs are independent investors, not controlling shareholders - and the Rule 18C.14(1) Key Persons 12-month undertaking is recorded in controller_12m. No missed element.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p278 (Rule 18C.14(1) Key Persons, including the cessation caveat 'or such earlier date as provided under Note 2 of Rule 18C.23'). CONVENTION CORRECTION: 'ending on the date which is 12 months from the Listing Date' ends the restriction ON the 12-month anniversary 2027-03-30, which is therefore the last restricted day; first free day is 2027-03-31. (The separate Rule 18C.14(2) Pathfinder SII leg on p278 runs six months, i.e. free 2026-10-01.)",
+    "corrections": {
+      "first_free_day": "2027-03-31",
+      "last_restricted_day": "2027-03-30",
+      "basis": "Rule 18C.14(1): Key Persons (and registered holders) may not dispose of H Shares in the period ending ON the date which is 12 months from the Listing Date (2027-03-30, inclusive); first free day 2027-03-31"
+    }
+  }
+}

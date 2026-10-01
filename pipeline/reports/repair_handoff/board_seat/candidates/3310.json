@@ -1,0 +1,87 @@
+{
+ "code": "3310.HK",
+ "pdf_sha256": "6bbb195d417f093c4f68389f2c9103a4a409364fceeffa14aff536042c4ac0b7",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Series A+ (Wanchuang Shidai, Shanghai Fuzhishuo, Juyuan Qitai, Shanghai Jiutangjin) and Series B (Qualcomm China, Jichuang Yuyuan, Nanshan Hongtai, Bangsheng Yingxin, Qingyue Optoelectronics, Hangzhou Kunwei, Shanghai Jiutangjin, Shanghai Suishuo, Tianjin Jinmi) financings",
+  "Series C, 23 Sep 2019: Qiming Rongke, Qiming Rongying, QM119 Limited (Qiming Venture Partners group), Qualcomm China, Nanshan Zhonghang, Hongtai Zhiyun, Jichuang Yuyuan, Shanghai Suishuo",
+  "Series D and later rounds incl. Qilu, Hangzhou Kunwei, Jichuang Yuyuan, Qualcomm China, QM119 Limited, Qiming Rongke/Rongying",
+  "Earlier investors incl. Vertex Legacy / Vertex Asia and White Cloud Valley (HK) Investment Limited (ultimately controlled by CITIC Capital Holdings; 2013), HSG, BOE Technology, Yueke Xintai Industry etc."
+ ],
+ "board_roster_reviewed": "Board at listing = 7: Dr. Gu Jing (executive, chairman, founder; not investor-linked); Mr. Han Zhiyong (executive, president, ex-GlobalFoundries; no investor link); Mr. Zhou Zhifeng (non-executive, director since 23 Sep 2019; managing partner of Qiming Venture Partners, whose vehicles QM119/Qiming Rongke/Qiming Rongying are listed Pre-IPO Investors -> LINKED); Ms. Zhan Jing (non-executive, HR manager, Dr. Gu's spouse; not investor-linked); Dr. Jiang Yimin (INED; former CITIC Capital partner until 2016 and director nominated by White Cloud Valley Jun 2013-May 2021, now INED, not currently a nominee); Ms. Zhou Xinru (INED, lawyer; no link); Mr. Chang Eric Jackson (INED, accountant, appointed Jun 2025; no link).",
+ "rights_and_timing": "Special rights of Pre-IPO Investors under the Shareholders' Agreement include 'appointment rights of observers to the Board' (observer right; no seated observer identified in the prospectus). Rights granted by obliged shareholders terminate upon Listing (redemption right earlier, conditional restoration if no qualified IPO by 31 Dec 2026). No explicit director nomination right stated in the special-rights list; the actual seat evidence is Zhou Zhifeng (non-executive director from the Series C closing date, managing partner of Qiming Venture Partners, Qiming group listed as Pre-IPO Investor) and formerly Jiang Yimin (nominated by White Cloud Valley, ended May 2021). Zhou remains a non-executive Director at listing. The prospectus does not use the word 'nominated' for Zhou; link rests on his stated partnership at Qiming Venture Partners plus the shareholding table label 'Qiming Venture Partners' containing QM119 Limited/Qiming Rongke/Qiming Rongying as Pre-IPO Investors.",
+ "evidence": [
+  {
+   "pdf_page": 247,
+   "printed_page": "238",
+   "quote": "Mr. Zhou Zhifeng (周志峰先生), aged 47, has been serving as a Director since September 2019 and was redesignated as a non-executive Director on June 12, 2025.",
+   "supports": "Zhou Zhifeng is a non-executive Director at listing, on the Board since Sept 2019.",
+   "interpretation": "Seat in place at listing."
+  },
+  {
+   "pdf_page": 247,
+   "printed_page": "238",
+   "quote": "Mr. Zhou has been serving in Qiming Venture Partners (啟明創投), an institution principally engaged in providing venture capital and asset management services since May 2014, and currently serves as a managing partner",
+   "supports": "Zhou is a managing partner of Qiming Venture Partners, a VC firm.",
+   "interpretation": "Partner of an investment institution."
+  },
+  {
+   "pdf_page": 148,
+   "printed_page": "139",
+   "quote": "Qiming Venture Partners QM119 Limited",
+   "supports": "Capitalization table (under the Pre-IPO Investors heading, after HSG) lists Qiming Venture Partners with QM119 Limited, Qiming Rongke, Qiming Rongying.",
+   "interpretation": "Identifies the Qiming group as a pre-IPO investor institution."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "QM119 Limited was owned as to 97.38% by Qiming Venture Partners VI, L.P.",
+   "supports": "QM119 Limited (Pre-IPO Investor) is owned by Qiming Venture Partners VI, L.P.",
+   "interpretation": "Links Zhou's employer brand to the pre-IPO investor vehicle."
+  },
+  {
+   "pdf_page": 111,
+   "printed_page": "102",
+   "quote": "On September 23, 2019, the Company, its then shareholders, Suzhou Industrial Park Qiming",
+   "supports": "Series C financing with Qiming entities dated 23 Sep 2019.",
+   "interpretation": "Timing coincides with Zhou's appointment date."
+  },
+  {
+   "pdf_page": 315,
+   "printed_page": "",
+   "quote": "Mr. Zhou Zhifeng was appointed as a non-executive director of the Company on 23 September 2019.",
+   "supports": "Zhou appointed non-executive director on the Series C signing date.",
+   "interpretation": "Corroborates investor-nominee inference (timing only; no express nomination wording)."
+  },
+  {
+   "pdf_page": 248,
+   "printed_page": "239",
+   "quote": "From June 2013 to May 2021, Dr. Jiang served as a Director of the Company, nominated by White Cloud Valley.",
+   "supports": "Jiang Yimin was a shareholder-nominated director for White Cloud Valley (a Pre-IPO Investor) until May 2021; now INED.",
+   "interpretation": "Past nominee seat; ended before listing, not counted for current seat."
+  },
+  {
+   "pdf_page": 131,
+   "printed_page": "122",
+   "quote": "liquidation preference provision, and appointment rights of observers to the Board.",
+   "supports": "Pre-IPO Investors held appointment rights of observers to the Board.",
+   "interpretation": "Observer right exists pre-listing; no seated observer identified."
+  },
+  {
+   "pdf_page": 132,
+   "printed_page": "123",
+   "quote": "Pursuant to the latest Shareholders’ Agreement entered into on June 20, 2025, all the special rights granted by the obliged shareholders under the Shareholders’ Agreement dated August 30, 2024 shall be terminated upon the Listing",
+   "supports": "Special rights terminate upon Listing.",
+   "interpretation": "Observer/other rights end at listing; the seat evidence relies on Zhou's directorship."
+  },
+  {
+   "pdf_page": 246,
+   "printed_page": "237",
+   "quote": "Upon the Listing, the Board will consist of seven Directors, comprising two executive Directors, two non-executive Directors and three independent non-executive Directors.",
+   "supports": "Board composition at listing.",
+   "interpretation": "Roster completeness."
+  }
+ ],
+ "unresolved_reason": ""
+}

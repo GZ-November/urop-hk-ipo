@@ -1,0 +1,43 @@
+{
+ "code": "3310.HK",
+ "reviewer": "independent reviewer subagent R2",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_candidate",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 247,
+   "printed_page": "238",
+   "quote": "Mr. Zhou Zhifeng (周志峰先生), aged 47, has been serving as a Director since September 2019 and was redesignated as a non-executive Director on June 12, 2025.",
+   "interpretation": "Non-executive Director seated at listing (Board of 7 incl. 2 NEDs per p246), on the Board since Sept 2019."
+  },
+  {
+   "pdf_page": 247,
+   "printed_page": "238",
+   "quote": "Mr. Zhou has been serving in Qiming Venture Partners (啟明創投), an institution principally engaged in providing venture capital and asset management services since May 2014, and currently serves",
+   "interpretation": "Zhou is a (managing) partner of the Qiming Venture Partners VC institution (sentence continues: 'as a managing partner')."
+  },
+  {
+   "pdf_page": 148,
+   "printed_page": "139",
+   "quote": "Qiming Venture Partners QM119 Limited",
+   "interpretation": "Shareholding table lists, under the 'Pre-IPO Investors' block, a 'Qiming Venture Partners' group (QM119 Limited, Qiming Rongke, Qiming Rongying; 7.39%)."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "QM119 Limited was owned as to 97.38% by Qiming Venture Partners VI, L.P.",
+   "interpretation": "Pre-IPO investor vehicle QM119 is owned by a Qiming Venture Partners fund, tying the Qiming Venture Partners institution to the pre-IPO investment."
+  },
+  {
+   "pdf_page": 315,
+   "printed_page": "",
+   "quote": "Mr. Zhou Zhifeng was appointed as a non-executive director of the Company on 23 September 2019.",
+   "interpretation": "Appointment date equals the Series C signing date (23 Sep 2019, pdf p111) in which QM119/Qiming entities subscribed (timing corroboration only; nomination is not expressly worded)."
+  }
+ ],
+ "findings": "Read the Pre-IPO Investments history (p109-132, p138, p148) and every director biography (p246-249) before opening the candidate. Board at listing: 2 exec, 2 NED (Zhan Jing - HR manager and Dr Gu's spouse, no investor link; Zhou Zhifeng), 3 INED. Zhou Zhifeng is a managing partner of Qiming Venture Partners; the prospectus's shareholding table groups QM119 Limited (97.38% owned by Qiming Venture Partners VI, L.P.), Qiming Rongke and Qiming Rongying under 'Qiming Venture Partners' within the 'Pre-IPO Investors' block; he joined the board on the Series C date. All candidate quotes verified verbatim on the cited pdf pages; printed-page mapping matches INDEX.tsv (p315 has no printed number). Candidate correctly excludes Jiang Yimin (nominated by White Cloud Valley until May 2021, now INED with independence confirmed) and correctly treats the 'appointment rights of observers to the Board' as a generic right with no seated observer (rights terminate at Listing). Caveat: the prospectus never uses the word 'nominated' for Zhou, and Qiming Rongke/Rongying are described as having GP Suzhou Qiping controlled by Yu Jia/Xu Jing (Independent Third Parties) so only QM119 is clearly a Qiming Venture Partners vehicle; however the prospectus itself labels the three together as 'Qiming Venture Partners' and Zhou is a managing partner of that institution, which meets the 'partner of the investor/its GP or fund manager' standard.",
+ "residual_uncertainty": "Moderate-low: explicit nominator wording for Zhou is absent; link rests on his stated partner role at Qiming Venture Partners, the prospectus's own group labelling of QM119 under that name, and the appointment date coinciding with Series C. If a stricter reading demands the word 'nominated', this would be unresolved."
+}

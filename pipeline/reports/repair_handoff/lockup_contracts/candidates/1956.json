@@ -1,0 +1,37 @@
+{
+  "code": "1956.HK",
+  "listing_date": "2026-06-26",
+  "cornerstone": {
+    "exists": true,
+    "holders": "China Orient Enhanced Income Fund; Harvest Global Investments Limited; First Seafront Asset Management Limited; Guohui (HK) Holdings Co., Limited; Huatai Capital Investment Limited; CMBC International Investment (HK) Limited",
+    "quote_page": 265,
+    "full_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of our Company, the Sole Sponsor and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of six months from and including the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investors, including the Lock-up Period restriction.",
+    "reference_date": "2026-06-26",
+    "basis": "six calendar months from the Listing Date; document wording 'six months from and including the Listing Date' - restricted period inclusive of Listing Date",
+    "computed_first_free_day": "2026-12-26",
+    "computed_last_restricted_day": "2026-12-25",
+    "notes": ""
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07 Controlling Shareholder undertaking disclosed - this is a Chapter 18C specialised technology company and the lock-up undertakings are given by key persons and Pathfinder SIIs under Rules 18C.13 and 18C.14 (page 278): key persons for 12 months and Pathfinder SIIs for 6 months from the Listing Date. The six-month leg therefore applies only to Pathfinder SIIs, not to the controller group. Searched '10.07' (zero hits), 'Controlling Shareholder' (only unrelated occurrences on pages 254, 318, 373, 413), 'six months from'."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 278,
+    "full_quote": "Pursuant to Rules 18C.13 and 18C.14 of the Listing Rules, each of Dr. Wang, Dr. Luo, Prof. Zeng and Zhongzi Investment, the key persons of the Company and the Pathfinder SIIs, and their respective close associates, as identified under the section headed “History and Corporate Structure”, has undertaken to the Stock Exchange and to us that, except pursuant to the Global Offering (including the Over-allotment Option), it will not, unless otherwise permitted under Rule 18C.15 of the Listing Rules: at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which it is shown by this prospectus to be the beneficial owner.",
+    "reference_date": "2026-06-26",
+    "basis": "DEVIATION: 18C specialised technology company - no Rule 10.07 controlling shareholder undertaking; the equivalent controller-level lock-up is the key persons' undertaking under Rules 18C.13/18C.14 ending '12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date'. Restricted period commences on the prospectus shareholding-disclosure date (inclusive of Listing Date).",
+    "computed_first_free_day": "2027-06-26",
+    "computed_last_restricted_day": "2027-06-25",
+    "notes": "A parallel 12-month undertaking under the Hong Kong Underwriting Agreement is on page 280 ('Dr. Wang, Dr. Luo, Prof. Zeng and Zhongke Sanshi ... at any time during the period of 12 months from the Listing Date (the \"12-Month Period\")'). Pledge-notification undertaking for the same 12-month period also on page 278."
+  }
+}

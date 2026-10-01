@@ -1,0 +1,23 @@
+{
+  "code": "6915.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p232 ('period of six months from (and inclusive of) the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-12-30, last_restricted_day 2026-12-29 as recorded. Sole holder verified: WSH Wealth Strategy Holding Limited (富策控股有限公司), ultimately owned by Mr. KUNG Hung Ka (pp.228-233).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p282 (Rule 10.07 undertaking, limb (a)). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2026-12-30), so first free = 2026-12-31. Candidate's 2026-12-30 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2026-12-31",
+      "last_restricted_day": "2026-12-30",
+      "basis": "Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p283 (limb (b), second six-month period commencing on the date on which the period in (a) expires, control-maintenance condition). Duration wording frees up ON the 12-month anniversary: first_free_day 2027-06-30, last_restricted_day 2027-06-29 as recorded.",
+    "corrections": {}
+  }
+}

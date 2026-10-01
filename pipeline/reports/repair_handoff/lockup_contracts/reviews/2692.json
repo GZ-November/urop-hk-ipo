@@ -1,0 +1,19 @@
+{
+  "code": "2692.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p284. 'Six months following the Listing Date' is duration wording -> free ON 2026-09-09 (python-verified), last restricted 2026-09-08. Listing Date p29: 'on or about Monday, March 9, 2026'. All ~22 table names spot-checked present on p277-278.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p296. Explicit endpoint 'ending on the date which is six months from the Listing Date' ends ON 2026-09-09 inclusive -> first free 2026-09-10. Matches. Other '10.07' mentions (p67 risk factor, p221 compliance measures re Mr. Li) are not separate undertakings.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p296. Clause (ii) duration wording -> free ON 12-month anniversary 2027-03-09; last restricted 2027-03-08. The p224/p393/p437 24/36-month mentions are the AGM mandate, share-scheme vesting and Securities Law voting-rights rules, not lock-ups. Matches.",
+    "corrections": {}
+  }
+}
