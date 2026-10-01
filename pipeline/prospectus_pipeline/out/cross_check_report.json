@@ -1,234 +1,192 @@
 {
-  "generated_at": "2026-09-25T16:03:07.250875",
-  "total_companies": 38,
-  "clean_companies": 38,
-  "total_anomalies": 0,
+  "generated_at": "2026-10-01T21:06:47.786562",
+  "total_companies": 30,
+  "clean_companies": 29,
+  "total_anomalies": 1,
   "results": [
     {
-      "code": "6082.HK",
-      "name": "Shanghai Biren Technology Co., Ltd.- H shares",
+      "code": "0668.HK",
+      "name": "Anker Innovations Technology Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2513.HK",
-      "name": "Knowledge Atlas Technology Joint Stock Company Limited - H shares",
+      "code": "2667.HK",
+      "name": "Beijing Tong Ren Tang Healthcare Investment Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "9903.HK",
-      "name": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares",
+      "code": "6880.HK",
+      "name": "MOMENTA GLOBAL LIMITED - W",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2675.HK",
-      "name": "Shenzhen Edge Medical Co., Ltd.- B - H shares",
+      "code": "7656.HK",
+      "name": "Reconova Technologies Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "0100.HK",
-      "name": "MiniMax Group Inc. - W - P",
+      "code": "7687.HK",
+      "name": "EACON Group Co., Ltd - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "6938.HK",
-      "name": "Suzhou Ribo Life Science Co., Ltd. - B - H shares",
+      "code": "9971.HK",
+      "name": "BASiC Semiconductor Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "3636.HK",
-      "name": "Yunnan Jinxun Resources Co., Ltd. - H shares",
+      "code": "0537.HK",
+      "name": "RIGOL Technologies Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "0501.HK",
-      "name": "OmniVision Integrated Circuits Group, Inc. - H shares",
+      "code": "1377.HK",
+      "name": "Guangdong Dtech Technology Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "3986.HK",
-      "name": "GigaDevice Semiconductor Inc. - H shares",
+      "code": "1770.HK",
+      "name": "DKE Holding Company Limited - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "1641.HK",
-      "name": "Hongxing Coldchain (Hunan) Co., Ltd.- H shares",
+      "code": "2475.HK",
+      "name": "Luxshare Precision Industry Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "9611.HK",
-      "name": "Shanghai Longcheer Technology Co., Ltd.- H shares",
+      "code": "2797.HK",
+      "name": "Jiangxi Qiyunshan Food Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "1768.HK",
-      "name": "BUSY MING GROUP CO., LTD.- H shares",
+      "code": "3752.HK",
+      "name": "Rokae (Shandong) Robotics Group Inc. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "9980.HK",
-      "name": "Eastroc Beverage (Group) Co., Ltd. - H shares",
+      "code": "6951.HK",
+      "name": "Chaozhou Three-Circle (Group) Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2768.HK",
-      "name": "Qingdao Gon Technology Co., Ltd. - H shares",
+      "code": "2249.HK",
+      "name": "NEXCHIP SEMICONDUCTOR (CHINA) LIMITED - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2677.HK",
-      "name": "Distinct Healthcare Holdings Limited",
+      "code": "6745.HK",
+      "name": "Befar Group Co., Ltd - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2714.HK",
-      "name": "Muyuan Foods Co., Ltd. - H shares",
+      "code": "3308.HK",
+      "name": "ZHONGJI INNOLIGHT CO., LTD. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "3200.HK",
-      "name": "Shenzhen Han's CNC Technology Co., Ltd. - H shares",
+      "code": "2261.HK",
+      "name": "NASN Intelligent Tech (Zhejiang) Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "6809.HK",
-      "name": "Montage Technology Co., Ltd. - H shares",
+      "code": "3223.HK",
+      "name": "Ingenic Semiconductor Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "0600.HK",
-      "name": "Axera Semiconductor Co., Ltd. - H shares",
+      "code": "0625.HK",
+      "name": "SHEIN Global Holdings Limited - W",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2720.HK",
-      "name": "Ridge Outdoor International Limited",
+      "code": "9615.HK",
+      "name": "Mech-Mind Robotics Technologies Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "0470.HK",
-      "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares",
+      "code": "2041.HK",
+      "name": "Medcaptain Medical Technology Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2706.HK",
-      "name": "Beijing Haizhi Technology Group Co., Ltd. - H Shares",
+      "code": "9976.HK",
+      "name": "Shenzhen Longsys Electronics Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "9981.HK",
-      "name": "Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares",
+      "code": "3231.HK",
+      "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+      "anomalies": [
+        {
+          "check": "Mechanism A Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 140.0 倍，适用规则档位为 20%，实际为 6.2%；请核对是否存在港交所个案豁免或口径差异"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "6727.HK",
+      "name": "Transwarp Technology (Shanghai) Co., Ltd - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2649.HK",
-      "name": "ALSCO Pooling Service Co., Ltd. - H Shares",
+      "code": "9856.HK",
+      "name": "Ligent Technologies, Inc.",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2715.HK",
-      "name": "ESTUN AUTOMATION CO., LTD - H Shares",
+      "code": "3228.HK",
+      "name": "Shenzhen Kinwong Electronic Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2692.HK",
-      "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares",
+      "code": "3757.HK",
+      "name": "RoboTechnik Intelligent Technology Co., Ltd.  - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "3268.HK",
-      "name": "MeiG Smart Technology Co., Ltd. - H Shares",
+      "code": "6731.HK",
+      "name": "Direct Drive Tech Limited - H Shares",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "1989.HK",
-      "name": "Delton Technology (Guangzhou) Inc. - H Shares",
+      "code": "9607.HK",
+      "name": "Red Avenue New Materials Group Co., Ltd.",
       "anomalies": [],
       "status": "PASS"
     },
     {
-      "code": "2701.HK",
-      "name": "Nsing Technologies Inc. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "3355.HK",
-      "name": "FS.COM Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "2632.HK",
-      "name": "Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "2729.HK",
-      "name": "Zhejiang Galaxis Technology Group Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "1021.HK",
-      "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "2526.HK",
-      "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "2726.HK",
-      "name": "Epiworld International Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "6636.HK",
-      "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "0664.HK",
-      "name": "Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares",
-      "anomalies": [],
-      "status": "PASS"
-    },
-    {
-      "code": "3625.HK",
-      "name": "Shanghai FourSemi Semiconductor Co., Ltd. - H Shares",
+      "code": "6802.HK",
+      "name": "Shenzhen Camsense Technologies Co., Ltd. - H Shares",
       "anomalies": [],
       "status": "PASS"
     }

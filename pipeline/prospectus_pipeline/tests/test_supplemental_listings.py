@@ -115,8 +115,9 @@ class SupplementTests(unittest.TestCase):
                 )
                 workbook = openpyxl.load_workbook(path, read_only=True)
                 sheet = workbook["NLR"]
-                codes = [sheet.cell(row, 2).value for row in range(2, sheet.max_row + 1)
-                         if sheet.cell(row, 2).value]
+                codes = [value for (value,) in sheet.iter_rows(
+                    min_row=2, min_col=2, max_col=2, values_only=True
+                ) if value]
                 workbook.close()
                 self.assertEqual(codes, ["6082.HK", "6802.HK"])
                 # Re-run: the membership now matches and the run stays read-only.

@@ -1,8 +1,8 @@
 # 2026Q3 样本筛选日志（Sample Selection Log）
 
-- **生成时间**：2026-09-27T14:34:22 | **区间**：2026-07-01 ~ 2026-09-09 | **官方候选**：23 家
+- **生成时间**：2026-10-01T21:16:38 | **区间**：2026-07-01 ~ 2026-09-30 | **官方候选**：30 家
 - **复现命令**：`python3 run.py exclusions --config prospectus_pipeline/config_2026q3.yaml`
-- **纳入**：23 家 | **剔除**：0 家 | **工作簿**：23 家
+- **纳入**：30 家 | **剔除**：0 家 | **工作簿**：30 家
 
 ## 1. 纳入样本（Ordinary Main Board IPO）
 
@@ -31,6 +31,13 @@
 | 2041.HK | Medcaptain Medical Technology Co., Ltd. - H Shares | 2026-09-07 | ✅ |
 | 9976.HK | Shenzhen Longsys Electronics Co., Ltd. - H Shares | 2026-09-08 | ✅ |
 | 3231.HK | Excelland Robotics (Wuxi) Co. Ltd. - H Shares | 2026-09-09 | ✅ |
+| 6727.HK | Transwarp Technology (Shanghai) Co., Ltd - H Shares | 2026-09-21 | ✅ |
+| 9856.HK | Ligent Technologies, Inc. | 2026-09-22 | ✅ |
+| 6731.HK | Direct Drive Tech Limited - H Shares | 2026-09-29 | ✅ |
+| 9607.HK | Red Avenue New Materials Group Co., Ltd. | 2026-09-29 | ✅ |
+| 3757.HK | RoboTechnik Intelligent Technology Co., Ltd.  - H Shares | 2026-09-29 | ✅ |
+| 3228.HK | Shenzhen Kinwong Electronic Co., Ltd. - H Shares | 2026-09-29 | ✅ |
+| 6802.HK | Shenzhen Camsense Technologies Co., Ltd. - H Shares | 2026-09-30 | ✅ |
 
 ## 2. 剔除样本及法定原因
 

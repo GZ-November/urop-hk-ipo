@@ -341,6 +341,8 @@ def cmd_expansion(cfg, args, companies):
         cmd.append("--dry-run")
     if getattr(args, "force_overwrite", False):
         cmd.append("--force-overwrite")
+    if getattr(args, "only", None):
+        cmd.extend(["--codes", *args.only])
     return subprocess.call(cmd, cwd=WS)
 
 
