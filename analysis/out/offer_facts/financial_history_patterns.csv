@@ -1,0 +1,13 @@
+Measure,Year-3 to year-1,N,Three-period complete N,Incomplete N
+Profit,Non-negative → Non-negative → Non-negative,54,105,8
+Profit,Negative → Negative → Negative,38,105,8
+Profit,Negative → Non-negative → Non-negative,5,105,8
+Profit,Non-negative → Non-negative → Negative,4,105,8
+Profit,Negative → Non-negative → Negative,2,105,8
+Profit,Non-negative → Negative → Non-negative,1,105,8
+Profit,Negative → Negative → Non-negative,1,105,8
+Equity,Non-negative → Non-negative → Non-negative,79,104,9
+Equity,Negative → Negative → Negative,19,104,9
+Equity,Non-negative → Negative → Non-negative,2,104,9
+Equity,Negative → Non-negative → Non-negative,2,104,9
+Equity,Negative → Negative → Non-negative,2,104,9

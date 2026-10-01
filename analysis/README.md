@@ -1,4 +1,10 @@
-# 2026 IPO analysis
+# 2026 IPO Analysis
+
+Current snapshot: **113 IPOs through 30 September 2026** (Q1/Q2/Q3: 38/45/30).
+Start with the English [offering facts](out/offer_facts/facts.md),
+[offering economics](out/offering_economics/analysis.md), and
+[literature review](../docs/IPO_LITERATURE_METHODS_2026.md).
+Each model reports its own complete-case N.
 
 Every statistical and regression output uses Hong Kong Main Board ordinary IPOs **listed in 2026**. `select_2026` checks actual listing dates, cohort consistency and issuer uniqueness. Module A contains no 2025H1 or historical US comparison observations. Literature and prior sponsor rankings inform definitions only.
 
@@ -35,6 +41,8 @@ existing research column names and definitions.
 
 | Script | Output |
 |---|---|
+| `offer_facts_2026.py` | `out/offer_facts/`: 113 issuers through 2026-09-30, offering/company/financial/demand/allocation/fee facts, 202-field inventory, full numeric profiles, explicit denominators, currency-separated financials, charts and input manifest; excludes first-day and aftermarket performance |
+| `offering_economics_2026.py` | `out/offering_economics/`: absolute listing-cost elasticity, disclosed commissions, OLS/fractional-logit cornerstone shares, applicant models, demand denominator decomposition, backing overlap, common-sample logs, restricted wild tests, Holm correction, month-block bootstrap and influence checks; English report |
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |
 | `module_b_underpricing_regression.py` | `out/module_b/`: hypotheses, nested regressions, robustness, time-cluster inference, coefficient chart, sample selection |
 | `ir_decomposition_2026.py` | `out/ir_decomposition/`: descriptive route/quarter/backing decomposition |
@@ -59,3 +67,17 @@ Unknown classification flags remain missing; invalid log inputs are excluded. Mo
 A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/AGY_INTEGRATION_2026-09-30.md).
 
 Current research design and brainstorm: [RESEARCH_DESIGN_2026.md](../docs/RESEARCH_DESIGN_2026.md). Evidence-gap disposition: [readiness review](../pipeline/reports/research_readiness/README.md).
+
+The fixed-cutoff offering-facts report is [facts.md](out/offer_facts/facts.md).
+It uses 38/45/30 issuers in Q1/Q2/Q3 and base proceeds (final offer price ×
+final shares before over-allotment), which differ from recorded HK/international
+fundraising amounts. This module does not refresh market data or source records.
+Run it separately with `python3 analysis/offer_facts_2026.py` or
+`make offer-facts` when only these descriptive facts are needed.
+
+Offering-facts reports and their generated table headings are now in English;
+verbatim source categories remain in their original language. The literature
+review is [IPO_LITERATURE_METHODS_2026.md](../docs/IPO_LITERATURE_METHODS_2026.md).
+The exploratory [offering-economics design](../docs/OFFERING_ECONOMICS_DESIGN_2026.md)
+and [results](out/offering_economics/analysis.md) extend those facts without
+using trading outcomes. Run `make offering-economics` for the new models.

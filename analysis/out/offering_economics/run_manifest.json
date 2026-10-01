@@ -1,0 +1,31 @@
+{
+  "cutoff": "2026-09-30",
+  "sample_n": 113,
+  "input": "pipeline/exports/HKIPO-MB-MASTER_clean.csv",
+  "sha256": "c2a2c7bfd91ee838735915cb0286710cac2e66ba2c7cec4c9e69552f51a221bd",
+  "seed": 20261001,
+  "script_sha256": "d21e308de55a6230f06c3b322259a54f9bf6650b3203d63c11aeac3f1a7903ec",
+  "design_sha256": "864c1aec46d81ebd4785df78e2306c16a991f9281ff3496ee4baa0850c3b98e8",
+  "family_n": {
+    "expenses": 110,
+    "commission": 111,
+    "cornerstone": 112,
+    "applicants": 112,
+    "decomposition": 112
+  },
+  "bootstrap": {
+    "attempts": 1085,
+    "valid": 1000,
+    "rejected": 85,
+    "seed": 20261001,
+    "percentile_intervals": "exploratory; nine month clusters"
+  },
+  "language": "English",
+  "design": "docs/OFFERING_ECONOMICS_DESIGN_2026.md",
+  "versions": {
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "statsmodels": "0.14.6"
+  }
+}

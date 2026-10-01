@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "urop-hk-ipo"
 version = "2.0.0"
-description = "Automated Extraction, Deterministic Validation, and Econometric Research Toolkit for HKEX IPOs"
+description = "Evidence-linked Hong Kong IPO datasets and reproducible research on issuance costs, investor allocation, pricing and aftermarket outcomes"
 authors = [{ name = "UROP HK IPO Research Team" }]
 readme = "README.md"
 license = { text = "MIT" }
