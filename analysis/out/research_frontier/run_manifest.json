@@ -1,7 +1,7 @@
 {
   "as_of": "2026-09-30",
   "seed": 20260930,
-  "sample_n": 106,
+  "sample_n": 113,
   "event_market_inputs": {
     "pipeline/prospectus_pipeline/data/market/aftermarket/hsi_bars.json": "2bdb8c6b6f90f07d9abde7c78dcb12fca0cd8b27a0aefbb2dc97524786065891",
     "pipeline/prospectus_pipeline/data/market/aftermarket/hstech_bars.json": "1fb06c63c5341a2429ba9bd6ff6a4eb5b62c9e5b53ecbd026de3c4b5122b454b",
@@ -110,7 +110,14 @@
     "pipeline/prospectus_pipeline/data/market/aftermarket/hk09615.json": "e6a72d08747a02579a475456f64b724b52025f9051121305870c947373e23e43",
     "pipeline/prospectus_pipeline/data/market/aftermarket/hk02041.json": "ff6f9b788876272e10aa153869edc9514326d1fef88fcc6421b2676e79e18c82",
     "pipeline/prospectus_pipeline/data/market/aftermarket/hk09976.json": "acf2268d5bf7e3eddba9bdade80c85e718f742f61918e5fb8e3b2ae17ceaa878",
-    "pipeline/prospectus_pipeline/data/market/aftermarket/hk03231.json": "004aebfa7ea9f830c71f7d3bb2e7d722c5193274cd7782ed5945bc2270965894"
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk03231.json": "004aebfa7ea9f830c71f7d3bb2e7d722c5193274cd7782ed5945bc2270965894",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk06727.json": "9cfef28434a19685cd91cd8c0e20b9241c7cd136cd10f2deb7e0d2298f0fa1b7",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk09856.json": "92db52c97a36d9fb7ea7313fb8f14c3269c1c4525033d31b4a6de5a94f3368b6",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk03228.json": "3ee6926018d08489ccbf11cad24bf9f1a272061531b1b381a1dc0b638667fcc7",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk03757.json": "7ffbc249f582095600e9d981417a2c0308b750358e77057a17aed32f3684ba79",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk06731.json": "5254abb5d205425bf8407aac200d2681970595e1896ab9d1b59488c4cd141af4",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk09607.json": "211d715f60a446c6459e2000f319a9768ef8dfdfc96cec97daf72b1f04972ee2",
+    "pipeline/prospectus_pipeline/data/market/aftermarket/hk06802.json": "472e9bc0701363e9053fc47fb26a8908498bf8c17fba04f31bd228b8c382864a"
   },
   "missing_event_market_inputs": [],
   "versions": {
@@ -119,7 +126,7 @@
     "statsmodels": "0.15.0"
   },
   "inputs": {
-    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "5a18bd803056a713c70fbbf019a7db2a09068ce79dd85fbd572757714955ce61",
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "c2a2c7bfd91ee838735915cb0286710cac2e66ba2c7cec4c9e69552f51a221bd",
     "docs/RESEARCH_DESIGN_2026.md": "93edc56d4582aa0943709725265cba4f3841a1b6ea9ca4de3acfaf0cf8c2e175",
     "pipeline/reports/margin_review/market_source_manifest.json": "951931b2f8866eff0622021c37f49863a539306f3a6935e455e80b3fd35228b3",
     "analysis/research_frontier_2026.py": "b3298fead23a9184cb19ca5674b0505436fcde6346553eb5c3452e778f3e270e",

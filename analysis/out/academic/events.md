@@ -8,25 +8,25 @@ Turnover rows compare mean turnover on days [0,+5] to days [-25,-6] (log ratio; 
 
 ## 1. Six-month lockup expiry (cornerstone unlock date, else controlling-shareholder date)
 
-Only issuers listed early enough to have reached the expiry with a full window are included (37 at most, all listed January-March; 88 issuers share the same
+Only issuers listed early enough to have reached the expiry with a full window are included (35 at most, all listed January-March; 88 issuers share the same
 cornerstone and controlling-shareholder date, so they are one event, not two).
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 31 | -2.5% | -2.9% | -1.37 | 0.076 | 0.206 | 61% |
+| [-1,+1] | 31 | -2.7% | -3.1% | -1.47 | 0.053 | 0.169 | 65% |
 | [0,+5] | 29 | -2.5% | -0.4% | -1.14 | 0.624 | 0.276 | 55% |
 | [-5,+5] | 29 | -5.6% | -4.9% | -1.62 | 0.092 | 0.100 | 69% |
-| [-5,-1] | 37 | -4.9% | -5.1% | -2.24 | 0.027 | 0.039 | 68% |
+| [-5,-1] | 35 | -3.3% | -2.9% | -1.64 | 0.075 | 0.139 | 66% |
 | Turnover [0,+5] vs [-25,-6], median log ratio | 29 | 0.18 | 0.12 | 1.19 | 0.275 | 0.004 | 41% |
 
 Robustness, HSTECH-adjusted:
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
-| [-1,+1] | 31 | -2.6% | -2.3% | -1.45 | 0.120 | 0.109 | 61% |
+| [-1,+1] | 31 | -2.7% | -2.3% | -1.54 | 0.076 | 0.087 | 65% |
 | [0,+5] | 29 | -1.5% | -0.0% | -0.70 | 0.882 | 0.295 | 52% |
 | [-5,+5] | 29 | -5.1% | -3.3% | -1.51 | 0.121 | 0.045 | 72% |
-| [-5,-1] | 37 | -5.0% | -3.5% | -2.34 | 0.026 | 0.011 | 62% |
+| [-5,-1] | 35 | -3.6% | -3.3% | -1.78 | 0.075 | 0.042 | 60% |
 | Turnover [0,+5] vs [-25,-6], median log ratio | 29 | 0.18 | 0.12 | 1.19 | 0.275 | 0.004 | 41% |
 
 ## 2. End of the stabilization period
@@ -54,7 +54,7 @@ No purchases:
 | [-5,-1] | 14 | -5.7% | -6.4% | -1.50 | 0.068 | 0.126 | 86% |
 
 - A negative pre-window on the lockup event ([-5,-1]) is the usual anticipation of selling pressure; the sign and size of [-5,+5] against the placebo distribution
-  is the test. With about 37 events from one listing quarter the power is limited.
+  is the test. With about 35 events from one listing quarter the power is limited.
 - The placebo statistics are centred below zero: returns drift down and turnover decays as a new listing ages, so an ordinary window in the same weeks would
   show a negative average. That is why the placebo p can be much smaller than the plain t-test or Wilcoxon p (for example the stabilization-end [-5,+5] window has
   t about 1.9 but placebo p about 0.004): the window is unusual relative to the issuer's own neighbouring days, though a plain test against zero is only marginal.

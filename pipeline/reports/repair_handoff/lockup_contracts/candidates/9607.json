@@ -1,0 +1,37 @@
+{
+  "code": "9607.HK",
+  "listing_date": "2026-09-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "CNCB Investment (CNCB (Hong Kong) Investment Limited), Full Truck (Full Truck Alliance Co. Ltd.), Golden Valley Master (Golden Valley Value Select Master Fund), Goldshore Company Limited, Happy Wisdom Limited, Prinx Chengshan (Hong Kong) Tire Limited, Yang Quanhai, Zhou Bo (per the Cornerstone Placing table, p200)",
+    "quote_page": 203,
+    "full_quote": "RESTRICTIONS ON THE CORNERSTONE INVESTORS Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date, (i) dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares, including any security that is convertible, exchangeable, exercisable or represents a right to receive such securities; (ii) allow itself to undergo a change of control (as defined in the Takeovers Code); or (iii) enter into any transactions directly or indirectly with the same economic effect as the aforesaid transaction.",
+    "reference_date": "2026-09-29",
+    "basis": "six months from (and inclusive of) the Listing Date (duration wording with inclusive start); restricted period frees up on the six-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-03-29",
+    "computed_last_restricted_day": "2027-03-28",
+    "notes": "Restriction also covers change of control of the Cornerstone Investor (Takeovers Code) and same-economic-effect transactions — slightly broader than a pure Offer Share disposal ban. No over-allotment option in the International Offering (p199), so no delayed-delivery carve-out discussed."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "Controlling Shareholders: Ms. Zhang Ning (張寧), Red Avenue Investment and Virgin Holdings, individually and as a group of persons",
+    "quote_page": 275,
+    "full_quote": "Pursuant to Rule 10.07(1) of the Listing Rules, each of our Controlling Shareholders has undertaken to us and the Stock Exchange that she/it will not and will procure that the relevant registered holder(s) will not (unless otherwise in compliance with the applicable requirements of the Listing Rules): (i) in the period commencing on the date by reference to which disclosure of her/its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), dispose of, nor enter into any agreement to dispose of, or otherwise create any options, rights, interests or encumbrances in respect of, any of those Shares in respect of which she/it is shown in this prospectus to be the beneficial owner(s);",
+    "reference_date": "2026-09-29",
+    "basis": "six calendar months from the Listing Date ('ending on the date which is six months from the Listing Date'); restricted period commences on the prospectus shareholding-disclosure date (inclusive of Listing Date); restricted period frees up on the six-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-03-29",
+    "computed_last_restricted_day": "2027-03-28",
+    "notes": "Parallel undertaking to the Hong Kong Underwriters on pages 277-278: during the First Six-Month Period the Controlling Shareholders will not sell/encumber the Relevant Shares (including same-economic-effect transactions and depositary receipts), subject to a carve-out for pledges/charges in favour of authorised institutions for bona fide commercial loans with notification obligations. The Company itself has a Rule 10.08 six-month no-new-issues undertaking (p275) and a six-month no-disorderly-market undertaking to underwriters (p276-277)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "Controlling Shareholders: Ms. Zhang Ning (張寧), Red Avenue Investment and Virgin Holdings, individually and as a group of persons",
+    "quote_page": 275,
+    "full_quote": "(ii) in the period of six months from the expiry of the First Six-month Period (the “Second Six-month Period”), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities referred to in (i) above if, immediately following the disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances (save pursuant to a pledge or charge as security in favour of an authorised institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan), she/it would cease to be our controlling shareholder or a group of controlling shareholders (as defined in the Listing Rules) of our Company.",
+    "reference_date": "2026-09-29",
+    "basis": "Rule 10.07(1)(b) second six-month period: 'six months from the expiry of the First Six-month Period', i.e. 12 calendar months from the Listing Date; applies only to disposals that would cause the holder to cease to be a controlling shareholder (control-maintenance restriction); restricted period frees up on the 12-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-09-29",
+    "computed_last_restricted_day": "2027-09-28",
+    "notes": "Quote begins on page 275 (item (ii) of the Rule 10.07(1) undertaking) and continues onto page 276. In addition, pursuant to Note 3 to Rule 10.07(2) (p276), the Controlling Shareholders jointly and severally undertook, within the period commencing on the prospectus disclosure date and ending on the date which is 12 months from the Listing Date, to notify the Company of any pledge/charge of Shares in favour of authorised institutions and of any indications from the pledgee/chargee that pledged Shares will be disposed of. The parallel underwriters' undertaking (p277(c)) applies until the expiry of the Second Six-Month Period."
+  }
+}

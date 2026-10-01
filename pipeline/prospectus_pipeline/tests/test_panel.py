@@ -113,7 +113,7 @@ class RealPanelTests(unittest.TestCase):
         frame = panel.load_master()
         # 204 = 2 标识列 + 202 变量；--derive 生成的 master 再多 5 个派生列
         self.assertGreaterEqual(len(frame.columns), 204)
-        self.assertEqual(len(frame), 148)
+        self.assertEqual(len(frame), 155)  # 148 pre-2026Q3-expansion + 7 new Q3 issuers
         self.assertTrue(str(frame["date_of_listing"].dtype).startswith("datetime64"))
         self.assertTrue(frame["ipo_subscription_price_hk"].dtype.kind == "f")
         if "leverage_y1" in frame.columns:

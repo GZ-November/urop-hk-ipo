@@ -1,0 +1,37 @@
+{
+  "code": "3757.HK",
+  "listing_date": "2026-09-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Each of the 18 Cornerstone Investors: Temasek (via Taibai Investments Pte. Ltd.), Sunpeak Asset, IvyRock, E Fund, E Fund Management, E Fund HK, CIG, Winner Global Fund, Wind Sabre, Vestide Lumir, Arrowpoint, Sino Opulence Fund, Roofer Asset Management, Bloom Capital, Mr. Lai Pak Lam, Mr. Xia Shengli, Mr. Zhu Guodong, Mr. Zheng Xiaofeng",
+    "quote_page": 264,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the \u201cLock-up Period\u201d), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries or affiliates (as the case may be) who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-09-29",
+    "basis": "Wording is 'during the period of six months from (and inclusive of) the Listing Date'. Inclusive start on 2026-09-29; a six-month period counted from and inclusive of that date runs through 2027-03-28 (the day before the six-month anniversary 2027-03-29). Endpoint is exclusive of the anniversary, so the last restricted day is 2027-03-28 and the first free day is 2027-03-29.",
+    "computed_first_free_day": "2027-03-29",
+    "computed_last_restricted_day": "2027-03-28",
+    "notes": "Standard 6-month cornerstone lock-up. Exceptions limited to transfers to wholly-owned subsidiaries/affiliates bound by identical obligations. Defined term 'Lock-up Period'. Aggregate cornerstone subscription US$232.4 million / 4,179,950 H Shares at max Offer Price HK$436.00 (see page 259)."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "Single Largest Shareholder Group (Mr. Dai, Yuanjiesheng and Ningbo Kejun collectively), plus any other registered holder(s) whom they must procure compliance from",
+    "quote_page": 273,
+    "full_quote": "Pursuant to Rule 10.07 of the Listing Rules, the Single Largest Shareholder Group has undertaken to us and to the Stock Exchange that, except pursuant to the Global Offering, each of the members of the Single Largest Shareholder Group will not, and shall procure that any other registered holder(s) (if any) will not, without the prior written consent of the Stock Exchange or unless otherwise in compliance with applicable requirements of the Listing Rules, in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, or enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of those shares or securities of the Company in respect of which he/it is shown by this prospectus to be the beneficial owner (as defined in the Listing Rules).",
+    "reference_date": "2026-09-29",
+    "basis": "Wording is 'in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this prospectus and ending on the date which is six months from the Listing Date'. The end date 'six months from the Listing Date' is 2027-03-29 and is the stated end of the restricted period (inclusive endpoint), so the last restricted day is 2027-03-29 and the first free day is 2027-03-30. Note the start date is the prospectus shareholding-disclosure date (pre-listing), earlier than the Listing Date.",
+    "computed_first_free_day": "2027-03-30",
+    "computed_last_restricted_day": "2027-03-29",
+    "notes": "Non-standard in two respects: (1) holder is the 'Single Largest Shareholder Group' (Mr. Dai, Yuanjiesheng, Ningbo Kejun) rather than a defined Listing Rules 'Controlling Shareholder' \u2014 this is the standard Rule 10.07(2) formulation for PRC/H-share issuers with no single controlling shareholder; (2) the restriction period commences on the prospectus shareholding-disclosure date, not the Listing Date, making the restriction window longer than a plain 6-month post-listing lock. Exception: disposals pursuant to the Global Offering, or with prior written Stock Exchange consent / in compliance with Listing Rules requirements. End date (2027-03-29 inclusive) is one day later than the cornerstone first free day (2027-03-29) \u2014 the 'ending on the date which is six months from' vs 'six months from (and inclusive of)' drafting difference."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": null,
+    "quote_page": 273,
+    "full_quote": null,
+    "reference_date": "2026-09-29",
+    "basis": null,
+    "computed_first_free_day": null,
+    "computed_last_restricted_day": null,
+    "notes": "No 12-month control-maintenance undertaking exists in the prospectus. The entire Rule 10.07 undertaking (page 273, printed page 264) consists of a single six-month disposal-restriction paragraph and contains no 12-month covenant. Searches for '12 months from the Listing Date', '12-month period' and 'cease to be a controlling shareholder' returned no hits anywhere in the document. The issuer discloses no Listing Rules 'Controlling Shareholder' \u2014 'Controlling Shareholder' appears only in the A-share/PRC regulatory context (Yuanjiesheng as controlling shareholder of the Shenzhen-listed A-share entity); the HK-listed entity is owned by the 'Single Largest Shareholder Group' (Mr. Dai ~3.93%, Yuanjiesheng ~23.66%, Ningbo Kejun ~3.87%), and only the 6-month Rule 10.07 undertaking is given. No Chapter 18C/18A/19C replacement applies (this is a non-18C H-share listing; 'Specialist Technology' has no hits)."
+  }
+}

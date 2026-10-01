@@ -21,21 +21,28 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from cohort import _membership_date  # noqa: E402
-from listing_reports import reports_for_interval  # noqa: E402
+from listing_reports import reports_and_supplement  # noqa: E402
 from sample_builder import audit_candidate, load_nlr_candidates  # noqa: E402
 
 
 def _official_candidates(cfg: dict, start: dt.date, end: dt.date) -> list[dict[str, Any]]:
-    """从本地缓存的官方 NLR 报告加载区间内的候选发行人并做法定审计。"""
+    """从本地缓存的官方 NLR 报告加载区间内的候选发行人并做法定审计。
+
+    年度报告滞后于区间终点时，允许经复核的补充名单（reviews supplement）覆盖
+    报告覆盖日之后的剩余日期；补充条目同样经过法定审计。
+    """
     from paths import sources_dir as layout_sources_dir
     source_dir = Path(cfg["dataset"].get("report_source_dir") or layout_sources_dir(WS))
     candidates: list[dict[str, Any]] = []
-    for report in reports_for_interval(start, end, source_dir):
+    reports, supplement = reports_and_supplement(start, end, source_dir)
+    for report in reports:
         match = re.search(r"(?:NLR)?(19\d{2}|20\d{2})", report.stem, re.I)
         if not match:
             raise ValueError(f"Cannot identify annual report year: {report.name}")
         for candidate in load_nlr_candidates(report, int(match.group(1))):
             candidates.append(audit_candidate(candidate))
+    for candidate in supplement:
+        candidates.append(audit_candidate(candidate))
     return candidates
 
 

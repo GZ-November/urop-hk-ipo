@@ -1,0 +1,37 @@
+{
+  "code": "6802.HK",
+  "listing_date": "2026-09-30",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Golden Link (BVI, wholly owned by BYD (H.K.) Co., Limited, a subsidiary of BYD Company Limited); Taiwan ZMAX (wholly-owned subsidiary of ZMAX Optics, SSE 688307) — two Cornerstone Investors subscribing 1,869,200 Offer Shares in aggregate at HK$58.85",
+    "quote_page": 227,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-09-30",
+    "basis": "Wording is 'six months from (and inclusive of) the Listing Date': restricted period includes the Listing Date and runs six calendar months, so it is inclusive of the Listing Date and exclusive of the six-month anniversary. Listing Date 2026-09-30 + 6 months = 2027-03-30, hence last restricted day 2027-03-29 and first free day 2027-03-30. Exception: transfers to wholly-owned subsidiaries bound by the same Lock-up Period.",
+    "computed_first_free_day": "2027-03-30",
+    "computed_last_restricted_day": "2027-03-29",
+    "notes": "Standard 6-month cornerstone lock-up under the Cornerstone Investment Agreements (restrictions section headed 'RESTRICTIONS ON THE CORNERSTONE INVESTORS'). Nothing non-standard; delayed delivery of Offer Shares is possible under the agreements but payment is settled in full before Listing, so the lock-up clock still runs from the Listing Date."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "Single Largest Group of Shareholders — Mr. Wang (chairman, executive Director and co-general manager), Mr. Zhou (executive Director and general manager), Mr. Liu Yi (劉屹), Camsense Investment, Xinle Management and Camsense Era (concert-party group holding ~27.45% post-Global Offering)",
+    "quote_page": 289,
+    "full_quote": "Pursuant to Rule 10.07 of the Listing Rules, our Single Largest Group of Shareholders has irrevocably and unconditionally undertaken to us and to the Stock Exchange that except pursuant to the Global Offering, or the Over-allotment Option, they shall not and shall procure that the relevant registered Shareholder(s) controlled by them shall not, in the period commencing on the date by reference to which disclosure of its/his shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan) in respect of, any of our securities that they are shown to beneficially own in this prospectus.",
+    "reference_date": "2026-09-30",
+    "basis": "Wording is 'in the period commencing on the date by reference to which disclosure of its/his shareholdings ... is made in this prospectus and ending on the date which is six months from the Listing Date'. Unlike the cornerstone clause, the endpoint is phrased as 'ending on' the six-month anniversary, which on plain reading includes that date in the restricted period: six months from 2026-09-30 is 2027-03-30, so last restricted day = 2027-03-30 and first free day = 2027-03-31 (one day later than the cornerstone block, which is exclusive of the anniversary). Commencement is the prospectus shareholding-disclosure date, i.e. earlier than the Listing Date, but the binding endpoint for first-free-day computation is the six-month anniversary.",
+    "computed_first_free_day": "2027-03-31",
+    "computed_last_restricted_day": "2027-03-30",
+    "notes": "Non-standard holder: the issuer has NO controlling shareholders under the Listing Rules — Mr. Wang, Mr. Zhou, Mr. Liu Yi, Camsense Investment, Xinle Management and Camsense Era (concert parties, ~31.20% pre-offering / ~27.45% post-offering) are expressly 'not ... regarded as our controlling shareholders' and are only the 'Single Largest Group of Shareholders' (page 214). The Rule 10.07 disposal restriction is nonetheless given by this group (voluntarily/extended undertaking). A parallel undertaking to the Hong Kong Underwriters covering the same First Six Month Period (same 6-month window, with pledge/charge carve-out for bona fide commercial loans to authorized institutions) is at page 291."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07(3)-type 12-month control-maintenance undertaking exists: the issuer has no controlling shareholders (page 214). The only 12-month undertaking by the Single Largest Group of Shareholders (pages 289-290) is confined to Rule 10.07(2)-style PLEDGE/CHARGE NOTIFICATION duties — informing the Company in writing of any pledge/charge of its securities to an authorized institution and of any pledgee/chargee indications of disposal — not a control or disposal restriction. Separately, PRC law imposes a statutory 12-month post-Listing disposal restriction on ALL pre-Listing shareholders including Pre-IPO Investors (page 124: 'within the 12 months following the Listing Date, no existing Shareholders (including the Pre-IPO Investors) may dispose of any of the Shares held by them'; also page 16), but this is a PRC statutory lock-up on existing shareholders, not a controller 12-month control undertaking, so controller_12m is recorded as non-existent. The shareholders' undertaking to the underwriters covers only the First Six Month Period; the Second Six-Month Period undertaking at pages 290-291 binds the Company only (new issues), not shareholders."
+  }
+}

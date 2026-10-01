@@ -1,0 +1,118 @@
+{
+  "code": "3228.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4769,
+      "page": 7,
+      "quote": "Total 34,788,400 47.69% 3.24%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 94.25,
+      "page": 4,
+      "quote": "Subscription level 94.25 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 61273,
+      "page": 4,
+      "quote": "No. of valid applications 61,273",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 687538100,
+      "page": 15,
+      "quote": "Total 58,594 Total number of Pool A successful applicants: 14,411",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Hong Kong Public Offering: \"Subscription level 94.25 times\"; Reallocation: No; International Offering: \"Subscription Level 10.57 times\"",
+      "page": 4,
+      "quote": "Subscription level 94.25 times Reallocation No",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "28/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：28/09/2026 22:15",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 72944300,
+      "page": 3,
+      "quote": "Number of Offer Shares 72,944,300 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 7294500,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 7,294,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 65649800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 65,649,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No reallocation from the International Offering to the Hong Kong Public Offering (0 shares); final HK Public Offering remains 7,294,500 shares, 10.00% of the Global Offering",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 4960600000,
+      "page": 3,
+      "quote": "Net proceeds HK$4,960.6 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0679,
+      "page": 29,
+      "quote": "the total market value of the H Shares expected to be held by the public is expected to be approximately HK$5.10 billion",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 1074268341,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 1,074,268,341 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0355,
+      "page": null,
+      "quote": "公式：(col_CS 72,944,300 − col_CK 0.4769×col_CS) ÷ col_CZ 1,074,268,341 = 0.0355；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 72,944,300 − col_CK 0.4769×col_CS) ÷ col_CZ 1,074,268,341 = 0.0355；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1074268341,
+      "page": 3,
+      "quote": "公式：(col_CS 72,944,300 − col_CK 0.4769×col_CS) ÷ col_CZ 1,074,268,341 = 0.0355；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Offer Mechanism A vs B, 2026 (N = 103 with a recorded mechanism)
+# Offer Mechanism A vs B, 2026 (N = 110 with a recorded mechanism)
 
 Research plan line A proposes A vs B as a main hypothesis. The cross-tab shows why it cannot be identified as such.
 
@@ -6,31 +6,31 @@ Research plan line A proposes A vs B as a main hypothesis. The cross-tab shows w
 
 | Mechanism | 18C | Not 18C |
 |---|---|---|
-| Mechanism A | 17 | 6 |
-| Mechanism B | 0 | 80 |
+| Mechanism A | 19 | 6 |
+| Mechanism B | 0 | 85 |
 
 | Mechanism | Apr-Jun | Other months |
 |---|---|---|
-| Mechanism A | 13 | 10 |
-| Mechanism B | 29 | 51 |
+| Mechanism A | 13 | 12 |
+| Mechanism B | 29 | 56 |
 
-- 17 of 17 18C issuers use Mechanism A. Only 6 of the 86 non-18C issuers with a mechanism are on A.
+- 19 of 19 18C issuers use Mechanism A. Only 6 of the 91 non-18C issuers with a mechanism are on A.
   "A vs B" is therefore almost the same variable as "18C vs the rest", and it is a choice made by the issuer.
 
 ## Raw contrast
 
-Mean IR 69.5% (A, n = 23) vs 48.4% (B, n = 80); median
-44.7% vs 14.1%. Welch p = 0.311, Mann-Whitney p = 0.230,
-permutation p stratified by the Apr-Jun window = 0.369.
+Mean IR 63.8% (A, n = 25) vs 48.7% (B, n = 85); median
+44.2% vs 13.4%. Welch p = 0.442, Mann-Whitney p = 0.346,
+permutation p stratified by the Apr-Jun window = 0.494.
 
 ## Adjusted contrast, outcome log(1 + IR)
 
 | Specification | Mechanism A coefficient (HC3 s.e.) | HC3 p | Wild cluster p | N | Min. detectable effect (log pts, 80% power) |
 |---|---|---|---|---|---|
-| Mechanism A only | 0.156 (0.108) | 0.148 | 0.312 | 103 | 0.30 |
-| + Apr-Jun dummy | 0.082 (0.115) | 0.477 | 0.598 | 103 | 0.32 |
-| + route (18A, 18C; A+H in controls) | -0.162 (0.176) | 0.358 | 0.668 | 103 | 0.49 |
-| + route + size + fixed price | -0.168 (0.173) | 0.330 | 0.629 | 103 | 0.48 |
+| Mechanism A only | 0.122 (0.104) | 0.240 | 0.359 | 110 | 0.29 |
+| + Apr-Jun dummy | 0.056 (0.107) | 0.602 | 0.684 | 110 | 0.30 |
+| + route (18A, 18C; A+H in controls) | -0.170 (0.177) | 0.336 | 0.582 | 110 | 0.49 |
+| + route + size + fixed price | -0.177 (0.175) | 0.313 | 0.637 | 110 | 0.49 |
 
 - Once route is held fixed the Mechanism A coefficient is identified from 6 non-18C issuers only, so its standard
   error is large. The sample cannot separate a mechanism effect from an 18C effect at any economically plausible size.

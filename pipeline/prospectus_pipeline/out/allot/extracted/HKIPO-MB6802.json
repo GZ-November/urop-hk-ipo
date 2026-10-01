@@ -1,0 +1,115 @@
+{
+  "code": "6802.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1613,
+      "page": 6,
+      "quote": "Total 1,869,200 16.13% 1.94% 1.94%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3546.91,
+      "page": 4,
+      "quote": "Subscription level 3,546.91 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 157315,
+      "page": 4,
+      "quote": "No. of valid applications 157,315",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4110508700,
+      "page": 17,
+      "quote": "Total 140,905 Total number of Pool A successful applicants: 5,795",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 3,546.91 times",
+      "page": 4,
+      "quote": "Subscription level 3,546.91 times Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 1,158,900 H Shares",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "29/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/09/2026 21:31**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 11588800,
+      "page": 3,
+      "quote": "Number of Offer Shares before exercise of the Over-allotment Option 11,588,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1158900,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,158,900 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 10429900,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (before exercise of the Over-allotment Option) 10,429,900 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A — no clawback; 0 Offer Shares reallocated from the International Offering; final Hong Kong Public Offering size 1,158,900 H Shares (10% of Global Offering), unchanged from initial.",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 1,158,900 H Shares No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 609400000,
+      "page": 4,
+      "quote": "based on the Offer Price of HK$58.85, assuming no exercise of the Over-allotment Option, the net proceeds in relation to the Global Offering will be approximately HK$609.4 million",
+      "confidence": "medium"
+    },
+    "col_CY": {
+      "value": 0.6058,
+      "page": 25,
+      "quote": "58,507,523 H Shares represent approximately 60.58% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 96573639,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing before exercise of the Over-allotment Option 96,573,639",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1006,
+      "page": 25,
+      "quote": "the free float of the Company represents approximately 10.06% of the total issued share capital of the Company at the time of Listing",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued share capital of the Company at the time of Listing (96,573,639 shares, assuming the Over-allotment Option is not exercised); numerator = 9,719,600 H Shares counted towards free float, excluding cornerstone Offer Shares (6-month lock-up) and H Shares held by existing Shareholders converted from Unlisted Shares (12-month PRC law lock-up).",
+      "page": 25,
+      "quote": "excluding the Offer Shares to be allocated to the Cornerstone Investors that are subject to a lock-up period of six months following the Listing Date",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 96573639,
+      "page": 25,
+      "quote": "the free float of the Company represents approximately 10.06% of the total issued share capital of the Company at the time of Listing with a market value of approximately HK$572.0 million",
+      "confidence": "high"
+    }
+  }
+}

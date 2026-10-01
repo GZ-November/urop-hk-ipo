@@ -1,0 +1,425 @@
+{
+ "code": "9607.HK",
+ "fields": {
+  "col_L": {
+   "value": 68118700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 68,118,700 H Shares",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 68118700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 68,118,700 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No offer shares under any capitalization Issue disclosed in the prospectus",
+   "confidence": "low"
+  },
+  "col_O": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No Capitalization Rest disclosed in the prospectus",
+   "confidence": "low"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 194,
+   "quote": "H Shares to be issued under the Global Offering 68,118,700 10.0%",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 68118700,
+   "page": 194,
+   "quote": "H Shares to be issued under the Global Offering 68,118,700 10.0%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 61306800,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 61,306,800 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 6811900,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 6,811,900 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares (ordinary shares)",
+   "page": 194,
+   "quote": "the Shares will consist of A Shares and H Shares. A Shares and H Shares are all ordinary Shares in the share capital of our Company",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 68118700,
+   "page": 194,
+   "quote": "H Shares to be issued under the Global Offering 68,118,700 10.0%",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 44.0,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$44.00 per H Share plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 39.0,
+   "page": 2,
+   "quote": "The Offer Price will not be more than HK$44.00 per Offer Share, and is expected to be not less than HK$39.00 per Offer Share",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 16,
+   "quote": "As at 31 December 2023 31 December 2024 31 December 2025 30 June 2026 RMB’000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 7333905000,
+   "page": 16,
+   "quote": "Total assets . . . 7,333,905 8,409,127 9,218,735 9,531,055",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 8409127000,
+   "page": 16,
+   "quote": "Total assets . . . 7,333,905 8,409,127 9,218,735 9,531,055",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 9218735000,
+   "page": 16,
+   "quote": "Total assets . . . 7,333,905 8,409,127 9,218,735 9,531,055",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 3504896000,
+   "page": 306,
+   "quote": "Total equity 3,504,896 3,459,330 4,258,691 4,316,949",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 3459330000,
+   "page": 306,
+   "quote": "Total equity 3,504,896 3,459,330 4,258,691 4,316,949",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 4258691000,
+   "page": 306,
+   "quote": "Total equity 3,504,896 3,459,330 4,258,691 4,316,949",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 3829009000,
+   "page": 16,
+   "quote": "Total liabilities . . . 3,829,009 4,949,797 4,960,044 5,214,106",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 4949797000,
+   "page": 16,
+   "quote": "Total liabilities . . . 3,829,009 4,949,797 4,960,044 5,214,106",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 4960044000,
+   "page": 16,
+   "quote": "Total liabilities . . . 3,829,009 4,949,797 4,960,044 5,214,106",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 2937334000,
+   "page": 303,
+   "quote": "REVENUE 5 2,937,334 3,263,380 3,420,577",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 3263380000,
+   "page": 303,
+   "quote": "REVENUE 5 2,937,334 3,263,380 3,420,577",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 3420577000,
+   "page": 303,
+   "quote": "REVENUE 5 2,937,334 3,263,380 3,420,577",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 426985000,
+   "page": 303,
+   "quote": "PROFIT BEFORE TAX 6 426,985 550,166 600,950",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 550166000,
+   "page": 303,
+   "quote": "PROFIT BEFORE TAX 6 426,985 550,166 600,950",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 600950000,
+   "page": 303,
+   "quote": "PROFIT BEFORE TAX 6 426,985 550,166 600,950",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 404118000,
+   "page": 303,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 404,118 534,185 577,261",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 534185000,
+   "page": 303,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 404,118 534,185 577,261",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 577261000,
+   "page": 303,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 404,118 534,185 577,261",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 3790340000,
+   "page": 259,
+   "quote": "Our interest-bearing bank and other borrowings remained relatively stable at approximately RMB3,832.5 million as at 31 December 2024, RMB3,790.3 million as at 31 December 2025",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards (as issued by the IASB)",
+   "page": 207,
+   "quote": "has been prepared in accordance with the IFRS Accounting Standards as issued by the International Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 813592000,
+   "page": 303,
+   "quote": "Gross profit 685,060 795,857 813,592",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 313375000,
+   "page": 313,
+   "quote": "Purchases of items of property, plant and equipment and intangible assets (170,240) (255,739) (313,375)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified (true and fair view)",
+   "page": 301,
+   "quote": "a true and fair view of the financial position of the Group and the Company as at 31 December 2023, 2024 and 2025 and 30 June 2026",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.02,
+   "page": 279,
+   "quote": "The Underwriters will receive an underwriting commission equal to 2.0% of the aggregate Offer Price of all the Offer Shares (the “Underwriting Commission”)",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.02,
+   "page": 279,
+   "quote": "The Underwriters will receive an underwriting commission equal to 2.0% of the aggregate Offer Price of all the Offer Shares (the “Underwriting Commission”)",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0,
+   "page": 199,
+   "quote": "Since there is no over-allotment option in the International Offering, there will be no delayed delivery of the Offer Shares to be subscribed by the Cornerstone Investors",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Listing expenses disclosed only in RMB (approximately RMB104.3 million); no HK$ amount disclosed",
+   "confidence": "low"
+  },
+  "col_AR": {
+   "value": "New materials provider in the PRC: R&D, production, marketing, sales and distribution of rubber additives for tyres and other chemical products, electronic materials, and fully biodegradable materials",
+   "page": 113,
+   "quote": "our principal businesses comprised three segments, namely (i) rubber additives for tyres and other chemical products; (ii) electronic materials; and (iii) fully biodegradable materials",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "H Shares listed on the Main Board of The Stock Exchange of Hong Kong",
+   "page": 195,
+   "quote": "Place of offering: The Main Board of the Stock Exchange.",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "Technology commercialization stage not explicitly disclosed; products already in commercial production and sale",
+   "confidence": "low"
+  },
+  "col_BG": {
+   "value": 0.1,
+   "page": 21,
+   "quote": "approximately 10.0% of the net proceeds, or HK$270.6 million, for repaying bank borrowings",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "CNCB (Hong Kong) Investment Limited; Full Truck Alliance Co. Ltd.; Golden Valley Value Select Master Fund; Goldshore Company Limited; Happy Wisdom Limited; Prinx Chengshan (Hong Kong) Tire Limited; Yang Quanhai; Zhou Bo",
+   "page": 200,
+   "quote": "The table below sets forth details of the Cornerstone Placing:",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 303,
+   "quote": "Year ended 31 December Six months ended 30 June 2023 2024 2025 2025 2026",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 262272000,
+   "page": 313,
+   "quote": "Net cash flows from operating activities 178,824 145,259 262,272",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 476150000,
+   "page": 314,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR/PERIOD 27 661,436 503,209 476,150",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 232512000,
+   "page": 303,
+   "quote": "Research and development expenses (179,780) (216,572) (232,512)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No additions of capitalised development costs disclosed; intangible assets relate mainly to patents/licences (page 322 policy: research costs charged as incurred)",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.298,
+   "page": 140,
+   "quote": "representing approximately 28.1%, 28.4%, 29.8% and 29.1% of our total revenue for the respective year/period",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "彤程新材料集团股份有限公司",
+   "page": 1,
+   "quote": "彤程新材料集團股份有限公司 Red Avenue New Materials Group Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Company listed on the Shanghai Stock Exchange since 2018; history discloses capital increases only from founder/affiliate entities and Independent Third Party individuals; no VC/PE backing disclosed",
+   "confidence": "low"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Mr. Zeng Ming (曾鳴), an Independent Third Party, solely subscribed for such increase in the registered capital for cash consideration of RMB80 million",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Zhoushan Saifan Investment Management Partnership (Limited Partnership) (“Saifan Investment”), an Independent Third Party, solely subscribed for such increase in the registered capital",
+   "confidence": "low"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "In October 2016, the registered capital of our Company increased from RMB500,000,000 to RMB507,187,500 by way of additional cash contribution of RMB7,187,500",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Ms. Zhang and the entities controlled by her, namely Red Avenue Investment and Virgin Holdings, will hold in aggregate approximately 54.89% of the issued share capital",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "After these registered capital increases, the shareholding structure of our Company was as follows: Name of Shareholder Number of Shares held",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "No VC/PE institutional pre-IPO investors disclosed; pre-2018 capital increases were from founder/affiliate entities and Independent Third Party individuals (Saifan Investment, Mr. Zeng Ming)",
+   "confidence": "low"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No pre-IPO institutional VC/PE shareholding disclosed in the prospectus",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No pre-IPO investor board seat disclosed in the prospectus",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "Earliest disclosed capital increase completed on 10 November 2016 (Saifan Investment, Zeng Ming); not identifiable as a VC/PE round",
+   "confidence": "low"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No VC/PE pre-IPO investor identified; earliest disclosed capital increase completed 10 November 2016, not a VC/PE round",
+   "confidence": "low"
+  },
+  "col_BB": {
+   "value": "Natural person (Ms. Zhang)",
+   "page": 19,
+   "quote": "will hold in aggregate approximately 54.89% of the issued share capital of our Company and will be our Controlling Shareholders upon the Listing",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5489,
+   "page": 19,
+   "quote": "will hold in aggregate approximately 54.89% of the issued share capital of our Company and will be our Controlling Shareholders upon the Listing",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5489,
+   "page": 19,
+   "quote": "Ms. Zhang and the entities controlled by her, namely Red Avenue Investment and Virgin Holdings, will hold in aggregate approximately 54.89% of the issued share capital",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "18/09/2016",
+   "page": 104,
+   "quote": "our Company was established on 18 September 2016 through the conversion of Red Avenue Group from a limited liability company into a joint stock limited company",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, the PRC",
+   "page": 452,
+   "quote": "Our registered address and principal place of business is at Room 2501, 25th Floor, Shanghai Tower, 501 Yincheng Middle Road, Pilot Free Trade Zone, Shanghai, the PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "21/09/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, 21 September, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "24/09/2026",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close(3) . . . 12:00 noon on Thursday, 24 September, 2026",
+   "confidence": "high"
+  }
+ }
+}

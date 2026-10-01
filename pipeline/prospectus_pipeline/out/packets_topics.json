@@ -4,9 +4,679 @@
     "name": "Shanghai Biren Technology Co., Ltd.- H shares",
     "topic": "topic_underwriting",
     "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
-    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/packets/HKIPO-MB6082-topic_underwriting.md",
-    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6082-topic_underwriting.json",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6082-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6082-topic_underwriting.json",
     "fields_count": 5,
     "packet_kb": 130.4
+  },
+  {
+    "code": "3757.HK",
+    "name": "RoboTechnik Intelligent Technology Co., Ltd.  - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3757-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3757-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.6
+  },
+  {
+    "code": "6727.HK",
+    "name": "Transwarp Technology (Shanghai) Co., Ltd - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6727-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6727-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 120.7
+  },
+  {
+    "code": "6731.HK",
+    "name": "Direct Drive Tech Limited - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6731-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6731-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.2
+  },
+  {
+    "code": "9856.HK",
+    "name": "Ligent Technologies, Inc.",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9856-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9856-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.8
+  },
+  {
+    "code": "3228.HK",
+    "name": "Shenzhen Kinwong Electronic Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3228-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3228-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.3
+  },
+  {
+    "code": "9607.HK",
+    "name": "Red Avenue New Materials Group Co., Ltd.",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9607-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9607-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.4
+  },
+  {
+    "code": "6802.HK",
+    "name": "Shenzhen Camsense Technologies Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6802-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6802-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.0
+  },
+  {
+    "code": "2513.HK",
+    "name": "Knowledge Atlas Technology Joint Stock Company Limited - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2513-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2513-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.6
+  },
+  {
+    "code": "0100.HK",
+    "name": "MiniMax Group Inc. - W - P",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0100-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0100-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.1
+  },
+  {
+    "code": "3636.HK",
+    "name": "Yunnan Jinxun Resources Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3636-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3636-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.9
+  },
+  {
+    "code": "9903.HK",
+    "name": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9903-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9903-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 121.1
+  },
+  {
+    "code": "0501.HK",
+    "name": "OmniVision Integrated Circuits Group, Inc. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0501-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0501-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.2
+  },
+  {
+    "code": "6938.HK",
+    "name": "Suzhou Ribo Life Science Co., Ltd. - B - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6938-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6938-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.3
+  },
+  {
+    "code": "1641.HK",
+    "name": "Hongxing Coldchain (Hunan) Co., Ltd.- H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1641-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1641-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.5
+  },
+  {
+    "code": "2675.HK",
+    "name": "Shenzhen Edge Medical Co., Ltd.- B - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2675-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2675-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.4
+  },
+  {
+    "code": "1768.HK",
+    "name": "BUSY MING GROUP CO., LTD.- H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1768-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1768-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 121.5
+  },
+  {
+    "code": "2677.HK",
+    "name": "Distinct Healthcare Holdings Limited",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2677-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2677-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.0
+  },
+  {
+    "code": "9980.HK",
+    "name": "Eastroc Beverage (Group) Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9980-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9980-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 127.6
+  },
+  {
+    "code": "3986.HK",
+    "name": "GigaDevice Semiconductor Inc. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3986-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3986-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.3
+  },
+  {
+    "code": "9611.HK",
+    "name": "Shanghai Longcheer Technology Co., Ltd.- H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9611-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9611-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.1
+  },
+  {
+    "code": "2768.HK",
+    "name": "Qingdao Gon Technology Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2768-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2768-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 121.5
+  },
+  {
+    "code": "2714.HK",
+    "name": "Muyuan Foods Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2714-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2714-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.5
+  },
+  {
+    "code": "3200.HK",
+    "name": "Shenzhen Han’s CNC Technology Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3200-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3200-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.7
+  },
+  {
+    "code": "6809.HK",
+    "name": "Montage Technology Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6809-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6809-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.7
+  },
+  {
+    "code": "0600.HK",
+    "name": "Axera Semiconductor Co., Ltd. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0600-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0600-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.1
+  },
+  {
+    "code": "9981.HK",
+    "name": "Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9981-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9981-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.7
+  },
+  {
+    "code": "2706.HK",
+    "name": "Beijing Haizhi Technology Group Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2706-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2706-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.5
+  },
+  {
+    "code": "2720.HK",
+    "name": "Ridge Outdoor International Limited",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2720-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2720-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.8
+  },
+  {
+    "code": "2649.HK",
+    "name": "ALSCO Pooling Service Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2649-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2649-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 43.8
+  },
+  {
+    "code": "2715.HK",
+    "name": "ESTUN AUTOMATION CO., LTD - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2715-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2715-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 128.4
+  },
+  {
+    "code": "0470.HK",
+    "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0470-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0470-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.7
+  },
+  {
+    "code": "1989.HK",
+    "name": "Delton Technology (Guangzhou) Inc. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1989-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1989-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.4
+  },
+  {
+    "code": "3268.HK",
+    "name": "MeiG Smart Technology Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3268-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3268-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.0
+  },
+  {
+    "code": "2701.HK",
+    "name": "Nsing Technologies Inc. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2701-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2701-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.2
+  },
+  {
+    "code": "3355.HK",
+    "name": "FS.COM Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3355-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3355-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.6
+  },
+  {
+    "code": "2632.HK",
+    "name": "Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2632-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2632-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.3
+  },
+  {
+    "code": "2692.HK",
+    "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2692-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2692-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.4
+  },
+  {
+    "code": "1021.HK",
+    "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1021-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1021-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 120.0
+  },
+  {
+    "code": "2726.HK",
+    "name": "Epiworld International Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2726-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2726-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.4
+  },
+  {
+    "code": "2526.HK",
+    "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2526-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2526-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 45.7
+  },
+  {
+    "code": "0664.HK",
+    "name": "Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0664-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0664-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.4
+  },
+  {
+    "code": "3625.HK",
+    "name": "Shanghai FourSemi Semiconductor Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3625-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3625-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 44.2
+  },
+  {
+    "code": "2729.HK",
+    "name": "Zhejiang Galaxis Technology Group Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2729-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2729-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 45.0
+  },
+  {
+    "code": "6636.HK",
+    "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6636-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6636-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.2
+  },
+  {
+    "code": "2667.HK",
+    "name": "Beijing Tong Ren Tang Healthcare Investment Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2667-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2667-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.4
+  },
+  {
+    "code": "0668.HK",
+    "name": "Anker Innovations Technology Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0668-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0668-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.8
+  },
+  {
+    "code": "6880.HK",
+    "name": "MOMENTA GLOBAL LIMITED - W",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6880-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6880-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.5
+  },
+  {
+    "code": "7656.HK",
+    "name": "Reconova Technologies Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB7656-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB7656-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 45.3
+  },
+  {
+    "code": "7687.HK",
+    "name": "EACON Group Co., Ltd - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB7687-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB7687-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 127.5
+  },
+  {
+    "code": "9971.HK",
+    "name": "BASiC Semiconductor Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9971-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9971-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 121.1
+  },
+  {
+    "code": "0537.HK",
+    "name": "RIGOL Technologies Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0537-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0537-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 123.6
+  },
+  {
+    "code": "1377.HK",
+    "name": "Guangdong Dtech Technology Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1377-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1377-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.7
+  },
+  {
+    "code": "1770.HK",
+    "name": "DKE Holding Company Limited - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB1770-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB1770-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 41.7
+  },
+  {
+    "code": "2797.HK",
+    "name": "Jiangxi Qiyunshan Food Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2797-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2797-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 44.0
+  },
+  {
+    "code": "2475.HK",
+    "name": "Luxshare Precision Industry Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2475-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2475-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.4
+  },
+  {
+    "code": "2249.HK",
+    "name": "NEXCHIP SEMICONDUCTOR (CHINA) LIMITED - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2249-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2249-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 131.1
+  },
+  {
+    "code": "6951.HK",
+    "name": "Chaozhou Three-Circle (Group) Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6951-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6951-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.4
+  },
+  {
+    "code": "6745.HK",
+    "name": "Befar Group Co., Ltd - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB6745-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB6745-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.1
+  },
+  {
+    "code": "3752.HK",
+    "name": "Rokae (Shandong) Robotics Group Inc. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3752-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3752-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.4
+  },
+  {
+    "code": "3308.HK",
+    "name": "ZHONGJI INNOLIGHT CO., LTD. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3308-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3308-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 124.1
+  },
+  {
+    "code": "3223.HK",
+    "name": "Ingenic Semiconductor Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3223-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3223-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 125.0
+  },
+  {
+    "code": "2261.HK",
+    "name": "NASN Intelligent Tech (Zhejiang) Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2261-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2261-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 45.8
+  },
+  {
+    "code": "0625.HK",
+    "name": "SHEIN Global Holdings Limited - W",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB0625-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB0625-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 127.3
+  },
+  {
+    "code": "9615.HK",
+    "name": "Mech-Mind Robotics Technologies Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9615-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9615-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 127.8
+  },
+  {
+    "code": "2041.HK",
+    "name": "Medcaptain Medical Technology Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB2041-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB2041-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 42.8
+  },
+  {
+    "code": "3231.HK",
+    "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB3231-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB3231-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 119.6
+  },
+  {
+    "code": "9976.HK",
+    "name": "Shenzhen Longsys Electronics Co., Ltd. - H Shares",
+    "topic": "topic_underwriting",
+    "title": "承销银团与基石名单 (Underwriting & Cornerstone)",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/packets/HKIPO-MB9976-topic_underwriting.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/extracted_topics/HKIPO-MB9976-topic_underwriting.json",
+    "fields_count": 5,
+    "packet_kb": 126.4
   }
 ]

@@ -1,0 +1,23 @@
+{
+  "code": "9607.HK",
+  "reviewer": "lockup-rev-9607",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Independently verified. Quote on p203 is verbatim ('RESTRICTIONS ON THE CORNERSTONE INVESTORS ... same economic effect as the aforesaid transaction.'). Holders match the Cornerstone Placing table on p200: CNCB Investment, Full Truck, Golden Valley Master, Goldshore, Happy Wisdom, Prinx Chengshan HK, Yang Quanhai, Zhou Bo. Listing Date independently confirmed as Tuesday, 29 September 2026 (p27 definition of 'Listing Date'). Wording is 'at any time during the period of six months from (and inclusive of) the Listing Date' -> anniversary-exclusive per repository convention: first free = 2027-03-29, last restricted = 2027-03-28. Candidate dates are correct and consistent with its own basis. Notes on change-of-control and same-economic-effect scope and no over-allotment option (p199) are accurate.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "reject",
+    "notes": "Quote on p275 is verbatim (item (i) of the Rule 10.07(1) undertaking; the prospectus text ends 'beneficial owner(s); or' — candidate truncates before the final 'or', acceptable). Holders verified: prospectus definition (p23) 'Ms. Zhang, Red Avenue Investment and Virgin Holdings individually and as a group of persons'. HOWEVER the computed dates are wrong. Wording is 'in the period commencing on the date by reference to which disclosure of her/its shareholding in our Company is made in this prospectus and ENDING ON THE DATE WHICH IS SIX MONTHS FROM THE LISTING DATE' -> anniversary-INCLUSIVE per repository convention: the anniversary 2027-03-29 is itself restricted, so computed_last_restricted_day = 2027-03-29 and computed_first_free_day = 2027-03-30. Candidate has first free 2027-03-29 / last restricted 2027-03-28, which applies the anniversary-exclusive convention used for the cornerstone block and contradicts the candidate's own quoted 'ending on' wording (its basis text 'restricted period frees up on the six-month anniversary' is also wrong). Notes about the parallel underwriters' undertaking (pp277-278), Rule 10.08 undertaking (p275) and no-disorderly-market undertaking (pp276-277) were spot-checked and are accurate.",
+    "corrections": {
+      "computed_first_free_day": "2027-03-30",
+      "computed_last_restricted_day": "2027-03-29",
+      "basis": "six calendar months from the Listing Date ('ending on the date which is six months from the Listing Date'); restricted period commences on the prospectus shareholding-disclosure date and includes the six-month anniversary itself (anniversary-inclusive); first free day = 2027-03-30"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified: item (ii) of the Rule 10.07(1) undertaking begins on p275 and continues onto p276, ending '...of our Company.' — candidate quote matches verbatim including the authorised-institution pledge carve-out. Wording is 'in the period of six months from the expiry of the First Six-month Period (the \"Second Six-month Period\")' -> control-maintenance restriction ending at the 12-month anniversary of the Listing Date (anniversary-exclusive per repository convention): first free = 2027-09-29, last restricted = 2027-09-28. Candidate dates correct. Note 3 to Rule 10.07(2) pledge-notification undertaking confirmed on p276 ('ending on the date which is 12 months from the Listing Date').",
+    "corrections": {}
+  }
+}

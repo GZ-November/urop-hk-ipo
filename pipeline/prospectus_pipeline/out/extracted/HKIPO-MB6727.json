@@ -1,0 +1,425 @@
+{
+  "code": "6727.HK",
+  "fields": {
+    "col_L": {
+      "value": 135146716,
+      "page": 204,
+      "quote": "H Shares to be issued pursuant to the Global Offering 14,010,800 10.37% Total 135,146,716 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 14010800,
+      "page": 204,
+      "quote": "H Shares to be issued pursuant to the Global Offering 14,010,800 10.37%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": "NaN",
+      "page": null,
+      "quote": "p.204股本表仅有A Shares与全球发售新发H股，无资本化发行股份，故N不适用填NaN",
+      "confidence": "low"
+    },
+    "col_O": {
+      "value": "NaN",
+      "page": null,
+      "quote": "p.204股本表仅有A Shares与全球发售新发H股，无Capitalization Rest股份，故O不适用填NaN",
+      "confidence": "low"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 204,
+      "quote": "Total 135,146,716 100.00%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 14010800,
+      "page": 204,
+      "quote": "H Shares to be issued pursuant to the Global Offering 14,010,800 10.37%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 13310200,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 13,310,200 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 700600,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 700,600 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 204,
+      "quote": "Our H Shares in issue following the completion of the Global Offering and our A Shares, are all ordinary Shares in the share capital of our Company and are considered as one class of Shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 14010800,
+      "page": 204,
+      "quote": "H Shares to be issued pursuant to the Global Offering 14,010,800 10.37% Total 135,146,716 100.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 61.0,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$61.00 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, Stock Exchange trading fee of 0.00565% and AFRC transaction levy of 0.00015%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 49.0,
+      "page": 2,
+      "quote": "The Offer Price will be no more than HK$61.00 per Offer Share, and is expected to be not less than HK$49.00 per Offer Share, unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 305,
+      "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1792864000,
+      "page": 21,
+      "quote": "Total current assets 1,559,031 1,138,100 873,144 756,273 661,133 Total non-current assets 233,833",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 1396259000,
+      "page": 21,
+      "quote": "Total current assets 1,559,031 1,138,100 873,144 756,273 661,133 Total non-current assets 233,833 258,159 304,904 327,892 367,854",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 1178048000,
+      "page": 266,
+      "quote": "Total assets 1,178,048",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 1439834000,
+      "page": 307,
+      "quote": "Net assets 1,439,834 1,094,441 862,512 806,513",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 1094441000,
+      "page": 307,
+      "quote": "Total equity 1,439,834 1,094,441 862,512 806,513",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 862512000,
+      "page": 267,
+      "quote": "Total equity 862,512 749,675",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 353030000,
+      "page": 21,
+      "quote": "Total current liabilities 318,708 279,655 303,863 271,976 280,589",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 301818000,
+      "page": 21,
+      "quote": "Total current liabilities 318,708 279,655 303,863 271,976 280,589",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 315536000,
+      "page": 266,
+      "quote": "Total liabilities 315,536 287,996",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 490533000,
+      "page": 19,
+      "quote": "Revenue 490,533 370,755 447,069 64,205 81,242",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 370755000,
+      "page": 19,
+      "quote": "Revenue 490,533 370,755 447,069 64,205 81,242",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 447069000,
+      "page": 19,
+      "quote": "Revenue 490,533 370,755 447,069 64,205 81,242",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -289168000,
+      "page": 19,
+      "quote": "Loss before tax (289,168) (344,281) (245,156) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -344281000,
+      "page": 19,
+      "quote": "Loss before tax (289,168) (344,281) (245,156) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -245156000,
+      "page": 19,
+      "quote": "Loss before tax (289,168) (344,281) (245,156) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -289168000,
+      "page": 19,
+      "quote": "Loss for the year/period (289,168) (344,281) (245,170) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -344281000,
+      "page": 19,
+      "quote": "Loss for the year/period (289,168) (344,281) (245,170) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -245170000,
+      "page": 19,
+      "quote": "Loss for the year/period (289,168) (344,281) (245,170) (83,723) (55,999)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 30036000,
+      "page": 260,
+      "quote": "Total 55,546 40,027 30,036 9,853 50,035",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 305,
+      "quote": "have been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board (the \"IASB\")",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 236010000,
+      "page": 19,
+      "quote": "Gross profit 256,734 178,729 236,010 23,453 33,635",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 47400000,
+      "page": 259,
+      "quote": "In 2023, 2024 and 2025, and for the three months ended March 31, 2026, we recorded capital expenditures of RMB133.3 million, RMB38.5 million, RMB47.4 million, and RMB7.7 million respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 304,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the Group's financial position as at December 31, 2023, 2024 and",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.0401,
+      "page": 27,
+      "quote": "We estimate the additional listing expenses to consist of approximately RMB26.7 million (HK$30.9 million) in underwriting fees",
+      "confidence": "low"
+    },
+    "col_AP": {
+      "value": 0.0401,
+      "page": 27,
+      "quote": "We estimate the additional listing expenses to consist of approximately RMB26.7 million (HK$30.9 million) in underwriting fees",
+      "confidence": "low"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 209,
+      "quote": "Since there is no over-allotment option in the International Offering, there will be no delayed delivery of Offer Shares to be subscribed by the Cornerstone Investors.",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 69700000,
+      "page": 27,
+      "quote": "We expect to incur total listing expenses of approximately RMB60.3 million (HK$69.7 million) (based on the mid-point of the indicative Offer Price range)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "AI and big data infrastructure software and related services",
+      "page": 11,
+      "quote": "We are a leading AI infrastructure software provider in China. We generate revenue primarily by selling AI and big data infrastructure software products and related services to enterprise and",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 18C (Main Board, Specialist Technology Company - Commercial Company)",
+      "page": 11,
+      "quote": "we are a Commercial Company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules on the basis that",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialized (Commercial Company under Chapter 18C)",
+      "page": 11,
+      "quote": "we are a Commercial Company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 27,
+      "quote": "approximately 10.0% of the net proceeds, or HK$70.1 million, for working capital and other general corporate purposes.",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "Electronic Channel Limited; LUOYANG Sci-Tech Inv. (Luoyang Science Technology Innovate Group, Ltd.)",
+      "page": 210,
+      "quote": "Electronic Channel Limited HK$35,000,000 636,300 4.54% 0.47% LUOYANG Sci-Tech Inv. US$4,950,000",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 19,
+      "quote": "For the year ended December 31,",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -109650000,
+      "page": 311,
+      "quote": "NET CASH USED IN OPERATING ACTIVITIES (365,432) (326,593) (109,650)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 353951000,
+      "page": 312,
+      "quote": "CASH AND CASH EQUIVALENTS AT THE END OF THE YEAR/PERIOD 352,748 543,261 353,951 326,955 242,910",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 204061000,
+      "page": 261,
+      "quote": "R&D expenses 223,065 227,328 204,061 48,756 46,160",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 46472000,
+      "page": 261,
+      "quote": "Add: Development costs capitalized 21,752 35,146 46,472 11,979 9,588",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.222,
+      "page": 16,
+      "quote": "Our top five customers in each year or period during the Track Record Period in aggregate accounted for 16.4%, 14.4%, 22.2% and 34.8% of our total revenues in 2023, 2024,",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "星环信息科技（上海）股份有限公司",
+      "page": 1,
+      "quote": "星環信息科技（上海）股份有限公司",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 110,
+      "quote": "From June 2014 to February 2021, our Company obtained several rounds of pre-IPO investments prior to the A Share Listing, raising an aggregate amount of RMB1,480.8 million to",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 112,
+      "quote": "Suzhou Qiming Ronghe Venture Capital Partnership (Limited Partnership) (蘇州啟明融合創業投資合夥企業 (有限合夥)) is a limited partnership established in the PRC in February 2014",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 112,
+      "quote": "Suzhou Fangguang Venture Capital Partnership (Limited Partnership) (蘇州方廣創業投資合夥企業(有限合夥)) is a private equity fund established in the PRC in September 2012",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 120,
+      "quote": "wholly owned by Linzhi Yongchuang Information Technology Co., Ltd. (林芝永創信息科技有限公司), a subsidiary of Tencent Holdings Limited",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 120,
+      "quote": "Industry Investment Fund is a state-owned investment fund organized as a limited liability company incorporated under the laws of the PRC",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "手册未定义top-tier认定标准，包内亦无公司对投资机构层级的自述；启明创投、深创投等参与见p.111-112，但不据此推断top-tier，留缺失",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Linzhi Lichuang Information Technology Co., Ltd. (Tencent subsidiary); Industry Investment Fund Co. Ltd.; Shanghai Yunyou Investment Office; CICC; SCGC Capital; Jinhua Yanghang CoStone Equity Investment Partnership; Suzhou Fangguang Venture Capital Partnership; Suzhou Qiming Ronghe Venture Capital Partnership; Hubei Changjiang Hezhi Equity Investment Fund Partnership; Hundsun Technologies Inc.; Shenzhen TCL Strategic Equity Investment Fund Partnership",
+      "page": 110,
+      "quote": "The following table sets forth the shareholding structure of our Company as of November 30, 2021, being the date of acceptance of the A Share Listing application.",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.1087,
+      "page": 206,
+      "quote": "Industry Investment Fund Beneficial interest A Shares 6,757,201 (L) 5.58% 5.58% 5.00% Linzhi Lichuang(3) Beneficial interest A Shares 6,403,402 (L) 5.29% 5.29% 4.74%",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": "NaN",
+      "page": null,
+      "quote": "包内未披露任何上市前机构投资者委派董事或观察员；基石投资者亦明确不获董事会席位(p.208)，无法建立董事与上市前机构投资者关联，留缺失",
+      "confidence": "low"
+    },
+    "col_earliest_round": {
+      "value": "Series A Financing",
+      "page": 119,
+      "quote": "Series A Financing Series A+ Financing(2) Series B Financing(3) Series C Financing(4) Series D1 Financing(5) Series D2 Financing(6) Series E Financing(7) Date of agreement June 30, 2014",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 12.2,
+      "page": 119,
+      "quote": "Date of agreement June 30, 2014 December 15, 2014 February 4, 2016 April 24, 2017 February 28, 2019 September 6, 2019 December 24, 2020",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual/Founder (Mr. SUN Yuanhao with acting-in-concert group)",
+      "page": 18,
+      "quote": "comprising Mr. SUN Yuanhao, Shanghai Zanxing, Mr. FAN Lei, Mr. LV Cheng and Mr. SHE Hui, acting in concert, collectively controlled approximately 22.42% of the total issued share capital",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.201,
+      "page": 18,
+      "quote": "Largest Group of Shareholders will control in aggregate approximately 20.10% of the total issued share capital of our Company.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.201,
+      "page": 116,
+      "quote": "In order to consolidate the voting power at Board/Shareholders' meetings of our Company, Mr. SUN Yuanhao entered into an acting-in-concert agreement with Mr. LV Cheng, Mr. FAN Lei, Mr.",
+      "confidence": "medium"
+    },
+    "col_BP": {
+      "value": "05/06/2013",
+      "page": 110,
+      "quote": "On June 5, 2013, our Company was established in Shanghai under the laws of the PRC as a limited liability company with an initial registered capital of RMB10.0 million.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Shanghai, PRC",
+      "page": 110,
+      "quote": "On June 5, 2013, our Company was established in Shanghai under the laws of the PRC as a limited liability company",
+      "confidence": "medium"
+    },
+    "col_CC": {
+      "value": "11/09/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Friday, September 11, 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "16/09/2026",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . 12:00 noon on Wednesday, September 16, 2026",
+      "confidence": "high"
+    }
+  }
+}

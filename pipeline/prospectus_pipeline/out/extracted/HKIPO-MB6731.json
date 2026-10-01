@@ -1,0 +1,425 @@
+{
+ "code": "6731.HK",
+ "fields": {
+  "col_L": {
+   "value": 369588080,
+   "page": 249,
+   "quote": "319,588,080 H Shares to be converted from Unlisted Shares in issue and 50,000,000 H Shares to be issued under the Global Offering",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 50000000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 50,000,000 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 319588080,
+   "page": 249,
+   "quote": "number of 319,588,080 H Shares to be converted from Unlisted Shares in issue and 50,000,000 H Shares to be issued under the Global",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 319588080,
+   "page": 249,
+   "quote": "number of 319,588,080 H Shares to be converted from Unlisted Shares in issue and 50,000,000 H Shares to be issued under the Global",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 249,
+   "quote": "319,588,080 H Shares to be converted from Unlisted Shares in issue and 50,000,000 H Shares to be issued under the Global Offering",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 50000000,
+   "page": 249,
+   "quote": "50,000,000 H Shares to be issued under the Global Offering (assuming the Over-allotment Option is not exercised)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 47500000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 47,500,000 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 2500000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 2,500,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 248,
+   "quote": "131,991,840 H Shares 35.71%",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 369588080,
+   "page": 249,
+   "quote": "319,588,080 H Shares to be converted from Unlisted Shares in issue and 50,000,000 H Shares to be issued under the Global Offering",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 21.6,
+   "page": 2,
+   "quote": "Offer Price : HK$21.60 per Offer Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 21.6,
+   "page": 2,
+   "quote": "Offer Price : HK$21.60 per Offer Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+   "confidence": "medium"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 305,
+   "quote": "The Historical Financial Information are presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 39542000,
+   "page": 306,
+   "quote": "Total non-current assets . . . 13,351 14,647 35,172 60,669",
+   "confidence": "medium"
+  },
+  "col_X": {
+   "value": 101183000,
+   "page": 306,
+   "quote": "Total current assets . . . 26,191 86,536 510,559 595,171",
+   "confidence": "medium"
+  },
+  "col_Y": {
+   "value": 545731000,
+   "page": 306,
+   "quote": "Total current assets . . . 26,191 86,536 510,559 595,171",
+   "confidence": "medium"
+  },
+  "col_Z": {
+   "value": -120366000,
+   "page": 306,
+   "quote": "Net liabilities . . . (120,366) (198,609) (1,019,357) (1,347,370)",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": -198609000,
+   "page": 306,
+   "quote": "Net liabilities . . . (120,366) (198,609) (1,019,357) (1,347,370)",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": -1019357000,
+   "page": 306,
+   "quote": "Net liabilities . . . (120,366) (198,609) (1,019,357) (1,347,370)",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 159908000,
+   "page": 306,
+   "quote": "Total current liabilities . . . 157,827 286,111 1,555,000 1,985,200",
+   "confidence": "medium"
+  },
+  "col_AD": {
+   "value": 299792000,
+   "page": 306,
+   "quote": "Total current liabilities . . . 157,827 286,111 1,555,000 1,985,200",
+   "confidence": "medium"
+  },
+  "col_AE": {
+   "value": 1565088000,
+   "page": 306,
+   "quote": "Total current liabilities . . . 157,827 286,111 1,555,000 1,985,200",
+   "confidence": "medium"
+  },
+  "col_AF": {
+   "value": 17538000,
+   "page": 305,
+   "quote": "REVENUE . . . 5 17,538 79,802 281,715 143,332 200,295",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 79802000,
+   "page": 305,
+   "quote": "REVENUE . . . 5 17,538 79,802 281,715 143,332 200,295",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 281715000,
+   "page": 305,
+   "quote": "REVENUE . . . 5 17,538 79,802 281,715 143,332 200,295",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -75585000,
+   "page": 305,
+   "quote": "LOSS BEFORE TAX . . . 7 (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -93735000,
+   "page": 305,
+   "quote": "LOSS BEFORE TAX . . . 7 (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -880977000,
+   "page": 305,
+   "quote": "LOSS BEFORE TAX . . . 7 (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -75585000,
+   "page": 305,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -93735000,
+   "page": 305,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -880977000,
+   "page": 305,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . (75,585) (93,735) (880,977) (32,566) (390,732)",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 44778000,
+   "page": 306,
+   "quote": "Interest-bearing bank loans and other loans . . . 26 16,313 23,952 40,528 26,919",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS",
+   "page": 19,
+   "quote": "To supplement our consolidated financial statements prepared under IFRS, we use adjusted net loss (non-IFRS measure)",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 60585000,
+   "page": 305,
+   "quote": "Gross profit . . . 2,362 15,396 60,585 26,484 41,407",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 16400000,
+   "page": 55,
+   "quote": "Our capital expenditure was RMB8.2 million, RMB5.0 million, RMB16.4 million, RMB8.1 million and RMB13.0 million in 2023, 2024, 2025 and the six months ended June 30, 2025 and 2026",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified",
+   "page": 304,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.03,
+   "page": 279,
+   "quote": "Our Company will pay an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.03,
+   "page": 279,
+   "quote": "Our Company will pay an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 279,
+   "quote": "up to an aggregate of 7,500,000 Shares, representing in aggregate approximately 15.0% of Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 97500000,
+   "page": 279,
+   "quote": "estimated to amount to approximately HK$97.5 million in total (based on the Offer Price of HK$21.60 per Offer Share and assuming the Over-allotment Option is not exercised)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Robotics technology company; development and sales of robotic actuator modules (direct drive actuator modules and embodied joint modules) and wheel-legged robots",
+   "page": 9,
+   "quote": "We are a robotics technology company with direct drive technology as our core capability. We primarily engage in the sales of robotic actuator modules, and to a lesser extent, robots, in China.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of HKEX, Chapter 18C Listing Rules (Specialist Technology Company), H Shares",
+   "page": 9,
+   "quote": "we are a specialist technology company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Transitioned from early-stage commercialization to large-scale commercial operations",
+   "page": 55,
+   "quote": "as our business transitioned from early-stage commercialization to large-scale commercial operations",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 28,
+   "quote": "approximately 10.0%, or HK$98.3 million, will be used for working capital and general corporate purposes.",
+   "confidence": "medium"
+  },
+  "col_CJ": {
+   "value": "Hong Kong Technology Innovation Pioneer One Investment Limited (香港科創領航壹號投資有限公司); JSC International Investment Fund SPC (for and on behalf of Shenghai SP)",
+   "page": 253,
+   "quote": "JSC International (for and on behalf of Shenghai SP) . . . 173,002,500(2) 7,929,400 15.86% 2.15% 13.79% 2.10% Total . . . 472,002,500",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 306,
+   "quote": "As at 31 December As at June 30, Notes 2023 2024 2025 2026",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -69563000,
+   "page": 225,
+   "quote": "Net cash flows used in operating activities . . . (52,960) (66,687) (69,563) (29,395) (64,795)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 353871000,
+   "page": 306,
+   "quote": "Cash and cash equivalents . . . 22 412 15,840 353,871 293,522",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 55437000,
+   "page": 305,
+   "quote": "Research and development expenses . . . (39,040) (42,924) (55,437) (26,893) (53,587)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.857,
+   "page": 179,
+   "quote": "revenue generated from our five largest customers amounted to RMB11.7 million, RMB66.5 million, RMB241.4 million, and RMB162.9 million, respectively, accounting for 67.0%, 83.4%, 85.7% and 81.3%",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "本末动力（北京）科技股份有限公司",
+   "page": 1,
+   "quote": "Direct Drive Tech Limited 本末動力(北京)科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 105,
+   "quote": "From April 2020 to December 2025, we successively underwent several rounds of financings, including Series Seed Financing, Series Angel Financing",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 113,
+   "quote": "is a limited partnership established in the PRC on December 7, 2021, mainly engaged in equity investment.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 116,
+   "quote": "(“Legend Investment”) is a limited partnership established in the PRC on September 29, 2021, mainly engaged in equity investment, investment management and asset management.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 113,
+   "quote": "which is directly owned as to 80% by Lenovo (Beijing) Co., Ltd. (聯想（北京）有限公司), which is wholly-owned by Lenovo Group Limited",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 112,
+   "quote": "Shunxi Fund is wholly owned by Beijing State-owned Capital Operation and Management Co., Ltd. (北京國有資本運營管理有限公司) (“Beijing State-owned Capital”)",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Songshan Lake Robot Institute; Yunhe Investment; Qiji Chuangtan; Dongguan Dami; Mr. Ai Min; 5Y Qixing; Greenpine Chuangzhi; Lenovo Venture Capital; Nanjing Chuangyi; Shenzhen Dami; Runyuan Investment; Liwan Investment; Mr. Zhao Jianguang; Jianyuan Xinbo; Jianyuan Chaohong; Jianyuan Honggeng; Shunxi Venture Capital Fund III; Xinchuang Technology; Advanced Manufacturing Investment; New Material Investment; Legend Star; Legend Investment; Excelsior Investments; Gongqingcheng Investment; Huatai Digital Intelligence; Rockets Capital; Beijing Chengkun; Brizan Ventures VII LP",
+   "page": 108,
+   "quote": "Name of investor(s) Songshan Lake Robot Institute Yunhe Investment and Qiji Chuangtan Dongguan Dami(6) and Mr. Ai Min",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.5311,
+   "page": 124,
+   "quote": "OUR CAPITALIZATION The shareholding structure of our Company is set forth below.",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 257,
+   "quote": "He joined Legend Capital Co., Ltd. (君聯資本管理股份有限公司) in July 2013 and currently serves as a managing director.",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Series Seed Financing",
+   "page": 108,
+   "quote": "Series Seed Financing Series Angel Financing Series Angel+ Financing Series Pre-A Financing Series A Financing",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 6.4,
+   "page": 108,
+   "quote": "Date(s) of agreement April 30, 2020(5) April 30, 2020",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Individual",
+   "page": 104,
+   "quote": "Mr. Zhang, our founder, executive Director, chairman of our Board and chief executive officer, controlled approximately 41.30% of our total issued share capital",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.3571,
+   "page": 248,
+   "quote": "131,991,840 H Shares 35.71% 35.71%",
+   "confidence": "medium"
+  },
+  "col_BD": {
+   "value": 0.3571,
+   "page": 27,
+   "quote": "Immediately following the completion of the Global Offering (assuming the Over-allotment Option is not exercised), Mr. Zhang will be entitled to exercise a total of 35.71% of the voting power",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "17/03/2020",
+   "page": 104,
+   "quote": "our Company was established as a limited liability company on March 17, 2020 under the name of Dongguan Direct Drive Technology Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Beijing, China",
+   "page": 56,
+   "quote": "We are headquartered in Beijing, China and most of our operations are conducted in China.",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "2026-09-21",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Monday, September 21, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "2026-09-24",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close(3) . . . 12:00 noon on Thursday, September 24, 2026",
+   "confidence": "high"
+  }
+ }
+}

@@ -328,7 +328,7 @@ class RealArtifactTests(unittest.TestCase):
             self.assertEqual(summary["variable_count"], 202)
             self.assertEqual(summary["cohort_order"],
                              ["2025Q1", "2025Q2", "2026Q1", "2026Q2", "2026Q3"])
-            self.assertEqual(summary["total_rows"], 148)
+            self.assertEqual(summary["total_rows"], 155)  # 2026Q3 expansion: 23 -> 30 issuers
             # hard error 只能来自重复代码（表头与注册表均已对齐）；
             # 若重复问题修复后，hard_errors 应为 False
             if summary["hard_errors"]:
@@ -337,7 +337,7 @@ class RealArtifactTests(unittest.TestCase):
             with Path(summary["master_csv"]).open(encoding="utf-8-sig", newline="") as fh:
                 rows = list(csv.reader(fh))
             self.assertEqual(rows[0][:2], ["cohort", "cross_cohort_duplicate"])
-            self.assertEqual(len(rows) - 1, 148)
+            self.assertEqual(len(rows) - 1, 155)  # 2026Q3 expansion: 23 -> 30 issuers
 
             # --derive：免汇率派生列应全部可算并追加到 master
             summary_d = build_master(WS, registry_path=registry_path, out_dir=Path(tmp),

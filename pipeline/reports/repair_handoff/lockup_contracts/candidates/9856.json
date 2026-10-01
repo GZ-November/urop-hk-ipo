@@ -1,0 +1,37 @@
+{
+  "code": "9856.HK",
+  "listing_date": "2026-09-22",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Cornerstone Investors under the Cornerstone Investment Agreements (aggregate US$340 million / HK$2,665.8 million, 80,876,700 Offer Shares), including Primavera Investment Fund and China Securities (International) Investment Company Limited (CSC OTC Swap); full list in the 'Cornerstone Investors' section (pp.271-272 printed / p.280 PDF)",
+    "quote_page": 294,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-09-22",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; inclusive start anchor means the six-month anniversary itself is the first free day (consistent with repo convention in e.g. 9630.json)",
+    "computed_first_free_day": "2027-03-22",
+    "computed_last_restricted_day": "2027-03-21",
+    "notes": "Wording identical to the standard 'six months from (and inclusive of) the Listing Date' cornerstone clause. Exception permits transfers to wholly-owned subsidiaries bound by the same obligations."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "Controlling Shareholders: Hisense Group Holding (海信集团控股股份有限公司) and CKL (its wholly owned subsidiary)",
+    "quote_page": 298,
+    "full_quote": "Pursuant to Rule 10.07(1) of the Listing Rules, each of our Controlling Shareholders has undertaken to the Stock Exchange and to us that, except in compliance with the requirements of the Listing Rules, it will not and will procure that the relevant registered holder(s) will not, either directly or indirectly: (i) the period commencing on the date by reference to which disclosure of its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities of our Company in respect of which it is shown by this prospectus to be the beneficial owner",
+    "reference_date": "2026-09-22",
+    "basis": "Rule 10.07(1)(i): period commencing on the prospectus disclosure date and ending on the date which is six months from the Listing Date; end anchor is the Listing Date, six calendar months (consistent with repo convention in e.g. 0470.json)",
+    "computed_first_free_day": "2027-03-22",
+    "computed_last_restricted_day": "2027-03-21",
+    "notes": "Standard Rule 10.07(1) undertaking; start date is the prospectus disclosure date (pre-listing), but the six-month end anchor is the Listing Date, so the first free day equals the six-month anniversary. No Chapter 18C/18A/19C replacement applies (main-board issuer)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "Controlling Shareholders: Hisense Group Holding and CKL",
+    "quote_page": 298,
+    "full_quote": "(ii) in the period of six months commencing on the date on which the period referred to in paragraph (i) above expires, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities referred to in paragraph (i) above if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, it would cease to be a controlling shareholder (as defined in the Listing Rules) of us.",
+    "reference_date": "2026-09-22",
+    "basis": "Rule 10.07(1)(ii): Second Six-month Period = six months from expiry of the First Six-month Period, i.e. ends 12 months from Listing Date; disposal restricted if it would cause the holder to cease to be a controlling shareholder (consistent with repo convention in e.g. 0470.json)",
+    "computed_first_free_day": "2027-09-22",
+    "computed_last_restricted_day": "2027-09-21",
+    "notes": "Control-maintenance (not full disposal) restriction in months 7-12. Additionally, pursuant to Note 3 to Rule 10.07(2) (same page 298), the Controlling Shareholders undertake for 12 months from the prospectus disclosure date to notify the Company of pledges/charges to authorized institutions and of pledgee indications of disposal. Separately, all existing Shareholders (including the Controlling Shareholders) gave a 12-month Lock-up Undertaking (pp.299-300: 'commencing on the Listing Date and ending on, and including, the date that is twelve months from the Listing Date'); per p.300, Hisense Group Holding, CKL, Bolangde and Talents Holdings lock 100% of their Shares for the entire 12-month Lock-up Period, while TransLight, Global Optical, Archcom LLC and Xiamen Entities have staged release (100% months 1-6; 85% month 7; 50% months 8-9; 20% from month 10). Pre-IPO Investors have a separate 6-month lock-up with staged release up to 12 months (p.124)."
+  }
+}

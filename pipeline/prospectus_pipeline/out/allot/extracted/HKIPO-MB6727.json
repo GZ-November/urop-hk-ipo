@@ -1,0 +1,115 @@
+{
+  "code": "6727.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1075,
+      "page": 8,
+      "quote": "Total\n1,506,500\n10.75%\n1.12%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 73.86,
+      "page": 4,
+      "quote": "Subscription level\n73.86 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 20485,
+      "page": 4,
+      "quote": "No. of valid applications\n20,485",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 51749500,
+      "page": 10,
+      "quote": "80,000\n46\n2,500 H Shares\n3.13%\nTotal\n20,350",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 73.86 times",
+      "page": 4,
+      "quote": "Subscription level\n73.86 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "18/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**18/09/2026 19:42**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 14010800,
+      "page": 3,
+      "quote": "Number of Offer Shares\n14,010,800 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2802200,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering\n2,802,200 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 11208600,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering\n11,208,600 H Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "2,101,600 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (initial 700,600 -> final 2,802,200)",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering\n2,101,600\nFinal no. of Offer Shares under the Hong Kong Public Offering\n2,802,200",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 629450000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$629.45 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1037,
+      "page": 15,
+      "quote": "the total number of the H Shares issued pursuant to the Global Offering represents 10.37% of the total issued share capital of our Company (excluding treasury shares)",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 135146716,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n135,146,716 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0925,
+      "page": 8,
+      "quote": "Total\n1,506,500\n10.75%\n1.12%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator = total issued share capital upon Listing (excluding treasury shares) = 135,146,716; free float excludes cornerstone H Shares under 6-month lock-up ending March 20, 2027",
+      "page": 15,
+      "quote": "10.37% of the total issued share capital of our Company (excluding treasury shares)",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 135146716,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n135,146,716 Shares",
+      "confidence": "high"
+    }
+  }
+}

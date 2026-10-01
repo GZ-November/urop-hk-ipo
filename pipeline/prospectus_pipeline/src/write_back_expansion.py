@@ -199,9 +199,11 @@ class WorkbookExpansionWriter:
         return planned
 
     def write_expansion(self, columns: set[int] | None = None, force_overwrite: bool = False,
-                        dry_run: bool = False) -> int:
+                        dry_run: bool = False, only_codes: list[str] | None = None) -> int:
         """执行事务级写回；columns 非空时只写这些列（其余扩展列保持原值）。
 
+        only_codes 非空时只写这些发行人的行（其余行的扩展列保持原值），
+        用于向已含人工整理扩展值的 cohort 追加新发行人。
         默认 fail closed：若会以 None/占位值覆盖非空人工整理单元格，或写入占位值，
         则在任何修改前抛出 ExpansionOverwriteError，工作簿保持不变。
         force_overwrite=True 时仅记录警告并照常写入。
@@ -211,6 +213,12 @@ class WorkbookExpansionWriter:
         logger.info(f"Opening transaction on {self.book_path}...")
         from cohort import read_companies
         company_rows = read_companies(self.cfg)
+        if only_codes:
+            wanted = {self._norm_code(code) for code in only_codes}
+            unknown = sorted(wanted - {self._norm_code(c["code"]) for c in company_rows})
+            if unknown:
+                raise ValueError(f"--codes not in workbook: {', '.join(unknown)}")
+            company_rows = [c for c in company_rows if self._norm_code(c["code"]) in wanted]
         self.mapper.no_cornerstone |= self._workbook_no_cornerstone(company_rows, selected)
         planned = self._plan(company_rows, selected)
 
@@ -286,12 +294,15 @@ if __name__ == "__main__":
                         help="允许以 None/占位值覆盖非空人工整理单元格（默认拒绝）")
     parser.add_argument("--columns", nargs="+", type=int,
                         help="只写回这些扩展列（如 201 202），其余扩展列保持不变")
+    parser.add_argument("--codes", nargs="+",
+                        help="只写回这些发行人的行（如 6802.HK），其余行的扩展列保持不变")
     args = parser.parse_args()
     writer = WorkbookExpansionWriter(cfg=load_cfg(args.workbook, args.period_start, args.period_end))
     try:
         sys.exit(writer.write_expansion(columns=set(args.columns) if args.columns else None,
                                         force_overwrite=args.force_overwrite,
-                                        dry_run=args.dry_run))
+                                        dry_run=args.dry_run,
+                                        only_codes=args.codes))
     except ExpansionOverwriteError as exc:
         print(f"错误: {exc}", file=sys.stderr)
         sys.exit(2)
