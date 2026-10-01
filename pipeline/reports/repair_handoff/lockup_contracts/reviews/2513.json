@@ -1,0 +1,23 @@
+{
+  "code": "2513.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p307. Decisive wording: 'during the period of six months following the Listing Date (both days inclusive) (the “Lock-up Period”)'. '(both days inclusive)' makes the six-month anniversary (2026-01-08 + 6m = 2026-07-08) an inclusive endpoint, so the last restricted day is 2026-07-08 and the first free day is 2026-07-09. The candidate's own basis states 'first free day is the day after the six-month anniversary' but its computed dates (2026-07-08/2026-07-07) used the anniversary convention - corrected. Holders confirmed in the cornerstone table on p302-303 (Qizhi SP, JinYi/Structured Credit SP, Perseverance, Gaoyi/CICC FT OTC Swaps, WT, Taikang, GF Fund, 3W Fund, RIME).",
+    "corrections": {
+      "first_free_day": "2026-07-09",
+      "last_restricted_day": "2026-07-08",
+      "basis": "restricted period runs from the Listing Date (2026-01-08) to the date falling six months after the Listing Date (2026-07-08), both days expressly inclusive ('six months following the Listing Date (both days inclusive)'); first free day is the day after the inclusive end"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed. Chapter 18C issuer: the only controlling-shareholder disposal undertaking is the single combined Rule 10.07 + Rule 18C.13 undertaking on p315 covering 12 months from the Listing Date (recorded in controller_12m). 'Controlling Shareholders has undertaken' appears only on p315; the First/Second Six-Month Period wording on p317 is the Company's own HK Underwriting Agreement undertaking, not a controller restriction.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p315: 'Pursuant to Rule 10.07 and Rule 18C.13 of the Listing Rules, each member of the Controlling Shareholders has undertaken ... ending on the date which is 12 months from the Listing Date'. Explicit inclusive end: 2026-01-08 + 12m = 2027-01-08 last restricted, first free 2027-01-09. Matches candidate. Rule 18C.13/18C.14 disposal-restrictions table at p150 consistent (Key Persons 12 months, not controller slots).",
+    "corrections": {}
+  }
+}

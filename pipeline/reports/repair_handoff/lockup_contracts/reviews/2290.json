@@ -1,0 +1,19 @@
+{
+  "code": "2290.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. The only 'cornerstone' hits in the 456-page text are figurative ('TCM is a cornerstone of Hong Kong's healthcare culture', p.73) and generic free-float boilerplate ('all Shares to be issued to the cornerstone investors (if any)', p.109). There is no cornerstone placing section and no cornerstone lock-up clause.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.285: Rule 10.07 undertaking, paragraph (i) 'ending on the date which is six months from the Listing Date (the “Relevant Period”)'. Inclusive explicit end -> last_restricted_day=2026-12-05, first_free_day=2026-12-06 (listing 2026-06-05). Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.285: paragraph (ii) 'in the period of further six months commencing from the expiry of the Relevant Period (the “Second Period”)', conditional on ceasing to be controlling shareholders; the Note 3 to Rule 10.07(2) undertaking on p.286 covers 'the Relevant Period and the Second Period'. Restricted horizon = 12-month anniversary 2027-06-05 inclusive -> first_free_day=2027-06-06, last_restricted_day=2027-06-05. Correct.",
+    "corrections": {}
+  }
+}

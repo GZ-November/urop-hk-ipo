@@ -67,6 +67,43 @@ class ValidationTests(unittest.TestCase):
         out = mf.safe_focus(frame, "y", ["x", "hot"], "x")
         self.assertEqual(out["n"], 9)
         self.assertTrue(pd.isna(out["p"]))
+    def test_empty_sample_returns_diagnostic_instead_of_rank_error(self):
+        frame = pd.DataFrame(columns=["y", "month", "x"])
+        out = mf.safe_focus(frame, "y", ["x"], "x")
+        self.assertEqual(out["n"], 0)
+        self.assertEqual(out["rank"], 0)
+        self.assertEqual(out["status"], "insufficient_sample_or_rank")
+        self.assertTrue(pd.isna(out["p"]))
+
+
+
+class TimingAndCoverageTests(unittest.TestCase):
+    def test_pre_deadline_summary_uses_only_demonstrably_public_snapshots(self):
+        data = rows(("1.HK", "2026-01-05", 1e8, 10.0, "https://example.com/a"),
+                    ("1.HK", "2026-01-08", 3e8, 30.0, "https://example.com/b"),
+                    ("1.HK", "2026-01-09", 9e8, 90.0, "https://example.com/c")).assign(
+            available_before_deadline=["yes_published_before_closing_day", "yes_published_before_closing_day", "no_after_deadline"])
+        out = mf.per_issuer(mf.validate(data, SAMPLE))
+        self.assertEqual(out.loc["1.HK", "pre_deadline_n"], 2)
+        self.assertEqual(out.loc["1.HK", "pre_deadline_last_multiple"], 30.0)  # the closing-day 90x was posted after the deadline
+        self.assertEqual(out.loc["1.HK", "final_multiple"], 90.0)
+
+    def test_issuer_with_only_post_deadline_observations_has_no_pre_deadline_value(self):
+        data = rows(("1.HK", "2026-01-09", 9e8, 90.0, "https://example.com/c")).assign(
+            available_before_deadline=["no_after_deadline"])
+        out = mf.per_issuer(mf.validate(data, SAMPLE))
+        self.assertEqual(out.loc["1.HK", "pre_deadline_n"], 0)
+        self.assertTrue(pd.isna(out.loc["1.HK", "pre_deadline_last_multiple"]))
+
+    def test_coverage_selection_counts_issuers_with_and_without_sources(self):
+        d_full = pd.DataFrame({"code": ["1.HK", "2.HK", "3.HK", "4.HK"], "month": ["2026-01", "2026-01", "2026-02", "2026-02"],
+                               "y": [.1, .2, .3, .4], "lsub": [1., 2., 3., 4.], "lproc": [5., 6., 7., 8.], "hot": [0, 0, 0, 0]})
+        pi = pd.DataFrame(index=pd.Index(["1.HK", "3.HK"], name="stock_code"))
+        margin = pd.DataFrame({"available_before_deadline": ["yes_published_before_closing_day"], "days_to_deadline": [2]})
+        out = mf.coverage_selection(d_full, pi, margin)
+        self.assertEqual(out["by_month"]["with_margin"].tolist(), [1, 1])
+        self.assertEqual(int(out["comparison"].loc[0, "n_with_margin"]), 2)
+        self.assertEqual(int(out["comparison"].loc[0, "n_without_margin"]), 2)
 
 
 if __name__ == "__main__":

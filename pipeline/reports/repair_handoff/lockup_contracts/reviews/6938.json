@@ -1,0 +1,19 @@
+{
+  "code": "6938.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p487. 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-01-09 + 6m = 2026-07-09 first free; last restricted 2026-07-08.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p499 ('Undertakings by the Single Largest Group of Shareholders in respect of Themselves'). The shareholders undertake not to dispose 'at any time during the First Six-Month Period'. The governing definition of that period in this underwriting section (p497, Company undertaking) is 'at any time after the date of the Hong Kong Underwriting Agreement up to and including the date falling six months after the Listing Date (the First Six Month Period)' - an explicitly inclusive end on 2026-07-09, so the last restricted day is 2026-07-09 and the first free day is 2026-07-10. Candidate's dates are correct (anniversary+1 convention, correctly applied). Holders as recorded: Single Largest Group of Shareholders with Dr. LIANG as Warranting Shareholder.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p500. Clause (b) restricts Second Six-Month Period transactions that would cause the shareholder to 'cease to be the Single Largest Group of Shareholders' of our Company. Per the parallel definitions (p497-498), the Second Six-Month Period runs six months from the expiry of the First (which ends on and includes 2026-07-09), i.e. through 2027-01-09 = the date falling 12 months after the Listing Date, inclusive. Last restricted day 2027-01-09; first free day 2027-01-10. Candidate's dates are correct. Clause (d) (p500) adds a separate undertaking running to 'the date which is 12 months after the Listing Date' (notification context).",
+    "corrections": {}
+  }
+}

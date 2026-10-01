@@ -92,9 +92,14 @@ def money_left_split(d: pd.DataFrame) -> dict:
 
 
 def retail_profile(d: pd.DataFrame) -> pd.DataFrame:
-    """Per-deal retail outcomes: allocation ratio (capped at 1), expected gain per HK$10,000 applied, gain per applicant."""
+    """Per-deal retail outcomes: allocation ratio, expected gain per HK$10,000 applied, gain per applicant.
+
+    An allocation ratio outside (0, 1] is a unit/definition anomaly, not a measurement to clamp:
+    it is quarantined (missing) and flagged in `alloc_quarantined` for review."""
     z = d.copy()
-    z["alloc"] = (z["retail_shares"] / z["applied"]).clip(upper=1.0)
+    raw = z["retail_shares"] / z["applied"]
+    z["alloc_quarantined"] = raw.notna() & ~((raw > 0) & (raw <= 1))
+    z["alloc"] = raw.where(~z["alloc_quarantined"])
     z["gain_10k"] = z["alloc"] * z["ir"] * 10_000
     z["gain_applicant"] = z["retail_shares"] * (z["close1"] - z["offer"]) / z["applicants"]
     return z
@@ -117,7 +122,7 @@ def money_left_section(d: pd.DataFrame, family: list) -> str:
         for name, s in splits.items()})
     rp = retail_profile(d)
     prof = rp.groupby("hot").agg(N=("ir", "size"), alloc_med=("alloc", "median"), gain_med=("gain_10k", "median"), gain_mean=("gain_10k", "mean"),
-                                 neg=("gain_10k", lambda s: (s < 0).mean()), app_mean=("gain_applicant", "mean"), app_med=("gain_applicant", "median"))
+                                 neg=("gain_10k", lambda s: (s.dropna() < 0).mean()), app_mean=("gain_applicant", "mean"), app_med=("gain_applicant", "median"))
     prof.index = ["Other listings", "April-June listings"]
     prof_tab = pd.DataFrame({
         "N": prof["N"].astype(int),
@@ -211,22 +216,26 @@ The most common single rate covers {100 * top_share:.0f}% of deals; unlike the U
 
 # ------------------------------------------------------------------ 3. events
 
-def load_event_frame(y26: pd.DataFrame) -> tuple[dict[str, pd.DataFrame], dict[str, pd.Series]]:
+def load_event_frame(y26: pd.DataFrame, as_of: str | None = None) -> tuple[dict[str, pd.DataFrame], dict[str, pd.Series]]:
     """Per-issuer frames of excess returns (vs HSI and HSTECH) and turnover from the cached bars."""
+    cutoff = (pd.Timestamp(as_of) if as_of else pd.Timestamp.now(tz="Asia/Hong_Kong").tz_localize(None)).normalize()
     hsi, hstech = et.load_bars(et.BARS / "hsi_bars.json"), et.load_bars(et.BARS / "hstech_bars.json")
+    hsi, hstech = hsi.loc[:cutoff], hstech.loc[:cutoff]
     frames = {}
     for _, row in y26.iterrows():
         path = et.BARS / f"hk{row['Stock Code'].split('.')[0].zfill(5)}.json"
         if not path.exists():
             continue
-        bars = json.loads(path.read_text(encoding="utf-8"))
+        bars = [b for b in json.loads(path.read_text(encoding="utf-8")) if pd.Timestamp(b["date"]) <= cutoff]
+        if not bars:
+            continue
         close = pd.Series({pd.Timestamp(b["date"]): float(b["close"]) for b in bars}).sort_index()
         turnover = pd.Series({pd.Timestamp(b["date"]): b.get("turnover") for b in bars}, dtype=float).sort_index()
         if close.index[0] != row["listing_date"]:
             continue
-        frame = pd.DataFrame({"r": close.pct_change(), "turnover": turnover})
+        frame = pd.DataFrame({"r": close.pct_change(fill_method=None), "turnover": turnover})
         for name, bench in (("hsi", hsi), ("hstech", hstech)):
-            frame[f"ex_{name}"] = frame["r"] - bench.reindex(close.index).pct_change()
+            frame[f"ex_{name}"] = frame["r"] - bench.reindex(close.index).pct_change(fill_method=None)
         frames[row["Stock Code"]] = frame
     return frames, {}
 

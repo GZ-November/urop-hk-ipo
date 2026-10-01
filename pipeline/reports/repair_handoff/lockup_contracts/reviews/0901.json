@@ -1,0 +1,23 @@
+{
+  "code": "0901.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: case-insensitive search for 'cornerstone' across all 447 pages returns zero hits.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p291 ('By virtue of Rule 10.07 of the Listing Rules... ending on the date which is six months from the Listing Date (the \"First Six-Month Period\")'). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2026-11-27), so first free = anniversary + 1 = 2026-11-28; candidate's 2026-11-27 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2026-11-28",
+      "last_restricted_day": "2026-11-27",
+      "basis": "Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p292 ('(ii) in the period of six months commencing from the expiry of the First Six-Month Period (the \"Second Six-Month Period\")... would then cease to be a controlling shareholder of our Company for the purpose of the Listing Rules'). Duration wording anchored to the expiry of the First Six-Month Period frees up ON the 12-month anniversary: first_free_day 2027-05-27, last_restricted_day 2027-05-27-1 as recorded. No longer controller lock-up found ('twelve months' hit is the underwriting-agreement 12-month lock-up on p293; other hits are warranties/share schemes).",
+    "corrections": {}
+  }
+}

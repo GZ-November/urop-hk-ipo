@@ -1,0 +1,23 @@
+{
+  "code": "9615.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p253 (variant extension 'entities under the same management or control (as the case maybe)' noted). 'six months from (and inclusive of) the Listing Date' - frees up ON the anniversary: 2026-09-01 + 6m = 2027-03-01 first free; last restricted 2027-02-28 (2027 not a leap year - checked with python).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C listing with no controlling shareholder: independent sweep found no Rule 10.07 reference and no six-month controlling-shareholder undertaking. The Rule 18C.14(1) undertaking (p298) locks the Key Persons (Mr. Shao, Mech-Mind Management, Mr. Fu, Dr. Ding) for 12 months; the six-month window applies only to the Pathfinder SIIs under Rule 18C.14(2) (p299). 'Controlling shareholder' appears only in PRC-law/third-party contexts (e.g. Jane Street's ultimate shareholder, p249). Absence is correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p298. The Rule 18C.14(1) undertaking states an explicit end date: 'in the period commencing on the date by reference to which disclosure of its/his/her shareholdings ... in our Company is made in this Prospectus and ending on the date which is 12 months from the Listing Date'. The period ends ON 2027-09-01, so 2027-09-01 is the last restricted day and the first free day is 2027-09-02. Candidate recorded the anniversary as first_free_day - corrected. Note: the separate Hong Kong Underwriting Agreement undertaking by the Single Largest Group of Shareholders (p301) uses '12 months from and including the Listing Date (the 12-Month Period)', which ends one day earlier (first free 2027-09-01); the corrected dates follow the quoted 18C.14(1) clause, which is the undertaking cited in this slot. Also, p132 notes Ms. Yang Pei is additionally a key person for Rule 18C.14 purposes, but the p298 undertaking defines the Key Persons as comprising Mr. Shao, Mech-Mind Management, Mr. Fu and Dr. Ding (Ms. Yang Pei held no Shares, only Employee Awards), so the recorded holders stand.",
+    "corrections": {
+      "first_free_day": "2027-09-02",
+      "last_restricted_day": "2027-09-01",
+      "basis": "Rule 18C.14(1) undertaking to the Stock Exchange: period ends ON the date which is 12 months from the Listing Date (2027-09-01); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+ "index": 5,
+ "ledger_url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-04-23/doc-inhvntfe3797453.shtml",
+ "url_used": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-04-23/doc-inhvntfe3797453.shtml",
+ "fetched_ok": true,
+ "title": "新股孖展统计 | 4月23日",
+ "published_at_hkt": "2026-04-23T18:35+08:00",
+ "publisher_chain": "智通财经网 (Zhitong Finance) relayed by 新浪财经 (Sina Finance); simplified-Chinese page but body uses traditional '超購逾'",
+ "survey_scope_wording": "富途证券、辉立证券等券商 (wording as fetched; fetch summary noted the coverage statement is given as an example list)",
+ "measurement_time_wording": "截至4月23日",
+ "rows_on_page": [
+  {
+   "stock": "06810",
+   "name": "商米科技",
+   "amount_verbatim": "901.99亿港元",
+   "multiple_verbatim": "超購逾851.16倍"
+  },
+  {
+   "stock": "01879",
+   "name": "曦智科技",
+   "amount_verbatim": "5880.2亿港元",
+   "multiple_verbatim": "超購逾4653.27倍"
+  },
+  {
+   "stock": "02493",
+   "name": "迈威生物",
+   "amount_verbatim": "432.5亿港元",
+   "multiple_verbatim": "超購逾298.8倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "6810.HK",
+   "ledger_amount_100m_hkd": 901.99,
+   "result": "match",
+   "detail": "page: 901.99亿港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "1879.HK",
+   "ledger_amount_100m_hkd": 5880.2,
+   "result": "match",
+   "detail": "page: 5880.2亿港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "2493.HK",
+   "ledger_amount_100m_hkd": 432.5,
+   "result": "match",
+   "detail": "page: 432.5亿港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "6810.HK",
+   "subscription_close": "2026-04-24",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "1879.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "2493.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": true
+  }
+ ],
+ "notes": "Page contains two images not legible; text table complete. Ledger published_at_hkt 18:35 matches page 18:35. Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-04-23/2026-04-23 consistent with page date. Ledger published_at_hkt=2026-04-23T18:35:00+08:00."
+}

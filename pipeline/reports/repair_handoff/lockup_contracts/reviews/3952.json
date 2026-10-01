@@ -1,0 +1,19 @@
+{
+  "code": "3952.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.217: 'period of six months following the Listing Date (the “Lock-up Period”)'. Duration wording frees up ON the anniversary: listing 2026-06-30 -> first_free_day=2026-12-30, last_restricted_day=2026-12-29. Correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. This is a Chapter 18C specialist technology issuer with no Listing-Rules Controlling Shareholder lock-up split: Rule 18C.14(1) imposes a single 12-month no-disposal undertaking on the Key Persons (p.267), and Rule 18C.14(2) a 6-month undertaking on Pathfinder SIIs (p.267-268), who are not controllers. No separate controller 6-month slot exists.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.267: 'Pursuant to Rule 18C.14(1) of the Listing Rules, each of the key persons and their close associates (the “Key Persons”), comprising Mr. Zhang, Laifu Investment and Jieyang Information' — 'in the period commencing on the date by reference to which disclosure ... is made in this prospectus and ending on the date which is 12 months from the Listing Date'. Explicit inclusive end -> last_restricted_day=2027-06-30, first_free_day=2027-07-01 (listing 2026-06-30). Correct: the 18C combined 12-month key-person undertaking replaces the 6m/12m controller split.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "code": "3277.HK",
+ "reviewer": "independent reviewer subagent R5",
+ "read_independently_before_candidate": true,
+ "own_classification": "unresolved",
+ "candidate_classification": "unresolved",
+ "verdict": "approve_candidate",
+ "approved_value": null,
+ "approved_evidence": [
+  {
+   "pdf_page": 116,
+   "printed_page": "107",
+   "quote": "the Selling Shareholders transferred a portion of their equity interests in the Company to 22 Pre-IPO Investors.",
+   "interpretation": "Prospectus defines the Pre-IPO Investors as 22 investors (June 2022); Luster and UP OPTOTECH are not among them and no director is linked to any of the 22."
+  },
+  {
+   "pdf_page": 117,
+   "printed_page": "108",
+   "quote": "All special rights of the Pre-IPO Investors (including the repurchase rights) were terminated in June 2023",
+   "interpretation": "Rights described as information, repurchase, liquidation preference, MFN ('including' - non-exhaustive); no explicit statement that no board/observer/nomination right existed, so 0 is not established."
+  },
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "Since November 2024, he has served as a director of UP OPTOTECH, our substantial shareholder and a company listed on the Shenzhen Stock Exchange (stock code: 002338).",
+   "interpretation": "Two NEDs (Chu Hairong, Xiong Jingying) are UP OPTOTECH personnel; a third (Yang Yi, pdf p208) is Luster's co-founder/director. Both are 2012 founding shareholders, not defined Pre-IPO Investors; whether they count as pre-IPO investor institutions is a judgement call, so 1 is not established."
+  }
+ ],
+ "findings": "Read independently first. Three NEDs at Listing (pdf p205): Yang Yi (Luster, 10.22%), Chu Hairong and Xiong Jingying (UP OPTOTECH, 25.56%). Luster and UP OPTOTECH co-founded the company in Sept 2012 (pdf p108) and the prospectus calls UP OPTOTECH 'only an investor' at establishment (pdf p109), but never classes either as a Pre-IPO Investor; the 22 defined Pre-IPO Investors (pdf p116) have no linked director. So neither 1 (link to a defined pre-IPO investor absent; founding shareholders arguably not 'pre-IPO investors') nor 0 (three NED seats belong to institutional shareholders; no explicit negative statement on board rights of the 22) is established. Candidate quotes verified verbatim and mapping correct; I agree with unresolved. Approved evidence shortened to three passages.",
+ "residual_uncertainty": "If the project regards founding institutional shareholders UP OPTOTECH and Luster as pre-IPO investor institutions, the value would be 1 (directors are their officers); if only the 22 defined Pre-IPO Investors count, the value would be 0 only with an explicit negative statement that the prospectus does not give. No nomination right for any NED is disclosed."
+}

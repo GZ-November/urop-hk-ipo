@@ -1,0 +1,19 @@
+{
+  "code": "2797.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: zero 'cornerstone' hits across all 446 pages. Listing Date 2026-07-09 confirmed on p6 ('9:00 a.m. on Thursday, 9 July 2026'). Issuer cites 19A rules for free float (pp.103-104) but has no CS placing.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p259. Rule 10.07(1)(a): 'during the period commencing on the date by reference to which disclosure of his/her/its shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date (the \"First Six-month Period\")' - inclusive end -> first free 2027-01-10, last restricted 2027-01-09.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p259. Rule 10.07(1)(b): '(b) at any time during the period of six months commencing on the date on which the First Six-month Period expires ... would cease to be a Controlling Shareholder' - runs to 12 months from Listing Date -> first free 2027-07-10, last restricted 2027-07-09. Verified in python.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "code": "2667.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p288; the 7-month term ('ending on (and inclusive of) the date falling seven (7) months after the Listing Date') is correctly captured. DATE CORRECTION: inclusive endpoint frees up the day AFTER 2027-02-07, so first_free_day = 2027-02-08, last_restricted_day = 2027-02-07. HOLDERS CORRECTION: 'Gaoteng Enterprise Management' appears nowhere in this prospectus (0 case-insensitive hits) - the CICCFT ultimate client here is Meihao Planck No. 1 Private Securities Investment Fund (p74: '...as manager for and on behalf of Meihao Planck No. 1 Private Securities Investment Fund (美好普朗克一號私募證券投資基金) (the \"CICCFT Ultimate Client\")'). Airport Technology Capital and Aurora SF (ultimate client Haikou Lanxin Zhitong Investment Center) verified pp.283-287.",
+    "corrections": {
+      "first_free_day": "2027-02-08",
+      "last_restricted_day": "2027-02-07",
+      "holders": "Airport Technology Capital; Aurora SF (for ultimate client Haikou Lanxin Zhitong Investment Center (Limited Partnership)); CICC Financial Trading Limited (CICCFT, in connection with OTC Swaps, ultimate client Meihao Planck No. 1 Private Securities Investment Fund)"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p297 (Rule 10.07(1) undertaking, limb (a), '...ending on the expiration date which is six months from the Listing Date (the \"First Six-Month Period\")'). DATE CORRECTION: explicit inclusive end ON the anniversary (2027-01-07), so first free = 2027-01-08. Candidate's 2027-01-07 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2027-01-08",
+      "last_restricted_day": "2027-01-07",
+      "basis": "Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the expiration date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p298 (limb (b), 'Second Six-Month Period, together with the First Six-Month Period, the \"First Twelve-Month Period\"'). Duration wording frees up ON the 12-month anniversary: first_free_day 2027-07-07, last_restricted_day 2027-07-06 as recorded.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,43 @@
+{
+ "code": "6871.HK",
+ "reviewer": "independent reviewer subagent R3",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_candidate",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 204,
+   "printed_page": "195",
+   "quote": "Upon the Listing, the Board will consist of eleven Directors, including four executive Directors, three non-executive Directors and four independent non-executive Directors.",
+   "interpretation": "Board at listing includes three NEDs (Wang Maike, Lee Shen Kai, Song Pengfei), tested for investor links."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Since July 2020, he has been serving as a partner at Feitu Venture Investment (Beijing) Co., Ltd. (飛圖創業投資(北京)有限公司), a company primarily engaged in venture capital investment",
+   "interpretation": "NED Lee Shen Kai is a partner of Feitu Venture Investment (Beijing) Co., Ltd."
+  },
+  {
+   "pdf_page": 120,
+   "printed_page": "111",
+   "quote": "The general partner of Feitu Xinyuan is Feitu Venture Investment (Beijing) Co., Ltd. (飛圖創業投資(北京)有限公司) (“Feitu Venture”).",
+   "interpretation": "Feitu Xinyuan is an identified Pre-IPO investor (Series C, 2020); its GP is the firm where Lee is a partner, so a NED seat at listing is linked to a Pre-IPO investor's GP."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Since October 2016, Mr. Song has served as a vice president of China Broadband Capital, primarily responsible for investment management.",
+   "interpretation": "NED Song Pengfei (director since Jan 2023) is a VP of China Broadband Capital."
+  },
+  {
+   "pdf_page": 115,
+   "printed_page": "106",
+   "quote": "Since its establishment, the investment decision of Broadband Tianjin has been ultimately managed and controlled by China Broadband Capital, which is widely recognized as one of the most",
+   "interpretation": "Pre-IPO investor Broadband Chengbai (8.69%) is ultimately managed by China Broadband Capital; second, independent NED link."
+  }
+ ],
+ "findings": "Read PDF independently first: two of three NEDs (Lee Shen Kai, Song Pengfei) are explicitly partner/VP of the GP/manager of identified Pre-IPO investors (Feitu Xinyuan; Broadband Chengbai). All 8 candidate quotes verified verbatim on the cited pdf pages with correct printed-page mapping (INDEX.tsv). Candidate correctly declined to count Wang Maike (Yuhuan Lupu Economic Development; no stated link to Yuhuan Investment) and Xiong Minghua (VC chair, not an investor in the company). Candidate correctly notes no 'nominated by' wording; classification rests on the officer/partner-of-GP/manager standard, which the reviewing standard accepts. Special rights (incl. corporate governance rights) lapse at Listing (pdf p114) but the seats persist at listing. Lee's earlier role at Shanghai Keke PE Fund Mgmt (GP chain of investor Shanghai Qingwang) ended June 2020 and was not relied on.",
+ "residual_uncertainty": "Prospectus does not state that either NED was nominated by the investor; Lee joined the board (2015) before Feitu Xinyuan invested (2020). Song's link to Broadband Chengbai is two-step (via China Broadband Capital controlling Broadband Tianjin)."
+}

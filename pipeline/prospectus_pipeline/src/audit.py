@@ -344,6 +344,12 @@ def audit_dataset(
         "excel_missing": 0,
         "json_missing": 0,
         "value_mismatch": 0,
+        # `matches` counts cells where both sides are absent as agreeing. These cells hold no evidence:
+        # report them separately so a high match rate is not read as source coverage.
+        "both_missing": 0,
+        "matches_with_value": 0,
+        "json_files_absent": 0,
+        "both_missing_by_column": {},
         "by_column": {},
     }
 
@@ -356,6 +362,8 @@ def audit_dataset(
 
         json_path = files.get(code)
         json_rec = strict_load_file(json_path) if json_path and json_path.exists() else {}
+        if not json_rec:
+            stats["json_files_absent"] += 1
         fields_dict = json_rec.get("fields", {}) if isinstance(json_rec, dict) else {}
 
         for field in schema["fields"]:
@@ -369,6 +377,11 @@ def audit_dataset(
 
             if diff_type is None:
                 stats["matches"] += 1
+                if is_blank_or_missing(val_excel) and is_blank_or_missing(val_json):
+                    stats["both_missing"] += 1
+                    stats["both_missing_by_column"][col] = stats["both_missing_by_column"].get(col, 0) + 1
+                else:
+                    stats["matches_with_value"] += 1
             else:
                 stats[diff_type] += 1
                 stats["by_column"][col] = stats["by_column"].get(col, 0) + 1
@@ -480,6 +493,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
     tot_js_miss = 0
     tot_mismatch = 0
     tot_fields = 0
+    tot_both_missing = 0
 
     for tgt in ["prospectus", "allot"]:
         if tgt not in report_data["stats"]:
@@ -490,6 +504,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
         tot_ex_miss += st["excel_missing"]
         tot_js_miss += st["json_missing"]
         tot_mismatch += st["value_mismatch"]
+        tot_both_missing += st.get("both_missing", 0)
         tot_fields += st["fields_count"]
         rate = f"{(st['matches'] / st['total_cells_audited']):.2%}" if st["total_cells_audited"] else "0%"
         name_zh = "招股书字段" if tgt == "prospectus" else "配发公告字段"
@@ -510,6 +525,7 @@ def generate_markdown_report(report_data: dict, out_path: Path) -> None:
         "### 关键发现点：",
         f"1. **总单元格数**：{tot_cells} 个，匹配格数：{tot_matches}（匹配率：{overall_rate}）；",
         f"2. **差异统计**：Excel 缺失 {tot_ex_miss} 项，JSON 缺失 {tot_js_miss} 项，数值不匹配 {tot_mismatch} 项；",
+        f"   其中匹配格内有 {tot_both_missing} 格两边均缺失，不是已核实的证据，不能计入证据覆盖率；",
         f"3. **外部/工具衍生字段**：共 {len(external)} 列；全量填报 {full_external} 列，部分填报 {partial_external} 列，未填报或仅有缺失占位 {empty_external} 列。此统计与上方 88 字段逐格对账是不同范围。",
         "",
         "## 二、差异明细清单 (Discrepancies)",
@@ -649,6 +665,8 @@ def run_audit(
         log(f"[{tgt.upper():10s}] 总格: {st['total_cells_audited']:4d} | 匹配: {st['matches']:4d} | "
             f"Excel缺失: {st['excel_missing']:2d} | JSON缺失: {st['json_missing']:2d} | "
             f"数值差异: {st['value_mismatch']:2d}")
+        log(f"   -> 其中两边均缺失(无证据): {st['both_missing']} | 双方有值且一致: {st['matches_with_value']} | "
+            f"缺 JSON 文件的公司: {st['json_files_absent']}")
         if st["by_column"]:
             col_breakdown = ", ".join(f"{c}:{cnt}" for c, cnt in sorted(st["by_column"].items()))
             log(f"   -> 差异列分布: {col_breakdown}")

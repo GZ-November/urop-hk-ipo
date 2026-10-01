@@ -119,3 +119,35 @@ class StateRecordTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ReviewRecordTests(unittest.TestCase):
+    def _cfg_with_records(self, tmp, code="0001.HK", h="abc"):
+        cfg = make_cfg(Path(tmp))
+        for stage in ("extracted", "validated"):
+            save_record(cfg, "prospectus", code, stage, {"code": code, "target": "prospectus",
+                                                         "hash": h, "gate_pass": True})
+        return cfg
+
+    def test_passing_review_requires_named_reviewer_and_binds_hash(self):
+        from tools.state import record_review
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = self._cfg_with_records(tmp)
+            rec = {"hash": "abc"}
+            with self.assertRaises(ValueError):
+                record_review(cfg, "prospectus", "0001.HK", rec, "pass", "  ")
+            record_review(cfg, "prospectus", "0001.HK", rec, "pass", "independent reviewer X", "read p.5")
+            saved = read_record(cfg, "prospectus", "0001.HK", "reviewed")
+            self.assertTrue(saved["gate_pass"])
+            self.assertEqual(saved["reviewer"], "independent reviewer X")
+            self.assertEqual(saved["reviewed_payload_hash"], "abc")
+            require(cfg, "prospectus", "0001.HK", "abc", "reviewed")
+            with self.assertRaises(ValueError):  # a changed payload hash invalidates the review
+                require(cfg, "prospectus", "0001.HK", "changed", "reviewed")
+
+    def test_review_needs_matching_extracted_and_validated_records(self):
+        from tools.state import record_review
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = self._cfg_with_records(tmp, h="abc")
+            with self.assertRaises(ValueError):
+                record_review(cfg, "prospectus", "0001.HK", {"hash": "different"}, "pass", "R")

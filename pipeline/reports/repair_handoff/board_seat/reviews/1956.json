@@ -1,0 +1,31 @@
+{
+ "code": "1956.HK",
+ "reviewer": "independent reviewer subagent R5",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_with_changes",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 212,
+   "printed_page": "203",
+   "quote": "positions at Shenzhen Capital Group Co., Ltd., including investment manager, deputy general manager of the North China headquarters, and currently serves as the executive general manager.",
+   "interpretation": "Non-executive Director Zhou Jun (NED per pdf p210 roster at Listing) is currently executive general manager of Shenzhen Capital Group Co., Ltd. (SCGC)."
+  },
+  {
+   "pdf_page": 108,
+   "printed_page": "99",
+   "quote": "SCGC subscribed for 2,033,862 newly issued Shares for a consideration of RMB40.0 million",
+   "interpretation": "SCGC is a Pre-IPO Investor (Series C, 30 July 2020, pdf p107; listed in Pre-IPO investment table pdf p116); Zhou Jun was appointed Director Sept 2020, about two months later."
+  },
+  {
+   "pdf_page": 120,
+   "printed_page": "111",
+   "quote": "As of the Latest Practicable Date, the SCGC Investors held approximately 4.53% of our total issued Shares.",
+   "interpretation": "SCGC (with Hongtu Tech, whose GP is SCGC-owned) remains a shareholder at the Latest Practicable Date."
+  }
+ ],
+ "findings": "Read independently first. Roster at Listing (pdf p210): 5 ED, 1 NED (Zhou Jun), 3 INED; only Zhou Jun has an investor link. His bio (pdf p212) makes him an executive of SCGC, an identified Pre-IPO Investor (Series C, July 2020). Candidate quotes verified verbatim on the cited pdf pages and printed pages match INDEX.tsv. Changes: replaced the 332-char Zhou Jun quote with a <=200-char verbatim extract; dropped observer-right evidence (pdf p129) as not needed and not attributable to a named person; dropped the p210 composition quote (roster fact recorded in interpretation). The prospectus does not say SCGC 'nominated' Zhou Jun; support is officer/employee-of-investor status, which meets the stated standard. Observer right (pdf p129) was exercised by unnamed investor(s) and terminated; irrelevant to the value.",
+ "residual_uncertainty": "Nomination by SCGC not stated in text (link is employment at the investor; timing consistent). Special rights, including observer right, terminated before First Filing (may be reinstated only if listing fails); the NED seat itself continues after Listing."
+}

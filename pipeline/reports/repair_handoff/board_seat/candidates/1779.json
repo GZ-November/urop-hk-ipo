@@ -1,0 +1,84 @@
+{
+ "code": "1779.HK",
+ "pdf_sha256": "7687422547c9aff6ec0301bf77cf83a2af5b53a13604bc557ae9c32ce5dc48da",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Series A (30 Dec 2020/20 Jun 2021, RMB98.5m): incl. Fuhai Ancheng Bohui (OFC Bohui Fund, Oriental Fortune Capital), Shanghai Youxuan, CSPC Sangel, Huzhou Yongshi Huijin",
+  "Series A+ (10 Aug 2022): Shanghai Lianrui (GP Shanghai Tongrui)",
+  "Series A++ (20 Oct 2022): Huzhou Yongshi Weizhen",
+  "Series B1 (30 Oct/29 Nov 2023): incl. Huzhou Youcheng (Shanghai Tongrui), OFC Jiaozi Fund (Oriental Fortune Capital), Shanxi Securities Alternative Investment, Hefei Hongta",
+  "Series B2 (18 Sep 2024): PharMab",
+  "Series B3 (20 Dec 2024): incl. Suzhou Lianrui (Shanghai Tongrui)",
+  "Series C (19 May 2025): HLC VGC Partners HK II, Qingdao Hongyi (exec partner Shanghai Hehong Jinghui), Lingang Lanwan Fund II and others",
+  "Huzhou Youxing, Suzhou Lianrui, Huzhou Youcheng, Suzhou Youxin: exec partner/fund manager Shanghai Tongrui"
+ ],
+ "board_roster_reviewed": "Eleven directors at listing: Executive: Liu Heng (chair/CEO, co-founder), Sun Bill Nai-chau, Xie Ming (all insiders). Non-executive: Lin Jian (appointed Oct 2022; investment director of Shenzhen Oriental Fortune Capital Investment Management - the parent of the managers of OFC Bohui Fund and OFC Jiaozi Fund, pre-IPO investors) - LINKED; Gu Qin (appointed Oct 2022; chief accountant of Shanghai Tongrui Investment Management, executive partner/fund manager of Huzhou Youxing, Suzhou Lianrui, Huzhou Youcheng, Suzhou Youxin, pre-IPO investors) - LINKED; Xue Di (appointed May 2025 = Series C date; deputy director of Shanghai Hehong Jinghui Equity Investment Management, executive partner of Qingdao Hongyi, a Series C pre-IPO investor) - LINKED; Chen Kan (appointed May 2025; non-executive director of InSilico Medicine; no pre-IPO investor link identified in prospectus). INEDs effective at Listing: Siu Paul Yu Hay, Ruan Tim, Yang Chun, Zhou Guofang (not linked; not fully assessed beyond roster).",
+ "rights_and_timing": "Pre-IPO investors held customary rights incl. redemption, veto over major matters of the shareholders meeting and board, ROFR, anti-dilution, liquidation preference, drag-along; the prospectus text does not list an explicit board nomination or observer right. Redemption right against the company ceased 30 May 2025; redemption against Dr. Liu ceased before listing application (reinstates if listing fails); other special rights terminate upon Listing. The board seats themselves are held by NEDs who are executives of pre-IPO investor institutions/managers (seats, not just rights), in place at the prospectus date, with Lin Jian and Gu Qin appointed 20 Oct 2022 and Xue Di and Chen Kan on 19 May 2025 (Series C agreement date). Nominee status is inferred from employment, not stated.",
+ "evidence": [
+  {
+   "pdf_page": 220,
+   "printed_page": "209",
+   "quote": "Mr. Lin first joined Shenzhen Oriental Fortune Capital Investment Management Co., Ltd.",
+   "supports": "NED Lin Jian joined Oriental Fortune Capital in 2015.",
+   "interpretation": "Director employed by parent of pre-IPO investors OFC Bohui/OFC Jiaozi manager."
+  },
+  {
+   "pdf_page": 220,
+   "printed_page": "209",
+   "quote": "in 2015 and currently assumes the position of investment director.",
+   "supports": "Lin Jian currently investment director at Oriental Fortune Capital.",
+   "interpretation": "Current employment link at prospectus date."
+  },
+  {
+   "pdf_page": 142,
+   "printed_page": "131",
+   "quote": "Each of OFC VC Investment and OFC Wuhu is a direct or indirect wholly owned subsidiary of Shenzhen Oriental Fortune Capital Investment Management Co., Ltd.",
+   "supports": "OFC Bohui Fund and OFC Jiaozi Fund managers are subsidiaries of Oriental Fortune Capital.",
+   "interpretation": "Ties Lin Jian employer to the pre-IPO investor funds."
+  },
+  {
+   "pdf_page": 221,
+   "printed_page": "210",
+   "quote": "Ms. Gu has been the chief accountant of Shanghai Tongrui Investment Management Co., Ltd.",
+   "supports": "NED Gu Qin is chief accountant of Shanghai Tongrui since Jan 2022.",
+   "interpretation": "Director employed by manager of pre-IPO investors."
+  },
+  {
+   "pdf_page": 141,
+   "printed_page": "130",
+   "quote": "the executive partner and fund manager of which is Shanghai Tongrui.",
+   "supports": "Shanghai Tongrui is executive partner/fund manager of Huzhou Youxing, Suzhou Lianrui, Huzhou Youcheng and Suzhou Youxin (Pre-IPO Investors).",
+   "interpretation": "Confirms Gu Qin employer is GP/manager of pre-IPO investors."
+  },
+  {
+   "pdf_page": 221,
+   "printed_page": "210",
+   "quote": "Dr. Xue has been the deputy director of Shanghai Hehong Jinghui Equity Investment Management Co., Ltd.",
+   "supports": "NED Xue Di is deputy director of Shanghai Hehong Jinghui since May 2024.",
+   "interpretation": "Third investor-linked NED."
+  },
+  {
+   "pdf_page": 143,
+   "printed_page": "132",
+   "quote": "Qingdao Hongyi is a limited partnership established in the PRC and managed by its executive partner, Shanghai Hehong Jinghui Equity Investment Management Co., Ltd.",
+   "supports": "Qingdao Hongyi (Series C pre-IPO investor) is managed by Shanghai Hehong Jinghui.",
+   "interpretation": "Links Xue Di employer to a pre-IPO investor."
+  },
+  {
+   "pdf_page": 214,
+   "printed_page": "203",
+   "quote": "Our Board consists of 11 Directors, comprising three executive Directors, four non-executive Directors and four independent non-executive Directors.",
+   "supports": "Board composition at listing.",
+   "interpretation": "Four NEDs, three with explicit investor-institution employers."
+  },
+  {
+   "pdf_page": 141,
+   "printed_page": "130",
+   "quote": "and other special rights will be terminated upon Listing.",
+   "supports": "Special rights terminate upon Listing.",
+   "interpretation": "Rights terminate; seats persist under normal governance."
+  }
+ ],
+ "unresolved_reason": ""
+}

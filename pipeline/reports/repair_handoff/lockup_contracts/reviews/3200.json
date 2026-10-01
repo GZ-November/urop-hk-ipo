@@ -1,0 +1,23 @@
+{
+  "code": "3200.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p327 ('period of six months following the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-08-06, last_restricted_day 2026-08-05 as recorded. All 10 named holders located in the cornerstone section (pp.316-327).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p422 (Rule 10.07 undertaking by the Controlling Shareholders Group, limb (a)). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2026-08-06), so first free = 2026-08-07. Candidate's 2026-08-06 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2026-08-07",
+      "last_restricted_day": "2026-08-06",
+      "basis": "Rule 10.07(1)(a) disposal undertaking by the Controlling Shareholders Group commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p423 (limb (b), second six-month period from the expiry of the First Six-Month Period, control-maintenance condition). Duration wording frees up ON the 12-month anniversary: first_free_day 2027-02-06, last_restricted_day 2027-02-05 as recorded.",
+    "corrections": {}
+  }
+}

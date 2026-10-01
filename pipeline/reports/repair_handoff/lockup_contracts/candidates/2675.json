@@ -1,0 +1,37 @@
+{
+  "code": "2675.HK",
+  "listing_date": "2026-01-08",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Abu Dhabi Investment Authority (ADIA); UBS Asset Management (Singapore) Ltd. (UBS AM Singapore); OrbiMed Genesis (OrbiMed Genesis Master Fund, L.P.); Huang River Investment Limited (Tencent); ChinaAMC (HK) (China Asset Management (Hong Kong) Limited); LYFE Capital Fund IV; GBAHIL (Mega Prime Development Limited; Poly Platinum Enterprises Limited); China Alpha (China Alpha Multi-Joy Value Fund / Global Integrity Fund Ltd); Tekful Limited (Mr. Cai Dong Chen); ICSA; Sage Partners Master Fund; Panjing Fund; Infini",
+    "quote_page": 508,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement",
+    "reference_date": "2026-01-08",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; frees up on the six-month anniversary",
+    "computed_first_free_day": "2026-07-08",
+    "computed_last_restricted_day": "2026-07-07",
+    "notes": "Investor names from the cornerstone table on p.507 and investor descriptions on pp.501-506."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 525,
+    "full_quote": "(i) at any time in the period commencing on the date by reference to which disclosure of his/her/its holding of Shares is made in this Prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which any of them are shown by this Prospectus to be the beneficial owner",
+    "reference_date": "2026-01-08",
+    "basis": "Rule 10.07(1) undertaking: period ending ON the date which is six months from the Listing Date; inclusive endpoint, first free day is the day after the six-month anniversary",
+    "computed_first_free_day": "2026-07-09",
+    "computed_last_restricted_day": "2026-07-08",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 525,
+    "full_quote": "(ii) at any time in the period of six months from the date on which the period referred to in paragraph (i) above expires, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares to such extent that immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, he/she/it will, directly or indirectly cease to be a member of the Controlling Shareholders.",
+    "reference_date": "2026-01-08",
+    "basis": "Rule 10.07(1)(b)-style undertaking: second six-month period from expiry of the first (six months from the Listing Date); frees up on the 12-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-01-08",
+    "computed_last_restricted_day": "2027-01-07",
+    "notes": "Conditional on ceasing to be a member of the Controlling Shareholders; effective control maintenance = 12 months from Listing Date."
+  }
+}

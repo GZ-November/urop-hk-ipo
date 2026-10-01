@@ -1,0 +1,35 @@
+{
+ "index": 8,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1498761",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1498761",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 6月8日",
+ "published_at_hkt": "2026-06-08T18:32+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong (hk.investing.com); published 下午06:32, updated 下午06:45",
+ "survey_scope_wording": "富途證券、輝立證券等券商 ('富途證券、輝立證券等券商爲溜溜梅借出')",
+ "measurement_time_wording": "截至6月8日",
+ "rows_on_page": [
+  {
+   "stock": "06658",
+   "name": "溜溜梅",
+   "amount_verbatim": "228.17億港元",
+   "multiple_verbatim": "超購逾455.70倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "6658.HK",
+   "ledger_amount_100m_hkd": 228.17,
+   "result": "match",
+   "detail": "page: 228.17億港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "6658.HK",
+   "subscription_close": "2026-06-10",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Complete. Ledger published_at_hkt 18:32 matches. Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-06-08/2026-06-08 consistent with page date. Ledger published_at_hkt=2026-06-08T18:32:00+08:00."
+}

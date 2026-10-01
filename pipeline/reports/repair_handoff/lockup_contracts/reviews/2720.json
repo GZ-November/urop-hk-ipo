@@ -1,0 +1,19 @@
+{
+  "code": "2720.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Cornerstone lock-up is TWELVE months, correctly captured: clause verbatim on p331 - 'twelve months from (and inclusive of) the Listing Date', so it frees up ON the 12-month anniversary (2027-02-10), last restricted 2027-02-09. Holders Orbit VC and Huangshan Dejun found on cornerstone pages.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: Rule 10.07(1)(a)-style clause located on the cited page, quote verbatim. Period 'commencing on the date by reference to which disclosure of shareholding is made in this prospectus and ending on the date which is six months from the Listing Date' - explicit inclusive endpoint ON the six-month anniversary, so last_restricted_day = anniversary and first_free_day = anniversary + 1. Date arithmetic re-checked in python. Clause verbatim on p343; wording 'ending on the expiration date of the six months from the Listing Date (the \"First Six-Month Period\")' ends ON 2026-08-10, so first free day 2026-08-11.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: second-period clause located on the cited page, quote verbatim. Six months commencing on the date on which the first period expires (the six-month anniversary of the Listing Date) runs to the day before the 12-month anniversary, so first_free_day = 12-month anniversary. Second period is conditional on ceasing to be a Controlling Shareholder; recorded as the standard conditional 12m controller restriction. Date arithmetic re-checked in python. Clause verbatim on p343; Second Six-Month Period is 'the following six months commencing on the date on which the First Six-Month Period expires' (First + Second = 'First Twelve-Month Period'), freeing up ON the 12-month anniversary 2027-02-10. No 18C/18A references.",
+    "corrections": {}
+  }
+}

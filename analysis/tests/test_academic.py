@@ -74,11 +74,16 @@ class MoneyLeftTests(unittest.TestCase):
         self.assertAlmostEqual(sum(s["shares"].values()), 1.0)
         self.assertEqual(s["negative_other"], 0)
 
-    def test_retail_allocation_is_capped_at_one(self):
-        d = pd.DataFrame({"retail_shares": [500.0], "applied": [100.0], "ir": [0.5], "close1": [15.0], "offer": [10.0], "applicants": [10.0]})
+    def test_impossible_allocation_is_quarantined_never_capped_at_one(self):
+        d = pd.DataFrame({"retail_shares": [500.0, 50.0, 0.0], "applied": [100.0, 100.0, 100.0], "ir": [0.5, 0.5, 0.5],
+                          "close1": [15.0] * 3, "offer": [10.0] * 3, "applicants": [10.0] * 3})
         out = ac.retail_profile(d)
-        self.assertEqual(out["alloc"].iloc[0], 1.0)
-        self.assertAlmostEqual(out["gain_10k"].iloc[0], 5000.0)
+        self.assertTrue(np.isnan(out["alloc"].iloc[0]))        # 500/100 = 5 is impossible: missing, not 1.0
+        self.assertTrue(np.isnan(out["gain_10k"].iloc[0]))
+        self.assertTrue(out["alloc_quarantined"].iloc[0])
+        self.assertAlmostEqual(out["alloc"].iloc[1], 0.5)
+        self.assertAlmostEqual(out["gain_10k"].iloc[1], 2500.0)
+        self.assertTrue(out["alloc_quarantined"].iloc[2])      # zero allocation is not a valid rate either
 
 
 if __name__ == "__main__":

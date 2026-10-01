@@ -1,0 +1,19 @@
+{
+  "code": "2041.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified absent. Candidate exists=false is correct. Exhaustive scan of all 474 pages: every occurrence of 'cornerstone' is either the pre-IPO investor name 'Linkway Cornerstone' (history section) or the metaphor 'cornerstone of its commercial success' (p170); there is no Cornerstone Placing section and no cornerstone restriction. No cornerstone element was missed.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: Rule 10.07(1)(a)-style clause located on the cited page, quote verbatim. Period 'commencing on the date by reference to which disclosure of shareholding is made in this prospectus and ending on the date which is six months from the Listing Date' - explicit inclusive endpoint ON the six-month anniversary, so last_restricted_day = anniversary and first_free_day = anniversary + 1. Date arithmetic re-checked in python. Clause verbatim on p285 ('commencing on the date of this prospectus and ending on the date which is six months from the Listing Date').",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Re-derived independently: second-period clause located on the cited page, quote verbatim. Six months commencing on the date on which the first period expires (the six-month anniversary of the Listing Date) runs to the day before the 12-month anniversary, so first_free_day = 12-month anniversary. Second period is conditional on ceasing to be a Controlling Shareholder; recorded as the standard conditional 12m controller restriction. Date arithmetic re-checked in python. Clause verbatim on p285; no 18C/18A references.",
+    "corrections": {}
+  }
+}

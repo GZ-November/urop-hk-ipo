@@ -82,10 +82,10 @@ class StabilizationPanelContractTests(unittest.TestCase):
 
 
 class LockupPanelContractTests(unittest.TestCase):
-    def test_cornerstone_six_month_event_is_produced(self):
+    def test_issuer_without_contract_evidence_gets_explicit_missing_rows_not_dates(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            engine = LockupPanelEngine(cfg=make_cfg(tmp))
+            engine = LockupPanelEngine(cfg=make_cfg(tmp), as_of="2026-09-30", contracts={})
             out = engine.run([{"stock_code": "1234.HK",
                                "company_name": "Test Co",
                                "listing_date": "2026-07-10"}])
@@ -95,7 +95,28 @@ class LockupPanelContractTests(unittest.TestCase):
             for col in master_contracts.LOCKUP_EVENTS_COLS:
                 self.assertIn(col, header)
             categories = {r["lockup_category"] for r in rows}
-            self.assertIn("Cornerstone_6M", categories)
+            self.assertIn("Cornerstone_Lockup", categories)
+            for row in rows:  # no listing-date-plus-six-months default
+                self.assertEqual(row["expiry_date"], "")
+                self.assertEqual(row["window_status"], "MISSING_CONTRACTUAL_EVIDENCE")
+
+    def test_contract_record_supplies_the_date_and_evidence_status(self):
+        contracts = {"1234.HK": {"events": [{
+            "category": "Cornerstone_Lockup", "holder": "All cornerstone investors",
+            "last_restricted_day": "2027-01-09", "first_free_day": "2027-01-10", "review": "reviewed"}]}}
+        with tempfile.TemporaryDirectory() as tmp:
+            engine = LockupPanelEngine(cfg=make_cfg(Path(tmp)), as_of="2026-09-30", contracts=contracts)
+            rows = engine.process_issuer_lockups({"stock_code": "1234.HK", "listing_date": "2026-07-10"})
+            row = next(r for r in rows if r["lockup_category"] == "Cornerstone_Lockup")
+            self.assertEqual(row["expiry_date"], "2027-01-10")
+            self.assertEqual(row["last_restricted_day"], "2027-01-09")
+            self.assertEqual(row["evidence_status"], "reviewed")
+            self.assertEqual(row["window_status"], "NO_TRADING_DATA")  # nothing observed, nothing estimated
+
+    def test_cornerstone_event_file_is_written_with_contract_columns(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            engine = LockupPanelEngine(cfg=make_cfg(tmp), as_of="2026-09-30", contracts={})
 
     def test_issuer_without_listing_date_produces_no_file(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,0 +1,19 @@
+{
+  "code": "0600.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on cited page (jsonl p337, whitespace-normalized). 'Six months from (and inclusive of) the Listing Date' is duration wording -> frees ON the 6-month anniversary 2026-08-10; last restricted 2026-08-09. Listing Date confirmed p36: 'the date expected to be on or about Tuesday, February 10, 2026'. Holder table located on p331-332 as noted. Date arithmetic re-run in python: matches.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on cited page p348. Rule 10.07 / Guide Ch.4.13 undertaking by the Single Largest Shareholders Group with explicit endpoint 'ending on the date which is six months from the Listing Date' -> period ends ON 2026-08-10 (inclusive), first free 2026-08-11. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. The full Single Largest Shareholders Group section on p348 contains only the 6-month disposal undertaking plus the Note 3 pledge/charge notification undertaking, both ending at 'six months from the Listing Date'; there is no second-period/12-month control-maintenance clause. The only 12-month restriction is the PRC-law lock-up on all existing Shareholders (p151: 'within the 12 months following the Listing, all existing Shareholders ... could not dispose'; p165), which is not a control-maintenance undertaking. Sweep for 24/36-month undertakings: none.",
+    "corrections": {}
+  }
+}

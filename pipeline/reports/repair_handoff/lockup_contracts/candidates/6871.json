@@ -1,0 +1,36 @@
+{
+  "code": "6871.HK",
+  "listing_date": "2026-05-18",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Searched case-insensitive 'cornerstone' across all 437 pages of HKIPO-MB6871.jsonl: no matches at all. The prospectus discloses no cornerstone investors (Chapter 18C issuer; lock-ups are PRC-law 12 months for pre-IPO holders, Rule 18C.14 Key Persons and Pathfinder SIIs)."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C issuer with no Controlling Shareholders (Single Largest Shareholders: Dr. Zhang and the three Shaoxing LP platforms he controls). Searched '10.07' across all 437 pages: no Rule 10.07 undertaking exists. The 6-month restriction in the Rule 18C.14 undertaking (page 273) applies only to Pathfinder SIIs - independent investors, not controlling shareholders - recorded via notes only. The Key Persons 12-month undertaking is recorded in controller_12m."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 273,
+    "full_quote": "Pursuant to Rules 18C.14 of the Listing Rules, each of key persons of the Company, their close associates and the Pathfinder SIIs, as identified under the section headed “History, Development and Corporate Structure — Lock-up Periods”, has undertaken to the Stock Exchange and to us that, except pursuant to the Global Offering, he/it will not, unless otherwise permitted under Rule 18C.15 of the Listing Rules: at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this Prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the H Shares in respect of which it is shown by this prospectus to be the beneficial owner.",
+    "basis": "Chapter 18C combined structure: Rule 18C.14 undertaking - Key Persons and their close associates locked up 12 months (Pathfinder SIIs 6 months) from the Listing Date - replaces the Rule 10.07 controller undertakings",
+    "notes": "Key Persons per pages 123-124: Dr. Zhang (founder/chairman) and his close associates Shaoxing Ziqiu LP, Shaoxing Yuzhang LP, Shaoxing Zhiqiu LP. Computed dates use the 12-month leg applicable to Key Persons; Pathfinder SIIs free 6 months earlier (2026-11-18).",
+    "reference_date": "2026-05-18",
+    "computed_first_free_day": "2027-05-18",
+    "computed_last_restricted_day": "2027-05-17"
+  }
+}

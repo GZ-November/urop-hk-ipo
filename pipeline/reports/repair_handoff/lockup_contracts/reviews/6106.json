@@ -1,0 +1,19 @@
+{
+  "code": "6106.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Clause verbatim on p268 - 'six months from and including the Listing Date', frees up ON 2026-12-24, last restricted 2026-12-23. All holder names (HHLRA, Yuanbao Family Office, 3W Fund, GF Fund/GF International, Ruihua Investment, Zhonghe Capital, Yishao Capital, Nova Kerry Inc.) found on cornerstone pages 262-268.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified absent as a separate slot. Candidate exists=false is correct. No standalone 10.07(1)(a) six-month clause: the Controlling Shareholders gave a single combined Rule 10.07 / 18C.13 12-month undertaking (recorded in controller_12m). The only 6-month lock-up is for Pathfinder SIIs (p91: 'Commencing on the date of this prospectus and ending on expiry of six months from the Listing Date' for Zhuhai Yinshan/Ecovacs Investment Hainan), who are not controlling shareholders.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Quote verbatim on p273. Combined Rules 10.07 and 18C.13 undertaking 'ending on the date which is 12 months from the Listing Date': inclusive endpoint ON 2027-06-24, so first_free_day 2027-06-25, last_restricted_day 2027-06-24. Correct.",
+    "corrections": {}
+  }
+}

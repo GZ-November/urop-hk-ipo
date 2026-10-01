@@ -120,7 +120,7 @@ class MasterExpansionTestSuite(unittest.TestCase):
         with self.horizon_csv.open("r", encoding="utf-8-sig") as fh:
             horizons = list(csv.DictReader(fh))
 
-        self.assertEqual(len(horizons), 342, "38 家公司 × 9 个跨期窗口应严格为 342 条记录")
+        self.assertEqual(len(horizons), 954, "106 家 2026 上市公司 × 9 个跨期窗口应严格为 954 条记录")
 
         for h in horizons:
             horizon_name = h["horizon"]
@@ -143,7 +143,7 @@ class MasterExpansionTestSuite(unittest.TestCase):
         with self.stab_csv.open("r", encoding="utf-8-sig") as fh:
             stabs = list(csv.DictReader(fh))
 
-        self.assertEqual(len(stabs), 38, "稳价事件表应包含全部 38 家公司")
+        self.assertEqual(len(stabs), 106, "稳价事件表应包含全部 106 家 2026 上市公司")
 
         for s in stabs:
             # 稳价经理人只取公告原文；未解析时留空并标明原因，绝不以占位符代填
@@ -169,12 +169,12 @@ class MasterExpansionTestSuite(unittest.TestCase):
         self.assertGreaterEqual(len(lockups), 114, "38 家公司至少应产生 114 个解禁事件")
 
         categories = {r["lockup_category"] for r in lockups}
-        self.assertIn("Cornerstone_6M", categories)
+        self.assertIn("Cornerstone_Lockup", categories)
         self.assertIn("Controlling_Shareholder_6M_Disposal", categories)
         self.assertIn("Controlling_Shareholder_12M_Control", categories)
 
         for lk in lockups:
-            self.assertIn(lk["window_status"], ("MATURED", "IMMATURE_WINDOW", "INCOMPLETE_WINDOW", "NO_TRADING_DATA", "POST_UNLOCK_TRADING_MISSING"))
+            self.assertIn(lk["window_status"], ("MATURED", "IMMATURE_WINDOW", "INCOMPLETE_WINDOW", "NO_TRADING_DATA", "POST_UNLOCK_TRADING_MISSING", "MISSING_CONTRACTUAL_EVIDENCE"))
             if lk["window_status"] == "MATURED":
                 self.assertIsNotNone(lk["car_m5_p5"])
                 self.assertNotEqual(lk["car_m5_p5"], "")

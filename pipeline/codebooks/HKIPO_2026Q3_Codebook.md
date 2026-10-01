@@ -3,7 +3,7 @@
 - **样本规模 (N)**：23 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-09-30 21:45:53 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-10-01 13:34:35 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -205,8 +205,8 @@
 | **FZ** | `Zero-volume days count (first 6M)` | 上市前6个月零成交量交易日天数 | 深蓝 | `numeric` | Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure) | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GA** | `Return volatility (first 6M daily std dev, %)` | 上市前6个月日度收益率标准差 (波动率, %) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GB** | `Maximum drawdown (first 6M, %)` | 上市前6个月二级市场最大回撤幅度 (%) | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
-| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | 100% 完备 | 共 12 种取值 ('2027-01-09': 7, '2027-01-08': 4, '2027-01-10': 2) |
-| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 12 种取值 ('2027-07-09': 7, '2027-07-08': 4, '2027-07-10': 2) |
+| **GC** | `Controlling shareholder 6-month disposal lockup expiry date` | 控股股东首阶段6个月绝对禁售期满日 | 深蓝 | `string` | Post-IPO lockup expiration events | Adequate (17/23 (73.91%)) | 共 10 种取值 ('2027-01-10': 7, '2027-01-09': 2, '2027-01-03': 1) |
+| **GD** | `Controlling shareholder 12-month cessation of control expiry date` | 控股股东次阶段12个月控制权锁定到期日 | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (19/23 (82.61%)) | 共 9 种取值 ('2027-07-09': 6, '2027-07-10': 5, '2027-09-02': 2) |
 | **GE** | `Cornerstone unlock CAR [-5, +5] (%)` | 基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GF** | `Cornerstone unlock CAR [-20, +20] (%)` | 基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI) | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GG** | `Cornerstone unlock volume shock ratio` | 基石解禁后20日均换手额相对解禁前20日换手额之比 | 深蓝 | `numeric` | Post-IPO lockup expiration events | Reserved / Unmatured (0/23 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |

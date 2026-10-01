@@ -1,0 +1,37 @@
+{
+ "code": "1392.HK",
+ "reviewer": "independent reviewer subagent R1",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_candidate",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 194,
+   "printed_page": "186",
+   "quote": "From March 2013, Mr. Yu Lijie worked as a deputy general manager and was promoted as a general manager in August 2017, at Zheshang Business Venture Capital Management (Shenzhen) Co., Ltd.",
+   "interpretation": "Non-executive Director Yu Lijie is general manager (no end date given) of the manager named in the Chinese form 浙商創業投資管理(深圳)有限公司 (same Chinese name appears on p116)."
+  },
+  {
+   "pdf_page": 116,
+   "printed_page": "108",
+   "quote": "Each of the above funds is managed by Zhejiang Business Venture Capital Management (Shenzhen) Co., Ltd.* (浙商創業投資管理(深圳)有限公司)",
+   "interpretation": "Taolue New Energy, Taolue Xinwang and Jinlan Sunshine (Series A/B/C Pre-IPO Investors, together 14.86%) are managed by this GP/manager; identical Chinese name to Yu Lijie's employer."
+  },
+  {
+   "pdf_page": 194,
+   "printed_page": "186",
+   "quote": "He was appointed to our Board as a Director on 30 December 2020 and was redesignated as a non-executive Director in July 2025.",
+   "interpretation": "Seat held at listing; appointed one month after Series A (30 Nov 2020, incl. Taolue New Energy)."
+  },
+  {
+   "pdf_page": 114,
+   "printed_page": "106",
+   "quote": "all such special rights granted to our Pre-IPO Investors have been terminated prior to the filing of the listing application by our Company with the Stock Exchange",
+   "interpretation": "Investor contractual rights (none listed as board nomination) terminated; the seat itself is an officer-of-investor-manager NED seat, not a right."
+  }
+ ],
+ "findings": "Independently read pre-IPO section (pp112-121) and full board roster (pp190-196). Only non-executive Director Yu Lijie is linked: general manager of Zhejiang/Zheshang Business Venture Capital Management (Shenzhen), the fund manager/GP of pre-IPO investors Taolue New Energy, Taolue Xinwang and Jinlan Sunshine (14.86%). The English romanisation differs (Zheshang vs Zhejiang) between p194 and p116 but the Chinese name 浙商創業投資管理(深圳)有限公司 is identical; p189 also states Zhejiang Business Venture is the general partner of the three funds. Other directors (5 execs, 3 INEDs incl. Zhong Luhuan, ex-Hony, partner at Zhonghong Jin Kong) have no stated link. Candidate quotes verified verbatim (including p189 table quote) with correct printed-page mapping; candidate interpretation follows the standard (person is officer of the investor's GP/manager). Candidate correctly flags that nomination by investor is not stated and that his role is described without an end date.",
+ "residual_uncertainty": "Prospectus never says Yu Lijie was nominated by the investors, and no board-appointment right is listed among special rights; continuing employment at Zheshang Business Venture at listing is inferred from a bio with no end date ('From March 2013 ... general manager'). Link between the two romanisations rests on identical Chinese name. Series A closed 30 Nov 2020, appointment 30 Dec 2020 fits investor-driven appointment but is inference."
+}

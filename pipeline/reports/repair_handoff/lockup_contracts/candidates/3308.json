@@ -1,0 +1,35 @@
+{
+  "code": "3308.HK",
+  "listing_date": "2026-07-30",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Temasek; Taibai; True Light; HHLRA; JPM AM; JPMIMI; JPMAMAPL; BlackRock; YF Capital; Aspex; ADIA; Wellington; Perseverance Asset Management; Indus Funds; Mirae Investors; NGS Super Fund; Bain Capital; CPE; Boyu Capital; IDG Capital; Ninety One Asia; WT Asset Management; CloudAlpha Capital; Tairen; Hao Funds; Janchor Funds; Alibaba; Tencent; CPP Investments; Oaktree; CP Black Dragon; CTFE; Athos Capital; TAL Funds; Burkehill; General Atlantic; Huadeng Technology",
+    "quote_page": 300,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-07-30",
+    "basis": "six months from (and inclusive of) the Listing Date; restricted period inclusive of the Listing Date, ending the day before the six-month calendar anniversary",
+    "computed_first_free_day": "2027-01-30",
+    "computed_last_restricted_day": "2027-01-29",
+    "notes": "36 cornerstone investor groups (names as abbreviated in the Cornerstone Placing table, pp. 287-288)."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 306,
+    "full_quote": "Pursuant to Rule 10.07 of the Listing Rules, our Single Largest Group of Shareholders has undertaken to us and to the Stock Exchange that, except pursuant to the Global Offering, each of the members of our Single Largest Group of Shareholders will not, and shall procure that any other registered holder(s) (if any) will not, without the prior written consent of the Stock Exchange or unless otherwise in compliance with applicable requirements of the Listing Rules, in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this Prospectus and ending on the date which is six months from the Listing Date (the “First Six-Month Period”), dispose of, or enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of those shares or securities of the Company in respect of which he/it is shown by this Prospectus to be the beneficial owner (as defined in the Listing Rules).",
+    "reference_date": "2026-07-30",
+    "basis": "Rule 10.07 six-month disposal undertaking given by the 'Single Largest Group of Shareholders'; restricted period commencing on the prospectus disclosure reference date and ending on the date which is six months from the Listing Date; the period 'ending on' that date includes it, so the last restricted day is the six-month anniversary and the first free day is the following day",
+    "computed_first_free_day": "2027-01-31",
+    "computed_last_restricted_day": "2027-01-30",
+    "notes": "Undertaking is by the 'Single Largest Group of Shareholders' (not styled 'Controlling Shareholders'), citing Rule 10.07; heading '(B) Undertakings by our Single Largest Group of Shareholders' (p. 306)."
+  },
+  "controller_12m": {
+    "exists": false,
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No 12-month control-maintenance undertaking. Searched '10.07', '12 months', 'Second', 'Single Largest Group of Shareholders' across all 476 pages: the Single Largest Group of Shareholders gave only the six-month disposal undertaking (p. 306); no Note 3 pledge-notification or 12-month limb appears (the only '12/24 months' hits relate to share-incentive vesting schedules, pp. 400-401)."
+  }
+}

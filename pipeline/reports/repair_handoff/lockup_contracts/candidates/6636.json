@@ -1,0 +1,36 @@
+{
+  "code": "6636.HK",
+  "listing_date": "2026-03-30",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Zhengjin International (Zhengjin (Hong Kong) International Co., Limited) and GKI",
+    "quote_page": 217,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period from the Listing Date to December 31, 2026 (both days inclusive) (the “Lock-up Period”), dispose of any of the Offer Shares they have subscribed for pursuant to the relevant Cornerstone Investment Agreement, save for in certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "basis": "DEVIATION: the document sets an explicit calendar end date rather than a month count - restricted period runs from the Listing Date to December 31, 2026, both days inclusive; therefore last restricted day is 2026-12-31 and first free day is 2027-01-01 (approximately 9 months, not 6)",
+    "notes": "Section 'RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS'. Explicit end date 'December 31, 2026 (both days inclusive)' overrides the six-month convention. Holder names from the Cornerstone Investment table on page 216.",
+    "reference_date": "2026-03-30",
+    "computed_last_restricted_day": "2026-12-31",
+    "computed_first_free_day": "2027-01-01"
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C issuer with no Controlling Shareholders (Single Largest Group of Shareholders: Mr. Chan, Ms. Luo and Hengqin Jili, ~14.27%+3.90%+8.37%). Searched '10.07' across all 474 pages: no Rule 10.07 Controlling Shareholder undertaking exists. The 6-month disposal restriction that does exist applies to Pathfinder SIIs under Rule 18C.14(2) (page 278) - independent cornerstone-like investors, not controlling shareholders - and is recorded via notes only. Key Persons undertaking (12 months) is recorded in controller_12m."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 278,
+    "full_quote": "Pursuant to Rule 18C.14(1) of the Listing Rules, the key persons of our Company (the “Key Persons”), comprising Mr. Chan, Ms. Luo, Mr. Chen Shuo, Mr. Xu Lei, Ms. Liu Ruoshui, Hengqin Jili and Hengqin Jichuang, have undertaken to each of the Stock Exchange and our Company that, each of them will not, and will procure that the relevant registered holder(s) will not in the period commencing on the date by reference to which disclosure of their shareholdings in our Company is made in this Prospectus and ending on the date which is 12 months from the Listing Date (or such earlier date as provided under Note 2 of Rule 18C.23 of the Listing Rules), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of any H Shares in respect of which any of them is shown in this Prospectus to be the beneficial owners",
+    "basis": "Chapter 18C combined structure: Rule 18C.14(1) Key Persons (and their close associates) 12-month disposal restriction replaces the Rule 10.07 controller undertakings; 12 months from the Listing Date",
+    "notes": "Recorded in the 12m slot as the 18C analog of the controller undertakings; no separate 6m/12m split exists. Pathfinder SIIs are separately locked up for 6 months under Rule 18C.14(2) (same page).",
+    "reference_date": "2026-03-30",
+    "computed_first_free_day": "2027-03-30",
+    "computed_last_restricted_day": "2027-03-29"
+  }
+}

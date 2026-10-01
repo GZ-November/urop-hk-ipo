@@ -1,0 +1,23 @@
+{
+  "code": "3636.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p368. Decisive wording: 'during the period commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date (the “Lock-up Period”)'. This is an explicit inclusive END, not a duration wording: last restricted day = 2026-01-09 + 6m = 2026-07-09 and first free day = 2026-07-10. The candidate used the anniversary convention (2026-07-09/2026-07-08) - corrected per convention. Glencore AG's additional tiered restriction (max one third of subscribed Offer Shares per 30 months after the Lock-up Period ends) is verbatim in the same passage and correctly noted; it does not change the general first free day.",
+    "corrections": {
+      "first_free_day": "2026-07-10",
+      "last_restricted_day": "2026-07-09",
+      "basis": "restricted period commencing on (and inclusive of) the Listing Date (2026-01-09) and ending on (and inclusive of) the date falling six months after the Listing Date (2026-07-09); both endpoints expressly inclusive, so first free day is the day after the inclusive end"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p375. 'ending on the date which is six months from the Listing Date' - explicit inclusive end: 2026-01-09 + 6m = 2026-07-09 last restricted, first free 2026-07-10. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p375. Second six-month period from expiry of the First -> ends 12 months from Listing Date 2027-01-09 (inclusive) -> first free 2027-01-10. Matches candidate.",
+    "corrections": {}
+  }
+}

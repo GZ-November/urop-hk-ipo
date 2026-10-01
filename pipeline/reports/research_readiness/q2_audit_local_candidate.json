@@ -1,0 +1,3014 @@
+{
+  "timestamp": "2026-09-30 22:45:12",
+  "workbook": "cohorts/HKIPO-MB2026Q1.xlsx",
+  "sheet": "NLR",
+  "audited_companies_count": 38,
+  "stats": {
+    "prospectus": {
+      "target": "prospectus",
+      "fields_count": 70,
+      "companies_audited": 38,
+      "total_cells_audited": 2660,
+      "matches": 2660,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "by_column": {}
+    },
+    "allot": {
+      "target": "allot",
+      "fields_count": 18,
+      "companies_audited": 38,
+      "total_cells_audited": 684,
+      "matches": 684,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "by_column": {}
+    }
+  },
+  "discrepancies": [],
+  "external_columns": [
+    {
+      "col": "V",
+      "header": "Filing price revision (%)",
+      "tool_source": "src/academic_derivations.py (Pricing revision)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.071038
+    },
+    {
+      "col": "W",
+      "header": "Filing range width (%)",
+      "tool_source": "src/academic_derivations.py (Filing range width)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.142077
+    },
+    {
+      "col": "X",
+      "header": "Pricing position in filing range",
+      "tool_source": "src/academic_derivations.py (Pricing position in range)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "At high"
+    },
+    {
+      "col": "BC",
+      "header": "Comments (nearest sales& profit adjustment factor - original data duration in year, eg. 6 month pls input 0.5)",
+      "tool_source": "Manual / Prospectus disclosure notes (Annualization factor)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.5
+    },
+    {
+      "col": "BU",
+      "header": "Listing board",
+      "tool_source": "tools/external/flags.py (Listing board)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "Main Board"
+    },
+    {
+      "col": "BW",
+      "header": "A+H issuer flag",
+      "tool_source": "tools/external/flags.py (A+H flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BX",
+      "header": "WVR flag",
+      "tool_source": "tools/external/flags.py (WVR flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BY",
+      "header": "Chapter 18A flag",
+      "tool_source": "tools/external/flags.py (Chapter 18A flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BZ",
+      "header": "Chapter 18C flag",
+      "tool_source": "tools/external/flags.py (Chapter 18C flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "CA",
+      "header": "Industry classification code",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification code)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "703010"
+    },
+    {
+      "col": "CB",
+      "header": "Industry classification system and version",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification system)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "HSICS (Hang Seng Industry Classification System) 2026"
+    },
+    {
+      "col": "CD",
+      "header": "Firm age at IPO (years)",
+      "tool_source": "src/academic_derivations.py (Firm age at IPO)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 6.32
+    },
+    {
+      "col": "CE",
+      "header": "Place of incorporation",
+      "tool_source": "tools/external/flags.py (Place of incorporation)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "PRC"
+    },
+    {
+      "col": "CG",
+      "header": "Financial statement unit multiplier",
+      "tool_source": "Manual / Disclosure notes (Financial statement unit multiplier)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1000
+    },
+    {
+      "col": "CI",
+      "header": "Year-3 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 start)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-01-01"
+    },
+    {
+      "col": "CJ",
+      "header": "Year-3 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 end)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-12-31"
+    },
+    {
+      "col": "CK",
+      "header": "Year-2 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 start)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2024-01-01"
+    },
+    {
+      "col": "CL",
+      "header": "Year-2 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 end)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2024-12-31"
+    },
+    {
+      "col": "CM",
+      "header": "Year-1 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-1 start)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2025-01-01"
+    },
+    {
+      "col": "CN",
+      "header": "Year-1 net sales (original, pre-annualization)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 net sales original)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 58903000
+    },
+    {
+      "col": "CO",
+      "header": "Year-1 profit before tax (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit before tax original)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": -1600526000
+    },
+    {
+      "col": "CP",
+      "header": "Year-1 profit for period (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit for period original)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": -1600526000
+    },
+    {
+      "col": "CZ",
+      "header": "Earliest cornerstone unlock date (dd/mm/yy)",
+      "tool_source": "tools/external/flags.py / src/cornerstone.py (Earliest cornerstone unlock date)",
+      "filled_count": 34,
+      "total_count": 38,
+      "fill_rate": "89.5%",
+      "sample_value": "2026-07-02"
+    },
+    {
+      "col": "DK",
+      "header": "Greenshoe exercise rate (%)",
+      "tool_source": "src/academic_derivations.py (Greenshoe exercise rate)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "DS",
+      "header": "HSI return over 20 trading days before prospectus (%)",
+      "tool_source": "tools/external/market.py (HSI 20-day return)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.01865617
+    },
+    {
+      "col": "DT",
+      "header": "HK ordinary IPO count in 90 calendar days before prospectus",
+      "tool_source": "tools/external/ipo_count.py (90-day HK ordinary IPO count)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 39
+    },
+    {
+      "col": "DU",
+      "header": "1-month HIBOR before prospectus (%)",
+      "tool_source": "tools/external/hkma_import.py (1-month HIBOR)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.0316798
+    },
+    {
+      "col": "DV",
+      "header": "Banking system aggregate balance before prospectus (HK$)",
+      "tool_source": "tools/external/hkma_import.py (Aggregate Balance)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 53926000000
+    },
+    {
+      "col": "DW",
+      "header": "First trading day closing price (HK$)",
+      "tool_source": "tools/external/market.py (First day close)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 34.46
+    },
+    {
+      "col": "DX",
+      "header": "First-day return / Underpricing (%)",
+      "tool_source": "src/academic_derivations.py (First-day return / Underpricing)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.758163
+    },
+    {
+      "col": "DY",
+      "header": "Money left on the table (HK$)",
+      "tool_source": "src/academic_derivations.py (Money left on the table)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 4232820476
+    },
+    {
+      "col": "DZ",
+      "header": "First trading day opening price (HK$)",
+      "tool_source": "tools/external/market.py (First day open)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 35.7
+    },
+    {
+      "col": "EA",
+      "header": "First trading day high (HK$)",
+      "tool_source": "tools/external/market.py (First day high)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 42.88
+    },
+    {
+      "col": "EB",
+      "header": "First trading day low (HK$)",
+      "tool_source": "tools/external/market.py (First day low)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 33.5
+    },
+    {
+      "col": "EC",
+      "header": "First trading day volume (shares)",
+      "tool_source": "tools/external/market.py (First day volume)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 150709945
+    },
+    {
+      "col": "ED",
+      "header": "First-day flipping ratio (%)",
+      "tool_source": "src/academic_derivations.py (First-day flipping ratio)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.529092
+    },
+    {
+      "col": "EE",
+      "header": "First trading day turnover (HK$)",
+      "tool_source": "tools/external/market.py (First day turnover)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 5521275600
+    },
+    {
+      "col": "EF",
+      "header": "Offer mechanism",
+      "tool_source": "tools/external/rules.py (Offer mechanism)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "Mechanism A"
+    },
+    {
+      "col": "EG",
+      "header": "Applicable IPO rules / transition basis",
+      "tool_source": "tools/external/rules.py (Applicable IPO rules)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A"
+    },
+    {
+      "col": "EI",
+      "header": "Current listing status",
+      "tool_source": "tools/external/aftermarket.py (Current listing status)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "Active"
+    },
+    {
+      "col": "EJ",
+      "header": "1-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month close price)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 35.2
+    },
+    {
+      "col": "EK",
+      "header": "1-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month BHR)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.021474
+    },
+    {
+      "col": "EL",
+      "header": "1-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month total return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.795918
+    },
+    {
+      "col": "EM",
+      "header": "1-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSI return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.061872
+    },
+    {
+      "col": "EN",
+      "header": "1-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSTECH return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.018245
+    },
+    {
+      "col": "EO",
+      "header": "1-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSI)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.962
+    },
+    {
+      "col": "EP",
+      "header": "1-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSTECH)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 1.0032
+    },
+    {
+      "col": "EQ",
+      "header": "1-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month average daily turnover)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 683071810
+    },
+    {
+      "col": "ER",
+      "header": "6-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month close price)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 48.32
+    },
+    {
+      "col": "ES",
+      "header": "6-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month BHR)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.402205
+    },
+    {
+      "col": "ET",
+      "header": "6-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month total return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 1.465306
+    },
+    {
+      "col": "EU",
+      "header": "6-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSI return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": -0.124663
+    },
+    {
+      "col": "EV",
+      "header": "6-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSTECH return)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": -0.223511
+    },
+    {
+      "col": "EW",
+      "header": "6-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSI)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 1.6019
+    },
+    {
+      "col": "EX",
+      "header": "6-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSTECH)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 1.8058
+    },
+    {
+      "col": "EY",
+      "header": "6-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month average daily turnover)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 871107890
+    },
+    {
+      "col": "EZ",
+      "header": "Liquidity decay ratio (6M vs Day-1 turnover)",
+      "tool_source": "tools/external/aftermarket.py (Liquidity decay ratio)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.157773
+    },
+    {
+      "col": "FA",
+      "header": "1-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FB",
+      "header": "1-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FC",
+      "header": "3-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FD",
+      "header": "3-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FE",
+      "header": "18A/18C regulatory milestone status",
+      "tool_source": "tools/external/aftermarket.py (18A/18C regulatory status)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "18C (Specialist Tech)"
+    },
+    {
+      "col": "FF",
+      "header": "Stabilizing manager",
+      "tool_source": "src/write_back_expansion.py (Stabilizing manager)",
+      "filled_count": 19,
+      "total_count": 38,
+      "fill_rate": "50.0%",
+      "sample_value": "China International Capital Corporation Hong Kong Securities Limited"
+    },
+    {
+      "col": "FG",
+      "header": "Stabilization period end date",
+      "tool_source": "src/write_back_expansion.py (Stabilization period end date)",
+      "filled_count": 15,
+      "total_count": 38,
+      "fill_rate": "39.5%",
+      "sample_value": "2026-01-28"
+    },
+    {
+      "col": "FH",
+      "header": "Stabilization purchases occurred",
+      "tool_source": "src/write_back_expansion.py (Stabilization purchases occurred)",
+      "filled_count": 7,
+      "total_count": 38,
+      "fill_rate": "18.4%",
+      "sample_value": 0
+    },
+    {
+      "col": "FI",
+      "header": "Over-allocation shares",
+      "tool_source": "src/write_back_expansion.py (Over-allocation shares)",
+      "filled_count": 15,
+      "total_count": 38,
+      "fill_rate": "39.5%",
+      "sample_value": 42726800
+    },
+    {
+      "col": "FJ",
+      "header": "Over-allocation (% of base offer)",
+      "tool_source": "src/write_back_expansion.py (Over-allocation pct)",
+      "filled_count": 14,
+      "total_count": 38,
+      "fill_rate": "36.8%",
+      "sample_value": 0.15
+    },
+    {
+      "col": "FK",
+      "header": "Over-allotment option exercise date",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise date)",
+      "filled_count": 35,
+      "total_count": 38,
+      "fill_rate": "92.1%",
+      "sample_value": "2026-01-28"
+    },
+    {
+      "col": "FL",
+      "header": "Shares issued under over-allotment option",
+      "tool_source": "src/write_back_expansion.py (Shares issued under option)",
+      "filled_count": 22,
+      "total_count": 38,
+      "fill_rate": "57.9%",
+      "sample_value": 42726800
+    },
+    {
+      "col": "FM",
+      "header": "Over-allotment exercise percentage (%)",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise percentage)",
+      "filled_count": 23,
+      "total_count": 38,
+      "fill_rate": "60.5%",
+      "sample_value": 1
+    },
+    {
+      "col": "FN",
+      "header": "Post-stabilization cliff return [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cliff return m5 p5)",
+      "filled_count": 15,
+      "total_count": 38,
+      "fill_rate": "39.5%",
+      "sample_value": -0.083147
+    },
+    {
+      "col": "FO",
+      "header": "Post-stabilization 20-day return [0, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization return p20)",
+      "filled_count": 15,
+      "total_count": 38,
+      "fill_rate": "39.5%",
+      "sample_value": -0.053846
+    },
+    {
+      "col": "FP",
+      "header": "Post-stabilization volume decay ratio (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization volume decay)",
+      "filled_count": 15,
+      "total_count": 38,
+      "fill_rate": "39.5%",
+      "sample_value": 0.324883
+    },
+    {
+      "col": "FQ",
+      "header": "Day-5 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-5 BHR)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": -0.024376
+    },
+    {
+      "col": "FR",
+      "header": "Day-5 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-5 WR vs HSI)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.9827
+    },
+    {
+      "col": "FS",
+      "header": "Day-20 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-20 BHR)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.021474
+    },
+    {
+      "col": "FT",
+      "header": "Day-20 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-20 WR vs HSI)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.962
+    },
+    {
+      "col": "FU",
+      "header": "3-month BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (3-month BHR)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": -0.143935
+    },
+    {
+      "col": "FV",
+      "header": "3-month wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSI)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 0.8977
+    },
+    {
+      "col": "FW",
+      "header": "3-month wealth relative vs HSTECH",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSTECH)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 1.0495
+    },
+    {
+      "col": "FX",
+      "header": "3-month average daily turnover (HK$)",
+      "tool_source": "src/write_back_expansion.py (3-month avg daily turnover)",
+      "filled_count": 37,
+      "total_count": 38,
+      "fill_rate": "97.4%",
+      "sample_value": 350917085.48
+    },
+    {
+      "col": "FY",
+      "header": "Amihud illiquidity (6M mean)",
+      "tool_source": "src/write_back_expansion.py (Amihud illiquidity 6M mean)",
+      "filled_count": 27,
+      "total_count": 38,
+      "fill_rate": "71.1%",
+      "sample_value": 0.0001452583333333333
+    },
+    {
+      "col": "FZ",
+      "header": "Zero-volume days count (first 6M)",
+      "tool_source": "src/write_back_expansion.py (Zero-volume days count 6M)",
+      "filled_count": 27,
+      "total_count": 38,
+      "fill_rate": "71.1%",
+      "sample_value": 0
+    },
+    {
+      "col": "GA",
+      "header": "Return volatility (first 6M daily std dev, %)",
+      "tool_source": "src/write_back_expansion.py (Return volatility 6M)",
+      "filled_count": 27,
+      "total_count": 38,
+      "fill_rate": "71.1%",
+      "sample_value": 0.09453346541727035
+    },
+    {
+      "col": "GB",
+      "header": "Maximum drawdown (first 6M, %)",
+      "tool_source": "src/write_back_expansion.py (Maximum drawdown 6M)",
+      "filled_count": 27,
+      "total_count": 38,
+      "fill_rate": "71.1%",
+      "sample_value": 0.344683
+    },
+    {
+      "col": "GC",
+      "header": "Controlling shareholder 6-month disposal lockup expiry date",
+      "tool_source": "src/write_back_expansion.py (Controlling shareholder 6M disposal expiry)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2026-07-02"
+    },
+    {
+      "col": "GD",
+      "header": "Controlling shareholder 12-month cessation of control expiry date",
+      "tool_source": "src/write_back_expansion.py (Controlling shareholder 12M control expiry)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "2027-01-02"
+    },
+    {
+      "col": "GE",
+      "header": "Cornerstone unlock CAR [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m5 p5)",
+      "filled_count": 26,
+      "total_count": 38,
+      "fill_rate": "68.4%",
+      "sample_value": -0.207209
+    },
+    {
+      "col": "GF",
+      "header": "Cornerstone unlock CAR [-20, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m20 p20)",
+      "filled_count": 23,
+      "total_count": 38,
+      "fill_rate": "60.5%",
+      "sample_value": -0.6729
+    },
+    {
+      "col": "GG",
+      "header": "Cornerstone unlock volume shock ratio",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock volume shock ratio)",
+      "filled_count": 23,
+      "total_count": 38,
+      "fill_rate": "60.5%",
+      "sample_value": 1.4033
+    },
+    {
+      "col": "GH",
+      "header": "Lead sponsor name",
+      "tool_source": "src/write_back_expansion.py (Lead sponsor name)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "China International Capital Corporation Hong Kong Securities Limited"
+    },
+    {
+      "col": "GI",
+      "header": "Joint sponsor count",
+      "tool_source": "src/write_back_expansion.py (Joint sponsor count)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 3
+    },
+    {
+      "col": "GJ",
+      "header": "Sponsor commercial bank affiliate flag",
+      "tool_source": "src/write_back_expansion.py (Sponsor bank affiliate flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "GK",
+      "header": "Underwriting base commission rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting base commission rate)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 0.015
+    },
+    {
+      "col": "GL",
+      "header": "Underwriting discretionary incentive fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting incentive fee rate)",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GM",
+      "header": "Total underwriting fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Total underwriting fee rate)",
+      "filled_count": 0,
+      "total_count": 38,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GN",
+      "header": "Cornerstone investor count",
+      "tool_source": "src/write_back_expansion.py (Cornerstone investor count)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 25
+    },
+    {
+      "col": "GO",
+      "header": "Cornerstone state-owned presence flag",
+      "tool_source": "src/write_back_expansion.py (Cornerstone state-owned flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "GP",
+      "header": "Crossover fund presence flag",
+      "tool_source": "src/write_back_expansion.py (Crossover fund flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "GQ",
+      "header": "Pre-IPO institutional investor count",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO investor count)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 8
+    },
+    {
+      "col": "GR",
+      "header": "Pre-IPO state-owned backing flag",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO state-owned flag)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "GS",
+      "header": "FINI digital settlement regime",
+      "tool_source": "src/write_back_expansion.py (FINI digital settlement regime)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "POST_FINI"
+    },
+    {
+      "col": "GT",
+      "header": "2025 pricing reform regime",
+      "tool_source": "src/write_back_expansion.py (2025 pricing reform regime)",
+      "filled_count": 38,
+      "total_count": 38,
+      "fill_rate": "100.0%",
+      "sample_value": "POST_2025_REFORM"
+    }
+  ],
+  "company_states": {
+    "0100.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "0470.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "0501.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "0600.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "0664.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "1021.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "1641.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "1768.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "1989.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2513.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2526.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2632.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2649.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2675.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2677.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2692.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2701.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2706.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2714.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2715.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2720.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2726.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2729.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2768.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3200.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3268.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3355.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3625.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3636.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "3986.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6082.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6636.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6809.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6938.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "9611.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "9903.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "9980.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "9981.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    }
+  }
+}

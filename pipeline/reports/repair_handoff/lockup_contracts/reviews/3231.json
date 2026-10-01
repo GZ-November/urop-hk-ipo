@@ -1,0 +1,19 @@
+{
+  "code": "3231.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Cornerstone lock-up is NINE months, correctly captured: clause verbatim on p233 - 'the period of nine months after the Listing Date (the \"Lock-up Period\")'. Duration wording frees up ON the nine-month anniversary (2027-06-09), last restricted 2027-06-08. Holders SensePower Management Limited and CYGG Holding Limited found on cornerstone pages.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified absent for controlling shareholders. Candidate exists=false is correct. There is no Rule 10.07 first-six-month controller clause: the company uses a single combined Chapter 18C undertaking (Rules 18C.13 and 18C.14, pp.286-287) under which the Single Largest Group of Shareholders and key persons are locked up 12 months and the Pathfinder SIIs (Legend Chengye, Rajax, Hainan Yunfeng) only 6 months - the 6-month branch applies to Pathfinder SIIs, not to controlling shareholders, and the combined undertaking itself is recorded in controller_12m. Decisive verbatim text (pp.286-287): 'Pursuant to Rules 18C.13 and 18C.14 of the Listing Rules, each of our Single Largest Group of Shareholders, key persons of the Company and the Pathfinder SIIs (including Legend Chengye, Rajax and Hainan Yunfeng) ... at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date'.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified. Quote verbatim on p286 (continuing to p287: '... ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date'). Inclusive endpoint ON the 12-month anniversary, so first_free_day 2027-09-10 = anniversary + 1, last_restricted_day 2027-09-09. Correctly recorded as a single combined Chapter 18C undertaking replacing the 10.07 6m/12m split.",
+    "corrections": {}
+  }
+}

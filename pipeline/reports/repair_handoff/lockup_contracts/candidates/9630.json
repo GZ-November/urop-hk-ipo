@@ -1,0 +1,37 @@
+{
+  "code": "9630.HK",
+  "listing_date": "2026-06-26",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Entities under the control of Hefei SASAC (Hefei Jianhui); Xinyao Investment; Nexchip Semiconductor HK; JPMAMAPL; Victory Giant HK; CPE Chestnut; Lion Global; CICC FT (in connection with Greenwoods OTC Swaps); HHLR; Huadeng Victorious; Montage HK; Yonglian Investment; Monterey Park; Bosera International; China Universal (HK); Fullgoal HK and Fullgoal Fund; GF Fund; Ocean Fine Industrial; Sungrow Power HK",
+    "quote_page": 229,
+    "full_quote": "Each Cornerstone Investor has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement",
+    "reference_date": "2026-06-26",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; frees up on the six-month anniversary",
+    "computed_first_free_day": "2026-12-26",
+    "computed_last_restricted_day": "2026-12-25",
+    "notes": "Investor names from the cornerstone table on p.218."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07 controlling-shareholder disposal undertaking found. Searched all pages for '10.07' (zero hits), 'Undertakings by our Controlling Shareholders', 'dispose of, or enter into any agreement to dispose' — the 'Undertakings to the Stock Exchange Pursuant to the Listing Rules' section (p.279) contains only the Company's Rule 10.08 undertaking. The Controlling Shareholders Group (Ms. Cheng, Yage Venture Capital, He Photolithography, Na Photolithography) gives no 6-month lock-up undertaking in the prospectus. PRC statutory transfer restrictions (Company Law / Securities Law, pp.441, 456) are discussed but no 10.07(1)(a)-style undertaking is given."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Same reason as controller_6m: searched '10.07', '12 months from the Listing Date', 'Undertakings by our Controlling Shareholders', 'Single Largest' — no 12-month control-maintenance undertaking by the Controlling Shareholders Group exists anywhere in the prospectus text."
+  }
+}

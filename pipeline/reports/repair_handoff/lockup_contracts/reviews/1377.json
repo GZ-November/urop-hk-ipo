@@ -1,0 +1,21 @@
+{
+  "code": "1377.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.262: 'period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”)'. Duration wording frees up ON the anniversary: listing 2026-07-09 -> first_free_day=2027-01-09, last_restricted_day=2027-01-08. Correct. No cornerstone investor carries a longer (12-month) lock-up; the p.205 '12 months' text concerns working capital, not lock-ups.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.272: Rule 10.07 undertaking, paragraph (a) runs 'commencing on the date by reference to which disclosure of its shareholdings ... is made in this prospectus and ending on the date which is 6 months from the Listing Date'. Explicit end date inclusive of the anniversary 2027-01-09 -> last_restricted_day=2027-01-09, first_free_day=2027-01-10. Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p.272: '(b) in the period of a further 6 months commencing on the date on which the period referred to in paragraph (a) above expires ... if ... he will cease to be a controlling shareholder'. Since (a) ends (inclusively) on 2027-01-09, the further 6 months run to the 12-month anniversary 2027-07-09 inclusive -> first_free_day=2027-07-10, last_restricted_day=2027-07-09. Dates correct. Correction: the candidate's basis mislabels the second undertaking on that page as 'Note 3 to Rule 10.07(2)'; the prospectus text actually says 'pursuant to Note (2) to Rule 10.07(2) of the Listing Rules' (the pledge/charge notification undertaking, running 'ending on the date which is 12 months from the Listing Date'). That undertaking is a notification obligation, not a disposal restriction; the 12-month restricted horizon follows from (a)+(b) themselves.",
+    "corrections": {
+      "basis": "Rule 10.07(1)(b): disposal in the further 6 months after the period in (a) expires is prohibited if it would cause loss of controlling-shareholder status; (a) ends on (inclusive of) the 6-month anniversary 2027-01-09, so the further 6 months end on the 12-month anniversary 2027-07-09 (inclusive) -> first_free_day 2027-07-10. The additional undertaking on p.272 cited by the prospectus as 'Note (2) to Rule 10.07(2)' (ending on the date which is 12 months from the Listing Date) is a pledge/charge notification undertaking corroborating the 12-month horizon."
+    }
+  }
+}

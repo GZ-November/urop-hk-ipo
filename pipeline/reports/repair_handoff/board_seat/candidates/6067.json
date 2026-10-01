@@ -1,0 +1,42 @@
+{
+ "code": "6067.HK",
+ "pdf_sha256": "ba041e58ee098abe7e2666b06534c822a2717449b211fabab932bb4eabb57726",
+ "classification": "unresolved",
+ "candidate_value": null,
+ "pre_ipo_investors": [
+  "none disclosed (company is an A-share issuer listed on ChiNext since Dec 2016 and SIX Swiss Exchange since Dec 2023; the term 'Pre-IPO' does not appear anywhere in the prospectus; H-share listing follows the earlier listings)"
+ ],
+ "board_roster_reviewed": "Board = 8: Chen Xiufeng (executive, founder/chairman), Zhang Xiaomin (executive, CTO), Xu Liqiang (executive); Zhu Bide (non-executive since Nov 2021; economist/securities/think-tank career, no investor link stated); INEDs Tang Changjiang, Lin Zhiwei (resigns at Listing), Sun Zhenzhen, Leung Shu Sun Sunny (effective at Listing). No director is described as nominated by or affiliated with any shareholder/investor.",
+ "rights_and_timing": "No pre-IPO investment, special-rights or nomination/observer arrangement at the listed-company level is disclosed. Only board-appointment rights mentioned are at the subsidiary level (Company appoints 3 of 5 directors of Hefei Senior), and a waiver condition that Permitted Existing Shareholders (<5% minority shareholders) have no power to appoint any Directors nor other special rights.",
+ "evidence": [
+  {
+   "pdf_page": 206,
+   "printed_page": "197",
+   "quote": "Our Board consist of the following Directors.",
+   "supports": "Roster table of 8 directors.",
+   "interpretation": "Full roster read."
+  },
+  {
+   "pdf_page": 207,
+   "printed_page": "198",
+   "quote": "Mr. Zhu has been serving as a Director since November 2021. Prior to joining our Group, he taught at Huazhong University of Science and Technology",
+   "supports": "Only non-executive Director's bio; no investor affiliation.",
+   "interpretation": "No link to an investor."
+  },
+  {
+   "pdf_page": 79,
+   "printed_page": "70",
+   "quote": "none of the Permitted Existing Shareholders has the power to appoint any Directors nor have any other special rights in our Company;",
+   "supports": "Waiver condition that existing minority shareholders placed shares have no director-appointment or special rights.",
+   "interpretation": "Supportive of 0 in spirit, but a listing-waiver condition limited to <5% minority shareholders, not a statement about pre-IPO investors."
+  },
+  {
+   "pdf_page": 119,
+   "printed_page": "110",
+   "quote": "In December 2016, our Company was listed on ChiNext of the Shenzhen Stock Exchange under the stock code 300568.",
+   "supports": "Issuer already listed since 2016; H-share listing is a secondary listing.",
+   "interpretation": "'Pre-IPO investor' concept does not map cleanly; no pre-IPO rounds disclosed."
+  }
+ ],
+ "unresolved_reason": "No explicit statement that there were no pre-IPO investors or that investors lack nomination/observer rights; the field concept (Pre-IPO investor) is not addressed because the issuer is already A-share/SIX listed. Bios of all 8 directors show no investor link and the prospectus discloses no shareholder director-nomination arrangements, so 0 is likely by construction, but affirmative evidence required for supports_0 is absent. Searched: 'pre-ipo', 'special rights', 'observer', 'nominate', 'appoint a director', history/capital changes (2019 and 2022 A-share placements to specific entities, GDR offering 2023), substantial shareholders."
+}

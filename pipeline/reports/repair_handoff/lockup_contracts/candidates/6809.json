@@ -1,0 +1,37 @@
+{
+  "code": "6809.HK",
+  "listing_date": "2026-02-09",
+  "cornerstone": {
+    "exists": true,
+    "holders": "J.P. Morgan Investment Management Inc. (JPMIMI); UBS Asset Management (Singapore) Ltd.; Yunfeng Capital entities (New Alternative Limited, New Golden Future Limited); Alisoft China; Aspex; Janchor Fund; abrdn; Barings; Mirae Asset; AGIC Fund; Hel Ved; Taikang Life",
+    "quote_page": 271,
+    "full_quote": "Each Cornerstone Investor has agreed that it will not, whether directly or indirectly, at any time during the period of six months from and including the Listing Date (the “Lock-up Period”), dispose of any of the Offer Shares they have purchased pursuant to the relevant Cornerstone Investment Agreements, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction, as the case maybe.",
+    "reference_date": "2026-02-09",
+    "basis": "six calendar months from and including the Listing Date; restricted period inclusive of Listing Date, exclusive of the six-month anniversary",
+    "computed_first_free_day": "2026-08-09",
+    "computed_last_restricted_day": "2026-08-08",
+    "notes": ""
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07 controlling-shareholder undertaking anywhere in the prospectus. Searched “10.07”, “not dispose”, “Undertakings by the Controlling Shareholders”, “procure that the relevant registered holder” — none. The company (a STAR Market + HK dual listing) discloses NO controlling shareholder: WLT Partners and Zhuhai Rongying (concert parties, 7.23%) constitute the “single largest group of shareholders” (page 28). The Underwriting undertakings section (pages 334-335) contains only the Company's Rule 10.08 undertaking and Company-only HK Underwriting Agreement undertakings."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Same as controller_6m: no controlling shareholder and no 10.07(1)(b) control undertaking found (searched “10.07”, “12 months from the Listing Date”, “Single Largest … undertak”, “voluntary lock”)."
+  }
+}

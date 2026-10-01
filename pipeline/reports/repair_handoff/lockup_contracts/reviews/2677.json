@@ -1,0 +1,22 @@
+{
+  "code": "2677.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p438. 'six months from and including the Listing Date' -> frees ON the anniversary: 2026-02-06 + 6m = 2026-08-06 first free, last restricted 2026-08-05. Matches candidate. Holders (Health Vision, Kingmed Diagnostics, Mininglamp Technology, Galaxy Dynasty) consistent with cornerstone section.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p472. 'ending on the date which is six months from the Listing Date' - explicit inclusive end -> first free 2026-08-07, last restricted 2026-08-06. Matches candidate.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p472; the Rule 10.07(1)(b) control-preserving second-six-month clause and its dates (first free 2027-02-07, last restricted 2027-02-06) are correct and unchanged. However the candidate MISSED a longer lock-up by a Controlling Shareholder: the Lock-Up Undertakings section (p477) states verbatim: 'In addition, the 11,283,000 Shares held by Cheuk Sing Ho are subject to a lock-up arrangement for the period of 30 months commencing from the Listing Date'. Cheuk Sing Ho is named a Controlling Shareholder ('our Controlling Shareholders, namely, Mr. Wang, Cheuk Sing Ho, the Concert Parties and Distinct Partners I Limited', p477); its shares therefore stay restricted until the 30-month anniversary 2028-08-06, beyond the slot's 2027-02-07 first free day. (Separately, 12-month lock-ups on Mr. CAO Shaoshan/Nineteen Seventy-Seven and Proxy Shares and an 18-month ESOP lock-up on Distinct Partners I/II shares (p477) are non-controller or out-of-scope arrangements.) Correction enriches basis/holders; slot dates for the Rule 10.07 element unchanged.",
+    "corrections": {
+      "holders": "Controlling Shareholders (Mr. Wang, Cheuk Sing Ho, the Concert Parties, Distinct Partners I Limited) under Rule 10.07; in addition Cheuk Sing Ho voluntarily locked up 11,283,000 Shares for 30 months from the Listing Date (to 2028-08-06)",
+      "basis": "control-preserving no-disposal undertaking covering the second six months, ending 12 months from the Listing Date (inclusive end); second period commences on expiry of the first six-month period (H-share combined Rule 10.07(1) rendering). ADDITIONAL longer lock-up found: Cheuk Sing Ho (a Controlling Shareholder) locked 11,283,000 Shares for 30 months commencing from the Listing Date (p477), freeing on 2028-08-06"
+    }
+  }
+}

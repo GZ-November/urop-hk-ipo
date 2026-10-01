@@ -1,0 +1,37 @@
+{
+  "code": "3268.HK",
+  "listing_date": "2026-03-10",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Baoyue Lake Shenzhen Industrial Investment Win-Win Enterprise (Limited Partnership); Meiko Elec. Hong Kong Co., Limited; Harvest International Premium Value; Jinyi Capital Multi-Strategy Fund SPC Ltd.; China Winning Limited",
+    "quote_page": 389,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-03-10",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; restricted period inclusive of Listing Date, exclusive of the six-month anniversary",
+    "computed_first_free_day": "2026-09-10",
+    "computed_last_restricted_day": "2026-09-09",
+    "notes": ""
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 404,
+    "full_quote": "in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), dispose of, or enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which he/it is shown by this prospectus to be the beneficial owner (as defined in the Listing Rules (the “Relevant Securities”)); and",
+    "reference_date": "2026-03-10",
+    "basis": "six calendar months from the Listing Date; restricted period ends on the date which is six months from the Listing Date (inclusive end per document wording: “ending on the date which is six months from the Listing Date”); period commences on the prospectus disclosure date (H-share Rule 10.07(1)(a) form)",
+    "computed_first_free_day": "2026-09-11",
+    "computed_last_restricted_day": "2026-09-10",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 404,
+    "full_quote": "in the period of six months commencing on the date on which the First Six-month Period expires (the “Second Six-month Period”), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of the Relevant Securities if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, that, he/it would cease to be our controlling shareholder.",
+    "reference_date": "2026-03-10",
+    "basis": "control-preserving no-disposal undertaking covering the second six months, ending 12 months from the Listing Date (inclusive end); second period commences on expiry of the first six-month period (H-share combined Rule 10.07(1) rendering)",
+    "computed_first_free_day": "2027-03-11",
+    "computed_last_restricted_day": "2027-03-10",
+    "notes": "Combined H-share rendering: control-preserving restriction expressed as the second six-month period clause (months 6-12)."
+  }
+}

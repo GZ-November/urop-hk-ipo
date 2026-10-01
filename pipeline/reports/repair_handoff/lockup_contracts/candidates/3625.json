@@ -1,0 +1,37 @@
+{
+  "code": "3625.HK",
+  "listing_date": "2026-03-31",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No cornerstone investors. Searched all pages for 'Cornerstone' (case-insensitive): the only match is metaphorical use ('a cornerstone of our sustainable growth', p.144). No cornerstone section, agreements or restrictions exist."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C specialist technology company. No separate six-month controlling-shareholder undertaking exists; a single combined Rule 10.07/18C.13 undertaking (12 months from the Listing Date) is recorded in the controller_12m slot and covers the first six months as well."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 282,
+    "full_quote": "Pursuant to Rules 10.07 and 18C.13 of the Listing Rules, each of our Controlling Shareholders has irrevocably and unconditionally undertaken to us and to the Stock Exchange that except pursuant to the Global Offering, or the Over-allotment Option, it/he shall not and shall procure that the relevant registered Shareholder(s) controlled by it/him shall not, in the period commencing on the date by reference to which disclosure of its/his shareholdings in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong) for a bona fide commercial loan) in respect of, any of our securities that it/he is shown to beneficially own in this prospectus.",
+    "reference_date": "2026-03-31",
+    "basis": "Single combined Rule 10.07/18C.13 undertaking replacing the 6m/12m split: no disposal in the period ending ON the date which is 12 months from the Listing Date; inclusive endpoint, first free day is the day after the 12-month anniversary",
+    "computed_first_free_day": "2027-04-01",
+    "computed_last_restricted_day": "2027-03-31",
+    "notes": "Holders: the Controlling Shareholders (Mr. Xu Xiaolin, Mr. Liu Baoliang and related vehicles per 'OUR CONTROLLING SHAREHOLDERS', p.24). A separate Rule 18C.14 Key Persons undertaking (Mr. Xu, Mr. Liu, Shanghai FourSemi Management, Xiamen FourSemi Management, Xiamen FourSemi Chuangke) also runs 12 months from the Listing Date (p.282)."
+  }
+}

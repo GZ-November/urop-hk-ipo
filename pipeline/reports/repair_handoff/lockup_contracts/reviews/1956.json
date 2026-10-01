@@ -1,0 +1,23 @@
+{
+  "code": "1956.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p265 ('period of six months from and including the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-12-26, last_restricted_day 2026-12-25 as recorded. All 6 named holders verified in the cornerstone section (pp.260-266).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. '10.07' returns zero hits across all 502 pages; 'Controlling Shareholder' occurrences are unrelated (regulatory text p94, history p127, non-controlling shareholders pp.254/318, share-scheme text p373, CSRC appendix p413). This is a Chapter 18C issuer whose lock-ups are given by key persons (12 months) and Pathfinder SIIs (6 months) under Rules 18C.13/18C.14 (p278); there is no controller-group disposal undertaking for the six-month slot.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p278 (key persons + Pathfinder SIIs undertaking under Rules 18C.13/18C.14). DATE CORRECTION: the clause ends 'on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date' - explicit inclusive end ON the anniversary (2027-06-26), so first free = 2027-06-27. Candidate's 2027-06-26 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2027-06-27",
+      "last_restricted_day": "2027-06-26",
+      "basis": "Chapter 18C: no Rule 10.07 controlling shareholder undertaking; the controller-equivalent lock-up is the key persons' undertaking under Rules 18C.13/18C.14 commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending 'on the date which is 12 months from the Listing Date' (inclusive end ON the anniversary); first free day = anniversary + 1 = 2027-06-27."
+    }
+  }
+}

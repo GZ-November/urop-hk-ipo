@@ -1,0 +1,19 @@
+{
+  "code": "0664.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim (whitespace-normalized) on p.206: 'period of six months from and including the Listing Date (the “Lock-up Period”)'. Duration wording measured inclusive of the Listing Date frees up ON the six-month calendar anniversary: listing 2026-03-31 -> anniversary 2026-09-30, first_free_day=2026-09-30, last_restricted_day=2026-09-29. Single cornerstone investor Jiantou International (Hong Kong) Co., Limited confirmed in the Cornerstone Investor section pp.203-206.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.256 ('(B) Undertakings by our Single Largest Shareholder' ... 'at any time during the First Six Month Period'). First Six-Month Period is defined on p.255 in the Company undertaking as 'up to and including the date falling the date which is six months from the Listing Date' — an inclusive endpoint, so the last restricted day is the anniversary 2026-09-30 and first_free_day=2026-10-01. Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. No Rule 10.07 reference anywhere in the 441-page text (0 hits for '10.07'); the prospectus body consistently uses 'Single Largest Shareholder' (Mr. Yu, ~23.24%) and never designates a Listing-Rules Controlling Shareholder. The Single Largest Shareholder's paragraph (b) undertaking (p.257) only obliges 'reasonable steps' to avoid a disorderly market during the Second Six Month Period — it is not a no-disposal undertaking. The only 12-month restriction is the PRC-law prohibition on ALL existing Shareholders (p.52, p.109), which is not a control undertaking; the p.392 PRC-law summary reference to 'undertakings given by the Company and our controlling shareholder' is generic boilerplate.",
+    "corrections": {}
+  }
+}

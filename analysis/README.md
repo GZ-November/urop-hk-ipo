@@ -20,6 +20,7 @@ The input is `pipeline/exports/HKIPO-MB-MASTER_clean.csv`; the CLI merges existi
 | `ir_decomposition_2026.py` | `out/ir_decomposition/`: descriptive route/quarter/backing decomposition |
 | `q2_breakdown_2026.py` | `out/q2_breakdown/`: sector mix and return concentration |
 | `monthly_breakdown_2026.py` | `out/monthly_breakdown/`: monthly cycle and exploratory time-structure comparisons |
+| `research_frontier_2026.py` | `out/research_frontier/`: allocation/application returns, cost scenarios, cornerstone OVB sensitivity, common-sample inference and explicit as-of event coverage; uses versioned helpers from the installed 2026-09-30 skill |
 | `testability_screen_2026.py` | Console: variable coverage and variation |
 | `aftermarket_event_time_2026.py` | `out/event_time/`: BHAR paths and horizons from cached daily bars, wild-cluster inference, calendar-time portfolio alphas (Newey-West) |
 | `academic_extensions_2026.py` | `out/academic/`: who captures money left on the table and retail application returns, underwriting-fee determinants, lockup-expiry and stabilization-end event studies with placebo calibration, partial adjustment in the filing range, sponsor effects |
@@ -36,3 +37,5 @@ Unknown classification flags remain missing; invalid log inputs are excluded. Mo
 [Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Current source review](../docs/AGY_INTEGRATION_2026-09-30.md) · [Historical write-ups](../docs/archive/README.md)
 
 A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/AGY_INTEGRATION_2026-09-30.md).
+
+Current research design and brainstorm: [RESEARCH_DESIGN_2026.md](../docs/RESEARCH_DESIGN_2026.md). Evidence-gap disposition: [readiness review](../pipeline/reports/research_readiness/README.md).

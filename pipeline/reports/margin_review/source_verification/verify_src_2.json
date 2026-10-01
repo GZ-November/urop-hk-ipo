@@ -1,0 +1,69 @@
+{
+ "index": 2,
+ "ledger_url": "https://www.hstong.com/news/hk/detail/26042019160019985",
+ "url_used": "https://www.hstong.com/news/hk/detail/26042019160019985",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 4月20日",
+ "published_at_hkt": "2026-04-20T18:54+08:00",
+ "publisher_chain": "智通財經APP (Zhitong Finance App) relayed by 華盛通 (HSTong, hstong.com)",
+ "survey_scope_wording": "富途證券、輝立證券等券商",
+ "measurement_time_wording": "截至4月20日",
+ "rows_on_page": [
+  {
+   "stock": "03296",
+   "name": "華勤技術",
+   "amount_verbatim": "1917.21億港元",
+   "multiple_verbatim": "超購逾421.43倍"
+  },
+  {
+   "stock": "01879",
+   "name": "曦智科技",
+   "amount_verbatim": "458.8億港元",
+   "multiple_verbatim": "超購逾363.07倍"
+  },
+  {
+   "stock": "02493",
+   "name": "邁威生物",
+   "amount_verbatim": "26.23億港元",
+   "multiple_verbatim": "超購逾18.11倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "3296.HK",
+   "ledger_amount_100m_hkd": 1917.21,
+   "result": "match",
+   "detail": "page: 1917.21億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "1879.HK",
+   "ledger_amount_100m_hkd": 458.8,
+   "result": "match",
+   "detail": "page: 458.8億港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "2493.HK",
+   "ledger_amount_100m_hkd": 26.23,
+   "result": "match",
+   "detail": "page: 26.23億港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "3296.HK",
+   "subscription_close": "2026-04-20",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "1879.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "2493.HK",
+   "subscription_close": "2026-04-23",
+   "article_date_is_close_day": false
+  }
+ ],
+ "notes": "Body text quoted verbatim: '智通財經APP獲悉，華勤技術(03296)、曦智科技(01879)、邁威生物(02493)正在招股中。截至4月20日，富途證券、輝立證券等券商為華勤技術借出1917.21億港元，超購逾421.43倍；為曦智科技借出458.8億港元，超購逾363.07倍；為邁威生物借出26.23億港元，超購逾18.11倍。' Numbers are text; page also has 3 image placeholders (blank GIFs), not needed. Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-04-20/2026-04-20 consistent with page date."
+}

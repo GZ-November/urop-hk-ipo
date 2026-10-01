@@ -1,0 +1,92 @@
+{
+ "stock": "7656.HK 瑞為技術 (Reconova)",
+ "subscription": "2026-06-29 to 2026-07-03 (issuer_timeline.csv close 2026-07-03); offer price 21.66; public offer tranche 3042萬元 (per tastymoney/infocast wording); listing 2026-07-08",
+ "instruction": "Values below conflict; none is chosen. 'verified_by' states how each was confirmed.",
+ "reports": [
+  {
+   "id": "A",
+   "url": "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-07-02/doc-inifmmmw4129446.shtml",
+   "publisher": "智通财经网 (on Sina Finance)",
+   "published": "2026-07-02 19:20 (HKT assumed)",
+   "verbatim": "截至7月2日，富途证券、辉立证券等券商...为瑞为技术借出226.32亿港元，超购逾743倍",
+   "amount": "226.32亿港元", "multiple": "超购逾743倍",
+   "survey_scope": "富途证券、辉立证券等券商",
+   "type": "margin financing (孖展) as of 7月2日",
+   "verified_by": "WebFetch twice + local cached copy raw/sina_0702.html"
+  },
+  {
+   "id": "A2",
+   "url": "https://finance.ifeng.com/c/8uRahF74RoK",
+   "publisher": "凤凰网 / 港股IPO观察 (copy of 智通财经 article)",
+   "published": "2026-07-02 19:54:08",
+   "verbatim": "为瑞为技术借出226.32亿港元，超购逾743倍 (survey: 截至7月2日; 富途/辉立 type brokers per page)",
+   "amount": "226.32亿港元", "multiple": "超购逾743倍",
+   "survey_scope": "富途证券、辉立证券等券商 (summarizer paraphrase; scope sentence same as A)",
+   "type": "margin financing as of 7月2日",
+   "verified_by": "WebFetch (summarised, quote preserved)"
+  },
+  {
+   "id": "B",
+   "url": "http://iportal.infocastfn.com/hingwai_portal/News/ViewInfocastNews.asp?LangId=2&LNwsId=4938367",
+   "publisher": "Infocast 《新股情報》",
+   "published": "not retrieved (page not fetchable: certificate host mismatch for infocastfn.com; infocast.hk alternate returned an unrelated article)",
+   "verbatim": "Title only, as returned in WebSearch result titles: 《新股情報》瑞為技術(07656)孖展增至221億元超購逾735倍. WebSearch snippets (not page fetch) say: 截至7月2日，券商累計為瑞為技術借出220.8664億港元孖展額，相當於公開發售集資3042萬港元計，超額認購逾735倍 (one snippet garbled this as 22.0864億)",
+   "amount": "221億元 (title) / 220.8664億港元 (snippet)", "multiple": "超購逾735倍 / 超額認購逾735倍",
+   "survey_scope": "券商累計 (broker aggregate; platform list not stated in snippet)",
+   "type": "margin financing as of 7月2日",
+   "verified_by": "WebSearch result title + snippets only; NOT confirmed by page fetch"
+  },
+  {
+   "id": "C",
+   "url": "https://www.tkww.hk/epaper/view/newsDetail/2073119266982465536.html",
+   "publisher": "大公報 (A14：經濟, print date 2026-07-04, 大公報訊)",
+   "published": "2026-07-04 (print edition; online time not shown)",
+   "title": "六新股截飛 基本半導體超購3348倍稱冠",
+   "verbatim": "視覺智能AI公司瑞為技術同樣大受歡迎，公開發售集資額3042萬元，券商借出孖展771.7億元，超購2535.8倍。",
+   "amount": "771.7億元", "multiple": "超購2535.8倍",
+   "survey_scope": "綜合券商數據 (aggregate broker data per page); no named platforms",
+   "type": "margin financing (券商借出孖展), measured at/after close of subscription 7月3日 (article says previous day's closing, i.e. 昨日)",
+   "verified_by": "WebFetch (one pass); same article lists 基本半導體 孖展1450億元 超購3347.8倍, 易控智駕 231.8億元 約99.9倍, MOMENTA 1655億元 279.8倍, 寶蓋新材 196億元 1591倍"
+  },
+  {
+   "id": "D",
+   "url": "https://hk.investing.com/news/stock-market-news/article-1538060",
+   "publisher": "智通財經 via Investing.com HK (新股孖展統計 | 7月3日)",
+   "published": "2026-07-03 19:37 (updated 19:45), HKT assumed",
+   "verbatim": "Page lists 9 stocks (普源精電, 鼎泰高科, 立訊精密, 齊雲山食品, 珞石機器人, 三環集團, 晶合集成, 濱化股份, 永康控股); 瑞為技術/07656 does not appear",
+   "amount": "n/a", "multiple": "n/a",
+   "survey_scope": "富途證券、輝立證券等券商 (截至7月3日)",
+   "type": "margin financing roundup that omits 7656 (subscription closed 7月3日, so no longer 正在招股中)",
+   "verified_by": "WebFetch twice (full list and explicit absence check)"
+  },
+  {
+   "id": "E",
+   "url": "https://www.tastymoney.hk/ipo/%E6%96%B0%E8%82%A1%E4%B8%8A%E5%B8%82%E8%B3%87%E8%A8%8A/104516",
+   "publisher": "TastyMoney",
+   "published": "02/07/2026 上午02:41 (HKT) as shown",
+   "title": "【新股IPO】【認購情況】【不斷更新】視覺智能技術和產品的AI公司瑞為技術(7656)獲借孖展3042萬，超購168.4倍",
+   "verbatim": "孖展51.5億元，以公開發售部分集資額3042萬元計，超額認購168.4倍 (record dated 2026年6月30日)",
+   "amount": "51.5億元", "multiple": "超額認購168.4倍",
+   "survey_scope": "not stated (only a single time point, 6月30日, on page)",
+   "type": "margin financing, as of 6月30日 (page not updated for 7月2/3 despite 不斷更新; title also mixes 3042萬 offer size and 168.4倍)",
+   "verified_by": "WebFetch"
+  },
+  {
+   "id": "F",
+   "url": "https://www.finet.hk/newscenter/news_content/6a4dc0d7230829d8272381ce",
+   "publisher": "財華智庫網 (Finet)",
+   "published": "2026-07-08 上午11:15",
+   "verbatim": "公開發售部分錄得約16.96萬份有效申請、約2.34萬份成功申請，認購倍數高達3646.06倍，並觸發回撥機製，香港公開發售股份由初始的140.44萬股升至561.74萬股，占全球發售比例增至20%。國際發售則錄得3.08倍認購",
+   "amount": "n/a", "multiple": "3646.06倍 (public offer)",
+   "survey_scope": "official allotment announcement results",
+   "type": "OFFICIAL subscription result (not margin financing), published 2026-07-08 (after the window)",
+   "verified_by": "WebFetch; corroborated by Eastmoney caifuhao 2026-07-09 07:59 (公配 3646.06 倍, 國配 3.08倍) and 21jingji/ZAKER 2026-07-10 15:09 (超购 3646 倍)"
+  }
+ ],
+ "also_mentioned_wording_on_other_dates_for_context": [
+  "Investing/智通 2026-06-30: 49.28億港元, 超購逾160.98倍 (截至6月30日)",
+  "Investing/智通 2026-07-01 (and Sohu copy): 84.77億港元, 超購逾277.66倍 (截至7月1日)",
+  "Search snippet attributed to a Jun-30 report: 孖展26.7億元 超額認購86.9倍 (截至6月30日; source not fetched)"
+ ],
+ "summary_of_conflict": "Margin financing totals for the same stock, all reported as measured on 2026-07-02 or 2026-07-03: 226.32億港元 (智通 broker survey, 7/2 19:20, 超購逾743倍); 221億/220.8664億港元 (Infocast, 7/2, 超購逾735倍, title/snippet only); 771.7億元 (大公報 print 7/4, 綜合券商數據, 超購2535.8倍, referring to the 7/3 close). No 智通 roundup on 7月3日 includes 7656 (article-1538060 omits it). Official public-offer result is 3646.06倍 (published after 7/3). No choice made between these. Not found: any online 7月3日 article listing 7656 margin with a platform-specific scope; WebSearch also surfaced no further July 2/3 reports besides those above."
+}

@@ -1,0 +1,19 @@
+{
+  "code": "6809.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p271. 'six months from and including the Listing Date' -> frees ON the anniversary: 2026-02-09 + 6m = 2026-08-09 first free, last restricted 2026-08-08. Matches candidate. Holder list consistent with cornerstone section (JPMIMI, UBS AM Singapore, Yunfeng entities, Alisoft, Aspex, Janchor, abrdn, Barings, Mirae, AGIC, Hel Ved, Taikang).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed: zero hits for '10.07' and 'not dispose' in the whole prospectus; undertakings section (p334) contains only the Company's Rule 10.08 undertaking and Company-only HK Underwriting Agreement undertakings; 'procure that the relevant registered holder' has no hits. p385: 'In the opinion of the directors, the Company has no controlling shareholder.' WLT Partners/Zhuhai Rongying are only the 'single largest group of shareholders' (p28) with no disposal undertaking.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed on the same basis: no controlling shareholder and no 12-month control undertaking anywhere (only the Company's First/Second Six Month Period undertakings at p334-335, which bind the Company, not shareholders).",
+    "corrections": {}
+  }
+}

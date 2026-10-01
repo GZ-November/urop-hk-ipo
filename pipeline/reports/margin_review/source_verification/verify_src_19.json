@@ -1,0 +1,54 @@
+{
+ "index": 19,
+ "ledger_url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-09-03/doc-iniqpzps1076051.shtml",
+ "url_used": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-09-03/doc-iniqpzps1076051.shtml",
+ "fetched_ok": true,
+ "title": "新股孖展统计 | 9月3日",
+ "published_at_hkt": "2026-09-03T18:37+08:00",
+ "publisher_chain": "智通财经网 (来源 line on Sina Finance page); page time 2026年09月03日 18:37",
+ "survey_scope_wording": "截至9月3日，富途证券、辉立证券等券商为为江波龙借出170.47亿港元，超购逾26.17倍；为优地机器人借出28.85亿港元，超购逾64.59倍。 (note the doubled 为为 typo is in the page)",
+ "measurement_time_wording": "截至9月3日",
+ "rows_on_page": [
+  {
+   "stock": "09976",
+   "name": "江波龍",
+   "amount_verbatim": "170.47亿港元",
+   "multiple_verbatim": "超购逾26.17倍"
+  },
+  {
+   "stock": "03231",
+   "name": "優地機器人",
+   "amount_verbatim": "28.85亿港元",
+   "multiple_verbatim": "超购逾64.59倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "9976.HK",
+   "ledger_amount_100m_hkd": 170.47,
+   "result": "match",
+   "detail": "page: 170.47亿港元 (unit 亿, no unit error)"
+  },
+  {
+   "stock_code": "3231.HK",
+   "ledger_amount_100m_hkd": 28.85,
+   "result": "match",
+   "detail": "page: 28.85亿港元 (unit 亿, no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "9976.HK",
+   "subscription_close": "2026-09-03",
+   "article_date_is_close_day": true
+  },
+  {
+   "stock_code": "3231.HK",
+   "subscription_close": "2026-09-04",
+   "article_date_is_close_day": false
+  }
+ ],
+ "ledger_published_at_hkt": "2026-09-03T18:37:00+08:00",
+ "ledger_published_at_check": "match",
+ "notes": "Intro: 江波龙(09976)招股结束，优地机器人(03231)正在招股中. Ledger published_at_hkt 2026-09-03T18:37:00+08:00 matches page. Simplified-character page; units 亿港元."
+}

@@ -1,0 +1,31 @@
+{
+ "code": "0901.HK",
+ "reviewer": "independent reviewer subagent R1",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_0",
+ "candidate_classification": "supports_0",
+ "verdict": "approve_candidate",
+ "approved_value": 0,
+ "approved_evidence": [
+  {
+   "pdf_page": 130,
+   "printed_page": "121",
+   "quote": "Special rights Not applicable. Lock up One year from the Listing Date pursuant to requirements under the PRC laws.",
+   "interpretation": "Pre-IPO Investments (April 2025 share transfers to Panorama Capital Green Technology, Qihang No.1/No.2 and three individuals) carried no special rights, i.e. no board nomination/observer right."
+  },
+  {
+   "pdf_page": 131,
+   "printed_page": "122",
+   "quote": "the Pre-IPO Investors shall have the same rights as the other public Shareholders after the Listing",
+   "interpretation": "Sponsor confirms pre-IPO investors have only ordinary shareholder rights at listing."
+  },
+  {
+   "pdf_page": 225,
+   "printed_page": "216",
+   "quote": "the Board consists of seven Directors, comprising four executive Directors and three independent non-executive Directors.",
+   "interpretation": "Seven-person board at LPD: no non-executive (non-independent) seat and no observer; all seven show 'None' relationship and no biography links to Panorama or any other pre-IPO investor. Qihang No.1/2 are controlled by executive Director Mr. Li Bo (insider vehicles)."
+  }
+ ],
+ "findings": "Read history and Directors chapters independently first. Pre-IPO investments were secondary share transfers in April 2025; special rights row is 'Not applicable' and the sponsor states investors have same rights as public shareholders after listing. All seven directors' bios (pp225-228) contain no employment/partner/representative link to Panorama Capital Green Technology, its GP or any other pre-IPO investor; INED Luk Pui Yin Grace's past PE-related finance roles (Kleinwort Benson, Dresdner Kleinwort Capital, Ajia Partners) are historic and unrelated. Candidate quotes all verified verbatim on cited pdf pages with correct printed-page mapping. Candidate's reading follows the schema rule: affirmative evidence (pre-IPO investors exist + explicit no special rights + roster shows no link), not mere silence. Qihang vehicles are controlled by executive Director Li Bo and are not an external investor seat.",
+ "residual_uncertainty": "Low. Prospectus does not literally say 'no director was nominated by a pre-IPO investor'; conclusion combines 'special rights: not applicable' with the roster review. Qihang No.1/2 being labelled Pre-IPO Investors is a controlling-shareholder vehicle issue, not a board seat."
+}

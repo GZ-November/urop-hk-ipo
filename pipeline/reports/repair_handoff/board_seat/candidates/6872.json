@@ -1,0 +1,81 @@
+{
+ "code": "6872.HK",
+ "pdf_sha256": "2c2c33627c1b2ccc310ff8051ac825520ab84eeb230f4c143afd8f45fb56e81b",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Cumbre Entities (Cumbre, Big Bend 77/72; Series A Jun 2013 onward; 18.82% pre-offering)",
+  "Northern Light Venture (Series C, Sep 2016)",
+  "China Life Sciences Access Fund, WuXi Fund (WuXi AppTec), Relativity Healthcare (Series C)",
+  "Frontline Bioventures entities, Suzhou Origin, Suzhou Oriza (Series C, Sep 2016)",
+  "other Series D/E investors incl. Qianrong Yingrun, Mr. William J. Rieflin (former Cumbre Inc. director)"
+ ],
+ "board_roster_reviewed": "Board at listing (6): Dr. Ma Zhenkun (executive, founder/chair) - no investor link; Dr. Song Gaoguang (NED since Jun 2022; partner at Northern Light Venture Capital Consulting (Beijing) - probable but not explicitly stated link to Pre-IPO investor Northern Light Venture; not relied on); Mr. Michael James Bakes (NED since Jul 8, 2025) - explicitly recommended as candidate by Cumbre (Pre-IPO investor) - LINKED; INEDs Lee Wai Kong, Ni Lin (former VC senior partner, no identified investor link), Li Leping (received 200,000 nil-consideration shares in 2013, repurchased 2014; no investor link) - not linked.",
+ "rights_and_timing": "Before Jul 2025 the investors held contractual rights to appoint one Director each (Ma two), under a Voting Arrangement that was terminated after the Jul 11, 2025 shareholders' meeting; other special rights ceased on submission of the Listing application (redemption rights ceased May 22, 2025). At listing, Bakes' seat traces to Cumbre's recommendation (a nomination-type link, though not described as a continuing contractual right). No observer right found (no 'observer' hit in the prospectus).",
+ "evidence": [
+  {
+   "pdf_page": 264,
+   "printed_page": "255",
+   "quote": "Our Board currently consists of six Directors, comprising one executive Director, two non-executive Directors and three independent non-executive Directors.",
+   "supports": "Board at listing: 6 directors (Ma; NEDs Song Gaoguang, Bakes; INEDs Lee, Ni, Li).",
+   "interpretation": "Defines the seated board."
+  },
+  {
+   "pdf_page": 266,
+   "printed_page": "257",
+   "quote": "Upon the recommendation by Cumbre to the Company as a Director candidate, Mr. Bakes was elected and appointed by the general meeting as a Director.",
+   "supports": "Bakes (NED since July 8, 2025) was recommended as director candidate by Cumbre.",
+   "interpretation": "Seat explicitly linked to an identified Pre-IPO investor (Cumbre)."
+  },
+  {
+   "pdf_page": 164,
+   "printed_page": "155",
+   "quote": "Our Pre-IPO Investors include sophisticated investor, namely WuXi AppTec Co., Ltd. (無錫藥明康 德新藥開發股份有限公司)",
+   "supports": "Introduces principal Pre-IPO investors list, first being the Cumbre Entities.",
+   "interpretation": "Context."
+  },
+  {
+   "pdf_page": 164,
+   "printed_page": "155",
+   "quote": "Cumbre is a limited partnership organized and existing under the laws of the State of Texas (United States) and is managed by its general partner, 2M InvestCo LLC.",
+   "supports": "Cumbre is listed among 'principal Pre-IPO Investors' (Cumbre Entities, 18.82% pre-offering).",
+   "interpretation": "Confirms Cumbre is a Pre-IPO investor institution."
+  },
+  {
+   "pdf_page": 146,
+   "printed_page": "137",
+   "quote": "Cumbre, which was wholly owned by Mr. Morton H Meyerson, agreed to purchase and TenNor Cayman agreed to issue 3,925,000 series A preferred shares of TenNor Cayman",
+   "supports": "Cumbre invested in the Series A Financing (June 2013).",
+   "interpretation": "Round/date for Cumbre."
+  },
+  {
+   "pdf_page": 163,
+   "printed_page": "154",
+   "quote": "Dr. Ma shall have the right to appoint two Directors and each of the other seven investors shall have the right to appoint one Director.",
+   "supports": "Pre-listing voting arrangement: each of seven investors had a right to appoint one Director; the Board had up to nine seats.",
+   "interpretation": "Pre-listing appointment rights existed for investors (seats held by investor-appointed directors)."
+  },
+  {
+   "pdf_page": 163,
+   "printed_page": "154",
+   "quote": "The Voting Arrangement has been terminated after the Shareholders’ meeting on July 11, 2025",
+   "supports": "Investor director-appointment arrangement terminated July 2025, before listing.",
+   "interpretation": "Right terminated pre-listing; seat held by Bakes remains at listing via Cumbre recommendation."
+  },
+  {
+   "pdf_page": 266,
+   "printed_page": "257",
+   "quote": "Dr. Song Gaoguang (宋高廣), aged 42, was appointed as a non-executive Director on June 29, 2022, responsible for providing strategic advice to our Group.",
+   "supports": "Song Gaoguang is NED since June 2022.",
+   "interpretation": "Candidate; partner at Northern Light Venture Capital Consulting (Beijing), an affiliate-name of Pre-IPO investor Northern Light Venture, but the prospectus does not explicitly tie them; not relied on."
+  },
+  {
+   "pdf_page": 148,
+   "printed_page": "139",
+   "quote": "Northern Light Venture Capital IV, Ltd. (“Northern Light Venture”), Relativity Healthcare Fund, LLC (“Relativity Healthcare”), China Life and WuXi Fund entered into the series C preferred share purchase agreement",
+   "supports": "Northern Light Venture invested in Series C (Sep 2016).",
+   "interpretation": "Secondary: Song's employer bears the same brand, but no explicit statement."
+  }
+ ],
+ "unresolved_reason": ""
+}

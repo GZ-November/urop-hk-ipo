@@ -29,6 +29,7 @@ from openpyxl.utils import get_column_letter
 ROOT = Path(__file__).resolve().parents[2] if Path(__file__).resolve().parent.name == "external" else Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
+from as_of import resolve_as_of, truncate_bars
 from market_fetcher import get_market_fetcher
 from run import load_cfg
 
@@ -124,6 +125,15 @@ def fetch_bars(
     return fetcher.fetch_bars_resilient(
         symbol, frm, to, n_bars=n, preferred_provider=provider
     )
+
+
+def load_cached_bars(path: Path) -> list[dict]:
+    """Read cached bars with parsed dates, sorted chronologically."""
+    from market_fetcher import parse_bar_date
+    rows = json.loads(path.read_text(encoding="utf-8"))
+    for row in rows:
+        row["date"] = parse_bar_date(row["date"])
+    return sorted(rows, key=lambda row: row["date"])
 
 
 def find_bar_on_or_after(bars: list[dict], target_date: dt.date) -> dict | None:
@@ -224,8 +234,9 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     turnover_list_1m = [b["turnover"] for b in after_bars[:20] if b.get("turnover") is not None] if one_month_matured else []
     avg_turnover_1m = (sum(turnover_list_1m) / len(turnover_list_1m)) if turnover_list_1m else None
 
-    # ==================== 6 个月指标 (基石解禁日或 T+126 交易日) ====================
-    target_6m_date = unlock_date if (unlock_date and unlock_date >= ld) else add_calendar_months(ld, 6)
+    # ==================== 6 个月指标 (日历六个月终点) ====================
+    # Month_6 是上市日 + 6 个日历月的日历口径；合同解禁日是另一个事件，不得决定该终点。
+    target_6m_date = add_calendar_months(ld, 6)
     # 只有样本真实覆盖目标日后的首个交易日，6M 窗口才成熟。
     bar_6m = find_bar_on_or_after(after_bars, target_6m_date)
     six_month_matured = bar_6m is not None
@@ -281,6 +292,7 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
             "one_month_actual_date": d_1m.isoformat() if d_1m else None,
             "one_month_matured": one_month_matured,
             "six_month_target_date": target_6m_date.isoformat(),
+            "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
             "six_month_actual_date": d_6m.isoformat() if d_6m else None,
             "six_month_matured": six_month_matured,
         },
@@ -321,7 +333,12 @@ def main() -> int:
         default="auto",
         help="市场行情数据提供商偏好 (auto=腾讯优先并自动降级至雅虎财经, tencent, yahoo)",
     )
+    ap.add_argument("--as-of", default=None,
+                    help="观察截止日 YYYY-MM-DD（香港日期；默认 PIPELINE_AS_OF 或今日）。此后的行情不得进入快照。")
+    ap.add_argument("--cache-only", action="store_true",
+                    help="不联网：读取 data/market/aftermarket 缓存并按 --as-of 截断（可复现的历史快照）")
     args = ap.parse_args()
+    as_of = resolve_as_of(args.as_of)
 
     book = Path(args.book)
     if not book.exists():
@@ -414,19 +431,29 @@ def main() -> int:
 
     # 1. 抓取指数日 K 线
     min_date = min(c["listing_date"] for c in companies) - dt.timedelta(days=10)
-    max_date = dt.date.today() + dt.timedelta(days=2)
+    max_date = as_of
     frm_str = min_date.strftime("%Y-%m-%d")
     to_str = max_date.strftime("%Y-%m-%d")
 
     print(f"📈 正在拉取宏观基准指数 ({frm_str} ~ {to_str})...")
     index_n = max(350, (max_date - min_date).days + 10)
-    hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=index_n, provider=args.provider)
-    (CACHE / "hsi_bars.json").write_text(json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8")
+    if args.cache_only:
+        hsi_bars = load_cached_bars(CACHE / "hsi_bars.json")
+        prov_hsi, errs_hsi = "cache", []
+    else:
+        hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=index_n, provider=args.provider)
+        (CACHE / "hsi_bars.json").write_text(json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8")
+    hsi_bars = truncate_bars(hsi_bars, as_of)
     print(f"   ✓ 恒生指数 (hkHSI via {prov_hsi}): {len(hsi_bars)} 条 K 线")
 
     try:
-        hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=index_n, provider=args.provider)
-        (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
+        if args.cache_only:
+            hstech_bars = load_cached_bars(CACHE / "hstech_bars.json")
+            prov_hstech, errs_hstech = "cache", []
+        else:
+            hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=index_n, provider=args.provider)
+            (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
+        hstech_bars = truncate_bars(hstech_bars, as_of)
         print(f"   ✓ 恒生科技指数 (hkHSTECH via {prov_hstech}): {len(hstech_bars)} 条 K 线")
     except Exception as exc:
         hstech_bars, prov_hstech, errs_hstech = [], "unavailable", [str(exc)]
@@ -440,8 +467,13 @@ def main() -> int:
         frm_c = c["listing_date"].strftime("%Y-%m-%d")
         try:
             stock_n = max(300, (max_date - c["listing_date"]).days + 10)
-            bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=stock_n, provider=args.provider)
-            (CACHE / f"{sym}.json").write_text(json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8")
+            if args.cache_only:
+                bars = load_cached_bars(CACHE / f"{sym}.json")
+                prov_stock, errs_stock = "cache", []
+            else:
+                bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=stock_n, provider=args.provider)
+                (CACHE / f"{sym}.json").write_text(json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8")
+            bars = truncate_bars(bars, as_of)
             metrics = calculate_metrics(c, bars, hsi_bars, hstech_bars)
             if metrics.get("error"):
                 raise ValueError(metrics["error"])
@@ -450,6 +482,7 @@ def main() -> int:
             
             # 记录数据来源与降级血统 (Observation Provenance)
             obs_meta = metrics.get("observation_meta", {})
+            obs_meta["as_of"] = as_of.isoformat()
             obs_meta["stock_provider"] = prov_stock
             obs_meta["hsi_provider"] = prov_hsi
             obs_meta["hstech_provider"] = prov_hstech

@@ -1,0 +1,71 @@
+{
+ "index": 17,
+ "ledger_url": "https://hk.investing.com/news/stock-market-news/article-1637419",
+ "url_used": "https://hk.investing.com/news/stock-market-news/article-1637419",
+ "fetched_ok": true,
+ "title": "新股孖展統計 | 9月1日",
+ "published_at_hkt": "2026-09-01T19:09+08:00",
+ "publisher_chain": "智通財經 (Zhitong Finance), republished on Investing.com Hong Kong; page shows 2026年09月01日 下午07:09, updated 下午07:15",
+ "survey_scope_wording": "截至9月1日，富途證券、輝立證券等券商爲麥科田借出114.39億港元，超購逾189.65倍；爲江波龍借出75.92億港元，超購逾11.10倍；爲優地機器人借出9.86億港元，超購逾21.42倍。",
+ "measurement_time_wording": "截至9月1日",
+ "rows_on_page": [
+  {
+   "stock": "02041",
+   "name": "麥科田",
+   "amount_verbatim": "114.39億港元",
+   "multiple_verbatim": "超購逾189.65倍"
+  },
+  {
+   "stock": "09976",
+   "name": "江波龍",
+   "amount_verbatim": "75.92億港元",
+   "multiple_verbatim": "超購逾11.10倍"
+  },
+  {
+   "stock": "03231",
+   "name": "優地機器人",
+   "amount_verbatim": "9.86億港元",
+   "multiple_verbatim": "超購逾21.42倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "2041.HK",
+   "ledger_amount_100m_hkd": 114.39,
+   "result": "match",
+   "detail": "page: 114.39億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "9976.HK",
+   "ledger_amount_100m_hkd": 75.92,
+   "result": "match",
+   "detail": "page: 75.92億港元 (unit 億, no unit error)"
+  },
+  {
+   "stock_code": "3231.HK",
+   "ledger_amount_100m_hkd": 9.86,
+   "result": "match",
+   "detail": "page: 9.86億港元 (unit 億, no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "2041.HK",
+   "subscription_close": "2026-09-02",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "9976.HK",
+   "subscription_close": "2026-09-03",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "3231.HK",
+   "subscription_close": "2026-09-04",
+   "article_date_is_close_day": false
+  }
+ ],
+ "ledger_published_at_hkt": null,
+ "ledger_published_at_check": "ledger_has_none",
+ "notes": "Intro: 麥科田(02041)、江波龍(09976)、優地機器人(03231)正在招股中. Times printed without timezone; +08:00 assumed. Ledger has no published_at_hkt."
+}

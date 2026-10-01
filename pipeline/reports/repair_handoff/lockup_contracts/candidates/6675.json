@@ -1,0 +1,37 @@
+{
+  "code": "6675.HK",
+  "listing_date": "2026-06-17",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Sunwoda Treasury (Hong Kong) Limited (Sunwoda HK); Longwei Hong Kong Company Limited (Longwei HK); Oakwise Growth Fund SPC - Greater China Fund SP; Tembusu Limited; Andrew Y Yan; RIME Capital Limited (Sino Opulence Fund); Thalassa Capital Dynamics SPC (Thalassa Horizon SP); Chample International Limited; Libra Stable Value and Fixed Income Segregated Portfolio Company (Libra Fixed Income One SP)",
+    "quote_page": 209,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months starting from and including the Listing Date (the “Lock-up Period”), (a) dispose of, in any way, any of the Offer Shares purchased pursuant to the relevant Cornerstone Investment Agreement (“Relevant Shares”) or any interest in any company or entity holding any of the Relevant Shares, (b) agree or contract to, or publicly announce any intention to enter into a transaction with a third party for disposal of the Relevant Shares, (c) allow itself to undergo a change of control (as defined in the Takeovers Code) at the level of its ultimate beneficial owner,",
+    "reference_date": "2026-06-17",
+    "basis": "six calendar months from the Listing Date; document wording 'six months starting from and including the Listing Date' - restricted period inclusive of Listing Date",
+    "computed_first_free_day": "2026-12-17",
+    "computed_last_restricted_day": "2026-12-16",
+    "notes": "Quote truncated at limb (c); limb (d) continues '...with the same economic effect as any aforesaid transaction'."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 266,
+    "full_quote": "Each member of our Single Largest Group of Shareholders has voluntarily undertaken to us and that except pursuant to the Global Offering (including the Over-allotment Option), he/it will not, and will procure that the relevant registered holder(s) will not, without the prior written consent of the Joint Sponsor-OCs and unless otherwise in compliance with the applicable requirements of the Listing Rules: in the period commencing on the date by reference to which disclosure of its shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date, either directly or indirectly, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of our securities that he/it is shown to beneficially own in this prospectus (the “Relevant Shares”).",
+    "reference_date": "2026-06-17",
+    "basis": "six calendar months from the Listing Date ('ending on the date which is six months from the Listing Date'); restricted period commences on the prospectus shareholding-disclosure date (inclusive of Listing Date)",
+    "computed_first_free_day": "2026-12-17",
+    "computed_last_restricted_day": "2026-12-16",
+    "notes": "DEVIATION in holder identity: the prospectus discloses no 'Controlling Shareholder' (A+H issuer under Rule 19A); the equivalent six-month disposal lock-up is given voluntarily by the 'Single Largest Group of Shareholders'. A parallel undertaking under the Hong Kong Underwriting Agreement (pages 267-268) defines the First Six-Month Period as ending 'on, and including, the last date of the six months after the Listing Date'."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 268,
+    "full_quote": "(b) it/he will not, during the Second Six-Month Period, enter into any of the transactions specified in (a)(i), (a)(ii) or (a)(iii) above or offer to or agree to contract to or publicly announce any intention to effect any such transaction if, immediately following any sale, transfer or disposal or upon the exercise or enforcement of any option, right, interest or Encumbrance pursuant to such transaction, it will cease to be a member of the Single Largest Shareholders or would together with the other member of the Single Largest Shareholders cease to be the Single Largest Group of Shareholders of the Company; and",
+    "reference_date": "2026-06-17",
+    "basis": "Rule 10.07(1)(b)-equivalent second six-month period: 'during the Second Six-Month Period' (the six months commencing when the First Six-Month Period expires), i.e. 12 calendar months from the Listing Date; applies to disposals that would cause the holder to cease to be a member of the Single Largest Shareholders / the group to cease to be the Single Largest Group of Shareholders",
+    "computed_first_free_day": "2027-06-17",
+    "computed_last_restricted_day": "2027-06-16",
+    "notes": "Second Six-Month Period definition appears on page 267 ('during the period of six months commencing on the date on which the First Six-Month Period expires (the “Second Six-Month Period”)')."
+  }
+}

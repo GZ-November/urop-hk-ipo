@@ -1,0 +1,19 @@
+{
+  "code": "0068.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Independently confirmed. CS restrictions section on p229 (Listing Date 2026-04-17 per expected timetable pp.6/293: '9:00 a.m. on Friday, April 17, 2026'). Quote verbatim on p229 (whitespace-normalized). Wording 'at any time during the period of six months after the Listing Date' is duration wording -> frees up ON the six-month anniversary 2026-10-17, last restricted 2026-10-16. Arithmetic checked in python. No other CS term found on pp.223-229.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed: zero hits for '10.07' across all 427 pages; 'Controlling Shareholder' appears only re third parties' controllers (p131 MPC GPGP III, pp.225-227 cornerstone investors' own parents). No Rule 10.07(1)(a) undertaking exists. The all-shareholders lock-up the candidate cites is real (p282: 'during the period commencing on the Listing Date and ending on the date that is six months from the Listing Date'), but it is not a controlling-shareholder undertaking and the slot is correctly absent.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: no Rule 10.07(1)(b) control-maintenance undertaking anywhere; issuer has no Controlling Shareholder. p282 all-shareholders lock-up ends at six months only (verified verbatim).",
+    "corrections": {}
+  }
+}

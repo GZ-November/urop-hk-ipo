@@ -1,0 +1,31 @@
+{
+ "code": "2493.HK",
+ "reviewer": "independent reviewer subagent R5",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_with_changes",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 244,
+   "printed_page": "235",
+   "quote": "Mr. Wu has served as the managing partner of Hainan Shiyu Private Equity Management Co., Ltd.",
+   "interpretation": "Non-executive Director Wu Yufeng (appointed Dec 2024; only NED per pdf p240) is managing partner of Hainan Shiyu Private Equity Management Co., Ltd."
+  },
+  {
+   "pdf_page": 135,
+   "printed_page": "126",
+   "quote": "which is managed by Hainan Shiyu Private Equity Management Co., Ltd. (海南拾玉私募基金管理有限公司) (“Shiyu”) as its fund manager. Suzhou Yongyu is owned by its general partner Xizang Shiyu",
+   "interpretation": "Suzhou Yongyu (5.78% after the Dec 2019/Mar 2020 pre-IPO capital increases, pdf p134) is managed by the identical named entity, Hainan Shiyu, as fund manager."
+  },
+  {
+   "pdf_page": 131,
+   "printed_page": "122",
+   "quote": "We completed pre-IPO financing in the aggregate amount of RMB1,973.742 million in March 2020",
+   "interpretation": "The pre-A-share-IPO financing round(s) (Dec 2019 and Mar 2020, pdf p134) in which the outside financial investors, including Suzhou Yongyu, came in."
+  }
+ ],
+ "findings": "Read independently first. One NED (Wu Yufeng, appointed Dec 2024); the earlier NED Guo Yongqi resigned Dec 2024 (pdf p353 only) and is not on the Listing board. Link: Wu is managing partner of Hainan Shiyu; Shiyu is stated to manage shareholder Suzhou Yongyu (pdf p135 note 1; Yongyu's GP Xizang Shiyu is wholly owned by Shiyu). The two mentions use the identical full company name, so this is an explicit textual link, not a same-name inference. Verified all candidate quotes verbatim and page mapping. Changes: dropped pdf p83 waiver quote (it is a waiver condition on H-share-placee minority shareholders, not evidence about Yongyu or Wu; candidate's use of it is an over-read) and the pdf p138 table-row and p240 composition quotes (redundant; composition fact in interpretation). Candidate's statement that Yongyu is 'absent from LPD-period disclosures' is only true in the sense that the LPD-period substantial-shareholder table (pdf p261) lists just the controlling group; the shareholder tables at pdf p134-139 are as of 2020 and Jan 2022.",
+ "residual_uncertainty": "Prospectus does not say Yongyu/Shiyu nominated Wu Yufeng; does not state whether Suzhou Yongyu still holds shares at the Latest Practicable Date; does not state which of the Dec 2019/Mar 2020 rounds Yongyu joined (both pre-IPO). Value 1 rests on Wu being a principal of the fund manager of an identified pre-IPO investor. Moderate confidence."
+}

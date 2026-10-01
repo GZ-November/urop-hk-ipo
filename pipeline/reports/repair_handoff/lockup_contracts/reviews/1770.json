@@ -1,0 +1,27 @@
+{
+  "code": "1770.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. The only case-insensitive 'cornerstone' hit in the whole prospectus is the figurative phrase 'the cornerstone of our competitiveness' (p138, Business/Strategies). No cornerstone investors, no Cornerstone Investment Agreement and no cornerstone lock-up section exist.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p274 under 'By our Controlling Shareholders' (Rule 10.07). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the first period ON the anniversary 2027-01-09, which is therefore the last restricted day; first free day is 2027-01-10.",
+    "corrections": {
+      "first_free_day": "2027-01-10",
+      "last_restricted_day": "2027-01-09",
+      "basis": "Rule 10.07(1)(a): no disposal in the period ending ON the date which is six months from the Listing Date (2027-01-09, inclusive); first free day 2027-01-10"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p274 (further six months leg). DATE CORRECTION: the further six months commence at expiry of the first period (ends ON 2027-01-09) and run to and including the 12-month anniversary 2027-07-09; first free day is 2027-07-10. No longer (24-month) shareholder lock-up exists in this prospectus (p277 'twelve months' hit is only the Note 3 pledge-notice undertaking).",
+    "corrections": {
+      "first_free_day": "2027-07-10",
+      "last_restricted_day": "2027-07-09",
+      "basis": "Rule 10.07(1)(b): no disposal in the further six months commencing at expiry of the first period, running to and including the 12-month anniversary 2027-07-09, to the extent it would cause cessation of controlling shareholder status; first free day 2027-07-10"
+    }
+  }
+}

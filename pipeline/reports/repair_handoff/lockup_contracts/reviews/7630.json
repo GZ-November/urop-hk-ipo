@@ -1,0 +1,19 @@
+{
+  "code": "7630.HK",
+  "reviewer": "independent verifier V-C",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p290. 'six months from (and inclusive of) the Listing Date' -> frees ON the anniversary: 2026-05-13 + 6m = 2026-11-13 first free, last restricted 2026-11-12. Matches candidate. Holders (BPV/HTCI, Tencent, Huang River, Prosper High, LAV entities, Foresight funds, First Quarter Moon, WWHCP) consistent with cornerstone table on p287ff.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed: '10.07' hits are only a 10.07% table figure (p287) and a public-float reference (p144); no 'procure that the relevant registered holder' anywhere; undertakings section (p299-300) contains only the Company's Rule 10.08 undertaking and Company-only HKUA First/Second Six-Month Period undertakings. Unlike 9637, the Single Largest Group of Shareholders (LAV, p29/p80/p145) gave NO disposal undertaking - verified by reading the underwriting section in full.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false independently confirmed. No 10.07(1)(b) control undertaking exists. PRC Company Law statutory 12-month restriction on pre-Global Offering shares (p137: 'within the 12 months following the Listing Date, Shares issued by the Company prior to the Global Offering ... are restricted from trading'; also p75) is a statutory restriction on all pre-IPO shares, not a controlling-shareholder undertaking - correctly excluded.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "code": "9611.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p388 ('period of six months from (and inclusive of) the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-07-22, last_restricted_day 2026-07-21 as recorded. All 6 named holders located in the cornerstone section (pp.383-389).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p401 (Rule 10.07 undertaking, limb (a)). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2026-07-22), so first free = 2026-07-23. Candidate's 2026-07-22 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2026-07-23",
+      "last_restricted_day": "2026-07-22",
+      "basis": "Rule 10.07(1)(a) disposal undertaking commencing on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p402 (limb (b), second six-month period from the expiry of the period in (a), control-maintenance condition). Duration wording frees up ON the 12-month anniversary: first_free_day 2027-01-22, last_restricted_day 2027-01-21 as recorded. The other '12 months from the Listing Date' hit on p402 is the Note 3 pledge-notification undertaking, consistent with the candidate's note.",
+    "corrections": {}
+  }
+}

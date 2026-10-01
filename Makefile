@@ -94,7 +94,7 @@ margin-reference:
 	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/margin_reference.py
 
 analysis:
-	@for script in module_a_stylized_facts module_b_underpricing_regression ir_decomposition_2026 q2_breakdown_2026 monthly_breakdown_2026 testability_screen_2026 extended_analysis_2026 aftermarket_event_time_2026 academic_extensions_2026 ah_anchor_2026 margin_financing_2026; do \
+	@for script in module_a_stylized_facts module_b_underpricing_regression ir_decomposition_2026 q2_breakdown_2026 monthly_breakdown_2026 testability_screen_2026 extended_analysis_2026 aftermarket_event_time_2026 academic_extensions_2026 ah_anchor_2026 margin_financing_2026 research_frontier_2026; do \
 		"$(PYTHON)" analysis/$$script.py || exit 1; done
 
 lint:

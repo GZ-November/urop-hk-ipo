@@ -9,11 +9,13 @@
     "one_month_actual_date": "2026-07-29",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-02",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2667.HK": {
     "data_as_of": "2026-09-30",
@@ -25,11 +27,13 @@
     "one_month_actual_date": "2026-08-03",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-07",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "6880.HK": {
     "data_as_of": "2026-09-30",
@@ -41,11 +45,13 @@
     "one_month_actual_date": "2026-08-04",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-08",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "7656.HK": {
     "data_as_of": "2026-09-30",
@@ -57,11 +63,13 @@
     "one_month_actual_date": "2026-08-04",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-08",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "7687.HK": {
     "data_as_of": "2026-09-30",
@@ -73,11 +81,13 @@
     "one_month_actual_date": "2026-08-04",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-08",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "9971.HK": {
     "data_as_of": "2026-09-30",
@@ -89,11 +99,13 @@
     "one_month_actual_date": "2026-08-04",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-08",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "0537.HK": {
     "data_as_of": "2026-09-30",
@@ -105,11 +117,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "1377.HK": {
     "data_as_of": "2026-09-30",
@@ -121,11 +135,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "1770.HK": {
     "data_as_of": "2026-09-30",
@@ -137,11 +153,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2475.HK": {
     "data_as_of": "2026-09-30",
@@ -153,11 +171,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2797.HK": {
     "data_as_of": "2026-09-30",
@@ -169,11 +189,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "3752.HK": {
     "data_as_of": "2026-09-30",
@@ -185,11 +207,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "6951.HK": {
     "data_as_of": "2026-09-30",
@@ -201,11 +225,13 @@
     "one_month_actual_date": "2026-08-05",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2249.HK": {
     "data_as_of": "2026-09-30",
@@ -217,11 +243,13 @@
     "one_month_actual_date": "2026-08-06",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-10",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "6745.HK": {
     "data_as_of": "2026-09-30",
@@ -233,11 +261,13 @@
     "one_month_actual_date": "2026-08-06",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-10",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "3308.HK": {
     "data_as_of": "2026-09-30",
@@ -249,11 +279,13 @@
     "one_month_actual_date": "2026-08-26",
     "one_month_matured": true,
     "six_month_target_date": "2027-01-30",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2261.HK": {
     "data_as_of": "2026-09-30",
@@ -265,11 +297,13 @@
     "one_month_actual_date": "2026-09-03",
     "one_month_matured": true,
     "six_month_target_date": "2027-02-07",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "3223.HK": {
     "data_as_of": "2026-09-30",
@@ -281,11 +315,13 @@
     "one_month_actual_date": "2026-09-21",
     "one_month_matured": true,
     "six_month_target_date": "2027-02-25",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "0625.HK": {
     "data_as_of": "2026-09-30",
@@ -297,11 +333,13 @@
     "one_month_actual_date": "2026-09-28",
     "one_month_matured": true,
     "six_month_target_date": "2027-03-01",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "9615.HK": {
     "data_as_of": "2026-09-30",
@@ -313,11 +351,13 @@
     "one_month_actual_date": "2026-09-28",
     "one_month_matured": true,
     "six_month_target_date": "2027-03-01",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "2041.HK": {
     "data_as_of": "2026-09-30",
@@ -329,11 +369,13 @@
     "one_month_actual_date": null,
     "one_month_matured": false,
     "six_month_target_date": "2027-03-07",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "9976.HK": {
     "data_as_of": "2026-09-30",
@@ -345,11 +387,13 @@
     "one_month_actual_date": null,
     "one_month_matured": false,
     "six_month_target_date": "2027-03-08",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   },
   "3231.HK": {
     "data_as_of": "2026-09-30",
@@ -361,10 +405,12 @@
     "one_month_actual_date": null,
     "one_month_matured": false,
     "six_month_target_date": "2027-03-09",
+    "six_month_target_basis": "listing date + 6 calendar months (independent of any lock-up contract date)",
     "six_month_actual_date": null,
     "six_month_matured": false,
-    "stock_provider": "tencent",
-    "hsi_provider": "tencent",
-    "hstech_provider": "tencent"
+    "as_of": "2026-09-30",
+    "stock_provider": "cache",
+    "hsi_provider": "cache",
+    "hstech_provider": "cache"
   }
 }

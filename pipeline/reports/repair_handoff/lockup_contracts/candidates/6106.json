@@ -1,0 +1,37 @@
+{
+  "code": "6106.HK",
+  "listing_date": "2026-06-24",
+  "cornerstone": {
+    "exists": true,
+    "holders": "HHLRA (HHLR Advisors, Ltd.); Yuanbao Family Office (Yuanbao Family Office Limited); 3W Fund (3W Fund Management Limited); GF Fund (GF Fund Management Co., Ltd.; GF International Investment Management Limited); Ruihua Investment; Zhonghe Capital; Yishao Capital; Nova Kerry Inc.",
+    "quote_page": 268,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from and including the Listing Date (the “Lock-up Period”), dispose of any of the Offer Shares they have subscribed for pursuant to the relevant Cornerstone Investment Agreement",
+    "reference_date": "2026-06-24",
+    "basis": "six calendar months from and including the Listing Date; frees up on the six-month anniversary",
+    "computed_first_free_day": "2026-12-24",
+    "computed_last_restricted_day": "2026-12-23",
+    "notes": "Wording: 'six months from and including the Listing Date'. Investor names from the cornerstone table on p.265."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C specialist technology company. No separate six-month controlling-shareholder undertaking exists; a single combined Rule 10.07/18C.13 undertaking (12 months from the Listing Date) is recorded in the controller_12m slot and covers the first six months as well."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 273,
+    "full_quote": "Pursuant to Rules 10.07 and 18C.13 of the Listing Rules, each of our Controlling Shareholders has irrevocably and unconditionally undertaken to us and to the Stock Exchange that it/he, in the period commencing on the date by reference to which disclosure of the shareholdings of its/his is made in this prospectus and ending on the date which is 12 months from the Listing Date, except pursuant to the Global Offering (including the exercise of the Offer Size Adjustment Option and the Over-Allotment Option, if any), without the prior written consent of the Stock Exchange or unless otherwise in compliance with the requirements of the Listing Rules, will not and will procure that the relevant registered holders of the Shares in which it/he is beneficially interested will not, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which they are shown by this prospectus that it/he is the beneficial owners",
+    "reference_date": "2026-06-24",
+    "basis": "Single combined Rule 10.07/18C.13 undertaking replacing the 6m/12m split: no disposal in the period ending ON the date which is 12 months from the Listing Date; inclusive endpoint, first free day is the day after the 12-month anniversary",
+    "computed_first_free_day": "2027-06-25",
+    "computed_last_restricted_day": "2027-06-24",
+    "notes": "A separate Rule 18C.14(1) Key Persons undertaking follows on pp.273-274."
+  }
+}

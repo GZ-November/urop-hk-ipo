@@ -1,0 +1,31 @@
+{
+ "code": "6872.HK",
+ "reviewer": "independent reviewer subagent R3",
+ "read_independently_before_candidate": true,
+ "own_classification": "supports_1",
+ "candidate_classification": "supports_1",
+ "verdict": "approve_candidate",
+ "approved_value": 1,
+ "approved_evidence": [
+  {
+   "pdf_page": 266,
+   "printed_page": "257",
+   "quote": "Upon the recommendation by Cumbre to the Company as a Director candidate, Mr. Bakes was elected and appointed by the general meeting as a Director.",
+   "interpretation": "Non-executive Director Mr. Bakes (appointed 8 July 2025, on the board at listing) was recommended as director candidate by Cumbre, a Pre-IPO investor."
+  },
+  {
+   "pdf_page": 264,
+   "printed_page": "255",
+   "quote": "Our Board currently consists of six Directors, comprising one executive Director, two non-executive Directors and three independent non-executive Directors.",
+   "interpretation": "Board at listing; Bakes is one of the two NEDs."
+  },
+  {
+   "pdf_page": 146,
+   "printed_page": "137",
+   "quote": "Cumbre, which was wholly owned by Mr. Morton H Meyerson, agreed to purchase and TenNor Cayman agreed to issue 3,925,000 series A preferred shares of TenNor Cayman",
+   "interpretation": "Cumbre is an identified Pre-IPO investor (Series A, 2013)."
+  }
+ ],
+ "findings": "Read PDF independently first. Bakes's bio explicitly states Cumbre (defined term = Cumbre IP Ventures, L.P., Series A investor and, with family, Single Largest Group of Shareholders) recommended him as Director candidate; he is a NED on the 6-member listing board. All 9 candidate quotes verified verbatim on cited pdf pages, printed pages correct (one quote, the Northern Light one on pdf p148, is 212 chars so not reused). Agree with candidate not relying on Song Gaoguang (partner at Northern Light Venture Capital Consulting (Beijing) Co., Ltd., differently named from pre-IPO investor Northern Light Venture Capital IV, Ltd./Immense Vantage; no stated relationship) and on Ni Lin (past Frontline Bioventures MD, INED, no nomination). The pre-listing investor director-appointment right (pdf p163) was terminated 11 Jul 2025, but Bakes's seat, tied to Cumbre's recommendation, continues at listing. Note the 'Cumbre' in Bakes's bio (recommender) is the investor; his former employer 'Cumbre Inc.' is a separate dissolved company, which does not affect the link.",
+ "residual_uncertainty": "Recommendation by Cumbre is described as a historical appointment fact, not as a continuing nomination right after the Voting Arrangement was terminated; Cumbre's holding at listing (Single Largest Group of Shareholders, ~15.82% voting post-offer) supports that it remains an investor."
+}

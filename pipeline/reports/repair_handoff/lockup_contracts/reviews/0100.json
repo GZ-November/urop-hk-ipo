@@ -1,0 +1,23 @@
+{
+  "code": "0100.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p400 ('at any time during the period of six months from and including the Listing Date'). Duration wording frees up ON the 6-month anniversary: first_free_day 2026-07-09, last_restricted_day 2026-07-08 as recorded. All 14 named holders (ADIA, Alisoft China, Aspex, Boyu, China Universal, Eastspring, E Fund, IDG Breyer, Janchor, Martis, Mirae Asset, MPC VII, Perseverance, Taikang) located in the Cornerstone Investors section (pp.389-397).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p491; introduced on p490 ('(B) Undertakings by the Controlling Shareholders Pursuant to Rules 10.07 and 18C.13...'). Single 24-month undertaking correctly recorded in this slot as an 18C deviation. DATE CORRECTION: the clause ends 'on the date which is 24 months from the Listing Date' - an explicit inclusive end ON the anniversary (2028-01-09), so first free = anniversary + 1 = 2028-01-10. Candidate's 2028-01-09 wrongly made the anniversary itself the first free day. Existence, page and quote otherwise correct.",
+    "corrections": {
+      "first_free_day": "2028-01-10",
+      "last_restricted_day": "2028-01-09",
+      "basis": "Chapter 18C Pre-Commercial Company: single 24-month disposal undertaking under Rules 10.07 and 18C.13 replaces the standard six-month 10.07(1)(a) undertaking. Commences on the prospectus shareholding-disclosure date (inclusive of Listing Date) and ends 'on the date which is 24 months from the Listing Date' (inclusive end ON the anniversary), so first free day = anniversary + 1 = 2028-01-10."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. Searched all 716 pages: '10.07' hits only the single 24-month undertaking (pp.490-491), the Note 3 pledge-notification undertaking (p491), the parallel underwriting-agreement 24-month undertaking (p495) and stock-borrowing text (p511); 'cease to be a controlling' 0 hits; no Second Six-Month Period limb. The 24-month undertaking quoted under controller_6m covers the 12-month window.",
+    "corrections": {}
+  }
+}

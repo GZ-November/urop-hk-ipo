@@ -1,0 +1,27 @@
+{
+  "code": "1236.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p218 (section 'RESTRICTIONS ON THE CORNERSTONE INVESTORS'); sole holder KCH Vision Investment Limited verified on pp215-217 and the cornerstone investment agreement on p427. The clause 'the period of six months following the Listing Date (both days inclusive)' names no explicit end date: '(both days inclusive)' marks the two boundary days of the six-month period (the Listing Date and its final day) as included, so the six months elapse at the six-month mark and the first free day is the anniversary 2026-11-11, with 2026-11-10 the last restricted day. Candidate's convention and dates are correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p261 under '(B) Undertakings by the Controlling Shareholders' (Rule 10.07). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2026-11-11, which is therefore the last restricted day; first free day is 2026-11-12.",
+    "corrections": {
+      "first_free_day": "2026-11-12",
+      "last_restricted_day": "2026-11-11",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-11-11, inclusive); first free day 2026-11-12"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p261 (Second Six-Month Period leg). DATE CORRECTION: the six months run from expiry of the First Six-Month Period (ends ON 2026-11-11) to and including the 12-month anniversary 2027-05-11; first free day is 2027-05-12.",
+    "corrections": {
+      "first_free_day": "2027-05-12",
+      "last_restricted_day": "2027-05-11",
+      "basis": "Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-05-11, to the extent it would cause cessation of controlling shareholder status; first free day 2027-05-12"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "code": "6872.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.291: 'period of six months from and including the Listing Date (the “Lock-up Period”)'. Duration wording frees up ON the anniversary: listing 2026-05-22 -> first_free_day=2026-11-22, last_restricted_day=2026-11-21. Holders (AMR Action Fund L.P./SCSp, Hua Yuan International, Orient Asset Management (HK), June Star Global) consistent with the cornerstone section pp.286-291.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. No Rule 10.07 reference in the 489-page text (0 hits for '10.07') and p.25 states 'our Company will not have any controlling shareholder (as defined under the Listing Rules) upon Listing'. Dr. Ma (founder/chairman/CEO) gave a single voluntary undertaking covering both six-month periods (pp.325-326), which the candidate correctly books as the combined 12-month controller_12m record rather than a separate 6-month slot.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.326: 'Dr. Ma has undertaken ... he will not ... at any time during the First-Six Month Period and the Second-Six Month Period ... dispose of ...'. First Six-Month Period (p.325) runs 'ending on, and including, the date that is six months after the Listing Date' = 2026-11-22; the Second Six-Month Period (p.325) is 'the period of six months commencing on the date on which the First Six Month Period expires', i.e., 2026-11-23 through 2027-05-22 (12-month anniversary) inclusive -> first_free_day=2027-05-23, last_restricted_day=2027-05-22. Correct.",
+    "corrections": {}
+  }
+}

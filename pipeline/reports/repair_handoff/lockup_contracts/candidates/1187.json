@@ -1,0 +1,37 @@
+{
+  "code": "1187.HK",
+  "listing_date": "2026-05-06",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Lens Technology (HK) Co., Limited; Changsha Yufeng; Vision Capital (via CGII, Vision Capital OTC Swaps); Panjing Fund; FR M CONSULTING; HQD Industry; Da Cheng International; Sinohealth Technology; ODI TRUST; Mr. Huang; Redhill Capital",
+    "quote_page": 194,
+    "full_quote": "Each Cornerstone Investor has agreed that without the prior written consent of our Company, the Joint Sponsors and the Sponsor-Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of six months following the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-05-06",
+    "basis": "six calendar months following the Listing Date (“Lock-up Period”); treated as six months from the Listing Date inclusive of the Listing Date",
+    "computed_first_free_day": "2026-11-06",
+    "computed_last_restricted_day": "2026-11-05",
+    "notes": "Wording is “six months following the Listing Date”, not “from (and inclusive of)”."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 247,
+    "full_quote": "in the period commencing from the date by reference to which disclosure of its shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-Month Period”), either directly or indirectly, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which they are shown to be the beneficial owner in this prospectus (the “Relevant Shares”); and",
+    "reference_date": "2026-05-06",
+    "basis": "six calendar months from the Listing Date; restricted period ends on the date which is six months from the Listing Date (inclusive end per document wording: “ending on the date which is six months from the Listing Date”); period commences on the prospectus disclosure date (H-share Rule 10.07(1)(a) form)",
+    "computed_first_free_day": "2026-11-07",
+    "computed_last_restricted_day": "2026-11-06",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 247,
+    "full_quote": "in the period of six months commencing from the expiry of the First Six-Month Period, either directly or indirectly, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Relevant Shares to such extent that, immediately following such disposal, or upon the exercise or enforcement of such options, rights, interests or encumbrances, it will cease to be a controlling shareholder (as defined in the Listing Rules) of our Company or a member of a group of our Controlling Shareholders or would together with the other Controlling Shareholders cease to be a controlling shareholder (as defined in the Listing Rules).",
+    "reference_date": "2026-05-06",
+    "basis": "control-preserving no-disposal undertaking covering the second six months, ending 12 months from the Listing Date (inclusive end); second period commences on expiry of the first six-month period (H-share combined Rule 10.07(1) rendering)",
+    "computed_first_free_day": "2027-05-07",
+    "computed_last_restricted_day": "2027-05-06",
+    "notes": "Combined H-share rendering: no separate 10.07(1)(b) paragraph; control-preserving restriction expressed as the second six-month period clause (months 6-12)."
+  }
+}

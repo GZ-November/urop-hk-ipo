@@ -1,0 +1,429 @@
+{
+  "code": "6228.HK",
+  "fields": {
+    "col_L": {
+      "value": 14731366060,
+      "page": 290,
+      "quote": "Number of shares Description of Shares Nominal Value per share Approximate aggregate Nominal Value 14,731,366,060 Ordinary shares(1) Rp150 Rp2,209,704,909,000",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 896686000,
+      "page": 23,
+      "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders (representing 896,686,000 underlying Shares) pursuant to the Global Offering, assuming the Over-allotment Option is not exercised",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 14731366060,
+      "page": 23,
+      "quote": "the market capitalization of the remaining shares of the Company listed on the IDX (i.e. 13,834,680,060 Shares) multiplied by the closing price of the Shares on the IDX",
+      "confidence": "high",
+      "note": "Offer for Sale: no new shares are issued, so capitalisation shares N = L - Q = 14,731,366,060 (Q=0)."
+    },
+    "col_O": {
+      "value": 13834680060,
+      "page": 23,
+      "quote": "the market capitalization of the remaining shares of the Company listed on the IDX (i.e. 13,834,680,060 Shares) multiplied by the closing price of the Shares on the IDX",
+      "confidence": "high",
+      "note": "Offer for Sale: O = L - M = 14,731,366,060 - 896,686,000 = 13,834,680,060."
+    },
+    "col_P": {
+      "value": 896686000,
+      "page": 23,
+      "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders",
+      "confidence": "low",
+      "note": "This is an Offer for Sale: all 896,686,000 underlying Shares are Sale Shares offered by the Selling Shareholders."
+    },
+    "col_Q": {
+      "value": 0,
+      "page": 290,
+      "quote": "As no shares will be issued in the Global Offering, there will be no change to the Company",
+      "confidence": "medium",
+      "note": "No new shares are issued in the Global Offering, so col_Q = 0."
+    },
+    "col_R": {
+      "value": 807017000,
+      "page": 2,
+      "quote": "Number of International Offer HDRs : 80,701,700 Sale HDRs (subject to reallocation and the Over-allotment Option)",
+      "confidence": "medium"
+    },
+    "col_S": {
+      "value": 89669000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer HDRs : 8,966,900 Sale HDRs (subject to reallocation)",
+      "confidence": "medium"
+    },
+    "col_BI": {
+      "value": "Ordinary shares",
+      "page": 290,
+      "quote": "14,731,366,060 Ordinary shares(1) Rp150 Rp2,209,704,909,000",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 896686000,
+      "page": 23,
+      "quote": "89,668,600 Sale HDRs to be offered by the Selling Shareholders (representing 896,686,000 underlying Shares) pursuant to the Global Offering",
+      "confidence": "medium"
+    },
+    "col_T": {
+      "value": 26.6,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$26.60 per Offer HDR, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_V": {
+      "value": "USD",
+      "page": 372,
+      "quote": "The Historical Financial Information is presented in United States Dollar (USD), and all values are rounded to the nearest thousand (USD'000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 328651000,
+      "page": 22,
+      "quote": "Total current assets . . . . . . . . . . . . . . . . . 19,684 71,445 61,231 Total assets . . . . . . . . . . . . . . . . . . . . . . . 328,651 529,721 740,638",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 529721000,
+      "page": 22,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . 328,651 529,721 740,638",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 740638000,
+      "page": 22,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . 328,651 529,721 740,638",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 155196000,
+      "page": 22,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . 155,196 273,038 380,939",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 273038000,
+      "page": 22,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . 155,196 273,038 380,939",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 380939000,
+      "page": 22,
+      "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . 155,196 273,038 380,939",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 173455000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . 173,455 256,683 359,699",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 256683000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . 173,455 256,683 359,699",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 359699000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . 173,455 256,683 359,699",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 1394000,
+      "page": 21,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 1,394 1,750 132",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 1750000,
+      "page": 21,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 1,394 1,750 132",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 132000,
+      "page": 21,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 1,394 1,750 132",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -10131000,
+      "page": 21,
+      "quote": "Loss Before Income Tax . . . . . . . . . . . . . . . . . (10,131) (14,934) (25,392)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -14934000,
+      "page": 21,
+      "quote": "Loss Before Income Tax . . . . . . . . . . . . . . . . . (10,131) (14,934) (25,392)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -25392000,
+      "page": 21,
+      "quote": "Loss Before Income Tax . . . . . . . . . . . . . . . . . (10,131) (14,934) (25,392)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -6837000,
+      "page": 21,
+      "quote": "Loss for the Year. . . . . . . . . . . . . . . . . . . . (6,837) (12,700) (27,494)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -12700000,
+      "page": 21,
+      "quote": "Loss for the Year. . . . . . . . . . . . . . . . . . . . (6,837) (12,700) (27,494)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -27494000,
+      "page": 21,
+      "quote": "Loss for the Year. . . . . . . . . . . . . . . . . . . . (6,837) (12,700) (27,494)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 289597000,
+      "page": 271,
+      "quote": "As at 31 December 2025, our indebtedness included: (i) borrowings of US$260.4 million; (ii) sale and leaseback arrangement of US$25.9 million; and (iii) lease liabilities of US$3.3 million.",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 372,
+      "quote": "prepared in accordance with the accounting policies which conform with IFRS Accounting Standards as issued by the International Accounting Standards Board (IASB)",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": -146000,
+      "page": 21,
+      "quote": "Gross Profit/(Loss) . . . . . . . . . . . . . . . . . . 458 570 (146)",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 152121000,
+      "page": 267,
+      "quote": "equipment . . . . . . . . . . . . . . . . . . . . . . . . . (39,402) (90,928) (152,121)",
+      "confidence": "medium"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 371,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.015,
+      "page": 345,
+      "quote": "the syndicate members (i) will receive a fixed underwriting commission which is equal to 1.5% of the aggregate gross proceeds to be raised from the Global Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.015,
+      "page": 345,
+      "quote": "the syndicate members (i) will receive a fixed underwriting commission which is equal to 1.5% of the aggregate gross proceeds to be raised from the Global Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 345,
+      "quote": "the Over-allotment Option Grantors may be required to sell up to an aggregate of 13,450,200 additional HDRs, representing approximately 15% of the number of Offer HDRs",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 14900000,
+      "page": 19,
+      "quote": "our total listing expenses relating to the Global Offering are estimated to be US$14.9 million",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Gold mining and mineral processing",
+      "page": 174,
+      "quote": "MGR is an IDX-listed gold mining company positioned among the top pure-play gold producers in Asia. Anchored by the Pani Gold Mine",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Chapter 19C secondary listing; also Chapters 18 and 19B",
+      "page": 19,
+      "quote": "the HDRs on the Main Board under Chapters 18 (Mineral Companies), 19B (Depositary Receipts) and 19C (Secondary Listings of Overseas Issuers) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Early commercialization (first gold production in February 2026)",
+      "page": 11,
+      "quote": "which achieved its first gold production in February 2026 and completed its first gold sale in March 2026",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 10,
+      "quote": "The entire Offer HDRs represent the Sale HDRs to be sold by the Selling Shareholders in the Global Offering. We will therefore not receive any of the net proceeds from the Global Offering.",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Ping An of China Asset Management (Hong Kong) Company Limited; Wanguo Gold Group Limited; Glencore International AG; Mercuria Holdings (Singapore) Pte. Ltd.; Trafigura Pte. Ltd.; Intera Mining Investment Limited; GF Fund Management Co., Ltd.; GF International Investment Management Limited; CNGR Hong Kong Material Science & Technology Co., Limited; Eurus Holdings SPC (for OAAM Diversified Opportunities III S.P.); Wind Sabre Fund SPC (for Wind Sabre Opportunities Fund SP); Dymon Asia Multi-Strategy Investment Master Fund",
+      "page": 297,
+      "quote": "Ping An AM . . . 30 235.10 8,838,200 88,382,000 9.86% 0.60% 8.57% 0.60% Wanguo . . . . . . 20 156.73 5,892,100 58,921,000 6.57% 0.40% 5.71% 0.40% Glencore AG . . . 20 156.73",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/25",
+      "page": 21,
+      "quote": "31 December 2023 31 December 2024 31 December 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -21714000,
+      "page": 23,
+      "quote": "Net cash flows used in operating activities . . (16,489) (6,281) (21,714)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 45308000,
+      "page": 23,
+      "quote": "Cash and banks at end of the year . . . . . . . . 12,351 67,335 45,308",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 269,
+      "quote": "Exploration and evaluation assets are capitalized costs consisting of compensation land costs, consultant fees, drilling, salaries and benefits, permits and licenses",
+      "confidence": "low"
+    },
+    "col_AY": {
+      "value": 1.0,
+      "page": 17,
+      "quote": "For each year of the Track Record Period, rental revenue from our customers amounted to US$1.4 million, US$1.7 million and US$0.1 million, respectively, accounting for 100% of our revenue",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 381,
+      "quote": "The ultimate parent entity of the Company is PT Merdeka Copper Gold Tbk (“MCG”), which is incorporated in Indonesia and list on the Indonesia Stock Exchange (“IDX”).",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Corporate",
+      "page": 14,
+      "quote": "MCG will hold 9,329,376,465 Shares, representing approximately 63.33% of the issued and paid-up capital of the Company. Hence, upon the Listing, we will remain a majority-owned subsidiary of MCG",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.6333,
+      "page": 14,
+      "quote": "MCG will hold 9,329,376,465 Shares, representing approximately 63.33% of the issued and paid-up capital of the Company",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.6333,
+      "page": 14,
+      "quote": "MCG will hold 9,329,376,465 Shares, representing approximately 63.33% of the issued and paid-up capital of the Company",
+      "confidence": "medium"
+    },
+    "col_BP": {
+      "value": "20/11/2015",
+      "page": 168,
+      "quote": "The Company incorporated in November 2015 under the name PT Pani Bersama Jaya, as a limited liability company, pursuant to the Deed of Establishment No. 87 dated 20 November 2015",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Treasury Tower, 67th Floor, District 8 SCBD Lot. 28, Jalan Jenderal Sudirman Kav. 52-53, South Jakarta 12190, Indonesia",
+      "page": 101,
+      "quote": "Registered Office . . . Treasury Tower, 67th Floor / District 8 SCBD Lot. 28 / Jalan Jenderal Sudirman Kav. 52-53 / South Jakarta 12190 / Indonesia",
+      "confidence": "medium"
+    },
+    "col_CC": {
+      "value": "17/06/2026",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9: 00 a.m. on Wednesday, 17 June 2026",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "23/06/2026",
+      "page": 5,
+      "quote": "Application lists close . . . 12: 00 noon on Tuesday, 23 June 2026",
+      "confidence": "high"
+    }
+  }
+}

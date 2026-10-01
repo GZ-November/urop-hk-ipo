@@ -1,0 +1,23 @@
+{
+  "code": "6082.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p359. Wording 'six months after the Listing Date' with a prior-written-consent requirement (Company, Joint Sponsors, Sponsor-OCs), as noted. No explicit end date, so default convention: first free ON the six-month anniversary 2026-07-02; last restricted 2026-07-01. Verified no longer/other cornerstone regime.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C listing: independent sweep found no Rule 10.07 undertaking and no separate six-month controlling-shareholder restriction. Mr. Zhang (controlling shareholder) and Shanghai Biliren are locked up 12 months under Rule 18C.14 (p437, p201 table); the 6-month window applies only to the Pathfinder SIIs (QM120, Country Garden Venture Capital, Sky9 Capital, Zhuhai Gree, Shenzhen Songhe). Absence is correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verbatim on p437. The Rule 18C.14 undertaking states an explicit end date: 'at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this Prospectus and ending on the date which is 12 months (or 6 months in the case of the Pathfinder SIIs) from the Listing Date'. The period ends ON 2027-01-02, so 2027-01-02 is the last restricted day and the first free day is 2027-01-03. Candidate recorded the anniversary as first_free_day - corrected. (The p201 History table summarises the same periods as 'ending on the expiry of 12 months from the Listing Date'; the operative undertaking's stated end date governs.)",
+    "corrections": {
+      "first_free_day": "2027-01-03",
+      "last_restricted_day": "2027-01-02",
+      "basis": "Rule 18C.14: period ends ON the date which is 12 months from the Listing Date (2027-01-02); the stated end date is the last restricted day, so first_free_day = anniversary + 1"
+    }
+  }
+}

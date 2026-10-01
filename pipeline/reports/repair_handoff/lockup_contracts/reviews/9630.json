@@ -1,0 +1,19 @@
+{
+  "code": "9630.HK",
+  "reviewer": "independent verifier V-F",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Verified. Clause verbatim on p229 - 'six months from (and inclusive of) the Listing Date', frees up ON 2026-12-26, last restricted 2026-12-25. All 19 holder entries (Hefei Jianhui, Xinyao Investment, Nexchip Semiconductor HK, JPMAMAPL, Victory Giant HK, CPE Chestnut, Lion Global, CICC FT/Greenwoods OTC Swaps, HHLR, Huadeng Victorious, Montage HK, Yonglian Investment, Monterey Park, Bosera International, China Universal (HK), Fullgoal HK and Fullgoal Fund, GF Fund, Ocean Fine Industrial, Sungrow Power HK) found on cornerstone pages 215-230.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Verified absent, with a caveat noted. Candidate exists=false is correct on the evidence of the text cache: an exhaustive search of all 517 pages finds ZERO occurrences of Rule 10.07, no 'Undertakings by our Controlling Shareholders' section, no 'relevant registered holder' / 'procure that' boilerplate, and no controller lock-up anywhere - the Listing Rules undertakings section (p279) jumps from the Company's Rule 10.08 undertaking straight to the Hong Kong Underwriting Agreement undertakings, even though a Controlling Shareholders Group (Ms. Cheng and vehicles, ~31-34%) exists (pp.115, 117, 208). The only 'First Six-Month Period' (pp.279-280) is the Company's underwriting-agreement undertaking, and the only 'six months from the Listing Date' clause (p224) concerns the Greenwoods OTC Swaps lock-up. Caveat: the absence of a 10.07 undertaking in a company with controlling shareholders is unusual; if the source PDF has un-extracted pages this should be re-checked, but on the text cache provided the absence is confirmed and no element was missed.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Verified absent. Same evidence as controller_6m: zero occurrences of '10.07', '12 months from the Listing Date', or any controller disposal-restriction undertaking in the full text cache; no 18C/18A/19A combined undertaking either. Candidate exists=false is correct on the provided text (same page-extraction caveat).",
+    "corrections": {}
+  }
+}

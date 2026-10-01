@@ -1,0 +1,59 @@
+{
+ "code": "0901.HK",
+ "pdf_sha256": "d4cb0a3be8a638791d62ab9262d9bfec1e8df110323dcd93fc45ae6ce672ecdb",
+ "classification": "supports_0",
+ "candidate_value": 0,
+ "pre_ipo_investors": [
+  "Panorama Capital Green Technology (share transfer, Apr 2-3 2025, RMB5-7.25/share)",
+  "Qihang No. 1 and Qihang No. 2 (share transfers Apr 2025; GP is executive Director/Controlling Shareholder Mr. Li Bo, i.e. insider vehicles, not external investors)",
+  "Liu Minhua, Li Jingcheng, Wu Jun (private individuals, Apr 2025 share transfers)",
+  "All Pre-IPO Investments were secondary share transfers; no new shares issued to them"
+ ],
+ "board_roster_reviewed": "Seven directors at LPD. Executive: Li Bo (founder/chairman/GM; GP of Qihang No.1/No.2 and Controlling Shareholder), Yan Zhikang, Li Jun, Dang Hui - all long-time employees, no investor link. INEDs: Luk Pui Yin Grace (former auditor/PE finance controller roles at Kleinwort Benson, Ajia Partners etc. - historic, none tied to Panorama or other pre-IPO investors), Yin Renyong (accountant/CFO roles), Zheng Qian (academic). No non-executive (non-independent) director and no observer. No director is described as an employee, partner or representative of Panorama Capital Green Technology, its GP, or any independent pre-IPO investor. Only link: Li Bo is GP of Qihang No.1/2 (his own vehicles).",
+ "rights_and_timing": "Prospectus states Special rights = Not applicable for the Pre-IPO Investments and that the Pre-IPO Investors shall have the same rights as other public Shareholders after Listing. No nomination/appointment right, seat, or observer right disclosed at any time; no rights that terminate at listing.",
+ "evidence": [
+  {
+   "pdf_page": 130,
+   "printed_page": "121",
+   "quote": "Special rights Not applicable. Lock up One year from the Listing Date pursuant to requirements under the PRC laws.",
+   "supports": "Pre-IPO Investments carried no special rights.",
+   "interpretation": "Affirmative statement: no special (incl. board nomination) rights attached to pre-IPO investments."
+  },
+  {
+   "pdf_page": 131,
+   "printed_page": "122",
+   "quote": "the Pre-IPO Investors shall have the same rights as the other public Shareholders after the Listing",
+   "supports": "Sole Sponsor confirms pre-IPO investors have same rights as public shareholders post-listing.",
+   "interpretation": "No differential board/observer right for pre-IPO investors."
+  },
+  {
+   "pdf_page": 130,
+   "printed_page": "121",
+   "quote": "Save for Qihang No. 1 and Qihang No. 2, whose general partner is Mr. Li (the executive Director and Controlling Shareholder)",
+   "supports": "Only pre-IPO investor with a director link is the controlling shareholder own vehicles.",
+   "interpretation": "Insider vehicles of the founder-chairman, not an external investor institution seat; not counted as an investor-linked board seat."
+  },
+  {
+   "pdf_page": 225,
+   "printed_page": "216",
+   "quote": "the Board consists of seven Directors, comprising four executive Directors and three independent non-executive Directors.",
+   "supports": "Full board composition: no non-executive director, no observer.",
+   "interpretation": "No seat category in which an investor nominee could sit besides INEDs."
+  },
+  {
+   "pdf_page": 227,
+   "printed_page": "218",
+   "quote": "she served as the Financial Controller and director of Kleinwort Benson China Management Limited",
+   "supports": "INED biography (historic PE-manager role) read; not linked to Panorama or other pre-IPO investors.",
+   "interpretation": "No investor link."
+  },
+  {
+   "pdf_page": 229,
+   "printed_page": "220",
+   "quote": "had no other relationship with any Directors, senior management or substantial shareholders of our Company as of the Latest Practicable Date",
+   "supports": "Directors confirm no other relationships.",
+   "interpretation": "Supports absence of investor-linked seat."
+  }
+ ],
+ "unresolved_reason": ""
+}

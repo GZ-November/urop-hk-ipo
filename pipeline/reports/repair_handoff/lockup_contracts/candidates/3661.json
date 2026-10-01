@@ -1,0 +1,37 @@
+{
+  "code": "3661.HK",
+  "listing_date": "2026-06-26",
+  "cornerstone": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 258,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from and including the Listing Date (the “Lock-up Period”), dispose of any of the Offer Shares they have subscribed for pursuant to the relevant Cornerstone Investment Agreement, save for in certain limited circumstances, such as transfers to any of its wholly- owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-06-26",
+    "basis": "six calendar months from and including the Listing Date; frees up on the six-month anniversary",
+    "computed_first_free_day": "2026-12-26",
+    "computed_last_restricted_day": "2026-12-25",
+    "notes": "Holders per the table at PDF p.249: GIC Private Limited, JPMAMAPL (J.P. Morgan Asset Management), CPE Ginkgo, Da Cheng International, Dajia Life, DAMSIMF, First Sentier Investors, GF Fund Management, GF Fund HK, Golden Continent, HGI, HHLRA (plus as investment manager of an SMA managed for CPP Investments), Huadeng Technology, Huaqin Singapore, Sungrow Power, ICBC Wealth, iSoftStone HK, LMR Master Fund, Millennium Capital, Ninety One Asia, Ocean Fine Industrial, PSBC Wealth, Taikang Life, Value Partners Hong Kong Limited, Value Partners Limited. Note 'wholly- owned' is hyphen-split in the source text."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 263,
+    "full_quote": "Pursuant to Rule 10.07 of the Listing Rules, the Controlling Shareholders have undertaken to the Stock Exchange and our Company that: (a) at any time in the period commencing on the date by reference to which disclosure of their shareholding in the Company is made in this prospectus and ending on the date which is six months from the Listing Date, they shall not and shall procure that the relevant registered holder(s) shall not dispose of, nor enter into any agreement to dispose of or",
+    "reference_date": "2026-06-26",
+    "basis": "Rule 10.07 undertaking; period ends on (and includes) the date six months from the Listing Date, so free day is the day after 2026-12-26; the sentence continues on the next PDF page (264): 'otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares in respect of which they are shown by the Prospectus to be the beneficial owner(s)'",
+    "computed_first_free_day": "2026-12-27",
+    "computed_last_restricted_day": "2026-12-26",
+    "notes": "Quote is the portion on p.263; the clause continues onto p.264 (page break mid-sentence)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 264,
+    "full_quote": "(b) at any time in the period of six months commencing on the date on which the period referred to in paragraph (a) above expires, they shall not and shall procure that the relevant registered holder(s) shall not dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares referred to in paragraph (a) above if, immediately following such disposal or upon exercise or enforcement of such options, rights, interests or encumbrances, they would cease to be the Controlling Shareholders (as defined in the Listing Rules) of the Company.",
+    "reference_date": "2026-06-26",
+    "basis": "Rule 10.07(1)(b) analogue: second six-month period (months 6-12 from the Listing Date) disposal restriction conditional on ceasing to be Controlling Shareholders; effective 12-month control restriction, frees up on the 12-month anniversary",
+    "computed_first_free_day": "2027-06-26",
+    "computed_last_restricted_day": "2027-06-25",
+    "notes": ""
+  }
+}

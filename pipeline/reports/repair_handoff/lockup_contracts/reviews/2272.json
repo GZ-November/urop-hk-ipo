@@ -1,0 +1,27 @@
+{
+  "code": "2272.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Case-insensitive 'cornerstone' has zero matches across all 418 pages; no cornerstone investors or cornerstone lock-up (H-share Full Circulation issuer).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p281 under 'Undertakings by our Controlling Shareholders' (Rule 10.07(1)). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2026-12-26, which is therefore the last restricted day; first free day is 2026-12-27.",
+    "corrections": {
+      "first_free_day": "2026-12-27",
+      "last_restricted_day": "2026-12-26",
+      "basis": "Rule 10.07(1)(a): no disposal in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-12-26, inclusive); first free day 2026-12-27"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p281 (Second Six-Month Period leg). DATE CORRECTION: the Second Six-Month Period runs from expiry of the First Six-Month Period (ends ON 2026-12-26) to and including the 12-month anniversary 2027-06-26; first free day is 2027-06-27. The only '24 months' hit (p331) is an accounting warranty clause, not a lock-up.",
+    "corrections": {
+      "first_free_day": "2027-06-27",
+      "last_restricted_day": "2027-06-26",
+      "basis": "Rule 10.07(1)(b): no disposal in the Second Six-Month Period, running to and including the 12-month anniversary 2027-06-26, to the extent it would cause cessation of controlling shareholder status; first free day 2027-06-27"
+    }
+  }
+}

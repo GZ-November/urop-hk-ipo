@@ -1,0 +1,19 @@
+{
+  "code": "7666.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p250. The clause 'the period of six months from (and inclusive of) the Listing Date' is the start-inclusive family: the inclusive language attaches to the Listing Date only and no explicit end date is named, so the six-month period elapses at the six-month mark and the first free day is the anniversary 2026-11-13, with 2026-11-12 the last restricted day. Candidate's convention and dates are correct.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Chapter 18C Pre-Commercial Company with no Controlling Shareholders. The Single Largest Group of Shareholders gave a single combined undertaking (p291) which p252 cross-refers to as the lock-up 'pursuant to Rule 10.07 of the Listing Rules'; it covers one 24-Month Period and is recorded in controller_12m. There is no separate six-month undertaking. Rule 18C.14 Key Persons (24 months) / Pathfinder SIIs (12 months) undertaking verified on p289. No missed element.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p291 ('Undertakings by the Single Largest Group of Shareholders'). DEVIATION CORRECTLY CAPTURED: single combined 24-Month Period commencing on the date of the Hong Kong Underwriting Agreement and 'ending on, and including, the date that is 24 months after the Listing Date' - an explicit inclusive end, so the last restricted day is 2028-05-13 and the first free day is 2028-05-14. Candidate's dates are correct. The p292 note (lock-up extended to the later of the end date and the 30th day after a Rule 18C.24 removal announcement if the Company ceases to be a Pre-Commercial Company) is properly disclosed in notes.",
+    "corrections": {}
+  }
+}

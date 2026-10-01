@@ -1,0 +1,67 @@
+{
+ "code": "6915.HK",
+ "pdf_sha256": "83b6db9fdb661da8464336d00ac562790c9f2e1dac4c498dff048f6369537b41",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Series A (May 2020): High-tech Investment Zhiyuan, High-tech Investment Start-up, Xiaohe VC, Hejia Jiangsheng, Jiaxing Jiaci etc.",
+  "Series B (Dec 2020)",
+  "Series B+ (Apr 2022, 3,160,000 shares)",
+  "Equity-transfer investors Dec 2021-May 2022: 32 individuals, Lingyao Investment (fmr Heli No. 6), Heli No. 7 (Apr 2022, 0.19%), Yimijing Biotechnology (exited 2024)",
+  "Institutional Pre-IPO investors at listing: Hanyi Cultural Exchange, Xiangyi Investment, Chifeng Bo-en Jingtian, Ruiqingxiang Investment, Jiaxing Jiaci, Hanxin Pharmaceutical, Hailei Pharmaceutical, Heli No. 7, Lingyao Investment"
+ ],
+ "board_roster_reviewed": "Board at listing (9): executive Ms. Jing Yue (chair), Mr. Yao Xiaodong, Mr. Li Changqing, Ms. Jing Ruihua - controlling family/management, no investor link; non-executive Ms. Yu Ailian (Dec 2017; no investor affiliation; LP in employee platform) - not linked; Mr. Xiao Changqing (Jun 2021; chairperson since Apr 2018 of Shenzhen Heli Investment Fund Management Co., GP/manager of Pre-IPO investor Heli No. 7) - LINKED (moderate strength); INEDs Dr. Zou Pingxue, Dr. Tsang Hiu Leong, Mr. Wu Di - not linked (not read as investor-affiliated).",
+ "rights_and_timing": "No director-nomination/appointment or observer right of any Pre-IPO investor is disclosed (special rights disclosed: divestment rights of four former shareholders, Jiaxing Jiaci information and most-favoured-treatment rights; all ceased before listing application). The 1 rests solely on Xiao Changqing's seat being held by the chairperson of the GP/manager of Heli No. 7. Weakness: Xiao became a director in June 2021, before Heli No. 7 acquired (April 2022) a ~0.19% stake by transfer; the prospectus does not say Heli nominated him. Reviewer may downgrade to unresolved if a nomination link is required.",
+ "evidence": [
+  {
+   "pdf_page": 206,
+   "printed_page": "197",
+   "quote": "Our Board currently consists of nine Directors, comprising four executive Directors, two non-executive Directors and three independent non-executive Directors.",
+   "supports": "Board at listing: 9 directors; NEDs Yu Ailian and Xiao Changqing.",
+   "interpretation": "Defines the seated board."
+  },
+  {
+   "pdf_page": 210,
+   "printed_page": "201",
+   "quote": "Ltd. (深圳市合利私募股權基金管理有限公司), a company principally engaged in equity investments, where he has been primarily responsible for overall strategic planning of the company.",
+   "supports": "Xiao Changqing (NED since Jun 2021) has been chairperson of Shenzhen Heli Investment Fund Management Co., Ltd. since April 2018.",
+   "interpretation": "Ties Xiao to Heli Investment Fund Management."
+  },
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "Since April 2018, he has been the chairperson of the board of Shenzhen Heli Investment Fund Management Co.,",
+   "supports": "Xiao chairs Shenzhen Heli Investment Fund Management Co.",
+   "interpretation": "Same."
+  },
+  {
+   "pdf_page": 140,
+   "printed_page": "131",
+   "quote": "Heli No. 7 is a limited partnership established under the laws of the PRC and is an private equity fund managed by its general partner, Shenzhen Heli Investment Fund Management Co., Ltd.",
+   "supports": "Heli No. 7 (institutional Pre-IPO Investor, acquired 260,000 shares, ~0.19%, April 2022 transfer) is managed by Shenzhen Heli Investment Fund Management Co., Ltd.",
+   "interpretation": "Xiao is chairperson of the GP/manager of an identified Pre-IPO investor: employee/representative-of-GP link. Not described as nomination; he was a director before Heli No. 7 invested."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "Below sets out information of our institutional Pre-IPO Investors.",
+   "supports": "Heli No. 7 is listed as institutional Pre-IPO Investor #9.",
+   "interpretation": "Confirms Heli No. 7 is a defined Pre-IPO Investor."
+  },
+  {
+   "pdf_page": 138,
+   "printed_page": "129",
+   "quote": "Jiaxing Jiaci, a Pre-IPO Investor, was granted customary special rights, including the information right and right to more favorable terms",
+   "supports": "Only special rights described: divestment/information/most-favoured-treatment; no board or observer right described.",
+   "interpretation": "No disclosed director-appointment right; special rights terminated before listing application."
+  },
+  {
+   "pdf_page": 209,
+   "printed_page": "200",
+   "quote": "Ms. YU Ailian (于愛蓮), aged 62, joined our Group in December 2017, and has served as a Director since then.",
+   "supports": "Yu Ailian NED since Dec 2017; bio shows no investor affiliation (is LP of employee platform Huafengming).",
+   "interpretation": "No investor link found."
+  }
+ ],
+ "unresolved_reason": ""
+}

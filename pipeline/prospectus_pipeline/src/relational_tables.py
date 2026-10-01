@@ -16,7 +16,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import datetime as dt
 import json
 import logging
 import math
@@ -33,7 +32,6 @@ import sys
 if str(sys_src) not in sys.path:
     sys.path.insert(0, str(sys_src))
 
-from market_fetcher import parse_bar_date
 sys.path.insert(0, str(ROOT))
 import master_contracts
 from cohort import load_cfg
@@ -71,6 +69,17 @@ def split_sponsors(raw: Any) -> list[str]:
     """按 / 或 ; 拆分保荐人名单；换行只是 PDF 折行，不是分隔符。"""
     names = (normalize_ws(s) for s in re.split(r"[/;]+", str(raw or "")))
     return [n for n in names if len(n) > 3]
+
+
+def parse_flag(value: Any) -> Optional[int]:
+    """1/0 for an explicit flag; None when the field is missing or not a clean 0/1 (never 0 by default)."""
+    if isinstance(value, bool):
+        return int(value)
+    if isinstance(value, (int, float)) and value in (0, 1):
+        return int(value)
+    if isinstance(value, str) and value.strip() in ("0", "1"):
+        return int(value.strip())
+    return None
 
 
 def slugify(name: str) -> str:
@@ -131,10 +140,10 @@ class RelationalTableEngine:
             
             cs_names_raw = ""
             pre_ipo_raw = ""
-            vc_backed = 0
-            pe_backed = 0
-            gov_backed = 0
-            has_board_seat = 0
+            vc_backed = None
+            pe_backed = None
+            gov_backed = None
+            has_board_seat = None
 
             if p_json_path.exists():
                 try:
@@ -142,12 +151,12 @@ class RelationalTableEngine:
                     fields = p_data.get("fields", {})
                     cs_names_raw = clean_str(fields.get("col_CJ", {}).get("value"))
                     pre_ipo_raw = clean_str(fields.get("col_pre_ipo_investors", {}).get("value"))
-                    vc_backed = int(fields.get("col_vc_backed", {}).get("value") or 0)
-                    pe_backed = int(fields.get("col_pe_backed", {}).get("value") or 0)
-                    gov_backed = int(fields.get("col_gov_backed", {}).get("value") or 0)
-                    has_board_seat = int(fields.get("col_vc_board_seat", {}).get("value") or 0)
-                except Exception:
-                    pass
+                    vc_backed = parse_flag(fields.get("col_vc_backed", {}).get("value"))
+                    pe_backed = parse_flag(fields.get("col_pe_backed", {}).get("value"))
+                    gov_backed = parse_flag(fields.get("col_gov_backed", {}).get("value"))
+                    has_board_seat = parse_flag(fields.get("col_vc_board_seat", {}).get("value"))
+                except (OSError, ValueError, AttributeError) as exc:
+                    logger.warning("%s: cannot read investor flags from %s: %s", code, p_json_path.name, exc)
 
             # 1. 解析基石投资者 (Cornerstone)
             if cs_names_raw and cs_names_raw.lower() not in ("none", "nan", "0", ""):
@@ -174,8 +183,9 @@ class RelationalTableEngine:
                         "allocation_value_hkd": None,
                         "pct_of_base_offer": None,
                         "investment_round": "IPO Cornerstone",
-                        "lockup_expiry_date": str(parse_bar_date(l_date) + dt.timedelta(days=183)) if l_date else None,
-                        "board_seat_flag": False,
+                        # contractual lock-up end comes from the event-evidence ledger, not listing date + 183 days
+                        "lockup_expiry_date": None,
+                        "board_seat_flag": None,
                         "source_evidence": "Prospectus Cornerstone Chapter / Col CJ"
                     })
 
@@ -202,8 +212,8 @@ class RelationalTableEngine:
                         "allocation_value_hkd": None,
                         "pct_of_base_offer": None,
                         "investment_round": "Pre-IPO Series",
-                        "lockup_expiry_date": str(parse_bar_date(l_date) + dt.timedelta(days=183)) if l_date else None,
-                        "board_seat_flag": bool(has_board_seat),
+                        "lockup_expiry_date": None,
+                        "board_seat_flag": None if has_board_seat is None else bool(has_board_seat),
                         "source_evidence": "Prospectus History Chapter / Pre-IPO Disclosure"
                     })
 

@@ -1,0 +1,27 @@
+{
+  "code": "3296.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p278; holders verified in the cornerstone section pp269-273 (JPMorgan Asset Management (Asia Pacific), UBS AM Singapore, Shanghai Gaoyi/CICC FT, Perseverance Asset Management, Taikang Life, etc.). The clause 'the period of six months following the Listing Date (both days inclusive)' names no explicit end date: '(both days inclusive)' marks the two boundary days of the six-month period as included, so the six months elapse at the six-month mark and the first free day is the anniversary 2026-10-23, with 2026-10-22 the last restricted day. Candidate's convention and dates are correct. The p230 '24 months' hit is a CSRC approval validity period, not a lock-up.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p288 under 'Undertakings by the Controlling Shareholders Group' (Rule 10.07). CONVENTION CORRECTION: 'ending on the date which is six months from the Listing Date' ends the First Six-Month Period ON the anniversary 2026-10-23, which is therefore the last restricted day; first free day is 2026-10-24.",
+    "corrections": {
+      "first_free_day": "2026-10-24",
+      "last_restricted_day": "2026-10-23",
+      "basis": "Rule 10.07(1)(a): no disposal by members of the Controlling Shareholders Group in the First Six-Month Period ending ON the date which is six months from the Listing Date (2026-10-23, inclusive); first free day 2026-10-24"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p288 (six months from expiry of the First Six-Month Period; cessation of membership of the Controlling Shareholders Group). DATE CORRECTION: the second period runs to and including the 12-month anniversary 2027-04-23; first free day is 2027-04-24.",
+    "corrections": {
+      "first_free_day": "2027-04-24",
+      "last_restricted_day": "2027-04-23",
+      "basis": "Rule 10.07(1)(b): no disposal in the six months from expiry of the First Six-Month Period, running to and including the 12-month anniversary 2027-04-23, to the extent it would cause cessation of membership of the Controlling Shareholders Group; first free day 2027-04-24"
+    }
+  }
+}

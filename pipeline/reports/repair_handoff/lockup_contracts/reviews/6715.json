@@ -1,0 +1,24 @@
+{
+  "code": "6715.HK",
+  "reviewer": "independent verifier V-B",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p262 ('six months from (and inclusive of) the Listing Date'). Frees up ON the anniversary: 2026-06-30 + 6m = 2026-12-30 first free; last restricted 2026-12-29.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "MISSED ELEMENT - the candidate recorded controller_6m as absent, but the prospectus contains a six-month disposal undertaking by the Single Largest Shareholders. p272, 'Undertaking by the Single Largest Shareholders' (verbatim): 'Each of the Single Largest Shareholders has undertaken to the Stock Exchange and our Company that, except pursuant to the Global Offering (including the Over-allotment Option), he/it will not and will procure that the relevant registered holder(s) will not without the prior written consent of the Stock Exchange unless otherwise in compliance with the requirements of the Listing Rules in the period commencing on the date by reference to which disclosure of his/her/its shareholding in our Company is made in this Prospectus and ending on the date which is six months from the Listing Date (the First Six-Month Period), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of our Shares in respect of which he/she/it is shown by this Prospectus to be the beneficial owner (the Relevant Securities)'. The issuer has no controlling shareholder (p116 states 'absence of controlling shareholder and actual controller'), but the Single Largest Shareholders gave a Rule-10.07-style six-month no-disposal undertaking to the Stock Exchange and the Company. The clause ends the period ON the date which is six months from the Listing Date (2026-12-30), so that is the last restricted day and the first free day is 2026-12-31.",
+    "corrections": {
+      "first_free_day": "2026-12-31",
+      "last_restricted_day": "2026-12-30",
+      "basis": "Six-month no-disposal undertaking by the Single Largest Shareholders to the Stock Exchange and the Company (p272): period commences on the prospectus disclosure date and ends ON the date which is six months from the Listing Date (2026-12-30); the stated end date is the last restricted day, so first_free_day = anniversary + 1",
+      "holders": "Single Largest Shareholders: Mr. Wang, Chunan Kalujiaren, Hangzhou Kalujiaren and Hangzhou Xunlongren (employee incentive platforms controlled by Mr. Wang), and the relevant registered holder(s)"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED for the 12-month slot. The Single Largest Shareholders' undertaking (p272) contains only the six-month clause - no second six-month period and no 12-month undertaking was given by any shareholder (the 'Second Six-Month Period' on p273 belongs to the Company's underwriting-agreement undertaking, and the 12-month free-float clause on p275 is the Company's). Absence of a 12-month controller-equivalent restriction is correct.",
+    "corrections": {}
+  }
+}

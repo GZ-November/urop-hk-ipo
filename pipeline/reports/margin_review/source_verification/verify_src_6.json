@@ -1,0 +1,52 @@
+{
+ "index": 6,
+ "ledger_url": "https://www.hstong.com/news/detail/26042423004863454",
+ "url_used": "https://www.hstong.com/news/detail/26042423004863454",
+ "fetched_ok": true,
+ "title": "新股孖展统计 | 4月24日",
+ "published_at_hkt": "2026-04-24T19:43+08:00",
+ "publisher_chain": "智通财经APP relayed by 華盛通 (HSTong, hstong.com)",
+ "survey_scope_wording": "富途证券、辉立证券等券商",
+ "measurement_time_wording": "截至4月24日",
+ "rows_on_page": [
+  {
+   "stock": "01609",
+   "name": "天星医疗",
+   "amount_verbatim": "26.68亿港元",
+   "multiple_verbatim": "超購逾32.16倍"
+  },
+  {
+   "stock": "06810",
+   "name": "商米科技",
+   "amount_verbatim": "1277.44亿港元",
+   "multiple_verbatim": "超購逾1205.46倍"
+  }
+ ],
+ "ledger_comparison": [
+  {
+   "stock_code": "1609.HK",
+   "ledger_amount_100m_hkd": 26.68,
+   "result": "match",
+   "detail": "page: 26.68亿港元 (unit 億 HKD; no unit error)"
+  },
+  {
+   "stock_code": "6810.HK",
+   "ledger_amount_100m_hkd": 1277.44,
+   "result": "match",
+   "detail": "page: 1277.44亿港元 (unit 億 HKD; no unit error)"
+  }
+ ],
+ "closing_day_flags": [
+  {
+   "stock_code": "1609.HK",
+   "subscription_close": "2026-04-29",
+   "article_date_is_close_day": false
+  },
+  {
+   "stock_code": "6810.HK",
+   "subscription_close": "2026-04-24",
+   "article_date_is_close_day": true
+  }
+ ],
+ "notes": "Two images referenced but not rendered; text complete. Ledger published_at_hkt 19:43 matches. Note: page states 天星医疗 as name of 1609; timeline calls it Star Sports Medicine (same 1609 issuer). Page prints time with no timezone; +08:00 (HKT) assumed. All page rows are in the ledger; no stock attributed to another issuer. Ledger date/published_date=2026-04-24/2026-04-24 consistent with page date. Ledger published_at_hkt=2026-04-24T19:43:00+08:00."
+}

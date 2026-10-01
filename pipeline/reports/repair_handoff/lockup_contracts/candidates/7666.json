@@ -1,0 +1,36 @@
+{
+  "code": "7666.HK",
+  "listing_date": "2026-05-13",
+  "cornerstone": {
+    "exists": true,
+    "holders": "China Venture Capital Innovation Investment Fund Co., Ltd., Mirae (Mirae Asset Securities (HK) Limited and Mirae Asset entities), HHLRA, Deerfield, RTW Funds, Arc Avenue, Huadeng Technology, Isometry Global, GF Fund, ICBCUBS Entities, China AMC (HK), Fullgoal Fund, Lake Bleu, Sage Partners, ICBC Wealth Management, ORIX Asia AM (BlackRock Funds described on page 242)",
+    "quote_page": 250,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries, entities under the same management or control (as the case maybe) who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "basis": "six months from (and inclusive of) the Listing Date; restricted period inclusive of the Listing Date, ending the day before the six-month anniversary",
+    "notes": "Section 'RESTRICTIONS ON THE CORNERSTONE INVESTORS'. Holder names from the Cornerstone Placing table on page 249.",
+    "reference_date": "2026-05-13",
+    "computed_first_free_day": "2026-11-13",
+    "computed_last_restricted_day": "2026-11-12"
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": null,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C Pre-Commercial Company with no Controlling Shareholders. The Single Largest Group of Shareholders instead gave a single combined 24-month lock-up (page 291, cross-referenced on page 252 as the lock-up 'pursuant to Rule 10.07 of the Listing Rules'), recorded in controller_12m; there is no separate six-month undertaking. Rule 18C.14 Key Persons / Pathfinder SIIs undertaking (24 months / 12 months) also on page 289."
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 291,
+    "full_quote": "Each of the Single Largest Group of Shareholders has undertaken to each of our Company, the Joint Sponsors, the Sponsor-Overall Coordinators, the Overall Coordinators, the Joint Global Coordinators, the Joint Bookrunners, the Joint Lead Managers, the Hong Kong Underwriters and the Capital Market Intermediaries that, without the prior written consent of the Joint Sponsors and the Sponsor-Overall Coordinators (for themselves and on behalf of the Hong Kong Underwriters) and unless in compliance with the requirements of the Listing Rules, at any time during the period commencing on the date of the Hong Kong Underwriting Agreement and ending on, and including, the date that is 24 months after the Listing Date (the “24-Month Period”)",
+    "basis": "DEVIATION: single combined 24-Month Period instead of the 6m/12m split - period commences on the date of the Hong Kong Underwriting Agreement and ends on, and including, the date that is 24 months after the Listing Date; per the document's explicit end date the last restricted day is the 24-month anniversary (2028-05-13) and the first free day is 2028-05-14",
+    "notes": "Undertaking by the Single Largest Group of Shareholders (no Controlling Shareholders; Chapter 18C Pre-Commercial Company). Page 292 adds that if the Company ceases to be a Pre-Commercial Company, the lock-up expires on the later of the original end date and the 30th day after the Rule 18C.24 removal announcement. Rule 18C.14 Key Persons 24-month / Pathfinder SIIs 12-month undertaking also on page 289.",
+    "reference_date": "2026-05-13",
+    "computed_last_restricted_day": "2028-05-13",
+    "computed_first_free_day": "2028-05-14"
+  }
+}

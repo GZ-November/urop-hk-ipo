@@ -1,0 +1,19 @@
+{
+  "code": "1879.HK",
+  "reviewer": "independent verifier V-H",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Confirmed. Listing Date 2026-04-28 (p7: 'Listing Date is expected to be on or about Tuesday, April 28, 2026'). Quote verbatim on p244. 'period of six months after the Listing Date' = duration wording -> frees ON 2026-10-28, last restricted 2026-10-27. CS investor names spot-checked (Alibaba, GIC, Baillie Gifford, BlackRock, Temasek all on pp.234-243). Chapter 18C issuer.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p291. Chapter 18C combined undertaking: 'Pursuant to Rules 10.07 and 18C.13 of the Listing Rules, each of our Single Largest Shareholders has undertaken ... in the period commencing on the date by reference to which disclosure of its/his shareholdings in our Company is made in this prospectus and ending on the date which is 24 months from the Listing Date'. No 6m/12m split exists; recording the single 24-month combined undertaking in this slot with exists=true and the 12m slot as subsumed is coherent. Inclusive end -> first free 2028-04-29, last restricted 2028-04-28 (python-verified). SLSG membership matches p25 definition (Dr. Shen, LightAI EIP, Mach C, Youguang Zhiyuan/Shuoran/Yihui, Deep Harbor, Foong Jun Zhe, Youguang Yuning, Mr. Zhang Hong).",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: no separate Rule 10.07(1)(b) 12-month clause; '10.07' appears only on p291 (the combined 24-month undertaking) and p295 (Note 2 pledge-notification within the 24-Month Period). The 12-month control-maintenance restriction is subsumed in the single 24-month undertaking recorded in controller_6m.",
+    "corrections": {}
+  }
+}

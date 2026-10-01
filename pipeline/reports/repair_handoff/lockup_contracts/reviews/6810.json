@@ -1,0 +1,19 @@
+{
+  "code": "6810.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p203. Split terms verified against the p202 table (exactly two rows): China Orient Enhanced Income Fund US$5.00m (11 months) and XINWUTANG CO., LIMITED US$31.57m (6 months); total 36.57. Duration wording 'from and including' -> 6m frees ON 2026-10-29 (earliest), 11m frees ON 2027-03-29 (latest, so last restricted 2027-03-28). Python arithmetic matches candidate's aggregate treatment.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p235. Explicit endpoint 'ending on the date which is six months from the Listing Date' ends ON 2026-10-29 inclusive -> first free 2026-10-30. Listing Date p23: 'on or about Wednesday, April 29, 2026'. Matches.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p235. Clause (2) duration wording -> free ON 12-month anniversary 2027-04-29; last restricted 2027-04-28. No 24/36-month controller undertakings (p145/p355 mentions are warranty terms and CSRC-ban lookback). Matches.",
+    "corrections": {}
+  }
+}

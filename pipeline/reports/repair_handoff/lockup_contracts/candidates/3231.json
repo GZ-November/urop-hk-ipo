@@ -1,0 +1,37 @@
+{
+  "code": "3231.HK",
+  "listing_date": "2026-09-09",
+  "cornerstone": {
+    "exists": true,
+    "holders": "SensePower (SensePower Management Limited); CYGG (CYGG Holding Limited)",
+    "quote_page": 233,
+    "full_quote": "Each Cornerstone Investor has agreed that without the prior written consent of our Company, the Sole Sponsor and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of nine months after the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to their respective Cornerstone Investment Agreement",
+    "reference_date": "2026-09-09",
+    "basis": "NINE months after the Listing Date (duration wording); frees up on the nine-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-06-09",
+    "computed_last_restricted_day": "2027-06-08",
+    "notes": "Deviation: cornerstone lock-up is nine months after the Listing Date, not six."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C specialist technology company. No separate six-month controlling-shareholder undertaking exists; a single combined Rule 18C.13/18C.14 undertaking (12 months from the Listing Date for the Single Largest Group of Shareholders and key persons; 6 months only for Pathfinder SIIs) is recorded in the controller_12m slot and covers the first six months as well."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 286,
+    "full_quote": "Pursuant to Rules 18C.13 and 18C.14 of the Listing Rules, each of our Single Largest Group of Shareholders, key persons of the Company and the Pathfinder SIIs (including Legend Chengye, Rajax and Hainan Yunfeng), as identified under the section headed “History, Development and Corporate Structure — Lock-up and Free Float”, has undertaken to the Stock Exchange and to us that, except pursuant to the Global Offering, it will not, unless otherwise permitted under Rule 18C.15 of the Listing Rules: at any time in the period commencing on the date by reference to which disclosure of its shareholding is made in this prospectus and ending on the date which is 12 months (or 6 months",
+    "reference_date": "2026-09-09",
+    "basis": "Single combined Chapter 18C undertaking replacing the 10.07 6m/12m split: no disposal in the period ending ON the date which is 12 months from the Listing Date for the Single Largest Group of Shareholders / key persons; inclusive endpoint, first free day is the day after the 12-month anniversary",
+    "computed_first_free_day": "2027-09-10",
+    "computed_last_restricted_day": "2027-09-09",
+    "notes": "Quote ends mid-sentence at the page break; the sentence continues on p.287: 'in the case of the Pathfinder SIIs) from the Listing Date, dispose of...'. Pathfinder SIIs are restricted for 6 months only; the Single Largest Group of Shareholders and key persons are restricted for 12 months. Holders: Single Largest Group of Shareholders, key persons and Pathfinder SIIs."
+  }
+}

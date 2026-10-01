@@ -711,7 +711,7 @@ def build_master(
                     "from": prev_rate, "to": last_rate, "delta": delta,
                 }
 
-    # 布尔列空值：注册表 dtype=boolean 的列按约定必须填 0/1，不得留空
+    # 布尔列覆盖：未知值允许缺失，不能为了覆盖率将未知填成 0
     boolean_fill_gaps: dict[str, dict[str, float]] = {}
     if registry is not None:
         bool_headers = [v["header"] for v in registry["variables"] if v.get("dtype") == "boolean"]
@@ -873,7 +873,7 @@ def _write_report(path: Path, s: dict[str, Any], has_registry: bool) -> None:
             lines.append(f"| `{header}` | {d['from']:.1f}% | {d['to']:.1f}% | {sign}{d['delta']:.1f}pp |")
     lines.append("")
 
-    lines.append("### 5.2 布尔列空值警告（约定：0/1 不得留空）")
+    lines.append("### 5.2 布尔列覆盖警告（已确认值为 0/1，未知保留缺失）")
     lines.append("")
     if not s["boolean_fill_gaps"]:
         lines.append("全部布尔列在所有 cohort 均为 0/1 填报，无空值。")
@@ -885,7 +885,7 @@ def _write_report(path: Path, s: dict[str, Any], has_registry: bool) -> None:
             cells = " | ".join(f"{rates[tag]:.1f}%" if tag in rates else "—" for tag in tags)
             lines.append(f"| `{header}` | {cells} |")
         lines.append("")
-        lines.append("处置：确认「确无」后补 0（或按手册填 NA），重跑 export 与 master。")
+        lines.append("处置：依字段证据规则确认有无；未知保留缺失，不得为覆盖率补 0。更新已确认值后重跑 export 与 master。")
     lines.append("")
 
     lines.append("## 6. 股数恒等式校验（警告级，容差 ±1 股）")

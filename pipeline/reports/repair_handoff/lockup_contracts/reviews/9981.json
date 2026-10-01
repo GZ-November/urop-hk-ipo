@@ -1,0 +1,19 @@
+{
+  "code": "9981.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p224 ('period of six months following the Listing Date'). Duration wording frees up ON the anniversary: first_free_day 2026-08-13, last_restricted_day 2026-08-12 as recorded. All 16 named holders located in the cornerstone section (pp.216-225).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. '10.07' appears only as a percentage figure (p124); 'Controlling Shareholder' occurrences are unrelated (US OISP regulatory text p51, non-controlling shareholder in accounts pp.400-401, Articles appendix p415). A+H (Rule 19A) issuer; the single largest shareholder (Mr. Zhou, p122) gives no disposal or control lock-up; the Underwriting section (pp.283-284) contains only Company undertakings (Rule 10.08 and Hong Kong Underwriting Agreement).",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: no controller 12-month control/disposal undertaking; remaining '36 months' hits (pp.444, 449) relate to share-scheme terms, not controller lock-ups.",
+    "corrections": {}
+  }
+}

@@ -1,0 +1,68 @@
+{
+ "code": "1392.HK",
+ "pdf_sha256": "d9ef0cf5ea89405e0e427e7aab5fd4e57f092027e6c8a3f1a993a8e65699a0cd",
+ "classification": "supports_1",
+ "candidate_value": 1,
+ "pre_ipo_investors": [
+  "Series A (30 Nov 2020, RMB40m): Taolue New Energy (Zheshang Capital-managed), Kaiying No. 8, Kaiying No. 9",
+  "Series B (30 Jul 2021, RMB100m): led by Gaoxintou (HTI Group) incl. Chengdu Zhongxiaodan, Shenrong Ruihe, Rencai No. 2, Xiaohe, Taolue Xinwang, Kaiying No. 10, Zhu Zhenkui, Fuquan No. 1",
+  "Series C (18 Oct 2024): Jinlan Sunshine (Zheshang Capital), Panhui Investment, Kezhihua",
+  "Series C+ (31 Dec 2024): Panhui Investment",
+  "Series D (18 Jul 2025): Zhide No. 9",
+  "Zheshang Capital Group (Taolue New Energy, Taolue Xinwang, Jinlan Sunshine; GP Zhejiang Business Venture Capital Management (Shenzhen)) holds 14.86%"
+ ],
+ "board_roster_reviewed": "Nine directors at LPD. Executive: Zhou Bo (chair/GM, founder), Miao Rui, Chai Jian (board secretary; ex fund/securities asset-management roles, not linked to investors), Zou Xiaogang, Chen Yonggang. Non-executive: Yu Lijie - appointed Director 30 Dec 2020 (one month after the Zheshang-led Series A), re-designated NED July 2025; general manager (deputy GM from Mar 2013, GM from Aug 2017) of Zhejiang Business Venture Capital Management (Shenzhen) Co., Ltd., the GP/manager of the three Zheshang pre-IPO investment funds; sits on Audit Committee. INEDs: Chen Haiping (university finance), Zhong Luhuan (partner at Zhonghong Jin Kong; ex-Hony PE fund manager to Jan 2025; not linked to a pre-IPO investor), Ho Ka Cin Verona (lawyer). Only Yu Lijie is linked to a pre-IPO investor institution.",
+ "rights_and_timing": "Special rights of pre-IPO investors (co-sale, redemption, information, anti-dilution, pre-emptive, liquidation preference) do NOT include a board nomination/observer right in the listed rights, and all special rights were terminated on filing of the listing application (some reinstate only if listing fails). So there is no disclosed contractual appointment right; the link is that a seated non-executive director is a senior executive (GM) of the GP/manager of Zheshang pre-IPO investor funds, who remain a 14.86% shareholder at listing. The prospectus does not state that he was nominated by the investors, and the bio gives no end date for his Zheshang role. The bio is worded as a past-tense narrative under prior experience, so continuing employment at listing is inferred from the absence of an end date.",
+ "evidence": [
+  {
+   "pdf_page": 194,
+   "printed_page": "186",
+   "quote": "From March 2013, Mr. Yu Lijie worked as a deputy general manager and was promoted as a general manager in August 2017, at Zheshang Business Venture Capital Management (Shenzhen) Co., Ltd.",
+   "supports": "NED Yu Lijie is GM of Zhejiang Business Venture Capital Management (Shenzhen) (no end date given).",
+   "interpretation": "Director who is an executive of the GP/manager of identified pre-IPO investors; seat held at LPD."
+  },
+  {
+   "pdf_page": 194,
+   "printed_page": "186",
+   "quote": "Mr. Yu Lijie (喻立杰), aged 55, is our non-executive Director. He was appointed to our Board as a Director on 30 December 2020 and was redesignated as a non-executive Director in July 2025.",
+   "supports": "Yu Lijie is a non-executive Director appointed 30 Dec 2020.",
+   "interpretation": "Seat in place at prospectus date; appointed one month after Zheshang-led Series A."
+  },
+  {
+   "pdf_page": 116,
+   "printed_page": "108",
+   "quote": "Each of the above funds is managed by Zhejiang Business Venture Capital Management (Shenzhen)",
+   "supports": "Taolue New Energy, Taolue Xinwang and Jinlan Sunshine (Pre-IPO Investors) are managed by Zhejiang Business Venture, the GP.",
+   "interpretation": "Identifies GP/manager of pre-IPO investors as Yu Lijie employer."
+  },
+  {
+   "pdf_page": 107,
+   "printed_page": "99",
+   "quote": "On 30 November 2020, we entered into a capital increase agreement with our Series A investors",
+   "supports": "Series A investors include Taolue New Energy, Kaiying No. 8 and No. 9.",
+   "interpretation": "Taolue New Energy (Zheshang) is a pre-IPO investor."
+  },
+  {
+   "pdf_page": 189,
+   "printed_page": "181",
+   "quote": "Zhejiang Business Venture . . . . . . . . Interest in controlled corporation (3) 1,279,459 Unlisted Shares (L) 14.86%",
+   "supports": "Zhejiang Business Venture deemed interested in 14.86% via the three funds.",
+   "interpretation": "Investor group remains a substantial shareholder at listing."
+  },
+  {
+   "pdf_page": 114,
+   "printed_page": "106",
+   "quote": "all such special rights granted to our Pre-IPO Investors have been terminated prior to the filing of the listing application by our Company with the Stock Exchange",
+   "supports": "Special rights (co-sale, redemption, information, anti-dilution, pre-emptive, liquidation preference) terminated pre-filing; none is a board right.",
+   "interpretation": "Rights terminated but the seat itself persists; no observer/nomination right disclosed."
+  },
+  {
+   "pdf_page": 190,
+   "printed_page": "182",
+   "quote": "Our Board currently consists of nine Directors, including five executive Directors, one non-executive Director and three independent non-executive Directors.",
+   "supports": "Board composition: the only non-executive director is Yu Lijie.",
+   "interpretation": "Seat category for investor nominee is filled by the Zheshang-linked person."
+  }
+ ],
+ "unresolved_reason": ""
+}

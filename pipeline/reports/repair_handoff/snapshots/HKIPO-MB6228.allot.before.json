@@ -1,0 +1,122 @@
+{
+  "code": "6228.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4994,
+      "page": 5,
+      "quote": "Subtotal \n44,779,800 \n49.94% \n49.94% \n3.04%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 4.42,
+      "page": 4,
+      "quote": "Subscription level  \n4.42 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 22329,
+      "page": 4,
+      "quote": "No. of valid applications \n22,329",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 39645800,
+      "page": 15,
+      "quote": "a total of 22,329 valid applications made by the public will be conditionally allocated on the basis set out below: NO. OF HDRS APPLIED FOR NO. OF VALID APPLICATIONS POOL A 100 12,500",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 4.42 times",
+      "page": 4,
+      "quote": "Subscription level  \n4.42 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/06/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement among our Company and the Overall Coordinators (for themselves and on behalf of the Hong Kon",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**25/06/2026 22:53**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 896686000,
+      "page": 3,
+      "quote": "Number of Offer HDRs (before exercise of the Over-allotment Option) 89,668,600",
+      "confidence": "high",
+      "note": "89,668,600 Offer HDRs representing 896,686,000 underlying Shares (1 HDR = 10 underlying Shares, matching prospectus col_M)."
+    },
+    "col_CT": {
+      "value": 89669000,
+      "page": 4,
+      "quote": "Final no. of Offer HDRs under the Hong Kong Public Offering  \n8,966,900",
+      "confidence": "high",
+      "note": "8,966,900 Offer HDRs representing 89,669,000 underlying Shares (1 HDR = 10 Shares)."
+    },
+    "col_CU": {
+      "value": 807017000,
+      "page": 4,
+      "quote": "Final no. of Offer HDRs under the International Offering (after \nreallocation) \n80,701,700",
+      "confidence": "high",
+      "note": "80,701,700 Offer HDRs representing 807,017,000 underlying Shares (1 HDR = 10 Shares)."
+    },
+    "col_CV": {
+      "value": 3039000,
+      "page": 2,
+      "quote": "as been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, July 23, 2026, in respect of an aggregate of 3,039,000 HDRs (the ",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND THE END OF STABILIZATION PERIOD (23/07/2026 20:56)"
+    },
+    "col_CW": {
+      "value": "No clawback triggered; no Offer HDRs reallocated from the International Offering (N/A); final HK Public Offering HDRs 8,966,900, being 10.00% of the Global Offering.",
+      "page": 4,
+      "quote": "No. of Offer HDRs reallocated from the International Offering  \nN/A \nFinal no. of Offer HDRs under the Hong Kong Public Offering  \n8,966,900",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2268710000,
+      "page": 3,
+      "quote": "Net proceeds \nHK$2,268.71 million \nNote: The Company will not receive any of the net proceeds from the Global Offering.",
+      "confidence": "medium"
+    },
+    "col_CY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 14731366060,
+      "page": 3,
+      "quote": "No. of issued Shares upon Listing (before exercise of the Over-\nallotment Option) \n14,731,366,060",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0305,
+      "page": null,
+      "quote": "公式：(col_CS 896,686,000 − col_CK 0.4994×col_CS) ÷ col_CZ 14,731,366,060 = 0.0305；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 89,668,600 − col_CK 0.4994×col_CS) ÷ col_CZ 14,731,366,060 = 0.0030；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 14731366060,
+      "page": 3,
+      "quote": "公式：(col_CS 896,686,000 − col_CK 0.4994×col_CS) ÷ col_CZ 14,731,366,060 = 0.0305；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

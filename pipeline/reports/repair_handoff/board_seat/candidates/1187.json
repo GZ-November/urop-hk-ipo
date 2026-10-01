@@ -1,0 +1,42 @@
+{
+ "code": "1187.HK",
+ "pdf_sha256": "cfbde5e769313047bba9925675628a7a48d8607d3e2868f36c1691160ed4c880",
+ "classification": "unresolved",
+ "candidate_value": null,
+ "pre_ipo_investors": [
+  "none disclosed (no Pre-IPO Investments section; company is already A-share listed on ChiNext since Oct 2021). Pre-A-share VC/PE holders at Dec 2019 conversion: Huaige Gongxin, Danlu VC, Chanxing Dingxin, Hunan Cultural Tourist, Yuhua Economic, Hunan Bofu, Yanjin Puzi - not labelled Pre-IPO Investors for the H-share offering"
+ ],
+ "board_roster_reviewed": "Seven directors at LPD. Executive: Zhang Min (chairperson/president, founder), Zhang Zhiming, Xue Xiaoqiao, He Bangjie. INEDs: Ning Huabo (lawyer), Shen Nan (CFO Gaotu Techedu; ex-PwC, briefly Dalian Port and Shipping Industry Fund Management in 2011-12), Zhou Rong (tech entrepreneur). No non-executive director and no observer; no director described as linked to any investor or fund. None of the pre-A-share VC investors is linked to a director.",
+ "rights_and_timing": "No special rights, nomination rights or observer rights disclosed anywhere; but also no explicit statement that there are no pre-IPO investors or that investors have no such rights. Only generic Articles text on director nomination.",
+ "evidence": [
+  {
+   "pdf_page": 166,
+   "printed_page": "157",
+   "quote": "Our Board currently consists of seven Directors, comprising four executive Directors and three independent non-executive Directors",
+   "supports": "Full board composition at listing.",
+   "interpretation": "No non-executive director/observer seat exists."
+  },
+  {
+   "pdf_page": 104,
+   "printed_page": "95",
+   "quote": "Since 2021, our A Shares have been listed and traded on the ChiNext Market of the Shenzhen Stock Exchange",
+   "supports": "Issuer is already A-share listed.",
+   "interpretation": "Explains absence of an H-share Pre-IPO Investments section; not an affirmative no-pre-IPO-investor statement."
+  },
+  {
+   "pdf_page": 105,
+   "printed_page": "96",
+   "quote": "Between the 2009 and 2019, the Company underwent rounds of capital increases and transfers.",
+   "supports": "Earlier investment rounds exist but are not detailed.",
+   "interpretation": "Historic PE/VC holders exist but are not linked to directors."
+  },
+  {
+   "pdf_page": 169,
+   "printed_page": "160",
+   "quote": "Ms. Shen Nan (沈楠), aged 41, joined the Group as an independent non-executive Director in August 2025.",
+   "supports": "INED biography read; no link to a shareholder investor institution.",
+   "interpretation": "No investor link found."
+  }
+ ],
+ "unresolved_reason": "Searched entire text for Pre-IPO, observer, right to nominate/appoint, special rights: no hits (no Pre-IPO Investments section at all). Full read of all seven director biographies shows no link to any investor, but the prospectus contains no explicit statement that there were no pre-IPO investors or that investors hold no nomination/observer rights (pre-A-share VC funds held ~23% at the 2019 conversion and are not addressed). Absence of disclosure is not evidence of 0, so unresolved (leaning 0)."
+}

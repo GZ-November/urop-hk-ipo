@@ -1,0 +1,37 @@
+{
+  "code": "2041.HK",
+  "listing_date": "2026-09-07",
+  "cornerstone": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No cornerstone investors in this offering. Searched all pages for 'cornerstone' (case-insensitive), 'RESTRICTIONS ON THE CORNERSTONE', 'Cornerstone Investor': the only matches are 'Linkway Cornerstone' / 'Shenzhen Linkway Cornerstone Equity Investment Fund Partnership', the name of a PRE-IPO investor (Series C financing), not an IPO cornerstone placing investor. No Cornerstone Investors section exists."
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 285,
+    "full_quote": "(a) in the period commencing on the date of this prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares of the Company in respect of which he/she/it is shown in this prospectus to be the beneficial owner.",
+    "reference_date": "2026-09-07",
+    "basis": "Rule 10.07(1) undertaking: period from prospectus date ending ON the date which is six months from the Listing Date; inclusive endpoint, first free day is the day after the six-month anniversary",
+    "computed_first_free_day": "2027-03-08",
+    "computed_last_restricted_day": "2027-03-07",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 285,
+    "full_quote": "(b) in the period of six months commencing on the date on which the period referred to in paragraph (a) above expires, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests, or encumbrances in respect of, any of the Shares referred to in paragraph (a) above if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, he/she/it would cease to be a controlling shareholder of our Company (as defined in the Listing Rules).",
+    "reference_date": "2026-09-07",
+    "basis": "Rule 10.07(1)(b)-style undertaking: second six-month period commencing on expiry of the first (six months from the Listing Date); frees up on the 12-month anniversary of the Listing Date",
+    "computed_first_free_day": "2027-09-07",
+    "computed_last_restricted_day": "2027-09-06",
+    "notes": "Conditional on ceasing to be a controlling shareholder; effective control maintenance = 12 months from Listing Date. Note 3 pledge-notification undertaking runs to the date which is 12 months from the date dealings commence (p.286)."
+  }
+}

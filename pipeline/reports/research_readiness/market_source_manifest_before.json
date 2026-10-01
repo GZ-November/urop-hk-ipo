@@ -1,0 +1,358 @@
+{
+  "as_of": "2026-09-30",
+  "note": "Hashes freeze stored bytes; they do not certify source truth or complete market coverage.",
+  "artifacts": [
+    {
+      "path": "pipeline/exports/HKIPO-2026-AH-reference.csv",
+      "sha256": "c774b001c24607a75a35a4aa4172ea02906d6020bc638832de3637a4b6f9ccbc"
+    },
+    {
+      "path": "pipeline/exports/HKIPO-2026-margin-daily.csv",
+      "sha256": "3b3831b3faaa9b4a1f34329725b075a7ceaad52147797ada1721d185695ec857"
+    },
+    {
+      "path": "pipeline/exports/HKIPO-MASTER-AH-reference.csv",
+      "sha256": "96c1903b520949f1d77377618189cf2b1e1dd9e0aff0f278923071b7e4ea2f31"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/margin/reported_snapshots.json",
+      "sha256": "f7a1e9084866b19088727bb257361fbed3eb19737900462d92783ef0eb241466"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh600276.json",
+      "sha256": "bfc7be5d04cf08c91c41ad5f112e42ec82064039c02ec12611550cef002b3ebe"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh600988.json",
+      "sha256": "717a25b71713aab2cd27b9973f1e551526df48366b80c92370716e575b83d550"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh601678.json",
+      "sha256": "262ff2f0e849a41dae3b65ea924b544a95bbac54e38d2c53bcf9c367ea4fa624"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603288.json",
+      "sha256": "afa6b6dde61fa11f168ed6156356558f4f9067c77f2a9319dcab04872145049b"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603296.json",
+      "sha256": "53dfb285f5c00b47a404eec256b5f90600732daa8d0707a6d8814943377e7586"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603341.json",
+      "sha256": "e9a1a1a31744a19317571c0157124cd7d74704e9b351679e56f28131f9cbd910"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603501.json",
+      "sha256": "0974173f7b99d6b201fe3ba1c770a609b30a39a11cdda8c0d8ee39425aabfe1d"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603986.json",
+      "sha256": "85645ff318ed3a51dd4635f2c460b4f37877d92c0561514e88ccf9002192c2dd"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh605499.json",
+      "sha256": "41b0defe8db0fb73dc21dea407d78580b420b5021932b3ad9b2e73b1085c8e38"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688008.json",
+      "sha256": "245ac4fea0c45d0bdeca4190093abcfed10280c11daa6d2fa21c19750d724354"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688062.json",
+      "sha256": "fc5df1efa2061388554edb2a92d3e342ea7e48e7981f1ac95a281f8f20dfa3b0"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688249.json",
+      "sha256": "86ee8c2f3453987d004b59790a454e6a505c8be85e623349bc455fba3825a931"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688337.json",
+      "sha256": "54975abb3257749fa692a0bba9519c71c34cef982116c924051c691edc3809f6"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688630.json",
+      "sha256": "b5755fd7f3500aaacfd8921b4f49c03cce2ab3eb1f575065e524eef7ffb51938"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz001389.json",
+      "sha256": "ae693809d67af8b29bfb9a673640433183734d807209adf60a4319d5d178e09f"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002050.json",
+      "sha256": "dc0830ced2104835346945776d0ce3a96f310a12ed23e689613f84d97d3a2a04"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002130.json",
+      "sha256": "dc57269883c6b21d8f2c75e573f6ba7c6e064214ec9e1fcf10fcd89a9a142006"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002475.json",
+      "sha256": "662aa1b112ee32996328f0f7ee8e9d085846e3c9bf9d307d2ff41bd65e9aa61a"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002487.json",
+      "sha256": "73a3a97e022e7632ba84d66fbd4512ac189946e6ac5f9277adbca858c79165df"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002600.json",
+      "sha256": "0d5d3ee400eaa32b3f85f7ec270d44fb120437a42ae9607a7d098e65093cbaad"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002714.json",
+      "sha256": "d6b6649c3ef19e0625160530fefc4f5fd3924d35fea8131f6e2771dd116a049b"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002747.json",
+      "sha256": "20b375a07f4c0a638a4b36de64a608e720a45fcc7c41a39c6e887c024bc16139"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002768.json",
+      "sha256": "d0b0fa496d1d089d19199bb3e705c56a3cbd00cb6df63f62ba716d4fe8c018bb"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002803.json",
+      "sha256": "02df97aa5efa703e5627625bef9f17da806a6140292d2f65f433fda994c09cf3"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002865.json",
+      "sha256": "e640000ebfff04ac34485c8c23dda747dea7675d2460920aaa0d40da643e8fe2"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz002881.json",
+      "sha256": "fa41d0cc5693aef165f0f7f3e9feee23d14214a32768133e0d87f83de28de9c8"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz003021.json",
+      "sha256": "9734556a79b64b87897ab07914f8195a2400d043b7537a66ed0eb2d5a8a7aca9"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300077.json",
+      "sha256": "250f11fa29a45d6ebc14e83cad3496e1c7dd60219a5bdd49868d8de721b139ad"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300223.json",
+      "sha256": "60c01b539f6a4da4716f6cbb69f29cb83559a0907b73b181f0658e3adab7ee18"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300308.json",
+      "sha256": "3fb8faad1485da27d61a2934b8a3ff8480a8f7f66eb51fef3100f20268d5d8d9"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300408.json",
+      "sha256": "009c924aa05cd9fe050d27a9a9d12c011aada4b74477f3f90a3432c20bd5255f"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300450.json",
+      "sha256": "102d38ea5b0699d75414a044abd9f32457762e6c46f036c15b97466f724feedb"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300476.json",
+      "sha256": "6c22c3d76ca7615d6b7c233067eaa7ef2cd306dc26f6ea39cd07db29f51091e6"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300568.json",
+      "sha256": "00b8e0f1bba360912f14ad69dc1ebc694bcce0b1cf34f7052b40462565905040"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300661.json",
+      "sha256": "283a7054b40b2aa0f1c77cb0c7f8f38515b4309c684100a7c910224ec5cbee79"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300750.json",
+      "sha256": "5da97d60c9568aa83f19258ceac30233a7c236e6acbb43a070c2f945633d2436"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300866.json",
+      "sha256": "ac4bab105b51242b0b99c936a7ae52c6ea1bbac067a3c6b3e048eba2c2d8d870"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz301087.json",
+      "sha256": "8f23d748e68c80b7011522b79878d9139edb3cfd98335b060841045bee5d69ca"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz301200.json",
+      "sha256": "fd56582b08e5bd6b6b5a7e1064c2e5f96c9ae86ad1cbebf9ec42812642253a79"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz301308.json",
+      "sha256": "abbdd0143a05dd67753c3fcf38aa722ff1a24441c0757ccb84374384955069fb"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz301377.json",
+      "sha256": "43f137da1ecb766af69edcde70c72f0df0a920e812564e120d2da256a1117fce"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/csi300.json",
+      "sha256": "bb4b95baf48c31ef4573fc4c8c90ccb667518f956632b966dc9f324894ae302c"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/fx_cnyhkd.json",
+      "sha256": "ec826d80b556811ed02839a6e8759fb0b60274c542753d4a2eb8cc7977bf7e55"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk00470.json",
+      "sha256": "6f75d5feeb70df65e23cba5bfcb2e64f8a99860e39b0d8dd2ed00c31f4218a84"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk00501.json",
+      "sha256": "649a4b59a3e69c6499b10d7b7431fb576abca3006aa9083ea67343385a14c83c"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk00537.json",
+      "sha256": "a8c948e565c073e6fcbbafc63c48387ff0bf66a8434ab719cf2dd9d61d57b0f5"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk00668.json",
+      "sha256": "16615c43917a7f5cd2b919a2aeb2c0f308d2ee8af00a8cb97c3aadcc3b3ac5b5"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01081.json",
+      "sha256": "12df20037cff7179623666083cd7072004ea180f3d086b8a200b94fec041d128"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01187.json",
+      "sha256": "1d2c62243f398ffd09c65c8c50376815b790b188cd38284f9678c4c8b47280d9"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01276.json",
+      "sha256": "c0f3366f02d9dad56f471be1f06d20e0375d4ebb8a9e3f6bbac060d984c02d32"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01377.json",
+      "sha256": "35270874631f34160ba015c26b6a79750828c834cf42cac4a1e5fbb5adf19244"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01688.json",
+      "sha256": "91f3fdf6e4bffabd9fa4f04fd32baaffc3966be9aede79c76d35dbebc0e676ad"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk01989.json",
+      "sha256": "1cc618d37d3085bdd81f87a908f6ab419d59cf9c2f16515fda14d874ccd0af4e"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02050.json",
+      "sha256": "6f9a9d3cd70347390545984975093db0a5a682a644f2d24f00559813c1828589"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02249.json",
+      "sha256": "fd74591d97501384b10c587a2b0808d2f1dadebe00f0eda3b14d7faebd214b31"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02475.json",
+      "sha256": "3a29f9f5e01428a40519520d7b74d18e333e19c9353ecbbab8eccf9272edb095"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02476.json",
+      "sha256": "530777c87a578fd2c3da8ab8ea384cac4f0a35668bb580d0c8b38f3598c968bb"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02493.json",
+      "sha256": "c9563ad5bbb75a53e1453e2ac5834c7d918c8087782eba4d4604ce8ec8050d09"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02603.json",
+      "sha256": "243a299fea25abae0424a20e229bbca9cb6cb61b353779d1c93221f383e0b00c"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02692.json",
+      "sha256": "b1868d30fdd240c7829b22b1732b18c8272acecc499e09634c1332eda0ffa872"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02701.json",
+      "sha256": "1829aeac29d987ac7be33f2800476be7794bb004cfc4939553116cf3200493c6"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02714.json",
+      "sha256": "e2dc75848492519344ebb77f9297fba934134b39210228709c88eae33d93ee54"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02715.json",
+      "sha256": "56f8dd8065029234e19ff86f7d677737f71215cc8a1eea6b023366e17599a1f9"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02768.json",
+      "sha256": "2f6f8a710871d8f4da9ad622f152e93a23fd49771fd306b2930b451bd204dbd4"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk02865.json",
+      "sha256": "e409e91ef65861b5dc0c0c1e3e09b779aad91a5a122de85489f6c4f28174d584"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03200.json",
+      "sha256": "5a735b7a5fb3421294107ad893dff1591fc3749810f4629484631233fa426091"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03223.json",
+      "sha256": "a16f85b3b839cd3f0de9e1137337b70ff0a412fe5db4b483a16884d9b68b8c62"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03268.json",
+      "sha256": "f9be175d1240b78528e11ace42d72922496390cf878c4052f20dfa3282146554"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03288.json",
+      "sha256": "dc920810f6528733f06740cde5ef0ce7a054b7fe46d3707813e0710353d8ad17"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03296.json",
+      "sha256": "3948aede1101b1ecda6183e344852c8eeba99c0d84d8eff4bbb23423b9a2bb9c"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03308.json",
+      "sha256": "61c2cc46df9b53498295e7829c6e7df2b6030390155efe83d823e5daa7978d09"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03661.json",
+      "sha256": "34242d89fed837d64b4e3350f7a5f5f96d217b489a88bb367d21f8bb21612a9e"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03750.json",
+      "sha256": "e34d7dcd07ace17d3d0e7c0bb6851f55c18d1e7300ea8df71fb33f54072e4555"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03986.json",
+      "sha256": "297e28baf74a82396da98d2ea57e7628ed542a553a4469e879a769a035733a23"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06067.json",
+      "sha256": "4ecfbbafc91bdb835d6a79fb9b7376ac13647a8037ec8861f731ef0dc0a4b82e"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06693.json",
+      "sha256": "6fd1c0a4a6213a76447843059b4cda46c60d9bce4ee3107e5e789df876cf6a39"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06745.json",
+      "sha256": "0d18fe00b5fa135f4d9c858734828979fabbb69d9ee57fc1d53caf64954694bc"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06809.json",
+      "sha256": "ba2d177903f32a7dac96aa637d4fa53d21c0bf442d5061e207ac04d0cc01f3bd"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06951.json",
+      "sha256": "ab227bf1f9c0d75db04d901608b806569fc6a90a28ef508188e4f0059928df64"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09611.json",
+      "sha256": "98d0e2b43d7333858b102ebba517184e624487a284b3ec6b626f04e8bd474845"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09630.json",
+      "sha256": "283ec86b81a5b999294d8d0120d21257ecce78307b7a1b70570aee307f4f4adb"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09976.json",
+      "sha256": "52587cdd40a7b859818ebc345d97d6be2142e3c339855dbf03b5078055b5f557"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09980.json",
+      "sha256": "59e114e066d1bf9b0d4b3fb808458c2e80ae5aa8fc94c1d4d95463837c46d9b4"
+    },
+    {
+      "path": "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09981.json",
+      "sha256": "b6ffd0be1731350c54fecccd458cd7b96d4dc06d6230557851260d96633c58b7"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "code": "3308.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.300: 'period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”)'. Duration wording frees up ON the anniversary: listing 2026-07-30 -> first_free_day=2027-01-30, last_restricted_day=2027-01-29. Holders list (Temasek, Taibai, True Light, HHLRA, JPM entities, BlackRock, YF Capital, Aspex, ADIA, Wellington, Perseverance, Indus, Mirae, NGS Super, etc.) consistent with the cornerstone table pp.285-300 (aggregate ~US$3,450m).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.306: '(B) Undertakings by our Single Largest Group of Shareholders' pursuant to Rule 10.07 — 'ending on the date which is six months from the Listing Date (the “First Six-Month Period”)'. Inclusive explicit end -> last_restricted_day=2027-01-30, first_free_day=2027-01-31. Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed. The Rule 10.07 undertaking on p.306 contains only the First Six-Month Period disposal restriction — there is no paragraph (b)/Second Period and no Note 3 undertaking; the text contains zero hits for 'twelve months' and no 'Second Six' anywhere. The Single Largest Group of Shareholders (Zhongji Holding, Longkou Zhongji Zhiyuan, Mr. Wang Weixiu, Mr. Wang Xiaodong) holds only ~16.5% post-Listing and is described as controlling shareholder/de facto controller only under PRC law, so no Listing-Rules 12-month control-maintenance undertaking exists.",
+    "corrections": {}
+  }
+}

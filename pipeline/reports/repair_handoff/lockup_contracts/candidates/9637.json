@@ -1,0 +1,37 @@
+{
+  "code": "9637.HK",
+  "listing_date": "2026-06-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "GIC; Loomis Sayles (Loomis Investors); RTW Funds; Symbiosis; Tencent; Cormorant; DAMSIMF; GF Fund; China Universal (HK); E Fund; Loyal Valley Capital entities",
+    "quote_page": 254,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries, entities under the same management or control (as the case maybe) who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-06-29",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; restricted period inclusive of Listing Date, exclusive of the six-month anniversary",
+    "computed_first_free_day": "2026-12-29",
+    "computed_last_restricted_day": "2026-12-28",
+    "notes": ""
+  },
+  "controller_6m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 285,
+    "full_quote": "Each member of the Single Largest Shareholders Group has undertaken to each of our Company, the Joint Sponsors, the Joint Representatives, the Overall Coordinators, the Joint Global Coordinators, the Capital Market Intermediaries, the Joint Bookrunners, the Joint Lead Managers, the Hong Kong Underwriters that, without the prior written consent of the Joint Sponsors and the Joint Representatives, (for itself and on behalf of the Hong Kong Underwriters) and unless in compliance with the requirements of the Listing Rules: (a) he/she/it will not, and will procure that the relevant registered holder(s), any nominee or trustee holding on trust for him/her/it and the companies controlled by him/her/it will not, at any time during the First Six Month Period, (i) sell, offer to sell, accept subscription for, contract or agree to allot, issue or sell, mortgage, charge, pledge, hypothecate, lend, grant or sell any option, warrant, contract or right to purchase, grant or purchase any option, warrant, contract or right to sell, or otherwise transfer or dispose of or create an encumbrance over, or agree to transfer or dispose of or create an encumbrance over, either directly or indirectly, conditionally or unconditionally, any Shares or other securities of our Company or any interest therein (including, without limitation, any securities convertible into or exchangeable or exercisable for or that represent the right to receive, or any warrants or other rights to purchase, any Shares or any such other securities, as applicable or any interest in any of the foregoing), or deposit any Shares or other securities of our Company with a depositary in connection with the issue of depositary receipts, or (ii) enter into any swap or other arrangement that transfers to another, in whole or in part, any of the economic consequences of ownership (legal or beneficial) of any Shares or other securities of our Company or any interest therein (including, without limitation, any securities convertible into or exchangeable or exercisable for or that represent the right to receive, or any warrants or other rights to purchase, any Shares or any such other securities, as applicable or any interest in any of the foregoing), or (iii) enter into any transaction with the same economic effect as any transaction specified in paragraph (a)(i) or (ii) above, or (iv) offer to or agree to or announce any intention to effect any transaction specified in paragraph (a)(i), (ii) or (iii) above, in each case, whether any of the transactions specified in paragraph (a)(i), (ii) or (iii) above is to be settled by delivery of Shares or other securities of our Company or in cash or otherwise, and whether or not the transactions will be completed within the First Six Month Period; and",
+    "reference_date": "2026-06-29",
+    "basis": "no-disposal undertaking by each member of the Single Largest Shareholders Group during the First Six Month Period, defined as the period up to and including the date falling six months after the Listing Date (inclusive end per “up to and including the date falling six months after the Listing Date”, page 284)",
+    "computed_first_free_day": "2026-12-30",
+    "computed_last_restricted_day": "2026-12-29",
+    "notes": "Voluntary undertaking given under the Hong Kong Underwriting Agreement by the Single Largest Shareholders Group (AIC Parties incl. Aleyuan Inc., Dr. Gavin Xia, Dr. Tian, Ms. Wang Yun and related entities) — the company has no Controlling Shareholders, so this replaces the Rule 10.07(1)(a) undertaking. “First Six Month Period” is defined on page 284."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No 12-month control undertaking. The Single Largest Shareholders Group undertaking (page 285) contains only an orderly-market covenant until expiry of the Second Six Month Period, not a disposal or control-maintenance restriction. Searched “10.07”, “12 months from”, “cease to be”, “Controlling Shareholder” (no controlling shareholders exist). PRC Company Law 12-month lock-up on all pre-Global Offering Shares noted on page 141, but that is a statutory restriction on all pre-IPO shares, not a 10.07(1)(b) undertaking."
+  }
+}

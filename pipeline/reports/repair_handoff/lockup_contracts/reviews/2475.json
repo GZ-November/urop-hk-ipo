@@ -1,0 +1,26 @@
+{
+  "code": "2475.HK",
+  "reviewer": "independent verifier V-A",
+  "cornerstone": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p276. DATE CORRECTION: the clause runs 'commencing from (and inclusive of) the Listing Date and ending on (and inclusive of) the date falling six (6) months after the Listing Date' - an explicit inclusive endpoint, so it frees up the day AFTER the anniversary: first_free_day = 2027-01-10, last_restricted_day = 2027-01-09. Candidate's 2027-01-09/2027-01-08 stopped one day early. All 28 named holders located in the cornerstone section (pp.262-275), including GIC (p266), ADIA (p267) and UBS (p268).",
+    "corrections": {
+      "first_free_day": "2027-01-10",
+      "last_restricted_day": "2027-01-09"
+    }
+  },
+  "controller_6m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p281 (Rule 10.07(1) undertaking, limb (a)). DATE CORRECTION: 'ending on the date which is six months from the Listing Date' is an explicit inclusive end ON the anniversary (2027-01-09), so first free = 2027-01-10. Candidate's 2027-01-09 made the anniversary itself the free day.",
+    "corrections": {
+      "first_free_day": "2027-01-10",
+      "last_restricted_day": "2027-01-09",
+      "basis": "Rule 10.07(1)(a) disposal undertaking commencing on the date of the prospectus (inclusive of Listing Date) and ending on the date which is six months from the Listing Date (inclusive end ON the anniversary); first free day = anniversary + 1."
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p281 (limb (b), 'Second Six-Month Period'). Duration wording anchored to the expiry of the First Six-Month Period frees up ON the 12-month anniversary: first_free_day 2027-07-09, last_restricted_day 2027-07-08 as recorded. No 18C/longer controller lock-up (only '24 months' hit is the CSRC validity period, p218).",
+    "corrections": {}
+  }
+}

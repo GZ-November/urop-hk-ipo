@@ -1,0 +1,37 @@
+{
+  "code": "6067.HK",
+  "listing_date": "2026-06-23",
+  "cornerstone": {
+    "exists": true,
+    "holders": "Fullgoal Fund Management Co., Ltd.; GF Fund (GF Fund Management / GF Fund HK); Taikang Life; Harvest International Premium Value (Secondary Market) Fund SPC (for Harvest Synergy SP); Springs Capital (Hong Kong) Limited; Gaoteng Enterprise Management and CICC Financial Trading Limited (in connection with OTC Swaps); Sunwoda Treasury (Hong Kong) Limited; JINKOSOLAR INVESTMENT; Mondeomax Limited; Bona Star Consultant Limited; SINSANWA; SHEEN NATION HOLDINGS LIMITED; Chen Feng",
+    "quote_page": 229,
+    "full_quote": "Each Cornerstone Investor has agreed that without the prior written consent of our Company, the Sole Sponsor and the Sponsor-Overall Coordinator, it will not, whether directly or indirectly, at any time during the period of six months following the Listing Date (the ‘‘Lock-up Period’’), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to their respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the relevant Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-06-23",
+    "basis": "six calendar months from the Listing Date; document wording 'six months following the Listing Date' - restricted period deemed inclusive of Listing Date per convention",
+    "computed_first_free_day": "2026-12-23",
+    "computed_last_restricted_day": "2026-12-22",
+    "notes": "Wording is 'six months following the Listing Date' (not 'from and inclusive of')."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No controlling-shareholder lock-up disclosed. The prospectus discloses no 'Controlling Shareholder': Prof. Chen and Ms. Chen hold ~11.425% post-offering and are styled 'Single Largest Shareholders' (page 196), with no disposal or control lock-up undertaking. The Underwriting section contains only the Rule 10.08 undertaking by the Company and Hong Kong Underwriting Agreement company undertakings (pages 274-275). Searched case-insensitively across all 494 pages for '10.07' (zero hits), 'Controlling Shareholder', 'not dispose', 'six months from', '12 months from'."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No controlling-shareholder 12-month control/disposal undertaking disclosed (see controller_6m notes). The only 12-month hits are working-capital, borrowings-classification and share-incentive-plan text."
+  }
+}

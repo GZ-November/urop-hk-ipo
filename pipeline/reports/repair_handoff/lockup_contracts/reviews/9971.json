@@ -1,0 +1,23 @@
+{
+  "code": "9971.HK",
+  "reviewer": "independent verifier V-D",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. All 'cornerstone' hits are: the related-party fund name 'Shenzhen Investment Holdings Cornerstone New Energy Vehicle Industry Private Equity Investment Fund' (pp35/101/315), figurative uses ('cornerstone of next-generation power electronics', pp84/147/240), and a standard underwriting-agreement termination condition referring generically to 'any cornerstone investors under the Cornerstone Investment Agreements' (p275). No cornerstone investors are disclosed and no cornerstone lock-up section exists.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. The Controlling Shareholders gave a SINGLE combined undertaking 'By virtue of Rule 10.07 and Rule 18C.13' (p276) covering one Twelve-Month Period, which replaces the 10.07(1)(a)/(b) split; it is recorded in controller_12m and no separate six-month undertaking exists. The Rule 18C.13/18C.14 undertaking by Dr. Wang, Key Persons and Pathfinder SIIs (pp276-277, 12/6-month legs) is a separate key-person restriction, not a controller six-month undertaking. No missed element.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve_with_changes",
+    "notes": "Quote verified verbatim on p276 ('(B) Undertakings by our Controlling Shareholders'). CONVENTION CORRECTION: the combined undertaking restricts disposals 'in the period ... ending on the date which is twelve months from the Listing Date (the \"Twelve-Month Period\")' - it ends ON the 12-month anniversary 2027-07-08, which is therefore the last restricted day; first free day is 2027-07-09. The candidate's basis correctly notes this is an absolute 12-month restriction (no cessation-of-control carve-out in a second period).",
+    "corrections": {
+      "first_free_day": "2027-07-09",
+      "last_restricted_day": "2027-07-08",
+      "basis": "Rule 10.07 + Rule 18C.13 combined undertaking: no disposal of Relevant Securities by the Controlling Shareholders in the single Twelve-Month Period ending ON the date which is twelve months from the Listing Date (2027-07-08, inclusive); first free day 2027-07-09"
+    }
+  }
+}

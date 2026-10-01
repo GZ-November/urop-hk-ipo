@@ -56,9 +56,11 @@ python analysis/margin_financing_2026.py
 
 ## 目前仍需解决
 
-- Q2 14 个 BL 字段缺少 JSON 证据。存储对账不能替代原始披露的独立语义复核。
-- 孖展只有部分来源快照；截止日敏感性仅 9 家，当前模型不能提供有效 HC3 推断。
+- Q2 14 个董事席位的未经支持零值由 Zcode 继续修复；本分支保留原披露复核线索，不改写 Q2 数据。对账不能替代独立语义核验。
+- 孖展扩展到25家／93条，截止日15家；HC3已可计算，但仅4个上市月，发布/定价时点和调查范围仍限制推断。
 - Q2 解禁和长期窗口按发行人日期及实际行情覆盖进入样本；未成熟窗口不补估计。
 - 机制选择、基石份额和需求具有内生性；相关结果需明确识别限制。已有探索发现不能直接升级为预注册检验。
+
+本轮新增 [学术设计与16项 brainstorm](RESEARCH_DESIGN_2026.md)、[生成结果](../analysis/out/research_frontier/research.md) 和 [证据修复状态](../pipeline/reports/research_readiness/README.md)。
 
 新研究文档、输入与输出的归属规则见 [仓库组织指南](REPOSITORY_GUIDE.md)。

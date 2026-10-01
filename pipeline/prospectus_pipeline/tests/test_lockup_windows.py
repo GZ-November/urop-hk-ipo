@@ -153,5 +153,35 @@ class LockupWindowEvidenceTests(unittest.TestCase):
                 self.assertEqual(status, "MISSING_RETURN_DATA")
 
 
+class LockupWindowCutoffAndCalendarTests(unittest.TestCase):
+    def test_suspension_gap_blanks_windows_instead_of_shifting_them(self):
+        engine = make_engine()
+        del engine.daily_bars[CODE][40]  # stock did not trade on day 40 while the benchmark did
+        car20, car5, car60, volume, status = metrics(engine)
+        self.assertIsNone(car20)
+        self.assertAlmostEqual(car5, 0.11)  # [-5,+5] ends on day 30, before the gap
+        self.assertIsNone(car60)
+        self.assertEqual(status, "MISSING_RETURN_DATA")
+        self.assertEqual(engine.window_metrics_detail(CODE, FIRST_DATE + dt.timedelta(days=25))[5],
+                         "stock_bar_gap_vs_exchange_calendar")
+
+    def test_endpoint_after_cutoff_is_a_future_endpoint_not_a_zero_or_clamp(self):
+        engine = make_engine()
+        engine.as_of = FIRST_DATE + dt.timedelta(days=40)
+        engine.daily_bars[CODE] = [b for b in engine.daily_bars[CODE] if b["date"] <= engine.as_of]
+        car20, car5, car60, volume, status, detail = engine.window_metrics_detail(
+            CODE, FIRST_DATE + dt.timedelta(days=25))
+        self.assertIsNone(car20)
+        self.assertAlmostEqual(car5, 0.11)
+        self.assertIsNone(car60)
+        self.assertEqual((status, detail), ("INCOMPLETE_WINDOW", "future_endpoint_after_cutoff"))
+
+    def test_event_after_cutoff_is_immature_with_reason(self):
+        engine = make_engine()
+        engine.as_of = FIRST_DATE + dt.timedelta(days=10)
+        self.assertEqual(engine.window_metrics_detail(CODE, FIRST_DATE + dt.timedelta(days=25)),
+                         (None, None, None, None, "IMMATURE_WINDOW", "future_event_after_cutoff"))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,37 @@
+{
+  "code": "2513.HK",
+  "listing_date": "2026-01-08",
+  "cornerstone": {
+    "exists": true,
+    "holders": "JSC International Investment Fund SPC (for Qizhi SP); JinYi Capital Multi-Strategy Fund SPC Ltd. (for Structured Credit SP Fund); Perseverance Asset Management; Shanghai Gaoyi and CICC Financial Trading Limited (Gaoyi OTC Swaps); WT Asset Management; Taikang Life; GF Fund; 3W Fund; RIME",
+    "quote_page": 307,
+    "full_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of our Company, the Sole Sponsor and the Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of six months following the Listing Date (both days inclusive) (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investors, including the Lock-up Period restriction.",
+    "reference_date": "2026-01-08",
+    "basis": "restricted period inclusive of both the Listing Date and the date falling six months after the Listing Date (document: both endpoints expressly inclusive); first free day is the day after the six-month anniversary",
+    "computed_first_free_day": "2026-07-08",
+    "computed_last_restricted_day": "2026-07-07",
+    "notes": "Wording: “six months following the Listing Date (both days inclusive)”."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No standalone six-month disposal undertaking. Chapter 18C issuer: a SINGLE combined undertaking under Rule 10.07 AND Rule 18C.13 (page 315) prohibits disposal by each Controlling Shareholder for 12 months from the Listing Date; this covers and supersedes the 6-month restriction (recorded in controller_12m slot)."
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 315,
+    "full_quote": "Pursuant to Rule 10.07 and Rule 18C.13 of the Listing Rules, each member of the Controlling Shareholders has undertaken to the Stock Exchange and to our Company that, it shall not and shall procure that the relevant registered holder(s) will not without the prior written consent of the Stock Exchange or unless otherwise in compliance with the applicable requirement of the Listing Rules, in the period commencing on the date by reference to which disclosure of his/her/its shareholding in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong) for a bona fide commercial loan) in respect of, any of the securities in respect of which it is shown by this prospectus to be the beneficial owner(s).",
+    "reference_date": "2026-01-08",
+    "basis": "single combined Rule 10.07 + Rule 18C.13 undertaking: no disposal in the period commencing on the prospectus disclosure date and ending on the date which is 12 months from the Listing Date (inclusive end per “ending on the date which is 12 months from the Listing Date”)",
+    "computed_first_free_day": "2027-01-09",
+    "computed_last_restricted_day": "2027-01-08",
+    "notes": "Combined undertaking replaces both the 6m and 12m Rule 10.07(1) slots (Chapter 18C specialist technology company). Key Persons (Rule 18C.14(1)) also undertook to 12 months and Pathfinder SIIs to 6 months on pages 315-316 (not controlling-shareholder undertakings)."
+  }
+}

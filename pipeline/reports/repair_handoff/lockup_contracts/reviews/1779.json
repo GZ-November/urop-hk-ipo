@@ -1,0 +1,19 @@
+{
+  "code": "1779.HK",
+  "reviewer": "independent verifier V-E",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.268: 'period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”)'. Duration wording frees up ON the anniversary: listing 2026-06-05 -> first_free_day=2026-12-05, last_restricted_day=2026-12-04. Holders (OrbiMed, TruMed, HTCI, Foresight funds) consistent with the cornerstone table pp.261-268.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.273: Rule 10.07(1) undertaking, paragraph (a) 'ending on the date which is six months from the Listing Date (the “First Six-Month Period”)'. Inclusive explicit end -> last_restricted_day=2026-12-05, first_free_day=2026-12-06. Correct.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p.273: paragraph (b) 'in the period of six months commencing on the date on which the First Six-Month Period expires' (conditional on ceasing to be a Controlling Shareholder), plus the Note 3 to Rule 10.07(2) undertaking on the same page running 'ending on the date which is 12 months from the Listing Date'. Restricted horizon = 12-month anniversary 2027-06-05 inclusive -> first_free_day=2027-06-06, last_restricted_day=2027-06-05. Correct. 18A issuer, but Chapter 18A imposes no separate controller lock-up beyond Rule 10.07.",
+    "corrections": {}
+  }
+}

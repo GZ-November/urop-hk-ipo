@@ -1,0 +1,35 @@
+{
+  "code": "0470.HK",
+  "listing_date": "2026-02-11",
+  "cornerstone": {
+    "exists": true,
+    "holders": "All cornerstone investors (Oaktree, Pinpoint, AMF, MY Asian, MSIP, Ovata Capital, QRT, Wuxi Jinchou and GTHT (in connection with the Wuxi Jinchou OTC Swaps), Millennium, Rome Garden)",
+    "quote_page": 359,
+    "full_quote": "Each Cornerstone Investor has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-02-11",
+    "basis": "six months from (and inclusive of) the Listing Date; restricted period inclusive of Listing Date",
+    "computed_first_free_day": "2026-08-11",
+    "computed_last_restricted_day": "2026-08-10",
+    "notes": "Section 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' in the Underwriting/Cornerstone Investors chapter."
+  },
+  "controller_6m": {
+    "exists": true,
+    "quote_page": 371,
+    "full_quote": "each of our Controlling Shareholders has undertaken to the Stock Exchange and us that, except pursuant to the Global Offering, the shareholder will not and will procure that the relevant registered holder(s) will not (without the prior written consent of the Stock Exchange or unless otherwise in compliance with the applicable requirements of the Listing Rules): (i) in the period commencing on the date by reference to which disclosure of the shareholder’s holding of Shares is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), directly or indirectly dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of our Shares (or our other securities) in respect of which the shareholder is shown in this prospectus to be the beneficial owner",
+    "reference_date": "2026-02-11",
+    "basis": "Rule 10.07(1)(a): period commencing on the prospectus disclosure date and ending on the date which is six months from the Listing Date; end anchor is the Listing Date, six calendar months",
+    "computed_first_free_day": "2026-08-11",
+    "computed_last_restricted_day": "2026-08-10",
+    "notes": ""
+  },
+  "controller_12m": {
+    "exists": true,
+    "quote_page": 371,
+    "full_quote": "(ii) in the period of six months from the expiry of the First Six-month Period (the “Second Six-month Period”), directly or indirectly, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares or securities referred to in (i) above if, immediately following the disposal or upon the exercise or enforcement of the options, rights, interests or encumbrances, the shareholder would cease to be our controlling shareholder",
+    "reference_date": "2026-02-11",
+    "basis": "Rule 10.07(1)(b) analog: Second Six-month Period = six months from expiry of the First Six-month Period, i.e. ends 12 months from Listing Date; disposal restricted if it would cause the shareholder to cease to be controlling shareholder",
+    "computed_first_free_day": "2027-02-11",
+    "computed_last_restricted_day": "2027-02-10",
+    "notes": ""
+  }
+}

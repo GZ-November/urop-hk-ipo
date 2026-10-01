@@ -1,0 +1,19 @@
+{
+  "code": "7656.HK",
+  "reviewer": "independent verifier V-G",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "exists=false confirmed: the string 'cornerstone' has zero occurrences in the entire text cache (independently re-swept). Chapter 18C issuer with no cornerstone placing.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false correctly recorded: there is no separate 6-month undertaking; it is replaced by the single combined Rules 10.07 and 18C.13 12-month undertaking recorded in the controller_12m slot (verbatim on p292). Cross-reference note is accurate; the combined undertaking is not missed.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verbatim on p292. Explicit endpoint 'ending on the date which is 12 months from the Listing Date' ends ON 2027-07-08 inclusive -> first free 2027-07-09. Listing Date p25: 'expected to be on or around Wednesday, 8 July 2026'. Verified additional Rule 18C.14(1) Key Persons and 18C.14(2) Pathfinder SII 12-month undertakings on p292-293 as noted. Matches.",
+    "corrections": {}
+  }
+}

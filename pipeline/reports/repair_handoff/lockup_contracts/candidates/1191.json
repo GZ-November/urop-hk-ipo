@@ -1,0 +1,37 @@
+{
+  "code": "1191.HK",
+  "listing_date": "2026-06-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "",
+    "quote_page": 216,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries which will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-06-29",
+    "basis": "six calendar months from (and inclusive of) the Listing Date; frees up on the six-month anniversary",
+    "computed_first_free_day": "2026-12-29",
+    "computed_last_restricted_day": "2026-12-28",
+    "notes": "Holders (described at PDF pp.213-216): JSC International Investment Fund SPC (acting for and on behalf of Jingxin SP), Winwin Technology Investment Co., Limited (wholly owned by Biwin Semiconductor (HK) Company Limited / Biwin Storage), Kingsoft Cloud Network Corporation Limited, UBS Asset Management (Singapore) Ltd. and E Fund (E Fund Management Co., Ltd. / E Fund Management (Hong Kong) Co., Ltd.)."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No controlling-shareholder 6-month disposal undertaking found. Searched all pages: '10.07' has zero hits; the undertakings section (PDF p.261) contains only the Company's Rule 10.08 undertaking, and the underwriting-agreement undertakings (pp.261-262) contain only Company covenants plus a covenant by the single largest shareholder to procure the Company's compliance. H-share issuer; page 92 of the PDF states that under applicable PRC laws, within one year following the Listing Date all existing Shareholders (including Pre-IPO Investors) could not dispose of their Shares."
+  },
+  "controller_12m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 0,
+    "full_quote": "",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "No Rule 10.07(1)(b) control undertaking found. Searched '10.07', 'twelve months', '12 months from', 'no disposal', 'will not sell', 'control of the Company' — no controlling-shareholder undertaking anywhere. The only 12-month restrictions are the PRC-law one-year lock-up on all existing Shareholders (p.92) and Pre-IPO Share Option Scheme vesting terms (pp.412-413)."
+  }
+}
