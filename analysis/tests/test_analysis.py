@@ -12,21 +12,21 @@ from statsmodels.stats.sandwich_covariance import cov_cluster
 
 ANALYSIS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ANALYSIS))
-import module_a_stylized_facts as module_a
+import research_inputs as inputs
 import module_b_underpricing_regression as module_b
 
 
 def panel_rows():
-    rows = pd.DataFrame({column: [0.0, 0.0] for column in module_a.C.values()})
+    rows = pd.DataFrame({column: [0.0, 0.0] for column in inputs.C.values()})
     rows["Stock Code"] = ["00001.HK", "00002.HK"]
     rows["cohort"] = ["2026Q1", "2026Q2"]
-    rows[module_a.C["list_date"]] = ["2026-01-08", "2026-04-08"]
-    rows[module_a.C["route_text"]] = ["Main Board", "Main Board"]
-    rows[module_a.C["age"]] = [10.0, 20.0]
-    rows[module_a.C["offer"]] = [10.0, 20.0]
-    rows[module_a.C["base_shares"]] = [100_000_000, 100_000_000]
-    rows[module_a.C["sub"]] = [2.0, 3.0]
-    rows[module_a.C["ir"]] = [0.1, 0.2]
+    rows[inputs.C["list_date"]] = ["2026-01-08", "2026-04-08"]
+    rows[inputs.C["route_text"]] = ["Main Board", "Main Board"]
+    rows[inputs.C["age"]] = [10.0, 20.0]
+    rows[inputs.C["offer"]] = [10.0, 20.0]
+    rows[inputs.C["base_shares"]] = [100_000_000, 100_000_000]
+    rows[inputs.C["sub"]] = [2.0, 3.0]
+    rows[inputs.C["ir"]] = [0.1, 0.2]
     rows["sponsor_reputation_tier"] = [1, 2]
     rows["HSI return over 20 trading days before prospectus (%)"] = [0.01, 0.02]
     rows["HK ordinary IPO count in 90 calendar days before prospectus"] = [20, 30]
@@ -37,15 +37,15 @@ def load_rows(rows):
     with tempfile.TemporaryDirectory() as directory:
         path = Path(directory) / "panel.csv"
         rows.to_csv(path, index=False)
-        return module_a.load_panel(path)
+        return inputs.load_panel(path)
 
 
 class PanelSelectionTests(unittest.TestCase):
     def test_actual_listing_year_selects_only_2026(self):
         rows = panel_rows()
         rows.loc[1, "cohort"] = "2025Q2"
-        rows.loc[1, module_a.C["list_date"]] = "2025-04-08"
-        selected = module_a.select_2026(load_rows(rows))
+        rows.loc[1, inputs.C["list_date"]] = "2025-04-08"
+        selected = inputs.select_2026(load_rows(rows))
         self.assertEqual(selected["Stock Code"].tolist(), ["00001.HK"])
 
     def test_date_cohort_disagreements_fail_in_both_directions(self):
@@ -54,36 +54,36 @@ class PanelSelectionTests(unittest.TestCase):
             with self.subTest(cohort=cohort, date=date):
                 rows = panel_rows().iloc[:1].copy()
                 rows.loc[0, "cohort"] = cohort
-                rows.loc[0, module_a.C["list_date"]] = date
+                rows.loc[0, inputs.C["list_date"]] = date
                 with self.assertRaisesRegex(ValueError, "cohort labels"):
-                    module_a.select_2026(load_rows(rows))
+                    inputs.select_2026(load_rows(rows))
 
     def test_duplicate_issuers_and_empty_sample_fail(self):
         rows = panel_rows()
         rows["Stock Code"] = "00001.HK"
         with self.assertRaisesRegex(ValueError, "Duplicate"):
-            module_a.select_2026(load_rows(rows))
+            inputs.select_2026(load_rows(rows))
         rows["cohort"] = "2025Q1"
-        rows[module_a.C["list_date"]] = "2025-01-08"
+        rows[inputs.C["list_date"]] = "2025-01-08"
         with self.assertRaisesRegex(ValueError, "No observed 2026"):
-            module_a.select_2026(load_rows(rows))
+            inputs.select_2026(load_rows(rows))
 
     def test_unknown_route_evidence_is_preserved_even_when_entire_column_missing(self):
         rows = panel_rows()
         for key in ("c18a", "c18c", "ah", "route_text"):
-            rows[module_a.C[key]] = np.nan
+            rows[inputs.C[key]] = np.nan
         panel = load_rows(rows)
         self.assertTrue(panel["ah_true"].isna().all())
         self.assertEqual(panel["route"].tolist(), ["Unknown", "Unknown"])
-        self.assertTrue(module_b.prepare(panel)["ah"].isna().all())
+        self.assertTrue(inputs.prepare_regression(panel)["ah"].isna().all())
 
     def test_numeric_missing_markers_and_infinity_are_not_observations(self):
         rows = panel_rows()
-        rows[module_a.C["age"]] = ["-", "12.5"]
-        rows[module_a.C["ir"]] = [np.inf, 0.2]
+        rows[inputs.C["age"]] = ["-", "12.5"]
+        rows[inputs.C["ir"]] = [np.inf, 0.2]
         panel = load_rows(rows)
-        self.assertTrue(pd.isna(panel.loc[0, module_a.C["age"]]))
-        self.assertEqual(panel.loc[1, module_a.C["age"]], 12.5)
+        self.assertTrue(pd.isna(panel.loc[0, inputs.C["age"]]))
+        self.assertEqual(panel.loc[1, inputs.C["age"]], 12.5)
         self.assertTrue(pd.isna(panel.loc[0, "ir"]))
 
 
@@ -91,7 +91,7 @@ class RegressionPreparationTests(unittest.TestCase):
     def test_hot_control_uses_listing_date_and_is_in_every_parsimonious_model(self):
         panel = load_rows(panel_rows())
         panel["cohort"] = "2026Q3"  # Control must not depend on this label.
-        self.assertEqual(module_b.prepare(panel)["hot"].tolist(), [0.0, 1.0])
+        self.assertEqual(inputs.prepare_regression(panel)["hot"].tolist(), [0.0, 1.0])
         for name, regressors in module_b.MODELS.items():
             with self.subTest(model=name):
                 self.assertIn("hot", regressors)
@@ -101,10 +101,10 @@ class RegressionPreparationTests(unittest.TestCase):
     def test_invalid_log_domains_become_missing(self):
         panel = load_rows(panel_rows())
         panel["ir"] = [-1.0, -1.1]
-        panel[module_a.C["age"]] = [0.0, -2.0]
+        panel[inputs.C["age"]] = [0.0, -2.0]
         panel["base_proceeds"] = [0.0, -1.0]
-        panel[module_a.C["sub"]] = [0.0, -1.0]
-        prepared = module_b.prepare(panel)
+        panel[inputs.C["sub"]] = [0.0, -1.0]
+        prepared = inputs.prepare_regression(panel)
         self.assertTrue(prepared[["y", "lage", "lproc", "lsub"]].isna().all().all())
 
     def test_design_drops_nonfinite_rows_and_keeps_codes_aligned(self):

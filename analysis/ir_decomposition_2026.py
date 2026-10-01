@@ -24,6 +24,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 
 import module_a_stylized_facts as ma
+import research_inputs as inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "analysis" / "out" / "ir_decomposition"
@@ -74,12 +75,12 @@ LABELS = {
 
 
 def prepare() -> pd.DataFrame:
-    df = ma.select_2026(ma.load_panel()).copy()
+    df = inputs.select_2026(inputs.load_panel()).copy()
     df["lir"] = np.log1p(df["ir"])
-    df["vc"] = df[ma.C["vc"]]
+    df["vc"] = df[inputs.C["vc"]]
     df["log_proceeds"] = np.log(df["gross_proceeds"])
-    df["fixed_price"] = (df[ma.C["pricing"]] == "Fixed price").astype(int)
-    df["cornerstone"] = df[ma.C["corner"]]
+    df["fixed_price"] = (df[inputs.C["pricing"]] == "Fixed price").astype(int)
+    df["cornerstone"] = df[inputs.C["corner"]]
     df["month_id"] = df["month"].astype(str)
     for name, col in MARKET_COLS.items():
         df[name] = (df[col] - df[col].mean()) / df[col].std()

@@ -13,6 +13,26 @@ make test-analysis
 
 The input is `pipeline/exports/HKIPO-MB-MASTER_clean.csv`; the CLI merges existing cohort exports. Export updated workbooks per config before rebuilding the master. Historical cohorts can remain in the storage layer and are excluded at the analysis selector.
 
+Shared research inputs live in `research_inputs.py`, which imports no report,
+plotting or estimation scripts. New studies can start with:
+
+```python
+from research_inputs import load_panel, select_2026, prepare_regression
+
+issuers = select_2026(load_panel())
+frame = prepare_regression(issuers)
+```
+
+`load_panel` interprets the registry and missing values; `select_2026` verifies
+listing dates, cohort consistency and issuer uniqueness. `prepare_regression`,
+`prepare_extended` and `prepare_academic` supply the existing shared variables,
+without dropping observations for a particular model. Estimation samples,
+models, market observations and figures remain study-specific. The older
+Module A input names, Module B/extended `prepare`, and academic `build_frame`
+remain compatible aliases. The pipeline's slug-based `src/panel.py` remains
+available for browsing registered variables; this migration preserves the
+existing research column names and definitions.
+
 | Script | Output |
 |---|---|
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |

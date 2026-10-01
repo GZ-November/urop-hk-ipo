@@ -9,6 +9,7 @@ import pandas as pd
 ANALYSIS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ANALYSIS))
 import extended_analysis_2026 as ext
+import research_inputs as inputs
 
 
 class ScanTests(unittest.TestCase):
@@ -36,7 +37,7 @@ class VariableTests(unittest.TestCase):
         listing = pd.Series(pd.to_datetime(["2026-01-05", "2026-01-10", "2026-01-15", "2026-01-20", "2026-02-01"]))
         ir = pd.Series([9.0, 0.1, 0.2, 0.3, 100.0])
         cutoff = pd.Series(pd.to_datetime(["2026-01-20", "2026-01-25", "2026-01-12", "2026-03-15"] + ["2026-01-25"]))
-        out = ext.prior_mean_ir(listing, ir, cutoff, days=30, min_deals=3)
+        out = inputs.prior_mean_ir(listing, ir, cutoff, days=30, min_deals=3)
         self.assertAlmostEqual(out.iloc[0], np.mean([9.0, 0.1, 0.2]))        # the 01-20 listing itself is excluded
         self.assertAlmostEqual(out.iloc[1], np.mean([9.0, 0.1, 0.2, 0.3]))   # the 02-01 listing is in the future
         self.assertTrue(np.isnan(out.iloc[2]))                                # fewer than three earlier deals
@@ -45,7 +46,7 @@ class VariableTests(unittest.TestCase):
     def test_subscription_overlap_counts_others_only(self):
         start = pd.Series(pd.to_datetime(["2026-01-01", "2026-01-03", "2026-02-01"]))
         end = pd.Series(pd.to_datetime(["2026-01-05", "2026-01-08", "2026-02-05"]))
-        self.assertEqual(ext.subscription_overlap(start, end).tolist(), [1, 1, 0])
+        self.assertEqual(inputs.subscription_overlap(start, end).tolist(), [1, 1, 0])
 
 
 class InferenceTests(unittest.TestCase):

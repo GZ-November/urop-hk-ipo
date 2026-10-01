@@ -18,19 +18,20 @@ Usage:
 
 from __future__ import annotations
 
-from pathlib import Path
-
 import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import yaml
 from scipy import stats
 
-ROOT = Path(__file__).resolve().parents[1]
-MASTER = ROOT / "pipeline" / "exports" / "HKIPO-MB-MASTER_clean.csv"
+# Former public input names remain available to notebooks and scripts.
+from research_inputs import (  # noqa: F401 — legacy MASTER export
+    C as C, MASTER as MASTER, ROOT as ROOT, ROUTE_ORDER as ROUTE_ORDER,
+    load_panel as load_panel, select_2026 as select_2026,
+)
+
 OUT = ROOT / "analysis" / "out" / "module_a"
 
 # Chart palette: dataviz reference instance (light mode).
@@ -38,30 +39,8 @@ INK, INK2, MUTED = "#0b0b0b", "#52514e", "#898781"
 GRID, AXIS, SURFACE = "#e1e0d9", "#c3c2b7", "#fcfcfb"
 BLUE, ORANGE = "#2a78d6", "#eb6834"
 
-ROUTE_ORDER = ["18A biotech", "18C specialist tech", "A+H (19A)", "Conventional"]
 PRICING_ORDER = ["At low", "Within range", "At high", "Fixed price"]
 
-C = {
-    "ir": "First-day return / Underpricing (%)",
-    "list_date": "Date of Listing (dd/mm/yy)",
-    "offer": "IPO Subscription Price (HK$)",
-    "base_shares": "Final global offering shares (before over-allotment)",
-    "funds_hk": "Funds Raised HK (a)",
-    "funds_int": "Funds Raised Int.(b)",
-    "mlot": "Money left on the table (HK$)",
-    "sub": "Subscription Ratio (times)",
-    "pricing": "Pricing position in filing range",
-    "vc": "Pre-IPO VC/PE backing (1=yes; 0=no)",
-    "age": "Firm age at IPO (years)",
-    "profit_y1": "Profit for the year in year-1",
-    "c18a": "Chapter 18A flag",
-    "c18c": "Chapter 18C flag",
-    "ah": "A+H issuer flag",
-    "wvr": "WVR flag",
-    "route_text": "Listing route / applicable chapter",
-    "corner": "Final cornerstone allocation (% of base offer)",
-    "float": "Unrestricted public shareholding at listing (%)",
-}
 
 HORIZONS = [
     ("Day 5", "Day-5 BHR from Day-1 close (%)", "Day-5 wealth relative vs HSI", None),
@@ -70,50 +49,6 @@ HORIZONS = [
     ("3 months", "3-month BHR from Day-1 close (%)", "3-month wealth relative vs HSI", None),
     ("6 months", "6-month BHR from Day-1 close (%)", "6-month wealth relative vs HSI", "6-month HSI return (%)"),
 ]
-
-
-# ---------------------------------------------------------------- data
-
-def load_panel(path: Path = MASTER) -> pd.DataFrame:
-    """Load the master panel and add the analysis columns Module A needs."""
-    df = pd.read_csv(path, low_memory=False).copy()
-    registry = yaml.safe_load((ROOT / "pipeline/registry/HKIPO_Variable_Registry.yaml").read_text(encoding="utf-8"))
-    numeric = [v["header"] for v in registry["variables"] if v["dtype"] in {"numeric", "boolean"}]
-    converted = {column: pd.to_numeric(df[column], errors="coerce").replace([np.inf, -np.inf], np.nan)
-                 for column in [*numeric, "sponsor_reputation_tier"] if column in df}
-    df = pd.concat([df.drop(columns=list(converted)), pd.DataFrame(converted, index=df.index)], axis=1)
-    df["cohort"] = df["cohort"].astype(str)
-    df["ir"] = df[C["ir"]]
-    df["listing_date"] = pd.to_datetime(df[C["list_date"]], errors="coerce")
-    df["month"] = df["listing_date"].dt.to_period("M")
-    df["gross_proceeds"] = df[C["funds_hk"]] + df[C["funds_int"]]
-    # Base-deal proceeds match the share base of money left on the table.
-    df["base_proceeds"] = df[C["offer"]] * df[C["base_shares"]]
-    df["loss_y1"] = (df[C["profit_y1"]] < 0).astype(float).where(df[C["profit_y1"]].notna())
-    ah_text = df[C["route_text"]].astype("string").str.contains(r"other listed shares|A\+H", case=False, na=False)
-    df["ah_true"] = df[C["ah"]].where(df[C["ah"]].isin([0, 1]))
-    df.loc[ah_text, "ah_true"] = 1.0
-    df["route"] = np.select(
-        [df[C["c18a"]] == 1, df[C["c18c"]] == 1, df["ah_true"] == 1,
-         (df[C["c18a"]] == 0) & (df[C["c18c"]] == 0) & (df["ah_true"] == 0)],
-        ROUTE_ORDER,
-        default="Unknown",
-    )
-    return df
-
-
-def select_2026(df: pd.DataFrame) -> pd.DataFrame:
-    """Select by actual listing year; reject cohort/date conflicts and duplicates."""
-    year = df["listing_date"].dt.year
-    cohort_2026 = df["cohort"].str.startswith("2026")
-    if (cohort_2026 & ~year.eq(2026)).any() or (year.eq(2026) & ~cohort_2026).any():
-        raise ValueError("2026 cohort labels must agree with observed listing dates")
-    selected = df.loc[year.eq(2026)].copy()
-    if selected["Stock Code"].duplicated().any():
-        raise ValueError("Duplicate issuer stock codes in the 2026 analysis sample")
-    if selected.empty:
-        raise ValueError("No observed 2026 listings in the master panel")
-    return selected
 
 
 # ---------------------------------------------------------------- stats

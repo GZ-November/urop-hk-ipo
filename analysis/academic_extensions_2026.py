@@ -33,9 +33,13 @@ from scipy import stats
 
 import aftermarket_event_time_2026 as et
 import extended_analysis_2026 as ext
+from research_inputs import C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026  # noqa: F401 — legacy C export
 from module_a_stylized_facts import (
-    AXIS, BLUE, C, INK, INK2, MUTED, ROOT, load_panel, new_fig, pct_axis, select_2026, style_axes, to_markdown,
+    AXIS, BLUE, INK, INK2, MUTED, new_fig, pct_axis, style_axes, to_markdown,
 )
+
+# Compatibility names for existing notebooks.
+from research_inputs import FINAL_GLOBAL_SHARES as FG, prepare_academic as build_frame  # noqa: F401
 
 OUT = ROOT / "analysis" / "out" / "academic"
 SEED = 20260930
@@ -43,37 +47,6 @@ N_PLACEBO = 5000
 WINDOWS = {"[-1,+1]": (-1, 1), "[0,+5]": (0, 5), "[-5,+5]": (-5, 5), "[-5,-1]": (-5, -1)}
 PLACEBO_NEAR = 30             # placebo days come from within this many bars of the true event (similar volatility regime)
 PLACEBO_EXCLUDE = 10          # ... but at least this far from it, so windows do not overlap
-FG = "Final global offering shares (before over-allotment)"
-
-
-# ------------------------------------------------------------------ data
-
-def build_frame(y26: pd.DataFrame) -> pd.DataFrame:
-    """Regression frame of the extended analysis plus columns used here, keyed by stock code."""
-    d = ext.prepare(y26)
-    extra = pd.DataFrame({
-        "code": y26["Stock Code"],
-        "base_shares": y26[FG],
-        "retail_shares": y26["Final public offer shares"],
-        "corner_shares": y26[C["corner"]] * y26[FG],
-        "offer": y26[C["offer"]],
-        "close1": y26["First trading day closing price (HK$)"],
-        "applied": y26["Public valid applied shares"],
-        "applicants": y26["Public applicants"],
-        "gross": y26["gross_proceeds"],
-        "fee": (y26["Underwriting Commission (% of fund raised HK (a)"] * y26[C["funds_hk"]]
-                + y26["Underwriting Commission (% of fund raised Int.(b)"] * y26[C["funds_int"]]),
-        "fee_rate_hk": y26["Underwriting Commission (% of fund raised HK (a)"],
-        "mlot": y26[C["mlot"]],
-        "lockup_date": pd.to_datetime(y26["Earliest cornerstone unlock date (dd/mm/yy)"], errors="coerce").fillna(
-            pd.to_datetime(y26["Controlling shareholder 6-month disposal lockup expiry date"], errors="coerce")),
-        "stab_end": pd.to_datetime(y26["Stabilization period end date"], errors="coerce"),
-        "range_min": y26["Minimum Offer Price"],
-        "range_max": y26["Maximum Offer Price"],
-        "revision": y26["Filing price revision (%)"],
-        "sponsor": y26["Sponsor(s)"].astype("string").str.split("/").str[0].str.replace(r"\s+", " ", regex=True).str.strip(),
-    })
-    return d.merge(extra, on="code", how="left")
 
 
 # ------------------------------------------------------------------ 1. money left on the table

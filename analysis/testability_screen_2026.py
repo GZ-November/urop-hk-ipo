@@ -13,7 +13,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
-from module_a_stylized_facts import load_panel, select_2026
+from research_inputs import load_panel as load_panel, select_2026 as select_2026
 
 ROOT = Path(__file__).resolve().parents[1]
 MASTER = ROOT / "pipeline" / "exports" / "HKIPO-MB-MASTER_clean.csv"

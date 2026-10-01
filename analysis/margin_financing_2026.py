@@ -13,9 +13,9 @@ import pandas as pd
 from scipy import stats
 
 import extended_analysis_2026 as ext
+from research_inputs import prepare_extended, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
 from module_a_stylized_facts import (
-    AXIS, BLUE, INK, INK2, ORANGE, ROOT,
-    load_panel, new_fig, pct_axis, select_2026, style_axes, to_markdown,
+    AXIS, BLUE, INK, INK2, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
 )
 
 OUT = ROOT / "analysis" / "out" / "margin"
@@ -142,7 +142,7 @@ def prepare_full_sample(y26: pd.DataFrame) -> pd.DataFrame:
         "hibor": pd.to_numeric(y26["1-month HIBOR before prospectus (%)"]),
         "sub_ratio": pd.to_numeric(y26["Subscription Ratio (times)"]),
     })
-    d = ext.prepare(y26).merge(extra, on="code", how="inner")
+    d = prepare_extended(y26).merge(extra, on="code", how="inner")
     d["lintraday"] = np.log(d["intraday_vol"].where(d["intraday_vol"] > 0))
     return d
 
