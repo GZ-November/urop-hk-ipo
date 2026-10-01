@@ -1,0 +1,23 @@
+{
+  "code": "9856.HK",
+  "reviewer": "lockup-rev-9856",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim against page 294 (RESTRICTIONS ON THE CORNERSTONE INVESTORS; printed p.285). Wording is the standard 'six months from (and inclusive of) the Listing Date' clause: inclusive start anchor, anniversary exclusive. computed_first_free_day=2027-03-22 and computed_last_restricted_day=2027-03-21 are correct and consistent with the reviewed repo entries (9630.HK p.229, 0470.HK p.359). Listing Date confirmed as 'expected to be on or about Tuesday, September 22, 2026' (p.24 definitions). Controlling Shareholders confirmed as Hisense Group Holding and CKL (pp.18/22), corroborating the issuer identity. Holders description (aggregate US$340m/HK$2,665.8m; Primavera; CSC OTC Swap) not independently re-verified line-by-line but the block's contract (duration/endpoints) is fully evidenced by the verified quote.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "reject",
+    "notes": "Quote verified verbatim against page 298 (Rule 10.07(1)(i)); holders (Controlling Shareholders: Hisense Group Holding and CKL) confirmed via pp.18/22. However, the wording is 'ending on the date which is six months from the Listing Date' — the anniversary (2027-03-22) is INCLUSIVE as the stated end date, so it is the last restricted day and the first free day is anniversary + 1. This matches the task convention ('ending on the date which is six months from the Listing Date' → anniversary inclusive → first free day = anniversary + 1) and the reviewed 0470.HK entry (listing 2026-02-11: last_restricted_day=2026-08-11, first_free_day=2026-08-12). The candidate applied the cornerstone-style convention to this block, shifting both dates one day early. Note 3 to Rule 10.07(2) 12-month pledge-notification undertaking is correctly cited as being on the same page 298.",
+    "corrections": {
+      "computed_first_free_day": "2027-03-23",
+      "computed_last_restricted_day": "2027-03-22",
+      "basis": "Rule 10.07(1)(i): period commencing on the prospectus disclosure date and ending ON the date which is six months from the Listing Date (2027-03-22); the stated end date is inclusive/last restricted day, so first_free_day = anniversary + 1 (repo convention per reviewed 0470.HK entry)"
+    }
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim against page 298 (Rule 10.07(1)(ii): 'in the period of six months commencing on the date on which the period referred to in paragraph (i) above expires'). Second Six-month Period ends 12 months from the Listing Date; control-maintenance restriction only. Dates (first_free_day=2027-09-22, last_restricted_day=2027-09-21) match the reviewed 0470.HK 12M convention (12-month anniversary exclusive of restriction). Supporting notes verified: Note 3 to Rule 10.07(2) pledge/charge notification undertaking for 12 months appears on the same page 298; the Existing Shareholders' Lock-up Undertaking on pp.299-300 reads 'commencing on the Listing Date and ending on, and including, the date that is twelve months from the Listing Date' (printed p.290); p.300 confirms (a) Hisense Group Holding, CKL, Bolangde and Talents Holdings lock 100% of their Shares for the entire Lock-up Period and (b) TransLight, Global Optical, Archcom LLC and Xiamen Entities have 100% for the first six months then staged release (85% of the ... continuing onto p.301), consistent with the candidate's notes.",
+    "corrections": {}
+  }
+}

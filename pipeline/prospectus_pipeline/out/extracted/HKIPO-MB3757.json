@@ -1,0 +1,425 @@
+{
+ "code": "3757.HK",
+ "fields": {
+  "col_L": {
+   "value": 179484111,
+   "page": 245,
+   "quote": "H Shares to be issued pursuant to the Global Offering .... 11,876,000 6.62% Total .... 179,484,111 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 11876000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering: 11,876,000 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本次全球发售中资本化发行（capitalization Issue）涉及的发售股份数目，不适用",
+   "confidence": "low"
+  },
+  "col_O": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露 Capitalization Rest 涉及的发售股份数目，不适用",
+   "confidence": "low"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 245,
+   "quote": "A Shares in issue ........................................................................ 167,608,111 100%",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 11876000,
+   "page": 245,
+   "quote": "H Shares to be issued pursuant to the Global Offering .... 11,876,000 6.62%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 10688400,
+   "page": 2,
+   "quote": "Number of International Offer Shares: 10,688,400 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1187600,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares: 1,187,600 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 245,
+   "quote": "Upon the completion of the Global Offering, the Shares will consist of A Shares and H Shares.",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 11876000,
+   "page": 245,
+   "quote": "H Shares to be issued pursuant to the Global Offering .... 11,876,000 6.62%",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 436.0,
+   "page": 2,
+   "quote": "Maximum Offer Price: HK$436.00 per H Share plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": "NaN",
+   "page": null,
+   "quote": "招股书仅披露最高发售价HK$436.00（Offer Price will not be more than HK$436.00），未披露最低发售价",
+   "confidence": "low"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 302,
+   "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 2567380000,
+   "page": 304,
+   "quote": "836,119 792,464 2,524,988 2,535,339",
+   "confidence": "medium"
+  },
+  "col_X": {
+   "value": 2365282000,
+   "page": 304,
+   "quote": "836,119 792,464 2,524,988 2,535,339",
+   "confidence": "medium"
+  },
+  "col_Y": {
+   "value": 4311760000,
+   "page": 304,
+   "quote": "836,119 792,464 2,524,988 2,535,339",
+   "confidence": "medium"
+  },
+  "col_Z": {
+   "value": 980267000,
+   "page": 24,
+   "quote": "Net assets (total equity) ....................... 980,267 1,004,936 2,337,424 2,254,705",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 1004936000,
+   "page": 24,
+   "quote": "Net assets (total equity) ....................... 980,267 1,004,936 2,337,424 2,254,705",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 2337424000,
+   "page": 24,
+   "quote": "Net assets (total equity) ....................... 980,267 1,004,936 2,337,424 2,254,705",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 1587113000,
+   "page": 24,
+   "quote": "Current liabilities ................................ 1,567,079 1,321,351 1,634,545 1,770,047 Net current assets ............................... 164,182 251,467 152,227 105,131",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 1360346000,
+   "page": 24,
+   "quote": "Current liabilities ................................ 1,567,079 1,321,351 1,634,545 1,770,047 Net current assets ............................... 164,182 251,467 152,227 105,131",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 1974336000,
+   "page": 24,
+   "quote": "Current liabilities ................................ 1,567,079 1,321,351 1,634,545 1,770,047 Net current assets ............................... 164,182 251,467 152,227 105,131",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 1569649000,
+   "page": 19,
+   "quote": "Revenue ... 1,569,649 100.0% 1,104,248 100.0% 948,838 100.0%",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 1104248000,
+   "page": 19,
+   "quote": "Revenue ... 1,569,649 100.0% 1,104,248 100.0% 948,838 100.0%",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 948838000,
+   "page": 19,
+   "quote": "Revenue ... 1,569,649 100.0% 1,104,248 100.0% 948,838 100.0%",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 85322000,
+   "page": 19,
+   "quote": "Profit/(Loss) before income tax . 85,322 5.4% 60,431 5.5% (50,421) (5.3)%",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 60431000,
+   "page": 19,
+   "quote": "Profit/(Loss) before income tax . 85,322 5.4% 60,431 5.5% (50,421) (5.3)%",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -50421000,
+   "page": 19,
+   "quote": "Profit/(Loss) before income tax . 85,322 5.4% 60,431 5.5% (50,421) (5.3)%",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 79469000,
+   "page": 19,
+   "quote": "Profit/(Loss) for the year/period ... 79,469 5.1% 63,176 5.7% (44,956) (4.7)%",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 63176000,
+   "page": 19,
+   "quote": "Profit/(Loss) for the year/period ... 79,469 5.1% 63,176 5.7% (44,956) (4.7)%",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -44956000,
+   "page": 19,
+   "quote": "Profit/(Loss) for the year/period ... 79,469 5.1% 63,176 5.7% (44,956) (4.7)%",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 1325484000,
+   "page": 223,
+   "quote": "671,579 1,022,378 1,325,484 1,376,881 1,430,834",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 18,
+   "quote": "prepared in accordance with the IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 327527000,
+   "page": 19,
+   "quote": "Gross profit ... 343,419 21.9% 316,515 28.7% 327,527 34.5%",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 43100000,
+   "page": 224,
+   "quote": "Capital expenditure amounted to RMB8.6 million, RMB25.0 million, RMB43.1 million, RMB2.4 million and RMB68.2 million in 2023, 2024, 2025 ...",
+   "confidence": "medium"
+  },
+  "col_CH": {
+   "value": "Unqualified",
+   "page": 301,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the Group's consolidated financial position",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.02,
+   "page": 275,
+   "quote": "will receive an underwriting commission of 2% of the aggregate gross proceeds from the Global Offering (including any proceeds arising from exercise of the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.02,
+   "page": 275,
+   "quote": "will receive an underwriting commission of 2% of the aggregate gross proceeds from the Global Offering (including any proceeds arising from exercise of the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 275,
+   "quote": "up to an aggregate of 1,781,400 H Shares, representing 15.00% of the initial Offer Shares (assuming the Offer Size Adjustment Option is not exercised at all)",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 216600000,
+   "page": 276,
+   "quote": "estimated to amount to approximately HK$216.6 million in total (based on the Offer Price of HK$436.00 per Offer Share, being the maximum Offer Price)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Manufacturing equipment and systems for the photovoltaic (PV) industry and silicon photonics (SiPh) industry",
+   "page": 125,
+   "quote": "We are a global provider of manufacturing equipment and systems for photovoltaic (\"PV\") industry and silicon photonics (\"SiPh\") industry.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of The Stock Exchange of Hong Kong (H Shares)",
+   "page": 300,
+   "quote": "in connection with the initial listing of H shares of the Company on the Main Board of The Stock Exchange of Hong Kong Limited (the \"Stock Exchange\")",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialised (volume production)",
+   "page": 127,
+   "quote": "our SiPh assembly systems are deployed in volume manufacturing environments at Broadcom",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 265,
+   "quote": "receive net proceeds of approximately HK$4,961.3 million from the Global Offering after deducting the underwriting commissions and other estimated expenses",
+   "confidence": "medium"
+  },
+  "col_CJ": {
+   "value": "Temasek; Sunpeak Asset; IvyRock; E Fund; E Fund Management; E Fund HK; CIG; Winner Global Fund; Wind Sabre; Vestide Lumir; Arrowpoint; Sino Opulence Fund; Roofer Asset Management; Bloom Capital; Mr. Lai Pak Lam; Mr. Xia Shengli; Mr. Zhu Guodong; Mr. Zheng Xiaofeng",
+   "page": 259,
+   "quote": "THE CORNERSTONE INVESTORS The table below sets forth details of the Cornerstone Placing based on the Offer Price of HK$436.00 ... Total 232.4 4,179,950 35.20%",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 302,
+   "quote": "Year ended 31 December",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 207794000,
+   "page": 222,
+   "quote": "Net cash (used in)/generated from operating activities ................. (27,900) (317,156) 207,794 (34,874) 93,866",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 263662000,
+   "page": 304,
+   "quote": "Cash and cash equivalents 28 215,118 298,593 263,662 334,749",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 106267000,
+   "page": 302,
+   "quote": "Research and development expenses 10 (85,829) (84,357) (106,267) (25,269) (54,428)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露集团2025年当期新增资本化开发成本金额（无形资产note未包含该明细），按手册不填期末余额",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.632,
+   "page": 15,
+   "quote": "amounted to RMB1,003.0 million, RMB759.9 million, RMB599.7 million and RMB127.5 million, accounting for 63.9%, 68.8%, 63.2% and 64.2% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "罗博特科智能科技股份有限公司",
+   "page": 1,
+   "quote": "RoboTechnik Intelligent Technology Co., Ltd. 羅博特科智能科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内History章节（PAGE 114-124）未见对本公司的机构VC/PE上市前投资披露（2021年定向增发对象为个人、2025年配售对象未披露身份），不确认也不排除，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本公司上市前VC投资证据，无法确认为1，亦无明确披露确认无VC投资，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本公司上市前PE投资证据（Feikong Taike的PE基金为子公司层面卖方股东，非本公司股东），按规则填NaN",
+   "confidence": "low"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本公司上市前CVC投资证据，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本公司上市前国资投资证据，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露本公司上市前VC/PE投资，无从判断是否顶级机构，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "包内History章节仅披露创始人实体Yuanjiesheng/Ningbo Kejun、Mr. Dai及个人投资者（Ms. Li Jie为financial investor），未披露机构上市前投资者名单",
+   "confidence": "low"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露上市前机构VC/PE投资者合计持股，按规则不猜测",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露上市前机构VC/PE投资者，故无董事席位可关联，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "包内未披露机构VC/PE上市前投资轮次，按规则填NA",
+   "confidence": "low"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内未披露机构VC/PE上市前投资协议日期，按规则填NaN",
+   "confidence": "low"
+  },
+  "col_BB": {
+   "value": "Individual (natural person)",
+   "page": 123,
+   "quote": "Mr. Dai has become the sole de facto controller (實際控制人) of our Company under the PRC Company Law",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": "NaN",
+   "page": 123,
+   "quote": "Yuanjiesheng was owned by Mr. Dai, Mr. Wang Hongjun and Mr. Xia Chengzhou as to approximately 55.48%, 39.64% and 4.88%",
+   "confidence": "low"
+  },
+  "col_BD": {
+   "value": 0.2938,
+   "page": 124,
+   "quote": "64.00% 3.61% 3.67% 22.10%",
+   "confidence": "medium"
+  },
+  "col_BP": {
+   "value": "14/04/2011",
+   "page": 314,
+   "quote": "The Company is established in the People's Republic of China (the \"PRC\") with limited liability on 14 April 2011.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "PRC (Suzhou, Jiangsu Province)",
+   "page": 314,
+   "quote": "The Company is established in the People's Republic of China (the \"PRC\") with limited liability on 14 April 2011",
+   "confidence": "medium"
+  },
+  "col_CC": {
+   "value": "21/09/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences ... 9:00 a.m. on Monday, September 21, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "24/09/2026",
+   "page": 5,
+   "quote": "Application lists close(3) ... 12:00 noon on Thursday, September 24, 2026",
+   "confidence": "high"
+  }
+ }
+}

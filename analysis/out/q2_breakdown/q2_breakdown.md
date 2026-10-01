@@ -5,43 +5,43 @@
 | Sector | 2026Q1 | 2026Q2 | 2026Q3 |
 |---|---|---|---|
 | Semiconductors | 9 | 5 | 4 |
-| Software & AI | 5 | 5 | 3 |
-| IT hardware & robotics | 5 | 6 | 5 |
+| Software & AI | 5 | 5 | 4 |
+| IT hardware & robotics | 5 | 6 | 6 |
 | Biotech & pharma | 1 | 9 | 0 |
 | Medical devices & services | 3 | 3 | 2 |
-| Industrials & equipment | 6 | 10 | 4 |
+| Industrials & equipment | 6 | 10 | 8 |
 | Consumer discretionary | 3 | 2 | 3 |
 | Consumer staples | 3 | 2 | 1 |
-| Materials & mining | 2 | 2 | 1 |
+| Materials & mining | 2 | 2 | 2 |
 | Other | 1 | 1 | 0 |
-| Total | 38 | 45 | 23 |
+| Total | 38 | 45 | 30 |
 
 ## 2. By sector and quarter (cell = N / mean IR / median IR)
 
 | Sector | 2026Q1 | 2026Q2 | 2026Q3 | All |
 |---|---|---|---|---|
 | Semiconductors | 9 / 38% / 35% | 5 / 145% / 92% | 4 / 1% / 0% | 18 / 59% / 36% |
-| Software & AI | 5 / 106% / 109% | 5 / 140% / 144% | 3 / 2% / 0% | 13 / 95% / 84% |
-| IT hardware & robotics | 5 / 16% / 4% | 6 / 82% / 54% | 5 / 33% / -2% | 16 / 46% / 11% |
+| Software & AI | 5 / 106% / 109% | 5 / 140% / 144% | 4 / -1% / -2% | 14 / 87% / 49% |
+| IT hardware & robotics | 5 / 16% / 4% | 6 / 82% / 54% | 6 / 28% / 2% | 17 / 44% / 8% |
 | Biotech & pharma | 1 / 42% / 42% | 9 / 65% / 103% | 0 | 10 / 63% / 72% |
 | Medical devices & services | 3 / 52% / 31% | 3 / 111% / 118% | 2 / -41% / -41% | 8 / 51% / 22% |
-| Industrials & equipment | 6 / 2% / 3% | 10 / 46% / 47% | 4 / -8% / -0% | 20 / 22% / 4% |
+| Industrials & equipment | 6 / 2% / 3% | 10 / 46% / 47% | 8 / 31% / 3% | 24 / 30% / 6% |
 | Consumer discretionary | 3 / 5% / -37% | 2 / 110% / 110% | 3 / 27% / 16% | 8 / 39% / 8% |
 | Consumer staples | 3 / 25% / 4% | 2 / 122% / 122% | 1 / 162% / 162% | 6 / 80% / 60% |
-| Materials & mining | 2 / 19% / 19% | 2 / 19% / 19% | 1 / -19% / -19% | 5 / 11% / 12% |
+| Materials & mining | 2 / 19% / 19% | 2 / 19% / 19% | 2 / -14% / -14% | 6 / 8% / 3% |
 | Other | 1 / 0% / 0% | 1 / 368% / 368% | 0 | 2 / 184% / 184% |
-| All | 38 / 34% / 13% | 45 / 93% / 80% | 23 / 12% / 0% | 106 / 54% / 16% |
+| All | 38 / 34% / 13% | 45 / 93% / 80% | 30 / 18% / 0% | 113 / 53% / 15% |
 
 ## 3. Concentration within each quarter
 
 |  | 2026Q1 | 2026Q2 | 2026Q3 |
 |---|---|---|---|
-| N | 38 | 45 | 23 |
-| Mean IR | 34% | 93% | 12% |
+| N | 38 | 45 | 30 |
+| Mean IR | 34% | 93% | 18% |
 | Median IR | 13% | 80% | 0% |
-| Mean without top 3 | 22% | 75% | -5% |
-| Mean without top 5 | 17% | 66% | -7% |
-| Share of deals with IR > 100% | 13% | 42% | 9% |
+| Mean without top 3 | 22% | 75% | -1% |
+| Mean without top 5 | 17% | 66% | -5% |
+| Share of deals with IR > 100% | 13% | 42% | 10% |
 | Share of deals with IR > 50% | 26% | 60% | 13% |
 
 ## 4. Quarter effects on log(1 + IR) under alternative specifications
@@ -50,12 +50,12 @@ Coefficients vs 2026Q1 with month-clustered standard errors in parentheses. * p<
 
 | Specification | N | Q2 vs Q1 | Q3 vs Q1 | R-squared |
 |---|---|---|---|---|
-| Quarter only | 106 | 0.31*** (0.09) | -0.17*** (0.05) | 0.16 |
-| + route | 106 | 0.26*** (0.09) | -0.16** (0.07) | 0.21 |
-| + sector | 106 | 0.37*** (0.08) | -0.14** (0.06) | 0.28 |
-| + route + sector | 106 | 0.35*** (0.09) | -0.11 (0.08) | 0.33 |
-| + route + sector, drop Q2 top 5 | 101 | 0.21*** (0.07) | -0.12 (0.08) | 0.29 |
-| + route + sector, drop top 5 of every quarter | 91 | 0.29*** (0.05) | -0.18*** (0.03) | 0.43 |
+| Quarter only | 113 | 0.31*** (0.09) | -0.14** (0.06) | 0.15 |
+| + route | 113 | 0.26*** (0.09) | -0.13** (0.07) | 0.21 |
+| + sector | 113 | 0.36*** (0.08) | -0.09 (0.08) | 0.24 |
+| + route + sector | 113 | 0.33*** (0.10) | -0.07 (0.09) | 0.30 |
+| + route + sector, drop Q2 top 5 | 108 | 0.19** (0.07) | -0.09 (0.09) | 0.26 |
+| + route + sector, drop top 5 of every quarter | 98 | 0.29*** (0.05) | -0.14*** (0.05) | 0.43 |
 
 ## 5. 2026Q2 issuers ranked by first-day return
 

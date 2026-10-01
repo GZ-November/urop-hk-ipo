@@ -1,0 +1,425 @@
+{
+ "code": "6802.HK",
+ "fields": {
+  "col_L": {
+   "value": 96573639,
+   "page": 217,
+   "quote": "H Shares to be issued pursuant to the Global Offering . . . 11,588,800 12.00 Total . . . 96,573,639 100.0%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 11588800,
+   "page": 2,
+   "quote": "Number of Offer Shares in the Global Offering : 11,588,800 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": "NaN",
+   "page": null,
+   "quote": "招股书未披露任何 capitalization Issue（资本化发行）供股数量，包内与检索均无该事项，故填 NaN",
+   "confidence": "low"
+  },
+  "col_O": {
+   "value": "NaN",
+   "page": null,
+   "quote": "招股书未披露任何 Capitalization Rest（资本化发行剩余股份）数量，包内与检索均无该事项，故填 NaN",
+   "confidence": "low"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 217,
+   "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . . . . . . . . . . . . . . . . 11,588,800 12.00",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 11588800,
+   "page": 217,
+   "quote": "H Shares to be issued pursuant to the Global Offering . . . 11,588,800 12.00",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 10429900,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 10,429,900 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1158900,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,158,900 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 35,
+   "quote": "\"H Share(s)\" overseas listed foreign share(s) in our ordinary share capital, with nominal value of RMB1.00 each",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 96573639,
+   "page": 30,
+   "quote": "the 96,573,639 H Shares expected to be in issue immediately upon completion of the Global Offering, assuming the Over-allotment Option is not exercised",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 58.85,
+   "page": 2,
+   "quote": "The Offer Price will be HK$58.85 per Offer Share, unless otherwise announced.",
+   "confidence": "medium"
+  },
+  "col_U": {
+   "value": 58.85,
+   "page": 2,
+   "quote": "The Offer Price will be HK$58.85 per Offer Share, unless otherwise announced.",
+   "confidence": "medium"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 318,
+   "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 336334000,
+   "page": 320,
+   "quote": "NET CURRENT ASSETS . . . . . . . . . . . . . . . 182,309 222,990 268,066 277,048 TOTAL ASSETS LESS CURRENT LIABILITIES 258,825 290,505 339,346 347,052",
+   "confidence": "medium"
+  },
+  "col_X": {
+   "value": 407914000,
+   "page": 320,
+   "quote": "NET CURRENT ASSETS . . . . . . . . . . . . . . . 182,309 222,990 268,066 277,048 TOTAL ASSETS LESS CURRENT LIABILITIES 258,825 290,505 339,346 347,052",
+   "confidence": "medium"
+  },
+  "col_Y": {
+   "value": 483591000,
+   "page": 320,
+   "quote": "NET CURRENT ASSETS . . . . . . . . . . . . . . . 182,309 222,990 268,066 277,048 TOTAL ASSETS LESS CURRENT LIABILITIES 258,825 290,505 339,346 347,052",
+   "confidence": "medium"
+  },
+  "col_Z": {
+   "value": 249615000,
+   "page": 320,
+   "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . 249,615 277,626 327,402 336,828",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 277626000,
+   "page": 320,
+   "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . 249,615 277,626 327,402 336,828",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 327402000,
+   "page": 320,
+   "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . 249,615 277,626 327,402 336,828",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 86719000,
+   "page": 320,
+   "quote": "Total current liabilities . . . . . . . . . . . . . . . . . 77,509 117,409 144,245 210,021",
+   "confidence": "medium"
+  },
+  "col_AD": {
+   "value": 130288000,
+   "page": 320,
+   "quote": "Total current liabilities . . . . . . . . . . . . . . . . . 77,509 117,409 144,245 210,021",
+   "confidence": "medium"
+  },
+  "col_AE": {
+   "value": 156189000,
+   "page": 320,
+   "quote": "Total current liabilities . . . . . . . . . . . . . . . . . 77,509 117,409 144,245 210,021",
+   "confidence": "medium"
+  },
+  "col_AF": {
+   "value": 332107000,
+   "page": 319,
+   "quote": "REVENUE . . . . . . . . . . . . . . 5 332,107 433,324 613,523 131,789 195,919",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 433324000,
+   "page": 319,
+   "quote": "REVENUE . . . . . . . . . . . . . . 5 332,107 433,324 613,523 131,789 195,919",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 613523000,
+   "page": 319,
+   "quote": "REVENUE . . . . . . . . . . . . . . 5 332,107 433,324 613,523 131,789 195,919",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -883000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) BEFORE TAX . 8 (883) (31,360) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -31360000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) BEFORE TAX . 8 (883) (31,360) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 2201000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) BEFORE TAX . 8 (883) (31,360) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -883000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD . . . . . . . . . (883) (31,375) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -31375000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD . . . . . . . . . (883) (31,375) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 2201000,
+   "page": 319,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD . . . . . . . . . (883) (31,375) 2,201 (6,669) 7,757",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 28900000,
+   "page": 320,
+   "quote": "Interest-bearing bank borrowings . . . . . . . . . . . 26 10,000 – 10,000 10,000 Lease liabilities . . . . . . . . . . . . . . . . . . . . . . 16 4,161 4,291 6,971 7,611",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS",
+   "page": 239,
+   "quote": "Our historical financial information has been prepared in accordance with International Financial Reporting Standards (“IFRSs”)",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 100989000,
+   "page": 319,
+   "quote": "Gross profit . . . . . . . . . . . . . 71,255 70,841 100,989 16,278 37,580",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 16511000,
+   "page": 325,
+   "quote": "Purchases of items of property, plant and equipment . . . . . . . . . . . . . (9,545) (38,947) (16,511) (7,225) (3,312)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 318,
+   "quote": "The financial statements of the Group for the Relevant Periods, on which the Historical Financial Information is based, were audited by Ernst & Young",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.035,
+   "page": 30,
+   "quote": "including underwriting commission, of approximately HK$23.9 million",
+   "confidence": "medium"
+  },
+  "col_AP": {
+   "value": 0.035,
+   "page": 30,
+   "quote": "including underwriting commission, of approximately HK$23.9 million",
+   "confidence": "medium"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 38,
+   "quote": "up to an aggregate of 1,738,300 additional H Shares, representing approximately 15% of the Offer Shares initially being offered under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 66600000,
+   "page": 30,
+   "quote": "Listing expenses to be borne by us are estimated to be approximately HK$66.6 million (based on the Offer Price of HK$58.85 per Share",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Spatial sensing products and AI spatial sensing systems (triangulation LiDAR, dTOF LiDAR, 3D TOF LiDAR, line laser sensors) and algorithms/hardware, focused on robotic vacuums",
+   "page": 111,
+   "quote": "We specialize in developing spatial sensing products, with a focus on robotic vacuums applications. Leveraging AI technologies, we build intelligent spatial sensing systems",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of The Stock Exchange of Hong Kong (H Shares)",
+   "page": 316,
+   "quote": "in connection with the initial listing of the shares of the Company on the Main Board of The Stock Exchange of Hong Kong Limited",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialized (mass production; cumulative shipments over 39 million units)",
+   "page": 141,
+   "quote": "our total cumulative shipment volume has surpassed 39 million units. In 2025, the total shipments of LiDAR and line laser sensors exceeded ten million units and five million units",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 30,
+   "quote": "approximately HK$61.5 million (representing 10.0% of the net proceeds) will be used for our working capital and general corporate purposes",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Golden Link Worldwide Limited;Taiwan ZMAX Optech Co., Ltd. (台灣中潤光電股份有限公司)",
+   "page": 225,
+   "quote": "Golden Link Worldwide Limited (“Golden Link”) . . . . . . . . . . 100 1,699,200",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 316,
+   "quote": "consolidated statements of cash flows of the Group for each of the years ended 31 December 2023, 2024 and 2025 and the three months ended 31 March 2026",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -9038000,
+   "page": 24,
+   "quote": "Net cash used in operating activities . . . (34,831) (39,987) (9,038) (7,937) (5,319)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 12123000,
+   "page": 320,
+   "quote": "Cash and cash equivalents 22 15,109 29,608 12,123 26,314",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 59367000,
+   "page": 319,
+   "quote": "Research and development costs . (54,619) (76,695) (59,367) (17,347) (14,813)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": 325,
+   "quote": "Additions to intangible assets . . . . . (873) – (292) – – Withdrawal of time deposits . .",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.804,
+   "page": 14,
+   "quote": "revenue generated from our five largest customers in each period during the Track Record Period accounted for 93.6%, 89.2%, 80.4% and 85.6% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "深圳市欢创科技股份有限公司",
+   "page": 2,
+   "quote": "Shenzhen Camsense Technologies Co., Ltd. 深圳市歡創科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 119,
+   "quote": "Principal terms of the Pre-IPO Investments The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 127,
+   "quote": "Fuhai Shenwan and Fuhai Jiuqian are limited partnerships established in the PRC on July 6, 2015, and October 11, 2016, respectively, both of which are principally engaged in venture capital",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 221,
+   "quote": "Fuhai Shenwan (Shenzhen) Mobile Innovation Private Equity Venture Capital Fund Partnership Enterprise (Limited Partnership) (富海深灣（深圳）移動創新私募創業投資基金合夥企業（有限合夥）)",
+   "confidence": "medium"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 133,
+   "quote": "Roborock Innovation is wholly owned by our Customer B.",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 130,
+   "quote": "Wuxi Innovation is held as to 73.50% by Wuxi Guofa Capital Operation Co., Ltd. (無錫市國發資本運營有限公司), which is wholly owned by the State-owned Assets Supervision and Administration Commission",
+   "confidence": "medium"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "招股书未披露'顶级(top-tier)'VC/PE的认定标准或权威排名，OFC/前海方舟/基石资本等无法客观判定层级，填 NaN",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Mr. Liu Yi;Lewei Internet Investment Management (Beijing) Co., Ltd.;Fuhai Shenwan;New Fuguo;Fuhai Jiuqian;Mianyang Weisheng;Shanghai Puruan;Nanshan Fuhai;Shanghai Xuanjian;Changzhou Xiyang Puxin;Changzhou Xiyang;Jiaxing Zhongdian Aijia;Nanling Huiye;Shanghai Puyang;Dongguan Xiyang;Pingshan Kaisheng;Hangzhou Puhua Yuchen;Shenzhen Tianle;Kaisheng No.5;Shanghai Baichen;Changsha Xiyang;Mr. Yang Xi;Smart Internet;Shenzhen Qianhai;Zhongyuan Qianhai;Lingrui Keystone;Guosen Capital;Shenzhen Haojun;V-Capital;Wuxi Yicun Juncheng;Qingdao Resonance;Nanshan Shanghua Hongtu;Zhicheng Shuzhi No. 10;Qingdao Microelectronics;Qingdao Guotou;Zhongshan Entrepreneurship;Zhongshan Torch;Roborock Innovation;Hefei High-Tech",
+   "page": 119,
+   "quote": "The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.6416,
+   "page": 137,
+   "quote": "As of the date of this prospectus Immediately upon the completion of the Global Offering assuming the Over-allotment Option is not exercised Shareholder Number of Shares Shareholding percentage",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 126,
+   "quote": "certain Pre-IPO Investors were entitled to nominate director(s) and/or supervisor(s) to our Company. Such director nomination right and supervisor nomination right were exercised",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series Seed",
+   "page": 119,
+   "quote": "1 . Series Seed N/A June 11, 2015 Mr. Liu Yi (劉屹) (2) RMB35,089 RMB2.00 million",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 11.28,
+   "page": 119,
+   "quote": "Series Seed N/A June 11, 2015",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Founders/individuals (co-founders acting in concert)",
+   "page": 41,
+   "quote": "\"Single Largest Group of Shareholders\" Mr. Wang Jian (王健), Mr. Zhou Kun (周琨) and Mr. Liu Yi (劉屹), Camsense Investment, Xinle Management and Camsense Era",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.2745,
+   "page": 221,
+   "quote": "Mr. Wang Jian (王健) (\"Mr. Wang\") (3) (4) . . . Beneficial interest Unlisted Shares 10,641,212 12.52% H Shares 10,641,212 11.02% 11.02%",
+   "confidence": "low"
+  },
+  "col_BD": {
+   "value": 0.2745,
+   "page": 222,
+   "quote": "agreed to act in concert, including exercising the voting rights of the Shares held or controlled by them, with respect to the operation and material decisions of our Company",
+   "confidence": "low"
+  },
+  "col_BP": {
+   "value": "31/12/2013",
+   "page": 112,
+   "quote": "Our Company was established as a limited liability company in the PRC on December 31, 2013, with an initial registered capital of RMB571,429",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shenzhen, the PRC",
+   "page": 33,
+   "quote": "Shenzhen Camsense Technologies Co., Ltd. (深圳市歡創科技股份有限公司), a limited liability company established in the PRC on December 31, 2013",
+   "confidence": "medium"
+  },
+  "col_CC": {
+   "value": "22/09/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, September 22, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "25/09/2026",
+   "page": 5,
+   "quote": "Application lists close(3) . . . 12:00 noon on Friday, September 25, 2026",
+   "confidence": "high"
+  }
+ }
+}

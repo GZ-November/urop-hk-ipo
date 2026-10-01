@@ -1,0 +1,425 @@
+{
+ "code": "3228.HK",
+ "fields": {
+  "col_L": {
+   "value": 72944300,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 72,944,300 H Shares",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 72944300,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 72,944,300 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 0,
+   "page": 26,
+   "quote": "the Global Offering has been completed and 72,944,300 H Shares are newly issued in the Global Offering",
+   "confidence": "medium"
+  },
+  "col_O": {
+   "value": 0,
+   "page": 26,
+   "quote": "the Global Offering has been completed and 72,944,300 H Shares are newly issued in the Global Offering",
+   "confidence": "medium"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 26,
+   "quote": "the Global Offering has been completed and 72,944,300 H Shares are newly issued in the Global Offering",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 72944300,
+   "page": 26,
+   "quote": "the Global Offering has been completed and 72,944,300 H Shares are newly issued in the Global Offering",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 65649800,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 65,649,800 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 7294500,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 7,294,500 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares (ordinary shares)",
+   "page": 209,
+   "quote": "Upon the completion of the Global Offering, our Shares will consist of A Shares and H Shares. A Shares and H Shares are all ordinary Shares",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 72944300,
+   "page": 209,
+   "quote": "H Shares to be issued under the Global Offering 72,944,300 6.79",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 69.88,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$69.88 per H Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内切片仅披露最高发售价 HK$69.88，未披露最低发售价（发售价于定价日才确定）",
+   "confidence": "low"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 214,
+   "quote": "Our reporting currency is the RMB, which is our Company's functional currency.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 17230732000,
+   "page": 23,
+   "quote": "Total assets 17,230,732 19,243,777 23,726,909 26,473,789",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 19243777000,
+   "page": 23,
+   "quote": "Total assets 17,230,732 19,243,777 23,726,909 26,473,789",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 23726909000,
+   "page": 23,
+   "quote": "Total assets 17,230,732 19,243,777 23,726,909 26,473,789",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 8970220000,
+   "page": 24,
+   "quote": "Total equity 8,970,220 11,497,706 13,269,792 13,077,545",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 11497706000,
+   "page": 24,
+   "quote": "Total equity 8,970,220 11,497,706 13,269,792 13,077,545",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 13269792000,
+   "page": 24,
+   "quote": "Total equity 8,970,220 11,497,706 13,269,792 13,077,545",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 8260512000,
+   "page": 24,
+   "quote": "Total liabilities 8,260,512 7,746,071 10,457,117 13,396,244",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 7746071000,
+   "page": 24,
+   "quote": "Total liabilities 8,260,512 7,746,071 10,457,117 13,396,244",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 10457117000,
+   "page": 24,
+   "quote": "Total liabilities 8,260,512 7,746,071 10,457,117 13,396,244",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 10757302000,
+   "page": 283,
+   "quote": "REVENUE 5 10,757,302 12,659,373 15,308,052 4,533,613 5,341,392",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 12659373000,
+   "page": 283,
+   "quote": "REVENUE 5 10,757,302 12,659,373 15,308,052 4,533,613 5,341,392",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 15308052000,
+   "page": 283,
+   "quote": "REVENUE 5 10,757,302 12,659,373 15,308,052 4,533,613 5,341,392",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 1047530000,
+   "page": 283,
+   "quote": "PROFIT BEFORE TAX 6 1,047,530 1,320,439 1,464,383 481,560 337,896",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 1320439000,
+   "page": 283,
+   "quote": "PROFIT BEFORE TAX 6 1,047,530 1,320,439 1,464,383 481,560 337,896",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 1464383000,
+   "page": 283,
+   "quote": "PROFIT BEFORE TAX 6 1,047,530 1,320,439 1,464,383 481,560 337,896",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 911029000,
+   "page": 283,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 911,029 1,160,208 1,244,018 424,285 316,919",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 1160208000,
+   "page": 283,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 911,029 1,160,208 1,244,018 424,285 316,919",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 1244018000,
+   "page": 283,
+   "quote": "PROFIT FOR THE YEAR/PERIOD 911,029 1,160,208 1,244,018 424,285 316,919",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 2484620000,
+   "page": 25,
+   "quote": "Calculated by dividing total interest-bearing bank and other borrowings, convertible bonds and lease liabilities divided by total equity as of the end of the period.",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS",
+   "page": 211,
+   "quote": "Our consolidated financial information has been prepared in accordance with the International Financial Reporting Standards (\"IFRSs\").",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 3304889000,
+   "page": 283,
+   "quote": "Gross profit 2,492,324 2,877,685 3,304,889 937,378 1,001,200",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 2762785000,
+   "page": 292,
+   "quote": "Purchase of items of property, plant and equipment (1,427,883) (1,830,997) (2,762,785) (731,408) (2,071,706)",
+   "confidence": "medium"
+  },
+  "col_CH": {
+   "value": "NA",
+   "page": null,
+   "quote": "包内切片未包含核数师审计意见表述",
+   "confidence": "low"
+  },
+  "col_AO": {
+   "value": 0.011,
+   "page": 261,
+   "quote": "Our Company will pay an underwriting commission of 1.10% of the aggregate Offer Price of all the Offer Shares (the \"Fixed Fees\").",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.011,
+   "page": 261,
+   "quote": "Our Company will pay an underwriting commission of 1.10% of the aggregate Offer Price of all the Offer Shares (the \"Fixed Fees\").",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内切片未披露超额配售权（over-allotment option）条款",
+   "confidence": "low"
+  },
+  "col_CI": {
+   "value": 136700000,
+   "page": 28,
+   "quote": "Listing expenses to be borne by us are estimated to be approximately RMB118.1 million (HK$136.7 million)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "印刷电路板（PCB）的研发、制造与销售",
+   "page": 10,
+   "quote": "We are a globally recognized printed circuit board (\"PCB\") manufacturer driven by technological development and distinguished by our broad product offerings.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "香港联交所主板上市（Main Board of The Stock Exchange of Hong Kong Limited）",
+   "page": 32,
+   "quote": "with a nominal value of RMB1.00 each, which are to be subscribed for and traded in Hong Kong dollars and to be listed on the Main Board of the Stock Exchange",
+   "confidence": "medium"
+  },
+  "col_BF": {
+   "value": "Mass production（已实现大规模量产）",
+   "page": 10,
+   "quote": "We have achieved mass production of LiDAR boards, fifth and sixth-generation millimeter-wave radar boards, ADCU high build-up HDI motherboards",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0.15,
+   "page": 27,
+   "quote": "approximately 15%, or approximately HK$744.1 million, of the net proceeds will be used to repay a portion of our existing interest-bearing bank borrowings",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "CPE Redwood; Zhongji Innolight; Hong Kong Mason; CIG; CloudAlpha Capital; E Fund; E Fund Management; E Fund HK; Bosera International; Seven Grand; 3W Fund; Tianhong Fund; Ninety One Asia; JPMAMAPL; Barings; KHL",
+   "page": 204,
+   "quote": "THE CORNERSTONE INVESTORS The table below sets forth details of the Cornerstone Placing:",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 283,
+   "quote": "Year ended 31 December Four months ended 30 April Notes 2023 2024 2025 2025 2026",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 1931225000,
+   "page": 292,
+   "quote": "Net cash flows from operating activities 2,115,491 2,289,629 1,931,225 603,876 493,389",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 1941199000,
+   "page": 293,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR/PERIOD 1,968,398 1,838,432 1,941,199 2,253,558 2,910,922",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 929932000,
+   "page": 283,
+   "quote": "Research and development costs (600,696) (757,587) (929,932) (272,312) (280,739)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "包内切片未披露资本化开发成本的当期新增额（无形资产附注未含于切片）",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.236,
+   "page": 14,
+   "quote": "revenue contributed from our five largest customers amounted to RMB1,943.4 million, RMB2,769.8 million, RMB3,605.6 million ... accounting for 18.0%, 22.0%, 23.6%",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "深圳市景旺电子股份有限公司",
+   "page": 1,
+   "quote": "深圳市景旺電子股份有限公司 Shenzhen Kinwong Electronic Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "The following chart sets forth a simplified shareholding structure of our Group immediately prior to the completion of the Global Offering（仅披露一致行动人集团与公众股东，未披露VC/PE机构投资）",
+   "confidence": "low"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "上市前股权结构图仅显示 Jinghong Yongtai、Wise Able、Yizhao 及 Other A-share shareholders，无VC机构披露",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "上市前股权结构图仅显示一致行动人集团与公众股东，无PE机构披露，亦无明确确认无此类投资",
+   "confidence": "low"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "上市前股权结构图未披露任何CVC机构股东；Luxshare仅持有子公司49%股权",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "上市前股东无国资机构披露（1993年原始出资方深圳南山区工业发展公司已不在现行股东结构中）",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "无上市前VC/PE机构投资披露，无法判定顶级VC/PE支持",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": 119,
+   "quote": "招股书未披露上市前VC/PE机构投资者（股东仅为一 coupling 致行动人集团及未具名公众股东）",
+   "confidence": "low"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "上市前机构投资者持股合计无披露依据",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": 119,
+   "quote": "无上市前机构投资者与董事席位关联的披露",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "招股书未披露上市前投资轮次",
+   "confidence": "low"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "无上市前VC/PE投资协议日期可供计算持有年限",
+   "confidence": "low"
+  },
+  "col_BB": {
+   "value": "自然人（刘绍柏家族一致行动人集团）",
+   "page": 114,
+   "quote": "our total issued share capital was held as to approximately 56.01% by our Controlling Shareholders Group, including Jinghong Yongtai, Wise Able Investment, Yizhao Investment, Mr. Liu Shaobai...",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5221,
+   "page": 114,
+   "quote": "The Controlling Shareholders Group will be entitled to exercise the voting rights attached to approximately 52.21% of our total issued share capital",
+   "confidence": "medium"
+  },
+  "col_BD": {
+   "value": 0.5221,
+   "page": 114,
+   "quote": "The Controlling Shareholders Group will be entitled to exercise the voting rights attached to approximately 52.21% of our total issued share capital",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "1993-03-09",
+   "page": 115,
+   "quote": "On March 9, 1993, our Company was established in the PRC as a limited liability company with an initial registered capital of HKD5 million.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "中国广东省深圳市宝安区西乡街道铁岗水库路166号",
+   "page": 81,
+   "quote": "Headquarters and principal place of business in China 166 Tiegang Shuiku Road Xixiang Subdistrict Bao'an District, Shenzhen PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "2026-09-21",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences 9:00 a.m. on Monday, September 21, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "2026-09-24",
+   "page": 5,
+   "quote": "Application lists close 12:00 noon on Thursday, September 24, 2026",
+   "confidence": "high"
+  }
+ }
+}

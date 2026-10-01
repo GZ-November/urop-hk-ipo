@@ -1,0 +1,55 @@
+# Supplemental Main Board new-listing entries for 2026 beyond NLR2026_Eng.xlsx coverage.
+#
+# NLR2026_Eng.xlsx (retrieved 2026-10-01) is titled "Year 2026 (up to 29 September 2026)"
+# and contains 115 candidate rows (112 ordinary Main Board IPOs after the three known
+# exclusions: 7489 introduction, 6051 GEM transfer, 3774 GEM transfer).  The official
+# HKEX monthly report for September 2026 (published 2026-09-30) counts 116 Main Board
+# newly listed companies year-to-date, including 2 GEM-to-Main-Board transfers, i.e.
+# 113 ordinary Main Board IPOs.  113 - 112 = 1 issuer is beyond the annual report's
+# printed coverage date; it is listed here with its own official sources until the
+# annual report is refreshed to include it.
+#
+# Rules for entries in this file:
+#   - listing_date must be after the annual report's printed coverage date;
+#   - every entry carries at least one official HKEX source URL and a retrieved date;
+#   - entries are merged by build_cohort_workbook only for requested intervals that
+#     extend past the annual report's coverage (see listing_reports.load_supplement).
+
+year: 2026
+report_as_of: "2026-09-29"   # printed coverage of NLR2026_Eng.xlsx
+retrieved: "2026-10-01"
+context_sources:
+  monthly_report:
+    title: "Report on Initial Public Offering Applications, Delisting and Suspensions (September 2026)"
+    url: "https://www.hkex.com.hk/News/Market-Communications/2026/260930news?sc_lang=en"
+    published: "2026-09-30"
+    fact: "Main Board newly listed companies 2026 year to date: 116, including 2 transfers of listing from GEM to the Main Board."
+  official_listing_page:
+    title: "New Listing Information - Main Board"
+    url: "https://www2.hkexnews.hk/New-Listings/New-Listing-Information/Main-Board?sc_lang=en"
+entries:
+  - stock_code: "6802.HK"
+    company_name: "Shenzhen Camsense Technologies Co., Ltd. - H Shares"
+    name_note: >
+      Name as printed in the allotment results announcement
+      ("Shenzhen Camsense Technologies Co., Ltd.", 深圳市歡創科技股份有限公司);
+      the "- H Shares" suffix follows the annual report's naming convention for
+      H-share listings and the H-share nature is stated in the announcement
+      ("dealings in the H Shares ... will commence at 9:00 a.m. on Wednesday,
+      September 30, 2026").
+    prospectus_date: "2026-09-22"
+    prospectus_date_source: "allotment results announcement: 'the prospectus dated September 22, 2026'"
+    listing_date: "2026-09-30"
+    listing_date_source: >
+      allotment results announcement: "it is expected that dealings in the H Shares on
+      the Stock Exchange will commence at 9:00 a.m. on Wednesday, September 30, 2026"
+    offer_price_hkd: 58.85
+    offer_price_source: "allotment results announcement 'Price Information - Offer Price: HK$58.85'"
+    file_no: null
+    file_no_note: "Not yet published in NLR2026_Eng.xlsx; to be filled when the annual report is refreshed."
+    sources:
+      - url: "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901927.pdf"
+        description: "Allotment results announcement, Shenzhen Camsense Technologies Co., Ltd. (26 pages)"
+        retrieved: "2026-10-01"
+        sha256: "1effec82502ada9db2610af74b729214f0b63ba087d90d914535a39fe0d2343a"
+    retrieved: "2026-10-01"

@@ -1,0 +1,19 @@
+{
+  "code": "3228.HK",
+  "reviewer": "lockup-rev-3228",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Independently re-verified. Quote on p208 matches the prospectus verbatim ('RESTRICTIONS ON THE CORNERSTONE INVESTORS': 'at any time during the period of six months following the Listing Date (both days inclusive)'). Listing Date confirmed as 29 September 2026 (p7/p34: 'expected to be on or about Tuesday, September 29, 2026'). Applying repo convention for 'both days inclusive' six-month cornerstone wording: window [2026-09-29, 2027-03-28], first free = six-month anniversary 2027-03-29, last restricted 2027-03-28 — matches candidate. Holder list spot-checked: aggregate 34,788,400 Offer Shares, ~47.69% of Global Offering, ~3.24% of issued share capital at max Offer Price HK$69.88 confirmed on p203; investor roster (CPE Redwood, VERTEXVEST, Hong Kong Mason Electronics, Cambridge Industries Group Telecommunication, CloudAlpha, E Fund, Bosera International, Seven Grand, Tianhong, Ninety One Asia, JPMorgan AM Asia Pacific, Baring/Barings AM Asia, Kingboard Investments) confirmed at pp.203-207. Consent carve-out (Company/Joint Sponsors/Sponsor-Overall Coordinators) and wholly-owned-subsidiary transfer exception correctly noted; neither shortens the restricted span. No corrections.",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "Independently re-verified. Quote on p260 matches verbatim: Rule 10.07(1)(a) 'in the period commencing on the date of the prospectus and ending on the date which is six months from the Listing Date (the \"First Six-Month Period\")'. Prospectus date confirmed as 21 September 2026 (p368/p382: 'prospectus dated 21 September 2026'), so reference_date 2026-09-21 is correct. Wording is anniversary-inclusive ('ending on the date which is six months from the Listing Date'), so per repo convention last restricted = 2027-03-29, first free = 2027-03-30 — matches candidate. Holders verified: Controlling Shareholders Group = Jinghong Yongtai, Wise Able Investment, Yizhao Investment, Mr. Liu Shaobai, Ms. Huang Xiaofen, Ms. Cheuk Kwan, Mr. Liu Yu, ~56.01% pre-Global Offering (p26/p114) and ~52.21% immediately post-Global Offering (p26) — matches candidate. 'Except pursuant to the Global Offering' carve-out and Note 3 to Rule 10.07(2) pledge-notice obligations correctly noted. No corrections.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Independently re-verified. Quote on p260 matches verbatim: Rule 10.07(1)(b) 'in the period of six months commencing on the date on which the First Six-Month Period expires (the \"Second Six-Month Period\") ... if, immediately following such disposal ... it/he/she would cease to be a Controlling Shareholder'. FSP expires 2027-03-29 (restricted day), so SSP commences 2027-03-29; six-month window [2027-03-29, 2027-09-28] inclusive, first free = 2027-09-29 — matches candidate and is internally consistent (first free equals the 12-month anniversary of the Listing Date). Correctly characterized as a conditional loss-of-control restriction, not a blanket 12-month ban; non-control-losing disposals are possible from 2027-03-30. Holders same Controlling Shareholders Group as 6m block (verified p26/p117). Note 3 to Rule 10.07(2) obligations during both periods confirmed on p260. No corrections.",
+    "corrections": {}
+  }
+}

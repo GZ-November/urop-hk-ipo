@@ -1,22 +1,22 @@
 # Module B sample selection — 2026 listings only
 
-Input: 106 issuers; common complete-case sample: 102.
+Input: 113 issuers; common complete-case sample: 105.
 
 | Input | Missing/invalid | Available |
 |---|---|---|
-| Outcome: log(1 + IR) | 0 | 106 |
-| Stock code | 0 | 106 |
-| Listing month | 0 | 106 |
-| ln firm age | 0 | 106 |
-| ln offer size | 0 | 106 |
-| A+H issuer | 0 | 106 |
-| VC/PE-backed | 4 | 102 |
-| Top-tier sponsor | 0 | 106 |
-| Cornerstone allocation | 0 | 106 |
-| HSI return, prior 20 days | 0 | 106 |
-| IPO count, prior 90 days | 0 | 106 |
-| April-June hot window | 0 | 106 |
-| ln subscription ratio | 0 | 106 |
-| Common complete-case sample (M1-M4) | 4 | 102 |
+| Outcome: log(1 + IR) | 0 | 113 |
+| Stock code | 0 | 113 |
+| Listing month | 0 | 113 |
+| ln firm age | 0 | 113 |
+| ln offer size | 0 | 113 |
+| A+H issuer | 0 | 113 |
+| VC/PE-backed | 7 | 106 |
+| Top-tier sponsor | 1 | 112 |
+| Cornerstone allocation | 0 | 113 |
+| HSI return, prior 20 days | 0 | 113 |
+| IPO count, prior 90 days | 0 | 113 |
+| April-June hot window | 0 | 113 |
+| ln subscription ratio | 0 | 113 |
+| Common complete-case sample (M1-M4) | 8 | 105 |
 
 Counts overlap. Nonpositive age, proceeds or subscription ratio, IR <= -1, invalid flags/tier and non-finite values are missing inputs; unknown flags are never recoded as zero.

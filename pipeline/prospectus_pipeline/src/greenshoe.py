@@ -20,6 +20,7 @@ import datetime as dt
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from pathlib import Path
 
 import requests
 from storage import atomic_json, official_files
@@ -211,6 +212,40 @@ def fetch_shares(cfg: dict, index: dict, only=None, log=print) -> dict:
 
 
 # ------------------------------------------------------------------ 3) 回填 CV
+NO_OVERALLOCATION = re.compile(
+    r"(?:number of (?:offer shares |shares )?over-?allocated\s*[:：]?\s*0\b"
+    r"|there is no over-?allocation)",
+    re.I,
+)
+
+
+def find_no_overallotment(cfg: dict, code: str) -> dict | None:
+    """Locate an explicit 'no over-allocation' statement in the allotment results.
+
+    The allotment results announcement itself is first-party, dated evidence: when
+    it states that zero Offer Shares were over-allocated (or that there is no
+    over-allocation), the Over-allotment Option cannot be exercised and col_CV is
+    deterministically 0 regardless of the 30-day search window.
+    """
+    text_dir = Path(cfg["paths"]["allot_text"])
+    path = text_dir / f"{safe(code)}.jsonl"
+    if not path.is_file():
+        return None
+    for line in path.open(encoding="utf-8"):
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        text = str(row.get("text") or row.get("content") or "")
+        normalized = " ".join(text.split())
+        match = NO_OVERALLOCATION.search(normalized)
+        if match:
+            start = max(0, match.start() - 40)
+            quote = normalized[start:match.end() + 120].strip()
+            return {"page": int(row.get("page", 0)) or None, "quote": quote[:200]}
+    return None
+
+
 def apply_cv(cfg: dict, only=None, log=print) -> int:
     """把 col_CV 写成确定性结果（覆盖 agent 的推断），并给出可核验的证据。"""
     out_dir = cfg["paths"]["allot_out"]
@@ -226,6 +261,7 @@ def apply_cv(cfg: dict, only=None, log=print) -> int:
         rec = json.loads(fp.read_text(encoding="utf-8"))
         fields = rec.setdefault("fields", {})
         lapse = next((m for m in g["matches"] if m["kind"] == "lapse"), None)
+        no_overallotment = None if g["exercised"] else find_no_overallotment(cfg, code)
         if g["exercised"]:
             s = gs.get(code)
             if not s or s.get("status") != "ok":
@@ -234,6 +270,13 @@ def apply_cv(cfg: dict, only=None, log=print) -> int:
                 "value": s["shares"], "page": s["page"], "quote": s["quote"],
                 "source": "greenshoe", "confidence": "high",
                 "note": f"{s['doc_title']} ({s['datetime']})",
+            }
+        elif no_overallotment:
+            fields["col_CV"] = {
+                "value": 0, "page": no_overallotment["page"],
+                "quote": no_overallotment["quote"],
+                "source": "greenshoe_no_overallotment", "confidence": "high",
+                "note": "配发结果公告明示零超配，Over-allotment Option 不会行使",
             }
         elif lapse:
             fields["col_CV"] = {

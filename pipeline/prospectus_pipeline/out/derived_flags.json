@@ -37,6 +37,45 @@
       "CL": "2027-01-09"
     }
   },
+  "0625.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange (Chapter 8A - Weighted Voting Rights structure)",
+      "incorporation": "ng (A company controlled through weighted voting rights and incorporated in the Cayman Islands with limited liability) Joint Sponsors, Sponsor-Overall Coo",
+      "unlock": "上市日 2026-09-01 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "1",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "Cayman Islands",
+      "CL": "2027-03-01"
+    }
+  },
+  "0668.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Chapter 19A of the Main Board Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "STOCK CODE : 00668 (A joint stock company incorporated in the People's Republic of China with limited liability) GLOBAL OFFERING Joint Sponsors, Ove",
+      "unlock": "上市日 2026-07-02 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-02"
+    }
+  },
   "0901.HK": {
     "evidence": {
       "col_AS": "Chapter 19A of the Listing Rules (H Share issuer)",
@@ -139,6 +178,25 @@
       "CL": "2025-11-23"
     }
   },
+  "1377.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Main Board of the Stock Exchange — Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": " Bookrunners and Joint Lead Managers (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code: 1377 If you are in any ",
+      "unlock": "上市日 2026-07-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-09"
+    }
+  },
   "1392.HK": {
     "evidence": {
       "col_AS": "Main Board of the Stock Exchange - market capitalisation/revenue test under Rule 8.05(3)",
@@ -203,6 +261,26 @@
       "CL": "2026-12-26"
     }
   },
+  "1770.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Chapter 19A of the Listing Rules (PRC issuer — primary listing on the Main Board)",
+      "incorporation": "OFFERING DKE HOLDING COMPANY LIMITED (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock code: 1770 Sole Sponsor, Spon",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "NA"
+    }
+  },
   "1779.HK": {
     "evidence": {
       "col_AS": "Chapter 18A of the Listing Rules (Main Board)",
@@ -251,6 +329,26 @@
       "CL": "2026-12-26"
     }
   },
+  "2041.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Rule 8.05(3)",
+      "incorporation": "oint Lead Managers Stock Code : 2041 (A joint stock company incorporated in the People’s Republic of China with limited liability) 深圳麥科田生物醫療技術股份有限公司 Medcaptain Medica",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "NA"
+    }
+  },
   "2050.HK": {
     "evidence": {
       "a_plus_h": {
@@ -293,6 +391,26 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2027-01-10"
+    }
+  },
+  "2261.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Rule 8.05(3) of the Listing Rules (Market Capitalization/Revenue Test)",
+      "incorporation": "nt Bookrunner and Joint Lead Manager (A joint stock company incorporated in the People’s Republic of China with limited liability) IMPORTANT: If you are in any doubt ",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "NA"
     }
   },
   "2272.HK": {
@@ -419,6 +537,26 @@
       "CL": "NA"
     }
   },
+  "2667.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board - Rule 8.05(2) (market capitalisation/revenue/cash flow test)",
+      "incorporation": "GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code: 2 6 6 7 北京同仁堂醫養投資股份有限公司",
+      "unlock": "上市日 2026-07-07 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-07"
+    }
+  },
   "2672.HK": {
     "evidence": {
       "col_AS": "Main Board — Rule 8.05(3) market capitalisation/revenue test (Chapter 8)",
@@ -489,6 +627,26 @@
       "CL": "NA"
     }
   },
+  "2797.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange",
+      "incorporation": "nt Bookrunner and Joint Lead Manager (A joint stock company incorporated in the People's Republic of China with limited liability) Stock Code : 2797 GLOBAL OFFERING I",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "NA"
+    }
+  },
   "2865.HK": {
     "evidence": {
       "a_plus_h": {
@@ -509,6 +667,67 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2025-11-08"
+    }
+  },
+  "3223.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "GLOBAL OFFERING Stock Code : 3223 (A joint stock company incorporated in the People’s Republic of China with limited liability) 北京君正集成電路股份有限公司 Ingenic Semiconducto",
+      "unlock": "上市日 2026-08-25 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-02-25"
+    }
+  },
+  "3228.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 8,
+        "page": 16,
+        "quote": "HANGHAI STOCK EXCHANGE In January 2017, our A Shares were listed on the Shanghai Stock Exchange (stock code: 603228) (the “A-Share Listing”). Pursuant to t",
+        "source": "prospectus"
+      },
+      "col_AS": "香港联交所主板上市（Main Board of The Stock Exchange of Hong Kong Limited）",
+      "incorporation": "GLOBAL OFFERING Stock Code : 3228 (A joint stock company incorporated in the People’s Republic of China with limited liability) 深圳市景旺電子股份有限公司 Shenzhen Kinwong Elec",
+      "unlock": "上市日 2026-09-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-03-29"
+    }
+  },
+  "3231.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company - Commercial Company)",
+      "incorporation": "tics (Wuxi) Co. Ltd. 優地機器人（無錫）股份有限公司 (A joint stock company incorporated in the People’s Republic of China with limited liability) Global Offering Number of Offer Sha",
+      "unlock": "上市日 2026-09-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "2027-03-09"
     }
   },
   "3277.HK": {
@@ -571,6 +790,25 @@
       "CL": "2026-10-23"
     }
   },
+  "3308.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Chapter 19A of the Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "Stock Code : 3308 (A joint stock company incorporated in the People’s Republic of China with limited liability) 中際旭創股份有限公司 ZHONGJI INNOLIGHT CO., L",
+      "unlock": "上市日 2026-07-30 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-30"
+    }
+  },
   "3310.HK": {
     "evidence": {
       "col_AS": "Main Board - Rule 8.05(3) market capitalization/revenue test",
@@ -617,6 +855,48 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2026-12-26"
+    }
+  },
+  "3752.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board – Rule 8.05(3) market capitalisation/revenue test (H Share issuer under Chapter 19A)",
+      "incorporation": "Stock Code : 3752 (a joint stock company incorporated in the People’s Republic of China with limited liability) 珞石( 山東) 機器人集團股份有限公司 ROKAE (SHANDONG",
+      "unlock": "上市日 2026-07-09 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-09"
+    }
+  },
+  "3757.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 8,
+        "page": 18,
+        "quote": "LATORY COMPLIANCE AND LEGAL PROCEEDINGS Our A shares have been listed on the Shenzhen Stock Exchange since January 8, 2019. Our Directors, having made all reaso",
+        "source": "prospectus"
+      },
+      "col_AS": "Main Board of The Stock Exchange of Hong Kong (H Shares)",
+      "incorporation": " Technology Co., Ltd. 羅博特科智能科技股份有限公司 (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code: 03757 Joint Sponsors, S",
+      "unlock": "上市日 2026-09-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-03-29"
     }
   },
   "3952.HK": {
@@ -785,6 +1065,87 @@
       "CL": "2026-12-30"
     }
   },
+  "6727.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 1,
+        "page": 64,
+        "quote": "listing rules in the two jurisdictions. Our A Shares are listed and traded on the Shanghai Stock Exchange, and the characteristics of the A share and H share markets",
+        "source": "prospectus"
+      },
+      "col_AS": "Chapter 18C (Main Board, Specialist Technology Company - Commercial Company)",
+      "incorporation": "Stock Code : 6727 (A joint stock company incorporated in the People’s Republic of China with limited liability) Transwarp Technology (Shanghai) Co.",
+      "unlock": "上市日 2026-09-21 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "2027-03-21"
+    }
+  },
+  "6731.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of HKEX, Chapter 18C Listing Rules (Specialist Technology Company), H Shares",
+      "incorporation": " Drive Tech Limited 本末動力(北京)科技股份有限公司 (A joint stock company incorporated in the People’s Republic of China with limited liability) Sole Sponsor, Overall Coordinator, ",
+      "unlock": "上市日 2026-09-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "2027-03-29"
+    }
+  },
+  "6745.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Main Board — Chapter 19A of the Listing Rules (PRC issuer with other listed shares); market capitalisation/revenue test under Rule 8.05(3)",
+      "incorporation": "Stock Code : 06745 (A joint stock company incorporated in the People’s Republic of China with limited liability) 濱化集團股份有限公司 Befar Group Co., Ltd GLO",
+      "unlock": "上市日 2026-07-10 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-10"
+    }
+  },
+  "6802.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of The Stock Exchange of Hong Kong (H Shares)",
+      "incorporation": "(a joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code: 6802 Joint Sponsors, Sp",
+      "unlock": "上市日 2026-09-30 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-03-30"
+    }
+  },
   "6810.HK": {
     "evidence": {
       "col_AS": "Main Board — PRC issuer (Chapter 19A) with WVR structure (Chapter 8A); eligibility under Rule 8.05/8A.06",
@@ -831,6 +1192,26 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2026-11-22"
+    }
+  },
+  "6880.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange — Rule 8.05(3) market capitalisation/revenue test, with WVR under Chapter 8A (Rule 8A.06(2))",
+      "incorporation": "ED (A company controlled through weighted voting rights and incorporated in the Cayman Islands with limited liability) GLOBAL OFFERING Joint Global Coordi",
+      "unlock": "上市日 2026-07-08 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "1",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "Cayman Islands",
+      "CL": "2027-01-08"
     }
   },
   "6915.HK": {
@@ -887,6 +1268,26 @@
       "CL": "2026-11-13"
     }
   },
+  "7656.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange under Chapter 18C of the Listing Rules (Specialist Technology Company)",
+      "incorporation": "d Joint Lead Manager GLOBAL OFFERING (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock code : 7656 Reconova Technolo",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "NA"
+    }
+  },
   "7666.HK": {
     "evidence": {
       "col_AS": "Chapter 18C of the Listing Rules (Specialist Technology Company; Pre-Commercial Company)",
@@ -903,6 +1304,26 @@
       "CL": "2026-11-13"
     }
   },
+  "7687.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange, Rule 8.05(3) market capitalisation/revenue test",
+      "incorporation": "Stock Code : 7687 (A joint stock company incorporated in the People’s Republic of China with limited liability) 易控智駕科技股份有限公司 GLOBAL OFFERING EACON ",
+      "unlock": "上市日 2026-07-08 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-01-08"
+    }
+  },
   "7688.HK": {
     "evidence": {
       "col_AS": "Main Board of the Stock Exchange, Rule 8.05(3) market capitalisation/revenue test",
@@ -917,6 +1338,28 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2026-11-20"
+    }
+  },
+  "9607.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "hits": 4,
+        "page": 53,
+        "quote": "A share and H share markets may differ. Our A Shares are listed and traded on the Shanghai Stock Exchange. Following the Global Offering, our A Shares will continue ",
+        "source": "prospectus"
+      },
+      "col_AS": "H Shares listed on the Main Board of The Stock Exchange of Hong Kong",
+      "incorporation": "Avenue New Materials Group Co., Ltd. (A joint stock company incorporated in the People’s Republic of China with limited liability) Stock Code : 9607 Overall Coordinat",
+      "unlock": "上市日 2026-09-29 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-03-29"
     }
   },
   "9611.HK": {
@@ -939,6 +1382,26 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2026-07-22"
+    }
+  },
+  "9615.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Chapter 18C",
+      "incorporation": "td. Stock Code：09615 Global Offering (A joint stock company incorporated in the People’s Republic of China with limited liability) Joint Sponsors, Sponsor-Overall Coo",
+      "unlock": "上市日 2026-09-01 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "2027-03-01"
     }
   },
   "9630.HK": {
@@ -971,6 +1434,65 @@
       "BM": "0",
       "BQ": "PRC",
       "CL": "2026-12-29"
+    }
+  },
+  "9856.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Main Board of the Stock Exchange (Rule 8.05(3) market capitalization/revenue test)",
+      "incorporation": "前 6 页未见注册地表述",
+      "unlock": "上市日 2026-09-22 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "NA",
+      "CL": "2027-03-22"
+    }
+  },
+  "9971.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "note": "col_AS 与招股书全文均未见 A 股已上市表述",
+        "source": "none"
+      },
+      "col_AS": "Chapter 18C of the Main Board Listing Rules (Specialist Technology Company - Commercial Company)",
+      "incorporation": " Bookrunners and Joint Lead Managers (A joint stock company incorporated in the People's Republic of China with limited liability) If you are in any doubt about any o",
+      "unlock": "确认无基石，无解禁日"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "0",
+      "BK": "0",
+      "BL": "0",
+      "BM": "1",
+      "BQ": "PRC",
+      "CL": "NA"
+    }
+  },
+  "9976.HK": {
+    "evidence": {
+      "a_plus_h": {
+        "source": "col_AS"
+      },
+      "col_AS": "Chapter 19A of the Main Board Listing Rules (PRC issuer with other listed shares)",
+      "incorporation": "int Lead Managers Stock Code : 09976 (A joint stock company incorporated in the People’s Republic of China with limited liability) 深圳市江波龍電子股份有限公司 Shenzhen Longsys Ele",
+      "unlock": "上市日 2026-09-08 + 6 个月"
+    },
+    "values": {
+      "BH": "Main Board",
+      "BJ": "1",
+      "BK": "0",
+      "BL": "0",
+      "BM": "0",
+      "BQ": "PRC",
+      "CL": "2027-03-08"
     }
   },
   "9980.HK": {

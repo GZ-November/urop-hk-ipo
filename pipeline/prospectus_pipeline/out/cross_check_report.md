@@ -1,46 +1,38 @@
 # HK IPO 宏观业务逻辑与跨字段一致性审计报告
 
-**生成时间**：2026-09-25 16:03:07 | **样本数量**：38 家主板公司
+**生成时间**：2026-10-01 21:06:47 | **样本数量**：30 家主板公司
 
-**审计结论**：100% 完美达标公司 **38 / 38**，业务预警项 **0** 项。
+**审计结论**：100% 完美达标公司 **29 / 30**，业务预警项 **1** 项。
 
 | 股票代码 | 公司名称 | 综合状态 | 审计项 | 详情 |
 |---|---|---|---|---|
-| `6082.HK` | Shanghai Biren Technology Co., Ltd.- H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2513.HK` | Knowledge Atlas Technology Joint Stock Company Limited - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `9903.HK` | Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2675.HK` | Shenzhen Edge Medical Co., Ltd.- B - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `0100.HK` | MiniMax Group Inc. - W - P | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `6938.HK` | Suzhou Ribo Life Science Co., Ltd. - B - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3636.HK` | Yunnan Jinxun Resources Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `0501.HK` | OmniVision Integrated Circuits Group, Inc. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3986.HK` | GigaDevice Semiconductor Inc. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `1641.HK` | Hongxing Coldchain (Hunan) Co., Ltd.- H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `9611.HK` | Shanghai Longcheer Technology Co., Ltd.- H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `1768.HK` | BUSY MING GROUP CO., LTD.- H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `9980.HK` | Eastroc Beverage (Group) Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2768.HK` | Qingdao Gon Technology Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2677.HK` | Distinct Healthcare Holdings Limited | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2714.HK` | Muyuan Foods Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3200.HK` | Shenzhen Han's CNC Technology Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `6809.HK` | Montage Technology Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `0600.HK` | Axera Semiconductor Co., Ltd. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2720.HK` | Ridge Outdoor International Limited | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `0470.HK` | WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2706.HK` | Beijing Haizhi Technology Group Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `9981.HK` | Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2649.HK` | ALSCO Pooling Service Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2715.HK` | ESTUN AUTOMATION CO., LTD - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2692.HK` | Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3268.HK` | MeiG Smart Technology Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `1989.HK` | Delton Technology (Guangzhou) Inc. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2701.HK` | Nsing Technologies Inc. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3355.HK` | FS.COM Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2632.HK` | Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2729.HK` | Zhejiang Galaxis Technology Group Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `1021.HK` | Guangdong Huayan Robotics Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2526.HK` | Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `2726.HK` | Epiworld International Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `6636.HK` | Shandong Extreme Vision Technology Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `0664.HK` | Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
-| `3625.HK` | Shanghai FourSemi Semiconductor Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `0668.HK` | Anker Innovations Technology Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2667.HK` | Beijing Tong Ren Tang Healthcare Investment Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `6880.HK` | MOMENTA GLOBAL LIMITED - W | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `7656.HK` | Reconova Technologies Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `7687.HK` | EACON Group Co., Ltd - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `9971.HK` | BASiC Semiconductor Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `0537.HK` | RIGOL Technologies Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `1377.HK` | Guangdong Dtech Technology Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `1770.HK` | DKE Holding Company Limited - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2475.HK` | Luxshare Precision Industry Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2797.HK` | Jiangxi Qiyunshan Food Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3752.HK` | Rokae (Shandong) Robotics Group Inc. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `6951.HK` | Chaozhou Three-Circle (Group) Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2249.HK` | NEXCHIP SEMICONDUCTOR (CHINA) LIMITED - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `6745.HK` | Befar Group Co., Ltd - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3308.HK` | ZHONGJI INNOLIGHT CO., LTD. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2261.HK` | NASN Intelligent Tech (Zhejiang) Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3223.HK` | Ingenic Semiconductor Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `0625.HK` | SHEIN Global Holdings Limited - W | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `9615.HK` | Mech-Mind Robotics Technologies Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `2041.HK` | Medcaptain Medical Technology Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `9976.HK` | Shenzhen Longsys Electronics Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3231.HK` | Excelland Robotics (Wuxi) Co. Ltd. - H Shares | `WARNING` | Mechanism A Allocation | 公开发售超购 140.0 倍，适用规则档位为 20%，实际为 6.2%；请核对是否存在港交所个案豁免或口径差异 |
+| `6727.HK` | Transwarp Technology (Shanghai) Co., Ltd - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `9856.HK` | Ligent Technologies, Inc. | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3228.HK` | Shenzhen Kinwong Electronic Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `3757.HK` | RoboTechnik Intelligent Technology Co., Ltd.  - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `6731.HK` | Direct Drive Tech Limited - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `9607.HK` | Red Avenue New Materials Group Co., Ltd. | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |
+| `6802.HK` | Shenzhen Camsense Technologies Co., Ltd. - H Shares | `PASS` | 全项达标 | 机制回拨、市值准入、募资费用、绿鞋上限及首日交易区间均无异常 |

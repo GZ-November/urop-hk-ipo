@@ -120,7 +120,7 @@ class MasterExpansionTestSuite(unittest.TestCase):
         with self.horizon_csv.open("r", encoding="utf-8-sig") as fh:
             horizons = list(csv.DictReader(fh))
 
-        self.assertEqual(len(horizons), 954, "106 家 2026 上市公司 × 9 个跨期窗口应严格为 954 条记录")
+        self.assertEqual(len(horizons), 1017, "113 家 2026 上市公司 × 9 个跨期窗口应严格为 1017 条记录")
 
         for h in horizons:
             horizon_name = h["horizon"]
@@ -133,8 +133,15 @@ class MasterExpansionTestSuite(unittest.TestCase):
                 self.assertIn(h["bhr_from_day1"], ("", "None", None), f"{h['stock_code']} 未成熟窗口绝不可填入未来假设收益")
                 self.assertIn(h["wr_hsi"], ("", "None", None), f"{h['stock_code']} 未成熟窗口绝不可填入未来财富相对比")
 
-            # 首日与首周应 100% 已成熟
+            # 首日应 100% 已成熟；首周仅对上市日距观察截止 >= 5 个交易日的发行人强制成熟
+            # （季度末上市的发行人其 Day_5 窗口合法地跨越观察截止，保持 IMMATURE_WINDOW）
             if horizon_name in ("Day_1", "Day_5"):
+                if horizon_name == "Day_5" and not matured:
+                    self.assertEqual(h["missing_reason"], "IMMATURE_WINDOW",
+                                     f"{h['stock_code']} 未成熟 Day_5 必须标明 IMMATURE_WINDOW")
+                    self.assertIn(h["bhr_from_day1"], ("", "None", None),
+                                  f"{h['stock_code']} 未成熟 Day_5 绝不可填入未来假设收益")
+                    continue
                 self.assertTrue(matured, f"{h['stock_code']} 的 {horizon_name} 窗口必须已成熟")
                 self.assertNotIn(h["bhr_from_day1"], ("", "None", None), f"{h['stock_code']} 已成熟窗口必须有真实 BHR 收益")
 
@@ -143,7 +150,7 @@ class MasterExpansionTestSuite(unittest.TestCase):
         with self.stab_csv.open("r", encoding="utf-8-sig") as fh:
             stabs = list(csv.DictReader(fh))
 
-        self.assertEqual(len(stabs), 106, "稳价事件表应包含全部 106 家 2026 上市公司")
+        self.assertEqual(len(stabs), 113, "稳价事件表应包含全部 113 家 2026 上市公司")
 
         for s in stabs:
             # 稳价经理人只取公告原文；未解析时留空并标明原因，绝不以占位符代填

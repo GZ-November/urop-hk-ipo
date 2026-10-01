@@ -1,7 +1,7 @@
-# Aftermarket returns of 2026 IPOs from daily bars (106 of 106 issuers, last bar 2026-09-30)
+# Aftermarket returns of 2026 IPOs from daily bars (113 of 113 issuers, last bar 2026-09-30)
 
 Bars are the cached Tencent series in `data/market/aftermarket`; benchmark returns are aligned to each issuer's own bar dates.
-Issuers have between 15 and 183 trading days after listing, so long horizons cover
+Issuers have between 0 and 183 trading days after listing, so long horizons cover
 earlier listings only (N shown per row). "Hot" = listed April-June (calendar dummy used throughout the analysis).
 
 ## Reading
@@ -9,7 +9,7 @@ earlier listings only (N shown per row). "Hot" = listed April-June (calendar dum
 - Event time, treating each IPO as independent, shows a large hot-vs-other gap that grows with the horizon. With listing-month clustering
   it is weaker (day-60 wild cluster p = 0.047); the ordinary Mann-Whitney and HC3 p-values overstate it.
 - Calendar time, which counts each date once, gives the April-June portfolio an excess return not distinguishable from zero (p = 0.50), the other
-  listings a positive excess return (p = 0.058), and no significant difference between them (p = 0.27).
+  listings a positive excess return (p = 0.063), and no significant difference between them (p = 0.27).
 - So the evidence supports "January-March listings did well after day 1" more than "April-June listings collapsed"; the two are not the same claim,
   and a 9-month sample cannot separate them from the market path of each window.
 
@@ -17,7 +17,7 @@ earlier listings only (N shown per row). "Hot" = listed April-June (calendar dum
 
 | Trading days after day 1 | N (hot / other) | Mean BHAR | Median BHAR | Mean difference | HC3 p | Wild cluster p (9 months) | Mann-Whitney p |
 |---|---|---|---|---|---|---|---|
-| 5 | 45 / 61 | -4.0% / 5.1% | -5.5% / 0.7% | -9.1 pp | 0.051 | 0.113 | 0.022 |
+| 5 | 45 / 63 | -4.0% / 4.5% | -5.5% / -0.6% | -8.5 pp | 0.067 | 0.141 | 0.032 |
 | 20 | 45 / 57 | -6.9% / 11.9% | -15.3% / 1.1% | -18.8 pp | 0.028 | 0.160 | 0.007 |
 | 40 | 45 / 53 | -12.7% / 24.4% | -27.9% / 0.1% | -37.0 pp | 0.009 | 0.062 | 0.002 |
 | 60 | 45 / 43 | -19.1% / 32.4% | -33.1% / 0.0% | -51.5 pp | 0.008 | 0.047 | 0.000 |
@@ -31,7 +31,7 @@ Same table, benchmark HSTECH:
 
 | Trading days after day 1 | N (hot / other) | Mean BHAR | Median BHAR | Mean difference | HC3 p | Wild cluster p (9 months) | Mann-Whitney p |
 |---|---|---|---|---|---|---|---|
-| 5 | 45 / 61 | -4.6% / 6.2% | -7.2% / 1.8% | -10.8 pp | 0.023 | 0.090 | 0.005 |
+| 5 | 45 / 63 | -4.6% / 5.6% | -7.2% / 1.5% | -10.2 pp | 0.031 | 0.102 | 0.007 |
 | 20 | 45 / 57 | -6.2% / 15.6% | -18.4% / 2.7% | -21.8 pp | 0.010 | 0.039 | 0.002 |
 | 40 | 45 / 53 | -9.7% / 30.3% | -21.8% / 6.6% | -40.0 pp | 0.005 | 0.031 | 0.000 |
 | 60 | 45 / 43 | -13.7% / 38.6% | -26.6% / 4.9% | -52.3 pp | 0.007 | 0.047 | 0.000 |
@@ -49,16 +49,16 @@ Benchmark HSI:
 | Portfolio | Days | Mean issuers/day | Excess return, bp/day | NW t (p) | CAPM alpha, bp/day | CAPM beta | CAPM alpha NW t (p) |
 |---|---|---|---|---|---|---|---|
 | April-June listings | 104 | 26 | -18.6 | -0.67 (0.502) | -19.7 | 0.59 | -0.76 (0.446) |
-| Other listings | 173 | 19 | 33.5 | 1.90 (0.058) | 33.8 | 1.04 | 1.94 (0.052) |
-| Hot minus other (dates with both) | 99 | — | -32.1 | -1.11 (0.268) | — | — | — |
+| Other listings | 173 | 19 | 33.0 | 1.86 (0.063) | 33.3 | 1.04 | 1.90 (0.057) |
+| Hot minus other (dates with both) | 99 | — | -31.9 | -1.10 (0.271) | — | — | — |
 
 Benchmark HSTECH:
 
 | Portfolio | Days | Mean issuers/day | Excess return, bp/day | NW t (p) | CAPM alpha, bp/day | CAPM beta | CAPM alpha NW t (p) |
 |---|---|---|---|---|---|---|---|
 | April-June listings | 104 | 26 | -13.8 | -0.49 (0.626) | -16.3 | 0.66 | -0.62 (0.534) |
-| Other listings | 173 | 19 | 45.8 | 2.65 (0.008) | 42.0 | 0.79 | 2.40 (0.016) |
-| Hot minus other (dates with both) | 99 | — | -32.1 | -1.11 (0.268) | — | — | — |
+| Other listings | 173 | 19 | 45.3 | 2.61 (0.009) | 41.5 | 0.80 | 2.36 (0.018) |
+| Hot minus other (dates with both) | 99 | — | -31.9 | -1.10 (0.271) | — | — | — |
 
 - Alpha is per trading day in basis points (100 bp = 1%). The "Other" portfolio is largely January-March listings, so it and the hot portfolio face different market paths;
   the CAPM columns control the common market move but not a different sentiment regime.
@@ -69,9 +69,9 @@ Benchmark HSTECH:
 | Test | p | q (BH) |
 |---|---|---|
 | BHAR vs HSI, day 20: hot minus other (wild cluster) | 0.1602 | 0.2669 |
-| BHAR vs HSI, day 60: hot minus other (wild cluster) | 0.0469 | 0.1438 |
+| BHAR vs HSI, day 60: hot minus other (wild cluster) | 0.0469 | 0.1563 |
 | Calendar-time alpha vs HSI, April-June listings | 0.5023 | 0.5023 |
-| Calendar-time alpha vs HSI, Other listings | 0.0575 | 0.1438 |
-| Calendar-time spread, hot minus other, vs HSI | 0.2682 | 0.3353 |
+| Calendar-time alpha vs HSI, Other listings | 0.0625 | 0.1563 |
+| Calendar-time spread, hot minus other, vs HSI | 0.2711 | 0.3389 |
 
 The comparisons above are the headline aftermarket claims; the earlier Mann-Whitney p-values in `analysis/out/extended/` correspond to the event-time design without clustering.

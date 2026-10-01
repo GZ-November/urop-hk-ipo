@@ -1,0 +1,118 @@
+{
+  "code": "9607.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3314,
+      "page": 5,
+      "quote": "Total\n22,577,600\n33.1%\n3.3%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3.39,
+      "page": 4,
+      "quote": "Subscription level\n3.39 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 12645,
+      "page": 4,
+      "quote": "No. of valid applications\n12,645",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 23066500,
+      "page": 11,
+      "quote": "Number of\nH Shares\napplied for\nNumber of\nvalid\napplications",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 3.39 times",
+      "page": 4,
+      "quote": "Subscription level\n3.39 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "28/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**28/09/2026 20:39**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 68118700,
+      "page": 2,
+      "quote": "Number of Offer Shares under\nthe Global Offering\n:\n68,118,700 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 6811900,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public\nOffering\n6,811,900",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 61306800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International\nOffering\n61,306,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "无回拨：Claw-back triggered = N/A；最终香港公开发售 6,811,900 股与初始一致，国际配售 61,306,800 股不变，无重新分配",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2901290000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$2,901.29 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1,
+      "page": 17,
+      "quote": "held by the public represents approximately 10.0% of the total\nissued share capital of our Company (excluding treasury shares)",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 684188336,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n684,188,336",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0666,
+      "page": null,
+      "quote": "公式：(col_CS 68,118,700 − col_CK 0.3314×col_CS) ÷ col_CZ 684,188,336 = 0.0666；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 68,118,700 − col_CK 0.3314×col_CS) ÷ col_CZ 684,188,336 = 0.0666；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 684188336,
+      "page": 3,
+      "quote": "公式：(col_CS 68,118,700 − col_CK 0.3314×col_CS) ÷ col_CZ 684,188,336 = 0.0666；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

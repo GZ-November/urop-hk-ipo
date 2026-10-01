@@ -1,382 +1,682 @@
 [
- {
-  "code": "6082.HK",
-  "name": "Shanghai Biren Technology Co., Ltd.- H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6082.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6082.json",
-  "pages": 47,
-  "chars": 94742,
-  "packet_kb": 103.9,
-  "truncated": false
- },
- {
-  "code": "3636.HK",
-  "name": "Yunnan Jinxun Resources Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3636.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3636.json",
-  "pages": 22,
-  "chars": 46706,
-  "packet_kb": 54.7,
-  "truncated": false
- },
- {
-  "code": "2513.HK",
-  "name": "Knowledge Atlas Technology Joint Stock Company Limited - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2513.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2513.json",
-  "pages": 33,
-  "chars": 82276,
-  "packet_kb": 90.2,
-  "truncated": false
- },
- {
-  "code": "0100.HK",
-  "name": "MiniMax Group Inc. - W - P",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0100.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0100.json",
-  "pages": 50,
-  "chars": 103112,
-  "packet_kb": 110.7,
-  "truncated": false
- },
- {
-  "code": "0501.HK",
-  "name": "OmniVision Integrated Circuits Group, Inc. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0501.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0501.json",
-  "pages": 29,
-  "chars": 55058,
-  "packet_kb": 62.9,
-  "truncated": false
- },
- {
-  "code": "9903.HK",
-  "name": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9903.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9903.json",
-  "pages": 29,
-  "chars": 65143,
-  "packet_kb": 73.8,
-  "truncated": false
- },
- {
-  "code": "2675.HK",
-  "name": "Shenzhen Edge Medical Co., Ltd.- B - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2675.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2675.json",
-  "pages": 28,
-  "chars": 61449,
-  "packet_kb": 69.2,
-  "truncated": false
- },
- {
-  "code": "6938.HK",
-  "name": "Suzhou Ribo Life Science Co., Ltd. - B - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6938.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6938.json",
-  "pages": 30,
-  "chars": 63614,
-  "packet_kb": 72.9,
-  "truncated": false
- },
- {
-  "code": "1641.HK",
-  "name": "Hongxing Coldchain (Hunan) Co., Ltd.- H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1641.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1641.json",
-  "pages": 17,
-  "chars": 29325,
-  "packet_kb": 37.8,
-  "truncated": false
- },
- {
-  "code": "1768.HK",
-  "name": "BUSY MING GROUP CO., LTD.- H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1768.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1768.json",
-  "pages": 36,
-  "chars": 75639,
-  "packet_kb": 85.2,
-  "truncated": false
- },
- {
-  "code": "2677.HK",
-  "name": "Distinct Healthcare Holdings Limited",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2677.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2677.json",
-  "pages": 18,
-  "chars": 37265,
-  "packet_kb": 45.4,
-  "truncated": false
- },
- {
-  "code": "9980.HK",
-  "name": "Eastroc Beverage (Group) Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9980.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9980.json",
-  "pages": 33,
-  "chars": 67389,
-  "packet_kb": 74.9,
-  "truncated": false
- },
- {
-  "code": "3986.HK",
-  "name": "GigaDevice Semiconductor Inc. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3986.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3986.json",
-  "pages": 31,
-  "chars": 63667,
-  "packet_kb": 71.8,
-  "truncated": false
- },
- {
-  "code": "2714.HK",
-  "name": "Muyuan Foods Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2714.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2714.json",
-  "pages": 33,
-  "chars": 75900,
-  "packet_kb": 83.9,
-  "truncated": false
- },
- {
-  "code": "3200.HK",
-  "name": "Shenzhen Han’s CNC Technology Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3200.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3200.json",
-  "pages": 28,
-  "chars": 68343,
-  "packet_kb": 76.6,
-  "truncated": false
- },
- {
-  "code": "2768.HK",
-  "name": "Qingdao Gon Technology Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2768.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2768.json",
-  "pages": 22,
-  "chars": 44756,
-  "packet_kb": 52.6,
-  "truncated": false
- },
- {
-  "code": "9611.HK",
-  "name": "Shanghai Longcheer Technology Co., Ltd.- H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9611.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9611.json",
-  "pages": 28,
-  "chars": 65497,
-  "packet_kb": 73.2,
-  "truncated": false
- },
- {
-  "code": "9981.HK",
-  "name": "Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9981.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9981.json",
-  "pages": 21,
-  "chars": 42500,
-  "packet_kb": 50.3,
-  "truncated": false
- },
- {
-  "code": "2706.HK",
-  "name": "Beijing Haizhi Technology Group Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2706.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2706.json",
-  "pages": 25,
-  "chars": 42108,
-  "packet_kb": 50.6,
-  "truncated": false
- },
- {
-  "code": "6809.HK",
-  "name": "Montage Technology Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6809.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6809.json",
-  "pages": 38,
-  "chars": 82723,
-  "packet_kb": 91.3,
-  "truncated": false
- },
- {
-  "code": "0600.HK",
-  "name": "Axera Semiconductor Co., Ltd. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0600.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0600.json",
-  "pages": 31,
-  "chars": 68983,
-  "packet_kb": 76.6,
-  "truncated": false
- },
- {
-  "code": "2649.HK",
-  "name": "ALSCO Pooling Service Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2649.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2649.json",
-  "pages": 17,
-  "chars": 30106,
-  "packet_kb": 38.1,
-  "truncated": false
- },
- {
-  "code": "2720.HK",
-  "name": "Ridge Outdoor International Limited",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2720.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2720.json",
-  "pages": 12,
-  "chars": 21819,
-  "packet_kb": 29.9,
-  "truncated": false
- },
- {
-  "code": "2701.HK",
-  "name": "Nsing Technologies Inc. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2701.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2701.json",
-  "pages": 27,
-  "chars": 46056,
-  "packet_kb": 53.9,
-  "truncated": false
- },
- {
-  "code": "3355.HK",
-  "name": "FS.COM Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3355.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3355.json",
-  "pages": 23,
-  "chars": 61644,
-  "packet_kb": 69.8,
-  "truncated": false
- },
- {
-  "code": "1989.HK",
-  "name": "Delton Technology (Guangzhou) Inc. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1989.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1989.json",
-  "pages": 36,
-  "chars": 74756,
-  "packet_kb": 82.9,
-  "truncated": false
- },
- {
-  "code": "2715.HK",
-  "name": "ESTUN AUTOMATION CO., LTD - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2715.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2715.json",
-  "pages": 22,
-  "chars": 47364,
-  "packet_kb": 55.0,
-  "truncated": false
- },
- {
-  "code": "2692.HK",
-  "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2692.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2692.json",
-  "pages": 23,
-  "chars": 48954,
-  "packet_kb": 56.9,
-  "truncated": false
- },
- {
-  "code": "0470.HK",
-  "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0470.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0470.json",
-  "pages": 30,
-  "chars": 60137,
-  "packet_kb": 68.0,
-  "truncated": false
- },
- {
-  "code": "1021.HK",
-  "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1021.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1021.json",
-  "pages": 30,
-  "chars": 73823,
-  "packet_kb": 82.6,
-  "truncated": false
- },
- {
-  "code": "3268.HK",
-  "name": "MeiG Smart Technology Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3268.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3268.json",
-  "pages": 25,
-  "chars": 52469,
-  "packet_kb": 60.4,
-  "truncated": false
- },
- {
-  "code": "2632.HK",
-  "name": "Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2632.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2632.json",
-  "pages": 15,
-  "chars": 34656,
-  "packet_kb": 42.6,
-  "truncated": false
- },
- {
-  "code": "2726.HK",
-  "name": "Epiworld International Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2726.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2726.json",
-  "pages": 14,
-  "chars": 25478,
-  "packet_kb": 33.6,
-  "truncated": false
- },
- {
-  "code": "2526.HK",
-  "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2526.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2526.json",
-  "pages": 23,
-  "chars": 40383,
-  "packet_kb": 49.3,
-  "truncated": false
- },
- {
-  "code": "0664.HK",
-  "name": "Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0664.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0664.json",
-  "pages": 20,
-  "chars": 39975,
-  "packet_kb": 47.9,
-  "truncated": false
- },
- {
-  "code": "2729.HK",
-  "name": "Zhejiang Galaxis Technology Group Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2729.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2729.json",
-  "pages": 13,
-  "chars": 19523,
-  "packet_kb": 27.6,
-  "truncated": false
- },
- {
-  "code": "6636.HK",
-  "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6636.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6636.json",
-  "pages": 18,
-  "chars": 36277,
-  "packet_kb": 44.3,
-  "truncated": false
- },
- {
-  "code": "3625.HK",
-  "name": "Shanghai FourSemi Semiconductor Co., Ltd. - H Shares",
-  "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3625.md",
-  "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3625.json",
-  "pages": 19,
-  "chars": 33283,
-  "packet_kb": 42.4,
-  "truncated": false
- }
+  {
+    "code": "6082.HK",
+    "name": "Shanghai Biren Technology Co., Ltd.- H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6082.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6082.json",
+    "pages": 47,
+    "chars": 94742,
+    "packet_kb": 103.9,
+    "truncated": false
+  },
+  {
+    "code": "3636.HK",
+    "name": "Yunnan Jinxun Resources Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3636.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3636.json",
+    "pages": 22,
+    "chars": 46706,
+    "packet_kb": 54.7,
+    "truncated": false
+  },
+  {
+    "code": "2513.HK",
+    "name": "Knowledge Atlas Technology Joint Stock Company Limited - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2513.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2513.json",
+    "pages": 33,
+    "chars": 82276,
+    "packet_kb": 90.2,
+    "truncated": false
+  },
+  {
+    "code": "0100.HK",
+    "name": "MiniMax Group Inc. - W - P",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0100.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0100.json",
+    "pages": 50,
+    "chars": 103112,
+    "packet_kb": 110.7,
+    "truncated": false
+  },
+  {
+    "code": "0501.HK",
+    "name": "OmniVision Integrated Circuits Group, Inc. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0501.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0501.json",
+    "pages": 29,
+    "chars": 55058,
+    "packet_kb": 62.9,
+    "truncated": false
+  },
+  {
+    "code": "9903.HK",
+    "name": "Shanghai Iluvatar CoreX Semiconductor Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9903.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9903.json",
+    "pages": 29,
+    "chars": 65143,
+    "packet_kb": 73.8,
+    "truncated": false
+  },
+  {
+    "code": "2675.HK",
+    "name": "Shenzhen Edge Medical Co., Ltd.- B - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2675.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2675.json",
+    "pages": 28,
+    "chars": 61449,
+    "packet_kb": 69.2,
+    "truncated": false
+  },
+  {
+    "code": "6938.HK",
+    "name": "Suzhou Ribo Life Science Co., Ltd. - B - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6938.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6938.json",
+    "pages": 30,
+    "chars": 63614,
+    "packet_kb": 72.9,
+    "truncated": false
+  },
+  {
+    "code": "1641.HK",
+    "name": "Hongxing Coldchain (Hunan) Co., Ltd.- H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1641.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1641.json",
+    "pages": 17,
+    "chars": 29325,
+    "packet_kb": 37.8,
+    "truncated": false
+  },
+  {
+    "code": "1768.HK",
+    "name": "BUSY MING GROUP CO., LTD.- H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1768.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1768.json",
+    "pages": 36,
+    "chars": 75639,
+    "packet_kb": 85.2,
+    "truncated": false
+  },
+  {
+    "code": "2677.HK",
+    "name": "Distinct Healthcare Holdings Limited",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2677.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2677.json",
+    "pages": 18,
+    "chars": 37265,
+    "packet_kb": 45.4,
+    "truncated": false
+  },
+  {
+    "code": "9980.HK",
+    "name": "Eastroc Beverage (Group) Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9980.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9980.json",
+    "pages": 33,
+    "chars": 67389,
+    "packet_kb": 74.9,
+    "truncated": false
+  },
+  {
+    "code": "3986.HK",
+    "name": "GigaDevice Semiconductor Inc. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3986.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3986.json",
+    "pages": 31,
+    "chars": 63667,
+    "packet_kb": 71.8,
+    "truncated": false
+  },
+  {
+    "code": "2714.HK",
+    "name": "Muyuan Foods Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2714.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2714.json",
+    "pages": 33,
+    "chars": 75900,
+    "packet_kb": 83.9,
+    "truncated": false
+  },
+  {
+    "code": "3200.HK",
+    "name": "Shenzhen Han’s CNC Technology Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3200.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3200.json",
+    "pages": 28,
+    "chars": 68343,
+    "packet_kb": 76.6,
+    "truncated": false
+  },
+  {
+    "code": "2768.HK",
+    "name": "Qingdao Gon Technology Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2768.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2768.json",
+    "pages": 22,
+    "chars": 44756,
+    "packet_kb": 52.6,
+    "truncated": false
+  },
+  {
+    "code": "9611.HK",
+    "name": "Shanghai Longcheer Technology Co., Ltd.- H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9611.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9611.json",
+    "pages": 28,
+    "chars": 65497,
+    "packet_kb": 73.2,
+    "truncated": false
+  },
+  {
+    "code": "9981.HK",
+    "name": "Shenzhen Woer Heat-Shrinkable Material Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB9981.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB9981.json",
+    "pages": 21,
+    "chars": 42500,
+    "packet_kb": 50.3,
+    "truncated": false
+  },
+  {
+    "code": "2706.HK",
+    "name": "Beijing Haizhi Technology Group Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2706.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2706.json",
+    "pages": 25,
+    "chars": 42108,
+    "packet_kb": 50.6,
+    "truncated": false
+  },
+  {
+    "code": "6809.HK",
+    "name": "Montage Technology Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6809.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6809.json",
+    "pages": 38,
+    "chars": 82723,
+    "packet_kb": 91.3,
+    "truncated": false
+  },
+  {
+    "code": "0600.HK",
+    "name": "Axera Semiconductor Co., Ltd. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0600.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0600.json",
+    "pages": 31,
+    "chars": 68983,
+    "packet_kb": 76.6,
+    "truncated": false
+  },
+  {
+    "code": "2649.HK",
+    "name": "ALSCO Pooling Service Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2649.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2649.json",
+    "pages": 17,
+    "chars": 30106,
+    "packet_kb": 38.1,
+    "truncated": false
+  },
+  {
+    "code": "2720.HK",
+    "name": "Ridge Outdoor International Limited",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2720.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2720.json",
+    "pages": 12,
+    "chars": 21819,
+    "packet_kb": 29.9,
+    "truncated": false
+  },
+  {
+    "code": "2701.HK",
+    "name": "Nsing Technologies Inc. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2701.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2701.json",
+    "pages": 27,
+    "chars": 46056,
+    "packet_kb": 53.9,
+    "truncated": false
+  },
+  {
+    "code": "3355.HK",
+    "name": "FS.COM Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3355.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3355.json",
+    "pages": 23,
+    "chars": 61644,
+    "packet_kb": 69.8,
+    "truncated": false
+  },
+  {
+    "code": "1989.HK",
+    "name": "Delton Technology (Guangzhou) Inc. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1989.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1989.json",
+    "pages": 36,
+    "chars": 74756,
+    "packet_kb": 82.9,
+    "truncated": false
+  },
+  {
+    "code": "2715.HK",
+    "name": "ESTUN AUTOMATION CO., LTD - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2715.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2715.json",
+    "pages": 22,
+    "chars": 47364,
+    "packet_kb": 55.0,
+    "truncated": false
+  },
+  {
+    "code": "2692.HK",
+    "name": "Shenzhen Zhaowei Machinery & Electronics Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2692.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2692.json",
+    "pages": 23,
+    "chars": 48954,
+    "packet_kb": 56.9,
+    "truncated": false
+  },
+  {
+    "code": "0470.HK",
+    "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD. - H shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0470.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0470.json",
+    "pages": 30,
+    "chars": 60137,
+    "packet_kb": 68.0,
+    "truncated": false
+  },
+  {
+    "code": "1021.HK",
+    "name": "Guangdong Huayan Robotics Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB1021.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB1021.json",
+    "pages": 30,
+    "chars": 73823,
+    "packet_kb": 82.6,
+    "truncated": false
+  },
+  {
+    "code": "3268.HK",
+    "name": "MeiG Smart Technology Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3268.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3268.json",
+    "pages": 25,
+    "chars": 52469,
+    "packet_kb": 60.4,
+    "truncated": false
+  },
+  {
+    "code": "2632.HK",
+    "name": "Jiangsu New Vision Automotive Electronics Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2632.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2632.json",
+    "pages": 15,
+    "chars": 34656,
+    "packet_kb": 42.6,
+    "truncated": false
+  },
+  {
+    "code": "2726.HK",
+    "name": "Epiworld International Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2726.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2726.json",
+    "pages": 14,
+    "chars": 25478,
+    "packet_kb": 33.6,
+    "truncated": false
+  },
+  {
+    "code": "2526.HK",
+    "name": "Hangzhou Diagens Biotechnology Co., Ltd. - B - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2526.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2526.json",
+    "pages": 23,
+    "chars": 40383,
+    "packet_kb": 49.3,
+    "truncated": false
+  },
+  {
+    "code": "0664.HK",
+    "name": "Hangzhou Tongshifu Cultural and Creative (Group) Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB0664.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB0664.json",
+    "pages": 20,
+    "chars": 39975,
+    "packet_kb": 47.9,
+    "truncated": false
+  },
+  {
+    "code": "2729.HK",
+    "name": "Zhejiang Galaxis Technology Group Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB2729.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB2729.json",
+    "pages": 13,
+    "chars": 19523,
+    "packet_kb": 27.6,
+    "truncated": false
+  },
+  {
+    "code": "6636.HK",
+    "name": "Shandong Extreme Vision Technology Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB6636.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB6636.json",
+    "pages": 18,
+    "chars": 36277,
+    "packet_kb": 44.3,
+    "truncated": false
+  },
+  {
+    "code": "3625.HK",
+    "name": "Shanghai FourSemi Semiconductor Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/packets/HKIPO-MB3625.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/out/allot/extracted/HKIPO-MB3625.json",
+    "pages": 19,
+    "chars": 33283,
+    "packet_kb": 42.4,
+    "truncated": false
+  },
+  {
+    "code": "3757.HK",
+    "name": "RoboTechnik Intelligent Technology Co., Ltd.  - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3757.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3757.json",
+    "pages": 31,
+    "chars": 68358,
+    "packet_kb": 76.3,
+    "truncated": false
+  },
+  {
+    "code": "9856.HK",
+    "name": "Ligent Technologies, Inc.",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB9856.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9856.json",
+    "pages": 36,
+    "chars": 69585,
+    "packet_kb": 77.5,
+    "truncated": false
+  },
+  {
+    "code": "6727.HK",
+    "name": "Transwarp Technology (Shanghai) Co., Ltd - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6727.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6727.json",
+    "pages": 16,
+    "chars": 34734,
+    "packet_kb": 43.0,
+    "truncated": false
+  },
+  {
+    "code": "6731.HK",
+    "name": "Direct Drive Tech Limited - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6731.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6731.json",
+    "pages": 20,
+    "chars": 38180,
+    "packet_kb": 46.5,
+    "truncated": false
+  },
+  {
+    "code": "3228.HK",
+    "name": "Shenzhen Kinwong Electronic Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3228.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3228.json",
+    "pages": 30,
+    "chars": 63793,
+    "packet_kb": 71.9,
+    "truncated": false
+  },
+  {
+    "code": "6802.HK",
+    "name": "Shenzhen Camsense Technologies Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6802.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6802.json",
+    "pages": 26,
+    "chars": 52636,
+    "packet_kb": 60.9,
+    "truncated": false
+  },
+  {
+    "code": "9607.HK",
+    "name": "Red Avenue New Materials Group Co., Ltd.",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB9607.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9607.json",
+    "pages": 18,
+    "chars": 37967,
+    "packet_kb": 46.3,
+    "truncated": false
+  },
+  {
+    "code": "2667.HK",
+    "name": "Beijing Tong Ren Tang Healthcare Investment Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2667.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2667.json",
+    "pages": 17,
+    "chars": 37217,
+    "packet_kb": 45.8,
+    "truncated": false
+  },
+  {
+    "code": "0668.HK",
+    "name": "Anker Innovations Technology Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB0668.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB0668.json",
+    "pages": 20,
+    "chars": 46588,
+    "packet_kb": 54.9,
+    "truncated": false
+  },
+  {
+    "code": "7656.HK",
+    "name": "Reconova Technologies Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB7656.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB7656.json",
+    "pages": 19,
+    "chars": 34002,
+    "packet_kb": 42.6,
+    "truncated": false
+  },
+  {
+    "code": "6880.HK",
+    "name": "MOMENTA GLOBAL LIMITED - W",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6880.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6880.json",
+    "pages": 34,
+    "chars": 64741,
+    "packet_kb": 72.5,
+    "truncated": false
+  },
+  {
+    "code": "7687.HK",
+    "name": "EACON Group Co., Ltd - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB7687.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB7687.json",
+    "pages": 34,
+    "chars": 76885,
+    "packet_kb": 86.6,
+    "truncated": false
+  },
+  {
+    "code": "9971.HK",
+    "name": "BASiC Semiconductor Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB9971.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9971.json",
+    "pages": 24,
+    "chars": 43691,
+    "packet_kb": 53.7,
+    "truncated": false
+  },
+  {
+    "code": "0537.HK",
+    "name": "RIGOL Technologies Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB0537.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB0537.json",
+    "pages": 21,
+    "chars": 45968,
+    "packet_kb": 54.4,
+    "truncated": false
+  },
+  {
+    "code": "1770.HK",
+    "name": "DKE Holding Company Limited - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB1770.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB1770.json",
+    "pages": 15,
+    "chars": 28202,
+    "packet_kb": 36.8,
+    "truncated": false
+  },
+  {
+    "code": "1377.HK",
+    "name": "Guangdong Dtech Technology Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB1377.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB1377.json",
+    "pages": 35,
+    "chars": 75801,
+    "packet_kb": 83.9,
+    "truncated": false
+  },
+  {
+    "code": "2475.HK",
+    "name": "Luxshare Precision Industry Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2475.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2475.json",
+    "pages": 32,
+    "chars": 66348,
+    "packet_kb": 74.8,
+    "truncated": false
+  },
+  {
+    "code": "2797.HK",
+    "name": "Jiangxi Qiyunshan Food Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2797.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2797.json",
+    "pages": 12,
+    "chars": 24402,
+    "packet_kb": 32.9,
+    "truncated": false
+  },
+  {
+    "code": "3752.HK",
+    "name": "Rokae (Shandong) Robotics Group Inc. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3752.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3752.json",
+    "pages": 17,
+    "chars": 36508,
+    "packet_kb": 46.1,
+    "truncated": false
+  },
+  {
+    "code": "6951.HK",
+    "name": "Chaozhou Three-Circle (Group) Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6951.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6951.json",
+    "pages": 24,
+    "chars": 46980,
+    "packet_kb": 55.3,
+    "truncated": false
+  },
+  {
+    "code": "2249.HK",
+    "name": "NEXCHIP SEMICONDUCTOR (CHINA) LIMITED - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2249.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2249.json",
+    "pages": 28,
+    "chars": 66817,
+    "packet_kb": 75.9,
+    "truncated": false
+  },
+  {
+    "code": "6745.HK",
+    "name": "Befar Group Co., Ltd - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB6745.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6745.json",
+    "pages": 17,
+    "chars": 34673,
+    "packet_kb": 43.0,
+    "truncated": false
+  },
+  {
+    "code": "3308.HK",
+    "name": "ZHONGJI INNOLIGHT CO., LTD. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3308.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3308.json",
+    "pages": 34,
+    "chars": 72022,
+    "packet_kb": 79.7,
+    "truncated": false
+  },
+  {
+    "code": "2261.HK",
+    "name": "NASN Intelligent Tech (Zhejiang) Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2261.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2261.json",
+    "pages": 19,
+    "chars": 36021,
+    "packet_kb": 44.3,
+    "truncated": false
+  },
+  {
+    "code": "3223.HK",
+    "name": "Ingenic Semiconductor Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3223.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3223.json",
+    "pages": 26,
+    "chars": 57890,
+    "packet_kb": 66.0,
+    "truncated": false
+  },
+  {
+    "code": "0625.HK",
+    "name": "SHEIN Global Holdings Limited - W",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB0625.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB0625.json",
+    "pages": 32,
+    "chars": 67075,
+    "packet_kb": 74.7,
+    "truncated": false
+  },
+  {
+    "code": "9615.HK",
+    "name": "Mech-Mind Robotics Technologies Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB9615.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9615.json",
+    "pages": 25,
+    "chars": 49272,
+    "packet_kb": 57.5,
+    "truncated": false
+  },
+  {
+    "code": "2041.HK",
+    "name": "Medcaptain Medical Technology Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB2041.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2041.json",
+    "pages": 15,
+    "chars": 31672,
+    "packet_kb": 41.4,
+    "truncated": false
+  },
+  {
+    "code": "9976.HK",
+    "name": "Shenzhen Longsys Electronics Co., Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB9976.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9976.json",
+    "pages": 32,
+    "chars": 67322,
+    "packet_kb": 75.7,
+    "truncated": false
+  },
+  {
+    "code": "3231.HK",
+    "name": "Excelland Robotics (Wuxi) Co. Ltd. - H Shares",
+    "packet_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/data/allot/packets/HKIPO-MB3231.md",
+    "out_path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3231.json",
+    "pages": 23,
+    "chars": 44117,
+    "packet_kb": 53.5,
+    "truncated": false
+  }
 ]

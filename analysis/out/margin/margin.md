@@ -4,13 +4,13 @@ Closing-day snapshot sensitivity: N = 15, coefficient = 0.150, HC3 p = 0.473. G 
 
 ## Coverage and information timing
 
-Only 25 of 106 issuers have any source-reported margin snapshot; coverage depends on which listings media surveys happened to report, so conclusions apply to covered issuers and may not generalise to the rest. Differences between covered and uncovered issuers (descriptive, Mann-Whitney, not a selection model):
+Only 25 of 113 issuers have any source-reported margin snapshot; coverage depends on which listings media surveys happened to report, so conclusions apply to covered issuers and may not generalise to the rest. Differences between covered and uncovered issuers (descriptive, Mann-Whitney, not a selection model):
 
 | variable | n_with_margin | mean_with_margin | n_without_margin | mean_without_margin | mann_whitney_p |
 |---|---|---|---|---|---|
-| log(1+IR) | 25 | 0.246 | 81 | 0.329 | 0.219 |
-| ln official public subscription ratio | 25 | 6.414 | 81 | 6.646 | 0.392 |
-| ln proceeds (HK$) | 25 | 0.430 | 81 | 0.502 | 0.677 |
+| log(1+IR) | 25 | 0.246 | 88 | 0.317 | 0.285 |
+| ln official public subscription ratio | 25 | 6.414 | 88 | 6.451 | 0.691 |
+| ln proceeds (HK$) | 25 | 0.430 | 88 | 0.497 | 0.648 |
 
 Issuers with a source by listing month:
 
@@ -24,7 +24,7 @@ Issuers with a source by listing month:
 | 2026-06 | 24 | 2 | 0.08 |
 | 2026-07 | 16 | 14 | 0.88 |
 | 2026-08 | 2 | 0 | 0.00 |
-| 2026-09 | 5 | 3 | 0.60 |
+| 2026-09 | 12 | 3 | 0.25 |
 
 Publication timing of the 93 observations (articles are posted after the market closes; a closing-day article was published after the 12:00 subscription deadline):
 
@@ -46,7 +46,7 @@ These are the same exploratory associations on a smaller, selected sample with 6
 
 ## 1. Broker Margin Financing Panel (N = 25 issuers)
 
-Source-reported broker-survey snapshots cover 25 of 106 issuers (93 observations). Only 15 have a snapshot on the subscription closing date. No missing dates are interpolated. These are media-reported survey amounts, not audited market-wide totals.
+Source-reported broker-survey snapshots cover 25 of 113 issuers (93 observations). Only 15 have a snapshot on the subscription closing date. No missing dates are interpolated. These are media-reported survey amounts, not audited market-wide totals.
 - **Rank correlation** of latest observed margin multiple with first-day return (IR): $\rho = 0.46$ ($p = 0.020$).
 - **Observed growth** in 20 issuers with multiple dates and a constant named survey scope: mean **41.59x**, median **16.80x**. Endpoint growth does not establish acceleration, exponential growth or herding. Broker membership within a news survey remains unspecified.
 
@@ -85,7 +85,7 @@ Source-reported broker-survey snapshots cover 25 of 106 issuers (93 observations
 
 ![Idea 13 Margin Cascades](fig10_margin_cascades.png)
 
-## 2. Model 13.1: Full-Sample Retail Frenzy & Intraday Price Discovery (N = 106)
+## 2. Model 13.1: Full-Sample Retail Frenzy & Intraday Price Discovery (N = 113)
 
 Following **Idea 13 (Model 13.1)** in `docs/RESEARCH_IDEAS.md`:
 $$\text{IntradayRange}_i = \alpha_0 + \beta_1 \ln(\text{SubscriptionRatio}_i) + \beta_2 \ln(\text{PublicApplicants}_i) + \beta_3 \text{HIBOR1m}_i + \gamma \mathbf{X}_i + \varepsilon_i$$
@@ -95,12 +95,12 @@ $$\text{FirstDayFlipping}_i = \alpha_0 + \beta_1 \ln(\text{SubscriptionRatio}_i)
 
 | Specification | Focus Coeff (HC3 s.e.) | HC3 p | Wild cluster p | R² | N |
 |---|---|---|---|---|---|
-| Intraday Range ~ ln Subscription Ratio | 0.078*** (0.012) | 0.000 | 0.008 | 0.254 | 106 |
-| + ln Applicants + HIBOR + ln Size | 0.035 (0.044) | 0.426 | 0.301 | 0.304 | 106 |
-| + Window (Hot) | 0.040 (0.044) | 0.362 | 0.150 | 0.352 | 106 |
-| Flipping Ratio ~ ln Subscription Ratio | 0.047*** (0.006) | 0.000 | 0.004 | 0.231 | 106 |
-| + ln Applicants + HIBOR + ln Size | 0.012 (0.035) | 0.722 | 0.609 | 0.246 | 106 |
-| + Window (Hot) | 0.013 (0.035) | 0.715 | 0.604 | 0.247 | 106 |
+| Intraday Range ~ ln Subscription Ratio | 0.079*** (0.011) | 0.000 | 0.008 | 0.283 | 113 |
+| + ln Applicants + HIBOR + ln Size | 0.033 (0.040) | 0.410 | 0.119 | 0.332 | 113 |
+| + Window (Hot) | 0.047 (0.041) | 0.257 | 0.061 | 0.364 | 113 |
+| Flipping Ratio ~ ln Subscription Ratio | 0.041*** (0.006) | 0.000 | 0.004 | 0.212 | 113 |
+| + ln Applicants + HIBOR + ln Size | 0.017 (0.030) | 0.571 | 0.373 | 0.224 | 113 |
+| + Window (Hot) | 0.020 (0.030) | 0.512 | 0.396 | 0.228 | 113 |
 
 ### Interpretation
 
@@ -113,16 +113,16 @@ they cannot establish that leverage causes flipping. Read the controlled estimat
 
 | Rank | Section | Test | p | q (BH) |
 |---|---|---|---|---|
-| 1 | Retail proxies | Flipping Ratio ~ ln Subscription Ratio | 1.0154520793514926e-13 | 1.3200877031569402e-12 |
-| 2 | Retail proxies | Intraday Range ~ ln Subscription Ratio | 7.99975394934113e-11 | 5.199840067071735e-10 |
+| 1 | Retail proxies | Flipping Ratio ~ ln Subscription Ratio | 3.527692423542039e-13 | 2.564468787482492e-12 |
+| 2 | Retail proxies | Intraday Range ~ ln Subscription Ratio | 3.9453365961269106e-13 | 2.564468787482492e-12 |
 | 3 | Observed margin | ln latest observed margin multiple | 0.051095295972895804 | 0.2214129492158818 |
 | 4 | Pre-deadline snapshot | ln latest pre-deadline snapshot | 0.08396484518383136 | 0.2728857468474519 |
 | 5 | Observed margin | + April-June window | 0.12894291646379072 | 0.29506030713351533 |
 | 6 | Pre-deadline snapshot | + April-June window | 0.13618168021546861 | 0.29506030713351533 |
-| 7 | Observed margin | + window + ln size | 0.2647204004279633 | 0.491623600794789 |
-| 8 | Retail proxies | + Window (Hot) | 0.36156607234892546 | 0.5542465811887124 |
-| 9 | Pre-deadline snapshot | + window + ln size | 0.38395596260558296 | 0.5542465811887124 |
-| 10 | Retail proxies | + ln Applicants + HIBOR + ln Size | 0.42634352399131725 | 0.5542465811887124 |
-| 11 | Observed margin | Closing-day snapshots, window + size | 0.47318000663627746 | 0.5592127351156007 |
-| 12 | Retail proxies | + Window (Hot) | 0.7147906534849415 | 0.7220753279509531 |
-| 13 | Retail proxies | + ln Applicants + HIBOR + ln Size | 0.7220753279509531 | 0.7220753279509531 |
+| 7 | Retail proxies | + Window (Hot) | 0.25691659836820147 | 0.43017065069544036 |
+| 8 | Observed margin | + window + ln size | 0.2647204004279633 | 0.43017065069544036 |
+| 9 | Pre-deadline snapshot | + window + ln size | 0.38395596260558296 | 0.5325060487841609 |
+| 10 | Retail proxies | + ln Applicants + HIBOR + ln Size | 0.4096200375262776 | 0.5325060487841609 |
+| 11 | Observed margin | Closing-day snapshots, window + size | 0.47318000663627746 | 0.5551560794655536 |
+| 12 | Retail proxies | + Window (Hot) | 0.512451765660511 | 0.5551560794655536 |
+| 13 | Retail proxies | + ln Applicants + HIBOR + ln Size | 0.5711368967523816 | 0.5711368967523816 |

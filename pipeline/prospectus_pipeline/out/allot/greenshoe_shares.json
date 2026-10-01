@@ -1,4 +1,21 @@
 {
+  "0068.HK": {
+    "datetime": "20/04/2026 22:39",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
+    "file": "/listedco/listconews/sehk/2026/0420/2026042001756.pdf",
+    "hits": {
+      "24092500": 9
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB0068.pdf",
+    "quote": "been fully exercised by the Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Monday, April 20, 2026, in respect of an aggregate of 24,092,500 Shares (t",
+    "shares": 24092500,
+    "status": "ok"
+  },
   "0100.HK": {
     "datetime": "11/01/2026 19:13",
     "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
@@ -70,266 +87,6 @@
     "shares": 1176100,
     "status": "ok"
   },
-  "1021.HK": {
-    "datetime": "26/04/2026 18:04",
-    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END\nOF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0426/2026042600007.pdf",
-    "hits": {
-      "13469000": 13,
-      "13935200": 1
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 14.5
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB1021.pdf",
-    "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 24, 2026, in respect of an aggregate of 13,469,000 H Shares ",
-    "shares": 13469000,
-    "status": "ok"
-  },
-  "1768.HK": {
-    "datetime": "10/02/2026 19:41",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
-    "file": "/listedco/listconews/sehk/2026/0210/2026021001012.pdf",
-    "hits": {
-      "2326600": 6
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB1768.pdf",
-    "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Tuesday, February 10, 2026 in respect of an aggregate of 2,326,600 H Shares (",
-    "shares": 2326600,
-    "status": "ok"
-  },
-  "2513.HK": {
-    "datetime": "04/02/2026 21:30",
-    "doc_title": "Full Exercise of the Over-Allotment Option, Stabilizing Actions and End of Stabilization Period",
-    "file": "/listedco/listconews/sehk/2026/0204/2026020402110.pdf",
-    "hits": {
-      "5612900": 10
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2513.pdf",
-    "quote": "e Prospectus has been fully exercised by the Sponsor-OC (for itself and on behalf of the International Underwriters), on Wednesday, February 4, 2026, in respect of an aggregate of 5,612,900 H Shares (",
-    "shares": 5612900,
-    "status": "ok"
-  },
-  "2675.HK": {
-    "datetime": "04/02/2026 22:10",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0204/2026020402144.pdf",
-    "hits": {
-      "4158300": 11
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2675.pdf",
-    "quote": "as been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Wednesday, February 4, 2026, in respect of an aggregate of 4,158,300 H Shares (",
-    "shares": 4158300,
-    "status": "ok"
-  },
-  "2677.HK": {
-    "datetime": "05/03/2026 21:14",
-    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0305/2026030502008.pdf",
-    "hits": {
-      "196100": 8,
-      "712500": 1
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 4.13
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2677.pdf",
-    "quote": "lly exercised by the Joint Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 196,100 Shares (t",
-    "shares": 196100,
-    "status": "ok"
-  },
-  "2714.HK": {
-    "datetime": "05/03/2026 20:53",
-    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0305/2026030501974.pdf",
-    "hits": {
-      "36271700": 5,
-      "41092700": 1
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 13.2
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2714.pdf",
-    "quote": "as been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 36,271,700 H Shares ",
-    "shares": 36271700,
-    "status": "ok"
-  },
-  "3200.HK": {
-    "datetime": "05/03/2026 19:04",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0305/2026030501746.pdf",
-    "hits": {
-      "7567700": 13
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3200.pdf",
-    "quote": "has been fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 7,567,700 H Shares (",
-    "shares": 7567700,
-    "status": "ok"
-  },
-  "3355.HK": {
-    "datetime": "17/04/2026 20:53",
-    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0417/2026041701549.pdf",
-    "hits": {
-      "5675700": 10,
-      "6000000": 1
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 14.19
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3355.pdf",
-    "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 17, 2026, in respect of an aggregate of 5,675,700 H Shares (",
-    "shares": 5675700,
-    "status": "ok"
-  },
-  "3636.HK": {
-    "datetime": "05/02/2026 18:33",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND\nTHE END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0205/2026020501967.pdf",
-    "hits": {
-      "5514800": 14
-    },
-    "page": 2,
-    "pct_of_option": {
-      "page": 2,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3636.pdf",
-    "quote": "fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the other International Underwriters), on Thursday, February 5, 2026, in respect of an aggregate of 5,514,800 H Shares, ",
-    "shares": 5514800,
-    "status": "ok"
-  },
-  "3986.HK": {
-    "datetime": "08/02/2026 18:05",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0208/2026020800007.pdf",
-    "hits": {
-      "4337300": 12
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 2,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3986.pdf",
-    "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Saturday, February 7, 2026 in respect of an aggregate of 4,337,300 H Shares, ",
-    "shares": 4337300,
-    "status": "ok"
-  },
-  "6082.HK": {
-    "datetime": "28/01/2026 18:52",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0128/2026012800772.pdf",
-    "hits": {
-      "42726800": 11
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6082.pdf",
-    "quote": "spectus has been fully exercised by the Sponsor-OCs (for themselves and on behalf of the International Underwriters), on Wednesday, January 28, 2026, in respect of an aggregate of 42,726,800 H Shares ",
-    "shares": 42726800,
-    "status": "ok"
-  },
-  "6809.HK": {
-    "datetime": "10/02/2026 22:51",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
-    "file": "/listedco/listconews/sehk/2026/0210/2026021001534.pdf",
-    "hits": {
-      "9883500": 6
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6809.pdf",
-    "quote": "described in the Prospectus has been fully exercised by the Overall Coordinators, on behalf of the International Underwriters, on February 10, 2026, in respect of an aggregate of 9,883,500 H Shares, r",
-    "shares": 9883500,
-    "status": "ok"
-  },
-  "6938.HK": {
-    "datetime": "05/02/2026 22:34",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0205/2026020502414.pdf",
-    "hits": {
-      "4741400": 13
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6938.pdf",
-    "quote": "has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, February 5, 2026, in respect of an aggregate of 4,741,400 H Shares (",
-    "shares": 4741400,
-    "status": "ok"
-  },
-  "9980.HK": {
-    "datetime": "01/03/2026 18:07",
-    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0301/2026030100013.pdf",
-    "hits": {
-      "3865800": 6,
-      "6133400": 1
-    },
-    "page": 2,
-    "pct_of_option": {
-      "page": 2,
-      "pct": 9.45
-    },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB9980.pdf",
-    "quote": "een partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Saturday, February 28, 2026, in respect of an aggregate of 3,865,800 H Shares, ",
-    "shares": 3865800,
-    "status": "ok"
-  },
-  "0068.HK": {
-    "datetime": "20/04/2026 22:39",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
-    "file": "/listedco/listconews/sehk/2026/0420/2026042001756.pdf",
-    "hits": {
-      "24092500": 9
-    },
-    "page": 1,
-    "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
-    },
-    "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB0068.pdf",
-    "quote": "been fully exercised by the Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Monday, April 20, 2026, in respect of an aggregate of 24,092,500 Shares (t",
-    "shares": 24092500,
-    "status": "ok"
-  },
   "0668.HK": {
     "datetime": "26/07/2026 18:18",
     "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END OF STABILIZATION PERIOD",
@@ -346,6 +103,24 @@
     "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB0668.pdf",
     "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Sunday, July 26, 2026, in respect of an aggregate of 3,443,300 H Shares, r",
     "shares": 3443300,
+    "status": "ok"
+  },
+  "1021.HK": {
+    "datetime": "26/04/2026 18:04",
+    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END\nOF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0426/2026042600007.pdf",
+    "hits": {
+      "13469000": 13,
+      "13935200": 1
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 14.5
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB1021.pdf",
+    "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 24, 2026, in respect of an aggregate of 13,469,000 H Shares ",
+    "shares": 13469000,
     "status": "ok"
   },
   "1081.HK": {
@@ -381,6 +156,23 @@
     "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB1191.pdf",
     "quote": "ospectus has been fully exercised by the Overall Coordinator (for itself and on behalf of the International Underwriter), on Wednesday, July 8, 2026, in respect of an aggregate of 2,014,700 H Shares, ",
     "shares": 2014700,
+    "status": "ok"
+  },
+  "1768.HK": {
+    "datetime": "10/02/2026 19:41",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
+    "file": "/listedco/listconews/sehk/2026/0210/2026021001012.pdf",
+    "hits": {
+      "2326600": 6
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB1768.pdf",
+    "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Tuesday, February 10, 2026 in respect of an aggregate of 2,326,600 H Shares (",
+    "shares": 2326600,
     "status": "ok"
   },
   "1779.HK": {
@@ -484,6 +276,93 @@
     "shares": 14377500,
     "status": "ok"
   },
+  "2513.HK": {
+    "datetime": "04/02/2026 21:30",
+    "doc_title": "Full Exercise of the Over-Allotment Option, Stabilizing Actions and End of Stabilization Period",
+    "file": "/listedco/listconews/sehk/2026/0204/2026020402110.pdf",
+    "hits": {
+      "5612900": 10
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2513.pdf",
+    "quote": "e Prospectus has been fully exercised by the Sponsor-OC (for itself and on behalf of the International Underwriters), on Wednesday, February 4, 2026, in respect of an aggregate of 5,612,900 H Shares (",
+    "shares": 5612900,
+    "status": "ok"
+  },
+  "2675.HK": {
+    "datetime": "04/02/2026 22:10",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0204/2026020402144.pdf",
+    "hits": {
+      "4158300": 11
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2675.pdf",
+    "quote": "as been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Wednesday, February 4, 2026, in respect of an aggregate of 4,158,300 H Shares (",
+    "shares": 4158300,
+    "status": "ok"
+  },
+  "2677.HK": {
+    "datetime": "05/03/2026 21:14",
+    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0305/2026030502008.pdf",
+    "hits": {
+      "196100": 8,
+      "712500": 1
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 4.13
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2677.pdf",
+    "quote": "lly exercised by the Joint Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 196,100 Shares (t",
+    "shares": 196100,
+    "status": "ok"
+  },
+  "2714.HK": {
+    "datetime": "05/03/2026 20:53",
+    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0305/2026030501974.pdf",
+    "hits": {
+      "36271700": 5,
+      "41092700": 1
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 13.2
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB2714.pdf",
+    "quote": "as been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 36,271,700 H Shares ",
+    "shares": 36271700,
+    "status": "ok"
+  },
+  "3200.HK": {
+    "datetime": "05/03/2026 19:04",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0305/2026030501746.pdf",
+    "hits": {
+      "7567700": 13
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3200.pdf",
+    "quote": "has been fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Thursday, March 5, 2026, in respect of an aggregate of 7,567,700 H Shares (",
+    "shares": 7567700,
+    "status": "ok"
+  },
   "3277.HK": {
     "datetime": "08/05/2026 18:36",
     "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
@@ -518,6 +397,23 @@
     "shares": 8782200,
     "status": "ok"
   },
+  "3308.HK": {
+    "datetime": "27/08/2026 06:06",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0827/2026082700007.pdf",
+    "hits": {
+      "8175000": 12
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3308.pdf",
+    "quote": "ibed in the Prospectus has been fully exercised by the Sponsor-Overall Coordinators (on behalf of the International Underwriters) on August 26, 2026, in respect of an aggregate of 8,175,000 H Shares, ",
+    "shares": 8175000,
+    "status": "ok"
+  },
   "3310.HK": {
     "datetime": "18/06/2026 19:13",
     "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
@@ -535,6 +431,24 @@
     "shares": 7928800,
     "status": "ok"
   },
+  "3355.HK": {
+    "datetime": "17/04/2026 20:53",
+    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0417/2026041701549.pdf",
+    "hits": {
+      "5675700": 10,
+      "6000000": 1
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 14.19
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3355.pdf",
+    "quote": "has been partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, April 17, 2026, in respect of an aggregate of 5,675,700 H Shares (",
+    "shares": 5675700,
+    "status": "ok"
+  },
   "3388.HK": {
     "datetime": "25/06/2026 22:25",
     "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END OF STABILIZATION PERIOD",
@@ -550,6 +464,23 @@
     "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3388.pdf",
     "quote": "has been fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Thursday, June 25, 2026, in respect of an aggregate of 11,014,050 H Shares,",
     "shares": 11014050,
+    "status": "ok"
+  },
+  "3636.HK": {
+    "datetime": "05/02/2026 18:33",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND\nTHE END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0205/2026020501967.pdf",
+    "hits": {
+      "5514800": 14
+    },
+    "page": 2,
+    "pct_of_option": {
+      "page": 2,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3636.pdf",
+    "quote": "fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the other International Underwriters), on Thursday, February 5, 2026, in respect of an aggregate of 5,514,800 H Shares, ",
+    "shares": 5514800,
     "status": "ok"
   },
   "3661.HK": {
@@ -604,6 +535,40 @@
     "shares": 736400,
     "status": "ok"
   },
+  "3986.HK": {
+    "datetime": "08/02/2026 18:05",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0208/2026020800007.pdf",
+    "hits": {
+      "4337300": 12
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 2,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3986.pdf",
+    "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Saturday, February 7, 2026 in respect of an aggregate of 4,337,300 H Shares, ",
+    "shares": 4337300,
+    "status": "ok"
+  },
+  "6082.HK": {
+    "datetime": "28/01/2026 18:52",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0128/2026012800772.pdf",
+    "hits": {
+      "42726800": 11
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6082.pdf",
+    "quote": "spectus has been fully exercised by the Sponsor-OCs (for themselves and on behalf of the International Underwriters), on Wednesday, January 28, 2026, in respect of an aggregate of 42,726,800 H Shares ",
+    "shares": 42726800,
+    "status": "ok"
+  },
   "6228.HK": {
     "datetime": "23/07/2026 20:56",
     "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND THE END OF STABILIZATION PERIOD",
@@ -651,6 +616,40 @@
     "pdf": "/Users/kate/Documents/UROP/urop-hk-ipo/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6675.pdf",
     "quote": "tus has been partially exercised by the Joint Sponsor-OCs (for themselves and on behalf of the International Underwriters), on Sunday, July 12, 2026, in respect of an aggregate of 2,855,800 H Shares (",
     "shares": 2855800,
+    "status": "ok"
+  },
+  "6809.HK": {
+    "datetime": "10/02/2026 22:51",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION",
+    "file": "/listedco/listconews/sehk/2026/0210/2026021001534.pdf",
+    "hits": {
+      "9883500": 6
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6809.pdf",
+    "quote": "described in the Prospectus has been fully exercised by the Overall Coordinators, on behalf of the International Underwriters, on February 10, 2026, in respect of an aggregate of 9,883,500 H Shares, r",
+    "shares": 9883500,
+    "status": "ok"
+  },
+  "6938.HK": {
+    "datetime": "05/02/2026 22:34",
+    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0205/2026020502414.pdf",
+    "hits": {
+      "4741400": 13
+    },
+    "page": 1,
+    "pct_of_option": {
+      "page": 1,
+      "pct": 15.0
+    },
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB6938.pdf",
+    "quote": "has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Thursday, February 5, 2026, in respect of an aggregate of 4,741,400 H Shares (",
+    "shares": 4741400,
     "status": "ok"
   },
   "6951.HK": {
@@ -771,21 +770,22 @@
     "shares": 8513300,
     "status": "ok"
   },
-  "3308.HK": {
-    "datetime": "27/08/2026 06:06",
-    "doc_title": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD",
-    "file": "/listedco/listconews/sehk/2026/0827/2026082700007.pdf",
+  "9980.HK": {
+    "datetime": "01/03/2026 18:07",
+    "doc_title": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD",
+    "file": "/listedco/listconews/sehk/2026/0301/2026030100013.pdf",
     "hits": {
-      "8175000": 12
+      "3865800": 6,
+      "6133400": 1
     },
-    "page": 1,
+    "page": 2,
     "pct_of_option": {
-      "page": 1,
-      "pct": 15.0
+      "page": 2,
+      "pct": 9.45
     },
-    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Pipeline/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB3308.pdf",
-    "quote": "ibed in the Prospectus has been fully exercised by the Sponsor-Overall Coordinators (on behalf of the International Underwriters) on August 26, 2026, in respect of an aggregate of 8,175,000 H Shares, ",
-    "shares": 8175000,
+    "pdf": "/Users/georgezhu/Desktop/UROP HK IPO/Data Collecting Templates/News/prospectus_pipeline/data/allot/greenshoe/pdf/HKIPO-MB9980.pdf",
+    "quote": "een partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Saturday, February 28, 2026, in respect of an aggregate of 3,865,800 H Shares, ",
+    "shares": 3865800,
     "status": "ok"
   }
 }

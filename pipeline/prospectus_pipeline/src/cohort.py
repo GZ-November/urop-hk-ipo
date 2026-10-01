@@ -12,7 +12,7 @@ from typing import Any
 import yaml
 
 from paths import sources_dir
-from listing_reports import reports_for_interval
+from listing_reports import reports_and_supplement
 from sample_builder import audit_candidate, load_nlr_candidates
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -387,7 +387,7 @@ def build_cohort_workbook(
     source_dir = Path(source_dir or sources_dir(WS))
     template_path = Path(template_path or WS / "templates" / "HKIPO-MB-template-final.xlsx")
     workbook_path = Path(workbook_path or cohort_workbook_path(start, end))
-    reports = reports_for_interval(start, end, source_dir, today=today)
+    reports, supplement = reports_and_supplement(start, end, source_dir, today=today)
 
     selected = []
     for report in reports:
@@ -399,6 +399,11 @@ def build_cohort_workbook(
             membership = candidate.get("listing_date") or candidate.get("prospectus_date")
             if candidate["inclusion_status"] == "INCLUDED" and membership and start <= membership <= end:
                 selected.append(candidate)
+    for candidate in supplement:
+        candidate = audit_candidate(candidate)
+        membership = candidate.get("listing_date") or candidate.get("prospectus_date")
+        if candidate["inclusion_status"] == "INCLUDED" and membership and start <= membership <= end:
+            selected.append(candidate)
     selected.sort(key=lambda item: (
         item.get("listing_date") or item.get("prospectus_date"), item["stock_code"]
     ))

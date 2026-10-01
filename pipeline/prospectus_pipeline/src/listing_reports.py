@@ -12,6 +12,7 @@ import re
 import tempfile
 from html.parser import HTMLParser
 from pathlib import Path
+from typing import Any
 from urllib.parse import unquote, urljoin, urlparse
 
 import openpyxl
@@ -177,3 +178,167 @@ def reports_for_interval(
     if missing:
         raise ValueError("Official Main Board listing-report coverage missing: " + "; ".join(missing))
     return reports
+
+
+_SUPPLEMENT_NAME = re.compile(r"NLR(19\d{2}|20\d{2})_Supplement_\d{8}\.ya?ml$", re.I)
+
+
+def _normalize_supplement_code(raw: Any) -> str:
+    digits = "".join(ch for ch in str(raw or "") if ch.isdigit())
+    if not digits:
+        raise ValueError(f"supplement entry has no usable stock code: {raw!r}")
+    return f"{int(digits):04d}.HK"
+
+
+def _entry_date(entry: dict, field: str, code: str) -> dt.date:
+    value = entry.get(field)
+    if isinstance(value, dt.datetime):
+        return value.date()
+    if isinstance(value, dt.date):
+        return value
+    parsed = None
+    if isinstance(value, str):
+        for fmt in ("%Y-%m-%d", "%d/%m/%Y"):
+            try:
+                parsed = dt.datetime.strptime(value.strip(), fmt).date()
+                break
+            except ValueError:
+                continue
+    if parsed is None:
+        raise ValueError(f"supplement entry {code} is missing a usable {field}")
+    return parsed
+
+
+def _supplement_paths(source_dir: Path, year: int) -> list[Path]:
+    if not source_dir.is_dir():
+        return []
+    return sorted(
+        path for path in source_dir.iterdir()
+        if (match := _SUPPLEMENT_NAME.fullmatch(path.name)) and int(match.group(1)) == year
+    )
+
+
+def load_supplement(
+    source_dir: Path,
+    year: int,
+    start: dt.date,
+    end: dt.date,
+    *,
+    covered_through: dt.date,
+) -> list[dict[str, Any]]:
+    """Load reviewed supplemental issuer entries beyond an annual report's coverage.
+
+    The supplement never replaces the annual report: it may only extend coverage
+    past the report's printed date (``covered_through``).  Every entry must list
+    its listing date inside ``(covered_through, end]`` and cite at least one
+    official source URL, or the loader fails closed.
+    """
+    import yaml
+
+    source_dir = Path(source_dir)
+    paths = _supplement_paths(source_dir, year)
+    if not paths:
+        return []
+    candidates: list[dict[str, Any]] = []
+    for path in paths:
+        document = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        if int(document.get("year", 0)) != year:
+            raise ValueError(f"supplement {path.name} declares year {document.get('year')!r}, expected {year}")
+        for entry in document.get("entries") or []:
+            code = _normalize_supplement_code(entry.get("stock_code"))
+            listing = _entry_date(entry, "listing_date", code)
+            if not covered_through < listing <= end:
+                raise ValueError(
+                    f"supplement entry {code} lists on {listing.isoformat()}, outside the "
+                    f"gap ({covered_through.isoformat()}, {end.isoformat()}] the supplement is allowed to cover"
+                )
+            if start > listing:
+                continue
+            sources = entry.get("sources") or []
+            if not any(isinstance(source, dict) and source.get("url") for source in sources):
+                raise ValueError(f"supplement entry {code} cites no official source URL")
+            offer_price = entry.get("offer_price_hkd")
+            candidates.append({
+                "file_no": entry.get("file_no"),
+                "raw_code": code.split(".")[0],
+                "stock_code": code,
+                "company_name": str(entry.get("company_name") or "").strip(),
+                "prospectus_date": _entry_date(entry, "prospectus_date", code),
+                "listing_date": listing,
+                "cohort_year": year,
+                "sponsors": str(entry.get("sponsors") or "").strip(),
+                "auditor": str(entry.get("auditor") or "").strip(),
+                "valuer": entry.get("valuer"),
+                "funds_raised_public_hkd": entry.get("funds_raised_public_hkd"),
+                "funds_raised_int_hkd": entry.get("funds_raised_int_hkd"),
+                "offer_price_hkd": float(offer_price) if offer_price is not None else None,
+                "raw_price_str": str(entry.get("offer_price_hkd") or "").strip(),
+                "raw_funds_str": str(entry.get("funds_raised_public_hkd") or "").strip(),
+                "supplement_source": path.name,
+                "supplement_sources": [
+                    source.get("url") for source in sources if isinstance(source, dict) and source.get("url")
+                ],
+            })
+    return candidates
+
+
+def reports_and_supplement(
+    start: dt.date,
+    end: dt.date,
+    source_dir: Path,
+    *,
+    today: dt.date | None = None,
+) -> tuple[list[Path], list[dict[str, Any]]]:
+    """Return annual reports plus reviewed supplement entries covering [start, end].
+
+    ``reports_for_interval`` fails closed when an annual report lags the requested
+    end.  This wrapper keeps that rule but allows a reviewed supplement file
+    (``load_supplement``) to cover only the days after the report's printed
+    coverage date; the annual report itself is always required.
+    """
+    today = today or dt.date.today()
+    try:
+        return reports_for_interval(start, end, source_dir, today=today), []
+    except ValueError:
+        pass
+    reports: list[Path] = []
+    supplement: list[dict[str, Any]] = []
+    problems: list[str] = []
+    seen_reports: set[Path] = set()
+    for year in range(start.year, end.year + 1):
+        year_start = max(start, dt.date(year, 1, 1))
+        year_end = min(end, dt.date(year, 12, 31))
+        local = _local_report(source_dir, year)
+        if local is not None:
+            try:
+                if _covers(local, year, year_end, today):
+                    if local not in seen_reports:
+                        reports.append(local)
+                        seen_reports.add(local)
+                    continue
+            except Exception:
+                pass
+        as_of = report_as_of(local) if local is not None else None
+        if local is None or as_of is None:
+            problems.append(f"{year}: no complete official report and no usable cache")
+            continue
+        if year_start > as_of:
+            problems.append(
+                f"{year}: report covers through {as_of.isoformat()}, before {year_start.isoformat()}; "
+                "a supplement may only extend, not replace, the annual report"
+            )
+            continue
+        reports.append(local)
+        seen_reports.add(local)
+        if year_end > as_of and not _supplement_paths(source_dir, year):
+            problems.append(
+                f"{year}: report covers through {as_of.isoformat()}, requested through "
+                f"{year_end.isoformat()}; no reviewed supplement file covers the remaining days"
+            )
+            continue
+        supplement.extend(
+            load_supplement(source_dir, year, year_start, year_end, covered_through=as_of)
+        )
+    if problems:
+        raise ValueError("Official Main Board listing-report coverage missing: " + "; ".join(problems))
+    return reports, supplement

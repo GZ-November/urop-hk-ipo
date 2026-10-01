@@ -1,0 +1,19 @@
+{
+  "code": "6727.HK",
+  "reviewer": "lockup-rev-6727",
+  "cornerstone": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p211 ('RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS': 'period of six months from (and inclusive of) the Listing Date'). Holders verified: exactly two Cornerstone Investors - Electronic Channel Limited (wholly-owned subsidiary of IEIT SYSTEMS Co., Ltd., p210) and LUOYANG Sci-Tech Inv. (Luoyang Science Technology Innovate Group, Ltd., subscribing through QDII Hwabao Trust, p208/p210-211); confirmed via the cornerstone tables (p209-210) and Appendix (p428a/b) that no third cornerstone exists. Aggregate ranges 1,210,100-1,506,500 Offer Shares (8.64%-10.75% of the Global Offering) verified on p208. Dates recomputed: inclusive-start six-month duration means the Listing Date (2026-09-21) counts inside the period, so the last restricted day is 2027-03-20 and the first free day is the six-month anniversary 2027-03-21 - matches candidate and consistent with repo convention (cf. review 1021.HK).",
+    "corrections": {}
+  },
+  "controller_6m": {
+    "verdict": "approve",
+    "notes": "exists=false CONFIRMED. Independent regex sweep found zero occurrences of '10.07' in the entire prospectus - as a Chapter 18C Specialist Technology Company (with Chapter 19A public-float provisions applying, e.g. Rule 19A.13A cited p208), the standard Rule 10.07(1)(a)/(b) controller undertakings are replaced by the Rule 18C.14 regime. 'Undertakings to the Stock Exchange Pursuant to the Listing Rules' (p278) contains only the Company's Rule 10.08 undertaking and the Key Persons' Rule 18C.14(1) 12-month undertaking - no six-month controller undertaking exists. Rule 18C.14(2) six-month restrictions on Pathfinder SIIs (Linzhi Lichuang, Industry Investment Fund, CICC Qizhi, CICC Haochen) are expressly disapplied on p124. Quote verified verbatim on p278 (elisions correctly skip the pledge/charge save-as parenthetical and the 18C.15 reference). Computed dates null is appropriate for a non-existent block.",
+    "corrections": {}
+  },
+  "controller_12m": {
+    "verdict": "approve",
+    "notes": "Quote verified verbatim on p279 ('(B) Undertakings by Mr. Sun and Shanghai Zanxing' as Warranting Shareholders, covering the First Six Month Period AND the Second Six Month Period). First Six Month Period defined on p278 as 'up to and including the date falling six months after the Listing Date' (through 2027-03-21 inclusive); Second Six Month Period = 'the period of six months commencing on the date on which the First Six Month Period expires' - combined 12 months from the Listing Date. Dates recomputed: 'ending on the date which is 12 months from the Listing Date' (Rule 18C.14(1), p278) makes 2027-09-21 the last restricted day (inclusive end) and 2027-09-22 the first free day - matches candidate and consistent with repo convention (cf. review 1021.HK, corroborated there by 'ending on, and including' wording). Carve-outs verified on p280 (purchases/disposals in compliance with the Listing Rules; pledges/charges to authorized institutions for bona fide commercial loans with notification duties). International Underwriting Agreement repetition of the same undertakings verified on p280. Key Persons lock-up table (p123-124) verified: Mr. SUN Yuanhao 11,167,863 A Shares (8.26%), Shanghai Zanxing 7,537,589 A Shares (5.58%), Mr. LV Cheng 1,519,779 A Shares (1.12%), all 'commencing on the date of this prospectus and ending on expiry of 12 months from the Listing Date'.",
+    "corrections": {}
+  }
+}

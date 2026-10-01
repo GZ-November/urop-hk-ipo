@@ -4,19 +4,19 @@
 
 | Variable | ln subscription ratio | ln public applicants | ln average application value |
 |---|---|---|---|
-| ln firm age | -0.37 | -0.19* | -0.09 |
-| ln offer size | -1.00*** | -0.11 | -0.03 |
-| A+H issuer | 0.07 | 0.07 | 0.30 |
-| VC/PE-backed | 0.83* | 0.39* | 0.57* |
-| Top-tier sponsor | -0.19 | -0.16 | -0.03 |
-| Cornerstone allocation | 1.95* | 1.15*** | 0.93 |
-| HSI return, prior 20 days | 5.39* | 2.32* | 3.44** |
-| IPO count, prior 90 days | -0.04 | -0.03 | 0.00 |
-| April-June hot window | 0.57 | 0.21 | 0.50* |
-| R-squared | 0.50 | 0.33 | 0.23 |
-| N | 102 | 102 | 102 |
+| ln firm age | -0.33 | -0.15 | -0.03 |
+| ln offer size | -0.87*** | -0.02 | 0.12 |
+| A+H issuer | -0.04 | -0.08 | 0.05 |
+| VC/PE-backed | 0.90 | 0.34 | 0.50 |
+| Top-tier sponsor | -0.23 | -0.17 | -0.05 |
+| Cornerstone allocation | 1.53 | 0.93** | 0.59 |
+| HSI return, prior 20 days | 5.75** | 2.33* | 3.31** |
+| IPO count, prior 90 days | -0.03 | -0.02 | 0.01 |
+| April-June hot window | 0.70 | 0.34 | 0.61** |
+| R-squared | 0.44 | 0.31 | 0.24 |
+| N | 105 | 105 | 105 |
 
-- The hot-window coefficient implies retail oversubscription about 1.8x higher (HC3 p = 0.28: not significant);
+- The hot-window coefficient implies retail oversubscription about 2.0x higher (HC3 p = 0.19: not significant);
   its size depends on the controls, because the HSI return carries part of the regime. Larger offers see lower multiples, partly by
   construction because the retail tranche scales with size.
 - The final retail share after clawback is deliberately excluded as a regressor: it is a mechanical function of the multiple.
@@ -25,11 +25,11 @@
 
 | Sample | N | d log(1+IR) / d ln subscription (HC3 s.e.) | R-squared |
 |---|---|---|---|
-| All | 106 | 0.113 (0.020) | 0.19 |
+| All | 113 | 0.112 (0.018) | 0.21 |
 | April-June | 45 | 0.129 (0.044) | 0.13 |
-| Other months | 61 | 0.070 (0.025) | 0.12 |
+| Other months | 68 | 0.076 (0.023) | 0.15 |
 
-Interaction test (ln subscription x April-June), HC3 p = 0.239. Demand and IR are jointly determined; this is the Rock/Welch
+Interaction test (ln subscription x April-June), HC3 p = 0.285. Demand and IR are jointly determined; this is the Rock/Welch
 association, not a causal effect.
 
 ## 3. Aftermarket returns, hot window vs other listings
@@ -62,10 +62,10 @@ Apr-Jun dummy is included. This is consistent with reversal being a feature of t
 
 | IR bin | N | Stabilization purchases | Mean greenshoe exercise rate | Median day-20 BHR |
 |---|---|---|---|---|
-| IR <= 0 | 29 | 100% | 8% | -1.7% |
-| 0 to 25% | 27 | 20% | 42% | 2.4% |
+| IR <= 0 | 32 | 100% | 7% | -1.7% |
+| 0 to 25% | 30 | 20% | 38% | 2.4% |
 | 25% to 100% | 24 | 0% | 61% | 2.2% |
-| > 100% | 26 | 0% | 32% | -9.6% |
+| > 100% | 27 | 0% | 31% | -9.6% |
 
 Stabilization purchases cluster in weak deals and greenshoe exercise in strong ones, as the mechanism implies; both are consequences of
 the first-day price, not explanatory variables for it.

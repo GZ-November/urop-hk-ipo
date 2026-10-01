@@ -12,7 +12,7 @@
 | 2026-06 | 24 | 79% | 46% | 25% | 38% | 67% | 1,492 | -5.3% | 36 |
 | 2026-07 | 16 | 7% | 0% | 44% | 6% | 56% | 336 | -7.8% | 41 |
 | 2026-08 | 2 | 32% | 32% | 0% | 0% | 50% | 1,720 | 7.5% | 50 |
-| 2026-09 | 5 | 22% | -1% | 80% | 20% | 40% | 140 | 1.0% | 43 |
+| 2026-09 | 12 | 31% | -1% | 58% | 17% | 58% | 84 | -1.6% | 42 |
 
 ## 2. Longest gaps between consecutive listings
 
@@ -27,22 +27,22 @@
 
 | Model | Parameters | R-squared | Adj. R-squared | AIC |
 |---|---|---|---|---|
-| Quarter dummies | 3 | 0.160 | 0.144 | 134.6 |
-| Quarter dummies + route + sector | 15 | 0.328 | 0.224 | 135.1 |
-| Hot window (Apr-Jun) dummy | 2 | 0.143 | 0.135 | 134.7 |
-| Hot window (Apr-Jun) dummy + route + sector | 14 | 0.321 | 0.225 | 134.1 |
-| Month dummies | 9 | 0.196 | 0.130 | 142.0 |
-| Month dummies + route + sector | 21 | 0.377 | 0.230 | 139.0 |
+| Quarter dummies | 3 | 0.151 | 0.135 | 144.2 |
+| Quarter dummies + route + sector | 15 | 0.301 | 0.201 | 146.2 |
+| Hot window (Apr-Jun) dummy | 2 | 0.139 | 0.131 | 143.8 |
+| Hot window (Apr-Jun) dummy + route + sector | 14 | 0.298 | 0.206 | 144.6 |
+| Month dummies | 9 | 0.187 | 0.125 | 151.3 |
+| Month dummies + route + sector | 21 | 0.351 | 0.210 | 149.8 |
 
-- Hot-window coefficient (with route + sector): 0.39; s.e. 0.09 clustered by month, 0.11 heteroskedasticity-robust (HC3).
+- Hot-window coefficient (with route + sector): 0.36; s.e. 0.09 clustered by month, 0.11 heteroskedasticity-robust (HC3).
 
 ## 4. Tests
 
-- Restricting month dummies to the hot-window dummy: F = 1.09, p = 0.378.
-- Restricting month dummies to the quarter dummies: F = 1.12, p = 0.360.
+- Restricting month dummies to the hot-window dummy: F = 1.07, p = 0.388.
+- Restricting month dummies to the quarter dummies: F = 1.18, p = 0.322.
 - IR equal across Apr, May, Jun: Kruskal-Wallis p = 0.366.
 - IR equal across Jan, Feb, Mar: Kruskal-Wallis p = 0.468.
 - Mar vs Apr: Mann-Whitney p = 0.047; Jun vs Jul: Mann-Whitney p = 0.023.
-- Hot window vs rest: mean IR 93% (n = 45) vs 26% (n = 61); Mann-Whitney p = 0.00026.
+- Hot window vs rest: mean IR 93% (n = 45) vs 27% (n = 68); Mann-Whitney p = 0.00017.
 
 - Months with 2 or 5 deals (Aug, Sep) are too thin to read individually.

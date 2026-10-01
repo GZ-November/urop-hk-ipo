@@ -55,6 +55,11 @@ extract:
     business: 45000
     cornerstone: 80000
     extra_financial: 110000
+    chinese_name: 10000
+    ownership: 50000
+    offering: 20000
+  max_chars_total: 550000
+  cover_pages: 3
 
 validate:
   share_rel_tol: 1.0e-9

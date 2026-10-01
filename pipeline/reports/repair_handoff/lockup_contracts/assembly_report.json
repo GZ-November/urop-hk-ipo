@@ -288,7 +288,13 @@
   "9976.HK Controlling_Shareholder_6M_Disposal: first_free_day 2027-03-09 != 2027-03-08 (calendar 6m from 2026-09-08); keeping the candidate (explicit-date basis)",
   "9976.HK Controlling_Shareholder_12M_Control: first_free_day 2027-09-09 != 2027-09-08 (calendar 12m from 2026-09-08); keeping the candidate (explicit-date basis)",
   "9980.HK Controlling_Shareholder_6M_Disposal: first_free_day 2026-08-04 != 2026-08-03 (calendar 6m from 2026-02-03); keeping the candidate (explicit-date basis)",
-  "9980.HK Controlling_Shareholder_12M_Control: first_free_day 2027-02-04 != 2027-02-03 (calendar 12m from 2026-02-03); keeping the candidate (explicit-date basis)"
+  "9980.HK Controlling_Shareholder_12M_Control: first_free_day 2027-02-04 != 2027-02-03 (calendar 12m from 2026-02-03); keeping the candidate (explicit-date basis)",
+  "9856.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: computed_first_free_day=2027-03-23",
+  "9856.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: computed_last_restricted_day=2027-03-22",
+  "9856.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=Rule 10.07(1)(i): period commencing on the prospectus disclosure date and ending ON the date which is six months from the Listing Date (2027-03-22); the stated end date is inclusive/last restricted day, so first_free_day = anniversary + 1 (repo convention per reviewed 0470.HK entry)",
+  "9607.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: computed_first_free_day=2027-03-30",
+  "9607.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: computed_last_restricted_day=2027-03-29",
+  "9607.HK Controlling_Shareholder_6M_Disposal: reviewer correction applied: basis=six calendar months from the Listing Date ('ending on the date which is six months from the Listing Date'); restricted period commences on the prospectus shareholding-disclosure date and includes the six-month anniversary itself (anniversary-inclusive); first free day = 2027-03-30"
  ],
  "written_issuers": 106,
  "report": [
@@ -2007,5 +2013,6 @@
    "differs_from_old_default": 0,
    "old_default_expiry": "2026-08-13"
   }
- ]
+ ],
+ "assembled_at": "2026-10-01T20:12:26.955458"
 }

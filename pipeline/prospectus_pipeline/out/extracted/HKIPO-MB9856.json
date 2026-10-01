@@ -1,0 +1,425 @@
+{
+ "code": "9856.HK",
+ "fields": {
+  "col_L": {
+   "value": 172014700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 172,014,700 Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 172014700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 172,014,700 Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_O": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 271,
+   "quote": "172,014,700 Shares to be issued under the Global Offering (assuming the Over-allotment Option is not exercised) ... 982,941,500 Shares in total",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 172014700,
+   "page": 271,
+   "quote": "172,014,700 Shares to be issued under the Global Offering (assuming the Over-allotment Option is not exercised)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 154813200,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 154,813,200 Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 17201500,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 17,201,500 Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares (par value US$0.02 each)",
+   "page": 271,
+   "quote": "Shares of par value US$0.02 each",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_T": {
+   "value": 32.96,
+   "page": 20,
+   "quote": "GLOBAL OFFERING STATISTICS Based on the Offer Price of HK$32.96 per Offer Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 32.96,
+   "page": 19,
+   "quote": "based on an indicative offer price of HK$32.96 per Offer Share unless otherwise announced and assuming no exercise of the Over-allotment Option",
+   "confidence": "medium"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 16,
+   "quote": "(RMB’000)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 5480854000,
+   "page": 16,
+   "quote": "Total assets 5,480,854 7,759,869 7,743,144 11,009,094",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 7759869000,
+   "page": 16,
+   "quote": "Total assets 5,480,854 7,759,869 7,743,144 11,009,094",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 7743144000,
+   "page": 16,
+   "quote": "Total assets 5,480,854 7,759,869 7,743,144 11,009,094",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 1933574000,
+   "page": 16,
+   "quote": "Total equity 1,933,574 1,928,276 3,757,722 4,387,859",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 1928276000,
+   "page": 16,
+   "quote": "Total equity 1,933,574 1,928,276 3,757,722 4,387,859",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 3757722000,
+   "page": 16,
+   "quote": "Total equity 1,933,574 1,928,276 3,757,722 4,387,859",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 3547280000,
+   "page": 16,
+   "quote": "Total liabilities 3,547,280 5,831,593 3,985,422 6,621,235",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 5831593000,
+   "page": 16,
+   "quote": "Total liabilities 3,547,280 5,831,593 3,985,422 6,621,235",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 3985422000,
+   "page": 16,
+   "quote": "Total liabilities 3,547,280 5,831,593 3,985,422 6,621,235",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 4238989000,
+   "page": 13,
+   "quote": "Revenue 4,238,989 100.0 5,086,600 100.0 8,354,680 100.0",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 5086600000,
+   "page": 13,
+   "quote": "Revenue 4,238,989 100.0 5,086,600 100.0 8,354,680 100.0",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 8354680000,
+   "page": 13,
+   "quote": "Revenue 4,238,989 100.0 5,086,600 100.0 8,354,680 100.0",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 242499000,
+   "page": 14,
+   "quote": "Profit before tax 242,499 5.7 98,399 1.9 921,584 11.0",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 98399000,
+   "page": 14,
+   "quote": "Profit before tax 242,499 5.7 98,399 1.9 921,584 11.0",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 921584000,
+   "page": 14,
+   "quote": "Profit before tax 242,499 5.7 98,399 1.9 921,584 11.0",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 215521000,
+   "page": 14,
+   "quote": "Profit for the year/period 215,521 5.1 89,490 1.8 872,640 10.4",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 89490000,
+   "page": 14,
+   "quote": "Profit for the year/period 215,521 5.1 89,490 1.8 872,640 10.4",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 872640000,
+   "page": 14,
+   "quote": "Profit for the year/period 215,521 5.1 89,490 1.8 872,640 10.4",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 87221000,
+   "page": 229,
+   "quote": "we had a total of current and non-current lease liabilities of RMB49.8 million, RMB87.1 million, RMB87.2 million, RMB120.3 million and RMB119.2 million",
+   "confidence": "medium"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 340,
+   "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 1672231000,
+   "page": 13,
+   "quote": "Gross profit 873,912 20.6 883,089 17.4 1,672,231 20.0",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 353359000,
+   "page": 227,
+   "quote": "Total 221,517 870,717 353,359 219,810 562,574",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified (true and fair view)",
+   "page": 325,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants' report, a true and fair view of the financial position of the Group",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.028,
+   "page": 301,
+   "quote": "will receive an underwriting commission of 2.8% of the aggregate Offer Price of all the Offer Shares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.028,
+   "page": 301,
+   "quote": "will receive an underwriting commission of 2.8% of the aggregate Offer Price of all the Offer Shares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 301,
+   "quote": "25,802,200 Shares, representing not more than 15% of the number of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 224300000,
+   "page": 20,
+   "quote": "for the Global Offering are HK$224.3 million, representing 4.0% of the gross proceeds of the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Design, development, manufacture and sales of optical transceivers, optical chips and optical network terminals",
+   "page": 116,
+   "quote": "We are an established optical communication and connectivity product provider that develops, manufactures and sells optical transceivers, optical chips and optical network terminals",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange (Rule 8.05(3) market capitalization/revenue test)",
+   "page": 19,
+   "quote": "satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialised (mass production; 75mW CW-DFB laser chips commercialized in Q2 2025)",
+   "page": 14,
+   "quote": "our 75mW CW-DFB laser chips were commercialized in the second quarter of 2025 and gradually scaled up to achieve production in the first quarter of 2026",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 19,
+   "quote": "We plan to use the net proceeds from the Global Offering for the purposes set forth below: (1) approximately 52.9%, or approximately HK$2,881.5 million",
+   "confidence": "medium"
+  },
+  "col_CJ": {
+   "value": "Primavera Investment Fund;GBAHIL - Mega Prime;GBAHIL - Poly Platinum;CFTC Paragon SP;HK BVF I LPF;Orient Asset Management;Mount Altai;Peak View Capital;Sinofortune International;Ambre Lau Trade Limited;SCV Delta;Mirae Asset Securities HK;PAG Capital Structure Opportunity Fund LP;Turquoise Hime (ORIX);GF Fund Management;GF Fund HK;E Fund HK;E Fund Management;CSC OTC Swap;First Seafront Asset Management Limited;GaoTeng Global Asset Management Limited;GigaDevice;Amlogic Hong Kong;Atlas Venture Limited;Alphahill Capital;ODI Trust;Barings",
+   "page": 283,
+   "quote": "Total 340.0 80,876,700 47.02% 8.23% 40.88% 8.02%",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/25",
+   "page": 17,
+   "quote": "Year Ended December 31, Six Months Ended June 30, 2023 2024 2025 2025 2026",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 1388382000,
+   "page": 17,
+   "quote": "Net cash flows generated from/(used in) operating activities 798,762 (615,871) 1,388,382 549,592 (1,256,318)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 1273617000,
+   "page": 17,
+   "quote": "Cash and cash equivalents at the end of the year 138,503 260,906 1,273,617 773,552 1,584,152",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 663730000,
+   "page": 13,
+   "quote": "Research and development expenses (553,278) (13.1) (623,132) (12.3) (663,730) (7.9)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.702,
+   "page": 12,
+   "quote": "sales to our five largest customers contributed 55.8%, 66.9%, 70.2% and 71.8% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "纳真科技公司",
+   "page": 1,
+   "quote": "納真科技公司 Ligent Technologies, Inc.",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 123,
+   "quote": "We have received several rounds of Pre-IPO Investments since our incorporation, which are summarized as below:",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 126,
+   "quote": "Global Optical is a company incorporated in Hong Kong on April 28, 2011 and is an investment vehicle ultimately controlled by Primavera Capital Group",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 127,
+   "quote": "ultimately 100% owned and controlled by the State-owned Assets Supervision and Administration Commission of Xiamen Municipal People's Government (\"Xiamen SASAC\")",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "TransLight;Global Optical;Archcom LLC;CKL;Xiamen Guojuxiang;Xiamen Advanced Manufacturing Fund;Xiamen TorchRunxin",
+   "page": 123,
+   "quote": "Name of Pre-IPO Investor Date of investment Number of shares acquired Date of settlement of consideration Approximate total consideration",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.4727,
+   "page": 131,
+   "quote": "TransLight held 188,300,750 Shares, representing approximately 23.22% of the total issued Shares of our Company",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 126,
+   "quote": "Mr. Zhang Jing, one of our non-executive Directors, currently serves as a partner of Primavera Capital Group.",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Initial/founding investment round by TransLight (February 20, 2009)",
+   "page": 123,
+   "quote": "TransLight February 20, 2009 3,410,022 July 3, 2009",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": 17.6,
+   "page": 123,
+   "quote": "TransLight February 20, 2009 3,410,022 July 3, 2009",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Corporate group controller (Hisense Group Holding)",
+   "page": 339,
+   "quote": "The Company's immediate holding company and ultimate holding company is Hisense Group Holdings Co., Ltd. (\"Hisense Group Holding\"), a company incorporated in Chinese mainland",
+   "confidence": "medium"
+  },
+  "col_BC": {
+   "value": 0.4011,
+   "page": 18,
+   "quote": "Hisense Group Holding, directly and indirectly via CKL, will be interested in and control 394,224,950 Shares, representing approximately 40.11% of our issued share capital",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.4011,
+   "page": 18,
+   "quote": "Hisense Group Holding, directly and indirectly via CKL, will be interested in and control 394,224,950 Shares, representing approximately 40.11% of our issued share capital",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "20/02/2009",
+   "page": 116,
+   "quote": "Our Company was incorporated in the BVI with limited liability on February 20, 2009 and has been the holding company of the Group",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "PRC (Qingdao, Shandong)",
+   "page": 79,
+   "quote": "Principal place of business and head office in the PRC 26th Floor, Building A",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "14/09/2026",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences ... 9:00 a.m. on Monday, September 14, 2026",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "17/09/2026",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close(3) ... 12:00 noon on Thursday, September 17, 2026",
+   "confidence": "high"
+  }
+ }
+}

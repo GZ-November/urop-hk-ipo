@@ -326,3 +326,28 @@ class OverwriteGuardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExpansionSelectionTests(unittest.TestCase):
+    def test_unknown_code_refuses_write_and_preserves_curated_value(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path, cfg = _build_cohort(Path(tmp), curated={194: 0.035})
+            before = path.read_bytes()
+            with self.assertRaisesRegex(ValueError, "not in workbook"):
+                WorkbookExpansionWriter(cfg=cfg).write_expansion(only_codes=["9999.HK"])
+            self.assertEqual(path.read_bytes(), before)
+
+    def test_cli_wrapper_forwards_only_codes(self):
+        import importlib.util
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        spec = importlib.util.spec_from_file_location("q3_pipeline_runner", ROOT / "run.py")
+        runner = importlib.util.module_from_spec(spec)
+        sys.modules[spec.name] = runner
+        spec.loader.exec_module(runner)
+        args = SimpleNamespace(only=["6802.HK"], dry_run=True, force_overwrite=False)
+        with patch("subprocess.call", return_value=0) as call:
+            runner.cmd_expansion({"_workbook_path": "cohort.xlsx"}, args, [])
+        command = call.call_args.args[0]
+        self.assertEqual(command[command.index("--codes") + 1:], ["6802.HK"])
+        self.assertIn("--dry-run", command)

@@ -2978,5 +2978,210 @@
     "last_restricted_day": "2026-08-12"
    }
   ]
+ },
+ "6727.HK": {
+  "listing_date": "2026-09-21",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "Electronic Channel Limited (wholly-owned subsidiary of IEIT SYSTEMS Co., Ltd.) and LUOYANG Sci-Tech Inv. (Luoyang Science Technology Innovate Group, Ltd., subscribing through QDII)",
+    "term": "Period of six months from (and inclusive of) the Listing Date: the Listing Date (2026-09-21) is counted inside the six-month period, so the period runs from 2026-09-21 and expires at the end of the day before the six-month anniversary; the anniversary date itself (2027-03-21) is the first free day. Standard six-month cornerstone lock-up. Two cornerstone investors only, aggregate ~1,210,100-1,506,500 Offer Shares (8.64%-10.75% of the Global Offering). Exception: transfers to wholly-owned subsidiaries bound by the same lock-up obligations.",
+    "first_free_day": "2027-03-21",
+    "review": "reviewed",
+    "source_page": 211,
+    "source_quote": "RESTRICTIONS ON DISPOSALS BY THE CORNERSTONE INVESTORS\nEach of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the \"Lock-up Period\"), dispose of any of the Offer Shares or any interest in any company or entity holding such Offer Shares that it has purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the respective Cornerstone Investor, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-20"
+   },
+   {
+    "category": "Controlling_Shareholder_12M_Control",
+    "holder": "Mr. SUN Yuanhao and Shanghai Zanxing (as Warranting Shareholders under the Hong Kong Underwriting Agreement; also Key Persons under Rule 18C.14(1))",
+    "term": "First Six Month Period is defined as \"up to and including the date falling six months after the Listing Date\" (i.e. through 2027-03-21 inclusive); the Second Six Month Period is \"the period of six months commencing on the date on which the First Six Month Period expires\". Combined, the Warranting Shareholders are restricted for 12 months from the Listing Date, ending on (and including) 2027-09-21 — consistent with the Rule 18C.14(1) Key Persons undertaking which runs \"ending on the date which is 12 months from the Listing Date\". The stated end date is the last restricted day, so the first free day is the following day. Non-standard vs 10.07(1)(b): this is not a conditional 'cease to be controlling shareholder' test — the Warranting Shareholders gave a full unconditional 12-month contractual lock-up covering both six-month periods (only carve-outs: purchases and disposals in compliance with the Listing Rules, and pledges/charges to authorized institutions for bona fide commercial loans with notification duties, page 280). Same undertakings to be repeated in the International Underwriting Agreement (page 280). Key Persons lock-up table (pages 123-124): Mr. SUN Yuanhao 11,167,863 A Shares (8.26%), Shanghai Zanxing 7,537,589 A Shares (5.58%), Mr. LV Cheng 1,519,779 A Shares (1.12%) — all commencing on the date of the prospectus and ending on expiry of 12 months from the Listing Date.",
+    "first_free_day": "2027-09-22",
+    "review": "reviewed",
+    "source_page": 279,
+    "source_quote": "(B) Undertakings by Mr. Sun and Shanghai Zanxing\nEach of Mr. Sun and Shanghai Zanxing, as Warranting Shareholders, undertakes to each of our Company, the Sole Sponsor, the Sole Sponsor-Overall Coordinator, the Overall Coordinators, the Joint Global Coordinators, the Joint Bookrunners, the Joint Lead Managers, the Hong Kong Underwriters and the CMIs that, without the prior written consent of the Sole Sponsor and the Sole Sponsor-Overall Coordinator (for itself and on behalf of the other Hong Kong Underwriters) and unless in compliance with the requirements of the Listing Rules: (i) it/he will not, and will procure that the relevant registered holder(s), any nominee or trustee holding on trust for it/him and the companies controlled by it/him will not, at any time during the First Six Month Period and the Second Six Month Period, (a) sell, offer to sell, ... or otherwise transfer or dispose of or create an Encumbrance over ... any Shares or other securities of our Company or any interest therein ...; and (ii) until the expiry of the Second Six Month Period, in the event that it enters into any of the transactions specified in (i)(a), (b) or (c) ... it/he will take all reasonable steps to ensure that such a disposal will not create a disorderly or false market in the securities of our Company.",
+    "last_restricted_day": "2027-09-21"
+   }
+  ]
+ },
+ "9856.HK": {
+  "listing_date": "2026-09-22",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "Cornerstone Investors under the Cornerstone Investment Agreements (aggregate US$340 million / HK$2,665.8 million, 80,876,700 Offer Shares), including Primavera Investment Fund and China Securities (International) Investment Company Limited (CSC OTC Swap); full list in the 'Cornerstone Investors' section (pp.271-272 printed / p.280 PDF)",
+    "term": "six calendar months from (and inclusive of) the Listing Date; inclusive start anchor means the six-month anniversary itself is the first free day (consistent with repo convention in e.g. 9630.json) Wording identical to the standard 'six months from (and inclusive of) the Listing Date' cornerstone clause. Exception permits transfers to wholly-owned subsidiaries bound by the same obligations.",
+    "first_free_day": "2027-03-22",
+    "review": "reviewed",
+    "source_page": 294,
+    "source_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-21"
+   },
+   {
+    "category": "Controlling_Shareholder_6M_Disposal",
+    "holder": "Controlling Shareholders: Hisense Group Holding (海信集团控股股份有限公司) and CKL (its wholly owned subsidiary)",
+    "term": "Rule 10.07(1)(i): period commencing on the prospectus disclosure date and ending ON the date which is six months from the Listing Date (2027-03-22); the stated end date is inclusive/last restricted day, so first_free_day = anniversary + 1 (repo convention per reviewed 0470.HK entry) Standard Rule 10.07(1) undertaking; start date is the prospectus disclosure date (pre-listing), but the six-month end anchor is the Listing Date, so the first free day equals the six-month anniversary. No Chapter 18C/18A/19C replacement applies (main-board issuer).",
+    "first_free_day": "2027-03-23",
+    "review": "reviewed",
+    "source_page": 298,
+    "source_quote": "Pursuant to Rule 10.07(1) of the Listing Rules, each of our Controlling Shareholders has undertaken to the Stock Exchange and to us that, except in compliance with the requirements of the Listing Rules, it will not and will procure that the relevant registered holder(s) will not, either directly or indirectly: (i) the period commencing on the date by reference to which disclosure of its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities of our Company in respect of which it is shown by this prospectus to be the beneficial owner",
+    "last_restricted_day": "2027-03-22"
+   },
+   {
+    "category": "Controlling_Shareholder_12M_Control",
+    "holder": "Controlling Shareholders: Hisense Group Holding and CKL",
+    "term": "Rule 10.07(1)(ii): Second Six-month Period = six months from expiry of the First Six-month Period, i.e. ends 12 months from Listing Date; disposal restricted if it would cause the holder to cease to be a controlling shareholder (consistent with repo convention in e.g. 0470.json) Control-maintenance (not full disposal) restriction in months 7-12. Additionally, pursuant to Note 3 to Rule 10.07(2) (same page 298), the Controlling Shareholders undertake for 12 months from the prospectus disclosure date to notify the Company of pledges/charges to authorized institutions and of pledgee indications of disposal. Separately, all existing Shareholders (including the Controlling Shareholders) gave a 12-month Lock-up Undertaking (pp.299-300: 'commencing on the Listing Date and ending on, and including, the date that is twelve months from the Listing Date'); per p.300, Hisense Group Holding, CKL, Bolangde and Talents Holdings lock 100% of their Shares for the entire 12-month Lock-up Period, while TransLight, Global Optical, Archcom LLC and Xiamen Entities have staged release (100% months 1-6; 85% month 7; 50% months 8-9; 20% from month 10). Pre-IPO Investors have a separate 6-month lock-up with staged release up to 12 months (p.124).",
+    "first_free_day": "2027-09-22",
+    "review": "reviewed",
+    "source_page": 298,
+    "source_quote": "(ii) in the period of six months commencing on the date on which the period referred to in paragraph (i) above expires, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities referred to in paragraph (i) above if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, it would cease to be a controlling shareholder (as defined in the Listing Rules) of us.",
+    "last_restricted_day": "2027-09-21"
+   }
+  ]
+ },
+ "6731.HK": {
+  "listing_date": "2026-09-29",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "HK Technology Innovation (Hong Kong Technology Innovation Pioneer One Investment Limited, 香港科創領航壹號投資有限公司) and JSC International (for and on behalf of Shenghai SP); total subscription HK$472,002,500 / 21,771,900 Offer Shares (page 253)",
+    "term": "Inclusive endpoint analysis: 'six months from (and inclusive of) the Listing Date' makes the Listing Date itself day one of the restriction (start inclusive); the six-month period runs to the eve of the anniversary, so the six-month anniversary 2027-03-29 is the first free day, consistent with the repo convention used for other 18C issuers (e.g. 9971). Standard 6-month cornerstone lockup under 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' (PDF page 254, printed page 246). Only exception is transfers to wholly-owned subsidiaries bound by the same obligations. Only two cornerstone investors (page 253 table). Shenghai SP is a close associate of existing Shareholders / core connected persons and required waivers from Rules 9.09(b) and 10.04 (page 65).",
+    "first_free_day": "2027-03-29",
+    "review": "reviewed",
+    "source_page": 254,
+    "source_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for transfers to any of its wholly-owned subsidiaries which will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-28"
+   },
+   {
+    "category": "Controlling_Shareholder_12M_Control",
+    "holder": "Controlling Shareholders group: Mr. Zhang (Chairman, executive Director, chief executive officer), Worang Zhonghe, Worang Zhongchuang, Guyuan Investment, Zhongchuang No. 1, Zhongchuang No. 2, Zhongchuang No. 3 and Juwuxian (page 27)",
+    "term": "Inclusive/exclusive endpoint analysis: period commences on the date by reference to which disclosure of shareholdings is made in the prospectus (start inclusive, pre-listing) and ends on 'the date which is 12 months from the Listing Date' (2027-09-29) treated as the period boundary, so the last restricted day is 2027-09-28 and the first free day is the 12-month anniversary 2027-09-29, consistent with the repo convention for other 18C issuers (e.g. 9971). 18C combined undertaking replacing the 10.07 6m/12m split - absolute 12-month disposal restriction, not merely a control-retention requirement. Exceptions: Rule 18C.15 disposals and bona fide commercial-loan pledges to authorized institutions; a separate pledge/charge notification undertaking runs for the same 12-month period (or earlier per Note 2 of Rule 18C.23). Note an internal inconsistency in the prospectus: pages 122 and 247 cite 'Rules 10.07 and 18C.13' for the same undertaking while page 275 (Underwriting) cites 'Rules 10.07 and 18C.14(1)'. Additionally, under PRC Company Law all pre-IPO Shares (including Pre-IPO Investors) are locked up for 12 months from the Listing Date (page 122) - a statutory lockup on top of the Listing Rule undertakings.",
+    "first_free_day": "2027-09-29",
+    "review": "reviewed",
+    "source_page": 275,
+    "source_quote": "Pursuant to Rules 10.07 and 18C.14(1) of the Listing Rules, our Controlling Shareholders have undertaken to the Stock Exchange and our Company, that except pursuant to the Global Offering, or the Over-allotment Option, they will not, and will procure that the relevant registered holder(s) (if any) will not in the period commencing on the date by reference to which disclosure of their respective shareholdings in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of any H Shares in respect of which our Controlling Shareholders is shown in this prospectus to be the beneficial owners, save as pursuant to (a) disposal of any interest in the circumstances provided under Rule 18C.15 of the Listing Rules; and (b) a charge or a pledge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan.",
+    "last_restricted_day": "2027-09-28"
+   }
+  ]
+ },
+ "9607.HK": {
+  "listing_date": "2026-09-29",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "CNCB Investment (CNCB (Hong Kong) Investment Limited), Full Truck (Full Truck Alliance Co. Ltd.), Golden Valley Master (Golden Valley Value Select Master Fund), Goldshore Company Limited, Happy Wisdom Limited, Prinx Chengshan (Hong Kong) Tire Limited, Yang Quanhai, Zhou Bo (per the Cornerstone Placing table, p200)",
+    "term": "six months from (and inclusive of) the Listing Date (duration wording with inclusive start); restricted period frees up on the six-month anniversary of the Listing Date Restriction also covers change of control of the Cornerstone Investor (Takeovers Code) and same-economic-effect transactions — slightly broader than a pure Offer Share disposal ban. No over-allotment option in the International Offering (p199), so no delayed-delivery carve-out discussed.",
+    "first_free_day": "2027-03-29",
+    "review": "reviewed",
+    "source_page": 203,
+    "source_quote": "RESTRICTIONS ON THE CORNERSTONE INVESTORS Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date, (i) dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares, including any security that is convertible, exchangeable, exercisable or represents a right to receive such securities; (ii) allow itself to undergo a change of control (as defined in the Takeovers Code); or (iii) enter into any transactions directly or indirectly with the same economic effect as the aforesaid transaction.",
+    "last_restricted_day": "2027-03-28"
+   },
+   {
+    "category": "Controlling_Shareholder_6M_Disposal",
+    "holder": "Controlling Shareholders: Ms. Zhang Ning (張寧), Red Avenue Investment and Virgin Holdings, individually and as a group of persons",
+    "term": "six calendar months from the Listing Date ('ending on the date which is six months from the Listing Date'); restricted period commences on the prospectus shareholding-disclosure date and includes the six-month anniversary itself (anniversary-inclusive); first free day = 2027-03-30 Parallel undertaking to the Hong Kong Underwriters on pages 277-278: during the First Six-Month Period the Controlling Shareholders will not sell/encumber the Relevant Shares (including same-economic-effect transactions and depositary receipts), subject to a carve-out for pledges/charges in favour of authorised institutions for bona fide commercial loans with notification obligations. The Company itself has a Rule 10.08 six-month no-new-issues undertaking (p275) and a six-month no-disorderly-market undertaking to underwriters (p276-277).",
+    "first_free_day": "2027-03-30",
+    "review": "reviewed",
+    "source_page": 275,
+    "source_quote": "Pursuant to Rule 10.07(1) of the Listing Rules, each of our Controlling Shareholders has undertaken to us and the Stock Exchange that she/it will not and will procure that the relevant registered holder(s) will not (unless otherwise in compliance with the applicable requirements of the Listing Rules): (i) in the period commencing on the date by reference to which disclosure of her/its shareholding in our Company is made in this prospectus and ending on the date which is six months from the Listing Date (the “First Six-month Period”), dispose of, nor enter into any agreement to dispose of, or otherwise create any options, rights, interests or encumbrances in respect of, any of those Shares in respect of which she/it is shown in this prospectus to be the beneficial owner(s);",
+    "last_restricted_day": "2027-03-29"
+   },
+   {
+    "category": "Controlling_Shareholder_12M_Control",
+    "holder": "Controlling Shareholders: Ms. Zhang Ning (張寧), Red Avenue Investment and Virgin Holdings, individually and as a group of persons",
+    "term": "Rule 10.07(1)(b) second six-month period: 'six months from the expiry of the First Six-month Period', i.e. 12 calendar months from the Listing Date; applies only to disposals that would cause the holder to cease to be a controlling shareholder (control-maintenance restriction); restricted period frees up on the 12-month anniversary of the Listing Date Quote begins on page 275 (item (ii) of the Rule 10.07(1) undertaking) and continues onto page 276. In addition, pursuant to Note 3 to Rule 10.07(2) (p276), the Controlling Shareholders jointly and severally undertook, within the period commencing on the prospectus disclosure date and ending on the date which is 12 months from the Listing Date, to notify the Company of any pledge/charge of Shares in favour of authorised institutions and of any indications from the pledgee/chargee that pledged Shares will be disposed of. The parallel underwriters' undertaking (p277(c)) applies until the expiry of the Second Six-Month Period.",
+    "first_free_day": "2027-09-29",
+    "review": "reviewed",
+    "source_page": 275,
+    "source_quote": "(ii) in the period of six months from the expiry of the First Six-month Period (the “Second Six-month Period”), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the securities referred to in (i) above if, immediately following the disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances (save pursuant to a pledge or charge as security in favour of an authorised institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan), she/it would cease to be our controlling shareholder or a group of controlling shareholders (as defined in the Listing Rules) of our Company.",
+    "last_restricted_day": "2027-09-28"
+   }
+  ]
+ },
+ "3757.HK": {
+  "listing_date": "2026-09-29",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "Each of the 18 Cornerstone Investors: Temasek (via Taibai Investments Pte. Ltd.), Sunpeak Asset, IvyRock, E Fund, E Fund Management, E Fund HK, CIG, Winner Global Fund, Wind Sabre, Vestide Lumir, Arrowpoint, Sino Opulence Fund, Roofer Asset Management, Bloom Capital, Mr. Lai Pak Lam, Mr. Xia Shengli, Mr. Zhu Guodong, Mr. Zheng Xiaofeng",
+    "term": "Wording is 'during the period of six months from (and inclusive of) the Listing Date'. Inclusive start on 2026-09-29; a six-month period counted from and inclusive of that date runs through 2027-03-28 (the day before the six-month anniversary 2027-03-29). Endpoint is exclusive of the anniversary, so the last restricted day is 2027-03-28 and the first free day is 2027-03-29. Standard 6-month cornerstone lock-up. Exceptions limited to transfers to wholly-owned subsidiaries/affiliates bound by identical obligations. Defined term 'Lock-up Period'. Aggregate cornerstone subscription US$232.4 million / 4,179,950 H Shares at max Offer Price HK$436.00 (see page 259).",
+    "first_free_day": "2027-03-29",
+    "review": "reviewed",
+    "source_page": 264,
+    "source_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries or affiliates (as the case may be) who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-28"
+   },
+   {
+    "category": "Controlling_Shareholder_6M_Disposal",
+    "holder": "Single Largest Shareholder Group (Mr. Dai, Yuanjiesheng and Ningbo Kejun collectively), plus any other registered holder(s) whom they must procure compliance from",
+    "term": "Wording is 'in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this prospectus and ending on the date which is six months from the Listing Date'. The end date 'six months from the Listing Date' is 2027-03-29 and is the stated end of the restricted period (inclusive endpoint), so the last restricted day is 2027-03-29 and the first free day is 2027-03-30. Note the start date is the prospectus shareholding-disclosure date (pre-listing), earlier than the Listing Date. Non-standard in two respects: (1) holder is the 'Single Largest Shareholder Group' (Mr. Dai, Yuanjiesheng, Ningbo Kejun) rather than a defined Listing Rules 'Controlling Shareholder' — this is the standard Rule 10.07(2) formulation for PRC/H-share issuers with no single controlling shareholder; (2) the restriction period commences on the prospectus shareholding-disclosure date, not the Listing Date, making the restriction window longer than a plain 6-month post-listing lock. Exception: disposals pursuant to the Global Offering, or with prior written Stock Exchange consent / in compliance with Listing Rules requirements. End date (2027-03-29 inclusive) is one day later than the cornerstone first free day (2027-03-29) — the 'ending on the date which is six months from' vs 'six months from (and inclusive of)' drafting difference.",
+    "first_free_day": "2027-03-30",
+    "review": "reviewed",
+    "source_page": 273,
+    "source_quote": "Pursuant to Rule 10.07 of the Listing Rules, the Single Largest Shareholder Group has undertaken to us and to the Stock Exchange that, except pursuant to the Global Offering, each of the members of the Single Largest Shareholder Group will not, and shall procure that any other registered holder(s) (if any) will not, without the prior written consent of the Stock Exchange or unless otherwise in compliance with applicable requirements of the Listing Rules, in the period commencing on the date by reference to which disclosure of his/its shareholding is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, or enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of those shares or securities of the Company in respect of which he/it is shown by this prospectus to be the beneficial owner (as defined in the Listing Rules).",
+    "last_restricted_day": "2027-03-29"
+   }
+  ]
+ },
+ "3228.HK": {
+  "listing_date": "2026-09-29",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "The Cornerstone Investors under the Cornerstone Investment Agreements (incl. CPE Redwood Investment Limited, VERTEXVEST HOLDING PTE. LTD., Hong Kong Mason Electronics Co., Limited, Cambridge Industries Group Telecommunication Limited, CloudAlpha Capital Management Limited, E Fund Management Co., Ltd., E Fund Management (Hong Kong) Co., Ltd., Bosera Asset Management (International) Co., Limited, Seven Grand Managers, LLC, 3W Fund Management Limited, Tianhong Asset Management Co., Ltd., Ninety One Asia Pte. Limited, JPMorgan Asset Management (Asia Pacific) Limited, Baring Asset Management (Asia) Limited, Kingboard Investments Limited); aggregate subscription ~34,788,400 Offer Shares (~47.69% of the Global Offering, ~3.24% of total issued share capital at max Offer Price HK$69.88)",
+    "term": "Period is 'six months following the Listing Date (both days inclusive)'. Taking the Listing Date (2026-09-29) as the inclusive start and a six-month duration with both endpoints inclusive, the window is [2026-09-29, 2027-03-28]; the six-month anniversary 2027-03-29 is the first unrestricted day. Exception: transfers to wholly-owned subsidiaries bound by identical lockup obligations (does not shorten the restricted span). Standard 6-month cornerstone lockup; no Chapter 18C/18A/19C replacement clauses apply (issuer is a Main Board H-share company under Rule 19A, A+H dual listing). Consent carve-out exists (Company/Joint Sponsors/Sponsor-Overall Coordinators prior written consent) plus wholly-owned-subscriber transfer exception. Closing conditions on p.208; cornerstone investor roster and agreements dated 16-17 Sep 2026 at pp.203-205 and pp.411-413.",
+    "first_free_day": "2027-03-29",
+    "review": "reviewed",
+    "source_page": 208,
+    "source_quote": "Each of the Cornerstone Investors has agreed that without the prior written consent of our Company, the Joint Sponsors and the Sponsor-Overall Coordinators, it will not, whether directly or indirectly, at any time during the period of six months following the Listing Date (both days inclusive) (the \"Lock-up Period\"), dispose of, in any way, any of the Offer Shares it has purchased, pursuant to the respective Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of the Cornerstone Investors, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-28"
+   },
+   {
+    "category": "Controlling_Shareholder_6M_Disposal",
+    "holder": "Controlling Shareholders (Controlling Shareholders Group): Jinghong Yongtai, Wise Able Investment, Yizhao Investment, Mr. Liu Shaobai, Ms. Huang Xiaofen, Ms. Cheuk Kwan and Mr. Liu Yu (aggregate ~56.01% pre-Global Offering; ~52.21% voting rights immediately post-Global Offering), and the registered holder(s) of the Shares which they beneficially own",
+    "term": "Start anchored to the date of the prospectus (prospectus dated 21 September 2026, per accountants'/reporting accountants' letters at pp.280, 360, 368, 382). End anchored to 'the date which is six months from the Listing Date' = 2027-03-29, and disposal on the ending date is restricted ('ending on'), so the endpoint is inclusive. Window: [2026-09-21, 2027-03-29]. Standard Rule 10.07(1)(a) undertaking, no 18C/18A/19C replacement. Carve-out: disposals 'pursuant to the Global Offering'. Supplemental Note 3 to Rule 10.07(2) obligations (pledge/charge notification to the Company and disclosure of chargee disposal indications) run during both six-month periods (p.260). Separately, Rule 10.08 company undertaking (no further share/securities issue for 6 months from Listing Date) also at p.260.",
+    "first_free_day": "2027-03-30",
+    "review": "reviewed",
+    "source_page": 260,
+    "source_quote": "In accordance with Rule 10.07(1) of the Listing Rules, each of the Controlling Shareholders has undertaken to us and the Stock Exchange that, except pursuant to the Global Offering, it/he/she shall not, and shall procure that the registered holder(s) of the Shares shall not: (a) in the period commencing on the date of the prospectus and ending on the date which is six months from the Listing Date (the \"First Six-Month Period\"), dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares or securities of the Company in respect of which it/he/she is shown in the prospectus to be the beneficial owners;",
+    "last_restricted_day": "2027-03-29"
+   },
+   {
+    "category": "Controlling_Shareholder_12M_Control",
+    "holder": "Same Controlling Shareholders (Controlling Shareholders Group): Jinghong Yongtai, Wise Able Investment, Yizhao Investment, Mr. Liu Shaobai, Ms. Huang Xiaofen, Ms. Cheuk Kwan and Mr. Liu Yu, and the registered holder(s) of the Shares which they beneficially own",
+    "term": "Second Six-Month Period is a 'period of six months commencing on the date on which the First Six-Month Period expires'. The FSP ends (expires) on 2027-03-29, so the SSP commences 2027-03-29; a six-month duration with both endpoints inclusive runs to 2027-09-28. Conditional restriction: applies only to disposals that would cause the holder to cease to be a Controlling Shareholder. Window: [2027-03-29, 2027-09-28]; the 12-month anniversary 2027-09-29 is the first day on which even a loss-of-control disposal is unrestricted. Standard Rule 10.07(1)(b) loss-of-control condition; NOT a blanket 12-month disposal ban — non-control-losing disposals become possible from 2027-03-30. Alternative literal reading (SSP commencing the day after FSP expiry, i.e. [2027-03-30, 2027-09-29] inclusive) would push computed_first_free_day to 2027-09-30; we adopt the expiry-date commencement consistent with the prospectus wording. No 18C/18A/19C replacement. Note 3 to Rule 10.07(2) pledge-notice obligations also apply during this period (p.260).",
+    "first_free_day": "2027-09-29",
+    "review": "reviewed",
+    "source_page": 260,
+    "source_quote": "(b) in the period of six months commencing on the date on which the First Six-month Period expires (the \"Second Six-Month Period\"), dispose of, nor enter into any agreement to dispose of, or otherwise create any options, rights, interests or encumbrances in respect of, any of the Shares or securities referred to in (a) above if, immediately following such disposal or upon the exercise or enforcement of such options, rights, interests or encumbrances, it/he/she would cease to be a Controlling Shareholder of our Company.",
+    "last_restricted_day": "2027-09-28"
+   }
+  ]
+ },
+ "6802.HK": {
+  "listing_date": "2026-09-30",
+  "events": [
+   {
+    "category": "Cornerstone_Lockup",
+    "holder": "Golden Link (BVI, wholly owned by BYD (H.K.) Co., Limited, a subsidiary of BYD Company Limited); Taiwan ZMAX (wholly-owned subsidiary of ZMAX Optics, SSE 688307) — two Cornerstone Investors subscribing 1,869,200 Offer Shares in aggregate at HK$58.85",
+    "term": "Wording is 'six months from (and inclusive of) the Listing Date': restricted period includes the Listing Date and runs six calendar months, so it is inclusive of the Listing Date and exclusive of the six-month anniversary. Listing Date 2026-09-30 + 6 months = 2027-03-30, hence last restricted day 2027-03-29 and first free day 2027-03-30. Exception: transfers to wholly-owned subsidiaries bound by the same Lock-up Period. Standard 6-month cornerstone lock-up under the Cornerstone Investment Agreements (restrictions section headed 'RESTRICTIONS ON THE CORNERSTONE INVESTORS'). Nothing non-standard; delayed delivery of Offer Shares is possible under the agreements but payment is settled in full before Listing, so the lock-up clock still runs from the Listing Date.",
+    "first_free_day": "2027-03-30",
+    "review": "reviewed",
+    "source_page": 227,
+    "source_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for certain limited circumstances, such as transfers to any of its wholly-owned subsidiaries who will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "last_restricted_day": "2027-03-29"
+   },
+   {
+    "category": "Controlling_Shareholder_6M_Disposal",
+    "holder": "Single Largest Group of Shareholders — Mr. Wang (chairman, executive Director and co-general manager), Mr. Zhou (executive Director and general manager), Mr. Liu Yi (劉屹), Camsense Investment, Xinle Management and Camsense Era (concert-party group holding ~27.45% post-Global Offering)",
+    "term": "Wording is 'in the period commencing on the date by reference to which disclosure of its/his shareholdings ... is made in this prospectus and ending on the date which is six months from the Listing Date'. Unlike the cornerstone clause, the endpoint is phrased as 'ending on' the six-month anniversary, which on plain reading includes that date in the restricted period: six months from 2026-09-30 is 2027-03-30, so last restricted day = 2027-03-30 and first free day = 2027-03-31 (one day later than the cornerstone block, which is exclusive of the anniversary). Commencement is the prospectus shareholding-disclosure date, i.e. earlier than the Listing Date, but the binding endpoint for first-free-day computation is the six-month anniversary. Non-standard holder: the issuer has NO controlling shareholders under the Listing Rules — Mr. Wang, Mr. Zhou, Mr. Liu Yi, Camsense Investment, Xinle Management and Camsense Era (concert parties, ~31.20% pre-offering / ~27.45% post-offering) are expressly 'not ... regarded as our controlling shareholders' and are only the 'Single Largest Group of Shareholders' (page 214). The Rule 10.07 disposal restriction is nonetheless given by this group (voluntarily/extended undertaking). A parallel undertaking to the Hong Kong Underwriters covering the same First Six Month Period (same 6-month window, with pledge/charge carve-out for bona fide commercial loans to authorized institutions) is at page 291.",
+    "first_free_day": "2027-03-31",
+    "review": "reviewed",
+    "source_page": 289,
+    "source_quote": "Pursuant to Rule 10.07 of the Listing Rules, our Single Largest Group of Shareholders has irrevocably and unconditionally undertaken to us and to the Stock Exchange that except pursuant to the Global Offering, or the Over-allotment Option, they shall not and shall procure that the relevant registered Shareholder(s) controlled by them shall not, in the period commencing on the date by reference to which disclosure of its/his shareholdings in our Company is made in this prospectus and ending on the date which is six months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances (save as pursuant to a pledge or charge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan) in respect of, any of our securities that they are shown to beneficially own in this prospectus.",
+    "last_restricted_day": "2027-03-30"
+   }
+  ]
  }
 }

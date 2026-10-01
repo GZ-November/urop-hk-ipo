@@ -1,0 +1,37 @@
+{
+  "code": "6731.HK",
+  "listing_date": "2026-09-29",
+  "cornerstone": {
+    "exists": true,
+    "holders": "HK Technology Innovation (Hong Kong Technology Innovation Pioneer One Investment Limited, 香港科創領航壹號投資有限公司) and JSC International (for and on behalf of Shenghai SP); total subscription HK$472,002,500 / 21,771,900 Offer Shares (page 253)",
+    "quote_page": 254,
+    "full_quote": "Each of the Cornerstone Investors has agreed that it will not, whether directly or indirectly, at any time during the period of six months from (and inclusive of) the Listing Date (the “Lock-up Period”), dispose of, in any way, any of the Offer Shares or any interest in any company or entity holding such Offer Shares that they have purchased pursuant to the relevant Cornerstone Investment Agreement, save for transfers to any of its wholly-owned subsidiaries which will be bound by the same obligations of such Cornerstone Investor, including the Lock-up Period restriction.",
+    "reference_date": "2026-09-29",
+    "basis": "Inclusive endpoint analysis: 'six months from (and inclusive of) the Listing Date' makes the Listing Date itself day one of the restriction (start inclusive); the six-month period runs to the eve of the anniversary, so the six-month anniversary 2027-03-29 is the first free day, consistent with the repo convention used for other 18C issuers (e.g. 9971).",
+    "computed_first_free_day": "2027-03-29",
+    "computed_last_restricted_day": "2027-03-28",
+    "notes": "Standard 6-month cornerstone lockup under 'RESTRICTIONS ON THE CORNERSTONE INVESTORS' (PDF page 254, printed page 246). Only exception is transfers to wholly-owned subsidiaries bound by the same obligations. Only two cornerstone investors (page 253 table). Shenghai SP is a close associate of existing Shareholders / core connected persons and required waivers from Rules 9.09(b) and 10.04 (page 65)."
+  },
+  "controller_6m": {
+    "exists": false,
+    "holders": "",
+    "quote_page": 275,
+    "full_quote": "Pursuant to Rules 10.07 and 18C.14(1) of the Listing Rules, our Controlling Shareholders have undertaken to the Stock Exchange and our Company, that except pursuant to the Global Offering, or the Over-allotment Option, they will not, and will procure that the relevant registered holder(s) (if any) will not in the period commencing on the date by reference to which disclosure of their respective shareholdings in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of any H Shares in respect of which our Controlling Shareholders is shown in this prospectus to be the beneficial owners, save as pursuant to (a) disposal of any interest in the circumstances provided under Rule 18C.15 of the Listing Rules; and (b) a charge or a pledge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan.",
+    "reference_date": "",
+    "basis": "",
+    "computed_first_free_day": "",
+    "computed_last_restricted_day": "",
+    "notes": "Chapter 18C Pathfinder issuer. The Controlling Shareholders gave a SINGLE combined undertaking under Rule 10.07 and Rule 18C.14(1) covering 12 months from the Listing Date (page 275), replacing the standard 10.07 6m-disposal/12m-control split; no separate six-month disposal undertaking exists. The combined undertaking is recorded in controller_12m and the 6m slot is exists=false. (Separate undertakings on pages 275-276: Key Persons 12 months under Rule 18C.14(1); Pathfinder SIIs 6 months under Rule 18C.14(2) - these are not controlling-shareholder undertakings.)"
+  },
+  "controller_12m": {
+    "exists": true,
+    "holders": "Controlling Shareholders group: Mr. Zhang (Chairman, executive Director, chief executive officer), Worang Zhonghe, Worang Zhongchuang, Guyuan Investment, Zhongchuang No. 1, Zhongchuang No. 2, Zhongchuang No. 3 and Juwuxian (page 27)",
+    "quote_page": 275,
+    "full_quote": "Pursuant to Rules 10.07 and 18C.14(1) of the Listing Rules, our Controlling Shareholders have undertaken to the Stock Exchange and our Company, that except pursuant to the Global Offering, or the Over-allotment Option, they will not, and will procure that the relevant registered holder(s) (if any) will not in the period commencing on the date by reference to which disclosure of their respective shareholdings in our Company is made in this prospectus and ending on the date which is 12 months from the Listing Date, dispose of, nor enter into any agreement to dispose of or otherwise create any options, rights, interests or encumbrances in respect of any H Shares in respect of which our Controlling Shareholders is shown in this prospectus to be the beneficial owners, save as pursuant to (a) disposal of any interest in the circumstances provided under Rule 18C.15 of the Listing Rules; and (b) a charge or a pledge as security in favor of an authorized institution (as defined in the Banking Ordinance (Chapter 155 of the Laws of Hong Kong)) for a bona fide commercial loan.",
+    "reference_date": "2026-09-29",
+    "basis": "Inclusive/exclusive endpoint analysis: period commences on the date by reference to which disclosure of shareholdings is made in the prospectus (start inclusive, pre-listing) and ends on 'the date which is 12 months from the Listing Date' (2027-09-29) treated as the period boundary, so the last restricted day is 2027-09-28 and the first free day is the 12-month anniversary 2027-09-29, consistent with the repo convention for other 18C issuers (e.g. 9971).",
+    "computed_first_free_day": "2027-09-29",
+    "computed_last_restricted_day": "2027-09-28",
+    "notes": "18C combined undertaking replacing the 10.07 6m/12m split - absolute 12-month disposal restriction, not merely a control-retention requirement. Exceptions: Rule 18C.15 disposals and bona fide commercial-loan pledges to authorized institutions; a separate pledge/charge notification undertaking runs for the same 12-month period (or earlier per Note 2 of Rule 18C.23). Note an internal inconsistency in the prospectus: pages 122 and 247 cite 'Rules 10.07 and 18C.13' for the same undertaking while page 275 (Underwriting) cites 'Rules 10.07 and 18C.14(1)'. Additionally, under PRC Company Law all pre-IPO Shares (including Pre-IPO Investors) are locked up for 12 months from the Listing Date (page 122) - a statutory lockup on top of the Listing Rule undertakings."
+  }
+}
