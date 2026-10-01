@@ -1,0 +1,8 @@
+Grouping,Group,Backed N,Non-backed N,Unknown N,Both groups observed
+route,18A biotech,11,0,0,False
+route,18C specialist tech,19,0,0,False
+route,A+H (19A),15,14,7,True
+route,Conventional,42,5,0,True
+coarse_sector,Health,18,0,0,False
+coarse_sector,Other,27,13,6,True
+coarse_sector,Technology,42,6,1,True

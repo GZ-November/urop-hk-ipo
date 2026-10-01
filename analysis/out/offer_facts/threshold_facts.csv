@@ -1,0 +1,11 @@
+Metric,Unit,Below threshold,Count,Valid N,Share (%),Missing N
+Firm age at listing,Years,10.0,29,113,25.663716814159294,0
+Firm age at listing,Years,20.0,84,113,74.33628318584071,0
+Unrestricted public ownership at listing,%,5.0,25,112,22.321428571428573,1
+Unrestricted public ownership at listing,%,10.0,80,112,71.42857142857143,1
+Final retail shares/valid applied shares,%,0.1,53,113,46.902654867256636,0
+Final retail shares/valid applied shares,%,1.0,92,113,81.41592920353983,0
+Pre-IPO holding duration,Years,5.0,24,94,25.53191489361702,19
+Top-five customer revenue share,%,50.0,53,99,53.535353535353536,14
+Listing expenses/base offering proceeds,%,10.0,82,111,73.87387387387388,2
+Controller economic interest,%,50.0,90,111,81.08108108108108,2

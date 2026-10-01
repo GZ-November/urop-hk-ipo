@@ -84,7 +84,9 @@ class LockupWindowCoverageTests(unittest.TestCase):
 
     def test_future_unlock_keeps_existing_immature_status(self):
         engine = make_engine()
-        future = dt.date.today() + dt.timedelta(days=1)
+        # Use an explicit cutoff: host-local "tomorrow" can already be today in Hong Kong.
+        engine.as_of = FIRST_DATE + dt.timedelta(days=85)
+        future = engine.as_of + dt.timedelta(days=1)
         self.assertEqual(engine.calculate_event_window_metrics(CODE, future),
                          (None, None, None, None, "IMMATURE_WINDOW"))
 

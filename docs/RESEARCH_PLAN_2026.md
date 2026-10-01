@@ -4,7 +4,11 @@
 
 ## 样本与研究边界
 
-当前描述统计与回归只使用 2026 年上市的港股主板普通 IPO：Q1 38、Q2 45、Q3 23，共 106 家。以实际上市日期筛选，验证 cohort 一致性与发行人唯一性。历史 cohort 继续保存在采集层；跨年 A+H 参考表有 41 家，2026 A+H 研究使用独立标记识别的 34 家（互斥路径分组为 33 家）。
+当前总体样本为截至 2026-09-30 上市的港股主板普通 IPO：Q1 38、Q2 45、Q3 30，共 113 家。以实际上市日期筛选，验证 cohort 一致性与发行人唯一性；每项回归仍报告自身有效N。历史 cohort 继续保存在采集层；当前master的2026 A+H独立标记为38家，互斥路径分组为36家。跨年参考层不自动扩大当前研究样本，来源复核记录中的106家保留为历史复核范围。
+
+新增[发行与公司事实探索](../analysis/out/offer_facts/facts.md)覆盖202个注册字段的用途和缺失，生成60项发行/公司/财务/需求/分配/费用/时间指标；只用现有导出、不刷新行情、不纳入首日或上市后表现。
+
+2026-10-01：事实报告及表格改为英文；[原论文方法综述](IPO_LITERATURE_METHODS_2026.md)对应[发行经济学设计](OFFERING_ECONOMICS_DESIGN_2026.md)和[新英文结果](../analysis/out/offering_economics/analysis.md)。已执行费用弹性、佣金率、基石fractional logit、申请人数、需求分母分解及VC/PE共同支持诊断，保留探索性关联定位和实际模型N。
 
 2026 样本内没有 FINI 或 2025 发售机制改革的前后变异，不能据此实施政策前后 DiD/RD。4–6 月窗口由样本发现，应作为探索性时间控制并报告搜索校正；不得解释为外生处理。
 
@@ -14,7 +18,7 @@
 |---|---|---|
 | 首日抑价、机制与需求 | [Module A](../analysis/out/module_a/)、[Module B](../analysis/out/module_b/)、[机制探索](../analysis/out/extended/mechanism.md) | 固定主要因变量和假说；检查机制与上市路径的重叠、自选择及共同样本 |
 | 基石、自由流通与供给事件 | [财富分配](../analysis/out/academic/money_left.md)、[事件研究](../analysis/out/academic/events.md) | 逐项复核口径；解禁需完整窗口，随日期成熟补齐 |
-| A+H 价格锚 | 34 家已采集；[设计说明](AH_ANCHOR_2026.md)、[结果](../analysis/out/ah_anchor/ah_anchor.md) | 固定事件日期与汇率时点，报告 horizon 匹配样本、平衡样本和市场模型敏感性 |
+| A+H 价格锚 | 当前master独立标记38家；[设计说明](AH_ANCHOR_2026.md)、[结果](../analysis/out/ah_anchor/ah_anchor.md) | 参考价格有效N按结果列示；固定事件日期与汇率时点，报告 horizon 匹配样本、平衡样本和市场模型敏感性 |
 | 孖展及零售需求 | 25 家 / 93 条来源快照，15 家有截止日快照；[结果与覆盖](../analysis/out/margin/margin.md) | 补充有日期、链接、调查范围的来源；稀疏快照不能识别加速、个体杠杆或羊群因果效应 |
 | Pre-IPO、承销费与保荐人 | [附加分析](../analysis/out/academic/)、[收益分解](../analysis/out/ir_decomposition/) | 检查缺失、组别大小及实际披露口径，保留探索性定位 |
 

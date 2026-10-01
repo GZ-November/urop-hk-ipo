@@ -1,15 +1,18 @@
-# 文档索引
+# Research Documentation
 
-继续研究从 [RESEARCH_START.md](RESEARCH_START.md) 开始。根目录 [README](../README.md) 介绍安装和流水线；本目录管理研究设计、证据说明与历史记录。
+Start with the [research guide](RESEARCH_START.md). The root [README](../README.md) explains installation, sample scope and reproduction.
 
-| 类别 | 入口 | 用途 |
+| Area | Entry points | Purpose |
 |---|---|---|
-| 当前研究 | [研究入口](RESEARCH_START.md)、[2026 计划](RESEARCH_PLAN_2026.md) | 新 skill 使用、复现顺序、样本与待办 |
-| 新研究设计 | [学术设计与 brainstorm](RESEARCH_DESIGN_2026.md)、[新结果](../analysis/out/research_frontier/research.md) | 探索性零售申请收益、基石敏感性及16项选题 |
-| 当前证据说明 | [A+H](AH_ANCHOR_2026.md)、[2026-09-30 集成复核](AGY_INTEGRATION_2026-09-30.md) | 价格修正、来源覆盖和解释限制 |
-| 当前生成结果 | [分析索引](../analysis/README.md)、[输出目录](../analysis/out/) | 表格、图、样本筛选、覆盖和推断 |
-| 理论题库 | [研究 ideas](RESEARCH_IDEAS.md) | 背景及候选问题；须按当前计划筛选 |
-| 维护 | [仓库组织规则](REPOSITORY_GUIDE.md)、[贡献指南](../CONTRIBUTING.md)、[架构](../pipeline/SYSTEM_MANAGEMENT.md) | 工件归属、分支与复现约定 |
-| 数据口径 | [领域术语](../CONTEXT.md)、[registry](../pipeline/registry/HKIPO_Variable_Registry.yaml)、[ADR](adr/0001-variable-definitions-authoring.md) | 当前字段定义与定义变更 |
-| 采集规范 | [采集文档索引](../pipeline/docs/README.md) | 原始手册与团队指引 |
-| 历史记录 | [归档索引](archive/README.md)、[早期代码复核](CODE_REVIEW_2026-09-30.md) | 阶段性发现；不作为当前数值来源 |
+| Current sample and workflow | [Research guide](RESEARCH_START.md), [2026 research plan](RESEARCH_PLAN_2026.md) | The 113-IPO September snapshot, inputs, commands and research boundaries |
+| Offering facts | [English report](../analysis/out/offer_facts/facts.md) | Offering size, fundamentals, backing, demand, allocation, fees and timetable |
+| Literature and advanced models | [Literature review](IPO_LITERATURE_METHODS_2026.md), [offering design](OFFERING_ECONOMICS_DESIGN_2026.md), [English results](../analysis/out/offering_economics/analysis.md) | Cost elasticity, commissions, fractional cornerstone shares, retail demand and comparison support |
+| All generated analyses | [Analysis index](../analysis/README.md), [output directories](../analysis/out/) | Model implementations, tables, figures, samples and diagnostics |
+| Existing research extensions | [Frontier design](RESEARCH_DESIGN_2026.md), [frontier results](../analysis/out/research_frontier/research.md), [ideas](RESEARCH_IDEAS.md) | Earlier exploratory designs and candidate questions; use their recorded sample/date scope |
+| Source evidence | [A+H methods](AH_ANCHOR_2026.md), [September source review](AGY_INTEGRATION_2026-09-30.md), [readiness review](../pipeline/reports/research_readiness/README.md) | Dated evidence coverage, repairs and interpretation limits; historical counts are not the latest population size |
+| Definitions | [Domain model](../CONTEXT.md), [registry](../pipeline/registry/HKIPO_Variable_Registry.yaml), [definition ADR](adr/0001-variable-definitions-authoring.md) | Variable authoring, units and data contracts |
+| Maintenance | [Repository conventions](REPOSITORY_GUIDE.md), [contribution guide](../CONTRIBUTING.md), [architecture](../pipeline/SYSTEM_MANAGEMENT.md) | Artifact placement, checks and safe collection workflows |
+| Collection instructions | [Pipeline documentation](../pipeline/docs/README.md) | Original collection manuals and team instructions |
+| Historical write-ups | [Archive](archive/README.md), [dated code review](CODE_REVIEW_2026-09-30.md) | Superseded reports retained for traceability |
+
+Current numbers should come from generated outputs and their manifests. Older narratives describe the source state and sample available when written; do not treat them as current evidence or overwrite them with new estimates.

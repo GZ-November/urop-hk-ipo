@@ -1,0 +1,17 @@
+{
+  "cutoff": "2026-09-30",
+  "n": 113,
+  "cohorts": {
+    "2026Q1": 38,
+    "2026Q2": 45,
+    "2026Q3": 30
+  },
+  "input": "pipeline/exports/HKIPO-MB-MASTER_clean.csv",
+  "sha256": "c2a2c7bfd91ee838735915cb0286710cac2e66ba2c7cec4c9e69552f51a221bd",
+  "registry_sha256": "5c186faec322c9be73c35f9378fa75882195d11d0949725408bf49236d35e983",
+  "source_semantic_audit": "not performed; existing export observations",
+  "numeric_metrics": 60,
+  "fields_inventoried": 202,
+  "consistency_flag_rows": 1,
+  "report_language": "English"
+}
