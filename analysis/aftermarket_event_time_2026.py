@@ -34,8 +34,9 @@ from scipy import stats
 from statsmodels.stats.multitest import multipletests
 
 import module_b_underpricing_regression as mb
+from research_inputs import ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
 from module_a_stylized_facts import (
-    AXIS, BLUE, INK, INK2, MUTED, ORANGE, ROOT, load_panel, new_fig, pct_axis, select_2026, style_axes, to_markdown,
+    AXIS, BLUE, INK, INK2, MUTED, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
 )
 
 OUT = ROOT / "analysis" / "out" / "event_time"

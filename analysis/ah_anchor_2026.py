@@ -31,7 +31,10 @@ from scipy import stats
 
 import academic_extensions_2026 as ac
 import extended_analysis_2026 as ext
-from module_a_stylized_facts import AXIS, BLUE, INK, INK2, MUTED, ORANGE, ROOT, load_panel, new_fig, pct_axis, select_2026, style_axes, to_markdown
+from research_inputs import prepare_academic, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
+from module_a_stylized_facts import (
+    AXIS, BLUE, INK, INK2, MUTED, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
+)
 
 OUT = ROOT / "analysis" / "out" / "ah_anchor"
 REFERENCE = ROOT / "pipeline" / "exports" / "HKIPO-2026-AH-reference.csv"
@@ -48,7 +51,7 @@ def load_series(path) -> pd.Series:
 
 def build_frame(y26: pd.DataFrame) -> pd.DataFrame:
     """One row per A+H issuer: extended-analysis variables plus the collected anchors."""
-    d = ac.build_frame(y26)
+    d = prepare_academic(y26)
     ref = pd.read_csv(REFERENCE)
     ref = ref.rename(columns={"h_code": "code"})
     out = d[d["ah"] == 1].merge(ref[["code", "a_symbol", "offer_vs_a_close", "offer_vs_a_pricing", "h_day1_close_vs_a", "a_date_close", "plausible"]], on="code", how="left", validate="one_to_one")

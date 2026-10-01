@@ -59,9 +59,9 @@ import statsmodels.api as sm
 from scipy import stats
 from statsmodels.stats.diagnostic import het_breuschpagan
 
+from research_inputs import C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026  # noqa: F401 — legacy C export
 from module_a_stylized_facts import (
-    BLUE, C, GRID, INK, INK2, MUTED, ORANGE, ROOT, SURFACE,
-    load_panel, new_fig, select_2026, style_axes, to_latex, to_markdown,
+    BLUE, GRID, INK, INK2, MUTED, ORANGE, SURFACE, new_fig, style_axes, to_latex, to_markdown,
 )
 
 OUT = ROOT / "analysis" / "out" / "module_b"
@@ -126,29 +126,11 @@ BASELINE = "M3"
 BLOCK_LABEL = {"uncertainty": "Uncertainty", "certification": "Certification", "market": "Market conditions", "time": "Time control"}
 
 
-# ------------------------------------------------------------------- data
+# Compatibility name for existing notebooks; no second implementation.
+from research_inputs import prepare_regression as prepare
 
-def prepare(y26: pd.DataFrame) -> pd.DataFrame:
-    """Build the regression frame from the 2026 panel rows."""
-    d = pd.DataFrame(index=y26.index)
-    d["code"] = y26["Stock Code"]
-    d["cohort"] = y26["cohort"]
-    d["month"] = y26["month"].astype("string").where(y26["month"].notna())
-    d["ir"] = y26["ir"]
-    d["y"] = np.log1p(y26["ir"].where(y26["ir"] > -1))
-    d["lage"] = np.log(y26[C["age"]].where(y26[C["age"]] > 0))
-    d["lproc"] = np.log(y26["base_proceeds"].where(y26["base_proceeds"] > 0) / 1e9)
-    d["ah"] = y26["ah_true"]
-    d["vc"] = y26[C["vc"]].where(y26[C["vc"]].isin([0, 1]))
-    d["tier1"] = (y26["sponsor_reputation_tier"] == 1).astype(float).where(y26["sponsor_reputation_tier"].isin([1, 2, 3]))
-    d["corner"] = y26[C["corner"]]
-    d["hsi"] = y26["HSI return over 20 trading days before prospectus (%)"]
-    d["n90"] = y26["HK ordinary IPO count in 90 calendar days before prospectus"]
-    d["lsub"] = np.log(y26[C["sub"]].where(y26[C["sub"]] > 0))
-    d["hot"] = (y26["listing_date"].dt.year.eq(2026) & y26["listing_date"].dt.month.between(4, 6)).astype(float).where(y26["listing_date"].notna())
-    d["q2"] = (y26["cohort"] == "2026Q2").astype(float)
-    d["q3"] = (y26["cohort"] == "2026Q3").astype(float)
-    return d
+
+# ------------------------------------------------------------------- data
 
 
 def design(d: pd.DataFrame, xs: list[str], y: str = "y") -> tuple[pd.Series, pd.DataFrame, pd.Series]:

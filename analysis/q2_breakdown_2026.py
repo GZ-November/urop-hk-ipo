@@ -29,6 +29,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 
 import module_a_stylized_facts as ma
+import research_inputs as inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "analysis" / "out" / "q2_breakdown"
@@ -54,7 +55,7 @@ IND = "Industry classification code"
 
 
 def prepare() -> pd.DataFrame:
-    df = ma.select_2026(ma.load_panel()).copy()
+    df = inputs.select_2026(inputs.load_panel()).copy()
     df["lir"] = np.log1p(df["ir"])
     code = df[IND].astype(int).astype(str).str.zfill(6)
     df["sector"] = code.str[:3].map(SECTORS)
@@ -150,8 +151,8 @@ def q2_ranked(df: pd.DataFrame) -> pd.DataFrame:
         "Issuer": g["name"],
         "Sector": g["sector"],
         "Route": g["route"],
-        "Pricing": g[ma.C["pricing"]],
-        "Public subscription (x)": g[ma.C["sub"]].map("{:,.0f}".format),
+        "Pricing": g[inputs.C["pricing"]],
+        "Public subscription (x)": g[inputs.C["sub"]].map("{:,.0f}".format),
         "IR": (100 * g["ir"]).map("{:.0f}%".format),
     })
     tab.index = range(1, len(tab) + 1)

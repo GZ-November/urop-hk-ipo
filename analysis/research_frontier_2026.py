@@ -16,9 +16,12 @@ import statsmodels.api as sm
 from statsmodels.stats.multitest import multipletests
 
 import academic_extensions_2026 as academic
-import extended_analysis_2026 as ext
 import module_b_underpricing_regression as mb
-from module_a_stylized_facts import C, ROOT, load_panel, select_2026, to_markdown
+import research_inputs
+from research_inputs import prepare_extended, C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
+from module_a_stylized_facts import (
+    to_markdown,
+)
 from research_helpers.ipo_metrics import initial_returns
 from research_helpers.regtable import regression_table
 
@@ -113,7 +116,7 @@ def retail_analysis(sample: pd.DataFrame) -> str:
 
 
 def cornerstone_analysis(sample: pd.DataFrame) -> str:
-    frame = ext.prepare(sample)
+    frame = prepare_extended(sample)
     frame['corner'] = frame.code.map(sample.set_index('Stock Code')[C['corner']])
     allocation = sample.set_index('Stock Code')['Final public offer shares'] / sample.set_index('Stock Code')['Public valid applied shares']
     # Quarantine allocation unit anomalies from new focal regressions too.
@@ -226,7 +229,8 @@ def main() -> None:
                 'inputs': {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
                            for p in (ROOT / 'pipeline/exports/HKIPO-MB-MASTER_clean.csv', ROOT / 'docs/RESEARCH_DESIGN_2026.md',
                                      ROOT / 'pipeline/reports/margin_review/market_source_manifest.json',
-                                     Path(__file__).resolve(), Path(academic.__file__).resolve())},
+                                     Path(__file__).resolve(), Path(academic.__file__).resolve(),
+                                     Path(research_inputs.__file__).resolve())},
                 'skill_helpers': json.loads((Path(__file__).parent / 'research_helpers/PROVENANCE.json').read_text())}
     (OUT / 'run_manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
     print('Research frontier written:', OUT)

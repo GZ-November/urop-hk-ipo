@@ -36,9 +36,15 @@ from statsmodels.stats.diagnostic import acorr_ljungbox
 from statsmodels.stats.multitest import multipletests
 
 import module_b_underpricing_regression as mb
+from research_inputs import C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026  # noqa: F401 — legacy C export
 from module_a_stylized_facts import (
-    AXIS, BLUE, C, INK, INK2, MUTED, ORANGE, ROOT, load_panel, new_fig, pct_axis, select_2026,
-    style_axes, to_markdown,
+    AXIS, BLUE, INK, INK2, MUTED, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
+)
+
+# Compatibility names for existing notebooks and helper callers.
+from research_inputs import (  # noqa: F401
+    EXTENDED_HORIZONS as HORIZONS, prepare_extended as prepare,
+    prior_mean_ir as prior_mean_ir, subscription_overlap as subscription_overlap,
 )
 
 OUT = ROOT / "analysis" / "out" / "extended"
@@ -49,55 +55,6 @@ QUANTILES = (0.10, 0.25, 0.50, 0.75, 0.90)
 MIN_WINDOW = 10
 CONTROLS = ["lage", "lproc", "ah", "vc"]
 M3 = mb.MODELS["M3"]
-
-HORIZONS = {
-    "Day 5": ("Day-5 BHR from Day-1 close (%)", "Day-5 wealth relative vs HSI"),
-    "Day 20": ("Day-20 BHR from Day-1 close (%)", "Day-20 wealth relative vs HSI"),
-    "3 months": ("3-month BHR from Day-1 close (%)", "3-month wealth relative vs HSI"),
-}
-
-
-# ------------------------------------------------------------------ data
-
-def prior_mean_ir(listing: pd.Series, ir: pd.Series, cutoff: pd.Series, days: int = 30, min_deals: int = 3) -> pd.Series:
-    """Mean IR of 2026 deals already listed in [cutoff - days, cutoff): information available at the cutoff.
-
-    A deal never counts itself or later listings, so the regressor has no look-ahead."""
-    out = []
-    for cut in cutoff:
-        window = (listing < cut) & (listing >= cut - pd.Timedelta(days=days))
-        out.append(ir[window].mean() if window.sum() >= min_deals else np.nan)
-    return pd.Series(out, index=cutoff.index)
-
-
-def subscription_overlap(start: pd.Series, end: pd.Series) -> pd.Series:
-    """Number of other deals whose subscription window overlaps this deal's window."""
-    return pd.Series([int(((start <= e) & (end >= s)).sum()) - 1 for s, e in zip(start, end)], index=start.index)
-
-
-def prepare(y26: pd.DataFrame) -> pd.DataFrame:
-    """Module B regression frame plus the extended-analysis variables, sorted by listing date."""
-    d = mb.prepare(y26)
-    d["ld"] = y26["listing_date"]
-    start = pd.to_datetime(y26["Subscription opening date"], errors="coerce")
-    end = pd.to_datetime(y26["Subscription closing date"], errors="coerce")
-    d["prior_ir"] = prior_mean_ir(d["ld"], d["ir"], start)
-    d["conc"] = subscription_overlap(start, end)
-    d["sameday"] = d.groupby("ld")["code"].transform("count") - 1
-    d["mech"] = y26["Offer mechanism"]
-    d["mechA"] = (d["mech"] == "Mechanism A").astype(float).where(d["mech"].notna())
-    d["r18a"] = (y26["route"] == "18A biotech").astype(float).where(y26["route"] != "Unknown")
-    d["r18c"] = (y26["route"] == "18C specialist tech").astype(float).where(y26["route"] != "Unknown")
-    d["fixed"] = (y26[C["pricing"]] == "Fixed price").astype(float)
-    d["lapp"] = np.log(y26["Public applicants"].where(y26["Public applicants"] > 0))
-    shares_value = y26["Public valid applied shares"] * y26[C["offer"]] / y26["Public applicants"]
-    d["lavg"] = np.log(shares_value.where(shares_value > 0))
-    d["stab"] = y26["Stabilization purchases occurred"]
-    d["greenshoe"] = y26["Greenshoe exercise rate (%)"]
-    for name, (bhr, wr) in HORIZONS.items():
-        d[f"bhr_{name}"] = y26[bhr]
-        d[f"wr_{name}"] = y26[wr]
-    return d.sort_values(["ld", "code"]).reset_index(drop=True)
 
 
 # ------------------------------------------------------------- estimation helpers
