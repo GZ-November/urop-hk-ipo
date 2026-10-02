@@ -4,9 +4,10 @@
 
 | 类别 | 入口 | 用途 |
 |---|---|---|
-| 当前研究 | [研究入口](RESEARCH_START.md)、[2026 计划](RESEARCH_PLAN_2026.md) | 新 skill 使用、复现顺序、样本与待办 |
-| 新研究设计 | [学术设计与 brainstorm](RESEARCH_DESIGN_2026.md)、[新结果](../analysis/out/research_frontier/research.md) | 探索性零售申请收益、基石敏感性及16项选题 |
-| 当前证据说明 | [A+H](AH_ANCHOR_2026.md)、[2026-09-30 集成复核](AGY_INTEGRATION_2026-09-30.md) | 价格修正、来源覆盖和解释限制 |
+| 当前研究 | [研究入口](RESEARCH_START.md)、[2026 计划](RESEARCH_PLAN_2026.md) | 基础统计起步、少数主线、复现顺序 |
+| 数据覆盖与获取 | [缺数清单](DATA_GAPS_2026.md)、[基础统计](../analysis/out/basic_statistics/basic_statistics.md) | 存储覆盖、缺失原因、公开可得性和补数优先级 |
+| 既有扩展设计 | [学术设计与 brainstorm](RESEARCH_DESIGN_2026.md)、[新结果](../analysis/out/research_frontier/research.md) | 既有零售／基石探索与16项候选，近期顺序以当前计划为准 |
+| 证据说明与来源历史 | [A+H](AH_ANCHOR_2026.md)、[2026-09-30 集成复核](AGY_INTEGRATION_2026-09-30.md) | A+H当前覆盖；集成复核保留历史阶段，现状以当前计划为准 |
 | 当前生成结果 | [分析索引](../analysis/README.md)、[输出目录](../analysis/out/) | 表格、图、样本筛选、覆盖和推断 |
 | 理论题库 | [研究 ideas](RESEARCH_IDEAS.md) | 背景及候选问题；须按当前计划筛选 |
 | 维护 | [仓库组织规则](REPOSITORY_GUIDE.md)、[贡献指南](../CONTRIBUTING.md)、[架构](../pipeline/SYSTEM_MANAGEMENT.md) | 工件归属、分支与复现约定 |

@@ -1,0 +1,71 @@
+{
+  "issuer": "6872.HK",
+  "review": "final_review.json",
+  "population_2026": 113,
+  "year1_revenue_present": 113,
+  "year1_profit_present": 112,
+  "vc_unknown": 7,
+  "unchanged_other_issuers": true,
+  "master_changes": [
+    {
+      "field": "Net sales in year-3",
+      "before": null,
+      "after": 0.0
+    },
+    {
+      "field": "Net sales in year-2",
+      "before": null,
+      "after": 0.0
+    },
+    {
+      "field": "Net sales in year-1",
+      "before": null,
+      "after": 0.0
+    },
+    {
+      "field": "Top-tier VC/PE backing (1=yes; 0=no)",
+      "before": 1.0,
+      "after": null
+    },
+    {
+      "field": "Key Pre-IPO investors",
+      "before": "AMR Action Fund, L.P.; AMR Action Fund, SCSp; WuXi PharmaTech Healthcare Fund I L.P. (WuXi Fund); Northern Light Venture Capital IV, Ltd. (Immense Vantage Limited); China Life Sciences Access Fund, L.P.; Suzhou Frontline Bioventure Capital Investment Partnership (LP); Suzhou Frontline Bioventures Venture Capital Investment Partnership (LP) Fund II; Suzhou Industrial Park Origin Ventures Co., Ltd.; Suzhou Industrial Park Oriza Zhengze Venture Capital I (LP); Nongyin No. 2 Wuxi Equity Investment Center; MAL Investment Company; Allen Chao Interests, Ltd.; Relativity Healthcare Fund, LLC; Huzhou Zhongnuo Venture Capital Investment Partnership (LP); WuXi Guolian Guokang Health Industry Investment Center (LP); Ningbo Xiangshang; Ningbo Yaoshang; Ningbo Yanyuan; Ningbo Borong; Ningbo Rongshun; Suzhou GTJA; Yantai GTJA; Hainan Century Star River Investment Co., Ltd.; Suzhou Qianrong Yingrun Equity Investment Partnership (LP); Suzhou Yuankang Dingxiang Investment Management Partnership (LP); Zhongshan Entities; Kangnuo; Susui Investment; Borun Mingdu; Yuanjing Investment; Beijing Jingguo Chuang; Yangzhou Jinye; Cumbre",
+      "after": "AMR Action Fund, L.P.; AMR Action Fund, SCSp; WuXi PharmaTech Healthcare Fund I L.P. (WuXi Fund); Northern Light Venture Capital IV, Ltd. (via Immense Vantage Limited); China Life Sciences Access Fund, L.P.; Suzhou Frontline Bioventure Capital Investment Partnership (LP); Suzhou Frontline Bioventures Venture Capital Investment Partnership (LP) Fund II; Suzhou Industrial Park Origin Ventures Co., Ltd.; Suzhou Industrial Park Oriza Zhengze Venture Capital I (LP); Nongyin No. 2 Wuxi Equity Investment Center; MAL Investment Company; Allen Chao Interests, Ltd.; Relativity Healthcare Fund, LLC; Huzhou Zhongnuo Venture Capital Investment Partnership (LP); WuXi Guolian Guokang Health Industry Investment Center (LP); Ningbo Xiangshang; Ningbo Yaoshang; Ningbo Yanyuan; Ningbo Borong; Ningbo Rongshun; Suzhou GTJA; Yantai GTJA; Hainan Century Star River Investment Co., Ltd.; Suzhou Qianrong Yingrun Equity Investment Partnership (LP); Suzhou Yuankang Dingxiang Investment Management Partnership (LP); Zhongshan Entities; Kangnuo; Susui Investment; Borun Mingdu; Yuanjing Investment; Beijing Jingguo Chuang; Yangzhou Jinye; Cumbre"
+    },
+    {
+      "field": "Ultimate controller type",
+      "before": "No controlling shareholder (Single Largest Group of Shareholders: the Cumbre Entities and family members of Mr. Meyerson)",
+      "after": "No controlling shareholder"
+    },
+    {
+      "field": "Controller economic interest at listing (%)",
+      "before": 0.1582,
+      "after": null
+    },
+    {
+      "field": "Controller voting rights at listing (%)",
+      "before": 0.1582,
+      "after": null
+    },
+    {
+      "field": "Debt repayment (% of planned net IPO proceeds)",
+      "before": null,
+      "after": 0.0
+    },
+    {
+      "field": "Year-1 net sales (original, pre-annualization)",
+      "before": null,
+      "after": 0.0
+    },
+    {
+      "field": "Underwriting base commission rate (%)",
+      "before": 0.025,
+      "after": 0.03
+    },
+    {
+      "field": "Total underwriting fee rate (%)",
+      "before": 0.035,
+      "after": 0.04
+    }
+  ]
+}

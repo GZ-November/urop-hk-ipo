@@ -1,0 +1,180 @@
+{
+  "reviewer": "independent sub-agent review_gaps",
+  "review_date": "2026-10-02",
+  "as_of": "2026-09-30",
+  "status": "four local arithmetic/source-identity checks passed; 6727 anomaly retained; no unqualified market-source correctness gate",
+  "rows": [
+    {
+      "h_code": "6727.HK",
+      "a_symbol": "sh688031",
+      "checks": {
+        "ticker_in_prospectus": true,
+        "raw_close_matches_cache": true,
+        "fx_matches_cache": true,
+        "fx_date_equals_a_date": true,
+        "a_date_equals_subscription_close": true,
+        "no_forward_date": true,
+        "h_close_matches_raw_cache": true,
+        "h_raw_basis": true,
+        "converted_hkd_matches": true,
+        "discount_matches": true
+      },
+      "arithmetic_gate_pass": true,
+      "raw_a_bar": {
+        "date": "2026-09-16",
+        "open": 101.79,
+        "close": 105.38,
+        "high": 108.45,
+        "low": 97.6,
+        "volume": 6144738.0
+      },
+      "raw_fx": {
+        "date": "2026-09-16",
+        "HKD_per_CNY": 1.1693899631500244
+      },
+      "unrounded_a_close_hkd": 123.23031431674957,
+      "unrounded_offer_discount": -0.6023705670826169,
+      "prospectus_ticker_evidence": {
+        "pdf_page_1based": 313,
+        "quote": "NOTES TO THE HISTORICAL FINANCIAL INFORMATION\n1.\nGENERAL INFORMATION\nThe Company was established and registered in the People’s Republic of China (the “PRC”) on June 5, 2013, as a\nlimited liability company. In December 2020, the Company was converted into a joint stock company with limited liability\nunder the Company Law of the PRC. In October 2022, the Company was listed on the Science and Technology Innovation\nBoard of Shanghai Stock Exchange (stock code: 688031). The address of the registered office and the principal place of\nbusiness of the Company are set out in the section headed “Corporate Information” in the prospectus dated September 11,\n2026 (the “Prospectus”).\nThe Group is principally engaged in developing and delivering AI and enterprise-grade data infrastructure and\nsoftware solutions.\nThe Historical Financial Information is presented in Renminbi (“RMB”), which is also the functional currency of the\nCompany.\n2.\nBASIS OF PREPARATION OF THE HISTORICAL FINANCIAL INFORMATION\nThe Historical Financial Information has been prepared based on the accounting policies which conform with IFRS\nAccounting Standards issued by the IASB.\nThe statutory financial statements of the Company for the years ended December 31, 2023, 2024 and 2025 were\nprepared in accordance with the Accounting Standards for Business Enterprises issued by the Ministry of Finance of the\nPRC. The statutory financial statements of the Company for the years ended December 31, 2023 and 2024 were audited by\nPan-China Certified Public Accountants LLP (天健會計師事務所(特殊普通合夥)), a certified public accountant registered in\nthe PRC and the statutory financial statements of the Company for the year ended December 31, 2025 were audited by\nDeloitte Touche Tohmatsu Certified Public Accountants LLP (德勤華永會計師事務所(特殊普通合夥)), a certified public\naccountant registered in the PRC.\n3.\nAPPLICATION OF NEW AND AMENDMENTS TO IFRS ACCOUNTING STANDARDS\nFor the purpose of preparing and presenting the Historical Financial Information for the Track Record Period, the\nGroup has consistently applied the accounting policies which confirm with IFRS Accounting Standards, which are effective\nfor the accounting period beginning on January 1, 2026 throughout the Track Record Period.\nNew and amendments to IFRS Accounting Standards in issue but not yet effective\nAt the date of this report, the following new and amendments to IFRS Accounting Standards have been issued but\nare not yet effective:\nAmendments to IAS 21 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\nTranslation to a Hyperinflationary Presentation Currency2\nAmendments to IFRS 10 and IAS 28 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\nSale or Contribution of Assets between an Investor and its\nAssociate or Joint Venture1\nIFRS 18 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\nPresentation and Disclosure in Financial Statements2\nIFRS 20 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\nRegulatory Assets and Regulatory Liabilities3\n1\nEffective for annual periods beginning on or after a date to be determined\n2\nEffective for annual periods beginning on or after January 1, 2027\n3\nEffective for annual periods beginning on or after January 1, 2029\nExcept for the new IFRS Accounting Standard mentioned below, the directors of the Company anticipate that the\napplication of all other new and amendments to IFRS Accounting Standards will have no material impact on the Group’s\nconsolidated financial statements in the foreseeable future.\nIFRS 18 Presentation and Disclosure in Financial Statements\nIFRS 18 Presentation and Disclosure in Financial Statements, which sets out requirements on presentation and\ndisclosures in financial statements, will replace IAS 1 Presentation of Financial Statements. This new IFRS Accounting\nStandard, while carrying forward many of the requirements in IAS 1, introduces new requirements to present specified\ncategories and defined subtotals in the statement of profit or loss; provide disclosures on management-defined performance\nmeasures in the notes to the financial statements and improve aggregation and disaggregation of information to be disclosed\nin the financial statements. In addition, some IAS 1 paragraphs have been moved to IAS 8 and IFRS 7. Minor amendments\nto IAS 7 Statement of Cash Flows and IAS 33 Earnings per Share are also made.\nIFRS 18, and amendments to other standards, will be effective for annual periods beginning on or after January 1,\n2027, with early application permitted. IFRS 18 requires retrospective application with specific transition provisions. The\napplication of the new standard is not expected to have significant impact on the financial performance and positions of the\nGroup in terms of recognition and measurement. However, it is expected to affect the structure and presentation of the\nconsolidated statement of profit or loss.\nAPPENDIX I\nACCOUNTANTS’ REPORT\n– I-11 –\n",
+        "source_text_sha256": "ea9e51290cbe499489cae7cc4037bc49b3633caba47d7acbab0d8686582e224e"
+      },
+      "cache_hashes": {
+        "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh688031.json": "d2370d3342e340824c66beff3dd95a8bad8234d1644256c213ddad7fbfda4519",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk06727.json": "bfb4e1e3d568f7a1203ee7ee8dfd4f2e8e75c83c03f10ba7537fbc566ef30485",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/fx_cnyhkd.json": "ec826d80b556811ed02839a6e8759fb0b60274c542753d4a2eb8cc7977bf7e55"
+      },
+      "source_limitations": "Only locally collected provider cache was compared; an independent second market vendor / official exchange historical price was not retrieved. Cache is parsed bars, not original HTTP payload. FX daily close has no intraday/as-known timestamp. Pricing date is absent.",
+      "exception": "Discount -60.2371% exceeds collector 50% plausibility threshold. Ticker and arithmetic verified; keep plausible=0 and exclude from baseline AH pricing sample until second-source raw price/corporate-action check."
+    },
+    {
+      "h_code": "3228.HK",
+      "a_symbol": "sh603228",
+      "checks": {
+        "ticker_in_prospectus": true,
+        "raw_close_matches_cache": true,
+        "fx_matches_cache": true,
+        "fx_date_equals_a_date": true,
+        "a_date_equals_subscription_close": true,
+        "no_forward_date": true,
+        "h_close_matches_raw_cache": true,
+        "h_raw_basis": true,
+        "converted_hkd_matches": true,
+        "discount_matches": true
+      },
+      "arithmetic_gate_pass": true,
+      "raw_a_bar": {
+        "date": "2026-09-24",
+        "open": 107.01,
+        "close": 103.55,
+        "high": 110.12,
+        "low": 103.5,
+        "volume": 237791.0
+      },
+      "raw_fx": {
+        "date": "2026-09-24",
+        "HKD_per_CNY": 1.1684240102767944
+      },
+      "unrounded_a_close_hkd": 120.99030626416206,
+      "unrounded_offer_discount": -0.4224330679234026,
+      "prospectus_ticker_evidence": {
+        "pdf_page_1based": 114,
+        "quote": "OVERVIEW\nOur Company was established in March 1993 when Mr. Liu Shaobai founded our business\nprimarily focused on the PCB industry. He has been deeply involved in the PCB industry for over\nthree decades. With his profound industry insights and long-term oriented strategic vision, Mr. Liu\nShaobai has played a key role in driving our industrial layout and business development, and\nestablished a high-standard management system for us. We are a globally recognized PCB\nmanufacturer driven by technological development and distinguished by our broad product\nofferings. Our PCB provides connectivity infrastructure for global customers in automotive\nelectronics, telecommunication and data infrastructure, smart devices, industrial control and other\nsectors. With our PCB products and intelligent manufacturing capabilities, we have become a leader\nin the global automotive electronics PCB industry and one of the few suppliers of AI computing\ninfrastructure core components. Our leading technical expertise and long-term oriented high-end\nproduction capacity in high build-up HDI and HLC PCB enable us to meet the diverse needs of our\nglobal customers and seize significant growth opportunities in the AI era.\nIn June 2013, our Company was converted into a joint stock limited company from a limited\nliability company. In January 2017, our A Shares became listed on the main board of the Shanghai\nStock Exchange (stock code: 603228). See “— Major Shareholding Changes in Our Company —\nListing on the Main Board of the Shanghai Stock Exchange” for further details.\nAs of the Latest Practicable Date, our total issued share capital was held as to approximately\n56.01% by our Controlling Shareholders Group, including Jinghong Yongtai, Wise Able Investment,\nYizhao Investment, Mr. Liu Shaobai, Ms. Huang Xiaofen, Ms. Cheuk Kwan and Mr. Liu Yu. See\n“Relationship with Our Controlling Shareholders Group” for the background of our Controlling\nShareholders Group. The Controlling Shareholders Group will be entitled to exercise the voting\nrights attached to approximately 52.21% of our total issued share capital immediately following the\ncompletion of the Global Offering (assuming no other changes are made to the issued share capital\nof our Company between the Latest Practicable Date and the Listing Date).\nKEY CORPORATE AND BUSINESS DEVELOPMENT MILESTONES\nThe following is a summary of our Group’s key business development milestones:\nYear\nMilestone\n1993 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe\nwere\nestablished\nin\nNanshan\nDistrict\nof\nShenzhen\nand\nbegan\nconstruction and production within the same year.\n2003 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe expanded and relocated our production base to Shenzhen’s Bao’an\nDistrict, significantly increasing our production capacity.\n2004 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe entered the FPC field, established our Shenzhen FPC plant and\ncommenced R&D and production of FPC.\n2006 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe achieved ISO/TS 16949 certification from BSI, further aligned our\nquality systems with stringent standards.\n2008 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe commissioned the Longchuan PCB plant and achieved parallel\ndevelopment and scaled operations in both Longchuan and Bao’an.\n2012 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe broke ground on our Jiangxi production base, which is our first\nfull-process, whole-plant, large-scale intelligent base.\n2013 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe\nconverted\ninto\na\njoint\nstock\nlimited\ncompany\nand\ncompleted\nshareholding reform.\n2017 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe were listed on the main board of Shanghai Stock Exchange (stock code:\n603228).\n2021 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe commissioned the Jinwan production base (Zhuhai City, Guangdong\nProvince) with a focus to build up our HLC & HDI production capacity.\n2022 \u0002\u0002\u0002\u0002\u0002\u0002\u0002\nWe\nexceeded\nRMB10\nbillion\nin\nrevenue\nwhich\nmarked\nour\nfirst\n“ten-billion” milestone.\nHISTORY AND CORPORATE STRUCTURE\n– 105 –\n",
+        "source_text_sha256": "c5a56f29513f9823e0ed347d19b303369e3d69dd631257d55d188a530f244012"
+      },
+      "cache_hashes": {
+        "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603228.json": "43e026117fabee04e76f49e052c3fc7b4ddfe287b42bb2264d7b5f242f1ab399",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03228.json": "dab7ed662e79dc8c157bfc08b9ddd81c6f4937ca23f0e6a6b64963f11524c02e",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/fx_cnyhkd.json": "ec826d80b556811ed02839a6e8759fb0b60274c542753d4a2eb8cc7977bf7e55"
+      },
+      "source_limitations": "Only locally collected provider cache was compared; an independent second market vendor / official exchange historical price was not retrieved. Cache is parsed bars, not original HTTP payload. FX daily close has no intraday/as-known timestamp. Pricing date is absent.",
+      "exception": null
+    },
+    {
+      "h_code": "3757.HK",
+      "a_symbol": "sz300757",
+      "checks": {
+        "ticker_in_prospectus": true,
+        "raw_close_matches_cache": true,
+        "fx_matches_cache": true,
+        "fx_date_equals_a_date": true,
+        "a_date_equals_subscription_close": true,
+        "no_forward_date": true,
+        "h_close_matches_raw_cache": true,
+        "h_raw_basis": true,
+        "converted_hkd_matches": true,
+        "discount_matches": true
+      },
+      "arithmetic_gate_pass": true,
+      "raw_a_bar": {
+        "date": "2026-09-24",
+        "open": 596.0,
+        "close": 565.86,
+        "high": 596.0,
+        "low": 565.86,
+        "volume": 52242.0
+      },
+      "raw_fx": {
+        "date": "2026-09-24",
+        "HKD_per_CNY": 1.1684240102767944
+      },
+      "unrounded_a_close_hkd": 661.164410455227,
+      "unrounded_offer_discount": -0.340557366510693,
+      "prospectus_ticker_evidence": {
+        "pdf_page_1based": 314,
+        "quote": "II.\nNOTES TO THE HISTORICAL FINANCIAL INFORMATION\n1.\nGENERAL INFORMATION\nThe Company is established in the People’s Republic of China (the “PRC”) with limited liability on 14 April 2011.\nIn January 2019, the Company’s domestic shares (the “A shares”) were listed on the Shenzhen Stock Exchange\n(stock code: 300757). The address of the registered office and the principal place of business of the Company are\ndisclosed in the section headed “Corporate Information” of the Prospectus.\nThe Group is principally engaged in delivering high-yield automation solutions for photovoltaic (“PV”)\nmanufacturing enabling stable, scalable production of PV cells and modules and production, distribution, and\nmaintenance of components used to perform high precision positioning of micro-component, as well as research\nand development, manufacturing and sales of Silicon Photonics (“SiPh”) equipment, optoelectronic and\nphotonic components, including micro-optical products and laser devices, and testing equipment.\nIn the opinion of the directors, the Company is controlled by the Single Largest Shareholder Group (as defined in\nthe section headed “Definitions” of the Prospectus).\nParticulars of the Company’s subsidiaries as at 31 December 2023, 2024, 2025 and 30 April 2026 and the date of\nthis report are as follows:\nName of subsidiary\nPlace of\nestablishment/\nincorporation\nand place of\nbusiness\nParticulars of issued\nand registered capital\nEquity interest attributable to owners of the Company as at\n31 December\n30 April\nDate of this report\nPrincipal activities\nNotes\n2023\n2024\n2025\n2026\nDirect\nDirect\nDirect\nIndirect\nDirect\nIndirect\nDirect\nIndirect\n(%)\n(%)\n(%)\n(%)\n(%)\n(%)\n(%)\n(%)\nJiece Energy Conservation Technology\n(Suzhou) Co., Ltd.# (捷策節能科技\n（蘇州）有限公司) . . . . . . . . . . . . . . .\nThe PRC\nRMB15,363,425\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nProduction and\nSales\n(c)\nSuzhou Jieyunsheng Energy\nTechnology Co., Ltd.\n(“Jieyunsheng”)# (蘇州捷運昇能源科\n技有限公司) . . . . . . . . . . . . . . . . . .\nThe PRC\nRMB5,000,000\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nTrading\n(e)\nRobotechnik Intelligent Technology\nNantong Co., Ltd. (“Robotechnik\nNantong”)# (羅博特科智能科技南通有\n限公司) . . . . . . . . . . . . . . . . . . . . .\nThe PRC\nRMB380,000,000\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nResearch and\ndevelopment,\nproduction and\nsales\n(c)\nRobotechnik Europe GmbH . . . . . . . .\nGermany\nEuro (“EUR”) 25,000\n85%\n85%\n85%\n–\n85%\n–\n85%\n–\nProduction and\nsales\n(c), (f)\nSuzhou Feikong Jingwei Technology\nCo., Ltd. (“Feikong Jingwei”)#\n(蘇州斐控晶微技術有限公司) . . . . . . .\nThe PRC\nRMB194,462,700\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nInvestment\n(c)\nRobotechnik Semiconductor\nTechnology (Nantong) Co., Ltd.#\n(羅博特科半導體科技（南通）有限公司)\nThe PRC\nRMB300,000,000\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nProduction and\nsales\n(c)\nRobotechnik Intelligent Technology\n(Shenzhen) Co., Ltd.# (羅博特科智能\n科技（深圳）有限公司) . . . . . . . . . . . .\nThe PRC\nRMB30,000,000\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nTrading\n(c)\nRobo Qiwu Technology (Suzhou) Co.,\nLtd.# (羅博齊物技術（蘇州）有限公司) .\nThe PRC\nRMB1,000,000\n100%\n100%\n100%\n–\n100%\n–\n100%\n–\nTrading\n(c)\nLuxembourg Investment Company 312\nS.àr.l . . . . . . . . . . . . . . . . . . . . . . .\nLuxembourg\nEUR12,000\nN/A*\nN/A*\n–\n100%\n–\n100%\n–\n100%\nInvestment\n(c)\nMicroXtechnik Investment GmbH . . . .\nGermany\nEUR25,000\nN/A*\nN/A*\n–\n100%\n–\n100%\n–\n100%\nInvestment\n(c)\nficonTEC Ireland Limited . . . . . . . . . .\nIreland\nEUR100\nN/A*\nN/A*\n–\n100%\n–\n100%\n–\n100%\nResearch and\ndevelopment\n(c)\nAPPENDIX IA\nACCOUNTANTS’ REPORT OF THE GROUP\n– IA-15 –\n",
+        "source_text_sha256": "e83e492aa01fc24169329c92ad920216911f3a4e60f3ba47431ac0114326bac9"
+      },
+      "cache_hashes": {
+        "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sz300757.json": "df5b6128ed7b6bf041c272c82c8db983850fa8307ac0ea87b7dce835368e570b",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk03757.json": "7784696510fdd932aa1e03f913c70dc07bc062993e1110ed30363e94756b3088",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/fx_cnyhkd.json": "ec826d80b556811ed02839a6e8759fb0b60274c542753d4a2eb8cc7977bf7e55"
+      },
+      "source_limitations": "Only locally collected provider cache was compared; an independent second market vendor / official exchange historical price was not retrieved. Cache is parsed bars, not original HTTP payload. FX daily close has no intraday/as-known timestamp. Pricing date is absent.",
+      "exception": null
+    },
+    {
+      "h_code": "9607.HK",
+      "a_symbol": "sh603650",
+      "checks": {
+        "ticker_in_prospectus": true,
+        "raw_close_matches_cache": true,
+        "fx_matches_cache": true,
+        "fx_date_equals_a_date": true,
+        "a_date_equals_subscription_close": true,
+        "no_forward_date": true,
+        "h_close_matches_raw_cache": true,
+        "h_raw_basis": true,
+        "converted_hkd_matches": true,
+        "discount_matches": true
+      },
+      "arithmetic_gate_pass": true,
+      "raw_a_bar": {
+        "date": "2026-09-24",
+        "open": 68.35,
+        "close": 68.68,
+        "high": 69.9,
+        "low": 68.07,
+        "volume": 132415.0
+      },
+      "raw_fx": {
+        "date": "2026-09-24",
+        "HKD_per_CNY": 1.1684240102767944
+      },
+      "unrounded_a_close_hkd": 80.24736102581025,
+      "unrounded_offer_discount": -0.45169536496224316,
+      "prospectus_ticker_evidence": {
+        "pdf_page_1based": 108,
+        "quote": "3.\nIncrease in registered capital in October 2016 and November 2016\nIn October 2016, the registered capital of our Company increased from RMB500,000,000 to\nRMB507,187,500 by way of additional cash contribution of RMB7,187,500. Zhoushan Saifan\nInvestment Management Partnership (Limited Partnership) (舟山市賽凡投資管理合夥企業（有限合\n夥）) (“Saifan Investment”), an Independent Third Party, solely subscribed for such increase in the\nregistered capital for cash consideration of RMB23 million. The consideration was determined\nbetween the parties on arm’s length basis with reference to the then-operation status of our\nCompany and the development prospects and future plans of our Group. This capital increase was\ncompleted on 10 November 2016.\nIn November 2016, the registered capital of our Company increased from RMB507,187,500 to\nRMB527,187,500, by way of additional cash contribution of RMB20 million. Mr. Zeng Ming (曾鳴),\nan Independent Third Party, solely subscribed for such increase in the registered capital for cash\nconsideration of RMB80 million. The consideration was determined between the parties on arm’s\nlength basis with reference to the then-operation status of our Company and the development\nprospects and future plans of our Group. This capital increase was completed on 10 November 2016.\nAfter these registered capital increases, the shareholding structure of our Company was as\nfollows:\nName of Shareholder\nNumber of\nShares held\nApproximate\npercentage of\nshareholding\n(%)\nRed Avenue Investment\n294,570,000\n55.9%\nVirgin Holdings\n100,000,000\n19.0%\nZhoushan Yutong\n60,000,000\n11.4%\nBest Linker\n25,000,000\n4.7%\nMr. Zeng Ming\n20,000,000\n3.8%\nMr. Song Xiuxin\n10,000,000\n1.9%\nSaifan Investment\n7,187,500\n1.4%\nXiangzhuo Investment\n3,410,000\n0.6%\nBegonia Group\n3,150,000\n0.6%\nShunyuan Investment\n2,870,000\n0.5%\nMs. Zhou Bo\n1,000,000\n0.2%\nTotal\n527,187,500\n100.00%\n4.\nListing of our Shares on the Shanghai Stock Exchange\nTo improve the brand awareness of our Company and expand our financial resources for the\nGroup’s development, our then Shareholders resolved to apply for the listing of our Shares on the\nShanghai Stock Exchange in 2018. On 27 June 2018, all issued Shares of our Company were listed on\nthe Shanghai Stock Exchange under the stock code of 603650.\n5.\nIssuance and redemption of convertible bonds\nOn 26 January 2021, with the approval of the CSRC, our Company issued convertible bonds\n(the “Convertible Bonds”) in the principal amount of RMB800,180,000 with a maturity date of 25\nJanuary 2027. The Convertible Bonds bore increasing interests ranged from 0.3% per annum in the\nfirst year to 2.0% per annum in the sixth year. Bondholders had the right to convert their\nConvertible Bonds into A Shares during the period from 2 August 2021 to 25 January 2027 at the\ninitial conversion price of RMB32.96 per A Share.\nHISTORY, DEVELOPMENT AND CORPORATE STRUCTURE\n– 99 –\n",
+        "source_text_sha256": "1840df986893df4ed81996b2fabfa67ac877740b1e7f6e0e386274556792b558"
+      },
+      "cache_hashes": {
+        "pipeline/prospectus_pipeline/data/market/ah_reference/a_bars/sh603650.json": "0324aa8cf1d99b9dcfe0ad9c89d2e5897389b25a6c86db0d17fd3f990c43d010",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/h_bars/hk09607.json": "20a7573e57166311a5b0f54035389b425741c374659146bc4a148afef2ad08a0",
+        "pipeline/prospectus_pipeline/data/market/ah_reference/fx_cnyhkd.json": "ec826d80b556811ed02839a6e8759fb0b60274c542753d4a2eb8cc7977bf7e55"
+      },
+      "source_limitations": "Only locally collected provider cache was compared; an independent second market vendor / official exchange historical price was not retrieved. Cache is parsed bars, not original HTTP payload. FX daily close has no intraday/as-known timestamp. Pricing date is absent.",
+      "exception": null
+    }
+  ]
+}

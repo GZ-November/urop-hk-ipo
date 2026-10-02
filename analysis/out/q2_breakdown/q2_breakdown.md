@@ -1,4 +1,4 @@
-# Where does the 2026Q2 first-day-return premium come from? (2026, N = 106)
+# Where does the 2026Q2 first-day-return premium come from? (2026, N = 113)
 
 ## 1. Sector mix by listing quarter (number of IPOs)
 

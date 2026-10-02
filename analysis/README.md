@@ -7,7 +7,8 @@ From the repository root:
 ```bash
 python -m pip install -e '.[analysis,dev]'
 python run.py master --derive
-make analysis
+make basic-analysis   # start with coverage, descriptive statistics, groups and correlations
+make analysis         # reproduce all existing exploratory modules when needed
 make test-analysis
 ```
 
@@ -35,6 +36,7 @@ existing research column names and definitions.
 
 | Script | Output |
 |---|---|
+| `basic_statistics_2026.py` | `out/basic_statistics/`: 202-field coverage, core descriptive statistics, quarter/month/route/demand groups and pairwise Spearman correlations; no regressions or hypothesis tests |
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |
 | `module_b_underpricing_regression.py` | `out/module_b/`: hypotheses, nested regressions, robustness, time-cluster inference, coefficient chart, sample selection |
 | `ir_decomposition_2026.py` | `out/ir_decomposition/`: descriptive route/quarter/backing decomposition |
@@ -54,8 +56,10 @@ HC3 and listing-month CR1 inference are shown together. The restricted wild clus
 
 Unknown classification flags remain missing; invalid log inputs are excluded. Module A reports availability per input and matches MLOT/proceeds and IPO/benchmark observations for weighted statistics. Missing counts cannot by themselves distinguish uncollected from unmatured data; inspect the source cohort and horizon records.
 
-[Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Current source review](../docs/AGY_INTEGRATION_2026-09-30.md) · [Historical write-ups](../docs/archive/README.md)
+[Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Historical source review](../docs/AGY_INTEGRATION_2026-09-30.md) · [Historical write-ups](../docs/archive/README.md)
 
 A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/AGY_INTEGRATION_2026-09-30.md).
 
 Current research design and brainstorm: [RESEARCH_DESIGN_2026.md](../docs/RESEARCH_DESIGN_2026.md). Evidence-gap disposition: [readiness review](../pipeline/reports/research_readiness/README.md).
+
+The active plan starts with basic statistics and selects a few topics; the advanced modules above remain exploratory references. Data availability and collection feasibility: [DATA_GAPS_2026.md](../docs/DATA_GAPS_2026.md).

@@ -1,5 +1,7 @@
 # Codebase review and improvements · 2026-09-30
 
+> Historical snapshot: the sample sizes, checks and repair status below describe the stage recorded here. The current population is 113 issuers after PR #23/#25; see [current research plan](RESEARCH_PLAN_2026.md) for coverage and remaining work. Historical audit counts do not certify the expanded sample.
+
 Scope: recent committed changes (`05d0408...de88f41`), the new untracked Module B analysis, collection/runtime helpers, core event/validation/writeback modules, packaging, checks and internal documentation. Standards and research-spec reviews ran independently. There was no originating issue specification; the local research plan, contracts and user instruction define the requirements. The user's current instruction restricts every statistical and regression analysis, including Module A, to 2026 listings.
 
 ## Standards

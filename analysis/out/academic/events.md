@@ -1,4 +1,4 @@
-# Lockup expiry and stabilization end, 2026 (HSI-adjusted, from cached daily bars)
+# Contractual lockup expiry and stabilization end, 2026 (HSI-adjusted, from cached daily bars)
 
 Event day 0 is the first trading day on or after the event date; CAR is the sum of daily stock returns minus HSI returns over the window.
 The **placebo p** re-draws one non-event day per issuer from the same issuer's own history, between 11 and 30 trading days from the true
@@ -6,10 +6,11 @@ event (so the volatility regime is similar), 5000 times. It calibrates drift and
 The placebo compares the cross-sectional t-statistic of each draw with the observed one, so a window whose returns are unusually dispersed (event-induced variance) is not mistaken for a shifted mean.
 Turnover rows compare mean turnover on days [0,+5] to days [-25,-6] (log ratio; 0 = no change).
 
-## 1. Six-month lockup expiry (cornerstone unlock date, else controlling-shareholder date)
+## 1. Contractual lockup expiry (earliest cornerstone unlock date, else controlling-shareholder date)
 
-Only issuers listed early enough to have reached the expiry with a full window are included (35 at most, all listed January-March; 88 issuers share the same
-cornerstone and controlling-shareholder date, so they are one event, not two).
+Only observed expiry dates with full return or turnover windows are included (35 issuers at most; N varies by window).
+The dates follow the stored contractual expiry fields, rather than a uniform listing-date-plus-six-month assumption.
+Coincident cornerstone and controlling-shareholder dates are counted as one event, not two.
 
 | Window | N | Mean CAR | Median CAR | t | Wilcoxon p | Placebo p | share < 0 |
 |---|---|---|---|---|---|---|---|
@@ -53,11 +54,10 @@ No purchases:
 | [-5,+5] | 14 | -6.3% | -4.4% | -1.12 | 0.358 | 0.302 | 64% |
 | [-5,-1] | 14 | -5.7% | -6.4% | -1.50 | 0.068 | 0.126 | 86% |
 
-- A negative pre-window on the lockup event ([-5,-1]) is the usual anticipation of selling pressure; the sign and size of [-5,+5] against the placebo distribution
-  is the test. With about 35 events from one listing quarter the power is limited.
-- The placebo statistics are centred below zero: returns drift down and turnover decays as a new listing ages, so an ordinary window in the same weeks would
-  show a negative average. That is why the placebo p can be much smaller than the plain t-test or Wilcoxon p (for example the stabilization-end [-5,+5] window has
-  t about 1.9 but placebo p about 0.004): the window is unusual relative to the issuer's own neighbouring days, though a plain test against zero is only marginal.
-- Stabilization end falls about 20 trading days after listing, exactly the Day-20 observation used elsewhere in this project, so this window also overlaps
-  the post-listing decline that the hot-window comparison shows; the pre-window [-5,-1] is positive as well, which fits price support that lasts until the end.
-- Lockup events include only January-March listings (N = 26 to 31), so they say nothing about April-June or later issuers.
+- Negative pre-event returns alone do not establish anticipated selling pressure. Compare the CAR, window N and placebo p in the tables;
+  the available event sample is small and date maturity limits coverage.
+- Placebo calibration compares the event with neighbouring non-event dates for the same issuer. A small placebo p and a small test-against-zero p
+  answer different questions; neither establishes an exogenous supply shock. Read the current rows rather than an earlier numerical example.
+- Stabilization-end windows can overlap the early aftermarket period. Returns there can reflect market movements and the age of a listing as well as
+  stabilization; no directional price-support conclusion follows from the event date alone.
+- Contract lengths and missing dates differ across issuers. A date present in the workbook is not, by itself, evidence of complete independent review.

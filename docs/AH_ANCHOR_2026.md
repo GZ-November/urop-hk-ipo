@@ -1,25 +1,32 @@
-# A+H reference prices and source review · 2026-09-30
+# A+H reference prices and source review
 
-The collector now covers **41 A+H issuers in the stored master**: seven 2025 listings and 34 in 2026, all with subscription-close A-share/FX anchors. This is coverage of the stored panel, not certification of exchange-wide listing completeness. The 2026 analysis keeps its 34-issuer scope. Cross-year collection does not increase that study's N.
+文档更新：2026-10-02；行情与参考锚截止2026-09-30。当前113家2026 IPO中，独立A+H标记有 **38家**，互斥上市路径分组有36家（18A／18C优先分类）。这两个计数不能代替有效价格锚样本量。
 
-`pipeline/exports/HKIPO-MASTER-AH-reference.csv` stores cross-year anchors; `HKIPO-2026-AH-reference.csv` is the study input. `--all --as-of 2026-09-30` extends old caches, rather than reusing a 2026-only FX history. Anchors record A price date, FX date and observation cutoff. Failed or empty refreshes preserve existing caches. The refresh target rebuilds the master before collecting reference prices.
+## 已采集覆盖与缺口
 
-First-day OHLC was corrected for 26 of 106 stored 2026 issuers; using adjusted prices with original offer prices had even reversed the return sign for some split stocks. The A+H mean first-day return is now 10.9%. See the correction ledger in the integration review.
+`pipeline/exports/HKIPO-2026-AH-reference.csv` 已补6727.HK、3228.HK、3757.HK、9607.HK，覆盖 **38／38家**的申购截止日锚及上市日H/A锚。跨年参考表同步为45家（2025年7家、2026年38家），旧34家已有锚数值没有变化。4家证券匹配、原价缓存、FX与计算的独立复核见 [补数记录](../pipeline/reports/data_gap_collection/ah_four_review.md)。
 
-The daily H/A premium now divides **raw H prices by raw A prices × FX**. Previously the H aftermarket cache could be adjusted for subsequent splits while A prices remained raw. The collector stores raw H bars separately. Buy-and-hold price returns still exclude dividend reinvestment and may be affected by corporate actions; they are not total returns.
+[生成报告](../analysis/out/ah_anchor/ah_anchor.md) 已重跑：主要折价规格N=38，剔除`plausible=0`的稳健性规格N=36。6727发行折价−60.2371%，计算通过但仍保留异常旗标，公司行动及第二价格来源未完成排查。4家实际pricing date仍未知；补齐的是申购截止日锚，不是最终定价日锚。Yahoo日FX尚未证明盘中何时可知。
 
-## Updated exploratory results
+## 价格、日期与解释
 
-Mean offer discount remains **38.2%**, versus **30.7%** at the first-day close. These anchors have different dates, so the change also includes A-share and FX moves. Discount versus IR has Spearman rho −0.30, p = 0.084; this is an association.
+A股发行参考取不晚于H股申购截止日的最后一个A股交易日收盘价，用当日HKD per CNY汇率换算。首日H/A价差使用H股上市日A价，因此发行折价到首日价差的变化也包含A股和汇率变动，不能全部归为H股价格发现。
 
-At day 60, **25 of 34 issuers** have matched observations. Within those 25, the mean raw-price gap is −28.7% at both day 0 and day 60; mean change is about zero (paired t p = 0.996; Wilcoxon p = 0.075). This does **not establish absence of convergence**. The fixed-endpoint-cohort path and horizon coverage are exported alongside the issuer/date premium panel. Interior cross-market holidays are not filled.
+`--all --as-of 2026-09-30` 用于跨年采集；失败或空刷新保留已有缓存。参考数据记录A价日期、FX日期和截止日。2026-09-30首日原价修复涉及当时106家中的26家，是历史修复范围；当前38家A+H的首日收益见生成表，不沿用旧版10.9%。
 
-For A-share reactions, the original CSI 300 subtraction is retained alongside an alpha/beta market model estimated separately before each event on A trading bars [−120,−21], requiring 60 valid pairs. At H listing, market-model mean CAR [−5,+5] is **−7.6%** (N = 34, Wilcoxon p ≈ 0.001; placebo p ≈ 0.004), versus −6.0% for simple index subtraction. The market model is a sensitivity check, not a sector control or causal identification. Raw prices, overlapping event dates and few clusters remain limitations.
+每日H/A面板使用 **raw H / (raw A × FX)**，不能将复权H价与原始A价相除。买入持有价格收益未再投资股息，仍可能受公司行动影响，不是总收益。
 
-Generated tables: `analysis/out/ah_anchor/ah_anchor.md`; underlying outputs include `premium_panel.csv`, `horizon_coverage.csv`, `balanced_path_60.csv`, and event-specific market-model parameter files.
+## 已完成的探索性分析
 
-## Margin financing and lockups
+- 发行折价及首日价差：有效锚的平均发行折价约39.0%，首日价差约32.2%；两者日期不同。
+- 折价与首日收益：秩相关使用有限的折价／收益配对，剔除缺锚行；回归并列HC3与少月份wild推断。相关不能识别价格收敛或因果效应。
+- 上市后收敛：60个交易日期限有25家匹配；固定这些发行人的路径另行输出。端点差异未显著不等于没有收敛，跨市场假期不填价。
+- A股反应：申购截止日与H股上市日分别检验CSI 300调整CAR，并保留事件前[-120,-21]、至少60对收益估计的alpha/beta市场模型和邻近日期placebo。市场模型不是行业匹配，也不能把上市事件直接解释为融资因果冲击。
 
-The earlier claim that historical margin data cannot be collected was too broad. Dated news broker surveys provide **69 sourced observations for 23 of 106 stored 2026 issuers**, with nine closing-day snapshots. Coverage is sparse, broker membership is unspecified, and source dates are distinct from final official retail-subscription outcomes. See [source review](AGY_INTEGRATION_2026-09-30.md).
+所有具体系数、p值及多重检验见生成表；底层文件包括 `premium_panel.csv`、`horizon_coverage.csv`、`balanced_path_60.csv` 及事件市场模型参数文件。
 
-Q2 six-month lockup windows remain calendar-gated. This work did not fabricate post-unlock returns or move the observation cutoff beyond 2026-09-30. `make refresh-2026` can be run once event windows mature.
+## 后续工作
+
+4家锚已补齐。后续查实际定价日、6727异常及公司行动，核对第一项H股发行公告日期与重叠事件；深入研究时再采行业匹配行情。来源写回遵循验证与独立复核门禁。
+
+孖展已扩至25家／93条，15家有截止日快照；截止日快照不必然在决策前公开，当前信息时点见 [孖展结果](../analysis/out/margin/margin.md)。契约解禁与六日历月收益分别判定成熟，使用真实期限与完整行情窗口，不沿用统一六个月默认值。总体状态见 [当前计划](RESEARCH_PLAN_2026.md)；[2026-09-30集成复核](AGY_INTEGRATION_2026-09-30.md)保留当时的来源及修复过程。

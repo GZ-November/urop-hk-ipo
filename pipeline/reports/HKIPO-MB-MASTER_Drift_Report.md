@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-10-01 21:15:31 | **cohort 数**：5 | **样本合计**：155 家 | **变量数**：202
+- **生成时间**：2026-10-02 12:40:27 | **cohort 数**：5 | **样本合计**：155 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -48,9 +48,9 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `total equity in year-1` | 93.3% | 96.3% | 100.0% | 95.6% | 100.0% |
 | `total liability in year-3` | 100.0% | 85.2% | 100.0% | 84.4% | 100.0% |
 | `total liability in year-1` | 93.3% | 96.3% | 100.0% | 95.6% | 100.0% |
-| `Net sales in year-3` | 86.7% | 88.9% | 100.0% | 84.4% | 100.0% |
-| `Net sales in year-2` | 86.7% | 100.0% | 100.0% | 97.8% | 100.0% |
-| `Net sales in year-1` | 86.7% | 96.3% | 100.0% | 97.8% | 100.0% |
+| `Net sales in year-3` | 86.7% | 88.9% | 100.0% | 86.7% | 100.0% |
+| `Net sales in year-2` | 86.7% | 100.0% | 100.0% | 100.0% | 100.0% |
+| `Net sales in year-1` | 86.7% | 96.3% | 100.0% | 100.0% | 100.0% |
 | `Profit before tax in year-3` | 100.0% | 85.2% | 100.0% | 84.4% | 100.0% |
 | `Profit before tax in year-1` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `Profit for the year in year-3` | 100.0% | 85.2% | 100.0% | 84.4% | 100.0% |
@@ -68,20 +68,20 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 100.0% | 76.7% |
 | `Pre-IPO CVC backing (1=yes; 0=no)` | 93.3% | 59.3% | 100.0% | 77.8% | 70.0% |
 | `Pre-IPO State/Gov backing (1=yes; 0=no)` | 100.0% | 63.0% | 100.0% | 86.7% | 73.3% |
-| `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 100.0% | 71.1% | 46.7% |
+| `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 100.0% | 68.9% | 46.7% |
 | `Key Pre-IPO investors` | 66.7% | 74.1% | 73.7% | 84.4% | 73.3% |
 | `Pre-IPO institutional shareholding (%)` | 66.7% | 55.6% | 100.0% | 82.2% | 63.3% |
 | `Pre-IPO investor board seat (1=yes; 0=no)` | 100.0% | 100.0% | 100.0% | 88.9% | 56.7% |
 | `Earliest Pre-IPO investment round` | 53.3% | 74.1% | 73.7% | 84.4% | 70.0% |
 | `Pre-IPO holding duration (years)` | 53.3% | 55.6% | 100.0% | 80.0% | 66.7% |
-| `Controller economic interest at listing (%)` | 93.3% | 100.0% | 100.0% | 97.8% | 96.7% |
-| `Controller voting rights at listing (%)` | 93.3% | 100.0% | 100.0% | 97.8% | 100.0% |
+| `Controller economic interest at listing (%)` | 93.3% | 100.0% | 100.0% | 95.6% | 96.7% |
+| `Controller voting rights at listing (%)` | 93.3% | 100.0% | 100.0% | 95.6% | 100.0% |
 | `Interest-bearing debt at year-1 end` | 86.7% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Technology commercialization stage` | 53.3% | 51.9% | 100.0% | 84.4% | 90.0% |
-| `Debt repayment (% of planned net IPO proceeds)` | 100.0% | 92.6% | 100.0% | 95.6% | 100.0% |
+| `Debt repayment (% of planned net IPO proceeds)` | 100.0% | 92.6% | 100.0% | 97.8% | 100.0% |
 | `Place of incorporation` | 100.0% | 88.9% | 100.0% | 22.2% | 96.7% |
 | `Financial statement unit multiplier` | 53.3% | 92.6% | 100.0% | 91.1% | 53.3% |
-| `Year-1 net sales (original, pre-annualization)` | 86.7% | 96.3% | 100.0% | 97.8% | 100.0% |
+| `Year-1 net sales (original, pre-annualization)` | 86.7% | 96.3% | 100.0% | 100.0% | 100.0% |
 | `Year-1 profit before tax (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `Year-1 profit for period (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `H shares after IPO (base; no options)` | 80.0% | 100.0% | 100.0% | 100.0% | 96.7% |
@@ -172,7 +172,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `total assets in year-3 (3 years before IPO)` | 84.4% | 100.0% | +15.6pp |
 | `total equity in year-3` | 84.4% | 100.0% | +15.6pp |
 | `total liability in year-3` | 84.4% | 100.0% | +15.6pp |
-| `Net sales in year-3` | 84.4% | 100.0% | +15.6pp |
+| `Net sales in year-3` | 86.7% | 100.0% | +13.3pp |
 | `Profit before tax in year-3` | 84.4% | 100.0% | +15.6pp |
 | `Profit for the year in year-3` | 84.4% | 100.0% | +15.6pp |
 | `Development costs capitalized in year-1 (additions, before annualization)` | 93.3% | 80.0% | -13.3pp |
@@ -180,7 +180,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Pre-IPO VC backing (1=yes; 0=no)` | 100.0% | 70.0% | -30.0pp |
 | `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 76.7% | -23.3pp |
 | `Pre-IPO State/Gov backing (1=yes; 0=no)` | 86.7% | 73.3% | -13.4pp |
-| `Top-tier VC/PE backing (1=yes; 0=no)` | 71.1% | 46.7% | -24.4pp |
+| `Top-tier VC/PE backing (1=yes; 0=no)` | 68.9% | 46.7% | -22.2pp |
 | `Key Pre-IPO investors` | 84.4% | 73.3% | -11.1pp |
 | `Pre-IPO institutional shareholding (%)` | 82.2% | 63.3% | -18.9pp |
 | `Pre-IPO investor board seat (1=yes; 0=no)` | 88.9% | 56.7% | -32.2pp |

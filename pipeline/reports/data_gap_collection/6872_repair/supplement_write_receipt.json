@@ -1,0 +1,30 @@
+{
+  "review": "final_review.json",
+  "payload_sha256": "23aa22bc899f9c857af57f482250c885ad61e3177804a4b5c2fcd56e9f43007b",
+  "changes": [
+    {
+      "header": "Underwriting base commission rate (%)",
+      "cell": "GK18",
+      "before": 0.025,
+      "after": 0.03
+    },
+    {
+      "header": "Underwriting discretionary incentive fee rate (%)",
+      "cell": "GL18",
+      "before": 0.01,
+      "after": 0.01
+    },
+    {
+      "header": "Total underwriting fee rate (%)",
+      "cell": "GM18",
+      "before": 0.035,
+      "after": 0.04
+    },
+    {
+      "header": "Year-1 net sales (original, pre-annualization)",
+      "cell": "CN18",
+      "before": null,
+      "after": 0
+    }
+  ]
+}

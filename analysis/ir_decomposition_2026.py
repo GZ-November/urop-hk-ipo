@@ -3,7 +3,7 @@
 Module A shows three large gaps in first-day returns (IR): by route (18A/18C
 high, A+H low), by quarter (Q2 high, Q3 low) and by VC/PE backing. The three
 overlap: every 18A/18C issuer is VC/PE-backed and 18A issuers list only in
-Q1-Q2. This script separates them on the 2026 sample (N = 106).
+Q1-Q2. This script separates them on the observed 2026 sample.
 
 Outcome is log(1 + IR); standard errors are clustered by listing month.
 

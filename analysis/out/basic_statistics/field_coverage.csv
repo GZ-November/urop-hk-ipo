@@ -1,0 +1,203 @@
+field,dtype,n_population,n_present,n_missing,n_distinct,2026Q1_present,2026Q2_present,2026Q3_present
+HKEx file# of the year,numeric,113,112,1,112,38,45,29
+Stock Code,string,113,113,0,113,38,45,30
+Company Name at time of listing,string,113,113,0,113,38,45,30
+Date of Prospectus (dd/mm/yy),date,113,113,0,56,38,45,30
+Date of Listing (dd/mm/yy),date,113,113,0,62,38,45,30
+Sponsor(s),string,113,112,1,86,38,45,29
+Reporting Accountants,string,113,112,1,12,38,45,29
+Valuer(s),string,113,16,97,7,8,6,2
+Funds Raised HK (a),numeric,113,112,1,112,38,45,29
+Funds Raised Int.(b),numeric,113,112,1,112,38,45,29
+IPO Subscription Price (HK$),numeric,113,113,0,112,38,45,30
+Total (without option),numeric,113,113,0,112,38,45,30
+Global Offering (without option),numeric,113,113,0,112,38,45,30
+Number of offer shares under the capitalization Issue,numeric,113,108,5,102,38,45,25
+Number of offer shares under Capitalization Rest,numeric,113,108,5,102,38,45,25
+Sale Shares,numeric,113,113,0,2,38,45,30
+New shares,numeric,113,113,0,112,38,45,30
+Placing Shares,numeric,113,113,0,112,38,45,30
+Public Offer shares,numeric,113,113,0,111,38,45,30
+Maximum Offer Price,numeric,113,113,0,111,38,45,30
+Minimum Offer Price,numeric,113,82,31,79,26,37,19
+Filing price revision (%),numeric,113,113,0,44,38,45,30
+Filing range width (%),numeric,113,113,0,43,38,45,30
+Pricing position in filing range,string,113,113,0,4,38,45,30
+currency in financial information,string,113,113,0,3,38,45,30
+total assets in year-3 (3 years before IPO),numeric,113,106,7,106,38,38,30
+total assets in year-2,numeric,113,113,0,113,38,45,30
+total assets in year-1,numeric,113,111,2,111,38,43,30
+total equity in year-3,numeric,113,106,7,106,38,38,30
+total equity in year-2,numeric,113,113,0,113,38,45,30
+total equity in year-1,numeric,113,111,2,111,38,43,30
+total liability in year-3,numeric,113,106,7,106,38,38,30
+total liability in year-2,numeric,113,113,0,113,38,45,30
+total liability in year-1,numeric,113,111,2,111,38,43,30
+Net sales in year-3,numeric,113,107,6,106,38,39,30
+Net sales in year-2,numeric,113,113,0,111,38,45,30
+Net sales in year-1,numeric,113,113,0,111,38,45,30
+Profit before tax in year-3,numeric,113,106,7,106,38,38,30
+Profit before tax in year-2,numeric,113,113,0,113,38,45,30
+Profit before tax in year-1,numeric,113,112,1,112,38,44,30
+Profit for the year in year-3,numeric,113,106,7,106,38,38,30
+Profit for the year in year-2,numeric,113,113,0,113,38,45,30
+Profit for the year in year-1,numeric,113,112,1,112,38,44,30
+Underwriting Commission (% of fund raised HK (a),numeric,113,112,1,30,38,44,30
+Underwriting Commission (% of fund raised Int.(b),numeric,113,112,1,30,38,44,30
+Over-allotment Option (%),numeric,113,107,6,2,38,40,29
+Principal business / industry,string,113,113,0,113,38,45,30
+Listing route / applicable chapter,string,113,113,0,67,38,45,30
+Year-1 financial period end (dd/mm/yy),date,113,113,0,8,38,45,30
+Operating cash flow in year-1 (before annualization),numeric,113,111,2,111,38,43,30
+Cash and cash equivalents at year-1 end,numeric,113,111,2,111,38,43,30
+R&D expensed in year-1 (before annualization),numeric,113,106,7,106,35,42,29
+"Development costs capitalized in year-1 (additions, before annualization)",numeric,113,104,9,14,38,42,24
+Top 5 customers (% of year-1 revenue),numeric,113,99,14,94,38,38,23
+Comments / Annualization factor,numeric,113,113,0,5,38,45,30
+Pre-IPO VC/PE backing (1=yes; 0=no),numeric,113,106,7,2,38,45,23
+Pre-IPO VC backing (1=yes; 0=no),numeric,113,104,9,2,38,45,21
+Pre-IPO PE backing (1=yes; 0=no),numeric,113,106,7,2,38,45,23
+Pre-IPO CVC backing (1=yes; 0=no),numeric,113,94,19,2,38,35,21
+Pre-IPO State/Gov backing (1=yes; 0=no),numeric,113,99,14,2,38,39,22
+Top-tier VC/PE backing (1=yes; 0=no),numeric,113,83,30,2,38,31,14
+Key Pre-IPO investors,string,113,88,25,88,28,38,22
+Pre-IPO institutional shareholding (%),numeric,113,94,19,75,38,37,19
+Pre-IPO investor board seat (1=yes; 0=no),boolean,113,95,18,2,38,40,17
+Earliest Pre-IPO investment round,string,113,87,26,47,28,38,21
+Pre-IPO holding duration (years),numeric,113,94,19,82,38,36,20
+Ultimate controller type,string,113,113,0,76,38,45,30
+Controller economic interest at listing (%),numeric,113,110,3,105,38,43,29
+Controller voting rights at listing (%),numeric,113,111,2,106,38,43,30
+Interest-bearing debt at year-1 end,numeric,113,112,1,112,38,44,30
+Technology commercialization stage,string,113,103,10,82,38,38,27
+Debt repayment (% of planned net IPO proceeds),numeric,113,112,1,8,38,44,30
+Listing board,string,113,113,0,1,38,45,30
+Share class,string,113,113,0,9,38,45,30
+A+H issuer flag,boolean,113,113,0,2,38,45,30
+WVR flag,boolean,113,113,0,2,38,45,30
+Chapter 18A flag,boolean,113,113,0,2,38,45,30
+Chapter 18C flag,boolean,113,113,0,2,38,45,30
+Industry classification code,numeric,113,113,0,34,38,45,30
+Industry classification system and version,string,113,113,0,1,38,45,30
+Incorporation date,date,113,113,0,112,38,45,30
+Firm age at IPO (years),numeric,113,113,0,110,38,45,30
+Place of incorporation,string,113,77,36,2,38,10,29
+Principal place of business,string,113,113,0,90,38,45,30
+Financial statement unit multiplier,numeric,113,95,18,2,38,41,16
+Accounting standard,string,113,113,0,10,38,45,30
+Year-3 financial period start,date,113,113,0,4,38,45,30
+Year-3 financial period end,date,113,113,0,4,38,45,30
+Year-2 financial period start,date,113,113,0,4,38,45,30
+Year-2 financial period end,date,113,113,0,4,38,45,30
+Year-1 financial period start,date,113,113,0,4,38,45,30
+"Year-1 net sales (original, pre-annualization)",numeric,113,113,0,111,38,45,30
+Year-1 profit before tax (original),numeric,113,112,1,112,38,44,30
+Year-1 profit for period (original),numeric,113,112,1,112,38,44,30
+Subscription opening date,date,113,113,0,57,38,45,30
+Subscription closing date,date,113,113,0,62,38,45,30
+H shares after IPO (base; no options),numeric,113,112,1,112,38,45,29
+Gross profit in year-1,numeric,113,111,2,110,38,43,30
+Capital expenditure in year-1,numeric,113,111,2,109,38,43,30
+Audit opinion (year-1),string,113,110,3,18,38,43,29
+Listing expenses (HK$),numeric,113,111,2,105,38,45,28
+Cornerstone investor names,string,113,95,18,95,34,37,24
+Final cornerstone allocation (% of base offer),numeric,113,113,0,89,38,45,30
+Earliest cornerstone unlock date (dd/mm/yy),date,113,95,18,56,34,37,24
+Subscription Ratio (times),numeric,113,113,0,113,38,45,30
+Public applicants,numeric,113,113,0,113,38,45,30
+Public valid applied shares,numeric,113,113,0,113,38,45,30
+Public subscription original wording,string,113,113,0,113,38,45,30
+Pricing date,date,113,59,54,39,28,19,12
+Allotment announcement date,date,113,113,0,63,38,45,30
+Final global offering shares (before over-allotment),numeric,113,113,0,112,38,45,30
+Final public offer shares,numeric,113,113,0,113,38,45,30
+Final placing shares,numeric,113,113,0,113,38,45,30
+Over-allotment shares actually issued,numeric,113,102,11,47,38,45,19
+Greenshoe exercise rate (%),numeric,113,113,0,20,38,45,30
+Actual clawback / reallocation description,string,113,112,1,107,38,44,30
+Net IPO proceeds to issuer (HK$),numeric,113,113,0,113,38,45,30
+Public shareholding at listing (%),numeric,113,112,1,103,38,44,30
+Share base used for both public shareholding ratios,numeric,113,113,0,112,38,45,30
+Unrestricted public shareholding at listing (%),numeric,113,112,1,98,38,44,30
+Free float denominator description,string,113,112,1,65,38,44,30
+Free float denominator shares,numeric,113,112,1,111,38,44,30
+HSI return over 20 trading days before prospectus (%),numeric,113,113,0,56,38,45,30
+HK ordinary IPO count in 90 calendar days before prospectus,numeric,113,113,0,24,38,45,30
+1-month HIBOR before prospectus (%),numeric,113,113,0,52,38,45,30
+Banking system aggregate balance before prospectus (HK$),numeric,113,113,0,34,38,45,30
+First trading day closing price (HK$),numeric,113,113,0,107,38,45,30
+First-day return / Underpricing (%),numeric,113,113,0,108,38,45,30
+Money left on the table (HK$),numeric,113,113,0,108,38,45,30
+First trading day opening price (HK$),numeric,113,113,0,108,38,45,30
+First trading day high (HK$),numeric,113,113,0,109,38,45,30
+First trading day low (HK$),numeric,113,113,0,111,38,45,30
+First trading day volume (shares),numeric,113,113,0,113,38,45,30
+First-day flipping ratio (%),numeric,113,113,0,113,38,45,30
+First trading day turnover (HK$),numeric,113,106,7,106,38,45,23
+Offer mechanism,string,113,110,3,2,38,42,30
+Applicable IPO rules / transition basis,string,113,113,0,3,38,45,30
+Company Chinese Name,string,113,110,3,110,37,44,29
+Current listing status,string,113,113,0,2,38,45,30
+1-month post-IPO close price (HK$),numeric,113,102,11,101,37,45,20
+1-month BHR from Day-1 close (%),numeric,113,102,11,102,37,45,20
+1-month total return from offer price (%),numeric,113,102,11,102,37,45,20
+1-month HSI return (%),numeric,113,102,11,55,37,45,20
+1-month HSTECH return (%),numeric,113,102,11,55,37,45,20
+1-month wealth relative vs HSI,numeric,113,102,11,102,37,45,20
+1-month wealth relative vs HSTECH,numeric,113,102,11,102,37,45,20
+1-month average daily turnover (HK$),numeric,113,102,11,102,37,45,20
+6-month post-IPO close price (HK$),numeric,113,37,76,37,37,0,0
+6-month BHR from Day-1 close (%),numeric,113,37,76,37,37,0,0
+6-month total return from offer price (%),numeric,113,37,76,37,37,0,0
+6-month HSI return (%),numeric,113,37,76,21,37,0,0
+6-month HSTECH return (%),numeric,113,37,76,21,37,0,0
+6-month wealth relative vs HSI,numeric,113,37,76,37,37,0,0
+6-month wealth relative vs HSTECH,numeric,113,37,76,37,37,0,0
+6-month average daily turnover (HK$),numeric,113,37,76,37,37,0,0
+Liquidity decay ratio (6M vs Day-1 turnover),numeric,113,37,76,37,37,0,0
+1-year post-IPO return (%) [Reserved],string,113,0,113,0,0,0,0
+1-year wealth relative vs HSI [Reserved],string,113,0,113,0,0,0,0
+3-year post-IPO return (%) [Reserved],string,113,0,113,0,0,0,0
+3-year wealth relative vs HSI [Reserved],string,113,0,113,0,0,0,0
+18A/18C regulatory milestone status,string,113,113,0,3,38,45,30
+Stabilizing manager,string,113,52,61,16,19,22,11
+Stabilization period end date,string,113,31,82,24,15,10,6
+Stabilization purchases occurred,boolean,113,18,95,2,7,10,1
+Over-allocation shares,numeric,113,33,80,33,15,11,7
+Over-allocation (% of base offer),numeric,113,31,82,10,14,9,8
+Over-allotment option exercise date,string,113,91,22,66,35,38,18
+Shares issued under over-allotment option,numeric,113,70,43,46,22,31,17
+Over-allotment exercise percentage (%),numeric,113,73,40,14,23,32,18
+"Post-stabilization cliff return [-5, +5] (%)",numeric,113,31,82,31,15,10,6
+"Post-stabilization 20-day return [0, +20] (%)",numeric,113,31,82,31,15,10,6
+Post-stabilization volume decay ratio (%),numeric,113,31,82,31,15,10,6
+Day-5 BHR from Day-1 close (%),numeric,113,106,7,105,38,45,23
+Day-5 wealth relative vs HSI,numeric,113,106,7,106,38,45,23
+Day-20 BHR from Day-1 close (%),numeric,113,102,11,102,37,45,20
+Day-20 wealth relative vs HSI,numeric,113,100,13,100,37,45,18
+3-month BHR from Day-1 close (%),numeric,113,82,31,82,37,45,0
+3-month wealth relative vs HSI,numeric,113,65,48,65,37,28,0
+3-month wealth relative vs HSTECH,numeric,113,65,48,65,37,28,0
+3-month average daily turnover (HK$),numeric,113,82,31,82,37,45,0
+Amihud illiquidity (6M mean),numeric,113,27,86,27,27,0,0
+Zero-volume days count (first 6M),numeric,113,27,86,1,27,0,0
+"Return volatility (first 6M daily std dev, %)",numeric,113,27,86,27,27,0,0
+"Maximum drawdown (first 6M, %)",numeric,113,27,86,27,27,0,0
+Controlling shareholder 6-month disposal lockup expiry date,string,113,76,37,53,27,32,17
+Controlling shareholder 12-month cessation of control expiry date,string,113,81,32,60,28,34,19
+"Cornerstone unlock CAR [-5, +5] (%)",numeric,113,25,88,25,25,0,0
+"Cornerstone unlock CAR [-20, +20] (%)",numeric,113,22,91,22,22,0,0
+Cornerstone unlock volume shock ratio,numeric,113,22,91,22,22,0,0
+Lead sponsor name,string,113,106,7,16,38,45,23
+Joint sponsor count,numeric,113,106,7,4,38,45,23
+Sponsor commercial bank affiliate flag,boolean,113,106,7,2,38,45,23
+Underwriting base commission rate (%),numeric,113,106,7,18,38,45,23
+Underwriting discretionary incentive fee rate (%),numeric,113,68,45,1,0,45,23
+Total underwriting fee rate (%),numeric,113,68,45,2,0,45,23
+Cornerstone investor count,numeric,113,69,44,20,38,8,23
+Cornerstone state-owned presence flag,boolean,113,106,7,2,38,45,23
+Crossover fund presence flag,boolean,113,106,7,2,38,45,23
+Pre-IPO institutional investor count,numeric,113,106,7,9,38,45,23
+Pre-IPO state-owned backing flag,boolean,113,106,7,2,38,45,23
+FINI digital settlement regime,string,113,113,0,1,38,45,30
+2025 pricing reform regime,string,113,113,0,1,38,45,30

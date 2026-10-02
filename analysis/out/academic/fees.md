@@ -1,8 +1,8 @@
 # Underwriting commission rates, 2026 (N = 104)
 
 Outcome: disclosed underwriting commission on the HK offer, as a share of proceeds. The derived columns `Underwriting base commission rate`
-and `Total underwriting fee rate` in the master are not used: the total equals 3.5% for 68 issuers and 1.00x% for the other 38 regardless of the disclosed
-commission, so it does not follow from it (see docs/ACADEMIC_EXTENSIONS_2026.md).
+and `Total underwriting fee rate` in the master are not used. Earlier source review found that these derived fields did not reliably follow
+the disclosed commissions (see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md). The regression uses the disclosed HK commission.
 
 ## Distribution
 

@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-09-30",
+  "collection_date": "2026-10-02",
+  "master_mutated": false,
+  "files": {
+    "pipeline/reports/data_gap_collection/6872_whole_payload_review.json": "d7dcaa07b7c0fd37ea01190741d3821c93de13a5187bca961f32f4957209f356",
+    "pipeline/reports/data_gap_collection/6872_formal_rejected_snapshot.json": "bcb4ff436c081acdc046ade0c848b45e43b063d5b6d3286c5fb7b31b00b9ee0e",
+    "pipeline/reports/data_gap_collection/6872_revenue_candidate.json": "34413c4deaa39f17f946b633460e9c980a78d5a92433151d2b8f649d6973c27a",
+    "pipeline/reports/data_gap_collection/ah_four_review.json": "e27a0d1e7b2fb4a2b5bb20b352c5adc5811627f268d25b8d5fa4a37449146a71",
+    "pipeline/reports/data_gap_collection/allocation_review.json": "52cc5270ef7065814295583a7c8be689d839dce96e38bcf95b08d975c7ac1f56",
+    "pipeline/reports/data_gap_collection/financial_vc_review.json": "08e7db2534e751d44777bc395c4aa05cb6bcca87befc8f079595f3608db25201",
+    "pipeline/reports/data_gap_collection/6872_revenue_review.json": "32904dcb1a6c349f2cf7291df9f51cfc6a4d24afee58c46f77d92499ad22e7ca",
+    "pipeline/reports/data_gap_collection/6872_formal_before.json": "b619f5a5d376d580bdb39c8cd3289ce5d997842fbd5f170c7229817e92099085",
+    "pipeline/reports/data_gap_collection/allocation_tiers_reconciled.csv": "aec20675c254ccf31888ad87083344d3f369ed1c7edbddeec782a27ae91d616b",
+    "pipeline/reports/data_gap_collection/allocation_exceptions.csv": "e0ca27bef6239e89ea4e270b9cf9fe23edc98b55432226c3edf2df156e275d81",
+    "pipeline/reports/data_gap_collection/ah_four_added.csv": "d41d258eeab96421cd2f4269be1f01ff65145925f8cbe0b7eac836bf1f9b8275",
+    "pipeline/reports/data_gap_collection/allocation_tiers_clean.csv": "d028f0d41c0239832b5c1aa3ada22c7fec8f6f1c108c09ee8e86ec85c2b87e67",
+    "pipeline/reports/data_gap_collection/allocation_source_index.csv": "1b665146cfb5740028d51d727f2bcec62881a6bd4269f92ad8af2b9054054f68",
+    "pipeline/reports/data_gap_collection/allocation_coverage.csv": "5810528050208ca2fbc8233b37cf62b7a115129940323e8479af23bb277f89a0",
+    "pipeline/reports/data_gap_collection/board_lots.csv": "57eb42576ae361ad1b8a0d370c07fe4143b5c56fda639b308f1c0f8b05bd744c",
+    "pipeline/reports/data_gap_collection/allocation_tiers_candidates.csv": "420901bafc378a7f350d937e1dbf87269eb2cc31578888f6efce08b7d2b948ec",
+    "pipeline/reports/data_gap_collection/financial_vc_ledger.csv": "2201c756f97091048ceedc3967beb41824bdfcd9e082ff3b69938c2c29abaac2",
+    "pipeline/reports/data_gap_collection/financial_vc_review.md": "d0b117097027df0ca06415218c9841195126c521c7c52980d0dfc04c152347ee",
+    "pipeline/reports/data_gap_collection/README.md": "03e884940d0dfaceeedf56d1ce646ede59c92f744b0dd5c309cbf35d58f9cce5",
+    "pipeline/reports/data_gap_collection/ah_four_review.md": "9a8c78cbb6971ff66ef6281e265757516dfad05eb9799cbc7be1cb67bbe59c80",
+    "analysis/allocation_tiers_2026.py": "b8e0da492ea8b89c24da485d5df2f5be41e8152dc6096b7c03c4da2e7df2c1fe",
+    "analysis/tests/test_allocation_tiers.py": "8a0eea0af29475e8f7c4d2aff211e13d881a8522eaaba4f5a9027cf7101f354b",
+    "pipeline/exports/HKIPO-2026-AH-reference.csv": "7d1464f0b2f0d394171c0d9bcadb87bf4d65f04b7fc1d329964c897606fdae56",
+    "pipeline/exports/HKIPO-MASTER-AH-reference.csv": "4b963485b398a3eba9f9627e75684ae60c4ee16d66e3a637f2aedd910d464f7f",
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "c2a2c7bfd91ee838735915cb0286710cac2e66ba2c7cec4c9e69552f51a221bd"
+  }
+}

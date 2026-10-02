@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-09-30",
+  "sample_n": 113,
+  "registered_fields": 202,
+  "inputs": {
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "a003174997a2b53bae8f96d9bb3c5649399e56bb58d20704299871415c6e9af4",
+    "analysis/basic_statistics_2026.py": "52087ae5e4a056d6cb0e825102c93597d00ff2c2c042e870aff209b5abe4488c",
+    "pipeline/registry/HKIPO_Variable_Registry.yaml": "5c186faec322c9be73c35f9378fa75882195d11d0949725408bf49236d35e983"
+  },
+  "pandas_version": "3.0.2"
+}
