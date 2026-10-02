@@ -1,0 +1,158 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 367,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Yingke No. 1",
+          "55.00",
+          "1,309,500",
+          "8.07%"
+        ],
+        [
+          "Hongkong High Tech",
+          "54.95",
+          "1,308,300",
+          "8.06%"
+        ],
+        [
+          "Total",
+          "109.95",
+          "2,617,800",
+          "16.13%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Yingke No. 1         | 55.00                 | 1,309,500              | 8.07%                         |\n| Hongkong High Tech   | 54.95                 | 1,308,300              | 8.06%                         |\n| Total                | 109.95                | 2,617,800              | 16.13%                        |",
+      "metadata": {
+        "investor_count": 2
+      }
+    },
+    {
+      "name": "cornerstone",
+      "page": 368,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Yingke No. 1",
+          "55.00",
+          "1,222,200",
+          "7.53%"
+        ],
+        [
+          "Hongkong High Tech",
+          "54.95",
+          "1,221,100",
+          "7.53%"
+        ],
+        [
+          "Total",
+          "109.95",
+          "2,443,300",
+          "15.06%"
+        ],
+        [
+          "Yingke No. 1",
+          "55.00",
+          "1,145,800",
+          "7.06%"
+        ],
+        [
+          "Hongkong High Tech",
+          "54.95",
+          "1,144,750",
+          "7.05%"
+        ],
+        [
+          "Total",
+          "109.95",
+          "2,290,550",
+          "14.12%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Yingke No. 1         | 55.00                 | 1,222,200              | 7.53%                         |\n| Hongkong High Tech   | 54.95                 | 1,221,100              | 7.53%                         |\n| Total                | 109.95                | 2,443,300              | 15.06%                        |\n| Yingke No. 1         | 55.00                 | 1,145,800              | 7.06%                         |\n| Hongkong High Tech   | 54.95                 | 1,144,750              | 7.05%                         |\n| Total                | 109.95                | 2,290,550              | 14.12%                        |",
+      "metadata": {
+        "investor_count": 4
+      }
+    }
+  ],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "214,092",
+          "100.0",
+          "549,362",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "48,383",
+          "22.6",
+          "140,430",
+          "25.6"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 214,092 | 100.0  | 549,362 | 100.0 |\n| Gross profit     | 48,383  | 22.6   | 140,430 | 25.6  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 382,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "214,092",
+          "100.0",
+          "549,362",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "48,383",
+          "22.6",
+          "140,430",
+          "25.6"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | 214,092 | 100.0  | 549,362 | 100.0 |\n| Gross profit     | 48,383  | 22.6   | 140,430 | 25.6  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

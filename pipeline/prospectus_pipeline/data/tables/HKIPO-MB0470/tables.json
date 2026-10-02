@@ -1,0 +1,253 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 282,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue",
+          "1,566,163,034",
+          "100.00%"
+        ],
+        [
+          "A Shares in issue",
+          "1,566,163,034",
+          "94.36%"
+        ],
+        [
+          "the Global Offering",
+          "93,616,000",
+          "5.64%"
+        ],
+        [
+          "Total",
+          "1,659,779,034",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares in issue     | 1,566,163,034    | 100.00%                    |\n| A Shares in issue     | 1,566,163,034    | 94.36%                     |\n| the Global Offering   | 93,616,000       | 5.64%                      |\n| Total                 | 1,659,779,034    | 100.00%                    |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 354,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Oaktree",
+          "30",
+          "5,106,200",
+          "5.45%"
+        ],
+        [
+          "Pinpoint",
+          "20",
+          "3,404,100",
+          "3.64%"
+        ],
+        [
+          "AMF",
+          "100",
+          "17,020,700",
+          "18.18%"
+        ],
+        [
+          "MY Asian",
+          "30",
+          "5,106,200",
+          "5.45%"
+        ],
+        [
+          "MSIP",
+          "20",
+          "3,404,100",
+          "3.64%"
+        ],
+        [
+          "Ovata Capital",
+          "20",
+          "3,404,100",
+          "3.64%"
+        ],
+        [
+          "QRT",
+          "20",
+          "3,404,100",
+          "3.64%"
+        ],
+        [
+          "Swaps)",
+          "15",
+          "2,553,100",
+          "2.73%"
+        ],
+        [
+          "Millennium",
+          "10",
+          "1,702,000",
+          "1.82%"
+        ],
+        [
+          "Rome Garden",
+          "10",
+          "1,702,000",
+          "1.82%"
+        ],
+        [
+          "Total",
+          "275",
+          "46,806,600",
+          "50.00%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Oaktree              | 30                    | 5,106,200              | 5.45%                         |\n| Pinpoint             | 20                    | 3,404,100              | 3.64%                         |\n| AMF                  | 100                   | 17,020,700             | 18.18%                        |\n| MY Asian             | 30                    | 5,106,200              | 5.45%                         |\n| MSIP                 | 20                    | 3,404,100              | 3.64%                         |\n| Ovata Capital        | 20                    | 3,404,100              | 3.64%                         |\n| QRT                  | 20                    | 3,404,100              | 3.64%                         |\n| Swaps)               | 15                    | 2,553,100              | 2.73%                         |\n| Millennium           | 10                    | 1,702,000              | 1.82%                         |\n| Rome Garden          | 10                    | 1,702,000              | 1.82%                         |\n| Total                | 275                   | 46,806,600             | 50.00%                        |",
+      "metadata": {
+        "investor_count": 10
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "estimate the listing expenses to consist of approximately",
+          "HK$81.5 million"
+        ],
+        [
+          "total listing expenses, approximately",
+          "HK$115.3 million"
+        ],
+        [
+          "the Global Offering after deducting the underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                | Rate / Amount Disclosed |\n| --------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                         | fees,                   |\n| estimate the listing expenses to consist of approximately       | HK$81.5 million         |\n| total listing expenses, approximately                           | HK$115.3 million        |\n| the Global Offering after deducting the underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 18,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "13,836",
+          "100.0",
+          "16,483",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "5,065",
+          "36.6",
+          "5,393",
+          "32.7"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | 13,836 | 100.0  | 16,483 | 100.0 |\n| Gross profit     | 5,065  | 36.6   | 5,393  | 32.7  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 25,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "32,906",
+          "35,222",
+          "36,094",
+          "38,923"
+        ],
+        [
+          "Total liabilities",
+          "21,781",
+          "23,374",
+          "24,515",
+          "26,221"
+        ],
+        [
+          "Total equity",
+          "11,125",
+          "11,847",
+          "11,579",
+          "12,702"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5  |\n| ----------------- | ------ | ------ | ------ | ------ |\n| Total assets      | 32,906 | 35,222 | 36,094 | 38,923 |\n| Total liabilities | 21,781 | 23,374 | 24,515 | 26,221 |\n| Total equity      | 11,125 | 11,847 | 11,579 | 12,702 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 416,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "11,125,214",
+          "11,847,466",
+          "11,579,385",
+          "12,701,546"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5      |\n| ---------------- | ---------- | ---------- | ---------- | ---------- |\n| Total equity     | 11,125,214 | 11,847,466 | 11,579,385 | 12,701,546 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

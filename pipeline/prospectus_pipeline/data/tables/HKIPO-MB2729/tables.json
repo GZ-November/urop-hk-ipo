@@ -1,0 +1,93 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "The total listing expenses to be borne by us are estimated to be approximately",
+          "RMB52.6"
+        ],
+        [
+          "million. The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                      | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------- | ----------------------- |\n| The total listing expenses to be borne by us are estimated to be approximately        | RMB52.6                 |\n| million. The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "656,924",
+          "550,790",
+          "721,417",
+          "344,216"
+        ],
+        [
+          "Gross profit",
+          "103,428",
+          "91,667",
+          "113,562",
+          "60,221"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 656,924 | 550,790 | 721,417 | 344,216 |\n| Gross profit     | 103,428 | 91,667  | 113,562 | 60,221  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 223,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "656,924",
+          "550,790",
+          "721,417",
+          "344,216"
+        ],
+        [
+          "Gross profit",
+          "103,428",
+          "91,667",
+          "113,562",
+          "60,221"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 656,924 | 550,790 | 721,417 | 344,216 |\n| Gross profit     | 103,428 | 91,667  | 113,562 | 60,221  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

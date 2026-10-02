@@ -1,0 +1,129 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 394,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "H Shares to be converted from Unlisted Shares(2)",
+          "134,203,110",
+          "83.0%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering",
+          "27,487,400",
+          "17.0%"
+        ],
+        [
+          "Total",
+          "161,690,510",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| H Shares to be converted from Unlisted Shares(2)      | 134,203,110      | 83.0%                      |\n| H Shares to be issued pursuant to the Global Offering | 27,487,400       | 17.0%                      |\n| Total                                                 | 161,690,510      | 100.0%                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 32,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$1,473.6 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$1,473.6 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 33,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "HK$119.9 million"
+        ],
+        [
+          "million. During the Track Record Period, listing expenses of",
+          "RMB21.4 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                     | Rate / Amount Disclosed |\n| -------------------------------------------------------------------- | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately | HK$119.9 million        |\n| million. During the Track Record Period, listing expenses of         | RMB21.4 million         |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 22,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Gross Profit",
+          "20",
+          "130,724",
+          "64,195",
+          "97,222"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1 | Col 5  |\n| ---------------- | ------ | ------- | ------ | ------ |\n| Gross Profit     | 20     | 130,724 | 64,195 | 97,222 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "716,248",
+          "650,858",
+          "1,000,581"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1    |\n| ---------------- | ------- | ------- | --------- |\n| Total assets     | 716,248 | 650,858 | 1,000,581 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

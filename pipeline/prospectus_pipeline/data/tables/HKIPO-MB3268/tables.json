@@ -1,0 +1,121 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 364,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "261,756,700",
+          "88.21%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering . . . . . .",
+          "35,000,000",
+          "11.79%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "296,756,700",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                         | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         | 261,756,700      | 88.21%                     |\n| H Shares to be issued pursuant to the Global Offering . . . . . .                             | 35,000,000       | 11.79%                     |\n| Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 296,756,700      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "listing expenses, which relate to the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                             | Rate / Amount Disclosed |\n| -------------------------------------------- | ----------------------- |\n| listing expenses, which relate to the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 23,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "2,305,932",
+          "100.0",
+          "2,147,336",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "405,375",
+          "17.6",
+          "396,138",
+          "18.4"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1    | Col 5 |\n| ---------------- | --------- | ------ | --------- | ----- |\n| Revenue          | 2,305,932 | 100.0  | 2,147,336 | 100.0 |\n| Gross profit     | 405,375   | 17.6   | 396,138   | 18.4  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 25,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total Equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total liabilities | .      | .      | .      | .     |\n| Total Equity      | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

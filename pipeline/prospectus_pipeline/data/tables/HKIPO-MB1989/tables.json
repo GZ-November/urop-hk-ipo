@@ -1,0 +1,193 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 261,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "CPE . . . . . . . . . . . . . . . . . . . . .",
+          "15.90",
+          "1,730,200",
+          "3.76%"
+        ],
+        [
+          "Yuanfeng OTC Swaps) . . . . . . . . .",
+          "14.10",
+          "1,534,300",
+          "3.34%"
+        ],
+        [
+          "CITICS Client TRS). . . . . . . . . . .",
+          "0.82",
+          "88,700",
+          "0.19%"
+        ],
+        [
+          "HK Greenwoods . . . . . . . . . . . . . .",
+          "29.18",
+          "3,175,800",
+          "6.90%"
+        ],
+        [
+          "UBS AM Singapore . . . . . . . . . . . .",
+          "30.00",
+          "3,264,500",
+          "7.10%"
+        ],
+        [
+          "Value Partners . . . . . . . . . . . . . . .",
+          "30.00",
+          "3,264,500",
+          "7.10%"
+        ],
+        [
+          "Eastspring . . . . . . . . . . . . . . . . .",
+          "15.00",
+          "1,632,200",
+          "3.55%"
+        ],
+        [
+          "GBAHIL . . . . . . . . . . . . . . . . . .",
+          "15.00",
+          "1,632,200",
+          "3.55%"
+        ],
+        [
+          "MY Asian . . . . . . . . . . . . . . . . . .",
+          "10.00",
+          "1,088,100",
+          "2.37%"
+        ],
+        [
+          "Barings . . . . . . . . . . . . . . . . . . .",
+          "10.00",
+          "1,088,100",
+          "2.37%"
+        ],
+        [
+          "Dajia Life . . . . . . . . . . . . . . . . .",
+          "10.00",
+          "1,088,100",
+          "2.37%"
+        ],
+        [
+          "ICBC Wealth . . . . . . . . . . . . . . . .",
+          "10.00",
+          "1,088,100",
+          "2.37%"
+        ],
+        [
+          "Total. . . . . . . . . . . . . . . . . . . . .",
+          "190.00",
+          "20,674,800",
+          "44.95%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                           | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ---------------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| CPE . . . . . . . . . . . . . . . . . . . . .  | 15.90                 | 1,730,200              | 3.76%                         |\n| Yuanfeng OTC Swaps) . . . . . . . . .          | 14.10                 | 1,534,300              | 3.34%                         |\n| CITICS Client TRS). . . . . . . . . . .        | 0.82                  | 88,700                 | 0.19%                         |\n| HK Greenwoods . . . . . . . . . . . . . .      | 29.18                 | 3,175,800              | 6.90%                         |\n| UBS AM Singapore . . . . . . . . . . . .       | 30.00                 | 3,264,500              | 7.10%                         |\n| Value Partners . . . . . . . . . . . . . . .   | 30.00                 | 3,264,500              | 7.10%                         |\n| Eastspring . . . . . . . . . . . . . . . . .   | 15.00                 | 1,632,200              | 3.55%                         |\n| GBAHIL . . . . . . . . . . . . . . . . . .     | 15.00                 | 1,632,200              | 3.55%                         |\n| MY Asian . . . . . . . . . . . . . . . . . .   | 10.00                 | 1,088,100              | 2.37%                         |\n| Barings . . . . . . . . . . . . . . . . . . .  | 10.00                 | 1,088,100              | 2.37%                         |\n| Dajia Life . . . . . . . . . . . . . . . . .   | 10.00                 | 1,088,100              | 2.37%                         |\n| ICBC Wealth . . . . . . . . . . . . . . . .    | 10.00                 | 1,088,100              | 2.37%                         |\n| Total. . . . . . . . . . . . . . . . . . . . . | 190.00                | 20,674,800             | 44.95%                        |",
+      "metadata": {
+        "investor_count": 13
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 25,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "(such as the discretionary incentive fee) incurred in connection with the Global",
+          "Offering."
+        ],
+        [
+          "estimate that our listing expenses will be approximately",
+          "RMB115.8 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                 | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                          | fees,                   |\n| (such as the discretionary incentive fee) incurred in connection with the Global | Offering.               |\n| estimate that our listing expenses will be approximately                         | RMB115.8 million        |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 20,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |\n| Total equity      | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 413,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Total equity     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

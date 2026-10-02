@@ -1,0 +1,98 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 39,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Our listing expenses mainly include (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "underwriting fees and commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                             | Rate / Amount Disclosed |\n| ------------------------------------------------------------ | ----------------------- |\n| Our listing expenses mainly include (i) underwriting-related | expenses,               |\n| underwriting fees and commission                             | s,                      |",
+      "metadata": {
+        "items_count": 2
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 40,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$3,818.3 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$3,818.3 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 29,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "–",
+          "–",
+          "3,460",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | –      | –      | 3,460  | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    },
+    {
+      "name": "financials",
+      "page": 422,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "–",
+          "–",
+          "3,460",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | –      | –      | 3,460  | 100.0 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

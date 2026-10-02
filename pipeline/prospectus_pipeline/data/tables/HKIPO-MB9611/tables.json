@@ -1,0 +1,237 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 312,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares",
+          "470,331,544",
+          "90.00%"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "52,259,100",
+          "10.00%"
+        ],
+        [
+          "Total",
+          "522,590,644",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| A Shares                                        | 470,331,544      | 90.00%                     |\n| H Shares to be issued under the Global Offering | 52,259,100       | 10.00%                     |\n| Total                                           | 522,590,644      | 100.0                      |",
+      "metadata": {
+        "total_rows": 3
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 313,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares",
+          "470,331,544",
+          "88.67%"
+        ],
+        [
+          "H Shares to be issued under the Global Offering",
+          "60,097,900",
+          "11.33%"
+        ],
+        [
+          "Total",
+          "530,429,444",
+          "100.0"
+        ]
+      ],
+      "markdown": "| Description of Shares                           | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------- | ---------------- | -------------------------- |\n| A Shares                                        | 470,331,544      | 88.67%                     |\n| H Shares to be issued under the Global Offering | 60,097,900       | 11.33%                     |\n| Total                                           | 530,429,444      | 100.0                      |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 384,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Qualcomm 8.0",
+          "62.3",
+          "2,010,613",
+          "3.85"
+        ],
+        [
+          "OmniVision HK 10.0",
+          "77.9",
+          "2,513,200",
+          "4.81"
+        ],
+        [
+          "Hong Kong Yuto 10.0",
+          "77.9",
+          "2,513,200",
+          "4.81"
+        ],
+        [
+          "Swaps) 8.0",
+          "62.3",
+          "2,010,613",
+          "3.85"
+        ],
+        [
+          "Endless Growth 5.0",
+          "39.0",
+          "1,256,600",
+          "2.40"
+        ],
+        [
+          "Total 56.5",
+          "440.2",
+          "14,200,900",
+          "27.17"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Qualcomm 8.0         | 62.3                  | 2,010,613              | 3.85                          |\n| OmniVision HK 10.0   | 77.9                  | 2,513,200              | 4.81                          |\n| Hong Kong Yuto 10.0  | 77.9                  | 2,513,200              | 4.81                          |\n| Swaps) 8.0           | 62.3                  | 2,010,613              | 3.85                          |\n| Endless Growth 5.0   | 39.0                  | 1,256,600              | 2.40                          |\n| Total 56.5           | 440.2                 | 14,200,900             | 27.17                         |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 29,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$1,520.7 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| HK$1,520.7 million, after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "29,343,152",
+          "100.0",
+          "27,185,064",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "2,365,121",
+          "8.1",
+          "2,590,156",
+          "9.5"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 29,343,152 | 100.0  | 27,185,064 | 100.0 |\n| Gross profit     | 2,365,121  | 8.1    | 2,590,156  | 9.5   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "14,530,475",
+          "19,838,899",
+          "26,345,614",
+          "27,306,843"
+        ],
+        [
+          "Total liabilities",
+          "11,374,391",
+          "16,013,502",
+          "20,752,484",
+          "21,567,013"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3     | Year-2     | Year-1     | Col 5      |\n| ----------------- | ---------- | ---------- | ---------- | ---------- |\n| Total assets      | 14,530,475 | 19,838,899 | 26,345,614 | 27,306,843 |\n| Total liabilities | 11,374,391 | 16,013,502 | 20,752,484 | 21,567,013 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 326,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "29,343,152",
+          "100.0",
+          "27,185,064",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "2,365,121",
+          "8.1",
+          "2,590,156",
+          "9.5"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2 | Year-1     | Col 5 |\n| ---------------- | ---------- | ------ | ---------- | ----- |\n| Revenue          | 29,343,152 | 100.0  | 27,185,064 | 100.0 |\n| Gross profit     | 2,365,121  | 8.1    | 2,590,156  | 9.5   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

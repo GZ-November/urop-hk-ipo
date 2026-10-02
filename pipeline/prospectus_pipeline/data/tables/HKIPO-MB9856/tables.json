@@ -1,0 +1,250 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 283,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Mount Altai",
+          "15.0",
+          "3,568,100",
+          "2.07%"
+        ],
+        [
+          "Peak View Capital",
+          "15.0",
+          "3,568,100",
+          "2.07%"
+        ],
+        [
+          "Sinofortune International",
+          "15.0",
+          "3,568,100",
+          "2.07%"
+        ],
+        [
+          "Ambre Lau Trade Limited",
+          "15.0",
+          "3,568,100",
+          "2.07%"
+        ],
+        [
+          "SCV Delta",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "HK",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Opportunity Fund LP",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Turquoise Hime (ORIX)",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "CSC OTC Swap",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Management Limited",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Management Limited",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "GigaDevice",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Amlogic Hong Kong",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Atlas Venture Limited",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Alphahill Capital",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "ODI Trust",
+          "10.0",
+          "2,378,700",
+          "1.38%"
+        ],
+        [
+          "Barings",
+          "5.0",
+          "1,189,300",
+          "0.69%"
+        ],
+        [
+          "Total",
+          "340.0",
+          "80,876,700",
+          "47.02%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor      | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Mount Altai               | 15.0                  | 3,568,100              | 2.07%                         |\n| Peak View Capital         | 15.0                  | 3,568,100              | 2.07%                         |\n| Sinofortune International | 15.0                  | 3,568,100              | 2.07%                         |\n| Ambre Lau Trade Limited   | 15.0                  | 3,568,100              | 2.07%                         |\n| SCV Delta                 | 10.0                  | 2,378,700              | 1.38%                         |\n| HK                        | 10.0                  | 2,378,700              | 1.38%                         |\n| Opportunity Fund LP       | 10.0                  | 2,378,700              | 1.38%                         |\n| Turquoise Hime (ORIX)     | 10.0                  | 2,378,700              | 1.38%                         |\n| CSC OTC Swap              | 10.0                  | 2,378,700              | 1.38%                         |\n| Management Limited        | 10.0                  | 2,378,700              | 1.38%                         |\n| Management Limited        | 10.0                  | 2,378,700              | 1.38%                         |\n| GigaDevice                | 10.0                  | 2,378,700              | 1.38%                         |\n| Amlogic Hong Kong         | 10.0                  | 2,378,700              | 1.38%                         |\n| Atlas Venture Limited     | 10.0                  | 2,378,700              | 1.38%                         |\n| Alphahill Capital         | 10.0                  | 2,378,700              | 1.38%                         |\n| ODI Trust                 | 10.0                  | 2,378,700              | 1.38%                         |\n| Barings                   | 5.0                   | 1,189,300              | 0.69%                         |\n| Total                     | 340.0                 | 80,876,700             | 47.02%                        |",
+      "metadata": {
+        "investor_count": 17
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 20,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "The estimated total listing expenses (based on the indicated Offer Price of",
+          "HK$32.96"
+        ],
+        [
+          "Listing. We expect to incur additional listing expenses of",
+          "RMB152.8 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                            | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------- | ----------------------- |\n| The estimated total listing expenses (based on the indicated Offer Price of | HK$32.96                |\n| Listing. We expect to incur additional listing expenses of                  | RMB152.8 million        |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 13,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "4,238,989",
+          "100.0",
+          "5,086,600",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "873,912",
+          "20.6",
+          "883,089",
+          "17.4"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2 | Year-1    | Col 5 |\n| ---------------- | --------- | ------ | --------- | ----- |\n| Revenue          | 4,238,989 | 100.0  | 5,086,600 | 100.0 |\n| Gross profit     | 873,912   | 20.6   | 883,089   | 17.4  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "5,480,854",
+          "7,759,869",
+          "7,743,144",
+          "11,009,094"
+        ],
+        [
+          "Total liabilities",
+          "3,547,280",
+          "5,831,593",
+          "3,985,422",
+          "6,621,235"
+        ],
+        [
+          "Total equity",
+          "1,933,574",
+          "1,928,276",
+          "3,757,722",
+          "4,387,859"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    | Col 5      |\n| ----------------- | --------- | --------- | --------- | ---------- |\n| Total assets      | 5,480,854 | 7,759,869 | 7,743,144 | 11,009,094 |\n| Total liabilities | 3,547,280 | 5,831,593 | 3,985,422 | 6,621,235  |\n| Total equity      | 1,933,574 | 1,928,276 | 3,757,722 | 4,387,859  |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 334,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Profit for the period",
+          "–",
+          "–",
+          "–",
+          "–"
+        ]
+      ],
+      "markdown": "| Financial Metric      | Year-3 | Year-2 | Year-1 | Col 5 |\n| --------------------- | ------ | ------ | ------ | ----- |\n| Profit for the period | –      | –      | –      | –     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}
