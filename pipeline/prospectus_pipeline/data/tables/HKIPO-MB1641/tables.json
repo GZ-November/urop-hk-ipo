@@ -1,0 +1,59 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 21,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "We did not record any listing expenses in connection with the Global Offering",
+          "for 2022,"
+        ],
+        [
+          "2024, and we recorded listing expenses of",
+          "RMB0.5 million"
+        ],
+        [
+          "Global Offering at the Offer Price of HK$12.26, including (1) underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                      | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------- | ----------------------- |\n| We did not record any listing expenses in connection with the Global Offering         | for 2022,               |\n| 2024, and we recorded listing expenses of                                             | RMB0.5 million          |\n| Global Offering at the Offer Price of HK$12.26, including (1) underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 15,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

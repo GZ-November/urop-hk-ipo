@@ -1,0 +1,277 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 312,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue",
+          "425,509,152",
+          "100.00%"
+        ],
+        [
+          "A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "425,509,152",
+          "89.40%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering . . . . . .",
+          "50,451,800",
+          "10.60%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "475,960,952",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                         | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue                                                                             | 425,509,152      | 100.00%                    |\n| A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         | 425,509,152      | 89.40%                     |\n| H Shares to be issued pursuant to the Global Offering . . . . . .                             | 50,451,800       | 10.60%                     |\n| Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 475,960,952      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 4
+      }
+    },
+    {
+      "name": "share_capital",
+      "page": 313,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "425,509,152",
+          "88.00%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering . . . . . .",
+          "58,019,500",
+          "12.00%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+          "483,528,652",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                         | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         | 425,509,152      | 88.00%                     |\n| H Shares to be issued pursuant to the Global Offering . . . . . .                             | 58,019,500       | 12.00%                     |\n| Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 483,528,652      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 325,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Hongxing International . . . . . . .",
+          "60.0",
+          "4,884,200",
+          "9.68%"
+        ],
+        [
+          "GIC Private Limited. . . . . . . . .",
+          "90.0",
+          "7,326,300",
+          "14.52%"
+        ],
+        [
+          "Schroders. . . . . . . . . . . . . . . .",
+          "75.0",
+          "6,105,200",
+          "12.10%"
+        ],
+        [
+          "HHLRA. . . . . . . . . . . . . . . . .",
+          "25.0",
+          "2,035,000",
+          "4.03%"
+        ],
+        [
+          "MSIP . . . . . . . . . . . . . . . . . .",
+          "10.0",
+          "814,000",
+          "1.61%"
+        ],
+        [
+          "Fullgoal. . . . . . . . . . . . . . . . .",
+          "10.0",
+          "814,000",
+          "1.61%"
+        ],
+        [
+          "Fullgoal HK . . . . . . . . . . . .",
+          "3.0",
+          "569,800",
+          "1.13%"
+        ],
+        [
+          "Fullgoal Fund . . . . . . . . . . .",
+          "7.0",
+          "244,200",
+          "0.48%"
+        ],
+        [
+          "Longrising OTC Swaps) . . . .",
+          "10.0",
+          "814,000",
+          "1.61%"
+        ],
+        [
+          "ICBC Wealth . . . . . . . . . . . . .",
+          "10.0",
+          "814,000",
+          "1.61%"
+        ],
+        [
+          "Wind Sabre . . . . . . . . . . . . . .",
+          "10.0",
+          "814,000",
+          "1.61%"
+        ],
+        [
+          "OmniVision HK . . . . . . . . . . .",
+          "9.8",
+          "797,700",
+          "1.58%"
+        ],
+        [
+          "Total",
+          "309.8",
+          "25,218,400",
+          "49.99%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                      | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Hongxing International . . . . . . .      | 60.0                  | 4,884,200              | 9.68%                         |\n| GIC Private Limited. . . . . . . . .      | 90.0                  | 7,326,300              | 14.52%                        |\n| Schroders. . . . . . . . . . . . . . . .  | 75.0                  | 6,105,200              | 12.10%                        |\n| HHLRA. . . . . . . . . . . . . . . . .    | 25.0                  | 2,035,000              | 4.03%                         |\n| MSIP . . . . . . . . . . . . . . . . . .  | 10.0                  | 814,000                | 1.61%                         |\n| Fullgoal. . . . . . . . . . . . . . . . . | 10.0                  | 814,000                | 1.61%                         |\n| Fullgoal HK . . . . . . . . . . . .       | 3.0                   | 569,800                | 1.13%                         |\n| Fullgoal Fund . . . . . . . . . . .       | 7.0                   | 244,200                | 0.48%                         |\n| Longrising OTC Swaps) . . . .             | 10.0                  | 814,000                | 1.61%                         |\n| ICBC Wealth . . . . . . . . . . . . .     | 10.0                  | 814,000                | 1.61%                         |\n| Wind Sabre . . . . . . . . . . . . . .    | 10.0                  | 814,000                | 1.61%                         |\n| OmniVision HK . . . . . . . . . . .       | 9.8                   | 797,700                | 1.58%                         |\n| Total                                     | 309.8                 | 25,218,400             | 49.99%                        |",
+      "metadata": {
+        "investor_count": 12
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 22,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represent expenses incurred in connection with the Global",
+          "Offering."
+        ]
+      ],
+      "markdown": "| Item Description                                                               | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------ | ----------------------- |\n| (2) Listing expenses represent expenses incurred in connection with the Global | Offering.               |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 34,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "Option is not exercised) of the Global Offering. We recorded listing expenses of",
+          "nil,"
+        ],
+        [
+          "respectively. We expect to incur listing expenses of approximately",
+          "HK$202.6 million"
+        ],
+        [
+          "composed of (i) underwriting commission and discretionary fees of approximately",
+          "HK$169.2"
+        ]
+      ],
+      "markdown": "| Item Description                                                                 | Rate / Amount Disclosed |\n| -------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                          | fees,                   |\n| Option is not exercised) of the Global Offering. We recorded listing expenses of | nil,                    |\n| respectively. We expect to incur listing expenses of approximately               | HK$202.6 million        |\n| composed of (i) underwriting commission and discretionary fees of approximately  | HK$169.2                |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          "947,818",
+          "34.0",
+          "476,886",
+          "29.2"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------- | ------ | ------- | ----- |\n| Revenue          | .       | .      | .       | .     |\n| Gross profit     | 947,818 | 34.0   | 476,886 | 29.2  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Total assets     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

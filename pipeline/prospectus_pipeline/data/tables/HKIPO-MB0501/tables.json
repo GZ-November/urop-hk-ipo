@@ -1,0 +1,198 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 292,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Wildlife Willow Limited . . . . . .",
+          "70.00",
+          "5,196,600",
+          "11.35%"
+        ],
+        [
+          "UBS AM Singapore . . . . . . . . . .",
+          "40.00",
+          "2,969,500",
+          "6.48%"
+        ],
+        [
+          "FOL . . . . . . . . . . . . . . . . . . . . . .",
+          "33.68",
+          "2,500,000",
+          "5.46%"
+        ],
+        [
+          "Fund SPC . . . . . . . . . . . . . . . .",
+          "20.00",
+          "1,484,700",
+          "3.24%"
+        ],
+        [
+          "Dajia Life . . . . . . . . . . . . . . . . .",
+          "10.00",
+          "742,300",
+          "1.62%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . . . . . . . .",
+          "279.38",
+          "20,740,200",
+          "45.28%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                            | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Wildlife Willow Limited . . . . . .             | 70.00                 | 5,196,600              | 11.35%                        |\n| UBS AM Singapore . . . . . . . . . .            | 40.00                 | 2,969,500              | 6.48%                         |\n| FOL . . . . . . . . . . . . . . . . . . . . . . | 33.68                 | 2,500,000              | 5.46%                         |\n| Fund SPC . . . . . . . . . . . . . . . .        | 20.00                 | 1,484,700              | 3.24%                         |\n| Dajia Life . . . . . . . . . . . . . . . . .    | 10.00                 | 742,300                | 1.62%                         |\n| Total . . . . . . . . . . . . . . . . . . . . . | 279.38                | 20,740,200             | 45.28%                        |",
+      "metadata": {
+        "investor_count": 6
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 29,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "per Offer Share and the full payment of the discretionary incentive fee, if",
+          "any,"
+        ],
+        [
+          "(i) underwriting-related expenses, including but not limited to commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                            | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------- | ----------------------- |\n| per Offer Share and the full payment of the discretionary incentive fee, if | any,                    |\n| (i) underwriting-related expenses, including but not limited to commission  | s,                      |",
+      "metadata": {
+        "items_count": 2
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 362,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "HK$104.80 per Offer Share and the full payment of the discretionary incentive fee, if",
+          "any,"
+        ],
+        [
+          "(i) underwriting-related expenses, including but not limited to commission",
+          "s,"
+        ],
+        [
+          "During the Track Record Period, we incurred listing expenses of",
+          "RMB21.9 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                      | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------- | ----------------------- |\n| HK$104.80 per Offer Share and the full payment of the discretionary incentive fee, if | any,                    |\n| (i) underwriting-related expenses, including but not limited to commission            | s,                      |\n| During the Track Record Period, we incurred listing expenses of                       | RMB21.9 million         |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 14,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | .      | .      | .      | .     |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 19,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 408,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Total assets     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

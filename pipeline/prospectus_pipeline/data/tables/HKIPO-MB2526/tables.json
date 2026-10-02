@@ -1,0 +1,134 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 240,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "As such, under the SFO, each of Hangzhou Zijingang and Mr. YE Fu is deemed to be interested in the",
+          "8,780,023",
+          "–"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                              | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| As such, under the SFO, each of Hangzhou Zijingang and Mr. YE Fu is deemed to be interested in the | 8,780,023        | –                          |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "deferred listing expenses as of",
+          "September 30,"
+        ]
+      ],
+      "markdown": "| Item Description                | Rate / Amount Disclosed |\n| ------------------------------- | ----------------------- |\n| deferred listing expenses as of | September 30,           |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "aforementioned estimated listing expenses of approximately",
+          "HK$69.8 million"
+        ],
+        [
+          "HK$762.9 million, after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                           | Rate / Amount Disclosed |\n| ---------------------------------------------------------- | ----------------------- |\n| aforementioned estimated listing expenses of approximately | HK$69.8 million         |\n| HK$762.9 million, after deducting underwriting commission  | s,                      |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "52,844",
+          "100.0",
+          "70,352",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "37,495",
+          "71.0",
+          "46,061",
+          "65.5"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | 52,844 | 100.0  | 70,352 | 100.0 |\n| Gross profit     | 37,495 | 71.0   | 46,061 | 65.5  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 246,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "52,844",
+          "100.0",
+          "70,352",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "37,495",
+          "71.0",
+          "46,061",
+          "65.5"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | 52,844 | 100.0  | 70,352 | 100.0 |\n| Gross profit     | 37,495 | 71.0   | 46,061 | 65.5  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

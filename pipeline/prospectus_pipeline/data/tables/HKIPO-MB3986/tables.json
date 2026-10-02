@@ -1,0 +1,99 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 319,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in",
+          "667,849,351",
+          "95.85%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering",
+          "28,915,800",
+          "4.15%"
+        ],
+        [
+          "Total",
+          "696,765,151",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                 | Number of Shares | Approximate Percentage (%) |\n| ----------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in                                           | 667,849,351      | 95.85%                     |\n| H Shares to be issued pursuant to the Global Offering | 28,915,800       | 4.15%                      |\n| Total                                                 | 696,765,151      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 23,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "be approximately HK$70.0 million (including underwriting commission) accounting",
+          "for 1.65"
+        ],
+        [
+          "income. The listing expenses we expect to incur would consist of approximately",
+          "HK$35.7"
+        ],
+        [
+          "million underwriting related expenses and fees (including underwriting commission",
+          "s,"
+        ],
+        [
+          "incurred RMB15.7 million of listing expenses, among",
+          "which,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                  | Rate / Amount Disclosed |\n| --------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                           | fees,                   |\n| be approximately HK$70.0 million (including underwriting commission) accounting   | for 1.65                |\n| income. The listing expenses we expect to incur would consist of approximately    | HK$35.7                 |\n| million underwriting related expenses and fees (including underwriting commission | s,                      |\n| incurred RMB15.7 million of listing expenses, among                               | which,                  |",
+      "metadata": {
+        "items_count": 5
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total equity",
+          "15,187,140",
+          "15,199,573",
+          "16,678,777",
+          "17,435,246"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5      |\n| ---------------- | ---------- | ---------- | ---------- | ---------- |\n| Total equity     | 15,187,140 | 15,199,573 | 16,678,777 | 17,435,246 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

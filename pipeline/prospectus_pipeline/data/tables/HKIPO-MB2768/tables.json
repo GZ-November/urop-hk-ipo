@@ -1,0 +1,104 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 29,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Price range) and assuming the full payment of the discretionary incentive fee, if",
+          "any,"
+        ],
+        [
+          "expenses, including but not limited to commission",
+          "s,"
+        ],
+        [
+          "The estimate of listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                         | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------------------- | ----------------------- |\n| Price range) and assuming the full payment of the discretionary incentive fee, if        | any,                    |\n| expenses, including but not limited to commission                                        | s,                      |\n| The estimate of listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "13,406,440",
+          "17,438,779",
+          "19,187,511",
+          "15,863,106"
+        ],
+        [
+          "Gross Profit",
+          "1,579,964",
+          "1,600,762",
+          "1,592,172",
+          "1,282,382"
+        ],
+        [
+          "Profit for the year",
+          "724,360",
+          "539,610",
+          "720,586",
+          "544,104"
+        ]
+      ],
+      "markdown": "| Financial Metric    | Year-3     | Year-2     | Year-1     | Col 5      |\n| ------------------- | ---------- | ---------- | ---------- | ---------- |\n| Revenue             | 13,406,440 | 17,438,779 | 19,187,511 | 15,863,106 |\n| Gross Profit        | 1,579,964  | 1,600,762  | 1,592,172  | 1,282,382  |\n| Profit for the year | 724,360    | 539,610    | 720,586    | 544,104    |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 283,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "13,406,440",
+          "17,438,779",
+          "19,187,511",
+          "15,863,106"
+        ],
+        [
+          "Gross Profit",
+          "1,579,964",
+          "1,600,762",
+          "1,592,172",
+          "1,282,382"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3     | Year-2     | Year-1     | Col 5      |\n| ---------------- | ---------- | ---------- | ---------- | ---------- |\n| Revenue          | 13,406,440 | 17,438,779 | 19,187,511 | 15,863,106 |\n| Gross Profit     | 1,579,964  | 1,600,762  | 1,592,172  | 1,282,382  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

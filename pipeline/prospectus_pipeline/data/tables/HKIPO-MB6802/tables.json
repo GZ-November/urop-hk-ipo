@@ -1,0 +1,160 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 225,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Total . . . . . . . . . . . . . . . . .",
+          "110",
+          "1,869,200",
+          "16.13%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                    | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| --------------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Total . . . . . . . . . . . . . . . . . | 110                   | 1,869,200              | 16.13%                        |",
+      "metadata": {
+        "investor_count": 1
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 30,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "HK$66.6 million"
+        ],
+        [
+          "the Over-allotment Option). The listing expenses consist of (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "including underwriting commission, of approximately",
+          "HK$23.9 million"
+        ],
+        [
+          "listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ],
+        [
+          "HK$615.4 million after deducting the underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                     | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------ | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately                 | HK$66.6 million         |\n| the Over-allotment Option). The listing expenses consist of (i) underwriting-related | expenses,               |\n| including underwriting commission, of approximately                                  | HK$23.9 million         |\n| listing expenses above are the latest practicable estimate for reference             | only,                   |\n| HK$615.4 million after deducting the underwriting commission                         | s,                      |",
+      "metadata": {
+        "items_count": 5
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 276,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses to be borne by us are estimated to be approximately",
+          "HK$66.6 million"
+        ],
+        [
+          "the Over-allotment Option). The listing expenses consist of (i) underwriting-related",
+          "expenses,"
+        ],
+        [
+          "including underwriting commission, of approximately",
+          "HK$23.9 million"
+        ],
+        [
+          "listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                     | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------------------ | ----------------------- |\n| Listing expenses to be borne by us are estimated to be approximately                 | HK$66.6 million         |\n| the Over-allotment Option). The listing expenses consist of (i) underwriting-related | expenses,               |\n| including underwriting commission, of approximately                                  | HK$23.9 million         |\n| listing expenses above are the latest practicable estimate for reference             | only,                   |",
+      "metadata": {
+        "items_count": 4
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 18,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1 | Col 5 |\n| ---------------- | ------ | ------ | ------ | ----- |\n| Revenue          | .      | .      | .      | .     |\n| Gross profit     | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 23,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          "Total liabilities",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3 | Year-2 | Year-1 | Col 5 |\n| ----------------- | ------ | ------ | ------ | ----- |\n| Total assets      | .      | .      | .      | .     |\n| Total liabilities | .      | .      | .      | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

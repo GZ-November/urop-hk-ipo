@@ -1,0 +1,166 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 251,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Unlisted Shares (1)",
+          "482,845,281",
+          "82.15%"
+        ],
+        [
+          "the Global Offering",
+          "104,915,200",
+          "17.85%"
+        ],
+        [
+          "Total",
+          "587,760,481",
+          "100.0%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| Unlisted Shares (1)   | 482,845,281      | 82.15%                     |\n| the Global Offering   | 104,915,200      | 17.85%                     |\n| Total                 | 587,760,481      | 100.0%                     |",
+      "metadata": {
+        "total_rows": 3
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 331,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "NGS Super Pty Limited",
+          "20.00",
+          "5,530,400",
+          "5.27%"
+        ],
+        [
+          "Singapore Pte. Ltd.",
+          "10.00",
+          "2,765,200",
+          "2.64%"
+        ],
+        [
+          "Factorial Master Fund",
+          "7.00",
+          "1,935,600",
+          "1.84%"
+        ],
+        [
+          "Hel Ved Master Fund",
+          "7.00",
+          "1,935,600",
+          "1.84%"
+        ],
+        [
+          "Management Limited",
+          "7.00",
+          "1,935,600",
+          "1.84%"
+        ],
+        [
+          "Limited",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "Fund Ltd.",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "GX ACCESS)",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "Swaps)",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "Kong) Limited",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "Guanlan OTC Swaps)",
+          "5.00",
+          "1,382,600",
+          "1.32%"
+        ],
+        [
+          "Ltd.",
+          "2.00",
+          "553,000",
+          "0.53%"
+        ],
+        [
+          "Total",
+          "185.00",
+          "51,156,300",
+          "48.76%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor  | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| --------------------- | --------------------- | ---------------------- | ----------------------------- |\n| NGS Super Pty Limited | 20.00                 | 5,530,400              | 5.27%                         |\n| Singapore Pte. Ltd.   | 10.00                 | 2,765,200              | 2.64%                         |\n| Factorial Master Fund | 7.00                  | 1,935,600              | 1.84%                         |\n| Hel Ved Master Fund   | 7.00                  | 1,935,600              | 1.84%                         |\n| Management Limited    | 7.00                  | 1,935,600              | 1.84%                         |\n| Limited               | 5.00                  | 1,382,600              | 1.32%                         |\n| Fund Ltd.             | 5.00                  | 1,382,600              | 1.32%                         |\n| GX ACCESS)            | 5.00                  | 1,382,600              | 1.32%                         |\n| Swaps)                | 5.00                  | 1,382,600              | 1.32%                         |\n| Kong) Limited         | 5.00                  | 1,382,600              | 1.32%                         |\n| Guanlan OTC Swaps)    | 5.00                  | 1,382,600              | 1.32%                         |\n| Ltd.                  | 2.00                  | 553,000                | 0.53%                         |\n| Total                 | 185.00                | 51,156,300             | 48.76%                        |",
+      "metadata": {
+        "investor_count": 12
+      }
+    }
+  ],
+  "underwriting": [],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 16,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "50,230",
+          "100.0",
+          "230,127",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          "12,994",
+          "25.9",
+          "59,244",
+          "25.7"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------ | ------ | ------- | ----- |\n| Revenue          | 50,230 | 100.0  | 230,127 | 100.0 |\n| Gross profit     | 12,994 | 25.9   | 59,244  | 25.7  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

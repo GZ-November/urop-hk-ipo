@@ -1,0 +1,247 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 245,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares in issue ........................................................................",
+          "167,608,111",
+          "100%"
+        ],
+        [
+          "A Shares in issue ........................................................................",
+          "167,608,111",
+          "93.38%"
+        ],
+        [
+          "H Shares to be issued pursuant to the Global Offering .........................",
+          "11,876,000",
+          "6.62%"
+        ],
+        [
+          "Total .......................................................................................",
+          "179,484,111",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                                         | Number of Shares | Approximate Percentage (%) |\n| --------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |\n| A Shares in issue ........................................................................    | 167,608,111      | 100%                       |\n| A Shares in issue ........................................................................    | 167,608,111      | 93.38%                     |\n| H Shares to be issued pursuant to the Global Offering .........................               | 11,876,000       | 6.62%                      |\n| Total ....................................................................................... | 179,484,111      | 100.00%                    |",
+      "metadata": {
+        "total_rows": 4
+      }
+    }
+  ],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 259,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "Temasek . . . . . . . . . . . . .",
+          "45.0",
+          "809,350",
+          "6.82%"
+        ],
+        [
+          "Sunpeak Asset. . . . . . . . .",
+          "40.0",
+          "719,450",
+          "6.06%"
+        ],
+        [
+          "IvyRock . . . . . . . . . . . . .",
+          "30.0",
+          "539,550",
+          "4.54%"
+        ],
+        [
+          "E Fund . . . . . . . . . . . . . .",
+          "10.0",
+          "179,850",
+          "1.51%"
+        ],
+        [
+          "E Fund Management. . . .",
+          "9.65",
+          "173,550",
+          "1.46%"
+        ],
+        [
+          "E Fund HK . . . . . . . . . .",
+          "0.35",
+          "6,250",
+          "0.05%"
+        ],
+        [
+          "CIG . . . . . . . . . . . . . . . .",
+          "10.0",
+          "179,850",
+          "1.51%"
+        ],
+        [
+          "Winner Global Fund . . . .",
+          "15.0",
+          "269,750",
+          "2.27%"
+        ],
+        [
+          "Wind Sabre . . . . . . . . . . .",
+          "10.0",
+          "179,850",
+          "1.51%"
+        ],
+        [
+          "Vestide Lumir . . . . . . . . .",
+          "10.0",
+          "179,850",
+          "1.51%"
+        ],
+        [
+          "Arrowpoint. . . . . . . . . . .",
+          "7.5",
+          "134,850",
+          "1.14%"
+        ],
+        [
+          "Sino Opulence Fund . . . .",
+          "4.0",
+          "71,900",
+          "0.61%"
+        ],
+        [
+          "Management . . . . . . . .",
+          "3.1",
+          "55,750",
+          "0.47%"
+        ],
+        [
+          "Bloom Capital . . . . . . . . .",
+          "3.0",
+          "53,950",
+          "0.45%"
+        ],
+        [
+          "Mr. Lai Pak Lam . . . . . . .",
+          "30.0",
+          "539,550",
+          "4.54%"
+        ],
+        [
+          "Mr. Xia Shengli . . . . . . . .",
+          "7.0",
+          "126,100",
+          "1.06%"
+        ],
+        [
+          "Mr. Zhu Guodong . . . . . .",
+          "5.0",
+          "89,900",
+          "0.76%"
+        ],
+        [
+          "Mr. Zheng Xiaofeng. . . . .",
+          "2.8",
+          "50,450",
+          "0.42%"
+        ],
+        [
+          "Total . . . . . . . . . . . . . . .",
+          "232.4",
+          "4,179,950",
+          "35.20%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor                | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| ----------------------------------- | --------------------- | ---------------------- | ----------------------------- |\n| Temasek . . . . . . . . . . . . .   | 45.0                  | 809,350                | 6.82%                         |\n| Sunpeak Asset. . . . . . . . .      | 40.0                  | 719,450                | 6.06%                         |\n| IvyRock . . . . . . . . . . . . .   | 30.0                  | 539,550                | 4.54%                         |\n| E Fund . . . . . . . . . . . . . .  | 10.0                  | 179,850                | 1.51%                         |\n| E Fund Management. . . .            | 9.65                  | 173,550                | 1.46%                         |\n| E Fund HK . . . . . . . . . .       | 0.35                  | 6,250                  | 0.05%                         |\n| CIG . . . . . . . . . . . . . . . . | 10.0                  | 179,850                | 1.51%                         |\n| Winner Global Fund . . . .          | 15.0                  | 269,750                | 2.27%                         |\n| Wind Sabre . . . . . . . . . . .    | 10.0                  | 179,850                | 1.51%                         |\n| Vestide Lumir . . . . . . . . .     | 10.0                  | 179,850                | 1.51%                         |\n| Arrowpoint. . . . . . . . . . .     | 7.5                   | 134,850                | 1.14%                         |\n| Sino Opulence Fund . . . .          | 4.0                   | 71,900                 | 0.61%                         |\n| Management . . . . . . . .          | 3.1                   | 55,750                 | 0.47%                         |\n| Bloom Capital . . . . . . . . .     | 3.0                   | 53,950                 | 0.45%                         |\n| Mr. Lai Pak Lam . . . . . . .       | 30.0                  | 539,550                | 4.54%                         |\n| Mr. Xia Shengli . . . . . . . .     | 7.0                   | 126,100                | 1.06%                         |\n| Mr. Zhu Guodong . . . . . .         | 5.0                   | 89,900                 | 0.76%                         |\n| Mr. Zheng Xiaofeng. . . . .         | 2.8                   | 50,450                 | 0.42%                         |\n| Total . . . . . . . . . . . . . . . | 232.4                 | 4,179,950              | 35.20%                        |",
+      "metadata": {
+        "investor_count": 19
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 25,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "approximately HK$216.6 million (including underwriting commission) accounting",
+          "for 4.2"
+        ],
+        [
+          "Over-allotment Option are not exercised. Among our listing expenses, approximately",
+          "HK$202.9"
+        ],
+        [
+          "underwriting related expenses and fees (including underwriting commission",
+          "s,"
+        ],
+        [
+          "HK$29.3 million of listing expenses. Listing expenses of",
+          "HK$1.9 million"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                   | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                            | fees,                   |\n| approximately HK$216.6 million (including underwriting commission) accounting      | for 4.2                 |\n| Over-allotment Option are not exercised. Among our listing expenses, approximately | HK$202.9                |\n| underwriting related expenses and fees (including underwriting commission          | s,                      |\n| HK$29.3 million of listing expenses. Listing expenses of                           | HK$1.9 million          |\n| The listing expenses above are the latest practicable estimate for reference       | only,                   |",
+      "metadata": {
+        "items_count": 6
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 302,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "...................................",
+          "6",
+          "1,569,649",
+          "1,104,248"
+        ],
+        [
+          "Gross profit",
+          "..............................",
+          "343,419",
+          "316,515",
+          "327,527"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3                              | Year-2  | Year-1    | Col 5     |\n| ---------------- | ----------------------------------- | ------- | --------- | --------- |\n| Revenue          | ................................... | 6       | 1,569,649 | 1,104,248 |\n| Gross profit     | ..............................      | 343,419 | 316,515   | 327,527   |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}
