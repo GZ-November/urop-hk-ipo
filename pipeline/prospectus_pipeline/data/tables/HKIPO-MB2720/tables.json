@@ -1,0 +1,138 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 267,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "the Global Offering 100,000,000",
+          "50,000",
+          "78.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares           | Number of Shares | Approximate Percentage (%) |\n| ------------------------------- | ---------------- | -------------------------- |\n| the Global Offering 100,000,000 | 50,000           | 78.00%                     |",
+      "metadata": {
+        "total_rows": 1
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 34,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses consist of professional",
+          "fees,"
+        ],
+        [
+          "listing expenses in aggregate of",
+          "RMB21.0 million"
+        ],
+        [
+          "The listing expenses above are the latest practicable estimate for reference",
+          "only,"
+        ]
+      ],
+      "markdown": "| Item Description                                                             | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses consist of professional                                     | fees,                   |\n| listing expenses in aggregate of                                             | RMB21.0 million         |\n| The listing expenses above are the latest practicable estimate for reference | only,                   |",
+      "metadata": {
+        "items_count": 3
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 291,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Our listing expenses",
+          "in 2022"
+        ]
+      ],
+      "markdown": "| Item Description         | Rate / Amount Disclosed |\n| ------------------------ | ----------------------- |\n| (2) Our listing expenses | in 2022                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 21,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "818,412",
+          "463,251",
+          "573,463",
+          "391,042"
+        ],
+        [
+          "Gross profit",
+          "190,133",
+          "123,224",
+          "152,680",
+          "102,542"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 818,412 | 463,251 | 573,463 | 391,042 |\n| Gross profit     | 190,133 | 123,224 | 152,680 | 102,542 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "333,581",
+          "241,657",
+          "340,334",
+          "378,887"
+        ],
+        [
+          "Total liabilities",
+          "179,038",
+          "104,671",
+          "385,639",
+          "368,237"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2  | Year-1  | Col 5   |\n| ----------------- | ------- | ------- | ------- | ------- |\n| Total assets      | 333,581 | 241,657 | 340,334 | 378,887 |\n| Total liabilities | 179,038 | 104,671 | 385,639 | 368,237 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

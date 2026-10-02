@@ -1,0 +1,202 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 247,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "Beijing Lianpai Unlisted Shares Beneficial interest 34,038,390 8.45%",
+          "34,038,390",
+          "15.23%"
+        ],
+        [
+          "Unlisted Shares Interests held 99,005,840 24.58%",
+          "89,003,983",
+          "39.81%"
+        ],
+        [
+          "Dr. Liu Unlisted Shares Beneficial interest 925,150 0.23%",
+          "925,150",
+          "0.41%"
+        ],
+        [
+          "Unlisted Shares Interests held 132,119,080 32.80%",
+          "122,117,223",
+          "54.62%"
+        ],
+        [
+          "Dr. Tang Unlisted Shares Beneficial interest 26,835,330 6.66%",
+          "26,835,330",
+          "12.00%"
+        ],
+        [
+          "Unlisted Shares Interests held 106,208,900 26.37%",
+          "96,207,043",
+          "43.03%"
+        ],
+        [
+          "Dr. Li Unlisted Shares Beneficial interest 3,367,760 0.84%",
+          "3,367,760",
+          "1.51%"
+        ],
+        [
+          "Unlisted Shares Interests held 129,676,470 32.19%",
+          "119,674,613",
+          "53.53%"
+        ],
+        [
+          "Dr. Xu Unlisted Shares Beneficial interest 799,040 0.20%",
+          "799,040",
+          "0.36%"
+        ],
+        [
+          "Unlisted Shares Interests held 132,245,190 32.83%",
+          "122,243,333",
+          "54.68%"
+        ],
+        [
+          "Dr. Zhang Unlisted Shares Beneficial interest 399,520 0.10%",
+          "399,520",
+          "0.18%"
+        ],
+        [
+          "Unlisted Shares Interests held 132,644,710 32.93%",
+          "122,642,853",
+          "54.86%"
+        ],
+        [
+          "Huihui Unlisted Shares Beneficial interest 39,482,710 9.80%",
+          "33,560,303",
+          "15.01%"
+        ],
+        [
+          "Unlisted Shares Interests held 93,561,520 23.23%",
+          "89,482,070",
+          "40.41%"
+        ],
+        [
+          "Zhideng Unlisted Shares Beneficial interest 27,196,330 6.75%",
+          "23,116,880",
+          "10.34%"
+        ],
+        [
+          "Unlisted Shares Interests held 105,847,900 26.28%",
+          "99,925,493",
+          "45.08%"
+        ]
+      ],
+      "markdown": "| Description of Shares                                                | Number of Shares | Approximate Percentage (%) |\n| -------------------------------------------------------------------- | ---------------- | -------------------------- |\n| Beijing Lianpai Unlisted Shares Beneficial interest 34,038,390 8.45% | 34,038,390       | 15.23%                     |\n| Unlisted Shares Interests held 99,005,840 24.58%                     | 89,003,983       | 39.81%                     |\n| Dr. Liu Unlisted Shares Beneficial interest 925,150 0.23%            | 925,150          | 0.41%                      |\n| Unlisted Shares Interests held 132,119,080 32.80%                    | 122,117,223      | 54.62%                     |\n| Dr. Tang Unlisted Shares Beneficial interest 26,835,330 6.66%        | 26,835,330       | 12.00%                     |\n| Unlisted Shares Interests held 106,208,900 26.37%                    | 96,207,043       | 43.03%                     |\n| Dr. Li Unlisted Shares Beneficial interest 3,367,760 0.84%           | 3,367,760        | 1.51%                      |\n| Unlisted Shares Interests held 129,676,470 32.19%                    | 119,674,613      | 53.53%                     |\n| Dr. Xu Unlisted Shares Beneficial interest 799,040 0.20%             | 799,040          | 0.36%                      |\n| Unlisted Shares Interests held 132,245,190 32.83%                    | 122,243,333      | 54.68%                     |\n| Dr. Zhang Unlisted Shares Beneficial interest 399,520 0.10%          | 399,520          | 0.18%                      |\n| Unlisted Shares Interests held 132,644,710 32.93%                    | 122,642,853      | 54.86%                     |\n| Huihui Unlisted Shares Beneficial interest 39,482,710 9.80%          | 33,560,303       | 15.01%                     |\n| Unlisted Shares Interests held 93,561,520 23.23%                     | 89,482,070       | 40.41%                     |\n| Zhideng Unlisted Shares Beneficial interest 27,196,330 6.75%         | 23,116,880       | 10.34%                     |\n| Unlisted Shares Interests held 105,847,900 26.28%                    | 99,925,493       | 45.08%                     |",
+      "metadata": {
+        "total_rows": 16
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(3) Listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                            | Rate / Amount Disclosed |\n| ------------------------------------------- | ----------------------- |\n| (3) Listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 31,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "with the Listing and the Global Offering. We recorded listing expenses of",
+          "nil,"
+        ]
+      ],
+      "markdown": "| Item Description                                                          | Rate / Amount Disclosed |\n| ------------------------------------------------------------------------- | ----------------------- |\n| Listing expenses represent professional                                   | fees,                   |\n| with the Listing and the Global Offering. We recorded listing expenses of | nil,                    |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 23,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "57,409",
+          "100.0",
+          "124,538",
+          "100.0"
+        ],
+        [
+          "Gross profit",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1  | Col 5 |\n| ---------------- | ------ | ------ | ------- | ----- |\n| Revenue          | 57,409 | 100.0  | 124,538 | 100.0 |\n| Gross profit     | .      | .      | .       | .     |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 347,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "4",
+          "57,409",
+          "124,538",
+          "312,414"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2 | Year-1  | Col 5   |\n| ---------------- | ------ | ------ | ------- | ------- |\n| Revenue          | 4      | 57,409 | 124,538 | 312,414 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "share_capital": [],
+  "cornerstone": [
+    {
+      "name": "cornerstone",
+      "page": 507,
+      "title": "基石投资者配售名单与认购规模表 (Cornerstone Investors Table)",
+      "headers": [
+        "Cornerstone Investor",
+        "Investment Amount (M)",
+        "Number of Offer Shares",
+        "Approximate % of Offer Shares"
+      ],
+      "rows": [
+        [
+          "OrbiMed Genesis",
+          "10.0",
+          "1,799,300",
+          "6.5%"
+        ],
+        [
+          "(Tencent)",
+          "5.0",
+          "899,600",
+          "3.2%"
+        ],
+        [
+          "ChinaAMC (HK)",
+          "5.0",
+          "899,600",
+          "3.2%"
+        ],
+        [
+          "LYFE Capital Fund IV",
+          "5.0",
+          "899,600",
+          "3.2%"
+        ],
+        [
+          "GBAHIL",
+          "5.0",
+          "899,600",
+          "3.2%"
+        ],
+        [
+          "China Alpha",
+          "5.0",
+          "899,600",
+          "3.2%"
+        ],
+        [
+          "Dong Chen)",
+          "3.0",
+          "539,800",
+          "1.9%"
+        ],
+        [
+          "ICSA",
+          "3.0",
+          "539,800",
+          "1.9%"
+        ],
+        [
+          "Fund",
+          "3.0",
+          "539,800",
+          "1.9%"
+        ],
+        [
+          "Panjing Fund",
+          "3.0",
+          "539,800",
+          "1.9%"
+        ],
+        [
+          "Infini",
+          "3.0",
+          "539,800",
+          "1.9%"
+        ],
+        [
+          "Total",
+          "75.0",
+          "13,494,600",
+          "48.7%"
+        ]
+      ],
+      "markdown": "| Cornerstone Investor | Investment Amount (M) | Number of Offer Shares | Approximate % of Offer Shares |\n| -------------------- | --------------------- | ---------------------- | ----------------------------- |\n| OrbiMed Genesis      | 10.0                  | 1,799,300              | 6.5%                          |\n| (Tencent)            | 5.0                   | 899,600                | 3.2%                          |\n| ChinaAMC (HK)        | 5.0                   | 899,600                | 3.2%                          |\n| LYFE Capital Fund IV | 5.0                   | 899,600                | 3.2%                          |\n| GBAHIL               | 5.0                   | 899,600                | 3.2%                          |\n| China Alpha          | 5.0                   | 899,600                | 3.2%                          |\n| Dong Chen)           | 3.0                   | 539,800                | 1.9%                          |\n| ICSA                 | 3.0                   | 539,800                | 1.9%                          |\n| Fund                 | 3.0                   | 539,800                | 1.9%                          |\n| Panjing Fund         | 3.0                   | 539,800                | 1.9%                          |\n| Infini               | 3.0                   | 539,800                | 1.9%                          |\n| Total                | 75.0                  | 13,494,600             | 48.7%                         |",
+      "metadata": {
+        "investor_count": 11
+      }
+    }
+  ],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 41,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "the Global Offering after deducting underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                                            | Rate / Amount Disclosed |\n| ----------------------------------------------------------- | ----------------------- |\n| the Global Offering after deducting underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 43,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "underwriting-related expenses (including but not limited to commissions and fees),",
+          "HK$19.0"
+        ],
+        [
+          "paid and payable to the professional parties, commissions payable to the",
+          "Underwriters,"
+        ]
+      ],
+      "markdown": "| Item Description                                                                   | Rate / Amount Disclosed |\n| ---------------------------------------------------------------------------------- | ----------------------- |\n| underwriting-related expenses (including but not limited to commissions and fees), | HK$19.0                 |\n| paid and payable to the professional parties, commissions payable to the           | Underwriters,           |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 33,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "48,042",
+          "159,994",
+          "30,245",
+          "149,383"
+        ],
+        [
+          "Gross profit",
+          "28,466",
+          "98,077",
+          "19,157",
+          "93,850"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3 | Year-2  | Year-1 | Col 5   |\n| ---------------- | ------ | ------- | ------ | ------- |\n| Revenue          | 48,042 | 159,994 | 30,245 | 149,383 |\n| Gross profit     | 28,466 | 98,077  | 19,157 | 93,850  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 36,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "1,555,646",
+          "1,360,730",
+          "1,306,252"
+        ],
+        [
+          "Total liabilities",
+          "(117,300)",
+          "(100,774)",
+          "(121,668)"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3    | Year-2    | Year-1    |\n| ----------------- | --------- | --------- | --------- |\n| Total assets      | 1,555,646 | 1,360,730 | 1,306,252 |\n| Total liabilities | (117,300) | (100,774) | (121,668) |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

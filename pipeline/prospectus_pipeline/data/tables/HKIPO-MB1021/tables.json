@@ -1,0 +1,146 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 19,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "(2) Listing expenses represent professional",
+          "fees,"
+        ]
+      ],
+      "markdown": "| Item Description                            | Rate / Amount Disclosed |\n| ------------------------------------------- | ----------------------- |\n| (2) Listing expenses represent professional | fees,                   |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 24,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "listing expenses, partially offset by revenue",
+          "growth."
+        ]
+      ],
+      "markdown": "| Item Description                              | Rate / Amount Disclosed |\n| --------------------------------------------- | ----------------------- |\n| listing expenses, partially offset by revenue | growth.                 |",
+      "metadata": {
+        "items_count": 1
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 18,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "109,442",
+          "175,380",
+          "310,441",
+          "206,224"
+        ],
+        [
+          "Gross profit",
+          "15,006",
+          "50,230",
+          "106,433",
+          "69,236"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 109,442 | 175,380 | 310,441 | 206,224 |\n| Gross profit     | 15,006  | 50,230  | 106,433 | 69,236  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    },
+    {
+      "name": "financials",
+      "page": 24,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Total assets",
+          "491,419",
+          "584,215",
+          "616,563",
+          "680,231"
+        ],
+        [
+          "Total liabilities",
+          "86,426",
+          "106,150",
+          "120,304",
+          "152,138"
+        ],
+        [
+          "Total equity",
+          "404,993",
+          "478,065",
+          "496,259",
+          "528,093"
+        ]
+      ],
+      "markdown": "| Financial Metric  | Year-3  | Year-2  | Year-1  | Col 5   |\n| ----------------- | ------- | ------- | ------- | ------- |\n| Total assets      | 491,419 | 584,215 | 616,563 | 680,231 |\n| Total liabilities | 86,426  | 106,150 | 120,304 | 152,138 |\n| Total equity      | 404,993 | 478,065 | 496,259 | 528,093 |",
+      "metadata": {
+        "metrics_count": 3
+      }
+    },
+    {
+      "name": "financials",
+      "page": 246,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "109,442",
+          "175,380",
+          "310,441",
+          "206,224"
+        ],
+        [
+          "Gross profit",
+          "15,006",
+          "50,230",
+          "106,433",
+          "69,236"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2  | Year-1  | Col 5   |\n| ---------------- | ------- | ------- | ------- | ------- |\n| Revenue          | 109,442 | 175,380 | 310,441 | 206,224 |\n| Gross profit     | 15,006  | 50,230  | 106,433 | 69,236  |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "share_capital": [],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 26,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "The total estimated listing expenses in relation to the Global Offering are",
+          "RMB72.4 million"
+        ],
+        [
+          "to listing expenses directly attributable to the issue of share) was",
+          "RMB18.7 million"
+        ],
+        [
+          "shares). Our total listing expenses consist of (i) underwriting-related expenses of",
+          "RMB36.2 million"
+        ]
+      ],
+      "markdown": "| Item Description                                                                    | Rate / Amount Disclosed |\n| ----------------------------------------------------------------------------------- | ----------------------- |\n| The total estimated listing expenses in relation to the Global Offering are         | RMB72.4 million         |\n| to listing expenses directly attributable to the issue of share) was                | RMB18.7 million         |\n| shares). Our total listing expenses consist of (i) underwriting-related expenses of | RMB36.2 million         |",
+      "metadata": {
+        "items_count": 3
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 306,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Gross profit",
+          "426,020",
+          "18,011",
+          "182,392",
+          "155,535"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3  | Year-2 | Year-1  | Col 5   |\n| ---------------- | ------- | ------ | ------- | ------- |\n| Gross profit     | 426,020 | 18,011 | 182,392 | 155,535 |",
+      "metadata": {
+        "metrics_count": 1
+      }
+    }
+  ]
+}

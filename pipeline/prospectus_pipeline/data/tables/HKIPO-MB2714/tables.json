@@ -1,0 +1,108 @@
+{
+  "share_capital": [
+    {
+      "name": "share_capital",
+      "page": 333,
+      "title": "股份结构与发售比例表 (Share Capital Table)",
+      "headers": [
+        "Description of Shares",
+        "Number of Shares",
+        "Approximate Percentage (%)"
+      ],
+      "rows": [
+        [
+          "A Shares*",
+          "5,462,771,266",
+          "100.00%"
+        ],
+        [
+          "Total",
+          "5,462,771,266",
+          "100.00%"
+        ]
+      ],
+      "markdown": "| Description of Shares | Number of Shares | Approximate Percentage (%) |\n| --------------------- | ---------------- | -------------------------- |\n| A Shares*             | 5,462,771,266    | 100.00%                    |\n| Total                 | 5,462,771,266    | 100.00%                    |",
+      "metadata": {
+        "total_rows": 2
+      }
+    }
+  ],
+  "cornerstone": [],
+  "underwriting": [
+    {
+      "name": "underwriting",
+      "page": 36,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "deducting the underwriting commission",
+          "s,"
+        ]
+      ],
+      "markdown": "| Item Description                      | Rate / Amount Disclosed |\n| ------------------------------------- | ----------------------- |\n| deducting the underwriting commission | s,                      |",
+      "metadata": {
+        "items_count": 1
+      }
+    },
+    {
+      "name": "underwriting",
+      "page": 38,
+      "title": "承销佣金率与上市费用构成表 (Underwriting & Expenses Table)",
+      "headers": [
+        "Item Description",
+        "Rate / Amount Disclosed"
+      ],
+      "rows": [
+        [
+          "Listing expenses represent professional",
+          "fees,"
+        ],
+        [
+          "commission of approximately",
+          "RMB136.5 million"
+        ]
+      ],
+      "markdown": "| Item Description                        | Rate / Amount Disclosed |\n| --------------------------------------- | ----------------------- |\n| Listing expenses represent professional | fees,                   |\n| commission of approximately             | RMB136.5 million        |",
+      "metadata": {
+        "items_count": 2
+      }
+    }
+  ],
+  "financials": [
+    {
+      "name": "financials",
+      "page": 27,
+      "title": "合并财务报表核心指标表 (Consolidated Financial Summary Table)",
+      "headers": [
+        "Financial Metric",
+        "Year-3",
+        "Year-2",
+        "Year-1"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "124,826.2",
+          "110,860.7",
+          "137,946.9",
+          "96,775.1"
+        ],
+        [
+          "Gross profit",
+          "21,839.1",
+          "3,445.9",
+          "26,280.4",
+          "16,709.7"
+        ]
+      ],
+      "markdown": "| Financial Metric | Year-3    | Year-2    | Year-1    | Col 5    |\n| ---------------- | --------- | --------- | --------- | -------- |\n| Revenue          | 124,826.2 | 110,860.7 | 137,946.9 | 96,775.1 |\n| Gross profit     | 21,839.1  | 3,445.9   | 26,280.4  | 16,709.7 |",
+      "metadata": {
+        "metrics_count": 2
+      }
+    }
+  ]
+}
