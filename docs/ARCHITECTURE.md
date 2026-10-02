@@ -97,6 +97,7 @@ make workspace-check
 make analysis-list
 
 # Run selected studies in the registered order.
+python run.py analysis --study basic
 python run.py analysis --study underpricing
 python run.py analysis --study ah --study margin
 
@@ -128,3 +129,5 @@ This refactor separates shared reporting, focused estimation, and clustered infe
 Some specialized studies still reuse event and sample-preparation functions from other studies. They remain explicit dependencies; a complete move of all study-specific event code is not part of this refactor. The pipeline already has path, artifact-contract, state, and workbook-transaction modules; changing all physical directories would add migration risk without solving those dependencies.
 
 See [research entry](RESEARCH_START.md), [artifact placement](REPOSITORY_GUIDE.md), and [pipeline management](../pipeline/SYSTEM_MANAGEMENT.md) for the related scientific and evidence contracts.
+
+PR #28 integration: the separate basic-statistics study is registered as `basic` and runs through `make basic-analysis`; it is not added to the established default full-analysis sequence. The newer research plan and disclosure repairs are preserved.

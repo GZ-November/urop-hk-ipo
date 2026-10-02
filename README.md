@@ -56,7 +56,8 @@ The workspace links to canonical files; it does not create another dataset. Each
 | Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
 | Use the combined data | [All-years master CSV](pipeline/exports/HKIPO-MB-MASTER_clean.csv) |
 | Understand fields and units | [Variable registry](pipeline/registry/HKIPO_Variable_Registry.yaml) / [Q3 codebook](pipeline/codebooks/HKIPO_2026Q3_Codebook.md) |
-| Read the English progress report | [PDF](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX source](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
+| Read the English progress report | [PDF snapshot](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX source](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
+| Start with coverage and basic statistics | [Basic report](analysis/out/basic_statistics/basic_statistics.md) / [Data gaps](docs/DATA_GAPS_2026.md) |
 | Read first-day return results | [Descriptive tables](analysis/out/module_a/table1_stylized_facts.md) / [Regressions](analysis/out/module_b/table4_regressions.md) |
 | Read retail allocation results | [Retail returns and cornerstone sensitivity](analysis/out/research_frontier/research.md) |
 | Read A+H or margin results | [A+H prices](analysis/out/ah_anchor/ah_anchor.md) / [Margin financing](analysis/out/margin/margin.md) |
@@ -128,6 +129,9 @@ make workspace
 # List studies without changing data or results.
 python run.py analysis --list
 
+# Begin with the current basic-statistics plan.
+make basic-analysis
+
 # Run one study, or several in the registered order.
 python run.py analysis --study underpricing
 python run.py analysis --study ah --study margin
@@ -154,6 +158,8 @@ python run.py collect --period-start 2026-04-01 --period-end 2026-06-30
 ```
 
 Collection exits with code `3` while extraction or independent review is pending. Complete those gates, then resume the same command. Workbook writes retain the existing evidence checks, transaction handling, styles, and pre-write snapshots.
+
+The current plan starts with coverage and basic statistics, then prioritizes subscription demand and retail allocation returns. A+H pricing is a third candidate. PR #28 includes the 6872.HK disclosure repair and additional A+H references; see the [collection ledger](pipeline/reports/data_gap_collection/README.md). The PDF progress report is an earlier result snapshot; generated reports contain the current estimates.
 
 ## How to interpret the results
 

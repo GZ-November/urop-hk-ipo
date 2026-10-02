@@ -62,4 +62,3 @@ def new_fig(*args, **kw):
     fig, ax = plt.subplots(*args, **kw)
     fig.patch.set_facecolor(SURFACE)
     return fig, ax
-

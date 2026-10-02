@@ -11,7 +11,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-01 13:34:34"
+    "generated_at": "2026-10-02 12:40:24"
   },
   "variables": [
     {
@@ -904,17 +904,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: financials）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 7,
-        "fill_rate_pct": 84.44,
-        "mean": 4498516710.526316,
-        "std": 15259069512.424377,
-        "median": 591038000.0,
+        "valid_n": 39,
+        "missing_n": 6,
+        "fill_rate_pct": 86.67,
+        "mean": 4383170128.205129,
+        "std": 15074174719.761242,
+        "median": 577241000.0,
         "min": 0.0,
-        "q25": 198021000.0,
+        "q25": 175338000.0,
         "q75": 2020731000.0,
         "max": 85338484000.0,
-        "summary_display": "均值 4,498,516,710.53 | 中位数 591,038,000.00 | 区间 [0.00, 85,338,484,000.00]"
+        "summary_display": "均值 4,383,170,128.21 | 中位数 577,241,000.00 | 区间 [0.00, 85,338,484,000.00]"
       }
     },
     {
@@ -926,21 +926,21 @@
       "group": "financials",
       "data_type": "numeric",
       "timing_convention": "Track record period financial disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: financials）",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "mean": 4830032886.363636,
-        "std": 17982130625.528385,
-        "median": 534713000.0,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 4722698822.222222,
+        "std": 17791189551.84576,
+        "median": 531556000.0,
         "min": 0.0,
-        "q25": 220755000.0,
-        "q75": 2288328000.0,
+        "q25": 199622000.0,
+        "q75": 1616018000.0,
         "max": 109877987000.0,
-        "summary_display": "均值 4,830,032,886.36 | 中位数 534,713,000.00 | 区间 [0.00, 109,877,987,000.00]"
+        "summary_display": "均值 4,722,698,822.22 | 中位数 531,556,000.00 | 区间 [0.00, 109,877,987,000.00]"
       }
     },
     {
@@ -952,21 +952,21 @@
       "group": "financials",
       "data_type": "numeric",
       "timing_convention": "Track record period financial disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书法定披露章节（Group: financials）",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "mean": 6809356329.545455,
-        "std": 26637589268.378166,
-        "median": 708146000.0,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 6658037300.0,
+        "std": 26352706828.26105,
+        "median": 668519000.0,
         "min": 0.0,
-        "q25": 328257000.0,
-        "q75": 3127040000.0,
+        "q25": 260867000.0,
+        "q75": 3052702500.0,
         "max": 171436927000.0,
-        "summary_display": "均值 6,809,356,329.55 | 中位数 708,146,000.00 | 区间 [0.00, 171,436,927,000.00]"
+        "summary_display": "均值 6,658,037,300.00 | 中位数 668,519,000.00 | 区间 [0.00, 171,436,927,000.00]"
       }
     },
     {
@@ -1577,17 +1577,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 32,
-        "missing_n": 13,
-        "fill_rate_pct": 71.11,
-        "mean": 0.78125,
-        "std": 0.4200134406451544,
+        "valid_n": 31,
+        "missing_n": 14,
+        "fill_rate_pct": 68.89,
+        "mean": 0.7741935483870968,
+        "std": 0.4250237185032414,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.78 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.77 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1758,12 +1758,12 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "mean": 0.3757306818181818,
-        "std": 0.15582473167584757,
-        "median": 0.35214999999999996,
+        "valid_n": 43,
+        "missing_n": 2,
+        "fill_rate_pct": 95.56,
+        "mean": 0.3807895348837209,
+        "std": 0.15396952912761186,
+        "median": 0.3533,
         "min": 0.11425,
         "q25": 0.2825,
         "q75": 0.4687,
@@ -1784,17 +1784,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "mean": 0.3878852272727273,
-        "std": 0.16652990323674655,
-        "median": 0.35465,
+        "valid_n": 43,
+        "missing_n": 2,
+        "fill_rate_pct": 95.56,
+        "mean": 0.39322674418604653,
+        "std": 0.16464267237061528,
+        "median": 0.356,
         "min": 0.11425,
         "q25": 0.2842,
         "q75": 0.4782,
         "max": 0.7963,
-        "summary_display": "均值 0.39 | 中位数 0.35 | 区间 [0.11, 0.80]"
+        "summary_display": "均值 0.39 | 中位数 0.36 | 区间 [0.11, 0.80]"
       }
     },
     {
@@ -1863,11 +1863,11 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: business）",
       "stats": {
-        "valid_n": 43,
-        "missing_n": 2,
-        "fill_rate_pct": 95.56,
-        "mean": 0.009534883720930233,
-        "std": 0.0384802663323679,
+        "valid_n": 44,
+        "missing_n": 1,
+        "fill_rate_pct": 97.78,
+        "mean": 0.009318181818181817,
+        "std": 0.03805734518064458,
         "median": 0.0,
         "min": 0.0,
         "q25": 0.0,
@@ -2328,21 +2328,21 @@
       "group": "financial_period",
       "data_type": "numeric",
       "timing_convention": "Track record period financial disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "招股书披露值的确定性标准化",
       "stats": {
-        "valid_n": 44,
-        "missing_n": 1,
-        "fill_rate_pct": 97.78,
-        "mean": 6809356329.545455,
-        "std": 26637589268.378166,
-        "median": 708146000.0,
+        "valid_n": 45,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 6658037300.0,
+        "std": 26352706828.26105,
+        "median": 668519000.0,
         "min": 0.0,
-        "q25": 328257000.0,
-        "q75": 3127040000.0,
+        "q25": 260867000.0,
+        "q75": 3052702500.0,
         "max": 171436927000.0,
-        "summary_display": "均值 6,809,356,329.55 | 中位数 708,146,000.00 | 区间 [0.00, 171,436,927,000.00]"
+        "summary_display": "均值 6,658,037,300.00 | 中位数 668,519,000.00 | 区间 [0.00, 171,436,927,000.00]"
       }
     },
     {
@@ -4789,13 +4789,13 @@
         "valid_n": 45,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "mean": 0.025,
-        "std": 0.0,
+        "mean": 0.025111111111111112,
+        "std": 0.0007453559924999295,
         "median": 0.025,
         "min": 0.025,
         "q25": 0.025,
         "q75": 0.025,
-        "max": 0.025,
+        "max": 0.03,
         "summary_display": "均值 0.03 | 中位数 0.03 | 区间 [0.03, 0.03]"
       }
     },
@@ -4841,13 +4841,13 @@
         "valid_n": 45,
         "missing_n": 0,
         "fill_rate_pct": 100.0,
-        "mean": 0.035,
-        "std": 0.0,
+        "mean": 0.035111111111111114,
+        "std": 0.0007453559924999295,
         "median": 0.035,
         "min": 0.035,
         "q25": 0.035,
         "q75": 0.035,
-        "max": 0.035,
+        "max": 0.04,
         "summary_display": "均值 0.04 | 中位数 0.04 | 区间 [0.04, 0.04]"
       }
     },

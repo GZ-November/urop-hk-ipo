@@ -1,0 +1,27 @@
+{
+  "reviewer": "independent sub-agent review_gaps",
+  "candidate_payload_sha256": "34413c4deaa39f17f946b633460e9c980a78d5a92433151d2b8f649d6973c27a",
+  "expected_payload_sha256": "34413c4deaa39f17f946b633460e9c980a78d5a92433151d2b8f649d6973c27a",
+  "hash_matches_frozen": true,
+  "source_sha256": "8178ceaeb1ed30acb3e72820ba1cbb77ab4de0bb017b064ebebf2bd658c356d0",
+  "gate_pass": true,
+  "scope": [
+    "col_AH"
+  ],
+  "value": 0,
+  "currency": "RMB",
+  "period": "FY2025 ending2025-12-31",
+  "annualization_factor": 1,
+  "checks": [
+    "Source hash matches frozen disclosure text",
+    "p292 explicit absence of product revenue",
+    "p353 consolidated loss statement no revenue row; Other income is separately classified",
+    "Appendix I p352 RMB thousand units and p353 2023/2024/2025 annual period",
+    "Group vs company distinction correct"
+  ],
+  "not_authorized": [
+    "whole existing 70-field extraction",
+    "other workbook cells"
+  ],
+  "source_limitation": "Read original disclosure JSONL; raw PDF visual review not performed"
+}

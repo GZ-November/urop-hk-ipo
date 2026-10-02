@@ -1,6 +1,6 @@
 # agy integration and source review · 2026-09-30
 
-> 历史阶段记录：本文数值与待办描述的是2026-09-30当时的106家基准，后续PR #23已处理董事席位、HDR单位及契约证据，PR #25将样本扩至113家。当前状态以 [研究计划](RESEARCH_PLAN_2026.md)、[readiness](../pipeline/reports/research_readiness/README.md) 和生成结果为准；下文保留原记录，不作为现行待办。
+> Historical snapshot: the sample sizes, checks and repair status below describe the stage recorded here. The current population is 113 issuers after PR #23/#25; see [current research plan](RESEARCH_PLAN_2026.md) for coverage and remaining work. Historical audit counts do not certify the expanded sample.
 
 Inspected agy's local DeepCoder work and its investigator/search results in the Antigravity transcripts, plus uncommitted changes in the primary checkout. Their original working files remain untouched there. The integration branch incorporates the useful collector and analysis work, corrects its data/interpretation contracts, and regenerates outputs.
 

@@ -164,7 +164,7 @@ def main() -> None:
     df = prepare()
     md = to_markdown
     text = "\n\n".join([
-        "# Where does the 2026Q2 first-day-return premium come from? (2026, N = 106)",
+        f"# Where does the 2026Q2 first-day-return premium come from? (2026, N = {len(df)})",
         "## 1. Sector mix by listing quarter (number of IPOs)", md(mix_table(df), "Sector"),
         "## 2. By sector and quarter (cell = N / mean IR / median IR)", md(sector_table(df), "Sector"),
         "## 3. Concentration within each quarter", md(concentration(df), ""),

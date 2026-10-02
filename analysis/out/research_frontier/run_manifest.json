@@ -121,16 +121,16 @@
   },
   "missing_event_market_inputs": [],
   "versions": {
-    "numpy": "2.5.3",
-    "pandas": "3.0.6",
-    "statsmodels": "0.15.0"
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "statsmodels": "0.14.6"
   },
   "inputs": {
-    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "c2a2c7bfd91ee838735915cb0286710cac2e66ba2c7cec4c9e69552f51a221bd",
-    "docs/RESEARCH_DESIGN_2026.md": "93edc56d4582aa0943709725265cba4f3841a1b6ea9ca4de3acfaf0cf8c2e175",
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "a003174997a2b53bae8f96d9bb3c5649399e56bb58d20704299871415c6e9af4",
+    "docs/RESEARCH_DESIGN_2026.md": "890cf51f5220313d236bc5f866443c951428c8b42e7c11cd847108aa09fa27fb",
     "pipeline/reports/margin_review/market_source_manifest.json": "951931b2f8866eff0622021c37f49863a539306f3a6935e455e80b3fd35228b3",
     "analysis/research_frontier_2026.py": "b3298fead23a9184cb19ca5674b0505436fcde6346553eb5c3452e778f3e270e",
-    "analysis/academic_extensions_2026.py": "0a653c41efeea71008d1d20862dcce9a96e85cc7d2775318fa62829b7ab7a5cf",
+    "analysis/academic_extensions_2026.py": "2fa1a301839b6b1b79a2504e7a6d898d1610bfa3fa28dd5b09693c272daf7d66",
     "analysis/research_inputs.py": "80a70166254713f1de9717a62dd6a0bea8a82f581356435621c66be3b07a10ed"
   },
   "skill_helpers": {

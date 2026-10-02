@@ -28,7 +28,7 @@ The master includes both 2025 and 2026 listings. Select actual 2026 listing date
 
 These entries are relative links to canonical files, not independent copies. Opening a link opens the original. Updated canonical files appear here automatically. Follow the pipeline's source, validation, and review requirements before changing data.
 
-The PDF is an exported snapshot. Changes to its LaTeX source require a new PDF export.
+The PDF is an exported snapshot of the earlier analysis, before the PR #28 additions. Use generated results and the current plan for the latest state. Changes to its LaTeX source require a new PDF export.
 
 The catalog in [config/research_workspace.json](../config/research_workspace.json) defines the links. To recreate missing links or validate the index:
 
@@ -45,6 +45,7 @@ The [architecture guide](../docs/ARCHITECTURE.md) explains the code modules and 
 
 ```bash
 python run.py analysis --list
+python run.py analysis --study basic
 python run.py analysis --study underpricing
 python run.py analysis --study ah --study margin
 ```

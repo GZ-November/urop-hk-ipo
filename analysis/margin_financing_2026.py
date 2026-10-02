@@ -181,7 +181,7 @@ def fig_margin(margin_frame: pd.DataFrame, d_margin: pd.DataFrame, d_full: pd.Da
     ax2.set_title(f"Panel B: Observed Margin vs IR (N = {len(d_margin)})", fontsize=9, color=INK, fontweight="bold")
     pct_axis(ax2)
 
-    # Panel 3: Model 13.1 Subscription Ratio vs Intraday Volatility (Full Sample N = 106)
+    # Panel 3: Model 13.1 Subscription Ratio vs Intraday Volatility (observed full sample)
     for hot, col, lbl in [(0.0, BLUE, "Other months"), (1.0, ORANGE, "April-June")]:
         sub = d_full[d_full["hot"] == hot]
         ax3.scatter(sub["sub_ratio"], sub["intraday_vol"], color=col, s=24, alpha=0.75, edgecolors="none", label=lbl)
@@ -328,7 +328,7 @@ Source-reported broker-survey snapshots cover {len(d_merged)} of {len(d_full)} i
     else:
         report_parts.append("## 1. Broker Margin Financing Panel\n\nNo verified broker margin file found or invalid data.\n")
 
-    # Table 3: Model 13.1 Full-Sample Econometric Regressions (N = 106)
+    # Table 3: Model 13.1 Full-Sample Econometric Regressions (observed full sample)
     rows_model13 = []
     complete = {dep: d_full.replace([np.inf, -np.inf], np.nan).dropna(subset=[dep, "lsub", "lapp", "hibor", "lproc", "hot", "month"]) for dep in ("intraday_vol", "flip")}
     # Dependent: Intraday Volatility

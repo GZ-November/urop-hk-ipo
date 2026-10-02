@@ -7,7 +7,7 @@ COHORT_CONFIGS := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_
 CONFIGS_2026 := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_2026q*.yaml)))
 PYTHON_SOURCES := run.py tools analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
 
-.PHONY: workspace workspace-check analysis-list margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
+.PHONY: workspace workspace-check analysis-list margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis basic-analysis analysis check check-code lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -29,6 +29,7 @@ help:
 	@echo "  make workspace     - Create or repair English research index links"
 	@echo "  make workspace-check - Verify all cataloged research index links"
 	@echo "  make analysis-list - List registered studies without running analysis"
+	@echo "  make basic-analysis - Generate coverage, descriptive statistics, simple groups and correlations"
 	@echo "  make analysis      - Regenerate statistics and regressions for 2026 listings only"
 	@echo "  make check-code    - Run lint, portable/acceptance tests and registry consistency"
 	@echo "  make clean         - Remove cached bytecode and temporary compilation files"
@@ -78,7 +79,7 @@ test-pipeline:
 	@"$(PYTHON)" -m unittest discover -s "pipeline/prospectus_pipeline/tests" -v
 
 test-analysis:
-	@"$(PYTHON)" -m unittest discover -s "analysis/tests" -v
+	@"$(PYTHON)" -m pytest analysis/tests -q
 
 # Run when new listing windows have matured (e.g. Q2 six-month windows from mid-October 2026). The analysis scripts read
 # the refreshed daily bars directly, so Q2 lockup events enter the event studies without the expansion writer.
@@ -95,6 +96,9 @@ refresh-2026:
 
 margin-reference:
 	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/margin_reference.py
+
+basic-analysis:
+	@"$(PYTHON)" run.py analysis --study basic
 
 analysis:
 	@"$(PYTHON)" run.py analysis

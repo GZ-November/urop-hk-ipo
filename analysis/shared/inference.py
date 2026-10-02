@@ -48,4 +48,3 @@ def wild_cluster_p(Y: np.ndarray, X: np.ndarray, g: np.ndarray, j: int) -> float
         y_star = fit_r + np.array(w)[idx] * u_r
         t_star.append(cluster_t(y_star, X, g)[1][j])
     return float(np.mean(np.abs(t_star) >= abs(t_obs[j]) - 1e-12))
-

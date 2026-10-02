@@ -1,7 +1,8 @@
 # Sponsor effects, 2026
 
-The first-named sponsor in the `Sponsor(s)` column is used as the lead-sponsor proxy: the `Lead sponsor name` column reads "CICC" for 92 of 106
-issuers even when CICC is not among the sponsors, so it is unusable. Sponsors with at least 3 deals are compared (9 sponsors, 85 deals).
+The first-named sponsor in the `Sponsor(s)` column is used as a proxy. Earlier source review found unreliable entries in `Lead sponsor name`
+(see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md), so that field is not used. First-named order does not establish actual lead responsibility.
+Sponsors with at least 3 complete-case deals are compared (9 sponsors, 85 deals).
 
 | First-named sponsor | Deals | Mean IR | Median IR | Share listed Apr-Jun |
 |---|---|---|---|---|
@@ -20,5 +21,4 @@ issuers even when CICC is not among the sponsors, so it is unusable. Sponsors wi
 | Intraclass correlation across sponsors | -0.015 | -0.046 |
 | ANOVA F (permutation p) | 0.88 (0.535) | 0.63 (0.731) |
 
-- Sponsor differences in mean IR largely reflect when each sponsor's deals listed; the residual test asks whether anything remains once the listing window, A+H
-  and size are removed. With few deals per sponsor and sponsors that often co-sponsor, a null result is weak evidence of no sponsor effect.
+- The residual test asks whether sponsor differences remain after controlling for the listing window, A+H and size. With few deals per sponsor and sponsors that often co-sponsor, a null result is weak evidence of no sponsor effect.

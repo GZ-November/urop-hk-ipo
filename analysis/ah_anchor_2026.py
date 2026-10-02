@@ -1,7 +1,7 @@
 """A+H issuers: the H-share offer discount to the A-share price, and what follows.
 
 Uses the A-share reference prices collected by `tools/external/ah_reference.py` (raw A-share closes, CNY/HKD, CSI 300)
-for the 34 A+H issuers listed in 2026. Four questions:
+for A+H issuers listed in 2026 with available reference anchors. Four questions:
 
   1. How large is the discount at the offer and at the day-1 close, and does a deeper discount go with a higher
      first-day return? The two gaps use different A-share prices (closing-date vs listing-day close), so they are not
@@ -12,7 +12,7 @@ for the 34 A+H issuers listed in 2026. Four questions:
   4. A-share reaction: CSI 300-adjusted A-share returns around the H-share subscription close and listing day, with the same
      placebo calibration as the lockup study.
 
-Only 2026 listings; N = 34, so every result is exploratory.
+Only 2026 listings; each statistic reports its available-observation count. Every result is exploratory.
 
 Outputs (analysis/out/ah_anchor/): ah_anchor.md, fig9_ah_anchor.png.
 
@@ -163,9 +163,9 @@ def main() -> None:
     # 1. discounts
     rows = []
     for name, part in [("All A+H", d), ("April-June", d[d["hot"] == 1]), ("Other months", d[d["hot"] == 0])]:
-        rows.append([name, str(len(part)), f"{100 * part['disc'].mean():.1f}%", f"{100 * part['disc'].median():.1f}%",
+        rows.append([name, str(len(part)), str(part["disc"].notna().sum()), str(part["h_day1_close_vs_a"].notna().sum()), f"{100 * part['disc'].mean():.1f}%", f"{100 * part['disc'].median():.1f}%",
                      f"{100 * part['h_day1_close_vs_a'].mean():.1f}%", f"{100 * part['ir'].mean():.1f}%", f"{100 * part['ir'].median():.1f}%"])
-    disc = pd.DataFrame(rows, columns=["Sample", "N", "Offer vs A (mean)", "Offer vs A (median)", "Day-1 close vs A (mean)", "Mean IR", "Median IR"])
+    disc = pd.DataFrame(rows, columns=["Sample", "Issuer N", "Offer-anchor N", "Day-1-anchor N", "Offer vs A (mean)", "Offer vs A (median)", "Day-1 close vs A (mean)", "Mean IR", "Median IR"])
     t_close = stats.ttest_rel(d["h_day1_close_vs_a"], d["disc"], nan_policy="omit")
     hot_diff = ext.ols_focus(d.assign(y=d["disc"]), "y", ["hot"], "hot")
     family.append(("Discount", "Offer discount differs between April-June and other listings (HC3)", hot_diff["p"]))
@@ -183,7 +183,8 @@ def main() -> None:
     r_ok = ext.ols_focus(ok, "y", ["disc10", "hot"], "disc10")
     reg_rows.append(["+ window, drop implausible anchors", f"{r_ok['b']:.3f}{ext.stars(r_ok['p'])} ({r_ok['se']:.3f})", f"{r_ok['p']:.3f}", "—" if np.isnan(r_ok["p_wild"]) else f"{r_ok['p_wild']:.3f}", str(r_ok["n"])])
     reg = pd.DataFrame(reg_rows, columns=["Specification", "Coefficient per +10 pp of offer premium (HC3 s.e.)", "HC3 p", "Wild cluster p", "N"])
-    rho = stats.spearmanr(d["disc"], d["ir"])
+    rho_pairs = d[["disc", "ir"]].replace([np.inf, -np.inf], np.nan).dropna()
+    rho = stats.spearmanr(rho_pairs["disc"], rho_pairs["ir"])
     family.append(("Discount", "Offer discount vs IR, Spearman", float(rho.pvalue)))
 
     # 3. determinants of the discount
@@ -248,20 +249,24 @@ The day-1 gap uses the A-share close on the H listing day, so it also reflects A
 
 ## 1. The discount
 
+Issuer N counts A+H membership; the anchor columns count observed reference pairs. Means use available values, while IR uses all issuers in each row.
+Paired offer/day-1 gap comparison N = {len(d[["disc", "h_day1_close_vs_a"]].dropna())}.
+
 {to_markdown(disc.set_index('Sample'), 'Sample')}
 
-- Offer vs A is negative for {int((d['disc'] < 0).sum())} of {len(d)} issuers: H shares are priced below the A-share close on average, and the discount is
+- Offer vs A is negative for {int((d['disc'] < 0).sum())} of {int(d['disc'].notna().sum())} issuers with an observed offer anchor: H shares are priced below the A-share close on average, and the discount is
   {'smaller' if abs(d['h_day1_close_vs_a'].mean()) < abs(d['disc'].mean()) else 'not smaller'} at the day-1 close (paired t p = {t_close.pvalue:.3f}). This comparison also includes A-share and FX moves between anchor dates.
 - April-June listings vs others: difference in the offer discount = {100 * hot_diff['b']:.1f} pp (HC3 p = {hot_diff['p']:.3f}).
 
 ## 2. Does the offer discount go with the first-day return?
 
-Rank correlation of offer premium with IR: rho = {rho.statistic:.2f} (p = {rho.pvalue:.3f}). Outcome log(1 + IR):
+Rank correlation of offer premium with IR: rho = {rho.statistic:.2f} (p = {rho.pvalue:.3f}, N = {len(rho_pairs)} finite pairs). Outcome log(1 + IR):
 
 {to_markdown(reg.set_index('Specification'), 'Specification')}
 
 - A negative coefficient means a deeper discount goes with a higher first-day return; this association alone does not identify convergence.
-- N = {len(d)} and {d['month'].nunique()} listing months; treat as directional.
+- The issuer population is {len(d)} across {d['month'].nunique()} listing months; each regression reports its own valid-anchor N.
+  Issuers missing an anchor remain in the population but do not enter anchor statistics or regressions. Treat these estimates as directional.
 
 ## 3. What explains the size of the discount
 
@@ -310,7 +315,7 @@ Around H listing (market model):
 
 {to_markdown(fam.assign(p=fam['p'].map('{:.4f}'.format), **{'q (BH)': fam['q (BH)'].map('{:.4f}'.format)}).set_index('Rank')[['Section', 'Test', 'p', 'q (BH)']], 'Rank')}
 
-Limits: 34 issuers; the offer anchor uses the closing-date A-share price (pricing dates are missing for several issuers; the pre-pricing anchor is in the CSV where available);
+Limits: {len(d)} A+H issuers, {int(d["disc"].notna().sum())} observed offer anchors; the offer anchor uses the closing-date A-share price (pricing dates are missing for several issuers; the pre-pricing anchor is in the CSV where available);
 CNY/HKD is a daily close rather than the rate at the pricing time; raw A-share prices are not adjusted for dividends inside the window.
 """
     (OUT / "ah_anchor.md").write_text(text, encoding="utf-8")

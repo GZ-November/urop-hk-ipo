@@ -21,9 +21,11 @@ class Study:
     script: str
     output: str | None
     description: str
+    run_by_default: bool = True
 
 
 STUDIES = (
+    Study("basic", "basic_statistics_2026", "basic_statistics", "Coverage and basic statistics", False),
     Study("descriptive", "module_a_stylized_facts", "module_a", "Descriptive statistics"),
     Study("underpricing", "module_b_underpricing_regression", "module_b", "First-day return regressions"),
     Study("decomposition", "ir_decomposition_2026", "ir_decomposition", "Return decomposition"),
@@ -63,7 +65,7 @@ def main(argv: list[str] | None = None) -> int:
             output = f"analysis/out/{study.output}" if study.output else "console"
             print(f"{study.name:14} {study.description:40} {output}")
         return 0
-    selected = [s for s in STUDIES if not args.study or s.name in args.study]
+    selected = [s for s in STUDIES if (s.name in args.study if args.study else s.run_by_default)]
     try:
         return run_studies(selected)
     except ValueError as exc:

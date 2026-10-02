@@ -1,4 +1,4 @@
-# 2026 first-day returns by listing month (N = 106)
+# 2026 first-day returns by listing month (N = 113)
 
 ## 1. By listing month
 
@@ -45,4 +45,4 @@
 - Mar vs Apr: Mann-Whitney p = 0.047; Jun vs Jul: Mann-Whitney p = 0.023.
 - Hot window vs rest: mean IR 93% (n = 45) vs 27% (n = 68); Mann-Whitney p = 0.00017.
 
-- Months with 2 or 5 deals (Aug, Sep) are too thin to read individually.
+- Months with fewer than 6 deals: 2026-08 (N = 2). Their estimates are too thin to read individually.

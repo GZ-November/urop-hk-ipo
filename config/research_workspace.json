@@ -169,6 +169,18 @@
     {
       "name": "07_historical_data/All_Years_AH_Price_References.csv",
       "source": "pipeline/exports/HKIPO-MASTER-AH-reference.csv"
+    },
+    {
+      "name": "04_reports_and_plans/Data_Gaps_and_Collection_Priorities.md",
+      "source": "docs/DATA_GAPS_2026.md"
+    },
+    {
+      "name": "05_analysis_results/00_basic_statistics",
+      "source": "analysis/out/basic_statistics"
+    },
+    {
+      "name": "06_sources_and_audits/Data_Gap_Collection",
+      "source": "pipeline/reports/data_gap_collection"
     }
   ]
 }

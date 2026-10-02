@@ -1,0 +1,51 @@
+{
+  "code": "6872.HK",
+  "source_text_sha256": "8178ceaeb1ed30acb3e72820ba1cbb77ab4de0bb017b064ebebf2bd658c356d0",
+  "entries": [
+    {
+      "header": "Underwriting base commission rate (%)",
+      "value": 0.03,
+      "page": 326,
+      "quote": "an underwriting commission of 3.00% of the aggregate Offer Price of all the Offer Shares (including any Offer Shares to be issued pursuant to the exercise of the Offer Size Adjustment Option and ",
+      "basis": "fixed, applicable to aggregate global offer"
+    },
+    {
+      "header": "Underwriting discretionary incentive fee rate (%)",
+      "value": 0.01,
+      "page": 327,
+      "quote": "In addition, the Company may, at its sole discretion, pay a discretionary incentive fee of an aggregate of up to 1.00% of the aggregate Offer Price of all the Offer Shares (including any Offer Sh",
+      "basis": "disclosed maximum discretionary rate, not actual payment"
+    },
+    {
+      "header": "Total underwriting fee rate (%)",
+      "value": 0.04,
+      "pages": [
+        326,
+        327
+      ],
+      "calculation": "0.03 fixed + 0.01 discretionary cap",
+      "basis": "maximum contractual rate, not actual payment"
+    },
+    {
+      "header": "Year-1 net sales (original, pre-annualization)",
+      "value": 0,
+      "pages": [
+        292,
+        353
+      ],
+      "period": "FY2025 full year",
+      "calculation": "0 annualized * 1 year coverage = 0 original"
+    }
+  ],
+  "notes": {
+    "revenue": "FY2023,FY2024,FY2025 no commercial product revenue; full consolidated income statement p353 starts R&D/administration; Other income is not sales.",
+    "gross_profit": "Not reported, retain NaN; no sales does not prove a disclosed gross-profit metric.",
+    "controller": "Absent by issuer disclosure; BC/BD are not applicable, not zero and not Cumbre ownership.",
+    "top_tier_vc": "Unknown classification, not no VC backing.",
+    "debt": "Appendix I p389: FY2025 leases 1882 + borrowings26772 + redemption0 =28654 thousands RMB.",
+    "capex": "Appendix I p358: PP&E225 + intangibles228 =453 thousands RMB; gross payments, not net investing cash flow.",
+    "pre_ipo_investors": "Non-exhaustive key historical investors, includes exited investors; Northern Light and Immense Vantage are not the same legal entity. Do not use this list to sum immediately pre-listing stake. Itemized source evidence: investor_crosscheck.json."
+  },
+  "supporting_evidence_file": "supporting_evidence.json",
+  "supporting_evidence_sha256": "7b4d9caa5126eee1e2051465f73016ae009c7fde97919457c99f1ccb86577025"
+}

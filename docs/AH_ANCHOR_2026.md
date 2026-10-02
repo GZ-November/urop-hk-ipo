@@ -1,23 +1,32 @@
-# A+H reference prices and source review · 2026-10-02
+# A+H reference prices and source review
 
-Documentation updated on 2026-10-02; the observation cutoff remains **2026-09-30**. The current analysis covers **38 A+H issuers listed in 2026**, within the 113-issuer IPO sample. The earlier 34-issuer analysis and 41-issuer cross-year collection described in the [September 30 integration review](AGY_INTEGRATION_2026-09-30.md) are historical snapshots. Cross-year collection does not expand the study's 2026 scope.
+文档更新：2026-10-02；行情与参考锚截止2026-09-30。当前113家2026 IPO中，独立A+H标记有 **38家**，互斥上市路径分组有36家（18A／18C优先分类）。这两个计数不能代替有效价格锚样本量。
 
-`pipeline/exports/HKIPO-MASTER-AH-reference.csv` stores cross-year anchors; `HKIPO-2026-AH-reference.csv` is the study input. Anchors record A price date, FX date and observation cutoff. Failed or empty refreshes preserve existing caches. The refresh target rebuilds the master before collecting reference prices.
+## 已采集覆盖与缺口
 
-## Price and date definitions
+`pipeline/exports/HKIPO-2026-AH-reference.csv` 已补6727.HK、3228.HK、3757.HK、9607.HK，覆盖 **38／38家**的申购截止日锚及上市日H/A锚。跨年参考表同步为45家（2025年7家、2026年38家），旧34家已有锚数值没有变化。4家证券匹配、原价缓存、FX与计算的独立复核见 [补数记录](../pipeline/reports/data_gap_collection/ah_four_review.md)。
 
-The offer-price anchor is the raw A-share close on the last A trading day on or before the H subscription closing date, converted with that day's HKD-per-CNY exchange rate. The day-1 gap uses the A-share close on the H listing date; differences also reflect A-share and FX movements between dates.
+[生成报告](../analysis/out/ah_anchor/ah_anchor.md) 已重跑：主要折价规格N=38，剔除`plausible=0`的稳健性规格N=36。6727发行折价−60.2371%，计算通过但仍保留异常旗标，公司行动及第二价格来源未完成排查。4家实际pricing date仍未知；补齐的是申购截止日锚，不是最终定价日锚。Yahoo日FX尚未证明盘中何时可知。
 
-The raw H-share first-day price correction was merged in PR #20. PR #23 rechecked A+H date anchors, FX direction and raw day-1 closes. The daily H/A premium divides raw H prices by raw A prices × FX. Price returns exclude dividend reinvestment and may be affected by corporate actions; they are not total returns.
+## 价格、日期与解释
 
-## Current results and remaining research
+A股发行参考取不晚于H股申购截止日的最后一个A股交易日收盘价，用当日HKD per CNY汇率换算。首日H/A价差使用H股上市日A价，因此发行折价到首日价差的变化也包含A股和汇率变动，不能全部归为H股价格发现。
 
-Read the [generated report](../analysis/out/ah_anchor/ah_anchor.md) for current estimates and sample sizes. It reports 38 A+H issuers, with horizon-specific matched samples, a balanced day-60 path, and A-share event reactions using both index subtraction and a pre-event alpha/beta market model. Numerical results are maintained in generated outputs rather than copied into this document.
+`--all --as-of 2026-09-30` 用于跨年采集；失败或空刷新保留已有缓存。参考数据记录A价日期、FX日期和截止日。2026-09-30首日原价修复涉及当时106家中的26家，是历史修复范围；当前38家A+H的首日收益见生成表，不沿用旧版10.9%。
 
-Remaining priorities are to separate A-market movements, H offer discounts and H listing repricing; collect the first H issuance announcement date; and add peer/industry benchmarks. Overlapping announcements, selected listing timing, raw-price corporate actions and few time clusters limit causal interpretation. A market model alone does not solve these issues.
+每日H/A面板使用 **raw H / (raw A × FX)**，不能将复权H价与原始A价相除。买入持有价格收益未再投资股息，仍可能受公司行动影响，不是总收益。
 
-## Margin financing and lockups
+## 已完成的探索性分析
 
-Current margin coverage is **25 of 113 issuers / 93 source-reported observations**. The closing-day specification has N=15 and G=4; the demonstrably public-before-subscription-deadline specification has N=25 and G=6. Publication metadata and coverage-selection diagnostics are available in the [margin report](../analysis/out/margin/margin.md); availability before the subscription deadline does not establish availability before pricing. Sparse surveys and inconsistent broker coverage remain limitations.
+- 发行折价及首日价差：有效锚的平均发行折价约39.0%，首日价差约32.2%；两者日期不同。
+- 折价与首日收益：秩相关使用有限的折价／收益配对，剔除缺锚行；回归并列HC3与少月份wild推断。相关不能识别价格收敛或因果效应。
+- 上市后收敛：60个交易日期限有25家匹配；固定这些发行人的路径另行输出。端点差异未显著不等于没有收敛，跨市场假期不填价。
+- A股反应：申购截止日与H股上市日分别检验CSI 300调整CAR，并保留事件前[-120,-21]、至少60对收益估计的alpha/beta市场模型和邻近日期placebo。市场模型不是行业匹配，也不能把上市事件直接解释为融资因果冲击。
 
-Contract-based lockup evidence now covers 113 issuers following PR #23 and #25; missing contractual evidence remains explicit. Q2 event windows still require actual post-event observations. Refresh them as full windows mature, keeping the cutoff explicit. See the [current readiness report](../pipeline/reports/research_readiness/README.md).
+所有具体系数、p值及多重检验见生成表；底层文件包括 `premium_panel.csv`、`horizon_coverage.csv`、`balanced_path_60.csv` 及事件市场模型参数文件。
+
+## 后续工作
+
+4家锚已补齐。后续查实际定价日、6727异常及公司行动，核对第一项H股发行公告日期与重叠事件；深入研究时再采行业匹配行情。来源写回遵循验证与独立复核门禁。
+
+孖展已扩至25家／93条，15家有截止日快照；截止日快照不必然在决策前公开，当前信息时点见 [孖展结果](../analysis/out/margin/margin.md)。契约解禁与六日历月收益分别判定成熟，使用真实期限与完整行情窗口，不沿用统一六个月默认值。总体状态见 [当前计划](RESEARCH_PLAN_2026.md)；[2026-09-30集成复核](AGY_INTEGRATION_2026-09-30.md)保留当时的来源及修复过程。

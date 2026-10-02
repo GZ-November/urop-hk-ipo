@@ -64,4 +64,3 @@ def estimation_sample(d: pd.DataFrame) -> pd.DataFrame:
     """Use one finite complete-case sample for all nested models and inference."""
     columns = list(dict.fromkeys(["y", "code", "month", *MODELS["M4"]]))
     return d.replace([np.inf, -np.inf], np.nan).dropna(subset=columns).copy()
-

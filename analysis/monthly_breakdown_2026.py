@@ -117,12 +117,12 @@ def main() -> None:
     md = to_markdown
     bullet = lambda ns: "\n".join(f"- {n}" for n in ns)
     text = "\n\n".join([
-        "# 2026 first-day returns by listing month (N = 106)",
+        f"# 2026 first-day returns by listing month (N = {len(df)})",
         "## 1. By listing month", md(monthly_table(df), "Month"),
         "## 2. Longest gaps between consecutive listings", md(gap_table(df), "Last listing before"),
         "## 3. Time-structure models for log(1 + IR)", md(models, "Model"), "- " + model_note,
         "## 4. Tests", bullet(restriction_tests(df)),
-        "- Months with 2 or 5 deals (Aug, Sep) are too thin to read individually.",
+        f"- Months with fewer than 6 deals: {', '.join(f'{m} (N = {n})' for m, n in df.groupby('month').size().items() if n < 6) or 'none'}. Their estimates are too thin to read individually.",
     ]) + "\n"
     (OUT / "monthly_breakdown.md").write_text(text, encoding="utf-8")
     print(f"Monthly breakdown written to {OUT.relative_to(ROOT)}/ (N = {len(df)})")

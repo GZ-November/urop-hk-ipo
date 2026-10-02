@@ -6,7 +6,7 @@ Five questions the earlier modules do not answer, each with a standard reference
                                relative to underwriting fees (Loughran & Ritter 2002)? What does a retail
                                application actually earn?
   2. Underwriting fees         Commission-rate mass points and scale economies (Chen & Ritter 2000).
-  3. Lockup and stabilization  Market-adjusted abnormal returns and turnover around the six-month lockup
+  3. Lockup and stabilization  Market-adjusted abnormal returns and turnover around contractual lockup
                                expiry and the end of the stabilization period, calibrated with placebo
                                event dates drawn from the same issuers (Field & Hanka 2001; Ljungqvist et al. 2006).
   4. Partial adjustment        First-day return vs the offer-price revision inside the filing range (Hanley 1993).
@@ -118,7 +118,7 @@ def money_left_section(d: pd.DataFrame, family: list) -> str:
     return f"""# Money left on the table, 2026 (N = {len(d)})
 
 MLOT = (day-1 close - offer price) x base offer shares. Fees = the disclosed underwriting commission on HK and international proceeds
-(discretionary incentive fees are not in the data and would add up to 1%).
+(discretionary incentive fees are not measured here, so this is not a complete measure of issuance costs).
 
 {to_markdown(head.set_index('Sample'), 'Sample')}
 
@@ -132,11 +132,11 @@ MLOT = (day-1 close - offer price) x base offer shares. Fees = the disclosed und
 - Cornerstone investors hold {100 * corner_share_sh:.1f}% of the base offer and capture {100 * corner_share_gain:.1f}% of net money left; retail holds {100 * retail_share_sh:.1f}% of the shares and captures {100 * retail_share_gain:.1f}%.
   Shares held and gains match closely because IR is a per-share return: the allocation, not the pricing, decides who benefits, and the public tranche is small.
 - Fee rate (fees / proceeds) and IR: Spearman = {corr.statistic:.2f} (p = {corr.pvalue:.2f}). Small deals carry both higher fee rates and higher IR, so the raw correlation mostly
-  reflects size: with ln size, the window and A+H held fixed, the commission-rate coefficient on log(1 + IR) is {100 * partial['b']:.3f} pp (HC3 p = {partial['p']:.2f}).
+  reflects size: with ln size, the window and A+H held fixed, the coefficient on log(1 + IR) in the commission-rate regression is {100 * partial['b']:.3f} pp (HC3 p = {partial['p']:.2f}).
 
 ## What a retail application earns
 
-Expected gain per HK$10,000 = allocation ratio (final public shares / valid applied shares, capped at 1) x IR x 10,000, assuming proportional allocation
+Expected gain per HK$10,000 = allocation ratio (final public shares / valid applied shares; invalid ratios are quarantined, not capped) x IR x 10,000, assuming proportional allocation
 (actual allocation is by lottery, so this is an expectation, not a typical outcome).
 
 {to_markdown(prof_tab, '')}
@@ -169,8 +169,8 @@ def fee_section(d: pd.DataFrame, family: list) -> str:
     return f"""# Underwriting commission rates, 2026 (N = {len(z)})
 
 Outcome: disclosed underwriting commission on the HK offer, as a share of proceeds. The derived columns `Underwriting base commission rate`
-and `Total underwriting fee rate` in the master are not used: the total equals 3.5% for 68 issuers and 1.00x% for the other 38 regardless of the disclosed
-commission, so it does not follow from it (see docs/ACADEMIC_EXTENSIONS_2026.md).
+and `Total underwriting fee rate` in the master are not used. Earlier source review found that these derived fields did not reliably follow
+the disclosed commissions (see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md). The regression uses the disclosed HK commission.
 
 ## Distribution
 
@@ -312,15 +312,15 @@ def events_section(frames: dict, d: pd.DataFrame, family: list) -> tuple[str, di
     lock_tech = study_event(frames, events["lockup_date"], col="ex_hstech")
     stab_bought = study_event(frames, events.loc[events["stab"] == 1, "stab_end"])
     stab_not = study_event(frames, events.loc[events["stab"] == 0, "stab_end"])
-    for label, tab in (("Six-month lockup expiry", lock), ("Stabilization end", stab)):
+    for label, tab in (("Contractual lockup expiry", lock), ("Stabilization end", stab)):
         row = tab[tab["Window"] == "[-5,+5]"]
         if len(row):
             family.append(("Events", f"{label}: CAR [-5,+5] vs HSI (placebo)", float(row["Placebo p"].iloc[0])))
     turn = lock[lock["Window"].str.startswith("Turnover")]
     if len(turn):
-        family.append(("Events", "Six-month lockup expiry: turnover shock vs placebo days", float(turn["Placebo p"].iloc[0])))
+        family.append(("Events", "Contractual lockup expiry: turnover shock vs placebo days", float(turn["Placebo p"].iloc[0])))
     n_lock = int(lock["N"].max()) if len(lock) else 0
-    return f"""# Lockup expiry and stabilization end, 2026 (HSI-adjusted, from cached daily bars)
+    return f"""# Contractual lockup expiry and stabilization end, 2026 (HSI-adjusted, from cached daily bars)
 
 Event day 0 is the first trading day on or after the event date; CAR is the sum of daily stock returns minus HSI returns over the window.
 The **placebo p** re-draws one non-event day per issuer from the same issuer's own history, between {PLACEBO_EXCLUDE + 1} and {PLACEBO_NEAR} trading days from the true
@@ -328,10 +328,11 @@ event (so the volatility regime is similar), {N_PLACEBO} times. It calibrates dr
 The placebo compares the cross-sectional t-statistic of each draw with the observed one, so a window whose returns are unusually dispersed (event-induced variance) is not mistaken for a shifted mean.
 Turnover rows compare mean turnover on days [0,+5] to days [-25,-6] (log ratio; 0 = no change).
 
-## 1. Six-month lockup expiry (cornerstone unlock date, else controlling-shareholder date)
+## 1. Contractual lockup expiry (earliest cornerstone unlock date, else controlling-shareholder date)
 
-Only issuers listed early enough to have reached the expiry with a full window are included ({n_lock} at most, all listed January-March; 88 issuers share the same
-cornerstone and controlling-shareholder date, so they are one event, not two).
+Only observed expiry dates with full return or turnover windows are included ({n_lock} issuers at most; N varies by window).
+The dates follow the stored contractual expiry fields, rather than a uniform listing-date-plus-six-month assumption.
+Coincident cornerstone and controlling-shareholder dates are counted as one event, not two.
 
 {to_markdown(format_events(lock), 'Window')}
 
@@ -353,21 +354,20 @@ No purchases:
 
 {to_markdown(format_events(stab_not), 'Window') if len(stab_not) else 'Too few issuers with a full window.'}
 
-- A negative pre-window on the lockup event ([-5,-1]) is the usual anticipation of selling pressure; the sign and size of [-5,+5] against the placebo distribution
-  is the test. With about {n_lock} events from one listing quarter the power is limited.
-- The placebo statistics are centred below zero: returns drift down and turnover decays as a new listing ages, so an ordinary window in the same weeks would
-  show a negative average. That is why the placebo p can be much smaller than the plain t-test or Wilcoxon p (for example the stabilization-end [-5,+5] window has
-  t about 1.9 but placebo p about 0.004): the window is unusual relative to the issuer's own neighbouring days, though a plain test against zero is only marginal.
-- Stabilization end falls about 20 trading days after listing, exactly the Day-20 observation used elsewhere in this project, so this window also overlaps
-  the post-listing decline that the hot-window comparison shows; the pre-window [-5,-1] is positive as well, which fits price support that lasts until the end.
-- Lockup events include only January-March listings (N = 26 to 31), so they say nothing about April-June or later issuers.
+- Negative pre-event returns alone do not establish anticipated selling pressure. Compare the CAR, window N and placebo p in the tables;
+  the available event sample is small and date maturity limits coverage.
+- Placebo calibration compares the event with neighbouring non-event dates for the same issuer. A small placebo p and a small test-against-zero p
+  answer different questions; neither establishes an exogenous supply shock. Read the current rows rather than an earlier numerical example.
+- Stabilization-end windows can overlap the early aftermarket period. Returns there can reflect market movements and the age of a listing as well as
+  stabilization; no directional price-support conclusion follows from the event date alone.
+- Contract lengths and missing dates differ across issuers. A date present in the workbook is not, by itself, evidence of complete independent review.
 """, {"lock": lock, "stab": stab}
 
 
 def fig_events(frames: dict, d: pd.DataFrame) -> None:
     events = d.set_index("code")
     fig, axes = new_fig(1, 2, figsize=(10, 3.8), sharey=True)
-    for ax, (col, title) in zip(axes, [("lockup_date", "Six-month lockup expiry"), ("stab_end", "Stabilization end")]):
+    for ax, (col, title) in zip(axes, [("lockup_date", "Contractual lockup expiry"), ("stab_end", "Stabilization end")]):
         style_axes(ax)
         curves = []
         for code, date in events[col].dropna().items():
@@ -418,8 +418,8 @@ def partial_adjustment_section(d: pd.DataFrame, family: list) -> str:
     return f"""# Partial adjustment inside the filing range, 2026 (range deals only, N = {len(z)})
 
 Revision = (offer price - midpoint of the filing range) / midpoint. Hanley (1993) predicts a positive relation between revision and first-day return:
-information that raises demand lifts the price only partly. The 65 fixed-price deals have no range and are excluded, so this is a subsample of the deals
-that are priced by bookbuilding, and the sample is small.
+information that raises demand lifts the price only partly. The {int(d["fixed"].eq(1).sum())} fixed-price deals have no range and are excluded;
+other missing or invalid revisions are also excluded. This small subsample consists of valid range-priced deals.
 
 Rank correlation of revision with IR: rho = {rho.statistic:.2f} (p = {rho.pvalue:.3f}).
 
@@ -428,7 +428,7 @@ Outcome log(1 + IR):
 {to_markdown(tab.set_index('Specification'), 'Specification')}
 
 - Revision is negative when the offer is priced below the midpoint and positive when above; the coefficient is per unit (100 pp) of revision.
-- {len(z)} observations and 9 listing months limit inference; treat as a directional check of the partial-adjustment idea, not an estimate to quote.
+- {len(z)} observations and {z["month"].nunique()} listing months limit inference; treat as a directional check of the partial-adjustment idea, not an estimate to quote.
 """
 
 
@@ -448,8 +448,9 @@ def sponsor_section(d: pd.DataFrame, family: list) -> str:
                          "Share listed Apr-Jun": (100 * tab["hot"]).map("{:.0f}%".format)})
     return f"""# Sponsor effects, 2026
 
-The first-named sponsor in the `Sponsor(s)` column is used as the lead-sponsor proxy: the `Lead sponsor name` column reads "CICC" for 92 of 106
-issuers even when CICC is not among the sponsors, so it is unusable. Sponsors with at least 3 deals are compared ({len(keep)} sponsors, {len(g)} deals).
+The first-named sponsor in the `Sponsor(s)` column is used as a proxy. Earlier source review found unreliable entries in `Lead sponsor name`
+(see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md), so that field is not used. First-named order does not establish actual lead responsibility.
+Sponsors with at least 3 complete-case deals are compared ({len(keep)} sponsors, {len(g)} deals).
 
 {to_markdown(view, 'First-named sponsor')}
 
@@ -458,8 +459,7 @@ issuers even when CICC is not among the sponsors, so it is unusable. Sponsors wi
 | Intraclass correlation across sponsors | {icc_raw:.3f} | {icc_res:.3f} |
 | ANOVA F (permutation p) | {f_raw:.2f} ({p_raw:.3f}) | {f_res:.2f} ({p_res:.3f}) |
 
-- Sponsor differences in mean IR largely reflect when each sponsor's deals listed; the residual test asks whether anything remains once the listing window, A+H
-  and size are removed. With few deals per sponsor and sponsors that often co-sponsor, a null result is weak evidence of no sponsor effect.
+- The residual test asks whether sponsor differences remain after controlling for the listing window, A+H and size. With few deals per sponsor and sponsors that often co-sponsor, a null result is weak evidence of no sponsor effect.
 """
 
 

@@ -1,0 +1,77 @@
+{
+  "reviewer": "independent sub-agent review_gaps",
+  "candidate_sha256": "420901bafc378a7f350d937e1dbf87269eb2cc31578888f6efce08b7d2b948ec",
+  "coverage_sha256": "5810528050208ca2fbc8233b37cf62b7a115129940323e8479af23bb277f89a0",
+  "rows_checked": 4582,
+  "issuers_checked": 113,
+  "status_counts": {
+    "totals_reconciled_pending_semantic_review": 93,
+    "quarantined_reconciliation": 1,
+    "applicants_allocation_reconciled_applied_total_conflict": 19
+  },
+  "source_and_rule_failures": [],
+  "warnings": [],
+  "check_counts": {
+    "distribution_rows": 80,
+    "split_page_rows_checked": 6,
+    "merged_column_separator_repair": 25,
+    "lot_share": 112,
+    "employee_reserved_checks": 2,
+    "lot_HDR": 1
+  },
+  "scope": "Independent reading of parser; all 4582 rows checked against frozen source text/pages/hashes and independent rule arithmetic. All 113 board lot quotes checked. Distribution rows and named cross-page/employee/HDR cases examined. Source-text semantic review only; raw PDF visual verification not repeated. 3355 quarantined and 19 applied total conflicts retained.",
+  "gate_pass": true,
+  "limitations": [
+    "3636/0901 pool identifiers are blank because source count distribution is single table; no A/B invented",
+    "6 cross-page rules read manually and checked againstboth pages; numbers and guaranteed/additional allocation correctly preserved",
+    "3355 and19 master applied-total conflicts not resolved by semantic review",
+    "Source JSONL reviewed; rawPDF visualverification not repeated"
+  ],
+  "selected_manual_cases": [
+    "3636",
+    "0901",
+    "0470",
+    "2701",
+    "6656",
+    "2672",
+    "2261",
+    "1377",
+    "2476",
+    "6228",
+    "1641",
+    "3228",
+    "3757",
+    "9607"
+  ],
+  "pool_independent_checks": {
+    "rows_exact_quote_located": 4496,
+    "mismatches": [],
+    "method": "last original POOL A/B heading before independently located row, carrying previous-page heading"
+  },
+  "verdict": "pass_for_candidate_relation_with_issuer_quarantine_and_applied_total_conflict_flags",
+  "allowed_use": {
+    "93_clean_issuers": "Analyzable relation; all three totals reconcile with master",
+    "19_applied_conflict_issuers": "Tier allocation expectations can be studied with explicit conflict flag; do not use to update master Public valid applied shares or silently choose between conflicting totals",
+    "3355.HK": "Exclude all42 rows from analyzable tiers; source allocated sum2557500 contradicts4000000 finalpublic tranche",
+    "formal_workbook_writeback": "No writeback authorized by this relation review"
+  },
+  "resolved_findings": [
+    "91 excess continuation_page tags removed; only6 actual cross-page rows remain",
+    "2493.HK page11 eleven Pool B rows now correctlycarry page10 trailingPool B heading"
+  ],
+  "unit_metadata_followup": {
+    "reviewed": "2026-10-02",
+    "changes": "board_lot_shares renamed board_lot_units; added board_lot_unit",
+    "issuer_units": {
+      "share": 112,
+      "HDR": 1
+    },
+    "tier_units": {
+      "share": 4547,
+      "HDR": 35
+    },
+    "errors": [],
+    "gate_pass": true,
+    "scope": "113 coverage rows and4582 tier rows compared against previously reviewed source board lot quotes/numbers;6228 explicitly HDR; remaining112 share"
+  }
+}

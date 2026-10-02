@@ -62,4 +62,3 @@ def anova_icc(y: np.ndarray, groups: np.ndarray, n_perm: int = 5000, seed: int =
     rng = np.random.default_rng(seed)
     perm = np.array([f_stat(rng.permutation(y))[0] for _ in range(n_perm)])
     return float(icc), float(f_obs), float((1 + (perm >= f_obs).sum()) / (n_perm + 1))
-
