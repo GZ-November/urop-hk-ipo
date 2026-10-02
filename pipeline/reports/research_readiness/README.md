@@ -1,43 +1,41 @@
-# 研究数据问题的处置 · 2026-09-30
+# 研究数据修复与剩余限制 · 2026-10-02
 
-这份报告区分已修正的错误与仍受数据/识别限制的问题。新版 skill 不能使尚未发生的窗口成熟，也不能凭一项统计方法消除内生性。
+本页已同步PR #23、#25及#27；行情与分析观测截止日仍为2026-09-30。当前master包含113家2026普通IPO：Q1 38、Q2 45、Q3 30。旧106家基准已被季度扩展取代。文档同步不代表重新运行流水线或全面语义核验。
 
-## 1. Q2 董事席位
+## 1. Q2董事席位：已完成字段级修复
 
-实际字段为 `Pre-IPO investor board seat (1=yes; 0=no)`，不是另一张旧位置映射中的 Chapter 18A flag。14 家的正式 JSON 为未知，而工作簿原为0。现行 schema 明确“没有证据不等于0”。
+原先14个未经支持零值已通过独立原披露复核写回，当前master为8个“有”、1个“无”、5个“未知”。未知保留缺失，不再补0；董事席位研究不再因这14项修复而整体暂停，仍须检查实际有效N、组别支持和选择内生性。
 
-Q2 源数据修复由用户在 Zcode 中继续进行，本研究分支不修改 Q2 工作簿、正式 JSON、codebook 或 master 导出。当前基线仍包含这14个未经证据支持的0；涉及董事席位的回归暂停。
+修复来源与范围见 [review_provenance.csv](../repair_handoff/review_provenance.csv)。这些review针对指定字段，不表示整个payload已独立复核。[旧reconciliation](q2_board_seat_reconciliation.csv)、[旧定位queue](q2_board_review_queue.csv)、[before audit](q2_audit_before.json)及[local candidate audit](q2_audit_local_candidate.json)保留为历史证据，不描述当前canonical值。未知之间匹配不能计作已核实值。
 
-曾在本地测试撤销14个零值的候选方案，随后从交付中撤回以避免并行写入。候选明细见 [reconciliation](q2_board_seat_reconciliation.csv)，复核候选页和原文 hash 见 [queue](q2_board_review_queue.csv)。关键词命中只是定位线索，包含公司法等无关段落，不能作为席位证据。
+## 2. 6228.HK：已处理HDR/股份单位
 
-[before audit](q2_audit_before.json) 与 [local candidate audit](q2_audit_local_candidate.json) 仅记录该候选试验，后者不描述当前 canonical 数据。候选方案的14个差异变成“两边未知”，审计会将两边缺失计作匹配，因此3150匹配格不能写成3150个已验证值。master 的布尔缺失提示改为“未知保留缺失”，避免诱导补0；该提示修正独立于 Q2 源数据修复。
+PR #23已确认每份HDR代表10股，并在 [offer_units.json](../../prospectus_pipeline/data/manual/offer_units.json)记录原披露与计量规则；复核材料见 [6228_units_review.json](../repair_handoff/6228_units_review.json)。报价和发售数量使用HDR口径，与股本比较时应用10倍转换，不能把所有数量机械乘10。
 
-## 2. 孖展扩展及实际推断
+当前 [retail_sample.csv](../../../analysis/out/research_frontier/retail_sample.csv)已重新纳入6228.HK，配售率约0.226175，旧异常排除已撤销。当前研究输入和生成结果按修复后的口径使用，不再列作待修复。
 
-新增七篇日期明确的智通报道，共26条候选金额；24条进入存储样本，2条样本外观测留在来源ledger并记入排除表。导出从23家/69条提升至25家/93条，截止日从9家升至15家。新增报道保留发布时刻；报道时刻不等于贷款计量时刻，也不能证明投资者在定价前已知。
+## 3. 契约解禁证据已合并，行情窗口仍受日期约束
 
-当前截止日规格 N15、上市月份 G4、最大杠杆0.586；HC3已可计算，p=0.473。最新观察的简单秩相关 rho=0.46、p=0.020，但加入时间窗口和规模后 HC3 p=0.265、restricted wild p=0.219。不能将简单相关解释为融资导致抑价。共同嵌套规格的样本已固定，并输出 rank、杠杆与估计状态。
+PR #23完成原106家契约证据，PR #25补齐7家新增发行人；[lockup_contracts.json](../../prospectus_pipeline/data/manual/lockup_contracts.json)现覆盖113家，候选、独立review及assembly记录位于 [lockup_contracts/](../repair_handoff/lockup_contracts/)。事件panel消费该文件，缺契约证据时显式报告，不以“上市日加固定月数”补日期。契约核验不意味着真实卖出行为可观察，也不意味着事件具有外生性。
 
-完整来源见 [ledger](../../prospectus_pipeline/data/margin/reported_snapshots.json)，输入见 [CSV](../../exports/HKIPO-2026-margin-daily.csv)，结果见 [margin.md](../../../analysis/out/margin/margin.md)。瑞为技术的7月3日报道与7月2日调查金额/公开认购表述明显冲突，本轮没有采入该报道；保留日期/调查范围问题，不能为了增加截止日N挑选金额。
+当前 [event_readiness.csv](../../../analysis/out/research_frontier/event_readiness.csv)有113家；六日历月端点37家已观测、1家成熟但缺行情、75家未成熟。其工作簿日期覆盖标签为：完整29家、事件后行情缺失1家、窗口不完整6家、事件未成熟73家、缺事件日期4家。这是单一工作簿事件日期的覆盖诊断，不是完整多事件契约panel的计数。
 
-## 3. 日期成熟与行情覆盖
+该CSV仍保留“workbook date; contract not independently reverified in this run”标签；它表示该脚本运行未重新执行合同review，不能据此推断PR #23/#25的契约核验未完成。合同证据状态查正式文件及review，窗口覆盖查实际行情。显式as-of继续截断未来bar，缺基准不前向填成0。Q2完整窗口按发行人实际契约日期从10月起陆续成熟。
 
-固定截至日2026-09-30，新 [event_readiness.csv](../../../analysis/out/research_frontier/event_readiness.csv) 为106家逐项记录工作簿事件日期、实际交易日期、缓存末日和缺失原因。Q1的六日历月端点37家已观测，1家端点行情缺失；Q2/Q3共68家日历窗口未成熟。解禁[-5,+5]窗口Q1完整29家、窗口不完整8家、事件后行情缺失1家；Q2/Q3事件未成熟。
+## 4. 孖展：时点元数据已补，覆盖与识别限制仍在
 
-事件frame现在接受显式as-of，截断未来个股/指数bar；缺基准回报不会通过pct_change前向填补成0。工作簿事件日期没有在本轮完成逐份合同核验，因此“窗口完整”不代表契约日期已独立验证，不能升级因果结论。
+当前覆盖25家/93条；截止日规格N=15、G=4。PR #23已加入发布时间、截止日期、调查范围及可用性元数据和覆盖选择诊断；当前截止前可用快照规格N=25、G=6。93条中78条发表于截止日前、13条明确晚于截止时点、2条截止日时刻未知。订购截止前可用不能代替定价前可用。
 
-## 4. 新发现：6228.HK股数单位
+来源见 [ledger](../../prospectus_pipeline/data/margin/reported_snapshots.json)，输入见 [CSV](../../exports/HKIPO-2026-margin-daily.csv)，当前估计及限制见 [margin.md](../../../analysis/out/margin/margin.md)。7656.HK的报道/金额冲突继续保留未解决，不为扩样挑选数值。稀疏快照和券商调查覆盖不能识别个体杠杆、需求加速或羊群因果效应。
 
-该发行人正式提取的 final base/public/placing 值，与自身引用中的89,668,600 / 8,966,900 / 80,701,700存在十倍差异。当前公开配售股数/申请股数=2.261753，不能当作分配率并截为1。
+## 5. 剩余研究工作与解释边界
 
-本轮新零售分析排除该行，并将它从新的基石焦点规格隔离；排除原因保存在 [retail_sample.csv](../../../analysis/out/research_frontier/retail_sample.csv)。尚未改写正式JSON或工作簿数值；需要用原始配发文件确认HDR/股份计量，再通过验证与独立审核门禁修正。旧模块的相关股数、财富分配与自由流通数值也须在该修正后重算，不能宣称本轮全表已核实。
+- 选定主线，固定主要因变量、共同样本、事件日期、排除规则和推断方法；已有结果仍为探索性。
+- 零售收益方向优先补官方申请档位配售表；A+H方向补首次发行公告日期和同行匹配。A+H当前子样本38家，实际各horizon另报N。
+- 机制支持表中19家18C均为A；非18C只有6家A，另有机制未知记录。缺共同支持及发行人自选择不能由matching或bootstrap消除。
+- 基石与需求仍内生，需求控制可能条件化于通道或碰撞点；OVB敏感性不是因果识别。
+- 成熟后刷新解禁窗口，区分契约、供给暴露、实际交易及重叠公告；预测模型应在Q4检验前冻结。
 
-## 5. 内生性与研究状态
+[2026-10-01 evidence coverage](../repair_handoff/evidence_coverage_summary.md)与[market audit](../repair_handoff/market_data_audit_summary.md)是106家阶段快照，不能作113家全量审计结论。PR #27补齐113/113逐股表目录，也不等于所有字段已全面核实。本次仅同步文档，未重跑旧检查或改写历史审计数值。
 
-机制×18C支持表显示17家18C全选A，而非18C只有6家A；此格子缺少对照，matching/IV不能凭空提供识别。基石与需求的内生性继续通过估计对象说明、共同样本、少聚类推断与点估计OVB敏感性处理。已有数据和结果已看过，本轮所有分析均是探索，不是预注册检验。
-
-复现检查：287个流水线测试（2个本地PDF依赖测试跳过）和47个分析测试通过，含未来bar截断、缺基准不补0、经济分母与OVB代数的新增回归测试；lint/registry通过。安装版skill核心检查与22个边界测试通过；未安装的linearmodels/pyfixest明确跳过。来源manifest更新并保留旧hash快照；哈希不证明语义真实。
-
-本轮16项brainstorm和执行设计见 [RESEARCH_DESIGN_2026.md](../../../docs/RESEARCH_DESIGN_2026.md)。
-
-正式源字段新增/修正仍须遵守 [hk-ipo-pipeline skill](../../../.agents/skills/hk-ipo-pipeline/SKILL.md) 的要求：“Writeback requires passing extracted, validated and reviewed records bound to the same payload hash.” 本分支没有改写这些正式字段或合成review通过记录；董事席位由 Zcode 继续修复，6228的原披露核验尚未完成。
+正式字段后续新增/修正继续遵守 [hk-ipo-pipeline skill](../../../.agents/skills/hk-ipo-pipeline/SKILL.md) 的证据、验证及独立review门禁。研究设计见 [RESEARCH_DESIGN_2026.md](../../../docs/RESEARCH_DESIGN_2026.md)，当前待办见 [RESEARCH_PLAN_2026.md](../../../docs/RESEARCH_PLAN_2026.md)。

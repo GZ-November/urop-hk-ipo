@@ -1,0 +1,1 @@
+../../docs/RESEARCH_PLAN_2026.md

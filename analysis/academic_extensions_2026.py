@@ -32,9 +32,9 @@ import statsmodels.api as sm
 from scipy import stats
 
 import aftermarket_event_time_2026 as et
-import extended_analysis_2026 as ext
+from shared import estimation as ext
 from research_inputs import C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026  # noqa: F401 — legacy C export
-from module_a_stylized_facts import (
+from shared.reporting import (
     AXIS, BLUE, INK, INK2, MUTED, new_fig, pct_axis, style_axes, to_markdown,
 )
 

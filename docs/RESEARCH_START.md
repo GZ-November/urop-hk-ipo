@@ -1,6 +1,6 @@
 # 继续研究的入口
 
-本仓库的当前研究基准是 2026-09-30 修正后的 106 家 2026 IPO。先读 [当前计划](RESEARCH_PLAN_2026.md) 与 [来源复核](AGY_INTEGRATION_2026-09-30.md)，再选择一个研究问题。所有旧价格数值写稿已放进 [归档](archive/README.md)。
+文档同步于2026-10-02；行情与事件观测截止日仍为2026-09-30。当前研究基准为113家2026 IPO（Q1 38、Q2 45、Q3 30），已包含PR #23的证据修复及PR #25的季度扩展。先读 [当前计划](RESEARCH_PLAN_2026.md) 与 [修复及剩余限制](../pipeline/reports/research_readiness/README.md)，再选择一个研究问题。[9月30日来源复核](AGY_INTEGRATION_2026-09-30.md)保留为阶段性记录。所有旧价格数值写稿已放进 [归档](archive/README.md)。
 
 ## 用新 skill 开始
 
@@ -56,11 +56,11 @@ python analysis/margin_financing_2026.py
 
 ## 目前仍需解决
 
-- Q2 14 个董事席位的未经支持零值由 Zcode 继续修复；本分支保留原披露复核线索，不改写 Q2 数据。对账不能替代独立语义核验。
-- 孖展扩展到25家／93条，截止日15家；HC3已可计算，但仅4个上市月，发布/定价时点和调查范围仍限制推断。
-- Q2 解禁和长期窗口按发行人日期及实际行情覆盖进入样本；未成熟窗口不补估计。
+- Q2的14个董事席位已完成字段级独立复核和写回：8个有、1个无、5个未知。6228.HK的HDR/股份单位也已处理；两项均不再列作待修复。未知仍保留缺失，不能把字段级复核扩大为整份数据已核实。
+- 孖展覆盖113家中的25家／93条，截止日规格15家、4个上市月；已有发布时间/截止时点元数据与选择覆盖诊断。截止前可用快照规格25家、6个上市月；仍需核实相对定价的可用时点与调查范围。
+- 113家已纳入契约解禁证据文件；按实际契约日期及行情覆盖进入事件样本。Q2窗口随日期成熟更新，未成熟窗口不补估计。
 - 机制选择、基石份额和需求具有内生性；相关结果需明确识别限制。已有探索发现不能直接升级为预注册检验。
 
-本轮新增 [学术设计与16项 brainstorm](RESEARCH_DESIGN_2026.md)、[生成结果](../analysis/out/research_frontier/research.md) 和 [证据修复状态](../pipeline/reports/research_readiness/README.md)。
+现有 [学术设计与16项 brainstorm](RESEARCH_DESIGN_2026.md)、[生成结果](../analysis/out/research_frontier/research.md) 和 [证据修复状态](../pipeline/reports/research_readiness/README.md)。
 
 新研究文档、输入与输出的归属规则见 [仓库组织指南](REPOSITORY_GUIDE.md)。

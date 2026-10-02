@@ -16,10 +16,10 @@ import statsmodels.api as sm
 from statsmodels.stats.multitest import multipletests
 
 import academic_extensions_2026 as academic
-import module_b_underpricing_regression as mb
+from shared.inference import wild_cluster_p
 import research_inputs
 from research_inputs import prepare_extended, C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
-from module_a_stylized_facts import (
+from shared.reporting import (
     to_markdown,
 )
 from research_helpers.ipo_metrics import initial_returns
@@ -137,7 +137,7 @@ def cornerstone_analysis(sample: pd.DataFrame) -> str:
         clustered = ordinary.get_robustcov_results(cov_type='cluster', groups=z.month, use_correction=True, use_t=True)
         assert list(robust.model.data.row_labels) == list(z.index)
         j = list(x.columns).index('corner')
-        wild = mb.wild_cluster_p(z.y.to_numpy(float), x.to_numpy(), z.month.to_numpy(), j)
+        wild = wild_cluster_p(z.y.to_numpy(float), x.to_numpy(), z.month.to_numpy(), j)
         results.append({'Specification': name, 'n': len(z), 'g': z.month.nunique(), 'b': robust.params['corner'],
                         'hc3_se': robust.bse['corner'], 'hc3_p': robust.pvalues['corner'],
                         'cr1_p': clustered.pvalues[j], 'restricted_wild_p': wild,

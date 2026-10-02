@@ -1,5 +1,7 @@
 # Codebase review and improvements · 2026-09-30
 
+> 历史阶段记录：本文数值与待办描述的是2026-09-30当时的106家基准，后续PR #23已处理董事席位、HDR单位及契约证据，PR #25将样本扩至113家。当前状态以 [研究计划](RESEARCH_PLAN_2026.md)、[readiness](../pipeline/reports/research_readiness/README.md) 和生成结果为准；下文保留原记录，不作为现行待办。
+
 Scope: recent committed changes (`05d0408...de88f41`), the new untracked Module B analysis, collection/runtime helpers, core event/validation/writeback modules, packaging, checks and internal documentation. Standards and research-spec reviews ran independently. There was no originating issue specification; the local research plan, contracts and user instruction define the requirements. The user's current instruction restricts every statistical and regression analysis, including Module A, to 2026 listings.
 
 ## Standards

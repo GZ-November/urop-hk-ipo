@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "directory": "research_workspace",
+  "entries": [
+    {
+      "name": "01_workbooks/2026_Q1_IPO_Data.xlsx",
+      "source": "pipeline/cohorts/HKIPO-MB2026Q1.xlsx"
+    },
+    {
+      "name": "01_workbooks/2026_Q2_IPO_Data.xlsx",
+      "source": "pipeline/cohorts/HKIPO-MB2026Q2.xlsx"
+    },
+    {
+      "name": "01_workbooks/2026_Q3_IPO_Data.xlsx",
+      "source": "pipeline/cohorts/HKIPO-MB2026Q3.xlsx"
+    },
+    {
+      "name": "02_research_inputs/2026_AH_Price_References.csv",
+      "source": "pipeline/exports/HKIPO-2026-AH-reference.csv"
+    },
+    {
+      "name": "02_research_inputs/2026_Margin_Financing.csv",
+      "source": "pipeline/exports/HKIPO-2026-margin-daily.csv"
+    },
+    {
+      "name": "02_research_inputs/2026_Q1_Clean_Data.csv",
+      "source": "pipeline/exports/HKIPO-MB2026Q1_clean.csv"
+    },
+    {
+      "name": "02_research_inputs/2026_Q2_Clean_Data.csv",
+      "source": "pipeline/exports/HKIPO-MB2026Q2_clean.csv"
+    },
+    {
+      "name": "02_research_inputs/2026_Q3_Clean_Data.csv",
+      "source": "pipeline/exports/HKIPO-MB2026Q3_clean.csv"
+    },
+    {
+      "name": "02_research_inputs/All_Years_Master_Panel.csv",
+      "source": "pipeline/exports/HKIPO-MB-MASTER_clean.csv"
+    },
+    {
+      "name": "03_data_dictionary/2026_Q1_Codebook.md",
+      "source": "pipeline/codebooks/HKIPO_2026Q1_Codebook.md"
+    },
+    {
+      "name": "03_data_dictionary/2026_Q2_Codebook.md",
+      "source": "pipeline/codebooks/HKIPO_2026Q2_Codebook.md"
+    },
+    {
+      "name": "03_data_dictionary/2026_Q3_Codebook.md",
+      "source": "pipeline/codebooks/HKIPO_2026Q3_Codebook.md"
+    },
+    {
+      "name": "03_data_dictionary/Research_Terminology.md",
+      "source": "CONTEXT.md"
+    },
+    {
+      "name": "03_data_dictionary/Variable_Registry.yaml",
+      "source": "pipeline/registry/HKIPO_Variable_Registry.yaml"
+    },
+    {
+      "name": "04_reports_and_plans/Current_Research_Plan.md",
+      "source": "docs/RESEARCH_PLAN_2026.md"
+    },
+    {
+      "name": "04_reports_and_plans/Repairs_and_Remaining_Limits.md",
+      "source": "pipeline/reports/research_readiness/README.md"
+    },
+    {
+      "name": "04_reports_and_plans/Research_Design.md",
+      "source": "docs/RESEARCH_DESIGN_2026.md"
+    },
+    {
+      "name": "04_reports_and_plans/Research_Progress_Report.pdf",
+      "source": "docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf"
+    },
+    {
+      "name": "04_reports_and_plans/Research_Progress_Report.tex",
+      "source": "docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex"
+    },
+    {
+      "name": "04_reports_and_plans/Research_Start.md",
+      "source": "docs/RESEARCH_START.md"
+    },
+    {
+      "name": "05_analysis_results/01_descriptive_statistics",
+      "source": "analysis/out/module_a"
+    },
+    {
+      "name": "05_analysis_results/02_underpricing_regressions",
+      "source": "analysis/out/module_b"
+    },
+    {
+      "name": "05_analysis_results/03_retail_returns_and_cornerstones",
+      "source": "analysis/out/research_frontier"
+    },
+    {
+      "name": "05_analysis_results/04_ah_price_anchors",
+      "source": "analysis/out/ah_anchor"
+    },
+    {
+      "name": "05_analysis_results/05_margin_financing",
+      "source": "analysis/out/margin"
+    },
+    {
+      "name": "05_analysis_results/06_aftermarket_returns",
+      "source": "analysis/out/event_time"
+    },
+    {
+      "name": "05_analysis_results/07_lockups_stabilization_and_extensions",
+      "source": "analysis/out/academic"
+    },
+    {
+      "name": "05_analysis_results/08_prediction_and_robustness",
+      "source": "analysis/out/extended"
+    },
+    {
+      "name": "05_analysis_results/09_monthly_analysis",
+      "source": "analysis/out/monthly_breakdown"
+    },
+    {
+      "name": "05_analysis_results/10_q2_analysis",
+      "source": "analysis/out/q2_breakdown"
+    },
+    {
+      "name": "05_analysis_results/11_return_decomposition",
+      "source": "analysis/out/ir_decomposition"
+    },
+    {
+      "name": "06_sources_and_audits/Audit_and_Exclusion_Reports",
+      "source": "pipeline/reports"
+    },
+    {
+      "name": "06_sources_and_audits/Extraction_and_Validation",
+      "source": "pipeline/prospectus_pipeline/out"
+    },
+    {
+      "name": "06_sources_and_audits/Official_Listing_Sources",
+      "source": "pipeline/sources"
+    },
+    {
+      "name": "06_sources_and_audits/Source_Evidence_and_Market_Data",
+      "source": "pipeline/prospectus_pipeline/data"
+    },
+    {
+      "name": "07_historical_data/2025_Q1_Clean_Data.csv",
+      "source": "pipeline/exports/HKIPO-MB2025Q1_clean.csv"
+    },
+    {
+      "name": "07_historical_data/2025_Q1_Codebook.md",
+      "source": "pipeline/codebooks/HKIPO_2025Q1_Codebook.md"
+    },
+    {
+      "name": "07_historical_data/2025_Q1_IPO_Data.xlsx",
+      "source": "pipeline/cohorts/HKIPO-MB2025Q1.xlsx"
+    },
+    {
+      "name": "07_historical_data/2025_Q2_Clean_Data.csv",
+      "source": "pipeline/exports/HKIPO-MB2025Q2_clean.csv"
+    },
+    {
+      "name": "07_historical_data/2025_Q2_Codebook.md",
+      "source": "pipeline/codebooks/HKIPO_2025Q2_Codebook.md"
+    },
+    {
+      "name": "07_historical_data/2025_Q2_IPO_Data.xlsx",
+      "source": "pipeline/cohorts/HKIPO-MB2025Q2.xlsx"
+    },
+    {
+      "name": "07_historical_data/All_Years_AH_Price_References.csv",
+      "source": "pipeline/exports/HKIPO-MASTER-AH-reference.csv"
+    }
+  ]
+}

@@ -5,9 +5,9 @@
 PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 COHORT_CONFIGS := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_*.yaml)))
 CONFIGS_2026 := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_2026q*.yaml)))
-PYTHON_SOURCES := run.py analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
+PYTHON_SOURCES := run.py tools analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
 
-.PHONY: margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
+.PHONY: workspace workspace-check analysis-list margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis analysis check check-code lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -26,6 +26,9 @@ help:
 	@echo "  make test          - Run full automated regression and safety test suite"
 	@echo "  make lint          - Compile maintained Python sources and run required static checks"
 	@echo "  make refresh-2026  - Refresh 2026 aftermarket bars, clear immature window stats, re-export, refresh A-share references, rebuild master and analysis"
+	@echo "  make workspace     - Create or repair English research index links"
+	@echo "  make workspace-check - Verify all cataloged research index links"
+	@echo "  make analysis-list - List registered studies without running analysis"
 	@echo "  make analysis      - Regenerate statistics and regressions for 2026 listings only"
 	@echo "  make check-code    - Run lint, portable/acceptance tests and registry consistency"
 	@echo "  make clean         - Remove cached bytecode and temporary compilation files"
@@ -94,8 +97,16 @@ margin-reference:
 	@"$(PYTHON)" pipeline/prospectus_pipeline/tools/external/margin_reference.py
 
 analysis:
-	@for script in module_a_stylized_facts module_b_underpricing_regression ir_decomposition_2026 q2_breakdown_2026 monthly_breakdown_2026 testability_screen_2026 extended_analysis_2026 aftermarket_event_time_2026 academic_extensions_2026 ah_anchor_2026 margin_financing_2026 research_frontier_2026; do \
-		"$(PYTHON)" analysis/$$script.py || exit 1; done
+	@"$(PYTHON)" run.py analysis
+
+analysis-list:
+	@"$(PYTHON)" run.py analysis --list
+
+workspace:
+	@"$(PYTHON)" run.py workspace
+
+workspace-check:
+	@"$(PYTHON)" run.py workspace --check
 
 lint:
 	@"$(PYTHON)" -m compileall -q $(PYTHON_SOURCES)

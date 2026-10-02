@@ -11,6 +11,8 @@ Usage Examples:
     python run.py report
     python run.py export
     python run.py find --only 6082.HK
+    python run.py analysis --list
+    python run.py workspace --check
     python run.py --help
 """
 from __future__ import annotations
@@ -27,6 +29,18 @@ WEEKLY_REPORT_SCRIPT = PIPELINE_DIR / "prospectus_pipeline" / "tools" / "build_w
 
 def main() -> None:
     args = sys.argv[1:]
+
+    # Project orchestration stays separate from the evidence-gated pipeline CLI.
+    project_commands = {
+        "analysis": ROOT / "analysis" / "run.py",
+        "workspace": ROOT / "tools" / "research_workspace.py",
+    }
+    if args and args[0] in project_commands:
+        try:
+            result = subprocess.run([sys.executable, str(project_commands[args[0]]), *args[1:]], cwd=ROOT)
+        except KeyboardInterrupt:
+            sys.exit(130)
+        sys.exit(result.returncode)
 
     # Dedicated target for building the research progress Word document
     if args and args[0] in ("report-weekly", "weekly-report"):
