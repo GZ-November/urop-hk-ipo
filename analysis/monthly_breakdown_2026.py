@@ -22,8 +22,9 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from scipy import stats
 
-import module_a_stylized_facts as ma
+from shared.reporting import to_markdown
 from q2_breakdown_2026 import prepare
+from research_inputs import C as INPUT_COLUMNS
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "analysis" / "out" / "monthly_breakdown"
@@ -43,8 +44,8 @@ def monthly_table(df: pd.DataFrame) -> pd.DataFrame:
             "Median IR": f"{100 * ir.median():.0f}%",
             "IR < 0": f"{100 * (ir < 0).mean():.0f}%",
             "IR > 100%": f"{100 * (ir > 1).mean():.0f}%",
-            "Fixed price": f"{100 * (g[ma.C['pricing']] == 'Fixed price').mean():.0f}%",
-            "Median public subscription (x)": f"{g[ma.C['sub']].median():,.0f}",
+            "Fixed price": f"{100 * (g[INPUT_COLUMNS['pricing']] == 'Fixed price').mean():.0f}%",
+            "Median public subscription (x)": f"{g[INPUT_COLUMNS['sub']].median():,.0f}",
             "HSI 20d before prospectus": f"{100 * g[HSI].mean():.1f}%",
             "IPOs in prior 90 days": f"{g[COUNT].mean():.0f}",
         }
@@ -113,7 +114,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     df = prepare()
     models, model_note = time_models(df)
-    md = ma.to_markdown
+    md = to_markdown
     bullet = lambda ns: "\n".join(f"- {n}" for n in ns)
     text = "\n\n".join([
         f"# 2026 first-day returns by listing month (N = {len(df)})",

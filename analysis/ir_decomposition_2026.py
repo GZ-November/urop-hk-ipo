@@ -23,7 +23,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-import module_a_stylized_facts as ma
+from shared.reporting import to_markdown
 import research_inputs as inputs
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -104,8 +104,8 @@ def crosstabs(df: pd.DataFrame) -> str:
 
     return "\n\n".join([
         "# Cross-tabs: cell = N / mean first-day return (2026)",
-        "## Route x listing quarter", ma.to_markdown(q_tab, "Route"),
-        "## Route x VC/PE backing", ma.to_markdown(b_tab, "Route"),
+        "## Route x listing quarter", to_markdown(q_tab, "Route"),
+        "## Route x VC/PE backing", to_markdown(b_tab, "Route"),
         "- Empty cells show where the three factors cannot be separated: 18A/18C issuers are all backed, "
         "and there is no 18A issuer in 2026Q3.",
     ]) + "\n"
@@ -155,10 +155,10 @@ def regressions(df: pd.DataFrame) -> str:
         "Coefficients with month-clustered standard errors in parentheses. Omitted groups: Conventional route, "
         "listed 2026Q1, not VC/PE-backed. Market variables are standardized (mean 0, s.d. 1) and measured "
         "before the prospectus date. * p<0.10, ** p<0.05, *** p<0.01.",
-        "## A. Route, quarter and backing", ma.to_markdown(coef_table(fits, FIRST_TABLE), ""),
-        ma.to_markdown(inc5, "Factor (model 5)"),
-        "## B. Can market conditions replace the quarter?", ma.to_markdown(coef_table(fits, MARKET_TABLE), ""),
-        ma.to_markdown(inc9, "Factor (model 9)"),
+        "## A. Route, quarter and backing", to_markdown(coef_table(fits, FIRST_TABLE), ""),
+        to_markdown(inc5, "Factor (model 5)"),
+        "## B. Can market conditions replace the quarter?", to_markdown(coef_table(fits, MARKET_TABLE), ""),
+        to_markdown(inc9, "Factor (model 9)"),
         "- Nine listing months give few clusters, so the p-values are indicative only. "
         "Backing is identified only within Conventional and A+H issuers, because all 18A/18C issuers are backed.",
         "- A coefficient b on log(1 + IR) is roughly a 100*b percent difference in (1 + IR).",

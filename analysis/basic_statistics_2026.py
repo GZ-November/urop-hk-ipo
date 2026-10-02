@@ -15,13 +15,14 @@ import pandas as pd
 import yaml
 
 from research_inputs import C, MASTER, ROOT, load_panel, select_2026
+from shared.reporting import to_markdown
 
 OUT = ROOT / "analysis/out/basic_statistics"
 AS_OF = pd.Timestamp("2026-09-30")
 
 
 def markdown(frame: pd.DataFrame) -> str:
-    return frame.to_markdown(index=False, floatfmt=".3f")
+    return to_markdown(frame.round(3).set_index(frame.columns[0]), str(frame.columns[0]))
 
 
 def main() -> None:

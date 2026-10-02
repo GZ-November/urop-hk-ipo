@@ -1,6 +1,18 @@
 # 2026 IPO analysis
 
+Current baseline (documentation synced 2026-10-02): 113 ordinary IPOs (Q1 38, Q2 45, Q3 30), observation cutoff 2026-09-30. A+H analysis covers 38 issuers. PR #23 repairs and PR #25 sample expansion are reflected in current outputs; model-specific complete-case N differs from the full sample. See [repair status and remaining limits](../pipeline/reports/research_readiness/README.md).
+
 Every statistical and regression output uses Hong Kong Main Board ordinary IPOs **listed in 2026**. `select_2026` checks actual listing dates, cohort consistency and issuer uniqueness. Module A contains no 2025H1 or historical US comparison observations. Literature and prior sponsor rankings inform definitions only.
+
+List or run studies through the unified runner (existing direct script commands remain valid):
+
+```bash
+python run.py analysis --list
+python run.py analysis --study underpricing
+python run.py analysis --study ah --study margin
+```
+
+`analysis/run.py` owns the study registry and execution order. Shared table/chart functions live in `shared/reporting.py`; clustered inference lives in `shared/inference.py`; focused regressions and multiple-test adjustment live in `shared/estimation.py`. Underpricing hypotheses and the common-sample policy live in `specifications/underpricing.py`. Legacy Module A/B exports point to these same implementations. See [architecture](../docs/ARCHITECTURE.md).
 
 From the repository root:
 

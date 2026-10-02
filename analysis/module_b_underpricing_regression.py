@@ -45,9 +45,7 @@ Usage:
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 
-import itertools
 
 import matplotlib
 
@@ -60,7 +58,7 @@ from scipy import stats
 from statsmodels.stats.diagnostic import het_breuschpagan
 
 from research_inputs import C as C, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026  # noqa: F401 — legacy C export
-from module_a_stylized_facts import (
+from shared.reporting import (
     BLUE, GRID, INK, INK2, MUTED, ORANGE, SURFACE, new_fig, style_axes, to_latex, to_markdown,
 )
 
@@ -71,59 +69,10 @@ SEED = 20260929
 
 # ------------------------------------------------------------ specification
 
-@dataclass(frozen=True)
-class Var:
-    name: str
-    label: str
-    block: str
-    sign: str        # predicted sign: "+", "-" or "+/-"
-    theory: str
-    definition: str
-
-
-VARS = [
-    Var("lage", "ln firm age", "uncertainty", "-",
-        "Beatty & Ritter (1986): older firms have more track record",
-        "ln(years from incorporation to listing)"),
-    Var("lproc", "ln offer size", "uncertainty", "-",
-        "Ritter (1984); Beatty & Ritter (1986): size proxies for information available",
-        "ln(offer price x base offer shares, HK$bn), before over-allotment"),
-    Var("ah", "A+H issuer", "uncertainty", "-",
-        "Rock (1986): a public A-share price removes much of the information asymmetry",
-        "1 if the issuer already trades on the A-share market"),
-    Var("vc", "VC/PE-backed", "certification", "+/-",
-        "Megginson & Weiss (1991) certification (-) vs Gompers (1996), Lee & Wahal (2004) (+)",
-        "1 if any pre-IPO VC or PE investor"),
-    Var("tier1", "Top-tier sponsor", "certification", "+/-",
-        "Carter & Manaster (1990) (-) vs Hoberg (2007): top banks underprice more (+)",
-        "1 if the best sponsor is tier 1 of the 2025 HK underwriter ranking"),
-    Var("corner", "Cornerstone allocation", "certification", "+/-",
-        "Anchor certification (-) vs smaller float and demand signal (+); see Module C",
-        "Final cornerstone allocation, share of base offer"),
-    Var("hsi", "HSI return, prior 20 days", "market", "+",
-        "Lowry & Schwert (2002): market momentum passes into initial returns",
-        "HSI return over the 20 trading days before the prospectus"),
-    Var("n90", "IPO count, prior 90 days", "market", "+/-",
-        "Sentiment and volume (+) vs underwriter capacity and supply crowding (-)",
-        "HK ordinary IPOs in the 90 days before the prospectus"),
-    Var("hot", "April-June hot window", "time", "+",
-        "2026 research plan: control for the observed April-June hot window",
-        "1 if listing occurs in April-June 2026; exploratory time control"),
-    Var("lsub", "ln subscription ratio", "demand", "+",
-        "Rock (1986), Welch (1992): retail demand; endogenous, descriptive only",
-        "ln(public offer subscription multiple)"),
-]
-V = {v.name: v for v in VARS}
-BLOCK_VARS = {b: [v.name for v in VARS if v.block == b] for b in ("uncertainty", "certification", "market", "demand")}
-
-MODELS = {
-    "M1": BLOCK_VARS["uncertainty"] + ["hot"],
-    "M2": BLOCK_VARS["uncertainty"] + BLOCK_VARS["certification"] + ["hot"],
-    "M3": BLOCK_VARS["uncertainty"] + BLOCK_VARS["certification"] + BLOCK_VARS["market"] + ["hot"],
-}
-MODELS["M4"] = MODELS["M3"] + BLOCK_VARS["demand"]
-BASELINE = "M3"
-BLOCK_LABEL = {"uncertainty": "Uncertainty", "certification": "Certification", "market": "Market conditions", "time": "Time control"}
+from specifications.underpricing import (  # noqa: F401 -- compatibility exports
+    Var, VARS, V, BLOCK_VARS, MODELS, BASELINE, BLOCK_LABEL, estimation_sample,
+)
+from shared.inference import cr1_cov, cluster_t, wild_cluster_p  # noqa: F401 -- compatibility exports
 
 
 # Compatibility name for existing notebooks; no second implementation.
@@ -144,10 +93,6 @@ def design(d: pd.DataFrame, xs: list[str], y: str = "y") -> tuple[pd.Series, pd.
     return z[y], X, z["code"]
 
 
-def estimation_sample(d: pd.DataFrame) -> pd.DataFrame:
-    """Use one finite complete-case sample for all nested models and inference."""
-    columns = list(dict.fromkeys(["y", "code", "month", *MODELS["M4"]]))
-    return d.replace([np.inf, -np.inf], np.nan).dropna(subset=columns).copy()
 
 
 def table_sample_selection(d: pd.DataFrame) -> pd.DataFrame:
@@ -217,44 +162,10 @@ def block_wald_p(res, names: list[str]) -> float:
 
 # ---------------------------------------------- clustered inference (numpy)
 
-def cr1_cov(X: np.ndarray, u: np.ndarray, g: np.ndarray) -> np.ndarray:
-    """Cluster-robust covariance with the CR1 small-sample correction (as in Stata / statsmodels)."""
-    n, k = X.shape
-    ids = np.unique(g)
-    if len(ids) < 2 or n <= k or np.linalg.matrix_rank(X) < k:
-        raise ValueError("Cluster covariance needs full rank, residual degrees of freedom and at least two clusters")
-    bread = np.linalg.inv(X.T @ X)
-    meat = np.zeros((k, k))
-    for c in ids:
-        s = X[g == c].T @ u[g == c]
-        meat += np.outer(s, s)
-    return (len(ids) / (len(ids) - 1)) * ((n - 1) / (n - k)) * bread @ meat @ bread
 
 
-def cluster_t(Y: np.ndarray, X: np.ndarray, g: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    beta = np.linalg.solve(X.T @ X, X.T @ Y)
-    u = Y - X @ beta
-    return beta, beta / np.sqrt(np.diag(cr1_cov(X, u, g)))
 
 
-def wild_cluster_p(Y: np.ndarray, X: np.ndarray, g: np.ndarray, j: int) -> float:
-    """Restricted wild cluster bootstrap-t p-value for H0: beta_j = 0.
-
-    Rademacher weights, one per cluster, enumerated exactly (2^G draws)."""
-    _, t_obs = cluster_t(Y, X, g)
-    keep = [c for c in range(X.shape[1]) if c != j]
-    Xr = X[:, keep]
-    br = np.linalg.solve(Xr.T @ Xr, Xr.T @ Y)
-    fit_r, u_r = Xr @ br, Y - Xr @ br
-    ids = np.unique(g)
-    if len(ids) > 16:
-        raise ValueError("Exact wild bootstrap supports at most 16 clusters; use a simulated method for larger samples")
-    idx = np.searchsorted(ids, g)
-    t_star = []
-    for w in itertools.product((-1.0, 1.0), repeat=len(ids)):
-        y_star = fit_r + np.array(w)[idx] * u_r
-        t_star.append(cluster_t(y_star, X, g)[1][j])
-    return float(np.mean(np.abs(t_star) >= abs(t_obs[j]) - 1e-12))
 
 
 # ----------------------------------------------------------------- tables

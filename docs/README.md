@@ -4,6 +4,8 @@
 
 | 类别 | 入口 | 用途 |
 |---|---|---|
+| English progress report | [PDF](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) | Earlier analysis snapshot; current estimates remain in generated outputs |
+| Code architecture | [Architecture Guide](ARCHITECTURE.md) / [Research Workspace](../research_workspace/README.md) | Shared modules, commands, and English artifact index |
 | 当前研究 | [研究入口](RESEARCH_START.md)、[2026 计划](RESEARCH_PLAN_2026.md) | 基础统计起步、少数主线、复现顺序 |
 | 数据覆盖与获取 | [缺数清单](DATA_GAPS_2026.md)、[基础统计](../analysis/out/basic_statistics/basic_statistics.md) | 存储覆盖、缺失原因、公开可得性和补数优先级 |
 | 既有扩展设计 | [学术设计与 brainstorm](RESEARCH_DESIGN_2026.md)、[新结果](../analysis/out/research_frontier/research.md) | 既有零售／基石探索与16项候选，近期顺序以当前计划为准 |

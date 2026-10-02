@@ -33,9 +33,9 @@ import statsmodels.api as sm
 from scipy import stats
 from statsmodels.stats.multitest import multipletests
 
-import module_b_underpricing_regression as mb
+from shared.inference import wild_cluster_p
 from research_inputs import ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
-from module_a_stylized_facts import (
+from shared.reporting import (
     AXIS, BLUE, INK, INK2, MUTED, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
 )
 
@@ -109,7 +109,7 @@ def group_difference(z: pd.DataFrame) -> dict:
     clusters = z["month"].to_numpy()
     wild = np.nan
     if 2 <= len(np.unique(clusters)) <= 16 and z["hot"].nunique() == 2:
-        wild = mb.wild_cluster_p(z["bhar"].to_numpy(float), X.to_numpy(), clusters, 1)
+        wild = wild_cluster_p(z["bhar"].to_numpy(float), X.to_numpy(), clusters, 1)
     hot, other = z.loc[z["hot"] == 1, "bhar"], z.loc[z["hot"] == 0, "bhar"]
     mw = stats.mannwhitneyu(hot, other).pvalue if len(hot) > 2 and len(other) > 2 else np.nan
     return {"diff": fit.params["hot"], "p_hc3": fit.pvalues["hot"], "p_wild": wild, "p_mw": mw}

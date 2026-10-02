@@ -2,6 +2,8 @@
 
 ## 放在哪里
 
+根目录 [Research Workspace](../research_workspace/README.md) 是英文命名的日常资料入口，采用相对文件链接，不改变下表正式路径。链接由 `config/research_workspace.json` 管理，使用 `make workspace` 建立、`make workspace-check` 验证。代码职责与接口见 [Architecture Guide](ARCHITECTURE.md)；PDF仍是导出快照。
+
 | 工件 | 归属 | 维护方式 |
 |---|---|---|
 | CLI / pipeline 逻辑 | `run.py`、`pipeline/prospectus_pipeline/src/`、`tools/` | 路径遵循 `paths.py` 与 `master_contracts.py` |
@@ -21,7 +23,7 @@
 
 整理于 2026-09-30：研究修正已通过 PR #20 合并到 main；本次整理从该 main 新建 `codex/repo-research-organization`。此前的研究分支和 worktree 仍保留用于追溯。
 
-桌面主 checkout 存在 agy 的未提交修改及未追踪材料，且当时 main 落后一个提交。它们没有在本次整理中覆盖或删除。继续研究应先确认自己所在 checkout 的提交和工作区状态，不要从这些旧本地结果误读当前研究结论。
+以下为2026-09-30历史工作区说明，不描述当前checkout：当时桌面主checkout存在agy的未提交修改及未追踪材料，且main落后一个提交。它们没有在本次整理中覆盖或删除。继续研究应先确认自己所在 checkout 的提交和工作区状态，不要从这些旧本地结果误读当前研究结论。
 
 ```bash
 # 确认当前 checkout 与所有 worktree

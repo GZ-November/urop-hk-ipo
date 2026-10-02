@@ -28,7 +28,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-import module_a_stylized_facts as ma
+from shared.reporting import to_markdown
 import research_inputs as inputs
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -162,7 +162,7 @@ def q2_ranked(df: pd.DataFrame) -> pd.DataFrame:
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     df = prepare()
-    md = ma.to_markdown
+    md = to_markdown
     text = "\n\n".join([
         f"# Where does the 2026Q2 first-day-return premium come from? (2026, N = {len(df)})",
         "## 1. Sector mix by listing quarter (number of IPOs)", md(mix_table(df), "Sector"),

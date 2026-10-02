@@ -1,81 +1,183 @@
-# UROP HK IPO · 港股主板 IPO 研究流水线
+# Hong Kong IPO Research
 
-[![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-从港交所披露文件构建可追溯的香港主板普通 IPO 数据集，并开展 **仅限 2026 年上市发行人** 的统计和计量分析。研究工作簿包含 202 个变量，覆盖发行结构、财务、Pre-IPO 投资者、基石、承销、首日表现与上市后事件窗口。
+**From HKEX disclosures to research data and reproducible IPO analysis.**
 
-An evidence-linked research pipeline for ordinary Hong Kong Main Board IPOs: document collection, deterministic validation, reviewed Excel delivery, and statistical and econometric analysis restricted to 2026 listings.
+This project builds evidence-linked datasets for ordinary Hong Kong Main Board IPOs. It studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
 
-## 继续研究
+**Current study: 113 IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
 
-从 [研究入口](docs/RESEARCH_START.md) 开始：包含新 skill 用法、当前数据路径、复现命令和待办。
-[文档索引](docs/README.md) 区分当前计划、来源复核、生成结果与历史写稿；[仓库组织指南](docs/REPOSITORY_GUIDE.md) 说明新文件归属和多 checkout 使用。
+## Understand the project in one diagram
 
-## 项目能做什么
+```text
+  OFFICIAL DISCLOSURES          MARKET DATA          DATED SURVEYS
+  Prospectus + allotment       Prices + indices      Margin financing
+           |                         |                      |
+           v                         |                      |
+  +---------------------+            |                      |
+  | Extract + validate  |            |                      |
+  | Independent review  |            |                      |
+  | Version-bound gates |            |                      |
+  +----------+----------+            |                      |
+             |                       |                      |
+             v                       v                      v
+  +---------------------------------------------------------------+
+  | DATA LAYER                                                    |
+  | Quarterly Excel -> clean CSV -> all-years master + references  |
+  | Sources, units, dates, missing values, and audit records        |
+  +------------------------------+--------------------------------+
+                                 |
+                    Select actual 2026 listings
+                                 |
+                                 v
+  +---------------------------------------------------------------+
+  | RESEARCH LAYER                                                |
+  | Study specifications + shared estimation and inference        |
+  | Underpricing | retail returns | A+H | margin | supply events   |
+  +------------------------------+--------------------------------+
+                                 |
+                                 v
+                 Tables + figures + research reports
+                                 |
+                                 v
+           research_workspace/ : one English file index
+```
 
-- **建立发行人 cohort**：按上市日期从港交所官方报表筛选；剔除 GEM 转板、SPAC/de-SPAC 与介绍上市。
-- **抽取与复核**：准备招股书和配发公告材料；校验字段、来源引用及会计/股数关系。写回前验证抽取与复核状态及对应 SHA-256。
-- **安全写回**：事务保存、写入前快照、保留工作簿样式；缺来源或未成熟窗口保持缺失。
-- **研究交付**：季度工作簿、代码本、变量注册表、master 面板、样本排除记录和漂移报告。
-- **2026 年分析**：Module A 描述统计；Module B 首日收益回归、HC3/月聚类推断及 bootstrap；季度、月份和收益分解。
+The workspace links to canonical files; it does not create another dataset. Each study reports its actual sample size. Missing evidence and incomplete return windows remain missing.
 
-哈希验证用于确认被复核的文件版本；数据含义仍须根据原始披露进行独立复核。历史 cohort 可用于流水线验证，但不会进入当前研究分析。
+## Open the data or read the results
 
-## 安装与检查
+| I want to... | Open this |
+|---|---|
+| Browse all research files locally | [Research Workspace](research_workspace/README.md) |
+| Open the latest Q3 workbook | [2026 Q3 Excel](pipeline/cohorts/HKIPO-MB2026Q3.xlsx) |
+| Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
+| Use the combined data | [All-years master CSV](pipeline/exports/HKIPO-MB-MASTER_clean.csv) |
+| Understand fields and units | [Variable registry](pipeline/registry/HKIPO_Variable_Registry.yaml) / [Q3 codebook](pipeline/codebooks/HKIPO_2026Q3_Codebook.md) |
+| Read the English progress report | [PDF snapshot](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX source](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
+| Start with coverage and basic statistics | [Basic report](analysis/out/basic_statistics/basic_statistics.md) / [Data gaps](docs/DATA_GAPS_2026.md) |
+| Read first-day return results | [Descriptive tables](analysis/out/module_a/table1_stylized_facts.md) / [Regressions](analysis/out/module_b/table4_regressions.md) |
+| Read retail allocation results | [Retail returns and cornerstone sensitivity](analysis/out/research_frontier/research.md) |
+| Read A+H or margin results | [A+H prices](analysis/out/ah_anchor/ah_anchor.md) / [Margin financing](analysis/out/margin/margin.md) |
+| Continue the research | [Current plan](docs/RESEARCH_PLAN_2026.md) / [Research start](docs/RESEARCH_START.md) |
+| Understand the code | [Architecture guide](docs/ARCHITECTURE.md) / [Analysis guide](analysis/README.md) |
 
-Python 3.9+；建议使用独立虚拟环境。在仓库根目录运行：
+The master stores multiple years. Current studies select **2026 by actual listing date**, rather than treating the entire master as the study sample. The sample contains Q1: 38, Q2: 45, and Q3: 30 IPOs. The independent A+H flag identifies 38 issuers; model-specific samples can be smaller.
+
+On GitHub, use the direct file links above. The workspace's relative links are intended for a local checkout with the canonical files present.
+
+## Repository layout
+
+```text
+urop-hk-ipo/
+|
++-- research_workspace/       DAILY USE: English names, linked files
+|   +-- 01_workbooks/            2026 quarterly Excel
+|   +-- 02_research_inputs/      CSV, A+H and margin inputs
+|   +-- 03_data_dictionary/      Field definitions and codebooks
+|   +-- 04_reports_and_plans/    Research report and next steps
+|   +-- 05_analysis_results/     Tables and figures by topic
+|   +-- 06_sources_and_audits/   Evidence and audit records
+|   `-- 07_historical_data/     Stored 2025 data
+|
++-- analysis/                 RESEARCH CODE
+|   +-- research_inputs.py       Data loading and sample selection
+|   +-- specifications/         Study hypotheses and sample rules
+|   +-- shared/                 Estimation, inference, presentation
+|   +-- run.py                  Study registry and execution
+|   +-- tests/                  Analysis contracts
+|   `-- out/                    Generated results
+|
++-- pipeline/                 DATA PRODUCTION
+|   +-- cohorts/                Canonical quarterly workbooks
+|   +-- exports/                Clean CSV and master panel
+|   +-- codebooks/ + registry/   Generated field descriptions
+|   +-- sources/ + reports/     Listing sources and evidence reviews
+|   `-- prospectus_pipeline/    Collection, validation and writeback
+|
++-- config/                   Research workspace artifact catalog
++-- tools/                    Workspace maintenance
++-- docs/                     Research plans, architecture, reports
++-- run.py                    One command entry point
+`-- Makefile                  Checks, refresh, and analysis commands
+```
+
+## Start using the project
+
+Use Python 3.9 or later, from a source checkout:
 
 ```bash
+git clone https://github.com/GZ-November/urop-hk-ipo.git
+cd urop-hk-ipo
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[analysis,dev]'
 make check-code
-python run.py --help
 ```
 
-这是从源码 checkout 运行的 CLI；`pip install -e` 安装依赖配置和项目元数据。请保留仓库目录、schema、配置及研究工件。
+Editable installation supplies dependency profiles and project metadata. Keep the source checkout, configs, schemas, and research artifacts together.
 
-`make check-code` 与 CI 和 pre-push hook 共用检查入口：语法、静态检查、流水线测试、分析测试及注册表一致性。已有工作簿与抽取状态可另用 `make check` 做数据审计。
-
-## 数据收集与分析
+### Browse files or run a study
 
 ```bash
-# 以明确上市日期区间建立 cohort
-python run.py collect --period-start 2026-04-01 --period-end 2026-06-30
+# Verify the English index; recreate missing links when needed.
+make workspace-check
+make workspace
 
-# 指定现有 cohort；配置路径相对 pipeline/
-python run.py status --config prospectus_pipeline/config_2026q3.yaml
-python run.py audit --target all --config prospectus_pipeline/config_2026q3.yaml
+# List studies without changing data or results.
+python run.py analysis --list
 
-# 从季度导出建立研究面板
-python run.py registry --check
-python run.py master --derive
+# Begin with the current basic-statistics plan.
+make basic-analysis
 
-# 重新生成全部分析表格与图片：只使用 2026 年上市数据
+# Run one study, or several in the registered order.
+python run.py analysis --study underpricing
+python run.py analysis --study ah --study margin
+
+# Regenerate all current 2026 analysis outputs.
 make analysis
 ```
 
-`collect` 在等待抽取或独立复核时以退出码 `3` 暂停；完成复核后重跑同一命令。已有季度 CSV 位于 `pipeline/exports/`；如需从工作簿更新，逐 cohort 执行 `python run.py export --config ...`，再生成 master。
+The runner uses separate processes and stops at the first failed study. Shared inference and reporting do not import study report scripts. The existing direct script commands remain available.
 
-2026 样本按实际上市年份筛选，并拒绝 cohort/日期冲突与重复股票代码。Module A 的季度、路径、定价和 VC/PE 比较全部在 2026 样本内；Module B 使用共同完整样本、4–6 月控制项，最多 10 个解释变量。各模块报告样本量及缺失情况；当前结果属于探索性研究。
+### Inspect or update the data pipeline
 
-## 目录与文档
+```bash
+# Config paths are relative to pipeline/.
+python run.py status --config prospectus_pipeline/config_2026q3.yaml
+python run.py audit --target all --config prospectus_pipeline/config_2026q3.yaml
 
-| 路径 | 用途 |
-|---|---|
-| `pipeline/cohorts/` | 规范研究工作簿 |
-| `pipeline/exports/` | 季度 clean CSV 与 master 面板 |
-| `pipeline/codebooks/`、`pipeline/registry/` | 代码本与变量注册表 |
-| `pipeline/reports/` | 审计、样本筛选、漂移与市场报告 |
-| `pipeline/prospectus_pipeline/` | 核心代码、schema、cohort 配置与测试 |
-| `analysis/`、`analysis/out/` | 2026 年分析脚本与生成结果 |
+# After an authorized workbook update, export that cohort first.
+python run.py export --config prospectus_pipeline/config_2026q3.yaml
+python run.py master --derive
 
-- [流水线指南](pipeline/prospectus_pipeline/README.md) · [内部架构与维护](pipeline/SYSTEM_MANAGEMENT.md)
-- [2026 研究计划](docs/RESEARCH_PLAN_2026.md) · [分析使用说明](analysis/README.md)
-- [领域术语](CONTEXT.md) · [变量注册表](pipeline/registry/HKIPO_Variable_Registry.yaml)
-- [2026Q1 代码本](pipeline/codebooks/HKIPO_2026Q1_Codebook.md) · [2026Q2 代码本](pipeline/codebooks/HKIPO_2026Q2_Codebook.md) · [2026Q3 代码本](pipeline/codebooks/HKIPO_2026Q3_Codebook.md)
-- [贡献指南](CONTRIBUTING.md) · [数据与安全政策](SECURITY.md)
+# Start collection for an explicit listing interval.
+python run.py collect --period-start 2026-04-01 --period-end 2026-06-30
+```
 
-版本控制包含公开披露形成的研究工作簿、CSV、抽取证据和报告。原始招股书 PDF、全文切片、隔离采集缓存、快照、临时脚本及模型运行日志保留在本地；以 `.gitignore` 和贡献指南为准。
+Collection exits with code `3` while extraction or independent review is pending. Complete those gates, then resume the same command. Workbook writes retain the existing evidence checks, transaction handling, styles, and pre-write snapshots.
+
+The current plan starts with coverage and basic statistics, then prioritizes subscription demand and retail allocation returns. A+H pricing is a third candidate. PR #28 includes the 6872.HK disclosure repair and additional A+H references; see the [collection ledger](pipeline/reports/data_gap_collection/README.md). The PDF progress report is an earlier result snapshot; generated reports contain the current estimates.
+
+## How to interpret the results
+
+- **Exploratory research:** existing data and results have already been examined. The current models do not establish causal effects.
+- **Correct price units:** first-day returns compare raw offer and raw closing prices. HDR quantities use the documented unit conversion.
+- **Honest missing values:** unknown investor classifications and immature windows are not zeros.
+- **Comparable regression columns:** nested underpricing models share a complete-case sample. HC3, month-clustered inference, and restricted wild bootstrap tests are reported.
+- **Different return denominators:** first-day returns, allocation-weighted returns, and returns on application funds answer different questions.
+- **Limited event coverage:** later-return and lockup samples depend on observed windows. The cutoff is not the report publication date.
+
+Completed repairs and remaining source limitations are documented in [research readiness](pipeline/reports/research_readiness/README.md). A hash identifies a file version; it does not prove an economic interpretation. Field-level review does not certify every field for an issuer.
+
+## Checks, data distribution, and contribution
+
+`make check-code` runs syntax/static checks, pipeline tests, analysis tests, and registry consistency. CI uses the same command. `make workspace-check` checks catalog links separately. Code tests do not constitute a full semantic audit of every disclosure.
+
+The repository versions public-disclosure research artifacts, including workbooks, CSVs, extraction evidence, codebooks, and reports. Raw PDF/full-text caches, credentials, workbook backups, and local run logs stay local. Some collection jobs require those locally stored source files; see [Contributing](CONTRIBUTING.md) and [Security and data policy](SECURITY.md).
+
+Further reading: [Documentation index](docs/README.md), [artifact placement](docs/REPOSITORY_GUIDE.md), [pipeline operations](pipeline/SYSTEM_MANAGEMENT.md), and [pipeline CLI](pipeline/prospectus_pipeline/README.md).
 
 [MIT License](LICENSE)

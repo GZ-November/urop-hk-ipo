@@ -1,0 +1,435 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,booktabs,tabularx,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist[itemize]{nosep,leftmargin=*}
+\renewcommand{\arraystretch}{1.15}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Hong Kong IPO research}
+\fancyhead[R]{Progress report}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\newcommand{\src}[1]{\par{\footnotesize\textit{Source:} \nolinkurl{#1}}}
+\newcommand{\pct}{\%}
+\title{Hong Kong IPO Research\\Research, Data, and Results}
+\author{Research progress report}
+\date{Report date: 2 October 2026\\Data cutoff: 30 September 2026}
+\begin{document}
+\maketitle
+
+\section{Research purpose}
+This research examines initial public offerings (IPOs) on the Hong Kong Main Board.
+The sample contains ordinary IPOs listed in 2026.
+The main question is how offer prices, investor demand, and share allocation relate to investor returns.
+
+The research examines five related questions.
+\begin{itemize}
+\item How large are first-day returns, and how do they change across listing periods?
+\item Do high first-day returns give retail applicants high returns on application funds?
+\item How do cornerstone allocations and retail demand relate to first-day returns?
+\item Do existing A-share prices help explain H-share offer prices and later prices?
+\item What happens to returns after listing, lockup expiry, and the end of stabilization?
+\end{itemize}
+
+An IPO can have a high first-day return and a low return on application funds.
+An applicant receives only part of the shares requested.
+A high return on allocated shares does not apply to all application funds.
+This difference is central to the retail analysis.
+
+The results also test possible information and supply channels.
+Cornerstone investors can give information about an issuer.
+Their locked shares can also reduce the shares available for trade.
+An existing A-share price gives a public price reference.
+These channels can operate at the same time.
+
+\section{Current research state}
+The project has a data pipeline and reproducible analysis scripts.
+The current sample contains 113 issuers.
+The analysis covers listings from 2 January to 30 September 2026.
+The data cutoff is 30 September 2026.
+The report date does not extend the data cutoff.
+
+The project has completed price corrections, selected field repairs, and contract-based lockup records.
+It has also completed descriptive tables, regressions, retail-return calculations, and event studies.
+The results are exploratory.
+The project has already examined the data and tested several models.
+These tests are not preregistered tests.
+
+The results describe associations.
+They do not establish that investor demand, cornerstone participation, or a listing route causes a return change.
+
+{\small\textit{Language note.} This report uses short sentences and defined technical names, with ASD-STE100 as its writing guide.
+It is not a certified dictionary-compliance review.
+The official guide is available at \url{https://www.asd-ste100.org/}.}
+
+\newpage
+\section{Data and completed repairs}
+\subsection{Sample and sources}
+\begin{table}[h]
+\centering
+\caption{Current sample and selected data coverage}
+\begin{tabular}{lr}
+\toprule
+Data group & Issuers or records\\
+\midrule
+First quarter listings & 38\\
+Second quarter listings & 45\\
+Third quarter listings & 30\\
+All 2026 listings in the study & 113\\
+A+H issuers, independent flag & 38\\
+Main regression, complete cases & 105\\
+Issuers with margin-financing reports & 25\\
+Source-reported margin records & 93\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Official listing records define issuer membership.
+Prospectuses supply issuer, offer, financial, investor, and contract information.
+Allotment announcements supply final allocation and subscription information.
+Market data supply stock prices, trading volumes, and index prices.
+Dated media reports supply margin-financing observations.
+These media observations do not replace official subscription outcomes.
+
+The pipeline stores source references, extracted values, validation records, and review records.
+It exports cohort data and builds the master CSV.
+The analysis selects 2026 issuers by their actual listing dates.
+Historical issuers can remain in storage without entering this study.
+Unknown values remain missing.
+Each model reports its own usable sample.
+
+\subsection{Repairs already completed}
+\begin{itemize}
+\item PR \#20 corrected raw first-day price inputs for 26 issuers in the original 106-issuer sample.
+\item PR \#23 applied independent field reviews to 14 second-quarter board-seat records.
+\item These records now contain eight yes values, one no value, and five unknown values.
+\item PR \#23 defined the units for 6228.HK: one Hong Kong depositary receipt (HDR) represents ten underlying shares.
+\item The retail calculation now includes 6228.HK with the corrected unit treatment.
+\item PR \#23 and PR \#25 added contract-based lockup evidence for the 113-issuer sample.
+\item PR \#25 added seven third-quarter issuers and changed the total sample from 106 to 113.
+\item PR \#27 completed the stored table directories for all 113 issuers.
+\end{itemize}
+
+A review of one field does not verify all fields for that issuer.
+A stored source quote does not, by itself, establish correct interpretation.
+A complete price window does not establish an external cause for a price change.
+
+\src{pipeline/exports/HKIPO-MB-MASTER_clean.csv}
+\src{pipeline/reports/research_readiness/README.md}
+
+\newpage
+\section{Measures and analysis methods}
+\subsection{Return measures}
+Let $P_{0i}$ be issuer $i$'s offer price.
+Let $P_{1i}$ be its raw first-day closing price.
+The first-day return is
+\begin{equation}
+IR_i=\frac{P_{1i}}{P_{0i}}-1.
+\end{equation}
+The main regression uses $y_i=\ln(1+IR_i)$.
+This transformation reduces the influence of very large positive returns.
+A coefficient on this outcome is not a percentage-point change in $IR$.
+
+Let $a_i$ be final public-offer units divided by valid applied units.
+It is an issuer-level average allocation rate.
+The retail analysis reports three different measures:
+\begin{align}
+\overline{IR}&=\frac{1}{N}\sum_i IR_i,\\
+IR_{\mathrm{allocation}}&=\frac{\sum_i a_iIR_i}{\sum_i a_i},\\
+R_{\mathrm{application}}&=\frac{1}{N}\sum_i a_iIR_i.
+\end{align}
+The first measure gives equal weight to each IPO.
+The second measure weights first-day returns by allocation rates.
+The third measure assumes equal application funds for each IPO.
+It measures gross return on those application funds.
+It does not give an individual applicant's allocation probability.
+
+An aftermarket buy-and-hold return starts at the first-day close.
+It excludes the first-day return.
+The A+H price gap compares the H price with the same issuer's A price in Hong Kong dollars.
+The exchange-rate measure is Hong Kong dollars per Chinese yuan.
+An event CAR adds daily stock returns less benchmark returns over an event window.
+
+\subsection{Regression and inference}
+The main baseline model has the following form:
+\begin{equation}
+\ln(1+IR_i)=\alpha+X_i'\beta+\varepsilon_i.
+\end{equation}
+The vector $X_i$ includes age, offer size, A+H status, investor backing, sponsor quality, and cornerstone allocation.
+It also includes prior market returns, prior IPO count, and an April--June indicator.
+A fourth model adds the final retail subscription ratio.
+All four nested models use the same 105 complete cases.
+
+The analysis reports HC3 standard errors.
+HC3 permits unequal error variance across issuers.
+The analysis also groups errors by listing month.
+There are only nine listing months.
+The restricted wild cluster bootstrap checks inference with these few groups.
+It evaluates all 512 sign combinations for the baseline model.
+
+The April--June indicator came from observed data patterns.
+It is an exploratory time control.
+Final subscription demand can respond to expected returns.
+The model with final demand does not identify a pricing cause.
+\src{analysis/out/module_b/sample_selection.md}
+\src{analysis/out/module_b/table6_inference.md}
+
+\newpage
+\section{First-day returns and regression results}
+\subsection{Descriptive results}
+\begin{table}[h]
+\centering
+\caption{First-day returns by listing quarter}
+\begin{tabular}{lrrrr}
+\toprule
+Measure & Q1 & Q2 & Q3 & All\\
+\midrule
+Issuers & 38 & 45 & 30 & 113\\
+Mean return (\%) & 33.9 & 92.7 & 18.3 & 53.2\\
+Median return (\%) & 13.4 & 80.0 & 0.0 & 14.8\\
+Negative returns (\% of issuers) & 10.5 & 17.8 & 46.7 & 23.0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The full-sample mean is much larger than the median.
+Large positive returns raise the mean.
+The second quarter has the highest mean and median.
+Almost half of third-quarter issuers have negative first-day returns.
+These differences show substantial variation within 2026.
+They do not identify the cause of that variation.
+\src{analysis/out/module_a/table1_stylized_facts.md}
+
+\subsection{Main baseline model}
+\begin{table}[h]
+\centering
+\caption{Selected baseline coefficients: 105 issuers, nine listing months}
+\begin{tabular}{lrrr}
+\toprule
+Variable & Coefficient & HC3 $p$ & Wild cluster $p$\\
+\midrule
+A+H issuer & $-0.313$ & 0.018 & 0.004\\
+Cornerstone allocation & $-0.353$ & 0.368 & 0.270\\
+VC/PE backing & 0.088 & 0.577 & 0.770\\
+Top-tier sponsor & 0.051 & 0.612 & 0.555\\
+Prior 20-day HSI return & 2.055 & 0.033 & 0.020\\
+April--June indicator & 0.394 & 0.039 & 0.039\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A+H issuers have lower first-day price ratios after the included controls.
+The coefficient implies approximately $\exp(-0.313)-1=-26.9\%$ for the price ratio $1+IR$.
+It does not imply a 26.9 percentage-point decrease in first-day return.
+A+H status can also reflect issuer selection and firm differences.
+
+The baseline does not give precise evidence for cornerstone allocation, investor backing, or sponsor quality.
+These results do not prove that their effects are zero.
+The model has a small sample and several explanatory variables.
+
+The fourth model's subscription coefficient is 0.095, with an HC3 standard error of 0.032.
+Its adjusted $R^2$ is 0.264, compared with 0.194 for the baseline.
+Final demand improves the fit within the sample.
+This improvement does not resolve reverse causality.
+\src{analysis/out/module_b/table4_regressions.md}
+\src{analysis/out/module_b/table6_inference.md}
+
+\newpage
+\section{Retail application returns and cornerstone results}
+\subsection{Returns have different denominators}
+\begin{table}[h]
+\centering
+\caption{Retail measures: 113 issuers}
+\begin{tabular}{lrrr}
+\toprule
+Measure (\%) & Estimate & Lower bound & Upper bound\\
+\midrule
+Equal-weight first-day return & 53.153 & 28.904 & 77.053\\
+Allocation-weighted return & 1.165 & $-2.239$ & 8.574\\
+Return on application funds & 0.020 & $-0.051$ & 0.098\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The bounds come from 2,000 bootstrap samples drawn by listing month.
+The procedure uses nine months and the fixed seed 20260930.
+These bounds are descriptive because there are few months.
+
+A HK\$10,000 application to each IPO gives an average gross profit of approximately HK\$1.97 under the assumed allocation rates.
+High first-day returns therefore do not imply high returns on application funds.
+The allocation rate changes the amount exposed to the first-day price increase.
+
+The calculation uses an average issuer allocation rate.
+Actual allotment can differ by application size.
+The calculation does not model a specific application tier or an individual account.
+The financing calculations use assumed fees, borrowing shares, rates, and a two-day holding period.
+They are cost scenarios, not observed borrowing outcomes.
+The calculation excludes some transaction costs and opportunity costs.
+It is not a complete net-return measure.
+\src{analysis/out/research_frontier/retail_summary.csv}
+\src{analysis/out/research_frontier/research.md}
+
+\subsection{Cornerstone sensitivity analysis}
+\begin{table}[h]
+\centering
+\caption{Cornerstone allocation: common sample of 106 issuers}
+\begin{tabular}{lrrr}
+\toprule
+Model & Coefficient & HC3 $p$ & Wild cluster $p$\\
+\midrule
+Controls known before final demand & $-0.309$ & 0.451 & 0.191\\
+Controls plus final demand & $-0.455$ & 0.213 & 0.082\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both coefficients are negative, but the inference depends on the method.
+The analysis also measures sensitivity to omitted variables.
+This check describes how an unobserved factor can change the point estimate.
+It does not supply a causal confidence interval.
+
+Cornerstone shares and demand are issuer and investor choices.
+Adding demand can control for part of the channel under study.
+It can also introduce selection bias.
+The current results do not separate certification from a reduction in tradable supply.
+\src{analysis/out/research_frontier/research.md}
+
+\newpage
+\section{A+H prices, margin financing, and later returns}
+\subsection{A+H price reference}
+The independent A+H sample contains 38 issuers.
+The mean H offer-price gap is $-38.2\%$ relative to the A-share reference price.
+The mean first-day closing gap is $-30.7\%$.
+The mean first-day return for these issuers is 9.4\%.
+The two price-gap measures use different reference dates.
+Their difference also contains A-share and exchange-rate changes.
+
+Some A+H models use 34 valid observations.
+At trading day 60, only 25 issuers have matched price pairs.
+Their mean gap is $-28.7\%$ at both endpoints.
+The paired test has $p=0.996$.
+This result does not prove that price convergence is absent.
+
+The market-model mean A-share CAR is $-7.6\%$ around the H listing date, for the $[-5,+5]$ window.
+This estimate uses 34 issuers; its placebo $p$-value is 0.004.
+Other announcements, industry movements, and listing choices can affect this result.
+The current A+H report's rank-correlation entry is unavailable.
+This report does not interpret that entry as a numerical result.
+\src{analysis/out/ah_anchor/ah_anchor.md}
+
+\subsection{Margin financing}
+The dataset has 93 reported observations for 25 of the 113 issuers.
+The sample depends on media survey coverage.
+It is not a random sample of all IPOs.
+
+The model with the latest demonstrably public pre-deadline observation uses 25 issuers and six listing months.
+After time-window and size controls, its coefficient is 0.072.
+The HC3 $p$-value is 0.384; the wild cluster $p$-value is 0.531.
+The current evidence does not give a precise controlled association.
+Publication before subscription close does not establish publication before pricing.
+\src{analysis/out/margin/margin.md}
+
+\subsection{Returns after listing and around supply events}
+\begin{table}[h]
+\centering
+\caption{Buy-and-hold price returns from the first-day close}
+\begin{tabular}{lrrr}
+\toprule
+Horizon & Issuers & Mean (\%) & Median (\%)\\
+\midrule
+Day 20 & 102 & 5.5 & $-1.0$\\
+Three months & 82 & 6.6 & $-16.6$\\
+Six months & 37 & 29.7 & $-22.3$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The six-month sample contains first-quarter listings only.
+The positive mean and negative median show a large influence from a few positive returns.
+Different horizons contain different issuers.
+They cannot represent one balanced return path for all 113 IPOs.
+
+The lockup $[-5,+5]$ window has 29 issuers and a mean HSI-adjusted CAR of $-5.6\%$.
+Its placebo $p$-value is 0.100.
+The stabilization-end window has 31 issuers and a mean CAR of $-2.2\%$.
+Its placebo $p$-value is 0.524.
+These findings do not establish a general causal supply effect.
+\src{analysis/out/module_a/table2_aftermarket.md}
+\src{analysis/out/academic/events.md}
+
+\newpage
+\section{Other completed tests and remaining work}
+\subsection{Other completed analysis}
+The partial-adjustment analysis uses 43 range-priced offers.
+It tests whether price revision relates to the first-day return.
+The controlled revision coefficient is 1.52; its wild cluster $p$-value is 0.262.
+The estimate is too imprecise for a strong conclusion.
+Fixed-price offers do not have a defined position within a price range.
+
+The project also tests sponsor differences, underwriting fees, market crowding, and extreme returns.
+Sponsor and fee analyses use documented proxies and selected source fields.
+Some generated reports retain old explanatory notes.
+Those notes require a separate consistency review before publication.
+
+Prediction tests hold out issuers or listing months.
+The prediction sample has 90 issuers with the required prior-return input.
+The baseline leave-one-month-out $R^2$ is 0.150.
+The April--June-only model gives 0.142.
+These tests use a time pattern selected after observing the data.
+They do not constitute a real-time forecast of a future high-return period.
+\src{analysis/out/academic/partial_adjustment.md}
+\src{analysis/out/extended/prediction.md}
+
+\subsection{Limits that remain}
+\begin{itemize}
+\item The study covers nine months of one year.
+\item Some fields remain unknown, and some return windows are incomplete.
+\item A few large returns strongly affect mean results.
+\item Listing choices, investor participation, and demand can share unobserved causes.
+\item Mechanism groups have limited comparable observations.
+\item All 19 Chapter 18C issuers use Mechanism A in the current support table.
+\item Many models and tests have already been examined.
+\item Statistical sensitivity checks do not create external treatment variation.
+\end{itemize}
+
+\subsection{Next research steps}
+\begin{enumerate}[nosep,leftmargin=*]
+\item Select one main question and define its economic mechanism.
+\item Fix the main outcome, sample rules, and inference method before additional tests.
+\item For retail returns, collect official allotment tables by application size.
+\item For A+H prices, collect first issuance announcement dates and comparable firms.
+\item Add complete event windows as they become available.
+\item Freeze a prediction model before testing it on fourth-quarter listings.
+\item Review source-to-table links and remaining old report notes before paper submission.
+\end{enumerate}
+
+\section{Technical names and result sources}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Name & Meaning in this report\\
+\midrule
+IPO & Initial public offering.\\
+Issuer & The company that offers securities.\\
+A+H issuer & A company with A shares and listed H shares.\\
+Cornerstone investor & An investor with an agreed IPO allocation and contractual restrictions.\\
+VC/PE & Venture capital or private equity investor backing.\\
+HSI & Hang Seng Index, used as a market benchmark.\\
+CAR & Cumulative abnormal return over the specified event window.\\
+Lockup & A contractual restriction on disposal of securities.\\
+Stabilization & Permitted price-support activity after an offering.\\
+\bottomrule
+\end{tabularx}
+
+The source notes identify the stored outputs used for this report.
+The report explains existing results; it does not rerun the analysis.
+The research entry is \nolinkurl{docs/RESEARCH_START.md}.
+The current plan is \nolinkurl{docs/RESEARCH_PLAN_2026.md}.
+The repair record is \nolinkurl{pipeline/reports/research_readiness/README.md}.
+\end{document}
