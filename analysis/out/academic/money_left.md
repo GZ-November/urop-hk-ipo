@@ -1,7 +1,7 @@
 # Money left on the table, 2026 (N = 113)
 
 MLOT = (day-1 close - offer price) x base offer shares. Fees = the disclosed underwriting commission on HK and international proceeds
-(discretionary incentive fees are not in the data and would add up to 1%).
+(discretionary incentive fees are not measured here, so this is not a complete measure of issuance costs).
 
 | Sample | N | Net MLOT (HK$bn) | Underwriting fees (HK$bn) | MLOT / fees | Gains on deals with IR > 0 (HK$bn) | Losses on deals with IR < 0 (HK$bn) |
 |---|---|---|---|---|---|---|
@@ -26,11 +26,11 @@ MLOT = (day-1 close - offer price) x base offer shares. Fees = the disclosed und
 - Cornerstone investors hold 37.9% of the base offer and capture 40.8% of net money left; retail holds 11.0% of the shares and captures 12.2%.
   Shares held and gains match closely because IR is a per-share return: the allocation, not the pricing, decides who benefits, and the public tranche is small.
 - Fee rate (fees / proceeds) and IR: Spearman = 0.18 (p = 0.06). Small deals carry both higher fee rates and higher IR, so the raw correlation mostly
-  reflects size: with ln size, the window and A+H held fixed, the commission-rate coefficient on log(1 + IR) is -0.059 pp (HC3 p = 0.67).
+  reflects size: with ln size, the window and A+H held fixed, the coefficient on log(1 + IR) in the commission-rate regression is -0.059 pp (HC3 p = 0.67).
 
 ## What a retail application earns
 
-Expected gain per HK$10,000 = allocation ratio (final public shares / valid applied shares, capped at 1) x IR x 10,000, assuming proportional allocation
+Expected gain per HK$10,000 = allocation ratio (final public shares / valid applied shares; invalid ratios are quarantined, not capped) x IR x 10,000, assuming proportional allocation
 (actual allocation is by lottery, so this is an expectation, not a typical outcome).
 
 |  | N | Median allocation ratio | Expected gain per HK$10,000 applied, median | Expected gain per HK$10,000 applied, mean | Deals with an expected loss | Retail gain per applicant, median (HK$) | Retail gain per applicant, mean (HK$) |

@@ -1,0 +1,26 @@
+[
+ {
+  "date": "2026-09-29",
+  "open": 419.6,
+  "close": 414.4,
+  "high": 424.6,
+  "low": 393.2,
+  "volume": 2603060.0,
+  "turnover": null,
+  "turnover_estimated": false,
+  "price_basis": "raw_as_traded",
+  "source_url": "https://data.gtimg.cn/flashdata/hk/daily/26/hk03757.js"
+ },
+ {
+  "date": "2026-09-30",
+  "open": 414.4,
+  "close": 407.8,
+  "high": 428.0,
+  "low": 400.0,
+  "volume": 432950.0,
+  "turnover": null,
+  "turnover_estimated": false,
+  "price_basis": "raw_as_traded",
+  "source_url": "https://data.gtimg.cn/flashdata/hk/daily/26/hk03757.js"
+ }
+]

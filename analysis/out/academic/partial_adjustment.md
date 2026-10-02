@@ -1,8 +1,8 @@
 # Partial adjustment inside the filing range, 2026 (range deals only, N = 43)
 
 Revision = (offer price - midpoint of the filing range) / midpoint. Hanley (1993) predicts a positive relation between revision and first-day return:
-information that raises demand lifts the price only partly. The 65 fixed-price deals have no range and are excluded, so this is a subsample of the deals
-that are priced by bookbuilding, and the sample is small.
+information that raises demand lifts the price only partly. The 70 fixed-price deals have no range and are excluded;
+other missing or invalid revisions are also excluded. This small subsample consists of valid range-priced deals.
 
 Rank correlation of revision with IR: rho = 0.17 (p = 0.269).
 

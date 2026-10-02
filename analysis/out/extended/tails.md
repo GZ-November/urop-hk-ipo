@@ -1,6 +1,6 @@
 # Tails of the first-day return distribution, 2026 (N = 105, M3 specification)
 
-log(1 + IR) is bimodal: 21% of deals break issue while 25% more than double.
+The first-day-return distribution has losses and large gains: 21% of deals break issue while 25% more than double.
 A mean regression averages over both, so this section asks where in the distribution each variable acts.
 
 ## 1. Quantile regressions of log(1 + IR)
@@ -23,8 +23,8 @@ Cells: coefficient [95% pairs-bootstrap interval]; * = interval excludes zero. 1
 - The cornerstone point estimates drift from +0.54 at q10 to -1.30 at q90 (fewer extreme pops with
   larger anchor share), but the q90 bootstrap interval includes zero (p = 0.24). Asymptotic quantile standard errors would
   suggest significance; the bootstrap does not support it. Treat as a hypothesis for a larger sample, not a finding.
-- The April-June coefficient is positive at every quantile and A+H is negative at every quantile, matching the OLS signs; with
-  106 observations the per-quantile intervals are wide, so treat this as a distributional description.
+- The quantile estimates use 105 observations. Read their signs and bootstrap intervals in the table;
+  wide intervals limit inference about differences across the return distribution.
 
 ## 2. PPML on 1 + IR (mean multiplier, no log re-transformation bias)
 
@@ -57,5 +57,5 @@ ln offer size per ln HK$bn. Events are few (about 5 per regressor), so read thes
 | ln offer size | 1.20 | 1.46 | 0.58 |
 
 - Fisher exact: VC/PE backing vs break issue p = 0.5405 (odds ratio 0.69); April-June vs IR > 100% p = 0.0005 (odds ratio 5.53).
-- VC/PE-backed deals are much less likely to break; the non-VC/PE group is mostly A+H and large state-linked issuers,
-  so this is partly the A+H story; the A+H control is in the model.
+- The VC/PE break-issue association must be assessed from the logit and Fisher tests above, rather than inferred from backing alone.
+  Backing and listing route are selected characteristics; the A+H control does not establish a causal certification effect.

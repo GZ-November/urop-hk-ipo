@@ -1,6 +1,6 @@
 """Event-time and calendar-time aftermarket returns of 2026 IPOs from cached daily bars.
 
-Answers, with the daily bars for all 106 issuers (data/market/aftermarket, to late September 2026):
+Answers, with the cached daily bars for observed 2026 issuers (data/market/aftermarket):
 does the April-June listing window earn lower returns after day 1, and is that an artefact of
 cross-sectional overlap? Two standard designs (Lowry, Michaely & Volkova 2017, Ch. 7):
 
@@ -247,8 +247,8 @@ earlier listings only (N shown per row). "Hot" = listed April-June (calendar dum
   it is weaker (day-60 wild cluster p = {p60:.3f}); the ordinary Mann-Whitney and HC3 p-values overstate it.
 - Calendar time, which counts each date once, gives the April-June portfolio an excess return not distinguishable from zero (p = {p_hot:.2f}), the other
   listings a positive excess return (p = {p_other:.3f}), and no significant difference between them (p = {p_spread:.2f}).
-- So the evidence supports "January-March listings did well after day 1" more than "April-June listings collapsed"; the two are not the same claim,
-  and a 9-month sample cannot separate them from the market path of each window.
+- These estimates compare different listing windows and market paths. Read the BH-adjusted headline tests below before claiming a hot-window reversal;
+  calendar-time point estimates alone do not establish that either portfolio has a nonzero abnormal return.
 
 ## 1. Event time: BHAR from the day-1 close, benchmark HSI
 

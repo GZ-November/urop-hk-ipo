@@ -1,10 +1,12 @@
 # 香港主板新股市场全景实证与理论研究课题库 (21 大核心 Research Ideas)
 # The Hong Kong Main Board IPO Panoramic Research Compendium: Theoretical Frameworks, Institutional Realities & Econometric Specifications
 
-> **范围更新（2026-09-30）**：当前研究只使用 2026 年样本（2026Q1–Q3，N = 106），不回填其他年份。下文以 2026Q1 的 38 家和历史样本扩展为前提写成，其中 §三 的 FINI、18C 门槛、发售机制改革三个准实验在 2026 年样本内没有制度前后变异，无法实施。可执行的课题排序、变量可检验性和样本限制见 [`RESEARCH_PLAN_2026.md`](RESEARCH_PLAN_2026.md)。
+> **范围更新（2026-10-02）**：当前研究只使用2026年样本（2026Q1–Q3，N = 113；行情截止2026-09-30），不回填其他年份。下文以 2026Q1 的 38 家和历史样本扩展为前提写成，其中 §三 的 FINI、18C 门槛、发售机制改革三个准实验在 2026 年样本内没有制度前后变异，无法实施。可执行的课题排序、变量可检验性和样本限制见 [`RESEARCH_PLAN_2026.md`](RESEARCH_PLAN_2026.md)。
+
+> **选题定位（2026-10-02）**：21项仅保留作背景题库，不要求全部开展。近期主线与移出／延后决定见 [当前计划](RESEARCH_PLAN_2026.md)。
 
 > **学术基石**：以 **Michelle Lowry, Roni Michaely, and Ekaterina Volkova (2017)** 经典综述单行本《*Initial Public Offerings: A Synthesis of the Literature and Directions for Future Research*》（Foundations and Trends® in Finance）为核心理论与实证基准，融贯公司金融学、微观市场结构与合同理论前沿经典文献。  
-> **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，202 维完整跨学科指标，38 家挂牌样本，覆盖 18C 特专科技、18A 生物科技、FINI 数字化结算改革、Pre-IPO VC/PE 细分股权、基石投资者配售及二级市场量价，100% 审计级穿透确证）。
+> **数据依托**：全量香港主板 2026 年第一季度新股数据库（`HKIPO-MB2026Q1.xlsx`，Sheet: `NLR`，202 维完整跨学科指标，38 家挂牌样本，覆盖18C特专科技、18A生物科技、FINI制度标签、Pre-IPO VC/PE、基石配售及二级市场量价；这是早期Q1课题库的数据背景，不代表当前全表已完成独立语义核验）。
 > **使用定位**：本课题库专为构建香港新股市场“全景全生态学术研究”而设立。不再按照单一论文的章节划分，而是**收录 21 个独立、完整、且高度细化的 Research Ideas**。每个 Idea 均包含：
 > 1. 💡 研究课题与核心科学问题 (Research Title & Core Question)
 > 2. 📚 经典文献基准与美股经验事实 (Literature Baseline & U.S. Stylized Facts - Lowry et al. 2017)

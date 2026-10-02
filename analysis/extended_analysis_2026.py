@@ -13,7 +13,7 @@ Complements Module A/B with tests that address what they cannot:
   7. Multiplicity Benjamini-Hochberg adjustment across the headline tests above.
 
 Only 2026 listings are used (same selector as every other script). All results are
-exploratory: N = 106 IPOs in 9 listing months.
+exploratory; issuer and listing-month counts are reported from each analysis sample.
 
 Outputs (analysis/out/extended/): regime.md, mechanism.md, tails.md, demand_aftermarket.md,
 prediction.md, multiplicity.md, fig5_regime_scan.png, fig6_quantile_paths.png.
@@ -413,7 +413,7 @@ def tails_section(d: pd.DataFrame, family: list) -> tuple[str, dict]:
 
     text = f"""# Tails of the first-day return distribution, 2026 (N = {len(z)}, M3 specification)
 
-log(1 + IR) is bimodal: {100 * (z['ir'] < 0).mean():.0f}% of deals break issue while {100 * (z['ir'] > 1).mean():.0f}% more than double.
+The first-day-return distribution has losses and large gains: {100 * (z['ir'] < 0).mean():.0f}% of deals break issue while {100 * (z['ir'] > 1).mean():.0f}% more than double.
 A mean regression averages over both, so this section asks where in the distribution each variable acts.
 
 ## 1. Quantile regressions of log(1 + IR)
@@ -427,8 +427,8 @@ Cells: coefficient [95% pairs-bootstrap interval]; * = interval excludes zero. {
 - The cornerstone point estimates drift from {qr[0.10][0]['corner']:+.2f} at q10 to {qr[0.90][0]['corner']:+.2f} at q90 (fewer extreme pops with
   larger anchor share), but the q90 bootstrap interval includes zero (p = {p_corner90:.2f}). Asymptotic quantile standard errors would
   suggest significance; the bootstrap does not support it. Treat as a hypothesis for a larger sample, not a finding.
-- The April-June coefficient is positive at every quantile and A+H is negative at every quantile, matching the OLS signs; with
-  106 observations the per-quantile intervals are wide, so treat this as a distributional description.
+- The quantile estimates use {len(z)} observations. Read their signs and bootstrap intervals in the table;
+  wide intervals limit inference about differences across the return distribution.
 
 ## 2. PPML on 1 + IR (mean multiplier, no log re-transformation bias)
 
@@ -444,8 +444,8 @@ ln offer size per ln HK$bn. Events are few (about 5 per regressor), so read thes
 {to_markdown(lg, "Variable")}
 
 - Fisher exact: VC/PE backing vs break issue p = {fisher_vc[1]:.4f} (odds ratio {fisher_vc[0]:.2f}); April-June vs IR > 100% p = {fisher_hot[1]:.4f} (odds ratio {fisher_hot[0]:.2f}).
-- VC/PE-backed deals are much less likely to break; the non-VC/PE group is mostly A+H and large state-linked issuers,
-  so this is partly the A+H story; the A+H control is in the model.
+- The VC/PE break-issue association must be assessed from the logit and Fisher tests above, rather than inferred from backing alone.
+  Backing and listing route are selected characteristics; the A+H control does not establish a causal certification effect.
 """
     return text, {"qr": qr, "z": z, "ols": ols}
 

@@ -1,0 +1,86 @@
+[
+  {
+    "sheet": "NLR",
+    "cell": "AI18",
+    "header": "Net sales in year-3",
+    "before": "NaN",
+    "after": 0
+  },
+  {
+    "sheet": "NLR",
+    "cell": "AJ18",
+    "header": "Net sales in year-2",
+    "before": "NaN",
+    "after": 0
+  },
+  {
+    "sheet": "NLR",
+    "cell": "AK18",
+    "header": "Net sales in year-1",
+    "before": "NaN",
+    "after": 0
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BI18",
+    "header": "Top-tier VC/PE backing (1=yes; 0=no)",
+    "before": 1,
+    "after": "NaN"
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BJ18",
+    "header": "Key Pre-IPO investors",
+    "before": "AMR Action Fund, L.P.; AMR Action Fund, SCSp; WuXi PharmaTech Healthcare Fund I L.P. (WuXi Fund); Northern Light Venture Capital IV, Ltd. (Immense Vantage Limited); China Life Sciences Access Fund, L.P.; Suzhou Frontline Bioventure Capital Investment Partnership (LP); Suzhou Frontline Bioventures Venture Capital Investment Partnership (LP) Fund II; Suzhou Industrial Park Origin Ventures Co., Ltd.; Suzhou Industrial Park Oriza Zhengze Venture Capital I (LP); Nongyin No. 2 Wuxi Equity Investment Center; MAL Investment Company; Allen Chao Interests, Ltd.; Relativity Healthcare Fund, LLC; Huzhou Zhongnuo Venture Capital Investment Partnership (LP); WuXi Guolian Guokang Health Industry Investment Center (LP); Ningbo Xiangshang; Ningbo Yaoshang; Ningbo Yanyuan; Ningbo Borong; Ningbo Rongshun; Suzhou GTJA; Yantai GTJA; Hainan Century Star River Investment Co., Ltd.; Suzhou Qianrong Yingrun Equity Investment Partnership (LP); Suzhou Yuankang Dingxiang Investment Management Partnership (LP); Zhongshan Entities; Kangnuo; Susui Investment; Borun Mingdu; Yuanjing Investment; Beijing Jingguo Chuang; Yangzhou Jinye; Cumbre",
+    "after": "AMR Action Fund, L.P.; AMR Action Fund, SCSp; WuXi PharmaTech Healthcare Fund I L.P. (WuXi Fund); Northern Light Venture Capital IV, Ltd. (via Immense Vantage Limited); China Life Sciences Access Fund, L.P.; Suzhou Frontline Bioventure Capital Investment Partnership (LP); Suzhou Frontline Bioventures Venture Capital Investment Partnership (LP) Fund II; Suzhou Industrial Park Origin Ventures Co., Ltd.; Suzhou Industrial Park Oriza Zhengze Venture Capital I (LP); Nongyin No. 2 Wuxi Equity Investment Center; MAL Investment Company; Allen Chao Interests, Ltd.; Relativity Healthcare Fund, LLC; Huzhou Zhongnuo Venture Capital Investment Partnership (LP); WuXi Guolian Guokang Health Industry Investment Center (LP); Ningbo Xiangshang; Ningbo Yaoshang; Ningbo Yanyuan; Ningbo Borong; Ningbo Rongshun; Suzhou GTJA; Yantai GTJA; Hainan Century Star River Investment Co., Ltd.; Suzhou Qianrong Yingrun Equity Investment Partnership (LP); Suzhou Yuankang Dingxiang Investment Management Partnership (LP); Zhongshan Entities; Kangnuo; Susui Investment; Borun Mingdu; Yuanjing Investment; Beijing Jingguo Chuang; Yangzhou Jinye; Cumbre"
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BO18",
+    "header": "Ultimate controller type",
+    "before": "No controlling shareholder (Single Largest Group of Shareholders: the Cumbre Entities and family members of Mr. Meyerson)",
+    "after": "No controlling shareholder"
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BP18",
+    "header": "Controller economic interest at listing (%)",
+    "before": 0.1582,
+    "after": "NaN"
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BQ18",
+    "header": "Controller voting rights at listing (%)",
+    "before": 0.1582,
+    "after": "NaN"
+  },
+  {
+    "sheet": "NLR",
+    "cell": "BT18",
+    "header": "Debt repayment (% of planned net IPO proceeds)",
+    "before": "NaN",
+    "after": 0
+  },
+  {
+    "sheet": "NLR",
+    "cell": "CN18",
+    "header": "Year-1 net sales (original, pre-annualization)",
+    "before": null,
+    "after": 0
+  },
+  {
+    "sheet": "NLR",
+    "cell": "GK18",
+    "header": "Underwriting base commission rate (%)",
+    "before": 0.025,
+    "after": 0.03
+  },
+  {
+    "sheet": "NLR",
+    "cell": "GM18",
+    "header": "Total underwriting fee rate (%)",
+    "before": 0.035,
+    "after": 0.04
+  }
+]

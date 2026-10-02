@@ -1,0 +1,48 @@
+{
+  "reviewer": "independent sub-agent review_gaps",
+  "payload_sha256": "bcb4ff436c081acdc046ade0c848b45e43b063d5b6d3286c5fb7b31b00b9ee0e",
+  "gate_pass": false,
+  "verdict": "rejected_whole_payload",
+  "scope": "Full current 70-field payload read; stopped unconditional approval upon material definition/evidence issues. This is not claim that every other field is wrong.",
+  "blocking_findings": [
+    {
+      "field": "col_BC",
+      "value": 0.1582,
+      "reason": "Controller economic interest: issuer explicitly has no controlling shareholder. Quote gives Cumbre largest shareholder voting rights; cannot support controller economic interest.",
+      "source_page": 25,
+      "quote": "our Company will not have any controlling shareholder (as defined under the Listing Rules) upon Listing."
+    },
+    {
+      "field": "col_top_tier_vc",
+      "value": 1,
+      "reason": "Quote proves Oriza early/growth investing and portfolio examples, not top-tier institution definition nor important issuer equity/lead-investor qualification.",
+      "source_page": 289
+    },
+    {
+      "field": "col_CG",
+      "value": 453000,
+      "reason": "Value corroborated by consolidated cash flow p358 (225k+228k) but current primary citation p313 Financial Information violates required Appendix I provenance.",
+      "source_page": 358
+    }
+  ],
+  "clarification_findings": [
+    {
+      "field": "col_AP",
+      "value": 0.03,
+      "reason": "p326 fixed3% and p327 discretionary1%; if AP denotes total maximum fee, should4%, if AP international fixed it can3%. Header needs mapping clarity."
+    },
+    {
+      "field": "col_holding_duration",
+      "value": 12.9,
+      "reason": "Earliest agreement 2013-06-21 to2026-05-14 computes12.897years and12.90 rounds correctly; accepted numeric."
+    }
+  ],
+  "accepted_partial": {
+    "col_AH": 0,
+    "review_artifact": "6872_revenue_review.json"
+  },
+  "formal_review_state_record_created": false,
+  "reviewed_payload_path": "pipeline/reports/data_gap_collection/6872_formal_rejected_snapshot.json",
+  "original_snapshot_sha256": "b619f5a5d376d580bdb39c8cd3289ce5d997842fbd5f170c7229817e92099085",
+  "status_note": "Reviewed formal payload was subsequently restored from original snapshot; this review binds rejected snapshot, not current formal file."
+}

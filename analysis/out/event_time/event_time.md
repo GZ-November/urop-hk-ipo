@@ -10,8 +10,8 @@ earlier listings only (N shown per row). "Hot" = listed April-June (calendar dum
   it is weaker (day-60 wild cluster p = 0.047); the ordinary Mann-Whitney and HC3 p-values overstate it.
 - Calendar time, which counts each date once, gives the April-June portfolio an excess return not distinguishable from zero (p = 0.50), the other
   listings a positive excess return (p = 0.063), and no significant difference between them (p = 0.27).
-- So the evidence supports "January-March listings did well after day 1" more than "April-June listings collapsed"; the two are not the same claim,
-  and a 9-month sample cannot separate them from the market path of each window.
+- These estimates compare different listing windows and market paths. Read the BH-adjusted headline tests below before claiming a hot-window reversal;
+  calendar-time point estimates alone do not establish that either portfolio has a nonzero abnormal return.
 
 ## 1. Event time: BHAR from the day-1 close, benchmark HSI
 
