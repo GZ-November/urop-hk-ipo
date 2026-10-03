@@ -1,9 +1,9 @@
-# 2026 IPO基础统计与数据覆盖
+# 2026 IPO Basic Statistics and Data Coverage
 
-生成样本：113家，上市日期2026-01-02至2026-09-30；截至2026-09-30。仅使用2026主板普通IPO。
-此报告只做描述和相关性，不运行回归或显著性检验。原始价格和当前单位修复沿用现有研究输入。
+Sample: 113 ordinary Main Board IPOs listed from 2026-01-02 to 2026-09-30; observation cutoff 2026-09-30. Only actual 2026 listing dates are selected.
+This report contains descriptive statistics and rank correlations, without regressions or significance tests. It retains the current raw-price and security-unit corrections.
 
-## 1. 核心字段覆盖
+## 1. Core-field coverage
 
 | field | n_present | n_missing |
 |---|---|---|
@@ -26,27 +26,26 @@
 | Day-20 BHR from Day-1 close (%) | 102 | 11 |
 | 3-month BHR from Day-1 close (%) | 82 | 31 |
 
-覆盖表示master中有值，不证明原始披露已独立核实。完整202字段清单见field_coverage.csv；核心字段缺失发行人见core_missing_records.csv。
-固定价格发售不适用区间修价；未成熟收益、未披露、未采集和不适用必须分别判断，不能将缺失全部补0。
-基础发售金额=P0×基础发售证券数量，单位沿用当前发行股份／HDR修复；不等同于含绿鞋募资或发行人净所得。
+Coverage means a value is stored in the master, not that the original disclosure has been independently verified. See field_coverage.csv for all registered fields and core_missing_records.csv for issuers with missing core inputs. Unmatured, undisclosed, uncollected and inapplicable values must be distinguished; missing values are not automatically zero. Fixed-price offers have no within-range revision.
 
-## 2. 描述统计
+Base offer proceeds equal offer price times base offered security units. Share and HDR units follow the current repairs; this measure is not proceeds including greenshoe exercise or issuer net proceeds.
+
+## 2. Descriptive statistics
 
 | variable | count | mean | std | min | 25% | 50% | 75% | max |
 |---|---|---|---|---|---|---|---|---|
-| 首日收益（%） | 113.0 | 53.153 | 85.291 | -56.895 | 0.0 | 14.822 | 91.735 | 383.624 |
-| 基础发售金额（百万港元） | 113.0 | 3178.722 | 5975.644 | 200.0 | 717.211 | 1233.134 | 3677.438 | 53410.0 |
-| 公开认购倍数（倍） | 113.0 | 1985.186 | 2482.093 | 3.39 | 174.12 | 1073.37 | 2730.73 | 14855.4 |
-| 申请人数（人） | 113.0 | 154730.204 | 94449.618 | 12645.0 | 66692.0 | 153878.0 | 207986.0 | 471116.0 |
-| 企业年龄（年） | 113.0 | 15.085 | 7.027 | 0.67 | 9.97 | 13.49 | 20.0 | 33.58 |
-| 基石份额（%） | 113.0 | 32.901 | 19.138 | 0.0 | 16.13 | 38.586 | 49.77 | 68.63 |
-| 发行人平均配售率（%） | 113.0 | 1.688 | 4.968 | 0.01 | 0.056 | 0.108 | 0.634 | 29.532 |
-| 申请资金毛收益（%，发行人平均配售情景） | 113.0 | 0.02 | 0.442 | -2.698 | 0.0 | 0.025 | 0.09 | 1.748 |
+| First-day return (%) | 113.0 | 53.153 | 85.291 | -56.895 | 0.0 | 14.822 | 91.735 | 383.624 |
+| Base offer proceeds (HK$ million) | 113.0 | 3178.722 | 5975.644 | 200.0 | 717.211 | 1233.134 | 3677.438 | 53410.0 |
+| Public subscription multiple (times) | 113.0 | 1985.186 | 2482.093 | 3.39 | 174.12 | 1073.37 | 2730.73 | 14855.4 |
+| Public applicants (persons) | 113.0 | 154730.204 | 94449.618 | 12645.0 | 66692.0 | 153878.0 | 207986.0 | 471116.0 |
+| Firm age (years) | 113.0 | 15.085 | 7.027 | 0.67 | 9.97 | 13.49 | 20.0 | 33.58 |
+| Cornerstone allocation (%) | 113.0 | 32.901 | 19.138 | 0.0 | 16.13 | 38.586 | 49.77 | 68.63 |
+| Issuer-average allocation rate (%) | 113.0 | 1.687 | 4.968 | 0.011 | 0.056 | 0.108 | 0.634 | 29.532 |
+| Application gross return (%, proportional allocation scenario) | 113.0 | 0.02 | 0.442 | -2.698 | 0.0 | 0.025 | 0.09 | 1.748 |
 
-申请资金毛收益=发行人平均配售率×首日收益；这是比例获配情景，不是一手中签率、实际账户收益或扣费净收益。
-超过1或非正的配售率保留缺失，不截为1。用均值与中位数共同观察极端值，不能只报平均收益。
+Application gross return equals issuer-average allocation rate times first-day return. This is a proportional-allocation scenario, not a one-lot ballot probability, actual account outcome or fee-adjusted profit. Here the aggregate rate retains the legacy final-public/applications denominator; the tier-based retail study separately excludes employee reserved allotments. Ratios above one or nonpositive ratios remain missing rather than being capped. Means and medians are reported together to show tail sensitivity.
 
-## 3. 季度与上市路径
+## 3. Quarters and listing routes
 
 | group | ir_n | mean_ir_pct | median_ir_pct | break_share_pct |
 |---|---|---|---|---|
@@ -58,32 +57,30 @@
 | A+H (19A) | 36.0 | 10.18 | 2.675 | 30.556 |
 | Conventional | 47.0 | 74.476 | 44.737 | 19.149 |
 
-路径按18A、18C、A+H、普通路径互斥归类；独立A+H标记可以与18C重叠。月份完整表见group_comparisons.csv。
-每个单元格的收益样本数单列；很小的组只描述，不据此概括总体。
+Routes are mutually exclusive in the order 18A, 18C, A+H and conventional. The separate A+H flag can overlap 18C. Each return cell has its own valid N. Small groups are descriptive; the complete monthly table is in group_comparisons.csv.
 
-## 4. 认购热度三等分
+## 4. Subscription-demand terciles
 
 | group | ir_n | mean_ir_pct | median_ir_pct | break_share_pct | mean_application_gross_return_pct |
 |---|---|---|---|---|---|
 | Low demand | 38.0 | 13.909 | 0.0 | 42.105 | -0.023 |
-| Middle demand | 37.0 | 52.143 | 33.556 | 10.811 | 0.045 |
+| Middle demand | 37.0 | 52.143 | 33.556 | 10.811 | 0.046 |
 | High demand | 38.0 | 93.381 | 82.006 | 15.789 | 0.037 |
 
-三组由当前样本的认购倍数分位点划分，不是外部制度阈值。差异可能同时来自规模、上市月份及上市路径。
+Groups use subscription quantiles in the observed sample, not external regulatory thresholds. Differences may also reflect offer size, listing month and route composition.
 
-## 5. 与首日收益的简单秩相关
+## 5. Rank correlations with first-day returns
 
 | variable | pair_n | spearman_with_ir |
 |---|---|---|
-| 公开认购倍数（倍） | 113.0 | 0.518 |
-| 申请人数（人） | 113.0 | 0.478 |
-| 基础发售金额（百万港元） | 113.0 | -0.234 |
-| 企业年龄（年） | 113.0 | -0.18 |
-| 基石份额（%） | 113.0 | -0.068 |
+| Public subscription multiple (times) | 113.0 | 0.518 |
+| Public applicants (persons) | 113.0 | 0.478 |
+| Base offer proceeds (HK$ million) | 113.0 | -0.234 |
+| Firm age (years) | 113.0 | -0.18 |
+| Cornerstone allocation (%) | 113.0 | -0.068 |
 
-Spearman系数只表示排名关系，不能解释为因果效应。每对变量使用自身有限样本，不与回归共同样本混用。
+Spearman correlations describe rankings and do not identify causal effects. Each pair uses its own finite sample, separately from regression complete-case samples.
 
-## 6. 下一步
+## 6. Current research
 
-先检查分布、分组和异常发行人，再深入认购热度与零售获配收益。A+H锚专题可作为独立的小样本方向。
-缺什么数据、哪些公开可得及近期不做的选题见docs/RESEARCH_PLAN_2026.md；具体采集表见docs/DATA_GAPS_2026.md。
+See the [English empirical report](../../../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) for tier-based retail profits and demand robustness; see [the research plan](../../../docs/RESEARCH_PLAN_2026.md) and [data gaps](../../../docs/DATA_GAPS_2026.md) for scope and collection priorities.

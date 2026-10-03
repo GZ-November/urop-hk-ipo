@@ -1,40 +1,47 @@
-# 2026数据缺口执行台账
+# 2026 Data-Gap Collection and Evidence Ledger
 
-更新2026-10-02；研究总体113家，价格观察截止2026-09-30。此次只整理数据与证据，未新开复杂回归。原有A+H报告随参考表补齐已重跑。
+Population: 113 ordinary Main Board IPOs. Observation cutoff: 30 September 2026. This ledger records the existing data baseline and the subsequent read-time safeguards; it is not a new independent source review.
 
-## 已交付
+## Available artifacts
 
-| 用户指定项目 | 本次结果 | 数据文件 |
+| Item | Coverage and status | Artifact |
 |---|---|---|
-| 一手交易单位 | 113／113有原文明文；112家为股、6228为HDR，不混用 | [board_lots.csv](board_lots.csv) |
-| 各申请档位人数、保证获配及抽签规则 | 113家4,582档；93家三项总数一致（3,777档），19家申请股数合计冲突，3355隔离42档 | [清洁表](allocation_tiers_clean.csv)、[带冲突标记表](allocation_tiers_reconciled.csv) |
-| 4家A+H的A股原价、FX锚 | 6727、3228、3757、9607已补；2026覆盖38／38；旧34家锚未变 | [新增4家](ah_four_added.csv)、[完整参考表](../../exports/HKIPO-2026-AH-reference.csv) |
-| 6872上年前收入 | FY2025 RMB 0已正式写回；全70字段及4补充字段修复后通过独立复核，收入覆盖113／113 | [修复记录](6872_repair/README.md)、[完整复核](6872_repair/final_review.json) |
-| 2553上年前利润 | 所选最新期间为2026Q1，披露收入及毛利但未找到同期净利润；2025净亏324,914,000不能替代 | [财务／VC证据](financial_vc_review.md) |
-| 7家VC／PE标记 | 0668、2475、6951、6745、3228、3757、9607继续未知；不能将董事履历、员工平台、基石或标的卖方当上市前VC | [逐家台账](financial_vc_ledger.csv) |
+| Trading-lot units | 113 issuers; 112 share-based and one HDR (6228) | [Board lots](board_lots.csv) |
+| Allocation tiers | 4,582 rows across 113 issuers; all three stored totals currently reconcile | [Clean tiers](allocation_tiers_clean.csv), [reconciliation](allocation_tiers_reconciled.csv), [existing review](allocation_review.json) |
+| Four added A+H references | 6727, 3228, 3757 and 9607; reference coverage 38/38 | [Added references](ah_four_added.csv), [complete references](../../exports/HKIPO-2026-AH-reference.csv) |
+| 6872 prior-period revenue | FY2025 RMB0 formally recorded after the existing whole-payload repair/review | [Repair](6872_repair/README.md), [review](6872_repair/final_review.json) |
+| 2553 prior-period profit | Latest selected period is 2026Q1; revenue/gross profit found, but same-period net profit not found. FY2025 loss cannot substitute | [Financial evidence](financial_vc_review.md) |
+| Seven VC/PE flags | 0668, 2475, 6951, 6745, 3228, 3757 and 9607 remain unknown | [Issuer ledger](financial_vc_ledger.csv) |
 
-## 档位表怎么使用
+## Tier definitions
 
-`applied_shares`是档位申请证券数量，`applicants`是该档有效申请数；6228原文单位为HDR，证券单位从`board_lot_unit`读取。`guaranteed_shares`及`ballot_extra_shares`沿用数量列名称，在HDR记录中同样表示HDR数量，不能拿去与普通股数量相加。
+`applied_shares` is the application quantity and `applicants` the number of valid applications in that tier. Quantity field names also apply to HDR records; read `board_lot_unit` and do not add HDR quantities to ordinary share quantities.
 
-期望获配证券数量 = 保证获配数量 + 抽签获配人数／该档有效申请人数 × 额外获配数量。保证获配大于0时，额外抽签概率不等于“至少获配一手”的概率。最小申请档位不作为一手股数的推断依据；一手单位来自独立的board-lots原句。
+Expected allocation = guaranteed quantity + ballot winners/applicants * additional quantity. An additional-ballot probability is not the chance of receiving any allocation when a guarantee is positive. Trading-lot sizes come from their separate disclosure, not from the minimum application tier. In particular, the current 2649 record has a 200-security trading lot and a 500-security minimum application; this is a source follow-up and is excluded from the strict one-lot sample.
 
-3636和0901披露成功／失败获配人数分布，已合并同一申请档位；原分布保存在`source_quote`，编码注明derived_from_disclosed_count_distribution。跨页证据另留`continuation_page`。Pool缺乏原文标题的记录保留空值，不按发售价自动补Pool。
+3636 and 0901 use disclosed success/failure count distributions, merged by application tier with original distributions retained. Unknown pool titles remain blank. Actual cross-page rules retain continuation-page metadata.
 
-1377普通公众获配1,202,900与员工60,300合计1,263,200；2476普通公众7,852,800与员工482,000合计8,334,800。员工份额单列在覆盖表中，没有当作普通公众档位。两者公众申请人数与普通公众表核对。
+1377 ordinary-public allocation is 1,202,900 plus 60,300 employee-reserved securities; 2476 is 7,852,800 plus 482,000. Employees are separate from ordinary-public tiers. Current tier-based macro rates exclude these reserved quantities.
 
-独立复核见[allocation_review.json](allocation_review.json)，通过仅针对本次档位表与交易单位。它不授权修改19家公司主表申请总数，也不授权整份招股书工作簿。
+## Existing baseline corrections and qualifications
 
-## 尚未解决的差异
+The preceding collection stage changed `Public valid applied shares` for 19 Q2/Q3 issuers using tier integer sums. Its ledger attributes 17 differences to rounding-based reconstruction and two (2290, 1392) to earlier entry errors. Current totals match, but this later reporting round did not independently re-establish those diagnoses or perform formal writeback.
 
-- 19家申请股数合计与主表不同：2290.HK, 1392.HK, 2335.HK, 6106.HK, 3952.HK, 2667.HK, 6880.HK, 7656.HK, 7687.HK, 9971.HK, 1377.HK, 1770.HK, 2475.HK, 2797.HK, 3752.HK, 6951.HK, 2249.HK, 6745.HK, 9976.HK。不少差异很小，可能来自原采集使用四舍五入认购倍数反推申请股数；目前仅是线索，未把原因当已证实。申请人数及最终配售股数匹配。
-- 3355原PDF p15–16的部分获配人数、百分比和成功人数合计相互矛盾；已回看原件版式。文字规则算得2,557,500股，主表／最终公开配售4,000,000股。全部42档隔离，不自行配平。
-- 6727申购截止日发行折价−60.2371%；ticker688031、原价与换算均核对通过，仍保留plausible=0，未完成第二价格来源与公司行动排查。4家实际pricing date仍缺，日FX也不保证盘中可知。
-- 6872原控制人权益、top-tier VC、佣金定义及财务引用问题已修复并写回，见[最终完整复核](6872_repair/final_review.json)。[原拒绝记录](6872_whole_payload_review.json)保留为历史证据，不是当前修订文件的复核结论；6项必要缺失仍保留。
-- 0668 A股历史招股书及3757重组发行批复已找到官方补查线索；需统一A+H“上市前支持”的时点定义并核对紧邻H股IPO的实际机构持股。尚不足以把7家全部补0或1。
+For 3355, the stored guarantee vector [100,100,100,200,200,200,200,200,200,300] was inferred from rounded allocation percentages and pool totals, together with the reported number of successful Pool B applicants. The parser also changes a printed `008%` token to `0.08%`. Arithmetic reconciliation is a necessary check, not proof that inferred wording appeared in the source. The [original/derived appendix](../../../analysis/out/retail_distribution/3355_original_and_derived.json) separates the text from the inference, and the report includes an exclusion sensitivity.
 
-## 复现与证据
+The frozen candidate and coverage hashes currently match the existing review. No new semantic approval has been created during the subsequent research implementation.
 
-运行`python3 analysis/allocation_tiers_2026.py`会重新生成候选表与覆盖表，不修改工作簿。源公告链接113／113见[来源清单](allocation_source_index.csv)。每行保留源文本SHA-256、PDF物理页码和原句；完整语义复核、局部财务复核与A+H复核均独立保存。交付表须对应独立复核的候选hash。
+## Remaining source questions
 
-测试覆盖保证获配加额外抽签、跨页规则、成功／失败人数分布合并及总数不符隔离，并运行原有A+H测试；共5项通过。当前环境没有ruff，未安装新依赖。6872修复后已更新Q2工作簿、季度CSV、master和基础／既有研究报告。其他发行人单元格未改变；A+H参考表及档位表沿用此前复核结果。
+- 6727 retains `plausible=0` for its reference discount, pending an independent price source and corporate-action check. Four actual pricing dates are still missing; daily FX is not necessarily known at the pricing time.
+- 2649's trading-lot/application-tier mismatch requires source follow-up.
+- Seven VC/PE flags remain unknown. Director biographies, employee platforms, cornerstone participation and target sellers are not interchangeable with pre-IPO VC ownership.
+- The 6872 whole-payload repair has an existing final review; its earlier rejected snapshot remains historical evidence. Necessary missing fields were retained.
+
+## Re-extraction and review safeguards
+
+`python analysis/allocation_tiers_2026.py` now creates candidates and coverage only. It does not write a clean table, assign a passing semantic review, or change workbooks. Changed candidate or coverage bytes invalidate the old approval for analysis use.
+
+The analysis reader checks the independent review's verdict/scope, candidate and coverage hashes, source-text hashes, and clean/candidate field correspondence. This prevents stale approval from being carried into future reruns. The [English empirical report](../../../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) and [implementation notes](../../../docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) document the current study.
+
+Source URLs are cataloged in [the source index](allocation_source_index.csv). Existing review JSON and original data remain unchanged by this English documentation update.

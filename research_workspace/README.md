@@ -15,6 +15,14 @@ The observation cutoff is 30 September 2026.
 | [06_sources_and_audits](06_sources_and_audits/) | Official sources, source evidence, extraction records, and audits |
 | [07_historical_data](07_historical_data/) | Stored 2025 Q1/Q2 workbooks and cross-year inputs |
 
+## Current English research reports
+
+- [Retail IPO applications: consolidated report](04_reports_and_plans/Current_Empirical_Research_Report.md)
+- [Implementation and reproduction](04_reports_and_plans/Retail_Research_Implementation.md)
+- [Subscription demand results](05_analysis_results/12_subscription_demand/)
+- [Tier-based retail allocation results](05_analysis_results/13_retail_allocation_profit/)
+- [Profit distributions, fee frontiers and robustness](05_analysis_results/14_retail_profit_distributions/)
+
 ## Frequently used files
 
 - [2026 Q3 Excel workbook](01_workbooks/2026_Q3_IPO_Data.xlsx)

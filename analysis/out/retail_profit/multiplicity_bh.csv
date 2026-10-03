@@ -1,0 +1,7 @@
+Section,Test,p,q (BH),Rank
+Main Line B Regressions,Model 5: 10-Lot Return on log(Sub) - log_sub,0.2465270595650203,0.8697212783539786,1
+Main Line B Regressions,Model 1: 1-Lot Return on log(Sub) - log_sub,0.28990709278465954,0.8697212783539786,2
+Main Line B Regressions,Model 6: 10-Lot Dollar Profit + Controls - log_sub,0.7109139519074497,0.953384323153188,3
+Main Line B Regressions,Model 3: 1-Lot Dollar Profit on log(Sub) - log_sub,0.7119837669436102,0.953384323153188,4
+Main Line B Regressions,"Model 2: 1-Lot Return + Size, A+H, Hot - log_sub",0.9320600298089383,0.953384323153188,5
+Main Line B Regressions,"Model 4: 1-Lot Dollar Profit + Size, A+H, Hot - log_sub",0.953384323153188,0.953384323153188,6

@@ -22,6 +22,7 @@ def run_fixture(tmp_path, monkeypatch, code, pages, applicants, applied, allocat
     monkeypatch.setattr(tiers, "load_panel", lambda: panel)
     monkeypatch.setattr(tiers, "select_2026", lambda d: d)
     tiers.main()
+    assert not (tiers.OUT / "allocation_tiers_clean.csv").exists()
     return pd.read_csv(tiers.OUT / "allocation_tiers_candidates.csv"), pd.read_csv(tiers.OUT / "allocation_coverage.csv")
 
 

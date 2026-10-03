@@ -75,3 +75,20 @@ A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year r
 Current research design and brainstorm: [RESEARCH_DESIGN_2026.md](../docs/RESEARCH_DESIGN_2026.md). Evidence-gap disposition: [readiness review](../pipeline/reports/research_readiness/README.md).
 
 The active plan starts with basic statistics and selects a few topics; the advanced modules above remain exploratory references. Data availability and collection feasibility: [DATA_GAPS_2026.md](../docs/DATA_GAPS_2026.md).
+
+
+## Focused retail research — 3 October 2026
+
+The English [consolidated report](../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) and [implementation notes](../docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) describe the current study.
+
+| Study | Output | Scope |
+|---|---|---|
+| `demand` | `out/subscription_heat/` | Retrospective demand groups, first-day return associations and aftermarket descriptions |
+| `allocation_profit` | `out/retail_profit/` | Tier-based application expectations and separate applicant outcome probabilities |
+| `retail_distribution` | `out/retail_distribution/` | Strict/minimum-tier portfolio distributions, covariance decomposition, cost frontiers and supporting robustness |
+
+```bash
+python run.py analysis --study demand --study allocation_profit --study retail_distribution
+```
+
+`retail_distribution` is opt-in. It conditions on observed prices and does not annualize simulated profits. Its English narrative is rendered by `shared/retail_report.py`; machine-readable values remain in CSVs. The allocation reader checks the pre-existing independent review against candidate/coverage/source hashes. Running `allocation_tiers_2026.py` only generates pending candidates, requiring a new review if their bytes change.
