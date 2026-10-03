@@ -17,11 +17,14 @@ The observation cutoff is 30 September 2026.
 
 ## Current English research reports
 
+- [Mentor discussion draft: corrected one-lot results, no simulation](04_reports_and_plans/Retail_Mentor_Brief.md)
+- [Source reassessment and exclusion results](04_reports_and_plans/Retail_Evidence_Assessment.md)
 - [Retail IPO applications: consolidated report](04_reports_and_plans/Current_Empirical_Research_Report.md)
 - [Implementation and reproduction](04_reports_and_plans/Retail_Research_Implementation.md)
 - [Subscription demand results](05_analysis_results/12_subscription_demand/)
 - [Tier-based retail allocation results](05_analysis_results/13_retail_allocation_profit/)
 - [Profit distributions, fee frontiers and robustness](05_analysis_results/14_retail_profit_distributions/)
+- [Deterministic source-corrected tables](05_analysis_results/15_retail_evidence_brief/)
 
 ## Frequently used files
 

@@ -1,0 +1,203 @@
+field,workbook_letter,source_layer,registered_unit,definition_from_registry,workbook_nonmissing_n,analysis_nonmissing_n,sample_n
+HKEx file# of the year,A,official_hkex,,港交所年度申请编号,112,112,113
+Stock Code,B,official_hkex,,股份代号（四位港股代码，如 6082.HK）,113,113,113
+Company Name at time of listing,C,official_hkex,,公司上市时法定英文名称,113,113,113
+Date of Prospectus (dd/mm/yy),D,official_hkex,date,招股书刊发日期,113,113,113
+Date of Listing (dd/mm/yy),E,official_hkex,date,正式挂牌上市交易日期,113,113,113
+Sponsor(s),F,official_hkex,,独家/联席保荐人名单,112,112,113
+Reporting Accountants,G,official_hkex,,申报会计师事务所,112,112,113
+Valuer(s),H,official_hkex,,独立物业或资产估值师,16,16,113
+Funds Raised HK (a),I,official_hkex,,香港公开发售募资额 (HK$),112,112,113
+Funds Raised Int.(b),J,official_hkex,,国际配售募资额 (HK$),112,112,113
+IPO Subscription Price (HK$),K,official_hkex,HKD,最终发售定价 (HK$),113,113,113
+Total (without option),L,prospectus,,Total (without option),113,113,113
+Global Offering (without option),M,prospectus,,Global Offering (without option),113,113,113
+Number of offer shares under the capitalization Issue,N,prospectus,,全球发售完成前的已发行股份总数。本数据集口径：一律填 L − M（Total 减去全球发售股数），即使招股书未披露「资本化发行」也必须照填，不得留 NaN。用于满足恒等式 L = N + Q。2026Q1 成品工作簿 38 家公司全部取 L − M，Q2 必须同口径。数值只取权威 SHARE CAPITAL 汇总表与封面，禁止取「历史沿革／资本化发行沿革」段落。,108,108,113
+Number of offer shares under Capitalization Rest,O,prospectus,,与 col_N 同口径：一律填 L − M（全球发售完成前的已发行股份总数），即使招股书未披露「资本化转换」也必须照填，不得留 NaN。用于满足恒等式 L = O + M。2026Q1 成品 38 家全部为 L − M。,108,108,113
+Sale Shares,P,prospectus,,老股出售（Sale Shares）数量。若为全部新股的 Offer for Subscription（无 Selling Shareholder），填数字 0，不得留 NaN，用于满足恒等式 M = Q + P。判据：封面／股本汇总表无 Sale Shares 行，且全文无 Selling Shareholder 披露。2026Q1 成品 38 家全部为 0。若确有老股出售，按招股书披露填写。,113,113,113
+New shares,Q,prospectus,,New shares,113,113,113
+Placing Shares,R,prospectus,,Placing Shares,113,113,113
+Public Offer shares,S,prospectus,,Public Offer shares,113,113,113
+Maximum Offer Price,T,prospectus,,Maximum Offer Price,113,113,113
+Minimum Offer Price,U,prospectus,,Minimum Offer Price,82,82,113
+Filing price revision (%),V,prospectus,percent,发售定价偏离询价区间中点幅度（Hanley 1993 动态信息提取，固定价格发售为 0.00%）,113,113,113
+Filing range width (%),W,prospectus,percent,询价区间相对宽度（Beatty & Ritter 1986 事前估值不确定性，固定价格发售为 0.00%）,113,113,113
+Pricing position in filing range,X,prospectus,,定价落点分类体系（Fixed price / Above range / At high / Midpoint / Within range / At low / Below range）,113,113,113
+currency in financial information,Y,prospectus,,currency in financial information,113,113,113
+total assets in year-3 (3 years before IPO),Z,prospectus,reporting_currency_raw,total assets in year-3 (3 years before IPO),106,106,113
+total assets in year-2,AA,prospectus,reporting_currency_raw,total assets in year-2,113,113,113
+total assets in year-1,AB,prospectus,reporting_currency_raw,total assets in year-1,111,111,113
+total equity in year-3,AC,prospectus,reporting_currency_raw,total equity in year-3,106,106,113
+total equity in year-2,AD,prospectus,reporting_currency_raw,total equity in year-2,113,113,113
+total equity in year-1,AE,prospectus,reporting_currency_raw,total equity in year-1,111,111,113
+total liability in year-3,AF,prospectus,reporting_currency_raw,total liability in year-3,106,106,113
+total liability in year-2,AG,prospectus,reporting_currency_raw,total liability in year-2,113,113,113
+total liability in year-1,AH,prospectus,reporting_currency_raw,total liability in year-1,111,111,113
+Net sales in year-3,AI,prospectus,reporting_currency_raw,Net sales in year-3,107,107,113
+Net sales in year-2,AJ,prospectus,reporting_currency_raw,Net sales in year-2,113,113,113
+Net sales in year-1,AK,prospectus,reporting_currency_raw,Net sales in year-1,113,113,113
+Profit before tax in year-3,AL,prospectus,reporting_currency_raw,Profit before tax in year-3,106,106,113
+Profit before tax in year-2,AM,prospectus,reporting_currency_raw,Profit before tax in year-2,113,113,113
+Profit before tax in year-1,AN,prospectus,reporting_currency_raw,Profit before tax in year-1,112,112,113
+Profit for the year in year-3,AO,prospectus,reporting_currency_raw,Profit for the year in year-3,106,106,113
+Profit for the year in year-2,AP,prospectus,reporting_currency_raw,Profit for the year in year-2,113,113,113
+Profit for the year in year-1,AQ,prospectus,reporting_currency_raw,Profit for the year in year-1,112,112,113
+Underwriting Commission (% of fund raised HK (a),AR,prospectus,,Underwriting Commission (% of fund raised HK (a),112,112,113
+Underwriting Commission (% of fund raised Int.(b),AS,prospectus,,Underwriting Commission (% of fund raised Int.(b),112,112,113
+Over-allotment Option (%),AT,prospectus,percent,Over-allotment Option (%),107,107,113
+Principal business / industry,AU,prospectus,,Principal business / industry,113,113,113
+Listing route / applicable chapter,AV,prospectus,,Listing route / applicable chapter,113,113,113
+Year-1 financial period end (dd/mm/yy),AW,prospectus,date,Year-1 financial period end (dd/mm/yy),113,113,113
+Operating cash flow in year-1 (before annualization),AX,prospectus,reporting_currency_raw,Operating cash flow in year-1 (before annualization),111,111,113
+Cash and cash equivalents at year-1 end,AY,prospectus,reporting_currency_raw,Cash and cash equivalents at year-1 end,111,111,113
+R&D expensed in year-1 (before annualization),AZ,prospectus,reporting_currency_raw,R&D expensed in year-1 (before annualization),106,106,113
+"Development costs capitalized in year-1 (additions, before annualization)",BA,prospectus,reporting_currency_raw,"Development costs capitalized in year-1 (additions, before annualization)",104,104,113
+Top 5 customers (% of year-1 revenue),BB,prospectus,reporting_currency_raw,Top 5 customers (% of year-1 revenue),99,99,113
+Comments / Annualization factor,BC,prospectus,,最近一期财务数据对应的年化因子与口径说明,113,113,113
+Pre-IPO VC/PE backing (1=yes; 0=no),BD,prospectus,binary,是否引入 Pre-IPO VC/PE 投资者：1=有，0=无。看 HISTORY AND DEVELOPMENT — Pre-IPO Investments 与 SUBSTANTIAL SHAREHOLDERS 名单；只要有专业投资机构（VC/PE/产业基金）在上市前入股即 1。,106,106,113
+Pre-IPO VC backing (1=yes; 0=no),BE,prospectus,binary,只根据本公司招股书披露的上市前投资判定。早期/成长期专业风险投资基金为 1；未找到证据不等于 0，无法确认时填 NaN。分类依据须在本字段 quote 中体现。,104,104,113
+Pre-IPO PE backing (1=yes; 0=no),BF,prospectus,binary,只根据本公司招股书披露的上市前投资判定。中晚期私募股权基金或并购基金为 1；未找到证据不等于 0，无法确认时填 NaN。分类依据须在本字段 quote 中体现。,106,106,113
+Pre-IPO CVC backing (1=yes; 0=no),BG,prospectus,binary,只根据本公司招股书披露的上市前投资判定。发行人产业股东须有战略投资/企业风投关系依据才归 CVC；普通产业股东不能自动算 CVC。无法确认时填 NaN。,94,94,113
+Pre-IPO State/Gov backing (1=yes; 0=no),BH,prospectus,binary,只根据本公司招股书披露的上市前投资判定。有明确国资、政府或产业引导基金背景的机构为 1；国资身份不自动代表 VC/PE。无法确认时填 NaN。,99,99,113
+Top-tier VC/PE backing (1=yes; 0=no),BI,prospectus,binary,仅在本公司招股书确认一线知名 VC/PE 机构持有重要股权或领投时填 1；不得仅凭机构知名度推断其参与本公司投资。无法确认时填 NaN。,83,83,113
+Key Pre-IPO investors,BJ,prospectus,,仅列本公司招股书披露的上市前投资者，采用一致的英文全称/拼音并以分号分隔；同一投资者只记一次，不从其他 cohort 补名单。,88,88,113
+Pre-IPO institutional shareholding (%),BK,prospectus,percent,上市前 VC/PE/CVC/国资机构合计持股比例，取紧邻上市前的股权口径，不能混入 IPO 新股或基石配售；统一填 0–1 小数（如 12.5%=0.125）。只有招股书披露或可用披露数字复算时填写，否则 NaN。,94,94,113
+Pre-IPO investor board seat (1=yes; 0=no),BL,prospectus,binary,只有能从招股书明确关联到 Pre-IPO 投资机构的非执行董事或正式观察员席位才填 1；没有证据不等于 0，无法确认时填 NaN。,95,95,113
+Earliest Pre-IPO investment round,BM,prospectus,,从本公司招股书披露的 Pre-IPO 投资轮次中取最早一轮，保留披露的标准轮次名称；只有明确说明没有外部上市前投资时填 None，否则无法确认时 NA。,87,87,113
+Pre-IPO holding duration (years),BN,prospectus,years,从最早 Pre-IPO 投资协议日期至本公司招股书日期计算年数，保留两位小数；起始日期无法确认则 NaN。每家公司必须使用自己的招股书日期，不沿用其他季度日期。,94,94,113
+Ultimate controller type,BO,prospectus,,最终控制人类型（如：自然人 / 家族 / 国资委 / 地方政府 / 外资 / 无实际控制人）。取 SUBSTANTIAL SHAREHOLDERS 与 Controlling Shareholders 段的实际控制人身份表述。,113,113,113
+Controller economic interest at listing (%),BP,prospectus,percent,控制人上市时**经济权益**（持股比例），填小数。取 CONTROLLING/SUBSTANTIAL SHAREHOLDERS 表的持股百分比。,110,110,113
+Controller voting rights at listing (%),BQ,prospectus,percent,控制人上市时**投票权**比例，填小数。有 WVR（同股不同权）时与持股不同，取投票权那一列；无 WVR 通常与 BC 相同。,111,111,113
+Interest-bearing debt at year-1 end,BR,prospectus,,year-1 期末**总有息负债**（用与 col_V 相同的披露货币基本单位）。包含短期借款、长期借款、租赁负债及带息应付票据债券等带息债务总额，取 INDEBTEDNESS 表格的 Total 余额；不含应付账款等无息负债。必须换算为货币基本单位（乘表格千元/百万元乘数）。期末余额，不年化。,112,112,113
+Technology commercialization stage,BS,prospectus,,技术商业化阶段（如：研发阶段 / 小批量试产 / 商业化初期 / 规模商业化 / 已量产）。按 BUSINESS 与业务摘要里的产品状态表述填，不要按行业推测。,103,103,113
+Debt repayment (% of planned net IPO proceeds),BT,prospectus,,计划净募资中用于**偿债**的比例，填小数。取 USE OF PROCEEDS 里用于偿还借款/债务的金额 ÷ 计划净募资额；没有该用途填 0。,112,112,113
+Listing board,BU,allotment_external,,上市板块（Main Board 主板）,113,113,113
+Share class,BV,prospectus,,股份类别（如 H Shares / A Shares / Class A Ordinary Shares / Class B Ordinary Shares）。按招股书股本表的类别名称填。,113,113,113
+A+H issuer flag,BW,allotment_external,,A+H 两地上市发行人标识（1=是，0=否）,113,113,113
+WVR flag,BX,allotment_external,,不同投票权/同股不同权架构标识（1=是，0=否）,113,113,113
+Chapter 18A flag,BY,allotment_external,,第 18A 章未盈利生物科技公司标识（1=是，0=否）,113,113,113
+Chapter 18C flag,BZ,allotment_external,,第 18C 章特专科技公司标识（1=是，0=否）,113,113,113
+Industry classification code,CA,allotment_external,,恒生行业分类 HSICS 6 位业务细分代码,113,113,113
+Industry classification system and version,CB,allotment_external,,行业分类系统与版本号,113,113,113
+Incorporation date,CC,prospectus,date,公司**法定注册成立日期**（dd/mm/yy）。必须优先取自 Statutory and General Information (Appendix V '1. Incorporation')、History & Development 或 Accountants' Report (附注 1)。严禁从 Definitions (释义) 章节取值（释义章节常有起草笔误或仅为前期筹备日）。,113,113,113
+Firm age at IPO (years),CD,prospectus,years,公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量）,113,113,113
+Place of incorporation,CE,allotment_external,,"公司注册成立法域（如 Cayman Islands, PRC 等）",77,77,113
+Principal place of business,CF,prospectus,,"主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。",113,113,113
+Financial statement unit multiplier,CG,allotment_external,,财务报表基础货币乘数（千元/万元/百万元）,95,95,113
+Accounting standard,CH,prospectus,,财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。,113,113,113
+Year-3 financial period start,CI,prospectus,date,往绩记录第三年前期起始日,113,113,113
+Year-3 financial period end,CJ,prospectus,date,往绩记录第三年前期截止日,113,113,113
+Year-2 financial period start,CK,allotment_external,date,往绩记录第二年前期起始日,113,113,113
+Year-2 financial period end,CL,allotment_external,date,往绩记录第二年前期截止日,113,113,113
+Year-1 financial period start,CM,allotment_external,date,往绩记录最近一期起始日,113,113,113
+"Year-1 net sales (original, pre-annualization)",CN,allotment_external,,最近一期营业收入原值（年化前）,113,113,113
+Year-1 profit before tax (original),CO,allotment_external,,最近一期税前利润原值（年化前）,112,112,113
+Year-1 profit for period (original),CP,allotment_external,,最近一期净利润原值（年化前）,112,112,113
+Subscription opening date,CQ,prospectus,date,香港公开发售**开始认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。,113,113,113
+Subscription closing date,CR,prospectus,date,香港公开发售**截止认购日期**（dd/mm/yy）。取 EXPECTED TIMETABLE。,113,113,113
+H shares after IPO (base; no options),CS,prospectus,,上市后**在港交所挂牌的股份数**（base，不含超额配售）。统一口径：① 内地 H 股发行人全部转换时 = 总股本；② 部分转换时 = 由未上市股转换的 H 股 + 新发 H 股（剩余未上市股不挂牌，不计入）；③ A+H 发行人 = 仅新发 H 股（A 股在沪深市场挂牌，不计入）；④ 开曼/境外发行人没有 H 股类别，其全部股份均在港交所挂牌，故 = 上市后已发行股份总数。即：本列恒等于「港交所挂牌的股份数」，四类结构可比。,112,112,113
+Gross profit in year-1,CT,prospectus,reporting_currency_raw,year-1 **毛利**（用与 col_V 相同的披露货币基本单位）。取损益表的 Gross profit。强制期间锚定：必须与 col_AT 严格同期间！若 col_AT 为中期报告期（如截至 2025 年 6 月 30 日或 9 月 30 日止期间），必须严格提取该中期报告期对应列的原值，绝对严禁错采前一完整财年（FY2024）的数值。必须换算为货币基本单位（乘表格千元/百万元乘数）。不年化——手册明确仅 year-1 销售/税前利润/净利润年化，毛利不年化。,111,111,113
+Capital expenditure in year-1,CU,prospectus,reporting_currency_raw,year-1 **资本开支**（用与 col_V 相同的披露货币基本单位）。取现金流量表“购建物业、厂房及设备”或 CAPITAL EXPENDITURE 段。强制期间锚定：必须与 col_AT 严格同期间！若 col_AT 为中期报告期（如截至 2025 年 6 月 30 日或 9 月 30 日止期间），必须严格提取该中期报告期实际资本开支原值，绝对严禁错采前一完整财年（FY2024）数值。必须换算为货币基本单位（乘表格千元/百万元乘数）。不年化。,111,111,113
+Audit opinion (year-1),CV,prospectus,,year-1 **审计意见类型**（如 无保留意见 / Unqualified opinion / Qualified opinion）。取会计师报告的审计意见段。,110,110,113
+Listing expenses (HK$),CW,prospectus,HKD,**总上市费用**（HK$ 基本单位，含承销佣金与其他开支）。取 UNDERWRITING COMMISSIONS AND LISTING EXPENSES 段的合计。,111,111,113
+Cornerstone investor names,CX,prospectus,,Cornerstone investor names,95,95,113
+Final cornerstone allocation (% of base offer),CY,allotment_external,,Final cornerstone allocation (% of base offer),113,113,113
+Earliest cornerstone unlock date (dd/mm/yy),CZ,allotment_external,date,基石投资者最早解禁日期,95,95,113
+Subscription Ratio (times),DA,allotment_external,,Subscription Ratio (times),113,113,113
+Public applicants,DB,allotment_external,,Public applicants,113,113,113
+Public valid applied shares,DC,allotment_external,,Public valid applied shares,113,113,113
+Public subscription original wording,DD,allotment_external,,Public subscription original wording,113,113,113
+Pricing date,DE,allotment_external,date,Pricing date,59,59,113
+Allotment announcement date,DF,allotment_external,date,Allotment announcement date,113,113,113
+Final global offering shares (before over-allotment),DG,allotment_external,,Final global offering shares (before over-allotment),113,113,113
+Final public offer shares,DH,allotment_external,,Final public offer shares,113,113,113
+Final placing shares,DI,allotment_external,,Final placing shares,113,113,113
+Over-allotment shares actually issued,DJ,allotment_external,,Over-allotment shares actually issued,102,102,113
+Greenshoe exercise rate (%),DK,allotment_external,percent,绿鞋实际行使比例（Ellis et al. 2000 超额配售执行度与价格支持）,113,113,113
+Actual clawback / reallocation description,DL,allotment_external,,Actual clawback / reallocation description,112,112,113
+Net IPO proceeds to issuer (HK$),DM,allotment_external,HKD,Net IPO proceeds to issuer (HK$),113,113,113
+Public shareholding at listing (%),DN,allotment_external,percent,Public shareholding at listing (%),112,112,113
+Share base used for both public shareholding ratios,DO,allotment_external,,Share base used for both public shareholding ratios,113,113,113
+Unrestricted public shareholding at listing (%),DP,allotment_external,percent,Unrestricted public shareholding at listing (%),112,112,113
+Free float denominator description,DQ,allotment_external,,Free float denominator description,112,112,113
+Free float denominator shares,DR,allotment_external,,Free float denominator shares,112,112,113
+HSI return over 20 trading days before prospectus (%),DS,allotment_external,percent,招股日前 20 个交易日恒生指数累计收益率 (%),113,113,113
+HK ordinary IPO count in 90 calendar days before prospectus,DT,allotment_external,,招股日前 90 个自然日香港普通主板 IPO 上市数量,113,113,113
+1-month HIBOR before prospectus (%),DU,allotment_external,percent,招股日前一交易日香港银行同业拆借 1 个月 HIBOR 利率 (%),113,113,113
+Banking system aggregate balance before prospectus (HK$),DV,allotment_external,HKD,招股日前一交易日香港银行体系总结余 (HK$),113,113,113
+First trading day closing price (HK$),DW,allotment_external,HKD,首日上市二级市场收盘价 (HK$),113,113,113
+First-day return / Underpricing (%),DX,allotment_external,percent,上市首日抑价率 / 初始收益率（Rock 1986 / Ritter 1984 核心被解释变量）,113,113,113
+Money left on the table (HK$),DY,allotment_external,HKD,留在桌面上的财富 / 抑价转移财富总额（Loughran & Ritter 2002 前景理论指标）,113,113,113
+First trading day opening price (HK$),DZ,allotment_external,HKD,首日上市二级市场开盘价 (HK$),113,113,113
+First trading day high (HK$),EA,allotment_external,HKD,首日上市二级市场盘中最高价 (HK$),113,113,113
+First trading day low (HK$),EB,allotment_external,HKD,首日上市二级市场盘中最低价 (HK$),113,113,113
+First trading day volume (shares),EC,allotment_external,shares,首日上市二级市场全天成交量（股）,113,113,113
+First-day flipping ratio (%),ED,allotment_external,percent,首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说）,113,113,113
+First trading day turnover (HK$),EE,allotment_external,HKD,首日上市二级市场全天成交金额 (HK$),106,106,113
+Offer mechanism,EF,allotment_external,,适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B）,110,110,113
+Applicable IPO rules / transition basis,EG,allotment_external,,适用之上市规则过渡基准（FINI 改革规则）,113,113,113
+Company Chinese Name,EH,prospectus,,Company Chinese Name,110,110,113
+Current listing status,EI,allotment_external,,当前挂牌存续状态,113,113,113
+1-month post-IPO close price (HK$),EJ,allotment_external,HKD,第20个交易日收盘价（窗口成熟后填报）,102,102,113
+1-month BHR from Day-1 close (%),EK,allotment_external,percent,由首日收盘至第20个交易日的买入持有收益率,102,102,113
+1-month total return from offer price (%),EL,allotment_external,percent,由发售价至第20个交易日的累计收益率,102,102,113
+1-month HSI return (%),EM,allotment_external,percent,同期恒生指数累计收益率,102,102,113
+1-month HSTECH return (%),EN,allotment_external,percent,同期恒生科技指数累计收益率,102,102,113
+1-month wealth relative vs HSI,EO,allotment_external,,一个月相对恒指财富比,102,102,113
+1-month wealth relative vs HSTECH,EP,allotment_external,,一个月相对恒生科技指数财富比,102,102,113
+1-month average daily turnover (HK$),EQ,allotment_external,HKD,上市后首20个交易日日均成交额,102,102,113
+6-month post-IPO close price (HK$),ER,allotment_external,HKD,六个月目标日后首个交易日收盘价（窗口成熟后填报）,37,37,113
+6-month BHR from Day-1 close (%),ES,allotment_external,percent,由首日收盘至六个月目标交易日的买入持有收益率,37,37,113
+6-month total return from offer price (%),ET,allotment_external,percent,由发售价至六个月目标交易日的累计收益率,37,37,113
+6-month HSI return (%),EU,allotment_external,percent,同期恒生指数累计收益率,37,37,113
+6-month HSTECH return (%),EV,allotment_external,percent,同期恒生科技指数累计收益率,37,37,113
+6-month wealth relative vs HSI,EW,allotment_external,,六个月相对恒指财富比,37,37,113
+6-month wealth relative vs HSTECH,EX,allotment_external,,六个月相对恒生科技指数财富比,37,37,113
+6-month average daily turnover (HK$),EY,allotment_external,HKD,六个月目标日前20个交易日日均成交额,37,37,113
+Liquidity decay ratio (6M vs Day-1 turnover),EZ,allotment_external,,六个月窗口日均成交额相对首日成交额比率,37,37,113
+1-year post-IPO return (%) [Reserved],FA,allotment_external,percent,一年期收益率预留字段,0,0,113
+1-year wealth relative vs HSI [Reserved],FB,allotment_external,,一年期相对恒指财富比预留字段,0,0,113
+3-year post-IPO return (%) [Reserved],FC,allotment_external,percent,三年期收益率预留字段,0,0,113
+3-year wealth relative vs HSI [Reserved],FD,allotment_external,,三年期相对恒指财富比预留字段,0,0,113
+18A/18C regulatory milestone status,FE,allotment_external,,18A/18C 监管路径与商业化里程碑状态,113,113,113
+Stabilizing manager,FF,allotment_external,,官方指定价格稳定经理人名称,52,52,113
+Stabilization period end date,FG,allotment_external,,法定30天稳价期结束日期,31,31,113
+Stabilization purchases occurred,FH,allotment_external,,"稳价期内是否发生二级市场托单购买 (1=是, 0=否)",18,18,113
+Over-allocation shares,FI,allotment_external,,国际配售超额配售股份数量（股）,33,33,113
+Over-allocation (% of base offer),FJ,allotment_external,,超额配售股数占基础发售股份比例 (%),31,31,113
+Over-allotment option exercise date,FK,allotment_external,,超额配售权实际行使公告日期,91,91,113
+Shares issued under over-allotment option,FL,allotment_external,,超额配售权最终发行股份数量（股）,70,70,113
+Over-allotment exercise percentage (%),FM,allotment_external,percent,"超额配售权行使比例 (行使股数/超额配售上限, %)",73,73,113
+"Post-stabilization cliff return [-5, +5] (%)",FN,allotment_external,percent,"稳价期结束日前后[-5, +5]交易日累计收益率（断崖效应测试）",31,31,113
+"Post-stabilization 20-day return [0, +20] (%)",FO,allotment_external,percent,稳价期结束后20个交易日累计收益率 (%),31,31,113
+Post-stabilization volume decay ratio (%),FP,allotment_external,percent,稳价结束后20日均成交额相对稳价期内之比 (%),31,31,113
+Day-5 BHR from Day-1 close (%),FQ,allotment_external,percent,挂牌首周 (T+5交易日) 二级买入持有收益率 (%),106,106,113
+Day-5 wealth relative vs HSI,FR,allotment_external,,挂牌首周对标恒指财富相对比 (WR_HSI),106,106,113
+Day-20 BHR from Day-1 close (%),FS,allotment_external,percent,首月 (T+20交易日) 二级买入持有收益率 (%),102,102,113
+Day-20 wealth relative vs HSI,FT,allotment_external,,首月对标恒指财富相对比 (WR_HSI),100,100,113
+3-month BHR from Day-1 close (%),FU,allotment_external,percent,首季 (T+63交易日) 二级买入持有收益率 (%),82,82,113
+3-month wealth relative vs HSI,FV,allotment_external,,首季对标恒指财富相对比 (WR_HSI),65,65,113
+3-month wealth relative vs HSTECH,FW,allotment_external,,首季对标恒科财富相对比 (WR_HSTECH),65,65,113
+3-month average daily turnover (HK$),FX,allotment_external,HKD,首季度日均成交金额 (港元),82,82,113
+Amihud illiquidity (6M mean),FY,allotment_external,,上市前6个月日均 Amihud (2002) 非流动性指标,27,27,113
+Zero-volume days count (first 6M),FZ,allotment_external,,上市前6个月零成交量交易日天数,27,27,113
+"Return volatility (first 6M daily std dev, %)",GA,allotment_external,,"上市前6个月日度收益率标准差 (波动率, %)",27,27,113
+"Maximum drawdown (first 6M, %)",GB,allotment_external,,上市前6个月二级市场最大回撤幅度 (%),27,27,113
+Controlling shareholder 6-month disposal lockup expiry date,GC,allotment_external,,控股股东首阶段6个月绝对禁售期满日,76,76,113
+Controlling shareholder 12-month cessation of control expiry date,GD,allotment_external,,控股股东次阶段12个月控制权锁定到期日,81,81,113
+"Cornerstone unlock CAR [-5, +5] (%)",GE,allotment_external,percent,"基石投资者解禁日前后[-5, +5]交易日累计超额收益 (CAR vs HSI)",25,25,113
+"Cornerstone unlock CAR [-20, +20] (%)",GF,allotment_external,percent,"基石投资者解禁日前后[-20, +20]交易日累计超额收益 (CAR vs HSI)",22,22,113
+Cornerstone unlock volume shock ratio,GG,allotment_external,,基石解禁后20日均换手额相对解禁前20日换手额之比,22,22,113
+Lead sponsor name,GH,allotment_external,,独家/联席牵头保荐人英文全称,106,106,113
+Joint sponsor count,GI,allotment_external,,"保荐人总家数 (独家=1, 联席=2+)",106,106,113
+Sponsor commercial bank affiliate flag,GJ,allotment_external,,"保荐人是否属于商业银行系金融机构 (1=是, 0=否)",106,106,113
+Underwriting base commission rate (%),GK,allotment_external,percent,承销基础佣金费率 (%),106,106,113
+Underwriting discretionary incentive fee rate (%),GL,allotment_external,percent,承销酌情奖励费率估算 (%),68,68,113
+Total underwriting fee rate (%),GM,allotment_external,percent,"承销总费率估算 (基础+奖励, %)",68,68,113
+Cornerstone investor count,GN,allotment_external,,基石投资者机构总家数,69,69,113
+Cornerstone state-owned presence flag,GO,allotment_external,,"基石投资者中是否包含国资/地方政府基金 (1=是, 0=否)",106,106,113
+Crossover fund presence flag,GP,allotment_external,,"是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否)",106,106,113
+Pre-IPO institutional investor count,GQ,allotment_external,,主要 Pre-IPO 投资机构总数,106,106,113
+Pre-IPO state-owned backing flag,GR,allotment_external,,"Pre-IPO 股东中是否包含国资机构 (1=是, 0=否)",106,106,113
+FINI digital settlement regime,GS,allotment_external,,结算监管体制 (POST_FINI / PRE_FINI),113,113,113
+2025 pricing reform regime,GT,allotment_external,,发售与定价机制改革体制 (POST_2025_REFORM / PRE_2025_REFORM),113,113,113

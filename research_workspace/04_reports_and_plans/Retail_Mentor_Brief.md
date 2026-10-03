@@ -1,0 +1,1 @@
+../../docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md

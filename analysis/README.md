@@ -48,6 +48,7 @@ existing research column names and definitions.
 
 | Script | Output |
 |---|---|
+| `retail_2026_report.py` | `out/retail_2026_report/`: descriptive tables, direct workbook coverage for all 202 fields, data meanings and research uses; generates the English [LaTeX report](../docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) and mentor draft without simulation |
 | `basic_statistics_2026.py` | `out/basic_statistics/`: 202-field coverage, core descriptive statistics, quarter/month/route/demand groups and pairwise Spearman correlations; no regressions or hypothesis tests |
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |
 | `module_b_underpricing_regression.py` | `out/module_b/`: hypotheses, nested regressions, robustness, time-cluster inference, coefficient chart, sample selection |
@@ -78,6 +79,15 @@ The active plan starts with basic statistics and selects a few topics; the advan
 
 
 ## Focused retail research — 3 October 2026
+
+The latest [mentor brief](../docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md) and [source reassessment](../docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) resolve 2649's lot size to 500 and confirm 3355's Pool B rules using official clarifications. They use a source-bound overlay, exact expectations and no simulation. The earlier frozen inputs and distribution outputs remain historical snapshots. This opt-in follow-up is separate from the study registry:
+
+```bash
+.venv/bin/python tools/audit_retail_sources_2026.py
+.venv/bin/python analysis/retail_evidence_brief_2026.py
+```
+
+Raw PDFs are needed at the paths in the follow-up source manifest. Tables are in `out/retail_evidence_brief/`; this source/analysis follow-up changes no workbooks or whole-payload pipeline approvals. The separate 19-issuer JSON repair has its own scoped source review. The pipeline skill handles collection/evidence only; this module handles empirical analysis.
 
 The English [consolidated report](../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) and [implementation notes](../docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) describe the current study.
 

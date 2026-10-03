@@ -1,0 +1,115 @@
+{
+  "code": "9976.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1675,
+      "page": 7,
+      "quote": "The placees in the International Offering include the following: \nCornerstone Investors",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 40.32,
+      "page": 5,
+      "quote": "Subscription level\n40.32 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 36285,
+      "page": 5,
+      "quote": "Number of valid applications\n36,285",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 105146500,
+      "page": 20,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, 36,285 valid applications \nmade by the public will be conditionally allocated on the basis set out below:",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 40.32 times",
+      "page": 5,
+      "quote": "Subscription level\n40.32 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "prospectus",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "07/09/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**07/09/2026 21:39**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 29989450,
+      "page": 3,
+      "quote": "Number of Offer Shares (taking into account the full exercise \nof the Offer Size Adjustment Option and before exercise of \nthe Over-allotment Option)\n29,989,450",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2607800,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering\n2,607,800",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 27381650,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering (taking into \naccount the full exercise of the Offer Size Adjustment Option \nand before exercise of the Over-allotment Option)\n27,381,650",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": "NaN",
+      "page": null,
+      "quote": "绿鞋窗口尚未结束，无法确定",
+      "source": "greenshoe",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; Number of Offer Shares reallocated from the International Offering: 0; Final HK Public Offer shares: 2,607,800",
+      "page": 5,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 6803200000.0,
+      "page": 4,
+      "quote": "Net proceeds\nHK,803.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0652,
+      "page": 31,
+      "quote": "the total market value of the H Shares to be held by the public is expected to be approximately \nHK,077.5 million, calculated based on the final Offer Price of HK.00",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 459657599,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (taking into account the \nfull exercise of the Offer Size Adjustment Option and before \nexercise of the Over-allotment Option)\n459,657,599",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0543,
+      "page": 31,
+      "quote": "As such, H Shares held by the Cornerstone Investors upon the Listing \nshall not be counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float = Offer Shares excluding Shares held by Cornerstone Investors (6-month lock-up); denominator = total issued Shares upon Listing = col_CZ",
+      "page": 31,
+      "quote": "Each of the Cornerstone Investors has agreed to a lock-up period of six months following and \nincluding the Listing Date.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 459657599,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (taking into account the \nfull exercise of the Offer Size Adjustment Option and before \nexercise of the Over-allotment Option)\n459,657,599",
+      "confidence": "high"
+    }
+  }
+}

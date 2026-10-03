@@ -2,6 +2,9 @@
 
 | Report | Status |
 |---|---|
+| [2026 comprehensive report](HK_IPO_2026_COMPREHENSIVE_REPORT.tex) / [text](HK_IPO_2026_COMPREHENSIVE_REPORT.md) | English report with compact LaTeX layout, sample statistics, uses of the 202 Excel fields, retail returns and a mentor draft |
+| [Mentor discussion draft](RETAIL_MENTOR_BRIEF_2026-10-03.md) | Latest source-corrected one-lot results; gross baseline, deterministic fee/quarter/winner sensitivity; no simulation |
+| [Evidence assessment and exclusions](RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) | 2649/3355 official corrections, 19 issuer totals, unresolved provenance and exclusion results |
 | [Retail IPO Applications in Hong Kong](EMPIRICAL_RESEARCH_REPORT_2026.md) | Current English empirical report; cutoff 30 September 2026 |
 | [Retail Research Implementation](RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) | Scope, reproduction and limitations |
 | [Earlier progress report PDF](HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX](HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) | Historical exported snapshot; latest estimates are in the current report |

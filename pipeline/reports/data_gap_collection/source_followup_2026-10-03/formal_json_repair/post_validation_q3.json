@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "target": "allot",
+  "expected_codes": [
+    "0668.HK",
+    "2667.HK",
+    "6880.HK",
+    "7656.HK",
+    "7687.HK",
+    "9971.HK",
+    "0537.HK",
+    "1377.HK",
+    "1770.HK",
+    "2475.HK",
+    "2797.HK",
+    "3752.HK",
+    "6951.HK",
+    "2249.HK",
+    "6745.HK",
+    "3308.HK",
+    "2261.HK",
+    "3223.HK",
+    "0625.HK",
+    "9615.HK",
+    "2041.HK",
+    "9976.HK",
+    "3231.HK",
+    "6727.HK",
+    "9856.HK",
+    "3228.HK",
+    "3757.HK",
+    "6731.HK",
+    "9607.HK",
+    "6802.HK"
+  ],
+  "records": [
+    {
+      "code": "2667.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2667.json",
+      "hash": "288703d932c36dd711369b0281ab858939273e00e4cce67ac8849735e6a9b46c",
+      "json_sha256": "c00a17807f3dc4dd2f0eeaacb05b9392c516e84017f1fb66296b885e5cfbbd11",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "6880.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6880.json",
+      "hash": "2808813827558fdcf3a98378dc12c721f47a80f003b63aed889f9a4e07152543",
+      "json_sha256": "5282dcdbc4e0abb377732582f041625da0c8f718dce79000ed6bdfad0c210aef",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ"
+      ],
+      "errors": []
+    },
+    {
+      "code": "7656.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB7656.json",
+      "hash": "d5940321754d5c0d7382449634f671f4d62f7b1cd913e0bf22e8429174338e66",
+      "json_sha256": "5285265f24ca47171868af8341918fdb8fccd15a8f82c78c7bd448e17fcf801f",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ"
+      ],
+      "errors": []
+    },
+    {
+      "code": "7687.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB7687.json",
+      "hash": "b93df3981659221eee9bc80bde31053ff4e547115dc139a61c48ffc7d98289c9",
+      "json_sha256": "e5f369c041cda0d861612cd40a245e94d12b6603fe50a8c494dfffa849820fe4",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "9971.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9971.json",
+      "hash": "ba04e8956b2bf73553caa8efb27a6c581d7e6cae3f0a95f6b263f49f0c97eddd",
+      "json_sha256": "c2dccd874740987fb7f2fc9449aa179bbf92660d529ffa34b1fa124413f5df5b",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "1377.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB1377.json",
+      "hash": "4ebc0e0225401480b20ada8512d9d31565ff0721db3ea9735a0e13ae2fc653fc",
+      "json_sha256": "47df486dcb6ef66f8bea5280736b7487ecfeff24ff08cee1ed49a8f0aed921a9",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "1770.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB1770.json",
+      "hash": "a8aa11313e6a9c75809b768dfe15d91c424f45715461e036c390a304fd9d43c7",
+      "json_sha256": "44f162ccf66075e31c5e5cd5e4a38c2a3ff7dcc8a6cb46ce627cbf57af3d18cb",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "2475.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2475.json",
+      "hash": "64a02cba0052542ccc6a7a6d77f7726d74ec863b581f354f298e82da24056572",
+      "json_sha256": "f59c6a30a618c97bf9d70f576a9c981f95e021ed20bf446fa5ef2bba7ba19bb9",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "2797.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2797.json",
+      "hash": "8983b6a24d9d2329b05fb1984195dfd7d2c2925445aa52c79de6d1c86691e0c5",
+      "json_sha256": "cf9a814d55f5b3f8b91c136bb374c3b8596d386f04a84112819bc4140a4879b2",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "3752.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3752.json",
+      "hash": "ffcaee2791643ca46a9d00eff974eb5b53d19fc0ab5d59709a4de94fb011674a",
+      "json_sha256": "4814fd9e76d278296289431692882eb1eeaec75e6dc3eabaed4263d39e84ad94",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ"
+      ],
+      "errors": []
+    },
+    {
+      "code": "6951.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6951.json",
+      "hash": "96aecf9d32597dc7fcbf690a4e08680a22e3c71ddb50935e7d6feb44f02c6bfe",
+      "json_sha256": "5d1caf71e92c6b5451c83372f837072918243dcb00d3e63035f10eed1eae9e90",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "2249.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2249.json",
+      "hash": "76c72bbf9d77b13b14ea753c2d1659f523b7498dfa45462f4b6dfa6a27e1d2ab",
+      "json_sha256": "6226d22401ed25b36c2a3627a7e4b4322fdfa7439dd6607b4d42a616a2f402a0",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "6745.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6745.json",
+      "hash": "d3b776f62ef3fc3e54416cde206f4df44f91c683b0392facb2848f0dde128c03",
+      "json_sha256": "0f6aae7bdac0de99ad303e53a42d35704d6b369db8f5e115c13dacf73e140224",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "9976.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB9976.json",
+      "hash": "74e8bb23a345c2ccd7618a20293494474834292802077765f1176e1010ed2ba9",
+      "json_sha256": "af084c776030fc05b7dc2b35c43b6b554ac15ba64c59d7c65cd954af7b092ada",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ",
+        "col_CV"
+      ],
+      "errors": []
+    }
+  ],
+  "missing_files": [
+    "0668.HK",
+    "0537.HK",
+    "3308.HK",
+    "2261.HK",
+    "3223.HK",
+    "0625.HK",
+    "9615.HK",
+    "2041.HK",
+    "3231.HK",
+    "6727.HK",
+    "9856.HK",
+    "3228.HK",
+    "3757.HK",
+    "6731.HK",
+    "9607.HK",
+    "6802.HK"
+  ],
+  "pending_missing_fields": [
+    {
+      "code": "6880.HK",
+      "fields": [
+        "col_CQ"
+      ]
+    },
+    {
+      "code": "7656.HK",
+      "fields": [
+        "col_CQ"
+      ]
+    },
+    {
+      "code": "3752.HK",
+      "fields": [
+        "col_CQ"
+      ]
+    },
+    {
+      "code": "9976.HK",
+      "fields": [
+        "col_CQ",
+        "col_CV"
+      ]
+    }
+  ],
+  "errors": [],
+  "gate_pass": false
+}

@@ -1,0 +1,119 @@
+{
+  "code": "1392.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 121,
+      "quote": "On the basis that there are no cornerstone investors, 85,162,500 H Shares, which are to be newly issued under the Global Offering",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 7181.21,
+      "page": 4,
+      "quote": "Subscription level  \n7,181.21 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 252640,
+      "page": 4,
+      "quote": "No. of valid applications  \n252,640",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 84572151000,
+      "page": 13,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 7,181.21 times",
+      "page": 4,
+      "quote": "Subscription level  \n7,181.21 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$7.20; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "18/06/2026",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**18/06/2026 22:24**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 85162500,
+      "page": 3,
+      "quote": "Number of Offer Shares  \n85,162,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 8516500,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 8,516,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 76646000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Placing  \n76,646,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-06-22 起 45 天内共 4 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-08-06 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; No. of Offer Shares reallocated from the International Placing: 0",
+      "page": 4,
+      "quote": "Claw-back triggered  \nN/A  \nNo. of Offer Shares initially available under the Hong Kong Public \nOffering  \n8,516,500 H Shares \nNo. of Offer Shares reallocated from the International Placing \n0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 536830000,
+      "page": 3,
+      "quote": "Net proceeds  \nHK$536.83 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3788,
+      "page": 18,
+      "quote": "an aggregate of 293,250,340 H Shares, representing approximately 37.88% of the total number of shares in the class to which H Shares of our Company belong will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 774208420,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing  \n774,208,420",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.11,
+      "page": null,
+      "quote": "公式：(col_CS 85,162,500 − col_CK 0.0000×col_CS) ÷ col_CZ 774,208,420 = 0.1100；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 85,162,500 − col_CK 0.0000×col_CS) ÷ col_CZ 774,208,420 = 0.1100；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 774208420,
+      "page": 3,
+      "quote": "公式：(col_CS 85,162,500 − col_CK 0.0000×col_CS) ÷ col_CZ 774,208,420 = 0.1100；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

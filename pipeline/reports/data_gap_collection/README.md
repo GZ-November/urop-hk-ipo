@@ -1,5 +1,7 @@
 # 2026 Data-Gap Collection and Evidence Ledger
 
+Latest scoped [source follow-up](../../../docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md): 2649's official correction confirms a 500-share lot; 3355's official clarification confirms all ten Pool B guarantees; 763 PDF operand pairs support the 19 current workbook/master totals. Fourteen old rounded-ratio formulas reproduce, two have additional arithmetic discrepancies (6880/6951), one case is only compatible with rounding, and two error mechanisms are unrecorded. The [19 formal extraction totals are now repaired](source_followup_2026-10-03/formal_json_repair/README.md), with independent source review scoped to `col_CO`. Original JSON snapshots and frozen inputs/reviews are preserved; whole-payload gate approval has not been renewed. Earlier qualifications below describe the pre-follow-up baseline.
+
 Population: 113 ordinary Main Board IPOs. Observation cutoff: 30 September 2026. This ledger records the existing data baseline and the subsequent read-time safeguards; it is not a new independent source review.
 
 ## Available artifacts

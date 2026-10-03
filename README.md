@@ -60,6 +60,7 @@ The workspace links to canonical files; it does not create another dataset. Each
 | Start with coverage and basic statistics | [Basic report](analysis/out/basic_statistics/basic_statistics.md) / [Data gaps](docs/DATA_GAPS_2026.md) |
 | Read first-day return results | [Descriptive tables](analysis/out/module_a/table1_stylized_facts.md) / [Regressions](analysis/out/module_b/table4_regressions.md) |
 | Read retail allocation results | [Retail returns and cornerstone sensitivity](analysis/out/research_frontier/research.md) |
+| Discuss the retail study with a supervisor | [Latest mentor brief](docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md) / [Source reassessment and exclusions](docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) |
 | Read A+H or margin results | [A+H prices](analysis/out/ah_anchor/ah_anchor.md) / [Margin financing](analysis/out/margin/margin.md) |
 | Continue the research | [Current plan](docs/RESEARCH_PLAN_2026.md) / [Research start](docs/RESEARCH_START.md) |
 | Understand the code | [Architecture guide](docs/ARCHITECTURE.md) / [Analysis guide](analysis/README.md) |

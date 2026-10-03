@@ -201,6 +201,18 @@
     {
       "name": "05_analysis_results/14_retail_profit_distributions",
       "source": "analysis/out/retail_distribution"
+    },
+    {
+      "name": "04_reports_and_plans/Retail_Mentor_Brief.md",
+      "source": "docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md"
+    },
+    {
+      "name": "04_reports_and_plans/Retail_Evidence_Assessment.md",
+      "source": "docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md"
+    },
+    {
+      "name": "05_analysis_results/15_retail_evidence_brief",
+      "source": "analysis/out/retail_evidence_brief"
     }
   ]
 }

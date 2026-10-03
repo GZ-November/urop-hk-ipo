@@ -1,5 +1,7 @@
 # Retail IPO Applications in Hong Kong: Allocation, Fees and Profit Distributions
 
+Source follow-up on 3 October 2026 supersedes this snapshot's unresolved 2649 lot-size and 3355 Pool B qualifications. The [mentor brief](RETAIL_MENTOR_BRIEF_2026-10-03.md) uses the corrected 113-IPO one-lot sample and no simulation; the [evidence assessment](RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) records official clarifications and the 19 total corrections. The earlier simulated results below retain their original definitions.
+
 Updated 3 October 2026. Observation cutoff: 30 September 2026.
 
 ## Research scope and principal finding

@@ -4,6 +4,9 @@ Start with [Research Start](RESEARCH_START.md) for the input map and research sc
 
 | Category | Entry | Purpose |
 |---|---|---|
+| Comprehensive 2026 report | [LaTeX](reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) / [Text](reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md) | Data description, workbook field meanings and research uses, return tables and mentor draft |
+| Mentor discussion | [Retail mentor brief](reports/RETAIL_MENTOR_BRIEF_2026-10-03.md) | Source-corrected one-lot expectations, covariance, fee/quarter/winner sensitivity; no simulation |
+| Source reassessment | [Retail evidence assessment](reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) | Official clarifications, 19 application totals and exclusion results |
 | Current English empirical report | [Retail IPO Applications](reports/EMPIRICAL_RESEARCH_REPORT_2026.md) | Allocation, fees, profit distributions and supporting demand analysis |
 | Implementation and replication | [Retail Research Implementation](reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) | Completed work, reproduction commands and limitations |
 | Earlier English progress report | [PDF](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) | Exported historical analysis snapshot |
