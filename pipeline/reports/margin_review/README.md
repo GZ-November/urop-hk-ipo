@@ -1,6 +1,6 @@
 # 来源与修正材料索引
 
-本目录保存 2026-09-30 集成复核的证据记录。研究说明见 [集成报告](../../../docs/AGY_INTEGRATION_2026-09-30.md)，当前估计见 [A+H 输出](../../../analysis/out/ah_anchor/ah_anchor.md) 与 [孖展输出](../../../analysis/out/margin/margin.md)。
+本目录保存 2026-09-30 集成复核的证据记录。研究说明见 [集成报告](../../../docs/archive/reviews-2026-09-30/AGY_INTEGRATION_2026-09-30.md)，当前估计见 [A+H 输出](../../../analysis/out/ah_anchor/ah_anchor.md) 与 [孖展输出](../../../analysis/out/margin/margin.md)。
 
 | 文件 | 状态与用途 |
 |---|---|

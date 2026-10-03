@@ -56,7 +56,7 @@ The workspace links to canonical files; it does not create another dataset. Each
 | Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
 | Use the combined data | [All-years master CSV](pipeline/exports/HKIPO-MB-MASTER_clean.csv) |
 | Understand fields and units | [Variable registry](pipeline/registry/HKIPO_Variable_Registry.yaml) / [Q3 codebook](pipeline/codebooks/HKIPO_2026Q3_Codebook.md) |
-| Read the English progress report | [PDF snapshot](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX source](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
+| Read the latest comprehensive report | [LaTeX source](docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) / [Text report](docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md) |
 | Start with coverage and basic statistics | [Basic report](analysis/out/basic_statistics/basic_statistics.md) / [Data gaps](docs/DATA_GAPS_2026.md) |
 | Read first-day return results | [Descriptive tables](analysis/out/module_a/table1_stylized_facts.md) / [Regressions](analysis/out/module_b/table4_regressions.md) |
 | Read retail allocation results | [Retail returns and cornerstone sensitivity](analysis/out/research_frontier/research.md) |
@@ -81,7 +81,7 @@ urop-hk-ipo/
 |   +-- 04_reports_and_plans/    Research report and next steps
 |   +-- 05_analysis_results/     Tables and figures by topic
 |   +-- 06_sources_and_audits/   Evidence and audit records
-|   `-- 07_historical_data/     Stored 2025 data
+|   `-- 07_historical_data/     Stored 2025 data and earlier reports
 |
 +-- analysis/                 RESEARCH CODE
 |   +-- research_inputs.py       Data loading and sample selection
@@ -101,6 +101,10 @@ urop-hk-ipo/
 +-- config/                   Research workspace artifact catalog
 +-- tools/                    Workspace maintenance
 +-- docs/                     Research plans, architecture, reports
+|   +-- reports/               Current research reports
+|   +-- archive/               Earlier reports and dated reviews
+|   +-- maintenance/           Cleanup and recovery records
+|   `-- literature/            Local reference papers
 +-- run.py                    One command entry point
 `-- Makefile                  Checks, refresh, and analysis commands
 ```
