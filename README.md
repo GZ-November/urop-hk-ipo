@@ -49,8 +49,14 @@ The workspace links to canonical files; it does not create another dataset. Each
 
 ## Open the data or read the results
 
+**Interactive dashboard:** double-click `Open Dashboard.command` (macOS), or open
+[dashboard/index.html](dashboard/index.html) in a browser. The English dashboard
+works offline with embedded data, interactive filters, company details, coverage
+and CSV downloads. See the [dashboard guide](dashboard/README.md) for refresh commands.
+
 | I want to... | Open this |
 |---|---|
+| Explore the data visually | [HK IPO Observatory](dashboard/index.html) / [Open guide](dashboard/README.md) |
 | Browse all research files locally | [Research Workspace](research_workspace/README.md) |
 | Open the latest Q3 workbook | [2026 Q3 Excel](pipeline/cohorts/HKIPO-MB2026Q3.xlsx) |
 | Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
