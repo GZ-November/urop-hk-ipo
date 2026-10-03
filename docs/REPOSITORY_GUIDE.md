@@ -11,7 +11,10 @@
 | 工作簿、导出、证据 | `pipeline/cohorts/`、`exports/`、`prospectus_pipeline/data/`、`out/` | 保留现行合同；人工采集须有来源；导出由 producer 生成 |
 | 表格与图 | `analysis/out/<module>/` | 由代码生成，避免手工修正文内数值 |
 | 研究设计与证据说明 | `docs/` | 更新 [文档索引](README.md)，标明样本、基准日期与结果链接 |
-| 被取代的数值稿 | `docs/archive/<reason>/` | 加历史说明；旧入口保留导航链接 |
+| 当前综合报告与导师短稿 | `docs/reports/` | 当前 LaTeX 与 Markdown 稿；配套表格链接到 `analysis/out/` |
+| 被取代的数值稿与历史检查 | `docs/archive/<reason>/` | 保留原结论并更新导航；与当前报告分开 |
+| 清理和恢复记录 | `docs/maintenance/` | 逐次记录移动、删除及核验；本地清单放 `pipeline/backups/` |
+| 文献副本 | `docs/literature/` | PDF 仅本地保存，说明文件受 Git 管理 |
 | 审计、修正与排除记录 | `pipeline/reports/` | 保留可追溯明细和观测截止日期 |
 | 待核实候选 | 如 `pipeline/reports/margin_review/*UNVERIFIED*` | 与正式来源 ledger 和分析输入隔离 |
 | skill | `.agents/skills/` | 项目版本受 Git 管理；修改时同步相关入口 |
@@ -41,6 +44,10 @@ git switch -c codex/your-research origin/main
 一个 checkout 同时只交给一个写入任务；不同 agent 的 Git 分支与工作簿写回不应共享同一工作区。保留旧分支、worktree 或本地候选直到确认无需恢复后再单独清理。
 
 ## 修改后的检查
+
+2026-10-03 的[本地清理记录](maintenance/PROJECT_CLEANUP_2026-10-03.md)列出已删除的缓存、已归档的历史运行、保留材料及恢复位置。带编号的副本只有在与原文件 SHA-256 完全一致时才直接删除；有差异的副本归档保留。
+
+2026-10-04 的[目录整理记录](maintenance/PROJECT_CLEANUP_2026-10-04.md)列出旧报告、历史检查和文献的新位置。日常查看用 `research_workspace/` 的七个分类目录；每个目录都有简短索引。生成器依赖的正式数据路径保持稳定。
 
 文档变更检查链接与 `git diff --check`。代码或数据口径变化运行相关回归测试及 `make check-code`；分析行为变化重新生成对应输出。行情刷新、证据审计和代码测试各有不同覆盖，不能用其中一项宣称所有数据已核实。
 

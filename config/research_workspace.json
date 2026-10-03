@@ -71,12 +71,12 @@
       "source": "docs/RESEARCH_DESIGN_2026.md"
     },
     {
-      "name": "04_reports_and_plans/Research_Progress_Report.pdf",
-      "source": "docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf"
+      "name": "07_historical_data/Earlier_Research_Progress_Report.pdf",
+      "source": "docs/archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf"
     },
     {
-      "name": "04_reports_and_plans/Research_Progress_Report.tex",
-      "source": "docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex"
+      "name": "07_historical_data/Earlier_Research_Progress_Report.tex",
+      "source": "docs/archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex"
     },
     {
       "name": "04_reports_and_plans/Research_Start.md",
@@ -181,6 +181,54 @@
     {
       "name": "06_sources_and_audits/Data_Gap_Collection",
       "source": "pipeline/reports/data_gap_collection"
+    },
+    {
+      "name": "04_reports_and_plans/Current_Empirical_Research_Report.md",
+      "source": "docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md"
+    },
+    {
+      "name": "04_reports_and_plans/Retail_Research_Implementation.md",
+      "source": "docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md"
+    },
+    {
+      "name": "05_analysis_results/12_subscription_demand",
+      "source": "analysis/out/subscription_heat"
+    },
+    {
+      "name": "05_analysis_results/13_retail_allocation_profit",
+      "source": "analysis/out/retail_profit"
+    },
+    {
+      "name": "05_analysis_results/14_retail_profit_distributions",
+      "source": "analysis/out/retail_distribution"
+    },
+    {
+      "name": "04_reports_and_plans/Retail_Mentor_Brief.md",
+      "source": "docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md"
+    },
+    {
+      "name": "04_reports_and_plans/Retail_Evidence_Assessment.md",
+      "source": "docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md"
+    },
+    {
+      "name": "05_analysis_results/15_retail_evidence_brief",
+      "source": "analysis/out/retail_evidence_brief"
+    },
+    {
+      "name": "04_reports_and_plans/2026_Comprehensive_Report.tex",
+      "source": "docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex"
+    },
+    {
+      "name": "04_reports_and_plans/2026_Comprehensive_Report.md",
+      "source": "docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md"
+    },
+    {
+      "name": "05_analysis_results/16_comprehensive_report_tables",
+      "source": "analysis/out/retail_2026_report"
+    },
+    {
+      "name": "07_historical_data/Reviews_2026_09_30",
+      "source": "docs/archive/reviews-2026-09-30"
     }
   ]
 }

@@ -85,6 +85,7 @@ pipeline/cohorts/backups/
 
 # 文献 PDF
 Survey Paper/
+docs/literature/*.pdf
 
 # Local pre-repair workbook/export snapshots; canonical predecessors are in Git.
 pipeline/reports/data_gap_collection/6872_repair/*_before.xlsx

@@ -55,10 +55,10 @@ def main() -> None:
     })
     frame["demand_group"] = pd.qcut(frame["subscription_x"], 3, labels=["Low demand", "Middle demand", "High demand"])
     frame.to_csv(OUT / "sample.csv", index=False)
-    units = {"ir_pct": "首日收益（%）", "base_proceeds_hkd_mn": "基础发售金额（百万港元）",
-             "subscription_x": "公开认购倍数（倍）", "applicants": "申请人数（人）", "age_years": "企业年龄（年）",
-             "cornerstone_pct": "基石份额（%）", "allocation_pct": "发行人平均配售率（%）",
-             "application_gross_return_pct": "申请资金毛收益（%，发行人平均配售情景）"}
+    units = {"ir_pct": "First-day return (%)", "base_proceeds_hkd_mn": "Base offer proceeds (HK$ million)",
+             "subscription_x": "Public subscription multiple (times)", "applicants": "Public applicants (persons)", "age_years": "Firm age (years)",
+             "cornerstone_pct": "Cornerstone allocation (%)", "allocation_pct": "Issuer-average allocation rate (%)",
+             "application_gross_return_pct": "Application gross return (%, proportional allocation scenario)"}
     summary = frame[list(units)].describe(percentiles=[.25, .5, .75]).T.reset_index(names="variable")
     summary["variable"] = summary["variable"].map(units)
     summary.to_csv(OUT / "summary.csv", index=False)
@@ -94,49 +94,46 @@ def main() -> None:
     missing_rows = [{"field": field, "code": row["Stock Code"], "cohort": row["cohort"]}
                     for field in core_fields for _, row in sample.loc[sample[field].isna()].iterrows()]
     pd.DataFrame(missing_rows, columns=["field", "code", "cohort"]).to_csv(OUT / "core_missing_records.csv", index=False)
-    report = f"""# 2026 IPO基础统计与数据覆盖
+    report = f"""# 2026 IPO Basic Statistics and Data Coverage
 
-生成样本：{len(sample)}家，上市日期{sample.listing_date.min().date()}至{sample.listing_date.max().date()}；截至{AS_OF.date()}。仅使用2026主板普通IPO。
-此报告只做描述和相关性，不运行回归或显著性检验。原始价格和当前单位修复沿用现有研究输入。
+Sample: {len(sample)} ordinary Main Board IPOs listed from {sample.listing_date.min().date()} to {sample.listing_date.max().date()}; observation cutoff {AS_OF.date()}. Only actual 2026 listing dates are selected.
+This report contains descriptive statistics and rank correlations, without regressions or significance tests. It retains the current raw-price and security-unit corrections.
 
-## 1. 核心字段覆盖
+## 1. Core-field coverage
 
 {markdown(selected)}
 
-覆盖表示master中有值，不证明原始披露已独立核实。完整202字段清单见field_coverage.csv；核心字段缺失发行人见core_missing_records.csv。
-固定价格发售不适用区间修价；未成熟收益、未披露、未采集和不适用必须分别判断，不能将缺失全部补0。
-基础发售金额=P0×基础发售证券数量，单位沿用当前发行股份／HDR修复；不等同于含绿鞋募资或发行人净所得。
+Coverage means a value is stored in the master, not that the original disclosure has been independently verified. See field_coverage.csv for all registered fields and core_missing_records.csv for issuers with missing core inputs. Unmatured, undisclosed, uncollected and inapplicable values must be distinguished; missing values are not automatically zero. Fixed-price offers have no within-range revision.
 
-## 2. 描述统计
+Base offer proceeds equal offer price times base offered security units. Share and HDR units follow the current repairs; this measure is not proceeds including greenshoe exercise or issuer net proceeds.
+
+## 2. Descriptive statistics
 
 {markdown(summary)}
 
-申请资金毛收益=发行人平均配售率×首日收益；这是比例获配情景，不是一手中签率、实际账户收益或扣费净收益。
-超过1或非正的配售率保留缺失，不截为1。用均值与中位数共同观察极端值，不能只报平均收益。
+Application gross return equals issuer-average allocation rate times first-day return. This is a proportional-allocation scenario, not a one-lot ballot probability, actual account outcome or fee-adjusted profit. Here the aggregate rate retains the legacy final-public/applications denominator; the tier-based retail study separately excludes employee reserved allotments. Ratios above one or nonpositive ratios remain missing rather than being capped. Means and medians are reported together to show tail sensitivity.
 
-## 3. 季度与上市路径
+## 3. Quarters and listing routes
 
 {markdown(groups.loc[groups.grouping.isin(['quarter', 'route']), ['group', 'ir_n', 'mean_ir_pct', 'median_ir_pct', 'break_share_pct']])}
 
-路径按18A、18C、A+H、普通路径互斥归类；独立A+H标记可以与18C重叠。月份完整表见group_comparisons.csv。
-每个单元格的收益样本数单列；很小的组只描述，不据此概括总体。
+Routes are mutually exclusive in the order 18A, 18C, A+H and conventional. The separate A+H flag can overlap 18C. Each return cell has its own valid N. Small groups are descriptive; the complete monthly table is in group_comparisons.csv.
 
-## 4. 认购热度三等分
+## 4. Subscription-demand terciles
 
 {markdown(groups.loc[groups.grouping.eq('demand_group'), ['group', 'ir_n', 'mean_ir_pct', 'median_ir_pct', 'break_share_pct', 'mean_application_gross_return_pct']])}
 
-三组由当前样本的认购倍数分位点划分，不是外部制度阈值。差异可能同时来自规模、上市月份及上市路径。
+Groups use subscription quantiles in the observed sample, not external regulatory thresholds. Differences may also reflect offer size, listing month and route composition.
 
-## 5. 与首日收益的简单秩相关
+## 5. Rank correlations with first-day returns
 
 {markdown(correlations)}
 
-Spearman系数只表示排名关系，不能解释为因果效应。每对变量使用自身有限样本，不与回归共同样本混用。
+Spearman correlations describe rankings and do not identify causal effects. Each pair uses its own finite sample, separately from regression complete-case samples.
 
-## 6. 下一步
+## 6. Current research
 
-先检查分布、分组和异常发行人，再深入认购热度与零售获配收益。A+H锚专题可作为独立的小样本方向。
-缺什么数据、哪些公开可得及近期不做的选题见docs/RESEARCH_PLAN_2026.md；具体采集表见docs/DATA_GAPS_2026.md。
+See the [English empirical report](../../../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) for tier-based retail profits and demand robustness; see [the research plan](../../../docs/RESEARCH_PLAN_2026.md) and [data gaps](../../../docs/DATA_GAPS_2026.md) for scope and collection priorities.
 """
     (OUT / "basic_statistics.md").write_text(report, encoding="utf-8")
     manifest = {"as_of": str(AS_OF.date()), "sample_n": len(sample), "registered_fields": len(coverage),

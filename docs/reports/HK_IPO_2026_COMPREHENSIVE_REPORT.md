@@ -1,0 +1,317 @@
+# Hong Kong IPOs in 2026
+
+Data description and retail application returns. Report for mentor discussion. Prepared on 3 October 2026. Revised on 4 October 2026. Data cutoff: 30 September 2026.
+
+### Main result
+
+We study 113 ordinary Main Board IPOs in the project database. These IPOs listed from 2 January to 30 September 2026. The mean first-day return is 53.15%. The mean gross application return for one lot is 2.08%. The difference is 51.07 percentage points.
+
+The allocation rate and the first-day return have a negative covariance. This covariance reduces the application return by 3.65 percentage points. It offsets 63.6% of the product of the two means. This result describes the sample. It does not show a causal effect.
+
+### Table 1  Sample scope and main results
+
+| Measure | Result |
+| --- | --- |
+| Listing dates | 2 January to 30 September 2026 |
+| Sample size | 113 IPOs: Q1 38, Q2 45, Q3 30 |
+| Total base offer proceeds | HK$359.20 billion |
+| First-day return: mean / median | 53.15% / 14.82% |
+| Gross application return: mean / median | 2.08% / 0.59% |
+| Expected gross profit: mean / median | HK$91.77 / HK$27.00 |
+| Mean expected allocation rate for one lot | 10.78% |
+
+### How to read this report
+
+The sample covers Q1 to Q3. It does not cover the full year. Each IPO has equal weight. We use the first-day closing price. The base result excludes all costs.
+
+An application return is a calculated expectation. It is not an observed account return. HK$88 is an assumed fee for a sensitivity check. We do not use a portfolio simulation.
+
+The database contains the research sample. This report does not certify coverage of every type of new listing on the exchange.
+
+## The 2026 sample
+
+### Table 2  Listings and base offer proceeds by month
+
+| Month | N | Proceeds HK$bn | Mean return | Median return |
+| --- | --- | --- | --- | --- |
+| 2026-01 | 12 | 37.62 | 35.98% | 28.45% |
+| 2026-02 | 11 | 45.87 | 41.48% | 11.56% |
+| 2026-03 | 15 | 17.54 | 26.58% | 8.24% |
+| 2026-04 | 8 | 37.78 | 126.46% | 89.48% |
+| 2026-05 | 13 | 13.36 | 98.11% | 91.73% |
+| 2026-06 | 24 | 42.27 | 78.52% | 45.90% |
+| 2026-07 | 16 | 115.35 | 6.96% | 0.00% |
+| 2026-08 | 2 | 3.73 | 32.05% | 32.05% |
+| 2026-09 | 12 | 45.67 | 31.05% | -0.57% |
+
+Base offer proceeds equal the offer price times the base offer quantity. They exclude the over-allotment option. They are not proceeds after issue costs. We do not add share quantities to HDR quantities.
+
+### Table 3  Listing route groups
+
+| Route | N | Sample share | First-day mean | Application mean |
+| --- | --- | --- | --- | --- |
+| Conventional | 47 | 41.6% | 74.48% | 2.04% |
+| A+H | 36 | 31.9% | 10.18% | 0.70% |
+| Chapter 18C | 19 | 16.8% | 66.53% | 4.94% |
+| Chapter 18A | 11 | 9.7% | 79.58% | 1.87% |
+
+The route groups do not overlap. The project assigns Chapter 18A and Chapter 18C before it assigns A+H. There are 38 issuers with an A+H flag. Two also have a Chapter 18C flag. Thus, the separate A+H route group has 36 issuers.
+
+## Industry and issuer characteristics
+
+### Table 4  Industry groups
+
+| Industry | N | Sample share | First-day mean | Application mean |
+| --- | --- | --- | --- | --- |
+| Information technology | 49 | 43.4% | 62.00% | 3.30% |
+| Industrials | 24 | 21.2% | 29.89% | 0.99% |
+| Healthcare | 18 | 15.9% | 57.66% | 0.95% |
+| Consumer discretionary | 8 | 7.1% | 39.48% | -0.15% |
+| Materials | 6 | 5.3% | 7.91% | -2.28% |
+| Consumer staples | 6 | 5.3% | 80.28% | 1.80% |
+| Property and construction | 1 | 0.9% | 0.33% | 0.00% |
+| Financials | 1 | 0.9% | 367.95% | 36.79% |
+
+Industry groups use the stored HSICS 2026 code and the project classification table. All 113 codes have a group. Information technology accounts for 49 IPOs. Industrials account for 24 IPOs. Some groups have only one IPO. Their means do not show a general industry effect.
+
+### Table 5  Issuer characteristics
+
+| Characteristic | Yes | No | Unknown | Yes share of known |
+| --- | --- | --- | --- | --- |
+| A+H flag | 38 | 75 | 0 | 33.63% |
+| Weighted voting rights | 4 | 109 | 0 | 3.54% |
+| VC/PE backing | 87 | 19 | 7 | 82.08% |
+| Prior-year loss | 51 | 61 | 1 | 45.54% |
+
+The flags can overlap. Unknown flags remain unknown. We do not replace them with zero. The route groups on the previous page use a separate classification rule.
+
+Financial periods and currencies differ across issuers. We do not add prior-year profit values. The loss flag uses each issuer's recorded prior-year profit. It does not describe a common calendar-year accounting period.
+
+## Descriptive statistics
+
+### Table 6  Raw data without winsorization
+
+| Variable | N | Mean | SD | P25 | Median | P75 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Base proceeds (HK$m) | 113 | 3,178.72 | 5,975.64 | 717.21 | 1,233.13 | 3,677.44 |
+| Public subscription (times) | 113 | 1,985.19 | 2,482.09 | 174.12 | 1,073.37 | 2,730.73 |
+| Public applicants (count) | 113 | 154,730.20 | 94,449.62 | 66,692.00 | 153,878.00 | 207,986.00 |
+| Firm age (years) | 113 | 15.09 | 7.03 | 9.97 | 13.49 | 20.00 |
+| Cornerstone allocation (%) | 113 | 32.90 | 19.14 | 16.13 | 38.59 | 49.77 |
+| Unrestricted public holding (%) | 112 | 7.78 | 4.19 | 5.29 | 7.51 | 10.00 |
+| One-lot principal (HK$) | 113 | 6,771.01 | 7,076.84 | 3,280.00 | 4,400.00 | 6,988.00 |
+| One-lot allocation rate (%) | 113 | 10.78 | 21.87 | 2.00 | 3.00 | 8.00 |
+| First-day return (%) | 113 | 53.15 | 85.29 | 0.00 | 14.82 | 91.73 |
+| Gross application return (%) | 113 | 2.08 | 6.18 | 0.00 | 0.59 | 2.75 |
+| Expected gross profit (HK$) | 113 | 91.77 | 267.48 | 0.00 | 27.00 | 120.61 |
+| Liabilities / assets (%) | 111 | 93.35 | 121.39 | 32.27 | 51.47 | 81.34 |
+| Profit / assets (%) | 111 | -10.11 | 32.08 | -20.84 | 0.46 | 9.28 |
+| Sales growth (%) | 110 | 109.37 | 670.23 | 6.06 | 20.49 | 45.56 |
+| Pre-IPO institutional holding (%) | 94 | 30.99 | 25.95 | 3.65 | 30.88 | 53.49 |
+| Controller economic interest (%) | 110 | 36.96 | 17.03 | 26.75 | 35.17 | 46.80 |
+| Proceeds for debt repayment (%) | 112 | 1.40 | 4.48 | 0.00 | 0.00 | 0.00 |
+
+N is the number of known values. SD uses the N minus one denominator. P25 and P75 are the 25th and 75th percentiles. The underlying CSV also gives minimum and maximum values.
+
+First-day prices increased for 81 IPOs, did not change for 6, and decreased for 26. The share with a negative first-day return is 23.01%. The return range is -56.89% to 383.62%.
+
+The mean first-day return is much higher than the median. Large positive returns affect the mean. Public subscription also has a long upper tail. Its mean is 1,985.19 times, compared with a median of 1,073.37 times.
+
+The one-lot allocation rate uses the application tier for one lot. It differs from the average rate for all public applications. The sample includes one HDR issuer, 6228. We calculate its quantities in HDR units.
+
+A median expected profit is a median across IPO-specific expectations. It is not the median profit of actual investor accounts. Missing values remain missing.
+
+## What the collected Excel data can do
+
+The three workbooks contain 202 registered fields for 113 issuers. Eleven fields come from official listing records. Seventy-seven fields come from prospectuses. The other 114 fields contain allotment, market, and external data. A separate CSV lists coverage for every workbook field.
+
+The tables below explain the meaning and possible use of selected fields. N counts known analysis values out of 113. Each field has its own count. A filled cell is not proof of a correct source. Some missing cells are not applicable.
+
+### Table 7  Company and offer data
+
+| Data group | What it means | Known N | Possible research use |
+| --- | --- | --- | --- |
+| Identity and dates | Issuer names, listing dates, and industry identify the observation. | Dates: 113. Industry: 113. | Build cohorts. Join prices and event data. Control for time and industry. |
+| Offer price and structure | Price limits and offer quantities describe pricing and capital raised. | Upper price: 113. Lower price: 82. Final price: 113. | Study price revision and offer size. Treat fixed-price offers separately. |
+| Financial accounts | Assets, liabilities, revenue, and profit describe size, debt, growth, and profitability. | Assets: 111. Revenue: 113. Profit: 112. | Construct liability ratios, profit ratios, and sales growth. Compare issuer risk with pricing. |
+| Operations and cash | Research costs, customer concentration, cash flow, and capital spending describe operating risk. | R&D: 106. Customers: 99. Cash flow: 111. | Study innovation, cash needs, and customer risk. Align the financial periods first. |
+| Pre-IPO investors | Backing, ownership, holding time, and board seats describe institutional involvement. | VC/PE: 106. Holding: 94. Board seat: 95. | Compare pricing and later returns across backing groups. Separate investor selection from a causal effect. |
+| Control and governance | Controller ownership, voting rights, and WVR describe control rights. | Economic rights: 110. Voting rights: 111. WVR: 113. | Measure ownership and voting differences. Study governance and investor protection. |
+| Sponsors and issue costs | Sponsors, accountants, and commissions describe intermediaries and issue costs. | Sponsor: 112. Lead sponsor: 106. Base fee: 106. | Compare sponsor groups and underwriting costs. Treat reputation as an observed association. |
+| Cornerstone investors | Allocation and investor names describe demand commitments. Unlock dates describe later supply events. | Allocation: 113. Names: 95. Unlock date: 95. | Study commitments, available supply, and pricing. Separate final allotment from pre-pricing information. |
+
+Financial ratios use the recorded periods and definitions. Liabilities can exceed assets. The liability ratio can exceed 100%. Raw sales growth has large upper-tail values. Check period lengths, currencies, and units before comparisons. Do not mix annualized sales with unadjusted research costs.
+
+Underwriting fees are issuer costs. They are not the assumed applicant fee. A sponsor group can reflect issuer selection. These data can show an association without showing a sponsor effect.
+
+### Table 8  Demand and aftermarket data
+
+| Data group | What it means | Known N | Possible research use |
+| --- | --- | --- | --- |
+| Public demand and allocation | Applicants, applied quantity, and final tranches describe demand and supply. | Applicants: 113. Applied shares: 113. Public tranche: 113. | Calculate macro allocation rates. Link exact tier rules to application returns. Test the allocation-return relation. |
+| Public holding and free float | Public holding includes eligible holdings. Unrestricted holding measures available supply under the stored definition. | Public holding: 112. Unrestricted holding: 112. | Study liquidity and price pressure. Keep the denominator and locked holdings explicit. |
+| Market conditions | HSI returns, HIBOR, bank balances, and recent IPO counts describe conditions before the offer. | HSI: 113. HIBOR: 113. IPO count: 113. | Control for market returns, funding conditions, and offer waves. Use only information known at the test date. |
+| Regimes and offer rules | Mechanism and regime fields classify the offer and settlement setting. | Mechanism: 110. Rules: 113. FINI: 113. | Compare mechanisms when they differ. A constant regime flag cannot identify an effect within 2026. |
+| First-day trading | Opening and closing prices, volume, and turnover describe listing-day trading. | Close: 113. Volume: 113. Turnover: 106. | Study price discovery and trading intensity. The flipping ratio is a volume proxy, not investor-level selling. |
+| Later returns and liquidity | Later prices and index benchmarks separate the IPO jump from later trading returns. | One month: 102. Three months: 82. Six months: 37. | Calculate later returns from the first-day close. Use mature horizons and matched benchmark coverage. |
+| Stabilization and greenshoe | Purchases, option exercise, and end dates describe price support after listing. | Purchases: 18. End date: 31. Exercise rate: 113. | Study support and prices after support ends. These are later outcomes, not ex-ante pricing controls. |
+| Lockup events | Contract dates and event returns describe changes around investor unlock dates. | Controller date: 76. CAR 5: 25. CAR 20: 22. | Run an event study of price and volume changes. Require contract evidence and complete event windows. |
+
+The three-month raw return has 82 observations. Its HSI wealth relative has only 65 observations. Joint tests must use the matched sample. One-year and three-year reserved returns have no observations. Future or unknown returns must not become zero.
+
+HIBOR is a market funding measure. It is not an observed borrowing cost for an applicant. Later stabilization outcomes cannot explain pricing with information known before the offer.
+
+### Research that the current data support
+
+First, compare application returns across demand, offer size, and public-tranche groups. Second, study price revision with issuer finances, institutional backing, and cornerstone commitments. Third, test later returns and unlock events on separate mature samples. Use a common sample within each model. Report associations until a credible design identifies causality.
+
+## From first-day returns to application returns
+
+Let the offer price be P0 and the first-day closing price be P1. Let q be the requested quantity. Let E[A] be the expected allotted quantity. Let a be the allocation rate, and let r be the first-day return.
+
+$$
+r_i=\frac{P_{1i}}{P_{0i}}-1,\quad a_i=\frac{E[A_i]}{q_i},\quad B_i=q_iP_{0i},\quad G_i=E[A_i](P_{1i}-P_{0i}),\quad y_i=\frac{G_i}{B_i}=a_ir_i.
+$$
+
+B is the application principal. G is expected gross profit. y is the gross application return. The expected allotted quantity includes guaranteed quantities and additional ballots.
+
+### Table 9  The allocation and return decomposition
+
+| Measure | Result |
+| --- | --- |
+| Mean first-day return | 53.15% |
+| Mean gross application return | 2.08% |
+| Difference | 51.07 pp |
+| Mean allocation rate times mean first-day return | 5.73% |
+| Allocation-return covariance | -3.65 pp |
+| Share of the product offset by negative covariance | 63.6% |
+
+$$
+\overline{ar}=\bar a\,\bar r+\operatorname{Cov}_{N}(a,r),\qquad \operatorname{Cov}_{N}(a,r)=\frac{1}{N}\sum_{i=1}^{N}(a_i-\bar a)(r_i-\bar r).
+$$
+
+The covariance uses N as the denominator. The identity is exact before rounding. Thus, 5.73% minus 3.65 percentage points gives 2.08%. The product of means is an algebraic comparison. It is not the return from a new allocation policy.
+
+### Table 10  Returns by quarter
+
+| Quarter | N | First-day mean | Application mean | Covariance pp | Gross profit HK$ |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 | 38 | 33.86% | 1.71% | -2.17 | 121.14 |
+| 2026Q2 | 45 | 92.70% | 2.98% | -2.00 | 123.32 |
+| 2026Q3 | 30 | 18.27% | 1.21% | -2.08 | 7.24 |
+
+The covariance is negative in all three quarters. Mean gross profit is only HK$7.24 in Q3. Profit in dollars also depends on principal and allotted quantity. Demand and issuer characteristics can affect both allocation and return. This decomposition does not identify a causal mechanism.
+
+## Sensitivity to fees and large winners
+
+### Table 11  Assumed fixed fees per application
+
+| Fee HK$ | Mean profit HK$ | Median profit HK$ | Mean return | Negative share |
+| --- | --- | --- | --- | --- |
+| 0 | 91.77 | 27.00 | 2.08% | 23.01% |
+| 28 | 63.77 | -1.00 | 1.43% | 50.44% |
+| 88 | 3.77 | -61.00 | 0.02% | 65.49% |
+| 100 | -8.23 | -73.00 | -0.26% | 68.14% |
+
+The fee applies to every application, including applications with no allocation. The return after this fee is (G minus f) divided by B. The negative share counts IPOs with negative expected profit. It does not count actual accounts.
+
+HK$88 is an assumed parameter. It is not an observed account fee. These scenarios exclude subscription levies, selling costs, financing costs, and opportunity cost. The gross result remains the main result.
+
+### Table 12  Remove the largest expected gross profits
+
+| Removed | N | Gross profit HK$ | Profit with HK$88 fee | Gross return |
+| --- | --- | --- | --- | --- |
+| 0 | 113 | 91.77 | 3.77 | 2.08% |
+| 1 | 112 | 77.41 | -10.59 | 1.96% |
+| 3 | 110 | 58.48 | -29.52 | 1.32% |
+
+The largest-profit issuer is 0501. The largest three are 0501, 2672, and 3231. We rank by expected one-lot profit in dollars. Gross mean profit stays positive after their removal. Profit under the HK$88 scenario becomes negative.
+
+These checks use information known after listing. They measure influence on the result. They are not application selection rules.
+
+### Table 13  Remove issuers with source questions
+
+| Sample | N | Gross return | Covariance pp | Gross profit HK$ |
+| --- | --- | --- | --- | --- |
+| All IPOs | 113 | 2.08% | -3.65 | 91.77 |
+| Remove 2649 | 112 | 2.10% | -3.77 | 92.59 |
+| Remove 3355 | 112 | 2.10% | -3.71 | 92.54 |
+| Remove 19 corrected issuers | 94 | 2.48% | -4.06 | 109.62 |
+| Remove all 21 issuers | 92 | 2.53% | -4.32 | 111.95 |
+
+The source questions now have verified answers. The exclusions show dependence on these issuers. Total public applied shares are not the one-lot return denominator. Removing the 19 issuers changes the sample. It does not identify the effect of their data corrections.
+
+## Data evidence and remaining limits
+
+### Table 14  Verified evidence and derived values
+
+| Item | Verified evidence | Derived value or limit |
+| --- | --- | --- |
+| 2649 lot size | Official correction: lot and minimum application both equal 500 | The frozen lot file still shows 200. This report uses the documented correction. |
+| 3355 Pool B | An official clarification confirms all ten guaranteed quantities | Expected allocation still combines guarantees with additional ballot probabilities. |
+| 19 application totals | Independent PDF calculations cover 763 tiers. All 19 formal JSON totals are repaired. | Each total is an exact tier sum. It is not a directly printed aggregate. |
+| Other allotment fields | 342 cells match the workbooks for these 19 issuers | Eleven cells are missing on both sides. Matching values do not prove every source. |
+
+Fourteen recorded rounded-ratio formulas reproduce the old totals. Two recorded formulas also have arithmetic differences. One old total is only consistent with rounding. The original error causes for two issuers are unrecorded. The repaired totals use source tier sums, not assumed error causes.
+
+### Data coverage
+
+Core prices, one-lot rules, and returns cover all 113 IPOs. The VC/PE flag is unknown for seven issuers. Prior-year profit is missing for one issuer. Unrestricted public holding is missing for one issuer. This report does not certify all database fields.
+
+The application principal uses the final offer price. It excludes levies. It does not measure peak cash blocked at the upper offer price. No actual account records enter the calculations. We do not calculate leverage strategies, cash scheduling, or annualized returns.
+
+### Sources and reproduction
+
+The master export supplies the sample description. Verified allocation rules supply expected returns. The report tables retain separate counts for missing values. The source manifest records official PDF links and file hashes.
+
+[Master export](../../pipeline/exports/HKIPO-MB-MASTER_clean.csv)
+
+[Verified return tables and run manifest](../../analysis/out/retail_evidence_brief/README.md)
+
+[Source evidence assessment](RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md)
+
+[The 19 JSON repairs and independent review](../../pipeline/reports/data_gap_collection/source_followup_2026-10-03/formal_json_repair/README.md)
+
+[Report tables and run manifest](../../analysis/out/retail_2026_report/run_manifest.json)
+
+[Coverage for all 202 Excel fields](../../analysis/out/retail_2026_report/workbook_field_coverage.csv)
+
+[2649 official correction](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0311/2026031100837_c.pdf)
+
+[3355 official clarification](https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702666.pdf)
+
+## Short draft for the mentor
+
+We ask how much of a high first-day IPO return reaches retail application capital. We study 113 ordinary Hong Kong Main Board IPOs. They listed from January to September 2026. We calculate the expected result of one application for one lot. We assume a sale at the first-day closing price.
+
+The mean first-day return is 53.15%, and the median is 14.82%. The mean gross application return is 2.08%, and the median is 0.59%. The mean expected gross profit is HK$91.77 per application. Its median is HK$27.00. These are IPO-specific expectations, not actual account results.
+
+The mean return difference is 51.07 percentage points. The denominators differ. First-day return applies to allotted securities. Application return divides expected profit by all requested principal. Low allocation rates limit the return that reaches application capital.
+
+The product of mean allocation and mean first-day return is 5.73%. Their covariance contributes minus 3.65 percentage points. This negative contribution offsets 63.6% of the product and leaves 2.08%. Higher-return IPOs tend to give smaller allocations. The decomposition describes a sample relationship, not a causal effect.
+
+The covariance is negative in Q1, Q2, and Q3. However, expected profit changes across quarters. The Q3 mean is only HK$7.24. Large winners also affect the mean. Removing the largest-profit issuer reduces mean gross profit to HK$77.41. Removing the largest three reduces it to HK$58.48.
+
+Costs require a separate sensitivity check. With an assumed HK$88 fee, mean profit is HK$3.77. Removing the largest winner changes this scenario profit to minus HK$10.59. HK$88 is not an observed account fee. The main finding therefore uses gross returns. Other transaction and financing costs remain outside these calculations.
+
+We have checked the key source evidence. The official 2649 correction confirms a lot of 500. The 3355 clarification confirms ten Pool B guarantees. Independent calculations verify 763 tiers for 19 application totals. The formal JSON files now contain these totals. Source exclusions retain the large return gap and negative covariance.
+
+We propose application capital as the main return denominator for this research question. We seek feedback on the next mechanism test. Demand measures or institutional variation could help separate allocation mechanics from information effects. We will choose that test before we add a cash constraint model or simulation.
+
+## Terms and methods
+
+IPO means initial public offering. HDR means Hong Kong depositary receipt. VC/PE means venture capital or private equity. HSI means Hang Seng Index. HIBOR means Hong Kong Interbank Offered Rate. CAR means cumulative abnormal return relative to a benchmark.
+
+### Method and language checks
+
+The main results use raw returns and equal IPO weights. There are no regression estimates or significance tests in this report. All displayed numbers come from saved tables or the master export. We retain the full precision in the CSV files.
+
+The text follows ASD-STE100 writing rules for short descriptive sentences and consistent terms. The report defines the required finance terms. The automated check tests sentence length and paragraph size. It does not certify full dictionary compliance.
+
+[ASD-STE100 official writing specification, Issue 9](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf)
+
+To reproduce the tables, run the report script from the project root. Compile the standalone LaTeX source to produce the PDF.
+
+`python analysis/retail_2026_report.py`
+
+Source and calculation code remain separate. The collection pipeline supplies evidence. The analysis code calculates the report results. No pipeline analysis step or simulation is added.

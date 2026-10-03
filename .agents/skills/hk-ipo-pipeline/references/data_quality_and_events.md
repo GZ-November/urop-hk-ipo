@@ -26,7 +26,7 @@ value as a reconciliation candidate. Validate the corrected payload and obtain
 independent, hash-bound semantic review before source-field writeback. Do not
 copy workbook values into JSON just to obtain an all-matched report. Rerun the
 audit after writing. For a dated audit snapshot, see
-`docs/CODE_REVIEW_2026-09-30.md`; rerun audits rather than hardcoding its counts.
+`docs/archive/reviews-2026-09-30/CODE_REVIEW_2026-09-30.md`; rerun audits rather than hardcoding its counts.
 
 ## Event and horizon definitions
 

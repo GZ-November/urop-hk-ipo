@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-09-30",
+  "seed": 20261003,
+  "simulations": 100000,
+  "lottery_assumption": "independent across IPOs; observed prices fixed",
+  "market_resampling": "2000 listing-month bootstrap draws, descriptive; few unequal clusters",
+  "inputs": {
+    "pipeline/reports/data_gap_collection/allocation_tiers_clean.csv": "9b883ee144c0100f95f620d74f58c0c3acd2d18373325d4488599d3c2d8677b9",
+    "pipeline/reports/data_gap_collection/board_lots.csv": "57eb42576ae361ad1b8a0d370c07fe4143b5c56fda639b308f1c0f8b05bd744c",
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "e2baf5e73423483d6800e92109b166821a0c896a991dc77c0e76e7ca839b8512",
+    "pipeline/reports/data_gap_collection/allocation_review.json": "db74a86a7a73619393875405f64096c9df59aacf118183668b2620bfcf53f735",
+    "pipeline/reports/data_gap_collection/allocation_tiers_candidates.csv": "d033ced11513d86ac5b8b4a84b2e147709f8573db82d9ff2e09f273a159004fb",
+    "pipeline/reports/data_gap_collection/allocation_coverage.csv": "34490de897537c15b120574100d1ba94c278e52e9ece34326c96d5c60d51621b",
+    "pipeline/registry/HKIPO_Variable_Registry.yaml": "5c186faec322c9be73c35f9378fa75882195d11d0949725408bf49236d35e983",
+    "analysis/retail_profit_distribution_2026.py": "fa99ab6bc20a73e0eda924594b4e00175b94231876396599eeca74e7fe991d34",
+    "analysis/retail_allocation_profit_2026.py": "9a1beb9ed650c600eedf29ec0b3d2fe4c3e238a2fc751ffbb49b129f0d3d84ee",
+    "analysis/subscription_heat_2026.py": "d3731b8978b8e456163da17955e18aaaef81e9c15836b39fa13426a2d67e22e2",
+    "analysis/shared/allocation_review.py": "0c17d10e682293250edd9c1f5f89e66694f3270c0bd0c20ae76ac6f40df2471d",
+    "analysis/shared/retail_report.py": "7a2988e1688eaa0052a88a426cc7ff87b7626dd2f5bc1c79eb48556d3d2de32e"
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0"
+  },
+  "outputs": {
+    "analysis/out/retail_distribution/profit_concentration_sensitivity.csv": "11a676ee018dcb59ed83433f3f28f8788c74fb94e1e3d4edf87076918f242d42",
+    "analysis/out/retail_distribution/allocation_return_decomposition.csv": "3bd12d1fafd00dc6b420a82f2b4d70d31d227b64dbf1f7b23047cb367020dc2a",
+    "analysis/out/retail_distribution/financing_sensitivity.csv": "fc87f92143f25993617ee67b900d9525e2af0fc4ecaf8d17119f5138e2821df3",
+    "analysis/out/retail_distribution/application_size_schedule_fee88.csv": "823b5836b273d982d29a940abc8727756da7fb54612996276cd77efd8821ebfa",
+    "analysis/out/retail_distribution/fee_sources.json": "e7d4a3f3ec9fe944afc6afa884ef92ff4389f92f70985c6d135ec3a71c0330eb",
+    "analysis/out/retail_distribution/conditional_portfolio_draws_fee88.csv": "027f478836a3754c7493ea55ff511df3bcac10007550d33ceb6cd469ee221ed0",
+    "analysis/out/retail_distribution/a_matched_sample.csv": "5ef44873bb77307b2288a3988a4fad4a408129f0a56da624cff85be1678f38c9",
+    "analysis/out/retail_distribution/README.md": "a516cac64199c79e44bc4e7ed9bd7e45d44bf82223fc09224813ee69dde0b949",
+    "analysis/out/retail_distribution/a_matched_aftermarket.csv": "97c4dfa559ad3fc85e6ea16be4970662c7da3f33b190b620ab92698099bea8cc",
+    "analysis/out/retail_distribution/3355_original_and_derived.json": "c98a5529b23ecb6490735cd33a717d0d59094cd6708e7a2199fa89b992f08cb5",
+    "analysis/out/retail_distribution/a_influence_regressions.csv": "a4a45e75b2b9c2a506578cf53fd1a9b180a7ac9ce56145c629c58bff8914b3b0",
+    "analysis/out/retail_distribution/research.md": "383dc5a667f5fd5dce666a8d0ab3d8bc1a3a4ed6ac89d0dae4c023211574da9a",
+    "analysis/out/retail_distribution/retail_profit_distribution.png": "cb4509acb45a2688e56c3ff4c8ac084a6d192622324a8d16509c7b2cf1177e61",
+    "analysis/out/retail_distribution/month_bootstrap_mean_net.csv": "eeaf1dd2450a24947ec38309eb743fcdb0b181c5e699aa4dde546dfdfb806666",
+    "analysis/out/retail_distribution/fee_frontier.csv": "11f8a43a841802a1a400f3fa2bc808eab01e50c5dffd55ecde8d8d1191f69f4b",
+    "analysis/out/retail_distribution/a_subgroup_stability.csv": "92c8d890e40d3e8f0f8afeac03c2c87b5776e3b0571f367c53d1eba5062e4698",
+    "analysis/out/retail_distribution/portfolio_distributions.csv": "13d8bf39b0c68c9b4098a73f5c81a6544c4e870a18c080ad230234b7d320542c",
+    "analysis/out/retail_distribution/applicant_outcomes.csv": "fa72e90f01422cfd6330a18582a1e3416966ad6030d7e5020ae042910260479d",
+    "docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md": "5e5fbd1dc8b08a81a728771a8a4fcd658026ddca0230318f3ccdd319b1be247e"
+  }
+}

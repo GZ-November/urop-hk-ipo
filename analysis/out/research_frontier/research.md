@@ -1,27 +1,27 @@
-# 2026 研究前沿：探索性实证
+# 2026 Research Frontier: Exploratory Evidence
 
-设计见 docs/RESEARCH_DESIGN_2026.md；不作因果或预注册声明。
+Design: docs/RESEARCH_DESIGN_2026.md. No causal or preregistration claim.
 
-## 零售申请资金与配售资金的收益
+## Retail application capital and allocated capital
 
-共同有效样本 N=113，上市月份 G=9；2,000 次按上市月重抽样，seed=20260930。少月份区间仅作描述，不能消除市场冲击或信息类型选择。
+Common valid sample N=113, listing-month clusters G=9. The intervals use 2,000 listing-month resamples, seed=20260930; few-cluster intervals are descriptive and do not eliminate market shocks or information-type selection.
 
 | Measure | Estimate | Cluster-bootstrap lower | Cluster-bootstrap upper |
 |---|---|---|---|
 | mean_ir | 53.153% | 28.904% | 77.053% |
-| allocation_weighted_ir | 1.165% | -2.239% | 8.574% |
+| allocation_weighted_ir | 1.181% | -2.232% | 8.579% |
 | application_return | 0.020% | -0.051% | 0.098% |
 
-表中收益以百分比显示，CSV保留小数。申请 HK$10,000 的平均毛收益为 HK$1.97。这是发行人层面平均配售率下的等额申请情景，不能当作一手中奖概率或实际账户收益。融资情景详见 retail_cost_scenarios.csv；费率、借款比例及2天占款是情景参数，未从真实借贷记录估计。未补入股票交易、申购交易费或机会成本；不能称完整净投资回报。
-## 基石份额：关联、少聚类推断与遗漏变量
+Returns above are percentages; CSVs retain decimals. A HK$10,000 proportional application has mean expected gross profit of HK$1.99. This legacy issuer-average scenario is not a one-lot win probability or actual account result. The tier-based retail study separately uses disclosed application tiers and excludes employee reserved allotments from its macro comparison. In retail_cost_scenarios.csv, fees, borrowing fractions and two funded days are assumptions, not measured account loans. Subscription/trading costs and opportunity cost are excluded; these are not complete net investment returns.
+## Cornerstone share: association, few-cluster inference and omitted variables
 
 | Specification | n | g | b | hc3_se | hc3_p | restricted_wild_p | rv_to_zero_equal_strength |
 |---|---|---|---|---|---|---|---|
 | Ex-ante controls | 106 | 9 | -0.309 | 0.410 | 0.451 | 0.191 | 0.096 |
 | + final demand (endogenous) | 106 | 9 | -0.455 | 0.365 | 0.213 | 0.082 | 0.144 |
 
-两个规格共用同一发行人样本。焦点变化0.10对应 log(1+IR) 变化0.10×b，exp(0.10×b)-1是价格比(1+IR)的比例变化，不是 IR 百分点。wild 检验沿用已验证的 restricted bootstrap-t，枚举 G 个上市月的全部 Rademacher 符号组合；HC3 的两个焦点检验独立作为 Holm family，聚类 p 不混用于星号。
+Both specifications use the same issuer sample. A 0.10 change in the focus regressor changes log(1+IR) by 0.10*b; exp(0.10*b)-1 is the proportional change in (1+IR), not an IR percentage-point change. The restricted wild bootstrap-t enumerates all Rademacher patterns across listing months. The two HC3 focus tests form a Holm family; cluster p-values are not mixed into HC3 stars.
 
-RV/partial-R² 是点估计对未观测混杂的代数诊断，使用普通 OLS 的残差尺度，不是聚类显著性或因果置信区间。最终需求和基石份额均内生；加入需求可能条件化于通道或碰撞点。任意一个显著结果都不能修复识别。
+RV and partial R-squared diagnose point-estimate sensitivity using the ordinary OLS residual scale, not cluster significance or causal confidence intervals. Final demand and cornerstone share are endogenous; conditioning on demand may condition on a mediator or collider. Significance cannot repair identification.
 
-事件与六日历月窗口覆盖见 event_readiness.csv；机制共同支持见 mechanism_support.csv。缺证据和未成熟分别保留，不填估计。
+Event and six-calendar-month coverage: event_readiness.csv. Mechanism overlap: mechanism_support.csv. Missing evidence and immature windows remain distinct; neither is imputed.

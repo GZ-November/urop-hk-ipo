@@ -1,0 +1,1 @@
+../../docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md

@@ -1,0 +1,1 @@
+../../docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md

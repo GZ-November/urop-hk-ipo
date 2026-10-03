@@ -1,0 +1,5 @@
+Item,Verified evidence,Derived value or limit
+2649 lot size,Official correction: lot and minimum application both equal 500,The frozen lot file still shows 200. This report uses the documented correction.
+3355 Pool B,An official clarification confirms all ten guaranteed quantities,Expected allocation still combines guarantees with additional ballot probabilities.
+19 application totals,Independent PDF calculations cover 763 tiers. All 19 formal JSON totals are repaired.,Each total is an exact tier sum. It is not a directly printed aggregate.
+Other allotment fields,342 cells match the workbooks for these 19 issuers,Eleven cells are missing on both sides. Matching values do not prove every source.

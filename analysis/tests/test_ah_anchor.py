@@ -33,3 +33,25 @@ class AnchorAnalysisTests(unittest.TestCase):
         self.assertAlmostEqual(residual.iloc[150], .2)
         _, short = ah.market_residuals(frame, index[40])
         self.assertTrue(np.isnan(short["beta"]))
+
+    def test_ah_vs_non_ah_coverage(self):
+        ah_csv = ah.OUT / "ah_vs_non_ah.csv"
+        self.assertTrue(ah_csv.is_file())
+        df = pd.read_csv(ah_csv)
+        self.assertEqual(len(df), 3)
+        ah_row = df[df["Group"].str.contains(r"A\+H Issuers")].iloc[0]
+        self.assertEqual(ah_row["N"], 38)
+        non_ah_row = df[df["Group"].str.contains(r"Non-A\+H Issuers")].iloc[0]
+        self.assertEqual(non_ah_row["N"], 75)
+
+    def test_ah_discount_summary_and_convergence_artifacts(self):
+        disc_csv = ah.OUT / "ah_discount_summary.csv"
+        conv_csv = ah.OUT / "ah_convergence.csv"
+        self.assertTrue(disc_csv.is_file())
+        self.assertTrue(conv_csv.is_file())
+        df_disc = pd.read_csv(disc_csv)
+        all_row = df_disc[df_disc["Sample"] == "All A+H"].iloc[0]
+        self.assertEqual(all_row["Issuer N"], 38)
+        self.assertTrue(all_row["Offer vs A (mean)"].startswith("-"))
+        df_conv = pd.read_csv(conv_csv)
+        self.assertIn(20, df_conv["Trading days after listing"].values)

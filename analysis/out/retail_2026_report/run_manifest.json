@@ -1,0 +1,42 @@
+{
+  "scope": "2026 Q1-Q3; 113 observed IPOs; English report and mentor draft",
+  "simulation_used": false,
+  "inputs": {
+    "pipeline/exports/HKIPO-MB-MASTER_clean.csv": "e2baf5e73423483d6800e92109b166821a0c896a991dc77c0e76e7ca839b8512",
+    "pipeline/registry/HKIPO_Variable_Registry.yaml": "5c186faec322c9be73c35f9378fa75882195d11d0949725408bf49236d35e983",
+    "pipeline/cohorts/HKIPO-MB2026Q1.xlsx": "313a154b8972b6c499ae71560e775a910bbfa05d65e2c02793e470aa010b01f7",
+    "pipeline/cohorts/HKIPO-MB2026Q2.xlsx": "a762f3d85a634ef285ae696d67e1151418d21ec072dabf957b67016dbd2e618e",
+    "pipeline/cohorts/HKIPO-MB2026Q3.xlsx": "15b3776ea3525b26b886e007a346b5bdb19250c8667cfc365e8bbd7372110c65",
+    "pipeline/prospectus_pipeline/data/manual/hsics.json": "536278b1b1ffa452f8a8efdd7651534ed50ca6022fe057eacc267b3d033029ad",
+    "analysis/research_inputs.py": "80a70166254713f1de9717a62dd6a0bea8a82f581356435621c66be3b07a10ed",
+    "analysis/retail_2026_report.py": "9b7e1e6e4c4bb7e1e9e51df6144ac67f25f6ccf2abce563d88f2e871bc992a2d",
+    "analysis/out/retail_evidence_brief/run_manifest.json": "97a7252a5db1d848d2cfd88f8b6732e697985870bb181012033b680a5d08e3a4",
+    "analysis/out/retail_evidence_brief/evidence_and_exclusion_results.csv": "733d7740705fec62a3aa35f5b8b6c2137352940d973ecbc78d09cbb5bd3dce97",
+    "analysis/out/retail_evidence_brief/fee_sensitivity.csv": "2be719da7c3b37a54d55b957ef1c473007986b9479ccc63b838b4051fec59d88",
+    "analysis/out/retail_evidence_brief/one_lot_issuer_results.csv": "2d567fc5bb23f7179c9de1de64269a7ff85aa85ae81333ae8b646878ab85851a",
+    "analysis/out/retail_evidence_brief/quarter_results.csv": "cadf258c3ea3ee19a47d433c5135e82ab9957bf1fc65e9c9b518e92398c39cbb",
+    "analysis/out/retail_evidence_brief/sample_sensitivity.csv": "57c7aa3d3bd5e006cb55966d0dd1a25921f6d4fd5949a49f198f62258a897b51",
+    "analysis/out/retail_evidence_brief/winner_sensitivity.csv": "dce93df0ab61bcfe8e4b01ff61ab66a1f0d3e1f1870d3102e768a1d31df4b2c0"
+  },
+  "outputs": {
+    "docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex": "da834e9eca42402060ee5db8e2341b1dd99027b6625b5bcf2b8b53198c412a53",
+    "docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md": "1400bb1f00f20508018545de4d14a246f57fd07e76fa98151fdb43a41f7b5a7d",
+    "analysis/out/retail_2026_report/company_data_uses.csv": "f720354fead3578a285eb7053a8d39d8e11e4b027239a99b7e9c59e20902242e",
+    "analysis/out/retail_2026_report/decomposition.csv": "778681824a2518516c6409761329a682f72075ba99a921569e511a4286501c8d",
+    "analysis/out/retail_2026_report/descriptive_statistics.csv": "ec842da5514cac758640fd774e1d5b8cb4976a244d9b6780d9aed17fa2f6477c",
+    "analysis/out/retail_2026_report/descriptive_statistics_raw.csv": "13a18dd22060bcc42d494cd2821114c552d53bd694c5ea39d54a1b51113dec77",
+    "analysis/out/retail_2026_report/evidence.csv": "43464c2041cd25a5860694e5f15f3daac5086c4ee8c2d9dc4859c7d6259df934",
+    "analysis/out/retail_2026_report/fees.csv": "fffa798abfacdc382a6d2db02f8413790876aae25656b76a847af52befecf9ac",
+    "analysis/out/retail_2026_report/industry.csv": "4ef0d808428f12ff7dbe50726f83627f0a8be432e34027d0c23aed898757a6ec",
+    "analysis/out/retail_2026_report/issuer_flags.csv": "24c96b336403350a00dc0e4bcfd949101531a4e2e291882c009bc1b0bdbe5857",
+    "analysis/out/retail_2026_report/market_data_uses.csv": "8407d8cd6a3f37ed3efcfcc1b2f35227a0a07aad53e70ea04b416708ae655cc4",
+    "analysis/out/retail_2026_report/monthly.csv": "0e58b868887cdeeee393c3aaa0a59e370f07530d1e7bf1ffc34c929cf6b06a19",
+    "analysis/out/retail_2026_report/overview.csv": "0f7890ecc7b42b73628e24ada77434c6f740306b9b9c05a3260c4a5c0dead956",
+    "analysis/out/retail_2026_report/quarters.csv": "7154a8327496187cdb72ea40e3a1a48ce9a29031bbc04b084052897f8dc935da",
+    "analysis/out/retail_2026_report/routes.csv": "5021c56a7a1100c36f026faeb5bb877616aa5acac1a306720bf985aafaaf387e",
+    "analysis/out/retail_2026_report/source_exclusions.csv": "27167d048c9f6e99bd9e266b3603bbd20492b488d71bcea47389d6505b73d9d9",
+    "analysis/out/retail_2026_report/winners.csv": "ae06d47b8f4c68b1f05214ee03d26b763f92ab28fc73cb2df3ad6a3682151391",
+    "analysis/out/retail_2026_report/workbook_field_coverage.csv": "eb1a92560a27a456805b9a677fcdacdf70f3a17f42cb873e8e99b80a041e0709",
+    "analysis/out/retail_2026_report/language_check.json": "2515f67cc92848f0cc92e77f3ca0c894b6ed3d669f0979d7bb020deb05c6b81d"
+  }
+}

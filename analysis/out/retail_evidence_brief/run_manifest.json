@@ -1,0 +1,23 @@
+{
+  "observation_cutoff": "2026-09-30",
+  "sample": "113 actual 2026 listings; corrected one-lot metadata",
+  "method": "Exact allocation expectations and equal-IPO population covariance (denominator N)",
+  "simulation_used": false,
+  "canonical_data_changed": false,
+  "lot_overlay": "2649 only; formal source follow-up is separate from frozen pipeline gate",
+  "inputs": {
+    "pipeline/reports/data_gap_collection/source_followup_2026-10-03/source_manifest.json": "d049f5ae3fb7b980a728158afe9315e3c69ecd0e85cd5fe4736d44bece000f6b",
+    "pipeline/reports/data_gap_collection/source_followup_2026-10-03/board_lot_followup.csv": "711231c15d77c673508fe6c98832dd796bf031d889129a5cb8b5963c0860a31d",
+    "pipeline/reports/data_gap_collection/source_followup_2026-10-03/nineteen_applied_totals.csv": "11e1d070d64f2ca145b4bd199c3c406430aa950359a0b0e1e1a71a60352dbf0a",
+    "analysis/retail_evidence_brief_2026.py": "6e2b1316ccae199697f2fef500cdd4957ee02eeedee2cc5bf1b57c4a77132440",
+    "analysis/research_inputs.py": "80a70166254713f1de9717a62dd6a0bea8a82f581356435621c66be3b07a10ed"
+  },
+  "outputs": {
+    "evidence_and_exclusion_results.csv": "733d7740705fec62a3aa35f5b8b6c2137352940d973ecbc78d09cbb5bd3dce97",
+    "fee_sensitivity.csv": "2be719da7c3b37a54d55b957ef1c473007986b9479ccc63b838b4051fec59d88",
+    "one_lot_issuer_results.csv": "2d567fc5bb23f7179c9de1de64269a7ff85aa85ae81333ae8b646878ab85851a",
+    "quarter_results.csv": "cadf258c3ea3ee19a47d433c5135e82ab9957bf1fc65e9c9b518e92398c39cbb",
+    "sample_sensitivity.csv": "57c7aa3d3bd5e006cb55966d0dd1a25921f6d4fd5949a49f198f62258a897b51",
+    "winner_sensitivity.csv": "dce93df0ab61bcfe8e4b01ff61ab66a1f0d3e1f1870d3102e768a1d31df4b2c0"
+  }
+}

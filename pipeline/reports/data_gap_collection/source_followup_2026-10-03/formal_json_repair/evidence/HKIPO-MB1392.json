@@ -1,0 +1,283 @@
+{
+  "code": "1392.HK",
+  "field": "col_CO",
+  "definition": "ordinary public valid applied shares",
+  "derivation": "sum(applied_shares * valid_applications) across each disclosed ordinary public tier once",
+  "source_pdf": "pipeline/prospectus_pipeline/data/allot/pdf/HKIPO-MB1392.pdf",
+  "official_pdf_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0618/2026061802066.pdf",
+  "pdf_sha256": "c78b08544c8e742465f5b43fdae39f34a0f66daee200d3300352b4b5ecb43bc4",
+  "source_text": "pipeline/prospectus_pipeline/data/allot/text/HKIPO-MB1392.jsonl",
+  "source_text_sha256": "5a255290d9fe592c7421e9f74f046cd7c46a7a1d7018244dd88d5c4dbe3f1e58",
+  "packet_sha256": "f945844f2cb0b3c28be692ee5158528326f98e33d52b7c1d72528e87c35d650f",
+  "physical_pdf_pages": [
+    13,
+    14,
+    15
+  ],
+  "operands": [
+    {
+      "pdf_page": 13,
+      "applied_shares": 500,
+      "applicants": 55745,
+      "product": 27872500
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 1000,
+      "applicants": 28250,
+      "product": 28250000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 1500,
+      "applicants": 8229,
+      "product": 12343500
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 2000,
+      "applicants": 4470,
+      "product": 8940000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 2500,
+      "applicants": 4575,
+      "product": 11437500
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 3000,
+      "applicants": 3218,
+      "product": 9654000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 3500,
+      "applicants": 2139,
+      "product": 7486500
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 4000,
+      "applicants": 2336,
+      "product": 9344000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 4500,
+      "applicants": 1901,
+      "product": 8554500
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 5000,
+      "applicants": 7153,
+      "product": 35765000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 6000,
+      "applicants": 12903,
+      "product": 77418000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 7000,
+      "applicants": 3110,
+      "product": 21770000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 8000,
+      "applicants": 2416,
+      "product": 19328000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 9000,
+      "applicants": 2316,
+      "product": 20844000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 10000,
+      "applicants": 10714,
+      "product": 107140000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 15000,
+      "applicants": 5646,
+      "product": 84690000
+    },
+    {
+      "pdf_page": 13,
+      "applied_shares": 20000,
+      "applicants": 3866,
+      "product": 77320000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 25000,
+      "applicants": 3500,
+      "product": 87500000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 30000,
+      "applicants": 2766,
+      "product": 82980000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 35000,
+      "applicants": 1953,
+      "product": 68355000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 40000,
+      "applicants": 2077,
+      "product": 83080000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 45000,
+      "applicants": 1687,
+      "product": 75915000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 50000,
+      "applicants": 3570,
+      "product": 178500000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 60000,
+      "applicants": 2840,
+      "product": 170400000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 70000,
+      "applicants": 2494,
+      "product": 174580000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 80000,
+      "applicants": 2126,
+      "product": 170080000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 90000,
+      "applicants": 1598,
+      "product": 143820000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 100000,
+      "applicants": 11217,
+      "product": 1121700000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 200000,
+      "applicants": 7156,
+      "product": 1431200000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 300000,
+      "applicants": 5384,
+      "product": 1615200000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 400000,
+      "applicants": 3917,
+      "product": 1566800000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 500000,
+      "applicants": 4073,
+      "product": 2036500000
+    },
+    {
+      "pdf_page": 14,
+      "applied_shares": 600000,
+      "applicants": 6952,
+      "product": 4171200000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 700000,
+      "applicants": 7164,
+      "product": 5014800000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 800000,
+      "applicants": 2799,
+      "product": 2239200000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 900000,
+      "applicants": 2385,
+      "product": 2146500000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 1000000,
+      "applicants": 8197,
+      "product": 8197000000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 2000000,
+      "applicants": 3954,
+      "product": 7908000000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 3000000,
+      "applicants": 2366,
+      "product": 7098000000
+    },
+    {
+      "pdf_page": 15,
+      "applied_shares": 4258000,
+      "applicants": 3478,
+      "product": 14809324000
+    }
+  ],
+  "raw_pages": [
+    {
+      "pdf_page": 13,
+      "layout_text": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING\n\nSubject to the satisfaction of the conditions set out in the Prospectus, valid applications made by the\npublic will be conditionally allocated on the basis set out below:\n\n NO. OF H      NO. OF VALID   BASIS OF               APPROXIMATE\n SHARES      APPLICATION  ALLOTMENT/BALLOT     PERCENTAGE\n APPLIED FOR  S           POOL A                ALLOTTED OF\n                                            THE\n                                              TOTAL NO. OF H\n                                               SHARES APPLIED\n                                             FOR\n            500            55,745   1,115 out of 55,745 applicants to              2.00%\n                                                     receive 500 H Shares\n            1,000            28,250    655 out of 28,250 applicants to              1.16%\n                                                     receive 500 H Shares\n            1,500             8,229     208 out of 8,229 applicants to              0.84%\n                                                     receive 500 H Shares\n            2,000             4,470     121 out of 4,470 applicants to              0.68%\n                                                     receive 500 H Shares\n            2,500             4,575     129 out of 4,575 applicants to              0.56%\n                                                     receive 500 H Shares\n            3,000             3,218      95 out of 3,218 applicants to              0.49%\n                                                     receive 500 H Shares\n            3,500             2,139      65 out of 2,139 applicants to              0.43%\n                                                     receive 500 H Shares\n            4,000             2,336      73 out of 2,336 applicants to              0.39%\n                                                     receive 500 H Shares\n            4,500             1,901      61 out of 1,901 applicants to              0.36%\n                                                     receive 500 H Shares\n            5,000             7,153     234 out of 7,153 applicants to              0.33%\n                                                     receive 500 H Shares\n            6,000            12,903    438 out of 12,903 applicants to              0.28%\n                                                     receive 500 H Shares\n            7,000              3,110      109 out of 3,110 applicants to              0.25%\n                                                     receive 500 H Shares\n            8,000             2,416      88 out of 2,416 applicants to              0.23%\n                                                     receive 500 H Shares\n            9,000             2,316      86 out of 2,316 applicants to              0.21%\n                                                     receive 500 H Shares\n          10,000            10,714    406 out of 10,714 applicants to              0.19%\n                                                     receive 500 H Shares\n          15,000             5,646     233 out of 5,646 applicants to              0.14%\n                                                     receive 500 H Shares\n          20,000             3,866     170 out of 3,866 applicants to              0.11%\n                                                     receive 500 H Shares\n\n\n                                                   -13-"
+    },
+    {
+      "pdf_page": 14,
+      "layout_text": "NO. OF H      NO. OF VALID   BASIS OF               APPROXIMATE\nSHARES      APPLICATION  ALLOTMENT/BALLOT     PERCENTAGE\nAPPLIED FOR  S           POOL A                ALLOTTED OF\n                                            THE\n                                             TOTAL NO. OF H\n                                              SHARES APPLIED\n                                            FOR\n         25,000             3,500     161 out of 3,500 applicants to              0.09%\n                                                    receive 500 H Shares\n         30,000             2,766     133 out of 2,766 applicants to              0.08%\n                                                    receive 500 H Shares\n         35,000             1,953      97 out of 1,953 applicants to              0.07%\n                                                    receive 500 H Shares\n         40,000             2,077     106 out of 2,077 applicants to              0.06%\n                                                    receive 500 H Shares\n         45,000             1,687      88 out of 1,687 applicants to              0.06%\n                                                    receive 500 H Shares\n         50,000             3,570     191 out of 3,570 applicants to              0.05%\n                                                    receive 500 H Shares\n         60,000             2,840     158 out of 2,840 applicants to              0.05%\n                                                    receive 500 H Shares\n         70,000             2,494     143 out of 2,494 applicants to              0.04%\n                                                    receive 500 H Shares\n         80,000             2,126     126 out of 2,126 applicants to              0.04%\n                                                    receive 500 H Shares\n         90,000             1,598      97 out of 1,598 applicants to              0.03%\n                                                    receive 500 H Shares\n        100,000            11,217     692 out of 11,217 applicants to              0.03%\n                                                    receive 500 H Shares\n        200,000             7,156     512 out of 7,156 applicants to              0.02%\n                                                    receive 500 H Shares\n        300,000             5,384     420 out of 5,384 applicants to              0.01%\n                                                    receive 500 H Shares\n        400,000             3,917     325 out of 3,917 applicants to              0.01%\n                                                    receive 500 H Shares\n        500,000             4,073     354 out of 4,073 applicants to              0.01%\n                                                    receive 500 H Shares\n        600,000             6,952     628 out of 6,952 applicants to              0.01%\n                                                    receive 500 H Shares\n            Total           222,297           Total number of Pool A\n                                         successful applications: 8,517\n\n\n\n\n\n                                                  -14-"
+    },
+    {
+      "pdf_page": 15,
+      "layout_text": " NO. OF H       NO. OF VALID   BASIS OF              APPROXIMATE\n SHARES       APPLICATIONS  ALLOTMENT/BALLOT    PERCENTAGE\n APPLIED FOR              POOL B               ALLOTTED OF\n                                            THE\n                                              TOTAL NO. OF H\n                                               SHARES APPLIED\n                                            FOR\n          700,000              7,164   1,003 out of 7,164 applicants to              0.01%\n                                                     receive 500 H Shares\n          800,000              2,799    442 out of 2,799 applicants to              0.01%\n                                                     receive 500 H Shares\n          900,000              2,385    418 out of 2,385 applicants to              0.01%\n                                                     receive 500 H Shares\n         1,000,000              8,197   1,579 out of 8,197 applicants to              0.01%\n                                                     receive 500 H Shares\n         2,000,000              3,954   1,415 out of 3,954 applicants to              0.01%\n                                                     receive 500 H Shares\n         3,000,000              2,366   1,216 out of 2,366 applicants to              0.01%\n                                                     receive 500 H Shares\n         4,258,000              3,478   2,443 out of 3,478 applicants to              0.01%\n                                                     receive 500 H Shares\n              Total             30,343         Total number of Pool B\n                                          successful applications: 8,516\n\n\nAs of the date of this announcement, the relevant subscription monies previously deposited in the\ndesignated nominee accounts have been remitted back to the accounts of all HKSCC participants.\nInvestors should contact their relevant brokers for any inquiries.\n\n\n\n\n\n                                                   -15-"
+    }
+  ],
+  "total_applied_shares": 61158791500,
+  "total_applicants": 252640,
+  "unit": "shares",
+  "old_field": {
+    "value": 84572151000,
+    "page": 13,
+    "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING",
+    "confidence": "medium"
+  },
+  "old_origin_assessment": "original_error_mechanism_not_documented"
+}

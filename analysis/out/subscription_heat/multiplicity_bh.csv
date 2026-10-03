@@ -1,0 +1,7 @@
+Section,Test,p,q (BH),Rank
+Main Line A Regressions,M1: Raw Subscription Multiple - lsub,5.555077819181925e-10,3.3330466915091548e-09,1
+Main Line A Regressions,M5: Raw Applicant Count - lapp,6.74610543505279e-07,2.023831630515837e-06,2
+Main Line A Regressions,M2: + Offer Proceeds (Deal Size) - lsub,1.4044212623650957e-06,2.8088425247301913e-06,3
+Main Line A Regressions,"M3: + A+H Anchor, Firm Age, Cornerstone - lsub",4.947968463933765e-06,7.421952695900648e-06,4
+Main Line A Regressions,M4: + Hot Window (April-June / Q2) - lsub,0.0006042144487692341,0.0007250573385230809,5
+Main Line A Regressions,M6: Applicant Count + Full Controls - lapp,0.005419748421635563,0.005419748421635563,6

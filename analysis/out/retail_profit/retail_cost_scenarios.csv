@@ -1,0 +1,21 @@
+Strategy,Leverage,Margin Rate,Fee (HK$),Mean Net Profit (HK$),Median Net Profit (HK$),Loss Share (%),Mean Net Return on Equity (%),Median Net Return on Equity (%)
+1 Board Lot,Cash (100% Equity),0%,HK$ 0,HK$ 91.77,HK$ 27.00,23.0%,2.08%,0.59%
+1 Board Lot,Cash (100% Equity),0%,HK$ 28,HK$ 63.77,HK$ -1.00,50.4%,1.43%,-0.05%
+1 Board Lot,Cash (100% Equity),0%,HK$ 88,HK$ 3.77,HK$ -61.00,65.5%,0.02%,-0.95%
+1 Board Lot,Cash (100% Equity),0%,HK$ 100,HK$ -8.23,HK$ -73.00,68.1%,-0.26%,-1.16%
+10 Board Lots,Cash (100% Equity),0%,HK$ 0,HK$ 181.40,HK$ 93.91,23.0%,0.39%,0.18%
+10 Board Lots,Cash (100% Equity),0%,HK$ 28,HK$ 153.40,HK$ 65.91,39.8%,0.32%,0.10%
+10 Board Lots,Cash (100% Equity),0%,HK$ 88,HK$ 93.40,HK$ 5.91,49.6%,0.18%,0.01%
+10 Board Lots,Cash (100% Equity),0%,HK$ 100,HK$ 81.40,HK$ -6.09,53.1%,0.15%,-0.01%
+10 Board Lots,90% Margin (10x),3% p.a.,HK$ 0,HK$ 171.43,HK$ 79.06,33.6%,3.71%,1.68%
+10 Board Lots,90% Margin (10x),3% p.a.,HK$ 28,HK$ 143.43,HK$ 51.06,40.7%,3.05%,0.85%
+10 Board Lots,90% Margin (10x),3% p.a.,HK$ 88,HK$ 83.43,HK$ -8.94,51.3%,1.63%,-0.08%
+10 Board Lots,90% Margin (10x),3% p.a.,HK$ 100,HK$ 71.43,HK$ -20.94,54.0%,1.35%,-0.26%
+10 Board Lots,90% Margin (10x),6% p.a.,HK$ 0,HK$ 161.45,HK$ 70.41,35.4%,3.57%,1.53%
+10 Board Lots,90% Margin (10x),6% p.a.,HK$ 28,HK$ 133.45,HK$ 42.41,41.6%,2.90%,0.70%
+10 Board Lots,90% Margin (10x),6% p.a.,HK$ 88,HK$ 73.45,HK$ -17.59,53.1%,1.48%,-0.23%
+10 Board Lots,90% Margin (10x),6% p.a.,HK$ 100,HK$ 61.45,HK$ -29.59,54.0%,1.20%,-0.41%
+10 Board Lots,90% Margin (10x),10% p.a.,HK$ 0,HK$ 148.15,HK$ 61.74,38.9%,3.37%,1.33%
+10 Board Lots,90% Margin (10x),10% p.a.,HK$ 28,HK$ 120.15,HK$ 33.74,44.2%,2.71%,0.50%
+10 Board Lots,90% Margin (10x),10% p.a.,HK$ 88,HK$ 60.15,HK$ -26.26,53.1%,1.29%,-0.42%
+10 Board Lots,90% Margin (10x),10% p.a.,HK$ 100,HK$ 48.15,HK$ -38.26,55.8%,1.00%,-0.61%

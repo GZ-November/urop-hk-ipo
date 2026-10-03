@@ -10,15 +10,28 @@ The observation cutoff is 30 September 2026.
 | [01_workbooks](01_workbooks/) | Canonical 2026 quarterly Excel workbooks |
 | [02_research_inputs](02_research_inputs/) | Clean quarterly CSVs, master panel, A+H references, and margin observations |
 | [03_data_dictionary](03_data_dictionary/) | Quarterly codebooks, variable registry, and terminology |
-| [04_reports_and_plans](04_reports_and_plans/) | PDF/LaTeX progress report, current plan, design, and repair status |
+| [04_reports_and_plans](04_reports_and_plans/) | Current comprehensive report, mentor draft, plans, and source assessment |
 | [05_analysis_results](05_analysis_results/) | Generated tables and figures, grouped by research topic |
 | [06_sources_and_audits](06_sources_and_audits/) | Official sources, source evidence, extraction records, and audits |
-| [07_historical_data](07_historical_data/) | Stored 2025 Q1/Q2 workbooks and cross-year inputs |
+| [07_historical_data](07_historical_data/) | Stored 2025 data, earlier reports, and historical reviews |
+
+## Current English research reports
+
+- [2026 comprehensive report: LaTeX source](04_reports_and_plans/2026_Comprehensive_Report.tex) / [text](04_reports_and_plans/2026_Comprehensive_Report.md)
+- [Mentor discussion draft: corrected one-lot results, no simulation](04_reports_and_plans/Retail_Mentor_Brief.md)
+- [Source reassessment and exclusion results](04_reports_and_plans/Retail_Evidence_Assessment.md)
+- [Retail IPO applications: consolidated report](04_reports_and_plans/Current_Empirical_Research_Report.md)
+- [Implementation and reproduction](04_reports_and_plans/Retail_Research_Implementation.md)
+- [Subscription demand results](05_analysis_results/12_subscription_demand/)
+- [Tier-based retail allocation results](05_analysis_results/13_retail_allocation_profit/)
+- [Profit distributions, fee frontiers and robustness](05_analysis_results/14_retail_profit_distributions/)
+- [Deterministic source-corrected tables](05_analysis_results/15_retail_evidence_brief/)
+- [Comprehensive report tables and workbook field coverage](05_analysis_results/16_comprehensive_report_tables/)
 
 ## Frequently used files
 
 - [2026 Q3 Excel workbook](01_workbooks/2026_Q3_IPO_Data.xlsx)
-- [English research progress report](04_reports_and_plans/Research_Progress_Report.pdf)
+- [Latest comprehensive report](04_reports_and_plans/2026_Comprehensive_Report.tex)
 - [Current research plan](04_reports_and_plans/Current_Research_Plan.md)
 - [All-years master panel](02_research_inputs/All_Years_Master_Panel.csv)
 
@@ -28,7 +41,9 @@ The master includes both 2025 and 2026 listings. Select actual 2026 listing date
 
 These entries are relative links to canonical files, not independent copies. Opening a link opens the original. Updated canonical files appear here automatically. Follow the pipeline's source, validation, and review requirements before changing data.
 
-The PDF is an exported snapshot of the earlier analysis, before the PR #28 additions. Use generated results and the current plan for the latest state. Changes to its LaTeX source require a new PDF export.
+The [earlier PDF](07_historical_data/Earlier_Research_Progress_Report.pdf) is an exported historical snapshot. It is stored with historical material. The current comprehensive report uses a separate LaTeX source and the editor's PDF preview.
+
+Each directory has a short `README.md` with file links and a description. Cleanup and recovery records are in [project maintenance](../docs/maintenance/README.md). Local reference papers are in [literature](../docs/literature/README.md).
 
 The catalog in [config/research_workspace.json](../config/research_workspace.json) defines the links. To recreate missing links or validate the index:
 

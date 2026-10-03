@@ -1,0 +1,116 @@
+{
+  "code": "2290.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 109,
+      "quote": "no Offer Shares will be allocated under the Global Offering to any core connected person of our Company or person which is not regarded as a member of the public",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 664.92,
+      "page": 4,
+      "quote": "Subscription level 664.92 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 133189,
+      "page": 4,
+      "quote": "No. of valid applications 133,189",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6362250000,
+      "page": 8,
+      "quote": "6,250,000 146 4,000 Shares 0.06% Total 3,859",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 664.92 times (原文用『Subscription level』而非『over-subscribed by』)",
+      "page": 4,
+      "quote": "Subscription level 664.92 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "03/06/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Overall Coordinator (for itself and on behalf of the Hong Kong Underwriters) and us o",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "04/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**04/06/2026 19:43**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 125000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 125,000,000 Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 12500000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 12,500,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 112500000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering (after reallocation) 112,500,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILISATION PERIOD, NO STABILISING ACTIONS\nAND LAPSE OF THE OVER-ALLOTMENT OPTION（02/07/2026 18:01）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILISATION PERIOD, NO STABILISING ACTIONS\nAND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Reallocation No：国际配售回拨至香港公开发售 0 股，最终香港公开发售维持 12,500,000 股（占全球发售 10%）",
+      "page": 4,
+      "quote": "Reallocation No",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 599600000,
+      "page": 3,
+      "quote": "Net proceeds(2) HK$599.6 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 11,
+      "quote": "Immediately following the completion of the Global Offering, the total number of the Shares held by the public represents 25% of the total issued Shares.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 500000000,
+      "page": 11,
+      "quote": "500,000,000 Shares in issue immediately upon completion of the Global Offering",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.25,
+      "page": 11,
+      "quote": "Immediately following the completion of the Global Offering, the total number of the Shares held by the public represents 25% of the total issued Shares.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "自由流通分母 = 上市时已发行股份总数 500,000,000 股（col_CZ）；分子 = 全球发售股份 125,000,000 股（col_CS）减去基石获配 0 股（col_CK×col_CS=0），本次无基石投资者且公告披露 125,000,000 股不受任何处置限制",
+      "page": 11,
+      "quote": "Immediately following the completion of the Global Offering, the total number of the Shares held by the public represents 25% of the total issued Shares.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 500000000,
+      "page": 11,
+      "quote": "500,000,000 Shares in issue immediately upon completion of the Global Offering",
+      "confidence": "high"
+    }
+  }
+}

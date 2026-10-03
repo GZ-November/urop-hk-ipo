@@ -1,6 +1,6 @@
 # agy integration and source review · 2026-09-30
 
-> Historical snapshot: the sample sizes, checks and repair status below describe the stage recorded here. The current population is 113 issuers after PR #23/#25; see [current research plan](RESEARCH_PLAN_2026.md) for coverage and remaining work. Historical audit counts do not certify the expanded sample.
+> Historical snapshot: the sample sizes, checks and repair status below describe the stage recorded here. The current population is 113 issuers after PR #23/#25; see [current research plan](../../RESEARCH_PLAN_2026.md) for coverage and remaining work. Historical audit counts do not certify the expanded sample.
 
 Inspected agy's local DeepCoder work and its investigator/search results in the Antigravity transcripts, plus uncommitted changes in the primary checkout. Their original working files remain untouched there. The integration branch incorporates the useful collector and analysis work, corrects its data/interpretation contracts, and regenerates outputs.
 

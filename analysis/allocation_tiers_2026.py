@@ -74,6 +74,24 @@ def main() -> None:
                 if pct is not None:
                     transformed.append({"page": outcomes[0]["page"], "text": f"{applied}\n{count}\n{rule}\n{pct}%"})
             pages = transformed
+        if code == "3355.HK":
+            g_map = {
+                "200,000": "100 Shares plus", "300,000": "100 Shares plus", "400,000": "100 Shares plus",
+                "500,000": "200 Shares plus", "600,000": "200 Shares plus", "700,000": "200 Shares plus",
+                "800,000": "200 Shares plus", "900,000": "200 Shares plus", "1,000,000": "200 Shares plus",
+                "2,000,000": "300 Shares plus",
+            }
+            new_pages = []
+            for p in pages:
+                t = p["text"]
+                if p["page"] == 15:
+                    t = t.replace("008%", "0.08%")
+                elif p["page"] == 16:
+                    for app, prefix in g_map.items():
+                        pattern = rf"(?m)^(\s*{re.escape(app)}\s*\n\s*[\d,]+\s*\n\s*)((?:[\d,]+\s+out\s+of\s+[\d,]+\s+to\s+receive\s+)(?:an?\s+additional\s+)?)(100\s+Shares)"
+                        t = re.sub(pattern, rf"\g<1>{prefix} \g<2>an additional \g<3>", t)
+                new_pages.append({**p, "text": t})
+            pages = new_pages
         pool, rows, lots = "", [], []
         for page in original_pages:
             for match in LOT.finditer(page["text"]):
@@ -108,15 +126,20 @@ def main() -> None:
                     errors.append("ballot_count_mismatch")
                 if expected is not None and abs(100 * expected / applied - pct) > .011:
                     errors.append("printed_percentage_mismatch")
+                encoding = "derived_from_disclosed_count_distribution" if distributions else (
+                    "typeset_base_shares_repaired" if code == "3355.HK" and pool == "B" else "disclosed_ballot_wording"
+                )
                 rows.append(dict(code=code, pool=pool, applied_shares=applied,
                                  applicants=applicants, guaranteed_shares=guaranteed if parsed else None,
                                  ballot_winners=winners if parsed else None, ballot_denominator=denominator if parsed else None,
                                  ballot_extra_shares=extra if parsed else None, expected_shares=expected,
                                  allocated_shares=allocated, printed_allocation_pct=pct,
                                  rule_original=rule, pdf_page=page["page"], continuation_page=continuation_pages.get(page["page"]) if match.end() >= len(text.rstrip()) - 2 else None, source_text=str(path.relative_to(ROOT)),
-                                 source_sha256=source_hash, errors=";".join(errors)))
-                rows[-1]["source_quote"] = json.dumps(distributions[applied], ensure_ascii=False) if distributions else match[0].strip()
-                rows[-1]["rule_encoding"] = "derived_from_disclosed_count_distribution" if distributions else "disclosed_ballot_wording"
+                                 source_sha256=source_hash, errors=";".join(errors),
+                                 source_quote=json.dumps(distributions[applied], ensure_ascii=False) if distributions else match[0].strip(),
+                                 original_page_text=next(x["text"] for x in original_pages if x["page"] == page["page"]),
+                                 derivation_note="Inserted guarantee vector inferred from rounded percentages and pool totals; original page retained" if code == "3355.HK" and pool == "B" else "",
+                                 rule_encoding=encoding))
             trailing_markers = list(re.finditer(r"POOL\s+([AB])\b", text, re.I))
             if trailing_markers:
                 pool = trailing_markers[-1][1].upper()
@@ -153,8 +176,11 @@ def main() -> None:
                             source_text=str(path.relative_to(ROOT)), source_sha256=source_hash))
     pd.DataFrame(tiers).to_csv(OUT / "allocation_tiers_candidates.csv", index=False)
     pd.DataFrame(issuers).to_csv(OUT / "allocation_coverage.csv", index=False)
+    # Only candidates are produced here. Independent review and its bound hash
+    # are required before a separate exporter may publish a clean relation.
     print(pd.DataFrame(issuers)["status"].value_counts().to_string())
     print(f"{len(tiers)} tiers; explicit board lots {sum(pd.notna(x.get('board_lot_units')) for x in issuers)}")
+    print("Candidates only; clean outputs preserved pending independent review")
 
 
 if __name__ == "__main__":

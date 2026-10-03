@@ -36,7 +36,7 @@ Expected gain per HK$10,000 = allocation ratio (final public shares / valid appl
 |  | N | Median allocation ratio | Expected gain per HK$10,000 applied, median | Expected gain per HK$10,000 applied, mean | Deals with an expected loss | Retail gain per applicant, median (HK$) | Retail gain per applicant, mean (HK$) |
 |---|---|---|---|---|---|---|---|
 | Other listings | 68 | 0.26% | HK$1.2 | HK$0.4 | 26% | 107 | 314 |
-| April-June listings | 45 | 0.06% | HK$2.6 | HK$4.3 | 18% | 406 | 698 |
+| April-June listings | 45 | 0.06% | HK$2.6 | HK$4.4 | 18% | 406 | 698 |
 
 - The typical application earns a few Hong Kong dollars per HK$10,000; the mean is driven by rare large allocations and losses on broken issues.
   Gain per applicant averages the retail gain over everyone who applied, winners and non-winners.

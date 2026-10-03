@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-10-03",
+  "historical_cohort_charges_verified": false,
+  "sources": [
+    {
+      "url": "https://www.futuhk.com/en/support/topic2_418from_platform%3D1%26%26lang%3Dzh-hk",
+      "current_schedule": "ordinary cash/Futu financing subscription handling 0; bank financing handling 100 HKD",
+      "scope": "handling fee only; interest and promotions may differ"
+    },
+    {
+      "url": "https://www.hsbc.com.hk/zh-hk/help/faq/investments/",
+      "current_schedule": "branch/IPO hotline application 100 HKD",
+      "scope": "channel-specific current quote"
+    }
+  ],
+  "fees_28_and_88": "unsourced hypothetical sensitivity values",
+  "excluded_costs": [
+    "allotted-share subscription brokerage/levies",
+    "sale brokerage/levies",
+    "opportunity cost"
+  ],
+  "financing": "90% borrowing, 2/5 days, 3/6/10 percent are assumptions; FINI does not determine account loan duration"
+}
