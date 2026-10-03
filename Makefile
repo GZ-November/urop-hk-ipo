@@ -11,6 +11,9 @@ PYTHON_SOURCES := run.py tools analysis pipeline/run.py pipeline/prospectus_pipe
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
+	@echo "  make dashboard     - Open the English offline IPO dashboard"
+	@echo "  make dashboard-build - Rebuild the dashboard from canonical exports"
+	@echo "  make dashboard-check - Verify dashboard data and interactions"
 	@echo "  make env           - Check and bootstrap runtime dependencies (Python 3.9+, openpyxl, etc.)"
 	@echo "  make status        - Display pipeline state and hash-gate alignment for issuers"
 	@echo "  make audit         - Run read-only cell-by-cell audit against verified extractions"
@@ -132,3 +135,16 @@ check: status audit cross_check check-code
 	@echo "=================================================================="
 	@echo "✅ Configured pipeline and code checks passed; inspect audit coverage separately."
 	@echo "=================================================================="
+
+.PHONY: dashboard dashboard-build dashboard-check
+
+dashboard:
+	@"$(PYTHON)" -c 'import webbrowser; from pathlib import Path; webbrowser.open(Path("dashboard/index.html").resolve().as_uri())'
+
+dashboard-build:
+	@"$(PYTHON)" tools/build_dashboard.py
+
+dashboard-check:
+	@"$(PYTHON)" tools/build_dashboard.py --check
+	@"$(PYTHON)" -m pytest analysis/tests/test_dashboard.py -q
+	@node dashboard/test_dashboard.cjs

@@ -33,6 +33,14 @@ jobs:
       - name: Lint, pipeline and analysis tests, registry consistency
         run: make check-code PYTHON=python
 
+      - name: Set up dashboard verification
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Verify offline dashboard snapshot and interactions
+        run: make dashboard-check PYTHON=python
+
       - name: Verify CLI entry point
         run: |
           python run.py --help
