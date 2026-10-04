@@ -41,6 +41,12 @@ jobs:
       - name: Verify offline dashboard snapshot and interactions
         run: make dashboard-check PYTHON=python
 
+      - name: Verify workspace navigation
+        run: |
+          make workspace-check PYTHON=python
+          python tools/build_file_index.py
+          git diff --exit-code -- 00_START_HERE.html
+
       - name: Verify CLI entry point
         run: |
           python run.py --help
