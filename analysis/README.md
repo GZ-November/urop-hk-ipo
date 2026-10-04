@@ -102,3 +102,12 @@ python run.py analysis --study demand --study allocation_profit --study retail_d
 ```
 
 `retail_distribution` is opt-in. It conditions on observed prices and does not annualize simulated profits. Its English narrative is rendered by `shared/retail_report.py`; machine-readable values remain in CSVs. The allocation reader checks the pre-existing independent review against candidate/coverage/source hashes. Running `allocation_tiers_2026.py` only generates pending candidates, requiring a new review if their bytes change.
+
+## Pricing and pre-deadline information follow-up
+
+Run `python run.py analysis --study pricing_adjustment` for the opt-in study.
+The [specification](specifications/pricing_adjustment.md) defines the common
+43-range-offer models, timing exclusions and temporal prediction assessment.
+The [outputs](out/pricing_adjustment/README.md) include auditable source checks,
+all models, exclusions, and training membership. Research classification is
+corrected without rewriting the source workbooks or extraction records.
