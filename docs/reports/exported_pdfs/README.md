@@ -6,10 +6,11 @@
 
 [返回文件导航](../../../00_START_HERE.html)
 
-## Price adjustment and pre-deadline retail information
+## Topic 1: pricing adjustment and first-day returns
 
 [Latest English PDF](HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.pdf) ·
 [Editable LaTeX](../HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.tex).
-Four A4 pages and eight tables; cutoff 30 September 2026. Compiled and visually
-checked on 4 October 2026. Source and PDF hashes are in the
-[study manifest](../../../analysis/out/pricing_adjustment/run_manifest.json).
+Eight A4 pages and 16 tables; cutoff 30 September 2026. Topic 1 only.
+Compiled and visually checked on 4 October 2026. Source and PDF hashes are in the
+[completion manifest](../../../analysis/out/pricing_adjustment/topic1/run_manifest.json).
+The source filename remains stable for the open editor; Topics 2 and 3 are separate.

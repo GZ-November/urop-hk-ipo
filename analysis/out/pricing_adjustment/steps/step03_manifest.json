@@ -1,0 +1,33 @@
+{
+  "prepared_on": "2026-10-04",
+  "topic": 1,
+  "step": 3,
+  "n": 43,
+  "missing_proxy_codes": [
+    "0625.HK",
+    "2261.HK",
+    "2672.HK",
+    "3231.HK",
+    "6727.HK",
+    "9607.HK",
+    "9615.HK"
+  ],
+  "deterministic_subsets": 128,
+  "outcomes": [
+    "log_close",
+    "log_opening",
+    "log_intraday"
+  ],
+  "specification": "Intercept, revision, Q2 and Q3; same specification within each diagnostic sample.",
+  "scope": "Exact influence and deletion accounting, not causal effects or a strategy; no deletion replaces full-sample result.",
+  "sha256": {
+    "analysis/out/pricing_adjustment/issuer_sample.csv": "edaf79313313cd59b5bdd8a37f10d6ece383d47c89343ccc471564e19165f2d4",
+    "analysis/pricing_influence_2026.py": "e7cebba0474688fbc53b5b251aa49e077dfa25cebdffe2232a10b526eff78405",
+    "pipeline/prospectus_pipeline/data/market/hk02672.json": "846b6a2ce4d369429cdd07791a7b261a8d1ec1212fd941476d8d8935384b6660",
+    "pipeline/prospectus_pipeline/out/extracted/HKIPO-MB2672.json": "7438293bc65791e558ff25a01d7d50417f6d36c230e3b9db11b9390d58222669",
+    "pipeline/prospectus_pipeline/data/allot/text/HKIPO-MB2672.jsonl": "59fd9f68d309ebffcb0fc5df37d68e75308951c5f2f2ae80d96c20eaf2ff4cdc",
+    "pipeline/prospectus_pipeline/data/market/hk03231.json": "75d2d206b22cbe4865ec6763864ea1055199be9ac2c9fdd529b52bdfa7ca09fe",
+    "pipeline/prospectus_pipeline/out/extracted/HKIPO-MB3231.json": "5101be74565c0c13f72c079a8b1dad9c776ec4a3921c16b3077eeb6ede7fe2cd",
+    "pipeline/prospectus_pipeline/data/allot/text/HKIPO-MB3231.jsonl": "b85d18feb24ea24dc1a0499515a9ff9060edc26976c0e05ef9063973800869f1"
+  }
+}

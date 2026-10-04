@@ -1,0 +1,74 @@
+{
+  "prepared_on": "2026-10-04",
+  "cutoff": "2026-09-30",
+  "topic": 1,
+  "status": "current_sample_analysis_complete; causal mechanisms and actual dates not identified",
+  "n_total": 113,
+  "n_primary": 43,
+  "clusters": 9,
+  "classification_counts": {
+    "two_sided_range": 43,
+    "recorded_equal_endpoints": 39,
+    "confirmed_maximum_only": 30,
+    "confirmed_single_price": 1
+  },
+  "estimation": "HC3; CV3 full-estimate centering with t(G-1); exact restricted Rademacher cluster-t (512 signs)",
+  "multiplicity": "Historical seven-outcome Holm family retained; exploratory asymmetry has a separate 12-test Holm family",
+  "random_resampling": false,
+  "formal_source_writeback": false,
+  "checks": {
+    "cv3_block_sandwich": true,
+    "fixed_sample": true,
+    "stage_coefficient_addition": true,
+    "range_geometry": true,
+    "linear_programming_anchor_bounds": true,
+    "historical_main_coefficients": true
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "input_sha256": {
+    "analysis/out/pricing_adjustment/issuer_sample.csv": "edaf79313313cd59b5bdd8a37f10d6ece383d47c89343ccc471564e19165f2d4",
+    "analysis/out/pricing_adjustment/lower_bound_audit/issuer_evidence.csv": "873979c6a7d7b260ce640587cb597cb7b6a7bcf1d84a3b5a8bfc7526450be272",
+    "pipeline/prospectus_pipeline/data/market/first_day_returns/hsi_bars.json": "23e83c980993d42f1c778728ccdf7562f66eab6158e535434377d189a0cd9946",
+    "analysis/out/pricing_adjustment/steps/step02_date_provenance.csv": "c9dcdaeeff771a2a9ccb3a99d5206736dedc12b0b28743b3898b132ebba98aa4",
+    "analysis/out/pricing_adjustment/range_regressions.csv": "1aecd16b6f3cd4835e7c10a1b28d2f2d7ef2e5dd3a28c62d88389bc8dfb8a30c",
+    "analysis/pricing_topic1_completion_2026.py": "8e73efb9d083536678a7ebc89be532f16ada8d4f5d534c8842db5e45495e6481",
+    "analysis/specifications/pricing_topic1_completion.md": "90bb78ff935699c4368784af9abc797bff218b43971d242f41329f5f12a82453"
+  },
+  "report_scope": "Topic 1 only; current-sample empirical assessment complete, causal mechanism unverified",
+  "report_tables": 16,
+  "report_source_sha256": "e2a8855274fe2c4c5cfa8e017f74754b82e8a282d60d88f5a2660ccc34d97865",
+  "report_builder_sha256": "b76b9f60f9cefa534bf5a23d0f7329f3c1d5defc0057ab72a4b174e3a5a3f4c2",
+  "report_pdf_sha256": "35d24ad2d09d3a80497ba89aebf7cf823002df989df4f947a5f1cb8b9829e563",
+  "report_pdf_pages": 8,
+  "validation": {
+    "focused_tests": "3 passed",
+    "native_latex_compiler": "success",
+    "pdf_export": "success",
+    "all_pages_visually_reviewed": true,
+    "pdf_page_count": 8
+  },
+  "output_sha256": {
+    "anchor_sensitivity_panel.csv": "ad2cd242cb64d6fe4e0b744b183922556fa18422b1b93a8f69896c9b76591a79",
+    "anchor_slope_bounds.csv": "84f38e037d8bc071ef52f939860a662ce27ab4f02cc821f20fe1531446c69efe",
+    "asymmetry.csv": "dfe9a15453ac988746494b37c94d9135883762769da8322512766fba8d4c032b",
+    "audited_issuer_panel.csv": "dae654df99cde885d51aeeba0826526c2882cdc083de7b1b7ad286e2a16914b4",
+    "ceiling_groups.csv": "19cc77da8a48f2f3b35c2c0ead0f60176dadcf1818c307dd9bb44fca15665414",
+    "cluster_information.csv": "3773e2b5bb0c100953883e79c84d973d05fc1f4f98dd726290768f5a21d67940",
+    "disclosure_groups.csv": "2647874ccac7c81ee0ebfb186f143039f13388c038f34d8e9aa6cca03219113a",
+    "key_counterexample_evidence.csv": "73e5d55d661d53a9d2db7da72dbab7e30adf766906b22c2ac8add0eaba7e8136",
+    "leave_one_month_out.csv": "003c581484b6bcd8fe2193adf776a6c340d688bca5b2a6ad31e50bafd6513f7a",
+    "maximum_only_panel.csv": "8bcf9f9590a3200854dea4002704d6d99e4d8e48c1f79b936a002d982f4f8db1",
+    "primary_family_inference.csv": "b01f7e544c991f1ec8276cd151b8f752be77dbcab8c054055c62dadee29b754e",
+    "public_market_associations.csv": "d118a31c02d016ff0adc8ac7b852a62255550223850168ad9d36b87d76cdde9e",
+    "range_descriptives.csv": "cebac45f6640a2a8be06bcfb046073dafc4590e186ed576a4885f4d18f9886c5",
+    "range_geometry.csv": "3531249e88a83fa0a57183105f8e33fdc9d2fbde2d49cd5e4122422b4a91becf",
+    "revision_stage_groups.csv": "d64e12be15cfee5aa8a232eee9b8e87fcd1b829c4e487fedabd7172d81c23c5d",
+    "route_disclosure_overlap.csv": "8bbd9af0fbf5e8da3eeaa285aa641625b8bbb9022b4832485100ee94bcdfb196",
+    "stage_inference.csv": "6b48aa58ee14ca25d83f50b72dc40ce33665b3c2e831971f2b77f17253ebc3a5"
+  }
+}

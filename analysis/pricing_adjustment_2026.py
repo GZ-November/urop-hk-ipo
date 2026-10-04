@@ -319,8 +319,8 @@ def main():
                 'scope':'Exploratory associations and retrospective temporal assessment. No causal or untouched-holdout claim.',
                 'versions':{'pandas':pd.__version__,'numpy':np.__version__,'statsmodels':sm.__version__ if hasattr(sm,'__version__') else __import__('statsmodels').__version__}}
     (OUT/'run_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    from pricing_adjustment_report import write_report
-    write_report(d, range_results, margin_results, rolling)
+    # Completed Topic 1 has a dedicated builder; preserve the open editor source.
+    print('Report generation: run analysis/pricing_topic1_report.py for Topic 1.')
     print('Price status:',manifest['price_status_counts'])
     print(range_results[range_results.model.eq('quarter_controls')].to_string(index=False))
     print(margin_results[margin_results.model.eq('margin_and_launch_size')].to_string(index=False))

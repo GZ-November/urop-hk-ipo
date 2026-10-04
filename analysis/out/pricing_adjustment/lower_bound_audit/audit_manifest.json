@@ -1,0 +1,17 @@
+{
+  "audit_date": "2026-10-04",
+  "input_sha256": "edaf79313313cd59b5bdd8a37f10d6ece383d47c89343ccc471564e19165f2d4",
+  "selected_issuers": 31,
+  "full_prospectuses": 31,
+  "confirmed_maximum_only": 30,
+  "confirmed_single_price": 1,
+  "numeric_lower_endpoint_found": 0,
+  "unresolved": 0,
+  "formal_writeback": false,
+  "classification_after_research_review": {
+    "two_sided_range": 43,
+    "single_or_equal_endpoint_price": 40,
+    "maximum_only": 30
+  },
+  "script_sha256": "6bdc230eb96ffa1ce2338b6b2a300658942b70fd91534f1ce03d297bf49a3aed"
+}

@@ -2,7 +2,7 @@
 
 | Report | Status |
 |---|---|
-| Price adjustment and pre-deadline retail information: [PDF](exported_pdfs/HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.pdf) / [LaTeX](HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.tex) / [text](HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.md) | English follow-up: fixed-sample pricing-stage estimates, source classification, sensitivity, information timing and temporal prediction checks |
+| Topic 1: pricing adjustment and first-day returns: [PDF](exported_pdfs/HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.pdf) / [LaTeX](HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.tex) / [text](HK_IPO_2026_PRICING_AND_RETAIL_INFORMATION.md) | Completed current-sample assessment: eight-page English report, 16 tables, audited disclosure classes, fixed-sample stages, CV3/WCR inference, date bounds, selection and identification limits; Topics 2 and 3 are separate |
 | [2026 comprehensive report](HK_IPO_2026_COMPREHENSIVE_REPORT.tex) / [text](HK_IPO_2026_COMPREHENSIVE_REPORT.md) | English report with compact LaTeX layout, sample statistics, uses of the 202 Excel fields, retail returns and a mentor draft |
 | [Mentor discussion draft](RETAIL_MENTOR_BRIEF_2026-10-03.md) | Latest source-corrected one-lot results; gross baseline, deterministic fee/quarter/winner sensitivity; no simulation |
 | [Evidence assessment and exclusions](RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) | 2649/3355 official corrections, 19 issuer totals, unresolved provenance and exclusion results |

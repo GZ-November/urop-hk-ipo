@@ -1,0 +1,51 @@
+{
+  "prepared_on": "2026-10-04",
+  "topic": 1,
+  "step": 4,
+  "n": 43,
+  "designs": {
+    "revision_only": [
+      "revision"
+    ],
+    "quarter_controls": [
+      "revision",
+      "q2",
+      "q3"
+    ],
+    "launch_size_and_ah": [
+      "revision",
+      "log_planned_proceeds",
+      "ah_true"
+    ],
+    "subscription_market_and_size": [
+      "revision",
+      "log_subscription_market",
+      "log_planned_proceeds"
+    ]
+  },
+  "outcomes": [
+    "log_close",
+    "log_opening",
+    "log_intraday",
+    "log_mair_subscription"
+  ],
+  "estimators": [
+    "OLS HC3 with t reference",
+    "Median q=0.5",
+    "Huber t=1.345, MAD scale, H1 covariance"
+  ],
+  "models": 48,
+  "scope": "Post-exploration sensitivity checks. Different estimands; no new robust/cluster significance claim.",
+  "validation": "Independent median LP objectives; OLS matches prior estimates; OLS stage identities; all fits retain 43 firms.",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "input_sha256": {
+    "analysis/out/pricing_adjustment/issuer_sample.csv": "edaf79313313cd59b5bdd8a37f10d6ece383d47c89343ccc471564e19165f2d4",
+    "analysis/pricing_robust_stages_2026.py": "180a53a689e8845b22716d82aafdd3ac32d53455279143faf6f4451b5656f7e7",
+    "analysis/out/pricing_adjustment/range_regressions.csv": "1aecd16b6f3cd4835e7c10a1b28d2f2d7ef2e5dd3a28c62d88389bc8dfb8a30c"
+  }
+}

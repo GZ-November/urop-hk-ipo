@@ -48,6 +48,7 @@ existing research column names and definitions.
 
 | Script | Output |
 |---|---|
+| `pricing_topic1_completion_2026.py`, `pricing_topic1_report.py` | `out/pricing_adjustment/topic1/`: completed Topic 1 on the fixed 43-firm range sample; audited 113-firm disclosure classes, CV3/WCR, date sensitivity bounds and an English Topic 1-only LaTeX report |
 | `retail_2026_report.py` | `out/retail_2026_report/`: descriptive tables, direct workbook coverage for all 202 fields, data meanings and research uses; generates the English [LaTeX report](../docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) and mentor draft without simulation |
 | `basic_statistics_2026.py` | `out/basic_statistics/`: 202-field coverage, core descriptive statistics, quarter/month/route/demand groups and pairwise Spearman correlations; no regressions or hypothesis tests |
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |

@@ -1,0 +1,3 @@
+code,offer_price,range_low,range_high,raw_open,raw_close,listing_date,market_source_url,allotment_pdf_page,basis
+2672.HK,15.6,15.6,20.28,61.1,73.0,2026-06-29,https://data.gtimg.cn/flashdata/hk/daily/26/hk02672.js,2,"Final offer price checked in stored allotment text; raw market prices match cache; endpoints match stored extraction, not a new full semantic certification."
+3231.HK,14.45,14.45,19.55,35.0,36.68,2026-09-09,https://data.gtimg.cn/flashdata/hk/daily/26/hk03231.js,2,"Final offer price checked in stored allotment text; raw market prices match cache; endpoints match stored extraction, not a new full semantic certification."
