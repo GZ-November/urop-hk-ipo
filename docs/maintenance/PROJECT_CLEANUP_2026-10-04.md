@@ -18,10 +18,10 @@
 
 | 原位置 | 新位置 |
 |---|---|
-| `docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf` | [旧报告 PDF](../archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) |
-| `docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex` | [旧报告 LaTeX](../archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
-| `docs/CODE_REVIEW_2026-09-30.md` | [历史代码检查](../archive/reviews-2026-09-30/CODE_REVIEW_2026-09-30.md) |
-| `docs/AGY_INTEGRATION_2026-09-30.md` | [历史来源集成复核](../archive/reviews-2026-09-30/AGY_INTEGRATION_2026-09-30.md) |
+| `docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf` | [旧报告 PDF](../archive/README.md) |
+| `docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex` | [旧报告 LaTeX](../archive/README.md) |
+| `docs/CODE_REVIEW_2026-09-30.md` | [历史代码检查](../archive/README.md) |
+| `docs/AGY_INTEGRATION_2026-09-30.md` | [历史来源集成复核](../archive/README.md) |
 | `docs/reports/PROJECT_CLEANUP_2026-10-03.md` | [上一轮清理记录](PROJECT_CLEANUP_2026-10-03.md) |
 | `Survey Paper/Lowry, Michaely & Volkova 2017 IPO survey.pdf` | `docs/literature/Lowry, Michaely & Volkova 2017 IPO survey.pdf`（仅本地） |
 
@@ -42,3 +42,5 @@
 逐文件移动、删除、链接目标和保护哈希保存在 [本次清单](../../pipeline/backups/local_cleanup_2026-10-04/manifest.json)。这是被 Git 忽略的本地维护文件。
 
 移动文件可按清单反向恢复；先确认旧路径为空，避免覆盖后续文件。重复快捷链接可按清单中的 `path` 和 `target` 重建。删除的缓存由正常运行重新生成。上一轮旧运行的压缩归档与恢复方式仍见 [2026-10-03 清理记录](PROJECT_CLEANUP_2026-10-03.md)。
+
+后续处理（2026-10-04）：按用户要求，五个正式季度的旧备份、三份旧采集 Excel、旧成本表和过时 Markdown 已进一步合并收起，当前恢复位置见 [旧版本归档说明](../archive/README.md)。本记录中的原位置描述的是本轮整理当时状态。

@@ -1,7 +1,7 @@
 # Sponsor effects, 2026
 
 The first-named sponsor in the `Sponsor(s)` column is used as a proxy. Earlier source review found unreliable entries in `Lead sponsor name`
-(see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md), so that field is not used. First-named order does not establish actual lead responsibility.
+(see ACADEMIC_EXTENSIONS_2026.md in the archive described by docs/archive/README.md), so that field is not used. First-named order does not establish actual lead responsibility.
 Sponsors with at least 3 complete-case deals are compared (9 sponsors, 85 deals).
 
 | First-named sponsor | Deals | Mean IR | Median IR | Share listed Apr-Jun |

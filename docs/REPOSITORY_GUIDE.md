@@ -2,6 +2,8 @@
 
 ## 放在哪里
 
+本地从根目录 [00_START_HERE.html](../00_START_HERE.html) 查找文件；Finder 中 `00_Research_Files` 直接进入分类目录。
+
 根目录 [Research Workspace](../research_workspace/README.md) 是英文命名的日常资料入口，采用相对文件链接，不改变下表正式路径。链接由 `config/research_workspace.json` 管理，使用 `make workspace` 建立、`make workspace-check` 验证。代码职责与接口见 [Architecture Guide](ARCHITECTURE.md)；PDF仍是导出快照。
 
 | 工件 | 归属 | 维护方式 |
@@ -12,7 +14,7 @@
 | 表格与图 | `analysis/out/<module>/` | 由代码生成，避免手工修正文内数值 |
 | 研究设计与证据说明 | `docs/` | 更新 [文档索引](README.md)，标明样本、基准日期与结果链接 |
 | 当前综合报告与导师短稿 | `docs/reports/` | 当前 LaTeX 与 Markdown 稿；配套表格链接到 `analysis/out/` |
-| 被取代的数值稿与历史检查 | `docs/archive/<reason>/` | 保留原结论并更新导航；与当前报告分开 |
+| 被取代的 Excel、数值稿与历史检查 | `docs/archive/README.md` 处理记录 | 已移到本机垃圾桶；曾追踪的文件可从 Git 历史找回 |
 | 清理和恢复记录 | `docs/maintenance/` | 逐次记录移动、删除及核验；本地清单放 `pipeline/backups/` |
 | 文献副本 | `docs/literature/` | PDF 仅本地保存，说明文件受 Git 管理 |
 | 审计、修正与排除记录 | `pipeline/reports/` | 保留可追溯明细和观测截止日期 |
@@ -52,3 +54,9 @@ git switch -c codex/your-research origin/main
 文档变更检查链接与 `git diff --check`。代码或数据口径变化运行相关回归测试及 `make check-code`；分析行为变化重新生成对应输出。行情刷新、证据审计和代码测试各有不同覆盖，不能用其中一项宣称所有数据已核实。
 
 新增研究应在提交中同时包含代码、样本筛选与生成结果，并在设计文档里链接输出；保留来源与覆盖记录。归档旧数值报告时保留其内容，不把新结论写入历史稿。
+
+[2026-10-04 文件导航与快照归档](maintenance/FILE_ORGANIZATION_2026-10-04.md)记录本轮导航入口、PDF 集中和旧 Excel 快照归档。修改导航来源后运行 `python3 tools/build_file_index.py`；分类快捷链接继续用 `make workspace` 维护。
+
+## 用户确认的保留范围（2026-10-04）
+
+2025 Q1、2025 Q2 的正式 Excel、季度 CSV、变量说明及对应来源证据是用户明确需要的研究数据，长期保留。与 2026 数据一起放入日常入口；不能仅因年份较早而作为旧版本清理。原数据内容及 pipeline 正式路径保持稳定。

@@ -2,7 +2,7 @@
 
 Outcome: disclosed underwriting commission on the HK offer, as a share of proceeds. The derived columns `Underwriting base commission rate`
 and `Total underwriting fee rate` in the master are not used. Earlier source review found that these derived fields did not reliably follow
-the disclosed commissions (see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md). The regression uses the disclosed HK commission.
+the disclosed commissions (see ACADEMIC_EXTENSIONS_2026.md in the archive described by docs/archive/README.md). The regression uses the disclosed HK commission.
 
 ## Distribution
 

@@ -161,5 +161,5 @@ make check-code
 make workspace-check
 ```
 
-The A+H topic remains separate. This round does not add a causal design or resolve its external-price anomaly. The preceding narrative is preserved as a historical snapshot in [the archive]({repo_prefix}/docs/archive/pre-retail-distribution-2026-10-03/EMPIRICAL_RESEARCH_REPORT_2026.md).
+The A+H topic remains separate. This round does not add a causal design or resolve its external-price anomaly. The preceding narrative is preserved as a historical snapshot in [the archive]({repo_prefix}/docs/archive/README.md).
 '''

@@ -15,6 +15,11 @@
 | [Retail_Evidence_Assessment.md](Retail_Evidence_Assessment.md) | `docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md` |
 | [2026_Comprehensive_Report.tex](2026_Comprehensive_Report.tex) | `docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex` |
 | [2026_Comprehensive_Report.md](2026_Comprehensive_Report.md) | `docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md` |
+| [Exported_PDF_Reports](Exported_PDF_Reports) | `docs/reports/exported_pdfs/`，本地 PDF，保留原文件名与内容 |
+| [HK_Stock_Market_and_IPO_Overview_Draft.tex](HK_Stock_Market_and_IPO_Overview_Draft.tex) | `docs/reports/HK_STOCK_MARKET_AND_IPO_OVERVIEW_2026.tex`，在用的概览草稿 |
+| [HK_IPO_Institutions_Source_Notes.md](HK_IPO_Institutions_Source_Notes.md) | `docs/reports/HK_IPO_INSTITUTIONS_SOURCE_NOTES.md` |
+| [HK_Stock_Market_Source_Notes.md](HK_Stock_Market_Source_Notes.md) | `docs/reports/HK_STOCK_MARKET_SOURCE_NOTES.md` |
+| [US_IPO_Comparison_Source_Notes.md](US_IPO_Comparison_Source_Notes.md) | `docs/reports/US_IPO_COMPARISON_SOURCE_NOTES.md` |
 
 这些条目是快捷链接，打开的是原文件。不要把链接当成另一份数据，也不要单独分发这个目录。
 

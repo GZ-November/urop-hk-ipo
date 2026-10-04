@@ -35,13 +35,32 @@
     "analysis/out/retail_distribution/a_matched_aftermarket.csv": "97c4dfa559ad3fc85e6ea16be4970662c7da3f33b190b620ab92698099bea8cc",
     "analysis/out/retail_distribution/3355_original_and_derived.json": "c98a5529b23ecb6490735cd33a717d0d59094cd6708e7a2199fa89b992f08cb5",
     "analysis/out/retail_distribution/a_influence_regressions.csv": "a4a45e75b2b9c2a506578cf53fd1a9b180a7ac9ce56145c629c58bff8914b3b0",
-    "analysis/out/retail_distribution/research.md": "383dc5a667f5fd5dce666a8d0ab3d8bc1a3a4ed6ac89d0dae4c023211574da9a",
+    "analysis/out/retail_distribution/research.md": "3405158cdbbbea0729d607fad973d6c8d91395d21e9d7097a13ea4c01f50ce1e",
     "analysis/out/retail_distribution/retail_profit_distribution.png": "cb4509acb45a2688e56c3ff4c8ac084a6d192622324a8d16509c7b2cf1177e61",
     "analysis/out/retail_distribution/month_bootstrap_mean_net.csv": "eeaf1dd2450a24947ec38309eb743fcdb0b181c5e699aa4dde546dfdfb806666",
     "analysis/out/retail_distribution/fee_frontier.csv": "11f8a43a841802a1a400f3fa2bc808eab01e50c5dffd55ecde8d8d1191f69f4b",
     "analysis/out/retail_distribution/a_subgroup_stability.csv": "92c8d890e40d3e8f0f8afeac03c2c87b5776e3b0571f367c53d1eba5062e4698",
     "analysis/out/retail_distribution/portfolio_distributions.csv": "13d8bf39b0c68c9b4098a73f5c81a6544c4e870a18c080ad230234b7d320542c",
     "analysis/out/retail_distribution/applicant_outcomes.csv": "fa72e90f01422cfd6330a18582a1e3416966ad6030d7e5020ae042910260479d",
-    "docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md": "5e5fbd1dc8b08a81a728771a8a4fcd658026ddca0230318f3ccdd319b1be247e"
-  }
+    "docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md": "2f6e4a5a81179307a34a79c74ef3a4bd2a9ee4c03657111b0a9efd084d7fbd8b"
+  },
+  "presentation_maintenance": [
+    {
+      "date": "2026-10-04",
+      "reason": "Retired files were compressed into one recovery archive; only archive links in report text changed.",
+      "analysis_rerun": false,
+      "original_run_inputs_preserved": true,
+      "output_hash_changes": {
+        "analysis/out/retail_distribution/research.md": {
+          "before_sha256": "383dc5a667f5fd5dce666a8d0ab3d8bc1a3a4ed6ac89d0dae4c023211574da9a",
+          "after_sha256": "3405158cdbbbea0729d607fad973d6c8d91395d21e9d7097a13ea4c01f50ce1e"
+        },
+        "docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md": {
+          "before_sha256": "5e5fbd1dc8b08a81a728771a8a4fcd658026ddca0230318f3ccdd319b1be247e",
+          "after_sha256": "2f6e4a5a81179307a34a79c74ef3a4bd2a9ee4c03657111b0a9efd084d7fbd8b"
+        }
+      },
+      "current_report_renderer_sha256": "ebcf698efecde662cce112f34baa6459d269e733f87e6ec664c080e8042d5c35"
+    }
+  ]
 }

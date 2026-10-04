@@ -1,19 +1,21 @@
 # Research Workspace
 
+本地日常入口：双击项目根目录的 **[00_START_HERE.html](../00_START_HERE.html)**，可用中文搜索 Excel、CSV、报告、模板和历史文件。Finder 中的 **`00_Research_Files`** 快捷目录也直接进入这里。
+
 This is the daily entry point for research data, reports, and results.
 All directory and file names use English.
-The current 2026 sample contains 113 IPOs: Q1 38, Q2 45, and Q3 30.
+The stored data include 2025 Q1–Q2 and 2026 Q1–Q3. The current 2026 study contains 113 IPOs: Q1 38, Q2 45, and Q3 30.
 The observation cutoff is 30 September 2026.
 
 | Directory | Contents |
 |---|---|
-| [01_workbooks](01_workbooks/) | Canonical 2026 quarterly Excel workbooks |
+| [01_workbooks](01_workbooks/) | Canonical 2025 Q1–Q2 and 2026 Q1–Q3 Excel workbooks |
 | [02_research_inputs](02_research_inputs/) | Clean quarterly CSVs, master panel, A+H references, and margin observations |
 | [03_data_dictionary](03_data_dictionary/) | Quarterly codebooks, variable registry, and terminology |
 | [04_reports_and_plans](04_reports_and_plans/) | Current comprehensive report, mentor draft, plans, and source assessment |
 | [05_analysis_results](05_analysis_results/) | Generated tables and figures, grouped by research topic |
 | [06_sources_and_audits](06_sources_and_audits/) | Official sources, source evidence, extraction records, and audits |
-| [07_historical_data](07_historical_data/) | Stored 2025 data, earlier reports, and historical reviews |
+| [07_historical_data](07_historical_data/) | Cross-year references and historical-data navigation |
 
 ## Current English research reports
 
@@ -33,6 +35,7 @@ The observation cutoff is 30 September 2026.
 - [2026 Q3 Excel workbook](01_workbooks/2026_Q3_IPO_Data.xlsx)
 - [Latest comprehensive report](04_reports_and_plans/2026_Comprehensive_Report.tex)
 - [Current research plan](04_reports_and_plans/Current_Research_Plan.md)
+- [2025 Q1 workbook](01_workbooks/2025_Q1_IPO_Data.xlsx) / [2025 Q2 workbook](01_workbooks/2025_Q2_IPO_Data.xlsx)
 - [All-years master panel](02_research_inputs/All_Years_Master_Panel.csv)
 
 The master includes both 2025 and 2026 listings. Select actual 2026 listing dates for the current study. The analysis input module applies this rule.
@@ -41,7 +44,7 @@ The master includes both 2025 and 2026 listings. Select actual 2026 listing date
 
 These entries are relative links to canonical files, not independent copies. Opening a link opens the original. Updated canonical files appear here automatically. Follow the pipeline's source, validation, and review requirements before changing data.
 
-The [earlier PDF](07_historical_data/Earlier_Research_Progress_Report.pdf) is an exported historical snapshot. It is stored with historical material. The current comprehensive report uses a separate LaTeX source and the editor's PDF preview.
+Retired PDF reports and Markdown/Excel versions have been moved to macOS Trash. The current comprehensive report uses a separate LaTeX source and the editor's PDF preview.
 
 Each directory has a short `README.md` with file links and a description. Cleanup and recovery records are in [project maintenance](../docs/maintenance/README.md). Local reference papers are in [literature](../docs/literature/README.md).
 

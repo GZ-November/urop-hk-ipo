@@ -5,9 +5,13 @@
 
 **From HKEX disclosures to research data and reproducible IPO analysis.**
 
+本地找数据：双击根目录 **[00_START_HERE.html](00_START_HERE.html)**，按年份、Excel、CSV 或报告搜索。Finder 中双击 **`00_Research_Files`**，即可进入分类文件目录。
+
 This project builds evidence-linked datasets for ordinary Hong Kong Main Board IPOs. It studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
 
-**Current study: 113 IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
+**Stored datasets: 2025 Q1–Q2 and 2026 Q1–Q3 | 202-variable workbook schema.**
+
+Current study: 113 IPOs listed in 2026 Q1–Q3; observation cutoff: 30 September 2026. The 2025 Q1 and Q2 workbooks and exports remain available alongside 2026 data.
 
 ## Understand the project in one diagram
 
@@ -59,6 +63,7 @@ and CSV downloads. See the [dashboard guide](dashboard/README.md) for refresh co
 | Explore the data visually | [HK IPO Observatory](dashboard/index.html) / [Open guide](dashboard/README.md) |
 | Browse all research files locally | [Research Workspace](research_workspace/README.md) |
 | Open the latest Q3 workbook | [2026 Q3 Excel](pipeline/cohorts/HKIPO-MB2026Q3.xlsx) |
+| Open 2025 workbooks | [2025 Q1](pipeline/cohorts/HKIPO-MB2025Q1.xlsx) / [2025 Q2](pipeline/cohorts/HKIPO-MB2025Q2.xlsx) |
 | Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
 | Use the combined data | [All-years master CSV](pipeline/exports/HKIPO-MB-MASTER_clean.csv) |
 | Understand fields and units | [Variable registry](pipeline/registry/HKIPO_Variable_Registry.yaml) / [Q3 codebook](pipeline/codebooks/HKIPO_2026Q3_Codebook.md) |
@@ -81,13 +86,13 @@ On GitHub, use the direct file links above. The workspace's relative links are i
 urop-hk-ipo/
 |
 +-- research_workspace/       DAILY USE: English names, linked files
-|   +-- 01_workbooks/            2026 quarterly Excel
+|   +-- 01_workbooks/            2025 Q1–Q2 and 2026 Q1–Q3 Excel
 |   +-- 02_research_inputs/      CSV, A+H and margin inputs
 |   +-- 03_data_dictionary/      Field definitions and codebooks
 |   +-- 04_reports_and_plans/    Research report and next steps
 |   +-- 05_analysis_results/     Tables and figures by topic
 |   +-- 06_sources_and_audits/   Evidence and audit records
-|   `-- 07_historical_data/     Stored 2025 data and earlier reports
+|   `-- 07_historical_data/     Cross-year references and historical navigation
 |
 +-- analysis/                 RESEARCH CODE
 |   +-- research_inputs.py       Data loading and sample selection

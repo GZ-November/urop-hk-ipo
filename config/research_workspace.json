@@ -71,14 +71,6 @@
       "source": "docs/RESEARCH_DESIGN_2026.md"
     },
     {
-      "name": "07_historical_data/Earlier_Research_Progress_Report.pdf",
-      "source": "docs/archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf"
-    },
-    {
-      "name": "07_historical_data/Earlier_Research_Progress_Report.tex",
-      "source": "docs/archive/research-progress-2026-10-02/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex"
-    },
-    {
       "name": "04_reports_and_plans/Research_Start.md",
       "source": "docs/RESEARCH_START.md"
     },
@@ -143,27 +135,27 @@
       "source": "pipeline/prospectus_pipeline/data"
     },
     {
-      "name": "07_historical_data/2025_Q1_Clean_Data.csv",
+      "name": "02_research_inputs/2025_Q1_Clean_Data.csv",
       "source": "pipeline/exports/HKIPO-MB2025Q1_clean.csv"
     },
     {
-      "name": "07_historical_data/2025_Q1_Codebook.md",
+      "name": "03_data_dictionary/2025_Q1_Codebook.md",
       "source": "pipeline/codebooks/HKIPO_2025Q1_Codebook.md"
     },
     {
-      "name": "07_historical_data/2025_Q1_IPO_Data.xlsx",
+      "name": "01_workbooks/2025_Q1_IPO_Data.xlsx",
       "source": "pipeline/cohorts/HKIPO-MB2025Q1.xlsx"
     },
     {
-      "name": "07_historical_data/2025_Q2_Clean_Data.csv",
+      "name": "02_research_inputs/2025_Q2_Clean_Data.csv",
       "source": "pipeline/exports/HKIPO-MB2025Q2_clean.csv"
     },
     {
-      "name": "07_historical_data/2025_Q2_Codebook.md",
+      "name": "03_data_dictionary/2025_Q2_Codebook.md",
       "source": "pipeline/codebooks/HKIPO_2025Q2_Codebook.md"
     },
     {
-      "name": "07_historical_data/2025_Q2_IPO_Data.xlsx",
+      "name": "01_workbooks/2025_Q2_IPO_Data.xlsx",
       "source": "pipeline/cohorts/HKIPO-MB2025Q2.xlsx"
     },
     {
@@ -227,8 +219,24 @@
       "source": "analysis/out/retail_2026_report"
     },
     {
-      "name": "07_historical_data/Reviews_2026_09_30",
-      "source": "docs/archive/reviews-2026-09-30"
+      "name": "04_reports_and_plans/Exported_PDF_Reports",
+      "source": "docs/reports/exported_pdfs"
+    },
+    {
+      "name": "04_reports_and_plans/HK_Stock_Market_and_IPO_Overview_Draft.tex",
+      "source": "docs/reports/HK_STOCK_MARKET_AND_IPO_OVERVIEW_2026.tex"
+    },
+    {
+      "name": "04_reports_and_plans/HK_IPO_Institutions_Source_Notes.md",
+      "source": "docs/reports/HK_IPO_INSTITUTIONS_SOURCE_NOTES.md"
+    },
+    {
+      "name": "04_reports_and_plans/HK_Stock_Market_Source_Notes.md",
+      "source": "docs/reports/HK_STOCK_MARKET_SOURCE_NOTES.md"
+    },
+    {
+      "name": "04_reports_and_plans/US_IPO_Comparison_Source_Notes.md",
+      "source": "docs/reports/US_IPO_COMPARISON_SOURCE_NOTES.md"
     }
   ]
 }

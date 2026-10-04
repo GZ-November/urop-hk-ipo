@@ -111,6 +111,7 @@ analysis-list:
 
 workspace:
 	@"$(PYTHON)" run.py workspace
+	@"$(PYTHON)" tools/build_file_index.py
 
 workspace-check:
 	@"$(PYTHON)" run.py workspace --check

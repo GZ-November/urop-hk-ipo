@@ -11,3 +11,5 @@
 Generated numbers and charts stay in [analysis outputs](../../analysis/out/); source and independent review records stay in [pipeline reports](../../pipeline/reports/). Daily navigation uses [Research Workspace](../../research_workspace/README.md).
 
 Earlier reports are in the [archive](../archive/README.md). Cleanup and recovery records are in [maintenance](../maintenance/README.md). Source notes and unfinished report drafts can remain here while they are in use.
+
+综合报告 [PDF](exported_pdfs/HK_IPO_2026_Comprehensive_Report.pdf) 集中在 [exported_pdfs](exported_pdfs/README.md)。根目录的 [文件导航](../../00_START_HERE.html) 可以搜索报告、Excel 和 CSV。
