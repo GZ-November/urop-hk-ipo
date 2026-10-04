@@ -105,14 +105,15 @@ def retail_analysis(sample: pd.DataFrame) -> str:
     fig.tight_layout()
     fig.savefig(OUT / 'retail_denominators.png', dpi=200)
     plt.close(fig)
-    return f'''## 零售申请资金与配售资金的收益
+    return f'''## Retail application capital and allocated capital
 
-共同有效样本 N={summary['n']}，上市月份 G={len(groups)}；2,000 次按上市月重抽样，seed={SEED}。少月份区间仅作描述，不能消除市场冲击或信息类型选择。
+Common valid sample N={summary['n']}, listing-month clusters G={len(groups)}. The intervals use 2,000 listing-month resamples, seed={SEED}; few-cluster intervals are descriptive and do not eliminate market shocks or information-type selection.
 
 {to_markdown(table.apply(lambda col: col.map(lambda value: f'{100 * value:.3f}%')), 'Measure')}
 
-表中收益以百分比显示，CSV保留小数。申请 HK$10,000 的平均毛收益为 HK${10000 * summary['application_return']:.2f}。这是发行人层面平均配售率下的等额申请情景，不能当作一手中奖概率或实际账户收益。融资情景详见 retail_cost_scenarios.csv；费率、借款比例及2天占款是情景参数，未从真实借贷记录估计。未补入股票交易、申购交易费或机会成本；不能称完整净投资回报。
+Returns above are percentages; CSVs retain decimals. A HK$10,000 proportional application has mean expected gross profit of HK${10000 * summary['application_return']:.2f}. This legacy issuer-average scenario is not a one-lot win probability or actual account result. The tier-based retail study separately uses disclosed application tiers and excludes employee reserved allotments from its macro comparison. In retail_cost_scenarios.csv, fees, borrowing fractions and two funded days are assumptions, not measured account loans. Subscription/trading costs and opportunity cost are excluded; these are not complete net investment returns.
 '''
+
 
 
 def cornerstone_analysis(sample: pd.DataFrame) -> str:
@@ -158,14 +159,15 @@ def cornerstone_analysis(sample: pd.DataFrame) -> str:
     display = result[['n', 'g', 'b', 'hc3_se', 'hc3_p', 'restricted_wild_p', 'rv_to_zero_equal_strength']].copy()
     for col in display:
         display[col] = display[col].map((lambda value: str(int(value))) if col in ('n', 'g') else (lambda value: f'{value:.3f}'))
-    return f'''## 基石份额：关联、少聚类推断与遗漏变量
+    return f'''## Cornerstone share: association, few-cluster inference and omitted variables
 
 {to_markdown(display, 'Specification')}
 
-两个规格共用同一发行人样本。焦点变化0.10对应 log(1+IR) 变化0.10×b，exp(0.10×b)-1是价格比(1+IR)的比例变化，不是 IR 百分点。wild 检验沿用已验证的 restricted bootstrap-t，枚举 G 个上市月的全部 Rademacher 符号组合；HC3 的两个焦点检验独立作为 Holm family，聚类 p 不混用于星号。
+Both specifications use the same issuer sample. A 0.10 change in the focus regressor changes log(1+IR) by 0.10*b; exp(0.10*b)-1 is the proportional change in (1+IR), not an IR percentage-point change. The restricted wild bootstrap-t enumerates all Rademacher patterns across listing months. The two HC3 focus tests form a Holm family; cluster p-values are not mixed into HC3 stars.
 
-RV/partial-R² 是点估计对未观测混杂的代数诊断，使用普通 OLS 的残差尺度，不是聚类显著性或因果置信区间。最终需求和基石份额均内生；加入需求可能条件化于通道或碰撞点。任意一个显著结果都不能修复识别。
+RV and partial R-squared diagnose point-estimate sensitivity using the ordinary OLS residual scale, not cluster significance or causal confidence intervals. Final demand and cornerstone share are endogenous; conditioning on demand may condition on a mediator or collider. Significance cannot repair identification.
 '''
+
 
 
 def event_readiness(sample: pd.DataFrame, as_of: str) -> None:
@@ -214,10 +216,10 @@ def main() -> None:
     sample = sample[sample.listing_date <= pd.Timestamp(args.as_of)].copy()
     if sample.empty:
         raise ValueError("No 2026 listings observed at the requested cutoff")
-    report = '# 2026 研究前沿：探索性实证\n\n设计见 docs/RESEARCH_DESIGN_2026.md；不作因果或预注册声明。\n\n'
+    report = '# 2026 Research Frontier: Exploratory Evidence\n\nDesign: docs/RESEARCH_DESIGN_2026.md. No causal or preregistration claim.\n\n'
     report += retail_analysis(sample) + cornerstone_analysis(sample)
     event_readiness(sample, args.as_of)
-    report += '\n事件与六日历月窗口覆盖见 event_readiness.csv；机制共同支持见 mechanism_support.csv。缺证据和未成熟分别保留，不填估计。\n'
+    report += '\nEvent and six-calendar-month coverage: event_readiness.csv. Mechanism overlap: mechanism_support.csv. Missing evidence and immature windows remain distinct; neither is imputed.\n'
     (OUT / 'research.md').write_text(report)
     market_inputs = [academic.et.BARS / name for name in ('hsi_bars.json', 'hstech_bars.json')]
     market_inputs += [academic.et.BARS / f"hk{code.split('.')[0].zfill(5)}.json" for code in sample['Stock Code']]

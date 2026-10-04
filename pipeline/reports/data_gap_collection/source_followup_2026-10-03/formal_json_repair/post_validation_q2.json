@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "target": "allot",
+  "expected_codes": [
+    "6656.HK",
+    "0068.HK",
+    "3277.HK",
+    "2476.HK",
+    "3296.HK",
+    "1879.HK",
+    "2493.HK",
+    "6810.HK",
+    "1609.HK",
+    "1187.HK",
+    "1236.HK",
+    "7630.HK",
+    "7666.HK",
+    "6871.HK",
+    "1511.HK",
+    "7688.HK",
+    "6872.HK",
+    "0901.HK",
+    "2723.HK",
+    "3310.HK",
+    "3388.HK",
+    "2553.HK",
+    "1081.HK",
+    "1779.HK",
+    "2290.HK",
+    "6658.HK",
+    "6675.HK",
+    "1392.HK",
+    "6067.HK",
+    "6132.HK",
+    "2335.HK",
+    "6106.HK",
+    "1688.HK",
+    "1956.HK",
+    "2272.HK",
+    "3661.HK",
+    "6228.HK",
+    "9630.HK",
+    "1191.HK",
+    "2672.HK",
+    "9637.HK",
+    "2697.HK",
+    "3952.HK",
+    "6715.HK",
+    "6915.HK"
+  ],
+  "records": [
+    {
+      "code": "2290.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2290.json",
+      "hash": "109cef86e780f6c195648d88c504f9ee70b2168c18abbdde722974285686e734",
+      "json_sha256": "1173d82924975dc16059e9eafd8ac191b0b695c0a2a9d1a5d8e125bfc9d61b0c",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    },
+    {
+      "code": "1392.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB1392.json",
+      "hash": "d49509ad09a33172e69376fee95c617db52baa1530678266a9018e4d5ebdef28",
+      "json_sha256": "14f6aa9df1c18b77a6e3c7870218b7387db4ea9faf62679b25c5f60aa6870dbe",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ"
+      ],
+      "errors": []
+    },
+    {
+      "code": "2335.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB2335.json",
+      "hash": "ad6eff2ad575c5ecfbd52af70cf04febaba990d5515faafe97add55c35d76bf3",
+      "json_sha256": "53a7a329d5d87c9dc9630797bd502be16ad3f7f7405c39c2893f7d327ae04c23",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CW"
+      ],
+      "errors": []
+    },
+    {
+      "code": "6106.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB6106.json",
+      "hash": "4256f39be90f726367ae0ecd35e9fd0d0a83d6d8cc0869d5709fa3adfe911c3a",
+      "json_sha256": "21395fa63405520d2ee486d576d7cb2ba1342a7d76bd230f8f6205396e6d1be2",
+      "status": "warning_missing",
+      "fields_total": 18,
+      "fields_missing": [
+        "col_CQ",
+        "col_DA",
+        "col_DB",
+        "col_DC"
+      ],
+      "errors": []
+    },
+    {
+      "code": "3952.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/allot/extracted/HKIPO-MB3952.json",
+      "hash": "09239b9cd9918a9a9987e091b8199bc6f9f994b8d34436309f6400500fc66cd7",
+      "json_sha256": "5f87c11496c15c8ad8165e39f3fd93dce0213e94994b873728d4f6f8e9733966",
+      "status": "pass",
+      "fields_total": 18,
+      "fields_missing": [],
+      "errors": []
+    }
+  ],
+  "missing_files": [
+    "6656.HK",
+    "0068.HK",
+    "3277.HK",
+    "2476.HK",
+    "3296.HK",
+    "1879.HK",
+    "2493.HK",
+    "6810.HK",
+    "1609.HK",
+    "1187.HK",
+    "1236.HK",
+    "7630.HK",
+    "7666.HK",
+    "6871.HK",
+    "1511.HK",
+    "7688.HK",
+    "6872.HK",
+    "0901.HK",
+    "2723.HK",
+    "3310.HK",
+    "3388.HK",
+    "2553.HK",
+    "1081.HK",
+    "1779.HK",
+    "6658.HK",
+    "6675.HK",
+    "6067.HK",
+    "6132.HK",
+    "1688.HK",
+    "1956.HK",
+    "2272.HK",
+    "3661.HK",
+    "6228.HK",
+    "9630.HK",
+    "1191.HK",
+    "2672.HK",
+    "9637.HK",
+    "2697.HK",
+    "6715.HK",
+    "6915.HK"
+  ],
+  "pending_missing_fields": [
+    {
+      "code": "1392.HK",
+      "fields": [
+        "col_CQ"
+      ]
+    },
+    {
+      "code": "2335.HK",
+      "fields": [
+        "col_CW"
+      ]
+    },
+    {
+      "code": "6106.HK",
+      "fields": [
+        "col_CQ",
+        "col_DA",
+        "col_DB",
+        "col_DC"
+      ]
+    }
+  ],
+  "errors": [],
+  "gate_pass": false
+}

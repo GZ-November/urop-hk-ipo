@@ -31,7 +31,7 @@ from scipy import stats
 
 import academic_extensions_2026 as ac
 from shared import estimation as ext
-from research_inputs import prepare_academic, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
+from research_inputs import C, prepare_academic, ROOT as ROOT, load_panel as load_panel, select_2026 as select_2026
 from shared.reporting import (
     AXIS, BLUE, INK, INK2, MUTED, ORANGE, new_fig, pct_axis, style_axes, to_markdown,
 )
@@ -160,6 +160,30 @@ def main() -> None:
     fx = load_series(CACHE / "fx_cnyhkd.json")
     family: list[tuple[str, str, float]] = []
 
+    # 0. A+H vs Non-A+H comparison
+    ah_comp_rows = []
+    for label, sub in [("Full Sample (2026)", y26),
+                       ("A+H Issuers (ah_true = 1)", y26[y26["ah_true"] == 1]),
+                       ("Non-A+H Issuers (ah_true = 0)", y26[y26["ah_true"] == 0])]:
+        proc_m = sub["base_proceeds"] / 1e6
+        sub_x = sub[C["sub"]]
+        app = sub["Public applicants"]
+        ir = sub["ir"]
+        ah_comp_rows.append({
+            "Group": label,
+            "N": len(sub),
+            "Mean Proceeds (HK$M)": f"{proc_m.mean():,.1f}",
+            "Median Proceeds (HK$M)": f"{proc_m.median():,.1f}",
+            "Mean Sub (x)": f"{sub_x.mean():.1f}x",
+            "Median Sub (x)": f"{sub_x.median():.1f}x",
+            "Median Applicants": f"{app.median():,.0f}",
+            "Mean IR (%)": f"{100 * ir.mean():.2f}%",
+            "Median IR (%)": f"{100 * ir.median():.2f}%",
+            "Break Rate (%)": f"{100 * (ir < 0).mean():.1f}%",
+        })
+    ah_comp = pd.DataFrame(ah_comp_rows)
+    ah_comp.to_csv(OUT / "ah_vs_non_ah.csv", index=False)
+
     # 1. discounts
     rows = []
     for name, part in [("All A+H", d), ("April-June", d[d["hot"] == 1]), ("Other months", d[d["hot"] == 0])]:
@@ -214,6 +238,10 @@ def main() -> None:
             family.append(("Convergence", f"H/A gap changes from day 0 to day {k} (Wilcoxon)", float(w.pvalue)))
     conv = pd.DataFrame(conv_rows, columns=["Trading days after listing", "N", "Mean gap, day 0", "Mean gap, day k", "Mean change",
                                             "t p", "Wilcoxon p", "H minus own A return, mean", "H minus own A return, median"])
+    disc.to_csv(OUT / "ah_discount_summary.csv", index=False)
+    reg.to_csv(OUT / "ah_regressions.csv", index=False)
+    det.to_csv(OUT / "ah_determinants.csv", index=False)
+    conv.to_csv(OUT / "ah_convergence.csv", index=False)
 
     # 5. A-share reaction
     frames = a_share_frames(d)
@@ -246,6 +274,13 @@ Data: `tools/external/ah_reference.py` (raw A-share closes from Tencent, CNY/HKD
 on or before the H-share subscription closing date; the price is converted to HKD with that day's exchange rate. Anchors are matched to issuers by A/H short name
 (one manual override, 2768.HK); {int((d['plausible'] == 0).sum())} issuer(s) fall outside a plausible +/-60% band and are flagged (`plausible = 0`); robustness drops them.
 The day-1 gap uses the A-share close on the H listing day, so it also reflects A-share moves between the two dates.
+
+## 0. A+H vs Non-A+H Comparison (Full 2026 Population)
+
+{to_markdown(ah_comp.set_index('Group'), 'Group')}
+
+- **Size and Liquidity Divergence**: A+H issuers are large-cap enterprises (median base proceeds of HK$ 4,616.2M vs HK$ 900.5M for non-A+H, a ~5.1x difference).
+- **Demand and Underpricing Gap**: A+H offerings attract substantially lower retail oversubscription (median 289.6x vs 2,003.2x) and deliver much lower first-day initial returns (median +1.97% vs +50.99%), with a higher offer break rate (31.6% vs 18.7%). The existing A-share quote is a possible valuation reference. These descriptive comparisons do not identify its causal effect, because offer size, issuer selection and market timing also differ.
 
 ## 1. The discount
 
@@ -324,28 +359,44 @@ CNY/HKD is a daily close rather than the rate at the pricing time; raw A-share p
 
 
 def fig_anchor(d: pd.DataFrame, panel: pd.DataFrame) -> None:
-    fig, (left, right) = new_fig(1, 2, figsize=(10, 4))
-    for ax in (left, right):
+    fig, (ax1, ax2, ax3) = new_fig(1, 3, figsize=(14, 4.2))
+    for ax in (ax1, ax2, ax3):
         style_axes(ax)
+
+    # ax1: Offer Discount Distribution
+    valid_disc = d["disc"].dropna()
+    ax1.hist(valid_disc, bins=12, color=BLUE, alpha=0.75, edgecolor="white")
+    ax1.axvline(valid_disc.median(), color=ORANGE, lw=1.5, ls="--", label=f"Median: {100*valid_disc.median():.1f}%")
+    ax1.axvline(valid_disc.mean(), color=INK, lw=1.5, ls=":", label=f"Mean: {100*valid_disc.mean():.1f}%")
+    ax1.set_xlabel("H offer price vs A-share close", fontsize=8, color=INK2)
+    ax1.set_ylabel("Number of issuers", fontsize=8, color=INK2)
+    ax1.legend(frameon=False, fontsize=8, loc="upper left")
+    pct_axis(ax1, "x")
+
+    # ax2: Scatter vs First-Day Return
     for hot, color, label in [(0.0, BLUE, "Other months"), (1.0, ORANGE, "April-June")]:
         part = d[d["hot"] == hot]
-        left.scatter(part["disc"], part["ir"], s=26, color=color, alpha=0.8, linewidths=0, label=label)
-    left.axhline(0, color=AXIS, lw=1)
-    left.axvline(0, color=AXIS, lw=1)
-    left.legend(frameon=False, fontsize=8, labelcolor=INK2)
-    left.set_xlabel("H offer price vs A-share close (in HKD)", fontsize=8, color=INK2)
-    left.set_ylabel("H first-day return", fontsize=8, color=INK2)
-    pct_axis(left)
-    pct_axis(left, "x")
+        ax2.scatter(part["disc"], part["ir"], s=26, color=color, alpha=0.8, linewidths=0, label=label)
+    ax2.axhline(0, color=AXIS, lw=1)
+    ax2.axvline(0, color=AXIS, lw=1)
+    ax2.legend(frameon=False, fontsize=8, labelcolor=INK2)
+    ax2.set_xlabel("H offer price vs A-share close (in HKD)", fontsize=8, color=INK2)
+    ax2.set_ylabel("H first-day return", fontsize=8, color=INK2)
+    pct_axis(ax2)
+    pct_axis(ax2, "x")
+
+    # ax3: Convergence Path
     path = balanced_path(panel)
-    right.plot(path.index, path["mean"], color=BLUE, lw=2)
-    right.plot(path.index, path["median"], color=BLUE, lw=1.5, ls="--")
-    right.axhline(0, color=AXIS, lw=1)
-    right.set_xlabel("Trading days after H listing (both markets open)", fontsize=8, color=INK2)
-    right.set_ylabel("H price vs A price", fontsize=8, color=INK2)
-    right.text(0.02, 0.93, "fixed day-0/day-60 cohort; mean / median", transform=right.transAxes, fontsize=8, color=MUTED)
-    pct_axis(right)
-    fig.suptitle("A+H issuers: discount to the A share at the offer, and its path after listing", x=0.01, ha="left", fontsize=10, color=INK, fontweight="bold")
+    ax3.plot(path.index, path["mean"], color=BLUE, lw=2, label="Mean gap")
+    ax3.plot(path.index, path["median"], color=BLUE, lw=1.5, ls="--", label="Median gap")
+    ax3.axhline(0, color=AXIS, lw=1)
+    ax3.set_xlabel("Trading days after H listing (both open)", fontsize=8, color=INK2)
+    ax3.set_ylabel("H price vs A price", fontsize=8, color=INK2)
+    ax3.legend(frameon=False, fontsize=8, loc="lower right")
+    ax3.text(0.02, 0.93, "fixed day-0/day-60 cohort", transform=ax3.transAxes, fontsize=8, color=MUTED)
+    pct_axis(ax3)
+
+    fig.suptitle("A+H issuers: offer discount distribution, first-day return, and post-listing path", x=0.01, ha="left", fontsize=10, color=INK, fontweight="bold")
     fig.tight_layout()
     fig.savefig(OUT / "fig9_ah_anchor.png", dpi=200, facecolor=fig.get_facecolor())
     plt.close(fig)

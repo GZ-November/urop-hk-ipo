@@ -1,0 +1,788 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,longtable,array,tabularx,xcolor,fancyhdr,enumitem}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black,citecolor=blue!55!black]{hyperref}
+\definecolor{ink}{RGB}{24,49,77}
+\hypersetup{pdftitle={Hong Kong's Stock and IPO Markets: Institutions, Capital and a US Comparison},pdfauthor={Research report}}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlist{itemsep=2pt,topsep=4pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Hong Kong's Stock and IPO Markets}
+\fancyhead[R]{\small Institutional Research}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\newcommand{\source}[1]{\par{\footnotesize\color{ink}Sources: \cite{#1}.}\par}
+\begin{document}
+\begin{titlepage}
+\centering\vspace*{22mm}
+{\Huge\bfseries\color{ink} Hong Kong's\\[4mm] Stock and IPO Markets\par}
+\vspace{10mm}{\LARGE Market Overview, Capital Sources,\\[2mm] Participants, Regulation and Mechanisms\par}
+\vspace{10mm}{\Large A Comparative Analysis with the United States\par}
+\vspace{15mm}{\large Comprehensive Research Report\par}
+\vspace{4mm}{\large Research and rule-verification date: 4 October 2026\par}
+\vfill
+\begin{minipage}{0.9\textwidth}
+\textbf{Purpose.} Explain how Hong Kong's equity market fits together: who raises and supplies capital, how investors participate, how trading and settlement work, how regulation allocates responsibility, and how IPO prices and allocations are determined.
+
+\textbf{Evidence.} Primarily official materials from HKEX, the SFC, HKMA, government bodies, the CSRC, SEC, FINRA, exchanges and the Federal Reserve. Statistical observation periods are identified separately from the research date. Proposals are distinguished from effective rules; numerical illustrations are explicitly hypothetical.
+
+\textbf{Reading guide.} Begin with the executive summary and capital-flow diagram. Sections on IPO allocation and the Hong Kong--US comparison explain the most distinctive mechanisms. The appendices provide terminology, a reform timeline and linked sources.
+\end{minipage}\vspace{12mm}
+\end{titlepage}
+\tableofcontents\clearpage
+
+\section{Executive Summary}
+Hong Kong is best understood as an offshore equity market connecting \textbf{Mainland Chinese businesses, international portfolios, local wealth and Mainland investors using approved cross-border channels}. Its listed companies' economic exposure often lies in Mainland China, while trading, disclosure and clearing are governed through Hong Kong's institutions. The Hong Kong dollar's link to the US dollar adds a further connection to global financing conditions.
+
+Five locations must be distinguished: where a company is incorporated, where it operates, where its shares trade, where its investors reside, and where their assets are managed. A Hong Kong listing does not establish that the company earns most of its revenue in Hong Kong. Likewise, assets managed in Hong Kong need not be invested in Hong Kong equities.
+
+The market includes the Main Board, GEM, investment funds and a substantial derivatives ecosystem. Its advantages include access to Chinese corporate growth, international investors, cross-border infrastructure and multiple financing routes. Its vulnerabilities include concentrated economic exposure, controlling-shareholder conflicts, uneven stock-level liquidity and sensitivity to global risk appetite. These advantages and vulnerabilities are \textit{analytical synthesis}, rather than a claim that every security shares the same characteristics.
+
+Capital enters through institutions, individuals, wealth-management networks and Southbound Stock Connect, with banks and brokers providing financing. \textbf{IPO proceeds, turnover, net purchases, market capitalisation and assets under management measure different things}. A busy market does not imply that companies receive an amount of new capital equal to turnover.
+
+Hong Kong IPOs generally combine institutional bookbuilding with a public subscription tranche. Cornerstone commitments, public allocation rules, sponsor due diligence and a structured settlement process are important features. US traditional IPOs also use bookbuilding. The principal contrast is the institutionalisation of public subscriptions and allocations in Hong Kong, compared with more underwriter-mediated access in the US, subject to FINRA restrictions.
+
+The rules have changed materially. From 4 August 2025, ordinary IPO applicants may choose public allocation Mechanism A or B. Mechanism A starts at 5\% and increases to 15\%, 25\% or 35\% at specified demand thresholds. Mechanism B starts between 10\% and 60\% without an automatic clawback. Chapter 18C has a separate structure. Further listing reforms took effect on 24 July 2026.
+
+Finally, \textbf{a first-day return is not a subscription return}. The investor's profit depends on allocation, the selling price, fees, interest and capital committed. Very attractive IPOs can allocate few shares; weaker issues can allocate much more. This distinction is essential for understanding Hong Kong's retail IPO activity.
+\source{ipo2025,compet2026,ifecipo}
+
+\section{Scope, Evidence and Dates}
+This report covers listed equities and equity IPOs, with supporting discussion of banking liquidity, exchange rates, asset management and derivatives. It is an institutional overview, not an econometric estimation of IPO performance. Existing project datasets are not treated as an exchange-wide census.
+
+The source hierarchy is: operative rules and legislation; implementation announcements and consultation conclusions; official statistics and surveys; investor-education materials; and operators' documentation for platform-specific activities such as grey-market trading. Interpretations and mechanism-based predictions are identified as analysis. The bibliography gives original URLs and documents' relevant dates.
+
+The research date is \textbf{4 October 2026}. Statistics use 2025 as a complete-year baseline, with a separately dated August 2026 market update. An HKEX listing-application page provides an additional September-end snapshot. Survey data have their own reference periods. There is no assumption that every dataset is available through the research date.
+
+\section{The Market's Structure and Economic Role}
+\subsection{Primary financing and secondary trading}
+The primary market transfers capital to an issuer when it sells new shares. If an offer includes existing shareholders' shares, that portion pays the selling shareholders instead. Secondary trading subsequently transfers shares and money between investors; it normally provides no direct new proceeds to the company.
+
+The two markets nevertheless depend on each other. Investors are more willing to supply primary capital when they expect credible disclosure and an ability to sell later. Secondary prices also become reference points for placements, acquisitions and employee compensation. This is a financing mechanism: liquidity can lower the return investors require, while illiquidity can raise it. It does not imply that high turnover always indicates efficient investment.
+
+\subsection{Boards, securities and product layers}
+\begin{longtable}{@{}L{3.0cm}L{5.3cm}L{7.2cm}@{}}
+\toprule Layer & What it contains & Interpretation\\\midrule\endfirsthead
+\toprule Layer & What it contains & Interpretation\\\midrule\endhead
+Main Board & Ordinary corporate listings and specialist regimes & Eligibility varies; a Main Board company need not already be profitable.\\
+GEM & A separate market for smaller and growth enterprises & Distinct admission rules; a transfer to the Main Board is not necessarily a fundraising IPO.\\
+Shares and REITs & Corporate equity and property-trust units & A REIT is governed under a different product framework.\\
+ETFs and other ETPs & Funds and products providing index or other exposures & Secondary turnover and primary creations/redemptions differ from corporate fundraising.\\
+Warrants and CBBCs & Issuer-created structured products & Expiry, leverage, issuer credit and, for CBBCs, mandatory-call features matter.\\
+Futures and options & Index and single-stock derivatives & Support hedging and speculation; notional exposure is not cash equity investment.\\
+\bottomrule
+\end{longtable}
+HKEX's securities and derivatives product directories distinguish these categories. GEM reforms effective in January 2024 introduced an alternative admission test and streamlined transfers for qualifying issuers, while removing mandatory quarterly reporting. Consequently, older descriptions of GEM reporting should not be carried forward unchanged.\source{hkproducts,gem}
+
+\subsection{Chinese exposure and issuer classifications}
+H shares are shares of PRC-incorporated companies listed in Hong Kong. Mainland-related companies can also be incorporated outside Mainland China. ``Red chip'' and privately controlled Mainland categories concern ownership and corporate structure, rather than simply the trading currency. Overseas issuers are admitted subject to applicable shareholder-protection and listing requirements.\source{overseas}
+
+HKEX's 2025 statistics classified 1,552 issuers as Mainland enterprises: 58\% of companies, 79\% of equity market capitalisation, 91\% of stock turnover and 85\% of IPO funds raised. These figures describe \textbf{issuers}, not investors. They cannot establish that 91\% of buyers were Mainland investors.
+
+\subsection{A+H, secondary listings and dual-primary listings}
+An A+H issuer has shares traded in Mainland and Hong Kong markets. Similar economic exposure does not create unrestricted interchangeability: participants, currencies, trading constraints and tax treatment differ. An A/H valuation comparison must use consistent currencies and rights, rather than comparing unconverted prices.
+
+A secondary listing relies on an existing primary listing and may receive specified exemptions. A dual-primary listing carries primary-listing obligations in both venues. Neither the existence of a Hong Kong code nor a company's Chinese operations alone establishes Southbound eligibility. Corporate listing status and the eligibility list must be checked separately.
+
+\subsection{Market size, liquidity and fundraising}
+\begin{longtable}{@{}L{6.4cm}L{3.9cm}L{5.2cm}@{}}
+\toprule Indicator & Value & Period and definition\\\midrule\endfirsthead
+\toprule Indicator & Value & Period and definition\\\midrule\endhead
+Listed companies & 2,686 & End-2025; Main Board and GEM.\\
+Equity market capitalisation & HK\$47.3925 trillion & End-2025; stock value.\\
+Securities turnover & HK\$61.455625 trillion & 2025; broader than ordinary shares.\\
+Average daily securities turnover & HK\$249.820 billion & 2025; securities-market total.\\
+New listings & 119 & Includes two GEM transfers and two de-SPACs.\\
+IPO funds raised & HK\$285.8427 billion & 2025; provisional.\\
+Total equity funds raised & HK\$644.4313 billion & 2025; provisional; includes post-IPO financing.\\
+Listed companies / equity value & 2,761 / HK\$47.1547 trillion & End-August 2026.\\
+Average daily securities turnover & HK\$282.5 billion & January--August 2026.\\
+IPO funds raised & HK\$342.4 billion & January--August 2026; rounded official highlights.\\
+\bottomrule
+\end{longtable}
+\source{hkstats,hkmonthly}
+The market-capitalisation series excludes non-equity securities such as REITs, whereas securities turnover includes products such as ETFs, warrants and CBBCs. These scope differences matter when constructing ratios. Capitalisation is a stock; fundraising and turnover are period flows with different meanings.
+
+The application dashboard separately records 116 Main Board and two GEM listings through 30 September 2026. This is a different observation window, not a contradiction of the August count. Applications accepted, new listings and ordinary fundraising IPOs are three different populations.\source{eligibility}
+
+\subsection{Indexes and liquidity dispersion}
+The Hang Seng Index, Hang Seng China Enterprises Index and Hang Seng TECH Index represent different investment universes. Index providers publish construction methodologies and separate price and total-return series. A benchmark's gain need not describe the median listed stock or a small-cap investor's trading experience.\source{hsi}
+
+\textit{Analytical implication:} market-wide turnover can coexist with thin trading in many securities if activity is concentrated in large issuers and products. Any claim about a stock's liquidity should therefore examine its spreads, depth, turnover, free float and price impact, rather than borrowing an exchange-wide average.
+
+\section{Capital Sources and Participants}
+\subsection{The capital-flow map}
+\begin{center}
+\fbox{\parbox{0.93\textwidth}{\centering
+Household savings / retirement and insurance liabilities / corporate and sovereign wealth\\[3pt]
+$\downarrow$\\[3pt]
+Direct investor decisions or asset managers, insurers, pension funds and family offices\\[3pt]
+$\downarrow$\\[3pt]
+Banks, brokers and custodians; eligible cross-border investment channels\\[3pt]
+$\downarrow$\\[3pt]
+\textbf{New-share issuance: cash to the issuer}\\
+\textbf{Existing-share sales and secondary trading: cash to the seller}\\[3pt]
+$\downarrow$\\[3pt]
+Clearing, settlement, custody and corporate actions; dividends and eventual exit
+}}
+\end{center}
+\textit{Conceptual diagram constructed for this report. Financing and securities-lending relationships form additional links, rather than separate final owners of all capital.}
+
+\subsection{Final owners, decision-makers and channels}
+A household can hold a stock directly, own a fund that holds it, or accumulate retirement savings invested by a pension manager. In these cases the final capital owner, the investment decision-maker and the account's legal holder may differ. Geography has the same ambiguity: an overseas manager may invest Mainland wealth through a Hong Kong custodian.
+
+\begin{longtable}{@{}L{3.3cm}L{5.7cm}L{6.5cm}@{}}
+\toprule Participant & Typical role or channel & Economic behaviour\\\midrule\endfirsthead
+\toprule Participant & Typical role or channel & Economic behaviour\\\midrule\endhead
+Global active institutions & Funds, pension and insurance portfolios, sovereign investors & Benchmarks, mandates and risk limits shape positions; holding periods vary.\\
+Passive funds and ETFs & Index replication and creations/redemptions & Rebalancing can generate demand unrelated to new company information.\\
+Hong Kong individuals & Bank and broker accounts; public subscriptions & Direct trading and fund ownership are different participation measures.\\
+Private wealth & Family offices, private banks and corporate portfolios & May appear within institutional or private-client survey categories.\\
+Mainland Southbound investors & Eligible institutions and individuals using Stock Connect & A channel classification, not a homogeneous strategy.\\
+Intermediaries and arbitrageurs & Market making, proprietary trading, product hedging, securities lending & Can generate large turnover with limited net directional exposure.\\
+Financing providers & Banks and brokers lending to investors & Credit amplifies purchasing capacity but creates repayment obligations.\\
+\bottomrule
+\end{longtable}
+This categorisation is a functional framework, not a set of mutually exclusive official market-share estimates.
+
+\subsection{What the asset-management data establish}
+The SFC's 2025 survey reported HK\$42.202 trillion in assets under management and HK\$2.065 trillion in net inflows. Its investor-origin breakdown, using the survey's specified scope, was 37\% Hong Kong, 9\% Mainland China and 54\% other regions. These are \textbf{asset and wealth management business statistics}, not Hong Kong-stock ownership shares or trading shares. Managed portfolios hold multiple asset classes and markets, and business categories can overlap.\source{awm}
+
+MPF assets were approximately HK\$1.55 trillion at end-2025 in the MPFA's provisional announcement. That pool is long-term retirement capital, but it is not invested wholly in Hong Kong shares. Likewise, US households reach the equity market through both direct accounts and retirement vehicles.\source{mpf}
+
+The Federal Reserve's 2022 family survey reported stock ownership, directly or indirectly, for 58\% of families; direct stock ownership was approximately 21\%, and retirement-account ownership 54.3\%. These overlapping holding-incidence measures are neither current trading shares nor directly comparable with Hong Kong broker-based transaction surveys.\source{fedscf}
+
+\subsection{What cannot be measured from a single public number}
+HKEX's 2019 cash-market transaction survey offers historical evidence of international and retail participation. Its age prevents it from establishing 2026 investor shares. This research did not identify a newer comprehensive, directly equivalent survey that resolves all current investor categories. A real-time pie chart of ``foreign, Mainland and local money'' would require consistent beneficial-owner and flow data beyond the published snapshots.\source{transactionsurvey}
+
+\begin{longtable}{@{}L{3.7cm}L{5.5cm}L{6.3cm}@{}}
+\toprule Measure & What it captures & What it does not establish\\\midrule\endfirsthead
+\toprule Measure & What it captures & What it does not establish\\\midrule\endhead
+IPO proceeds & Capital exchanged for offer shares & Secondary net inflows; all proceeds going to the company.\\
+Turnover & Trading activity over a period & Fresh savings invested or net buying.\\
+Southbound net purchases & Purchases minus sales through a channel & All Mainland capital or total market inflows.\\
+Fund subscriptions & Flows into a specified fund & Immediate purchases of Hong Kong stocks.\\
+Capitalisation changes & Price and share-count changes & Equal amounts of cash entering the market.\\
+AUM & Assets within a management-business definition & Assets entirely invested in Hong Kong equities.\\
+Custodian holdings & Securities at a settlement or custody node & Identity and strategy of every beneficial owner.\\
+\bottomrule
+\end{longtable}
+These are accounting and measurement distinctions. The correct indicator follows from the research question.
+
+\section{Mainland Links, Currency and Banking Liquidity}
+\subsection{Stock Connect: access with defined boundaries}
+Shanghai Connect began in 2014 and Shenzhen Connect in 2016. Northbound connects Hong Kong and international investors to eligible Mainland securities; Southbound connects eligible Mainland investors to eligible Hong Kong stocks and ETFs. Daily net-buy quotas are RMB52 billion for each Northbound route and RMB42 billion for each Southbound route. They reset daily and are not cumulative ownership limits. Eligibility lists and destination-market rules still apply.\source{connect}
+
+Southbound individual investors generally need at least RMB500,000 in securities and cash-account assets. Institutions have separate applicable requirements. Southbound access to listed securities should not be confused with a right to subscribe to every Hong Kong IPO: subsequent inclusion depends on the relevant criteria and timetable.\source{connectelig}
+
+\subsection{Why Southbound turnover needs normalisation}
+The two Southbound routes reported 2025 buy-plus-sell turnover of HK\$28.6953 trillion. The securities-market turnover total counts a matched trade once. A comparable annual trading-side contribution can therefore be approximated as:
+\[
+\frac{\text{Southbound purchases + sales}}{2\times\text{market matched turnover}}
+=\frac{28.6953}{2\times61.455625}\approx23.35\%.
+\]
+This is a calculation from official totals, \textbf{not a net-flow or ownership estimate}. The denominator includes securities beyond ordinary shares. Dividing daily averages directly also introduces calendar differences: Connect and the Hong Kong market did not have identical trading-day counts. HKEX's analysis of Southbound activity uses comparable turnover-share concepts.\source{hkstats,connectinsight}
+
+\subsection{Open capital movement and Mainland constraints}
+Basic Law Article 112 provides for Hong Kong's freely convertible currency and absence of foreign-exchange controls. This does not abolish Mainland rules governing outward investment or corporate cross-border activity. The two jurisdictions' arrangements coexist; an open offshore market is not evidence that every Mainland resident may transfer funds through any chosen route.\source{basiclaw}
+
+Mainland companies' qualifying direct and indirect overseas listings are subject to the CSRC filing regime effective from 31 March 2023. Hong Kong listing review and Mainland filing are distinct processes, with sectoral and other applicable obligations requiring separate consideration.\source{csrc}
+
+\subsection{The linked exchange rate and its transmission}
+Hong Kong operates a currency-board arrangement with convertibility undertakings at HK\$7.75 and HK\$7.85 per US dollar. Banking-system liquidity adjusts through the arrangement. Hong Kong rates respond to US-dollar conditions, but local funding demand and liquidity mean HIBOR need not equal US rates at every moment.\source{hkma}
+
+\textit{Analytical implication:} a company can earn primarily RMB cash flows while investors finance and discount its shares in HKD or USD. US rate changes can affect discount rates and margin-loan costs; RMB movements can affect translated earnings and balance sheets. The effect on any company depends on its revenue, costs and liabilities, rather than a uniform currency rule for all stocks.
+
+\subsection{Offshore RMB and dual counters}
+Hong Kong's RMB deposits were RMB960.1 billion at end-December 2025. That stock supports trade settlement and other financial activities; it is not a measure of money committed to Hong Kong shares.\source{rmbstats}
+
+The HKD--RMB Dual Counter Model, introduced in June 2023, allows the same eligible class of shares to trade through HKD and RMB counters, with fungibility and identical shareholder rights. Dual-counter market makers support quotations and arbitrage. This is fundamentally different from an A+H company's shares in two markets; the two structures should not be used interchangeably in analysis.\source{dualcounter}
+
+\section{Regulation, Governance and Investor Protection}
+\subsection{The division of responsibilities}
+\begin{longtable}{@{}L{3.0cm}L{7.1cm}L{5.4cm}@{}}
+\toprule Body & Main responsibility & Important boundary\\\midrule\endfirsthead
+\toprule Body & Main responsibility & Important boundary\\\midrule\endhead
+SFC & Statutory securities regulation, intermediaries, market conduct and relevant products & Does not guarantee investment value.\\
+SEHK / HKEX & Listing-rule review and supervision; exchange trading infrastructure & SEHK is the exchange; HKEX is the listed group.\\
+HKSCC & Clearing, settlement, depository and related risk arrangements & A clearing guarantee is not insurance against price losses.\\
+HKMA & Banking supervision and monetary stability; bank securities supervision under the regulatory division & Not the listing regulator for all issuers or brokers.\\
+AFRC & Accounting-profession and audit-quality regulation, including relevant listed-entity auditors & Audit oversight does not establish a fair share price.\\
+Government and courts & Legislation, public policy and legal remedies & Legal, regulatory and contractual responsibilities can coexist.\\
+\bottomrule
+\end{longtable}
+\source{sfcreg,afrc}
+
+\subsection{Dual filing and gatekeeping}
+Under dual filing, listing and disclosure materials reach both SEHK and the SFC. SEHK applies listing rules, eligibility and suitability requirements. The SFC has statutory powers relating to disclosure and listing objections. Sponsors, directors and other professionals retain their own responsibilities; review is not a transfer of all liability to the regulator.\source{dualfiling}
+
+The label ``Hong Kong approval versus US registration'' is therefore incomplete. US registration also involves disclosure review, and exchanges impose independent listing requirements. Hong Kong also depends on disclosure, due diligence and investor judgement. A useful comparison asks who verifies what, which eligibility standards apply, and what remedies exist after deficient disclosure.
+
+\subsection{Continuing disclosure and shareholder conflicts}
+Listed companies face continuing obligations concerning financial reporting, material transactions, connected transactions and governance. Main Board periodic reporting centres on annual and interim results; GEM's mandatory quarterly requirement was removed in 2024. Statutory inside-information disclosure generally requires disclosure as soon as reasonably practicable, subject to applicable exceptions and safeguards.\source{ch13,gem,inside}
+
+Part XV disclosure covers substantial interests beginning at the 5\% threshold for the relevant voting-share class, with broader obligations for directors and chief executives. Investor identification arrangements also strengthen market surveillance; the Hong Kong Investor Identification Regime took effect in March 2023.\source{interests,hkidr}
+
+\textit{Analytical implication:} concentrated control makes related-party transactions, cash use and minority voting rights particularly important. WVR structures further separate economic and voting rights. These observations identify channels of governance risk, not a finding that every controlled company mistreats minority shareholders.
+
+For businesses using VIE or other contractual arrangements, investors may own a listed holding company whose control of restricted operations relies on contracts. HKEX guidance addresses their scope, legality and disclosure. Incorporation offshore does not remove the legal environment of the operating business.\source{vie}
+
+\subsection{Client assets and compensation}
+Cash and margin accounts can have different custody and authorisation arrangements. Authorised pooling and re-pledging of margin collateral can create additional exposure if the intermediary cannot recover the securities. Investor compensation applies to qualifying intermediary-default losses, subject to conditions and limits; the relevant cap is HK\$500,000 per investor for securities and separately for futures. It is not protection against ordinary market losses.\source{ifecmargin,icf}
+
+\section{Trading, Clearing and Settlement}
+\subsection{The order-to-ownership chain}
+The client submits an instruction; the intermediary checks resources and routes it; the market matches orders; clearing establishes settlement obligations; settlement transfers securities and cash; custody records positions and supports dividends, voting and other corporate actions.
+
+Hong Kong's exchange order book uses price and time priority in continuous trading. Auction sessions aggregate orders under separate rules. The quoted last price does not guarantee that a large order can execute entirely there: market depth and price impact matter.\source{marketops}
+
+\subsection{Sessions and severe-weather operation}
+A normal full trading day includes the 9:00--9:30 pre-opening session, continuous stock trading from 9:30--12:00 and 13:00--16:00, and a closing auction for applicable securities ending randomly between 16:08 and 16:10. Product-specific and half-day schedules differ.\source{hours}
+
+Severe-weather trading arrangements became effective on 23 September 2024. Typhoon signal No.\ 8, black rainstorm warnings and specified extreme conditions no longer automatically imply an exchange shutdown under the old convention.\source{weather}
+
+\subsection{Three distinct meanings of timing}
+\begin{longtable}{@{}L{4.1cm}L{5.5cm}L{5.9cm}@{}}
+\toprule Term & Meaning & What it does not mean\\\midrule\endfirsthead
+\toprule Term & Meaning & What it does not mean\\\midrule\endhead
+Same-day or T+0 trading & Buying and selling on the same day, subject to account controls & Immediate final settlement or cash withdrawal.\\
+Cash-market T+2 & Standard Hong Kong securities settlement two settlement days after the trade & Every investor can defer all payments for two days.\\
+FINI IPO T+2 & Standard shortened interval from IPO pricing to trading & The same clock as a secondary-market purchase.\\
+US cash-market T+1 & Standard cycle for most broker-dealer securities transactions since May 2024 & A requirement to hold shares overnight.\\
+\bottomrule
+\end{longtable}
+\source{settlement,fini,ust1}
+Hong Kong's April 2026 accelerated-settlement consultation proposed moving to T+1 in the fourth quarter of 2027, conditional on implementation and readiness. This report retains T+2 as the current Hong Kong cash-market baseline; a proposal is not an effective settlement rule. Northbound follows its own destination-market arrangements.\source{tplus}
+
+\subsection{CCASS, central counterparty and nominee holdings}
+HKSCC provides settlement and depository functions through CCASS. Under Continuous Net Settlement, its central-counterparty role and netting reduce bilateral obligations, backed by risk-management arrangements. Other settlement modes and transfers exist: not every CCASS movement is an exchange trade guaranteed by a CCP.\source{ccass}
+
+Custodial or nominee registration can separate the registered holder from the beneficial investor. Accordingly, a bank's CCASS position does not identify every customer's residence or strategy. Transfers between custodians can change visible positions without representing new purchases.
+
+\subsection{Volatility controls and price limits}
+Hong Kong has no universal A-share-style daily percentage limit for every ordinary stock. It does have auction constraints, order rules, suspensions and VCM for eligible securities. VCM uses a rolling reference and triggers a five-minute cooling-off period; its scope and exclusions matter. It is not a permanent daily price ceiling or a market-wide halt.\source{vcm}
+
+US single-stock LULD price bands differ from market-wide circuit breakers. The latter use S\&P 500 declines of 7\%, 13\% and 20\%, with timing-dependent pauses at the first two levels and termination for the remainder of the day at the third. Reopening procedures can extend individual-stock pauses.\source{luld,mwcb}
+
+\subsection{Board lots, odd lots and minimum spreads}
+Board lots define standard trading units; odd lots have separate execution arrangements. In July 2026 the first phase of a standardised board-lot framework took effect, with eight prescribed sizes and value guidance. Existing issuers were not all converted immediately; later standardisation is linked to their transition into the planned uncertificated regime.\source{lot2026}
+
+Minimum spreads govern adjacent permissible prices. The second phase of HKEX's spread reductions launched in August 2026, including a reduction from HK\$0.01 to HK\$0.005 in the HK\$0.50--10 range for applicable securities. \textit{Analytically}, finer increments may improve quotation precision, but effective spreads, depth and total execution costs need empirical measurement.\source{tick2026}
+
+\section{Short Selling, Leverage, Products and Costs}
+\subsection{Short selling}
+Hong Kong permits regulated covered short selling in designated securities, with delivery rights, order marking and price requirements. In continuous trading the general tick rule prohibits short sales below the best current ask, subject to specified exemptions. US Regulation SHO instead combines marking, locate, close-out and triggered price-test requirements. ``Locate'' should not be translated into a claim that every US short sale has already completed a loan.\source{short,regsho}
+
+\textit{Analytical implication:} borrowing availability affects whether negative views can enter prices, particularly for small or recently listed securities. Short-sale turnover is not outstanding short interest: hedging, arbitrage and rapid closing of positions can generate transactions without a comparable net position.
+
+\subsection{Margin financing and liquidity feedback}
+Margin financing substitutes debt for part of an investor's own capital. Returns depend on share performance, collateral haircuts, interest and margin calls. Declining collateral can prompt forced selling, which can further depress prices. Account agreements determine the intermediary's liquidation rights and financing charges.\source{ifecother}
+
+IPO subscription financing is a distinct loan use. Interest and application costs can arise even if an investor receives no shares. Conversely, an unexpectedly large allocation in a weak issue may create a larger payment obligation. A headline financing multiple is therefore a demand and credit measure, not proof of final investor capital or investment success.\source{ifecipo}
+
+\subsection{Derivatives and ETFs}
+Futures, options, ETFs, warrants and CBBCs link to stocks through hedging, arbitrage and, for funds, creations/redemptions. Warrants and CBBCs carry product-specific risks rather than being interchangeable with shares. The activity of a product market maker can increase stock turnover through hedging without indicating an equivalent long-term directional investment.\source{structured}
+
+\subsection{The cost stack}
+Typical applicable costs include brokerage and platform charges, exchange fees, SFC and AFRC levies, stamp duty, custody/settlement charges, financing and currency conversion. The ordinary stock transaction schedule lists 0.10\% stamp duty per side, a 0.0027\% SFC levy, 0.00015\% AFRC levy and 0.00565\% trading fee. Exempt securities, rounding, negotiated charges and product-specific treatment prevent this from being a universal all-in rate. IPO subscriptions have their own fee treatment.\source{fees}
+
+Hong Kong does not tax capital gains as such, but revenue gains from a trade or business can be subject to profits tax. The IRD's equity-disposal guidance distinguishes capital from revenue treatment. Investors' other jurisdictions and dividend withholding may add obligations. Listing location alone does not determine the full tax outcome.\source{taxoverview}
+
+\section{Hong Kong IPO Admission and Listing Routes}
+\subsection{Ordinary Main Board financial tests}
+Chapter 8 provides alternative financial eligibility tests, generally with three years of track record and relevant continuity requirements. The following table summarises financial thresholds; satisfying it alone does not establish full eligibility or suitability.
+\begin{longtable}{@{}L{4.0cm}L{3.3cm}L{8.2cm}@{}}
+\toprule Test & Minimum market value & Other principal financial condition\\\midrule\endfirsthead
+\toprule Test & Minimum market value & Other principal financial condition\\\midrule\endhead
+Profit & HK\$500 million & At least HK\$35 million attributable profit in the latest year and HK\$45 million combined in the preceding two years.\\
+Market value / revenue / cash flow & HK\$2 billion & Latest revenue at least HK\$500 million; aggregate positive operating cash flow of at least HK\$100 million over three preceding years.\\
+Market value / revenue & HK\$4 billion & Latest revenue at least HK\$500 million.\\
+\bottomrule
+\end{longtable}
+\source{eligibility}
+
+\subsection{Specialist routes}
+\begin{longtable}{@{}L{3.0cm}L{5.7cm}L{6.8cm}@{}}
+\toprule Route & Function & Selected distinctive conditions\\\midrule\endfirsthead
+\toprule Route & Function & Selected distinctive conditions\\\midrule\endhead
+Chapter 8A & Weighted voting rights & Eligibility and beneficiary safeguards; July 2026 lowered financial thresholds and permitted a higher ratio for specified large issuers.\\
+Chapter 18A & Biotech & Alternative route, including pre-revenue businesses; minimum HK\$1.5 billion value and specified operating and working-capital requirements.\\
+Chapter 18C & Specialist technology & Commercial and pre-commercial categories, R\&D and investor-validation requirements; distinct IPO allocation arrangements.\\
+Chapter 18B & SPAC & Pre-combination shell raising capital for an acquisition; professional-investor restrictions before de-SPAC.\\
+Chapter 19C / overseas framework & Secondary and other overseas listings & Existing exchange record, eligibility and exemptions depend on the route.\\
+GEM & Smaller and growth enterprises & Separate cash-flow or alternative market-value/revenue/R\&D pathway and conditions.\\
+\bottomrule
+\end{longtable}
+Chapter 18A requires resources covering at least 125\% of specified costs for at least 12 months. For 18C, temporary modifications lowered minimum initial values to HK\$4 billion for commercial and HK\$8 billion for pre-commercial applicants, within the September 2024--August 2027 implementation arrangements. Hong Kong SPAC subscriptions and trading are restricted to professional investors before the business-combination stage. These differences make an undifferentiated ``all IPOs'' sample misleading.\source{biotech,tech2024,spachk,gem}
+
+The July 2026 reform reduced primary WVR thresholds to HK\$20 billion, or HK\$6 billion with at least HK\$600 million latest annual revenue. A ratio of up to 20:1 is permitted for applicants valued at least HK\$40 billion, subject to the framework. It also expanded non-public filing to all new applicants and allowed qualified biotech and technology applicants to use specialist routes even if they meet ordinary financial eligibility. The former assumption that every applicant initially publishes an application proof is consequently outdated.\source{compet2026}
+
+\subsection{Why companies choose Hong Kong}
+\textit{Mechanism-based interpretation:} companies may value access to international and Mainland-related investors, a public valuation, acquisition currency, employee equity and subsequent financing. An A-share issuer may seek a second capital pool or international ownership. An overseas-listed company may seek another trading venue or a primary-listing presence closer to its operations.
+
+These motives have costs: underwriting and professional fees, dilution, disclosure, governance obligations and market scrutiny. The best venue depends on valuation, investor familiarity, listing eligibility and the company's legal structure. A high annual fundraising ranking alone does not demonstrate that Hong Kong offers every issuer the lowest cost of capital.
+
+\section{The IPO Lifecycle and Intermediaries}
+\subsection{From preparation to aftermarket trading}
+\begin{longtable}{@{}L{2.7cm}L{7.0cm}L{5.8cm}@{}}
+\toprule Stage & Main activity & Information or economic consequence\\\midrule\endfirsthead
+\toprule Stage & Main activity & Information or economic consequence\\\midrule\endhead
+Preparation & Restructuring, audits, legal review, sponsor diligence & Determines corporate structure, financial track record and risks.\\
+Application and review & Exchange and regulatory questions, hearing and conditions & Eligibility and disclosure assessment, not guaranteed returns.\\
+Investor education & Valuation discussion and institutional marketing & Builds knowledge of demand and possible cornerstone support.\\
+Offer launch & Prospectus, price/range, public subscription and bookbuilding & Discloses terms and collects orders through different channels.\\
+Pricing and allocation & Issuer and coordinators assess demand; apply applicable allocation rules & Establishes price and distribution; demand is not the same as allocation.\\
+Settlement & FINI coordination, payments, allocation checks and refunds & Reduces operational and funding frictions before trading.\\
+Listing and aftermarket & Exchange trading; possible stabilisation; continuing disclosure & First-day price, liquidity, subsequent financing and lock-up expiry.\\
+\bottomrule
+\end{longtable}
+The table is a simplified workflow. Actual timetables, pre-marketing conditions and offer terms differ; the prospectus and announcements determine the transaction-specific sequence. The IPO-related guidance and FINI materials provide the operational framework.\source{sponsor,fini}
+
+\subsection{Who does what in a syndicate}
+A \textbf{sponsor} leads due diligence and assists the applicant in demonstrating compliance. An \textbf{overall coordinator} manages relevant bookbuilding and placing functions and advises on pricing and allocation. \textbf{Bookrunners and other capital-market intermediaries} collect and distribute investor orders; \textbf{underwriters} undertake contractually defined distribution or underwriting risks. Lawyers, reporting accountants, registrars and receiving banks handle other specialised tasks.
+
+These roles can be performed by related entities, but they are not synonyms. The SFC's bookbuilding conduct regime took effect in August 2022. For relevant Main Board IPOs, sponsor coupling links at least one independent sponsor with an overall coordinator in the same entity or group, with prescribed appointment timing. The aim is to connect diligence and price-distribution responsibilities rather than treating them as isolated services.\source{sponsor,sfccode}
+
+\subsection{Underwriting, proceeds and dilution}
+An IPO's headline offer value equals offer price times offer shares, but the issuer's net proceeds subtract applicable expenses and exclude the proceeds of shares sold by existing shareholders. Additional shares issued under options can change the amount and dilution. A complete analysis separates base new shares, base sale shares, offer-size adjustment and over-allotment shares.
+
+For a purely new-share issue, a simplified post-issue ownership fraction is
+\[
+\text{new investors' fraction}=\frac{N_{\mathrm{new}}}{N_{\mathrm{old}}+N_{\mathrm{new}}}.
+\]
+This is an accounting illustration. Real issuers may have multiple share classes, conversion instruments and treasury shares requiring further treatment.
+
+\section{How Hong Kong IPOs Price and Allocate Shares}
+\subsection{Bookbuilding is not a simple auction}
+In bookbuilding, investors provide indications of demand, sometimes at different prices or with limits. Intermediaries assess the size, credibility, concentration and investor mix of the book; the issuer and intermediaries determine the final terms. A book with headline demand far above supply need not consist entirely of price-insensitive, independent long-term investors.
+
+Research on bookbuilding explains why allocation discretion can reward investors who produce and reveal information. Empirical work links informative bids with offer-price decisions and preferential allocations. These ideas motivate the analysis but do not establish that every discretionary allocation improves welfare or that a particular Hong Kong deal was fairly priced.\source{bookresearch,allocationresearch}
+
+Hong Kong's public subscriptions run alongside placing demand. Public applicants generally request shares under disclosed terms rather than submit a complete valuation schedule. Retail subscription volume therefore provides a different signal from an institutional demand curve. The final price is not automatically the price that clears every public application.
+
+\subsection{The three economically distinct allocations}
+An ordinary global offering can be decomposed into public subscription shares, non-cornerstone placing shares and cornerstone shares. The distinction matters because cornerstone investors receive assured allocations under commitments, while ordinary placees participate in price discovery and distribution. For relevant ordinary IPOs, at least 40\% of base offer shares must be allocated to placing investors other than cornerstones; specified additional option shares are excluded from the denominator.\source{pn18}
+
+\subsection{Ordinary public-tranche mechanisms after August 2025}
+The applicable regime is determined by the listing-document date, with the 2025 reform applying from 4 August. Mechanism A retains demand-triggered clawback; Mechanism B lets the applicant preselect its public allocation without that automatic trigger.
+\begin{longtable}{@{}L{5.1cm}L{4.4cm}L{6.0cm}@{}}
+\toprule Public demand / choice & Mechanism A & Mechanism B\\\midrule\endfirsthead
+\toprule Public demand / choice & Mechanism A & Mechanism B\\\midrule\endhead
+Initial allocation & 5\% & Selected between 10\% and 60\%.\\
+Demand below 15 times initial public shares & 5\% & No automatic clawback.\\
+At least 15 but below 50 times & 15\% & No automatic clawback.\\
+At least 50 but below 100 times & 25\% & No automatic clawback.\\
+At least 100 times & 35\% & No automatic clawback.\\
+\bottomrule
+\end{longtable}
+\source{ipo2025}
+Demand thresholds refer to the initial public allocation. ``Times subscribed'' and ``times oversubscribed'' can be expressed differently in announcements, so research should code the original numerator and denominator. Waivers and the rules for reallocation or over-allocation require deal-level review. \textbf{No automatic clawback does not mean that every final public percentage must mechanically equal the initial percentage under every offer structure.}
+
+A government response reported that, among 109 IPOs under the reform through April 2026, 12 used the specialist-technology mechanism, two used A and 95 used B. This demonstrates observed adoption in that window. It is not a causal estimate of the reform's effect on performance; the market, issuers and listing decisions also changed.\source{lcq9}
+
+\subsection{Old rules, Chapter 18C and the other A/B labels}
+Before the reform, the standard ordinary structure started with 10\% public shares and increased to 30\%, 40\% and 50\% at the usual 15-, 50- and 100-times triggers, with waivers in some transactions. Applying that old table to all current IPOs is incorrect.\source{offeringannex}
+
+Chapter 18C retains a distinct public mechanism: initial 5\%, increasing to 10\% at 10-times demand and 20\% at 50-times demand. Rule 18C.08 requires at least 50\% of relevant offer shares to be taken by independent price-setting investors, which can include qualifying cornerstone investors. This differs from the ordinary non-cornerstone 40\% requirement.\source{lcq9,techallocation}
+
+Separately, \textbf{public Pool A and Pool B} are allocation pools, not Mechanism A and Mechanism B. PN18 divides the available public shares equally between applicants applying for HK\$5 million or less and applicants above that amount, subject to its limits and transfers between under-subscribed pools. Multiple applications are rejected. This terminology is easy to confuse but describes a different decision.\source{pn18}
+
+\subsection{A numerical clawback illustration}
+\textbf{Hypothetical example, not an observed IPO.} A company offers 100 million shares and chooses Mechanism A. Initial public shares are 5 million. Public applications total 300 million shares, or 60 times the initial allocation. The prescribed public allocation becomes 25 million, before any transaction-specific adjustment. Aggregate applications are then 12 times that final public supply.
+
+An equal pro-rata allocation would imply approximately 8.33\%, but real public allocations use disclosed application bands and allocation bases. An investor applying for one lot may face a lottery, whereas a larger applicant can receive guaranteed lots plus a lottery balance. Neither 1/60 nor 25/300 necessarily equals every investor's actual allocation ratio.
+
+Two issuers with the same absolute public demand can also report different subscription multiples if their initial public tranches differ. This mechanical denominator effect is important when comparing A and B or pre- and post-reform IPOs.
+
+\subsection{Cornerstones: commitments, certification and tradable supply}
+Cornerstones commit to subscribe at the final IPO price and receive assured allocations, generally subject to a six-month lock-up. The framework restricts preferential benefits beyond the permitted assured allocation. A cornerstone is therefore different from a pre-IPO investor purchasing earlier at a negotiated valuation.\source{cornerfaq,cornerguide}
+
+\textit{Mechanism-based interpretation:} commitments can reduce execution uncertainty and signal that identified investors are willing to hold the issue. Conversely, locked shares reduce immediately tradable supply and may create a future selling overhang. Large cornerstone participation can therefore support completion while complicating aftermarket liquidity; its effect on price need not have a single sign.
+
+Under the ordinary base-offer arithmetic, reserving at least 40\% for non-cornerstone placing and 5\% for initial public shares leaves at most 55\% for cornerstones before clawback. With a 10\% public share the arithmetic ceiling is 50\%; a higher required public allocation leaves less. These are \textbf{derived offer-share constraints}, not universal caps on cornerstones' post-listing ownership.
+
+\subsection{Public float and free float are not public subscriptions}
+The public tranche is a fraction of the offer. Public float concerns ownership of the relevant issued-share class by persons treated as public under the rules. Free float additionally addresses disposal restrictions and prescribed exclusions. An independent cornerstone can contribute to public float while its locked shares are unavailable for free trading.
+
+For ordinary initial public float, the tiered framework is:
+\begin{longtable}{@{}L{6.0cm}L{9.5cm}@{}}
+\toprule Expected value of relevant share class & Minimum initial public percentage\\\midrule\endfirsthead
+\toprule Expected value of relevant share class & Minimum initial public percentage\\\midrule\endhead
+Up to HK\$6 billion & 25\%.\\
+Above HK\$6 billion, up to HK\$30 billion & Higher of 15\% and the percentage corresponding to HK\$1.5 billion in public hands.\\
+Above HK\$30 billion & Higher of 10\% and the percentage corresponding to HK\$4.5 billion in public hands.\\
+\bottomrule
+\end{longtable}
+Ordinary requirements also include at least 300 holders at listing and a concentration constraint on the three largest public shareholders.\source{floatrule}
+
+A+H and other qualifying PRC issuers with other listed shares have bespoke initial thresholds: public H shares must meet 10\% of the total issued shares in the class to which H shares belong, or at least HK\$3 billion in expected value. The percentage denominator is \textbf{not H shares alone}. The initial free-float regime generally uses 10\% with a minimum HK\$50 million value, or HK\$600 million in value; the corresponding percentage limb for qualifying A+H structures is 5\%. Relevant rule definitions and exclusions remain necessary.\source{ipo2025pdf,freefloat}
+
+Ongoing public-float rules effective January 2026 must be treated separately. An alternative general threshold combines at least 10\% with market value above HK\$1 billion; the bespoke A+H ongoing framework uses at least 5\% or value above HK\$1 billion. Initial and ongoing thresholds are not interchangeable.\source{ongoingfloat}
+
+\subsection{Price ranges and adjustment flexibility}
+Hong Kong can use a fixed indicative offer price or a range. The existing disclosed downward flexibility mechanism permits pricing up to 10\% below the indicative price or range bottom, subject to conditions. The 2025 reform did \textbf{not} adopt the proposed 10\% upward flexibility. The 30\% range-width limit relates to use of that existing flexibility mechanism; it should not be stated as a universal limit on every Hong Kong offer range.\source{ipo2025pdf}
+
+An offer-size adjustment option increases the issue size before listing under disclosed terms. An over-allotment option supports covering the short position created by over-allocation and potential stabilisation. HKEX guidance distinguishes them, with the relevant 15\% limits. Recording both as a single ``greenshoe'' variable would mix financing expansion with aftermarket support.\source{offeringannex}
+
+\section{IPO Funding, Grey Markets and the Aftermarket}
+\subsection{FINI and subscription liquidity}
+FINI launched on 22 November 2023, shortening the standard pricing-to-trading interval from five to two business days and changing the public-offer pre-funding model. It reduces operational and locked-funding frictions; it does not dictate a uniform financing charge or refund practice for every investor account. The bank/broker contract and actual deal timetable remain relevant.\source{fini}
+
+\subsection{Grey-market trading}
+Hong Kong grey markets provide pre-listing trading through some brokers' systems outside the exchange order book. HKEX explains that the trade's enforceability arises from the parties' agreement. These prices are platform-specific observations, not an official exchange closing price.\source{greyhk}
+
+For example, Futu's published arrangements distinguish same-day trading from L+2 settlement and specify outcomes for postponed or cancelled listings. Its operation cannot be assumed to govern every broker's platform. A grey-market return should retain the platform and timestamp; comparing it with first-day prices requires matched definitions.\source{greyoperator}
+
+\textit{Analytical implication:} grey prices can contain information about demand, but thin trading, participant selection and listing uncertainty limit their use as a fair-value benchmark. A large grey gain does not guarantee a profitable subscription or the next day's closing price.
+
+\subsection{Stabilisation and over-allotment}
+Stabilisation can support prices under the applicable legal framework, but it is discretionary, limited and not a promise that the stock will remain above the offer price. In Hong Kong the stabilising period begins with trading and ends 30 days after the earlier relevant offer-closing or trading-commencement date; for usual public offers the application-closing date is important. It should not automatically be described as exactly 30 days after listing.\source{stabilisation}
+
+\textbf{Hypothetical mechanism:} the syndicate over-allocates and borrows shares to deliver. If the market weakens, permitted purchases can cover the short and return borrowed shares. If the price rises, exercising the option can obtain shares at the agreed offer terms to cover the position. Contracts, disclosures and price constraints govern the actual actions; an unexercised option does not prove that no stabilisation occurred.
+
+\subsection{Lock-ups and subsequent supply}
+Ordinary Main Board controlling shareholders face an initial six-month disposal restriction and, in the following six months, restrictions on disposals causing loss of controlling status, subject to exceptions. Cornerstones generally have six-month lock-ups; pre-IPO investors' contractual commitments and specialist-route obligations can differ.\source{lockhk,cornerfaq}
+
+Expiry is an opportunity to sell, not evidence that every holder sells on that date. Any event study should distinguish the legal expiry, trading calendar, actual disposal disclosures and simultaneous news. Supply overhang is an economic hypothesis requiring testing.
+
+\section{Returns, Allocation and Economic Explanations}
+\subsection{Three return concepts}
+Let $P_0$ be the offer price, $P_1$ the first-day close, $q$ the shares received and $N$ the shares applied for. Then
+\[
+IR=\frac{P_1}{P_0}-1,\qquad a=\frac{q}{N}.
+\]
+Ignoring costs and using the offer-price application notional as denominator, realised gross subscription return is $a\,IR$. If allocation is uncertain, expected return uses expected allocated shares and the joint distribution of allocation and price. A cash-equity financing return uses a different denominator and must subtract loan costs.
+
+\textbf{Hypothetical example.} Applying for 10,000 shares at HK\$10 commits HK\$100,000 of offer-price notional. Receiving 100 shares and selling at HK\$15 produces HK\$500 gross profit: a 50\% first-day share return but only 0.5\% of the application notional. Fees and financing can reduce or eliminate that profit.
+
+The distinction is algebraic, not a claim about average Hong Kong returns. If requested funding uses the maximum range price while the final price is lower, or if FINI/broker arrangements alter actual locked cash, the denominator should be explicitly redefined.
+
+\subsection{Allocation-related adverse selection}
+Suppose attractive issues attract heavy demand and offer small allocations, while unattractive issues allocate more. An indiscriminate applicant may receive a disproportionate exposure to weak issues. Across offers,
+\[
+E[a\,IR]=E[a]E[IR]+\operatorname{Cov}(a,IR).
+\]
+A negative covariance reduces the application return relative to multiplying the separate averages. This identity explains why average IPO gains alone cannot evaluate a retail subscription strategy. Actual covariance must be estimated from data.
+
+\subsection{Competing explanations for underpricing}
+The following are hypotheses rather than empirical conclusions of this report.
+\begin{longtable}{@{}L{3.3cm}L{6.3cm}L{5.9cm}@{}}
+\toprule Channel & Economic mechanism & Evidence needed\\\midrule\endfirsthead
+\toprule Channel & Economic mechanism & Evidence needed\\\midrule\endhead
+Information production & Allocations and discounts encourage investors to reveal valuation information & Investor bids, price revision and allocation quality.\\
+Allocation-related adverse selection & Less-informed applicants receive more weak issues & Joint allocation and return distributions.\\
+Certification & Sponsors or committed investors may reduce perceived uncertainty & Comparable issuers and credible controls for selection.\\
+Sentiment and limited tradable supply & Strong buying interest meets constrained free float & Demand timing, float, trading depth and later reversal.\\
+Underwriter incentives & Completion, distribution relationships and reputation can influence pricing & Fee terms, syndicate choices and investor relationships.\\
+Market-risk compensation & Subscribers bear price risk between commitment and trading & Correct commitment/pricing-to-listing windows.\\
+\bottomrule
+\end{longtable}
+Bookbuilding studies provide a foundation for the information channel. The other rows are mechanism-based alternatives to be evaluated, not a ranking established for the current Hong Kong market.\source{bookresearch,allocationresearch}
+
+\subsection{What a rigorous comparison would measure}
+A cross-market study should align ordinary IPO definitions, new versus sale shares, specialist routes, relistings, SPACs, currency and return windows. First-day returns use the offer price as entry; aftermarket performance starts from a chosen traded price. Pricing-period market adjustment should use the actual risk window, not simply subtract the listing-day index movement.
+
+Cornerstone participation, mechanism choice and subscription demand are endogenous. Issuers select routes and allocations; investors respond to expected gains. Before/after reform comparisons must account for issuer composition and market conditions. The government adoption snapshot cannot establish causality, and missing institutional demand or immature horizons must not be coded as zero.
+
+\section{The United States: Institutions and IPO Mechanisms}
+\subsection{Registration and exchange admission}
+US domestic issuers typically register an IPO using Form S-1; foreign private issuers commonly use the appropriate foreign-issuer form. SEC review concerns required disclosure, not approval of investment merit. Exchange admission remains a separate process. Emerging growth companies receive specified scaled requirements, subject to status criteria and a limited period; this is not exemption from securities responsibility.\source{usipo,egc,nyseguide}
+
+The current EGC revenue threshold described in the SEC guidance is below US\$1.235 billion, with additional exit criteria. The SEC's 2026 EGC and reporting reforms were proposals in the sources examined, not a basis for replacing current rules in this report.\source{egc,usproposals}
+
+\subsection{Traditional bookbuilding and retail access}
+Traditional US IPOs use underwriters to assess demand and distribute shares. Retail investors can receive allocations through participating intermediaries or buy after trading begins, but these are different entry prices and opportunities. Unlike Hong Kong's ordinary public-tranche framework, there is no generally applicable national subscription-multiple clawback table. This is a comparative institutional inference, not a claim that US law prohibits every customised retail arrangement.\source{usipo,usofferings,finra5130,finra5131}
+
+FINRA restricts allocations to specified persons and practices including spinning and improper quid pro quo arrangements, with rule-specific exceptions. The absence of a Hong Kong-style tranche formula therefore does not mean unlimited allocation discretion.
+
+\subsection{Lock-ups, stabilisation and alternative routes}
+US insider lock-ups are commonly contractual, often described as approximately 180 days, with deal-specific terms and separate resale-law considerations. This should not be presented as a universal statutory six-month IPO lock-up. Regulation M governs distribution-related conduct, stabilisation and syndicate activities; contractual option terms should be checked instead of importing Hong Kong limits into every US issue.\source{uslock,regm}
+
+Direct listings are distinct from conventional underwritten IPOs. Traditional selling-shareholder versions do not raise new issuer capital, while primary direct-listing frameworks permit fundraising under specified rules. SPACs raise capital for a subsequent combination; the SEC's 2024 rules strengthened disclosure on compensation, conflicts, dilution and projections. These routes should not be treated as identical observations in an IPO-return sample.\source{usofferings,nyseguide,usspac}
+
+\subsection{Fragmented execution and consolidated protection}
+US-listed shares can trade on multiple exchanges, ATSs and through off-exchange dealers. Off-exchange trades in listed shares are reported into the consolidated reporting framework. ``OTC'' can thus mean off-exchange execution of a listed share, not necessarily an unlisted small-company security.\source{ustrading,usotc}
+
+Regulation NMS connects that fragmented structure through quotation, access and order-protection requirements, with exceptions. NBBO and protection of relevant quotations do not alone capture every dimension of best execution or market depth. The SEC proposed rescinding Rules 611 and 610(e) in June 2026; the official materials examined still identified that action as proposed.\source{nms,usproposals}
+
+\section{Hong Kong and the US: A Structured Comparison}
+\begin{longtable}{@{}L{3.0cm}L{6.25cm}L{6.25cm}@{}}
+\toprule Dimension & Hong Kong & United States\\\midrule\endfirsthead
+\toprule Dimension & Hong Kong & United States\\\midrule\endhead
+Issuer exposure & Significant Mainland corporate exposure; local and international issuers also present & Domestic and international issuers; no equivalent Mainland gateway defines the entire market.\\
+Capital channels & Global portfolios, local wealth, retirement pools and Southbound & Domestic retirement/fund ecosystem and global investors; no Hong Kong-style Southbound channel.\\
+Admission & SEHK eligibility/suitability review, SFC statutory role and sponsor responsibility & SEC disclosure registration plus separate exchange admission.\\
+Typical IPO pricing & Institutional bookbuilding alongside public subscriptions and cornerstone commitments & Bookbuilding and underwriter distribution; alternative routes also exist.\\
+Retail access & Explicit public tranche and disclosed application/allocation basis & Participating underwriter/broker channels; aftermarket purchase is separate.\\
+Public allocation & Ordinary A/B regimes; distinct 18C framework and waivers & No general national Hong Kong-style demand-triggered table; FINRA restrictions apply.\\
+Committed investors & Cornerstones with assured allocation and generally six-month lock-up & Anchor/strategic arrangements depend on the deal, without an identical universal cornerstone framework.\\
+Control and lock-ups & Listing-rule restrictions for controlling shareholders; separate cornerstone terms & Contractual insider restrictions and applicable resale rules; duration varies.\\
+Stabilisation & Hong Kong price-stabilising rules and disclosed option arrangements & Regulation M and transaction-specific underwriting/option terms.\\
+Pre-listing trading & Broker grey markets are a visible feature; outside exchange book & No directly equivalent standard retail grey-market institution assumed here.\\
+Execution & Exchange order book central to price formation; other trading arrangements exist & Multiple exchanges, ATSs and off-exchange execution with consolidated reporting.\\
+Standard cash settlement & T+2 currently; separate FINI IPO clock & Most broker-dealer securities transactions T+1 since May 2024.\\
+Volatility controls & VCM for eligible stocks; auction rules; no universal fixed daily band & LULD plus market-wide circuit breakers.\\
+Periodic disclosure & Main Board annual/interim framework; GEM quarterly mandate removed & Domestic issuer annual/quarterly framework; foreign-issuer differences and pending proposals matter.\\
+\bottomrule
+\end{longtable}
+\textit{Comparison synthesises the rule and source discussions above. It does not assume every issuer uses the typical route or that either venue is uniformly superior.}
+
+The central economic difference is \textbf{how price discovery, allocation access and commitment are combined}. Hong Kong gives retail participation a formal offer structure and places commitments and lock-ups within a detailed listing framework. US traditional distribution makes investor-intermediary relationships especially important. Both systems must balance issuer proceeds, information production, broad access, execution risk and aftermarket liquidity.
+
+An apparent cross-country difference in first-day gains may arise from these mechanisms, but also from sector mix, issue size, market cycle and sample exclusions. Venue labels are insufficient explanations of performance.
+
+\section{A Framework for Monitoring the Market}
+\begin{longtable}{@{}L{3.3cm}L{6.2cm}L{6.0cm}@{}}
+\toprule Research question & Relevant indicators & Main interpretation problem\\\midrule\endfirsthead
+\toprule Research question & Relevant indicators & Main interpretation problem\\\midrule\endhead
+Who is supplying capital? & Issuer proceeds, fund flows, channel net purchases, surveys & Management location and turnover are not beneficial ownership.\\
+Is trading liquidity improving? & Spreads, depth, price impact, turnover by stock & Aggregate activity can hide illiquid securities.\\
+Is IPO price discovery working? & Price revision, investor book quality, allocations and aftermarket & Demand and issue selection are endogenous.\\
+Are retail applicants earning money? & Allocation-band returns after fees and interest & First-day gains omit rationing and funding costs.\\
+Does cornerstone support help? & Commitments, free float, investor identity and expiry events & Quality selection and locked supply can pull in different directions.\\
+Is access broadening? & Investor eligibility, product coverage, cross-border lists & Eligibility is not actual participation.\\
+Are reforms effective? & Rule-defined cohorts and comparable controls & Proposals, phased implementation and market cycles differ.\\
+\bottomrule
+\end{longtable}
+For a research dashboard, preserve original announcement dates and definitions, distinguish gross and net figures, and keep immutable dated snapshots of dynamic pages. The market can be understood more reliably through a small set of well-defined measures than through an undifferentiated count of all capital-related numbers.
+
+\appendix
+\section{Selected Reform Timeline and Status}
+\begin{longtable}{@{}L{2.4cm}L{7.9cm}L{5.2cm}@{}}
+\toprule Date & Change & Status at research date\\\midrule\endfirsthead
+\toprule Date & Change & Status at research date\\\midrule\endhead
+2014 / 2016 & Shanghai / Shenzhen Stock Connect launches & Implemented.\\
+2018 & WVR, biotech and expanded overseas-listing pathways & Implemented, later amended.\\
+Aug.\ 2022 & Bookbuilding conduct and sponsor coupling & Implemented.\\
+Mar.\ 2023 & Chapter 18C; HK investor identification; CSRC overseas filing & Implemented; different effective dates.\\
+June 2023 & HKD--RMB dual counters & Implemented for applicable securities.\\
+Nov.\ 2023 & FINI launch; stock stamp-duty reduction & Implemented; separate reforms.\\
+Jan.\ 2024 & GEM admission/transfer/reporting changes & Implemented.\\
+May 2024 & US standard T+1 settlement & Implemented for most relevant trades.\\
+Sept.\ 2024 & HK severe-weather trading; temporary 18C thresholds & Implemented; technology modifications time-limited.\\
+Aug.\ 2025 & IPO allocation, initial float and first spread-reduction phase & Implemented; document-date scope matters.\\
+Jan.\ 2026 & Ongoing public-float requirements & Implemented.\\
+Apr.\ 2026 & HK accelerated settlement consultation & Proposal for 2027 Q4; not current T+1.\\
+July 2026 & Board-lot phase 1; listing competitiveness phase 1 & Implemented from 2 and 24 July respectively.\\
+Aug.\ 2026 & Minimum-spread phase 2 & Implemented from 3 August.\\
+Sept.\ 2026 & Listing competitiveness phase 2 & Consultation; proposed changes to corporate transactions.\\
+Nov.\ 2026 & Uncertificated Securities Market and linked changes & Scheduled for 16 November; future at cutoff.\\
+2026 US proposals & NMS rescission, EGC/filer and semiannual reporting changes & Proposed in official records examined.\\
+\bottomrule
+\end{longtable}
+\source{competphase2,usm,usproposals}
+The timeline is selective. Applicable waivers, transition provisions and subsequent implementation notices must be preserved when analysing a particular transaction. The scheduled uncertificated market permits electronic legal holding arrangements distinct from the existing nominee/depository chain; it is not described here as already launched.
+
+\section{Terminology and Data Checklist}
+\begin{longtable}{@{}L{4.2cm}L{11.3cm}@{}}
+\toprule Term & Meaning in this report\\\midrule\endfirsthead
+\toprule Term & Meaning in this report\\\midrule\endhead
+HKEX / SEHK / HKSCC & Exchange group / Stock Exchange of Hong Kong / Hong Kong Securities Clearing Company.\\
+IPO / post-IPO financing & Initial offer associated with listing / subsequent capital raising.\\
+Bookbuilding & Collection and assessment of investor demand used in pricing and allocation.\\
+Clawback & Rule-triggered shift of allocation towards public subscriptions.\\
+Mechanism A/B vs Pool A/B & Choice of public allocation regime versus application-size pools.\\
+Cornerstone vs pre-IPO investor & Final-offer-price committed investor versus an earlier investment relationship.\\
+Public float / free float & Public ownership under definitions / relevant publicly held shares without disposal restrictions and exclusions.\\
+Grey market & Platform-based pre-listing dealings outside the exchange order book.\\
+Over-allotment vs offer-size adjustment & Covering/stabilisation-related option versus pre-listing issue-size expansion.\\
+T+0 / T+2 / L+2 & Trading-day shorthand / settlement-day interval / interval measured from listing.\\
+AUM / turnover / proceeds & Management-business assets / trading activity / offer financing.\\
+WVR / VIE / SPAC & Weighted voting rights / contractual operating-control structure / acquisition-purpose shell.\\
+\bottomrule
+\end{longtable}
+
+For any empirical dataset, record at least: listing and prospectus dates; route; new/sale/base/option shares; price range and final price; public mechanism and waiver; actual public and placing allocations; cornerstone commitments and lock-ups; beneficial distribution where disclosed; first-day price definition; funding and refund times; cost assumptions; currency; index window; corporate actions; and immature return horizons.
+
+\section{Evidence Limitations}
+This report establishes a broad institutional overview from publicly accessible primary materials. It does not provide a beneficial-owner census, a causal assessment of reforms, a proprietary institutional order book, or a measured ranking of every liquidity risk. Some dynamic pages were retrieved at the research date but report earlier periods. Where the current guide PDF could not be fetched directly, IPO mechanics were cross-checked through operative PN18 text, formal HKEX conclusions and the government's May 2026 response.
+
+The linked bibliography is part of the report's evidence. Source notes retained alongside the LaTeX document record extracted figures and scope restrictions. The report should be refreshed when a pending proposal becomes operative, a phased reform reaches its next stage, or a new comparable statistical release becomes available.
+
+\clearpage
+\section*{References and Primary Sources}
+\addcontentsline{toc}{section}{References and Primary Sources}
+All web materials were accessed or checked for this research on 4 October 2026. Observation dates and implementation dates are stated individually. Linked titles avoid presenting dynamic pages as fixed historical datasets.
+\begin{thebibliography}{99}
+\small
+\bibitem{hkstats} \href{https://www.hkex.com.hk/Market-Data/Statistics/Consolidated-Reports/Annual-Market-Statistics/2025-Annual-Market-Statistics?sc_lang=en}{HKEX, Annual Market Statistics 2025}. 2025 full-year and year-end statistics; fundraising provisional; summary and Stock Connect tables.
+
+\bibitem{hkmonthly} \href{https://www.hkex.com.hk/Market-Data/Statistics/Consolidated-Reports/HKEX-Monthly-Market-Highlights?sc_lang=en}{HKEX, Monthly Market Highlights}. August 2026 observation; January--August cumulative figures. Dynamic page.
+
+\bibitem{hkproducts} \href{https://www.hkex.com.hk/Global/Exchange/FAQ/Products/Securities?sc_lang=en}{HKEX, Securities Products FAQ}. Product definitions; supplemented by the structured-product directory.
+
+\bibitem{structured} \href{https://www.hkex.com.hk/Products/Securities/Structured-Products/Trading-Information-and-Historical-Data?sc_lang=en}{HKEX, Structured Products: Trading Information}. Warrants, CBBCs and other structured-product characteristics.
+
+\bibitem{gem} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2023/2312152news?sc_lang=en}{HKEX, Consultation Conclusions on GEM Listing Reforms}. 15 December 2023; effective 1 January 2024.
+
+\bibitem{overseas} \href{https://www.hkex.com.hk/Listing/Rules-and-Resources/Guidance/IPO/Listing-of-Overseas-Companies?sc_lang=en}{HKEX, Listing of Overseas Issuers}. Overseas incorporation, admission and shareholder-protection framework.
+
+\bibitem{hsi} \href{https://www.hsi.com.hk/en-hk/indexes/}{Hang Seng Indexes, Indexes Overview}. Index catalogue, methodologies and total-return series.
+
+\bibitem{awm} \href{https://www.sfc.hk/-/media/EN/files/COM/Reports-and-surveys/AWMAS-report-English.pdf?hash=2FD55F1DF15EDBEBC0375F08B63CA0B9&rev=355c352ea18b409f8bef3388ae259d7f}{SFC, Asset and Wealth Management Activities Survey 2025}. Published July 2026; principal reference period end-2025. Investor-origin definitions differ from equity ownership.
+
+\bibitem{mpf} \href{https://www.mpfa.org.hk/en/info-centre/press-releases/20260106}{MPFA, MPF Marks Three Consecutive Years of Positive Returns}. 6 January 2026; end-2025 provisional asset figures.
+
+\bibitem{fedscf} \href{https://www.federalreserve.gov/publications/october-2023-changes-in-us-family-finances-from-2019-to-2022.htm}{Federal Reserve, Changes in US Family Finances from 2019 to 2022}. October 2023 report; 2022 Survey of Consumer Finances, including stock-ownership discussion.
+
+\bibitem{transactionsurvey} \href{https://www.hkex.com.hk/News/News-Release/2020/2011253news?sc_lang=en}{HKEX, Cash Market Transaction Survey 2019}. 25 November 2020 release; historical 2019 transaction shares, not a 2026 estimate.
+
+\bibitem{connect} \href{https://www.hkex.com.hk/Mutual-Market/Connect-Hub/Stock-Connect?sc_lang=en}{HKEX, Stock Connect Explained}. Programme overview and March 2026 information materials; access, quotas and eligibility.
+
+\bibitem{connectelig} \href{https://english.sse.com.cn/access/stockconnect/eligibility/}{Shanghai Stock Exchange, Stock Connect Eligibility}. Individual-investor asset threshold and relevant participation categories.
+
+\bibitem{connectinsight} \href{https://www.hkexgroup.com/Media-Centre/Insight/Insight/2024/HKEX-Insight/Southbound-Stock-Connect-Trends-and-Prospects?sc_lang=en}{HKEX, Southbound Stock Connect: Trends and Prospects}. 2024 analysis; supports interpretation of comparable trading contribution, not current net inflows.
+
+\bibitem{basiclaw} \href{https://www.basiclaw.gov.hk/en/basiclaw/chapter5.html}{Hong Kong Basic Law, Chapter V, Article 112}. Currency convertibility and capital movement; does not determine Mainland-side outward-investment permissions.
+
+\bibitem{hkma} \href{https://www.hkma.gov.hk/media/eng/publication-and-research/reference-materials/monetary/HKMA_LERS_English_version.pdf}{HKMA, The Linked Exchange Rate System of Hong Kong}. Currency-board mechanism and convertibility undertakings.
+
+\bibitem{rmbstats} \href{https://www.info.gov.hk/gia/general/202601/30/P2026013000484p.htm}{HKMA / HKSAR Government, Monetary Statistics for December 2025}. 30 January 2026; RMB deposit stock, not equity inflows.
+
+\bibitem{dualcounter} \href{https://www.hkex.com.hk/services/trading/securities/overview/trading-mechanism/hkd-rmb-dual-counter-model?sc_lang=en}{HKEX, HKD--RMB Dual Counter Model}. Model launched 19 June 2023; fungible counters and market-making framework.
+
+\bibitem{sfcreg} \href{https://www.sfc.hk/en/About-the-SFC/Our-role/Who-we-regulate}{SFC, Who We Regulate}. Regulatory division covering exchanges, issuers and intermediaries, including bank supervision arrangements.
+
+\bibitem{afrc} \href{https://www.afrc.org.hk/en-hk/about-afrc/our-role}{AFRC, Our Role and Mission}. Accounting-profession, audit inspection and enforcement functions.
+
+\bibitem{dualfiling} \href{https://www.sbz.sfc.hk/en/Regulatory-functions/Corporates/Dual-filing}{SFC, Dual Filing}. Framework introduced 1 April 2003; statutory role and listing objections.
+
+\bibitem{ch13} \href{https://www.hkex.com.hk/-/media/hkex-market/listing/rules-and-guidance/listing-rules-contingency/main-board-listing-rules/equity-securities/chapter_13}{HKEX, Main Board Listing Rules, Chapter 13}. Continuing obligations, including Rule 13.49 financial-results announcements.
+
+\bibitem{inside} \href{https://apps.sfc.hk/edistributionWeb/api/news/list-content?lang=EN&refNo=14PR2}{SFC, Statutory Regime on Disclosure of Inside Information}. January 2014 explanation of the regime effective January 2013.
+
+\bibitem{interests} \href{https://www.sfc.hk/en/Rules-and-standards/Securities-and-Futures-Ordinance-Part-XV---Disclosure-of-Interests}{SFC, Securities and Futures Ordinance Part XV: Disclosure of Interests}. Substantial shareholders, directors and chief executives; current guidance page.
+
+\bibitem{hkidr} \href{https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/corporate-news/doc?refNo=23PR10}{SFC, Investor Identification Regime to Take Effect on 20 March 2023}. Implementation and customer-identification framework.
+
+\bibitem{vie} \href{https://en-rules.hkex.com.hk/sites/default/files/pdf_documents/gl7714_202505.pdf}{HKEX, Guidance on Listed Issuers Using Contractual Arrangements}. May 2025 guidance; legal validity, restricted businesses and disclosure.
+
+\bibitem{icf} \href{https://www.sfc.hk/TC/faqs/Investor-compensation}{SFC, Investor Compensation FAQ}. Eligibility and compensation caps; not a guarantee against market losses.
+
+\bibitem{ifecmargin} \href{https://www.ifec.org.hk/web/en/investment/market-intermediaries/financial-intermediaries/broker/faqs.page}{IFEC, Broker FAQs: Margin Accounts and Client Securities}. Cash/margin distinction, authorised pooling and re-pledging.
+
+\bibitem{ifecother} \href{https://www.ifec.org.hk/web/en/investment/market-intermediaries/financial-intermediaries/broker/margin-trading/other-risks.page}{IFEC, Margin Trading: Other Risks}. Margin calls, liquidation, financing and collateral risks.
+
+\bibitem{marketops} \href{https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/Securities-Market-Operations?sc_lang=en}{HKEX, Securities Market Operations FAQ}. Order priority, intraday trading and investor-intermediary settlement arrangements.
+
+\bibitem{hours} \href{https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Securities-Market?sc_lang=en}{HKEX, Securities Market Trading Hours}. Normal Hong Kong sessions; product-specific and half-day differences.
+
+\bibitem{weather} \href{https://www.hkex.com.hk/services/trading-hours-and-severe-weather-arrangements/severe-weather-arrangements/overview?sc_lang=en}{HKEX, Severe Weather Arrangements: Overview}. Effective 23 September 2024.
+
+\bibitem{settlement} \href{https://www.hkex.com.hk/services/settlement-and-depository/settlement?sc_lang=en}{HKEX, Settlement: Securities}. Hong Kong standard cash settlement and separate Northbound arrangements.
+
+\bibitem{ccass} \href{https://www.hkex.com.hk/Services/Settlement-and-Depository/Securities-Admission-into-CCASS/FAQ?sc_lang=en}{HKEX, Securities Admission into CCASS FAQ}. Depository, settlement and CCP functions; different settlement modes.
+
+\bibitem{tplus} \href{https://www.hkex.com.hk/News/Market-Communications/2026/260417news?sc_lang=en}{HKEX, Consultation on Accelerated Settlement for the Hong Kong Cash Market}. 17 April 2026; proposed T+1 transition in 2027 Q4.
+
+\bibitem{vcm} \href{https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading/VCM?sc_lang=en}{HKEX, Volatility Control Mechanism FAQ}. Eligible securities, rolling reference prices and cooling-off periods.
+
+\bibitem{lot2026} \href{https://www.hkex.com.hk/News/Market-Communications/2026/260630news?sc_lang=en}{HKEX, Streamlined Board Lot Framework}. 30 June 2026; phase 1 effective 2 July 2026; phased transition.
+
+\bibitem{tick2026} \href{https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/Reduction-of-Minimum-Spreads?sc_lang=en}{HKEX, Reduction of Minimum Spreads}. Phases effective 4 August 2025 and 3 August 2026.
+
+\bibitem{short} \href{https://www.hkex.com.hk/services/trading/securities/overview/regulated-short-selling?sc_lang=en}{HKEX, Regulated Short Selling}. Designated securities, delivery and tick-rule conditions; exemptions must be checked.
+
+\bibitem{fees} \href{https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Securities-(Hong-Kong)/Trading/Transaction?sc_lang=en}{HKEX, Securities Transaction Fees}. Current fees and levies; exemptions and rounding vary.
+
+\bibitem{taxoverview} \href{https://www.ird.gov.hk/eng/tax/bus_taxcertainty.htm}{IRD, Tax Treatment of Equity Disposal Gains}. Capital versus revenue treatment; tax-certainty scheme has separate eligibility conditions.
+
+\bibitem{eligibility} \href{https://www.hkex.com.hk/Listing/Explore-By-Role/Potential-Applicants/Equity-Securities?sc_lang=en}{HKEX, Equity Securities: Listing Eligibility and Applications}. Current financial-test summary; application/listing snapshot through 30 September 2026.
+
+\bibitem{biotech} \href{https://en-rules.hkex.com.hk/rulebook/18a03-0}{HKEX, Main Board Rule 18A.03}. Biotech minimum value, operating history and working capital.
+
+\bibitem{tech2024} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2024/240823news?sc_lang=en}{SFC and HKEX, Temporary Specialist Technology and De-SPAC Modifications}. 23 August 2024; implementation period 1 September 2024--31 August 2027.
+
+\bibitem{spachk} \href{https://www.hkex.com.hk/Services/Trading/Securities/Overview/Trading-Mechanism/SPAC?sc_lang=en}{HKEX, SPAC Trading Framework}. Professional-investor restrictions on pre-combination SPAC securities.
+
+\bibitem{compet2026} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2026/260724news?sc_lang=en}{HKEX, Conclusions on Enhancing Listing Competitiveness}. 24 July 2026; immediate effectiveness. WVR, overseas issuers, specialist routes and non-public filing.
+
+\bibitem{sponsor} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2022/220422news?sc_lang=en}{HKEX, Consequential Bookbuilding and Sponsor-Coupling Rule Amendments}. 22 April 2022; regime effective 5 August 2022.
+
+\bibitem{sfccode} \href{https://www.sfc.hk/en/faqs/intermediaries/supervision/Code-of-Conduct/6-May-2022---Code-of-Conduct}{SFC, Code of Conduct: Bookbuilding and Placing FAQs}. Paragraphs 17.1A and 21, overall coordinators and sponsor coupling.
+
+\bibitem{pn18} \href{https://hkexen.thomsonreuters.com/rulebook/initial-public-offer-securities}{HKEX, Practice Note 18: Initial Public Offer of Securities}. Current version displayed effective January 2026; paragraphs 3.1--4.5.
+
+\bibitem{ipo2025} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2025/2508012news?sc_lang=en}{HKEX, IPO Price Discovery and Open Market Conclusions: Announcement}. 1 August 2025; applicable listing documents from 4 August 2025.
+
+\bibitem{ipo2025pdf} \href{https://www.hkex.com.hk/-/media/HKEX-Market/News/Market-Consultations/2016-Present/December-2024-Optimise-IPO-Price/Conclusions-Aug-2025/cp202412cc.pdf}{HKEX, IPO Price Discovery and Open Market Consultation Conclusions}. August 2025; initial A+H/free float and paragraphs 531--536 on pricing flexibility.
+
+\bibitem{lcq9} \href{https://www.info.gov.hk/gia/general/202605/13/P2026051200604p.htm}{HKSAR Government, LCQ9: Measures to Optimise the IPO Market}. 13 May 2026; adoption data through April 2026 and mechanism explanations.
+
+\bibitem{offeringannex} \href{https://en-rules.hkex.com.hk/sites/default/files/net_file_store/A.18_Offering-related_Mechansims.pdf}{HKEX, Guide Annex A.18: Offering-related Mechanisms}. Historical clawback comparison and distinction between offer-size adjustment and over-allotment.
+
+\bibitem{techallocation} \href{https://en-rules.hkex.com.hk/rulebook/18c08}{HKEX, Main Board Rule 18C.08}. Independent price-setting investors and option-share exclusions.
+
+\bibitem{cornerfaq} \href{https://www.hkex.com.hk/Global/Exchange/FAQ/Top-Questions?sc_lang=en}{HKEX, Top Questions: Cornerstone Investors}. Final offer price, assured allocation and six-month lock-up.
+
+\bibitem{cornerguide} \href{https://www.hkex.com.hk/-/media/HKEX-Market/Listing/Rules-and-Guidance/Archive/Guidance-Letters/GL51_13.pdf}{HKEX, Cornerstone Investment Guidance (GL51-13, archived)}. Historical guidance incorporated into Guide Chapter 4.15; benefits and allocation principles.
+
+\bibitem{floatrule} \href{https://en-rules.hkex.com.hk/rulebook/808}{HKEX, Main Board Rule 8.08}. Initial public-float tiers, holder spread and concentration.
+
+\bibitem{freefloat} \href{https://en-rules.hkex.com.hk/rulebook/808a}{HKEX, Main Board Rule 8.08A}. Initial free float: disposal restrictions, exclusions and thresholds.
+
+\bibitem{ongoingfloat} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2025/251217news?sc_lang=en}{HKEX, Ongoing Public Float Consultation Conclusions: Announcement}. 17 December 2025; rules effective 1 January 2026.
+
+\bibitem{fini} \href{https://www.hkex.com.hk/News/News-Release/2023/230927news?sc_lang=en}{HKEX, FINI Launch on 22 November}. 27 September 2023; standard pricing-to-trading shortening and new pre-funding model.
+
+\bibitem{greyhk} \href{https://www.hkex.com.hk/Global/Exchange/FAQ/Securities-Market/Trading?sc_lang=en}{HKEX, Trading FAQ: Grey Market}. Off-exchange pre-listing dealings and contractual enforceability.
+
+\bibitem{greyoperator} \href{https://www.futuhk.com/en/support/topic2_303}{Futu, What Is Grey Market Trading?}. Operator-specific timing, same-day trading, L+2 settlement and cancellation terms.
+
+\bibitem{stabilisation} \href{https://apps.sfc.hk/edistributionWeb/api/news/list-content?lang=EN&refNo=02PR130}{SFC, Conclusions on Securities and Futures Price Stabilizing Rules}. Formal explanation of stabilising-period definition and absence of guaranteed support.
+
+\bibitem{lockhk} \href{https://en-rules.hkex.com.hk/entiresection/1}{HKEX, Main Board Listing Rules: Rule 10.07}. Controlling-shareholder restrictions, exceptions and permitted over-allocation share lending.
+
+\bibitem{ifecipo} \href{https://www.ifec.org.hk/web/en/investment/investment-products/stock/stock-trading/risks.page?componentID=1555380997193&submit=true}{IFEC, Risks of IPO Investing}. 2025 investor-education explanation of allocation and margin-subscription costs.
+
+\bibitem{csrc} \href{https://www.csrc.gov.cn/csrc_en/c102030/c7125865/content.shtml}{CSRC, Filing-based Administration of Overseas Offering and Listing}. 17 February 2023 announcement; effective 31 March 2023; direct and indirect listings.
+
+\bibitem{bookresearch} \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-6261.00572}{Cornelli and Goldreich (2003), Bookbuilding: How Informative Is the Order Book?}. The Journal of Finance, 58(4), 1415--1443; investor information and price setting.
+
+\bibitem{allocationresearch} \href{https://www.sciencedirect.com/science/article/pii/S0304405X02001381}{Ljungqvist and Wilhelm (2002), IPO Allocations: Discriminatory or Discretionary?}. Journal of Financial Economics, 65(2), 167--201. \href{https://users.ox.ac.uk/~ofrcinfo/file_links/finecon_papers/2001fe08.pdf}{University-hosted 2001 working-paper version}. Historical research on information production and allocations; evidence is not a 2026 Hong Kong estimate.
+
+\bibitem{usipo} \href{https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-17}{SEC / Investor.gov, Updated Investor Bulletin: Investing in an IPO}. Registration, disclosure review, pricing and investor access.
+
+\bibitem{usofferings} \href{https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/types-registered-offerings}{SEC, Types of Registered Offerings}. Updated April 2026; traditional IPOs, direct listings and SPACs.
+
+\bibitem{finra5130} \href{https://www.finra.org/rules-guidance/rulebooks/finra-rules/5130}{FINRA Rule 5130: Initial Equity Public Offerings}. Restricted persons, account eligibility and exceptions.
+
+\bibitem{finra5131} \href{https://www.finra.org/rules-guidance/rulebooks/finra-rules/5131}{FINRA Rule 5131: New Issue Allocations and Distributions}. Allocation misconduct, spinning and distribution-related obligations.
+
+\bibitem{egc} \href{https://www.sec.gov/resources-small-businesses/going-public/emerging-growth-companies}{SEC, Emerging Growth Companies}. Current status criteria and scaled requirements; 2026 proposals separately identified.
+
+\bibitem{nyseguide} \href{https://www.nyse.com/ipo}{NYSE, IPO Guide and Listing Routes}. Primary/secondary proceeds and direct-listing distinctions; associated official guide.
+
+\bibitem{uslock} \href{https://www.sec.gov/answers/lockup.htm}{SEC, Initial Public Offerings: Lockup Agreements}. Educational description of contractual terms; not a universal legal duration.
+
+\bibitem{regm} \href{https://www.sec.gov/rules-regulations/staff-guidance/staff-legal-bulletins/staff-legal-bulletin-9-faq-regulation-m}{SEC, Staff Legal Bulletin No. 9: Regulation M FAQs}. Distribution, stabilisation and syndicate covering distinctions.
+
+\bibitem{ust1} \href{https://www.sec.gov/investment/settlement-cycle-small-entity-compliance-guide-15c6-1-15c6-2-204-2}{SEC, Shortening the Securities Transaction Settlement Cycle}. Adopted February 2023; compliance date 28 May 2024; exceptions remain.
+
+\bibitem{usspac} \href{https://www.sec.gov/resources-small-businesses/small-business-compliance-guides/special-purpose-acquisition-companies-shell-companies-projections}{SEC, SPACs, Shell Companies and Projections: Compliance Guide}. 2024 final-rule explanation.
+
+\bibitem{ustrading} \href{https://www.finra.org/investors/insights/where-do-stocks-trade}{FINRA, Where Do Stocks Trade?}. Exchanges, ATSs, dark pools and off-exchange reporting.
+
+\bibitem{usotc} \href{https://www.finra.org/investors/insights/over-the-counter-equities-trading}{FINRA, A Look at Over-the-Counter Equities Trading}. Listed-share off-exchange trading versus OTC equities; dealer roles.
+
+\bibitem{nms} \href{https://www.sec.gov/rules-regulations/2005/06/regulation-nms}{SEC, Regulation NMS}. 2005 final framework; contemporary rescission proposal separately identified.
+
+\bibitem{regsho} \href{https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions-8}{SEC, Regulation SHO FAQs}. Marking, locate, close-out and Rule 201 price-test framework.
+
+\bibitem{mwcb} \href{https://beta.nasdaqtrader.com/content/marketregulation/mwcb_faq.pdf}{Nasdaq, Market-Wide Circuit Breakers FAQ}. 7/13/20 percent levels; timing and scope.
+
+\bibitem{luld} \href{https://www.nyse.com/network/article/nyse-increases-resiliancy-during-extreme-volatility}{NYSE, Market Resiliency During Extreme Volatility}. Single-stock LULD and reopening arrangements.
+
+\bibitem{usproposals} \href{https://www.sec.gov/rules-regulations/rulemaking-activity}{SEC, Rulemaking Activity}. 2026 proposals: NMS S7-2026-20; EGC/filer S7-2026-18; semiannual reporting S7-2026-15. Status checked at research date.
+
+\bibitem{competphase2} \href{https://www.hkex.com.hk/News/Regulatory-Announcements/2026/260921news?sc_lang=en}{HKEX, Listing Framework Competitiveness Review Phase II Consultation}. 21 September 2026; corporate-transaction proposals, consultation closes 30 November 2026.
+
+\bibitem{usm} \href{https://www.sfc.hk/en/Rules-and-standards/Uncertificated-Securities-Market}{SFC, Uncertificated Securities Market}. July 2026 materials; commencement scheduled for 16 November 2026, after this report cutoff.
+
+\end{thebibliography}
+\end{document}

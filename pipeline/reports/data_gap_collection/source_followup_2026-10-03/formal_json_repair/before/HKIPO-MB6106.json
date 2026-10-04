@@ -1,0 +1,116 @@
+{
+  "code": "6106.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4334,
+      "page": 7,
+      "quote": "Subtotal 4,549,400 43.34% 4.12%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 5934.56,
+      "page": 5,
+      "quote": "Subscription level 5,934.56 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 222966,
+      "page": 5,
+      "quote": "No. of valid applications 222,966",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3115050544,
+      "page": 5,
+      "quote": "Subscription level 5,934.56 times Claw-back triggered Yes No. of Offer Shares initially available under the Hong Kong Public Offering 524,900",
+      "confidence": "high",
+      "note": "Total public valid applied shares = 524,900 initial public offer * 5,934.56 times subscription level = 3,115,050,544."
+    },
+    "col_CP": {
+      "value": "Subscription level 5,934.56 times",
+      "page": 5,
+      "quote": "Subscription level 5,934.56 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "23/06/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**23/06/2026 22:57**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 10497300,
+      "page": 4,
+      "quote": "Number of Offer Shares (before exercise of the Over-allotment Option) 10,497,300",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2099500,
+      "page": 4,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering (after reallocation) 2,099,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 8397800,
+      "page": 4,
+      "quote": "Number of Offer Shares in International Offering (after reallocation and before exercise of the Over-allotment Option) 8,397,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE OF THE OVER-ALLOTMENT OPTION（19/07/2026 18:04）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "1,574,600 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (claw-back) so that the Hong Kong Public Offering totals 2,099,500 Offer Shares (20% of the Offer Shares initially available under the Global Offering)",
+      "page": 5,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) 1,574,600",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 995400000,
+      "page": 5,
+      "quote": "Net proceeds HK$995.4 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3924,
+      "page": 27,
+      "quote": "an aggregate of 43,362,170 H Shares, representing approximately 39.24% of the issued share capital of our Company will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 110497300,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 110,497,300",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_DB": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_DC": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    }
+  }
+}

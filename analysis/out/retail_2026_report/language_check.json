@@ -1,0 +1,570 @@
+{
+  "writing_specification": "ASD-STE100 Issue 9",
+  "scope": "descriptive sentence length and paragraph sentence count; consistent technical terms",
+  "full_dictionary_compliance_certified": false,
+  "max_sentence_words": 16,
+  "paragraphs": [
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "Data description and retail application returns. Report for mentor discussion. Prepared on 3 October 2026. Revised on 4 October 2026. Data cutoff: 30 September 2026.",
+      "sentences": 5,
+      "word_counts": [
+        6,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "We study 113 ordinary Main Board IPOs in the project database. These IPOs listed from 2 January to 30 September 2026. The mean first-day return is 53.15%. The mean gross application return for one lot is 2.08%. The difference is 51.07 percentage points.",
+      "sentences": 5,
+      "word_counts": [
+        11,
+        10,
+        7,
+        11,
+        7
+      ]
+    },
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "The allocation rate and the first-day return have a negative covariance. This covariance reduces the application return by 3.65 percentage points. It offsets 63.6% of the product of the two means. This result describes the sample. It does not show a causal effect.",
+      "sentences": 5,
+      "word_counts": [
+        11,
+        11,
+        11,
+        5,
+        7
+      ]
+    },
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "The sample covers Q1 to Q3. It does not cover the full year. Each IPO has equal weight. We use the first-day closing price. The base result excludes all costs.",
+      "sentences": 5,
+      "word_counts": [
+        6,
+        7,
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "An application return is a calculated expectation. It is not an observed account return. HK$88 is an assumed fee for a sensitivity check. We do not use a portfolio simulation.",
+      "sentences": 4,
+      "word_counts": [
+        7,
+        7,
+        10,
+        7
+      ]
+    },
+    {
+      "page": "Hong Kong IPOs in 2026",
+      "text": "The database contains the research sample. This report does not certify coverage of every type of new listing on the exchange.",
+      "sentences": 2,
+      "word_counts": [
+        6,
+        15
+      ]
+    },
+    {
+      "page": "The 2026 sample",
+      "text": "Base offer proceeds equal the offer price times the base offer quantity. They exclude the over-allotment option. They are not proceeds after issue costs. We do not add share quantities to HDR quantities.",
+      "sentences": 4,
+      "word_counts": [
+        12,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "page": "The 2026 sample",
+      "text": "The route groups do not overlap. The project assigns Chapter 18A and Chapter 18C before it assigns A+H. There are 38 issuers with an A+H flag. Two also have a Chapter 18C flag. Thus, the separate A+H route group has 36 issuers.",
+      "sentences": 5,
+      "word_counts": [
+        6,
+        13,
+        9,
+        7,
+        10
+      ]
+    },
+    {
+      "page": "Industry and issuer characteristics",
+      "text": "Industry groups use the stored HSICS 2026 code and the project classification table. All 113 codes have a group. Information technology accounts for 49 IPOs. Industrials account for 24 IPOs. Some groups have only one IPO. Their means do not show a general industry effect.",
+      "sentences": 6,
+      "word_counts": [
+        13,
+        6,
+        6,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "page": "Industry and issuer characteristics",
+      "text": "The flags can overlap. Unknown flags remain unknown. We do not replace them with zero. The route groups on the previous page use a separate classification rule.",
+      "sentences": 4,
+      "word_counts": [
+        4,
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "page": "Industry and issuer characteristics",
+      "text": "Financial periods and currencies differ across issuers. We do not add prior-year profit values. The loss flag uses each issuer's recorded prior-year profit. It does not describe a common calendar-year accounting period.",
+      "sentences": 4,
+      "word_counts": [
+        7,
+        7,
+        9,
+        9
+      ]
+    },
+    {
+      "page": "Descriptive statistics",
+      "text": "N is the number of known values. SD uses the N minus one denominator. P25 and P75 are the 25th and 75th percentiles. The underlying CSV also gives minimum and maximum values.",
+      "sentences": 4,
+      "word_counts": [
+        7,
+        7,
+        9,
+        9
+      ]
+    },
+    {
+      "page": "Descriptive statistics",
+      "text": "First-day prices increased for 81 IPOs, did not change for 6, and decreased for 26. The share with a negative first-day return is 23.01%. The return range is -56.89% to 383.62%.",
+      "sentences": 3,
+      "word_counts": [
+        15,
+        10,
+        9
+      ]
+    },
+    {
+      "page": "Descriptive statistics",
+      "text": "The mean first-day return is much higher than the median. Large positive returns affect the mean. Public subscription also has a long upper tail. Its mean is 1,985.19 times, compared with a median of 1,073.37 times.",
+      "sentences": 4,
+      "word_counts": [
+        10,
+        6,
+        8,
+        16
+      ]
+    },
+    {
+      "page": "Descriptive statistics",
+      "text": "The one-lot allocation rate uses the application tier for one lot. It differs from the average rate for all public applications. The sample includes one HDR issuer, 6228. We calculate its quantities in HDR units.",
+      "sentences": 4,
+      "word_counts": [
+        11,
+        10,
+        7,
+        7
+      ]
+    },
+    {
+      "page": "Descriptive statistics",
+      "text": "A median expected profit is a median across IPO-specific expectations. It is not the median profit of actual investor accounts. Missing values remain missing.",
+      "sentences": 3,
+      "word_counts": [
+        10,
+        10,
+        4
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "The three workbooks contain 202 registered fields for 113 issuers. Eleven fields come from official listing records. Seventy-seven fields come from prospectuses. The other 114 fields contain allotment, market, and external data. A separate CSV lists coverage for every workbook field.",
+      "sentences": 5,
+      "word_counts": [
+        10,
+        7,
+        5,
+        10,
+        9
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "The tables below explain the meaning and possible use of selected fields. N counts known analysis values out of 113. Each field has its own count. A filled cell is not proof of a correct source. Some missing cells are not applicable.",
+      "sentences": 5,
+      "word_counts": [
+        12,
+        8,
+        6,
+        10,
+        6
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "Financial ratios use the recorded periods and definitions. Liabilities can exceed assets. The liability ratio can exceed 100%. Raw sales growth has large upper-tail values. Check period lengths, currencies, and units before comparisons. Do not mix annualized sales with unadjusted research costs.",
+      "sentences": 6,
+      "word_counts": [
+        8,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "Underwriting fees are issuer costs. They are not the assumed applicant fee. A sponsor group can reflect issuer selection. These data can show an association without showing a sponsor effect.",
+      "sentences": 4,
+      "word_counts": [
+        5,
+        7,
+        7,
+        11
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "The three-month raw return has 82 observations. Its HSI wealth relative has only 65 observations. Joint tests must use the matched sample. One-year and three-year reserved returns have no observations. Future or unknown returns must not become zero.",
+      "sentences": 5,
+      "word_counts": [
+        7,
+        8,
+        7,
+        8,
+        8
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "HIBOR is a market funding measure. It is not an observed borrowing cost for an applicant. Later stabilization outcomes cannot explain pricing with information known before the offer.",
+      "sentences": 3,
+      "word_counts": [
+        6,
+        10,
+        12
+      ]
+    },
+    {
+      "page": "What the collected Excel data can do",
+      "text": "First, compare application returns across demand, offer size, and public-tranche groups. Second, study price revision with issuer finances, institutional backing, and cornerstone commitments. Third, test later returns and unlock events on separate mature samples. Use a common sample within each model. Report associations until a credible design identifies causality.",
+      "sentences": 5,
+      "word_counts": [
+        11,
+        12,
+        11,
+        7,
+        8
+      ]
+    },
+    {
+      "page": "From first-day returns to application returns",
+      "text": "Let the offer price be P0 and the first-day closing price be P1. Let q be the requested quantity. Let E[A] be the expected allotted quantity. Let a be the allocation rate, and let r be the first-day return.",
+      "sentences": 4,
+      "word_counts": [
+        13,
+        6,
+        8,
+        13
+      ]
+    },
+    {
+      "page": "From first-day returns to application returns",
+      "text": "B is the application principal. G is expected gross profit. y is the gross application return. The expected allotted quantity includes guaranteed quantities and additional ballots.",
+      "sentences": 3,
+      "word_counts": [
+        5,
+        11,
+        10
+      ]
+    },
+    {
+      "page": "From first-day returns to application returns",
+      "text": "The covariance uses N as the denominator. The identity is exact before rounding. Thus, 5.73% minus 3.65 percentage points gives 2.08%. The product of means is an algebraic comparison. It is not the return from a new allocation policy.",
+      "sentences": 5,
+      "word_counts": [
+        7,
+        6,
+        11,
+        8,
+        10
+      ]
+    },
+    {
+      "page": "From first-day returns to application returns",
+      "text": "The covariance is negative in all three quarters. Mean gross profit is only HK$7.24 in Q3. Profit in dollars also depends on principal and allotted quantity. Demand and issuer characteristics can affect both allocation and return. This decomposition does not identify a causal mechanism.",
+      "sentences": 5,
+      "word_counts": [
+        8,
+        10,
+        10,
+        10,
+        8
+      ]
+    },
+    {
+      "page": "Sensitivity to fees and large winners",
+      "text": "The fee applies to every application, including applications with no allocation. The return after this fee is (G minus f) divided by B. The negative share counts IPOs with negative expected profit. It does not count actual accounts.",
+      "sentences": 4,
+      "word_counts": [
+        11,
+        12,
+        9,
+        6
+      ]
+    },
+    {
+      "page": "Sensitivity to fees and large winners",
+      "text": "HK$88 is an assumed parameter. It is not an observed account fee. These scenarios exclude subscription levies, selling costs, financing costs, and opportunity cost. The gross result remains the main result.",
+      "sentences": 4,
+      "word_counts": [
+        6,
+        7,
+        12,
+        7
+      ]
+    },
+    {
+      "page": "Sensitivity to fees and large winners",
+      "text": "The largest-profit issuer is 0501. The largest three are 0501, 2672, and 3231. We rank by expected one-lot profit in dollars. Gross mean profit stays positive after their removal. Profit under the HK$88 scenario becomes negative.",
+      "sentences": 5,
+      "word_counts": [
+        5,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "page": "Sensitivity to fees and large winners",
+      "text": "These checks use information known after listing. They measure influence on the result. They are not application selection rules.",
+      "sentences": 3,
+      "word_counts": [
+        7,
+        6,
+        6
+      ]
+    },
+    {
+      "page": "Sensitivity to fees and large winners",
+      "text": "The source questions now have verified answers. The exclusions show dependence on these issuers. Total public applied shares are not the one-lot return denominator. Removing the 19 issuers changes the sample. It does not identify the effect of their data corrections.",
+      "sentences": 5,
+      "word_counts": [
+        7,
+        7,
+        10,
+        7,
+        10
+      ]
+    },
+    {
+      "page": "Data evidence and remaining limits",
+      "text": "Fourteen recorded rounded-ratio formulas reproduce the old totals. Two recorded formulas also have arithmetic differences. One old total is only consistent with rounding. The original error causes for two issuers are unrecorded. The repaired totals use source tier sums, not assumed error causes.",
+      "sentences": 5,
+      "word_counts": [
+        8,
+        7,
+        8,
+        9,
+        11
+      ]
+    },
+    {
+      "page": "Data evidence and remaining limits",
+      "text": "Core prices, one-lot rules, and returns cover all 113 IPOs. The VC/PE flag is unknown for seven issuers. Prior-year profit is missing for one issuer. Unrestricted public holding is missing for one issuer. This report does not certify all database fields.",
+      "sentences": 5,
+      "word_counts": [
+        10,
+        9,
+        7,
+        8,
+        8
+      ]
+    },
+    {
+      "page": "Data evidence and remaining limits",
+      "text": "The application principal uses the final offer price. It excludes levies. It does not measure peak cash blocked at the upper offer price. No actual account records enter the calculations. We do not calculate leverage strategies, cash scheduling, or annualized returns.",
+      "sentences": 5,
+      "word_counts": [
+        8,
+        3,
+        12,
+        7,
+        11
+      ]
+    },
+    {
+      "page": "Data evidence and remaining limits",
+      "text": "The master export supplies the sample description. Verified allocation rules supply expected returns. The report tables retain separate counts for missing values. The source manifest records official PDF links and file hashes.",
+      "sentences": 4,
+      "word_counts": [
+        7,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "We ask how much of a high first-day IPO return reaches retail application capital. We study 113 ordinary Hong Kong Main Board IPOs. They listed from January to September 2026. We calculate the expected result of one application for one lot. We assume a sale at the first-day closing price.",
+      "sentences": 5,
+      "word_counts": [
+        14,
+        9,
+        7,
+        11,
+        9
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "The mean first-day return is 53.15%, and the median is 14.82%. The mean gross application return is 2.08%, and the median is 0.59%. The mean expected gross profit is HK$91.77 per application. Its median is HK$27.00. These are IPO-specific expectations, not actual account results.",
+      "sentences": 5,
+      "word_counts": [
+        13,
+        14,
+        11,
+        6,
+        8
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "The mean return difference is 51.07 percentage points. The denominators differ. First-day return applies to allotted securities. Application return divides expected profit by all requested principal. Low allocation rates limit the return that reaches application capital.",
+      "sentences": 5,
+      "word_counts": [
+        9,
+        3,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "The product of mean allocation and mean first-day return is 5.73%. Their covariance contributes minus 3.65 percentage points. This negative contribution offsets 63.6% of the product and leaves 2.08%. Higher-return IPOs tend to give smaller allocations. The decomposition describes a sample relationship, not a causal effect.",
+      "sentences": 5,
+      "word_counts": [
+        12,
+        8,
+        13,
+        7,
+        10
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "The covariance is negative in Q1, Q2, and Q3. However, expected profit changes across quarters. The Q3 mean is only HK$7.24. Large winners also affect the mean. Removing the largest-profit issuer reduces mean gross profit to HK$77.41. Removing the largest three reduces it to HK$58.48.",
+      "sentences": 6,
+      "word_counts": [
+        9,
+        6,
+        8,
+        6,
+        12,
+        10
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "Costs require a separate sensitivity check. With an assumed HK$88 fee, mean profit is HK$3.77. Removing the largest winner changes this scenario profit to minus HK$10.59. HK$88 is not an observed account fee. The main finding therefore uses gross returns. Other transaction and financing costs remain outside these calculations.",
+      "sentences": 6,
+      "word_counts": [
+        6,
+        12,
+        13,
+        8,
+        7,
+        9
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "We have checked the key source evidence. The official 2649 correction confirms a lot of 500. The 3355 clarification confirms ten Pool B guarantees. Independent calculations verify 763 tiers for 19 application totals. The formal JSON files now contain these totals. Source exclusions retain the large return gap and negative covariance.",
+      "sentences": 6,
+      "word_counts": [
+        7,
+        9,
+        8,
+        9,
+        8,
+        10
+      ]
+    },
+    {
+      "page": "Short draft for the mentor",
+      "text": "We propose application capital as the main return denominator for this research question. We seek feedback on the next mechanism test. Demand measures or institutional variation could help separate allocation mechanics from information effects. We will choose that test before we add a cash constraint model or simulation.",
+      "sentences": 4,
+      "word_counts": [
+        13,
+        8,
+        13,
+        14
+      ]
+    },
+    {
+      "page": "Terms and methods",
+      "text": "IPO means initial public offering. HDR means Hong Kong depositary receipt. VC/PE means venture capital or private equity. HSI means Hang Seng Index. HIBOR means Hong Kong Interbank Offered Rate. CAR means cumulative abnormal return relative to a benchmark.",
+      "sentences": 6,
+      "word_counts": [
+        5,
+        6,
+        8,
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "page": "Terms and methods",
+      "text": "The main results use raw returns and equal IPO weights. There are no regression estimates or significance tests in this report. All displayed numbers come from saved tables or the master export. We retain the full precision in the CSV files.",
+      "sentences": 4,
+      "word_counts": [
+        10,
+        11,
+        11,
+        9
+      ]
+    },
+    {
+      "page": "Terms and methods",
+      "text": "The text follows ASD-STE100 writing rules for short descriptive sentences and consistent terms. The report defines the required finance terms. The automated check tests sentence length and paragraph size. It does not certify full dictionary compliance.",
+      "sentences": 4,
+      "word_counts": [
+        13,
+        7,
+        9,
+        7
+      ]
+    },
+    {
+      "page": "Terms and methods",
+      "text": "To reproduce the tables, run the report script from the project root. Compile the standalone LaTeX source to produce the PDF.",
+      "sentences": 2,
+      "word_counts": [
+        12,
+        9
+      ]
+    },
+    {
+      "page": "Terms and methods",
+      "text": "Source and calculation code remain separate. The collection pipeline supplies evidence. The analysis code calculates the report results. No pipeline analysis step or simulation is added.",
+      "sentences": 4,
+      "word_counts": [
+        6,
+        5,
+        7,
+        8
+      ]
+    }
+  ]
+}

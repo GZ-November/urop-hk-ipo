@@ -1,0 +1,119 @@
+{
+  "code": "6745.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3188,
+      "page": 5,
+      "quote": "Total 112,261,000 31.88 4.78 –",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 227.58,
+      "page": 4,
+      "quote": "Subscription level 227.58 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 88855,
+      "page": 4,
+      "quote": "No. of valid applications 88,855",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 8013774540,
+      "page": 4,
+      "quote": "Subscription level 227.58 times Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 35,213,000",
+      "confidence": "high",
+      "note": "Total public valid applied shares = 35,213,000 * 227.58 = 8,013,774,540."
+    },
+    "col_CP": {
+      "value": "Subscription level 227.58 times",
+      "page": 4,
+      "quote": "Subscription level 227.58 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "08/07/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and us on the",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "09/07/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**09/07/2026 21:39**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 352126000,
+      "page": 3,
+      "quote": "Number of Offer Shares 352,126,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 35213000,
+      "page": 3,
+      "quote": "Number of Offer Shares in the Hong Kong Public Offering 35,213,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 316913000,
+      "page": 3,
+      "quote": "Number of Offer Shares in the International Offering 316,913,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-07-10 起 45 天内共 16 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-08-24 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered N/A; Final no. of Offer Shares under Hong Kong Public Offering 35,213,000 (10.00%)",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering Nil Final no. of Offer Shares under the Hong Kong Public Offering 35,213,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1160370000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,160.37 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.15,
+      "page": 16,
+      "quote": "be issued pursuant to the Global Offering, representing approximately 15.00% of the total issued",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 2408962276,
+      "page": 3,
+      "quote": "2,408,962,276 Note: Including 61,450,726 A Shares held by the Company as treasury Shares.",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0996,
+      "page": null,
+      "quote": "公式：(col_CS 352,126,000 − col_CK 0.3188×col_CS) ÷ col_CZ 2,408,962,276 = 0.0996；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 352,126,000 − col_CK 0.3188×col_CS) ÷ col_CZ 2,408,962,276 = 0.0996；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 2408962276,
+      "page": 3,
+      "quote": "公式：(col_CS 352,126,000 − col_CK 0.3188×col_CS) ÷ col_CZ 2,408,962,276 = 0.0996；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

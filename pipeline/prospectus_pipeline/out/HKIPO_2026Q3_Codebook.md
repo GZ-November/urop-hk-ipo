@@ -3,7 +3,7 @@
 - **样本规模 (N)**：30 家香港联交所主板新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-10-01 21:15:30 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-10-03 15:42:08 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -127,7 +127,7 @@
 | **CZ** | `Earliest cornerstone unlock date (dd/mm/yy)` | 基石投资者最早解禁日期 | 深蓝 | `date` | Post-IPO lockup expiration events | Adequate (24/30 (80.0%)) | 区间: 2027-01-02 ~ 2027-03-30 |
 | **DA** | `Subscription Ratio (times)` | Subscription Ratio (times) | 深蓝 | `numeric` | Allotment results announcement | 100% 完备 | 均值 857.42 / 中位数 239.66 / 区间 [3.39, 4,812.72] |
 | **DB** | `Public applicants` | Public applicants | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 97,508.97 / 中位数 77,622.50 / 区间 [12,645.00, 252,461.00] |
-| **DC** | `Public valid applied shares` | Public valid applied shares | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 2,344,854,076.97 / 中位数 646,153,700.00 / 区间 [10,276,700.00, 14,476,731,200.00] |
+| **DC** | `Public valid applied shares` | Public valid applied shares | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 2,344,848,786.33 / 中位数 646,153,700.00 / 区间 [10,276,700.00, 14,476,731,200.00] |
 | **DD** | `Public subscription original wording` | Public subscription original wording | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 30 种取值 ('Subscription level 27.57 times': 1, 'Subscription level 251.74 times': 1, 'Subscription level 413.63 times': 1) |
 | **DE** | `Pricing date` | Pricing date | 深蓝 | `date` | Ex-ante prospectus disclosure | Sparse (12/30 (40.0%)) | 区间: 2026-07-03 ~ 2026-07-28 |
 | **DF** | `Allotment announcement date` | Allotment announcement date | 深蓝 | `date` | Ex-ante prospectus disclosure | 100% 完备 | 区间: 2026-06-30 ~ 2026-09-29 |

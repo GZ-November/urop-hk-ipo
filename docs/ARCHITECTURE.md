@@ -1,6 +1,6 @@
 # Project Architecture
 
-Updated: 2 October 2026.
+Updated: 3 October 2026.
 
 The project has two responsibilities: produce evidence-backed IPO data and analyse a defined research sample. The research workspace gives users a clear view of the resulting files. It does not own their contents.
 
@@ -131,3 +131,10 @@ Some specialized studies still reuse event and sample-preparation functions from
 See [research entry](RESEARCH_START.md), [artifact placement](REPOSITORY_GUIDE.md), and [pipeline management](../pipeline/SYSTEM_MANAGEMENT.md) for the related scientific and evidence contracts.
 
 PR #28 integration: the separate basic-statistics study is registered as `basic` and runs through `make basic-analysis`; it is not added to the established default full-analysis sequence. The newer research plan and disclosure repairs are preserved.
+
+
+## Current retail study and English reports
+
+`shared/allocation_review.py` reads the existing independent review and enforces candidate, coverage, source-text and clean-table correspondence. It never creates approval. `shared/retail_report.py` formats the focused English narrative without changing numerical inputs. `retail_profit_distribution_2026.py` owns the strategy samples, simulation assumptions, descriptive decomposition and generated records.
+
+The current consolidated report is `docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md`; generated tables and charts stay in `analysis/out/retail_distribution/`. The workspace catalog links both locations. Run `analysis --study retail_distribution` explicitly; the study is opt-in. Older reports remain archived with a status notice.

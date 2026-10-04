@@ -170,7 +170,7 @@ def fee_section(d: pd.DataFrame, family: list) -> str:
 
 Outcome: disclosed underwriting commission on the HK offer, as a share of proceeds. The derived columns `Underwriting base commission rate`
 and `Total underwriting fee rate` in the master are not used. Earlier source review found that these derived fields did not reliably follow
-the disclosed commissions (see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md). The regression uses the disclosed HK commission.
+the disclosed commissions (see ACADEMIC_EXTENSIONS_2026.md in the archive described by docs/archive/README.md). The regression uses the disclosed HK commission.
 
 ## Distribution
 
@@ -449,7 +449,7 @@ def sponsor_section(d: pd.DataFrame, family: list) -> str:
     return f"""# Sponsor effects, 2026
 
 The first-named sponsor in the `Sponsor(s)` column is used as a proxy. Earlier source review found unreliable entries in `Lead sponsor name`
-(see docs/archive/pre-raw-price-correction/ACADEMIC_EXTENSIONS_2026.md), so that field is not used. First-named order does not establish actual lead responsibility.
+(see ACADEMIC_EXTENSIONS_2026.md in the archive described by docs/archive/README.md), so that field is not used. First-named order does not establish actual lead responsibility.
 Sponsors with at least 3 complete-case deals are compared ({len(keep)} sponsors, {len(g)} deals).
 
 {to_markdown(view, 'First-named sponsor')}

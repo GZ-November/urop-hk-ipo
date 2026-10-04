@@ -1,0 +1,278 @@
+{
+  "code": "9976.HK",
+  "field": "col_CO",
+  "definition": "ordinary public valid applied shares",
+  "derivation": "sum(applied_shares * valid_applications) across each disclosed ordinary public tier once",
+  "source_pdf": "pipeline/prospectus_pipeline/data/allot/pdf/HKIPO-MB9976.pdf",
+  "official_pdf_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0907/2026090701319.pdf",
+  "pdf_sha256": "52dfc2713ff9b0e58d7d0f75c82a2f04b63f19e304e35439ba4ff3a2d8114ed3",
+  "source_text": "pipeline/prospectus_pipeline/data/allot/text/HKIPO-MB9976.jsonl",
+  "source_text_sha256": "5a039365b7a260bab6d31df0bd43afe2764705bd8a682b7be2e7239ffe186633",
+  "packet_sha256": "9b4de11705b973fcaf2fadfdc1756c07688428a39c9581e47fe87f80cc7f979f",
+  "physical_pdf_pages": [
+    20,
+    21
+  ],
+  "operands": [
+    {
+      "pdf_page": 20,
+      "applied_shares": 50,
+      "applicants": 13704,
+      "product": 685200
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 100,
+      "applicants": 3585,
+      "product": 358500
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 150,
+      "applicants": 1494,
+      "product": 224100
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 200,
+      "applicants": 2070,
+      "product": 414000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 250,
+      "applicants": 1080,
+      "product": 270000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 300,
+      "applicants": 661,
+      "product": 198300
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 350,
+      "applicants": 422,
+      "product": 147700
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 400,
+      "applicants": 647,
+      "product": 258800
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 450,
+      "applicants": 398,
+      "product": 179100
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 500,
+      "applicants": 1826,
+      "product": 913000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 600,
+      "applicants": 492,
+      "product": 295200
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 700,
+      "applicants": 355,
+      "product": 248500
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 800,
+      "applicants": 408,
+      "product": 326400
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 900,
+      "applicants": 298,
+      "product": 268200
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 1000,
+      "applicants": 2013,
+      "product": 2013000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 2000,
+      "applicants": 1285,
+      "product": 2570000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 3000,
+      "applicants": 735,
+      "product": 2205000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 4000,
+      "applicants": 597,
+      "product": 2388000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 5000,
+      "applicants": 578,
+      "product": 2890000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 6000,
+      "applicants": 263,
+      "product": 1578000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 7000,
+      "applicants": 181,
+      "product": 1267000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 8000,
+      "applicants": 706,
+      "product": 5648000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 9000,
+      "applicants": 145,
+      "product": 1305000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 10000,
+      "applicants": 949,
+      "product": 9490000
+    },
+    {
+      "pdf_page": 20,
+      "applied_shares": 20000,
+      "applicants": 649,
+      "product": 12980000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 30000,
+      "applicants": 340,
+      "product": 10200000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 40000,
+      "applicants": 106,
+      "product": 4240000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 50000,
+      "applicants": 72,
+      "product": 3600000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 60000,
+      "applicants": 42,
+      "product": 2520000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 70000,
+      "applicants": 24,
+      "product": 1680000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 80000,
+      "applicants": 18,
+      "product": 1440000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 90000,
+      "applicants": 11,
+      "product": 990000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 100000,
+      "applicants": 69,
+      "product": 6900000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 200000,
+      "applicants": 32,
+      "product": 6400000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 300000,
+      "applicants": 7,
+      "product": 2100000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 400000,
+      "applicants": 5,
+      "product": 2000000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 500000,
+      "applicants": 10,
+      "product": 5000000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 750000,
+      "applicants": 1,
+      "product": 750000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 1000000,
+      "applicants": 3,
+      "product": 3000000
+    },
+    {
+      "pdf_page": 21,
+      "applied_shares": 1303900,
+      "applicants": 4,
+      "product": 5215600
+    }
+  ],
+  "raw_pages": [
+    {
+      "pdf_page": 20,
+      "layout_text": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING\n\nSubject to the satisfaction of the conditions set out in the Prospectus, 36,285 valid applications\nmade by the public will be conditionally allocated on the basis set out below:\n\n                                         Pool A\n                                                                                                               Approximate\n                                                                                                                            percentage\n                                                                                                                                            allotted of the\n      Number of       Number of                                                                                                    total number of\n      H Shares                valid                                                        H Shares\n        applied for        applications    Basis of allocation/ballot                                                               applied for\n\n               50             13,704    391 out of 13,704 to receive 50 Shares                                                  2.85%\n              100              3,585    204 out of 3,585 to receive 50 Shares                                                   2.85%\n              150              1,494    127 out of 1,494 to receive 50 Shares                                                   2.83%\n              200              2,070    234 out of 2,070 to receive 50 Shares                                                   2.83%\n              250              1,080    153 out of 1,080 to receive 50 Shares                                                   2.83%\n              300               661    112 out of 661 to receive 50 Shares                                                     2.82%\n              350               422    82 out of 422 to receive 50 Shares                                                      2.78%\n              400               647    144 out of 647 to receive 50 Shares                                                     2.78%\n              450               398    99 out of 398 to receive 50 Shares                                                      2.76%\n              500              1,826    503 out of 1,826 to receive 50 Shares                                                   2.75%\n              600               492    162 out of 492 to receive 50 Shares                                                     2.74%\n              700               355    135 out of 355 to receive 50 Shares                                                     2.72%\n              800               408    177 out of 408 to receive 50 Shares                                                     2.71%\n              900               298    145 out of 298 to receive 50 Shares                                                     2.70%\n             1,000              2,013    1,068 out of 2,013 to receive 50 Shares                                                  2.65%\n             2,000              1,285    50 Shares plus 72 out of 1,285 to receive additional 50 Shares                               2.64%\n             3,000               735    50 Shares plus 429 out of 735 to receive additional 50 Shares                                2.64%\n             4,000               597    100 Shares plus 66 out of 597 to receive additional 50 Shares                                2.64%\n             5,000               578    100 Shares plus 369 out of 578 to receive additional 50 Shares                               2.64%\n             6,000               263    150 Shares plus 44 out of 263 to receive additional 50 Shares                                2.64%\n             7,000               181    150 Shares plus 125 out of 181 to receive additional 50 Shares                               2.64%\n             8,000               706    200 Shares plus 158 out of 706 to receive additional 50 Shares                               2.64%\n             9,000               145    200 Shares plus 109 out of 145 to receive additional 50 Shares                               2.64%\n            10,000               949    250 Shares plus 266 out of 949 to receive additional 50 Shares                               2.64%\n            20,000               649    500 Shares plus 363 out of 649 to receive additional 50 Shares                               2.64%\n                               35,541    Total number of Pool A successful applicants: 9,824\n\n\n\n\n\n                                         20"
+    },
+    {
+      "pdf_page": 21,
+      "layout_text": "                                         Pool B\n                                                                                                               Approximate\n                                                                                                                            percentage\n                                                                                                                                            allotted of the\n        Number         Number                                                                                                    total number of\n        of H Shares             of valid                                                        H Shares\n        applied for        applications    Basis of allocation/ballot                                                               applied for\n\n            30,000               340    650 Shares plus 328 out of 340 to receive additional 50 Shares                               2.33%\n            40,000               106    900 Shares plus 65 out of 106 to receive additional 50 Shares                                2.33%\n            50,000                72    1,150 Shares plus 19 out of 72 to receive additional 50 Shares                               2.33%\n            60,000                42    1,350 Shares plus 39 out of 42 to receive additional 50 Shares                               2.33%\n            70,000                24    1,600 Shares plus 14 out of 24 to receive additional 50 Shares                               2.33%\n            80,000                18    1,850 Shares plus 4 out of 18 to receive additional 50 Shares                                2.33%\n            90,000                11    2,050 Shares plus 10 out of 11 to receive additional 50 Shares                               2.33%\n           100,000                69    2,300 Shares plus 37 out of 69 to receive additional 50 Shares                               2.33%\n           200,000                32    4,650 Shares plus 2 out of 32 to receive additional 50 Shares                                2.33%\n           300,000                 7    6,950 Shares plus 4 out of 7 to receive additional 50 Shares                                 2.33%\n           400,000                 5    9,300 Shares plus 1 out of 5 to receive additional 50 Shares                                 2.33%\n           500,000                10    11,600 Shares plus 7 out of 10 to receive additional 50 Shares                               2.33%\n           750,000                 1    17,450 Shares                                                                      2.33%\n         1,000,000                 3    23,250 Shares plus 1 out of 3 to receive additional 50 Shares                                2.33%\n         1,303,900                 4    30,300 Shares plus 3 out of 4 to receive additional 50 Shares                                2.33%\n                               744    Total number of Pool B successful applicants: 744\n\n\nAs of the date of this announcement, the relevant subscription monies previously deposited in the\ndesignated nominee accounts have been remitted back to the accounts of all HKSCC participants.\nInvestors should contact their relevant brokers for any inquiries.\n\n\n\n\n\n                                         21"
+    }
+  ],
+  "total_applied_shares": 105156600,
+  "total_applicants": 36285,
+  "unit": "shares",
+  "old_field": {
+    "value": 105146500,
+    "page": 20,
+    "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, 36,285 valid applications \nmade by the public will be conditionally allocated on the basis set out below:",
+    "confidence": "high"
+  },
+  "old_origin_assessment": "compatible_with_rounded_subscription_reconstruction_not_documented"
+}

@@ -5,6 +5,17 @@ on or before the H-share subscription closing date; the price is converted to HK
 (one manual override, 2768.HK); 2 issuer(s) fall outside a plausible +/-60% band and are flagged (`plausible = 0`); robustness drops them.
 The day-1 gap uses the A-share close on the H listing day, so it also reflects A-share moves between the two dates.
 
+## 0. A+H vs Non-A+H Comparison (Full 2026 Population)
+
+| Group | N | Mean Proceeds (HK$M) | Median Proceeds (HK$M) | Mean Sub (x) | Median Sub (x) | Median Applicants | Mean IR (%) | Median IR (%) | Break Rate (%) |
+|---|---|---|---|---|---|---|---|---|---|
+| Full Sample (2026) | 113 | 3,178.7 | 1,233.1 | 1985.2x | 1073.4x | 153,878 | 53.15% | 14.82% | 23.0% |
+| A+H Issuers (ah_true = 1) | 38 | 6,326.8 | 4,616.2 | 433.0x | 289.6x | 120,809 | 9.42% | 1.97% | 31.6% |
+| Non-A+H Issuers (ah_true = 0) | 75 | 1,583.7 | 900.5 | 2771.6x | 2003.2x | 177,196 | 75.31% | 50.99% | 18.7% |
+
+- **Size and Liquidity Divergence**: A+H issuers are large-cap enterprises (median base proceeds of HK$ 4,616.2M vs HK$ 900.5M for non-A+H, a ~5.1x difference).
+- **Demand and Underpricing Gap**: A+H offerings attract substantially lower retail oversubscription (median 289.6x vs 2,003.2x) and deliver much lower first-day initial returns (median +1.97% vs +50.99%), with a higher offer break rate (31.6% vs 18.7%). The existing secondary market A-share quote acts as a visible valuation anchor, anchoring pricing expectations and curbing first-day speculative run-ups.
+
 ## 1. The discount
 
 Issuer N counts A+H membership; the anchor columns count observed reference pairs. Means use available values, while IR uses all issuers in each row.

@@ -1,0 +1,4 @@
+Group,N,Mean Proceeds (HK$M),Median Proceeds (HK$M),Mean Sub (x),Median Sub (x),Median Applicants,Mean IR (%),Median IR (%),Break Rate (%)
+Full Sample (2026),113,"3,178.7","1,233.1",1985.2x,1073.4x,"153,878",53.15%,14.82%,23.0%
+A+H Issuers (ah_true = 1),38,"6,326.8","4,616.2",433.0x,289.6x,"120,809",9.42%,1.97%,31.6%
+Non-A+H Issuers (ah_true = 0),75,"1,583.7",900.5,2771.6x,2003.2x,"177,196",75.31%,50.99%,18.7%

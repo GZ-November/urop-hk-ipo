@@ -1,6 +1,6 @@
 # 2026 IPO研究计划：从基础统计到三个可深入的问题
 
-更新：2026-10-02；研究输入和行情截止2026-09-30。按用户要求重新选题：先把市场和数据看清楚，再深入少数问题。现有复杂分析作为探索性参考，不决定近期选题，也不替代基础统计。上一版广泛并行的计划保存在 [归档](archive/pre-basics-replan/RESEARCH_PLAN_2026.md)。
+更新：2026-10-02；研究输入和行情截止2026-09-30。按用户要求重新选题：先把市场和数据看清楚，再深入少数问题。现有复杂分析作为探索性参考，不决定近期选题，也不替代基础统计。上一版广泛并行的计划保存在 [归档](archive/README.md)。
 
 ## 研究范围与近期目标
 
@@ -116,3 +116,10 @@
 4. **最后**：为选定问题增加一个必要的简单回归／稳健性检查，写成短研究稿，再决定是否值得升级方法。
 
 缺失数量、来源与可获取性详见 [DATA_GAPS_2026.md](DATA_GAPS_2026.md)。这是一份执行顺序，不承诺固定完成天数；公开可得与已经核实可用要分开记录。
+
+
+## Current implementation — 3 October 2026
+
+The focused retail study now covers review gates, strict one-lot/minimum-tier distinctions, profit distributions, allocation-return decomposition, handling-fee/financing sensitivity and demand robustness. Run `python run.py analysis --study demand --study allocation_profit --study retail_distribution`.
+
+The [English consolidated report](reports/EMPIRICAL_RESEARCH_REPORT_2026.md) is the current narrative; [implementation notes](reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) document scope and limitations. Generated numbers and hashes are in `analysis/out/retail_distribution/`. Existing evidence records remain distinct from arithmetic reconciliation. The study does not establish historical account costs, future profitability or causal policy effects.

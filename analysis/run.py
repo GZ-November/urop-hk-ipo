@@ -25,6 +25,7 @@ class Study:
 
 
 STUDIES = (
+    Study("pricing_adjustment", "pricing_adjustment_2026", "pricing_adjustment", "Price adjustment and pre-deadline retail information", False),
     Study("basic", "basic_statistics_2026", "basic_statistics", "Coverage and basic statistics", False),
     Study("descriptive", "module_a_stylized_facts", "module_a", "Descriptive statistics"),
     Study("underpricing", "module_b_underpricing_regression", "module_b", "First-day return regressions"),
@@ -38,6 +39,9 @@ STUDIES = (
     Study("ah", "ah_anchor_2026", "ah_anchor", "A+H price anchors"),
     Study("margin", "margin_financing_2026", "margin", "Margin financing"),
     Study("retail", "research_frontier_2026", "research_frontier", "Retail returns and cornerstone sensitivity"),
+    Study("demand", "subscription_heat_2026", "subscription_heat", "Subscription demand and first-day return / break rate"),
+    Study("allocation_profit", "retail_allocation_profit_2026", "retail_profit", "Retail allocation rates, expected allocation and profit"),
+    Study("retail_distribution", "retail_profit_distribution_2026", "retail_distribution", "Retail profit distributions and fee frontiers", False),
 )
 
 

@@ -5,9 +5,13 @@
 
 **From HKEX disclosures to research data and reproducible IPO analysis.**
 
+本地找数据：双击根目录 **[00_START_HERE.html](00_START_HERE.html)**，按年份、Excel、CSV 或报告搜索。Finder 中双击 **`00_Research_Files`**，即可进入分类文件目录。
+
 This project builds evidence-linked datasets for ordinary Hong Kong Main Board IPOs. It studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
 
-**Current study: 113 IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
+**Stored datasets: 2025 Q1–Q2 and 2026 Q1–Q3 | 202-variable workbook schema.**
+
+Current study: 113 IPOs listed in 2026 Q1–Q3; observation cutoff: 30 September 2026. The 2025 Q1 and Q2 workbooks and exports remain available alongside 2026 data.
 
 ## Understand the project in one diagram
 
@@ -49,17 +53,25 @@ The workspace links to canonical files; it does not create another dataset. Each
 
 ## Open the data or read the results
 
+**Interactive dashboard:** double-click `Open Dashboard.command` (macOS), or open
+[dashboard/index.html](dashboard/index.html) in a browser. The English dashboard
+works offline with embedded data, interactive filters, company details, coverage
+and CSV downloads. See the [dashboard guide](dashboard/README.md) for refresh commands.
+
 | I want to... | Open this |
 |---|---|
+| Explore the data visually | [HK IPO Observatory](dashboard/index.html) / [Open guide](dashboard/README.md) |
 | Browse all research files locally | [Research Workspace](research_workspace/README.md) |
 | Open the latest Q3 workbook | [2026 Q3 Excel](pipeline/cohorts/HKIPO-MB2026Q3.xlsx) |
+| Open 2025 workbooks | [2025 Q1](pipeline/cohorts/HKIPO-MB2025Q1.xlsx) / [2025 Q2](pipeline/cohorts/HKIPO-MB2025Q2.xlsx) |
 | Open Q1 or Q2 workbooks | [2026 Q1](pipeline/cohorts/HKIPO-MB2026Q1.xlsx) / [2026 Q2](pipeline/cohorts/HKIPO-MB2026Q2.xlsx) |
 | Use the combined data | [All-years master CSV](pipeline/exports/HKIPO-MB-MASTER_clean.csv) |
 | Understand fields and units | [Variable registry](pipeline/registry/HKIPO_Variable_Registry.yaml) / [Q3 codebook](pipeline/codebooks/HKIPO_2026Q3_Codebook.md) |
-| Read the English progress report | [PDF snapshot](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX source](docs/reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) |
+| Read the latest comprehensive report | [LaTeX source](docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) / [Text report](docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.md) |
 | Start with coverage and basic statistics | [Basic report](analysis/out/basic_statistics/basic_statistics.md) / [Data gaps](docs/DATA_GAPS_2026.md) |
 | Read first-day return results | [Descriptive tables](analysis/out/module_a/table1_stylized_facts.md) / [Regressions](analysis/out/module_b/table4_regressions.md) |
 | Read retail allocation results | [Retail returns and cornerstone sensitivity](analysis/out/research_frontier/research.md) |
+| Discuss the retail study with a supervisor | [Latest mentor brief](docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md) / [Source reassessment and exclusions](docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) |
 | Read A+H or margin results | [A+H prices](analysis/out/ah_anchor/ah_anchor.md) / [Margin financing](analysis/out/margin/margin.md) |
 | Continue the research | [Current plan](docs/RESEARCH_PLAN_2026.md) / [Research start](docs/RESEARCH_START.md) |
 | Understand the code | [Architecture guide](docs/ARCHITECTURE.md) / [Analysis guide](analysis/README.md) |
@@ -74,13 +86,13 @@ On GitHub, use the direct file links above. The workspace's relative links are i
 urop-hk-ipo/
 |
 +-- research_workspace/       DAILY USE: English names, linked files
-|   +-- 01_workbooks/            2026 quarterly Excel
+|   +-- 01_workbooks/            2025 Q1–Q2 and 2026 Q1–Q3 Excel
 |   +-- 02_research_inputs/      CSV, A+H and margin inputs
 |   +-- 03_data_dictionary/      Field definitions and codebooks
 |   +-- 04_reports_and_plans/    Research report and next steps
 |   +-- 05_analysis_results/     Tables and figures by topic
 |   +-- 06_sources_and_audits/   Evidence and audit records
-|   `-- 07_historical_data/     Stored 2025 data
+|   `-- 07_historical_data/     Cross-year references and historical navigation
 |
 +-- analysis/                 RESEARCH CODE
 |   +-- research_inputs.py       Data loading and sample selection
@@ -100,6 +112,10 @@ urop-hk-ipo/
 +-- config/                   Research workspace artifact catalog
 +-- tools/                    Workspace maintenance
 +-- docs/                     Research plans, architecture, reports
+|   +-- reports/               Current research reports
+|   +-- archive/               Earlier reports and dated reviews
+|   +-- maintenance/           Cleanup and recovery records
+|   `-- literature/            Local reference papers
 +-- run.py                    One command entry point
 `-- Makefile                  Checks, refresh, and analysis commands
 ```

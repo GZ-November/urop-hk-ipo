@@ -1,0 +1,1558 @@
+{
+  "reviewer_id": "independent-agent:/root/review_applied_totals",
+  "verdict": "pass_for_col_CO_only",
+  "scope": "19 changed col_CO fields only",
+  "whole_payload_review": false,
+  "unchanged_fields_only_compared_not_semantically_reapproved": true,
+  "method": "Original PDF coordinate/column pair extraction with PyMuPDF (not repaired clean tiers or evidence calculations), original full-document applicant disclosures, source-page quote comparison; integer multiplication and summation. Hash-bound bytes checked against repair manifest.",
+  "records": [
+    {
+      "code": "2290.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "1173d82924975dc16059e9eafd8ac191b0b695c0a2a9d1a5d8e125bfc9d61b0c",
+      "evidence_sha256": "9af70de4b2c59ef3641884c04b9a935edd161991b28d3ce294651f15b6dbf517",
+      "source_pdf_sha256": "85190f97977be8dd38dfbdd252cb2145fdcc1eab907f19bb48fcd841caaa226f",
+      "independently_computed_total": 8311550000,
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 42,
+      "independently_computed_valid_applications": 133189,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 133189,
+        "quote": "No. of valid applications                                       133,189"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 8,
+          "valid_applications": 129330
+        },
+        {
+          "page": 8,
+          "valid_applications": 3859
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 129330,
+          "source_printed_matches": [
+            {
+              "page": 8,
+              "quote": "129,330",
+              "bbox": [
+                182.5637969970703,
+                285.9505920410156,
+                209.76377868652344,
+                297.110595703125
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 3859,
+          "source_printed_matches": [
+            {
+              "page": 8,
+              "quote": "3,859",
+              "bbox": [
+                190.96380615234375,
+                654.0006103515625,
+                209.7637939453125,
+                665.1605834960938
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 129330,
+          "applied_shares": 2968250000
+        },
+        "B": {
+          "valid_applications": 3859,
+          "applied_shares": 5343300000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "1392.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "14f6aa9df1c18b77a6e3c7870218b7387db4ea9faf62679b25c5f60aa6870dbe",
+      "evidence_sha256": "4639dd98e8f354dccd792cd39edc5b74d1b0f8b8f253877776c7f73730435f9c",
+      "source_pdf_sha256": "c78b08544c8e742465f5b43fdae39f34a0f66daee200d3300352b4b5ecb43bc4",
+      "independently_computed_total": 61158791500,
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 252640,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 252640,
+        "quote": "No. of valid applications                                         252,640"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 14,
+          "valid_applications": 222297
+        },
+        {
+          "page": 15,
+          "valid_applications": 30343
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 222297,
+          "source_printed_matches": [
+            {
+              "page": 14,
+              "quote": "222,297",
+              "bbox": [
+                203.08999633789062,
+                662.968017578125,
+                242.08999633789062,
+                676.2520141601562
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 30343,
+          "source_printed_matches": [
+            {
+              "page": 15,
+              "quote": "30,343",
+              "bbox": [
+                218.08999633789062,
+                405.7580261230469,
+                251.08999633789062,
+                419.0420227050781
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 222297,
+          "applied_shares": 13745967500
+        },
+        "B": {
+          "valid_applications": 30343,
+          "applied_shares": 47412824000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "2335.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "53a7a329d5d87c9dc9630797bd502be16ad3f7f7405c39c2893f7d327ae04c23",
+      "evidence_sha256": "1f4afe6225ff005c011e46821c5d12c4ae63c487bd9ae2cbccb4e333fdb4bc3d",
+      "source_pdf_sha256": "274256376882fd11243965b7338081011f862a38cd03e752f0df6edb46fbf4c5",
+      "independently_computed_total": 6859076200,
+      "pdf_pages": [
+        11,
+        12
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 38,
+      "independently_computed_valid_applications": 153832,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 153832,
+        "quote": "No. of valid applications                               153,832"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 11,
+          "valid_applications": 145681
+        },
+        {
+          "page": 12,
+          "valid_applications": 8151
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 145681,
+          "source_printed_matches": [
+            {
+              "page": 11,
+              "quote": "145,681",
+              "bbox": [
+                175.08401489257812,
+                677.4036865234375,
+                209.7639923095703,
+                688.4671020507812
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 8151,
+          "source_printed_matches": [
+            {
+              "page": 12,
+              "quote": "8,151",
+              "bbox": [
+                185.7940216064453,
+                467.40374755859375,
+                209.76400756835938,
+                478.46722412109375
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 145681,
+          "applied_shares": 2274271800
+        },
+        "B": {
+          "valid_applications": 8151,
+          "applied_shares": 4584804400
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "6106.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "21395fa63405520d2ee486d576d7cb2ba1342a7d76bd230f8f6205396e6d1be2",
+      "evidence_sha256": "b379886220d59fb5034da18f96f2a3853cdfbbc21241dbef29030859cab0d041",
+      "source_pdf_sha256": "7c7cb13f63aaa8ad431b0602bc44618459292f1d83c0d81387d4dd573a152380",
+      "independently_computed_total": 3115049350,
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 222966,
+      "disclosed_valid_applications": {
+        "page": 5,
+        "value": 222966,
+        "quote": "No. of valid applications                             222,966"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 16,
+          "valid_applications": 200430
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 200430,
+          "source_printed_matches": [
+            {
+              "page": 16,
+              "quote": "200,430",
+              "bbox": [
+                174.51980590820312,
+                708.6585693359375,
+                204.09481811523438,
+                723.1665649414062
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 22536,
+          "source_printed_matches": [
+            {
+              "page": 17,
+              "quote": "22,536",
+              "bbox": [
+                179.06980895996094,
+                316.6448669433594,
+                204.09481811523438,
+                331.15289306640625
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 200430,
+          "applied_shares": 803675100
+        },
+        "B": {
+          "valid_applications": 22536,
+          "applied_shares": 2311374250
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "3952.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "5f87c11496c15c8ad8165e39f3fd93dce0213e94994b873728d4f6f8e9733966",
+      "evidence_sha256": "144a178dbde42ccce9e00fe607fbc0311c272483234c0ae732f4a82607cb790a",
+      "source_pdf_sha256": "d9cbbb911b5c343ca91ca78f099fe5bfc1433b022985aa6f8d30c216c98a6a8f",
+      "independently_computed_total": 3072837300,
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 37,
+      "independently_computed_valid_applications": 182737,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 182737,
+        "quote": "No. of valid applications                                                  182,737"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 15,
+          "valid_applications": 18754
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 163983,
+          "source_printed_matches": [
+            {
+              "page": 14,
+              "quote": "163,983",
+              "bbox": [
+                145.9405059814453,
+                560.600341796875,
+                178.58047485351562,
+                573.9923706054688
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 18754,
+          "source_printed_matches": [
+            {
+              "page": 15,
+              "quote": "18,754",
+              "bbox": [
+                150.98043823242188,
+                296.2924499511719,
+                178.58041381835938,
+                309.6844482421875
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 163983,
+          "applied_shares": 787845300
+        },
+        "B": {
+          "valid_applications": 18754,
+          "applied_shares": 2284992000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "2667.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "c00a17807f3dc4dd2f0eeaacb05b9392c516e84017f1fb66296b885e5cfbbd11",
+      "evidence_sha256": "971902b9a9bbba389972c3ddb2e73c32d00f294ac26eecc32b0461914f579a01",
+      "source_pdf_sha256": "c292eb3b9186284256254a45f41682edee8e951ccf5926662cbdc8c17068ad8b",
+      "independently_computed_total": 2722712500,
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 66390,
+      "disclosed_valid_applications": {
+        "page": 5,
+        "value": 66390,
+        "quote": "No. of valid applications                                    66,390"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 65298,
+          "source_printed_matches": [
+            {
+              "page": 13,
+              "quote": "65,298",
+              "bbox": [
+                169.71629333496094,
+                495.2288818359375,
+                195.59132385253906,
+                508.6208801269531
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 1092,
+          "source_printed_matches": [
+            {
+              "page": 13,
+              "quote": "1,092",
+              "bbox": [
+                174.44129943847656,
+                630.0941162109375,
+                195.59132385253906,
+                643.4861450195312
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 65298,
+          "applied_shares": 1044105000
+        },
+        "B": {
+          "valid_applications": 1092,
+          "applied_shares": 1678607500
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "6880.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "5282dcdbc4e0abb377732582f041625da0c8f718dce79000ed6bdfad0c210aef",
+      "evidence_sha256": "260e2f12e1b56ba34d795fa3f33e09ab74eb32e6c00ca881c1628bef71f0e38b",
+      "source_pdf_sha256": "2ad74cfab08b6331fe9e064e257fce09043a6690af980fabac15d8d9ea1d79ad",
+      "independently_computed_total": 824707040,
+      "pdf_pages": [
+        23,
+        24
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 45,
+      "independently_computed_valid_applications": 209045,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 209045,
+        "quote": "No. of valid applications                                         209,045"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 23,
+          "valid_applications": 195170
+        },
+        {
+          "page": 24,
+          "valid_applications": 13875
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 195170,
+          "source_printed_matches": [
+            {
+              "page": 23,
+              "quote": "195,170",
+              "bbox": [
+                186.52590942382812,
+                746.4649658203125,
+                221.1059112548828,
+                761.4539794921875
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 13875,
+          "source_printed_matches": [
+            {
+              "page": 24,
+              "quote": "13,875",
+              "bbox": [
+                191.8505859375,
+                711.084716796875,
+                221.1005859375,
+                726.07373046875
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 195170,
+          "applied_shares": 219424120
+        },
+        "B": {
+          "valid_applications": 13875,
+          "applied_shares": 605282920
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "7656.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "5285265f24ca47171868af8341918fdb8fccd15a8f82c78c7bd448e17fcf801f",
+      "evidence_sha256": "1a03486dbff9e5836c63b32bbba1e2f1816566d36d875d90c621d3dc06fdd7d4",
+      "source_pdf_sha256": "a6c65f14f5df88dde2bd4dc8fe5251805de5106816bcf5e992b75f9de71eff85",
+      "independently_computed_total": 5120530600,
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 169551,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 169551,
+        "quote": "Number of valid applications                         169,551"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 16,
+          "valid_applications": 160243
+        },
+        {
+          "page": 16,
+          "valid_applications": 9308
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 160243,
+          "source_printed_matches": [
+            {
+              "page": 16,
+              "quote": "160,243",
+              "bbox": [
+                189.58209228515625,
+                258.6470031738281,
+                219.1091766357422,
+                268.6492614746094
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 9308,
+          "source_printed_matches": [
+            {
+              "page": 16,
+              "quote": "9,308",
+              "bbox": [
+                198.65078735351562,
+                658.671875,
+                219.1065216064453,
+                668.6741333007812
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 160243,
+          "applied_shares": 1658243000
+        },
+        "B": {
+          "valid_applications": 9308,
+          "applied_shares": 3462287600
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "7687.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "e5f369c041cda0d861612cd40a245e94d12b6603fe50a8c494dfffa849820fe4",
+      "evidence_sha256": "eb3959bd863608f0d6fe6a7ea6addacec23379bb90a37bedad7e22b377dc8a8e",
+      "source_pdf_sha256": "55830d480262429244e871e4d9d8cd671ac5907a724fa0baf0f9d11d7b26370a",
+      "independently_computed_total": 412411450,
+      "pdf_pages": [
+        24,
+        25
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 110386,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 110386,
+        "quote": "No. of valid applications                                         110,386"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 25,
+          "valid_applications": 1139
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 109247,
+          "source_printed_matches": [
+            {
+              "page": 25,
+              "quote": "109,247",
+              "bbox": [
+                147.60777282714844,
+                502.8963317871094,
+                180.24774169921875,
+                516.7323608398438
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 1139,
+          "source_printed_matches": [
+            {
+              "page": 25,
+              "quote": "1,139",
+              "bbox": [
+                157.68801879882812,
+                687.9364013671875,
+                180.2480010986328,
+                701.7723999023438
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 109247,
+          "applied_shares": 197500250
+        },
+        "B": {
+          "valid_applications": 1139,
+          "applied_shares": 214911200
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "9971.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "c2dccd874740987fb7f2fc9449aa179bbf92660d529ffa34b1fa124413f5df5b",
+      "evidence_sha256": "c383e4827290b49a7e329cf4a43aa63f35c6517fd7c456d712438eff96912caa",
+      "source_pdf_sha256": "039e09e3c6e2fc06874fa6f35b2d49c569cccce58a15b5f04a09fb77fcc28fc3",
+      "independently_computed_total": 6590539800,
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 42,
+      "independently_computed_valid_applications": 207706,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 207706,
+        "quote": "No. of valid applications                                         207,706"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 191653,
+          "source_printed_matches": [
+            {
+              "page": 19,
+              "quote": "191,653",
+              "bbox": [
+                145.9427032470703,
+                661.02490234375,
+                178.58267211914062,
+                674.8609008789062
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 16053,
+          "source_printed_matches": [
+            {
+              "page": 20,
+              "quote": "16,053",
+              "bbox": [
+                150.98280334472656,
+                368.7848815917969,
+                178.58277893066406,
+                382.6208801269531
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 191653,
+          "applied_shares": 1622005400
+        },
+        "B": {
+          "valid_applications": 16053,
+          "applied_shares": 4968534400
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "1377.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "47df486dcb6ef66f8bea5280736b7487ecfeff24ff08cee1ed49a8f0aed921a9",
+      "evidence_sha256": "e67b04ec0ad71085b38a86b7a08dcac1ea13c9a20e5f52e7aaacb1334e721a3b",
+      "source_pdf_sha256": "994012a0f9494625de869d19cbb0864d75e56ef8dd5cd9a7aae0f9ff929e2b2d",
+      "independently_computed_total": 403185300,
+      "pdf_pages": [
+        18,
+        19
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 37,
+      "independently_computed_valid_applications": 118991,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 118991,
+        "quote": "No. of valid applications                                                     118,991"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 18,
+          "valid_applications": 111345
+        },
+        {
+          "page": 19,
+          "valid_applications": 7646
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 111345,
+          "source_printed_matches": [
+            {
+              "page": 18,
+              "quote": "111,345",
+              "bbox": [
+                156.51129150390625,
+                625.3110961914062,
+                189.71975708007812,
+                636.0040893554688
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 7646,
+          "source_printed_matches": [
+            {
+              "page": 19,
+              "quote": "7,646",
+              "bbox": [
+                166.7898712158203,
+                545.2111206054688,
+                189.71405029296875,
+                555.9041137695312
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 111345,
+          "applied_shares": 116811700
+        },
+        "B": {
+          "valid_applications": 7646,
+          "applied_shares": 286373600
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation. Employee preferential tables on page 20 and separate employee disclosures are excluded from ordinary public total.",
+      "discrepancies": []
+    },
+    {
+      "code": "1770.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "44f162ccf66075e31c5e5cd5e4a38c2a3ff7dcc8a6cb46ce627cbf57af3d18cb",
+      "evidence_sha256": "a674e754b9a432b36580c05979c8305a1f07928f626d2d6fcbb8cbfc37e15685",
+      "source_pdf_sha256": "684fe008fb812834ef3df049f1941bab3ee9348ad8426560e0c596aedb2c216f",
+      "independently_computed_total": 546474050,
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 126957,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 126957,
+        "quote": "No. of valid applications                               126,957"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 11,
+          "valid_applications": 4890
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 122067,
+          "source_printed_matches": [
+            {
+              "page": 10,
+              "quote": "122,067",
+              "bbox": [
+                179.16400146484375,
+                677.9046020507812,
+                209.7640380859375,
+                688.2969360351562
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 4890,
+          "source_printed_matches": [
+            {
+              "page": 11,
+              "quote": "4,890",
+              "bbox": [
+                188.61399841308594,
+                371.90509033203125,
+                209.76402282714844,
+                382.2973937988281
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 122067,
+          "applied_shares": 126421900
+        },
+        "B": {
+          "valid_applications": 4890,
+          "applied_shares": 420052150
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation. Physical page 11 first Pool B row is independently separated by coordinates despite fused Poppler text 2,1041,852.",
+      "discrepancies": []
+    },
+    {
+      "code": "2475.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "f59c6a30a618c97bf9d70f576a9c981f95e021ed20bf446fa5ef2bba7ba19bb9",
+      "evidence_sha256": "7e1a6bd9b980643399a8adb2f2f320cf94cf6bed562d0702d1ab352b95bc8074",
+      "source_pdf_sha256": "3ce3189327ea0c422f1b85bafd548c759d6166d016b0306a67e67093da5df702",
+      "independently_computed_total": 144959900,
+      "pdf_pages": [
+        22,
+        23,
+        24
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 45,
+      "independently_computed_valid_applications": 47308,
+      "disclosed_valid_applications": {
+        "page": 5,
+        "value": 47308,
+        "quote": "No. of valid applications                                          47,308"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 23,
+          "valid_applications": 46965
+        },
+        {
+          "page": 24,
+          "valid_applications": 343
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 46965,
+          "source_printed_matches": [
+            {
+              "page": 23,
+              "quote": "46,965",
+              "bbox": [
+                174.5,
+                477.1933288574219,
+                204.86001586914062,
+                489.41461181640625
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 343,
+          "source_printed_matches": [
+            {
+              "page": 24,
+              "quote": "343",
+              "bbox": [
+                188.2100067138672,
+                123.02334594726562,
+                204.77001953125,
+                135.24462890625
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 46965,
+          "applied_shares": 62399900
+        },
+        "B": {
+          "valid_applications": 343,
+          "applied_shares": 82560000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation. Pool B continues on physical page 24 with 3,000,000, 4,000,000, and 5,000,000 share applications, one applicant each.",
+      "discrepancies": []
+    },
+    {
+      "code": "2797.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "cf9a814d55f5b3f8b91c136bb374c3b8596d386f04a84112819bc4140a4879b2",
+      "evidence_sha256": "069e2c74bacacebc9c40c9ac4ae38337f5b1f335fa3fbb4cea5ea1113a9cb8e1",
+      "source_pdf_sha256": "aeeeccf6c681ec649fd6cf4f6a304f929c4bba42603ff970eba587c6344bec0b",
+      "independently_computed_total": 4220214000,
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 35,
+      "independently_computed_valid_applications": 95307,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 95307,
+        "quote": "No. of valid applications                                                95,307"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 8,
+          "valid_applications": 92476
+        },
+        {
+          "page": 9,
+          "valid_applications": 2831
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 92476,
+          "source_printed_matches": [
+            {
+              "page": 8,
+              "quote": "92,476",
+              "bbox": [
+                156.8007354736328,
+                717.4829711914062,
+                188.21739196777344,
+                728.8245239257812
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 2831,
+          "source_printed_matches": [
+            {
+              "page": 9,
+              "quote": "2,831",
+              "bbox": [
+                162.5861358642578,
+                330.93695068359375,
+                188.20986938476562,
+                342.2785339355469
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 92476,
+          "applied_shares": 1384714000
+        },
+        "B": {
+          "valid_applications": 2831,
+          "applied_shares": 2835500000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "3752.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "4814fd9e76d278296289431692882eb1eeaec75e6dc3eabaed4263d39e84ad94",
+      "evidence_sha256": "dbf7c6f2c59cd891a64d4af4fce027580d3f85cd592af2b1d0f4051c33f6b145",
+      "source_pdf_sha256": "060be54aa913bffdf74057c866621146e1aed713f3a82da7fd643c2654430bd7",
+      "independently_computed_total": 360637200,
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 42,
+      "independently_computed_valid_applications": 63360,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 63360,
+        "quote": "No. of valid applications                                    63,360"
+      },
+      "printed_pool_applicant_subtotals": [
+        {
+          "page": 14,
+          "valid_applications": 62866
+        },
+        {
+          "page": 15,
+          "valid_applications": 494
+        }
+      ],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 62866,
+          "source_printed_matches": [
+            {
+              "page": 14,
+              "quote": "62,866",
+              "bbox": [
+                148.76290893554688,
+                689.02490234375,
+                172.9129180908203,
+                702.8609008789062
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 494,
+          "source_printed_matches": [
+            {
+              "page": 15,
+              "quote": "494",
+              "bbox": [
+                168.44668579101562,
+                326.7848815917969,
+                184.25668334960938,
+                340.6208801269531
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 62866,
+          "applied_shares": 187189200
+        },
+        "B": {
+          "valid_applications": 494,
+          "applied_shares": 173448000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "6951.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "5d1caf71e92c6b5451c83372f837072918243dcb00d3e63035f10eed1eae9e90",
+      "evidence_sha256": "69a125e1c3d3825e8dd510c36594353a8ffdf756264894b4ca86d3c63bbc2218",
+      "source_pdf_sha256": "990c304722b772531b270d69c4c813adb7a80e6d78f91b53a9e19373c95b387e",
+      "independently_computed_total": 2337106300,
+      "pdf_pages": [
+        15,
+        16,
+        17
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 174984,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 174984,
+        "quote": "No. of valid applications                                               174,984"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 159663,
+          "source_printed_matches": [
+            {
+              "page": 16,
+              "quote": "159,663",
+              "bbox": [
+                167.4499969482422,
+                646.2879638671875,
+                200.0252227783203,
+                659.5719604492188
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 15321,
+          "source_printed_matches": [
+            {
+              "page": 17,
+              "quote": "15,321",
+              "bbox": [
+                172.49000549316406,
+                484.49798583984375,
+                200.01983642578125,
+                497.781982421875
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 159663,
+          "applied_shares": 517155700
+        },
+        "B": {
+          "valid_applications": 15321,
+          "applied_shares": 1819950600
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "2249.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "6226d22401ed25b36c2a3627a7e4b4322fdfa7439dd6607b4d42a616a2f402a0",
+      "evidence_sha256": "4358dfb0efeef61c1dd267a08e128d2be2533bcdb4a8b644eb4407904ee023a3",
+      "source_pdf_sha256": "6bd52400fd2aaaf56399b5e3733ea060f9f37fb1340ead2dd6f8e024dba2e0a0",
+      "independently_computed_total": 7441779600,
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 195505,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 195505,
+        "quote": "No. of valid applications                                         195,505"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 183344,
+          "source_printed_matches": [
+            {
+              "page": 15,
+              "quote": "183,344",
+              "bbox": [
+                177.57400512695312,
+                664.4403686523438,
+                204.09400939941406,
+                674.1150512695312
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 12161,
+          "source_printed_matches": [
+            {
+              "page": 16,
+              "quote": "12,161",
+              "bbox": [
+                181.66900634765625,
+                372.4403381347656,
+                204.09400939941406,
+                382.1150207519531
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 183344,
+          "applied_shares": 2316813600
+        },
+        "B": {
+          "valid_applications": 12161,
+          "applied_shares": 5124966000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "6745.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "0f6aae7bdac0de99ad303e53a42d35704d6b369db8f5e115c13dacf73e140224",
+      "evidence_sha256": "cf8dea3ee44afe45dfb56dce53fffc113df8c36b3b067c565d668ab2c7cf9ff6",
+      "source_pdf_sha256": "c2099acc23a205a214618608ae5d631fd4c5349bd906d0973f583e10b516ea13",
+      "independently_computed_total": 8013633000,
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 88855,
+      "disclosed_valid_applications": {
+        "page": 4,
+        "value": 88855,
+        "quote": "No. of valid applications                                            88,855"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 86908,
+          "source_printed_matches": [
+            {
+              "page": 13,
+              "quote": "86,908",
+              "bbox": [
+                183.27340698242188,
+                229.2288818359375,
+                212.598388671875,
+                242.62088012695312
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 1947,
+          "source_printed_matches": [
+            {
+              "page": 13,
+              "quote": "1,947",
+              "bbox": [
+                188.62840270996094,
+                463.61810302734375,
+                212.598388671875,
+                477.0101013183594
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 86908,
+          "applied_shares": 3109453000
+        },
+        "B": {
+          "valid_applications": 1947,
+          "applied_shares": 4904180000
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    },
+    {
+      "code": "9976.HK",
+      "field": "col_CO",
+      "verdict": "pass",
+      "candidate_sha256": "af084c776030fc05b7dc2b35c43b6b554ac15ba64c59d7c65cd954af7b092ada",
+      "evidence_sha256": "b04cb1399612825cf6f69ec0b0baca675ed1a1ba015db0ac4983aed5907ad49d",
+      "source_pdf_sha256": "52dfc2713ff9b0e58d7d0f75c82a2f04b63f19e304e35439ba4ff3a2d8114ed3",
+      "independently_computed_total": 105156600,
+      "pdf_pages": [
+        20,
+        21
+      ],
+      "unit": "individual Shares / H Shares as labelled, no thousands or board-lot scaling",
+      "ordinary_public_tier_count": 40,
+      "independently_computed_valid_applications": 36285,
+      "disclosed_valid_applications": {
+        "page": 5,
+        "value": 36285,
+        "quote": "Number of valid applications                                            36,285"
+      },
+      "printed_pool_applicant_subtotals": [],
+      "pool_subtotal_source_checks": [
+        {
+          "pool": "A",
+          "computed_applicants": 35541,
+          "source_printed_matches": [
+            {
+              "page": 20,
+              "quote": "35,541",
+              "bbox": [
+                156.86639404296875,
+                577.468994140625,
+                179.29139709472656,
+                590.8610229492188
+              ]
+            }
+          ],
+          "passed": true
+        },
+        {
+          "pool": "B",
+          "computed_applicants": 744,
+          "source_printed_matches": [
+            {
+              "page": 21,
+              "quote": "744",
+              "bbox": [
+                166.49270629882812,
+                369.2288818359375,
+                178.58270263671875,
+                382.6208801269531
+              ]
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "evidence_operands_match_independent_pdf_coordinates": true,
+      "candidate_quote_verified_on_source_page": true,
+      "pool_sums": {
+        "A": {
+          "valid_applications": 35541,
+          "applied_shares": 49121000
+        },
+        "B": {
+          "valid_applications": 744,
+          "applied_shares": 56035600
+        }
+      },
+      "changed_fields": [
+        "col_CO"
+      ],
+      "scope": "col_CO only; no semantic approval of other fields",
+      "notes": "Independently paired first two numeric table columns by original PDF word bounding boxes and common baseline, preserving page continuations; wrapped allocation/ballot lines and totals excluded. Both ordinary-public pools counted once. Original page text confirms share unit and public-applicant disclosure. Candidate and evidence read only after coordinate recomputation.",
+      "discrepancies": []
+    }
+  ]
+}

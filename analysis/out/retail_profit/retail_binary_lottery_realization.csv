@@ -1,0 +1,17 @@
+Group,Broker Fee,Mean Ballot Success Rate (%),Mean Zero-Share Probability (%),Mean Applicant Loss Probability (%),Median Applicant Loss Probability (%),Mean Win & Profit Probability (%)
+Full Sample (2026),HK$ 0,10.78%,89.22%,4.73%,0.00%,5.59%
+Full Sample (2026),HK$ 28,10.78%,89.22%,94.42%,98.00%,5.58%
+Full Sample (2026),HK$ 88,10.78%,89.22%,94.50%,98.50%,5.50%
+Full Sample (2026),HK$ 100,10.78%,89.22%,94.77%,98.50%,5.23%
+Low demand,HK$ 0,25.98%,74.02%,13.14%,0.00%,11.60%
+Low demand,HK$ 28,25.98%,74.02%,88.40%,100.00%,11.60%
+Low demand,HK$ 88,25.98%,74.02%,88.53%,100.00%,11.47%
+Low demand,HK$ 100,25.98%,74.02%,89.32%,100.00%,10.68%
+Mid demand,HK$ 0,3.27%,96.73%,0.46%,0.00%,2.67%
+Mid demand,HK$ 28,3.27%,96.73%,97.33%,98.00%,2.67%
+Mid demand,HK$ 88,3.27%,96.73%,97.44%,98.00%,2.56%
+Mid demand,HK$ 100,3.27%,96.73%,97.44%,98.00%,2.56%
+High demand,HK$ 0,2.89%,97.11%,0.47%,0.00%,2.41%
+High demand,HK$ 28,2.89%,97.11%,97.61%,98.25%,2.39%
+High demand,HK$ 88,2.89%,97.11%,97.61%,98.25%,2.39%
+High demand,HK$ 100,2.89%,97.11%,97.61%,98.25%,2.39%

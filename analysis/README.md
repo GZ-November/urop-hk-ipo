@@ -48,6 +48,8 @@ existing research column names and definitions.
 
 | Script | Output |
 |---|---|
+| `pricing_topic1_completion_2026.py`, `pricing_topic1_report.py` | `out/pricing_adjustment/topic1/`: completed Topic 1 on the fixed 43-firm range sample; audited 113-firm disclosure classes, CV3/WCR, date sensitivity bounds and an English Topic 1-only LaTeX report |
+| `retail_2026_report.py` | `out/retail_2026_report/`: descriptive tables, direct workbook coverage for all 202 fields, data meanings and research uses; generates the English [LaTeX report](../docs/reports/HK_IPO_2026_COMPREHENSIVE_REPORT.tex) and mentor draft without simulation |
 | `basic_statistics_2026.py` | `out/basic_statistics/`: 202-field coverage, core descriptive statistics, quarter/month/route/demand groups and pairwise Spearman correlations; no regressions or hypothesis tests |
 | `module_a_stylized_facts.py` | `out/module_a/`: quarter/route/pricing/backing tables, aftermarket table, three charts, input availability |
 | `module_b_underpricing_regression.py` | `out/module_b/`: hypotheses, nested regressions, robustness, time-cluster inference, coefficient chart, sample selection |
@@ -68,10 +70,45 @@ HC3 and listing-month CR1 inference are shown together. The restricted wild clus
 
 Unknown classification flags remain missing; invalid log inputs are excluded. Module A reports availability per input and matches MLOT/proceeds and IPO/benchmark observations for weighted statistics. Missing counts cannot by themselves distinguish uncollected from unmatured data; inspect the source cohort and horizon records.
 
-[Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Historical source review](../docs/AGY_INTEGRATION_2026-09-30.md) · [Historical write-ups](../docs/archive/README.md)
+[Research start](../docs/RESEARCH_START.md) · [Current research plan](../docs/RESEARCH_PLAN_2026.md) · [A+H anchor](../docs/AH_ANCHOR_2026.md) · [Historical source review](../docs/archive/README.md) · [Historical write-ups](../docs/archive/README.md)
 
-A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/AGY_INTEGRATION_2026-09-30.md).
+A+H market collection also supports `--all --as-of YYYY-MM-DD`; the cross-year reference is stored separately from the 2026 analysis. `make margin-reference` regenerates margin observations from the curated source ledger with initial public-offer shares × maximum offer price as a fixed denominator. See [integration and source review](../docs/archive/README.md).
 
 Current research design and brainstorm: [RESEARCH_DESIGN_2026.md](../docs/RESEARCH_DESIGN_2026.md). Evidence-gap disposition: [readiness review](../pipeline/reports/research_readiness/README.md).
 
 The active plan starts with basic statistics and selects a few topics; the advanced modules above remain exploratory references. Data availability and collection feasibility: [DATA_GAPS_2026.md](../docs/DATA_GAPS_2026.md).
+
+
+## Focused retail research — 3 October 2026
+
+The latest [mentor brief](../docs/reports/RETAIL_MENTOR_BRIEF_2026-10-03.md) and [source reassessment](../docs/reports/RETAIL_EVIDENCE_ASSESSMENT_2026-10-03.md) resolve 2649's lot size to 500 and confirm 3355's Pool B rules using official clarifications. They use a source-bound overlay, exact expectations and no simulation. The earlier frozen inputs and distribution outputs remain historical snapshots. This opt-in follow-up is separate from the study registry:
+
+```bash
+.venv/bin/python tools/audit_retail_sources_2026.py
+.venv/bin/python analysis/retail_evidence_brief_2026.py
+```
+
+Raw PDFs are needed at the paths in the follow-up source manifest. Tables are in `out/retail_evidence_brief/`; this source/analysis follow-up changes no workbooks or whole-payload pipeline approvals. The separate 19-issuer JSON repair has its own scoped source review. The pipeline skill handles collection/evidence only; this module handles empirical analysis.
+
+The English [consolidated report](../docs/reports/EMPIRICAL_RESEARCH_REPORT_2026.md) and [implementation notes](../docs/reports/RETAIL_RESEARCH_IMPLEMENTATION_2026-10-03.md) describe the current study.
+
+| Study | Output | Scope |
+|---|---|---|
+| `demand` | `out/subscription_heat/` | Retrospective demand groups, first-day return associations and aftermarket descriptions |
+| `allocation_profit` | `out/retail_profit/` | Tier-based application expectations and separate applicant outcome probabilities |
+| `retail_distribution` | `out/retail_distribution/` | Strict/minimum-tier portfolio distributions, covariance decomposition, cost frontiers and supporting robustness |
+
+```bash
+python run.py analysis --study demand --study allocation_profit --study retail_distribution
+```
+
+`retail_distribution` is opt-in. It conditions on observed prices and does not annualize simulated profits. Its English narrative is rendered by `shared/retail_report.py`; machine-readable values remain in CSVs. The allocation reader checks the pre-existing independent review against candidate/coverage/source hashes. Running `allocation_tiers_2026.py` only generates pending candidates, requiring a new review if their bytes change.
+
+## Pricing and pre-deadline information follow-up
+
+Run `python run.py analysis --study pricing_adjustment` for the opt-in study.
+The [specification](specifications/pricing_adjustment.md) defines the common
+43-range-offer models, timing exclusions and temporal prediction assessment.
+The [outputs](out/pricing_adjustment/README.md) include auditable source checks,
+all models, exclusions, and training membership. Research classification is
+corrected without rewriting the source workbooks or extraction records.

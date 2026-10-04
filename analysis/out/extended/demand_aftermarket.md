@@ -4,15 +4,15 @@
 
 | Variable | ln subscription ratio | ln public applicants | ln average application value |
 |---|---|---|---|
-| ln firm age | -0.33 | -0.15 | -0.03 |
+| ln firm age | -0.33 | -0.15 | -0.06 |
 | ln offer size | -0.87*** | -0.02 | 0.12 |
-| A+H issuer | -0.04 | -0.08 | 0.05 |
-| VC/PE-backed | 0.90 | 0.34 | 0.50 |
-| Top-tier sponsor | -0.23 | -0.17 | -0.05 |
-| Cornerstone allocation | 1.53 | 0.93** | 0.59 |
-| HSI return, prior 20 days | 5.75** | 2.33* | 3.31** |
+| A+H issuer | -0.04 | -0.08 | 0.07 |
+| VC/PE-backed | 0.90 | 0.34 | 0.48 |
+| Top-tier sponsor | -0.23 | -0.17 | -0.04 |
+| Cornerstone allocation | 1.53 | 0.93** | 0.58 |
+| HSI return, prior 20 days | 5.75** | 2.33* | 3.37** |
 | IPO count, prior 90 days | -0.03 | -0.02 | 0.01 |
-| April-June hot window | 0.70 | 0.34 | 0.61** |
+| April-June hot window | 0.70 | 0.34 | 0.59** |
 | R-squared | 0.44 | 0.31 | 0.24 |
 | N | 105 | 105 | 105 |
 
