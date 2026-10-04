@@ -128,7 +128,7 @@
     "pipeline/registry/HKIPO_Variable_Registry.yaml": "010a9f5493ed7ce8674f1ac5257cc01f758114dbfe24d7971c1804cc71b8d694",
     "pipeline/prospectus_pipeline/out/downloaded.json": "e1e61e042f4cc568442ea67893429ed418a5a300cd495dbb1dbec8a42486d3a8",
     "analysis/pricing_adjustment_2026.py": "0344746c43ee69f1140045334feb55a31cfef0de1940b2dd7436f94d565d62b4",
-    "analysis/pricing_adjustment_report.py": "8b07acbdbaa44cc8a92b585b85ba5a52200a97dc1601a667ec2ef60d642886c0",
+    "analysis/pricing_adjustment_report.py": "7b6ea101bd350db3357050cbe9f944ee89ef70c867f4ce0382c1b7fdc052d381",
     "analysis/specifications/pricing_adjustment.md": "4df672da643fe272f376cb5df7cfb4172909a6ae3442e69f7805ff4f1edee323"
   },
   "inference": "HC3 with t reference; restricted wild cluster-t, exact Rademacher signs; Holm families",

@@ -1,5 +1,4 @@
 """Generate a compact English LaTeX report from saved study output."""
-from pathlib import Path
 import numpy as np
 import pandas as pd
 
