@@ -16,6 +16,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPE = ROOT / "pipeline/prospectus_pipeline"
+sys.path.insert(0, str(ROOT / "tools"))
 sys.path.insert(0, str(PIPE / "src"))
 
 from audit import run_audit  # noqa: E402
@@ -23,6 +24,7 @@ from auto_fill import inventory  # noqa: E402
 from boards import normalize_board  # noqa: E402
 from codebook import export_all  # noqa: E402
 from cohort import load_cfg, read_companies  # noqa: E402
+from delivery_index import generate_delivery_readme, generate_index_json, generate_start_here_html  # noqa: E402
 from gem_template import detail_schema, update_gem_view  # noqa: E402
 from state import record_path  # noqa: E402
 
@@ -38,7 +40,12 @@ def sheet_csv(workbook, sheet_name: str, destination: Path) -> None:
         writer.writerow([cell.value for cell in sheet[1]])
         for row in sheet.iter_rows(min_row=2, values_only=True):
             if any(value not in (None, "") for value in row):
-                writer.writerow(row)
+                safe_row = [
+                    (f"'{val}" if isinstance(val, str) and val.startswith(("=", "+", "-", "@")) else val)
+                    for val in row
+                ]
+                writer.writerow(safe_row)
+
 
 
 def build_bundle(configs: list[Path], output: Path, require_reviewed: bool = False) -> dict:
@@ -126,16 +133,79 @@ def build_bundle(configs: list[Path], output: Path, require_reviewed: bool = Fal
                 if index.exists():
                     shutil.copy2(index, destination / name)
             # Absolute runtime paths are provenance only; never ship them as runnable configs.
-            cohort_summaries.append({"id": cohort_id, "board": cfg["dataset"].get("board", "Main Board"),
-                                     "requested_period": configured_period,
-                                     "listing_dates": [item["listing_date"].isoformat() if item.get("listing_date") else None for item in companies],
-                                     "issuers": len(companies), "fully_reviewed_and_aligned": fully_reviewed,
-                                     "reconciled": reconciled, "audit_stats": report["stats"],
-                                     "csv": str(Path(exports["csv_path"]).relative_to(staging))})
-        summary = {"created_at": dt.datetime.now(dt.timezone.utc).isoformat(), "cohorts": cohort_summaries,
-                   "note": "A snapshot can contain legacy values and evidence gaps. Passing code checks is not semantic certification. Review audit/states before analysis."}
+            cohort_summaries.append({
+                "id": cohort_id,
+                "board": cfg["dataset"].get("board", "Main Board"),
+                "requested_period": configured_period,
+                "listing_dates": [item["listing_date"].isoformat() if item.get("listing_date") else None for item in companies],
+                "issuers": len(companies),
+                "fully_reviewed_and_aligned": fully_reviewed,
+                "reconciled": reconciled,
+                "is_analysis_ready": fully_reviewed and reconciled,
+                "audit_stats": report["stats"],
+                "csv": str(Path(exports["csv_path"]).relative_to(staging)),
+                "workbook": str(Path(workbook_path).relative_to(staging)),
+                "codebook_md": str(Path(exports["md_path"]).relative_to(staging)),
+                "codebook_json": str(Path(exports["json_path"]).relative_to(staging)),
+                "audit_md": str(Path(destination / "audit.md").relative_to(staging)),
+                "status_json": str(Path(destination / "status.json").relative_to(staging)),
+                "evidence_dir": str(Path(destination / "evidence").relative_to(staging)),
+                "companies": [
+                    {
+                        "code": item["code"],
+                        "name": item.get("name", ""),
+                        "listing_date": item["listing_date"].isoformat() if item.get("listing_date") else None,
+                        "prospectus_status": "Aligned" if any(g.get("code") == item["code"] and g.get("prospectus_aligned") for g in gates) else "Pending",
+                        "allot_status": "Aligned" if any(g.get("code") == item["code"] and g.get("allot_aligned") for g in gates) else "Pending",
+                    }
+                    for item in companies
+                ],
+            })
+        overall_ready = bool(cohort_summaries) and all(c["fully_reviewed_and_aligned"] and c["reconciled"] for c in cohort_summaries)
+        overall_status = "ANALYSIS-READY" if overall_ready else ("WORK_PENDING" if any(not c["fully_reviewed_and_aligned"] for c in cohort_summaries) else "LEGACY_GAPS")
+        summary = {
+            "created_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+            "overall_status": overall_status,
+            "is_analysis_ready": overall_ready,
+            "cohorts": cohort_summaries,
+            "note": "A snapshot can contain legacy values and evidence gaps. Passing code checks is not semantic certification. Review audit/states before analysis."
+        }
         (staging / "quality_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
-        (staging / "README.md").write_text("# IPO research data delivery\n\nOpen each cohort workbook or clean CSV and its codebook. GEM also includes a research-layout CSV and a separate extension dictionary.\n\nRead quality_summary.json, audit reports and status.json before analysis. Blank/NaN/NA are missing, not zero. Monetary values retain documented currencies and units. Review credentials refer to original source packets that can be re-downloaded; hashes do not establish semantic truth. Raw PDFs, full text, virtual environments and secrets are excluded.\n\nCurrent built-in research scripts select Main Board 2026 listings; analyze GEM separately under an explicit sample and specification.\n", encoding="utf-8")
+        (staging / "START_HERE.html").write_text(
+            generate_start_here_html(
+                title="Hong Kong IPO Research Data Delivery",
+                status=overall_status,
+                is_analysis_ready=overall_ready,
+                cohorts=cohort_summaries,
+                is_bundle=True,
+                base_dir=staging,
+            ),
+            encoding="utf-8"
+        )
+        (staging / "index.json").write_text(
+            json.dumps(
+                generate_index_json(
+                    title="Hong Kong IPO Research Data Delivery",
+                    status=overall_status,
+                    is_analysis_ready=overall_ready,
+                    cohorts=cohort_summaries,
+                    base_dir=staging,
+                ),
+                indent=2
+            ) + "\n",
+            encoding="utf-8"
+        )
+        (staging / "README.md").write_text(
+            generate_delivery_readme(
+                title="Hong Kong IPO Research Data Delivery",
+                status=overall_status,
+                is_analysis_ready=overall_ready,
+                cohorts=cohort_summaries,
+                is_bundle=True,
+                base_dir=staging,
+            ),
+            encoding="utf-8"
+        )
         files = sorted(path for path in staging.rglob("*") if path.is_file())
         manifest = [{"path": str(path.relative_to(staging)), "bytes": path.stat().st_size, "sha256": digest(path)} for path in files]
         (staging / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")

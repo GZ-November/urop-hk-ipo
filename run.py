@@ -5,6 +5,9 @@ Provides a clean, direct command-line interface to the entire pipeline
 without requiring callers to navigate deep into subdirectories.
 
 Usage Examples:
+    python run.py start
+    python run.py start --period-start 2026-01-01 --period-end 2026-03-31
+    python run.py resume
     python run.py status
     python run.py audit --target all
     python run.py cross_check
@@ -13,6 +16,7 @@ Usage Examples:
     python run.py find --only 6082.HK
     python run.py analysis --list
     python run.py workspace --check
+    python run.py bundle --output deliverables/ipo-data.zip
     python run.py --help
 """
 from __future__ import annotations
@@ -29,6 +33,14 @@ WEEKLY_REPORT_SCRIPT = PIPELINE_DIR / "prospectus_pipeline" / "tools" / "build_w
 
 def main() -> None:
     args = sys.argv[1:]
+
+    # One-command bootstrap and execution entry points for generic agents.
+    if args and args[0] in ("agent-start", "agent_start", "start", "resume"):
+        from tools.agent_start import main as agent_start_main
+        normalized_args = list(args)
+        if normalized_args[0] in ("agent-start", "agent_start"):
+            normalized_args[0] = "start"
+        sys.exit(agent_start_main(normalized_args))
 
     # Project orchestration stays separate from the evidence-gated pipeline CLI.
     project_commands = {

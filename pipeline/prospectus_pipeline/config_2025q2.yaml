@@ -32,16 +32,20 @@ hkex:
   timeout_sec: 40
 
 paths:
-  data: "prospectus_pipeline/data"
-  pdf: "prospectus_pipeline/data/pdf"
-  text: "prospectus_pipeline/data/text"
-  sections: "prospectus_pipeline/data/sections"
-  packets: "prospectus_pipeline/data/packets"
-  out: "prospectus_pipeline/out"
-  allot_pdf: "prospectus_pipeline/data/allot/pdf"
-  allot_text: "prospectus_pipeline/data/allot/text"
-  allot_packets: "prospectus_pipeline/data/allot/packets"
-  allot_out: "prospectus_pipeline/out/allot"
+  data: "prospectus_pipeline/data/2025Q2"
+  pdf: "prospectus_pipeline/data/2025Q2/pdf"
+  text: "prospectus_pipeline/data/2025Q2/text"
+  sections: "prospectus_pipeline/data/2025Q2/sections"
+  packets: "prospectus_pipeline/data/2025Q2/packets"
+  tables: "prospectus_pipeline/data/2025Q2/tables"
+  out: "prospectus_pipeline/out/2025Q2"
+  allot_pdf: "prospectus_pipeline/data/2025Q2/allot/pdf"
+  allot_text: "prospectus_pipeline/data/2025Q2/allot/text"
+  allot_packets: "prospectus_pipeline/data/2025Q2/allot/packets"
+  allot_out: "prospectus_pipeline/out/2025Q2/allot"
+
+state_dir: "prospectus_pipeline/.pipeline_state/HKIPO-MB2025Q2"
+filter_period: true
 
 extract:
   allot_max_chars: 400000
