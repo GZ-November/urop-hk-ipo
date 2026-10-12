@@ -6,6 +6,7 @@ without requiring callers to navigate deep into subdirectories.
 
 Usage Examples:
     python run.py start
+    python run.py plan 2025Q4
     python run.py start --period-start 2026-01-01 --period-end 2026-03-31
     python run.py resume
     python run.py status
@@ -49,6 +50,8 @@ def main() -> None:
         "bootstrap": ROOT / "tools" / "bootstrap.py",
         "doctor": ROOT / "tools" / "doctor.py",
         "bundle": ROOT / "tools" / "bundle_data.py",
+        "plan": ROOT / "tools" / "collection_plan.py",
+        "skills": ROOT / "tools" / "install_skills.py",
     }
     if args and args[0] in project_commands:
         try:

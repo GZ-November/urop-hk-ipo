@@ -4,7 +4,7 @@
 
 ## 从基础统计开始
 
-本仓库自带 [ipo-empirical-research](../.agents/skills/ipo-empirical-research/SKILL.md)，适合研究设计、IPO 变量、回归与推断；[hk-ipo-pipeline](../.agents/skills/hk-ipo-pipeline/SKILL.md) 负责采集、核验、刷新和导出。仓库的字段定义、样本计划和日期合同优先于 skill 的通用默认值。
+本仓库自带 [ipo-empirical-research](../.agents/skills/ipo-empirical-research/SKILL.md)，适合研究设计、IPO 变量、回归与推断；[hk-ipo-collect](../.agents/skills/hk-ipo-collect/SKILL.md) 负责按时间段采集、独立复核和打包交付。仓库的字段定义、样本计划和日期合同优先于 skill 的通用默认值。
 
 可以把下面的提示交给 agent，并填入研究问题：
 

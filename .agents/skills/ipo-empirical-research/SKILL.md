@@ -39,7 +39,7 @@ market, the 2025 reform) change what a variable means.
 
 3. If working inside a repository that already has a research plan, variable
    registry or analysis scripts (for example the UROP HK IPO repo with
-   `docs/RESEARCH_PLAN_2026.md` and the `hk-ipo-pipeline` skill), the
+   `docs/RESEARCH_PLAN_2026.md` and the `hk-ipo-collect` skill), the
    repository's definitions and sample rules take precedence. Use this skill's
    standards to review or extend them, and flag disagreements rather than
    silently changing a study's specification.
