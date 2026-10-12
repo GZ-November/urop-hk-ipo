@@ -74,6 +74,11 @@ not been verified in this audit.
 ```bash
 git clone https://github.com/GZ-November/urop-hk-ipo.git
 cd urop-hk-ipo
+
+# Option A: One-command automatic bootstrap and dual-board collection:
+python3 run.py agent-start --board both
+
+# Option B: Explicit developer bootstrap and validation:
 python3 tools/bootstrap.py --profile dev
 .venv/bin/python run.py doctor
 make check-code
@@ -197,6 +202,48 @@ instructions for a selected cohort:
 .venv/bin/python run.py handoff --config \
   prospectus_pipeline/datasets/HKIPO_2026-01-01_2026-03-31_HKIPO-GEM/cohort.yaml
 ```
+
+### 4.1 Exit Code 3 Protocol: Autonomous Work-Order Resolution and Resume
+
+> **Exit Code 3 (`WORK_PENDING`) is an intentional governance boundary, NOT a crash or failure.**
+
+When a collection command exits with code `3`, the pipeline has completed official source discovery, created the cohort directory, downloaded disclosure PDFs, prepared text/Markdown extraction packets, and generated machine-readable work orders. It pauses deterministically because unverified data must never be silently written into research workbooks.
+
+#### Step-by-Step Autonomous Action for Agents:
+
+1. **Locate Work Orders**:
+   Read `out/agent_handoff/work_orders.json` in the cohort directory (or inspect `START_HERE.html` generated in your `--run-dir`). Each item in `work_orders.json` defines:
+   - `code`: Stock code (e.g. `8610.HK`)
+   - `target`: Extraction target (`prospectus`, `allot`, or `gem`)
+   - `packet_path`: Absolute path to the prepared Markdown source packet
+   - `out_path`: Target path for extracted JSON payload
+   - `schema_path`: Target field schema (keys, types, descriptions)
+
+2. **Execute Field Extraction**:
+   Extract all required fields from the packet text into `out_path`. Every populated field must contain `value`, `page`, and `quote`. Save the JSON payload and record deterministic validation:
+   ```bash
+   .venv/bin/python run.py derive_allot --config CONFIG --only CODE
+   .venv/bin/python run.py validate --config CONFIG --target TARGET --only CODE
+   .venv/bin/python run.py state extracted --config CONFIG --target TARGET --code CODE
+   ```
+
+3. **Perform Independent Review (Dual-Agent or Multi-Turn Handshake)**:
+   A passing review requires an independent reviewer who inspects the original disclosures and verifies that extracted quotes and values match. If your runtime supports subagents, spawn a separate review subagent. Record the passing review credential:
+   ```bash
+   .venv/bin/python run.py state reviewed --config CONFIG --target TARGET \
+     --code CODE --verdict pass --reviewer "IndependentReviewerAgent" \
+     --evidence-ref "Path/to/review_notes.md" --review-note "Verified against disclosure packet"
+   ```
+   *Note: If no independent review capability is available in your runtime, deliver the prepared packets and report `WORK_PENDING` honestly. Never forge passing credentials.*
+
+4. **Seamless Resume**:
+   Rerun the resume command printed at the end of the run:
+   ```bash
+   python3 run.py resume --run-dir deliverables/run_<board>_<period>
+   # or:
+   python3 run.py agent-start --resume --run-dir deliverables/run_<board>_<period>
+   ```
+   The resume runner reloads preserved configurations, verifies reviewer hashes, writes approved cells through snapshot backups into the Excel workbook, collects external/market data, runs cross-checks, and exports clean CSVs and Codebooks with **Exit Code 0**.
 
 The index contains issuer/target, packet path, output JSON path, packet readiness,
 and extraction/review instruction files. Main Board has prospectus and allotment

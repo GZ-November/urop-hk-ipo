@@ -74,6 +74,8 @@ pipeline/prospectus_pipeline/data/allotment/
 pipeline/prospectus_pipeline/data/text/
 pipeline/prospectus_pipeline/data/sections/
 pipeline/prospectus_pipeline/data/packets/
+pipeline/prospectus_pipeline/data/2025Q1/
+pipeline/prospectus_pipeline/data/2025Q2/
 
 # datasets/ 是 collect 时代的隔离工作区（内含大体积 PDF 与重复状态）
 # 规范工作簿在 pipeline/cohorts/，现行抽取状态在 prospectus_pipeline/out/
