@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install locked dependencies and managed Python without changing global Python."""
+"""Install locked dependencies, managed Python and agent skills without changing global Python."""
 from __future__ import annotations
 
 import argparse
@@ -28,6 +28,9 @@ def main() -> int:
                         help="dev includes collection, analysis and verification dependencies")
     parser.add_argument("--python", default="3.12", help="Managed project Python version")
     parser.add_argument("--check", action="store_true", help="Also run make check-code (requires make)")
+    parser.add_argument("--skills", choices=("project", "user", "both", "none"), default="project",
+                        help="Install agent skills: project = this checkout's .claude/skills; "
+                             "user = ~/.claude/skills and ~/.agents/skills (any directory)")
     args = parser.parse_args()
     if sys.version_info < (3, 9):
         parser.error("Bootstrap requires an existing Python 3.9+; uv installs project Python afterward.")
@@ -50,6 +53,7 @@ def main() -> int:
     run(sync)
     python = str(environment_python(ROOT / ".venv"))
     run([python, str(ROOT / "tools/doctor.py"), "--profile", args.profile])
+    run([python, str(ROOT / "tools/install_skills.py"), "--scope", args.skills])
     if args.check:
         if args.profile != "dev":
             parser.error("--check requires --profile dev")

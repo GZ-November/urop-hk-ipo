@@ -77,6 +77,14 @@ def validate_date_range(start_str: str | None, end_str: str | None) -> tuple[dt.
     return start_date, end_date
 
 
+def board_choice(value: str | None) -> str:
+    """Map CLI values and saved display names ("Main Board", "GEM") to main, gem or both."""
+    text = (value or "both").strip().lower()
+    if text == "both":
+        return text
+    return "gem" if "gem" in text else "main"
+
+
 class RunLock:
     """Safe directory file-lock to prevent concurrent mutations using atomic O_CREAT | O_EXCL."""
 
@@ -310,7 +318,7 @@ def start_collection(
 ) -> int:
     """Execute one-command collection workflow."""
     # 1. Resolve board
-    board = (args.board or "both").strip().lower()
+    board = board_choice(args.board)
 
     if board == "both":
         print("[*] Starting dual-board collection (Main Board + GEM)...", flush=True)
@@ -363,7 +371,7 @@ def start_collection(
         workbook_path, cohort_config = resolve_cohort_paths(start_date, end_date, board, root)
 
         if existing_state:
-            prev_board = existing_state.get("board", "").lower()
+            prev_board = board_choice(existing_state["board"]) if existing_state.get("board") else ""
             prev_start = existing_state.get("period_start", "")
             prev_end = existing_state.get("period_end", "")
             if (prev_board and prev_board != board) or (

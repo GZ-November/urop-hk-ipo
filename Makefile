@@ -11,7 +11,7 @@ PYTHON_SOURCES := run.py tools analysis pipeline/run.py pipeline/prospectus_pipe
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
-	@echo "  make env           - Check and bootstrap runtime dependencies (Python 3.9+, openpyxl, etc.)"
+	@echo "  make env           - Install locked dependencies and agent skills (same as make bootstrap)"
 	@echo "  make status        - Display pipeline state and hash-gate alignment for issuers"
 	@echo "  make audit         - Run read-only cell-by-cell audit against verified extractions"
 	@echo "  make cross_check   - Run HKEX Listing Rules & cross-field econometric consistency audit"
@@ -35,8 +35,7 @@ help:
 	@echo "  make clean         - Remove cached bytecode and temporary compilation files"
 	@echo "  make check         - Run complete health inspection (status + audit + cross_check + test + registry-check)"
 
-env:
-	@./.agents/skills/hk-ipo-pipeline/scripts/check_env.sh
+env: bootstrap
 
 status:
 	@"$(PYTHON)" run.py status

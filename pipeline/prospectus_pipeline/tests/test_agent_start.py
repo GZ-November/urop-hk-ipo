@@ -218,6 +218,32 @@ class AgentStartTests(unittest.TestCase):
             html_text2 = html_file.read_text(encoding="utf-8")
             self.assertIn("ANALYSIS-READY", html_text2)
 
+    def test_rerunning_same_start_command_resumes_saved_main_board_run(self):
+        """The saved display board "Main Board" must not block the identical start command."""
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            run_dir = root / "run_main"
+            cohort_dir = root / "pipeline/prospectus_pipeline/datasets/HKIPO_2026-01-01_2026-03-31_HKIPO-MB"
+            cohort_dir.mkdir(parents=True)
+            (cohort_dir / "cohort.yaml").write_text("dataset:\n  board: Main Board\n", encoding="utf-8")
+            os.environ["HKIPO_PYTHON"] = sys.executable
+            args = argparse.Namespace(
+                board="main", period_start="2026-01-01", period_end="2026-03-31",
+                run_dir=str(run_dir), profile="core", no_bootstrap=True, resume=False,
+            )
+            self.assertEqual(start_collection(args, root=root, runner=lambda cmd, **kw: DummyProcess(3)), 3)
+            commands = []
+
+            def finish(cmd, **kwargs):
+                commands.append(list(cmd))
+                return DummyProcess(0)
+
+            self.assertEqual(start_collection(args, root=root, runner=finish), 0)
+            self.assertIn("--config", commands[0])
+            state = json.loads((run_dir / "run_state.json").read_text(encoding="utf-8"))
+            self.assertEqual(state["board"], "Main Board")
+            self.assertEqual(state["status"], "ANALYSIS-READY")
+
     def test_failure_propagation_no_stale_success(self):
         """Verify pipeline failure is propagated with exit code and no fake success."""
         with tempfile.TemporaryDirectory() as temp_dir:

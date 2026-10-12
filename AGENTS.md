@@ -1,5 +1,10 @@
 # Agent entry point
 
+When the user names a listing period to collect, asks to continue a collection,
+or gives only this repository link, follow
+[the hk-ipo-collect skill](.agents/skills/hk-ipo-collect/SKILL.md); it starts with
+`python3 run.py plan <period>`. Rerunning the same `run.py start` command resumes.
+
 For installation, new Main Board/GEM collection, review, resume or data delivery,
 read [the English operating instructions](docs/AGENT_INSTRUCTIONS.md) and follow
 its ordered workflow. For GEM, also read [the template and board adapter](docs/GEM_PIPELINE.md).

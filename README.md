@@ -11,7 +11,14 @@ This project builds evidence-linked datasets for ordinary Hong Kong Main Board I
 
 ## Give this repository to an agent
 
-Read the **[complete English user and agent instructions](docs/AGENT_INSTRUCTIONS.md)**,
+**Fastest path: [one-sentence collection quickstart (中文 / English)](docs/QUICKSTART.md).**
+Run `python3 tools/bootstrap.py` once (it also installs the `hk-ipo-collect` agent skill),
+then tell your agent a period, e.g. *"收集 2025 年第四季度的港股 IPO"* or
+*"Collect Hong Kong IPOs listed in 2025 Q4"*. Optional details go in the
+[request template](docs/COLLECTION_REQUEST_TEMPLATE.md); `python3 run.py plan 2025Q4`
+previews the quarter-by-board jobs without collecting.
+
+For every detail, read the **[complete English user and agent instructions](docs/AGENT_INSTRUCTIONS.md)**,
 including a copy-and-paste collection prompt. **[GEM has its own template, schema,
 source parser and review target](docs/GEM_PIPELINE.md)**; Main Board-only fields
 are removed rather than filled with artificial zeros.

@@ -10,6 +10,10 @@ model runtime, independent reviewer or network permissions.
 
 ## 1. Copy this prompt to your agent
 
+For the shortest route, see the [one-sentence quickstart](QUICKSTART.md): after
+bootstrap, an agent with the `hk-ipo-collect` skill needs only a period such as
+"2025 Q4". The full prompt below states every requirement explicitly.
+
 Replace the dates, boards and observation cutoff with your research scope.
 The cutoff governs the requested research dataset; see the horizon limitation
 below before claiming that every market series respects it.
@@ -24,7 +28,8 @@ Delivery: separate board/cohort Excel and CSV files, dictionaries, evidence,
 review/gate status, missing-data and maturity reports, plus a downloadable ZIP.
 
 Clone the repository into a clean working directory. Read AGENTS.md,
-docs/AGENT_INSTRUCTIONS.md, docs/GEM_PIPELINE.md and the collection skill.
+docs/AGENT_INSTRUCTIONS.md, docs/GEM_PIPELINE.md and
+.agents/skills/hk-ipo-collect/SKILL.md.
 Run python3 tools/bootstrap.py --profile dev, diagnose any installation failure,
 and run make check-code. Use the repository's locked dependencies.
 
@@ -87,7 +92,11 @@ make check-code
 The bootstrap automatically creates a local `.bootstrap` installer environment,
 installs the pinned `uv` tool, locates/downloads project Python 3.12 when needed,
 and creates `.venv` using `uv sync --locked`. It checks imports and collection
-assets afterward. It does not change global Python or require activating a shell.
+assets afterward, then links the repository skills from `.agents/skills/` into
+`.claude/skills/` (`--skills user` or `both` also links them into `~/.claude/skills/`
+and `~/.agents/skills/`; `--skills none` skips this). Existing skill entries that
+the installer did not create are kept. `python3 run.py skills --check` reports the
+installation. It does not change global Python or require activating a shell.
 Run it again to repair the selected profile. `--locked` refuses stale dependency
 metadata; `--frozen` would have silently accepted the old incomplete lockfile.
 See [uv's project guide](https://docs.astral.sh/uv/guides/projects/) and
@@ -131,6 +140,17 @@ Root `pyproject.toml` is the dependency authority; nested requirements are legac
 core-only descriptions, not another environment to install separately.
 
 ## 3. Select the board and cohort
+
+Preview the jobs first. `run.py plan` accepts `2025`, `2025H2`, `2025Q4`,
+`2025-11`, explicit dates, `latest` and `A..B` ranges; it splits the interval into
+board × calendar-quarter jobs, marks quarters already stored as canonical cohorts
+or started in earlier runs, and prints each start command and the final bundle
+command. It reads files only.
+
+```bash
+python3 run.py plan 2025Q4
+python3 run.py plan 2024Q3..2025Q2 --board main --json
+```
 
 Dates are inclusive and membership follows actual listing date. Main Board
 screening excludes transfers from GEM, SPAC/de-SPAC cases and introductions.
@@ -457,6 +477,6 @@ separately and retain each report. `make check` uses a single configured/default
 cohort and therefore is not an all-years evidence certification. Never delete
 raw source caches or historical snapshots just because Git ignores them.
 
-See [GEM design](GEM_PIPELINE.md), [pipeline skill](../.agents/skills/hk-ipo-pipeline/SKILL.md),
+See [GEM design](GEM_PIPELINE.md), [collection skill](../.agents/skills/hk-ipo-collect/SKILL.md),
 [architecture](ARCHITECTURE.md), [analysis scope](../analysis/README.md), and
 [contribution rules](../CONTRIBUTING.md).

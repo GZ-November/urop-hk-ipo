@@ -42,4 +42,4 @@ Q2 源数据修复由用户在 Zcode 中继续进行，本研究分支不修改 
 
 本轮16项brainstorm和执行设计见 [RESEARCH_DESIGN_2026.md](../../../docs/RESEARCH_DESIGN_2026.md)。
 
-正式源字段新增/修正仍须遵守 [hk-ipo-pipeline skill](../../../.agents/skills/hk-ipo-pipeline/SKILL.md) 的要求：“Writeback requires passing extracted, validated and reviewed records bound to the same payload hash.” 本分支没有改写这些正式字段或合成review通过记录；董事席位由 Zcode 继续修复，6228的原披露核验尚未完成。
+正式源字段新增/修正仍须遵守 [hk-ipo-pipeline skill（已移除，链接为当时版本）](https://github.com/GZ-November/urop-hk-ipo/blob/3ae24e8/.agents/skills/hk-ipo-pipeline/SKILL.md) 的要求：“Writeback requires passing extracted, validated and reviewed records bound to the same payload hash.” 本分支没有改写这些正式字段或合成review通过记录；董事席位由 Zcode 继续修复，6228的原披露核验尚未完成。
