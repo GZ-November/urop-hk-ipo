@@ -3,36 +3,36 @@
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**From HKEX disclosures to research data and reproducible IPO analysis.**
+**Tell an AI agent a listing period; get evidence-backed Hong Kong IPO data and reproducible analysis.**
 
-This project builds evidence-linked datasets for ordinary Hong Kong Main Board IPOs. It studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
+This project turns HKEX disclosures into evidence-linked datasets for ordinary Hong Kong Main Board and GEM IPOs. Every value carries its source page, and an independent reviewer checks it before it enters the workbook. The research studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
 
-**Current study: 113 IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
+**Current study: 113 Main Board IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
 
 ## Give this repository to an agent
 
-**Fastest path: [one-sentence collection quickstart (中文 / English)](docs/QUICKSTART.md).**
-New teammates can start from the **[one-page team instructions (PDF)](docs/TEAM_INSTRUCTIONS.pdf)**
-([LaTeX source](docs/TEAM_INSTRUCTIONS.tex)): which agent to use, setup, the one-sentence request and the deliverable.
-Run `python3 tools/bootstrap.py` once (it also installs the `hk-ipo-collect` agent skill),
-then tell your agent a period, e.g. *"收集 2025 年第四季度的港股 IPO"* or
-*"Collect Hong Kong IPOs listed in 2025 Q4"*. Optional details go in the
-[request template](docs/COLLECTION_REQUEST_TEMPLATE.md); `python3 run.py plan 2025Q4`
-previews the quarter-by-board jobs without collecting.
-
-For every detail, read the **[complete English user and agent instructions](docs/AGENT_INSTRUCTIONS.md)**,
-including a copy-and-paste collection prompt. **[GEM has its own template, schema,
-source parser and review target](docs/GEM_PIPELINE.md)**; Main Board-only fields
-are removed rather than filled with artificial zeros.
+New teammates: start with the **[one-page team instructions (PDF)](docs/TEAM_INSTRUCTIONS.pdf)**
+([LaTeX source](docs/TEAM_INSTRUCTIONS.tex)) or the **[quickstart (中文 / English)](docs/QUICKSTART.md)**.
 
 ```bash
 git clone https://github.com/GZ-November/urop-hk-ipo.git
 cd urop-hk-ipo
-python3 tools/bootstrap.py --profile dev
-.venv/bin/python run.py collect --board gem --period-start 2026-01-01 --period-end 2026-03-31
-# Exit 3: follow the printed work orders, obtain independent review, then resume.
-.venv/bin/python run.py bundle --output deliverables/ipo-data.zip
+python3 tools/bootstrap.py   # locked dependencies + the hk-ipo-collect agent skill
+claude                       # or codex; then type the request below
 ```
+
+> Collect Hong Kong IPOs listed in 2025 Q4. &nbsp;/&nbsp; 收集 2025 年第四季度的港股 IPO
+
+Use an agent that runs shell commands, reaches the Internet and launches subagents
+(Claude Code recommended; Codex CLI works). It plans board × quarter jobs, collects,
+extracts, has each payload independently reviewed, and delivers a ZIP in `deliverables/`.
+Optional details go in the [request template](docs/COLLECTION_REQUEST_TEMPLATE.md);
+`python3 run.py plan 2025Q4` previews the jobs without collecting.
+
+For every detail and the manual commands, read the **[complete English user and agent
+instructions](docs/AGENT_INSTRUCTIONS.md)**. **[GEM has its own template, schema,
+source parser and review target](docs/GEM_PIPELINE.md)**; Main Board-only fields
+are removed rather than filled with artificial zeros.
 
 Bootstrap installs locked collection, analysis and test dependencies, including
 managed project Python when needed. Generic agents use portable work orders;

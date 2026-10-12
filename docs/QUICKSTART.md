@@ -27,7 +27,8 @@ python3 tools/bootstrap.py
 python3 tools/bootstrap.py --skills both
 ```
 
-也可以跳过安装：把仓库链接和时间段一起发给 agent，它会自己 clone、安装。
+也可以跳过安装，直接对 agent 说：“克隆 https://github.com/GZ-November/urop-hk-ipo ，按仓库里的 AGENTS.md
+收集 2025 年第四季度的港股 IPO”。它会自己 clone、安装。只给链接不给时间段时，默认采集最近一个已结束的季度。
 
 ## 第 2 步：告诉 agent 时间段
 

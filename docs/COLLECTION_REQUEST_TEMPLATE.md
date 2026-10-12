@@ -4,14 +4,22 @@
 
 ## 最简（一句话）
 
+已经在仓库目录里打开 agent 时：
+
 ```text
 收集 {2025 年第四季度} 的港股 IPO。
+```
+
+还没有下载仓库时，把链接一起发给 agent（Claude Code 或 Codex，不是网页聊天）：
+
+```text
+克隆 https://github.com/GZ-November/urop-hk-ipo ，按仓库里的 AGENTS.md 收集 {2025 年第四季度} 的港股 IPO。
 ```
 
 ## 完整（可选项写清楚）
 
 ```text
-用 https://github.com/GZ-November/urop-hk-ipo 收集港股 IPO 数据。
+用 https://github.com/GZ-November/urop-hk-ipo 收集港股 IPO 数据，按仓库里的 AGENTS.md 执行。
 
 时间段（按实际上市日期，含首尾）：{2025 年第四季度}
 板块：{主板和 GEM（默认） / 只要主板 / 只要 GEM}
@@ -28,7 +36,11 @@ Collect Hong Kong IPOs listed in {2025 Q4}.
 ```
 
 ```text
-Use https://github.com/GZ-November/urop-hk-ipo to collect Hong Kong IPO data.
+Clone https://github.com/GZ-November/urop-hk-ipo and follow its AGENTS.md to collect Hong Kong IPOs listed in {2025 Q4}.
+```
+
+```text
+Use https://github.com/GZ-November/urop-hk-ipo to collect Hong Kong IPO data; follow its AGENTS.md.
 
 Period (actual listing date, inclusive): {2025 Q4}
 Boards: {Main Board and GEM (default) / Main Board only / GEM only}
