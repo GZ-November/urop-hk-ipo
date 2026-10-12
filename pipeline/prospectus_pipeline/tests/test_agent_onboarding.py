@@ -131,6 +131,19 @@ class SkillInstallTests(unittest.TestCase):
             self.assertIn("kept existing", install_skills.install(skill, foreign.parent, root))
             self.assertEqual((foreign / "SKILL.md").read_text(encoding="utf-8"), "user's own skill")
 
+    def test_linked_personal_skills_in_source_are_not_repository_skills(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            repository_skill = self.make_skill(root)
+            personal = root / "home/.agents/skills/personal"
+            personal.mkdir(parents=True)
+            (personal / "SKILL.md").write_text("---\nname: personal\n---\n", encoding="utf-8")
+            try:
+                (root / ".agents/skills/personal").symlink_to(personal, target_is_directory=True)
+            except OSError:
+                self.skipTest("symbolic links unavailable")
+            self.assertEqual(install_skills.available_skills(root / ".agents/skills"), [repository_skill])
+
     def test_user_scope_targets_claude_and_shared_agent_directories(self):
         home = Path("/home/example")
         self.assertEqual(install_skills.destinations("user", REPO, home),

@@ -22,7 +22,9 @@ MARKER = ".installed-from"
 
 
 def available_skills(source: Path = SOURCE) -> list[Path]:
-    return sorted(path for path in source.iterdir() if (path / "SKILL.md").is_file())
+    """Repository skills are real directories; links to personal skills placed here are skipped."""
+    return sorted(path for path in source.iterdir()
+                  if not path.is_symlink() and (path / "SKILL.md").is_file())
 
 
 def destinations(scope: str, root: Path = ROOT, home: Path | None = None) -> list[Path]:
