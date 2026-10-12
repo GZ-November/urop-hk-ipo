@@ -502,7 +502,7 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     tag = cohort.replace(" ", "")
     dataset_id = cfg.get("dataset", {}).get("id", Path(cfg["workbook"]).stem) if cfg else "HKIPO"
 
-    csv_name = f"{cohort_artifact_stem(cohort, dataset_id, board=cfg.get("dataset", {}).get("board", "main"))}_clean.csv"
+    csv_name = f"{cohort_artifact_stem(cohort, dataset_id, board=cfg.get('dataset', {}).get('board', 'main'))}_clean.csv"
     md_name = f"HKIPO_{'GEM_' if str(cfg.get('dataset', {}).get('board', '')).upper() == 'GEM' else ''}{tag}_Codebook.md"
     json_name = md_name.removesuffix(".md") + ".json"
 
