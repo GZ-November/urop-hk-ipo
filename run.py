@@ -34,6 +34,9 @@ def main() -> None:
     project_commands = {
         "analysis": ROOT / "analysis" / "run.py",
         "workspace": ROOT / "tools" / "research_workspace.py",
+        "bootstrap": ROOT / "tools" / "bootstrap.py",
+        "doctor": ROOT / "tools" / "doctor.py",
+        "bundle": ROOT / "tools" / "bundle_data.py",
     }
     if args and args[0] in project_commands:
         try:

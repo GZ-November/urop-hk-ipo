@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "description": "GEM-specific issuer disclosure extensions; independent evidence and review required.",
+  "fields": [
+    {
+      "key": "gem_eligibility_rule",
+      "header": "GEM eligibility rule / disclosed route",
+      "kind": "text",
+      "description": "Issuer-stated dated GEM admission route; record rule and applicable waiver."
+    },
+    {
+      "key": "gem_trading_record_years",
+      "header": "GEM disclosed trading record (years)",
+      "kind": "number",
+      "description": "Number of financial years covered by the disclosed eligibility trading record."
+    },
+    {
+      "key": "gem_operating_cash_flow",
+      "header": "GEM eligibility aggregate operating cash flow",
+      "kind": "number",
+      "description": "Disclosed aggregate cash flow used for eligibility, in base financial-reporting currency units; retain applicable adjustments."
+    },
+    {
+      "key": "gem_cash_flow_currency",
+      "header": "GEM eligibility cash flow currency",
+      "kind": "text",
+      "description": "Currency of the aggregate operating cash-flow measure."
+    },
+    {
+      "key": "gem_cash_flow_start",
+      "header": "GEM eligibility cash flow period start",
+      "kind": "date",
+      "description": "Beginning of the eligibility cash-flow measurement period."
+    },
+    {
+      "key": "gem_cash_flow_end",
+      "header": "GEM eligibility cash flow period end",
+      "kind": "date",
+      "description": "End of the eligibility cash-flow measurement period."
+    },
+    {
+      "key": "gem_rnd_ratio",
+      "header": "GEM eligibility R&D / operating expenditure ratio",
+      "kind": "number",
+      "description": "Disclosed ratio under an applicable alternative route; not inferred for standard cash-flow route."
+    },
+    {
+      "key": "gem_market_cap_threshold",
+      "header": "GEM disclosed minimum market cap (HK$)",
+      "kind": "number",
+      "description": "Applicable minimum stated by issuer, with dated rule/route/waiver evidence; not a hardcoded universal threshold."
+    },
+    {
+      "key": "gem_public_float_threshold",
+      "header": "GEM disclosed minimum public float (%)",
+      "kind": "number",
+      "description": "Disclosed issuer-specific minimum public float, stored as a decimal fraction."
+    },
+    {
+      "key": "gem_public_float_waiver",
+      "header": "GEM public float waiver / exemption",
+      "kind": "text",
+      "description": "Disclosed waiver terms; NA where unsupported. A missing waiver is not proof of none."
+    },
+    {
+      "key": "gem_controller_lockup",
+      "header": "GEM disclosed controller lockup (months)",
+      "kind": "number",
+      "description": "Initial no-disposal period in months, retain later retain-control restriction in quote/review note."
+    },
+    {
+      "key": "gem_compliance_adviser",
+      "header": "GEM compliance adviser",
+      "kind": "text",
+      "description": "Full name of appointed compliance adviser."
+    },
+    {
+      "key": "gem_compliance_adviser_end",
+      "header": "GEM compliance adviser appointment end",
+      "kind": "date",
+      "description": "End date only when explicitly disclosed, otherwise NA."
+    },
+    {
+      "key": "gem_offer_structure",
+      "header": "GEM offering structure",
+      "kind": "text",
+      "description": "Public offer / placing / combined offering, from the listing document."
+    },
+    {
+      "key": "gem_board_lot",
+      "header": "GEM board lot (shares)",
+      "kind": "integer",
+      "description": "Disclosed trading board-lot shares; distinguish shares and any other quoted units."
+    }
+  ]
+}

@@ -181,6 +181,30 @@
     {
       "name": "06_sources_and_audits/Data_Gap_Collection",
       "source": "pipeline/reports/data_gap_collection"
+    },
+    {
+      "name": "01_workbooks/GEM_2026_Q1_Source_Only.xlsx",
+      "source": "pipeline/cohorts/HKIPO-GEM2026Q1.xlsx"
+    },
+    {
+      "name": "02_research_inputs/GEM_2026_Q1_Source_Only.csv",
+      "source": "pipeline/exports/GEM/HKIPO-GEM2026Q1_clean.csv"
+    },
+    {
+      "name": "03_data_dictionary/GEM_2026_Q1_Codebook.md",
+      "source": "pipeline/codebooks/GEM/HKIPO_GEM_2026Q1_Codebook.md"
+    },
+    {
+      "name": "03_data_dictionary/GEM_Template_and_Field_Map.md",
+      "source": "docs/GEM_PIPELINE.md"
+    },
+    {
+      "name": "04_reports_and_plans/Agent_Collection_Instructions.md",
+      "source": "docs/AGENT_INSTRUCTIONS.md"
+    },
+    {
+      "name": "06_sources_and_audits/GEM_Official_Listing_Reports",
+      "source": "pipeline/sources/GEM"
     }
   ]
 }

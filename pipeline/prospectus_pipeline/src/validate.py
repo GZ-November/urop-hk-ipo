@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import json
 import math
-from pathlib import Path
 
 from contracts import (
     MISSING_NUMERIC,
@@ -364,18 +363,12 @@ def _greenshoe_haystack(cfg: dict, code: str) -> str | None:
 
 def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
                  target: str = "prospectus", log=print) -> dict:
-    if target == "allot":
-        schema = strict_load_file(cfg["_root"] / "schema" / "allot_fields.json")
-        ext_dir: Path = cfg["paths"]["allot_out"] / "extracted"
-        packets_dir: Path = cfg["paths"]["allot_packets"]
-        ctx_map = _allot_context(cfg)
-        out_file = cfg["paths"]["allot_out"] / "validation.json"
-    else:
-        schema = strict_load_file(cfg["_root"] / "schema" / "fields.json")
-        ext_dir = cfg["paths"]["out"] / "extracted"
-        packets_dir = cfg["paths"]["packets"]
-        ctx_map = {}
-        out_file = cfg["paths"]["out"] / "validation.json"
+    from extraction_targets import target_paths
+    schema_path, output_dir, packets_dir = target_paths(cfg, target)
+    schema = strict_load_file(schema_path)
+    ext_dir = output_dir / "extracted"
+    ctx_map = _allot_context(cfg) if target == "allot" else {}
+    out_file = output_dir / "validation.json"
     wanted = [normalize_code(x) for x in only] if only else _expected_codes(cfg)
     if limit:
         wanted = wanted[:limit]
@@ -414,6 +407,8 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
             if target == "allot":
                 checks = check_allot(rec, context)
                 checks = [{"check": c["check"], "detail": c["detail"]} for c in checks]
+            elif target == "gem":
+                checks = []  # issuer-specific eligibility is independently reviewed, not inferred
             else:
                 checks = check_firm(rec, schema, cfg["validate"].get("share_rel_tol", 1e-9),
                                     cfg["validate"].get("share_abs_tol", 1),
@@ -461,7 +456,7 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
     # Save immutable run-level report
     import datetime as dt
     import uuid
-    runs_dir = (cfg["paths"]["allot_out"] if target == "allot" else cfg["paths"]["out"]) / "validation_runs"
+    runs_dir = output_dir / "validation_runs"
     runs_dir.mkdir(parents=True, exist_ok=True)
     ts_str = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ")
     run_id = uuid.uuid4().hex[:10]

@@ -147,8 +147,8 @@ function verifyPrompt(item) {
 只返回结构化结果：verdict 为 pass/fail；discrepancies 列出不一致项
 （field、in_file、should_be、page、reason），reason 里给出可直接采用的正确答案与页码。
 **不要**修改 JSON 文件。若结论为 pass，在返回报告前运行
-\`${PY} ${RUN}${CONFIG} state reviewed --target allot --code ${item.code} --verdict pass\`；
-若为 fail 则运行同一命令但使用 \`--verdict fail\`。`;
+\`${PY} ${RUN}${CONFIG} state reviewed --target allot --code ${item.code} --verdict pass --reviewer "independent-${item.code}" --evidence-ref "${item.out_path}.review.json"\`；
+先将本次完整复核报告写入 \`${item.out_path}.review.json\`，再记录凭证。若为 fail 则运行同一命令但使用 \`--verdict fail\`。`;
 }
 
 phase("抽取公告字段");

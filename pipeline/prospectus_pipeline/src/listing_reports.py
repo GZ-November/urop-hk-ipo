@@ -18,27 +18,31 @@ from urllib.parse import unquote, urljoin, urlparse
 import openpyxl
 import requests
 
+from boards import board_label, normalize_board, report_page
+
 MAIN_BOARD_REPORTS = (
     "https://www2.hkexnews.hk/New-Listings/New-Listing-Information/"
     "Main-Board?sc_lang=en"
 )
-_REPORT_NAME = re.compile(r"(?:NLR)?(19\d{2}|20\d{2})(?:_Eng)?\.xlsx?$", re.I)
+_REPORT_NAME = re.compile(r"(?:NLR|e_newlistings)?(19\d{2}|20\d{2})(?:_Eng)?\.xlsx?$", re.I)
 _AS_OF = re.compile(r"up to\s+(\d{1,2}\s+[A-Za-z]+\s+\d{4})", re.I)
 _OLE_MAGIC = bytes.fromhex("D0CF11E0A1B11AE1")
 
 
 class _ReportLinks(HTMLParser):
-    def __init__(self) -> None:
+    def __init__(self, board: str = "main") -> None:
         super().__init__()
+        self.board = normalize_board(board)
         self.by_year: dict[int, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         if tag != "a":
             return
         href = dict(attrs).get("href") or ""
-        url = urljoin(MAIN_BOARD_REPORTS, href)
+        url = urljoin(report_page(self.board), href)
         parsed = urlparse(url)
-        if parsed.hostname != "www2.hkexnews.hk" or "/New-Listing-Report/Main/" not in parsed.path:
+        segment = "GEM" if self.board == "gem" else "Main"
+        if parsed.hostname != "www2.hkexnews.hk" or f"/New-Listing-Report/{segment}/" not in parsed.path:
             return
         name = unquote(parsed.path.rsplit("/", 1)[-1])
         match = _REPORT_NAME.fullmatch(name)
@@ -46,15 +50,15 @@ class _ReportLinks(HTMLParser):
             self.by_year[int(match.group(1))] = url
 
 
-def report_links(html: str) -> dict[int, str]:
-    parser = _ReportLinks()
+def report_links(html: str, board: str = "main") -> dict[int, str]:
+    parser = _ReportLinks(board)
     parser.feed(html)
     return parser.by_year
 
 
 def _local_report(source_dir: Path, year: int) -> Path | None:
     for name in (
-        f"NLR{year}_Eng.xlsx", f"NLR{year}_Eng.xls",
+        f"NLR{year}_Eng.xlsx", f"NLR{year}_Eng.xls", f"e_newlistings{year}.xlsx", f"e_newlistings{year}.xls",
         f"{year}.xlsx", f"{year}.xls", f"{year}.XLS",
     ):
         path = source_dir / name
@@ -68,7 +72,7 @@ def report_as_of(path: Path) -> dt.date | None:
     if path.suffix.lower() == ".xlsx":
         wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
         try:
-            title = str(wb.active.cell(1, 1).value or "")
+            title = " ".join(str(row[0] or "") for row in wb.active.iter_rows(max_row=12, max_col=1, values_only=True))
         finally:
             wb.close()
     else:
@@ -76,24 +80,29 @@ def report_as_of(path: Path) -> dt.date | None:
 
         wb = xlrd.open_workbook(str(path), on_demand=True)
         try:
-            title = str(wb.sheet_by_index(0).cell_value(0, 0) or "")
+            sheet = wb.sheet_by_index(0)
+            title = " ".join(str(sheet.cell_value(row, 0) or "") for row in range(min(12, sheet.nrows)))
         finally:
             wb.release_resources()
     match = _AS_OF.search(title)
     if not match:
-        return None
+        gem_date = re.search(r"up to\s+(\d{4}/\d{2}/\d{2})", title, re.I)
+        return dt.datetime.strptime(gem_date.group(1), "%Y/%m/%d").date() if gem_date else None
     try:
         return dt.datetime.strptime(match.group(1), "%d %B %Y").date()
     except ValueError:
         return None
 
 
-def _covers(path: Path, year: int, requested_end: dt.date, today: dt.date) -> bool:
+def _covers(path: Path, year: int, requested_end: dt.date, today: dt.date, board: str = "main") -> bool:
     as_of = report_as_of(path)
     if as_of is None:
         # A current-year report without a coverage date cannot prove completeness.
         return year < today.year
     if requested_end <= as_of:
+        return True
+    if normalize_board(board) == "gem" and year < today.year and as_of.year == year:
+        # GEM annual reports print the last IPO date, even for sparse completed years.
         return True
     # Archived annual reports close on HKEX's final listing day, which can
     # precede 31 December.  Only treat a late-December historical report as final.
@@ -132,6 +141,7 @@ def reports_for_interval(
     *,
     session: requests.Session | None = None,
     today: dt.date | None = None,
+    board: str = "main",
 ) -> list[Path]:
     """Return complete annual reports or list every year whose coverage failed."""
     today = today or dt.date.today()
@@ -152,7 +162,7 @@ def reports_for_interval(
             local = _local_report(source_dir, year)
             if local:
                 try:
-                    if _covers(local, year, end_in_year, today):
+                    if _covers(local, year, end_in_year, today, board=board):
                         reports.append(local)
                         continue
                 except Exception:
@@ -160,13 +170,13 @@ def reports_for_interval(
                     pass
             try:
                 if links is None:
-                    page = session.get(MAIN_BOARD_REPORTS, timeout=40)
+                    page = session.get(report_page(board), timeout=40)
                     page.raise_for_status()
-                    links = report_links(page.text)
+                    links = report_links(page.text, board=board)
                 if year not in links:
-                    raise ValueError("no official Main Board report link")
+                    raise ValueError("no official listing report link")
                 downloaded = _save_report(session, links[year], source_dir)
-                if not _covers(downloaded, year, end_in_year, today):
+                if not _covers(downloaded, year, end_in_year, today, board=board):
                     as_of = report_as_of(downloaded)
                     raise ValueError(f"report covers through {as_of}, requested through {end_in_year}")
                 reports.append(downloaded)
@@ -176,7 +186,7 @@ def reports_for_interval(
         if own_session:
             session.close()
     if missing:
-        raise ValueError("Official Main Board listing-report coverage missing: " + "; ".join(missing))
+        raise ValueError(f"Official {board_label(board)} listing-report coverage missing: " + "; ".join(missing))
     return reports
 
 
@@ -288,6 +298,7 @@ def reports_and_supplement(
     source_dir: Path,
     *,
     today: dt.date | None = None,
+    board: str = "main",
 ) -> tuple[list[Path], list[dict[str, Any]]]:
     """Return annual reports plus reviewed supplement entries covering [start, end].
 
@@ -296,6 +307,8 @@ def reports_and_supplement(
     (``load_supplement``) to cover only the days after the report's printed
     coverage date; the annual report itself is always required.
     """
+    if normalize_board(board) == "gem":
+        return reports_for_interval(start, end, source_dir, today=today, board="gem"), []
     today = today or dt.date.today()
     try:
         return reports_for_interval(start, end, source_dir, today=today), []

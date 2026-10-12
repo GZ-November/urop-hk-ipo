@@ -73,6 +73,12 @@ ACADEMIC_VARS = {
 # Excel column letter, so inserting a column cannot silently attach the wrong
 # definition to a variable.
 EXTRA_HEADER_VARS = {
+    "GEM ordinary IPO count in 90 calendar days before prospectus": (
+        "GEM ordinary IPO count in 90 calendar days before prospectus",
+        "招股书日前90个自然日内GEM普通IPO上市家数（不含主板）",
+        "深蓝 (外部数据)", "market_conditions",
+        "HKEX GEM annual new listing reports; listing dates in [prospectus-90 days, prospectus)",
+    ),
     "Company Name at time of listing (exclude Chapter 20 cases)": (
         "Company Name at time of listing", "公司上市时法定英文名称", "浅绿 (港交所官方报告)", "hkex_nlr",
         "香港交易所 (HKEX) 新上市报告 (New Listing Report) 官方表格",
@@ -327,11 +333,11 @@ EXTRA_HEADER_VARS = {
         "syndicate", "招股书承销佣金协议披露",
     ),
     "Underwriting discretionary incentive fee rate (%)": (
-        "Underwriting discretionary incentive fee rate (%)", "承销酌情奖励费率估算 (%)", "深蓝 (配发及外部数据)",
+        "Underwriting discretionary incentive fee rate (%)", "招股书披露的酌情奖励费率上限（非实际支付，%）", "深蓝 (配发及外部数据)",
         "syndicate", "招股书承销佣金协议披露",
     ),
     "Total underwriting fee rate (%)": (
-        "Total underwriting fee rate (%)", "承销总费率估算 (基础+奖励, %)", "深蓝 (配发及外部数据)",
+        "Total underwriting fee rate (%)", "披露的承销总费率上限（基础+奖励上限，非实际支付，%）", "深蓝 (配发及外部数据)",
         "syndicate", "招股书承销佣金协议披露确定性派生",
     ),
 

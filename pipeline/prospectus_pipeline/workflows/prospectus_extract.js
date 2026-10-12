@@ -204,8 +204,8 @@ function verifyPrompt(item) {
 ## 输出
 只返回结构化结果：verdict 为 pass/fail；discrepancies 列出每个不一致（field、in_file、should_be、page、reason）。
 **不要**修改 JSON 文件本身。若结论为 pass，在返回报告前运行
-\`${PY} ${RUN}${CONFIG} state reviewed --target prospectus --code ${item.code} --verdict pass\`；
-若为 fail 则运行同一命令但使用 \`--verdict fail\`。若发现错误，在 reason 里给出能直接改的正确答案与页码。`;
+\`${PY} ${RUN}${CONFIG} state reviewed --target prospectus --code ${item.code} --verdict pass --reviewer "independent-${item.code}" --evidence-ref "${item.out_path}.review.json"\`；
+先将本次完整复核报告写入 \`${item.out_path}.review.json\`，再记录凭证。若为 fail 则运行同一命令但使用 \`--verdict fail\`。若发现错误，在 reason 里给出能直接改的正确答案与页码。`;
 }
 
 function extractTopicPrompt(item) {

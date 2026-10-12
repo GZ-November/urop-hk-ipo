@@ -1,9 +1,9 @@
 # 香港主板 2026 Q1 IPO 学术研究数据变量代码本 (Data Codebook)
 
-- **样本规模 (N)**：38 家香港联交所主板新上市公司
+- **样本规模 (N)**：38 家香港联交所 Main Board 新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-10-01 13:34:33 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-10-12 14:44:04 | **数据基准**：`HKIPO-MB2026Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -214,8 +214,8 @@
 | **GI** | `Joint sponsor count` | 保荐人总家数 (独家=1, 联席=2+) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 1.89 / 中位数 2.00 / 区间 [1.00, 4.00] |
 | **GJ** | `Sponsor commercial bank affiliate flag` | 保荐人是否属于商业银行系金融机构 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus syndicate structure | 100% 完备 | 1 (是): 10 家 (26.3%), 0 (否): 28 家 |
 | **GK** | `Underwriting base commission rate (%)` | 承销基础佣金费率 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | 100% 完备 | 均值 0.02 / 中位数 0.02 / 区间 [0.00, 0.04] |
-| **GL** | `Underwriting discretionary incentive fee rate (%)` | 承销酌情奖励费率估算 (%) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
-| **GM** | `Total underwriting fee rate (%)` | 承销总费率估算 (基础+奖励, %) | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GL** | `Underwriting discretionary incentive fee rate (%)` | 招股书披露的酌情奖励费率上限（非实际支付，%） | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **GM** | `Total underwriting fee rate (%)` | 披露的承销总费率上限（基础+奖励上限，非实际支付，%） | 深蓝 | `numeric` | Prospectus syndicate structure | Reserved / Unmatured (0/38 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
 | **GN** | `Cornerstone investor count` | 基石投资者机构总家数 | 深蓝 | `numeric` | Prospectus / allotment institutional network | 100% 完备 | 均值 9.42 / 中位数 9.00 / 区间 [0.00, 25.00] |
 | **GO** | `Cornerstone state-owned presence flag` | 基石投资者中是否包含国资/地方政府基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | 100% 完备 | 1 (是): 28 家 (73.7%), 0 (否): 10 家 |
 | **GP** | `Crossover fund presence flag` | 是否包含兼具 Pre-IPO 与基石双重身份的跨界基金 (1=是, 0=否) | 深蓝 | `boolean` | Prospectus / allotment institutional network | 100% 完备 | 1 (是): 2 家 (5.3%), 0 (否): 36 家 |

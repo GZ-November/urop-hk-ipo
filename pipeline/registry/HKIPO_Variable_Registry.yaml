@@ -1,5 +1,5 @@
 meta:
-  generated_at: '2026-09-30T00:04:59'
+  generated_at: '2026-10-12T14:44:05'
   generated_from:
   - HKIPO_2025Q1_Codebook.md
   - HKIPO_2025Q2_Codebook.md
@@ -24,7 +24,7 @@ variables:
   slug: hkex_file_no_of_the_year
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: official_hkex
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -74,7 +74,7 @@ variables:
   slug: sponsor_s
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: official_hkex
   timing: Prospectus syndicate structure
   unit: null
@@ -84,7 +84,7 @@ variables:
   slug: reporting_accountants
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: official_hkex
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -104,7 +104,7 @@ variables:
   slug: funds_raised_hk_a
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: official_hkex
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -114,7 +114,7 @@ variables:
   slug: funds_raised_int_b
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: official_hkex
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -154,7 +154,7 @@ variables:
   slug: number_of_offer_shares_under_the_capitalization_issue
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -166,7 +166,7 @@ variables:
   slug: number_of_offer_shares_under_capitalization_rest
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -480,7 +480,7 @@ variables:
   slug: over_allotment_option_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Post-IPO 30-day stabilization window
   unit: percent
@@ -550,7 +550,7 @@ variables:
   slug: development_costs_capitalized_in_year_1_additions_before_annualization
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Track record period financial disclosure
   unit: reporting_currency_raw
@@ -580,7 +580,7 @@ variables:
   slug: pre_ipo_vc_pe_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -591,7 +591,7 @@ variables:
   slug: pre_ipo_vc_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -602,7 +602,7 @@ variables:
   slug: pre_ipo_pe_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -613,7 +613,7 @@ variables:
   slug: pre_ipo_cvc_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -624,7 +624,7 @@ variables:
   slug: pre_ipo_state_gov_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -635,7 +635,7 @@ variables:
   slug: top_tier_vc_pe_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -656,7 +656,7 @@ variables:
   slug: pre_ipo_institutional_shareholding_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: percent
@@ -667,7 +667,7 @@ variables:
   slug: pre_ipo_investor_board_seat
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -709,7 +709,7 @@ variables:
   slug: controller_economic_interest_at_listing_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: percent
@@ -865,7 +865,7 @@ variables:
   slug: place_of_incorporation
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1005,7 +1005,7 @@ variables:
   slug: h_shares_after_ipo_base_no_options
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1041,7 +1041,7 @@ variables:
   slug: audit_opinion_year_1
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: prospectus
   timing: Track record period financial disclosure
   unit: null
@@ -1392,7 +1392,7 @@ variables:
   slug: first_trading_day_turnover_hk
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Listing Day 1 secondary market
   unit: HKD
@@ -1662,7 +1662,7 @@ variables:
   slug: stabilizing_manager
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1672,7 +1672,7 @@ variables:
   slug: stabilization_period_end_date
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1682,7 +1682,7 @@ variables:
   slug: stabilization_purchases_occurred
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1692,7 +1692,7 @@ variables:
   slug: over_allocation_shares
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1702,7 +1702,7 @@ variables:
   slug: over_allocation_pct_of_base_offer
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1712,7 +1712,7 @@ variables:
   slug: over_allotment_option_exercise_date
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1722,7 +1722,7 @@ variables:
   slug: shares_issued_under_over_allotment_option
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: null
@@ -1732,7 +1732,7 @@ variables:
   slug: over_allotment_exercise_percentage_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: percent
@@ -1742,7 +1742,7 @@ variables:
   slug: post_stabilization_cliff_return_5_5_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: percent
@@ -1752,7 +1752,7 @@ variables:
   slug: post_stabilization_20_day_return_0_20_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: percent
@@ -1762,7 +1762,7 @@ variables:
   slug: post_stabilization_volume_decay_ratio_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 30-day stabilization window
   unit: percent
@@ -1772,7 +1772,7 @@ variables:
   slug: day_5_bhr_from_day_1_close_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: percent
@@ -1782,7 +1782,7 @@ variables:
   slug: day_5_wealth_relative_vs_hsi
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: null
@@ -1812,7 +1812,7 @@ variables:
   slug: 3_month_bhr_from_day_1_close_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: percent
@@ -1842,7 +1842,7 @@ variables:
   slug: 3_month_average_daily_turnover_hk
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: HKD
@@ -1852,7 +1852,7 @@ variables:
   slug: amihud_illiquidity_6m_mean
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1862,7 +1862,7 @@ variables:
   slug: zero_volume_days_count_first_6m
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1872,7 +1872,7 @@ variables:
   slug: return_volatility_first_6m_daily_std_dev_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1882,7 +1882,7 @@ variables:
   slug: maximum_drawdown_first_6m_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1892,7 +1892,7 @@ variables:
   slug: controlling_shareholder_6_month_disposal_lockup_expiry_date
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Post-IPO lockup expiration events
   unit: null
@@ -1902,7 +1902,7 @@ variables:
   slug: controlling_shareholder_12_month_cessation_of_control_expiry_date
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2025Q2_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1942,7 +1942,7 @@ variables:
   slug: lead_sponsor_name
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: null
@@ -1952,7 +1952,7 @@ variables:
   slug: joint_sponsor_count
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: null
@@ -1962,7 +1962,7 @@ variables:
   slug: sponsor_commercial_bank_affiliate_flag
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: null
@@ -1972,7 +1972,7 @@ variables:
   slug: underwriting_base_commission_rate_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: percent
@@ -1982,27 +1982,27 @@ variables:
   slug: underwriting_discretionary_incentive_fee_rate_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: percent
-  description_zh: 承销酌情奖励费率估算 (%)
+  description_zh: 招股书披露的酌情奖励费率上限（非实际支付，%）
 - letter: GM
   header: Total underwriting fee rate (%)
   slug: total_underwriting_fee_rate_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus syndicate structure
   unit: percent
-  description_zh: 承销总费率估算 (基础+奖励, %)
+  description_zh: 披露的承销总费率上限（基础+奖励上限，非实际支付，%）
 - letter: GN
   header: Cornerstone investor count
   slug: cornerstone_investor_count
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q1_Codebook.md
   layer: allotment_external
   timing: Prospectus / allotment institutional network
   unit: null
@@ -2012,7 +2012,7 @@ variables:
   slug: cornerstone_state_owned_presence_flag
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus / allotment institutional network
   unit: null
@@ -2022,7 +2022,7 @@ variables:
   slug: crossover_fund_presence_flag
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus / allotment institutional network
   unit: null
@@ -2032,7 +2032,7 @@ variables:
   slug: pre_ipo_institutional_investor_count
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus / allotment institutional network
   unit: null
@@ -2042,7 +2042,7 @@ variables:
   slug: pre_ipo_state_owned_backing_flag
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q3_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: allotment_external
   timing: Prospectus / allotment institutional network
   unit: null

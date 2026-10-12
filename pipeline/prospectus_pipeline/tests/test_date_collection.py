@@ -127,7 +127,7 @@ class OfficialReportTests(SourceFixture):
         with patch("listing_reports.reports_for_interval", return_value=[]) as reports:
             pipeline_run._ipo_count_reports(cfg, Mock(source_dir=None), issuers)
         reports.assert_called_once_with(
-            dt.date(2025, 10, 12), dt.date(2026, 1, 9), self.source.resolve()
+            dt.date(2025, 10, 12), dt.date(2026, 1, 9), self.source.resolve(), board="main"
         )
 
     def test_external_stops_before_writes_when_prior_year_is_missing(self):

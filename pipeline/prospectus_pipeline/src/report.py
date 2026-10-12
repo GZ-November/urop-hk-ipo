@@ -97,6 +97,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         "B": find_col("stock code", fallback_letter="B"),
         "C": find_col("company name at time of listing", fallback_letter="C"),
         "DP": find_col("company chinese name", fallback_letter="DP"),
+        "K": find_col("ipo subscription price (hk$)"),
         "T": find_col("maximum offer price", fallback_letter="T"),
         "U": find_col("minimum offer price", fallback_letter="U"),
         "L": find_col("total (without option)", fallback_letter="L"),
@@ -130,7 +131,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         name_cn = str(cell(r, "DP") or "").strip()
         T = parse_float(cell(r, "T"))
         U = parse_float(cell(r, "U"))
-        p = T if (U is None or U == T) else (T + U) / 2.0
+        p = parse_float(cell(r, "K"))  # realized returns use actual offer price, never filing midpoint
         
         L = parse_float(cell(r, "L"))
         CS = parse_float(cell(r, "CS"))
@@ -200,7 +201,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
 
     # First day trading
     valid_returns = [d["first_return"] for d in data if d["first_return"] is not None]
-    avg_first_return = sum(valid_returns) / len(valid_returns) if valid_returns else 0.0
+    avg_first_return = sum(valid_returns) / len(valid_returns) if valid_returns else float("nan")
     positive_first = sum(1 for r in valid_returns if r > 0)
     flat_first = sum(1 for r in valid_returns if abs(r) < 1e-4)
     negative_first = sum(1 for r in valid_returns if r < -1e-4)
@@ -261,7 +262,7 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         "first_day_winners": positive_first,
         "first_day_flat": flat_first,
         "first_day_losers": negative_first,
-        "break_rate": negative_first / len(valid_returns) if valid_returns else 0.0,
+        "break_rate": negative_first / len(valid_returns) if valid_returns else float("nan"),
         "industries": dict(industries.most_common()),
         "sub_sectors": dict(sub_sectors.most_common(10)),
         "pathways": {
@@ -343,12 +344,12 @@ def generate_report(cfg: dict | None = None, out_path: Path | str | None = None)
         "\n## 四、基石投资与资本绑定",
         f"\n- **基石投资者覆盖率**：**{len(with_cornerstone)} / {n_companies} 家 ({len(with_cornerstone)/n_companies*100:.1f}%)** 的 IPO 引入了基石投资者；",
         f"- **基石平均获配比例**：基石获配股份平均占基础发售总规模的 **{avg_cornerstone_stake*100:.2f}%**；",
-        "- **禁售期合规**：所有引入基石投资者的公司，最早解禁期均严格满足 **6 个月**法定禁售要求（与 2025 年 8 月港交所定价改革一致）。",
+        "- **禁售期复核**：应逐公司核对协议、实际解禁日及适用规则；本描述性报告不自动确认所有公司合规。",
         "\n---",
         "\n## 五、二级市场首日行情表现",
         f"\n- **首日平均涨跌幅**：**{avg_first_return*100:+.2f}%**；",
-        f"- **上涨公司（红盘）**：**{positive_first} 家 ({positive_first/len(valid_returns)*100:.1f}%)**；",
-        f"- **平盘公司**：**{flat_first} 家 ({flat_first/len(valid_returns)*100:.1f}%)**；",
+        f"- **上涨公司（红盘）**：**{positive_first} 家 ({positive_first/len(valid_returns)*100 if valid_returns else float('nan'):.1f}%)**；",
+        f"- **平盘公司**：**{flat_first} 家 ({flat_first/len(valid_returns)*100 if valid_returns else float('nan'):.1f}%)**；",
         f"- **破发公司（破发率）**：**{negative_first} 家 (破发率 {stats['break_rate']*100:.1f}%)**；",
         f"- **首日换手总额**：累计达 **HK$ {total_turnover:,.0f}**（约 **{total_turnover/1e8:.2f} 亿港元**）。",
         "\n---",
