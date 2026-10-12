@@ -471,10 +471,11 @@ def build_topic_packets(
 
 
 def prepare_all(cfg: dict, found: list[dict], log=print, with_topics: bool = True) -> list[dict]:
-    fields = json.loads((cfg["_root"] / "schema" / "fields.json").read_text())["fields"]
+    from extraction_targets import target_paths
+    fields = json.loads(target_paths(cfg, "prospectus")[0].read_text())["fields"]
     out = []
     all_topic_packets = []
-    tables_base = cfg["paths"].get("tables", cfg["_ws"] / "prospectus_pipeline/data/tables")
+    tables_base = cfg["paths"].get("tables", cfg["paths"]["data"] / "tables")
 
     for i, rec in enumerate(found, 1):
         if not rec.get("pdf"):

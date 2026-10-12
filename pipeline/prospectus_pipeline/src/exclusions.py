@@ -31,18 +31,19 @@ def _official_candidates(cfg: dict, start: dt.date, end: dt.date) -> list[dict[s
     年度报告滞后于区间终点时，允许经复核的补充名单（reviews supplement）覆盖
     报告覆盖日之后的剩余日期；补充条目同样经过法定审计。
     """
-    from paths import sources_dir as layout_sources_dir
-    source_dir = Path(cfg["dataset"].get("report_source_dir") or layout_sources_dir(WS))
+    from boards import normalize_board, report_source_dir
+    board = normalize_board(cfg["dataset"].get("board"))
+    source_dir = Path(cfg["dataset"].get("report_source_dir") or report_source_dir(WS, board))
     candidates: list[dict[str, Any]] = []
-    reports, supplement = reports_and_supplement(start, end, source_dir)
+    reports, supplement = reports_and_supplement(start, end, source_dir, board=board)
     for report in reports:
         match = re.search(r"(?:NLR)?(19\d{2}|20\d{2})", report.stem, re.I)
         if not match:
             raise ValueError(f"Cannot identify annual report year: {report.name}")
-        for candidate in load_nlr_candidates(report, int(match.group(1))):
-            candidates.append(audit_candidate(candidate))
+        for candidate in load_nlr_candidates(report, int(match.group(1)), board=board):
+            candidates.append(audit_candidate(candidate, board=board))
     for candidate in supplement:
-        candidates.append(audit_candidate(candidate))
+        candidates.append(audit_candidate(candidate, board=board))
     return candidates
 
 
@@ -60,6 +61,8 @@ def build_exclusion_log(
     start = dt.date.fromisoformat(cfg["dataset"]["period_start"])
     end = dt.date.fromisoformat(cfg["dataset"]["period_end"])
     tag = str(cfg["dataset"].get("cohort", "cohort")).replace(" ", "")
+    if str(cfg["dataset"].get("board", "")).upper() == "GEM":
+        tag = "GEM_" + tag
     if candidates is None:
         candidates = _official_candidates(cfg, start, end)
 
@@ -94,7 +97,7 @@ def build_exclusion_log(
     lines.append(f"- **生成时间**：{dt.datetime.now().isoformat(timespec='seconds')} | "
                  f"**区间**：{start.isoformat()} ~ {end.isoformat()} | "
                  f"**官方候选**：{len(included) + len(excluded)} 家")
-    lines.append(f"- **复现命令**：`python3 run.py exclusions --config prospectus_pipeline/config_{tag.lower()}.yaml`")
+    lines.append(f"- **复现命令**：`python3 run.py exclusions --config {cfg.get('_config_path', 'CONFIG')}`")
     lines.append(f"- **纳入**：{len(included)} 家 | **剔除**：{len(excluded)} 家 | "
                  f"**工作簿**：{len(codes)} 家")
     lines.append("")

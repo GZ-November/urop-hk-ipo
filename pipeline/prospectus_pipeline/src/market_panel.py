@@ -27,9 +27,17 @@ import argparse
 import datetime as dt
 import json
 import logging
+import math
 import statistics
 from pathlib import Path
 from typing import Any, Optional
+
+
+def observed_turnover(bar: dict) -> float | None:
+    value = bar.get("turnover")
+    if isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0:
+        return float(value)
+    return None
 
 ROOT = Path(__file__).resolve().parent.parent
 sys_src = ROOT / "src"
@@ -227,8 +235,8 @@ class MarketPanelEngine:
             returns_history.append(ret)
 
             # Amihud Illiquidity = (|Return| / Turnover) * 1e6
-            turnover = bar.get("turnover") or 0.0
-            illiq = (abs(ret) / turnover * 1e6) if turnover > 0 else None
+            turnover = observed_turnover(bar)
+            illiq = (abs(ret) / turnover * 1e6) if turnover is not None and turnover > 0 else None
 
             # 最大回撤
             cum_max_price = max(cum_max_price, bar.get("high") or close)
@@ -261,7 +269,7 @@ class MarketPanelEngine:
 
         # 计算多跨期学术表现 (Horizons)
         day1_close = bars[0]["close"]
-        day1_turnover = bars[0].get("turnover") or 0.0
+        day1_turnover = observed_turnover(bars[0])
         hsi_base = hsi_map.get(bars[0]["date"])
         hstech_base = hstech_map.get(bars[0]["date"])
 
@@ -336,22 +344,22 @@ class MarketPanelEngine:
 
             # 区间均成交额与 Amihud
             window_bars = bars[:target_idx + 1]
-            to_vals = [b.get("turnover") or 0.0 for b in window_bars]
-            avg_to = sum(to_vals) / len(to_vals) if to_vals else 0.0
-            rec["avg_daily_turnover"] = round(avg_to, 2)
+            to_vals = [observed_turnover(b) for b in window_bars]
+            avg_to = sum(to_vals) / len(to_vals) if to_vals and all(value is not None for value in to_vals) else None
+            rec["avg_daily_turnover"] = round(avg_to, 2) if avg_to is not None else None
 
             # 区间平均 Amihud Illiquidity
             illiq_list = []
             for w_i, wb_item in enumerate(window_bars):
                 p_c = wb_item["close"]
                 p_prev = window_bars[w_i - 1]["close"] if w_i > 0 else offer_p or p_c
-                w_to = wb_item.get("turnover") or 0.0
-                if p_prev and w_to > 0:
+                w_to = observed_turnover(wb_item)
+                if p_prev and w_to is not None and w_to > 0:
                     illiq_list.append(abs(p_c - p_prev) / p_prev / w_to * 1e6)
             rec["amihud_mean"] = round(sum(illiq_list) / len(illiq_list), 6) if illiq_list else None
 
             # 流动性衰减率 (相对首日)
-            rec["liquidity_decay_ratio"] = round(avg_to / day1_turnover, 6) if day1_turnover > 0 else None
+            rec["liquidity_decay_ratio"] = round(avg_to / day1_turnover, 6) if avg_to is not None and day1_turnover is not None and day1_turnover > 0 else None
             rec["missing_reason"] = None
 
             horizon_records.append(rec)

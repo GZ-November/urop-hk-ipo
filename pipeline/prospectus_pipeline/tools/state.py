@@ -45,7 +45,7 @@ def record_review(cfg, target, code, rec, verdict, reviewer, note="", evidence_r
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("stage", choices=["extracted", "reviewed"])
-    ap.add_argument("--target", choices=["prospectus", "allot"], required=True)
+    ap.add_argument("--target", choices=["prospectus", "allot", "gem"], required=True)
     ap.add_argument("--code", nargs="*", default=None, help="一个或多个股票代码，如 6082.HK")
     ap.add_argument("--all", action="store_true", default=False, help="处理全部公司")
     ap.add_argument("--verdict", choices=["pass", "fail"])

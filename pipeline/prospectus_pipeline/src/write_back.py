@@ -62,14 +62,12 @@ def coerce(entry: dict, field: dict):
 
 def write_all(cfg: dict, fill_missing: bool = True, only: list[str] | None = None,
               limit: int = 0, target: str = "prospectus", log=print) -> int:
-    if target == "allot":
-        schema = strict_load_file(cfg["_root"] / "schema" / "allot_fields.json")
-        ext_dir: Path = cfg["paths"]["allot_out"] / "extracted"
-        gate_file: Path = cfg["paths"]["allot_out"] / "validation.json"
-    else:
-        schema = strict_load_file(cfg["_root"] / "schema" / "fields.json")
-        ext_dir = cfg["paths"]["out"] / "extracted"
-        gate_file = cfg["paths"]["out"] / "validation.json"
+    from extraction_targets import target_config, target_paths
+    schema_path, output_dir, _ = target_paths(cfg, target)
+    cfg = target_config(cfg, target)
+    schema = strict_load_file(schema_path)
+    ext_dir = output_dir / "extracted"
+    gate_file = output_dir / "validation.json"
     book = cfg["_ws"] / cfg["workbook"]
 
     wb = openpyxl.load_workbook(book)

@@ -9,6 +9,28 @@ This project builds evidence-linked datasets for ordinary Hong Kong Main Board I
 
 **Current study: 113 IPOs listed in 2026 Q1-Q3 | 202-variable workbook schema | Observation cutoff: 30 September 2026.**
 
+## Give this repository to an agent
+
+Read the **[complete English user and agent instructions](docs/AGENT_INSTRUCTIONS.md)**,
+including a copy-and-paste collection prompt. **[GEM has its own template, schema,
+source parser and review target](docs/GEM_PIPELINE.md)**; Main Board-only fields
+are removed rather than filled with artificial zeros.
+
+```bash
+git clone https://github.com/GZ-November/urop-hk-ipo.git
+cd urop-hk-ipo
+python3 tools/bootstrap.py --profile dev
+.venv/bin/python run.py collect --board gem --period-start 2026-01-01 --period-end 2026-03-31
+# Exit 3: follow the printed work orders, obtain independent review, then resume.
+.venv/bin/python run.py bundle --output deliverables/ipo-data.zip
+```
+
+Bootstrap installs locked collection, analysis and test dependencies, including
+managed project Python when needed. Generic agents use portable work orders;
+the legacy JavaScript extraction adapters require DSH. The ZIP contains Excel,
+CSV, dictionaries and evidence/quality reports. A normal ZIP can contain explicitly
+reported legacy or pending-review gaps; it does not certify the data.
+
 ## Understand the project in one diagram
 
 ```text

@@ -49,6 +49,7 @@ HEADERS = {
 LOCKUP_MONTHS = 6
 
 
+
 def norm(s) -> str:
     return " ".join(str(s or "").replace("\n", " ").split()).strip().lower()
 
@@ -246,6 +247,9 @@ def main() -> int:
     ap.add_argument("--only", nargs="*", default=None, help="Filter by stock code(s)")
     args = ap.parse_args()
     cfg = load_cfg(config_path=args.config)
+    from boards import normalize_board
+    headers = {key: value for key, value in HEADERS.items()
+               if normalize_board(cfg.get("dataset", {}).get("board")) != "gem" or key not in ("BK", "BL", "BM")}
 
     book = Path(args.book) if args.book else cfg["_workbook_path"]
     dry = args.dry_run
@@ -260,10 +264,10 @@ def main() -> int:
         v = ws_read.cell(1, c).value
         if v in (None, ""):
             continue
-        for key, h in HEADERS.items():
+        for key, h in headers.items():
             if norm(v) == norm(h):
                 col_of[key] = c
-    missing = [k for k in HEADERS if k not in col_of]
+    missing = [k for k in headers if k not in col_of]
     if missing:
         wb_read.close()
         raise SystemExit(f"工作簿找不到列：{missing}")
@@ -300,7 +304,8 @@ def main() -> int:
         if not jf.exists():
             raise SystemExit(f"{code}: 缺抽取 JSON：{jf}")
         asv = str(json.loads(jf.read_text(encoding="utf-8"))["fields"]["col_AS"]["value"])
-        board = "GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board"
+        from boards import board_label
+        board = board_label(cfg.get("dataset", {}).get("board")) if cfg.get("dataset", {}).get("board") else ("GEM" if re.search(r"\bGEM\b", asv, re.I) else "Main Board")
         if is_a_plus_h(asv):
             a_plus_h, ah_ev = 1, {"source": "col_AS"}
         else:
@@ -319,6 +324,8 @@ def main() -> int:
         ld = listing.get(code)
         if code in no_cornerstone:
             unlock, unlock_note = "NA", "确认无基石，无解禁日"
+        elif board == "GEM":
+            unlock, unlock_note = "NA", "GEM cornerstone unlock requires disclosed agreement terms"
         elif ld:
             unlock = add_months(ld, LOCKUP_MONTHS)
             unlock_note = f"上市日 {ld} + {LOCKUP_MONTHS} 个月"
@@ -326,6 +333,7 @@ def main() -> int:
             unlock, unlock_note = "NA", "缺上市日"
         vals = {"BH": board, "BJ": a_plus_h, "BK": wvr, "BL": c18a, "BM": c18c,
                 "BQ": inc, "CL": unlock}
+        vals = {key: value for key, value in vals.items() if key in headers}
         audit[code] = {"values": {k: str(v) for k, v in vals.items()},
                        "evidence": {"col_AS": asv, "a_plus_h": ah_ev,
                                     "incorporation": inc_ev, "unlock": unlock_note}}
@@ -338,11 +346,11 @@ def main() -> int:
         print(f"⚠️ 缺页级文本（BJ 兜底与 BQ 无从判断）：{', '.join(no_text)}")
 
     changes = [(code, k, current[code][k], rec["values"][k])
-               for code, rec in sorted(audit.items()) for k in HEADERS
+               for code, rec in sorted(audit.items()) for k in headers
                if current[code][k] != rec["values"][k]]
     print(f"与工作簿现值不同 {len(changes)} 处" + ("：" if changes else ""))
     for code, k, old, new in changes:
-        print(f"  {code:9s} {k} {HEADERS[k]}: {old!r} -> {new!r}")
+        print(f"  {code:9s} {k} {headers[k]}: {old!r} -> {new!r}")
 
     if dry:
         print("--dry-run：未写回工作簿，未写证据")

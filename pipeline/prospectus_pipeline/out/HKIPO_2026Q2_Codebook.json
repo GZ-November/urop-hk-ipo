@@ -1,6 +1,7 @@
 {
   "summary": {
     "dataset_name": "HK IPO Main Board 2026 Q2 Full Dataset",
+    "board": "Main Board",
     "cohort": "2026 Q2",
     "workbook_name": "HKIPO-MB2026Q2.xlsx",
     "sheet": "NLR",
@@ -11,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-02 12:40:24"
+    "generated_at": "2026-10-12 14:44:05"
   },
   "variables": [
     {
@@ -4803,7 +4804,7 @@
       "col_idx": 194,
       "col_letter": "GL",
       "header": "Underwriting discretionary incentive fee rate (%)",
-      "chinese_desc": "承销酌情奖励费率估算 (%)",
+      "chinese_desc": "招股书披露的酌情奖励费率上限（非实际支付，%）",
       "tier": "深蓝 (配发及外部数据)",
       "group": "syndicate",
       "data_type": "numeric",
@@ -4829,7 +4830,7 @@
       "col_idx": 195,
       "col_letter": "GM",
       "header": "Total underwriting fee rate (%)",
-      "chinese_desc": "承销总费率估算 (基础+奖励, %)",
+      "chinese_desc": "披露的承销总费率上限（基础+奖励上限，非实际支付，%）",
       "tier": "深蓝 (配发及外部数据)",
       "group": "syndicate",
       "data_type": "numeric",

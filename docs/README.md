@@ -16,3 +16,7 @@
 | 数据口径 | [领域术语](../CONTEXT.md)、[registry](../pipeline/registry/HKIPO_Variable_Registry.yaml)、[ADR](adr/0001-variable-definitions-authoring.md) | 当前字段定义与定义变更 |
 | 采集规范 | [采集文档索引](../pipeline/docs/README.md) | 原始手册与团队指引 |
 | 历史记录 | [归档索引](archive/README.md)、[早期代码复核](CODE_REVIEW_2026-09-30.md) | 阶段性发现；不作为当前数值来源 |
+
+## Agent collection and GEM
+
+[Complete English operating instructions](AGENT_INSTRUCTIONS.md) · [GEM template and field mapping](GEM_PIPELINE.md).

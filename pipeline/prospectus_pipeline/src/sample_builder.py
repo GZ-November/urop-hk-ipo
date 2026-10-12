@@ -70,7 +70,7 @@ def to_float(v: Any) -> Optional[float]:
         return None
 
 
-def load_nlr_candidates(filepath: Path, cohort_year: int) -> list[dict[str, Any]]:
+def load_nlr_candidates(filepath: Path, cohort_year: int, board: str = "main") -> list[dict[str, Any]]:
     """解析单个年度的官方 NLR 工作簿。"""
     if not filepath.exists():
         logger.warning(f"File not found: {filepath}")
@@ -88,7 +88,7 @@ def load_nlr_candidates(filepath: Path, cohort_year: int) -> list[dict[str, Any]
                 for col_index in range(ws.ncols):
                     cell = ws.cell(row_index, col_index)
                     value = cell.value
-                    if col_index in (3, 4) and cell.ctype == xlrd.XL_CELL_DATE:
+                    if cell.ctype == xlrd.XL_CELL_DATE:
                         value = xlrd.xldate_as_datetime(value, wb.datemode)
                     values.append(value)
                 rows.append(tuple(values))
@@ -100,6 +100,30 @@ def load_nlr_candidates(filepath: Path, cohort_year: int) -> list[dict[str, Any]
             rows = list(wb.active.iter_rows(values_only=True))
         finally:
             wb.close()
+
+    from boards import normalize_board
+    if normalize_board(board) == "gem":
+        # GEM uses multi-row headings and fixed, nonadjacent official columns.
+        if not any(str(row[1] or "").strip().lower() == "stock" for row in rows[:12] if len(row) > 1):
+            raise ValueError(f"Cannot identify official GEM stock-code heading: {filepath}")
+        candidates = []
+        for row in rows[11:]:
+            if len(row) < 22 or parse_date(row[0]) is None or not str(row[1] or "").strip().isdigit():
+                continue
+            candidates.append({
+                "file_no": len(candidates) + 1, "raw_code": str(row[1]),
+                "stock_code": clean_code(row[1]), "company_name": str(row[2] or "").strip(),
+                "prospectus_date": None, "listing_date": parse_date(row[0]), "cohort_year": cohort_year,
+                "sponsors": str(row[19] or "").strip(), "auditor": str(row[21] or "").strip(),
+                "valuer": None, "funds_raised_public_hkd": None, "funds_raised_int_hkd": None,
+                "offer_price_hkd": to_float(row[5]), "raw_price_str": str(row[5] or ""),
+                "raw_funds_str": str(row[9] or ""), "gem_funds_raised_hkd": to_float(row[9]),
+                "gem_subscription_ratio": to_float(row[7]), "gem_shares_at_listing": to_float(row[10]),
+                "gem_market_cap_hkd": to_float(row[12]), "gem_industry": str(row[14] or ""),
+                "gem_incorporation": str(row[16] or ""), "gem_listing_method": str(row[17] or ""),
+                "source_report": str(filepath),
+            })
+        return candidates
 
     # 定位包含 "stock code" 的表头行
     hdr_idx = None
@@ -161,7 +185,7 @@ def load_nlr_candidates(filepath: Path, cohort_year: int) -> list[dict[str, Any]
     return candidates
 
 
-def audit_candidate(cand: dict[str, Any]) -> dict[str, Any]:
+def audit_candidate(cand: dict[str, Any], board: str = "main") -> dict[str, Any]:
     """对单个候选上市实体进行排他性法定口径与学术实证筛选。"""
     name = cand["company_name"]
     name_l = name.lower()
@@ -171,7 +195,7 @@ def audit_candidate(cand: dict[str, Any]) -> dict[str, Any]:
 
     f_pub = cand["funds_raised_public_hkd"] or 0.0
     f_int = cand["funds_raised_int_hkd"] or 0.0
-    tot_funds = f_pub + f_int
+    tot_funds = cand.get("gem_funds_raised_hkd") or (f_pub + f_int)
     cand["funds_raised_total_hkd"] = tot_funds if tot_funds > 0 else None
 
     # 1. 甄别 GEM 转主板 (Chapter 9A)
@@ -205,6 +229,12 @@ def audit_candidate(cand: dict[str, Any]) -> dict[str, Any]:
     cand["inclusion_status"] = "INCLUDED"
     cand["exclusion_reason"] = None
     cand["data_completion_status"] = "COMPLETE"
+
+    from boards import normalize_board
+    if normalize_board(board) == "gem":
+        cand.update({"listing_route": "GEM", "security_type": "Ordinary Shares",
+                     "is_18a": 0, "is_18c": 0, "is_wvr": 0})
+        return cand
 
     # 细化分类特征 (Listing Chapters & Security Types)
     is_18a = False

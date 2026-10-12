@@ -320,12 +320,10 @@ def audit_dataset(
     target: str,
     only: list[str] | None = None,
 ) -> tuple[list[dict], dict[str, Any]]:
-    if target == "allot":
-        schema = strict_load_file(cfg["_root"] / "schema" / "allot_fields.json")
-        ext_dir = cfg["paths"]["allot_out"] / "extracted"
-    else:
-        schema = strict_load_file(cfg["_root"] / "schema" / "fields.json")
-        ext_dir = cfg["paths"]["out"] / "extracted"
+    from extraction_targets import target_paths
+    schema_path, output_dir, _ = target_paths(cfg, target)
+    schema = strict_load_file(schema_path)
+    ext_dir = output_dir / "extracted"
 
     mapping, issues = resolve_columns(ws, schema)
     if issues:
@@ -597,6 +595,8 @@ def run_audit(
     out_md: Path | None = None,
     log=print,
 ) -> dict:
+    from extraction_targets import target_config
+    cfg = target_config(cfg, target)
     book = Path(cfg["workbook_path"]) if cfg.get("workbook_path") else (cfg["_ws"] / cfg["workbook"])
     wb = openpyxl.load_workbook(book, data_only=True)
     ws = wb[cfg["sheet"]]

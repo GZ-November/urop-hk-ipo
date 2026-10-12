@@ -83,7 +83,7 @@ def classify_column(
     valid_vals = [v for v in col_vals if v not in (None, "", "NA", "NaN")]
     valid_n = len(valid_vals)
     missing_n = n_companies - valid_n
-    fill_rate = (valid_n / n_companies) * 100.0
+    fill_rate = (valid_n / n_companies) * 100.0 if n_companies else 0.0
 
     # 推断数据类型与统计量
     # 1. 检查是否为日期
@@ -208,6 +208,8 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
             }
     except Exception:
         declared_by_header = {}
+    if str(cfg.get("dataset", {}).get("board", "")).upper() == "GEM":
+        declared_by_header["GEM ordinary IPO count in 90 calendar days before prospectus"] = "numeric"
     declared_dtype_full = {
         "numeric": "numeric",
         "boolean": "boolean (0/1)",
@@ -225,9 +227,6 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
         if c_val is not None and str(c_val).strip():
             valid_rows.append(r)
     n_companies = len(valid_rows)
-    if n_companies == 0:
-        n_companies = max(1, ws.max_row - start_row + 1)
-        valid_rows = list(range(start_row, start_row + n_companies))
 
     variables = []
     matrix = []
@@ -360,7 +359,8 @@ def build_codebook(cfg: dict | None = None) -> tuple[list[dict], dict]:
 
     cohort_str = cfg.get("dataset", {}).get("cohort", "IPO cohort") if cfg else "IPO cohort"
     summary = {
-        "dataset_name": f"HK IPO Main Board {cohort_str} Full Dataset",
+        "dataset_name": f"HK IPO {cfg.get('dataset', {}).get('board', 'Main Board')} {cohort_str} Full Dataset",
+        "board": cfg.get("dataset", {}).get("board", "Main Board"),
         "cohort": cohort_str,
         "workbook_name": book_path.name,
         "sheet": cfg.get("sheet", "NLR") if cfg else "NLR",
@@ -423,7 +423,7 @@ def generate_codebook_markdown(variables: list[dict], summary: dict, out_path: P
 
     lines = [
         f"# 香港主板 {cohort} IPO 学术研究数据变量代码本 (Data Codebook)",
-        f"\n- **样本规模 (N)**：{summary['sample_size']} 家香港联交所主板新上市公司",
+        f"\n- **样本规模 (N)**：{summary['sample_size']} 家香港联交所 {summary.get('board', 'Main Board')} 新上市公司",
         f"- **变量总数 (K)**：{summary['variable_count']} 维完整跨学科指标",
         f"- **数据层级划分**：浅绿官方基础 ({summary['tiers']['green_hkex']} 列) + 浅蓝招股书披露 ({summary['tiers']['blue_prospectus']} 列) + 深蓝配发及外部衍生 ({summary['tiers']['darkblue_external']} 列)",
         f"- **生成时间**：{summary['generated_at']} | **数据基准**：`{wb_name}` (Sheet: {sheet_name})",
@@ -502,9 +502,9 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
     tag = cohort.replace(" ", "")
     dataset_id = cfg.get("dataset", {}).get("id", Path(cfg["workbook"]).stem) if cfg else "HKIPO"
 
-    csv_name = f"{cohort_artifact_stem(cohort, dataset_id)}_clean.csv"
-    md_name = f"HKIPO_{tag}_Codebook.md"
-    json_name = f"HKIPO_{tag}_Codebook.json"
+    csv_name = f"{cohort_artifact_stem(cohort, dataset_id, board=cfg.get('dataset', {}).get('board', 'main'))}_clean.csv"
+    md_name = f"HKIPO_{'GEM_' if str(cfg.get('dataset', {}).get('board', '')).upper() == 'GEM' else ''}{tag}_Codebook.md"
+    json_name = md_name.removesuffix(".md") + ".json"
 
     if out_dir is not None:
         od = Path(out_dir)
@@ -524,6 +524,9 @@ def export_all(cfg: dict | None = None, out_dir: Path | str | None = None) -> di
         from paths import codebooks_dir as layout_codebooks_dir, exports_dir as layout_exports_dir
         codebooks_dir = layout_codebooks_dir(WS)
         exports_dir = layout_exports_dir(WS)
+        if str(cfg.get("dataset", {}).get("board", "")).upper() == "GEM":
+            codebooks_dir = codebooks_dir / "GEM"
+            exports_dir = exports_dir / "GEM"
         codebooks_dir.mkdir(parents=True, exist_ok=True)
         exports_dir.mkdir(parents=True, exist_ok=True)
         (codebooks_dir / md_name).write_text(md_path.read_text(encoding="utf-8"), encoding="utf-8")

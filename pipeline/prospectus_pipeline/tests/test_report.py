@@ -31,6 +31,30 @@ class ReportTests(unittest.TestCase):
             self.assertIn("香港主板 TEST FIXTURE IPO 全景学术与市场分析报告", content)
             self.assertIn("2 家", content)
 
+    def test_missing_returns_and_actual_offer_price(self):
+        import math
+        import openpyxl
+        with tempfile.TemporaryDirectory() as temporary:
+            book = Path(temporary) / "report.xlsx"
+            workbook = openpyxl.load_workbook(FIXTURE_WORKBOOK)
+            sheet = workbook["NLR"]
+            headers = {str(sheet.cell(1, c).value or "").strip(): c for c in range(1, sheet.max_column + 1)}
+            offer = next(c for h, c in headers.items() if "IPO Subscription Price" in h)
+            close = headers["First trading day closing price (HK$)"]
+            for row in range(2, sheet.max_row + 1):
+                if sheet.cell(row, 2).value:
+                    sheet.cell(row, offer).value = 10
+                    sheet.cell(row, close).value = 20
+            workbook.save(book)
+            stats = generate_report(self.config_for(book), out_path=Path(temporary) / "report.md")
+            self.assertAlmostEqual(stats["avg_first_day_return"], 1.0)
+            for row in range(2, sheet.max_row + 1):
+                sheet.cell(row, close).value = None
+            workbook.save(book)
+            workbook.close()
+            stats = generate_report(self.config_for(book), out_path=Path(temporary) / "missing.md")
+            self.assertTrue(math.isnan(stats["avg_first_day_return"]))
+
     @unittest.skipUnless(WORKBOOK_PATH.exists(), "Requires local production dataset HKIPO-MB2026Q1.xlsx")
     def test_generate_report_metrics_production(self):
         with tempfile.TemporaryDirectory() as tmp_dir:

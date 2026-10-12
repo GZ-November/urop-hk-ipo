@@ -89,3 +89,11 @@ Survey Paper/
 # Local pre-repair workbook/export snapshots; canonical predecessors are in Git.
 pipeline/reports/data_gap_collection/6872_repair/*_before.xlsx
 pipeline/reports/data_gap_collection/6872_repair/*_before.csv
+
+# Local bootstrap installer and user delivery archives
+.bootstrap/
+deliverables/
+
+# Regenerable GEM runtime caches and document table slices
+pipeline/prospectus_pipeline/gem/
+pipeline/prospectus_pipeline/data/tables/

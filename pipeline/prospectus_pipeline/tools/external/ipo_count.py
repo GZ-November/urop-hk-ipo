@@ -20,7 +20,7 @@ WS = ROOT.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "src"))
-from paths import sources_dir
+from boards import normalize_board, report_source_dir
 from run import load_cfg
 from listing_reports import reports_for_interval
 from sample_builder import audit_candidate, load_nlr_candidates
@@ -31,7 +31,9 @@ BOOK = _configured_book if _configured_book.is_absolute() else WS / _configured_
 
 
 SHEET = _cfg.get("sheet", "NLR")
-HEADER = "HK ordinary IPO count in 90 calendar days before prospectus"
+HEADER = ("GEM ordinary IPO count in 90 calendar days before prospectus"
+          if normalize_board(_cfg["dataset"].get("board")) == "gem"
+          else "HK ordinary IPO count in 90 calendar days before prospectus")
 
 
 def to_date(v) -> dt.date | None:
@@ -46,10 +48,10 @@ def load_listings(path: Path) -> list[dict]:
     match = re.search(r"(?:NLR)?(19\d{2}|20\d{2})", path.stem, re.I)
     if not match:
         raise ValueError(f"Cannot identify annual report year: {path.name}")
-    candidates = load_nlr_candidates(path, int(match.group(1)))
+    candidates = load_nlr_candidates(path, int(match.group(1)), board=normalize_board(_cfg["dataset"].get("board")))
     kept = []
     for candidate in candidates:
-        candidate = audit_candidate(candidate)
+        candidate = audit_candidate(candidate, board=normalize_board(_cfg["dataset"].get("board")))
         if candidate["inclusion_status"] == "INCLUDED" and candidate.get("listing_date"):
             kept.append({
                 "code": candidate["stock_code"],
@@ -100,11 +102,12 @@ def main() -> int:
     if not companies:
         raise SystemExit("No issuers with prospectus dates to calculate")
     if args.nlr is None:
-        source_dir = Path(_cfg["dataset"].get("report_source_dir") or sources_dir(WS))
+        source_dir = Path(_cfg["dataset"].get("report_source_dir") or report_source_dir(WS, _cfg["dataset"].get("board")))
         paths = reports_for_interval(
             min(item[2] for item in companies) - dt.timedelta(days=90),
             max(item[2] for item in companies) - dt.timedelta(days=1),
             source_dir,
+            board=normalize_board(_cfg["dataset"].get("board")),
         )
     else:
         paths = [Path(path) for path in args.nlr]
@@ -118,10 +121,7 @@ def main() -> int:
                 continue
             seen.add(rec["code"])
             listings.append(rec)
-    if not listings:
-        raise SystemExit("No ordinary IPO listings in the supplied annual reports")
-    print(f"合计普通 IPO {len(listings)} 家，上市日 "
-          f"{min(x['listing'] for x in listings)} ~ {max(x['listing'] for x in listings)}")
+    print(f"Official reports contain {len(listings)} ordinary IPOs; an empty complete report permits zero counts.")
 
     print(f"\n{'code':9s} {'招股书':12s} {'窗口':26s} {'家数':>4s}")
     values = []

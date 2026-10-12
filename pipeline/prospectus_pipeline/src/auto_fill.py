@@ -124,6 +124,8 @@ def inventory(cfg: dict | None = None) -> list[dict]:
     prospectus_packets = {r["code"]: r for r in load_json(cfg["paths"]["out"] / "packets.json", [])}
     allot_packets = {r["code"]: r for r in load_json(cfg["paths"]["allot_out"] / "packets.json", [])}
     rows = []
+    from extraction_targets import target_paths
+    prospectus_field_count = len(load_json(target_paths(cfg, "prospectus")[0], {})["fields"])
     sys.path.insert(0, str(PIPE / "src"))
     from state import CONTRACT_VERSION, cells_digest, file_hash, read_record
 
@@ -171,9 +173,9 @@ def inventory(cfg: dict | None = None) -> list[dict]:
         a_rev = read_record(cfg, "allot", code, "reviewed")
         a_wri = read_record(cfg, "allot", code, "written")
 
-        p_val_ok = current_record(p_val, p_hash, 70)
-        p_rev_ok = current_record(p_rev, p_hash, 70)
-        p_align_ok = written_alignment(p_wri, p_hash, 70)
+        p_val_ok = current_record(p_val, p_hash, prospectus_field_count)
+        p_rev_ok = current_record(p_rev, p_hash, prospectus_field_count)
+        p_align_ok = written_alignment(p_wri, p_hash, prospectus_field_count)
 
         a_val_ok = current_record(a_val, a_hash, 18)
         a_rev_ok = current_record(a_rev, a_hash, 18)
@@ -211,6 +213,14 @@ def inventory(cfg: dict | None = None) -> list[dict]:
         rec["need_allot_extract"] = rec["allot_packet"] and not rec["allot_extracted"]
         rec["need_allot_write"] = rec["allot_extracted"] and (not rec["excel_cells_allot"] or not rec["allot_aligned"])
         rec["done"] = rec["excel_cells_prospectus"] and rec["prospectus_aligned"]
+        if str(cfg.get("dataset", {}).get("board", "")).upper() == "GEM":
+            gem_path = cfg["paths"]["out"] / "gem/extracted" / f"{s}.json"
+            gem_hash = file_hash(gem_path) if gem_path.exists() else None
+            gem_written = read_record(cfg, "gem", code, "written")
+            addresses = gem_written.get("cell_addresses")
+            aligned = (current_record(gem_written, gem_hash, 15) and addresses
+                       and cells_digest(digest_wb["GEM_details"], addresses) == gem_written.get("cell_digest"))
+            rec["gem_extension_pending"] = not bool(aligned)
         rows.append(rec)
     digest_wb.close()
     return rows
@@ -261,7 +271,8 @@ def print_status(rows: list[dict]) -> None:
         print("配发待写回:", " ".join(r["code"] for r in need_allot_write))
 
     if (len(cells_p) == total and len(val_p) == total and len(rev_p) == total and len(align_p) == total
-            and len(cells_a) == total and len(align_a) == total):
+            and len(cells_a) == total and len(align_a) == total
+            and not any(r.get("gem_extension_pending") for r in rows)):
         print(f"★ 全流程完备：全量 {total} 家公司 70 字段招股书 + 配发结果均已验证、复核且与 Excel 严格对齐！")
 
 

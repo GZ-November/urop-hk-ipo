@@ -24,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent          # prospectus_pipeline/
 WS = ROOT.parent                                # 工作簿所在目录
 sys.path.insert(0, str(ROOT / "src"))
-from paths import sources_dir
+from boards import normalize_board, report_source_dir
 from cohort import build_cohort_workbook, load_cfg, read_companies, write_cohort_config
 
 
@@ -33,6 +33,26 @@ def cmd_find(cfg, args, companies):
     from storage import merge_index
     found = find_all(cfg["hkex"], companies)
     payload = [f.__dict__ for f in found]
+    if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
+        # GEM NLR has no prospectus-date column: preserve the HKEX publication provenance.
+        import re
+        from datetime import date
+        from workbook_transaction import workbook_transaction
+        from gem_template import update_gem_view
+        by_code = {company["code"]: company for company in companies}
+        with workbook_transaction(cfg["_workbook_path"], operation="gem-prospectus-date") as workbook:
+            for record in payload:
+                match = re.search(r"(\d{4})[/-](\d{2})[/-](\d{2})", str(record.get("doc_datetime") or ""))
+                if record.get("status") != "ok" or match is None:
+                    continue
+                published = date(*(int(part) for part in match.groups()))
+                company = by_code[record["code"]]
+                if company.get("prospectus_date") is None:
+                    workbook[cfg["sheet"]].cell(company["row"], 4).value = published
+                    company["prospectus_date"] = published
+                    record["prospectus_date"] = published.isoformat()
+                    workbook["GEM_details"].cell(company["row"], 25).value = f"HKEX publication {record['doc_datetime']}; {record['pdf_url']}"
+            update_gem_view(workbook)
     out = cfg["paths"]["out"] / "found.json"
     merge_index(out, payload)
     ok = sum(1 for f in found if f.status == "ok")
@@ -67,7 +87,7 @@ def cmd_prepare(cfg, args, companies):
         found = [f for f in found if f["code"] in args.only]
     if args.limit:
         found = found[: args.limit]
-    with_topics = not getattr(args, "no_topics", False)
+    with_topics = not getattr(args, "no_topics", False) and normalize_board(cfg["dataset"].get("board")) != "gem"
     return prepare_all(cfg, found, with_topics=with_topics)
 
 
@@ -150,18 +170,30 @@ def cmd_write(cfg, args, companies):
     from write_back import write_all
     write_all(cfg, fill_missing=args.fill_missing, only=[c["code"] for c in companies],
               limit=0, target=args.target)
+    from gem_template import sync_gem_view
+    sync_gem_view(cfg)
     return 0
 
 
 def cmd_audit(cfg, args, companies):
     from audit import run_audit
     only = [c["code"] for c in companies]
-    target = args.target if args.target in ("prospectus", "allot") else "all"
-    run_audit(cfg, only=only, target=target)
-    return 0
+    target = args.target if args.target in ("prospectus", "allot", "gem") else "all"
+    report = run_audit(cfg, only=only, target=target)
+    if target == "all" and normalize_board(cfg["dataset"].get("board")) == "gem":
+        gem_report = run_audit(cfg, only=only, target="gem",
+                               out_json=cfg["paths"]["out"] / "audit_gem.json",
+                               out_md=cfg["paths"]["out"] / "audit_gem.md")
+        report["stats"].update(gem_report["stats"])
+    stats = report["stats"].values()
+    return int(any(st.get(key, 0) for st in stats for key in
+                   ("excel_missing", "json_missing", "value_mismatch", "json_files_absent")))
 
 
 def cmd_cross_check(cfg, args, companies):
+    if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
+        from gem_checks import run_gem_cross_check
+        return run_gem_cross_check(cfg, companies)
     from cross_check import run_cross_check
     only = [c["code"] for c in companies]
     res = run_cross_check(cfg, only=only)
@@ -175,6 +207,10 @@ def cmd_cross_check(cfg, args, companies):
 
 
 def cmd_report(cfg, args, companies):
+    if normalize_board(cfg["dataset"].get("board")) == "gem":
+        from gem_checks import generate_gem_report
+        print("GEM report:", generate_gem_report(cfg))
+        return 0
     from report import generate_report, print_summary
     stats = generate_report(cfg)
     print_summary(stats)
@@ -182,6 +218,8 @@ def cmd_report(cfg, args, companies):
 
 
 def cmd_export(cfg, args, companies):
+    from gem_template import sync_gem_view
+    sync_gem_view(cfg)
     from codebook import export_all
     export_all(cfg)
     return 0
@@ -335,6 +373,9 @@ def cmd_allot_index(cfg, args, companies):
 
 def cmd_expansion(cfg, args, companies):
     """Write back academic expansion fields."""
+    if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
+        print("GEM expansion needs a board-specific event adapter; common market/academic fields and GEM disclosure extensions are supported. Main Board lockup/regime inference is not applied.", file=sys.stderr)
+        return 2
     import subprocess
     cmd = [sys.executable, str(ROOT / "src" / "write_back_expansion.py"), "--workbook", str(cfg["_workbook_path"])]
     if getattr(args, "dry_run", False):
@@ -380,12 +421,13 @@ def _ipo_count_reports(cfg, args, companies):
     source_dir = Path(
         getattr(args, "source_dir", None)
         or cfg["dataset"].get("report_source_dir")
-        or sources_dir(WS)
+        or report_source_dir(WS, cfg["dataset"].get("board"))
     ).expanduser().resolve()
     return reports_for_interval(
         min(prospectus_dates) - timedelta(days=90),
         max(prospectus_dates) - timedelta(days=1),
         source_dir,
+        board=normalize_board(cfg["dataset"].get("board")),
     )
 
 
@@ -413,6 +455,9 @@ def cmd_external(cfg, args, companies):
     ]
     book_target = str(cfg["_workbook_path"])
     for name, script, wants_book, wants_only in external_scripts:
+        if name == "rules" and normalize_board(cfg["dataset"].get("board")) == "gem":
+            print("GEM offering rules require issuer-specific evidence; skipping Main Board rule inference.")
+            continue
         if not script.exists():
             print(f"错误: 外部脚本不存在: {script}")
             return 1
@@ -440,10 +485,15 @@ def cmd_external(cfg, args, companies):
     return 0
 
 
+def cmd_handoff(cfg, args, companies):
+    from agent_handoff import build_handoff
+    print("Agent work orders:", build_handoff(cfg, companies))
+    return 0
+
+
 def cmd_collect(cfg, args, companies):
     """Prepare a date-selected cohort, then resume through the review gates."""
     from contracts import normalize_code
-    from state import read_record
 
     wanted = {normalize_code(c["code"]) for c in companies}
 
@@ -488,7 +538,9 @@ def cmd_collect(cfg, args, companies):
 
     missing_prospectus = missing_extractions(out / "extracted")
     missing_allot = missing_extractions(allot_out / "extracted")
-    if missing_prospectus or missing_allot:
+    is_gem = normalize_board(cfg.get("dataset", {}).get("board")) == "gem"
+    missing_gem = missing_extractions(out / "gem" / "extracted") if is_gem else []
+    if missing_prospectus or missing_allot or missing_gem:
         print("Cohort workbook and document packets are ready. Extraction is still required.")
         print("  Cohort config:", cfg["_config_path"])
         if missing_prospectus:
@@ -497,17 +549,30 @@ def cmd_collect(cfg, args, companies):
         if missing_allot:
             print("  Allotment:", ", ".join(missing_allot))
             print("  Workflow:", ROOT / "workflows" / "allot_extract.js")
+        if missing_gem:
+            print("  GEM-specific disclosure fields:", ", ".join(missing_gem))
+        cmd_handoff(cfg, args, companies)
         print("After extraction and independent review, rerun the same collect command.")
         return 3
 
-    for target in ("prospectus", "allot"):
+    targets = ("prospectus", "allot", "gem") if is_gem else ("prospectus", "allot")
+    validated = {}
+    for target in targets:
         result = cmd_validate(cfg, argparse.Namespace(target=target), companies)
+        validated[target] = result
         if result.get("errors") or result.get("missing_files") or not result.get("gate_pass"):
             return 1
-    unreviewed = [
-        f"{code} {target}" for code in sorted(wanted) for target in ("prospectus", "allot")
-        if not read_record(cfg, target, code, "reviewed").get("gate_pass")
-    ]
+    from state import require
+    unreviewed = []
+    for target in targets:
+        records = {record["code"]: record for record in validated[target].get("records", [])}
+        for code in sorted(wanted):
+            version = records.get(code, {}).get("hash")
+            try:
+                for gate in ("extracted", "validated", "reviewed"):
+                    require(cfg, target, code, version, gate)
+            except ValueError:
+                unreviewed.append(f"{code} {target}")
     if unreviewed:
         print("Independent review is required before write-back:", ", ".join(unreviewed))
         print("  Cohort config:", cfg["_config_path"])
@@ -519,7 +584,7 @@ def cmd_collect(cfg, args, companies):
         print(f"错误: 90 天 IPO 统计缺少官方年度报告: {exc}", file=sys.stderr)
         return 1
 
-    for target in ("prospectus", "allot"):
+    for target in targets:
         if cmd_write(cfg, argparse.Namespace(target=target, fill_missing=True), companies):
             return 1
     if cmd_external(cfg, args, companies):
@@ -528,7 +593,8 @@ def cmd_collect(cfg, args, companies):
         return 1
     if cmd_disclosure_notes(cfg, args, companies):
         return 1
-    cmd_audit(cfg, argparse.Namespace(target="all"), companies)
+    if cmd_audit(cfg, argparse.Namespace(target="all"), companies):
+        return 1
     return cmd_cross_check(cfg, args, companies)
 
 
@@ -582,7 +648,7 @@ STAGES: dict[str, Stage] = {
     "export":           Stage("导出 clean CSV + Codebook（发布至 exports/ 与 codebooks/）"),
     "codebook":         Stage("export 的别名", fn="cmd_export"),
     "status":           Stage("查看流水线状态与哈希对齐"),
-    "external":         Stage("外部数据采集编排（行情/HIBOR/HSIC/flags/rules）", result_check="tool_results"),
+    "external":         Stage("外部数据采集编排（行情/HIBOR/HSIC/flags/rules）"),
     "aftermarket":      Stage("二级市场跨期表现与流动性 (Col 139-161)"),
     "academic":         Stage("8 个第一阶段学术衍生变量"),
     "expansion":        Stage("写回 Col 162-202 学术扩展列"),
@@ -594,6 +660,7 @@ STAGES: dict[str, Stage] = {
     "evidence":         Stage("SHA-256 证据清单", wants_companies=False),
     "exclusions":       Stage("单 cohort 样本筛选日志", wants_companies=False),
     "merge_topics":     Stage("合并主题分片包"),
+    "handoff":          Stage("Generate portable extraction and independent-review work orders"),
     "collect":          Stage("按上市日期建立并推进 cohort"),
     "all":              Stage("find + download + prepare 三连"),
 }
@@ -617,7 +684,7 @@ def main() -> int:
     ap.add_argument("--no-topics", action="store_true", help="跳过生成 4 个主题分片包")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", nargs="*", default=None, help="只处理这些股票代码，如 6082.HK")
-    ap.add_argument("--target", choices=["prospectus", "allot", "all"], default="prospectus",
+    ap.add_argument("--target", choices=["prospectus", "allot", "gem", "all"], default="prospectus",
                     help="validate/write/audit 作用于哪套字段（默认 prospectus，audit 支持 all）")
     ap.add_argument("--fill-missing", action="store_true",
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
@@ -629,6 +696,7 @@ def main() -> int:
                     help="registry 阶段：只读三方一致性校验（失败退出码 1）")
     ap.add_argument("--workbook", default=None,
                     help="指定目标工作簿路径（可为相对路径或绝对路径）")
+    ap.add_argument("--board", choices=["main", "gem"], default=None, help="Listing board for date-only collection")
     ap.add_argument("--config", default=None,
                     help="指定 cohort 配置文件；也可用 PIPELINE_CONFIG 环境变量")
     ap.add_argument("--period-start", default=None, help="纳入样本的起始日期，格式 YYYY-MM-DD")
@@ -654,13 +722,20 @@ def main() -> int:
             from datetime import date
             start = date.fromisoformat(args.period_start)
             end = date.fromisoformat(args.period_end)
+            import yaml
+            base_path = Path(args.config) if args.config else ROOT / ("gem_base.yaml" if args.board == "gem" else "config.yaml")
+            board = normalize_board(args.board or yaml.safe_load(base_path.read_text(encoding="utf-8")).get("dataset", {}).get("board"))
+            if args.board and board != normalize_board(yaml.safe_load(base_path.read_text(encoding="utf-8")).get("dataset", {}).get("board")):
+                raise ValueError("--board conflicts with the supplied base config")
             workbook = build_cohort_workbook(
                 start, end,
                 source_dir=Path(args.source_dir) if args.source_dir else None,
+                board=board,
             )
             args.config = str(write_cohort_config(
                 start, end, workbook,
-                base_config=Path(args.config) if args.config else None,
+                base_config=base_path,
+                board=board,
                 source_dir=Path(args.source_dir) if args.source_dir else None,
             ))
             args.period_start = None
@@ -674,6 +749,8 @@ def main() -> int:
         cfg = load_cfg(args.workbook, args.period_start, args.period_end, config_path=args.config)
     except (ValueError, KeyError) as exc:
         ap.error(str(exc))
+    if args.board and normalize_board(args.board) != normalize_board(cfg["dataset"].get("board")):
+        ap.error("--board conflicts with the selected cohort config")
     os.environ["PIPELINE_CONFIG"] = str(cfg["_config_path"])
     if runtime_override and not generated_cohort:
         os.environ["HKIPO_WORKBOOK"] = str(cfg["_workbook_path"])
@@ -692,7 +769,11 @@ def main() -> int:
     if args.limit:
         companies = companies[: args.limit]
     cfg["_selected_codes"] = [c["code"] for c in companies]
-    if not companies:
+    if not companies and normalize_board(cfg["dataset"].get("board")) == "gem" and args.stage == "collect":
+        print("Official report coverage checked: no ordinary GEM IPOs in this interval. Empty cohort config:", cfg["_config_path"])
+        return 0
+    allow_empty_gem = normalize_board(cfg["dataset"].get("board")) == "gem" and args.stage in {"export", "codebook", "report", "status", "audit", "cross_check", "handoff"}
+    if not companies and not allow_empty_gem:
         print("错误: 工作簿中没有符合日期范围的发行人记录。请检查日期范围和工作簿内容。", file=sys.stderr)
         return 1
 
@@ -703,7 +784,8 @@ def main() -> int:
         result = stage_fn(s)(cfg, args, companies)
         check = STAGES[s].result_check
         if check == "validate_dict":
-            if isinstance(result, dict) and result.get("errors"):
+            if isinstance(result, dict) and (result.get("errors") or result.get("missing_files")
+                                             or result.get("gate_pass") is False):
                 rc = 1
         elif check == "tool_results":
             if isinstance(result, list) and (

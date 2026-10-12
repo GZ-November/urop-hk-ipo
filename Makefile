@@ -7,7 +7,7 @@ COHORT_CONFIGS := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_
 CONFIGS_2026 := $(patsubst pipeline/%,%,$(sort $(wildcard pipeline/prospectus_pipeline/config_2026q*.yaml)))
 PYTHON_SOURCES := run.py tools analysis pipeline/run.py pipeline/prospectus_pipeline/run.py pipeline/prospectus_pipeline/src pipeline/prospectus_pipeline/tools pipeline/prospectus_pipeline/tests
 
-.PHONY: workspace workspace-check analysis-list margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis basic-analysis analysis check check-code lint clean weekly-report
+.PHONY: bootstrap doctor bundle workspace workspace-check analysis-list margin-reference refresh-2026 help env status audit cross_check report export registry registry-check master evidence exclusions aftermarket-refresh test test-pipeline test-analysis basic-analysis analysis check check-code lint clean weekly-report
 
 help:
 	@echo "Hong Kong Main Board IPO Pipeline Toolkit Commands:"
@@ -132,3 +132,12 @@ check: status audit cross_check check-code
 	@echo "=================================================================="
 	@echo "✅ Configured pipeline and code checks passed; inspect audit coverage separately."
 	@echo "=================================================================="
+
+bootstrap:
+	@python3 tools/bootstrap.py --profile dev
+
+doctor:
+	@"$(PYTHON)" run.py doctor
+
+bundle:
+	@"$(PYTHON)" run.py bundle

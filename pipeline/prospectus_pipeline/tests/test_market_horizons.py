@@ -27,6 +27,15 @@ def process(listing_date, today, bars):
 
 
 class CalendarMarketHorizonTests(unittest.TestCase):
+    def test_turnover_coverage_distinguishes_zero_unknown_and_partial(self):
+        for values, expected in (((None, None), None), ((0.0, 0.0), 0.0), ((100.0, None), None)):
+            with self.subTest(values=values):
+                records = [bar("2026-01-01", turnover=values[0]), bar("2026-02-02", turnover=values[1])]
+                daily, horizons = process("2026-01-01", "2026-02-02", records)
+                self.assertEqual(daily[0]["turnover"], values[0])
+                self.assertEqual(horizons["Month_1"]["avg_daily_turnover"], expected)
+                self.assertIsNone(horizons["Month_1"]["liquidity_decay_ratio"])
+
     def test_one_month_clamps_january_31_and_uses_first_observed_day_after_target(self):
         bars = [bar("2026-01-31", 10), bar("2026-02-27", 11),
                 bar("2026-03-02", 12), bar("2026-03-03", 15)]

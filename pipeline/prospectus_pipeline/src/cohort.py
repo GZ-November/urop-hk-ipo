@@ -11,7 +11,7 @@ from typing import Any
 
 import yaml
 
-from paths import sources_dir
+from boards import board_label, board_prefix, normalize_board, report_source_dir
 from listing_reports import reports_and_supplement
 from sample_builder import audit_candidate, load_nlr_candidates
 
@@ -31,11 +31,11 @@ def _cohort_for_period(start: dt.date, end: dt.date) -> str:
     return f"{start.isoformat()} to {end.isoformat()}"
 
 
-def cohort_artifact_stem(cohort: str, fallback: str = "HKIPO") -> str:
+def cohort_artifact_stem(cohort: str, fallback: str = "HKIPO", board: str = "main") -> str:
     """Return the public artifact stem used by workbook/CSV/report deliverables."""
     compact = re.sub(r"\s+", "", str(cohort or ""))
     if re.fullmatch(r"\d{4}Q[1-4]", compact):
-        return f"HKIPO-MB{compact}"
+        return f"{board_prefix(board)}{compact}"
     return fallback
 
 
@@ -250,10 +250,11 @@ def read_companies(cfg: dict) -> list[dict[str, Any]]:
     return companies
 
 
-def cohort_workbook_path(start: dt.date, end: dt.date, *, root: Path = ROOT) -> Path:
+def cohort_workbook_path(start: dt.date, end: dt.date, *, root: Path = ROOT, board: str = "main") -> Path:
     """The stable workbook location used by a date-only collection run."""
     period_id = f"{start.isoformat()}_{end.isoformat()}"
-    return root / "datasets" / f"HKIPO_{period_id}_HKIPO-MB" / "HKIPO-MB.xlsx"
+    prefix = board_prefix(board)
+    return root / "datasets" / f"HKIPO_{period_id}_{prefix}" / f"{prefix}.xlsx"
 
 
 def write_cohort_config(
@@ -263,11 +264,13 @@ def write_cohort_config(
     *,
     base_config: Path | None = None,
     source_dir: Path | None = None,
+    board: str = "main",
 ) -> Path:
     """Write a stable config for CLI stages and independent extraction runs."""
     import openpyxl
 
-    base_config = Path(base_config or ROOT / "config.yaml")
+    board = normalize_board(board)
+    base_config = Path(base_config or ROOT / ("gem_base.yaml" if board == "gem" else "config.yaml"))
     config_path = workbook_path.with_name("cohort.yaml")
     if config_path.exists():
         existing = yaml.safe_load(config_path.read_text(encoding="utf-8"))
@@ -280,11 +283,12 @@ def write_cohort_config(
     base["workbook"] = str(workbook_path.relative_to(WS))
     dataset = base.setdefault("dataset", {})
     dataset.update({
+        "board": board_label(board),
         "id": dataset_id,
         "cohort": _cohort_for_period(start, end),
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
-        "report_source_dir": str(Path(source_dir or sources_dir(WS)).expanduser().resolve()),
+        "report_source_dir": str(Path(source_dir or report_source_dir(WS, board)).expanduser().resolve()),
     })
     workbook = openpyxl.load_workbook(workbook_path, read_only=True, data_only=True)
     try:
@@ -320,7 +324,7 @@ def _sibling_cohort_workbooks(workbook_path: Path) -> list[Path]:
     templates and non-cohort files are ignored.
     """
     siblings = []
-    for path in sorted(workbook_path.parent.glob("HKIPO-MB[0-9]*.xlsx")):
+    for path in sorted(workbook_path.parent.glob("HKIPO-*[0-9]*.xlsx")):
         if path.resolve() != workbook_path.resolve():
             siblings.append(path)
     return siblings
@@ -373,6 +377,7 @@ def build_cohort_workbook(
     template_path: Path | None = None,
     workbook_path: Path | None = None,
     today: dt.date | None = None,
+    board: str = "main",
 ) -> Path:
     """Resolve official issuers and create a styled Main Board workbook.
 
@@ -384,31 +389,32 @@ def build_cohort_workbook(
 
     if start > end:
         raise ValueError("period start must be on or before period end")
-    source_dir = Path(source_dir or sources_dir(WS))
-    template_path = Path(template_path or WS / "templates" / "HKIPO-MB-template-final.xlsx")
-    workbook_path = Path(workbook_path or cohort_workbook_path(start, end))
-    reports, supplement = reports_and_supplement(start, end, source_dir, today=today)
+    board = normalize_board(board)
+    source_dir = Path(source_dir or report_source_dir(WS, board))
+    template_path = Path(template_path or WS / "templates" / f"{board_prefix(board)}-template-final.xlsx")
+    workbook_path = Path(workbook_path or cohort_workbook_path(start, end, board=board))
+    reports, supplement = reports_and_supplement(start, end, source_dir, today=today, board=board)
 
     selected = []
     for report in reports:
         match = re.search(r"(?:NLR)?(19\d{2}|20\d{2})", report.stem, re.I)
         if not match:
             raise ValueError(f"Cannot identify annual report year: {report.name}")
-        for candidate in load_nlr_candidates(report, int(match.group(1))):
-            candidate = audit_candidate(candidate)
+        for candidate in load_nlr_candidates(report, int(match.group(1)), board=board):
+            candidate = audit_candidate(candidate, board=board)
             membership = candidate.get("listing_date") or candidate.get("prospectus_date")
             if candidate["inclusion_status"] == "INCLUDED" and membership and start <= membership <= end:
                 selected.append(candidate)
     for candidate in supplement:
-        candidate = audit_candidate(candidate)
+        candidate = audit_candidate(candidate, board=board)
         membership = candidate.get("listing_date") or candidate.get("prospectus_date")
         if candidate["inclusion_status"] == "INCLUDED" and membership and start <= membership <= end:
             selected.append(candidate)
     selected.sort(key=lambda item: (
         item.get("listing_date") or item.get("prospectus_date"), item["stock_code"]
     ))
-    if not selected:
-        raise ValueError(f"No ordinary Main Board IPOs found from {start} through {end}")
+    if not selected and board != "gem":
+        raise ValueError(f"No ordinary {board_label(board)} IPOs found from {start} through {end}")
 
     codes = [item["stock_code"] for item in selected]
     duplicates = sorted(code for code, count in Counter(codes).items() if count > 1)
@@ -432,12 +438,12 @@ def build_cohort_workbook(
         return workbook_path
 
     if not template_path.is_file():
-        raise FileNotFoundError(f"Main Board workbook template not found: {template_path}")
+        raise FileNotFoundError(f"{board_label(board)} workbook template not found: {template_path}")
     workbook = openpyxl.load_workbook(template_path)
     try:
         sheet = workbook["NLR"]
         if any(sheet.cell(row, 2).value not in (None, "") for row in range(2, sheet.max_row + 1)):
-            raise ValueError(f"Main Board template is not blank: {template_path}")
+            raise ValueError(f"{board_label(board)} template is not blank: {template_path}")
         template_last_row = sheet.max_row
         for row_number, item in enumerate(selected, 2):
             if row_number > template_last_row:
@@ -455,6 +461,14 @@ def build_cohort_workbook(
             )
             for col, value in enumerate(values, 1):
                 sheet.cell(row_number, col).value = value
+        if board == "gem":
+            details = workbook["GEM_details"]
+            for row_number, item in enumerate(selected, 2):
+                for column, key in ((21, "gem_funds_raised_hkd"), (22, "gem_shares_at_listing"),
+                                    (23, "gem_market_cap_hkd"), (24, "source_report")):
+                    details.cell(row_number, column).value = item.get(key)
+            from gem_template import update_gem_view
+            update_gem_view(workbook)
         workbook_path.parent.mkdir(parents=True, exist_ok=True)
         temporary = workbook_path.with_name("." + workbook_path.name)
         try:
