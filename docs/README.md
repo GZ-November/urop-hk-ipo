@@ -19,5 +19,5 @@
 
 ## Agent collection and GEM
 
-[一句话采集 Quickstart](QUICKSTART.md) · [采集请求模板](COLLECTION_REQUEST_TEMPLATE.md) ·
+[一句话采集 Quickstart](QUICKSTART.md) · [One-page team instructions (PDF)](TEAM_INSTRUCTIONS.pdf) · [采集请求模板](COLLECTION_REQUEST_TEMPLATE.md) ·
 [Complete English operating instructions](AGENT_INSTRUCTIONS.md) · [GEM template and field mapping](GEM_PIPELINE.md).

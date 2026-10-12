@@ -1,0 +1,110 @@
+% One-page team instructions for agent-driven HK IPO collection.
+% Steps mirror docs/QUICKSTART.md. Build with XeLaTeX:
+%   tectonic -X compile docs/TEAM_INSTRUCTIONS.tex     (or: xelatex TEAM_INSTRUCTIONS.tex)
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=18mm,right=18mm,top=13mm,bottom=12mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx,booktabs}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+
+% Font files ship with TeX Live and the Tectonic bundle.
+\setmainfont{texgyreheros}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold,
+  ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\setmonofont{DejaVuSansMono}[Extension=.ttf, UprightFont=*, BoldFont=*-Bold, Scale=0.84]
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{soft}{HTML}{EEF3F8}
+\definecolor{note}{HTML}{5A6472}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.04}
+\setlist{nosep,leftmargin=1.2em,itemsep=2pt}
+\renewcommand{\arraystretch}{1.12}
+
+\newcommand{\step}[2]{\par\vspace{6pt}%
+  {\color{accent}\large\bfseries #1\enspace #2}\enspace
+  {\color{accent!30}\leaders\hrule height 3.8pt depth -3.2pt\hfill\kern0pt}\par\vspace{2pt}}
+\newcommand{\cmd}[1]{\colorbox{soft}{\texttt{#1}}}
+\newtcolorbox{codebox}{colback=soft,colframe=soft,boxrule=0pt,arc=2pt,
+  left=7pt,right=7pt,top=4pt,bottom=4pt,fontupper=\ttfamily,
+  borderline west={2.5pt}{0pt}{accent}}
+\newtcolorbox{saybox}{colback=white,colframe=accent,boxrule=0.8pt,arc=3pt,
+  left=9pt,right=9pt,top=5pt,bottom=5pt,fontupper=\large\bfseries}
+
+\begin{document}
+
+{\color{accent}\LARGE\bfseries Hong Kong IPO Data Collection: Team Instructions}\par\vspace{3pt}
+{\small\color{note}Repository:
+\href{https://github.com/GZ-November/urop-hk-ipo}{github.com/GZ-November/urop-hk-ipo}
+\quad$\cdot$\quad October 2026}\par\vspace{6pt}
+
+You tell an AI coding agent a listing period; it uses this repository to collect,
+verify and package Hong Kong IPO data from official HKEX disclosures.
+
+\step{1}{Choose the agent}
+\begin{itemize}
+\item \textbf{Use Claude Code} (terminal CLI or desktop app). OpenAI Codex CLI also works.
+\item The agent must run shell commands, reach the Internet and launch \textbf{subagents};
+      subagents perform the independent review. Browser chat (claude.ai, ChatGPT) cannot run the pipeline.
+\item Your computer needs Git and Python 3.9+ on macOS or Linux. On Windows, use WSL.
+\end{itemize}
+
+\step{2}{Install once}
+\begin{codebox}
+git clone https://github.com/GZ-November/urop-hk-ipo.git\\
+cd urop-hk-ipo\\
+python3 tools/bootstrap.py
+\end{codebox}
+This installs the locked dependencies (and Python 3.12 if needed) and the
+\texttt{hk-ipo-collect} agent skill. Add \cmd{--skills both} to use the skill from any folder.
+
+\step{3}{Ask for a period}
+Open the agent inside the \texttt{urop-hk-ipo} folder (\cmd{claude} or \cmd{codex}) and type one sentence:
+\begin{saybox}
+Collect Hong Kong IPOs listed in 2025 Q4.
+\end{saybox}
+\begin{itemize}
+\item In Claude Code you can also type \cmd{/hk-ipo-collect 2025Q4}.
+\item Periods: \texttt{2025}, \texttt{2025H2}, \texttt{2025Q4}, \texttt{2025-11},
+      \texttt{2024Q3..2025Q2} or explicit dates. Main Board and GEM are both collected unless you say otherwise.
+\item After an interruption, say \emph{``Continue the HK IPO collection.''}
+\end{itemize}
+The agent then downloads each prospectus and allotment notice, extracts every field
+with its source page, has a second subagent review it, and writes only reviewed values.
+Expect several hours per quarter (about 15--45 Main Board IPOs).
+
+\step{4}{What you get}
+One ZIP file in the repository's \texttt{deliverables/} folder, plus a written report from the agent.
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{40mm}X@{}}
+\toprule
+In the ZIP & Use it for \\
+\midrule
+START\_HERE.html & Open first: status, issuers and links to everything below \\
+Excel workbook & One per board and quarter; one row per IPO (202 variables on the Main Board) \\
+Clean CSV & Analysis-ready data for Python, R or Stata \\
+Codebook & Definition, unit and source of every field (Markdown and JSON) \\
+Evidence & Extracted values with source page and quote, review records, disclosure links \\
+Quality reports & Audit and gate status, \texttt{quality\_summary.json}, SHA-256 manifest \\
+\bottomrule
+\end{tabularx}
+
+The agent's report adds, per quarter, issuer counts, listing dates, missing fields,
+pending reviews and source gaps.
+
+\step{5}{Read the data correctly}
+\begin{itemize}
+\item Empty cell: not disclosed or not verifiable. It is never a zero.
+\item \emph{Pending review}: no independent reviewer was available, so those values are not in the workbook.
+\item A failed recent quarter usually means HKEX has not published the data yet, not zero IPOs.
+\end{itemize}
+
+\vfill
+{\small\color{note}More detail: \texttt{docs/QUICKSTART.md} (Chinese and English)
+and \texttt{docs/AGENT\_INSTRUCTIONS.md} in the repository.}
+
+\end{document}
