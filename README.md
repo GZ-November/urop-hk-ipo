@@ -12,6 +12,8 @@ This project builds evidence-linked datasets for ordinary Hong Kong Main Board I
 ## Give this repository to an agent
 
 **Fastest path: [one-sentence collection quickstart (中文 / English)](docs/QUICKSTART.md).**
+New teammates can start from the **[one-page team instructions (PDF)](docs/TEAM_INSTRUCTIONS.pdf)**
+([LaTeX source](docs/TEAM_INSTRUCTIONS.tex)): which agent to use, setup, the one-sentence request and the deliverable.
 Run `python3 tools/bootstrap.py` once (it also installs the `hk-ipo-collect` agent skill),
 then tell your agent a period, e.g. *"收集 2025 年第四季度的港股 IPO"* or
 *"Collect Hong Kong IPOs listed in 2025 Q4"*. Optional details go in the
