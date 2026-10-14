@@ -7,7 +7,8 @@
 
 做法：港交所给的是英文名称（如 "Semiconductors"），
 本脚本用 HSIC_EN2CODE 把英文名映射到 HSICS 的 6 位码（如 703010）。
-21 个实际出现的子类别均为一一对应，无歧义。
+英文名未登记时，用 hsic.py 同时抓取的繁体中文子类别名（hsic_sub_zh）与 hsics.json
+的 name 逐字匹配定码；两者都有时必须一致，否则失败，不猜测。
 
 写入字段：
   - BN = 6 位码（文本，因 052020/053040 等含前导零）；
@@ -95,10 +96,27 @@ HSIC_EN2CODE = {
     "Restaurants": "234060",
     "Skincare and Cosmetics": "282040",
     "Transportation": "234010",
+    # 2025Q4 cohort 补全：602020 樓宇建造 Building Construction（data/manual/hsics.json）
+    "Building Construction": "602020",
 }
 
 HEADERS = {"BN": "Industry classification code",
            "BO": "Industry classification system and version"}
+
+
+def resolve_code(rec: dict, tax: dict) -> tuple[str | None, str]:
+    """Return (HSICS code, basis) for one HKEX record, or (None, reason) when unresolvable."""
+    sub, sub_zh = rec.get("hsic_sub"), (rec.get("hsic_sub_zh") or "").strip()
+    by_name = {t.get("name"): code for code, t in tax.items()}
+    en_code = HSIC_EN2CODE.get(sub) if sub else None
+    zh_code = by_name.get(sub_zh) if sub_zh else None
+    if en_code and zh_code and en_code != zh_code:
+        return None, f"英文 {sub!r}→{en_code} 与中文 {sub_zh!r}→{zh_code} 不一致"
+    if en_code:
+        return en_code, "english_map"
+    if zh_code:
+        return zh_code, "official_chinese_name"
+    return None, f"子类别未映射：英文 {sub!r}，中文 {sub_zh or '缺'}（补 HSIC_EN2CODE 或重跑 hsic.py 取中文名）"
 
 
 def norm(s) -> str:
@@ -126,11 +144,6 @@ def main() -> int:
     if not taxonomy_path.is_file():
         taxonomy_path = ROOT / "data" / "manual" / "hsics.json"
     tax = {r["code"]: r for r in json.loads(taxonomy_path.read_text(encoding="utf-8"))}
-
-    missing_map = sorted({v["hsic_sub"] for v in hsic.values()
-                          if v.get("hsic_sub") and v["hsic_sub"] not in HSIC_EN2CODE})
-    if missing_map:
-        raise SystemExit(f"有子类别未映射，请补 HSIC_EN2CODE：{missing_map}")
 
     wb_read = openpyxl.load_workbook(book, data_only=True)
     ws_read = wb_read[cfg["sheet"]]
@@ -169,7 +182,9 @@ def main() -> int:
         sub = rec.get("hsic_sub")
         if not sub:
             raise SystemExit(f"{code}: 缺 HSIC 数据；检查 {cfg['paths']['out'] / 'hsic.json'}")
-        c6 = HSIC_EN2CODE[sub]
+        c6, basis = resolve_code(rec, tax)
+        if c6 is None:
+            raise SystemExit(f"{code}: {basis}")
         if c6 not in tax:
             raise SystemExit(f"{code}: {sub} 映射到 {c6}，但分类表中不存在")
         t = tax[c6]
@@ -180,6 +195,8 @@ def main() -> int:
             "industry": t.get("industry"),
             "hkex_hsic_ind": rec.get("hsic_ind"),
             "hkex_hsic_sub": sub,
+            "hkex_hsic_sub_zh": rec.get("hsic_sub_zh"),
+            "mapping_basis": basis,
             "system": SYSTEM,
         }
         n += 1

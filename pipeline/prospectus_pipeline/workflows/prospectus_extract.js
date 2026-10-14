@@ -152,7 +152,7 @@ ${OUTPUT_CONTRACT}
 
 ## 手册硬规则（必须遵守）
 1. 金额一律换算成**基本货币单位**（HK$125.6 million -> 125600000）；百分比填小数；确认的零填数字 0。
-2. **合并报表唯一原则（严防母公司单体报表混淆）**：所有资产、权益、负债、销售、利润、现金流、有息债务等财务指标（V–AN、AU–AY、BE 等）**必须且只能**取自**合并财务报表（CONSOLIDATED Financial Statements / Group）**；**绝对严禁**采纳母公司单体报表（\`STATEMENT OF FINANCIAL POSITION OF THE COMPANY\` / \`COMPANY BALANCE SHEETS\`）。year-1/2/3 必须是**同一套历史期间**；year-1 销售/利润若不是全年（如 9 个月），按手册年化并在 quote 注明原始期间；附加流量 AU/AW/AX 一律**不年化**；AV（年末现金）和 BE（有息负债）是期末余额，AY 是客户集中度比例。
+2. **合并报表唯一原则（严防母公司单体报表混淆）**：所有资产、权益、负债、销售、利润、现金流、有息债务等财务指标（V–AN、AU–AY、BE 等）**必须且只能**取自**合并财务报表（CONSOLIDATED Financial Statements / Group）**；**绝对严禁**采纳母公司单体报表（\`STATEMENT OF FINANCIAL POSITION OF THE COMPANY\` / \`COMPANY BALANCE SHEETS\`）。year-1/2/3 必须是**同一套历史期间**：year-1 = Track Record 最新期间（若为 3M–11M 存根，year-1 就是该存根，col_AT 与资产负债表均取存根期末），year-2/year-3 = 其前两个完整财年，以 \`search periods\` 为准（validate 会拦截锚定在最后完整财年的错误）；严禁为凑恒等式反解数字；year-1 销售/利润若不是全年（如 9 个月），按手册年化并在 quote 注明原始期间；附加流量 AU/AW/AX 一律**不年化**；AV（年末现金）和 BE（有息负债）是期末余额，AY 是客户集中度比例。
 3. AU 经营现金流 = net cash from operating activities，**不是**经营利润；AV 现金及等价物**不自动包含**受限现金。
 4. AX 只填**当期新增**的资本化开发成本，不是期末余额；表中明确写 \`–\`/nil 时填数字 0。
 5. AL/AM/AN 是净利润（profit for the year）；AI/AJ/AK 是税前利润。

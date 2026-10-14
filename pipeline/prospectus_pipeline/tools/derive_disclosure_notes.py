@@ -8,9 +8,9 @@
 |---|---|---|
 | BC  | Comments (nearest sales & profit adjustment factor - original data duration in year) | year-1 覆盖月数 / 12 |
 | CG  | Financial statement unit multiplier | 由「披露值 vs 存储值」推断（'000 -> 1000） |
-| CI/CJ | Year-3 financial period start / end | year-1 期间前移 2 年 |
-| CK/CL | Year-2 financial period start / end | year-1 期间前移 1 年 |
-| CM  | Year-1 financial period start | 财年起始日 |
+| CI/CJ | Year-3 financial period start / end | year-2 之前的完整财年 |
+| CK/CL | Year-2 financial period start / end | year-1 之前的完整财年 |
+| CM  | Year-1 financial period start | year-1（可为存根）期初 |
 | CN  | Year-1 net sales (original, pre-annualization) | 年化值 × BC |
 | CO  | Year-1 profit before tax (original) | 年化值 × BC |
 | CP  | Year-1 profit for period (original) | 年化值 × BC |
@@ -22,6 +22,11 @@
 - `CM` 恒为期初（2025-01-01），`CI/CJ`、`CK/CL` 为 year-3 / year-2 的整年区间；
 - `CG` 37 家为 1000、1 家为 1000000。
 
+year-1 的月数不能只凭 col_AT 的月日推断（6 月 30 日既可能是 6M 存根，也可能是 6 月结账的
+完整财年）。月数取自 src/periods.py：优先用页级全文判定的 Track Record Period（须与 col_AT
+同一期末），否则用抽取 JSON 中年化值与引文原值之比（col_AH/AK/AN）；两者冲突或都缺失时
+跳过该公司并列明原因，绝不猜测。
+
 用法：
     python tools/derive_disclosure_notes.py [--book ../HKIPO-MB2026Q2.xlsx] [--only 6656.HK ...]
 """
@@ -32,7 +37,7 @@ import json
 import math
 import re
 import sys
-from datetime import date
+from datetime import timedelta
 from pathlib import Path
 
 import openpyxl
@@ -41,9 +46,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 
+from periods import parse_date, payload_months, period_ending, resolve  # noqa: E402
 from workbook_transaction import workbook_transaction  # noqa: E402
 from write_back import resolve_columns  # noqa: E402
 from run import load_cfg  # noqa: E402
+
+# 派生只读取这 4 个抽取字段；GEM 模板合法删除了主板专列，不能要求全部表头。
+SOURCE_FIELDS = ("col_AT", "col_AH", "col_AK", "col_AN")
 
 # 派生列（模板表头 -> 列名就地解析，不依赖历史字母键）
 TARGETS = {
@@ -59,59 +68,30 @@ TARGETS = {
     "CP": "Year-1 profit for period (original)",
 }
 
-_MONTHS = {m: i for i, m in enumerate(
-    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
-
-
-def parse_date(value) -> date | None:
-    """尽最大努力解析招股书日期（支持 31/12/25、31 December 2025、2025-12-31 等）。"""
-    if isinstance(value, date):
-        return value
-    if value is None:
-        return None
-    s = str(value).strip()
-    if not s or s.upper() in {"NA", "NAN", "NONE"}:
-        return None
-    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", s)
-    if m:
-        return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
-    m = re.search(r"\b(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})\b", s)
-    if m:
-        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
-        y = y + 2000 if y < 100 else y
-        try:
-            return date(y, mo, d)
-        except ValueError:
-            return None
-    m = re.search(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})\b", s)
-    if m:
-        mo = _MONTHS.get(m.group(2)[:3].lower())
-        if mo:
-            try:
-                return date(int(m.group(3)), mo, int(m.group(1)))
-            except ValueError:
-                return None
-    return None
-
-
-def month_span(start: date, end: date) -> int:
-    """含头含尾的整月数（Jan 1 -> Sep 30 == 9）。"""
-    return (end.year - start.year) * 12 + (end.month - start.month) + 1
-
-
-def fiscal_start(end: date) -> date:
-    """由财年期末推期初：12 月结账 -> 同年 1/1；否则期末月+1 的上一年首日。"""
-    if end.month == 12:
-        return date(end.year, 1, 1)
-    y, m = (end.year - 1, end.month + 1)
-    return date(y, m, 1)
-
-
-def shift_year(d: date, years: int) -> date:
-    try:
-        return d.replace(year=d.year + years)
-    except ValueError:  # 2 月 29 日
-        return d.replace(year=d.year + years, day=28)
+def year1_periods(code: str, fields: dict, text_dir: Path) -> tuple[dict | None, str]:
+    """Return {"year1", "year2", "year3"} Periods for one issuer, or (None, reason)."""
+    end = parse_date((fields.get("col_AT") or {}).get("value"))
+    if end is None:
+        return None, "无有效 year-1 期末日（col_AT）"
+    implied = payload_months(fields)
+    text_file = text_dir / f"HKIPO-MB{''.join(ch for ch in code if ch.isdigit())}.jsonl"
+    if text_file.exists():
+        pages = [json.loads(line) for line in text_file.read_text(encoding="utf-8").splitlines() if line.strip()]
+        tr = resolve(pages)
+        if tr.status == "ok":
+            if tr.year1.end != end:
+                return None, (f"col_AT={end} 与 Track Record 判定的 year-1 期末 {tr.year1.end} 不一致"
+                              "（期间锚定错误，先修抽取）")
+            if implied is not None and implied != tr.year1.months:
+                return None, (f"年化值/引文原值隐含 {implied} 个月，但 Track Record 判定 year-1 为 "
+                              f"{tr.year1.months} 个月（年化错误）")
+            return {"year1": tr.year1, "year2": tr.year2, "year3": tr.year3}, "track_record"
+    if implied is None:
+        return None, "无法确定 year-1 期间长度（无页级全文判定，且年化值无法与引文原值对上）"
+    year1 = period_ending(end, implied)
+    year2 = period_ending(year1.start - timedelta(days=1), 12)
+    year3 = period_ending(year2.start - timedelta(days=1), 12)
+    return {"year1": year1, "year2": year2, "year3": year3}, "payload_annualisation"
 
 
 def infer_multiplier(rec: dict, key: str) -> int | None:
@@ -150,6 +130,7 @@ def main() -> int:
     cfg = load_cfg(workbook_override=args.book)
     book = Path(cfg["workbook"])
     schema = json.loads((ROOT / "schema" / "fields.json").read_text(encoding="utf-8"))
+    schema = {**schema, "fields": [f for f in schema["fields"] if f["key"] in SOURCE_FIELDS]}
 
     wb = openpyxl.load_workbook(book, data_only=False)
     ws = wb[cfg["sheet"]]
@@ -196,7 +177,7 @@ def main() -> int:
     ext_dir = Path(cfg["paths"]["out"]) / "extracted"
     only = {c.strip() for c in args.only} if args.only else None
 
-    plans: list[tuple[str, int, dict[str, object]]] = []
+    plans: list[tuple[str, int, dict[str, object], str]] = []
     skipped: list[str] = []
     for path in sorted(ext_dir.glob("*.json")):
         rec = json.loads(path.read_text(encoding="utf-8"))
@@ -207,18 +188,12 @@ def main() -> int:
             continue
 
         fields = rec.get("fields") or {}
-        end = parse_date((fields.get("col_AT") or {}).get("value"))
-        if end is None:
-            skipped.append(f"{code}: 无有效 year-1 期末日（col_AT）")
+        periods, basis = year1_periods(code, fields, Path(cfg["paths"]["text"]))
+        if periods is None:
+            skipped.append(f"{code}: {basis}")
             continue
-
-        start = fiscal_start(end)
-        months = month_span(start, end)
-        # 只接受 3..12 个月的合理期间
-        if not 3 <= months <= 12:
-            skipped.append(f"{code}: year-1 期间异常（{months} 个月）")
-            continue
-        factor = months / 12
+        year1, year2, year3 = periods["year1"], periods["year2"], periods["year3"]
+        factor = year1.months / 12
 
         def annualized(key: str):
             entry = fields.get(key) or {}
@@ -237,12 +212,12 @@ def main() -> int:
 
         values: dict[str, object] = {
             "BC": round(factor, 6),
-            "CI": shift_year(start, -2),
-            "CJ": shift_year(end, -2),
-            "CK": shift_year(start, -1),
-            "CL": shift_year(end, -1),
-            "CM": start,
+            "CK": year2.start,
+            "CL": year2.end,
+            "CM": year1.start,
         }
+        if year3 is not None:
+            values["CI"], values["CJ"] = year3.start, year3.end
         if sales is not None:
             values["CN"] = round(sales * factor)
         if pbt is not None:
@@ -254,7 +229,7 @@ def main() -> int:
         if mult:
             values["CG"] = mult
 
-        plans.append((code, row_of[code], values))
+        plans.append((code, row_of[code], values, f"{year1.label}, {basis}"))
 
     if not plans:
         print("没有可派生的公司。")
@@ -265,15 +240,17 @@ def main() -> int:
     written = 0
     with workbook_transaction(book, operation="derive-disclosure-notes") as twb:
         tws = twb[cfg["sheet"]]
-        for code, row, values in plans:
+        for code, row, values, basis in plans:
             for key, val in values.items():
                 tws[f"{derived[key]}{row}"].value = val
             written += 1
-            print(f"  {code:9s} 行 {row:3d} 派生 {len(values):2d} 列")
+            print(f"  {code:9s} 行 {row:3d} 派生 {len(values):2d} 列（{basis}）")
 
     print(f"\n派生完成：{written} 家 -> {book}")
     for s in skipped:
         print("  跳过:", s)
+    if skipped:
+        print("  ⚠️ 跳过的公司其工作簿原有派生值未改动，须按上述原因修正抽取或人工核对。")
     return 0
 
 

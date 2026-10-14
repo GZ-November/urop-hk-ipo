@@ -35,17 +35,15 @@ def cmd_find(cfg, args, companies):
     payload = [f.__dict__ for f in found]
     if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
         # GEM NLR has no prospectus-date column: preserve the HKEX publication provenance.
-        import re
-        from datetime import date
+        from hkex import parse_doc_date
         from workbook_transaction import workbook_transaction
         from gem_template import update_gem_view
         by_code = {company["code"]: company for company in companies}
         with workbook_transaction(cfg["_workbook_path"], operation="gem-prospectus-date") as workbook:
             for record in payload:
-                match = re.search(r"(\d{4})[/-](\d{2})[/-](\d{2})", str(record.get("doc_datetime") or ""))
-                if record.get("status") != "ok" or match is None:
+                published = parse_doc_date(record.get("doc_datetime"))
+                if record.get("status") != "ok" or published is None:
                     continue
-                published = date(*(int(part) for part in match.groups()))
                 company = by_code[record["code"]]
                 if company.get("prospectus_date") is None:
                     workbook[cfg["sheet"]].cell(company["row"], 4).value = published

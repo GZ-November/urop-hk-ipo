@@ -38,16 +38,19 @@ NUM = r"\d{1,3}(?:,\d{3})+|\d{4,}"
 # 所以按 over-allotment 锚点开窗，而不是按句子匹配。
 # 标的可能是普通股（Shares）或预托证券/存托凭证（HDRs，如 DRS 上市），两者都要认。
 UNIT = r"(?:Shares|HDRs)"
+# 股份类别前缀：H 股 / 发售股份 / 同股不同权的 Class A、Class B 股 / Ordinary Shares
+# （如 "1,082,800 Class A Shares"、"2,000,000 new Class B Ordinary Shares"）。
+CLASS = r"(?:new\s+)?(?:(?:H|Offer|Class\s+[A-Z])\s+)?(?:Ordinary\s+)?"
 PATTERNS = [
-    re.compile(rf"in\s+respect\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?{UNIT}", re.I),
-    re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:H\s+)?{UNIT}", re.I),
-    re.compile(rf"allot(?:ted)?\s+and\s+issued\s+(?:by\s+the\s+Company\s+)?(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+)?{UNIT}", re.I),
-    re.compile(rf"subscri\w+\s+for\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?{UNIT}", re.I),
-    re.compile(rf"({NUM})\s*(?:new\s+)?(?:H\s+)?{UNIT}\s+(?:will\s+be|have\s+been|were)\s+(?:allotted|issued)", re.I),
+    re.compile(rf"in\s+respect\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*{CLASS}{UNIT}", re.I),
+    re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*{CLASS}{UNIT}", re.I),
+    re.compile(rf"allot(?:ted)?\s+and\s+issued\s+(?:by\s+the\s+Company\s+)?(?:an\s+aggregate\s+of\s+)?({NUM})\s*{CLASS}{UNIT}", re.I),
+    re.compile(rf"subscri\w+\s+for\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*{CLASS}{UNIT}", re.I),
+    re.compile(rf"({NUM})\s*{CLASS}{UNIT}\s+(?:will\s+be|have\s+been|were)\s+(?:allotted|issued)", re.I),
 ]
 ANCHOR = re.compile(r"over-?allotment", re.I)
 PCT = re.compile(r"representing\s+(?:approximately\s+)?([\d.]+)\s*%\s+of\s+the\s+"
-                 r"(?:total\s+number\s+of\s+the\s+)?(?:Offer\s+|H\s+)?Shares\s+"
+                 r"(?:total\s+number\s+of\s+the\s+)?(?:Offer\s+|H\s+|Class\s+[A-Z]\s+)?Shares\s+"
                  r"(?:initially\s+available|available)", re.I)
 WINDOW = 400
 

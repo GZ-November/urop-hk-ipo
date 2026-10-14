@@ -189,7 +189,7 @@ class PipelineSafetyTests(unittest.TestCase):
             with contextlib.redirect_stdout(output):
                 tools_search.cmd_periods(type("Args", (), {"code": "0001.HK"})())
         result = output.getvalue()
-        self.assertIn("未检出连续的三个完整年度", result)
+        self.assertIn("无法判定", result)
         self.assertNotIn("year-1 = FY2025", result)
 
     def test_backup_json_is_not_an_official_extraction(self):

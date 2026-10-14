@@ -15,6 +15,7 @@ from contracts import (
 )
 from offer_units import (QUANTITY_FIELDS_ALLOT, QUANTITY_FIELDS_PROSPECTUS, quantity_conflicts,
                          units_per_offer_unit)
+from periods import ANNUALISED_FIELDS, parse_date, payload_months, traceable
 from storage import atomic_json, official_files
 
 MISSING = {"", None, "nan", "na", "n/a", "none", "-"}
@@ -90,9 +91,45 @@ def close(a, b, rel_tol=1e-9, abs_tol=1.0) -> bool:
     return abs(a - b) <= max(abs_tol, rel_tol * max(abs(a), abs(b)))
 
 
+PERIOD_OVERRIDE = "period-override:"
+SCALED_UNITS = (1_000, 10_000, 1_000_000, 100_000_000, 1_000_000_000)
+MONEY_UNITS = {"basic_currency_units", "money"}
+
+
+def traceability_warnings(rec: dict, schema: dict, track_record=None) -> list[str]:
+    """Non-blocking: monetary values that are not a quoted number × unit (× annualisation).
+
+    Totals legitimately summed from components land here too, so this never blocks writeback;
+    it is the independent reviewer's checklist for values that must be recomputed from the
+    cited page (a value back-solved to satisfy an identity is caught only this way).
+    """
+    fields = rec.get("fields", {})
+    months = (track_record.year1.months if track_record is not None and track_record.status == "ok"
+              else payload_months(fields))
+    out = []
+    for field in schema["fields"]:
+        key = field["key"]
+        entry = fields.get(key)
+        if field.get("unit") not in MONEY_UNITS or not isinstance(entry, dict):
+            continue
+        value = num(entry)
+        if value is None or value == 0:
+            continue
+        factors = (1.0, 12 / months) if key in ANNUALISED_FIELDS and months else (1.0,)
+        if not traceable(value, entry.get("quote") or "", factors=factors):
+            out.append(f"{key}={value:,.0f} 不能由引文数字×单位{'×年化' if len(factors) > 1 else ''}直接得到；"
+                       f"复核须在第 {entry.get('page')} 页重算并在报告中写明算式")
+    return out
+
+
 def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
-               balance_rel_tol=0.005, balance_abs_tol=2000.0) -> list[dict]:
-    """只做可证明的勾稽；缺失字段由契约报告为 missing，不静默当作 OK。"""
+               balance_rel_tol=0.005, balance_abs_tol=2000.0, track_record=None) -> list[dict]:
+    """只做可证明的勾稽；缺失字段由契约报告为 missing，不静默当作 OK。
+
+    track_record 为 periods.resolve() 对页级全文的判定；判定成功时 col_AT 与年化系数
+    必须与之一致（期间锚定闸门）。确需偏离时，col_AT 的 note 以 "period-override:" 开头
+    写明理由与页码，由独立复核确认。
+    """
     f = rec.get("fields", {})
     def g(key):
         return num(f.get(key))
@@ -135,20 +172,39 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
     # ---------------------------------------------------------
     # 毛利率天花板与未年化期间勾稽 (Gross Margin Ceiling Gate)
     # ---------------------------------------------------------
+    # ---------------------------------------------------------
+    # 期间锚定闸门 (Period Anchor Gate)：year-1 = Track Record 最新期间（存根即 year-1）
+    # ---------------------------------------------------------
+    at_entry = f.get("col_AT") or {}
+    at_date = parse_date(at_entry.get("value"))
+    implied_months = payload_months(f)
+    overridden = str(at_entry.get("note") or "").strip().lower().startswith(PERIOD_OVERRIDE)
+    if track_record is not None and track_record.status == "ok" and not overridden:
+        y1 = track_record.year1
+        if at_date is not None and at_date != y1.end:
+            add("期间锚定",
+                f"col_AT={at_date:%d/%m/%y}，但 Track Record 最新期间为 {y1.label}（期末 {y1.end:%d/%m/%y}）；"
+                f"year-1 必须取该期间（存根即 year-1），year-2/3 为其前两个完整年度"
+                f"（FY{track_record.year2.end.year}"
+                + (f"/FY{track_record.year3.end.year}" if track_record.year3 else "") + "）")
+        elif implied_months is not None and implied_months != y1.months:
+            add("年化系数",
+                f"col_AH/AK/AN 相对引文原值隐含 {implied_months} 个月，但 year-1 为 {y1.months} 个月"
+                f"（应 ×{12 / y1.months:.4g} 年化）")
+    year1_months = (track_record.year1.months
+                    if track_record is not None and track_record.status == "ok" and not overridden
+                    else implied_months)
+    if year1_months is None and at_date is not None:
+        # 无全文、无引文比值时的保守兜底：按 12 月结账推断存根月数（与历史行为一致）
+        year1_months = at_date.month
+
+    # ---------------------------------------------------------
+    # 毛利率天花板与未年化期间勾稽 (Gross Margin Ceiling Gate)
+    # ---------------------------------------------------------
     CF = g("col_CF")
     AH = g("col_AH")
-    AT_val = (f.get("col_AT") or {}).get("value")
-    if CF is not None and AH is not None and AH > 0 and AT_val:
-        at_str = str(AT_val).strip()
-        frac = 1.0
-        if any(x in at_str for x in ("30/06", "06/30", "-06-30")):
-            frac = 0.5
-        elif any(x in at_str for x in ("31/08", "08/31", "-08-31")):
-            frac = 8.0 / 12.0
-        elif any(x in at_str for x in ("30/09", "09/30", "-09-30")):
-            frac = 0.75
-        elif any(x in at_str for x in ("31/10", "10/31", "-10-31")):
-            frac = 10.0 / 12.0
+    if CF is not None and AH is not None and AH > 0 and at_date is not None and year1_months:
+        frac = year1_months / 12
         unann_sales = AH * frac
         if CF > unann_sales * 1.01:
             add("毛利率超限/期间错位",
@@ -167,15 +223,18 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
     annual_sales = g("col_AH")
     is_large_firm = (total_assets is not None and total_assets > 50_000_000) or (annual_sales is not None and annual_sales > 50_000_000)
     if curr in {"RMB", "HKD"} and is_large_firm:
-        for mkey, mname in [("col_CF", "毛利"), ("col_BE", "有息负债")]:
+        # 绝对下限只用于发现「漏乘千元乘数」。若存储值恰为引文数字 × 千/万/百万，
+        # 说明乘数已正确施加，小额是真实值（如资本开支 RMB13 千元），不得报错。
+        for mkey, mname, floor in [("col_CF", "毛利", 500_000), ("col_BE", "有息负债", 500_000),
+                                   ("col_CG", "资本开支", 100_000)]:
             mval = g(mkey)
-            if mval is not None and 0 < mval < 500_000:
-                add(f"金额单位未折算 ({mname})",
-                    f"{mkey}={mval} 处于 (0, 500,000)，明显未按基本货币单位折算（漏乘千元乘数）")
-        cg_val = g("col_CG")
-        if cg_val is not None and 0 < cg_val < 100_000:
-            add("金额单位未折算 (资本开支)",
-                f"col_CG={cg_val} 处于 (0, 100,000)，明显未按基本货币单位折算（漏乘千元乘数）")
+            if mval is None or not 0 < mval < floor:
+                continue
+            if traceable(mval, (f.get(mkey) or {}).get("quote") or "", scales=SCALED_UNITS):
+                continue
+            add(f"金额单位未折算 ({mname})",
+                f"{mkey}={mval} 处于 (0, {floor:,})，且不等于引文数字×千/百万，疑似漏乘千元乘数；"
+                "若确为小额，引文须包含该数字及其单位（如 RMB'000 表中的 13）")
 
     # ---------------------------------------------------------
     # 资本开支合理性勾稽 (CapEx Bounds)
@@ -397,12 +456,13 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
                     alt["greenshoe"] = gh
             # 招股书全文（页级 jsonl）作为合法证据源（招股书与配发阶段均可引用）
             text_file = cfg["paths"]["text"] / f"HKIPO-MB{''.join(ch for ch in code if ch.isdigit())}.jsonl"
+            track_record = None
             if text_file.exists():
-                parts = []
-                for line in text_file.open(encoding="utf-8"):
-                    p = json.loads(line)
-                    parts.append(f"<<<PAGE {p['page']}>>>\n{p['text']}")
-                alt["prospectus"] = "\n".join(parts)
+                pages = [json.loads(line) for line in text_file.read_text(encoding="utf-8").splitlines() if line.strip()]
+                alt["prospectus"] = "\n".join(f"<<<PAGE {p['page']}>>>\n{p['text']}" for p in pages)
+                if target == "prospectus":
+                    from periods import resolve
+                    track_record = resolve(pages)
             ev = evidence_issues(rec, packet, schema, alt, target, context) if packet.exists() else ["packet missing"]
             if target == "allot":
                 checks = check_allot(rec, context)
@@ -413,7 +473,8 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
                 checks = check_firm(rec, schema, cfg["validate"].get("share_rel_tol", 1e-9),
                                     cfg["validate"].get("share_abs_tol", 1),
                                     cfg["validate"].get("balance_rel_tol", 0.005),
-                                    cfg["validate"].get("balance_abs_tol", 2000))
+                                    cfg["validate"].get("balance_abs_tol", 2000),
+                                    track_record=track_record)
             all_err = structural + ev + [x["check"] + ": " + x["detail"] for x in checks]
             fields = rec.get("fields", {}) if isinstance(rec, dict) else {}
             missing = []
@@ -423,20 +484,26 @@ def validate_all(cfg: dict, only: list[str] | None = None, limit: int = 0,
                         or is_missing(value, field.get("kind", "text"))):
                     missing.append(field["key"])
             status = "error" if all_err else ("warning_missing" if missing else "pass")
+            warnings = traceability_warnings(rec, schema, track_record) if target == "prospectus" else []
             from state import digest, file_hash, save_record
             evidence = {"packet": packet.read_text(encoding="utf-8"), "alt": alt, "context": context}
             version = digest(rec, schema, evidence)
             records.append({"code": code, "file": str(fp), "hash": version,
                             "json_sha256": file_hash(fp), "status": status,
                             "fields_total": len(schema["fields"]),
-                            "fields_missing": missing, "errors": all_err})
+                            "fields_missing": missing, "errors": all_err,
+                            "warnings": warnings,
+                            "track_record": (None if track_record is None else {
+                                "status": track_record.status, "reason": track_record.reason,
+                                "year1": track_record.year1.label if track_record.year1 else None})})
             save_record(cfg, target, code, "validated", {**records[-1], "target": target,
                                                          "gate_pass": not all_err})
             if all_err:
                 errors.extend({"code": code, "detail": x} for x in all_err)
             if missing:
                 pending.append({"code": code, "fields": missing})
-            log(f"{status.upper():15s} {code:9s} missing={len(missing):2d} errors={len(all_err):2d}")
+            log(f"{status.upper():15s} {code:9s} missing={len(missing):2d} errors={len(all_err):2d}"
+                + (f" review-checks={len(warnings)}" if warnings else ""))
         except Exception as exc:
             errors.append({"code": code, "detail": f"cannot parse/validate {fp}: {exc}"})
             records.append({"code": code, "file": str(fp), "status": "error", "errors": [str(exc)]})

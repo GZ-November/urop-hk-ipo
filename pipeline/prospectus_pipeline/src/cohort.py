@@ -157,6 +157,11 @@ def load_cfg(
     cfg["_workbook_path"] = _workbook_path(cfg)
 
     dataset = cfg.setdefault("dataset", {})
+    # An override that restates the config's own interval is not an override. run.py exports
+    # HKIPO_PERIOD_* for its child tools; treating the cohort's own period as new would move
+    # every child onto a different dataset directory than the parent stage.
+    if (period_start_override, period_end_override) == (dataset.get("period_start"), dataset.get("period_end")):
+        period_start_override = period_end_override = None
     has_period_override = bool(period_start_override or period_end_override)
     has_workbook_override = bool(
         workbook_override

@@ -60,6 +60,12 @@ for the domain extraction rules; it is a DSH runtime adapter, not a Node command
 For allotment, read the whole packet and distinguish final offer shares from greenshoe.
 After writing allotment JSON, run `{command} derive_allot --only {code}` BEFORE
 recording any final extraction or review credential (it can modify the payload).
+Reporting periods: `search periods` is authoritative and validate enforces it.
+year-1 is the latest Track Record period; a stub (3M to 11M) is year-1 itself,
+col_AT is its end date, and balance-sheet fields use that date. year-2 and year-3
+are the two complete years before it. Only col_AH/AK/AN are annualised
+(×12/months). Read or compute every number from the cited page. Never solve for
+a value to make an identity hold: leave it NaN and report the identity.
 Validate and correct unsupported values against source text until validation passes:
 ```
 {command} validate --target {target} --only {code}
@@ -76,6 +82,12 @@ agent's reasoning. Verify every populated field's meaning, units, period, page a
 quote. Pay particular attention to consolidated versus parent-only accounts,
 annualization, share-capital denominators, VC/PE classification, cornerstone
 allocations, net versus gross proceeds, and initial versus final offering terms.
+Record the payload's sha256 at the top of the report. Report a discrepancy only
+after opening the cited page yourself. Check the period anchor: year-1 is the
+latest Track Record period (a stub, if there is one), and year-2/year-3 are the
+two complete years before it. For every value this code lists under `warnings`
+in the target's validation.json, recompute it from the cited page and write the
+arithmetic down. Never propose a value that only satisfies an identity.
 Write a review report identifying checked fields, missing fields, corrections and
 source pages. Keep the actual reviewer identity and the report path in the record.
 If corrections change the payload, the extractor must validate and record extracted
