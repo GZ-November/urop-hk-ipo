@@ -408,6 +408,10 @@ def start_collection(
                 "--period-end", end_date.isoformat(),
             ])
 
+        write_reviewed = bool(getattr(args, "write_reviewed", False) or (existing_state or {}).get("write_reviewed"))
+        if write_reviewed:
+            collect_cmd.append("--write-reviewed")
+
         print(f"[*] Executing pipeline collection: {' '.join(collect_cmd)}", flush=True)
         collect_proc = runner(collect_cmd, cwd=root)
         rc = getattr(collect_proc, "returncode", 1)
@@ -452,7 +456,18 @@ def start_collection(
             "work_orders_path": str(work_orders_file) if work_orders_file.exists() else None,
             "resume_command": resume_cmd,
             "exit_code": rc,
+            "write_reviewed": write_reviewed,
         })
+        partial_manifest = (work_orders_file.parent.parent / "partial_writeback.json"
+                            if work_orders_file else None)
+        if write_reviewed and partial_manifest is not None and partial_manifest.is_file():
+            try:
+                partial = json.loads(partial_manifest.read_text(encoding="utf-8"))
+                state["partial_writeback"] = {"manifest": str(partial_manifest),
+                                              "written": len(partial.get("written", [])),
+                                              "pending": len(partial.get("pending", {}))}
+            except (OSError, ValueError):
+                pass
 
         if rc == 3:
             # Work pending: formal extraction or independent review required
@@ -468,6 +483,11 @@ def start_collection(
             if work_orders_file.exists():
                 print(f"Work orders:   {work_orders_file}")
             print(f"Status report: {run_dir / 'START_HERE.html'}")
+            if state.get("partial_writeback"):
+                info = state["partial_writeback"]
+                print(f"Partial write-back: {info['written']} reviewed issuer(s) written, "
+                      f"{info['pending']} pending -> {info['manifest']}")
+                print("  A review-pending snapshot can be exported and bundled now; pending rows stay blank.")
             print("\nAgent next steps:")
             print("  1. Inspect the work orders in out/agent_handoff/work_orders.json")
             print("  2. Perform source disclosures extraction against issuer documents")
@@ -591,6 +611,9 @@ def build_parser() -> argparse.ArgumentParser:
                          help="Reusable run and output directory")
     p_start.add_argument("--profile", choices=["core", "analysis", "dev"], default="core",
                          help="Dependency installation profile (default: core)")
+    p_start.add_argument("--write-reviewed", action="store_true",
+                          help="Write back issuers whose every target passed independent review; "
+                               "keep the rest blank and pending (remembered for later resumes)")
     p_start.add_argument("--no-bootstrap", action="store_true",
                          help="Skip automatic bootstrapping")
     p_start.add_argument("--resume", action="store_true",
@@ -602,6 +625,9 @@ def build_parser() -> argparse.ArgumentParser:
                           help="Reusable run directory containing run_state.json")
     p_resume.add_argument("--profile", choices=["core", "analysis", "dev"], default="core",
                           help="Dependency installation profile")
+    p_resume.add_argument("--write-reviewed", action="store_true",
+                          help="Write back issuers whose every target passed independent review; "
+                               "keep the rest blank and pending (remembered for later resumes)")
     p_resume.add_argument("--no-bootstrap", action="store_true")
 
     return parser

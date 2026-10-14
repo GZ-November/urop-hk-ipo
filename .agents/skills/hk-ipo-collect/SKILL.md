@@ -148,6 +148,14 @@ On a failed review, the extractor corrects the payload, validates, records
 runtime without subagents cannot supply an independent reviewer: leave review
 pending and deliver the prepared packets with a pending-review report.
 
+**Partial write-back.** When the user wants reviewed issuers delivered before
+every review finishes, add `--write-reviewed` to the `start` or `resume`
+command; later resumes remember it. An issuer is written only when every one
+of its targets validates and holds a current reviewed credential. Other rows
+stay blank and are listed with reasons in `out/partial_writeback.json`. The
+command still exits 3 until no issuer is pending, so report the delivery as
+review-pending.
+
 `.venv/bin/python run.py status --config CONFIG` is the progress ledger. A new
 session picks up from it, so long cohorts survive interruptions.
 
