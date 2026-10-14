@@ -19,6 +19,28 @@ explicit gaps; an unavailable report is not evidence of zero IPOs. Large ranges
 should be split into nonoverlapping calendar quarters. Existing studies select
 Main Board 2026 listings; GEM needs a separate sample and research specification.
 
+## Fixed financial-period standard (teacher's manual §2.3, confirmed 2026-10-14)
+
+Every extraction, review and repair uses this rule; do not reinterpret it.
+
+- **year-1** is the latest period in the prospectus's Accountants' Report (the
+  audited Track Record, per its "Track Record Period" definition), whether a
+  full year or a 3–11 month stub. col_AT is its end date.
+- **year-2 / year-3** are the two complete financial years before year-1.
+  Never derive them by subtraction.
+- Unaudited figures outside the Accountants' Report are never year-1. That
+  includes appendix quarterly results and "Recent Developments" numbers.
+- Only net sales, profit before tax and profit for the period (col_AH/AK/AN)
+  are annualised (×12/months). The workbook columns BC (= months/12) and
+  CN/CO/CP (originals) are derived by `run.py disclosure_notes`, not extracted;
+  they are not the payload key `col_BC`.
+- Assets, equity, liabilities, cash and interest-bearing debt take the year-1
+  end values.
+- Operating cash flow, R&D expense, gross profit and capital expenditure take
+  year-1's original-period values, not annualised.
+- `run.py search periods CODE` applies the rule and `validate` rejects a wrong
+  anchor or annualisation.
+
 Collection exit 3 means extraction/independent review pending: read the generated
 work orders, complete supported tasks, and resume the same collection command.
 Use an independent reviewer with original-source access. A credential requires
