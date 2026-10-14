@@ -191,8 +191,11 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
             add("年化系数",
                 f"col_AH/AK/AN 相对引文原值隐含 {implied_months} 个月，但 year-1 为 {y1.months} 个月"
                 f"（应 ×{12 / y1.months:.4g} 年化）")
+    # 下游勾稽按抽取实际所在期间计算：col_AT 已与 Track Record 错位时（上面已报期间锚定），
+    # 用 Track Record 月数去还原年化值只会再造出一条虚假的毛利率错误。
     year1_months = (track_record.year1.months
                     if track_record is not None and track_record.status == "ok" and not overridden
+                    and at_date == track_record.year1.end
                     else implied_months)
     if year1_months is None and at_date is not None:
         # 无全文、无引文比值时的保守兜底：按 12 月结账推断存根月数（与历史行为一致）

@@ -58,11 +58,147 @@ class PeriodResolverTests(unittest.TestCase):
                                    "and the six months ended 31 July 2025")])
         self.assertEqual(tr.status, "unresolved")
 
+    def test_full_year_definition_ignores_later_quarter(self):
+        # 2026Q3 A+H issuers append the A-share Q1 report; it is not part of the Track Record Period.
+        statements = page("CONSOLIDATED STATEMENTS OF PROFIT OR LOSS three months ended March 31, 2025 2026 " * 20, 2)
+        tr = periods.resolve([page("“Track Record Period” the period comprising the three financial years "
+                                   "ended December 31, 2023, 2024 and 2025 “treasury shares” has the meaning"),
+                              statements])
+        self.assertEqual(tr.source, "track_record_definition")
+        self.assertEqual(tr.year1, periods.Period(dt.date(2025, 1, 1), dt.date(2025, 12, 31), 12))
+        self.assertEqual(tr.year3.end, dt.date(2023, 12, 31))
+
+    def test_defined_stub_beats_later_interim_mention(self):
+        later = page("ACCOUNTANTS' REPORT six months ended June 30, 2026 " * 30, 2)
+        tr = periods.resolve([page("“Track Record Period” the years ended December 31, 2023, 2024 and 2025 "
+                                   "and the four months ended April 30, 2026 “Trial Measures”"), later])
+        self.assertEqual(tr.year1, periods.Period(dt.date(2026, 1, 1), dt.date(2026, 4, 30), 4))
+
+    def test_definition_forms(self):
+        for text, year1, year3_end in (
+                ("‘‘Track Record Period’’ the three years ended 31 December 2025 ‘‘Underwriters’’",
+                 periods.Period(dt.date(2025, 1, 1), dt.date(2025, 12, 31), 12), dt.date(2023, 12, 31)),
+                ("“Track Record Period” FY2023, FY2024, FY2025 and 6M2026 “Underwriters”",
+                 periods.Period(dt.date(2026, 1, 1), dt.date(2026, 6, 30), 6), dt.date(2024, 12, 31)),
+                ("“Track Record Period” the period comprising FY2022, FY2023, FY2024 and 10MFY2025",
+                 periods.Period(dt.date(2025, 1, 1), dt.date(2025, 10, 31), 10), dt.date(2023, 12, 31)),
+                ("“Track Record Period” \x02 \x02 the years ended 31 December 2023, 2024 and 2025 and the "
+                 "three months ended 31 March 2026 “Underwriters”",
+                 periods.Period(dt.date(2026, 1, 1), dt.date(2026, 3, 31), 3), dt.date(2024, 12, 31))):
+            with self.subTest(text=text):
+                tr = periods.resolve([page(text)])
+                self.assertEqual((tr.year1, tr.year3.end), (year1, year3_end), tr.reason)
+
+    def test_accountants_report_wording_defines_the_period(self):
+        report = page("ACCOUNTANTS' REPORT the consolidated statements of cash flows of the Group for each of the "
+                      "three years ended December 31, 2025 and the three months ended March 31, 2026 "
+                      "(the “Track Record Period”) and material accounting policy information. "
+                      "Recent developments: the five months ended May 31, 2026", 300)
+        tr = periods.resolve([report])
+        self.assertEqual(tr.source, "accountants_report")
+        self.assertEqual(tr.year1, periods.Period(dt.date(2026, 1, 1), dt.date(2026, 3, 31), 3))
+
+    def test_glossary_and_report_must_agree(self):
+        glossary = page("“Track Record Period” the years ended December 31, 2023, 2024 and 2025 “U.S.”")
+        report = page("for each of the years ended December 31, 2023, 2024 and 2025 and the four months ended "
+                      "April 30, 2026 (the “Track Record Period”)", 300)
+        tr = periods.resolve([glossary, report])
+        self.assertEqual(tr.status, "unresolved")
+        self.assertIn("Accountants' Report", tr.reason)
+
+    def test_text_after_bracketed_reference_is_not_part_of_the_period(self):
+        pages = [page('for each of the years ended December 31, 2024 and 2025 (the "Track Record Period") and the six months '
+                      "ended June 30, 2026")]
+        self.assertIsNone(periods.find_definition(pages))
+        self.assertIsNone(periods.find_report_definition(pages).stub_months)
+
+    def test_forward_looking_year_is_not_a_complete_year(self):
+        text = ("CONSOLIDATED STATEMENTS OF PROFIT OR LOSS years ended December 31, 2023, 2024 and 2025 "
+                "For the year ended December 31, 2026, we expect to pay approximately RMB6.6 million")
+        tr = periods.resolve([page(text)], today=dt.date(2027, 6, 30))
+        self.assertEqual(tr.year1.end, dt.date(2025, 12, 31))
+
+    def test_fallback_weighs_citations(self):
+        header = "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS years ended December 31, 2022, 2023 and 2024 "
+        with self.subTest("post-track-record quarter cited rarely"):
+            tr = periods.resolve([page(header * 10 + "three months ended March 31, 2025 2025 " * 2)])
+            self.assertEqual(tr.year1.months, 12)
+        with self.subTest("current-year estimate does not displace the interim period"):
+            tr = periods.resolve([page(header * 10 + "nine months ended September 30, 2024 2025 " * 20
+                                       + "year ended December 31, 2025 " * 5)])
+            self.assertEqual(tr.year1, periods.Period(dt.date(2025, 1, 1), dt.date(2025, 9, 30), 9))
+
     def test_payload_months_from_annualised_values(self):
         fields = {"col_AH": {"value": 53437000 * 12 / 9, "quote": "Revenue 3,460 30,523 19,454 53,437"},
                   "col_AN": {"value": -1000 * 4 * 1000, "quote": "Loss for the period (1,000)"}}
         self.assertIsNone(periods.payload_months({"col_AH": {"value": 5, "quote": "none"}}))
         self.assertEqual(periods.payload_months({"col_AH": fields["col_AH"]}), 9)
+
+
+class Q3TrackRecordCaseTests(unittest.TestCase):
+    """2026Q3 Main Board prospectuses the first resolver got wrong, reduced to the deciding text.
+
+    Rule (teacher's manual §2.3, confirmed 2026-10-14): year-1 is the latest period of the audited
+    Track Record; unaudited quarters, recent developments and estimates outside it never are.
+    """
+
+    FY2025 = periods.Period(dt.date(2025, 1, 1), dt.date(2025, 12, 31), 12)
+    M3 = periods.Period(dt.date(2026, 1, 1), dt.date(2026, 3, 31), 3)
+    M4 = periods.Period(dt.date(2026, 1, 1), dt.date(2026, 4, 30), 4)
+    Q1_APPENDIX = ("CONSOLIDATED STATEMENTS OF PROFIT OR LOSS Unaudited Financial Information for the Three Months "
+                   "Ended March 31, 2026 three months ended March 31, 2025 2026 ") * 30
+
+    def assert_year1(self, definition, other, expected):
+        tr = periods.resolve([page(definition, 30), page(other, 40)], today=dt.date(2026, 10, 14))
+        self.assertEqual(tr.status, "ok", tr.reason)
+        self.assertEqual(tr.year1, expected)
+        self.assertEqual(tr.year2.end, expected.start - dt.timedelta(days=1))
+
+    def test_false_positives(self):
+        cases = {
+            "1770": ("“Track Record Period” the years ended December 31, 2023, 2024 and 2025 “Underwriters”",
+                     "RECENT DEVELOPMENTS Based on our unaudited consolidated management accounts for the four months "
+                     "ended April 30, 2026 as compared to the same period in 2025", self.FY2025),
+            "2261": ("“Track Record Period” the three years ended December 31, 2023, 2024 and 2025 and the three "
+                     "months ended March 31, 2026 “U.S.”",
+                     "our revenue and gross profit margin increased steadily in the five months ended May 31, 2026 "
+                     "as compared to the same period in 2025", self.M3),
+            "2667": ("“Track Record Period” the three financial years ended December 31, 2025 DEFINITIONS",
+                     "paid to the Directors by our Company for the year ended December 31, 2026 based on the "
+                     "arrangements currently in force", self.FY2025),
+            "2797": ("‘‘Track Record Period’’ FY2023, FY2024 and FY2025 ‘‘Underwriters’’",
+                     "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS year ended 31 December 2023 2024 2025. "
+                     "Our revenue for the four months ended April 30, 2026 increased", self.FY2025),
+            "3223": ("“Track Record Period” the financial years/period ended December 31, 2023, 2024 and 2025 and "
+                     "the three months ended March 31, 2026 “TSE”",
+                     "PROFIT ESTIMATE FOR THE SIX MONTHS ENDED JUNE 30, 2026 On the bases set out in Appendix IIB",
+                     self.M3),
+            "9971": ("“Track Record Period” the period comprising the three financial years ended December 31, "
+                     "2023, 2024 and 2025 “U.S. Securities Act”",
+                     "Our gross margin in the four months ended April 30, 2026 improved compared to the gross margin "
+                     "for the same period in 2025", self.FY2025),
+            "9976": ("“Track Record Period” the years ended December 31, 2023, 2024 and 2025 and the four months "
+                     "ended April 30, 2026 “Trial Measures”",
+                     "Summary of Unaudited Financial Information for the Six Months Ended June 30, 2026 " * 10, self.M4),
+        }
+        for code, (definition, other, expected) in cases.items():
+            with self.subTest(code):
+                self.assert_year1(definition, other, expected)
+
+    def test_unaudited_quarter_outside_track_record_is_not_year1(self):
+        definitions = {
+            "0668": "“Track Record Period” the period comprising the three financial years ended December 31, "
+                    "2023, 2024 and 2025 “treasury share(s)”",
+            "1377": "‘‘Track Record Period’’ the period consisting of the three years ended "
+                    "December 31, 2025 DEFINITIONS",
+            "2249": "“Track Record Period” the three years ended December 31, 2023, 2024 and 2025 “Underwriters”",
+            "2475": "“Track Record Period” the years ended December 31, 2023, 2024 and 2025 “Underwriters”",
+            "6745": "“Track Record Period” the years ended December 31, 2023, 2024 and 2025 "
+                    "“Transfer Pricing Consultant”",
+        }
+        for code, definition in definitions.items():
+            with self.subTest(code):
+                self.assert_year1(definition, self.Q1_APPENDIX, self.FY2025)
 
 
 class ValidateGateTests(unittest.TestCase):
@@ -82,6 +218,16 @@ class ValidateGateTests(unittest.TestCase):
             "value": "31/12/24", "quote": "x", "note": "period-override: p.12 stub is unaudited pro forma"}}}
         self.assertEqual([i for i in check_firm(override, {"fields": []}, track_record=self.STUB)
                           if i["check"] == "期间锚定"], [])
+
+    def test_misanchored_full_year_reports_only_the_anchor(self):
+        # Payload holds FY2024 figures; the 4M stub months must not be used to un-annualise them.
+        rec = {"code": "3757.HK", "fields": {
+            "col_AT": {"value": "31/12/24", "quote": "x"},
+            "col_AH": {"value": 900_000_000, "quote": "Revenue 900,000"},
+            "col_CF": {"value": 400_000_000, "quote": "Gross profit 400,000"}}}
+        checks = [i["check"] for i in check_firm(rec, {"fields": []}, track_record=self.STUB)]
+        self.assertIn("期间锚定", checks)
+        self.assertNotIn("毛利率超限/期间错位", checks)
 
     def test_wrong_annualisation_is_rejected(self):
         rec = {"code": "2652.HK", "fields": {
