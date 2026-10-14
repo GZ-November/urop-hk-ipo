@@ -105,12 +105,18 @@ The command prints the `work_orders.json` path (also saved as
 are the contract: follow them fully. GEM rules: [GEM pipeline](../../../docs/GEM_PIPELINE.md).
 Source rules: [statutory evidence](references/statutory_evidentiary_rules.md).
 
-**Reporting periods.** `run.py search periods CODE` is authoritative, and
-`validate` enforces it. year-1 is the latest Track Record period. If that period
-is a stub (3M to 11M), year-1 is the stub: col_AT is the stub end, and
-balance-sheet fields use that date. year-2 and year-3 are the two complete
-financial years before it. Only col_AH/AK/AN are annualised (×12/months). When
-`search periods` cannot decide, read the "Track Record Period" definition;
+**Reporting periods.** year-1 is the latest period of the audited Track
+Record, the periods covered by the Accountants' Report and named in the
+prospectus's "Track Record Period" definition. If that period is a stub (3M to
+11M), year-1 is the stub: col_AT is the stub end, and balance-sheet fields use
+that date. Unaudited figures outside the Track Record are never year-1. That
+includes appendix quarterly results, "Recent Developments" and
+post-track-record financial information, even when they are later. year-2 and
+year-3 are the two complete Track Record years before year-1. Only
+col_AH/AK/AN are annualised (×12/months). This follows the teacher's manual
+§2.3: use the most recent data and annualise it when it is not a full year.
+`run.py search periods CODE` applies this rule and `validate` enforces it.
+When the command cannot decide, read the Track Record Period definition;
 never derive periods by subtracting years. A justified departure goes in the
 col_AT `note`, starting `period-override:` with the page, and the reviewer
 confirms it.
