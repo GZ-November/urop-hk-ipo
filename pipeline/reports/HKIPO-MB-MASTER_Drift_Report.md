@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-10-02 12:40:27 | **cohort 数**：5 | **样本合计**：155 家 | **变量数**：202
+- **生成时间**：2026-10-14 23:28:59 | **cohort 数**：5 | **样本合计**：155 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -61,8 +61,8 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Operating cash flow in year-1 (before annualization)` | 93.3% | 96.3% | 100.0% | 95.6% | 100.0% |
 | `Cash and cash equivalents at year-1 end` | 93.3% | 100.0% | 100.0% | 95.6% | 100.0% |
 | `R&D expensed in year-1 (before annualization)` | 73.3% | 81.5% | 92.1% | 93.3% | 96.7% |
-| `Development costs capitalized in year-1 (additions, before annualization)` | 80.0% | 85.2% | 100.0% | 93.3% | 80.0% |
-| `Top 5 customers (% of year-1 revenue)` | 80.0% | 85.2% | 100.0% | 84.4% | 76.7% |
+| `Development costs capitalized in year-1 (additions, before annualization)` | 80.0% | 85.2% | 100.0% | 93.3% | 100.0% |
+| `Top 5 customers (% of year-1 revenue)` | 80.0% | 85.2% | 100.0% | 84.4% | 100.0% |
 | `Pre-IPO VC/PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 100.0% | 76.7% |
 | `Pre-IPO VC backing (1=yes; 0=no)` | 100.0% | 70.4% | 100.0% | 100.0% | 70.0% |
 | `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 77.8% | 100.0% | 100.0% | 76.7% |
@@ -80,7 +80,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Technology commercialization stage` | 53.3% | 51.9% | 100.0% | 84.4% | 90.0% |
 | `Debt repayment (% of planned net IPO proceeds)` | 100.0% | 92.6% | 100.0% | 97.8% | 100.0% |
 | `Place of incorporation` | 100.0% | 88.9% | 100.0% | 22.2% | 96.7% |
-| `Financial statement unit multiplier` | 53.3% | 92.6% | 100.0% | 91.1% | 53.3% |
+| `Financial statement unit multiplier` | 53.3% | 92.6% | 100.0% | 91.1% | 76.7% |
 | `Year-1 net sales (original, pre-annualization)` | 86.7% | 96.3% | 100.0% | 100.0% | 100.0% |
 | `Year-1 profit before tax (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
 | `Year-1 profit for period (original)` | 93.3% | 96.3% | 100.0% | 97.8% | 100.0% |
@@ -175,7 +175,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Net sales in year-3` | 86.7% | 100.0% | +13.3pp |
 | `Profit before tax in year-3` | 84.4% | 100.0% | +15.6pp |
 | `Profit for the year in year-3` | 84.4% | 100.0% | +15.6pp |
-| `Development costs capitalized in year-1 (additions, before annualization)` | 93.3% | 80.0% | -13.3pp |
+| `Top 5 customers (% of year-1 revenue)` | 84.4% | 100.0% | +15.6pp |
 | `Pre-IPO VC/PE backing (1=yes; 0=no)` | 100.0% | 76.7% | -23.3pp |
 | `Pre-IPO VC backing (1=yes; 0=no)` | 100.0% | 70.0% | -30.0pp |
 | `Pre-IPO PE backing (1=yes; 0=no)` | 100.0% | 76.7% | -23.3pp |
@@ -187,7 +187,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Earliest Pre-IPO investment round` | 84.4% | 70.0% | -14.4pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 66.7% | -13.3pp |
 | `Place of incorporation` | 22.2% | 96.7% | +74.5pp |
-| `Financial statement unit multiplier` | 91.1% | 53.3% | -37.8pp |
+| `Financial statement unit multiplier` | 91.1% | 76.7% | -14.4pp |
 | `Over-allotment shares actually issued` | 100.0% | 63.3% | -36.7pp |
 | `First trading day turnover (HK$)` | 100.0% | 76.7% | -23.3pp |
 | `1-month post-IPO close price (HK$)` | 100.0% | 66.7% | -33.3pp |
