@@ -35,17 +35,15 @@ def cmd_find(cfg, args, companies):
     payload = [f.__dict__ for f in found]
     if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
         # GEM NLR has no prospectus-date column: preserve the HKEX publication provenance.
-        import re
-        from datetime import date
+        from hkex import parse_doc_date
         from workbook_transaction import workbook_transaction
         from gem_template import update_gem_view
         by_code = {company["code"]: company for company in companies}
         with workbook_transaction(cfg["_workbook_path"], operation="gem-prospectus-date") as workbook:
             for record in payload:
-                match = re.search(r"(\d{4})[/-](\d{2})[/-](\d{2})", str(record.get("doc_datetime") or ""))
-                if record.get("status") != "ok" or match is None:
+                published = parse_doc_date(record.get("doc_datetime"))
+                if record.get("status") != "ok" or published is None:
                     continue
-                published = date(*(int(part) for part in match.groups()))
                 company = by_code[record["code"]]
                 if company.get("prospectus_date") is None:
                     workbook[cfg["sheet"]].cell(company["row"], 4).value = published
@@ -556,27 +554,50 @@ def cmd_collect(cfg, args, companies):
         return 3
 
     targets = ("prospectus", "allot", "gem") if is_gem else ("prospectus", "allot")
+    partial = bool(getattr(args, "write_reviewed", False))
     validated = {}
     for target in targets:
         result = cmd_validate(cfg, argparse.Namespace(target=target), companies)
         validated[target] = result
-        if result.get("errors") or result.get("missing_files") or not result.get("gate_pass"):
+        if not partial and (result.get("errors") or result.get("missing_files") or not result.get("gate_pass")):
             return 1
     from state import require
-    unreviewed = []
+    pending: dict[str, list[str]] = {}
     for target in targets:
         records = {record["code"]: record for record in validated[target].get("records", [])}
         for code in sorted(wanted):
-            version = records.get(code, {}).get("hash")
+            record = records.get(code, {})
+            if record.get("status") not in {"pass", "warning_missing"}:
+                pending.setdefault(code, []).append(f"{target}: validation {record.get('status', 'missing')}")
+                continue
             try:
                 for gate in ("extracted", "validated", "reviewed"):
-                    require(cfg, target, code, version, gate)
+                    require(cfg, target, code, record.get("hash"), gate)
             except ValueError:
-                unreviewed.append(f"{code} {target}")
-    if unreviewed:
-        print("Independent review is required before write-back:", ", ".join(unreviewed))
+                pending.setdefault(code, []).append(f"{target}: independent review pending")
+    if pending and not partial:
+        print("Independent review is required before write-back:",
+              ", ".join(f"{code} {reason.split(':')[0]}" for code, reasons in pending.items() for reason in reasons))
         print("  Cohort config:", cfg["_config_path"])
+        print("  To write the fully reviewed issuers now, rerun with --write-reviewed.")
         return 3
+    full_companies = companies
+    if partial:
+        # Issuer-level gate: a row is written only when every target of that issuer is reviewed,
+        # so no workbook row mixes reviewed and unreviewed evidence.
+        companies = [c for c in companies if normalize_code(c["code"]) not in pending]
+        manifest = cfg["paths"]["out"] / "partial_writeback.json"
+        manifest.write_text(json.dumps({
+            "cohort_config": str(cfg["_config_path"]),
+            "written": sorted(normalize_code(c["code"]) for c in companies),
+            "pending": pending,
+            "complete": not pending,
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Reviewed issuers written: {len(companies)}/{len(full_companies)}; pending: {len(pending)} -> {manifest}")
+        for code, reasons in pending.items():
+            print(f"  pending {code}: {'; '.join(reasons)}")
+        if not companies:
+            return 3
 
     try:
         _ipo_count_reports(cfg, args, companies)
@@ -595,7 +616,12 @@ def cmd_collect(cfg, args, companies):
         return 1
     if cmd_audit(cfg, argparse.Namespace(target="all"), companies):
         return 1
-    return cmd_cross_check(cfg, args, companies)
+    rc = cmd_cross_check(cfg, args, companies)
+    if rc == 0 and partial and pending:
+        print(f"Partial write-back complete; {len(pending)} issuer(s) remain review-pending "
+              "and stay blank in the workbook.")
+        return 3
+    return rc
 
 
 def cmd_merge_topics(cfg, args, companies):
@@ -686,6 +712,8 @@ def main() -> int:
     ap.add_argument("--only", nargs="*", default=None, help="只处理这些股票代码，如 6082.HK")
     ap.add_argument("--target", choices=["prospectus", "allot", "gem", "all"], default="prospectus",
                     help="validate/write/audit 作用于哪套字段（默认 prospectus，audit 支持 all）")
+    ap.add_argument("--write-reviewed", action="store_true",
+                    help="collect 阶段：只写回所有目标均已通过独立复核的发行人，其余保持空白并列入 out/partial_writeback.json（仍以退出码 3 提示未完成）")
     ap.add_argument("--fill-missing", action="store_true",
                     help="write 阶段：按手册把缺失写成 NaN（数值）或 NA（文本/日期）")
     ap.add_argument("--derive", action="store_true",

@@ -23,6 +23,24 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 PREFIX_URL = "https://www1.hkexnews.hk/search/prefix.do"
 
 
+def parse_doc_date(value) -> dt.date | None:
+    """HKEX 文件索引 DATE_TIME（"30/09/2025 06:18"）或 ISO 日期 -> date；无法解析返回 None。"""
+    import re
+    text = str(value or "")
+    match = re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b", text)
+    if match:
+        day, month, year = (int(part) for part in match.groups())
+    else:
+        match = re.search(r"\b(\d{4})[/-](\d{1,2})[/-](\d{1,2})\b", text)
+        if not match:
+            return None
+        year, month, day = (int(part) for part in match.groups())
+    try:
+        return dt.date(year, month, day)
+    except ValueError:
+        return None
+
+
 @dataclass
 class Found:
     code: str

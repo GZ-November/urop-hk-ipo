@@ -105,10 +105,23 @@ The command prints the `work_orders.json` path (also saved as
 are the contract: follow them fully. GEM rules: [GEM pipeline](../../../docs/GEM_PIPELINE.md).
 Source rules: [statutory evidence](references/statutory_evidentiary_rules.md).
 
+**Reporting periods.** `run.py search periods CODE` is authoritative, and
+`validate` enforces it. year-1 is the latest Track Record period. If that period
+is a stub (3M to 11M), year-1 is the stub: col_AT is the stub end, and
+balance-sheet fields use that date. year-2 and year-3 are the two complete
+financial years before it. Only col_AH/AK/AN are annualised (×12/months). When
+`search periods` cannot decide, read the "Track Record Period" definition;
+never derive periods by subtracting years. A justified departure goes in the
+col_AT `note`, starting `period-override:` with the page, and the reviewer
+confirms it.
+
 **Extraction.** One extractor per issuer covers all of that issuer's targets.
 Extractors may run as parallel subagents, in waves of about five issuers. Run
 the gate commands from the instruction file (`derive_allot` before an allotment
 credential, then `validate`, then `state extracted`) for one issuer at a time.
+A number must be read or computed from the cited page. Never solve for a value
+so that an identity (assets = equity + liabilities) holds: an unreadable value
+stays `NaN`, and the failing identity is reported.
 
 **Independent review.** Dispatch a separate reviewer subagent with fresh
 context for each issuer: give it the `review_instruction` files and the packet,
@@ -122,10 +135,26 @@ against the original pages and writes its report to
   --evidence-ref "<review report path>" --review-note "<one-line summary>"
 ```
 
+Each reviewer first records the payload's sha256, reports a discrepancy only
+after opening the cited page itself, and explains every value listed under
+`warnings` for that code in the target's `validation.json`. Those values do
+not appear literally in their quote, so the reviewer recomputes them from the
+page and writes the arithmetic down. Run reviewers in sequential waves of at
+most six. Larger batches fail silently, so before recording a verdict, confirm
+the report file exists and names the same sha256.
+
 On a failed review, the extractor corrects the payload, validates, records
 `state extracted` again, and a new reviewer reviews the changed payload. A
 runtime without subagents cannot supply an independent reviewer: leave review
 pending and deliver the prepared packets with a pending-review report.
+
+**Partial write-back.** When the user wants reviewed issuers delivered before
+every review finishes, add `--write-reviewed` to the `start` or `resume`
+command; later resumes remember it. An issuer is written only when every one
+of its targets validates and holds a current reviewed credential. Other rows
+stay blank and are listed with reasons in `out/partial_writeback.json`. The
+command still exits 3 until no issuer is pending, so report the delivery as
+review-pending.
 
 `.venv/bin/python run.py status --config CONFIG` is the progress ledger. A new
 session picks up from it, so long cohorts survive interruptions.

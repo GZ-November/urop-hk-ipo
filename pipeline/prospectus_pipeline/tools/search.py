@@ -16,7 +16,6 @@
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
 import re
 import sys
@@ -24,6 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent if Path(__file__).resolve().parent.name == "tools" else Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "src"))
 
 # 每个字段的定位锚点。bundle 命令一次把全部字段的候选原文吐出来，
 # 目的是把「十几次 search 往返」压成「一次调用」，从而砍掉大量轮数与 token。
@@ -172,137 +172,31 @@ def _bundle_field(pages: list[dict], patterns: list[str], per_field: int = 3,
     return blocks
 
 
-MONTHS = {"january":1,"february":2,"march":3,"april":4,"may":5,"june":6,"july":7,
-          "august":8,"september":9,"october":10,"november":11,"december":12}
-MON = "|".join(m.capitalize() for m in MONTHS)
-# 中期：支持 "nine months ended 30 September 2025" 与 "... September 30, 2025"
-STUB_A = re.compile(r"(nine|six|four|three)\s+months\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.I)
-STUB_B = re.compile(r"(nine|six|four|three)\s+months\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
-YEAR_A = re.compile(r"year\s+ended\s+(\d{1,2})\s+(" + MON + r")\s+(20\d\d)", re.I)
-YEAR_B = re.compile(r"year\s+ended\s+(" + MON + r")\s+(\d{1,2}),?\s+(20\d\d)", re.I)
-YEAR_C = re.compile(r"years?\s+ended\s+December\s+31,?\s+(20\d\d),\s*(20\d\d)\s+and\s+(20\d\d)", re.I)
-YEAR_D = re.compile(r"years?\s+ended\s+31\s+December\s+(20\d\d),\s*(20\d\d)\s+and\s+(20\d\d)", re.I)
-def detect_periods(pages: list[dict]) -> dict:
-    """确定性判定 Track Record Period。
-
-    代理看到现成的三年表就直接填 2022/2023/2024，漏掉中期（如 9M2025），
-    会让 year-1 的 19 个财务字段全错。所以在这里算死。
-    只扫前 500 页 + 后 500 页（摘要表与会计师报告），避免把前瞻年份当历史。
-    """
-    stubs: dict[tuple[int, int], str] = {}
-    stub_days: dict[tuple[int, int], int] = {}
-    years: set[int] = set()
-    max_year = dt.date.today().year
-    body = pages[:500] + pages[-500:]
-    # 只在真正的报表页里认中期：表头口径才作数，
-    # 后续事项/季度比较里的偶然提法不算。
-    STMT = re.compile(r"CONSOLIDATED STATEMENTS? OF (?:PROFIT OR LOSS|COMPREHENSIVE|"
-                      r"FINANCIAL POSITION|CASH FLOWS?)|ACCOUNTANTS. REPORT|"
-                      r"SUMMARY OF HISTORICAL FINANCIAL INFORMATION|"
-                      r"SUMMARY OF CONSOLIDATED STATEMENTS", re.I)
-    stmt_pages = [p for p in body if STMT.search(p["text"])]
-    scan = stmt_pages or body
-    for p in scan:
-        t = p["text"]
-        for m in STUB_A.finditer(t):
-            w, day, mon, yr = m.group(1).lower(), int(m.group(2)), m.group(3), int(m.group(4))
-            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'four':4,'three':3}[w] }M{yr}"
-            stub_days[(yr, MONTHS[mon.lower()])] = day
-        for m in STUB_B.finditer(t):
-            w, mon, day, yr = m.group(1).lower(), m.group(2), int(m.group(3)), int(m.group(4))
-            stubs[(yr, MONTHS[mon.lower()])] = f"{ {'nine':9,'six':6,'four':4,'three':3}[w] }M{yr}"
-            stub_days[(yr, MONTHS[mon.lower()])] = day
-        for rx, gi in ((YEAR_A, 3), (YEAR_B, 3)):
-            for m in rx.finditer(t):
-                yr = int(m.group(gi))
-                if yr <= max_year:
-                    years.add(yr)
-        for rx in (YEAR_C, YEAR_D):
-            for m in rx.finditer(t):
-                for g in m.groups():
-                    if int(g) <= max_year:
-                        years.add(int(g))
-    stubs = {k: v for k, v in stubs.items() if k[0] <= max_year}
-    stub_years = {y for y, _ in stubs.keys()}
-    years = {y for y in years if y not in stub_years}
-    # 统计每个中期的出现次数：Track Record 的中期会在每个表头反复出现，
-    # 后续事项/季度比较里的偶然提法只出现一两次。
-    freq: dict[tuple[int, int], int] = {}
-    for p in scan:
-        t = p["text"]
-        for rx in (STUB_A, STUB_B):
-            for m in rx.finditer(t):
-                g = m.groups()
-                if rx is STUB_A:
-                    mon, yr = g[2], int(g[3])
-                else:
-                    mon, yr = g[1], int(g[3])
-                key = (yr, MONTHS[mon.lower()])
-                if yr <= max_year:
-                    freq[key] = freq.get(key, 0) + 1
-    return {"stubs": sorted((y, mo, lab) for (y, mo), lab in stubs.items()),
-            "years": sorted(years), "freq": freq, "stub_days": stub_days}
-
-
 def cmd_periods(args):
-    """打印期间判定结果（确定性）。"""
+    """打印期间判定结果（确定性，见 src/periods.py 的数据集口径）。"""
+    from periods import resolve
     pages = load(args.code)
-    d = detect_periods(pages)
-    stubs, years = d["stubs"], d["years"]
-    if not stubs and not years:
-        print("（未能判定期间，请用 search \"months ended\"）")
+    tr = resolve(pages)
+    print("# 招股书出现的中期与年度（来源：" + (tr.source or "无") + "）")
+    print("  中期: " + (", ".join(f"{months}M@{end:%Y-%m-%d}x{n}" for end, months, n in tr.stubs) or "无"))
+    print("  年度: " + (", ".join(f"FY@{end:%Y-%m-%d}" for end in tr.annual_ends) or "无"))
+    if tr.status != "ok":
+        print(f"\n# 无法判定：{tr.reason}；请核对 Track Record Period 定义与报表页，不得用减法推期间")
         return
-    print("# 招股书出现的中期与年度")
-    print(f"  中期: {[f'{l}@{m:02d}' for y, m, l in stubs] or '无'}")
-    print(f"  年度: {years or '无'}")
-    # A complete annual period supersedes a stray interim-period mention from
-    # the same or an earlier year (for example, an incorporation-history note).
-    latest_stub_year = max((y for y, _, _ in stubs), default=None)
-    latest_full_year = max(years, default=None)
-    use_stub = bool(stubs) and not (
-        latest_full_year is not None
-        and latest_stub_year is not None
-        and latest_full_year >= latest_stub_year
-    )
-    if use_stub:
-        freq = d.get("freq") or {}
-        # Track Record Period 应取报表覆盖的最新中期。频次只用于显示诊断，
-        # 不能让重复出现较多的旧比较期覆盖更新期间。
-        sy, sm, label = max(stubs, key=lambda x: (x[0], x[1]))
-        day = d.get("stub_days", {}).get((sy, sm))
-        if freq:
-            print("  （各中期出现次数：" +
-                  ", ".join(f"{lab}@{mo:02d}x{freq.get((y, mo), 0)}" for y, mo, lab in stubs) + "）")
-        months = int(label.split("M")[0])
-        factor = 12 / months
-        prior_years = {sy - 1, sy - 2}
-        missing_years = sorted(prior_years - set(years))
-        if missing_years:
-            print(f"\n# 无法判定：{label} 前缺少已检出的完整年度 "
-                  f"{', '.join(f'FY{y}' for y in missing_years)}；请核对报表页")
-            return
-        print(f"\n# 判定：year-1 = {label}（期末 {sm:02d}/{sy}）；"
-              f"year-2 = FY{sy-1}；year-3 = FY{sy-2}")
-        if day is None:
-            print("  col_AT = 无法确定具体日；必须回报表页核对，不能写月/年占位值")
-        else:
-            print(f"  col_AT = {day:02d}/{sm:02d}/{str(sy)[2:]}")
-        print(f"  年化：销售/税前/净利 ×{factor:.4g}（{months} 个月 -> 12 个月）；"
-              f"AU/AW/AX/AY/AV 一律不年化")
+    y1, y2, y3 = tr.year1, tr.year2, tr.year3
+    year3 = f"FY{y3.end.year}" if y3 else "无（Track Record 不足两个完整年度，year-3 记缺失）"
+    if y1.months < 12:
+        print(f"\n# 判定：year-1 = {y1.months}M{y1.end.year}（{y1.start:%d/%m/%Y}–{y1.end:%d/%m/%Y}）；"
+              f"year-2 = FY{y2.end.year}；year-3 = {year3}")
+        print(f"  col_AT = {y1.end:%d/%m/%y}（资产负债表字段同样取该存根期末）")
+        print(f"  年化：销售/税前/净利 ×{12 / y1.months:.4g}（{y1.months} 个月 -> 12 个月）；"
+              f"AU/AW/AX/AY/AV/CF/CG 一律不年化")
     else:
-        # Never manufacture comparison periods by subtracting from the latest
-        # year: all three years must have been found in the prospectus.
-        ordered_years = sorted(years)
-        latest_three = ordered_years[-3:]
-        if len(latest_three) < 3 or any(
-            later - earlier != 1 for earlier, later in zip(latest_three, latest_three[1:])
-        ):
-            print("\n# 无法判定：未检出连续的三个完整年度；请核对报表页")
-            return
-        y3, y2, y1 = latest_three
-        print(f"\n# 判定：均为完整年度 -> year-1 = FY{y1}；year-2 = FY{y2}；year-3 = FY{y3}")
-        print(f"  col_AT = 31/12/{str(y1)[2:]}")
+        print(f"\n# 判定：均为完整年度 -> year-1 = FY{y1.end.year}；year-2 = FY{y2.end.year}；year-3 = {year3}")
+        print(f"  col_AT = {y1.end:%d/%m/%y}")
         print("  不年化（均为全年）")
+    print(f"  year-2 = {y2.start:%d/%m/%Y}–{y2.end:%d/%m/%Y}" +
+          (f"；year-3 = {y3.start:%d/%m/%Y}–{y3.end:%d/%m/%Y}" if y3 else ""))
 
 
 def _sharecap_score(text: str) -> int:

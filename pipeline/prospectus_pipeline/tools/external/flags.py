@@ -368,7 +368,7 @@ def main() -> int:
         ws = wb[cfg["sheet"]]
         for code, rec in audit.items():
             r = row_of[code]
-            for k in ["BH", "BJ", "BK", "BL", "BM", "BQ"]:
+            for k in [key for key in ("BH", "BJ", "BK", "BL", "BM", "BQ") if key in headers]:
                 v = rec["values"][k]
                 ws.cell(r, col_of[k]).value = int(v) if v.lstrip("-").isdigit() else v
             u = rec["values"]["CL"]
@@ -378,7 +378,7 @@ def main() -> int:
                 y, m, d = (int(x) for x in u.split("-"))
                 ws.cell(r, col_of["CL"]).value = dt.date(y, m, d)
 
-    print(f"已写回 7 列（{len(audit)} 家） -> {book.name}")
+    print(f"已写回 {len(headers)} 列（{len(audit)} 家） -> {book.name}")
     return 0
 
 

@@ -48,13 +48,13 @@ def fresh_token(sess: requests.Session, log=print) -> str:
     return m.group(1)
 
 
-def fetch_one(sess: requests.Session, code: str, token: str) -> dict:
+def fetch_one(sess: requests.Session, code: str, token: str, lang: str = "eng") -> dict:
     digits = "".join(c for c in str(code) if c.isdigit())
     # 接口要的是去前导零的形式（100 而非 0100），否则 "Invalid Input"
     digits = str(int(digits)) if digits else digits
     # token 本身已 URL 编码（含 %2f/%2b），必须原样拼进 query，
     # 交给 requests 的 params 会被二次编码成 %252f 导致 403。
-    url = (f"{WIDGET}?sym={digits}&token={token}&lang=eng"
+    url = (f"{WIDGET}?sym={digits}&token={token}&lang={lang}"
            f"&qid={int(time.time() * 1000)}&callback=cb")
     r = sess.get(url, headers={"User-Agent": UA,
                                "Referer": "https://www.hkex.com.hk/"}, timeout=30)
@@ -92,17 +92,20 @@ def main() -> int:
         for attempt in (1, 2):
             try:
                 q = fetch_one(sess, code, token)
+                # 繁体中文子类别与 data/manual/hsics.json 的 name 逐字一致，供 hsic_codes 无英文映射时定码
+                q_zh = fetch_one(sess, code, token, lang="chi")
                 break
             except Exception as exc:  # noqa: BLE001
                 if attempt == 2:
                     print(f"ERR  {code}: {type(exc).__name__}: {exc}")
-                    q = {}
+                    q, q_zh = {}, {}
                 else:
                     token = fresh_token(sess)
                     n_tok += 1
         out[code] = {
             "hsic_ind": q.get("hsic_ind_classification"),
             "hsic_sub": q.get("hsic_sub_sector_classification"),
+            "hsic_sub_zh": q_zh.get("hsic_sub_sector_classification"),
             "incorp": q.get("incorpin"),
             "listing_category": q.get("listing_category"),
             "listing_date": q.get("listing_date"),

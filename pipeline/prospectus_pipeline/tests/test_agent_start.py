@@ -244,6 +244,32 @@ class AgentStartTests(unittest.TestCase):
             self.assertEqual(state["board"], "Main Board")
             self.assertEqual(state["status"], "ANALYSIS-READY")
 
+    def test_write_reviewed_is_passed_to_collect_and_remembered_on_resume(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            run_dir = root / "run_main"
+            cohort_dir = root / "pipeline/prospectus_pipeline/datasets/HKIPO_2026-01-01_2026-03-31_HKIPO-MB"
+            cohort_dir.mkdir(parents=True)
+            (cohort_dir / "cohort.yaml").write_text("dataset:\n  board: Main Board\n", encoding="utf-8")
+            os.environ["HKIPO_PYTHON"] = sys.executable
+            commands = []
+
+            def pending(cmd, **kwargs):
+                commands.append(list(cmd))
+                return DummyProcess(3)
+
+            args = argparse.Namespace(
+                board="main", period_start="2026-01-01", period_end="2026-03-31",
+                run_dir=str(run_dir), profile="core", no_bootstrap=True, resume=False,
+                write_reviewed=True,
+            )
+            self.assertEqual(start_collection(args, root=root, runner=pending), 3)
+            resume_args = argparse.Namespace(run_dir=str(run_dir), profile="core", no_bootstrap=True)
+            self.assertEqual(resume_collection(resume_args, root=root, runner=pending), 3)
+            self.assertTrue(all("--write-reviewed" in cmd for cmd in commands))
+            state = json.loads((run_dir / "run_state.json").read_text(encoding="utf-8"))
+            self.assertTrue(state["write_reviewed"])
+
     def test_failure_propagation_no_stale_success(self):
         """Verify pipeline failure is propagated with exit code and no fake success."""
         with tempfile.TemporaryDirectory() as temp_dir:

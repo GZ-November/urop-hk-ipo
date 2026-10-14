@@ -233,6 +233,50 @@ class DateCohortWorkbookTests(SourceFixture):
             self.assertEqual(result, 3)
             write.assert_not_called()
 
+    def test_write_reviewed_writes_only_fully_reviewed_issuers(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            codes = ("6082.HK", "2513.HK")
+            paths = {key: root / key for key in ("out", "packets", "allot_out", "allot_packets")}
+            for path in paths.values():
+                path.mkdir()
+            for out_key, packets_key in (("out", "packets"), ("allot_out", "allot_packets")):
+                (paths[out_key] / "packets.json").write_text(json.dumps([{"code": c} for c in codes]))
+                (paths[out_key] / "extracted").mkdir()
+                for code in codes:
+                    stem = "HKIPO-MB" + code.split(".")[0]
+                    (paths[packets_key] / f"{stem}.md").write_text("packet")
+                    (paths[out_key] / "extracted" / f"{stem}.json").write_text("{}")
+            cfg = {"paths": paths, "_config_path": root / "cohort.yaml", "dataset": {"board": "Main Board"}}
+            report = {"gate_pass": False, "errors": [{"code": "2513.HK"}],
+                      "records": [{"code": c, "hash": c, "status": "pass"} for c in codes]}
+
+            def require(cfg, target, code, version, gate):
+                if code == "2513.HK" and target == "allot" and gate == "reviewed":
+                    raise ValueError("not reviewed")
+                return {}
+
+            companies = [{"code": c} for c in codes]
+            with patch.object(pipeline_run, "cmd_validate", return_value=report), \
+                    patch("state.require", side_effect=require), \
+                    patch.object(pipeline_run, "_ipo_count_reports", return_value=[]), \
+                    patch.object(pipeline_run, "cmd_write", return_value=0) as write, \
+                    patch.object(pipeline_run, "cmd_external", return_value=0), \
+                    patch.object(pipeline_run, "cmd_academic", return_value=0), \
+                    patch.object(pipeline_run, "cmd_disclosure_notes", return_value=0), \
+                    patch.object(pipeline_run, "cmd_audit", return_value=0), \
+                    patch.object(pipeline_run, "cmd_cross_check", return_value=0):
+                blocked = pipeline_run.cmd_collect(cfg, argparse.Namespace(), companies)
+                write.assert_not_called()
+                result = pipeline_run.cmd_collect(cfg, argparse.Namespace(write_reviewed=True), companies)
+            self.assertEqual((blocked, result), (1, 3))  # without the flag a validation error still fails closed
+            self.assertEqual({tuple(c["code"] for c in call.args[2]) for call in write.call_args_list},
+                             {("6082.HK",)})
+            manifest = json.loads((paths["out"] / "partial_writeback.json").read_text())
+            self.assertEqual(manifest["written"], ["6082.HK"])
+            self.assertEqual(list(manifest["pending"]), ["2513.HK"])
+            self.assertFalse(manifest["complete"])
+
 
 if __name__ == "__main__":
     unittest.main()
