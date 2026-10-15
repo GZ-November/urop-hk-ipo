@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-10-16 01:45:58",
+  "workbook": "cohorts/HKIPO-GEM2026Q1.xlsx",
+  "sheet": "GEM_details",
+  "audited_companies_count": 1,
+  "stats": {
+    "gem": {
+      "target": "gem",
+      "fields_count": 15,
+      "companies_audited": 1,
+      "total_cells_audited": 15,
+      "matches": 15,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 10,
+      "matches_with_value": 5,
+      "json_files_absent": 0,
+      "both_missing_by_column": {
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 1,
+        "J": 1,
+        "K": 1,
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1
+      },
+      "by_column": {}
+    }
+  },
+  "discrepancies": [],
+  "external_columns": [
+    {
+      "col": "L",
+      "header": "GEM eligibility R&D / operating expenditure ratio",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "M",
+      "header": "GEM disclosed minimum market cap (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "N",
+      "header": "GEM disclosed minimum public float (%)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.25
+    },
+    {
+      "col": "O",
+      "header": "GEM public float waiver / exemption",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "P",
+      "header": "GEM disclosed controller lockup (months)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 6
+    },
+    {
+      "col": "Q",
+      "header": "GEM compliance adviser",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Lego Corporate Finance Limited"
+    },
+    {
+      "col": "R",
+      "header": "GEM compliance adviser appointment end",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "S",
+      "header": "GEM offering structure",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Combined offering: Public Offer (12,500,000 Shares) and Placing (112,500,000 Shares)"
+    },
+    {
+      "col": "T",
+      "header": "GEM board lot (shares)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 4000
+    },
+    {
+      "col": "U",
+      "header": "Official GEM funds raised (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 75000000
+    },
+    {
+      "col": "V",
+      "header": "Official GEM shares at listing",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 500000000
+    },
+    {
+      "col": "W",
+      "header": "Official GEM market capitalisation (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 300000000
+    },
+    {
+      "col": "X",
+      "header": "Official GEM source report",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "pipeline/sources/GEM/e_newlistings2026.xlsx"
+    },
+    {
+      "col": "Y",
+      "header": "GEM prospectus date source",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "HKEX publication 31/12/2025 06:05; https://www1.hkexnews.hk/listedco/listconews/gem/2025/1231/2025123100007.pdf"
+    }
+  ],
+  "company_states": {
+    "8610.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    }
+  }
+}

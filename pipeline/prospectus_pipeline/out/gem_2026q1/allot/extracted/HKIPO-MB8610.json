@@ -1,0 +1,118 @@
+{
+  "code": "8610.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.186624,
+      "page": 6,
+      "quote": "Total 23,328,000 18.66% 4.66%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 10745.13,
+      "page": 4,
+      "quote": "Subscription level 10,745.13 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 145089,
+      "page": 4,
+      "quote": "Number of valid applications 145,089",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 134314148000,
+      "page": 12,
+      "quote": "12,500,000 5,417 1,557 out of 5,417 to receive 4,000 Shares",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 10,745.13 times",
+      "page": 4,
+      "quote": "Subscription level 10,745.13 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "09/01/26",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Sole Overall Coordinator (for itself and on behalf of the Underwriters) and our Compa",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "12/01/2026",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**12/01/2026 18:56**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 125000000,
+      "page": 3,
+      "quote": "Number of Offer Shares 125,000,000 Number of Public Offer Shares 12,500,000 Number of Placing Shares 112,500,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 12500000,
+      "page": 4,
+      "quote": "Final number of Offer Shares under the Public Offer 12,500,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 112500000,
+      "page": 5,
+      "quote": "Final number of Offer Shares under the Placing 112,500,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2026-01-13 起 45 天内共 1 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-27 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No clawback: Claw-back triggered No; re-allocation procedure not applied; final Public Offer 12,500,000 and Placing 112,500,000 Shares",
+      "page": 13,
+      "quote": "The re-allocation procedure as disclosed in the paragraph headed “Structure and Conditions of the Share Offer – The Public Offer – Re-allocation” in the Prospectus has not been applied.",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 50000000,
+      "page": 3,
+      "quote": "Less: Estimated listing expenses payable based on Final Offer Price HK$ (25.00) million Net proceeds HK$50.00 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 15,
+      "quote": "125,000,000 Shares, representing 25% of the issued share capital of the Company will be held in the public hands",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 500000000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 500,000,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.2033,
+      "page": null,
+      "quote": "公式：(col_CS 125,000,000 − col_CK 0.1866×col_CS) ÷ col_CZ 500,000,000 = 0.2033；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 125,000,000 − col_CK 0.1866×col_CS) ÷ col_CZ 500,000,000 = 0.2033；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 500000000,
+      "page": 3,
+      "quote": "公式：(col_CS 125,000,000 − col_CK 0.1866×col_CS) ÷ col_CZ 500,000,000 = 0.2033；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

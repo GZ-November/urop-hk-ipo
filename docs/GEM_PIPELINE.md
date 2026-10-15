@@ -116,7 +116,7 @@ Reported subscription ratio and industry remain source candidates; they are not 
 
 ## Collection and delivery
 
-Use `collect --board gem --period-start YYYY-MM-DD --period-end YYYY-MM-DD` and the generated cohort config. Follow portable handoff work orders for prospectus, allotment and GEM extensions. All three targets need independent current review before collect writeback. The base configuration `gem_base.yaml` is a generation recipe; `config_gem_2026q1.yaml` is the initial official-source-only canonical cohort, explicitly awaiting extraction/review.
+Use `collect --board gem --period-start YYYY-MM-DD --period-end YYYY-MM-DD` and the generated cohort config. Follow portable handoff work orders for prospectus, allotment and GEM extensions. All three targets need independent current review before collect writeback. The base configuration `gem_base.yaml` is a generation recipe; `config_gem_2026q1.yaml` is the canonical GEM 2026Q1 cohort (8610.HK): all three targets were extracted and independently reviewed, and its outputs live under `out/gem_2026q1/`.
 
 GEM exports live in `pipeline/exports/GEM/` and `pipeline/codebooks/GEM/`. They do not enter `HKIPO-MB-MASTER_clean.csv` or the existing Main Board 2026 studies. A bundle contains both the common clean CSV and the GEM research view/extensions; use stock code and listing date to join cohorts and board labels to prevent accidental sample mixing.
 
