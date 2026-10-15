@@ -12,8 +12,9 @@
 ._*
 .Spotlight-V100
 .Trashes
-* 2.*
-* 3.*
+# Finder/iCloud conflict copies: "name 2.ext", "name 4.ext", ...
+* [0-9].*
+* [0-9][0-9].*
 *.swp
 *.swo
 *~
