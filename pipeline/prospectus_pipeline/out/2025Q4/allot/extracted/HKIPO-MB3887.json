@@ -1,0 +1,116 @@
+{
+  "code": "3887.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3634,
+      "page": 11,
+      "quote": "Total\n87,416,400\n3.16%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 393.71,
+      "page": 4,
+      "quote": "Subscription level\n393.71 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 88592,
+      "page": 4,
+      "quote": "No. of valid applications\n88,592",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 9471590800,
+      "page": 13,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING\nSubject to the satisfaction of the conditions set out in the Prospectus, valid applications made by",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 393.71 times (Hong Kong Public Offering)",
+      "page": 4,
+      "quote": "Subscription level\n393.71 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "15/12/25",
+      "page": 2,
+      "quote": "The Price Determination Date\nis expected to be on or before Monday, December 15, 2025, (Hong Kong time) and, in any event, not later than 12:00 noon on Monday, December 15, 2025",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "16/12/2025",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**16/12/2025 22:38**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 240570000,
+      "page": 3,
+      "quote": "Offer Shares and Share Capital\nNumber of Offer Shares\n240,570,000 Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 24057200,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public \nOffering (after reallocation)\n24,057,200",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 216512800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering\n216,512,800",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 892400,
+      "page": 1,
+      "quote": "has been partially exercised by the Overall Coordinators, on behalf of the International Underwriters, on Friday, January 9, 2026 in respect of an aggregate of 892,400 Shares",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (12/01/2026 08:00)"
+    },
+    "col_CW": {
+      "value": "Reallocation: No. No. of Offer Shares reallocated from the International Offering: 0; final Hong Kong Public Offering 24,057,200 Shares (10% of the Global Offering).",
+      "page": 4,
+      "quote": "Reallocation\nNo\nNo. of Offer Shares initially available under the Hong Kong \nPublic Offering\n24,057,200\nNo. of Offer Shares reallocated from the International \nOffering\n0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1479240781,
+      "page": 3,
+      "quote": "Net proceeds\nHK$1,479,240,781",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.248,
+      "page": 18,
+      "quote": "the total number of Shares held in public hands represents approximately 24.80% of the \ntotal issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 2765176002,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise \nof the Over-allotment Option)\n2,765,176,002 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0554,
+      "page": 18,
+      "quote": "Based on the Offer Price of HK$6.68 per Share, the free float of our Company is 5.54% and \nwith a market value at the time of the Listing of approximately HK$1,023 million",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float percentage of 5.54% is disclosed by the announcement against the total issued share capital of the Company immediately after the Global Offering (before exercise of the Over-allotment Option)",
+      "page": 18,
+      "quote": "the free float of our Company is 5.54% and \nwith a market value at the time of the Listing of approximately HK$1,023 million",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 2765176002,
+      "page": 18,
+      "quote": "Immediately after the completion of the Global Offering (before any exercise of the Over-allotment \nOption), the total number of Shares held in public hands represents approximately 24.80% of the",
+      "confidence": "medium"
+    }
+  }
+}

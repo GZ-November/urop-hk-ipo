@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-10-15T10:59:48.030879",
+  "total_companies": 47,
+  "clean_companies": 46,
+  "total_anomalies": 1,
+  "results": [
+    {
+      "code": "2652.HK",
+      "name": "CF PharmTech, Inc. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2650.HK",
+      "name": "Shanghai Zhida Technology Development Co., Ltd.\n-  H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2575.HK",
+      "name": "Xuanzhu Biopharmaceutical Co., Ltd. - B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2670.HK",
+      "name": "Beijing Yunji Technology Co., Ltd. -  H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2637.HK",
+      "name": "Fujian Haixi Pharmaceuticals Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6687.HK",
+      "name": "JST Group Corporation Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "0638.HK",
+      "name": "Fibocom Wireless Inc. - H  shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "1384.HK",
+      "name": "Deepexi Technology Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6031.HK",
+      "name": "SANY HEAVY INDUSTRY CO., LTD. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6166.HK",
+      "name": "CIG SHANGHAI CO., LTD. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6980.HK",
+      "name": "Bama Tea Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2718.HK",
+      "name": "Mininglamp Technology - W",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "9927.HK",
+      "name": "Seres Group Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "0699.HK",
+      "name": "NINGBO JOYSON ELECTRONIC CORP.-  H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "0800.HK",
+      "name": "WeRide Inc. - W",
+      "anomalies": [
+        {
+          "check": "Mechanism A Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 73.4 倍，适用规则档位为 25%，实际为 20.0%；请核对是否存在港交所个案豁免或口径差异"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "2026.HK",
+      "name": "Pony AI Inc. - W",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2630.HK",
+      "name": "Vigonvita Life Sciences Co., Ltd. - B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2698.HK",
+      "name": "Softcare Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2579.HK",
+      "name": "CNGR Advanced Material Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2788.HK",
+      "name": "Chuangxin Industries Holdings Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2685.HK",
+      "name": "Quantgroup Holding Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "9609.HK",
+      "name": "Hebei Haiwei Electronic New Material Technology Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2539.HK",
+      "name": "Lemo Services Co., Ltd - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2693.HK",
+      "name": "ANHUI JINYAN KAOLIN NEW MATERIALS CO., LTD. \n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2408.HK",
+      "name": "Guangzhou Xiao Noodles Catering Management Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2658.HK",
+      "name": "Guangdong Tianyu Semiconductor Co., Ltd. \n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2676.HK",
+      "name": "Suzhou Novosense Microelectronics Co., Ltd. \n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2687.HK",
+      "name": "SHANGHAI ABLE DIGITAL SCIENCE&TECH CO., LTD. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2659.HK",
+      "name": "Shanghai Bao Pharmaceuticals Co., Ltd. \n- B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "7618.HK",
+      "name": "JINGDONG Industrials, Inc.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2655.HK",
+      "name": "Guoxia Technology Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3887.HK",
+      "name": "HashKey Holdings Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2546.HK",
+      "name": "Xizang Zhihui Mining Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3881.HK",
+      "name": "CiDi Inc. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2396.HK",
+      "name": "B&K CORPORATION LIMITED - B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2581.HK",
+      "name": "BenQ BM Holding Cayman Corp.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2691.HK",
+      "name": "Nanhua Futures Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2695.HK",
+      "name": "Impression Dahongpao Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2635.HK",
+      "name": "Nuobikan Artificial Intelligence Technology (Chengdu) Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2661.HK",
+      "name": "QingSong Health Corporation",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3378.HK",
+      "name": "Hanx Biopharmaceuticals (Wuhan) Co., Ltd.\n- B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2657.HK",
+      "name": "SHANGHAI FOREST CABIN COSMETICS GROUP CO., LTD. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2671.HK",
+      "name": "USAS Building System (Shanghai) Co., Ltd.\n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3317.HK",
+      "name": "Shenzhen Xunce Technology Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3696.HK",
+      "name": "InSilico Medicine Cayman TopCo",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6600.HK",
+      "name": "OneRobotics (Shenzhen) Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6651.HK",
+      "name": "Beijing 51WORLD Digital Twin Technology Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    }
+  ]
+}

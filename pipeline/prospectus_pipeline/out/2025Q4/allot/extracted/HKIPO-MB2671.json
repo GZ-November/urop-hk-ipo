@@ -1,0 +1,115 @@
+{
+ "code": "2671.HK",
+ "fields": {
+  "col_CK": {
+   "value": 0.2948,
+   "page": 4,
+   "quote": "Logic Selective Value \nInvestment Funds SPC \n3,098,400 \n12.60% \n2.57% \nNo \nTotal \n7,252,800 \n29.48% \n6.02%",
+   "confidence": "high"
+  },
+  "col_CM": {
+   "value": 146.25,
+   "page": 4,
+   "quote": "Subscription level  \n146.25 times",
+   "confidence": "high"
+  },
+  "col_CN": {
+   "value": 53657,
+   "page": 4,
+   "quote": "No. of valid applications  \n53,657",
+   "confidence": "high"
+  },
+  "col_CO": {
+   "value": 359775000,
+   "page": 4,
+   "quote": "No. of Offer Shares initially available under the Hong Kong Public \nOffering  \n2,460,000\nFinal no. of Offer Shares under the Hong Kong Public Offering  \n2,460,000",
+   "confidence": "low"
+  },
+  "col_CP": {
+   "value": "Subscription level 146.25 times (Hong Kong Public Offering); International Offering Subscription Level 1.48 times",
+   "page": 4,
+   "quote": "Subscription level  \n146.25 times\nClaw-back triggered  \nN/A",
+   "confidence": "high"
+  },
+  "col_CQ": {
+   "value": "24/12/25",
+   "page": 5,
+   "quote": "Expected Price Determination Date(5) . . . . . . . . . . . . . . . . . on or before 12: 00 noon on\nWednesday, December 24, 2025",
+   "source": "prospectus",
+   "confidence": "medium"
+  },
+  "col_CR": {
+   "value": "29/12/2025",
+   "page": 1,
+   "quote": "刊发时间（港交所元数据）：**29/12/2025 22:42**",
+   "confidence": "high"
+  },
+  "col_CS": {
+   "value": 24600000,
+   "page": 3,
+   "quote": "Number of Offer Shares  \n24,600,000",
+   "confidence": "high"
+  },
+  "col_CT": {
+   "value": 2460000,
+   "page": 3,
+   "quote": "Number of Offer Shares in Hong Kong Public Offering  \n2,460,000",
+   "confidence": "high"
+  },
+  "col_CU": {
+   "value": 22140000,
+   "page": 3,
+   "quote": "Number of offer shares in International Offering  \n22,140,000",
+   "confidence": "high"
+  },
+  "col_CV": {
+   "value": 0,
+   "page": null,
+   "quote": "港交所公告检索：2025-12-30 起 45 天内共 2 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-13 期满未行使",
+   "source": "greenshoe_search",
+   "confidence": "high"
+  },
+  "col_CW": {
+   "value": "Claw-back not triggered; no over-allocation of Offer Shares in the placing; final HK Public Offering 2,460,000 = 10.00% and International Offering 22,140,000 = 90.00% (unchanged)",
+   "page": 4,
+   "quote": "Claw-back triggered  \nN/A\nNo. of Offer Shares initially available under the Hong Kong Public \nOffering  \n2,460,000\nFinal no. of Offer Shares under the Hong Kong Public Offering  \n2,460,000",
+   "confidence": "high"
+  },
+  "col_CX": {
+   "value": 139890000,
+   "page": 3,
+   "quote": "Gross proceeds (Note)  \nHK$ 174.66 million  \nLess: Estimated listing expenses payable based on Final Offer \nPrice  \nHK$ (34.77) million  \nNet proceeds  \nHK$ 139.89 million",
+   "confidence": "high"
+  },
+  "col_CY": {
+   "value": 0.251,
+   "page": 11,
+   "quote": "Taking into consideration of the H Shares to be issued pursuant to the Global Offering, the \npublic float of our Company will be approximately 25.1% upon the Listing",
+   "confidence": "high"
+  },
+  "col_CZ": {
+   "value": 120550005,
+   "page": 3,
+   "quote": "Number of issued shares upon Listing  \n120,550,005",
+   "confidence": "high"
+  },
+  "col_DA": {
+   "value": 0.1439,
+   "page": 12,
+   "quote": "representing approximately 14.39% \nof the total issued Shares upon completion of the Global Offering, the free float of our \nCompany is 14.39%",
+   "confidence": "high"
+  },
+  "col_DB": {
+   "value": "Free float denominator = total issued Shares upon completion of the Global Offering (120,550,005); numerator excludes the 7,252,800 cornerstone H Shares (6-month lock-up) and all existing Shareholder H Shares (12-month PRC statutory lock-up)",
+   "page": 12,
+   "quote": "Further, the Cornerstone Investors have agreed to a lock-up period of six months following the Listing Date.",
+   "confidence": "high"
+  },
+  "col_DC": {
+   "value": 120550005,
+   "page": 3,
+   "quote": "Number of issued shares upon Listing  \n120,550,005",
+   "confidence": "high"
+  }
+ }
+}

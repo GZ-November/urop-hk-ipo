@@ -1,0 +1,119 @@
+{
+  "code": "2661.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.1809,
+      "page": 6,
+      "quote": "Aoqin Heming 4,801,800 18.09% 2.33% No",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1421.47,
+      "page": 4,
+      "quote": "Subscription level 1,421.47 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 111894,
+      "page": 4,
+      "quote": "No. of valid applications 111,894",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3772577400,
+      "page": 10,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 200 34,540 2,072 out of 34,540",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,421.47 times",
+      "page": 4,
+      "quote": "No. of valid applications 111,894 No. of successful applications 12,338 Subscription level 1,421.47 times Reallocation 0",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$22.68; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "22/12/2025",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**22/12/2025 22:16**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 26540000,
+      "page": 3,
+      "quote": "Total number of Offer Shares 26,540,000 Shares Number of Offer Shares in Hong Kong Public Offering 2,654,000 Shares Number of Offer Shares in International Offering 23,886,000 Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2654000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 2,654,000 % of final no. of Offer Shares under the Hong Kong Public Offering to the Global Offering 10%",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 23886000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 23,886,000 % of final no. of Offer Shares under the International Offering to the Global Offering 90%",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILISATION PERIOD, NO STABILISING ACTION AND LAPSE OF THE OVER-ALLOTMENT OPTION（18/01/2026 18:08）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILISATION PERIOD, NO STABILISING ACTION AND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "No Offer Shares reallocated from the International Offering to the Hong Kong Public Offering (reallocation 0); Hong Kong Public Offering remained at its initial 2,654,000 Offer Shares (10% of the Global Offering).",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 0 Final no. of Offer Shares under the Hong Kong Public Offering 2,654,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 513420000,
+      "page": 3,
+      "quote": "Proceeds Gross proceeds (Note) HK$601.93 million Less: Estimated listing expenses payable based on Offer Price HK$88.50 million Net proceeds HK$513.42 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3794,
+      "page": 14,
+      "quote": "Immediately after the completion of the Global Offering, the total number of Shares held in public hands represents approximately 37.94% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 206374209,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 206,374,209 Shares",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1053,
+      "page": null,
+      "quote": "公式：(col_CS 26,540,000 − col_CK 0.1809×col_CS) ÷ col_CZ 206,374,209 = 0.1053；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 26,540,000 − col_CK 0.1809×col_CS) ÷ col_CZ 206,374,209 = 0.1053；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 206374209,
+      "page": 3,
+      "quote": "公式：(col_CS 26,540,000 − col_CK 0.1809×col_CS) ÷ col_CZ 206,374,209 = 0.1053；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

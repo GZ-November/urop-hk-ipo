@@ -1,0 +1,118 @@
+{
+  "code": "2575.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.0981,
+      "page": 6,
+      "quote": "Denov Ruilang Phase XV 6,603,000 9.81% 4.11% 1.27% No Total 6,603,000 9.81% 4.11% 1.27%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 4908.33,
+      "page": 5,
+      "quote": "Subscription level 4,908.33 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 376021,
+      "page": 5,
+      "quote": "Number of valid applications 376,021 Number of successful applications 13,467",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 33050210000,
+      "page": 14,
+      "quote": "Number of H Shares applied for Number of valid applications Basis of allotment/ballot Approximate percentage allotted of the total number of H Shares applied for POOL A 25,000 3,397",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 4,908.33 times",
+      "page": 5,
+      "quote": "Subscription level 4,908.33 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$11.60; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "14/10/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：14/10/2025 21:28",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 67333500,
+      "page": 4,
+      "quote": "Offer Shares and Share Capital Number of Offer Shares 67,333,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 6733500,
+      "page": 5,
+      "quote": "Final number of Offer Shares under the Hong Kong Public Offering 6,733,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 60600000,
+      "page": 5,
+      "quote": "Final number of Offer Shares under the International Offering (including Reserved Shares under the Preferential Offering) 60,600,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-10-15 起 45 天内共 7 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-11-29 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Number of Offer Shares reallocated from International Offering to Hong Kong Public Offering 0",
+      "page": 5,
+      "quote": "Number of Offer Shares reallocated from International Offering to Hong Kong Public Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 701000000,
+      "page": 4,
+      "quote": "Net proceeds HK$701.0 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2598,
+      "page": 19,
+      "quote": "134,585,396 H Shares (without taking into account of the Reserved Shares) representing approximately 25.98% of the total number of issued Shares of our Company will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 517947790,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing 517,947,790",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1172,
+      "page": null,
+      "quote": "公式：(col_CS 67,333,500 − col_CK 0.0981×col_CS) ÷ col_CZ 517,947,790 = 0.1172；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 67,333,500 − col_CK 0.0981×col_CS) ÷ col_CZ 517,947,790 = 0.1172；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 517947790,
+      "page": 4,
+      "quote": "公式：(col_CS 67,333,500 − col_CK 0.0981×col_CS) ÷ col_CZ 517,947,790 = 0.1172；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

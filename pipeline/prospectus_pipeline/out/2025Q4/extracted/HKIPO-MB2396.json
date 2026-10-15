@@ -1,0 +1,425 @@
+{
+ "code": "2396.HK",
+ "fields": {
+  "col_L": {
+   "value": 117657522,
+   "page": 444,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . . . . 17,648,800 15.00 Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117,657,522 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 17648800,
+   "page": 2,
+   "quote": "GLOBAL OFFERING Number of Offer Shares under the Global Offering : 17,648,800 H Shares (Subject to the Over-allotment Option) Number ",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 100008722,
+   "page": 444,
+   "quote": "BEFORE THE GLOBAL OFFERING As of the Latest Practicable Date, the registered capital of our Company was RMB100,008,722, comprising 100,008,722 Unlisted Shar",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 100008722,
+   "page": 444,
+   "quote": "BEFORE THE GLOBAL OFFERING As of the Latest Practicable Date, the registered capital of our Company was RMB100,008,722, comprising 100,008,722 Unlisted Shar",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "GLOBAL OFFERING Number of Offer Shares under the Global Offering : 17,648,800 H Shares (Subject to the Over-allotment Option) Number ",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 17648800,
+   "page": 2,
+   "quote": "GLOBAL OFFERING Number of Offer Shares under the Global Offering : 17,648,800 H Shares (Subject to the Over-allotment Option) Number ",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 15883800,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 15,883,800 H Shares (Subject to the Over-allotment Option and reallocati",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1765000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,765,000 H Shares (subject to reallocation) Nu",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 51.0,
+   "page": 2,
+   "quote": "Maximum Offer Price : Not more than HK$51.0 per H Share, plus brokerage of 1.0%,",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 38.2,
+   "page": 2,
+   "quote": "The Offer Price will be no more than HK$51.0 per Offer Share and is expected to be not less than HK$38.2",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 540,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand ",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 263089000,
+   "page": 29,
+   "quote": "Total assets. . . . . . . . . . . . . . . . . . . . . . . . . 263,089 190,612 127,956",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 190612000,
+   "page": 29,
+   "quote": "Total assets. . . . . . . . . . . . . . . . . . . . . . . . . 263,089 190,612 127,956",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 127956000,
+   "page": 29,
+   "quote": "Total assets. . . . . . . . . . . . . . . . . . . . . . . . . 263,089 190,612 127,956",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": -131874000,
+   "page": 29,
+   "quote": "Total (deficit)/equity . . . . . . . . . . . . . . . . . (131,874) 150,535 84,536",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 150535000,
+   "page": 29,
+   "quote": "Total (deficit)/equity . . . . . . . . . . . . . . . . . (131,874) 150,535 84,536",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 84536000,
+   "page": 29,
+   "quote": "Total (deficit)/equity . . . . . . . . . . . . . . . . . (131,874) 150,535 84,536",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 394963000,
+   "page": 29,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . 394,963 40,077 43,420",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 40077000,
+   "page": 29,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . 394,963 40,077 43,420",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 43420000,
+   "page": 29,
+   "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . 394,963 40,077 43,420",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 472000,
+   "page": 541,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . . . . . . . . 5 472 261 — —",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 261000,
+   "page": 541,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . . . . . . . . 5 472 261 — —",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 0,
+   "page": 541,
+   "quote": "REVENUE . . . . . . . . . . . . . . . . . . . . . . . 5 472 261 — —",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -105188000,
+   "page": 541,
+   "quote": "LOSS BEFORE TAX . . . . . . . . . . . . . . . . 6 (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -212250000,
+   "page": 541,
+   "quote": "LOSS BEFORE TAX . . . . . . . . . . . . . . . . 6 (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -179290667,
+   "page": 541,
+   "quote": "LOSS BEFORE TAX . . . . . . . . . . . . . . . . 6 (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -105188000,
+   "page": 541,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . . . . . (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -212250000,
+   "page": 541,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . . . . . (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -179290667,
+   "page": 541,
+   "quote": "LOSS FOR THE YEAR/PERIOD . . . . . . . (105,188) (212,250) (164,100) (134,468)",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 506,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, inclu",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 506,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, inclu",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 515,
+   "quote": "The number of Offer Shares that may be over-allocated will not exceed the number of Offer Shares that may be sold under the Over-allotment Option, namely, 2,647,20",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "China-based biopharmaceutical company focused on the discovery, development and commercialization of protein drugs (PDGF) for wound healing",
+   "page": 450,
+   "quote": "Founded in 2012, we are a China-based biopharmaceutical company committed to developing therapies with an emphasis on protein drugs for indications with ",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18A of the Listing Rules (Main Board)",
+   "page": 11,
+   "quote": "we are a biopharmaceutical company seeking to list on the Main Board of the Stock Exchange under Chapter 18A of the Listing Rules on the basis that we are una",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/09/25",
+   "page": 541,
+   "quote": "Nine months ended 30 September Notes 2023 2024 2024 2025 RMB’000 RMB’000 RMB’000 RMB’000 (Unaudited) REVENUE .",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -59428000,
+   "page": 546,
+   "quote": "Net cash flows used in operating activities . . . . . . . (57,943) (90,101) (73,008) (59,428)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 73794000,
+   "page": 547,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR /PERIOD . . . . . . . . . . . . . . . . . . . . . 241,512 139,213 160,538 73,794",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 61219000,
+   "page": 465,
+   "quote": "Total . . . . . . . . . . . . . . . . . . . 39,915 100.0% 91,326 100.0% 69,763 100.0% 61,219 100.0% Note: (1) Others mainly include intel",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 584,
+   "quote": "Additions. . . . . . . . . . . . . . . . . . . . . — 30,916 —",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_DP": {
+   "value": "华芢生物科技（青岛）股份有限公司",
+   "page": 2,
+   "quote": "B&K CORPORATION LIMITED 華芢生物科技（青島）股份有限公司 (A joint stock company incorporated in the",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 27,
+   "quote": "PRE-IPO INVESTMENTS We have completed three rounds of Pre-IPO Investments raising over RMB400 million in 2021 and 2023. Our Pre-IPO Investors include Mr. Zhang",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 261,
+   "quote": "CDH is one of the leading alternative investment management firms in China specializing in private equity investments. Based on publicly availabl",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 261,
+   "quote": "Qingdao Hitech is a limited liability company established under the laws of the PRC on June 26, 2001 and held as to 100% by Qingdao Laoshan Science and Technology Inno",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Zhang Hong; Qingdao CDH; Jiaxing CDH; Qingdao Hitech",
+   "page": 257,
+   "quote": "Name of Pre-IPO Investors Subscription Method Date of Investment Agreement Date of Settlement of Consideration Number of Shares Acquired Consider",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.1392,
+   "page": 255,
+   "quote": "Qingdao Hitech . . . . . . . . . . . . . . . . . . . . . . Unlisted Shares 9,090,793 9.09 Qingdao Huaren . . . . . . . . . . . . . . . . . . . . . Unlisted Shares 8",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 423,
+   "quote": "Ms. LIN Ying (林穎), aged 44, has been serving as our Director since July 2023, and was re-designated as our non-executive Director in April 2024. Ms. Lin",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series Pre-A Financing",
+   "page": 252,
+   "quote": "8. Series Pre-A Financing On May 25, 2021, our Company and Zhang Hong (張鴻), among oth",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 4.55,
+   "page": 252,
+   "quote": "On May 25, 2021, our Company and Zhang Hong (張鴻), among others, entered into a capital increase agreement, pursuant to which Zhang Ho",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural persons (four individual Controlling Shareholders acting in concert)",
+   "page": 255,
+   "quote": "SHAREHOLDING STRUCTURE AS OF THE LATEST PRACTICABLE DATE The table below summarizes the shareholding structure of our Company as of the Latest Pra",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5694,
+   "page": 27,
+   "quote": "Ms. Jia, Mr. Wang, Ms. Zhang and Mr. Li will continue to control in aggregate approximately 56.94% of our total issued share capital.",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5694,
+   "page": 440,
+   "quote": "Ms. Jia, Mr. Wang, Ms. Zhang and Mr. Li will continue to control in aggregate approximately 56.94% of our total issued share capital.",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 3257000,
+   "page": 481,
+   "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . 385,450 3,187 3,257 3,009",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Clinical-stage biopharmaceutical company: no product has been commercialized; core products in Phase II/IIb clinical trials",
+   "page": 450,
+   "quote": "we had completed the Phase IIb clinical trial of Pro-101-1 in thermal burns in China, and entered the Phase II clinical trial of Pro-101-2 in DFUs i",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 33,
+   "quote": "approximately 10.0% of the net proceeds, or HK$70.9 million, as working capital and for general cor",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 444,
+   "quote": "H Shares to be issued under the Global Offering . . . . . . . . . . 17,648,800 15.00 Total . . . . . . . . ",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "24/04/12",
+   "page": 549,
+   "quote": "The Company was established in the People’s Republic of China (“PRC”) on 24 April 2012. The registere",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Qingdao, Shandong Province, PRC",
+   "page": 137,
+   "quote": "Head Office and Principal Place of Business in the PRC Room 1507, Building 1 Xiexin Center, No. 19 Qinling Road Laoshan District, Qingdao Shando",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 550,
+   "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards, which comprise all standards and inte",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "12/12/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Friday, December 12, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "17/12/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Wednesday, December 17, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 83022145,
+   "page": 269,
+   "quote": "Upon the completion of the Global Offering and the conversion of Unlisted Shares into H Shares, our Company will have 34,635,377 Unlisted Shares and 83,022,145 H Shares",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 0,
+   "page": 541,
+   "quote": "Gross profit . . . . . . . . . . . . . . . . . . . . . . 217 241 — —",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 2893000,
+   "page": 546,
+   "quote": "Purchase of items of property, plant and equipment . (3,123) (3,849) (1,107) (2,893)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 538,
+   "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountant",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 78300000,
+   "page": 35,
+   "quote": "We expect to incur listing expenses of approximately RMB71.3 million (HK$78.3 million),",
+   "confidence": "high"
+  }
+ }
+}

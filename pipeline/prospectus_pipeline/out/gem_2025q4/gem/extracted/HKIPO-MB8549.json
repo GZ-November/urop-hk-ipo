@@ -1,0 +1,95 @@
+{
+ "code": "8549.HK",
+ "fields": {
+  "gem_eligibility_rule": {
+   "value": "GEM listing under the GEM Listing Rules (application for listing on GEM; no other admission route or eligibility rule cited)",
+   "page": 68,
+   "quote": "APPLICATION FOR LISTING ON GEM\nOur Company has applied to the Stock Exchange for the listing of, and permission to deal in,\nthe Shares in issue and to be issued pursuant to the Share Offer",
+   "confidence": "high"
+  },
+  "gem_trading_record_years": {
+   "value": 2,
+   "page": 384,
+   "quote": "comprises the consolidated statements of financial position of the Group as at 31 March 2024 and\n2025, and the consolidated statements of profit or loss",
+   "confidence": "high"
+  },
+  "gem_operating_cash_flow": {
+   "value": 18865000,
+   "page": 392,
+   "quote": "Net cash from operating activities . . . . . . . . . . . . . . . . . .\n5,617\n13,248",
+   "confidence": "high"
+  },
+  "gem_cash_flow_currency": {
+   "value": "HKD",
+   "page": 387,
+   "quote": "The Historical Financial Information is presented in Hong Kong dollar (“HK$”) and all\nvalues are rounded to the nearest thousand (HK$’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "gem_cash_flow_start": {
+   "value": "01/04/23",
+   "page": 384,
+   "quote": "the\nconsolidated statements of changes in equity and the consolidated statements of cash flows of the\nGroup for each of the years ended 31 March 2024 and 2025 (the “Track Record Period”)",
+   "confidence": "high"
+  },
+  "gem_cash_flow_end": {
+   "value": "31/03/25",
+   "page": 384,
+   "quote": "the consolidated statements of cash flows of the\nGroup for each of the years ended 31 March 2024 and 2025 (the “Track Record Period”)",
+   "confidence": "high"
+  },
+  "gem_rnd_ratio": {
+   "value": "NaN",
+   "page": 210,
+   "quote": "save for our “GL ERP”\nsystem as disclosed above, we did not engage in any research and development activity.",
+   "confidence": "high"
+  },
+  "gem_market_cap_threshold": {
+   "value": "NaN",
+   "page": 137,
+   "quote": "the total number of issued shares in the class of shares for which listing\nis sought (excluding treasury shares), with an expected market value at the time of listing of not\nless than HK$15,000,000",
+   "confidence": "medium"
+  },
+  "gem_public_float_threshold": {
+   "value": 0.25,
+   "page": 137,
+   "quote": "at least 25% of the total issued share capital of\nour Company must at all times be held by the public",
+   "confidence": "high"
+  },
+  "gem_public_float_waiver": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "gem_controller_lockup": {
+   "value": 6,
+   "page": 347,
+   "quote": "in the period commencing on the date by reference to which disclosure of his/its\nshareholding is made in this prospectus and ending on the date which is six months\nfrom the Listing Date",
+   "confidence": "high"
+  },
+  "gem_compliance_adviser": {
+   "value": "Alliance Capital Partners Limited",
+   "page": 79,
+   "quote": "Compliance adviser\nAlliance Capital Partners Limited\nUnit 03, 7/F, Worldwide House",
+   "confidence": "high"
+  },
+  "gem_compliance_adviser_end": {
+   "value": "NA",
+   "page": 244,
+   "quote": "and ending on the\ndate on which our Company distributes our annual report in respect of our financial results for the\nfirst full financial year commencing after the Listing Date",
+   "confidence": "high"
+  },
+  "gem_offer_structure": {
+   "value": "Combined share offer: Hong Kong public offer and placing",
+   "page": 2,
+   "quote": "Number of Public Offer Shares\n:\n10,000,000 Shares (subject to reallocation)\nNumber of Placing Shares\n:\n90,000,000 Shares",
+   "confidence": "high"
+  },
+  "gem_board_lot": {
+   "value": 5000,
+   "page": 70,
+   "quote": "The Shares will be traded in board lots of 5,000 Shares each.",
+   "confidence": "high"
+  }
+ }
+}

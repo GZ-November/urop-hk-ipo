@@ -1,0 +1,425 @@
+{
+ "code": "0699.HK",
+ "fields": {
+  "col_L": {
+   "value": 1550770563,
+   "page": 376,
+   "quote": "H Shares to be issued pursuant to the Global Offering 155,100,000 10.00 Total 1,550,770,563 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 155100000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 155,100,000 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 1395670563,
+   "page": 376,
+   "quote": "As of the Latest Practicable Date, the total share capital of our Company was RMB1,395,670,563, comprising 1,395,670,563 A Shares of nominal value RMB1.00 each.",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 1395670563,
+   "page": 376,
+   "quote": "As of the Latest Practicable Date, the total share capital of our Company was RMB1,395,670,563, comprising 1,395,670,563 A Shares",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 43,
+   "quote": "The statistics in the following table are based on the assumptions that: (i) the Global Offering has been completed and 155,100,000 H Shares are newly issued in the Global Offering",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 155100000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 155,100,000 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 139590000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 139,590,000 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 15510000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 15,510,000 H Shares (subject to reallocation and the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 23.6,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$23.60 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": "NaN",
+   "page": 121,
+   "quote": "so that the Company will only disclose the maximum Offer Price in this prospectus on the below basis",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 376,
+   "quote": "H Shares to be issued pursuant to the Global Offering 155,100,000 10.00",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 155100000,
+   "page": 208,
+   "quote": "all 155,100,000 H Shares to be issued pursuant to the Global Offering, representing approximately 10.08% of our total issued share capital immediately upon Listing",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 503,
+   "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (Expressed in Renminbi)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 56886848000,
+   "page": 26,
+   "quote": "Total assets 54,112,094 56,886,848 64,165,868 67,033,109",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 64165868000,
+   "page": 26,
+   "quote": "Total assets 54,112,094 56,886,848 64,165,868 67,033,109",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 67033109000,
+   "page": 26,
+   "quote": "Total assets 54,112,094 56,886,848 64,165,868 67,033,109",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 19126372000,
+   "page": 506,
+   "quote": "TOTAL EQUITY 17,703,678 19,126,372 19,845,543 20,230,867",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 19845543000,
+   "page": 506,
+   "quote": "TOTAL EQUITY 17,703,678 19,126,372 19,845,543 20,230,867",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 20230867000,
+   "page": 506,
+   "quote": "TOTAL EQUITY 17,703,678 19,126,372 19,845,543 20,230,867",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 37760476000,
+   "page": 26,
+   "quote": "Total liabilities 36,408,416 37,760,476 44,320,325 46,802,242",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 44320325000,
+   "page": 26,
+   "quote": "Total liabilities 36,408,416 37,760,476 44,320,325 46,802,242",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 46802242000,
+   "page": 26,
+   "quote": "Total liabilities 36,408,416 37,760,476 44,320,325 46,802,242",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 55728476000,
+   "page": 503,
+   "quote": "Revenue 49,793,352 55,728,476 55,863,577 17,989,043 19,707,287",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 55863577000,
+   "page": 503,
+   "quote": "Revenue 49,793,352 55,728,476 55,863,577 17,989,043 19,707,287",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 59121861000,
+   "page": 503,
+   "quote": "Revenue 49,793,352 55,728,476 55,863,577 17,989,043 19,707,287",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 1762281000,
+   "page": 503,
+   "quote": "Profit before taxation 479,818 1,762,281 1,995,749 687,222 695,567",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 1995749000,
+   "page": 503,
+   "quote": "Profit before taxation 479,818 1,762,281 1,995,749 687,222 695,567",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 2086701000,
+   "page": 503,
+   "quote": "Profit before taxation 479,818 1,762,281 1,995,749 687,222 695,567",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 1240092000,
+   "page": 503,
+   "quote": "Profit for the year/period 233,261 1,240,092 1,326,282 483,530 490,528",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 1326282000,
+   "page": 503,
+   "quote": "Profit for the year/period 233,261 1,240,092 1,326,282 483,530 490,528",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 1471584000,
+   "page": 503,
+   "quote": "Profit for the year/period 233,261 1,240,092 1,326,282 483,530 490,528",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.022,
+   "page": 463,
+   "quote": "The Capital Market Intermediaries will receive an underwriting commission of 2.2% of the aggregate gross proceeds from the Global Offering",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.022,
+   "page": 463,
+   "quote": "The Capital Market Intermediaries will receive an underwriting commission of 2.2% of the aggregate gross proceeds from the Global Offering",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 463,
+   "quote": "up to an aggregate of 23,265,000 H Shares, representing no more than 15.0% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Automotive parts and components - intelligent automotive technology solutions (automotive electronics and automotive safety)",
+   "page": 11,
+   "quote": "We are an intelligent automotive technology solution provider, offering advanced products and solutions across the auto part industry’s key areas",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board - Chapter 19A (PRC issuer; H Shares listed on the Stock Exchange alongside A Shares listed on the Shanghai Stock Exchange)",
+   "page": 208,
+   "quote": "Rule 19A.13A(2) of the Listing Rules provides that, where a new applicant is a PRC issuer with other listed shares at the time of Listing",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/04/25",
+   "page": 499,
+   "quote": "the consolidated statements of cash flows for each of the years ended 31 December 2022, 2023 and 2024 and the four months ended 30 April 2025 (the “Track Record Period”)",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 693850000,
+   "page": 513,
+   "quote": "Net cash generated from operating activities 2,169,820 3,929,016 4,601,804 658,581 693,850",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 5347044000,
+   "page": 514,
+   "quote": "Cash and cash equivalents at the end of the year/period 23 3,845,521 4,253,516 5,979,070 5,794,161 5,347,044",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 1107696000,
+   "page": 503,
+   "quote": "Research and development costs (2,138,848) (2,541,498) (2,584,929) (859,999) (1,107,696)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 466191000,
+   "page": 555,
+   "quote": "Additions 7,280 11,758 169 19,207 Addition through internal development 466,191",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.472,
+   "page": 277,
+   "quote": "largest customers in each year/period during the Track Record Period totaled RMB24,191 million, RMB27,927 million, RMB26,614 million and RMB8,081.6 million, representing 48.6%, 50.1%, 47.6% and 47.2%",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 26581451000,
+   "page": 435,
+   "quote": "Total 20,216,930 20,350,860 24,649,778 26,581,451 26,843,861",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 382,
+   "quote": "Our historical financial information has been prepared in accordance with all applicable IFRS Accounting Standards issued by the International Accounting Standard Board",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 3513685000,
+   "page": 503,
+   "quote": "Gross profit 5,541,985 8,056,940 9,063,729 2,796,675 3,513,685",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 612055000,
+   "page": 437,
+   "quote": "Total 1,850,960 1,939,355 2,338,243 612,055",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "无保留意见 / Unqualified opinion",
+   "page": 500,
+   "quote": "the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 201830000,
+   "page": 463,
+   "quote": "are estimated to amount to approximately HK$201.83 million in total (based on the Offer Price of HK$23.60 per Offer Share, being the maximum Offer Price",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "规模商业化 / Mass production - commercialized at scale",
+   "page": 12,
+   "quote": "First in the world to achieve commercialization and mass production of 5G-V2X technology",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 30,
+   "quote": "Approximately 10.0% of the net proceeds, or HK$345.9 million, is expected to be used for working capital and for general corporate purposes.",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "自然人 / Natural person (Mr. WANG Jianfeng)",
+   "page": 200,
+   "quote": "As of the Latest Practicable Date, Mr. Wang directly and indirectly through Joyson Group controlled 39.85% of the total issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.3586,
+   "page": 366,
+   "quote": "immediately after the Global Offering (%) (%) Mr. Wang(2)(3) Beneficial owner 35,436,959 A Shares 2.54 2.29 Interest of controlled corporation 533,333,116 A Shares 38.21 35.86",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.3586,
+   "page": 366,
+   "quote": "immediately after the Global Offering (%) (%) Mr. Wang(2)(3) Beneficial owner 35,436,959 A Shares 2.54 2.29 Interest of controlled corporation 533,333,116 A Shares 38.21 35.86",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "07/08/92",
+   "page": 711,
+   "quote": "Our Company was established under the PRC laws under the name of Liaoyuan Deheng Company Limited (遼源得亨股份有限公司) on August 7, 1992",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Ningbo, Zhejiang Province, PRC",
+   "page": 136,
+   "quote": "Headquarters and Principal Place of Business in the PRC No. 99 Qingyi Road High tech District Ningbo, Zhejiang Province PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "28/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, October 28, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "03/11/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . 12:00 noon on Monday, November 3, 2025",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "宁波均胜电子股份有限公司",
+   "page": 1,
+   "quote": "寧波均勝電子股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Jun Sheng SP (a segregated portfolio of JSC International Investment Fund SPC); Ningbo Xinzhi Industrial Investment Co., Ltd.; Jump Trading Pacific Pte. Ltd.; Eastern Bell Capital VIII Investment Limited; PSBC Wealth Management Co., Ltd.; Vandi Investments Limited; Fidelidade - Companhia de Seguros, S.A.",
+   "page": 371,
+   "quote": "JSC 42.1 13,857,500 8.93% 0.89% 7.77% 0.88% 7.77% 0.88% 6.76% 0.87% Ningbo Xinzhi 20 6,583,000 4.24% 0.42% 3.69% 0.42%",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  }
+ }
+}

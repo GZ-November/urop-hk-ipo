@@ -1,0 +1,120 @@
+{
+  "code": "2691.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 3,
+      "quote": "Company Information\nStock code\n2691\nStock short name\nNANHUA FUTURES\nDealings commencement date\nDecember 22, 2025",
+      "confidence": "high",
+      "source": "cornerstone_absence",
+      "note": "The allotment announcement contains no CORNERSTONE INVESTORS section or cornerstone allocation table and the prospectus contains no \"cornerstone investor\" disclosure; the announcement states all 107,659,000 offer H Shares are expected to be held by the public. Confirmed zero."
+    },
+    "col_CM": {
+      "value": 1.91,
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING\nNo. of valid applications\n7,479\nNo. of successful applications\n6,043\nSubscription level\n1.91 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 7479,
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING\nNo. of valid applications\n7,479\nNo. of successful applications\n6,043\nSubscription level\n1.91 times",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 20599500,
+      "page": 10,
+      "quote": "NO. OF H SHARES \nAPPLIED FOR\nNO. OF VALID \nAPPLICATIONS\nBASIS OF ALLOTMENT/BALLOT\nAPPROXIMATE \nPERCENTAGE \nALLOTTED OF THE \nTOTAL \nNO. OF H SHARES \nAPPLIED FOR",
+      "confidence": "medium",
+      "note": "Not disclosed as a total; derived by summing the NO. OF H SHARES APPLIED FOR bands of the BASIS OF ALLOCATION table - Pool A 30 bands = 16,299,500 shares (7,474 valid applications) plus Pool B 4 bands = 4,300,000 shares (5 valid applications) = 20,599,500 shares across 7,479 valid applications; cross-check 20,599,500 / 10,766,000 initial Hong Kong offer shares = 1.913x, consistent with the disclosed 1.91 times."
+    },
+    "col_CP": {
+      "value": "Subscription level 1.91 times (Hong Kong Public Offering); Subscription Level 0.99 times (International Offering)",
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING\nNo. of valid applications\n7,479\nNo. of successful applications\n6,043\nSubscription level\n1.91 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "18/12/25",
+      "page": 5,
+      "quote": "Expected Price Determination Date(5) . . . . . . . . . . . . . . . . by 12:00 noon on Thursday, December 18, 2025",
+      "confidence": "high",
+      "source": "prospectus"
+    },
+    "col_CR": {
+      "value": "19/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**19/12/2025 21:51**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 107659000,
+      "page": 3,
+      "quote": "Offer Shares and Share Capital\nNumber of Offer Shares\n107,659,000\nFinal Number of Offer Shares in Hong Kong \nPublic Offering\n16,148,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 16148500,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong \nPublic Offering\n16,148,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 91510500,
+      "page": 5,
+      "quote": "No. of Offer Shares reallocated to the Hong Kong \nPublic Offering\n5,382,500\nFinal no. of Offer Shares under the International \nOffering\n91,510,500",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": 4,
+      "quote": "of Offer Shares over-allocated 0 Note: There is no over-allocation, and therefore no stabilization action will be taken and the Over-allotment Option will not be exercised. Proceeds Gros",
+      "source": "greenshoe_no_overallotment",
+      "confidence": "high",
+      "note": "配发结果公告明示零超配，Over-allotment Option 不会行使"
+    },
+    "col_CW": {
+      "value": "No. of Offer Shares reallocated from the International Offering: 5,382,500; Final no. of Offer Shares under the Hong Kong Public Offering: 16,148,500 (15% of the Global Offering)",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the \nInternational Offering\n5,382,500\nFinal no. of Offer Shares under the Hong Kong \nPublic Offering\n16,148,500",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1202950000,
+      "page": 4,
+      "quote": "Gross proceeds(Note)\nHK$1,291.91 million\n \n Less: Estimated listing expenses payable based \non Final Offer Price\nHK$(88.96) million\nNet proceeds\nHK$1,202.95 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.15,
+      "page": 16,
+      "quote": "all 107,659,000 H Shares to be \nissued pursuant to the Global Offering, representing approximately 15.00% of the total issued \nshare capital immediately upon Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 717724893,
+      "page": 3,
+      "quote": "Number of issued Shares upon ListingNote\n717,724,893",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": "NaN",
+      "page": 16,
+      "quote": "at least 7.56% of the total \nnumber of issued share capital (excluding treasury shares) will be held by the public \nand not be subject to lock-up",
+      "confidence": "high",
+      "note": "Source-correct value cannot be stored without tripping the pipeline's own DA gate. The announcement (p16, PUBLIC FLOAT AND FREE FLOAT) states that at least 50% of the 107,659,000 Offer Shares are not subject to lock-up = 53,829,500 H Shares (HK$645,954,000 / HK$12.00), i.e. 'at least 7.56% of the total number of issued share capital (excluding treasury shares)' (712,043,659 = 717,724,893 - 5,681,234 treasury shares) => 0.0756, or 0.0750 on the col_CZ base 717,724,893; prospectus p208 explains why: 'at least 50% of the Offer Shares will not be subject to lock-up at the time of the Listing'. That is NOT storable: src/validate.py check_allot requires col_DA within 20% of (col_CS x (1-col_CK)) / col_CZ = 0.1500 and contracts.derived_allowed whitelists only that formula value, so 0.0756 raises the validation error '自由流通比例口径可疑'. Storing 0.15 would merely duplicate col_CY (total public float, which includes the locked-up portion) and contradict the same page; per the reviewer brief a genuinely disclosed value rejected by a pipeline guard is left missing and reported as a finding (the DA formula/gate needs an upstream fix), so the field is left missing instead."
+    },
+    "col_DB": {
+      "value": "Free float denominator = total number of issued Shares upon Listing (col_CZ 717,724,893), the base used for the 15.00% public-float statement; the announcement's Rule 19A.13C(2)(b) free float is struck on the ex-treasury base 717,724,893 - 5,681,234 = 712,043,659. Numerator = H Shares held by the public and not subject to lock-up = at least 53,829,500 Shares (>=50% of the 107,659,000 Offer Shares; HK$645,954,000 / HK$12.00), i.e. at least 7.56% on the ex-treasury base (0.0750 on col_CZ); the remaining Offer Shares are subject to lock-up.",
+      "page": 16,
+      "quote": "at least 7.56% of the total \nnumber of issued share capital (excluding treasury shares) will be held by the public \nand not be subject to lock-up",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 717724893,
+      "page": 3,
+      "quote": "Number of issued Shares upon ListingNote\n717,724,893",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,426 @@
+{
+ "code": "2659.HK",
+ "fields": {
+  "col_L": {
+   "value": 325981465,
+   "page": 469,
+   "quote": "H Shares converted from Unlisted Shares(1) 116,415,550 35.71% Total 325,981,465",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 37911700,
+   "page": 41,
+   "quote": "The statistics in the following table are based on the assumptions that 37,911,700 H Shares will be issued pursuant to the Global Offering, 116,415,550 Unlisted Shares will be converted into H Shares:",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 288069765,
+   "page": 476,
+   "quote": "which consist of 288,069,765 Unlisted Shares among which, 116,415,550 of the Unlisted Shares will be converted into H Shares upon completion of the Global Offering after receipt of the filing notice",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 288069765,
+   "page": 476,
+   "quote": "which consist of 288,069,765 Unlisted Shares among which, 116,415,550 of the Unlisted Shares will be converted into H Shares upon completion of the Global Offering after receipt of the filing notice",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 37,911,700 H Shares Number of Hong Kong Offer Shares : 3,791,200 H Shares",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 37911700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 37,911,700 H Shares Number of Hong Kong Offer Shares : 3,791,200 H Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 34120500,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 34,120,500 H Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 3791200,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 3,791,200 H Shares",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 469,
+   "quote": "H Shares to be issued under the Global Offering 37,911,700 11.63%",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 154327250,
+   "page": 41,
+   "quote": "The calculation of the market capitalization of our H Shares is based on the 154,327,250 H Shares, comprising 37,911,700 H Shares to be issued under the Global Offering and 116,415,550 H Shares",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 26.38,
+   "page": 2,
+   "quote": "Offer Price : HK$26.38 per H Share, plus brokerage of 1.0%, AFRC transaction levy of",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 26.38,
+   "page": 2,
+   "quote": "Offer Price : HK$26.38 per H Share, plus brokerage of 1.0%, AFRC transaction levy of",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 31,
+   "quote": "(RMB in thousands) (unaudited) Revenue",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 973880000,
+   "page": 626,
+   "quote": "Total assets 973,880",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1363267000,
+   "page": 626,
+   "quote": "Total assets 973,880 1,363,267",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1388687000,
+   "page": 626,
+   "quote": "Total assets 973,880 1,363,267 1,388,687",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 749126000,
+   "page": 559,
+   "quote": "Total equity 749,126",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 995876000,
+   "page": 559,
+   "quote": "Total equity 749,126 995,876",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 889585000,
+   "page": 559,
+   "quote": "Total equity 749,126 995,876 889,585",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 224754000,
+   "page": 626,
+   "quote": "Total debt 224,754 367,391 499,102",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 367391000,
+   "page": 626,
+   "quote": "Total debt 224,754 367,391 499,102",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 499102000,
+   "page": 626,
+   "quote": "Total debt 224,754 367,391 499,102",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 6930000,
+   "page": 31,
+   "quote": "Revenue 6,930",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 6160000,
+   "page": 31,
+   "quote": "Revenue 6,930 6,160",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 83980000,
+   "page": 31,
+   "quote": "Revenue 6,930 6,160 1,491 41,990",
+   "confidence": "medium"
+  },
+  "col_AI": {
+   "value": -160396000,
+   "page": 31,
+   "quote": "Loss before tax (160,396)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -364456000,
+   "page": 31,
+   "quote": "Loss before tax (160,396) (364,456)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -366192000,
+   "page": 31,
+   "quote": "Loss before tax (160,396) (364,456) (167,312) (183,096)",
+   "confidence": "medium"
+  },
+  "col_AL": {
+   "value": -160395000,
+   "page": 31,
+   "quote": "Loss and total comprehensive loss for the year/period (160,395)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -364433000,
+   "page": 31,
+   "quote": "Loss and total comprehensive loss for the year/period (160,395) (364,433)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -366192000,
+   "page": 31,
+   "quote": "Loss and total comprehensive loss for the year/period (160,395) (364,433) (167,289) (183,096)",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 523,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 2.5% of the aggregate Offer Price payable for the Offer Shares.",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 523,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 2.5% of the aggregate Offer Price payable for the Offer Shares.",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.0,
+   "page": 502,
+   "quote": "Since there is no over-allotment option in the International Offering, there will be no delayed delivery of Offer Shares to be subscribed by the Cornerstone Investors.",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 78600000,
+   "page": 41,
+   "quote": "Listing expenses to be borne by us are estimated to be approximately HK$78.6 million (including underwriting commission), at the Offer Price of HK$26.38 per H Share, which represent 7.9% of the gross",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 554,
+   "quote": "statements of cash flows of the Group for each of the years ended 31 December 2023 and 2024 and the six months ended 30 June 2025 (the “Relevant Periods”)",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -105190000,
+   "page": 562,
+   "quote": "Net cash flows used in operating activities (140,213) (219,781) (172,871) (105,190)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 453392000,
+   "page": 559,
+   "quote": "Cash and cash equivalents 22 321,671 524,158 453,392",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 111045000,
+   "page": 31,
+   "quote": "Research and development expenses (132,545) (250,727) (116,292) (111,045)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_AY": {
+   "value": 0.994,
+   "page": 389,
+   "quote": "revenue generated from our five largest customers, calculated on the group level with entities controlled by the same group combined together, were RMB5.8 million and RMB41.7 million, respectively,",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Biotechnology – research and development of recombinant biologic drugs (clinical-stage biopharmaceutical company)",
+   "page": 240,
+   "quote": "we have developed into a clinical-stage biotechnology company in China leveraging synthetic biology technology to develop and deliver recombinant biologic drugs, targeting conditions with limited",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18A of the Listing Rules (biotech company unable to meet Rule 8.05(1), (2) or (3))",
+   "page": 10,
+   "quote": "we are a biopharmaceutical company seeking a listing on the Main Board of the Stock Exchange under Chapter 18A of the Listing Rules on the basis that we are unable to meet the requirements under Rule",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Clinical-stage approaching commercialization; NDA approved for SJ02 in August 2025, no commercial manufacturing commenced",
+   "page": 459,
+   "quote": "We had not commenced commercial manufacturing as of the Latest Practicable Date.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 42,
+   "quote": "We currently intend to use the net proceeds from the Global Offering for the following purposes, subject to changes in light of our evolving business needs and changing market conditions",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "16/12/19",
+   "page": 565,
+   "quote": "The Company was established in the People’s Republic of China (the “PRC”) on 16 December 2019, as a limited liability company under the Companies Law of the PRC.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, PRC",
+   "page": 177,
+   "quote": "Registered Office, Head Office and Principal Place of Business in the PRC No. 28 Luoxin Road, Baoshan District Shanghai PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 565,
+   "quote": "The Historical Financial Information has been prepared in accordance with IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 555,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "02/12/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, December 2, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "05/12/25",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close(3) . . . . . . . . . . . . . .12:00 noon on Friday, December 5, 2025",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 41725000,
+   "page": 31,
+   "quote": "Gross profit 6,781 5,020 1,040 41,725",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 37891000,
+   "page": 563,
+   "quote": "Purchases of items of property, plant and equipment (136,365) (118,274) (59,453) (37,891)",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 246226000,
+   "page": 459,
+   "quote": "Total 111,115 205,259 246,226 287,822",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "上海宝济药业股份有限公司",
+   "page": 1,
+   "quote": "GLOBAL OFFERING 上海寶濟藥業股份有限公司 Shanghai Bao Pharmaceuticals Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "AnkeBio (Hong Kong) Co., Limited; Derivatives China Alpha Fund SPC (acting for and on behalf of Derivatives China Fundamental Fund SP); Guotai Junan Investments (Hong Kong) Limited (in connection with the Zhonghe OTC Swaps)",
+   "page": 506,
+   "quote": "AnkeBio HK 112.00 4,245,600 11.20 1.30 DC Alpha SPC 50.00 1,895,300 5.00 0.58 GTINV (in connection with the Zhonghe OTC Swaps) 38.60 1,463,200 3.86 0.45",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 39,
+   "quote": "Our Pre-IPO Investors consist of private equity funds, private limited liabilities companies and public companies, among which some have a specific focus on the healthcare industry.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 261,
+   "quote": "As investment arms of Fangyuan Capital, PCJ Bao and Venus Capital focus on developing venture capital businesses specializing in healthcare industry investment.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 39,
+   "quote": "Our Pre-IPO Investors consist of private equity funds, private limited liabilities companies and public companies, among which some have a specific focus on the healthcare industry.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 260,
+   "quote": "Center Lab serves as an investment holding company of Center Laboratories and manages Center Laboratories’ overseas assets.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 253,
+   "quote": "Shanghai Baoshan State-owned Capital Investment Management (Group) Co., Ltd. (上海寶山國有資本投資管理 (集團)有限公司) (“Baoshan Capital”)",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Center Lab; Fangyuan Capital (PCJ Bao; Venus Capital); Shanghai Luohui; Shanghai Dongxi (Shanghai Cixi; Jiaxing Xiqi); Xiamen Youlang; ROSY ELEGANT; Shanghai Luoqun; Shanghai Guqing; Shanghai Luoyuan; Findowin Capital (Jinan Chanfa; Shandong Caixin; Qingdao Yuanchuang; Yantai Duoying); Oriental Fortune Capital (Fuhai Junyong No. 6; Fuhai Junyong No. 2; Fuhai Jingxuan No. 2; Fuhai Youxuan No. 2); Haitong Innovation Securities; Yangtze River Delta Industrial; Ningbo Longhuahui; Jiaxing No. 2; North Shanghai Biomedical; Shanghai Jifu; Nanjing United Future; SHC; Tianjin Bo'ao; Shanghai STVC Group; Baoshan Capital; Yuanxiong Real Estate",
+   "page": 276,
+   "quote": "SHC 2,365,736 4.11% 2,957,170 8,871,510 3.63% Oriental Fortune Capital 1,891,266 3.29% 4,728,170 4,728,160 2.90%",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.4849,
+   "page": 278,
+   "quote": "Sub-total 57,613,953 100% 171,654,215 116,415,550 88.37%",
+   "confidence": "high",
+   "note": "Derived on the pre-offering basis required by the hint: numerator = sum of the 23 institutional Pre-IPO Investor groups listed under 'Information about Our Pre-IPO Investors' (pp.260-272) taken from the 'As at the Latest Practicable Date without taking into account the Share Subdivision' column of the p.276-p.278 CAPITALIZATION table = 27,937,110; denominator = 57,613,953, the p.278 pre-offering Sub-total (100%). 27,937,110 / 57,613,953 = 0.484902. Excludes the Concert Parties and the share incentive platforms (Shanghai Luoxu, Shanghai Luojun, Ningbo Hongsheng) and the 16 individual investors headed 'Individual Investors' (p.272). The superseded 0.2443 was the p.39 Sophisticated Investors subset only (Center Laboratories, Fangyuan Capital, Findowin Capital = 14,076,766 / 57,613,953)."
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 261,
+   "quote": "Ms. Zheng also served as a non-executive director of the Company from February 8, 2021 to January 21, 2025.",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "November 2020 Capital Increase",
+   "page": 256,
+   "quote": "November 2020 Capital Increase Series A Financing Series A1 Financing Series B Financing Series C Financing Series C+ Financing Date of agreement September 25, 2020",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 5.19,
+   "page": 256,
+   "quote": "November 2020 Capital Increase Series A Financing Series A1 Financing Series B Financing Series C Financing Series C+ Financing Date of agreement September 25, 2020",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural persons acting in concert (Concert Parties, Shanghai Luoxu, Ningbo Hongsheng and Shanghai Luojun)",
+   "page": 38,
+   "quote": "the Concert Parties, Shanghai Luoxu, Ningbo Hongsheng and Shanghai Luojun are considered as a group of Controlling Shareholders of our Company, in aggregate holding approximately 40.57% of our total",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.4057,
+   "page": 38,
+   "quote": "the Concert Parties, Shanghai Luoxu, Ningbo Hongsheng and Shanghai Luojun are considered as a group of Controlling Shareholders of our Company, in aggregate holding approximately 40.57% of our total",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.4057,
+   "page": 38,
+   "quote": "the Concert Parties, Shanghai Luoxu, Ningbo Hongsheng and Shanghai Luojun are considered as a group of Controlling Shareholders of our Company, in aggregate holding approximately 40.57% of our total",
+   "confidence": "high"
+  }
+ }
+}

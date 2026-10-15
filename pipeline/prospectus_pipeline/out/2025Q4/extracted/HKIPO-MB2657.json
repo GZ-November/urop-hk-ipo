@@ -1,0 +1,461 @@
+{
+ "code": "2657.HK",
+ "fields": {
+  "col_L": {
+   "value": 139664285,
+   "page": 302,
+   "quote": "H Shares converted from Domestic Unlisted Shares 92,127,177 65.96% H Shares to be issued pursuant to the Global Offering 13,966,450 10.00% Total 139,664,285 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 13966450,
+   "page": 302,
+   "quote": "H Shares to be issued pursuant to the Global Offering 13,966,450 10.00% Total 139,664,285 100.00%",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 125697835,
+   "page": 302,
+   "quote": "Domestic Unlisted Shares 33,570,658 24.04% H Shares converted from Domestic Unlisted Shares 92,127,177 65.96% H Shares to be issued pursuant to the Global Offering 13,966,450 10.00% Total 139,664,285 ",
+   "confidence": "high",
+   "note": "Dataset convention: col_N = col_L - col_M = 139,664,285 - 13,966,450 = 125,697,835, the total shares in issue immediately before completion of the Global Offering"
+  },
+  "col_O": {
+   "value": 125697835,
+   "page": 302,
+   "quote": "Domestic Unlisted Shares 33,570,658 24.04% H Shares converted from Domestic Unlisted Shares 92,127,177 65.96% H Shares to be issued pursuant to the Global Offering 13,966,450 10.00% Total 139,664,285 ",
+   "confidence": "high",
+   "note": "Dataset convention: col_O = col_L - col_M = 125,697,835"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 13,966,450 H Shares (subject to the Over-allotment",
+   "confidence": "high",
+   "note": "Offer for subscription of new H Shares only; no Sale Shares or Selling Shareholder is disclosed on the cover or in the SHARE CAPITAL summary table, so sale shares are a disclosed zero"
+  },
+  "col_Q": {
+   "value": 13966450,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 13,966,450 H Shares (subject to the Over-allotment",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 12569800,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 12,569,800 H Shares (subject to reallocation and",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1396650,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,396,650 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 77.77,
+   "page": 2,
+   "quote": "Offer Price : HK$77.77 per H Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 77.77,
+   "page": 2,
+   "quote": "Offer Price : HK$77.77 per H Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 449,
+   "quote": "Foreign currencies These financial statements are presented in RMB, which is the Company’s functional currency.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 738752000,
+   "page": 28,
+   "quote": "Total assets 544,427 738,752 1,073,954 1,239,259",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so total assets 738,752 thousand = 738,752,000 (page 28 summary, 'As of December 31, 2022/2023/2024 and As of June 30, 2025')."
+  },
+  "col_X": {
+   "value": 1073954000,
+   "page": 28,
+   "quote": "Total assets 544,427 738,752 1,073,954 1,239,259",
+   "confidence": "high",
+   "note": "year-2 = FY2024, so total assets 1,073,954 thousand = 1,073,954,000 (page 28)."
+  },
+  "col_Y": {
+   "value": 1239259000,
+   "page": 28,
+   "quote": "Total assets 544,427 738,752 1,073,954 1,239,259",
+   "confidence": "high",
+   "note": "year-1 = the period ended 30/06/2025, so total assets 1,239,259 thousand = 1,239,259,000 (page 28; page 424 consolidated statement of financial position, 'As at 30 June 2025')."
+  },
+  "col_Z": {
+   "value": 470116000,
+   "page": 28,
+   "quote": "Net assets 381,658 470,116 612,074 799,643",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so total equity 470,116 thousand = 470,116,000 (page 28)."
+  },
+  "col_AA": {
+   "value": 612074000,
+   "page": 28,
+   "quote": "Net assets 381,658 470,116 612,074 799,643",
+   "confidence": "high",
+   "note": "year-2 = FY2024, so total equity 612,074 thousand = 612,074,000 (page 28)."
+  },
+  "col_AB": {
+   "value": 799643000,
+   "page": 28,
+   "quote": "Net assets 381,658 470,116 612,074 799,643",
+   "confidence": "high",
+   "note": "year-1 = the period ended 30/06/2025, so total equity 799,643 thousand = 799,643,000 (page 28; page 425, 'NET ASSETS 381,658 470,116 612,074 799,643')."
+  },
+  "col_AC": {
+   "value": 268636000,
+   "page": 28,
+   "quote": "Total liabilities 162,769 268,636 461,880 439,616",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so total liabilities 268,636 thousand = 268,636,000 (page 28; page 508 repeats the same four columns)."
+  },
+  "col_AD": {
+   "value": 461880000,
+   "page": 28,
+   "quote": "Total liabilities 162,769 268,636 461,880 439,616",
+   "confidence": "high",
+   "note": "year-2 = FY2024, so total liabilities 461,880 thousand = 461,880,000 (page 28; page 508)."
+  },
+  "col_AE": {
+   "value": 439616000,
+   "page": 28,
+   "quote": "Total liabilities 162,769 268,636 461,880 439,616",
+   "confidence": "high",
+   "note": "year-1 = the period ended 30/06/2025, so total liabilities 439,616 thousand = 439,616,000 (page 28; page 508; = 345,728 current + 93,888 non-current on pages 424-425)."
+  },
+  "col_AF": {
+   "value": 805004000,
+   "page": 24,
+   "quote": "Revenue 691,150 805,004 1,209,641 530,448 1,051,768",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so net sales 805,004 thousand = 805,004,000, taken from the FY2023 column ('Year ended December 31, 2022 2023 2024 | Six months ended June 30, 2024 2025', RMB in thousands)."
+  },
+  "col_AG": {
+   "value": 1209641000,
+   "page": 24,
+   "quote": "Revenue 691,150 805,004 1,209,641 530,448 1,051,768 Cost of sales (152,073) (151,141) (211,985) (96,115) (185,562)",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 2103536000,
+   "page": 24,
+   "quote": "Year ended December 31, Six months ended June 30, 2022 2023 2024 2024 2025 (RMB in thousands) (Unaudited) Revenue 691,150 805,004 1,209,641 530,448 1,051,768",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 99662000,
+   "page": 24,
+   "quote": "(Loss)/profit before tax (36,386) 99,662 218,293 103,811 212,705",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so PBT 99,662 thousand = 99,662,000 (page 24; the same five columns appear on page 318 and page 423). FY2022's loss of 36,386 belongs to no stored slot."
+  },
+  "col_AJ": {
+   "value": 218293000,
+   "page": 24,
+   "quote": "(Loss)/profit before tax (36,386) 99,662 218,293 103,811 212,705 Income tax credit/(expense)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 425410000,
+   "page": 24,
+   "quote": "(Loss)/profit before tax (36,386) 99,662 218,293 103,811 212,705 Income tax credit/(expense)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 84518000,
+   "page": 24,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income for the year/period (5,931) 84,518 186,833 86,653 181,849",
+   "confidence": "high",
+   "note": "year-3 = FY2023, so profit for the year 84,518 thousand = 84,518,000 (page 24/25; page 63: 'a net profit of RMB84.5 million in 2023')."
+  },
+  "col_AM": {
+   "value": 186833000,
+   "page": 24,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income for the year/period (5,931) 84,518 186,833 86,653 181,849 Attributable to:",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 363698000,
+   "page": 24,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income for the year/period (5,931) 84,518 186,833 86,653 181,849 Attributable to:",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 386,
+   "quote": "COMMISSIONS AND EXPENSES Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotmen",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 386,
+   "quote": "COMMISSIONS AND EXPENSES Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotmen",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 385,
+   "quote": "h day from the last day for lodging applications under the Hong Kong Public Offering, to require us to allot and issue up to an aggregate of 2,094,950 additional Shares (representing not more than 15%",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Skincare / cosmetics (premium domestic skincare brand)",
+   "page": 170,
+   "quote": "OVERVIEW We are a premium domestic skincare brand in China with a focus on the anti-wrinkle and firming skincare market, distinguished by our longstanding commitment to premium skincare solutions root",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board (H Share issuer)",
+   "page": 44,
+   "quote": "listing of our H Shares on the Main Board",
+   "confidence": "high",
+   "note": "Basis of listing as disclosed: an initial listing of the H Shares on the Main Board of the Stock Exchange (page 44 definitions; page 419 accountants' report). The prospectus never prints a chapter label, so the stored value no longer asserts one; the PRC-issuer regime is evidenced by Rules 19A.13A(1)/19A.13C (pages 165-166) and Rule 19A.15 (page 91)."
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 419,
+   "quote": "statements of cash flows of the Group for each of the years ended 31 December 2022, 2023 and 2024 and the six months ended 30 June 2025 (the “Relevant Periods”)",
+   "confidence": "high",
+   "note": "Period mapping: col_AT = 30/06/25 is the latest track-record period end, so year-1 = the six months ended 30/06/2025 (a stub; only sales/PBT/profit are annualised x2), year-2 = FY2024 and year-3 = FY2023. Accountants' Report, page 419: the Relevant Periods are 'each of the years ended 31 December 2022, 2023 and 2024 and the six months ended 30 June 2025'; confirmed by the balance sheet and cash-flow column headers."
+  },
+  "col_AU": {
+   "value": 37871000,
+   "page": 431,
+   "quote": "Net cash flows from operating activities 65,274 205,816 306,505 106,858 37,871",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 401461000,
+   "page": 432,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR/PERIOD 23 203,121 285,729 440,322 231,430 401,461 ANALYSIS OF BALANCES",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 18032000,
+   "page": 24,
+   "quote": "Research and development costs (21,120) (19,745) (30,404) (13,114) (18,032)",
+   "confidence": "high",
+   "note": "col_AW is the year-1 original (unannualised) period = the six months ended 30/06/2025, so R&D expensed is 18,032 thousand = 18,032,000; the row prints FY2022 21,120 / FY2023 19,745 / FY2024 30,404 / 6M2024 13,114 / 6M2025 18,032."
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 474,
+   "quote": "Software RMB’000 30 June 2025 At 1 January 2025: Cost 14,229 Accumulated amortisation (6,577) Net carrying amount 7,652",
+   "confidence": "medium",
+   "note": "No development costs are capitalised: the Group's only other intangible asset class is Software (additions of RMB823 thousand in the six months ended 30 June 2025, Note 17) and product development expenditure not meeting the recognition criteria is expensed (accounting policy, page 440)"
+  },
+  "col_AY": {
+   "value": 0.076,
+   "page": 22,
+   "quote": "representing 7.2%, 6.3%, 6.9% and 7.6% of our total revenue",
+   "confidence": "high",
+   "note": "year-1 original (unannualised) period = the six months ended 30/06/2025, so the top-five-customer share is 7.6% = 0.076; the row lists 2022, 2023, 2024 and 6M2025 in that order."
+  },
+  "col_DP": {
+   "value": "上海林清轩化妆品集团股份有限公司",
+   "page": 2,
+   "quote": "SHANGHAI FOREST CABIN COSMETICS GROUP CO., LTD. 上海林清軒化妝品集團股份有限公司 (A joint stock company incorporated",
+   "confidence": "high",
+   "note": "Traditional characters 上海林清軒化妝品集團股份有限公司 converted to simplified Chinese"
+  },
+  "col_CJ": {
+   "value": "FIL Investment Management (Hong Kong) Limited; Mega Prime Development Limited; Loyal Valley Capital; Duckling Fund, L.P.; SynerSuccess Capital Ltd.; Dajia Life Insurance Co., Ltd.; Yield Royal Investment Holding (Singapore) PTE. LTD.",
+   "page": 363,
+   "quote": "THE CORNERSTONE INVESTORS The table below sets forth details of the Cornerstone Placing: Cornerstone Investor Subscription amount(1) Number of Offer Shares(2)",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 158,
+   "quote": "PRE-IPO INVESTMENTS Overview Our Company concluded several rounds of financing with the Pre-IPO Investors. For further details, see the subsection headed “Establishment and Development of Our Company”",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 163,
+   "quote": "Toutoushidao is a limited partnership established under the laws of the PRC and is principally engaged in equity investment.",
+   "confidence": "medium",
+   "note": "Series A and Series B rounds were subscribed for by professional investment funds principally engaged in equity investment (Hainahua Shanghai, Toutoushidao, Hundun Innovation)"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 162,
+   "quote": "Set out below is a description of our Pre-IPO Investors, most of them being private equity funds and strategic investment corporations",
+   "confidence": "medium"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 163,
+   "quote": "50.00% by Shanghai Meicifang Investment Co., Ltd. (上海美次方投資有限公司), which is ultimately controlled by L’Oréal",
+   "confidence": "medium",
+   "note": "Shanghai Meicifang Investment Co., Ltd., ultimately controlled by L'Oréal, holds 50.00% of Pre-IPO Investor Shanghai Cathay Beauty & Innovation; the Foshan Huibi funds are backed by Country Garden Venture Capital"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 163,
+   "quote": "Shanghai Jing’an Industry Guidance Equity Investment Fund Co., Ltd. (上海靜安產業引導股權投資基金有限公司), which is ultimately controlled by Shanghai Jing’an District State-owned Assets Supervision and Administration",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No disclosure identifies a first-tier VC/PE house as a lead or important Pre-IPO shareholder; not inferred from reputation"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Youngor Fashion; Toutoushidao; Foshan Haiyujia; Top New Development; Hundun Innovation; Xinghan Yanchuang; Shanghai Cathay Beauty & Innovation; Xiamen Womeida; Foshan Huibi No. 2",
+   "page": 167,
+   "quote": "Youngor Fashion 5,645,030 4.49% 5,645,030 (P) – 4.04% Toutoushidao 4,516,020 3.59% 4,516,020 (P) – 3.23% Foshan Haiyujia 3,387,015 2.69% 3,387,015 (P) – 2.43% Top New Development 1,129,005 0.90%",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.1974,
+   "page": 167,
+   "quote": "omeida 657,595 0.52% 657,595 (P) – 0.47% Foshan Huibi No. 2 1,580,610 1.26% 1,580,610 (P) – 1.13% H Shares to be issued pursuant to the Global Offering – – 13,966,450 (P, F) – 10.00% Total 125,697,835",
+   "confidence": "medium",
+   "note": "Institutional Pre-IPO holdings immediately before completion of the Global Offering = 5,645,030+4,516,020+3,387,015+1,129,005+1,129,005+3,308,310+3,458,100+657,595+1,580,610 = 24,810,690 / 125,697,835 = 0.1974 (pre-offering column of the CAPITALIZATION table, page 167)"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No Pre-IPO investor is linked in the prospectus to a board seat; the disclosed relationship is the reverse (our non-executive Director Ms. Jing Aimei is a 33.33% limited partner of Hundun Innovation), so no positive evidence"
+  },
+  "col_earliest_round": {
+   "value": "Series A",
+   "page": 158,
+   "quote": "The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors: Series A Series B Share transfer in May 2025 Amount of registered capital subscrib",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 5.13,
+   "page": 158,
+   "quote": "Date of agreements November 2, 2020",
+   "confidence": "medium",
+   "note": "Earliest Pre-IPO investment agreement dated November 2, 2020 (Series A); prospectus dated December 18, 2025 -> 5.13 years"
+  },
+  "col_BB": {
+   "value": "Natural person (Mr. Sun Laichun, founder, chairman and controlling shareholder)",
+   "page": 34,
+   "quote": "OUR CONTROLLING SHAREHOLDERS As of the Latest Practicable Date, Mr. Sun was interested in approximately 79.27% of our total issued share capital, among which, directly (38.21%) and indirectly through ",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.7134,
+   "page": 300,
+   "quote": "Mr. Sun(2)(3)(4) Beneficial owner, interest in controlled corporations 33,570,658 Domestic Unlisted Shares 26.71% 24.04% 100% 66,066,487 H shares 52.56% 47.30% 62.27%",
+   "confidence": "high",
+   "note": "Controlling shareholder group's interest immediately after the Global Offering per the SUBSTANTIAL SHAREHOLDERS table: 33,570,658 Domestic Unlisted Shares (24.04%) + 66,066,487 H Shares (47.30%) = 71.34%; no WVR, so economic interest equals voting rights (col_BD)"
+  },
+  "col_BD": {
+   "value": 0.7134,
+   "page": 34,
+   "quote": "hui and a close associate of Mr. Sun), Shanghai Lingren (a general partner of Shanghai Yuangan and a close associate of Mr. Sun) and Shanghai Yuangan will be entitled to control the exercise of 71.34%",
+   "confidence": "high",
+   "note": "Voting rights controlled by the group of Controlling Shareholders upon Listing as disclosed; no weighted voting rights structure"
+  },
+  "col_BE": {
+   "value": 148903000,
+   "page": 355,
+   "quote": "Total 41,194 70,102 128,825 148,903 156,955",
+   "confidence": "high",
+   "note": "INDEBTEDNESS table 'As of December 31, 2022, 2023, 2024, As of June 30, 2025, As of October 31, 2025' (RMB in thousands). The Total row is 41,194 / 70,102 / 128,825 / 148,903 / 156,955, so the year-1 end (30/06/2025) total is 148,903 thousand = 148,903,000, not annualised. Column set confirmed against page 508, where total liabilities for 30 June 2025 are 439,616 thousand."
+  },
+  "col_BF": {
+   "value": "Commercialised - mass production and sales of skincare products",
+   "page": 171,
+   "quote": "Now in its fifth generation, our Camellia Essence Oil had recorded cumulative sales of over 45 million bottles since its launch as of June 30, 2025.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 367,
+   "quote": "f new brands to build a multi-brand matrix 19.9 49.9 79.8 149.6 15.0% Enhancing our digitalization and information infrastructure 24.9 15.9 9.0 49.8 5.0% Working capital and general corporate purposes",
+   "confidence": "high",
+   "note": "No debt repayment allocation is disclosed in the Use of Proceeds breakdown; the disclosed amount for debt repayment is zero"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 302,
+   "quote": "H Shares converted from Domestic Unlisted Shares 92,127,177 65.96% H Shares to be issued pursuant to the Global Offering 13,966,450 10.00% Total 139,664,285 100.00%",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "22/12/11",
+   "page": 149,
+   "quote": "ESTABLISHMENT AND DEVELOPMENT OF OUR COMPANY (1) Establishment of our Company On December 22, 2011, our Company was established as a limited liability company under the laws of the PRC, with an initia",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, PRC",
+   "page": 101,
+   "quote": "Headquarters and Principal Place of Business in the PRC 9th Floor, Building 3, No. 339 Tongpu Road Putuo District Shanghai, PRC",
+   "confidence": "high",
+   "note": "Registered office and principal place of business in the PRC are in Shanghai (Corporate Information, page 101)"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 306,
+   "quote": "Our consolidated financial information has been prepared in accordance with IFRS Accounting Standards.",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "18/12/25",
+   "page": 5,
+   "quote": "The Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, December 18, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "23/12/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Tuesday, December 23, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 106093627,
+   "page": 35,
+   "quote": "based on 106,093,627 H Shares expected to be in issue immediately upon completion of the Global Offering and the conversion of Domestic Unlisted Shares into H Shares",
+   "confidence": "high",
+   "note": "Partial conversion of Domestic Unlisted Shares into H Shares: of the 125,697,835 pre-offering Shares only 92,127,177 convert (33,570,658 remain Domestic Unlisted Shares), so H Shares listed on HKEX (base, no over-allotment) = 92,127,177 + 13,966,450 = 106,093,627, the figure used for the market capitalisation of our H shares on page 35"
+  },
+  "col_CF": {
+   "value": 866206000,
+   "page": 24,
+   "quote": "Gross profit 539,077 653,863 997,656 434,333 866,206 Other income and gains",
+   "confidence": "high",
+   "note": "Gross profit for year-1 = the six months ended 30/06/2025 (same period as col_AT): 866,206 thousand = 866,206,000, never annualised (page 24)."
+  },
+  "col_CG": {
+   "value": 40700000,
+   "page": 358,
+   "quote": "Our capital expenditures in 2022, 2023, 2024 and the six months ended June 30, 2024 and 2025 were RMB84.5 million, RMB92.2 million, RMB90.3 million, RMB58.2 million and RMB40.7 million",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 420,
+   "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company as at 31 De",
+   "confidence": "high",
+   "note": "Audit opinion on the Historical Financial Information is an unmodified/unqualified opinion"
+  },
+  "col_CI": {
+   "value": 89100000,
+   "page": 386,
+   "quote": "(approximately HK$89.1 million) in total (based on the Offer Price of HK$77.77 per Offer Share and assuming the Over-allotment Option are not exercised).",
+   "confidence": "high",
+   "note": "Aggregate listing expenses disclosed as approximately RMB81.0 million (approximately HK$89.1 million); stored in HK$ base units per the field definition"
+  }
+ }
+}

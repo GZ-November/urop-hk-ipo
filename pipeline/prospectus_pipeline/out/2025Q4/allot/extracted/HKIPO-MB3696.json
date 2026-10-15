@@ -1,0 +1,116 @@
+{
+  "code": "3696.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3929,
+      "page": 6,
+      "quote": "Total 37,204,500 39.29% 6.67%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1427.37,
+      "page": 4,
+      "quote": "Subscription level 1,427.37 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 221926,
+      "page": 4,
+      "quote": "No. of valid applications 221,926",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 13516468000,
+      "page": 23,
+      "quote": "Total 206,081 Total number of Pool A successful applicants: 9,470",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,427.37 times",
+      "page": 4,
+      "quote": "Subscription level 1,427.37 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$24.05; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "29/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/12/2025 22:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 94690500,
+      "page": 3,
+      "quote": "Number of Offer Shares 94,690,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 9469500,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 9,469,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 85221000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 85,221,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 14203500,
+      "page": 1,
+      "quote": "en fully exercised by the Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, January 16, 2026, in respect of an aggregate of 14,203,500 Shares (t",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (16/01/2026 22:24)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A (no claw-back from the International Offering to the Hong Kong Public Offering; the final number of Hong Kong Offer Shares remained 9,469,500, equal to the initial number)",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 9,469,500 Final no. of Offer Shares under the Hong Kong Public Offering 9,469,500",
+      "confidence": "medium"
+    },
+    "col_CX": {
+      "value": 2025800000,
+      "page": 4,
+      "quote": "Net proceeds HK$2,025.8 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.9155,
+      "page": 28,
+      "quote": "510,299,600 Shares, representing approximately 91.55% of the total issued share capital of the Company, are counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 557418500,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before any exercise of the Over-allotment Option) 557,418,500",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1031,
+      "page": 28,
+      "quote": "the free float of our Company is approximately 10.31%",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing, before exercise of the Over-allotment Option (557,418,500 Shares); free float numerator = 94,690,500 Offer Shares less the 37,204,500 Offer Shares allocated to Cornerstone Investors = 57,486,000 unrestricted Shares",
+      "page": 28,
+      "quote": "the free float of our Company is approximately 10.31% and with a market value at the time of the Listing of approximately HK$1,382.5 million",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 557418500,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before any exercise of the Over-allotment Option) 557,418,500",
+      "confidence": "medium"
+    }
+  }
+}

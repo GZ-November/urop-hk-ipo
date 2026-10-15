@@ -1,0 +1,118 @@
+{
+  "code": "7618.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4445,
+      "page": 6,
+      "quote": "Total\n93,871,800\n44.45%\n3.49%\nNotes:\n(1)\t\nAssuming the Over-allotment Option is not exercised and excluding the Shares to be issued under the Share Incentive \nPlans.",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 60.52,
+      "page": 4,
+      "quote": "Subscription level\n60.52 times\nClaw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 72234,
+      "page": 4,
+      "quote": "No. of valid applications\n72,234\nNo. of successful applications\n39,172\nSubscription level\n60.52 times",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1278227400,
+      "page": 18,
+      "quote": "200\n25,463\n8,912 out of 25,463 to receive 200 Shares\n35.00%",
+      "confidence": "medium",
+      "note": "DERIVED: the announcement gives no single 'shares applied for' total. Summed every tier of the BASIS OF ALLOCATION tables: Pool A (p.18) 624,825,400 shares applied across 71,515 valid applications + Pool B (p.19) 653,402,000 shares applied across 719 valid applications = 1,278,227,400 shares (72,234 applications). Cross-check: initial HK offer 21,121,000 shares x subscription level 60.52 times = 1,278,243,000 shares (0.001% difference, tiers are rounded)."
+    },
+    "col_CP": {
+      "value": "Subscription level 60.52 times (Hong Kong Public Offering); International Offering Subscription Level 7.88 times",
+      "page": 4,
+      "quote": "Subscription level\n60.52 times\nClaw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "09/12/25",
+      "page": 2,
+      "quote": "The Price Determination Date is expected to be on or around Tuesday, December 9,\n2025 and, in any event, not later than 12:00 noon on Tuesday, December 9, 2025.",
+      "confidence": "high",
+      "source": "prospectus"
+    },
+    "col_CR": {
+      "value": "10/12/2025",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**10/12/2025 22:29**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 211208800,
+      "page": 2,
+      "quote": "Number of Offer Shares under \nthe Global Offering\n:\n211,208,800 Shares (subject to the Over-\nallotment Option)",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 21121000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering\n21,121,000\n% of Offer Shares under the Hong Kong Public Offering to the \nGlobal Offering\n10.00%",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 190087800,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering\n190,087,800\n% of Offer Shares under the International Offering to the Global \nOffering\n90.00%",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 3957400,
+      "page": 1,
+      "quote": "2026 (after trading hours), the Overall Coordinators, on behalf of the International Underwriters, have partially exercised the Over-allotment Option in respect of an aggregate of 3,957,400 Shares (th",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD (07/01/2026 21:07)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A — no reallocation from the International Offering; final Hong Kong Public Offering stayed at 21,121,000 Offer Shares (10.00% of the Global Offering)",
+      "page": 4,
+      "quote": "Claw-back triggered\nN/A\nNo. of Offer Shares initially available under the Hong Kong Public \nOffering\n21,121,000\nFinal no. of Offer Shares under the Hong Kong Public Offering\n21,121,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2827000000,
+      "page": 4,
+      "quote": "Proceeds\nGross proceeds\n(Note)\nHK$2,978 million\nLess: Estimated listing expenses payable based on Final Offer \nPrice\nHK$151 million\nNet proceeds\nHK$2,827 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2429,
+      "page": 26,
+      "quote": "the total number \nof Shares held by the public represents approximately 24.29% of the total issued Shares of the \nCompany",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 2687570231,
+      "page": 26,
+      "quote": "on the basis of 2,687,570,231 Shares in issue immediately upon \ncompletion of the Global Offering and the Conversion Adjustment (assuming the Over-allotment \nOption is not exercised",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0437,
+      "page": null,
+      "quote": "公式：(col_CS 211,208,800 − col_CK 0.4445×col_CS) ÷ col_CZ 2,687,570,231 = 0.0437；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares immediately upon completion of the Global Offering and the Conversion Adjustment (excluding Shares to be issued under the Share Incentive Plans); numerator = Offer Shares (col_CS) less the Cornerstone Investors' allocation (col_CK x col_CS). Shares held by Controlling Shareholders and other locked-up pre-IPO holders are excluded.",
+      "page": 26,
+      "quote": "on the basis of 2,687,570,231 Shares in issue immediately upon \ncompletion of the Global Offering and the Conversion Adjustment (assuming the Over-allotment \nOption is not exercised",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 2687570231,
+      "page": 26,
+      "quote": "on the basis of 2,687,570,231 Shares in issue immediately upon \ncompletion of the Global Offering and the Conversion Adjustment (assuming the Over-allotment \nOption is not exercised",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "2396.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 648 页 0 处「基石投资者」、配发公告 18 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 791.95,
+      "page": 4,
+      "quote": "Subscription level 791.95 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 146647,
+      "page": 4,
+      "quote": "No. of valid applications 146,647 No. of successful applications 7,978",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1397787200,
+      "page": 8,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING Subject to the satisfaction of the conditions set out in the Prospectus, valid applications made by the public will be conditionally",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 791.95 times",
+      "page": 4,
+      "quote": "Subscription level 791.95 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "18/12/25",
+      "page": 2,
+      "quote": "Final Offer Price : HK$38.20 per H Share, plus ",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "19/12/2025",
+      "page": 1,
+      "quote": "This announcement is for information purposes only and does not constitute an invitation or offer to acquire, purchase or subscribe for securities. This announcement is not a prospectus.",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 17648800,
+      "page": 3,
+      "quote": "Number of Offer Shares 17,648,800 Number o",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1765000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,765,000 % of",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 15883800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 15,883,800 % o",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD,\nNO STABILIZATION ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION（18/01/2026 18:12）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD,\nNO STABILIZATION ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A; the final Hong Kong Public Offering shares equal the 1,765,000 initially available, i.e. no clawback/reallocation was made",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 1,765,000 Final no. of Offer Shares under the Hong Kong Pub",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 599820000,
+      "page": 3,
+      "quote": "Net proceeds HK$ 599.82 million ",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.256,
+      "page": 17,
+      "quote": "Upon Listing, 30,119,967 H Shares, representing approximately 25.60% of the total number of issued Shares of the ",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 117657522,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 117,657,522 Over-al",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.15,
+      "page": 17,
+      "quote": "The Company’s H Shares to be counted towards the free float upon Listing will be 17,648,800 Shares. Based on the Offer Price of HK$38.20 per H Share, the Company will satisfy the free float requ",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float numerator = the 17,648,800 Offer Shares under the Global Offering; denominator = the 117,657,522 issued Shares upon Listing",
+      "page": 17,
+      "quote": "PUBLIC FLOAT AND FREE FLOAT Upon Listing, 30,119,967 H Shares, representing approximately 25.60% of the total number of issued ",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 117657522,
+      "page": 17,
+      "quote": "The Company’s H Shares to be counted towards the free float upon Listing will be 17,648,800 Shares. Based on the Offer Price of HK$38.20 per H Share, the Company will satisfy the free float requ",
+      "confidence": "high"
+    }
+  }
+}

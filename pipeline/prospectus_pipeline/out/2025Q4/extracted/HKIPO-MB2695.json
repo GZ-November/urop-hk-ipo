@@ -1,0 +1,429 @@
+{
+ "code": "2695.HK",
+ "fields": {
+  "col_L": {
+   "value": 144170000,
+   "page": 315,
+   "quote": "Unlisted Shares in issue 108,070,000 74.96% H Shares to be issued pursuant to the Global Offering 36,100,000 25.04% Total 144,170,000 100%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 36100000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 36,100,000 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 108070000,
+   "page": 315,
+   "quote": "Unlisted Shares in issue 108,070,000 74.96% H Shares to be issued pursuant to the Global Offering 36,100,000 25.04% Total 144,170,000 100%",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 108070000,
+   "page": 315,
+   "quote": "Unlisted Shares in issue 108,070,000 74.96% H Shares to be issued pursuant to the Global Offering 36,100,000 25.04% Total 144,170,000 100%",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 315,
+   "quote": "Unlisted Shares in issue 108,070,000 74.96% H Shares to be issued pursuant to the Global Offering 36,100,000 25.04% Total 144,170,000 100%",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 36100000,
+   "page": 315,
+   "quote": "H Shares to be issued pursuant to the Global Offering 36,100,000 25.04%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 32490000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 32,490,000 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 3610000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 3,610,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 4.1,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$4.10 per H Share plus brokerage of 1%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 3.47,
+   "page": 2,
+   "quote": "The Offer Price will not be more than HK$4.10 and is currently expected to be not less than HK$3.47",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 326,
+   "quote": "For the years ended 31 December For the six months ended 30 June 2022 2023 2024 2024 2025 RMB’000 RMB’000 RMB’000 RMB’000 RMB’000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 294275000,
+   "page": 467,
+   "quote": "Elimination upon consolidation (69,959) Group assets 294,275",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 316965000,
+   "page": 468,
+   "quote": "Elimination upon consolidation (7,060) Group assets 316,965",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 428667000,
+   "page": 468,
+   "quote": "Elimination upon consolidation (5,967) Group assets 428,667",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 233531000,
+   "page": 433,
+   "quote": "Total equity 186,027 233,531 255,919 257,627",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 255919000,
+   "page": 433,
+   "quote": "Total equity 186,027 233,531 255,919 257,627",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 257627000,
+   "page": 433,
+   "quote": "Total equity 186,027 233,531 255,919 257,627",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 60744000,
+   "page": 469,
+   "quote": "Elimination upon consolidation (13,618) Group liabilities 60,744",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 61046000,
+   "page": 469,
+   "quote": "Elimination upon consolidation (7,060) Group liabilities 61,046",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 171040000,
+   "page": 469,
+   "quote": "Elimination upon consolidation (5,967) Group liabilities 171,040",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 143887000,
+   "page": 326,
+   "quote": "Revenue 63,039 143,887 137,200 51,517 55,884",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 137200000,
+   "page": 326,
+   "quote": "Revenue 63,039 143,887 137,200 51,517 55,884",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 111768000,
+   "page": 326,
+   "quote": "Revenue 63,039 143,887 137,200 51,517 55,884",
+   "confidence": "medium",
+   "note": "Year-1 = stub period ended 30/06/2025 (column 5). Printed 6M2025 revenue 55,884 x 12/6 = 111,768; year-2 = column 3 (FY2024) and year-3 = column 2 (FY2023)."
+  },
+  "col_AI": {
+   "value": 62687000,
+   "page": 326,
+   "quote": "Profit before income tax 2,435 62,687 58,916 18,311 10,100",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 58916000,
+   "page": 326,
+   "quote": "Profit before income tax 2,435 62,687 58,916 18,311 10,100",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 20200000,
+   "page": 326,
+   "quote": "Profit before income tax 2,435 62,687 58,916 18,311 10,100",
+   "confidence": "medium",
+   "note": "Year-1 = stub period ended 30/06/2025 (column 5). Printed 6M2025 PBT 10,100 x 12/6 = 20,200; year-2 = column 3 (FY2024) and year-3 = column 2 (FY2023)."
+  },
+  "col_AL": {
+   "value": 47504000,
+   "page": 326,
+   "quote": "(Loss)/Profit and total comprehensive income for the year/period (2,599) 47,504 42,809 12,679 6,775",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 42809000,
+   "page": 326,
+   "quote": "(Loss)/Profit and total comprehensive income for the year/period (2,599) 47,504 42,809 12,679 6,775",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 13550000,
+   "page": 326,
+   "quote": "(Loss)/Profit and total comprehensive income for the year/period (2,599) 47,504 42,809 12,679 6,775",
+   "confidence": "medium",
+   "note": "Year-1 = stub period ended 30/06/2025 (column 5). Printed 6M2025 profit 6,775 x 12/6 = 13,550; year-2 = column 3 (FY2024 42,809) and year-3 = column 2 (FY2023 47,504)."
+  },
+  "col_AO": {
+   "value": 0.02,
+   "page": 395,
+   "quote": "The Underwriters will receive an underwriting commission of 2.0% of the aggregate Offer Price of all the Offer Shares for both the Hong Kong Public Offering and the International Offering",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.02,
+   "page": 395,
+   "quote": "The Underwriters will receive an underwriting commission of 2.0% of the aggregate Offer Price of all the Offer Shares for both the Hong Kong Public Offering and the International Offering",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 395,
+   "quote": "our Company may be required to issue up to an aggregate of 5,415,000 H Shares (representing not more than 15% of the Offer Shares initially being offered under the Global Offering)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Cultural tourism performance and services (state-owned cultural tourism service provider under Mount Wuyi / Nanping SASAC)",
+   "page": 318,
+   "quote": "We are a state-owned cultural tourism service provider headquartered in Mount Wuyi, Fujian Province. According to Frost & Sullivan, we ranked the eighth",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board",
+   "page": 316,
+   "quote": "we may be listed on the Main Board of the Stock Exchange",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 433,
+   "quote": "As at 31 December As at 30 June Notes 2022 2023 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 16438000,
+   "page": 435,
+   "quote": "Net cash generated from operating activities 16,417 69,265 60,794 25,098 16,438",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 64133000,
+   "page": 436,
+   "quote": "Cash and cash equivalents at end of year/period 22 27,692 85,241 101,081 23,510 64,133",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.177,
+   "page": 239,
+   "quote": "For the years ended 31 December 2022, 2023, 2024, and the six months ended 30 June 2025, our top five customers accounted for approximately 17.0%, 23.4%, 15.9%, and 17.7% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "印象大红袍股份有限公司",
+   "page": 2,
+   "quote": "Impression Dahongpao Co., Ltd. 印象大紅袍股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 144,
+   "quote": "Each of the said shareholder, is a state-owned enterprise. Fujian Mount Wuyi Cultural Tourism Group and Mount Wuyi Tourism Resort Development were ultimately controlled by Mount Wuyi SASAC",
+   "confidence": "medium"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "国资委 (local-government SASAC)",
+   "page": 438,
+   "quote": "the ultimate holding company of the Company is Fujian Mount Wuyi Cultural Tourism Group Co., Ltd., who is ultimately controlled by the Mount Wuyi State-owned Assets Operation Service Centre",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.586,
+   "page": 21,
+   "quote": "the Controlling Shareholders will be entitled to exercise the voting rights attached to approximately 58.6% of the total issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.586,
+   "page": 21,
+   "quote": "the Controlling Shareholders will be entitled to exercise the voting rights attached to approximately 58.6% of the total issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 106360000,
+   "page": 366,
+   "quote": "As at 31 December 2022, 2023 and 2024, 30 June 2025, and 31 October 2025, our lease liabilities amounted to approximately RMB41.2 million, RMB38.5 million, RMB38.3 million, RMB106.4 million",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 30,
+   "quote": "In line with our strategies, we intend to apply the net proceeds from the global offerings for the following purposes:",
+   "confidence": "medium"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 316,
+   "quote": "Upon completion of the Global Offering (assuming the Over-allotment Option is not exercised), our Company would have 108,070,000 Unlisted Shares and 36,100,000 H Shares.",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "21/01/09",
+   "page": 144,
+   "quote": "On 21 January 2009, our Company was established as a limited liability company with the corporate name being Mount Wuyi Impression Dahongpao Cultural Tourism Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Mount Wuyi City, Fujian Province, PRC",
+   "page": 438,
+   "quote": "its principal place of business is Yinxiang Bieyuan, No. 62, Sangu Street, Resort Area, Mount Wuyi City, Fujian Province, PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "HKFRS (Hong Kong Financial Reporting Standards)",
+   "page": 438,
+   "quote": "The Historical Financial Information has been prepared in accordance with Hong Kong Financial Reporting Standards as issued by the HKICPA",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "12/12/25",
+   "page": 5,
+   "quote": "9:00 a.m. on Friday, 12 December 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "17/12/25",
+   "page": 5,
+   "quote": "12:00 noon on Wednesday, 17 December 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 36100000,
+   "page": 151,
+   "quote": "36,100,000 H Shares to be issued pursuant to the Global Offering (assuming the Over-allotment Option is not exercised), representing 25.04% of the total issued H Shares",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 23753000,
+   "page": 326,
+   "quote": "Gross profit 17,178 83,122 74,893 25,541 23,753",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 17586000,
+   "page": 436,
+   "quote": "Acquisition of property and equipment (21,279) (5,618) (5,795) (3,437) (17,586)",
+   "confidence": "high",
+   "note": "Year-1 = stub period ended 30/06/2025: 5th (2025 H1) column, not annualised. The page-369 CAPITAL EXPENDITURE narrative states RMB46.7 million for 6M2025, a broader measure including RMB29.0 million intangible additions; the cash-flow purchase-of-PPE line is the capex basis used here."
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 429,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s consolidated financial positions",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 26400000,
+   "page": 396,
+   "quote": "printing and other expenses relating to the Global Offering to be borne by the Company are estimated to be approximately HK$26.4 million",
+   "confidence": "high"
+  }
+ }
+}

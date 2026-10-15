@@ -1,0 +1,419 @@
+{
+ "code": "8549.HK",
+ "fields": {
+  "col_L": {
+   "value": 400000000,
+   "page": 254,
+   "quote": "400,000,000\nShares in total\n4,000,000",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 100000000,
+   "page": 2,
+   "quote": "Number of Offer Shares\n:\n100,000,000 Shares (subject to the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 300000000,
+   "page": 254,
+   "quote": "299,999,800\nNew Shares to be allotted and issued\npursuant to the Capitalisation Issue\n2,999,998\n100,000,000\nNew Shares to be allotted and issued\npursuant to the Share Offer\n1,000,000\n400,000,000",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 300000000,
+   "page": 254,
+   "quote": "299,999,800\nNew Shares to be allotted and issued\npursuant to the Capitalisation Issue\n2,999,998\n100,000,000\nNew Shares to be allotted and issued\npursuant to the Share Offer\n1,000,000\n400,000,000",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Public Offer Shares\n:\n10,000,000 Shares (subject to reallocation)",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 100000000,
+   "page": 2,
+   "quote": "Number of Offer Shares\n:\n100,000,000 Shares (subject to the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 90000000,
+   "page": 2,
+   "quote": "Number of Placing Shares\n:\n90,000,000 Shares (subject to reallocation and the Offer Size\nAdjustment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 10000000,
+   "page": 2,
+   "quote": "Number of Public Offer Shares\n:\n10,000,000 Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 0.65,
+   "page": 2,
+   "quote": "Offer Price\n:\nNot more than HK$0.65 per Offer Share and expected to be not\nless than HK$0.45 per Offer Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 0.45,
+   "page": 2,
+   "quote": "Not more than HK$0.65 per Offer Share and expected to be not\nless than HK$0.45 per Offer Share",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares of HK$0.01 each",
+   "page": 254,
+   "quote": "HK$\n2,000,000,000\nShares of HK$0.01 each\n20,000,000",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 400000000,
+   "page": 254,
+   "quote": "400,000,000\nShares in total\n4,000,000",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "HKD",
+   "page": 387,
+   "quote": "The Historical Financial Information is presented in Hong Kong dollar (“HK$”) and all\nvalues are rounded to the nearest thousand (HK$’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 90261000,
+   "page": 389,
+   "quote": "41,031\n36,130\nNet current assets . . . . . . . . . . . . . . . . . . . . . . . .\n34,682\n44,313\nTotal assets less current liabilities . . . . . . . . . . .\n49,230\n57,477",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 93607000,
+   "page": 389,
+   "quote": "41,031\n36,130\nNet current assets . . . . . . . . . . . . . . . . . . . . . . . .\n34,682\n44,313\nTotal assets less current liabilities . . . . . . . . . . .\n49,230\n57,477",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 47834000,
+   "page": 390,
+   "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n47,834\n56,855",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 56855000,
+   "page": 390,
+   "quote": "Total equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n47,834\n56,855",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 42427000,
+   "page": 24,
+   "quote": "Non-current liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,396\n622\nCurrent liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n41,031\n36,130",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 36752000,
+   "page": 24,
+   "quote": "Non-current liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1,396\n622\nCurrent liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n41,031\n36,130",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 123010000,
+   "page": 388,
+   "quote": "HK$’000\nHK$’000\nRevenue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n6\n123,010\n154,534",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 154534000,
+   "page": 388,
+   "quote": "HK$’000\nHK$’000\nRevenue . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n6\n123,010\n154,534",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 12335000,
+   "page": 388,
+   "quote": "Profit before income tax . . . . . . . . . . . . . . . . . . .\n10\n12,335\n17,131",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 17131000,
+   "page": 388,
+   "quote": "Profit before income tax . . . . . . . . . . . . . . . . . . .\n10\n12,335\n17,131",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 10373000,
+   "page": 388,
+   "quote": "Profit for the year attributable to owners of\nthe Company . . . . . . . . . . . . . . . . . . . . . . . . . .\n10,373\n14,074",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 14074000,
+   "page": 388,
+   "quote": "Profit for the year attributable to owners of\nthe Company . . . . . . . . . . . . . . . . . . . . . . . . . .\n10,373\n14,074",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 353,
+   "quote": "up to an aggregate of 15,000,000 additional new Shares,\nrepresenting 15% of the Offer Shares initially available under the Share Offer",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "E&M engineering works contractor (HVAC, electrical, plumbing and drainage systems) in Hong Kong",
+   "page": 12,
+   "quote": "We are an established contractor in Hong Kong engaging in E&M engineering works, and our\nhistory can be traced back to 2006. We specialise in the supply, installation and maintenance of (i)",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "GEM (application for listing on GEM of the Stock Exchange under the GEM Listing Rules)",
+   "page": 68,
+   "quote": "APPLICATION FOR LISTING ON GEM\nOur Company has applied to the Stock Exchange for the listing of, and permission to deal in,\nthe Shares in issue and to be issued pursuant to the Share Offer",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/03/25",
+   "page": 384,
+   "quote": "the consolidated statements of cash flows of the\nGroup for each of the years ended 31 March 2024 and 2025 (the “Track Record Period”)",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 13248000,
+   "page": 392,
+   "quote": "Net cash from operating activities . . . . . . . . . . .\n5,617\n13,248",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 16072000,
+   "page": 393,
+   "quote": "Cash and cash equivalents at end of year . . . . .\n19,879\n16,072",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": "NaN",
+   "page": 210,
+   "quote": "RESEARCH AND DEVELOPMENT\nDuring the Track Record Period and as at the Latest Practicable Date, save for our “GL ERP”\nsystem as disclosed above, we did not engage in any research and development acti",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 306000,
+   "page": 303,
+   "quote": "782\nAdditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n306",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.681,
+   "page": 47,
+   "quote": "representing approximately 64.5% and 68.1%\nof our total revenue for the respective year.",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "金叶国际集团有限公司",
+   "page": 1,
+   "quote": "GOLDEN LEAF INTERNATIONAL GROUP LIMITED\n金葉國際集團有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": 129,
+   "quote": "As at the date of its incorporation, it had an authorised share\ncapital of HK$380,000 divided into 38,000,000 ordinary shares of par value of HK$0.01 each.",
+   "confidence": "low"
+  },
+  "col_BB": {
+   "value": "Natural person (Mr. KY Ip, through Mini Universe)",
+   "page": 252,
+   "quote": "Mini Universe(Note 3) . . . .\nBeneficial owner\n172\n86%\n258,000,000\n64.5%\nMr. KY Ip(Note 3) . . . . . .\nInterest in a controlled\ncorporation\n172\n86%\n258,000,000\n64.5%",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.645,
+   "page": 252,
+   "quote": "Mini Universe(Note 3) . . . .\nBeneficial owner\n172\n86%\n258,000,000\n64.5%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.645,
+   "page": 252,
+   "quote": "Mini Universe(Note 3) . . . .\nBeneficial owner\n172\n86%\n258,000,000\n64.5%",
+   "confidence": "medium"
+  },
+  "col_BE": {
+   "value": 7236000,
+   "page": 322,
+   "quote": "Lease liabilities — unsecured and\nunguaranteed . . . . . . . . . . . . . . . . . . . . . .\n2,020\n1,044\n673\n8,334\n7,236\n6,247",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 29,
+   "quote": "(i) approximately HK$21.5 million, representing approximately\n56.1% of the estimated net proceeds, will be used for financing up-front costs for our new\nprojects",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "29/04/25",
+   "page": 123,
+   "quote": "Our Company was incorporated in the Cayman Islands as an exempted company with limited\nliability on 29 April 2025",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Kwai Chung, New Territories, Hong Kong",
+   "page": 394,
+   "quote": "The Company’s principal place of business is located at\n23/F., New Venture Centre, 18 Lam Tin Street, Kwai Chung, New Territories, Hong Kong.",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "HKFRS Accounting Standards",
+   "page": 262,
+   "quote": "our Group has consistently applied HKFRS Accounting Standards issued by the\nHKICPA",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "30/09/25",
+   "page": 6,
+   "quote": "Public Offer commences. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on\nTuesday, 30 September 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "06/10/25",
+   "page": 6,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on\nMonday, 6 October 2025",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 31449000,
+   "page": 388,
+   "quote": "Gross profit . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n23,795\n31,449",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 254000,
+   "page": 393,
+   "quote": "HK$’000\nHK$’000\nCash flows from investing activities\nBank interest income. . . . . . . . . . . . . . . . . . . . . . .\n225\n73\nPurchase of property, plant and equipment . . . . . .\n(164)\n(254)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 385,
+   "quote": "Opinion\nIn\nour\nopinion,\nthe\nHistorical\nFinancial\nInformation\ngives,\nfor\nthe\npurposes\nof\nthe\naccountants’ report, a true and fair view of the Group’s financial position as at 31 March 2024 and\n2025",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 16700000,
+   "page": 27,
+   "quote": "The total amount of Listing expenses represents professional fees, underwriting commission\nand other fees incurred in connection with the Share Offer is estimated to be approximately\nHK$16.7 million",
+   "confidence": "high"
+  }
+ }
+}

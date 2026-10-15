@@ -1,0 +1,116 @@
+{
+  "code": "2695.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 634 页 0 处「基石投资者」、配发结果公告 12 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "confidence": "high",
+      "source": "cornerstone_absence"
+    },
+    "col_CM": {
+      "value": 3397.48,
+      "page": 4,
+      "quote": "Subscription level 3,397.48 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 114610,
+      "page": 4,
+      "quote": "No. of valid applications 114,610",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 12264907000,
+      "page": 8,
+      "quote": "114,610 valid applications made by the public will be conditionally allocated on the basis set out below: Number of H Shares applied for Number of valid applications Basis of allocation/ballot",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 3,397.48 times",
+      "page": 4,
+      "quote": "Subscription level 3,397.48 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "18/12/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and us on the",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "19/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**19/12/2025 18:41**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 36100000,
+      "page": 3,
+      "quote": "Number of Offer Shares 36,100,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3610000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Public Offer 3,610,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 32490000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offer 32,490,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-12-22 起 45 天内共 3 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-05 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No; Reallocation: No",
+      "page": 4,
+      "quote": "Claw-back triggered No No. of Offer Shares initially available under the Public Offer 3,610,000 Reallocation No",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 103640000,
+      "page": 3,
+      "quote": "Less: Estimated listing expenses payable based on Final Offer Price HK$ (26.32) million Net proceeds HK$103.64 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2504,
+      "page": 11,
+      "quote": "Immediately after the completion of the Global Offering, 36,100,000 H Shares, representing approximately 25.04% of the total issued shares of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 144170000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 144,170,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.2504,
+      "page": 11,
+      "quote": "the 36,100,000 H Shares issued pursuant to the Global Offering are expected to be held by the public and will not be subject to any disposal restrictions",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Total issued shares of the Company upon Listing (144,170,000 Shares)",
+      "page": 11,
+      "quote": "representing approximately 25.04% of the total issued shares of the Company",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 144170000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 144,170,000",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+ "code": "6980.HK",
+ "fields": {
+  "col_L": {
+   "value": 85000000,
+   "page": 398,
+   "quote": "H Shares to be issued pursuant to the Global Offering 9,000,000 10.59 Total 85,000,000 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 9000000,
+   "page": 398,
+   "quote": "H Shares to be issued pursuant to the Global Offering 9,000,000 10.59",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 76000000,
+   "page": 398,
+   "quote": "As of the Latest Practicable Date, the registered capital of our Company was RMB76 million, comprising 76 million Domestic Unlisted Shares with a nominal value of RMB1.00 each.",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 76000000,
+   "page": 213,
+   "quote": "Sub-total 76,000,000 Domestic Unlisted Shares 100.00",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 213,
+   "quote": "Public shareholders – – – 9,000,000 H Shares 10.59 Yes Total 76,000,000 Domestic Unlisted Shares 100.00",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 9000000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 9,000,000 H Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 8100000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 8,100,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 900000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 900,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 50.0,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$50.00 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 45.0,
+   "page": 2,
+   "quote": "The Offer Price will not be more than HK$50.00 per Offer Share and is currently expected to be not less than HK$45.00 per Offer Share.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 530,
+   "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (Expressed in Renminbi)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 1815011000,
+   "page": 30,
+   "quote": "Total non-current assets 680,922 811,978 725,127 699,879 Total current assets 781,321 1,003,033 1,075,762 1,154,395",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1800889000,
+   "page": 30,
+   "quote": "Total non-current assets 680,922 811,978 725,127 699,879 Total current assets 781,321 1,003,033 1,075,762 1,154,395",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1854274000,
+   "page": 30,
+   "quote": "Total non-current assets 680,922 811,978 725,127 699,879 Total current assets 781,321 1,003,033 1,075,762 1,154,395",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 932591000,
+   "page": 532,
+   "quote": "TOTAL EQUITY 757,263 932,591 1,127,472 1,210,821",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 1127472000,
+   "page": 532,
+   "quote": "TOTAL EQUITY 757,263 932,591 1,127,472 1,210,821",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 1210821000,
+   "page": 532,
+   "quote": "TOTAL EQUITY 757,263 932,591 1,127,472 1,210,821",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 882420000,
+   "page": 30,
+   "quote": "Total non-current liabilities 167,902 151,318 141,659 135,866 Total current liabilities 537,078 731,102 531,758 507,587",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 673417000,
+   "page": 30,
+   "quote": "Total non-current liabilities 167,902 151,318 141,659 135,866 Total current liabilities 537,078 731,102 531,758 507,587",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 643453000,
+   "page": 30,
+   "quote": "Total non-current liabilities 167,902 151,318 141,659 135,866 Total current liabilities 537,078 731,102 531,758 507,587",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 2122305000,
+   "page": 530,
+   "quote": "Revenue 4 1,817,540 2,122,305 2,143,259 1,109,801 1,063,194",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 2143259000,
+   "page": 530,
+   "quote": "Revenue 4 1,817,540 2,122,305 2,143,259 1,109,801 1,063,194",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 2126388000,
+   "page": 530,
+   "quote": "Revenue 4 1,817,540 2,122,305 2,143,259 1,109,801 1,063,194",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 284013000,
+   "page": 530,
+   "quote": "Profit before taxation 226,554 284,013 308,364 197,555 163,007",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 308364000,
+   "page": 530,
+   "quote": "Profit before taxation 226,554 284,013 308,364 197,555 163,007",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 326014000,
+   "page": 530,
+   "quote": "Profit before taxation 226,554 284,013 308,364 197,555 163,007",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 205728000,
+   "page": 530,
+   "quote": "Profit and total comprehensive income for the year/period 165,849 205,728 224,201 146,033 120,035",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 224201000,
+   "page": 530,
+   "quote": "Profit and total comprehensive income for the year/period 165,849 205,728 224,201 146,033 120,035",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 240070000,
+   "page": 530,
+   "quote": "Profit and total comprehensive income for the year/period 165,849 205,728 224,201 146,033 120,035",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 495,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 495,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares (the “Fixed Fees”).",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.0,
+   "page": 97,
+   "quote": "However, given that we will not grant any over-allotment option to the underwriters, no stabilizing manager has been appointed by us in connection with the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Tea leaf products (processing, production and sales of tea leaves and other tea products in the PRC)",
+   "page": 539,
+   "quote": "The Company and its subsidiaries (together, the “Group”) are principally engaged in the processing, production and sales of tea leaves and other tea products in the PRC.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange",
+   "page": 506,
+   "quote": "We have applied to the Listing Committee for the granting of the listing of, and permission to deal in, the H Shares in issue and to be issued pursuant to the Global Offering on the Main Board",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 527,
+   "quote": "as at 31 December 2022, 2023 and 2024 and 30 June 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 181241000,
+   "page": 537,
+   "quote": "Net cash generated from operating activities 214,536 465,062 269,027 42,485 181,241",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 436021000,
+   "page": 538,
+   "quote": "Cash and cash equivalents at the end of the year/period 18(a) 239,263 206,557 347,199 130,563 436,021",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 6453000,
+   "page": 530,
+   "quote": "Research and development costs 6(d) (8,220) (11,621) (16,505) (6,959) (6,453)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 541,
+   "quote": "Hence both research costs and development costs are generally recognised as expenses in the period in which they are incurred.",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.154,
+   "page": 77,
+   "quote": "The revenue generated from our five largest customers in each period during the Track Record Period accounted for 13.8%, 16.3%, 16.1% and 15.4% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "八马茶业股份有限公司",
+   "page": 1,
+   "quote": "八馬茶業股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 32,
+   "quote": "Our Pre-IPO Investors include employees, former employees, individual investors and corporate investors which are Tianjin Changfeng, Jingyuan Yisan, Shanghai Fengwang, Chengdu Xinjin",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 205,
+   "quote": "Jingyuan Yisan focuses on the consumer industry, targeting startup and pre-IPO investments.",
+   "confidence": "medium"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 206,
+   "quote": "Chengdu Xinjin focuses on the consumer industry, with an investment portfolio covering food and beverage, retail chain, restaurant chain",
+   "confidence": "medium"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Tianjin Changfeng; Jingyuan Yisan; Shanghai Fengwang; Chengdu Xinjin; Quanzhou Huixinfu; Jinjiang Baiyingcheng; Wang Kunheng; Wang Qingnan; Wang Xiaojian; Xie Guoshun; Chen Amin; Fu Chan; Lu Zhilan; Liao Yunjin; Zheng Hongzhi; Pan Liang; Qiu Baohui",
+   "page": 202,
+   "quote": "PRE-IPO INVESTMENTS Overview The following table sets out the key terms of the Pre-IPO Investments made by the Pre-IPO Investors.",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.1876,
+   "page": 33,
+   "quote": "As of the Latest Practicable Date, the Pre-IPO Investors hold approximately 18.76% of the total issued share capital of the Company.",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "October 9, 2018 share transfer",
+   "page": 202,
+   "quote": "1. October 9, 2018 October 9, 2018 Mr. Wang Qingnan 40,000 520,000 13.0 70.02",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": 7.03,
+   "page": 202,
+   "quote": "1. October 9, 2018 October 9, 2018 Mr. Wang Qingnan 40,000 520,000 13.0 70.02",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural persons (family members acting in concert)",
+   "page": 397,
+   "quote": "Mr. Wang Wenbin, Mr. Wang Wenli, Ms. Chen Yajing, Ms. Wu Xiaoning, Mr. Wang Wenchao and Ms. Wang Xiaoping are family members",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.4998,
+   "page": 32,
+   "quote": "by virtue of the acting-in-concert arrangement, will be entitled to exercise or control the exercise of an aggregate of 49.98% voting rights at the general meeting of our Company",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.4998,
+   "page": 32,
+   "quote": "by virtue of the acting-in-concert arrangement, will be entitled to exercise or control the exercise of an aggregate of 49.98% voting rights at the general meeting of our Company",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 176296000,
+   "page": 467,
+   "quote": "Non-current Lease liabilities 156,096 138,822 127,806 123,456 118,498 246,041 276,442 183,383 176,296 172,209",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 35,
+   "quote": "Approximately 35.0%, or HK$128.9 million, is expected to be used for expanding our production bases and building a new production base",
+   "confidence": "medium"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 398,
+   "quote": "The H Shares in issue following the completion of the Global Offering and the Domestic Unlisted Shares are ordinary Shares in the share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "28/07/97",
+   "page": 539,
+   "quote": "Bama Tea Co., Ltd. (the “Company”) was incorporated in the People’s Republic of China (the “PRC”) on 28 July 1997 as a limited liability company",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shenzhen, Guangdong Province, PRC",
+   "page": 124,
+   "quote": "Registered office and head office in the PRC 7th Floor, Huaduyuan Building Dongmen South Road, Nanhu Street Luohu District Shenzhen Guangdong Province PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 539,
+   "quote": "The Historical Financial Information has been prepared in accordance with all applicable IFRS Accounting Standards as issued by the International Accounting Standards Board (“IASB”).",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "20/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences 9:00 a.m. on Monday, October 20, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "23/10/25",
+   "page": 5,
+   "quote": "Application lists close 12:00 noon on Thursday, October 23, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 52986875,
+   "page": 213,
+   "quote": "Total 76,000,000 Domestic Unlisted Shares 100.00 32,013,125 Domestic Unlisted Shares 37.66 52,986,875 H Shares 62.34",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 587624000,
+   "page": 530,
+   "quote": "Gross profit 969,515 1,109,883 1,178,553 611,472 587,624",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 26000000,
+   "page": 468,
+   "quote": "Our capital expenditures amounted to RMB109.1 million, RMB212.6 million, RMB101.8 million and RMB26.0 million for the years ended December 31, 2022, 2023 and 2024 and the six months",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 527,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 59300000,
+   "page": 495,
+   "quote": "are estimated to amount to approximately RMB54.1 million (approximately HK$59.3 million) in total (based on the Offer Price of HK$47.50 per Offer Share",
+   "confidence": "high"
+  }
+ }
+}

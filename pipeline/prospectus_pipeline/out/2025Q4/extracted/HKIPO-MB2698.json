@@ -1,0 +1,440 @@
+{
+ "code": "2698.HK",
+ "fields": {
+  "col_L": {
+   "value": 605884000,
+   "page": 332,
+   "quote": "515,000,000 Shares in issue as of the date of this prospectus 51,500 90,884,000 Shares to be issued under the Global Offering 9,088.4 605,884,000 Total 60,588.4",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 90884000,
+   "page": 2,
+   "quote": "Number of Offer Shares under \nthe Global Offering\n:\n90,884,000 Shares (subject to the \n Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 515000000,
+   "page": 332,
+   "quote": "515,000,000\nShares in issue as of the date of this prospectus",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 515000000,
+   "page": 332,
+   "quote": "515,000,000\nShares in issue as of the date of this prospectus",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 332,
+   "quote": "90,884,000\nShares to be issued under the Global Offering\n9,088.4\n605,884,000\nTotal",
+   "confidence": "high",
+   "note": "Sale Shares = 0: SHARE CAPITAL 表（P.332）只列 515,000,000 Shares in issue 与 90,884,000 Shares to be issued under the Global Offering（合计 605,884,000 Total），封面（P.2）只列香港/国际发售，均无 Sale Shares 或 Selling Shareholder，即全球发售全部为新股"
+  },
+  "col_Q": {
+   "value": 90884000,
+   "page": 332,
+   "quote": "90,884,000\nShares to be issued under the Global Offering",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 81795600,
+   "page": 2,
+   "quote": "Number of International Offer Shares\n:\n81,795,600 Shares (subject to \n reallocation and the Over-allotment \n Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 9088400,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares\n:\n9,088,400 Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares of US$0.0001 each",
+   "page": 44,
+   "quote": "ordinary share(s) with a par value of US$0.0001 each in \nthe share capital of our Company, which are to be traded \nin Hong Kong dollars and listed on the Main Board",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 605884000,
+   "page": 332,
+   "quote": "515,000,000 Shares in issue as of the date of this prospectus 51,500 90,884,000 Shares to be issued under the Global Offering 9,088.4 605,884,000 Total 60,588.4",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 26.2,
+   "page": 2,
+   "quote": "Maximum Offer Price\n:\nHK$26.20 per Offer Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 24.2,
+   "page": 2,
+   "quote": "The Offer Price is expected to be not more than HK$26.20 per Offer Share, and is expected to be not less than HK$24.20 per Offer Share",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "US$",
+   "page": 476,
+   "quote": "The Historical Financial Information is presented in United Stated Dollar (“US$”) and all \nvalues are rounded to the nearest thousand (US$’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 244687000,
+   "page": 23,
+   "quote": "As of December 31, As of April 30, 2022 2023 2024 2025 (US$ in thousands) Non-current assets 60,986 53,463 77,667 87,104 Current assets 183,947 191,224 176,399 230,029",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 254066000,
+   "page": 23,
+   "quote": "As of December 31, As of April 30, 2022 2023 2024 2025 (US$ in thousands) Non-current assets 60,986 53,463 77,667 87,104 Current assets 183,947 191,224 176,399 230,029",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 317133000,
+   "page": 23,
+   "quote": "As of December 31, As of April 30, 2022 2023 2024 2025 (US$ in thousands) Non-current assets 60,986 53,463 77,667 87,104 Current assets 183,947 191,224 176,399 230,029",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 85398000,
+   "page": 479,
+   "quote": "Share capital/Paid-up registered capital 28 3,751 3,851 50 52 Reserves 18,999 81,547 139,836 170,813 TOTAL EQUITY 22,750 85,398 139,886 170,865",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 139886000,
+   "page": 479,
+   "quote": "Share capital/Paid-up registered capital 28 3,751 3,851 50 52 Reserves 18,999 81,547 139,836 170,813 TOTAL EQUITY 22,750 85,398 139,886 170,865",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 170865000,
+   "page": 479,
+   "quote": "Share capital/Paid-up registered capital 28 3,751 3,851 50 52 Reserves 18,999 81,547 139,836 170,813 TOTAL EQUITY 22,750 85,398 139,886 170,865",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 159289000,
+   "page": 23,
+   "quote": "Current liabilities 215,526 155,416 110,381 110,584 Net current (liabilities)/assets (31,579) 35,808 66,018 119,445 Non-current liabilities 6,657 3,873 3,799 35,684",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 114180000,
+   "page": 23,
+   "quote": "Current liabilities 215,526 155,416 110,381 110,584 Net current (liabilities)/assets (31,579) 35,808 66,018 119,445 Non-current liabilities 6,657 3,873 3,799 35,684",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 146268000,
+   "page": 23,
+   "quote": "Current liabilities 215,526 155,416 110,381 110,584 Net current (liabilities)/assets (31,579) 35,808 66,018 119,445 Non-current liabilities 6,657 3,873 3,799 35,684",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 411369000,
+   "page": 477,
+   "quote": "Year ended December 31, Four months ended April 30, NOTES 2022 2023 2024 2024 2025 US$’000 US$’000 US$’000 US$’000 US$’000 (unaudited) Revenue 6 319,898 411,369 454,389 139,632 161,310",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 454389000,
+   "page": 477,
+   "quote": "Year ended December 31, Four months ended April 30, NOTES 2022 2023 2024 2024 2025 US$’000 US$’000 US$’000 US$’000 US$’000 (unaudited) Revenue 6 319,898 411,369 454,389 139,632 161,310",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 483930000,
+   "page": 477,
+   "quote": "Year ended December 31, Four months ended April 30, NOTES 2022 2023 2024 2024 2025 US$’000 US$’000 US$’000 US$’000 US$’000 (unaudited) Revenue 6 319,898 411,369 454,389 139,632 161,310",
+   "confidence": "medium",
+   "note": "4M2025 revenue 161,310 (US$000) x3 = 483,930 US$000 annualised per stub-period rule"
+  },
+  "col_AI": {
+   "value": 76488000,
+   "page": 477,
+   "quote": "Profit before taxation 24,621 76,488 113,081 32,851 36,947",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 113081000,
+   "page": 477,
+   "quote": "Profit before taxation 24,621 76,488 113,081 32,851 36,947",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 110841000,
+   "page": 477,
+   "quote": "Profit before taxation 24,621 76,488 113,081 32,851 36,947",
+   "confidence": "medium",
+   "note": "4M2025 PBT 36,947 (US$000) x3 = 110,841 US$000 annualised per stub-period rule"
+  },
+  "col_AL": {
+   "value": 64680000,
+   "page": 477,
+   "quote": "Profit for the year/period 10 18,390 64,680 95,111 27,659 31,103",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 95111000,
+   "page": 477,
+   "quote": "Profit for the year/period 10 18,390 64,680 95,111 27,659 31,103",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 93309000,
+   "page": 477,
+   "quote": "Profit for the year/period 10 18,390 64,680 95,111 27,659 31,103",
+   "confidence": "medium",
+   "note": "4M2025 profit 31,103 (US$000) x3 = 93,309 US$000 annualised per stub-period rule"
+  },
+  "col_AT": {
+   "value": "30/04/25",
+   "page": 477,
+   "quote": "Four months ended April 30, NOTES 2022 2023 2024 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 32332000,
+   "page": 24,
+   "quote": "Net cash generated from operating activities 13,575 95,977 109,533 27,186 32,332",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 84526000,
+   "page": 24,
+   "quote": "Cash and cash equivalents at end of year 21,725 30,439 31,112 62,366 84,526",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 257000,
+   "page": 477,
+   "quote": "Research expenses\n(156)\n(341)\n(531)\n(134)\n(257)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.063,
+   "page": 223,
+   "quote": "amounted to US$16.7 million, US$20.1 million, US$25.2 million and US$10.1 million, representing 5.2%, 4.9%, 5.5% and 6.3% of our total revenue",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 439,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 439,
+   "quote": "Our Company will pay an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares, including Offer Shares to be issued pursuant to the Over-allotment Option",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 439,
+   "quote": "up to an aggregate of 13,632,600 \nShares, representing in aggregate approximately 15% of Offer Shares initially available under \nthe Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 149300000,
+   "page": 440,
+   "quote": "are estimated to amount to approximately HK$149.3 million in total (based on the Offer Price of HK$25.20 per Offer Share which is the mid-point of the Offer Price range",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Multinational hygiene product corporation engaged in the development, manufacturing and sales of baby and feminine hygiene products (baby diapers, baby pants, sanitary pads and wet wipes) focusing on Emerging Markets in Africa, Latin America and Central Asia",
+   "page": 336,
+   "quote": "We are a multinational hygiene product corporation principally engaged in the development, manufacturing and sales of baby and feminine hygiene products, including baby diapers, baby pants,",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board (Listing Rules Chapter 8)",
+   "page": 40,
+   "quote": "the listing of our Shares on the Main Board",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "medium",
+   "note": "Prospectus discloses no technology commercialisation stage; the issuer is a consumer hygiene-products manufacturer (manufacturing/mass production), so a technology commercialisation stage is not applicable."
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 27,
+   "quote": "Approximately 9.3%, or HK$200.0 million, is expected to be used for working \ncapital and general corporate purposes.",
+   "confidence": "medium",
+   "note": "Use of proceeds discloses no debt-repayment tranche -> 0"
+  },
+  "col_DP": {
+   "value": "乐舒适有限公司",
+   "page": 2,
+   "quote": "樂舒適有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "BA Sprout Limited; BA HM Limited; Arc Avenue Asset Management Pte. Ltd.; Arcane Nexus Limited; Beijing Shunao Business Information Consulting Partnership (Limited Partnership); CDH Emerging Markets Fund II, L.P.; HCEP Master Fund and HCEP Long Only Master Fund; NewTrails Capital L.P.; NEWTRAILS FOREST L.P.; China Southern Asset Management Co., Ltd.; Fullgoal Fund Management Co., Ltd.; Fullgoal Asset Management (HK) Limited; E Fund Management Co., Ltd.; E Fund Management (Hong Kong) Co., Ltd.; Charisma Mega Limited; TruMed Healthcare Master Fund; TruMed Health Innovation Fund LP; Qihui Runjin (Qingdao) Private Equity Investment Fund Partnership (Limited Partnership); China Asset Management (Hong Kong) Limited; Jane Street Asia Trading Limited",
+   "page": 425,
+   "quote": "Cornerstone Investor\nTotal\ninvestment\namount\n(US$)(1)\nNumber of\nOffer Shares\nto be\nSubscribed(2)",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 29,
+   "quote": "with the Pre-IPO Investor, pursuant to which 15,000,000 Shares, representing (i) approximately 2.91% of our Shares in issue immediately before completion of the Global Offering",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium",
+   "note": "未找到 VC 证据：唯一披露的 Pre-IPO Investment（P.179）为 IFC，属世界银行集团开发机构；无招股书明示「无 VC 投资」，按手册留 NaN",
+   "source": "prospectus"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium",
+   "note": "未找到 PE 证据：唯一披露的 Pre-IPO Investment（P.179）为 IFC，非私募股权/并购基金；无明示零，按手册留 NaN",
+   "source": "prospectus"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium",
+   "note": "未找到 CVC 证据：无公司产业投资/企业风投在上市前入股的披露；无明示零，按手册留 NaN",
+   "source": "prospectus"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 185,
+   "quote": "IFC is a member of the World Bank Group and is established by its articles of agreement \namong 184 member countries.",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_pre_ipo_investors": {
+   "value": "International Finance Corporation",
+   "page": 179,
+   "quote": "Name of Pre-IPO Investor\nInternational Finance Corporation (“IFC”)",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.0291,
+   "page": 29,
+   "quote": "pursuant to which 15,000,000 Shares, representing (i) approximately 2.91% of our Shares in issue immediately before completion of the Global Offering",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Pre-IPO Investment (subscription agreement dated February 18, 2025)",
+   "page": 179,
+   "quote": "Date of agreement\nFebruary 18, 2025",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 0.7,
+   "page": 179,
+   "quote": "Date of agreement\nFebruary 18, 2025",
+   "confidence": "medium",
+   "note": "Feb 18 2025 -> Oct 31 2025 (prospectus date) = 255 days = 0.70 years"
+  },
+  "col_BB": {
+   "value": "Natural person",
+   "page": 29,
+   "quote": "Mr. Shen and Ms. Yang will control the exercise of more than 30% of the voting power at general meetings of our Company through Chaoyuet Holding, Haoyue Investment, Sunda Enterprise and Century BVI",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5475,
+   "page": 334,
+   "quote": "331,739,500 Shares \n(L) \n64.42% 331,739,500 Shares \n(L) \n54.75%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5475,
+   "page": 334,
+   "quote": "331,739,500 Shares \n(L) \n64.42% 331,739,500 Shares \n(L) \n54.75%",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 33133000,
+   "page": 395,
+   "quote": "Lease liabilities 969 721 1,427 2,049 2,085 Other financial liability – – – 31,084 31,535 Total 170,341 96,568 2,428 33,133 47,618",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "17/02/22",
+   "page": 572,
+   "quote": "Our Company was incorporated in the Cayman Islands under the Cayman Companies Act \nas an exempted company with limited liability on February 17, 2022.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Hong Kong",
+   "page": 572,
+   "quote": "Our Company has \nestablished its principal place of business in Hong Kong at 31/F, Tower Two, Times Square, 1 \nMatheson Street, Causeway Bay, Hong Kong",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 476,
+   "quote": "have been prepared in accordance with \naccounting policies which conform with IFRS Accounting Standards as issued by the \nInternational Accounting Standards Board (“IASB”)",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "31/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on \nFriday, October 31, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "05/11/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on \nWednesday, November 5, 2025",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 54209000,
+   "page": 477,
+   "quote": "Gross profit 73,533 143,748 160,151 48,784 54,209",
+   "confidence": "medium",
+   "note": "4M2025 gross profit 54,209 (US$000) x1,000; not annualised per stub rule"
+  },
+  "col_CG": {
+   "value": 7980000,
+   "page": 485,
+   "quote": "Purchases of property, plant and equipment (31,366) (5,814) (26,547) (5,643) (7,980)",
+   "confidence": "medium",
+   "note": "4M2025 purchases of PPE 7,980 (US$000) x1,000; not annualised"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 474,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the \naccountants’ report, a true and fair view",
+   "confidence": "high"
+  }
+ }
+}

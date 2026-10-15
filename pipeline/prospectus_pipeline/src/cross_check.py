@@ -27,6 +27,7 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from cohort import load_cfg
+from periods import traceable
 from regimes import REFORM_2025_DATE
 
 
@@ -427,24 +428,39 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
             ah_val = float(AH) if AH is not None else 0.0
             is_large = (y_val > 50e6 or ah_val > 50e6)
             if v_curr in {"RMB", "HKD"} and is_large:
+                ext_dir = Path(cfg.get("paths", {}).get("out", "")) / "extracted"
+                digits = "".join(ch for ch in code if ch.isdigit())
+                p_file = ext_dir / f"HKIPO-MB{digits}.json"
+                quotes = {}
+                if p_file.exists():
+                    try:
+                        p_data = json.loads(p_file.read_text(encoding="utf-8"))
+                        quotes = {k: (v.get("quote") or "") for k, v in (p_data.get("fields") or {}).items()}
+                    except Exception:
+                        pass
+                scales = (1.0, 1000.0, 10000.0, 1000000.0)
+
                 if CF is not None and 0 < float(CF) < 500_000:
-                    company_checks.append({
-                        "check": "Monetary Scale",
-                        "severity": "ERROR",
-                        "detail": f"毛利 CF={float(CF)} 处于 (0, 500,000)，明显未折算为基本货币单位（漏乘千元乘数）"
-                    })
+                    if not traceable(float(CF), quotes.get("col_CF", ""), scales=scales):
+                        company_checks.append({
+                            "check": "Monetary Scale",
+                            "severity": "ERROR",
+                            "detail": f"毛利 CF={float(CF)} 处于 (0, 500,000)，明显未折算为基本货币单位（漏乘千元乘数）"
+                        })
                 if BE is not None and 0 < float(BE) < 500_000:
-                    company_checks.append({
-                        "check": "Monetary Scale",
-                        "severity": "ERROR",
-                        "detail": f"有息负债 BE={float(BE)} 处于 (0, 500,000)，明显未折算为基本货币单位（漏乘千元乘数）"
-                    })
+                    if not traceable(float(BE), quotes.get("col_BE", ""), scales=scales):
+                        company_checks.append({
+                            "check": "Monetary Scale",
+                            "severity": "ERROR",
+                            "detail": f"有息负债 BE={float(BE)} 处于 (0, 500,000)，明显未折算为基本货币单位（漏乘千元乘数）"
+                        })
                 if CG is not None and 0 < float(CG) < 100_000:
-                    company_checks.append({
-                        "check": "Monetary Scale",
-                        "severity": "ERROR",
-                        "detail": f"资本开支 CG={float(CG)} 处于 (0, 100,000)，明显未折算为基本货币单位（漏乘千元乘数）"
-                    })
+                    if not traceable(float(CG), quotes.get("col_CG", ""), scales=scales):
+                        company_checks.append({
+                            "check": "Monetary Scale",
+                            "severity": "ERROR",
+                            "detail": f"资本开支 CG={float(CG)} 处于 (0, 100,000)，明显未折算为基本货币单位（漏乘千元乘数）"
+                        })
         except (ValueError, TypeError):
             pass
 

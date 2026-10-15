@@ -1,0 +1,18 @@
+{
+  "board": "GEM",
+  "total_companies": 1,
+  "errors": 0,
+  "scope": "Share identities and filing range only; not a legal eligibility certification.",
+  "results": [
+    {
+      "code": "8549.HK",
+      "checks": [
+        {
+          "check": "GEM eligibility, public float, offering terms and waivers",
+          "severity": "REVIEW",
+          "detail": "Use the issuer's dated GEM rules and extension evidence. Main Board admission checks are not applied."
+        }
+      ]
+    }
+  ]
+}

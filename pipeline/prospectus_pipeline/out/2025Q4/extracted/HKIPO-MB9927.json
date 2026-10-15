@@ -1,0 +1,434 @@
+{
+ "code": "9927.HK",
+ "fields": {
+  "col_L": {
+   "value": 1733566086,
+   "page": 318,
+   "quote": "A Shares in issue\n1,633,366,086\n94.22%\nH Shares to be issued under the Global Offering\n100,200,000\n5.78%\nTotal\n1,733,566,086\n100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 100200000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 100,200,000 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 1633366086,
+   "page": 318,
+   "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB1,633,366,086, comprising 1,633,366,086 A Shares",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 1633366086,
+   "page": 318,
+   "quote": "RMB1,633,366,086, comprising 1,633,366,086 A Shares of nominal value RMB1.00 each, all of which are listed on the Shanghai Stock Exchange.",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 100,200,000 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 100200000,
+   "page": 394,
+   "quote": "100,200,000 Offer Shares will initially be made available under the Global Offering comprising:",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 90180000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 90,180,000 H Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 10020000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 10,020,000 H Shares (subject to reallocation and the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 131.5,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$131.50 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, AFRC transaction levy of 0.00015%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 429,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 51244671000,
+   "page": 30,
+   "quote": "Total assets\n47,160,127\n51,244,671\n94,363,958\n112,911,810",
+   "confidence": "high",
+   "note": "year-1 = stub 6M2025 (col_AT 30/06/25), year-2 = FY2024, year-3 = FY2023 per the dataset's authoritative period rule; the p.30 balance-sheet table prints columns 31/12/2022, 31/12/2023, 31/12/2024 and 30/06/2025 in that order, so FY2023 is the 2nd figure and FY2024 the 3rd."
+  },
+  "col_X": {
+   "value": 94363958000,
+   "page": 30,
+   "quote": "Total assets\n47,160,127\n51,244,671\n94,363,958\n112,911,810",
+   "confidence": "high",
+   "note": "year-1 = stub 6M2025 (col_AT 30/06/25), year-2 = FY2024, year-3 = FY2023 per the dataset's authoritative period rule; the p.30 balance-sheet table prints columns 31/12/2022, 31/12/2023, 31/12/2024 and 30/06/2025 in that order, so FY2023 is the 2nd figure and FY2024 the 3rd."
+  },
+  "col_Y": {
+   "value": 112911810000,
+   "page": 31,
+   "quote": "RMB27,009.7 million as of June 30, 2025",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 7199947000,
+   "page": 31,
+   "quote": "RMB7,199.9 million as of December 31, 2023",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 11905557000,
+   "page": 31,
+   "quote": "RMB11,905.6 million as of December 31, 2024",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 27009734000,
+   "page": 31,
+   "quote": "RMB27,009.7 million as of June 30, 2025",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 44044724000,
+   "page": 30,
+   "quote": "Total liabilities\n37,357,694\n44,044,724\n82,458,401\n85,902,076",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 82458401000,
+   "page": 30,
+   "quote": "Total liabilities\n37,357,694\n44,044,724\n82,458,401\n85,902,076",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 85902076000,
+   "page": 30,
+   "quote": "Total liabilities\n37,357,694\n44,044,724\n82,458,401\n85,902,076",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 35788885000,
+   "page": 23,
+   "quote": "Revenue 34,056,074 100.0 35,788,885 100.0 145,113,623 100.0 65,014,314 100.0 62,358,825 100.0",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 145113623000,
+   "page": 23,
+   "quote": "Revenue 34,056,074 100.0 35,788,885 100.0 145,113,623 100.0 65,014,314 100.0 62,358,825 100.0",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 124717650000,
+   "page": 23,
+   "quote": "Revenue 34,056,074 100.0 35,788,885 100.0 145,113,623 100.0 65,014,314 100.0 62,358,825 100.0",
+   "confidence": "high",
+   "note": "6M2025 stub 62,358,825 (RMB'000, p.23/p.430) x 12/6 = annualised year-1 sales, per annualize=sales_profit_only_if_partial"
+  },
+  "col_AI": {
+   "value": -4080859000,
+   "page": 23,
+   "quote": "(Loss) profit before taxation (4,930,410) (14.6) (4,080,859) (11.4) 4,951,347 3.4 1,699,109 2.6 3,724,791 6.0",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 4951347000,
+   "page": 23,
+   "quote": "(Loss) profit before taxation (4,930,410) (14.6) (4,080,859) (11.4) 4,951,347 3.4 1,699,109 2.6 3,724,791 6.0",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 7449582000,
+   "page": 23,
+   "quote": "(Loss) profit before taxation (4,930,410) (14.6) (4,080,859) (11.4) 4,951,347 3.4 1,699,109 2.6 3,724,791 6.0",
+   "confidence": "high",
+   "note": "6M2025 stub 3,724,791 (RMB'000, p.23/p.430) x 12/6 = annualised year-1 PBT, per annualize=sales_profit_only_if_partial"
+  },
+  "col_AL": {
+   "value": -4156716000,
+   "page": 430,
+   "quote": "(Loss) profit for the year/period 14 (5,220,557) (4,156,716) 4,740,116 1,359,121 3,077,363",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 4740116000,
+   "page": 430,
+   "quote": "(Loss) profit for the year/period 14 (5,220,557) (4,156,716) 4,740,116 1,359,121 3,077,363",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 6154726000,
+   "page": 430,
+   "quote": "(Loss) profit for the year/period 14 (5,220,557) (4,156,716) 4,740,116 1,359,121 3,077,363",
+   "confidence": "high",
+   "note": "6M2025 stub 3,077,363 (RMB'000, p.430) x 12/6 = annualised year-1 profit, per annualize=sales_profit_only_if_partial"
+  },
+  "col_AO": {
+   "value": 0.009,
+   "page": 389,
+   "quote": "The Hong Kong Underwriters will receive an underwriting commission of 0.9% of the aggregate Offer Price payable for the Hong Kong Offer Shares offered under the Hong Kong Public Offering",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.009,
+   "page": 389,
+   "quote": "the International Underwriters are expected to receive an underwriting commission of 0.9% of the aggregate Offer Price payable for the International Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 390,
+   "quote": "to issue up to 15,030,000 H Shares, representing not more than 15.0% of the number of Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "New energy vehicles (NEVs) — research and development, manufacturing, sales and services of new energy vehicles as well as core NEV components",
+   "page": 322,
+   "quote": "We are a technology company focused on new energy vehicles. We are principally engaged in the research and development, manufacturing, sales and services of new energy vehicles",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board, Rule 8.05(3) market capitalisation/revenue test (A+H issuer)",
+   "page": 36,
+   "quote": "We are applying for the Listing under Rule 8.05(3) of the Listing Rules and satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 30,
+   "quote": "As of December 31, As of June 30, 2022 2023 2024 2025 RMB’000 RMB’000 RMB’000 RMB’000",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 14034486000,
+   "page": 441,
+   "quote": "NET CASH (USED IN) FROM OPERATING ACTIVITIES (1,358,034) 6,103,005 21,988,014 16,273,566 14,034,486",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 21664886000,
+   "page": 443,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF THE YEAR/PERIOD, representing bank balances and cash 2,327,394 4,479,719 6,333,682 13,889,849 21,664,886",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 2929532000,
+   "page": 338,
+   "quote": "Total\n1,313,661\n100.0\n1,696,476\n100.0\n5,585,504\n100.0\n2,827,443\n100.0\n2,929,532\n100.0",
+   "confidence": "high",
+   "note": "R&D expense table 'Total' row; the last column is the six months ended June 30, 2025; agrees with p.430 'Research and development expenses (2,929,532)'"
+  },
+  "col_AX": {
+   "value": 2260956000,
+   "page": 476,
+   "quote": "At 31 December 2024 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n781,081\n272,471\n2,502,424\n12,778,345\n16,334,321\nAdditions \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n2,260,956",
+   "confidence": "high",
+   "note": "p.476 note 21 INTANGIBLE ASSETS (The Group), COST, Development costs column: FY2024 closing 781,081 and 6M2025 Additions 2,260,956 (RMB'000)"
+  },
+  "col_AY": {
+   "value": 0.119,
+   "page": 18,
+   "quote": "For the years ended December 31, 2022, 2023 and 2024 and for the six months ended June\n30, 2025, the aggregate revenue generated from our five largest customers",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "赛力斯集团股份有限公司",
+   "page": 1,
+   "quote": "Seres Group Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Chongqing Industrial Investment Parent Fund Enterprise Partnership (L.P.) (重慶產業投資母基金合夥企業(有限合夥)); Shenzhen Lin Yuan Investment Management Co., Ltd. and Huatai Capital Investment Limited; GF Fund Management Co., Ltd.; GF International Investment Management Limited; New China Asset Management (Hong Kong) Limited; BESS Broadway Limited; Sanhua (Hong Kong) Co Limited; Zhongsheng Holdings Company Limited; Zhink International Pte. Ltd.; Gold Wings Holdings Limited; Honour Goal Investments Limited; Hichain Logistics (Hong Kong) Limited; Schroder Investment Management (Singapore) Ltd and Schroder Investment Management (Hong Kong) Limited; Mirae Asset Securities Co., Ltd.; New Alternative Limited; PSBC Wealth Management Co., Ltd.; Skyler International Co., Ltd; Xingyu Automotive Lighting (Hong Kong) Company Limited; China MeiDong Auto Holdings Limited; Ghisallo Fund Master Ltd.; Jump Trading Pacific Pte. Ltd.; Jain Global Master Fund Ltd; China Alpha Fund Management (HK) Limited",
+   "page": 303,
+   "quote": "We have entered into cornerstone investment agreements (each a “Cornerstone\nInvestment Agreement” and collectively, the “Cornerstone Investment Agreements”) with\nthe cornerstone investors set out",
+   "confidence": "high",
+   "note": "The Cornerstone Placing table spans pp.314-315 and names 23 Cornerstone Investors (Total p.315 = US$826.47 million / 48,828,700 Offer Shares = 48.73% of the base offer), matching the aggregate Cornerstone Placing amount in this quote; full legal names are in the individual investor descriptions on pp.305-313."
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural person (Mr. Zhang Xinghai, de facto controller; single largest group with Sokon Holding and Yu’an Industry)",
+   "page": 34,
+   "quote": "Mr. Zhang Xinghai, Sokon Holding\nand Yu’an Industry continue to be our Single Largest\nGroup of Shareholders",
+   "confidence": "high",
+   "note": "Substantial-shareholder table (p.301) shows Mr. Zhang Xinghai holding 466,594,414 A Shares = 26.92% of the Company immediately after the Global Offering; the group is the Single Largest Group of Shareholders, not a Controlling Shareholder under the Listing Rules"
+  },
+  "col_BC": {
+   "value": 0.2692,
+   "page": 301,
+   "quote": "Mr. Zhang Xinghai(4) Interest in controlled corporations A Shares 466,594,414 28.57% 466,594,414 28.57% 26.92%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.2692,
+   "page": 301,
+   "quote": "Mr. Zhang Xinghai(4) Interest in controlled corporations A Shares 466,594,414 28.57% 466,594,414 28.57% 26.92%",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 6439868000,
+   "page": 366,
+   "quote": "Total 5,882,846 6,236,930 3,425,053 6,439,868 5,551,965",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Mass commercialisation (mass production and delivery of AITO series NEVs)",
+   "page": 183,
+   "quote": "AITO M9 began delivery and won the title of sales champion of the RMB500,000 price segment in the Chinese market. We began to record profits",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 33,
+   "quote": "approximately 70.0%, or HK$9,047.4 million, will be used to invest in our research and development projects",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 319,
+   "quote": "Upon completion of the Global Offering, the Shares will consist of A Shares and H Shares. A Shares and H Shares are all ordinary Shares in the share capital of our Company.",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "11/05/07",
+   "page": 565,
+   "quote": "Our Company was established as a limited liability company in the PRC on May 11, 2007",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Chongqing, PRC",
+   "page": 118,
+   "quote": "Registered Office, Headquarter and Principal Place of Business in the PRC No. 7 Wuyunhu Road Shapingba District Chongqing PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 429,
+   "quote": "have been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by the International Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "27/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Monday, October 27, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "31/10/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Friday, October 31, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 100200000,
+   "page": 319,
+   "quote": "NO CONVERSION OF OUR A SHARES INTO H SHARES FOR LISTING AND TRADING ON THE HONG KONG STOCK EXCHANGE A Shares and H Shares are generally neither interchangeable nor fungible",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 16530758000,
+   "page": 23,
+   "quote": "Gross profit 2,727,626 8.0 2,571,093 7.2 34,550,545 23.8 14,160,885 21.8 16,530,758 26.5",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 3164700000,
+   "page": 367,
+   "quote": "RMB4,919.5 million, RMB5,299.7 million, RMB5,935.3 million and RMB3,164.7 million for\nthe years ended December 31, 2022, 2023 and 2024 and the six months ended June 30, 2025",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 427,
+   "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 251400000.0,
+   "page": 35,
+   "quote": "HK$251.4 million, accounting for approximately of 1.9% of our gross proceeds.",
+   "confidence": "high"
+  }
+ }
+}

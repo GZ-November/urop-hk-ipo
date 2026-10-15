@@ -1,0 +1,116 @@
+{
+  "code": "6600.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4268,
+      "page": 10,
+      "quote": "Sage Sunshine 1 Limited 210,800 210,800 0.09% 0.09% 29 June 2026 Subtotal 9,484,500 9,484,500 4.27% 4.27%",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 254.5,
+      "page": 4,
+      "quote": "Subscription level 254.50 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 89935,
+      "page": 4,
+      "quote": "No. of valid applications 89,935",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 565575350,
+      "page": 4,
+      "quote": "Subscription level 254.50 times Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 2,222,300",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 254.50 times",
+      "page": 4,
+      "quote": "Subscription level 254.50 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/12/25",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or about Wednesday, December 24, 2025 (Hong Kong time) and, in any event, not la",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "29/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/12/2025 22:51**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 22222300,
+      "page": 3,
+      "quote": "Number of Offer Shares 22,222,300",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2222300,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Public Offer 2,222,300",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 20000000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offer 20,000,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 3133800,
+      "page": 2,
+      "quote": "has been partially exercised by the Overall Coordinators (for itself and on behalf of the International Underwriters), on Thursday, January 22, 2026, in respect of an aggregate of 3,133,800 Shares (th",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (22/01/2026 21:47)"
+    },
+    "col_CW": {
+      "value": "No claw-back/reallocation: Claw-back triggered N/A; final no. of Offer Shares under the Hong Kong Public Offering 2,222,300, equal to the 2,222,300 initially available",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 2,222,300 Final no. of Offer Shares under the Hong Kong Public Offering 2,222,300",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1543890000,
+      "page": 4,
+      "quote": "Gross proceeds (Note) HK$1,640.01 million Less: Estimated listing expenses payable based on Final Offer Price HK$ (96.12) million Net proceeds HK$1,543.89 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.395,
+      "page": 22,
+      "quote": "the public float of our Company will be approximately 39.50% upon the Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 222222300,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 222,222,300",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0573,
+      "page": 22,
+      "quote": "The Company’s H Shares to be counted towards the free float upon Listing will be 12,737,800 H Shares.",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float H Shares upon Listing (12,737,800) as a proportion of the total number of issued H Shares upon Listing (222,222,300)",
+      "page": 22,
+      "quote": "The Company’s H Shares to be counted towards the free float upon Listing will be 12,737,800 H Shares.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 222222300,
+      "page": 6,
+      "quote": "The calculation is based on the total number of 222,222,300 H Shares in issue upon Listing",
+      "confidence": "high"
+    }
+  }
+}

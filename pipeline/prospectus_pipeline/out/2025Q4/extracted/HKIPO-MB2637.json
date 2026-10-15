@@ -1,0 +1,425 @@
+{
+ "code": "2637.HK",
+ "fields": {
+  "col_L": {
+   "value": 78707270,
+   "page": 379,
+   "quote": "H Shares to be issued under the Global Offering 11,500,000 14.61% Total 78,707,270 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 11500000,
+   "page": 379,
+   "quote": "H Shares to be issued under the Global Offering 11,500,000 14.61%",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 67207270,
+   "page": 379,
+   "quote": "H Share to be converted from Unlisted Shares 67,207,270 85.39%",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 67207270,
+   "page": 379,
+   "quote": "As of the Latest Practicable Date, the issued share capital of our Company was RMB67,207,270, comprising 67,207,270 Unlisted Shares of nominal value RMB1.00 each.",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 379,
+   "quote": "Unlisted Shares in issue – – H Share to be converted from Unlisted Shares 67,207,270 85.39% H Shares to be issued under the Global Offering 11,500,000 14.61% Total 78,707,270 100.00%",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 11500000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 11,500,000 H Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 10350000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 10,350,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1150000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,150,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 86.4,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$86.40 per H Share, plus brokerage of 1.0%,",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 69.88,
+   "page": 2,
+   "quote": "is currently expected to be not less than HK$69.88 per H Share, unless otherwise announced",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 502,
+   "quote": "The Historical Financial Information is presented in RMB, which is the currency of the economic environment in which the Company operates.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 561544000,
+   "page": 32,
+   "quote": "Total assets 420,960 561,544 755,819 821,920",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 755819000,
+   "page": 32,
+   "quote": "Total assets 420,960 561,544 755,819 821,920",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 821920000,
+   "page": 32,
+   "quote": "Total assets 420,960 561,544 755,819 821,920",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 405247000,
+   "page": 32,
+   "quote": "Total equity 287,781 405,247 541,327 631,536",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 541327000,
+   "page": 32,
+   "quote": "Total equity 287,781 405,247 541,327 631,536",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 631536000,
+   "page": 32,
+   "quote": "Total equity 287,781 405,247 541,327 631,536",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 156297000,
+   "page": 32,
+   "quote": "Total liabilities 133,179 156,297 214,492 190,384",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 214492000,
+   "page": 32,
+   "quote": "Total liabilities 133,179 156,297 214,492 190,384",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 190384000,
+   "page": 32,
+   "quote": "Total liabilities 133,179 156,297 214,492 190,384",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 316633000,
+   "page": 31,
+   "quote": "Revenue 212,465 316,633 466,683 180,603 249,216",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 466683000,
+   "page": 31,
+   "quote": "Revenue 212,465 316,633 466,683 180,603 249,216",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 598118400,
+   "page": 31,
+   "quote": "Revenue 212,465 316,633 466,683 180,603 249,216",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 132813000,
+   "page": 31,
+   "quote": "Profit before tax 73,764 132,813 148,994 71,374 103,466",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 148994000,
+   "page": 31,
+   "quote": "Profit before tax 73,764 132,813 148,994 71,374 103,466",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 248318400,
+   "page": 31,
+   "quote": "Profit before tax 73,764 132,813 148,994 71,374 103,466",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 117454000,
+   "page": 31,
+   "quote": "Profit for the year/period 68,981 117,454 136,079 62,967 90,209",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 136079000,
+   "page": 31,
+   "quote": "Profit for the year/period 68,981 117,454 136,079 62,967 90,209",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 216501600,
+   "page": 31,
+   "quote": "Profit for the year/period 68,981 117,454 136,079 62,967 90,209",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.015,
+   "page": 461,
+   "quote": "will receive an underwriting commission of 1.5% of the aggregate Offer Price of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.015,
+   "page": 461,
+   "quote": "will receive an underwriting commission of 1.5% of the aggregate Offer Price of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No Over-allotment Option disclosed; full-text search for 'over-allotment'/'greenshoe' returns no hits in the document, so shares under any such option are not disclosed -> NaN.",
+   "confidence": "medium"
+  },
+  "col_AR": {
+   "value": "Pharmaceutical company - R&D, production and sales of generic drugs and of innovative drug candidates",
+   "page": 11,
+   "quote": "We are a commercial-stage pharmaceutical company that integrates R&D, production and sales capacities, with a pipeline of innovative drug candidates.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board - H-share issuer (PRC issuer; Chapter 19A of the Listing Rules)",
+   "page": 45,
+   "quote": "“Listing” listing of our H Shares on the main board of the Stock Exchange",
+   "confidence": "medium"
+  },
+  "col_AT": {
+   "value": "31/05/25",
+   "page": 31,
+   "quote": "Years ended December 31, Five months ended May 31, 2022 2023 2024 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 80135000,
+   "page": 33,
+   "quote": "Net cash flows generated from operating activities 85,310 147,106 163,942 92,641 80,135",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 46259000,
+   "page": 33,
+   "quote": "Cash and cash equivalents at the end of the year/period 171,477 254,324 38,282 101,612 46,259",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 22513000,
+   "page": 31,
+   "quote": "Research and development expenses (34,820) (36,061) (67,525) (17,416) (22,513)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Consolidated statements of financial position (p.496-497) show no intangible assets line; accounting policy (p.506-507) expenses development expenditure; no capitalised development additions -> NaN.",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.717,
+   "page": 28,
+   "quote": "accounting for 85.1%, 73.3%, 72.6% and 71.7% of our total revenue, respectively",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "福建海西新药创制股份有限公司",
+   "page": 1,
+   "quote": "福建海西新藥創制股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Harvest International Premium Value (Secondary Market) Fund SPC acting on behalf of and for the account of Harvest Oriental SP",
+   "page": 384,
+   "quote": "HARVEST INTERNATIONAL PREMIUM VALUE (SECONDARY MARKET) FUND SPC ACTING ON BEHALF OF AND FOR THE ACCOUNT OF HARVEST ORIENTAL SP",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 30,
+   "quote": "we conducted the Pre-IPO Investments with the Pre-IPO Investors, namely, Zhanhongda Investment, Jindonghong Capital, Jindongshi Capital, Huaxinyue Investment",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 45,
+   "quote": "Xiamen Jindonghong Venture Capital Partnership (Limited Partnership)* (廈門金東泓創業投資合夥企業（有限合夥）), a limited partnership established in the PRC on July 15, 2022 and one of our Pre-IPO Investors",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 225,
+   "quote": "its sole general partner is Xiamen Jindongshi Private Equity Fund Management Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No corporate/strategic (CVC) investor among the Pre-IPO Investors; each is a PRC limited partnership whose general partner is a private fund manager or an individual -> NaN.",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 228,
+   "quote": "Fujian SASAC being controlled by Fujian Provincial Government is the ultimate controller of Huaxing Venture and Fujian Pharmaceutical Group.",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No top-tier VC/PE house is disclosed as a Pre-IPO investor of the Company; the only blue-chip institution named (Harvest) is a cornerstone investor, not a Pre-IPO investor -> NaN.",
+   "confidence": "medium"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Zhanhongda Investment; Jindonghong Capital; Jindongshi Capital; Huaxinyue Investment; Hongrang Investment; Xinrui Investment; Hongpan Investment; Huifu Chuangjing",
+   "page": 30,
+   "quote": "the Pre-IPO Investors, namely, Zhanhongda Investment, Jindonghong Capital, Jindongshi Capital, Huaxinyue Investment, Hongrang Investment, Xinrui Investment, Hongpan Investment and Huifu Chuangjing.",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.3766,
+   "page": 219,
+   "quote": "4. Tairuihe Investment 5,000,000 7.44 5. Fuzhou Capital 4,680,000 6.96 6. Jindonghong Capital 4,485,090 6.67 7. Jindongshi Capital 3,924,610 5.84",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No Director/observer is identified as a Pre-IPO investor's board seat; Mr. Xu Dong and Mr. Wang Xinkun work for state shareholder groups (p.358) but no nomination right is disclosed -> NaN.",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Capital increase in 2018 and 2019",
+   "page": 223,
+   "quote": "Event Capital increase in 2018 and 2019 Capital increase in 2020 Equity transfer in 2021",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 7.39,
+   "page": 216,
+   "quote": "Pursuant to the capital increase agreement dated May 21, 2018, the registered capital of our Company was increased from RMB45.0 million to RMB52,593,750",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural persons (co-founders acting in concert)",
+   "page": 30,
+   "quote": "Dr. Kang, one of our co-founders, chairman of the Board and executive Director, Ms. Feng, one of our co-founders and serves as our executive Director and deputy general manager",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.3515,
+   "page": 372,
+   "quote": "Immediately upon the completion of the Global Offering, our Controlling Shareholders will be interested in and control approximately 35.15 % of the total issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.3515,
+   "page": 120,
+   "quote": "Immediately upon completion of the Global Offering, our Controlling Shareholders will be entitled to exercise approximately 35.15% voting rights in our Company.",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 38770000,
+   "page": 432,
+   "quote": "Lease Liabilities 7,783 8,575 7,135 6,514 6,136 Bank and other borrowings 84,394 41,515 49,747 32,256 88,240 Total 92,177 50,090 56,882 38,770 94,376",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercial-stage (commercialised generic drugs; four innovative drug candidates in clinical/preclinical development)",
+   "page": 11,
+   "quote": "We are a commercial-stage pharmaceutical company that integrates R&D, production and sales capacities, with a pipeline of innovative drug candidates.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 36,
+   "quote": "approximately 10.0% of the net proceeds, or HK$84.8 million, is expected to be used for our working capital and other general corporate purposes.",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 11,500,000 H Shares",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "27/03/12",
+   "page": 623,
+   "quote": "Our Company was established as a limited liability company in the PRC on March 27, 2012 and was converted into a joint stock limited company on November 15, 2022",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Fuzhou, Fujian Province, PRC",
+   "page": 140,
+   "quote": "Registered Office, Headquarters and Principal Place of Business in the PRC Floor 3 & 4, Block B No. 177 Jinda Road, Jianxin Town Cangshan District Fuzhou, Fujian Province PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 502,
+   "quote": "The Historical Financial Information has been prepared based on the accounting policies which conform with the IFRS Accounting Standards issued by the IASB.",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "09/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, October 9, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "14/10/25",
+   "page": 5,
+   "quote": "close(Note 3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Tuesday, October 14, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 78707270,
+   "page": 379,
+   "quote": "H Share to be converted from Unlisted Shares 67,207,270 85.39% H Shares to be issued under the Global Offering 11,500,000 14.61% Total 78,707,270 100.00%",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 209276000,
+   "page": 31,
+   "quote": "Gross profit 172,072 263,639 387,194 150,586 209,276",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 8723000,
+   "page": 501,
+   "quote": "Purchase of property, plant and equipment (2,660) (44,388) (138,218) (69,181) (8,723)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 492,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position as at December 31, 2022, 2023 and 2024",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 50600000,
+   "page": 36,
+   "quote": "We expect to incur listing expenses of approximately RMB46.2 million (HK$50.6 million), comprising: (i) underwriting fees of RMB27.5 million (HK$30.1 million)",
+   "confidence": "high"
+  }
+ }
+}

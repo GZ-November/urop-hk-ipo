@@ -1,0 +1,117 @@
+{
+  "code": "2408.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2495,
+      "page": 305,
+      "quote": "Total 22.0 24,292,500 24.95% 3.42% 23.76%",
+      "confidence": "high",
+      "source": "prospectus"
+    },
+    "col_CM": {
+      "value": 425.97,
+      "page": 4,
+      "quote": "Subscription level 425.97 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 61057,
+      "page": 4,
+      "quote": "No. of valid applications 61,057",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 4147499500,
+      "page": 13,
+      "quote": "Pool A Number of H Shares applied for Number of valid applications Basis of allocation/ballot Approximate percentage allotted of the total number of H Shares applied for 500 22,374",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 425.97 times",
+      "page": 4,
+      "quote": "Subscription level 425.97 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "03/12/25",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or around Wednesday, December 3, 2025 and, in any event, not later than 12:00 no",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "04/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**04/12/2025 19:43",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 97364500,
+      "page": 3,
+      "quote": "Number of Offer Shares 97,364,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 9736500,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 9,736,500",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 87628000,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the International Offering 87,628,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD, STABILIZING ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION（01/01/2026 18:03）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD, STABILIZING ACTIONS\nAND LAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Reallocation: No. No. of Offer Shares reallocated from the International Offering: 0",
+      "page": 4,
+      "quote": "Reallocation No No. of Offer Shares initially available under the Hong Kong Public Offering 9,736,500 No. of Offer Shares reallocated from the International Offering 0",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 617000000,
+      "page": 3,
+      "quote": "Net proceeds HK$617.0 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4069,
+      "page": 17,
+      "quote": "the number of H Shares held in public hands represents approximately 40.69%",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 710689300,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 710,689,300",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1028,
+      "page": 18,
+      "quote": "the free float of our Company is 10.28%",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float numerator = Offer Shares allotted to investors who are not core connected persons and not subject to disposal restrictions; H Shares held by all existing Shareholders and the Cornerstone Investors are excluded from the free float; denominator = total issued Shares upon Listing.",
+      "page": 18,
+      "quote": "As such, H Shares held by all existing Shareholders and the Cornerstone Investors are not counted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 710689300,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 710,689,300",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "code": "3881.HK",
+  "fields": {
+    "col_L": {
+      "value": 43789310,
+      "page": 367,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43,789,310",
+      "confidence": "high",
+      "note": "p.367 SHARE CAPITAL base case ('assuming the Over-allotment Option is not exercised'): 43,789,310 total shares = 1,345,418 Domestic Unlisted + 37,035,912 converted H + 5,407,980 new H."
+    },
+    "col_M": {
+      "value": 5407980,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 5,407,980",
+      "confidence": "high",
+      "note": "p.2 cover base case (no greenshoe / no offer-size adjustment): 5,407,980 Offer Shares; = col_Q + col_P = col_R + col_S = 5,137,580 + 270,400."
+    },
+    "col_N": {
+      "value": 38381330,
+      "page": 367,
+      "quote": "registered capital of our Company was RMB38,381,330, comprising 38,381,330 Domestic Unlisted Shares of nominal value RMB1.00",
+      "confidence": "high",
+      "note": "Dataset convention: col_N = col_L - col_M = 43,789,310 - 5,407,980 = 38,381,330; the p.367 'BEFORE THE GLOBAL OFFERING' balance (38,381,330 Domestic Unlisted Shares) is the same figure. Satisfies L = N + Q."
+    },
+    "col_O": {
+      "value": 38381330,
+      "page": 367,
+      "quote": "registered capital of our Company was RMB38,381,330, comprising 38,381,330 Domestic Unlisted Shares of nominal value RMB1.00",
+      "confidence": "high",
+      "note": "Dataset convention: col_O = col_L - col_M = 43,789,310 - 5,407,980 = 38,381,330 (same as col_N). Satisfies L = O + M."
+    },
+    "col_P": {
+      "value": 0,
+      "page": 219,
+      "quote": "5,407,980 H Shares will be issued pursuant to the Global Offering assuming Over-allotment Option is not exercised.",
+      "confidence": "high",
+      "note": "No selling shareholder: p.219 item (c) states all 5,407,980 base Offer Shares are newly issued H Shares and no Sale Shares table exists -> structural 0 (not missing)."
+    },
+    "col_Q": {
+      "value": 5407980,
+      "page": 367,
+      "quote": "H Shares to be issued pursuant to the Global Offering . . . . . . 5,407,980",
+      "confidence": "high",
+      "note": "p.367 SHARE CAPITAL base case, 'H Shares to be issued pursuant to the Global Offering' = 5,407,980."
+    },
+    "col_R": {
+      "value": 5137580,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 5,137,580",
+      "confidence": "high",
+      "note": "p.2 cover base case: 5,137,580 International Offer Shares (subject to adjustment and the Over-allotment Option)."
+    },
+    "col_S": {
+      "value": 270400,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 270,400",
+      "confidence": "high",
+      "note": "p.2 cover base case: 270,400 Hong Kong Offer Shares (subject to adjustment)."
+    },
+    "col_T": {
+      "value": 263.0,
+      "page": 2,
+      "quote": "Offer Price : HK$263.00 per H Share",
+      "confidence": "high",
+      "note": "Fixed-price offering: p.2 cover Offer Price HK$263.00 per H Share, so max = min = 263.00."
+    },
+    "col_U": {
+      "value": 263.0,
+      "page": 2,
+      "quote": "The Offer Price per Offer Share will be HK$263.00 per Offer Share, unless otherwise announced.",
+      "confidence": "high",
+      "note": "Fixed-price offering: p.2 cover 'The Offer Price per Offer Share will be HK$263.00'; col_U (263.00) <= col_T (263.00)."
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 526,
+      "quote": "presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+      "confidence": "high",
+      "note": "p.526 Accountants' Report basis of preparation: 'presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000)' -> all monetary fields stored x1,000."
+    },
+    "col_W": {
+      "value": 1308181000,
+      "page": 528,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . 1,343,805 1,308,181 1,243,232 1,604,456",
+      "confidence": "high",
+      "note": "p.528 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Period map (canonical workbook HKIPO-MB2026Q1.xlsx sheet NLR: year-3 = FY2023, year-2 = FY2024, year-1 = the period ending col_AT): year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total assets row 1,343,805 | 1,308,181 | 1,243,232 | 1,604,456 -> year-3 (FY2023) = 1,308,181,000."
+    },
+    "col_X": {
+      "value": 1243232000,
+      "page": 528,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . 1,343,805 1,308,181 1,243,232 1,604,456",
+      "confidence": "high",
+      "note": "p.528 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Period map (canonical workbook HKIPO-MB2026Q1.xlsx sheet NLR: year-3 = FY2023, year-2 = FY2024, year-1 = the period ending col_AT): year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total assets row 1,343,805 | 1,308,181 | 1,243,232 | 1,604,456 -> year-2 (FY2024) = 1,243,232,000."
+    },
+    "col_Y": {
+      "value": 1604456000,
+      "page": 528,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . 1,343,805 1,308,181 1,243,232 1,604,456",
+      "confidence": "high",
+      "note": "p.528 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Period map (canonical workbook HKIPO-MB2026Q1.xlsx sheet NLR: year-3 = FY2023, year-2 = FY2024, year-1 = the period ending col_AT): year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total assets row 1,343,805 | 1,308,181 | 1,243,232 | 1,604,456 -> year-1 (30/06/2025) = 1,604,456,000 (= col_AB + col_AE)."
+    },
+    "col_Z": {
+      "value": -856996000,
+      "page": 529,
+      "quote": "Total deficit. . . . . . . . . . . . . . . . . . . . . (601,917) (856,996) (1,117,875) (1,306,207)",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. 'Total deficit' / net liabilities (601,917) | (856,996) | (1,117,875) | (1,306,207) -> year-3 (FY2023) = -856,996,000."
+    },
+    "col_AA": {
+      "value": -1117875000,
+      "page": 529,
+      "quote": "Total deficit. . . . . . . . . . . . . . . . . . . . . (601,917) (856,996) (1,117,875) (1,306,207)",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. 'Total deficit' / net liabilities (601,917) | (856,996) | (1,117,875) | (1,306,207) -> year-2 (FY2024) = -1,117,875,000."
+    },
+    "col_AB": {
+      "value": -1306207000,
+      "page": 529,
+      "quote": "Total deficit. . . . . . . . . . . . . . . . . . . . . (601,917) (856,996) (1,117,875) (1,306,207)",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. 'Total deficit' / net liabilities (601,917) | (856,996) | (1,117,875) | (1,306,207) -> year-1 (30/06/2025) = -1,306,207,000."
+    },
+    "col_AC": {
+      "value": 2165177000,
+      "page": 529,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . 1,945,722 2,165,177 2,361,107 2,910,663",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total liabilities 1,945,722 | 2,165,177 | 2,361,107 | 2,910,663 -> year-3 (FY2023) = 2,165,177,000."
+    },
+    "col_AD": {
+      "value": 2361107000,
+      "page": 529,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . 1,945,722 2,165,177 2,361,107 2,910,663",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total liabilities 1,945,722 | 2,165,177 | 2,361,107 | 2,910,663 -> year-2 (FY2024) = 2,361,107,000."
+    },
+    "col_AE": {
+      "value": 2910663000,
+      "page": 529,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . 1,945,722 2,165,177 2,361,107 2,910,663",
+      "confidence": "high",
+      "note": "p.529 CONSOLIDATED STATEMENTS OF FINANCIAL POSITION - CONTINUED (RMB'000 -> x1,000); columns in order 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025. Same period map as p.528: year-1 = 6M to 30/06/2025 stub, year-2 = FY2024, year-3 = FY2023. Total liabilities 1,945,722 | 2,165,177 | 2,361,107 | 2,910,663 -> year-1 (30/06/2025) = 2,910,663,000."
+    },
+    "col_AF": {
+      "value": 132604000,
+      "page": 527,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 6 31,056 132,604",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Revenue 31,056 | 132,604 | 410,035 | 258,461 | 408,036 -> year-3 (FY2023) = 132,604,000."
+    },
+    "col_AG": {
+      "value": 410035000,
+      "page": 527,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 6 31,056 132,604 410,035",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Revenue 31,056 | 132,604 | 410,035 | 258,461 | 408,036 -> year-2 (FY2024) = 410,035,000."
+    },
+    "col_AH": {
+      "value": 816072000,
+      "page": 527,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . 6 31,056 132,604 410,035 258,461 408,036",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Revenue 1H2025 = 408,036; year-1 is a 6M stub, so the ONLY annualised fields are col_AH/col_AK/col_AN: 408,036 x 12/6 = 816,072,000."
+    },
+    "col_AI": {
+      "value": -290136000,
+      "page": 527,
+      "quote": "Loss before income tax . . . . . . . . . . . . . . . . (302,874) (290,136)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss before income tax (302,874) | (290,136) | (609,156) | (133,471) | (479,845) -> year-3 (FY2023) = -290,136,000."
+    },
+    "col_AJ": {
+      "value": -609156000,
+      "page": 527,
+      "quote": "Loss before income tax . . . . . . . . . . . . . . . . (302,874) (290,136) (609,156)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss before income tax (302,874) | (290,136) | (609,156) | (133,471) | (479,845) -> year-2 (FY2024) = -609,156,000."
+    },
+    "col_AK": {
+      "value": -959690000,
+      "page": 527,
+      "quote": "Loss before income tax . . . . . . . . . . . . . . . . (302,874) (290,136) (609,156) (133,471) (479,845)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss before income tax 1H2025 = (479,845); year-1 annualised x 12/6 = -959,690,000."
+    },
+    "col_AL": {
+      "value": -255079000,
+      "page": 527,
+      "quote": "Loss for the year/period. . . . . . . . . . . . . . . . (262,997) (255,079)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss for the year/period (262,997) | (255,079) | (580,844) | (122,567) | (455,086) -> year-3 (FY2023) = -255,079,000."
+    },
+    "col_AM": {
+      "value": -580844000,
+      "page": 527,
+      "quote": "Loss for the year/period. . . . . . . . . . . . . . . . (262,997) (255,079) (580,844)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss for the year/period (262,997) | (255,079) | (580,844) | (122,567) | (455,086) -> year-2 (FY2024) = -580,844,000."
+    },
+    "col_AN": {
+      "value": -910172000,
+      "page": 527,
+      "quote": "Loss for the year/period. . . . . . . . . . . . . . . . (262,997) (255,079) (580,844) (122,567) (455,086)",
+      "confidence": "high",
+      "note": "p.527 CONSOLIDATED STATEMENTS OF PROFIT OR LOSS (RMB'000 -> x1,000); columns in order FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. Period map: year-1 = 6M to 30/06/2025 stub (col_AT), year-2 = FY2024, year-3 = FY2023. Loss for the year/period 1H2025 = (455,086); year-1 annualised x 12/6 = -910,172,000."
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 486,
+      "quote": "All Capital Market Intermediaries participating in the Global Offering will receive an underwriting commission equivalent to 3% (the “Fixed Fees”) of the aggregate Offer Price payable",
+      "confidence": "high",
+      "note": "p.486: underwriting commission of 3% ('Fixed Fees') of the aggregate Offer Price on all Offer Shares for all Capital Market Intermediaries; no separate Hong Kong-only rate -> HK rate = 0.03."
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 486,
+      "quote": "underwriting commission equivalent to 3% (the “Fixed Fees”)",
+      "confidence": "high",
+      "note": "p.486: the same 3% Fixed Fees applies to all Capital Market Intermediaries / all Offer Shares; no separate International-only rate is disclosed -> 0.03."
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 486,
+      "quote": "to require the Company to issue up to an aggregate of 811,190 additional Offer Shares, representing approximately 15% of the Offer Shares initially available under the Global Offering.",
+      "confidence": "high",
+      "note": "p.486 Over-Allotment Option: up to 811,190 additional Offer Shares, 'representing approximately 15% of the Offer Shares initially available' -> 0.15 (811,190 / 5,407,980 = 15.0%)."
+    },
+    "col_AR": {
+      "value": "Intelligent driving products and solutions for commercial vehicles",
+      "page": 229,
+      "quote": "We are an innovative product-driven provider of intelligent driving products and solutions for commercial vehicles in China.",
+      "confidence": "high",
+      "note": "p.229 OVERVIEW 'Who We Are': 'an innovative product-driven provider of intelligent driving products and solutions for commercial vehicles in China'."
+    },
+    "col_AS": {
+      "value": "Chapter 18C",
+      "page": 11,
+      "quote": "we are a specialist technology company seeking to list on the Main Board of the Hong Kong Stock Exchange under Chapter 18C of the Listing Rules",
+      "confidence": "high",
+      "note": "p.11: prospectus's own stated basis of listing is Chapter 18C (specialist technology company unable to meet Rule 8.05(1)-(3)) - not an industry inference."
+    },
+    "col_AT": {
+      "value": "30/06/25",
+      "page": 522,
+      "quote": "consolidated statements of financial position as at 31 December 2022, 31 December 2023 and 31 December 2024 and 30 June 2025",
+      "confidence": "high",
+      "note": "p.522 Accountants' Report Introduction: consolidated statements of financial position as at 31/12/2022, 31/12/2023, 31/12/2024 and 30/06/2025; the last period (6M to 30/06/2025) is year-1, so col_AT = 30/06/25."
+    },
+    "col_AU": {
+      "value": -208210000,
+      "page": 34,
+      "quote": "Net cash used in operating activities . . . . . . . . (203,053) (196,761) (147,735) (42,481) (208,210)",
+      "confidence": "high",
+      "note": "p.34 cash-flow summary (RMB'000 -> x1,000); columns FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025 = (203,053) | (196,761) | (147,735) | (42,481) | (208,210). year-1 = 6M2025 stub = (208,210) -> -208,210,000; cash-flow items are NEVER annualised."
+    },
+    "col_AV": {
+      "value": 186225000,
+      "page": 34,
+      "quote": "Cash and cash equivalents at end of year/period . . . . . . . . . . . . . . . . . . . . . . 381,678 234,663 306,402 331,979 186,225",
+      "confidence": "high",
+      "note": "p.34 'Cash and cash equivalents at end of year/period' = 381,678 | 234,663 | 306,402 | 331,979 | 186,225 for FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. year-1 = 30/06/2025 = 186,225,000 (ties to the p.528 'Cash and cash equivalents' 30/06/2025 column); NEVER annualised."
+    },
+    "col_AW": {
+      "value": 151317000,
+      "page": 527,
+      "quote": "Research and development expenses . . . . . . . . . . 7 (110,507) (90,396) (193,181) (35,339) (151,317)",
+      "confidence": "high",
+      "note": "p.527 'Research and development expenses' = (110,507) | (90,396) | (193,181) | (35,339) | (151,317) for FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. year-1 = 6M2025 stub = 151,317,000 (stored as a positive expense magnitude, matching the canonical workbook convention, e.g. 6082.HK = 571,616,000); NEVER annualised."
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 550,
+      "quote": "During the Track Record Period, the Group’s R&D expenditures incurred did not meet the capitalization principle above and were expensed as incurred.",
+      "confidence": "high",
+      "note": "p.550: 'During the Track Record Period, the Group's R&D expenditures incurred did not meet the capitalization principle above and were expensed as incurred' -> disclosed nil for year-1 capitalised development-cost additions (0 = disclosed zero, not missing)."
+    },
+    "col_AY": {
+      "value": 0.941,
+      "page": 22,
+      "quote": "the six months ended June 30, 2025 accounted for 96.7%, 64.1%, 80.0% and 94.1%",
+      "confidence": "medium",
+      "note": "p.22: five largest customers accounted for 96.7%, 64.1%, 80.0% and 94.1% for FY2022, FY2023, FY2024 and the six months ended 30/06/2025 respectively. year-1 = 6M2025 stub -> 94.1% = 0.941. The quoted window starts mid-sentence; the four percentages map in the order FY2022/FY2023/FY2024/1H2025."
+    },
+    "col_DP": {
+      "value": "希迪智驾科技股份有限公司",
+      "page": 1,
+      "quote": "希迪智駕科技股份有限公司 (A joint stock",
+      "confidence": "high",
+      "note": "p.1/p.2 print the Traditional form 希迪智駕科技股份有限公司; the stored value is its Simplified-Chinese conversion (智駕 -> 智驾) required by the field convention. The Simplified string itself does not appear in the document."
+    },
+    "col_CJ": {
+      "value": "Hunan Xiangjiang Zhicheng Industrial Investment Fund Partnership (Limited Partnership); Nanning Zhijia No. 1 Ruiyue Equity Investment Partnership (Limited Partnership); ICBC UBS Asset Management Company Limited; ICBC UBS Asset Management (International) Company Limited; Qianhai Kaiyuan Qunwei QDII Single Asset Management Plan",
+      "page": 379,
+      "quote": "Xiangjiang Zhicheng . . HK$425,706,747 1,618,650 29.93% 3.70% 26.03% 3.63% Zhijia No. 1 . . . . . . . RMB70,000,000 292,860 5.42% 0.67% 4.71% 0.66% ICBCUBS",
+      "confidence": "high",
+      "note": "p.379 cornerstone table (base case, 5 investors): Xiangjiang Zhicheng 1,618,650; Zhijia No.1 292,860; ICBCUBS 29,610; ICBCUBSI 59,230; QHKY Qunwei 76,040; Total 2,076,390 shares / HK$546,100,893. Full legal names are in the narratives: Nanning Zhijia No.1 p.380, ICBC UBS Asset Management Company Limited p.381, Qianhai Kaiyuan Qunwei QDII Single Asset Management Plan p.382."
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 28,
+      "quote": "Since the inception of our Group and up to the Latest Practicable Date, we have conducted eight rounds of Pre-IPO Investments raising funds of approximately RMB1,492 million in total.",
+      "confidence": "high",
+      "note": "p.28: eight rounds of Pre-IPO Investments raising ~RMB1,492 million in total up to the Latest Practicable Date -> pre-IPO VC/PE backing present (1), not inferred."
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 208,
+      "quote": "Xinding Capital is a venture capital based in the PRC, investing primarily in cutting-edge companies",
+      "confidence": "high",
+      "note": "p.208: 'Xinding Capital is a venture capital based in the PRC, investing primarily in cutting-edge companies' - explicit VC disclosure -> 1."
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 210,
+      "quote": "CEL is a leading cross-border asset management and private equity investment company in China",
+      "confidence": "high",
+      "note": "p.210: 'CEL is a leading cross-border asset management and private equity investment company in China' (Beta Garden / CEL New Economy Fund) - explicit PE disclosure -> 1."
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 214,
+      "quote": "Beijing Baidu Investment Management Co., Ltd. is a consolidated group entity of and controlled by Baidu Inc. (“Baidu”) (NASDAQ.BIDU; 9888.HK",
+      "confidence": "high",
+      "note": "p.214: Baidu Venture's general partner is ultimately wholly-owned by Beijing Baidu Investment Management Co., Ltd., 'a consolidated group entity of and controlled by Baidu Inc.' -> corporate VC present (1)."
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 215,
+      "quote": "is principally engaged in venture capital investment. It is wholly owned by State-owned Assets Supervision and Administration Commission of Changsha Municipal People’s Government",
+      "confidence": "high",
+      "note": "p.215: Xiangjiang Investment 'is wholly owned by State-owned Assets Supervision and Administration Commission of Changsha Municipal People's Government' -> state/gov backing present (1)."
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 207,
+      "quote": "HongShan is a leading venture capital and private equity firm investing across technology, healthcare and consumer sectors.",
+      "confidence": "high",
+      "note": "p.207: HongShan 'is a leading venture capital and private equity firm investing across technology, healthcare and consumer sectors' (AUM ~US$55bn as of 30/06/2025) -> top-tier VC/PE present (1)."
+    },
+    "col_pre_ipo_investors": {
+      "value": "HongShan; Xinding Capital; Founder Hesheng Investment; Legend Holdings; Liangjiang Fund; Xiangjiang State Investment; Ruishi Capital; Baidu; Qinghao Capital; CEL; Guangkong Zhongying; Qingdao Zhenghan; Qiandao Capital; Sanze Capital; Lens Technology; Juncheng Hongxin; Chengdu Technology VC; Chuanghe Huimao; Xingxiang Fangzheng; Xinjun Electronics; Guotou Chuangying; Yunfa Ruichi; Ceyuan Guangyi Digital Fund; Xindiyuan Investors; Baodechang; Jingkai Qitao; Tianjin Shengde; Nanjing Bestway; Hunan Zhibo; Lakeside VC",
+      "page": 224,
+      "quote": "Sub-total 21,631,200 56.36% 1,345,418 100% 20,285,782 47.79% 21,631,200 49.40%",
+      "confidence": "high",
+      "note": "Complete 30-name list from the CAPITALIZATION OF OUR COMPANY table: 14 rows on p.223 (HongShan, Xinding Capital, Founder Hesheng Investment, Legend Holdings, Liangjiang Fund, Xiangjiang State Investment, Ruishi Capital, Baidu, Qinghao Capital, CEL, Guangkong Zhongying, Qingdao Zhenghan, Qiandao Capital, Sanze Capital) + 16 rows on p.224 (Lens Technology, Juncheng Hongxin, Chengdu Technology VC, Chuanghe Huimao, Xingxiang Fangzheng, Xinjun Electronics, Guotou Chuangying, Yunfa Ruichi, Ceyuan Guangyi Digital Fund, Xindiyuan Investors, Baodechang, Jingkai Qitao, Tianjin Shengde, Nanjing Bestway, Hunan Zhibo, Lakeside VC). The quoted line is the p.224 Sub-total 21,631,200 shares = 56.36% that ties the block; Controlling Shareholders (NovoDriv HK, Changsha Gangwan, CWB Startup HK, Changsha Shengyu) are excluded."
+    },
+    "col_vc_pe_stake": {
+      "value": 0.5636,
+      "page": 28,
+      "quote": "Our Pre-IPO Investors (excluding CWB Startup HK and Changsha Shengyu) hold approximately 56.36% of the voting rights in our Company as of the Latest Practicable Date.",
+      "confidence": "high",
+      "note": "Pre-offering basis: p.28 'Our Pre-IPO Investors (excluding CWB Startup HK and Changsha Shengyu) hold approximately 56.36% of the voting rights ... as of the Latest Practicable Date'; ties to the p.224 pre-offering Sub-total 21,631,200 / 38,381,330 = 56.36%. The post-offering 47.79% column is NOT used."
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 124,
+      "quote": "Mr. Wang Hao is a board representative of HongShan prior to Listing and have performed non-executive functions through providing advice on our overall development as a private company.",
+      "confidence": "high",
+      "note": "p.124 note (1): 'Mr. Wang Hao is a board representative of HongShan prior to Listing and have performed non-executive functions...' -> pre-IPO investor board seat present (1)."
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 195,
+      "quote": "On March 20, 2018, we completed our Series A Financing, resulting in the increase of our registered capital from RMB6,511,000 to RMB10,000,000 at an aggregate consideration of USD30,000,000",
+      "confidence": "high",
+      "note": "p.195: 'On March 20, 2018, we completed our Series A Financing ... aggregate consideration of USD30,000,000'; the p.202 table lists Series A first -> earliest round = Series A."
+    },
+    "col_holding_duration": {
+      "value": 7.73,
+      "page": 202,
+      "quote": "Date of last settlement of consideration. March 20, 2018",
+      "confidence": "medium",
+      "note": "p.195 'On March 20, 2018, we completed our Series A Financing'; p.202 confirms 'Date of last settlement of consideration ... March 20, 2018'. Prospectus date 11/12/2025. 20/03/2018 -> 11/12/2025 = 2,823 days / 365 = 7.73 years (p.202's resolution date 16/03/2018 would give 7.74)."
+    },
+    "col_BB": {
+      "value": "自然人",
+      "page": 361,
+      "quote": "As of the Latest Practicable Date, Prof. Li is indirectly interested in approximately 16,750,130 Shares, representing approximately 43.64% of our total issued share capital",
+      "confidence": "high",
+      "note": "p.361 CONTROLLING SHAREHOLDERS: the ultimate controller is Prof. Li, a natural person (自然人), indirectly interested in ~16,750,130 Shares / 43.64% through NovoDriv HK, Changsha Gangwan, CWB Startup HK and Changsha Shengyu."
+    },
+    "col_BC": {
+      "value": 0.3825,
+      "page": 223,
+      "quote": "Sub-total . . . . . . . . . . . . . . 16,750,130 43.64% — — 16,750,130 39.46% 16,750,130 38.25%",
+      "confidence": "high",
+      "note": "p.223 CAPITALIZATION table, Controlling Shareholders Sub-total row: post-offering 'Shareholding in the total issued share capital' = 38.25% -> 0.3825 (16,750,130 / 43,789,310). No WVR, so economic interest = voting rights."
+    },
+    "col_BD": {
+      "value": 0.3825,
+      "page": 361,
+      "quote": "the Controlling Shareholders will be entitled to exercise approximately 38.25% of the voting rights in our Company, and will remain as the Controlling Shareholders upon",
+      "confidence": "high",
+      "note": "p.361: 'the Controlling Shareholders will be entitled to exercise approximately 38.25% of the voting rights in our Company' -> 0.3825 (= col_BC; no WVR)."
+    },
+    "col_BE": {
+      "value": 2344857000,
+      "page": 456,
+      "quote": "Total. . . . . . . . . . . . . . . . . . . . . . . . . 1,778,769 1,897,333 2,142,805 2,344,857",
+      "confidence": "high",
+      "note": "p.456 INDEBTEDNESS (RMB in thousands -> x1,000): Total 1,778,769 | 1,897,333 | 2,142,805 | 2,344,857 | 2,377,788 for 31/12/2022 | 31/12/2023 | 31/12/2024 | 30/06/2025 | 31/10/2025. year-1 = 30/06/2025 = 2,344,857,000; balance-sheet debt is NEVER annualised."
+    },
+    "col_BF": {
+      "value": "规模商业化",
+      "page": 385,
+      "quote": "Our business strategy and innovative technological prowess made us a market innovator in mass commercialization.",
+      "confidence": "high",
+      "note": "p.385: 'Our business strategy and innovative technological prowess made us a market innovator in mass commercialization' -> commercialisation stage 规模商业化 (mass commercialisation), per the field's own vocabulary."
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 40,
+      "quote": "Approximately 10% of the net proceeds, or HK$130.9 million, will be employed as working capital and for general corporate uses.",
+      "confidence": "medium",
+      "note": "p.40 USE OF PROCEEDS allocates 100% of the HK$1,309.0m net proceeds: 55% R&D, 15% commercialisation, 20% investment/M&A, 10% working capital. There is no debt-repayment line, so 0 (field hint: no such use -> 0)."
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 5,407,980 H Shares",
+      "confidence": "high",
+      "note": "p.2 cover / p.367 SHARE CAPITAL: the offered class is H Shares (5,407,980 H Shares under the Global Offering)."
+    },
+    "col_BP": {
+      "value": "16/10/17",
+      "page": 767,
+      "quote": "Our Company was established as a limited liability company in the PRC on October 16, 2017 and was converted into a joint stock limited company on July 2, 2024",
+      "confidence": "high",
+      "note": "p.767 Appendix V '1. Incorporation' (Statutory and General Information, not the Definitions section): 'established as a limited liability company in the PRC on October 16, 2017' -> 16/10/17."
+    },
+    "col_BR": {
+      "value": "Changsha, PRC",
+      "page": 108,
+      "quote": "Our principal business operations are primarily located, managed, and conducted in the PRC and will continue to be based in the PRC, and our Company’s head office is located in Changsha, the PRC.",
+      "confidence": "high",
+      "note": "p.108: 'our Company's head office is located in Changsha, the PRC'."
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 385,
+      "quote": "Our historical financial information has been prepared based on IFRSs Accounting Standards, issued by the International Accounting Standards Board.",
+      "confidence": "high",
+      "note": "p.385 BASIS OF PREPARATION: 'prepared based on IFRSs Accounting Standards, issued by the International Accounting Standards Board'; stored in the canonical form 'IFRS Accounting Standards'."
+    },
+    "col_CC": {
+      "value": "11/12/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, December 11, 2025",
+      "confidence": "high",
+      "note": "p.5 expected timetable: 'Hong Kong Public Offering commences ... 9:00 a.m. on Thursday, December 11, 2025' -> 11/12/25 (prospectus date 11/12/2025)."
+    },
+    "col_CD": {
+      "value": "16/12/25",
+      "page": 5,
+      "quote": "Application lists close(iii) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Tuesday, December 16, 2025",
+      "confidence": "high",
+      "note": "p.5 expected timetable: 'Application lists close(iii) ... 12:00 noon on Tuesday, December 16, 2025' -> 16/12/25."
+    },
+    "col_CE": {
+      "value": 42443892,
+      "page": 219,
+      "quote": "Immediately upon completion of the Global Offering (assuming the Over-allotment Option is not exercised), the Company will have 1,345,418 Domestic Unlisted Shares and 42,443,892",
+      "confidence": "high",
+      "note": "p.367 SHARE CAPITAL, partial conversion: 37,035,912 H Shares converted from Domestic Unlisted Shares + 5,407,980 new H Shares = 42,443,892 listed on HKEX; the remaining 1,345,418 Domestic Unlisted Shares are not listed, so total share capital 43,789,310 is correctly NOT used. (p.224 prints 42,433,892, an internal prospectus typo: 1,345,418 + 42,443,892 = 43,789,310.)"
+    },
+    "col_CF": {
+      "value": 69708000,
+      "page": 527,
+      "quote": "Gross (loss)/profit . . . . . . . . . . . . . . . . . . . (5,995) 26,823 101,440 44,379 69,708",
+      "confidence": "high",
+      "note": "p.527 'Gross (loss)/profit' = (5,995) | 26,823 | 101,440 | 44,379 | 69,708 for FY2022 | FY2023 | FY2024 | 1H2024 | 1H2025. year-1 = 6M2025 stub = 69,708,000, the SAME period as col_AT (30/06/2025); gross profit is NEVER annualised, so it sits below the annualised col_AH."
+    },
+    "col_CG": {
+      "value": 1770000,
+      "page": 462,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . 153,419 30,412 2,077 1,770",
+      "confidence": "high",
+      "note": "p.462 CAPITAL EXPENDITURES (RMB in thousands -> x1,000): Total 153,419 | 30,412 | 2,077 | 1,770 for FY2022 | FY2023 | FY2024 | six months ended 30/06/2025. year-1 = 6M2025 stub = 1,770 -> 1,770,000; NEVER annualised."
+    },
+    "col_CH": {
+      "value": "Unqualified opinion",
+      "page": 524,
+      "quote": "true and fair view of the Company’s financial position as at 31 December 2022, 31 December 2023 and 31 December 2024 and 30 June 2025",
+      "confidence": "high",
+      "note": "p.524 Accountants' Report Opinion: 'a true and fair view ...' with no qualification -> Unqualified opinion. Only the six-months-ended-30/06/2024 stub comparative was reviewed; the Track Record Period (incl. 30/06/2025) was audited."
+    },
+    "col_CI": {
+      "value": 113300000,
+      "page": 486,
+      "quote": "legal and other professional fees and printing and all other expenses relating to the Global Offering are estimated to be approximately HK$113.3 million",
+      "confidence": "high",
+      "note": "p.486: 'The aggregate underwriting commissions and fees together with the Stock Exchange listing fees, the SFC transaction levy, the AFRC transaction levy and the Stock Exchange trading fee, legal and other professional fees and printing and all other expenses relating to the Global Offering are estimated to be approximately HK$113.3 million' -> TOTAL listing expenses incl. underwriting commission, in HK$ base units = 113,300,000."
+    }
+  }
+}

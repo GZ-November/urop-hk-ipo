@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "target": "prospectus",
+  "expected_codes": [
+    "2575.HK",
+    "2685.HK"
+  ],
+  "records": [
+    {
+      "code": "2575.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2575.json",
+      "status": "error",
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2575.md'"
+      ]
+    },
+    {
+      "code": "2685.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2685.json",
+      "status": "error",
+      "errors": [
+        "[Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2685.md'"
+      ]
+    }
+  ],
+  "missing_files": [],
+  "pending_missing_fields": [],
+  "errors": [
+    {
+      "code": "2575.HK",
+      "detail": "cannot parse/validate /Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2575.json: [Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2575.md'"
+    },
+    {
+      "code": "2685.HK",
+      "detail": "cannot parse/validate /Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2685.json: [Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2685.md'"
+    }
+  ],
+  "gate_pass": false,
+  "run_id": "0965e7d4f0",
+  "generated_at": "2026-10-15T02:39:26.193107+00:00"
+}

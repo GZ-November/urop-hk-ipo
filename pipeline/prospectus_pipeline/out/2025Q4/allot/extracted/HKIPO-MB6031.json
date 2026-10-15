@@ -1,0 +1,117 @@
+{
+  "code": "6031.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4391,
+      "page": 7,
+      "quote": "Total\n277,342,200\n43.91%\n3.05%\n–",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 52.93,
+      "page": 4,
+      "quote": "Subscription level \n52.93 times\nClaw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 115863,
+      "page": 4,
+      "quote": "No. of valid applications\n115,863\nNo. of successful applications\n81,769",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3072267600,
+      "page": 17,
+      "quote": "POOL A\n200\n45,385\n22,693 out of 45,385 applicants to receive 200 H shares\n50.00%\n400\n20,877\n12,605 out of 20,877 applicants to receive 200 H shares\n30.19%\n600\n3,902\n2,631 out of 3,902 applic",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 52.93 times; Claw-back triggered: N/A",
+      "page": 4,
+      "quote": "Subscription level \n52.93 times\nClaw-back triggered \nN/A",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/10/25",
+      "page": 3,
+      "quote": "Final Offer Price\nHK$21.30\nOffer Price Range\nHK$20.30 – HK$2",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "27/10/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**27/10/2025 22:25**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 631598800,
+      "page": 3,
+      "quote": "Number of Offer Shares\n631,598,800",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 58042600,
+      "page": 3,
+      "quote": "Number of Offer Shares in Public Offer\n58,042,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 573556200,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offer \n(taking into account the partial exercise of the Offer \nSize Adjustment Option)\n573,556,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 89015600,
+      "page": 1,
+      "quote": "een partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Saturday, November 22, 2025, in respect of an aggregate of 89,015,600 H Shares,",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END\nOF STABILIZATION PERIOD (23/11/2025 19:01)"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered; the Offer Size Adjustment Option was partially exercised, with 51,174,200 additional Offer Shares all allocated to the International Offering; the final Public Offer remains 58,042,600 Shares (9.19%) and the final International Offer is 573,556,200 Shares (90.81%).",
+      "page": 20,
+      "quote": "the final number of Offer Shares under the Hong Kong Public Offering \nis 58,042,600 Shares, representing approximately 9.19% of the total number of Offer Shares",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 13307300000,
+      "page": 4,
+      "quote": "Gross proceeds (Note)\nHK$13,453.1 million\n  Less:  Estimated listing expenses payable based on \nFinal Offer Price\nHK$145.8 million\nNet Proceeds\nHK$13,307.3 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0694,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before \nexercise of the Over-allotment Option)\n9,105,988,837",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 9105988837,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before \nexercise of the Over-allotment Option)\n9,105,988,837",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0389,
+      "page": null,
+      "quote": "公式：(col_CS 631,598,800 − col_CK 0.4391×col_CS) ÷ col_CZ 9,105,988,837 = 0.0389；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued Shares upon Listing (9,105,988,837); numerator = Offer Shares less the 277,342,200 cornerstone Offer Shares subject to a six-month lock-up.",
+      "page": 28,
+      "quote": "H Shares held by the Cornerstone Investors upon the Listing shall not be \ncounted towards the free float of the H Shares of the Company at the time of Listing.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 9105988837,
+      "page": 3,
+      "quote": "公式：(col_CS 631,598,800 − col_CK 0.4391×col_CS) ÷ col_CZ 9,105,988,837 = 0.0389；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

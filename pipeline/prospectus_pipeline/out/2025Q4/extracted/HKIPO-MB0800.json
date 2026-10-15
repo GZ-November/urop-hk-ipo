@@ -1,0 +1,425 @@
+{
+  "code": "0800.HK",
+  "fields": {
+    "col_L": {
+      "value": 1026616330,
+      "page": 502,
+      "quote": "Class B Ordinary Shares in issue 54,814,423 548.14 5.34 Class A Ordinary Shares issued under the Global Offering 88,250,000 882.50 8.60 Total 1,026,616,330",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 88250000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 88,250,000 Offer Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 938366330,
+      "page": 42,
+      "quote": "comprising (i) 938,366,330 Shares issued and outstanding as of the Latest Practicable Date, and (ii) 88,250,000 Offer Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 938366330,
+      "page": 502,
+      "quote": "Class A Ordinary Shares in issue 883,551,907 8,835.52 86.06 Class B Ordinary Shares in issue 54,814,423 548.14 5.34",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 42,
+      "quote": "88,250,000 Offer Shares to be issued under the Global Offering, assuming that the Over-allotment Option is not exercised",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 88250000,
+      "page": 502,
+      "quote": "Class A Ordinary Shares issued under the Global Offering 88,250,000 882.50 8.60 Total 1,026,616,330",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 83837500,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 83,837,500 Offer Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4412500,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 4,412,500 Offer Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 35.0,
+      "page": 2,
+      "quote": "Maximum Public Offer Price : HK$35.0 per Offer Share, plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": "NaN",
+      "page": 2,
+      "quote": "NaN：招股书只披露 Maximum Public Offer Price HK$35.0 per Offer Share（第2页），全文检索 minimum offer price / offer price range 均无披露（国际配售价可高于最高公开发售价），故最低发售价缺失。",
+      "confidence": "medium"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 580,
+      "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 5614258000,
+      "page": 583,
+      "quote": "Total assets 5,385,391 5,614,258 7,693,770 7,145,853",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 7693770000,
+      "page": 583,
+      "quote": "Total assets 5,385,391 5,614,258 7,693,770 7,145,853",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 7145853000,
+      "page": 583,
+      "quote": "Total assets 5,385,391 5,614,258 7,693,770 7,145,853",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -3051918000,
+      "page": 583,
+      "quote": "Total (deficit)/equity (2,082,116) (3,051,918) 7,066,019 6,463,756",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 7066019000,
+      "page": 583,
+      "quote": "Total (deficit)/equity (2,082,116) (3,051,918) 7,066,019 6,463,756",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 6463756000,
+      "page": 583,
+      "quote": "Total (deficit)/equity (2,082,116) (3,051,918) 7,066,019 6,463,756",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 8666176000,
+      "page": 584,
+      "quote": "Total liabilities 7,467,507 8,666,176 627,751 682,097",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 627751000,
+      "page": 584,
+      "quote": "Total liabilities 7,467,507 8,666,176 627,751 682,097",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 682097000,
+      "page": 584,
+      "quote": "Total liabilities 7,467,507 8,666,176 627,751 682,097",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 401844000,
+      "page": 581,
+      "quote": "Total revenue 5 527,543 401,844 361,134 150,298 199,615",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 361134000,
+      "page": 581,
+      "quote": "Total revenue 5 527,543 401,844 361,134 150,298 199,615",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 399230000,
+      "page": 581,
+      "quote": "Total revenue 5 527,543 401,844 361,134 150,298 199,615",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": -1946235000,
+      "page": 581,
+      "quote": "Loss before taxation (1,298,496) (1,946,235) (2,510,940) (880,109) (789,640)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -2510940000,
+      "page": 581,
+      "quote": "Loss before taxation (1,298,496) (1,946,235) (2,510,940) (880,109) (789,640)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -1579280000,
+      "page": 581,
+      "quote": "Loss before taxation (1,298,496) (1,946,235) (2,510,940) (880,109) (789,640)",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": -1949101000,
+      "page": 581,
+      "quote": "Loss for the year/period (1,298,496) (1,949,101) (2,516,808) (881,700) (791,517)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -2516808000,
+      "page": 581,
+      "quote": "Loss for the year/period (1,298,496) (1,949,101) (2,516,808) (881,700) (791,517)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -1583034000,
+      "page": 581,
+      "quote": "Loss for the year/period (1,298,496) (1,949,101) (2,516,808) (881,700) (791,517)",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 541,
+      "quote": "underwriting commission equivalent to 2.0% (if the offering size (before the exercise of Over-allotment Option) is more than US$250 million but no more than US$500 million)",
+      "confidence": "medium"
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 541,
+      "quote": "underwriting commission equivalent to 2.0% (if the offering size (before the exercise of Over-allotment Option) is more than US$250 million but no more than US$500 million)",
+      "confidence": "medium"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 541,
+      "quote": "13,237,500 additional Offer Shares, representing approximately 15.0% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Autonomous driving (L4 autonomous driving products and solutions)",
+      "page": 288,
+      "quote": "WeRide is a global pioneer in L4 autonomous driving. We have deployed autonomous driving products and solutions in over 30 cities across 11 countries",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Dual primary listing of Class A Ordinary Shares on the Stock Exchange as a Specialist Technology Company with WVR structure under Chapters 8A and 18C of the Listing Rules",
+      "page": 43,
+      "quote": "a dual primary listing of our Class A Ordinary Shares on the Stock Exchange as a Specialist Technology Company with WVR structure under Chapters 8A and 18C of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/06/25",
+      "page": 577,
+      "quote": "for each of the years ended December 31, 2022, 2023 and 2024 and the six months ended June 30, 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -663396000,
+      "page": 592,
+      "quote": "Net cash used in operating activities (670,381) (474,890) (593,595) (327,180) (663,396)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 3836137000,
+      "page": 583,
+      "quote": "Cash and cash equivalents 21(a) 2,233,691 1,661,152 4,268,300 3,836,137",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 644635000,
+      "page": 581,
+      "quote": "Research and development expenses 7 (758,565) (1,058,395) (1,091,357) (517,210) (644,635)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 609,
+      "quote": "The Group determined that the expenditure on development activities incurred during the years/periods presented did not meet the capitalization criteria",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.484,
+      "page": 24,
+      "quote": "representing 78.8%, 76.6%, 46.8% and 48.4% of our total revenue for the corresponding year/period",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "文远知行",
+      "page": 2,
+      "quote": "WeRide Inc. 文遠知行*",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 182,
+      "quote": "NA：全文检索 cornerstone 仅在豁免段出现「cornerstone investors (if any)」的假定表述（第181-182页）；招股书无基石投资者名单或基石投资协议，故无基石投资者。",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 276,
+      "quote": "Pathfinder SIIs (for the purpose of Chapter 2.5 of the Guide), namely Qiming and Alliance Ventures",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 276,
+      "quote": "Qiming Venture Partners V, L.P., Qiming Managing Directors Fund V, L.P., Qiming Venture Partners VII, L.P. and Qiming VII Strategic Investors Fund, L.P. are venture capital funds",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": 276,
+      "quote": "NaN：全文检索 private equity 无命中；招股书披露的上市前机构为 Qiming（venture capital funds）、Alliance Ventures（corporate venture capital fund）、Yutong（产业股东）及 China-UAE（政府基金），无 PE 基金身份披露，无法确认。",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 277,
+      "quote": "Alliance Ventures is a strategic corporate venture capital fund operated by the Renault-Nissan-Mitsubishi “Alliance,” positioned to invest in early-stage startup companies",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 278,
+      "quote": "Seventy Seventh Investment Company L.L.C. is ultimately controlled by the Government of the Emirate of Abu Dhabi",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 276,
+      "quote": "NaN：招股书仅将 Qiming 描述为 Sophisticated Investor 及 Pathfinder SII（第276页），未确认其为「一线知名 top-tier VC/PE」；全文无 top-tier / leading VC 表述，无法确认故留缺失。",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Qiming entities (Qiming Venture Partners V, L.P.; Qiming Managing Directors Fund V, L.P.; Qiming Venture Partners VII, L.P.; Qiming VII Strategic Investors Fund, L.P.); Alliance Ventures B.V.; Yutong entities (Beijing Xufeng Zhiyuan Intelligent Technology Partnership (Limited Partnership); Zhengzhou Xufeng Jiayuan Intelligent Connected Enterprise Management Center (Limited Partnership)); China-UAE Investment Cooperation Fund, L.P.",
+      "page": 279,
+      "quote": "Shareholders interested in 5% or more of the issued Shares Yutong entities 65,659,592 65,659,592 Alliance Ventures 63,680,080 63,680,080 Qiming entities(4) 62,865,042 62,865,042",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": 279,
+      "quote": "NaN：招股书仅按「Other Shareholders in aggregate 69.0/63.1」汇总其余股东（第279页），无法据披露数字复算出全部上市前机构投资者合计持股比例，故留缺失。",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 275,
+      "quote": "pursuant to which Alliance Ventures is entitled to the right to appoint, remove, and replace two Directors, subject to certain conditions",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series seed financing",
+      "page": 273,
+      "quote": "Series seed financing Series A financing Series B financing Series C financing Series D financing",
+      "confidence": "medium"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 273,
+      "quote": "NaN：招股书仅披露最早一轮（series seed financing）的 Time of completion 为 June 2018，未披露该轮投资协议签署日期，无法按协议日计算至招股书日期（2025-10-28）的持有年限。",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "自然人（WVR 受益人 Dr. Han 及 Dr. Li；公司无单一控股股东，二人构成单一最大股东集团）",
+      "page": 37,
+      "quote": "Immediately following the completion of the Global Offering, our WVR Beneficiaries will be Dr. Han and Dr. Li.",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.0798,
+      "page": 281,
+      "quote": "in aggregate representing approximately (i) 7.98% of the total issued share capital of our Company, (ii) 10.00% of the economic interest in our Company taking into account their vested share options",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.7015,
+      "page": 281,
+      "quote": "70.15% of the voting rights in our Company with respect to Shareholder resolutions relating to matters other than the Reserved Matters",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 246817000,
+      "page": 479,
+      "quote": "Long-term bank loan – – 50,040 6,985 47,534 6,635 47,772 6,669 Total 7,125,239 8,275,578 184,117 25,701 246,817",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercial Company under Chapter 18C（技术已进入商业化阶段）",
+      "page": 43,
+      "quote": "the requirements under Rule 18C.03 of the Listing Rules as a Commercial Company with reference to our expected market capitalization at the time of listing",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 45,
+      "quote": "Approximately 10.0% of the net proceeds, or HK$293.3 million, will be used for working capital and general corporate purposes.",
+      "confidence": "medium"
+    },
+    "col_BI": {
+      "value": "Class A Ordinary Shares; Class B Ordinary Shares",
+      "page": 502,
+      "quote": "our Company’s share capital comprises Class A Ordinary Shares and Class B Ordinary Shares",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "13/03/17",
+      "page": 688,
+      "quote": "Our Company was incorporated in the Cayman Islands as an exempted company with limited liability on March 13, 2017.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Guangzhou, Guangdong Province, PRC",
+      "page": 688,
+      "quote": "our Company’s headquarters are located at 21st Floor, Tower A, Guanzhou Life Science Innovation Center, No. 51, Luoxuan Road, Guangzhou International Biotech Island, Guangzhou, Guangdong Province, PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 594,
+      "quote": "The Historical Financial Information have been prepared in accordance with all applicable IFRS Accounting Standards issued by the International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "28/10/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences 9:00 a.m on Tuesday, October 28, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "03/11/25",
+      "page": 5,
+      "quote": "Application lists close 12:00 noon on Monday, November 3, 2025",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 1026616330,
+      "page": 502,
+      "quote": "Total 1,026,616,330 10,266.16 100.00",
+      "confidence": "medium"
+    },
+    "col_CF": {
+      "value": 61059000,
+      "page": 581,
+      "quote": "Gross profit 232,545 183,476 110,715 54,789 61,059",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 134471000,
+      "page": 485,
+      "quote": "Our capital expenditures were RMB82.7 million, RMB37.0 million, RMB85.5 million (US$11.9 million) and RMB134.5 million (US$18.8 million)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion (true and fair view)",
+      "page": 578,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Group’s and the Company’s financial position",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 156700000,
+      "page": 42,
+      "quote": "We estimate that our listing expenses will be approximately HK$156.7 million, representing approximately 5.07% of the gross proceeds from the Global Offering",
+      "confidence": "high"
+    }
+  }
+}

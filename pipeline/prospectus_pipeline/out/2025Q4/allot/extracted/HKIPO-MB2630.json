@@ -1,0 +1,118 @@
+{
+  "code": "2630.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 4,
+      "quote": "HONG KONG PUBLIC OFFERING No. of valid applications 265,188 No. of successful applications 8,799 Subscription level 6,238.42 times",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 6238.42,
+      "page": 4,
+      "quote": "Subscription level 6,238.42 times Claw-back triggered No",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 265188,
+      "page": 4,
+      "quote": "No. of valid applications 265,188",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 10978367400,
+      "page": 12,
+      "quote": "140,000 4,941 175 out of 4,941 to receive 200 Shares 0.01% 244,283 Total number of Pool A successful applicants: 4,400",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 6,238.42 times (Hong Kong Public Offering; claw-back triggered: No)",
+      "page": 4,
+      "quote": "Subscription level 6,238.42 times Claw-back triggered No",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "04/11/25",
+      "page": 7,
+      "quote": "The Offer Price is expected to be determined on or before Tuesday, November 4, 2025 (which, at the earliest, could be Monday, November 3, 2025)",
+      "confidence": "high",
+      "source": "prospectus"
+    },
+    "col_CR": {
+      "value": "05/11/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：05/11/2025 21:57",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 17597800,
+      "page": 3,
+      "quote": "Number of Offer Shares 17,597,800 Final Number of Offer Shares in Hong Kong Public Offering 1,759,800 Final Number of Offer Shares in International Offering 15,838,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1759800,
+      "page": 4,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering 1,759,800",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 15838000,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering 15,838,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD, NO STABILIZING ACTIONS AND\nLAPSE OF OVER-ALLOTMENT OPTION（03/12/2025 16:37）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD, NO STABILIZING ACTIONS AND\nLAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No; final Hong Kong Public Offering 1,759,800 and International Offering 15,838,000, i.e. no reallocation from the International Offering",
+      "page": 4,
+      "quote": "Claw-back triggered No No. of Offer Shares initially available under the Hong Kong Public Offering 1,759,800 Final no. of Offer Shares under the Hong Kong Public Offering 1,759,800",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 527360000,
+      "page": 4,
+      "quote": "Net proceeds HK$527.36 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3052,
+      "page": 15,
+      "quote": "51,149,722 H Shares, representing approximately 30.52% of our issued share capital (before any exercise of the Over-allotment Option) will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 167597800,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 167,597,800",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.105,
+      "page": null,
+      "quote": "公式：(col_CS 17,597,800 − col_CK 0.0000×col_CS) ÷ col_CZ 167,597,800 = 0.1050；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ = 167,597,800)",
+      "page": 15,
+      "quote": "51,149,722 H Shares, representing approximately 30.52% of our issued share capital (before any exercise of the Over-allotment Option) will count towards the public float",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 167597800,
+      "page": 3,
+      "quote": "公式：(col_CS 17,597,800 − col_CK 0.0000×col_CS) ÷ col_CZ 167,597,800 = 0.1050；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

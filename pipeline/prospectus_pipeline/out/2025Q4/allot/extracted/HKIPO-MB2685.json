@@ -1,0 +1,121 @@
+{
+  "code": "2685.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": null,
+      "quote": "招股书全文 491 页 0 处「基石投资者」、配发公告 16 页 0 个基石章节 -> 确认无基石投资者，按手册填确定的零",
+      "source": "cornerstone_absence",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 9366.28,
+      "page": 4,
+      "quote": "Subscription level \n9,366.28 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 159327,
+      "page": 4,
+      "quote": "No. of valid applications \n159,327",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 12503983800,
+      "page": 4,
+      "quote": "9,366.28 times",
+      "confidence": "medium",
+      "note": "DERIVED: final HK public offer shares 1,335,000 (p4) x subscription level 9,366.28 = 12,503,983,800 shares applied for; announcement has no 'shares applied for' total column"
+    },
+    "col_CP": {
+      "value": "Subscription level 9,366.28 times",
+      "page": 4,
+      "quote": "Subscription level \n9,366.28 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "25/11/25",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**26/11/2025 22:22**",
+      "confidence": "medium",
+      "note": "final Offer Price fixed on the Price Determination Date 25 November 2025 (prospectus timetable); announcement states only Final Offer Price HK$9.80"
+    },
+    "col_CR": {
+      "value": "26/11/2025",
+      "page": 1,
+      "quote": "- 刊发时间（港交所元数据）：**26/11/2025 22:22**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 13347500,
+      "page": 2,
+      "quote": "Number of Offer Shares under \nthe Global Offering\n:\n13,347,500 Shares (subject to the Over-\nallotment Option)",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1335000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n1,335,000 Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 12012500,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n12,012,500 Shares (subject to the Over-\nallotment Option)",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 1750000,
+      "page": 2,
+      "quote": "en partially exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Wednesday, December 24, 2025, in respect of an aggregate of 1,750,000 Shares (th",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD (24/12/2025 22:35)"
+    },
+    "col_CW": {
+      "value": "Reallocation\nNo",
+      "page": 4,
+      "quote": "Reallocation\nNo",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 12370000,
+      "page": 4,
+      "quote": "Net proceeds \nHK$12.37 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3694,
+      "page": 16,
+      "quote": "which represent an aggregate of approximately 36.94% \nof the Company’s issued Shares (assuming the Over-allotment Option is not exercised)",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 513347500,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of\nthe Over-allotment Option\n513,347,500",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.026,
+      "page": null,
+      "quote": "公式：(col_CS 13,347,500 − col_CK 0.0000×col_CS) ÷ col_CZ 513,347,500 = 0.0260；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "confidence": "high",
+      "source": "da_formula"
+    },
+    "col_DC": {
+      "value": 513347500,
+      "page": 3,
+      "quote": "公式：(col_CS 13,347,500 − col_CK 0.0000×col_CS) ÷ col_CZ 513,347,500 = 0.0260；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}
