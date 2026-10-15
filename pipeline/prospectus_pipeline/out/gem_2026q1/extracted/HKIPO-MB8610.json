@@ -1,0 +1,419 @@
+{
+ "code": "8610.HK",
+ "fields": {
+  "col_L": {
+   "value": 500000000,
+   "page": 265,
+   "quote": "125,000,000 Shares to be issued under the Share Offer 1,250,000.00 500,000,000 Total 5,000,000.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 125000000,
+   "page": 265,
+   "quote": "125,000,000 Shares to be issued under the Share Offer 1,250,000.00",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 375000000,
+   "page": 265,
+   "quote": "1 Share in issue immediately prior to the Share Offer 0.01 374,999,999 Shares to be issued under the Capitalisation Issue",
+   "confidence": "medium"
+  },
+  "col_O": {
+   "value": 375000000,
+   "page": 265,
+   "quote": "1 Share in issue immediately prior to the Share Offer 0.01 374,999,999 Shares to be issued under the Capitalisation Issue",
+   "confidence": "medium"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares : 125,000,000 Shares (subject to the Offer Size Adjustment Option) Number of Public Offer Shares",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 125000000,
+   "page": 265,
+   "quote": "125,000,000 Shares to be issued under the Share Offer 1,250,000.00",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 112500000,
+   "page": 2,
+   "quote": "Number of Placing Shares : 112,500,000 Shares (subject to re-allocation and the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 12500000,
+   "page": 2,
+   "quote": "Number of Public Offer Shares : 12,500,000 Shares (subject to re-allocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 0.7,
+   "page": 2,
+   "quote": "Not more than HK$0.70 per Offer Share and expected to be not less than HK$0.60 per Offer Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 0.6,
+   "page": 2,
+   "quote": "Not more than HK$0.70 per Offer Share and expected to be not less than HK$0.60 per Offer Share",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "MYR",
+   "page": 390,
+   "quote": "The Historical Financial Information is presented in Ringgit Malaysia (“RM”), which is also the functional currency of the Company",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 113572000,
+   "page": 381,
+   "quote": "Total assets 113,572 109,044 114,046",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 109044000,
+   "page": 381,
+   "quote": "Total assets 113,572 109,044 114,046",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 114046000,
+   "page": 381,
+   "quote": "Total assets 113,572 109,044 114,046",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 63611000,
+   "page": 382,
+   "quote": "TOTAL EQUITY 63,611 53,800 57,001",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 53800000,
+   "page": 382,
+   "quote": "TOTAL EQUITY 63,611 53,800 57,001",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 57001000,
+   "page": 382,
+   "quote": "TOTAL EQUITY 63,611 53,800 57,001",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 49961000,
+   "page": 382,
+   "quote": "Total liabilities 49,961 55,244 57,045",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 55244000,
+   "page": 382,
+   "quote": "Total liabilities 49,961 55,244 57,045",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 57045000,
+   "page": 382,
+   "quote": "Total liabilities 49,961 55,244 57,045",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 76757000,
+   "page": 380,
+   "quote": "Revenue 6 76,757 133,002 69,786 73,986",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 133002000,
+   "page": 380,
+   "quote": "Revenue 6 76,757 133,002 69,786 73,986",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 147972000,
+   "page": 380,
+   "quote": "Revenue 6 76,757 133,002 69,786 73,986",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -13098000,
+   "page": 380,
+   "quote": "(Loss)/profit before income tax 12 (13,098) 33,273 14,387 5,943",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 33273000,
+   "page": 380,
+   "quote": "(Loss)/profit before income tax 12 (13,098) 33,273 14,387 5,943",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 11886000,
+   "page": 380,
+   "quote": "(Loss)/profit before income tax 12 (13,098) 33,273 14,387 5,943",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -14460000,
+   "page": 380,
+   "quote": "attributable to owners of the Company (14,460) 26,189 12,112 3,201",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 26189000,
+   "page": 380,
+   "quote": "attributable to owners of the Company (14,460) 26,189 12,112 3,201",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 6402000,
+   "page": 380,
+   "quote": "attributable to owners of the Company (14,460) 26,189 12,112 3,201",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.0468,
+   "page": 348,
+   "quote": "will receive an underwriting commission of 4.68% of the aggregate Offer Price payable for the Offer Shares (including any Shares to be issued pursuant to the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.0468,
+   "page": 348,
+   "quote": "will receive an underwriting commission of 4.68% of the aggregate Offer Price payable for the Offer Shares (including any Shares to be issued pursuant to the Offer Size Adjustment Option)",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 348,
+   "quote": "up to an aggregate of 18,748,000 additional Placing Shares, representing approximately 15% of the Offer Shares initially available under the Share Offer",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Civil engineering contractor in Malaysia specialising in bridge engineering services as a subcontractor for large-scale transportation infrastructure engineering projects",
+   "page": 11,
+   "quote": "We are a civil engineering contractor in Malaysia with over 16 years of experience, specialising in providing bridge engineering services as a subcontractor",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Listing on GEM of the Stock Exchange by way of Share Offer (Public Offer and Placing)",
+   "page": 2,
+   "quote": "LISTING ON GEM OF THE STOCK EXCHANGE OF HONG KONG LIMITED BY WAY OF SHARE OFFER",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 376,
+   "quote": "the six-month ended 30 June 2025 (the “Track Record Period”)",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -3480000,
+   "page": 386,
+   "quote": "Net cash generated from/(used in) operating activities 8,543 49,507 18,335 (3,480)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 9086000,
+   "page": 388,
+   "quote": "Cash and cash equivalents at end of year/period (483) 15,328 1,422 9,086",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 0,
+   "page": 208,
+   "quote": "During the Track Record Period and as at the Latest Practicable Date, we did not engage in any research and development activity.",
+   "confidence": "medium"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 208,
+   "quote": "During the Track Record Period and as at the Latest Practicable Date, we did not engage in any research and development activity.",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 1.0,
+   "page": 168,
+   "quote": "our four largest customers in 6M2025 represented approximately 101.2%, 98.9% and 100.0% of our total revenue for FY2023, FY2024 and 6M2025",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "NA",
+   "page": null,
+   "quote": "No Chinese company name disclosed on cover, corporate information or definitions; searched.",
+   "confidence": "low"
+  },
+  "col_CJ": {
+   "value": "Mr. Choy Joo Seong; Mr. Tan Nam Joo",
+   "page": 259,
+   "quote": "with two cornerstone investors separately, namely Mr. Choy Joo Seong (“Mr. Choy”), and Mr. Tan Nam Joo (“Mr. Tan”)",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 0,
+   "page": 110,
+   "quote": "As a result, our Company is wholly-owned by BBSB Overseas.",
+   "confidence": "medium"
+  },
+  "col_vc_backed": {
+   "value": 0,
+   "page": 264,
+   "quote": "BBSB Overseas is a company incorporated in the BVI and is owned as to 70% by Datuk Tan and as to 30% by Datin Pan, respectively.",
+   "confidence": "medium"
+  },
+  "col_pe_backed": {
+   "value": 0,
+   "page": 109,
+   "quote": "of which seven and three shares were allotted and issued as fully paid to Datuk Tan and Datin Pan at par, respectively on 27 May 2025.",
+   "confidence": "medium"
+  },
+  "col_cvc_backed": {
+   "value": 0,
+   "page": 112,
+   "quote": "thereby maintaining its aggregate shareholding in our Company at a percentage of 75% of the enlarged issued share capital of our Company",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": 0,
+   "page": 108,
+   "quote": "As at 1 August 2008, BBSB Holdings was owned as to 70% by Datuk Tan and 30% by Datin Pan, respectively.",
+   "confidence": "medium"
+  },
+  "col_top_tier_vc": {
+   "value": 0,
+   "page": 264,
+   "quote": "BBSB Overseas (Note 2) Beneficial owner 1 Share (L) 100% 375,000,000 Shares (L) 75%",
+   "confidence": "medium"
+  },
+  "col_pre_ipo_investors": {
+   "value": "None",
+   "page": 110,
+   "quote": "Subsequently on the same date, the initial subscriber transferred the one Share to BBSB Overseas.",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": 0,
+   "page": 264,
+   "quote": "BBSB Overseas (Note 2) Beneficial owner 1 Share (L) 100% 375,000,000 Shares (L) 75%",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 0,
+   "page": 242,
+   "quote": "Our Board consists of six Directors, comprising three executive Directors and three independent non-executive Directors.",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "None",
+   "page": 110,
+   "quote": "Subsequently on the same date, the initial subscriber transferred the one Share to BBSB Overseas.",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No pre-IPO investment agreement disclosed, so no holding start date.",
+   "confidence": "low"
+  },
+  "col_BB": {
+   "value": "Family (Datuk Tan and spouse Datin Pan, via BBSB Overseas)",
+   "page": 264,
+   "quote": "Datin Pan is the spouse of Datuk Tan. By virtue of the SFO, Datin Pan is deemed to be interested in all the Shares held by Datuk Tan.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.75,
+   "page": 264,
+   "quote": "BBSB Overseas (Note 2) Beneficial owner 1 Share (L) 100% 375,000,000 Shares (L) 75%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.75,
+   "page": 264,
+   "quote": "BBSB Overseas (Note 2) Beneficial owner 1 Share (L) 100% 375,000,000 Shares (L) 75%",
+   "confidence": "medium"
+  },
+  "col_BE": {
+   "value": 6042000,
+   "page": 308,
+   "quote": "Borrowings, secured 10,126 3,695 2,812 2,607 Lease liabilities 1,897 2,933 3,230 2,652",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 22,
+   "quote": "We intend to apply such net proceeds from the Share Offer in the following manner in order to execute our business strategies",
+   "confidence": "medium"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares",
+   "page": 265,
+   "quote": "The Offer Shares will be ordinary shares of our Company and will rank pari passu in all respects",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "30/05/25",
+   "page": 483,
+   "quote": "Our Company was incorporated in the Cayman Islands under the Companies Act as an exempted company with limited liability on 30 May 2025",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Petaling Jaya, Malaysia",
+   "page": 70,
+   "quote": "Headquarters and principal place of business in Malaysia B-03-32, Block B Merchant Square No.1 Jalan Tropicana Selatan 1 PJU 3, 47410 Petaling Jaya Selangor Malaysia",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 390,
+   "quote": "The Historical Financial Information has been prepared in accordance with the IFRS Accounting Standards",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "31/12/25",
+   "page": 6,
+   "quote": "Public Offer commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Wednesday, 31 December 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "08/01/26",
+   "page": 6,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Thursday, 8 January 2026",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 500000000,
+   "page": 265,
+   "quote": "125,000,000 Shares to be issued under the Share Offer 1,250,000.00 500,000,000 Total 5,000,000.00",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 15806000,
+   "page": 380,
+   "quote": "Gross profit 10,990 25,664 10,594 15,806",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 113000,
+   "page": 387,
+   "quote": "Purchases of property, plant and equipment (390) (503) (385) (113)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 377,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 25300000,
+   "page": 23,
+   "quote": "are estimated to be approximately HK$25.3 million (equivalent to approximately RM13.7 million)",
+   "confidence": "high"
+  }
+ }
+}

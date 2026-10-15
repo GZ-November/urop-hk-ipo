@@ -39,11 +39,11 @@ paths:
   text: prospectus_pipeline/gem/data/text
   sections: prospectus_pipeline/gem/data/sections
   packets: prospectus_pipeline/gem/data/packets
-  out: prospectus_pipeline/gem/out
+  out: prospectus_pipeline/out/gem_2026q1
   allot_pdf: prospectus_pipeline/gem/data/allot/pdf
   allot_text: prospectus_pipeline/gem/data/allot/text
   allot_packets: prospectus_pipeline/gem/data/allot/packets
-  allot_out: prospectus_pipeline/gem/out/allot
+  allot_out: prospectus_pipeline/out/gem_2026q1/allot
 extract:
   allot_max_chars: 400000
   max_chars_per_group: 60000

@@ -1,0 +1,95 @@
+{
+ "code": "8610.HK",
+ "fields": {
+  "gem_eligibility_rule": {
+   "value": "NA",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_trading_record_years": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_operating_cash_flow": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_cash_flow_currency": {
+   "value": "NA",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_cash_flow_start": {
+   "value": "NA",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_cash_flow_end": {
+   "value": "NA",
+   "page": null,
+   "quote": "Prospectus does not state the GEM admission rule/route or eligibility measure; searched Rule 11/12 and cash flow terms.",
+   "confidence": "low"
+  },
+  "gem_rnd_ratio": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No alternative-route R&D ratio disclosed; issuer has no R&D activity.",
+   "confidence": "low"
+  },
+  "gem_market_cap_threshold": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No issuer-stated minimum market cap threshold disclosed.",
+   "confidence": "low"
+  },
+  "gem_public_float_threshold": {
+   "value": 0.25,
+   "page": 265,
+   "quote": "must maintain the minimum prescribed percentage of 25% of the total issued share capital of our Company (excluding treasury shares) in the hands of the public",
+   "confidence": "high"
+  },
+  "gem_public_float_waiver": {
+   "value": "NA",
+   "page": null,
+   "quote": "No public float waiver or exemption disclosed; directors confirm compliance with Rule 11.23 (absence of waiver not proven).",
+   "confidence": "low"
+  },
+  "gem_controller_lockup": {
+   "value": 6,
+   "page": 343,
+   "quote": "ending on the date which is six months from the Listing Date (the “First Six Months Period’’), dispose of, nor enter into any agreement to dispose of",
+   "confidence": "high"
+  },
+  "gem_compliance_adviser": {
+   "value": "Lego Corporate Finance Limited",
+   "page": 253,
+   "quote": "Our Company has appointed Lego Corporate Finance Limited as our compliance adviser pursuant to Rule 6A.19 of the GEM Listing Rules",
+   "confidence": "high"
+  },
+  "gem_compliance_adviser_end": {
+   "value": "NA",
+   "page": null,
+   "quote": "Term ends on distribution of annual report for first full financial year after Listing; no explicit end date.",
+   "confidence": "low"
+  },
+  "gem_offer_structure": {
+   "value": "Combined offering: Public Offer (12,500,000 Shares) and Placing (112,500,000 Shares)",
+   "page": 2,
+   "quote": "Number of Public Offer Shares : 12,500,000 Shares (subject to re-allocation) Number of Placing Shares : 112,500,000 Shares",
+   "confidence": "high"
+  },
+  "gem_board_lot": {
+   "value": 4000,
+   "page": 41,
+   "quote": "Our Shares will be traded in board lots of 4,000 Shares each.",
+   "confidence": "high"
+  }
+ }
+}
