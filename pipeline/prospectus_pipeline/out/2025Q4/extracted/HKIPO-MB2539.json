@@ -1,0 +1,425 @@
+{
+ "code": "2539.HK",
+ "fields": {
+  "col_L": {
+   "value": 55555600,
+   "page": 295,
+   "quote": "Unlisted Shares in issue 32,329,580 58.2% H Shares converted from Unlisted Shares 17,670,420 31.8% H Shares to be issued pursuant to the Global Offering 5,555,600 10.0% Total 55,555,600 100%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 5555600,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 5,555,600 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 50000000,
+   "page": 295,
+   "quote": "As of the Latest Practicable Date, the share capital of our Company was RMB50,000,000 comprising 50,000,000 Unlisted Shares with a nominal value of RMB1.0 each.",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 50000000,
+   "page": 295,
+   "quote": "As of the Latest Practicable Date, the share capital of our Company was RMB50,000,000 comprising 50,000,000 Unlisted Shares with a nominal value of RMB1.0 each.",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 295,
+   "quote": "Unlisted Shares in issue 32,329,580 58.2% H Shares converted from Unlisted Shares 17,670,420 31.8% H Shares to be issued pursuant to the Global Offering 5,555,600 10.0% Total 55,555,600 100%",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 5555600,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 5,555,600 H Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 5000000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 5,000,000 H Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 555600,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 555,600 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 5,555,600 H Shares",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 23226020,
+   "page": 295,
+   "quote": "our Company would have 32,329,580 Unlisted Shares and 23,226,020 H Shares",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 40.0,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$40.0 per H Share plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 27.0,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$40.0 per H Share and is currently expected to be not less than HK$27.0",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 450,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”), rounded to the nearest thousand (“RMB’000”), unless otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 405814000,
+   "page": 440,
+   "quote": "Other non-current assets 14 4,661 5,554 11,108 11,615 101,986 205,152 269,954 243,741 Current assets",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 472690000,
+   "page": 440,
+   "quote": "101,986 205,152 269,954 243,741 Current assets Financial assets measured at fair value through profit or loss 15 20,519 15,751 – 60,097 Inventories 16 5,411 6,198 5,571 9,638",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 549928000,
+   "page": 440,
+   "quote": "Inventories 16 5,411 6,198 5,571 9,638 Trade and other receivables 17 46,905 63,594 75,463 88,844 Prepayments 17 39,457 76,228 99,838 100,914 155,503 200,662 202,736 306,187",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 151885000,
+   "page": 440,
+   "quote": "NET ASSETS 77,266 151,885 240,023 331,395 CAPITAL AND RESERVES",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 240023000,
+   "page": 440,
+   "quote": "NET ASSETS 77,266 151,885 240,023 331,395 CAPITAL AND RESERVES Paid-in capital/share capital 28(c) 11,844 10,954 50,000 50,000 Reserves 65,422 140,931 190,023 281,395",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 331395000,
+   "page": 440,
+   "quote": "Reserves 65,422 140,931 190,023 281,395 TOTAL EQUITY ATTRIBUTABLE TO EQUITY SHAREHOLDERS OF THE COMPANY AND TOTAL EQUITY 77,266 151,885 240,023 331,395",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 253929000,
+   "page": 440,
+   "quote": "Bank loans 22 – 13,697 11,398 – Lease liabilities 23 6,796 7,728 2,919 1,807 6,796 21,425 14,317 1,807 NET ASSETS 77,266 151,885 240,023 331,395",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 232667000,
+   "page": 440,
+   "quote": "173,427 232,504 218,350 216,726 Bank loans 22 – 13,697 11,398 – Lease liabilities 23 6,796 7,728 2,919 1,807 6,796 21,425 14,317 1,807 NET ASSETS 77,266 151,885 240,023 331,395",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 218533000,
+   "page": 440,
+   "quote": "173,427 232,504 218,350 216,726 Bank loans 22 – 13,697 11,398 – Lease liabilities 23 6,796 7,728 2,919 1,807 6,796 21,425 14,317 1,807 NET ASSETS 77,266 151,885 240,023 331,395",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 586836000,
+   "page": 21,
+   "quote": "Revenue 330,154 586,836 797,991 554,254 630,732 Cost of sales (244,819) (341,591) (510,192) (326,330) (400,000) Gross profit 85,335 245,245 287,799 227,924 230,732",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 797991000,
+   "page": 21,
+   "quote": "Revenue 330,154 586,836 797,991 554,254 630,732 Cost of sales (244,819) (341,591) (510,192) (326,330) (400,000) Gross profit 85,335 245,245 287,799 227,924 230,732",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 946098000,
+   "page": 21,
+   "quote": "Revenue 330,154 586,836 797,991 554,254 630,732 Cost of sales (244,819) (341,591) (510,192) (326,330) (400,000) Gross profit 85,335 245,245 287,799 227,924 230,732",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 103214000,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 102304000,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 158446500,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 87340000,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 85807000,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 132825000,
+   "page": 22,
+   "quote": "Profit before taxation 9,765 103,214 102,304 111,837 105,631 Income tax (3,284) (15,874) (16,497) (17,956) (17,081) Profit for the year/period 6,481 87,340 85,807 93,881 88,550",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 403,
+   "quote": "receive an underwriting commission (the “Fixed Fees”) equals to 2.5% of the aggregate sale proceeds from the Global Offering (the “Gross Proceeds”).",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 403,
+   "quote": "For unsubscribed Hong Kong Offer Shares reallocated to the International Offering, our Company will pay an underwriting commission at the rate applicable to the International Offering",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": "NaN",
+   "page": 404,
+   "quote": "No stabilizing manager will be appointed, and it is anticipated that no stabilization activities will be carried out in relation to the Global Offering.",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Mechanical massage service (provision of massage services performed by mechanical massage equipment at points of service in public venues)",
+   "page": 163,
+   "quote": "We provide massage services performed by our mechanical massage equipment stationed at various points of service in public venues of high foot traffic across China.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange (H-share listing by a PRC joint stock company; Listing Rules Chapter 19A applies, incl. Rule 19A.13A/19A.13C)",
+   "page": 78,
+   "quote": "Pursuant to Rule 8.12 and Rule 19A.15 of the Listing Rules, we must have a sufficient management presence in Hong Kong.",
+   "confidence": "medium"
+  },
+  "col_BF": {
+   "value": "规模商业化",
+   "page": 18,
+   "quote": "LMB Links, built upon years of experience, serves as a foundation for our large-scale operation of POS and the efficient maintenance of equipment",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 388,
+   "quote": "will be allocated to expanding the coverage and penetration of our POS network.",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/08/25",
+   "page": 300,
+   "quote": "as of and for the years ended 31 December 2022, 2023 and 2024 and as of and for the eight months ended 31 August 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 190454000,
+   "page": 447,
+   "quote": "Net cash generated from operating activities 83,312 164,280 192,443 174,722 190,454",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 46694000,
+   "page": 448,
+   "quote": "Cash and cash equivalents at the end of the year/period 18(a) 43,211 38,891 19,684 53,233 46,694",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 14885000,
+   "page": 331,
+   "quote": "2024, and the eight months ended 31 August 2024 and 2025, our research and development expenses amounted to RMB8.33 million, RMB16.19 million, RMB21.50 million, RMB13.98 million and RMB14.89 million",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": 307,
+   "quote": "Hence both research costs and development costs are generally recognised as expenses in the period in which they are incurred.",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.067,
+   "page": 19,
+   "quote": "respectively, accounting for 7.6%, 5.9%, 6.1% and 6.7% of our total revenue for the same year/period, respectively.",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "乐摩科技服务股份有限公司",
+   "page": 2,
+   "quote": "Lemo Services Co., Ltd 樂摩科技服務股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": 152,
+   "quote": "The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors:",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 152,
+   "quote": "Our Company received investments from several Pre-IPO Investors. The following table summarizes the key terms of the Pre-IPO Investments to our Company made by the Pre-IPO Investors:",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": 156,
+   "quote": "Not determinable: Pre-IPO Investors are six individual entrepreneurs plus two PRC partnerships (Cornerstone Yixiang: equity investment; Shanghai Qimai: consulting). No early-stage VC fund disclosed.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 157,
+   "quote": "Cornerstone Yixiang is a limited partnership established under the laws of the PRC on 12 May 2016, which is principally engaged in equity investment.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": 156,
+   "quote": "Not determinable: no corporate/strategic investor with a disclosed strategic or corporate-venture relationship is identified among the Pre-IPO Investors, so NaN.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": 157,
+   "quote": "Not determinable: no state or government-guided fund is disclosed among the Pre-IPO Investors (Cornerstone Yixiang is ultimately controlled by Mr. Zhang Wei, an independent third party), so NaN.",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": 156,
+   "quote": "Not determinable: the prospectus does not identify any top-tier venture capital or private equity institution as a Pre-IPO Investor of our Company, so NaN.",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Pan Jianzhong; Li Bin; Cornerstone Yixiang; Shanghai Qimai; Wang Zhenghua; Dai Chusheng; Fang Xin; Chen Guohai",
+   "page": 29,
+   "quote": "Pre-IPO Investments in our Company were undertaken by each of Pan Jianzhong, Li Bin, Cornerstone Yixiang, Shanghai Qimai, Wang Zhenghua, Dai Chusheng, Fang Xin, Chen Guohai as our Pre-IPO Investors.",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.047,
+   "page": 147,
+   "quote": "Cornerstone Yixiang 1,304,123 2.6 11 Lemo Gongying Platform 1,153,620 2.3 12 Shanghai Qimai 1,030,000 2.1",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": 286,
+   "quote": "Not determinable: no non-executive directorship or observer seat is linked to a Pre-IPO institutional investor; Mr. Han Daohu and Mr. Wu Jinghua, non-executive Directors, are not Pre-IPO Investors.",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Pre-IPO Investment (first round, registration completed 8 May 2017)",
+   "page": 152,
+   "quote": "Date of investment(s) 8 May 2017(2) 8 May 2017; 1 November 2017(3) 14 December 2017 25 September 2024",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": 8.55,
+   "page": 152,
+   "quote": "Date of investment(s) 8 May 2017(2) 8 May 2017; 1 November 2017(3) 14 December 2017 25 September 2024",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural person (Mr. Xie Zhonghui, Controlling Shareholder; no single ultimate controller disclosed beyond the controlling shareholder group)",
+   "page": 29,
+   "quote": "Mr. Xie, directly and indirectly (through Zhangchuang Gongying Platform, Lemo Gongchuang Platform and Lemo Gongying Platform as their general partner), will be entitled to exercise the voting rights",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.189,
+   "page": 159,
+   "quote": "Mr. Xie  10,487,769 1,048,777 9,438,992 21.0 18.9 1.9 No",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.31,
+   "page": 29,
+   "quote": "will be entitled to exercise the voting rights attaching to approximately 31.0% of the issued share capital of our Company",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "29/05/14",
+   "page": 544,
+   "quote": "Our Company was established as a limited liability company in the PRC on 29 May 2014 and was converted into a joint stock limited company on 29 August 2024",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Fuzhou, Fujian, PRC",
+   "page": 98,
+   "quote": "Head Office and Principal Place of Business in PRC 21F, Building B, Wangxun Smart Center 11 Keji East Road High-Tech Zone Fuzhou, Fujian PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 450,
+   "quote": "The Historical Financial Information has been prepared in accordance with all applicable IFRS Accounting Standards as issued by the International Accounting Standards Board (“IASB”).",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "25/11/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, 25 November 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "28/11/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Friday, 28 November 2025",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 60217000,
+   "page": 367,
+   "quote": "Total 104,811 88,285 63,875 60,217 59,615",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 230732000,
+   "page": 21,
+   "quote": "Gross profit 85,335 245,245 287,799 227,924 230,732",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 105660000,
+   "page": 447,
+   "quote": "Payment for purchase of property, plant and equipment and intangible assets (46,272) (134,626) (175,693) (121,562) (105,660)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion (true and fair view)",
+   "page": 435,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 38800000,
+   "page": 403,
+   "quote": "payable by our Company relating to the Global Offering are estimated to be approximately HK$38.80 million in total and will be paid by our Company.",
+   "confidence": "high"
+  }
+ }
+}

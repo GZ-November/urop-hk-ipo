@@ -1,0 +1,122 @@
+{
+  "code": "2026.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.139,
+      "page": 11,
+      "quote": "Total\n6,707,000\n1.90%\n1.55%",
+      "confidence": "high",
+      "note": "Derived: cornerstone Total row 6,707,000 Offer Shares (p.11) / base offer col_CS 48,249,000 = 13.90% of base offer; announcement gives no direct % of base offer"
+    },
+    "col_CM": {
+      "value": 15.88,
+      "page": 6,
+      "quote": "Subscription level\n15.88 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 37062,
+      "page": 6,
+      "quote": "No. of valid applications\n37,062",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 66637000,
+      "page": 13,
+      "quote": "Total\n36,619",
+      "confidence": "high",
+      "source": "derived",
+      "note": "Derived: sum of the NO. OF SHARES APPLIED FOR column over Pool A (36,619 applications, p.13) and Pool B (443 applications, p.14) = 66,637,000 applied shares; cross-checks with col_CT 4,195,600 x 15.88 = 66.6m"
+    },
+    "col_CP": {
+      "value": "Subscription level\n15.88 times",
+      "page": 6,
+      "quote": "Subscription level\n15.88 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "04/11/25",
+      "page": 5,
+      "quote": "Expected Price Determination Date(5)\n. . . . . . . . . . . . . . . . . . . .Tuesday, November 4, 2025",
+      "confidence": "medium",
+      "source": "prospectus"
+    },
+    "col_CR": {
+      "value": "05/11/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**05/11/2025 22:10**  ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 48249000,
+      "page": 4,
+      "quote": "Number of Offer Shares (taking into account the full exercise \nof the Offer Size Adjustment Option)\n48,249,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4195600,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering\n4,195,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 44053400,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in International Offering \n(taking into account the full exercise of the Offer Size \nAdjustment Option)\n44,053,400",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（03/12/2025 20:00）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered\nN/A",
+      "page": 6,
+      "quote": "Claw-back triggered\nN/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 6454360000,
+      "page": 5,
+      "quote": "Net proceeds\nHK$6,454.36 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.9871,
+      "page": 18,
+      "quote": "the total number of the Class A Ordinary Shares held by the public represents \napproximately 98.71% of the total issued Class A Ordinary Shares of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 433541553,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n433,541,553",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0958,
+      "page": null,
+      "quote": "公式：(col_CS 48,249,000 − col_CK 0.1390×col_CS) ÷ col_CZ 433,541,553 = 0.0958；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": 11,
+      "quote": "Total\n6,707,000\n1.90%\n1.55%",
+      "confidence": "high",
+      "source": "da_formula"
+    },
+    "col_DC": {
+      "value": 433541553,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing (before exercise of the \nOver-allotment Option)\n433,541,553",
+      "confidence": "high",
+      "note": "Derived denominator: free-float base = total issued Shares upon Listing (before exercise of the Over-allotment Option) = col_CZ; value 433,541,553 taken verbatim from the cited line"
+    }
+  }
+}

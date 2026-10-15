@@ -1,0 +1,425 @@
+{
+  "code": "2530.HK",
+  "fields": {
+    "col_L": {
+      "value": 1000000000,
+      "page": 317,
+      "quote": "749,999,800 Shares to be issued pursuant to the Capitalisation Issue 749,999.8 250,000,000 Shares to be issued pursuant to the Global Offering 250,000 1,000,000,000 Total 1,000,000",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 250000000,
+      "page": 317,
+      "quote": "250,000,000 Shares to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 750000000,
+      "page": 321,
+      "quote": "Mr. Wang Interest in controlled corporation 200 100% 750,000,000 75%",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 750000000,
+      "page": 321,
+      "quote": "Mr. Wang Interest in controlled corporation 200 100% 750,000,000 75%",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 317,
+      "quote": "250,000,000 Shares to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 250000000,
+      "page": 317,
+      "quote": "250,000,000 Shares to be issued pursuant to the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 225000000,
+      "page": 2,
+      "quote": "Number of International Placing Shares: 225,000,000 Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 25000000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares: 25,000,000 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "ordinary shares",
+      "page": 320,
+      "quote": "Our Company has only one class of shares, namely ordinary Shares, each of which ranks pari passu with the other Shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": "NaN",
+      "page": null,
+      "quote": "Cayman Islands holding company with a single class of ordinary shares; no H-share structure, so 'H shares after IPO' not applicable (total shares after IPO = 1,000,000,000)",
+      "confidence": "medium"
+    },
+    "col_T": {
+      "value": 1.09,
+      "page": 2,
+      "quote": "Offer Price: Not more than HK$1.09 per Offer Share and expected to be not less than HK$0.80 per Offer Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 0.8,
+      "page": 2,
+      "quote": "Offer Price: Not more than HK$1.09 per Offer Share and expected to be not less than HK$0.80 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2024-12-30",
+      "page": 6,
+      "quote": "Hong Kong Public Offering commences 9:00 a.m. on Monday, 30 December 2024",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2025-01-07",
+      "page": 6,
+      "quote": "Application lists of the Hong Kong Public Offering close(Note 3) 12:00 noon on Tuesday, 7 January 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "纽曼思健康食品控股有限公司",
+      "page": 1,
+      "quote": "Numans Health Food Holdings Company Limited 紐曼思健康食品控股有限公司 (Incorporated in the Cayman Islands with limited liability)",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 457,
+      "quote": "The Historical Financial Information is presented in Renminbi (''RMB''), and all values are rounded to the nearest thousand (RMB'000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 403581000,
+      "page": 459,
+      "quote": "9,045 39,979 30,776 31,054",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 470017000,
+      "page": 459,
+      "quote": "279,767 363,602 439,241 471,792",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 502846000,
+      "page": 459,
+      "quote": "279,767 363,602 439,241 471,792",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 247240000,
+      "page": 459,
+      "quote": "TOTAL EQUITY 202,524 247,240 410,076 458,206",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 410076000,
+      "page": 459,
+      "quote": "TOTAL EQUITY 202,524 247,240 410,076 458,206",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 458206000,
+      "page": 459,
+      "quote": "TOTAL EQUITY 202,524 247,240 410,076 458,206",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 156341000,
+      "page": 459,
+      "quote": "86,088 151,678 56,516 41,616",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 59941000,
+      "page": 459,
+      "quote": "86,088 151,678 56,516 41,616",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 44640000,
+      "page": 459,
+      "quote": "86,088 151,678 56,516 41,616",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 367297000,
+      "page": 458,
+      "quote": "Revenue 5 337,608 367,297 426,545 192,076 146,086",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 426545000,
+      "page": 458,
+      "quote": "Revenue 5 337,608 367,297 426,545 192,076 146,086",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 292172000,
+      "page": 458,
+      "quote": "Revenue 5 337,608 367,297 426,545 192,076 146,086",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 98413000,
+      "page": 458,
+      "quote": "Profit before tax 7 154,125 98,413 194,621 91,181 51,699",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 194621000,
+      "page": 458,
+      "quote": "Profit before tax 7 154,125 98,413 194,621 91,181 51,699",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 103398000,
+      "page": 458,
+      "quote": "Profit before tax 7 154,125 98,413 194,621 91,181 51,699",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 87522000,
+      "page": 458,
+      "quote": "Profit for the year/period 119,670 87,522 159,344 77,258 45,281",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 159344000,
+      "page": 458,
+      "quote": "Profit for the year/period 119,670 87,522 159,344 77,258 45,281",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 90562000,
+      "page": 458,
+      "quote": "Profit for the year/period 119,670 87,522 159,344 77,258 45,281",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 6041000,
+      "page": 402,
+      "quote": "Total lease liabilities 1,227 7,446 5,830 6,041 4,700",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 457,
+      "quote": "prepared in accordance with the accounting policies that conform with Hong Kong Financial Reporting Standards (''HKFRSs'') issued by the HKICPA",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 104963000,
+      "page": 458,
+      "quote": "Gross profit 246,598 273,190 320,867 145,554 104,963",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 1095000,
+      "page": 465,
+      "quote": "Payment for purchase of property, plant and equipment (996) (1,196) (205) (193) (1,095)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "unqualified",
+      "page": 455,
+      "quote": "a true and fair view of the financial position of the Group and the Company at 31 December 2021, 2022 and 2023 and 30 June 2024",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/06/24",
+      "page": 459,
+      "quote": "At 30 June 2021 2022 2023 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 32193000,
+      "page": 464,
+      "quote": "Net cash from operating activities 93,994 44,309 150,568 69,497 32,193",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 295607000,
+      "page": 465,
+      "quote": "cash on hand, at banks and assets with similar nature as cash 152,656 192,838 262,560 263,038 295,607",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 0,
+      "page": 254,
+      "quote": "As we source finished products from our product suppliers, we did not incur any material research and development expenses during the Track Record Period.",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 459,
+      "quote": "Intangible assets 13 — 4,100 4,100 4,100",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.744,
+      "page": 211,
+      "quote": "our revenue from our five largest customers for each year/period during the Track Record Period accounted for approximately 64.2%, 68.3%, 65.6% and 74.4% of our total revenue",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 148,
+      "quote": "No key pre-IPO external investors; all pre-Global Offering shares (200 shares) held by Far-East Fortune, owned 91% by Mr. Wang and 9% by Ms. Cui",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "No pre-IPO institutional (VC/PE) shareholding existed; institutional stake not applicable",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 321,
+      "quote": "Far-East Fortune is owned as to 91% by Mr. Wang, our executive Director, Chairman and Chief Executive Officer, and 9% by Ms. Cui, our executive Director and spouse of Mr. Wang",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": 148,
+      "quote": "No external pre-IPO investment round occurred; shares were issued/transferred only among founder and family members",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "No external pre-IPO institutional investor, holding duration not applicable",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "individual",
+      "page": 466,
+      "quote": "In the opinion of the directors of the Company, the ultimate controlling party is Mr. Wang Ping (the ''Ultimate Controlling Party'').",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.75,
+      "page": 321,
+      "quote": "Mr. Wang Interest in controlled corporation 200 100% 750,000,000 75%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.75,
+      "page": 321,
+      "quote": "Mr. Wang Interest in controlled corporation 200 100% 750,000,000 75%",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2019-01-21",
+      "page": 151,
+      "quote": "Our Company is an exempted company incorporated in the Cayman Islands with limited liability on 21 January 2019",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Hong Kong",
+      "page": 466,
+      "quote": "The Company's principal place of business is situated at 2408, World-wide House, 19 Des Voeux Road Central, Central, Hong Kong",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Marketing, sales and distribution of finished nutritional products in the PRC (algal oil DHA, probiotics, vitamins, multi-nutrients and algal calcium products)",
+      "page": 11,
+      "quote": "We are principally engaged in the marketing, sales and distribution of finished nutritional products in the PRC.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 41,
+      "quote": "the listing of the Shares on the Main Board",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": null,
+      "quote": "Not a Chapter 18C specialist technology company; technology commercialization stage not applicable",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 31,
+      "quote": "We intend to apply the net proceeds as follows: (i) approximately 63.5% or HK$99.3 million will be used to increase our marketing efforts",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.035,
+      "page": 423,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.035,
+      "page": 423,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 423,
+      "quote": "issue and allot up to an aggregate of 37,496,000 additional Offer Shares, representing approximately 15% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 81200000,
+      "page": 30,
+      "quote": "The total amount of Listing expenses in connection with the Global Offering, including underwriting commissions, is estimated to be approximately RMB75.2 million",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": null,
+      "quote": "No Cornerstone Investors / Cornerstone Placing agreements disclosed in the prospectus (search for 'cornerstone' returns no matches)",
+      "confidence": "high"
+    }
+  }
+}

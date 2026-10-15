@@ -1,0 +1,118 @@
+{
+  "code": "2581.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4963,
+      "page": 5,
+      "confidence": "high",
+      "quote": "Total\n33,252,000\n49.63%"
+    },
+    "col_CM": {
+      "value": 6.28,
+      "page": 4,
+      "confidence": "high",
+      "quote": "Subscription level\n6.28 times"
+    },
+    "col_CN": {
+      "value": 9291,
+      "page": 4,
+      "confidence": "high",
+      "quote": "No. of valid applications\n9,291"
+    },
+    "col_CO": {
+      "value": 42059500,
+      "page": 9,
+      "confidence": "high",
+      "quote": "a total of 9,291 valid \napplications made by the public will be conditionally allocated on the basis set out below:\nNO. OF \nSHARES\nAPPLIED FOR\nNO. OF \nVALID\nAPPLICATIONS",
+      "note": "derived: the 'NO. OF SHARES APPLIED FOR' column of the BASIS OF ALLOCATION tables (pages 9-10) gives the PER-APPLICATION tier amount, not a tier total (row '500 / 6,679 / 3,340 out of 6,679 to receive 500 Shares / 50.01%': 500 Shares per application, 3,340/6,679 = 50.01% = application success rate). Total shares applied for = SUM(tier size x NO. OF VALID APPLICATIONS) = Pool A 26,609,500 + Pool B 15,450,000 = 42,059,500. Checks: (a) that equals 6.2775 times the 6,700,000 final Hong Kong Offer Shares, matching the disclosed 'Subscription level 6.28 times' (page 4); (b) the same tier table's allotments sum to 3,350,000 (Pool A) + 3,350,000 (Pool B) = 6,700,000 = the final Hong Kong Offer Shares, so the tier table is complete and internally consistent; (c) summing the tier amounts alone (52,093,400) reproduces neither."
+    },
+    "col_CP": {
+      "value": "Subscription level 6.28 times",
+      "page": 4,
+      "confidence": "high",
+      "quote": "Subscription level\n6.28 times"
+    },
+    "col_CQ": {
+      "value": "18/12/25",
+      "page": 7,
+      "quote": "The Price Determination Date is expected to be on or before Thursday, December 18, 2025.",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "19/12/2025",
+      "page": 1,
+      "confidence": "high",
+      "quote": "刊发时间（港交所元数据）：**19/12/2025 21:24**"
+    },
+    "col_CS": {
+      "value": 67000000,
+      "page": 2,
+      "confidence": "high",
+      "quote": "Number of Offer Shares under the \nGlobal Offering\n:\n67,000,000 Shares\nNumber of Hong Kong Offer Shares\n:\n6,700,000 Shares\nNumber of International Offer Shares\n:\n60,300,000 Shares"
+    },
+    "col_CT": {
+      "value": 6700000,
+      "page": 3,
+      "confidence": "high",
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering\n6,700,000"
+    },
+    "col_CU": {
+      "value": 60300000,
+      "page": 3,
+      "confidence": "high",
+      "quote": "Final Number of Offer Shares in International Offering\n60,300,000"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-12-22 起 45 天内共 4 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-02-05 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: N/A (no reallocation of Offer Shares between the International Offering and the Hong Kong Public Offering)",
+      "page": 4,
+      "confidence": "high",
+      "quote": "Claw-back triggered\nN/A"
+    },
+    "col_CX": {
+      "value": 554500000,
+      "page": 3,
+      "confidence": "high",
+      "quote": "Net proceeds\nHK$554.5 million"
+    },
+    "col_CY": {
+      "value": 0.2514,
+      "page": 11,
+      "confidence": "high",
+      "quote": "Immediately following the completion of the Global Offering (assuming the options granted under \nthe Pre-IPO Share Option Plan are not exercised), 78,438,164 Shares, representing approximately \n25.14%"
+    },
+    "col_CZ": {
+      "value": 311945001,
+      "page": 3,
+      "confidence": "high",
+      "quote": "Number of issued shares upon Listing\n311,945,001"
+    },
+    "col_DA": {
+      "value": 0.1082,
+      "page": null,
+      "quote": "公式：(col_CS 67,000,000 − col_CK 0.4963×col_CS) ÷ col_CZ 311,945,001 = 0.1082；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (311,945,001 Shares); numerator = Offer Shares minus cornerstone allocation",
+      "page": 11,
+      "confidence": "high",
+      "quote": "Shares held by the Cornerstone Investors upon the Listing shall not be \ncounted towards the free float of the Shares"
+    },
+    "col_DC": {
+      "value": 311945001,
+      "page": 3,
+      "quote": "公式：(col_CS 67,000,000 − col_CK 0.4963×col_CS) ÷ col_CZ 311,945,001 = 0.1082；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

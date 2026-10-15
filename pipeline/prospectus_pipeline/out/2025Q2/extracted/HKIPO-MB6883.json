@@ -1,0 +1,425 @@
+{
+  "code": "6883.HK",
+  "fields": {
+    "col_L": {
+      "value": 1333400000,
+      "page": 330,
+      "quote": "333,400,000 Shares to be issued under the Global Offering 333,400 25.00 1,333,400,000 Shares in total 1,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 333400000,
+      "page": 330,
+      "quote": "333,400,000 Shares to be issued under the Global Offering 333,400 25.00",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1000000000,
+      "page": 329,
+      "quote": "Eternal International Beneficial owner 1,000,000,000 75.00% Mr. Lau Interest in controlled corporation(3)(4) 1,000,000,000 75.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1000000000,
+      "page": 329,
+      "quote": "Eternal International Beneficial owner 1,000,000,000 75.00% Mr. Lau Interest in controlled corporation(3)(4) 1,000,000,000 75.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 330,
+      "quote": "333,400,000 Shares to be issued under the Global Offering 333,400 25.00 1,333,400,000 Shares in total 1,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 333400000,
+      "page": 330,
+      "quote": "333,400,000 Shares to be issued under the Global Offering 333,400 25.00",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 300060000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 300,060,000 Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 33340000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 33,340,000 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary shares",
+      "page": 51,
+      "quote": "“Share(s)” ordinary share(s) with a nominal value of HK$0.001 each in the share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 1333400000,
+      "page": 330,
+      "quote": "1,333,400,000 Shares in total 1,333,400 100.00",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 3.38,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$3.38 per Offer Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 2.8,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$3.38 per Offer Share and is currently expected to be not less than HK$2.80 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "18/06/2025",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Wednesday, June 18, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "23/06/2025",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . . . . . . . . . . .12:00 noon on Monday, June 23, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "颖通控股有限公司",
+      "page": 1,
+      "quote": "穎通控股有限公司 Eternal Beauty Holdings Limited",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 340,
+      "quote": "The Historical Financial Information is presented in RMB and all values are rounded to the nearest thousand",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1094599000,
+      "page": 29,
+      "quote": "Total assets 1,094,599 1,033,396 1,211,111",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1033396000,
+      "page": 29,
+      "quote": "Total assets 1,094,599 1,033,396 1,211,111",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1211111000,
+      "page": 29,
+      "quote": "Total assets 1,094,599 1,033,396 1,211,111",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 535398000,
+      "page": 467,
+      "quote": "Total equity 535,398 458,545 690,990",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 458545000,
+      "page": 467,
+      "quote": "Total equity 535,398 458,545 690,990",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 690990000,
+      "page": 467,
+      "quote": "Total equity 535,398 458,545 690,990",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 559201000,
+      "page": 29,
+      "quote": "Total liabilities 559,201 574,851 520,121",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 574851000,
+      "page": 29,
+      "quote": "Total liabilities 559,201 574,851 520,121",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 520121000,
+      "page": 29,
+      "quote": "Total liabilities 559,201 574,851 520,121",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 1699144000,
+      "page": 466,
+      "quote": "Revenue 5 1,699,144 1,863,761 2,083,363",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 1863761000,
+      "page": 466,
+      "quote": "Revenue 5 1,699,144 1,863,761 2,083,363",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 2083363000,
+      "page": 466,
+      "quote": "Revenue 5 1,699,144 1,863,761 2,083,363",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 226935000,
+      "page": 466,
+      "quote": "Profit before income tax 226,935 232,617 260,696",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 232617000,
+      "page": 466,
+      "quote": "Profit before income tax 226,935 232,617 260,696",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 260696000,
+      "page": 466,
+      "quote": "Profit before income tax 226,935 232,617 260,696",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 173106000,
+      "page": 466,
+      "quote": "Income tax expense 12 (53,829) (26,144) (33,667) Profit for the year 173,106 206,473 227,029",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 206473000,
+      "page": 466,
+      "quote": "Income tax expense 12 (53,829) (26,144) (33,667) Profit for the year 173,106 206,473 227,029",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 227029000,
+      "page": 466,
+      "quote": "Income tax expense 12 (53,829) (26,144) (33,667) Profit for the year 173,106 206,473 227,029",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 112106000,
+      "page": 485,
+      "quote": "Bank borrowings 30 – – 33,183 Lease liabilities 19(b) 73,005 85,594 78,923",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 477,
+      "quote": "The Historical Financial Information have been prepared in accordance with HKFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1048117000,
+      "page": 466,
+      "quote": "Gross profit 855,991 938,191 1,048,117",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 33600000,
+      "page": 392,
+      "quote": "Our capital expenditures amounted to RMB13.2 million, RMB28.9 million and RMB33.6 million for the years ended March 31, 2023, 2024 and 2025, respectively",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 463,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the financial position",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/03/2025",
+      "page": 467,
+      "quote": "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION As at 31 March Notes 2023 2024 2025",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 236703000,
+      "page": 471,
+      "quote": "Net cash generated from operating activities 210,131 161,472 236,703",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 255998000,
+      "page": 472,
+      "quote": "Cash and cash equivalents at end of the year 23 320,462 150,929 255,998",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": 491,
+      "quote": "Total cost of sales, selling and marketing expenses and administrative expenses 1,470,627 1,642,809 1,836,020",
+      "confidence": "low"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 385,
+      "quote": "Our intangible assets primarily consist of club membership and computer software. The following table sets forth the breakdown of our intangible assets as of the dates indicated:",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.249,
+      "page": 25,
+      "quote": "RMB364.2 million and RMB518.2 million, accounting for approximately 21.9%, 19.5% and 24.9% of our total revenue",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 179,
+      "quote": "Mr. Lau 90% Mrs. Lau 10% Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100%",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 179,
+      "quote": "Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": 179,
+      "quote": "Mr. Lau 90% Mrs. Lau 10% Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100%",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 179,
+      "quote": "Mr. Lau 90% Mrs. Lau 10% Eternal International (BVI) Public Shareholders Our Company (Cayman Islands) 75% 25% 100% 100%",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "Individual",
+      "page": 473,
+      "quote": "The ultimate controlling shareholder of the Company as at the date of this report is Mr. Lau Kui Wing (“Mr. Lau”) and Ms. Chan Wai Chun (“Mrs. Lau”)",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.75,
+      "page": 329,
+      "quote": "Eternal International Beneficial owner 1,000,000,000 75.00%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.75,
+      "page": 329,
+      "quote": "Mr. Lau Interest in controlled corporation(3)(4) 1,000,000,000 75.00%",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "09/01/2024",
+      "page": 168,
+      "quote": "Our Company was incorporated in the Cayman Islands under the Companies Act as an exempted company with limited liability on January 9, 2024",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "22/F, Enterprise Square Two, No. 3 Sheung Yuet Road, Kowloon, Hong Kong",
+      "page": 109,
+      "quote": "Headquarter and Principal Place of Business in Hong Kong 22/F, Enterprise Square Two No. 3 Sheung Yuet Road Kowloon Hong Kong",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Distribution and market deployment of perfumes, skincare, color cosmetics, personal care products, eyewear and home fragrances in China (including Hong Kong and Macau)",
+      "page": 473,
+      "quote": "are principally engaged in retail, wholesale and distribution of perfumes, skincare products, color cosmetics, personal care products, eyewear and home fragrances",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 415,
+      "quote": "additional Shares that may be issued pursuant to the exercise of the Over-allotment Option) on the Main Board of the Stock Exchange",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": 11,
+      "quote": "we primarily engage in (i) sales and distribution of products procured from third party brand licensors, from which we generate our revenue",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 406,
+      "quote": "Approximately 10.0%, or HK$95.0 million Working capital and general corporate purposes to support our business operation and growth.",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.025,
+      "page": 427,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.025,
+      "page": 427,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 2.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 427,
+      "quote": "up to an aggregate of 50,010,000 additional Offer Shares, representing not more than 15% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 79800000,
+      "page": 427,
+      "quote": "professional fees and printing and other expenses payable by our Company in relation to the Global Offering are estimated to be approximately HK$79.8 million",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 414,
+      "quote": "The Global Offering comprises the Hong Kong Public Offering of initially 33,340,000 Hong Kong Offer Shares and the International Offering of initially 300,060,000 International",
+      "confidence": "medium"
+    }
+  }
+}

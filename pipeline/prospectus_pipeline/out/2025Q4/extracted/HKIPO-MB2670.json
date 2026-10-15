@@ -1,0 +1,434 @@
+{
+ "code": "2670.HK",
+ "fields": {
+  "col_L": {
+   "value": 68718182,
+   "page": 409,
+   "quote": "5% H Shares to be issued pursuant to the Global Offering 6,900,000 10.04% Total 68,718,182",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 6900000,
+   "page": 2,
+   "quote": "ina) GLOBAL OFFERING Number of Offer Shares under the Global Offering : 6,900,000 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 61818182,
+   "page": 409,
+   "quote": "As of the Latest Practicable Date, the registered capital of our Company was RMB61,818,182",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 61818182,
+   "page": 409,
+   "quote": "OUR SHARE CAPITAL Immediately before the Global Offering As of the Latest Practicable Date",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 668,
+   "quote": "consisting of 7,153,544 Unlisted Shares and 61,564,638 H Shares, which represent approximately 10.41% and 89.59% of our total issued share capital",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 6900000,
+   "page": 514,
+   "quote": "nt Option): (i) the Hong Kong Public Offering of 345,000 H Shares (subject to reallocation",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 6555000,
+   "page": 2,
+   "quote": "r Shares : 345,000 H Shares (subject to reallocation) Number of International Offer Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 345000,
+   "page": 2,
+   "quote": "ment Option) Number of Hong Kong Offer Shares : 345,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 95.6,
+   "page": 2,
+   "quote": "00 H Shares (subject to reallocation and the Over-allotment Option) Offer Price : HK$95.60",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 95.6,
+   "page": 2,
+   "quote": "red to above. The Offer Price will be HK$95.60 per Offer Share, unless otherwise announced",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 554,
+   "quote": "ion on a going concern basis. The Company and the Group has its functional currency in RMB",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 647362000,
+   "page": 25,
+   "quote": "Total assets 647,362 517,191 510,927 440,538 Total current liabilities 1,720,245 1,849,327",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 517191000,
+   "page": 25,
+   "quote": "Total current assets 616,460 416,044 428,631 321,378 Total assets 647,362 517,191 510,927 440,538",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 440538000,
+   "page": 25,
+   "quote": "Total current assets 616,460 416,044 428,631 321,378 Total assets 647,362 517,191 510,927 440,538",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": -1104091000,
+   "page": 548,
+   "quote": "NET LIABILITIES (1,104,091) (1,356,056) (1,518,722) (1,616,854)",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": -1356056000,
+   "page": 548,
+   "quote": "NET LIABILITIES (1,104,091) (1,356,056) (1,518,722) (1,616,854)",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": -1616854000,
+   "page": 548,
+   "quote": "TOTAL DEFICITS (1,104,091) (1,356,056) (1,518,722) (1,616,854)",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 1751453000,
+   "page": 457,
+   "quote": "Total current liabilities 1,720,245 1,849,327 2,010,290 2,037,207",
+   "confidence": "high",
+   "note": "Consolidated total liabilities = total current liabilities 1,720,245 + total non-current liabilities 31,208 (same consolidated statement of financial position, p.548/p.25) = 1,751,453 for FY2022 (year-3); no consolidated total-liabilities line is printed."
+  },
+  "col_AD": {
+   "value": 1873247000,
+   "page": 457,
+   "quote": "Total current liabilities 1,720,245 1,849,327 2,010,290 2,037,207",
+   "confidence": "high",
+   "note": "Consolidated total liabilities = total current liabilities 1,849,327 + total non-current liabilities 23,920 (same consolidated statement of financial position, p.548/p.25) = 1,873,247 for FY2023 (year-2); no consolidated total-liabilities line is printed."
+  },
+  "col_AE": {
+   "value": 2057392000,
+   "page": 457,
+   "quote": "Total current liabilities 1,720,245 1,849,327 2,010,290 2,037,207",
+   "confidence": "high",
+   "note": "Consolidated total liabilities = total current liabilities 2,037,207 + total non-current liabilities 20,185 (same consolidated statement of financial position, p.548/p.25) = 2,057,392 as at May 31, 2025 (year-1); no consolidated total-liabilities line is printed."
+  },
+  "col_AF": {
+   "value": 161280000,
+   "page": 547,
+   "quote": "Revenue 4 161,280 145,153 244,775 74,304 88,329",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 145153000,
+   "page": 547,
+   "quote": "Revenue 4 161,280 145,153 244,775 74,304 88,329",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 211989600,
+   "page": 547,
+   "quote": "Revenue 4 161,280 145,153 244,775 74,304 88,329",
+   "confidence": "high",
+   "note": "Year-1 (col_AT = 31/05/25) is the five months ended May 31, 2025 stub: revenue 88,329 x 12/5 = 211,989.6 (RMB'000 x1,000 = 211,989,600), annualised because year-1 is a 5-month stub."
+  },
+  "col_AI": {
+   "value": -365420000,
+   "page": 547,
+   "quote": "Loss before taxation (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -264523000,
+   "page": 547,
+   "quote": "Loss before taxation (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -284032800,
+   "page": 547,
+   "quote": "Loss before taxation (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high",
+   "note": "Year-1 (col_AT = 31/05/25) is the five months ended May 31, 2025 stub: loss before taxation (118,347) x 12/5 = (284,032.8) (RMB'000 x1,000 = -284,032,800), annualised because year-1 is a 5-month stub."
+  },
+  "col_AL": {
+   "value": -365420000,
+   "page": 547,
+   "quote": "Loss for the year/period (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -264523000,
+   "page": 547,
+   "quote": "Loss for the year/period (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -284032800,
+   "page": 547,
+   "quote": "Loss for the year/period (365,420) (264,523) (184,963) (83,968) (118,347)",
+   "confidence": "high",
+   "note": "Year-1 (col_AT = 31/05/25) is the five months ended May 31, 2025 stub: loss for the period (118,347) x 12/5 = (284,032.8) (RMB'000 x1,000 = -284,032,800), annualised because year-1 is a 5-month stub."
+  },
+  "col_AO": {
+   "value": 0.03,
+   "page": 511,
+   "quote": "ospectus. COMMISSIONS AND EXPENSES Our Company will pay an underwriting commission of 3.0%",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.03,
+   "page": 511,
+   "quote": "ospectus. COMMISSIONS AND EXPENSES Our Company will pay an underwriting commission of 3.0%",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 511,
+   "quote": "Public Offering, to require us to allot and issue, up to an aggregate of 1,035,000 Shares,",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Hospitality robotic-based AI-empowered technology company: robots and functional kits, and AI digitalization system services",
+   "page": 10,
+   "quote": "ecide to invest in the Offer Shares. OVERVIEW We are a leading hospitality robotic-based A",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18C of the Listing Rules (Specialist Technology Company, Commercial Company)",
+   "page": 10,
+   "quote": "in the Offer Shares. In particular, we are a specialist technology company seeking to list",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/05/25",
+   "page": 548,
+   "quote": "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION (Expressed in RMB) As at December 31, As at May 31, 2025 Note 2022 2023 2024 RMB’000 RMB’000 RMB’000 RMB’000",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -52987000,
+   "page": 552,
+   "quote": "Net cash used in operating activities (170,392) (76,370) (41,482) (19,556) (52,987)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 75135000,
+   "page": 552,
+   "quote": "Cash and cash equivalents at the end of the year/period 111,656 174,133 105,481 9,809 75,135",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 24948000,
+   "page": 482,
+   "quote": "Research and development expenses 67,761 69,443 57,386 23,377 24,948",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 484,
+   "quote": "Property and equipment 6,761 5,376 7,606 588 Intangible assets 2,830 – – – Total 9,591 5,376 7,606 588",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.119,
+   "page": 20,
+   "quote": "and the five months ended May 31, 2025, our revenue generated from the five largest customers in each period of the Track Record Period accounted for 23.8%, 10.9%, 14.1% and 11.9% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "北京云迹科技股份有限公司",
+   "page": 1,
+   "quote": "stock company with limited liability incorporated in the People’s Republic of China) 北京雲迹科",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": 515,
+   "quote": "ing investors in the International Offering (whether as cornerstone investors or otherwise",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 23,
+   "quote": "general working capital of our Group, we have received eight rounds of Pre-IPO Investments",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 200,
+   "quote": "company incorporated under the laws of Hong Kong principally engaged in venture investment",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 199,
+   "quote": "he pre-application 12-month period. (b) Lenovo Fund Lenovo Fund is an investment vehicle e",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 200,
+   "quote": "iability company incorporated in the PRC and is wholly owned by Shenzhen Tencent Ruijian I",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 199,
+   "quote": "ership) (湖北長江產業投資基金合夥企 業(有限合夥)) (“Yangtze Industrial Fund”), a state-controlled enterprise",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 200,
+   "quote": "ntroduction by industry peers. Qiming Venture Partners is a leading venture capital firm i",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Anhui Artificial Intelligence Company; Beijing Onion; Haihang Chuangtou; Lanting Shiling; Linzhi Tencent; Maoji No. 1; Maoji No. 2; Shanghai Kehui; Guangkong Zhongying; Wenzhou Haiyin; Lenovo Fund; Shanghai Yushu; AlphaX; TransLink; QM165; Feidian No. 1; Feidian No. 2; CITIC Securities Investment; Beijing Qiming; Lanting Qiyue; Ruiju Investment; Alibaba Internet Technology; Henan Ketou; Shanghai Feidian; Taizhoudongnanwentou Fund; Hainan Feidian; Tianjin Haiyin; Hangzhou Haoyue",
+   "page": 194,
+   "quote": "Name of investor(s) Anhui Artificial Intelligence Company and Beijing Onion(4) Anhui Artificial Intelligence Company Haihang Chuangtou and Lanting Shiling Linzhi Tencent and Lanting Shiling",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": 198,
+   "quote": "even Sophisticated Independent Shareholders, which, in aggregate, held approximately 34.52",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": 386,
+   "quote": "dependence Our business is managed by our Board and senior management. Our Board comprises",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series Angel Investment",
+   "page": 194,
+   "quote": "ies B Strategic Investment(3) Series C Investment Series D Investment Date(s) of agreement",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 11.25,
+   "page": 194,
+   "quote": "ies B Strategic Investment(3) Series C Investment Series D Investment Date(s) of agreement",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural person (Ms. Zhi Tao, co-founder, chairwoman and president)",
+   "page": 22,
+   "quote": "As of the Latest Practicable Date, Ms. Zhi and Yunji Angel Management, which is controlled by Ms. Zhi in the capacity of general partner",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.3105,
+   "page": 406,
+   "quote": "Interest in controlled\ncorporation\n7,511,191\n12.15%\n6,274,865 H Shares\n10.19%\n9.13%\n1,236,326 Unlisted\nShares\n17.28%\n1.80%\nInterest of a party to\nan agreement\nregarding interest\nin the Company\n9,050,7",
+   "confidence": "medium",
+   "note": "Sum of the three \"Approximate percentage of shareholding in the total issued share capital\" rows disclosed for Ms. Zhi immediately following the Global Offering: 8.75% (beneficial interest row, immediately above this excerpt) + 9.13% + 13.17% = 31.05%. The later 1.80% Unlisted-Shares row is the same 1,236,326 Shares already counted in the 9.13% row, so it is not added again; the 32.86% figure in the text is voting control (col_BD)."
+  },
+  "col_BD": {
+   "value": 0.3286,
+   "page": 385,
+   "quote": "Ms. Zhi and Yunji Angel Management will collectively control the exercise of the voting rights attaching to an aggregate of approximately 32.86% of our enlarged total issued share capital",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 1926255000,
+   "page": 480,
+   "quote": "Total 1,638,929 1,747,444 1,870,672 1,926,255 1,959,602",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Early-stage commercialization",
+   "page": 372,
+   "quote": "OUR PATH TO PROFITABILITY Overview Financial Highlights We are at the early stage of commercialization of robotic-based AI agents.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 30,
+   "quote": "ot exercised and an Offer Price of HK$95.60 per Share. We intend to use the net proceeds o",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "ina) GLOBAL OFFERING Number of Offer Shares under the Global Offering : 6,900,000 H Shares",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "29/01/14",
+   "page": 668,
+   "quote": "ur Company was established as a limited liability company in the PRC on January 29, 2014 a",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Beijing, the PRC",
+   "page": 128,
+   "quote": "Zhichun Road Haidian District Beijing the PRC Headquarters and Principal Place of Business",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 413,
+   "quote": "ospectus. Our consolidated financial statements have been prepared in accordance with IFRS",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "08/10/25",
+   "page": 5,
+   "quote": "s.hk and our Company at www.yunjichina.com.cn. Date(1) Hong Kong Public Offering commences",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "13/10/25",
+   "page": 5,
+   "quote": "tions which may be different from the latest time as stated above. Application lists close",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 61564638,
+   "page": 29,
+   "quote": "The calculation of market capitalization is based on 61,564,638 H Shares expected to be in issue immediately upon completion of the Global Offering",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 34889000,
+   "page": 547,
+   "quote": "Gross profit 39,271 39,157 106,418 31,662 34,889",
+   "confidence": "high",
+   "note": "Year-1 (col_AT = 31/05/25) is the five months ended May 31, 2025 stub: gross profit 34,889 (RMB'000 x1,000 = 34,889,000), not annualised."
+  },
+  "col_CG": {
+   "value": 588000,
+   "page": 552,
+   "quote": "Payments for the purchase of property and equipment (6,761) (5,376) (7,606) (1,015) (588)",
+   "confidence": "high",
+   "note": "Year-1 (col_AT = 31/05/25) capital expenditure = the five months ended May 31, 2025 stub figure 588 (RMB'000 x1,000 = 588,000); corroborated by the CAPITAL EXPENDITURES table on p.484 (Property and equipment 6,761 5,376 7,606 588)."
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 544,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the Company’s and the Group’s financial position as at May 31, 2025",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 69700000,
+   "page": 511,
+   "quote": "s relating to the Global Offering are estimated to amount to approximately HK$69.7 million",
+   "confidence": "high"
+  }
+ }
+}

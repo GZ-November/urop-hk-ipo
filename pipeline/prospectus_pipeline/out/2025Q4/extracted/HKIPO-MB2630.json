@@ -1,0 +1,425 @@
+{
+ "code": "2630.HK",
+ "fields": {
+  "col_L": {
+   "value": 167597800,
+   "page": 428,
+   "quote": "H Shares to be converted from Unlisted Shares 49,079,333 29.28 H Shares to be issued pursuant to the Global Offering 17,597,800 10.50 Total 167,597,800 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 17597800,
+   "page": 2,
+   "quote": "Number of Offer Shares in the Global Offering : 17,597,800 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 150000000,
+   "page": 428,
+   "quote": "H Shares to be issued pursuant to the Global Offering 17,597,800 10.50 Total 167,597,800 100.00",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 150000000,
+   "page": 428,
+   "quote": "H Shares to be issued pursuant to the Global Offering 17,597,800 10.50 Total 167,597,800 100.00",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares in the Global Offering : 17,597,800 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 17597800,
+   "page": 2,
+   "quote": "Number of Offer Shares in the Global Offering : 17,597,800 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 15838000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 15,838,000 H Shares (subject to reallocation and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 1759800,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 1,759,800 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 34.0,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$34.00 per H Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 32.0,
+   "page": 2,
+   "quote": "The Offer Price will be no more than HK$34.00 per H Share and is expected to be no less than HK$32.00 per H Share.",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 66677133,
+   "page": 432,
+   "quote": "66,677,133 H Shares in issue upon the completion of the Global Offering (assuming the Over-allotment Option is not exercised) comprising (i) an aggregate of 49,079,333 H Shares to be converted",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares in the Global Offering : 17,597,800 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 26,
+   "quote": "2023 2024 2024 2025 RMB'000 RMB'000 RMB'000 RMB'000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 676296000,
+   "page": 27,
+   "quote": "Total assets 676,296 725,956 727,246",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 725956000,
+   "page": 27,
+   "quote": "Total assets 676,296 725,956 727,246",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 727246000,
+   "page": 27,
+   "quote": "Total assets 676,296 725,956 727,246",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 188116000,
+   "page": 27,
+   "quote": "Net assets 188,116 140,371 86,492 Equity attributable to owners of the Company 199,094 149,500 96,065",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 140371000,
+   "page": 27,
+   "quote": "Net assets 188,116 140,371 86,492 Equity attributable to owners of the Company 199,094 149,500 96,065",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 86492000,
+   "page": 27,
+   "quote": "Net assets 188,116 140,371 86,492 Equity attributable to owners of the Company 199,094 149,500 96,065",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 488180000,
+   "page": 27,
+   "quote": "Total liabilities 488,180 585,585 640,754",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 585585000,
+   "page": 27,
+   "quote": "Total liabilities 488,180 585,585 640,754",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 640754000,
+   "page": 27,
+   "quote": "Total liabilities 488,180 585,585 640,754",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 199651000,
+   "page": 26,
+   "quote": "Revenue 199,651 11,832 3,224 12,958",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 11832000,
+   "page": 26,
+   "quote": "Revenue 199,651 11,832 3,224 12,958",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 38874000,
+   "page": 26,
+   "quote": "Revenue 199,651 11,832 3,224 12,958",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 6427000,
+   "page": 26,
+   "quote": "Profit/(loss) before tax 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -217643000,
+   "page": 26,
+   "quote": "Profit/(loss) before tax 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -337227000,
+   "page": 26,
+   "quote": "Profit/(loss) before tax 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 6427000,
+   "page": 26,
+   "quote": "Profit/(loss) for the year/period 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -217643000,
+   "page": 26,
+   "quote": "Profit/(loss) for the year/period 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -337227000,
+   "page": 26,
+   "quote": "Profit/(loss) for the year/period 6,427 (217,643) (73,835) (112,409)",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 507823000,
+   "page": 504,
+   "quote": "Lease liabilities 41,502 42,322 40,144 39,698 Borrowings 279,526 374,128 456,283 514,287 Amounts due to a related party(1) 10,882 11,267 11,396 11,524 Total 331,910 427,717 507,823 565,509",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 566,
+   "quote": "have been prepared in accordance with the accounting policies which conform with IFRS Accounting Standards issued by International Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 9870000,
+   "page": 26,
+   "quote": "Gross profit 193,637 3,487 1,771 9,870",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 76000000,
+   "page": 572,
+   "quote": "Purchase of property, plant and equipment (86,715) (77,676) (9,271) (76,000)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 564,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.032,
+   "page": 531,
+   "quote": "an underwriting commission (the “Fixed Fee”) of 3.2% of the aggregate Offer Price in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.032,
+   "page": 531,
+   "quote": "an underwriting commission (the “Fixed Fee”) of 3.2% of the aggregate Offer Price in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 531,
+   "quote": "up to an aggregate of 2,639,600 additional H Shares, representing not more than 15% of the Offer Shares initially available",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 59600000,
+   "page": 35,
+   "quote": "our listing expenses in relation to the Global Offering are estimated to be approximately RMB54.7 million (HK$59.6 million)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Biopharmaceutical — discovery, development and commercialisation of small molecule drugs (neuropsychiatry, reproductive health and viral infection)",
+   "page": 13,
+   "quote": "We are a biopharmaceutical company engaged in the discovery, acquisition, development and commercialization of small molecule drugs in our strategically focused therapeutic areas",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 18A of the Listing Rules (Main Board)",
+   "page": 10,
+   "quote": "under Chapter 18A of the Listing Rules on the basis that we are unable to meet the requirements under Rule 8.05 (1), (2) or (3) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Two in commercial stage, four in clinical stage and three in preclinical stage (nine innovative assets in total)",
+   "page": 14,
+   "quote": "we had built a differentiated pipeline of nine innovative assets, including two in commercial stage, four in clinical stage and three in preclinical stage",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 35,
+   "quote": "will be used for the reinforcement of our sales and marketing capabilities; and • 10.0%, or approximately HK$52.1 million, will be used for working capital and other general corporate purposes.",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/04/25",
+   "page": 26,
+   "quote": "Year Ended December 31, Four Months Ended April 30, 2023 2024 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -43729000,
+   "page": 572,
+   "quote": "NET CASH FROM (USED IN) OPERATING ACTIVITIES 30,669 (108,851) (48,684) (43,729)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 72833000,
+   "page": 573,
+   "quote": "CASH AND CASH EQUIVALENTS AT THE END OF THE YEAR/PERIOD 95,974 121,135 121,845 72,833",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 63905000,
+   "page": 587,
+   "quote": "research and development expenses amounted to RMB131,297,000, RMB134,863,000, RMB51,698,000 and RMB63,905,000 respectively are expensed when incurred",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 102000,
+   "page": 587,
+   "quote": "of which, development costs amounted to RMB10,194,000, RMB8,280,000, RMB4,173,000 and RMB102,000 respectively, have been capitalised",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.912,
+   "page": 23,
+   "quote": "in aggregate accounted for 99.3%, 86.6% and 91.2% of our total revenue in the respective year/period",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "苏州旺山旺水生物医药股份有限公司",
+   "page": 1,
+   "quote": "Joint Bookrunners and Joint Lead Managers (in alphabetical order) 蘇州旺山旺水生物醫藥股份有限公司 Vigonvita Life Sciences Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 31,
+   "quote": "we received several rounds of Pre-IPO Investments. Our broad and diverse base of Pre-IPO Investors include investors focusing on investment in biotech",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 254,
+   "quote": "Xieyao PE is a fund management company focusing on investments in the healthcare industry through Xieyao Kexin and Xieyao Kesheng as their respective executive partner.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 256,
+   "quote": "the executive partner of Yufei Shanshui is Zhongcai Yufei (Beijing) Private Equity Fund Management Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 256,
+   "quote": "The general partner of Hainan Junshi is Junshi Entrepreneurship Investment (Hainan) Co., Ltd.(君實創業投資(海南)有限公司) which is wholly owned by Shanghai Junshi Biosciences Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": 1,
+   "page": 252,
+   "quote": "Zhongcai Financial is ultimately controlled by the State-owned Assets Supervision and Administration Commission of the State Council",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Gongqingcheng Zhongcai Qihu Financial Control Phase II Internet Industry Investment Center (Limited Partnership); Suzhou Xieyao Kexin Venture Capital Partnership Enterprise (Limited Partnership); Suzhou Xieyao Kesheng Entrepreneurship Investment Partnership Enterprise (Limited Partnership); Suzhou Meilingge Business Consulting Partnership Enterprise (Limited Partnership); Ganzhou Yufei Shanshui Equity Investment Partnership Enterprise (Limited Partnership); Jiaxing Yuhan Equity Investment Partnership Enterprise (Limited Partnership); Qingdao Bei’an Industrial Investment Holding Co., Ltd.; Shenzhen Ruikang Yuhong Win Win Investment Partnership (Limited Partnership); Hainan Junshi Phase I Equity Investment Fund Partnership Enterprise (Limited Partnership); Hangzhou Hemeng Medical Intelligence Equity Investment Partnership Enterprise (Limited Partnership); Qingdao Wangde Venture Capital Partnership Enterprise (Limited Partnership); Fuzhou Yide Equity Investment Partnership Enterprise (Limited Partnership); Suzhou Junding Changwang Entrepreneurship Investment Center (Limited Partnership); Suzhou Industrial Investment Innovation and Entrepreneurship Investment Partnership Enterprise (Limited Partnership); Hubei Jiuzhou Ketou Health Venture Capital Fund Partnership (Limited Partnership); Fuzhou Xindui Investment Partnership Enterprise (Limited Partnership); Hubei Chuangxin Tongxiang Enterprise Management Partnership (Limited Partnership)",
+   "page": 241,
+   "quote": "Suzhou Xieyao Kesheng Entrepreneurship Investment Partnership Enterprise (Limited Partnership) (蘇州協耀科盛創業投資合夥企業(有限合夥)) (“Xieyao Kesheng”)",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.2402,
+   "page": 247,
+   "quote": "Ruikang Yuhong 1,929,197 1.29 Hainan Junshi 1,720,925 1.15 Hemeng Medical Intelligence 1,376,758 0.92 Qingdao Wangde 1,241,500 0.83 Suzhou Meilingge 1,092,539 0.73 Junding Changwang 1,032,546 0.69",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Angel Round Financing",
+   "page": 249,
+   "quote": "The following table summarizes the key terms of the Pre-IPO Investments: Angel Round Financing(2) Series A Financing(3) Series A+ Financing Series B Financing(4) Series C Financing",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 6.96,
+   "page": 249,
+   "quote": "Date(s) of agreement(s) November 2018 February 2019 March 2020 June 2020 September 15, 2021",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural persons (founder Dr. Shen and his spouse Ms. Jin Jie)",
+   "page": 574,
+   "quote": "The controlling shareholders of the Company are Dr. Shen Jingshan (“Dr. Shen”) and his spouse, Ms. Jin Jie.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5056,
+   "page": 31,
+   "quote": "Dr. Shen and Ms. Jin Jie will be entitled to exercise approximately 50.56% voting rights in our Company in aggregate",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5056,
+   "page": 31,
+   "quote": "Dr. Shen and Ms. Jin Jie will be entitled to exercise approximately 50.56% voting rights in our Company in aggregate",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "21/01/13",
+   "page": 718,
+   "quote": "Our Company was established in the PRC on January 21, 2013 and was converted to a joint stock company with limited liability on April 28, 2023.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Suzhou, PRC",
+   "page": 156,
+   "quote": "Head Office, Registered Office and Principal Place of Business in the PRC 8th Floor, Building A No. 108, Yuxin Road Suzhou Industrial Park District Suzhou, PRC",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "28/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Tuesday, October 28, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "03/11/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Monday, November 3, 2025",
+   "confidence": "high"
+  }
+ }
+}

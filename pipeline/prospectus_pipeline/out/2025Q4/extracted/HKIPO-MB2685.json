@@ -1,0 +1,438 @@
+{
+  "code": "2685.HK",
+  "fields": {
+    "col_L": {
+      "value": 513347500,
+      "page": 28,
+      "quote": "exercised, and (iii) 513,347,500 Shares are issued and outstanding following the completion of the Global Offering.",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 13347500,
+      "page": 28,
+      "quote": "completed and 13,347,500 Shares are issued and sold in the Global Offering, (ii) the Over-allotment Option is not",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 500000000,
+      "page": 328,
+      "quote": "Issued share capital\n237,091,500 ordinary shares of US$0.0001 each . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n23,709.15",
+      "confidence": "high",
+      "note": "Pre-offering share capital = 500,000,000 (237,091,500 ordinary + 262,908,500 series A preferred shares). Schema convention mandates col_N = col_O = col_L - col_M = 513,347,500 - 13,347,500."
+    },
+    "col_O": {
+      "value": 500000000,
+      "page": 328,
+      "quote": "Issued share capital\n237,091,500 ordinary shares of US$0.0001 each . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n23,709.15",
+      "confidence": "high",
+      "note": "Pre-offering share capital = 500,000,000 (237,091,500 ordinary + 262,908,500 series A preferred shares). Schema convention mandates col_N = col_O = col_L - col_M = 513,347,500 - 13,347,500."
+    },
+    "col_P": {
+      "value": 0,
+      "page": 328,
+      "quote": "Shares to be issued under the Global Offering assuming the Over-allotment Option is not exercised\n",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 13347500,
+      "page": 28,
+      "quote": "The numbers in the following table are based on the assumptions that (i) the Global Offering has been",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 12012500,
+      "page": 2,
+      "quote": "Number of International Offer Shares :\n12,012,500 Shares (subject to reallocation and the Over-\nallotment Option)\n",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1335000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares :\n1,335,000 Shares (subject to reallocation)\n",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 9.8,
+      "page": 2,
+      "quote": "Maximum Offer Price :\nHK$9.80 per Offer Share plus brokerage of 1.0%, SFC\ntransaction levy of 0.0027%, the AFRC transaction levy",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 8.8,
+      "page": 2,
+      "quote": "Offer Share and is currently expected to be not less than HK$8.80 per Offer Share, unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 373,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the\nnearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 614067000,
+      "page": 25,
+      "quote": "26,982\n22,380\n21,029\nTotal current assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n358,549\n587,085",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1001292000,
+      "page": 25,
+      "quote": "22,380\n21,029\nTotal current assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n358,549\n587,085\n978,912",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1235613000,
+      "page": 25,
+      "quote": "21,029\nTotal current assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n358,549\n587,085\n978,912\n1,214,584",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -1093015000,
+      "page": 376,
+      "quote": "TOTAL DEFICIT . . . . . . . . . . . . . .\n(1,089,379)\n(1,093,015)\n(908,916)\n(771,978)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -908916000,
+      "page": 376,
+      "quote": "TOTAL DEFICIT . . . . . . . . . . . . . .\n(1,089,379)\n(1,093,015)\n(908,916)\n(771,978)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -771978000,
+      "page": 376,
+      "quote": "TOTAL DEFICIT . . . . . . . . . . . . . .\n(1,089,379)\n(1,093,015)\n(908,916)\n(771,978)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1707082000,
+      "page": 25,
+      "quote": "1,685,990\n1,890,051\n1,988,056\nNet current liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n(1,132,811) (1,098,905)\n(911,139)\n(773,472)\nNon-current liabilities\n141\n21,092",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1910208000,
+      "page": 25,
+      "quote": "1,890,051\n1,988,056\nNet current liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n(1,132,811) (1,098,905)\n(911,139)\n(773,472)\nNon-current liabilities\n141\n21,092\n20,157",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 2007591000,
+      "page": 25,
+      "quote": "1,988,056\nNet current liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n(1,132,811) (1,098,905)\n(911,139)\n(773,472)\nNon-current liabilities\n141\n21,092\n20,157\n19,535",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 529669000,
+      "page": 374,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4\n475,285\n529,669\n993,029\n299,851\n414,140",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 993029000,
+      "page": 374,
+      "quote": "475,285\n529,669\n993,029",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 993936000,
+      "page": 374,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4\n475,285\n529,669\n993,029\n299,851\n414,140",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 2752000,
+      "page": 374,
+      "quote": "(Loss)/profit before taxation . . . . . . . . . . . . . . . . . . . . .\n(1,281)\n2,752\n194,822\n46,948\n161,074",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 194822000,
+      "page": 374,
+      "quote": "(Loss)/profit before taxation . . . . . . . . . . . . . . . . . . . . .\n(1,281)\n2,752\n194,822\n46,948\n161,074",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 386577600,
+      "page": 374,
+      "quote": "(Loss)/profit before taxation . . . . . . . . . . . . . . . . . . . . .\n(1,281)\n2,752\n194,822\n46,948\n161,074",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 3643000,
+      "page": 374,
+      "quote": "(Loss)/profit for the year/period . . . . . . . . . .\n(283)\n3,643\n147,128\n34,691\n125,631",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 147128000,
+      "page": 374,
+      "quote": "(Loss)/profit for the year/period . . . . . . . . . .\n(283)\n3,643\n147,128\n34,691\n125,631",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 301514400,
+      "page": 374,
+      "quote": "(Loss)/profit for the year/period . . . . . . . . . .\n(283)\n3,643\n147,128\n34,691\n125,631",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.04,
+      "page": 344,
+      "quote": "The CMIs will receive an underwriting commission of 4% of the aggregate Offer Price of all the Offer\nShares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.04,
+      "page": 344,
+      "quote": "The CMIs will receive an underwriting commission of 4% of the aggregate Offer Price of all the Offer\nShares (including any Offer Shares to be issued pursuant to the exercise of the Over-allotment",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 41,
+      "quote": "up to an aggregate of 2,002,000 Shares (representing 15% of the Offer\nShares initially available under the Global Offering)",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Operation of online marketplaces in China, with advertisement placement and matching services for financial institutions",
+      "page": 383,
+      "quote": "are principally engaged in operation of online marketplaces and other business including advertisement\nplacement and provision of matching services for financial institutions",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board (Chapter 8 eligibility; no Chapter 18A/18C basis of listing disclosed)",
+      "page": 40,
+      "quote": "“Listing”\nthe listing of the Shares on the Main Board of the Stock Exchange",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/05/25",
+      "page": 374,
+      "quote": "Consolidated statements of profit or loss and other comprehensive income\n(Expressed in Renminbi)\nYears ended 31 December\nFive months ended 31 May",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 97683000,
+      "page": 381,
+      "quote": "Net cash generated from/(used in)\noperating activities . . . . . . . . . . . . .\n763\n(15,485)\n206,181\n(74,470)\n97,683",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 428050000,
+      "page": 376,
+      "quote": "Cash and cash equivalents . . . . . . . . .\n18(a)\n77,180\n110,989\n313,936\n428,050",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 21859000,
+      "page": 374,
+      "quote": "Research and development expenses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n(60,691)\n(46,916)\n(37,423)\n(14,780)\n(21,859)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 9000,
+      "page": 306,
+      "quote": "which was primarily related to (i) the payments for additions to property, plant and equipment of RMB13.0\nthousand; and (ii) payments for additions to intangible assets of RMB9.0 thousand.",
+      "confidence": "high",
+      "note": "Year-1 (five months ended 31/05/2025) cash-flow addition to intangible assets, kept in the disclosed period and not annualised: p.381 5M2025 '(9)', i.e. RMB9.0 thousand x 1,000."
+    },
+    "col_AY": {
+      "value": 0.099,
+      "page": 16,
+      "quote": "Our top five customers in each year/period of the Track Record Period\naccounted for 19.2%, 21.0%, 8.8% and 9.9% of our revenues for the years ended December 31, 2022, 2023 and",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "量化派控股有限公司",
+      "page": 2,
+      "quote": "Quantgroup Holding Limited\n量化派控股有限公司",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 146,
+      "quote": "Investor Shareholders\nSunshine Life Insurance(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n77,116,000\n7,711.60\n15.42%",
+      "confidence": "high",
+      "note": "Professional/institutional investors subscribed for shares before listing (Series A preferred Investor Shareholders on p.146), satisfying the schema rule that any professional investment institution taking pre-listing equity makes this 1."
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 146,
+      "quote": "Investor Shareholders\nSunshine Life Insurance(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n77,116,000\n7,711.60\n15.42%",
+      "confidence": "high",
+      "note": "Professional venture investors among the p.146 Investor Shareholders, e.g. Gaorong QTG Holding Limited, a wholly-owned subsidiary of Gaorong Capital (p.147 note (7); p.36), Shanghai Super Star Venture Capital Partners (Limited Partnership), Fuhai Yichuang (Zhuhai Fuhai Yichuang Information Technology Venture Capital Fund (L.P.), p.36) and Jiangmen Growth Venture Capital Center (p.38)."
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 147,
+      "quote": "East Asia Star Investment (BVI) Limited (“East Asia Star”) is a limited company incorporated in the BVI. It is wholly owned by Fosun\nHoldings Limited.",
+      "confidence": "high",
+      "note": "Later-stage institution: East Asia Star Investment (BVI) Limited 9.93% (p.146), 'wholly owned by Fosun Holdings Limited' (p.147 note (6)), designated by Yadong Xingchen and Yadong Xinqi; Sunshine Life Insurance Corporation Limited 15.42% (p.36 definition) is an insurance institution under this field's VC/PE-only binary."
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": 147,
+      "quote": "East Asia Star Investment (BVI) Limited (“East Asia Star”) is a limited company incorporated in the BVI. It is wholly owned by Fosun\nHoldings Limited.",
+      "confidence": "medium",
+      "note": "Unable to confirm a corporate-venture/strategic-investment relationship. The only corporate link disclosed is p.147 note (6): East Asia Star is 'wholly owned by Fosun Holdings Limited' (a conglomerate holding company; p.138 note (3) 'ultimately held as to 85% by Guo Guangchang ... and approximately 15% by Wang Qunbin'), a financial holding rather than a disclosed CVC/venture arm; p.147 also states East Asia Star merely holds the interests designated by Yadong Xingchen and Yadong Xinqi. The p.150 heading 'NO PRE-IPO INVESTMENT' says nothing about CVC identity, so it cannot support a 0."
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": 146,
+      "quote": "Investor Shareholders\nSunshine Life Insurance(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n77,116,000\n7,711.60\n15.42%",
+      "confidence": "medium",
+      "note": "No state-owned/government-guidance-fund identity is disclosed for any Investor Shareholder. Names checked against the p.36-38 definitions and p.147 notes: Sunshine Life Insurance (non-wholly owned subsidiary of Sunshine Insurance Group Company Limited, p.138 note (2)), East Asia Star (Fosun Holdings, p.147 note (6)), Gaorong Capital (25 LPs, p.138 note (4)), Shanghai Super Star, CGC Enterprises, Taironghaoyuan, Suyuan, Jiangmen Growth - none is disclosed as a state or government vehicle; a whole-document search for state-owned/state owned/government guidance fund returns no investor-level attribution. Per hint, unconfirmed -> NaN; the p.150 'NO PRE-IPO INVESTMENT' heading cannot support a 0."
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 146,
+      "quote": "Investor Shareholders\nSunshine Life Insurance(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n77,116,000\n7,711.60\n15.42%",
+      "confidence": "medium",
+      "note": "No prospectus statement characterises any pre-IPO investor as a first-tier/well-known VC/PE or as a lead investor (searches for leading/top-tier/first-tier return no relevant hits), so 1 cannot be confirmed and 0 is contradicted by the disclosed Gaorong Capital participation (p.146 'Gaorong QTG Holding Limited(7) ... 28,794,500 ... 5.76%'; p.147 note (7); p.36 definition of 'Gaorong Capital'). Per hint, unconfirmed -> NaN."
+    },
+    "col_pre_ipo_investors": {
+      "value": "Mercury Valley; Sunshine Life Insurance; East Asia Star Investment (BVI) Limited; Gaorong QTG Holding Limited; Shanghai Super Star Venture Capital Partners (Limited Partnership); CGC Enterprises Limited; Taironghaoyuan Limited; Saturn Storm; Shitai Point; Fuhai Yichuang; Suyuan Limited; Zhiwei Zhizhang; Tianyi Point; Jiaqing Investment; Jiangmen Growth; Shanghai Chuyuan",
+      "page": 146,
+      "quote": "Ordinary Shares\nEntity controlled by Dr. Zhou\nMars Legend Limited . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n118,581,000\n11,858.10\n23.72%",
+      "confidence": "high",
+      "note": "Complete list of the shareholders the p.146 pre-offering table labels 'Investor Shareholders' (ordinary shares: Mercury Valley 2.37%, Saturn Storm 2.21%; series A preferred shares: Sunshine Life 15.42%, East Asia Star 9.93%, Gaorong QTG 5.76%, Shanghai Super Star 2.93%, CGC Enterprises 2.59%, Taironghaoyuan 2.42%, Saturn Storm 1.90%, Shitai Point 1.90%, Fuhai Yichuang 1.87%, Suyuan 1.81%, Zhiwei Zhizhang 1.70%, Tianyi Point 1.65%, Jiaqing Investment 1.49%, Jiangmen Growth 1.17%, Shanghai Chuyuan 0.05%). Each investor appears once; Saturn Storm is listed once although it holds both ordinary and series A shares."
+    },
+    "col_vc_pe_stake": {
+      "value": 0.5717,
+      "page": 146,
+      "quote": "Investor Shareholders\nSunshine Life Insurance(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n77,116,000\n7,711.60\n15.42%",
+      "confidence": "medium",
+      "note": "P.146 pre-offering capitalisation table, denominator = 500,000,000 Shares in issue before the Global Offering (237,091,500 ordinary + 262,908,500 series A preferred; NOT the 513,347,500 post-offering count). All Investor Shareholder holdings sum to 57.17%, verified two ways: (a) printed percentages - series A rows Sunshine Life 15.42, East Asia Star 9.93, Gaorong QTG 5.76, Shanghai Super Star 2.93, CGC Enterprises 2.59, Taironghaoyuan 2.42, Saturn Storm 1.90, Shitai Point 1.90, Fuhai Yichuang 1.87, Suyuan 1.81, Zhiwei Zhizhang 1.70, Tianyi Point 1.65, Jiaqing 1.49, Jiangmen Growth 1.17, Shanghai Chuyuan 0.05 = 52.59, plus ordinary-share Investor Shareholders Mercury Valley 2.37 and Saturn Storm 2.21 = 57.17%; (b) raw share counts 11,863,500 + 11,060,500 + 77,116,000 + 49,672,500 + 28,794,500 + 14,629,000 + 12,965,000 + 12,089,000 + 9,500,000 + 9,486,000 + 9,362,500 + 9,029,000 + 8,475,500 + 8,235,500 + 7,464,000 + 5,851,500 + 238,500 = 285,832,500 / 500,000,000 = 0.5717 (the 15 series A rows total 262,908,500, exactly the series A preferred capital in issue). Saturn Storm's 1.90% series A row is counted once. Reading note: Sunshine Life Insurance (15.42) is an insurer, not a VC/PE house; excluding it gives 0.4175. The 0.3448 previously stored is not reproducible from any basis on this page."
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 320,
+      "quote": "Ms. Liu has been serving for FOSUN RZ Capital (復星銳正資本), an equity investment\nfirm, and is the co-president of FOSUN RZ Capital as of the Latest Practicable Date",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "Series A Preferred Shares",
+      "page": 146,
+      "quote": "Series A Preferred Shares(4)\nInvestor Shareholders\nSunshine Life Insurance",
+      "confidence": "medium"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "自然人 / natural person (Dr. Zhou, ultimate Controlling Shareholder)",
+      "page": 259,
+      "quote": "Dr. Zhou,\nour ultimate Controlling Shareholder, is also our founder, one of the executive Directors, the chairman of the\nBoard and the chief executive officer of our Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3303,
+      "page": 258,
+      "quote": "associated with approximately 33.03% of the issued share capital of our Company at general meetings of the\nCompany.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3303,
+      "page": 258,
+      "quote": "associated with approximately 33.03% of the issued share capital of our Company at general meetings of the\nCompany.",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 52288000,
+      "page": 307,
+      "quote": "Bank and other borrowings . . . . . . . . . . . . . . . .\n—\n23,000\n18,000\n36,000\n58,000\nLease liabilities . . . . . . . . . . . . . . . . . . . . . . . . .\n4,386\n4,352\n4,457\n4,482\n4,432",
+      "confidence": "medium",
+      "note": "Interest-bearing debt at 31/05/2025 = bank loans 36,000 (p.307; p.308 note (i) 'the Group's bank loans are all short-term borrowings, and the annual interest rate of these bank loans were ranged from 2.90% to 4.25%') + lease liabilities 16,288 (4,482 current + 11,806 non-current, p.307; p.308 'our total lease liabilities were ... RMB16.3 million') = 52,288 thousand x 1,000 = 52,288,000. Excludes 'other borrowings' 7,729 which p.308 note (iii) states are 'non-interest bearing loans from four third parties', and excludes financial instruments with preferred rights, which are not borrowings and convert to equity on Listing."
+    },
+    "col_BF": {
+      "value": "Commercial operation (apps in stable operation, continuous upgrades)",
+      "page": 333,
+      "quote": "entered\nstable\noperation,\nYangxiaomie\nstill\nrequires\ncontinuous\nupgrades\nand\nimprovements",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 30,
+      "quote": "Approximately 55%, or HK$3.2 million, will be allocated to enhance our research and development\ncapabilities and improve our technology infrastructure, including (1) enhancing our service offering",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 328,
+      "quote": "Upon completion of the Global Offering, our Company has only one class of shares, namely ordinary\nshares, each of which ranks pari passu with the other Shares.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "31/03/22",
+      "page": 383,
+      "quote": "Quantgroup Holding Limited (the “Company”) was incorporated on 31 March 2022 in the Cayman Islands\nas an exempted company with limited liability",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Beijing, PRC",
+      "page": 105,
+      "quote": "Principal place of business and\nhead office in the PRC\nOffice B711, 7th Floor, No. 19\nZhongguancun Street\nHaidian District\nBeijing, China\n",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 20,
+      "quote": "of, our consolidated statement of profit or loss or financial condition as reported under IFRS Accounting Standards.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "19/11/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n9:00 a.m. on Wednesday,\nNovember 19, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "24/11/25",
+      "page": 5,
+      "quote": "Public Offering close(3) . . . . . . . . . . . .\n12:00 noon on Monday,\nNovember 24, 2025",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 513347500,
+      "page": 328,
+      "quote": "Total issued Shares\n513,347,500 Shares of US$0.0001 each . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 400346000,
+      "page": 374,
+      "quote": "Gross profit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n312,757\n367,655\n961,891\n288,766\n400,346",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 13000,
+      "page": null,
+      "quote": "Guard-rejected genuine value (missing, not inflated): 5M ended 31/05/25 additions to PP&E = RMB13.0 thousand (p.306, p.381) and CAPITAL EXPENDITURES RMB22.0 thousand (p.309); under the 100,000 floor.",
+      "confidence": "high",
+      "note": "Genuine disclosed year-1 capex is below the validator's firm-size scale floor (it errors on any 0 < col_CG < 100,000), so the field is left missing rather than inflated: p.306/p.381 net cash used in investing activities RMB22.0 thousand 'primarily related to (i) the payments for additions to property, plant and equipment of RMB13.0 thousand; and (ii) payments for additions to intangible assets of RMB9.0 thousand', i.e. 22,000 (CAPITAL EXPENDITURES reading, p.309) or 13,000 (cash-flow PP&E reading). Period = five months ended 31/05/2025, same as col_AT; not annualised."
+    },
+    "col_CH": {
+      "value": "Unqualified opinion",
+      "page": 371,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true\nand fair view of the Company’s and the Group’s financial position",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 118400000,
+      "page": 344,
+      "quote": "legal and other professional fees and printing and other expenses, payable by our\nCompany relating to the Global Offering are estimated to be approximately HK$118.4 million in total.",
+      "confidence": "high"
+    }
+  }
+}

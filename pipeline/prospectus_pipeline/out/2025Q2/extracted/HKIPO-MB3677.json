@@ -1,0 +1,425 @@
+{
+  "code": "3677.HK",
+  "fields": {
+    "col_L": {
+      "value": 2508500103,
+      "page": 408,
+      "quote": "Total 2,508,500,103 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 121523700,
+      "page": 408,
+      "quote": "H Shares to be issued under the Global Offering 121,523,700 4.84%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 2386976403,
+      "page": 408,
+      "quote": "the registered capital of our Company was RMB2,386,976,403, comprising 2,386,976,403 Unlisted Shares in issue of nominal value RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 2386976403,
+      "page": 408,
+      "quote": "comprising 2,386,976,403 Unlisted Shares in issue of nominal value RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 408,
+      "quote": "H Shares to be issued under the Global Offering 121,523,700 4.84%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 121523700,
+      "page": 2,
+      "quote": "121,523,700 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 109371300,
+      "page": 2,
+      "quote": "109,371,300 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 12152400,
+      "page": 2,
+      "quote": "12,152,400 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares and Unlisted Shares",
+      "page": 408,
+      "quote": "Upon completion of the Global Offering, the Shares will consist of H Shares and Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 1439372739,
+      "page": 42,
+      "quote": "based on the 1,439,372,739 H Shares, comprising 121,523,700 H Shares to be issued under the Global Offering and 1,317,849,039 H Shares to be converted from Unlisted Shares",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 8.27,
+      "page": 2,
+      "quote": "The Offer Price will be HK$8.27 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 8.27,
+      "page": 2,
+      "quote": "Offer Price : HK$8.27 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, AFRC transaction levy of 0.00015% and Stock Exchange trading fee of 0.00565%",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "03/04/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, April 3, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "09/04/25",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . .12:00 noon on Wednesday, April 9, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "江苏正力新能电池技术股份有限公司",
+      "page": 1,
+      "quote": "江蘇正力新能電池技術股份有限公司",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 530,
+      "quote": "The Historical Financial Information is presented in Renminbi",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 10450817000,
+      "page": 32,
+      "quote": "Total non-current assets 2,845,985 5,779,681 9,775,430 9,861,915 Total current assets 2,969,015 4,671,136 4,355,352 5,732,316",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 14130782000,
+      "page": 32,
+      "quote": "Total non-current assets 2,845,985 5,779,681 9,775,430 9,861,915 Total current assets 2,969,015 4,671,136 4,355,352 5,732,316",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 15594231000,
+      "page": 32,
+      "quote": "Total non-current assets 2,845,985 5,779,681 9,775,430 9,861,915 Total current assets 2,969,015 4,671,136 4,355,352 5,732,316",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 2472564000,
+      "page": 532,
+      "quote": "Total equity 1,980,555 2,472,564 4,747,233 5,897,122",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 4747233000,
+      "page": 532,
+      "quote": "Net assets 1,980,555 2,472,564 4,747,233 5,897,122",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 5897122000,
+      "page": 535,
+      "quote": "As at 31 December 2024 2,386,976 6,190,132 11,392 223,040 1,713,687 3,135 (4,631,240) 5,897,122",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 7978253000,
+      "page": 532,
+      "quote": "Total current liabilities 3,397,917 5,287,822 6,150,006 6,496,681",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 9383549000,
+      "page": 532,
+      "quote": "Total current liabilities 3,397,917 5,287,822 6,150,006 6,496,681",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 9697109000,
+      "page": 532,
+      "quote": "Total non-current liabilities 436,528 2,690,431 3,233,543 3,200,428",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 3290253000,
+      "page": 531,
+      "quote": "REVENUE 1,499,296 3,290,253 4,161,670 5,130,317",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 4161670000,
+      "page": 531,
+      "quote": "REVENUE 1,499,296 3,290,253 4,161,670 5,130,317",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 5130317000,
+      "page": 531,
+      "quote": "REVENUE 1,499,296 3,290,253 4,161,670 5,130,317",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -1731048000,
+      "page": 531,
+      "quote": "(LOSS)/PROFIT BEFORE TAX (411,696) (1,731,048) (604,379) 79,043",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -604379000,
+      "page": 531,
+      "quote": "(LOSS)/PROFIT BEFORE TAX (411,696) (1,731,048) (604,379) 79,043",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 79043000,
+      "page": 531,
+      "quote": "(LOSS)/PROFIT BEFORE TAX (411,696) (1,731,048) (604,379) 79,043",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -1719981000,
+      "page": 531,
+      "quote": "(LOSS)/PROFIT AND TOTAL COMPREHENSIVE INCOME FOR THE YEAR (402,275) (1,719,981) (589,867) 91,014",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -589867000,
+      "page": 531,
+      "quote": "(LOSS)/PROFIT AND TOTAL COMPREHENSIVE INCOME FOR THE YEAR (402,275) (1,719,981) (589,867) 91,014",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 91014000,
+      "page": 531,
+      "quote": "Owners of the parent (402,275) (1,719,981) (589,867) 91,014",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/24",
+      "page": 528,
+      "quote": "statements of cash flows of the Group for each of the years ended 31 December 2021, 2022, 2023 and 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -361142000,
+      "page": 537,
+      "quote": "Net cash flows (used in)/from operating activities (165,420) 1,353,642 284,354 (361,142)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 2199072000,
+      "page": 532,
+      "quote": "767,411 936,164 2,034,279 2,199,072",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 556165000,
+      "page": 531,
+      "quote": "Research and development expenses (221,047) (329,277) (424,099) (556,165)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 99,
+      "quote": "Our other intangible assets primarily include trademarks, patents and software, which amounted to RMB592.3 million, RMB549.1 million, RMB491.5 million and RMB423.1 million",
+      "confidence": "low"
+    },
+    "col_AY": {
+      "value": 0.882,
+      "page": 18,
+      "quote": "representing 89.1%, 90.4%, 77.8% and 88.2% of our total revenue for the respective years",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 4014484000,
+      "page": 464,
+      "quote": "Interest-bearing bank and other borrowings 1,159,664 579,134 694,137 1,245,825 1,093,335",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 50,
+      "quote": "the International Financial Reporting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 748444000,
+      "page": 531,
+      "quote": "Gross profit/(loss) 30,178 (290,280) 208,489 748,444",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 614798000,
+      "page": 537,
+      "quote": "Purchases of items of property, plant and equipment and right-of-use assets (896,123) (2,687,978) (791,751) (614,798)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "true and fair view",
+      "page": 529,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 37,
+      "quote": "We underwent rounds of Pre-IPO Investments through the subscription of our increased registered capital by our Pre-IPO Investors",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 231,
+      "quote": "Southeast Xinneng is a limited partnership established under the laws of the PRC on June 1, 2022 which conducts venture capital and equity investments",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 231,
+      "quote": "Anhui Haichuang is a limited partnership established under the laws of the PRC on March 9, 2022 which is primarily engaged in private equity investment",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": 232,
+      "quote": "CICC SAIC Investment is a limited partnership established under the laws of the PRC on March 11, 2021 which is focused on, among others, private equity and venture capital fund management",
+      "confidence": "low"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 231,
+      "quote": "Southeast Investment holds 99.01% of Southeast Xinneng as its limited partner.",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 232,
+      "quote": "The general partner of CICC SAIC Investment is CICC Capital Management Co., Ltd., which is wholly-owned by China International Capital Corporation Limited",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Oceanpine Capital; Nanjing Jiangning; CICC SAIC Investment; Southeast Xinneng; Chuanghe Xincai; C&D Investment; Juxin Xihai; Lianhe Jiaying; Jiaxing Chenyue; Xiamen ITG Group; Nanjing Heyi; Anhui Haichuang",
+      "page": 226,
+      "quote": "Nanjing Jiangning (5) 57,658,150 440,000,000 CICC SAIC Investment 39,312,375 300,000,000 Southeast Xinneng 26,208,250 200,000,000 Chuanghe Xincai",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.1604,
+      "page": 36,
+      "quote": "acting in concert together with the Financial Investors, which in aggregate hold approximately 16.04% of the issued share capital of our Company",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 384,
+      "quote": "he secretary of the Party Committee and chairman of the board\nof directors of Huafu Growth Investment Co., Ltd. (華福成長投資有限公司) (formerly known\nas Xingyin Investment Co., Ltd. (興銀投資有限公司))",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 226,
+      "quote": "1. Series A Subscription of increased registered capital by cash July 13, 2022 July 22, 2022 Oceanpine Capital",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 226,
+      "quote": "Date of full settlement of consideration July 22, 2022",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Individual (Ms. Cao and Dr. Chen, acting in concert)",
+      "page": 36,
+      "quote": "Ms. Cao and Dr. Chen, together with Zhengli Consulting, Zenergy Investment, SINOGY VC, Nanjing Miaode, Nanjing Xuande, Zhengli No. 1 and Zhengli No. 2, will be a group of Controlling Shareholders of",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4621,
+      "page": 36,
+      "quote": "Ms. Cao and Dr. Chen, indirectly through their close associates Zhengli Consulting, Zenergy Investment, SINOGY VC, Nanjing Miaode, Nanjing Xuande, Zhengli No. 1 and Zhengli No. 2, will together",
+      "confidence": "low"
+    },
+    "col_BD": {
+      "value": 0.4621,
+      "page": 36,
+      "quote": "will together control the voting rights of approximately 46.21% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "26/02/19",
+      "page": 213,
+      "quote": "Our Company was established on February 26, 2019 as a limited liability company under the laws of the PRC",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 68 Xin'anjiang Road, Dongnan Community, Changshu, Jiangsu Province, the PRC",
+      "page": 149,
+      "quote": "Registered Office, Headquarter and Principal Place of Business in the PRC No. 68 Xin'anjiang Road Dongnan Community Changshu",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Lithium-ion battery manufacturer (EV battery and ESS battery products)",
+      "page": 10,
+      "quote": "We are a lithium-ion battery manufacturer in China, committed to developing a diverse portfolio of market-driven and technology-fueled battery products",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board - Rule 8.05(3) market capitalization/revenue test",
+      "page": 43,
+      "quote": "Our listing application is made on the basis that, among other things, we satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialization stage (NCM and LFP products commercialized; LMFP, sodium-ion and semi-solid-state in pipeline)",
+      "page": 12,
+      "quote": "We have developed various NCM and LFP battery products, and have a pipeline of LMFP batteries, sodium-ion batteries, and semi-solid-state product for commercialization in the near future",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 41,
+      "quote": "approximately 10.0% of the net proceeds, or HK$92.8 million (equivalent to approximately RMB85.6 million), will be used for providing funding for working capital and other general corporate purposes",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 495,
+      "quote": "The Hong Kong Underwriters will receive an underwriting commission of 2.00% of the aggregate Offer Price payable for the Hong Kong Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 495,
+      "quote": "the International Underwriters are expected to receive an underwriting commission of 2.00% of the aggregate Offer Price payable for the International Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 496,
+      "quote": "to issue up to 18,228,300 H Shares by the Company, representing approximately 15% of the initial Offer Shares",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 77550000,
+      "page": 41,
+      "quote": "Underwriting related expenses 34,901 Total 77,550",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Jiangsu Mixed Ownership Reform Fund; Suzhou High-end Equipment Fund; Southeast Investment Holding",
+      "page": 477,
+      "quote": "namely (i) Jiangsu Mixed Ownership Reform Fund, (ii) Suzhou High-end Equipment Fund, and (iii) Southeast Investment Holding as set out below",
+      "confidence": "high"
+    }
+  }
+}

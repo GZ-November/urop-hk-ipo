@@ -62,6 +62,8 @@ pipeline/prospectus_pipeline/datasets/tmp*/
 .zcode/
 **/validation_runs/
 pipeline/prospectus_pipeline/out/extracted_topics/
+pipeline/prospectus_pipeline/out/payload_backups/
+pipeline/prospectus_pipeline/out/period_reviews/
 pipeline/prospectus_pipeline/data/market/daily_bars/
 
 # 招股书 / 配发公告 PDF（体积原因，不上传）：data/ 与 out/ 下一切 pdf 目录
@@ -74,8 +76,7 @@ pipeline/prospectus_pipeline/data/allotment/
 pipeline/prospectus_pipeline/data/text/
 pipeline/prospectus_pipeline/data/sections/
 pipeline/prospectus_pipeline/data/packets/
-pipeline/prospectus_pipeline/data/2025Q1/
-pipeline/prospectus_pipeline/data/2025Q2/
+pipeline/prospectus_pipeline/data/2025Q*
 
 # datasets/ 是 collect 时代的隔离工作区（内含大体积 PDF 与重复状态）
 # 规范工作簿在 pipeline/cohorts/，现行抽取状态在 prospectus_pipeline/out/
@@ -87,6 +88,7 @@ pipeline/cohorts/backups/
 
 # 文献 PDF
 Survey Paper/
+docs/literature/
 
 # Local pre-repair workbook/export snapshots; canonical predecessors are in Git.
 pipeline/reports/data_gap_collection/6872_repair/*_before.xlsx

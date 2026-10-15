@@ -1,0 +1,425 @@
+{
+ "code": "2655.HK",
+ "fields": {
+  "col_L": {
+   "value": 506794075,
+   "page": 328,
+   "quote": "H Shares to be converted from Unlisted Shares (note) 349,918,940 69.05 H Shares to be issued pursuant to the Global Offering 33,852,900 6.68 Total 506,794,075 100.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 33852900,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 33,852,900 H Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 472941175,
+   "page": 328,
+   "quote": "Unlisted Shares in issue 123,022,235 24.27 H Shares to be converted from Unlisted Shares (note) 349,918,940 69.05",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 472941175,
+   "page": 328,
+   "quote": "the aforementioned registered share capital of the Company of RMB94,588,235 will be divided into 472,941,175 Shares of par value RMB0.2 each",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 328,
+   "quote": "H Shares to be issued pursuant to the Global Offering 33,852,900 6.68 Total 506,794,075 100.00",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 33852900,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 33,852,900 H Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 30467600,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 30,467,600 H Shares (subject to the reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 3385300,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 3,385,300 H Shares (subject to the reallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 328,
+   "quote": "H Shares to be issued pursuant to the Global Offering",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 383771840,
+   "page": 171,
+   "quote": "Total 94,588,235 100.00% 123,022,235 383,771,840 100.00%",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 20.1,
+   "page": 2,
+   "quote": "Offer Price : HK$20.1 per H Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 20.1,
+   "page": 2,
+   "quote": "Offer Price : HK$20.1 per H Share, plus brokerage of 1%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 30,
+   "quote": "Year ended December 31, Six months ended 30 June 2022 2023 2024 2024 2025 RMB’000 RMB’000 RMB’000 RMB’000 RMB’000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 448175000,
+   "page": 382,
+   "quote": "Total non-current assets\n4,907\n106,743\n167,966\n199,723\n \n \n \n \nCURRENT ASSETS",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1148072000,
+   "page": 382,
+   "quote": "CURRENT ASSETS\nInventories\n32,370\n120,312\n115,628\n295,666\nTrade and bills receivables\n41,590\n165,765\n520,457\n952,282",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1730796000,
+   "page": 382,
+   "quote": "Total non-current assets\n4,907\n106,743\n167,966\n199,723\n \n \n \n \nCURRENT ASSETS",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 94663000,
+   "page": 383,
+   "quote": "NET ASSETS\n28,785\n94,663\n192,792\n299,970",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 192792000,
+   "page": 383,
+   "quote": "TOTAL EQUITY\n28,785\n94,663\n192,792\n299,970",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 299970000,
+   "page": 383,
+   "quote": "NET ASSETS\n28,785\n94,663\n192,792\n299,970",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 353512000,
+   "page": 383,
+   "quote": "Total current liabilities\n82,011\n286,827\n932,524\n1,339,425",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 955280000,
+   "page": 383,
+   "quote": "Total current liabilities\n82,011\n286,827\n932,524\n1,339,425",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 1430826000,
+   "page": 383,
+   "quote": "Total non-current liabilities\n925\n66,685\n22,756\n91,401",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 314307000,
+   "page": 30,
+   "quote": "Revenue\n141,831\n314,307\n1,025,613\n90,623\n691,370",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 1025613000,
+   "page": 30,
+   "quote": "Revenue\n141,831\n314,307\n1,025,613\n90,623\n691,370",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 1382740000,
+   "page": 476,
+   "quote": "Revenue\n141,831\n314,307\n1,025,613\n90,623\n691,370",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 31793000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) BEFORE TAX\n6\n27,894\n31,793\n53,820\n(32,141)\n8,550",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 53820000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) BEFORE TAX\n6\n27,894\n31,793\n53,820\n(32,141)\n8,550",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 17100000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) BEFORE TAX\n6\n27,894\n31,793\n53,820\n(32,141)\n8,550",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 28148000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD\n24,277\n28,148\n49,119\n(25,590)\n5,575",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 49119000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD\n24,277\n28,148\n49,119\n(25,590)\n5,575",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 11150000,
+   "page": 476,
+   "quote": "PROFIT/(LOSS) FOR THE YEAR/PERIOD\n24,277\n28,148\n49,119\n(25,590)\n5,575",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.05,
+   "page": 438,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission (the “Fixed Fees”) of 5.0% of the aggregate Offer Price payable for the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.05,
+   "page": 438,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission (the “Fixed Fees”) of 5.0% of the aggregate Offer Price payable for the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 438,
+   "quote": "up to an aggregate of 5,077,900 additional H Shares (representing not more than 15% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 74800000,
+   "page": 41,
+   "quote": "for the Global Offering are approximately RMB68.3 million (HK$74.8 million), representing 11.0% of the gross proceeds",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Renewable energy solutions and products provider in the energy storage industry — energy storage systems (ESS) solutions and products (large-scale, C&I and residential ESS)",
+   "page": 175,
+   "quote": "We are a renewable energy solutions and products provider in the energy storage industry in the PRC. We specialize in the R&D and provision of ESS solutions and products",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of The Stock Exchange of Hong Kong Limited",
+   "page": 472,
+   "quote": "in connection with the initial listing of the shares of the Company on the Main Board of The Stock Exchange of Hong Kong Limited (the “Stock Exchange”)",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "已量产/规模商业化：户用ESS产品自2022年起量产，大型及工商业ESS产品自2023年起自建产线、2024年5月第二条产线投产；2024年总产能达1,561.2 MWh",
+   "page": 14,
+   "quote": "We began establishing our self-designed production lines for our large-scale ESS products and C&l ESS products in 2023. From May 2024, a second production line was successfully commissioned",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 424,
+   "quote": "We intend to use the net proceeds from the Global Offering for the following purposes: (1) approximately 44.0% or HK$266.5 million, will be used for enhancing our R&D capabilities,",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 54,
+   "quote": "the three financial years ended December 31, 2024, and the six months ended June 30, 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -204911000,
+   "page": 483,
+   "quote": "Net cash flows (used in)/from operating activities (30,321) (72,908) 3,730 (51,884) (204,911)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 46687000,
+   "page": 485,
+   "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR/PERIOD 7,296 14,236 50,262 19,009 46,687",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 16657000,
+   "page": 476,
+   "quote": "Research and development expenses (3,787) (16,811) (31,578) (12,303) (16,657)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 26,
+   "quote": "For the Track Record Period, all of our R&D expenditures were recognized as expenses in the period when such expenses were incurred",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.777,
+   "page": 29,
+   "quote": "our top five customers for each year/period during the Track Record Period accounted for 98.9%, 84.5%, 66.5% and 77.7% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "果下科技股份有限公司",
+   "page": 1,
+   "quote": "果下科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Huikai Hong Kong Economic Development Co., Ltd.; Dream’ee (Hong Kong) Open-ended Fund Company; RIME Capital Limited",
+   "page": 339,
+   "quote": "Huikai HK 54,250,000 2,699,000 7.97% 0.53% 6.93% 0.53% 6.93% 0.53% 6.03% 0.52% Dream’ee HK Fund 10,000,000 497,500 1.47% 0.10% 1.28% 0.10% 1.28% 0.10% 1.11% 0.10%",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 42,
+   "quote": "our Company entered into seven rounds of pre-IPO investment agreements with our pre-IPO investors, which included, among others, Kaibo Hongcheng and Shenzhen Ningqian",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 54,
+   "quote": "Shenzhen Ningqian Private Venture Capital Fund Management Co., Ltd* (深圳寧乾私募創業投資基金管理有限公司), formerly known as Hebei Ningqian Investment Management Co., Ltd*",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 50,
+   "quote": "Kaibo Hongcheng (Hubei) Private Equity Investment Fund Partnership (Limited Partnership)* (凱博鴻成(湖北)私募股權投資基金合夥企業(有限合夥)), a limited partnership established in the PRC on January 31, 2024",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 169,
+   "quote": "approximately 49.55% by CALB Group Co., Ltd. (中創新航科技集團股份有限公司), a company listed on the Stock Exchange (stock code: 3931)",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No state/government-backed Pre-IPO Investor found among the seven pre-IPO investment rounds disclosed (pp.164-169); no affirmative disclosure of absence, so NaN per dataset convention.",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No disclosure in this prospectus identifies a top-tier/well-known VC/PE institution as a lead or significant Pre-IPO Investor; absent an affirmative statement, NaN per dataset convention.",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Shanghai Youce; Mr. Zhang; Wuxi Yuebai; Hainan Xuding; Mr. Cai Guoming; Mr. Lin Guodong; Mr. Qiao Xin; Ms. Zhang Panpan; Ms. Zhou Qiong; Ms. Xu Siyue; Mr. Liu Xin; Ms. Cui Yanan; Kaibo Hongcheng; Shenzhen Ningqian",
+   "page": 164,
+   "quote": "Mr. Zhang, Wuxi Yuebai Hainan Xuding Mr. Cai Guoming, Mr. Lin Guodong Mr. Qiao Xin, Ms. Zhang Panpan, Ms. Zhou Qiong, Ms. Xu Siyue, Mr. Liu Xin and Ms. Cui Yanan(5) Kaibo Hongcheng Shenzhen Ningqian",
+   "confidence": "high"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.0672,
+   "page": 171,
+   "quote": "Kaibo Hongcheng 5,881,647 6.22% 17,209,235 12,199,000(1) 5.80%",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No non-executive director or formal observer seat linked to a Pre-IPO investment institution; the Board has six executive and three independent non-executive Directors; NaN per dataset convention.",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "Equity transfers and capital increase in April 2019 and January 2021",
+   "page": 164,
+   "quote": "Equity transfers and capital increase in April 2019 and January 2021",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 6.62,
+   "page": 164,
+   "quote": "Date of investment agreement(s) (i) April 24, 2019 (ii) January 21, 2021",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "自然人",
+   "page": 42,
+   "quote": "Hainan Xuding, Wuxi Luanhua, Wuxi Xiyun, Mr. Liu, Mr. Feng, Mr. Zhang and Wuxi Jiqing are considered to be a group of Controlling Shareholders.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.5463,
+   "page": 42,
+   "quote": "Hainan Xuding, Wuxi Luanhua, Wuxi Xiyun, Mr. Liu, Mr. Feng, Mr. Zhang and Wuxi Jiqing will collectively hold approximately 54.63% of our total issued Shares",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5463,
+   "page": 95,
+   "quote": "our Controlling Shareholders will control approximately 54.63% of the voting power at our general meetings",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 386311000,
+   "page": 411,
+   "quote": "Subtotal 197 64,907 2,349 50,840 103,184 Total 38,528 202,230 385,319 386,311 581,241",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "04/01/19",
+   "page": 151,
+   "quote": "Our Company was established in the PRC as a limited liability company on January 4, 2019 with an initial registered capital of RMB1 million.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Wuxi City, Jiangsu Province, PRC",
+   "page": 113,
+   "quote": "Corporate headquarters and Principal Place of Business in the PRC No. 9 Huicheng Road Changan Sub-district Huishan District Jiangsu Province Wuxi City PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "HKFRS Accounting Standards",
+   "page": 342,
+   "quote": "Our historical financial information has been prepared in accordance with HKFRS Accounting Standards, which include all Hong Kong Financial Reporting Standards",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "08/12/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences 9:00 a.m. on Monday, December 8, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "11/12/25",
+   "page": 5,
+   "quote": "Application lists close 12:00 noon on Thursday, December 11, 2025",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 86263000,
+   "page": 476,
+   "quote": "Gross profit 35,620 83,998 155,007 11,819 86,263",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 53411000,
+   "page": 484,
+   "quote": "Purchases of property, plant and equipment (4,309) (28,341) (66,107) (25,252) (53,411)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "无保留意见 (Unqualified opinion)",
+   "page": 473,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+   "confidence": "high"
+  }
+ }
+}

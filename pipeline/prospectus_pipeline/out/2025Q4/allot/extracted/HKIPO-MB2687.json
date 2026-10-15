@@ -1,0 +1,115 @@
+{
+  "code": "2687.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 14,
+      "quote": "the total number of Offer Shares allotted to investors who are not core connected person of the Company and are not subject to any disposal restrictions, representing approximately 10.00%",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 4813.4,
+      "page": 4,
+      "quote": "Subscription level 4,813.40 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 135193,
+      "page": 4,
+      "quote": "No. of valid applications 135,193",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 3209092400,
+      "page": 9,
+      "quote": "Pool A Number of H Shares applied for Number of valid applications Basis of allocation/ballot Approximate percentage allotted of the total number of H Shares applied for 100 57,307",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 4,813.40 times",
+      "page": 4,
+      "quote": "Subscription level 4,813.40 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "04/12/25",
+      "page": 5,
+      "quote": "Expected Price Determination Date(5) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Thursday, December 4, 2025 Announcement of: •",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "05/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**05/12/2025 22:10**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 6666700,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 6,666,700 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 666700,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering 666,700",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 6000000,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering 6,000,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-12-08 起 45 天内共 1 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2026-01-22 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered N/A",
+      "page": 4,
+      "quote": "Claw-back triggered N/A No. of Offer Shares initially available under the Hong Kong Public Offering 666,700",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 393650000,
+      "page": 3,
+      "quote": "Less: Estimated listing expenses payable based on Final Offer Price HK$56.35 million Net proceeds HK$393.65 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.3271,
+      "page": 14,
+      "quote": "the public float of our Company will be approximately 32.71% upon the Listing",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 66666700,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 66,666,700",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1,
+      "page": 14,
+      "quote": "representing approximately 10.00% of the total issued Shares upon completion of the Global Offering, the free float of our Company is 10.00%",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = Number of issued Shares upon Listing (66,666,700 = total issued Shares upon completion of the Global Offering); numerator = Offer Shares allotted to investors who are not core connected persons and are not subject to any disposal restrictions",
+      "page": 14,
+      "quote": "the total number of Offer Shares allotted to investors who are not core connected person of the Company and are not subject to any disposal restrictions",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 66666700,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 66,666,700",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "code": "0805.HK",
+  "fields": {
+    "col_L": {
+      "value": 960000000,
+      "page": 33,
+      "quote": "The calculation of market capitalization is based on 960,000,000 Shares expected to be in issue",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 240000000,
+      "page": 312,
+      "quote": "240,000,000 Shares of US$0.0001 each",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 720000000,
+      "page": 312,
+      "quote": "620,000,000 Shares of US$0.0001 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 720000000,
+      "page": 312,
+      "quote": "620,000,000 Shares of US$0.0001 each",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 312,
+      "quote": "Shares to be issued under the Global Offering assuming the",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 240000000,
+      "page": 2,
+      "quote": "240,000,000 Shares (subject to the Over-allotment",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 216000000,
+      "page": 2,
+      "quote": "216,000,000 Shares (subject to reallocation and",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 24000000,
+      "page": 2,
+      "quote": "24,000,000 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 313,
+      "quote": "has only one class of shares, namely ordinary shares",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 960000000,
+      "page": 533,
+      "quote": "960,000,000 Shares in issue after completion of the Capitalization Issue and",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 1.64,
+      "page": 2,
+      "quote": "HK$1.64 per Offer Share, plus brokerage of",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 1.24,
+      "page": 2,
+      "quote": "not less than HK$1.24 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "31/12/24",
+      "page": 5,
+      "quote": "Tuesday, December 31, 2024",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "08/01/25",
+      "page": 5,
+      "quote": "Wednesday, January 8, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "新吉奥房车有限公司",
+      "page": 2,
+      "quote": "New Gonow Recreational Vehicles Inc.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 25,
+      "quote": "(RMB in thousands, except for percentages)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 300223000,
+      "page": 28,
+      "quote": "229,819",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 398798000,
+      "page": 28,
+      "quote": "314,220",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 525104000,
+      "page": 28,
+      "quote": "403,487",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 56954000,
+      "page": 29,
+      "quote": "TOTAL EQUITY 26,970 56,954 27,186 35,283",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 27186000,
+      "page": 29,
+      "quote": "TOTAL EQUITY 26,970 56,954 27,186 35,283",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 35283000,
+      "page": 29,
+      "quote": "TOTAL EQUITY 26,970 56,954 27,186 35,283",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 243269000,
+      "page": 29,
+      "quote": "205,242",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 371612000,
+      "page": 29,
+      "quote": "324,081",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 489821000,
+      "page": 29,
+      "quote": "409,852",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 498780000,
+      "page": 430,
+      "quote": "Revenue 4 299,672 498,780 720,303 309,526 421,973",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 720303000,
+      "page": 430,
+      "quote": "Revenue 4 299,672 498,780 720,303 309,526 421,973",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 843946000,
+      "page": 430,
+      "quote": "Revenue 4 299,672 498,780 720,303 309,526 421,973",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 44261000,
+      "page": 430,
+      "quote": "Profit before taxation 6 34,325 44,261 107,676 42,350 54,005",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 107676000,
+      "page": 430,
+      "quote": "Profit before taxation 6 34,325 44,261 107,676 42,350 54,005",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 108010000,
+      "page": 430,
+      "quote": "Profit before taxation 6 34,325 44,261 107,676 42,350 54,005",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 32956000,
+      "page": 430,
+      "quote": "Profit for the year/period 25,080 32,956 78,768 31,648 40,430",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 78768000,
+      "page": 430,
+      "quote": "Profit for the year/period 25,080 32,956 78,768 31,648 40,430",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 80860000,
+      "page": 430,
+      "quote": "Profit for the year/period 25,080 32,956 78,768 31,648 40,430",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 191405000,
+      "page": 361,
+      "quote": "Total 88,017 67,838 103,994 191,405 161,561",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRSs",
+      "page": 441,
+      "quote": "Financial Reporting Standards (‘‘HKFRSs’’), which collective term includes all applicable individual HKFRSs,",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 134903000,
+      "page": 430,
+      "quote": "Gross profit 50,104 82,244 181,051 71,381 134,903",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 3049000,
+      "page": 437,
+      "quote": "Payment for purchase of plant and equipment (4,563) (6,271) (7,185) (1,981) (3,049)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion",
+      "page": 427,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/06/24",
+      "page": 50,
+      "quote": "‘‘Track Record Period’’ the three years ended December 31, 2023 and the six months ended June 30, 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 35554000,
+      "page": 437,
+      "quote": "Net cash generated from operating activities 19,409 57,784 119,770 108,160 35,554",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 43882000,
+      "page": 432,
+      "quote": "Cash and cash equivalents 17(a) 8,797 21,466 14,345 43,882",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 5625000,
+      "page": 430,
+      "quote": "Research and development expenses (2,835) (5,112) (7,968) (4,010) (5,625)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 437,
+      "quote": "Payment for purchase of intangible assets — — — — (110)",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.462,
+      "page": 23,
+      "quote": "customers in the aggregate accounted for 80.5%, 74.4%, 55.2% and 46.2% of our total",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "None",
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 311,
+      "quote": "Save as disclosed herein, our Directors are not aware of any person who will,",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Family",
+      "page": 310,
+      "quote": "Mr. Miao is the spouse of Ms. Wang. By virtue of the SFO, Ms. Wang is deemed to be interested in",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.744,
+      "page": 310,
+      "quote": "74.4%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.744,
+      "page": 310,
+      "quote": "74.4%",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "17/05/22",
+      "page": 438,
+      "quote": "New Gonow Recreational Vehicles Inc. (the ‘‘Company’’) was incorporated in Cayman Islands on 17 May",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Tongxiang, Zhejiang Province, PRC",
+      "page": 119,
+      "quote": "Address of Headquarters in the PRC",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Recreational vehicles (RVs)",
+      "page": 188,
+      "quote": "We are a recreational vehicle enterprise with an extensive presence in Australasia that",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 183,
+      "quote": "Company according to Rule 8.08(1) of the Listing Rules.",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Mass production",
+      "page": 196,
+      "quote": "successfully mass-produced a comprehensive lineup of 49 RV models which were all",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 36,
+      "quote": "Approximately 63.3%, or HK$185.3 million, will be allocated to construct a new",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 392,
+      "quote": "commission equal to 3% of the aggregate Offer Price of all the Offer Shares (the ‘‘Fixed",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 392,
+      "quote": "commission equal to 3% of the aggregate Offer Price of all the Offer Shares (the ‘‘Fixed",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 392,
+      "quote": "36,000,000 Shares, representing no more than 15% of the initial Offer Shares, at the Offer",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 53000000,
+      "page": 392,
+      "quote": "to amount in aggregate to approximately HK$53.0 million (assuming an Offer Price of",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 385,
+      "quote": "of the investment commitments made by any cornerstone investors under",
+      "confidence": "high"
+    }
+  }
+}

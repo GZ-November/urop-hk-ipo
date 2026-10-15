@@ -1,0 +1,116 @@
+{
+  "code": "6651.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 3,
+      "quote": "Number of Offer Shares 23,975,200 Number of Offer Shares in Hong Kong Public Offering (after reallocation) 4,795,200 Number of Offer Shares in International Placing (after reallocation) 19,180,000",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 256.01,
+      "page": 4,
+      "quote": "Subscription level 256.01 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 44502,
+      "page": 4,
+      "quote": "No. of valid applications 44,502",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 306906200,
+      "page": 12,
+      "quote": "Pool A Number of H Shares applied for Number of valid applications Basis of allocation/ballot Approximate percentage allotted of the total number of H Shares applied for 200 29,172",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 256.01 times",
+      "page": 4,
+      "quote": "Subscription level 256.01 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$30.50; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "29/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**29/12/2025 22:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 23975200,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 23,975,200 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4795200,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 4,795,200 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 19180000,
+      "page": 2,
+      "quote": "Number of International Placing Shares : 19,180,000 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILIZATION PERIOD, NO STABILIZING ACTION AND LAPSE OF THE OVER-ALLOTMENT OPTION（22/01/2026 16:33）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILIZATION PERIOD, NO STABILIZING ACTION AND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: Yes. Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation): 4,795,200 (initially 1,198,800); final no. of Offer Shares under the International Placing (after reallocation): 19,180,000 (initially 22,776,400).",
+      "page": 4,
+      "quote": "Claw-back triggered Yes No. of Offer Shares initially available under the Hong Kong Public Offering 1,198,800 Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation)",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 649900000,
+      "page": 3,
+      "quote": "Gross proceeds (Note) HK$731.3 million Less: Estimated listing expenses payable based on Offer Price HK$(81.4) million Net proceeds HK$649.9 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.604,
+      "page": 19,
+      "quote": "an aggregate of 245,541,897 H Shares, representing approximately 60.4% of the total number of shares in the class to which H Shares belong of our Company will be counted towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 406356152,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 406,356,152",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.059,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 23,975,200 H Shares",
+      "confidence": "low"
+    },
+    "col_DB": {
+      "value": "Number of issued shares upon Listing (before exercise of the Over-allotment Option)",
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 406,356,152",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 406356152,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 406,356,152",
+      "confidence": "high"
+    }
+  }
+}

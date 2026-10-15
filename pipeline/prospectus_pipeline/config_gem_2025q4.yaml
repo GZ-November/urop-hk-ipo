@@ -1,0 +1,61 @@
+# 2025 Q4 香港 GEM IPO 流水线配置
+workbook: cohorts/HKIPO-GEM2025Q4.xlsx
+sheet: NLR
+data_start_row: 2
+dataset:
+  id: HKIPO-GEM2025Q4
+  name: Hong Kong GEM IPO Dataset
+  board: GEM
+  cohort: 2025 Q4
+  period_start: '2025-10-01'
+  period_end: '2025-12-31'
+  expected_companies: 1
+id_columns:
+  file_no: A
+  stock_code: B
+  name: C
+  prospectus_date: D
+  listing_date: E
+  offer_price: K
+hkex:
+  search_url: https://www1.hkexnews.hk/search/titleSearchServlet.do
+  base_url: https://www1.hkexnews.hk
+  listing_doc_prefix: Listing Documents
+  include_substrings:
+  - Offer for Subscription
+  - Offer for Placing
+  - Prospectus
+  exclude_substrings:
+  - Authorised Collective Investment Scheme
+  - Rights Issue
+  - Open Offer
+  - Placing of Existing Shares
+  day_window: 45
+  row_range: 1000
+  sleep_sec: 0.4
+  timeout_sec: 40
+paths:
+  data: prospectus_pipeline/gem/data
+  pdf: prospectus_pipeline/gem/data/pdf
+  text: prospectus_pipeline/gem/data/text
+  sections: prospectus_pipeline/gem/data/sections
+  packets: prospectus_pipeline/gem/data/packets
+  out: prospectus_pipeline/out/gem_2025q4
+  allot_pdf: prospectus_pipeline/gem/data/allot/pdf
+  allot_text: prospectus_pipeline/gem/data/allot/text
+  allot_packets: prospectus_pipeline/gem/data/allot/packets
+  allot_out: prospectus_pipeline/out/gem_2025q4/allot
+extract:
+  allot_max_chars: 400000
+  max_chars_per_group: 60000
+  max_runs_per_anchor: 2
+  group_caps:
+    share_structure: 45000
+    price: 25000
+    financials: 95000
+    underwriting: 45000
+    business: 45000
+    cornerstone: 80000
+    extra_financial: 110000
+    chinese_name: 10000
+    ownership: 50000

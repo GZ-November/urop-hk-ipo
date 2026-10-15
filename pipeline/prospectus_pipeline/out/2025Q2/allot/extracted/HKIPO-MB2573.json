@@ -1,0 +1,115 @@
+{
+  "code": "2573.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2969,
+      "page": 5,
+      "quote": "Subtotal \n3,142,800 \n5.70%",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 149.37,
+      "page": 4,
+      "quote": "Subscription level \n149.37 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 21482,
+      "page": 4,
+      "quote": "No. of valid applications \n21,482",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 158124200,
+      "page": 10,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, valid applications made by the public will be conditionally \nallocated on the basis set out below :",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 149.37 times",
+      "page": 4,
+      "quote": "Subscription level \n149.37 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "06/06/25",
+      "page": 2,
+      "quote": "Determination Date. The Price Determination Date is expected to be on or around Friday, 6 June 2025 (Hong Kong time) and, in any event, not later than",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "09/06/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**09/06/2025 21:55**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 10585400,
+      "page": 3,
+      "quote": "Number of Offer Shares \n10,585,400",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1662400,
+      "page": 3,
+      "quote": "Final Number of Hong Kong Offer Shares (after reallocation) \n1,662,400",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 8923000,
+      "page": 3,
+      "quote": "Final Number of International Offer Shares (after reallocation) \n8,923,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-06-10 起 45 天内共 1 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-07-25 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "由国际发售回拨603,800股至香港公开发售；公开发售由1,058,600股增至1,662,400股，占全球发售15.70%",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering \n603,800",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 164150000,
+      "page": 3,
+      "quote": "Net proceeds \nHK$ 164.15 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.347,
+      "page": 15,
+      "quote": "Immediately following completion of the Global Offering, an aggregate of 33,380,925 H \nShares or approximately 34.7% of the total issued share capital of the Company will be held \nin public hands.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 96231234,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n96,231,234",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0773,
+      "page": 8,
+      "quote": "Subtotal \n3,142,800 \n5.70%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "分母为上市时已发行股份总数96,231,234股；公众持股为33,380,925股H股，约占34.7%",
+      "page": 15,
+      "quote": "Immediately following completion of the Global Offering, an aggregate of 33,380,925 H \nShares or approximately 34.7% of the total issued share capital of the Company will be held \nin public hands.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 96231234,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n96,231,234",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "code": "9927.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4495,
+      "page": 8,
+      "quote": "Total 48,828,700 44.95% 2.80%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 132.68,
+      "page": 5,
+      "quote": "Number of valid applications 202,321 Number of successful applications 57,928 Subscription level 132.68 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 202321,
+      "page": 5,
+      "quote": "Number of valid applications 202,321 Number of successful applications 57,928 Subscription level 132.68 times",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1329454700,
+      "page": 16,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, 202,321 valid applications made by the public will be conditionally allocated on the basis set out below:",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 132.68 times",
+      "page": 5,
+      "quote": "Number of valid applications 202,321 Number of successful applications 57,928 Subscription level 132.68 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "03/11/25",
+      "page": 5,
+      "quote": "Expected Price Determination Date(5)\n. . . . . . . . . . . . . . . . . . . .Monday, November 3, 2025",
+      "source": "prospectus",
+      "confidence": "high",
+      "note": "Prospectus Expected Timetable row (price-range/bookbuilt offering; not fixed-price). Value is the prospectus-disclosed Price Determination Date, which is the pricing-date convention this column is populated with (see src/pricing_date.py, run by derive_allot). The allotment announcement (this packet, 30pp) nowhere states a determination date; the issuer's separate ANNOUNCEMENT OF OFFER PRICE (HKEXnews 02/11/2025 18:11, /listedco/listconews/sehk/2025/1102/2025110200023.pdf, p.2) says the Offer Price was determined on 31/10/2025, i.e. earlier than the date this prospectus expected; that document is not part of this packet/prospectus corpus, so 31/10/25 cannot be cited without failing the evidence gate. No value changed from the reviewed payload."
+    },
+    "col_CR": {
+      "value": "04/11/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**04/11/2025 22:49**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 108619000,
+      "page": 3,
+      "quote": "Number of Offer Shares 108,619,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 10861900,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 10,861,900 H Shares",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 97757100,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 97,757,100 H Shares (taking into account the partial exercise of the Offer Size Adjustment Option and subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（30/11/2025 19:40）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered; additional Offer Shares under the Offer Size Adjustment Option allocated 10.0%:90.0% between the Hong Kong Public Offering and the International Offering, with no reallocation of such additional Offer Shares",
+      "page": 5,
+      "quote": "Claw-back triggered N/A",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 14016410000.0,
+      "page": 4,
+      "quote": "Net proceeds HK$14,016.41 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0624,
+      "page": 29,
+      "quote": "the total market value of the H Shares to be held by the public is expected to be approximately HK$14,283.40 million, calculated based on the final Offer Price of HK$131.50",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 1741985086,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 1,741,985,086",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0343,
+      "page": null,
+      "quote": "公式：(col_CS 108,619,000 − col_CK 0.4495×col_CS) ÷ col_CZ 1,741,985,086 = 0.0343；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 108,619,000 − col_CK 0.4495×col_CS) ÷ col_CZ 1,741,985,086 = 0.0343；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1741985086,
+      "page": 3,
+      "quote": "公式：(col_CS 108,619,000 − col_CK 0.4495×col_CS) ÷ col_CZ 1,741,985,086 = 0.0343；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

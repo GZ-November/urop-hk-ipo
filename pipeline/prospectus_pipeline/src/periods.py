@@ -424,11 +424,17 @@ def payload_months(fields: dict) -> int | None:
         if not isinstance(value, (int, float)) or isinstance(value, bool) or not value:
             continue
         hits = {months for months in range(1, 13)
-                if traceable(value, entry.get("quote") or "", factors=(12 / months,), rel_tol=0.002)}
+                if traceable(value, entry.get("quote") or "", factors=(12 / months,), rel_tol=0.0015)}
         if len(hits) == 1:
             months = hits.pop()
             votes[months] = votes.get(months, 0) + 1
     if not votes:
+        at_q = (fields.get("col_AT") or {}).get("quote") or ""
+        m = STUB_RE.search(at_q)
+        if m:
+            cnt = m.group("count").lower()
+            return _WORDS.get(cnt) or int(cnt)
         return None
     best = max(votes.items(), key=lambda item: item[1])
     return best[0] if list(votes.values()).count(best[1]) == 1 else None
+

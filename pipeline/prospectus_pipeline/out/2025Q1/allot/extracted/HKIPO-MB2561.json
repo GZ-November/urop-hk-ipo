@@ -1,0 +1,116 @@
+{
+  "code": "2561.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.65,
+      "page": 5,
+      "quote": "Total 7,402,300 65.0% 6.5%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 72.64,
+      "page": 4,
+      "quote": "Subscription level 72.64 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 22345,
+      "page": 4,
+      "quote": "No. of valid applications 22,345",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 71908900,
+      "page": 12,
+      "quote": "a total of 22,345 valid applications made by the public will be conditionally allocated on the basis set out below",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 72.64 times (over-subscribed 50 times or more but less than 100 times)",
+      "page": 4,
+      "quote": "Subscription level 72.64 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "19/03/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and the ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "20/03/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**20/03/2025 22:18**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 11385000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 11,385,000 Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option and subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 4554000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 4,554,000 Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option and as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 6831000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 6,831,000 Offer Shares",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（17/04/2025 20:44）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "As the Hong Kong Public Offering has been over-subscribed 50 times or more but less than 100 times, 2,970,000 Offer Shares were reallocated from the International Offering (clawback) to the Hong Kong Public Offering",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (clawback) 2,970,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 672300000,
+      "page": 4,
+      "quote": "Net proceeds HK$672.3 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.2688,
+      "page": 15,
+      "quote": "an aggregate of 30,623,437 Shares or approximately 26.88% of the total issued share capital of the Company will be held in the public hands",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 113926864,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 113,926,864",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.034958,
+      "page": 5,
+      "quote": "Total 7,402,300 65.0% 6.5%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Total issued share capital of the Company upon Listing, taking into account the full exercise of the Offer Size Adjustment Option and without taking into account the Over-allotment Option (before any exercise of the Over-allotment Option)",
+      "page": 15,
+      "quote": "after taking into account of the full exercise of the Offer Size Adjustment Option and without taking into account of the Over-allotment Option",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 113926864,
+      "page": 14,
+      "quote": "the total issued share capital of the Company upon Listing (taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option)",
+      "confidence": "high"
+    }
+  }
+}

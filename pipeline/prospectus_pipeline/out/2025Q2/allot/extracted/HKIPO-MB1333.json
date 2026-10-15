@@ -1,0 +1,115 @@
+{
+  "code": "1333.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2697,
+      "page": 5,
+      "quote": "Total\n3,506,200\n26.97%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 198.72,
+      "page": 4,
+      "quote": "Subscription level\n198.72 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 30638,
+      "page": 4,
+      "quote": "No. of valid applications\n30,638",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 258340400,
+      "page": 17,
+      "quote": "Total\n30,391\nTotal number of Pool A successful applicants: 4,690",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 198.72 times",
+      "page": 4,
+      "quote": "Subscription level\n198.72 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$18.00; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "06/05/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**06/05/2025 22:43**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 13000000,
+      "page": 3,
+      "quote": "Number of Offer Shares\n13,000,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 2600000,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong\nPublic Offering (after reallocation)\n2,600,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 10400000,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering\n(after reallocation)\n10,400,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-05-07 起 45 天内共 8 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-06-21 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "1,300,000 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering; final number of Offer Shares under the Hong Kong Public Offering adjusted to 2,600,000 (20% of the Global Offering) and International Offering reduced to 10,400,000 (80%), because the International Offer Shares were undersubscribed (0.92 times) and the Hong Kong Public Offer Shares were oversubscribed.",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International\nOffering\n1,300,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 147800000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$147.8 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4423,
+      "page": 19,
+      "quote": "representing approximately 44.23% of our total",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 379651762,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n379,651,762",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.025,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n379,651,762",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator = total number of issued Shares upon Listing (379,651,762 Shares, i.e. H Shares plus Unlisted Shares converted into H Shares upon Listing), the base used for the 44.23% public float statement.",
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n379,651,762",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 379651762,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n379,651,762",
+      "confidence": "high"
+    }
+  }
+}

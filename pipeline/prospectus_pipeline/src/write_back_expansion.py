@@ -198,6 +198,39 @@ class WorkbookExpansionWriter:
                 planned.append((r, code_str, col_idx, val, cell_format))
         return planned
 
+    def _ensure_master_panels(self) -> None:
+        """Ensure prerequisite master event panels exist in out/master."""
+        import master_contracts
+        required = [
+            self.out_master / master_contracts.STABILIZATION_EVENTS,
+            self.out_master / master_contracts.HORIZON_SUMMARY,
+            self.out_master / master_contracts.DAILY_MARKET_PANEL,
+            self.out_master / master_contracts.LOCKUP_EVENTS,
+        ]
+        if all(p.is_file() for p in required):
+            return
+
+        self.out_master.mkdir(parents=True, exist_ok=True)
+        try:
+            from market_panel import load_issuers, MarketPanelEngine
+            from stabilization_panel import StabilizationPanelEngine
+            from lockup_panel import LockupPanelEngine
+            from relational_tables import RelationalTableEngine
+
+            issuers = load_issuers(cfg=self.cfg)
+            if not issuers:
+                return
+            if not (self.out_master / master_contracts.DAILY_MARKET_PANEL).is_file() or not (self.out_master / master_contracts.HORIZON_SUMMARY).is_file():
+                MarketPanelEngine(cfg=self.cfg).run(issuers)
+            if not (self.out_master / master_contracts.STABILIZATION_EVENTS).is_file():
+                StabilizationPanelEngine(cfg=self.cfg).run(issuers)
+            if not (self.out_master / master_contracts.LOCKUP_EVENTS).is_file():
+                LockupPanelEngine(cfg=self.cfg).run(issuers)
+            if not (self.out_master / master_contracts.INVESTOR_RELATIONAL).is_file() or not (self.out_master / master_contracts.UNDERWRITER_RELATIONAL).is_file():
+                RelationalTableEngine(cfg=self.cfg).run(issuers)
+        except Exception as exc:
+            logger.warning(f"Could not auto-generate master panels: {exc}")
+
     def write_expansion(self, columns: set[int] | None = None, force_overwrite: bool = False,
                         dry_run: bool = False, only_codes: list[str] | None = None) -> int:
         """执行事务级写回；columns 非空时只写这些列（其余扩展列保持原值）。
@@ -209,6 +242,7 @@ class WorkbookExpansionWriter:
         force_overwrite=True 时仅记录警告并照常写入。
         """
         selected = self._select(columns)
+        self._ensure_master_panels()
         self.mapper.load_sources()
         logger.info(f"Opening transaction on {self.book_path}...")
         from cohort import read_companies

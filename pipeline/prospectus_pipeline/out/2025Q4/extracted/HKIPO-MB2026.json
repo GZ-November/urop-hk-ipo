@@ -1,0 +1,425 @@
+{
+ "code": "2026.HK",
+ "fields": {
+  "col_L": {
+   "value": 427248253,
+   "page": 488,
+   "quote": "Class A Ordinary Shares to be issued pursuant to the Global Offering 41,955,700 20,977.8500 9.82% Total 427,248,253 213,624.1265 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 41955700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 41,955,700 Offer Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 385292553,
+   "page": 488,
+   "quote": "Class A Ordinary Shares to be issued pursuant to the Global Offering 41,955,700 20,977.8500 9.82% Total 427,248,253 213,624.1265 100.00%",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 385292553,
+   "page": 488,
+   "quote": "Class A Ordinary Shares to be issued pursuant to the Global Offering 41,955,700 20,977.8500 9.82% Total 427,248,253 213,624.1265 100.00%",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 592,
+   "quote": "41,955,700 Offer Shares will initially be made available under the Global Offering comprising: (a) the Hong Kong Public Offering of initially 4,195,600 Class A Ordinary Shares",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 41955700,
+   "page": 488,
+   "quote": "Class A Ordinary Shares to be issued pursuant to the Global Offering 41,955,700 20,977.8500 9.82%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 37760100,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 37,760,100 Offer Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 4195600,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 4,195,600 Offer Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 180.0,
+   "page": 2,
+   "quote": "Maximum Public Offer Price : HK$180.00 per Offer Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": "NaN",
+   "page": null,
+   "quote": "Only a Maximum Public Offer Price of HK$180.00 per Offer Share is disclosed; a full-text search found no minimum or floor offer price.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "USD",
+   "page": 632,
+   "quote": "The Historical Financial Information is presented in U.S. dollars (“US$”) and all values are rounded to the nearest thousand (“US$’000”) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 747117000,
+   "page": 633,
+   "quote": "Total assets 771,514 747,117 1,050,821 991,046",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1050821000,
+   "page": 633,
+   "quote": "Total assets 771,514 747,117 1,050,821 991,046",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 991046000,
+   "page": 633,
+   "quote": "Total assets 771,514 747,117 1,050,821 991,046",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 695173000,
+   "page": 37,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Net assets 717,912 695,173 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 968711000,
+   "page": 536,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Total mezzanine equity 1,257,497 1,361,278 – – Total shareholders’ (deficit) equity (539,585) (666,105) 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 864265000,
+   "page": 536,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Total mezzanine equity 1,257,497 1,361,278 – – Total shareholders’ (deficit) equity (539,585) (666,105) 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 51944000,
+   "page": 536,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Total mezzanine equity 1,257,497 1,361,278 – – Total shareholders’ (deficit) equity (539,585) (666,105) 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 82110000,
+   "page": 536,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Total mezzanine equity 1,257,497 1,361,278 – – Total shareholders’ (deficit) equity (539,585) (666,105) 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 126781000,
+   "page": 536,
+   "quote": "Total liabilities 53,602 51,944 82,110 126,781 Total mezzanine equity 1,257,497 1,361,278 – – Total shareholders’ (deficit) equity (539,585) (666,105) 968,711 864,265",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 71899000,
+   "page": 639,
+   "quote": "Total Revenues 68,386 71,899 75,025 24,720 35,434",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 75025000,
+   "page": 639,
+   "quote": "Total Revenues 68,386 71,899 75,025 24,720 35,434",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 70868000,
+   "page": 639,
+   "quote": "Total Revenues 68,386 71,899 75,025 24,720 35,434",
+   "confidence": "medium"
+  },
+  "col_AI": {
+   "value": -125454000,
+   "page": 639,
+   "quote": "Loss before income tax (148,324) (125,454) (275,005) (51,773) (90,639)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -275005000,
+   "page": 639,
+   "quote": "Loss before income tax (148,324) (125,454) (275,005) (51,773) (90,639)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -181278000,
+   "page": 639,
+   "quote": "Loss before income tax (148,324) (125,454) (275,005) (51,773) (90,639)",
+   "confidence": "medium"
+  },
+  "col_AL": {
+   "value": -125328000,
+   "page": 639,
+   "quote": "Net loss (148,250) (125,328) (275,006) (51,775) (90,640)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -275006000,
+   "page": 639,
+   "quote": "Net loss (148,250) (125,328) (275,006) (51,775) (90,640)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -181280000,
+   "page": 639,
+   "quote": "Net loss (148,250) (125,328) (275,006) (51,775) (90,640)",
+   "confidence": "medium"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 589,
+   "quote": "participating in the Global Offering will receive an aggregate underwriting commission of 2.5% of the aggregate offer price payable in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 589,
+   "quote": "participating in the Global Offering will receive an aggregate underwriting commission of 2.5% of the aggregate offer price payable in respect of all of the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 589,
+   "quote": "representing not more than 15% of the number of Offer Shares initially available under the Global Offering (assuming the Offer Size Adjustment Option is not exercised)",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Autonomous driving technology — Level 4 autonomous driving solutions (robotaxi and robotruck services, licensing and applications)",
+   "page": 300,
+   "quote": "the only Level 4 autonomous driving technology company to have obtained all regulatory permits available and required to provide public-facing robotaxi services in all four Tier-1 cities",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Dual primary listing as an issuer with a WVR structure (Chapter 8A of the Hong Kong Listing Rules)",
+   "page": 30,
+   "quote": "a dual primary listing as an issuer with a WVR structure, we are subject to: (a) certain shareholder protection measures and governance safeguards under Chapter 8A of the Hong Kong Listing Rules",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 633,
+   "quote": "CONSOLIDATED BALANCE SHEETS (All amounts in USD thousands, except share, per share and per ADS data) As of December 31, As of June 30, 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -79570000,
+   "page": 644,
+   "quote": "Net cash used in operating activities (154,768) (115,421) (110,758) (59,122) (79,570)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 318533000,
+   "page": 633,
+   "quote": "Cash and cash equivalents 316,262 425,960 535,976 318,533",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 96516000,
+   "page": 639,
+   "quote": "Research and development expenses (153,601) (122,707) (240,179) (58,725) (96,516)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 665,
+   "quote": "The costs incurred by the Group between technological feasibility and general release to the public have been insignificant. Accordingly, all R&D costs have been expensed as incurred.",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.731,
+   "page": 373,
+   "quote": "US$51.7 million, US$56.1 million, US$51.4 million and US$25.9 million, representing 75.7%, 77.9%, 68.5% and 73.1% of our revenues",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "小马智行",
+   "page": 2,
+   "quote": "Pony AI Inc. 小馬智行*",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Eastspring Investments (Singapore) Limited; Ghisallo Fund Master Ltd; Athos Capital Limited; Hel Ved Master Fund; Ocean Arete Limited",
+   "page": 486,
+   "quote": "Eastspring 20 863,200 1.79% 1.56% 0.24% 0.24% 0.20% 0.20% Ghisallo 50 2,158,100 4.47% 3.89% 0.61% 0.60% 0.50% 0.49% Athos 25 1,079,000",
+   "confidence": "medium"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 307,
+   "quote": "has received over US$1.3 billion of investments from more than 30 investors, including strategic cooperation partner and well-known institutional investors",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 309,
+   "quote": "5Y Capital is a venture capital firm which specializes in fostering the growth of outstanding companies in the technology, life sciences, and consumer innovation sections.",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 308,
+   "quote": "HSG is a leading venture capital and private equity firm investing globally in the technology, healthcare and consumer sectors.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 308,
+   "quote": "Toyota Motor Corporation subscribed for 42,453,831 Series C preferred shares in March 2020 at a consideration of approximately US$400 million.",
+   "confidence": "medium"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No pre-IPO investor is disclosed as state-owned or government-backed; full-text searches found no government-fund evidence, so this flag is left missing.",
+   "confidence": "high"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 308,
+   "quote": "Among our investors, Toyota Motor Corporation, HSG and 5Y Capital are sophisticated investors of our Company (which satisfy the criteria in Chapter 2.2 of the Guide for New Listing Applicants)",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Toyota Motor Corporation; HSG Venture VI Holdco, Ltd.; HSG Venture VII Holdco, Ltd.; IDG China Venture Capital Fund IV L.P.; IDG China IV Investors L.P.; IDG China Capital Fund III L.P.; IDG China Capital III Investors L.P.; Morningside China TMT Fund IV, L.P.; Morningside China TMT Fund IV Co-Investment, L.P.; Morningside China TMT Special Opportunity Fund II, L.P.; 2774719 Ontario Limited; ClearVue Pony AI Plus Holdings, Ltd.; China-UAE Investment Cooperation Fund, L.P.; Raumier Limited; NEOM Company; Evodia Investments; Assets Key Limited; Hainan Kaibeixin Investment Partnership, L.P.; Shenzhen Z&Y High-tech Venture Capital Co., LTD",
+   "page": 182,
+   "quote": "each of Toyota Motor Corporation, HSG Venture VI Holdco, Ltd., HSG Venture VII Holdco, Ltd., IDG China Venture Capital Fund IV L.P., IDG China IV Investors L.P., IDG China Capital Fund III L.P.",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "No aggregate pre-IPO institutional stake is disclosed; the corporate structure diagram groups unidentified holders as 'Public Shareholders holding Class A Ordinary Shares 26.62%'.",
+   "confidence": "high"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 454,
+   "quote": "our non-executive Director, and is responsible for providing professional advice to the Board. Mr. Hamada joined Toyota Motor Corporation",
+   "confidence": "medium"
+  },
+  "col_earliest_round": {
+   "value": "Series A preferred shares",
+   "page": 307,
+   "quote": "Series A preferred shares March 2017 34,717,760(Note 1) US$15.0 million US$51 million US$66 million",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "The earliest pre-IPO round (Series A) is disclosed only as 'March 2017' with no agreement day, so duration to the 28/10/2025 prospectus date cannot be computed to two decimals.",
+   "confidence": "high"
+  },
+  "col_BB": {
+   "value": "Natural person",
+   "page": 30,
+   "quote": "OUR CONTROLLING SHAREHOLDER As at the Latest Practicable Date, Dr. Peng is interested in an aggregate of 60,000,000 Class B Ordinary Shares",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.1404,
+   "page": 30,
+   "quote": "Dr. Peng will be interested in (a) approximately 14.04% of our issued Shares",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.5186,
+   "page": 30,
+   "quote": "(b) approximately 51.86% of the voting rights in our Company with respect to shareholder resolutions relating to matters other than the Reserved Matters",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 18098000,
+   "page": 562,
+   "quote": "Finance lease liabilities 2,597 2,431 1,688 1,345 1,616 Loans payable to potential investors 3,946 – – – – Total 14,389 8,543 14,961 18,098 17,351",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialization-ready Level 4 fully driverless solution (early stage of large-scale commercialization)",
+   "page": 300,
+   "quote": "we have been devoted to developing the cutting-edge Level 4 fully driverless solution that is now commercialization-ready",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 45,
+   "quote": "Approximately 10% of the net proceeds, or approximately HK$719.4 million, will be used for working capital needs and other general corporate purposes.",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Class A Ordinary Shares; Class B Ordinary Shares",
+   "page": 29,
+   "quote": "the Company's share capital comprises Class A Ordinary Shares and Class B Ordinary Shares; each Class A Ordinary Share entitles the holder to exercise one vote",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "04/11/16",
+   "page": 303,
+   "quote": "Our Company was incorporated in the Cayman Islands on November 4, 2016 as the holding company of our Group.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Guangzhou, PRC",
+   "page": 219,
+   "quote": "Headquarters and Principal Place of Business in the PRC 1301 Pearl Development Building 1 Mingzhu 1st Street, Hengli Town Nansha District Guangzhou, PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "U.S. GAAP",
+   "page": 632,
+   "quote": "The Historical Financial Statements have been prepared in accordance with the accounting principles generally accepted in the United States of America (“U.S. GAAP”).",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "28/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Tuesday, October 28, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "03/11/25",
+   "page": 5,
+   "quote": "Application lists close . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Monday, November 3, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 427248253,
+   "page": 45,
+   "quote": "based on 427,248,253 Shares expected to be in issue immediately following completion of the Global Offering, assuming the Offer Size Adjustment Option and the Over-allotment Option are not exercised",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 5779000,
+   "page": 639,
+   "quote": "Gross profit 32,064 16,884 11,403 2,586 5,779",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 14464000,
+   "page": 645,
+   "quote": "Purchases of property, equipment and software (12,033) (5,091) (11,397) (1,906) (14,464)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 630,
+   "quote": "gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position as at December 31, 2022, 2023 and 2024 and June 30, 2025",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 358500000,
+   "page": 47,
+   "quote": "for the Global Offering are approximately HK$358.5 million, accounting for approximately of 4.7% of our gross proceeds",
+   "confidence": "high"
+  }
+ }
+}

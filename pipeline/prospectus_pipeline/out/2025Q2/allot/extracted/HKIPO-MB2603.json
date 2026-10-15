@@ -1,0 +1,115 @@
+{
+  "code": "2603.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.298,
+      "page": 5,
+      "quote": "Subtotal 20,240,000 29.80% 4.47%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 49.39,
+      "page": 4,
+      "quote": "Subscription level 49.39 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 18521,
+      "page": 4,
+      "quote": "No. of valid applications 18,521",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 335391500,
+      "page": 10,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 49.39 times",
+      "page": 4,
+      "quote": "Subscription level 49.39 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "23/05/25",
+      "page": 2,
+      "quote": "the Price Determination Date or such later date as may be agreed by the Overall Coordinators (for themselves and on behalf of the Hong Kong Underwrite",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "26/05/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**26/05/2025 22:37**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 67910000,
+      "page": 3,
+      "quote": "Number of Offer Shares 67,910,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 20373000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering (after reallocation) 20,373,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 47537000,
+      "page": 3,
+      "quote": "Final Number of offer shares in International Offering (after reallocation) 47,537,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-05-27 起 45 天内共 23 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-07-11 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "公开发售超额认购超过15倍但少于50倍，触发回拨；由国际配售回拨 13,582,000 股（claw-back）至公开发售，公开发售由初始 6,791,000 股增至最终 20,373,000 股（占全球发售 30%），国际配售由 61,119,000 股降至 47,537,000 股（占 70%）。",
+      "page": 12,
+      "quote": "the final number of Offer Shares under the Hong Kong Public Offering was adjusted to 20,373,000 H Shares, representing 30% of the total number of Offer Shares available under the Global Offering.",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 415200000,
+      "page": 3,
+      "quote": "Net proceeds HK$415.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.15,
+      "page": 14,
+      "quote": "the number of H Shares held in public hands represents approximately 15% of the total issued share capital of the Company.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 452679288,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 452,679,288",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1053,
+      "page": 5,
+      "quote": "Subtotal 20,240,000 29.80% 4.47%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "分母为上市时已发行股份总数 452,679,288 股（Number of issued Shares upon Listing，含 A 股与 H 股全部类别）；公告以 H 股占已发行股本约 15% 表述公众持股，未剔除基石等受禁售股份，自由流通比例亦以该股数为分母。",
+      "page": 14,
+      "quote": "the number of H Shares held in public hands represents approximately 15% of the total issued share capital of the Company.",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 452679288,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 452,679,288",
+      "confidence": "high"
+    }
+  }
+}

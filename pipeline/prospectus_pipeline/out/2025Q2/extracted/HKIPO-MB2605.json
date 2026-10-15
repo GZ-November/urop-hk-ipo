@@ -1,0 +1,425 @@
+{
+  "code": "2605.HK",
+  "fields": {
+    "col_L": {
+      "value": 154276537,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering 24,856,000 2,485.6000 Total 154,276,537 15,427.6537",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 24856000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 24,856,000 Shares",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 129420537,
+      "page": 313,
+      "quote": "Shares in issue (including the Shares upon re-designation of the Preferred Shares) 129,420,537 12,942.0537",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 129420537,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering 24,856,000 2,485.6000 Total 154,276,537 15,427.6537",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering 24,856,000 2,485.6000",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 24856000,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering 24,856,000 2,485.6000",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 22370400,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 22,370,400 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2485600,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 2,485,600 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 314,
+      "quote": "Upon completion of the Global Offering, the Company has only one class of Shares, namely ordinary shares, and each ranks pari passu with the other Shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 154276537,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering 24,856,000 2,485.6000 Total 154,276,537 15,427.6537",
+      "confidence": "medium"
+    },
+    "col_T": {
+      "value": 9.75,
+      "page": 2,
+      "quote": "Offer Price : HK$9.75 per Offer Share plus brokerage of 1.0%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 9.75,
+      "page": 2,
+      "quote": "The Offer Price will be HK$9.75 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "02/06/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . 9:00 a.m. on Monday, June 2, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "05/06/25",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . 12:00 noon on Thursday, June 5, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "NA",
+      "page": 2,
+      "quote": "MetaLight Inc. (Incorporated in the Cayman Islands with limited liability)",
+      "confidence": "low"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 21,
+      "quote": "(RMB in thousands)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 185183000,
+      "page": 21,
+      "quote": "Total assets 185,183 223,690 224,166",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 223690000,
+      "page": 21,
+      "quote": "Total assets 185,183 223,690 224,166",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 224166000,
+      "page": 21,
+      "quote": "Total assets 185,183 223,690 224,166",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -261674000,
+      "page": 21,
+      "quote": "Net liabilities (261,674) (266,182) (312,092)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -266182000,
+      "page": 21,
+      "quote": "Net liabilities (261,674) (266,182) (312,092)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -312092000,
+      "page": 21,
+      "quote": "Net liabilities (261,674) (266,182) (312,092)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 446857000,
+      "page": 21,
+      "quote": "Total liabilities 446,857 489,872 536,258",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 489872000,
+      "page": 21,
+      "quote": "Total liabilities 446,857 489,872 536,258",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 536258000,
+      "page": 21,
+      "quote": "Total liabilities 446,857 489,872 536,258",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 135379000,
+      "page": 19,
+      "quote": "Revenue 135,379 100.0 174,536 100.0 206,137 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 174536000,
+      "page": 19,
+      "quote": "Revenue 135,379 100.0 174,536 100.0 206,137 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 206137000,
+      "page": 19,
+      "quote": "Revenue 135,379 100.0 174,536 100.0 206,137 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -21360000,
+      "page": 19,
+      "quote": "Loss before tax (21,360) (15.8) (16,972) (9.7) (21,744) (10.5)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -16972000,
+      "page": 19,
+      "quote": "Loss before tax (21,360) (15.8) (16,972) (9.7) (21,744) (10.5)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -21744000,
+      "page": 19,
+      "quote": "Loss before tax (21,360) (15.8) (16,972) (9.7) (21,744) (10.5)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -20037000,
+      "page": 19,
+      "quote": "Loss for the year (20,037) (14.8) (20,328) (11.6) (26,138) (12.7)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -20328000,
+      "page": 19,
+      "quote": "Loss for the year (20,037) (14.8) (20,328) (11.6) (26,138) (12.7)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -26138000,
+      "page": 19,
+      "quote": "Loss for the year (20,037) (14.8) (20,328) (11.6) (26,138) (12.7)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 31286000,
+      "page": 360,
+      "quote": "Interest-bearing bank and other borrowings 30,965 40,000 30,000 30,000 Lease liabilities 2,660 2,631 1,178 2,565",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 18,
+      "quote": "Our consolidated financial information was prepared in accordance with International Financial Reporting Standards (“IFRS”).",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 157447000,
+      "page": 19,
+      "quote": "Gross profit 98,802 73.0 133,244 76.3 157,447 76.4",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 300000,
+      "page": 363,
+      "quote": "Our capital expenditures were RMB1.3 million, RMB1.1 million and RMB0.3 million, respectively, in 2022, 2023 and 2024",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view, no modification)",
+      "page": 417,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/24",
+      "page": 419,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS Year ended 31 December Notes 2022 2023 2024 RMB’000 RMB’000 RMB’000",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 56424000,
+      "page": 426,
+      "quote": "Net cash flows from operating activities 13,404 41,066 56,424",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 56306000,
+      "page": 23,
+      "quote": "Cash and cash equivalents at the end of the year 48,354 55,511 56,306",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 42512000,
+      "page": 19,
+      "quote": "Research and development expenses (24,990) (18.5) (33,851) (19.4) (42,512) (20.6)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 419,
+      "quote": "Research and development expenses (24,990) (33,851) (42,512)",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.682,
+      "page": 18,
+      "quote": "accounting for 74.4%, 72.4% and 68.2% of our total revenue for the corresponding years",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 27,
+      "quote": "PRE-IPO INVESTORS We have attracted certain Pre-IPO Investors since our establishment to raise funds for the development of our business.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 177,
+      "quote": "HongHe Venture Fund I, L.P. 13,019,491 8.44%",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 177,
+      "quote": "China Broadband Capital Partners III, L.P. 13,606,200 8.82%",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 149,
+      "quote": "Alibaba Investment Limited (“Alibaba Investment”) Series A Preferred Shares 12,007,572 13.70",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 177,
+      "quote": "10. Cheering Venture Global Limited 23,439,957 15.19% 11. Alibaba Investment Limited 13,532,348 8.77%",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 177,
+      "quote": "11. Alibaba Investment Limited 13,532,348 8.77%",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "HongHe Venture Fund I, L.P.; Cheering Venture Global Limited; Alibaba Investment Limited; China Broadband Capital Partners III, L.P.; Ondine Tech Fund 1 L.P.; Silver Snake; GARAITZ CAPITAL PTE. LTD.; Summer Sea Investment Limited",
+      "page": 177,
+      "quote": "9. HongHe Venture Fund I, L.P. 13,019,491 8.44% 10. Cheering Venture Global Limited 23,439,957 15.19% 11. Alibaba Investment Limited 13,532,348 8.77%",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.4748,
+      "page": 177,
+      "quote": "9. HongHe Venture Fund I, L.P. 13,019,491 8.44% 10. Cheering Venture Global Limited 23,439,957 15.19% 11. Alibaba Investment Limited 13,532,348 8.77%",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 297,
+      "quote": "As at the date of this Prospectus, our Board of Directors comprises seven Directors, including four executive Directors and three independent non-executive Directors.",
+      "confidence": "low"
+    },
+    "col_earliest_round": {
+      "value": "Series Seed (Series Seed A / Series Seed B Preferred Shares, issued 20 October 2015)",
+      "page": 472,
+      "quote": "Series Seed A 20 October 2015 265,644",
+      "confidence": "medium"
+    },
+    "col_holding_duration": {
+      "value": 9.6,
+      "page": 472,
+      "quote": "Series Seed A 20 October 2015 265,644",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Single largest shareholders group of individual founders acting in concert (Dr. Sun Xi, Mr. Chen, Mr. Xiao with Bus Dream)",
+      "page": 27,
+      "quote": "Dr. Sun, Mr. Chen and Mr. Xiao (together with their controlled entities) constitute a single largest group of shareholders",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.2115,
+      "page": 27,
+      "quote": "Immediately upon the completion of the Global Offering, the Concert Parties and Bus Dream will control approximately 21.15% of our voting rights",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.2115,
+      "page": 27,
+      "quote": "Immediately upon the completion of the Global Offering, the Concert Parties and Bus Dream will control approximately 21.15% of our voting rights",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "21/05/2015",
+      "page": 147,
+      "quote": "On May 21, 2015, our Company was incorporated in the Cayman Islands as an exempted company with limited liability",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "1/F, Liangdian Creative Park, No. 94, Dongsishitiao Street, Dongcheng District, Beijing, PRC",
+      "page": 127,
+      "quote": "Headquarters and Principal Place of Business in the PRC 1/F, Liangdian Creative Park No. 94, Dongsishitiao Street Dongcheng District, Beijing PRC",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Real-time bus information platform (Chelaile) - mobile advertising and data analytics services",
+      "page": 180,
+      "quote": "We operate Chelaile (車來了), a mobile app that applies big data analytics to deliver real-time, accurate bus arrival information.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board standard listing (not Chapter 18C / 18A)",
+      "page": 416,
+      "quote": "in connection with the initial listing of the shares of the Company on the Main Board of The Stock Exchange of Hong Kong Limited",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": 180,
+      "quote": "We operate Chelaile (車來了), a mobile app that applies big data analytics to deliver real-time, accurate bus arrival information.",
+      "confidence": "low"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 31,
+      "quote": "Approximately 45% of the net proceeds, or HK$71.9 million, will be used in enhancing our technological capabilities;",
+      "confidence": "low"
+    },
+    "col_AO": {
+      "value": "NaN",
+      "page": 31,
+      "quote": "underwriting-related expenses (including but not limited to commissions and fees) of approximately RMB22.2 million",
+      "confidence": "low"
+    },
+    "col_AP": {
+      "value": "NaN",
+      "page": 31,
+      "quote": "underwriting-related expenses (including but not limited to commissions and fees) of approximately RMB22.2 million",
+      "confidence": "low"
+    },
+    "col_AQ": {
+      "value": 0,
+      "page": 102,
+      "quote": "given that we will not grant any over-allotment option to the underwriters, no stabilizing manager has been appointed by us in connection to the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 82600000,
+      "page": 31,
+      "quote": "The estimated total listing expenses for the Global Offering are approximately RMB75.8 million (accounting for approximately 34.1% of our gross proceeds).",
+      "confidence": "medium"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 78,
+      "quote": "Our research and development and sales and marketing teams serve as cornerstones for our growth blueprint.",
+      "confidence": "medium"
+    }
+  }
+}

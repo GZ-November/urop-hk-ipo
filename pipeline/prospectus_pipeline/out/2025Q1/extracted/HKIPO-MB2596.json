@@ -1,0 +1,425 @@
+{
+  "code": "2596.HK",
+  "fields": {
+    "col_L": {
+      "value": 4588400000,
+      "page": 389,
+      "quote": "Domestic Unlisted Shares 3,900,000,000 85.0% H Shares to be issued pursuant to the Global Offering 688,400,000 15.0% Total 4,588,400,000 100.0%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 688400000,
+      "page": 2,
+      "quote": "Total Number of Offer Shares under the Global Offering: 688,400,000 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 3900000000,
+      "page": 389,
+      "quote": "divided into 3,900,000,000 Domestic Unlisted Shares with a nominal value of RMB1.00 each",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 3900000000,
+      "page": 389,
+      "quote": "Domestic Unlisted Shares 3,900,000,000 85.0% H Shares to be issued pursuant to the Global Offering 688,400,000 15.0% Total 4,588,400,000 100.0%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 2,
+      "quote": "Total Number of Offer Shares under the Global Offering : 688,400,000 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 688400000,
+      "page": 389,
+      "quote": "H Shares to be issued pursuant to the Global Offering 688,400,000 15.0%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 619560000,
+      "page": 2,
+      "quote": "Number of International Offer Shares: 619,560,000 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 68840000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 68,840,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares (ordinary shares, RMB1.00 par)",
+      "page": 389,
+      "quote": "Domestic Unlisted Shares and H Shares are all ordinary Shares in the share capital of our Bank",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 688400000,
+      "page": 389,
+      "quote": "H Shares to be issued pursuant to the Global Offering 688,400,000 15.0%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 2.72,
+      "page": 2,
+      "quote": "Maximum Offer Price: HK$2.72 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027% ...",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 2.59,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$2.72 per Offer Share and is expected to be not less than HK$2.59 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2024-12-30",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences ... 9:00 a.m. on Monday, December 30, 2024",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2025-01-08",
+      "page": 7,
+      "quote": "The application for the Hong Kong Offer Shares will commence on Monday, December 30, 2024 through Wednesday, January 8, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "宜宾市商业银行股份有限公司",
+      "page": 1,
+      "quote": "宜賓市商業銀行股份有限公司 YIBIN CITY COMMERCIAL BANK CO., LTD GLOBAL OFFERING",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 581,
+      "quote": "The Historical Financial Information is presented in Renminbi (\"RMB\") and all values are rounded to the nearest thousand (RMB'000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 80413277000,
+      "page": 584,
+      "quote": "Total assets 68,490,372 80,413,277 93,444,044 100,192,656",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 93444044000,
+      "page": 584,
+      "quote": "Total assets 68,490,372 80,413,277 93,444,044 100,192,656",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 100192656000,
+      "page": 584,
+      "quote": "Total assets 68,490,372 80,413,277 93,444,044 100,192,656",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 8667952000,
+      "page": 585,
+      "quote": "Total equity 8,183,735 8,667,952 9,286,500 9,614,197",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 9286500000,
+      "page": 585,
+      "quote": "Total equity 8,183,735 8,667,952 9,286,500 9,614,197",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 9614197000,
+      "page": 585,
+      "quote": "Total equity 8,183,735 8,667,952 9,286,500 9,614,197",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 71745325000,
+      "page": 584,
+      "quote": "Total liabilities 60,306,637 71,745,325 84,157,544 90,578,459",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 84157544000,
+      "page": 584,
+      "quote": "Total liabilities 60,306,637 71,745,325 84,157,544 90,578,459",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 90578459000,
+      "page": 584,
+      "quote": "Total liabilities 60,306,637 71,745,325 84,157,544 90,578,459",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "银行类公司合并综合损益表无 net sales 科目；最接近的 Operating income FY2022 为 RMB1,867,012 千，但非 net sales，按规则不替代",
+      "confidence": "low"
+    },
+    "col_AG": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "银行类公司合并综合损益表无 net sales 科目；不以外币/其他收入替代",
+      "confidence": "low"
+    },
+    "col_AH": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "银行类公司无 net sales；year-1=6M2024 Operating income RMB1,077,953 千，按规则不替代也不外推",
+      "confidence": "low"
+    },
+    "col_AI": {
+      "value": 477529000,
+      "page": 582,
+      "quote": "Profit before income tax 368,958 477,529 542,567 291,239 346,982",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 542567000,
+      "page": 582,
+      "quote": "Profit before income tax 368,958 477,529 542,567 291,239 346,982",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 693964000,
+      "page": 582,
+      "quote": "Profit before income tax 368,958 477,529 542,567 291,239 346,982",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 432532000,
+      "page": 582,
+      "quote": "Net profit 328,275 432,532 477,416 254,569 261,832",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 477416000,
+      "page": 582,
+      "quote": "Net profit 328,275 432,532 477,416 254,569 261,832",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 523664000,
+      "page": 582,
+      "quote": "Net profit 328,275 432,532 477,416 254,569 261,832",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": "NaN",
+      "page": 531,
+      "quote": "银行无标准有息债务口径：负债以客户存款为主；Indebtedness 节仅披露 2024/10/31 同业存单 RMB1.62bn 及租赁负债 RMB27.48mn，非 year-1 期末（2024/6/30）数据，不匹配故填 NaN",
+      "confidence": "low"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards (as issued by the IASB)",
+      "page": 593,
+      "quote": "The consolidated financial statements of the Group have been prepared in accordance with International Financial Reporting Standards as issued by the International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "银行合并损益表无 gross profit 科目（无销售成本概念），填 NaN",
+      "confidence": "low"
+    },
+    "col_CG": {
+      "value": 14542000,
+      "page": 592,
+      "quote": "Purchase of property and equipment, and other long-term assets (60,851) (39,302) (68,741) (19,724) (14,542)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unaudited (interim)",
+      "page": 591,
+      "quote": "(Unaudited)",
+      "confidence": "medium"
+    },
+    "col_AT": {
+      "value": "30/06/24",
+      "page": 584,
+      "quote": "As at December 31, As at June 30, Note 2021 2022 2023 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 4964236000,
+      "page": 591,
+      "quote": "Net cash generated from operating activities 182,563 813,880 5,991,653 3,605,999 4,964,236",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 7177645000,
+      "page": 592,
+      "quote": "Cash and cash equivalents at the end of the year/period (Note 39) 7,614,126 8,221,780 7,849,200 4,539,500 7,177,645",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "招股书合并损益表及附注无 R&D 费用科目，银行无研发费用化披露，填 NaN",
+      "confidence": "low"
+    },
+    "col_AX": {
+      "value": "NaN",
+      "page": 582,
+      "quote": "合并报表无 development costs 资本化科目，亦无表格明确列示 '–'/nil，不猜零，填 NaN",
+      "confidence": "low"
+    },
+    "col_AY": {
+      "value": "NaN",
+      "page": 20,
+      "quote": "仅有 top five industries 行业集中度披露，无最大五家客户占收入比例披露，填 NaN",
+      "confidence": "low"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 193,
+      "quote": "the proportion of state-owned equity interests reached 80.7%",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "主要上市前股东：Wuliangye Group(19.99%)、宜宾市财政局(19.987%)、宜宾市翠屏区财政局(19.98%)、宜宾市南溪区财政局(16.94%)；无 VC/PE",
+      "page": 199,
+      "quote": "Shareholders directly holding 5% or more ... Wuliangye Group, Yibin Municipal Finance Bureau, Yibin Cuiping District Finance Bureau, and Yibin Nanxi District Finance Bureau",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 199,
+      "quote": "All of these Shareholders are holders of Domestic Unlisted Shares.",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": 194,
+      "quote": "上市前仅有国资/企业增资（2006 设立至 2021 增资至 RMB3.9bn），无 VC/PE 融资轮次",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 199,
+      "quote": "无 VC/PE 投资者，无对应持有年限可填",
+      "confidence": "high"
+    },
+    "col_BB": {
+      "value": "State-owned (no single controlling shareholder; largest shareholder Wuliangye Group is state-owned, controlled by Yibin SASAC 90% / Sichuan Finance Dept 10% via Yibin Development Holding)",
+      "page": 200,
+      "quote": "Wuliangye Group, one of our state-owned non-individual Shareholders and our single largest Shareholder, is wholly-owned by Yibin Development Holding Group Co., Ltd.",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": "NaN",
+      "page": 199,
+      "quote": "招股书未认定控股股东；最大单一股东 Wuliangye Group 上市后（假设无超额配售）占总股本 16.99%，无可填的单一控股股东经济权益",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": "NaN",
+      "page": 199,
+      "quote": "无控股股东认定；前四大股东各持 14.40%-16.988%，无单一控制投票权可填",
+      "confidence": "medium"
+    },
+    "col_BP": {
+      "value": "2006-12-27",
+      "page": 192,
+      "quote": "and was incorporated on December 27, 2006",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Yibin, Sichuan Province, the PRC",
+      "page": 192,
+      "quote": "Our Bank is a joint-stock city commercial bank headquartered in Yibin, Sichuan Province, the PRC",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Banking - city commercial bank (corporate banking, retail banking, financial markets)",
+      "page": 206,
+      "quote": "Incorporated in 2006, we are a city commercial bank in Yibin, Sichuan Province of China.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Hong Kong Main Board H-share listing (Listing Rules, PRC issuer, Stock Code 2596)",
+      "page": 1,
+      "quote": "Stock Code: 2596 宜賓市商業銀行股份有限公司 YIBIN CITY COMMERCIAL BANK CO., LTD GLOBAL OFFERING",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": 1,
+      "quote": "银行为传统城商行主板 H 股上市，非 Chapter 18C 特专科技公司，无技术商业化阶段披露",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 34,
+      "quote": "We intend to use the net proceeds from the Global Offering",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.015,
+      "page": 545,
+      "quote": "The Underwriters will receive an underwriting commission of 1.5% of the aggregate Offer Price of the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.015,
+      "page": 545,
+      "quote": "The Underwriters will receive an underwriting commission of 1.5% of the aggregate Offer Price of the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 544,
+      "quote": "to require us to issue and allot up to an aggregate of 103,260,000 additional H Shares, representing 15% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 74300000,
+      "page": 545,
+      "quote": "are estimated to amount to approximately HK$74.3 million in total",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "NA",
+      "page": 527,
+      "quote": "全文检索无 Cornerstone Investors/Cornerstone Placing 披露，本次全球发售无基石投资者",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "2655.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.0949,
+      "page": 7,
+      "quote": "2,699,000 6.93% 0.53% No Dream’ee (Hong Kong) Open-ended Fund Company 497,500 1.28% 0.10% No RIME Capital Limited(Note) 497,500 1.28% 0.10% No",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 1890.73,
+      "page": 6,
+      "quote": "Subscription level 1,890.73 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 161076,
+      "page": 6,
+      "quote": "No. of valid applications 161,076",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 6400681900,
+      "page": 12,
+      "quote": "NO. OF H SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF H SHARES APPLIED FOR",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 1,890.73 times",
+      "page": 6,
+      "quote": "Subscription level 1,890.73 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$20.10; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "15/12/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**15/12/2025 22:00**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 38930800,
+      "page": 4,
+      "quote": "Number of Offer Shares (taking into account the full exercise of the Offer Size Adjustment Option) 38,930,800",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3385300,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in Public Offer 3,385,300",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 35545500,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in International Offer (taking into account the full exercise of the Offer Size Adjustment Option) 35,545,500",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 5839600,
+      "page": 2,
+      "quote": "has been fully exercised by the Sponsor-Overall Coordinator (for itself and on behalf of the International Underwriters), on Friday, January 9, 2026, in respect of an aggregate of 5,839,600 Shares (th",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING\nACTIONS AND END OF STABILIZATION PERIOD (09/01/2026 22:56)"
+    },
+    "col_CW": {
+      "value": "No claw-back was triggered; the Public Offer remained at 3,385,300 Offer Shares while the International Offer rose to 35,545,500 Offer Shares through the full exercise of the Offer Size Adjustment Option.",
+      "page": 6,
+      "quote": "Claw-back triggered No",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 700550000,
+      "page": 5,
+      "quote": "Net proceeds HK$700.55 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.178,
+      "page": 17,
+      "quote": "Immediately after the completion of the Global Offering, 91,263,740 H Shares, representing approximately 17.8% of the issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 511871975,
+      "page": 4,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 511,871,975",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0688,
+      "page": 17,
+      "quote": "91,263,740 H Shares, representing approximately 17.8% of the issued share capital of our Company (before any exercise of the Over-allotment Option) will count towards the public float",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Free float denominator = number of issued Shares upon Listing before exercise of the Over-allotment Option (511,871,975); numerator = final Global Offering Shares (38,930,800) less cornerstone allocation (3,694,000)",
+      "page": 4,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 511,871,975",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 511871975,
+      "page": 4,
+      "quote": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) 511,871,975",
+      "confidence": "high"
+    }
+  }
+}

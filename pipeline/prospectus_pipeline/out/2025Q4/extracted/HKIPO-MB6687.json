@@ -1,0 +1,425 @@
+{
+ "code": "6687.HK",
+ "fields": {
+  "col_L": {
+   "value": 426038600,
+   "page": 297,
+   "quote": "Shares to be issued under the Global Offering 68,166,200 6,816.6200 Total 426,038,600 42,603.8600",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 68166200,
+   "page": 297,
+   "quote": "Shares to be issued under the Global Offering 68,166,200 6,816.6200 Total 426,038,600 42,603.8600",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 357872400,
+   "page": 297,
+   "quote": "Shares in issue (including the Shares upon re-designation and re-classification of the Preferred Shares) 3,578,724 357.8724",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 357872400,
+   "page": 297,
+   "quote": "Shares in issue (including the Shares upon re-designation and re-classification of the Preferred Shares) 3,578,724 357.8724",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 68,166,200 Offer Shares",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 68166200,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 68,166,200 Offer Shares",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 61349500,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 61,349,500 Offer Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 6816700,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 6,816,700 Offer Shares",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 30.6,
+   "page": 2,
+   "quote": "Offer Price : HK$30.60 per Offer Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 30.6,
+   "page": 2,
+   "quote": "Offer Price : HK$30.60 per Offer Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 412,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 1458512000,
+   "page": 415,
+   "quote": "Total assets 1,458,512 1,743,112 2,215,325 1,880,907",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1743112000,
+   "page": 415,
+   "quote": "Total assets 1,458,512 1,743,112 2,215,325 1,880,907",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 2215325000,
+   "page": 415,
+   "quote": "Total assets 1,458,512 1,743,112 2,215,325 1,880,907",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": -1513067000,
+   "page": 416,
+   "quote": "Total deficits in equity (1,513,067) (3,673,221) (3,649,496) (3,683,143)",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": -3673221000,
+   "page": 416,
+   "quote": "Total deficits in equity (1,513,067) (3,673,221) (3,649,496) (3,683,143)",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": -3649496000,
+   "page": 416,
+   "quote": "Total deficits in equity (1,513,067) (3,673,221) (3,649,496) (3,683,143)",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 2971579000,
+   "page": 416,
+   "quote": "Total liabilities 2,971,579 5,416,333 5,864,821 5,564,050",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 5416333000,
+   "page": 416,
+   "quote": "Total liabilities 2,971,579 5,416,333 5,864,821 5,564,050",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 5864821000,
+   "page": 416,
+   "quote": "Total liabilities 2,971,579 5,416,333 5,864,821 5,564,050",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 523078000,
+   "page": 413,
+   "quote": "Revenue 6 523,078 697,191 909,750 420,973 523,642",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 697191000,
+   "page": 413,
+   "quote": "Revenue 6 523,078 697,191 909,750 420,973 523,642",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 909750000,
+   "page": 413,
+   "quote": "Revenue 6 523,078 697,191 909,750 420,973 523,642",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": -507079000,
+   "page": 413,
+   "quote": "Loss before income tax (507,079) (490,023) (79,641) (60,203) (40,303)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": -490023000,
+   "page": 413,
+   "quote": "Loss before income tax (507,079) (490,023) (79,641) (60,203) (40,303)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -79641000,
+   "page": 413,
+   "quote": "Loss before income tax (507,079) (490,023) (79,641) (60,203) (40,303)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": -507079000,
+   "page": 413,
+   "quote": "(Loss)/profit for the year/period (507,079) (490,023) 10,583 (60,339) (39,544)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": -490023000,
+   "page": 413,
+   "quote": "(Loss)/profit for the year/period (507,079) (490,023) 10,583 (60,339) (39,544)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 10583000,
+   "page": 413,
+   "quote": "(Loss)/profit for the year/period (507,079) (490,023) 10,583 (60,339) (39,544)",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.024,
+   "page": 371,
+   "quote": "The Underwriters will receive an underwriting commission of 2.4% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.024,
+   "page": 371,
+   "quote": "The Underwriters will receive an underwriting commission of 2.4% of the aggregate Offer Price of all the Offer Shares",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 371,
+   "quote": "up to an aggregate of 10,224,900 additional Shares (representing in aggregate approximately 15% of the Offer Shares initially being offered under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "E-commerce SaaS ERP provider (software-as-a-service enterprise resource planning for e-commerce merchants)",
+   "page": 10,
+   "quote": "Jushuitan (聚水潭) is China’s largest e-commerce SaaS ERP provider in terms of relevant revenue in 2024, with a market share of 24.4%",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Chapter 8 of the Listing Rules (market capitalisation/revenue test under Rule 8.05(3))",
+   "page": 35,
+   "quote": "We have applied for listing under Chapter 8 of the Listing Rules and satisfied the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules.",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/12/24",
+   "page": 413,
+   "quote": "CONSOLIDATED STATEMENTS OF COMPREHENSIVE (LOSS)/INCOME Year ended 31 December Six months ended 30 June Note 2022 2023 2024 2024 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 279170000,
+   "page": 422,
+   "quote": "Net cash generated from operating activities 78,711 210,381 279,170 1,902 159,929",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 1085276000,
+   "page": 415,
+   "quote": "Cash and cash equivalents 22(a) 426,659 897,327 1,085,276 730,831",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 239798000,
+   "page": 413,
+   "quote": "Research and development expenses 7 (234,327) (233,913) (239,798) (112,096) (115,379)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 432,
+   "quote": "During the years ended 31 December 2022, 2023 and 2024 and the six months ended 30 June 2024 and 2025, there were no development costs meeting these criteria and capitalised as intangible assets.",
+   "confidence": "high"
+  },
+  "col_AY": {
+   "value": 0.01,
+   "page": 19,
+   "quote": "Our top five customers in each of 2022, 2023, 2024 and the six months ended June 30, 2025 in aggregate only accounted for 1.2%, 1.2%, 1.0% and 1.3% of our total revenues",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "聚水潭集团股份有限公司",
+   "page": 2,
+   "quote": "JST Group Corporation Limited 聚水潭集團股份有限公司 (A company incorporated in the Cayman Islands with limited liability)",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Blue Lake Capital Opportunity Fund; CUAM Entities; DAMSIMF; Fourier Global Master Fund; GRANITE ASIA VIII INVESTMENTS PTE. LTD.; Greenwoods HK; GTCS Holdings; HongShan Growth; Jain Global Master Fund; Perseverance Asset Management; Stoneylake Global Alpha Fund; WT Asset Management; 3W Fund",
+   "page": 288,
+   "quote": "Blue Lake Capital Opportunity Fund 10 2,543,300 3.73% 0.60% 2.82% 0.57%",
+   "confidence": "medium"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 34,
+   "quote": "OUR PRE-IPO INVESTORS Since the establishment of our Company, we have undergone seven rounds of financing from the Pre-IPO Investors, raising over RMB600 million in total.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 170,
+   "quote": "PRE-IPO INVESTMENTS 1. Overview We have received several rounds of pre-IPO investments, details of which are set forth below:",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 170,
+   "quote": "PRE-IPO INVESTMENTS 1. Overview We have received several rounds of pre-IPO investments, details of which are set forth below:",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 177,
+   "quote": "CICC Gongying Fund is a limited partnership established under the laws of the PRC. The general partner of CICC Gongying Fund is CICC Capital Management Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "GRANITE ASIA VIII INVESTMENTS PTE. LTD.; Shanghai Jingyu Enterprise Management Consulting Partnership (L.P.); VP JST II LP; VP JST I LP; Shanghai Blue Lake; Blue Lake Capital Fund II, L.P.; Blue Lake Capital Opportunity Fund I, L.P.; Max Dazzle Limited; CICC Gongying Fund; Shanghai Zhuolu Management Consulting Partnership (L.P.); IKARIA GROUP LIMITED; Seashine Capital Limited; Beijing Weiguang Equity Investment Partnership (L.P.); Ameba Bamboo Limited; Ameba Mercury Limited; Fuzhou Ameba; Suzhou Yuanjing; Hangzhou Yuanjing; Huzhou Wanlu; Dimension Enterprises Limited; Jiaxing Huihai; Daniel and Owen Limited; Bottle Tea Limited",
+   "page": 161,
+   "quote": "Beijing Weiguang Equity Investment Partnership (L.P.)) 189,224 4.96% Dimension Enterprises Limited 166,745 4.37% Fuzhou Ameba Hongtian Venture Capital Partnership (L.P.)",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 114,
+   "quote": "Mr. Wang Donghui, Mr. Chen Hongliang (陳洪亮) and Mr. Zhou Kui (周逵) are board representatives of our Pre-IPO Investors prior to Listing",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series Angel",
+   "page": 170,
+   "quote": "1 Series Angel(3) November 10, 2015 December 8, 2015 366,863 12.9",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 9.92,
+   "page": 170,
+   "quote": "Series Angel(3) November 10, 2015 December 8, 2015 366,863",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural person (Mr. Luo Haidong)",
+   "page": 34,
+   "quote": "Mr. Luo, our chairman of the Board, executive Director and CEO, will control the voting rights of approximately 39.37% of the total issued share capital",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.1916,
+   "page": 34,
+   "quote": "the voting rights of the Shares, representing approximately 19.16% of the total issued share capital of our Company, held by Black Tea Limited",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.3937,
+   "page": 34,
+   "quote": "Mr. Luo, our chairman of the Board, executive Director and CEO, will control the voting rights of approximately 39.37% of the total issued share capital",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 16178000,
+   "page": 351,
+   "quote": "Lease Liabilities – Current portion 7,802 11,778 9,315 11,256 12,267 – Non-current portion 2,313 17,443 6,863 1,930 782",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialised SaaS products with recurring subscription revenue",
+   "page": 13,
+   "quote": "Our business has experienced rapid growth along with the success of our customers. Our total revenue and ARR reached RMB909.8 million and RMB1,098.1 million in 2024",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 33,
+   "quote": "Approximately 55%, or HK$1,065.6 million, will be used for enhancing our research and development capabilities to enrich our product offerings",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares",
+   "page": 182,
+   "quote": "Shareholder(1) Ordinary Shares Series Angel Preferred Shares Series Pre-A Preferred Shares",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "02/08/21",
+   "page": 424,
+   "quote": "JST Group Corporation Limited (the “Company”) was incorporated in the Cayman Islands on 2 August 2021 as an exempted company with limited liability",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, PRC",
+   "page": 118,
+   "quote": "Headquarters and Principal Place of Business in the PRC 6/F, Building T4, Hongqiaohui No. 990 Shenchang Road Shanghai PRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 303,
+   "quote": "Our historical financial information has been prepared in accordance with International Financial Reporting Standards as issued by International Accounting Standards Board",
+   "confidence": "medium"
+  },
+  "col_CC": {
+   "value": "13/10/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Monday, October 13, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "16/10/25",
+   "page": 5,
+   "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . .12:00 noon on Thursday, October 16, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 426038600,
+   "page": 297,
+   "quote": "Shares to be issued under the Global Offering 68,166,200 6,816.6200 Total 426,038,600 42,603.8600",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 622851000,
+   "page": 413,
+   "quote": "Gross profit 273,513 434,606 622,851 279,380 376,069",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 1818000,
+   "page": 464,
+   "quote": "Year ended 31 December 2024 Opening net book amount 1,366 548 3,607 5,521 Additions 307 1,061 450 1,818 Disposals (32) (79) – (111)",
+   "confidence": "medium"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 410,
+   "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 148300000,
+   "page": 372,
+   "quote": "Commissions and Fees”) are estimated to be approximately HK$148.3 million (equivalent to approximately RMB135.4 million)",
+   "confidence": "high"
+  }
+ }
+}

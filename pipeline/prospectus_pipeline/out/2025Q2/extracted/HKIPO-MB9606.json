@@ -1,0 +1,425 @@
+{
+  "code": "9606.HK",
+  "fields": {
+    "col_L": {
+      "value": 83175764,
+      "page": 488,
+      "quote": "83,175,764",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 15071600,
+      "page": 488,
+      "quote": "15,071,600",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 68104164,
+      "page": 488,
+      "quote": "68,104,164",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 68104164,
+      "page": 488,
+      "quote": "68,104,164",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 488,
+      "quote": "Shares to be issued pursuant to the Global Offering",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 15071600,
+      "page": 488,
+      "quote": "15,071,600",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 13564400,
+      "page": 2,
+      "quote": "13,564,400 Shares (subject to",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1507200,
+      "page": 2,
+      "quote": "1,507,200 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 488,
+      "quote": "Ordinary shares with a par value of",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 83175764,
+      "page": 488,
+      "quote": "83,175,764",
+      "confidence": "medium"
+    },
+    "col_T": {
+      "value": 103.2,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$103.20 and is currently expected to",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 94.6,
+      "page": 2,
+      "quote": "be not less than HK$94.60",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "07/04/25",
+      "page": 5,
+      "quote": "9:00 a.m. on\nMonday, April 7, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "10/04/25",
+      "page": 5,
+      "quote": "12:00 noon on\nThursday, April 10, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "映恩生物",
+      "page": 2,
+      "quote": "映恩生物",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 31,
+      "quote": "(RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": "NaN",
+      "page": 587,
+      "quote": "Total assets",
+      "confidence": "low"
+    },
+    "col_X": {
+      "value": 1499909000,
+      "page": 587,
+      "quote": "1,499,909\n2,090,222",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 2090222000,
+      "page": 587,
+      "quote": "1,499,909\n2,090,222",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": "NaN",
+      "page": 587,
+      "quote": "Total deficits",
+      "confidence": "low"
+    },
+    "col_AA": {
+      "value": -1123913000,
+      "page": 587,
+      "quote": "(1,123,913)\n(2,021,899)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -2021899000,
+      "page": 587,
+      "quote": "(1,123,913)\n(2,021,899)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": "NaN",
+      "page": 587,
+      "quote": "Total liabilities",
+      "confidence": "low"
+    },
+    "col_AD": {
+      "value": 2623822000,
+      "page": 587,
+      "quote": "2,623,822\n4,112,121",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 4112121000,
+      "page": 587,
+      "quote": "2,623,822\n4,112,121",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": "NaN",
+      "page": 31,
+      "quote": "Revenue",
+      "confidence": "low"
+    },
+    "col_AG": {
+      "value": 1786540000,
+      "page": 31,
+      "quote": "1,786,540\n1,941,257",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 1941257000,
+      "page": 31,
+      "quote": "1,786,540\n1,941,257",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": "NaN",
+      "page": 31,
+      "quote": "Loss before income tax",
+      "confidence": "low"
+    },
+    "col_AJ": {
+      "value": -202249000,
+      "page": 31,
+      "quote": "(202,249)\n(1,014,546)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -1014546000,
+      "page": 31,
+      "quote": "(202,249)\n(1,014,546)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": "NaN",
+      "page": 31,
+      "quote": "Loss for the year attributable to the owners of",
+      "confidence": "low"
+    },
+    "col_AM": {
+      "value": -357512000,
+      "page": 31,
+      "quote": "(357,512)\n(1,050,434)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -1050434000,
+      "page": 31,
+      "quote": "(357,512)\n(1,050,434)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 5289000,
+      "page": 587,
+      "quote": "2,302",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 448,
+      "quote": "in conformity with IFRS Accounting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 784667000,
+      "page": 31,
+      "quote": "1,358,885\n784,667",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 4079000,
+      "page": 590,
+      "quote": "(11,284)\n(4,079)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 583,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/24",
+      "page": 587,
+      "quote": "As at 31 December",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 285781000,
+      "page": 32,
+      "quote": "816,335\n285,781",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 1208906000,
+      "page": 32,
+      "quote": "1,130,889\n1,208,906",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 836726000,
+      "page": 31,
+      "quote": "(558,997)\n(836,726)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 611,
+      "quote": "capitalization criteria for internally generated intangible assets is met when obtaining regulatory",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 1.0,
+      "page": 435,
+      "quote": "1,941,257\n100.0",
+      "confidence": "medium"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 275,
+      "quote": "Our Pre-IPO Investors include private equity",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 278,
+      "quote": "The management team of King Star Med has been specializing in private equity and venture capital investment",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 275,
+      "quote": "funds and other professional investment companies, many of which are highly experienced",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": 28,
+      "quote": "Wuxi Venture, a wholly-owned subsidiary of WuXi Biologics (Cayman) Inc. is one",
+      "confidence": "low"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 149,
+      "quote": "Oriza Holdings is ultimately controlled by Suzhou Industrial Park Administrative Committee",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 521,
+      "quote": "As of the Latest Practicable Date, LAV USD Group had assets under management of",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "LAV USD; King Star Med; Shanghai Yingjia; Orchids; Golden Sword; China Singapore Suzhou Industrial Park Ventures (CSVC)",
+      "page": 278,
+      "quote": "Our Pre-IPO Investors include certain Sophisticated Investors, such as King Star Med,",
+      "confidence": "medium"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": 488,
+      "quote": "Shares in issue as of the Latest",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 498,
+      "quote": "for over seven years. He has been serving as\nmanaging director at Lilly Asia Ventures, a biomedical venture capital firm focused on\nhealthcare investment, since Febr",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series Seed Financing (April 24, 2020)",
+      "page": 274,
+      "quote": "April 24, 2020",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 4.9,
+      "page": 274,
+      "quote": "May 14, 2020",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "无单一控股股东；创始人朱忠远博士与单一最大股东 LAV USD",
+      "page": 273,
+      "quote": "single largest shareholder (i.e., LAV USD) and its founder (i.e., Dr. ZHU Zhongyuan)",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.2389,
+      "page": 149,
+      "quote": "LAV USD held approximately 23.89% of the total issued share",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.2389,
+      "page": 273,
+      "quote": "Upon the Listing, the Voting Rights Proxy Agreement will automatically terminate.",
+      "confidence": "medium"
+    },
+    "col_BP": {
+      "value": "03/07/2019",
+      "page": 591,
+      "quote": "was incorporated on 3 July 2019 in the Cayman Islands with",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Unit 301, Building 3, Zone B, Phase III, Biopharmaceutical Industrial Park, Pudong New Area, Shanghai, the PRC",
+      "page": 168,
+      "quote": "Unit 301, Building 3, Zone B\nPhase III, Biopharmaceutical Industrial Park",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "抗体偶联药物（ADC）创新药研发（生物科技）",
+      "page": 14,
+      "quote": "Since our inception, we have focused primarily on the independent discovery and",
+      "confidence": "medium"
+    },
+    "col_AS": {
+      "value": "Chapter 18A of the Listing Rules（18A 生物科技公司）",
+      "page": 11,
+      "quote": "seeking to list on the Main Board of the Stock Exchange under Chapter 18A of the",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "尚无产品获批上市（临床开发阶段，未取得任何药品上市许可）",
+      "page": 29,
+      "quote": "As of the Latest Practicable Date, we had not obtained marketing approval for any drug",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 38,
+      "quote": "and develop new drug assets; and (iv) approximately 10.0%, or HK$137.0 million, will be used",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 547,
+      "quote": "commission of 3.0% of the aggregate Offer Price of all the Offer Shares (including any Offer",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 547,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 49,
+      "quote": "15% of the Offer Shares initially available under the Global Offering assuming the Offer Size Adjustment",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 120300000,
+      "page": 38,
+      "quote": "Listing expenses to be borne by us are estimated to be approximately HK$120.3 million",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "BioNTech SE; LAV Star Opportunities Limited; Lake Bleu Prime Healthcare Master Fund Limited; Lake Bleu Innovation Healthcare Master Fund Limited; TruMed Healthcare Master Fund; ABS Direct Equity Fund LLC Asia Series 11; TruMed Health Innovation Fund LP; Fullgoal Asset Management (HK) Limited; Fullgoal Fund Management Co., Ltd.; E Fund Management Co., Ltd.; E Fund Management (Hong Kong) Co., Ltd.; China Universal Asset Management Co., Ltd.; Panjing Harbourview Investment Fund; MY Asian Opportunities Master Fund, L.P.; Emerging Markets Healthcare Partners LLC; Worldwide Healthcare Partners LLC; Suzhou Suchuang Biomedical Health Venture Capital Fund Partnership (Limited Partnership)",
+      "page": 521,
+      "quote": "BioNTech SE (“BioNTech”) is an international company headquartered in Germany,",
+      "confidence": "high"
+    }
+  }
+}

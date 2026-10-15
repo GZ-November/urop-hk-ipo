@@ -113,12 +113,15 @@ class RealPanelTests(unittest.TestCase):
         frame = panel.load_master()
         # 204 = 2 标识列 + 202 变量；--derive 生成的 master 再多 5 个派生列
         self.assertGreaterEqual(len(frame.columns), 204)
-        self.assertEqual(len(frame), 155)  # 148 pre-2026Q3-expansion + 7 new Q3 issuers
+        has_2025q4 = (WS / "exports" / "HKIPO-MB2025Q4_clean.csv").exists()
+        expected_rows = 202 if has_2025q4 else 155
+        expected_cohorts = 6 if has_2025q4 else 5
+        self.assertEqual(len(frame), expected_rows)
         self.assertTrue(str(frame["date_of_listing"].dtype).startswith("datetime64"))
         self.assertTrue(frame["ipo_subscription_price_hk"].dtype.kind == "f")
         if "leverage_y1" in frame.columns:
             self.assertTrue(frame["leverage_y1"].dtype.kind == "f")
-        self.assertEqual(frame["cohort"].nunique(), 5)
+        self.assertEqual(frame["cohort"].nunique(), expected_cohorts)
 
     @unittest.skipUnless((WS / "exports" / f"{MASTER_STEM}_clean.csv").is_file()
                          and (WS / "registry" / REGISTRY_NAME).is_file(),

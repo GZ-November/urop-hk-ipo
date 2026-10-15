@@ -1,0 +1,425 @@
+{
+  "code": "2661.HK",
+  "fields": {
+    "col_L": {
+      "value": 206374209,
+      "page": 242,
+      "quote": "26,540,000 Shares to be issued under the Global Offering . . . . . . . . . . . . . . . . . . . 0.0001 12.86% 206,374,209 Shares in total",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 26540000,
+      "page": 242,
+      "quote": "26,540,000 Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 179834209,
+      "page": 242,
+      "quote": "179,834,209 Shares in issue(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0.0001 87.14% 26,540,000 Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 179834209,
+      "page": 242,
+      "quote": "179,834,209 Shares in issue(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0.0001 87.14% 26,540,000 Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 2,
+      "quote": "Global Offering Total number of Offer Shares under the Global Offering : 26,540,000 Shares (subject to the Over-allotment Option) Number of Hong Kong Offer Shares : 2,654,000 Shares",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 26540000,
+      "page": 242,
+      "quote": "26,540,000 Shares to be issued under the Global Offering",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 23886000,
+      "page": 308,
+      "quote": "the International Offering of an aggregate of 23,886,000 Offer Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2654000,
+      "page": 308,
+      "quote": "the Hong Kong Public Offering of initially 2,654,000 Offer Shares (subject to reallocation) in Hong Kong as described in the paragraph headed",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 22.68,
+      "page": 2,
+      "quote": "Offer Price : HK$22.68 per Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, the Stock Exchange trading fee of 0.00565% and AFRC transaction levy of 0.00015%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 22.68,
+      "page": 2,
+      "quote": "The Offer Price will be HK$22.68 per Offer Share, unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 331,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 706428000,
+      "page": 22,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 612,339 706,428 689,229 636,623",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 689229000,
+      "page": 22,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 612,339 706,428 689,229 636,623",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 636623000,
+      "page": 22,
+      "quote": "Total assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 612,339 706,428 689,229 636,623",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -1197920000,
+      "page": 22,
+      "quote": "Net liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,240,738 1,197,920 1,218,546 1,131,297",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -1218546000,
+      "page": 22,
+      "quote": "Net liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,240,738 1,197,920 1,218,546 1,131,297",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -1131297000,
+      "page": 22,
+      "quote": "Net liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,240,738 1,197,920 1,218,546 1,131,297",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1904348000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (1,853,077) (1,904,348) (1,907,775) (1,767,920)",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 1907775000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (1,853,077) (1,904,348) (1,907,775) (1,767,920)",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 1767920000,
+      "page": 22,
+      "quote": "Total liabilities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (1,853,077) (1,904,348) (1,907,775) (1,767,920)",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 489961000,
+      "page": 17,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . 393,607 100.0 489,961 100.0 945,006 100.0 355,185 100.0 656,089 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 945006000,
+      "page": 17,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . 393,607 100.0 489,961 100.0 945,006 100.0 355,185 100.0 656,089 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 1312178000,
+      "page": 17,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . . 393,607 100.0 489,961 100.0 945,006 100.0 355,185 100.0 656,089 100.0",
+      "confidence": "medium"
+    },
+    "col_AI": {
+      "value": 104535000,
+      "page": 17,
+      "quote": "Profit before tax . . . . . . . . . . 6,339 1.6 104,535 21.3 7,380 0.8 11,113 3.1 86,774 13.2",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 7380000,
+      "page": 17,
+      "quote": "Profit before tax . . . . . . . . . . 6,339 1.6 104,535 21.3 7,380 0.8 11,113 3.1 86,774 13.2",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 173548000,
+      "page": 17,
+      "quote": "Profit before tax . . . . . . . . . . 6,339 1.6 104,535 21.3 7,380 0.8 11,113 3.1 86,774 13.2",
+      "confidence": "medium"
+    },
+    "col_AL": {
+      "value": 73616000,
+      "page": 17,
+      "quote": "(Loss)/Profit for the year/ period . . . . . . . . . . . . . . . . . (2,094) (0.5) 73,616 15.0 10,398 1.1 15,996 4.5 86,045 13.1",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 10398000,
+      "page": 17,
+      "quote": "(Loss)/Profit for the year/ period . . . . . . . . . . . . . . . . . (2,094) (0.5) 73,616 15.0 10,398 1.1 15,996 4.5 86,045 13.1",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 172090000,
+      "page": 336,
+      "quote": "At January 1, 2025 . . . . . . . . . . . . .\n49 (109,385) (78,273)\n96,565\n(1,127,502) (1,218,546)\n–\n(1,218,546)\nProfit for the period . . . . . . . . . . . . .\n–\n–\n-\n–\n86,045",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.035,
+      "page": 306,
+      "quote": "Our Company will pay an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.035,
+      "page": 306,
+      "quote": "Our Company will pay an underwriting commission of 3.5% of the aggregate Offer Price of all the Offer",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 307,
+      "quote": "require us to allot and issue up to an aggregate of 3,981,000 additional Shares, representing approximately 15.0% of the number of Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Healthcare-related and insurance-related solutions in China (digital integrated healthcare and health insurance services)",
+      "page": 249,
+      "quote": "We provide healthcare-related and insurance-related solutions in China. We ranked 10th in China's digital integrated healthcare and health insurance services market in terms of revenue in 2024",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board (general eligibility; no Chapter 18A/18C specialist regime disclosed)",
+      "page": 78,
+      "quote": "APPLICATION FOR LISTING ON THE STOCK EXCHANGE We have applied to the Listing Committee for the listing of, and permission to deal in, the Shares in issue",
+      "confidence": "medium"
+    },
+    "col_AT": {
+      "value": "30/06/25",
+      "page": 329,
+      "quote": "for each of the three years ended December 31, 2024 and the six months ended June 30, 2025 (the “Track Record Period”)",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 52446000,
+      "page": 23,
+      "quote": "Net cash generated from operating activities . . . . . 57,201 7,834 83,791 45,917 52,446",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 315335000,
+      "page": 23,
+      "quote": "Cash and cash equivalents at end of the year/ period . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 295,609 293,220 362,578 355,388 315,335",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 35370000,
+      "page": 17,
+      "quote": "Research and development expenses . . . . . . . . . . . . . . . (52,817) (13.4) (61,389) (12.5) (72,037) (7.6) (32,802) (9.2) (35,370) (5.4)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AY": {
+      "value": 0.659,
+      "page": 39,
+      "quote": "In 2022, 2023, 2024 and the six months ended June 30, 2025, revenue generated from our top five customers accounted for 75.4%, 71.7%, 65.6% and 65.9% of our total revenue, respectively",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "轻松健康集团",
+      "page": 2,
+      "quote": "QingSong Health Corporation 轻松健康集团 (Incorporated in the Cayman Islands with limited liability)",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Guangdong-Macao In-Depth Cooperation Zone In Hengqin Aoqin Heming Investment Partnership (Limited Partnership)",
+      "page": 246,
+      "quote": "cornerstone investment agreement (the “Cornerstone Investment Agreement”) with Guangdong-Macao In-Depth Cooperation Zone In Hengqin Aoqin Heming Investment Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 24,
+      "quote": "Since our inception, we have attracted a number of reputable and influential institutional or corporate investors to invest in our Company, such as Sunshine Insurance, IDG, DT Global and Tencent.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 135,
+      "quote": "IDG China Media Fund II L.P. is established in the United States and is a venture capital fund principally engaged in equity investments in early-stage companies in media sectors in the PRC.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 136,
+      "quote": "TDH Venture Capital Investment Limited is a company incorporated under the laws of British Virgin Islands, and is an investment holding company ultimately controlled by ZHAO Hui",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 1,
+      "page": 136,
+      "quote": "It is controlled by Tencent Holdings Limited (騰訊控股有限公司) (a company listed on the Stock Exchange, stock code: 0700), an independent third party.",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 24,
+      "quote": "Since our inception, we have attracted a number of reputable and influential institutional or corporate investors to invest in our Company, such as Sunshine Insurance, IDG, DT Global and Tencent.",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "IDG China Media Fund II L.P.; IDG China Capital Fund III L.P.; IDG China Capital III Investors L.P.; Sunshine Life Insurance Corporation Limited; DT Global Consumer Investment Company Limited; TDH Venture Capital Investment Limited; Genesis Premium Holdings Limited; Grand Path Ventures Limited; CE FINTECH I LIMITED PARTNERSHIP; Chinese Rose Investment Limited",
+      "page": 130,
+      "quote": "summary of the shareholding of our existing Pre-IPO Investors in our Company relating to the Pre-IPO Investments immediately prior to the Listing:",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.5548,
+      "page": 131,
+      "quote": "Total . . . . . . . . . . . 212,500,000 92,391,300 263,932,200 16,364,100 99,288,600 28,255,429 245,535,714 39,391,140 997,658,483 99,765,850 55.48% 48.34%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 136,
+      "quote": "Grand Path Ventures Limited is a company incorporated under the laws of British Virgin Islands, and is ultimately controlled by WU Bin, our non-executive Director.",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A Investments",
+      "page": 132,
+      "quote": "Series A Investments(3)(4) . . . . . . . . April 7, 2015 August 18, 2015",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 10.69,
+      "page": 132,
+      "quote": "Series A Investments(3)(4) . . . . . . . . April 7, 2015 August 18, 2015",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Natural person (Ms. YANG Yin, founder and ultimate controlling shareholder)",
+      "page": 24,
+      "quote": "is the ultimate controlling shareholder, and Ms. Yang together with QingSongChou Holdings Corporation, Clematis Holding Limited, Vlove Holdings Limited and QSC ESO Limited",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.2085,
+      "page": 24,
+      "quote": "comprising approximately 20.85% Shares beneficially owned by herself through QingSongChou Holdings Corporation and approximately 13.08% Shares vested to Ms. Yang by the Proxy Investors",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3394,
+      "page": 121,
+      "quote": "Ms. Yang, our ultimate Controlling Shareholder, will control approximately 33.94% of all the voting rights of our Company through the following (i) as to 20.85% voting rights",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 1628902000,
+      "page": 291,
+      "quote": "Total . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,608,967 1,687,975 1,753,644 1,628,902 1,559,800",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialised (AIcare technology stack deployed across healthcare and insurance services)",
+      "page": 16,
+      "quote": "This ecosystem is powered by our AIcare technology stack, which matches healthcare resources and funding solutions according to user needs",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 26,
+      "quote": "We estimate the net proceeds of the Global Offering which we will receive, at the Offer Price of HK$22.68 per Offer Share",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 242,
+      "quote": "After completion of the Global Offering, our Company will have only one class of Shares, namely the Ordinary Shares, and each ranks pari passu with the other Shares.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "12/11/14",
+      "page": 340,
+      "quote": "Corporation in September 2020) was incorporated in the Cayman Islands on November 12, 2014 as an exempted company with limited",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Beijing, PRC",
+      "page": 84,
+      "quote": "Headquarters 7/F, Building F, Yonghe Mansion No. 28 Andingmen East Street Dongcheng District Beijing, PRC",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS Accounting Standards",
+      "page": 331,
+      "quote": "have been prepared in accordance with the IFRS Accounting Standards issued by International Accounting Standards Board",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "15/12/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Monday, December 15, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "18/12/25",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Thursday, December 18, 2025",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 206374209,
+      "page": 242,
+      "quote": "26,540,000 Shares to be issued under the Global Offering . . . . . . . . . . . . . . . . . . . 0.0001 12.86% 206,374,209 Shares in total",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 213215000,
+      "page": 17,
+      "quote": "Gross profit . . . . . . . . . . . . . . 325,163 82.6 391,475 79.9 361,625 38.3 175,365 49.4 213,215 32.5",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 153000,
+      "page": 338,
+      "quote": "Purchase of property and equipment . . . . . . . . . . . . . . . – (181) (1,005) (547) (153)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified opinion",
+      "page": 330,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purposes of the accountants’ report, a true and fair view of the Group’s financial position as at December 31, 2022, 2023 and 2024",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 88500000,
+      "page": 292,
+      "quote": "We expect to incur a total of approximately RMB80.5 million (HK$88.5 million) of listing expenses in connection with the Global Offering",
+      "confidence": "high"
+    }
+  }
+}

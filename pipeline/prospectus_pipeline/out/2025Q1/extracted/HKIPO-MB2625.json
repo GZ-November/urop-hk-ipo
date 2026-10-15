@@ -1,0 +1,425 @@
+{
+  "code": "2625.HK",
+  "fields": {
+    "col_L": {
+      "value": 214246910,
+      "page": 393,
+      "quote": "H Shares converted from Domestic Unlisted Shares 160,684,910 75.00% H Shares to be issued pursuant to the Global Offering 53,562,000 25.00% Total 214,246,910 100.00%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 53562000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 53,562,000 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 160684910,
+      "page": 393,
+      "quote": "H Shares converted from Domestic Unlisted Shares 160,684,910 75.00%",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 160684910,
+      "page": 393,
+      "quote": "H Shares converted from Domestic Unlisted Shares 160,684,910 75.00% H Shares to be issued pursuant to the Global Offering 53,562,000 25.00% Total 214,246,910 100.00%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 393,
+      "quote": "H Shares to be issued pursuant to the Global Offering 53,562,000 25.00%",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 53562000,
+      "page": 393,
+      "quote": "H Shares to be issued pursuant to the Global Offering 53,562,000 25.00% Total 214,246,910 100.00%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 48205000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 48,205,000 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 5357000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 5,357,000 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares",
+      "page": 393,
+      "quote": "H Shares converted from Domestic Unlisted Shares 160,684,910 75.00% H Shares to be issued pursuant to the Global Offering 53,562,000 25.00%",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 214246910,
+      "page": 393,
+      "quote": "H Shares converted from Domestic Unlisted Shares 160,684,910 75.00% H Shares to be issued pursuant to the Global Offering 53,562,000 25.00% Total 214,246,910 100.00%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 3.0,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$3.00 per H Share, plus brokerage of 1.0%,",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 2.5,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$3.00 per Offer Share and is currently expected to be not less than HK$2.50 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "21/03/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Friday, 21 March 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "26/03/25",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . . . . . . . . . . . . . . . 12:00 noon on Wednesday, 26 March 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "江苏宏信超市连锁股份有限公司",
+      "page": 1,
+      "quote": "Jiangsu Horizon Chain Supermarket Company Limited 江蘇宏信超市連鎖股份有限公司",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 562,
+      "quote": "The Historical Financial Information and the Stub Period Corresponding Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1331539000,
+      "page": 553,
+      "quote": "933,549",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 1407136000,
+      "page": 553,
+      "quote": "1,029,364",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 1399974000,
+      "page": 553,
+      "quote": "1,025,631",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 446780000,
+      "page": 554,
+      "quote": "Total equity 397,511 446,780 493,341 518,475",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 493341000,
+      "page": 554,
+      "quote": "Total equity 397,511 446,780 493,341 518,475",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 518475000,
+      "page": 554,
+      "quote": "Total equity 397,511 446,780 493,341 518,475",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 884759000,
+      "page": 553,
+      "quote": "796,414",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 913795000,
+      "page": 553,
+      "quote": "819,983",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 881499000,
+      "page": 553,
+      "quote": "745,206",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 1328685000,
+      "page": 26,
+      "quote": "Revenue 1,432,193 1,328,685 1,401,972 987,833 1,005,810",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 1401972000,
+      "page": 26,
+      "quote": "Revenue 1,432,193 1,328,685 1,401,972 987,833 1,005,810",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 1341080000,
+      "page": 26,
+      "quote": "Revenue 1,432,193 1,328,685 1,401,972 987,833 1,005,810",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 68487000,
+      "page": 26,
+      "quote": "Profit before taxation 47,696 68,487 70,058 41,796 35,102",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 70058000,
+      "page": 26,
+      "quote": "Profit before taxation 47,696 68,487 70,058 41,796 35,102",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 46802667,
+      "page": 26,
+      "quote": "Profit before taxation 47,696 68,487 70,058 41,796 35,102",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 51065000,
+      "page": 26,
+      "quote": "Profit for the year/period 35,080 51,065 51,602 30,528 24,078",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 51602000,
+      "page": 26,
+      "quote": "Profit for the year/period 35,080 51,065 51,602 30,528 24,078",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 32104000,
+      "page": 26,
+      "quote": "Profit for the year/period 35,080 51,065 51,602 30,528 24,078",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 579772000,
+      "page": 482,
+      "quote": "Total 495,246 478,837 575,445 579,772 583,845",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 562,
+      "quote": "The Historical Financial Information has been prepared in accordance with all applicable IFRS Accounting Standards issued by the International Accounting Standards Board (“IASB”)",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 208434000,
+      "page": 26,
+      "quote": "Gross profit 282,685 302,138 301,376 209,881 208,434",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 29058000,
+      "page": 560,
+      "quote": "Payment for the acquisition of property, plant and equipment (50,627) (26,884) (40,731) (33,653) (29,058)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 548,
+      "quote": "a true and fair view of the Company’s and the Group’s financial position as at 31 December 2021, 2022 and 2023 and 30 September 2024",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/24",
+      "page": 51,
+      "quote": "“Track Record Period”\nFY2021, FY2022, FY2023 and 9M2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -10625000,
+      "page": 560,
+      "quote": "Net cash (used in)/generated from operating activities (45,827) 70,035 69,219 (11,143) (10,625)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 147792000,
+      "page": 561,
+      "quote": "Cash and cash equivalents at the end of the year/period 184,386 165,487 236,226 115,628 147,792",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": 551,
+      "quote": "Selling and distribution costs (158,759) (165,357) (162,119) (115,482) (115,961) Administrative and other operating expenses (50,544) (51,983) (52,614) (38,019) (41,064)",
+      "confidence": "medium"
+    },
+    "col_AX": {
+      "value": "NaN",
+      "page": 553,
+      "quote": "Property, plant and equipment 11 371,456 359,490 344,227 336,343 Financial assets at FVOCI 14 37,570 35,175 28,454 29,862",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.285,
+      "page": 21,
+      "quote": "five largest customers in each year/period during the Track Record Period in aggregate accounted for approximately 18.8%, 26.8%, 31.8% and 28.5% of our total revenue",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 31,
+      "quote": "From June 2019 to September 2020, our Company had entered into several rounds of Pre-IPO Investments with our Pre-IPO Investors",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 31,
+      "quote": "From June 2019 to September 2020, our Company had entered into several rounds of Pre-IPO Investments with our Pre-IPO Investors",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 400,
+      "quote": "Jiangdu Fund(11) Beneficial owner 16,393,442 10.20 16,393,442 7.65 Cinda Capital(11) Interest in controlled corporation 16,393,442 10.20 16,393,442 7.65",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 31,
+      "quote": "From June 2019 to September 2020, our Company had entered into several rounds of Pre-IPO Investments with our Pre-IPO Investors",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 202,
+      "quote": "Cinda Capital is the general partner of Wuhu Xinning and is indirectly wholly-owned by China Cinda.",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 31,
+      "quote": "From June 2019 to September 2020, our Company had entered into several rounds of Pre-IPO Investments with our Pre-IPO Investors",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Jiangdu Fund, Jiequan Fund, Minsheng Agricultural, Batch A Investors and Batch B Investors",
+      "page": 31,
+      "quote": "our Pre-IPO Investors, which include Jiangdu Fund, Jiequan Fund, Minsheng Agricultural, Batch A Investors and Batch B Investors.",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.2393,
+      "page": 187,
+      "quote": "Jiequan Fund 21,558,441 13.42 Jiangdu Fund 16,393,442 10.20",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 187,
+      "quote": "Jiequan Fund 21,558,441 13.42 Jiangdu Fund 16,393,442 10.20 Xu Shihe (許世和)(1) 10,870,051 6.77",
+      "confidence": "medium"
+    },
+    "col_earliest_round": {
+      "value": "July 2019",
+      "page": 182,
+      "quote": "July 2019 Capital increase and Pre-IPO Investment by Jiangdu Fund. Pursuant to the Jiangdu Fund Capital Increase Agreement, Jiangdu Fund subscribed for 16,393,442 Shares",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 5.7,
+      "page": 182,
+      "quote": "The registered capital of our Company increased from RMB103,657,135 to RMB120,050,577 upon completion of the capital increase on 15 July 2019.",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual",
+      "page": 31,
+      "quote": "Accordingly, Mr. Gao, Ruichuanda Investment, Mr. Yuan and Mr. Zhang are a group of Controlling Shareholders acting in concert.",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.3111,
+      "page": 394,
+      "quote": "The Concert Parties 66,674,976 31.11%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.3111,
+      "page": 31,
+      "quote": "the Concert Parties will be entitled to exercise voting rights of approximately 31.11% of the total issued shares of our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "19/10/05",
+      "page": 173,
+      "quote": "Our Company was established in the PRC as a limited liability company on 19 October 2005 under its former name of Jiangdu Mall Hongxin Supermarket Chain Co., Ltd.* (江都商城宏信超市連鎖有限公司)",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "PRC",
+      "page": 85,
+      "quote": "our Group’s headquarters and principal place of business are located in the PRC, the business operations of our Group are substantially managed and conducted in the PRC",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Wholesale of grains and oil; supermarket, convenience store and mall retail operations",
+      "page": 218,
+      "quote": "We are a wholesaler of grains and oil headquartered in Yangzhou, with retail operations of supermarket and convenience stores focusing on the central region of Jiangsu Province under our brand",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 524,
+      "quote": "before the commencement of dealings in our H Shares as prescribed under Rule 11.13 of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": 218,
+      "quote": "We are a wholesaler of grains and oil headquartered in Yangzhou, with retail operations of supermarket and convenience stores focusing on the central region of Jiangsu Province under our brand",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 34,
+      "quote": "(i) approximately RMB30.0 million or 30.9% will be used for the opening of new Retail Stores; (ii) approximately RMB40.0 million or 41.2% will be used for establishing a new distribution centre",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.045,
+      "page": 513,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 4.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.045,
+      "page": 513,
+      "quote": "The Capital Market Intermediaries will receive an underwriting commission of 4.5% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 513,
+      "quote": "up to an aggregate of 8,034,000 additional Offer Shares, representing approximately 15% of the Offer Shares initially available under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 42200000,
+      "page": 514,
+      "quote": "are estimated to amount in aggregate to HK$42.2 million in total and are payable by us.",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Top Legend SPC (for and on behalf of Ocean One SP)",
+      "page": 497,
+      "quote": "Top Legend SPC (“Top Legend”) for and on behalf of Ocean One SP",
+      "confidence": "high"
+    }
+  }
+}

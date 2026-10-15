@@ -1,0 +1,992 @@
+{
+  "timestamp": "2026-10-15 10:59:37",
+  "workbook": "cohorts/HKIPO-GEM2025Q4.xlsx",
+  "sheet": "NLR",
+  "audited_companies_count": 1,
+  "stats": {
+    "prospectus": {
+      "target": "prospectus",
+      "fields_count": 69,
+      "companies_audited": 1,
+      "total_cells_audited": 69,
+      "matches": 69,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 21,
+      "matches_with_value": 48,
+      "json_files_absent": 0,
+      "both_missing_by_column": {
+        "Z": 1,
+        "AC": 1,
+        "AF": 1,
+        "AI": 1,
+        "AL": 1,
+        "AO": 1,
+        "AR": 1,
+        "AS": 1,
+        "AZ": 1,
+        "CT": 1,
+        "BD": 1,
+        "BE": 1,
+        "BF": 1,
+        "BG": 1,
+        "BH": 1,
+        "BI": 1,
+        "BJ": 1,
+        "BK": 1,
+        "BL": 1,
+        "BM": 1,
+        "BN": 1
+      },
+      "by_column": {}
+    },
+    "allot": {
+      "target": "allot",
+      "fields_count": 18,
+      "companies_audited": 1,
+      "total_cells_audited": 18,
+      "matches": 18,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 0,
+      "matches_with_value": 18,
+      "json_files_absent": 0,
+      "both_missing_by_column": {},
+      "by_column": {}
+    }
+  },
+  "discrepancies": [],
+  "external_columns": [
+    {
+      "col": "V",
+      "header": "Filing price revision (%)",
+      "tool_source": "src/academic_derivations.py (Pricing revision)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.090909
+    },
+    {
+      "col": "W",
+      "header": "Filing range width (%)",
+      "tool_source": "src/academic_derivations.py (Filing range width)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.363636
+    },
+    {
+      "col": "X",
+      "header": "Pricing position in filing range",
+      "tool_source": "src/academic_derivations.py (Pricing position in range)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Within range"
+    },
+    {
+      "col": "BC",
+      "header": "Comments (nearest sales& profit adjustment factor - original data duration in year, eg. 6 month pls input 0.5)",
+      "tool_source": "Manual / Prospectus disclosure notes (Annualization factor)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "BT",
+      "header": "Listing board",
+      "tool_source": "tools/external/flags.py (Listing board)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "GEM"
+    },
+    {
+      "col": "BV",
+      "header": "A+H issuer flag",
+      "tool_source": "tools/external/flags.py (A+H flag)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BW",
+      "header": "Industry classification code",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification code)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "602020"
+    },
+    {
+      "col": "BX",
+      "header": "Industry classification system and version",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification system)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "HSICS (Hang Seng Industry Classification System) 2026"
+    },
+    {
+      "col": "BZ",
+      "header": "Firm age at IPO (years)",
+      "tool_source": "src/academic_derivations.py (Firm age at IPO)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.45
+    },
+    {
+      "col": "CA",
+      "header": "Place of incorporation",
+      "tool_source": "tools/external/flags.py (Place of incorporation)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Cayman Islands"
+    },
+    {
+      "col": "CC",
+      "header": "Financial statement unit multiplier",
+      "tool_source": "Manual / Disclosure notes (Financial statement unit multiplier)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 1000
+    },
+    {
+      "col": "CE",
+      "header": "Year-3 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 start)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "2022-04-01"
+    },
+    {
+      "col": "CF",
+      "header": "Year-3 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 end)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-03-31"
+    },
+    {
+      "col": "CG",
+      "header": "Year-2 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 start)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-04-01"
+    },
+    {
+      "col": "CH",
+      "header": "Year-2 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 end)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "2024-03-31"
+    },
+    {
+      "col": "CI",
+      "header": "Year-1 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-1 start)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "2024-04-01"
+    },
+    {
+      "col": "CJ",
+      "header": "Year-1 net sales (original, pre-annualization)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 net sales original)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 154534000
+    },
+    {
+      "col": "CK",
+      "header": "Year-1 profit before tax (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit before tax original)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 17131000
+    },
+    {
+      "col": "CL",
+      "header": "Year-1 profit for period (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit for period original)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 14074000
+    },
+    {
+      "col": "CV",
+      "header": "Earliest cornerstone unlock date (dd/mm/yy)",
+      "tool_source": "tools/external/flags.py / src/cornerstone.py (Earliest cornerstone unlock date)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "DG",
+      "header": "Greenshoe exercise rate (%)",
+      "tool_source": "src/academic_derivations.py (Greenshoe exercise rate)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "DO",
+      "header": "HSI return over 20 trading days before prospectus (%)",
+      "tool_source": "tools/external/market.py (HSI 20-day return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.03924911
+    },
+    {
+      "col": "DP",
+      "header": "GEM ordinary IPO count in 90 calendar days before prospectus",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "DQ",
+      "header": "1-month HIBOR before prospectus (%)",
+      "tool_source": "tools/external/hkma_import.py (1-month HIBOR)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.0359804
+    },
+    {
+      "col": "DR",
+      "header": "Banking system aggregate balance before prospectus (HK$)",
+      "tool_source": "tools/external/hkma_import.py (Aggregate Balance)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 54208000000
+    },
+    {
+      "col": "DS",
+      "header": "First trading day closing price (HK$)",
+      "tool_source": "tools/external/market.py (First day close)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 2.15
+    },
+    {
+      "col": "DT",
+      "header": "First-day return / Underpricing (%)",
+      "tool_source": "src/academic_derivations.py (First-day return / Underpricing)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 3.3
+    },
+    {
+      "col": "DU",
+      "header": "Money left on the table (HK$)",
+      "tool_source": "src/academic_derivations.py (Money left on the table)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 165000000
+    },
+    {
+      "col": "DV",
+      "header": "First trading day opening price (HK$)",
+      "tool_source": "tools/external/market.py (First day open)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 3
+    },
+    {
+      "col": "DW",
+      "header": "First trading day high (HK$)",
+      "tool_source": "tools/external/market.py (First day high)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 3.32
+    },
+    {
+      "col": "DX",
+      "header": "First trading day low (HK$)",
+      "tool_source": "tools/external/market.py (First day low)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 2
+    },
+    {
+      "col": "DY",
+      "header": "First trading day volume (shares)",
+      "tool_source": "tools/external/market.py (First day volume)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 43840254
+    },
+    {
+      "col": "DZ",
+      "header": "First-day flipping ratio (%)",
+      "tool_source": "src/academic_derivations.py (First-day flipping ratio)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.438403
+    },
+    {
+      "col": "EA",
+      "header": "First trading day turnover (HK$)",
+      "tool_source": "tools/external/market.py (First day turnover)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EB",
+      "header": "Offer mechanism",
+      "tool_source": "tools/external/rules.py (Offer mechanism)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EC",
+      "header": "Applicable IPO rules / transition basis",
+      "tool_source": "tools/external/rules.py (Applicable IPO rules)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EE",
+      "header": "Current listing status",
+      "tool_source": "tools/external/aftermarket.py (Current listing status)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Active"
+    },
+    {
+      "col": "EF",
+      "header": "1-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month close price)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.48
+    },
+    {
+      "col": "EG",
+      "header": "1-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month BHR)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.776744
+    },
+    {
+      "col": "EH",
+      "header": "1-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month total return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.04
+    },
+    {
+      "col": "EI",
+      "header": "1-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSI return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.001844
+    },
+    {
+      "col": "EJ",
+      "header": "1-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSTECH return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.067477
+    },
+    {
+      "col": "EK",
+      "header": "1-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSI)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.2237
+    },
+    {
+      "col": "EL",
+      "header": "1-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSTECH)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.2394
+    },
+    {
+      "col": "EM",
+      "header": "1-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month average daily turnover)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 15994735
+    },
+    {
+      "col": "EN",
+      "header": "6-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month close price)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.225
+    },
+    {
+      "col": "EO",
+      "header": "6-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month BHR)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.895349
+    },
+    {
+      "col": "EP",
+      "header": "6-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month total return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.55
+    },
+    {
+      "col": "EQ",
+      "header": "6-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSI return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.015092
+    },
+    {
+      "col": "ER",
+      "header": "6-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSTECH return)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": -0.22357
+    },
+    {
+      "col": "ES",
+      "header": "6-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSI)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.1063
+    },
+    {
+      "col": "ET",
+      "header": "6-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSTECH)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.1348
+    },
+    {
+      "col": "EU",
+      "header": "6-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month average daily turnover)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 74860
+    },
+    {
+      "col": "EV",
+      "header": "Liquidity decay ratio (6M vs Day-1 turnover)",
+      "tool_source": "tools/external/aftermarket.py (Liquidity decay ratio)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.000574
+    },
+    {
+      "col": "EW",
+      "header": "1-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EX",
+      "header": "1-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EY",
+      "header": "3-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "EZ",
+      "header": "3-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FA",
+      "header": "18A/18C regulatory milestone status",
+      "tool_source": "tools/external/aftermarket.py (18A/18C regulatory status)",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Standard"
+    },
+    {
+      "col": "FB",
+      "header": "Stabilizing manager",
+      "tool_source": "src/write_back_expansion.py (Stabilizing manager)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FC",
+      "header": "Stabilization period end date",
+      "tool_source": "src/write_back_expansion.py (Stabilization period end date)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FD",
+      "header": "Stabilization purchases occurred",
+      "tool_source": "src/write_back_expansion.py (Stabilization purchases occurred)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FE",
+      "header": "Over-allocation shares",
+      "tool_source": "src/write_back_expansion.py (Over-allocation shares)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FF",
+      "header": "Over-allocation (% of base offer)",
+      "tool_source": "src/write_back_expansion.py (Over-allocation pct)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FG",
+      "header": "Over-allotment option exercise date",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise date)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FH",
+      "header": "Shares issued under over-allotment option",
+      "tool_source": "src/write_back_expansion.py (Shares issued under option)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FI",
+      "header": "Over-allotment exercise percentage (%)",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise percentage)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FJ",
+      "header": "Post-stabilization cliff return [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cliff return m5 p5)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FK",
+      "header": "Post-stabilization 20-day return [0, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization return p20)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FL",
+      "header": "Post-stabilization volume decay ratio (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization volume decay)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FM",
+      "header": "Day-5 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-5 BHR)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FN",
+      "header": "Day-5 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-5 WR vs HSI)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FO",
+      "header": "Day-20 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-20 BHR)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FP",
+      "header": "Day-20 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-20 WR vs HSI)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FQ",
+      "header": "3-month BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (3-month BHR)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FR",
+      "header": "3-month wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSI)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FS",
+      "header": "3-month wealth relative vs HSTECH",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSTECH)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FT",
+      "header": "3-month average daily turnover (HK$)",
+      "tool_source": "src/write_back_expansion.py (3-month avg daily turnover)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FU",
+      "header": "Amihud illiquidity (6M mean)",
+      "tool_source": "src/write_back_expansion.py (Amihud illiquidity 6M mean)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FV",
+      "header": "Zero-volume days count (first 6M)",
+      "tool_source": "src/write_back_expansion.py (Zero-volume days count 6M)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FW",
+      "header": "Return volatility (first 6M daily std dev, %)",
+      "tool_source": "src/write_back_expansion.py (Return volatility 6M)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FX",
+      "header": "Maximum drawdown (first 6M, %)",
+      "tool_source": "src/write_back_expansion.py (Maximum drawdown 6M)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FY",
+      "header": "Cornerstone unlock CAR [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m5 p5)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FZ",
+      "header": "Cornerstone unlock CAR [-20, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m20 p20)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GA",
+      "header": "Cornerstone unlock volume shock ratio",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock volume shock ratio)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GB",
+      "header": "Lead sponsor name",
+      "tool_source": "src/write_back_expansion.py (Lead sponsor name)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GC",
+      "header": "Joint sponsor count",
+      "tool_source": "src/write_back_expansion.py (Joint sponsor count)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GD",
+      "header": "Sponsor commercial bank affiliate flag",
+      "tool_source": "src/write_back_expansion.py (Sponsor bank affiliate flag)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GE",
+      "header": "Underwriting base commission rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting base commission rate)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GF",
+      "header": "Underwriting discretionary incentive fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting incentive fee rate)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GG",
+      "header": "Total underwriting fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Total underwriting fee rate)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GH",
+      "header": "Cornerstone investor count",
+      "tool_source": "src/write_back_expansion.py (Cornerstone investor count)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GI",
+      "header": "Cornerstone state-owned presence flag",
+      "tool_source": "src/write_back_expansion.py (Cornerstone state-owned flag)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GJ",
+      "header": "Crossover fund presence flag",
+      "tool_source": "src/write_back_expansion.py (Crossover fund flag)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GK",
+      "header": "Pre-IPO institutional investor count",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO investor count)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GL",
+      "header": "Pre-IPO state-owned backing flag",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO state-owned flag)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "GM",
+      "header": "FINI digital settlement regime",
+      "tool_source": "src/write_back_expansion.py (FINI digital settlement regime)",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    }
+  ],
+  "company_states": {
+    "8549.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    }
+  }
+}

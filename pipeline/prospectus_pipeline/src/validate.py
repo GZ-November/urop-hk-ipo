@@ -179,18 +179,23 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
     at_date = parse_date(at_entry.get("value"))
     implied_months = payload_months(f)
     overridden = str(at_entry.get("note") or "").strip().lower().startswith(PERIOD_OVERRIDE)
-    if track_record is not None and track_record.status == "ok" and not overridden:
-        y1 = track_record.year1
-        if at_date is not None and at_date != y1.end:
-            add("期间锚定",
-                f"col_AT={at_date:%d/%m/%y}，但 Track Record 最新期间为 {y1.label}（期末 {y1.end:%d/%m/%y}）；"
-                f"year-1 必须取该期间（存根即 year-1），year-2/3 为其前两个完整年度"
-                f"（FY{track_record.year2.end.year}"
-                + (f"/FY{track_record.year3.end.year}" if track_record.year3 else "") + "）")
-        elif implied_months is not None and implied_months != y1.months:
-            add("年化系数",
-                f"col_AH/AK/AN 相对引文原值隐含 {implied_months} 个月，但 year-1 为 {y1.months} 个月"
-                f"（应 ×{12 / y1.months:.4g} 年化）")
+    if track_record is not None and not overridden:
+        if track_record.status == "ok":
+            y1 = track_record.year1
+            if at_date is not None and at_date != y1.end:
+                add("期间锚定",
+                    f"col_AT={at_date:%d/%m/%y}，但 Track Record 最新期间为 {y1.label}（期末 {y1.end:%d/%m/%y}）；"
+                    f"year-1 必须取该期间（存根即 year-1），year-2/3 为其前两个完整年度"
+                    f"（FY{track_record.year2.end.year}"
+                    + (f"/FY{track_record.year3.end.year}" if track_record.year3 else "") + "）")
+            elif implied_months is not None and implied_months != y1.months:
+                add("年化系数",
+                    f"col_AH/AK/AN 相对引文原值隐含 {implied_months} 个月，但 year-1 为 {y1.months} 个月"
+                    f"（应 ×{12 / y1.months:.4g} 年化）")
+        elif track_record.status == "unresolved":
+            add("期间未决",
+                f"Track Record 期间自动判定未决（{track_record.reason}）；"
+                f"必须人工核实招股书并在 col_AT.note 标注 '{PERIOD_OVERRIDE} <理由>' 明确放行")
     # 下游勾稽按抽取实际所在期间计算：col_AT 已与 Track Record 错位时（上面已报期间锚定），
     # 用 Track Record 月数去还原年化值只会再造出一条虚假的毛利率错误。
     year1_months = (track_record.year1.months

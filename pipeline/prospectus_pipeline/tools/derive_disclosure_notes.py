@@ -124,11 +124,19 @@ def infer_multiplier(rec: dict, key: str) -> int | None:
 def main() -> int:
     ap = argparse.ArgumentParser(description="派生模板的 10 个披露附注列")
     ap.add_argument("--book", default=None, help="目标工作簿（默认取 config）")
+    ap.add_argument("--config", default=None, help="配置路径 (cohort.yaml)")
     ap.add_argument("--only", nargs="*", default=None, help="只处理指定代码")
     args = ap.parse_args()
 
-    cfg = load_cfg(workbook_override=args.book)
-    book = Path(cfg["workbook"])
+    # If --book is specified and no --config, check if cohort.yaml exists in same folder
+    config_path = args.config
+    if not config_path and args.book:
+        candidate = Path(args.book).resolve().with_name("cohort.yaml")
+        if candidate.is_file():
+            config_path = str(candidate)
+
+    cfg = load_cfg(workbook_override=args.book, config_path=config_path)
+    book = Path(cfg.get("_workbook_path") or cfg["workbook"])
     schema = json.loads((ROOT / "schema" / "fields.json").read_text(encoding="utf-8"))
     schema = {**schema, "fields": [f for f in schema["fields"] if f["key"] in SOURCE_FIELDS]}
 

@@ -1,0 +1,425 @@
+{
+ "code": "2408.HK",
+ "fields": {
+  "col_L": {
+   "value": 710689300,
+   "page": 307,
+   "quote": "Shares in total 710,689,300 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 97364500,
+   "page": 307,
+   "quote": "H Shares to be issued pursuant to the Global Offering (assuming the Over-allotment Option is not exercised) 97,364,500",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 613324800,
+   "page": 307,
+   "quote": "H Shares to be converted from Unlisted Shares (Note) 613,324,800",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 613324800,
+   "page": 307,
+   "quote": "H Shares to be converted from Unlisted Shares (Note) 613,324,800",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 27,
+   "quote": "the Global Offering has been completed and 97,364,500 H Shares are newly issued in the Global Offering",
+   "confidence": "high"
+  },
+  "col_Q": {
+   "value": 97364500,
+   "page": 307,
+   "quote": "H Shares to be issued pursuant to the Global Offering (assuming the Over-allotment Option is not exercised) 97,364,500",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 87628000,
+   "page": 2,
+   "quote": "Number of International Offering Shares : 87,628,000 H Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 9736500,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 9,736,500 H Shares",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 7.04,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$7.04 per H Share",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 5.64,
+   "page": 129,
+   "quote": "HK$5.64 per Offer Share (being the minimum Offer Price of the indicative",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 435,
+   "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER COMPREHENSIVE INCOME (Expressed in Renminbi)",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 842497000,
+   "page": 23,
+   "quote": "Total current assets 102,525 156,519 247,636 244,877 Total non-current assets 510,879 685,978 913,497 964,029",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 1161133000,
+   "page": 23,
+   "quote": "Total current assets 102,525 156,519 247,636 244,877 Total non-current assets 510,879 685,978 913,497 964,029",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 1208906000,
+   "page": 23,
+   "quote": "Total current assets 102,525 156,519 247,636 244,877 Total non-current assets 510,879 685,978 913,497 964,029",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 53793000,
+   "page": 23,
+   "quote": "Net Assets 25,972 53,793 117,777 147,090",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 117777000,
+   "page": 23,
+   "quote": "Net Assets 25,972 53,793 117,777 147,090",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 147090000,
+   "page": 23,
+   "quote": "Net Assets 25,972 53,793 117,777 147,090",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 788704000,
+   "page": 23,
+   "quote": "Total current liabilities 251,090 343,275 489,861 499,837 Total non-current liabilities 336,342 445,429 553,495 561,979",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 1043356000,
+   "page": 23,
+   "quote": "Total current liabilities 251,090 343,275 489,861 499,837 Total non-current liabilities 336,342 445,429 553,495 561,979",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 1061816000,
+   "page": 23,
+   "quote": "Total current liabilities 251,090 343,275 489,861 499,837 Total non-current liabilities 336,342 445,429 553,495 561,979",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 800514000,
+   "page": 435,
+   "quote": "Revenue 4 418,096 800,514 1,154,434 525,657 703,185",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 1154434000,
+   "page": 435,
+   "quote": "Revenue 4 418,096 800,514 1,154,434 525,657 703,185",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 1406370000,
+   "page": 435,
+   "quote": "Revenue 4 418,096 800,514 1,154,434 525,657 703,185",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 57138000,
+   "page": 435,
+   "quote": "(Loss)/profit before taxation 6 (48,145) 57,138 74,881 26,454 52,296",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 74881000,
+   "page": 435,
+   "quote": "(Loss)/profit before taxation 6 (48,145) 57,138 74,881 26,454 52,296",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": 104592000,
+   "page": 435,
+   "quote": "(Loss)/profit before taxation 6 (48,145) 57,138 74,881 26,454 52,296",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 45914000,
+   "page": 435,
+   "quote": "(Loss)/profit for the year/period (35,973) 45,914 60,700 21,369 41,834",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 60700000,
+   "page": 435,
+   "quote": "(Loss)/profit for the year/period (35,973) 45,914 60,700 21,369 41,834",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": 83668000,
+   "page": 435,
+   "quote": "(Loss)/profit for the year/period (35,973) 45,914 60,700 21,369 41,834",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.03,
+   "page": 397,
+   "quote": "will receive an underwriting commission of 3% of the aggregate Offer Price",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.03,
+   "page": 397,
+   "quote": "will receive an underwriting commission of 3% of the aggregate Offer Price",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0.05,
+   "page": 397,
+   "quote": "up to an aggregate of 4,868,000 additional Offer Shares, representing approximately 5.00% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Chinese noodle restaurant operator",
+   "page": 311,
+   "quote": "We are a modern Chinese noodle restaurants operator in China. We operate the Xiao Noodles (遇見小麵) brand in the Chinese Mainland and Hong Kong SAR.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board - Rule 8.05(2) market capitalisation/revenue/cash flow test",
+   "page": 29,
+   "quote": "satisfy the market capitalization/revenue/cash flow test under Rule 8.05(2) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 29,
+   "quote": "since June 30, 2025, being the end of the Track Record Period as reported in the Accountants’ Report as set out in Appendix I",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": 202051000,
+   "page": 25,
+   "quote": "Net cash generated from operating activities 104,773 245,126 313,546 145,699 202,051",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 50032000,
+   "page": 25,
+   "quote": "Cash and cash equivalents at end of year/period 36,519 26,764 42,190 55,521 50,032",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.042,
+   "page": 17,
+   "quote": "revenue from our five largest customers in each year/period accounted for 8.5%, 6.8%, 4.9% and 4.2% of our total revenue",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "广州遇见小面餐饮股份有限公司",
+   "page": 1,
+   "quote": "廣州遇見小麵餐飲股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "HHLR Advisors, Ltd.; Guotai Junan Investments (Hong Kong) Limited; Dream'ee (Hong Kong) Open-ended Fund Company; Hong Kong Shengying Investment Limited; Zeta Wisdom OFC; Hai Di Lao Holdings Pte. Ltd.",
+   "page": 305,
+   "quote": "HHLRA 5.0 5,521,000 5.67% 0.78% 5.40% 0.77% Dream’ee Investors GTINV 2.6 2,838,000 2.91% 0.40% 2.78% 0.40% Dream’ee HK Fund 2.4 2,683,000 2.76% 0.38% 2.62% 0.37% Shengying Investment",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 26,
+   "quote": "We have engaged in Pre-IPO Investments with our Pre-IPO Investors.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 113,
+   "quote": "We received angel and angel+ investments from Mr. Gu Dongsheng (顧東生) and Shanghai Qingcong Capital Investment Partnership (Limited Partnership) (上海青驄股權投資合夥企業(有限合夥)) (“Qingcong Capital”)",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 126,
+   "quote": "Best Food is a multi-brand food and beverage platform invested by Hony Capital, a leading investment management firm founded in 2003.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 118,
+   "quote": "with a discount in view of the lead investor in series B investment being a well-known real estate development group.",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_top_tier_vc": {
+   "value": 1,
+   "page": 113,
+   "quote": "We completed series Pre-A and series A investments, of which the lead investors were Jiumaojiu (九毛九) and Hony Capital (弘毅投資)",
+   "confidence": "high"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Wonderful Dawn Holdings Limited; Pinxin Yuegu; Huibi No. 1; Huibi No. 2; Qingcong Capital; Mr. Gu Dongsheng; Mr. Gao Defu; Mr. Wei Chuanfa; Mr. Du Ming",
+   "page": 128,
+   "quote": "Wonderful Dawn 94,725,310 Unlisted Shares 15.44% 94,725,310 H Shares 13.33% Mr. Gu Dongsheng 48,499,373 Unlisted Shares 7.91% 48,499,373 H Shares 6.82% Pinxin Yuegu 39,894,000 Unlisted Shares 6.50%",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.3425,
+   "page": 128,
+   "quote": "Wonderful Dawn 94,725,310 Unlisted Shares 15.44% 94,725,310 H Shares 13.33% Mr. Gu Dongsheng 48,499,373 Unlisted Shares 7.91% 48,499,373 H Shares 6.82% Pinxin Yuegu 39,894,000 Unlisted Shares 6.50%",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 286,
+   "quote": "Mr. Wang Xiaolong, our non-executive Director, serves as an executive director of Best Food.",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Angel Investment",
+   "page": 123,
+   "quote": "Angel Investment September 30, 2014 and March 2, 2015 October 31, 2016 RMB11,250.00 2,000,000.00 0.0355 99.39%",
+   "confidence": "high"
+  },
+  "col_holding_duration": {
+   "value": 11.16,
+   "page": 123,
+   "quote": "Angel Investment September 30, 2014 and March 2, 2015 October 31,",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "自然人",
+   "page": 26,
+   "quote": "Mr. Song, as the general partner, and Mr. Su, as the limited partner, held 66.67% and 33.33% of the partnership interests",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.4598,
+   "page": 293,
+   "quote": "326,795,850 H Shares 45.98%",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.4598,
+   "page": 293,
+   "quote": "326,795,850 H Shares 45.98%",
+   "confidence": "high"
+  },
+  "col_BE": {
+   "value": 762224000,
+   "page": 372,
+   "quote": "Total 448,687 576,552 784,619 762,224 866,085",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 28,
+   "quote": "approximately 10.0% of the net proceeds, or approximately HK$55.2 million, for general corporate purposes and working capital.",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 97,364,500 H Shares (subject to the Over-allotment Option)",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "14/02/14",
+   "page": 566,
+   "quote": "Our Company was incorporated as a limited liability company under PRC Law on February 14, 2014 and was converted into a joint stock company with limited liability on September 7, 2023.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Guangzhou, Guangdong province, China",
+   "page": 93,
+   "quote": "Headquarters and Principal Place of Business in China 1510-1511, 15F No. 148 Xingang East Road Haizhu District, Guangzhou Guangdong province",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 320,
+   "quote": "Our historical financial information has been prepared in accordance with all applicable IFRS Accounting Standards as issued by the International Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "27/11/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Thursday, November 27, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "02/12/25",
+   "page": 5,
+   "quote": "Application lists of the Hong Kong Public Offering close(3) . . . . . . 12:00 noon on Tuesday, December 2, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 710689300,
+   "page": 307,
+   "quote": "Shares in total 710,689,300 100.00%",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium"
+  },
+  "col_CG": {
+   "value": 53662000,
+   "page": 375,
+   "quote": "Payment for purchases of intangible assets 1,722 1,256 2,607 1,084 1,004 Total 32,517 62,002 99,931 44,740 53,662",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 432,
+   "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 65700000,
+   "page": 28,
+   "quote": "listing expenses to be borne by us are estimated to be approximately HK$65.7 million",
+   "confidence": "high"
+  }
+ }
+}

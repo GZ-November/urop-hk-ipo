@@ -1,0 +1,475 @@
+{
+ "code": "2788.HK",
+ "fields": {
+  "col_L": {
+   "value": 2000000000,
+   "page": 339,
+   "quote": "2,000,000,000\nTotal\nUS$10,000.00",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 500000000,
+   "page": 339,
+   "quote": "500,000,000\nOrdinary Shares of US$0.000005 each to be\nissued pursuant to the Global Offering\nassuming the Over-Allotment Option is not\nexercised",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 1500000000,
+   "page": 339,
+   "quote": "Immediately following completion of the Global Offering (assuming the Over-Allotment\nOption is not exercised)",
+   "confidence": "high",
+   "note": "= col_L 2,000,000,000 - col_M 500,000,000 (shares in issue immediately before completion of the Global Offering)"
+  },
+  "col_O": {
+   "value": 1500000000,
+   "page": 339,
+   "quote": "Immediately following completion of the Global Offering (assuming the Over-Allotment\nOption is not exercised)",
+   "confidence": "high",
+   "note": "= col_L 2,000,000,000 - col_M 500,000,000, same basis as col_N"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 2,
+   "quote": "Number of Offer Shares under the\nGlobal Offering\n:\n500,000,000 Shares (subject to the\nOver-allotment Option)",
+   "confidence": "high",
+   "note": "Offer for Subscription of new Shares only; no Sale Shares / Selling Shareholder line on the cover page or in the SHARE CAPITAL table"
+  },
+  "col_Q": {
+   "value": 500000000,
+   "page": 339,
+   "quote": "500,000,000\nOrdinary Shares of US$0.000005 each to be\nissued pursuant to the Global Offering\nassuming the Over-Allotment Option is not\nexercised\nUS$2,500.00",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 450000000,
+   "page": 2,
+   "quote": "Number of International Offer Shares\n:\n450,000,000 Shares (subject to\nreallocation and the Over-allotment\nOption)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 50000000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares\n:\n50,000,000 Shares (subject to\nreallocation)",
+   "confidence": "high"
+  },
+  "col_BI": {
+   "value": "Ordinary Shares",
+   "page": 339,
+   "quote": "10,000,000,000\nOrdinary Shares of US$0.000005 each\nUS$50,000.00\n(b)\nIssued Share Capital",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 2000000000,
+   "page": 339,
+   "quote": "2,000,000,000\nTotal\nUS$10,000.00",
+   "confidence": "high",
+   "note": "Cayman Islands issuer with one class of Shares; all post-offering Shares are listed on HKEX, so col_CE = col_L"
+  },
+  "col_T": {
+   "value": 10.99,
+   "page": 2,
+   "quote": "Maximum Offer Price\n:\nHK$10.99 per Offer Share plus\nbrokerage of 1.0%, SFC transaction\nlevy of 0.0027%, AFRC transaction\nlevy of 0.00015% and the Stock\nExchange trading fee of 0.00565%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 10.18,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$10.99 and is currently expected to be not less than\nHK$10.18 per Offer Share.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 493,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values\nare rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 19553450000,
+   "page": 382,
+   "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n21,489.7\n19,553.5\n18,319.8\n20,943.2",
+   "confidence": "high",
+   "note": "RMB in millions table (p.382), x1,000,000. 'Total assets' row, 2nd value 19,553.5 = As at 31 December 2023 = year-3 (FY2023)."
+  },
+  "col_X": {
+   "value": 18319817000,
+   "page": 382,
+   "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n21,489.7\n19,553.5\n18,319.8\n20,943.2",
+   "confidence": "high",
+   "note": "RMB in millions table (p.382), x1,000,000. 'Total assets' row, 3rd value 18,319.8 = As at 31 December 2024 = year-2 once year-1 is the 31/05/25 stub."
+  },
+  "col_Y": {
+   "value": 20943206000,
+   "page": 382,
+   "quote": "Total assets\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n21,489.7\n19,553.5\n18,319.8\n20,943.2",
+   "confidence": "high",
+   "note": "RMB in millions table (p.382), x1,000,000. 'Total assets' row, 4th value 20,943.2 = As at 31 May 2025 = year-1 period end (col_AT)."
+  },
+  "col_Z": {
+   "value": 3448870000,
+   "page": 383,
+   "quote": "Total equity\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n1,929.2\n3,448.9\n2,326.3\n3,181.8",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total equity' row, 2nd value 3,448.9 = As at 31 December 2023 = year-3 (FY2023); ties to 'Net assets ... 3,448,870' on p.495."
+  },
+  "col_AA": {
+   "value": 2326268000,
+   "page": 383,
+   "quote": "Total equity\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n1,929.2\n3,448.9\n2,326.3\n3,181.8",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total equity' row, 3rd value 2,326.3 = As at 31 December 2024 = year-2 (FY2024)."
+  },
+  "col_AB": {
+   "value": 3181773000,
+   "page": 383,
+   "quote": "Total equity\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n1,929.2\n3,448.9\n2,326.3\n3,181.8",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total equity' row, 4th value 3,181.8 = As at 31 May 2025 = year-1 period end (col_AT); ties to 'Net assets ... 3,181,773' on p.495."
+  },
+  "col_AC": {
+   "value": 16104580000,
+   "page": 383,
+   "quote": "Total liabilities\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n19,560.5\n16,104.6\n15,993.5\n17,761.4",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total liabilities' row, 2nd value 16,104.6 = As at 31 December 2023 = year-3 (FY2023); = p.495 9,881,462 + 6,223,193."
+  },
+  "col_AD": {
+   "value": 15993549000,
+   "page": 383,
+   "quote": "Total liabilities\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n19,560.5\n16,104.6\n15,993.5\n17,761.4",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total liabilities' row, 3rd value 15,993.5 = As at 31 December 2024 = year-2 (FY2024); = p.495 8,738,260 + 7,255,289."
+  },
+  "col_AE": {
+   "value": 17761433000,
+   "page": 383,
+   "quote": "Total liabilities\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n19,560.5\n16,104.6\n15,993.5\n17,761.4",
+   "confidence": "high",
+   "note": "RMB in millions table (p.383), x1,000,000. 'Total liabilities' row, 4th value 17,761.4 = As at 31 May 2025 = year-1 period end (col_AT); = p.495 current 10,902,130 + non-current 6,859,303."
+  },
+  "col_AF": {
+   "value": 13489726000,
+   "page": 494,
+   "quote": "Revenue \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n6\n13,489,726\n13,814,657\n15,163,182\n5,883,228\n7,213,526",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AG": {
+   "value": 13814657000,
+   "page": 494,
+   "quote": "Revenue \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n6\n13,489,726\n13,814,657\n15,163,182\n5,883,228\n7,213,526",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AH": {
+   "value": 17312462400,
+   "page": 494,
+   "quote": "Revenue \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\n6\n13,489,726\n13,814,657\n15,163,182\n5,883,228\n7,213,526",
+   "confidence": "high",
+   "note": "RMB'000, x1,000. Revenue, 5th (last) value 7,213,526 = five months ended 31 May 2025 (col_AT stub). Year-1 slot stores the annualised figure: 7,213,526 x 12/5 = 17,312,462.4 (original pre-annualisation kept in the canonical 'year-1 net sales (original)' column)."
+  },
+  "col_AI": {
+   "value": 1047659000,
+   "page": 494,
+   "quote": "Profit before tax\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n10\n1,047,659\n1,272,492\n3,280,897\n1,201,056\n1,035,646",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AJ": {
+   "value": 1272492000,
+   "page": 494,
+   "quote": "Profit before tax\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n10\n1,047,659\n1,272,492\n3,280,897\n1,201,056\n1,035,646",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AK": {
+   "value": 2485550400,
+   "page": 494,
+   "quote": "Profit before tax\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\n10\n1,047,659\n1,272,492\n3,280,897\n1,201,056\n1,035,646",
+   "confidence": "high",
+   "note": "RMB'000, x1,000. Profit before tax, 5th (last) value 1,035,646 = five months ended 31 May 2025 (col_AT stub). Year-1 slot annualised: 1,035,646 x 12/5 = 2,485,550.4, as the schema marks this field annualize='sales_profit_only_if_partial' and the canonical workbook annualises year-1 sales/PBT/profit together."
+  },
+  "col_AL": {
+   "value": 912902000,
+   "page": 494,
+   "quote": "Profit and total comprehensive\nincome for the year/period\u0002 \u0002 \u0002\n912,902\n1,080,632\n2,629,520\n999,436\n855,451",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AM": {
+   "value": 1080632000,
+   "page": 494,
+   "quote": "Profit and total comprehensive\nincome for the year/period\u0002 \u0002 \u0002\n912,902\n1,080,632\n2,629,520\n999,436\n855,451",
+   "confidence": "high",
+   "note": "Consolidated statement in RMB’000; x1,000"
+  },
+  "col_AN": {
+   "value": 2053082400,
+   "page": 494,
+   "quote": "Profit and total comprehensive\nincome for the year/period\u0002\u0002\u0002\n912,902\n1,080,632\n2,629,520\n999,436\n855,451",
+   "confidence": "high",
+   "note": "RMB'000, x1,000. Profit and total comprehensive income for the year/period, 5th (last) value 855,451 = five months ended 31 May 2025 (col_AT stub). Year-1 slot annualised: 855,451 x 12/5 = 2,053,082.4."
+  },
+  "col_BE": {
+   "value": 12521400000,
+   "page": 409,
+   "quote": "Total\u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \n10,830.3\n9,281.8\n10,948.2\n12,521.4\n12,489.5",
+   "confidence": "high",
+   "note": "RMB in millions, x1,000,000. INDEBTEDNESS 'Bank and Other Borrowings' total, 4th value 12,521.4 = As of May 31, 2025 = year-1 end (col_AT). Period-end balance, not annualised."
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 493,
+   "quote": "conform\nwith\nIFRS Accounting\nStandards\nissued\nby\nthe\nInternational Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 1432661000,
+   "page": 494,
+   "quote": "Gross profit \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\n2,041,142\n2,336,288\n4,276,460\n1,640,332\n1,432,661",
+   "confidence": "high",
+   "note": "RMB'000, x1,000. Gross profit, 5th (last) value 1,432,661 = five months ended 31 May 2025 --- same period as col_AT; not annualised."
+  },
+  "col_CG": {
+   "value": 1301498000,
+   "page": 501,
+   "quote": "Payments for acquisition of\nproperty, plant and equipment \u0002 \u0002\n(956,322)\n(452,479)\n(3,102,539)\n(519,877)\n(1,301,498)",
+   "confidence": "high",
+   "note": "Consolidated statement of cash flows, RMB'000, x1,000. 'Payments for acquisition of property, plant and equipment', 5th (last) value (1,301,498) = five months ended 31 May 2025 = year-1 (col_AT); not annualised."
+  },
+  "col_CH": {
+   "value": "Unqualified / true and fair view opinion",
+   "page": 491,
+   "quote": "Opinion\nIn our opinion, the Historical Financial Information gives, for the purposes of the\naccountants’ report, a true and fair view of the Group’s financial position",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.015,
+   "page": 454,
+   "quote": "The Capital Market Intermediaries will receive an underwriting commission of 1.5% of\nthe aggregate Offer Price of all the Offer Shares",
+   "confidence": "high",
+   "note": "Disclosed on a Global Offering basis, so AO = AP = 1.5%"
+  },
+  "col_AP": {
+   "value": 0.015,
+   "page": 454,
+   "quote": "The Capital Market Intermediaries will receive an underwriting commission of 1.5% of\nthe aggregate Offer Price of all the Offer Shares",
+   "confidence": "high",
+   "note": "Disclosed on a Global Offering basis (no separate HK-only commission), so AP = AO = 1.5%"
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 454,
+   "quote": "may be required to issue up to an aggregate of 75,000,000 Shares, representing not more than\n15% of the number of Offer Shares initially available under the Global Offering, at the Offer\nPrice",
+   "confidence": "high",
+   "note": "Prospectus-disclosed Over-allotment Option limit: 75,000,000 Shares = 15% of the initial 500,000,000 Offer Shares"
+  },
+  "col_CI": {
+   "value": 176800000,
+   "page": 41,
+   "quote": "expect\nto\nincur\nlisting\nexpenses\nof\napproximately RMB161.2 million (HK$176.8 million), comprising: (i) underwriting fees of\nRMB113.5 million (HK$124.5 million)",
+   "confidence": "high",
+   "note": "HK$ base units; total estimated listing expenses HK$176.8 million"
+  },
+  "col_AR": {
+   "value": "Production and sales of electrolytic aluminum and alumina",
+   "page": 343,
+   "quote": "We mainly produce and sell electrolytic aluminum and alumina and other related types of\nproducts, focusing on the high value-added upstream segments of the aluminum industry chain.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board of the Stock Exchange (Chapter 8; not Chapter 18A/18C)",
+   "page": 458,
+   "quote": "The listing of the Shares on the Main Board of the Stock Exchange is sponsored by the\nJoint Sponsors.",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Mass commercialization (established, fully-operating production capacity)",
+   "page": 343,
+   "quote": "As of the Latest Practicable\nDate, we had an annual production capacity of 788.1 kt of electrolytic aluminum and 1,200.0\nkt of alumina.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0.0,
+   "page": 36,
+   "quote": "(i) approximately 50.0% of the net proceeds, or HK$2,556.6 million, is expected\nto be used for expanding overseas production capacity",
+   "confidence": "high",
+   "note": "Disclosed use of proceeds: 50% overseas capacity, 40% green energy projects, 10% working capital; no debt repayment allocation, so 0"
+  },
+  "col_CJ": {
+   "value": "HHLR Advisors, Ltd.; China Hongqiao Group Limited; Taikang Life Insurance Co., Ltd; Glencore International AG; Mercuria Holdings (Singapore) Pte. Ltd.; Greenwoods Asset Management Hong Kong Limited; Shanghai Greenwoods Asset Management Co., Ltd and CICC Financial Trading Limited; TURQUOISE HIME, L.P.; Investcorp Verdant Holdings Limited; CPIC Investment Management (H.K.) Company Limited; GF Management Co., Ltd. and GF International Investment Management Limited; Fullgoal Asset Management (HK) Limited and Fullgoal Fund Management Co., Ltd.; Integrated Core Strategies (Asia) Pte. Ltd.; Jane Street Asia Trading Limited; Polymer Capital Management (HK) Limited; Pointer Investment (H.K.) Ltd.; Brilliant Partners Fund LP and China Core Fund; Cephei Capital Management (Hong Kong) Limited",
+   "page": 425,
+   "quote": "The table below sets forth the details of the Cornerstone Placing:\nCornerstone Investors\nTotal\nInvestment\nAmount(1)",
+   "confidence": "high"
+  },
+  "col_BA": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No Pre-IPO Investment/Investors section and no pre-IPO institutional round found by full-text search; pre-offering equity is held by the founder (Mr. Cui via Bloomsbury Holding) following the Reorganisation, so backing cannot be confirmed (not filled as 0)"
+  },
+  "col_vc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO venture-capital investor disclosed; full-text search for Pre-IPO Investment(s)/Investors returned no hits"
+  },
+  "col_pe_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO private-equity fund disclosed; full-text search for Pre-IPO Investment(s)/Investors returned no hits"
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO corporate/strategic venture investor disclosed; ordinary industrial shareholders are not treated as CVC"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO state/government or guidance-fund investor disclosed"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO VC/PE institution disclosed at all, so no top-tier backer can be confirmed"
+  },
+  "col_pre_ipo_investors": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "Prospectus discloses no pre-IPO investment round or pre-IPO investor list; equity before the Global Offering is held by Mr. Cui through Bloomsbury Holding"
+  },
+  "col_vc_pe_stake": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO institutional shareholding disclosed (no pre-IPO investor list)"
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO investor can be linked to any Board seat"
+  },
+  "col_earliest_round": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No pre-IPO investment round disclosed; not stated that there were none, so NA rather than None"
+  },
+  "col_holding_duration": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No earliest pre-IPO investment agreement date disclosed, so the duration cannot be computed"
+  },
+  "col_BB": {
+   "value": "Natural person (founder Mr. Cui Lixin)",
+   "page": 39,
+   "quote": "As of the Latest Practicable Date, Mr. Cui, through his wholly owned subsidiary,\nBloomsbury Holding, is entitled to control the exercise of 100% voting rights of the issued\nShares of the Company.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.75,
+   "page": 338,
+   "quote": "Mr. Cui(2) \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\nInterests in\ncontrolled\ncorporation\n1,500,000,000\n100% 1,500,000,000\n75%",
+   "confidence": "high",
+   "note": "Economic interest immediately following completion of the Global Offering (base case)"
+  },
+  "col_BD": {
+   "value": 0.75,
+   "page": 39,
+   "quote": "allotment Option is not exercised), Mr. Cui, through Bloomsbury Holding, will be entitled to\ncontrol the exercise of 75% voting rights of the enlarged issued share capital of our Company.",
+   "confidence": "high",
+   "note": "Single class of Shares (one vote per Share), so voting rights equal economic interest"
+  },
+  "col_BP": {
+   "value": "04/07/23",
+   "page": 627,
+   "quote": "Our Company was incorporated in the Cayman Islands on July 4, 2023 as an exempted\ncompany with limited liability.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Hong Kong (principal place of business); production in Inner Mongolia and Shandong, PRC",
+   "page": 627,
+   "quote": "Our principal place of business in Hong Kong is at Room 3601, East, Cheung Kong\nCenter II, 10 Harcourt Road, Central, Hong Kong.",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "31/05/25",
+   "page": 494,
+   "quote": "Year ended 31 December\nFive Months ended\n31 May\nNotes\n2022\n2023\n2024\n2024\n2025",
+   "confidence": "high",
+   "note": "year-1 = five months ended 31 May 2025 (stub period)"
+  },
+  "col_AU": {
+   "value": 832863000,
+   "page": 500,
+   "quote": "\n1,869,139\n4,554,212\n3,461,769\n1,990,912\n832,863",
+   "confidence": "high",
+   "note": "Consolidated statement of cash flows, RMB'000, x1,000. NET CASH FROM OPERATING ACTIVITIES, 5th (last) value 832,863 = five months ended 31 May 2025 = year-1 (col_AT); not annualised."
+  },
+  "col_AV": {
+   "value": 470857000,
+   "page": 502,
+   "quote": "\n158,909\n584,126\n176,401\n342,199\n470,857",
+   "confidence": "high",
+   "note": "Consolidated statement of cash flows, RMB'000, x1,000. CASH AND CASH EQUIVALENTS AT END OF THE YEAR/PERIOD, 5th (last) value 470,857 = 31 May 2025 = year-1 end (col_AT); agrees with balance-sheet cash on p.495."
+  },
+  "col_AW": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No research and development expense line item or R&D expenditure note disclosed in the consolidated statements; full-text search returned no hits"
+  },
+  "col_AX": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low",
+   "note": "No capitalised development cost additions disclosed; the intangible assets note shows additions but no development-cost line, and no capitalized-development disclosure was found"
+  },
+  "col_AY": {
+   "value": 0.797,
+   "page": 21,
+   "quote": "RMB12,018.8 million, RMB13,132.6 million and RMB5,751.4 million, respectively, and\naccounted for 40.8%, 87.0%, 86.6% and 79.7% of our total revenue for the same respective\nperiods.",
+   "confidence": "high",
+   "note": "79.7% is the five months ended May 31, 2025 (year-1 period); 0.797 as a decimal"
+  },
+  "col_DP": {
+   "value": "创新实业集团有限公司",
+   "page": 1,
+   "quote": "創新實業集團有限公司\nCHUANGXIN INDUSTRIES HOLDINGS LIMITED",
+   "confidence": "high",
+   "note": "Traditional characters converted to simplified per the field contract"
+  },
+  "col_CC": {
+   "value": "14/11/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . .9:00 a.m. on Friday,\nNovember 14, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "19/11/25",
+   "page": 5,
+   "quote": "under White Form eIPO service through\nthe designated website www.eipo.com.hk(2) . . . . . . . . . . . . . . .11:30 a.m. on Wednesday,\nNovember 19, 2025",
+   "confidence": "high"
+  }
+ }
+}

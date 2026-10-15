@@ -1,0 +1,119 @@
+{
+  "code": "0800.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 182,
+      "quote": "details of allocation to the existing Shareholders (including ADS holders) will be disclosed in this prospectus (for cornerstone investors (if any)) and allotment results announcement",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 73.44,
+      "page": 4,
+      "quote": "Subscription level 73.44 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 64949,
+      "page": 4,
+      "quote": "No. of valid applications 64,949",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 324037100,
+      "page": 10,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT APPROXIMATE PERCENTAGE ALLOTTED OF THE TOTAL NO. OF SHARES APPLIED FOR POOL A 100 32,160",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 73.44 times",
+      "page": 4,
+      "quote": "Subscription level 73.44 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "04/11/25",
+      "page": 2,
+      "quote": "We expect to determine the pricing of the Offer Shares by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "05/11/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：05/11/2025 22:02",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 88250000,
+      "page": 3,
+      "quote": "Number of Offer Shares (assuming the Over-allotment Option is not exercised) 88,250,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 17650000,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering (after reallocation) 17,650,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 70600000,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering (after reallocation and assuming the Over-allotment Option is not exercised) 70,600,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（03/12/2025 18:21）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "13,237,500 Offer Shares reallocated from the International Offering (claw-back); final Hong Kong Public Offering 17,650,000 Offer Shares (20% of the Global Offering)",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) 13,237,500 Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 17,650,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2264340000,
+      "page": 4,
+      "quote": "Less: Estimated listing expenses payable based on Final Offer Price HK$(127.24) million Net proceeds HK$2,264.34 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.972,
+      "page": 15,
+      "quote": "the total number of the Class A Ordinary Shares held by the public represents approximately 97.2% of the total issued Class A Ordinary Shares of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 1026616330,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (assuming the Over-allotment Option is not exercised) 1,026,616,330",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.086,
+      "page": null,
+      "quote": "公式：(col_CS 88,250,000 − col_CK 0.0000×col_CS) ÷ col_CZ 1,026,616,330 = 0.0860；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DB": {
+      "value": "Free float denominator = total issued shares upon listing (col_CZ); numerator = offer shares minus cornerstone allocation",
+      "page": null,
+      "quote": "公式：(col_CS 88,250,000 − col_CK 0.0000×col_CS) ÷ col_CZ 1,026,616,330 = 0.0860；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 1026616330,
+      "page": 3,
+      "quote": "公式：(col_CS 88,250,000 − col_CK 0.0000×col_CS) ÷ col_CZ 1,026,616,330 = 0.0860；DC = CZ",
+      "source": "da_formula",
+      "confidence": "high"
+    }
+  }
+}

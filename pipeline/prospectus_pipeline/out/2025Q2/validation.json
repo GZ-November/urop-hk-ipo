@@ -1,0 +1,1032 @@
+{
+  "schema_version": 1,
+  "target": "prospectus",
+  "expected_codes": [
+    "3677.HK",
+    "9606.HK",
+    "1333.HK",
+    "2589.HK",
+    "2865.HK",
+    "6831.HK",
+    "3750.HK",
+    "1276.HK",
+    "2629.HK",
+    "2565.HK",
+    "2603.HK",
+    "2621.HK",
+    "2573.HK",
+    "2605.HK",
+    "9881.HK",
+    "3288.HK",
+    "2050.HK",
+    "2609.HK",
+    "2617.HK",
+    "2619.HK",
+    "2643.HK",
+    "2508.HK",
+    "6168.HK",
+    "6883.HK",
+    "3880.HK",
+    "6603.HK",
+    "9678.HK"
+  ],
+  "records": [
+    {
+      "code": "3677.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3677.json",
+      "hash": "62dffebee22049043c085c3f4c7f296fb3e8f1612678dbda6bf5dfa6a69933b6",
+      "json_sha256": "1c80d0062669d9297af2c11f3e50d045f330658bb2747b83770feb0cdee87c9d",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_cvc_backed",
+        "col_top_tier_vc",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=10,450,817,000 不能由引文数字×单位直接得到；复核须在第 32 页重算并在报告中写明算式",
+        "col_X=14,130,782,000 不能由引文数字×单位直接得到；复核须在第 32 页重算并在报告中写明算式",
+        "col_Y=15,594,231,000 不能由引文数字×单位直接得到；复核须在第 32 页重算并在报告中写明算式",
+        "col_AC=7,978,253,000 不能由引文数字×单位直接得到；复核须在第 532 页重算并在报告中写明算式",
+        "col_AD=9,383,549,000 不能由引文数字×单位直接得到；复核须在第 532 页重算并在报告中写明算式",
+        "col_AE=9,697,109,000 不能由引文数字×单位直接得到；复核须在第 532 页重算并在报告中写明算式",
+        "col_BE=4,014,484,000 不能由引文数字×单位直接得到；复核须在第 464 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "9606.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB9606.json",
+      "hash": "53e49788c99b6b53f416fc349c897f6701f2c013dbfe627ccc93fac48a34df1e",
+      "json_sha256": "a255169751b3186db36ce5d3cba112b7cac9282c4cde6ac7b8d376c692329bd0",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_cvc_backed",
+        "col_vc_pe_stake"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_BE=5,289,000 不能由引文数字×单位直接得到；复核须在第 587 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "1333.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB1333.json",
+      "hash": "21693e545198043680faa84560cb7dd65861adbfaf310b43efd19b7d4bcc852e",
+      "json_sha256": "37df4184349974827c35768202d7ddc346a49b375d8ca9f02862241507aee227",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AX",
+        "col_top_tier_vc",
+        "col_vc_pe_stake",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2589.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2589.json",
+      "hash": "3f92ef46c5978afbf5617367a43a8fdfc8ef085448c1b567a90cb8b5a72a57aa",
+      "json_sha256": "65e3dc98363d7dc8b917fc5b0bb18663ca8ff9da5d40b5524ed11aba19f51fb6",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_CG=24,147,000 不能由引文数字×单位直接得到；复核须在第 304 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2865.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2865.json",
+      "hash": "af6bd0acfbc168d2a9c0187fd0d98d4ed7983d93ac92e50db1d6b0ef8f31ad98",
+      "json_sha256": "ea3078c29fba33501b3baa8aa193e6881293e30ca555ec5d23715f953a68afbd",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=8,839,676,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式",
+        "col_X=17,925,955,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式",
+        "col_Y=16,444,209,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式",
+        "col_AC=7,788,846,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式",
+        "col_AD=13,216,715,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式",
+        "col_AE=12,557,212,000 不能由引文数字×单位直接得到；复核须在第 38 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "6831.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6831.json",
+      "hash": "050daa999d1787fa3932efc97495dd6dc41ad0e4b1c81d5e9206ea404810ef03",
+      "json_sha256": "2e21896facee743e6d1b70d9bb1a73b1d08c3d650ba6725acf51ee00bc9a6b51",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AW",
+        "col_AY",
+        "col_BF",
+        "col_CF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=1,813,681,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式",
+        "col_X=2,421,004,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式",
+        "col_Y=2,464,345,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式",
+        "col_AC=1,345,640,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式",
+        "col_AD=2,006,493,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式",
+        "col_AE=1,693,212,000 不能由引文数字×单位直接得到；复核须在第 22 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "3750.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3750.json",
+      "hash": "65e68e9a81ac5ea5d6d8b7fc31f293a130ed47aaaa7054bd42a31351105103b5",
+      "json_sha256": "a9c68454d6dbd147f4024bcb068cb4ab50e4fa26c0af54d80c8b2c5a7da364db",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_U",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "1276.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB1276.json",
+      "hash": "52d614f75450a1dbc791739e592c69a3d6928d8bb4c8e1c0f0085d3bcf1f29ac",
+      "json_sha256": "a23ac45692ffe46918099e4ce1d025c08385fc9979915f7e35689874b354d229",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_AV=25,830,396,000 不能由引文数字×单位直接得到；复核须在第 498 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2629.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2629.json",
+      "hash": "ff8f5fb09aa665094031091acdcab2995d93b14fa1fd7120648d0060ad7911db",
+      "json_sha256": "3fdea735b599720bbb12be1922344b6f5d2438bdf2b601c74c763f136d6fab3a",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AQ",
+        "col_AX",
+        "col_DP"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_BE=32,702,225 不能由引文数字×单位直接得到；复核须在第 565 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2565.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2565.json",
+      "hash": "2ac67be602453829899d3918bd728d1130f2190ecfc2529dbd53f24baf67800e",
+      "json_sha256": "fd927d8d4e16aa92df29347ad610d60d699178e760355b0d58946493c790c05d",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_W",
+        "col_AC",
+        "col_AI",
+        "col_AL",
+        "col_AY",
+        "col_CF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_X=368,053,000 不能由引文数字×单位直接得到；复核须在第 30 页重算并在报告中写明算式",
+        "col_Y=218,357,000 不能由引文数字×单位直接得到；复核须在第 30 页重算并在报告中写明算式",
+        "col_AD=172,700,000 不能由引文数字×单位直接得到；复核须在第 30 页重算并在报告中写明算式",
+        "col_AE=160,887,000 不能由引文数字×单位直接得到；复核须在第 30 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2603.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2603.json",
+      "hash": "e1b2eef3e4caae3f49bd41b0b98d241948ae838528e604500432a6c3b7ca52da",
+      "json_sha256": "04f672218527bce9db4c0c2ef34913cf1266a3238cadd3daff184130b8e7ecc1",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AQ",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2621.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2621.json",
+      "hash": "8025752ff4668f7a3ee0a900cc910a77ee687bc9f77600e9a431f2514ee00651",
+      "json_sha256": "54858935f17b4b1e770029aef10fd232abb845c669c4f45ce22838e5069c2ba8",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_AC=1,481,151,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_AD=2,184,017,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_AE=2,575,997,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_BE=5,717,000 不能由引文数字×单位直接得到；复核须在第 443 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2573.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2573.json",
+      "hash": "caff2139ed1d772fc08cc006e27bc4108a4af463073b8be2f1d7f41901d6fa1b",
+      "json_sha256": "3cb56ff1ee9a6962dffdd646f73cc48d325ee6a17690c2a31b0c5d32e4e59bcd",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=726,661,000 不能由引文数字×单位直接得到；复核须在第 437 页重算并在报告中写明算式",
+        "col_X=713,209,000 不能由引文数字×单位直接得到；复核须在第 437 页重算并在报告中写明算式",
+        "col_Y=812,908,000 不能由引文数字×单位直接得到；复核须在第 437 页重算并在报告中写明算式",
+        "col_AD=278,279,000 不能由引文数字×单位直接得到；复核须在第 438 页重算并在报告中写明算式",
+        "col_AE=333,789,000 不能由引文数字×单位直接得到；复核须在第 438 页重算并在报告中写明算式",
+        "col_BE=75,024,000 不能由引文数字×单位直接得到；复核须在第 437 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2605.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2605.json",
+      "hash": "316b6f958478e9c32fe8132aec690188fd1872016f9b3e46d55ba3efb3e482f8",
+      "json_sha256": "708146ca92226cdb3f10a3c5615bed039781d6570c100c86861bb28ed23af0ad",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AO",
+        "col_AP",
+        "col_DP",
+        "col_CJ",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_BE=31,286,000 不能由引文数字×单位直接得到；复核须在第 360 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "9881.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB9881.json",
+      "hash": "56df70b682f5465990981421a4f3d6acbfc172cee3f5ea8467396b9b2d4795bf",
+      "json_sha256": "10fdaf07c258b5499f807db85430e5320e4d0876c978efa4ded6a94e4f521f51",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AO",
+        "col_AP",
+        "col_vc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_vc_pe_stake",
+        "col_holding_duration",
+        "col_BF",
+        "col_BG"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "3288.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3288.json",
+      "hash": "d5cebea404dbc3373e93c69f5dfed47235566f9fa4140403ef97c1b5503d629a",
+      "json_sha256": "b255e8774d563be3eeb72f7d9bd20dd7a31213f3e91058bc91e2d4bdb8fc518c",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2050.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2050.json",
+      "hash": "95b25ad018db6e742351b7c89a0f0620e68fa0d77847c018855654c1b3df9bac",
+      "json_sha256": "4e0ecf6331f8f5e2e9ecdfaa753b3719d8d46292554f1fd945a316b6d49f8df4",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2609.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2609.json",
+      "hash": "7aeb25c20daa362f8945fe1c221d4352f27ec5e18ce9b1262ac1e3992ecd6d18",
+      "json_sha256": "93fc18a4d561c4e278eaefc4182209533689b8e0a175a19bdaa54af35282e4c3",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AQ",
+        "col_AW",
+        "col_top_tier_vc",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=2,110,951,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_X=2,211,406,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_Y=2,203,086,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_AC=1,024,461,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_AD=1,035,888,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_AE=1,033,020,000 不能由引文数字×单位直接得到；复核须在第 34 页重算并在报告中写明算式",
+        "col_BE=357,190,000 不能由引文数字×单位直接得到；复核须在第 593 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2617.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2617.json",
+      "hash": "3f7d3c47e204ab6f6333f49fdfc260ca02c2f59cfffdabd7ccb12a7ca6702361",
+      "json_sha256": "0f703763ad7ad5f6883d5ffaa21d7caf07b6e7a349737d521df1242af3521cc4",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_AY",
+        "col_vc_pe_stake"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_X=887,090,000 不能由引文数字×单位直接得到；复核须在第 550 页重算并在报告中写明算式",
+        "col_Y=629,601,000 不能由引文数字×单位直接得到；复核须在第 550 页重算并在报告中写明算式",
+        "col_AD=103,912,000 不能由引文数字×单位直接得到；复核须在第 550 页重算并在报告中写明算式",
+        "col_AE=104,568,000 不能由引文数字×单位直接得到；复核须在第 550 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2619.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2619.json",
+      "hash": "08f1a70e5640f59cec4bb48dd16787eca54f2a98b7531381c9be41e1a80e667e",
+      "json_sha256": "0b17e371591e3a9244d48890f9d91a1ecfa12f1434ffc2ea722533ab68aa3f03",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_holding_duration",
+        "col_BF",
+        "col_BG"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=1,220,774,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式",
+        "col_X=1,550,292,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式",
+        "col_Y=1,706,979,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式",
+        "col_AC=557,607,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式",
+        "col_AD=765,357,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式",
+        "col_AE=780,768,000 不能由引文数字×单位直接得到；复核须在第 27 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2643.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2643.json",
+      "hash": "0b7d072e010f081bbb6ef79ab3bc61d9b970abd4bbab1fb2e382c7737760934d",
+      "json_sha256": "2508688fc01cef38e85a6c6cd894a2c019fe95617cb9ef58eb52a8102351be91",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_top_tier_vc",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "2508.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2508.json",
+      "hash": "fb40aa844137e55360e8778a4cd7bbd1d19bf2c2a5a8e8410441162aa71c9ad8",
+      "json_sha256": "9c4a4d854fd9452ab4b082a201159f87546d05d9aa75e0c8712b7230b3626560",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_vc_pe_stake"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "6168.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6168.json",
+      "hash": "878279d26b465b0645b442733d01058ea3fff74adef0477aa05fe5e14b6e5ed1",
+      "json_sha256": "3d834f06956be611983fcb27430933d729f722399e919caa9226d6ab452559d5",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "6883.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6883.json",
+      "hash": "ae91cdb2a317097f3fb4a59117d2d9620c29efaed1d60a712ee7c200c8f3031c",
+      "json_sha256": "8760e17a9d03d85e6812cd7e0afdd8c4f7731433df4fdde8522bea2df91081f3",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AW",
+        "col_CJ",
+        "col_pre_ipo_investors",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_BE=112,106,000 不能由引文数字×单位直接得到；复核须在第 485 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2025@03-31"
+      }
+    },
+    {
+      "code": "3880.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3880.json",
+      "hash": "716b2c56b8b2a19ecffed45e92d84509c8fd11cda808ba013c95954d7e82be90",
+      "json_sha256": "b66a3e8a07b8aa8b0f64bb4b997b5c0430c4f4350e31adaf36348e6567cafac5",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_W=1,239,152,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_X=1,308,746,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_Y=1,172,628,000 不能由引文数字×单位直接得到；复核须在第 24 页重算并在报告中写明算式",
+        "col_AC=1,036,685,000 不能由引文数字×单位直接得到；复核须在第 443 页重算并在报告中写明算式",
+        "col_AD=1,054,862,000 不能由引文数字×单位直接得到；复核须在第 443 页重算并在报告中写明算式",
+        "col_AE=853,878,000 不能由引文数字×单位直接得到；复核须在第 443 页重算并在报告中写明算式",
+        "col_BE=41,143,000 不能由引文数字×单位直接得到；复核须在第 379 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    },
+    {
+      "code": "6603.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6603.json",
+      "hash": "07ab73068d342f94e5fe0cad0e87987f029fa751ee5449a2e11aaffee8486912",
+      "json_sha256": "73fda51bab07d111532afc1080d67c6f03d2d7aa74e11fcc13ced2f5cb86fb1b",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_AW",
+        "col_DP",
+        "col_vc_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_X=30,511,000 不能由引文数字×单位直接得到；复核须在第 29 页重算并在报告中写明算式",
+        "col_Y=74,136,000 不能由引文数字×单位直接得到；复核须在第 29 页重算并在报告中写明算式",
+        "col_AD=21,005,000 不能由引文数字×单位直接得到；复核须在第 29 页重算并在报告中写明算式",
+        "col_AE=26,047,000 不能由引文数字×单位直接得到；复核须在第 29 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "unresolved",
+        "reason": "no complete financial year before year-1",
+        "year1": null
+      }
+    },
+    {
+      "code": "9678.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB9678.json",
+      "hash": "9f8807c61945f69c775d4d7ef612a97f1682cc856c6c2007beed15535979e2d7",
+      "json_sha256": "0d7cdef32522abd4a42f32ff4eaf3e6aa8cd1b0e0fb9ac0043da84de0c2434b1",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_top_tier_vc",
+        "col_vc_pe_stake"
+      ],
+      "errors": [],
+      "warnings": [
+        "col_BE=163,626,000 不能由引文数字×单位直接得到；复核须在第 336 页重算并在报告中写明算式"
+      ],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "FY2024@12-31"
+      }
+    }
+  ],
+  "missing_files": [],
+  "pending_missing_fields": [
+    {
+      "code": "3677.HK",
+      "fields": [
+        "col_cvc_backed",
+        "col_top_tier_vc",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "9606.HK",
+      "fields": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_cvc_backed",
+        "col_vc_pe_stake"
+      ]
+    },
+    {
+      "code": "1333.HK",
+      "fields": [
+        "col_AX",
+        "col_top_tier_vc",
+        "col_vc_pe_stake",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "2589.HK",
+      "fields": [
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2865.HK",
+      "fields": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "6831.HK",
+      "fields": [
+        "col_AW",
+        "col_AY",
+        "col_BF",
+        "col_CF"
+      ]
+    },
+    {
+      "code": "3750.HK",
+      "fields": [
+        "col_U",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "1276.HK",
+      "fields": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "2629.HK",
+      "fields": [
+        "col_AQ",
+        "col_AX",
+        "col_DP"
+      ]
+    },
+    {
+      "code": "2565.HK",
+      "fields": [
+        "col_W",
+        "col_AC",
+        "col_AI",
+        "col_AL",
+        "col_AY",
+        "col_CF"
+      ]
+    },
+    {
+      "code": "2603.HK",
+      "fields": [
+        "col_AQ",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2621.HK",
+      "fields": [
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2573.HK",
+      "fields": [
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "2605.HK",
+      "fields": [
+        "col_AO",
+        "col_AP",
+        "col_DP",
+        "col_CJ",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "9881.HK",
+      "fields": [
+        "col_AO",
+        "col_AP",
+        "col_vc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_vc_pe_stake",
+        "col_holding_duration",
+        "col_BF",
+        "col_BG"
+      ]
+    },
+    {
+      "code": "3288.HK",
+      "fields": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2050.HK",
+      "fields": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_earliest_round",
+        "col_holding_duration"
+      ]
+    },
+    {
+      "code": "2609.HK",
+      "fields": [
+        "col_AQ",
+        "col_AW",
+        "col_top_tier_vc",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2617.HK",
+      "fields": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_AY",
+        "col_vc_pe_stake"
+      ]
+    },
+    {
+      "code": "2619.HK",
+      "fields": [
+        "col_holding_duration",
+        "col_BF",
+        "col_BG"
+      ]
+    },
+    {
+      "code": "2643.HK",
+      "fields": [
+        "col_top_tier_vc",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "2508.HK",
+      "fields": [
+        "col_vc_pe_stake"
+      ]
+    },
+    {
+      "code": "6168.HK",
+      "fields": [
+        "col_BF"
+      ]
+    },
+    {
+      "code": "6883.HK",
+      "fields": [
+        "col_AW",
+        "col_CJ",
+        "col_pre_ipo_investors",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "3880.HK",
+      "fields": [
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc"
+      ]
+    },
+    {
+      "code": "6603.HK",
+      "fields": [
+        "col_W",
+        "col_Z",
+        "col_AC",
+        "col_AF",
+        "col_AI",
+        "col_AL",
+        "col_AW",
+        "col_DP",
+        "col_vc_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_BF"
+      ]
+    },
+    {
+      "code": "9678.HK",
+      "fields": [
+        "col_top_tier_vc",
+        "col_vc_pe_stake"
+      ]
+    }
+  ],
+  "errors": [],
+  "gate_pass": true
+}

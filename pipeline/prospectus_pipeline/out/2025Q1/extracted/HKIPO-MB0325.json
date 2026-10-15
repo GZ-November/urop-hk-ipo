@@ -1,0 +1,425 @@
+{
+  "code": "0325.HK",
+  "fields": {
+    "col_L": {
+      "value": 24120300,
+      "page": 354,
+      "quote": "24,120,300 Offer Shares will initially be made available under the Global Offering comprising: (a) the Hong Kong Public Offering of initially 2,412,300 Shares...",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 24120300,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering: 24,120,300 Offer Shares (subject to the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 0,
+      "page": 265,
+      "quote": "24,120,300 Ordinary Shares of US$0.0001 each to be issued pursuant to the Global Offering (assuming the Offer Size Adjustment Option and the Over-allotment Option are not exercised)",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 0,
+      "page": 265,
+      "quote": "Share capital immediately after the completion of the Global Offering",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 265,
+      "quote": "24,120,300 Ordinary Shares of US$0.0001 each to be issued pursuant to the Global Offering (assuming the Offer Size Adjustment Option and the Over-allotment Option are not exercised)",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 24120300,
+      "page": 265,
+      "quote": "24,120,300 Ordinary Shares of US$0.0001 each to be issued pursuant to the Global Offering (assuming the Offer Size Adjustment Option and the Over-allotment Option are not exercised)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 21708000,
+      "page": 2,
+      "quote": "Number of International Offer Shares: 21,708,000 Offer Shares (subject to reallocation, the Offer Size Adjustment Option and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 2412300,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares: 2,412,300 Offer Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares (US$0.0001 par value, single class)",
+      "page": 265,
+      "quote": "Ordinary Shares of nominal or par value of US$0.0001 each",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": "NaN",
+      "page": null,
+      "quote": "Issuer incorporated in the Cayman Islands with a single class of ordinary US$0.0001 shares; no H share class exists, so H-shares-after-IPO is not applicable",
+      "confidence": "low"
+    },
+    "col_T": {
+      "value": 60.35,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$60.35 per Offer Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 55.65,
+      "page": 2,
+      "quote": "is currently expected to be not less than HK$55.65 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2024-12-31",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . 9:00 a.m. on Tuesday, December 31, 2024",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2025-01-07",
+      "page": 5,
+      "quote": "Application lists close . . . 12:00 noon on Tuesday, January 7, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "布鲁可集团有限公司",
+      "page": 1,
+      "quote": "BLOKS GROUP LIMITED 布魯可集團有限公司 GLOBAL OFFERING",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 391,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1945851000,
+      "page": 29,
+      "quote": "Total assets 2,485,976 1,945,851 1,012,656 1,125,533",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1012656000,
+      "page": 29,
+      "quote": "Total assets 2,485,976 1,945,851 1,012,656 1,125,533",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1125533000,
+      "page": 29,
+      "quote": "Total assets 2,485,976 1,945,851 1,012,656 1,125,533",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -1377115000,
+      "page": 29,
+      "quote": "Total equity (958,619) (1,377,115) (1,608,294) (1,492,462)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -1608294000,
+      "page": 29,
+      "quote": "Total equity (958,619) (1,377,115) (1,608,294) (1,492,462)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -1492462000,
+      "page": 29,
+      "quote": "Total equity (958,619) (1,377,115) (1,608,294) (1,492,462)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 3322966000,
+      "page": 29,
+      "quote": "Total liabilities 3,444,595 3,322,966 2,620,950 2,617,995",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 2620950000,
+      "page": 29,
+      "quote": "Total liabilities 3,444,595 3,322,966 2,620,950 2,617,995",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 2617995000,
+      "page": 29,
+      "quote": "Total liabilities 3,444,595 3,322,966 2,620,950 2,617,995",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 325574000,
+      "page": 391,
+      "quote": "Revenue 5 329,772 325,574 876,686 309,939 1,046,203",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 876686000,
+      "page": 391,
+      "quote": "Revenue 5 329,772 325,574 876,686 309,939 1,046,203",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 2092406000,
+      "page": 391,
+      "quote": "Revenue 5 329,772 325,574 876,686 309,939 1,046,203",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -456771000,
+      "page": 391,
+      "quote": "LOSS BEFORE TAX (563,834) (456,771) (189,839) (202,260) (202,756)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -189839000,
+      "page": 391,
+      "quote": "LOSS BEFORE TAX (563,834) (456,771) (189,839) (202,260) (202,756)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -405512000,
+      "page": 391,
+      "quote": "LOSS BEFORE TAX (563,834) (456,771) (189,839) (202,260) (202,756)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -422705000,
+      "page": 391,
+      "quote": "LOSS FOR THE YEAR/PERIOD (506,853) (422,705) (207,481) (202,788) (254,891)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -207481000,
+      "page": 391,
+      "quote": "LOSS FOR THE YEAR/PERIOD (506,853) (422,705) (207,481) (202,788) (254,891)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -509782000,
+      "page": 391,
+      "quote": "LOSS FOR THE YEAR/PERIOD (506,853) (422,705) (207,481) (202,788) (254,891)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 46266000,
+      "page": 319,
+      "quote": "Total 64,140 72,962 82,844 46,266 62,498",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 23,
+      "quote": "Our consolidated financial information was prepared in accordance with IFRSs",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 553736000,
+      "page": 391,
+      "quote": "Gross profit 123,401 123,419 414,922 136,208 553,736",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 22068000,
+      "page": 399,
+      "quote": "Purchases of items of property, plant and equipment (23,852) (16,889) (24,311) (12,642) (22,068)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unaudited (reviewed by Reporting Accountants)",
+      "page": 36,
+      "quote": "our unaudited interim condensed consolidated financial information for the nine months ended September 30, 2024 has been reviewed by our Reporting Accountants",
+      "confidence": "medium"
+    },
+    "col_AT": {
+      "value": "30/06/24",
+      "page": 48,
+      "quote": "“Track Record Period” the financial years ended December 31, 2021, 2022 and 2023 and the six months ended June 30, 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 508032000,
+      "page": 399,
+      "quote": "Net cash flows (used in)/from operating activities (293,333) (168,737) 284,892 60,911 508,032",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 554092000,
+      "page": 400,
+      "quote": "CASH AND CASH EQUIVALENTS AT END OF YEAR/PERIOD 23 76,153 188,972 360,837 195,045 554,092",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 76016000,
+      "page": 391,
+      "quote": "Research and development expenses (83,016) (98,444) (94,657) (41,953) (76,016)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 435,
+      "quote": "17. INTANGIBLE ASSETS Licensed IP Sponsorship Software Total",
+      "confidence": "high"
+    },
+    "col_AY": {
+      "value": 0.121,
+      "page": 21,
+      "quote": "In 2021, 2022, 2023 and the six months ended June 30, 2024, revenue from our five largest customers in each year or period during the Track Record Period accounted for 26.6%, 22.5%, 15.3% and 12.1%",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 163,
+      "quote": "Yunfeng Blocks is the investment entity of Yunfeng Capital (雲鋒基金), a leading private equity investment firm in the PRC",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 162,
+      "quote": "Both Suzhou Junjunde and Beijing Junlian are controlled by their common general partner, which is a wholly-owned subsidiary of Legend Capital Management Co., Ltd. (Legend Capital)",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 163,
+      "quote": "Yunfeng Blocks is the investment entity of Yunfeng Capital (雲鋒基金), a leading private equity investment firm in the PRC",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 161,
+      "quote": "To the best knowledge of the Company and the Directors, each of the Pre-IPO Investors is an Independent Third Party",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 162,
+      "quote": "Beijing Junlian is owned as to 35.71% by National Council for Social Security Fund of People’s Republic of China (全國社會保障基金理事會)",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": 1,
+      "page": 163,
+      "quote": "Yunfeng Blocks is the investment entity of Yunfeng Capital (雲鋒基金), a leading private equity investment firm in the PRC",
+      "confidence": "medium"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Legend Capital (via Idea Great and LC Fund), Yunfeng Capital (Yunfeng Blocks/Tuoyuan), Gaorong (Gaorong BLK Holding), Gaintex, BlueCo (Mr. Charlie Cao), JYCP/JYMB Holding, SinoMedia (Asia Pacific), NAW, Way Elegance, Mr. Qi Daqing",
+      "page": 158,
+      "quote": "Details of the Pre-IPO Investments by our Pre-IPO Investors through subscription of new shares and/or acquisition of existing shares of our Group are summarized below",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": null,
+      "quote": "Prospectus does not aggregate VC/PE institutional shareholding; computing it requires assumptions (warrant cancellation, 2024 transfers, individual vehicles), so not filled",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 248,
+      "quote": "Mr. Chang joined Beijing Source Code Capital Co., Ltd. (北京源碼資本投資有限公司) at\nSeptember 2016 and has served as a partner since October 2021, and is mainly responsible fo",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series Angel Investment (2018)",
+      "page": 143,
+      "quote": "Pursuant to the capital increase agreements among the following series angel investors (each a “Series Angel Investor”)",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 6.9,
+      "page": 157,
+      "quote": "From 2018 to 2024, our Group has completed several rounds of Pre-IPO Investments",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Individual/founder (Mr. Zhu Weisong, via Next Bloks/Smart Bloks and Wise Global Trust)",
+      "page": 33,
+      "quote": "Mr. Zhu, our chairman and executive Director, will be interested in and control an aggregate of approximately 49.47% of our enlarged issued share capital",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4947,
+      "page": 33,
+      "quote": "will be interested in and control an aggregate of approximately 49.47% of our enlarged issued share capital",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.4947,
+      "page": 33,
+      "quote": "Mr. Zhu will control the exercise of the voting rights of the Shares held by Next Bloks and Smart Bloks in our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2021-07-28",
+      "page": 141,
+      "quote": "The Company was incorporated in the Cayman Islands as an exempted company with limited liability on July 28, 2021",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "PRC (Shanghai)",
+      "page": 141,
+      "quote": "We are a leader of assembly character toys in China",
+      "confidence": "medium"
+    },
+    "col_AR": {
+      "value": "Design, R&D and sales of assembly character toys (toy industry)",
+      "page": 141,
+      "quote": "Bloks Technology, the principal operating entity of the Group primarily engaging in the design, research and development and sales of assembly toys",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board (Listing Rule 8.05(3) market capitalisation/revenue test)",
+      "page": 35,
+      "quote": "we satisfy the market capitalisation/revenue test under Rule 8.05(3) of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercialised (products sold at scale)",
+      "page": 171,
+      "quote": "we are China’s largest and leading player in the assembly character toy segment with a GMV of approximately RMB1.8 billion in 2023",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 35,
+      "quote": "Approximately 10%, or HK$129 million, will be used for working capital and other general corporate purposes",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.027625,
+      "page": 351,
+      "quote": "The Underwriters will receive an underwriting commission of approximately 2.7625% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.027625,
+      "page": 351,
+      "quote": "The Underwriters will receive an underwriting commission of approximately 2.7625% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 351,
+      "quote": "3,618,000 Shares (representing not more than 15% of the number of Offer Shares being offered under the Global Offering assuming the Offer Size Adjustment Option is not exercised)",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 105200000,
+      "page": 34,
+      "quote": "Our listing expenses are estimated to be approximately HK$105.2 million (including underwriting commission) accounting for 7.5% of the gross proceeds of the Global Offering",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Greenwoods Asset Management Hong Kong Limited;UBS Asset Management (Singapore) Ltd.;Fullgoal Fund Management Co., Ltd.;Fullgoal Asset Management (HK) Limited",
+      "page": 331,
+      "quote": "The table below sets forth the details of the Cornerstone Placing:",
+      "confidence": "high"
+    }
+  }
+}

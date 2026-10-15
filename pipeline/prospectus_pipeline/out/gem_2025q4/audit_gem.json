@@ -1,0 +1,213 @@
+{
+  "timestamp": "2026-10-15 10:59:37",
+  "workbook": "cohorts/HKIPO-GEM2025Q4.xlsx",
+  "sheet": "GEM_details",
+  "audited_companies_count": 1,
+  "stats": {
+    "gem": {
+      "target": "gem",
+      "fields_count": 15,
+      "companies_audited": 1,
+      "total_cells_audited": 15,
+      "matches": 15,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 4,
+      "matches_with_value": 11,
+      "json_files_absent": 0,
+      "both_missing_by_column": {
+        "L": 1,
+        "M": 1,
+        "O": 1,
+        "R": 1
+      },
+      "by_column": {}
+    }
+  },
+  "discrepancies": [],
+  "external_columns": [
+    {
+      "col": "L",
+      "header": "GEM eligibility R&D / operating expenditure ratio",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "M",
+      "header": "GEM disclosed minimum market cap (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "N",
+      "header": "GEM disclosed minimum public float (%)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 0.25
+    },
+    {
+      "col": "O",
+      "header": "GEM public float waiver / exemption",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "P",
+      "header": "GEM disclosed controller lockup (months)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 6
+    },
+    {
+      "col": "Q",
+      "header": "GEM compliance adviser",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Alliance Capital Partners Limited"
+    },
+    {
+      "col": "R",
+      "header": "GEM compliance adviser appointment end",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "S",
+      "header": "GEM offering structure",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "Combined share offer: Hong Kong public offer and placing"
+    },
+    {
+      "col": "T",
+      "header": "GEM board lot (shares)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 5000
+    },
+    {
+      "col": "U",
+      "header": "Official GEM funds raised (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 50000000
+    },
+    {
+      "col": "V",
+      "header": "Official GEM shares at listing",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 400000000
+    },
+    {
+      "col": "W",
+      "header": "Official GEM market capitalisation (HK$)",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": 200000000
+    },
+    {
+      "col": "X",
+      "header": "Official GEM source report",
+      "tool_source": "Other external / manual",
+      "filled_count": 1,
+      "total_count": 1,
+      "fill_rate": "100.0%",
+      "sample_value": "/Users/kate/Documents/UROP/urop-hk-ipo-2025q4/pipeline/sources/GEM/e_newlistings2025.xlsx"
+    },
+    {
+      "col": "Y",
+      "header": "GEM prospectus date source",
+      "tool_source": "Other external / manual",
+      "filled_count": 0,
+      "total_count": 1,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    }
+  ],
+  "company_states": {
+    "8549.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    }
+  }
+}

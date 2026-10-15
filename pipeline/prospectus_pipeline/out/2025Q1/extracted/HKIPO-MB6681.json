@@ -1,0 +1,425 @@
+{
+  "code": "6681.HK",
+  "fields": {
+    "col_L": {
+      "value": 1266278000,
+      "page": 426,
+      "quote": "Total 1,266,278,000 126.6278",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 181112000,
+      "page": 426,
+      "quote": "Shares to be issued under the Global Offering 181,112,000 18.1112",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 1085166000,
+      "page": 426,
+      "quote": "Shares in issue (including the Shares converted on a one-to-one basis by way of re-designation and re-classification of the Series A Preferred Shares) 1,085,166,000",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 1085166000,
+      "page": 426,
+      "quote": "Shares in issue (including the Shares converted on a one-to-one basis by way of re-designation and re-classification of the Series A Preferred Shares) 1,085,166,000",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 426,
+      "quote": "Shares to be issued under the Global Offering 181,112,000 18.1112 Total 1,266,278,000 126.6278",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 181112000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 181,112,000 Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 163000000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 163,000,000 Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 18112000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 18,112,000 Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 2,
+      "quote": "Nominal value : US$0.0000001 per Share",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_T": {
+      "value": 3.22,
+      "page": 2,
+      "quote": "The Offer Price will be HK$3.22 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 3.22,
+      "page": 2,
+      "quote": "The Offer Price will be HK$3.22 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2024-12-30",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Monday, December 30, 2024",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2025-01-03",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close(3) . . . . . . . . . . . . . 12:00 noon on Friday, January 3, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "脑动极光医疗科技有限公司",
+      "page": 1,
+      "quote": "BrainAurora Medical Technology Limited 腦動極光醫療科技有限公司",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 551,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 418088000,
+      "page": 35,
+      "quote": "Total assets 371,298 418,088 394,854 318,927",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 394854000,
+      "page": 35,
+      "quote": "Total assets 371,298 418,088 394,854 318,927",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 318927000,
+      "page": 35,
+      "quote": "Total assets 371,298 418,088 394,854 318,927",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -1094243000,
+      "page": 35,
+      "quote": "Net liabilities (681,282) (1,094,243) (332,181) (411,266)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -332181000,
+      "page": 35,
+      "quote": "Net liabilities (681,282) (1,094,243) (332,181) (411,266)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -411266000,
+      "page": 35,
+      "quote": "Net liabilities (681,282) (1,094,243) (332,181) (411,266)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 1512331000,
+      "page": 35,
+      "quote": "Total liabilities 1,052,580 1,512,331 727,035 730,193",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 727035000,
+      "page": 35,
+      "quote": "Total liabilities 1,052,580 1,512,331 727,035 730,193",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 730193000,
+      "page": 35,
+      "quote": "Total liabilities 1,052,580 1,512,331 727,035 730,193",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 11291000,
+      "page": 552,
+      "quote": "Revenue 6 2,299 11,291 67,200 24,412 51,887",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 67200000,
+      "page": 552,
+      "quote": "Revenue 6 2,299 11,291 67,200 24,412 51,887",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 103774000,
+      "page": 552,
+      "quote": "Revenue 6 2,299 11,291 67,200 24,412 51,887",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -502461000,
+      "page": 552,
+      "quote": "Loss before tax (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -359116000,
+      "page": 552,
+      "quote": "Loss before tax (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -228778000,
+      "page": 552,
+      "quote": "Loss before tax (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -502461000,
+      "page": 552,
+      "quote": "Loss and total comprehensive expense for the year/period 11 (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -359116000,
+      "page": 552,
+      "quote": "Loss and total comprehensive expense for the year/period 11 (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -228778000,
+      "page": 552,
+      "quote": "Loss and total comprehensive expense for the year/period 11 (697,838) (502,461) (359,116) (234,570) (114,389)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 676213000,
+      "page": 479,
+      "quote": "Total 1,037,873 1,493,135 682,777 676,213 646,172",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 551,
+      "quote": "prepared in accordance with the accounting policies which conform with International Financial Reporting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 24520000,
+      "page": 552,
+      "quote": "Gross profit 1,304 3,297 32,064 12,103 24,520",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 10269000,
+      "page": 482,
+      "quote": "Total 28,500 19,785 29,212 10,269",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unaudited",
+      "page": 552,
+      "quote": "(Unaudited)",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/06/24",
+      "page": 552,
+      "quote": "For the six months ended June 30, NOTES 2021 2022 2023 2023 2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": -75527000,
+      "page": 559,
+      "quote": "NET CASH USED IN OPERATING ACTIVITIES (49,206) (100,680) (136,872) (66,006) (75,527)",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 55906000,
+      "page": 561,
+      "quote": "CASH AND CASH EQUIVALENTS AT THE END OF THE YEAR/PERIOD 21 323,740 28,251 57,577 30,871 55,906",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 64231000,
+      "page": 552,
+      "quote": "Research and development expenses (32,760) (67,627) (90,733) (34,371) (64,231)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 552,
+      "quote": "Research and development expenses (32,760) (67,627) (90,733) (34,371) (64,231)",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.556,
+      "page": 348,
+      "quote": "Our five largest customers combined accounted for 70.1%, 73.1%, 75.6%, and 55.6%, respectively, of our total revenue",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 239,
+      "quote": "Our Group has conducted multiple rounds of Pre-IPO Investments, which are summarized below:",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 239,
+      "quote": "Zhongwei Growth (Shanghai) Venture Capital Partnership (Limited Partnership)",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 245,
+      "quote": "CICC Healthcare Investment Fund, L.P.",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 239,
+      "quote": "Series Angel (4) Shanghai Pegasus Subscription of increased registered capital of BrainAurora Zhejiang",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 239,
+      "quote": "Our Group has conducted multiple rounds of Pre-IPO Investments, which are summarized below:",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Northern Light Venture Capital funds (NLSF/NLVF/NLPF via IMMENSE VANTAGE), Zhongwei Growth, Shanghai Pegasus, Tianjin Kangsheng, Tianjin Tianjian, Tianjin Chengye, Anji Shundian, Hainan Synthesis, CICC Healthcare Fund, Mr. Tan",
+      "page": 239,
+      "quote": "Shanghai Pegasus Subscription of increased registered capital of BrainAurora Zhejiang RMB163,605",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": 234,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 236,
+      "quote": "Crusky Limited is wholly owned by one of our non-executive Directors, namely Ms. Li Mingqiu, the sole shareholder of Tianjin Tianjian.",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series Angel",
+      "page": 239,
+      "quote": "Series Angel (4) Shanghai Pegasus Subscription of increased registered capital of BrainAurora Zhejiang",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 9.8,
+      "page": 239,
+      "quote": "RMB163,605 March 2, 2015 March 18, 2015 June 24, 2015 RMB2,564,000",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individuals (Mr. Tan Zheng and Dr. Wang Xiaoyi)",
+      "page": 416,
+      "quote": "ZTan Limited, Wispirits Limited, Wiseforward Limited and Neurobright Limited, are the Controlling Shareholders of our Company.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.3628,
+      "page": 417,
+      "quote": "Mr. Tan and Dr. Wang will together control the voting rights of approximately 36.28% of the total issued share capital of our Company",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.4411,
+      "page": 416,
+      "quote": "Mr. Tan and Dr. Wang, acting in concert pursuant to the Offshore AIC Agreement, will together control the voting rights of approximately 44.11% of the total issued share capital of our Company",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "2023-04-25",
+      "page": 227,
+      "quote": "Our Company was incorporated as an exempted company with limited liability in the Cayman Islands on April 25, 2023.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "PRC (Beijing)",
+      "page": 562,
+      "quote": "The principal place of business of the Company is Block A, Dongsheng Science and Technology Park",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Cognitive impairment digital therapeutics (DTx) integral software solutions / medical devices",
+      "page": 562,
+      "quote": "principally engaged to offer cognitive impairment digital therapeutics (“DTx”) integral software solutions in the PRC",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board Chapter 18A of the Listing Rules",
+      "page": 10,
+      "quote": "we are a biotechnology company seeking to list on the Main Board of the Stock Exchange under Chapter 18A of the Listing Rules",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "Commercial stage",
+      "page": 264,
+      "quote": "We are a commercial stage company. As of the Latest Practicable Date, the System had been included in the provincial health insurance reimbursement lists of 30 provinces in China.",
+      "confidence": "high"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 490,
+      "quote": "We estimate that we will receive net proceeds from the Global Offering of approximately HK$501.3 million",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.025,
+      "page": 513,
+      "quote": "The Hong Kong Underwriters will receive an underwriting commission of 2.5% of the aggregate Offer Price payable for the Hong Kong Offer Shares offered under the Hong Kong Public Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.025,
+      "page": 513,
+      "quote": "an underwriting commission of 2.5% of the aggregate Offer Price payable for the International Offer Shares offered under the International Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 427,
+      "quote": "allotment Option 27,166,000 2.7166",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 81857000,
+      "page": 46,
+      "quote": "Underwriting related expenses 28,237 Total 81,857",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Tasly (Hong Kong) Pharmaceutical Investment Limited; Tasly (International) Healthcare Investment&Development Company Limited; Huang Guangwei; Suzhou Ceyuan Fuhai Enterprise Management Partnership (Limited Partnership)",
+      "page": 410,
+      "quote": "Tasly (Hong Kong) US$5,000,000 HK$3.22 12,074,000 6.67%",
+      "confidence": "high"
+    }
+  }
+}

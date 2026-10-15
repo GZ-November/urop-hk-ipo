@@ -1,0 +1,116 @@
+{
+  "code": "6831.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.5,
+      "page": 6,
+      "quote": "50.00%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 317.54,
+      "page": 4,
+      "quote": "317.54 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 98482,
+      "page": 4,
+      "quote": "98,482",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 5346255200,
+      "page": 11,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 317.54 times",
+      "page": 4,
+      "quote": "317.54 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$7.19; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "15/05/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**15/05/2025 21:40**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 168364000,
+      "page": 3,
+      "quote": "168,364,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 84182000,
+      "page": 3,
+      "quote": "84,182,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 84182000,
+      "page": 4,
+      "quote": "84,182,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD\nAND LAPSE OF THE OVER-ALLOTMENT OPTION（12/06/2025 21:06）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD\nAND LAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "67,345,600 Shares reallocated from the International Offering to the Hong Kong Public Offering (claw-back); final Hong Kong Public Offering 84,182,000 Shares, 50% of the Global Offering",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated to the Public Offer (claw-back)",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 745780000,
+      "page": 3,
+      "quote": "HK$745.78 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 16,
+      "quote": "an aggregate of 168,364,000 Shares or approximately 25% of the total",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 673454800,
+      "page": 3,
+      "quote": "673,454,800",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.125,
+      "page": 6,
+      "quote": "84,182,000",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Number of issued shares upon Listing (before exercise of the Over-allotment Option) = 673,454,800 Shares, i.e. total issued share capital immediately following completion of the Global Offering excluding any Over-allotment Option Shares",
+      "page": 3,
+      "quote": "Number of issued shares upon Listing (before exercise of",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 673454800,
+      "page": 3,
+      "quote": "673,454,800",
+      "confidence": "high"
+    }
+  }
+}

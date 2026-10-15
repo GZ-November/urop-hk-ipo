@@ -1,0 +1,477 @@
+{
+ "code": "2671.HK",
+ "fields": {
+  "col_L": {
+   "value": 120550005,
+   "page": 354,
+   "quote": "Unlisted Shares in issue — — H Shares converted from Unlisted Shares 95,950,005 79.59% H Shares to be issued under the Global Offering 24,600,000 20.41% Total 120,550,005 100%",
+   "confidence": "high",
+   "note": "Base case: p.354 table headed 'Assuming the Over-Allotment Option is not exercised' -> Total 120,550,005 (100%). The fully-exercised table totals 124,240,005 and is NOT used. Unit: shares."
+  },
+  "col_M": {
+   "value": 24600000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering\n:\n24,600,000 H Shares (subject to the Over-allotment\nOption)",
+   "confidence": "high",
+   "note": "Base-case global offering size on the cover (p.2); the Over-allotment Option of up to 3,690,000 Offer Shares (col_AQ, p.479) is excluded. Unit: shares."
+  },
+  "col_N": {
+   "value": 95950005,
+   "page": 354,
+   "quote": "H Shares converted from Unlisted Shares\n95,950,005\n79.59%\nH Shares to be issued under the Global Offering\n24,600,000\n20.41%\nTotal\n120,550,005",
+   "confidence": "high",
+   "note": "Dataset convention (schema hint): N = L - M = 120,550,005 - 24,600,000 = 95,950,005 = shares in issue immediately before completion of the Global Offering, from the authoritative p.354 SHARE CAPITAL table (equal to the registered capital / Unlisted Shares at the Latest Practicable Date). Unit: shares."
+  },
+  "col_O": {
+   "value": 95950005,
+   "page": 354,
+   "quote": "H Shares converted from Unlisted Shares\n95,950,005\n79.59%\nH Shares to be issued under the Global Offering\n24,600,000\n20.41%\nTotal\n120,550,005",
+   "confidence": "high",
+   "note": "Dataset convention (schema hint): O = L - M = 95,950,005, same as col_N, from the p.354 SHARE CAPITAL table. Unit: shares."
+  },
+  "col_P": {
+   "value": 0,
+   "page": 354,
+   "quote": "Unlisted Shares in issue — — H Shares converted from Unlisted Shares 95,950,005 79.59% H Shares to be issued under the Global Offering 24,600,000 20.41% Total 120,550,005 100%",
+   "confidence": "high",
+   "note": "No 'Sale Shares' or 'Selling Shareholder' is disclosed anywhere in the prospectus (full-text search: 0 hits). The p.354 base-case table lists only converted Unlisted Shares and newly issued H Shares -> no selling shareholder, so P = 0 (identity M = Q + P: 24,600,000 = 24,600,000 + 0). Unit: shares."
+  },
+  "col_Q": {
+   "value": 24600000,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering\n:\n24,600,000 H Shares (subject to the Over-allotment\nOption)",
+   "confidence": "high",
+   "note": "All 24,600,000 base-case Offer Shares are newly issued H Shares (no Sale Shares, col_P = 0), so Q = M. Unit: shares."
+  },
+  "col_R": {
+   "value": 22140000,
+   "page": 90,
+   "quote": "The Global Offering comprises the Hong Kong\nPublic Offering of initially 2,460,000 Offer Shares and the International Offering of initially\n22,140,000 Offer Shares",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 2460000,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares\n:\n2,460,000 H Shares (subject to adjustment)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 9.16,
+   "page": 2,
+   "quote": "Maximum Offer Price\n:\nHK$9.16 per H Share, plus brokerage of 1.0%",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 7.1,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$9.16 per Offer Share and is\nexpected to be not less than HK$7.10 per Offer Share",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 21,
+   "quote": "For the year ended December 31,\nFor the six months ended June 30,\n2022\n2023\n2024\n2024\n2025\nRMB’000",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 1211603000,
+   "page": 23,
+   "quote": "Non-current assets\n158,226\n157,660\n117,160\n111,765\n105,225\nCurrent assets\n1,016,097\n1,053,943\n1,284,646\n1,619,237\n1,651,387",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: p.23 subtotals non-current 157,660 + current 1,053,943 = 1,211,603 ('000) x1,000. p.23 columns are 2022 | 2023 | 2024 | 30/06/2025 | 31/10/2025."
+  },
+  "col_X": {
+   "value": 1401806000,
+   "page": 23,
+   "quote": "Non-current assets\n158,226\n157,660\n117,160\n111,765\n105,225\nCurrent assets\n1,016,097\n1,053,943\n1,284,646\n1,619,237\n1,651,387",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: p.23 subtotals non-current 117,160 + current 1,284,646 = 1,401,806 ('000) x1,000."
+  },
+  "col_Y": {
+   "value": 1731002000,
+   "page": 23,
+   "quote": "Non-current assets\n158,226\n157,660\n117,160\n111,765\n105,225\nCurrent assets\n1,016,097\n1,053,943\n1,284,646\n1,619,237\n1,651,387",
+   "confidence": "high",
+   "note": "Year-1 = 30/06/2025 (col_AT): p.519 consolidated balance sheet columns are As at 31 December 2022 | 2023 | 2024 | As at 30 June 2025; total assets = non-current 111,765 + current 1,619,237 = 1,731,002 ('000) x1,000 = 1,731,002,000. The p.23 fifth column (31/10/2025 = 105,225 + 1,651,387 = 1,756,612) is NOT year-1."
+  },
+  "col_Z": {
+   "value": 400089000,
+   "page": 520,
+   "quote": "TOTAL EQUITY\n299,853\n400,089\n471,692\n535,041",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: TOTAL EQUITY 400,089 ('000) x1,000 (p.520; p.23 net assets 400,089)."
+  },
+  "col_AA": {
+   "value": 471692000,
+   "page": 520,
+   "quote": "TOTAL EQUITY\n299,853\n400,089\n471,692\n535,041",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: TOTAL EQUITY 471,692 ('000) x1,000 (p.520; p.23 net assets 471,692)."
+  },
+  "col_AB": {
+   "value": 535041000,
+   "page": 520,
+   "quote": "TOTAL EQUITY\n299,853\n400,089\n471,692\n535,041",
+   "confidence": "high",
+   "note": "Year-1 = 30/06/2025: TOTAL EQUITY 535,041 ('000) x1,000 (p.520; p.23 net assets 535,041)."
+  },
+  "col_AC": {
+   "value": 811514000,
+   "page": 23,
+   "quote": "Non-current liabilities\n1,960\n9,195\n3,856\n977\n325\nCurrent liabilities\n872,510\n802,319\n926,258\n1,194,984\n1,243,369",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: non-current 9,195 + current 802,319 = 811,514 ('000) x1,000."
+  },
+  "col_AD": {
+   "value": 930114000,
+   "page": 23,
+   "quote": "Non-current liabilities\n1,960\n9,195\n3,856\n977\n325\nCurrent liabilities\n872,510\n802,319\n926,258\n1,194,984\n1,243,369",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: non-current 3,856 + current 926,258 = 930,114 ('000) x1,000."
+  },
+  "col_AE": {
+   "value": 1195961000,
+   "page": 23,
+   "quote": "Non-current liabilities\n1,960\n9,195\n3,856\n977\n325\nCurrent liabilities\n872,510\n802,319\n926,258\n1,194,984\n1,243,369",
+   "confidence": "high",
+   "note": "Year-1 = 30/06/2025: non-current 977 + current 1,194,984 = 1,195,961 ('000) x1,000."
+  },
+  "col_AF": {
+   "value": 1453178000,
+   "page": 517,
+   "quote": "Revenue\n5\n1,902,842\n1,453,178\n1,523,033\n509,509\n1,424,109",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; 1,453,178 ('000) x1,000 = 1,453,178,000."
+  },
+  "col_AG": {
+   "value": 1523033000,
+   "page": 517,
+   "quote": "Revenue\n5\n1,902,842\n1,453,178\n1,523,033\n509,509\n1,424,109",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; 1,523,033 ('000) x1,000 = 1,523,033,000."
+  },
+  "col_AH": {
+   "value": 2848218000,
+   "page": 517,
+   "quote": "Revenue\n5\n1,902,842\n1,453,178\n1,523,033\n509,509\n1,424,109",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, the last column of the p.517 consolidated income statement (RMB'000): revenue 1,424,109 x1,000 = 1,424,109,000, annualised x12/6 = 2,848,218,000 per the year-1 stub rule (only sales/PBT/net profit are annualised)."
+  },
+  "col_AI": {
+   "value": 82493000,
+   "page": 517,
+   "quote": "Profit before taxation\n10\n111,478\n82,493\n78,700\n19,334\n76,146",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; PBT 82,493 ('000) x1,000."
+  },
+  "col_AJ": {
+   "value": 78700000,
+   "page": 517,
+   "quote": "Profit before taxation\n10\n111,478\n82,493\n78,700\n19,334\n76,146",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; PBT 78,700 ('000) x1,000."
+  },
+  "col_AK": {
+   "value": 152292000,
+   "page": 517,
+   "quote": "Profit before taxation\n10\n111,478\n82,493\n78,700\n19,334\n76,146",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, last column of the p.517 consolidated income statement (RMB'000): PBT 76,146 x1,000 = 76,146,000, annualised x12/6 = 152,292,000."
+  },
+  "col_AL": {
+   "value": 62132000,
+   "page": 517,
+   "quote": "Profit for the year/period\n87,706\n62,132\n70,783\n13,609\n62,629",
+   "confidence": "high",
+   "note": "Year-3 = FY2023: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; profit 62,132 ('000) x1,000 (p.23 narrative: FY2023 RMB62.1m vs FY2022 RMB87.7m)."
+  },
+  "col_AM": {
+   "value": 70783000,
+   "page": 517,
+   "quote": "Profit for the year/period\n87,706\n62,132\n70,783\n13,609\n62,629",
+   "confidence": "high",
+   "note": "Year-2 = FY2024: p.517 column order is 2022 | 2023 | 2024 | 6M2024 | 6M2025; profit 70,783 ('000) x1,000 (p.23 narrative: FY2024 RMB70.8m vs FY2023 RMB62.1m)."
+  },
+  "col_AN": {
+   "value": 125258000,
+   "page": 517,
+   "quote": "Profit for the year/period\n87,706\n62,132\n70,783\n13,609\n62,629",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, last column of the p.517 consolidated income statement (RMB'000): profit for the period 62,629 x1,000 = 62,629,000, annualised x12/6 = 125,258,000."
+  },
+  "col_AO": {
+   "value": 0.021,
+   "page": 479,
+   "quote": "The Underwriters will receive an underwriting commission of 2.1% of the aggregate\nOffer Price of all the Offer Shares",
+   "confidence": "high",
+   "note": "Global Offering underwriting commission is 2.1% (the “Fixed Fees”); the up-to-1.9% Discretionary Fees is an incentive fee, not part of the commission rate."
+  },
+  "col_AP": {
+   "value": 0.021,
+   "page": 479,
+   "quote": "The Underwriters will receive an underwriting commission of 2.1% of the aggregate\nOffer Price of all the Offer Shares",
+   "confidence": "high",
+   "note": "AO/AP use the same disclosed Global Offering commission rate of 2.1% (hard rule 6); the up-to-1.9% Discretionary Fees is an incentive fee, not the commission."
+  },
+  "col_AQ": {
+   "value": 0.15,
+   "page": 479,
+   "quote": "to require us\nto issue and allot up to an aggregate of 3,690,000 additional Offer Shares, representing not\nmore than 15% of the Offer Shares initially available under the Global Offering",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Integrated prefabricated steel structure (PS) building subcontracting services provider in the industrial sector of the PS building market, offering project design and optimization, procurement, manufacturing and installation; also general contracting services and industrial environmental equipment",
+   "page": 11,
+   "quote": "We\nare\nan\nintegrated\nprefabricated\nsteel\nstructure\nbuilding\n(‘‘PS\nbuilding’’)\nsubcontracting service provider in the industrial sector of PS building market.",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board listing of H Shares (Chapter 8 of the Listing Rules; no Chapter 18A/18C specialist technology or biotech route)",
+   "page": 39,
+   "quote": "‘‘Listing’’\nthe listing of the H Shares on the Main Board",
+   "confidence": "high",
+   "note": "Disclosed basis of listing: Main Board, H Shares (p.39 definition; p.513 'initial listing ... on the Main Board of The Stock Exchange of Hong Kong Limited'). As a PRC issuer the prospectus also applies Chapter 19A (public float Rule 19A.13A and free float Rule 19A.13C, pp.190-191); no Chapter 18A/18C specialist-technology or biotech route is used."
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 517,
+   "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS AND OTHER\nCOMPREHENSIVE INCOME\nYear ended 31 December\nSix months ended 30 June\n2022\n2023\n2024\n2024\n2025",
+   "confidence": "high",
+   "note": "Accountants' Report p.513 defines the Track Record Period as the years ended 31/12/2022, 2023, 2024 and the period ended 30/06/2025; the p.517 columns are 2022 | 2023 | 2024 | 6M2024 | 6M2025. Hence year-1 = 6M ended 30/06/2025 (col_AT), year-2 = FY2024 (most recent full year), year-3 = FY2023."
+  },
+  "col_AU": {
+   "value": 46031000,
+   "page": 527,
+   "quote": "Net cash (used in)/generated from\noperating activities\n(37,846)\n19,798\n(44,426)\n53,905\n46,031",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, last column of the p.527 consolidated cash flow statement (RMB'000): 46,031 x1,000 = 46,031,000, NOT annualised."
+  },
+  "col_AV": {
+   "value": 177542000,
+   "page": 528,
+   "quote": "Cash and cash equivalents at the end\nof the year/period\n50,082\n90,134\n110,920\n150,444\n177,542",
+   "confidence": "high",
+   "note": "Cash and cash equivalents at 30/06/2025 = 177,542 (RMB'000, p.528 'at the end of the year/period' last column; corroborated by the As at 30 June 2025 column of the p.519 consolidated balance sheet) x1,000 = 177,542,000; period-end balance, not annualised."
+  },
+  "col_AW": {
+   "value": 9292000,
+   "page": 517,
+   "quote": "Research and development\nexpenses\n(40,268)\n(28,757)\n(20,471)\n(7,394)\n(9,292)",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, last column of the p.517 consolidated income statement (RMB'000): R&D expenses 9,292 x1,000 = 9,292,000, NOT annualised."
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 527,
+   "quote": "Payments for purchase of intangible\nassets\n—\n(32)\n(1,438)\n(420)\n—",
+   "confidence": "high",
+   "note": "Disclosed nil for year-1 (6M ended 30/06/2025): the p.527 cash-flow line 'Payments for purchase of intangible assets' is '—' in the last column and the statements contain no development-cost line; R&D costs are 'expensed as incurred, except when they meet criteria for capitalization' (p.374) and intangible assets are software/patents only (p.519). Disclosed nil -> 0 (not NaN); not annualised."
+  },
+  "col_AY": {
+   "value": 0.84,
+   "page": 19,
+   "quote": "the revenue attributable to our top five customers\nfor each year/period during the Track Record Period amounted to approximately 77.7%,\n64.6%, 59.0% and 84.0%",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025: 84.0% is the last of the four disclosed figures (77.7% FY2022, 64.6% FY2023, 59.0% FY2024, 84.0% 6M2025) on p.19 -> 0.84. Not annualised."
+  },
+  "col_DP": {
+   "value": "美联钢结构建筑系统（上海）股份有限公司",
+   "page": 2,
+   "quote": "USAS Building System (Shanghai) Co., Ltd.\n美聯鋼結構建築系統（上海）股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "Colorful Cloud Holdings Limited (彩雲控股有限公司); Tiny Jade Holdings (HK) Co., Limited; Wu Xinghua (吳興華); Logic Selective Value Investment Funds SPC",
+   "page": 361,
+   "quote": "Colorful Cloud 15,000,000 1,637,400 6.7% 1.4% 5.8% 1.3% Tiny Jade 10,000,000 1,091,700 4.4% 0.9% 3.9% 0.9% Mr. Wu Xing Hua 4,500,000 491,100 2.0% 0.4% 1.7% 0.4% Logic Selective",
+   "confidence": "high",
+   "note": "Four Cornerstone Investors under real Cornerstone Investment Agreements dated 16/12/2025 (pp.686-687): Colorful Cloud Holdings Limited (彩雲控股有限公司, p.363), Tiny Jade Holdings (HK) Co., Limited (p.363), Mr. Wu Xinghua (吳興華, p.364) and Logic Selective Value Investment Funds SPC (p.364). p.361 table (high-end HK$9.16 case) shows their subscription amounts totaling HK$51,500,000 / 5,621,700 Offer Shares (22.9% of the base Offer Shares); full names and the agreements are set out on pp.363-364 and pp.686-687."
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 172,
+   "quote": "2011 Capital Injections(3) Rongke Investment April 26, 2011 1,000 4.2 June 10, 2011 43.2% Yingzhe Investment April 26, 2011 940 4.2 June 10, 2011 43.2%",
+   "confidence": "high",
+   "note": "Pre-IPO investments by professional investment institutions in the 2007 Transfer and the 2011 Capital Injections (p.172 summary table continues through the 2017/2020/2022 rounds). Institutions include Sunny International (Asia Investments ARM (AIA) S.A., p.168), Rongke Investment and Yingzhe Investment ('Investment Management Co., Ltd.', p.169), Dingyuan Hechuang ('principally engaged in investment holding', p.175) and Jinxuanniao Investment. -> 1."
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 169,
+   "quote": "Shanghai Rongke Investment Management Co., Ltd. (‘‘Rongke Investment’’), Shanghai Yingzhe Investment Management Co., Ltd. (‘‘Yingzhe Investment’’)",
+   "confidence": "medium",
+   "note": "VC basis: early/growth-stage institutional money - the 2011 Capital Injections by Rongke Investment, Yingzhe Investment, Dingyuan Hechuang and Jinxuanniao Investment at a 43.2% discount to the H Share Offer Price (pp.169, 172), plus Sunny International (Asia Investments ARM (AIA) S.A.) since the 2007 Transfer (p.168). The document never uses the words 'venture capital' (full-text search: 0 hits); the classification rests on the disclosed institutional identity of the investors. -> 1."
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 175,
+   "quote": "Dingyuan Hechuang is a company established in the PRC with limited liability on July 27, 2010, which is principally engaged in investment holding.",
+   "confidence": "medium",
+   "note": "PE/fund basis: institutional investment vehicles - Dingyuan Hechuang is 'principally engaged in investment holding' (p.175); Rongke Investment, Yingzhe Investment and Jinxuanniao Investment are investment-management companies (p.169); Sunny International (Asia Investments ARM (AIA) S.A.) is an investment firm holding 15.90% pre-offering (pp.168, 196). The document never uses the words 'private equity' (full-text search: 0 hits); the classification rests on the disclosed institutional identity. -> 1."
+  },
+  "col_cvc_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Sunny International Inc. Limited (Asia Investments ARM (AIA) S.A.); Rongke Investment (Shanghai Rongke Investment Management Co., Ltd.); Yingzhe Investment (Shanghai Yingzhe Investment Management Co., Ltd.); Dingyuan Hechuang (Beijing Dingyuan Hechuang Investment Co., Ltd.); Jinxuanniao Investment (Shenzhen Jinxuanniao Investment Management Co., Ltd.); Shanghai Tusui Corporate Management Partnership (Limited Partnership); Shanghai Wuliu Corporate Management Partnership (Limited Partnership); Shanghai Xianglian Corporate Management Partnership (Limited Partnership); Shanghai Jiade Corporate Management Consulting Co., Ltd.; Shanghai Yiguan Corporate Management Center (Limited Partnership); Youling Technology (Zhuhai Youling Technology Center (Limited Partnership)); Shanghai Jianglian Corporate Management (Shanghai) Center (Limited Partnership); Hainan Yuheng Corporate Management Partnership (Limited Partnership); Shenzhen Qianhai Linglian Technology Partnership (Limited Partnership); Shanghai Wagang Chenji Corporate Management Partnership (Limited Partnership)",
+   "page": 172,
+   "quote": "2007 Transfer Sunny International November 26, 2007 3,000 1.8(2) November 29, 2007 75.7% 2011 Capital Injections(3) Rongke Investment April 26, 2011 1,000 4.2 June 10, 2011 43.2% Yingzhe Investment",
+   "confidence": "medium",
+   "note": "Complete list of disclosed Pre-IPO Investors by round (p.172 summary table; full names pp.168-175): 2007 Transfer - Sunny International Inc. Limited (Asia Investments ARM (AIA) S.A.); 2011 Capital Injections - Rongke Investment, Yingzhe Investment, Dingyuan Hechuang, Jinxuanniao Investment; 2017 Equity Transfers - Shanghai Tusui, Shanghai Wuliu, Shanghai Xianglian, Shanghai Jiade, Shanghai Yiguan; 2020 First Capital Injection - Youling Technology; 2020 Second Capital Injection - Shanghai Jianglian; 2022 First Equity Transfers - Hainan Yuheng, Shenzhen Qianhai, Shanghai Wagang; 2022 Second Equity Transfer - Shenzhen Qianhai. Shi Lingli bought/sold 100 Shares as an Independent Third Party in 2023/2024 (pp.171-172) and is not a Pre-IPO Investor."
+  },
+  "col_vc_pe_stake": {
+   "value": 0.2477,
+   "page": 192,
+   "quote": "International 15.90% Pre-IPO Investors whose Shares will not be counted towards public float Note 3 2.96% 2.15% Pre-IPO Investors whose Shares will be counted towards the public float Note 4 5.91%",
+   "confidence": "medium",
+   "note": "PRE-OFFERING basis at the Latest Practicable Date (95,950,005 Shares; p.354). Pre-IPO investors in aggregate = Sunny International 15.90% + 'not counted towards public float' 2.96% (Youling 1.88 + Shanghai Tusui 1.04 + Shanghai Yiguan 0.04) + 'counted towards public float' 5.91% (Shanghai Jianglian 2.08 + Hainan Yuheng 1.04 + Shenzhen Qianhai 1.25 + Shanghai Wuliu 0.63 + Dingyuan Hechuang 0.50 + Shanghai Wagang 0.41) = 24.77% (p.192 chart; p.196 pre-offering column). Excludes Broad Vision 70.84% and the Controlling Shareholders' Employee Shareholding Platforms Shanghai Xianglian 2.15% / Shanghai Xinlianzhan 2.24% (p.26). No post-offering denominator is used."
+  },
+  "col_vc_board_seat": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_earliest_round": {
+   "value": "2007 Transfer (transfer of equity interest to Sunny International)",
+   "page": 172,
+   "quote": "2007 Transfer\nSunny International\nNovember 26, 2007\n3,000\n1.8(2) November 29,\n2007\n75.7%",
+   "confidence": "high",
+   "note": "Earliest disclosed Pre-IPO investment round = the 2007 Transfer (first row of the p.172 summary table, Sunny International, investment agreement dated 26/11/2007)."
+  },
+  "col_holding_duration": {
+   "value": 18.06,
+   "page": 172,
+   "quote": "2007 Transfer\nSunny International\nNovember 26, 2007\n3,000\n1.8(2) November 29,\n2007",
+   "confidence": "medium",
+   "note": "26/11/2007 (earliest Pre-IPO investment agreement, p.172 first row) to the prospectus date 18/12/2025 (p.2) = 18.06 years."
+  },
+  "col_BB": {
+   "value": "Natural persons (Mr. Chen and Ms. Chen, acting in concert through Broad Vision and the Employee Shareholding Platforms, are the ultimate controlling parties)",
+   "page": 26,
+   "quote": "Mr. Chen, Ms. Chen, Broad Vision, Shanghai Xinlianzhan and Shanghai\nXianglian will constitute the Controlling Shareholders.",
+   "confidence": "high",
+   "note": "Ultimate controller type = natural persons: Mr. Chen and Ms. Chen act in concert and control Broad Vision (70%/30%, p.26) and, through Ms. Chen as executive partner, the Employee Shareholding Platforms Shanghai Xinlianzhan and Shanghai Xianglian (p.194 note 1 lists all five Controlling Shareholders)."
+  },
+  "col_BC": {
+   "value": 0.5987,
+   "page": 26,
+   "quote": "Broad Vision, Shanghai Xianglian, Shanghai Xinlianzhan, Mr. Chen and Ms. Chen will collectively hold 72,184,105 shares, representing approximately 59.87% of the issued share capital",
+   "confidence": "high",
+   "note": "Controller group = Mr. Chen, Ms. Chen, Broad Vision, Shanghai Xinlianzhan, Shanghai Xianglian (p.26; p.194 note 1). Group ECONOMIC interest immediately upon completion of the Global Offering (base case, Over-allotment Option not exercised) = Broad Vision 56.38% + Shanghai Xianglian 1.71% + Shanghai Xinlianzhan 1.78% = 59.87% of the 120,550,005 post-offering Shares (p.26; p.357 shows Broad Vision 'Beneficial owner 56.38%' plus 'Interest held jointly with other persons 3.49%'). Field contract requires the same controller group's interest merged direct/indirect; no WVR (p.355 one class of Shares) so BC = BD."
+  },
+  "col_BD": {
+   "value": 0.5987,
+   "page": 26,
+   "quote": "Mr. Chen and Ms. Chen will, in aggregate, be entitled to control the exercise of\napproximately 59.87% of voting rights in our Company through Broad Vision and the\nEmployee Shareholding Platforms.",
+   "confidence": "high",
+   "note": "Controller group voting rights at listing = 59.87% (p.26 verbatim; the p.194 post-offering structure chart labels the 'Controlling Shareholders' box 59.87%). No WVR - 'we would have only one class of Shares' (p.355) - so BD = BC = 0.5987."
+  },
+  "col_BE": {
+   "value": 377561000,
+   "page": 446,
+   "quote": "247,691\n290,635\n322,836\n377,561\n394,146",
+   "confidence": "high",
+   "note": "Year-1 period end = 30/06/2025 (col_AT). p.446 INDEBTEDNESS table (RMB'000), 'As of June 30, 2025' Total = 377,561 (current 376,584 + non-current 977) x1,000 = 377,561,000; period-end, not annualised. The 394,146 in the same row is the unaudited As of October 31, 2025 column and is NOT year-1."
+  },
+  "col_BF": {
+   "value": "Commercially established / mass production stage (revenue-generating PS building subcontracting, general contracting and industrial environmental equipment; APC product line being developed and commercialized)",
+   "page": 14,
+   "quote": "This business category primarily focuses on the Machinery Filtering and Acoustic Systems (‘‘MFAS’’) line, which currently generates the vast majority of our revenue.",
+   "confidence": "medium",
+   "note": "Revenue-generating at scale: the MFAS line 'currently generates the vast majority of our revenue' (p.14) across PS building subcontracting, general contracting and industrial environmental equipment, while the APC product line is still 'being developed and commercialized' (p.14). Coded stage: mass/commercial production."
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 29,
+   "quote": "We intend to use the net proceeds for the following purposes: (i) approximately 37.7%\n(HK$61.9 million) will be used for capital investments",
+   "confidence": "high",
+   "note": "Debt repayment = 0. p.29 lists six uses of the ~HK$164.2m net proceeds: capital investments 37.7%, project upfront costs 26.7%, sales & marketing 12.3%, acquisitions 9.3%, R&D 9.0%, working capital/general corporate 5.0%. No repayment-of-borrowings purpose is disclosed."
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 354,
+   "quote": "Unlisted Shares in issue\n—\n—\nH Shares converted from Unlisted Shares\n95,950,005\n79.59%",
+   "confidence": "high",
+   "note": "Share class at listing = H Shares: on completion all 120,550,005 Shares (95,950,005 converted + 24,600,000 new) are H Shares, and p.355 states 'we would have only one class of Shares'."
+  },
+  "col_BP": {
+   "value": "17/04/99",
+   "page": 684,
+   "quote": "Our Company, then known as ‘‘United Steel Buildings (Shanghai) Co., Ltd.’’ was\nestablished as a limited liability company in the PRC on April 17, 1999.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, PRC",
+   "page": 100,
+   "quote": "No. 208, Jiangtian East Road\nSongjiang District, Shanghai\nPRC",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "HKFRS",
+   "page": 367,
+   "quote": "The consolidated financial statements of our Group for the Track Record\nPeriod have been prepared based on the accounting policies set out in Note 3 to the\nAccountants’ Report",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "18/12/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . .9: 00 a.m. on\nThursday, December 18, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "23/12/25",
+   "page": 5,
+   "quote": "website at www.eipo.com.hk(2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .11: 30 a.m. on\nTuesday, December 23, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 120550005,
+   "page": 190,
+   "quote": "a total of 95,950,005\nUnlisted Shares will be converted into H Shares on a one-for-one basis upon the completion\nof the Global Offering.",
+   "confidence": "high",
+   "note": "Full-circulation PRC H-share issuer: all 95,950,005 Unlisted Shares convert one-for-one into H Shares on completion (p.190) plus 24,600,000 newly issued H Shares (p.354) = 120,550,005 H Shares listed on HKEX; base case, no greenshoe."
+  },
+  "col_CF": {
+   "value": 145270000,
+   "page": 517,
+   "quote": "Gross profit\n242,601\n214,650\n190,458\n60,427\n145,270",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, the same period as col_AT: last column of the p.517 consolidated income statement (RMB'000), gross profit 145,270 x1,000 = 145,270,000, NOT annualised (FY2022 242,601; FY2023 214,650; FY2024 190,458)."
+  },
+  "col_CG": {
+   "value": 6691000,
+   "page": 527,
+   "quote": "Payments for purchase of property,\nplant and equipment\n(2,306)\n(5,705)\n(5,328)\n(1,694)\n(6,691)",
+   "confidence": "high",
+   "note": "Year-1 = 6M ended 30/06/2025, same period as col_AT: last column of the p.527 consolidated cash flow statement (RMB'000), 6,691 x1,000 = 6,691,000, NOT annualised (FY2023 5,705; FY2024 5,328)."
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 514,
+   "quote": "Opinion\nIn our opinion, the Historical Financial Information gives, for the purpose of the\naccountants’ report, a true and fair view",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 35800000,
+   "page": 479,
+   "quote": "are estimated \nto amount to approximately HK$35.8 million in total (based on the Offer Price of HK$8.13 \nper Offer Share which is the mid-point of the Offer Price range",
+   "confidence": "high",
+   "note": "HK$ base units (not thousands): 'approximately HK$35.8 million in total' = 35,800,000. Mid-point Offer Price HK$8.13, assuming the Over-allotment Option is not exercised (p.479)."
+  }
+ }
+}

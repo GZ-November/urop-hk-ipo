@@ -1,0 +1,425 @@
+{
+ "code": "2687.HK",
+ "fields": {
+  "col_L": {
+   "value": 66666700,
+   "page": 243,
+   "quote": "H Shares to be issued pursuant to the Global Offering 6,666,700 10.00% Total 66,666,700 100.00%",
+   "confidence": "high"
+  },
+  "col_M": {
+   "value": 6666700,
+   "page": 2,
+   "quote": "Number of Offer Shares under the Global Offering : 6,666,700 H Shares",
+   "confidence": "high"
+  },
+  "col_N": {
+   "value": 60000000,
+   "page": 243,
+   "quote": "Immediately before the Global Offering As of the Latest Practicable Date, the registered capital of our Company was RMB60,000,000, comprising 60,000,000 ordinary shares of nominal value RMB1.00 each.",
+   "confidence": "high"
+  },
+  "col_O": {
+   "value": 60000000,
+   "page": 243,
+   "quote": "Immediately before the Global Offering As of the Latest Practicable Date, the registered capital of our Company was RMB60,000,000, comprising 60,000,000 ordinary shares of nominal value RMB1.00 each.",
+   "confidence": "high"
+  },
+  "col_P": {
+   "value": 0,
+   "page": 311,
+   "quote": "The Global Offering comprises the Hong Kong Public Offering of initially 666,700 Hong Kong Offer Shares and the International Offering of initially 6,000,000 International Offer Shares",
+   "confidence": "medium"
+  },
+  "col_Q": {
+   "value": 6666700,
+   "page": 243,
+   "quote": "H Shares to be issued pursuant to the Global Offering 6,666,700 10.00%",
+   "confidence": "high"
+  },
+  "col_R": {
+   "value": 6000000,
+   "page": 2,
+   "quote": "Number of International Offer Shares : 6,000,000 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_S": {
+   "value": 666700,
+   "page": 2,
+   "quote": "Number of Hong Kong Offer Shares : 666,700 H Shares (subject to reallocation)",
+   "confidence": "high"
+  },
+  "col_T": {
+   "value": 76.1,
+   "page": 2,
+   "quote": "Maximum Offer Price : HK$76.10 per H Share, plus brokerage of 1%,",
+   "confidence": "high"
+  },
+  "col_U": {
+   "value": 62.26,
+   "page": 2,
+   "quote": "The Offer Price will be not more than HK$76.10 per Offer Share and is currently expected to be not less than HK$62.26 per Offer Share.",
+   "confidence": "high"
+  },
+  "col_V": {
+   "value": "RMB",
+   "page": 353,
+   "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand (RMB’000) except when otherwise indicated.",
+   "confidence": "high"
+  },
+  "col_W": {
+   "value": 628441000,
+   "page": 355,
+   "quote": "Total assets 565,461 628,441 792,508 680,167",
+   "confidence": "high"
+  },
+  "col_X": {
+   "value": 792508000,
+   "page": 355,
+   "quote": "Total assets 565,461 628,441 792,508 680,167",
+   "confidence": "high"
+  },
+  "col_Y": {
+   "value": 680167000,
+   "page": 355,
+   "quote": "Total assets 565,461 628,441 792,508 680,167",
+   "confidence": "high"
+  },
+  "col_Z": {
+   "value": 390546000,
+   "page": 355,
+   "quote": "Total equity 302,824 390,546 498,869 401,005",
+   "confidence": "high"
+  },
+  "col_AA": {
+   "value": 498869000,
+   "page": 355,
+   "quote": "Total equity 302,824 390,546 498,869 401,005",
+   "confidence": "high"
+  },
+  "col_AB": {
+   "value": 401005000,
+   "page": 355,
+   "quote": "Total equity 302,824 390,546 498,869 401,005",
+   "confidence": "high"
+  },
+  "col_AC": {
+   "value": 237895000,
+   "page": 356,
+   "quote": "Total liabilities 262,637 237,895 293,639 279,162",
+   "confidence": "high"
+  },
+  "col_AD": {
+   "value": 293639000,
+   "page": 356,
+   "quote": "Total liabilities 262,637 237,895 293,639 279,162",
+   "confidence": "high"
+  },
+  "col_AE": {
+   "value": 279162000,
+   "page": 356,
+   "quote": "Total liabilities 262,637 237,895 293,639 279,162",
+   "confidence": "high"
+  },
+  "col_AF": {
+   "value": 652964000,
+   "page": 354,
+   "quote": "Revenue 5 400,111 652,964 848,198 240,982 275,421",
+   "confidence": "high"
+  },
+  "col_AG": {
+   "value": 848198000,
+   "page": 354,
+   "quote": "Revenue 5 400,111 652,964 848,198 240,982 275,421",
+   "confidence": "high"
+  },
+  "col_AH": {
+   "value": 550842000,
+   "page": 354,
+   "quote": "Revenue 5 400,111 652,964 848,198 240,982 275,421",
+   "confidence": "high"
+  },
+  "col_AI": {
+   "value": 86634000,
+   "page": 354,
+   "quote": "(Loss)/profit before income tax (79,073) 86,634 106,598 (108,954) (127,819)",
+   "confidence": "high"
+  },
+  "col_AJ": {
+   "value": 106598000,
+   "page": 354,
+   "quote": "(Loss)/profit before income tax (79,073) 86,634 106,598 (108,954) (127,819)",
+   "confidence": "high"
+  },
+  "col_AK": {
+   "value": -255638000,
+   "page": 354,
+   "quote": "(Loss)/profit before income tax (79,073) 86,634 106,598 (108,954) (127,819)",
+   "confidence": "high"
+  },
+  "col_AL": {
+   "value": 81421000,
+   "page": 354,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income, attributable to owners of the Company (59,110) 81,421 105,071 (88,855) (98,956)",
+   "confidence": "high"
+  },
+  "col_AM": {
+   "value": 105071000,
+   "page": 354,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income, attributable to owners of the Company (59,110) 81,421 105,071 (88,855) (98,956)",
+   "confidence": "high"
+  },
+  "col_AN": {
+   "value": -197912000,
+   "page": 354,
+   "quote": "(Loss)/profit and total comprehensive (loss)/income, attributable to owners of the Company (59,110) 81,421 105,071 (88,855) (98,956)",
+   "confidence": "high"
+  },
+  "col_AO": {
+   "value": 0.025,
+   "page": 321,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 2.5% of the aggregate Offer Price payable for the Offer Shares (the “Fixed Fees”).",
+   "confidence": "high"
+  },
+  "col_AP": {
+   "value": 0.025,
+   "page": 321,
+   "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission equal to 2.5% of the aggregate Offer Price payable for the Offer Shares (the “Fixed Fees”).",
+   "confidence": "high"
+  },
+  "col_AQ": {
+   "value": 0,
+   "page": 322,
+   "quote": "No stabilizing manager will be appointed, and it is anticipated that no stabilization activities will be carried out in relation to the Global Offering.",
+   "confidence": "high"
+  },
+  "col_AR": {
+   "value": "Digital teaching and learning solutions for higher education institutions in China",
+   "page": 10,
+   "quote": "We are a reputable digital teaching and learning solution provider for higher education institutions in China",
+   "confidence": "high"
+  },
+  "col_AS": {
+   "value": "Main Board, Rule 8.05(3) market capitalisation/revenue test",
+   "page": 29,
+   "quote": "on the basis that, among other things, we satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+   "confidence": "high"
+  },
+  "col_AT": {
+   "value": "30/06/25",
+   "page": 351,
+   "quote": "the consolidated financial position of the Group as at 31 December 2022, 2023 and 2024 and 30 June 2025",
+   "confidence": "high"
+  },
+  "col_AU": {
+   "value": -258014000,
+   "page": 361,
+   "quote": "Net cash (used in)/generated from operating activities (48,135) 10,914 (9,526) (206,292) (258,014)",
+   "confidence": "high"
+  },
+  "col_AV": {
+   "value": 53051000,
+   "page": 361,
+   "quote": "Cash and cash equivalents at the end of the year/period 22 206,270 141,742 230,172 68,898 53,051",
+   "confidence": "high"
+  },
+  "col_AW": {
+   "value": 81300000,
+   "page": 354,
+   "quote": "Research and development expenses 8 (98,136) (101,075) (126,923) (54,194) (81,300)",
+   "confidence": "high"
+  },
+  "col_AX": {
+   "value": 0,
+   "page": 258,
+   "quote": "R&D expenditure is recognized as an expense as incurred.",
+   "confidence": "medium"
+  },
+  "col_AY": {
+   "value": 0.063,
+   "page": 17,
+   "quote": "revenue from our top five customers in each year or period of the Track Record Period in aggregate accounted for 6.5%, 7.1%, 5.0% and 6.3% of our total revenue for the respective periods",
+   "confidence": "high"
+  },
+  "col_DP": {
+   "value": "上海卓越睿新数码科技股份有限公司",
+   "page": 2,
+   "quote": "上海卓越睿新數碼科技股份有限公司",
+   "confidence": "high"
+  },
+  "col_CJ": {
+   "value": "NA",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_BA": {
+   "value": 1,
+   "page": 29,
+   "quote": "Since our establishment, we have attracted certain Pre-IPO Investors and completed several rounds of equity financing in the past few years to raise funds for the development of our business.",
+   "confidence": "high"
+  },
+  "col_vc_backed": {
+   "value": 1,
+   "page": 148,
+   "quote": "Shanghai ZhongYe Venture Investment Management Co., Ltd. (上海中葉創業投資管理有限公司) (“ZhongYe Ventures”), a venture capital management firm primarily engaged in investment management",
+   "confidence": "high"
+  },
+  "col_pe_backed": {
+   "value": 1,
+   "page": 148,
+   "quote": "Each of Datai Yueda and Yueda Taihe is a limited partnership established in the PRC, and a private equity fund managed by Beijing Delta Capital Investment Management Co., Ltd.",
+   "confidence": "high"
+  },
+  "col_cvc_backed": {
+   "value": 1,
+   "page": 147,
+   "quote": "it was wholly owned by Beijing Baidu Netcom Science Technology Co., Ltd. (北京百度網訊科技有限公司), which was controlled by Baidu, Inc., a company listed on Nasdaq (stock symbol: BIDU)",
+   "confidence": "high"
+  },
+  "col_gov_backed": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_top_tier_vc": {
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "low"
+  },
+  "col_pre_ipo_investors": {
+   "value": "Datai Yueda; Yueda Taihe; Shanghai Yongcang; Xinjiang Lianchuang; Jinzhuo Hengbang; Bairuixiang VC; ZhongYe ZhiYuan; Guangzhou Chengheng; Chengmai Xinri; Shanghai Changshi",
+   "page": 147,
+   "quote": "Datai Yueda, Yueda Taihe, Shanghai Yongcang, Xinjiang Lianchuang, Jinzhuo Hengbang, Bairuixiang VC, ZhongYe ZhiYuan and Guangzhou Chengheng had been granted certain special rights",
+   "confidence": "medium"
+  },
+  "col_vc_pe_stake": {
+   "value": 0.3617,
+   "page": 143,
+   "quote": "Jinzhuo Hengbang(2) 10,735,800 17.89% 16.10% Bairuixiang VC(2) 6,038,520 10.06% 9.06% WANG Yunning(3) 6,000,000 10.00% 9.00% Datai Yueda(2) 1,318,140 2.20% 1.98%",
+   "confidence": "medium"
+  },
+  "col_vc_board_seat": {
+   "value": 1,
+   "page": 226,
+   "quote": "Mr. Jin has been an investment manager of Jinzhuo Hengbang, a subsidiary of Sina Corporation, since July 2019.",
+   "confidence": "high"
+  },
+  "col_earliest_round": {
+   "value": "Series Pre-A Financing",
+   "page": 146,
+   "quote": "Series Pre-A Financing Series A Financing 2016 Transfer 2016 Investment Series B Financing Series C Financing 2020 Transfers Date of agreement May 14, 2015",
+   "confidence": "medium"
+  },
+  "col_holding_duration": {
+   "value": 10.54,
+   "page": 146,
+   "quote": "Series Pre-A Financing Series A Financing 2016 Transfer 2016 Investment Series B Financing Series C Financing 2020 Transfers Date of agreement May 14, 2015",
+   "confidence": "medium"
+  },
+  "col_BB": {
+   "value": "Natural persons",
+   "page": 29,
+   "quote": "As of the Latest Practicable Date, Mr. Wang and Ms. Ge (the spouse of Mr. Wang) held in aggregate approximately 38.44% of the total issued share capital of our Company.",
+   "confidence": "high"
+  },
+  "col_BC": {
+   "value": 0.346,
+   "page": 29,
+   "quote": "Immediately following the completion of the Global Offering, Mr. Wang and Ms. Ge will collectively hold approximately 34.60% of our total issued share capital",
+   "confidence": "high"
+  },
+  "col_BD": {
+   "value": 0.346,
+   "page": 29,
+   "quote": "Immediately following the completion of the Global Offering, Mr. Wang and Ms. Ge will collectively hold approximately 34.60% of our total issued share capital",
+   "confidence": "medium"
+  },
+  "col_BE": {
+   "value": 120975000,
+   "page": 300,
+   "quote": "Non-current Lease liabilities 10,294 11,598 8,157 5,598 5,800 - Total 18,692 26,101 81,990 120,975 186,552",
+   "confidence": "high"
+  },
+  "col_BF": {
+   "value": "Commercialized",
+   "page": 155,
+   "quote": "These services and products have been commercialized successfully, cementing our market position.",
+   "confidence": "high"
+  },
+  "col_BG": {
+   "value": 0,
+   "page": 28,
+   "quote": "Approximately 10.0% of the net proceeds or approximately HK$40.5 million, is expected to be used for working capital and general corporate purposes.",
+   "confidence": "medium"
+  },
+  "col_BI": {
+   "value": "H Shares",
+   "page": 243,
+   "quote": "Domestic Unlisted Shares 4,713,900 7.07% H Shares converted from Domestic Unlisted Shares 55,286,100 82.93% H Shares to be issued pursuant to the Global Offering",
+   "confidence": "high"
+  },
+  "col_BP": {
+   "value": "07/04/08",
+   "page": 477,
+   "quote": "Our Company was established as a limited liability company in the PRC on April 7, 2008 and was converted into a joint stock limited company on December 31, 2020 under the laws of the PRC.",
+   "confidence": "high"
+  },
+  "col_BR": {
+   "value": "Shanghai, PRC",
+   "page": 362,
+   "quote": "The address of the Company’s registered office is Room 901–904 Building 1, No. 1188 North Qinzhou Road, Xuhui District, Shanghai, PRC.",
+   "confidence": "high"
+  },
+  "col_BT": {
+   "value": "IFRS Accounting Standards",
+   "page": 362,
+   "quote": "The Historical Financial Information of the Group have been prepared in accordance with International Financial Reporting Standards as issued by the International Accounting Standards Board",
+   "confidence": "high"
+  },
+  "col_CC": {
+   "value": "28/11/25",
+   "page": 5,
+   "quote": "Hong Kong Public Offering commences 9:00 a.m. on Friday, November 28, 2025",
+   "confidence": "high"
+  },
+  "col_CD": {
+   "value": "03/12/25",
+   "page": 5,
+   "quote": "Application lists of Hong Kong Public Offering close 12:00 noon on Wednesday, December 3, 2025",
+   "confidence": "high"
+  },
+  "col_CE": {
+   "value": 61952800,
+   "page": 30,
+   "quote": "the assumption that 61,952,800 H Shares will be in issue immediately upon completion of the Global Offering, comprising 6,666,700 H Shares to be issued pursuant to the Global Offering",
+   "confidence": "high"
+  },
+  "col_CF": {
+   "value": 129198000,
+   "page": 354,
+   "quote": "Gross profit 176,545 396,343 525,158 110,979 129,198",
+   "confidence": "high"
+  },
+  "col_CG": {
+   "value": 1655000,
+   "page": 361,
+   "quote": "Purchase of property, plant and equipment (11,704) (9,154) (9,744) (5,901) (1,655)",
+   "confidence": "high"
+  },
+  "col_CH": {
+   "value": "Unqualified opinion",
+   "page": 351,
+   "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the financial position",
+   "confidence": "high"
+  },
+  "col_CI": {
+   "value": 56700000,
+   "page": 321,
+   "quote": "currently estimated to amount in aggregate to approximately HK$56.7 million (assuming an Offer Price of HK$69.18 per Offer Share, being the mid-point of the indicative Offering Price range",
+   "confidence": "high"
+  }
+ }
+}

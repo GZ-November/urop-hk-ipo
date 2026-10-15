@@ -1,0 +1,116 @@
+{
+  "code": "2508.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4496,
+      "page": 8,
+      "quote": "Subtotal \n49,337,000 \n8.09%",
+      "confidence": "medium"
+    },
+    "col_CM": {
+      "value": 193.0,
+      "page": 4,
+      "quote": "Subscription level  \n193.00 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 52464,
+      "page": 4,
+      "quote": "No. of valid applications  \n52,464",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1841580500,
+      "page": 11,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING  \nSubject to the satisfaction of the conditions set out in the Prospectus, a total of 52,464 valid",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 193.00 times",
+      "page": 4,
+      "quote": "Subscription level  \n193.00 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$6.58; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "25/06/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**25/06/2025 22:58**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 109733000,
+      "page": 3,
+      "quote": "Number of Offer Shares  \n109,733,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 47710000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public \nOffering (as adjusted after reallocation) \n47,710,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 62023000,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n62,023,000 Shares (taking into account the",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 12463500,
+      "page": 2,
+      "quote": "artially exercised by the Sponsor-Overall Coordinators (for themselves and on behalf of the International Underwriters), on Wednesday, July 23, 2025, in respect of an aggregate of 12,463,500 Shares (t",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND END OF STABILIZATION PERIOD (23/07/2025 22:44)"
+    },
+    "col_CW": {
+      "value": "由国际发售回拨38,168,000股至香港公开发售；公开发售最终47,710,000股，占全球发售43.48%（初始9,542,000股）",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering \n(claw-back) \n38,168,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 629950000,
+      "page": 4,
+      "quote": "Net proceeds  \nHK$ 629.95 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.452,
+      "page": 22,
+      "quote": "approximately 45.2% of the issued share capital of our Company (before any exercise of \nthe Over-allotment Option) will count towards the public float",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 609733000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing  \n609,733,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0991,
+      "page": 8,
+      "quote": "Subtotal \n49,337,000 \n8.09%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "分母为上市时已发行股份总数609,733,000股（已计入发售规模调整权获全额行使，未计入超额配售权）；计入公众持股量的股份为275,512,350股，占45.2%",
+      "page": 22,
+      "quote": "approximately 45.2% of the issued share capital of our Company (before any exercise of \nthe Over-allotment Option) will count towards the public float",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 609733000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing  \n609,733,000",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+ "code": "2698.HK",
+ "fields": {
+  "col_CK": {
+   "value": 0.4534,
+   "page": 18,
+   "quote": "Total \n41,207,400 \n6.80% \n \nNote:  \n  \n1. In accordance with the relevant cornerstone investment agreements",
+   "confidence": "high"
+  },
+  "col_CM": {
+   "value": 1813.77,
+   "page": 4,
+   "quote": "Subscription level \n1,813.77 times",
+   "confidence": "high",
+   "note": "HK Public Offering subscription level as stated; valid applied shares = initial HK offer size 9,088,400 x 1,813.77"
+  },
+  "col_CN": {
+   "value": 294053,
+   "page": 4,
+   "quote": "No. of valid applications \n294,053",
+   "confidence": "high"
+  },
+  "col_CO": {
+   "value": 16483610576,
+   "page": 4,
+   "quote": "Subscription level \n1,813.77 times",
+   "source": "derived",
+   "confidence": "medium",
+   "note": "DERIVED (announcement gives no total \"shares applied for\" line): initial HK offer size 9,088,400 x subscription level 1,813.77 = 16,483,610,576 shares. Flagged as derived."
+  },
+  "col_CP": {
+   "value": "Subscription level 1,813.77 times (Hong Kong Public Offering)",
+   "page": 4,
+   "quote": "Subscription level \n1,813.77 times",
+   "confidence": "high"
+  },
+  "col_CQ": {
+   "value": "06/11/25",
+   "page": 5,
+   "quote": "Expected Price Determination Date(5) . . . . . . . . . . . . . . . . . . . .Thursday, November 6, 2025",
+   "source": "prospectus",
+   "confidence": "high",
+   "note": "Prospectus Expected Timetable: Expected Price Determination Date = Thursday, November 6, 2025"
+  },
+  "col_CR": {
+   "value": "07/11/2025",
+   "page": 1,
+   "quote": "刊发时间（港交所元数据）：**07/11/2025 22:35**",
+   "source": "allotment",
+   "confidence": "high",
+   "note": "港交所元数据刊发时间 07/11/2025 22:35（日期部分入值，时间保留于 note/quote）"
+  },
+  "col_CS": {
+   "value": 90884000,
+   "page": 3,
+   "quote": "Number of Offer Shares  \n90,884,000 Shares",
+   "confidence": "high"
+  },
+  "col_CT": {
+   "value": 9088400,
+   "page": 3,
+   "quote": "Number of Offer Shares in Hong Kong Public Offering  \n9,088,400 Shares",
+   "confidence": "high"
+  },
+  "col_CU": {
+   "value": 81795600,
+   "page": 3,
+   "quote": "Number of Offer Shares in International Offering  \n81,795,600 Shares",
+   "confidence": "high"
+  },
+  "col_CV": {
+   "value": 13632600,
+   "page": 1,
+   "quote": "s has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters), on Friday, December 5, 2025, in respect of an aggregate of 13,632,600 Shares (t",
+   "source": "greenshoe",
+   "confidence": "high",
+   "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILIZING ACTIONS AND THE END OF STABILIZATION PERIOD (05/12/2025 21:34)"
+  },
+  "col_CW": {
+   "value": "No reallocation: no. of Offer Shares reallocated from the International Offering = 0; final no. of Offer Shares under the Hong Kong Public Offering = 9,088,400 (10% of the Global Offering)",
+   "page": 4,
+   "quote": "No. of Offer Shares reallocated from the International Offering  \n0  \nFinal no. of Offer Shares under the Hong Kong Public Offering  \n9,088,400",
+   "confidence": "high"
+  },
+  "col_CX": {
+   "value": 2228720000,
+   "page": 3,
+   "quote": "Net proceeds  \nHK$2,228.72 million",
+   "confidence": "high"
+  },
+  "col_CY": {
+   "value": 0.3628,
+   "page": 28,
+   "quote": "the total number of Shares held in public hands represents approximately 36.28% of the \ntotal issued share capital of the Company",
+   "confidence": "high"
+  },
+  "col_CZ": {
+   "value": 605884000,
+   "page": 3,
+   "quote": "Number of issued Shares upon Listing (before exercise of \nthe Over-allotment Option)  \n605,884,000 Shares",
+   "confidence": "high"
+  },
+  "col_DA": {
+   "value": 0.082,
+   "page": 28,
+   "quote": "the total number of Shares held in public hands represents approximately 36.28% of the \ntotal issued share capital of the Company",
+   "confidence": "medium",
+   "note": "DERIVED free float: (col_CS 90,884,000 x (1 - col_CK 0.4534)) / col_CZ 605,884,000 = 0.0820; the announcement states only that the Rule 8.08A free float requirement is satisfied and gives no free-float percentage"
+  },
+  "col_DB": {
+   "value": "Total issued Shares upon Listing (before exercise of the Over-allotment Option) = 605,884,000; numerator = Global Offering Shares (90,884,000) less Cornerstone Investor allocation (41,207,400)",
+   "page": 28,
+   "quote": "the total number of Shares held in public hands represents approximately 36.28% of the \ntotal issued share capital of the Company",
+   "confidence": "medium"
+  },
+  "col_DC": {
+   "value": 605884000,
+   "page": 3,
+   "quote": "Number of issued Shares upon Listing (before exercise of \nthe Over-allotment Option)  \n605,884,000 Shares",
+   "confidence": "medium"
+  }
+ }
+}

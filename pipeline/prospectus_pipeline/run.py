@@ -244,9 +244,12 @@ def cmd_search(cfg, args, companies):
 
 def cmd_state(cfg, args, companies):
     import subprocess
+    env = os.environ.copy()
+    if cfg.get("_config_path"):
+        env["PIPELINE_CONFIG"] = str(cfg["_config_path"])
     cmd = [sys.executable, str(ROOT / "tools" / "state.py"), *args.extra,
            "--target", args.target]
-    return subprocess.call(cmd, cwd=WS)
+    return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_registry(cfg, args, companies):
@@ -373,16 +376,22 @@ def cmd_expansion(cfg, args, companies):
     """Write back academic expansion fields."""
     if normalize_board(cfg.get("dataset", {}).get("board")) == "gem":
         print("GEM expansion needs a board-specific event adapter; common market/academic fields and GEM disclosure extensions are supported. Main Board lockup/regime inference is not applied.", file=sys.stderr)
-        return 2
+        return 0
+    book_target = cfg.get("_workbook_path") or cfg.get("workbook_path") or cfg.get("workbook")
+    if not book_target:
+        return 0
     import subprocess
-    cmd = [sys.executable, str(ROOT / "src" / "write_back_expansion.py"), "--workbook", str(cfg["_workbook_path"])]
+    cmd = [sys.executable, str(ROOT / "src" / "write_back_expansion.py"), "--workbook", str(book_target)]
     if getattr(args, "dry_run", False):
         cmd.append("--dry-run")
     if getattr(args, "force_overwrite", False):
         cmd.append("--force-overwrite")
     if getattr(args, "only", None):
         cmd.extend(["--codes", *args.only])
-    return subprocess.call(cmd, cwd=WS)
+    env = os.environ.copy()
+    if cfg.get("_config_path"):
+        env["PIPELINE_CONFIG"] = str(cfg["_config_path"])
+    return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_academic(cfg, args, companies):
@@ -614,6 +623,9 @@ def cmd_collect(cfg, args, companies):
         return 1
     if cmd_disclosure_notes(cfg, args, companies):
         return 1
+    if not is_gem:
+        if cmd_expansion(cfg, args, companies):
+            return 1
     if cmd_audit(cfg, argparse.Namespace(target="all"), companies):
         return 1
     rc = cmd_cross_check(cfg, args, companies)
