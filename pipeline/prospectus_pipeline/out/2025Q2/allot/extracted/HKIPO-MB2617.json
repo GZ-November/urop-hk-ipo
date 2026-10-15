@@ -1,0 +1,115 @@
+{
+  "code": "2617.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.6396,
+      "page": 6,
+      "quote": "Total 9,774,000 63.96% 3.24% 2.46%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3419.87,
+      "page": 4,
+      "quote": "Subscription level 3,419.87 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 135427,
+      "page": 4,
+      "quote": "No. of valid applications 135,427",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 5227269000,
+      "page": 19,
+      "quote": "Total 135,427",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 3,419.87 times",
+      "page": 4,
+      "quote": "Subscription level 3,419.87 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 4,
+      "quote": "Price Information Fixed Offer Price HK$13.15",
+      "source": "allotment",
+      "confidence": "medium"
+    },
+    "col_CR": {
+      "value": "22/06/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**22/06/2025 18:39**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 15281000,
+      "page": 4,
+      "quote": "Number of Offer Shares 15,281,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 3057000,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 3,057,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 12224000,
+      "page": 4,
+      "quote": "Final Number of Offer Shares in International Offering 12,224,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-06-23 起 45 天内共 9 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-08-07 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No. of Offer Shares reallocated from the International Offering 1,528,500; Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 3,057,000",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering 1,528,500 Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 3,057,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 161340000,
+      "page": 4,
+      "quote": "Net proceeds HK$ 161.34 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.557,
+      "page": 22,
+      "quote": "an aggregate of 221,068,876 H Shares or approximately 55.70% of the total issued share capital of the Company will be held in the public hands.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 396897633,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing 396,897,633",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.013875,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing 396,897,633",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator = total issued Shares upon Listing 396,897,633 (all classes, incl. unlisted domestic Shares); public hands excludes lock-up Shares of controlling shareholders, pre-IPO investors and existing shareholders, and excludes the 9,774,000 cornerstone H Shares locked to 22 December 2025.",
+      "page": 22,
+      "quote": "an aggregate of 221,068,876 H Shares or approximately 55.70% of the total issued share capital of the Company will be held in the public hands.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 396897633,
+      "page": 4,
+      "quote": "Number of issued Shares upon Listing 396,897,633",
+      "confidence": "high"
+    }
+  }
+}

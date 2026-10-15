@@ -1,0 +1,425 @@
+{
+  "code": "2643.HK",
+  "fields": {
+    "col_L": {
+      "value": 544178600,
+      "page": 359,
+      "quote": "500,000,000 Shares in issue US$5,000.00 44,178,600 Shares to be issued pursuant to the Global Offering US$441.786 544,178,600 Shares in total US$5,441.786",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 44178600,
+      "page": 2,
+      "quote": "Number of Offer Shares Under the Global Offering : 44,178,600 Offer Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 500000000,
+      "page": 359,
+      "quote": "Issued share capital Number Description of share Aggregate nominal value 500,000,000 Shares in issue US$5,000.00",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 500000000,
+      "page": 162,
+      "quote": "Total 419,346,000 21,403,500 11,378,500 47,872,000 500,000,000 100.0% 544,178,600 100.0%",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 36,
+      "quote": "the Global Offering has been completed and 44,178,600 Offer Shares are issued pursuant to the Global Offering",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 44178600,
+      "page": 359,
+      "quote": "44,178,600 Shares to be issued pursuant to the Global Offering US$441.786",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 39760700,
+      "page": 41,
+      "quote": "the International Offering of initially 39,760,700 Offer Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 4417900,
+      "page": 41,
+      "quote": "the Hong Kong Public Offering of initially 4,417,900 Offer Shares (subject to reallocation) in Hong Kong",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares (par value US$0.00001); all Preferred Shares convert into Ordinary Shares on a one-on-one basis upon Listing",
+      "page": 359,
+      "quote": "419,346,000 Ordinary share with a par value of US$0.00001 US$4,193.46 80,654,000 Preferred share with a par value of US$0.00001 US$806.54 500,000,000 Shares in total US$5,000.00",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 544178600,
+      "page": 359,
+      "quote": "Shares in issue US$5,000.00 44,178,600 Shares to be issued pursuant to the Global Offering US$441.786 544,178,600 Shares in total US$5,441.786",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 41.94,
+      "page": 2,
+      "quote": "Offer Price : HK$41.94 per Offer Share plus brokerage of 1.0%, SFC transaction levy of 0.0027%",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 41.94,
+      "page": 2,
+      "quote": "The Offer Price per Offer Share will be HK$41.94 per Offer Share, unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "17/06/25",
+      "page": 468,
+      "quote": "The Hong Kong Public Offering period will begin at 9:00 a.m. on Tuesday, June 17, 2025 and end at 12:00 noon on Friday, June 20, 2025 (Hong Kong time).",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "20/06/25",
+      "page": 468,
+      "quote": "The Hong Kong Public Offering period will begin at 9:00 a.m. on Tuesday, June 17, 2025 and end at 12:00 noon on Friday, June 20, 2025 (Hong Kong time).",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "曹操出行有限公司",
+      "page": 2,
+      "quote": "CaoCao Inc. 曹操出行有限公司 (A company incorporated in the Cayman Islands with limited liability)",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 490,
+      "quote": "The Historical Financial Information is presented in Renminbi (“RMB”) and all values are rounded to the nearest thousand RMB (RMB’000) except when otherwise indicated.",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 4667059000,
+      "page": 493,
+      "quote": "Total assets 4,667,059 5,072,884 4,077,652",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 5072884000,
+      "page": 493,
+      "quote": "Total assets 4,667,059 5,072,884 4,077,652",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 4077652000,
+      "page": 493,
+      "quote": "Total assets 4,667,059 5,072,884 4,077,652",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": -5298050000,
+      "page": 494,
+      "quote": "Total deficit (5,298,050) (6,373,594) (7,205,579)",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": -6373594000,
+      "page": 494,
+      "quote": "Total deficit (5,298,050) (6,373,594) (7,205,579)",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": -7205579000,
+      "page": 494,
+      "quote": "Total deficit (5,298,050) (6,373,594) (7,205,579)",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 9965109000,
+      "page": 494,
+      "quote": "Total liabilities 9,965,109 11,446,478 11,283,231",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 11446478000,
+      "page": 494,
+      "quote": "Total liabilities 9,965,109 11,446,478 11,283,231",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 11283231000,
+      "page": 494,
+      "quote": "Total liabilities 9,965,109 11,446,478 11,283,231",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 7630961000,
+      "page": 491,
+      "quote": "Revenue 5 7,630,961 10,667,894 14,657,499",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 10667894000,
+      "page": 491,
+      "quote": "Revenue 5 7,630,961 10,667,894 14,657,499",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 14657499000,
+      "page": 491,
+      "quote": "Revenue 5 7,630,961 10,667,894 14,657,499",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": -2130304000,
+      "page": 491,
+      "quote": "Loss before income tax (2,130,304) (1,939,996) (1,206,342)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": -1939996000,
+      "page": 491,
+      "quote": "Loss before income tax (2,130,304) (1,939,996) (1,206,342)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": -1206342000,
+      "page": 491,
+      "quote": "Loss before income tax (2,130,304) (1,939,996) (1,206,342)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": -2007100000,
+      "page": 491,
+      "quote": "Loss for the year (2,007,100) (1,981,058) (1,246,389)",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": -1981058000,
+      "page": 491,
+      "quote": "Loss for the year (2,007,100) (1,981,058) (1,246,389)",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": -1246389000,
+      "page": 491,
+      "quote": "Loss for the year (2,007,100) (1,981,058) (1,246,389)",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 7218287000,
+      "page": 416,
+      "quote": "Loans from related parties 112,108 195,210 900,732 1,167,883 Total 5,579,223 7,529,900 7,218,287 7,770,941",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 363,
+      "quote": "Our consolidated financial information has been prepared in accordance with IFRS.",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 1185980000,
+      "page": 491,
+      "quote": "Gross (loss)/profit (338,988) 615,403 1,185,980",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 339547000,
+      "page": 423,
+      "quote": "Purchases of property, plant, and equipment 1,336,822 1,060,501 339,547 Total 1,336,822 1,060,501 339,547",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unmodified opinion (true and fair view)",
+      "page": 488,
+      "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the financial position of the Company",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/24",
+      "page": 493,
+      "quote": "Consolidated Balance Sheets As at December 31 Note 2022 2023 2024 RMB’000",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 235901000,
+      "page": 498,
+      "quote": "Net cash (used in)/generated from operating activities (1,127,215) 136,372 235,901",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 159497000,
+      "page": 421,
+      "quote": "Cash and cash equivalents at end of the year 379,995 582,995 159,497",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 234462000,
+      "page": 491,
+      "quote": "Research and development expenses 6 (225,224) (339,473) (234,462)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 582,
+      "quote": "During the Track Record Period, there were no development costs meeting these criteria and capitalised as intangible assets.",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.037,
+      "page": 211,
+      "quote": "representing 4.2%, 4.1%, and 3.7% of our total revenue for the respective years.",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 157,
+      "quote": "Between 2017 and 2021, we carried out three rounds of onshore Pre-IPO financing.",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 159,
+      "quote": "Xiangcheng Xiangxing VC is a limited partnership incorporated under the laws of the PRC. Its general partner is Suzhou Xiangcheng Venture Capital Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 161,
+      "quote": "Oceanpine Marvel is a financial investor of the Company. The 21,403,500 Shares held by Oceanpine Marvel accounts for approximately 4.3% of the total issued Shares",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 160,
+      "quote": "ABC Investment (Suzhou) is a limited liability company incorporated under the laws of the PRC. It is indirectly and wholly owned by Agricultural Bank of China Limited",
+      "confidence": "medium"
+    },
+    "col_gov_backed": {
+      "value": 1,
+      "page": 161,
+      "quote": "Tongxiang Jinfenghuang holds 90.9% of the economic interest of Tongxiang Wuzhen Fund I, and is indirectly and wholly owned by Tongxiang Finance Bureau",
+      "confidence": "high"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 160,
+      "quote": "To the best knowledge of the Company, each of the Pre-IPO Investors, together with their ultimate beneficial owners, is an Independent Third Party.",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Xiangcheng Xiangxing VC; Oceanpine Marvel (SanJohn Fund); ABC Investment (Suzhou); Paradise Silicon-valley Tiansheng; Longqi Xinglu; Dongwu Innovation; Tongxiang Wuzhen Fund I",
+      "page": 162,
+      "quote": "Pre-IPO Investors Xiangcheng Xiangxing VC – – – 37,234,000 37,234,000 7.4% 37,234,000 6.8% Oceanpine Marvel(3) – 21,403,500",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.161,
+      "page": 162,
+      "quote": "Total 419,346,000 21,403,500 11,378,500 47,872,000 500,000,000 100.0% 544,178,600 100.0%",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 348,
+      "quote": "ment, and\nhas been serving as senior vice president of Oceanpine Capital since September 2017.\nMr. Yang Li graduated from Beijing Ins",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Series A",
+      "page": 157,
+      "quote": "Series A October 2017 January 2018 RMB9,641,600,000 US$100,000,000 RMB30.75 19.9%",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": 7.4,
+      "page": 157,
+      "quote": "Series A October 2017 January 2018 RMB9,641,600,000 US$100,000,000 RMB30.75 19.9%",
+      "confidence": "medium"
+    },
+    "col_BB": {
+      "value": "Individual / natural person (Mr. Shufu Li)",
+      "page": 500,
+      "quote": "The ultimate controlling shareholder of the Group is Mr. Shufu Li (the “Controlling shareholder”).",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.771,
+      "page": 38,
+      "quote": "Mr. Li, through Ugo Investment Limited, will indirectly hold approximately 77.1% of our issued Shares and will, in aggregate, control approximately 81.0% of our voting rights.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.81,
+      "page": 38,
+      "quote": "Mr. Li, through Ugo Investment Limited, will indirectly hold approximately 77.1% of our issued Shares and will, in aggregate, control approximately 81.0% of our voting rights.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "08/11/21",
+      "page": 155,
+      "quote": "Our Company was incorporated as an exempted company with limited liability in the Cayman Islands on November 8, 2021, with an authorized share capital of US$50,000",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Suzhou, Jiangsu, China",
+      "page": 133,
+      "quote": "Headquarters Tower 1, Xinhuihu Building 66 Lugang Road, Gaotie Xincheng Xiangcheng District, Suzhou Jiangsu, China",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Online ride hailing platform / shared mobility services in China",
+      "page": 363,
+      "quote": "We are a ride hailing platform in China originally incubated by Geely Group.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board — Rule 8.05(3) market capitalization/revenue test",
+      "page": 41,
+      "quote": "we satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules with reference to (i) our expected market capitalization at the time of Listing",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": 41,
+      "quote": "on the basis that we satisfy the market capitalization/revenue test under Rule 8.05(3) of the Listing Rules",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0.2,
+      "page": 38,
+      "quote": "approximately 20.0% of the net proceeds, or approximately HK$343.7 million, will be used for partial repayment of the principals and interests of certain bank borrowings",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.02,
+      "page": 452,
+      "quote": "The Syndicate Capital Market Intermediaries will receive a commission of 2% (the “Base Underwriting Commission” or the “Fixed Fees”) of the aggregate offering proceeds of the Global Offering",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.02,
+      "page": 452,
+      "quote": "The Syndicate Capital Market Intermediaries will receive a commission of 2% (the “Base Underwriting Commission” or the “Fixed Fees”) of the aggregate offering proceeds of the Global Offering",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 52,
+      "quote": "to require our Company to allot and issue up to 6,626,700 additional Shares to, among other things, cover over-allocations in the International Offering, if any",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 134500000,
+      "page": 37,
+      "quote": "the total estimated listing expenses in relation to the Global Offering is approximately RMB123.1 million (HK$134.5 million), representing approximately 7.3% of the gross proceeds",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Mercedes-Benz Mobility Services GmbH; Mirae Asset Securities (HK) Ltd.; Infini Global Master Fund; GOTION HIGH-TECH (HK) LIMITED; EVE Asia Co., Limited; RoboSense HongKong Limited",
+      "page": 431,
+      "quote": "Based on the information provided by the Cornerstone Investors in connection with the Cornerstone Placing, our Cornerstone Investors are as follows: 1. Mercedes-Benz Mobility Services GmbH",
+      "confidence": "high"
+    }
+  }
+}

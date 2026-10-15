@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-10-15T11:18:14.175404",
+  "total_companies": 27,
+  "clean_companies": 22,
+  "total_anomalies": 5,
+  "results": [
+    {
+      "code": "3677.HK",
+      "name": "Jiangsu Zenergy Battery Technologies Group Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "9606.HK",
+      "name": "Duality Biotherapeutics, Inc. - B",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "1333.HK",
+      "name": "Breton Technology Co., Ltd.- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2589.HK",
+      "name": "Auntea Jenny (Shanghai) Industrial Co., Ltd.\n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2865.HK",
+      "name": "Hainan Drinda New Energy Technology Co., Ltd. \n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6831.HK",
+      "name": "Green Tea Group Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3750.HK",
+      "name": "Contemporary Amperex Technology Co., Limited\n- H shares",
+      "anomalies": [
+        {
+          "check": "PN18 Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 151.2 倍，最低档位 50%，实际 8.6%；请核对豁免或口径"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "1276.HK",
+      "name": "Jiangsu Hengrui Pharmaceuticals Co., Ltd. \n- H shares",
+      "anomalies": [
+        {
+          "check": "PN18 Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 454.9 倍，最低档位 50%，实际 21.5%；请核对豁免或口径"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "2629.HK",
+      "name": "Mirxes Holding Company Limited - B",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2565.HK",
+      "name": "PegBio Co., Ltd. - B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2603.HK",
+      "name": "Xiamen Jihong Co., Ltd - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2621.HK",
+      "name": "Shouhui Group Ltd.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2573.HK",
+      "name": "Newtrend Group Holding Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2605.HK",
+      "name": "MetaLight Inc.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "9881.HK",
+      "name": "Rongta Technology (Xiamen) Group Co., Ltd.\n- H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3288.HK",
+      "name": "Foshan Haitian Flavouring and Food Company Ltd. \n- H shares",
+      "anomalies": [
+        {
+          "check": "PN18 Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 918.1 倍，最低档位 50%，实际 21.0%；请核对豁免或口径"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "2050.HK",
+      "name": "Zhejiang Sanhua Intelligent Controls Co., Ltd.\n- H shares",
+      "anomalies": [
+        {
+          "check": "PN18 Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 747.9 倍，最低档位 50%，实际 30.5%；请核对豁免或口径"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "2609.HK",
+      "name": "Bayzed Health Group Inc",
+      "anomalies": [
+        {
+          "check": "PN18 Allocation",
+          "severity": "WARNING",
+          "detail": "公开发售超购 25.9 倍，最低档位 30%，实际 12.2%；请核对豁免或口径"
+        }
+      ],
+      "status": "WARNING"
+    },
+    {
+      "code": "2617.HK",
+      "name": "TransThera Sciences (Nanjing), Inc. - B - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2619.HK",
+      "name": "X.J. Electrics (Hu Bei) Co., Ltd - H Shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2643.HK",
+      "name": "CaoCao Inc.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "2508.HK",
+      "name": "SAINT BELLA Inc.",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6168.HK",
+      "name": "Zhou Liu Fu Jewellery Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6883.HK",
+      "name": "Eternal Beauty Holdings Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "3880.HK",
+      "name": "Medtide Inc. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "6603.HK",
+      "name": "IFBH Limited",
+      "anomalies": [],
+      "status": "PASS"
+    },
+    {
+      "code": "9678.HK",
+      "name": "Unisound AI Technology Co., Ltd. - H shares",
+      "anomalies": [],
+      "status": "PASS"
+    }
+  ]
+}

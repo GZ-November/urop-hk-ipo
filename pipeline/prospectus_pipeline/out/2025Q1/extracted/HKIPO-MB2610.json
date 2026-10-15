@@ -1,0 +1,425 @@
+{
+  "code": "2610.HK",
+  "fields": {
+    "col_L": {
+      "value": 588235300,
+      "page": 313,
+      "quote": "588,235,300\nShares in total\n117.64706",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 88235300,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering\n17.64706",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 500000000,
+      "page": 313,
+      "quote": "500,000,000\nShares in issue as at the date of this prospectus",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 500000000,
+      "page": 313,
+      "quote": "500,000,000\nShares in issue as at the date of this prospectus",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering\n:\n88,235,300 Shares",
+      "confidence": "high"
+    },
+    "col_Q": {
+      "value": 88235300,
+      "page": 313,
+      "quote": "Shares to be issued pursuant to the Global Offering\n17.64706",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 79411700,
+      "page": 2,
+      "quote": "Number of International Placing Shares\n:\n79,411,700 Shares",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 8823600,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n8,823,600 Shares",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 313,
+      "quote": "Shares of par value of US$ 0.0000002 each",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 588235300,
+      "page": 313,
+      "quote": "588,235,300\nShares in total",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 31.5,
+      "page": 2,
+      "quote": "HK$26.60 to HK$31.50 per Offer Share",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 26.6,
+      "page": 2,
+      "quote": "HK$26.60 to HK$31.50 per Offer Share",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "17/03/25",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "20/03/25",
+      "page": 5,
+      "quote": "Application lists of the Hong Kong Public Offering close",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "南山铝业国际控股有限公司",
+      "page": 1,
+      "quote": "南山鋁業國際控股有限公司",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "USD",
+      "page": 444,
+      "quote": "Expressed in US$",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 1282117000,
+      "page": 352,
+      "quote": "Total assets. . . . . . . . . . . . . . . . . 1,202,411 1,282,117 1,437,962 1,689,536",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 1437962000,
+      "page": 352,
+      "quote": "Total assets. . . . . . . . . . . . . . . . . 1,202,411 1,282,117 1,437,962 1,689,536",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 1689536000,
+      "page": 352,
+      "quote": "Total assets. . . . . . . . . . . . . . . . . 1,202,411 1,282,117 1,437,962 1,689,536",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 995509000,
+      "page": 352,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . 1,005,493 995,509 1,269,640 1,212,002",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 1269640000,
+      "page": 352,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . 1,005,493 995,509 1,269,640 1,212,002",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 1212002000,
+      "page": 352,
+      "quote": "Net assets . . . . . . . . . . . . . . . . . 1,005,493 995,509 1,269,640 1,212,002",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 286608000,
+      "page": 352,
+      "quote": "Total liabilities . . . . . . . . . . . . . . 196,918 286,608 168,322 477,534",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 168322000,
+      "page": 352,
+      "quote": "Total liabilities . . . . . . . . . . . . . . 196,918 286,608 168,322 477,534",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 477534000,
+      "page": 352,
+      "quote": "Total liabilities . . . . . . . . . . . . . . 196,918 286,608 168,322 477,534",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 466777000,
+      "page": 336,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . 172,842 466,777 677,785 482,730 683,038",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 677785000,
+      "page": 336,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . 172,842 466,777 677,785 482,730 683,038",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 910717333,
+      "page": 336,
+      "quote": "Revenue . . . . . . . . . . . . . . . . . 172,842 466,777 677,785 482,730 683,038",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 103132000,
+      "page": 336,
+      "quote": "Profit before taxation . . . . . . . . 41,658 103,132 187,089 126,398 295,050",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 187089000,
+      "page": 336,
+      "quote": "Profit before taxation . . . . . . . . 41,658 103,132 187,089 126,398 295,050",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 393400000,
+      "page": 336,
+      "quote": "Profit before taxation . . . . . . . . 41,658 103,132 187,089 126,398 295,050",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 96092000,
+      "page": 336,
+      "quote": "Profit for the year / period . . . . 39,710 96,092 173,525 117,440 266,326",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 173525000,
+      "page": 336,
+      "quote": "Profit for the year / period . . . . 39,710 96,092 173,525 117,440 266,326",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 355101333,
+      "page": 336,
+      "quote": "Profit for the year / period . . . . 39,710 96,092 173,525 117,440 266,326",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 7907000,
+      "page": 367,
+      "quote": "Total . . . . . . . . . . . . . . . . . 2,133 1,750 907 7,907 497",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 447,
+      "quote": "Hong Kong Financial Reporting Standards",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 316058000,
+      "page": 336,
+      "quote": "Gross profit . . . . . . . . . . . . . . . . 44,802 112,069 197,668 131,132 316,058",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 150932000,
+      "page": 444,
+      "quote": "Payment for the purchase of property, plant and equipment and intangible assets . . . . . . . . . . . . . . . . (128,687) (145,234) (72,800) (58,923) (150,932)",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified",
+      "page": 435,
+      "quote": "a true and fair view of the Group’s financial position as at 31 December 2021, 2022 and",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "30/09/24",
+      "page": 48,
+      "quote": "“Track Record Period” the period comprising FY2021, FY2022, FY2023 and 9M2024",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 422248000,
+      "page": 444,
+      "quote": "Net cash (used in)/generated from operating activities . . . . . . . . . . . (8,709) 163,037 96,269 146,391 422,248",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 439201000,
+      "page": 444,
+      "quote": "Cash and cash equivalents at the end of year/period . . . . . . . . 18(a) 225,228 219,748 251,561 313,050 439,201",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AX": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_AY": {
+      "value": 1.0,
+      "page": 15,
+      "quote": "Our five largest customers accounted for 100% of our revenue in each year/period of the",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_pe_backed": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_cvc_backed": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_gov_backed": {
+      "value": 0,
+      "page": 293,
+      "quote": "Nanshan Aluminium is\nowned as to 22.22% by Yili Electric and 20.91% by Nanshan Group",
+      "confidence": "medium"
+    },
+    "col_top_tier_vc": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Press Metal (via Press Metal SPV); Redstone",
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0,
+      "page": 293,
+      "quote": "Press Metal SPV",
+      "confidence": "medium"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 299,
+      "quote": "He joined\nPress Metal in February 2001",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Listed company (A-share controlling shareholder)",
+      "page": 160,
+      "quote": "Our Controlling Shareholder, Nanshan Aluminium, is an A-share main board listed company",
+      "confidence": "medium"
+    },
+    "col_BC": {
+      "value": 0.6009,
+      "page": 293,
+      "quote": "353,454,455\nShares (L)\n60.09%",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.6009,
+      "page": 293,
+      "quote": "353,454,455\nShares (L)\n60.09%",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "28/06/23",
+      "page": 166,
+      "quote": "liability on 28 June 2023 with an authorised share capital of US$50,000 divided into 50,000 shares",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Indonesia",
+      "page": 120,
+      "quote": "Headquarters and principal place of\nbusiness in Indonesia",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Alumina manufacturer",
+      "page": 159,
+      "quote": "We are an alumina manufacturer in Southeast Asia",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 433,
+      "quote": "initial listing of shares of the Company on the Main Board of The Stock",
+      "confidence": "high"
+    },
+    "col_BF": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 31,
+      "quote": "approximately 10% (approximately HK$243.0 million) will be used to provide funding\nfor our general working capital",
+      "confidence": "high"
+    },
+    "col_AO": {
+      "value": 0.018,
+      "page": 396,
+      "quote": "Our Company will pay an underwriting commission of 1.8% of the aggregate Offer Price of",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.018,
+      "page": 396,
+      "quote": "Our Company will pay an underwriting commission of 1.8% of the aggregate Offer Price of",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 406,
+      "quote": "aggregate of 13,235,200 Shares, representing up to approximately 15% of the initial Offer Shares",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 132800000,
+      "page": 396,
+      "quote": "HK$132.8 million",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Glencore International AG; Hongkong Topway Trading Co., Limited; Reijong International Industrial Equipment (HK) Limited; PT Indika Energy Tbk.",
+      "page": 318,
+      "quote": "Glencore International AG",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "code": "2865.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3482,
+      "page": 4,
+      "quote": "Subtotal 22,087,100 34.82% 7.55%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3.5,
+      "page": 3,
+      "quote": "Subscription level 3.50 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 9151,
+      "page": 3,
+      "quote": "No. of valid applications 9,151",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 22227000,
+      "page": 9,
+      "quote": "100 4,552 1,085 out of 4,552 to receive 100 Shares",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 3.50 times",
+      "page": 3,
+      "quote": "Subscription level 3.50 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "06/05/25",
+      "page": 2,
+      "quote": "Price Determination Date is expected to be on or before Tuesday, May 6, 2025 (Hong Kong time)",
+      "source": "prospectus",
+      "confidence": "medium"
+    },
+    "col_CR": {
+      "value": "07/05/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**07/05/2025 22:41**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 63432300,
+      "page": 3,
+      "quote": "Number of Offer Shares 63,432,300",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 6343300,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering 6,343,300",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 57089000,
+      "page": 3,
+      "quote": "Final Number of offer shares in International Offering 57,089,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：END OF STABILISATION PERIOD, NO STABILISATION ACTIONS AND\nLAPSE OF OVER-ALLOTMENT OPTION（02/06/2025 08:01）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "END OF STABILISATION PERIOD, NO STABILISATION ACTIONS AND\nLAPSE OF OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered No; oversubscribed by less than 15 times and no reallocation, no clawback arrangement triggered",
+      "page": 11,
+      "quote": "As (i) the Hong Kong Public Offering is oversubscribed by less than 15 times and (ii) the reallocation pursuant to Chapter 4.14 of the Guide for New Listing Applicants",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1291670000,
+      "page": 3,
+      "quote": "Net proceeds HK$ 1,291.67 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 18,
+      "quote": "at least 25% of the total number of issued Shares will be held by the public and the H Shares held by the public will be no less than 15% of the Company’s total number of issued Shares",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 292584052,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 292,584,052",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.14131,
+      "page": 4,
+      "quote": "Subtotal 22,087,100 34.82% 7.55%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "分母为上市时已发行股份总数 292,584,052 股（含 63,432,300 股 H 股及 A 股等非上市股份；超额配售权未行使且将不行使），不含超额配售部分",
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 292,584,052",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 292584052,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 292,584,052",
+      "confidence": "high"
+    }
+  }
+}

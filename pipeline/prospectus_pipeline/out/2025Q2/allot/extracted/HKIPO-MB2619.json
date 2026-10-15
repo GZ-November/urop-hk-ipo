@@ -1,0 +1,115 @@
+{
+  "code": "2619.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.44,
+      "page": 5,
+      "quote": "Total 30,016,000 44.00% 11.00%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 852.38,
+      "page": 4,
+      "quote": "Subscription level 852.38 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 48554,
+      "page": 4,
+      "quote": "No. of valid applications 48,554",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 5814928000,
+      "page": 8,
+      "quote": "Total 46,894 Total number of Pool A successful applicants: 14,925",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 852.38 times",
+      "page": 4,
+      "quote": "Subscription level 852.38 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "23/06/25",
+      "page": 2,
+      "quote": "and us on the Price Determination Date. The Price Determination Date is expected to be on Monday, 23 June 2025. The Offer Price will not be more than ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "24/06/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**24/06/2025 21:42**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 68220000,
+      "page": 3,
+      "quote": "Number of Offer Shares 68,220,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 34110000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in Hong Kong Public Offering (after reallocation) 34,110,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 34110000,
+      "page": 3,
+      "quote": "Final Number of Offer Shares in International Offering (after reallocation) 34,110,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-06-25 起 45 天内共 3 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-08-09 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "No. of Offer Shares reallocated from the International Offering (claw-back) 27,288,000; Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 34,110,000",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated from the International Offering (claw-back) 27,288,000 Final no. of Offer Shares under the Hong Kong Public Offering (after reallocation) 34,110,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 155570000,
+      "page": 3,
+      "quote": "Net proceeds (Note 2) HK$155.57 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 11,
+      "quote": "Immediately following completion of the Global Offering, an aggregate of 68,220,000 H Shares or approximately 25.00% of the total issued share capital of the Company will be held in public hands.",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 272879509,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 272,879,509",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.140003,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 272,879,509",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator = total issued Shares upon Listing 272,879,509 (incl. unlisted domestic Shares); public hands excludes the 204,659,509 Shares of the controlling shareholder group locked to 24 June 2026 and the 30,016,000 cornerstone H Shares locked to 2028/2030.",
+      "page": 11,
+      "quote": "Immediately following completion of the Global Offering, an aggregate of 68,220,000 H Shares or approximately 25.00% of the total issued share capital of the Company will be held in public hands.",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 272879509,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 272,879,509",
+      "confidence": "high"
+    }
+  }
+}

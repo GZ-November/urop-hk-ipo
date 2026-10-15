@@ -53,10 +53,11 @@ def main():
     ap.add_argument("--review-note", default="", help="复核结论摘要")
     ap.add_argument("--evidence-ref", default="", help="复核记录位置，如 evidence_review.csv 行或文件")
     ap.add_argument("--workbook", help="目标工作簿路径")
+    ap.add_argument("--config", help="指定 cohort 配置文件；也可用 PIPELINE_CONFIG 环境变量")
     ap.add_argument("--period-start", help="纳入样本起始日期 YYYY-MM-DD")
     ap.add_argument("--period-end", help="纳入样本截止日期 YYYY-MM-DD")
     args = ap.parse_args()
-    cfg = load_cfg(args.workbook, args.period_start, args.period_end)
+    cfg = load_cfg(args.workbook, args.period_start, args.period_end, config_path=args.config)
 
     if args.all:
         from cohort import read_companies

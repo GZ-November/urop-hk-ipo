@@ -1,0 +1,116 @@
+{
+  "code": "3750.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.5713,
+      "page": 7,
+      "quote": "Total 77,455,400 57.13 1.71",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 151.15,
+      "page": 2,
+      "quote": "Subscription level (before taking into account the Offer Size Adjustment Option) 151.15",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 310827,
+      "page": 2,
+      "quote": "No. of valid applications 310,827",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 1336520600,
+      "page": 21,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, a total of 310,827 valid applications made by the public will be conditionally allocated on the basis set out below:",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level (before taking into account the Offer Size Adjustment Option) 151.15",
+      "page": 2,
+      "quote": "Subscription level (before taking into account the Offer Size Adjustment Option) 151.15",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": null,
+      "quote": "",
+      "source": "allotment",
+      "confidence": "low"
+    },
+    "col_CR": {
+      "value": "19/05/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：19/05/2025 21:40",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 135578600,
+      "page": 1,
+      "quote": "Number of Offer Shares 135,578,600",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 10168400,
+      "page": 3,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after taking into account the full exercise of the Offer Size Adjustment Option) 10,168,400",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 125410200,
+      "page": 3,
+      "quote": "Final no. of Offer Shares under the International Offering (after taking into account the full exercise of the Offer Size Adjustment Option) 125,410,200",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 20336700,
+      "page": 1,
+      "quote": "ption described in the Prospectus has been fully exercised by the Overall Coordinators, on behalf of the International Underwriters, on May 20, 2025, in respect of an aggregate of 20,336,700 H Shares,",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION (20/05/2025 22:46)"
+    },
+    "col_CW": {
+      "value": "No claw-back triggered (Claw-back triggered: N/A); the additional Offer Shares from the full exercise of the Offer Size Adjustment Option were allocated so as to maintain the initial proportionality of 7.5%:92.5% between the Hong Kong Public Offering and the International Offering, with no reallocation between the two tranches",
+      "page": 25,
+      "quote": "there will be no reallocation of such additional Offer Shares between the Hong Kong Public Offering and the International Offering",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 35331200000,
+      "page": 2,
+      "quote": "Net Proceeds HK$35,331.2 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.0299,
+      "page": 29,
+      "quote": "the number of H Shares held in public hands represents approximately 2.99% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 4538973511,
+      "page": 1,
+      "quote": "Number of issued Shares upon Listing (before exercise of the Over-allotment Option) 4,538,973,511",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.012805,
+      "page": 29,
+      "quote": "the number of H Shares held in public hands represents approximately 2.99% of the total issued share capital of the Company",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Total issued share capital of the Company upon Listing (4,538,973,511 Shares), after taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option",
+      "page": 29,
+      "quote": "Immediately after the completion of the Global Offering (after taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 4538973511,
+      "page": 29,
+      "quote": "Immediately after the completion of the Global Offering (after taking into account the full exercise of the Offer Size Adjustment Option and before any exercise of the Over-allotment Option)",
+      "confidence": "high"
+    }
+  }
+}

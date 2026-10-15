@@ -1,0 +1,116 @@
+{
+  "code": "2050.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4722,
+      "page": 8,
+      "quote": "Total\n195,684,000\n47.22%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 747.92,
+      "page": 4,
+      "quote": "Subscription level (before taking into account the Offer Size \nAdjustment Option and reallocation)\n747.92 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 334840,
+      "page": 4,
+      "quote": "No. of valid applications\n334,840",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 18864853500,
+      "page": 20,
+      "quote": "a total of 334,840 valid",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level (before taking into account the Offer Size Adjustment Option and reallocation) 747.92 times",
+      "page": 4,
+      "quote": "747.92 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "19/06/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (on behalf of the Underwriters) and our Company on the Pric",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "20/06/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**20/06/2025 22:38**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 414379500,
+      "page": 3,
+      "quote": "Number of Offer Shares\n414,379,500",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 109810600,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after \ntaking into account the full exercise of the Offer Size \nAdjustment Option)\n109,810,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 304568900,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the International Offering (after taking \ninto account the full exercise of the Offer Size Adjustment \nOption)\n304,568,900",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 62156900,
+      "page": 2,
+      "quote": "pectus has been fully exercised by the Overall Coordinators (for themselves and on behalf of the International Underwriters) on Friday, July 18, 2025 in respect of an aggregate of 62,156,900 H Shares,",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "FULL EXERCISE OF THE OVER-ALLOTMENT OPTION, STABILIZING ACTIONS AND END OF STABILIZATION PERIOD (18/07/2025 21:58)"
+    },
+    "col_CW": {
+      "value": "Offer Size Adjustment Option exercised in full: 54,049,500 additional Offer Shares (approx. 15.0% of the Offer Shares initially available), allocated between the International Offering and the Hong Kong Public Offering in a 26.5:73.5 ratio; reallocation applied as the Hong Kong Public Offering was oversubscribed by more than 93 times. Final: Hong Kong Public Offering 109,810,600 (26.50%) and International Offering 304,568,900 (73.50%).",
+      "page": 22,
+      "quote": "As the Hong Kong Public Offering has been oversubscribed by more than 93 times, the",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 9177000000,
+      "page": 4,
+      "quote": "Net Proceeds\nHK$9,177 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.1,
+      "page": 36,
+      "quote": "the number of H Shares held in public hands represents approximately 10.0% of the",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 4146769035,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n(before exercise of the Over-allotment \nOption) (Note)\n4,146,769,035",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0527,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n(before exercise of the Over-allotment \nOption) (Note)\n4,146,769,035",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator = total number of issued Shares upon Listing (4,146,769,035 Shares, including H Shares and A Shares and 2,707,721 A Shares held as treasury Shares), after full exercise of the Offer Size Adjustment Option and before exercise of the Over-allotment Option - the base used for the 10.0% public float statement.",
+      "page": 3,
+      "quote": "The number of issued Shares includes 2,707,721 A Shares being held as treasury",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 4146769035,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing \n(before exercise of the Over-allotment \nOption) (Note)\n4,146,769,035",
+      "confidence": "high"
+    }
+  }
+}

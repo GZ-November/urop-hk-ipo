@@ -1,0 +1,115 @@
+{
+  "code": "2625.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2883,
+      "page": 5,
+      "quote": "Total 15,444,000 28.83% 7.21%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 46.96,
+      "page": 4,
+      "quote": "Subscription level 46.96 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 9084,
+      "page": 4,
+      "quote": "Number of valid applications 9,084",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 251552000,
+      "page": 11,
+      "quote": "a total of 9,084 valid applications made by the public will be conditionally allocated on the basis set out below",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 46.96 times (Hong Kong Public Offering); International Offering Subscription Level 0.93 times",
+      "page": 4,
+      "quote": "Subscription level 46.96 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "27/03/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Joint Overall Coordinators (for themselves and on behalf of the Underwriters) an",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "28/03/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**28/03/2025 20:25**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 53562000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 53,562,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 8892000,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 8,892,000 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 44670000,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 44,670,000 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-03-31 起 45 天内共 10 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-05-15 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "International Offering undersubscribed (0.93x) and Hong Kong Public Offering oversubscribed (46.96x); reallocation applied: HK Public Offering increased from 5,357,000 to 8,892,000 H Shares (10% to 16.60%), International Offering reduced from 48,205,000 to 44,670,000 H Shares (i.e. 3,535,000 shares reallocated); Claw-back triggered: No",
+      "page": 4,
+      "quote": "As the International Offer Shares are under-subscribed and the Hong Kong Offer Shares are over-subscribed, the reallocation procedure as described in the paragraph headed",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 92550000,
+      "page": 3,
+      "quote": "Net proceeds HK$92.55 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "low"
+    },
+    "col_CZ": {
+      "value": 214246910,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 214,246,910",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.1779,
+      "page": 5,
+      "quote": "Top Legend SPC for and on behalf of Ocean One SP 15,444,000 28.83% 7.21%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator is the total number of issued shares (all H Shares) upon Listing before exercise of the Over-allotment Option: 214,246,910 shares; no over-allocation occurred so the Over-allotment Option was not exercised (per announcement, no over-allocation of International Offer Shares)",
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 214,246,910",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 214246910,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing 214,246,910",
+      "confidence": "high"
+    }
+  }
+}

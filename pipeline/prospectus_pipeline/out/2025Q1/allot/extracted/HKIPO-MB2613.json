@@ -1,0 +1,115 @@
+{
+  "code": "2613.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.2443,
+      "page": 5,
+      "quote": "Total\n2,443,000\n24.43%\n24.43%\n6.11%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 55.33,
+      "page": 4,
+      "quote": "Subscription level\n55.33 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 12389,
+      "page": 4,
+      "quote": "No. of valid applications\n12,389",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 55332300,
+      "page": 11,
+      "quote": "POOL A\n100\n5,603\n2,242 out of 5,603 applicants to receive 100 shares\n40.01%\n200\n1,320\n654 out of 1,320 applicants to receive 100 shares\n24.77%",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 55.33 times (Hong Kong Public Offering); International Offering subscription level 0.95 times",
+      "page": 4,
+      "quote": "Subscription level\n55.33 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "07/01/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be fixed by agreement among the Joint Representatives (for themselves and on behalf of the Underwriters) and our Compan",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "08/01/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**08/01/2025 22:43**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 10000000,
+      "page": 2,
+      "quote": "Number of Offer Shares under the\nGlobal Offering\n:\n10,000,000 H Shares",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 1894200,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares\n:\n1,894,200 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 8105800,
+      "page": 2,
+      "quote": "Number of International Offer Shares\n:\n8,105,800 H Shares (as adjusted after reallocation)",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-01-09 起 45 天内共 2 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-02-23 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "894,200 Offer Shares reallocated from the International Offering to the Hong Kong Public Offering; final Hong Kong Public Offering increased from 1,000,000 to 1,894,200 H Shares (~18.94% of the Global Offering)",
+      "page": 14,
+      "quote": "the reallocation of 894,200 Offer Shares from the International Offering to the Hong Kong Public Offering",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 273400000,
+      "page": 3,
+      "quote": "Net proceeds\nHK$273.4 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.25,
+      "page": 16,
+      "quote": "an aggregate of 10,000,000 H Shares or approximately 25.0% of the total issued share capital of the Company will be held in the public hands",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 40000000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing\n40,000,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.188925,
+      "page": 5,
+      "quote": "Total\n2,443,000\n24.43%\n24.43%\n6.11%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Total issued share capital of the Company upon Listing = 40,000,000 shares (30,000,000 domestic shares + 10,000,000 H Shares), assuming options under the Pre-IPO Share Option Scheme are not exercised",
+      "page": 3,
+      "quote": "Number of issued shares upon Listing\n40,000,000",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 40000000,
+      "page": 3,
+      "quote": "Number of issued shares upon Listing\n40,000,000",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "code": "2573.HK",
+  "fields": {
+    "col_L": {
+      "value": 96231234,
+      "page": 299,
+      "quote": "H Shares to be issued under the Global Offering 10,585,400 11.0% Total 96,231,234 100.0%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 10585400,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 10,585,400 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 85645834,
+      "page": 299,
+      "quote": "H Shares to be issued under the Global Offering 10,585,400 11.0% Total 96,231,234 100.0%",
+      "confidence": "medium"
+    },
+    "col_O": {
+      "value": 85645834,
+      "page": 299,
+      "quote": "H Shares to be issued under the Global Offering 10,585,400 11.0% Total 96,231,234 100.0%",
+      "confidence": "medium"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 299,
+      "quote": "H Shares to be issued under the Global Offering 10,585,400 11.0% Total 96,231,234 100.0%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 10585400,
+      "page": 2,
+      "quote": "Number of Offer Shares under the Global Offering : 10,585,400 H Shares (subject to the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 9526800,
+      "page": 2,
+      "quote": "Number of International Offer Shares : 9,526,800 H Shares (subject to reallocation and the Over-allotment Option)",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 1058600,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 1,058,600 H Shares (subject to reallocation)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "H Shares and Domestic Shares (all ordinary Shares)",
+      "page": 299,
+      "quote": "Upon completion of the Global Offering, the Shares will consist of H Shares and Domestic Shares. H Shares and Domestic Shares are all ordinary Shares in the share capital of our Company.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 55148894,
+      "page": 299,
+      "quote": "Domestic Shares 41,082,340 42.7% H Shares to be converted from Domestic Shares 44,563,494 46.3% H Shares to be issued under the Global Offering 10,585,400 11.0% Total 96,231,234 100.0%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 20.9,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$20.9 per Offer Share and is currently expected to be not less than HK$18.9 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 18.9,
+      "page": 2,
+      "quote": "The Offer Price will be not more than HK$20.9 per Offer Share and is currently expected to be not less than HK$18.9 per Offer Share.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "30/05/2025",
+      "page": 5,
+      "quote": "Hong Kong Public Offering commences . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9:00 a.m. on Friday, 30 May 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "05/06/2025",
+      "page": 5,
+      "quote": "Application lists close(3) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12:00 noon on Thursday, 5 June 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "新琪安集团股份有限公司",
+      "page": 2,
+      "quote": "新琪安集團股份有限公司 (Newtrend Group Holding Co., Ltd.) (A joint stock company incorporated in the People’s Republic of China with limited liability)",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 17,
+      "quote": "Year ended 31 December 2022 2023 2024 RMB’000 RMB’000 RMB’000 Revenue 761,499 446,938 568,867",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 726661000,
+      "page": 437,
+      "quote": "314,069 272,862 325,608 Net current assets 76,844 67,417 68,693 Total assets less current liabilities 412,592 440,347 487,300",
+      "confidence": "medium"
+    },
+    "col_X": {
+      "value": 713209000,
+      "page": 437,
+      "quote": "314,069 272,862 325,608 Net current assets 76,844 67,417 68,693 Total assets less current liabilities 412,592 440,347 487,300",
+      "confidence": "medium"
+    },
+    "col_Y": {
+      "value": 812908000,
+      "page": 437,
+      "quote": "314,069 272,862 325,608 Net current assets 76,844 67,417 68,693 Total assets less current liabilities 412,592 440,347 487,300",
+      "confidence": "medium"
+    },
+    "col_Z": {
+      "value": 399691000,
+      "page": 438,
+      "quote": "Capital and reserves Share capital 30 85,646 85,646 85,646 Reserves 314,045 349,284 393,473 Total equity 399,691 434,930 479,119",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 434930000,
+      "page": 438,
+      "quote": "Capital and reserves Share capital 30 85,646 85,646 85,646 Reserves 314,045 349,284 393,473 Total equity 399,691 434,930 479,119",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 479119000,
+      "page": 438,
+      "quote": "Capital and reserves Share capital 30 85,646 85,646 85,646 Reserves 314,045 349,284 393,473 Total equity 399,691 434,930 479,119",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 326970000,
+      "page": 438,
+      "quote": "Non-current liabilities Lease liabilities 25 520 327 – Bank borrowings 26 10,000 – – Deferred income 28 2,381 5,090 8,181 12,901 5,417 8,181 Net assets 399,691 434,930 479,119",
+      "confidence": "medium"
+    },
+    "col_AD": {
+      "value": 278279000,
+      "page": 438,
+      "quote": "Non-current liabilities Lease liabilities 25 520 327 – Bank borrowings 26 10,000 – – Deferred income 28 2,381 5,090 8,181 12,901 5,417 8,181 Net assets 399,691 434,930 479,119",
+      "confidence": "medium"
+    },
+    "col_AE": {
+      "value": 333789000,
+      "page": 438,
+      "quote": "Non-current liabilities Lease liabilities 25 520 327 – Bank borrowings 26 10,000 – – Deferred income 28 2,381 5,090 8,181 12,901 5,417 8,181 Net assets 399,691 434,930 479,119",
+      "confidence": "medium"
+    },
+    "col_AF": {
+      "value": 761499000,
+      "page": 17,
+      "quote": "Revenue 761,499 446,938 568,867 Cost of sales (566,640) (367,039) (466,967)",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 446938000,
+      "page": 17,
+      "quote": "Revenue 761,499 446,938 568,867 Cost of sales (566,640) (367,039) (466,967)",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 568867000,
+      "page": 17,
+      "quote": "Revenue 761,499 446,938 568,867 Cost of sales (566,640) (367,039) (466,967)",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 149316000,
+      "page": 17,
+      "quote": "Profit before tax 149,316 48,382 48,734 Income tax expense (27,295) (3,720) (5,328)",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 48382000,
+      "page": 17,
+      "quote": "Profit before tax 149,316 48,382 48,734 Income tax expense (27,295) (3,720) (5,328)",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 48734000,
+      "page": 17,
+      "quote": "Profit before tax 149,316 48,382 48,734 Income tax expense (27,295) (3,720) (5,328)",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 122021000,
+      "page": 17,
+      "quote": "Income tax expense (27,295) (3,720) (5,328) Profit for the year 122,021 44,662 43,406",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 44662000,
+      "page": 17,
+      "quote": "Income tax expense (27,295) (3,720) (5,328) Profit for the year 122,021 44,662 43,406",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 43406000,
+      "page": 17,
+      "quote": "Income tax expense (27,295) (3,720) (5,328) Profit for the year 122,021 44,662 43,406",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 75024000,
+      "page": 437,
+      "quote": "Lease liabilities 25 509 609 324 Bank borrowings 26 77,100 59,600 74,700 Other borrowings 27 97,400 95,650 95,650",
+      "confidence": "medium"
+    },
+    "col_BT": {
+      "value": "HKFRS",
+      "page": 435,
+      "quote": "have been prepared in accordance with the accounting policies which conform with Hong Kong Financial Reporting Standards (“HKFRS”) issued by Hong Kong Institute of Certified Public Accountants",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 101900000,
+      "page": 17,
+      "quote": "Cost of sales (566,640) (367,039) (466,967) Gross profit 194,859 79,899 101,900",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 80193000,
+      "page": 370,
+      "quote": "Additions of items of property, plant and equipment 35,980 74,034 80,093 Additions of right-of-use assets 1,120 667 100 Total 37,100 74,701 80,193",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "true and fair view (unqualified)",
+      "page": 433,
+      "quote": "In our opinion, the Historical Financial Information gives, for the purpose of the accountants’ report, a true and fair view of the financial position of the Group and the Company",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/2024",
+      "page": 437,
+      "quote": "CONSOLIDATED STATEMENTS OF FINANCIAL POSITION As at 31 December Notes 2022 2023 2024 RMB’000 RMB’000 RMB’000 Non-current assets",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 4300000,
+      "page": 27,
+      "quote": "Income tax paid (9,318) (13,983) (7,972) Net cash generated from operating activities 192,397 26,200 4,300",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 46129000,
+      "page": 27,
+      "quote": "Effects of exchange rate changes on cash and cash equivalents (1,765) 2,365 1,428 Cash and cash equivalents at end of the year 178,246 105,194 46,129",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 16601000,
+      "page": 17,
+      "quote": "Research and development costs (13,962) (17,216) (16,601) Listing expenses – – (10,207)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 437,
+      "quote": "Non-current assets Property, plant and equipment 16 302,631 344,262 386,389 Right-of-use assets 17 13,969 13,400 12,465 Prepayments 20 4,280 505 1,862 Deferred tax assets",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.556,
+      "page": 13,
+      "quote": "Sale to our five largest customers in each year during the Track Record Period accounted for approximately 56.2%, 53.9% and 55.6% of our total revenue respectively, and sale to our largest customer",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": 1,
+      "page": 32,
+      "quote": "Pre-IPO Investments We conducted the Pre-IPO Investments with the Pre-IPO Investors, namely, Chen Yiyuan, Huang Wenzeng, Yang Haijun, Guoxin Hongsheng, Xingzheng Strategic Venture,",
+      "confidence": "high"
+    },
+    "col_vc_backed": {
+      "value": 1,
+      "page": 160,
+      "quote": "distributed as to 4,898,377 Shares to Fujian Xingzheng Strategic Venture Capital Enterprise (Limited Partnership)* (福建興證戰略創業投資企業",
+      "confidence": "medium"
+    },
+    "col_pe_backed": {
+      "value": 1,
+      "page": 172,
+      "quote": "Guoxin Hongsheng is a limited partnership established in the PRC on 2 July 2013. It is a private equity fund principally engaged in investments in high-end manufacturing",
+      "confidence": "medium"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "Subscription method Date of investment agreement Date of settlement of consideration (last payment) Name of subscriber/ investor(1) Registered capital subscribed for Amount of consideration",
+      "confidence": "low"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "Subscription method Date of investment agreement Date of settlement of consideration (last payment) Name of subscriber/ investor(1) Registered capital subscribed for Amount of consideration",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "Subscription method Date of investment agreement Date of settlement of consideration (last payment) Name of subscriber/ investor(1) Registered capital subscribed for Amount of consideration",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "Chen Yiyuan; Huang Wenzeng; Yang Haijun; Guoxin Hongsheng; Xingzheng Strategic Venture; Xingzheng Saifu Investment; Xingzheng Saifu No. 1 Investment; Xiuneng Investment; Zhang Chaoyi; Huang Yanlu; Fuxing Investment",
+      "page": 32,
+      "quote": "Pre-IPO Investments We conducted the Pre-IPO Investments with the Pre-IPO Investors, namely, Chen Yiyuan, Huang Wenzeng, Yang Haijun, Guoxin Hongsheng, Xingzheng Strategic Venture,",
+      "confidence": "high"
+    },
+    "col_vc_pe_stake": {
+      "value": 0.358,
+      "page": 33,
+      "quote": "Immediately following completion of the Global Offering, assuming that the Over-Allotment Option is not exercised, the Pre-IPO Investors will hold approximately 35.8% of the issued Shares.",
+      "confidence": "high"
+    },
+    "col_vc_board_seat": {
+      "value": 1,
+      "page": 285,
+      "quote": " present, Mr. Xiao has served as the general manager of\ninvestment division I at Xinzheng Innovative Capital Management Co. Ltd.* (興證創新資\n本管理有限公司), a company principally engaged in the management of p",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "Equity transfer from existing shareholders (10 March 2010)",
+      "page": 164,
+      "quote": "Equity transfer from existing shareholders(4) 10 March 2010 31 March 2010 Chen Yiyuan (陳一元) RMB840,000 RMB4,000,000(10)",
+      "confidence": "high"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "Equity transfer from existing shareholders(4) 10 March 2010 31 March 2010 Chen Yiyuan (陳一元) RMB840,000 RMB4,000,000(10)",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Individual (natural persons) – Mr. Wang and Ms. Ding acting in concert through Newtrend Industrial and Juhexing Investment",
+      "page": 32,
+      "quote": "Mr. Wang and Ms. Ding are spouses. Accordingly, Mr. Wang, Ms. Ding, Newtrend Industrial and Juhexing Investment constitute a group of Controlling Shareholders before Listing.",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.487,
+      "page": 32,
+      "quote": "the group of the Controlling Shareholders will be, in aggregate entitled to control the exercise of approximately 48.7% of the voting rights",
+      "confidence": "medium"
+    },
+    "col_BD": {
+      "value": 0.487,
+      "page": 32,
+      "quote": "the group of the Controlling Shareholders will be, in aggregate entitled to control the exercise of approximately 48.7% of the voting rights",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "08/09/2006",
+      "page": 157,
+      "quote": "On 8 September 2006, our Company, formerly named as Ji’an Newtrend Technology Co., Ltd* (吉安市新琪安科技有限公司) and Newtrend Technology Co., Ltd.* (新琪安科技股份有限公司), was established",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "Jinggangshan Economic and Technological Development Zone, Ji’an, Jiangxi, PRC",
+      "page": 98,
+      "quote": "Registered office, headquarters and principal place of business in the PRC Jinggangshan Economic and Technological Development Zone Ji’an, Jiangxi, PRC",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Food additives manufacturing – manufacture and sale of food-grade glycine, industrial-grade glycine and sucralose",
+      "page": 11,
+      "quote": "OUR BUSINESS MODEL During the Track Record Period, we were principally engaged in the manufacturing and sale of food-grade glycine, industrial-grade glycine and sucralose.",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board standard (general) listing route",
+      "page": 392,
+      "quote": "the H Shares to be offered pursuant to the Global Offering (including any additional H Shares that may be issued pursuant to the exercise of the Over-allotment Option) on the Main Board",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialised – products in mass production and sale",
+      "page": 11,
+      "quote": "OUR BUSINESS MODEL During the Track Record Period, we were principally engaged in the manufacturing and sale of food-grade glycine, industrial-grade glycine and sucralose.",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 28,
+      "quote": "approximately 21.3%, or HK$37.0 million, will be used for production of isomalt in our Thailand Plant; approximately 55.3%, or HK$96.5 million, will be used for production of seaweed",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.03,
+      "page": 399,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AP": {
+      "value": 0.03,
+      "page": 399,
+      "quote": "The Underwriters and the Capital Market Intermediaries will receive an underwriting commission of 3.0% of the aggregate Offer Price of all the Offer Shares",
+      "confidence": "high"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 399,
+      "quote": "up to an aggregate of 1,587,800 additional new H Shares, representing approximately 15% of the number of the Offer Shares initially being offered under the Global Offering",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 36300000,
+      "page": 28,
+      "quote": "resulting in the gross proceeds of approximately HK$210.6 million and listing expenses of approximately HK$36.3 million.",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "The Reynold Lemkins Group (Asia) Limited; He Win Hong Kong Holdings Co., Limited (合贏香江控股有限公司)",
+      "page": 386,
+      "quote": "the cornerstone investors, namely (i) The Reynold Lemkins Group (Asia) Limited (“Reynold Lemkins”) and (ii) He Win Hong Kong Holdings Co., Limited (合贏香江控股有限公司) (“He Win”)",
+      "confidence": "high"
+    }
+  }
+}
