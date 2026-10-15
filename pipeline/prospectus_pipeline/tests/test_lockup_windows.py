@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
+from as_of import resolve_as_of  # noqa: E402
 from lockup_panel import LockupPanelEngine  # noqa: E402
 
 CODE = "1234.HK"
@@ -84,7 +85,8 @@ class LockupWindowCoverageTests(unittest.TestCase):
 
     def test_future_unlock_keeps_existing_immature_status(self):
         engine = make_engine()
-        future = dt.date.today() + dt.timedelta(days=1)
+        # The engine cuts off at the Hong Kong date, so derive 'future' from the same clock.
+        future = resolve_as_of() + dt.timedelta(days=1)
         self.assertEqual(engine.calculate_event_window_metrics(CODE, future),
                          (None, None, None, None, "IMMATURE_WINDOW"))
 
