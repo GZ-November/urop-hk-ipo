@@ -1,0 +1,425 @@
+{
+  "code": "2050.HK",
+  "fields": {
+    "col_L": {
+      "value": 4092719535,
+      "page": 303,
+      "quote": "A Shares in issue* 3,732,389,535 91.2% H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535 100.0%",
+      "confidence": "high"
+    },
+    "col_M": {
+      "value": 360330000,
+      "page": 303,
+      "quote": "H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535 100.0%",
+      "confidence": "high"
+    },
+    "col_N": {
+      "value": 3732389535,
+      "page": 303,
+      "quote": "A Shares in issue* 3,732,389,535 91.2% H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535",
+      "confidence": "high"
+    },
+    "col_O": {
+      "value": 3732389535,
+      "page": 303,
+      "quote": "A Shares in issue* 3,732,389,535 91.2% H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535",
+      "confidence": "high"
+    },
+    "col_P": {
+      "value": 0,
+      "page": 303,
+      "quote": "H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535 100.0%",
+      "confidence": "medium"
+    },
+    "col_Q": {
+      "value": 360330000,
+      "page": 303,
+      "quote": "H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535 100.0%",
+      "confidence": "high"
+    },
+    "col_R": {
+      "value": 335106900,
+      "page": 104,
+      "quote": "The Global Offering comprises the Hong Kong Public Offering of initially 25,223,100 Offer Shares and the International Offering of initially 335,106,900 Offer Shares",
+      "confidence": "high"
+    },
+    "col_S": {
+      "value": 25223100,
+      "page": 2,
+      "quote": "Number of Hong Kong Offer Shares : 25,223,100 H Shares (subject to reallocation and the Offer Size Adjustment Option)",
+      "confidence": "high"
+    },
+    "col_BI": {
+      "value": "Ordinary Shares",
+      "page": 305,
+      "quote": "Our H Shares in issue upon completion of the Global Offering, and our A Shares, are ordinary Shares in our share capital and are considered as one class of Shares.",
+      "confidence": "high"
+    },
+    "col_CE": {
+      "value": 360330000,
+      "page": 303,
+      "quote": "H Shares to be issued pursuant to the Global Offering 360,330,000 8.8% Total 4,092,719,535 100.0%",
+      "confidence": "high"
+    },
+    "col_T": {
+      "value": 22.53,
+      "page": 2,
+      "quote": "Maximum Offer Price : HK$22.53 per H Share, plus brokerage of 1.0%, SFC transaction levy of 0.0027%, Hong Kong Stock Exchange trading fee of 0.00565% and",
+      "confidence": "high"
+    },
+    "col_U": {
+      "value": 21.21,
+      "page": 2,
+      "quote": "The Offer Price will not be more than HK$22.53 per Offer Share and is currently expected to be not less than HK$21.21 per Offer Share unless otherwise announced.",
+      "confidence": "high"
+    },
+    "col_CC": {
+      "value": "2025-06-13",
+      "page": 5,
+      "quote": "9:00 a.m. on Friday, June 13, 2025",
+      "confidence": "high"
+    },
+    "col_CD": {
+      "value": "2025-06-18",
+      "page": 5,
+      "quote": "12:00 noon on Wednesday, June 18, 2025",
+      "confidence": "high"
+    },
+    "col_DP": {
+      "value": "浙江三花智能控制股份有限公司",
+      "page": 2,
+      "quote": "ZHEJIANG SANHUA INTELLIGENT CONTROLS CO., LTD. 浙江三花智能控制股份有限公司 (A joint stock company incorporated in the People's Republic of China with limited liability)",
+      "confidence": "high"
+    },
+    "col_V": {
+      "value": "RMB",
+      "page": 452,
+      "quote": "The Historical Financial Information are presented in Renminbi (“RMB”), which is also the functional currency of the Company, and all values are rounded to the nearest thousands (RMB’000)",
+      "confidence": "high"
+    },
+    "col_W": {
+      "value": 27961214000,
+      "page": 24,
+      "quote": "Total assets 27,961,214 31,890,585 36,354,749",
+      "confidence": "high"
+    },
+    "col_X": {
+      "value": 31890585000,
+      "page": 24,
+      "quote": "Total assets 27,961,214 31,890,585 36,354,749",
+      "confidence": "high"
+    },
+    "col_Y": {
+      "value": 36354749000,
+      "page": 24,
+      "quote": "Total assets 27,961,214 31,890,585 36,354,749",
+      "confidence": "high"
+    },
+    "col_Z": {
+      "value": 13119300000,
+      "page": 24,
+      "quote": "Total equity 13,119,300 18,063,708 19,519,644",
+      "confidence": "high"
+    },
+    "col_AA": {
+      "value": 18063708000,
+      "page": 24,
+      "quote": "Total equity 13,119,300 18,063,708 19,519,644",
+      "confidence": "high"
+    },
+    "col_AB": {
+      "value": 19519644000,
+      "page": 24,
+      "quote": "Total equity 13,119,300 18,063,708 19,519,644",
+      "confidence": "high"
+    },
+    "col_AC": {
+      "value": 14841914000,
+      "page": 24,
+      "quote": "Total liabilities 14,841,914 13,826,877 16,835,105",
+      "confidence": "high"
+    },
+    "col_AD": {
+      "value": 13826877000,
+      "page": 24,
+      "quote": "Total liabilities 14,841,914 13,826,877 16,835,105",
+      "confidence": "high"
+    },
+    "col_AE": {
+      "value": 16835105000,
+      "page": 24,
+      "quote": "Total liabilities 14,841,914 13,826,877 16,835,105",
+      "confidence": "high"
+    },
+    "col_AF": {
+      "value": 21347550000,
+      "page": 21,
+      "quote": "Revenue 21,347,550 100.0 24,557,802 100.0 27,947,165 100.0",
+      "confidence": "high"
+    },
+    "col_AG": {
+      "value": 24557802000,
+      "page": 21,
+      "quote": "Revenue 21,347,550 100.0 24,557,802 100.0 27,947,165 100.0",
+      "confidence": "high"
+    },
+    "col_AH": {
+      "value": 27947165000,
+      "page": 21,
+      "quote": "Revenue 21,347,550 100.0 24,557,802 100.0 27,947,165 100.0",
+      "confidence": "high"
+    },
+    "col_AI": {
+      "value": 3051258000,
+      "page": 21,
+      "quote": "Profit before income tax 3,051,258 14.3 3,553,264 14.5 3,691,687 13.2",
+      "confidence": "high"
+    },
+    "col_AJ": {
+      "value": 3553264000,
+      "page": 21,
+      "quote": "Profit before income tax 3,051,258 14.3 3,553,264 14.5 3,691,687 13.2",
+      "confidence": "high"
+    },
+    "col_AK": {
+      "value": 3691687000,
+      "page": 21,
+      "quote": "Profit before income tax 3,051,258 14.3 3,553,264 14.5 3,691,687 13.2",
+      "confidence": "high"
+    },
+    "col_AL": {
+      "value": 2608052000,
+      "page": 21,
+      "quote": "Profit for the year 2,608,052 12.2 2,933,715 11.9 3,111,726 11.1",
+      "confidence": "high"
+    },
+    "col_AM": {
+      "value": 2933715000,
+      "page": 21,
+      "quote": "Profit for the year 2,608,052 12.2 2,933,715 11.9 3,111,726 11.1",
+      "confidence": "high"
+    },
+    "col_AN": {
+      "value": 3111726000,
+      "page": 21,
+      "quote": "Profit for the year 2,608,052 12.2 2,933,715 11.9 3,111,726 11.1",
+      "confidence": "high"
+    },
+    "col_BE": {
+      "value": 4428026000,
+      "page": 350,
+      "quote": "Sub-total 4,780,366 1,252,096 2,283,686 1,986,418 Total 6,642,576 3,904,340 4,428,026 4,582,705",
+      "confidence": "high"
+    },
+    "col_BT": {
+      "value": "IFRS",
+      "page": 452,
+      "quote": "prepared in accordance with all applicable International Financial Reporting Standards (“IFRS Accounting Standards”) issued by the International Accounting Standards Board (“IASB”).",
+      "confidence": "high"
+    },
+    "col_CF": {
+      "value": 7620819000,
+      "page": 21,
+      "quote": "Gross profit 5,461,612 25.6 6,735,488 27.4 7,620,819 27.3",
+      "confidence": "high"
+    },
+    "col_CG": {
+      "value": 4114980000,
+      "page": 352,
+      "quote": "In 2022, 2023, 2024, our capital expenditures were RMB2,535.1 million, RMB3,249.1 million and RMB4,115.0 million, respectively.",
+      "confidence": "high"
+    },
+    "col_CH": {
+      "value": "Unqualified (true and fair view)",
+      "page": 438,
+      "quote": "Opinion In our opinion, the Historical Financial Information gives, for the purposes of the accountant’s report, a true and fair view of the Company’s and the Group’s financial position",
+      "confidence": "high"
+    },
+    "col_AT": {
+      "value": "31/12/2024",
+      "page": 441,
+      "quote": "CONSOLIDATED STATEMENTS OF PROFIT OR LOSS Year ended December 31, Notes 2022 2023 2024 RMB’000 RMB’000 RMB’000",
+      "confidence": "high"
+    },
+    "col_AU": {
+      "value": 4026185000,
+      "page": 25,
+      "quote": "Net cash generated from operating activities 2,366,052 3,560,363 4,026,185",
+      "confidence": "high"
+    },
+    "col_AV": {
+      "value": 3443503000,
+      "page": 25,
+      "quote": "Cash and cash equivalents at end of year 2,050,329 3,624,955 3,443,503",
+      "confidence": "high"
+    },
+    "col_AW": {
+      "value": 1351799000,
+      "page": 21,
+      "quote": "Research and development expenses (988,954) (4.6) (1,096,834) (4.5) (1,351,799) (4.8)",
+      "confidence": "high"
+    },
+    "col_AX": {
+      "value": 0,
+      "page": 581,
+      "quote": "Software 27,704 25,928 Intellectual properties 10,096 10,592 37,800 36,520",
+      "confidence": "medium"
+    },
+    "col_AY": {
+      "value": 0.329,
+      "page": 19,
+      "quote": "our five largest customers in each of such year accounted for approximately 35.9%, 35.9%, 32.9% of our total revenue, respectively, and sales to the largest customer",
+      "confidence": "high"
+    },
+    "col_BA": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_pre_ipo_investors": {
+      "value": "NA",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_vc_pe_stake": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_vc_board_seat": {
+      "value": 0,
+      "page": 262,
+      "quote": "Mr. ZHANG Shaobo (張少波先生), aged 46, has been our Non-executive Director\nsince May 2015.\nMr. Zhang joined our Group in January 2001. Mr. Zhang",
+      "confidence": "high"
+    },
+    "col_earliest_round": {
+      "value": "NA",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_holding_duration": {
+      "value": "NaN",
+      "page": 164,
+      "quote": "In 2010, following the approval of our Shareholders and the relevant regulatory authority, we were approved of a private issuance of no more than 50 million new Shares.",
+      "confidence": "low"
+    },
+    "col_BB": {
+      "value": "Individual/family-controlled (Controlling Shareholders Group)",
+      "page": 20,
+      "quote": "our Controlling Shareholders Group, including Mr. Zhang Daocai, Ms. Yu Qingjuan, Mr. Zhang Yabo, Mr. Zhang Shaobo, Xinchang Huaqing Investment, Xinchang Huaxin Industrial",
+      "confidence": "high"
+    },
+    "col_BC": {
+      "value": 0.4069,
+      "page": 20,
+      "quote": "the Controlling Shareholders Group will continue to hold in aggregate approximately 40.69% of our total share capital.",
+      "confidence": "high"
+    },
+    "col_BD": {
+      "value": 0.4072,
+      "page": 82,
+      "quote": "the Controlling Shareholders Group will be together entitled to control the exercise of approximately 40.72% of the voting rights and thus remain as Controlling Shareholders Group of our Company.",
+      "confidence": "high"
+    },
+    "col_BP": {
+      "value": "1994-09-10",
+      "page": 158,
+      "quote": "On September 10, 1994, together with Fujikoki Manufacturing Co., Ltd. (株式会社不二工機製作所), Mitsubishi Corporation (三菱商事株式会社) and Orient Trading Co., Ltd.",
+      "confidence": "high"
+    },
+    "col_BR": {
+      "value": "No. 219 Woxi Avenue, Chengtan Street, Xinchang, Shaoxing, Zhejiang Province, PRC",
+      "page": 452,
+      "quote": "The registered office and principal place of business of the Company is located at No. 219 Woxi Avenue, Chengtan Street, Xinchang, Shaoxing, Zhejiang Province",
+      "confidence": "high"
+    },
+    "col_AR": {
+      "value": "Refrigeration and air-conditioning control components and automotive thermal management system components",
+      "page": 11,
+      "quote": "We are the world’s largest manufacturer of refrigeration and air-conditioning control components and a global leader in automotive thermal management system components",
+      "confidence": "high"
+    },
+    "col_AS": {
+      "value": "Main Board",
+      "page": 36,
+      "quote": "“Listing” the listing of the H Shares on the Main Board",
+      "confidence": "medium"
+    },
+    "col_BF": {
+      "value": "Commercialized (mass production; revenue-generating)",
+      "page": 308,
+      "quote": "We are the world’s largest manufacturer of refrigeration and air-conditioning control components and a global leader in automotive thermal management system components in terms of revenue in 2024",
+      "confidence": "medium"
+    },
+    "col_BG": {
+      "value": 0,
+      "page": 26,
+      "quote": "approximately 30% of the net proceeds, or HK$2,322.2 million, will be used for continuous global R&D and innovation of our product mix",
+      "confidence": "medium"
+    },
+    "col_AO": {
+      "value": 0.0132,
+      "page": 30,
+      "quote": "By nature, our listing expenses are composed of (i) underwriting commission of approximately HK$104.1 million and (ii) non-underwriting related expenses of approximately HK$35.7 million",
+      "confidence": "medium"
+    },
+    "col_AP": {
+      "value": 0.0132,
+      "page": 30,
+      "quote": "By nature, our listing expenses are composed of (i) underwriting commission of approximately HK$104.1 million and (ii) non-underwriting related expenses of approximately HK$35.7 million",
+      "confidence": "medium"
+    },
+    "col_AQ": {
+      "value": 0.15,
+      "page": 306,
+      "quote": "The number of H Shares to be issued pursuant to the full exercise of the Over-allotment Option shall not exceed 15% of the total number of H Shares to be offered initially under the Global Offering.",
+      "confidence": "high"
+    },
+    "col_CI": {
+      "value": 139800000,
+      "page": 30,
+      "quote": "We estimate that our listing expenses will be approximately HK$139.8 million (assuming an Offer Price of HK$21.87 per Offer Share (being the mid-point of the indicative Offer Price range)",
+      "confidence": "high"
+    },
+    "col_CJ": {
+      "value": "Schroders; GIC; HK Greenwoods; Shanghai Greenwoods and HTCI (in connection with the Greenwoods OTC Swaps); Green Better; Verition; Eastern Bell Capital VIII; Mirae Securities; ICBC Wealth; PSBC Wealth; Taikang Life; Mega Prime; Wind Sabre; Martis Fund; MSIP; Jane Street; 3W Fund",
+      "page": 371,
+      "quote": "Schroders 142.00 52,520,700 14.58 1.28 12.67 1.27 12.67 1.27 11.02 1.25 GIC 90.00 33,287,700 9.24 0.81",
+      "confidence": "high"
+    }
+  }
+}

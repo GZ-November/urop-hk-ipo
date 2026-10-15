@@ -1,0 +1,116 @@
+{
+  "code": "2596.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0,
+      "page": 12,
+      "quote": "Under the International Offering, certain Offer Shares were placed to connected clients of certain distributors pursuant to the Placing Guidelines.",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 0.21,
+      "page": 4,
+      "quote": "No. of valid applications 2,352 No. of successful applications 2,352 Subscription level 0.21 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 2352,
+      "page": 4,
+      "quote": "No. of valid applications 2,352",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 14538000,
+      "page": 11,
+      "quote": "Subject to the satisfaction of the conditions set out in the Prospectus, 2,352 valid applications made by the public will be conditionally allocated on the basis set out below:",
+      "confidence": "high"
+    },
+    "col_CP": {
+      "value": "Subscription level 0.21 times",
+      "page": 4,
+      "quote": "Subscription level 0.21 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "09/01/25",
+      "page": 2,
+      "quote": "The Offer Price is expected to be determined by agreement between the Overall Coordinators (for themselves and on behalf of the Underwriters) and our ",
+      "source": "prospectus",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "10/01/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**10/01/2025 22:28** ← `col_CR` 直接填这个值",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 688400000,
+      "page": 3,
+      "quote": "Number of Offer Shares (assuming the Over-allotment Option is not exercised) 688,400,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 14538000,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering (as adjusted after reallocation) 14,538,000",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 673862000,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering (as adjusted after reallocation and assuming the Over-allotment Option is not exercised) 673,862,000",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告：STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION（07/02/2025 21:34）",
+      "source": "greenshoe_lapse",
+      "confidence": "high",
+      "note": "STABILIZING ACTIONS, END OF STABILIZATION PERIOD AND\nLAPSE OF THE OVER-ALLOTMENT OPTION"
+    },
+    "col_CW": {
+      "value": "Hong Kong Public Offering undersubscribed: 54,302,000 Offer Shares initially under the Hong Kong Public Offering reallocated to the International Offering (claw-forward); final Hong Kong Public Offering adjusted to 14,538,000 Shares",
+      "page": 4,
+      "quote": "No. of Offer Shares reallocated to the International Offering (claw-forward) 54,302,000",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 1709280000,
+      "page": 3,
+      "quote": "Net proceeds HK$1,709.28 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.15,
+      "page": 14,
+      "quote": "at least 15% of the total number of issued Shares will be held by the public, in compliance with Rule 8.08(1)(a) of the Listing Rules;",
+      "confidence": "medium"
+    },
+    "col_CZ": {
+      "value": 4588400000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (assuming the Over-allotment Option is not exercised) 4,588,400,000",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.15,
+      "page": 3,
+      "quote": "Number of Offer Shares (assuming the Over-allotment Option is not exercised) 688,400,000",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Number of issued Shares upon Listing (assuming the Over-allotment Option is not exercised), i.e. total issued share capital of 4,588,400,000 Shares comprising H Shares and Domestic Unlisted Shares",
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (assuming the Over-allotment Option is not exercised) 4,588,400,000",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 4588400000,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing (assuming the Over-allotment Option is not exercised) 4,588,400,000",
+      "confidence": "high"
+    }
+  }
+}

@@ -1,0 +1,1786 @@
+{
+  "timestamp": "2026-10-15 11:17:35",
+  "workbook": "cohorts/HKIPO-MB2025Q1.xlsx",
+  "sheet": "NLR",
+  "audited_companies_count": 15,
+  "stats": {
+    "prospectus": {
+      "target": "prospectus",
+      "fields_count": 70,
+      "companies_audited": 15,
+      "total_cells_audited": 1050,
+      "matches": 1050,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 61,
+      "matches_with_value": 989,
+      "json_files_absent": 0,
+      "both_missing_by_column": {
+        "BK": 5,
+        "CS": 3,
+        "CX": 4,
+        "BJ": 5,
+        "BM": 7,
+        "BN": 7,
+        "BG": 1,
+        "BS": 7,
+        "AI": 2,
+        "AJ": 2,
+        "AK": 2,
+        "BB": 2,
+        "CT": 2,
+        "BI": 2,
+        "AZ": 3,
+        "BA": 3,
+        "BP": 1,
+        "BQ": 1,
+        "BR": 1,
+        "CV": 1
+      },
+      "by_column": {}
+    }
+  },
+  "discrepancies": [],
+  "external_columns": [
+    {
+      "col": "V",
+      "header": "Filing price revision (%)",
+      "tool_source": "src/academic_derivations.py (Pricing revision)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "W",
+      "header": "Filing range width (%)",
+      "tool_source": "src/academic_derivations.py (Filing range width)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "X",
+      "header": "Pricing position in filing range",
+      "tool_source": "src/academic_derivations.py (Pricing position in range)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "Fixed price"
+    },
+    {
+      "col": "BC",
+      "header": "Comments (nearest sales& profit adjustment factor - original data duration in year, eg. 6 month pls input 0.5)",
+      "tool_source": "Manual / Prospectus disclosure notes (Annualization factor)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.5
+    },
+    {
+      "col": "BU",
+      "header": "Listing board",
+      "tool_source": "tools/external/flags.py (Listing board)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "Main Board"
+    },
+    {
+      "col": "BW",
+      "header": "A+H issuer flag",
+      "tool_source": "tools/external/flags.py (A+H flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BX",
+      "header": "WVR flag",
+      "tool_source": "tools/external/flags.py (WVR flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "BY",
+      "header": "Chapter 18A flag",
+      "tool_source": "tools/external/flags.py (Chapter 18A flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1
+    },
+    {
+      "col": "BZ",
+      "header": "Chapter 18C flag",
+      "tool_source": "tools/external/flags.py (Chapter 18C flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "CA",
+      "header": "Industry classification code",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification code)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "282020"
+    },
+    {
+      "col": "CB",
+      "header": "Industry classification system and version",
+      "tool_source": "tools/external/hsic_codes.py (Industry classification system)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "HSICS (Hang Seng Industry Classification System) 2026"
+    },
+    {
+      "col": "CD",
+      "header": "Firm age at IPO (years)",
+      "tool_source": "src/academic_derivations.py (Firm age at IPO)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.71
+    },
+    {
+      "col": "CE",
+      "header": "Place of incorporation",
+      "tool_source": "tools/external/flags.py (Place of incorporation)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "Cayman Islands"
+    },
+    {
+      "col": "CG",
+      "header": "Financial statement unit multiplier",
+      "tool_source": "Manual / Disclosure notes (Financial statement unit multiplier)",
+      "filled_count": 9,
+      "total_count": 15,
+      "fill_rate": "60.0%",
+      "sample_value": 1000
+    },
+    {
+      "col": "CI",
+      "header": "Year-3 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 start)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2022-01-01"
+    },
+    {
+      "col": "CJ",
+      "header": "Year-3 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-3 end)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2022-12-31"
+    },
+    {
+      "col": "CK",
+      "header": "Year-2 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 start)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-01-01"
+    },
+    {
+      "col": "CL",
+      "header": "Year-2 financial period end",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-2 end)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2023-12-31"
+    },
+    {
+      "col": "CM",
+      "header": "Year-1 financial period start",
+      "tool_source": "Manual / Disclosure notes (Financial period: Year-1 start)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2024-01-01"
+    },
+    {
+      "col": "CN",
+      "header": "Year-1 net sales (original, pre-annualization)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 net sales original)",
+      "filled_count": 13,
+      "total_count": 15,
+      "fill_rate": "86.7%",
+      "sample_value": 51887000
+    },
+    {
+      "col": "CO",
+      "header": "Year-1 profit before tax (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit before tax original)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": -114389000
+    },
+    {
+      "col": "CP",
+      "header": "Year-1 profit for period (original)",
+      "tool_source": "Manual / Disclosure notes (Financial: Year-1 profit for period original)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": -114389000
+    },
+    {
+      "col": "CZ",
+      "header": "Earliest cornerstone unlock date (dd/mm/yy)",
+      "tool_source": "tools/external/flags.py / src/cornerstone.py (Earliest cornerstone unlock date)",
+      "filled_count": 11,
+      "total_count": 15,
+      "fill_rate": "73.3%",
+      "sample_value": "2025-07-08"
+    },
+    {
+      "col": "DK",
+      "header": "Greenshoe exercise rate (%)",
+      "tool_source": "src/academic_derivations.py (Greenshoe exercise rate)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "DS",
+      "header": "HSI return over 20 trading days before prospectus (%)",
+      "tool_source": "tools/external/market.py (HSI 20-day return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.0248598
+    },
+    {
+      "col": "DT",
+      "header": "HK ordinary IPO count in 90 calendar days before prospectus",
+      "tool_source": "tools/external/ipo_count.py (90-day HK ordinary IPO count)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 22
+    },
+    {
+      "col": "DU",
+      "header": "1-month HIBOR before prospectus (%)",
+      "tool_source": "tools/external/hkma_import.py (1-month HIBOR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.0458435
+    },
+    {
+      "col": "DV",
+      "header": "Banking system aggregate balance before prospectus (HK$)",
+      "tool_source": "tools/external/hkma_import.py (Aggregate Balance)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 45746000000
+    },
+    {
+      "col": "DW",
+      "header": "First trading day closing price (HK$)",
+      "tool_source": "tools/external/market.py (First day close)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 3.33
+    },
+    {
+      "col": "DX",
+      "header": "First-day return / Underpricing (%)",
+      "tool_source": "src/academic_derivations.py (First-day return / Underpricing)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.034161
+    },
+    {
+      "col": "DY",
+      "header": "Money left on the table (HK$)",
+      "tool_source": "src/academic_derivations.py (Money left on the table)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 19922320
+    },
+    {
+      "col": "DZ",
+      "header": "First trading day opening price (HK$)",
+      "tool_source": "tools/external/market.py (First day open)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 3.22
+    },
+    {
+      "col": "EA",
+      "header": "First trading day high (HK$)",
+      "tool_source": "tools/external/market.py (First day high)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 3.49
+    },
+    {
+      "col": "EB",
+      "header": "First trading day low (HK$)",
+      "tool_source": "tools/external/market.py (First day low)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 3.13
+    },
+    {
+      "col": "EC",
+      "header": "First trading day volume (shares)",
+      "tool_source": "tools/external/market.py (First day volume)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 18896100
+    },
+    {
+      "col": "ED",
+      "header": "First-day flipping ratio (%)",
+      "tool_source": "src/academic_derivations.py (First-day flipping ratio)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.104334
+    },
+    {
+      "col": "EE",
+      "header": "First trading day turnover (HK$)",
+      "tool_source": "tools/external/market.py (First day turnover)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 61637900
+    },
+    {
+      "col": "EF",
+      "header": "Offer mechanism",
+      "tool_source": "tools/external/rules.py (Offer mechanism)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "PN18 statutory clawback"
+    },
+    {
+      "col": "EG",
+      "header": "Applicable IPO rules / transition basis",
+      "tool_source": "tools/external/rules.py (Applicable IPO rules)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "FINI (from 22/11/2023)"
+    },
+    {
+      "col": "EI",
+      "header": "Current listing status",
+      "tool_source": "tools/external/aftermarket.py (Current listing status)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "Active"
+    },
+    {
+      "col": "EJ",
+      "header": "1-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month close price)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 5.63
+    },
+    {
+      "col": "EK",
+      "header": "1-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month BHR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.690691
+    },
+    {
+      "col": "EL",
+      "header": "1-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month total return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.748447
+    },
+    {
+      "col": "EM",
+      "header": "1-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSI return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.096147
+    },
+    {
+      "col": "EN",
+      "header": "1-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (1-month HSTECH return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.195698
+    },
+    {
+      "col": "EO",
+      "header": "1-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSI)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.5424
+    },
+    {
+      "col": "EP",
+      "header": "1-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (1-month WR vs HSTECH)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.414
+    },
+    {
+      "col": "EQ",
+      "header": "1-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (1-month average daily turnover)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 11750145
+    },
+    {
+      "col": "ER",
+      "header": "6-month post-IPO close price (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month close price)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 5.71
+    },
+    {
+      "col": "ES",
+      "header": "6-month BHR from Day-1 close (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month BHR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.714715
+    },
+    {
+      "col": "ET",
+      "header": "6-month total return from offer price (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month total return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.773292
+    },
+    {
+      "col": "EU",
+      "header": "6-month HSI return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSI return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.252504
+    },
+    {
+      "col": "EV",
+      "header": "6-month HSTECH return (%)",
+      "tool_source": "tools/external/aftermarket.py (6-month HSTECH return)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.236465
+    },
+    {
+      "col": "EW",
+      "header": "6-month wealth relative vs HSI",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSI)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.369
+    },
+    {
+      "col": "EX",
+      "header": "6-month wealth relative vs HSTECH",
+      "tool_source": "tools/external/aftermarket.py (6-month WR vs HSTECH)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.3868
+    },
+    {
+      "col": "EY",
+      "header": "6-month average daily turnover (HK$)",
+      "tool_source": "tools/external/aftermarket.py (6-month average daily turnover)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 5200620
+    },
+    {
+      "col": "EZ",
+      "header": "Liquidity decay ratio (6M vs Day-1 turnover)",
+      "tool_source": "tools/external/aftermarket.py (Liquidity decay ratio)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.084374
+    },
+    {
+      "col": "FA",
+      "header": "1-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 15,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FB",
+      "header": "1-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (1-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 15,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FC",
+      "header": "3-year post-IPO return (%) [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year return [Reserved])",
+      "filled_count": 0,
+      "total_count": 15,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FD",
+      "header": "3-year wealth relative vs HSI [Reserved]",
+      "tool_source": "tools/external/aftermarket.py (3-year WR vs HSI [Reserved])",
+      "filled_count": 0,
+      "total_count": 15,
+      "fill_rate": "0.0%",
+      "sample_value": null
+    },
+    {
+      "col": "FE",
+      "header": "18A/18C regulatory milestone status",
+      "tool_source": "tools/external/aftermarket.py (18A/18C regulatory status)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "18A (Biotech / B-tag)"
+    },
+    {
+      "col": "FF",
+      "header": "Stabilizing manager",
+      "tool_source": "src/write_back_expansion.py (Stabilizing manager)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "China International Capital Corporation / Sponsor-OC"
+    },
+    {
+      "col": "FG",
+      "header": "Stabilization period end date",
+      "tool_source": "src/write_back_expansion.py (Stabilization period end date)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2025-02-07"
+    },
+    {
+      "col": "FH",
+      "header": "Stabilization purchases occurred",
+      "tool_source": "src/write_back_expansion.py (Stabilization purchases occurred)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "FI",
+      "header": "Over-allocation shares",
+      "tool_source": "src/write_back_expansion.py (Over-allocation shares)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "FJ",
+      "header": "Over-allocation (% of base offer)",
+      "tool_source": "src/write_back_expansion.py (Over-allocation pct)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.15
+    },
+    {
+      "col": "FK",
+      "header": "Over-allotment option exercise date",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise date)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2025-02-07"
+    },
+    {
+      "col": "FL",
+      "header": "Shares issued under over-allotment option",
+      "tool_source": "src/write_back_expansion.py (Shares issued under option)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "FM",
+      "header": "Over-allotment exercise percentage (%)",
+      "tool_source": "src/write_back_expansion.py (Over-allotment exercise percentage)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "FN",
+      "header": "Post-stabilization cliff return [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cliff return m5 p5)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.336364
+    },
+    {
+      "col": "FO",
+      "header": "Post-stabilization 20-day return [0, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization return p20)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.049734
+    },
+    {
+      "col": "FP",
+      "header": "Post-stabilization volume decay ratio (%)",
+      "tool_source": "src/write_back_expansion.py (Post-stabilization volume decay)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.458637
+    },
+    {
+      "col": "FQ",
+      "header": "Day-5 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-5 BHR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.078078
+    },
+    {
+      "col": "FR",
+      "header": "Day-5 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-5 WR vs HSI)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.0814
+    },
+    {
+      "col": "FS",
+      "header": "Day-20 BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (Day-20 BHR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.690691
+    },
+    {
+      "col": "FT",
+      "header": "Day-20 wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (Day-20 WR vs HSI)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.5424
+    },
+    {
+      "col": "FU",
+      "header": "3-month BHR from Day-1 close (%)",
+      "tool_source": "src/write_back_expansion.py (3-month BHR)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.867868
+    },
+    {
+      "col": "FV",
+      "header": "3-month wealth relative vs HSI",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSI)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.7413
+    },
+    {
+      "col": "FW",
+      "header": "3-month wealth relative vs HSTECH",
+      "tool_source": "src/write_back_expansion.py (3-month WR vs HSTECH)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 1.6714
+    },
+    {
+      "col": "FX",
+      "header": "3-month average daily turnover (HK$)",
+      "tool_source": "src/write_back_expansion.py (3-month avg daily turnover)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 8572966.67
+    },
+    {
+      "col": "FY",
+      "header": "Amihud illiquidity (6M mean)",
+      "tool_source": "src/write_back_expansion.py (Amihud illiquidity 6M mean)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.004369428571428572
+    },
+    {
+      "col": "FZ",
+      "header": "Zero-volume days count (first 6M)",
+      "tool_source": "src/write_back_expansion.py (Zero-volume days count 6M)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "GA",
+      "header": "Return volatility (first 6M daily std dev, %)",
+      "tool_source": "src/write_back_expansion.py (Return volatility 6M)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.04788001531553043
+    },
+    {
+      "col": "GB",
+      "header": "Maximum drawdown (first 6M, %)",
+      "tool_source": "src/write_back_expansion.py (Maximum drawdown 6M)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.285531
+    },
+    {
+      "col": "GC",
+      "header": "Controlling shareholder 6-month disposal lockup expiry date",
+      "tool_source": "src/write_back_expansion.py (Controlling shareholder 6M disposal expiry)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2025-07-08"
+    },
+    {
+      "col": "GD",
+      "header": "Controlling shareholder 12-month cessation of control expiry date",
+      "tool_source": "src/write_back_expansion.py (Controlling shareholder 12M control expiry)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "2026-01-08"
+    },
+    {
+      "col": "GE",
+      "header": "Cornerstone unlock CAR [-5, +5] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m5 p5)",
+      "filled_count": 11,
+      "total_count": 15,
+      "fill_rate": "73.3%",
+      "sample_value": -0.162206
+    },
+    {
+      "col": "GF",
+      "header": "Cornerstone unlock CAR [-20, +20] (%)",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock CAR m20 p20)",
+      "filled_count": 11,
+      "total_count": 15,
+      "fill_rate": "73.3%",
+      "sample_value": -0.290976
+    },
+    {
+      "col": "GG",
+      "header": "Cornerstone unlock volume shock ratio",
+      "tool_source": "src/write_back_expansion.py (Cornerstone unlock volume shock ratio)",
+      "filled_count": 11,
+      "total_count": 15,
+      "fill_rate": "73.3%",
+      "sample_value": 0.6264
+    },
+    {
+      "col": "GH",
+      "header": "Lead sponsor name",
+      "tool_source": "src/write_back_expansion.py (Lead sponsor name)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "CICC"
+    },
+    {
+      "col": "GI",
+      "header": "Joint sponsor count",
+      "tool_source": "src/write_back_expansion.py (Joint sponsor count)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 2
+    },
+    {
+      "col": "GJ",
+      "header": "Sponsor commercial bank affiliate flag",
+      "tool_source": "src/write_back_expansion.py (Sponsor bank affiliate flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "GK",
+      "header": "Underwriting base commission rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting base commission rate)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.025
+    },
+    {
+      "col": "GL",
+      "header": "Underwriting discretionary incentive fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Underwriting incentive fee rate)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.01
+    },
+    {
+      "col": "GM",
+      "header": "Total underwriting fee rate (%)",
+      "tool_source": "src/write_back_expansion.py (Total underwriting fee rate)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0.035
+    },
+    {
+      "col": "GN",
+      "header": "Cornerstone investor count",
+      "tool_source": "src/write_back_expansion.py (Cornerstone investor count)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 4
+    },
+    {
+      "col": "GO",
+      "header": "Cornerstone state-owned presence flag",
+      "tool_source": "src/write_back_expansion.py (Cornerstone state-owned flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "GP",
+      "header": "Crossover fund presence flag",
+      "tool_source": "src/write_back_expansion.py (Crossover fund flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "GQ",
+      "header": "Pre-IPO institutional investor count",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO investor count)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 6
+    },
+    {
+      "col": "GR",
+      "header": "Pre-IPO state-owned backing flag",
+      "tool_source": "src/write_back_expansion.py (Pre-IPO state-owned flag)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": 0
+    },
+    {
+      "col": "GS",
+      "header": "FINI digital settlement regime",
+      "tool_source": "src/write_back_expansion.py (FINI digital settlement regime)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "POST_FINI"
+    },
+    {
+      "col": "GT",
+      "header": "2025 pricing reform regime",
+      "tool_source": "src/write_back_expansion.py (2025 pricing reform regime)",
+      "filled_count": 15,
+      "total_count": 15,
+      "fill_rate": "100.0%",
+      "sample_value": "PRE_2025_REFORM"
+    }
+  ],
+  "company_states": {
+    "0325.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "649869df0f4777d239a7bf65a8f725fce8cea9a8808985fa29c6979f58a2418e",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "649869df0f4777d239a7bf65a8f725fce8cea9a8808985fa29c6979f58a2418e",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "649869df0f4777d239a7bf65a8f725fce8cea9a8808985fa29c6979f58a2418e",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "649869df0f4777d239a7bf65a8f725fce8cea9a8808985fa29c6979f58a2418e",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "36aa23b3d7d0fe8ace093acb49f54041a80a93fb54aca723db1ccffce823122c",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "6e283b2c8a52458423d26c7fbbba413dec186324d8922ffbd3387c95e1e57c21",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "0805.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "50e631ca65e12ab3cd75b222204ba40b9c67fc544a9ead9950e99aacdcc4864d",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "86c1b794fd5855fc76ace3a2fc837e6caef0ffdf831c2f3bede3cb2ac94486c0",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "1364.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "50bfa27016a144592030c29d316be9f8895e56c472e121a0c7979bc0ced3858f",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "50bfa27016a144592030c29d316be9f8895e56c472e121a0c7979bc0ced3858f",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "50bfa27016a144592030c29d316be9f8895e56c472e121a0c7979bc0ced3858f",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "50bfa27016a144592030c29d316be9f8895e56c472e121a0c7979bc0ced3858f",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "19dfcb88eee3e6983e94beadf8aece50b93b7f28063d6774746a8fe610380722",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "f45fcdb13160d049ebfb7ced28418769de925d5a8556b2b51bfadf77693ed80f",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2097.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "70d8aa374ed64b94e978a0efe626754de7c68e57664a758f7fc57970aca4d73c",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "70d8aa374ed64b94e978a0efe626754de7c68e57664a758f7fc57970aca4d73c",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "70d8aa374ed64b94e978a0efe626754de7c68e57664a758f7fc57970aca4d73c",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "70d8aa374ed64b94e978a0efe626754de7c68e57664a758f7fc57970aca4d73c",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a16718f78bd74468d6ecaf16466b599504b25d6575ac0e7c2c7750a1d5f2c481",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5f276a1cbc2fcb49d552877ea36e78c0b092affc8844dadb27b7304210476562",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2530.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "c714566404d69e98c922658fecdcf92760f5a504227d21757f0ee009c7251cb8",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "588e9ede561b0a66f0adf52860c3718d20a3a3d4d76bd0239f1ba69c2a1d5a7d",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2560.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "474cb6dcae25b3b994a0bd1edfaa2873d3065dc60a282e80b27d81a899ac8e24",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "474cb6dcae25b3b994a0bd1edfaa2873d3065dc60a282e80b27d81a899ac8e24",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "474cb6dcae25b3b994a0bd1edfaa2873d3065dc60a282e80b27d81a899ac8e24",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "474cb6dcae25b3b994a0bd1edfaa2873d3065dc60a282e80b27d81a899ac8e24",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8e0bf96465690715fb0f3f087288825fdaf9091d2d1fc0f677dd167e26cafbe9",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "1f47d7d852da36f1074ab75d501b6e8e27373830bf611a7e65de0d02173a4b69",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2561.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "07bd3fc8174fd06af5ca05186e0592e00c8bfdc24a636bace7ab45b7188799db",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "07bd3fc8174fd06af5ca05186e0592e00c8bfdc24a636bace7ab45b7188799db",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "07bd3fc8174fd06af5ca05186e0592e00c8bfdc24a636bace7ab45b7188799db",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "07bd3fc8174fd06af5ca05186e0592e00c8bfdc24a636bace7ab45b7188799db",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "d6f2535f9e93eda0603739c6540953b8eba8c561c5e1e31f6cfaea3e7c163960",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "dcd1f9a68c96a13f2e2a02530e52c504ce28e2144df0b2a0b2fc255298840d6c",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2569.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a8453f14694d931fb3795deb3979285fc4efd35a258c31d5ba9608b57ffcdbfb",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8581e30c844a1a5c8f24d1619eeb2251fe81f2cb94277d42561278a65adfde4a",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2571.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "e1ba36dcab301ec28b3c473e0aa6812a6c4552e98065cc03febff66ae26c0e09",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "e1ba36dcab301ec28b3c473e0aa6812a6c4552e98065cc03febff66ae26c0e09",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "e1ba36dcab301ec28b3c473e0aa6812a6c4552e98065cc03febff66ae26c0e09",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "e1ba36dcab301ec28b3c473e0aa6812a6c4552e98065cc03febff66ae26c0e09",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "47761fa28c2ecc2e78dec1ee8d95a2bf3f24da99c6411f1d8fcbac7bbe789aff",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7d394b9235279dbaacc165c27334c2677162295b78e5c3d378c74d1f7d1e805f",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2596.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "61397c63384b14c3856071b004a09d3554170ded9cec297c92f6ac359edb0cc2",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "61397c63384b14c3856071b004a09d3554170ded9cec297c92f6ac359edb0cc2",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "61397c63384b14c3856071b004a09d3554170ded9cec297c92f6ac359edb0cc2",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "61397c63384b14c3856071b004a09d3554170ded9cec297c92f6ac359edb0cc2",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "1d5b12a1f322219bb31e1bfa80c2dd7a4bc359e39d0f51c986d65c54fee46ead",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "1eb8b6a8aef2e338c057a0928e538fb5872614a61bc9dcc3221cf5ad48d8fe47",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2610.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8c79000bb77c368ddd94b17af669c5fa34e807054035728647c14deb1d7946f2",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8c79000bb77c368ddd94b17af669c5fa34e807054035728647c14deb1d7946f2",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8c79000bb77c368ddd94b17af669c5fa34e807054035728647c14deb1d7946f2",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8c79000bb77c368ddd94b17af669c5fa34e807054035728647c14deb1d7946f2",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "7f8bc963a19b34af83c3f79b78998d354aa98f85a59ab7cb5718aa91a5f8ea51",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a42f5fda5e867dad459200ab8bd8d4b7a7b02a55e406908b0d7e277c810b2769",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2613.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "bc5d488f0d2f5d31d70989a72b979ef117f688406051e5fd4bd9c4e4f2d99196",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "c6e2c6ecbd7e4cb2ab4f0bdaf15c8eddb1fe2020d9f6cb1d062083b2b7e90531",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "2625.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a758a716005fbb2efbcb5e05333a6f5450410a00f9f427b018282db106c427a5",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a758a716005fbb2efbcb5e05333a6f5450410a00f9f427b018282db106c427a5",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a758a716005fbb2efbcb5e05333a6f5450410a00f9f427b018282db106c427a5",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a758a716005fbb2efbcb5e05333a6f5450410a00f9f427b018282db106c427a5",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8f6406ece77cd97c4a598840391e68b2767747d0ceba17f77578b6a51cc859ba",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5832bd0ef913a7c95651b97d6bab79322deb0437742811425feb8b8773824b2e",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6681.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "638faa43c81a19aaa8841192fd3963679db9811a26822ac456acd2f6216034bc",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "638faa43c81a19aaa8841192fd3963679db9811a26822ac456acd2f6216034bc",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "638faa43c81a19aaa8841192fd3963679db9811a26822ac456acd2f6216034bc",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "638faa43c81a19aaa8841192fd3963679db9811a26822ac456acd2f6216034bc",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "8c4d6539f98e0327821834ae8d166e1e87f2ca13926c52d6cf902577ec5f4330",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "236cd68c5c2576a61c1e3cd9a42aeeed8f84a66ccd93cf6766c85424a7651d47",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    },
+    "6693.HK": {
+      "prospectus": {
+        "extracted": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "verdict": null
+        }
+      },
+      "allot": {
+        "extracted": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        },
+        "validated": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "2f618d2f385a16d4a9a17c96c3e5f9217b0d42a735aeab5e2e2e34b769c56144",
+          "verdict": null
+        },
+        "reviewed": {
+          "exists": true,
+          "gate_pass": true,
+          "hash": "c3e6c784a95d5e5de08d41abcd0bd6f83e21771116a9bbb0fc7cbee823a795a6",
+          "verdict": "pass"
+        },
+        "written": {
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
+        }
+      }
+    }
+  }
+}

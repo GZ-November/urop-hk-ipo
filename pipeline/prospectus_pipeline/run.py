@@ -244,9 +244,12 @@ def cmd_search(cfg, args, companies):
 
 def cmd_state(cfg, args, companies):
     import subprocess
+    env = os.environ.copy()
+    if cfg.get("_config_path"):
+        env["PIPELINE_CONFIG"] = str(cfg["_config_path"])
     cmd = [sys.executable, str(ROOT / "tools" / "state.py"), *args.extra,
            "--target", args.target]
-    return subprocess.call(cmd, cwd=WS)
+    return subprocess.call(cmd, cwd=WS, env=env)
 
 
 def cmd_registry(cfg, args, companies):

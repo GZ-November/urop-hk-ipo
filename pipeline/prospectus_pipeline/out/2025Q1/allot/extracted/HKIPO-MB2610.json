@@ -1,0 +1,115 @@
+{
+  "code": "2610.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.3982,
+      "page": 6,
+      "quote": "Total\n35,136,300\n39.82%\n5.97%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 3.89,
+      "page": 5,
+      "quote": "Subscription level\n3.89 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 12791,
+      "page": 5,
+      "quote": "No. of valid applications\n12,791\nNo. of successful applications\n12,791",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 34327300,
+      "page": 11,
+      "quote": "BASIS OF ALLOCATION UNDER THE HONG KONG PUBLIC OFFERING",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 3.89 times (Hong Kong Public Offering); International Placing Subscription Level 1.67 times; Claw-back triggered: No",
+      "page": 5,
+      "quote": "No. of valid applications\n12,791\nNo. of successful applications\n12,791\nSubscription level\n3.89 times\nClaw-back triggered\nNo",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "24/03/2025",
+      "page": 16,
+      "quote": "Hong Kong, 24 March 2025",
+      "confidence": "medium"
+    },
+    "col_CR": {
+      "value": "24/03/2025",
+      "page": 1,
+      "quote": "刊发时间（港交所元数据）：**24/03/2025 21:27**",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 88235300,
+      "page": 3,
+      "quote": "Number of Offer Shares\n88,235,300\nNumber of Offer Shares in Hong Kong Public Offering\n8,823,600\nNumber of Offer Shares in International Placing\n79,411,700",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 8823600,
+      "page": 5,
+      "quote": "Final no. of Offer Shares under the Hong Kong Public Offering (after over-allocation)\n8,823,600",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 79411700,
+      "page": 5,
+      "quote": "No. of Offer Shares initially available under the International Placing\n79,411,700",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 1199900,
+      "page": 2,
+      "quote": "the Prospectus has been partially exercised by the Sole Overall Coordinator, on behalf of the International Underwriters, on Saturday, 19 April 2025 in respect of an aggregate of 1,199,900 Shares, rep",
+      "source": "greenshoe",
+      "confidence": "high",
+      "note": "PARTIAL EXERCISE OF THE OVER-ALLOTMENT OPTION,\nSTABILISING ACTIONS AND END OF STABILISATION PERIOD (22/04/2025 21:50)"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered: No; no reallocation between the Hong Kong Public Offering and the International Placing. Over-allocation of 13,235,200 shares may be covered by exercising the Over-allotment Option, secondary market purchases or deferred delivery",
+      "page": 5,
+      "quote": "Claw-back triggered\nNo",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 2220800000,
+      "page": 4,
+      "quote": "Net proceeds\nHK$2,220.8 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.15,
+      "page": 15,
+      "quote": "the number of Shares held in public hands represents approximately 15% of the total issued share capital of the Company",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 588235300,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n588,235,300\n*without taking into account any exercise of the Over-allotment Option",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0903,
+      "page": 8,
+      "quote": "In accordance with the relevant cornerstone investment agreements, the required lock-up ends on 24 September 2025",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "Denominator: total issued Shares upon Listing 588,235,300 (before exercise of the Over-allotment Option); free float excludes 35,136,300 Cornerstone Investor shares subject to six-month lock-up (all 500,000,000 pre-IPO shares held by existing Shareholders are also locked up)",
+      "page": 15,
+      "quote": "the number of Shares held in public hands represents approximately 15% of the total issued share capital of the Company",
+      "confidence": "medium"
+    },
+    "col_DC": {
+      "value": 588235300,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing\n588,235,300\n*without taking into account any exercise of the Over-allotment Option",
+      "confidence": "high"
+    }
+  }
+}

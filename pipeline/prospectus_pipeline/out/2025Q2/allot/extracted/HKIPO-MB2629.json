@@ -1,0 +1,115 @@
+{
+  "code": "2629.HK",
+  "fields": {
+    "col_CK": {
+      "value": 0.4137,
+      "page": 5,
+      "quote": "Total 19,286,400 41.37% 6.98%",
+      "confidence": "high"
+    },
+    "col_CM": {
+      "value": 25.51,
+      "page": 4,
+      "quote": "Subscription level 25.51 times",
+      "confidence": "high"
+    },
+    "col_CN": {
+      "value": 21541,
+      "page": 4,
+      "quote": "No. of valid applications 21,541",
+      "confidence": "high"
+    },
+    "col_CO": {
+      "value": 118932600,
+      "page": 12,
+      "quote": "NO. OF SHARES APPLIED FOR NO. OF VALID APPLICATIONS BASIS OF ALLOTMENT/BALLOT POOL A",
+      "confidence": "medium"
+    },
+    "col_CP": {
+      "value": "Subscription level 25.51 times",
+      "page": 4,
+      "quote": "Subscription level 25.51 times",
+      "confidence": "high"
+    },
+    "col_CQ": {
+      "value": "NA",
+      "page": 2,
+      "quote": "Offer Price is fixed at HK$23.30; no bookbuilding price determination date",
+      "source": "allotment",
+      "confidence": "high"
+    },
+    "col_CR": {
+      "value": "22/05/2025",
+      "page": 1,
+      "quote": "22/05/2025 21:40",
+      "confidence": "high"
+    },
+    "col_CS": {
+      "value": 46620000,
+      "page": 3,
+      "quote": "Number of Offer Shares 46,620,000",
+      "confidence": "high"
+    },
+    "col_CT": {
+      "value": 5873700,
+      "page": 3,
+      "quote": "Number of Offer Shares in Hong Kong Public Offering (after reallocation) 5,873,700",
+      "confidence": "high"
+    },
+    "col_CU": {
+      "value": 40746300,
+      "page": 3,
+      "quote": "Number of Offer Shares in International Offering (after reallocation) 40,746,300",
+      "confidence": "high"
+    },
+    "col_CV": {
+      "value": 0,
+      "page": null,
+      "quote": "港交所公告检索：2025-05-23 起 45 天内共 7 条公告，无任何 OVER-ALLOTMENT 行使公告，绿鞋窗口已于 2025-07-07 期满未行使",
+      "source": "greenshoe_search",
+      "confidence": "high"
+    },
+    "col_CW": {
+      "value": "Claw-back triggered No；国际配售认购不足、公开发售超额认购，按招股书回拨机制重新分配，公开发售最终 5,873,700 股（占全球发售 12.6%）",
+      "page": 14,
+      "quote": "As a result of such reallocation, the final number of Offer Shares under the Hong Kong Public Offering is adjusted to 5,873,700 Shares, representing 12.6% of the total number of Offer Shares",
+      "confidence": "high"
+    },
+    "col_CX": {
+      "value": 880500000,
+      "page": 3,
+      "quote": "Net proceeds HK$880.5 million",
+      "confidence": "high"
+    },
+    "col_CY": {
+      "value": 0.4694,
+      "page": 16,
+      "quote": "129,710,760 Shares held or controlled by our Shareholders who are not our core connected persons, representing approximately 46.94% of our total issued Shares, will be held in the public hands",
+      "confidence": "high"
+    },
+    "col_CZ": {
+      "value": 276342331,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 276,342,331",
+      "confidence": "high"
+    },
+    "col_DA": {
+      "value": 0.0989,
+      "page": 5,
+      "quote": "Total 19,286,400 41.37% 6.98%",
+      "confidence": "medium"
+    },
+    "col_DB": {
+      "value": "分母为上市时已发行股份总数 276,342,331 股（Number of issued Shares upon Listing），含受禁售限制股份。",
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 276,342,331",
+      "confidence": "high"
+    },
+    "col_DC": {
+      "value": 276342331,
+      "page": 3,
+      "quote": "Number of issued Shares upon Listing 276,342,331",
+      "confidence": "high"
+    }
+  }
+}
