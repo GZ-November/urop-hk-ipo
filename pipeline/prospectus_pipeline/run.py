@@ -142,12 +142,19 @@ def cmd_validate(cfg, args, companies):
 
 
 def cmd_derive_allot(cfg, args, companies):
-    """Explicit mutating stage for deterministic allotment fields."""
+    """Explicit mutating stage for deterministic allotment fields.
+
+    ``apply_cv`` reads the greenshoe search index, so a cohort that has not run the
+    ``greenshoe`` stage yet gets that search first (it queries HKEXnews).
+    """
     from greenshoe import apply_cv
     from cornerstone import apply_ck
     from pricing_date import apply_cq
     from validate import apply_da
     codes = [c["code"] for c in companies]
+    if not (cfg["paths"]["allot_out"] / "greenshoe.json").exists():
+        print("greenshoe.json not found: running the greenshoe search first")
+        cmd_greenshoe(cfg, args, companies)
     apply_cv(cfg, only=codes)
     apply_ck(cfg, only=codes)
     apply_cq(cfg, only=codes)
