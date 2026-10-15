@@ -9,8 +9,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def get_head_wb(path):
-    proc = subprocess.run(["git", "show", f"origin/main:{path}"], capture_output=True, check=True, cwd=ROOT)
+def get_base_wb(path):
+    proc = subprocess.run(["git", "show", f"b2d2fb6~1:{path}"], capture_output=True, check=True, cwd=ROOT)
     return openpyxl.load_workbook(io.BytesIO(proc.stdout), data_only=True)
 
 
@@ -28,7 +28,7 @@ def fmt(v):
 
 def generate_q1():
     path = "pipeline/cohorts/HKIPO-MB2025Q1.xlsx"
-    wb_b = get_head_wb(path)
+    wb_b = get_base_wb(path)
     wb_a = openpyxl.load_workbook(ROOT / path, data_only=True)
     ws_b = wb_b["NLR"]
     ws_a = wb_a["NLR"]
@@ -100,7 +100,7 @@ def generate_q1():
 
 def generate_q2():
     path = "pipeline/cohorts/HKIPO-MB2025Q2.xlsx"
-    wb_b = get_head_wb(path)
+    wb_b = get_base_wb(path)
     wb_a = openpyxl.load_workbook(ROOT / path, data_only=True)
     ws_b = wb_b["NLR"]
     ws_a = wb_a["NLR"]
