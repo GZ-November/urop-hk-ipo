@@ -377,6 +377,29 @@ def check_allot(rec: dict, ctx: dict) -> list[dict]:
     return issues
 
 
+def _prospectus_initial_offer(cfg: dict) -> dict[str, float]:
+    """Initial offer size (col_M) from each prospectus extraction payload.
+
+    The allot context must not depend on whether the prospectus has been written back
+    yet: the workbook's col_M is blank before that write and filled after it, which
+    changed every allot credential hash mid-collection and blocked the allot write-back.
+    """
+    from extraction_targets import target_paths
+    ext_dir = target_paths(cfg, "prospectus")[1] / "extracted"
+    values: dict[str, float] = {}
+    if not ext_dir.exists():
+        return values
+    for code, fp in official_files(ext_dir).items():
+        try:
+            entry = strict_load_file(fp).get("fields", {}).get("col_M")
+        except (OSError, ValueError, AttributeError):
+            continue
+        value = entry.get("value") if isinstance(entry, dict) else None
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            values[code] = value
+    return values
+
+
 def _allot_context(cfg: dict) -> dict:
     """给 allot 校验准备上下文：初始发售规模、发售价、公告日期。"""
     from openpyxl.utils import column_index_from_string
@@ -402,6 +425,8 @@ def _allot_context(cfg: dict) -> dict:
             ctx[key]["initial_offer"] = row[m_i]
         if k_i is not None and k_i < len(row):
             ctx[key]["price"] = row[k_i]
+    for key, value in _prospectus_initial_offer(cfg).items():
+        ctx.setdefault(key, {})["initial_offer"] = value
     idx = cfg["paths"]["out"] / "allotment_index.json"
     if idx.exists():
         for rec in json.loads(idx.read_text()):
