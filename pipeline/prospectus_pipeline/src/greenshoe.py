@@ -117,8 +117,7 @@ def fetch_index(cfg: dict, found: list[dict], only=None, log=print) -> dict:
         log(f"  {code:9s} 扫描 {len(rows):3d} 条 -> "
             f"{'行使' if exercised else ('未行使' if today > to else '窗口未过')}"
             f"（命中 {len(matches)} 条）")
-    out_path.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-                        encoding="utf-8")
+    atomic_json(out_path, result)
     n_ex = sum(1 for v in result.values() if v.get("exercised"))
     log(f"绿鞋检索：{len(result)} 家，行使 {n_ex} 家 -> {out_path}")
     return result
@@ -208,8 +207,7 @@ def fetch_shares(cfg: dict, index: dict, only=None, log=print) -> dict:
             res.update({"doc_title": r["doc_title"], "datetime": r["datetime"],
                         "file": r["file"], "pdf": r["pdf"]})
             out[r["code"]] = res
-    out_path.write_text(json.dumps(out, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-                        encoding="utf-8")
+    atomic_json(out_path, out)
     log(f"行使股数：{sum(1 for v in out.values() if v.get('status') == 'ok')}/{len(out)} -> {out_path}")
     return out
 

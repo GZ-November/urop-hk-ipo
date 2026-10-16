@@ -144,17 +144,22 @@ def cmd_validate(cfg, args, companies):
 def cmd_derive_allot(cfg, args, companies):
     """Explicit mutating stage for deterministic allotment fields.
 
-    ``apply_cv`` reads the greenshoe search index, so a cohort that has not run the
-    ``greenshoe`` stage yet gets that search first (it queries HKEXnews).
+    ``apply_cv`` reads the greenshoe search index, so issuers missing from it get that
+    search first (it queries HKEXnews). Issuers are collected in parallel, so the
+    index can exist while lacking the issuer being derived.
     """
     from greenshoe import apply_cv
     from cornerstone import apply_ck
     from pricing_date import apply_cq
     from validate import apply_da
     codes = [c["code"] for c in companies]
-    if not (cfg["paths"]["allot_out"] / "greenshoe.json").exists():
-        print("greenshoe.json not found: running the greenshoe search first")
-        cmd_greenshoe(cfg, args, companies)
+    index_path = cfg["paths"]["allot_out"] / "greenshoe.json"
+    searched = json.loads(index_path.read_text(encoding="utf-8")) if index_path.exists() else {}
+    unsearched = [c for c in companies if c["code"] not in searched]
+    if unsearched:
+        print("greenshoe search missing for " + ", ".join(c["code"] for c in unsearched)
+              + ": running it first")
+        cmd_greenshoe(cfg, args, unsearched)
     apply_cv(cfg, only=codes)
     apply_ck(cfg, only=codes)
     apply_cq(cfg, only=codes)
@@ -257,6 +262,57 @@ def cmd_state(cfg, args, companies):
     cmd = [sys.executable, str(ROOT / "tools" / "state.py"), *args.extra,
            "--target", args.target]
     return subprocess.call(cmd, cwd=WS, env=env)
+
+
+def cmd_work(cfg, args, companies):
+    """`work next|finish-extract|finish-review|release|status`: see src/work_queue.py."""
+    import work_queue as wq
+    wp = argparse.ArgumentParser(prog="run.py work")
+    sub = wp.add_subparsers(dest="action", required=True)
+    p = sub.add_parser("next", help="claim the next jobs and write their briefs")
+    p.add_argument("--max-extract", type=int)
+    p.add_argument("--max-review", type=int)
+    p.add_argument("--max-total", type=int)
+    p.add_argument("--json", action="store_true")
+    p = sub.add_parser("status", help="phases, limits and active leases; claims nothing")
+    p.add_argument("--json", action="store_true")
+    p = sub.add_parser("finish-extract", help="derive, validate and record extracted for a lease")
+    p.add_argument("--lease", required=True)
+    p = sub.add_parser("finish-review", help="record the review verdicts for a lease")
+    p.add_argument("--lease", required=True)
+    p.add_argument("--verdict", choices=["pass", "fail"], required=True)
+    p.add_argument("--reviewer", required=True)
+    p.add_argument("--note", default="")
+    p.add_argument("--failed-targets", nargs="*", default=None)
+    p = sub.add_parser("release", help="give a job back to the queue")
+    p.add_argument("--lease", required=True)
+    p.add_argument("--reason", default="")
+    w = wp.parse_args(args.extra)
+    if w.action == "next":
+        result = wq.next_jobs(cfg, companies, {"extract": w.max_extract, "review": w.max_review,
+                                               "total": w.max_total})
+        print(json.dumps(result, ensure_ascii=False, indent=2) if w.json else wq.describe(result))
+        return 0
+    if w.action == "status":
+        snap = wq.snapshot(cfg, companies)
+        queue = wq._load(cfg)
+        result = {"phases": {p: sum(1 for x in snap.values() if x["phase"] == p)
+                             for p in ("extract", "review", "done")},
+                  "issuers": snap, "limits": queue["limits"],
+                  "active": [{"lease": k, **v} for k, v in queue["leases"].items()]}
+        if w.json:
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+        else:
+            for code, info in snap.items():
+                print(f"{code:9s} {info['phase']:8s} " + " ".join(f"{t}={s}" for t, s in info["states"].items()))
+            print(wq.describe({**result, "dispatch": [], "done": result["phases"]["done"] == len(snap)}))
+        return 0
+    if w.action == "finish-extract":
+        by_code = {c["code"]: c for c in companies}
+        return wq.finish_extract(cfg, w.lease, lambda code: cmd_derive_allot(cfg, args, [by_code[code]]))
+    if w.action == "finish-review":
+        return wq.finish_review(cfg, w.lease, w.verdict, w.reviewer, w.note, w.failed_targets)
+    return wq.release(cfg, w.lease, w.reason)
 
 
 def cmd_registry(cfg, args, companies):
@@ -706,9 +762,14 @@ STAGES: dict[str, Stage] = {
     "exclusions":       Stage("单 cohort 样本筛选日志", wants_companies=False),
     "merge_topics":     Stage("合并主题分片包"),
     "handoff":          Stage("Generate portable extraction and independent-review work orders"),
+    "work":             Stage("Lease-based scheduler for parallel extraction/review subagents"),
     "collect":          Stage("按上市日期建立并推进 cohort"),
     "all":              Stage("find + download + prepare 三连"),
 }
+
+
+# Read-only stages, plus `work`, which takes the cohort lock itself around its gate calls.
+UNLOCKED_STAGES = {"search", "status", "work"}
 
 
 def stage_fn(stage: str):
@@ -806,6 +867,16 @@ def main() -> int:
     else:
         for name in ("HKIPO_WORKBOOK", "HKIPO_PERIOD_START", "HKIPO_PERIOD_END"):
             os.environ.pop(name, None)
+    import contextlib
+    from cohort_lock import cohort_lock
+    # Parallel agents call gate commands concurrently; every mutating stage runs under
+    # the cohort lock so read-modify-write updates of shared cohort files never interleave.
+    guard = contextlib.nullcontext() if args.stage in UNLOCKED_STAGES else cohort_lock(cfg)
+    with guard:
+        return _dispatch(cfg, args)
+
+
+def _dispatch(cfg, args) -> int:
     if not STAGES[args.stage].wants_companies:
         return stage_fn(args.stage)(cfg, args, None)
     companies = read_companies(cfg)

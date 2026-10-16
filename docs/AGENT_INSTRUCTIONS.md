@@ -229,6 +229,22 @@ instructions for a selected cohort:
 
 When a collection command exits with code `3`, the pipeline has completed official source discovery, created the cohort directory, downloaded disclosure PDFs, prepared text/Markdown extraction packets, and generated machine-readable work orders. It pauses deterministically because unverified data must never be silently written into research workbooks.
 
+#### Recommended: the lease scheduler
+
+`run.py work next --config CONFIG` claims the next jobs and writes one brief per
+job under `out/agent_handoff/briefs/`. Start one new subagent per printed job,
+give it only its brief, and rerun `work next` whenever a subagent returns.
+Extractors finish with `work finish-extract --lease L` (derive_allot, validate and
+`state extracted` for every target, in order). Reviewers read a sheet of every
+populated field with its page excerpt, write one report per target that names the
+payload sha256, and finish with `work finish-review --lease L --verdict pass|fail`.
+The scheduler sets concurrency: 4 extractors, 4 reviewers, 6 total at first;
+reviews first; longest prospectuses first; an expired lease halves that role's
+limit and clean finishes add slots back (ceilings 6/6/8). Mutating `run.py`
+stages take a per-cohort lock, so parallel gate commands queue instead of
+overwriting `validation.json`, `greenshoe.json` or `cornerstone_absence.json`.
+`work status` is read-only. The manual steps below remain valid for one issuer.
+
 #### Step-by-Step Autonomous Action for Agents:
 
 1. **Locate Work Orders**:
