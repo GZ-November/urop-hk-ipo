@@ -61,8 +61,8 @@ extract:
     cornerstone: 80000
     extra_financial: 110000
     chinese_name: 10000
-    ownership: 50000
-    offering: 20000
+    ownership: 60000
+    offering: 60000
 
 validate:
   share_rel_tol: 1.0e-9
