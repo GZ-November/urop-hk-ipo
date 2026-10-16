@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-12 14:44:04"
+    "generated_at": "2026-10-16 20:35:24"
   },
   "variables": [
     {
@@ -1604,10 +1604,10 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 28,
-        "missing_n": 10,
-        "fill_rate_pct": 73.68,
-        "unique_count": 28,
+        "valid_n": 29,
+        "missing_n": 9,
+        "fill_rate_pct": 76.32,
+        "unique_count": 29,
         "top_categories": {
           "Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund": 1,
           "Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund": 1,
@@ -1615,7 +1615,7 @@
           "LYFE Capital; Legend Star; Boyu Capital; Sequoia China; OrbiMed; Temasek": 1,
           "Alisoft China (Alibaba); miHoYo; IDG Capital; Tencent; Future Capital": 1
         },
-        "summary_display": "共 28 种取值 ('Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund': 1, 'Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund': 1, 'Princeville Global; HongShan; Shanghai Lianhe Investment; Cathay Capital; Greater Bay Area Fund': 1)"
+        "summary_display": "共 29 种取值 ('Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund': 1, 'Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund': 1, 'Princeville Global; HongShan; Shanghai Lianhe Investment; Cathay Capital; Greater Bay Area Fund': 1)"
       }
     },
     {
@@ -1675,22 +1675,22 @@
       "group": "ownership",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 8,
+        "valid_n": 30,
+        "missing_n": 8,
+        "fill_rate_pct": 78.95,
+        "unique_count": 9,
         "top_categories": {
           "Series A": 12,
-          "None": 10,
           "Series Angel": 5,
           "Pre-IPO": 5,
-          "Series Pre-A": 3
+          "Series Pre-A": 3,
+          "Strategic Round": 1
         },
-        "summary_display": "共 8 种取值 ('Series A': 12, 'None': 10, 'Series Angel': 5)"
+        "summary_display": "共 9 种取值 ('Series A': 12, 'Series Angel': 5, 'Pre-IPO': 5)"
       }
     },
     {
@@ -1702,21 +1702,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 5.377631578947368,
-        "std": 3.9498562643779946,
-        "median": 6.145,
+        "valid_n": 30,
+        "missing_n": 8,
+        "fill_rate_pct": 78.95,
+        "mean": 6.854333333333333,
+        "std": 3.041955681435233,
+        "median": 6.96,
         "min": 0.0,
-        "q25": 0.0,
-        "q75": 8.5,
+        "q25": 4.58,
+        "q75": 9.33,
         "max": 12.5,
-        "summary_display": "均值 5.38 | 中位数 6.14 | 区间 [0.00, 12.50]"
+        "summary_display": "均值 6.85 | 中位数 6.96 | 区间 [0.00, 12.50]"
       }
     },
     {

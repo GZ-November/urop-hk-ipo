@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-15 11:18:29"
+    "generated_at": "2026-10-16 20:35:27"
   },
   "variables": [
     {
@@ -1676,18 +1676,18 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 9,
-        "missing_n": 6,
-        "fill_rate_pct": 60.0,
-        "unique_count": 9,
+        "valid_n": 8,
+        "missing_n": 7,
+        "fill_rate_pct": 53.33,
+        "unique_count": 8,
         "top_categories": {
           "Series Angel": 1,
           "Pre-IPO Investment (January 2023)": 1,
           "Series Angel Investment (2018)": 1,
-          "None": 1,
-          "2020 Financing": 1
+          "2020 Financing": 1,
+          "Pre-IPO Investments (2020)": 1
         },
-        "summary_display": "共 9 种取值 ('Series Angel': 1, 'Pre-IPO Investment (January 2023)': 1, 'Series Angel Investment (2018)': 1)"
+        "summary_display": "共 8 种取值 ('Series Angel': 1, 'Pre-IPO Investment (January 2023)': 1, 'Series Angel Investment (2018)': 1)"
       }
     },
     {

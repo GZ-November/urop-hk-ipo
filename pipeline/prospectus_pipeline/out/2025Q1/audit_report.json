@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15 11:22:28",
+  "timestamp": "2026-10-16 20:35:25",
   "workbook": "cohorts/HKIPO-MB2025Q1.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 15,
@@ -37,6 +37,24 @@
         "BQ": 1,
         "BR": 1,
         "CV": 1
+      },
+      "by_column": {}
+    },
+    "allot": {
+      "target": "allot",
+      "fields_count": 18,
+      "companies_audited": 15,
+      "total_cells_audited": 270,
+      "matches": 270,
+      "excel_missing": 0,
+      "json_missing": 0,
+      "value_mismatch": 0,
+      "both_missing": 3,
+      "matches_with_value": 267,
+      "json_files_absent": 0,
+      "both_missing_by_column": {
+        "DN": 2,
+        "DE": 1
       },
       "by_column": {}
     }
@@ -1031,25 +1049,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "139b1a23f0bac60c9b91ba3eaba18aaf147df8d9b3b8bf508bccef5812b5ba60",
+          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
           "verdict": null
         }
       },

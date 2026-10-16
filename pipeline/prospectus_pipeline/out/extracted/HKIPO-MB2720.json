@@ -393,9 +393,9 @@
       "confidence": "high"
     },
     "col_pre_ipo_investors": {
-      "value": "NA",
-      "page": 147,
-      "quote": "Background of the Pre-IPO Investor",
+      "value": "Future Trade Network Limited",
+      "page": 38,
+      "quote": "Future Trade Network Limited, our Pre-IPO Investor",
       "confidence": "high"
     },
     "col_vc_pe_stake": {
@@ -411,16 +411,17 @@
       "confidence": "high"
     },
     "col_earliest_round": {
-      "value": "None",
-      "page": 147,
-      "quote": "Background of the Pre-IPO Investor",
+      "value": "Pre-IPO Investment",
+      "page": 146,
+      "quote": "Details of the Pre-IPO Investment are set out in the table below",
       "confidence": "high"
     },
     "col_holding_duration": {
-      "value": 0.0,
-      "page": 147,
-      "quote": "Background of the Pre-IPO Investor",
-      "confidence": "high"
+      "value": 1.28,
+      "page": 146,
+      "quote": "Date of the agreement October 18, 2024",
+      "confidence": "high",
+      "note": "Pre-IPO Investment agreement 18/10/2024 to Date of Prospectus 30/01/2026 (col D) = 469 days / 365.25 = 1.28"
     }
   }
 }
