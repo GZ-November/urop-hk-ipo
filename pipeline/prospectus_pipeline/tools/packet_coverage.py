@@ -65,8 +65,10 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--old-packets", type=Path, help="existing packet directory to compare page sets with")
     ap.add_argument("--limit", type=int, default=0)
     args = ap.parse_args(argv)
-    cfg = {"extract": yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))["extract"],
-           "paths": {"text": args.text_dir}}
+    # Older cohort configs omit some extract keys (cover_pages); take them from config.yaml.
+    base = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8")).get("extract", {})
+    cohort = yaml.safe_load(Path(args.config).read_text(encoding="utf-8")).get("extract", {})
+    cfg = {"extract": {**base, **cohort}, "paths": {"text": args.text_dir}}
     rows = []
     for payload in sorted(args.payloads.glob("*.json")):
         if args.limit and len(rows) >= args.limit:
