@@ -98,12 +98,17 @@ named blocker.
 
 ## 5. Clear exit 3: extraction, then independent review
 
-The command prints the `work_orders.json` path (also saved as
-`work_orders_path` in the run directory's `run_state.json`). Each entry names a
-`code`, `target` (`prospectus`, `allot`, and for GEM also `gem`), and its
-`extract_instruction` and `review_instruction` files. Those instruction files
-are the contract: follow them fully. GEM rules: [GEM pipeline](../../../docs/GEM_PIPELINE.md).
-Source rules: [statutory evidence](references/statutory_evidentiary_rules.md).
+Exit 3 prints the cohort config. Drive the work with the scheduler instead of the
+raw `work_orders.json`; it decides how many subagents to run, which issuer each
+takes, and writes the one brief each subagent reads:
+
+```bash
+.venv/bin/python run.py work next --config CONFIG     # claim jobs, print briefs
+.venv/bin/python run.py work status --config CONFIG   # read-only progress
+```
+
+GEM rules: [GEM pipeline](../../../docs/GEM_PIPELINE.md). Source rules:
+[statutory evidence](references/statutory_evidentiary_rules.md).
 
 **Reporting periods.** year-1 is the latest period of the audited Track
 Record, the periods covered by the Accountants' Report and named in the
@@ -121,37 +126,42 @@ never derive periods by subtracting years. A justified departure goes in the
 col_AT `note`, starting `period-override:` with the page, and the reviewer
 confirms it.
 
-**Extraction.** One extractor per issuer covers all of that issuer's targets.
-Extractors may run as parallel subagents, in waves of about five issuers. Run
-the gate commands from the instruction file (`derive_allot` before an allotment
-credential, then `validate`, then `state extracted`) for one issuer at a time.
-A number must be read or computed from the cited page. Never solve for a value
-so that an identity (assets = equity + liabilities) holds: an unreadable value
-stays `NaN`, and the failing identity is reported.
+**The loop.** Run `work next`. For every job it prints, start one NEW subagent
+with fresh context and give it only the brief path; never hand a review to the
+subagent that extracted that issuer, and never pass extractor notes to a
+reviewer. Whenever a subagent returns, run `work next` again. Stop when it
+reports every issuer reviewed, then rerun the step 4 command.
 
-**Independent review.** Dispatch a separate reviewer subagent with fresh
-context for each issuer: give it the `review_instruction` files and the packet,
-never the extractor's notes or reasoning. It checks every populated field
-against the original pages and writes its report to
-`<agent_handoff dir>/<code>.<target>.review_report.md`. Then record its verdict:
+- An extract brief names the packets (self-contained: field list, units and
+  rules), the payload paths, and the precomputed `search periods` and
+  `search sharecap` results. The extractor writes the payloads and runs
+  `work finish-extract --lease L`, which runs derive_allot, validate and
+  `state extracted` for every target in order. On errors it fixes the payload
+  from the source and reruns it.
+- A review brief carries a sheet of every populated field with the text around
+  its quote on the cited page. The reviewer checks meaning, units, period and
+  consolidation, opens full pages when needed, searches the text for each
+  missing field, writes one report per target starting
+  `payload sha256: <value>`, and runs `work finish-review --lease L --verdict
+  pass|fail [--failed-targets ...] --reviewer "<runtime> <model> review
+  subagent, independent of extractor"`. The command refuses reports that do not
+  name the current payload sha256. A failed target returns the issuer to
+  extraction with the report as feedback, and a new reviewer reviews the
+  corrected payload.
+- A number must be read or computed from the cited page. Never solve for a
+  value so that an identity holds: an unreadable value stays `NaN`.
 
-```bash
-.venv/bin/python run.py state reviewed --config CONFIG --target TARGET --code CODE \
-  --verdict pass --reviewer "<runtime> <model> review subagent, independent of extractor" \
-  --evidence-ref "<review report path>" --review-note "<one-line summary>"
-```
+**Concurrency is the scheduler's job.** Each lease lasts 90 minutes (extract) or
+60 minutes (review). It starts at 4 extractors, 4 reviewers and 6 subagents in
+total, dispatches reviews first, and takes the longest prospectuses first. A
+lease that expires without a finish command halves that role's limit; a full
+window of clean finishes adds one slot back, up to 6 per role and 8 in total.
+Override with `--max-extract`, `--max-review` and `--max-total` when the
+runtime allows fewer. Every mutating `run.py` stage takes a per-cohort lock, so
+parallel finish commands queue instead of overwriting shared files. A subagent
+that cannot finish runs `work release --lease L --reason "..."`.
 
-Each reviewer first records the payload's sha256, reports a discrepancy only
-after opening the cited page itself, and explains every value listed under
-`warnings` for that code in the target's `validation.json`. Those values do
-not appear literally in their quote, so the reviewer recomputes them from the
-page and writes the arithmetic down. Run reviewers in sequential waves of at
-most six. Larger batches fail silently, so before recording a verdict, confirm
-the report file exists and names the same sha256.
-
-On a failed review, the extractor corrects the payload, validates, records
-`state extracted` again, and a new reviewer reviews the changed payload. A
-runtime without subagents cannot supply an independent reviewer: leave review
+A runtime without subagents cannot supply an independent reviewer: leave review
 pending and deliver the prepared packets with a pending-review report.
 
 **Partial write-back.** When the user wants reviewed issuers delivered before
@@ -162,12 +172,13 @@ stay blank and are listed with reasons in `out/partial_writeback.json`. The
 command still exits 3 until no issuer is pending, so report the delivery as
 review-pending.
 
-`.venv/bin/python run.py status --config CONFIG` is the progress ledger. A new
-session picks up from it, so long cohorts survive interruptions.
+`.venv/bin/python run.py work status --config CONFIG` is the progress ledger. Its
+phases come from the hash-bound state records, so a new session picks up from it
+and long cohorts survive interruptions.
 
-**Done when** `status` shows a current extracted credential and a real review
-verdict for every work-order entry, or the remaining entries are reported as
-pending review.
+**Done when** `work status` shows every issuer `done` (a current extracted
+credential and a real review verdict for every target), or the remaining
+issuers are reported as pending review.
 
 ## 6. Deliver
 

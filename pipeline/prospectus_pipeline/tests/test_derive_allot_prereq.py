@@ -1,4 +1,5 @@
-"""derive_allot must not crash on a cohort that has not run the greenshoe search."""
+"""derive_allot must not crash or silently skip issuers missing from the greenshoe search."""
+import json
 import sys
 import tempfile
 import unittest
@@ -13,17 +14,17 @@ import run  # noqa: E402
 
 
 class DeriveAllotPrerequisiteTests(unittest.TestCase):
-    def _run(self, index_exists: bool):
+    def _run(self, index):
+        """Run derive_allot for 8610.HK with ``index`` as greenshoe.json (None = absent)."""
         with tempfile.TemporaryDirectory() as tmp:
             allot_out = Path(tmp)
-            if index_exists:
-                (allot_out / "greenshoe.json").write_text("{}", encoding="utf-8")
+            if index is not None:
+                (allot_out / "greenshoe.json").write_text(json.dumps(index), encoding="utf-8")
             cfg = {"paths": {"allot_out": allot_out}}
             calls = []
 
-            def fake_greenshoe(*_args):
-                calls.append("greenshoe")
-                (allot_out / "greenshoe.json").write_text("{}", encoding="utf-8")
+            def fake_greenshoe(_cfg, _args, companies):
+                calls.append("greenshoe:" + ",".join(c["code"] for c in companies))
 
             with patch.object(run, "cmd_greenshoe", fake_greenshoe), \
                     patch("greenshoe.apply_cv", lambda *a, **k: calls.append("cv")), \
@@ -34,10 +35,15 @@ class DeriveAllotPrerequisiteTests(unittest.TestCase):
             return calls
 
     def test_missing_greenshoe_index_triggers_the_search_before_apply_cv(self):
-        self.assertEqual(self._run(False), ["greenshoe", "cv", "ck", "cq", "da"])
+        self.assertEqual(self._run(None), ["greenshoe:8610.HK", "cv", "ck", "cq", "da"])
 
-    def test_existing_greenshoe_index_is_not_searched_again(self):
-        self.assertEqual(self._run(True), ["cv", "ck", "cq", "da"])
+    def test_index_without_this_issuer_searches_only_this_issuer(self):
+        # A parallel extractor already searched another issuer of the same cohort.
+        self.assertEqual(self._run({"0001.HK": {"status": "ok"}}),
+                         ["greenshoe:8610.HK", "cv", "ck", "cq", "da"])
+
+    def test_issuer_already_searched_is_not_searched_again(self):
+        self.assertEqual(self._run({"8610.HK": {"status": "ok"}}), ["cv", "ck", "cq", "da"])
 
 
 if __name__ == "__main__":

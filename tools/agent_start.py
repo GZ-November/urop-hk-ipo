@@ -9,6 +9,7 @@ import datetime as dt
 import json
 import os
 from pathlib import Path
+import shlex
 import subprocess
 import sys
 from typing import Any, Callable
@@ -488,11 +489,13 @@ def start_collection(
                 print(f"Partial write-back: {info['written']} reviewed issuer(s) written, "
                       f"{info['pending']} pending -> {info['manifest']}")
                 print("  A review-pending snapshot can be exported and bundled now; pending rows stay blank.")
+            work_cmd = f'{shlex.quote(sys.executable)} run.py work next --config {shlex.quote(str(cohort_config))}'
             print("\nAgent next steps:")
-            print("  1. Inspect the work orders in out/agent_handoff/work_orders.json")
-            print("  2. Perform source disclosures extraction against issuer documents")
-            print("  3. Complete independent review with original-source access")
-            print("  4. Resume collection with the exact resume command:")
+            print("  1. Loop on the scheduler; it says how many subagents to start and gives each a brief:")
+            print(f"     {work_cmd}")
+            print("  2. Start one NEW subagent per dispatched job with its brief; each finishes with")
+            print("     `work finish-extract` or `work finish-review`. Rerun `work next` whenever one returns.")
+            print("  3. When `work next` reports every issuer reviewed, resume with the exact command:")
             print(f"     {resume_cmd}")
             print("=" * 70 + "\n")
             return 3

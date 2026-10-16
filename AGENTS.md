@@ -41,8 +41,9 @@ Every extraction, review and repair uses this rule; do not reinterpret it.
 - `run.py search periods CODE` applies the rule and `validate` rejects a wrong
   anchor or annualisation.
 
-Collection exit 3 means extraction/independent review pending: read the generated
-work orders, complete supported tasks, and resume the same collection command.
+Collection exit 3 means extraction/independent review pending: loop on
+`run.py work next --config CONFIG`, start one new subagent per dispatched brief
+(the scheduler sets concurrency), and resume the same collection command.
 Use an independent reviewer with original-source access. A credential requires
 a real review of the exact payload; preserve pending review when the runtime
 cannot supply an independent reviewer. Do not fabricate a passing sign-off.
