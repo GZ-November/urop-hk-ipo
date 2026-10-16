@@ -339,6 +339,15 @@ Assets, equity, liabilities, cash and interest-bearing debt take year-1-end valu
 operating cash flow, R&D, gross profit and capex take year-1 original-period values."""
 
 
+CONVENTIONS = """- col_AQ (over-allotment option %): when the prospectus has no over-allotment option
+  but has an Offer Size Adjustment Option, record that option's size (for example
+  0.15). Every stored cohort follows this; 0 only when neither option exists.
+- Pre-IPO fields (col_pre_ipo_investors, col_earliest_round): "None" only when the
+  prospectus explicitly states there was no pre-IPO investment; otherwise "NA".
+  The shareholding history alone is not such a statement.
+- Read each field's `hint` in the schema when the packet's field list is not enough."""
+
+
 def _search(cfg: dict, *args: str, limit: int = 6000) -> str:
     tool = Path(cfg["_root"]) / "tools" / "search.py"
     env = {**os.environ, "PIPELINE_CONFIG": str(cfg["_config_path"])}
@@ -383,12 +392,18 @@ when a specific field is unclear. Locate pages with `search pages {code} 120-125
 `search search {code} "REGEX" --context 3 --max 8` (both via `{command}`).
 {feedback}
 ## Rules
+- Extract from this issuer's packets and source pages only. Do not open, copy or start
+  from any other payload, earlier extraction, workbook or export, in this cohort or any
+  other directory: the review and the credentials certify a fresh reading of the source.
 - Each populated field: value, page, short verbatim quote from that page, confidence.
   Unreadable or undisclosed: numeric "NaN", text/date "NA". Zero only when the
   disclosure states zero. Never solve a value so an identity balances.
 - {PERIOD_RULE.replace(chr(10), chr(10) + '  ')}
 - The workbook columns BC and CN/CO/CP are derived later, not extracted. The allotment
   fields col_CV/CK/CQ/DA are filled deterministically by the finish command.
+
+## Dataset conventions
+{CONVENTIONS}
 
 ## Precomputed: search periods {code}
 ```
@@ -519,6 +534,9 @@ missing field genuinely undisclosed (search the full text with
 and report a discrepancy only after opening the cited page yourself.
 
 Period standard: {PERIOD_RULE}
+
+Dataset conventions (a value that breaks one is a discrepancy):
+{CONVENTIONS}
 
 ## Reports (one per target)
 {reports}
