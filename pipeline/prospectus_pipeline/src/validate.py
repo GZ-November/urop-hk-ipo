@@ -122,6 +122,48 @@ def traceability_warnings(rec: dict, schema: dict, track_record=None) -> list[st
     return out
 
 
+# Pre-IPO investor fields. A 0 says "no such investor"; that needs a disclosure, never the
+# absence of one (schema hints: "未找到证据不等于 0，无法确认时填 NaN").
+PRE_IPO_ZERO_FIELDS = ("col_BA", "col_vc_backed", "col_pe_backed", "col_cvc_backed", "col_gov_backed",
+                       "col_top_tier_vc", "col_vc_board_seat", "col_vc_pe_stake")
+PRE_IPO_ONE_FIELDS = PRE_IPO_ZERO_FIELDS[:-1]
+ZERO_BASIS = "zero-basis:"
+
+
+def _named(value) -> bool:
+    return isinstance(value, str) and value.strip() not in ("", "NA", "None", "NaN", "N/A")
+
+
+def pre_ipo_evidence_issues(fields: dict) -> list[str]:
+    """A pre-IPO flag or stake of 0 needs a basis; a 1 or a holding period needs a named investor.
+
+    Accepted bases for 0: the prospectus explicitly states there was no pre-IPO investment
+    (col_earliest_round = "None"); the investors are named, so each can be classified; or the
+    field's note starts with "zero-basis:" and names the disclosure (for example the
+    pre-offering shareholding held entirely by the controlling family, with its page).
+    """
+    def value(key):
+        entry = fields.get(key)
+        return entry.get("value") if isinstance(entry, dict) else None
+
+    round_ = value("col_earliest_round")
+    investors_named = _named(value("col_pre_ipo_investors"))
+    explicit_absence = round_ == "None"
+    issues = []
+    for key in PRE_IPO_ZERO_FIELDS:
+        v = num(fields.get(key))
+        entry = fields.get(key) or {}
+        if v == 0 and not (explicit_absence or investors_named
+                           or str(entry.get("note") or "").strip().lower().startswith(ZERO_BASIS)):
+            issues.append(f"{key}=0 无依据：招股书既未明确说明没有上市前投资（col_earliest_round 非 \"None\"），"
+                          f"也未列出上市前投资者；无法确认时填 NaN，或在 note 以 \"{ZERO_BASIS}\" 写明能证明为 0 的披露与页码")
+        if v == 1 and key in PRE_IPO_ONE_FIELDS and not investors_named:
+            issues.append(f"{key}=1 但 col_pre_ipo_investors 没有具名投资者")
+    if num(fields.get("col_holding_duration")) is not None and not _named(round_):
+        issues.append("col_holding_duration 有数值但 col_earliest_round 没有具名轮次；起始日期无法确认时填 NaN")
+    return issues
+
+
 def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
                balance_rel_tol=0.005, balance_abs_tol=2000.0, track_record=None) -> list[dict]:
     """只做可证明的勾稽；缺失字段由契约报告为 missing，不静默当作 OK。
@@ -168,6 +210,9 @@ def check_firm(rec: dict, schema: dict, share_rel_tol=1e-9, share_abs_tol=1.0,
         v = g(key)
         if v is not None and not 0 <= v <= 1:
             add("百分比范围", f"{key}={v} 不在 [0,1]")
+
+    for detail in pre_ipo_evidence_issues(f):
+        add("上市前投资证据", detail)
 
     # ---------------------------------------------------------
     # 毛利率天花板与未年化期间勾稽 (Gross Margin Ceiling Gate)
