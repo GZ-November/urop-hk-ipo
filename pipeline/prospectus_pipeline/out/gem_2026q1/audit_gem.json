@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16 01:45:58",
+  "timestamp": "2026-10-16 20:35:28",
   "workbook": "cohorts/HKIPO-GEM2026Q1.xlsx",
   "sheet": "GEM_details",
   "audited_companies_count": 1,
@@ -148,7 +148,7 @@
       "filled_count": 1,
       "total_count": 1,
       "fill_rate": "100.0%",
-      "sample_value": "pipeline/sources/GEM/e_newlistings2026.xlsx"
+      "sample_value": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/code-review-repo-sync-008ff4/pipeline/sources/GEM/e_newlistings2026.xlsx"
     },
     {
       "col": "Y",
@@ -164,27 +164,27 @@
     "8610.HK": {
       "prospectus": {
         "extracted": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
           "verdict": null
         },
         "validated": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
           "verdict": null
         },
         "reviewed": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
-          "verdict": null
+          "exists": true,
+          "gate_pass": true,
+          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
+          "verdict": "pass"
         },
         "written": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
           "verdict": null
         }
       },
@@ -196,9 +196,9 @@
           "verdict": null
         },
         "validated": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "bdeca7ee88e19fc8d5adee4a65109c4ebb9f538ad9c0936ba72f59253d2e59b4",
           "verdict": null
         },
         "reviewed": {

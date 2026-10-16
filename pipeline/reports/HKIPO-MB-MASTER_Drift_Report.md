@@ -1,6 +1,6 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-10-15 11:18:37 | **cohort 数**：6 | **样本合计**：202 家 | **变量数**：202
+- **生成时间**：2026-10-16 20:37:10 | **cohort 数**：6 | **样本合计**：202 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
 - **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
@@ -63,11 +63,11 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Pre-IPO CVC backing (1=yes; 0=no)` | 93.3% | 59.3% | 46.8% | 100.0% | 77.8% | 70.0% |
 | `Pre-IPO State/Gov backing (1=yes; 0=no)` | 100.0% | 63.0% | 57.4% | 100.0% | 86.7% | 73.3% |
 | `Top-tier VC/PE backing (1=yes; 0=no)` | 86.7% | 40.7% | 25.5% | 100.0% | 68.9% | 46.7% |
-| `Key Pre-IPO investors` | 66.7% | 74.1% | 85.1% | 73.7% | 84.4% | 73.3% |
+| `Key Pre-IPO investors` | 66.7% | 74.1% | 85.1% | 76.3% | 84.4% | 73.3% |
 | `Pre-IPO institutional shareholding (%)` | 66.7% | 55.6% | 61.7% | 100.0% | 82.2% | 63.3% |
 | `Pre-IPO investor board seat (1=yes; 0=no)` | 100.0% | 100.0% | 42.6% | 100.0% | 88.9% | 56.7% |
-| `Earliest Pre-IPO investment round` | 53.3% | 74.1% | 83.0% | 73.7% | 84.4% | 70.0% |
-| `Pre-IPO holding duration (years)` | 53.3% | 55.6% | 72.3% | 100.0% | 80.0% | 66.7% |
+| `Earliest Pre-IPO investment round` | 53.3% | 74.1% | 83.0% | 76.3% | 84.4% | 70.0% |
+| `Pre-IPO holding duration (years)` | 53.3% | 55.6% | 72.3% | 78.9% | 80.0% | 66.7% |
 | `Controller economic interest at listing (%)` | 93.3% | 100.0% | 100.0% | 100.0% | 95.6% | 96.7% |
 | `Controller voting rights at listing (%)` | 93.3% | 100.0% | 100.0% | 100.0% | 95.6% | 100.0% |
 | `Interest-bearing debt at year-1 end` | 93.3% | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
