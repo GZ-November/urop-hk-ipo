@@ -169,6 +169,15 @@ python3 prospectus_pipeline/run.py write --target prospectus --fill-missing [--o
 python3 prospectus_pipeline/run.py write --target allot --fill-missing [--only <CODE>.HK]
 ```
 
+`prepare` writes one extraction packet per issuer: output contract and rules, one field list, the
+pre-parsed tables, an index of the pages each field group depends on, then every selected source
+page once in page order. Groups that share a page (cover, share capital, cornerstone, financial
+statements) no longer repeat it; the page set and the group caps are unchanged, so each page
+cited by a stored payload that the old per-group layout carried is still in the packet. After
+changing the page selection run
+`python3 tools/packet_coverage.py --config config_2026q1.yaml --text-dir <data/text> --payloads <out/extracted>`;
+it prints before/after size and exits 1 if a page was dropped.
+
 ### 3. State Management (`run.py state`)
 
 ```bash

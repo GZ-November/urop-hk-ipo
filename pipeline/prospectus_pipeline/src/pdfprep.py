@@ -294,26 +294,51 @@ def locate_sections(cfg: dict, code: str) -> dict[str, list[int]]:
     return result
 
 
-def build_slices(cfg: dict, code: str, loc: dict[str, list[int]]) -> dict[str, str]:
-    """按组分页拼接文本；各组独立预算，避免后面的基石/附加财务被全局上限吃掉。"""
+def select_pages(cfg: dict, code: str, loc: dict[str, list[int]]) -> tuple[dict[str, list[int]], dict[str, int]]:
+    """Per-group pages that fit the group caps, plus the first omitted page of a capped group.
+
+    A group's cap counts its own pages (shared ones included), so every group keeps the pages it
+    always kept. The total cap counts each distinct page once: a page shared by several groups
+    is stored, and read, once."""
     pages = {p["page"]: p["text"] for p in _pages(cfg, code)}
     default_cap = int(cfg["extract"].get("max_chars_per_group", 60000))
     group_caps = {k: int(v) for k, v in cfg["extract"].get("group_caps", {}).items()}
     total_cap = int(cfg["extract"].get("max_chars_total", 900000))
-    out: dict[str, str] = {}
+    kept: dict[str, list[int]] = {}
+    omitted: dict[str, int] = {}
+    taken: set[int] = set()
     total = 0
     for group, pgs in loc.items():
         cap = group_caps.get(group, default_cap)
-        buf, used = [], 0
+        used = 0
+        kept[group] = []
         for pg in pgs:
-            block = f"\n<<<PAGE {pg}>>>\n{pages.get(pg, '')}"
-            if used + len(block) > cap or total + len(block) > total_cap:
-                buf.append(f"\n<<<PAGE {pg} 起已省略：超出 {group} 字符上限；请人工复核覆盖范围>>>")
+            size = len(f"\n<<<PAGE {pg}>>>\n{pages.get(pg, '')}")
+            new = 0 if pg in taken else size
+            if used + size > cap or total + new > total_cap:
+                omitted[group] = pg
                 break
-            buf.append(block)
-            used += len(block)
-            total += len(block)
-        out[group] = "".join(buf)
+            kept[group].append(pg)
+            used += size
+            total += new
+            taken.add(pg)
+    return kept, omitted
+
+
+def render_pages(page_text: dict[int, str], pgs: list[int]) -> str:
+    return "".join(f"\n<<<PAGE {pg}>>>\n{page_text.get(pg, '')}" for pg in pgs)
+
+
+def build_slices(cfg: dict, code: str, loc: dict[str, list[int]]) -> dict[str, str]:
+    """按组分页拼接文本（审计用的 sections/*.txt 与主题分片）；页选择与 packet 共用 select_pages。"""
+    page_text = {p["page"]: p["text"] for p in _pages(cfg, code)}
+    kept, omitted = select_pages(cfg, code, loc)
+    out: dict[str, str] = {}
+    for group in loc:
+        text = render_pages(page_text, kept[group])
+        if group in omitted:
+            text += f"\n<<<PAGE {omitted[group]} 起已省略：超出 {group} 字符上限；请人工复核覆盖范围>>>"
+        out[group] = text
     return out
 
 
@@ -323,7 +348,7 @@ PACKET_HEADER = """# 招股书抽取任务包：{code} {name}
 - 来源：{pdf_url}
 - 港交所文件：{doc_type} / {doc_title}（{doc_datetime}）
 - 招股书日期：{prospectus_date} ｜ 上市日期：{listing_date}
-- 本包只包含招股书来源字段；字段名、类型、缺失值和期间契约见字段清单。
+- 本包只包含招股书来源字段；字段名、类型、缺失值和期间契约见字段清单。原文页去重后按页码排序，页索引说明各字段组对应的页。
 
 ## 唯一输出契约（必须严格遵守）
 
@@ -369,36 +394,56 @@ GROUP_TABLE_MAP: dict[str, str] = {
 }
 
 
+def _page_ranges(pgs: list[int]) -> str:
+    out: list[str] = []
+    for pg in sorted(set(pgs)):
+        if out and pg == out[-1][1] + 1:
+            out[-1][1] = pg
+        else:
+            out.append([pg, pg])
+    return ", ".join(str(a) if a == b else f"{a}-{b}" for a, b in out) or "（无）"
+
+
 def build_packet(
     cfg: dict,
     rec: dict,
     fields: list[dict],
-    slices: dict[str, str],
+    kept: dict[str, list[int]],
+    omitted: dict[str, int],
+    page_text: dict[int, str],
     tables: dict[str, list[dict]] | None = None,
 ) -> Path:
+    """全量包：字段清单 → 预解析表格 → 原文页索引 → 去重后按页码排序的原文页。
+
+    多个字段组会取到同一页（封面、股本、基石、财务报表）；每页只写一次，由索引说明
+    哪些组依赖它，避免抽取代理把同一页读 2-4 遍。"""
     dest = cfg["paths"]["packets"] / f"{_safe_name(rec['code'])}.md"
-    parts = [PACKET_HEADER.format(**rec)]
+    parts = [PACKET_HEADER.format(**rec), "\n## 字段清单\n"]
     for group, title in GROUP_TITLES.items():
-        fs = [f for f in fields if f["group"] == group]
-        parts.append(f"\n## {title}\n")
-        for f in fs:
+        parts.append(f"\n### {title}\n")
+        for f in (f for f in fields if f["group"] == group):
             details = f"type={f.get('kind')} unit={f.get('unit')} missing={f.get('missing')}"
             if f.get("period"):
                 details += f" period={f['period']} annualize={f.get('annualize')}"
             parts.append(f"- `{f['key']}` = {f['header']} ({details})")
 
-        # 结构化原生表格优先注入，使 LLM 第一时间读取对齐规整的数据
-        t_name = GROUP_TABLE_MAP.get(group)
-        if tables and t_name and tables.get(t_name):
-            parts.append("\n### 结构化预解析表格（高精度对齐）\n")
-            for t in tables[t_name]:
-                parts.append(f"#### {t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
+    # 结构化原生表格优先注入，使 LLM 第一时间读取对齐规整的数据
+    table_blocks = []
+    for group, t_name in GROUP_TABLE_MAP.items():
+        for t in (tables or {}).get(t_name) or []:
+            table_blocks.append(f"#### {GROUP_TITLES[group]}：{t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
+    if table_blocks:
+        parts.append("\n## 结构化预解析表格（高精度对齐）\n")
+        parts.extend(table_blocks)
 
-        parts.append(f"\n### 原文切片：{title}\n")
-        cap = int(cfg["extract"].get("group_caps", {}).get(
-            group, cfg["extract"].get("max_chars_per_group", 60000)))
-        parts.append(slices.get(group, "(无匹配章节)")[:cap])
-        parts.append("\n")
+    parts.append("\n## 原文页索引（每页只在下方出现一次，按页码排序）\n")
+    for group, title in GROUP_TITLES.items():
+        pgs = kept.get(group, [])
+        note = f"；第 {omitted[group]} 页起因超出字符上限省略，请人工复核覆盖范围" if group in omitted else ""
+        parts.append(f"- {title}：第 {_page_ranges(pgs)} 页{note}" if pgs else f"- {title}：(无匹配章节)")
+    parts.append("\n## 原文页\n")
+    parts.append(render_pages(page_text, sorted({pg for pgs in kept.values() for pg in pgs})))
+    parts.append("\n")
     dest.write_text("\n".join(parts), encoding="utf-8")
     return dest
 
@@ -488,6 +533,8 @@ def prepare_all(cfg: dict, found: list[dict], log=print, with_topics: bool = Tru
         extract_text(cfg, rec["code"])
         loc = locate_sections(cfg, rec["code"])
         slices = build_slices(cfg, rec["code"], loc)
+        kept, omitted = select_pages(cfg, rec["code"], loc)
+        page_text = {p["page"]: p["text"] for p in _pages(cfg, rec["code"])}
 
         # 结构化表格原生解析预处理
         tables_dir = tables_base / _safe_name(rec["code"])
@@ -506,7 +553,7 @@ def prepare_all(cfg: dict, found: list[dict], log=print, with_topics: bool = Tru
             }
 
         # 构造全量任务包（注入预解析表格）
-        pkt = build_packet(cfg, rec, fields, slices, tables=tables)
+        pkt = build_packet(cfg, rec, fields, kept, omitted, page_text, tables=tables)
         size = pkt.stat().st_size
 
         # 构造主题任务包
