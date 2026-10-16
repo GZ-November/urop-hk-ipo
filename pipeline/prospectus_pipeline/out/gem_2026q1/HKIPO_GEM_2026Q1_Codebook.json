@@ -12,7 +12,7 @@
       "blue_prospectus": 76,
       "darkblue_external": 108
     },
-    "generated_at": "2026-10-16 01:45:58"
+    "generated_at": "2026-10-16 20:35:28"
   },
   "variables": [
     {
@@ -1550,18 +1550,14 @@
       "group": "ownership",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 1,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 1,
-        "top_categories": {
-          "None": 1
-        },
-        "summary_display": "共 1 种取值 ('None': 1)"
+        "valid_n": 0,
+        "missing_n": 1,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {
@@ -1617,18 +1613,14 @@
       "group": "ownership",
       "data_type": "string / categorical",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
+      "coverage_status": "Reserved / Unmatured",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 1,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "unique_count": 1,
-        "top_categories": {
-          "None": 1
-        },
-        "summary_display": "共 1 种取值 ('None': 1)"
+        "valid_n": 0,
+        "missing_n": 1,
+        "fill_rate_pct": 0.0,
+        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
       }
     },
     {

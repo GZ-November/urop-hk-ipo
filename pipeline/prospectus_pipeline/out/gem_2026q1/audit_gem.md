@@ -1,6 +1,6 @@
 # HK IPO Excel vs JSON 逐格对账与数据质量审计报告
 
-> **生成时间**：2026-10-16 01:45:58  
+> **生成时间**：2026-10-16 20:35:28  
 > **目标工作簿**：`cohorts/HKIPO-GEM2026Q1.xlsx` (Sheet: `GEM_details`)  
 > **审计范围**：1 家公司 × (0 招股书字段 + 0 配发字段 = 0 字段，共 15 个单元格) + 14 个外部工具字段  
 
@@ -43,4 +43,4 @@
 
 | 股票代码 | 招股书 extracted | 招股书 validated | 招股书 reviewed | 配发 extracted | 配发 validated | 配发 reviewed | 当前写入状态 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| `8610.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
+| `8610.HK` | ✅ PASS | ✅ PASS | ✅ PASS | ❌ NO | ✅ PASS | ❌ NO | ⏳ legacy-untracked |

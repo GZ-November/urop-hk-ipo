@@ -411,15 +411,15 @@
       "confidence": "high"
     },
     "col_earliest_round": {
-      "value": "None",
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
+      "value": "NA",
+      "page": null,
+      "quote": "",
       "confidence": "high"
     },
     "col_holding_duration": {
-      "value": 0.0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
+      "value": "NaN",
+      "page": null,
+      "quote": "",
       "confidence": "high"
     }
   }

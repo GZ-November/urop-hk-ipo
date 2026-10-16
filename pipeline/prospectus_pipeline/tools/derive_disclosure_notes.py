@@ -94,10 +94,15 @@ def year1_periods(code: str, fields: dict, text_dir: Path) -> tuple[dict | None,
     return {"year1": year1, "year2": year2, "year3": year3}, "payload_annualisation"
 
 
-def infer_multiplier(rec: dict, key: str) -> int | None:
-    """由「存储值 ÷ 引文中的数字」推断财报单位乘数。"""
+def infer_multiplier(rec: dict, key: str, value=None) -> int | None:
+    """由「存储值 ÷ 引文中的数字」推断财报单位乘数。
+
+    ``value`` overrides the stored value: annualised fields must be compared at their
+    original-period size, or a stub's comparative-period number can match a wrong unit.
+    """
     entry = (rec.get("fields") or {}).get(key) or {}
-    value, quote = entry.get("value"), entry.get("quote") or ""
+    quote = entry.get("quote") or ""
+    value = entry.get("value") if value is None else value
     if not isinstance(value, (int, float)) or isinstance(value, bool) or not value:
         return None
     nums = []
@@ -111,13 +116,17 @@ def infer_multiplier(rec: dict, key: str) -> int | None:
             nums.append(f)
     if not nums:
         return None
+    # Stored values are the quoted figure times the unit, so the ratio is exact up to
+    # rounding. A loose tolerance lets an unrelated number in the quote (a comparative
+    # period, a year, a note number) match a wrong unit, so require 0.1% and rank by
+    # relative error.
     best = None
     for n in nums:
         r = abs(value) / n
         for cand in (1, 10, 100, 1000, 10000, 100000, 1000000):
-            if abs(r - cand) / cand < 0.02:  # 相对误差 <2%
-                if best is None or abs(r - cand) < abs(best[0] - best[1]):
-                    best = (r, cand)
+            err = abs(r - cand) / cand
+            if err < 0.001 and (best is None or err < best[0]):
+                best = (err, cand)
     return best[1] if best else None
 
 
@@ -233,7 +242,14 @@ def main() -> int:
         if prof is not None:
             values["CP"] = round(prof * factor)
 
-        mult = infer_multiplier(rec, "col_AH") or infer_multiplier(rec, "col_AN")
+        # Sales and profit usually quote the Accountants' Report, whose unit is the one this
+        # column records; match them at their original-period size, because for a 6M stub the
+        # annualised figure divided by a comparative-period number can mimic a wrong unit
+        # (2675.HK). Balance-sheet totals, which are never annualised, are the fallback.
+        mult = ((infer_multiplier(rec, "col_AH", sales * factor) if sales else None)
+                or (infer_multiplier(rec, "col_AN", prof * factor) if prof else None)
+                or infer_multiplier(rec, "col_Y") or infer_multiplier(rec, "col_X")
+                or infer_multiplier(rec, "col_W"))
         if mult:
             values["CG"] = mult
 
