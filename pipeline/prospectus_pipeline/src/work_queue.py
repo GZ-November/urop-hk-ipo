@@ -345,6 +345,13 @@ CONVENTIONS = """- col_AQ (over-allotment option %): when the prospectus has no 
 - Pre-IPO fields (col_pre_ipo_investors, col_earliest_round): "None" only when the
   prospectus explicitly states there was no pre-IPO investment; otherwise "NA".
   The shareholding history alone is not such a statement.
+- Pre-IPO flags and stake (col_BA, col_vc_backed, col_pe_backed, col_cvc_backed,
+  col_gov_backed, col_top_tier_vc, col_vc_board_seat, col_vc_pe_stake): 0 means "confirmed
+  none" and needs a basis: an explicit no-pre-IPO statement (col_earliest_round "None"),
+  named investors you classify, or a note starting "zero-basis:" naming the disclosure and
+  page (e.g. pre-offering shares 100% held by the controlling family). Otherwise "NaN".
+  A 1 needs a named investor; col_holding_duration needs a named earliest round.
+  validate rejects a 0 without one of these bases.
 - Read each field's `hint` in the schema when the packet's field list is not enough."""
 
 
@@ -498,6 +505,8 @@ def review_sheet(cfg: dict, code: str, targets: list[str]) -> str:
             elif source:
                 line += f"\n  deterministic ({source}): {_norm(entry.get('note', ''))[:220]}"
             else:
+                if entry.get("note"):
+                    line += f"\n  note: {_norm(entry['note'])[:300]}"
                 text = pages.get(int(page)) if str(page).isdigit() else None
                 found = excerpt(text or "", entry.get("quote", ""))
                 where = "allotment announcement" if target == "allot" else f"search pages {code} {page}-{page}"
