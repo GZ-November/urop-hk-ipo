@@ -320,10 +320,11 @@
       "confidence": "low"
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 262,
-      "quote": "Mr. ZHANG Shaobo (張少波先生), aged 46, has been our Non-executive Director\nsince May 2015.\nMr. Zhang joined our Group in January 2001. Mr. Zhang",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders and A-share private-placement subscribers; the prospectus has no explicit no-pre-IPO-investment statement and no director is disclosed as linked to an investor, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

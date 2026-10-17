@@ -254,10 +254,11 @@
       "confidence": "high"
     },
     "col_BA": {
-      "value": 0,
-      "page": 150,
-      "quote": "which was owned as to approximately 70%, 10%, 5% by Mr. Wang, Xinghao Investment and Ms. Xu, respectively. The remaining 15% was held by four other Independent Third Parties.",
-      "confidence": "medium"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_BB": {
       "value": "自然人（Mr. Wang Aiguo 王愛國 与 Ms. Xu Bo 徐波，夫妻）",
@@ -363,34 +364,39 @@
       "confidence": "medium"
     },
     "col_vc_backed": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pe_backed": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_cvc_backed": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_gov_backed": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_top_tier_vc": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pre_ipo_investors": {
       "value": "NA",
@@ -399,16 +405,18 @@
       "confidence": "high"
     },
     "col_vc_pe_stake": {
-      "value": 0.0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 150,
-      "quote": "We completed our strategic investment in Rizhao Gon Chemical Co., Ltd.*",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

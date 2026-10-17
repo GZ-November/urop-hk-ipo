@@ -254,10 +254,11 @@
       "confidence": "high"
     },
     "col_BA": {
-      "value": 0,
-      "page": 126,
-      "quote": "As of September 27, 2016, the general partner of Juzhaode Partnership was Mr. Shen Yaqiang (沈亞強), a senior engineer of our Group, holding 1.31% partnership interests in Juzhaode Partnership.",
-      "confidence": "medium"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_BB": {
       "value": "自然人",
@@ -362,34 +363,39 @@
       "confidence": "high"
     },
     "col_vc_backed": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pe_backed": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_cvc_backed": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_gov_backed": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_top_tier_vc": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pre_ipo_investors": {
       "value": "NA",
@@ -398,16 +404,18 @@
       "confidence": "high"
     },
     "col_vc_pe_stake": {
-      "value": 0.0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 126,
-      "quote": "Zhaowei Investment \u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002\u0002",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

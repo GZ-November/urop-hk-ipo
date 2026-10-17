@@ -320,10 +320,11 @@
       "confidence": "medium"
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 218,
-      "quote": "Our Board consists of nine Directors, including six executive Directors and three\nindependent non-executive Directors. Our Directors are appointed for ",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

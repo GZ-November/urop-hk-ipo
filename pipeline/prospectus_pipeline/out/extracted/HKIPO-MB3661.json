@@ -314,40 +314,46 @@
       "confidence": "high"
     },
     "col_BA": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pe_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_cvc_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_gov_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_top_tier_vc": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pre_ipo_investors": {
       "value": "NA",
@@ -356,16 +362,18 @@
       "confidence": "high"
     },
     "col_vc_pe_stake": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 23,
-      "quote": "Since the Company’s listing on the ChiNext of the Shenzhen Stock Exchange in 2017 and up to the Latest Practicable Date, we had not received any notice from the Shenzhen Stock Exchange",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

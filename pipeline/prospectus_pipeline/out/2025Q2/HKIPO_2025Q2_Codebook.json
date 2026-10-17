@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-15 11:18:34"
+    "generated_at": "2026-10-17 09:53:38"
   },
   "variables": [
     {
@@ -1602,18 +1602,18 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 20,
-        "missing_n": 7,
-        "fill_rate_pct": 74.07,
-        "unique_count": 20,
+        "valid_n": 21,
+        "missing_n": 6,
+        "fill_rate_pct": 77.78,
+        "unique_count": 21,
         "top_categories": {
           "Oceanpine Capital; Nanjing Jiangning; CICC SAIC Investment; Southeast Xinneng; Chuanghe Xincai; C&D Investment; Juxin Xihai; Lianhe Jiaying; Jiaxing Chenyue; Xiamen ITG Group; Nanjing Heyi; Anhui Haichuang": 1,
           "LAV USD; King Star Med; Shanghai Yingjia; Orchids; Golden Sword; China Singapore Suzhou Industrial Park Ventures (CSVC)": 1,
           "Zhongding No.5; Xiangtan Caixin; Changjiang Automobile Valley; Huzhou Qingyun; Jinhua Boleidun; Kesheng Center; Shandong Kinetic Energy; Rockets Capital L.P.; Broad-Ocean Motor": 1,
           "Suzhou Yizhong Venture Capital Partnership; Jinyi Capital (Zhuhai Jinyiming Equity Investment Fund Partnership); Suzhou Xiangzhong Venture Capital Partnership; InnoVision Capital (Zhuhai Hengqin Zhiyi Qianrui Investment Partnership); Desai Innovation (Beijing Desai Innovation Equity Investment Center); Shibei Hi-tech (Shanghai Shibei Hi-tech Venture Capital Partnership); Nanjing Xiangzhong Venture Capital Partnership; Yiyu Consulting; Hanshuai Investment; Jinxiao Investment; Yinlin Investment; Shanghai Yipu": 1,
-          "Partners Gourmet (Partners Group Gourmet House Limited), investment vehicles of Partners Group": 1
+          "Shangrao Economic and Technological Development Zone Industrial Development Investment Co., Ltd.": 1
         },
-        "summary_display": "共 20 种取值 ('Oceanpine Capital; Nanjing Jiangning; CICC SAIC Investment; Southeast Xinneng; Chuanghe Xincai; C&D Investment; Juxin Xihai; Lianhe Jiaying; Jiaxing Chenyue; Xiamen ITG Group; Nanjing Heyi; Anhui Haichuang': 1, 'LAV USD; King Star Med; Shanghai Yingjia; Orchids; Golden Sword; China Singapore Suzhou Industrial Park Ventures (CSVC)': 1, 'Zhongding No.5; Xiangtan Caixin; Changjiang Automobile Valley; Huzhou Qingyun; Jinhua Boleidun; Kesheng Center; Shandong Kinetic Energy; Rockets Capital L.P.; Broad-Ocean Motor': 1)"
+        "summary_display": "共 21 种取值 ('Oceanpine Capital; Nanjing Jiangning; CICC SAIC Investment; Southeast Xinneng; Chuanghe Xincai; C&D Investment; Juxin Xihai; Lianhe Jiaying; Jiaxing Chenyue; Xiamen ITG Group; Nanjing Heyi; Anhui Haichuang': 1, 'LAV USD; King Star Med; Shanghai Yingjia; Orchids; Golden Sword; China Singapore Suzhou Industrial Park Ventures (CSVC)': 1, 'Zhongding No.5; Xiangtan Caixin; Changjiang Automobile Valley; Huzhou Qingyun; Jinhua Boleidun; Kesheng Center; Shandong Kinetic Energy; Rockets Capital L.P.; Broad-Ocean Motor': 1)"
       }
     },
     {
@@ -1651,17 +1651,17 @@
       "group": "ownership",
       "data_type": "boolean (0/1)",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 27,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
+        "valid_n": 21,
+        "missing_n": 6,
+        "fill_rate_pct": 77.78,
         "true_count": 11,
-        "false_count": 16,
-        "true_pct": 40.7,
-        "summary_display": "1 (是): 11 家 (40.7%), 0 (否): 16 家"
+        "false_count": 10,
+        "true_pct": 52.4,
+        "summary_display": "1 (是): 11 家 (52.4%), 0 (否): 10 家"
       }
     },
     {

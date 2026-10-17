@@ -297,9 +297,10 @@
     },
     "col_gov_backed": {
       "value": 1,
-      "page": 211,
-      "quote": "the registered shareholders of Hongye New Energy including, our Company, Jietai Technology and Shangrao Economic and Technological Development Zone Urban Construction Engineering Management Co., Ltd.",
-      "confidence": "medium"
+      "page": 214,
+      "quote": "(“Shangrao Development Zone”) (a stated-owned entity and was ultimately controlled by Shangrao Economic and Technological Development Zone Management Committee",
+      "confidence": "high",
+      "note": "Shangrao Development Zone, a state-owned investment company, acquired 14.1% of the A Shares from the controlling shareholders in 2021 (p214) and remains a shareholder (p225 note 2)."
     },
     "col_top_tier_vc": {
       "value": "NaN",
@@ -308,10 +309,10 @@
       "confidence": "low"
     },
     "col_pre_ipo_investors": {
-      "value": "NA",
-      "page": null,
-      "quote": "",
-      "confidence": "low"
+      "value": "Shangrao Economic and Technological Development Zone Industrial Development Investment Co., Ltd.",
+      "page": 214,
+      "quote": "As a result of such transfers of Shares, Shangrao Development Zone and Hainan Zhanhong held approximately 14.1% and 5% equity interests in our Company, respectively.",
+      "confidence": "high"
     },
     "col_vc_pe_stake": {
       "value": "NaN",
@@ -320,10 +321,11 @@
       "confidence": "low"
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 348,
-      "quote": "Mr. Xu\nYong rejoined our Group as a Director in May 2012 and was re-designated as a non-executive\nDirector of our Company in February 2024. He served",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: no director is disclosed as nominated by a pre-IPO investor, and none is disclosed as having no such nominee; a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

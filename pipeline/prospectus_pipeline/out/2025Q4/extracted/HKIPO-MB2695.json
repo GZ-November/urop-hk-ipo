@@ -281,10 +281,11 @@
    "confidence": "high"
   },
   "col_gov_backed": {
-   "value": 1,
-   "page": 144,
-   "quote": "Each of the said shareholder, is a state-owned enterprise. Fujian Mount Wuyi Cultural Tourism Group and Mount Wuyi Tourism Resort Development were ultimately controlled by Mount Wuyi SASAC",
-   "confidence": "medium"
+   "value": "NaN",
+   "page": null,
+   "quote": "",
+   "confidence": "medium",
+   "note": "NaN: the state-owned entities on p144 are the founding and controlling shareholders of this state-owned issuer, not pre-IPO investors; the prospectus names no pre-IPO investor, so the flag cannot be confirmed."
   },
   "col_top_tier_vc": {
    "value": "NaN",

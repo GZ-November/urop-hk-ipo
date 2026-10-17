@@ -255,9 +255,10 @@
     },
     "col_BA": {
       "value": 0,
-      "page": 111,
-      "quote": "our Company\nHongri Mingsheng(3)\nZHANG \nMingsheng(5)\nOther Individual\nShareholders(6)\nHongri Jingming(2)\nHongxing Shiye(1)\nHunan Food Industry \nCo. Ltd.(4)",
-      "confidence": "medium"
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "The only named pre-IPO investor, Hunan Food, is a state-owned food-industry company that subscribed with its equity interest in Hongxing Beisheng (p107); it is not a VC, PE or top-tier fund, and no strategic/corporate-venture relationship is disclosed."
     },
     "col_BB": {
       "value": "集体所有制企业（长沙红星投资经营管理中心，由2,000余名红星村村民集体所有，无单一自然人/国资实际控制人）",
@@ -363,51 +364,58 @@
     },
     "col_vc_backed": {
       "value": 0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "The only named pre-IPO investor, Hunan Food, is a state-owned food-industry company that subscribed with its equity interest in Hongxing Beisheng (p107); it is not a VC, PE or top-tier fund, and no strategic/corporate-venture relationship is disclosed."
     },
     "col_pe_backed": {
       "value": 0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "The only named pre-IPO investor, Hunan Food, is a state-owned food-industry company that subscribed with its equity interest in Hongxing Beisheng (p107); it is not a VC, PE or top-tier fund, and no strategic/corporate-venture relationship is disclosed."
     },
     "col_cvc_backed": {
       "value": 0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "The only named pre-IPO investor, Hunan Food, is a state-owned food-industry company that subscribed with its equity interest in Hongxing Beisheng (p107); it is not a VC, PE or top-tier fund, and no strategic/corporate-venture relationship is disclosed."
     },
     "col_gov_backed": {
-      "value": 0,
+      "value": 1,
       "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
+      "quote": "Hunan Food was wholly-owned by Hunan Sports Industry Group Co., Ltd. (湖南體育產業集團有限公司), a state-owned enterprise",
       "confidence": "high"
     },
     "col_top_tier_vc": {
       "value": 0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "The only named pre-IPO investor, Hunan Food, is a state-owned food-industry company that subscribed with its equity interest in Hongxing Beisheng (p107); it is not a VC, PE or top-tier fund, and no strategic/corporate-venture relationship is disclosed."
     },
     "col_pre_ipo_investors": {
-      "value": "NA",
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "value": "Hunan Food Industry Co., Ltd.",
+      "page": 107,
+      "quote": "Hongxing Shiye, Hongri Mingsheng and Hunan Food agreed to subscribe for an increased register capital of our Company",
+      "confidence": "high",
+      "note": "Only institutional shareholder outside the controlling group: subscribed in June 2018, paying with its equity in Hongxing Beisheng, and held 4.85% immediately prior to the Global Offering (p111). The other holders are controlling shareholder Hongxing Shiye, the Hongri Jingming/Hongri Mingsheng employee and partner platforms and 31 individuals (p111)."
     },
     "col_vc_pe_stake": {
-      "value": 0.0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "value": 0.0485,
+      "page": 108,
+      "quote": "Hunan Food . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4.85",
+      "confidence": "high",
+      "note": "Hunan Food (state-owned) 4.85% is the only institutional pre-offering stake; unchanged in the p111 chart immediately prior to the Global Offering."
     },
     "col_vc_board_seat": {
       "value": 0,
-      "page": 111,
-      "quote": "OUR CORPORATE STRUCTURE",
-      "confidence": "high"
+      "page": 155,
+      "quote": "four of our non-executive Directors also serve as directors and senior management of Hongxing Shiye, our Controlling Shareholder",
+      "confidence": "high",
+      "note": "All four non-executive Directors come from the controlling shareholder; none is linked to Hunan Food."
     },
     "col_earliest_round": {
       "value": "NA",

@@ -254,10 +254,11 @@
       "confidence": "high"
     },
     "col_BA": {
-      "value": 0,
-      "page": 25,
-      "quote": "As of the Latest Practicable Date, Mr. Lin directly held as beneficial owner 49.74% of our total issued share capital.",
-      "confidence": "medium"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "medium",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_BB": {
       "value": "自然人（Mr. Lin 林木勤，个人直接及通过受控法团控股）",
@@ -363,34 +364,39 @@
       "confidence": "high"
     },
     "col_vc_backed": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pe_backed": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_cvc_backed": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_gov_backed": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_top_tier_vc": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pre_ipo_investors": {
       "value": "NA",
@@ -399,16 +405,18 @@
       "confidence": "high"
     },
     "col_vc_pe_stake": {
-      "value": 0.0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 25,
-      "quote": "For the calculation methods of the aforementioned key financial ratios, see “Financial",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

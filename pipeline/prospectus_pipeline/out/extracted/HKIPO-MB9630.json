@@ -254,40 +254,46 @@
       "confidence": "medium"
     },
     "col_BA": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_backed": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pe_backed": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_cvc_backed": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_gov_backed": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_top_tier_vc": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_pre_ipo_investors": {
       "value": "NA",
@@ -296,16 +302,18 @@
       "confidence": "low"
     },
     "col_vc_pe_stake": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 19,
-      "quote": "Our Company has been listed on the STAR Market of Shanghai Stock Exchange since April 2021.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

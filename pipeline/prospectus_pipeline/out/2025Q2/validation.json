@@ -131,9 +131,9 @@
     },
     {
       "code": "2865.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2865.json",
-      "hash": "af6bd0acfbc168d2a9c0187fd0d98d4ed7983d93ac92e50db1d6b0ef8f31ad98",
-      "json_sha256": "ea3078c29fba33501b3baa8aa193e6881293e30ca555ec5d23715f953a68afbd",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2865.json",
+      "hash": "a32c86bfd673a7213db4ace73487bd76daf266fab5122f017a360da5af2c88bc",
+      "json_sha256": "315da380393e88504507916b85497ac6d1e63dabffb4ab06e434e258b4e61be1",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -142,8 +142,8 @@
         "col_pe_backed",
         "col_cvc_backed",
         "col_top_tier_vc",
-        "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ],
@@ -192,9 +192,9 @@
     },
     {
       "code": "3750.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3750.json",
-      "hash": "65e68e9a81ac5ea5d6d8b7fc31f293a130ed47aaaa7054bd42a31351105103b5",
-      "json_sha256": "a9c68454d6dbd147f4024bcb068cb4ab50e4fa26c0af54d80c8b2c5a7da364db",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3750.json",
+      "hash": "b201c640447f8a7c1093792c81a7dfd1ced2e296616056e2118121aba1d3b704",
+      "json_sha256": "faefdbb511737dbaaaab2ec1fecc378dc77c3cbf113659ba71c64cdee6b196a7",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -207,6 +207,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ],
@@ -220,9 +221,9 @@
     },
     {
       "code": "1276.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB1276.json",
-      "hash": "52d614f75450a1dbc791739e592c69a3d6928d8bb4c8e1c0f0085d3bcf1f29ac",
-      "json_sha256": "a23ac45692ffe46918099e4ce1d025c08385fc9979915f7e35689874b354d229",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB1276.json",
+      "hash": "0e4bf7461d9bb75436e2c6f4770ba26142213decd8001049cee64bb454054982",
+      "json_sha256": "5d2c3c0c955ca2038a2627686ebd4975a6d29e4e8acec57c15f6783c1ca7cf67",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -234,6 +235,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ],
@@ -299,9 +301,9 @@
     },
     {
       "code": "2603.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2603.json",
-      "hash": "e1b2eef3e4caae3f49bd41b0b98d241948ae838528e604500432a6c3b7ca52da",
-      "json_sha256": "04f672218527bce9db4c0c2ef34913cf1266a3238cadd3daff184130b8e7ecc1",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2603.json",
+      "hash": "64e3b34af09aa94f34dd157a0770fc4b7477c2aceda3d9dc0583e522d6fdd60d",
+      "json_sha256": "ddab1e8ed7b346704704d5f4c0354e7067d48afe5087ad73bd49b8eb726fb50d",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -314,6 +316,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF"
@@ -429,9 +432,9 @@
     },
     {
       "code": "3288.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3288.json",
-      "hash": "d5cebea404dbc3373e93c69f5dfed47235566f9fa4140403ef97c1b5503d629a",
-      "json_sha256": "b255e8774d563be3eeb72f7d9bd20dd7a31213f3e91058bc91e2d4bdb8fc518c",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB3288.json",
+      "hash": "6a15c512412bb47a6bdcb723dd3d99682bfeba9d43ca916fe7fc56907d563993",
+      "json_sha256": "34abe165e4712daee756105b94ecbf81eeedddf436ee809bd85ebb47c827253f",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -443,6 +446,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF"
@@ -457,9 +461,9 @@
     },
     {
       "code": "2050.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2050.json",
-      "hash": "95b25ad018db6e742351b7c89a0f0620e68fa0d77847c018855654c1b3df9bac",
-      "json_sha256": "4e0ecf6331f8f5e2e9ecdfaa753b3719d8d46292554f1fd945a316b6d49f8df4",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB2050.json",
+      "hash": "c3104ad301947a86624349cf9a3ffbc19906ebaae522a10aafe7f8214456ece9",
+      "json_sha256": "1dd0830841fd0659157fb185039b53b0e3c433ce42b4e415cf885bd9a9373c78",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -471,6 +475,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ],
@@ -625,9 +630,9 @@
     },
     {
       "code": "6883.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6883.json",
-      "hash": "ae91cdb2a317097f3fb4a59117d2d9620c29efaed1d60a712ee7c200c8f3031c",
-      "json_sha256": "8760e17a9d03d85e6812cd7e0afdd8c4f7731433df4fdde8522bea2df91081f3",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q2/extracted/HKIPO-MB6883.json",
+      "hash": "bd74bdbb4651280c32a254fdfdb7354debc0f8e312b9bd01f63fbb60441eeebf",
+      "json_sha256": "166bc00ebf9c4fd07e76350568eaf2033fc7efcebc37525bae343d0abb11373c",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -781,8 +786,8 @@
         "col_pe_backed",
         "col_cvc_backed",
         "col_top_tier_vc",
-        "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ]
@@ -808,6 +813,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ]
@@ -823,6 +829,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ]
@@ -858,6 +865,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF"
@@ -913,6 +921,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF"
@@ -929,6 +938,7 @@
         "col_top_tier_vc",
         "col_pre_ipo_investors",
         "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration"
       ]

@@ -1,6 +1,6 @@
 # HK IPO Excel vs JSON 逐格对账与数据质量审计报告
 
-> **生成时间**：2026-10-15 10:59:08  
+> **生成时间**：2026-10-17 09:53:28  
 > **目标工作簿**：`cohorts/HKIPO-MB2025Q4.xlsx` (Sheet: `NLR`)  
 > **审计范围**：47 家公司 × (70 招股书字段 + 18 配发字段 = 88 字段，共 4,136 个单元格) + 103 个外部工具字段  
 
@@ -15,7 +15,7 @@
 ### 关键发现点：
 1. **总单元格数**：4136 个，匹配格数：4136（匹配率：100.00%）；
 2. **差异统计**：Excel 缺失 0 项，JSON 缺失 0 项，数值不匹配 0 项；
-   其中匹配格内有 265 格两边均缺失，不是已核实的证据，不能计入证据覆盖率；
+   其中匹配格内有 266 格两边均缺失，不是已核实的证据，不能计入证据覆盖率；
 3. **外部/工具衍生字段**：共 103 列；全量填报 71 列，部分填报 9 列，未填报或仅有缺失占位 23 列。此统计与上方 88 字段逐格对账是不同范围。
 
 ## 二、差异明细清单 (Discrepancies)
@@ -163,7 +163,7 @@
 | `2687.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2691.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2693.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
-| `2695.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
+| `2695.HK` | ✅ PASS | ✅ PASS | ✅ PASS | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2698.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2718.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2788.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
