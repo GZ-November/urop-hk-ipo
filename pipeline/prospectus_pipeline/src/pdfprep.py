@@ -369,6 +369,7 @@ PACKET_HEADER = """# 招股书抽取任务包：{code} {name}
 8. listing route 必须按招股书披露的 basis of listing/适用章节填写，不能按行业猜测；中文名填简体中文。
 9. `BA` 只表示上市前是否有 VC/PE 支持；基石投资者身份本身不能证明 BA。`BC`/`BD` 分别是控制人上市时经济权益/投票权，不是基石最终获配。
 10. 每一项都要保留准确页码、原文短摘录和置信度；不得为了配平而修改原文数字。
+11. 上市前投资字段（BA、vc/pe/cvc/gov/top_tier、vc_board_seat、vc_pe_stake）：0 表示"确认没有"，必须有依据——招股书明确说明没有上市前投资（earliest_round 填 None），或已列出上市前投资者并逐一分类，或在该字段 note 以 `zero-basis:` 写明能证明为 0 的披露与页码（如上市前股东 100% 为控股家族）。找不到依据就填 NaN；1 必须对应具名投资者；holding_duration 只有具名最早轮次时才填数字。
 
 ---
 """
