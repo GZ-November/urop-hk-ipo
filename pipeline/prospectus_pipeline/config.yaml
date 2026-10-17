@@ -59,8 +59,8 @@ extract:
     cornerstone: 80000
     extra_financial: 110000
     chinese_name: 10000
-    ownership: 50000
-    offering: 20000
+    ownership: 60000      # 已审 2026 包按 6 万取窗口：股本、上市前投资、控制权页在后段
+    offering: 60000       # 时间表之后的 HOW TO APPLY 页（CC–CE 引用）需同等预算
   max_chars_total: 550000      # 覆盖现行 60 字段的全部分组
   cover_pages: 3               # 封面页数（中文名、价格）
 
