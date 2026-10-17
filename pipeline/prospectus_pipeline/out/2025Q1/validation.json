@@ -64,9 +64,9 @@
     },
     {
       "code": "2613.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-wilson-85faa8/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2613.json",
-      "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
-      "json_sha256": "57b7b3e8f58c916e6a939a1c8cf26a7ae71f3f17b95f7463634ad5313ab21bc9",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2613.json",
+      "hash": "e5f58e9446d6a7ecc14a597a534f77dbf6a7ee5d70df0f6f8f9a5daa968bd213",
+      "json_sha256": "52b4213febbaab0ae2632d80560d39f3080a7aabc6f2c89b98ed571afe8f6e3c",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -103,9 +103,9 @@
     },
     {
       "code": "2530.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-wilson-85faa8/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2530.json",
-      "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
-      "json_sha256": "a3d439d68e1b1ab4ca9fe998932cb9fc6c83c489aae8a2b88bbd6fb08cda6cd7",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2530.json",
+      "hash": "a88900eb4cb840f7984ee6e1b28ab69b415f0dfb7637652e29f28743d83e6c8a",
+      "json_sha256": "e25f3e1c0fd020b43cb4146d5599a722116023b0f91b531447f4ccfb1ed62da5",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -134,9 +134,9 @@
     },
     {
       "code": "0805.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-wilson-85faa8/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB0805.json",
-      "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
-      "json_sha256": "a89379525359ea46dac68f025f539cb2c5b339cfa0672ae725d59f43410b21f3",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB0805.json",
+      "hash": "4217a2b6501c5dc1a3c7f169ffaef34290fffa4d499213d1602b2ba131851dde",
+      "json_sha256": "b62addd1fa5166a4f2199813cd3b95ca8410ab3886c6eba498970ed3fcd3ab16",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -247,13 +247,21 @@
     },
     {
       "code": "6693.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-wilson-85faa8/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB6693.json",
-      "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
-      "json_sha256": "2b2e5ec02a4419682b094120b38ed2855aab3f599a0b6274ef937061f8981ccc",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB6693.json",
+      "hash": "392a511972b65602bfdbf3ebf68682062380799e889971b8904dd32e23199bc6",
+      "json_sha256": "ab781118a4a655c80d51f09514f80a2405b67b1b74cbd8baa503920b844ccbcf",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
         "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF",
@@ -325,9 +333,9 @@
     },
     {
       "code": "2569.HK",
-      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-wilson-85faa8/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2569.json",
-      "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
-      "json_sha256": "6c7aecc640000867a76e2c1a57ec12ae51570eab98c8dfb628bada22f6267fe0",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q1/extracted/HKIPO-MB2569.json",
+      "hash": "7c264d22302078436f14b4d83b5c7c6089a1dc0886fd5c2bbc1c27bb9fdf081d",
+      "json_sha256": "a3261cfa5b607aff86afafecb4dbbb9800d4132b320ad3894c966eb2a85c5230",
       "status": "warning_missing",
       "fields_total": 70,
       "fields_missing": [
@@ -463,7 +471,15 @@
     {
       "code": "6693.HK",
       "fields": [
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
         "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_vc_board_seat",
         "col_earliest_round",
         "col_holding_duration",
         "col_BF",

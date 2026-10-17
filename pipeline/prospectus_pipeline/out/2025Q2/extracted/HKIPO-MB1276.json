@@ -320,10 +320,11 @@
       "confidence": "low"
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 407,
-      "quote": "士) \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n52\nNon-executive\nDirector\nJanuary 2020\nJanuary 16, 2020\nResponsible for providing\nrecommendations on the\nstrategic development of\nour Group\nMr. Dong Jiahong\n(董家鴻先生) \u0002 \u0002 \u0002 \u0002 \u0002 \u0002\n65\nI",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus neither states that there was no pre-IPO investment nor names pre-IPO investors, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

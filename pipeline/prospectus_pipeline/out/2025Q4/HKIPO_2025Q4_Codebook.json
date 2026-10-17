@@ -3,7 +3,7 @@
     "dataset_name": "HK IPO Main Board 2025 Q4 Full Dataset",
     "board": "Main Board",
     "cohort": "2025 Q4",
-    "workbook_name": "HKIPO-MB.xlsx",
+    "workbook_name": "HKIPO-MB2025Q4.xlsx",
     "sheet": "NLR",
     "sample_size": 47,
     "variable_count": 202,
@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-15 10:54:37"
+    "generated_at": "2026-10-17 09:53:38"
   },
   "variables": [
     {
@@ -1554,9 +1554,9 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 27,
-        "missing_n": 20,
-        "fill_rate_pct": 57.45,
+        "valid_n": 26,
+        "missing_n": 21,
+        "fill_rate_pct": 55.32,
         "mean": 1.0,
         "std": 0.0,
         "median": 1.0,

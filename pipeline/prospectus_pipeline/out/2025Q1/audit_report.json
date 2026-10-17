@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16 20:35:25",
+  "timestamp": "2026-10-17 09:53:26",
   "workbook": "cohorts/HKIPO-MB2025Q1.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 15,
@@ -13,29 +13,34 @@
       "excel_missing": 0,
       "json_missing": 0,
       "value_mismatch": 0,
-      "both_missing": 61,
-      "matches_with_value": 989,
+      "both_missing": 69,
+      "matches_with_value": 981,
       "json_files_absent": 0,
       "both_missing_by_column": {
-        "BK": 5,
+        "BK": 6,
         "CS": 3,
         "CX": 4,
         "BJ": 5,
         "BM": 7,
         "BN": 7,
-        "BG": 1,
+        "BG": 2,
         "BS": 7,
         "AI": 2,
         "AJ": 2,
         "AK": 2,
         "BB": 2,
         "CT": 2,
-        "BI": 2,
+        "BI": 3,
         "AZ": 3,
         "BA": 3,
         "BP": 1,
         "BQ": 1,
         "BR": 1,
+        "BD": 1,
+        "BE": 1,
+        "BF": 1,
+        "BH": 1,
+        "BL": 1,
         "CV": 1
       },
       "by_column": {}
@@ -1049,25 +1054,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
+          "hash": "4217a2b6501c5dc1a3c7f169ffaef34290fffa4d499213d1602b2ba131851dde",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
+          "hash": "4217a2b6501c5dc1a3c7f169ffaef34290fffa4d499213d1602b2ba131851dde",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
+          "hash": "4217a2b6501c5dc1a3c7f169ffaef34290fffa4d499213d1602b2ba131851dde",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "0c96b930376f2b782c02984b2aad8b65b1ed83c81f1a54a3cab1e8532524d7a3",
+          "hash": "4217a2b6501c5dc1a3c7f169ffaef34290fffa4d499213d1602b2ba131851dde",
           "verdict": null
         }
       },
@@ -1211,25 +1216,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "hash": "a88900eb4cb840f7984ee6e1b28ab69b415f0dfb7637652e29f28743d83e6c8a",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "hash": "a88900eb4cb840f7984ee6e1b28ab69b415f0dfb7637652e29f28743d83e6c8a",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "hash": "a88900eb4cb840f7984ee6e1b28ab69b415f0dfb7637652e29f28743d83e6c8a",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "7eb0c595b94e8507cb1f96fa2a9eab3f25423a9e75b525bd467f68e1738a7779",
+          "hash": "a88900eb4cb840f7984ee6e1b28ab69b415f0dfb7637652e29f28743d83e6c8a",
           "verdict": null
         }
       },
@@ -1373,25 +1378,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "hash": "7c264d22302078436f14b4d83b5c7c6089a1dc0886fd5c2bbc1c27bb9fdf081d",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "hash": "7c264d22302078436f14b4d83b5c7c6089a1dc0886fd5c2bbc1c27bb9fdf081d",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "hash": "7c264d22302078436f14b4d83b5c7c6089a1dc0886fd5c2bbc1c27bb9fdf081d",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "332f786ac4263a85aaf019cc4cb851c6e78a4c95b82f4734676a6f7265fc1998",
+          "hash": "7c264d22302078436f14b4d83b5c7c6089a1dc0886fd5c2bbc1c27bb9fdf081d",
           "verdict": null
         }
       },
@@ -1589,25 +1594,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "hash": "e5f58e9446d6a7ecc14a597a534f77dbf6a7ee5d70df0f6f8f9a5daa968bd213",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "hash": "e5f58e9446d6a7ecc14a597a534f77dbf6a7ee5d70df0f6f8f9a5daa968bd213",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "hash": "e5f58e9446d6a7ecc14a597a534f77dbf6a7ee5d70df0f6f8f9a5daa968bd213",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "2a2f9f075f674a838a2f5b337886f0fc34f72c341d505c1995f475f153b8899c",
+          "hash": "e5f58e9446d6a7ecc14a597a534f77dbf6a7ee5d70df0f6f8f9a5daa968bd213",
           "verdict": null
         }
       },
@@ -1751,25 +1756,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "hash": "392a511972b65602bfdbf3ebf68682062380799e889971b8904dd32e23199bc6",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "hash": "392a511972b65602bfdbf3ebf68682062380799e889971b8904dd32e23199bc6",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "hash": "392a511972b65602bfdbf3ebf68682062380799e889971b8904dd32e23199bc6",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "a6ab49e15e4ec14c89b6fe75aad8c5e2f712f010f200130cd60fb433565b7a2c",
+          "hash": "392a511972b65602bfdbf3ebf68682062380799e889971b8904dd32e23199bc6",
           "verdict": null
         }
       },

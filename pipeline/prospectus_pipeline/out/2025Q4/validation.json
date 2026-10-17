@@ -2,8 +2,53 @@
   "schema_version": 1,
   "target": "prospectus",
   "expected_codes": [
+    "2652.HK",
+    "2650.HK",
     "2575.HK",
-    "2685.HK"
+    "2670.HK",
+    "2637.HK",
+    "6687.HK",
+    "0638.HK",
+    "1384.HK",
+    "6031.HK",
+    "6166.HK",
+    "6980.HK",
+    "2718.HK",
+    "9927.HK",
+    "0699.HK",
+    "0800.HK",
+    "2026.HK",
+    "2630.HK",
+    "2698.HK",
+    "2579.HK",
+    "2788.HK",
+    "2685.HK",
+    "9609.HK",
+    "2539.HK",
+    "2693.HK",
+    "2408.HK",
+    "2658.HK",
+    "2676.HK",
+    "2687.HK",
+    "2659.HK",
+    "7618.HK",
+    "2655.HK",
+    "3887.HK",
+    "2546.HK",
+    "3881.HK",
+    "2396.HK",
+    "2581.HK",
+    "2691.HK",
+    "2695.HK",
+    "2635.HK",
+    "2661.HK",
+    "3378.HK",
+    "2657.HK",
+    "2671.HK",
+    "3317.HK",
+    "3696.HK",
+    "6600.HK",
+    "6651.HK"
   ],
   "records": [
     {
@@ -21,21 +66,117 @@
       "errors": [
         "[Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2685.md'"
       ]
+    },
+    {
+      "code": "2695.HK",
+      "file": "/Users/georgezhu/Desktop/UROP HK IPO/.claude/worktrees/serene-aryabhata-add594/pipeline/prospectus_pipeline/out/2025Q4/extracted/HKIPO-MB2695.json",
+      "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
+      "json_sha256": "f327787553feaf4fa189564bb0d51fd2897736b1709548fb5873cb95c8280432",
+      "status": "warning_missing",
+      "fields_total": 70,
+      "fields_missing": [
+        "col_AW",
+        "col_AX",
+        "col_CJ",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_vc_board_seat",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ],
+      "errors": [],
+      "warnings": [],
+      "track_record": {
+        "status": "ok",
+        "reason": "",
+        "year1": "6M2025@06-30"
+      }
     }
   ],
-  "missing_files": [],
-  "pending_missing_fields": [],
+  "missing_files": [
+    "2652.HK",
+    "2650.HK",
+    "2670.HK",
+    "2637.HK",
+    "6687.HK",
+    "0638.HK",
+    "1384.HK",
+    "6031.HK",
+    "6166.HK",
+    "6980.HK",
+    "2718.HK",
+    "9927.HK",
+    "0699.HK",
+    "0800.HK",
+    "2026.HK",
+    "2630.HK",
+    "2698.HK",
+    "2579.HK",
+    "2788.HK",
+    "9609.HK",
+    "2539.HK",
+    "2693.HK",
+    "2408.HK",
+    "2658.HK",
+    "2676.HK",
+    "2687.HK",
+    "2659.HK",
+    "7618.HK",
+    "2655.HK",
+    "3887.HK",
+    "2546.HK",
+    "3881.HK",
+    "2396.HK",
+    "2581.HK",
+    "2691.HK",
+    "2635.HK",
+    "2661.HK",
+    "3378.HK",
+    "2657.HK",
+    "2671.HK",
+    "3317.HK",
+    "3696.HK",
+    "6600.HK",
+    "6651.HK"
+  ],
+  "pending_missing_fields": [
+    {
+      "code": "2695.HK",
+      "fields": [
+        "col_AW",
+        "col_AX",
+        "col_CJ",
+        "col_BA",
+        "col_vc_backed",
+        "col_pe_backed",
+        "col_cvc_backed",
+        "col_gov_backed",
+        "col_top_tier_vc",
+        "col_pre_ipo_investors",
+        "col_vc_pe_stake",
+        "col_vc_board_seat",
+        "col_earliest_round",
+        "col_holding_duration",
+        "col_BF"
+      ]
+    }
+  ],
   "errors": [
     {
       "code": "2575.HK",
-      "detail": "cannot parse/validate /Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2575.json: [Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2575.md'"
+      "detail": "[Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2575.md'"
     },
     {
       "code": "2685.HK",
-      "detail": "cannot parse/validate /Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/out/extracted/HKIPO-MB2685.json: [Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2685.md'"
+      "detail": "[Errno 2] No such file or directory: '/Users/georgezhu/Desktop/UROP HK IPO/pipeline/prospectus_pipeline/datasets/HKIPO_2025-10-01_2025-12-31_HKIPO-MB/data/packets/HKIPO-MB2685.md'"
     }
   ],
-  "gate_pass": false,
-  "run_id": "0965e7d4f0",
-  "generated_at": "2026-10-15T02:39:26.193107+00:00"
+  "gate_pass": false
 }

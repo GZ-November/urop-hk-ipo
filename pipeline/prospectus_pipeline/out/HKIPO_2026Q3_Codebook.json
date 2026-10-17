@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-14 23:28:59"
+    "generated_at": "2026-10-17 09:53:43"
   },
   "variables": [
     {
@@ -1445,17 +1445,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 7,
-        "fill_rate_pct": 76.67,
-        "mean": 0.9130434782608695,
-        "std": 0.2881040655200304,
+        "valid_n": 22,
+        "missing_n": 8,
+        "fill_rate_pct": 73.33,
+        "mean": 0.9545454545454546,
+        "std": 0.21320071635561044,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.91 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.95 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1471,17 +1471,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 21,
-        "missing_n": 9,
-        "fill_rate_pct": 70.0,
-        "mean": 0.9047619047619048,
-        "std": 0.3007926037591192,
+        "valid_n": 20,
+        "missing_n": 10,
+        "fill_rate_pct": 66.67,
+        "mean": 0.95,
+        "std": 0.22360679774997896,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.90 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.95 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1497,17 +1497,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 7,
-        "fill_rate_pct": 76.67,
-        "mean": 0.8260869565217391,
-        "std": 0.38755338788158983,
+        "valid_n": 22,
+        "missing_n": 8,
+        "fill_rate_pct": 73.33,
+        "mean": 0.8636363636363636,
+        "std": 0.35125008665710444,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.83 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.86 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1523,17 +1523,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 21,
-        "missing_n": 9,
-        "fill_rate_pct": 70.0,
-        "mean": 0.7142857142857143,
-        "std": 0.4629100498862757,
+        "valid_n": 20,
+        "missing_n": 10,
+        "fill_rate_pct": 66.67,
+        "mean": 0.75,
+        "std": 0.44426165831931924,
         "median": 1.0,
         "min": 0.0,
-        "q25": 0.0,
+        "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.71 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.75 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1549,17 +1549,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 22,
-        "missing_n": 8,
-        "fill_rate_pct": 73.33,
-        "mean": 0.8181818181818182,
-        "std": 0.39477101697586137,
+        "valid_n": 21,
+        "missing_n": 9,
+        "fill_rate_pct": 70.0,
+        "mean": 0.8571428571428571,
+        "std": 0.3585685828003181,
         "median": 1.0,
         "min": 0.0,
         "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.82 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.86 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1575,17 +1575,17 @@
       "coverage_status": "Sparse",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 14,
-        "missing_n": 16,
-        "fill_rate_pct": 46.67,
-        "mean": 0.7142857142857143,
-        "std": 0.4688072309384954,
+        "valid_n": 13,
+        "missing_n": 17,
+        "fill_rate_pct": 43.33,
+        "mean": 0.7692307692307693,
+        "std": 0.4385290096535146,
         "median": 1.0,
         "min": 0.0,
-        "q25": 0.0,
+        "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.71 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.77 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1601,10 +1601,10 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 22,
-        "missing_n": 8,
-        "fill_rate_pct": 73.33,
-        "unique_count": 22,
+        "valid_n": 23,
+        "missing_n": 7,
+        "fill_rate_pct": 76.67,
+        "unique_count": 23,
         "top_categories": {
           "TRT Senior Care Fund; TRT Medical Fund; Tongqing Fund; Tongkang Fund; Mr. Zhu; Ms. Pan": 1,
           "SAIC (ZJSmart Holdings Limited); General Motors Holdings LLC; Mercedes-Benz AG; Temasek (Anderson Investments Pte. Ltd.); Shunwei Capital (Talented Ventures Limited, Astrend Opportunity III Alpha Limited); EV Ventures L.L.C-FZ; NIO Capital (Nio Momentum LLC, Nio Momentum II LLC, Andante Symphony Limited); YF Momenta Limited (Yunfeng); Blue Lake Capital; Ant Group (Accelerator XVI Ltd., ANTFIN Singapore Holding Pte. Ltd.); Tencent (Image Frame Investment (HK) Limited); E-Town Capital; Toyota Motor Corporation; Granite Asia (GGV Capital VI L.P., GGV Capital VI Entrepreneurs Fund L.P., GGV Capital VI Plus L.P., Granite Asia IX VCC); Aldrich Bay Limited; Sinovation Fund III, L.P.; CT Prime MMT Limited; Grower International Limited; GCBM Holdings Limited; CDH Investments (Cognitive Dynamics Limited, OG Blaze Dynamics Limited); Zhen Partners Fund IV, L.P.": 1,
@@ -1612,7 +1612,7 @@
           "Minxi Xinghang; Shanghai Chentao; Zijin Mining; Eight Roads; NIO Capital; Xihe Investment; Wuxi Xingqi; Zhengzhou Hi-Tech Fund; CATL Capital; CATL; Yankuang Capital; Tonly; Desay SV; Gaocheng Capital; Hony Investment": 1,
           "Leaguer SIIs; Wingtech Technology; InteBridge Fund LP": 1
         },
-        "summary_display": "共 22 种取值 ('TRT Senior Care Fund; TRT Medical Fund; Tongqing Fund; Tongkang Fund; Mr. Zhu; Ms. Pan': 1, 'SAIC (ZJSmart Holdings Limited); General Motors Holdings LLC; Mercedes-Benz AG; Temasek (Anderson Investments Pte. Ltd.); Shunwei Capital (Talented Ventures Limited, Astrend Opportunity III Alpha Limited); EV Ventures L.L.C-FZ; NIO Capital (Nio Momentum LLC, Nio Momentum II LLC, Andante Symphony Limited); YF Momenta Limited (Yunfeng); Blue Lake Capital; Ant Group (Accelerator XVI Ltd., ANTFIN Singapore Holding Pte. Ltd.); Tencent (Image Frame Investment (HK) Limited); E-Town Capital; Toyota Motor Corporation; Granite Asia (GGV Capital VI L.P., GGV Capital VI Entrepreneurs Fund L.P., GGV Capital VI Plus L.P., Granite Asia IX VCC); Aldrich Bay Limited; Sinovation Fund III, L.P.; CT Prime MMT Limited; Grower International Limited; GCBM Holdings Limited; CDH Investments (Cognitive Dynamics Limited, OG Blaze Dynamics Limited); Zhen Partners Fund IV, L.P.': 1, 'Greenland Financial Holdings Group; SWLVC; TSREIC (L.P.); Intel; Hon Universe Aviation Industry Fund; Nantong Jianghai Fund': 1)"
+        "summary_display": "共 23 种取值 ('TRT Senior Care Fund; TRT Medical Fund; Tongqing Fund; Tongkang Fund; Mr. Zhu; Ms. Pan': 1, 'SAIC (ZJSmart Holdings Limited); General Motors Holdings LLC; Mercedes-Benz AG; Temasek (Anderson Investments Pte. Ltd.); Shunwei Capital (Talented Ventures Limited, Astrend Opportunity III Alpha Limited); EV Ventures L.L.C-FZ; NIO Capital (Nio Momentum LLC, Nio Momentum II LLC, Andante Symphony Limited); YF Momenta Limited (Yunfeng); Blue Lake Capital; Ant Group (Accelerator XVI Ltd., ANTFIN Singapore Holding Pte. Ltd.); Tencent (Image Frame Investment (HK) Limited); E-Town Capital; Toyota Motor Corporation; Granite Asia (GGV Capital VI L.P., GGV Capital VI Entrepreneurs Fund L.P., GGV Capital VI Plus L.P., Granite Asia IX VCC); Aldrich Bay Limited; Sinovation Fund III, L.P.; CT Prime MMT Limited; Grower International Limited; GCBM Holdings Limited; CDH Investments (Cognitive Dynamics Limited, OG Blaze Dynamics Limited); Zhen Partners Fund IV, L.P.': 1, 'Greenland Financial Holdings Group; SWLVC; TSREIC (L.P.); Intel; Hon Universe Aviation Industry Fund; Nantong Jianghai Fund': 1)"
       }
     },
     {
@@ -1628,17 +1628,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 19,
-        "missing_n": 11,
-        "fill_rate_pct": 63.33,
-        "mean": 0.38906315789473683,
-        "std": 0.27558362757876903,
-        "median": 0.438,
+        "valid_n": 18,
+        "missing_n": 12,
+        "fill_rate_pct": 60.0,
+        "mean": 0.41067777777777775,
+        "std": 0.266486336821268,
+        "median": 0.45535000000000003,
         "min": 0.0,
-        "q25": 0.1214,
+        "q25": 0.1675,
         "q75": 0.6406,
         "max": 0.8374,
-        "summary_display": "均值 0.39 | 中位数 0.44 | 区间 [0.00, 0.84]"
+        "summary_display": "均值 0.41 | 中位数 0.46 | 区间 [0.00, 0.84]"
       }
     },
     {
@@ -1654,13 +1654,13 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 17,
-        "missing_n": 13,
-        "fill_rate_pct": 56.67,
+        "valid_n": 16,
+        "missing_n": 14,
+        "fill_rate_pct": 53.33,
         "true_count": 13,
-        "false_count": 4,
-        "true_pct": 76.5,
-        "summary_display": "1 (是): 13 家 (76.5%), 0 (否): 4 家"
+        "false_count": 3,
+        "true_pct": 81.2,
+        "summary_display": "1 (是): 13 家 (81.2%), 0 (否): 3 家"
       }
     },
     {

@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-16 20:35:24"
+    "generated_at": "2026-10-17 09:53:40"
   },
   "variables": [
     {
@@ -1444,21 +1444,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.7368421052631579,
-        "std": 0.4462583499902143,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.9032258064516129,
+        "std": 0.30053715351876426,
         "median": 1.0,
         "min": 0.0,
-        "q25": 0.0,
+        "q25": 1.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.74 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.90 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1470,21 +1470,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.6052631578947368,
-        "std": 0.4953553834402849,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.7419354838709677,
+        "std": 0.44480272297456924,
         "median": 1.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.61 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.74 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1496,21 +1496,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.2894736842105263,
-        "std": 0.45960586739381004,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.3548387096774194,
+        "std": 0.48637345711392005,
         "median": 0.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.29 | 中位数 0.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.35 | 中位数 0.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1522,21 +1522,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.42105263157894735,
-        "std": 0.5003554924018236,
-        "median": 0.0,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.5161290322580645,
+        "std": 0.508000508000762,
+        "median": 1.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.42 | 中位数 0.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.52 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1548,21 +1548,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.3157894736842105,
-        "std": 0.4710691208760756,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.41935483870967744,
+        "std": 0.501610310127101,
         "median": 0.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.32 | 中位数 0.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.42 | 中位数 0.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1574,21 +1574,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.5789473684210527,
-        "std": 0.5003554924018236,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.7096774193548387,
+        "std": 0.4614143753790638,
         "median": 1.0,
         "min": 0.0,
         "q25": 0.0,
         "q75": 1.0,
         "max": 1.0,
-        "summary_display": "均值 0.58 | 中位数 1.00 | 区间 [0.00, 1.00]"
+        "summary_display": "均值 0.71 | 中位数 1.00 | 区间 [0.00, 1.00]"
       }
     },
     {
@@ -1604,10 +1604,10 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 29,
-        "missing_n": 9,
-        "fill_rate_pct": 76.32,
-        "unique_count": 29,
+        "valid_n": 30,
+        "missing_n": 8,
+        "fill_rate_pct": 78.95,
+        "unique_count": 30,
         "top_categories": {
           "Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund": 1,
           "Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund": 1,
@@ -1615,7 +1615,7 @@
           "LYFE Capital; Legend Star; Boyu Capital; Sequoia China; OrbiMed; Temasek": 1,
           "Alisoft China (Alibaba); miHoYo; IDG Capital; Tencent; Future Capital": 1
         },
-        "summary_display": "共 29 种取值 ('Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund': 1, 'Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund': 1, 'Princeville Global; HongShan; Shanghai Lianhe Investment; Cathay Capital; Greater Bay Area Fund': 1)"
+        "summary_display": "共 30 种取值 ('Qiming Venture Partners; Country Garden VC; Sky9 Capital; Songhe Capital; Zhuhai Gree; Walden International; Shanghai SOE Reform Fund': 1, 'Qiming Venture Partners; HongShan; Legend Capital; Meituan; Alibaba; Tencent; Xiaomi; Prosperity7; Beijing AI Fund': 1, 'Princeville Global; HongShan; Shanghai Lianhe Investment; Cathay Capital; Greater Bay Area Fund': 1)"
       }
     },
     {
@@ -1627,21 +1627,21 @@
       "group": "ownership",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NaN in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
-        "mean": 0.24941842105263157,
-        "std": 0.23552313693111337,
-        "median": 0.20550000000000002,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
+        "mean": 0.30730322580645164,
+        "std": 0.2229539660765139,
+        "median": 0.321,
         "min": 0.0,
-        "q25": 0.0,
-        "q75": 0.4532,
+        "q25": 0.082,
+        "q75": 0.513,
         "max": 0.6852,
-        "summary_display": "均值 0.25 | 中位数 0.21 | 区间 [0.00, 0.69]"
+        "summary_display": "均值 0.31 | 中位数 0.32 | 区间 [0.00, 0.69]"
       }
     },
     {
@@ -1653,17 +1653,17 @@
       "group": "ownership",
       "data_type": "boolean (0/1)",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "No missing observations",
-      "coverage_status": "Complete (100%)",
+      "missing_policy": "NA in Excel, empty in econometric CSV",
+      "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 38,
-        "missing_n": 0,
-        "fill_rate_pct": 100.0,
+        "valid_n": 31,
+        "missing_n": 7,
+        "fill_rate_pct": 81.58,
         "true_count": 19,
-        "false_count": 19,
-        "true_pct": 50.0,
-        "summary_display": "1 (是): 19 家 (50.0%), 0 (否): 19 家"
+        "false_count": 12,
+        "true_pct": 61.3,
+        "summary_display": "1 (是): 19 家 (61.3%), 0 (否): 12 家"
       }
     },
     {
@@ -1706,17 +1706,17 @@
       "coverage_status": "Adequate",
       "source": "招股书法定披露章节（Group: ownership）",
       "stats": {
-        "valid_n": 30,
-        "missing_n": 8,
-        "fill_rate_pct": 78.95,
-        "mean": 6.854333333333333,
-        "std": 3.041955681435233,
-        "median": 6.96,
-        "min": 0.0,
-        "q25": 4.58,
+        "valid_n": 29,
+        "missing_n": 9,
+        "fill_rate_pct": 76.32,
+        "mean": 7.0906896551724135,
+        "std": 2.801462540269282,
+        "median": 7.42,
+        "min": 1.28,
+        "q25": 4.67,
         "q75": 9.33,
         "max": 12.5,
-        "summary_display": "均值 6.85 | 中位数 6.96 | 区间 [0.00, 12.50]"
+        "summary_display": "均值 7.09 | 中位数 7.42 | 区间 [1.28, 12.50]"
       }
     },
     {

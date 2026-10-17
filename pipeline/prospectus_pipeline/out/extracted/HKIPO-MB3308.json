@@ -254,58 +254,67 @@
       "confidence": "high"
     },
     "col_BA": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_vc_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_pe_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_cvc_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_gov_backed": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_top_tier_vc": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
-    },
-    "col_pre_ipo_investors": {
-      "value": "NA",
+      "value": "NaN",
       "page": null,
       "quote": "",
-      "confidence": "high"
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_vc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_pe_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_cvc_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_gov_backed": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_top_tier_vc": {
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the issuer's A Shares were already listed, so the pre-offering holders include public A-share holders; the prospectus has no explicit statement that there was no pre-IPO investment, and the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), is not described as a VC, PE, CVC or state investor, so none of the flags can be confirmed as 0 or 1."
+    },
+    "col_pre_ipo_investors": {
+      "value": "Google Capital (Hong Kong) Limited",
+      "page": 155,
+      "quote": "From November 2009 to September 2016, Suzhou InnoLight conducted rounds of financings, including investment made by Google Capital (Hong Kong) Limited in September 2014.",
+      "confidence": "medium",
+      "note": "Invested in September 2014 in the operating subsidiary Suzhou InnoLight, acquired by the issuer in 2017 (pp153, 155-156); its investor type is not described."
     },
     "col_vc_pe_stake": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), has no disclosed holding or director linked to it immediately before the offering; the A-share register includes public holders, so a 0 cannot be confirmed."
     },
     "col_vc_board_seat": {
-      "value": 0,
-      "page": 23,
-      "quote": "Our A Shares have been listed on the ChiNext Market of the Shenzhen Stock Exchange since 2012 with the stock code of 300308.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the only pre-IPO investor named, Google Capital (Hong Kong) Limited (2014, in the subsidiary Suzhou InnoLight, p155), has no disclosed holding or director linked to it immediately before the offering; the A-share register includes public holders, so a 0 cannot be confirmed."
     },
     "col_earliest_round": {
       "value": "NA",

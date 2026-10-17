@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15 10:59:08",
+  "timestamp": "2026-10-17 09:53:28",
   "workbook": "cohorts/HKIPO-MB2025Q4.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 47,
@@ -13,15 +13,15 @@
       "excel_missing": 0,
       "json_missing": 0,
       "value_mismatch": 0,
-      "both_missing": 247,
-      "matches_with_value": 3043,
+      "both_missing": 248,
+      "matches_with_value": 3042,
       "json_files_absent": 0,
       "both_missing_by_column": {
         "BD": 8,
         "BE": 13,
         "BF": 13,
         "BG": 25,
-        "BH": 20,
+        "BH": 21,
         "BI": 35,
         "BJ": 7,
         "BK": 18,
@@ -2561,27 +2561,27 @@
     "2695.HK": {
       "prospectus": {
         "extracted": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
           "verdict": null
         },
         "validated": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
           "verdict": null
         },
         "reviewed": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
-          "verdict": null
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
+          "verdict": "pass"
         },
         "written": {
-          "exists": false,
-          "gate_pass": false,
-          "hash": null,
+          "exists": true,
+          "gate_pass": true,
+          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
           "verdict": null
         }
       },

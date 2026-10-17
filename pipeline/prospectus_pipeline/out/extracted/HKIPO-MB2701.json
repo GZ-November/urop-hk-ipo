@@ -416,10 +416,11 @@
       "confidence": "high"
     },
     "col_holding_duration": {
-      "value": 0.0,
-      "page": 109,
-      "quote": "We have no pre-IPO investors for the purpose of the Global Offering.",
-      "confidence": "high"
+      "value": "NaN",
+      "page": null,
+      "quote": "",
+      "confidence": "high",
+      "note": "NaN: the prospectus states there were no pre-IPO investors (p109), so there is no earliest round to date the holding from."
     }
   }
 }

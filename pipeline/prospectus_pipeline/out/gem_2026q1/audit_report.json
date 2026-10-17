@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-16 20:35:28",
+  "timestamp": "2026-10-17 09:53:31",
   "workbook": "cohorts/HKIPO-GEM2026Q1.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 1,
@@ -922,25 +922,25 @@
         "extracted": {
           "exists": true,
           "gate_pass": true,
-          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
+          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
+          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
           "verdict": null
         },
         "reviewed": {
           "exists": true,
           "gate_pass": true,
-          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
+          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
           "verdict": "pass"
         },
         "written": {
           "exists": true,
           "gate_pass": true,
-          "hash": "050d2bd75194ce3bf171f573f62302f7f144a8b0bcf34d75966977a5e3a56eb8",
+          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
           "verdict": null
         }
       },
