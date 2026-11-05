@@ -245,6 +245,13 @@ stages take a per-cohort lock, so parallel gate commands queue instead of
 overwriting `validation.json`, `greenshoe.json` or `cornerstone_absence.json`.
 `work status` is read-only. The manual steps below remain valid for one issuer.
 
+#### Token & API Cost Discipline for Batch Collection
+
+- **Issuer-level bundling (`work next`)**: Never launch separate extractor subagents per target (`prospectus`, `allot`, `gem`); one `work next` extractor lease covers all targets of that issuer in one context.
+- **Zero-token deterministic fields**: `work finish-extract` runs `derive_allot` (`col_CV`, `col_CK` when absent, `col_CQ`, `col_DA/DB/DC`), and the brief pre-injects `search periods`, `search sharecap` and `col_CR`. Later pipeline stages deterministically compute `BC`, `CN/CO/CP`, market, HKMA (with local CSV interval caching), HSIC, aftermarket and academic columns without LLM tokens.
+- **Batched search (`search bundle`) & excerpt-first review**: Extractors read the brief and packet (`<!-- TABLE_START -->` tables) first, then batch any missing fields into a single `search bundle CODE --fields ...` call. Reviewers check the 700-char page excerpts in the brief's `Review sheet` first and only open full pages or run full-text searches for missing fields, warnings, or truncated excerpts.
+- **Rate-limit tuning**: Under constrained API quotas, pass `--max-extract 3 --max-review 3 --max-total 4` to `work next` to prevent lease timeouts.
+
 #### Step-by-Step Autonomous Action for Agents:
 
 1. **Locate Work Orders**:

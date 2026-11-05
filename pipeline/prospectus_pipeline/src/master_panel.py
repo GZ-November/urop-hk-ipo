@@ -88,6 +88,18 @@ DERIVED_SPECS = [
     DerivedSpec("public_offer_fraction", "ratio",
                 ["Public Offer shares", "New shares"],
                 "公开发售占比 = 公开发售股数 / 新股数"),
+    DerivedSpec("gross_margin_y1", "ratio",
+                ["Gross profit in year-1", "Year-1 net sales (original, pre-annualization)"],
+                "毛利率 = year-1 毛利 / year-1 未年化净销售额"),
+    DerivedSpec("cfo_to_assets_y1", "ratio",
+                ["Operating cash flow in year-1 (before annualization)", "total assets in year-1"],
+                "经营现金流资产比 = year-1 经营活动现金流净额 / year-1 期末总资产"),
+    DerivedSpec("rd_expense_intensity_y1", "ratio",
+                ["R&D expensed in year-1 (before annualization)", "Year-1 net sales (original, pre-annualization)"],
+                "费用化研发强度 = year-1 费用化研发支出 / year-1 未年化净销售额"),
+    DerivedSpec("voting_cashflow_wedge", "diff",
+                ["Controller voting rights at listing (%)", "Controller economic interest at listing (%)"],
+                "控制权与现金流权分离度（Wedge）= 上市时控股股东投票权占比 - 经济利益占比"),
 ]
 
 
@@ -104,10 +116,15 @@ def _op_log_product(a: float, b: float) -> float | None:
     return None if product <= 0 else math.log(product)
 
 
+def _op_diff(a: float, b: float) -> float | None:
+    return a - b
+
+
 DERIVED_OPS = {
     "ratio": _op_ratio,
     "growth": _op_growth,
     "log_product": _op_log_product,
+    "diff": _op_diff,
 }
 
 VAR_ROW_RE = re.compile(r"^\|\s*\*\*([A-Z]{1,3})\*\*\s*\|")

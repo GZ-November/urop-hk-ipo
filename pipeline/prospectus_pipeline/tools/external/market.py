@@ -199,12 +199,29 @@ def main() -> int:
         rows = [r for r in rows if r[1].upper() in targets or r[1].upper().replace(".HK", "") in targets]
     print(f"工作簿 {len(rows)} 家 (数据源策略: {args.provider})")
 
-    # 恒指：覆盖最早招股书日前 40 个交易日
+    # 恒指：覆盖最早招股书日前 40 个交易日（优先复用覆盖所需区间的全局缓存）
     hsi_from = (min(p for _, _, p, _ in rows) - dt.timedelta(days=80)).isoformat()
     hsi_to = (max(p for _, _, p, _ in rows) + dt.timedelta(days=5)).isoformat()
-    hsi_raw, hsi_prov, hsi_errs = fetcher.fetch_bars_resilient(
-        "hkHSI", hsi_from, hsi_to, n_bars=200, preferred_provider=args.provider
-    )
+    global_hsi = ROOT / "data" / "market" / "hsi.json"
+    hsi_raw = None
+    hsi_prov, hsi_errs = "cache", []
+    for cand in (CACHE / "hsi.json", global_hsi):
+        if cand.is_file():
+            try:
+                cached = json.loads(cand.read_text(encoding="utf-8"))
+                parsed = [parse_bar(x) for x in cached]
+                if parsed and parsed[0]["date"] <= dt.date.fromisoformat(hsi_from) + dt.timedelta(days=7) \
+                        and parsed[-1]["date"] >= min(dt.date.fromisoformat(hsi_to), dt.date.today()) - dt.timedelta(days=5):
+                    hsi_raw = cached
+                    break
+            except Exception:
+                pass
+    if hsi_raw is None:
+        hsi_raw, hsi_prov, hsi_errs = fetcher.fetch_bars_resilient(
+            "hkHSI", hsi_from, hsi_to, n_bars=400, preferred_provider=args.provider
+        )
+        global_hsi.parent.mkdir(parents=True, exist_ok=True)
+        global_hsi.write_text(json.dumps(hsi_raw, ensure_ascii=False, default=str), encoding="utf-8")
     (CACHE / "hsi.json").write_text(json.dumps(hsi_raw, ensure_ascii=False, default=str), encoding="utf-8")
     hsi = [parse_bar(x) for x in hsi_raw]
     print(f"HSI ({hsi_prov}) {len(hsi)} 条 {hsi[0]['date']} ~ {hsi[-1]['date']}")
@@ -233,9 +250,38 @@ def main() -> int:
         frm = ld.isoformat()
         to = (ld + dt.timedelta(days=10)).isoformat()
         try:
+            after_cache = CACHE / "aftermarket" / f"{sym}.json"
             bars, prov_stock, errs_stock = fetcher.fetch_bars_resilient(
                 code, frm, to, n_bars=640, preferred_provider=args.provider, adjusted=False
             )
+            if after_cache.is_file():
+                try:
+                    t_map = {
+                        str(item.get("date"))[:10]: float(item["turnover"])
+                        for item in json.loads(after_cache.read_text(encoding="utf-8"))
+                        if item.get("turnover") is not None
+                    }
+                    for b in bars:
+                        d_key = str(b["date"])[:10]
+                        if b.get("turnover") is None and d_key in t_map:
+                            b["turnover"] = t_map[d_key]
+                except Exception:
+                    pass
+            if any(b.get("turnover") is None for b in bars):
+                try:
+                    adj_bars, _, _ = fetcher.fetch_bars_resilient(
+                        code, frm, to, n_bars=60, preferred_provider=args.provider, adjusted=True
+                    )
+                    t_map = {
+                        str(item.get("date"))[:10]: float(item["turnover"])
+                        for item in adj_bars if item.get("turnover") is not None
+                    }
+                    for b in bars:
+                        d_key = str(b["date"])[:10]
+                        if b.get("turnover") is None and d_key in t_map:
+                            b["turnover"] = t_map[d_key]
+                except Exception:
+                    pass
             (CACHE / f"{sym}.json").write_text(
                 json.dumps(bars, ensure_ascii=False, default=str), encoding="utf-8"
             )

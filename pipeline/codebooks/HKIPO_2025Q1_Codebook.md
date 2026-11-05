@@ -3,7 +3,7 @@
 - **样本规模 (N)**：15 家香港联交所 Main Board 新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-10-17 09:53:36 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
+- **生成时间**：2026-11-05 16:45:51 | **数据基准**：`HKIPO-MB2025Q1.xlsx` (Sheet: NLR)
 
 ---
 
@@ -105,7 +105,7 @@
 | **CD** | `Firm age at IPO (years)` | 公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量） | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 8.87 / 中位数 6.38 / 区间 [1.34, 26.72] |
 | **CE** | `Place of incorporation` | 公司注册成立法域（如 Cayman Islands, PRC 等） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 2 种取值 ('Cayman Islands': 8, 'PRC': 7) |
 | **CF** | `Principal place of business` | 主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 15 种取值 ('PRC (Beijing)': 1, 'Wuhu City, Anhui Province, China': 1, 'Shanghai, the PRC': 1) |
-| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (9/15 (60.0%)) | 均值 1,000.00 / 中位数 1,000.00 / 区间 [1,000.00, 1,000.00] |
+| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 67,600.00 / 中位数 1,000.00 / 区间 [1,000.00, 1,000,000.00] |
 | **CH** | `Accounting standard` | 财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。 | 浅蓝 | `string` | Track record period financial disclosure | 100% 完备 | 共 6 种取值 ('IFRS': 6, 'IFRS Accounting Standards': 3, 'IFRSs': 2) |
 | **CI** | `Year-3 financial period start` | 往绩记录第三年前期起始日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2022-01-01 ~ 2022-01-01 |
 | **CJ** | `Year-3 financial period end` | 往绩记录第三年前期截止日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2022-12-31 ~ 2022-12-31 |

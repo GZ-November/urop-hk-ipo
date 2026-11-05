@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-17 09:53:38"
+    "generated_at": "2026-11-05 16:50:17"
   },
   "variables": [
     {
@@ -2173,13 +2173,13 @@
       "group": "external_tools",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Sparse",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 14,
-        "missing_n": 33,
-        "fill_rate_pct": 29.79,
+        "valid_n": 47,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
         "mean": 1000.0,
         "std": 0.0,
         "median": 1000.0,
@@ -3429,14 +3429,21 @@
       "group": "external_tools",
       "data_type": "numeric",
       "timing_convention": "Listing Day 1 secondary market",
-      "missing_policy": "Unmatured window (blank in CSV, None in memory)",
-      "coverage_status": "Reserved / Unmatured",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 0,
-        "missing_n": 47,
-        "fill_rate_pct": 0.0,
-        "summary_display": "全部缺失（Reserved / Unmatured；类型取自注册表声明）"
+        "valid_n": 47,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 612848013.1914893,
+        "std": 714547158.5226201,
+        "median": 353953900.0,
+        "min": 45482100.0,
+        "q25": 199805900.0,
+        "q75": 636695050.0,
+        "max": 2991670110.0,
+        "summary_display": "均值 612,848,013.19 | 中位数 353,953,900.00 | 区间 [45,482,100.00, 2,991,670,110.00]"
       }
     },
     {

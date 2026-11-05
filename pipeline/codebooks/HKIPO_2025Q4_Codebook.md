@@ -3,7 +3,7 @@
 - **样本规模 (N)**：47 家香港联交所 Main Board 新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-10-17 09:53:38 | **数据基准**：`HKIPO-MB2025Q4.xlsx` (Sheet: NLR)
+- **生成时间**：2026-11-05 16:50:17 | **数据基准**：`HKIPO-MB2025Q4.xlsx` (Sheet: NLR)
 
 ---
 
@@ -105,7 +105,7 @@
 | **CD** | `Firm age at IPO (years)` | 公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量） | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (46/47 (97.87%)) | 均值 13.02 / 中位数 11.76 / 区间 [2.39, 33.25] |
 | **CE** | `Place of incorporation` | 公司注册成立法域（如 Cayman Islands, PRC 等） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (46/47 (97.87%)) | 共 2 种取值 ('PRC': 35, 'Cayman Islands': 11) |
 | **CF** | `Principal place of business` | 主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 33 种取值 ('Shanghai, PRC': 7, 'Beijing, PRC': 7, 'Shenzhen, Guangdong Province, PRC': 2) |
-| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Sparse (14/47 (29.79%)) | 均值 1,000.00 / 中位数 1,000.00 / 区间 [1,000.00, 1,000.00] |
+| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 1,000.00 / 中位数 1,000.00 / 区间 [1,000.00, 1,000.00] |
 | **CH** | `Accounting standard` | 财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。 | 浅蓝 | `string` | Track record period financial disclosure | 100% 完备 | 共 9 种取值 ('IFRS Accounting Standards': 36, 'HKFRS Accounting Standards': 3, 'HKFRSs (Hong Kong Financial Reporting Standards)': 2) |
 | **CI** | `Year-3 financial period start` | 往绩记录第三年前期起始日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2022-01-01 ~ 2023-01-01 |
 | **CJ** | `Year-3 financial period end` | 往绩记录第三年前期截止日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2022-12-31 ~ 2023-12-31 |
@@ -155,7 +155,7 @@
 | **EB** | `First trading day low (HK$)` | 首日上市二级市场盘中最低价 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 59.75 / 中位数 35.10 / 区间 [2.33, 310.00] |
 | **EC** | `First trading day volume (shares)` | 首日上市二级市场全天成交量（股） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 21,718,123.15 / 中位数 8,732,200.00 / 区间 [811,640.00, 170,339,680.00] |
 | **ED** | `First-day flipping ratio (%)` | 首日短线翻转抛售率 / 成交量占全球发售比例（Aggarwal 2003 机构抛售假说） | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 0.32 / 中位数 0.25 / 区间 [0.07, 1.18] |
-| **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | Reserved / Unmatured (0/47 (0.0%)) | 全部缺失（Reserved / Unmatured；类型取自注册表声明） |
+| **EE** | `First trading day turnover (HK$)` | 首日上市二级市场全天成交金额 (HK$) | 深蓝 | `numeric` | Listing Day 1 secondary market | 100% 完备 | 均值 612,848,013.19 / 中位数 353,953,900.00 / 区间 [45,482,100.00, 2,991,670,110.00] |
 | **EF** | `Offer mechanism` | 适用发售与回拨制度（2025-08-04 前 PN18/18C.09；之后 Mechanism A/B） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (43/47 (91.49%)) | 共 2 种取值 ('Mechanism B': 39, 'Mechanism A': 4) |
 | **EG** | `Applicable IPO rules / transition basis` | 适用之上市规则过渡基准（FINI 改革规则） | 深蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 3 种取值 ('FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism B': 39, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained); this IPO: Mechanism A': 4, 'FINI (from 22/11/2023); 2025-08-04 pricing reform (Mechanism A/B; six-month cornerstone lock-up retained)': 4) |
 | **EH** | `Company Chinese Name` | Company Chinese Name | 浅蓝 | `string` | Ex-ante prospectus disclosure | Adequate (46/47 (97.87%)) | 共 46 种取值 ('长风药业股份有限公司': 1, '上海挚达科技发展股份有限公司': 1, '轩竹生物科技股份有限公司': 1) |

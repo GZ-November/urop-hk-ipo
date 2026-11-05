@@ -189,14 +189,23 @@ class IdentityAndDerivedTests(unittest.TestCase):
                        "Net sales in year-2", "Total (without option)",
                        "Public Offer shares", "New shares",
                        "IPO Subscription Price (HK$)",
-                       "Final global offering shares (before over-allotment)"]
+                       "Final global offering shares (before over-allotment)",
+                       "Gross profit in year-1",
+                       "Year-1 net sales (original, pre-annualization)",
+                       "Operating cash flow in year-1 (before annualization)",
+                       "R&D expensed in year-1 (before annualization)",
+                       "Controller voting rights at listing (%)",
+                       "Controller economic interest at listing (%)"]
 
     def test_derived_columns_math_and_missing_handling(self):
         headers = self.DERIVED_HEADERS
         rows = [
-            ["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100"],
-            ["0002.HK", "50", "0", "10", "110", "0", "-5", "10", "100", "0", "100"],
-            ["0003.HK", "NaN", "200", "10", "110", "100", "1000", "10", "100", "2.5", "NaN"],
+            ["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100",
+             "44", "110", "20", "11", "0.60", "0.45"],
+            ["0002.HK", "50", "0", "10", "110", "0", "-5", "10", "100", "0", "100",
+             "44", "0", "20", "11", "0.50", "0.50"],
+            ["0003.HK", "NaN", "200", "10", "110", "100", "1000", "10", "100", "2.5", "NaN",
+             "NaN", "110", "NaN", "NaN", "NaN", "0.45"],
         ]
         added, columns, skipped = compute_derived_columns(headers, rows)
         self.assertEqual(skipped, [])  # 所有源列齐全（DERIVED_SPECS 全部可算）
@@ -206,6 +215,10 @@ class IdentityAndDerivedTests(unittest.TestCase):
         self.assertEqual(by_col["roa_y1"], ["0.050000", "NaN", "0.050000"])
         self.assertEqual(by_col["sales_growth_y1"], ["0.100000", "NaN", "0.100000"])
         self.assertEqual(by_col["public_offer_fraction"], ["0.100000", "0.100000", "0.100000"])
+        self.assertEqual(by_col["gross_margin_y1"], ["0.400000", "NaN", "NaN"])
+        self.assertEqual(by_col["cfo_to_assets_y1"], ["0.100000", "NaN", "NaN"])
+        self.assertEqual(by_col["rd_expense_intensity_y1"], ["0.100000", "NaN", "NaN"])
+        self.assertEqual(by_col["voting_cashflow_wedge"], ["0.150000", "0.000000", "NaN"])
         # log_proceeds: 价格 × 股数 <= 0 或任一缺失 -> NaN
         self.assertEqual(by_col["log_proceeds_hkd"][1:], ["NaN", "NaN"])
 
@@ -216,7 +229,8 @@ class IdentityAndDerivedTests(unittest.TestCase):
         与募资额无关；本用例中两者相差 ln(1000/250)，旧定义会失败。
         """
         headers = self.DERIVED_HEADERS
-        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100"]]
+        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "2.5", "100",
+                 "44", "110", "20", "11", "0.60", "0.45"]]
         added, columns, _ = compute_derived_columns(headers, rows)
         value = float(dict(zip(added, columns))["log_proceeds_hkd"][0])
         self.assertAlmostEqual(value, math.log(2.5 * 100), places=6)
@@ -224,7 +238,8 @@ class IdentityAndDerivedTests(unittest.TestCase):
 
     def test_log_proceeds_skipped_when_price_or_shares_column_missing(self):
         headers = [h for h in self.DERIVED_HEADERS if h != "IPO Subscription Price (HK$)"]
-        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "100"]]
+        rows = [["0001.HK", "50", "200", "10", "110", "100", "1000", "10", "100", "100",
+                 "44", "110", "20", "11", "0.60", "0.45"]]
         added, _, skipped = compute_derived_columns(headers, rows)
         self.assertIn("log_proceeds_hkd", skipped)
         self.assertNotIn("log_proceeds_hkd", added)

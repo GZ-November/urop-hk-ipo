@@ -315,11 +315,28 @@ def cmd_bundle(args):
             break
 
 
+def _tables_dir(code: str) -> Path:
+    digits = "".join(c for c in str(code) if c.isdigit())
+    safe_name = f"HKIPO-MB{int(digits):04d}" if digits else str(code)
+    try:
+        from run import load_cfg
+        cfg = load_cfg()
+        paths = cfg.get("paths", {})
+        base = paths.get("tables") or (Path(paths["data"]) / "tables" if "data" in paths else None)
+        if base:
+            candidate = Path(base) / safe_name
+            if candidate.exists():
+                return candidate
+            fallback = ROOT / "data" / "tables" / safe_name
+            return fallback if fallback.exists() else candidate
+    except Exception:
+        pass
+    return ROOT / "data" / "tables" / safe_name
+
+
 def cmd_table(args):
     """打印预解析结构化表格 (Markdown 格式)。"""
-    digits = "".join(c for c in str(args.code) if c.isdigit())
-    safe_name = f"HKIPO-MB{int(digits):04d}" if digits else args.code
-    tables_dir = ROOT / "data" / "tables" / safe_name
+    tables_dir = _tables_dir(args.code)
 
     alias = {
         "sharecap": "share_capital",
@@ -477,5 +494,3 @@ def cmd_pages(args):
 if __name__ == "__main__":
     raise SystemExit(main())
 
-if __name__ == "__main__":
-    raise SystemExit(main())

@@ -12,7 +12,7 @@
       "blue_prospectus": 77,
       "darkblue_external": 114
     },
-    "generated_at": "2026-10-17 09:53:43"
+    "generated_at": "2026-11-05 16:45:55"
   },
   "variables": [
     {
@@ -2168,21 +2168,21 @@
       "group": "external_tools",
       "data_type": "numeric",
       "timing_convention": "Ex-ante prospectus disclosure",
-      "missing_policy": "NaN in Excel, empty in econometric CSV",
-      "coverage_status": "Adequate",
+      "missing_policy": "No missing observations",
+      "coverage_status": "Complete (100%)",
       "source": "外部市场数据 (Hang Seng / HKMA / 港交所规则)",
       "stats": {
-        "valid_n": 23,
-        "missing_n": 7,
-        "fill_rate_pct": 76.67,
-        "mean": 44434.782608695656,
-        "std": 208305.89964301768,
+        "valid_n": 30,
+        "missing_n": 0,
+        "fill_rate_pct": 100.0,
+        "mean": 34300.0,
+        "std": 182391.61164922031,
         "median": 1000.0,
         "min": 1000.0,
         "q25": 1000.0,
         "q75": 1000.0,
         "max": 1000000.0,
-        "summary_display": "均值 44,434.78 | 中位数 1,000.00 | 区间 [1,000.00, 1,000,000.00]"
+        "summary_display": "均值 34,300.00 | 中位数 1,000.00 | 区间 [1,000.00, 1,000,000.00]"
       }
     },
     {

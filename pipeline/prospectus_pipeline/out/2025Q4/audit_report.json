@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17 09:53:28",
+  "timestamp": "2026-11-05 15:56:50",
   "workbook": "cohorts/HKIPO-MB2025Q4.xlsx",
   "sheet": "NLR",
   "audited_companies_count": 47,
@@ -2561,27 +2561,27 @@
     "2695.HK": {
       "prospectus": {
         "extracted": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
           "verdict": null
         },
         "validated": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
           "verdict": null
         },
         "reviewed": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
-          "verdict": "pass"
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
         },
         "written": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "5cb7a324075686bd0a2d5f84d7a90752242e3632d6c5edc40bcfc0fda64c9fdc",
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
           "verdict": null
         }
       },

@@ -24,6 +24,7 @@ from pathlib import Path
 
 from boards import normalize_board
 from cohort_lock import cohort_lock
+from contracts import normalize_code
 from extraction_targets import target_paths
 from state import file_hash, read_record, save_record
 from storage import atomic_json
@@ -373,6 +374,23 @@ def _brief_path(cfg: dict, code: str, role: str, lease_id: str) -> Path:
     return path
 
 
+def _allot_meta(cfg: dict, code: str) -> str:
+    idx_path = Path(cfg["paths"]["out"]) / "allotment_index.json"
+    if not idx_path.is_file():
+        return ""
+    try:
+        for rec in json.loads(idx_path.read_text(encoding="utf-8")):
+            if normalize_code(rec.get("code", "")) == normalize_code(code):
+                dt_str = rec.get("datetime") or ""
+                title = rec.get("title") or ""
+                if dt_str:
+                    return (f"\n- Allotment index metadata for {code}: `col_CR` announcement datetime = "
+                            f"`{dt_str}` (title: `{title}`).")
+    except Exception:
+        pass
+    return ""
+
+
 def write_extract_brief(cfg: dict, lease_id: str, lease: dict, info: dict, command: str) -> Path:
     code = lease["code"]
     rows = "\n".join(
@@ -384,6 +402,7 @@ def write_extract_brief(cfg: dict, lease_id: str, lease: dict, info: dict, comma
         feedback = ("\n## Previous review rejected these targets\n"
                     + "\n".join(f"- {t}: read `{report_path(cfg, t, code)}` and correct the payload"
                                 for t in rejected) + "\n")
+    allot_hint = _allot_meta(cfg, code)
     body = f"""# Extraction brief: {code} {info['name']} (lease {lease_id})
 
 You are the extractor for this one issuer. Write one JSON payload per target, then run
@@ -393,10 +412,12 @@ the finish command. Shell commands below start with: {command}
 |---|---|---|---|
 {rows}
 
-Each packet is self-contained: it holds the field list, units, output contract and hard
-rules. Read the packet itself; open the schema, `workflows/*_extract.js` or the docs only
-when a specific field is unclear. Locate pages with `search pages {code} 120-125` or
-`search search {code} "REGEX" --context 3 --max 8` (both via `{command}`).
+Each packet is self-contained: it holds the field list, units, output contract, pre-parsed
+structured tables (`<!-- TABLE_START -->`) and deduplicated source pages. Read the packet
+itself first; open the schema, `workflows/*_extract.js` or the docs only when a specific
+field is unclear. For any field not found in the packet, batch-locate candidate pages in a
+single call with `search bundle {code} --fields col_X,col_Y` or inspect exact pages with
+`search pages {code} 120-125` / `search table {code}` (all via `{command}`).
 {feedback}
 ## Rules
 - Extract from this issuer's packets and source pages only. Do not open, copy or start
@@ -407,7 +428,13 @@ when a specific field is unclear. Locate pages with `search pages {code} 120-125
   disclosure states zero. Never solve a value so an identity balances.
 - {PERIOD_RULE.replace(chr(10), chr(10) + '  ')}
 - The workbook columns BC and CN/CO/CP are derived later, not extracted. The allotment
-  fields col_CV/CK/CQ/DA are filled deterministically by the finish command.
+  fields col_CV/CK/CQ/DA (and free-float components col_DB/col_DC when derivable) are
+  filled deterministically by the finish command — do not spend tool calls searching for
+  over-allotment announcements.{allot_hint}
+- Token discipline: use the precomputed `search periods` and `search sharecap` sections
+  below and the packet's `<!-- TABLE_START -->` tables first. If multiple fields still need
+  full-text lookup, batch them into one `{command} search bundle {code} --fields col_A,col_B`
+  call rather than running separate regex searches per field.
 
 ## Dataset conventions
 {CONVENTIONS}
@@ -539,8 +566,11 @@ page; the pipeline already checked that each quote occurs in the source text. Yo
 is each value the right number for the field (meaning, units and multipliers, period,
 consolidated not parent-only, initial versus final terms, net versus gross), and is each
 missing field genuinely undisclosed (search the full text with
-`search search {code} "REGEX"`)? Open the full page whenever an excerpt is not enough,
-and report a discrepancy only after opening the cited page yourself.
+`search search {code} "REGEX"`)?
+Token discipline: verify populated fields from the 700-char page excerpts in the sheet
+first; open full pages (`search pages {code} N-M`) or run `search search` only when an
+excerpt is truncated, a validation warning is listed, or a field is marked missing.
+Report a discrepancy only after opening the cited page yourself.
 
 Period standard: {PERIOD_RULE}
 

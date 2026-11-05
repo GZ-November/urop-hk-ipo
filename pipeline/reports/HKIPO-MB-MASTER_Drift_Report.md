@@ -1,9 +1,9 @@
 # Master 面板漂移报告 (2025Q1 ~ 2026Q3)
 
-- **生成时间**：2026-10-17 09:53:47 | **cohort 数**：6 | **样本合计**：202 家 | **变量数**：202
+- **生成时间**：2026-11-05 16:50:17 | **cohort 数**：6 | **样本合计**：202 家 | **变量数**：202
 - **复现命令**：`python3 run.py master`
 - **Master 数据**：`HKIPO-MB-MASTER_clean.csv`（cohort 列已前置，本地产物不入库）
-- **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, sponsor_reputation_tier（免汇率，`--derive` 生成）
+- **派生比率列**：leverage_y1, roa_y1, sales_growth_y1, log_proceeds_hkd, public_offer_fraction, gross_margin_y1, cfo_to_assets_y1, rd_expense_intensity_y1, voting_cashflow_wedge, sponsor_reputation_tier（免汇率，`--derive` 生成）
 
 ## 1. 表头跨 cohort 对齐：✅ 通过
 
@@ -76,7 +76,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Incorporation date` | 100.0% | 100.0% | 97.9% | 100.0% | 100.0% | 100.0% |
 | `Firm age at IPO (years)` | 100.0% | 100.0% | 97.9% | 100.0% | 100.0% | 100.0% |
 | `Place of incorporation` | 100.0% | 88.9% | 97.9% | 100.0% | 22.2% | 96.7% |
-| `Financial statement unit multiplier` | 60.0% | 100.0% | 29.8% | 100.0% | 97.8% | 76.7% |
+| `Financial statement unit multiplier` | 100.0% | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Year-1 net sales (original, pre-annualization)` | 86.7% | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
 | `H shares after IPO (base; no options)` | 80.0% | 100.0% | 100.0% | 100.0% | 100.0% | 96.7% |
 | `Gross profit in year-1` | 86.7% | 92.6% | 93.6% | 100.0% | 95.6% | 100.0% |
@@ -91,7 +91,7 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Unrestricted public shareholding at listing (%)` | 100.0% | 100.0% | 97.9% | 100.0% | 97.8% | 100.0% |
 | `Free float denominator description` | 100.0% | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
 | `Free float denominator shares` | 100.0% | 100.0% | 100.0% | 100.0% | 97.8% | 100.0% |
-| `First trading day turnover (HK$)` | 100.0% | 100.0% | 0.0% | 100.0% | 100.0% | 76.7% |
+| `First trading day turnover (HK$)` | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% | 76.7% |
 | `Offer mechanism` | 100.0% | 100.0% | 91.5% | 100.0% | 93.3% | 100.0% |
 | `Company Chinese Name` | 100.0% | 88.9% | 97.9% | 97.4% | 97.8% | 96.7% |
 | `1-month post-IPO close price (HK$)` | 100.0% | 100.0% | 100.0% | 97.4% | 100.0% | 66.7% |
@@ -176,7 +176,6 @@ CSV 表头与注册表逐列一致（列名 + 顺序）。
 | `Earliest Pre-IPO investment round` | 84.4% | 70.0% | -14.4pp |
 | `Pre-IPO holding duration (years)` | 80.0% | 66.7% | -13.3pp |
 | `Place of incorporation` | 22.2% | 96.7% | +74.5pp |
-| `Financial statement unit multiplier` | 97.8% | 76.7% | -21.1pp |
 | `Over-allotment shares actually issued` | 100.0% | 63.3% | -36.7pp |
 | `First trading day turnover (HK$)` | 100.0% | 76.7% | -23.3pp |
 | `1-month post-IPO close price (HK$)` | 100.0% | 66.7% | -33.3pp |
