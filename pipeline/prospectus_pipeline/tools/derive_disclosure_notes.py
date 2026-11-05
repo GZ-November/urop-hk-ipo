@@ -249,7 +249,17 @@ def main() -> int:
         mult = ((infer_multiplier(rec, "col_AH", sales * factor) if sales else None)
                 or (infer_multiplier(rec, "col_AN", prof * factor) if prof else None)
                 or infer_multiplier(rec, "col_Y") or infer_multiplier(rec, "col_X")
-                or infer_multiplier(rec, "col_W"))
+                or infer_multiplier(rec, "col_W") or infer_multiplier(rec, "col_AG")
+                or infer_multiplier(rec, "col_AF") or infer_multiplier(rec, "col_AM")
+                or infer_multiplier(rec, "col_AL") or infer_multiplier(rec, "col_AB")
+                or infer_multiplier(rec, "col_Z") or infer_multiplier(rec, "col_AV"))
+        if not mult:
+            v_str = str(((fields.get("col_V") or {}).get("value") or "") + " " +
+                        ((fields.get("col_V") or {}).get("quote") or "")).lower()
+            if "'000" in v_str or "\u2019000" in v_str or "thousand" in v_str:
+                mult = 1000
+            elif "million" in v_str:
+                mult = 1000000
         if mult:
             values["CG"] = mult
 

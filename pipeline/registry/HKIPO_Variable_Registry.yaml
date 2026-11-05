@@ -1,8 +1,9 @@
 meta:
-  generated_at: '2026-10-12T14:44:05'
+  generated_at: '2026-11-05T16:50:17'
   generated_from:
   - HKIPO_2025Q1_Codebook.md
   - HKIPO_2025Q2_Codebook.md
+  - HKIPO_2025Q4_Codebook.md
   - HKIPO_2026Q1_Codebook.md
   - HKIPO_2026Q2_Codebook.md
   - HKIPO_2026Q3_Codebook.md
@@ -10,6 +11,7 @@ meta:
   variables_per_codebook:
     HKIPO_2025Q1_Codebook.md: 202
     HKIPO_2025Q2_Codebook.md: 202
+    HKIPO_2025Q4_Codebook.md: 202
     HKIPO_2026Q1_Codebook.md: 202
     HKIPO_2026Q2_Codebook.md: 202
     HKIPO_2026Q3_Codebook.md: 202
@@ -550,7 +552,7 @@ variables:
   slug: development_costs_capitalized_in_year_1_additions_before_annualization
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q3_Codebook.md
   layer: prospectus
   timing: Track record period financial disclosure
   unit: reporting_currency_raw
@@ -560,7 +562,7 @@ variables:
   slug: top_5_customers_pct_of_year_1_revenue
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q3_Codebook.md
   layer: prospectus
   timing: Track record period financial disclosure
   unit: reporting_currency_raw
@@ -580,7 +582,7 @@ variables:
   slug: pre_ipo_vc_pe_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -591,7 +593,7 @@ variables:
   slug: pre_ipo_vc_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -602,7 +604,7 @@ variables:
   slug: pre_ipo_pe_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -613,7 +615,7 @@ variables:
   slug: pre_ipo_cvc_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -624,7 +626,7 @@ variables:
   slug: pre_ipo_state_gov_backing
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -646,7 +648,7 @@ variables:
   slug: key_pre_ipo_investors
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -667,7 +669,7 @@ variables:
   slug: pre_ipo_investor_board_seat
   dtype: boolean
   declared_dtype: boolean
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2025Q1_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: binary
@@ -677,7 +679,7 @@ variables:
   slug: earliest_pre_ipo_investment_round
   dtype: string
   declared_dtype: string
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -688,7 +690,7 @@ variables:
   slug: pre_ipo_holding_duration_years
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q2_Codebook.md
   layer: prospectus
   timing: Ex-ante prospectus disclosure
   unit: years
@@ -885,7 +887,7 @@ variables:
   slug: financial_statement_unit_multiplier
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2026Q1_Codebook.md
+  declared_from: HKIPO_2026Q3_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1522,7 +1524,7 @@ variables:
   slug: 6_month_post_ipo_close_price_hk
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: HKD
@@ -1532,7 +1534,7 @@ variables:
   slug: 6_month_bhr_from_day_1_close_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: percent
@@ -1542,7 +1544,7 @@ variables:
   slug: 6_month_total_return_from_offer_price_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: percent
@@ -1552,7 +1554,7 @@ variables:
   slug: 6_month_hsi_return_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: percent
@@ -1562,7 +1564,7 @@ variables:
   slug: 6_month_hstech_return_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: percent
@@ -1572,7 +1574,7 @@ variables:
   slug: 6_month_wealth_relative_vs_hsi
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1582,7 +1584,7 @@ variables:
   slug: 6_month_wealth_relative_vs_hstech
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1592,7 +1594,7 @@ variables:
   slug: 6_month_average_daily_turnover_hk
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: HKD
@@ -1602,7 +1604,7 @@ variables:
   slug: liquidity_decay_ratio_6m_vs_day_1_turnover
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1822,7 +1824,7 @@ variables:
   slug: 3_month_wealth_relative_vs_hsi
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: null
@@ -1832,7 +1834,7 @@ variables:
   slug: 3_month_wealth_relative_vs_hstech
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Aftermarket event horizon window
   unit: null
@@ -1852,7 +1854,7 @@ variables:
   slug: amihud_illiquidity_6m_mean
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1862,7 +1864,7 @@ variables:
   slug: zero_volume_days_count_first_6m
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Post-IPO 6 calendar months (cornerstone unlock / 6M microstructure)
   unit: null
@@ -1872,7 +1874,7 @@ variables:
   slug: return_volatility_first_6m_daily_std_dev_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -1882,7 +1884,7 @@ variables:
   slug: maximum_drawdown_first_6m_pct
   dtype: numeric
   declared_dtype: numeric
-  declared_from: HKIPO_2025Q2_Codebook.md
+  declared_from: HKIPO_2025Q4_Codebook.md
   layer: allotment_external
   timing: Ex-ante prospectus disclosure
   unit: null
@@ -2099,3 +2101,27 @@ derived_variables:
   - Public Offer shares
   - New shares
   description_zh: 公开发售占比 = 公开发售股数 / 新股数
+- name: gross_margin_y1
+  op: ratio
+  sources:
+  - Gross profit in year-1
+  - Year-1 net sales (original, pre-annualization)
+  description_zh: 毛利率 = year-1 毛利 / year-1 未年化净销售额
+- name: cfo_to_assets_y1
+  op: ratio
+  sources:
+  - Operating cash flow in year-1 (before annualization)
+  - total assets in year-1
+  description_zh: 经营现金流资产比 = year-1 经营活动现金流净额 / year-1 期末总资产
+- name: rd_expense_intensity_y1
+  op: ratio
+  sources:
+  - R&D expensed in year-1 (before annualization)
+  - Year-1 net sales (original, pre-annualization)
+  description_zh: 费用化研发强度 = year-1 费用化研发支出 / year-1 未年化净销售额
+- name: voting_cashflow_wedge
+  op: diff
+  sources:
+  - Controller voting rights at listing (%)
+  - Controller economic interest at listing (%)
+  description_zh: 控制权与现金流权分离度（Wedge）= 上市时控股股东投票权占比 - 经济利益占比

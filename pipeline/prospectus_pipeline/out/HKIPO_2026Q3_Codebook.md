@@ -3,7 +3,7 @@
 - **样本规模 (N)**：30 家香港联交所 Main Board 新上市公司
 - **变量总数 (K)**：202 维完整跨学科指标
 - **数据层级划分**：浅绿官方基础 (11 列) + 浅蓝招股书披露 (77 列) + 深蓝配发及外部衍生 (114 列)
-- **生成时间**：2026-10-17 09:53:43 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
+- **生成时间**：2026-11-05 16:45:55 | **数据基准**：`HKIPO-MB2026Q3.xlsx` (Sheet: NLR)
 
 ---
 
@@ -105,7 +105,7 @@
 | **CD** | `Firm age at IPO (years)` | 公司成立至上市年限（Lowry et al. 2017 Table 3.4 基础控制变量） | 浅蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 16.56 / 中位数 13.91 / 区间 [6.54, 33.58] |
 | **CE** | `Place of incorporation` | 公司注册成立法域（如 Cayman Islands, PRC 等） | 深蓝 | `string` | Ex-ante prospectus disclosure | Adequate (29/30 (96.67%)) | 共 2 种取值 ('PRC': 27, 'Cayman Islands': 2) |
 | **CF** | `Principal place of business` | 主要营业地点（城市/国家），如 PRC、Hong Kong、Shenzhen, PRC。取公司资料或注册办事处段。 | 浅蓝 | `string` | Ex-ante prospectus disclosure | 100% 完备 | 共 30 种取值 ('Room 701, 7th Floor, Building 7, Phase I, Changsha Zhongdian Software Park Co., Ltd., Changsha, Hunan, PRC': 1, '5th Floor, Tower A, Yonggui Center, No. 47 Guangqumennei Street, Dongcheng District, Beijing, PRC': 1, '23/F, Tiancheng Times Business Square, No. 58 Qinglonggang Road, Xiangcheng District, Suzhou, Jiangsu, PRC': 1) |
-| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | Adequate (23/30 (76.67%)) | 均值 44,434.78 / 中位数 1,000.00 / 区间 [1,000.00, 1,000,000.00] |
+| **CG** | `Financial statement unit multiplier` | 财务报表基础货币乘数（千元/万元/百万元） | 深蓝 | `numeric` | Ex-ante prospectus disclosure | 100% 完备 | 均值 34,300.00 / 中位数 1,000.00 / 区间 [1,000.00, 1,000,000.00] |
 | **CH** | `Accounting standard` | 财务报表采用的会计准则（如 IFRS Accounting Standards / HKFRS / ASBE / US GAAP）。取会计师报告开头声明。 | 浅蓝 | `string` | Track record period financial disclosure | 100% 完备 | 共 5 种取值 ('IFRS Accounting Standards': 15, 'IFRS': 10, 'HKFRS Accounting Standards': 3) |
 | **CI** | `Year-3 financial period start` | 往绩记录第三年前期起始日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2023-01-01 ~ 2024-01-01 |
 | **CJ** | `Year-3 financial period end` | 往绩记录第三年前期截止日 | 浅蓝 | `date` | Track record period financial disclosure | 100% 完备 | 区间: 2023-12-31 ~ 2024-12-31 |

@@ -105,6 +105,38 @@ def normalise(rows: list[dict], frm: str | None = None,
     return [out[k] for k in sorted(out)]
 
 
+def _load_existing(path: Path) -> list[tuple[str, float, float]]:
+    if not path.is_file():
+        return []
+    out: dict[str, tuple[str, float, float]] = {}
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as fh:
+            for row in csv.DictReader(fh):
+                d = str(row.get("date") or "").strip()
+                h = row.get("hibor_1m_pct")
+                b = row.get("aggregate_balance_hkd_mn")
+                if not d or h in (None, "") or b in (None, ""):
+                    continue
+                out[d] = (d, float(str(h).replace(",", "")), float(str(b).replace(",", "")))
+    except (OSError, ValueError, csv.Error):
+        return []
+    return [out[k] for k in sorted(out)]
+
+
+def _covers_interval(existing: list[tuple[str, float, float]], frm: str, to: str) -> bool:
+    """True when existing trading-day rows cover [frm, to] within a 5-day weekend/holiday slack."""
+    if not existing:
+        return False
+    try:
+        req_start = dt.date.fromisoformat(frm)
+        req_end = min(dt.date.fromisoformat(to), dt.date.today())
+        min_d = dt.date.fromisoformat(existing[0][0])
+        max_d = dt.date.fromisoformat(existing[-1][0])
+    except ValueError:
+        return False
+    return min_d <= req_start + dt.timedelta(days=5) and max_d >= req_end - dt.timedelta(days=5)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="从 HKMA API 拉取 HIBOR / 银行体系总结余")
     # 默认取最近 12 个月，避免写死区间在采集新 cohort 时静默缺数据
@@ -117,15 +149,36 @@ def main() -> int:
                     help="每页条数（该 API 忽略 from/to，用大页 + offset 回溯）")
     ap.add_argument("--retries", type=int, default=4)
     ap.add_argument("--base", default=BASE, help="API 地址（默认 HKMA 官方）")
+    ap.add_argument("--refresh", action="store_true", help="忽略本地缓存，强制重新从 HKMA API 拉取")
     args = ap.parse_args()
+
+    out = Path(args.out)
+    existing = [] if args.refresh else _load_existing(out)
+    if not existing and not args.refresh and out != DEFAULT_OUT and DEFAULT_OUT.is_file():
+        existing = _load_existing(DEFAULT_OUT)
+    if existing and _covers_interval(existing, args.frm, args.to):
+        in_range = [r for r in existing if args.frm <= r[0] <= args.to] or existing
+        if not out.is_file():
+            out.parent.mkdir(parents=True, exist_ok=True)
+            with out.open("w", encoding="utf-8", newline="") as fh:
+                w = csv.writer(fh)
+                w.writerow(["date", "hibor_1m_pct", "aggregate_balance_hkd_mn"])
+                w.writerows(existing)
+        print(f"HKMA 每日银行体系流动性：命中本地缓存 {out}（覆盖 {existing[0][0]} ~ {existing[-1][0]}，"
+              f"区间内 {len(in_range)} 条，跳过重复网络请求；如需强制刷新请加 --refresh）")
+        return 0
 
     print(f"HKMA 每日银行体系流动性：{args.frm} ~ {args.to}")
     rows = collect(args.base, args.frm, args.to, args.pagesize, args.retries)
     data = normalise(rows, args.frm, args.to)
+    if existing:
+        merged = {r[0]: r for r in existing}
+        for r in data:
+            merged[r[0]] = r
+        data = [merged[k] for k in sorted(merged)]
     if not data:
         raise SystemExit("API 没有返回可用记录（检查日期区间是否有数据）。")
 
-    out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)

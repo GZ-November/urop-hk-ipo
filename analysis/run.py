@@ -26,6 +26,7 @@ class Study:
 
 STUDIES = (
     Study("basic", "basic_statistics_2026", "basic_statistics", "Coverage and basic statistics", False),
+    Study("panel", "full_panel_study", "full_panel", "Multi-year full panel (2025-2026) & reform study", False),
     Study("descriptive", "module_a_stylized_facts", "module_a", "Descriptive statistics"),
     Study("underpricing", "module_b_underpricing_regression", "module_b", "First-day return regressions"),
     Study("decomposition", "ir_decomposition_2026", "ir_decomposition", "Return decomposition"),

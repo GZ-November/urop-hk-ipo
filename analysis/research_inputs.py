@@ -74,7 +74,52 @@ def load_panel(path: Path = MASTER) -> pd.DataFrame:
         ROUTE_ORDER,
         default="Unknown",
     )
+    # Governance & Accounting Ratios (scale-invariant / unit-invariant)
+    voting = df.get("Controller voting rights at listing (%)")
+    econ = df.get("Controller economic interest at listing (%)")
+    if voting is not None and econ is not None:
+        df["voting_cashflow_wedge"] = voting - econ
+    gp = df.get("Gross profit in year-1")
+    orig_sales = df.get("Year-1 net sales (original, pre-annualization)")
+    if gp is not None and orig_sales is not None:
+        df["gross_margin_y1"] = gp / orig_sales.where(orig_sales > 0)
+    rd_exp = df.get("R&D expensed in year-1 (before annualization)")
+    rd_cap = df.get("Development costs capitalized in year-1 (additions, before annualization)")
+    if rd_exp is not None and orig_sales is not None:
+        total_rd = rd_exp.fillna(0.0) + (rd_cap.fillna(0.0) if rd_cap is not None else 0.0)
+        both_na = rd_exp.isna() & (rd_cap.isna() if rd_cap is not None else True)
+        df["rd_intensity_y1"] = total_rd.where(~both_na) / orig_sales.where(orig_sales > 0)
+    cfo = df.get("Operating cash flow in year-1 (before annualization)")
+    assets = df.get("total assets in year-1")
+    if cfo is not None and assets is not None:
+        df["cfo_to_assets_y1"] = cfo / assets.where(assets > 0)
+    # Post-August 4, 2025 HKEX Allocation & Pricing Reform indicator
+    df["post_aug2025_reform"] = (df["listing_date"] >= pd.Timestamp("2025-08-04")).astype(float).where(df["listing_date"].notna())
     return df
+
+
+def select_period(
+    df: pd.DataFrame,
+    start_year: int | None = None,
+    end_year: int | None = None,
+    cohorts: list[str] | None = None,
+) -> pd.DataFrame:
+    """Select an arbitrary multi-year or multi-quarter sample from the master panel."""
+    sub = df.loc[df.get("cross_cohort_duplicate", 0) == 0].copy() if "cross_cohort_duplicate" in df else df.copy()
+    year = sub["listing_date"].dt.year
+    if start_year is not None:
+        sub = sub.loc[year >= start_year].copy()
+        year = sub["listing_date"].dt.year
+    if end_year is not None:
+        sub = sub.loc[year <= end_year].copy()
+    if cohorts is not None:
+        wanted = {str(c).strip() for c in cohorts}
+        sub = sub.loc[sub["cohort"].isin(wanted)].copy()
+    if sub["Stock Code"].duplicated().any():
+        raise ValueError("Duplicate issuer stock codes in the selected analysis sample")
+    if sub.empty:
+        raise ValueError("No observed listings in the selected master panel interval")
+    return sub
 
 
 def select_2026(df: pd.DataFrame) -> pd.DataFrame:

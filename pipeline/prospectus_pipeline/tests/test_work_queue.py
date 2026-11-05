@@ -205,6 +205,46 @@ class ExcerptTests(unittest.TestCase):
         self.assertIn("Revenue 6 76,757 133,002", wq.excerpt(page, "Revenue 6 76,757 133,002"))
         self.assertIsNone(wq.excerpt(page, "not on this page"))
 
+    def test_extract_brief_includes_allotment_index_datetime_when_present(self):
+        with tempfile.TemporaryDirectory() as raw:
+            cfg = make_cfg(Path(raw))
+            (cfg["paths"]["out"] / "allotment_index.json").write_text(
+                json.dumps([{"code": "0001.HK", "datetime": "08/01/2026 22:30",
+                             "title": "ALLOTMENT RESULTS"}]),
+                encoding="utf-8",
+            )
+            with patch.object(wq, "_search", lambda *a, **k: ""):
+                res = wq.next_jobs(cfg, companies("0001.HK"), {"extract": 1})
+            brief = Path(res["dispatch"][0]["brief"]).read_text(encoding="utf-8")
+            self.assertIn("08/01/2026 22:30", brief)
+            self.assertIn("search bundle 0001.HK", brief)
+
+
+class SearchAndHkmaCacheTests(unittest.TestCase):
+    def test_search_tables_dir_uses_cohort_config_path(self):
+        sys.path.insert(0, str(ROOT / "tools"))
+        import search as search_tool
+        with tempfile.TemporaryDirectory() as raw:
+            tmp = Path(raw)
+            tbl = tmp / "tables" / "HKIPO-MB0001"
+            tbl.mkdir(parents=True)
+            (tbl / "financials.md").write_text("| Revenue | 100 |\n", encoding="utf-8")
+            fake_cfg = {"paths": {"data": tmp, "tables": tmp / "tables"}}
+            with patch("run.load_cfg", return_value=fake_cfg):
+                resolved = search_tool._tables_dir("0001.HK")
+            self.assertEqual(resolved, tbl)
+
+    def test_hkma_cache_covers_interval_within_weekend_slack(self):
+        sys.path.insert(0, str(ROOT / "tools" / "external"))
+        import hkma as hkma_tool
+        rows = [
+            ("2025-01-02", 4.12, 44800.0),
+            ("2025-06-30", 3.85, 45000.0),
+        ]
+        self.assertTrue(hkma_tool._covers_interval(rows, "2025-01-01", "2025-06-30"))
+        self.assertFalse(hkma_tool._covers_interval(rows, "2024-06-01", "2025-06-30"))
+
+
 
 if __name__ == "__main__":
     unittest.main()

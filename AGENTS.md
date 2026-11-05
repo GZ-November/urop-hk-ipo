@@ -48,6 +48,36 @@ Use an independent reviewer with original-source access. A credential requires
 a real review of the exact payload; preserve pending review when the runtime
 cannot supply an independent reviewer. Do not fabricate a passing sign-off.
 
+## Token & API cost optimization rules (mandatory for batch collection)
+
+1. **Issuer-level bundling (`work next`)**: Never spawn separate extractor subagents
+   for `prospectus`, `allot` and `gem` of the same issuer. Always dispatch via
+   `run.py work next --config CONFIG` so one extractor subagent completes all
+   targets of one issuer in a single context (reading shared company/share/cornerstone
+   context once).
+2. **Zero-token deterministic fields**: Do not spend subagent tool calls searching
+   for fields filled or derived deterministically by `work finish-extract` /
+   `derive_allot` (`col_CV` greenshoe, `col_CK` when cornerstone is absent,
+   `col_CQ` pricing date, `col_DA/DB/DC` free float, and `col_CR` announcement
+   datetime pre-injected in the brief) or later stages (`BC`, `CN/CO/CP`, market,
+   HKMA, HSIC, aftermarket, academic variables).
+3. **Single-pass reading & batched search**:
+   - **Extractors**: Read the brief (which already embeds `search periods`,
+     `search sharecap` and `col_CR`) and the deduplicated packet (which already
+     embeds `<!-- TABLE_START -->` structured Markdown tables) first. For any
+     remaining fields not found in the packet, batch-query candidates in **one**
+     call using `run.py search bundle CODE --fields col_X,col_Y,col_Z` instead of
+     running multiple per-field regex searches.
+   - **Reviewers**: Verify populated fields directly against the 700-char page
+     excerpts in the review brief's `Review sheet`; open full pages (`search pages`)
+     or run `search search` only when an excerpt is truncated, a validation warning
+     is present, or a field is marked missing (`NaN`/`NA`).
+4. **No redundant topic packets**: Use `--no-topics` when running standalone
+   `prepare` stages; `work next` uses the single deduplicated packet `HKIPO-MBxxxx.md`.
+5. **Rate-limit-safe concurrency**: If the model runtime has tight RPM/TPM quotas,
+   cap active leases with `run.py work next --config CONFIG --max-extract 3 --max-review 3 --max-total 4`
+   to avoid lease timeouts and wasted tokens.
+
 Publish results as a ZIP with `run.py bundle`, including coverage and gate reports.
 Report actual issuers/dates, missing evidence, unresolved review, immature windows,
 source limitations, and absolute artifact paths. Passing tests does not certify

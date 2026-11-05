@@ -151,6 +151,26 @@ reports every issuer reviewed, then rerun the step 4 command.
 - A number must be read or computed from the cited page. Never solve for a
   value so that an identity holds: an unreadable value stays `NaN`.
 
+**Token & API cost discipline (mandatory).**
+1. **One subagent per issuer lease, never per target**: Always dispatch from
+   `work next` so one extractor handles `prospectus` + `allot` (+ `gem`) together
+   in one context window.
+2. **Use precomputed & deterministic outputs first**: The extract brief already
+   includes `search periods`, `search sharecap`, and `col_CR` (allotment datetime),
+   and the packet already embeds `<!-- TABLE_START -->` Markdown tables.
+   `work finish-extract` deterministically populates `col_CV/CK/CQ/DA` (and
+   derivable `col_DB/DC`); never waste tool calls searching for greenshoe notices.
+3. **Batch any remaining searches**: If several fields are not in the packet,
+   call `run.py search bundle CODE --fields col_X,col_Y,col_Z --config CONFIG`
+   once instead of issuing separate `search search` calls per field.
+4. **Excerpt-first review**: Reviewers verify populated fields from the 700-char
+   page excerpts in the brief's `Review sheet` first, opening full pages or
+   running `search search` only when an excerpt is insufficient, a validation
+   warning appears, or a field is missing (`NaN`/`NA`).
+5. **Guard against rate-limit lease expiry**: When running under tight API rate
+   limits, pass `--max-extract 3 --max-review 3 --max-total 4` to `work next` so
+   subagents do not time out and waste tokens.
+
 **Concurrency is the scheduler's job.** Each lease lasts 90 minutes (extract) or
 60 minutes (review). It starts at 4 extractors, 4 reviewers and 6 subagents in
 total, dispatches reviews first, and takes the longest prospectuses first. A

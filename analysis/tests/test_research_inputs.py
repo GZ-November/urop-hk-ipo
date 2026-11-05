@@ -53,6 +53,19 @@ assert not any(name in sys.modules for name in (
                                               rtol=1e-12, atol=1e-14)
                 self.assertEqual(len(actual), len(panel))
 
+    def test_select_period_supports_multi_year_and_derived_ratios(self):
+        if not inputs.MASTER.is_file():
+            self.skipTest("Versioned master panel is unavailable")
+        full = inputs.load_panel()
+        selected = inputs.select_period(full, start_year=2025, end_year=2026)
+        self.assertGreater(len(selected), len(inputs.select_2026(full)))
+        self.assertIn("voting_cashflow_wedge", selected.columns)
+        self.assertIn("gross_margin_y1", selected.columns)
+        self.assertIn("rd_intensity_y1", selected.columns)
+        self.assertIn("cfo_to_assets_y1", selected.columns)
+        self.assertIn("post_aug2025_reform", selected.columns)
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 # HK IPO Excel vs JSON 逐格对账与数据质量审计报告
 
-> **生成时间**：2026-10-17 09:53:28  
+> **生成时间**：2026-11-05 15:56:50  
 > **目标工作簿**：`cohorts/HKIPO-MB2025Q4.xlsx` (Sheet: `NLR`)  
 > **审计范围**：47 家公司 × (70 招股书字段 + 18 配发字段 = 88 字段，共 4,136 个单元格) + 103 个外部工具字段  
 
@@ -163,7 +163,7 @@
 | `2687.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2691.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2693.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
-| `2695.HK` | ✅ PASS | ✅ PASS | ✅ PASS | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
+| `2695.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2698.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2718.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |
 | `2788.HK` | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ❌ NO | ⏳ legacy-untracked |

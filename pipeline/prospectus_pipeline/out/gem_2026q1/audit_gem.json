@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17 09:53:31",
+  "timestamp": "2026-11-05 15:56:53",
   "workbook": "cohorts/HKIPO-GEM2026Q1.xlsx",
   "sheet": "GEM_details",
   "audited_companies_count": 1,
@@ -164,27 +164,27 @@
     "8610.HK": {
       "prospectus": {
         "extracted": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
           "verdict": null
         },
         "validated": {
           "exists": true,
           "gate_pass": true,
-          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
+          "hash": "09f0a1db8cea614d1f9ef078c208abf4a57bbabb6051c2f62ca57e9cb40ff45e",
           "verdict": null
         },
         "reviewed": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
-          "verdict": "pass"
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
+          "verdict": null
         },
         "written": {
-          "exists": true,
-          "gate_pass": true,
-          "hash": "11d1a66b97d0abc8b8934198afb3c9f0dc180cc79f2a1dcd0c423e9f3fff4835",
+          "exists": false,
+          "gate_pass": false,
+          "hash": null,
           "verdict": null
         }
       },
