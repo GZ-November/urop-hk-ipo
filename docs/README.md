@@ -20,4 +20,4 @@
 ## Agent collection and GEM
 
 [一句话采集 Quickstart](QUICKSTART.md) · [One-page team instructions (PDF)](TEAM_INSTRUCTIONS.pdf) · [采集请求模板](COLLECTION_REQUEST_TEMPLATE.md) ·
-[Complete English operating instructions](AGENT_INSTRUCTIONS.md) · [GEM template and field mapping](GEM_PIPELINE.md).
+[全流程工作流与 2000–2026 指南 (EN / 中文)](WORKFLOW_2000_2026.md) · [Complete English operating instructions](AGENT_INSTRUCTIONS.md) · [GEM template and field mapping](GEM_PIPELINE.md).

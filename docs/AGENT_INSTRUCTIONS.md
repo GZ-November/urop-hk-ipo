@@ -252,6 +252,18 @@ overwriting `validation.json`, `greenshoe.json` or `cornerstone_absence.json`.
 - **Batched search (`search bundle`) & excerpt-first review**: Extractors read the brief and packet (`<!-- TABLE_START -->` tables) first, then batch any missing fields into a single `search bundle CODE --fields ...` call. Reviewers check the 700-char page excerpts in the brief's `Review sheet` first and only open full pages or run full-text searches for missing fields, warnings, or truncated excerpts.
 - **Rate-limit tuning**: Under constrained API quotas, pass `--max-extract 3 --max-review 3 --max-total 4` to `work next` to prevent lease timeouts.
 
+#### 2000–2026 Historical Collection & Native Table Parsing
+
+The pipeline guarantees end-to-end historical collection compatibility across all 2000–2026 IPOs:
+- **1997–1999 Track Record & 2-Digit Century Parsing**: Supports `199\d|20\d\d` for 2000–2002 IPOs whose 3-year Track Record falls in 1997–1999, and maps 2-digit years `>= 70` to `19xx` (`31/12/99 -> 1999-12-31`).
+- **Historical Accounting Standards**: Recognizes pre-IPO reorganization `COMBINED` accounts, `PROFIT AND LOSS ACCOUNT`, `BALANCE SHEET`, `Turnover` (revenue), `Net assets` (equity), and `HKGAAP` / `SSAP`.
+- **Date-Aware Rule 8.09(2) Market Cap Checks**: Enforces statutory minimum market cap by listing date (`< 2004-03-31`: HK$100M; `2004-03-31 .. 2018-02-14`: HK$200M; `>= 2018-02-15`: HK$500M).
+- **Stabilization Announcement Dates**: Parses British (`15 July 2004`) and US (`Wednesday, January 28, 2026`) date formats across `199\d|20\d\d`.
+- **Pre-HSTECH & Market Data Resilience**: Gracefully handles listings before Hang Seng TECH Index inception (pre-2015/2020) without failing HSI metrics, chunks Tencent K-lines (`>750` days) into 730-day windows to avoid 640-bar truncation, falls back to `fqkline/get` for 404 `.js` files, and bounds queries to 12M/36M observation horizons.
+- **0-Token Native Geometric Table Parsing (`src/table_parser.py`)**: Pre-extracts Share Capital (2-pass scan), Cornerstone, Underwriting, and Consolidated Financial Summary tables directly from PDF coordinates into `<!-- TABLE_START -->` blocks at zero token cost, preserving period X-coordinates and strictly skipping parent-only balance sheets (`is_company_level_statement`).
+
+For complete architecture diagrams, bilingual workflows, and operator checklists, consult **[WORKFLOW_2000_2026.md](WORKFLOW_2000_2026.md)**.
+
 #### Step-by-Step Autonomous Action for Agents:
 
 1. **Locate Work Orders**:

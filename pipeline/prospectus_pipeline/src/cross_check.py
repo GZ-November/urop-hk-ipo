@@ -27,7 +27,7 @@ WS = ROOT.parent
 sys.path[:0] = [str(ROOT), str(ROOT / "src")]
 
 from cohort import load_cfg
-from periods import traceable
+from periods import parse_date, traceable
 from regimes import REFORM_2025_DATE
 
 
@@ -98,6 +98,62 @@ def international_tranche_undersubscribed(cfg: dict, code: str, description: str
         if re.search(r"international (?:offer shares|offering).{0,35}under.?subscribed", page_text, re.I):
             return True
     return False
+
+
+def check_company(
+    row_a: dict[str, Any] | None = None,
+    row_b: dict[str, Any] | None = None,
+    *,
+    mcap: float | None = None,
+    listing_date: dt.date | str | None = None,
+) -> list[dict[str, Any]]:
+    """Audit a single company row or pair of extraction rows against listing rules."""
+    if row_b is None and isinstance(row_a, dict):
+        if "col_F" in row_a or "col_E" in row_a:
+            row_b = row_a
+
+    if listing_date is None:
+        if isinstance(row_b, dict):
+            raw_d = row_b.get("col_F") if "col_F" in row_b else row_b.get("col_E")
+            listing_date = parse_date(raw_d)
+        elif isinstance(row_a, dict):
+            raw_d = row_a.get("col_F") if "col_F" in row_a else row_a.get("col_E")
+            listing_date = parse_date(raw_d)
+    elif isinstance(listing_date, str):
+        listing_date = parse_date(listing_date)
+
+    if mcap is None:
+        for r in (row_a, row_b):
+            if isinstance(r, dict):
+                if "mcap" in r and r["mcap"] is not None:
+                    mcap = float(r["mcap"])
+                    break
+                l_val = r.get("col_L") or r.get("L")
+                t_val = r.get("col_T") or r.get("T")
+                if l_val is not None and t_val is not None:
+                    try:
+                        mcap = float(l_val) * float(t_val)
+                        break
+                    except (ValueError, TypeError):
+                        pass
+
+    checks: list[dict[str, Any]] = []
+    if mcap is not None:
+        if listing_date is not None and listing_date < dt.date(2004, 3, 31):
+            min_mcap, label = 100e6, "1 亿港元"
+        elif listing_date is not None and listing_date < dt.date(2018, 2, 15):
+            min_mcap, label = 200e6, "2 亿港元"
+        else:
+            min_mcap, label = 500e6, "5 亿港元"
+
+        if mcap < min_mcap:
+            checks.append({
+                "check": "Main Board Market Cap",
+                "severity": "ERROR",
+                "detail": f"主板上市公司市值低于 {label}最低法定要求: {mcap:,.0f} HKD",
+            })
+
+    return checks
 
 
 def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_dir: Path | str | None = None) -> dict:
@@ -320,12 +376,19 @@ def run_cross_check(cfg: dict | None = None, only: list[str] | None = None, out_
                             f"{threshold/1e8:.0f} 亿港元: {mcap:,.0f} HKD"
                         )
                     })
-            elif mcap < 500e6:
-                company_checks.append({
-                    "check": "Main Board Market Cap",
-                    "severity": "ERROR",
-                    "detail": f"主板上市公司市值低于 5 亿港元最低法定要求: {mcap:,.0f} HKD"
-                })
+            else:
+                if listing_date is not None and listing_date < dt.date(2004, 3, 31):
+                    min_mcap, label = 100e6, "1 亿港元"
+                elif listing_date is not None and listing_date < dt.date(2018, 2, 15):
+                    min_mcap, label = 200e6, "2 亿港元"
+                else:
+                    min_mcap, label = 500e6, "5 亿港元"
+                if mcap < min_mcap:
+                    company_checks.append({
+                        "check": "Main Board Market Cap",
+                        "severity": "ERROR",
+                        "detail": f"主板上市公司市值低于 {label}最低法定要求: {mcap:,.0f} HKD",
+                    })
 
         # -------------------------------------------------------------
         # 4. 超额配售权（绿鞋）上限 15% (Over-Allotment Option Limit)

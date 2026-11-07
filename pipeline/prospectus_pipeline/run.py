@@ -565,6 +565,11 @@ def cmd_collect(cfg, args, companies):
     """Prepare a date-selected cohort, then resume through the review gates."""
     from contracts import normalize_code
 
+    # Default to skipping redundant 4-topic sub-packets during batch collection
+    # unless explicitly requested (saves disk I/O and prevents subagents from reading twice).
+    if not hasattr(args, "no_topics") or not getattr(args, "with_topics", False):
+        args.no_topics = True
+
     wanted = {normalize_code(c["code"]) for c in companies}
 
     def index_covers(path: Path, packet_dir: Path) -> bool:

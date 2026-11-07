@@ -103,36 +103,80 @@ class TencentProvider(MarketDataProvider):
         for year in range(start.year, end.year + 1):
             url = f"https://data.gtimg.cn/flashdata/hk/daily/{year % 100:02d}/{symbol}.js"
             req = urllib.request.Request(url, headers={"User-Agent": self.user_agent})
-            with urllib.request.urlopen(req, timeout=timeout) as response:
-                text = response.read().decode("utf-8")
-            for match in re.finditer(r"(\d{6})\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)", text):
-                day = dt.datetime.strptime(match[1], "%y%m%d").date()
-                if start <= day <= end:
-                    bars.append({"date": day, "open": float(match[2]), "close": float(match[3]),
-                                 "high": float(match[4]), "low": float(match[5]), "volume": float(match[6]),
-                                 "turnover": None, "turnover_estimated": False, "price_basis": "raw_as_traded", "source_url": url})
+            text = None
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as response:
+                    text = response.read().decode("utf-8")
+            except urllib.error.HTTPError as e:
+                if e.code == 404:
+                    y_start = f"{year}-01-01"
+                    y_end = f"{year}-12-31"
+                    url_k = (
+                        "http://web.ifzq.gtimg.cn/appstock/app/fqkline/get?"
+                        f"param={symbol},day,{y_start},{y_end},640,"
+                    )
+                    req_k = urllib.request.Request(
+                        url_k,
+                        headers={"User-Agent": self.user_agent, "Accept": "*/*"},
+                    )
+                    try:
+                        with urllib.request.urlopen(req_k, timeout=timeout) as resp_k:
+                            payload_k = json.loads(resp_k.read().decode("utf-8"))
+                        data_k = (payload_k.get("data") or {}).get(symbol) or {}
+                        rows_k = data_k.get("day") or data_k.get("qfqday") or []
+                        for row in rows_k:
+                            day = parse_bar_date(row[0])
+                            if start <= day <= end:
+                                bars.append({
+                                    "date": day,
+                                    "open": float(row[1]),
+                                    "close": float(row[2]),
+                                    "high": float(row[3]),
+                                    "low": float(row[4]),
+                                    "volume": float(row[5]),
+                                    "turnover": None,
+                                    "turnover_estimated": False,
+                                    "price_basis": "raw_as_traded",
+                                    "source_url": url_k,
+                                })
+                    except Exception:
+                        pass
+                else:
+                    raise
+            if text:
+                for match in re.finditer(
+                    r"(\d{6})\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)",
+                    text,
+                ):
+                    day = dt.datetime.strptime(match[1], "%y%m%d").date()
+                    if start <= day <= end:
+                        bars.append({
+                            "date": day,
+                            "open": float(match[2]),
+                            "close": float(match[3]),
+                            "high": float(match[4]),
+                            "low": float(match[5]),
+                            "volume": float(match[6]),
+                            "turnover": None,
+                            "turnover_estimated": False,
+                            "price_basis": "raw_as_traded",
+                            "source_url": url,
+                        })
         if not bars:
             raise RuntimeError(f"Tencent returned no raw bars for {symbol}")
         return sorted(bars, key=lambda b: b["date"])[-n_bars:]
 
-    def fetch_bars(
+    def _fetch_qfq_window(
         self,
-        symbol_or_code: str,
-        from_date: dt.date | str,
-        to_date: dt.date | str,
-        n_bars: int = 350,
+        sym: str,
+        frm_str: str,
+        to_str: str,
+        n_bars: int = 640,
         timeout: int = 25,
-        adjusted: bool = True,
     ) -> list[dict[str, Any]]:
-        sym = self.normalize_symbol(symbol_or_code)
-        if not adjusted:
-            return self.fetch_raw_bars(sym, from_date, to_date, n_bars, timeout)
-        frm_str = str(from_date)[:10]
-        to_str = str(to_date)[:10]
         url = (
-            ("https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get" if adjusted else
-             "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get")
-            + f"?param={sym},day,{frm_str},{to_str},{n_bars},{'qfq' if adjusted else ''}"
+            "https://web.ifzq.gtimg.cn/appstock/app/hkfqkline/get"
+            f"?param={sym},day,{frm_str},{to_str},{n_bars},qfq"
         )
         req = urllib.request.Request(
             url,
@@ -150,12 +194,7 @@ class TencentProvider(MarketDataProvider):
             )
 
         data = (payload.get("data") or {}).get(sym) or {}
-        rows = (data.get("qfqday") or data.get("day") or []) if adjusted else (data.get("day") or [])
-        if not rows:
-            raise RuntimeError(
-                f"Tencent returned empty bars for {sym} ({frm_str} ~ {to_str})"
-            )
-
+        rows = data.get("qfqday") or data.get("day") or []
         bars = []
         for row in rows:
             turnover = None
@@ -174,7 +213,57 @@ class TencentProvider(MarketDataProvider):
                 "turnover": turnover,
                 "turnover_estimated": False,
             })
-        bars.sort(key=lambda x: x["date"])
+        return bars
+
+    def fetch_bars(
+        self,
+        symbol_or_code: str,
+        from_date: dt.date | str,
+        to_date: dt.date | str,
+        n_bars: int = 350,
+        timeout: int = 25,
+        adjusted: bool = True,
+    ) -> list[dict[str, Any]]:
+        sym = self.normalize_symbol(symbol_or_code)
+        if not adjusted:
+            return self.fetch_raw_bars(sym, from_date, to_date, n_bars, timeout)
+
+        d_from = parse_bar_date(from_date)
+        d_to = parse_bar_date(to_date)
+        frm_str = d_from.strftime("%Y-%m-%d")
+        to_str = d_to.strftime("%Y-%m-%d")
+
+        all_bars_map: dict[dt.date, dict[str, Any]] = {}
+        if (d_to - d_from).days > 750:
+            cur_start = d_from
+            while cur_start <= d_to:
+                cur_end = min(d_to, cur_start + dt.timedelta(days=730))
+                chunk = self._fetch_qfq_window(
+                    sym,
+                    cur_start.strftime("%Y-%m-%d"),
+                    cur_end.strftime("%Y-%m-%d"),
+                    n_bars=640,
+                    timeout=timeout,
+                )
+                for b in chunk:
+                    all_bars_map[b["date"]] = b
+                cur_start = cur_end + dt.timedelta(days=1)
+        else:
+            chunk = self._fetch_qfq_window(
+                sym,
+                frm_str,
+                to_str,
+                n_bars=max(n_bars, 640),
+                timeout=timeout,
+            )
+            for b in chunk:
+                all_bars_map[b["date"]] = b
+
+        bars = sorted(all_bars_map.values(), key=lambda x: x["date"])
+        if not bars:
+            raise ValueError(
+                f"Tencent returned empty bars for {sym} ({frm_str} ~ {to_str})"
+            )
         return bars
 
 
@@ -367,6 +456,26 @@ class ResilientMarketFetcher:
             f"All market data providers failed for {symbol_or_code} ({from_date} ~ {to_date}). "
             f"Errors: {'; '.join(errors)}"
         )
+
+    def fetch_bars(
+        self,
+        symbol_or_code: str,
+        from_date: dt.date | str,
+        to_date: dt.date | str,
+        n_bars: int = 350,
+        preferred_provider: str | None = None,
+        adjusted: bool = True,
+    ) -> list[dict[str, Any]]:
+        """调用弹性引擎拉取 K 线并直接返回 bars 列表。"""
+        bars, _, _ = self.fetch_bars_resilient(
+            symbol_or_code,
+            from_date,
+            to_date,
+            n_bars=n_bars,
+            preferred_provider=preferred_provider,
+            adjusted=adjusted,
+        )
+        return bars
 
 
 _DEFAULT_FETCHER: ResilientMarketFetcher | None = None

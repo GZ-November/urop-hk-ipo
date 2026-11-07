@@ -37,16 +37,20 @@ _WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven
           "eight": 8, "nine": 9, "ten": 10, "eleven": 11}
 _COUNT = r"(?P<count>" + "|".join(_WORDS) + r"|\d{1,2})"
 # "30 June 2025" | "June 30, 2025" | table headers "June 30,\n2024 2025" (the last year wins).
-_YEARS = r"(?P<years>20\d\d(?:\s*,?\s*(?:and\s+)?20\d\d)*)"
+_YEARS = r"(?P<years>(?:199\d|20\d\d)(?:\s*,?\s*(?:and\s+)?(?:199\d|20\d\d))*)"
 _DATE = (rf"(?:(?P<d1>\d{{1,2}})\s+(?P<m1>{_MON})|(?P<m2>{_MON})\s+(?P<d2>\d{{1,2}}))"
          rf",?\s+{_YEARS}")
 STUB_RE = re.compile(rf"\b{_COUNT}[\s-]+months?(?:[\s-]+(?:period|financial\s+period))?\s+"
                      rf"ended\s+(?:on\s+)?{_DATE}", re.I)
 YEAR_RE = re.compile(rf"\b(?:financial\s+)?years?\s+ended\s+(?:on\s+)?{_DATE}", re.I)
-STATEMENT_RE = re.compile(r"CONSOLIDATED STATEMENTS? OF (?:PROFIT OR LOSS|COMPREHENSIVE|"
-                          r"FINANCIAL POSITION|CASH FLOWS?)|ACCOUNTANTS. REPORT|"
-                          r"SUMMARY OF HISTORICAL FINANCIAL INFORMATION|"
-                          r"SUMMARY OF CONSOLIDATED STATEMENTS", re.I)
+STATEMENT_RE = re.compile(
+    r"(?:CONSOLIDATED|COMBINED)\s+(?:STATEMENTS?\s+OF\s+(?:PROFIT\s+OR\s+LOSS|COMPREHENSIVE|INCOME|"
+    r"RESULTS|FINANCIAL\s+POSITION|CASH\s+FLOWS?)|PROFIT\s+AND\s+LOSS(?:\s+ACCOUNTS?)?|"
+    r"INCOME\s+STATEMENTS?|BALANCE\s+SHEETS?|CASH\s+FLOW\s+STATEMENTS?)|ACCOUNTANTS.\s*REPORT|"
+    r"SUMMARY\s+OF\s+HISTORICAL\s+FINANCIAL\s+INFORMATION|"
+    r"SUMMARY\s+(?:OF\s+)?(?:CONSOLIDATED|COMBINED)\s+(?:STATEMENTS|FINANCIAL\s+INFORMATION)",
+    re.I,
+)
 ANNUALISED_FIELDS = ("col_AH", "col_AK", "col_AN")
 
 
@@ -115,7 +119,7 @@ def parse_date(value) -> dt.date | None:
         match = re.search(r"\b(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})\b", text)
         if match:
             day, month, year = (int(x) for x in match.groups())
-            year = year + 2000 if year < 100 else year
+            year = (year + 1900 if year >= 70 else year + 2000) if year < 100 else year
         else:
             match = re.search(rf"\b(\d{{1,2}})\s+({_MON})\s+(\d{{4}})\b", text, re.I)
             if not match:
@@ -131,7 +135,7 @@ def _dates(match: re.Match) -> list[dt.date]:
     day = int(match.group("d1") or match.group("d2"))
     month = MONTHS[(match.group("m1") or match.group("m2")).lower()]
     out = []
-    for year in re.findall(r"20\d\d", match.group("years")):
+    for year in re.findall(r"(?:199\d|20\d\d)", match.group("years")):
         try:
             out.append(dt.date(int(year), month, day))
         except ValueError:
@@ -180,8 +184,8 @@ DEFINITION_RE = re.compile(
     r"(?:means\s+|refers\s+to\s+)?(?P<body>[^“‘\";]{0,300})", re.I)
 _DEF_YEAR_RE = re.compile(rf"\b(?:{_COUNT}\s+)?(?:financial\s+)?years?(?:\s*/\s*periods?)?\s+ended\s+"
                           rf"(?:on\s+)?{_DATE}", re.I)
-_FY_RE = re.compile(r"(?<![\dM])FY\s?(20\d\d)\b")                 # FY2025
-_FY_STUB_RE = re.compile(r"\b(\d{1,2})\s?M(?:FY)?\s?(20\d\d)\b")   # 6M2026, 10MFY2025
+_FY_RE = re.compile(r"(?<![\dM])FY\s?(199\d|20\d\d)\b")
+_FY_STUB_RE = re.compile(r"\b(\d{1,2})\s?M(?:FY)?\s?(199\d|20\d\d)\b")
 
 
 @dataclass(frozen=True)
@@ -375,6 +379,9 @@ def resolve(pages: list[dict], *, today: dt.date | None = None) -> TrackRecord:
                          "but none starts the day after that year end")
         return result
     return _close(result, period_ending(latest, 12), annual[:-1])
+
+
+resolve_from_pages = resolve
 
 
 def _numbers(text: str) -> list[tuple[float, int]]:
