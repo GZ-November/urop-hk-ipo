@@ -3,6 +3,8 @@
 [![CI](https://github.com/GZ-November/urop-hk-ipo/actions/workflows/ci.yml/badge.svg)](https://github.com/GZ-November/urop-hk-ipo/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+**Language / 语言**: [English](#hong-kong-ipo-research) | [简体中文 (Bilingual Workflow & 2000–2026 Guide)](#港股-ipo-数据采集与实证研究流水线20002026-全周期中英双语指南) · [End-to-End Workflow & 2000–2026 Architecture (EN / 中文)](docs/WORKFLOW_2000_2026.md)
+
 **Tell an AI agent a listing period; get evidence-backed Hong Kong IPO data and reproducible analysis.**
 
 This project turns HKEX disclosures into evidence-linked datasets for ordinary Hong Kong Main Board and GEM IPOs. Every value carries its source page, and an independent reviewer checks it before it enters the workbook. The research studies first-day returns, retail allocation, cornerstone investors, A+H pricing, margin financing, and returns after listing.
@@ -202,6 +204,92 @@ The current plan starts with coverage and basic statistics, then prioritizes sub
 - **Limited event coverage:** later-return and lockup samples depend on observed windows. The cutoff is not the report publication date.
 
 Completed repairs and remaining source limitations are documented in [research readiness](pipeline/reports/research_readiness/README.md). A hash identifies a file version; it does not prove an economic interpretation. Field-level review does not certify every field for an issuer.
+
+## <a id="港股-ipo-数据采集与实证研究流水线20002026-全周期中英双语指南"></a>End-to-End Collection Workflow & 2000–2026 Architecture / 港股 IPO 数据采集与实证研究流水线（2000–2026 全周期中英双语指南）
+
+> For the comprehensive operational manual with detailed architecture diagrams and checklists, see **[End-to-End Workflow & 2000–2026 Collection Guide (docs/WORKFLOW_2000_2026.md)](docs/WORKFLOW_2000_2026.md)**.
+> 完整系统架构图、算子细则与工程规范详见 **[全周期工作流与 2000–2026 指南 (docs/WORKFLOW_2000_2026.md)](docs/WORKFLOW_2000_2026.md)**。
+
+---
+
+### 1. 6-Stage End-to-End Workflow / 全流程六步工作流
+
+```text
+  [Stage 1: Plan & Scope]           python3 run.py plan <period>
+           |
+           v
+  [Stage 2: Official Discovery]     python3 run.py start --board <MB|GEM> ...
+  (0-Token Native Tables)           -> Emits Exit Code 3 (WORK_PENDING)
+           |
+           v
+  [Stage 3: Bundled Extraction]     python3 run.py work next --config CONFIG
+  (Orchestrator + Subagents)        -> Issuer bundle (prospectus + allot + gem)
+           |
+           v
+  [Stage 4: Independent Review]     python3 run.py work next --config CONFIG
+  (Dual-Blind Sign-Off)             -> 700-char excerpts + payload SHA-256
+           |
+           v
+  [Stage 5: Hash-Gated Write-Back]  python3 run.py resume --run-dir ...
+  (Deterministic Enrichment)        -> market, hkma, hsic, aftermarket, audit
+           |
+           v
+  [Stage 6: Export, Master & ZIP]   export -> master --derive -> bundle
+```
+
+#### Stage 1: Plan & Scope / 第一步：计划编制与周期划分
+- **English**: Run `python3 run.py plan <period>` (e.g. `2000..2026` or `2025Q4`). The planner deterministically partitions the target listing interval into non-overlapping `[board × calendar quarter]` cohort jobs, automatically identifies and reuses existing `stored` cohorts in `pipeline/cohorts/`, and prints reproducible `run.py start` commands.
+- **中文**: 运行 `python3 run.py plan <period>`（如 `2000..2026` 或 `2025Q4`）。系统自动将跨度区间分解为不重叠的 `[板块 × 自然季度]` 执行单元，自动检测并复用 `pipeline/cohorts/` 下已归档的 `stored` 队列，输出标准可重现的 `run.py start` 命令。
+
+#### Stage 2: Official Discovery, Download & 0-Token Native Table Pre-Parsing / 第二步：官方发现、披露下载与 0-Token 原生表格预解析
+- **English**: Runs official discovery from HKEX listing reports (`.xls` via `xlrd` for pre-2020 cohorts and `.xlsx` for 2020+), isolates ordinary IPOs, downloads official Prospectus and Allotment PDFs, and generates a single deduplicated packet (`HKIPO-MBxxxx.md`, `--no-topics` by default).
+  - **Native Geometric Table Parser (`src/table_parser.py`)**: Extracts Financial Summary/Accountants' Report tables, Share Capital tables (via a robust 2-pass total scan), Cornerstone tables, and Underwriting tables directly from PDF coordinates at **0 LLM token cost**, wrapping them in `<!-- TABLE_START --> ... <!-- TABLE_END -->`. It preserves all actual historical period columns through X-coordinate alignment (no `nums[:4]` truncation or synthetic `Year-3/2/1` headers), strips extraneous `% of revenue` columns, and skips parent-only balance sheets (`is_company_level_statement`) in favor of Group Consolidated/Combined statements.
+- **中文**: 自动下载港交所官方新上市公司报告（2020 之前采用 `xlrd` 解析 `.xls`，2020 及以后采用 `.xlsx`），甄别排除介绍上市与转板，下载招股书及配发结果 PDF，并生成单一去重的抽取底稿（`HKIPO-MBxxxx.md`，默认启用 `--no-topics`）。
+  - **0-Token 原生空间几何表格解析引擎 (`src/table_parser.py`)**: 直接基于 PDF 空间几何坐标簇解析财务摘要三表、股本结构表（两轮全扫描回退机制）、基石配售表和承销费用表，注入 `<!-- TABLE_START -->` 区块，**完全零消耗 LLM Token**。通过 X 轴视网膜投影严格保留真实会计期间（杜绝截断或伪造年份头），过滤收入百分比列，并基于 `is_company_level_statement` 严格剔除母公司单体报表以确保集团口径。
+
+#### Stage 3: Exit Code 3 Protocol & Lease-Scheduled Extraction / 第三步：Exit 3 协议与租约抽取
+- **English**: The collection process deterministically exits with **Exit Code 3 (`WORK_PENDING`)** when extraction or review is pending, safeguarding research workbooks against unverified edits.
+  - **Orchestrator + Subagent Architecture**: The orchestrator (e.g., Argon / parent agent) claims work leases via `python3 run.py work next --config CONFIG`. Each lease bundles all targets of an issuer (`prospectus`, `allot`, and `gem`) so a single extractor subagent handles the issuer in one context without redundant reading.
+  - **Fixed Financial-Period Standard (Teacher's Manual §2.3)**: `year-1` is the latest period of the audited Track Record in the Accountants' Report (full fiscal year or 3–11 month stub; `col_AT` records its end date); `year-2` and `year-3` are the two preceding complete financial years (never derived by subtraction); unaudited post-track-record disclosures are never `year-1`; only Net Sales (`col_AH`), PBT (`col_AK`), and PAT (`col_AN`) are annualised (`× 12 / months`).
+  - **Token Optimization**: Extractors read pre-injected `search periods`, `search sharecap`, `col_CR`, and `<!-- TABLE_START -->` tables first, and batch remaining queries into a single `run.py search bundle CODE --fields ...` call. Subagents finish with `work finish-extract`, triggering deterministic derivation (`derive_allot` for `col_CV` greenshoe, `col_CK` cornerstone absence, `col_CQ` pricing date, `col_DA/DB/DC` free float) and schema validation.
+- **中文**: 当存在待抽取或待复核数据时，流水线规范退出并返回**退出码 3 (`WORK_PENDING`)**，杜绝未经验证的数据静默写入。
+  - **父智能体编排与子智能体并发**: 主调度器运行 `python3 run.py work next --config CONFIG` 申领发行人绑定的抽取租约（单一发行人的 `prospectus`、`allot`、`gem` 捆绑由一个子智能体在单轮会话中完成，避免重复阅读公司背景与股本信息）。
+  - **固定会计期间准则（导师手册 §2.3）**: `year-1` 严格为申报会计师报告（Accountants' Report）中经审计营业纪录期（Track Record Period）的最近一期（完整年或 3–11 个月 Stub 期间，`col_AT` 为其截止日）；`year-2` 与 `year-3` 为其前两个完整会计年度（严禁倒减生成）；未经审计的期后数字绝不能作为 `year-1`；仅主营收入 (`col_AH`)、税前利润 (`col_AK`) 与净利润 (`col_AN`) 进行年化折算 (`× 12 / months`)。
+  - **Token 极致优化**: 抽取子智能体优先读取 Brief 中预注入的会计期间、股本及 `<!-- TABLE_START -->` 结构化表格，余下字段通过 `run.py search bundle CODE --fields ...` 单次批量查询；调用 `work finish-extract` 自动完成确定性衍生（`derive_allot` 结算绿鞋 `col_CV`、基石缺失 `col_CK`、定价日 `col_CQ`、自由流通盘 `col_DA/DB/DC`）与校验。
+
+#### Stage 4: Independent Review / 第四步：独立双盲交叉复核
+- **English**: A separate independent review subagent claims a review lease via `work next`. It inspects the 700-character original page excerpts embedded in the brief's `Review sheet`. It opens full pages or runs full-text searches only when an excerpt is truncated, a validation warning exists, or a field is marked missing (`NaN`/`NA`). Approval is recorded with `work finish-review --verdict pass`, anchoring the exact `payload sha256`.
+- **中文**: 独立的复核子智能体申领复核租约，优先核对 Brief `Review sheet` 中内嵌的 700 字符原文切片。仅在原文切片被截断、出现校验警告或字段缺失（`NaN`/`NA`）时才检索全文。复核通过后调用 `work finish-review --verdict pass` 签署并锁定该载荷的 SHA-256 哈希凭证。
+
+#### Stage 5: Hash-Gated Write-Back & External Enrichment / 第五步：哈希门禁回写与外部计量增广
+- **English**: Running `python3 run.py resume --run-dir ...` validates reviewer credentials, creates timestamped Excel workbook backup snapshots, writes reviewed cells into the cohort workbook, and executes deterministic external pipelines:
+  - `disclosure_notes`: Derives `col_BC = months / 12` and writes unadjusted values to `col_CN/CO/CP`.
+  - `market`: Fetches split-adjusted daily prices via Tencent Quote API with Yahoo Finance fallback.
+  - `hkma`: Obtains Exchange Fund base rates and HIBOR with local CSV interval caching.
+  - `hsic`, `flags`, `rules`, `aftermarket` (1M/6M BHR, Wealth Relatives, liquidity decay), `academic` (underpricing, retail rationing, cornerstone demands), and `audit` & `cross_check`.
+- **中文**: 运行 `python3 run.py resume --run-dir ...` 校验复核凭证，生成带有时间戳的 Excel 备份快照，将通过复核的数据安全回写至工作簿，并自动化执行后续确定性衍生增广：
+  - `disclosure_notes`：计算年化因子 `col_BC = months / 12`，原始未折算值归档于 `col_CN/CO/CP`。
+  - `market`：通过腾讯证券高频接口获取前复权日 K 线（雅虎财经自动热备降级）。
+  - `hkma`：获取金管局基准利率与 HIBOR（支持本地 CSV 区间缓存）。
+  - `hsic` 恒生行业分类、`aftermarket`（1M/6M BHR、财富相对比 WR、流动性衰减比）、`academic` 学术变量及 `audit` / `cross_check` 规则合规审查。
+
+#### Stage 6: Export, Master Panel & Delivery / 第六步：数据导出、主面板合并与成果归档
+- **English**: `run.py export` outputs clean econometric CSVs and Markdown Codebooks. `run.py master --derive` merges the cohort into the multi-year master panel (`HKIPO-MB-MASTER_clean.csv`). `run.py bundle` compiles deliverables into a verified ZIP containing `manifest.json` and `quality_summary.json`.
+- **中文**: `run.py export` 导出符合计量经济学规范的纯净 CSV 与学术变量字典 Markdown。`run.py master --derive` 将季度数据合并入跨年度总面板（`HKIPO-MB-MASTER_clean.csv`）。`run.py bundle` 生成包含完整工件、`manifest.json` 与 `quality_summary.json` 的交付 ZIP 压缩包。
+
+---
+
+### 2. 2000–2026 Historical Compatibility Guarantees / 2000–2026 跨周期历史兼容保障
+
+| Compatibility Dimension / 兼容维度 | Technical Implementation / 核心技术实现 | Source References / 对应源码 |
+|---|---|---|
+| **1997–1999 Track Record & 2-Digit Century**<br>(1997–1999 营业纪录期与两位数世纪年份转换) | All year regexes expanded to `(?:199\d\|20\d\d)` to support 2000–2002 IPOs whose 3-year Track Record spans 1997–1999. Two-digit year mapping implements `year = (year + 1900 if year >= 70 else year + 2000) if year < 100 else year`, ensuring `31/12/99 -> 1999-12-31`. | `src/periods.py`<br>`src/table_parser.py`<br>`tools/search.py` |
+| **Historical Accounting Standards**<br>(合并前结合报表与历史会计准则) | Recognizes pre-IPO reorganization `COMBINED` financial statements alongside `CONSOLIDATED` statements. Recognizes historical UK/HKGAAP terms: `Turnover` (Revenue), `PROFIT AND LOSS ACCOUNT` (Statement of Profit or Loss), `Net assets` (Total Equity), and `SSAP` / `HKGAAP`. | `src/periods.py`<br>`src/pdfprep.py`<br>`src/table_parser.py`<br>`tools/search.py` |
+| **Date-Aware Rule 8.09(2) Market Cap**<br>(动态法定最低市值门槛校验) | Enforces statutory Main Board Rule 8.09(2) market cap thresholds based on listing date: `< 2004-03-31`: HK$100M; `2004-03-31 .. 2018-02-14`: HK$200M; `>= 2018-02-15`: HK$500M (plus Chapter 18A HK$1.5B and Chapter 18C HK$4B/8B). | `src/cross_check.py` |
+| **Cross-Decade Stabilization Dates**<br>(跨年代价格稳定公告日期识别) | Accurately extracts price stabilization termination and exercise dates under Cap 571W across British order (`15 July 2004`) and US order (`Wednesday, January 28, 2026`) across `199\d\|20\d\d`. | `src/stabilization_panel.py` |
+| **Pre-HSTECH Fallback & K-Line Chunking**<br>(恒科指数前置平滑、K线分块与视界截断) | Gracefully returns empty HSTECH bars for pre-2015/2020 IPOs without raising errors, ensuring HSI returns compute uninterrupted. Automatically chunks Tencent K-line requests (`> 750` days) into 730-day windows to prevent 640-bar truncation, falls back to `fqkline/get` on 404 yearly `.js` files, and strictly bounds queries to 12M (`aftermarket.py`) or 36M (`market_panel.py`). | `src/market_fetcher.py`<br>`tools/external/aftermarket.py`<br>`src/market_panel.py` |
+
+---
 
 ## Checks, data distribution, and contribution
 

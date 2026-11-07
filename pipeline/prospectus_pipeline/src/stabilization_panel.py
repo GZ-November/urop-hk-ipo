@@ -62,15 +62,27 @@ RE_OVER_ALLOC = re.compile(rf"over-?allocations?\s+of\s+(?:an\s+aggregate\s+of\s
 RE_OVER_PCT = re.compile(r"representing\s+(?:approximately\s+)?([\d.]+)\s*%\s+of\s+the\s+(?:total\s+number\s+of\s+)?(?:Offer\s+|H\s+)?Shares", re.I)
 RE_BORROW = re.compile(r"(stock\s+borrowing\s+agreement|delayed\s+delivery)", re.I)
 RE_EXERCISE_SHARES = re.compile(rf"(?:fully|partially)\s+exercised.*?in\s+respect\s+of\s+(?:an\s+aggregate\s+of\s+)?({NUM})\s*(?:new\s+)?(?:H\s+|Offer\s+)?Shares", re.I | re.S)
-RE_EXERCISE_DATE = re.compile(r"(?:on|dated)\s+([A-Z][a-z]+day,\s+[A-Z][a-z]+\s+\d{1,2},\s+202\d)", re.I)
-RE_END_STAB = re.compile(r"stabilization\s+period\s+in\s+connection\s+with\s+the\s+Global\s+Offering\s+ended\s+on\s+([A-Z][a-z]+day,\s+[A-Z][a-z]+\s+\d{1,2},\s+202\d)", re.I)
+_DATE_PAT = (
+    r"(?:[A-Z][a-z]+day,\s+)?"
+    r"(?:[A-Z][a-z]+\s+\d{1,2},?\s+(?:199\d|20\d\d)|\d{1,2}\s+[A-Z][a-z]+,?\s+(?:199\d|20\d\d))"
+)
+RE_EXERCISE_DATE = re.compile(
+    rf"(?:on|dated)\s+({_DATE_PAT})",
+    re.I,
+)
+RE_END_STAB = re.compile(
+    rf"stabili[sz]ation\s+period\s+in\s+connection\s+with\s+the\s+Global\s+Offering\s+ended\s+on\s+"
+    rf"({_DATE_PAT})",
+    re.I,
+)
 
 
 def parse_date_str(s: str) -> Optional[dt.date]:
-    """解析如 Wednesday, January 28, 2026 的英文长日期。"""
-    # 剔除星期
+    """解析如 Wednesday, January 28, 2026 或 15 July 2004 的英文长日期。"""
+    # 剔除星期与逗号
     s_clean = re.sub(r"^[A-Z][a-z]+day,\s*", "", s.strip())
-    for fmt in ("%B %d, %Y", "%b %d, %Y", "%Y-%m-%d"):
+    s_clean = s_clean.replace(",", "").strip()
+    for fmt in ("%B %d %Y", "%b %d %Y", "%d %B %Y", "%d %b %Y", "%Y-%m-%d"):
         try:
             return dt.datetime.strptime(s_clean, fmt).date()
         except ValueError:

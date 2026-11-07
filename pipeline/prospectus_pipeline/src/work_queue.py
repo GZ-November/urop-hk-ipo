@@ -403,6 +403,24 @@ def write_extract_brief(cfg: dict, lease_id: str, lease: dict, info: dict, comma
                     + "\n".join(f"- {t}: read `{report_path(cfg, t, code)}` and correct the payload"
                                 for t in rejected) + "\n")
     allot_hint = _allot_meta(cfg, code)
+    sharecap_block = ""
+    pkt_file = packet_path(cfg, "prospectus", code)
+    has_sharecap_table = (
+        pkt_file.is_file()
+        and "Share Capital Table" in pkt_file.read_text(encoding="utf-8", errors="ignore")[:18000]
+    )
+    if has_sharecap_table:
+        sharecap_block = (
+            f"## Precomputed: search sharecap {code}\n"
+            f"(Already embedded in the prospectus packet's `<!-- TABLE_START -->` Share Capital Table "
+            f"and deduplicated source pages; run `{command} search sharecap {code}` only if needed.)\n"
+        )
+    else:
+        sharecap_block = f"""## Precomputed: search sharecap {code}
+```
+{_search(cfg, "sharecap", code, limit=4000)}
+```
+"""
     body = f"""# Extraction brief: {code} {info['name']} (lease {lease_id})
 
 You are the extractor for this one issuer. Write one JSON payload per target, then run
@@ -444,11 +462,7 @@ single call with `search bundle {code} --fields col_X,col_Y` or inspect exact pa
 {_search(cfg, "periods", code)}
 ```
 
-## Precomputed: search sharecap {code}
-```
-{_search(cfg, "sharecap", code, limit=4000)}
-```
-
+{sharecap_block}
 ## Finish
 Run `{command} work finish-extract --lease {lease_id}`. It runs derive_allot, validates
 every target and records the extracted credentials in the required order under the

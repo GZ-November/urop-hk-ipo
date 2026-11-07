@@ -145,8 +145,19 @@ class MarketPanelEngine:
         self.out_master.mkdir(parents=True, exist_ok=True)
         self.benchmarks: dict[str, list[dict[str, Any]]] = {}
 
-    def fetch_benchmark_bars(self, symbol: str, from_date: dt.date) -> list[dict[str, Any]]:
+    def fetch_benchmark_bars(
+        self,
+        symbol: str,
+        min_date: dt.date | None = None,
+        max_date: Optional[dt.date] = None,
+        from_date: dt.date | None = None,
+    ) -> list[dict[str, Any]]:
         """拉取并缓存基准指数日度序列。"""
+        effective_min = min_date if min_date is not None else from_date
+        if effective_min is None:
+            effective_min = dt.date(2021, 1, 1)
+        effective_max = max_date or self.today
+
         if symbol in self.benchmarks:
             return self.benchmarks[symbol]
         cache_file = self.cache_dir / f"{symbol.replace('^', '')}_bars.json"
@@ -160,7 +171,14 @@ class MarketPanelEngine:
             except Exception:
                 pass
 
-        bars, prov, errs = self.fetcher.fetch_bars_resilient(symbol, from_date, self.today, n_bars=1200)
+        frm_str = effective_min.strftime("%Y-%m-%d")
+        to_str = effective_max.strftime("%Y-%m-%d")
+        if hasattr(self.fetcher, "fetch_bars"):
+            bars = self.fetcher.fetch_bars(symbol, frm_str, to_str, n_bars=1200)
+        else:
+            bars, prov, errs = self.fetcher.fetch_bars_resilient(
+                symbol, frm_str, to_str, n_bars=1200
+            )
         # 序列化缓存
         ser = []
         for b in bars:
@@ -171,9 +189,18 @@ class MarketPanelEngine:
         self.benchmarks[symbol] = bars
         return bars
 
-    def fetch_issuer_bars(self, stock_code: str, listing_date: dt.date) -> list[dict[str, Any]]:
+    def fetch_issuer_bars(
+        self,
+        stock_code: str | None = None,
+        listing_date: dt.date | None = None,
+        *,
+        code: str | None = None,
+    ) -> list[dict[str, Any]]:
         """拉取并缓存个股日度序列。"""
-        cache_file = self.cache_dir / f"{stock_code}_bars.json"
+        effective_code = code if code is not None else stock_code
+        if effective_code is None or listing_date is None:
+            return []
+        cache_file = self.cache_dir / f"{effective_code}_bars.json"
         if cache_file.exists():
             try:
                 bars = json.loads(cache_file.read_text(encoding="utf-8"))
@@ -183,7 +210,18 @@ class MarketPanelEngine:
             except Exception:
                 pass
 
-        bars, prov, errs = self.fetcher.fetch_bars_resilient(stock_code, listing_date, self.today, n_bars=850)
+        end_date = min(
+            self.today,
+            add_calendar_months(listing_date, 37) + dt.timedelta(days=15),
+        )
+        frm_str = listing_date.strftime("%Y-%m-%d")
+        to_str = end_date.strftime("%Y-%m-%d")
+        if hasattr(self.fetcher, "fetch_bars"):
+            bars = self.fetcher.fetch_bars(effective_code, frm_str, to_str, n_bars=850)
+        else:
+            bars, prov, errs = self.fetcher.fetch_bars_resilient(
+                effective_code, frm_str, to_str, n_bars=850
+            )
         ser = []
         for b in bars:
             rec = dict(b)
@@ -366,18 +404,51 @@ class MarketPanelEngine:
 
         return daily_records, horizon_records
 
-    def run(self, issuers: list[dict[str, Any]]) -> tuple[Path, Path]:
+    def run(self, issuers: Any) -> tuple[Path, Path]:
         """批量执行全量面板构建。"""
-        logger.info(f"Processing market panel for {len(issuers)} issuers...")
-        # 预先拉取基准指数
-        min_date = min((parse_bar_date(i["listing_date"]) for i in issuers if i.get("listing_date")), default=dt.date(2021, 1, 1))
-        hsi_bars = self.fetch_benchmark_bars("^HSI", min_date)
-        hstech_bars = self.fetch_benchmark_bars("^HSTECH", min_date)
+        if hasattr(issuers, "iterrows"):
+            listing_dates = [
+                dt.date.fromisoformat(str(r["listing_date"])[:10])
+                for _, r in issuers.iterrows()
+                if r.get("listing_date") is not None
+            ]
+            issuers_list = [r.to_dict() for _, r in issuers.iterrows()]
+        else:
+            listing_dates = [
+                parse_bar_date(i["listing_date"])
+                for i in issuers
+                if i.get("listing_date")
+            ]
+            issuers_list = list(issuers)
+
+        logger.info(f"Processing market panel for {len(issuers_list)} issuers...")
+        min_date = min(listing_dates, default=dt.date(2021, 1, 1))
+        if listing_dates:
+            max_bench_date = min(
+                self.today,
+                max(
+                    add_calendar_months(d, 37) + dt.timedelta(days=15)
+                    for d in listing_dates
+                ),
+            )
+        else:
+            max_bench_date = self.today
+
+        hsi_bars = self.fetch_benchmark_bars(
+            "^HSI", min_date=min_date, max_date=max_bench_date
+        )
+        try:
+            hstech_bars = self.fetch_benchmark_bars(
+                "^HSTECH", min_date=min_date, max_date=max_bench_date
+            )
+        except Exception as exc:
+            logger.warning("Failed to fetch ^HSTECH benchmark bars: %s", exc)
+            hstech_bars = []
 
         all_daily: list[dict[str, Any]] = []
         all_horizons: list[dict[str, Any]] = []
 
-        for i in issuers:
+        for i in issuers_list:
             d_recs, h_recs = self.process_issuer(i, hsi_bars, hstech_bars)
             all_daily.extend(d_recs)
             all_horizons.extend(h_recs)
@@ -405,8 +476,15 @@ class MarketPanelEngine:
                 writer.writeheader()
                 writer.writerows(all_horizons)
 
-        logger.info(f"Market panel built: {len(all_daily)} daily bars, {len(all_horizons)} horizon records")
+        logger.info(
+            "Market panel built: %d daily bars, %d horizon records",
+            len(all_daily),
+            len(all_horizons),
+        )
         return daily_csv, horizon_csv
+
+
+MarketEngine = MarketPanelEngine
 
 
 if __name__ == "__main__":

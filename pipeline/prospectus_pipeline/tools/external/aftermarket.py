@@ -205,10 +205,10 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
     # 指数上市首日基准收盘价
     hsi_d0_bar = find_bar_on_or_after(hsi_bars, d0)
     hstech_d0_bar = find_bar_on_or_after(hstech_bars, d0)
-    if hsi_d0_bar is None or hstech_d0_bar is None:
-        return {"error": f"上市日 {d0} 附近缺少恒指/恒科样本；历史 K 线截断"}
+    if hsi_d0_bar is None:
+        return {"error": f"上市日 {d0} 附近缺少恒指样本；历史 K 线截断"}
     hsi_p0 = hsi_d0_bar["close"] if hsi_d0_bar else None
-    hstech_p0 = hstech_d0_bar["close"] if hstech_d0_bar else None
+    hstech_p0 = hstech_d0_bar["close"] if hstech_d0_bar is not None else None
     
     # ==================== 1 个月指标 (T+20 交易日) ====================
     # 少于 20 个真实交易日时保持缺失，禁止用“当前最新日”冒充 1M。
@@ -319,7 +319,20 @@ def calculate_metrics(company_info: dict, stock_bars: list[dict], hsi_bars: list
         159: None,  # 3Y Reserved
         160: None,  # 3Y WR Reserved
         161: milestone,
+        "adj_ret_1m_hsi": round(hsi_ret_1m, 6) if hsi_ret_1m is not None else None,
+        "hsi_ret_1m": round(hsi_ret_1m, 6) if hsi_ret_1m is not None else None,
+        "hstech_ret_1m": round(hstech_ret_1m, 6) if hstech_ret_1m is not None else None,
+        "wr_hsi_1m": round(wr_hsi_1m, 4) if wr_hsi_1m is not None else None,
+        "wr_hstech_1m": round(wr_hstech_1m, 4) if wr_hstech_1m is not None else None,
+        "adj_ret_6m_hsi": round(hsi_ret_6m, 6) if hsi_ret_6m is not None else None,
+        "hsi_ret_6m": round(hsi_ret_6m, 6) if hsi_ret_6m is not None else None,
+        "hstech_ret_6m": round(hstech_ret_6m, 6) if hstech_ret_6m is not None else None,
+        "wr_hsi_6m": round(wr_hsi_6m, 4) if wr_hsi_6m is not None else None,
+        "wr_hstech_6m": round(wr_hstech_6m, 4) if wr_hstech_6m is not None else None,
     }
+
+
+compute_metrics = calculate_metrics
 
 
 def main() -> int:
@@ -432,17 +445,26 @@ def main() -> int:
     # 1. 抓取指数日 K 线
     min_date = min(c["listing_date"] for c in companies) - dt.timedelta(days=10)
     max_date = as_of
+    max_horizon_date = max(
+        add_calendar_months(c["listing_date"], 12) + dt.timedelta(days=30)
+        for c in companies
+    )
+    bench_to_date = min(max_date, max_horizon_date)
     frm_str = min_date.strftime("%Y-%m-%d")
-    to_str = max_date.strftime("%Y-%m-%d")
+    to_str = bench_to_date.strftime("%Y-%m-%d")
 
     print(f"📈 正在拉取宏观基准指数 ({frm_str} ~ {to_str})...")
-    index_n = max(350, (max_date - min_date).days + 10)
+    index_n = max(350, (bench_to_date - min_date).days + 10)
     if args.cache_only:
         hsi_bars = load_cached_bars(CACHE / "hsi_bars.json")
         prov_hsi, errs_hsi = "cache", []
     else:
-        hsi_bars, prov_hsi, errs_hsi = fetch_bars("hkHSI", frm_str, to_str, n=index_n, provider=args.provider)
-        (CACHE / "hsi_bars.json").write_text(json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8")
+        hsi_bars, prov_hsi, errs_hsi = fetch_bars(
+            "hkHSI", frm_str, to_str, n=index_n, provider=args.provider
+        )
+        (CACHE / "hsi_bars.json").write_text(
+            json.dumps(hsi_bars, default=str, ensure_ascii=False), encoding="utf-8"
+        )
     hsi_bars = truncate_bars(hsi_bars, as_of)
     print(f"   ✓ 恒生指数 (hkHSI via {prov_hsi}): {len(hsi_bars)} 条 K 线")
 
@@ -451,9 +473,13 @@ def main() -> int:
             hstech_bars = load_cached_bars(CACHE / "hstech_bars.json")
             prov_hstech, errs_hstech = "cache", []
         else:
-            hstech_bars, prov_hstech, errs_hstech = fetch_bars("hkHSTECH", frm_str, to_str, n=index_n, provider=args.provider)
-            (CACHE / "hstech_bars.json").write_text(json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8")
-        hstech_bars = truncate_bars(hstech_bars, as_of)
+            hstech_bars, prov_hstech, errs_hstech = fetch_bars(
+                "hkHSTECH", frm_str, to_str, n=index_n, provider=args.provider
+            )
+            (CACHE / "hstech_bars.json").write_text(
+                json.dumps(hstech_bars, default=str, ensure_ascii=False), encoding="utf-8"
+            )
+        hstech_bars = truncate_bars(hstech_bars, as_of) if hstech_bars else []
         print(f"   ✓ 恒生科技指数 (hkHSTECH via {prov_hstech}): {len(hstech_bars)} 条 K 线")
     except Exception as exc:
         hstech_bars, prov_hstech, errs_hstech = [], "unavailable", [str(exc)]
@@ -465,14 +491,23 @@ def main() -> int:
     for idx, c in enumerate(companies, 1):
         sym = hk_symbol(c["code"])
         frm_c = c["listing_date"].strftime("%Y-%m-%d")
+        to_c_date = min(
+            max_date,
+            add_calendar_months(c["listing_date"], 12) + dt.timedelta(days=30),
+        )
+        to_c_str = to_c_date.strftime("%Y-%m-%d")
         try:
-            stock_n = max(300, (max_date - c["listing_date"]).days + 10)
+            stock_n = max(300, (to_c_date - c["listing_date"]).days + 10)
             if args.cache_only:
                 bars = load_cached_bars(CACHE / f"{sym}.json")
                 prov_stock, errs_stock = "cache", []
             else:
-                bars, prov_stock, errs_stock = fetch_bars(sym, frm_c, to_str, n=stock_n, provider=args.provider)
-                (CACHE / f"{sym}.json").write_text(json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8")
+                bars, prov_stock, errs_stock = fetch_bars(
+                    sym, frm_c, to_c_str, n=stock_n, provider=args.provider
+                )
+                (CACHE / f"{sym}.json").write_text(
+                    json.dumps(bars, default=str, ensure_ascii=False), encoding="utf-8"
+                )
             bars = truncate_bars(bars, as_of)
             metrics = calculate_metrics(c, bars, hsi_bars, hstech_bars)
             if metrics.get("error"):

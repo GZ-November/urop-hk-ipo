@@ -39,7 +39,14 @@ GROUP_WINDOWS: dict[str, list[tuple[str, int]]] = {
                    ("CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS", 5),
                    ("CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME", 5),
                    ("HISTORICAL FINANCIAL INFORMATION OF THE GROUP", 6),
-                   ("INDEBTEDNESS", 4)],
+                   ("INDEBTEDNESS", 4),
+                   ("COMBINED STATEMENTS OF FINANCIAL POSITION", 6),
+                   ("COMBINED BALANCE SHEETS", 5),
+                   ("CONSOLIDATED INCOME STATEMENTS", 5),
+                   ("COMBINED INCOME STATEMENTS", 5),
+                   ("CONSOLIDATED PROFIT AND LOSS", 5),
+                   ("COMBINED PROFIT AND LOSS", 5),
+                   ("COMBINED STATEMENTS OF PROFIT OR LOSS", 5)],
     "underwriting": [("UNDERWRITING ARRANGEMENTS AND EXPENSES", 15),
                      ("UNDERWRITING COMMISSION", 6), ("UNDERWRITING", 10)],
     "business": [("BUSINESS", 10), ("SUMMARY", 8), ("HISTORY AND DEVELOPMENT", 8),
@@ -50,6 +57,8 @@ GROUP_WINDOWS: dict[str, list[tuple[str, int]]] = {
     # 附加财务 AU–AY。AX 是资本化开发成本当期新增；AY 是前五大客户集中度。
     "extra_financial": [("CONSOLIDATED STATEMENTS OF CASH FLOWS", 5),
                         ("CONSOLIDATED CASH FLOW STATEMENTS", 5),
+                        ("COMBINED STATEMENTS OF CASH FLOWS", 5),
+                        ("COMBINED CASH FLOW STATEMENTS", 5),
                         ("CASH FLOW ANALYSIS", 4),
                         ("R&D EXPENDITURE AND TOTAL OPERATING EXPENDITURE", 4),
                         ("RESEARCH AND DEVELOPMENT COSTS", 4),
@@ -434,8 +443,9 @@ def build_packet(
         for t in (tables or {}).get(t_name) or []:
             table_blocks.append(f"#### {GROUP_TITLES[group]}：{t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
     if table_blocks:
-        parts.append("\n## 结构化预解析表格（高精度对齐）\n")
+        parts.append("\n## 结构化预解析表格（高精度对齐）\n<!-- TABLE_START -->\n")
         parts.extend(table_blocks)
+        parts.append("<!-- TABLE_END -->\n")
 
     parts.append("\n## 原文页索引（每页只在下方出现一次，按页码排序）\n")
     for group, title in GROUP_TITLES.items():
@@ -491,9 +501,10 @@ def build_topic_packets(
 
             t_name = GROUP_TABLE_MAP.get(group)
             if tables and t_name and tables.get(t_name):
-                parts.append("\n### 结构化预解析表格（高精度对齐）\n")
+                parts.append("\n### 结构化预解析表格（高精度对齐）\n<!-- TABLE_START -->\n")
                 for t in tables[t_name]:
                     parts.append(f"#### {t['title']} (Page {t['page']})\n\n{t['markdown']}\n")
+                parts.append("<!-- TABLE_END -->\n")
 
             parts.append(f"\n### 原文切片：{title}\n")
             cap = int(cfg["extract"].get("group_caps", {}).get(
