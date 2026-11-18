@@ -1,0 +1,7 @@
+Deal_Size_Tier,N,Median_Proceeds_HKDm,Median_Listing_Expenses_HKDm,Total_Direct_Cost_Mean_Pct,Total_Direct_Cost_Median_Pct,UW_Base_Spread_Mean_Pct,UW_Base_Spread_Median_Pct,UW_Incentive_Mean_Pct,Non_UW_Prof_Fees_Median_Pct,Mean_First_Day_IR_Pct
+< HK$250m,18,198.4,41.8,25.85,22.08,4.03,3.0,1.0,18.4,19.21
+HK$250m-500m,27,400.1,59.5,16.22,14.47,3.02,3.0,1.0,11.08,81.25
+"HK$500m-1,000m",53,674.2,75.6,11.3,10.61,3.01,3.0,1.0,7.68,71.77
+"HK$1,000m-3,000m",77,1531.2,104.0,7.16,6.84,2.54,2.5,1.0,4.18,31.84
+"> HK$3,000m",51,5177.9,173.2,3.1,2.73,1.33,1.15,1.0,1.62,19.54
+All Deals (N=202),226,1101.5,89.1,9.77,7.98,2.54,2.5,1.0,5.26,43.32

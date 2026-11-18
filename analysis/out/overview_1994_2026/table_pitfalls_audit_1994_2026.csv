@@ -1,0 +1,9 @@
+Board,Epoch,Total_IPOs,Missing_Delisted_N,Missing_Delisted_Pct,Recycled_Ticker_N,Recycled_Ticker_Pct,Split_Suspect_N,Naive_Mean_IR_Pct,Corrected_Mean_IR_Pct,Median_IR_Pct
+Main Board,"Epoch II (1994-2004: H-Share Pioneer, PN18 & GEM Launch)",468,66,14.1,43,9.2,34,20.99,9.88,5.0
+Main Board,Epoch III (2005-2017: SOE Mega-Banks & Cornerstone Regime),878,59,6.7,81,9.2,14,10.57,9.62,2.6
+Main Board,Epoch IV (2018-2022: Ch. 8A/18A/19C New-Economy Overhaul),581,4,0.7,24,4.1,2,11.63,10.91,0.41
+Main Board,"Epoch V (2023-2026: Ch. 18C, FINI T+2 & Aug 2025 Mech A/B)",361,2,0.6,36,10.0,31,38.46,26.57,5.5
+GEM,"Epoch II (1994-2004: H-Share Pioneer, PN18 & GEM Launch)",214,88,41.1,88,41.1,5,25.91,25.13,5.13
+GEM,Epoch III (2005-2017: SOE Mega-Banks & Cornerstone Regime),258,35,13.6,115,44.6,2,279.77,282.14,42.0
+GEM,Epoch IV (2018-2022: Ch. 8A/18A/19C New-Economy Overhaul),99,0,0.0,23,23.2,0,20.76,20.76,3.75
+GEM,"Epoch V (2023-2026: Ch. 18C, FINI T+2 & Aug 2025 Mech A/B)",6,0,0.0,1,16.7,0,51.29,51.29,4.69

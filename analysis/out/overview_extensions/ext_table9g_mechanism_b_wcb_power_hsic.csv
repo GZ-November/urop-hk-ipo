@@ -1,0 +1,14 @@
+Specification,Dep_Var,Target_Var,Coef,SE_Cluster,t_Cluster,p_Cluster,p_Webb_WCB,MDE_80Pct_Power,N,G_Clusters,R2
+PreDetermined_PostAug2025,Final_Retail_Share_pp,post_aug2025_prospectus,-18.9035,1.8826,-10.04,0.0,0.0002,5.2744,226,21,0.5
+PreDetermined_PostAug2025,Day1_Flipping_Pct,post_aug2025_prospectus,-10.8115,4.1489,-2.61,0.0092,0.0812,11.6237,226,21,0.149
+PreDetermined_PostAug2025,Log_1_plus_Day1_IR,post_aug2025_prospectus,0.2459,0.0788,3.12,0.0018,0.0136,0.2208,226,21,0.115
+DiD_PostAug2025_x_High100x,Final_Retail_Share_pp,post_x_high100,-17.061,3.5276,-4.84,0.0,0.0004,9.8828,226,21,0.624
+DiD_PostAug2025_x_High100x,Day1_Flipping_Pct,post_x_high100,-21.8164,8.1925,-2.66,0.0077,0.0074,22.9522,226,21,0.329
+DiD_PostAug2025_x_High100x,Log_1_plus_Day1_IR,post_x_high100,0.1623,0.1565,1.04,0.2998,0.3756,0.4386,226,21,0.199
+DiD_Plus_HSICS_Sector_FE,Final_Retail_Share_pp,post_x_high100,-15.9949,3.4929,-4.58,0.0,0.0006,9.7857,226,21,0.64
+DiD_Plus_HSICS_Sector_FE,Day1_Flipping_Pct,post_x_high100,-20.3232,8.0204,-2.53,0.0113,0.0144,22.47,226,21,0.345
+DiD_Plus_HSICS_Sector_FE,Log_1_plus_Day1_IR,post_x_high100,0.1592,0.1538,1.04,0.3004,0.3952,0.4308,226,21,0.217
+DoseResponse_Avoided_Clawback,Day1_Flipping_Pct,avoided_clawback_pp,-0.7513,0.1128,-6.66,0.0,0.0014,0.316,226,21,0.388
+DoseResponse_Avoided_Clawback,Log_1_plus_Day1_IR,avoided_clawback_pp,0.0034,0.0022,1.54,0.1226,0.1892,0.0061,226,21,0.255
+DoseResponse_Plus_HSICS_FE,Day1_Flipping_Pct,avoided_clawback_pp,-0.716,0.1019,-7.02,0.0,0.0008,0.2856,226,21,0.398
+DoseResponse_Plus_HSICS_FE,Log_1_plus_Day1_IR,avoided_clawback_pp,0.0027,0.002,1.32,0.1871,0.2366,0.0057,226,21,0.276

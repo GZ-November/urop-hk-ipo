@@ -1,0 +1,7 @@
+pricing_structure,N,Share_Pct,Mean_IR_Pct,Median_IR_Pct,Break_Rate_Pct,Median_Sub_x,AH_Share_Pct
+Cap_Only_Priced_At_Cap,32,14.159,9.872,4.032,25.0,162.635,96.875
+Cap_Only_Priced_Below_Cap,9,3.982,-2.547,-2.041,66.667,73.44,66.667
+Range_Priced_At_Cap,44,19.469,52.246,29.356,25.0,1750.935,22.727
+Range_Priced_At_Floor,37,16.372,41.679,1.042,40.541,140.02,16.216
+Range_Priced_Inside,26,11.504,40.325,6.509,34.615,324.105,15.385
+Single_Fixed_Price,78,34.513,59.087,32.514,15.385,1962.47,0.0

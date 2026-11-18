@@ -1,0 +1,39 @@
+Specification,Variable,Coef_bps,SE_MonthClust,t_MonthClust,p_MonthClust,N,Pre_N,Post_N,R2
+1. Full 1999-2026: Hot >=HK$100B DiD (No YFE),post_fini,-4.89,7.1,-0.69,0.4909,1871,1568,303,0.58
+1. Full 1999-2026: Hot >=HK$100B DiD (No YFE),hot_100b,12.75,4.36,2.92,0.0035,1871,1568,303,0.58
+1. Full 1999-2026: Hot >=HK$100B DiD (No YFE),hot_100b:post_fini,-3.95,7.54,-0.52,0.6004,1871,1568,303,0.58
+1. Full 1999-2026: Hot >=HK$100B DiD (No YFE),hibor_3m_open,7.64,1.26,6.08,0.0,1871,1568,303,0.58
+1. Full 1999-2026: Hot >=HK$100B DiD (No YFE),open_spread_bps,0.78,0.04,18.45,0.0,1871,1568,303,0.58
+2. Full 1999-2026: Hot >=HK$100B DiD (+ Year FE),post_fini,12.87,11.11,1.16,0.2466,1871,1568,303,0.629
+2. Full 1999-2026: Hot >=HK$100B DiD (+ Year FE),hot_100b,12.8,3.47,3.69,0.0002,1871,1568,303,0.629
+2. Full 1999-2026: Hot >=HK$100B DiD (+ Year FE),hot_100b:post_fini,-6.41,7.23,-0.89,0.3747,1871,1568,303,0.629
+2. Full 1999-2026: Hot >=HK$100B DiD (+ Year FE),hibor_3m_open,3.55,2.38,1.5,0.1346,1871,1568,303,0.629
+2. Full 1999-2026: Hot >=HK$100B DiD (+ Year FE),open_spread_bps,0.77,0.04,18.96,0.0,1871,1568,303,0.629
+3. Narrow Window 2021-2026: Log(Sub) x Post-FINI,post_fini,8.1,10.15,0.8,0.4251,526,223,303,0.7
+3. Narrow Window 2021-2026: Log(Sub) x Post-FINI,log_locked_bn,0.21,0.46,0.45,0.6555,526,223,303,0.7
+3. Narrow Window 2021-2026: Log(Sub) x Post-FINI,log_locked_bn:post_fini,0.94,1.59,0.59,0.5567,526,223,303,0.7
+3. Narrow Window 2021-2026: Log(Sub) x Post-FINI,hibor_3m_open,3.87,1.85,2.09,0.0363,526,223,303,0.7
+3. Narrow Window 2021-2026: Log(Sub) x Post-FINI,open_spread_bps,0.82,0.05,18.28,0.0,526,223,303,0.7
+4. Narrow Window 2021-2026: Hot >=HK$100B DiD,post_fini,9.69,8.46,1.14,0.2525,526,223,303,0.7
+4. Narrow Window 2021-2026: Hot >=HK$100B DiD,hot_100b,0.25,1.82,0.14,0.8905,526,223,303,0.7
+4. Narrow Window 2021-2026: Hot >=HK$100B DiD,hot_100b:post_fini,5.61,6.39,0.88,0.3803,526,223,303,0.7
+4. Narrow Window 2021-2026: Hot >=HK$100B DiD,hibor_3m_open,3.72,1.74,2.14,0.0324,526,223,303,0.7
+4. Narrow Window 2021-2026: Hot >=HK$100B DiD,open_spread_bps,0.82,0.04,18.51,0.0,526,223,303,0.7
+5. Narrow Window 2022-2026: Log(Sub) x Post-FINI,post_fini,7.97,9.82,0.81,0.4169,431,128,303,0.7
+5. Narrow Window 2022-2026: Log(Sub) x Post-FINI,log_locked_bn,-0.12,5.83,-0.02,0.983,431,128,303,0.7
+5. Narrow Window 2022-2026: Log(Sub) x Post-FINI,log_locked_bn:post_fini,1.25,5.89,0.21,0.8312,431,128,303,0.7
+5. Narrow Window 2022-2026: Log(Sub) x Post-FINI,hibor_3m_open,3.82,2.02,1.89,0.0584,431,128,303,0.7
+5. Narrow Window 2022-2026: Log(Sub) x Post-FINI,open_spread_bps,0.83,0.05,18.3,0.0,431,128,303,0.7
+6. Narrow Window 2021-2026: High-Rate (>=3%) x Log(Sub),post_fini,8.14,9.49,0.86,0.3912,526,223,303,0.713
+6. Narrow Window 2021-2026: High-Rate (>=3%) x Log(Sub),log_locked_bn,-0.28,0.55,-0.5,0.6173,526,223,303,0.713
+6. Narrow Window 2021-2026: High-Rate (>=3%) x Log(Sub),log_locked_bn:post_fini,2.58,1.79,1.44,0.1493,526,223,303,0.713
+6. Narrow Window 2021-2026: High-Rate (>=3%) x Log(Sub),hibor_3m_open,-3.02,2.98,-1.02,0.31,526,223,303,0.713
+6. Narrow Window 2021-2026: High-Rate (>=3%) x Log(Sub),open_spread_bps,0.81,0.04,19.34,0.0,526,223,303,0.713
+7. Narrow 2021-2026 Delta 1W HIBOR: Log(Sub) x Post-FINI,post_fini,-19.52,13.97,-1.4,0.1624,526,223,303,0.128
+7. Narrow 2021-2026 Delta 1W HIBOR: Log(Sub) x Post-FINI,log_locked_bn,-2.22,0.98,-2.26,0.024,526,223,303,0.128
+7. Narrow 2021-2026 Delta 1W HIBOR: Log(Sub) x Post-FINI,log_locked_bn:post_fini,3.55,2.48,1.43,0.1526,526,223,303,0.128
+7. Narrow 2021-2026 Delta 1W HIBOR: Log(Sub) x Post-FINI,hibor_3m_open,12.84,2.93,4.38,0.0,526,223,303,0.128
+8. Narrow 2021-2026 Delta 1W HIBOR: Hot >=HK$100B DiD,post_fini,-16.38,12.09,-1.35,0.1757,526,223,303,0.127
+8. Narrow 2021-2026 Delta 1W HIBOR: Hot >=HK$100B DiD,hot_100b,-8.51,3.37,-2.53,0.0115,526,223,303,0.127
+8. Narrow 2021-2026 Delta 1W HIBOR: Hot >=HK$100B DiD,hot_100b:post_fini,15.6,9.94,1.57,0.1166,526,223,303,0.127
+8. Narrow 2021-2026 Delta 1W HIBOR: Hot >=HK$100B DiD,hibor_3m_open,13.1,2.77,4.74,0.0,526,223,303,0.127

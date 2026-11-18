@@ -1,0 +1,8 @@
+Accounting_Cohort,N_Deals,N_Valid_3M_BHR,N_Valid_6M_BHR,Median_3Y_Sales_CAGR_Pct,Median_Accruals_Pct_Assets,Median_CFO_to_Assets_Pct,Median_CFO_to_Profit_x,Mean_Day1_IR_Pct,Median_Day1_IR_Pct,Day1_Break_Rate_Pct,Mean_3M_BHR_Pct,Mean_6M_BHR_Pct
+Panel A1: T1 Lowest Total Accruals,75,73,53,30.15,-13.11,-3.94,2.28,45.92,23.86,25.3,17.81,25.8
+Panel A2: T2 Moderate Accruals,75,69,56,13.29,-1.79,3.83,1.46,39.91,6.4,30.7,15.76,18.74
+Panel A3: T3 High Accruals (Aggressive Accrual Accounting),75,69,51,28.37,3.1,-0.55,0.45,45.23,14.82,24.0,16.71,0.19
+Panel B1: 100% R&D Expensed on Income Statement (Conservative),172,160,117,24.29,-2.58,-0.2,1.01,47.36,15.85,23.3,16.27,15.66
+Panel B2: IAS 38 R&D Development Capitalized onto Balance Sheet (Mean 12.8% Cap),30,28,24,14.79,-0.11,2.56,1.07,43.39,3.68,30.0,26.39,7.31
+Panel C1: Rule 8.05(1) Threshold Bunchers (3Y Cum. Profit HK$75M-200M),18,17,13,9.74,-0.97,4.41,1.32,38.04,4.3,22.2,29.65,-11.52
+Panel C2: Large Cushioned Profitable Issuers (3Y Cum. Profit > HK$200M),105,99,80,19.0,-0.18,6.41,1.01,27.54,4.69,31.4,6.36,-6.53

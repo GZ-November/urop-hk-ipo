@@ -1,0 +1,16 @@
+Model,Variable,Coef_bps,SE_HC3_or_Cl,t_HC3_or_Cl,t_MonthClust,p_MonthClust,N,R2
+1. Delta 1W HIBOR (bps) Baseline,log_locked_bn,-0.924,0.659,-1.4,-1.12,0.2626,1871,0.1621
+1. Delta 1W HIBOR (bps) Baseline,post_fini,-23.082,6.869,-3.36,-2.08,0.0375,1871,0.1621
+1. Delta 1W HIBOR (bps) Baseline,log_locked_bn:post_fini,2.642,1.803,1.47,1.07,0.2838,1871,0.1621
+1. Delta 1W HIBOR (bps) Baseline,hibor_3m_open,14.377,0.82,17.53,8.85,0.0,1871,0.1621
+2. Delta 1W HIBOR (bps) + Year FE,log_locked_bn,1.437,0.704,2.04,2.04,0.0412,1871,0.2786
+2. Delta 1W HIBOR (bps) + Year FE,post_fini,-39.601,17.514,-2.26,-2.26,0.0237,1871,0.2786
+2. Delta 1W HIBOR (bps) + Year FE,log_locked_bn:post_fini,-0.669,2.905,-0.23,-0.23,0.8179,1871,0.2786
+2. Delta 1W HIBOR (bps) + Year FE,hibor_3m_open,12.298,4.152,2.96,2.96,0.0031,1871,0.2786
+3. 1W-3M Spread (bps) Baseline,log_locked_bn,4.548,0.709,6.41,3.04,0.0024,1871,0.0236
+3. 1W-3M Spread (bps) Baseline,post_fini,18.25,7.214,2.53,1.29,0.1968,1871,0.0236
+3. 1W-3M Spread (bps) Baseline,log_locked_bn:post_fini,-5.196,1.889,-2.75,-1.78,0.0749,1871,0.0236
+4. 1W-3M Spread (bps) + HIBOR_3M + Year FE,log_locked_bn,1.561,1.035,1.51,1.51,0.1317,1871,0.2124
+4. 1W-3M Spread (bps) + HIBOR_3M + Year FE,post_fini,5.581,27.654,0.2,0.2,0.8401,1871,0.2124
+4. 1W-3M Spread (bps) + HIBOR_3M + Year FE,log_locked_bn:post_fini,-1.105,3.978,-0.28,-0.28,0.7812,1871,0.2124
+4. 1W-3M Spread (bps) + HIBOR_3M + Year FE,hibor_3m_open,11.456,9.692,1.18,1.18,0.2372,1871,0.2124

@@ -1,0 +1,7 @@
+Channel_Cohort,N,Mean_Metric,Median_or_Ratio,Aux_Mean_Ratio_or_Disc,t_or_z_stat,p_value,Notes
+1a. A+H Dual-Listed IPOs: Automatic Southbound Entry at T_stab+1 (SSE Art.66 / SZSE Art.65),54,0.127,1.086,1.374,1.5,0.14,10d post/pre turnover mean 1.37x (med 1.09x); 20d med 1.14x
+1b. Non-A+H Main Board IPOs: Stabilization Expiry Without Stock Connect at T_stab+1,166,-0.197,0.807,0.975,-4.26,0.0,10d post/pre turnover med 0.81x; syndicate bid withdrawal without Mainland Connect inflow
+1c. Difference-in-Differences (A+H Auto-Connect minus Non-A+H at T_stab+1),220,0.325,0.279,0.278,3.35,0.0012,"10d Welch p=0.0012, Mann-Whitney p=0.0012; 20d DiD t=+2.91 (p=0.0045)"
+2a. A+H Primary-Market Repricing: Offer Price Discount -> Day-1 Close Discount (pp),53,6.34,5.04,-29.38,4.18,0.0001,Mean H/A discount narrows from -35.72% at offer to -29.38% at Day-1 close
+2b. Post-Connect Limits to Arbitrage: Post-Connect [T_stab+1..D60] minus Pre-Connect Window (pp),53,1.69,0.12,-26.51,1.36,0.1786,Mean H/A gap stays at -26.51% (vs -28.20% pre-Connect): non-fungibility + 20% dividend tax block arbitrage
+3. Official SSE/CCASS Audit: A+H Auto-Inclusion at T_stab+1 (% Verified / Med Lag Days),57,100.0,1.0,-3.0,,,"57/57 (100%) verified in SSE/CCASS; exact-date N=22 med +1.0d (IQR [-2.0, +1.0]); statutory-cap (ld+30d) fallback N=35 med -5.0d; pooled med -3.0d (negative fallback reflects offer-close 30d statutory clock & zero-greenshoe Day-1 entries)"

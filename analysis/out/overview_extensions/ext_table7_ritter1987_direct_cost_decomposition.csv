@@ -1,0 +1,6 @@
+Deal_Size_Quartile,N,Med_Proceeds_HKDm,Mean_Total_Expense_HKDm,Med_Total_Expense_HKDm,Mean_UW_Spread_Pct,Mean_NonUW_Legal_Audit_Sponsor_Pct,Mean_Total_Direct_Cost_Pct,Med_Total_Direct_Cost_Pct
+Q1 Smallest (<P25),54,400.0243,59.8724,56.4,3.3126,14.6357,17.9482,16.5048
+Q2 Lower-Mid (P25-P50),54,787.6044,83.8986,78.2,2.9826,7.3181,10.3007,10.2038
+Q3 Upper-Mid (P50-P75),53,1638.9837,109.1035,105.4,2.5208,4.1758,6.6801,6.5522
+Q4 Largest (>P75),54,4882.0186,192.8666,169.2,1.3707,1.8918,3.2626,2.821
+All Audited IPOs,215,1100.0,111.4461,89.1,2.5468,7.0185,9.5612,7.966

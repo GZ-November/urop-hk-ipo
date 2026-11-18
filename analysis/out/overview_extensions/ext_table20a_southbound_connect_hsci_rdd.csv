@@ -1,0 +1,17 @@
+Panel_Specification,Outcome_Metric,Sample_Bandwidth,N_Total,N_Above_5B,N_Below_5B,Estimate,Aux_Median_or_SE,t_stat,p_value,Economic_Interpretation
+0a. First Stage (Full Non-A+H): Official Connect Inclusion,P(Official Connect Admission at Review),All First Post-IPO Reviews,152,109,43,0.828,0.078,10.64,0.0,First-Stage F=113.3; Above=85.3% vs Below=0.0% (One-Sided)
+0b. First Stage (Narrow Bandwidth): Official Connect Inclusion,P(Official Connect Admission at Review),HK$1.5B - HK$15.0B,79,63,16,0.273,0.155,1.76,0.078822,First-Stage F=3.1; Above=85.7% vs Below=0.0% (One-Sided)
+0c. First Stage (Ex-WVR/DRS Statutory HSCI-Eligible),P(Official Connect Admission at Review),Ex-WVR & Ex-DRS,145,102,43,0.828,0.084,9.81,0.0,First-Stage F=96.3; Above=89.2% vs Below=0.0% (One-Sided)
+1a. Semi-Annual Effective Monday: Officially Admitted Non-A+H,"Log Turnover Jump [0,+9] vs [-10,-1] (Med Ratio)",SSE/CCASS Verified Admitted,93,93,0,1.182,2.783,8.85,0.0,"Mean ratio 12.22x (med 2.78x); Ann run-up +0.07%, Post-eff -2.90%"
+1b. Semi-Annual Effective Monday: Excluded Placebo (HKEX MV < HK$5.0B),"Log Turnover Jump [0,+9] vs [-10,-1] (Med Ratio)",Same Calendar Mondays,43,0,43,-0.01,0.832,-0.08,0.940221,"Med ratio 0.83x; Same-day DiD = +1.192 (Welch t=+6.23, p=8.39e-09)"
+"2a. Sharp ITT (Reduced Form): Effective-Date Turnover Jump vs [-10,-1]",log_jump_pre10,Full Non-A+H,152,109,43,1.854,0.303,6.13,0.0,"Reduced-form local-linear RD; R2=0.219, AR p=8.94e-10"
+"2b. 2SLS Fuzzy RDD LATE: Effective-Date Turnover Jump vs [-10,-1]",log_jump_pre10,Full Non-A+H,152,109,43,2.239,0.36,6.22,0.0,"FS F=113.3; AR p=8.94e-10, AR 95% CI [+1.56, +2.99]"
+"2c. Sharp ITT (Reduced Form): Effective-Date Jump vs Pre-Ann [-25,-12]",log_jump_base,Full Non-A+H,152,109,43,2.33,0.318,7.32,0.0,"Reduced-form local-linear RD; R2=0.293, AR p=2.45e-13"
+"2d. 2SLS Fuzzy RDD LATE: Effective-Date Jump vs Pre-Ann [-25,-12]",log_jump_base,Full Non-A+H,152,109,43,2.814,0.394,7.14,0.0,"FS F=113.3; AR p=2.45e-13, AR 95% CI [+2.08, +3.65]"
+"2e. 2SLS Fuzzy RDD LATE (Narrow BW): Effective-Date Jump vs [-10,-1]",log_jump_pre10,HK$1.5B - HK$15.0B,79,63,16,7.044,2.941,2.4,0.019102,"FS F=3.1; AR p=1.70e-02, AR 95% CI [+2.74, +20.28]"
+"2f. 2SLS Fuzzy RDD LATE (Ex-WVR/DRS): Effective-Date Jump vs [-10,-1]",log_jump_pre10,Ex-WVR & Ex-DRS,145,102,43,2.234,0.37,6.03,0.0,"FS F=96.3; AR p=1.18e-09, AR 95% CI [+1.54, +3.02]"
+"2g. 2SLS Fuzzy RDD LATE (Covariate-Adjusted IR, Sub, CS%)",log_jump_pre10,Full + IR/Sub/CS%,152,109,43,2.516,0.409,6.16,0.0,"FS F=82.3; AR p=1.12e-08, AR 95% CI [+1.74, +3.37]"
+3a. Medium-Run 2SLS Fuzzy RDD LATE: Log(Month-6 / Month-1 Turnover),log_m6_m1_turn,Matured 6M Non-A+H,136,95,41,1.206,0.596,2.02,0.044894,"FS F=114.4; AR p=4.64e-02, AR 95% CI [+0.02, +2.39]"
+3b. Medium-Run 2SLS Fuzzy RDD LATE: Delta Log(Amihud M1->M6),dlog_amihud,Matured 6M Non-A+H,136,95,41,-0.84,0.545,-1.54,0.125837,"FS F=114.4; AR p=1.26e-01, AR 95% CI [-1.93, +0.24]"
+3c. Medium-Run 2SLS Fuzzy RDD LATE: Month-6 Zombie Incidence (>95% Decay),zombie_m6,Matured 6M Non-A+H,136,95,41,-0.347,0.183,-1.89,0.06098,"FS F=114.4; AR p=6.32e-02, AR 95% CI [-0.71, +0.02]"
+3d. Medium-Run Sharp ITT: Month-6 Zombie Incidence (>95% Decay),zombie_m6,Matured 6M Non-A+H,136,95,41,-0.267,0.144,-1.86,0.063215,"Reduced-form local-linear RD; R2=0.224, AR p=6.32e-02"

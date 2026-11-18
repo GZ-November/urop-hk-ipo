@@ -1,0 +1,6 @@
+Model_Specification,Dep_Var,Key_Regressor,Coef,SE_HC,t_stat,p_value,First_Stage_F,Robustness_Diagnostic,N
+1. OLS Baseline (Controlling for Free Float & Pricing Mechanism),log(1 + IR),Cornerstone Share (%),-0.0053,0.00241,-2.2,0.0278,,"Cinelli-Hazlett RV(q=1)=13.98%, Oster delta=-16.03 (Rmax=0.228)",224
+2a. First Stage: Strictly Pre-Determined Sponsor CS IV (2018-26),Cornerstone Share (%),z_sp_cs_past (listing_date < prospectus_date_i),0.3992,0.1751,2.28,0.0226,4.32,Just-ID Eff. F=4.32; Joint Eff. F=6.49,226
+2b. First Stage: Rule 8.08(1)(b) Public Float Tier (Exp MV >= HK$10B),Cornerstone Share (%),z_tier_10b (Ex-Ante Expected MV >= HK$10B),8.8263,2.9474,2.99,0.0027,6.49,First-Stage R2=0.387; Joint Wald F=7.55 (p=0.0007),226
+3. Second Stage (2SLS IV): Instrumented Cornerstone Share (%),log(1 + IR),Cornerstone Share (%) [z_sp_cs_past + z_tier_10b],-0.01463,0.00821,-1.78,0.0759,6.49,"AR p=0.2151, AR 95% CI [-0.0446, +0.0073]; Hansen J p=0.645",226
+4. OLS Baseline: Unrestricted Free Float Scarcity Channel (%),log(1 + IR),Unrestricted Free Float (%),-0.01884,0.00808,-2.33,0.0198,,WCR p=0.0366; Oster delta=-4.11 (Rmax=0.228),224

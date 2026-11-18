@@ -1,0 +1,8 @@
+Panel_and_Regime,N,Mean_Open_IR_Pct,Mean_Close_IR_Pct,Mean_Intraday_Drift_Pct,Median_Intraday_Drift_Pct,Unbiased_Beta_Ropen,SE_HC3_Beta,t_Test_Beta_eq_1,R2_Open_Explains_Close,Mean_Intraday_Range_Pct,Mean_Flipping_Ratio_Pct,Mean_Day5_Aftermarket_BHR_Pct
+Panel A1: 33-Year Main Board Clean Population (1994-2026),2111,14.06,13.81,-0.34,-0.6,0.9891,0.043,-0.25,0.7787,,,
+Panel A2: 33-Year GEM Clean Population (1999-2026),379,121.72,136.61,4.31,-1.67,1.1064,0.104,1.02,0.7251,,,
+Panel A3: Modern 2025-2026 Main Board Panel (N=226),226,43.25,43.32,-0.63,-0.46,1.0226,0.0448,0.5,0.8728,,,
+"Panel B1: Legacy PN18 (Pre-Aug 4, 2025; Compulsory Clawback to 50%)",52,16.3,13.51,-1.96,-0.86,0.91,0.0817,-1.1,0.8156,18.26,48.21,0.09
+"Panel B2: Mechanism A (Post-Aug 4, 2025; Clawback 5% -> 35%)",9,51.74,35.83,-7.54,-6.54,0.6609,0.147,-2.31,0.8009,21.75,41.4,2.87
+"Panel B3: Mechanism B (Post-Aug 4, 2025; Fixed ~10% Retail, Zero Clawback)",142,50.34,51.47,-0.59,-0.3,1.053,0.06,0.88,0.8762,21.68,34.16,1.16
+Panel B4: Ch. 18C Specialist Tech (Rule 18C.09; Capped 5% -> 20% Clawback),23,57.07,63.35,4.76,1.55,0.9744,0.052,-0.49,0.8948,24.24,43.73,10.96
