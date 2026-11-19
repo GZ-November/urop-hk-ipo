@@ -97,7 +97,9 @@ class RelationalTableEngine:
         self.extracted_dir = self.cfg["paths"]["out"] / "extracted"
         self.allot_extracted_dir = self.cfg["paths"]["allot_out"] / "extracted"
         self.stabilization_csv = self.out_master / "stabilization_events.csv"
-        self.issuer_master_csv = self.out_master / "issuer_master.csv"
+        local_issuer_master = self.out_master / "issuer_master.csv"
+        root_issuer_master = ROOT / "out" / "master" / "issuer_master.csv"
+        self.issuer_master_csv = local_issuer_master if local_issuer_master.exists() else root_issuer_master
         self.out_master.mkdir(parents=True, exist_ok=True)
         self.stabilizing_managers: dict[str, str] = {}
         self.issuer_sponsors: dict[str, str] = {}

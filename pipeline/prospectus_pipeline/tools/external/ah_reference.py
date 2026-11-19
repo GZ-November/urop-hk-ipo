@@ -82,6 +82,8 @@ def smartbox(query: str) -> list[dict]:
 # price (an offer within a plausible band of the converted A-share close; see `plausible` in the output).
 MANUAL_OVERRIDES = {
     "2768.HK": ("sz002768", "H short name 国恩科技; A-share short name 国恩股份 (Qingdao Guoen Technology Co., Ltd.)"),
+    "1304.HK": ("sh688279", "H short name 峰岹科技; A-share short name 峰岹科技 (Fortior Technology (Shenzhen) Co., Ltd.)"),
+    "2691.HK": ("sh603093", "H short name 南华期货股份; A-share short name 南华期货 (Nanhua Futures Co., Ltd.)"),
 }
 
 

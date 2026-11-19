@@ -1,0 +1,175 @@
+{
+  "review_date": "2026-11-11",
+  "scope": "Stored-data reconciliation and selected formula checks; not source-level certification or causal re-estimation",
+  "inputs": {
+    "population": {
+      "path": "/Users/georgezhu/Desktop/UROP HK IPO/analysis/out/overview_1994_2026/clean_33y_hkipo_panel_1994_2026.csv",
+      "sha256": "fbe8660d55d1342712dea2ef5ad0fe0fa85ebaa149c0fe851cfbd99297108374",
+      "rows": 2866
+    },
+    "micro": {
+      "path": "/Users/georgezhu/Desktop/UROP HK IPO/analysis/out/overview_1994_2026/clean_micro_panel_2025_2026_N226.csv",
+      "sha256": "139824501d0e81d152c28502e593817a85f87c6d096f650003d40ac1ff9e4a00",
+      "rows": 226
+    },
+    "master": {
+      "path": "/Users/georgezhu/Desktop/UROP HK IPO/pipeline/exports/HKIPO-MB-MASTER_clean.csv",
+      "sha256": "3734413cc5b6699a8946cfb5a05643dad10f3a434ca26e5fd56f8c4eaa0f2c3f",
+      "rows": 202
+    },
+    "ballots": {
+      "path": "/Users/georgezhu/Desktop/UROP HK IPO/analysis/out/overview_1994_2026/clean_rock_ballot_113_net_returns.csv",
+      "sha256": "3ec9ea7f50dcdf4600cb4fb02dcaa8caeed34760cc6814ac37b89e869094d1da",
+      "rows": 113
+    },
+    "lifetime": {
+      "path": "/Users/georgezhu/Desktop/UROP HK IPO/analysis/out/overview_extensions/ext_table14_bessembinder_lifetime_wealth.csv",
+      "sha256": "80dbed798a65aee3489b29ef0e70040a56a4d24a815e62044c8a084083e0b21d",
+      "rows": 4
+    }
+  },
+  "population_by_board": {
+    "GEM": 577,
+    "Main Board": 2289
+  },
+  "matched_n": 2758,
+  "first_day_return_present_n": 2754,
+  "micro_missing_counts": {
+    "company_chinese_name": 7,
+    "pricing_date": 106,
+    "allotment_date": 24,
+    "min_offer_price_hkd": 41,
+    "filing_range_width_pct": 119,
+    "price_pos_in_range": 119,
+    "net_proceeds_hkd": 24,
+    "public_shares_final": 24,
+    "placing_shares_final": 24,
+    "unrestricted_free_float_pct": 26,
+    "a_symbol": 177,
+    "offer_vs_a_pricing_discount": 191,
+    "offer_vs_a_close_discount": 181,
+    "h_day1_close_vs_a_discount": 181,
+    "a_close_hkd_pricing": 191,
+    "a_close_hkd_close": 181,
+    "first_day_close_hkd": 24,
+    "bhr_1m_pct": 11,
+    "bhr_3m_pct": 31,
+    "bhr_6m_pct": 76,
+    "wr_3m": 48,
+    "wr_6m": 76,
+    "hibor_1m_pct": 24,
+    "pre_ipo_vcpe_backing": 60,
+    "sponsor": 25,
+    "lead_sponsor": 31,
+    "joint_sponsors_count": 31,
+    "auditor": 25,
+    "valuer": 199
+  },
+  "master_missing_issuers_by_quarter": {
+    "2025Q3": 24
+  },
+  "ballot_correlations": [
+    {
+      "field": "alloc_rate_1lot_pct",
+      "n": 113,
+      "pearson_r": -0.19719653948072166,
+      "p_value": 0.03630238275464136
+    },
+    {
+      "field": "alloc_rate_10lot_pct",
+      "n": 113,
+      "pearson_r": -0.19339410580944383,
+      "p_value": 0.04013390495290917
+    },
+    {
+      "field": "alloc_rate_poolB_min_pct",
+      "n": 111,
+      "pearson_r": -0.18613202165452447,
+      "p_value": 0.05047079823995324
+    }
+  ],
+  "pool_b_iid_t_intervals_descriptive_only": [
+    {
+      "field": "net_poolB_ret_flat_margin_pct",
+      "n": 111,
+      "mean_pct": -0.035351325996370114,
+      "ci95_lower_pct": -0.16714487403864053,
+      "ci95_upper_pct": 0.0964422220459003
+    },
+    {
+      "field": "net_poolB_ret_full_hibor_margin_pct",
+      "n": 111,
+      "mean_pct": -0.0645297425087729,
+      "ci95_lower_pct": -0.1962898881903104,
+      "ci95_upper_pct": 0.06723040317276459
+    }
+  ],
+  "survivorship": {
+    "active_n": 2489,
+    "exited_n": 116,
+    "active_mean_pct": 0.5884747759293711,
+    "exited_mean_pct": -12.081147152067654,
+    "pooled_mean_pct": 0.024299672801672192,
+    "active_only_minus_pooled_pp": 0.5641751031276989
+  },
+  "lifetime_table": [
+    {
+      "Universe": "All HKEX Verified IPOs (1994-2026)",
+      "N_Verified": 2117,
+      "Mean_Lifetime_Ret_Pct": 50.36,
+      "Median_Lifetime_Ret_Pct": -63.2,
+      "Below_Offer_Price_Pct": 77.47,
+      "Lost_50Pct_Plus_Pct": 59.05,
+      "Lost_80Pct_Plus_Pct": 34.44,
+      "Doubled_100Pct_Plus_Pct": 11.01,
+      "TenBagger_900Pct_Plus_Pct": 1.75,
+      "Net_Offered_Tranche_Wealth_HKD_Bn": 3706.0,
+      "Top_1Pct_Share_of_Gross_Creation_Pct": 73.77,
+      "Top_5Pct_Share_of_Gross_Creation_Pct": 94.25
+    },
+    {
+      "Universe": "HKEX Main Board",
+      "N_Verified": 1833,
+      "Mean_Lifetime_Ret_Pct": 66.97,
+      "Median_Lifetime_Ret_Pct": -58.15,
+      "Below_Offer_Price_Pct": 75.4,
+      "Lost_50Pct_Plus_Pct": 55.65,
+      "Lost_80Pct_Plus_Pct": 30.93,
+      "Doubled_100Pct_Plus_Pct": 12.17,
+      "TenBagger_900Pct_Plus_Pct": 1.96,
+      "Net_Offered_Tranche_Wealth_HKD_Bn": 3719.2,
+      "Top_1Pct_Share_of_Gross_Creation_Pct": 71.07,
+      "Top_5Pct_Share_of_Gross_Creation_Pct": 92.96
+    },
+    {
+      "Universe": "HKEX GEM",
+      "N_Verified": 284,
+      "Mean_Lifetime_Ret_Pct": -56.83,
+      "Median_Lifetime_Ret_Pct": -84.41,
+      "Below_Offer_Price_Pct": 90.85,
+      "Lost_50Pct_Plus_Pct": 80.99,
+      "Lost_80Pct_Plus_Pct": 57.04,
+      "Doubled_100Pct_Plus_Pct": 3.52,
+      "TenBagger_900Pct_Plus_Pct": 0.35,
+      "Net_Offered_Tranche_Wealth_HKD_Bn": -13.2,
+      "Top_1Pct_Share_of_Gross_Creation_Pct": 50.65,
+      "Top_5Pct_Share_of_Gross_Creation_Pct": 91.86
+    },
+    {
+      "Universe": "Seasoned Cohorts >= 5 Years (1994-2021)",
+      "N_Verified": 1693,
+      "Mean_Lifetime_Ret_Pct": 63.79,
+      "Median_Lifetime_Ret_Pct": -69.64,
+      "Below_Offer_Price_Pct": 77.85,
+      "Lost_50Pct_Plus_Pct": 63.2,
+      "Lost_80Pct_Plus_Pct": 39.81,
+      "Doubled_100Pct_Plus_Pct": 12.17,
+      "TenBagger_900Pct_Plus_Pct": 2.01,
+      "Net_Offered_Tranche_Wealth_HKD_Bn": 3820.0,
+      "Top_1Pct_Share_of_Gross_Creation_Pct": 72.04,
+      "Top_5Pct_Share_of_Gross_Creation_Pct": 93.81
+    }
+  ],
+  "backfill_2023_2024_mainboard_n": 135,
+  "pn18_candidates_note": "Candidates only, not verified eligibility; broad date filter and log bandwidth reproduce the region to audit, not a certified RD sample"
+}

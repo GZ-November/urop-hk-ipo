@@ -4,18 +4,18 @@
 
 ## 从基础统计开始
 
-本仓库自带 [ipo-empirical-research](../.agents/skills/ipo-empirical-research/SKILL.md)，适合研究设计、IPO 变量、回归与推断；[hk-ipo-collect](../.agents/skills/hk-ipo-collect/SKILL.md) 负责按时间段采集、独立复核和打包交付。仓库的字段定义、样本计划和日期合同优先于 skill 的通用默认值。
+本仓库自带 [hk-ipo-collect](../.agents/skills/hk-ipo-collect/SKILL.md) 负责按时间段采集、独立复核和打包交付；研究设计与变量辅助工具位于 [analysis/research_helpers/](../analysis/research_helpers/)。仓库的字段定义、样本计划和日期合同优先于通用默认值。
 
 可以把下面的提示交给 agent，并填入研究问题：
 
 ```text
-使用本仓库的 ipo-empirical-research skill 研究【研究问题】。
-先读 docs/RESEARCH_START.md、docs/RESEARCH_PLAN_2026.md 和对应的 skill reference。
+研究【研究问题】。
+先读 docs/RESEARCH_START.md 和 docs/RESEARCH_PLAN_2026.md。
 只用 2026 上市样本，从当前 master 与来源记录确认变量、单位、时点和覆盖。
 先核对覆盖、分布、异常值和分组规模，报告均值、中位数、分位数及简单相关。
 按当前计划优先考虑认购热度与获配收益，A+H作为第三候选；不要一次展开全部题库。
 只有基础结果确需解释时，才增加一个少量控制变量的回归。
-复用已有 analysis 脚本和 skill helper，保存代码、样本筛选和生成输出。
+复用已有 analysis 脚本和 analysis/research_helpers，保存代码、样本筛选和生成输出。
 所有报告数值从输出引用，说明探索性、多重检验和缺失原因。
 ```
 
@@ -57,7 +57,7 @@ python analysis/margin_financing_2026.py
 
 `make refresh-2026` 会联网刷新原始首日行情、academic/aftermarket 字段和 A 股参考，并重写工作簿、导出及分析结果。完整事件窗口成熟或确需更新行情时运行；普通研究整理只使用现有工件。多 cohort 写入共享报告路径时顺序运行，分别保留审计结果。
 
-单项研究可直接运行 [分析索引](../analysis/README.md) 中的对应脚本。新环境首次使用 skill helper 时执行 `python .agents/skills/ipo-empirical-research/scripts/selftest.py`，它检验 helper，不能代替研究数据核验。
+单项研究可直接运行 [分析索引](../analysis/README.md) 中的对应脚本。
 
 ## 当前优先解决
 

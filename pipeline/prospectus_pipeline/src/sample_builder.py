@@ -18,6 +18,7 @@ import csv
 import datetime as dt
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Any, Optional
 
@@ -207,12 +208,12 @@ def audit_candidate(cand: dict[str, Any], board: str = "main") -> dict[str, Any]
         cand["data_completion_status"] = "EXCLUDED_NON_IPO"
         return cand
 
-    # 2. 甄别 SPAC 与 De-SPAC 并购 (Chapter 18B)
-    if "spac" in name_l or "spac" in raw_price or code.startswith("78"):
+    # 2. 甄别 SPAC 与 De-SPAC 并购 (Chapter 18B; 使用词边界避免误伤 "Space" / "Aerospace")
+    if re.search(r"\b(?:de-)?spac\b", name_l) or re.search(r"\b(?:de-)?spac\b", raw_price) or code.startswith("78"):
         cand["inclusion_status"] = "EXCLUDED"
         cand["exclusion_reason"] = "Special Purpose Acquisition Company (SPAC) offering or De-SPAC business combination under Chapter 18B"
         cand["security_type"] = "SPAC"
-        cand["listing_route"] = "De-SPAC" if "de-spac" in name_l or "de-spac" in raw_price else "SPAC"
+        cand["listing_route"] = "De-SPAC" if re.search(r"\bde-spac\b", name_l) or re.search(r"\bde-spac\b", raw_price) else "SPAC"
         cand["data_completion_status"] = "EXCLUDED_NON_IPO"
         return cand
 

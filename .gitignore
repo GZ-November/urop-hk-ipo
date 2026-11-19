@@ -66,6 +66,7 @@ pipeline/prospectus_pipeline/out/extracted_topics/
 pipeline/prospectus_pipeline/out/payload_backups/
 pipeline/prospectus_pipeline/out/period_reviews/
 pipeline/prospectus_pipeline/data/market/daily_bars/
+analysis/**/market_cache/
 
 # 招股书 / 配发公告 PDF（体积原因，不上传）：data/ 与 out/ 下一切 pdf 目录
 pipeline/prospectus_pipeline/out/prompts/
@@ -105,3 +106,26 @@ deliverables/
 # Regenerable GEM runtime caches and document table slices
 pipeline/prospectus_pipeline/gem/
 pipeline/prospectus_pipeline/data/tables/
+
+# Compiled binaries, local skill backups, and packaged delivery copies
+tools/ocr_vision
+.local-skill-backups/
+deliverable/
+
+# Raw historical prospectus downloads, packet caches, rollback backups, and HTTP caches
+pipeline/downloads/
+analysis/out/batch1_2018_2024_*/
+analysis/out/batch2_2008_2017_*/
+analysis/out/batch3_2002_2007_*/
+analysis/out/batch4_1994_2001_*/
+analysis/out/batch*_extracted_dataset.csv
+analysis/out/historical_financial_sources/batch*/
+analysis/out/historical_financial_sources/pilot/
+analysis/out/historical_financial_sources/spotcheck/
+analysis/out/historical_financial_sources/work/
+analysis/out/historical_financial_sources/*.log
+analysis/out/overview_1994_2026/archive_pre_*/
+analysis/out/overview_1994_2026/*.bak.csv
+analysis/out/overview_1994_2026/*_cache/
+analysis/out/overview_extensions/*_cache/
+analysis/out/subscription_cornerstone_repair/*_pdfs/

@@ -1,0 +1,465 @@
+{
+  "name": "historical_tier1_schema",
+  "version": "1.0.0",
+  "description": "Exact 28-field Tier-1 historical schema (14 Issuer Characteristics fields + 14 Offering Mechanism fields + optional bonus year-2/year-3 revenue & net profit when on the same table) aligned with fields.json and allot_fields.json for 1994-2026 HKEX IPO extraction and analysis.",
+  "field_counts": {
+    "issuer_tier1": 14,
+    "mechanism_tier1": 14,
+    "same_page_bonus": 4,
+    "total_fields": 32
+  },
+  "lines": [
+    "issuer_tier1",
+    "mechanism_tier1",
+    "same_page_bonus"
+  ],
+  "fields": [
+    {
+      "key": "founding_year",
+      "header": "Company founding / operating commencement year",
+      "line": "issuer_tier1",
+      "group": "firm_profile",
+      "kind": "integer",
+      "unit": "year",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_history_and_corporate_structure",
+        "prospectus_business",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Calendar year in which the operating business was founded, established, or commenced commercial operations by the founders or predecessor operating entities (as disclosed in the History and Development section). CRITICAL RULE: Must NOT be confused with col_BP (the legal incorporation date of the offshore holding/listing vehicle, which is often formed decades later for corporate restructuring). If business commenced operations in 1998 but Cayman vehicle incorporated in 2021, founding_year=1998, whereas col_BP=2021-xx-xx."
+    },
+    {
+      "key": "col_BP",
+      "header": "Incorporation date",
+      "line": "issuer_tier1",
+      "group": "ownership",
+      "kind": "date",
+      "unit": "date",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_history_and_corporate_structure",
+        "prospectus_corporate_information"
+      ],
+      "definition_and_rules": "Formal date of incorporation of the listing company / issuer vehicle (dd/mm/yyyy or yyyy-mm-dd) as stated on the certificate of incorporation. Distinct from operating founding_year. For Cayman Islands or Bermuda holding companies, record the date the offshore holding company was formally registered."
+    },
+    {
+      "key": "col_BQ",
+      "header": "Place of incorporation",
+      "line": "issuer_tier1",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "jurisdiction",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_corporate_information",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Legal jurisdiction where the listing entity was formally incorporated (e.g., 'Cayman Islands', 'Bermuda', 'PRC', 'Hong Kong'). CRITICAL RULE: Distinguish strictly from col_BR (principal place of business / operational headquarters). An issuer incorporated in Cayman Islands with headquarters and manufacturing in Shanghai has col_BQ='Cayman Islands' and col_BR='PRC'."
+    },
+    {
+      "key": "col_BR",
+      "header": "Principal place of business",
+      "line": "issuer_tier1",
+      "group": "ownership",
+      "kind": "text",
+      "unit": "location",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_corporate_information",
+        "prospectus_business"
+      ],
+      "definition_and_rules": "Physical jurisdiction / geographic location of corporate headquarters and principal operating activities (e.g., 'PRC', 'Hong Kong', 'Singapore', 'United States'). Must reflect actual physical operations, not the legal incorporation tax haven (col_BQ)."
+    },
+    {
+      "key": "col_AR",
+      "header": "Principal business / industry",
+      "line": "issuer_tier1",
+      "group": "business",
+      "kind": "text",
+      "unit": "industry_description",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_summary",
+        "prospectus_business",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Summary description of the issuer's core commercial operations, principal products/services, and primary industry sector as stated in the prospectus Summary / Business section."
+    },
+    {
+      "key": "col_AS",
+      "header": "Listing route / applicable chapter",
+      "line": "issuer_tier1",
+      "group": "business",
+      "kind": "text",
+      "unit": "listing_route",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_summary",
+        "regulatory_rules"
+      ],
+      "definition_and_rules": "Statutory listing route and applicable chapter under the HKEX Listing Rules. Standard values: 'Rule 8.05(1) Profit Test', 'Rule 8.05(2) Market Cap/Revenue/Cashflow Test', 'Rule 8.05(3) Market Cap/Revenue Test', 'Chapter 8A (WVR)', 'Chapter 18A (Biotech)', 'Chapter 18C (Specialist Tech)', 'Chapter 19A (PRC H-Share)', 'Chapter 19C (Secondary Listing)', 'GEM Chapter 11'."
+    },
+    {
+      "key": "col_AT",
+      "header": "Year-1 financial period end (dd/mm/yy)",
+      "line": "issuer_tier1",
+      "group": "extra_financial",
+      "kind": "date",
+      "unit": "date",
+      "missing": "NA",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "End date of the latest financial period included in the Accountants' Report (dd/mm/yyyy or yyyy-mm-dd). FIXED FINANCIAL-PERIOD STANDARD (Teacher's Manual §2.3, confirmed 2026-10-14): Year-1 is strictly the latest period in the prospectus's Accountants' Report (audited Track Record Period), whether a full financial year (e.g., 31/12/2025) or a 3-11 month stub (e.g., 30/06/2026). Unaudited quarterly results, management accounts, or 'Recent Developments' sections outside the Accountants' Report NEVER constitute year-1."
+    },
+    {
+      "key": "col_Y",
+      "header": "total assets in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Total assets as of the Year-1 balance sheet date (col_AT) from the audited Accountants' Report balance sheet. In original reported financial currency (col_V). As a point-in-time balance sheet stock variable, it is NEVER annualised (Teacher's Manual §2.3)."
+    },
+    {
+      "key": "col_AB",
+      "header": "total equity in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Total equity / net assets as of the Year-1 balance sheet date (col_AT) from the audited Accountants' Report balance sheet. In original reported financial currency. Balance sheet stock variable; NEVER annualised."
+    },
+    {
+      "key": "col_AE",
+      "header": "total liability in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Total liabilities as of the Year-1 balance sheet date (col_AT) from the audited Accountants' Report balance sheet. In original reported financial currency. Balance sheet stock variable; NEVER annualised."
+    },
+    {
+      "key": "col_AH",
+      "header": "Net sales in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Audited revenue / net sales / turnover for Year-1 from the Accountants' Report statement of comprehensive income. FIXED FINANCIAL-PERIOD STANDARD (Teacher's Manual §2.3): If Year-1 is a stub period of M months (e.g., 3, 6, 9 months), the value recorded in col_AH MUST be annualised by multiplying original stub revenue by (12 / M). The original unannualized figure is preserved separately in col_BZ."
+    },
+    {
+      "key": "col_AK",
+      "header": "Profit before tax in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Audited profit (loss) before taxation for Year-1 from the Accountants' Report income statement. FIXED FINANCIAL-PERIOD STANDARD (Teacher's Manual §2.3): If Year-1 is a stub period of M months, the value recorded in col_AK MUST be annualised by multiplying original stub profit before tax by (12 / M). The original unannualized figure is preserved separately in col_CA."
+    },
+    {
+      "key": "col_AN",
+      "header": "Profit for the year in year-1",
+      "line": "issuer_tier1",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Audited net profit (loss) for Year-1 attributable to equity holders / owners of the parent from the Accountants' Report income statement. FIXED FINANCIAL-PERIOD STANDARD (Teacher's Manual §2.3): If Year-1 is a stub period of M months, the value recorded in col_AN MUST be annualised by multiplying original stub net profit by (12 / M). The original unannualized figure is preserved separately in col_CB."
+    },
+    {
+      "key": "col_AU",
+      "header": "Operating cash flow in year-1 (before annualization)",
+      "line": "issuer_tier1",
+      "group": "extra_financial",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report_cash_flows",
+        "prospectus_financial_information"
+      ],
+      "definition_and_rules": "Net cash flows generated from (used in) operating activities for Year-1 from the audited Accountants' Report cash flow statement. FIXED FINANCIAL-PERIOD STANDARD (Teacher's Manual §2.3): Unlike revenue and profit, operating cash flow is NEVER annualised; record the exact original-period value as reported."
+    },
+    {
+      "key": "col_L",
+      "header": "Total (without option)",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_share_capital",
+        "prospectus_cover",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Total number of issued shares immediately following completion of the Global Offering, assuming the over-allotment option is not exercised. Must satisfy structural identity: col_L = col_N + col_Q = col_O + col_M."
+    },
+    {
+      "key": "col_M",
+      "header": "Global Offering (without option)",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_share_capital",
+        "prospectus_cover",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Total number of Offer Shares initially offered under the Global Offering (base offering, excluding over-allotment option). Must satisfy structural identity: col_M = col_Q + col_P = col_R + col_S."
+    },
+    {
+      "key": "col_Q",
+      "header": "New shares",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_share_capital",
+        "prospectus_cover"
+      ],
+      "definition_and_rules": "Total number of newly issued Offer Shares offered for subscription by the company in the Global Offering."
+    },
+    {
+      "key": "col_P",
+      "header": "Sale Shares",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_share_capital",
+        "prospectus_cover"
+      ],
+      "definition_and_rules": "Number of existing shares offered for sale by Selling Shareholders (0 if offering consists purely of new shares; must be 0, never NaN)."
+    },
+    {
+      "key": "col_R",
+      "header": "Placing Shares",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_structure_of_the_global_offering"
+      ],
+      "definition_and_rules": "Initial number of Offer Shares allocated to the International Placing tranche (before any reallocation/clawback and before over-allotment exercise)."
+    },
+    {
+      "key": "col_S",
+      "header": "Public Offer shares",
+      "line": "mechanism_tier1",
+      "group": "share_structure",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_structure_of_the_global_offering"
+      ],
+      "definition_and_rules": "Initial number of Offer Shares allocated to the Hong Kong Public Offering tranche (before any reallocation/clawback). For 100% placing-only offerings on GEM, col_S = 0."
+    },
+    {
+      "key": "col_T",
+      "header": "Maximum Offer Price",
+      "line": "mechanism_tier1",
+      "group": "price",
+      "kind": "number",
+      "unit": "HKD",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_structure_of_the_global_offering"
+      ],
+      "definition_and_rules": "Maximum indicative offer price per share stated in the prospectus price range (e.g. HK$3.80). In fixed-price offerings, equals the single fixed offer price."
+    },
+    {
+      "key": "col_U",
+      "header": "Minimum Offer Price",
+      "line": "mechanism_tier1",
+      "group": "price",
+      "kind": "number",
+      "unit": "HKD",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_structure_of_the_global_offering"
+      ],
+      "definition_and_rules": "Minimum indicative offer price per share stated in the prospectus price range. HISTORICAL RULE FOR FIXED/CAP-ONLY OFFERINGS: If the offering is fixed-price, set col_U = col_T. If the prospectus only specifies a maximum price ceiling with no minimum floor (common in early 1990s public subscription offerings), record as `Not_Applicable_Cap_Only` (or set equal to col_T if numeric schema enforced with note in metadata)."
+    },
+    {
+      "key": "col_AQ",
+      "header": "Over-allotment Option (%)",
+      "line": "mechanism_tier1",
+      "group": "underwriting",
+      "kind": "number",
+      "unit": "percentage",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_cover",
+        "prospectus_structure_of_the_global_offering"
+      ],
+      "definition_and_rules": "Maximum percentage of base offer shares that can be issued under the over-allotment option / greenshoe facility (typically 15.0%, or 0.0% if no option granted; never NaN)."
+    },
+    {
+      "key": "col_CK",
+      "header": "Final cornerstone allocation (% of base offer)",
+      "line": "mechanism_tier1",
+      "group": "cornerstone_final",
+      "kind": "number",
+      "unit": "decimal_percentage",
+      "missing": "NaN",
+      "source_priority": [
+        "allotment_announcement",
+        "prospectus_cornerstone"
+      ],
+      "definition_and_rules": "Total shares finally allocated to cornerstone investors divided by base offer shares (col_M). If no cornerstone investors were engaged, MUST be 0.0 (never NaN). HISTORICAL PRE-2005 RULE: For offerings prior to the formalization of the cornerstone regime in 2005 (e.g. 1990s SOE corporate placements), strategic pre-IPO institutional placees are classified as `Early_Corporate_Investor` in notes; if standard 6-month lockup was absent, flag accordingly."
+    },
+    {
+      "key": "col_CM",
+      "header": "Subscription Ratio (times)",
+      "line": "mechanism_tier1",
+      "group": "demand",
+      "kind": "number",
+      "unit": "times",
+      "missing": "NaN",
+      "source_priority": [
+        "allotment_announcement",
+        "nlr_or_bbg_prefill"
+      ],
+      "definition_and_rules": "Subscription level / multiple of the Hong Kong Public Offering as reported in the Allotment Results Announcement (e.g. 15.42 times; if undersubscribed, reported as fraction <1.0 or 0.0 for 100% placing-only offerings)."
+    },
+    {
+      "key": "col_CP",
+      "header": "Public subscription original wording",
+      "line": "mechanism_tier1",
+      "group": "demand",
+      "kind": "text",
+      "unit": "verbatim_quote",
+      "missing": "NA",
+      "source_priority": [
+        "allotment_announcement"
+      ],
+      "definition_and_rules": "CRITICAL ORIGINAL WORDING PRESERVATION RULE: Exact, verbatim text quote extracted from the Allotment Results Announcement describing the level of valid applications and subscription multiple in the Public Offering (e.g., 'a total of 12,450 valid applications were received... representing approximately 34.5 times the total number of 10,000,000 Hong Kong Offer Shares initially available...'). MUST NOT be rephrased, shortened, or summarized."
+    },
+    {
+      "key": "col_CT",
+      "header": "Final public offer shares",
+      "line": "mechanism_tier1",
+      "group": "final_shares",
+      "kind": "integer",
+      "unit": "shares",
+      "missing": "NaN",
+      "source_priority": [
+        "allotment_announcement"
+      ],
+      "definition_and_rules": "Total number of Offer Shares finally allocated to the Hong Kong Public Offering after applying clawback / reallocation mechanism (or 0 for 100% placing-only offerings)."
+    },
+    {
+      "key": "col_CW",
+      "header": "Actual clawback / reallocation description",
+      "line": "mechanism_tier1",
+      "group": "final_shares",
+      "kind": "text",
+      "unit": "verbatim_quote",
+      "missing": "NA",
+      "source_priority": [
+        "allotment_announcement"
+      ],
+      "definition_and_rules": "CRITICAL ORIGINAL WORDING PRESERVATION RULE: Exact, verbatim text quote from the Allotment Results Announcement describing whether and how the clawback or reallocation was executed between the Public Offering and Placing tranches (e.g., 'The clawback mechanism specified in Practice Note 18 has been applied and the final number of Hong Kong Offer Shares has been increased to 30,000,000 Offer Shares...', or 'No clawback mechanism has been triggered...'). Original wording MUST be preserved without summarization."
+    },
+    {
+      "key": "col_AG",
+      "header": "Net sales in year-2",
+      "line": "same_page_bonus",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report"
+      ],
+      "definition_and_rules": "Audited revenue / net sales / turnover for Year-2 (the full financial year immediately preceding Year-1). Optional bonus field extracted when visible on the same income statement table in the Accountants' Report as Year-1."
+    },
+    {
+      "key": "col_AF",
+      "header": "Net sales in year-3",
+      "line": "same_page_bonus",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report"
+      ],
+      "definition_and_rules": "Audited revenue / net sales / turnover for Year-3 (two financial years preceding Year-1). Optional bonus field extracted when visible on the same income statement table in the Accountants' Report as Year-1."
+    },
+    {
+      "key": "col_AM",
+      "header": "Profit for the year in year-2",
+      "line": "same_page_bonus",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report"
+      ],
+      "definition_and_rules": "Audited net profit (loss) for Year-2 attributable to equity holders. Optional bonus field extracted when visible on the same income statement table in the Accountants' Report as Year-1."
+    },
+    {
+      "key": "col_AL",
+      "header": "Profit for the year in year-3",
+      "line": "same_page_bonus",
+      "group": "financials",
+      "kind": "number",
+      "unit": "original_currency_thousands_or_exact",
+      "missing": "NaN",
+      "source_priority": [
+        "prospectus_accountants_report"
+      ],
+      "definition_and_rules": "Audited net profit (loss) for Year-3 attributable to equity holders. Optional bonus field extracted when visible on the same income statement table in the Accountants' Report as Year-1."
+    }
+  ]
+}

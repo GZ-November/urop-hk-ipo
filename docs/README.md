@@ -7,6 +7,7 @@
 | English progress report | [PDF](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.pdf) / [LaTeX](reports/HK_IPO_RESEARCH_PROGRESS_STE_2026.tex) | Earlier analysis snapshot; current estimates remain in generated outputs |
 | Code architecture | [Architecture Guide](ARCHITECTURE.md) / [Research Workspace](../research_workspace/README.md) | Shared modules, commands, and English artifact index |
 | 当前研究 | [研究入口](RESEARCH_START.md)、[2026 计划](RESEARCH_PLAN_2026.md) | 基础统计起步、少数主线、复现顺序 |
+| Overview 研究审阅 | [2026-11-11 审阅与低成本补数建议](../pipeline/reports/overview_review_2026-11-11/README.md) | 当前跨年稿件的计算复核、识别边界、历史覆盖与定向补数路线；不替代原始来源认证 |
 | 数据覆盖与获取 | [缺数清单](DATA_GAPS_2026.md)、[基础统计](../analysis/out/basic_statistics/basic_statistics.md) | 存储覆盖、缺失原因、公开可得性和补数优先级 |
 | 既有扩展设计 | [学术设计与 brainstorm](RESEARCH_DESIGN_2026.md)、[新结果](../analysis/out/research_frontier/research.md) | 既有零售／基石探索与16项候选，近期顺序以当前计划为准 |
 | 证据说明与来源历史 | [A+H](AH_ANCHOR_2026.md)、[2026-09-30 集成复核](AGY_INTEGRATION_2026-09-30.md) | A+H当前覆盖；集成复核保留历史阶段，现状以当前计划为准 |
