@@ -4,7 +4,7 @@
 Only statements that passed an accounting identity in the Accountants' Report are kept.
 Every other historical financial value is blanked. 2025-2026 reviewed rows are untouched.
 """
-import json, re, shutil, sys
+import json, re, shutil
 from pathlib import Path
 import numpy as np, pandas as pd
 

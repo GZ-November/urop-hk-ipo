@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Find listing documents on HKEXnews for issuers the first download could not resolve."""
-import csv, json, re, sys, time, datetime as dt, urllib.parse, urllib.request
+import json, re, sys, time, datetime as dt, urllib.parse, urllib.request
 from pathlib import Path
 import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))

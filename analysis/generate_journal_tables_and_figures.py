@@ -27,7 +27,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from scipy import stats
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OV_DIR = REPO_ROOT / "analysis" / "out" / "overview_1994_2026"

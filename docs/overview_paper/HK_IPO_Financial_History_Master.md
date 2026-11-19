@@ -263,13 +263,13 @@ After 2018 the Main Board became a set of distinct entry routes rather than a si
 
 | Listing Track (2018–2026Q3) | Deals (N) | Med. Proceeds (HK\$M) | Cornerstone Incidence (%) | Mean Day-1 IR (%) | Mean 1Y HSI-TR BHAR (%) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Rule 8.05 Offshore (Cayman / HK)** | 523 | 311 | 50.4% | +13.07% | -3.49% |
+| **Rule 8.05 Offshore (Cayman / HK)** | 523 | 311 | 48.9% | +13.07% | -3.49% |
 | **Pure Ch. 19A PRC H-Shares (Non-A+H)** | 122 | 608 | 65.6% | +41.74% | -16.78% |
-| **A+H Dual-Listed Issuers** | 156 | 1,777 | 82.5% | +3.49% | -4.29% |
-| **Ch. 18A Pre-Revenue Biotech** | 95 | 1,260 | 90.4% | +29.07% | -22.14% |
+| **A+H Dual-Listed Issuers** | 156 | 1,777 | 81.4% | +3.49% | -4.29% |
+| **Ch. 18A Pre-Revenue Biotech** | 95 | 1,260 | 90.5% | +29.07% | -22.14% |
 | **Ch. 18C Specialist Technology** | 25 | 981 | 72.0% | +59.84% | — |
 | **Ch. 8A WVR / Ch. 19C Secondary** | 22 | 5,339 | 72.7% | +24.65% | -31.48% |
-| **All Modern Main Board** | **943** | **637** | **62.9%** | **+18.31%** | **-7.56%** |
+| **All Modern Main Board** | **943** | **637** | **61.8%** | **+18.31%** | **-7.56%** |
 
 **Panel B: Pre-IPO Venture Capital, State Guidance Equity, and Control Structure (2025Q1–2026Q3, N = 226)**
 
@@ -407,7 +407,7 @@ The second concerns the size and shape of syndicates. Bookrunner lists kept grow
 
 ### 6.3 Cornerstone Investors: Certification or Selection?
 
-What do cornerstones actually do? Before bookbuilding closes, named institutions commit to buy guaranteed dollar or share allocations at whatever final offer price clears the book, are disclosed in the prospectus, and accept a six-month lockup. The institution took shape during the 2005–2007 state-bank privatizations—initially contracted as "corporate investors" or "corporate placings"—and was later codified in exchange guidance (HKEX-GL51-13; McGuinness, 2014). Our repaired filing series shows how far reliance on that contract has grown: among confirmed cornerstone deals on the Main Board, the conditional median tranche share of the initial pre-greenshoe offering rose from **28.0 percent** in Era III (2008–2017) to **34.7 percent** in Era IV (2018–2022) and **41.4 percent** in Era V (2023–2026Q3; **34.3 percent** across all verified deals). Notably, as Rule 144A U.S. QIB participation in large offerings (≥ HK\$1B) retreated from 62.0 percent in Era IV to 40.8 percent in Era V, cornerstones increasingly shifted from external prestige certification toward pre-funded, long-only anchor capacity inside an Asia-centric book.
+What do cornerstones actually do? Before bookbuilding closes, named institutions commit to buy guaranteed dollar or share allocations at whatever final offer price clears the book, are disclosed in the prospectus, and accept a six-month lockup. The institution took shape during the 2005–2007 state-bank privatizations—initially contracted as "corporate investors" or "corporate placings"—and was later codified in exchange guidance (HKEX-GL51-13; McGuinness, 2014). Our repaired filing series shows how far reliance on that contract has grown: among confirmed cornerstone deals on the Main Board, the conditional median tranche share of the initial pre-greenshoe offering rose from **17.0 percent** in Era II (2000–2007; 16.2 percent prevalence) to **28.0 percent** in Era III (2008–2017), **34.6 percent** in Era IV (2018–2022), and **41.4 percent** in Era V (2023–2026Q3; **33.9 percent** across all verified deals). Notably, as Rule 144A U.S. QIB participation in large offerings (≥ HK\$1B) retreated from 62.0 percent in Era IV to 40.8 percent in Era V, cornerstones increasingly shifted from external prestige certification toward pre-funded, long-only anchor capacity inside an Asia-centric book.
 
 The 2025–2026 data suggest three roles. The first is **certification**. A respected investor's commitment may tell others that the deal has been examined. Biotech and technology issuers allowed to bring existing investors in as cornerstones have strong first-day results, in line with the view that informed insiders can add credibility, although only seven deals fall in this group. The second is **assured distribution**. As Rule 144A participation receded, Mainland state-linked and local-government funds took a larger place in the book. The third is an unintended one: **float restriction**. Shares placed with cornerstones cannot trade for six months, which reduces the supply available to everyone else (Section 8.3).
 
@@ -460,7 +460,7 @@ The ceiling produces a sharp asymmetry (Hanley, 1993). When the Hang Seng Index 
 | **Retail / Institutional Timeline** | Simultaneous public prospectus + institutional bookbuilding | Institutional bookbuilding first; retail receives post-pricing allocations | Separate online retail lottery (网上) + offline institutional allotment (网下) |
 | **Upward Price Revision Above $P_{\max}$** | **0.0%** (0 / 1,943 range deals; statutory hard ceiling) | **21.4%** of operating IPOs price above filing range | Historically capped by **23x P/E ceiling** (pre-registration reform) |
 | **Minimum / Mandatory Retail Tranche** | Legacy **PN18** (10% $\to$ 50% clawback); **Aug 2025 Mech. B** ($\ge 10\%$ fixed, 0% clawback) | No statutory retail tranche; discretionary broker distribution | High statutory retail lottery allocation with 100% pre-settlement/post-lottery rules |
-| **Pre-IPO Cornerstone Lockups** | **75.3%** of Era V deals (median **41.4%** of base offer; 6M lockup) | Rare; informal anchor indications without statutory 6M lockup | Strategic placement (战略配售) with 12M+ lockup on large STAR/ChiNext deals |
+| **Pre-IPO Cornerstone Lockups** | **74.8%** of Era V deals (median **41.4%** of base offer; 6M lockup) | Rare; informal anchor indications without statutory 6M lockup | Strategic placement (战略配售) with 12M+ lockup on large STAR/ChiNext deals |
 | **Settlement & Margin Mechanics** | **FINI T+2** credit-cap confirmation (Nov 2023; 90% retail margin) | T+1 / T+2 DVP institutional settlement; no retail lottery margin | Pre-allocated market-value quota (市值配售); cash paid upon winning |
 | **Price Stabilization** | **Cap. 571W** (30-day greenshoe up to 15% + stabilizing bids at $\le P_0$) | SEC **Reg M** (30-day 15% greenshoe + syndicate short covering) | Restricted; 30-day greenshoe permitted only on select mega-IPOs |
 
@@ -470,7 +470,7 @@ Recent deals have split into two pricing styles. Some domestic growth issuers us
 
 ### 7.2 Retail Clawback and the 2025 Reform
 
-For 27 years, Practice Note 18 (1998) paired that hard price ceiling with an automatic supply transfer from institutions to retail applicants. Whenever public oversubscription crossed 15x, 50x, and 100x tiers, institutional books surrendered up to 50 percent of the offering to retail pools regardless of institutional demand (Agarwal, Liu, and Rhee, 2008; Vong and Trigueiros, 2017). The 15x threshold provides a sharp local regression-discontinuity design: offerings just above 15x see final retail allocation jump by **+20.22 percentage points** ($t=5.07$) and Day-1 log initial return fall by **-0.247** ($t=-3.08$), as marginal public supply absorbs some excess debut demand. At extreme subscription levels (100x+), however, both $P_{\max}$ and the 50 percent clawback cap bind simultaneously, leaving excess demand to clear entirely on Day 1 (Derrien, 2005; Ljungqvist, Nanda, and Singh, 2006).
+For 27 years, Practice Note 18 (1998) paired that hard price ceiling with an automatic supply transfer from institutions to retail applicants. Whenever public oversubscription crossed 15x, 50x, and 100x tiers, institutional books surrendered up to 50 percent of the offering to retail pools regardless of institutional demand (Agarwal, Liu, and Rhee, 2008; Vong and Trigueiros, 2017). The 15x threshold provides a sharp local regression-discontinuity design: offerings just above 15x see final retail allocation jump by **+20.22 percentage points** ($t=5.08$) and Day-1 log initial return fall by **-0.247** ($t=-3.07$), as marginal public supply absorbs some excess debut demand. At extreme subscription levels (100x+), however, both $P_{\max}$ and the 50 percent clawback cap bind simultaneously, leaving excess demand to clear entirely on Day 1 (Derrien, 2005; Ljungqvist, Nanda, and Singh, 2006).
 
 ![Figure 7.1: Mandatory retail clawback threshold jumps and the August 2025 Mechanism B allocation overhaul. Stacked left panels plot local Practice Note 18 15x threshold jumps (1998–2025.07) in (a1) final retail tranche share (+20.22 pp) and (a2) Day-1 log initial returns (-0.247). Panel (b) compares final retail tranche share, Day-1 turnover flipping, and mean Day-1 initial returns across Legacy PN18, Mechanism A, Mechanism B, and Chapter 18C regimes in 2025–2026Q3.](figures/journal_fig6.png)
 
@@ -846,7 +846,7 @@ The census starts from every equity listing admission on the Main Board and GEM 
 
 ### A.2 How the Data Were Built
 
-The census is built from HKEX records and Fact Books, Bloomberg Equity Capital Markets data, market price histories, and offering documents and allotment results. Bloomberg supplies much of the historical deal and return information. Their coverage differs. Online filings were harvested for 2,408 IPOs, 229 listings fall before the online filing cutoff, and the 229 records in the 2025–2026 panels were built with field-level source review. Earlier filing variables come largely from machine-assisted extraction, so they should not be read as if each had been individually checked by hand. For this revision we rechecked three filing fields. Public-offer subscription multiples now come from allotment announcements wherever the text allows, usually confirmed by dividing shares applied for by shares offered. Cornerstone status comes from prospectus sections and allotment announcements, including the older term "corporate investor." Cornerstone tranche shares (`ext_cornerstone_pct`) across the 725 confirmed 1994–2024 cornerstone deals are similarly rebuilt from allotment share counts and explicit prospectus commitments normalized by initial pre-greenshoe offer shares (rather than post-greenshoe totals), yielding verified allocations for 718 of 725 issuers while leaving 7 unquantified or boilerplate-only cases blank. The clawback design uses the deals with checked final allocations. Table A.2 shows the coverage of the main fields.
+The census is built from HKEX records and Fact Books, Bloomberg Equity Capital Markets data, market price histories, and offering documents and allotment results. Bloomberg supplies much of the historical deal and return information. Their coverage differs. Online filings were harvested for 2,408 IPOs, 229 listings fall before the online filing cutoff, and the 229 records in the 2025–2026 panels were built with field-level source review. Earlier filing variables come largely from machine-assisted extraction, so they should not be read as if each had been individually checked by hand. For this revision we rechecked three filing fields. Public-offer subscription multiples now come from allotment announcements wherever the text allows (1,847 of 1,905 non-placing 1994–2024 deals with available multiples), usually confirmed by dividing shares applied for by shares offered, leaving only 58 Bloomberg-only records concentrated in pre-2002 filings. Cornerstone status comes from final prospectus sections and allotment announcements, including the older term "corporate investor," yielding 2,189 checked 1994–2024 issuers (100% coverage for 2004–2024, with 751 confirmed cornerstone deals and 1,438 confirmed absences). Cornerstone tranche shares (`ext_cornerstone_pct`) across all 751 confirmed 1994–2024 cornerstone deals are similarly rebuilt from allotment share counts and explicit prospectus commitments normalized by initial pre-greenshoe offer shares (rather than post-greenshoe totals), achieving 100% quantification (751 of 751) after resolving previously unquantified prospectuses and removing FINI/waiver boilerplate false positives. The clawback design uses the deals with checked final allocations. Table A.2 shows the coverage of the main fields.
 
 ### Table A.2 — Coverage of Principal Census Fields
 
@@ -859,9 +859,9 @@ The census is built from HKEX records and Fact Books, Bloomberg Equity Capital M
 | Clean first-day return | 2,601 | Sections 4 and 7 | Excludes recycled codes and distorted corporate actions |
 | Verified terminal return | 2,117 | Section 8.5 | Excludes 749 IPOs, including 475 delisted without a terminal quote |
 | Audited Year-1 accounts, 2005–2024 | 1,284 income statements; 1,058 balance sheets | Section 5.4 | Rebuilt from Accountants' Reports; unconfirmed values stay blank |
-| Public-offer subscription multiple, 1994–2024 | 1,695 from allotment announcements; 216 Bloomberg only | Section 7.2 | Filing value used when sources differ; placing-only deals stay blank |
-| Cornerstone status, 1994–2024 | 1,814 issuers with a checked status (725 confirmed) | Sections 5.2 and 6.3 | Market rates start in 2008 because earlier filings are too sparsely covered |
-| Cornerstone tranche share, 1994–2024 | 718 of 725 confirmed cornerstone deals | Table 4 (online) and Sections 6.3–6.4 | Initial pre-greenshoe offer denominator; 7 unquantified/boilerplate cases blank |
+| Public-offer subscription multiple, 1994–2024 | 1,847 from allotment announcements; 58 Bloomberg only | Section 7.2 | Filing value used when sources differ; 244 placing-only deals stay blank |
+| Cornerstone status, 1994–2024 | 2,189 issuers with a checked status (751 confirmed; 1,438 absent) | Sections 5.2 and 6.3 | 100% covered for 2004–2024; 1994–2001 pre-online filings remain blank |
+| Cornerstone tranche share, 1994–2024 | 751 of 751 confirmed cornerstone deals (100%) | Table 4 (online) and Sections 6.3–6.4 | Initial pre-greenshoe offer denominator; all confirmed 2003–2024 deals quantified |
 | 2025Q1–2026Q3 Main Board panel | 226 | Sections 5–8 | Highest level of filing review; six-month returns available for 161 |
 | 2026 retail allotment panel | 113 | Section 7.4 | Fill rates are computed from published allotment schedules |
 
@@ -914,13 +914,13 @@ The main text uses rounded anchors. Table C.1 records the principal estimates be
 | 5.4 | Accrual terciles, cash conversion | 2.28x vs. 0.45x | Low vs. high accruals; partly mechanical |
 | 5.4 | R&D capitalizers | 30 of 202 (14.9%) | R&D-active issuers |
 | 6.2 | Bulge bookrunner and Rule 144A use | +57.3 pp | Association, not causal |
-| 6.3 | Era V cornerstone incidence; median tranche | 75.3%; 41.4% | Conditional median of base offer |
-| 6.3 | First-day absolute pricing error with cornerstones | -5.53 pp | Main Board panel; association |
+| 6.3 | Era V cornerstone incidence; median tranche | 74.8%; 41.4% | Conditional median of base offer |
+| 6.3 | First-day absolute pricing error with cornerstones | -5.70 pp | Main Board panel ($N=1,857$); association |
 | 7.1 | Offerings priced above range | 0 of 1,943 | Main Board and GEM (0 of 1,702 Main Board) |
 | 7.1 | Day-1 slope on market return: up / down markets | -0.08 ($t=-0.21$) / +1.49 ($t=3.73$) | 2,079 offerings |
 | 7.1 | Money left on the table | HK\$613.6B | Clean Main Board sample |
-| 7.2 | 15x threshold: retail allocation jump | +20.22 pp ($t=5.07$) | $N=226$ near cutoff |
-| 7.2 | 15x threshold: Day-1 log return | -0.247 ($t=-3.08$) | Same design |
+| 7.2 | 15x threshold: retail allocation jump | +20.22 pp ($t=5.08$) | $N=225$ near cutoff |
+| 7.2 | 15x threshold: Day-1 log return | -0.247 ($t=-3.07$) | Same design |
 | 7.2 | Mechanism B share of eligible issuers | 94.0% (142 of 151) | Aug 2025–Sep 2026, non-18C |
 | 7.2 | Retail share of money left on table | 26.2% to 11.9% | Before / after Aug 2025 |
 | 7.3 | Prospectus-to-listing interval | 13.6 to 9.2 days | Mean, pre- / post-FINI |

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Replace public-offer subscription multiples and cornerstone flags with filing-checked values."""
-import glob, json, re, shutil
+import glob, json, shutil
 from pathlib import Path
 import numpy as np, pandas as pd
 
