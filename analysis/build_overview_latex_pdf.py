@@ -24,25 +24,7 @@ MASTER_SPEC = {
     "include_toc": True,
 }
 
-DEFAULT_SPECS = [
-    MASTER_SPEC,
-    {
-        "md": DOCS_DIR / "HK_IPO_Overview_1994_2026_Manuscript.md",
-        "tex": DOCS_DIR / "HK_IPO_Overview_1994_2026_Manuscript.tex",
-        "pdf": DOCS_DIR / "HK_IPO_Overview_1994_2026_Manuscript.pdf",
-        "short_title": "Institutional Architecture and Price Discovery in Hong Kong IPOs (1994–2026)",
-        "volume_label": "",
-        "is_journal_main": True,
-    },
-    {
-        "md": DOCS_DIR / "HK_IPO_Overview_1994_2026_Online_Appendix.md",
-        "tex": DOCS_DIR / "HK_IPO_Overview_1994_2026_Online_Appendix.tex",
-        "pdf": DOCS_DIR / "HK_IPO_Overview_1994_2026_Online_Appendix.pdf",
-        "short_title": "Online Appendix: Hong Kong IPOs (1994–2026)",
-        "volume_label": "Internet Appendix for Online Publication",
-        "is_journal_main": False,
-    },
-]
+DEFAULT_SPECS = [MASTER_SPEC]
 
 
 def _escape_latex_text(text: str) -> str:
