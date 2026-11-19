@@ -1320,7 +1320,7 @@ Regulatory Era & Initial Candidates & Ch. 9A Transfers & Introductions & SPAC / 
 
 \subsection*{\texorpdfstring{A.2 How the Data Were Built}{A.2 How the Data Were Built}}
 \addcontentsline{toc}{subsection}{\texorpdfstring{A.2 How the Data Were Built}{A.2 How the Data Were Built}}
-The census is built from HKEX records and Fact Books, Bloomberg Equity Capital Markets data, market price histories, and offering documents and allotment results. Bloomberg supplies much of the historical deal and return information. Their coverage differs. Online filings were harvested for 2,408 IPOs, 229 listings fall before the online filing cutoff, and the 229 records in the 2025–2026 panels were built with field-level source review. Earlier filing variables come largely from machine-assisted extraction, so they should not be read as if each had been individually checked by hand. For this revision we rechecked two filing fields. Public-offer subscription multiples now come from allotment announcements wherever the text allows, usually confirmed by dividing shares applied for by shares offered. Cornerstone status comes from prospectus sections and allotment announcements, including the older term ``corporate investor.'' The clawback design uses the deals with checked final allocations. Table A.2 shows the coverage of the main fields.
+The census is built from HKEX records and Fact Books, Bloomberg Equity Capital Markets data, market price histories, and offering documents and allotment results. Bloomberg supplies much of the historical deal and return information. Their coverage differs. Online filings were harvested for 2,408 IPOs, 229 listings fall before the online filing cutoff, and the 229 records in the 2025–2026 panels were built with field-level source review. Earlier filing variables come largely from machine-assisted extraction, so they should not be read as if each had been individually checked by hand. For this revision we rechecked three filing fields. Public-offer subscription multiples now come from allotment announcements wherever the text allows, usually confirmed by dividing shares applied for by shares offered. Cornerstone status comes from prospectus sections and allotment announcements, including the older term ``corporate investor.'' Cornerstone tranche shares (\texttt{\small ext\_\allowbreak{}cornerstone\_\allowbreak{}pct}) across the 725 confirmed 1994–2024 cornerstone deals are similarly rebuilt from allotment share counts and explicit prospectus commitments normalized by initial pre-greenshoe offer shares (rather than post-greenshoe totals), yielding verified allocations for 718 of 725 issuers while leaving 7 unquantified or boilerplate-only cases blank. The clawback design uses the deals with checked final allocations. Table A.2 shows the coverage of the main fields.
 
 \begin{table}[!htbp]
 \centering
@@ -1331,7 +1331,7 @@ The census is built from HKEX records and Fact Books, Bloomberg Equity Capital M
 \setlength{\tabcolsep}{3.5pt}
 \renewcommand{\arraystretch}{1.18}
 \begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{>{\raggedright\arraybackslash}p{4.54cm}>{\centering\arraybackslash}p{4.98cm}l>{\raggedright\arraybackslash}p{4.98cm}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.99cm}>{\centering\arraybackslash}p{4.37cm}>{\raggedright\arraybackslash}p{3.07cm}>{\raggedright\arraybackslash}p{4.37cm}}
 \toprule
 Field Group & Observations & Main Use & Reading Note \\
 \midrule
@@ -1343,7 +1343,8 @@ Clean first-day return & 2,601 & Sections 4 and 7 & Excludes recycled codes and 
 Verified terminal return & 2,117 & Section 8.5 & Excludes 749 IPOs, including 475 delisted without a terminal quote \\
 Audited Year-1 accounts, 2005–2024 & 1,284 income statements; 1,058 balance sheets & Section 5.4 & Rebuilt from Accountants' Reports; unconfirmed values stay blank \\
 Public-offer subscription multiple, 1994–2024 & 1,695 from allotment announcements; 216 Bloomberg only & Section 7.2 & Filing value used when sources differ; placing-only deals stay blank \\
-Cornerstone status, 1994–2024 & 1,814 issuers with a checked status & Sections 5.2 and 6.3 & Market rates start in 2008 because earlier filings are too sparsely covered \\
+Cornerstone status, 1994–2024 & 1,814 issuers with a checked status (725 confirmed) & Sections 5.2 and 6.3 & Market rates start in 2008 because earlier filings are too sparsely covered \\
+Cornerstone tranche share, 1994–2024 & 718 of 725 confirmed cornerstone deals & Table 4 (online) and Sections 6.3–6.4 & Initial pre-greenshoe offer denominator; 7 unquantified/boilerplate cases blank \\
 2025Q1–2026Q3 Main Board panel & 226 & Sections 5–8 & Highest level of filing review; six-month returns available for 161 \\
 2026 retail allotment panel & 113 & Section 7.4 & Fill rates are computed from published allotment schedules \\
 \bottomrule
