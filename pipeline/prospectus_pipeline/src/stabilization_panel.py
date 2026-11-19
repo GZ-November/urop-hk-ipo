@@ -110,8 +110,12 @@ class StabilizationPanelEngine:
     def __init__(self, cfg: dict | None = None) -> None:
         self.cfg = cfg or load_cfg()
         self.out_master = self.cfg["paths"]["out"] / "master"
-        self.greenshoe_text_dir = self.cfg["paths"]["allot_out"] / "greenshoe" / "text"
-        self.allot_text_dir = self.cfg["paths"]["allot_out"] / "text"
+        gs_out_dir = self.cfg["paths"]["allot_out"] / "greenshoe" / "text"
+        gs_root_dir = self.cfg.get("_root", ROOT) / "data" / "allot" / "greenshoe" / "text"
+        self.greenshoe_text_dir = gs_out_dir if gs_out_dir.exists() else gs_root_dir
+        allot_out_dir = self.cfg["paths"]["allot_out"] / "text"
+        allot_cfg_dir = self.cfg["paths"].get("allot_text", allot_out_dir)
+        self.allot_text_dir = allot_out_dir if allot_out_dir.exists() else allot_cfg_dir
         self.greenshoe_index = self.cfg["paths"]["allot_out"] / "greenshoe.json"
         self.daily_panel_csv = self.out_master / "daily_market_panel.csv"
         self.out_master.mkdir(parents=True, exist_ok=True)

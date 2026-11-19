@@ -341,13 +341,17 @@ class RealArtifactTests(unittest.TestCase):
             self.assertTrue(summary["headers_aligned"])
             self.assertTrue(summary["registry_ok"])
             self.assertEqual(summary["variable_count"], 202)
+            has_2025q3 = (WS / "exports" / "HKIPO-MB2025Q3_clean.csv").exists()
             has_2025q4 = (WS / "exports" / "HKIPO-MB2025Q4_clean.csv").exists()
-            expected_cohorts = (
-                ["2025Q1", "2025Q2", "2025Q4", "2026Q1", "2026Q2", "2026Q3"]
-                if has_2025q4
-                else ["2025Q1", "2025Q2", "2026Q1", "2026Q2", "2026Q3"]
-            )
-            expected_rows = 202 if has_2025q4 else 155
+            expected_cohorts = ["2025Q1", "2025Q2"]
+            expected_rows = 155
+            if has_2025q3:
+                expected_cohorts.append("2025Q3")
+                expected_rows += 24
+            if has_2025q4:
+                expected_cohorts.append("2025Q4")
+                expected_rows += 47
+            expected_cohorts.extend(["2026Q1", "2026Q2", "2026Q3"])
             self.assertEqual(summary["cohort_order"], expected_cohorts)
             self.assertEqual(summary["total_rows"], expected_rows)  # 2026Q3 expansion: 23 -> 30 issuers
             # hard error 只能来自重复代码（表头与注册表均已对齐）；

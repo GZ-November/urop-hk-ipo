@@ -1,0 +1,7 @@
+Settlement_Regime,Subscription_Capital_Tier,N_Deals,Median_Subscribed_HKD_Bn,Mean_Delta_1W_HIBOR_bps,Median_Delta_1W_HIBOR_bps,Mean_1W_Minus_3M_Spread_bps,Share_1W_Surge_Over_25bps_Pct
+"Pre-FINI (1999-2023.11, Escrow Lockup)",Cold/Mod (< HK$10B Subscribed),1234,0.29,27.6,4.7,-21.0,33.2
+"Pre-FINI (1999-2023.11, Escrow Lockup)",Warm (HK$10B - HK$100B),222,29.59,18.4,2.1,-9.5,22.1
+"Pre-FINI (1999-2023.11, Escrow Lockup)",Hot Mega-Freeze (>= HK$100B),112,261.78,34.4,10.1,6.1,39.3
+"Post-FINI (2023.11-2026, Credit Cap T+2)",Cold/Mod (< HK$10B Subscribed),121,0.94,45.4,33.3,-3.9,51.2
+"Post-FINI (2023.11-2026, Credit Cap T+2)",Warm (HK$10B - HK$100B),72,37.18,27.9,21.6,-18.5,47.2
+"Post-FINI (2023.11-2026, Credit Cap T+2)",Hot Mega-Freeze (>= HK$100B),110,268.7,36.5,17.6,-3.7,44.5

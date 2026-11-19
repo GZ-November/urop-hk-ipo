@@ -1,0 +1,41 @@
+Window_Group,Benchmark_Window,N,Mean_Matched_CAR_Pct,Med_Matched_CAR_Pct,t_stat,p_value,Wilcoxon_MW_p
+Day +180 (Cornerstone Cohort) — PRC H-Shares,"Ind×Size CAR[-20,+20]",77,-5.06,-6.33,-1.62,0.109,0.0984
+Day +180 (Cornerstone Cohort) — Pure Ch.19A H-Shares,"Ind×Size CAR[-20,+20]",50,-3.64,-2.64,-0.8,0.4304,0.5527
+Day +180 (Cornerstone Cohort) — A+H Dual-Listed,"Ind×Size CAR[-20,+20]",27,-7.7,-6.66,-2.76,0.0105,0.0104
+Day +180 (Cornerstone Cohort) — Cayman Red-Chips,"Ind×Size CAR[-20,+20]",25,-20.09,-14.13,-2.62,0.015,0.0115
+Day +180 (Cornerstone Cohort) — DiD (Cayman minus H-Share),"Ind×Size CAR[-20,+20]",102,-15.03,-7.8,-1.82,0.0788,0.063
+Day +180 Narrow (CS Cohort) — PRC H-Shares,"Ind×Size CAR[-5,+5]",84,0.59,-2.46,0.3,0.7679,0.5442
+Day +180 Narrow (CS Cohort) — Pure Ch.19A H-Shares,"Ind×Size CAR[-5,+5]",54,1.3,-4.26,0.46,0.6439,0.6024
+Day +180 Narrow (CS Cohort) — A+H Dual-Listed,"Ind×Size CAR[-5,+5]",30,-0.7,2.01,-0.3,0.768,0.8872
+Day +180 Narrow (CS Cohort) — Cayman Red-Chips,"Ind×Size CAR[-5,+5]",26,-7.76,-4.56,-1.86,0.0752,0.0022
+Day +180 Narrow (CS Cohort) — DiD (Cayman minus H-Share),"Ind×Size CAR[-5,+5]",110,-8.35,-2.1,-1.8,0.0793,0.0648
+Day +180 (All Matured Bars) — PRC H-Shares,"Ind×Size CAR[-20,+20]",96,-7.45,-7.6,-2.13,0.0355,0.0122
+Day +180 (All Matured Bars) — Pure Ch.19A H-Shares,"Ind×Size CAR[-20,+20]",68,-7.9,-10.99,-1.65,0.1032,0.0641
+Day +180 (All Matured Bars) — A+H Dual-Listed,"Ind×Size CAR[-20,+20]",28,-6.35,-6.5,-2.1,0.0448,0.0337
+Day +180 (All Matured Bars) — Cayman Red-Chips,"Ind×Size CAR[-20,+20]",31,-19.83,-14.13,-3.05,0.0048,0.0029
+Day +180 (All Matured Bars) — DiD (Cayman minus H-Share),"Ind×Size CAR[-20,+20]",127,-12.38,-6.53,-1.68,0.0999,0.1304
+Placebo Day +120 (4M) — PRC H-Shares,"Ind×Size CAR[-20,+20]",117,-5.33,-7.51,-1.85,0.0671,0.0297
+Placebo Day +120 (4M) — Pure Ch.19A H-Shares,"Ind×Size CAR[-20,+20]",84,-4.45,-7.14,-1.17,0.2462,0.1766
+Placebo Day +120 (4M) — A+H Dual-Listed,"Ind×Size CAR[-20,+20]",33,-7.58,-8.69,-2.3,0.0279,0.0353
+Placebo Day +120 (4M) — Cayman Red-Chips,"Ind×Size CAR[-20,+20]",33,-5.75,-7.33,-0.8,0.4269,0.2641
+Placebo Day +120 (4M) — DiD (Cayman minus H-Share),"Ind×Size CAR[-20,+20]",150,-0.42,0.18,-0.05,0.9569,0.9133
+Placebo Day +240 (8M) — PRC H-Shares,"Ind×Size CAR[-20,+20]",84,1.42,-2.86,0.42,0.6782,0.5207
+Placebo Day +240 (8M) — Pure Ch.19A H-Shares,"Ind×Size CAR[-20,+20]",60,2.7,-0.23,0.64,0.5218,0.9941
+Placebo Day +240 (8M) — A+H Dual-Listed,"Ind×Size CAR[-20,+20]",24,-1.76,-5.04,-0.3,0.7662,0.16
+Placebo Day +240 (8M) — Cayman Red-Chips,"Ind×Size CAR[-20,+20]",30,-11.57,-9.64,-2.13,0.0421,0.0384
+Placebo Day +240 (8M) — DiD (Cayman minus H-Share),"Ind×Size CAR[-20,+20]",114,-12.99,-6.77,-2.02,0.0481,0.1397
+Paired (N=58) — PRC H-Shares,Paired Day +180,39,-10.22,-8.0,-2.26,0.0298,0.0359
+Paired (N=58) — Pure Ch.19A H-Shares,Paired Day +180,28,-11.89,-9.91,-1.92,0.0654,0.0993
+Paired (N=58) — A+H Dual-Listed,Paired Day +180,11,-5.99,-8.0,-1.85,0.0933,0.1016
+Paired (N=58) — Cayman Red-Chips,Paired Day +180,19,-18.68,-14.13,-2.57,0.0192,0.0046
+Paired (N=58) — DiD (Cayman minus H-Share),Paired Day +180,58,-8.46,-6.13,-0.99,0.3304,0.2742
+Paired (N=58) — PRC H-Shares,Paired Day +365,39,-12.08,-5.64,-1.99,0.0538,0.0372
+Paired (N=58) — Pure Ch.19A H-Shares,Paired Day +365,28,-17.81,-9.97,-2.23,0.034,0.011
+Paired (N=58) — A+H Dual-Listed,Paired Day +365,11,2.51,4.39,0.46,0.6564,0.6377
+Paired (N=58) — Cayman Red-Chips,Paired Day +365,19,-19.24,-15.82,-2.61,0.0177,0.0082
+Paired (N=58) — DiD (Cayman minus H-Share),Paired Day +365,58,-7.16,-10.18,-0.75,0.4574,0.4362
+Paired (N=58) — PRC H-Shares,Within-Firm (12M - 6M),39,-1.85,-0.7,-0.29,0.7696,0.8307
+Paired (N=58) — Pure Ch.19A H-Shares,Within-Firm (12M - 6M),28,-5.92,-3.49,-0.72,0.4799,0.3502
+Paired (N=58) — A+H Dual-Listed,Within-Firm (12M - 6M),11,8.5,3.25,1.23,0.2477,0.2402
+Paired (N=58) — Cayman Red-Chips,Within-Firm (12M - 6M),19,-0.56,-2.18,-0.06,0.9496,0.7381
+Paired (N=58) — DiD (Cayman minus H-Share),Within-Firm (12M - 6M),58,1.3,-1.48,0.12,0.9047,0.7782

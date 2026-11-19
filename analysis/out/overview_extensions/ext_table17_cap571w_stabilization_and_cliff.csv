@@ -1,0 +1,10 @@
+Stabilization_Regime,N_Deals,N_With_Cliff_Window,Mean_Shoe_Ex_Pct,Mean_Day1_IR_Pct,Day1_Break_Rate_Pct,Mean_1M_BHR_During_Stab_Pct,Mean_Day30_Cliff_CAR_m5_p5_Pct,Median_Day30_Cliff_CAR_m5_p5_Pct,Mean_Post_Stab_0_to_20d_Ret_Pct,Median_Post_Stab_Vol_Ratio_x
+"Panel A1: Full Greenshoe Exercised (>=99%, Strong Aftermarket Demand)",47,24,100.0,58.59,8.5,-2.09,-2.76,-3.26,7.28,0.38
+Panel A2: Partial Greenshoe Exercised + Open-Market Stabilization (0% < Shoe < 99%),33,15,26.8,16.41,18.2,6.64,1.06,4.48,-4.5,0.26
+"Panel A3: Zero Greenshoe Exercised (0% Shoe, Stabilization Bid Exhausted / Lapsed)",146,42,0.0,44.49,34.9,7.06,7.19,1.97,16.62,0.34
+Panel A4: No Over-Allotment Facility Granted,0,0,,,,,,,,
+"Panel B1: 33Y Near-Zero Initial Return (IR in [-0.05%, +0.50%], Zero Shoe)",78,78,0.0,0.05,19.2,-7.42,1.57,-0.17,-0.21,0.34
+Panel B2: 33Y Broken Day-1 with Zero Shoe (Withdrawn Bid),391,391,0.0,-13.96,100.0,-8.03,-1.47,-1.79,-0.55,0.32
+Panel B3: 33Y Partial Greenshoe Exercised (Mixed Support),389,389,46.3,2.78,43.4,-0.68,-0.87,-1.38,1.4,0.3
+Panel B4: 33Y Full Greenshoe Exercised (Pure Short Cover),453,453,100.1,30.52,6.2,5.76,1.23,-0.35,1.26,0.35
+Panel B5: 33Y Unstabilized Gain with Zero Shoe,356,356,0.0,41.21,0.0,7.91,2.86,-0.12,2.47,0.33

@@ -1,0 +1,4 @@
+ticket_tier,N,Min_Ticket_HKD,Med_Ticket_HKD,Max_Ticket_HKD,Med_Sub_Ratio_x,Mean_1Lot_Alloc_Pct,Mean_Day1_IR_Pct,Mean_1Lot_Net_Excess_Pct,Med_1Lot_Net_Excess_Pct
+Low Entry Ticket (T1),38,1042.0,2888.0,3672.0,1605.97,10.6205,70.3745,3.8893,0.8519
+Medium Entry Ticket (T2),37,3785.0,4396.0,5885.0,1563.16,9.48,68.6005,0.9453,0.6995
+High Entry Ticket (T3),38,5912.0,9756.0,49000.0,438.77,12.1991,20.8929,0.9114,0.2019

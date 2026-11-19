@@ -1,0 +1,7 @@
+Model,Sample_N,Estimate,t_stat,p_val
+Post-Prospectus HSI Rally Slope (R_m > 0),2079,-0.0795,-0.21,0.8325
+Post-Prospectus HSI Drop Slope (R_m < 0),2079,1.4918,3.73,0.0002
+Pre-Prospectus 30d HSI Rally Slope,2079,0.2727,1.19,0.2325
+Hot-Cycle: Lag 3M HSI -> Fwd 3M Log Volume,388,0.0028,0.91,0.3637
+Hot-Cycle: Lag 3M Mean IR -> Fwd 3M Log Volume,388,0.0054,3.97,0.0001
+Hot-Cycle: HKMA 1M HIBOR -> Fwd 3M Log Volume,388,-0.051,-3.61,0.0003

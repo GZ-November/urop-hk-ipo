@@ -1,0 +1,15 @@
+Model,Variable,Coef,SE_HC3,t_stat,p_value,N,R2
+33Y MB: Log(Amihud Illiquidity),log_proc,-0.9396,0.0221,-42.6,0.0,2108,0.498
+33Y MB: Log(Amihud Illiquidity),is_h,0.1426,0.082,1.74,0.0821,2108,0.498
+33Y MB: Log(Amihud Illiquidity),has_fintech,-0.0986,0.0998,-0.99,0.3227,2108,0.498
+33Y MB: Any Zero-Volume Day (LPM),log_proc,-0.1176,0.0056,-20.98,0.0,2108,0.16
+33Y MB: Any Zero-Volume Day (LPM),is_h,0.0416,0.0221,1.88,0.0601,2108,0.16
+33Y MB: Any Zero-Volume Day (LPM),has_fintech,-0.0866,0.0256,-3.38,0.0007,2108,0.16
+2025-26 MB: Log(Amihud Illiquidity),log_proc,-1.17,0.129,-9.07,0.0,139,0.683
+2025-26 MB: Log(Amihud Illiquidity),unrestricted_free_float_pct,0.1329,0.0272,4.88,0.0,139,0.683
+2025-26 MB: Log(Amihud Illiquidity),cs_pct,0.0166,0.0072,2.32,0.0202,139,0.683
+2025-26 MB: Log(Amihud Illiquidity),is_ah_dual_listed,-0.1059,0.2364,-0.45,0.6541,139,0.683
+2025-26 MB: Log(6M Daily Turnover HK$m),log_proc,1.1789,0.1944,6.07,0.0,139,0.52
+2025-26 MB: Log(6M Daily Turnover HK$m),unrestricted_free_float_pct,-0.1806,0.0346,-5.22,0.0,139,0.52
+2025-26 MB: Log(6M Daily Turnover HK$m),cs_pct,-0.0206,0.0121,-1.7,0.0889,139,0.52
+2025-26 MB: Log(6M Daily Turnover HK$m),is_ah_dual_listed,-0.3487,0.3647,-0.96,0.3391,139,0.52

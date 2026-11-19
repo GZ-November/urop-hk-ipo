@@ -1,0 +1,57 @@
+# Panel A: PN18 Bracket Summary
+Clawback_Bracket,N,Median_Sub_x,Initial_Public_Share_Mean_Pct,Initial_Public_Share_Median_Pct,Final_Public_Share_Mean_Pct,Final_Public_Share_Median_Pct,Mean_Day1_IR_Pct,Median_Day1_IR_Pct
+"1. <15x (10% Public, No Clawback)",776,2.56,9.91,10.0,10.72,10.0,5.53,0.0
+2. 15x-50x (30% Clawback),256,25.77,10.06,10.0,30.71,30.0,8.82,1.14
+3. 50x-100x (40% Clawback),93,70.48,9.64,10.0,38.52,40.0,6.69,4.0
+4. >=100x (50% Max Clawback),404,334.74,9.59,10.0,44.98,47.58,25.55,14.85
+
+# Panel B: Local Linear RD Jumps and 2SLS
+Cutoff_x,Bandwidth_log_pts,Local_N,First_Stage_Jump_pp,First_Stage_t_HC3,First_Stage_p_val,Reduced_Form_Jump,Reduced_Form_t_HC3,Reduced_Form_p_val,Local_Linear_2SLS_Coef,Local_Linear_2SLS_t,Wald_Ratio
+15.0,0.35,184,24.28,5.52,0.0,-0.2698,-2.9,0.0038,-0.0111,-2.58,-0.0111
+15.0,0.45,225,20.22,5.08,0.0,-0.2466,-3.07,0.0021,-0.0122,-2.64,-0.0122
+15.0,0.55,268,20.94,5.86,0.0,-0.2642,-3.34,0.0008,-0.0126,-2.95,-0.0126
+15.0,0.65,306,21.16,6.92,0.0,-0.243,-3.59,0.0003,-0.0115,-3.26,-0.0115
+15.0,0.85,381,19.98,7.74,0.0,-0.216,-3.89,0.0001,-0.0108,-3.55,-0.0108
+15.0,0.65_Quad,306,23.44,4.48,0.0,-0.3161,-3.0,0.0027,-0.0135,-2.49,-0.0135
+50.0,0.35,111,6.21,0.83,0.4041,-0.1973,-2.01,0.0441,,,
+50.0,0.45,141,4.62,0.74,0.458,-0.1061,-1.32,0.1884,,,
+50.0,0.55,172,3.15,0.54,0.5875,-0.0665,-0.96,0.3377,,,
+50.0,0.65,203,2.61,0.51,0.6091,-0.0642,-0.97,0.3345,,,
+50.0,0.85,283,3.22,0.76,0.4491,-0.067,-1.13,0.2588,,,
+50.0,0.65_Quad,203,6.04,0.71,0.4769,-0.1425,-1.28,0.2004,,,
+100.0,0.35,100,-1.2,-0.15,0.8794,0.0969,0.96,0.3389,,,
+100.0,0.45,122,4.89,0.68,0.497,0.1091,1.22,0.224,,,
+100.0,0.55,163,7.08,1.15,0.25,0.1037,1.34,0.1813,,,
+100.0,0.65,191,7.51,1.31,0.1913,0.0871,1.21,0.2275,,,
+100.0,0.85,263,8.14,1.64,0.1,0.0871,1.38,0.167,,,
+100.0,0.65_Quad,191,1.26,0.15,0.8843,0.1078,1.02,0.3091,,,
+
+# Panel C: PN18 15x RD Validity Diagnostics
+Test_Type,Variable_or_Window,Local_N,Estimate_or_ShareAbove,SE_HC3,t_stat,p_value
+Density Binomial Test (15x Cutoff),"|log(Sub/15)| <= 0.35 (Below=93, Above=91)",184,0.4946,,,0.9413
+Density Binomial Test (15x Cutoff),"|log(Sub/15)| <= 0.45 (Below=113, Above=112)",225,0.4978,,,1.0
+Density Binomial Test (15x Cutoff),"|log(Sub/15)| <= 0.65 (Below=153, Above=154)",307,0.5016,,,1.0
+Density Binomial Test (15x Cutoff),"|log(Sub/15)| <= 0.85 (Below=193, Above=190)",383,0.4961,,,0.9186
+"Covariate Balance RD (15x, |z|<=0.65)",Log Gross Proceeds (HK$M),307,-0.7416,0.3033,-2.45,0.0145
+"Covariate Balance RD (15x, |z|<=0.65)",PRC Joint-Stock H-Share Dummy,307,-0.0953,0.0786,-1.21,0.2253
+"Covariate Balance RD (15x, |z|<=0.65)",Has Cornerstone Tranche Dummy,307,-0.2491,0.1039,-2.4,0.0166
+"Covariate Balance RD (15x, |z|<=0.65)",Initial Public Offer Share (%),307,0.9785,0.5994,1.63,0.1026
+"Covariate Balance RD (15x, |z|<=0.65)",Pre-Listing 30-TD HSI Return (%),307,-0.6334,1.418,-0.45,0.6551
+"Covariate-Adjusted FS RD (15x, |z|<=0.35)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",184,22.6068,4.4103,5.13,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.35)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",184,-0.2848,0.0896,-3.18,0.0015
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.35)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",184,-0.0126,0.0044,-2.83,0.0046
+"Covariate-Adjusted FS RD (15x, |z|<=0.45)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",225,18.3222,3.9916,4.59,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.45)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",225,-0.2566,0.0779,-3.29,0.001
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.45)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",225,-0.014,0.005,-2.79,0.0052
+"Covariate-Adjusted FS RD (15x, |z|<=0.55)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",268,18.6833,3.5314,5.29,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.55)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",268,-0.2785,0.0755,-3.69,0.0002
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.55)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",268,-0.0149,0.0046,-3.21,0.0013
+"Covariate-Adjusted FS RD (15x, |z|<=0.65)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",306,18.7992,2.9759,6.32,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.65)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",306,-0.2638,0.0672,-3.92,0.0001
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.65)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",306,-0.014,0.0039,-3.58,0.0003
+"Covariate-Adjusted FS RD (15x, |z|<=0.85)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",381,17.9096,2.524,7.1,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.85)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",381,-0.2312,0.0561,-4.12,0.0
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.85)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",381,-0.0129,0.0034,-3.8,0.0001
+"Covariate-Adjusted FS RD (15x, |z|<=0.65_Quad)","Final Retail Share Jump (+ Proceeds, H-Share, CS, InitPub)",306,21.4023,5.2411,4.08,0.0
+"Covariate-Adjusted RF RD (15x, |z|<=0.65_Quad)","Log(1+IR) Jump (+ Proceeds, H-Share, CS, InitPub)",306,-0.3197,0.0996,-3.21,0.0013
+"Covariate-Adjusted 2SLS RD (15x, |z|<=0.65_Quad)","Log(1+IR) per +1pp Retail Share (+ Proceeds, H-Share, CS, InitPub)",306,-0.0149,0.0057,-2.63,0.0085

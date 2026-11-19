@@ -1,0 +1,33 @@
+Model,Sample,Dep_Var,Variable,Coef,SE_HC3,t_HC3,p_HC3,Sig_HC3,SE_MonthCluster,t_MonthCluster,p_MonthCluster,Sig_MonthCluster,N,Clusters_YM,R2,Adj_R2,Year_FE
+M1_33y_PrePricing_Deal,1994-2026Q3 Full Clean Universe,log_1p_ir,log_proceeds_hkdm,-1.7559,0.4647,-3.78,0.0002,***,0.5792,-3.03,0.0024,***,2491,369,0.1764,0.1646,Yes
+M1_33y_PrePricing_Deal,1994-2026Q3 Full Clean Universe,log_1p_ir,is_gem,34.4608,3.901,8.83,0.0,***,6.0256,5.72,0.0,***,2491,369,0.1764,0.1646,Yes
+M1_33y_PrePricing_Deal,1994-2026Q3 Full Clean Universe,log_1p_ir,is_prc_domicile,-3.2064,1.7944,-1.79,0.074,*,1.8799,-1.71,0.0881,*,2491,369,0.1764,0.1646,Yes
+M2_33y_With_Retail_Demand,1994-2026Q3 Public-Tranche Verified,log_1p_ir,log_proceeds_hkdm,-0.4832,0.4507,-1.07,0.2836,,0.5021,-0.96,0.3359,,1999,286,0.1455,0.1321,Yes
+M2_33y_With_Retail_Demand,1994-2026Q3 Public-Tranche Verified,log_1p_ir,is_gem,0.603,3.2445,0.19,0.8526,,2.8917,0.21,0.8348,,1999,286,0.1455,0.1321,Yes
+M2_33y_With_Retail_Demand,1994-2026Q3 Public-Tranche Verified,log_1p_ir,is_prc_domicile,0.8138,1.6227,0.5,0.616,,1.5962,0.51,0.6101,,1999,286,0.1455,0.1321,Yes
+M2_33y_With_Retail_Demand,1994-2026Q3 Public-Tranche Verified,log_1p_ir,log1p_retail_sub,4.1558,0.362,11.48,0.0,***,0.4506,9.22,0.0,***,1999,286,0.1455,0.1321,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,log_assets_hkdm,-5.5605,1.221,-4.55,0.0,***,1.1796,-4.71,0.0,***,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,profitable_yr1,-1.6427,5.1824,-0.32,0.7513,,5.529,-0.3,0.7664,,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,roa_pct,-0.0745,0.1043,-0.71,0.475,,0.1038,-0.72,0.4726,,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,leverage_pct,-0.0148,0.0303,-0.49,0.6264,,0.0278,-0.53,0.5954,,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,log_proceeds_hkdm,4.8191,1.5997,3.01,0.0026,***,1.5287,3.15,0.0016,***,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,has_cornerstone,-6.2863,3.4316,-1.83,0.067,*,3.4817,-1.81,0.071,*,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,is_gem,4.337,7.8219,0.55,0.5793,,9.5153,0.46,0.6485,,646,98,0.1056,0.0828,Yes
+M3_2018_2026_PrePricing_Fundamentals,2018-2026Q3 Complete-Case Audited Financials,log_1p_ir,is_prc_domicile,2.5434,3.6147,0.7,0.4817,,3.5463,0.72,0.4733,,646,98,0.1056,0.0828,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,log_assets_hkdm,-1.2831,1.2143,-1.06,0.2907,,1.1185,-1.15,0.2513,,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,profitable_yr1,-3.381,4.8374,-0.7,0.4846,,5.0283,-0.67,0.5013,,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,roa_pct,-0.0598,0.0902,-0.66,0.5074,,0.0885,-0.68,0.4992,,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,leverage_pct,-0.0184,0.0269,-0.68,0.4942,,0.0231,-0.8,0.4249,,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,log_proceeds_hkdm,2.5282,1.4316,1.77,0.0774,*,1.2675,1.99,0.0461,**,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,has_cornerstone,-5.984,3.2683,-1.83,0.0671,*,3.199,-1.87,0.0614,*,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,log1p_retail_sub,6.4706,0.8727,7.41,0.0,***,0.9889,6.54,0.0,***,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,is_gem,6.28,8.0578,0.78,0.4358,,8.8549,0.71,0.4782,,645,98,0.1917,0.1698,Yes
+M4_2018_2026_Fundamentals_Plus_Demand,2018-2026Q3 Complete-Case + Demand,log_1p_ir,is_prc_domicile,-0.3251,3.3485,-0.1,0.9227,,3.0564,-0.11,0.9153,,645,98,0.1917,0.1698,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,ir_close_w,-0.0185,0.0884,-0.21,0.8342,,0.0871,-0.21,0.8317,,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,log_assets_hkdm,-1.4363,2.48,-0.58,0.5625,,2.5491,-0.56,0.5731,,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,profitable_yr1,16.2507,10.7299,1.51,0.1299,,10.3842,1.56,0.1176,,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,roa_pct,-0.0871,0.1181,-0.74,0.4609,,0.1083,-0.8,0.4213,,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,leverage_pct,-0.1183,0.0368,-3.22,0.0013,***,0.0342,-3.46,0.0005,***,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,log_proceeds_hkdm,6.6007,3.2539,2.03,0.0425,**,3.6708,1.8,0.0721,*,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,has_cornerstone,-8.7139,7.1247,-1.22,0.2213,,6.7871,-1.28,0.1992,,520,88,0.0983,0.0715,Yes
+M5_2018_2026_1Y_BHAR_Reversal,2018-2026Q3 Matured 1Y Complete-Case,bhar_1y_w,is_gem,-23.2568,15.44,-1.51,0.132,,17.0577,-1.36,0.1728,,520,88,0.0983,0.0715,Yes

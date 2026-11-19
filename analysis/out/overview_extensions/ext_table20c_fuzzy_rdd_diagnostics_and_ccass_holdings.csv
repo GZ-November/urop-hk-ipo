@@ -1,0 +1,13 @@
+Panel,Specification,N_Total,Metric_1,Estimate,SE_or_Aux,t_stat,p_value,Notes
+A. Cutoff Density Test,Bandwidth |log(MV/5B)| <= 0.35 (HK$3.5B-7.1B),6,"Below 5B=3, Above 5B=3",0.5,0.5,,1.0,Two-sided binomial test of continuous sorting density at HK$5.0B
+A. Cutoff Density Test,Bandwidth |log(MV/5B)| <= 0.55 (HK$2.9B-8.7B),16,"Below 5B=7, Above 5B=9",0.562,0.5,,0.8036,Two-sided binomial test of continuous sorting density at HK$5.0B
+B. Covariate Balance RD,Pre-Determined Cornerstone Share (% of Offer),152,Mean=28.33,-2.169,6.31,-0.34,0.7311,Local-linear RD jump at HK$5.0B (balance requires p > 0.10)
+B. Covariate Balance RD,Log(1 + Retail Subscription Ratio),152,Mean=6.53,1.884,0.665,2.83,0.0046,Local-linear RD jump at HK$5.0B (balance requires p > 0.10)
+B. Covariate Balance RD,Day-1 Initial Return (%),152,Mean=57.75,91.538,18.022,5.08,0.0,Local-linear RD jump at HK$5.0B (balance requires p > 0.10)
+B. Covariate Balance RD,Chapter 18A/18C Frontier Tech Share,152,Mean=0.28,0.21,0.141,1.48,0.1386,Local-linear RD jump at HK$5.0B (balance requires p > 0.10)
+C. CCASS Mainland Holdings (%),Joint HSCI Index + Southbound Connect (Semi-Annual Review),79,Pre=0.00% (N=65); +4d=0.63% (N=65); +10d=1.06% (N=65),7.364,4.14,7.99,0.0,"As of 2026-11-12: mean 7.36% (med 4.14%, max 31.40%)"
+C. CCASS Mainland Holdings (%),Joint HSCI / Hang Seng Index Fast-Entry + Connect,17,Non-semiannual entry date (tracked 2026-11-12),7.672,7.28,5.43,5.6e-05,"As of 2026-11-12: mean 7.67% (med 7.28%, max 18.78%)"
+C. CCASS Mainland Holdings (%),WVR 6M+20D + Joint Index/Connect Entry,6,Non-semiannual entry date (tracked 2026-11-12),8.132,10.72,4.15,0.008907,"As of 2026-11-12: mean 8.13% (med 10.72%, max 12.05%)"
+C. CCASS Mainland Holdings (%),"A+H Dual-Listed (Auto T_stab+1 Connect, No HSCI Rebalance)",57,Non-semiannual entry date (tracked 2026-11-12),25.778,23.68,12.24,0.0,"As of 2026-11-12: mean 25.78% (med 23.68%, max 59.79%)"
+C. CCASS Mainland Holdings (%),Excluded Non-A+H (Never Included),67,Pre=0.00% (N=33); +4d=0.00% (N=33); +10d=0.00% (N=33),0.0,0.0,,,"As of 2026-11-12: mean 0.00% (med 0.00%, max 0.00%)"
+D. Stacked Official Entrant DiD,All Official Non-A+H Entrants vs Same-Date Never-Included Controls,659,Treated N=101 (med 3.14x) vs Ctrl obs=558 (med 0.83x),1.521,0.128,11.91,0.0,"Event-date FE + Issuer-clustered SE; Treated jump=+1.372, Control=-0.173"
