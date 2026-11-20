@@ -715,10 +715,16 @@ def main() -> None:
         "Mechanism_B": "Mechanism B (Post-Aug 4, 2025; Fixed ~10%, Zero Clawback)",
         "Ch18C_Special": "Chapter 18C Specialist Tech (Capped 5%→20%)",
     }
+    flip_patterns = {
+        "Legacy_PN18": "Legacy PN18",
+        "Mechanism_A": "Mechanism A",
+        "Mechanism_B": "Mechanism B",
+        "Ch18C_Special": "18C",
+    }
     for rk in ["Legacy_PN18", "Mechanism_A", "Mechanism_B", "Ch18C_Special"]:
         r = mech_ab[mech_ab["alloc_regime_actual"] == rk].iloc[0]
         # Get flipping from open_9a2
-        fl_match = open_9a2[open_9a2["Panel_and_Regime"].str.contains(rk.split("_")[0] if rk != "Ch18C_Special" else "18C")]
+        fl_match = open_9a2[open_9a2["Panel_and_Regime"].str.contains(flip_patterns[rk], regex=False)]
         fl_val = float(fl_match["Mean_Flipping_Ratio_Pct"].iloc[0]) if len(fl_match) else np.nan
         t9b_rows.append({
             "Statutory Allocation Regime (2025–2026Q3, N=226)": regime_names_clean[rk],
@@ -2087,17 +2093,17 @@ def main() -> None:
     flip_f = [float(t9b_rows[i]["Day-1 Flipping (%)"]) for i in range(4)]
     ir_f = [float(t9b_rows[i]["Mean Day-1 IR (%)"].replace("+", "")) for i in range(4)]
     ax2_m.bar(reg_x - 0.18, ret_sh_f, width=0.35, color=NAVY, alpha=0.88, label="Final Retail Share (%, Left)")
-    ax2_m.bar(reg_x + 0.18, flip_f, width=0.35, color=CRIMSON, alpha=0.82, label="Day-1 Flipping Ratio (%, Left)")
+    ax2_m.bar(reg_x + 0.18, flip_f, width=0.35, color=CRIMSON, alpha=0.82, label="Day-1 Vol. / Offer Shares (%, Left)")
     ax2_r = ax2_m.twinx()
     ax2_r.spines["top"].set_visible(False)
     ax2_r.plot(reg_x, ir_f, color=FOREST, marker="D", markersize=6.0, linewidth=2.0, label="Mean Day-1 IR (%, Right)")
-    ax2_r.set_ylabel("Mean Day-1 Initial Return (%)")
+    ax2_r.set_ylabel("Mean First-Day Return from Offer Price (%)")
     ax2_r.set_ylim(min(0.0, min(ir_f) * 1.6), max(ir_f) * 1.32)
     ax2_r.axhline(0, color="black", linewidth=0.6)
     ax2_m.set_xticks(reg_x)
     ax2_m.set_xticklabels(reg_short4, fontsize=8.2)
-    ax2_m.set_ylabel("Share of Base Offer / Volume (%)")
-    ax2_m.set_title("(b) Aug 2025 Mechanism B Reform: Retail Share, Flipping & Mean IR")
+    ax2_m.set_ylabel("Share of Offer / Day-1 Vol. Relative to Offer (%)")
+    ax2_m.set_title("(b) Aug 2025 Reform: Retail Share, Day-1 Vol./Offer & IR")
     h6a, l6a = ax2_m.get_legend_handles_labels()
     h6b, l6b = ax2_r.get_legend_handles_labels()
     ax2_m.legend(h6a + h6b, l6a + l6b, loc="upper left", fontsize=7.4, frameon=False)
@@ -2119,7 +2125,7 @@ def main() -> None:
     ax1.set_title("(a) Elimination of Hot-IPO Interbank Term-Structure Inversion")
     ax1.legend(loc="upper left", frameon=False)
 
-    strat_lbls = ["Unrationed\nHeadline IR", "Pool A\n1-Lot Net", "Pool A\n10-Lot Net", "Pool B Whale\nMin Tier Net"]
+    strat_lbls = ["First-Day Return\nfrom Offer Price", "Pool A\n1-Lot Net", "Pool A\n10-Lot Net", "Pool B Min-Size\nFinanced Net"]
     strat_means = [
         float(gross_ir_113.mean()),
         float(net_cash_1lot.mean()),
@@ -2133,12 +2139,12 @@ def main() -> None:
         float(net_pb.dropna().median()),
     ]
     xr = np.arange(4)
-    ax2.bar(xr - 0.18, strat_means, width=0.35, color=NAVY, alpha=0.88, label="Mean Capital Return (%)")
-    ax2.bar(xr + 0.18, strat_meds, width=0.35, color=OCHRE, alpha=0.90, label="Median Capital Return (%)")
+    ax2.bar(xr - 0.18, strat_means, width=0.35, color=NAVY, alpha=0.88, label="Mean Return (%)")
+    ax2.bar(xr + 0.18, strat_meds, width=0.35, color=OCHRE, alpha=0.90, label="Median Return (%)")
     ax2.axhline(0, color="black", linewidth=0.8)
     ax2.set_xticks(xr)
     ax2.set_xticklabels(strat_lbls)
-    ax2.set_ylabel("Return on Committed Capital (%)")
+    ax2.set_ylabel("Return per Dollar Applied For (%)")
     ax2.set_title("(b) Rock (1986) Rationing Across 2026 Main Board Census (N=113)")
     ax2.legend(loc="upper right", frameon=False)
     fig.tight_layout()
@@ -2148,8 +2154,8 @@ def main() -> None:
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.5, 4.2))
     mb_b = bhar_5ep[(bhar_5ep["Board"] == "Main Board") & (~bhar_5ep["Epoch"].str.startswith("All"))].copy()
     xb = np.arange(5)
-    ax1.plot(xb, mb_b["Legacy_BHAR_HSI_Price_Mean"], color=SLATE, linestyle="--", marker="o", linewidth=1.6, label="Price-Only HSI BHAR (Omitted Divs)")
-    ax1.plot(xb, mb_b["BHAR_HSI_TR_Mean"], color=NAVY, marker="s", linewidth=2.0, label="Dividend-Adjusted HSI-TR BHAR (-4.10%*)")
+    ax1.plot(xb, mb_b["Legacy_BHAR_HSI_Price_Mean"], color=SLATE, linestyle="--", marker="o", linewidth=1.6, label="Hang Seng Price Index BHAR (Excl. Divs)")
+    ax1.plot(xb, mb_b["BHAR_HSI_TR_Mean"], color=NAVY, marker="s", linewidth=2.0, label="Est. Div.-Reinv. Hang Seng BHAR (-4.10%*)")
     ax1.plot(xb, mb_b["BHAR_SizeMatched_Mean"], color=CRIMSON, marker="^", linewidth=2.0, label="Seasoned Size-Matched BHAR (-5.55%***)")
     ax1.axhline(0, color="black", linewidth=0.8)
     ax1.set_xticks(xb)
@@ -2224,9 +2230,9 @@ def main() -> None:
     ax2.axvline(0.0, color="black", linestyle="--", linewidth=1.1, label="T_stab + 1 Trading Day")
     ax2.axhline(1.0, color=SLATE, linestyle=":", linewidth=0.9)
     ax2.set_xlabel("Trading Days Relative to T_stab + 1")
-    ax2.set_ylabel("Normalized Daily Turnover (Pre [-10,-2] = 1.0)")
+    ax2.set_ylabel("Normalized Daily Trading Value (Pre [-10,-2] = 1.0)")
     ax2.set_ylim(0.72, 2.50)
-    ax2.set_title("(b) Daily Turnover Surge at A+H Auto-Connect Entry")
+    ax2.set_title("(b) Daily Trading Value Surge at A+H Auto-Connect Entry")
     ax2.legend(loc="upper left", fontsize=7.5, frameon=False)
     fig.tight_layout()
     save_fig(fig, "journal_fig9")

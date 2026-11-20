@@ -137,14 +137,14 @@ def build_fig8_2() -> None:
     ax1_r = ax1.twinx()
     ax1_r.spines["top"].set_visible(False)
     ax1_r.grid(False)
-    ax1_r.plot(x, med_to, color=NAVY, marker="s", linewidth=2.0, linestyle="--", label="Median Daily Turnover (HK$M, Right)")
+    ax1_r.plot(x, med_to, color=NAVY, marker="s", linewidth=2.0, linestyle="--", label="Median Daily Trading Value (HK$M, Right)")
     for xi, tv in zip(x, med_to):
         dx = -0.18 if xi == 3 else 0.0
         dy = 1.15
         ax1_r.text(xi + dx, tv + dy, f"HK${tv:.1f}M/d", ha="center", fontsize=7.8, fontweight="bold", color=NAVY,
                    bbox=dict(boxstyle="round,pad=0.12", fc="white", ec="none", alpha=0.78))
     ax1_r.set_ylim(0, 21.5)
-    ax1_r.set_ylabel("Median Month 2–6 Daily Turnover (HK$ Million)", color=NAVY)
+    ax1_r.set_ylabel("Median Month 2–6 Daily Trading Value (HK$ Million)", color=NAVY)
     ax1_r.tick_params(axis="y", colors=NAVY)
 
     ax1.set_xticks(x)
@@ -184,7 +184,7 @@ def build_fig8_2() -> None:
         bbox=dict(boxstyle="round,pad=0.3", fc="#F0F5FA", ec=NAVY, lw=0.8),
     )
     ax2.annotate(
-        "Post-Connect (100% Auto-Entry):\nTurnover +32.5 log-pts (25.8% CCASS),\nyet gap moves only +1.69 pp (p = 0.18)\nunder non-fungibility & 20% div. tax",
+        "Post-Connect (100% Auto-Entry):\nDaily trading value +0.307 log-pts (25.8% CCASS),\nyet gap moves only +1.69 pp (p = 0.18)\nunder non-fungibility & 20% div. tax",
         xy=(4, -26.51),
         xytext=(2.35, -6.8),
         arrowprops=dict(arrowstyle="->", color=TEAL, lw=1.2),
@@ -479,8 +479,8 @@ def build_fig11_1() -> None:
     ax1.set_xticks(x1)
     ax1.set_xticklabels(periods)
     ax1.set_ylim(0, 62)
-    ax1.set_ylabel("Share of Overseas Investor Cash Turnover (%)")
-    ax1.set_title("(a) Overseas Cash Turnover by Origin (CMTS, 2000–2020)")
+    ax1.set_ylabel("Share of Overseas Investor Cash Trading Value (%)")
+    ax1.set_title("(a) Overseas Cash Trading Value by Origin (CMTS, 2000–2020)")
     ax1.legend(loc="upper left", fontsize=7.3, frameon=True, framealpha=0.94)
 
     # Panel (b): Southbound Connect Scaling vs Primary Syndicate & SFC AWMAS Benchmarks (zero label overlap)
@@ -493,14 +493,14 @@ def build_fig11_1() -> None:
     for xi, adt in zip(x2, sb_adt):
         ax2.text(xi - 0.17, adt + 2.5, f"{adt:.1f}B", ha="center", va="bottom", fontsize=7.5, fontweight="bold", color=NAVY)
     ax2.set_ylim(0, 152)
-    ax2.set_ylabel("Southbound Average Daily Turnover (HK$ Billion)", color=NAVY)
+    ax2.set_ylabel("Southbound Average Daily Trading Value (HK$ Billion)", color=NAVY)
     ax2.set_xticks(x2)
     ax2.set_xticklabels(yrs_b)
 
     ax2_r = ax2.twinx()
     ax2_r.spines["top"].set_visible(False)
     ax2_r.grid(False)
-    ax2_r.plot(x2 + 0.17, sb_mkt_pct, color=CRIMSON, marker="s", linewidth=2.1, zorder=5, label="Southbound Share of HK Turnover (%, Right)")
+    ax2_r.plot(x2 + 0.17, sb_mkt_pct, color=CRIMSON, marker="s", linewidth=2.1, zorder=5, label="Southbound Share of HK Trading Value (%, Right)")
     ax2_r.axhline(90.8, color="#4C1D95", linestyle=":", linewidth=1.6, label="Era V Deals With a PRC Sponsor (90.8%, Right)")
     ax2_r.axhline(63.0, color=TEAL, linestyle="--", linewidth=1.6, label="SFC AWMAS Non-HK Investor AUM (63.0%, Right)")
 
@@ -515,7 +515,7 @@ def build_fig11_1() -> None:
         )
 
     ax2_r.set_ylim(0, 112)
-    ax2_r.set_ylabel("Share of Market Turnover / Sponsors / AUM (%)", color="#1F2937")
+    ax2_r.set_ylabel("Share of Market Trading Value / Sponsors / AUM (%)", color="#1F2937")
     ax2.set_title("(b) Southbound Connect vs. Primary & AUM Benchmarks")
 
     h1, l1 = ax2.get_legend_handles_labels()

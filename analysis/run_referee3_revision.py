@@ -42,6 +42,8 @@ ROCK_113 = OV_DIR / "clean_rock_ballot_113_net_returns.csv"
 HSI_JSON = OV_DIR / "market_cache" / "hkHSI_1994_2026.json"
 MB_MASTER_CSV = REPO / "pipeline" / "exports" / "HKIPO-MB-MASTER_clean.csv"
 SECTIONS_TEXT = REPO / "pipeline" / "prospectus_pipeline" / "data" / "text"
+Q3_PDFS = REPO / "pipeline" / "prospectus_pipeline" / "datasets" / "HKIPO_2025-07-01_2025-09-30_HKIPO-MB" / "data" / "pdf"
+Q4_OUT = REPO / "pipeline" / "prospectus_pipeline" / "out" / "2025Q4"
 REFORM_DATE = "2025-08-04"
 
 # Allocation-mechanism labels verified against the prospectus text (Chapter 4.14 of the Guide
@@ -217,6 +219,42 @@ def _confirm_mechanism_b(code: str) -> bool:
     return "follows Mechanism B" in txt or "Mechanism B set out" in txt
 
 
+def _confirm_mechanism_a_pdf(code: str) -> bool:
+    pdf_path = Q3_PDFS / f"HKIPO-MB{code.split('.')[0]}.pdf"
+    if not pdf_path.exists():
+        return False
+    import pymupdf
+    doc = pymupdf.open(pdf_path)
+    full = "\n".join(page.get_text() for page in doc)
+    has_pn18_42a = "Paragraph 4.2(a)" in full or "paragraph 4.2(a)" in full
+    has_tiers = "15%" in full and "25%" in full and "35%" in full and "100 times" in full
+    return has_pn18_42a and has_tiers
+
+
+def _confirm_bespoke_0800() -> tuple[bool, str]:
+    p_json = Q4_OUT / "extracted" / "HKIPO-MB0800.json"
+    a_json = Q4_OUT / "allot" / "extracted" / "HKIPO-MB0800.json"
+    if not (p_json.exists() and a_json.exists()):
+        return False, ""
+    p = json.loads(p_json.read_text()).get("fields", {})
+    a = json.loads(a_json.read_text()).get("fields", {})
+    init_hk = p.get("col_S", {}).get("value")
+    tot = p.get("col_M", {}).get("value")
+    sub_x = a.get("col_CM", {}).get("value")
+    final_hk = a.get("col_CT", {}).get("value")
+    ok = (
+        init_hk == 4412500
+        and tot == 88250000
+        and abs(float(sub_x) - 73.44) < 0.1
+        and final_hk == 17650000
+    )
+    note = (
+        "5.0% initial (4,412,500/88,250,000) and 20.0% final (17,650,000) at 73.44x in local Q4 JSONs; "
+        "10%/20% at 10x/50x bespoke waiver schedule per prospectus/424B5"
+    )
+    return ok, note
+
+
 def run_mechanism_relabel() -> None:
     print("\n--- 2. Mechanism A/B relabelling ---")
     n = pd.read_csv(MICRO_226)
@@ -228,10 +266,23 @@ def run_mechanism_relabel() -> None:
         m = n["stock_code"] == code
         if not m.any():
             continue
-        text_ok = _confirm_mechanism_b(code) if lab == "Mechanism_B" else np.nan
+        if lab == "Mechanism_B":
+            text_ok = _confirm_mechanism_b(code)
+            note = "Mechanism B text found in cached prospectus" if text_ok else ""
+        else:
+            text_ok, note = _confirm_bespoke_0800()
         rows.append({"Panel": "A_Label_Changes", "Group": code, "Measure": f"Mechanism_A -> {lab}",
-                     "Value": text_ok, "Note": "Mechanism B text found in cached prospectus" if text_ok is True else ""})
+                     "Value": text_ok, "Note": note})
         n.loc[m, "regime_rev"] = lab
+    for code in ["2631.HK", "2580.HK"]:
+        ok_a = _confirm_mechanism_a_pdf(code)
+        rows.append({
+            "Panel": "A_Label_Changes",
+            "Group": code,
+            "Measure": "Mechanism_A (retained)",
+            "Value": ok_a,
+            "Note": "PN18 Paragraph 4.2(a) 5%->15%->25%->35% verified in local prospectus PDF" if ok_a else "",
+        })
 
     post = n["post_aug2025_prospectus"] == 1
     for col, lbl in [("regime_orig", "Original"), ("regime_rev", "Revised")]:

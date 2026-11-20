@@ -5,7 +5,9 @@ A_Label_Changes,2553.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found i
 A_Label_Changes,6067.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
 A_Label_Changes,6228.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
 A_Label_Changes,1191.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
-A_Label_Changes,0800.HK,Mechanism_A -> Bespoke_Waiver,,
+A_Label_Changes,0800.HK,Mechanism_A -> Bespoke_Waiver,True,"5.0% initial (4,412,500/88,250,000) and 20.0% final (17,650,000) at 73.44x in local Q4 JSONs; 10%/20% at 10x/50x bespoke waiver schedule per prospectus/424B5"
+A_Label_Changes,2631.HK,Mechanism_A (retained),True,PN18 Paragraph 4.2(a) 5%->15%->25%->35% verified in local prospectus PDF
+A_Label_Changes,2580.HK,Mechanism_A (retained),True,PN18 Paragraph 4.2(a) 5%->15%->25%->35% verified in local prospectus PDF
 B_Adoption,Original,Mechanism B / eligible non-18C post-reform,142/151,94.0%
 C_AH_Share_by_Regime,Original:Ch18C_Special,Share A+H dual-listed,4.3,N=23
 C_AH_Share_by_Regime,Original:Mechanism_A,Share A+H dual-listed,22.2,N=9
