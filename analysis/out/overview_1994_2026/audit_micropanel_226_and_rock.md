@@ -68,14 +68,14 @@ HKEX's IPO Price Discovery & Allocation Reform legally applies to **prospectuses
 ### 2.3 Actual Allocation Regime (`alloc_regime_actual`)
 | Allocation Regime | Count | Description |
 |:---|:---:|:---|
-| **`Mechanism_B`** | **142** | Post-Aug-4 fixed retail tranche (~10%, no clawback despite >15x subscription) |
+| **`Mechanism_B`** | **148** | Post-Aug-4 fixed retail tranche (~10%, no clawback despite >15x subscription) |
 | **`Legacy_PN18`** | **52** | Pre-Aug-4 statutory clawback schedule (15x->30%, 50x->40%, 100x->50%) |
-| **`Mechanism_A`** | **9** | Post-Aug-4 reformed clawback schedule (15x->15%, 50x->25%, 100x->35%) |
+| **`Mechanism_A`** | **3** | Post-Aug-4 reformed clawback schedule (15x->15%, 50x->25%, 100x->35%) |
 | **`Ch18C_Special`** | **23** | Chapter 18C Specialist Technology Issuers (Rule 18C.09 schedule) |
 | **Total** | **226** | Complete Main Board cohort (2025Q1–2026Q3) |
 
 **Empirical Finding on Mechanism Choice**:
-Among post-reform non-18C standard issuers ($N = 151$), **94.0% (142 deals) adopted Mechanism B**, while only **6.0% (9 deals) chose Mechanism A** (alongside 23 Specialist Technology issuers governed by Rule 18C.09). This confirms strong issuer preference for protecting institutional allocations and eliminating mandatory clawback uncertainty.
+Among post-reform non-18C standard issuers ($N = 151$), **98.0% (148 deals) adopted Mechanism B**, while only **2.0% (3 deals) chose Mechanism A** (alongside 23 Specialist Technology issuers governed by Rule 18C.09). This confirms strong issuer preference for protecting institutional allocations and eliminating mandatory clawback uncertainty.
 
 ### 2.4 A+H Reference Data Merged
 - Exactly **57 A+H dual-listed deals** were matched and enriched with:

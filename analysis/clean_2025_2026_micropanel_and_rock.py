@@ -47,6 +47,19 @@ TIERS_CSV = PIPELINE_DIR / "reports" / "data_gap_collection" / "allocation_tiers
 Q3_DATASET_DIR = PIPELINE_DIR / "prospectus_pipeline" / "datasets" / "HKIPO_2025-07-01_2025-09-30_HKIPO-MB"
 
 OUT_PANEL_226 = OUT_DIR / "clean_micro_panel_2025_2026_N226.csv"
+
+# Allocation mechanisms confirmed in the prospectus text. The six Mechanism B issuers were previously
+# labelled A by the final-public-share fallback. WeRide (0800.HK) used a waiver-based bespoke schedule
+# (5% initial; 10%/20% at 10x/50x), so it is kept apart from statutory Mechanism A.
+VERIFIED_MECHANISM_LABELS = {
+    "1609.HK": ("Mechanism_B", "Mechanism B"),
+    "7630.HK": ("Mechanism_B", "Mechanism B"),
+    "2553.HK": ("Mechanism_B", "Mechanism B"),
+    "6067.HK": ("Mechanism_B", "Mechanism B"),
+    "6228.HK": ("Mechanism_B", "Mechanism B"),
+    "1191.HK": ("Mechanism_B", "Mechanism B"),
+    "0800.HK": ("Mechanism_A", "Bespoke waiver schedule"),
+}
 OUT_ROCK_113 = OUT_DIR / "clean_rock_ballot_113_net_returns.csv"
 OUT_AUDIT_MD = OUT_DIR / "audit_micropanel_226_and_rock.md"
 
@@ -340,8 +353,13 @@ def build_clean_micropanel_226(df_audit_38: pd.DataFrame) -> pd.DataFrame:
             offer_mechanism = "PN18 statutory clawback"
         # 3. Post-Reform Deals (Prospectus published on or after 2025-08-04)
         else:
-            # Check explicit text first
-            if str(offer_mechanism_raw).strip() == "Mechanism A":
+            # Prospectus-verified labels take precedence (Chapter 4.14 wording checked in the offering
+            # document; see analysis/run_referee3_revision.py). The fallback rule below infers A from a
+            # final public share above 14%, which permissible Mechanism B reallocations can also produce.
+            if code in VERIFIED_MECHANISM_LABELS:
+                alloc_regime_actual, offer_mechanism = VERIFIED_MECHANISM_LABELS[code]
+            # Check explicit text next
+            elif str(offer_mechanism_raw).strip() == "Mechanism A":
                 alloc_regime_actual = "Mechanism_A"
                 offer_mechanism = "Mechanism A"
             elif str(offer_mechanism_raw).strip() == "Mechanism B":

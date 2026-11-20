@@ -180,6 +180,9 @@ def _find_closing_math(text: str, start: int) -> int:
     return -1
 
 
+_ACTIVE_FOOTNOTES: dict[str, str] = {}
+
+
 def _convert_inline(text: str, *, in_table: bool = False) -> str:
     """Convert inline Markdown (math, code, links, bold, italic, <br>) to LaTeX."""
     if not text:
@@ -268,6 +271,17 @@ def _convert_inline(text: str, *, in_table: bool = False) -> str:
         return _stash(label)
 
     work = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", _link_repl, work)
+
+    # 3b. Handle Markdown footnote markers [^id] -> \footnote{...}.
+    if _ACTIVE_FOOTNOTES and "[^" in work:
+        def _fn_repl(m: re.Match[str]) -> str:
+            fid = m.group(1)
+            if fid in _ACTIVE_FOOTNOTES:
+                fn_tex = _convert_inline(_ACTIVE_FOOTNOTES[fid], in_table=False)
+                return _stash(rf"\footnote{{{fn_tex}}}")
+            return m.group(0)
+
+        work = re.sub(r"\[\^([A-Za-z0-9_-]+)\]", _fn_repl, work)
 
     # 4. Handle bold+italic ***...***, bold **...**, italic *...*.
     # Recursively parse inner text so placeholders stay intact.
@@ -476,6 +490,80 @@ def _render_table(tbl: TableBlock) -> str:
     return "\n".join(lines)
 
 
+def _render_longtable(caption: str, tbl: TableBlock, note_md: str | None) -> str:
+    """Render a tall single-panel table across multiple pages at readable font size using longtable."""
+    ncols = len(tbl.headers)
+    max_col_lens = [_visible_len(h) for h in tbl.headers]
+    for r in tbl.rows:
+        for j in range(min(ncols, len(r))):
+            lines_in_cell = re.split(r"<br\s*/?>", r[j], flags=re.IGNORECASE)
+            cell_max = max((_visible_len(seg) for seg in lines_in_cell), default=1)
+            max_col_lens[j] = max(max_col_lens[j], cell_max)
+
+    # Allocate 15.2 cm total across columns (fits comfortably inside letterpaper \textwidth with 4pt tabcolsep)
+    is_short = [max_col_lens[j] <= 8 for j in range(ncols)]
+    short_width = sum(1.15 for s in is_short if s)
+    avail_cm = max(8.0, 15.2 - short_width)
+    # Use sqrt weighting so very long cells don't starve medium columns
+    weights = [0.0 if is_short[j] else (max_col_lens[j] ** 0.55) for j in range(ncols)]
+    w_sum = sum(weights) or 1.0
+    col_specs: list[str] = []
+    for j in range(ncols):
+        align = tbl.aligns[j] if j < len(tbl.aligns) else "l"
+        if is_short[j]:
+            col_specs.append(align)
+        else:
+            w = max(2.2, avail_cm * (weights[j] / w_sum))
+            if align == "c":
+                col_specs.append(rf">{{\centering\arraybackslash}}p{{{w:.2f}cm}}")
+            elif align == "r":
+                col_specs.append(rf">{{\raggedleft\arraybackslash}}p{{{w:.2f}cm}}")
+            else:
+                col_specs.append(rf">{{\raggedright\arraybackslash}}p{{{w:.2f}cm}}")
+
+    def _render_cell(cell_md: str) -> str:
+        segs = re.split(r"<br\s*/?>", cell_md, flags=re.IGNORECASE)
+        if len(segs) == 1:
+            return _convert_inline(cell_md, in_table=True)
+        return r" \newline ".join(_convert_inline(s.strip(), in_table=True) for s in segs)
+
+    hdr_tex = " & ".join(_render_cell(tbl.headers[j]) for j in range(ncols)) + r" \\"
+    cap_tex = _convert_inline(caption)
+    out: list[str] = [
+        r"\begingroup",
+        r"\footnotesize",
+        r"\setlength{\tabcolsep}{4pt}",
+        r"\renewcommand{\arraystretch}{1.16}",
+        r"\setlength{\LTcapwidth}{\textwidth}",
+        rf"\begin{{longtable}}{{{''.join(col_specs)}}}",
+        rf"\caption*{{{cap_tex}}} \\",
+        r"\toprule",
+        hdr_tex,
+        r"\midrule",
+        r"\endfirsthead",
+        rf"\multicolumn{{{ncols}}}{{l}}{{\small\bfseries {cap_tex} \textit{{(continued)}}}} \\",
+        r"\addlinespace[4pt]",
+        r"\toprule",
+        hdr_tex,
+        r"\midrule",
+        r"\endhead",
+        r"\midrule",
+        rf"\multicolumn{{{ncols}}}{{r}}{{\scriptsize\itshape Continued on next page}} \\",
+        r"\endfoot",
+        r"\bottomrule",
+        r"\endlastfoot",
+    ]
+    for row in tbl.rows:
+        padded = [row[j] if j < len(row) else "" for j in range(ncols)]
+        out.append(" & ".join(_render_cell(padded[j]) for j in range(ncols)) + r" \\")
+    out.append(r"\end{longtable}")
+    if note_md:
+        out.append(rf"\vspace{{-6pt}}\noindent\parbox{{\textwidth}}{{\scriptsize\raggedright {_convert_inline(note_md)}}}\par\vspace{{6pt}}")
+    out.append(r"\endgroup")
+    out.append("")
+    return "\n".join(out)
+
+
 def _render_multipanel_table(
     caption: str,
     panels: list[tuple[str | None, TableBlock]],
@@ -484,6 +572,8 @@ def _render_multipanel_table(
     is_journal_main: bool = True,
 ) -> str:
     """Render a single- or multi-panel journal table with its caption and note in one unified float."""
+    if len(panels) == 1 and len(panels[0][1].rows) >= 28:
+        return _render_longtable(caption, panels[0][1], note_md)
     total_rows = sum(len(tb.rows) + 2 for _, tb in panels)
     float_pos = (
         "p"
@@ -537,7 +627,23 @@ def convert_markdown_to_latex(
 ) -> str:
     """Convert an academic HK IPO overview Markdown monograph to a standalone XeLaTeX document."""
     raw = md_path.read_text(encoding="utf-8")
-    lines = raw.splitlines()
+    raw_lines = raw.splitlines()
+    _ACTIVE_FOOTNOTES.clear()
+    lines: list[str] = []
+    fi = 0
+    while fi < len(raw_lines):
+        fn_m = re.match(r"^\[\^([A-Za-z0-9_-]+)\]:\s*(.*)$", raw_lines[fi])
+        if fn_m:
+            fid = fn_m.group(1)
+            fn_parts = [fn_m.group(2).strip()]
+            fi += 1
+            while fi < len(raw_lines) and (raw_lines[fi].startswith("    ") or raw_lines[fi].startswith("\t")):
+                fn_parts.append(raw_lines[fi].strip())
+                fi += 1
+            _ACTIVE_FOOTNOTES[fid] = " ".join(p for p in fn_parts if p)
+            continue
+        lines.append(raw_lines[fi])
+        fi += 1
 
     # Extract H1 title + top metadata block before first `---`
     idx = 0
@@ -914,7 +1020,7 @@ def convert_markdown_to_latex(
 \usepackage{{fontspec}}
 \usepackage{{xeCJK}}
 \usepackage{{amsmath,amssymb}}
-\usepackage{{booktabs,array,adjustbox,makecell}}
+\usepackage{{booktabs,array,adjustbox,makecell,longtable}}
 \usepackage[table]{{xcolor}}
 \usepackage{{graphicx}}
 \usepackage{{caption}}

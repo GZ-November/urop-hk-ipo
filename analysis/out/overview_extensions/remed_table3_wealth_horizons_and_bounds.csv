@@ -1,0 +1,54 @@
+Panel,Horizon_or_Scenario,Group,N,Proceeds_HKD_Bn,IPO_Gain_HKD_Bn,HSI_Px_Gain_HKD_Bn,HSI_TR_Gain_HKD_Bn,WR_vs_HSI_Price,WR_vs_HSI_TR,EW_Mean_Excess_vs_HSI_TR_Pct
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),All Matched,2378,4801.96,222.09,59.69,224.6,1.033,1.0,-1.33
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),All excl. Tencent,2377,4800.18,221.4,59.41,224.25,1.033,0.999,-1.34
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era I (1994-1999),200,136.03,-8.34,-4.9,-0.16,0.974,0.94,-2.16
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era II (2000-2007),458,1005.38,319.77,157.26,192.56,1.14,1.106,0.2
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era II excl. Tencent,457,1003.59,319.08,156.98,192.21,1.14,1.106,0.16
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era III (2008-2017),839,1909.68,-6.14,-3.74,63.94,0.999,0.964,7.33
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era IV (2018-2022),668,1410.45,-124.92,-103.28,-59.34,0.983,0.951,-6.4
+A_Equal_Horizon_Wealth_Ratios,1Y (12M),Era V (2023-2026Q3),213,340.42,41.72,14.36,27.6,1.077,1.038,-22.08
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),All Matched,2169,4470.94,677.82,25.85,518.55,1.145,1.032,-1.01
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),All excl. Tencent,2168,4469.15,666.4,24.47,516.86,1.143,1.03,-1.26
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era I (1994-1999),199,135.93,62.18,26.19,42.9,1.222,1.108,-47.28
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era II (2000-2007),458,1005.38,684.08,151.08,270.95,1.461,1.324,-4.17
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era II excl. Tencent,457,1003.59,672.66,149.7,269.26,1.453,1.317,-5.37
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era III (2008-2017),809,1900.44,218.78,139.73,366.62,1.039,0.935,2.67
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era IV (2018-2022),651,1395.72,-291.23,-301.72,-177.89,1.01,0.907,10.52
+A_Equal_Horizon_Wealth_Ratios,3Y (36M),Era V (2023-2026Q3),52,33.47,4.02,10.57,15.97,0.851,0.758,2.25
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),All Matched,1975,4251.01,736.89,160.97,1002.32,1.131,0.949,-12.89
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),All excl. Tencent,1974,4249.22,700.75,160.08,1000.96,1.123,0.943,-13.88
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),Era I (1994-1999),193,135.5,-15.6,-6.6,15.91,0.93,0.792,-59.14
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),Era II (2000-2007),455,1005.17,898.26,224.22,445.94,1.548,1.312,1.09
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),Era II excl. Tencent,454,1003.38,862.12,223.33,444.57,1.521,1.288,-3.19
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),Era III (2008-2017),790,1873.79,315.91,140.04,525.36,1.087,0.913,-10.13
+A_Equal_Horizon_Wealth_Ratios,5Y (60M),Era IV (2018-2022),537,1236.55,-461.68,-196.69,15.1,0.745,0.619,-12.15
+B_Aggregate_Terminal_Bounds,Verified_Only_N2116,All,2116,4914.54,3705.48,592.4,4237.28,1.565,0.942,
+B_Aggregate_Terminal_Bounds,Verified_Only_N2116,Excl_Tencent,2115,4912.76,2612.24,590.66,4231.33,1.367,0.823,
+B_Aggregate_Terminal_Bounds,Verified_Only_N2116,Excl_Tencent_and_AIA,2114,4753.68,2129.91,584.38,4095.45,1.29,0.778,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_0pct_Recovery,All,2591,5246.31,3373.71,657.35,4666.46,1.46,0.87,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_0pct_Recovery,Excl_Tencent,2590,5244.52,2280.47,655.6,4660.5,1.275,0.76,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_0pct_Recovery,Excl_Tencent_and_AIA,2589,5085.45,1798.14,649.32,4524.62,1.2,0.716,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_50pct_Recovery,All,2591,5246.31,3539.6,657.35,4666.46,1.488,0.886,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_50pct_Recovery,Excl_Tencent,2590,5244.52,2446.35,655.6,4660.5,1.304,0.776,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_50pct_Recovery,Excl_Tencent_and_AIA,2589,5085.45,1964.03,649.32,4524.62,1.229,0.734,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_100pct_Par,All,2591,5246.31,3705.48,657.35,4666.46,1.516,0.903,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_100pct_Par,Excl_Tencent,2590,5244.52,2612.24,655.6,4660.5,1.332,0.793,
+B_Aggregate_Terminal_Bounds,Incl_475_NoQuote_100pct_Par,Excl_Tencent_and_AIA,2589,5085.45,2129.91,649.32,4524.62,1.258,0.751,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Verified_N2115,All,2115,4914.4,7035.37,592.16,4236.38,,1.306,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Verified_N2115,Excl_Tencent,2114,4912.61,5938.91,590.42,4230.43,,1.187,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Verified_N2115,Excl_Tencent_and_AIA,2113,4753.53,5321.05,584.13,4094.54,,1.139,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_0pctRem112,All,2590,5246.17,6910.62,657.1,4665.55,,1.227,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_0pctRem112,Excl_Tencent,2589,5244.38,5814.16,655.36,4659.6,,1.117,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_0pctRem112,Excl_Tencent_and_AIA,2588,5085.3,5196.3,649.08,4523.72,,1.07,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_50pctRem112,All,2590,5246.17,6925.07,657.1,4665.55,,1.228,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_50pctRem112,Excl_Tencent,2589,5244.38,5828.62,655.36,4659.6,,1.118,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_50pctRem112,Excl_Tencent_and_AIA,2588,5085.3,5210.75,649.08,4523.72,,1.071,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_100pctRem112,All,2590,5246.17,6939.53,657.1,4665.55,,1.229,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_100pctRem112,Excl_Tencent,2589,5244.38,5843.07,655.36,4659.6,,1.119,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_ObsPreDelist363_100pctRem112,Excl_Tencent_and_AIA,2588,5085.3,5225.2,649.08,4523.72,,1.073,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_0pct_Recovery,All,2590,5246.17,6703.6,657.1,4665.55,,1.206,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_0pct_Recovery,Excl_Tencent,2589,5244.38,5607.15,655.36,4659.6,,1.096,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_0pct_Recovery,Excl_Tencent_and_AIA,2588,5085.3,4989.28,649.08,4523.72,,1.048,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_50pct_Recovery,All,2590,5246.17,6869.49,657.1,4665.55,,1.222,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_50pct_Recovery,Excl_Tencent,2589,5244.38,5773.03,655.36,4659.6,,1.112,
+C_LikeForLike_HFQ_TotalReturn_Bounds,LikeForLike_HFQ_TR_Plus_All475_at_50pct_Recovery,Excl_Tencent_and_AIA,2588,5085.3,5155.16,649.08,4523.72,,1.066,

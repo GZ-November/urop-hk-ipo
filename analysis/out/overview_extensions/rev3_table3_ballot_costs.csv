@@ -1,0 +1,7 @@
+Scenario,N,Mean_Net_Pct,Median_Net_HKD_per_Application,Mean_Net_HKD_per_Application
+"Pool B, table formula, 2-day 90% margin at 3.80% p.a.",111,-0.046325,,
+"Pool B, table formula, 3-day 90% margin at 3.80% p.a.",111,-0.055695,,
+"Pool B, deal-specific HIBOR and holding days, HK$100 fee, sale costs",111,-0.06453,-916.0,-5384.0
+"Pool B, flat-fee margin package (10% cash deposit)",111,-0.035351,756.0,-3648.0
+"Pool A one lot, cash, net of fees, sale costs and HIBOR",113,1.9239,19.0,79.0
+Holding days used in detailed scenario (mean / median),113,4.42,5.0,

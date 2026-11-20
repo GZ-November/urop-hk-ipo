@@ -1,0 +1,23 @@
+Panel,Specification,Outcome,Regressor,N,Estimate,SE,t_stat,p_val,R2
+A_Day1_Return,A1_Original_Window_Full,IR_pct_winsorised,hsi_ret_sub_window_pct_pos,2079,-0.0795,0.376,-0.21,0.8325,0.0098
+A_Day1_Return,A1_Original_Window_Full,IR_pct_winsorised,hsi_ret_sub_window_pct_neg,2079,1.4918,0.3997,3.73,0.0002,0.0098
+A_Day1_Return,A2_Original_Window_ValidPricingDate,IR_pct_winsorised,hsi_ret_sub_window_pct_pos,1727,-0.0715,0.4637,-0.15,0.8775,0.0062
+A_Day1_Return,A2_Original_Window_ValidPricingDate,IR_pct_winsorised,hsi_ret_sub_window_pct_neg,1727,0.9347,0.5307,1.76,0.0782,0.0062
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,hsi_pre_pricing_pct_pos,1727,-1.4279,0.5145,-2.78,0.0055,0.013
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,hsi_pre_pricing_pct_neg,1727,2.2381,0.667,3.36,0.0008,0.013
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,hsi_post_pricing_pct_pos,1727,0.7758,0.8127,0.95,0.3398,0.013
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,hsi_post_pricing_pct_neg,1727,0.6901,0.7942,0.87,0.3849,0.013
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,Wald[hsi_pre_pricing_pct_pos = hsi_pre_pricing_pct_neg],1727,-3.666,0.9952,-3.68,0.0002,
+A_Day1_Return,A3_Split_at_Pricing_Date,IR_pct_winsorised,Wald[hsi_post_pricing_pct_pos = hsi_post_pricing_pct_neg],1727,0.0857,1.3118,0.07,0.9479,
+B_Offer_Price_Position,B1_Range_Deals,range_pos,hsi_pre_pricing_pct_pos,997,0.0039,0.007,0.56,0.5732,0.0428
+B_Offer_Price_Position,B1_Range_Deals,range_pos,hsi_pre_pricing_pct_neg,997,0.0126,0.0089,1.42,0.1551,0.0428
+B_Offer_Price_Position,B1_Range_Deals,log_p0_over_pmax,hsi_pre_pricing_pct_pos,997,0.002,0.0018,1.14,0.2563,0.0478
+B_Offer_Price_Position,B1_Range_Deals,log_p0_over_pmax,hsi_pre_pricing_pct_neg,997,0.0053,0.0026,2.05,0.0408,0.0478
+C_Room_to_Revise,C1_Fixed_vs_Range,IR_pct_winsorised,hsi_pre_pricing_pct_pos,1131,-14.0948,4.295,-3.28,0.001,0.0367
+C_Room_to_Revise,C1_Fixed_vs_Range,IR_pct_winsorised,hsi_pre_pricing_pct_neg,1131,10.6382,4.109,2.59,0.0096,0.0367
+C_Room_to_Revise,C1_Fixed_vs_Range,IR_pct_winsorised,hsi_pre_pricing_pct_pos:is_range,1131,13.1039,4.3457,3.02,0.0026,0.0367
+C_Room_to_Revise,C1_Fixed_vs_Range,IR_pct_winsorised,hsi_pre_pricing_pct_neg:is_range,1131,-9.609,4.201,-2.29,0.0222,0.0367
+Z_Sample,Main Board exact prospectus date,,N,2118,,,,,
+Z_Sample,Valid pricing date (prospectus <= pricing < listing),,N,1728,,,,,
+Z_Sample,Median trading-calendar days pricing to listing,,days,7.0,,,,,
+Z_Sample,Range deals / fixed-price deals in split sample,,N,997/134,,,,,
