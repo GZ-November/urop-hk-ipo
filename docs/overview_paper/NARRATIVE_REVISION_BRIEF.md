@@ -1,0 +1,88 @@
+# 香港 IPO 金融史论文叙事修改简报
+
+## 给修改 Agent 的任务
+
+直接修改英文论文的摘要、引言、章节顺序、段间过渡和结论。成稿应让一位熟悉金融但不了解香港上市制度的读者，在一分钟内说清香港解决了什么跨境融资难题，以及为什么大多数核验 IPO 跌破发行价时，样本整体仍能录得大额净价格升值。
+
+- 以上一轮审阅所用的 [LaTeX 主稿](HK_IPO_Financial_History_Master.tex) 为编辑基准，同步 [Markdown 版本](HK_IPO_Financial_History_Master.md) 中对应的叙事、章节顺序和交叉引用。两份稿件已有未提交修改，先看当前差异，保留已有研究和修订。
+- 本次范围为叙事和结构。保留现有估计、样本、研究设计和证据限定。涉及两版统计口径差异时，按本文第五步处理。
+- 下文使用修改前的 LaTeX 节号定位内容。调整顺序后同步目录、节号、表图编号和正文交叉引用。
+
+## 第一步　把跨境融资问题放在摘要和引言开头
+
+全文围绕一个问题展开。香港怎样让全球资本能够投资内地企业，收益和成本又如何在发行人、投资者与香港这座城市之间分布？
+
+摘要按四步展开，每一步尽量用一句话完成。
+
+1. 内地企业需要股权资本，国际投资者关心股东权利能否执行、资金能否汇回。
+2. 说明香港怎样连接双方，并简要交代历史范围和 IPO 普查。制度细节和上市样本拆分留给正文。
+3. 尽快给出投资收益的反直觉结果。约四分之三的核验 IPO 低于发行价，完整核验样本的发行股份却录得 HK$3.71 万亿的累计净价格升值，少数大赢家贡献了大部分正收益。
+4. 以市场给各方带来的结果收束。企业获得融资，香港获得持续的交易、清算和专业服务业务，投资者的收益高度集中。
+
+引言前两段可直接从下文改起。缩短 IPO 功能的教科书式铺垫，把美国发行量下降与香港发行量上升的比较移到这两段之后，作为背景交代。
+
+> Mainland Chinese companies needed equity capital, and international investors had money to deploy. To invest across the border, those investors needed confidence that they could enforce their shareholder rights and repatriate their proceeds. Hong Kong offered a way for the two sides to transact through a convertible currency, shareholder protections, and intermediaries accountable for the quality of disclosure.
+>
+> The gains were strikingly uneven. At the observation cutoff in November 2026, roughly three quarters of the 2,117 IPOs with verified end-of-period prices were below their offer price. Across the full verified sample, the shares sold at IPO recorded HK$3.71 trillion in cumulative net price gains before dividends. Just 21 companies, including Tencent and AIA, accounted for nearly three quarters of the gross gains among offerings that appreciated.
+
+接着提出研究问题。
+
+> How did Hong Kong make cross-border equity issuance possible at scale, and how did the gains and costs fall across issuers, investors, and the city itself?
+
+引言路线图依次交代香港建立了哪些发行制度、发行与交易规则怎样影响各方，以及收益和经济活动最终流向哪里。在制度铺垫中明确经济预期。可信的兑换、披露与执法能降低跨境投资的障碍，而核查和合规的固定成本对小额发行的相对负担更重。第 5 节的资金流向与发行成本是读者首先看到的对应证据。
+
+**完成标准**　摘要与引言前两段都能读出跨境融资难题、香港的解决方式和收益集中这一发现。引言结尾仍能读到同一个研究问题。
+
+## 第二步　重排第 8 节，先回答基准结果留下的问题
+
+将现有 §8.5 的收益集中结果移到 §8.1 之后。先解释同一批 IPO 从发行价或首日收盘价买入，回报为何不同。紧接着说明按公司数看多数表现弱，按发行股份金额加总却能出现大额升值。大赢家解释终点净价格升值的集中程度，入场价格解释两种买入起点的回报差异。
+
+把原 §§8.2–8.4 接在收益集中结果之后，按“锁定期何时释放股份 → 日常交易能否持续 → Stock Connect 能否扩大买家范围并缩小价差”推进。这一组内容回答上市后股票能否持续交易。保留锁定期结果对发行人构成和持续价格走势的限定，也保留 Stock Connect 的成交量与价格分割是两个结果这一点。
+
+在表 8.1 后用下面两句引入收益集中结果。
+
+> The one-year results change when larger deals receive more weight. That raises a longer-run question: how much of the market’s aggregate gain came from its biggest winners?
+
+**完成标准**　读者读完表 8.1 后，下一小节就回答收益集中问题。随后引入流动性问题，并更新移动涉及的章节、表图和附录交叉引用。
+
+## 第三步　逐节收紧支线，补齐过渡
+
+| 原章节 | 修改动作 |
+|---|---|
+| §§2–3 制度和历史 | §2 具体说明资金能否汇回、股东权利能否执行、披露失实由谁负责。§3 解释为什么香港在 1993 年已经具备这些条件。每个重要历史节点交代它解决了哪项约束。 |
+| §§4.1–4.7 发行时期和失败案例 | 每个时期说清谁因此能够上市、哪项约束发生了变化。§4.6 说明单笔交易如何受阻，§4.7 接着观察什么政策和市场条件与香港发行人构成的变化同时出现。 |
+| §§5.1–5.5 发行人、成本和后续融资 | 开场交代核验发行金额中约 94% 来自新股发行，以及小额发行的直接成本占募集额比例更高。将 §5.4 关于新上市渠道改变发行人构成的内容接到 §5.2。把应计项目与六个月回报的比较放到 §8.1，合并原有重复段落。研发资本化和利润门槛附近的比较可压缩为补充材料，把细节留在附录。保留 §5.5，并在 §§9–10 回到上市带来的后续融资机会。 |
+| §§6.1–6.4 中介和执法 | 说明保荐人、承销商和会计师分别负责什么，再写机构更替。基石投资者一节依次阐明信号、确保部分发行有买家、锁住可交易股份。第三点预告第 8 节。用执法案例回应股东为何能相信披露。 |
+| §§7.1–7.5 定价和分配 | 按发行价上限、分配规则、申购资金成本、实际中签收益推进。§7.5 先写正式开盘价已反映大部分首日价格变动。灰市压缩成一段制度背景，随后转入上市后买家的回报。 |
+| §§9–10 香港和企业获得了什么 | 用 §9.3 的“跟着一港元走”串联新股资金、一次性服务和持续交易。§9.4 的公共资产案例可压成一个短框，说明居民参与。§10 转到企业在上市前后的治理和融资用途，并保留个案的归因限定。 |
+| §§11.1–11.3 投资者和国际上市 | 先写公开资料能识别哪些买家，区分已披露的基石配售、二级交易和资产管理数据。将国际品牌案例作为香港市场能否把自身优势延伸到内地以外的边界案例。 |
+
+以下句子可按现有段落调整，优先替换重复的章节导语。
+
+| 放置位置 | 建议英文 |
+|---|---|
+| §4.6 → §4.7 | The deals that stalled show why switching venues can be hard for an individual issuer. The monthly issuance data show when Mainland policy changes coincided with a shift in Hong Kong’s listing mix. |
+| §5 → §6 | Smaller deals paid a larger share of their proceeds to list. To understand what issuers paid for, we turn to the institutions that verify, market, and distribute an offering. |
+| §7.3 → §7.4 | A large first-day gain tells an applicant little about what they earned on the cash they committed. The allotment schedules let us compare small cash orders with large financed bids. |
+| §7.5 → §8.1 | By the first-day close, an investor buying on the exchange faces a different price from an investor who received an allocation. We track both entry points to see how much they matter over the first year. |
+| 原 §8.2 → §8.3 | The lockup calendar tells us when more shares can become available for trading. We now ask which stocks retain active trading after the debut. |
+| 原 §8.3 → §8.4 | Trading thins for many firms after listing. Stock Connect lets us ask whether access to a broader buyer base is accompanied by higher turnover and a narrower price gap. |
+| §8 → §9 | The gains on offered shares accrue to their owners. To understand what Hong Kong itself gained, we follow the fees, services, and recurring trading activity generated by those listings. |
+| §11.2 → §11.3 | Hong Kong gave global investors access to Chinese companies. The international listings test the market’s reach in the other direction: could it sustain investor interest in companies from outside Greater China? |
+
+**完成标准**　每个保留的子节都能回答一个前文提出的问题，或交代下一节为什么必要。独立的补充结果集中在附录，同一个结果在正文中只完整解释一次。
+
+## 第四步　让结论按引言的顺序作答
+
+§12.3 先回答香港如何建立跨境融资所需的信任，再交代企业和投资者得到什么、收益为何集中，最后说明哪些经济活动留在香港，以及 §12.2 讨论的市场代价。保留 §12.4 的研究议程，在研究议程之后用一小段话回答全文主问题。
+
+> Hong Kong gave Mainland companies a way to raise equity from investors who needed enforceable shareholder rights and the ability to move their money across borders. Issuers gained access to capital, and the city built a lasting business around issuing, trading, and servicing their shares. Investor gains were highly concentrated, with a few exceptional firms generating much of the upside even as most verified IPOs ended the observation period below their offer price.
+
+**完成标准**　读者只读引言和结论，也能看出论文提出与回答的是同一个问题。
+
+## 第五步　核对口径与交付
+
+- [ ] **收益口径**。HK$3.71 万亿是整个核验样本所售发行股份的累计净价格升值，未计股息。约 77.5% 是其中低于发行价的 IPO 宗数占比。21 家贡献的约 74% 以所有上涨发行的正收益之和为分母。清楚交代统计的是发行股份层面的表现，个别投资者的实际配置和持有期需要独立证据。
+- [ ] **版本差异**。当前 Markdown 摘要和引言列有 HK$7.04 万亿的含股息结果，LaTeX 主稿以约 HK$3.71 万亿的价格升值为主，并说明匹配基准的口径限制。摘要、引言和结论优先使用两版共有的价格升值结果。保留已有的含股息研究内容及其限定。若正文或附录找不到相应证据，交付时列出具体差异和位置，交由作者核定。
+- [ ] **叙事核对**。通读摘要、引言前两段、各节首段和结尾，检查主线能否从跨境约束和制度安排，推进到谁获得融资、谁获得收益、什么留在香港。核对新增过渡句的证据用词，确保描述性结果保持原有的归因强度。
+- [ ] **文档核对**。同步核对 LaTeX 和 Markdown 的标题、节号和引用。具备编译环境时，用项目现有方式重编 PDF，查看目录和移位后的表图。交付时列出改动文件、章节移动、验证结果和待作者核定的口径。

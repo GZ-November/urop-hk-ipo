@@ -1,0 +1,30 @@
+Panel,Group,Measure,Value,Note
+A_Label_Changes,1609.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,7630.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,2553.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,6067.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,6228.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,1191.HK,Mechanism_A -> Mechanism_B,True,Mechanism B text found in cached prospectus
+A_Label_Changes,0800.HK,Mechanism_A -> Bespoke_Waiver,,
+B_Adoption,Original,Mechanism B / eligible non-18C post-reform,142/151,94.0%
+C_AH_Share_by_Regime,Original:Ch18C_Special,Share A+H dual-listed,4.3,N=23
+C_AH_Share_by_Regime,Original:Mechanism_A,Share A+H dual-listed,22.2,N=9
+C_AH_Share_by_Regime,Original:Mechanism_B,Share A+H dual-listed,31.0,N=142
+B_Adoption,Revised,Mechanism B / eligible non-18C post-reform,148/151,98.0%
+C_AH_Share_by_Regime,Revised:Bespoke_Waiver,Share A+H dual-listed,0.0,N=1
+C_AH_Share_by_Regime,Revised:Ch18C_Special,Share A+H dual-listed,4.3,N=23
+C_AH_Share_by_Regime,Revised:Mechanism_A,Share A+H dual-listed,50.0,N=2
+C_AH_Share_by_Regime,Revised:Mechanism_B,Share A+H dual-listed,30.4,N=148
+C_AH_Share_by_Regime,Earlier diagnostic: all post-reform non-B,Share A+H dual-listed,9.4,N=32 (mixes Mechanism A with Chapter 18C)
+D_PrePost_Comparison,Earlier: +log proceeds +cornerstone pct (post-deal),public_offer_fraction_pct,-18.838,"t=-9.55, p=0.000, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time controls only (+max size, A+H, 18A, 18C, sector)",public_offer_fraction_pct,-19.301,"t=-10.27, p=0.000, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time, no sector FE",public_offer_fraction_pct,-18.8391,"t=-10.02, p=0.000, N=226, G=21"
+D_PrePost_Comparison,"Excluding Chapter 18C, prospectus-time controls",public_offer_fraction_pct,-19.3706,"t=-10.60, p=0.000, N=203, G=21"
+D_PrePost_Comparison,Earlier: +log proceeds +cornerstone pct (post-deal),day1_turnover_pct,-8.4896,"t=-2.27, p=0.023, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time controls only (+max size, A+H, 18A, 18C, sector)",day1_turnover_pct,-9.9773,"t=-2.69, p=0.007, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time, no sector FE",day1_turnover_pct,-10.7886,"t=-2.61, p=0.009, N=226, G=21"
+D_PrePost_Comparison,"Excluding Chapter 18C, prospectus-time controls",day1_turnover_pct,-9.3034,"t=-2.41, p=0.016, N=203, G=21"
+D_PrePost_Comparison,Earlier: +log proceeds +cornerstone pct (post-deal),log_ir,0.1665,"t=+2.52, p=0.012, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time controls only (+max size, A+H, 18A, 18C, sector)",log_ir,0.1904,"t=+2.69, p=0.007, N=226, G=21"
+D_PrePost_Comparison,"Prospectus-time, no sector FE",log_ir,0.2466,"t=+3.14, p=0.002, N=226, G=21"
+D_PrePost_Comparison,"Excluding Chapter 18C, prospectus-time controls",log_ir,0.2018,"t=+2.72, p=0.007, N=203, G=21"

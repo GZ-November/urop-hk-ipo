@@ -711,7 +711,7 @@ def main() -> None:
     t9b_rows = []
     regime_names_clean = {
         "Legacy_PN18": "Legacy PN18 (Pre-Aug 4, 2025; Clawback to 50%)",
-        "Mechanism_A": "Mechanism A (Post-Aug 4, 2025; Dynamic 5%→35%)",
+        "Mechanism_A": "Mechanism A or bespoke waiver (Post-Aug 4, 2025)",
         "Mechanism_B": "Mechanism B (Post-Aug 4, 2025; Fixed ~10%, Zero Clawback)",
         "Ch18C_Special": "Chapter 18C Specialist Tech (Capped 5%→20%)",
     }
@@ -820,12 +820,14 @@ def main() -> None:
     a_pb = pd.to_numeric(rock113["alloc_rate_poolB_min_pct"], errors="coerce")
     ret_pb = pd.to_numeric(rock113["cap_ret_poolB_min_pct"], errors="coerce")
 
-    # Net of 1.0085% brokerage/levies on allotted portion & FINI 2-day financing cost on Pool B (~3.8% p.a. * 2/365 = 2.08 bps of subscription or 90% margin)
+    # Net of 1.0085% brokerage/levies on allotted portion & FINI 3-day financing cost on Pool B
+    # (90% margin at 3.8% p.a. for 3 days, matching the Table 7.2 note; deal-specific HIBOR and
+    # holding-day scenarios are in clean_rock_ballot_113_net_returns.csv and rev3_table3_ballot_costs.csv)
     fee_pct = 1.0085
     net_cash_1lot = ret_1lot - (a_1lot / 100.0) * fee_pct
     net_cash_10lot = ret_10lot - (a_10lot / 100.0) * fee_pct
-    fini_2d_cost_pct = 0.90 * 3.80 * (2.0 / 365.0)  # ~0.0187% on committed capital
-    net_pb = ret_pb - (a_pb / 100.0) * fee_pct - fini_2d_cost_pct
+    fini_3d_cost_pct = 0.90 * 3.80 * (3.0 / 365.0)  # ~0.0281% on committed capital
+    net_pb = ret_pb - (a_pb / 100.0) * fee_pct - fini_3d_cost_pct
 
     t10b_rows = [
         {
@@ -2077,7 +2079,10 @@ def main() -> None:
     ax1_rf.set_xlabel("Running Variable: Log(Retail Oversubscription / 15x)")
 
     reg_x = np.arange(4)
-    reg_short4 = ["Legacy PN18\n(N=52)", "Mechanism A\n(N=9)", "Mechanism B\n(N=142)", "Ch. 18C\n(N=23)"]
+    reg_short4 = [
+        f"{lbl}\n(N={t9b_rows[i]['N']})"
+        for i, lbl in enumerate(["Legacy PN18", "Mech. A / bespoke", "Mechanism B", "Ch. 18C"])
+    ]
     ret_sh_f = [float(t9b_rows[i]["Final Retail (%)"]) for i in range(4)]
     flip_f = [float(t9b_rows[i]["Day-1 Flipping (%)"]) for i in range(4)]
     ir_f = [float(t9b_rows[i]["Mean Day-1 IR (%)"].replace("+", "")) for i in range(4)]
@@ -2087,7 +2092,8 @@ def main() -> None:
     ax2_r.spines["top"].set_visible(False)
     ax2_r.plot(reg_x, ir_f, color=FOREST, marker="D", markersize=6.0, linewidth=2.0, label="Mean Day-1 IR (%, Right)")
     ax2_r.set_ylabel("Mean Day-1 Initial Return (%)")
-    ax2_r.set_ylim(0, max(ir_f) * 1.32)
+    ax2_r.set_ylim(min(0.0, min(ir_f) * 1.6), max(ir_f) * 1.32)
+    ax2_r.axhline(0, color="black", linewidth=0.6)
     ax2_m.set_xticks(reg_x)
     ax2_m.set_xticklabels(reg_short4, fontsize=8.2)
     ax2_m.set_ylabel("Share of Base Offer / Volume (%)")
